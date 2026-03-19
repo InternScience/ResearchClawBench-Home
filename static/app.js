@@ -1053,18 +1053,30 @@ async function renderFileContent(path, name, url, evt, baseUrl, filePath) {
     return;
   }
 
+  const GITHUB_FALLBACK = '<div class="placeholder">This file is too large for GitHub Pages.<br><br>View source on <a href="https://github.com/black-yt/ResearchClawBench" target="_blank" style="color:var(--accent)">GitHub</a></div>';
+
   if (VIEWABLE_IMG_EXTS.has(ext)) {
     if (STATIC_MODE) {
-      const check = await fetch(url, { method: 'HEAD' }).catch(() => null);
-      if (!check || !check.ok) { div.innerHTML = `<div class="placeholder">This file is too large for GitHub Pages.<br><br>View source on <a href="https://github.com/black-yt/ResearchClawBench" target="_blank" style="color:var(--accent)">GitHub</a></div>`; return; }
+      const img = new Image();
+      img.src = url;
+      img.style.maxWidth = '100%';
+      img.style.borderRadius = '6px';
+      img.onerror = () => { div.innerHTML = GITHUB_FALLBACK; };
+      div.innerHTML = '';
+      div.appendChild(img);
+    } else {
+      div.innerHTML = `<img src="${url}">`;
     }
-    div.innerHTML = `<img src="${url}">`;
   } else if (VIEWABLE_EMBED_EXTS.has(ext)) {
     if (STATIC_MODE) {
-      const check = await fetch(url, { method: 'HEAD' }).catch(() => null);
-      if (!check || !check.ok) { div.innerHTML = `<div class="placeholder">This PDF is too large for GitHub Pages.<br><br>View source on <a href="https://github.com/black-yt/ResearchClawBench" target="_blank" style="color:var(--accent)">GitHub</a></div>`; return; }
+      try {
+        const check = await fetch(url);
+        if (!check.ok) { div.innerHTML = GITHUB_FALLBACK; return; }
+        div.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none"></iframe>`;
+      } catch (_) { div.innerHTML = GITHUB_FALLBACK; }
+    } else {
+      div.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none"></iframe>`;
     }
-    div.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none"></iframe>`;
   } else if (VIEWABLE_TABLE_EXTS.has(ext)) {
     if (STATIC_MODE) { div.innerHTML = '<div class="placeholder">Excel preview not available in static mode</div>'; return; }
     try {
