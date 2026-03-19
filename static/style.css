@@ -271,6 +271,11 @@ body { height: 100vh; font-family: var(--font); font-size: 17px; line-height: 1.
 .leaderboard .frontier-row td:first-child { font-family: var(--font); font-size: 14.5px; }
 
 .score-cell { border-radius: 4px; padding: 3px 8px; display: inline-block; min-width: 38px; text-align: center; font-size: 13px; }
+.running-cell {
+    font-size: 10px; color: var(--warn); font-style: italic;
+    animation: blink 1.5s ease-in-out infinite;
+}
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
 
 /* welcome fallback (no data) */
 .welcome-card { max-width: 480px; margin: 100px auto; text-align: center; }
