@@ -580,7 +580,7 @@ async function selectRun(runId) {
     if (files && files.length) {
       renderFileTree(files, runId, null);
       let latest = null;
-      for (const f of files) { if (f.type !== 'file' || !isViewableFile(f.name)) continue; if (!latest || (f.mtime && f.mtime > (latest.mtime || 0))) latest = f; }
+      for (const f of files) { if (f.type !== 'file' || !isViewableFile(f.name) || f.exported === false) continue; if (!latest || (f.mtime && f.mtime > (latest.mtime || 0))) latest = f; }
       if (latest) {
         const url = `data/runs/${runId}/workspace/${latest.path}`;
         renderFileContent(latest.path, latest.name, url, null, `data/runs/${runId}/workspace/`, latest.path);
@@ -955,8 +955,13 @@ function renderStaticTaskFileTree(files, taskId) {
           e.stopPropagation();
           document.querySelectorAll('.file-tree-item').forEach(el => el.classList.remove('active'));
           item.classList.add('active');
-          const url = `data/tasks/${taskId}/workspace/${f.path}`;
-          renderFileContent(f.path, f.name, url, null, `data/tasks/${taskId}/workspace/`, f.path);
+          if (f.exported === false) {
+            document.getElementById('file-content-header').textContent = f.path;
+            document.getElementById('file-content-body').innerHTML = '<div class="placeholder">This file is too large for GitHub Pages.<br><br>View source on <a href="https://github.com/black-yt/ResearchClawBench" target="_blank" style="color:var(--accent)">GitHub</a></div>';
+          } else {
+            const url = `data/tasks/${taskId}/workspace/${f.path}`;
+            renderFileContent(f.path, f.name, url, null, `data/tasks/${taskId}/workspace/`, f.path);
+          }
         };
       }
       const pp = f.path.includes('/') ? f.path.substring(0, f.path.lastIndexOf('/')) : null;
@@ -1000,11 +1005,15 @@ function renderFileTree(files, runId, taskId) {
       item.onclick = (e) => {
         e.stopPropagation();
         if (STATIC_MODE && runId) {
-          // Static mode: load from exported workspace files
           document.querySelectorAll('.file-tree-item').forEach(el => el.classList.remove('active'));
           item.classList.add('active');
-          const url = `data/runs/${runId}/workspace/${f.path}`;
-          renderFileContent(f.path, f.name, url, null, `data/runs/${runId}/workspace/`, f.path);
+          if (f.exported === false) {
+            document.getElementById('file-content-header').textContent = f.path;
+            document.getElementById('file-content-body').innerHTML = '<div class="placeholder">This file is too large for GitHub Pages.<br><br>View source on <a href="https://github.com/black-yt/ResearchClawBench" target="_blank" style="color:var(--accent)">GitHub</a></div>';
+          } else {
+            const url = `data/runs/${runId}/workspace/${f.path}`;
+            renderFileContent(f.path, f.name, url, null, `data/runs/${runId}/workspace/`, f.path);
+          }
         } else if (runId) {
           loadFile(runId, f.path, f.name, e);
         } else if (taskId) {
@@ -1068,15 +1077,7 @@ async function renderFileContent(path, name, url, evt, baseUrl, filePath) {
       div.innerHTML = `<img src="${url}">`;
     }
   } else if (VIEWABLE_EMBED_EXTS.has(ext)) {
-    if (STATIC_MODE) {
-      try {
-        const check = await fetch(url);
-        if (!check.ok) { div.innerHTML = GITHUB_FALLBACK; return; }
-        div.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none"></iframe>`;
-      } catch (_) { div.innerHTML = GITHUB_FALLBACK; }
-    } else {
-      div.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none"></iframe>`;
-    }
+    div.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none"></iframe>`;
   } else if (VIEWABLE_TABLE_EXTS.has(ext)) {
     if (STATIC_MODE) { div.innerHTML = '<div class="placeholder">Excel preview not available in static mode</div>'; return; }
     try {
