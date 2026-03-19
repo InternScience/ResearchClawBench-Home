@@ -1255,8 +1255,10 @@ function switchTab(name) {
   state.lastTab = name;
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === `panel-${name}`));
-  if (name === 'research' && state.currentRunId) loadWorkspace(state.currentRunId);
-  if (name === 'eval' && state.currentRunId) { loadReport(state.currentRunId); loadScore(state.currentRunId); }
+  if (!STATIC_MODE) {
+    if (name === 'research' && state.currentRunId) loadWorkspace(state.currentRunId);
+    if (name === 'eval' && state.currentRunId) { loadReport(state.currentRunId); loadScore(state.currentRunId); }
+  }
 }
 
 function setupButtons() {
