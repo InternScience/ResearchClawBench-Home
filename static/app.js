@@ -365,7 +365,7 @@ function renderLeaderboard(data) {
   function cellStyle(v) { return v > 0 ? `background:${scoreColor(v)};color:#fff;font-weight:600;` : ''; }
 
   let html = '<table class="leaderboard"><thead><tr><th>Task</th>';
-  data.agents.forEach(a => html += `<th>${agentLogoHtml(a, 14)} ${esc(a)}</th>`);
+  data.agents.forEach(a => html += `<th>${agentLogoHtml(a, 20)} ${esc(a)}</th>`);
   html += '<th>Frontier</th></tr></thead><tbody>';
 
   data.tasks.forEach(task => {
