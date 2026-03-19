@@ -440,7 +440,8 @@ async function selectTask(taskId) {
   // Stop any previous run's streaming/tracking
   if (state.eventSource) { state.eventSource.close(); state.eventSource = null; }
   stopAutoTrack();
-  document.getElementById('btn-stop-run').style.display = 'none';
+  const stopBtn0 = document.getElementById('btn-stop-run');
+  if (stopBtn0) stopBtn0.style.display = 'none';
 
   state.currentTaskId = taskId; state.currentRunId = null;
   document.querySelectorAll('.task-item').forEach(el => el.classList.toggle('active', el.dataset.taskId === taskId));
@@ -662,7 +663,7 @@ function startStreaming(runId) {
   state.userSelectedFile = false;
   const body = document.getElementById('terminal-body'); body.innerHTML = '';
   const st = document.getElementById('terminal-status'); st.textContent = 'Agent Output'; st.className = 'terminal-status running';
-  document.getElementById('btn-stop-run').style.display = 'inline-flex';
+  { const _el = document.getElementById('btn-stop-run'); if (_el) _el.style.display = 'inline-flex'; }
 
   // Start auto-tracking latest code file
   startAutoTrack(runId);
@@ -685,7 +686,7 @@ function onStreamEnd(status, runId) {
   const st = document.getElementById('terminal-status');
   st.textContent = 'Agent Output';
   st.className = 'terminal-status completed';
-  document.getElementById('btn-stop-run').style.display = 'none';
+  { const _el = document.getElementById('btn-stop-run'); if (_el) _el.style.display = 'none'; }
   // Wait for _meta.json to be written, then refresh
   setTimeout(() => {
     loadRuns(state.currentTaskId);
@@ -696,7 +697,7 @@ function onStreamEnd(status, runId) {
 
 async function stopRun() {
   if (!state.currentRunId) return;
-  document.getElementById('btn-stop-run').textContent = 'Stopping...';
+  { const _el = document.getElementById('btn-stop-run'); if (_el) _el.textContent = 'Stopping...'; }
   try {
     await fetch(`${API}/api/runs/${state.currentRunId}/stop`, { method: 'POST' });
   } catch (_) {}
