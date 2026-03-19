@@ -272,10 +272,12 @@ body { height: 100vh; font-family: var(--font); font-size: 17px; line-height: 1.
 
 .score-cell { border-radius: 4px; padding: 3px 8px; display: inline-block; min-width: 38px; text-align: center; font-size: 13px; }
 .running-cell {
-    font-size: 10px; color: var(--warn); font-style: italic;
-    animation: blink 1.5s ease-in-out infinite;
+    font-size: 10px; color: #000; font-style: italic; font-weight: 500;
+    padding: 2px 8px; border-radius: 4px;
+    background: rgba(234,179,8,0.3);
+    animation: breathe-bg 2s ease-in-out infinite;
 }
-@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+@keyframes breathe-bg { 0%,100% { background: rgba(234,179,8,0.15); } 50% { background: rgba(234,179,8,0.45); } }
 
 /* welcome fallback (no data) */
 .welcome-card { max-width: 480px; margin: 100px auto; text-align: center; }
@@ -408,6 +410,7 @@ body { height: 100vh; font-family: var(--font); font-size: 17px; line-height: 1.
     transition: all var(--transition);
 }
 .card h3 { font-size: 15.5px; font-weight: 600; margin-bottom: 14px; color: var(--text); letter-spacing: -0.2px; }
+.section-title { font-size: 23px !important; }
 
 .placeholder { color: var(--text-tertiary); font-size: 15.5px; font-style: italic; }
 

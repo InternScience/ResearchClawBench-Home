@@ -346,16 +346,15 @@ function renderFrontierChart(data) {
 function renderLeaderboard(data) {
   const wrap = document.getElementById('leaderboard-wrap');
 
-  // Start live clock
-  function updateClock() {
-    const el = document.getElementById('live-clock');
-    if (el) {
-      const now = new Date();
-      el.textContent = now.toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
+  // Live clock (static mode only)
+  if (STATIC_MODE) {
+    function updateClock() {
+      const el = document.getElementById('live-clock');
+      if (el) el.textContent = new Date().toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
     }
+    updateClock();
+    if (!window._clockInterval) window._clockInterval = setInterval(updateClock, 1000);
   }
-  updateClock();
-  if (!window._clockInterval) window._clockInterval = setInterval(updateClock, 1000);
 
   function scoreColor(v) {
     if (v <= 0) return 'transparent';
@@ -377,7 +376,9 @@ function renderLeaderboard(data) {
         const s = entry.score;
         html += `<td onclick="goToRun('${entry.run_id}')" style="cursor:pointer"><span class="score-cell" style="${cellStyle(s)}">${s.toFixed(1)}</span></td>`;
       } else {
-        html += '<td><span class="running-cell">running</span></td>';
+        html += STATIC_MODE
+          ? '<td><span class="running-cell">running</span></td>'
+          : '<td class="no-score">-</td>';
       }
     });
     const f = data.frontier[task];
