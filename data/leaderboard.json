@@ -1,6 +1,7 @@
 {
   "tasks": [
-    "Astronomy_000"
+    "Astronomy_000",
+    "Earth_000"
   ],
   "agents": [
     "Claude Code",
@@ -9,18 +10,23 @@
   "scores": {
     "Claude Code": {
       "Astronomy_000": {
-        "score": 44.1,
+        "score": 28.6,
         "run_id": "Astronomy_000_20260319_184609"
+      },
+      "Earth_000": {
+        "score": 21.2,
+        "run_id": "Earth_000_20260320_014954"
       }
     },
     "Codex CLI": {
       "Astronomy_000": {
-        "score": 40.5,
+        "score": 26.5,
         "run_id": "Astronomy_000_20260319_145223"
       }
     }
   },
   "frontier": {
-    "Astronomy_000": 44.1
+    "Astronomy_000": 28.6,
+    "Earth_000": 21.2
   }
 }
