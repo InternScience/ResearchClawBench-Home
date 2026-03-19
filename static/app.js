@@ -586,12 +586,24 @@ async function selectRun(runId) {
         renderFileContent(latest.path, latest.name, url, null, `data/runs/${runId}/workspace/`, latest.path);
       }
     }
-    // Agent output
+    // Agent output (limit to last 500 lines to prevent freeze)
     const outputLines = await fetchStaticJSON(`data/runs/${runId}/output.json`);
     const termBody = document.getElementById('terminal-body');
     termBody.innerHTML = '';
     if (outputLines && outputLines.length) {
-      for (const line of outputLines) { try { appendMsg(JSON.parse(line)); } catch (_) {} }
+      const MAX_RENDER = 500;
+      const toRender = outputLines.length > MAX_RENDER ? outputLines.slice(-MAX_RENDER) : outputLines;
+      if (outputLines.length > MAX_RENDER) {
+        const note = document.createElement('div');
+        note.className = 'chat-bubble chat-bubble-system';
+        note.textContent = `${outputLines.length - MAX_RENDER} earlier messages hidden (${outputLines.length} total)`;
+        termBody.appendChild(note);
+      }
+      const prevFollow = state.autoFollow;
+      state.autoFollow = false;
+      for (const line of toRender) { try { appendMsg(JSON.parse(line)); } catch (_) {} }
+      state.autoFollow = prevFollow;
+      if (prevFollow) termBody.scrollTop = termBody.scrollHeight;
     } else { termBody.innerHTML = '<div class="placeholder">No agent output</div>'; }
     // Report
     if (runData && runData.report) {
@@ -615,11 +627,10 @@ async function selectRun(runId) {
     if (meta.status === 'running') {
       startStreaming(runId); switchTab(state.lastTab); loadWorkspace(runId);
     } else {
+      // Load workspace + file first, then the rest in parallel
       await loadWorkspace(runId);
-      await autoOpenLatestFile(runId);
-      await loadSavedOutput(runId);
-      await loadReport(runId);
-      await loadScore(runId);
+      autoOpenLatestFile(runId);
+      await Promise.all([loadSavedOutput(runId), loadReport(runId), loadScore(runId)]);
       switchTab(state.lastTab);
     }
   }
@@ -642,11 +653,26 @@ async function loadSavedOutput(runId) {
   const body = document.getElementById('terminal-body');
   body.innerHTML = '';
   try {
-    const lines = await (await fetch(`${API}/api/runs/${runId}/output`)).json();
+    const lines = await (await fetch(`${API}/api/runs/${runId}/output?tail=500`)).json();
     if (!lines.length) { body.innerHTML = '<div class="placeholder">No agent output recorded</div>'; return; }
-    for (const line of lines) {
+    // Limit rendering to last 500 lines to prevent browser freeze on large outputs
+    const MAX_RENDER = 500;
+    const skipped = lines.length > MAX_RENDER ? lines.length - MAX_RENDER : 0;
+    const toRender = skipped ? lines.slice(-MAX_RENDER) : lines;
+    if (skipped) {
+      const note = document.createElement('div');
+      note.className = 'chat-bubble chat-bubble-system';
+      note.textContent = `${skipped} earlier messages hidden (${lines.length} total)`;
+      body.appendChild(note);
+    }
+    // Batch DOM: disable auto-scroll during bulk insert
+    const prevFollow = state.autoFollow;
+    state.autoFollow = false;
+    for (const line of toRender) {
       try { appendMsg(JSON.parse(line)); } catch (_) { appendLine(line, ''); }
     }
+    state.autoFollow = prevFollow;
+    if (prevFollow) body.scrollTop = body.scrollHeight;
   } catch (_) { body.innerHTML = '<div class="placeholder">Failed to load output</div>'; }
 }
 
