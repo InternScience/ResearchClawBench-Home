@@ -476,7 +476,12 @@ async function selectTask(taskId) {
     }).join('');
   } catch (e) { document.getElementById('task-checklist-preview').innerHTML = '<p class="placeholder">No checklist</p>'; }
 
-  if (!STATIC_MODE) document.getElementById('paper-iframe').src = `${API}/api/tasks/${taskId}/paper`;
+  const paperIframe = document.getElementById('paper-iframe');
+  if (paperIframe) {
+    paperIframe.src = STATIC_MODE
+      ? `data/tasks/${taskId}/paper.pdf`
+      : `${API}/api/tasks/${taskId}/paper`;
+  }
   await loadRuns(taskId);
   document.getElementById('terminal-body').innerHTML = '<div class="placeholder">Select a run to see agent output</div>';
   document.getElementById('terminal-status').textContent = 'Agent Output';
@@ -490,11 +495,13 @@ async function selectTask(taskId) {
     await selectRun(runs[0].run_id);
   } else {
     state.currentRunId = null;
-    if (!STATIC_MODE) await loadTaskFiles(taskId);
-    // Clear all panels
-    document.getElementById('file-tree').innerHTML = STATIC_MODE
-      ? '<div class="placeholder" style="padding:8px">No runs yet</div>'
-      : '';
+    // Load task file tree (both modes)
+    if (STATIC_MODE) {
+      await loadStaticTaskFiles(taskId);
+    } else {
+      await loadTaskFiles(taskId);
+    }
+    // Clear non-file panels
     document.getElementById('file-content-header').textContent = 'No file selected';
     document.getElementById('file-content-body').innerHTML = '<div class="placeholder">Select a file from the explorer</div>';
     document.getElementById('terminal-body').innerHTML = '<div class="placeholder">No runs yet</div>';
@@ -883,6 +890,52 @@ async function loadTaskFiles(taskId) {
   } catch (e) { console.error(e); }
 }
 
+async function loadStaticTaskFiles(taskId) {
+  // Static mode: load task file tree from exported JSON
+  try {
+    const files = await fetchStaticJSON(`data/tasks/${taskId}/files.json`);
+    if (files && files.length) {
+      renderStaticTaskFileTree(files, taskId);
+    } else {
+      document.getElementById('file-tree').innerHTML = '<div class="placeholder" style="padding:8px">No files</div>';
+    }
+  } catch (e) { console.error(e); }
+}
+
+function renderStaticTaskFileTree(files, taskId) {
+  const tree = document.getElementById('file-tree'); tree.innerHTML = '';
+  const dirMap = {};
+  for (const f of files) {
+    const depth = (f.path.match(/\//g) || []).length;
+    const item = document.createElement('div');
+    item.className = `file-tree-item ${f.type==='directory'?'dir':''}`;
+    item.style.paddingLeft = `${6 + depth * 14}px`;
+    if (f.type === 'directory') {
+      item.innerHTML = `<span class="file-tree-icon folder-arrow">&#9660;</span><span class="file-tree-icon">&#128193;</span>${esc(f.name)}`;
+      item.dataset.path = f.path; item.dataset.open = 'true';
+      const child = document.createElement('div'); child.className = 'file-tree-children';
+      item.onclick = (e) => { e.stopPropagation(); const open = item.dataset.open === 'true'; item.dataset.open = open ? 'false' : 'true'; child.style.display = open ? 'none' : 'block'; item.querySelector('.folder-arrow').innerHTML = open ? '&#9654;' : '&#9660;'; };
+      dirMap[f.path] = child;
+      const pp = f.path.includes('/') ? f.path.substring(0, f.path.lastIndexOf('/')) : null;
+      (pp && dirMap[pp] || tree).appendChild(item); (pp && dirMap[pp] || tree).appendChild(child);
+    } else {
+      const icon = fileIcon(f.name);
+      item.innerHTML = `<span class="file-tree-icon" style="visibility:hidden">.</span><span class="file-tree-icon">${icon}</span>${esc(f.name)}`;
+      if (isViewableFile(f.name)) {
+        item.onclick = (e) => {
+          e.stopPropagation();
+          document.querySelectorAll('.file-tree-item').forEach(el => el.classList.remove('active'));
+          item.classList.add('active');
+          const url = `data/tasks/${taskId}/workspace/${f.path}`;
+          renderFileContent(f.path, f.name, url, null, `data/tasks/${taskId}/workspace/`, f.path);
+        };
+      }
+      const pp = f.path.includes('/') ? f.path.substring(0, f.path.lastIndexOf('/')) : null;
+      (pp && dirMap[pp] || tree).appendChild(item);
+    }
+  }
+}
+
 async function loadWorkspace(runId) {
   try {
     const files = await (await fetch(`${API}/api/runs/${runId}/files`)).json();
@@ -917,8 +970,17 @@ function renderFileTree(files, runId, taskId) {
       item.innerHTML = `<span class="file-tree-icon" style="visibility:hidden">.</span><span class="file-tree-icon">${fileIcon(f.name)}</span>${esc(f.name)}`;
       item.onclick = (e) => {
         e.stopPropagation();
-        if (runId) loadFile(runId, f.path, f.name, e);
-        else if (taskId) loadTaskFile(taskId, f.path, f.name, e);
+        if (STATIC_MODE && runId) {
+          // Static mode: load from exported workspace files
+          document.querySelectorAll('.file-tree-item').forEach(el => el.classList.remove('active'));
+          item.classList.add('active');
+          const url = `data/runs/${runId}/workspace/${f.path}`;
+          renderFileContent(f.path, f.name, url, null, `data/runs/${runId}/workspace/`, f.path);
+        } else if (runId) {
+          loadFile(runId, f.path, f.name, e);
+        } else if (taskId) {
+          loadTaskFile(taskId, f.path, f.name, e);
+        }
       };
       const pp = f.path.includes('/') ? f.path.substring(0, f.path.lastIndexOf('/')) : null;
       (pp && dirMap[pp] || tree).appendChild(item);
