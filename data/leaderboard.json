@@ -3,7 +3,8 @@
     "Astronomy_000",
     "Chemistry_000",
     "Earth_000",
-    "Energy_000"
+    "Energy_000",
+    "Life_000"
   ],
   "agents": [
     "Claude Code",
@@ -29,6 +30,10 @@
       "Astronomy_000": {
         "score": 29.4,
         "run_id": "Astronomy_000_20260319_145223"
+      },
+      "Life_000": {
+        "score": 7.55,
+        "run_id": "Life_000_20260320_211701"
       }
     },
     "Nanobot": {
@@ -42,6 +47,7 @@
     "Astronomy_000": 29.4,
     "Chemistry_000": 16.85,
     "Earth_000": 24.6,
-    "Energy_000": 11.3
+    "Energy_000": 11.3,
+    "Life_000": 7.55
   }
 }
