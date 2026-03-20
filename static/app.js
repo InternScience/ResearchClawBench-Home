@@ -133,11 +133,6 @@ async function loadConfig() {
       btn.onclick = () => selectAgent(key);
       container.appendChild(btn);
     }
-    const custom = document.createElement('div');
-    custom.className = 'agent-option'; custom.dataset.agent = 'custom';
-    custom.innerHTML = '<span class="agent-option-icon" style="background:#71717a">+</span>Custom';
-    custom.onclick = () => selectAgent('custom');
-    container.appendChild(custom);
     const first = Object.keys(cfg.presets || {})[0];
     if (first) selectAgent(first);
   } catch (e) { console.error(e); }
@@ -146,7 +141,6 @@ async function loadConfig() {
 function selectAgent(key) {
   state.selectedAgent = key;
   document.querySelectorAll('.agent-option').forEach(el => el.classList.toggle('active', el.dataset.agent === key));
-  document.getElementById('agent-custom-row').style.display = key === 'custom' ? 'block' : 'none';
 }
 
 /* ── Dashboard: Frontier Chart + Leaderboard ────────────────────────── */
@@ -768,11 +762,7 @@ async function loadSavedOutput(runId) {
 /* ── Start Run ───────────────────────────────────────────────────────── */
 async function startRun() {
   if (!state.currentTaskId || !state.selectedAgent) return;
-  const body = { task_id: state.currentTaskId };
-  if (state.selectedAgent === 'custom') {
-    const cmd = document.getElementById('agent-custom-cmd').value.trim();
-    if (!cmd) return; body.custom_cmd = cmd;
-  } else { body.agent = state.selectedAgent; }
+  const body = { task_id: state.currentTaskId, agent: state.selectedAgent };
   const btn = document.getElementById('btn-start-run');
   btn.disabled = true; btn.innerHTML = '<span class="btn-icon">&#9654;</span> Starting...';
   try {
@@ -1060,6 +1050,14 @@ function renderStaticTaskFileTree(files, taskId) {
             const url = `data/tasks/${taskId}/workspace/${f.path}`;
             renderFileContent(f.path, f.name, url, null, `data/tasks/${taskId}/workspace/`, f.path);
           }
+        };
+      } else {
+        item.onclick = (e) => {
+          e.stopPropagation();
+          document.querySelectorAll('.file-tree-item').forEach(el => el.classList.remove('active'));
+          item.classList.add('active');
+          document.getElementById('file-content-header').textContent = f.path;
+          document.getElementById('file-content-body').innerHTML = '<div class="placeholder">Binary file — cannot preview.<br><br>View source on <a href="https://github.com/InternScience/ResearchClawBench" target="_blank" style="color:var(--accent)">GitHub</a></div>';
         };
       }
       const pp = f.path.includes('/') ? f.path.substring(0, f.path.lastIndexOf('/')) : null;

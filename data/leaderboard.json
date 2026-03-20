@@ -1,11 +1,13 @@
 {
   "tasks": [
     "Astronomy_000",
+    "Chemistry_000",
     "Earth_000"
   ],
   "agents": [
     "Claude Code",
-    "Codex CLI"
+    "Codex CLI",
+    "Nanobot"
   ],
   "scores": {
     "Claude Code": {
@@ -23,10 +25,17 @@
         "score": 29.4,
         "run_id": "Astronomy_000_20260319_145223"
       }
+    },
+    "Nanobot": {
+      "Chemistry_000": {
+        "score": 16.85,
+        "run_id": "Chemistry_000_20260320_193804"
+      }
     }
   },
   "frontier": {
     "Astronomy_000": 29.4,
+    "Chemistry_000": 16.85,
     "Earth_000": 24.6
   }
 }
