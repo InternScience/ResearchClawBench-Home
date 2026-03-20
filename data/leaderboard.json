@@ -2,7 +2,8 @@
   "tasks": [
     "Astronomy_000",
     "Chemistry_000",
-    "Earth_000"
+    "Earth_000",
+    "Energy_000"
   ],
   "agents": [
     "Claude Code",
@@ -18,6 +19,10 @@
       "Earth_000": {
         "score": 24.6,
         "run_id": "Earth_000_20260320_014954"
+      },
+      "Energy_000": {
+        "score": 11.3,
+        "run_id": "Energy_000_20260320_205623"
       }
     },
     "Codex CLI": {
@@ -36,6 +41,7 @@
   "frontier": {
     "Astronomy_000": 29.4,
     "Chemistry_000": 16.85,
-    "Earth_000": 24.6
+    "Earth_000": 24.6,
+    "Energy_000": 11.3
   }
 }

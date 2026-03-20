@@ -100,7 +100,7 @@ def _get_run_workspace(run_id):
 
 def _build_file_tree(root, prefix=""):
     """Build flat file tree list for a directory."""
-    skip_names = {"_meta.json", "_agent_output.jsonl", "_score.json", ".claude"}
+    skip_names = {"_meta.json", "_agent_output.jsonl", "_score.json", ".claude", "__pycache__"}
     tree = []
     try:
         entries = sorted(root.iterdir(), key=lambda p: (not p.is_dir(), p.name.lower()))
@@ -369,8 +369,18 @@ def export_runs():
                     json.dump(exported_lines, f)
                 break
 
-        # File tree
-        tree = _build_file_tree(ws)
+        # File tree — only export known directories + INSTRUCTIONS.md
+        EXPORT_DIRS = ["code", "data", "outputs", "related_work", "report"]
+        tree = []
+        for subdir in EXPORT_DIRS:
+            sub = ws / subdir
+            if sub.exists():
+                tree.append({"name": subdir, "path": subdir, "type": "directory"})
+                tree.extend(_build_file_tree(sub, subdir))
+        instr = ws / "INSTRUCTIONS.md"
+        if instr.exists():
+            st = instr.stat()
+            tree.append({"name": "INSTRUCTIONS.md", "path": "INSTRUCTIONS.md", "type": "file", "size": st.st_size, "mtime": st.st_mtime})
         with open(run_out_dir / "files.json", "w", encoding="utf-8") as f:
             json.dump(tree, f, indent=2)
 

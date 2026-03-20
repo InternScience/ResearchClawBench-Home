@@ -698,7 +698,17 @@ async function selectRun(runId) {
     if (isStale()) return;
     showDuration(meta.duration_seconds);
     if (meta.status === 'running') {
-      startDurationTimer();
+      // Calculate elapsed time from run start timestamp (YYYYMMDD_HHMMSS)
+      let elapsed = 0;
+      if (meta.timestamp) {
+        const ts = meta.timestamp;
+        const startDate = new Date(
+          parseInt(ts.slice(0,4)), parseInt(ts.slice(4,6))-1, parseInt(ts.slice(6,8)),
+          parseInt(ts.slice(9,11)), parseInt(ts.slice(11,13)), parseInt(ts.slice(13,15))
+        );
+        elapsed = Math.max(0, Math.floor((Date.now() - startDate.getTime()) / 1000));
+      }
+      startDurationTimer(elapsed);
       startStreaming(runId); switchTab(state.lastTab); loadWorkspace(runId);
     } else {
       // Load workspace + file first, then the rest in parallel
@@ -1438,6 +1448,7 @@ function setupButtons() {
   bind('btn-auto-follow', 'onclick', toggleAutoFollow);
   bind('btn-file-follow', 'onclick', toggleFileFollow);
   bind('btn-toggle-tree', 'onclick', toggleTreeCollapse);
+  bind('btn-toggle-domains', 'onclick', toggleDomainCollapse);
 
   document.querySelectorAll('.tab').forEach(tab => tab.onclick = () => switchTab(tab.dataset.tab));
 
@@ -1501,6 +1512,15 @@ function toggleTreeCollapse() {
   });
 }
 
+let domainsExpanded = false;
+function toggleDomainCollapse() {
+  domainsExpanded = !domainsExpanded;
+  const btn = document.getElementById('btn-toggle-domains');
+  if (btn) btn.innerHTML = domainsExpanded ? '&#9660;' : '&#9654;';
+  document.querySelectorAll('.domain-toggle').forEach(t => t.classList.toggle('open', domainsExpanded));
+  document.querySelectorAll('.domain-tasks').forEach(t => t.classList.toggle('open', domainsExpanded));
+}
+
 function backToDashboard() {
   document.getElementById('task-view').style.display = 'none';
   document.getElementById('welcome-screen').style.display = 'block';
@@ -1541,11 +1561,12 @@ function showDuration(seconds) {
   if (el) el.textContent = formatDuration(seconds);
 }
 
-function startDurationTimer() {
+function startDurationTimer(offsetSeconds) {
   stopDurationTimer();
-  _durationStart = Date.now();
+  const offset = offsetSeconds || 0;
+  _durationStart = Date.now() - offset * 1000;
   const el = document.getElementById('duration-display');
-  if (el) el.textContent = formatDuration(0);
+  if (el) el.textContent = formatDuration(offset);
   _durationTimer = setInterval(() => {
     const elapsed = Math.floor((Date.now() - _durationStart) / 1000);
     if (el) el.textContent = formatDuration(elapsed);
