@@ -1,0 +1,9 @@
+Behavior,Classifier,Accuracy,Precision,Recall,F1,AUC-ROC
+Attack,RF (balanced),0.931,0.867,0.941,0.902,0.936
+Attack,GB (balanced),0.862,0.824,0.754,0.788,0.932
+Attack,LR (balanced),0.842,0.723,0.864,0.788,0.899
+Attack,SVM (balanced),0.943,0.877,0.966,0.919,0.952
+Sniffing,RF (balanced),0.862,0.250,0.022,0.040,0.472
+Sniffing,GB (balanced),0.842,0.154,0.043,0.068,0.510
+Sniffing,LR (balanced),0.575,0.141,0.435,0.213,0.510
+Sniffing,SVM (balanced),0.621,0.123,0.304,0.175,0.483

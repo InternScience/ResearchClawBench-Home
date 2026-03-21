@@ -1,0 +1,490 @@
+{
+  "paths": {
+    "MC": {
+      "path": "MC",
+      "coords": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "T_path": [
+        1,
+        4,
+        9,
+        16,
+        25
+      ],
+      "shell_atoms": [
+        12,
+        42,
+        92,
+        162,
+        252
+      ],
+      "cumulative_atoms": [
+        1,
+        13,
+        55,
+        147,
+        309,
+        561
+      ]
+    },
+    "Ch1": {
+      "path": "Ch1",
+      "coords": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "T_path": [
+        1,
+        3,
+        7,
+        12,
+        19
+      ],
+      "shell_atoms": [
+        12,
+        32,
+        72,
+        122,
+        192
+      ],
+      "cumulative_atoms": [
+        1,
+        13,
+        45,
+        117,
+        239,
+        431
+      ]
+    },
+    "BG": {
+      "path": "BG",
+      "coords": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "T_path": [
+        1,
+        4,
+        7,
+        12,
+        19
+      ],
+      "shell_atoms": [
+        12,
+        42,
+        72,
+        122,
+        192
+      ],
+      "cumulative_atoms": [
+        1,
+        13,
+        55,
+        127,
+        249,
+        441
+      ]
+    },
+    "Ch2": {
+      "path": "Ch2",
+      "coords": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "T_path": [
+        1,
+        3,
+        7,
+        13,
+        21
+      ],
+      "shell_atoms": [
+        12,
+        32,
+        72,
+        132,
+        212
+      ],
+      "cumulative_atoms": [
+        1,
+        13,
+        45,
+        117,
+        249,
+        461
+      ]
+    }
+  },
+  "growth_validation": [
+    {
+      "scenario": "MC assembly",
+      "rmse": 0.0148171389,
+      "final_simulated_mismatch": 0.0399980378,
+      "final_reference_mismatch": 0.035
+    },
+    {
+      "scenario": "Ch1 assembly",
+      "rmse": 0.007886278,
+      "final_simulated_mismatch": 0.1399999999,
+      "final_reference_mismatch": 0.135
+    },
+    {
+      "scenario": "MC-to-Ch1 crossover",
+      "rmse": 0.0040850352,
+      "final_simulated_mismatch": 0.1419999287,
+      "final_reference_mismatch": 0.142
+    }
+  ],
+  "top_predictions": [
+    {
+      "inner": "Ni",
+      "outer": "Cu",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "Ni147@Cu162",
+      "total_atoms": 309,
+      "mismatch": 0.032,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.588848
+    },
+    {
+      "inner": "Cu",
+      "outer": "Ni",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "Cu147@Ni162",
+      "total_atoms": 309,
+      "mismatch": 0.032,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.588848
+    },
+    {
+      "inner": "Cu",
+      "outer": "Ag",
+      "shell_class": "Ch1",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Cu147@Ag122",
+      "total_atoms": 269,
+      "mismatch": 0.12,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3928
+    },
+    {
+      "inner": "Ag",
+      "outer": "Cu",
+      "shell_class": "Ch1",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Ag147@Cu122",
+      "total_atoms": 269,
+      "mismatch": 0.12,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3928
+    },
+    {
+      "inner": "Ag",
+      "outer": "Ni",
+      "shell_class": "Ch1",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Ag147@Ni122",
+      "total_atoms": 269,
+      "mismatch": 0.15,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3682
+    },
+    {
+      "inner": "Ni",
+      "outer": "Ag",
+      "shell_class": "Ch1",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Ni147@Ag122",
+      "total_atoms": 269,
+      "mismatch": 0.15,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3682
+    },
+    {
+      "inner": "Cs",
+      "outer": "Rb",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "Cs147@Rb162",
+      "total_atoms": 309,
+      "mismatch": 0.0662768031,
+      "mismatch_source": "radius_ratio",
+      "predicted_free_energy": -7.3169741603
+    },
+    {
+      "inner": "Rb",
+      "outer": "Cs",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "Rb147@Cs162",
+      "total_atoms": 309,
+      "mismatch": 0.0662768031,
+      "mismatch_source": "radius_ratio",
+      "predicted_free_energy": -7.3169741603
+    },
+    {
+      "inner": "Cu",
+      "outer": "Ag",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "Cu147@Ag162",
+      "total_atoms": 309,
+      "mismatch": 0.12,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3088
+    },
+    {
+      "inner": "Ag",
+      "outer": "Cu",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "Ag147@Cu162",
+      "total_atoms": 309,
+      "mismatch": 0.12,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3088
+    },
+    {
+      "inner": "Ag",
+      "outer": "Cu",
+      "shell_class": "BG",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Ag147@Cu122",
+      "total_atoms": 269,
+      "mismatch": 0.12,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3078
+    },
+    {
+      "inner": "Cu",
+      "outer": "Ag",
+      "shell_class": "BG",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Cu147@Ag122",
+      "total_atoms": 269,
+      "mismatch": 0.12,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.3078
+    },
+    {
+      "inner": "K",
+      "outer": "Rb",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "K147@Rb162",
+      "total_atoms": 309,
+      "mismatch": 0.0884210526,
+      "mismatch_source": "radius_ratio",
+      "predicted_free_energy": -7.2387501385
+    },
+    {
+      "inner": "Rb",
+      "outer": "K",
+      "shell_class": "MC",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 162,
+      "cluster_notation": "Rb147@K162",
+      "total_atoms": 309,
+      "mismatch": 0.0884210526,
+      "mismatch_source": "radius_ratio",
+      "predicted_free_energy": -7.2387501385
+    },
+    {
+      "inner": "Ni",
+      "outer": "Cu",
+      "shell_class": "BG",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Ni147@Cu122",
+      "total_atoms": 269,
+      "mismatch": 0.032,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.157288
+    },
+    {
+      "inner": "Cu",
+      "outer": "Ni",
+      "shell_class": "BG",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Cu147@Ni122",
+      "total_atoms": 269,
+      "mismatch": 0.032,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.157288
+    },
+    {
+      "inner": "Ag",
+      "outer": "Ni",
+      "shell_class": "BG",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Ag147@Ni122",
+      "total_atoms": 269,
+      "mismatch": 0.15,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.1452
+    },
+    {
+      "inner": "Ni",
+      "outer": "Ag",
+      "shell_class": "BG",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Ni147@Ag122",
+      "total_atoms": 269,
+      "mismatch": 0.15,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.1452
+    },
+    {
+      "inner": "Na",
+      "outer": "Rb",
+      "shell_class": "Ch1",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Na147@Rb122",
+      "total_atoms": 269,
+      "mismatch": 0.22,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.1408
+    },
+    {
+      "inner": "Rb",
+      "outer": "Na",
+      "shell_class": "Ch1",
+      "shell_index": 4,
+      "core_atoms": 147,
+      "outer_shell_atoms": 122,
+      "cluster_notation": "Rb147@Na122",
+      "total_atoms": 269,
+      "mismatch": 0.22,
+      "mismatch_source": "dataset_compatibility",
+      "predicted_free_energy": -7.1408
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+scenario,step,coord,shell_class,avg_mismatch
+MC assembly,0,"(0, 0)",MC,0.0
+MC assembly,10,"(0, 5)",MC,0.034502078746561575
+MC assembly,20,"(0, 5)",MC,0.03924432154727475
+MC assembly,30,"(1, 5)",MC,0.039896133484349915
+MC assembly,40,"(0, 5)",MC,0.03998572375190217
+MC assembly,50,"(0, 5)",MC,0.03999803775780409
+Ch1 assembly,0,"(0, 0)",Ch1,0.0
+Ch1 assembly,10,"(2, 3)",Ch1,0.13811521593175197
+Ch1 assembly,20,"(1, 2)",Ch1,0.13997462563582913
+Ch1 assembly,30,"(2, 3)",Ch1,0.13999965839144765
+Ch1 assembly,40,"(2, 4)",Ch1,0.13999999540101174
+Ch1 assembly,50,"(2, 2)",Ch1,0.139999999938085
+MC-to-Ch1 crossover,0,"(0, 0)",MC,0.0
+MC-to-Ch1 crossover,10,"(0, 3)",MC,0.08493178367614745
+MC-to-Ch1 crossover,20,"(1, 2)",Ch1,0.13883795640075772
+MC-to-Ch1 crossover,30,"(2, 3)",Ch1,0.1419106800946955
+MC-to-Ch1 crossover,40,"(2, 3)",Ch1,0.14199747693375084
+MC-to-Ch1 crossover,50,"(2, 3)",Ch1,0.1419999287296233

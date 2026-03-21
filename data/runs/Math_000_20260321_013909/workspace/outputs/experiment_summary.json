@@ -1,0 +1,56 @@
+{
+  "dataset": {
+    "num_frames": 100,
+    "num_gt_ids": 200,
+    "avg_detections_per_frame": 158.2,
+    "min_detections_per_frame": 142,
+    "max_detections_per_frame": 170,
+    "mean_detection_score": 0.265689,
+    "mean_score_clear": 0.484203,
+    "mean_score_occluded": 0.264145,
+    "mean_occlusion_fraction": 0.9929
+  },
+  "methods": [
+    {
+      "method": "SORT",
+      "MOTA": 0.10525,
+      "IDF1": 0.042938,
+      "Recall": 0.11085,
+      "Precision": 0.999549,
+      "OcclusionRecall": 0.109679,
+      "FP": 1,
+      "FN": 17783,
+      "IDSW": 111,
+      "Fragments": 1777,
+      "Predictions": 2218
+    },
+    {
+      "method": "ByteTrack-lite",
+      "MOTA": 0.1899,
+      "IDF1": 0.062479,
+      "Recall": 0.2114,
+      "Precision": 0.999055,
+      "OcclusionRecall": 0.210192,
+      "FP": 4,
+      "FN": 15772,
+      "IDSW": 426,
+      "Fragments": 2740,
+      "Predictions": 4232
+    },
+    {
+      "method": "SparseDepth",
+      "MOTA": 0.19455,
+      "IDF1": 0.062223,
+      "Recall": 0.21965,
+      "Precision": 0.999318,
+      "OcclusionRecall": 0.218048,
+      "FP": 3,
+      "FN": 15607,
+      "IDSW": 499,
+      "Fragments": 2771,
+      "Predictions": 4396
+    }
+  ],
+  "best_method_by_mota": "SparseDepth",
+  "best_method_by_idf1": "ByteTrack-lite"
+}

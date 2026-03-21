@@ -1,0 +1,18 @@
+{
+  "n_mangrove_points": 45786,
+  "scenarios": [
+    "ssp245",
+    "ssp370",
+    "ssp585"
+  ],
+  "slr_thresholds_mm_per_year": [
+    4.0,
+    7.0
+  ],
+  "tc_recovery_threshold_ms": 60.0,
+  "notes": [
+    "Mangrove input is a 10% sampled point layer rather than polygons.",
+    "Future tropical cyclone regime shifts are approximated using literature-informed basin multipliers applied to historical hazard baselines.",
+    "Sea-level rise uses the median (0.5 quantile) regional relative rate at the nearest AR6 coastal point."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "datasets": {
+    "equation": {
+      "task_focus": "OCR and formula-to-LaTeX",
+      "manual_target": "A_n = a_0 \\left[ 1 + \\frac{3}{4}\\sum_{k=1}^{n}\\left(\\frac{4}{9}\\right)^k \\right]",
+      "description": "High-contrast mathematical notation with dense symbols and large whitespace.",
+      "understanding_tokens": 359,
+      "generation_tokens": 363
+    },
+    "doge": {
+      "task_focus": "Meme semantics and joint text-image reasoning",
+      "manual_target": "Swole Doge vs. Cheems style meme contrasting decoupled and single-encoder designs.",
+      "description": "A meme with two dogs and overlaid text that requires OCR plus semantic interpretation.",
+      "understanding_tokens": 1004,
+      "generation_tokens": 950
+    }
+  },
+  "framework": {
+    "name": "DVE-AR",
+    "expansion": "Decoupled Visual Encoding for Autoregression",
+    "generation_patch": 32,
+    "equation_token_reduction_vs_uniform16": 0.7527548209366391,
+    "doge_token_reduction_vs_uniform16": 0.7322666666666666,
+    "equation_edge_recall_gain_vs_uniform32": 0.08449519230768979,
+    "doge_edge_recall_gain_vs_uniform32": 0.12727367542761653
+  }
+}

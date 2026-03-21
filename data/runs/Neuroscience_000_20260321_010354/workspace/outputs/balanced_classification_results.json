@@ -1,0 +1,70 @@
+{
+  "Attack": {
+    "RF (balanced)": {
+      "accuracy": 0.931,
+      "precision": 0.8672,
+      "recall": 0.9407,
+      "f1": 0.9024,
+      "auc_roc": 0.9361,
+      "avg_precision": 0.7675
+    },
+    "GB (balanced)": {
+      "accuracy": 0.8621,
+      "precision": 0.8241,
+      "recall": 0.7542,
+      "f1": 0.7876,
+      "auc_roc": 0.9322,
+      "avg_precision": 0.7694
+    },
+    "LR (balanced)": {
+      "accuracy": 0.842,
+      "precision": 0.7234,
+      "recall": 0.8644,
+      "f1": 0.7876,
+      "auc_roc": 0.8986,
+      "avg_precision": 0.7483
+    },
+    "SVM (balanced)": {
+      "accuracy": 0.9425,
+      "precision": 0.8769,
+      "recall": 0.9661,
+      "f1": 0.9194,
+      "auc_roc": 0.9516,
+      "avg_precision": 0.8325
+    }
+  },
+  "Sniffing": {
+    "RF (balanced)": {
+      "accuracy": 0.8621,
+      "precision": 0.25,
+      "recall": 0.0217,
+      "f1": 0.04,
+      "auc_roc": 0.4722,
+      "avg_precision": 0.1559
+    },
+    "GB (balanced)": {
+      "accuracy": 0.842,
+      "precision": 0.1538,
+      "recall": 0.0435,
+      "f1": 0.0678,
+      "auc_roc": 0.5101,
+      "avg_precision": 0.1436
+    },
+    "LR (balanced)": {
+      "accuracy": 0.5747,
+      "precision": 0.1408,
+      "recall": 0.4348,
+      "f1": 0.2128,
+      "auc_roc": 0.5099,
+      "avg_precision": 0.1706
+    },
+    "SVM (balanced)": {
+      "accuracy": 0.6207,
+      "precision": 0.1228,
+      "recall": 0.3043,
+      "f1": 0.175,
+      "auc_roc": 0.4834,
+      "avg_precision": 0.1429
+    }
+  }
+}

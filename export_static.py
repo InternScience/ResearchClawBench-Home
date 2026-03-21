@@ -98,30 +98,43 @@ def _get_run_workspace(run_id):
     return ws if ws.is_dir() else None
 
 
-def _build_file_tree(root, prefix=""):
+def _build_file_tree(root, prefix="", max_per_dir=0, max_depth=0):
     """Build flat file tree list for a directory."""
     skip_names = {"_meta.json", "_agent_output.jsonl", "_score.json", ".claude", "__pycache__"}
     tree = []
-    try:
-        entries = sorted(root.iterdir(), key=lambda p: (not p.is_dir(), p.name.lower()))
-    except PermissionError:
-        return tree
-    for entry in entries:
-        if entry.name.startswith(".") or entry.name in skip_names:
-            continue
-        rel = f"{prefix}/{entry.name}" if prefix else entry.name
-        if entry.is_dir():
-            tree.append({"name": entry.name, "path": rel, "type": "directory"})
-            tree.extend(_build_file_tree(entry, rel))
-        else:
-            try:
-                stat = entry.stat()
-            except OSError:
-                continue
-            tree.append({
-                "name": entry.name, "path": rel, "type": "file",
-                "size": stat.st_size, "mtime": stat.st_mtime,
-            })
+
+    def _walk(root, prefix, depth):
+        try:
+            entries = sorted(root.iterdir(), key=lambda p: (not p.is_dir(), p.name.lower()))
+        except PermissionError:
+            return
+        entries = [e for e in entries if not e.name.startswith(".") and e.name not in skip_names]
+        total = len(entries)
+        limited = max_per_dir and total > max_per_dir
+        if limited:
+            entries = entries[:max_per_dir]
+        for entry in entries:
+            rel = f"{prefix}/{entry.name}" if prefix else entry.name
+            if entry.is_dir():
+                node = {"name": entry.name, "path": rel, "type": "directory"}
+                tree.append(node)
+                if max_depth and depth >= max_depth:
+                    node["truncated"] = True
+                else:
+                    _walk(entry, rel, depth + 1)
+            else:
+                try:
+                    stat = entry.stat()
+                except OSError:
+                    continue
+                tree.append({
+                    "name": entry.name, "path": rel, "type": "file",
+                    "size": stat.st_size, "mtime": stat.st_mtime,
+                })
+        if limited:
+            tree.append({"name": f"… {total - max_per_dir} more items", "path": prefix + "/_more", "type": "truncated"})
+
+    _walk(root, prefix, 1)
     return tree
 
 
@@ -246,7 +259,7 @@ def export_tasks():
             for subdir in ["data", "related_work"]:
                 sub_path = src_task / subdir
                 if sub_path.exists():
-                    top_dirs[subdir] = _build_file_tree(sub_path, subdir)
+                    top_dirs[subdir] = _build_file_tree(sub_path, subdir, max_per_dir=20, max_depth=4)
             for d in ["code", "outputs", "report"]:
                 if d not in top_dirs:
                     top_dirs[d] = []
@@ -371,12 +384,18 @@ def export_runs():
 
         # File tree — only export known directories + INSTRUCTIONS.md
         EXPORT_DIRS = ["code", "data", "outputs", "related_work", "report"]
+        INPUT_DIRS = {"data", "related_work"}
+        NO_LIMIT_DIRS = {"report"}
         tree = []
         for subdir in EXPORT_DIRS:
             sub = ws / subdir
             if sub.exists():
                 tree.append({"name": subdir, "path": subdir, "type": "directory"})
-                tree.extend(_build_file_tree(sub, subdir))
+                if subdir in NO_LIMIT_DIRS:
+                    tree.extend(_build_file_tree(sub, subdir))
+                else:
+                    depth = 4 if subdir in INPUT_DIRS else 3
+                    tree.extend(_build_file_tree(sub, subdir, max_per_dir=20, max_depth=depth))
         instr = ws / "INSTRUCTIONS.md"
         if instr.exists():
             st = instr.stat()
