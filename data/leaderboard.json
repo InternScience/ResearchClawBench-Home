@@ -7,8 +7,11 @@
     "Energy_000",
     "Information_000",
     "Life_000",
+    "Material_000",
+    "Math_000",
     "Neuroscience_000",
-    "Physics_000"
+    "Physics_000",
+    "Physics_003"
   ],
   "agents": [
     "Claude Code",
@@ -32,6 +35,10 @@
       "Neuroscience_000": {
         "score": 8.6,
         "run_id": "Neuroscience_000_20260321_010354"
+      },
+      "Physics_003": {
+        "score": 46.5,
+        "run_id": "Physics_003_20260321_135653"
       }
     },
     "Codex CLI": {
@@ -51,6 +58,10 @@
         "score": 7.55,
         "run_id": "Life_000_20260320_211701"
       },
+      "Math_000": {
+        "score": 26.65,
+        "run_id": "Math_000_20260321_013909"
+      },
       "Physics_000": {
         "score": 32.1,
         "run_id": "Physics_000_20260321_011953"
@@ -60,6 +71,10 @@
       "Chemistry_000": {
         "score": 16.85,
         "run_id": "Chemistry_000_20260320_193804"
+      },
+      "Material_000": {
+        "score": 23.0,
+        "run_id": "Material_000_20260321_132712"
       }
     }
   },
@@ -71,7 +86,10 @@
     "Energy_000": 11.3,
     "Information_000": 10.0,
     "Life_000": 7.55,
+    "Material_000": 23.0,
+    "Math_000": 26.65,
     "Neuroscience_000": 8.6,
-    "Physics_000": 32.1
+    "Physics_000": 32.1,
+    "Physics_003": 46.5
   }
 }

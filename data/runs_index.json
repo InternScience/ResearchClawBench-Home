@@ -1,5 +1,15 @@
 [
   {
+    "run_id": "Physics_003_20260321_135653",
+    "task_id": "Physics_003",
+    "timestamp": "20260321_135653",
+    "status": "completed",
+    "agent_name": "Claude Code",
+    "model": "claude-opus-4-6[1m]",
+    "duration_seconds": 378,
+    "total_score": 46.5
+  },
+  {
     "run_id": "Physics_000_20260321_011953",
     "task_id": "Physics_000",
     "timestamp": "20260321_011953",
@@ -27,7 +37,17 @@
     "agent_name": "Codex CLI",
     "model": "gpt-5.4",
     "duration_seconds": 498,
-    "total_score": null
+    "total_score": 26.65
+  },
+  {
+    "run_id": "Material_000_20260321_132712",
+    "task_id": "Material_000",
+    "timestamp": "20260321_132712",
+    "status": "completed",
+    "agent_name": "Nanobot",
+    "model": "",
+    "duration_seconds": 538,
+    "total_score": 23.0
   },
   {
     "run_id": "Life_000_20260320_211701",

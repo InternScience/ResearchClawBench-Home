@@ -1,0 +1,224 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "run_research.py",
+    "path": "code/run_research.py",
+    "type": "file",
+    "size": 18853,
+    "mtime": 1774071014.6359298,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_data.pt",
+    "path": "data/candidate_data.pt",
+    "type": "file",
+    "size": 2451457,
+    "mtime": 1772431610.0,
+    "exported": false
+  },
+  {
+    "name": "finetune_data.pt",
+    "path": "data/finetune_data.pt",
+    "type": "file",
+    "size": 4904635,
+    "mtime": 1772431608.0,
+    "exported": false
+  },
+  {
+    "name": "pretrain_data.pt",
+    "path": "data/pretrain_data.pt",
+    "type": "file",
+    "size": 12321899,
+    "mtime": 1772431606.0,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "baseline_cv.csv",
+    "path": "outputs/baseline_cv.csv",
+    "type": "file",
+    "size": 324,
+    "mtime": 1774071032.3681393,
+    "exported": true
+  },
+  {
+    "name": "candidate_ranking.csv",
+    "path": "outputs/candidate_ranking.csv",
+    "type": "file",
+    "size": 27246,
+    "mtime": 1774071169.2858753,
+    "exported": true
+  },
+  {
+    "name": "final_model.pt",
+    "path": "outputs/final_model.pt",
+    "type": "file",
+    "size": 277197,
+    "mtime": 1774071168.5245192,
+    "exported": false
+  },
+  {
+    "name": "final_training_history.csv",
+    "path": "outputs/final_training_history.csv",
+    "type": "file",
+    "size": 239302,
+    "mtime": 1774071170.9533288,
+    "exported": true
+  },
+  {
+    "name": "gnn_cv.csv",
+    "path": "outputs/gnn_cv.csv",
+    "type": "file",
+    "size": 286,
+    "mtime": 1774071151.9597125,
+    "exported": true
+  },
+  {
+    "name": "metrics_summary.json",
+    "path": "outputs/metrics_summary.json",
+    "type": "file",
+    "size": 6065,
+    "mtime": 1774071170.8686738,
+    "exported": true
+  },
+  {
+    "name": "pretrained_encoder.pt",
+    "path": "outputs/pretrained_encoder.pt",
+    "type": "file",
+    "size": 241945,
+    "mtime": 1774071092.4376562,
+    "exported": false
+  },
+  {
+    "name": "top50_candidates.csv",
+    "path": "outputs/top50_candidates.csv",
+    "type": "file",
+    "size": 1294,
+    "mtime": 1774071170.9598992,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4055967,
+    "mtime": 1773914903.0,
+    "exported": true
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8225125,
+    "mtime": 1773914903.0,
+    "exported": true
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1212404,
+    "mtime": 1773914903.0,
+    "exported": true
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2144524,
+    "mtime": 1773914903.0,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_distribution.png",
+    "path": "report/images/candidate_distribution.png",
+    "type": "file",
+    "size": 50888,
+    "mtime": 1774071169.2597356,
+    "exported": true
+  },
+  {
+    "name": "cv_comparison.png",
+    "path": "report/images/cv_comparison.png",
+    "type": "file",
+    "size": 96055,
+    "mtime": 1774071152.4407282,
+    "exported": true
+  },
+  {
+    "name": "dataset_overview.png",
+    "path": "report/images/dataset_overview.png",
+    "type": "file",
+    "size": 93317,
+    "mtime": 1774071026.9056704,
+    "exported": true
+  },
+  {
+    "name": "element_frequencies.png",
+    "path": "report/images/element_frequencies.png",
+    "type": "file",
+    "size": 56992,
+    "mtime": 1774071027.2509897,
+    "exported": true
+  },
+  {
+    "name": "holdout_curves.png",
+    "path": "report/images/holdout_curves.png",
+    "type": "file",
+    "size": 81170,
+    "mtime": 1774071168.9250507,
+    "exported": true
+  },
+  {
+    "name": "pretrain_loss.png",
+    "path": "report/images/pretrain_loss.png",
+    "type": "file",
+    "size": 61229,
+    "mtime": 1774071092.6321628,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 14491,
+    "mtime": 1774071357.1814985,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5101,
+    "mtime": 1774070833.0913126,
+    "exported": true
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "pump_parameters": {
+    "energy_eV": 0.248,
+    "wavelength_um": 5.0,
+    "sample": "monolayer_epitaxial_graphene"
+  },
+  "dirac_point": {
+    "kx": -0.3,
+    "energy_eV": -0.042713567839196
+  },
+  "replica_bands": [
+    {
+      "kx": -0.046308724832214765,
+      "energy": -0.290713567839196,
+      "intensity": 0.49521670717091265,
+      "order": -1,
+      "energy_idx": 42,
+      "kx_idx": 63
+    },
+    {
+      "kx": 0.046308724832214765,
+      "energy": -0.290713567839196,
+      "intensity": 0.4951316941393499,
+      "order": -1,
+      "energy_idx": 42,
+      "kx_idx": 86
+    },
+    {
+      "kx": -0.03422818791946308,
+      "energy": 0.205286432160804,
+      "intensity": 0.5244272546110498,
+      "order": 1,
+      "energy_idx": 140,
+      "kx_idx": 66
+    },
+    {
+      "kx": 0.03422818791946308,
+      "energy": 0.205286432160804,
+      "intensity": 0.5244228565426068,
+      "order": 1,
+      "energy_idx": 140,
+      "kx_idx": 83
+    }
+  ],
+  "expected_replica_energies": {
+    "n_minus_1": -0.290713567839196,
+    "n_plus_1": 0.205286432160804
+  },
+  "measured_replica_energies": {
+    "n_minus_1": -0.290713567839196,
+    "n_plus_1": 0.205286432160804
+  },
+  "energy_shift_verification": {
+    "expected_shift": 0.248,
+    "measured_shift_minus": 0.248,
+    "measured_shift_plus": 0.248
+  },
+  "polarization_fit": {
+    "A": 0.49917229187022877,
+    "B": 0.0026091112506643594,
+    "theta0_deg": 0.20576411083803745,
+    "A_err": 0.003987064375886923,
+    "B_err": 0.005851436434926665,
+    "anisotropy": 0.009071676003832182
+  },
+  "intensity_statistics": {
+    "pump_off_mean": 16.712215467169834,
+    "pump_on_mean": 20.43143532583912,
+    "difference_mean": 3.7192198586692915
+  }
+}

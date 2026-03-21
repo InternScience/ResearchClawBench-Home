@@ -1,0 +1,57 @@
+{
+  "baseline_cv_mean": {
+    "fold": 3.0,
+    "ap": 0.057150240642553626,
+    "roc": 0.4527714463323663,
+    "bal_acc": 0.4737829810747341
+  },
+  "baseline_cv_std": {
+    "fold": 1.5811388300841898,
+    "ap": 0.01727552613910538,
+    "roc": 0.06718354274828865,
+    "bal_acc": 0.06555817312075084
+  },
+  "gnn_cv_mean": {
+    "fold": 3.0,
+    "ap": 0.07152125860524405,
+    "roc": 0.4926971886683923,
+    "bal_acc": 0.4974841817658901
+  },
+  "gnn_cv_std": {
+    "fold": 1.5811388300841898,
+    "ap": 0.03520288214873859,
+    "roc": 0.03217407688961087,
+    "bal_acc": 0.0341674260715123
+  },
+  "holdout": {
+    "ap": 0.05525610999463626,
+    "roc": 0.4614473684210526,
+    "bal_acc": 0.4894736842105263
+  },
+  "candidate": {
+    "ap": 0.041675530506697256,
+    "roc": 0.4699764282763481,
+    "top50_precision": 0.06,
+    "true_positives_in_top50": 3,
+    "total_true_positives": 43
+  },
+  "pretrain_final_loss": 1.7345403345823287,
+  "paper_summaries": [
+    {
+      "file": "paper_000.pdf",
+      "snippet": "Beyond Conventional Ferromagnetism and Antiferromagnetism: A Phase with Nonrelativistic Spin and Crystal Rotation Symmetry Libor \u0160mejkal,1,2 Jairo Sinova, 1,2 and Tomas Jungwirth 2,3 1Institut f\u00fcr Physik, Johannes Gutenberg Universit\u00e4t Mainz, 55128, Mainz, Germany 2Institute of Physics, Czech Academy of Sciences, Cukrovarnick\u00e1 10, 162 00, Praha 6, Czech Republic 3School of Physics and Astronomy, University of Nottingham, NG7 2RD, Nottingham, United Kingdom (Received 6 February 2022; revised 6 April 2022; accepted 11 August 2022; published 23 September 2022) Recent series of theoretical and experimental reports have driven attention to time-reversal symmetry- breaking spintronic and spin-splitting phenomena in materials with collinear-compensated magnetic order incompatible with conventional ferromagnetism or antiferromagnetism. Here we employ an approach based on nonrelativistic spin-symmetry groups that resolves the conflicting notions of unconventional ferromagnetism or antiferromagnetism by delimiting a third basic collinear magnetic phase. We derive that all materials hosting this collinear-compensated magnetic phase are characterized by crystal-rotation symmetries connecting o"
+    },
+    {
+      "file": "paper_001.pdf",
+      "snippet": "Spin Space Groups: Full Classification and Applications Zhenyu Xiao, 1,* Jianzhou Zhao , 2,* Y anqi Li,1 Ryuichi Shindou, 1 and Zhi-Da Song 1,3,4,\u2020 1International Center for Quantum Materials, School of Physics, Peking University, Beijing 100871, China 2Co-Innovation Center for New Energetic Materials, Southwest University of Science and Technology , Mianyang 621010, China 3Hefei National Laboratory, Hefei 230088, China 4Collaborative Innovation Center of Quantum Matter , Beijing 100871, China (Received 31 July 2023; revised 5 February 2024; accepted 16 May 2024; published 28 August 2024) In this work, we exhaust all the spin space symmetries, which fully characterize collinear, noncollinear, and commensurate spiral as well as incommensurate spiral magnetism, etc., and investigate enriched features of electronic bands that respect these symmetries. We achieve this by systematically classifying the so-called spin space groups (SSGs) \u2014joint symmetry groups of spatial and spin operations that leave the magnetic structure unchanged. Generally speaking, they are accurate (approximate) symmetries in systems where spin-orbit coupling (SOC) is negligible (finite but weaker than the energy "
+    },
+    {
+      "file": "paper_002.pdf",
+      "snippet": "Article https://doi.org/10.1038/s41467-025-64271-8 Spin Hall and Edelstein effects in chiral non- collinear altermagnets Mengli Hu 1,O l e gJ a n s o n1, Claudia Felser 2, Paul McClarty3, Jeroen van den Brink 1,4,5 &M a i aG .V e r g n i o r y6,7 Altermagnets are a newly discovered class of magnetic phases that combine t h es p i np o l a r i z a t i o nb e h a v i o ro ff e rromagnetic band structures with the vanishing net magnetization characteristic of antiferromagnets. Initially pro- posed for collinear magnets, the concept has since been extended to include certain non-collinear structures. A recent development inL a n d a ut h e o r yf o r collinear altermagnets incorporates spin-space symmetries, providing a robust framework for identifying this class of materials. Here, we expand on that theory to identify altermagnetic multipolar order parameters in non- collinear chiral materials. We demonstrate that the interplay between non- collinear altermagnetism and chirality allows for spatially odd multipole components, leading to non-trivial spin textures on Fermi surfaces and unexpected transport phenomena, even in the absence of SOC. This makes such chiral altermagnets fundame"
+    },
+    {
+      "file": "paper_003.pdf",
+      "snippet": "communications materials Article A Nature Portfolio journal https://doi.org/10.1038/s43246-025-00928-7 Materials Expert-Arti\ufb01cial Intelligence for materials discovery Check for updates Yanjun Liu1, Milena Jovanovic 2,3, Krishnanand Mallayya1, Wesley J. Maddox1,4, Andrew Gordon Wilson 1,4, Sebastian Klemenz 5,L e s l i eM .S c h o o p2 &E u n - A hK i m 1,6 Advances in materials databases create an opportunity to uncover descriptors that predict emergent properties, yet most studies rely on high-throughput ab initio calculations that can diverge from experiment. Experimentalists instead depend on intuition honed by hands-on work. We present \u201cMaterials Expert-Arti\ufb01cial Intelligence\u201d (ME-AI), a machine-learning framework that translates this intuition into quantitative descriptors extracted from curated, measurement-based data. Using a set of 879 square-net compounds described using 12 experimental features, we train a Dirichlet-based Gaussian-process model with a chemistry-aware kernel. ME-AI reproduces established expert rules for spotting topological semimetals (TSMs) and reveals hypervalency as a decisive chemical lever in these systems. Remarkably, a model trained only on square-"
+    }
+  ]
+}
