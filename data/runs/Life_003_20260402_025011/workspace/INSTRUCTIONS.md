@@ -57,7 +57,7 @@ Your workspace is: `/mnt/d/xwh/ailab记录/工作/26年03月/SGI-Bench/ResearchC
 
 - All file reads and writes must stay inside this directory.
 - `data/` and `related_work/` are read-only — do not modify them.
-- Do not access the network to download external datasets unless explicitly instructed.
+
 
 ### Layout
 - `data/` — Input datasets (read-only)
