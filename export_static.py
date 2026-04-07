@@ -38,10 +38,17 @@ MODEL_ESTIMATED_USD_PER_MIN = {
     "claude-sonnet-4-6": 0.20,
     "claude-opus-4-6": 0.40,
 }
+AGENT_DEFAULT_MODELS = {
+    "Claude Code": "claude-opus-4-6",
+    "Codex CLI": "gpt-5.4",
+    "OpenClaw": "gpt-5.4",
+    "Nanobot": "gpt-5.4",
+    "EvoScientist": "gpt-5.4",
+}
 # Bump when task export output/schema changes and existing cached signatures must be invalidated.
 TASK_EXPORT_VERSION = 4
 # Bump when run export output/schema changes and existing cached signatures must be invalidated.
-RUN_EXPORT_VERSION = 3
+RUN_EXPORT_VERSION = 4
 TASK_EXPORT_MANIFEST = EXPORT_STATE_DIR / "task_export_manifest.json"
 RUN_EXPORT_MANIFEST = EXPORT_STATE_DIR / "run_export_manifest.json"
 RUN_OUTPUT_FILES = ["_agent_output.jsonl", "_claude_output.jsonl"]
@@ -124,7 +131,7 @@ def _list_runs():
                 meta = json.load(f)
         except (json.JSONDecodeError, OSError):
             continue
-        model = _normalize_model_name(meta.get("model", ""))
+        model = _normalize_model_name(meta.get("model", "")) or AGENT_DEFAULT_MODELS.get(meta.get("agent_name", ""), "")
         runs.append({
             "run_id": d.name,
             "task_id": meta.get("task_id"),
@@ -615,7 +622,8 @@ def export_runs(runs=None):
                 "timestamp": meta.get("timestamp"),
                 "status": meta.get("status"),
                 "agent_name": meta.get("agent_name", ""),
-                "model": meta.get("model", ""),
+                "model": run.get("model", ""),
+                "model_display": run.get("model_display", ""),
                 "duration_seconds": meta.get("duration_seconds"),
                 "score": score_data,
                 "report": report_path.read_text(encoding="utf-8", errors="replace"),
