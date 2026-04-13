@@ -1,0 +1,5246 @@
+{
+  "query_chain": "L",
+  "query_length": 626,
+  "target_length": 779,
+  "matched_pairs": 578,
+  "coverage_query": 0.9233226837060703,
+  "coverage_target": 0.7419768934531451,
+  "seq_identity": 0.3096885813148789,
+  "rmsd": 32.11937597585478,
+  "tm_query_norm": 0.12453473526434077,
+  "tm_target_norm": 0.11381002850219225,
+  "tm_average_norm": 0.11888792072116587,
+  "nw_score": -404.0,
+  "rotation_matrix": [
+    [
+      0.533817109157833,
+      0.6711459201226729,
+      0.5143952253599035
+    ],
+    [
+      -0.31273883094541083,
+      0.7218838189005867,
+      -0.6173152967717573
+    ],
+    [
+      -0.785642232564717,
+      0.16866210573865176,
+      0.5952473238062748
+    ]
+  ],
+  "translation_vector": [
+    -335.269636971876,
+    86.46407155996174,
+    71.09812104885847
+  ],
+  "distance_summary": {
+    "mean": 29.355903890392348,
+    "median": 29.47311044838388,
+    "p90": 44.49030912592647,
+    "max": 76.66675285290053
+  },
+  "aligned_residue_pairs": [
+    {
+      "query_index": 0,
+      "target_index": 0,
+      "query_resseq": 4,
+      "target_resseq": 1,
+      "query_aa": "P",
+      "target_aa": "M",
+      "distance": 71.73190709148928
+    },
+    {
+      "query_index": 1,
+      "target_index": 3,
+      "query_resseq": 5,
+      "target_resseq": 4,
+      "query_aa": "A",
+      "target_aa": "W",
+      "distance": 76.66675285290053
+    },
+    {
+      "query_index": 2,
+      "target_index": 4,
+      "query_resseq": 6,
+      "target_resseq": 5,
+      "query_aa": "D",
+      "target_aa": "W",
+      "distance": 72.18871563301387
+    },
+    {
+      "query_index": 3,
+      "target_index": 5,
+      "query_resseq": 7,
+      "target_resseq": 6,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 69.9550659060282
+    },
+    {
+      "query_index": 4,
+      "target_index": 6,
+      "query_resseq": 8,
+      "target_resseq": 7,
+      "query_aa": "L",
+      "target_aa": "R",
+      "distance": 69.16631043373692
+    },
+    {
+      "query_index": 5,
+      "target_index": 7,
+      "query_resseq": 9,
+      "target_resseq": 8,
+      "query_aa": "P",
+      "target_aa": "T",
+      "distance": 65.7930745468169
+    },
+    {
+      "query_index": 6,
+      "target_index": 8,
+      "query_resseq": 10,
+      "target_resseq": 9,
+      "query_aa": "G",
+      "target_aa": "V",
+      "distance": 61.060708057925694
+    },
+    {
+      "query_index": 7,
+      "target_index": 9,
+      "query_resseq": 11,
+      "target_resseq": 10,
+      "query_aa": "E",
+      "target_aa": "Y",
+      "distance": 65.53419415803393
+    },
+    {
+      "query_index": 8,
+      "target_index": 10,
+      "query_resseq": 12,
+      "target_resseq": 11,
+      "query_aa": "G",
+      "target_aa": "Q",
+      "distance": 69.24481166047816
+    },
+    {
+      "query_index": 9,
+      "target_index": 11,
+      "query_resseq": 13,
+      "target_resseq": 12,
+      "query_aa": "A",
+      "target_aa": "F",
+      "distance": 62.98356647434037
+    },
+    {
+      "query_index": 10,
+      "target_index": 12,
+      "query_resseq": 14,
+      "target_resseq": 13,
+      "query_aa": "V",
+      "target_aa": "R",
+      "distance": 60.91158062098248
+    },
+    {
+      "query_index": 11,
+      "target_index": 13,
+      "query_resseq": 15,
+      "target_resseq": 14,
+      "query_aa": "R",
+      "target_aa": "Y",
+      "distance": 62.156755900539956
+    },
+    {
+      "query_index": 12,
+      "target_index": 14,
+      "query_resseq": 16,
+      "target_resseq": 15,
+      "query_aa": "E",
+      "target_aa": "I",
+      "distance": 63.791838713899416
+    },
+    {
+      "query_index": 13,
+      "target_index": 15,
+      "query_resseq": 17,
+      "target_resseq": 16,
+      "query_aa": "V",
+      "target_aa": "V",
+      "distance": 60.43322735759839
+    },
+    {
+      "query_index": 14,
+      "target_index": 16,
+      "query_resseq": 18,
+      "target_resseq": 17,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 56.911821564801016
+    },
+    {
+      "query_index": 15,
+      "target_index": 17,
+      "query_resseq": 19,
+      "target_resseq": 18,
+      "query_aa": "R",
+      "target_aa": "G",
+      "distance": 59.696824102026774
+    },
+    {
+      "query_index": 16,
+      "target_index": 18,
+      "query_resseq": 20,
+      "target_resseq": 19,
+      "query_aa": "P",
+      "target_aa": "V",
+      "distance": 59.5154768070149
+    },
+    {
+      "query_index": 17,
+      "target_index": 19,
+      "query_resseq": 21,
+      "target_resseq": 20,
+      "query_aa": "L",
+      "target_aa": "M",
+      "distance": 53.23747884165212
+    },
+    {
+      "query_index": 18,
+      "target_index": 20,
+      "query_resseq": 22,
+      "target_resseq": 21,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 51.14738626453382
+    },
+    {
+      "query_index": 19,
+      "target_index": 21,
+      "query_resseq": 23,
+      "target_resseq": 22,
+      "query_aa": "K",
+      "target_aa": "A",
+      "distance": 54.81476310937422
+    },
+    {
+      "query_index": 20,
+      "target_index": 22,
+      "query_resseq": 24,
+      "target_resseq": 23,
+      "query_aa": "Q",
+      "target_aa": "L",
+      "distance": 52.60300881176839
+    },
+    {
+      "query_index": 21,
+      "target_index": 24,
+      "query_resseq": 25,
+      "target_resseq": 25,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 46.11898187442355
+    },
+    {
+      "query_index": 22,
+      "target_index": 25,
+      "query_resseq": 26,
+      "target_resseq": 26,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 47.39458164754174
+    },
+    {
+      "query_index": 23,
+      "target_index": 26,
+      "query_resseq": 27,
+      "target_resseq": 27,
+      "query_aa": "E",
+      "target_aa": "G",
+      "distance": 47.87354780706551
+    },
+    {
+      "query_index": 24,
+      "target_index": 27,
+      "query_resseq": 28,
+      "target_resseq": 28,
+      "query_aa": "K",
+      "target_aa": "G",
+      "distance": 44.43650734601952
+    },
+    {
+      "query_index": 25,
+      "target_index": 28,
+      "query_resseq": 29,
+      "target_resseq": 29,
+      "query_aa": "T",
+      "target_aa": "V",
+      "distance": 41.468877263975955
+    },
+    {
+      "query_index": 26,
+      "target_index": 29,
+      "query_resseq": 30,
+      "target_resseq": 30,
+      "query_aa": "A",
+      "target_aa": "Y",
+      "distance": 43.16937827183775
+    },
+    {
+      "query_index": 27,
+      "target_index": 30,
+      "query_resseq": 31,
+      "target_resseq": 31,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 42.5437373255676
+    },
+    {
+      "query_index": 28,
+      "target_index": 31,
+      "query_resseq": 32,
+      "target_resseq": 32,
+      "query_aa": "G",
+      "target_aa": "I",
+      "distance": 38.115083619711704
+    },
+    {
+      "query_index": 29,
+      "target_index": 32,
+      "query_resseq": 33,
+      "target_resseq": 33,
+      "query_aa": "K",
+      "target_aa": "S",
+      "distance": 38.08869320865838
+    },
+    {
+      "query_index": 30,
+      "target_index": 33,
+      "query_resseq": 34,
+      "target_resseq": 34,
+      "query_aa": "I",
+      "target_aa": "L",
+      "distance": 33.03569370147616
+    },
+    {
+      "query_index": 31,
+      "target_index": 34,
+      "query_resseq": 35,
+      "target_resseq": 35,
+      "query_aa": "V",
+      "target_aa": "G",
+      "distance": 29.857668617649832
+    },
+    {
+      "query_index": 32,
+      "target_index": 35,
+      "query_resseq": 36,
+      "target_resseq": 36,
+      "query_aa": "F",
+      "target_aa": "N",
+      "distance": 31.048963742904352
+    },
+    {
+      "query_index": 33,
+      "target_index": 36,
+      "query_resseq": 37,
+      "target_resseq": 37,
+      "query_aa": "A",
+      "target_aa": "H",
+      "distance": 30.36584542832495
+    },
+    {
+      "query_index": 34,
+      "target_index": 37,
+      "query_resseq": 38,
+      "target_resseq": 38,
+      "query_aa": "E",
+      "target_aa": "V",
+      "distance": 26.23692997182775
+    },
+    {
+      "query_index": 35,
+      "target_index": 42,
+      "query_resseq": 39,
+      "target_resseq": 43,
+      "query_aa": "A",
+      "target_aa": "F",
+      "distance": 13.53321607741404
+    },
+    {
+      "query_index": 36,
+      "target_index": 44,
+      "query_resseq": 40,
+      "target_resseq": 45,
+      "query_aa": "A",
+      "target_aa": "D",
+      "distance": 13.265743360056975
+    },
+    {
+      "query_index": 37,
+      "target_index": 45,
+      "query_resseq": 41,
+      "target_resseq": 46,
+      "query_aa": "T",
+      "target_aa": "E",
+      "distance": 12.658868803221042
+    },
+    {
+      "query_index": 38,
+      "target_index": 51,
+      "query_resseq": 42,
+      "target_resseq": 52,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 12.235600709245137
+    },
+    {
+      "query_index": 39,
+      "target_index": 52,
+      "query_resseq": 43,
+      "target_resseq": 53,
+      "query_aa": "T",
+      "target_aa": "A",
+      "distance": 13.412074125225958
+    },
+    {
+      "query_index": 40,
+      "target_index": 55,
+      "query_resseq": 44,
+      "target_resseq": 56,
+      "query_aa": "G",
+      "target_aa": "I",
+      "distance": 16.795885017610452
+    },
+    {
+      "query_index": 41,
+      "target_index": 56,
+      "query_resseq": 45,
+      "target_resseq": 57,
+      "query_aa": "K",
+      "target_aa": "G",
+      "distance": 18.403661198483377
+    },
+    {
+      "query_index": 42,
+      "target_index": 58,
+      "query_resseq": 46,
+      "target_resseq": 59,
+      "query_aa": "G",
+      "target_aa": "E",
+      "distance": 20.7745057147979
+    },
+    {
+      "query_index": 43,
+      "target_index": 59,
+      "query_resseq": 47,
+      "target_resseq": 60,
+      "query_aa": "R",
+      "target_aa": "V",
+      "distance": 21.504320448014884
+    },
+    {
+      "query_index": 44,
+      "target_index": 60,
+      "query_resseq": 48,
+      "target_resseq": 61,
+      "query_aa": "M",
+      "target_aa": "Y",
+      "distance": 21.77010690519634
+    },
+    {
+      "query_index": 45,
+      "target_index": 61,
+      "query_resseq": 49,
+      "target_resseq": 62,
+      "query_aa": "I",
+      "target_aa": "G",
+      "distance": 21.811134992631555
+    },
+    {
+      "query_index": 46,
+      "target_index": 62,
+      "query_resseq": 50,
+      "target_resseq": 63,
+      "query_aa": "A",
+      "target_aa": "R",
+      "distance": 16.859731854278074
+    },
+    {
+      "query_index": 47,
+      "target_index": 63,
+      "query_resseq": 51,
+      "target_resseq": 64,
+      "query_aa": "S",
+      "target_aa": "D",
+      "distance": 14.639966551451451
+    },
+    {
+      "query_index": 48,
+      "target_index": 64,
+      "query_resseq": 52,
+      "target_resseq": 65,
+      "query_aa": "L",
+      "target_aa": "R",
+      "distance": 16.635320423942858
+    },
+    {
+      "query_index": 49,
+      "target_index": 65,
+      "query_resseq": 53,
+      "target_resseq": 66,
+      "query_aa": "A",
+      "target_aa": "T",
+      "distance": 15.7537561340283
+    },
+    {
+      "query_index": 50,
+      "target_index": 66,
+      "query_resseq": 54,
+      "target_resseq": 67,
+      "query_aa": "A",
+      "target_aa": "S",
+      "distance": 11.65764842988821
+    },
+    {
+      "query_index": 51,
+      "target_index": 68,
+      "query_resseq": 55,
+      "target_resseq": 69,
+      "query_aa": "A",
+      "target_aa": "V",
+      "distance": 10.074668569965826
+    },
+    {
+      "query_index": 52,
+      "target_index": 69,
+      "query_resseq": 56,
+      "target_resseq": 70,
+      "query_aa": "A",
+      "target_aa": "V",
+      "distance": 10.9668359735211
+    },
+    {
+      "query_index": 53,
+      "target_index": 70,
+      "query_resseq": 57,
+      "target_resseq": 71,
+      "query_aa": "A",
+      "target_aa": "A",
+      "distance": 8.34479533112261
+    },
+    {
+      "query_index": 54,
+      "target_index": 71,
+      "query_resseq": 58,
+      "target_resseq": 72,
+      "query_aa": "I",
+      "target_aa": "I",
+      "distance": 6.518872663634674
+    },
+    {
+      "query_index": 55,
+      "target_index": 72,
+      "query_resseq": 59,
+      "target_resseq": 73,
+      "query_aa": "K",
+      "target_aa": "L",
+      "distance": 9.105919689984725
+    },
+    {
+      "query_index": 56,
+      "target_index": 73,
+      "query_resseq": 60,
+      "target_resseq": 74,
+      "query_aa": "G",
+      "target_aa": "T",
+      "distance": 11.06710368220134
+    },
+    {
+      "query_index": 57,
+      "target_index": 74,
+      "query_resseq": 61,
+      "target_resseq": 75,
+      "query_aa": "D",
+      "target_aa": "P",
+      "distance": 16.19784707667623
+    },
+    {
+      "query_index": 58,
+      "target_index": 75,
+      "query_resseq": 62,
+      "target_resseq": 76,
+      "query_aa": "T",
+      "target_aa": "P",
+      "distance": 18.781717774572897
+    },
+    {
+      "query_index": 59,
+      "target_index": 76,
+      "query_resseq": 63,
+      "target_resseq": 77,
+      "query_aa": "V",
+      "target_aa": "D",
+      "distance": 23.208076772515557
+    },
+    {
+      "query_index": 60,
+      "target_index": 77,
+      "query_resseq": 64,
+      "target_resseq": 78,
+      "query_aa": "V",
+      "target_aa": "D",
+      "distance": 27.349105996211073
+    },
+    {
+      "query_index": 61,
+      "target_index": 79,
+      "query_resseq": 65,
+      "target_resseq": 80,
+      "query_aa": "V",
+      "target_aa": "K",
+      "distance": 30.37469997521354
+    },
+    {
+      "query_index": 62,
+      "target_index": 80,
+      "query_resseq": 66,
+      "target_resseq": 81,
+      "query_aa": "S",
+      "target_aa": "V",
+      "distance": 32.86296345415148
+    },
+    {
+      "query_index": 63,
+      "target_index": 81,
+      "query_resseq": 67,
+      "target_resseq": 82,
+      "query_aa": "A",
+      "target_aa": "T",
+      "distance": 37.94378583592252
+    },
+    {
+      "query_index": 64,
+      "target_index": 82,
+      "query_resseq": 68,
+      "target_resseq": 83,
+      "query_aa": "P",
+      "target_aa": "D",
+      "distance": 41.867192233040356
+    },
+    {
+      "query_index": 65,
+      "target_index": 83,
+      "query_resseq": 69,
+      "target_resseq": 84,
+      "query_aa": "L",
+      "target_aa": "K",
+      "distance": 42.641692698477854
+    },
+    {
+      "query_index": 66,
+      "target_index": 84,
+      "query_resseq": 70,
+      "target_resseq": 85,
+      "query_aa": "A",
+      "target_aa": "A",
+      "distance": 42.82493725864512
+    },
+    {
+      "query_index": 67,
+      "target_index": 86,
+      "query_resseq": 71,
+      "target_resseq": 87,
+      "query_aa": "V",
+      "target_aa": "Q",
+      "distance": 35.252189773579595
+    },
+    {
+      "query_index": 68,
+      "target_index": 87,
+      "query_resseq": 72,
+      "target_resseq": 88,
+      "query_aa": "T",
+      "target_aa": "K",
+      "distance": 34.60147274552846
+    },
+    {
+      "query_index": 69,
+      "target_index": 88,
+      "query_resseq": 73,
+      "target_resseq": 89,
+      "query_aa": "W",
+      "target_aa": "K",
+      "distance": 31.953622997457927
+    },
+    {
+      "query_index": 70,
+      "target_index": 89,
+      "query_resseq": 74,
+      "target_resseq": 90,
+      "query_aa": "Q",
+      "target_aa": "V",
+      "distance": 27.71860362189922
+    },
+    {
+      "query_index": 71,
+      "target_index": 90,
+      "query_resseq": 75,
+      "target_resseq": 91,
+      "query_aa": "L",
+      "target_aa": "T",
+      "distance": 25.374980792731492
+    },
+    {
+      "query_index": 72,
+      "target_index": 91,
+      "query_resseq": 76,
+      "target_resseq": 92,
+      "query_aa": "V",
+      "target_aa": "E",
+      "distance": 24.48477412785273
+    },
+    {
+      "query_index": 73,
+      "target_index": 92,
+      "query_resseq": 77,
+      "target_resseq": 93,
+      "query_aa": "N",
+      "target_aa": "E",
+      "distance": 21.542165228057392
+    },
+    {
+      "query_index": 74,
+      "target_index": 93,
+      "query_resseq": 78,
+      "target_resseq": 94,
+      "query_aa": "D",
+      "target_aa": "L",
+      "distance": 17.72427661830259
+    },
+    {
+      "query_index": 75,
+      "target_index": 94,
+      "query_resseq": 79,
+      "target_resseq": 95,
+      "query_aa": "M",
+      "target_aa": "D",
+      "distance": 17.170116440113052
+    },
+    {
+      "query_index": 76,
+      "target_index": 95,
+      "query_resseq": 80,
+      "target_resseq": 96,
+      "query_aa": "K",
+      "target_aa": "Q",
+      "distance": 15.414956168897222
+    },
+    {
+      "query_index": 77,
+      "target_index": 96,
+      "query_resseq": 81,
+      "target_resseq": 97,
+      "query_aa": "D",
+      "target_aa": "V",
+      "distance": 10.047471129666352
+    },
+    {
+      "query_index": 78,
+      "target_index": 97,
+      "query_resseq": 82,
+      "target_resseq": 98,
+      "query_aa": "I",
+      "target_aa": "V",
+      "distance": 10.063691239262171
+    },
+    {
+      "query_index": 79,
+      "target_index": 98,
+      "query_resseq": 83,
+      "target_resseq": 99,
+      "query_aa": "P",
+      "target_aa": "K",
+      "distance": 11.804232457402057
+    },
+    {
+      "query_index": 80,
+      "target_index": 99,
+      "query_resseq": 84,
+      "target_resseq": 100,
+      "query_aa": "E",
+      "target_aa": "D",
+      "distance": 14.703057571049843
+    },
+    {
+      "query_index": 82,
+      "target_index": 100,
+      "query_resseq": 86,
+      "target_resseq": 101,
+      "query_aa": "R",
+      "target_aa": "H",
+      "distance": 9.466101158132812
+    },
+    {
+      "query_index": 83,
+      "target_index": 101,
+      "query_resseq": 87,
+      "target_resseq": 102,
+      "query_aa": "R",
+      "target_aa": "E",
+      "distance": 14.55961784441838
+    },
+    {
+      "query_index": 84,
+      "target_index": 102,
+      "query_resseq": 88,
+      "target_resseq": 103,
+      "query_aa": "V",
+      "target_aa": "D",
+      "distance": 18.330798221990865
+    },
+    {
+      "query_index": 85,
+      "target_index": 103,
+      "query_resseq": 89,
+      "target_resseq": 104,
+      "query_aa": "G",
+      "target_aa": "Q",
+      "distance": 12.975378725547367
+    },
+    {
+      "query_index": 86,
+      "target_index": 104,
+      "query_resseq": 90,
+      "target_resseq": 105,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 13.36413747127873
+    },
+    {
+      "query_index": 87,
+      "target_index": 105,
+      "query_resseq": 91,
+      "target_resseq": 106,
+      "query_aa": "T",
+      "target_aa": "V",
+      "distance": 19.539777777910952
+    },
+    {
+      "query_index": 88,
+      "target_index": 106,
+      "query_resseq": 92,
+      "target_resseq": 107,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 22.5063515557806
+    },
+    {
+      "query_index": 89,
+      "target_index": 107,
+      "query_resseq": 93,
+      "target_resseq": 108,
+      "query_aa": "S",
+      "target_aa": "W",
+      "distance": 26.328486974757897
+    },
+    {
+      "query_index": 90,
+      "target_index": 108,
+      "query_resseq": 94,
+      "target_resseq": 109,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 31.92684840587969
+    },
+    {
+      "query_index": 91,
+      "target_index": 109,
+      "query_resseq": 95,
+      "target_resseq": 110,
+      "query_aa": "G",
+      "target_aa": "G",
+      "distance": 37.02612445159262
+    },
+    {
+      "query_index": 92,
+      "target_index": 110,
+      "query_resseq": 96,
+      "target_resseq": 111,
+      "query_aa": "R",
+      "target_aa": "W",
+      "distance": 43.28776578801305
+    },
+    {
+      "query_index": 93,
+      "target_index": 111,
+      "query_resseq": 97,
+      "target_resseq": 112,
+      "query_aa": "P",
+      "target_aa": "L",
+      "distance": 43.23431033048043
+    },
+    {
+      "query_index": 94,
+      "target_index": 112,
+      "query_resseq": 98,
+      "target_resseq": 113,
+      "query_aa": "N",
+      "target_aa": "K",
+      "distance": 40.39796917668746
+    },
+    {
+      "query_index": 95,
+      "target_index": 113,
+      "query_resseq": 99,
+      "target_resseq": 114,
+      "query_aa": "F",
+      "target_aa": "A",
+      "distance": 45.57821184946608
+    },
+    {
+      "query_index": 96,
+      "target_index": 114,
+      "query_resseq": 100,
+      "target_resseq": 115,
+      "query_aa": "I",
+      "target_aa": "P",
+      "distance": 50.050405567487964
+    },
+    {
+      "query_index": 97,
+      "target_index": 115,
+      "query_resseq": 101,
+      "target_resseq": 116,
+      "query_aa": "S",
+      "target_aa": "D",
+      "distance": 56.55803818298949
+    },
+    {
+      "query_index": 98,
+      "target_index": 116,
+      "query_resseq": 102,
+      "target_resseq": 117,
+      "query_aa": "P",
+      "target_aa": "T",
+      "distance": 56.111172730149555
+    },
+    {
+      "query_index": 99,
+      "target_index": 117,
+      "query_resseq": 103,
+      "target_resseq": 118,
+      "query_aa": "Q",
+      "target_aa": "T",
+      "distance": 62.138752076320536
+    },
+    {
+      "query_index": 100,
+      "target_index": 118,
+      "query_resseq": 104,
+      "target_resseq": 119,
+      "query_aa": "R",
+      "target_aa": "D",
+      "distance": 60.13186450165939
+    },
+    {
+      "query_index": 101,
+      "target_index": 119,
+      "query_resseq": 105,
+      "target_resseq": 120,
+      "query_aa": "T",
+      "target_aa": "P",
+      "distance": 57.76482782676318
+    },
+    {
+      "query_index": 102,
+      "target_index": 120,
+      "query_resseq": 106,
+      "target_resseq": 121,
+      "query_aa": "L",
+      "target_aa": "T",
+      "distance": 56.02480165122428
+    },
+    {
+      "query_index": 103,
+      "target_index": 121,
+      "query_resseq": 107,
+      "target_resseq": 122,
+      "query_aa": "E",
+      "target_aa": "V",
+      "distance": 58.419249672842184
+    },
+    {
+      "query_index": 104,
+      "target_index": 122,
+      "query_resseq": 108,
+      "target_resseq": 123,
+      "query_aa": "W",
+      "target_aa": "S",
+      "distance": 60.007318448880056
+    },
+    {
+      "query_index": 105,
+      "target_index": 123,
+      "query_resseq": 109,
+      "target_resseq": 124,
+      "query_aa": "A",
+      "target_aa": "A",
+      "distance": 57.4320577682737
+    },
+    {
+      "query_index": 106,
+      "target_index": 124,
+      "query_resseq": 110,
+      "target_resseq": 125,
+      "query_aa": "I",
+      "target_aa": "M",
+      "distance": 57.96266014920211
+    },
+    {
+      "query_index": 107,
+      "target_index": 125,
+      "query_resseq": 111,
+      "target_resseq": 126,
+      "query_aa": "D",
+      "target_aa": "K",
+      "distance": 62.30081684054636
+    },
+    {
+      "query_index": 108,
+      "target_index": 126,
+      "query_resseq": 112,
+      "target_resseq": 127,
+      "query_aa": "N",
+      "target_aa": "T",
+      "distance": 62.50726313322651
+    },
+    {
+      "query_index": 109,
+      "target_index": 127,
+      "query_resseq": 113,
+      "target_resseq": 128,
+      "query_aa": "E",
+      "target_aa": "Q",
+      "distance": 66.43828313303739
+    },
+    {
+      "query_index": 110,
+      "target_index": 128,
+      "query_resseq": 114,
+      "target_resseq": 129,
+      "query_aa": "R",
+      "target_aa": "D",
+      "distance": 63.82400724772613
+    },
+    {
+      "query_index": 112,
+      "target_index": 129,
+      "query_resseq": 116,
+      "target_resseq": 130,
+      "query_aa": "D",
+      "target_aa": "L",
+      "distance": 57.09266215705087
+    },
+    {
+      "query_index": 113,
+      "target_index": 130,
+      "query_resseq": 117,
+      "target_resseq": 131,
+      "query_aa": "L",
+      "target_aa": "R",
+      "distance": 54.21778974521086
+    },
+    {
+      "query_index": 115,
+      "target_index": 131,
+      "query_resseq": 119,
+      "target_resseq": 132,
+      "query_aa": "A",
+      "target_aa": "H",
+      "distance": 52.20061983392977
+    },
+    {
+      "query_index": 116,
+      "target_index": 132,
+      "query_resseq": 120,
+      "target_resseq": 133,
+      "query_aa": "W",
+      "target_aa": "T",
+      "distance": 46.43902975283039
+    },
+    {
+      "query_index": 117,
+      "target_index": 133,
+      "query_resseq": 121,
+      "target_resseq": 134,
+      "query_aa": "I",
+      "target_aa": "F",
+      "distance": 43.96924274521775
+    },
+    {
+      "query_index": 118,
+      "target_index": 134,
+      "query_resseq": 122,
+      "target_resseq": 135,
+      "query_aa": "E",
+      "target_aa": "I",
+      "distance": 43.801175976952585
+    },
+    {
+      "query_index": 119,
+      "target_index": 135,
+      "query_resseq": 123,
+      "target_resseq": 136,
+      "query_aa": "G",
+      "target_aa": "S",
+      "distance": 38.84506402047487
+    },
+    {
+      "query_index": 120,
+      "target_index": 136,
+      "query_resseq": 124,
+      "target_resseq": 137,
+      "query_aa": "G",
+      "target_aa": "I",
+      "distance": 33.10856996800709
+    },
+    {
+      "query_index": 121,
+      "target_index": 137,
+      "query_resseq": 125,
+      "target_resseq": 138,
+      "query_aa": "G",
+      "target_aa": "P",
+      "distance": 30.266786252292206
+    },
+    {
+      "query_index": 122,
+      "target_index": 138,
+      "query_resseq": 126,
+      "target_resseq": 139,
+      "query_aa": "K",
+      "target_aa": "L",
+      "distance": 23.24075248924827
+    },
+    {
+      "query_index": 123,
+      "target_index": 139,
+      "query_resseq": 127,
+      "target_resseq": 140,
+      "query_aa": "P",
+      "target_aa": "Q",
+      "distance": 17.82851141477152
+    },
+    {
+      "query_index": 124,
+      "target_index": 140,
+      "query_resseq": 128,
+      "target_resseq": 141,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 14.970065876764828
+    },
+    {
+      "query_index": 126,
+      "target_index": 141,
+      "query_resseq": 130,
+      "target_resseq": 142,
+      "query_aa": "L",
+      "target_aa": "D",
+      "distance": 8.990208261833834
+    },
+    {
+      "query_index": 127,
+      "target_index": 142,
+      "query_resseq": 131,
+      "target_resseq": 143,
+      "query_aa": "R",
+      "target_aa": "D",
+      "distance": 8.658381182248249
+    },
+    {
+      "query_index": 128,
+      "target_index": 143,
+      "query_resseq": 132,
+      "target_resseq": 144,
+      "query_aa": "S",
+      "target_aa": "D",
+      "distance": 12.3215104020796
+    },
+    {
+      "query_index": 129,
+      "target_index": 144,
+      "query_resseq": 133,
+      "target_resseq": 145,
+      "query_aa": "M",
+      "target_aa": "D",
+      "distance": 10.132798002993969
+    },
+    {
+      "query_index": 130,
+      "target_index": 145,
+      "query_resseq": 134,
+      "target_resseq": 146,
+      "query_aa": "E",
+      "target_aa": "E",
+      "distance": 5.250229459562866
+    },
+    {
+      "query_index": 131,
+      "target_index": 146,
+      "query_resseq": 135,
+      "target_resseq": 147,
+      "query_aa": "T",
+      "target_aa": "I",
+      "distance": 7.9355461889983525
+    },
+    {
+      "query_index": 132,
+      "target_index": 147,
+      "query_resseq": 136,
+      "target_resseq": 148,
+      "query_aa": "S",
+      "target_aa": "L",
+      "distance": 9.892049023989186
+    },
+    {
+      "query_index": 133,
+      "target_index": 148,
+      "query_resseq": 137,
+      "target_resseq": 149,
+      "query_aa": "K",
+      "target_aa": "K",
+      "distance": 6.535022598003603
+    },
+    {
+      "query_index": 134,
+      "target_index": 149,
+      "query_resseq": 138,
+      "target_resseq": 150,
+      "query_aa": "V",
+      "target_aa": "N",
+      "distance": 4.395240621702399
+    },
+    {
+      "query_index": 135,
+      "target_index": 150,
+      "query_resseq": 139,
+      "target_resseq": 151,
+      "query_aa": "I",
+      "target_aa": "Y",
+      "distance": 7.749734502878334
+    },
+    {
+      "query_index": 136,
+      "target_index": 151,
+      "query_resseq": 140,
+      "target_resseq": 152,
+      "query_aa": "S",
+      "target_aa": "Q",
+      "distance": 7.483861538567539
+    },
+    {
+      "query_index": 137,
+      "target_index": 152,
+      "query_resseq": 141,
+      "target_resseq": 153,
+      "query_aa": "H",
+      "target_aa": "V",
+      "distance": 7.91200026568957
+    },
+    {
+      "query_index": 138,
+      "target_index": 153,
+      "query_resseq": 142,
+      "target_resseq": 154,
+      "query_aa": "E",
+      "target_aa": "V",
+      "distance": 13.445675751218735
+    },
+    {
+      "query_index": 139,
+      "target_index": 154,
+      "query_resseq": 143,
+      "target_resseq": 155,
+      "query_aa": "L",
+      "target_aa": "E",
+      "distance": 15.70302675010098
+    },
+    {
+      "query_index": 140,
+      "target_index": 155,
+      "query_resseq": 144,
+      "target_resseq": 156,
+      "query_aa": "C",
+      "target_aa": "P",
+      "distance": 19.352305795564163
+    },
+    {
+      "query_index": 141,
+      "target_index": 156,
+      "query_resseq": 145,
+      "target_resseq": 157,
+      "query_aa": "W",
+      "target_aa": "E",
+      "distance": 24.830384557270364
+    },
+    {
+      "query_index": 142,
+      "target_index": 157,
+      "query_resseq": 146,
+      "target_resseq": 158,
+      "query_aa": "L",
+      "target_aa": "L",
+      "distance": 25.482934763668343
+    },
+    {
+      "query_index": 143,
+      "target_index": 158,
+      "query_resseq": 147,
+      "target_resseq": 159,
+      "query_aa": "L",
+      "target_aa": "Q",
+      "distance": 28.96120241901081
+    },
+    {
+      "query_index": 144,
+      "target_index": 159,
+      "query_resseq": 148,
+      "target_resseq": 160,
+      "query_aa": "E",
+      "target_aa": "Q",
+      "distance": 31.495686639228957
+    },
+    {
+      "query_index": 145,
+      "target_index": 160,
+      "query_resseq": 149,
+      "target_resseq": 161,
+      "query_aa": "D",
+      "target_aa": "V",
+      "distance": 33.44027019476348
+    },
+    {
+      "query_index": 146,
+      "target_index": 161,
+      "query_resseq": 150,
+      "target_resseq": 162,
+      "query_aa": "A",
+      "target_aa": "N",
+      "distance": 39.84467895981221
+    },
+    {
+      "query_index": 147,
+      "target_index": 162,
+      "query_resseq": 151,
+      "target_resseq": 163,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 41.20439799222026
+    },
+    {
+      "query_index": 148,
+      "target_index": 163,
+      "query_resseq": 152,
+      "target_resseq": 164,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 38.48302430597238
+    },
+    {
+      "query_index": 149,
+      "target_index": 164,
+      "query_resseq": 153,
+      "target_resseq": 165,
+      "query_aa": "L",
+      "target_aa": "D",
+      "distance": 42.093984320466774
+    },
+    {
+      "query_index": 150,
+      "target_index": 165,
+      "query_resseq": 154,
+      "target_resseq": 166,
+      "query_aa": "A",
+      "target_aa": "I",
+      "distance": 42.09060899013042
+    },
+    {
+      "query_index": 151,
+      "target_index": 166,
+      "query_resseq": 155,
+      "target_resseq": 167,
+      "query_aa": "E",
+      "target_aa": "R",
+      "distance": 39.93311536835228
+    },
+    {
+      "query_index": 152,
+      "target_index": 167,
+      "query_resseq": 156,
+      "target_resseq": 168,
+      "query_aa": "D",
+      "target_aa": "L",
+      "distance": 39.4535228394698
+    },
+    {
+      "query_index": 153,
+      "target_index": 168,
+      "query_resseq": 157,
+      "target_resseq": 169,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 37.93674809830875
+    },
+    {
+      "query_index": 154,
+      "target_index": 169,
+      "query_resseq": 158,
+      "target_resseq": 170,
+      "query_aa": "P",
+      "target_aa": "G",
+      "distance": 37.512431821017614
+    },
+    {
+      "query_index": 155,
+      "target_index": 170,
+      "query_resseq": 159,
+      "target_resseq": 171,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 31.02481986588012
+    },
+    {
+      "query_index": 156,
+      "target_index": 171,
+      "query_resseq": 160,
+      "target_resseq": 172,
+      "query_aa": "D",
+      "target_aa": "N",
+      "distance": 30.24254701104232
+    },
+    {
+      "query_index": 157,
+      "target_index": 172,
+      "query_resseq": 161,
+      "target_resseq": 173,
+      "query_aa": "S",
+      "target_aa": "P",
+      "distance": 33.98334763418171
+    },
+    {
+      "query_index": 158,
+      "target_index": 174,
+      "query_resseq": 162,
+      "target_resseq": 175,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 27.878870611808022
+    },
+    {
+      "query_index": 159,
+      "target_index": 175,
+      "query_resseq": 163,
+      "target_resseq": 176,
+      "query_aa": "L",
+      "target_aa": "S",
+      "distance": 23.395080756016466
+    },
+    {
+      "query_index": 160,
+      "target_index": 176,
+      "query_resseq": 164,
+      "target_resseq": 177,
+      "query_aa": "L",
+      "target_aa": "E",
+      "distance": 23.65758511671511
+    },
+    {
+      "query_index": 161,
+      "target_index": 177,
+      "query_resseq": 165,
+      "target_resseq": 178,
+      "query_aa": "T",
+      "target_aa": "L",
+      "distance": 24.27911779048857
+    },
+    {
+      "query_index": 162,
+      "target_index": 178,
+      "query_resseq": 166,
+      "target_resseq": 179,
+      "query_aa": "S",
+      "target_aa": "T",
+      "distance": 21.999394721226487
+    },
+    {
+      "query_index": 163,
+      "target_index": 179,
+      "query_resseq": 167,
+      "target_resseq": 180,
+      "query_aa": "E",
+      "target_aa": "G",
+      "distance": 24.013486606110707
+    },
+    {
+      "query_index": 164,
+      "target_index": 180,
+      "query_resseq": 168,
+      "target_resseq": 181,
+      "query_aa": "D",
+      "target_aa": "T",
+      "distance": 23.69682508229921
+    },
+    {
+      "query_index": 165,
+      "target_index": 182,
+      "query_resseq": 169,
+      "target_resseq": 183,
+      "query_aa": "P",
+      "target_aa": "G",
+      "distance": 20.688912199432817
+    },
+    {
+      "query_index": 166,
+      "target_index": 183,
+      "query_resseq": 170,
+      "target_resseq": 184,
+      "query_aa": "A",
+      "target_aa": "E",
+      "distance": 21.45579662203475
+    },
+    {
+      "query_index": 167,
+      "target_index": 184,
+      "query_resseq": 171,
+      "target_resseq": 185,
+      "query_aa": "D",
+      "target_aa": "D",
+      "distance": 25.152588077985214
+    },
+    {
+      "query_index": 168,
+      "target_index": 187,
+      "query_resseq": 172,
+      "target_resseq": 188,
+      "query_aa": "C",
+      "target_aa": "R",
+      "distance": 22.549543254616616
+    },
+    {
+      "query_index": 169,
+      "target_index": 188,
+      "query_resseq": 173,
+      "target_resseq": 189,
+      "query_aa": "P",
+      "target_aa": "A",
+      "distance": 22.1814480602258
+    },
+    {
+      "query_index": 170,
+      "target_index": 189,
+      "query_resseq": 174,
+      "target_resseq": 190,
+      "query_aa": "A",
+      "target_aa": "E",
+      "distance": 16.425523415190746
+    },
+    {
+      "query_index": 171,
+      "target_index": 190,
+      "query_resseq": 175,
+      "target_resseq": 191,
+      "query_aa": "Q",
+      "target_aa": "V",
+      "distance": 15.42819853310984
+    },
+    {
+      "query_index": 172,
+      "target_index": 191,
+      "query_resseq": 176,
+      "target_resseq": 192,
+      "query_aa": "Q",
+      "target_aa": "A",
+      "distance": 21.018276438749872
+    },
+    {
+      "query_index": 173,
+      "target_index": 192,
+      "query_resseq": 177,
+      "target_resseq": 193,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 22.414664117531387
+    },
+    {
+      "query_index": 174,
+      "target_index": 193,
+      "query_resseq": 178,
+      "target_resseq": 194,
+      "query_aa": "Y",
+      "target_aa": "I",
+      "distance": 17.609909139175933
+    },
+    {
+      "query_index": 175,
+      "target_index": 194,
+      "query_resseq": 179,
+      "target_resseq": 195,
+      "query_aa": "V",
+      "target_aa": "P",
+      "distance": 18.48854989322223
+    },
+    {
+      "query_index": 176,
+      "target_index": 195,
+      "query_resseq": 180,
+      "target_resseq": 196,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 25.196250691635214
+    },
+    {
+      "query_index": 177,
+      "target_index": 198,
+      "query_resseq": 181,
+      "target_resseq": 199,
+      "query_aa": "M",
+      "target_aa": "V",
+      "distance": 28.89604956276407
+    },
+    {
+      "query_index": 178,
+      "target_index": 199,
+      "query_resseq": 182,
+      "target_resseq": 200,
+      "query_aa": "R",
+      "target_aa": "V",
+      "distance": 27.699571371578987
+    },
+    {
+      "query_index": 179,
+      "target_index": 200,
+      "query_resseq": 183,
+      "target_resseq": 201,
+      "query_aa": "S",
+      "target_aa": "L",
+      "distance": 31.098864353096012
+    },
+    {
+      "query_index": 180,
+      "target_index": 201,
+      "query_resseq": 184,
+      "target_resseq": 202,
+      "query_aa": "N",
+      "target_aa": "F",
+      "distance": 34.655137436060016
+    },
+    {
+      "query_index": 181,
+      "target_index": 202,
+      "query_resseq": 185,
+      "target_resseq": 203,
+      "query_aa": "Y",
+      "target_aa": "F",
+      "distance": 36.58473836483671
+    },
+    {
+      "query_index": 182,
+      "target_index": 203,
+      "query_resseq": 186,
+      "target_resseq": 204,
+      "query_aa": "T",
+      "target_aa": "V",
+      "distance": 40.84032887405689
+    },
+    {
+      "query_index": 183,
+      "target_index": 204,
+      "query_resseq": 187,
+      "target_resseq": 205,
+      "query_aa": "E",
+      "target_aa": "F",
+      "distance": 44.61584661237599
+    },
+    {
+      "query_index": 184,
+      "target_index": 205,
+      "query_resseq": 188,
+      "target_resseq": 206,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 45.86484768704058
+    },
+    {
+      "query_index": 185,
+      "target_index": 206,
+      "query_resseq": 189,
+      "target_resseq": 207,
+      "query_aa": "G",
+      "target_aa": "T",
+      "distance": 46.33470297626575
+    },
+    {
+      "query_index": 186,
+      "target_index": 208,
+      "query_resseq": 190,
+      "target_resseq": 209,
+      "query_aa": "I",
+      "target_aa": "I",
+      "distance": 43.45658296995385
+    },
+    {
+      "query_index": 187,
+      "target_index": 209,
+      "query_resseq": 191,
+      "target_resseq": 210,
+      "query_aa": "I",
+      "target_aa": "A",
+      "distance": 39.96749611586212
+    },
+    {
+      "query_index": 188,
+      "target_index": 210,
+      "query_resseq": 192,
+      "target_resseq": 211,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 35.436104817523685
+    },
+    {
+      "query_index": 189,
+      "target_index": 211,
+      "query_resseq": 193,
+      "target_resseq": 212,
+      "query_aa": "C",
+      "target_aa": "A",
+      "distance": 30.036545828589887
+    },
+    {
+      "query_index": 190,
+      "target_index": 212,
+      "query_resseq": 194,
+      "target_resseq": 213,
+      "query_aa": "S",
+      "target_aa": "L",
+      "distance": 29.180990153679385
+    },
+    {
+      "query_index": 191,
+      "target_index": 213,
+      "query_resseq": 195,
+      "target_resseq": 214,
+      "query_aa": "H",
+      "target_aa": "P",
+      "distance": 26.154479985448816
+    },
+    {
+      "query_index": 192,
+      "target_index": 214,
+      "query_resseq": 196,
+      "target_resseq": 215,
+      "query_aa": "F",
+      "target_aa": "A",
+      "distance": 20.053333345752442
+    },
+    {
+      "query_index": 193,
+      "target_index": 215,
+      "query_resseq": 197,
+      "target_resseq": 216,
+      "query_aa": "M",
+      "target_aa": "I",
+      "distance": 22.518536520723075
+    },
+    {
+      "query_index": 194,
+      "target_index": 216,
+      "query_resseq": 198,
+      "target_resseq": 217,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 25.858725476223462
+    },
+    {
+      "query_index": 195,
+      "target_index": 217,
+      "query_resseq": 199,
+      "target_resseq": 218,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 20.18697824521761
+    },
+    {
+      "query_index": 196,
+      "target_index": 218,
+      "query_resseq": 200,
+      "target_resseq": 219,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 17.39048566636627
+    },
+    {
+      "query_index": 197,
+      "target_index": 219,
+      "query_resseq": 201,
+      "target_resseq": 220,
+      "query_aa": "H",
+      "target_aa": "L",
+      "distance": 23.739309114057697
+    },
+    {
+      "query_index": 198,
+      "target_index": 220,
+      "query_resseq": 202,
+      "target_resseq": 221,
+      "query_aa": "T",
+      "target_aa": "A",
+      "distance": 25.00385035952663
+    },
+    {
+      "query_index": 199,
+      "target_index": 221,
+      "query_resseq": 203,
+      "target_resseq": 222,
+      "query_aa": "R",
+      "target_aa": "I",
+      "distance": 20.524539125932584
+    },
+    {
+      "query_index": 200,
+      "target_index": 222,
+      "query_resseq": 204,
+      "target_resseq": 223,
+      "query_aa": "M",
+      "target_aa": "A",
+      "distance": 22.505443733753484
+    },
+    {
+      "query_index": 201,
+      "target_index": 223,
+      "query_resseq": 205,
+      "target_resseq": 224,
+      "query_aa": "M",
+      "target_aa": "G",
+      "distance": 29.385668226673584
+    },
+    {
+      "query_index": 202,
+      "target_index": 224,
+      "query_resseq": 206,
+      "target_resseq": 225,
+      "query_aa": "Q",
+      "target_aa": "A",
+      "distance": 29.01204463791764
+    },
+    {
+      "query_index": 203,
+      "target_index": 225,
+      "query_resseq": 207,
+      "target_resseq": 226,
+      "query_aa": "M",
+      "target_aa": "L",
+      "distance": 27.422144233633382
+    },
+    {
+      "query_index": 204,
+      "target_index": 226,
+      "query_resseq": 208,
+      "target_resseq": 227,
+      "query_aa": "R",
+      "target_aa": "G",
+      "distance": 32.76153567468962
+    },
+    {
+      "query_index": 205,
+      "target_index": 227,
+      "query_resseq": 224,
+      "target_resseq": 228,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 29.914422875789302
+    },
+    {
+      "query_index": 206,
+      "target_index": 228,
+      "query_resseq": 225,
+      "target_resseq": 229,
+      "query_aa": "S",
+      "target_aa": "M",
+      "distance": 24.393617808396577
+    },
+    {
+      "query_index": 207,
+      "target_index": 229,
+      "query_resseq": 226,
+      "target_resseq": 230,
+      "query_aa": "L",
+      "target_aa": "R",
+      "distance": 26.061107408142213
+    },
+    {
+      "query_index": 208,
+      "target_index": 230,
+      "query_resseq": 227,
+      "target_resseq": 231,
+      "query_aa": "P",
+      "target_aa": "L",
+      "distance": 33.65946259139815
+    },
+    {
+      "query_index": 209,
+      "target_index": 231,
+      "query_resseq": 228,
+      "target_resseq": 232,
+      "query_aa": "H",
+      "target_aa": "V",
+      "distance": 36.19591818131763
+    },
+    {
+      "query_index": 210,
+      "target_index": 232,
+      "query_resseq": 229,
+      "target_resseq": 233,
+      "query_aa": "F",
+      "target_aa": "A",
+      "distance": 35.41552431556101
+    },
+    {
+      "query_index": 211,
+      "target_index": 233,
+      "query_resseq": 230,
+      "target_resseq": 234,
+      "query_aa": "I",
+      "target_aa": "E",
+      "distance": 36.38819543860012
+    },
+    {
+      "query_index": 212,
+      "target_index": 234,
+      "query_resseq": 231,
+      "target_resseq": 235,
+      "query_aa": "D",
+      "target_aa": "F",
+      "distance": 40.00409806708768
+    },
+    {
+      "query_index": 213,
+      "target_index": 235,
+      "query_resseq": 232,
+      "target_resseq": 236,
+      "query_aa": "T",
+      "target_aa": "T",
+      "distance": 35.08220236891551
+    },
+    {
+      "query_index": 214,
+      "target_index": 236,
+      "query_resseq": 233,
+      "target_resseq": 237,
+      "query_aa": "L",
+      "target_aa": "P",
+      "distance": 28.234896650655635
+    },
+    {
+      "query_index": 215,
+      "target_index": 237,
+      "query_resseq": 234,
+      "target_resseq": 238,
+      "query_aa": "I",
+      "target_aa": "V",
+      "distance": 23.608695247496087
+    },
+    {
+      "query_index": 216,
+      "target_index": 238,
+      "query_resseq": 235,
+      "target_resseq": 239,
+      "query_aa": "V",
+      "target_aa": "H",
+      "distance": 17.15263964610342
+    },
+    {
+      "query_index": 217,
+      "target_index": 239,
+      "query_resseq": 236,
+      "target_resseq": 240,
+      "query_aa": "D",
+      "target_aa": "F",
+      "distance": 12.668486522676137
+    },
+    {
+      "query_index": 218,
+      "target_index": 240,
+      "query_resseq": 237,
+      "target_resseq": 241,
+      "query_aa": "E",
+      "target_aa": "F",
+      "distance": 10.459918577817431
+    },
+    {
+      "query_index": 219,
+      "target_index": 241,
+      "query_resseq": 238,
+      "target_resseq": 242,
+      "query_aa": "A",
+      "target_aa": "A",
+      "distance": 16.11617755275286
+    },
+    {
+      "query_index": 220,
+      "target_index": 243,
+      "query_resseq": 239,
+      "target_resseq": 244,
+      "query_aa": "H",
+      "target_aa": "P",
+      "distance": 14.934387424979352
+    },
+    {
+      "query_index": 221,
+      "target_index": 246,
+      "query_resseq": 240,
+      "target_resseq": 247,
+      "query_aa": "L",
+      "target_aa": "T",
+      "distance": 14.764564260814058
+    },
+    {
+      "query_index": 222,
+      "target_index": 247,
+      "query_resseq": 241,
+      "target_resseq": 248,
+      "query_aa": "L",
+      "target_aa": "L",
+      "distance": 12.144495750249222
+    },
+    {
+      "query_index": 223,
+      "target_index": 248,
+      "query_resseq": 242,
+      "target_resseq": 249,
+      "query_aa": "E",
+      "target_aa": "I",
+      "distance": 14.044069444655474
+    },
+    {
+      "query_index": 224,
+      "target_index": 249,
+      "query_resseq": 243,
+      "target_resseq": 250,
+      "query_aa": "Q",
+      "target_aa": "G",
+      "distance": 14.161556598315238
+    },
+    {
+      "query_index": 225,
+      "target_index": 250,
+      "query_resseq": 244,
+      "target_resseq": 251,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 13.36481318712938
+    },
+    {
+      "query_index": 226,
+      "target_index": 251,
+      "query_resseq": 245,
+      "target_resseq": 252,
+      "query_aa": "F",
+      "target_aa": "G",
+      "distance": 13.184078124639056
+    },
+    {
+      "query_index": 227,
+      "target_index": 252,
+      "query_resseq": 246,
+      "target_resseq": 253,
+      "query_aa": "A",
+      "target_aa": "I",
+      "distance": 13.589674715677518
+    },
+    {
+      "query_index": 228,
+      "target_index": 253,
+      "query_resseq": 247,
+      "target_resseq": 254,
+      "query_aa": "S",
+      "target_aa": "A",
+      "distance": 13.477429374062675
+    },
+    {
+      "query_index": 229,
+      "target_index": 254,
+      "query_resseq": 248,
+      "target_resseq": 255,
+      "query_aa": "V",
+      "target_aa": "I",
+      "distance": 13.894215541473157
+    },
+    {
+      "query_index": 230,
+      "target_index": 255,
+      "query_resseq": 249,
+      "target_resseq": 256,
+      "query_aa": "Y",
+      "target_aa": "D",
+      "distance": 14.566614701191574
+    },
+    {
+      "query_index": 231,
+      "target_index": 257,
+      "query_resseq": 250,
+      "target_resseq": 258,
+      "query_aa": "T",
+      "target_aa": "G",
+      "distance": 15.443874086358022
+    },
+    {
+      "query_index": 232,
+      "target_index": 258,
+      "query_resseq": 251,
+      "target_resseq": 259,
+      "query_aa": "H",
+      "target_aa": "L",
+      "distance": 11.521754325035767
+    },
+    {
+      "query_index": 233,
+      "target_index": 260,
+      "query_resseq": 252,
+      "target_resseq": 261,
+      "query_aa": "T",
+      "target_aa": "I",
+      "distance": 13.48407057318159
+    },
+    {
+      "query_index": 234,
+      "target_index": 261,
+      "query_resseq": 253,
+      "target_resseq": 262,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 9.958141685440829
+    },
+    {
+      "query_index": 235,
+      "target_index": 266,
+      "query_resseq": 254,
+      "target_resseq": 267,
+      "query_aa": "R",
+      "target_aa": "E",
+      "distance": 16.533668600119913
+    },
+    {
+      "query_index": 236,
+      "target_index": 267,
+      "query_resseq": 255,
+      "target_resseq": 268,
+      "query_aa": "L",
+      "target_aa": "E",
+      "distance": 14.72563132514306
+    },
+    {
+      "query_index": 237,
+      "target_index": 269,
+      "query_resseq": 256,
+      "target_resseq": 270,
+      "query_aa": "R",
+      "target_aa": "A",
+      "distance": 18.96853056837189
+    },
+    {
+      "query_index": 238,
+      "target_index": 272,
+      "query_resseq": 257,
+      "target_resseq": 273,
+      "query_aa": "P",
+      "target_aa": "Y",
+      "distance": 21.673469915776938
+    },
+    {
+      "query_index": 239,
+      "target_index": 273,
+      "query_resseq": 258,
+      "target_resseq": 274,
+      "query_aa": "L",
+      "target_aa": "D",
+      "distance": 19.032547514852176
+    },
+    {
+      "query_index": 240,
+      "target_index": 274,
+      "query_resseq": 259,
+      "target_resseq": 275,
+      "query_aa": "M",
+      "target_aa": "T",
+      "distance": 12.298715879023543
+    },
+    {
+      "query_index": 241,
+      "target_index": 275,
+      "query_resseq": 260,
+      "target_resseq": 276,
+      "query_aa": "R",
+      "target_aa": "E",
+      "distance": 13.260077695662345
+    },
+    {
+      "query_index": 242,
+      "target_index": 276,
+      "query_resseq": 261,
+      "target_resseq": 277,
+      "query_aa": "T",
+      "target_aa": "A",
+      "distance": 17.610320219739233
+    },
+    {
+      "query_index": 243,
+      "target_index": 277,
+      "query_resseq": 262,
+      "target_resseq": 278,
+      "query_aa": "I",
+      "target_aa": "A",
+      "distance": 13.332783681880995
+    },
+    {
+      "query_index": 244,
+      "target_index": 279,
+      "query_resseq": 263,
+      "target_resseq": 280,
+      "query_aa": "E",
+      "target_aa": "R",
+      "distance": 12.220561849578997
+    },
+    {
+      "query_index": 245,
+      "target_index": 280,
+      "query_resseq": 264,
+      "target_resseq": 281,
+      "query_aa": "G",
+      "target_aa": "R",
+      "distance": 17.79909022011692
+    },
+    {
+      "query_index": 246,
+      "target_index": 281,
+      "query_resseq": 274,
+      "target_resseq": 282,
+      "query_aa": "L",
+      "target_aa": "T",
+      "distance": 11.383915007275968
+    },
+    {
+      "query_index": 247,
+      "target_index": 282,
+      "query_resseq": 275,
+      "target_resseq": 283,
+      "query_aa": "D",
+      "target_aa": "V",
+      "distance": 13.317278430319936
+    },
+    {
+      "query_index": 248,
+      "target_index": 283,
+      "query_resseq": 276,
+      "target_resseq": 284,
+      "query_aa": "A",
+      "target_aa": "M",
+      "distance": 17.173167434220687
+    },
+    {
+      "query_index": 249,
+      "target_index": 284,
+      "query_resseq": 277,
+      "target_resseq": 285,
+      "query_aa": "L",
+      "target_aa": "T",
+      "distance": 13.320438559312255
+    },
+    {
+      "query_index": 250,
+      "target_index": 287,
+      "query_resseq": 278,
+      "target_resseq": 288,
+      "query_aa": "K",
+      "target_aa": "R",
+      "distance": 13.275475555735184
+    },
+    {
+      "query_index": 251,
+      "target_index": 288,
+      "query_resseq": 279,
+      "target_resseq": 289,
+      "query_aa": "E",
+      "target_aa": "T",
+      "distance": 14.696969789959358
+    },
+    {
+      "query_index": 252,
+      "target_index": 298,
+      "query_resseq": 280,
+      "target_resseq": 299,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 26.84097368993411
+    },
+    {
+      "query_index": 253,
+      "target_index": 299,
+      "query_resseq": 281,
+      "target_resseq": 300,
+      "query_aa": "F",
+      "target_aa": "S",
+      "distance": 23.953908204706767
+    },
+    {
+      "query_index": 254,
+      "target_index": 300,
+      "query_resseq": 282,
+      "target_resseq": 301,
+      "query_aa": "T",
+      "target_aa": "S",
+      "distance": 27.957708976431462
+    },
+    {
+      "query_index": 255,
+      "target_index": 301,
+      "query_resseq": 283,
+      "target_resseq": 302,
+      "query_aa": "Q",
+      "target_aa": "V",
+      "distance": 31.40194710290923
+    },
+    {
+      "query_index": 256,
+      "target_index": 302,
+      "query_resseq": 284,
+      "target_resseq": 303,
+      "query_aa": "M",
+      "target_aa": "P",
+      "distance": 29.474009795938624
+    },
+    {
+      "query_index": 257,
+      "target_index": 303,
+      "query_resseq": 285,
+      "target_resseq": 304,
+      "query_aa": "Q",
+      "target_aa": "L",
+      "distance": 30.16746892067571
+    },
+    {
+      "query_index": 258,
+      "target_index": 304,
+      "query_resseq": 286,
+      "target_resseq": 305,
+      "query_aa": "V",
+      "target_aa": "L",
+      "distance": 34.95737693585335
+    },
+    {
+      "query_index": 259,
+      "target_index": 305,
+      "query_resseq": 287,
+      "target_resseq": 306,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 34.907976360981515
+    },
+    {
+      "query_index": 260,
+      "target_index": 306,
+      "query_resseq": 292,
+      "target_resseq": 307,
+      "query_aa": "T",
+      "target_aa": "F",
+      "distance": 27.70967841060567
+    },
+    {
+      "query_index": 261,
+      "target_index": 307,
+      "query_resseq": 293,
+      "target_resseq": 308,
+      "query_aa": "N",
+      "target_aa": "P",
+      "distance": 31.726584170311607
+    },
+    {
+      "query_index": 262,
+      "target_index": 308,
+      "query_resseq": 294,
+      "target_resseq": 309,
+      "query_aa": "T",
+      "target_aa": "Q",
+      "distance": 32.447651368213414
+    },
+    {
+      "query_index": 263,
+      "target_index": 309,
+      "query_resseq": 295,
+      "target_resseq": 310,
+      "query_aa": "S",
+      "target_aa": "G",
+      "distance": 34.40986083980131
+    },
+    {
+      "query_index": 264,
+      "target_index": 311,
+      "query_resseq": 296,
+      "target_resseq": 312,
+      "query_aa": "L",
+      "target_aa": "L",
+      "distance": 26.613659872802966
+    },
+    {
+      "query_index": 265,
+      "target_index": 312,
+      "query_resseq": 297,
+      "target_resseq": 313,
+      "query_aa": "N",
+      "target_aa": "K",
+      "distance": 29.71062593153443
+    },
+    {
+      "query_index": 266,
+      "target_index": 313,
+      "query_resseq": 298,
+      "target_resseq": 314,
+      "query_aa": "V",
+      "target_aa": "S",
+      "distance": 32.77761529012825
+    },
+    {
+      "query_index": 267,
+      "target_index": 315,
+      "query_resseq": 299,
+      "target_resseq": 316,
+      "query_aa": "P",
+      "target_aa": "T",
+      "distance": 29.669835027178557
+    },
+    {
+      "query_index": 268,
+      "target_index": 316,
+      "query_resseq": 300,
+      "target_resseq": 317,
+      "query_aa": "L",
+      "target_aa": "Y",
+      "distance": 34.600244570903456
+    },
+    {
+      "query_index": 269,
+      "target_index": 317,
+      "query_resseq": 301,
+      "target_resseq": 318,
+      "query_aa": "S",
+      "target_aa": "A",
+      "distance": 34.06442920239351
+    },
+    {
+      "query_index": 270,
+      "target_index": 318,
+      "query_resseq": 302,
+      "target_resseq": 319,
+      "query_aa": "D",
+      "target_aa": "I",
+      "distance": 29.85637576654266
+    },
+    {
+      "query_index": 271,
+      "target_index": 319,
+      "query_resseq": 303,
+      "target_resseq": 320,
+      "query_aa": "V",
+      "target_aa": "I",
+      "distance": 31.90084603390638
+    },
+    {
+      "query_index": 272,
+      "target_index": 320,
+      "query_resseq": 304,
+      "target_resseq": 321,
+      "query_aa": "P",
+      "target_aa": "A",
+      "distance": 33.65873527441801
+    },
+    {
+      "query_index": 273,
+      "target_index": 321,
+      "query_resseq": 305,
+      "target_resseq": 322,
+      "query_aa": "E",
+      "target_aa": "S",
+      "distance": 29.656363855833185
+    },
+    {
+      "query_index": 274,
+      "target_index": 322,
+      "query_resseq": 306,
+      "target_resseq": 323,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 24.324305545822703
+    },
+    {
+      "query_index": 275,
+      "target_index": 323,
+      "query_resseq": 307,
+      "target_resseq": 324,
+      "query_aa": "I",
+      "target_aa": "M",
+      "distance": 28.245756228192054
+    },
+    {
+      "query_index": 276,
+      "target_index": 324,
+      "query_resseq": 308,
+      "target_resseq": 325,
+      "query_aa": "P",
+      "target_aa": "L",
+      "distance": 29.069416125828848
+    },
+    {
+      "query_index": 277,
+      "target_index": 326,
+      "query_resseq": 309,
+      "target_resseq": 327,
+      "query_aa": "A",
+      "target_aa": "A",
+      "distance": 21.54700651183378
+    },
+    {
+      "query_index": 278,
+      "target_index": 327,
+      "query_resseq": 310,
+      "target_resseq": 328,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 23.21585645311198
+    },
+    {
+      "query_index": 279,
+      "target_index": 328,
+      "query_resseq": 311,
+      "target_resseq": 329,
+      "query_aa": "K",
+      "target_aa": "L",
+      "distance": 23.45029093278828
+    },
+    {
+      "query_index": 280,
+      "target_index": 330,
+      "query_resseq": 312,
+      "target_resseq": 331,
+      "query_aa": "D",
+      "target_aa": "I",
+      "distance": 21.240601560626118
+    },
+    {
+      "query_index": 281,
+      "target_index": 331,
+      "query_resseq": 313,
+      "target_resseq": 332,
+      "query_aa": "T",
+      "target_aa": "T",
+      "distance": 19.336920830744567
+    },
+    {
+      "query_index": 282,
+      "target_index": 332,
+      "query_resseq": 314,
+      "target_resseq": 333,
+      "query_aa": "V",
+      "target_aa": "V",
+      "distance": 19.06444388150179
+    },
+    {
+      "query_index": 283,
+      "target_index": 333,
+      "query_resseq": 315,
+      "target_resseq": 334,
+      "query_aa": "K",
+      "target_aa": "L",
+      "distance": 17.157047849797316
+    },
+    {
+      "query_index": 284,
+      "target_index": 334,
+      "query_resseq": 316,
+      "target_resseq": 335,
+      "query_aa": "T",
+      "target_aa": "A",
+      "distance": 15.751777989831586
+    },
+    {
+      "query_index": 285,
+      "target_index": 335,
+      "query_resseq": 317,
+      "target_resseq": 336,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 15.248367474818236
+    },
+    {
+      "query_index": 286,
+      "target_index": 336,
+      "query_resseq": 318,
+      "target_resseq": 337,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 14.779970514049454
+    },
+    {
+      "query_index": 287,
+      "target_index": 337,
+      "query_resseq": 319,
+      "target_resseq": 338,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 14.42854131839108
+    },
+    {
+      "query_index": 288,
+      "target_index": 338,
+      "query_resseq": 320,
+      "target_resseq": 339,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 14.341505396067818
+    },
+    {
+      "query_index": 289,
+      "target_index": 343,
+      "query_resseq": 321,
+      "target_resseq": 344,
+      "query_aa": "P",
+      "target_aa": "R",
+      "distance": 10.50079358304277
+    },
+    {
+      "query_index": 290,
+      "target_index": 348,
+      "query_resseq": 322,
+      "target_resseq": 349,
+      "query_aa": "T",
+      "target_aa": "G",
+      "distance": 13.109797787160057
+    },
+    {
+      "query_index": 291,
+      "target_index": 349,
+      "query_resseq": 323,
+      "target_resseq": 350,
+      "query_aa": "K",
+      "target_aa": "V",
+      "distance": 17.094880659309048
+    },
+    {
+      "query_index": 292,
+      "target_index": 350,
+      "query_resseq": 324,
+      "target_resseq": 351,
+      "query_aa": "G",
+      "target_aa": "T",
+      "distance": 19.233626485286393
+    },
+    {
+      "query_index": 293,
+      "target_index": 351,
+      "query_resseq": 325,
+      "target_resseq": 352,
+      "query_aa": "M",
+      "target_aa": "T",
+      "distance": 14.96167766791151
+    },
+    {
+      "query_index": 294,
+      "target_index": 352,
+      "query_resseq": 326,
+      "target_resseq": 353,
+      "query_aa": "S",
+      "target_aa": "L",
+      "distance": 18.269671439432933
+    },
+    {
+      "query_index": 295,
+      "target_index": 353,
+      "query_resseq": 327,
+      "target_resseq": 380,
+      "query_aa": "R",
+      "target_aa": "K",
+      "distance": 31.629857292912643
+    },
+    {
+      "query_index": 296,
+      "target_index": 354,
+      "query_resseq": 328,
+      "target_resseq": 381,
+      "query_aa": "D",
+      "target_aa": "T",
+      "distance": 33.9859039805274
+    },
+    {
+      "query_index": 297,
+      "target_index": 355,
+      "query_resseq": 329,
+      "target_resseq": 382,
+      "query_aa": "A",
+      "target_aa": "R",
+      "distance": 28.923932858541114
+    },
+    {
+      "query_index": 298,
+      "target_index": 356,
+      "query_resseq": 330,
+      "target_resseq": 383,
+      "query_aa": "R",
+      "target_aa": "E",
+      "distance": 26.35567231559158
+    },
+    {
+      "query_index": 299,
+      "target_index": 358,
+      "query_resseq": 331,
+      "target_resseq": 385,
+      "query_aa": "S",
+      "target_aa": "V",
+      "distance": 31.81182742676551
+    },
+    {
+      "query_index": 300,
+      "target_index": 364,
+      "query_resseq": 332,
+      "target_resseq": 391,
+      "query_aa": "V",
+      "target_aa": "G",
+      "distance": 32.20405424327713
+    },
+    {
+      "query_index": 301,
+      "target_index": 365,
+      "query_resseq": 333,
+      "target_resseq": 392,
+      "query_aa": "I",
+      "target_aa": "R",
+      "distance": 33.38947749248072
+    },
+    {
+      "query_index": 302,
+      "target_index": 366,
+      "query_resseq": 334,
+      "target_resseq": 393,
+      "query_aa": "R",
+      "target_aa": "L",
+      "distance": 32.985231936462384
+    },
+    {
+      "query_index": 303,
+      "target_index": 367,
+      "query_resseq": 335,
+      "target_resseq": 394,
+      "query_aa": "I",
+      "target_aa": "V",
+      "distance": 31.54926930268815
+    },
+    {
+      "query_index": 304,
+      "target_index": 368,
+      "query_resseq": 336,
+      "target_resseq": 395,
+      "query_aa": "A",
+      "target_aa": "N",
+      "distance": 32.08642386358422
+    },
+    {
+      "query_index": 305,
+      "target_index": 369,
+      "query_resseq": 337,
+      "target_resseq": 396,
+      "query_aa": "T",
+      "target_aa": "V",
+      "distance": 33.2380690056966
+    },
+    {
+      "query_index": 306,
+      "target_index": 370,
+      "query_resseq": 338,
+      "target_resseq": 397,
+      "query_aa": "R",
+      "target_aa": "V",
+      "distance": 32.492011129747475
+    },
+    {
+      "query_index": 307,
+      "target_index": 371,
+      "query_resseq": 339,
+      "target_resseq": 398,
+      "query_aa": "A",
+      "target_aa": "M",
+      "distance": 31.01116788247428
+    },
+    {
+      "query_index": 308,
+      "target_index": 372,
+      "query_resseq": 340,
+      "target_resseq": 399,
+      "query_aa": "A",
+      "target_aa": "K",
+      "distance": 32.59906224837708
+    },
+    {
+      "query_index": 309,
+      "target_index": 373,
+      "query_resseq": 341,
+      "target_resseq": 400,
+      "query_aa": "N",
+      "target_aa": "R",
+      "distance": 34.610345926678356
+    },
+    {
+      "query_index": 310,
+      "target_index": 374,
+      "query_resseq": 342,
+      "target_resseq": 401,
+      "query_aa": "D",
+      "target_aa": "P",
+      "distance": 31.713576638416285
+    },
+    {
+      "query_index": 312,
+      "target_index": 375,
+      "query_resseq": 344,
+      "target_resseq": 402,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 32.495988321381624
+    },
+    {
+      "query_index": 313,
+      "target_index": 376,
+      "query_resseq": 345,
+      "target_resseq": 403,
+      "query_aa": "S",
+      "target_aa": "A",
+      "distance": 30.673067245442574
+    },
+    {
+      "query_index": 314,
+      "target_index": 377,
+      "query_resseq": 346,
+      "target_resseq": 404,
+      "query_aa": "G",
+      "target_aa": "F",
+      "distance": 23.67828217201786
+    },
+    {
+      "query_index": 315,
+      "target_index": 378,
+      "query_resseq": 347,
+      "target_resseq": 405,
+      "query_aa": "H",
+      "target_aa": "A",
+      "distance": 25.793307221035757
+    },
+    {
+      "query_index": 316,
+      "target_index": 380,
+      "query_resseq": 348,
+      "target_resseq": 407,
+      "query_aa": "S",
+      "target_aa": "P",
+      "distance": 23.930496938347456
+    },
+    {
+      "query_index": 317,
+      "target_index": 381,
+      "query_resseq": 349,
+      "target_resseq": 408,
+      "query_aa": "R",
+      "target_aa": "I",
+      "distance": 18.012709389125085
+    },
+    {
+      "query_index": 318,
+      "target_index": 382,
+      "query_resseq": 350,
+      "target_resseq": 409,
+      "query_aa": "L",
+      "target_aa": "L",
+      "distance": 20.84903842387604
+    },
+    {
+      "query_index": 319,
+      "target_index": 383,
+      "query_resseq": 351,
+      "target_resseq": 410,
+      "query_aa": "R",
+      "target_aa": "V",
+      "distance": 22.060277036666577
+    },
+    {
+      "query_index": 320,
+      "target_index": 384,
+      "query_resseq": 352,
+      "target_resseq": 411,
+      "query_aa": "I",
+      "target_aa": "V",
+      "distance": 22.554545490568465
+    },
+    {
+      "query_index": 321,
+      "target_index": 385,
+      "query_resseq": 353,
+      "target_resseq": 412,
+      "query_aa": "E",
+      "target_aa": "M",
+      "distance": 20.57377371436944
+    },
+    {
+      "query_index": 322,
+      "target_index": 386,
+      "query_resseq": 354,
+      "target_resseq": 413,
+      "query_aa": "V",
+      "target_aa": "V",
+      "distance": 25.498590425518493
+    },
+    {
+      "query_index": 323,
+      "target_index": 387,
+      "query_resseq": 355,
+      "target_resseq": 414,
+      "query_aa": "T",
+      "target_aa": "L",
+      "distance": 30.222637033602798
+    },
+    {
+      "query_index": 324,
+      "target_index": 389,
+      "query_resseq": 356,
+      "target_resseq": 416,
+      "query_aa": "P",
+      "target_aa": "I",
+      "distance": 26.78133442207047
+    },
+    {
+      "query_index": 325,
+      "target_index": 390,
+      "query_resseq": 357,
+      "target_resseq": 417,
+      "query_aa": "V",
+      "target_aa": "I",
+      "distance": 34.22381370707471
+    },
+    {
+      "query_index": 326,
+      "target_index": 391,
+      "query_resseq": 358,
+      "target_resseq": 418,
+      "query_aa": "H",
+      "target_aa": "P",
+      "distance": 35.08248333940963
+    },
+    {
+      "query_index": 327,
+      "target_index": 392,
+      "query_resseq": 359,
+      "target_resseq": 419,
+      "query_aa": "S",
+      "target_aa": "L",
+      "distance": 31.867345667274964
+    },
+    {
+      "query_index": 328,
+      "target_index": 393,
+      "query_resseq": 360,
+      "target_resseq": 420,
+      "query_aa": "Y",
+      "target_aa": "G",
+      "distance": 36.292412664269705
+    },
+    {
+      "query_index": 329,
+      "target_index": 394,
+      "query_resseq": 361,
+      "target_resseq": 421,
+      "query_aa": "P",
+      "target_aa": "Q",
+      "distance": 36.67311354417872
+    },
+    {
+      "query_index": 330,
+      "target_index": 395,
+      "query_resseq": 362,
+      "target_resseq": 422,
+      "query_aa": "M",
+      "target_aa": "L",
+      "distance": 32.009608958481245
+    },
+    {
+      "query_index": 331,
+      "target_index": 396,
+      "query_resseq": 363,
+      "target_resseq": 423,
+      "query_aa": "L",
+      "target_aa": "S",
+      "distance": 34.1811904091349
+    },
+    {
+      "query_index": 332,
+      "target_index": 398,
+      "query_resseq": 364,
+      "target_resseq": 425,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 31.949462304785822
+    },
+    {
+      "query_index": 333,
+      "target_index": 399,
+      "query_resseq": 365,
+      "target_resseq": 426,
+      "query_aa": "S",
+      "target_aa": "G",
+      "distance": 32.34794314355433
+    },
+    {
+      "query_index": 334,
+      "target_index": 401,
+      "query_resseq": 366,
+      "target_resseq": 428,
+      "query_aa": "G",
+      "target_aa": "S",
+      "distance": 29.323425798638247
+    },
+    {
+      "query_index": 335,
+      "target_index": 402,
+      "query_resseq": 367,
+      "target_resseq": 429,
+      "query_aa": "R",
+      "target_aa": "E",
+      "distance": 28.187423215233107
+    },
+    {
+      "query_index": 336,
+      "target_index": 403,
+      "query_resseq": 368,
+      "target_resseq": 430,
+      "query_aa": "S",
+      "target_aa": "K",
+      "distance": 24.38197319086975
+    },
+    {
+      "query_index": 337,
+      "target_index": 404,
+      "query_resseq": 369,
+      "target_resseq": 431,
+      "query_aa": "N",
+      "target_aa": "Y",
+      "distance": 21.178058010898773
+    },
+    {
+      "query_index": 338,
+      "target_index": 405,
+      "query_resseq": 370,
+      "target_resseq": 432,
+      "query_aa": "L",
+      "target_aa": "L",
+      "distance": 17.624658793629138
+    },
+    {
+      "query_index": 339,
+      "target_index": 410,
+      "query_resseq": 371,
+      "target_resseq": 437,
+      "query_aa": "Q",
+      "target_aa": "A",
+      "distance": 22.814666724129253
+    },
+    {
+      "query_index": 340,
+      "target_index": 411,
+      "query_resseq": 372,
+      "target_resseq": 438,
+      "query_aa": "R",
+      "target_aa": "V",
+      "distance": 24.61349242284548
+    },
+    {
+      "query_index": 341,
+      "target_index": 412,
+      "query_resseq": 373,
+      "target_resseq": 439,
+      "query_aa": "A",
+      "target_aa": "R",
+      "distance": 21.16650656885902
+    },
+    {
+      "query_index": 342,
+      "target_index": 413,
+      "query_resseq": 374,
+      "target_resseq": 440,
+      "query_aa": "L",
+      "target_aa": "Q",
+      "distance": 19.65757624746309
+    },
+    {
+      "query_index": 343,
+      "target_index": 414,
+      "query_resseq": 375,
+      "target_resseq": 441,
+      "query_aa": "L",
+      "target_aa": "S",
+      "distance": 22.92365970615765
+    },
+    {
+      "query_index": 344,
+      "target_index": 418,
+      "query_resseq": 376,
+      "target_resseq": 445,
+      "query_aa": "G",
+      "target_aa": "F",
+      "distance": 28.11413511484508
+    },
+    {
+      "query_index": 345,
+      "target_index": 419,
+      "query_resseq": 377,
+      "target_resseq": 446,
+      "query_aa": "L",
+      "target_aa": "D",
+      "distance": 25.65522055282235
+    },
+    {
+      "query_index": 346,
+      "target_index": 421,
+      "query_resseq": 378,
+      "target_resseq": 448,
+      "query_aa": "W",
+      "target_aa": "L",
+      "distance": 25.996421436525736
+    },
+    {
+      "query_index": 347,
+      "target_index": 422,
+      "query_resseq": 379,
+      "target_resseq": 449,
+      "query_aa": "N",
+      "target_aa": "F",
+      "distance": 29.87198445422156
+    },
+    {
+      "query_index": 348,
+      "target_index": 423,
+      "query_resseq": 380,
+      "target_resseq": 450,
+      "query_aa": "A",
+      "target_aa": "P",
+      "distance": 29.78554034719158
+    },
+    {
+      "query_index": 349,
+      "target_index": 424,
+      "query_resseq": 381,
+      "target_resseq": 451,
+      "query_aa": "T",
+      "target_aa": "G",
+      "distance": 28.579878432625563
+    },
+    {
+      "query_index": 350,
+      "target_index": 425,
+      "query_resseq": 382,
+      "target_resseq": 452,
+      "query_aa": "G",
+      "target_aa": "F",
+      "distance": 26.44134825291111
+    },
+    {
+      "query_index": 351,
+      "target_index": 426,
+      "query_resseq": 383,
+      "target_resseq": 453,
+      "query_aa": "G",
+      "target_aa": "R",
+      "distance": 21.12141372655436
+    },
+    {
+      "query_index": 352,
+      "target_index": 428,
+      "query_resseq": 384,
+      "target_resseq": 455,
+      "query_aa": "A",
+      "target_aa": "E",
+      "distance": 22.260629560094774
+    },
+    {
+      "query_index": 353,
+      "target_index": 431,
+      "query_resseq": 385,
+      "target_resseq": 458,
+      "query_aa": "T",
+      "target_aa": "T",
+      "distance": 27.414881886932992
+    },
+    {
+      "query_index": 354,
+      "target_index": 432,
+      "query_resseq": 386,
+      "target_resseq": 459,
+      "query_aa": "L",
+      "target_aa": "L",
+      "distance": 30.181084252634164
+    },
+    {
+      "query_index": 355,
+      "target_index": 433,
+      "query_resseq": 387,
+      "target_resseq": 460,
+      "query_aa": "V",
+      "target_aa": "V",
+      "distance": 28.150285797171197
+    },
+    {
+      "query_index": 356,
+      "target_index": 437,
+      "query_resseq": 388,
+      "target_resseq": 464,
+      "query_aa": "S",
+      "target_aa": "E",
+      "distance": 37.742163900586945
+    },
+    {
+      "query_index": 357,
+      "target_index": 439,
+      "query_resseq": 389,
+      "target_resseq": 466,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 37.42223521523475
+    },
+    {
+      "query_index": 358,
+      "target_index": 440,
+      "query_resseq": 390,
+      "target_resseq": 467,
+      "query_aa": "T",
+      "target_aa": "E",
+      "distance": 41.84529129888697
+    },
+    {
+      "query_index": 359,
+      "target_index": 444,
+      "query_resseq": 391,
+      "target_resseq": 471,
+      "query_aa": "L",
+      "target_aa": "D",
+      "distance": 41.98789346347397
+    },
+    {
+      "query_index": 360,
+      "target_index": 445,
+      "query_resseq": 392,
+      "target_resseq": 472,
+      "query_aa": "F",
+      "target_aa": "A",
+      "distance": 42.3287739172153
+    },
+    {
+      "query_index": 361,
+      "target_index": 446,
+      "query_resseq": 393,
+      "target_resseq": 473,
+      "query_aa": "T",
+      "target_aa": "Q",
+      "distance": 41.293741771386394
+    },
+    {
+      "query_index": 362,
+      "target_index": 447,
+      "query_resseq": 394,
+      "target_resseq": 474,
+      "query_aa": "T",
+      "target_aa": "I",
+      "distance": 37.721041360113475
+    },
+    {
+      "query_index": 363,
+      "target_index": 448,
+      "query_resseq": 395,
+      "target_resseq": 475,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 35.38777775563696
+    },
+    {
+      "query_index": 364,
+      "target_index": 449,
+      "query_resseq": 396,
+      "target_resseq": 476,
+      "query_aa": "D",
+      "target_aa": "D",
+      "distance": 37.09597439519723
+    },
+    {
+      "query_index": 365,
+      "target_index": 450,
+      "query_resseq": 397,
+      "target_resseq": 477,
+      "query_aa": "N",
+      "target_aa": "M",
+      "distance": 37.39682685111705
+    },
+    {
+      "query_index": 366,
+      "target_index": 452,
+      "query_resseq": 398,
+      "target_resseq": 479,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 38.329698854200046
+    },
+    {
+      "query_index": 367,
+      "target_index": 456,
+      "query_resseq": 399,
+      "target_resseq": 483,
+      "query_aa": "S",
+      "target_aa": "T",
+      "distance": 36.90242038123051
+    },
+    {
+      "query_index": 368,
+      "target_index": 457,
+      "query_resseq": 400,
+      "target_resseq": 484,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 33.588883633806155
+    },
+    {
+      "query_index": 369,
+      "target_index": 458,
+      "query_resseq": 401,
+      "target_resseq": 485,
+      "query_aa": "T",
+      "target_aa": "S",
+      "distance": 31.824566196793125
+    },
+    {
+      "query_index": 370,
+      "target_index": 461,
+      "query_resseq": 402,
+      "target_resseq": 488,
+      "query_aa": "R",
+      "target_aa": "T",
+      "distance": 30.860303378443053
+    },
+    {
+      "query_index": 371,
+      "target_index": 462,
+      "query_resseq": 403,
+      "target_resseq": 489,
+      "query_aa": "W",
+      "target_aa": "D",
+      "distance": 37.54935331632412
+    },
+    {
+      "query_index": 372,
+      "target_index": 467,
+      "query_resseq": 404,
+      "target_resseq": 494,
+      "query_aa": "K",
+      "target_aa": "P",
+      "distance": 43.65856721273797
+    },
+    {
+      "query_index": 373,
+      "target_index": 468,
+      "query_resseq": 405,
+      "target_resseq": 495,
+      "query_aa": "L",
+      "target_aa": "E",
+      "distance": 45.96589482385732
+    },
+    {
+      "query_index": 374,
+      "target_index": 469,
+      "query_resseq": 406,
+      "target_resseq": 496,
+      "query_aa": "E",
+      "target_aa": "K",
+      "distance": 45.56253221067088
+    },
+    {
+      "query_index": 375,
+      "target_index": 470,
+      "query_resseq": 407,
+      "target_resseq": 497,
+      "query_aa": "V",
+      "target_aa": "M",
+      "distance": 40.484500042198626
+    },
+    {
+      "query_index": 376,
+      "target_index": 471,
+      "query_resseq": 408,
+      "target_resseq": 498,
+      "query_aa": "P",
+      "target_aa": "W",
+      "distance": 41.8820220482023
+    },
+    {
+      "query_index": 377,
+      "target_index": 472,
+      "query_resseq": 409,
+      "target_resseq": 499,
+      "query_aa": "T",
+      "target_aa": "K",
+      "distance": 41.82516366626584
+    },
+    {
+      "query_index": 378,
+      "target_index": 473,
+      "query_resseq": 410,
+      "target_resseq": 500,
+      "query_aa": "E",
+      "target_aa": "E",
+      "distance": 44.19808423342397
+    },
+    {
+      "query_index": 379,
+      "target_index": 474,
+      "query_resseq": 411,
+      "target_resseq": 501,
+      "query_aa": "R",
+      "target_aa": "R",
+      "distance": 39.2753103799086
+    },
+    {
+      "query_index": 380,
+      "target_index": 475,
+      "query_resseq": 412,
+      "target_resseq": 502,
+      "query_aa": "A",
+      "target_aa": "P",
+      "distance": 37.92268067083853
+    },
+    {
+      "query_index": 381,
+      "target_index": 476,
+      "query_resseq": 413,
+      "target_resseq": 503,
+      "query_aa": "A",
+      "target_aa": "A",
+      "distance": 37.46038026141022
+    },
+    {
+      "query_index": 382,
+      "target_index": 477,
+      "query_resseq": 414,
+      "target_resseq": 504,
+      "query_aa": "F",
+      "target_aa": "N",
+      "distance": 36.58217859028164
+    },
+    {
+      "query_index": 383,
+      "target_index": 478,
+      "query_resseq": 415,
+      "target_resseq": 505,
+      "query_aa": "L",
+      "target_aa": "D",
+      "distance": 36.991770564003595
+    },
+    {
+      "query_index": 384,
+      "target_index": 480,
+      "query_resseq": 416,
+      "target_resseq": 507,
+      "query_aa": "P",
+      "target_aa": "G",
+      "distance": 35.0788303480918
+    },
+    {
+      "query_index": 385,
+      "target_index": 481,
+      "query_resseq": 417,
+      "target_resseq": 508,
+      "query_aa": "P",
+      "target_aa": "S",
+      "distance": 35.22772140134347
+    },
+    {
+      "query_index": 386,
+      "target_index": 483,
+      "query_resseq": 418,
+      "target_resseq": 510,
+      "query_aa": "V",
+      "target_aa": "D",
+      "distance": 32.603513526297405
+    },
+    {
+      "query_index": 387,
+      "target_index": 484,
+      "query_resseq": 419,
+      "target_resseq": 511,
+      "query_aa": "H",
+      "target_aa": "P",
+      "distance": 32.15393302963453
+    },
+    {
+      "query_index": 390,
+      "target_index": 485,
+      "query_resseq": 422,
+      "target_resseq": 512,
+      "query_aa": "W",
+      "target_aa": "S",
+      "distance": 22.20916886269087
+    },
+    {
+      "query_index": 391,
+      "target_index": 486,
+      "query_resseq": 423,
+      "target_resseq": 513,
+      "query_aa": "T",
+      "target_aa": "V",
+      "distance": 21.301542363492448
+    },
+    {
+      "query_index": 392,
+      "target_index": 487,
+      "query_resseq": 424,
+      "target_resseq": 514,
+      "query_aa": "T",
+      "target_aa": "R",
+      "distance": 21.781944845490024
+    },
+    {
+      "query_index": 393,
+      "target_index": 488,
+      "query_resseq": 425,
+      "target_resseq": 515,
+      "query_aa": "A",
+      "target_aa": "V",
+      "distance": 16.06186882557886
+    },
+    {
+      "query_index": 394,
+      "target_index": 489,
+      "query_resseq": 426,
+      "target_resseq": 516,
+      "query_aa": "P",
+      "target_aa": "I",
+      "distance": 15.204245619604972
+    },
+    {
+      "query_index": 395,
+      "target_index": 490,
+      "query_resseq": 427,
+      "target_resseq": 517,
+      "query_aa": "V",
+      "target_aa": "Q",
+      "distance": 17.598412643707874
+    },
+    {
+      "query_index": 396,
+      "target_index": 491,
+      "query_resseq": 428,
+      "target_resseq": 518,
+      "query_aa": "L",
+      "target_aa": "N",
+      "distance": 21.001232718806023
+    },
+    {
+      "query_index": 397,
+      "target_index": 492,
+      "query_resseq": 429,
+      "target_resseq": 519,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 22.942460660481615
+    },
+    {
+      "query_index": 398,
+      "target_index": 493,
+      "query_resseq": 430,
+      "target_resseq": 520,
+      "query_aa": "H",
+      "target_aa": "L",
+      "distance": 24.894173694277026
+    },
+    {
+      "query_index": 399,
+      "target_index": 494,
+      "query_resseq": 431,
+      "target_resseq": 521,
+      "query_aa": "K",
+      "target_aa": "E",
+      "distance": 28.280470476594065
+    },
+    {
+      "query_index": 400,
+      "target_index": 495,
+      "query_resseq": 432,
+      "target_resseq": 522,
+      "query_aa": "E",
+      "target_aa": "N",
+      "distance": 29.495366410279086
+    },
+    {
+      "query_index": 401,
+      "target_index": 496,
+      "query_resseq": 433,
+      "target_resseq": 523,
+      "query_aa": "F",
+      "target_aa": "R",
+      "distance": 28.468516500011567
+    },
+    {
+      "query_index": 402,
+      "target_index": 497,
+      "query_resseq": 434,
+      "target_resseq": 524,
+      "query_aa": "C",
+      "target_aa": "N",
+      "distance": 28.42853657776441
+    },
+    {
+      "query_index": 403,
+      "target_index": 498,
+      "query_resseq": 435,
+      "target_resseq": 525,
+      "query_aa": "A",
+      "target_aa": "D",
+      "distance": 29.49093220239154
+    },
+    {
+      "query_index": 405,
+      "target_index": 499,
+      "query_resseq": 437,
+      "target_resseq": 526,
+      "query_aa": "E",
+      "target_aa": "A",
+      "distance": 29.739367629258748
+    },
+    {
+      "query_index": 406,
+      "target_index": 500,
+      "query_resseq": 438,
+      "target_resseq": 527,
+      "query_aa": "P",
+      "target_aa": "A",
+      "distance": 26.38270181055357
+    },
+    {
+      "query_index": 407,
+      "target_index": 501,
+      "query_resseq": 439,
+      "target_resseq": 528,
+      "query_aa": "D",
+      "target_aa": "K",
+      "distance": 31.315016171957602
+    },
+    {
+      "query_index": 408,
+      "target_index": 503,
+      "query_resseq": 440,
+      "target_resseq": 530,
+      "query_aa": "D",
+      "target_aa": "I",
+      "distance": 34.54303041256089
+    },
+    {
+      "query_index": 409,
+      "target_index": 504,
+      "query_resseq": 441,
+      "target_resseq": 531,
+      "query_aa": "S",
+      "target_aa": "D",
+      "distance": 34.27522756883882
+    },
+    {
+      "query_index": 410,
+      "target_index": 505,
+      "query_resseq": 442,
+      "target_resseq": 532,
+      "query_aa": "P",
+      "target_aa": "E",
+      "distance": 38.0139880895011
+    },
+    {
+      "query_index": 411,
+      "target_index": 506,
+      "query_resseq": 443,
+      "target_resseq": 533,
+      "query_aa": "E",
+      "target_aa": "L",
+      "distance": 38.45031954703765
+    },
+    {
+      "query_index": 412,
+      "target_index": 507,
+      "query_resseq": 444,
+      "target_resseq": 534,
+      "query_aa": "W",
+      "target_aa": "R",
+      "distance": 32.60009077906747
+    },
+    {
+      "query_index": 413,
+      "target_index": 508,
+      "query_resseq": 445,
+      "target_resseq": 535,
+      "query_aa": "A",
+      "target_aa": "A",
+      "distance": 32.67743752286982
+    },
+    {
+      "query_index": 414,
+      "target_index": 509,
+      "query_resseq": 446,
+      "target_resseq": 536,
+      "query_aa": "T",
+      "target_aa": "L",
+      "distance": 36.43969255683724
+    },
+    {
+      "query_index": 415,
+      "target_index": 510,
+      "query_resseq": 447,
+      "target_resseq": 537,
+      "query_aa": "E",
+      "target_aa": "Q",
+      "distance": 34.22379568852948
+    },
+    {
+      "query_index": 416,
+      "target_index": 513,
+      "query_resseq": 448,
+      "target_resseq": 540,
+      "query_aa": "C",
+      "target_aa": "H",
+      "distance": 37.28684723526936
+    },
+    {
+      "query_index": 417,
+      "target_index": 514,
+      "query_resseq": 449,
+      "target_resseq": 541,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 36.38886480131147
+    },
+    {
+      "query_index": 418,
+      "target_index": 516,
+      "query_resseq": 450,
+      "target_resseq": 543,
+      "query_aa": "Q",
+      "target_aa": "E",
+      "distance": 31.246655626830936
+    },
+    {
+      "query_index": 419,
+      "target_index": 517,
+      "query_resseq": 451,
+      "target_resseq": 544,
+      "query_aa": "T",
+      "target_aa": "V",
+      "distance": 28.563026226727054
+    },
+    {
+      "query_index": 420,
+      "target_index": 518,
+      "query_resseq": 452,
+      "target_resseq": 545,
+      "query_aa": "I",
+      "target_aa": "F",
+      "distance": 25.360227923197083
+    },
+    {
+      "query_index": 421,
+      "target_index": 519,
+      "query_resseq": 453,
+      "target_resseq": 546,
+      "query_aa": "Q",
+      "target_aa": "V",
+      "distance": 27.0656077491239
+    },
+    {
+      "query_index": 422,
+      "target_index": 520,
+      "query_resseq": 454,
+      "target_resseq": 547,
+      "query_aa": "G",
+      "target_aa": "G",
+      "distance": 27.11704328396292
+    },
+    {
+      "query_index": 423,
+      "target_index": 521,
+      "query_resseq": 455,
+      "target_resseq": 548,
+      "query_aa": "V",
+      "target_aa": "G",
+      "distance": 26.37212997645368
+    },
+    {
+      "query_index": 424,
+      "target_index": 522,
+      "query_resseq": 456,
+      "target_resseq": 549,
+      "query_aa": "A",
+      "target_aa": "T",
+      "distance": 27.301986377807285
+    },
+    {
+      "query_index": 425,
+      "target_index": 523,
+      "query_resseq": 457,
+      "target_resseq": 550,
+      "query_aa": "S",
+      "target_aa": "P",
+      "distance": 28.884243650102114
+    },
+    {
+      "query_index": 426,
+      "target_index": 524,
+      "query_resseq": 458,
+      "target_resseq": 551,
+      "query_aa": "T",
+      "target_aa": "A",
+      "distance": 22.72462602284317
+    },
+    {
+      "query_index": 427,
+      "target_index": 525,
+      "query_resseq": 459,
+      "target_resseq": 552,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 19.993208220418214
+    },
+    {
+      "query_index": 428,
+      "target_index": 526,
+      "query_resseq": 460,
+      "target_resseq": 553,
+      "query_aa": "Q",
+      "target_aa": "E",
+      "distance": 21.576389034451456
+    },
+    {
+      "query_index": 429,
+      "target_index": 527,
+      "query_resseq": 461,
+      "target_resseq": 554,
+      "query_aa": "G",
+      "target_aa": "Q",
+      "distance": 18.38097089408188
+    },
+    {
+      "query_index": 430,
+      "target_index": 528,
+      "query_resseq": 462,
+      "target_resseq": 555,
+      "query_aa": "G",
+      "target_aa": "D",
+      "distance": 13.431915091980427
+    },
+    {
+      "query_index": 431,
+      "target_index": 531,
+      "query_resseq": 463,
+      "target_resseq": 558,
+      "query_aa": "T",
+      "target_aa": "H",
+      "distance": 11.67820397408793
+    },
+    {
+      "query_index": 432,
+      "target_index": 532,
+      "query_resseq": 464,
+      "target_resseq": 559,
+      "query_aa": "L",
+      "target_aa": "S",
+      "distance": 6.543106533712053
+    },
+    {
+      "query_index": 433,
+      "target_index": 533,
+      "query_resseq": 465,
+      "target_resseq": 560,
+      "query_aa": "V",
+      "target_aa": "L",
+      "distance": 7.837132056487405
+    },
+    {
+      "query_index": 434,
+      "target_index": 534,
+      "query_resseq": 466,
+      "target_resseq": 561,
+      "query_aa": "L",
+      "target_aa": "F",
+      "distance": 6.048673203705645
+    },
+    {
+      "query_index": 435,
+      "target_index": 535,
+      "query_resseq": 467,
+      "target_resseq": 562,
+      "query_aa": "C",
+      "target_aa": "D",
+      "distance": 8.289210724014133
+    },
+    {
+      "query_index": 436,
+      "target_index": 536,
+      "query_resseq": 468,
+      "target_resseq": 563,
+      "query_aa": "T",
+      "target_aa": "K",
+      "distance": 8.430578421543025
+    },
+    {
+      "query_index": 437,
+      "target_index": 537,
+      "query_resseq": 469,
+      "target_resseq": 564,
+      "query_aa": "S",
+      "target_aa": "L",
+      "distance": 8.759685342133636
+    },
+    {
+      "query_index": 438,
+      "target_index": 538,
+      "query_resseq": 470,
+      "target_resseq": 565,
+      "query_aa": "Y",
+      "target_aa": "P",
+      "distance": 10.427078022624446
+    },
+    {
+      "query_index": 439,
+      "target_index": 539,
+      "query_resseq": 471,
+      "target_resseq": 566,
+      "query_aa": "Q",
+      "target_aa": "L",
+      "distance": 9.716696269133895
+    },
+    {
+      "query_index": 440,
+      "target_index": 540,
+      "query_resseq": 472,
+      "target_resseq": 567,
+      "query_aa": "N",
+      "target_aa": "M",
+      "distance": 6.739786673187872
+    },
+    {
+      "query_index": 441,
+      "target_index": 541,
+      "query_resseq": 473,
+      "target_resseq": 568,
+      "query_aa": "T",
+      "target_aa": "A",
+      "distance": 5.922804325507849
+    },
+    {
+      "query_index": 442,
+      "target_index": 542,
+      "query_resseq": 474,
+      "target_resseq": 569,
+      "query_aa": "E",
+      "target_aa": "L",
+      "distance": 6.410591205866905
+    },
+    {
+      "query_index": 443,
+      "target_index": 545,
+      "query_resseq": 475,
+      "target_resseq": 572,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 8.400070205562477
+    },
+    {
+      "query_index": 444,
+      "target_index": 546,
+      "query_resseq": 476,
+      "target_resseq": 573,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 8.747452348687379
+    },
+    {
+      "query_index": 445,
+      "target_index": 547,
+      "query_resseq": 477,
+      "target_resseq": 574,
+      "query_aa": "A",
+      "target_aa": "T",
+      "distance": 10.00356571709722
+    },
+    {
+      "query_index": 446,
+      "target_index": 548,
+      "query_resseq": 478,
+      "target_resseq": 575,
+      "query_aa": "G",
+      "target_aa": "T",
+      "distance": 14.473257856223665
+    },
+    {
+      "query_index": 447,
+      "target_index": 549,
+      "query_resseq": 479,
+      "target_resseq": 576,
+      "query_aa": "R",
+      "target_aa": "T",
+      "distance": 16.82032046568469
+    },
+    {
+      "query_index": 448,
+      "target_index": 550,
+      "query_resseq": 480,
+      "target_resseq": 577,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 17.937011567018224
+    },
+    {
+      "query_index": 449,
+      "target_index": 551,
+      "query_resseq": 481,
+      "target_resseq": 578,
+      "query_aa": "G",
+      "target_aa": "L",
+      "distance": 19.4033625570433
+    },
+    {
+      "query_index": 450,
+      "target_index": 552,
+      "query_resseq": 482,
+      "target_resseq": 579,
+      "query_aa": "A",
+      "target_aa": "M",
+      "distance": 25.10223425115704
+    },
+    {
+      "query_index": 451,
+      "target_index": 553,
+      "query_resseq": 483,
+      "target_resseq": 580,
+      "query_aa": "A",
+      "target_aa": "F",
+      "distance": 26.606002204154667
+    },
+    {
+      "query_index": 452,
+      "target_index": 554,
+      "query_resseq": 484,
+      "target_resseq": 581,
+      "query_aa": "L",
+      "target_aa": "L",
+      "distance": 27.806375527536805
+    },
+    {
+      "query_index": 453,
+      "target_index": 555,
+      "query_resseq": 485,
+      "target_resseq": 582,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 30.113939766306576
+    },
+    {
+      "query_index": 454,
+      "target_index": 556,
+      "query_resseq": 486,
+      "target_resseq": 583,
+      "query_aa": "D",
+      "target_aa": "F",
+      "distance": 32.98862589123313
+    },
+    {
+      "query_index": 455,
+      "target_index": 557,
+      "query_resseq": 487,
+      "target_resseq": 584,
+      "query_aa": "R",
+      "target_aa": "G",
+      "distance": 34.322697266217034
+    },
+    {
+      "query_index": 456,
+      "target_index": 558,
+      "query_resseq": 488,
+      "target_resseq": 585,
+      "query_aa": "L",
+      "target_aa": "S",
+      "distance": 30.54159944872397
+    },
+    {
+      "query_index": 457,
+      "target_index": 559,
+      "query_resseq": 489,
+      "target_resseq": 586,
+      "query_aa": "I",
+      "target_aa": "V",
+      "distance": 27.360680163010585
+    },
+    {
+      "query_index": 458,
+      "target_index": 560,
+      "query_resseq": 490,
+      "target_resseq": 587,
+      "query_aa": "V",
+      "target_aa": "V",
+      "distance": 25.874839545982727
+    },
+    {
+      "query_index": 459,
+      "target_index": 561,
+      "query_resseq": 491,
+      "target_resseq": 588,
+      "query_aa": "Q",
+      "target_aa": "L",
+      "distance": 24.01247172053998
+    },
+    {
+      "query_index": 460,
+      "target_index": 562,
+      "query_resseq": 492,
+      "target_resseq": 589,
+      "query_aa": "S",
+      "target_aa": "P",
+      "distance": 17.116649201748473
+    },
+    {
+      "query_index": 461,
+      "target_index": 563,
+      "query_resseq": 493,
+      "target_resseq": 590,
+      "query_aa": "K",
+      "target_aa": "I",
+      "distance": 18.320506964405922
+    },
+    {
+      "query_index": 462,
+      "target_index": 564,
+      "query_resseq": 494,
+      "target_resseq": 591,
+      "query_aa": "T",
+      "target_aa": "K",
+      "distance": 23.927623668671096
+    },
+    {
+      "query_index": 463,
+      "target_index": 565,
+      "query_resseq": 495,
+      "target_resseq": 592,
+      "query_aa": "S",
+      "target_aa": "A",
+      "distance": 22.591594258295974
+    },
+    {
+      "query_index": 464,
+      "target_index": 567,
+      "query_resseq": 496,
+      "target_resseq": 594,
+      "query_aa": "S",
+      "target_aa": "L",
+      "distance": 24.149923779998147
+    },
+    {
+      "query_index": 465,
+      "target_index": 568,
+      "query_resseq": 497,
+      "target_resseq": 595,
+      "query_aa": "A",
+      "target_aa": "M",
+      "distance": 25.02824162489388
+    },
+    {
+      "query_index": 466,
+      "target_index": 569,
+      "query_resseq": 498,
+      "target_resseq": 596,
+      "query_aa": "A",
+      "target_aa": "S",
+      "distance": 24.807867466450226
+    },
+    {
+      "query_index": 467,
+      "target_index": 570,
+      "query_resseq": 499,
+      "target_resseq": 597,
+      "query_aa": "T",
+      "target_aa": "A",
+      "distance": 26.106023350164666
+    },
+    {
+      "query_index": 468,
+      "target_index": 571,
+      "query_resseq": 500,
+      "target_resseq": 598,
+      "query_aa": "C",
+      "target_aa": "L",
+      "distance": 28.18422947294272
+    },
+    {
+      "query_index": 469,
+      "target_index": 572,
+      "query_resseq": 501,
+      "target_resseq": 599,
+      "query_aa": "L",
+      "target_aa": "T",
+      "distance": 28.13585929694351
+    },
+    {
+      "query_index": 470,
+      "target_index": 573,
+      "query_resseq": 502,
+      "target_resseq": 600,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 28.42740560537097
+    },
+    {
+      "query_index": 471,
+      "target_index": 574,
+      "query_resseq": 503,
+      "target_resseq": 601,
+      "query_aa": "Q",
+      "target_aa": "G",
+      "distance": 30.952447679458952
+    },
+    {
+      "query_index": 472,
+      "target_index": 575,
+      "query_resseq": 504,
+      "target_resseq": 602,
+      "query_aa": "F",
+      "target_aa": "S",
+      "distance": 32.610218785130144
+    },
+    {
+      "query_index": 473,
+      "target_index": 576,
+      "query_resseq": 505,
+      "target_resseq": 603,
+      "query_aa": "K",
+      "target_aa": "T",
+      "distance": 32.82886723080404
+    },
+    {
+      "query_index": 474,
+      "target_index": 577,
+      "query_resseq": 506,
+      "target_resseq": 604,
+      "query_aa": "A",
+      "target_aa": "M",
+      "distance": 33.46794171080619
+    },
+    {
+      "query_index": 475,
+      "target_index": 580,
+      "query_resseq": 507,
+      "target_resseq": 607,
+      "query_aa": "K",
+      "target_aa": "L",
+      "distance": 36.08614662094122
+    },
+    {
+      "query_index": 476,
+      "target_index": 581,
+      "query_resseq": 508,
+      "target_resseq": 608,
+      "query_aa": "H",
+      "target_aa": "T",
+      "distance": 34.95287658813849
+    },
+    {
+      "query_index": 477,
+      "target_index": 583,
+      "query_resseq": 509,
+      "target_resseq": 610,
+      "query_aa": "K",
+      "target_aa": "M",
+      "distance": 41.59411922811823
+    },
+    {
+      "query_index": 478,
+      "target_index": 586,
+      "query_resseq": 510,
+      "target_resseq": 613,
+      "query_aa": "A",
+      "target_aa": "D",
+      "distance": 44.36821872989574
+    },
+    {
+      "query_index": 479,
+      "target_index": 587,
+      "query_resseq": 511,
+      "target_resseq": 614,
+      "query_aa": "G",
+      "target_aa": "G",
+      "distance": 45.283207034799375
+    },
+    {
+      "query_index": 480,
+      "target_index": 590,
+      "query_resseq": 512,
+      "target_resseq": 617,
+      "query_aa": "I",
+      "target_aa": "S",
+      "distance": 46.982423515081635
+    },
+    {
+      "query_index": 481,
+      "target_index": 591,
+      "query_resseq": 513,
+      "target_resseq": 618,
+      "query_aa": "R",
+      "target_aa": "G",
+      "distance": 47.492292545637724
+    },
+    {
+      "query_index": 482,
+      "target_index": 592,
+      "query_resseq": 514,
+      "target_resseq": 619,
+      "query_aa": "P",
+      "target_aa": "L",
+      "distance": 45.70602253189178
+    },
+    {
+      "query_index": 483,
+      "target_index": 593,
+      "query_resseq": 515,
+      "target_resseq": 620,
+      "query_aa": "V",
+      "target_aa": "M",
+      "distance": 40.884295584711374
+    },
+    {
+      "query_index": 484,
+      "target_index": 594,
+      "query_resseq": 516,
+      "target_resseq": 621,
+      "query_aa": "W",
+      "target_aa": "N",
+      "distance": 38.14651642642774
+    },
+    {
+      "query_index": 485,
+      "target_index": 595,
+      "query_resseq": 517,
+      "target_resseq": 622,
+      "query_aa": "L",
+      "target_aa": "Y",
+      "distance": 34.123295768259034
+    },
+    {
+      "query_index": 486,
+      "target_index": 596,
+      "query_resseq": 518,
+      "target_resseq": 623,
+      "query_aa": "G",
+      "target_aa": "T",
+      "distance": 30.239029491224333
+    },
+    {
+      "query_index": 487,
+      "target_index": 597,
+      "query_resseq": 519,
+      "target_resseq": 624,
+      "query_aa": "L",
+      "target_aa": "P",
+      "distance": 25.758107951659976
+    },
+    {
+      "query_index": 488,
+      "target_index": 598,
+      "query_resseq": 520,
+      "target_resseq": 625,
+      "query_aa": "G",
+      "target_aa": "Q",
+      "distance": 21.637276622957618
+    },
+    {
+      "query_index": 489,
+      "target_index": 599,
+      "query_resseq": 521,
+      "target_resseq": 626,
+      "query_aa": "A",
+      "target_aa": "P",
+      "distance": 17.612191543595763
+    },
+    {
+      "query_index": 490,
+      "target_index": 600,
+      "query_resseq": 522,
+      "target_resseq": 627,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 15.086705149444064
+    },
+    {
+      "query_index": 491,
+      "target_index": 601,
+      "query_resseq": 523,
+      "target_resseq": 628,
+      "query_aa": "W",
+      "target_aa": "M",
+      "distance": 10.024028126821731
+    },
+    {
+      "query_index": 493,
+      "target_index": 602,
+      "query_resseq": 525,
+      "target_resseq": 629,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 6.429105200667012
+    },
+    {
+      "query_index": 494,
+      "target_index": 603,
+      "query_resseq": 526,
+      "target_resseq": 630,
+      "query_aa": "I",
+      "target_aa": "P",
+      "distance": 5.959592145111882
+    },
+    {
+      "query_index": 495,
+      "target_index": 604,
+      "query_resseq": 527,
+      "target_resseq": 631,
+      "query_aa": "D",
+      "target_aa": "M",
+      "distance": 12.076645126716219
+    },
+    {
+      "query_index": 496,
+      "target_index": 605,
+      "query_resseq": 528,
+      "target_resseq": 632,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 15.660639958872014
+    },
+    {
+      "query_index": 497,
+      "target_index": 606,
+      "query_resseq": 529,
+      "target_resseq": 633,
+      "query_aa": "S",
+      "target_aa": "G",
+      "distance": 17.294330830014633
+    },
+    {
+      "query_index": 498,
+      "target_index": 607,
+      "query_resseq": 530,
+      "target_resseq": 634,
+      "query_aa": "D",
+      "target_aa": "L",
+      "distance": 21.43121959098315
+    },
+    {
+      "query_index": 501,
+      "target_index": 608,
+      "query_resseq": 533,
+      "target_resseq": 635,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 30.120898943270696
+    },
+    {
+      "query_index": 502,
+      "target_index": 609,
+      "query_resseq": 534,
+      "target_resseq": 636,
+      "query_aa": "P",
+      "target_aa": "I",
+      "distance": 31.154244320219792
+    },
+    {
+      "query_index": 503,
+      "target_index": 610,
+      "query_resseq": 535,
+      "target_resseq": 637,
+      "query_aa": "D",
+      "target_aa": "A",
+      "distance": 33.88145337878715
+    },
+    {
+      "query_index": 504,
+      "target_index": 611,
+      "query_resseq": 536,
+      "target_resseq": 638,
+      "query_aa": "N",
+      "target_aa": "V",
+      "distance": 35.36718460878761
+    },
+    {
+      "query_index": 505,
+      "target_index": 612,
+      "query_resseq": 537,
+      "target_resseq": 639,
+      "query_aa": "P",
+      "target_aa": "I",
+      "distance": 35.01916708296698
+    },
+    {
+      "query_index": 506,
+      "target_index": 613,
+      "query_resseq": 538,
+      "target_resseq": 640,
+      "query_aa": "E",
+      "target_aa": "W",
+      "distance": 37.44371819152306
+    },
+    {
+      "query_index": 507,
+      "target_index": 614,
+      "query_resseq": 539,
+      "target_resseq": 641,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 37.708122821480515
+    },
+    {
+      "query_index": 508,
+      "target_index": 615,
+      "query_resseq": 540,
+      "target_resseq": 642,
+      "query_aa": "D",
+      "target_aa": "L",
+      "distance": 36.281287900115515
+    },
+    {
+      "query_index": 509,
+      "target_index": 616,
+      "query_resseq": 541,
+      "target_resseq": 643,
+      "query_aa": "R",
+      "target_aa": "S",
+      "distance": 36.90845449763103
+    },
+    {
+      "query_index": 510,
+      "target_index": 617,
+      "query_resseq": 542,
+      "target_resseq": 644,
+      "query_aa": "L",
+      "target_aa": "T",
+      "distance": 33.27101771701211
+    },
+    {
+      "query_index": 511,
+      "target_index": 619,
+      "query_resseq": 543,
+      "target_resseq": 646,
+      "query_aa": "L",
+      "target_aa": "Y",
+      "distance": 35.76998412974781
+    },
+    {
+      "query_index": 512,
+      "target_index": 620,
+      "query_resseq": 544,
+      "target_resseq": 647,
+      "query_aa": "S",
+      "target_aa": "E",
+      "distance": 38.450240272351586
+    },
+    {
+      "query_index": 513,
+      "target_index": 621,
+      "query_resseq": 545,
+      "target_resseq": 648,
+      "query_aa": "D",
+      "target_aa": "V",
+      "distance": 36.31619284220561
+    },
+    {
+      "query_index": 514,
+      "target_index": 622,
+      "query_resseq": 546,
+      "target_resseq": 649,
+      "query_aa": "L",
+      "target_aa": "F",
+      "distance": 35.918011997832274
+    },
+    {
+      "query_index": 515,
+      "target_index": 623,
+      "query_resseq": 547,
+      "target_resseq": 650,
+      "query_aa": "V",
+      "target_aa": "L",
+      "distance": 35.712724485419905
+    },
+    {
+      "query_index": 516,
+      "target_index": 624,
+      "query_resseq": 548,
+      "target_resseq": 651,
+      "query_aa": "I",
+      "target_aa": "V",
+      "distance": 32.42700571312226
+    },
+    {
+      "query_index": 517,
+      "target_index": 625,
+      "query_resseq": 549,
+      "target_resseq": 652,
+      "query_aa": "T",
+      "target_aa": "S",
+      "distance": 31.65724249735774
+    },
+    {
+      "query_index": 518,
+      "target_index": 626,
+      "query_resseq": 550,
+      "target_resseq": 653,
+      "query_aa": "R",
+      "target_aa": "R",
+      "distance": 33.265422600954494
+    },
+    {
+      "query_index": 519,
+      "target_index": 627,
+      "query_resseq": 551,
+      "target_resseq": 654,
+      "query_aa": "I",
+      "target_aa": "M",
+      "distance": 33.256672241302745
+    },
+    {
+      "query_index": 520,
+      "target_index": 628,
+      "query_resseq": 552,
+      "target_resseq": 655,
+      "query_aa": "P",
+      "target_aa": "V",
+      "distance": 30.94807840365236
+    },
+    {
+      "query_index": 521,
+      "target_index": 629,
+      "query_resseq": 553,
+      "target_resseq": 656,
+      "query_aa": "V",
+      "target_aa": "E",
+      "distance": 32.413773250735574
+    },
+    {
+      "query_index": 522,
+      "target_index": 630,
+      "query_resseq": 554,
+      "target_resseq": 657,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 30.894544435410005
+    },
+    {
+      "query_index": 523,
+      "target_index": 631,
+      "query_resseq": 555,
+      "target_resseq": 658,
+      "query_aa": "Q",
+      "target_aa": "R",
+      "distance": 31.65380286736455
+    },
+    {
+      "query_index": 524,
+      "target_index": 632,
+      "query_resseq": 556,
+      "target_resseq": 659,
+      "query_aa": "N",
+      "target_aa": "E",
+      "distance": 33.58926073889365
+    },
+    {
+      "query_index": 525,
+      "target_index": 634,
+      "query_resseq": 557,
+      "target_resseq": 661,
+      "query_aa": "R",
+      "target_aa": "G",
+      "distance": 34.163711301639005
+    },
+    {
+      "query_index": 526,
+      "target_index": 635,
+      "query_resseq": 558,
+      "target_resseq": 662,
+      "query_aa": "S",
+      "target_aa": "M",
+      "distance": 33.65545586918772
+    },
+    {
+      "query_index": 527,
+      "target_index": 636,
+      "query_resseq": 559,
+      "target_resseq": 663,
+      "query_aa": "L",
+      "target_aa": "S",
+      "distance": 32.17494952766548
+    },
+    {
+      "query_index": 528,
+      "target_index": 637,
+      "query_resseq": 560,
+      "target_resseq": 664,
+      "query_aa": "T",
+      "target_aa": "T",
+      "distance": 32.310846639360705
+    },
+    {
+      "query_index": 529,
+      "target_index": 638,
+      "query_resseq": 561,
+      "target_resseq": 665,
+      "query_aa": "H",
+      "target_aa": "A",
+      "distance": 31.075680070772087
+    },
+    {
+      "query_index": 530,
+      "target_index": 639,
+      "query_resseq": 562,
+      "target_resseq": 666,
+      "query_aa": "E",
+      "target_aa": "E",
+      "distance": 29.291816354268352
+    },
+    {
+      "query_index": 531,
+      "target_index": 640,
+      "query_resseq": 563,
+      "target_resseq": 667,
+      "query_aa": "R",
+      "target_aa": "A",
+      "distance": 28.92049831617989
+    },
+    {
+      "query_index": 532,
+      "target_index": 641,
+      "query_resseq": 564,
+      "target_resseq": 668,
+      "query_aa": "R",
+      "target_aa": "I",
+      "distance": 28.590200098011618
+    },
+    {
+      "query_index": 533,
+      "target_index": 642,
+      "query_resseq": 565,
+      "target_resseq": 669,
+      "query_aa": "T",
+      "target_aa": "R",
+      "distance": 27.97263535344983
+    },
+    {
+      "query_index": 534,
+      "target_index": 643,
+      "query_resseq": 566,
+      "target_resseq": 670,
+      "query_aa": "A",
+      "target_aa": "I",
+      "distance": 28.1342298121525
+    },
+    {
+      "query_index": 535,
+      "target_index": 644,
+      "query_resseq": 567,
+      "target_resseq": 671,
+      "query_aa": "I",
+      "target_aa": "G",
+      "distance": 29.549268535753285
+    },
+    {
+      "query_index": 536,
+      "target_index": 645,
+      "query_resseq": 568,
+      "target_resseq": 672,
+      "query_aa": "G",
+      "target_aa": "T",
+      "distance": 28.744850228077862
+    },
+    {
+      "query_index": 537,
+      "target_index": 646,
+      "query_resseq": 569,
+      "target_resseq": 673,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 29.761417888341875
+    },
+    {
+      "query_index": 539,
+      "target_index": 647,
+      "query_resseq": 571,
+      "target_resseq": 674,
+      "query_aa": "R",
+      "target_aa": "T",
+      "distance": 36.21295787095702
+    },
+    {
+      "query_index": 540,
+      "target_index": 648,
+      "query_resseq": 572,
+      "target_resseq": 675,
+      "query_aa": "I",
+      "target_aa": "T",
+      "distance": 30.63641790398736
+    },
+    {
+      "query_index": 541,
+      "target_index": 649,
+      "query_resseq": 573,
+      "target_resseq": 676,
+      "query_aa": "I",
+      "target_aa": "G",
+      "distance": 27.997368287120153
+    },
+    {
+      "query_index": 542,
+      "target_index": 650,
+      "query_resseq": 574,
+      "target_resseq": 677,
+      "query_aa": "S",
+      "target_aa": "R",
+      "distance": 33.53039236975349
+    },
+    {
+      "query_index": 543,
+      "target_index": 651,
+      "query_resseq": 575,
+      "target_resseq": 678,
+      "query_aa": "Q",
+      "target_aa": "L",
+      "distance": 33.522494485909654
+    },
+    {
+      "query_index": 544,
+      "target_index": 652,
+      "query_resseq": 576,
+      "target_resseq": 679,
+      "query_aa": "E",
+      "target_aa": "I",
+      "distance": 27.109229148668383
+    },
+    {
+      "query_index": 545,
+      "target_index": 653,
+      "query_resseq": 577,
+      "target_resseq": 680,
+      "query_aa": "A",
+      "target_aa": "T",
+      "distance": 28.613665309557575
+    },
+    {
+      "query_index": 546,
+      "target_index": 654,
+      "query_resseq": 578,
+      "target_resseq": 681,
+      "query_aa": "A",
+      "target_aa": "G",
+      "distance": 33.62557926627098
+    },
+    {
+      "query_index": 547,
+      "target_index": 655,
+      "query_resseq": 579,
+      "target_resseq": 682,
+      "query_aa": "W",
+      "target_aa": "A",
+      "distance": 29.61119216761141
+    },
+    {
+      "query_index": 548,
+      "target_index": 656,
+      "query_resseq": 580,
+      "target_resseq": 683,
+      "query_aa": "H",
+      "target_aa": "A",
+      "distance": 25.23722198867379
+    },
+    {
+      "query_index": 549,
+      "target_index": 657,
+      "query_resseq": 581,
+      "target_resseq": 684,
+      "query_aa": "F",
+      "target_aa": "L",
+      "distance": 30.768884701095995
+    },
+    {
+      "query_index": 551,
+      "target_index": 658,
+      "query_resseq": 583,
+      "target_resseq": 685,
+      "query_aa": "Q",
+      "target_aa": "I",
+      "distance": 29.81514271185016
+    },
+    {
+      "query_index": 552,
+      "target_index": 659,
+      "query_resseq": 584,
+      "target_resseq": 686,
+      "query_aa": "G",
+      "target_aa": "L",
+      "distance": 27.27538753574076
+    },
+    {
+      "query_index": 553,
+      "target_index": 660,
+      "query_resseq": 585,
+      "target_resseq": 687,
+      "query_aa": "L",
+      "target_aa": "A",
+      "distance": 30.545647551567722
+    },
+    {
+      "query_index": 556,
+      "target_index": 661,
+      "query_resseq": 588,
+      "target_resseq": 688,
+      "query_aa": "L",
+      "target_aa": "V",
+      "distance": 36.40347937998439
+    },
+    {
+      "query_index": 557,
+      "target_index": 662,
+      "query_resseq": 589,
+      "target_resseq": 689,
+      "query_aa": "V",
+      "target_aa": "V",
+      "distance": 34.66783512029174
+    },
+    {
+      "query_index": 559,
+      "target_index": 663,
+      "query_resseq": 591,
+      "target_resseq": 690,
+      "query_aa": "R",
+      "target_aa": "A",
+      "distance": 33.11581137626918
+    },
+    {
+      "query_index": 560,
+      "target_index": 664,
+      "query_resseq": 592,
+      "target_resseq": 691,
+      "query_aa": "P",
+      "target_aa": "G",
+      "distance": 38.15457144965223
+    },
+    {
+      "query_index": 561,
+      "target_index": 665,
+      "query_resseq": 593,
+      "target_resseq": 692,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 41.038205809417825
+    },
+    {
+      "query_index": 562,
+      "target_index": 668,
+      "query_resseq": 594,
+      "target_resseq": 695,
+      "query_aa": "V",
+      "target_aa": "F",
+      "distance": 37.779004985617114
+    },
+    {
+      "query_index": 563,
+      "target_index": 670,
+      "query_resseq": 595,
+      "target_resseq": 697,
+      "query_aa": "T",
+      "target_aa": "D",
+      "distance": 36.29484810218121
+    },
+    {
+      "query_index": 564,
+      "target_index": 671,
+      "query_resseq": 596,
+      "target_resseq": 698,
+      "query_aa": "H",
+      "target_aa": "L",
+      "distance": 34.25076213532074
+    },
+    {
+      "query_index": 565,
+      "target_index": 672,
+      "query_resseq": 597,
+      "target_resseq": 699,
+      "query_aa": "K",
+      "target_aa": "V",
+      "distance": 29.73860795457315
+    },
+    {
+      "query_index": 566,
+      "target_index": 678,
+      "query_resseq": 598,
+      "target_resseq": 705,
+      "query_aa": "N",
+      "target_aa": "A",
+      "distance": 33.244275853515006
+    },
+    {
+      "query_index": 567,
+      "target_index": 680,
+      "query_resseq": 599,
+      "target_resseq": 707,
+      "query_aa": "L",
+      "target_aa": "G",
+      "distance": 27.915425277841337
+    },
+    {
+      "query_index": 568,
+      "target_index": 681,
+      "query_resseq": 600,
+      "target_resseq": 708,
+      "query_aa": "W",
+      "target_aa": "L",
+      "distance": 30.226662708363193
+    },
+    {
+      "query_index": 569,
+      "target_index": 682,
+      "query_resseq": 601,
+      "target_resseq": 709,
+      "query_aa": "V",
+      "target_aa": "L",
+      "distance": 30.905422184039253
+    },
+    {
+      "query_index": 570,
+      "target_index": 683,
+      "query_resseq": 602,
+      "target_resseq": 710,
+      "query_aa": "L",
+      "target_aa": "I",
+      "distance": 29.47221110082914
+    },
+    {
+      "query_index": 571,
+      "target_index": 684,
+      "query_resseq": 603,
+      "target_resseq": 711,
+      "query_aa": "D",
+      "target_aa": "A",
+      "distance": 24.90588623357318
+    },
+    {
+      "query_index": 572,
+      "target_index": 685,
+      "query_resseq": 604,
+      "target_resseq": 712,
+      "query_aa": "A",
+      "target_aa": "L",
+      "distance": 30.604837981839257
+    },
+    {
+      "query_index": 573,
+      "target_index": 686,
+      "query_resseq": 605,
+      "target_resseq": 713,
+      "query_aa": "R",
+      "target_aa": "L",
+      "distance": 30.089388443156103
+    },
+    {
+      "query_index": 574,
+      "target_index": 687,
+      "query_resseq": 606,
+      "target_resseq": 714,
+      "query_aa": "I",
+      "target_aa": "L",
+      "distance": 28.847596081453844
+    },
+    {
+      "query_index": 575,
+      "target_index": 688,
+      "query_resseq": 607,
+      "target_resseq": 715,
+      "query_aa": "Y",
+      "target_aa": "D",
+      "distance": 32.92842536808058
+    },
+    {
+      "query_index": 576,
+      "target_index": 689,
+      "query_resseq": 608,
+      "target_resseq": 716,
+      "query_aa": "G",
+      "target_aa": "A",
+      "distance": 35.715262149608655
+    },
+    {
+      "query_index": 577,
+      "target_index": 691,
+      "query_resseq": 609,
+      "target_resseq": 718,
+      "query_aa": "G",
+      "target_aa": "I",
+      "distance": 32.35655604997691
+    },
+    {
+      "query_index": 578,
+      "target_index": 692,
+      "query_resseq": 610,
+      "target_resseq": 719,
+      "query_aa": "A",
+      "target_aa": "I",
+      "distance": 27.932298234645703
+    },
+    {
+      "query_index": 579,
+      "target_index": 693,
+      "query_resseq": 611,
+      "target_resseq": 720,
+      "query_aa": "A",
+      "target_aa": "R",
+      "distance": 31.346961206393107
+    },
+    {
+      "query_index": 580,
+      "target_index": 694,
+      "query_resseq": 612,
+      "target_resseq": 721,
+      "query_aa": "W",
+      "target_aa": "M",
+      "distance": 29.261810349867734
+    },
+    {
+      "query_index": 581,
+      "target_index": 700,
+      "query_resseq": 613,
+      "target_resseq": 727,
+      "query_aa": "V",
+      "target_aa": "V",
+      "distance": 27.603233538766972
+    },
+    {
+      "query_index": 582,
+      "target_index": 701,
+      "query_resseq": 614,
+      "target_resseq": 728,
+      "query_aa": "A",
+      "target_aa": "M",
+      "distance": 34.0650281012917
+    },
+    {
+      "query_index": 583,
+      "target_index": 702,
+      "query_resseq": 615,
+      "target_resseq": 729,
+      "query_aa": "P",
+      "target_aa": "K",
+      "distance": 36.94115907574947
+    },
+    {
+      "query_index": 584,
+      "target_index": 703,
+      "query_resseq": 616,
+      "target_resseq": 730,
+      "query_aa": "F",
+      "target_aa": "L",
+      "distance": 35.05437509977832
+    },
+    {
+      "query_index": 585,
+      "target_index": 706,
+      "query_resseq": 617,
+      "target_resseq": 733,
+      "query_aa": "R",
+      "target_aa": "D",
+      "distance": 43.039916178605424
+    },
+    {
+      "query_index": 586,
+      "target_index": 707,
+      "query_resseq": 618,
+      "target_resseq": 734,
+      "query_aa": "Q",
+      "target_aa": "D",
+      "distance": 42.95670879137327
+    },
+    {
+      "query_index": 587,
+      "target_index": 708,
+      "query_resseq": 619,
+      "target_resseq": 735,
+      "query_aa": "I",
+      "target_aa": "C",
+      "distance": 41.32216340728687
+    },
+    {
+      "query_index": 588,
+      "target_index": 710,
+      "query_resseq": 620,
+      "target_resseq": 737,
+      "query_aa": "L",
+      "target_aa": "W",
+      "distance": 42.92584061249844
+    },
+    {
+      "query_index": 589,
+      "target_index": 711,
+      "query_resseq": 621,
+      "target_resseq": 738,
+      "query_aa": "D",
+      "target_aa": "A",
+      "distance": 45.199879132454456
+    },
+    {
+      "query_index": 590,
+      "target_index": 712,
+      "query_resseq": 622,
+      "target_resseq": 739,
+      "query_aa": "R",
+      "target_aa": "P",
+      "distance": 48.200227332252766
+    },
+    {
+      "query_index": 591,
+      "target_index": 713,
+      "query_resseq": 623,
+      "target_resseq": 740,
+      "query_aa": "Y",
+      "target_aa": "R",
+      "distance": 50.46795535286262
+    },
+    {
+      "query_index": 592,
+      "target_index": 714,
+      "query_resseq": 624,
+      "target_resseq": 741,
+      "query_aa": "K",
+      "target_aa": "W",
+      "distance": 50.170573887701416
+    },
+    {
+      "query_index": 593,
+      "target_index": 715,
+      "query_resseq": 625,
+      "target_resseq": 742,
+      "query_aa": "K",
+      "target_aa": "M",
+      "distance": 47.042104976376805
+    }
+  ]
+}

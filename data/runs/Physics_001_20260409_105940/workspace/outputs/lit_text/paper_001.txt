@@ -1,0 +1,724 @@
+PHYSICAL REVIEW LETTERS 124, 167002 (2020)
+Editors' Suggestion
+
+Featured in Physics
+
+Topology-Bounded Superfluid Weight in Twisted Bilayer Graphene
+1
+
+Fang Xie,1,* Zhida Song,1,* Biao Lian,2 and B. Andrei Bernevig1,3,4,†
+
+Department of Physics, Princeton University, Princeton, New Jersey 08544, USA
+Princeton Center for Theoretical Science, Princeton University, Princeton, New Jersey 08544, USA
+3
+Physics Department, Freie Universitat Berlin, Arnimallee 14, 14195 Berlin, Germany
+4
+Max Planck Institute of Microstructure Physics, 06120 Halle, Germany
+
+2
+
+(Received 17 June 2019; accepted 21 January 2020; published 24 April 2020)
+While regular flat bands are good for enhancing the density of states and hence the gap, they are
+detrimental to the superfluid weight. We show that the predicted nontrivial topology of the two lowest flat
+bands of twisted bilayer graphene (TBLG) plays an important role in the enhancement of the superfluid
+weight and hence of superconductivity. We derive the superfluid weight (phase stiffness) of the TBLG
+superconducting flat bands with a uniform pairing, and show that it can be expressed as an integral of the
+Fubini-Study metric of the flat bands. This mirrors results already obtained for nonzero Chern number
+bands even though the TBLG flat bands have zero Chern number. We further show that the metric integral
+is lower bounded by the topological C2z T Wilson loop winding number of TBLG flat bands, which renders
+that the superfluid weight is also bounded by this topological index. In contrast, trivial flat bands have a
+zero superfluid weight. The superfluid weight is crucial in determining the Berezinskii-Kosterlitz-Thouless
+transition temperature of the superconductor. Based on the transition temperature measured in TBLG
+experiments, we estimate the topological contribution of the superfluid weight in TBLG.
+DOI: 10.1103/PhysRevLett.124.167002
+
+The recently discovered superconducting phase in
+twisted bilayer graphene has received extensive attention
+43–1]]. The topology of the lowest two bands (per spin
+and valley) of twisted bilayer graphene (TBLG) is
+currently under debate [22,26–28,44]. Although theoretical models suggest a nontrivial topological number of
+these bands, the experimentally measurable effects
+through which one could prove or falsify the predicted
+nontrivial topology are scarce. Currently, one viable
+experimentally observable effect [45] predicts that the
+single-particle magnetic field spectrum of a topologically
+nontrivial band can cross the single-particle gap, in stark
+contrast to conventional knowledge and to the in-field
+spectrum of trivial bands. We here present another effect
+of a set of topologically nontrivial bands observable at
+zero field (of the kind present in TBLG) that appears when
+these bands become superconducting. It has been shown
+in Ref. [1] that the superfluid weight in the superconducting state is the sum of two terms: a conventional term,
+which vanishes when the bands are perfectly flat, and a
+topological term, which we will prove that it is bounded
+from below by the Wilson loop winding number of the
+C2z T protected topology in TBLG.
+This Letter is organized as follows. First, we show that
+by assuming perfectly flat bands and s wave pairing, the
+superfluid weight can be written as the integral of FubiniStudy metric over the Brillouin zone (BZ), and show that it
+is lower bounded by the Wilson loop winding. Second, by
+applying this result to TBLG, we estimate the topological
+0031-9007=20=124(16)=167002(6)
+
+contribution of superfluid weight and explain the relatively
+high transition temperature.
+The two characterizing features of superconductors are
+the zero dc resistance and Meissner effect. Both of these
+properties are captured by the celebrated London equation
+[46]. It tells us that the electric current in a superconductor j
+is proportional to the gauge potential A under Coulomb
+gauge:
+ji ¼ −½Ds ij Aj ;
+
+ð1Þ
+
+in which the coefficient ½Ds ij is called the superfluid
+weight. Some spacial symmetry, such as C3z , requires it to
+be isotropic in 2D. In some works, such as Ref. [47], it is
+called “phase stiffness” (describing energy susceptibility
+with respect to phase twists). The London equation has two
+kinds of consequences. One is Meissner effect, and the
+other one is the frequency dependence of ac conductance.
+In 2D, the superfluid weight is also related with the
+transition temperature. The phase coherence will disappear
+at a temperature T ¼ T c given by ½ℏ2 Ds ðT c Þ=e2 kB T c  ¼
+ð8=πÞ (known as the Berezinskii-Kosterlitz-Thouless
+[BKT] transition [48,49]), because of the creation of
+vortex-antivortex pairs. Usually Ds ðTÞ decreases with
+increasing temperature, so the transition temperature T c
+is always lower than ½πℏ2 Ds ð0Þ=8e2 kB . Thus a small Ds at
+zero temperature leads to a low transition temperature.
+
+167002-1
+
+© 2020 American Physical Society
+
+PHYSICAL REVIEW LETTERS 124, 167002 (2020)
+In experiments, Ds is related with ac conductance σðωÞ
+[50], which can be measured by the time-domain transmission spectroscopy without any contact with the sample
+[51]. For example, at zero temperature, the stiffness
+temperature of Bi2 Sr2 CaCu2 O8þδ is measured to be
+T θ ¼ 55 K, and the corresponding superfluid weight is
+Ds ¼ e2 kB T θ =ℏ2 ¼ 1.8 × 109 H−1 [47]. As another example, the superfluid weight of MoGe thin film is measured to
+be Ds ¼ 5 × 108 H−1 [52].
+In Landau-Ginzburg (LG) theory of conventional superconductivity, the superfluid weight is given by Ds ≈
+e2 ns =m where m is the band effective mass and ns is
+the superfluid density which is temperature dependent
+[46,53]. If the band is exactly flat, m will become infinity,
+and LG theory tells us the superfluid weight can be zero
+even when Cooper pairing happens. We use the BistritzerMacDonald (BM) model [3] to estimate the bandwidth and
+the conventional contribution of superfluid weight in
+TBLG. In the magic angle BM model, a lattice relaxation
+(around 0.8 ∼ 0.9 in reality [54]) is needed for the flat
+bands to be gapped from the higher bands, so that the
+topology of the flat bands is well defined [26,28]. Around
+the magic angle, the flat bands mostly lie in an energy
+range jεj < W ≈ 0.5 meV [50]. Hence the effective
+mass is approximately m ≈ ℏ2 K 2M =2W, where K M is the
+distance between Γ and K in Moiré BZ. Thus the conventional superfluid
+weight is ½Ds tri ≈ e2 ns =m ≈ 2e2 WN=
+p
+ﬃﬃ
+ﬃ
+ℏ2 Ωc K 2M ¼ 3 3e2 WN=4π 2 ℏ2 , where Ωc is the area of the
+Moiré unit cell, and N is the number of electrons per Moiré
+unit cell. Here we assume that the superfluid density is
+given by the total electron density, which is the upper limit
+of ns . As an order-of-magnitude estimation, we take ν ¼
+1=4 or equivalently N ¼ 2 [55], the value of superfluid
+weight will be ½Ds tri ≈ 5 × 107 H−1 , and the corresponding
+BKT transition temperature will not be higher than 0.6 K.
+However, LG theory is valid only when the band is trivial,
+as the spreading of its Wannier function has a nonzero
+lower bound, therefore the estimation based on LG theory
+in this paragraph is not enough [1,56,57]. As a result, we
+show that even in the exactly flat band limit, as long as the
+Wannier functions of the flat bands have some overlap, the
+Cooper pairing may acquire nonlocal phase correlations
+and thus a nonzero superfluid weight, which will give rise
+to a higher transition temperature.
+To obtain the contribution of nontrivial band topology
+to the superfluid weight, we consider a mean-field
+Bogoliubov-de-Gennes (BdG) Hamiltonian:
+
+
+ΔðkÞ
+1 X † HðkÞ − μ
+HBdG ¼
+Ψk
+Ψk
+2 k
+Δ† ðkÞ
+−H ð−kÞ þ μ
+1X
+þ
+Tr½HðkÞ − μ:
+ð2Þ
+2 k
+We use Ω0 to denote the ground state energy of HBdG ,
+which is also the free energy at zero temperature. We
+
+substitute k → k − eA by Peierls substitution [58] when a
+nonzero uniform gauge potential A is turned on, and the
+free energy becomes a function of A. We can then expand
+ΩðAÞ to the second order of Ai and obtain ΩðAÞ≈
+Ω0 þ 12 V½Ds ij Ai Aj , where V is the area of the sample,
+and the second order coefficient ½Ds ij is the superfluid
+weight. The first order derivative ∂ A ΩðAÞ gives us the
+electric current, which agrees with the London equation
+in Eq. (1).
+The free energy ΩðAÞ and thus the superfluid weight can
+be derived from the BdG Hamiltonian. The general
+expression of the superfluid weight was first derived in
+Ref. [1], and can be found in Eqs. (S18), (S19), and (S28) in
+the Supplemental Material [50], Sec. II. The first term in
+Eq. (S18) corresponds to the Landau-Ginzburg contribution, while Eqs. (S19) and (S28) are additional contributions due to the k dependence of the flat band wave
+functions. The convensional contribution vanishes in flat
+bands, but the wave function contributions Eqs. (S19) and
+(S28) still exist, and can be related to the band topology as
+we show below.
+Before we start our discussion about TBLG, we briefly
+review the superconductivity in the spin Chern insulator
+with exactly flat bands studied in Ref. [1]. In this model,
+HðkÞ has both spinful time reversal symmetry and sz
+conservation, which allows one to define a spin Chern
+number C. The order parameter ΔðkÞ ¼ isy Δ (in which sy
+is the y direction spin Pauli matrix) is momentum independent, and one can show that the superfluid weight given
+by sum of Eqs. (S18), (S19), and (S28) can be reduced to
+the following integral in the BZ:
+½Ds ij ¼
+
+8e2 Δ pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+νð1 − νÞ
+ℏ2
+
+Z
+
+d2 k
+gij ðkÞ;
+ð2πÞ2
+
+ð3Þ
+
+where ν is the filling ratio of the spinful flat bands, and
+gij ðkÞ is the Fubini-Study metric evaluated from the Bloch
+wave function of the spin ↑ flat band:
+1
+gij ðkÞ ¼ ½∂ ki u† ðkÞ∂ kj uðkÞ þ ∂ kj u† ðkÞ∂ ki uðkÞ
+2
+þ u† ðkÞ∂ ki uðkÞu† ðkÞ∂ kj uðkÞ;
+
+ð4Þ
+
+where uðkÞ is the Bloch wave function at momentum k of
+the spin up flat band. The integral of metric can be nonzero
+even for topological trivial flat bands [59].
+The Fubini-Study metric defines a distance on the BZ
+torus: two momentum points are close to each other if their
+wave functions have a large overlap [60]. The integral of
+trg ¼ gxx þ gyy also corresponds to the gauge invariant
+part of the “Wannier function localization functional,”
+which has been studied in detail in previous research
+[61,62]. The metric is also related to Berry curvature through the quantum geometric tensor defined by
+
+167002-2
+
+PHYSICAL REVIEW LETTERS 124, 167002 (2020)
+Gij ¼ ∂ ki u† ðkÞ½1 − uðkÞu† ðkÞ∂ kj uðkÞ. The real part of
+Gij is the metric gij and the imaginary part is the Berry
+curvature. One of the most important properties of Gij is its
+positive definiteness. It can be shown that for arbitrary
+P †
+complex vectors fci g, the inequality
+ij ci Gij cj ≥ 0
+always holds [50]. If we choose cx ¼ 1 and cy ¼ i, we
+will find trg ¼ gxx þ gyy ≥ −F xy ; similarly, we choose
+cx ¼ 1 and cy ¼ −i, and we will obtain trg ≥ F xy .
+Therefore we prove that the metric is bounded by the
+absolute value of curvature trg ≥ jF xy j. From the expression of Ds one can easily notice that trDs is bounded by the
+spin Chern number C. In TBLG, the (spin) Chern number is
+zero, and the system is multiband, likely with more
+complicated pairing symmetry. Hence a new bound or
+limit (if any exists) for the superfluid weight must be
+obtained.
+We first generalize the result of Ref. [1] to multiband
+systems with a more realistic pairing. The free fermion
+Hamiltonian HðkÞ is assumed to be invariant under spinful
+time reversal transformation, which is represented by
+T ¼ U T K, where UT is a real unitary matrix and K is
+complex conjugation operator. We do not (any longer)
+assume momentum independent pairing. HðkÞ is diagonalized by UðkÞ as εk ¼ U † ðkÞHðkÞUðkÞ where εk is a
+diagonal matrix, and we assume that it has N F flat bands at
+same energy. We also assume the band gap between these
+flat bands and any other bands is larger than the bandwidth
+of flat bands, and the interaction between the electrons. In
+the following discussion we use a time reversal symmetric
+pairing between Kramers pairs as follows:
+ΔðkÞ ¼ ½Δ1 Ũk Ũ†k þ Δ2 ð1 − Ũ k Ũ †k ÞU T ;
+
+ð5Þ
+
+in which Δ1;2 ∈ R because of time reversal symmetry. Here
+Ũk ¼ ½u1 ðkÞ; u2 ðkÞ    uN F ðkÞ is the projection of UðkÞ
+into these N F flat bands and ui ðkÞ are the eigenvectors of
+matrix HðkÞ. This ansatz implies that s wave pairing
+happens between Kramers pairs and the pairing strength in
+the flat bands and in all other bands are given by Δ1 and Δ2 ,
+respectively. Therefore we have the following three important assumptions in total: (1) the free fermion Hamiltonian
+with time reversal symmetry has N F flat bands at the same
+energy near the Fermi level; (2) there is a large band gap
+between flat bands and other bands (in TBLG this can be
+satisfied by introducing lattice relaxation, as we mentioned
+earlier); (3) the pairing order parameter satisfies Eq. (5). For
+flat bands with attractive interaction between Kramers
+pairs, the mean field BCS theory is a good approximation
+to the ground state ([50], Sec. VIII). Because of this large
+band gap between flat bands and other bands, we can
+project the BdG Hamiltonian into the flat bands of the free
+fermion model and then derive the superfluid weight. The
+result is given by
+
+
+
+Z 2
+2e2 jΔ1 j
+Δ2 pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+dk
+½Ds ij ¼
+1
+þ
+νð1
+−
+νÞ
+gij ðkÞ
+2
+Δ1
+ℏ
+ð2πÞ2
+
+1
+gij ðkÞ ¼ Tr ð∂ ki Ũ †k ∂ kj Ũ k þ ∂ kj Ũ†k ∂ ki Ũ k Þ
+2
+
+†
+†
+þ ðŨ k ∂ ki Ũk Ũk ∂ kj Ũk Þ ;
+
+ð6Þ
+
+ð7Þ
+
+P F
+in which TrðXÞ ¼ Nn¼1
+ðXnn Þ stands for the trace over all
+the flat band indices. Equation (7) is the generalization of
+Fubini-Study metric in Eq. (4) to multiband systems, which
+is also positive definite [50]. The result in Eq. (3) derived in
+Ref. [1] is a special case of our result in Eq. (6) when the
+time reversal transformation is represented by U T ¼ isy,
+the spin z component is conserved, and Δ ¼ Δ1 ¼ Δ2 .
+We also notice that if we assume ðΔ2 =Δ1 Þ ≤ −1, the
+superfluid weight will become zero, or even a negative
+number. A negative superfluid weight is unphysical,
+denoting that the BCS wave function of such a pairing
+is not a stable ground state. This also indicates that if there
+is no constraint on the order parameter ΔðkÞ, the superfluid
+weight will not be bounded. However we expect a weaker
+pairing strength in the bands which are farther away from
+the Fermi level, or jΔ2 j < jΔ1 j. If the pairing in higher
+bands are much stronger than pairing in the flat bands—a
+physically impossible situation—our projection of the BdG
+Hamiltonian into the flat bands may also become invalid.
+Hence we later set Δ2 ¼ 0 in order to estimate the
+topological contribution of Ds .
+Now we apply Eq. (6) to TBLG, and show that the fragile
+topology of TBLG flat bands yields a finite lower bound of
+the superfluid weight although it has zero spin Chern
+number. The Bistritzer-MacDonald (BM) model [3] has
+C2z T, C2x , and C3z symmetries, in which T stands for the
+spinless time reversal transformation. If all the spins and
+valleys are considered here, we will have well-defined time
+reversal symmetry, although the BM model itself does not.
+The C2z T symmetry is crucial for the flat bands’ topology
+[22,26,28,44]. Because of this symmetry, the two eigenvalues of the non-Abelian Wilson loop have to be complex
+conjugation to each other [26,28]. A winding number can
+be defined by Wilson loop eigenvalues. C2z T symmetry
+gives a constraint not only to the Wilson loop but also to the
+Berry connection and Berry curvature. It can be shown
+[26,28] that the non-Abelian Berry connection and curvature of the two flat bands can always be written as AðkÞ ¼
+−aðkÞσ 2 and F xy ðkÞ ¼ −f xy ðkÞσ 2 under a proper local
+gauge choice on a patch in the Brillouin zone (although a
+global gauge choice which satisfies this condition might
+not exist [63]). In the Supplemental Material [50], Sec. V,
+we prove that the Wilson loop winding number [26], or the
+“Euler class” in Ref. [28] denoted by e2, of the two
+topological bands, which is an integer, is given by the
+integral of f xy over the whole BZ (with Dirac points
+removed from the integral area):
+
+167002-3
+
+PHYSICAL REVIEW LETTERS 124, 167002 (2020)
+1
+e2 ¼
+2π
+
+Z
+
+d2 kf xy :
+
+2
+
+ð8Þ
+
+The wave function of the two flat bands in TBLG (per spin
+per valley—which are good quantum numbers for small
+twist angles) also can be used to define the positive-definite
+non-Abelian quantum geometric tensor Gij (which is a
+2 × 2 complex matrix) and Fubini-Study metric gij ¼
+†
+1
+2
+2 TrðGij þ Gij Þ. For arbitrary complex vectors ci ∈ C ,
+P †
+the inequality ij ci Gij cj ≥ 0 always holds. By choosing
+vectors cx and cy properly [50], we find that the metric is
+bounded by the “Abelian part” f xy of the non-Abelian
+Berry curvature F xy : trg ≥ 2jf xy j. The derivation of band
+topology and metric of the TBLG can be found in the
+Supplemental Material [50], Sec. V.
+In small angle TBLG, all bands are fourfold degenerate
+with respect to spin ↑; ↓ and with respect to original
+graphene valley K, K 0 . The order parameter ansatz in
+Eq. (5) corresponds to the pairing between opposite spins
+and valleys, because time reversal transformation in TBLG
+will flip both spin ↑; ↓ and valley K, K 0 . If we assume no
+pairing in higher bands (Δ1 ¼ Δ; Δ2 ¼ 0), which is physically reasonable, the superfluid weight in the exact flat
+band limit will be the same as the expression shown in
+Eq. (3). However, both the pairing strength and metric have
+different meanings. gij ðkÞ stands for the Fubini-Study
+metric derived from the wave functions of two flat bands
+(with spin ↑ and valley K, all other degenerate spin and
+valley bands have identical contribution to the superfluid
+weight). Also Δ1 is no longer the pairing strength in all the
+bands but only in these flat bands. Because of the two band
+winding number protected by C2z T symmetry, we have a
+new lower bound. The inequality trg > 2jf xy j naturally
+leads to the lower bound of the trace of the superfluid
+pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+2
+weight trDs ≥ 8eπℏΔ2 1 νð1 − νÞ even though the (spin)
+Chern number here vanishes. Here we used the fact that
+the winding number of TBLG flat bands is e2 ¼ 1. Due to
+the C3z symmetry, superfluid weight must be isotropic,
+therefore Ds ¼ 12 tr½Ds ij . Then we can use the following
+equation to estimate the topological contribution of Ds :
+Ds ≈
+
+4e2 Δ1 pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+νð1 − νÞ:
+πℏ2
+
+ð9Þ
+
+From this equation, we find that a nonzero superfluid
+weight is possible even when the bands are exactly flat, as
+long as the Cooper pairing gap is developed (Δ1 ≠ 0). The
+parameter Δ1 can be estimated from the measured T c . The
+filling ratio ν is determined by the carrier density. Below we
+use experimental data to estimate the value of superfluid
+weight at zero temperature [64].
+As previously mentioned, in 2D superconductors, the
+transition temperature T c measured in experiment is the
+Berezinskii-Kosterlitz-Thouless temperature (when phase
+
+Δ 1 (T)
+kB T*c
+
+1
+
+h2 Ds (T)
+e2 kB T*c
+
+0
+
+8 T
+π T*c
+
+Tc
+0.5
+
+1
+
+T/T*c
+
+FIG. 1. The gap function Δ1 ðTÞ and superfluid weight Ds ðTÞ.
+In the flat band limit the BKT temperature is T c ≈ 0.35T c
+when ν ¼ 1=4.
+
+coherence disappears) instead of the BCS mean field
+transition temperature T c ≈ Δ1 =2kB (when Cooper pairing
+vanishes). The BKT transition temperature is given by the
+universal relation ½ℏ2 Ds ðT c Þ=e2 kB T c  ¼ ð8=πÞ [49], and it
+is generically lower than the BCS mean field transition
+temperature T c . To derive the BKT temperature of TBLG in
+the flat band limit, we can generalize the topological
+superfluid weight expression in Eq. (9) to finite temperatures, which however has no simple analytical expression.
+By assuming Δ1 ðTÞ ≈ 2kB T c ð1 − T=T c Þ1=2 [46], we can
+numerically calculate the temperature dependence of the
+superfluid weight. As an example, we have plotted Ds in
+Fig. 1 as a function of T c =T c for filling ratio ν ¼ 1=4 (two
+electrons per Moiré unit cell), from which we find
+T c =T c ¼ 0.35. See the Supplemental Material [50],
+Sec. VII, for more detailed calculations.
+We now estimate the TBLG topological superfluid
+weight Ds at zero temperature. When the bandwidth is
+small (zero), one expects the superfluid weight to be
+dominated by the band topology contribution. The experimental transition temperature [4,5] is T c ¼ 1.5 K, thus the
+order parameter can be estimated to be Δ1 ¼
+2kB T c ≈ 0.74 meV. By using ν ¼ 1=4, the p
+topological
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+2
+2
+superfluid weight is ½Ds top ≈ ð4e Δ1 =πℏ Þ νð1 − νÞ.
+One notices that this is an order of magnitude smaller
+than the superfluid weight in conventional materials, such
+as BSCCO and MoGe [66,67]. However in both cuprates
+and MoGe thin films, the typical carrier density is around
+n ≈ 1014 cm−2 [68] two orders of magnitude larger than
+that in TBLG (where n ≈ 1012 cm−2 ), hence such a superfluid weight is already large for TBLG.
+Moving away from completely flat bands, we find
+that the conventional term in the superfluid weight
+mostly depends on the bandwidth W, while the topological
+term mostly depends on the pairing order parameter Δ1. In
+TBLG, the bandwidth W and the transition temperature T c
+have a similar magnitude, and we expect the topological term to have an important contribution. In the
+strong pairing limit where Δ > W, the superfluid weight
+will be underestimated if by only the conventional
+contribution [34].
+
+167002-4
+
+PHYSICAL REVIEW LETTERS 124, 167002 (2020)
+Recently, superconductivity has been observed in other
+Moiré systems, including twisted double bilayer graphene,
+and multilayer graphene and boron nitride heterostructure
+[69–77]. In these systems, a displacement electric field is
+necessary for superconductivity. This yields gapped flat
+bands with a nonzero valley Chern number [69,74]. The
+Chern number can be larger than one, which could lead to a
+larger topological lower bound of superfluid weight. In
+twisted multilayer graphene, the bandwidth of flat bands is
+even smaller than that in TBLG. A higher transition
+temperature (larger Δ) was also observed [75,76]. We
+expect the topological lower bound plays a significant role
+in the superfluid weight of these systems. Moreover,
+multilayer systems with C2z T symmetry can realize larger
+Euler e2 invariants, hence increasing the superfluid weight.
+In summary, we proved that the fragile topology can
+yield a nonzero superfluid weight which is lower bounded
+by its Wilson loop winding number. We also note that our
+lower bound is consistent with the upper bound studied in
+Ref. [78]. For topological flat bands, the upper bound in
+Ref. [78] is around the energy gap Eg between the flat
+bands and other bands, while our lower bound is proportional to the order parameter Δ, which is derived under the
+assumption that jΔj ≪ Eg . However, all the above discussion is based on superconducting mean field theory.
+Competing order parameters might be able to break
+symmetry which protects the topology, and further break
+the topology-bounded quantities.
+We acknowledge helpful discussion with Nai Phuan
+Ong, Ali Yazdani, Guorui Chen, Sebastiano Peotta, Päivi
+Törmä, Aleksi Julku, and Long Liang. Z. D. S. and B. B. is
+supported by the Department of Energy Grants No. desc0016239 and No. noaawd1004957, Simons Investigator
+Grants No. ONRN00014-14-1-0330, the Packard
+Foundation, the Schmidt Fund for Innovative Research.
+The National Science Foundation EAGER and No. NSFMRSEC DMR-1420541 also supported the work. B. L. is
+supported by Princeton Center for Theoretical Science at
+Princeton University.
+Note added.—Recently, two related works [79,80] also
+appeared on arXiv preprint server, which support our
+conclusion.
+
+*
+
+These authors contributed equally to this work.
+bernevig@princeton.edu
+[1] S. Peotta and P. Törmä, Nat. Commun. 6, 8944 (2015).
+[2] E. Suárez Morell, J. D. Correa, P. Vargas, M. Pacheco, and
+Z. Barticevic, Phys. Rev. B 82, 121407(R) (2010).
+[3] R. Bistritzer and A. H. MacDonald, Proc. Natl. Acad. Sci.
+U.S.A. 108, 12233 (2011).
+[4] Y. Cao, V. Fatemi, S. Fang, K. Watanabe, T. Taniguchi, E.
+Kaxiras, and P. Jarillo-Herrero, Nature (London) 556, 43
+(2018).
+†
+
+[5] M. Yankowitz, S. Chen, H. Polshyn, Y. Zhang, K.
+Watanabe, T. Taniguchi, D. Graf, A. F. Young, and C. R.
+Dean, Science 363, 1059 (2019).
+[6] S. Huang, K. Kim, D. K. Efimkin, T. Lovorn, T. Taniguchi,
+K. Watanabe, A. H. MacDonald, E. Tutuc, and B. J. LeRoy,
+Phys. Rev. Lett. 121, 037702 (2018).
+[7] N. F. Q. Yuan and L. Fu, Phys. Rev. B 98, 045103
+(2018).
+[8] H. C. Po, L. Zou, A. Vishwanath, and T. Senthil, Phys. Rev.
+X 8, 031089 (2018).
+[9] C. Xu and L. Balents, Phys. Rev. Lett. 121, 087001 (2018).
+[10] B. Roy and V. Juričić, Phys. Rev. B 99, 121407(R) (2019).
+[11] J. F. Dodaro, S. A. Kivelson, Y. Schattner, X. Q. Sun, and C.
+Wang, Phys. Rev. B 98, 075154 (2018).
+[12] F. Wu, A. H. MacDonald, and I. Martin, Phys. Rev. Lett.
+121, 257001 (2018).
+[13] H. Isobe, N. F. Q. Yuan, and L. Fu, Phys. Rev. X 8, 041041
+(2018).
+[14] T. Huang, L. Zhang, and T. Ma, Sci. Bull. 64, 310 (2019).
+[15] Y.-Z. You and A. Vishwanath, npj Quantum Mater. 4, 16
+(2019).
+[16] X.-C. Wu, K. A. Pawlak, C.-M. Jian, and C. Xu, arXiv:
+1805.06906.
+[17] J. Kang and O. Vafek, Phys. Rev. X 8, 031088 (2018).
+[18] D. M. Kennes, J. Lischner, and C. Karrasch, Phys. Rev. B
+98, 241407(R) (2018).
+[19] F. Guinea and N. R. Walet, Proc. Natl. Acad. Sci. U.S.A.
+115, 13174 (2018).
+[20] T. J. Peltonen, R. Ojajärvi, and T. T. Heikkilä, Phys. Rev. B
+98, 220504(R) (2018).
+[21] M. Fidrysiak, M. Zegrodnik, and J. Spałek, Phys. Rev. B 98,
+085436 (2018).
+[22] L. Zou, H. C. Po, A. Vishwanath, and T. Senthil, Phys. Rev.
+B 98, 085435 (2018).
+[23] J. González and T. Stauber, Phys. Rev. Lett. 122, 026801
+(2019).
+[24] Y. Su and S.-Z. Lin, Phys. Rev. B 98, 195101 (2018).
+[25] H. Guo, X. Zhu, S. Feng, and R. T. Scalettar, Phys. Rev. B
+97, 235453 (2018).
+[26] Z. Song, Z. Wang, W. Shi, G. Li, C. Fang, and B. A.
+Bernevig, Phys. Rev. Lett. 123, 036401 (2019).
+[27] H. C. Po, L. Zou, T. Senthil, and A. Vishwanath, Phys. Rev.
+B 99, 195455 (2019).
+[28] J. Ahn, S. Park, and B.-J. Yang, Phys. Rev. X 9, 021013
+(2019).
+[29] K. Hejazi, C. Liu, H. Shapourian, X. Chen, and L. Balents,
+Phys. Rev. B 99, 035111 (2019).
+[30] E. Laksono, J. N. Leaw, A. Reaves, M. Singh, X. Wang, S.
+Adam, and X. Gu, Solid State Commun. 282, 38 (2018).
+[31] G. Tarnopolsky, A. J. Kruchkov, and A. Vishwanath, Phys.
+Rev. Lett. 122, 106405 (2019).
+[32] J. W. F. Venderbos and R. M. Fernandes, Phys. Rev. B 98,
+245103 (2018).
+[33] L. Chen, H.-Z. Li, and R.-S. Han, J. Phys. Condens. Matter
+31, 065601 (2018).
+[34] T. Stauber, T. Low, and G. Gómez-Santos, Phys. Rev. B 98,
+195414 (2018).
+[35] Y. W. Choi and H. J. Choi, Phys. Rev. B 98, 241412(R)
+(2018).
+[36] C.-M. Jian and C. Xu, arXiv:1810.03610.
+
+167002-5
+
+PHYSICAL REVIEW LETTERS 124, 167002 (2020)
+[37] V. Kozii, H. Isobe, J. W. F. Venderbos, and L. Fu, Phys. Rev.
+B 99, 144507 (2019).
+[38] J. Kang and O. Vafek, Phys. Rev. Lett. 122, 246401 (2019).
+[39] X.-C. Wu, C.-M. Jian, and C. Xu, Phys. Rev. B 99, 161405
+(R) (2019).
+[40] F. Wu, E. Hwang, and S. Das Sarma, Phys. Rev. B 99,
+165112 (2019).
+[41] J. Liu, J. Liu, and X. Dai, Phys. Rev. B 99, 155415 (2019).
+[42] B. Lian, Z. Wang, and B. A. Bernevig, Phys. Rev. Lett. 122,
+257002 (2019).
+[43] H. Polshyn, M. Yankowitz, S. Chen, Y. Zhang, K.
+Watanabe, T. Taniguchi, C. R. Dean, and A. F. Young,
+Nat. Phys. 15, 1011 (2019).
+[44] H. C. Po, H. Watanabe, and A. Vishwanath, Phys. Rev. Lett.
+121, 126402 (2018).
+[45] B. Lian, F. Xie, and B. A. Bernevig, arXiv:1811.11786.
+[46] M. Tinkham, Introduction to Superconductivity (McGrawHill Book Co., New York, 1975).
+[47] J. Corson, R. Mallozzi, J. Orenstein, J. Eckstein, and I.
+Bozovic, Nature (London) 398, 221 (1999).
+[48] V. L. Berezinsky, Zh. Eksp. Teor. Fiz. 59, 907 (1971)
+[Sov. Phys. JETP 32, 493 (1971)], http://www.jetp.ac.ru/
+cgi-bin/dn/e_032_03_0493.pdf.
+[49] J. M. Kosterlitz and D. J. Thouless, J. Phys. C 6, 1181
+(1973).
+[50] See the Supplemental Material at http://link.aps.org/
+supplemental/10.1103/PhysRevLett.124.167002 for more
+discussion about the definition and derivation of the superfluid weight, the band structure and topology of TBLG. The
+properties of Fubini-Study metric, and the proof of the
+relevant inequalities are also included.
+[51] G. Grüner and C. Dahl, Millimeter and Submillimeter Wave
+Spectroscopy of Solids (Springer-Verlag, Berlin Heidelberg,
+1998), Vol. 200.
+[52] S. Misra, L. Urban, M. Kim, G. Sambandamurthy, and A.
+Yazdani, Phys. Rev. Lett. 110, 037002 (2013).
+[53] D. J. Scalapino, S. R. White, and S. C. Zhang, Phys. Rev.
+Lett. 68, 2830 (1992).
+[54] S. Carr, S. Fang, Z. Zhu, and E. Kaxiras, Phys. Rev.
+Research 1, 013001 (2019).
+[55] From the result of experiment we know the system is in
+insulating phase when ν ¼ 1=4, however it is observed that
+superconducting phases appear below and above the insulating phase. As an order-of-magnitude estimation, taking
+ν ¼ 1=4 will be good enough.
+[56] M. Tovmasyan, S. Peotta, P. Törmä, and S. D. Huber, Phys.
+Rev. B 94, 245149 (2016).
+[57] S. D. Huber and E. Altman, Phys. Rev. B 82, 184502
+(2010).
+[58] J. M. Luttinger, Phys. Rev. 84, 814 (1951).
+[59] For example, the “topological phase” of SSH model. The
+“topological” phase of SSH model is trivial because it has
+
+maximally localized Wannier state, and once the Wannier
+functions are extended, the superfluid weight can be nonzero.
+[60] R. Cheng, arXiv:1012.1337.
+[61] N. Marzari and D. Vanderbilt, Phys. Rev. B 56, 12847
+(1997).
+[62] N. Marzari, A. A. Mostofi, J. R. Yates, I. Souza, and D.
+Vanderbilt, Rev. Mod. Phys. 84, 1419 (2012).
+[63] The transformation gk can transform AðkÞ into −aðkÞσ 2 .
+However we notice it is not a single value function of k. It
+changes the sign when it goes around a Dirac point.
+[64] The validity of BCS mean field method is discussed in the
+Supplemental Material [50], Sec. VIII, which includes
+Ref. [65].
+[65] I. B. Spielman, J. P. Eisenstein, L. N. Pfeiffer, and K. W.
+West, Phys. Rev. Lett. 84, 5808 (2000).
+[66] V. Emery and S. Kivelson, Nature (London) 374, 434
+(1995).
+[67] D. Basov and A. V. Chubukov, Nat. Phys. 7, 272
+(2011).
+[68] Y. J. Uemura et al., Phys. Rev. Lett. 62, 2317 (1989).
+[69] Y.-H. Zhang, D. Mao, Y. Cao, P. Jarillo-Herrero, and T.
+Senthil, Phys. Rev. B 99, 075127 (2019).
+[70] Y.-H. Zhang and T. Senthil, Phys. Rev. B 99, 205150
+(2019).
+[71] G. Chen, L. Jiang, S. Wu, B. Lyu, H. Li, B. L. Chittari, K.
+Watanabe, T. Taniguchi, Z. Shi, J. Jung et al., Nat. Phys. 15,
+237 (2019).
+[72] S. Moriyama, Y. Morita, K. Komatsu, K. Endo, T. Iwasaki,
+S. Nakaharai, Y. Noguchi, Y. Wakayama, E. Watanabe, D.
+Tsuya, K. Watanabe, and T. Taniguchi, arXiv:1901.09356.
+[73] G. Chen, A. L. Sharpe, P. Gallagher, I. T. Rosen, E. J. Fox,
+L. Jiang, B. Lyu, H. Li, K. Watanabe, T. Taniguchi et al.,
+Nature (London) 572, 215 (2019).
+[74] B. L. Chittari, G. Chen, Y. Zhang, F. Wang, and J. Jung,
+Phys. Rev. Lett. 122, 016401 (2019).
+[75] C. Shen, N. Li, S. Wang, Y. Zhao, J. Tang, J. Liu, J. Tian, Y.
+Chu, K. Watanabe, T. Taniguchi, R. Yang, Z. Y. Meng, D.
+Shi, and G. Zhang, arXiv:1903.06952.
+[76] X. Liu, Z. Hao, E. Khalaf, J. Y. Lee, K. Watanabe, T.
+Taniguchi, A. Vishwanath, and P. Kim, arXiv:1903.08130.
+[77] K. Endo, K. Komatsu, T. Iwasaki, E. Watanabe, D. Tsuya,
+K. Watanabe, T. Taniguchi, Y. Noguchi, Y. Wakayama, Y.
+Morita, and S. Moriyama, Appl. Phys. Lett. 114, 243105
+(2019).
+[78] T. Hazra, N. Verma, and M. Randeria, Phys. Rev. X 9,
+031049 (2019).
+[79] X. Hu, T. Hyart, D. I. Pikulin, and E. Rossi, Phys. Rev. Lett.
+123, 237002 (2019).
+[80] A. Julku, T. J. Peltonen, L. Liang, T. T. Heikkilä, and P.
+Törmä, Phys. Rev. B 101, 060505 (2020).
+
+167002-6
+
+

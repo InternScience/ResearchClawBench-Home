@@ -1,0 +1,150 @@
+{
+  "top_predictions": [
+    {
+      "predicted_cluster": "Ni13@Cu12",
+      "delta": 0.032,
+      "predicted_category": "MC",
+      "stability_score": 0.968
+    },
+    {
+      "predicted_cluster": "K13@Rb12",
+      "delta": 0.093,
+      "predicted_category": "BG",
+      "stability_score": 0.907
+    },
+    {
+      "predicted_cluster": "Cu13@Ag12",
+      "delta": 0.125,
+      "predicted_category": "Ch1",
+      "stability_score": 0.875
+    },
+    {
+      "predicted_cluster": "Na13@K12",
+      "delta": 0.22,
+      "predicted_category": "Ch2",
+      "stability_score": 0.78
+    },
+    {
+      "predicted_cluster": "Ag13@Cs42",
+      "delta": 0.84,
+      "predicted_category": "off-window",
+      "stability_score": 0.242
+    },
+    {
+      "predicted_cluster": "Ni13@K42",
+      "delta": 0.831,
+      "predicted_category": "off-window",
+      "stability_score": 0.24
+    },
+    {
+      "predicted_cluster": "Rb13@Cs12",
+      "delta": 0.069,
+      "predicted_category": "off-window",
+      "stability_score": 0.233
+    },
+    {
+      "predicted_cluster": "Cu13@Rb42",
+      "delta": 0.938,
+      "predicted_category": "off-window",
+      "stability_score": 0.233
+    },
+    {
+      "predicted_cluster": "Cu13@K42",
+      "delta": 0.773,
+      "predicted_category": "off-window",
+      "stability_score": 0.226
+    },
+    {
+      "predicted_cluster": "Ni13@Rb42",
+      "delta": 1.0,
+      "predicted_category": "off-window",
+      "stability_score": 0.218
+    }
+  ],
+  "validated_clusters": [
+    {
+      "cluster": "Na13@Rb32",
+      "core": "Na",
+      "outer": "Rb",
+      "shell1": "MC",
+      "shell2": "Ch1",
+      "delta": 0.333,
+      "predicted_category": "off-window",
+      "outer_shell_atoms": 12.0,
+      "predicted_cluster": "Na13@Rb12"
+    },
+    {
+      "cluster": "K13@Cs42",
+      "core": "K",
+      "outer": "Cs",
+      "shell1": "MC",
+      "shell2": "Ch2",
+      "delta": 0.167,
+      "predicted_category": "off-window",
+      "outer_shell_atoms": 12.0,
+      "predicted_cluster": "K13@Cs12"
+    },
+    {
+      "cluster": "Ag13@Cu45",
+      "core": "Ag",
+      "outer": "Cu",
+      "shell1": "MC",
+      "shell2": "Ch1",
+      "delta": NaN,
+      "predicted_category": NaN,
+      "outer_shell_atoms": NaN,
+      "predicted_cluster": NaN
+    }
+  ],
+  "experimental_rmse": 0.00441588043316392,
+  "path_probabilities": [
+    {
+      "path": "Conservative path",
+      "probability": 0.5416666666666666
+    },
+    {
+      "path": "Mismatch-driven path",
+      "probability": 0.20833333333333334
+    },
+    {
+      "path": "Random path",
+      "probability": 0.08333333333333333
+    },
+    {
+      "path": "Reverse step",
+      "probability": 0.16666666666666666
+    }
+  ],
+  "energy_table": [
+    {
+      "shell_index": 1,
+      "category": "MC",
+      "energy": 0.0
+    },
+    {
+      "shell_index": 2,
+      "category": "MC",
+      "energy": -2.35
+    },
+    {
+      "shell_index": 2,
+      "category": "Ch1",
+      "energy": -2.15
+    },
+    {
+      "shell_index": 3,
+      "category": "MC",
+      "energy": -4.82
+    },
+    {
+      "shell_index": 3,
+      "category": "Ch1",
+      "energy": -4.61
+    },
+    {
+      "shell_index": 3,
+      "category": "BG",
+      "energy": -4.55
+    }
+  ]
+}

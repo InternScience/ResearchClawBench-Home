@@ -1,0 +1,3171 @@
+Constraining Early Dark Energy with Large-Scale Structure
+Mikhail M. Ivanov,1, 2 Evan McDonough,3 J. Colin Hill,4, 5 Marko Simonović,6
+Michael W. Toomey,7 Stephon Alexander,7 and Matias Zaldarriaga8
+
+arXiv:2006.11235v2 [astro-ph.CO] 7 Oct 2020
+
+1
+
+Center for Cosmology and Particle Physics, Department of Physics, New York University,
+New York, NY 10003, USA
+2
+Institute for Nuclear Research of the Russian Academy of Sciences,
+60th October Anniversary Prospect, 7a, 117312 Moscow, Russia
+3
+Center for Theoretical Physics, Massachusetts Institute of Technology,
+Cambridge, MA 02139, USA
+4
+Department of Physics, Columbia University, New York, NY, USA 10027
+5
+Center for Computational Astrophysics, Flatiron Institute, New York, NY, USA 10010
+6
+Theoretical Physics Department, CERN,
+1 Esplanade des Particules, Geneva 23, CH-1211, Switzerland
+7
+Brown Theoretical Physics Center and Department of Physics,
+Brown University, Providence, RI 02912, USA
+8
+School of Natural Sciences, Institute for Advanced Study,
+1 Einstein Drive, Princeton, NJ 08540, USA
+
+An axion-like field comprising ∼ 10% of the energy density of the universe near matter-radiation
+equality is a candidate to resolve the Hubble tension; this is the “early dark energy” (EDE) model.
+However, as shown in Hill et al. (2020) [1], the model fails to simultaneously resolve the Hubble
+tension and maintain a good fit to both cosmic microwave background (CMB) and large-scale
+structure (LSS) data. Here, we use redshift-space galaxy clustering data to sharpen constraints on
+the EDE model. We perform the first EDE analysis using the full-shape power spectrum likelihood
+from the Baryon Oscillation Spectroscopic Survey (BOSS), based on the effective field theory (EFT)
+of LSS. The inclusion of this likelihood in the EDE analysis yields a 25% tighter error bar on H0
+compared to primary CMB data alone, yielding H0 = 68.54+0.52
+−0.95 km/s/Mpc (68% CL). In addition,
+we constrain the maximum fractional energy density contribution of the EDE to fEDE < 0.072
+(95% CL). We explicitly demonstrate that the EFT BOSS likelihood yields much stronger constraints
+on EDE than the standard BOSS likelihood. Including further information from photometric LSS
+surveys,the constraints narrow by an additional 20%, yielding H0 = 68.73+0.42
+−0.69 km/s/Mpc (68% CL)
+and fEDE < 0.053 (95% CL). These bounds are obtained without including local-universe H0 data,
+which is in strong tension with the CMB and LSS, even in the EDE model. We also refute claims that
+MCMC analyses of EDE that omit SH0ES from the combined dataset yield misleading posteriors.
+Finally, we show that upcoming Euclid/DESI-like spectroscopic galaxy surveys will greatly improve
+the EDE constraints. We conclude that current data preclude the EDE model as a resolution of the
+Hubble tension, and that future LSS surveys can close the remaining parameter space of this model.
+
+I.
+
+INTRODUCTION
+
+The persistent and growing discrepancy in the value
+of the Hubble constant, H0 , inferred from different observations [2], if taken at face value, presents a serious challenge to the standard cosmological model. This
+tension is conventionally viewed as that between the
+value inferred from the cosmic microwave background
+(CMB) [3] and the SH0ES measurement of the classical distance ladder utilizing Type Ia supernovae (SNIa)
+at cosmological redshifts [4]. Indeed, the Planck 2018
+CMB and the SH0ES measurements of H0 disagree at
+4.4σ statistical significance, with the two given by H0 =
+67.37±0.54 km/s/Mpc and H0 = 74.03±1.42 km/s/Mpc
+for Planck [3] and SH0ES [4], respectively. More recently
+it has become apparent that the H0 tension is not restricted to the CMB vs. SH0ES, but on the contrary,
+ranges from 4-6σ significance for a large array of differing
+data sets and data set combinations [2], which are commonly split in two categories: early-universe and late-
+
+universe measurements.1
+There are several local or late-universe measurements
+that all lead to values of H0 consistent with SH0ES.
+For instance, the Cepheids utilized for calibration of
+the cosmic distance ladder by SH0ES can be replaced
+with Miras, variable red giant stars, leading to H0 =
+73.3 ± 3.9 km/s/Mpc [5], or traded for the “tip of the red
+giant branch” in the Hertzsprung-Russell diagram, which
+yields a somewhat lower value H0 = 69.6±1.9 km/s/Mpc
+[6]. Alternatively, local measurements can be performed
+in a variety of ways that are independent of the cosmic distance ladder, e.g., through the measurement of
+
+1 This nomenclature can be somewhat misleading, since some of
+
+the measurements of H0 that entirely rely on the late-universe
+datasets would be classified as early-universe measurements. A
+more meaningful distinction is between the direct (or local) measurements of H0 such as SH0ES, versus indirect (or global) measurements obtained from a fit of ΛCDM or any other model to
+cosmological data such as the CMB or galaxy clustering, regardless of the redshift of these datasets.
+
+2
+time delays in strongly lensed quasar systems, which
++1.7
+yields H0 = 73.3−1.8
+km/s/Mpc [7],2 through very-longbaseline interferometry observations of water masers orbiting supermassive black holes, which yields H0 = 73.9±
+3.0 km/s/Mpc [11], and through gravitational waves from
+merging binary neutron stars [12, 13].
+On the other side, there are several cosmological measurements of H0 that can be made at low redshifts and
+independently of the CMB anisotropy data. This is
+done by combining various large-scale structure (LSS)
+observations with a prior on the baryon density ωb inferred from Big Bang nucleosynthesis (BBN) [14]. One
+such measurement comes from the baryon acoustic oscillation (BAO) experiments, such as the Baryon Oscillation Spectroscopic Survey (BOSS). Measurements of
+the BAO scale for galaxies and the Lyα forest [15], together with the BBN prior, lead to H0 = 67.6 ± 1.1
+km/s/Mpc [16–18]. Similarly, the combination of Dark
+Energy Survey (DES) [19] data and BOSS BAO data
+gives H0 = 67.4+1.1
+−1.2 km/s/Mpc [20]. Measurements of
+the Hubble constant from galaxy clustering alone (without the Lyα data) can also be done using the full shape
+(FS) of the galaxy power spectrum [21–24]. In particular, the joint FS+BAO data from BOSS yields H0 =
+68.6 ± 1.1 km/s/Mpc [24], in excellent agreement with
+the CMB result.
+In all these measurements, standard early-universe
+physics is assumed, such that the sound horizon rs is
+a fixed function of the ΛCDM cosmological parameters.
+On the other hand, the angular scale of the sound horizon, θs , is measured to a very high precision of 0.03%
+by the CMB data [3]. This renders any sizeable shift in
+H0 , such as that necessary to resolve the tension with
+SH0ES, incompatible with data, unless new physics is
+introduced in the early universe so as to change rs (and
+H0 ) while keeping the angular scale θs fixed. Such early
+universe solutions to the tension have been advocated in,
+e.g., [25]; a prototypical model realization goes by the
+name “early dark energy” (EDE) [26]. Many EDE-like
+models have been proposed, both in the context of the
+H0 tension [26–34] and other areas of cosmological phenomenology (e.g., [35–37]).
+In the EDE scenario one postulates an additional dynamical scalar field, which behaves like dark energy until
+a critical time near matter-radiation equality, at which
+point its energy density rapidly decays. The increased
+energy density at early times serves to decrease the comoving sound horizon, such that an increased H0 can be
+accommodated while keeping θs fixed. This comprises
+a 3-parameter extension to ΛCDM, defined by a critical
+
+2 However, some concerns about unaccounted systematics in lens-
+
+ing time-delay measurements have been raised, for instance
+in [8, 9]; indeed, the latest strong-lensing analyses, after accounting for these systematics, have now found a lower value
+of H0 with significantly increased error bars, H0 = 67.4+4.1
+−3.2
+km/s/Mpc [10].
+
+redshift zc , the peak EDE energy density fraction of the
+universe fEDE , and the initial value of the scalar field,
+denoted by the dimensionless quantity θi (analogous to
+the axion misalignment angle [38–40]).3 Remarkably, the
+EDE model allows for values of H0 in near-agreement
+with SH0ES whilst leaving the fit to the CMB spectra
+nearly unchanged from that in ΛCDM.
+However, the EDE scenario begins to falter when confronted with LSS data [1]. While the EDE field does not
+directly impact the formation of structure at late times
+(due to its rapid decay around matter-radiation equality), the accompanying shifts in the standard ΛCDM parameters, necessary to retain the fit to CMB data, become clearly detectable thanks to the breaking of various degeneracies when combining CMB and LSS data.
+In addition to CMB lensing, BOSS BAO, and BOSS
+redshift-space distortion (RSD) data, the analysis of [1]
+included the DES-Y1 data [19] and the weak gravitational lensing measurements from KiDS+VIKING-450
+(KV-450) [41, 42] and the Subaru Hyper Suprime-Cam
+(HSC) [43]. If these additional LSS data are included,
+the evidence for EDE is below 2σ, even when SH0ES
+is included in the analysis [1]. This indicates that the
+SH0ES measurement remains an outlier in the EDE scenario, just as in ΛCDM. Indeed, if SH0ES is removed
+from the combined data set and all LSS data is included
+(“walking barefoot”, Sec. VI.E of [1]), one finds an upper bound fEDE < 0.053 at 95% CL, well below the value
+claimed to resolve the Hubble tension, fEDE ' 0.107 [27].
+One caveat behind this result is that the “compressed”
+BOSS RSD likelihood used in the “walking barefoot”
+analysis of [1] was derived implicitly assuming standard
+early-universe physics and fixed-shape template for the
+galaxy power spectrum. In the official BOSS data analysis this is implemented through the so-called “shape priors”, fixing the physical cold dark matter and baryon
+densities ωcdm and ωb to the best-fit Planck values obtained from the cosmological analysis within ΛCDM [44,
+45]. Even though this method is referred to in the literature as the full-shape BOSS analysis, we stress that no
+power spectrum shape information is used in this procedure. Therefore, one may wonder to what extent the use
+of such a ΛCDM-based and fixed-shape likelihood may
+have impacted the conclusions of previous analyses for
+the EDE model [1, 26–28, 46]. Addressing this question
+is one of the main goals of this paper.4
+
+3 An additional fourth parameter, n, denoting an exponent of the
+
+scalar field potential V ∝ (1 − cos θ)n , can be included, and is
+only weakly constrained; the best-fit integer value is n = 3 [27].
+4 One may be concerned that some implicit early-universe assumptions may also impact the BAO measurements. However, in contrast to the RSD, the BAO measurements by construction are
+largely unaffected by assumptions about cosmology. First, the
+use of the Alcock-Paczynski scaling parameters [47] to extract
+the BAO frequency from the 3-dimensional galaxy distribution is
+accurate if the Universe has a local Friedman-Robertson-Walker
+geometry (see, e.g., Refs. [48–50]), which clearly holds true in the
+
+3
+To that end, we repeat the analysis of [1] using a
+new BOSS likelihood which: (a) is tailored for the
+EDE model (i.e., no implicit ΛCDM-based assumptions
+are made), (b) has all relevant cosmological parameters varied, and (c) uses the full shape of the redshiftspace galaxy power spectrum, going beyond the simplified f σ8 +BAO parametrization. This analysis has been
+made possible by virtue of recent progress in LSS theory.
+First, the consistent formulation of perturbation theory
+has been finalized in the form of the Effective Field Theory (EFT) of LSS (see [21, 22] and references therein).
+Various ingredients of this approach (e.g., UV counterterms and IR resummation) have been independently derived in many different setups. Second, there was significant improvement in numerical methods, which allowed one to build extensions of standard Boltzmann
+codes that consistently calculate the nonlinear galaxy
+clustering observables as a function of cosmological parameters [52, 53].5 Exploiting all these results, we show
+that the shape information in the galaxy power spectrum
+is important and that the new BOSS likelihood used in
+our analysis indeed leads to much stronger constraints on
+EDE compared to the standard BOSS likelihood.
+With these new results for the combined analysis of
+Planck and BOSS in hand, we turn to the question of how
+much additional information on EDE can be extracted
+from photometric weak lensing surveys. As justified in
+Ref. [1], we implement this extra information through a
+0.5
+prior on S8 ≡ σ8 (Ωm /0.3) and show that current data
+from DES, KV-450, and HSC tighten the upper bound on
+fEDE even further, and lead to sharper constraints on H0 .
+Finally, with an eye towards Euclid [58] and the Dark Energy Spectroscopic Instrument (DESI) [59], we perform
+an EDE sensitivity forecast for upcoming spectroscopic
+galaxy surveys and show that they have the potential to
+definitively rule out the EDE model as a resolution to
+the Hubble tension.
+The structure of this paper is as follows. In Sec. II
+we review the EDE proposal, and in Sec. III detail
+its imprint on LSS, in particular as it pertains to the
+BOSS data. In Sec. IV we present the constraints on
+EDE from current data, namely Planck 2018, BOSS fullshape+BAO, and an S8 prior corresponding to the measurements of DES, KV-450, and HSC. In Sec. V we perform an EDE sensitivity forecast for Euclid. We close
+
+EDE model. Second, the BAO frequency can be extracted from
+the post-reconstruction position space correlation function (or
+the power spectrum) by fitting the BAO peak (or Fourier-space
+BAO wiggles) with a simple Gaussian (or harmonic) template,
+which does not rely on any cosmology-specific information. Thus,
+the BAO measurements would not be biased even if a reasonable
+cosmology-dependent fiducial template were used [51].
+5 These tools have already been successfully used to constrain the
+base ΛCDM model using the BOSS data [21, 22], verified in a
+blind simulation challenge [54], and applied to various extensions
+of the ΛCDM model, including massive neutrinos [55–57], varying number of relativistic degrees of freedom [57], and dynamical
+dark energy [21, 52].
+
+in Sec. VI with a discussion of the implications for the
+H0 tension, and directions for future work. Additional
+results are collected in the appendices.
+II.
+
+THE EARLY DARK ENERGY PROPOSAL
+
+The EDE scenario aims to increase the expansion rate
+in the early universe prior to recombination, while leaving the physics of the late universe unchanged. This is
+done in such a way as to not degrade the fit to CMB
+temperature and polarization data relative to ΛCDM.
+The increased expansion rate serves to reduce the comoving sound horizon at last scattering,
+Z ∞
+dz
+rs (z∗ ) =
+cs (z),
+(1)
+z∗ H(z)
+where z∗ is the redshift of last scattering, such that an increased present-day expansion rate H0 , as encoded in the
+comoving angular diameter distance to last scattering,
+Z z∗
+dz
+DA (z∗ ) =
+,
+(2)
+H(z)
+0
+can be accommodated without changing the angular
+scale of the sound horizon,
+θs =
+
+rs (z∗ )
+,
+DA (z∗ )
+
+(3)
+
+which is measured to 0.03% precision by the Planck 2018
+CMB data [3].
+Particle physics realizations of this scenario are
+strongly constrained by simple considerations of Eqs. (1),
+(2), and (3). The sound horizon at last scattering in
+Eq. (1) is dominated by contributions near the lower
+bound of the integral, and thus is primarily sensitive to
+the evolution of H(z) at times shortly before recombination. In addition, the magnitude of the Hubble tension
+(≈ 10%) implies via Eqs. (2) and (3) that the increase in
+the expansion rate just prior to recombination must also
+be of order 10%. Translated into natural units, this implies an energy density ∼ eV, three orders of magnitude
+larger than the present-day vacuum energy density, must
+be present when the Hubble parameter was H ∼ 10−28
+eV. The final piece of the EDE scenario is that this extra
+energy density must rapidly decay after last-scattering,
+so as not to directly impact the formation of structure at
+late times.
+The requisite dynamics can be straightforwardly realized in scalar field models. From the equation of motion
+of a canonical massive scalar field in an expanding universe,
+φ̈ + 3H φ̇ + m2 φ = 0,
+
+(4)
+
+one may appreciate two distinct regimes of dynamics: if
+m  H, the above has an approximate solution φ = φi
+with φi a constant. The energy density of the scalar
+
+4
+
+0.12
+
+this minimum has an equation of state [63],
+wφ =
+
+0.10
+
+fEDE(z)
+
+0.08
+0.06
+0.04
+0.02
+0.00 1
+10
+
+102
+
+103
+
+z
+
+104
+
+105
+
+FIG. 1. Fraction of the cosmic energy density in the EDE
+field as a function of redshift, for the parameters in Eq. (7).
+
+field is dominated by the potential energy, V = m2 φ2i /2,
+and hence gravitates as dark energy. In the opposite
+limit, m  H, the field undergoes damped oscillations,
+φ ' φi a−3/2 cos mt, and the energy density redshifts like
+matter, ρ ∝ a−3 .
+In a ΛCDM universe, the boundary of these asymptotic regimes, m ' H, sets the time of decay of the ‘early
+dark energy’ stored in the φ field. In order to play a
+role in addressing the Hubble tension, the requisite timing of the decay thus demands that the scalar field be
+extremely light, m ∼ 10−28 eV. In the context of particle
+physics, the only model construction of such a light field
+is the axion [60–62], which obtains a mass only through a
+periodic potential V ∼ m2 f 2 cos φ/f generated by nonperturbative effects.
+On the other hand, the EDE field must decay as fast or
+faster than radiation, while in the simple example above,
+its energy density redshifts as matter. To simultaneously achieve this aspect, one may generalize the model
+to include multiple fields or new decay channels. For example, the EDE may be converted into kinetic energy
+[29, 30], gravitational waves [32], relativistic particles
+[33], or gauge fields [34], among other possibilities.
+A well-studied possibility is to generalize the axion potential to include higher-order harmonics. The proposal
+of [26] is to consider a single scalar field with potential
+(see also [35]),
+V = V0 (1 − cos(φ/f ))
+
+n
+
+, V0 ≡ m2 f 2 .
+
+(5)
+
+The parameter n serves to set the decay rate of the
+EDE. The minimum of the potential in Eq. (5) is locally V ∼ φ2n , and the energy density of oscillations in
+
+n−1
+.
+n+1
+
+(6)
+
+For n = 2, the initial energy stored in the field (i.e., the
+EDE) redshifts as radiation (∝ a−4 ), and for n → ∞
+it redshifts as kinetic energy (∝ a−6 ). Recent results
+indicate that n = 3 provides the best-fit integer value
+to cosmological data, although the preference is fairly
+weak [27].
+The cosmological dynamics relevant to the Hubble tension can be succinctly described by two effective parameters, zc and fEDE , corresponding to the redshift zc at
+which the EDE makes its peak contribution fEDE to the
+total energy density of the universe. Along with an initial
+condition θi ≡ φi /f and the exponent n, these parameters determine the timing, relative amount, and decay
+rate of the EDE component.
+As a fiducial example, we consider the best-fit parameters found in [1] in the fit of the n = 3 EDE model in
+Eq. (5) to the CMB power spectra, CMB lensing, BAO,
+RSD, Type Ia supernovae, and the SH0ES H0 measurement. The parameters are
+H0 = 71.15 km/s/Mpc,
+
+100ωb = 2.286
+(7)
+
+ωcdm = 0.12999,
+ns = 0.9847,
+fEDE = 0.105
+log10 (zc ) = 3.59
+Ωm = 0.303
+σ8 = 0.8322
+f σ8 |z=0.38 = 0.482
+
+ln 1010 As = 3.058,
+τreio = 0.0511
+θi = 2.71 ,
+S8 = 0.8366,
+f σ8 |z=0.61 = 0.477 .
+
+The cosmological evolution of the energy density in the
+EDE field, i.e., fEDE (z), is shown in Fig. 1. At its peak,
+the EDE field comprises 10% of the energy density of the
+universe. This is rapidly dissipated once the field begins
+to oscillate, and by z = 103 it comprises less than 2% of
+the energy density of the universe.
+As promised, this EDE model preserves the fit to the
+CMB power spectra to a remarkable degree. The proper
+inclusion of the EDE perturbations in the calculation is
+crucial for achieving this result [26]. As a basis for comparison, we consider ΛCDM fit to the same combination
+of data sets, with best-fit parameters given by [1]
+H0 = 68.07 km/s/Mpc
+ωcdm = 0.11855
+ns = 0.9686
+Ωm = 0.306
+f σ8 |z=0.38 = 0.47
+
+σ8 = 0.808
+
+100ωb = 2.249,
+(8)
+ln 1010 As = 3.047,
+τreio = 0.0566,
+S8 = 0.816,
+f σ8 |z=0.61 = 0.464 .
+
+The CMB TT, EE, and TE power spectra in ΛCDM
+with parameters from Eq. (8) and EDE with parameters from Eq. (7) are shown in Fig. 2. The difference
+is not visible by eye, despite the differing H0 values,
+H0 = 68.07 km/s/Mpc and H0 = 71.15 km/s/Mpc for
+ΛCDM and EDE, respectively.
+
+5
+103
+
+101
+
+CDM
+EDE
+
+20
+
+CDM
+EDE
+
+CDM
+EDE
+
+15
+10
+
+100
+
+5
+
+101
+
+D TE [ K2]
+
+D TT [ K2]
+
+D EE [ K2]
+
+102
+
+0
+5
+
+10 1
+
+10
+15
+10 22
+
+500 1000 1500 2000 2500 3000 3500
+
+3 1e 2
+
+1.5
+
+2
+
+500 1000 1500 2000 2500 3000 3500
+
+1.0 1e 2
+
+) /
+
+0
+1
+
+(
+
+D TE, EDE D TE, CDM
+
+0.0
+
+2
+
+0.0
+0.5
+1.0
+1.5
+
+(
+
+0.5
+
+0.5
+
+(
+
+D EE, CDM
+D EE, EDE D EE, CDM
+
+0.5
+
+(
+
+D TT, EDE D TT, CDM
+
+1
+
+) /
+
+1.0
+
+) /
+
+D TT, CDM
+
+)
+
+2.0 1e 2
+
+202
+
+500 1000 1500 2000 2500 3000 3500
+
+D TT, CDMD EE, CDM + D TE, CDM 2
+
+1002
+
+1.02
+
+500 1000 1500 2000 2500 3000 3500
+
+32
+
+500 1000 1500 2000 2500 3000 3500
+
+2.02
+
+500 1000 1500 2000 2500 3000 3500
+
+FIG. 2. CMB TT (left panel), EE (middle panel), and TE (right panel) power spectra for ΛCDM (black, solid) and EDE
+(red, dashed), with H0 = 68.07 km/s/Mpc and H0 = 71.15 km/s/Mpc, respectively, and fractional difference between EDE and
+ΛCDM (bottom). The fractional difference for TT and EE is normalized to the ΛCDM spectra, while TE has been normalized
+by the variance to accommodate the zero crossings in this spectrum. The model parameters are given in Eqs. (7) and (8) for
+EDE and ΛCDM, respectively, corresponding to the best-fit parameters from [1] in the fit to primary CMB, CMB lensing,
+BAO, RSD, SNIa, and SH0ES data.
+
+III.
+
+EDE MEETS LSS
+
+As we have observed, the EDE extension of ΛCDM
+can accommodate a larger H0 while maintaining an excellent fit to the primary CMB anisotropies. However,
+this is achieved through a substantial shift in the standard ΛCDM parameters when fitting the EDE model,
+as can be appreciated by comparing Eqs. (7) and (8).
+As discussed in detail in [1], these parameter shifts leave
+an imprint on cosmological observables beyond the CMB
+primary anisotropies and H0 .
+
+8 Mpc/h at z = 0,
+Z
+k3
+2
+(σ8 ) ≡ d log k 2 Plin (k) W 2 (kR).
+2π
+
+This increase in σ8 in turn leads to a relative increase
+0.5
+in the related S8 parameter, S8 ≡ σ8 (Ωm /0.3) , worsening the known tension in ΛCDM parameter inferences
+between CMB and LSS observations (e.g., [19, 42, 43]).
+Similarly, the combination f σ8 (z), where f is the logarithmic growth rate, defined as the logarithmic derivative
+of the linear growth factor D(a),
+f=
+
+The implications for LSS observations can be understood already within linear perturbation theory. For example, the relative increase in the physical dark matter density leads to an increase in the σ8 parameter, the
+RMS linear-theory mass fluctuation in a sphere of radius
+
+(9)
+
+d ln D
+,
+d ln a
+
+(10)
+
+exhibits an increase at the 2-3% level across a range of
+redshift [1]. The growth rate determines the linear-theory
+prediction for the divergence of velocity perturbations,
+θ = −f δm , the power spectrum of which contributes to
+
+6
+the anisotropic galaxy clustering power spectrum, typically encoded in the parameter combination f σ8 . This
+is probed observationally through the measurement of
+RSD [64].
+Finally, the shifts in the standard cosmological parameters needed to fit the CMB data in the EDE scenario
+can be used themselves to constrain this model via their
+signature in LSS observables. For example, the physical cold dark matter density ωcdm increases by over 5%
+when going from ΛCDM to EDE best-fit parameters (see
+Eqs. (7) and (8)). This increase is needed to compensate
+for the early-ISW-induced growth suppression caused by
+the EDE. On the other hand, as shown in [21, 22], ωcdm
+can be measured directly from the shape of the galaxy
+power spectrum, without any information from the CMB.
+As we will see, this shape information and constraints on
+ωcdm from the BOSS data will play an important role in
+constraining the EDE model.
+While linear perturbation theory is very useful to gain
+some insight into the effects of the EDE model on the
+large-scale clustering, in order to make full use of the
+breadth of LSS observations it is required to go beyond
+linear theory, and instead make predictions for the power
+spectrum in the non-linear regime. This regime is complicated by various factors, for example, non-linear evolution of the matter density field, the relation between
+this field and its luminous tracers such as galaxies, and
+baryonic effects. There are two common approaches to
+deal with non-linearities: numerical N -body (or fully hydrodynamical) simulations and perturbation theory.
+The advantage of N -body simulations is their ability, in principle, to describe all scales including highly
+non-linear ones. However, achieving high-precision N body simulations requires significant computational resources, and these simulations are nonetheless affected
+by uncertainties in galaxy formation models on small
+scales. A computational compromise is to use N -body
+simulations to calibrate fitting formulas for dark matter non-linearities, such as HALOFIT [65, 66], and to
+use phenomenological models for the galaxy bias. This
+approach is standard in the analyses of photometric survey data, which are affected by non-linear effects down
+to small scales. However, this too has its limitations:
+since the fitting formulas are not derived from first principles, their applicability to extensions of ΛCDM is, at
+best, questionable. In the context of EDE, the use of
+HALOFIT has been justified [1] by noting the smallness
+of the deviation from a ΛCDM cosmology in the allowed
+region of EDE parameter space, and by a close match
+of posterior distributions in the fit to the DES data [19],
+namely those obtained with the non-linear matter power
+spectrum computed with HALOFIT, and those obtained
+when replacing the DES data with a prior on S8 (which
+by definition requires only linear theory). This comparison suggests that HALOFIT is precise enough for the
+photometric LSS data sets available today.
+Another approach to galaxy clustering is nonlinear perturbation theory, whose formulation was recently final-
+
+ized in the framework of the Effective Field Theory of
+Large-Scale Structure [67, 68]. Even though the EFT
+is intrinsically limited to a narrow range of wavenumber
+k . 0.5 h/Mpc, it gives unprecedented accuracy in the
+description of non-linear clustering within these scales.
+Perturbative techniques are typically used in spectroscopic surveys, which aim at reconstructing the threedimensional matter distribution, allowing for a clear separation of scales. Importantly, the EFT can robustly
+account for all effects shaping the observed map of LSS:
+non-linearities in the underlying matter field, galaxy bias,
+RSD, fingers-of-God, baryonic feedback, etc. The EFT
+provides us with a general large-scale description of a
+cosmological fluid that possesses rotation symmetry and
+obeys the equivalence principle. Both these symmetries
+are present in the EDE scenario, which makes the EFT
+an adequate tool to analyze the BOSS redshift-space clustering data in this model. In the rest of this paper we
+will use the one-loop EFT model parametrized as in [21]
+(see also [22, 53] and references therein for more detail
+about theoretical modelling and the EFT approach).6
+It is instructive to look at the effects of the EDE on
+the observed redshift-space galaxy power spectrum. We
+will consider its decomposition into multipole moments,
+in particular, the ` = 0 isotropic component (monopole)
+and the leading contribution to anisotropic galaxy clustering, the ` = 2 moment (quadrupole). These are the
+spectra that will be used in our data analysis. Let us
+focus on the power spectrum at z = 0.61, which corresponds to the high-z NGC BOSS data. As a basis for
+comparison, we consider the model parameters given in
+Eqs. (7) and (8) for EDE and ΛCDM, respectively, corresponding to the best-fit parameters from [1] in the fit
+to primary CMB, CMB lensing, BAO, RSD, SNIa, and
+SH0ES data.
+If all nuisance parameters in the galaxy power spectrum are fixed to the same values both in the EDE and
+in the ΛCDM model, there are noticeable differences between the two, which can be seen in the left panel of
+Fig. 3. There we show the theoretical spectra for ΛCDM,
+whose nuisance parameters were fit to the data, along
+with the EDE predictions evaluated for the same set of
+nuisance parameters. However, most of this difference
+can be absorbed into the nuisance parameters, when they
+are allowed to vary. This effect is illustrated in the right
+panel of Fig. 3, which shows the same spectra after fitting the nuisance parameters for each cosmology separately. Note that the difference between these parameters needed to compensate the mismatch between ΛCDM
+and EDE is ∼ 10%, which is comparable to but smaller
+
+6 This model requires 7 nuisance parameters for each BOSS data
+
+chunk. These are galaxy bias parameters b1 , b2 , bG2 , the constant shot-noise contribution Pshot , the quadratic counterterms
+c20 , c22 , and the higher-order fingers-of-God counterterm c̃. This
+parameter also accounts for the effect of fiber collisions on the
+measured quadrupole moment.
+
+7
+NGC, z=0.61
+
+2000
+
+NGC, z=0.61
+
+2000
+
+ℓ=0
+
+ℓ=2
+
+1500
+
+k Pℓ (k), (Mpc/h)2
+
+k Pℓ (k), (Mpc/h)2
+
+ℓ=0
+
+1000
+500
+0
+
+ℓ=2
+
+1500
+1000
+500
+0
+
+0.05
+
+0.10
+
+0.15
+
+k, h Mpc
+
+0.20
+
+0.25
+
+0.05
+
+-1
+
+0.10
+
+0.15
+
+k, h Mpc
+
+0.20
+
+0.25
+
+-1
+
+FIG. 3. Multipoles of the galaxy power spectra at z = 0.61, before (left panel) and after (right panel) marginalizing over
+nuisance parameters, along with the high-z NGC BOSS data. The predictions of the ΛCDM model are shown with solid curves,
+while the the EDE predictions are shown with dashed curves. In the right panel (after marginalizing over nuisance parameters)
+the curves cannot be distinguished by eye; the fractional difference in these curves is shown in Fig. 4.
+
+NGC, z=0.61
+
+0.02
+
+NGC, z=0.61
+
+1.0
+
+ℓ=0
+
+ℓ=0
+ℓ=2
+
+0.00
+
+0.0
+- 0.5
+
+- 0.01
+- 0.02
+
+ℓ=2
+
+0.5
+Δ Pℓ /σPℓ
+
+Δ Pℓ /Pℓ
+
+0.01
+
+0.05
+
+0.10
+
+0.15
+
+k, h Mpc
+
+0.20
+
+0.25
+
+-1
+
+- 1.0
+
+0.05
+
+0.10
+
+0.15
+
+k, h Mpc
+
+0.20
+
+0.25
+
+-1
+
+FIG. 4. Multipoles of the galaxy power spectrum at z = 0.61, after marginalizing over nuisance parameters as in the right
+panel of Fig. 3. Left panel: Fractional difference between ΛCDM and EDE: ∆P/P ≡ (P EDE − P ΛCDM )/P ΛCDM . The monopole
+features a 0.3% pattern produced by the mismatch in the shape of the BAO wiggles between the two models, whereas the
+quadrupole exhibits a O(2%) fractional difference at low k. Right panel: Fractional difference in units of the BOSS data error
+bar for every wavenumber bin: ∆P/σP . (Note that the neighboring k bins are correlated). The biggest discrepancy is observed
+in the shape and position of the BAO wiggles in the monopole; see the main text for details.
+
+than the current precision with which these parameters
+are measured from the data or N -body simulations.
+The fractional difference between the two models (after absorbing the nuisance parameters) is shown in the
+left panel of Fig. 4. One clearly sees that the monopole
+features a 0.3% pattern produced by the mismatch in the
+shape and location of the BAO wiggles between the two
+models, whereas the quadrupole exhibits a O(2%) fractional difference at low k’s. When normalized to the actual data error bars, the biggest discrepancy is observed
+in the shape of the BAO wiggles in the monopole, as seen
+in the right panel of Fig. 4. The origin of this discrepancy can be understood as follows. The shape of the BAO
+wiggles is sensitive to ωcdm [21], which is different in the
+
+two models. Fig. 4. This effect is more significant in the
+monopole because the non-linear suppression of the BAO
+wiggles is weakest for this moment [69], whilst the statistical error bars are smallest. It is important to stress that
+the EDE model predicts ∼ 2% larger velocity fluctuation
+amplitude f σ8 , which is constrained through the correlation of the monopole and quadrupole moments.The excess in the quadrupole amplitude is clearly seen in the
+left panel of Fig. 4. It is worth mentioning that the oscillating residual observed in Fig. 4 is larger than the
+numerical inaccuracies of the CLASS-PT code, which do
+not exceed the 0.1% level [53]. It was shown in Ref. [54]
+that this level of accuracy is sufficient to ensure unbiased
+cosmological constraints even for a galaxy survey many
+
+8
+times larger than BOSS.
+All in all, the difference in the χ2 −statistic between
+the two models for the high-z NGC sample is ∆χ2 = 2.1.
+Repeating the same exercise for the three other BOSS
+data chunks, we find the cumulative ∆χ2 = 2.5. This
+simple comparison suggests that the BOSS data can improve the constraints on the EDE model in combination
+with other datasets, such as the CMB.
+Note that this comparison is based on the best-fit parameters from Eq. (7) obtained without the full-shape
+BOSS data. This set of parameters may no longer be a
+best-fit after the addition of this data, which is expected
+to break some parameter degeneracies. What is relevant
+to estimate the evidence for EDE as a valid resolution to
+the Hubble tension is the difference between the actual
+best-fits at fEDE ≈ 0 and fEDE ≈ 0.1, obtained in the
+presence of the BOSS data. This will be addressed in the
+following sections, and in particular, in Appendix B. The
+main purpose of our exercise presented in this section is
+to illustrate, at the qualitative level, that the BOSS data
+has the potential to improve the EDE constraints.
+IV.
+
+CONSTRAINTS ON THE EDE SCENARIO
+
+In the following we use a combined Einstein-Boltzmann
+code comprised of CLASS EDE [1] and CLASS-PT [53] (both
+extensions of CLASS [70]), interfaced with the Monte
+Carlo sampling code Monte Python [71, 72]. Each of
+these codes is publicly available. We perform Markov
+chain Monte Carlo (MCMC) analyses, sampling from the
+posterior distributions using the Metropolis-Hastings algorithm [73–75], with a Gelman-Rubin [76] convergence
+criterion R − 1 < 0.15 (unless otherwise stated).7 We
+analyze the MCMC chains using both MontePython and
+GetDist [77],8 which give very similar results.
+It is important to note that there are two commonly
+used ways to present 68% marginalized confidence intervals in the case of two-tailed limits. The first is to display
+a limit such that 32% of samples are outside the limit
+range, i.e., that either tail contains 16% of the samples.
+The second option is to quote an interval between two
+points with highest equal marginalized probability density (called the “credible interval”). The two approaches
+yield identical confidence intervals for the Gaussian distribution, but can notably differ if the distribution is
+skewed, which is the case for the parameter posterior
+distributions of the EDE model. Given this uncertainty,
+
+7 Our convergence criterion is somewhat weaker than the typically
+
+used criterion R − 1 < 0.1. We have chosen to use R − 1 < 0.15
+as a compromise because the parameter exploration of the joint
+BOSS+Planck likelihood turned out to be computationally expensive. The quantile criterion applied to our sample of 20 million accepted Monte-Carlo steps shows that the relative variance
+between the parameter errors from different sub-samples is less
+than 10%.
+8 https://github.com/cmbant/getdist
+
+we use the second approach in the main part of the paper
+and present the alternative estimates obtained with the
+equal-tail method in Appendix A. Note that the equaltail method was used in [1]. In either case, the limit will
+be presented here as
++(upper 68% limit - mean)
+
+mean−(mean - lower 68% limit) .
+As far as fEDE is concerned, we will see that its posterior
+is peaked at the lower boundary fEDE = 0.001, and hence
+we will quote the 95% CL upper limit, i.e., the point
+where the cumulative probability distribution function
+equals 0.95.
+We impose uniform priors on the EDE parameters:
+fEDE = [0.001, 0.5], log10 (zc ) = [3., 4.3] and θi =
+[0.1, 3.1]. For a detailed discussion of priors in the context
+of EDE, see [1]. We fix n = 3 throughout, as the data
+only weakly constrain this parameter [27]. We assume
+broad uniform priors on the standard ΛCDM parameters, and, following the Planck convention, we fix the
+sum of the neutrino masses to be 0.06 eV, assuming one
+massive eigenstate and two massless eigenstates. We fix
+the effective number of relativistic species Neff = 3.046.
+Constraints on EDE from the primary CMB
+anisotropies alone were first reported in [1], which we
+take as the starting point for our analysis. That work
+found no evidence for EDE in the Planck 2018 primary
+CMB temperature and polarization data, obtaining a
+95% CL upper bound fEDE < 0.087, below typical values needed to fully resolve the Hubble tension (see, e.g.,
+Fig. 2 or [26, 27], which indicate that fEDE ' 0.100.12 could resolve the Hubble tension). Ref. [1] found
+H0 = 68.29+1.02
+−1.00 km/s/Mpc in the EDE fit to Planck
+alone, slightly larger and with a considerably larger error bar than the corresponding ΛCDM value, H0 =
+67.29 ± 0.59 km/s/Mpc. The S8 parameter was found
+to be S8 = 0.839 ± 0.017, again slightly larger than the
+ΛCDM value, S8 = 0.833 ± 0.016. For a complete discussion and plots of the posterior distributions, we refer the
+reader to [1]. When plotting Planck-only results in the
+figures below, we use the MCMC chains from [1].
+
+A.
+
+Datasets
+
+For the CMB, we use the final Planck 2018
+TT+TE+EE+low `+lensing likelihood [78]. We follow
+the standard analysis routine for this likelihood and vary
+all necessary nuisance parameters required to account for
+observational and instrumental uncertainties.
+For BOSS, we use the data from final release DR12 [44],
+implemented as a joint full-shape+BAO likelihood in
+Ref. [24]. We refer the reader to Refs. [21, 53] for details
+of the pre-reconstruction full-shape galaxy power spectrum likelihood (based on the EFT described earlier) and
+to Ref. [24] for details of the post-reconstruction BAO
+extraction and the BAO-FS covariance matrix. The likelihood includes pre- and post-reconstruction anisotropic
+
+9
+galaxy power spectrum multipoles ` = 0, 2 across two
+non-overlapping redshift bins with zeff = 0.38 (low-z)
+and zeff = 0.61 (high-z) observed in the North and South
+Galactic Caps (NGC and SGC, respectively). This yields
+four independent data chunks with a cumulative volume ' 6 (h−1 Gpc)3 . These data chunks have different selection functions, and hence require separate sets
+of nuisance parameters. We use wide conservative priors on the nuisance parameters, as in Ref. [21]. We use
+the wavenumber range [0.01, 0.25] h Mpc−1 for the prereconstruction power spectra in the FS part of the likelihood and [0.01, 0.3] h Mpc−1 for the BAO measurements
+from the post-reconstruction spectra.
+Finally, we include additional LSS data from photometric surveys in the analysis. In particular, we consider
+the DES photometric galaxy clustering, galaxy-galaxy
+lensing, and cosmic shear measurements [19], in addition
+to weak gravitational lensing measurements from KV450 [41, 42] and HSC [43]. It was demonstrated in [1]
+that the DES-Y1 data set, namely the “3x2pt” likelihood from two-point correlations of photometric galaxy
+clustering, galaxy-galaxy lensing, and cosmic shear, is
+well approximated in the EDE analysis (with Planck and
+other data sets) by a Gaussian prior on S8 corresponding
+to the DES measurement. Guided by this, we include
+DES-Y1, as well as KV-450 and HSC, via priors on S8 .
+For DES we use the result S8 = 0.773+0.026
+−0.020 ; for KV-450,
++0.040
+we use the result from [42]: S8 = 0.737−0.036
+; and for
++0.030
+HSC, we use the result from [43]: S8 = 0.780−0.033
+. The
+inverse-variance weighted combination of these measurements gives S8 = 0.770 ± 0.017. In what follows, we will
+refer to this combination simply as “S8 .”
+
+B.
+
+EDE Meets BOSS: Constraints on EDE from
+the CMB and BOSS FS+BAO
+
+We perform a joint analysis of the CMB temperature, polarization, and lensing data combined with the
+BOSS DR12 full-shape and BAO likelihood. The nonlinear spectra are computed using CLASS-PT [53], as
+discussed in Sec. III. Parameter constraints are given
+in Table I, and the posterior distributions for a subset
+(H0 , ωcdm , σ8 , fEDE , log10 (zc ), θi ) are given in Fig. 5. The
+full triangle plot with all cosmological parameters can be
+found in Appendix A.
+We find no evidence for EDE in this analysis, obtaining an upper bound fEDE < 0.072 at 95% CL, representing a ≈ 20% improvement on the constraint from
+the fit to CMB data alone [1]. This is accompanied by
+a downward shift in S8 compared to that found from
+the CMB alone (S8 = 0.839 ± 0.017 [1]), and we find
+S8 = 0.822 ± 0.010. This is mirrored in ΛCDM, and we
+find S8 = 0.824 ± 0.011, again smaller than that found in
+the fit to the CMB alone (S8 = 0.833 ± 0.016). This is
+driven by parallel shifts in σ8 and Ωm ; see Table I.
+We find that H0 is shifted slightly upwards in both
+ΛCDM and EDE relative to its value in fits to the
+
+CMB alone. We find H0 = 68.54+0.52
+−0.95 km/s/Mpc and
+H0 = 67.70 ± 0.42 in EDE and ΛCDM, respectively, both
+in significant tension with SH0ES (3.6σ and 4.3σ, respectively). Both move towards the CMB-independent measurement H0 = 68.6 ± 1.1km/s/Mpc from BOSS BAO
+data with a BBN prior imposed on ωb [24]. This slight
+increase in H0 when BAO is included is well known in
+the context of ΛCDM (see, e.g. Refs. [3, 44]). This
+shift can be traced back to the fact that the effective
+volume-averaged distance9 DV imprinted in the BAO
+and the power spectrum turnover is a very weak function of the background cosmology and it probes, essentially, only H0 . That this is paralleled in EDE reflects
+not only the BAO preference for slightly larger H0 , but
+also the fact that EDE becomes indistinguishable from
+ΛCDM in the limit fEDE → 0. The constraints on
+the other standard ΛCDM parameters similarly track
+the ΛCDM constraints, e.g., the spectral index is reduced to ns = 0.9696+0.0046
+−0.0068 , nearly identical to the
+value in ΛCDM fit to the same data set combination,
+ns = 0.9656 ± 0.0037.
+The timing of the EDE shows a preference for
+log10 (zc ) = 3.71+0.26
+−0.33 , though there is substantial support on the boundary of the prior at log10 (zc ) = 4.3.
+Similarly, we find θi = 2.023+1.1
+−0.34 , with a posterior distribution that has substantial support at θi ' 0.
+Finally, it is interesting to compare the results of this
+subsection with those obtained from the combination
+of the Planck 2018 data and the standard BAO+RSD
+likelihood from BOSS. The details of this analysis are
+given in Appendix D. The “compressed” BOSS likelihood does not appreciably narrow the Planck-only limits, and therefore does not confidently rule out the EDE
+as a resolution to the Hubble tension. We find H0 =
+68.71+0.69
+−1.2 km/s/Mpc, consistent with the upward shift
+in H0 expected from the BOSS BAO likelihood. However, due to the lack of shape information as compared
+to the EFT likelihood, the compressed likelihood allows
+for the increase of ωcdm associated with the upward shift
+of H0 within the EDE model. This pushes the fEDE posterior slightly away from the origin along the H0 -fEDE
+degeneracy direction. The corresponding 95% confidence
+limit fEDE < 0.096 is compatible with the amount of the
+EDE required to account for the Hubble tension. This
+shows that the shape information beyond the commonly
+used f σ8 -BAO parametrization plays a crucial role in our
+Planck+BOSS constraints on the EDE scenario.
+It is useful to check the extent to which our constraints
+can be affected by the prior-volume effects. The standard
+way to assess prior volume effects is to compare the 1D
+marginalized distribution for a given parameter with the
+average-likelihood profile of the samples for the same parameter [3, 72, 73]. The latter is a smeared-out version
+
+2 (z)H −1 (z))1/3 , where D (z) and
+as DV (z) ≡ (zDA
+A
+H(z) are the comoving angular diameter distance and the Hubble
+parameter at redshift z, respectively.
+
+9 Defined
+
+10
+Constraints from Planck 2018 data + BOSS DR12
+Parameter
+
+ΛCDM
+
+EDE (n = 3)
+
+ln(1010 As )
+3.043 (3.034) ± 0.014
+3.047 (3.049) ± 0.014
+ns
+0.9656 (0.9655) ± 0.0037
+0.9696 (0.9717)+0.0046
+−0.0068
+100θs
+1.04185 (1.04200) ± 0.00029 1.04172 (1.04126) ± 0.00032
+Ωb h2
+0.02241 (0.02233) ± 0.00014 0.02255 (0.02245) ± 0.00018
+Ωcdm h2
+0.1192 (0.1191)+0.00087
+0.1215 (0.1243)+0.0013
+−0.00095
+−0.0029
+τreio
+0.0546 (0.0503)+0.0065
+0.0553 (0.0543)+0.0069
+−0.0072
+−0.0075
+log10 (zc )
+−
+3.71 (3.52)+0.26
+−0.33
+fEDE
+−
+< 0.072 (0.047)
+θi
+−
+2.023(2.734)+1.1
+−0.34
+H0 [km/s/Mpc]
+67.70 (67.56) ± 0.42
+68.54 (68.83)+0.52
+−0.95
+Ωm
+0.3105 (0.3112)+0.0053
+0.3082 (0.3120)+0.0056
+−0.0058
+−0.0057
+σ8
+0.8077 (0.8039) ± 0.0058
+0.8127 (0.8195)+0.0072
+−0.0091
+S8
+0.822 (0.819) ± 0.010
+0.824 (0.827) ± 0.011
+TABLE I. The mean (best-fit) ±1σ constraints on the cosmological parameters in ΛCDM and in the EDE scenario with n = 3,
+as inferred from the combination of BOSS FS+BAO and Planck 2018 TT+TE+EE+low `+lensing data. The upper limit on
+fEDE is quoted at 95% CL. The EDE component is not detected here; a 68% confidence limit yields fEDE = 0.025+0.0061
+−0.025 , i.e.,
+consistent with zero. The EDE value of H0 is in 3.6σ tension with the SH0ES measurement (H0 = 74.03 ± 1.42 km/s/Mpc).
+
+of best-fit χ2 profile. If the mean likelihood is increased
+through the inclusion of additional model parameters,
+one may say that they indeed improve the fit to the data
+on average. This should be contrasted with the situation where the extra parameters need to be fine-tuned
+to obtain better fits. The smearing is introduced exactly
+for this reason as it down-weights the χ2 values obtained
+as a result of fine-tuning. This is an important test as
+the EDE model has 3 extra parameters compared to the
+base ΛCDM model, which, at face value, should always
+improve the fit. In our exercise, we have found that the
+mean likelihood profile for fEDE is monotonically decreasing toward large fEDE , and its shape is close to the shape
+of the 1D marginalized distribution; for more details, see
+Appendix B. This indicates that our limits are not driven
+by the prior volume effects.
+
+C.
+
+Full combination of CMB and LSS data
+
+We now supplement our analysis with additional LSS
+data from DES-Y1, KV-450, and HSC via S8 . We note
+that these data sets are in mild (≈ 2.5σ) tension with
+Planck+BOSS within the EDE model (see Table I). However, we have found that each experiment (DES, KV450, HSC) contributes roughly equally to the EDE constraints. Excluding any one of these experiments from
+our dataset makes the remaining combination consistent
+with Planck+BOSS and does not impact significantly our
+final conclusions. We use posterior sampling to estimate
+the result of a full combined analysis.
+There are several important caveats in our weak lensing (WL) analysis, which should be borne in mind when
+interpreting our WL results.
+First, we treat all LSS data sets as independent in our
+work. The covariance between the different WL surveys
+that we use is small, as argued in Ref. [1]. This is due to
+
+a small sky overlap, different survey depths, and different photo-z calibration, which diminishes the impact of a
+possible common systematic. As far as the covariance between BOSS and WL surveys are concerned, the sky overlap between BOSS and the DES-Y1, KV450, and HSC
+footprints is only 1%, 2% and 1.5% [79–81] of the total
+BOSS footprint, respectively, hence the cross-covariance
+is negligibly small as well.
+The second caveat is regarding the compression of the
+WL likelihoods; we approximate the WL surveys with a
+Gaussian prior on S8 . This procedure was validated in [1]
+for DES both in the EDE and ΛCDM contexts. Since
+the likelihoods for other surveys are not available at the
+moment, we approximate the other WL likelihoods with
+the S8 prior as well. This practice should be accurate
+for these surveys as well; indeed, the S8 estimates from
+HSC and KV-450 are more Gaussian than that of DES,
+for which the Gaussian approximation to S8 was shown
+to capture all relevant information in combination with
+Planck. The S8 compression, of course, misses some additional information contained in the WL surveys. However, since this information was found to be negligible
+for DES Y1 (more precisely, to have minimal impact on
+the posterior distribution of EDE model parameters), we
+expect it should also be negligible for KV-450 and HSC,
+which have larger statistical errors and hence have less
+signal beyond S8 than DES.
+The third important caveat is that the KV-450 and
+HSC measurements are based on non-linear biasing models similar to the that of the EFT. This suggests that a
+more accurate analysis of the WL data should be carried out in the EFT framework, with a common set of
+nuisance parameters for overlapping galaxy selections, as
+was done in Ref. [80]. A proper joint analysis of the
+BOSS and WL data would break degeneracies between
+the nuisance and cosmological parameters, which in turn
+would strengthen the constraints compared to our anal-
+
+11
+
+EDE, Planck TT+TE+EE
+EDE, Planck + BOSS
+CDM, Planck + BOSS
+0.135
+cdm
+
+0.130
+0.125
+0.120
+0.86
+
+8
+
+0.84
+0.82
+0.80
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+66
+
+68
+
+70
+
+H0
+
+72
+
+0.120 0.125 0.130 0.135
+cdm
+
+0.80
+
+0.82 0.84
+8
+
+0.86
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+FIG. 5. Posterior distributions for the parameters extracted from the joint Planck 2018 TT+TE+EE+low `+lensing + BOSS
+DR 12 (FS+BAO) likelihood. For reference, we also display the constraints from the Planck 2018 primary CMB data alone
+(TT+TE+EE), obtained in [1]. The dark-shaded and light-shaded contours mark 68% and 95% confidence regions, respectively.
+The gray band shows the H0 measurement from SH0ES, for comparison (1σ and 2σ regions in dark and light gray, respectively).
+
+ysis where the WL and BOSS galaxies are treated effectively as independent. We adopt a similar conservative
+approach in our BOSS likelihood, where we treat various
+data chunks independently on the basis that their selection functions are slightly different, although this difference is not statistically significant, see e.g. [22] for the
+study of the NGC and SGC high-z samples. All in all,
+we leave the WL analysis within the EFT for future work.
+At this point, we present the results of our approximate
+treatment, which, nevertheless, is expected to be accurate enough for our purposes.
+The resulting parameter constraints from our analysis
+are given in Table II, and the posterior distributions are
+shown in Fig. 6 (the full triangle plot can be found in
+Appendix A). We find no evidence for the EDE compo-
+
+nent, but rather a 26% improvement on the upper bound
+from the analysis with BOSS DR12 in the previous subsection. We find fEDE = 0.019+0.0040
+−0.019 , consistent with
+null, with an upper bound fEDE < 0.053 at 95% CL.
+Accordingly, there is very little constraining power on
+log10 (zc ) or θi , as seen in the posteriors in Fig. 6. We
+find the Hubble constant H0 = 68.73+0.42
+−0.69 km/s/Mpc and
+H0 = 68.13±0.38 km/s/Mpc in EDE and ΛCDM, respectively. The ΛCDM result is more than 4σ away from the
+SH0ES measurement (in units of the SH0ES standard
+deviation), while the EDE result is more than 3.5σ away
+from SH0ES, indicating little prospect for resolving the
+Hubble tension within the EDE model. From a Bayesian
+perspective, this tension implies that the SH0ES data set
+should not be combined with the others analyzed here,
+
+12
+Constraints from Planck 2018 data + BOSS DR12 + S8 from DES+KV-450+HSC
+Parameter
+
+ΛCDM
+
+EDE (n = 3)
+
+ln(1010 As )
+3.036 (3.039) ± 0.014
+3.038 (3.034) ± 0.014
+ns
+0.9674 (0.9727) ± 0.0037
+0.9696 (0.9621)+0.0042
+−0.0051
+100θs
+1.041945 (1.041966) ± 0.00030 1.04178 (1.04176) ± 0.00035
+Ωb h2
+0.02249 (0.02273) ± 0.00013
+0.02259 (0.02243)+0.00016
+−0.00018
+2
+Ωcdm h
+0.1182 (0.1157) ± 0.00081
+0.11958 (0.11951)+0.00096
+−0.0018
+τreio
+0.0527 (0.0591) ± 0.0067
+0.0535 (0.0521)+0.0069
+−0.0075
+log10 (zc )
+−
+3.77 (4.24)+0.51
+−0.33
+fEDE
+−
+< 0.0526 (0.0115)
+θi
+−
+1.91(1.55)+1.2
+−0.47
+H0 [km/s/Mpc]
+68.13 (69.28) ± 0.38
+68.73 (67.92)+0.42
+−0.69
+Ωm
+0.3046 (0.2859) ± 0.0049
+0.3024 (0.3091) ± 0.0050
+σ8
+0.80204 (0.7947) ± 0.0053
+0.8044 (0.8023)+0.0060
+−0.0069
+S8
+0.8082 (0.7810) ± 0.0086
+0.8075 (0.8143) ± 0.0092
+TABLE II. The mean (best-fit) ±1σ constraints on the cosmological parameters in ΛCDM and in the EDE scenario with n = 3,
+as inferred from the combination of BOSS FS+BAO, Planck 2018 TT+TE+EE+low `+lensing, and DES+KV-450+HSC S8
+data. The upper limit on fEDE is quoted at 95% CL. The EDE component is not detected here; a 68% confidence limit is
+fEDE = 0.019+0.0040
+−0.019 , i.e., consistent with zero.
+
+even in the broadened EDE parameter space. Overall,
+the constraints on the standard cosmological parameters
+are very similar in both the EDE and ΛCDM models,
+which suggests that current LSS data sets have almost
+saturated all possible channels to constrain the EDE
+model, i.e., almost all degeneracies between the EDE and
+standard cosmological parameters are broken.
+
+Finally, we perform an additional test of our analyses,
+detailed in Appendix C. It has been suggested [27, 46]
+that the null results of searches for EDE in combined
+data sets that do not include the SH0ES measurement
+are due to a failure of the Metropolis-Hastings algorithm
+to explore the EDE parameter space, stemming from parameter degeneracies that emerge in the ΛCDM limit,
+fEDE → 0. This would suggest the existence of an as-yet
+hidden region of EDE parameter space that is able to
+accommodate both the local and cosmological data sets,
+despite being strongly excluded by the MCMC analyses
+heretofore performed. To address this, we perform an
+MCMC analysis with a lower bound fEDE > 0.04, so as
+to force the sampler away from the ΛCDM limit of the
+EDE model, thus removing any parameter-space volume
+effects associated with degeneracies at fEDE = 0. We
+use the same data set combination of P lanck 2018 +
+BOSS DR12 + S8 as used in Fig. 6. The posterior distributions and parameter constraints are given in Fig. 12
+and Tab. VI, respectively. Even in this artificial case,
+the posterior for fEDE is centered at the lower bound
+of the prior. This strongly suggests that the combined
+cosmological dataset does not favor any non-vanishing
+amount of EDE, regardless of parameter-space volume
+effects. Further details of this analysis, as well as a frequentist χ2 comparison, are given in Appendix C.
+
+V.
+
+FORECAST EDE CONSTRAINTS WITH
+FUTURE LSS DATA
+
+The next generation of LSS experiments will dramatically increase the volume and precision of LSS data, and
+in particular, Euclid [58], DESI [59], WFIRST/Roman
+[82], and Vera Rubin Observatory [83] (formerly LSST),
+will provide an abundance of data across a range of redshifts. It is expected that these new data sets will significantly improve parameter inferences for the ΛCDM
+model and its extensions.
+We have thus far demonstrated that current data sets
+severely constrain the EDE extension of ΛCDM, imposing a 95% CL upper bound fEDE < 0.053 (see Table II).
+It is reasonable to expect that the next generation of experiments will further improve on this bound, or aid in
+detecting a small EDE component if it is indeed present
+in the universe. To quantify this, we now perform an
+EDE sensitivity forecast for next-generation LSS experiments. For concreteness, we focus on Euclid [58], which
+is expected to measure the redshifts of 5 · 107 galaxies
+in the interval 0.5 < z < 2.1. We expect the results
+for DESI would be very similar because the two surveys
+have comparable characteristics (note that Euclid will
+also perform photometric imaging, however).
+We perform an MCMC analysis of the EDE model with
+a combined data set comprised of a forecast mock likelihood for Euclid and the final Planck 2018 CMB data.
+We construct the forecast Euclid likelihood assuming the
+best-fit base ΛCDM model found by Planck 2018. This
+methodology is very close to a Fisher forecast, but it is
+free from the assumptions of the Fisher approximation.
+In particular, it is accurate in the case of a non-Gaussian
+posterior distribution, which is especially important for
+the EDE model.
+Our goal is to pinpoint the additional constraining
+power due to Euclid in the EDE analysis with com-
+
+13
+
+EDE, Planck TT+TE+EE
+EDE, Planck + BOSS + S8
+CDM, Planck + BOSS + S8
+0.135
+cdm
+
+0.130
+0.125
+0.120
+0.86
+
+8
+
+0.84
+0.82
+0.80
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+66
+
+68
+
+70
+
+H0
+
+72
+
+0.120 0.125 0.130 0.135
+cdm
+
+0.80 0.82 0.84 0.86
+8
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+FIG. 6. Cosmological parameter constraints from the joint Planck 2018 TT+TE+EE+low `+lensing + BOSS DR 12 (FS+BAO)
++ S8 (DES+KV-450+HSC) likelihood. We also display the constraints from the Planck 2018 primary CMB data alone
+(TT+TE+EE), obtained in [1]. The SH0ES H0 measurement is shown in gray; the dark-shaded and light-shaded contours
+mark 68% and 95% confidence regions, respectively.
+
+bined CMB+LSS data. To this end, we construct a
+forecast Euclid likelihood assuming the null hypothesis
+(fEDE = 0) and perform a sensitivity forecast for fEDE .
+This approach is consistent with the fact that the current
+Planck+LSS data show no evidence for the EDE scenario.
+We additionally note that the constraining power of the
+real Planck 2018 TT+TE+EE+low ` + lensing likelihood
+is significantly stronger than publicly-available mock
+CMB likelihoods, such as the fake planck realistic
+likelihood included in Monte-Python v-3.1 [71], which
+does not include the 217 GHz channel present in the
+real Planck data. We further note that present (real)
+TT+TE+EE Planck data alone already excludes most
+of the region of EDE parameter space relevant to the
+Hubble tension (see Table I of [1]). For these reasons,
+as well as to better isolate the impact of Euclid, we do
+
+not utilize a mock CMB likelihood for this analysis, and
+instead rely on real CMB data.
+We use the mock Euclid redshift-space power spectrum
+likelihood introduced in [55], with the survey specification of Ref. [84]. The mock power spectra are generated
+using the forecast for the density distribution of emissionline galaxies (ELGs) across 8 non-overlapping redshift
+bins of width ∆z = 0.2 spanning the range 0.5 < z < 2.
+Assuming the sky fraction of the survey fsky = 0.3636,
+this yields a total volume of ∼ 70 (Gpc/h)3 , which is
+roughly 10 times bigger than the volume of the BOSS
+survey.
+Our mock likelihood is based on the same non-linear
+model for matter clustering, bias, redshift-space distortions and baryonic effects as the one used for the BOSS
+data analysis. However, there are two minor differences
+
+14
+Constraints from Planck 2018 + mock Euclid and Planck 2018 + BOSS DR12 data
+Parameter
+
+EDE (n = 3), BOSS
+
+EDE (n = 3), Euclid
+
+ln(1010 As )
+3.047 (3.049) ± 0.014
+3.043 (3.048)+0.0070
+−0.0057
++0.0046
+ns
+0.9696 (0.9717)−0.0068
+0.9641(0.9618)+0.0031
+−0.003
++0.00027
+100θs
+1.04172 (1.04126) ± 0.00032
+1.042(1.042)−0.00029
+Ωb h2
+0.02255 (0.02245) ± 0.00018 0.02237(0.02232)+0.00011
+−0.00011
+2
+Ωcdm h
+0.1215 (0.1243)+0.0013
+0.1204(0.1204)+0.00042
+−0.0029
+−0.00055
+τreio
+0.05533 (0.05433)+0.0069
+0.05554(0.5335)+0.0041
+−0.0075
+−0.004
+log10 (zc )
+3.71 (3.52)+0.26
+3.46 (3.47)+0.17
+−0.33
+−0.15
+fEDE
+< 0.072 (0.047)
+< 0.012 (0.0023)
+θi
+2.023(2.734)+1.1
+2.634(2.73)+0.47
+−0.34
+−0.069
+H0 [km/s/Mpc]
+68.54 (68.83)+0.52
+67.5 (67.26)+0.19
+−0.95
+−0.22
+Ωm
+0.3082 (0.312)+0.0056
+0.3149 (0.317)+0.0022
+−0.0057
+−0.0023
+σ8
+0.8127 (0.8195)+0.0072
+0.8104 (0.8115)+0.0022
+−0.0091
+−0.0021
+S8
+0.8237 (0.8275) ± 0.011
+0.83038 (0.83209) ± 0.0032
+TABLE III. The mean (best-fit) ±1σ constraints on the cosmological parameters in the EDE scenario with n = 3, as inferred
+from the combination of BOSS FS+BAO and Planck 2018 TT+TE+EE + lensing data and from the combination of the same
+CMB data with the mock Euclid likelihood. The upper limit on fEDE is quoted at 95% CL.
+
+that should be mentioned. First, we do not scan over the
+next-to-leading order fingers-of-God counterterm c̃. This
+term was omitted because the ELGs are expected to be
+less affected by fingers-of-God [55] than the Luminous
+Red Galaxies observed by BOSS. Second, we include the
+hexadecapole moment in our forecast Euclid likelihood.
+This moment is accompanied by an additional k 2 − counterterm. All in all, our theoretical model captures various
+non-linear effects by 7 nuisance parameters in every redshift bin, which totals to 56 LSS-related parameters to be
+marginalized over. We do not assume any priors on the
+nuisance parameters in order to keep the analysis more
+conservative. Our mock likelihood also includes the twoloop theoretical error covariance [85], which automatically implements realistic data cuts. Note that unlike
+the baseline analysis of Ref. [55], we do not include the
+bispectrum data, which could improve the constraints on
+the EDE scenario even further.
+The parameter constraints from the fit to the combined
+real Planck likelihood and forecast Euclid likelihood are
+given in Table III, and the posterior distributions are
+shown in Fig. 7. We find that the EDE component is
+constrained to peak at less than 1.2% of the energy density of the universe; we find fEDE < 0.012 at 95% CL.
+This is a factor of 6 improvement over the constraints
+from Planck 2018 with BOSS DR12 (Table I). We find a
+more modest improvement on the Hubble constant, with
+an error that is decreased from σ(H0 ) ' 0.70 km/s/Mpc
+to σ(H0 ) ' 0.20 km/s/Mpc.
+As in the ΛCDM case discussed in Refs. [55, 57], the
+primary gain comes from better measurements of ωcdm
+from the power spectrum shape, H0 from the BAO, and
+f σ8 , probed through RSD. These improvements are comparable to the ones obtained for ΛCDM in Ref. [55] and
+roughly correspond
+to the increase in the number of meap
+sured modes, VEuclid /VBOSS ∼ 3. Our results follow the
+trend seen in the analysis of the Planck +BOSS+S8 data:
+the constraints on the parameters of the EDE scenario
+
+are very similar to the ΛCDM ones, which indicates that
+all detection channels for the EDE are nearly exhausted
+after the addition of the LSS data.
+
+VI.
+
+DISCUSSION AND CONCLUSIONS
+
+The EDE scenario is a potentially compelling earlyuniverse resolution to the persistent and increasingly
+significant disagreement in late vs. early universe inferences of the Hubble constant. The EDE model successfully decreases the comoving sound horizon, allowing for
+a fixed angular size of the sound horizon even for an
+increased H0 . Combined with accompanying shifts in
+the other standard ΛCDM parameters, e.g., the physical
+dark matter density, this can provide a good fit to the
+Planck 2018 CMB temperature and polarization data for
+H0 values in near-agreement with SH0ES. However, as
+emphasized in [1], these parameter shifts are in tension
+with other cosmological data sets, and in particular, LSS
+data. This comes at a time when LSS data, in combination with a BBN prior on the baryon density, provides
+a CMB-independent early universe measurement of H0
+[20, 22, 24, 57], that is consistent with the value inferred
+from Planck 2018 CMB data.
+Past claims of evidence for the EDE scenario (e.g., [26,
+27]) were based on the Planck CMB data combined
+with several external datasets, such as SH0ES, BAO, supernovae, and f σ8 measurements from RSD. Crucially,
+SH0ES was used in the joint analysis without first checking whether the H0 posterior from the non-SH0ES data
+sets was statistically consistent with the SH0ES measurement. As shown in [1] and in this paper, this is not the
+case. Thus, from a Bayesian perspective, one should not
+analyze SH0ES in tandem with the other cosmological
+data sets. Moreover, the datasets considered in previous
+claimed EDE detections are not complete. First, they
+exclude photometric galaxy clustering and weak lensing
+
+15
+
+Planck + BOSS
+Planck + mock Euclid
+
+cdm
+
+0.130
+0.125
+0.120
+
+0.84
+
+8
+
+0.83
+0.82
+0.81
+0.80
+
+fEDE
+
+0.79
+0.14
+0.12
+0.10
+0.08
+0.06
+0.04
+0.02
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+68
+
+70
+
+H0
+
+72
+
+0.120 0.125 0.130
+cdm
+
+0.80
+
+0.82
+8
+
+0.84
+
+0.05
+
+fEDE
+
+0.10
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+FIG. 7. Posterior distributions for the parameters extracted from the joint Planck 2018 TT+TE+EE+low `+lensing + mock
+Euclid /DESI likelihood, compared to those from Planck + BOSS data.
+
+data. Second, they rely on a simplified “compressed”
+redshift-space galaxy power spectrum likelihood that ignores the matter power spectrum shape information and
+implicitly assumes standard early-universe physics.
+The impact of the galaxy clustering and weak lensing data on the EDE constraints was recently studied
+in Refs. [1] and [86]. Hill et al. (2020) [1] first showed
+that the primary CMB data alone does not reveal significant evidence for the EDE model. Moreover, the constraints on the EDE model strengthen after taking into
+account the data from photometric surveys. The “walking barefoot” analysis of Ref. [1], based on all available
+cosmological datasets without SH0ES, yielded an upper
+limit fEDE < 0.060 (95%CL), significantly lower than the
+value fEDE ≈ 0.1 needed to resolve the Hubble tension.
+Thus, the addition of the LSS data rules out the EDE
+model as a resolution to the Hubble tension.
+
+Chudaykin et al. (2020) [86] claimed that the photometric LSS data does not rule out the EDE model if the
+` > 1000 region of the Planck power spectra are discarded
+and replaced with the SPTPol measurements [87]. This
+was motivated by the presence of the so-called “lensing
+anomaly” in the Planck high-` data. The significance of
+this anomaly is 2.8σ [3], which still makes it compatible
+with a statistical fluctuation, and no systematic has been
+identified as a culprit despite significant dedicated analysis [88, 89]. Thus, we believe that the presence of this
+mild tension does not give a sufficiently strong reason to
+discard the Planck high-` data, which has more statistical
+power than the SPTPol measurement. It is also worth
+noting that ΛCDM does not provide a very good fit to
+the SPTPol power spectra (PTE = 0.017), and there are
+mild internal parameter tensions within the SPTPol data
+set (see Sec. 8 of [87]).
+
+16
+In this paper, we have investigated if the addition of
+the full BOSS galaxy power spectrum likelihood, with all
+cosmological parameters varied, can change the conclusions of previous analyses based on a compressed “official” version of this likelihood. In particular, while past
+analyses of EDE have relied on a direct application of
+the official RSD BOSS likelihood, which can be seen as
+constructed from the full BOSS likelihood by assuming
+standard early-universe physics as implemented through
+priors on the shape of the power spectrum, in this work
+we have instead used the full BOSS likelihood, with the
+power spectrum computed in a self-consistent manner as
+described in Sec. III. This removes any uncertainty as to
+the validity of LSS constraints on the EDE model.
+The full constraining power of redshift-space galaxy
+clustering data can be accessed through the application
+of the EFT of LSS [67, 68]. This is evidenced through
+[22–24, 57], which find precise constraints on cosmological parameters while relying only on the final data release
+of BOSS. Motivated by this, and the results of [1], here
+we have applied the EFT to the EDE model, and computed parameter constraints from LSS data. The EDE
+model can be succinctly parametrized by three parameters: fEDE , zc , and θi , which correspond to the peak
+energy density as a fraction of the universe, the timing
+of this peak, and the initial condition for the EDE field.
+See Fig. 1 for an illustrative example. Previous analyses
+have shown fEDE ≈ 10% can resolve the Hubble tension
+[26, 27]. Our analyses using the EFT lead to stringent
+upper bounds on fEDE , which are incompatible with EDE
+as a resolution to the Hubble tension.
+We find that BOSS data, including the complete fullshape and BAO likelihoods, in combination with Planck
+2018 data, lead to a upper bound fEDE < 0.072 at
+95% confidence. A 68% confidence limit yields fEDE =
+0.025+0.0061
+−0.025 , consistent with zero. We find a value for
+the Hubble constant H0 = 68.54+0.52
+−0.95 km/s/Mpc, in 3.6σ
+tension with the SH0ES measurement (H0 = 74.03±1.42
+km/s/Mpc). Supplemented with additional LSS data
+in the form of an S8 prior corresponding to the measurements of DES-Y1, KV-450, and HSC (a procedure
+that was validated for the EDE model in [1]), we find
+an upper bound fEDE < 0.053, with a 68% confidence
+limit fEDE = 0.019+0.0040
+−0.019 . We find the Hubble constant
+H0 = 68.73+0.42
+km/s/Mpc,
+again discrepant with the
+−0.69
+SH0ES measurement at 3.6σ significance.
+Overall, the constraints obtained in this work are similar to those of the “walking barefoot” (no-SH0ES) analysis from Hill et. al. (2020) [1]. Both analyses rule out
+the EDE model as a plausible resolution of the Hubble
+tension. We note that our conclusions are different from
+the recent results of [46]. However, the analysis in [46]
+does not use the full-shape BOSS likelihood and implements a non-standard method in the fEDE → 0 limit, in
+which some EDE parameters are held fixed rather than
+varied in the MCMC. It would be interesting to see if the
+discrepancy in results prevails once the same pipeline is
+used.
+
+Our results indicate that addition of the full shape information from the BOSS galaxy power spectrum significantly improves the constraints on the EDE scenario
+compared to both the primary Planck -only and Planck
++ standard FS BOSS results. In particular, it allows us
+to rule out (at 95% CL) the region of the EDE parameter space that addresses the Hubble tension in a combined analysis with the Planck data. This can be contrasted with the standard BAO/RSD BOSS likelihood
+based on the approximate BAO+f σ8 parametrization,
+which (a) does not noticeably improve the Planck -only
+constraints and (b) is moderately compatible with a significant amount of EDE. This comparison is detailed in
+Appendix D.
+The importance of a consistent analysis of the galaxy
+clustering data will increase even further in the era of
+future surveys. Indeed, the coming decade will see the
+deployment of a new generation of LSS experiments,
+e.g., Euclid [58], DESI [59], WFIRST/Roman [82], and
+Vera Rubin Observatory [83], each with the explicit aim
+of doing precision cosmology with LSS. In light of this, we
+have performed a sensitivity forecast of next-generation
+LSS experiments to EDE. We have constructed a mock
+likelihood for Euclid assuming a non-observation of EDE,
+with a fiducial cosmology given by ΛCDM with the bestfit parameters of Planck 2018. Taken in conjunction
+with current Planck data, we obtain an upper bound
+fEDE < 0.012 at 95% CL, which would constrain the
+fraction of the universe in the EDE component, at the
+peak of its evolution, to be less than 1.2%.
+These results indicate a bleak outlook for EDE as a
+resolution to the Hubble tension. On the other hand,
+the results are highly encouraging for the use of the
+EFT of LSS as a probe of physics beyond the standard model, which will be crucial for next-generation
+LSS experiments. Experiments such as Euclid, DESI,
+WFIRST, and VRO can be expected to tightly constrain
+not only the standard ΛCDM parameters, but also
+significant model extensions, such as EDE. While the
+prospect of EDE as a Hubble tension resolution looks
+increasingly unlikely, this result serves as motivation
+for further theoretical exploration to find a model
+that successfully yields a high H0 value when fit to
+the wealth of precision cosmological data available today.
+
+ACKNOWLEDGMENTS
+
+The authors thank Anton Chudaykin, Jo Dunkley,
+Shaun Hotchkiss, Oliver Philcox, Marcel Schmittfull, and
+Bill Wright for helpful discussions, as well as the Scientific
+Computing Core staff at the Flatiron Institute for computational support. JCH thanks the Simons Foundation
+for support. The work of MI on parameter constraints
+for the EDE model is supported by the Russian Science
+Foundation (grant 18-12-00258). EM is supported in
+part by a Banting Fellowship from the government of
+
+17
+Canada. MZ is supported by NSF grants AST1409709,
+PHY-1521097 and PHY-1820775 the Canadian Institute
+
+for Advanced Research (CIFAR) program on Gravity and
+the Extreme Universe and the Simons Foundation Modern Inflationary Cosmology initiative.
+
+[1] J. C. Hill, E. McDonough, M. W. Toomey and
+S. Alexander, Early Dark Energy Does Not Restore
+Cosmological Concordance, 2003.07355.
+[2] L. Verde, T. Treu and A. G. Riess, Tensions between the
+Early and the Late Universe, in Nature Astronomy
+2019, 2019, 1907.10625, DOI.
+[3] Planck collaboration, N. Aghanim et al., Planck 2018
+results. VI. Cosmological parameters, 1807.06209.
+[4] A. G. Riess, S. Casertano, W. Yuan, L. M. Macri and
+D. Scolnic, Large Magellanic Cloud Cepheid Standards
+Provide a 1% Foundation for the Determination of the
+Hubble Constant and Stronger Evidence for Physics
+beyond ΛCDM, Astrophys. J. 876 (2019) 85
+[1903.07603].
+[5] C. D. Huang, A. G. Riess, W. Yuan, L. M. Macri, N. L.
+Zakamska, S. Casertano et al., Hubble Space Telescope
+Observations of Mira Variables in the Type Ia
+Supernova Host NGC 1559: An Alternative Candle to
+Measure the Hubble Constant, 1908.10883.
+[6] W. L. Freedman, B. F. Madore, T. Hoyt, I. S. Jang,
+R. Beaton, M. G. Lee et al., Calibration of the Tip of
+the Red Giant Branch (TRGB), 2002.01550.
+[7] K. C. Wong et al., H0LiCOW XIII. A 2.4%
+measurement of H0 from lensed quasars: 5.3σ tension
+between early and late-Universe probes, 1907.04869.
+[8] C. S. Kochanek, Over-constrained Gravitational Lens
+Models and the Hubble Constant, Mon. Not. Roy.
+Astron. Soc. 493 (2020) 1725 [1911.05083].
+[9] K. Blum, E. Castorina and M. Simonović, Could quasar
+lensing time delays hint to cored dark matter halos,
+instead of H0 tension?, 2001.07182.
+[10] S. Birrer, A. J. Shajib, A. Galan, M. Millon, T. Treu,
+A. Agnello et al., TDCOSMO IV: Hierarchical
+time-delay cosmography – joint inference of the Hubble
+constant and galaxy density profiles, arXiv e-prints
+(2020) arXiv:2007.02941 [2007.02941].
+[11] D. W. Pesce et al., The Megamaser Cosmology Project.
+XIII. Combined Hubble constant constraints, Astrophys.
+J. 891 (2020) L1 [2001.09213].
+[12] LIGO Scientific, Virgo, 1M2H, Dark Energy
+Camera GW-E, DES, DLT40, Las Cumbres
+Observatory, VINROUGE, MASTER collaboration,
+B. P. Abbott et al., A gravitational-wave standard siren
+measurement of the Hubble constant, Nature 551 (2017)
+85 [1710.05835].
+[13] DES, LIGO Scientific, Virgo collaboration,
+M. Soares-Santos et al., First Measurement of the
+Hubble Constant from a Dark Standard Siren using the
+Dark Energy Survey Galaxies and the LIGO/Virgo
+Binary–Black-hole Merger GW170814, Astrophys. J.
+876 (2019) L7 [1901.01540].
+[14] R. J. Cooke, M. Pettini, K. M. Nollett and
+R. Jorgenson, The Primordial Deuterium Abundance of
+the Most Metal-poor Damped Lyman-α System, ApJ
+830 (2016) 148 [1607.03900].
+
+[15] M. Blomqvist et al., Baryon acoustic oscillations from
+the cross-correlation of Lyα absorption and quasars in
+eBOSS DR14, Astron. Astrophys. 629 (2019) A86
+[1904.03430].
+[16] E. Aubourg et al., Cosmological implications of baryon
+acoustic oscillation measurements, Phys. Rev. D 92
+(2015) 123516 [1411.1074].
+[17] A. Cuceu, J. Farr, P. Lemos and A. Font-Ribera,
+Baryon Acoustic Oscillations and the Hubble Constant:
+Past, Present and Future, JCAP 10 (2019) 044
+[1906.11628].
+[18] N. Schöneberg, J. Lesgourgues and D. C. Hooper, The
+BAO+BBN take on the Hubble tension, JCAP 10
+(2019) 029 [1907.11594].
+[19] DES collaboration, T. M. C. Abbott et al., Dark
+Energy Survey year 1 results: Cosmological constraints
+from galaxy clustering and weak lensing, Phys. Rev.
+D98 (2018) 043526 [1708.01530].
+[20] DES collaboration, T. M. C. Abbott et al., Dark
+Energy Survey Year 1 Results: A Precise H0 Estimate
+from DES Y1, BAO, and D/H Data, Mon. Not. Roy.
+Astron. Soc. 480 (2018) 3879 [1711.00403].
+[21] M. M. Ivanov, M. Simonović and M. Zaldarriaga,
+Cosmological Parameters from the BOSS Galaxy Power
+Spectrum, 1909.05277.
+[22] G. D’Amico, J. Gleyzes, N. Kokron, D. Markovic,
+L. Senatore, P. Zhang et al., The Cosmological Analysis
+of the SDSS/BOSS data from the Effective Field Theory
+of Large-Scale Structure, 1909.05271.
+[23] T. Tröster, A. G. Sánchez, M. Asgari, C. Blake,
+M. Crocce, C. Heymans et al., Cosmology from
+large-scale structure. Constraining ΛCDM with BOSS,
+A&A 633 (2020) L10 [1909.11006].
+[24] O. H. E. Philcox, M. M. Ivanov, M. Simonović and
+M. Zaldarriaga, Combining Full-Shape and BAO
+Analyses of Galaxy Power Spectra: A 1.6%
+CMB-independent constraint on H0, 2002.04035.
+[25] L. Knox and M. Millea, Hubble constant hunter’s guide,
+Phys. Rev. D101 (2020) 043533 [1908.03663].
+[26] V. Poulin, T. L. Smith, T. Karwal and
+M. Kamionkowski, Early Dark Energy Can Resolve The
+Hubble Tension, Phys. Rev. Lett. 122 (2019) 221301
+[1811.04083].
+[27] T. L. Smith, V. Poulin and M. A. Amin, Oscillating
+scalar fields and the Hubble tension: a resolution with
+novel signatures, Phys. Rev. D101 (2020) 063523
+[1908.06995].
+[28] P. Agrawal, F.-Y. Cyr-Racine, D. Pinner and
+L. Randall, Rock ’n’ Roll Solutions to the Hubble
+Tension, 1904.01016.
+[29] S. Alexander and E. McDonough, Axion-Dilaton
+Destabilization and the Hubble Tension, Phys. Lett.
+B797 (2019) 134830 [1904.08912].
+[30] M.-X. Lin, G. Benevento, W. Hu and M. Raveri,
+Acoustic Dark Energy: Potential Conversion of the
+Hubble Tension, Phys. Rev. D100 (2019) 063542
+
+18
+[1905.12618].
+[31] J. Sakstein and M. Trodden, Early dark energy from
+massive neutrinos – a natural resolution of the Hubble
+tension, 1911.11760.
+[32] F. Niedermann and M. S. Sloth, New Early Dark
+Energy, 1910.10739.
+[33] N. Kaloper, Dark Energy, H0 and Weak Gravity
+Conjecture, Int. J. Mod. Phys. D28 (2019) 1944017
+[1903.11676].
+[34] K. V. Berghaus and T. Karwal, Thermal Friction as a
+Solution to the Hubble Tension, 1911.06281.
+[35] M. Kamionkowski, J. Pradler and D. G. E. Walker,
+Dark energy from the string axiverse, Phys. Rev. Lett.
+113 (2014) 251302 [1409.0549].
+[36] V. Poulin, T. L. Smith, D. Grin, T. Karwal and
+M. Kamionkowski, Cosmological implications of
+ultralight axionlike fields, PhRvD 98 (2018) 083525
+[1806.10608].
+[37] J. C. Hill and E. J. Baxter, Can early dark energy
+explain EDGES?, JCAP 2018 (2018) 037 [1803.07555].
+[38] M. Dine and W. Fischler, The Not So Harmless Axion,
+Phys. Lett. B 120 (1983) 137.
+[39] L. Abbott and P. Sikivie, A Cosmological Bound on the
+Invisible Axion, Phys. Lett. B 120 (1983) 133.
+[40] J. Preskill, M. B. Wise and F. Wilczek, Cosmology of
+the Invisible Axion, Phys. Lett. B 120 (1983) 127.
+[41] H. Hildebrandt et al., KiDS-450: Cosmological
+parameter constraints from tomographic weak
+gravitational lensing, Mon. Not. Roy. Astron. Soc. 465
+(2017) 1454 [1606.05338].
+[42] H. Hildebrandt, F. Köhlinger, J. L. van den Busch,
+B. Joachimi, C. Heymans, A. Kannawadi et al.,
+KiDS+VIKING-450: Cosmic shear tomography with
+optical and infrared data, A&A 633 (2020) A69
+[1812.06076].
+[43] HSC collaboration, C. Hikage et al., Cosmology from
+cosmic shear power spectra with Subaru Hyper
+Suprime-Cam first-year data, Publ. Astron. Soc. Jap.
+71 (2019) Publications of the Astronomical Society of
+Japan, Volume 71, Issue 2, April 2019, 43,
+https://doi.org/10.1093/pasj/psz010 [1809.09148].
+[44] BOSS collaboration, S. Alam et al., The clustering of
+galaxies in the completed SDSS-III Baryon Oscillation
+Spectroscopic Survey: cosmological analysis of the DR12
+galaxy sample, Mon. Not. Roy. Astron. Soc. 470 (2017)
+2617 [1607.03155].
+[45] BOSS collaboration, F. Beutler et al., The clustering of
+galaxies in the completed SDSS-III Baryon Oscillation
+Spectroscopic Survey: Anisotropic galaxy clustering in
+Fourier-space, Mon. Not. Roy. Astron. Soc. 466 (2017)
+2242 [1607.03150].
+[46] F. Niedermann and M. S. Sloth, Resolving the Hubble
+Tension with New Early Dark Energy, 2006.06686.
+[47] C. Alcock and B. Paczynski, An evolution free test for
+non-zero cosmological constant, Nature 281 (1979) 358.
+[48] T. Matsubara and Y. Suto, Cosmological redshift
+distortion of correlation functions as a probe of the
+density parameter and the cosmological constant,
+Astrophys. J. 470 (1996) L1 [astro-ph/9604142].
+[49] W. Ballinger, J. Peacock and A. Heavens, Measuring the
+cosmological constant with redshift surveys, Mon. Not.
+Roy. Astron. Soc. 282 (1996) 877 [astro-ph/9605017].
+[50] A. Heinesen, C. Blake and D. L. Wiltshire, Quantifying
+the accuracy of the Alcock-Paczy&nacute;ski scaling of
+
+baryon acoustic oscillation measurements, JCAP 2001
+(2020) 038 [1908.11508].
+[51] J. L. Bernal, T. L. Smith, K. K. Boddy and
+M. Kamionkowski, Robustness of baryon acoustic
+oscillations constraints to beyond-ΛCDM cosmologies,
+2004.07263.
+[52] G. D’Amico, L. Senatore and P. Zhang, Limits on
+wCDM from the EFTofLSS with the PyBird code,
+2003.07956.
+[53] A. Chudaykin, M. M. Ivanov and M. Simonović,
+CLASS-PT: non-linear perturbation theory extension of
+the Boltzmann code CLASS, 2004.10607.
+[54] T. Nishimichi, G. D’Amico, M. M. Ivanov, L. Senatore,
+M. Simonović, M. Takada et al., Blinded challenge for
+precision cosmology with large-scale structure: results
+from effective field theory for the redshift-space galaxy
+power spectrum, 2003.08277.
+[55] A. Chudaykin and M. M. Ivanov, Measuring neutrino
+masses with large-scale structure: Euclid forecast with
+controlled theoretical error, JCAP 11 (2019) 034
+[1907.06666].
+[56] T. Colas, G. D’amico, L. Senatore, P. Zhang and
+F. Beutler, Efficient Cosmological Analysis of the
+SDSS/BOSS data from the Effective Field Theory of
+Large-Scale Structure, 1909.07951.
+[57] M. M. Ivanov, M. Simonović and M. Zaldarriaga,
+Cosmological Parameters and Neutrino Masses from the
+Final Planck and Full-Shape BOSS Data, 1912.08208.
+[58] L. Amendola et al., Cosmology and fundamental physics
+with the Euclid satellite, Living Rev. Rel. 21 (2018) 2
+[1606.00180].
+[59] DESI collaboration, M. E. Levi et al., The Dark Energy
+Spectroscopic Instrument (DESI), 1907.10688.
+[60] R. D. Peccei and H. R. Quinn, CP Conservation in the
+Presence of Instantons, Phys. Rev. Lett. 38 (1977) 1440.
+[61] F. Wilczek, Problem of Strong P and T Invariance in
+the Presence of Instantons, Phys. Rev. Lett. 40 (1978)
+279.
+[62] S. Weinberg, A New Light Boson?, Phys. Rev. Lett. 40
+(1978) 223.
+[63] M. S. Turner, Coherent scalar-field oscillations in an
+expanding universe, Phys. Rev. D 28 (1983) 1243.
+[64] N. Kaiser, Clustering in real space and in redshift space,
+MNRAS 227 (1987) 1.
+[65] VIRGO Consortium collaboration, R. E. Smith, J. A.
+Peacock, A. Jenkins, S. D. M. White, C. S. Frenk, F. R.
+Pearce et al., Stable clustering, the halo model and
+nonlinear cosmological power spectra, Mon. Not. Roy.
+Astron. Soc. 341 (2003) 1311 [astro-ph/0207664].
+[66] R. Takahashi, M. Sato, T. Nishimichi, A. Taruya and
+M. Oguri, Revising the Halofit Model for the Nonlinear
+Matter Power Spectrum, ApJ 761 (2012) 152
+[1208.2701].
+[67] D. Baumann, A. Nicolis, L. Senatore and
+M. Zaldarriaga, Cosmological Non-Linearities as an
+Effective Fluid, JCAP 1207 (2012) 051 [1004.2488].
+[68] J. J. M. Carrasco, M. P. Hertzberg and L. Senatore,
+The Effective Field Theory of Cosmological Large Scale
+Structures, JHEP 09 (2012) 082 [1206.2926].
+[69] M. M. Ivanov and S. Sibiryakov, Infrared Resummation
+for Biased Tracers in Redshift Space, JCAP 07 (2018)
+053 [1804.05080].
+[70] D. Blas, J. Lesgourgues and T. Tram, The Cosmic
+Linear Anisotropy Solving System (CLASS). Part II:
+
+19
+Approximation schemes, JCAP 2011 (2011) 034
+[1104.2933].
+[71] T. Brinckmann and J. Lesgourgues, MontePython 3:
+boosted MCMC sampler and other features, Phys. Dark
+Univ. 24 (2019) 100260 [1804.07261].
+[72] B. Audren, J. Lesgourgues, K. Benabed and S. Prunet,
+Conservative Constraints on Early Cosmology: an
+illustration of the Monte Python cosmological parameter
+inference code, JCAP 1302 (2013) 001 [1210.7183].
+[73] A. Lewis and S. Bridle, Cosmological parameters from
+CMB and other data: A Monte Carlo approach, PhRvD
+66 (2002) 103511 [astro-ph/0205436].
+[74] A. Lewis, Efficient sampling of fast and slow
+cosmological parameters, PhRvD 87 (2013) 103529
+[1304.4473].
+[75] R. M. Neal, Taking Bigger Metropolis Steps by Dragging
+Fast Variables, arXiv Mathematics e-prints (2005)
+math/0502099 [math/0502099].
+[76] A. Gelman and D. B. Rubin, Inference from Iterative
+Simulation Using Multiple Sequences, Statist. Sci. 7
+(1992) 457.
+[77] A. Lewis, GetDist: a Python package for analysing
+Monte Carlo samples, arXiv e-prints (2019)
+arXiv:1910.13970 [1910.13970].
+[78] Planck Collaboration, N. Aghanim, Y. Akrami,
+M. Ashdown, J. Aumont, C. Baccigalupi et al., Planck
+2018 results. V. CMB power spectra and likelihoods,
+arXiv e-prints (2019) arXiv:1907.12875 [1907.12875].
+[79] DES collaboration, S. Lee et al., Producing a
+BOSS-CMASS sample with DES imaging, Mon. Not.
+Roy. Astron. Soc. 489 (2019) 2887 [1906.01136].
+[80] T. Tröster et al., Cosmology from large-scale structure:
+Constraining ΛCDM with BOSS, Astron. Astrophys.
+633 (2020) L10 [1909.11006].
+[81] H. Kondo, H. Miyatake, M. Shirasaki, N. Sugiyama and
+A. J. Nishizawa, Weak Lensing Measurement of
+Filamentary Structure with the SDSS BOSS and Subaru
+Hyper Suprime-Cam Data, 1905.08991.
+[82] R. Akeson, L. Armus, E. Bachelet, V. Bailey,
+L. Bartusek, A. Bellini et al., The Wide Field Infrared
+Survey Telescope: 100 Hubbles for the 2020s, arXiv
+e-prints (2019) arXiv:1902.05569 [1902.05569].
+[83] LSST collaboration, Z. Ivezic et al., LSST: from Science
+Drivers to Reference Design and Anticipated Data
+Products, Astrophys. J. 873 (2019) 111 [0805.2366].
+[84] L. Pozzetti, C. M. Hirata, J. E. Geach, A. Cimatti,
+C. Baugh, O. Cucciati et al., Modelling the number
+density of Hα emitters for future spectroscopic near-IR
+space missions, Astron. Astrophys. 590 (2016) A3
+[1603.01453].
+[85] T. Baldauf, M. Mirbabayi, M. Simonović and
+M. Zaldarriaga, LSS constraints with controlled
+theoretical uncertainties, 1602.00674.
+[86] A. Chudaykin, D. Gorbunov and N. Nedelko, Combined
+analysis of Planck and SPTPol data favors the early
+dark energy models, 2004.13046.
+[87] SPT collaboration, J. Henning et al., Measurements of
+the Temperature and E-Mode Polarization of the CMB
+from 500 Square Degrees of SPTpol Data, Astrophys. J.
+852 (2018) 97 [1707.09353].
+[88] G. Addison, Y. Huang, D. Watts, C. Bennett,
+M. Halpern, G. Hinshaw et al., Quantifying discordance
+in the 2015 Planck CMB spectrum, Astrophys. J. 818
+(2016) 132 [1511.00055].
+
+[89] Planck collaboration, N. Aghanim et al., Planck
+intermediate results. LI. Features in the cosmic
+microwave background temperature power spectrum and
+shifts in cosmological parameters, Astron. Astrophys.
+607 (2017) A95 [1608.02487].
+[90] Planck Collaboration, N. Aghanim, M. Arnaud,
+M. Ashdown, J. Aumont, C. Baccigalupi et al., Planck
+2015 results. XI. CMB power spectra, likelihoods, and
+robustness of parameters, A&A 594 (2016) A11
+[1507.02704].
+
+20
+Appendix A: Full triangle plots
+
+In this appendix we present full triangle plots for the cosmological parameters of the EDE model, considering the
+following combinations of data: Planck + BOSS in Fig. 8, Planck + BOSS + S8 in Fig. 9, and Planck + mock Euclid
+in Fig. 10. In the first two cases of real data, we also show the ΛCDM constraints obtained from the same datasets.
+Additionally, in Tables IV and V we present alternative estimates of the confidence limits for the two analyses of the
+real data using the equal-tail method (see discussion near the beginning of Sec. IV).
+Constraints from Planck 2018 data + BOSS DR12
+Parameter
+
+ΛCDM
+
+EDE (n = 3)
+
+ln(1010 As )
+3.042 (3.034) ± 0.014
+3.047 (3.049) ± 0.014
+ns
+0.9655 (0.9655) ± 0.0037
+0.9694 (0.9717) ± 0.0055
+100θs
+1.04185 (1.04200) ± 0.00029 1.04173 (1.04126) ± 0.00032
+Ωb h2
+0.02241 (0.02233) ± 0.00013 0.02254 (0.02245) ± 0.00018
+Ωcdm h2
+0.1192 (0.1191) ± 0.00091
+0.1214 (0.1243) ± 0.0033
+τreio
+0.05428 (0.0503) ± 0.0068 0.05520 (0.05433) ± 0.0070
+log10 (zc )
+−
+3.70 (3.52)+0.34
+−0.27
+fEDE
+−
+< 0.072 (0.047)
+θi
+−
+1.995(2.734)+0.34
+−0.27
+H0 [km/s/Mpc]
+67.68 (67.56) ± 0.42
+68.51 (68.83)+0.75
+−0.73
+Ωm
+0.3107 (0.3112) ± 0.0055
+0.3082 (0.3120) ± 0.0057
+σ8
+0.8074 (0.8039) ± 0.0056
+0.8126 (0.8195)+0.0080
+−0.0079
+S8
+0.822 (0.819) ± 0.010
+0.824 (0.827) ± 0.011
+TABLE IV. The mean (best-fit) ±1σ constraints on the cosmological parameters in ΛCDM and in the EDE scenario with
+n = 3, as inferred from the combination of BOSS FS+BAO and Planck 2018 TT+TE+EE + low ` + lensing data. The upper
+limit on fEDE is quoted at 95% CL. These results use the equal-tail method discussed in Sec. IV.
+
+Constraints from Planck 2018 data + BOSS DR12 + S8 from DES+KV-450+HSC
+Parameter
+
+ΛCDM
+
+EDE (n = 3)
+
+ln(1010 As )
+3.036 (3.039) ± 0.014
+3.038 (3.034) ± 0.014
+ns
+0.9674 (0.9727) ± 0.0037
+0.9696 (0.9621)+0.0045
+−0.0047
+100θs
+1.041945 (1.041966) ± 0.00030 1.04178 (1.04176) ± 0.00035
+Ωb h2
+0.02249 (0.02273) ± 0.00013 0.02259 (0.022433) ± 0.00017
+Ωcdm h2
+0.1182 (0.1157) ± 0.00081
+0.1196 (0.1195)+0.0016
+−0.0015
+τreio
+0.052726 (0.05911) ± 0.0067
+0.05349 (0.05211)+0.0069
+−0.0068
+log10 (zc )
+−
+3.77 (4.24)+0.39
+−0.35
+fEDE
+−
+< 0.0526 (0.0115)
+θi
+−
+1.91(1.55)+0.9
+−1.1
+H0 [km/s/Mpc]
+68.13 (69.28) ± 0.38
+68.73 (67.92)+0.55
+−0.56
+Ωm
+0.3046 (0.2859) ± 0.0049
+0.3024 (0.3091) ± 0.0050
+σ8
+0.8020 (0.7947) ± 0.0053
+0.8044 (0.8023) ± 0.0062
+S8
+0.8082 (0.7810) ± 0.0086
+0.8075 (0.8143) ± 0.0092
+TABLE V. The mean (best-fit) ±1σ constraints on the cosmological parameters in ΛCDM and in the EDE scenario with n = 3,
+as inferred from the combination of BOSS FS+BAO, Planck 2018 TT+TE+EE + low ` + lensing, and DES+KV-450+HSC
+data. The upper limit on fEDE is quoted at 95% CL. These results use the equal-tail method discussed in Sec. IV.
+
+21
+EDE, Planck + BOSS
+CDM, Planck + BOSS
+
+cdm
+
+0.130
+0.125
+0.120
+
+100 s
+
+1.0425
+1.0420
+1.0415
+1.0410
+1.0405
+3.10
+
+ln1010As
+
+3.08
+3.06
+3.04
+3.02
+3.00
+0.99
+
+ns
+
+0.98
+0.97
+0.96
+0.08
+
+reio
+
+0.07
+0.06
+0.05
+0.04
+0.03
+72
+71
+
+H0
+
+70
+69
+68
+67
+0.84
+
+8
+
+0.83
+0.82
+0.81
+0.80
+0.79
+0.10
+
+fEDE
+
+0.08
+0.06
+0.04
+0.02
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+2.20
+
+2.25
+
+10 2 b
+
+2.30
+
+0.120
+
+0.125
+cdm
+
+0.130
+
+1.041
+
+1.042
+
+100 s
+
+3.00
+
+3.04
+
+ln1010As
+
+3.08
+
+0.96 0.97 0.98 0.99
+ns
+
+0.04
+
+0.06
+reio
+
+0.08
+
+67 68 69 70 71 72
+H0
+
+0.80
+
+0.82
+8
+
+0.84
+
+0.02 0.04 0.06 0.08 0.10
+fEDE
+
+3.2 3.4 3.6 3.8 4.0 4.2
+log10 (zc)
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+FIG. 8. Posterior distributions for the parameters extracted from the joint Planck 2018 TT+TE+EE + low ` + lensing +
+BOSS DR12 (FS+BAO) likelihood.
+
+22
+EDE, Planck + BOSS + S8
+CDM, Planck + BOSS + S8
+
+0.128
+0.126
+cdm
+
+0.124
+0.122
+0.120
+0.118
+0.116
+
+100 s
+
+1.0425
+1.0420
+1.0415
+1.0410
+1.0405
+
+ln1010As
+
+3.08
+3.06
+3.04
+3.02
+3.00
+0.99
+
+ns
+
+0.98
+0.97
+0.96
+0.08
+
+reio
+
+0.07
+0.06
+0.05
+0.04
+0.03
+71
+
+H0
+
+70
+69
+68
+67
+0.83
+
+8
+
+0.82
+0.81
+0.80
+0.79
+
+0.10
+
+fEDE
+
+0.08
+0.06
+0.04
+0.02
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+2.22
+
+2.26
+
+10 2 b
+
+2.30
+
+0.120
+
+0.125
+cdm
+
+1.041
+
+1.042
+
+100 s
+
+3.00 3.02 3.04 3.06 3.08
+ln1010As
+
+0.96
+
+0.97
+
+ns
+
+0.98
+
+0.99 0.03 0.04 0.05 0.06 0.07
+reio
+
+67
+
+68
+
+69
+
+H0
+
+70
+
+71
+
+0.79 0.80 0.81 0.82
+8
+
+0.02 0.04 0.06 0.08 0.10
+fEDE
+
+3.2 3.4 3.6 3.8 4.0 4.2
+log10 (zc)
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+FIG. 9. Cosmological parameter constraints from the joint Planck 2018 TT+TE+EE + low ` + lensing + BOSS DR12 + S8
+likelihood.
+
+23
+
+Planck + BOSS
+Planck + mock Euclid
+
+cdm
+
+0.132
+0.124
+0.116
+
+ln1010As
+
+3.1
+3.05
+3
+0.99
+
+ns
+
+0.98
+0.97
+
+reio
+
+0.96
+
+0.06
+
+0.03
+72
+
+H0
+
+70.5
+69
+67.5
+
+8
+
+0.84
+
+0.81
+
+fEDE
+
+0.12
+0.09
+0.06
+0.03
+
+log10 (zc)
+
+4.2
+3.9
+3.6
+3.3
+3
+
+i
+
+2.4
+1.8
+1.2
+0.6
+2.20 2.24 2.28 2.32 0.116
+
+10 2 b
+
+0.124
+cdm
+
+0.132 3.00
+
+3.05
+
+ln1010As
+
+3.10
+
+0.96 0.97 0.98 0.99
+
+ns
+
+0.03
+
+0.06
+reio
+
+67.5 69.0 70.5 72.0
+
+H0
+
+0.81
+
+0.84
+8
+
+0.03 0.06 0.09 0.12
+
+fEDE
+
+3.3 3.6 3.9 4.2
+
+log10 (zc)
+
+0.6 1.2 1.8 2.4 3.0
+i
+
+FIG. 10. Posterior distributions for the EDE model parameters extracted from the joint Planck 2018 TT+TE+EE + low `
++ lensing + mock Euclid /DESI likelihood.
+
+24
+Appendix B: Likelihood profile for fEDE
+
+In Fig. 11 we present the average likelihood curve extracted from our MCMC samples of the Planck +BOSS analysis
+for different values of fEDE . This is a standard output of the Monte Python code, obtained as follows. First, we
+compute a grid of fEDE in the range [0.001,0.12] with 20 equally-spaced steps. Then, for every fEDE -bin, we find all
+MCMC steps with fEDE values within the bin and takes an average of the likelihood over all these steps. Thus, we
+take into account all parameters that were varied in the MCMC chains.
+The difference of our procedure from the best-fit test is that we show the likelihood profile constructed by taking
+the means of the χ2 -samples from our chains that have a fixed value of fEDE , and not the actual best-fits. In other
+words, we present a smoothed version of the best-fit χ2 , and it has several advantages over the best-fits. First, the
+smoothing down-weights the parameters that have to be fine-tuned to produce a good fit. This is especially important
+in the context of the EDE, which has 3 extra parameters compared to the base ΛCDM. Second, it is much more
+computationally cheap to extract the mean likelihood profile from the chains than to compute best-fits. Indeed, the
+calculation of the actual best-fit χ2 is difficult because of the presence of a large amount of nuisance parameters, whose
+distribution is often flat. Using the average likelihood profiles to quantify the goodness of fit and the prior-volume
+effects is the standard practice in the CMB data analyses [72, 73, 90], and we believe that it is suitable to our purposes
+as well.
+It is evident that this profile is a monotonically decreasing function of fEDE , which implies that the EDE model
+does not improve the fit over ΛCDM on average. We find that the typical difference in the effective χ2 -statistics
+between ΛCDM (fEDE → 0) and fEDE = 0.1 is ∆χ2 ≈ −4, which roughly corresponds to 95% CL exclusion. Note
+that in the Bayesian framework the value fEDE = 0.1 is excluded by around 3σ, which is somewhat stronger than
+what we have obtained in the frequentist test here. This suggests that our Bayesian constraints are affected by the
+prior-volume effects at a level of less than 1σ.
+
+⌧reio
+
+log10zc
+
+f EDE
+
+mean like.
+marg.
+
+0.0578
+
+psA143143
+
+0.0857
+
+0.001
+
+0.0642
+
+fEDE
+psA143217
+
+0.115
+
+3
+
+3.65
+
+psA217217
+
+FIG. 11. The marginalized 1d posterior distribution (solid) and the mean likelihood profile (dashed) for fEDE , extracted from
+the Planck +BOSS chains. The normalization is such that the maximum of the distribution is equal to 1.
+
+25
+Appendix C: EDE away from the ΛCDM limit: Analysis with a high lower bound on fEDE
+
+In this appendix, we present the results of an MCMC analysis of the Planck 2018+BOSS+S8 data with an aggressive
+lower bound for the fEDE prior, fEDE > 0.04. The purpose of this experiment is to clarify if the dearth of evidence for
+EDE in the CMB and LSS datasets is an artifact of the sampler failing to sufficiently explore parameter space, owing
+to the parameter degeneracies that emerge in the ΛCDM limit fEDE → 0, as claimed in, e.g., [27] and [46]. If this were
+true, then one would expect that an MCMC analysis with fEDE strictly bigger than a certain threshold value would
+lead to qualitatively different results, as the sampler would never approach the ΛCDM limit where parameter-space
+volume effects could emerge. We consider fEDE = 0.04 to be a reasonable lower threshold, given that the best-fit
+value in the fit to Planck+BOSS is fEDE = 0.047 (see Table I).
+The posterior distributions for the relevant cosmological parameters are shown in Fig. 12, and the marginalized
+limits are given in Table VI. The posterior distribution for fEDE is strongly peaked on the lower boundary of the
+prior, and we find fEDE < 0.084 at 95% CL, consistent with the analyses of this work and of [1], both of which find no
+evidence for EDE. This indicates that the cosmological constraints reported here, and in [1], are not due to a failure
+of the Metropolis-Hastings algorithm to explore parameter space.
+Finally, we perform the following frequentist test. We evaluate the Planck+BOSS+S8 likelihood for the EDE model
+parameters fixed to the values given in Eq. (7) (which suffice to resolve the Hubble tension), and find the best-fit
+values of all remaining nuisance parameters, to compute an effective χ2 -statistic. The parameters in Eq. (7) result
+from an analysis of a combined data set that includes the SH0ES measurement, BAO, and other experiments, while
+neglecting LSS data from DES, KV-450, and HSC [1]; this data set combination was chosen to match those used
+in the EDE analyses of [26, 27]. Of all the analyses and data set combinations considered in [1], this came closest
+to consistency with the SH0ES measurement alone. One might imagine that these parameters reflect an underlying
+preference of the CMB and LSS data for non-zero fEDE , which is otherwise (i.e., in dataset combinations that do not
+include SH0ES) obscured due to the failure of the sampler as described above. To test this hypothesis, we compare
+the resulting χ2eff with the one obtained from the best-fit parameters of the baseline analysis of the Planck+BOSS+S8
+data (see Table II). This gives
+χ2eff (true best-fit) − χ2eff (cosmology from Eq. (7)) = 3163.72 − 3170.2 = −6.48 ,
+
+(C1)
+
+demonstrating that the (nearly) H0 -tension-resolving parameter set in Eq. (7) is indeed a worse fit to the data than
+that found with a direct MCMC analysis. This indicates that our constraints are not driven by prior volume effects.
+EDE away from the ΛCDM limit
+Constraints from Planck 2018 data + BOSS DR12 + S8 from DES+KV-450+HSC
+Parameter
+
+fEDE > 0.04
+
+fEDE > 0
+
+ln(1010 As )
+3.042 (3.027)+0.014
+3.038 (3.034) ± 0.014
+−0.015
+ns
+0.9763 (0.9742)+0.0061
+0.9696
+(0.9624)+0.0042
+−0.0052
+−0.0051
+100θs
+1.041945 (1.041966) ± 0.00030 1.04178 (1.04176) ± 0.00035
+Ωb h2
+0.02274 (0.02278) +0.00019
+0.02259 (0.022433)+0.00016
+−0.00017
+−0.00018
+Ωcdm h2
+0.1229 (0.1219)+0.0014
+0.11958 (0.11951)+0.00096
+−0.002
+−0.0018
+τreio
+0.05282 (0.04781)+0.0074
+0.0535 (0.0521)+0.0069
+−0.0072
+−0.0075
++0.17
+log10 (zc )
+3.746(3.67)−0.28
+3.77 (4.24)+0.51
+−0.33
+fEDE
+< 0.08384 (0.04078)
+< 0.0526 (0.0115)
+θi
+2.522(2.505)+0.46
+1.91(1.55)+1.2
+−0.064
+−0.47
++0.55
+H0 [km/s/Mpc]
+69.77 (69.39)−0.72
+68.73 (67.92)+0.42
+−0.69
+Ωm
+0.3007 (0.3017) ± 0.0052
+0.3024 (0.3091) ± 0.0050
+σ8
+0.8115 (0.8040)+0.008
+0.8044 (0.8023)+0.0060
+−0.0073
+−0.0069
+S8
+0.8126 (0.8063) ± 0.0096
+0.8075 (0.8143) ± 0.0092
+TABLE VI. The mean (best-fit) ±1σ constraints on the cosmological parameters in the EDE scenario with n = 3, as inferred
+from the combination of BOSS FS+BAO, Planck 2018 TT+TE+EE + low ` + lensing, and DES+KV-450+HSC data. Upper
+and lower limits are quoted at 95% CL. We present the results of two analyses differing by a lower prior bound on fEDE :
+baseline physical choice fEDE > 0 (right column) and artificial unphysical choice fEDE > 0.04 (left column).
+
+26
+
+EDE, Planck + BOSS + S8
+EDE, Planck + BOSS + S8, fEDE > 0.04 prior
+
+cdm
+
+0.130
+0.125
+0.120
+
+0.83
+8
+
+0.82
+0.81
+0.80
+0.79
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+68
+
+70
+
+H0
+
+72
+
+0.120
+
+0.125
+cdm
+
+0.130
+
+0.79 0.80 0.81 0.82 0.83
+8
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+FIG. 12. Cosmological parameter constraints from the Planck +BOSS+S8 dataset with two different priors on fEDE : fEDE >
+0.001 (blue) and fEDE > 0.04 (red). The posterior for fEDE exhibits substantial support on the lower bound of the prior in
+both cases, even the latter, for which the prior does not include the ΛCDM limit (fEDE ≈ 0). This is consistent with our
+finding that there is no evidence for EDE in combined CMB and LSS data, and excludes parameter-space volume effects as an
+explanation for this result. The SH0ES H0 measurement is shown in gray. The dark-shaded and light-shaded contours mark
+68% and 95% confidence intervals, respectively.
+
+27
+Appendix D: EFT-based vs. Standard BOSS likelihoods
+
+In this appendix, we present a joint analysis of the Planck 2018 data and the “consensus” BOSS DR12 FS+BAO
+likelihood [44], and compare the results to those found in Sec. IV B for the joint analysis of Planck 2018 and our
+EFT-based BOSS likelihood. The consensus BOSS DR12 FS+BAO likelihood is obtained from a fit of the BAO
+and f σ8 parameters to the BOSS data using a fixed power spectrum template, which was computed for a fiducial
+cosmology consistent with Planck ΛCDM. We use the Monte Python implementation of this likelihood, after having
+corrected a non-negligible bug reported on GitHub10 , which had not been fixed in the official code distribution at the
+time when this manuscript was finalized.
+The resulting 1D and 2D posterior distributions are shown in Fig. 13, along with those obtained in our baseline
+analysis using the complete EFT-based full-shape likelihood. The corresponding marginalized limits are presented
+in Table VII. One can see that the full likelihood yields a narrower ωcdm posterior compared to the “compressed”
+standard likelihood, which is consistent with the improvement expected from the power spectrum shape information.
+Thus, unlike the EFT-based likelihood, the standard BAO+RSD likelihood does not allow one to break the degeneracy
+between fEDE and ωcdm . This explains why the addition of the standard likelihood does not noticeably improve the
+primary CMB-only EDE constraints.
+Constraints from Planck 2018 data + BOSS DR12 for EDE (n = 3)
+Parameter
+
+Standard BOSS likelihood
+
+EFT BOSS likelihood
+
+ln(1010 As )
+ns
+100θs
+Ωb h2
+Ωcdm h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+
+3.053 (3.060)+0.015
+−0.016
+0.9713 (0.9790)+0.0055
+−0.0085
+1.04185 (1.04200)+0.00035
+−0.00032
+0.02256 (0.02269)+0.00018
+−0.00022
+0.1230 (0.1269)+0.0018
+−0.004
+0.05688 (0.05755)+0.0071
+−0.0078
+3.67 (3.813)+0.22
+−0.27
+< 0.096 (0.076)
+2.122 (2.934)+0.98
+−0.29
+68.71 (69.66)+0.69
+−1.2
+0.3097 (0.3096)+0.0062
+−0.0063
+0.8187 (0.8286)+0.008
+−0.011
+0.8316 (0.8363) ± 0.012
+
+3.047 (3.049) ± 0.014
+0.9696 (0.9717)+0.0046
+−0.0068
+1.04172 (1.04126) ± 0.00032
+0.02255 (0.02245) ± 0.00018
+0.1215 (0.1243)+0.0013
+−0.0029
+0.0553 (0.0543)+0.0069
+−0.0075
++0.26
+3.71 (3.52)−0.33
+< 0.072 (0.047)
+2.023(2.734)+1.1
+−0.34
+68.54 (68.83)+0.52
+−0.95
+0.3082 (0.3120)+0.0056
+−0.0057
+0.8127 (0.8195)+0.0072
+−0.0091
+0.8237 (0.8275) ± 0.011
+
+TABLE VII. The mean (best-fit) ±1σ constraints on the cosmological parameters in the EDE scenario with n = 3, as inferred
+from the combination of Planck 2018 TT+TE+EE+low `+lensing data with the standard (left column) and EFT-based (right
+column) BOSS FS+BAO measurements. The upper limit on fEDE is quoted at 95% CL.
+
+10 https://github.com/brinckmann/montepython_public/
+
+issues/112
+
+28
+
+EDE, Planck TT+TE+EE
+EDE, Planck + standard FS + BAO from BOSS
+EDE, Planck + EFT-FS + BAO from BOSS
+
+0.135
+cdm
+
+0.130
+0.125
+0.120
+0.86
+
+8
+
+0.84
+0.82
+0.80
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+66
+
+68
+
+70
+
+H0
+
+72
+
+0.120 0.125 0.130 0.135
+cdm
+
+0.80
+
+0.82 0.84
+8
+
+0.86
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+FIG. 13. Posterior distributions for the parameters extracted from the joint Planck 2018 TT+TE+EE+low `+lensing + BOSS
+FS+BAO data. We show the results obtained using the standard FS+BAO likelihood (in blue) and the EFT-based likelihood
+(in red). For reference, we also display the constraints from the Planck 2018 primary CMB data alone (TT+TE+EE), obtained
+in [1]. The gray band shows the H0 measurement from SH0ES, for comparison. The dark-shaded and light-shaded contours
+mark 68% and 95% confidence intervals, respectively.
+
+

@@ -1,0 +1,36 @@
+{
+  "protein": {
+    "seqres_length": 162,
+    "ca_atoms": 161,
+    "sequence_preview": "GGMWDETELGLYKVNEYVDARDTNMGAWFEAQVVRVTRKAPSRDEPCSST",
+    "centroid": [
+      2.435,
+      1.777,
+      -0.354
+    ],
+    "radius_of_gyration_ca": 17.239959312935905
+  },
+  "ligand": {
+    "num_atoms": 194,
+    "num_bonds": 193,
+    "formula": "C53H104N20O17+4",
+    "mol_wt": 1293.5380000000014,
+    "heavy_atoms": 90,
+    "centroid": [
+      11.158,
+      5.348,
+      -8.189
+    ]
+  },
+  "contacts": {
+    "protein_residue_residue_contacts_lt8A": 796,
+    "protein_residues_within_6A_of_ligand": 21,
+    "min_protein_ligand_distance": 2.5600793464265905
+  },
+  "toy_eval": {
+    "protein_rmsd_mean": 2.8143866082860103,
+    "protein_rmsd_std": 1.283129432545704,
+    "ligand_rmsd_mean": 1.5797107424223122,
+    "ligand_rmsd_std": 0.7954842605266762
+  }
+}

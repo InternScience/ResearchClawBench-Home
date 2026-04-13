@@ -1,0 +1,53 @@
+{
+  "dataset": {
+    "num_frames": 100,
+    "mean_gt_per_frame": 200.0,
+    "mean_det_per_frame": 158.2,
+    "detection_recall_proxy": 0.791,
+    "score_mean": 0.2656887615315739,
+    "score_std": 0.13003822060107847,
+    "score_min": 0.1000063986904101,
+    "score_max": 0.9,
+    "occlusion_pair_density_mean": 0.05338693467336683,
+    "occlusion_gt_touch_count": 212480,
+    "unique_gt_ids_in_detections": 200
+  },
+  "methods": [
+    {
+      "method": "ByteTrack-like",
+      "total_gt_boxes": 20000,
+      "predicted_boxes": 13858,
+      "matched_gt_boxes": 13858,
+      "recall": 0.6929,
+      "precision_proxy": 1.0,
+      "false_positives": 0,
+      "unique_gt_tracked": 200,
+      "id_switches": 2757,
+      "fragments": 3429,
+      "mostly_tracked_ids": 8,
+      "mostly_lost_ids": 0,
+      "mean_id_purity": 0.2976465634301561,
+      "tracks_created": 176,
+      "occlusion_recall": 0.6923154396213113,
+      "occlusion_id_switches": 2756
+    },
+    {
+      "method": "Sparse hierarchical",
+      "total_gt_boxes": 20000,
+      "predicted_boxes": 14008,
+      "matched_gt_boxes": 14008,
+      "recall": 0.7004,
+      "precision_proxy": 1.0,
+      "false_positives": 0,
+      "unique_gt_tracked": 200,
+      "id_switches": 2797,
+      "fragments": 3406,
+      "mostly_tracked_ids": 10,
+      "mostly_lost_ids": 0,
+      "mean_id_purity": 0.35465277252134414,
+      "tracks_created": 182,
+      "occlusion_recall": 0.6998690703998388,
+      "occlusion_id_switches": 2797
+    }
+  ]
+}

@@ -1,0 +1,937 @@
+Early Dark Energy Can Resolve The Hubble Tension
+Vivian Poulin1 , Tristan L. Smith2 , Tanvi Karwal1 , and Marc Kamionkowski1
+
+arXiv:1811.04083v2 [astro-ph.CO] 11 Jun 2019
+
+1
+
+Department of Physics and Astronomy, Johns Hopkins University,
+3400 N. Charles St., Baltimore, MD 21218, United States and
+2
+Department of Physics and Astronomy, Swarthmore College,
+500 College Ave., Swarthmore, PA 19081, United States
+(Dated: June 12, 2019)
+
+Early dark energy (EDE) that behaves like a cosmological constant at early times (redshifts
+z & 3000) and then dilutes away like radiation or faster at later times can solve the Hubble tension.
+In these models, the sound horizon at decoupling is reduced resulting in a larger value of the Hubble
+parameter H0 inferred from the cosmic microwave background (CMB). We consider two physical
+models for this EDE, one involving an oscillating scalar field and another a slowly-rolling field.
+We perform a detailed calculation of the evolution of perturbations in these models. A Markov
+Chain Monte Carlo search of the parameter space for the EDE parameters, in conjunction with the
+standard cosmological parameters, identifies regions in which H0 inferred from Planck CMB data
+agrees with the SH0ES local measurement. In these cosmologies, current baryon acoustic oscillation
+and supernova data are described as successfully as in ΛCDM, while the fit to Planck data is slightly
+improved. Future CMB and large-scale-structure surveys will further probe this scenario.
+
+Local measurements of the Hubble parameter, from
+supernovae [1, 2] and lensing time delays [3, 4], disagree
+with the value inferred from a ΛCDM fit to the cosmic
+microwave background (CMB) [5, 6], with local measurements suggesting a higher value. This discrepancy is not
+easily explained by any obvious systematic effect in either
+measurement [7–10], and so increasing attention is focusing on the possibility that this “Hubble tension” may be
+indicating new physics beyond the standard ΛCDM cosmological model [11, 12].
+However, theoretical explanations for the Hubble tension are not easy to come by. The biggest challenge remains the very precisely determined angular scale of the
+acoustic peaks in the CMB power spectrum, which fix
+the ratio of the sound horizon at decoupling to the distance to the CMB surface of last scatter. Possible latetime resolutions include a phantom-like dark energy (DE)
+component [13, 14], a vacuum phase transition [15–18],
+or interacting DE [19, 20]. However, these resolutions
+are tightly constrained [1, 14, 20, 21] by late-time observables, especially those from baryon acoustic oscillations (BAO) [22–24]. Model-independent parameterizations of the late-time expansion history are similarly constrained [25–27]. An early-time resolution, which reduces
+the sound horizon with additional radiation energy density [1, 2], is constrained by BAO and by the higher peaks
+in the CMB power spectrum [20, 25]. It is also possible
+to address the Hubble tension through a modification of
+gravity [28–34].
+Another early-time resolution [35, 36] is an exotic early
+dark energy (EDE) that behaves like a cosmological constant before some critical redshift zc but whose energy
+density then dilutes faster than radiation. This addresses
+the Hubble tension by increasing the early expansion
+rate while leaving the later evolution of the Universe unchanged. Ref. [35] investigated the effects on the CMB
+under the assumption that the dark energy exhibited no
+spatial fluctuations. A simple Fisher analysis of CMB
+
+data suggested that the model could push the CMBinferred H0 in the right direction, but not enough.
+Here, we present two physical models for EDE, one
+that involves an oscillating scalar field and another with
+a slowly-rolling scalar field. These models allow us to perform a complete analysis of the growth of perturbations
+and of CMB fluctuations. We then perform a thorough
+search of the parameter space for the scalar-field model
+parameters, along with the classical cosmological parameters. Doing so, we find regions of the combined parameter space where the CMB likelihoods match (and even
+slightly improve upon) those in the best-fit ΛCDM model
+with values of H0 consistent with those from local measurements. Moreover, our cosmological model is in good
+agreement with constraints from BAO [22–24] and the
+Pantheon supernovae dataset [37]. The fact that both an
+oscillating and slowly-rolling scalar field can resolve the
+Hubble tension indicates further that the success of the
+resolution does not depend on the detailed mechanism
+that underlies it. Our resolution requires a ∼ 5% contribution from EDE to the total energy density at redshift
+z ' 5000 that then dilutes later. Interestingly, hints for
+such an increased expansion rate and/or reduced sound
+horizon had been previously identified [10, 38].
+Our first model for EDE is nominally a scalar field ϕ
+with a potential V (ϕ) ∝ (1 − cos[ϕ/f ])n [39]. At early
+times, the field is frozen and acts as a cosmological constant, but when the Hubble parameter drops below some
+value, at a critical redshift zc = a−1
+c − 1, the field begins
+to oscillate and then behaves as a fluid with an equation
+of state wn = (n − 1)/(n + 1). In practice, numerical evolution of the scalar-field equations of motion becomes extremely difficult once the oscillations become rapid compared with the expansion rate, and so our numerical work
+is accomplished with an effective-fluid approach [40] that
+has been tailored specifically for this potential. Still, as
+that work (and discussion below) indicates, our conclusions do not depend on the details of the potential and
+
+2
+would work just as well with, e.g., a simpler ϕ2n potential. Our second model is a field that slowly rolls down a
+potential that is linear in ϕ at early times and asymptotes
+to zero at late times. Numerical evolution of the scalarfield equations of motion confirm that the resolutions we
+find here with the effective-fluid approach are valid for
+that model as well; details will be presented elsewhere
+[41].
+In the effective-fluid approximation, the EDE energy
+density evolves as [40]
+Ωϕ (a) =
+
+2Ωϕ (ac )
+3(wn +1)
+
+(a/ac )
+
++1
+
+,
+
+(1)
+
+which has an associated equation-of-state parameter
+1 + wn
+wϕ (z) =
+− 1.
+(2)
+1 + (ac /a)3(1+wn )
+It asymptotically approaches −1 as a → 0 and wn for a 
+ac , showing that the energy density is constant at early
+times and dilutes as a−3(1+wn ) once the field is dynamical
+[42]. The homogeneous EDE energy density dilutes like
+matter for n = 1, like radiation for n = 2 and faster than
+radiation whenever n ≥ 3. For n → ∞, on reaching the
+minimum of the potential, w∞ = 1 (i.e. the scalar field
+is fully dominated by its kinetic energy) and the energy
+density dilutes as a−6 .
+The equations governing the evolution of the perturbations to the effective density δϕ and heat flux uϕ ≡
+(1 + wϕ )θϕ , where θϕ is the bulk velocity perturbation,1 can be written as discussed in Refs. [40, 43, 44].
+Solving these equations requires the specification of the
+EDE equation-of-state wϕ (z), the adiabatic sound speed
+c2a ≡ Ṗϕ /ρ̇ϕ and effective sound speed c2s ≡ δpϕ /δρϕ (defined in the rest-frame of the field). During slow roll and
+assuming ϕ̇i = 0, generic scalar fields have wϕ ' −1,
+c2a ' −7/3, and c2s = 1 [40, 43]. When the field becomes dynamical, wa and c2a can be calculated from the
+background parametrization. The exact behavior of c2s
+depends on the particular shape of the potential as described in Ref. [40]. We also note that, just as with the
+background dynamics, this parametrization describes the
+case of the slow-roll model [41] by taking the limit n → ∞
+and setting c2s = 1 [44].
+We run a Markov Chain Monte Carlo (MCMC)
+using
+the
+public
+code
+MontePython-v32
+[45, 46] and a modified version of the CLASScode [47, 48].
+We perform the analysis with a
+Metropolis-Hasting algorithm, assuming flat priors
+on {ωb , ωcdm , θs , As , ns , τreio , Ωϕ,0 , Log10 (ac ), φi }.
+In
+addition, we run separate MCMCs to compare3
+
+n = (2, 3, ∞). Following the Planck collaboration, we
+model free-streaming neutrinos as two massless species
+and one massive with Mν = 0.06 eV [49]. Our data sets
+include the latest SH0ES measurement of the presentday Hubble rate H0 = 73.52±1.62 km/s/Mpc [2], Planck
+high-` and low-` TT,TE,EE and lensing likelihood [50].
+We also include BAO measurements from 6dFGS at
+z = 0.106 [22], from the MGS galaxy sample of SDSS at
+z = 0.15 [23], and from the CMASS and LOWZ galaxy
+samples of BOSS DR12 at z = 0.38, 0.51, and 0.61 [24].
+Note that the BOSS DR12 measurements also include
+measurements of the growth function f σ8 (z). Additionally, we use the Pantheon4 supernovae dataset [37],
+which includes measurements of the luminosity distances
+of 1048 SNe Ia in the redshift range 0.01 < z < 2.3.
+Moreover, there are many nuisance parameters that
+we analyze together with the cosmological ones using
+a Choleski decomposition [51]. We consider chains to
+be converged using the Gelman-Rubin [52] criterion
+R − 1 < 0.1.
+In Fig. 1, we show the marginalized 1D and 2D posterior distributions of H0 , ωcdm , fEDE (ac ) and Log10 (ac )
+in ΛCDM and in the EDE cosmology with n = 2, 3 and
+n → ∞, where fEDE (ac ) ≡ Ωϕ (ac )/Ωtot (ac ). We report
+the best-fit χ2 for each experiment in Table I, while the
+reconstructed mean, best fit and 1σ confidence interval
+of the cosmological parameters are given in Table II. We
+find that the best-fit χ2 in the EDE cosmology is reduced by −9 to −14 compared to ΛCDM using the same
+collection of data-sets. This reduction in the χ2 is not
+only driven by an improved fit of SH0ES data, but also
+by an improved fit of CMB data compared to a ΛCDM
+fit to all data-sets. Interestingly, in the global fit, the
+EDE fits Planck data slightly better than ΛCDM fitted
+on Planck only5 . This is in stark contrast with the case
+of extra-relativistic degrees of freedom, for which the χ2
+of CMB and BAO data degrades (as shown on the last
+column of Table I and also found by Refs. [13, 25, 27]).
+In order to get an estimate of the statistical preference
+of the EDE cosmology compared to ΛCDM, we trade
+the full high-` likelihood for the much faster “lite” version and make use of MultiNest [53] (with 500 livepoints and an evidence tolerance of 0.2) to compute the
+bayesian evidence. We checked that this gives results
+which are fully consistent with the MCMC on the full
+likelihood. We perform model comparison by calculating ∆logB = logB(EDE) − logB(ΛCDM). Interestingly,
+we find “definite” (or “positive”) evidence in favor of the
+EDE cosmology in the n = 3 and n = ∞ model according to the modified Jeffreys’ scale [54, 55]. While n = 2
+has a better χ2 than the n = ∞ model, it has a weaker
+
+1 It is known [40, 43] that for a scalar field the evolution equation of
+
+the velocity perturbation is unstable as w → −1 and we therefore
+solve for the heat-flux.
+2 https://github.com/brinckmann/montepython_public
+3 The n = 1 case leads to an over-production of cdm once the field
+starts diluting. We checked explicitly that it does not solve the
+H0 -tension by performing a dedicated run.
+
+4 https://github.com/dscolnic/Pantheon
+5
+
+The fit of ΛCDM on Planck only yields χ2P lanck ' 12951.5 for
+the exact same precision parameters as the one used in the EDE
+fits and convergence criterion R − 1 < 0.008. It can vary slightly
+from the one quoted in Planck tables [5].
+
+3
+evidence. We attribute this to the fact that n = 2 effectively has one more free parameter since c2s depends on
+φi , while c2s = 1 in the n = ∞ model.
+
+Log10 (ac )
+
+n=2
+n=∞
+n=3
+ΛCDM
+
+−3.6
+−4.0
+−4.4
+78
+H0
+
+75
+72
+69
+
+ωcdm
+
+0.132
+
+0.120
+0.05
+
+0.10
+
+−4.4−4.0−3.6
+
+69 72 75 78
+
+Log10 (ac )
+
+fEDE (ac )
+
+H0
+
+0.120
+
+0.132
+ωcdm
+
+Figure 1. Comparison between the marginalized 1D and 2D
+posterior distributions of H0 , ωcdm , fEDE (ac ) and Log10 (ac )
+in the EDE cosmology with n = 2, n = 3 and n = ∞. The
+best fit value of H0 in ΛCDM is shown in orange; the one
+from SH0ES is shown in grey.
+
+0.5
+
+rs
+rs /rD
+
+(δX/X)/fEDE
+
+0.0
+
+PH
+
+n=2
+
+−0.5
+0.5
+0.0
+
+n=3
+
+−0.5
+0.5
+0.0
+−0.5
+−5.0
+
+−4.5
+
+−4.0
+
+−3.5
+
+Log10(ac)
+
+−3.0
+
+n→∞
+−2.5
+
+−2.0
+
+Figure 2. The variation of the scales that are ‘fixed’ by the
+CMB data with respect to fEDE (ac ) as a function of ac with
+all other cosmological parameters fixed at their Planck bestfit values [6]. The colored bands indicate the marginalized 1σ
+range of ac for each EDE model considered here.
+
+One of the most interesting aspects of the EDE res-
+
+olution of the Hubble tension is that the posterior distributions show that the field must become dynamical around matter-radiation equality. Within the context of ΛCDM, a simplified picture of the CMB power
+spectrum can be described by three angular scales: `eq
+(the projected Hubble horizon at matter-radiation equality), `s (the projected photon-baryon sound-horizon at
+decoupling), and `D (the projected Silk damping scale
+at decoupling) [56]. These angular scales are given by
+the ratio of a physical scale at decoupling with the angular diameter distance to the surface of last scattering: `X = πDA (z∗ )/rX (z∗ ). Additionally, the overall
+amplitudes of the CMB peaks (in particular, the first
+one) are accurately measured by Planck. It is straight−0.5
+0.5 −0.2
+forward to show that PH ∝ ωcdm
+, `eq ∝ ωcdm
+h
+,
+−0.16 −0.2
+0.03
+`s ∝ ωcdm h
+, `s /`D = rs /rD ∝ ωcdm , where PH
+stands for the height of the first peak and we assume
+that the heights of the even and odd peaks fixes ωb . In
+ΛCDM, the measured peak height determines ωcdm , allowing an inference of h through `eq , `s , and `D . Alternatively, using the determination of H0 from SH0ES,
+one would deduce values of `eq , `s , and `D too small
+compared to their measured values. As shown by several
+recent studies [10, 25, 57], this can be re-cast as a mismatch between the sound horizon deduced from Planck
+data, and that reconstructed from the standard distance
+ladder. The value of rs measured by Planck is higher by
+∼ 10 Mpc compared to that directly deduced from the
+distance ladder.
+The role of the EDE is to decrease rs , while keeping
+the angular scales and peak heights fixed via small shifts
+in other cosmological parameters. For each value of n,
+we show the fractional change in rs , rs /rD and PH with
+fEDE (ac ) as a function of ac in Fig. 2. The 1σ errors on
+ac , reconstructed from our analysis, are also shown. Unsurprisingly we find that the value of ac is driven to be
+close to the maximal fractional change in rs (solid line).
+Additionally, one can see that such an EDE leads to a
+shift in the ratio rs /rD (dash-dotted line) and increase
+in peak height (dotted line). From the above scaling relations it is clear that the increase in the peak height
+can be compensated by an increase in ωcdm , giving the
+positive correlation between fEDE (ac ) and ωcdm visible in
+the 2D-posterior distribution shown in Fig. 1. Moreover,
+the dynamics of the EDE compensate for such a change
+in ωcdm , leaving the imprint of `eq on the power spectra
+relatively unchanged. An increase in ωcdm leaves rs /rD
+roughly unaffected but this ratio cannot be kept fully
+fixed. This brings us to our main conclusion: the favored
+EDE model is the one that, while maximizing the decrease in rs , minimizes6 the change in rs /rD . Using these
+scaling laws, for n = 3 a resolution of the Hubble tension
+will roughly require δωcdm ' 0.01 and fEDE (ac ) ' 0.1 at
+6 In practice, a relatively small shift in r /r
+s D is allowed as long as
+
+a small shift in ns can compensate for it, leading to a mild shift
+in the best-fit value of ns (see Table II).
+
+4
+
+In Fig. 3, we show the residuals of the CMB TT (top
+panel) and EE (bottom panel) power spectra calculated
+in the best-fit EDE model with respect to our best-fit
+ΛCDM (i.e. fit on all datasets). One can see that the EDE
+leads to residual oscillations particularly visible at small
+scales in the EE power-spectrum, which represent an
+interesting target for next-generation experiments such
+as the Simons Observatory [49], CMB-S4 [59] or CoRE
+[60]. Additionally, the pattern around the first peak
+(` ∼ 30−500) in the EE spectrum might be detectable in
+the future by large-scales E-mode measurements such as
+CLASS [61] or LiteBird [62]. Finally, the changes in rs ,
+ns , and As leave signatures in the matter power spectrum
+that can potentially be probed by surveys such as KiDS,
+DES and Euclid. This can also be seen in the parameter
+S8 ≡ σ8 (Ωm /0.3)0.5 , which is shifted by about 1σ upwards from its ΛCDM value. This slightly increases the
+so-called “S8 tension” (e.g. [63]) and therefore deserves
+more attention in future work. For example, the tension
+with the most recent KiDS cosmic-shear measurement
+[64] increases from 2.3σ to 2.5σ. As a first check, we have
+performed additional runs including SDSS DR7 [65] and
+KiDS [66] likelihoods, and found that our conclusions are
+unaffected.
+In this Letter, we have shown that an EDE that begins
+to dilute faster than matter at a redshift zc & 3000 can
+explain the increasingly significant (currently 3.8σ) tension between H0 inferred from the CMB [6] and Cepheid
+variables/supernovae at low redshifts [2]. Using Planck,
+BAO measurements, the Pantheon supernovae data, the
+local SH0ES measurement of H0 and a MCMC analysis,
+we found that a field accounting for ∼ 5% of the total
+energy density around z ∼ 5000 and diluting faster than
+radiation afterwards can solve the Hubble tension without upsetting the fit to other data sets. We found that
+in the EDE cosmology the best-fit χ2 is reduced by −9
+
+∆C`TT /C`TT (ΛCDM)
+
+We find that it is essential to consistently include perturbations in the EDE fluid. Neglecting perturbations
+is inconsistent with the requirement of overall energy
+conservation and therefore leads to unphysical features
+in the CMB power spectra which restrict the success
+of the resolution. This, in part, explains why a former study [35] did not find a good fit to the CMB for
+fEDE (ac ' 10−3.5 ) ∼ 5%.
+
+to −14 (with a slight preference for n = 3) compared to
+ΛCDM using the same data-sets. Moreover, the ΛCDM
+fit to just the Planck data is as good as the combined fit
+to all of the data sets in the EDE cosmology. This is in
+stark contrast with the popular increased-Neff resolution.
+The oscillating field EDE may naturally arise in the
+‘string-axiverse’ scenario [39, 67–70]. The standard axion
+potential is obtained for n = 1, while higher-n potentials
+may be generated by higher-order instanton corrections
+[71]. The EDE resolution of the Hubble tension, along
+with the current accelerated expansion and the evidence
+for early-Universe inflation (and perhaps the accelerated
+expansion postulated [40, 72] to account for EDGES [73])
+may suggest that the Universe undergoes episodic periods
+of anomolous expansion, as suggested in Refs. [35, 39, 74–
+77].
+
+0.8
+0.4
+0.0
+−0.4
+−0.8
+
+∆C`EE /C`EE (ΛCDM)
+
+Log10 (ac ) ' −3.7. Strikingly, this crude estimate agrees
+well with the best-fit values in Table II. This analysis
+also explains why n = 3 is favored over the n = 2 and
+n → ∞ case. Moreover, we can understand why the EDE
+cosmology is a “better” resolution of the Hubble tension
+than increasing the effective number Neff of neutrino degrees of freedom: the effects of an additional radiation
+energy density can be read off of Fig. 2 for the n = 2
+case at Log10 (ac )  −4.5. In that case, the EDE simply behaves like additional radiation all relevant times.
+One can see that rs /rD is significantly affected, leading
+to additional tension with the data, as previously noted
+in Ref. [58].
+
+7.5
+5.0
+2.5
+0.0
+−2.5
+−5.0
+−7.5
+
+0.08
+0.04
+0.00
+−0.04
+−0.08
+2 10
+
+30
+
+500
+
+1000
+
+1500
+
+2000
+
+`
+
+2500
+n=2
+n=3
+n=∞
+
+0.08
+0.04
+0.00
+−0.04
+−0.08
+
+2 10
+
+30
+
+500
+
+1000
+
+1500
+
+2000
+
+2500
+
+`
+
+Figure 3. Residuals of the CMB TT (top panel) and EE
+(bottom panel) power spectra calculated in the best-fit EDE
+model with respect to ΛCDM, obtained from our MCMC
+analyses. Blue points show residuals of Planck data, while orange bands show the binned Cosmic Variance with the same
+bins and weights as Planck.
+
+A future cosmic-variance-limited experiment around
+` ∼ 30 − 500 and above ` ∼ 1500 could probe the specific
+residual oscillations in the CMB power spectra associated
+with the EDE dynamics, while the shifts in As , ns , rs ,
+and keq will be probed by future LSS surveys.
+Note added: as this work was being completed, a new
+value of H0 was published by SH0ES increasing the tension with ΛCDM from Planck to 4.4σ [78].
+We thank Adam Riess and Tommi Tenkanen for useful conversations. We thank Antony Lewis and Colin Hill
+for detailed comments. This research was conducted using computational resources at the Maryland Advanced
+Research Computing Center (MARCC) and the Université Savoie Mont-Blanc MUST computing center. This
+work was supported at JHU by NSF Grant No. 1818899,
+NASA NNX17AK38G, and the Simons Foundation. TLS
+acknowledges support from NASA 80NSSC18K0728 and
+the Hungerford Fund at Swarthmore College.
+
+5
+Datasets
+
+ΛCDM
+
+n=2
+
+n=3
+
+n=∞
+
+Neff
+
+Planck high-`
+2449.5
+Planck low-`
+10494.7
+Planck lensing
+9.2
+BAO-low z
+1.7
+BAO-high z
+1.8
+Pantheon
+1027.1
+SH0ES
+11.1
+Total χ2min
+13995.1
+∆χ2min
+0
+∆ log B a
+0
+
+2448.4
+10494.2
+9.4
+2.1
+1.9
+1027.3
+2.3
+13985.6
+-9.5
+-0.51
+
+2445.9
+10492.8
+9.6
+2.1
+1.9
+1026.9
+1.4
+13980.6
+-14.5
++2.51
+
+2445.4
+10493.8
+11.7
+1.8
+1.9
+1026.9
+4.6
+13986.0
+-9.1
++2.41
+
+2451.9
+10493.8
+9.8
+2.7
+2.0
+1027.1
+3.9
+13991.2
+-3.9
+-0.44
+
+a The evidence has been calculated from the “lite” version of the high-` likelihood.
+
+Table I. The best-fit χ2 per experiment for the standard ΛCDM model, the EDE cosmologies and ΛCDM+Neff . The BAO-low
+z and high z datasets correspond to z ∼ 0.1 − 0.15 and z ∼ 0.4 − 0.6, respectively. For comparison, using the same CLASS
+precision parameters and MontePython, a ΛCDM fit to Planck data only yields χ2high−` ' 2446.2, χ2low−` ' 10495.9 and
+χ2lensing ' 9.4 with R − 1 < 0.008.
+1.04149 Parameter
+100 θs
+100 ωb
+ωcdm
+109 As
+ns
+τreio
+Log10 (ac )
+fEDE (ac )
+rs (zrec )
+S8
+H0
+
+ΛCDM
+
+n=2
+
+n=3
+
+1.04198 (1.04213) ± 0.0003 1.04175 (1.0414)+0.00046
+−0.00064
+2.238 (2.239) ± 0.014
+2.244 (2.228)+0.019
+−0.022
+0.1179 (0.1177) ± 0.0012 0.1248 (0.1281)+0.003
+−0.0041
+2.176 (2.14) ± 0.051
+0.9686 (0.9687) ± 0.0044
+0.075 (0.068) ± 0.013
+−
+−
+145.05 (145.1) ± 0.26
+0.824 (0.814) ± 0.012
+68.18 (68.33) ± 0.54
+
+2.185 (2.230) ± 0.056
+0.9768 (0.9828)+0.0065
+−0.0072
+0.075 (0.083) ± 0.013
+−4.136 (−3.728)+0.57
+−0.013
+0.028 (0.044)+0.011
+−0.016
+141.4 (139.8)+2
+−1.5
+0.826 (0.836) ± 0.014
+70.3 (71.1) ± 1.2
+
+n=∞
+
+1.04138 (1.0414) ± 0.0004 1.04159 (1.04149) ± 0.00035
+2.255 (0.258) ± 0.022
+2.257 (2.277) ± 0.024
+0.1272 (0.1299)± 0.0045
+0.1248 (0.1249) ± 0.0041
+2.176 (2.177) ± 0.054
+2.151 (2.177) ± 0.051
+0.9812 (0.9880) ± 0.0080 0.9764 (0.9795) ± 0.0073
+0.068 (0.068) ± 0.013
+0.062 (0.066) ± 0.014
+−3.737 (−3.696)+0.110
+−3.449
+(−3.509)+0.047
+−0.094
+−0.11
+0.050 (0.058)+0.024
+0.054 (0.057)+0.031
+−0.019
+−0.027
+140.3 (138.9)+1.9
+141.6 (141.3)+1.8
+−2.3
+−2.1
+0.838 (0.842) ± 0.015
+0.836 (0.839) ± 0.015
+70.6 (71.6) ± 1.3
+69.9 (70) ± 1.1
+
+Table II. The mean (best-fit) ±1σ error of the cosmological parameters reconstructed from our combined analysis in each model.
+
+[1] Adam G. Riess et al., “A 2.4% Determination of the Local
+Value of the Hubble Constant,” Astrophys. J. 826, 56
+(2016), arXiv:1604.01424 [astro-ph.CO].
+[2] Adam G. Riess et al., “Milky Way Cepheid Standards
+for Measuring Cosmic Distances and Application to Gaia
+DR2: Implications for the Hubble Constant,” Astrophys.
+J. 861, 126 (2018), arXiv:1804.10655 [astro-ph.CO].
+[3] V. Bonvin, F. Courbin, S. H. Suyu, P. J. Marshall,
+C. E. Rusu, D. Sluse, M. Tewes, K. C. Wong, T. Collett, C. D. Fassnacht, T. Treu, M. W. Auger, S. Hilbert,
+L. V. E. Koopmans, G. Meylan, N. Rumbaugh, A. Sonnenfeld, and C. Spiniello, “H0LiCOW - V. New COSMOGRAIL time delays of HE 0435-1223: H0 to 3.8 per cent
+precision from strong lensing in a flat ΛCDM model,”
+Mon. Not. Roy. Astron. Soc. 465, 4914–4930 (2017),
+arXiv:1607.01790.
+[4] S. Birrer et al., “H0LiCOW - IX. Cosmographic analysis of the doubly imaged quasar SDSS 1206+4332 and
+a new measurement of the Hubble constant,” (2018),
+arXiv:1809.01274 [astro-ph.CO].
+
+[5] P. A. R. Ade et al. (Planck), “Planck 2015 results. XIII.
+Cosmological parameters,” Astron. Astrophys. 594, A13
+(2016), arXiv:1502.01589 [astro-ph.CO].
+[6] N. Aghanim et al. (Planck), “Planck 2018 results. VI.
+Cosmological parameters,” (2018), arXiv:1807.06209
+[astro-ph.CO].
+[7] George Efstathiou, “H0 Revisited,” Mon. Not. Roy. Astron. Soc. 440, 1138–1152 (2014), arXiv:1311.3461 [astroph.CO].
+[8] G. E. Addison, Y. Huang, D. J. Watts, C. L. Bennett,
+M. Halpern, G. Hinshaw, and J. L. Weiland, “Quantifying discordance in the 2015 Planck CMB spectrum,”
+Astrophys. J. 818, 132 (2016), arXiv:1511.00055 [astroph.CO].
+[9] N. Aghanim et al. (Planck), “Planck intermediate results. LI. Features in the cosmic microwave background
+temperature power spectrum and shifts in cosmological parameters,” Astron. Astrophys. 607, A95 (2017),
+arXiv:1608.02487 [astro-ph.CO].
+[10] Kevin Aylor, Mackenzie Joy, Lloyd Knox, Marius Mil-
+
+6
+lea, Srinivasan Raghunathan, and W. L. Kimmy Wu,
+“Sounds Discordant: Classical Distance Ladder &amp;
+ΛCDM -based Determinations of the Cosmological Sound
+Horizon,” (2018), arXiv:1811.00537 [astro-ph.CO].
+[11] Wendy L. Freedman, “Cosmology at a Crossroads,” Nat.
+Astron. 1, 0121 (2017), arXiv:1706.02739 [astro-ph.CO].
+[12] Stephen M. Feeney, Daniel J. Mortlock, and Niccolò Dalmasso, “Clarifying the Hubble constant tension with a
+Bayesian hierarchical model of the local distance ladder,”
+(2017), 10.1093/mnras/sty418, arXiv:1707.00007 [astroph.CO].
+[13] Eleonora Di Valentino, Alessandro Melchiorri, and
+Joseph Silk, “Reconciling Planck with the local value
+of H0 in extended parameter space,” Phys. Lett. B761,
+242–246 (2016), arXiv:1606.00634 [astro-ph.CO].
+[14] Eleonora Di Valentino, Alessandro Melchiorri, Eric V.
+Linder, and Joseph Silk, “Constraining Dark Energy Dynamics in Extended Parameter Space,” Phys. Rev. D96,
+023523 (2017), arXiv:1704.00762 [astro-ph.CO].
+[15] Eleonora Di Valentino, Eric V. Linder, and Alessandro
+Melchiorri, “Vacuum phase transition solves the H0 tension,” Phys. Rev. D97, 043528 (2018), arXiv:1710.02153
+[astro-ph.CO].
+[16] Nima Khosravi, Shant Baghram, Niayesh Afshordi, and
+Natacha Altamirano, “üΛCDM: H0 tension as a hint for
+Über-Gravity,” (2017), arXiv:1710.09366 [astro-ph.CO].
+[17] Abdolali Banihashemi, Nima Khosravi, and Amir H.
+Shirazi, “Ginzburg-Landau Theory of Dark Energy:
+A Framework to Study Both Temporal and Spatial Cosmological Tensions Simultaneously,” (2018),
+arXiv:1810.11007 [astro-ph.CO].
+[18] Abdolali Banihashemi, Nima Khosravi, and Amir H.
+Shirazi, “Ups and Downs in Dark Energy: phase transition in dark sector as a proposal to lessen cosmological
+tensions,” (2018), arXiv:1808.02472 [astro-ph.CO].
+[19] Suresh Kumar and Rafael C. Nunes, “Probing the interaction between dark matter and dark energy in the
+presence of massive neutrinos,” Phys. Rev. D94, 123511
+(2016), arXiv:1608.02454 [astro-ph.CO].
+[20] Eleonora Di Valentino, Alessandro Melchiorri, and Olga
+Mena, “Can interacting dark energy solve the H0 tension?” Phys. Rev. D96, 043503 (2017), arXiv:1704.08342
+[astro-ph.CO].
+[21] G. E. Addison, D. J. Watts, C. L. Bennett, M. Halpern,
+G. Hinshaw, and J. L. Weiland, “Elucidating ΛCDM:
+Impact of Baryon Acoustic Oscillation Measurements on
+the Hubble Constant Discrepancy,” Astrophys. J. 853,
+119 (2018), arXiv:1707.06547 [astro-ph.CO].
+[22] Florian Beutler, Chris Blake, Matthew Colless, D. Heath
+Jones, Lister Staveley-Smith, Lachlan Campbell,
+Quentin Parker, Will Saunders, and Fred Watson,
+“The 6dF Galaxy Survey: Baryon Acoustic Oscillations
+and the Local Hubble Constant,” Mon. Not. Roy.
+Astron. Soc. 416, 3017–3032 (2011), arXiv:1106.3366
+[astro-ph.CO].
+[23] Ashley J. Ross, Lado Samushia, Cullan Howlett, Will J.
+Percival, Angela Burden, and Marc Manera, “The clustering of the SDSS DR7 main Galaxy sample – I. A 4 per
+cent distance measure at z = 0.15,” Mon. Not. Roy. Astron. Soc. 449, 835–847 (2015), arXiv:1409.3242 [astroph.CO].
+[24] Shadab Alam et al. (BOSS), “The clustering of galaxies
+in the completed SDSS-III Baryon Oscillation Spectroscopic Survey: cosmological analysis of the DR12 galaxy
+
+sample,” Mon. Not. Roy. Astron. Soc. 470, 2617–2652
+(2017), arXiv:1607.03155 [astro-ph.CO].
+[25] Jose Luis Bernal, Licia Verde, and Adam G. Riess,
+“The trouble with H0 ,” JCAP 1610, 019 (2016),
+arXiv:1607.05617 [astro-ph.CO].
+[26] Gong-Bo Zhao et al., “Dynamical dark energy in light of
+the latest observations,” Nat. Astron. 1, 627–632 (2017),
+arXiv:1701.08165 [astro-ph.CO].
+[27] Vivian Poulin, Kimberly K. Boddy, Simeon Bird, and
+Marc Kamionkowski, “The implications of an extended
+dark energy cosmology with massive neutrinos for cosmological tensions,” (2018), arXiv:1803.02474 [astroph.CO].
+[28] Alexandre Barreira, Baojiu Li, Carlton Baugh, and Silvia Pascoli, “The observational status of Galileon gravity
+after Planck,” JCAP 1408, 059 (2014), arXiv:1406.0485
+[astro-ph.CO].
+[29] C. Umiltà, M. Ballardini, F. Finelli, and D. Paoletti,
+“CMB and BAO constraints for an induced gravity dark
+energy model with a quartic potential,” JCAP 1508, 017
+(2015), arXiv:1507.00718 [astro-ph.CO].
+[30] Mario Ballardini, Fabio Finelli, Caterina Umiltà, and
+Daniela Paoletti, “Cosmological constraints on induced
+gravity dark energy models,” JCAP 1605, 067 (2016),
+arXiv:1601.03387 [astro-ph.CO].
+[31] Janina Renk, Miguel Zumalacárregui, Francesco Montanari, and Alexandre Barreira, “Galileon gravity in light
+of ISW, CMB, BAO and H0 data,” JCAP 1710, 020
+(2017), arXiv:1707.02263 [astro-ph.CO].
+[32] Enis Belgacem, Yves Dirian, Stefano Foffa, and Michele
+Maggiore, “Nonlocal gravity. Conceptual aspects and
+cosmological predictions,” JCAP 1803, 002 (2018),
+arXiv:1712.07066 [hep-th].
+[33] Rafael C. Nunes, “Structure formation in f (T ) gravity
+and a solution for H0 tension,” JCAP 1805, 052 (2018),
+arXiv:1802.02281 [gr-qc].
+[34] Meng-Xiang Lin, Marco Raveri, and Wayne Hu, “Phenomenology of Modified Gravity at Recombination,”
+(2018), arXiv:1810.02333 [astro-ph.CO].
+[35] Tanvi Karwal and Marc Kamionkowski, “Dark energy
+at early times, the Hubble parameter, and the string axiverse,” Phys. Rev. D94, 103523 (2016), arXiv:1608.01309
+[astro-ph.CO].
+[36] Edvard Mörtsell and Suhail Dhawan, “Does the Hubble
+constant tension call for new physics?” JCAP 1809, 025
+(2018), arXiv:1801.07260 [astro-ph.CO].
+[37] D. M. Scolnic et al., .
+[38] Alireza Hojjati, Eric V. Linder, and Johan Samsing,
+“New Constraints on the Early Expansion History of
+the Universe,” Phys. Rev. Lett. 111, 041301 (2013),
+arXiv:1304.3724 [astro-ph.CO].
+[39] Marc Kamionkowski, Josef Pradler, and Devin G. E.
+Walker, “Dark energy from the string axiverse,” Phys.
+Rev. Lett. 113, 251302 (2014), arXiv:1409.0549 [hep-ph].
+[40] Vivian Poulin, Tristan L. Smith, Daniel Grin, Tanvi
+Karwal, and Marc Kamionkowski, “Cosmological implications of ultra-light axion-like fields,”
+(2018),
+arXiv:1806.10608 [astro-ph.CO].
+[41] Tanvi Karwal, Vivian Poulin, Tristan L. Smith, and
+Marc Kamionkowski, “The background and perturbation
+dynamics necessary to resolve the Hubble tension with
+early dark energy,” (2019).
+[42] Michael S. Turner and Adam G. Riess, “Do SNe Ia
+provide direct evidence for past deceleration of the
+
+7
+universe?” Astrophys. J. 569, 18 (2002), arXiv:astroph/0106051 [astro-ph].
+[43] Renée Hlozek, Daniel Grin, David J. E. Marsh, and Pedro G. Ferreira, “A search for ultralight axions using
+precision cosmological data,” Phys. Rev. D91, 103512
+(2015), arXiv:1410.2896 [astro-ph.CO].
+[44] Wayne Hu, “Structure formation with generalized dark
+matter,” Astrophys. J. 506, 485–494 (1998), arXiv:astroph/9801234 [astro-ph].
+[45] Benjamin Audren, Julien Lesgourgues, Karim Benabed,
+and Simon Prunet, “Conservative Constraints on Early
+Cosmology: an illustration of the Monte Python cosmological parameter inference code,” JCAP 1302, 001
+(2013), arXiv:1210.7183 [astro-ph.CO].
+[46] Thejs Brinckmann and Julien Lesgourgues, “MontePython 3: boosted MCMC sampler and other features,” (2018), arXiv:1804.07261 [astro-ph.CO].
+[47] Julien Lesgourgues, “The Cosmic Linear Anisotropy
+Solving System (CLASS) I: Overview,”
+(2011),
+arXiv:1104.2932 [astro-ph.IM].
+[48] Diego Blas, Julien Lesgourgues,
+and Thomas
+Tram, “The Cosmic Linear Anisotropy Solving System
+(CLASS) II: Approximation schemes,” JCAP 1107, 034
+(2011), arXiv:1104.2933 [astro-ph.CO].
+[49] James Aguirre et al. (Simons Observatory), “The Simons Observatory: Science goals and forecasts,” (2018),
+arXiv:1808.07445 [astro-ph.CO].
+[50] N. Aghanim et al. (Planck), “Planck 2015 results.
+XI. CMB power spectra, likelihoods, and robustness
+of parameters,” Astron. Astrophys. 594, A11 (2016),
+arXiv:1507.02704 [astro-ph.CO].
+[51] Antony Lewis, “Efficient sampling of fast and slow cosmological parameters,” Phys. Rev. D87, 103529 (2013),
+arXiv:1304.4473 [astro-ph.CO].
+[52] Andrew Gelman and Donald B. Rubin, “Inference from
+Iterative Simulation Using Multiple Sequences,” Statist.
+Sci. 7, 457–472 (1992).
+[53] F. Feroz, M. P. Hobson, and M. Bridges, “MultiNest: an
+efficient and robust Bayesian inference tool for cosmology
+and particle physics,” Mon. Not. Roy. Astron. Soc. 398,
+1601–1614 (2009), arXiv:0809.3437 [astro-ph].
+[54] H. Jeffreys, Theory of Probability, 3rd ed. (Oxford, Oxford, England, 1961).
+[55] Savvas Nesseris and Juan Garcia-Bellido, “Is the Jeffreys’
+scale a reliable tool for Bayesian model comparison in
+cosmology?” JCAP 1308, 036 (2013), arXiv:1210.7652
+[astro-ph.CO].
+[56] Wayne Hu, Masataka Fukugita, Matias Zaldarriaga,
+and Max Tegmark, “CMB observables and their cosmological implications,” Astrophys. J. 549, 669 (2001),
+arXiv:astro-ph/0006436 [astro-ph].
+[57] Jarah Evslin, Anjan A Sen, and Ruchika, “Price of
+shifting the Hubble constant,” Phys. Rev. D97, 103511
+(2018), arXiv:1711.01051 [astro-ph.CO].
+[58] Zhen Hou, Ryan Keisler, Lloyd Knox, Marius Millea,
+and Christian Reichardt, “How Massless Neutrinos Affect the Cosmic Microwave Background Damping Tail,”
+Phys. Rev. D87, 083008 (2013), arXiv:1104.2333 [astroph.CO].
+[59] Kevork N. Abazajian et al. (CMB-S4), “CMB-S4 Science
+Book, First Edition,” (2016), arXiv:1610.02743 [astroph.CO].
+[60] Eleonora Di Valentino et al. (CORE), “Exploring cosmic
+origins with CORE: Cosmological parameters,” JCAP
+
+1804, 017 (2018), arXiv:1612.00021 [astro-ph.CO].
+[61] T. Essinger-Hileman et al., “CLASS: the cosmology large
+angular scale surveyor,” in Millimeter, Submillimeter,
+and Far-Infrared Detectors and Instrumentation for Astronomy VII , proc. spie., Vol. 9153 (2014) p. 91531I,
+arXiv:1408.4788 [astro-ph.IM].
+[62] A. Suzuki et al., “The LiteBIRD Satellite Mission Sub-Kelvin Instrument,” 17th International Workshop
+on Low Temperature Detectors (LTD 17) Kurume City,
+Japan, July 17-21, 2017, J. Low. Temp. Phys. 193, 1048–
+1056 (2018), arXiv:1801.06987 [astro-ph.IM].
+[63] Marco Raveri and Wayne Hu, “Concordance and Discordance in Cosmology,” (2018), arXiv:1806.04649 [astroph.CO].
+[64] H. Hildebrandt et al., “KiDS+VIKING-450: Cosmic
+shear tomography with optical+infrared data,” (2018),
+arXiv:1812.06076 [astro-ph.CO].
+[65] Beth A. Reid et al., “Cosmological Constraints from the
+Clustering of the Sloan Digital Sky Survey DR7 Luminous Red Galaxies,” 404, 60–85 (2010), arXiv:0907.1659
+[astro-ph.CO].
+[66] F. Köhlinger et al., “KiDS-450: The tomographic weak
+lensing power spectrum and constraints on cosmological
+parameters,” Mon. Not. Roy. Astron. Soc. 471, 4412–
+4435 (2017), arXiv:1706.02892 [astro-ph.CO].
+[67] Peter Svrcek and Edward Witten, “Axions In String Theory,” JHEP 06, 051 (2006), arXiv:hep-th/0605206 [hepth].
+[68] Asimina Arvanitaki,
+Savas Dimopoulos,
+Sergei
+Dubovsky, Nemanja Kaloper,
+and John MarchRussell, “String Axiverse,” Phys. Rev. D81, 123530
+(2010), arXiv:0905.4720 [hep-th].
+[69] Michele Cicoli, Mark Goodsell, and Andreas Ringwald, “The type IIB string axiverse and its low-energy
+phenomenology,” JHEP 10, 146 (2012), arXiv:1206.0819
+[hep-th].
+[70] Matthew J. Stott, David J. E. Marsh, Chakrit Pongkitivanichkul, Layne C. Price, and Bobby S. Acharya,
+“Spectrum of the axion dark sector,” Phys. Rev. D96,
+083510 (2017), arXiv:1706.03236 [astro-ph.CO].
+[71] Rolf Kappl, Hans Peter Nilles, and Martin Wolfgang
+Winkler, “Modulated Natural Inflation,” Phys. Lett.
+B753, 653–659 (2016), arXiv:1511.05560 [hep-th].
+[72] J. Colin Hill and Eric J. Baxter, “Can Early Dark Energy Explain EDGES?” (2018), arXiv:1803.07555 [astroph.CO].
+[73] Judd D. Bowman, Alan E. E. Rogers, Raul A. Monsalve,
+Thomas J. Mozdzen, and Nivedita Mahesh, “An absorption profile centred at 78 megahertz in the sky-averaged
+spectrum,” Nature 555, 67–70 (2018).
+[74] Scott Dodelson, Manoj Kaplinghat, and Ewan Stewart, “Solving the coincidence problem : Tracking oscillating energy,” Phys. Rev. Lett. 85, 5276–5279 (2000),
+arXiv:astro-ph/0002360 [astro-ph].
+[75] Kim Griest, “Toward a possible solution to the cosmic
+coincidence problem,” Phys. Rev. D66, 123501 (2002),
+arXiv:astro-ph/0202052 [astro-ph].
+[76] Eric V. Linder and Tristan L. Smith, “Dark Before Light:
+Testing the Cosmic Expansion History through the Cosmic Microwave Background,” JCAP 1104, 001 (2011),
+arXiv:1009.3500 [astro-ph.CO].
+[77] Razieh Emami, Daniel Grin, Josef Pradler, Alvise Raccanelli, and Marc Kamionkowski, “Cosmological tests of
+an axiverse-inspired quintessence field,” Phys. Rev. D93,
+
+8
+123005 (2016), arXiv:1603.04851 [astro-ph.CO].
+[78] Adam G. Riess, Stefano Casertano, Wenlong Yuan, Lucas M. Macri, and Dan Scolnic, “Large Magellanic
+Cloud Cepheid Standards Provide a 1% Foundation for
+
+the Determination of the Hubble Constant and Stronger
+Evidence for Physics Beyond LambdaCDM,” (2019),
+arXiv:1903.07603 [astro-ph.CO].
+
+

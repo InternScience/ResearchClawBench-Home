@@ -1,0 +1,19 @@
+{
+  "approach": "symbolic-first neuro-symbolic pipeline proposal",
+  "retrieval_stage": "retrieve candidate lemmas/rules by primitive and goal type",
+  "search_stage": "best-first expansion over geometric invariants and auxiliary constructions",
+  "verification_stage": "proof checked by formal Euclidean rule engine",
+  "curriculum_signal": "heuristic_difficulty from problem text only",
+  "hardest_problem_ids": [
+    "translated_imo_2011_p6",
+    "translated_imo_2008_p6",
+    "translated_imo_2020_p1",
+    "translated_imo_2000_p6",
+    "translated_imo_2000_p1",
+    "translated_imo_2008_p1a",
+    "translated_imo_2008_p1b",
+    "translated_imo_2015_p4",
+    "translated_imo_2016_p1",
+    "translated_imo_2005_p5"
+  ]
+}

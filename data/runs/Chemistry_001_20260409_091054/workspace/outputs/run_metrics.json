@@ -1,0 +1,128 @@
+{
+  "diffusion_runs": [
+    {
+      "seed": 0,
+      "protein_rmsd": 5.394848436435034,
+      "ligand_rmsd": 0.33871769363493787,
+      "interface_f1": 0.0
+    },
+    {
+      "seed": 1,
+      "protein_rmsd": 5.395076930872269,
+      "ligand_rmsd": 0.35441951156094903,
+      "interface_f1": 0.0
+    },
+    {
+      "seed": 2,
+      "protein_rmsd": 5.395003767307602,
+      "ligand_rmsd": 0.3649316235178187,
+      "interface_f1": 0.0
+    },
+    {
+      "seed": 3,
+      "protein_rmsd": 5.392666235446836,
+      "ligand_rmsd": 0.3543607667264628,
+      "interface_f1": 0.0
+    },
+    {
+      "seed": 4,
+      "protein_rmsd": 5.392016966638738,
+      "ligand_rmsd": 0.35758536255594464,
+      "interface_f1": 0.0
+    },
+    {
+      "seed": 5,
+      "protein_rmsd": 5.396935311830501,
+      "ligand_rmsd": 0.3467989508185617,
+      "interface_f1": 0.0
+    },
+    {
+      "seed": 6,
+      "protein_rmsd": 5.389092586682971,
+      "ligand_rmsd": 0.3469403138053049,
+      "interface_f1": 0.0
+    },
+    {
+      "seed": 7,
+      "protein_rmsd": 5.391753308162337,
+      "ligand_rmsd": 0.34937309729578103,
+      "interface_f1": 0.0
+    }
+  ],
+  "baseline_runs": [
+    {
+      "seed": 0,
+      "protein_rmsd": 4.208913920959963,
+      "ligand_rmsd": 3.156417283855197
+    },
+    {
+      "seed": 1,
+      "protein_rmsd": 4.271041492245207,
+      "ligand_rmsd": 3.193765810329409
+    },
+    {
+      "seed": 2,
+      "protein_rmsd": 4.196536350881891,
+      "ligand_rmsd": 3.262227337018709
+    },
+    {
+      "seed": 3,
+      "protein_rmsd": 4.144910925617803,
+      "ligand_rmsd": 3.1089476231638504
+    },
+    {
+      "seed": 4,
+      "protein_rmsd": 4.224643926258503,
+      "ligand_rmsd": 3.2789885988704692
+    },
+    {
+      "seed": 5,
+      "protein_rmsd": 4.1993718392898325,
+      "ligand_rmsd": 3.1026927409736613
+    },
+    {
+      "seed": 6,
+      "protein_rmsd": 4.104554717499462,
+      "ligand_rmsd": 3.2226365446510408
+    },
+    {
+      "seed": 7,
+      "protein_rmsd": 4.134038280627289,
+      "ligand_rmsd": 3.05781621436726
+    }
+  ],
+  "smoothing_runs": [
+    {
+      "seed": 0,
+      "protein_rmsd": 15.431869599971103
+    },
+    {
+      "seed": 1,
+      "protein_rmsd": 15.318967470651076
+    },
+    {
+      "seed": 2,
+      "protein_rmsd": 15.289290006202236
+    },
+    {
+      "seed": 3,
+      "protein_rmsd": 15.274516219463637
+    },
+    {
+      "seed": 4,
+      "protein_rmsd": 15.225569133688015
+    },
+    {
+      "seed": 5,
+      "protein_rmsd": 15.125718352851907
+    },
+    {
+      "seed": 6,
+      "protein_rmsd": 15.24971451389042
+    },
+    {
+      "seed": 7,
+      "protein_rmsd": 15.284756747057134
+    }
+  ]
+}

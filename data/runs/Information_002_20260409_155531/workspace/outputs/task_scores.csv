@@ -1,0 +1,17 @@
+task,normalized_score
+Construct Kinetic Hamiltonian (continuum version; single-particle),0.6667
+Define each term in Kinetic Hamiltonian (continuum version),0.8333
+Construct Potential Hamiltonian (continuum version),0.9167
+Define each term in Potential Hamiltonian (continuum version),1.0000
+Convert from single-particle to second-quantized form; return in matrix,1.0000
+Convert from single-particle to second-quantized form; return in summation (expand the matrix),0.8333
+Convert noninteracting Hamiltonian in real space to momentum space (continuum version),0.9167
+Particle-hole transformation,0.8333
+Simplify the Hamiltonian in the particle-hole basis,0.9167
+Construct interaction Hamiltonian (momentum space),1.0000
+Wick's theorem,0.8333
+Extract quadratic term,0.8333
+Swap the index to combine Hartree and Fock terms,0.9167
+Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice),0.9167
+Reduce momentum in Fock term (momentum in BZ + reciprocal lattice),1.0000
+Combine the Hartree and Fock term,1.0000

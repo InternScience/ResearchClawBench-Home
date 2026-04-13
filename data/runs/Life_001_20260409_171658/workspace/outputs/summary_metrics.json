@@ -1,0 +1,35 @@
+{
+  "selected_vaccine_elements": [
+    "mut11",
+    "mut12",
+    "mut15",
+    "mut19",
+    "mut20",
+    "mut26",
+    "mut28",
+    "mut33",
+    "mut39",
+    "mut44"
+  ],
+  "num_selected_elements": 10,
+  "mean_pairwise_iou": 1.0,
+  "min_pairwise_iou": 1.0,
+  "max_pairwise_iou": 1.0,
+  "mean_empirical_cell_response": 0.9427470300116586,
+  "median_empirical_cell_response": 0.9630025369027599,
+  "mean_reported_cell_response": 0.9427470300116586,
+  "mean_abs_error_empirical_vs_reported": 5.664912983149861e-17,
+  "coverage_thresholds_empirical_mean": {
+    "0.5": 0.992,
+    "0.7": 0.99,
+    "0.9": 0.8870000000000001,
+    "0.95": 0.6060000000000001
+  },
+  "coverage_thresholds_reported_mean": {
+    "0.5": 0.992,
+    "0.7": 0.99,
+    "0.9": 0.8870000000000001,
+    "0.95": 0.6060000000000001
+  },
+  "runtime_scaling_exponent_loglog": 1.229316676662996
+}

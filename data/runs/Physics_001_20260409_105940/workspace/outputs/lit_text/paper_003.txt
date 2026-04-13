@@ -1,0 +1,1895 @@
+Article
+
+Mapping the twist-angle disorder and
+Landau levels in magic-angle graphene
+https://doi.org/10.1038/s41586-020-2255-3
+Received: 25 July 2019
+
+A. Uri1,9, S. Grover1,9, Y. Cao2,9, J. A. Crosse3,4, K. Bagani1, D. Rodan-Legrain2, Y. Myasoedov1,
+K. Watanabe5, T. Taniguchi5, P. Moon3,4,6,7, M. Koshino8, P. Jarillo-Herrero2 ✉ & E. Zeldov1 ✉
+
+Accepted: 7 February 2020
+Published online: 6 May 2020
+Check for updates
+
+The recently discovered flat electronic bands and strongly correlated and
+superconducting phases in magic-angle twisted bilayer graphene (MATBG)1,2 crucially
+depend on the interlayer twist angle, θ. Although control of the global θ with a
+precision of about 0.1 degrees has been demonstrated1–7, little information is available
+on the distribution of the local twist angles. Here we use a nanoscale on-tip scanning
+superconducting quantum interference device (SQUID-on-tip)8 to obtain
+tomographic images of the Landau levels in the quantum Hall state9 and to map the
+local θ variations in hexagonal boron nitride (hBN)-encapsulated MATBG devices with
+relative precision better than 0.002 degrees and a spatial resolution of a few moiré
+periods. We find a correlation between the degree of θ disorder and the quality of the
+MATBG transport characteristics and show that even state-of-the-art devices—which
+exhibit correlated states, Landau fans and superconductivity—display considerable
+local variation in θ of up to 0.1 degrees, exhibiting substantial gradients and networks
+of jumps, and may contain areas with no local MATBG behaviour. We observe that the
+correlated states in MATBG are particularly fragile with respect to the twist-angle
+disorder. We also show that the gradients of θ generate large gate-tunable in-plane
+electric fields, unscreened even in the metallic regions, which profoundly alter the
+quantum Hall state by forming edge channels in the bulk of the sample and may affect
+the phase diagram of the correlated and superconducting states. We thus establish
+the importance of θ disorder as an unconventional type of disorder enabling the use
+of twist-angle gradients for bandstructure engineering, for realization of correlated
+phenomena and for gate-tunable built-in planar electric fields for device applications.
+
+Strong electronic correlations arise in twisted bilayer graphene when
+the low energy bands become exceedingly narrow in the vicinity of the
+magic angle1–7, θM ≈ 1.1°. Initial estimates of the bandwidth of these flat
+bands assumed a rigid and uniform rotation between the two graphene
+sheets, leading to a moiré pattern10–13. Recent bandstructure calculations have shown, however, that twist-angle relaxation within a single
+supercell (about 13 nm for θ ≈ 1.1°), results in electronic reconstruction
+that substantially modifies the bandstructure14,15. Because the bandstructure of the flat bands is determined on a scale of several supercells, twist angle gradients—similarly to the predicted strong effects of
+heterostrain16,17—should modify the single-particle bandstructure and
+induce symmetry breaking, possibly leading to properties that have not
+yet been considered. Moreover, as correlated phenomena may occur
+owing to electronic interactions on distances larger than the supercell,
+twist-angle variations may affect the stability of the competing orders,
+enriching the phase diagram of the correlated states.
+Scanning tunnelling microscopy studies have shown that the local
+twist angle can vary substantially in the same sample; these studies
+have also observed stacking faults and structural defects18–24. Large
+
+inhomogeneities and extensive networks of stacking faults in bilayer
+graphene have also been observed by transmission electron microscopy15,25–27. In this work, we provide high-resolution maps of θ(r) in
+hBN-encapsulated MATBG devices (here r = (x, y) is the position within
+the sample). The results reveal sizeable twist-angle gradients that constitute an unconventional type of disorder that strongly affects both the
+stability of correlated phases and magneto-transport characteristics
+in twisted bilayer graphene.
+We present here local studies of two samples (devices A and B,
+see Methods), fabricated using the ‘tear-and-stack’ technique28,29.
+Their global transport data show characteristic MATBG features1–7
+including superconductivity, correlated insulator states at integer
+fractions of ns (four electrons per moiré supercell), and Landau fans,
+from which a global twist angle θ = 1.06° is derived (device B, Fig. 1b).
+We derive local maps of θ(r) by imaging the structure of the Landau
+levels throughout the sample. In a conventional quantum Hall state,
+alternating compressible and incompressible strips are formed near
+the sample edges, where the Fermi energy εF correspondingly resides
+within the Landau levels or in the energy gaps between them. These
+
+Department of Condensed Matter Physics, Weizmann Institute of Science, Rehovot, Israel. 2Department of Physics, Massachusetts Institute of Technology, Cambridge, MA, USA. 3Division of
+Arts and Sciences, NYU Shanghai, Shanghai, China. 4NYU-ECNU Institute of Physics at NYU Shanghai, Shanghai, China. 5National Institute for Material Science, Tsukuba, Japan. 6Department of
+Physics, New York University, New York, NY, USA. 7State Key Laboratory of Precision Spectroscopy, East China Normal University, Shanghai, China. 8Department of Physics, Osaka University,
+Toyonaka, Japan. 9These authors contributed equally: A. Uri, S. Grover, Y. Cao. ✉e-mail: pjarillo@mit.edu; eli.zeldov@weizmann.ac.il
+1
+
+Nature | Vol 581 | 7 May 2020 | 47
+
+Article
+a
+
+e
+
+f
+
+nanoSQUID-on-tip
+
+ne/((ns/4)
+–4.6
+
+100
+T = 1.05°
+
+Bac
+z
+
+0.6
+
+50
+
+u
+dA
+
+Bac
+z (μT)
+
+te
+
+ga
+
+0
+Dispersive
+
+P
+
+m
+Botto N
+hB
+
+2ns
+
+0
+
+–2
+
+× –1
+
+–0.2
+
+–100
+Κ
+
+–3
+
+4.6
+
+4Ba/I0
+
+0.2
+
+–50
+
+Γ
+
+Rxx (Ω)
+–4
+
+4.3
+
+4Ba/I0
+
+dc
+
+Device B
+
+4
+
+2(ns + 12Ba/I0)
+
+V bg
+
+ac
+
+V bg
+
+100 103 106
+
+b
+
+M
+
+rac
+
+I NT
+
+Ba ≈ 1 T
+T = 300 mK
+
+G
+ATB
+
+IT
+
+H (meV)
+
+BN
+
+–4
+
+0.4
+
+Dispersive
+
+Top h
+
+–4.3
+
+Μ
+
+Κ′
+
+ne/((ns/4)
+0
+
+–1
+
+–3.2
+
+1
+
+–3.0
+
+2
+
+×1
+
+Device A
+
+3.5
+
+ne (×1012 cm–2)
+
+3
+
+3.7
+
+4
+
+Ba (T)
+
+4
+
+2
+
+0
+
+c
+
+Rxx (Ω)
+
+106
+
+Global T = 1.06°
+Ba = 1.08 T
+
+Superconductivity
+
+105
+104
+103
+102
+8-fold
+
+d
+
+0.4
+
+Local T = 1.053(5)°
+Ba = 1.08 T
+
+4-fold
+4-fold
+
+8-fold
+
+Bac
+z (μT)
+
+0.2
+
+2-fold
+
+4-fold
+
+1-fold
+
+0
+
+–0.2
+
+× –1
+
+× –3
+
+–3
+
+×3
+–2
+
+–1
+
+0
+
+1
+
+2
+
+×1
+3
+
+ne (×1012 cm–2)
+Fig. 1 | Comparison between the global and local quantum Hall signatures
+in flat and dispersive bands in MATBG. a, Experimental setup schematics
+with SOT scanning over MATBG (blue and magnified view) encapsulated in hBN
+ac
+(light blue). A voltage V dc
+bg + V bg is applied between the PdAu backgate and the
+grounded MATBG. The twist-angle gradient ∇θ induces an internal electric
+field and counterpropagating equilibrium quantum Hall topological IT and
+nontopological INT currents in narrow incompressible (red) and wider
+compressible (blue) strips, respectively, flowing along equi-θ contours and
+ac
+detected by Bac
+z . V bg causes the strips to oscillate in their position with
+amplitude rac. b, Global R xx versus electron density ne and Ba for device B,
+showing insulating states at integer fillings ne/(ns/4), Landau fans and
+superconductivity. c, R xx (ne) at Ba = 1.08 T (extracted from b along the dashed
+
+purple line). A global value θ = 1.06° is determined from the transport data.
+d, Bac
+z measured at a point in the bulk of device B versus ne at Ba = 1.08 T. The
+T
+sharp Bac
+z peaks reflect I in incompressible strips with the sign determined by
+σyx, the magnitude by the energy gap of the Landau level and the separation by
+the Landau level degeneracy (red bars). The dispersive bands are shaded in
+yellow, the signal in the flat bands is amplified three times, and the p-band
+signal is multiplied by −1 for clarity. From the position of the Bac
+z peaks the local
+twist angle is determined to be θ = 1.053 ± 0.005°. e, Calculated bandstructure
+with flat (white) and dispersive (yellow) bands indicated. Blue and red
+represent the two valleys. f, Magnified Bac
+z peaks in the dispersive bands for
+device A at Ba = 1.19 T, illustrating the procedure for determining the local ns and
+the corresponding local θ. The p-band signal is multiplied by −1.
+
+strips respectively carry counterpropagating nontopological (INT)
+and topological (IT) equilibrium currents, as demonstrated recently
+in graphene9. By contrast, in MATBG these strips are found in the bulk
+of the sample instead of along the edges (Fig. 1a).
+
+We image these currents using a superconducting quantum interference device fabricated on the apex of a sharp pipette8,9 (SQUID-on-tip,
+SOT; Fig. 1a). The Pb SOT, with a typical diameter d ≈ 200 nm, is scanned
+at a height of hSOT ≈ 30 nm above the sample surface at T = 300 mK in
+
+48 | Nature | Vol 581 | 7 May 2020
+
+a
+
+±
+
+
+
+
+
+× ±
+
+Bac
+z (μT)
+
+±
+
+
+
+× ±
+
+ne/((ns/4))x = 0
+±
+
+±
+
+
+
+±
+
+
+
+
+
+
+
+× × 
+
+'HYLFH A
+
+
+
+'LVSHUVLYH
+
+[ μP
+
+
+
+
+
+±QV
+
+
+
+
+
+
+
+±
+
+c
+
+
+
+
+
+
+
+9EJ 9
+
+
+
+[ μP
+
+
+
+
+
+d
+
+
+
+
+
+
+
+
+
+
+δnd (×1010 cm–2)
+
+ns (×1012 cm–2)
+
+b
+
+±
+
+T °
+
+±
+
+QV
+
+
+
+±
+
+
+
+
+[ μP
+
+
+
+
+
+
+
+[ μP
+
+
+
+Fig. 2 | Structure of the Landau levels and derivation of the twist angle
+along a line scan. a, Bac
+z (x ) versus V bg for device A acquired along the dashed
+line in Fig. 3a. The top axis denotes ne/(ns(x)/4) for x = 0 and the separation
+between the yellow dashed lines describes the evolution of ns(x). The
+
+dispersive-band regions are marked in yellow. The signal in the flat bands is
+amplified seven times and multiplied by −1 for p doping such that
+incompressible strips are bright. b–d, The derived position-dependent ns(x)
+(b), θ(x) (c) and the charge disorder δnd(x) (d).
+
+an out-of-plane magnetic field, Ba ≈ 1 T. We apply a small a.c. excitation,
+dc
+V ac
+bg onto the d.c. backgate voltage, V bg, which causes a small a.c. displacement rac of the position of the IT strips along the direction of the
+twist-angle gradient, ∇θ(r) (see Fig. 1a. Henceforth, ∇ = (∂x, ∂y) represents the two-dimensional gradient in the x–y plane). The corresponding a.c. Biot–Savart magnetic field, Bac
+z , is directly proportional to the
+local current density, eliminating the need for current reconstruction
+(see Methods). Bac
+z shows a sharp peak whenever the narrow (approximately 50-nm width) incompressible strips pass under the tip (Fig. 1a
+and Extended Data Fig. 4), providing very sensitive means for nanoscale
+imaging of the Landau levels.
+Figure 1d shows a sequence of these Bac
+z peaks versus the local carrier
+density ne for device B, acquired at a fixed SOT position, in comparison
+with the corresponding trace of the longitudinal resistance Rxx (Fig. 1c)
+at Ba = 1.08 T. The position and magnitude of these peaks provide a
+wealth of information. An incompressible quantum Hall strip appears
+at location r in the sample when the local carrier density precisely
+matches an integer number N of full Landau levels, |ne(r)| = gN|Ba|/ϕ0,
+where g is the Landau level degeneracy and ϕ0 = h/e (e is the elementary
+charge, h is Planck’s constant). Hence, the spacing Δne between adjacent
+peaks reveals the degeneracy g of the Landau levels. The height of the
+T
+2
+Bac
+z peaks is proportional to I = σyxΔεn/e (where σyx = νe /h is the quantum
+Hall conductance and ν = gN is the integer filling factor), and thus reflects
+the energy gap between the adjacent Landau levels, Δεn = ε|n|+1 – ε|n|,
+where n = 0, ±1, ±2… is the Landau level index (see Methods).
+We start by inspecting high dopings, |ne| > ns, for which the Fermi
+level εF resides in the dispersive bands (yellow in Fig. 1e). Figure 1f presents a magnification of the four lowest Landau levels in the electron-like
+(n) and hole-like (p) dispersive bands for device A at Ba = 1.19 T. The
+spacing between neighbouring peaks is Δne = 1.15 × 1011 cm−2 = 4Ba/ϕ0,
+showing that these Landau levels are fourfold degenerate. The spacing
+between the corresponding p and n Landau levels is 2(ns(r) + 4N|Ba|/ϕ0),
+as illustrated in Fig. 1f. The IT peaks are very sharp, and so high-accuracy
+determination of the local ns(r) and thus of the local twist angle
+
+θ(r) = a 3 ns(r)/8 (a = 0.246 nm is the graphene lattice constant) is
+obtained with an absolute accuracy of ±0.005° and a relative accuracy
+between different locations of ±0.0002° (see Methods). In the
+two-dimensional (2D) scanning mode described below, we attain a
+sensitivity of 0.007° per Hz1/2 and provide θ(r) maps with relative accuracy better than ±0.002°.
+Instead of measuring at a fixed location, Fig. 2a shows Bac
+z in device A
+acquired upon scanning the SOT along the white dashed line in Fig. 3a
+and sweeping Vbg, revealing that the Landau levels vary in space, forming rich patterns. Moreover, the degeneracy of the higher Landau levels toggles between fourfold and eightfold as a function of position,
+and a pronounced asymmetry between the Landau level structure in
+the n and p dispersive bands is observed.
+As in Fig. 1f, by tracing the spacing between the lower Landau levels
+we derive the local ns(x) = C[Vns(x) – V−ns(x)]/2, where Vns(x) and V−ns(x)
+are the backgate voltages corresponding to the local filling of the flat
+bands |ne(x)| = ns(x) (dashed yellow curves in Fig. 2a), and C is the backgate capacitance (see Methods). The obtained ns(x) (Fig. 2b) varies by
+about 2.4 × 1011 cm−2, corresponding to a local variation in θ(x) of 3.9%,
+from 1.124° to 1.169° over the 2.7-μm-long path (Fig. 2c). In addition to
+the twist-angle disorder, which shifts the p and n Landau levels antisymmetrically, we also derive the local charge disorder nd(x), which shifts
+all the Landau levels symmetrically through variation of the local charge
+neutrality point (CNP), nd(x) = CVCNP(x) = [Vns(x) + V−ns(x)]/2. The derived
+charge disorder δnd(x) = nd(x) − nd (Fig. 2d) has a standard deviation
+(s.d.) = 0.8 × 1010 cm−2, which is substantially smaller than the variation
+in ns(x), showing that the dominant source of disorder in this MATBG
+device arises from variations in θ(r), as evidenced in Fig. 2a by the
+antisymmetric bending of the dispersive p and n Landau levels.
+To derive full maps of the local twist angle θ(r) and the charge disorder δnd(r), we acquired Bac
+z (r) (Supplementary Videos 1–4) by incrementing Vbg through the bottom of the dispersive bands. Figure 3a
+displays one frame from Supplementary Video 2 showing a large-area
+Nature | Vol 581 | 7 May 2020 | 49
+
+Article
+a
+
+–1 0 1
+
+b 1.05
+
+–Bzac (μT)
+
+1.18
+
+c 0
+
+T (°)
+
+0.12
+
+d
+
+|∇ T| (° μm–1)
+
+0.4
+
+0.8 ac
+–Bz (μT)
+
+Device A
+
+–11
+
+–10
+
+Vbg (V)
+
+Gate
+
+–9
+8
+6
+
+2 μm
+
+1 μm
+
+e
+
+–0.4
+
+f 0.98 1.07
+
+0.4 ac
+–Bz (μT)
+
+1 μm
+
+1 μm
+T (°)
+
+g 0
+
+0.17
+|∇T| (° μm–1)
+
+h –5
+
+5
+
+δnd (×1010 cm–2)
+
+0
+y (μ 4
+m)
+
+2
+0
+
+i
+
+1.06°
+
+4
+
+2 )
+μm
+x(
+
+1.15°
+
+Device B
+0.2
+Device A
+
+Area fraction
+
+Device B
+
+2 μm
+
+0.0
+
+1 μm
+
+1 μm
+
+1 μm
+
+1 μm
+
+1.00
+
+1.05
+1.10
+1.15
+Twist angle, T (°)
+
+1.20
+
+Fig. 3 | Mapping the twist angle and Landau levels in MATBG. a, Bac
+z image of
+the dashed area indicated in the inset at V bg = −16.4 V. Incompressible
+(compressible) quantum Hall regions are visible as bright blue to yellow (dark
+blue). Inset, AFM image of the hBN-encapsulated MATBG device A with edges
+outlined in white; the light-brown area indicates the underlying PdAu backgate
+and the bright spots show bubbles. b, 2D map of the twist angle θ(r) derived
+from tomography of Supplementary Video 1 in the dashed region shown in a.
+Grey-blue indicates regions that do not display MATBG physics owing to
+disorder (bubbles outlined in black) or to a twist angle that is substantially
+
+different to the magic angle. The dashed area is presented tomographically in
+d. c, 2D map of |∇θ(r)| showing patches of slowly varying θ(r) and a network of
+abrupt jumps in θ. d, A slice from the tomography of device A showing
+disordered Landau levels in the bulk of the sample in the p dispersive band
+(Supplementary Video 5, and see ref. 30 for an interactive interface). The x axis is
+flipped for clarity. e–g, As in a–c, for device B. e was acquired at V bg = −15 V and f
+is derived from tomography of Supplementary Videos 3, 4. h, Charge disorder
+map δnd(r) of device B. i, Histogram of local θ in devices A and B. The dashed
+lines mark the global θ derived from transport measurements.
+
+scan of device A (dashed rectangle in the inset), and Supplementary
+Video 1 presents a magnification of the central region (dashed rectangle in Fig. 3a). The red stripes reveal incompressible regions carrying
+IT and the dark blue regions mark the compressible areas carrying the
+counterpropagating INT. As Vbg varies, the quantum Hall states move
+and change their shape in an intricate manner. Notably, the quantum
+Hall edge states are present in the bulk of the sample and do not flow
+parallel to the sample edges as would be expected. Moreover, large
+parts of the sample do not show Landau levels at all. These are the
+regions that are either highly disordered or may have a twist angle that
+is very different to the magic angle, with θ either close to zero or θ > 1.5°
+such that the dispersive bands are reached at a Vbg outside our range.
+Thus, the magic-angle behaviour appears only in a limited central
+region of the sample and does not fully extend to the edges. By comparison, device B displays quantum Hall states over most of its area as
+revealed by the image of Bac
+z in Fig. 3e. Supplementary Videos 3 and 4
+show the evolution of the Landau levels in the central part of the Hall
+bar structure (dashed rectangle in the inset) in the p and n dispersive
+bands, respectively.
+Using these data we generate a three-dimensional (3D) tomographic
+rendering of the Landau levels throughout the samples (see Methods),
+which can be inspected interactively online30. Figure 3d shows a slice
+of the tomographic data of device A (see Supplementary Video 5),
+
+revealing the layered structure of incompressible (light blue/red) and
+compressible (dark blue) quantum Hall regions. Notably, the Landau
+levels display steep slopes and numerous small jumps in the bulk of
+the sample, revealing that at any value of Vbg (represented by a horizontal tomographic plane) several different Landau levels cross εF in
+the bulk of the sample, never forming a well defined single quantum
+Hall state. This observation explains the absence of clear conductance
+oscillations and quantization in the global Rxx data in the dispersive
+bands in Fig. 1c, despite the presence of fully developed Landau levels
+as observed locally in Fig. 1d.
+Applying the procedure of Fig. 1f to the tomographic data, we derive
+2D maps of the charge disorder (Fig. 3h; see discussion in Methods)
+and of the twist angle θ(r) in devices A and B (Fig. 3b, f). The grey-blue
+colour in Fig. 3b reflects areas where no quantum Hall states were
+detected within the measured span of Vbg. These regions correlate with
+the locations of bubbles (black outlines) as revealed by atomic force
+microscopy (AFM) of device A (Fig. 3a, inset). Magic-angle behaviour
+is apparently absent within the bubbles and in their surrounding areas,
+up to 0.5 μm from the bubble edges. The Landau levels are also absent
+in additional regions where no particular features were observed by
+AFM. The map in Fig. 3b also shows that the magic-angle regions in
+device A do not create a percolation path between the contacts. This
+is consistent with our transport measurements, which do not show
+
+50 | Nature | Vol 581 | 7 May 2020
+
+a
+
+Ba = 0
+
+f
+
+TL < TR
+
+Ba = 1.22 T
+
+T (°)
+
+1.100
+
+1.125
+
+1.150
+
+60
+E|| = ∇P/q
+
+H
+
+CNP
+ΔP
+
+n-flat
+
+c
+
+e
+
+δne (×109 cm–2)
+
+d
+
+Ex (kV m–1)
+
+V (mV)
+
+43.5
+
+n=2
+
+T (°)
+1.125
+
+g
+1.150
+
+43
+
+h
+
+42.5
+0.4
+0.2
+0
+
+i
+
+1
+0
+–1
+–1
+
+0
+x (μm)
+
+Landau levels
+
+n=1
+
+p-flat
+DOS
+
+DOS
+
+40 nm
+
+n-flat
+
+p-flat
+
+1.100
+
+n=4
+n=3
+
+1
+
+P
+
+100
+
+Ex (kV m–1)
+
+PR
+
+PL
+CNP
+
+Energy (meV)
+
+n-dispersive
+
+n-dispersive
+
+HF
+
+40
+
+J T (μA μm–1)
+
+H
+
+δne (×109 cm–2)
+
+b
+
+50
+n=4
+
+0
+
+n=3
+
+n=2
+
+Incompressible
+
+10
+5
+0
+
+Compressible
+
+Compressible
+
+Compressible
+
+4
+0
+–4
+–1
+
+0
+x (μm)
+
+1
+
+Fig. 4 | Internal electric fields, unconventional quantum Hall state and
+equilibrium currents induced by twist-angle gradients. a, Schematic
+representation of a MATBG sample with two connected regions of different
+twist angle, giving rise to an internal electric field E||. b, Schematic DOS in the
+two regions with differing ns. The backgate voltage V bg imposes nearly the same
+electron density ne (blue areas) in the two regions; however, the difference in ns
+results in different chemical potentials μL and μR, giving rise to E|| = ∇μ/q.
+c–e, Finite element calculation of the potential V(x) = −μ(x)/q (c), the electric
+
+field E x (x) (d) and the carrier concentration δne = ne(x) − ne (e) for the case of
+linear change in θ from 1.10° to 1.15° with a 0.025° μm−1 gradient and an average
+carrier density ne = 3.25 × 1012 cm−2 at Ba = 0. f–i, Single-particle calculation of
+Landau level energies ε n(x) in the electron-like dispersive band (blue) and the
+self-consistent calculation of the chemical potential μ(x) (red; f), E x (x) (g), JT(x)
+(h) and δne(x) (i) at Ba = 1.22 T. Sharp peaks in E x and JT correspond to narrow
+(about 40-nm wide) incompressible strips (shaded red) that are observed
+experimentally as peaks in Bac
+z .
+
+fully developed superconductivity, although correlated insulating
+states are present in this device. By contrast, in device B four-probe
+transport measurements showed high-quality correlated insulator
+states at multiple integer filling factors, and a zero-resistance superconducting state (see Methods) consistent with the observation that
+the magic-angle area extends over the entire length of the central part
+of the device and shows a more uniform θ(r) (Fig. 3f).
+The magic-angle regions show substantial twist-angle disorder
+(Fig. 3i, histogram). θ(r) spans a range of 0.13° (1.05° to 1.18° with
+s.d. = 0.025°) in device A (Fig. 3b) and 0.10° in device B (0.98° to 1.08°,
+s.d. = 0.022°, Fig. 3f). Moreover, the topography of θ(r) is nontrivial,
+with numerous peaks and valleys as well as saddle points. Because the
+Landau levels in the dispersive band follow the bottom of the band,
+2
+ns = 8θ /( 3 a 2), they appear first at the minimum of the θ(r) landscape,
+which for device A occurs in the lower-right corner (dark brown in
+Fig. 3b). This behaviour is clearly visible in Supplementary Video 1, in
+which arc-like incompressible strips (bright) first appear at this corner
+and upon increasing |Vbg| ‘climb’ the amphitheatre-like θ(r) landscape
+following the equi-θ(r) contours. Similar behaviour is observed in other
+regions, with interesting dynamics occurring at the saddle points, as
+described in Methods.
+The θ(r) derived in Fig. 3b, f is smooth with typical gradients of around
+0.05° μm−1. Figure 3c, g (which shows the gradient maps |∇θ(r)|), reveals
+that variations in θ(r) partially occur through a network of small steps of
+variable sizes, reaching a maximum step size of about 0.01°. The derived
+patterns strongly resemble the stacking-fault networks in bilayer graphene observed by transmission electron microscopy15,25–27. These
+steps cause the stepwise jumps in the Landau levels that are visible
+in the tomographic view in Fig. 3d and Extended Data Fig. 8a, c. This
+finding implies that the smooth variations in θ(r) are accompanied by
+
+occasional small, abrupt changes across stacking faults that relax the
+tensile and shear stress.
+The revealed twist-angle disorder and gradients ∇θ(r) may have
+substantial implications on the phase diagram and transport properties of MATBG. Connecting regions of different θ (Fig. 4a) is akin to
+connecting materials with different work functions (Fig. 4b), resulting
+in band-bending and creation of internal electric fields (Fig. 4c–e).
+The backgate voltage, Vbg, imposes a nearly uniform carrier density,
+ne ≈ CVbg. Locations with different θ(r), and hence a different density
+of states (DOS), translate this ne into a different chemical potential
+μ(r). At thermal equilibrium the Fermi level must be uniform, εF =
+μ + qV = 0 (where the last equality reflects the grounding of the device;
+q = ±e is the charge of the carriers), and so variation in the chemical
+potential μ(r) imposes band-bending—that is, it imposes variation in
+the electric potential V(r) = −μ(r)/q and creates an in-plane electric
+field E|| = −∇V that cannot be screened. Using the DOS derived from
+bandstructure calculations (see Methods), Fig. 4c–e presents a
+self-consistent numerical calculation of V(x), E(x) and δne(x) = ne(x) − ne
+at Ba = 0 for the case of linearly varying θ(x) with ∇θ = 0.025° μm−1 comparable to the measured average gradients in Fig. 3c, g. A large electric
+field E ≈ 0.4 kV m−1 is formed in the region of varying θ(x), whereas the
+accompanying charge redistribution remains negligible,
+δne(x)/ne ≈ ±3 × 10−5. Note that for Vbg = 0, the twist-angle disorder has
+essentially no effect (Δμ(r) = 0 and E|| = 0) and its impact grows with
+increasing ne .
+In the presence of a magnetic field, Landau levels are formed as
+depicted by the blue lines in Fig. 4f (see Methods). At high doping,
+|ne| > ns, gradients in θ(r)—and therefore in ns(r)—induce variation in
+the dispersive band occupation, |ne| − ns(r), because ne = CVbg is approximately constant. As a result, an unusual quantum Hall state emerges
+Nature | Vol 581 | 7 May 2020 | 51
+
+Article
+in which instead of being restricted to the edges, the quantum Hall
+edge states are formed in the bulk, creating interlaced compressible and incompressible strips with different integer filling factors
+(Fig. 4g–i). This absence of a well defined quantum Hall state provides
+an explanation for the Shubnikov–de Haas (SdH) oscillations without full conductance quantization that are commonly seen in MATBG
+magnetotransport1–7.
+In contrast with conventional quantum Hall behaviour, in which
+the edge states must form closed loops, here the edge states seem to
+terminate in the bulk upon reaching apparently disordered metallic
+regions (Supplementary Videos 1–4). Moreover, instead of the constant
+carrier density that is usually required in incompressible regions, in the
+presence of a θ gradient the density varies following the variation in
+ns(r) (Fig. 4i). ∇θ(r) also causes accidental Landau level crossings (for
+example, indicated by the red circle in Fig. 4f) giving rise to occasional
+eightfold degenerate Landau levels in the dispersive bands, as observed
+in Figs. 1d, 2a and Extended Data Fig. 6. Figure 4g also shows large electric fields (approximately 105 V m−1) formed in the incompressible strips,
+giving rise to very narrow channels of persistent current IT (Fig. 4h),
+consistent with the experimental data (Extended Data Fig. 4g). The
+typical width of the channels (around 50 nm) along with the local |∇θ(r)|,
+determines the spatial resolution of our θ(r) mapping (see Methods).
+Finally, we discuss the rich structure observed in the flat bands in
+Figs. 1, 2. In contrast to transport measurements that resolve SdH oscillations at high fields where some of the degeneracies may be lifted,
+we probe the Landau levels locally at relatively low fields. The zeroth
+Landau level at the charge neutrality point is apparently eightfold
+degenerate, followed by fourfold degenerate Landau levels on both
+sides (Fig. 1d). It has been argued that such degeneracy indicates breaking of C3 symmetry31,32, which may in turn be triggered by the observed
+θ gradients. Figures 1d, 2a show that these Landau levels are sometimes
+observed to extend beyond ns/4 on both the p and n sides, although at
+other locations new, irregular Landau levels seem to emerge for n doping above ns/4, as visible in Fig. 1d. The Landau levels clearly reappear
+above ns/2 for both dopings, showing a degeneracy of 2 (Fig. 2a and
+Extended Data Fig. 7). We occasionally observe single-fold Landau
+levels above 3ns/4 for both dopings, as seen in Fig. 1d and Extended Data
+Fig. 7. We also observe that the amplitudes of the IT peaks stemming
+from different integer fillings often follow a smooth envelope. Since
+the amplitudes of the IT peaks are proportional to the energy gaps Δεn,
+this signifies that the energy gaps between consecutive Landau levels
+are of similar (not alternating) magnitudes, indicating full lifting of a
+degeneracy. Importantly, Figs. 1d, 2a and Extended Data Fig. 7 show
+that the Landau levels near ns/4 and ns/2 are discontinuous and that
+those above 3ns/4 appear only at a few locations, indicating the extreme
+fragility of the correlated states to twist-angle disorder.
+Twist-angle disorder as we have described here is a previously unrecognized type of disorder. It is fundamentally different to other, more
+common disorders, owing to its ability to change the local bandstructure and to induce large unscreened electric fields. The growth of its
+effect with the carrier density |ne| explains the higher visibility of the
+Landau fan near the charge neutrality point in transport measurements. The charge disorder in graphene is commonly characterized
+by the width of the resistance peak at the charge neutrality point. This
+width, however, bears almost no information on twist-angle disorder.
+Instead, our results suggest that the twist-angle disorder should be
+quantified by analysing the width of the resistive peak at ns and the visibility of the Landau fans at |ne| > ns. Our finding that the quantum Hall
+state is strongly altered by the twist-angle gradient suggests that other
+correlated phases in MATBG—including magnetism and superconductivity—may also be fundamentally transformed by the twist-angle
+disorder. The gate-tunable intrinsic in-plane electric fields generated
+by the twist-angle gradients may also be of practical importance for
+
+52 | Nature | Vol 581 | 7 May 2020
+
+photovoltaic and thermoelectric applications of atomically thin twisted
+van der Waals materials.
+
+Online content
+Any methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information,
+acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code
+availability are available at https://doi.org/10.1038/s41586-020-2255-3.
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+
+Cao, Y. et al. Correlated insulator behaviour at half-filling in magic-angle graphene
+superlattices. Nature 556, 80–84 (2018).
+Cao, Y. et al. Unconventional superconductivity in magic-angle graphene superlattices.
+Nature 556, 43–50 (2018).
+Yankowitz, M. et al. Tuning superconductivity in twisted bilayer graphene. Science 363,
+1059–1064 (2019).
+Serlin, M. et al. Intrinsic quantized anomalous Hall effect in a moiré heterostructure.
+Science 367, 900–903 (2019).
+Sharpe, A. L. et al. Emergent ferromagnetism near three-quarters filling in twisted bilayer
+graphene. Science 365, 605–608 (2019).
+Tomarken, S. L. et al. Electronic compressibility of magic-angle graphene superlattices.
+Phys. Rev. Lett. 123, 046601 (2019).
+Lu, X. et al. Superconductors, orbital magnets and correlated states in magic-angle
+bilayer graphene. Nature 574, 653–657 (2019).
+Vasyukov, D. et al. A scanning superconducting quantum interference device with single
+electron spin sensitivity. Nat. Nanotechnol. 8, 639–644 (2013).
+Uri, A. et al. Nanoscale imaging of equilibrium quantum Hall edge currents and of the
+magnetic monopole response in graphene. Nat. Phys. 16, 164–170 (2020).
+Suárez Morell, E., Correa, J. D., Vargas, P., Pacheco, M. & Barticevic, Z. Flat bands in slightly
+twisted bilayer graphene: tight-binding calculations. Phys. Rev. B 82, 121407 (2010).
+Bistritzer, R. & MacDonald, A. H. Moiré bands in twisted double-layer graphene. Proc. Natl
+Acad. Sci. USA 108, 12233–12237 (2011).
+Lopes dos Santos, J. M. B., Peres, N. M. R. & Castro Neto, A. H. Continuum model of the
+twisted graphene bilayer. Phys. Rev. B 86, 155449 (2012).
+Moon, P. & Koshino, M. Optical absorption in twisted bilayer graphene. Phys. Rev. B 87,
+205404 (2013).
+Nam, N. N. T. & Koshino, M. Lattice relaxation and energy band modulation in twisted
+bilayer graphene. Phys. Rev. B 96, 075311 (2017).
+Yoo, H. et al. Atomic and electronic reconstruction at the van der Waals interface in
+twisted bilayer graphene. Nat. Mater. 18, 448–453 (2019).
+Huder, L. et al. Electronic spectrum of twisted graphene layers under heterostrain. Phys.
+Rev. Lett. 120, 156405 (2018).
+Bi, Z., Yuan, N. F. Q. & Fu, L. Designing flat bands by strain. Phys. Rev. B 100, 035448
+(2019).
+Li, G. et al. Observation of van Hove singularities in twisted graphene layers. Nat. Phys. 6,
+109–113 (2010).
+Brihuega, I. et al. Unraveling the intrinsic and robust nature of van Hove singularities in
+twisted bilayer graphene by scanning tunneling microscopy and theoretical analysis.
+Phys. Rev. Lett. 109, 196802 (2012).
+Wong, D. et al. Local spectroscopy of moiré-induced electronic structure in gate-tunable
+twisted bilayer graphene. Phys. Rev. B 92, 155409 (2015).
+Jiang, Y. et al. Flat bands in buckled graphene superlattices. Preprint at https://arxiv.org/
+abs/1904.10147 (2019).
+Kerelsky, A. et al. Maximized electron interactions at the magic angle in twisted bilayer
+graphene. Nature 572, 95–100 (2019).
+Choi, Y. et al. Electronic correlations in twisted bilayer graphene near the magic angle.
+Nat. Phys. 15, 1174–1180 (2019).
+Xie, Y. et al. Spectroscopic signatures of many-body correlations in magic-angle twisted
+bilayer graphene. Nature 572, 101–105 (2019).
+Alden, J. S. et al. Strain solitons and topological defects in bilayer graphene. Proc. Natl
+Acad. Sci. USA 110, 11256–11260 (2013).
+Lin, J. et al. AC/AB stacking boundaries in bilayer graphene. Nano Lett. 13, 3262–3268
+(2013).
+Butz, B. et al. Dislocations in bilayer graphene. Nature 505, 533–537 (2014).
+Cao, Y. et al. Superlattice-induced insulating states and valley-protected orbits in twisted
+bilayer graphene. Phys. Rev. Lett. 117, 116804 (2016).
+Kim, K. et al. van der Waals heterostructures with high accuracy rotational alignment.
+Nano Lett. 16, 1989–1995 (2016).
+Landau Level Tomography of Magic Angle Twisted Bilayer Graphene (MATBG) (2019);
+www.weizmann.ac.il/condmat/superc/software/matbg.
+Hejazi, K., Liu, C. & Balents, L. Landau levels in twisted bilayer graphene and semiclassical
+orbits. Phys. Rev. B 100, 035115 (2019).
+Zhang, Y. H., Po, H. C. & Senthil, T. Landau level degeneracy in twisted bilayer graphene:
+role of symmetry breaking. Phys. Rev. B 100, 125104 (2019).
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional affiliations.
+© The Author(s), under exclusive licence to Springer Nature Limited 2020
+
+Methods
+Device fabrication
+The MATBG devices were fabricated using the previously reported ‘tear
+and stack’ technique28,29,33. We first exfoliated monolayer graphene and
+hBN of 10- to 50-nm thickness on SiO2/Si substrates, annealed at 350 °C
+(for hBN only) and selected using optical microscopy and AFM. Only
+flakes without wrinkles and bubbles were used. A PC/PDMS polymer
+stack on a glass slide mounted on a micro-positioning stage was used
+to pick up an approximately10-nm-thick hBN flake. The edge of the hBN
+flake was then used to tear a graphene flake. The substrate was rotated
+by 1.1° to 1.2°, followed by pickup of the other piece of graphene. The
+resulting stack was encapsulated with another hBN flake of thicknesses
+of 30–70 nm that had been put onto a metallic gate made of evaporated
+Cr/PdAu. The device geometry was defined by electron-beam lithography and reactive ion etching, keeping only the relatively clean regions.
+Electrical contacts to the MATBG were made by the one-dimensional
+edge-contact method34.
+Optical images of devices A and B are shown in Extended Data
+Fig. 1a, b, respectively. Device A was fabricated on a degenerately doped
+Si substrate with 300-nm SiO2. The MATBG resides partly on SiO2 and
+partly on the evaporated metallic backgate (light brown in Extended
+Data Fig. 1a). In this work, only the metallic backgate has been used for
+varying the carrier concentration ne and a constant voltage V Si
+bg = 50 V
+was applied to the Si backgate for keeping the rest of the sample conductive during the transport measurements. Device B was fabricated
+on an intrinsic Si substrate with a metallic backgate extending over the
+full size of the device (light blue in Extended Data Fig. 1b).
+Transport characteristics
+Four-probe resistance measurements of the samples at T = 300 mK are
+shown in Extended Data Figs. 2, 3. Both devices exhibit the common
+transport characteristics of correlated physics in MATBG1–3,5–7, including Rxx peaks at ns and its integer fractions, and Landau fans at elevated
+magnetic field. The slopes of the Landau fans in Extended Data Fig. 2a, b
+were used to extract the backgate capacitances C of 3.07 × 1011 cm−2 V−1
+(49.23 nF cm−2) for device A and 2.31 × 1011 cm−2 V−1 (37 nF cm−2) for device B,
+consistent with the evaluated dielectric thickness of the underlying hBN.
+The origins of the Landau fans were used to derive the global ns and the
+corresponding global θ = 1.15° for device A and θ = 1.06° for device B, in
+good correspondence with histograms of the local twist angle in Fig. 3i. In
+device A the global θ correlates with the average of the θ(r) distribution,
+whereas in device B it is close to the upper end of the distribution function. Consistently, the four-probe transport measurements in device B
+probe the central part of the Hall bar structure (Extended Data Fig. 1b),
+where θ(r) is at its highest and is considerably more uniform (Fig. 3f),
+whereas the low end tail of θ(r) distribution arises from regions that are
+not probed by transport measurements.
+In addition, in device B we observe the superconducting state in
+the vicinity of p-doped ns/2 with zero Rxx; this superconducting state
+becomes suppressed by small magnetic field (Extended Data Fig. 3b).
+The critical current in the superconducting state reaches about 100 nA,
+as determined by the differential dV/dI characteristics (Extended Data
+Fig. 3c), and depends sensitively on the carrier density ne. The observation of fully developed superconductivity in device B is consistent with
+the finding of a continuous magic-angle region between the voltage
+contacts in Fig. 3f. Suppression of the resistance was also observed in
+device A (Extended Data Fig. 3a), but the lowest Rxx was 328 Ω, suggestive of the presence of some superconducting regions but absence of
+a percolation path between the voltage contacts, consistent with the
+θ map in Fig. 3b.
+SOT fabrication and characterization
+The Pb SOTs were fabricated as described in ref. 8 with diameters ranging from 220 to 250 nm, and they included an integrated shunt resistor
+
+on the tip35. The SOT readout was carried out using a cryogenic SQUID
+series array amplifier36–38. The magnetic imaging was performed in a 3He
+system39 at 300 mK, at which the Pb SOTs can operate in magnetic fields
+of up to 1.8 T. At the fields Ba ≈ 1.2 T used in this study, the SOTs displayed
+flux noise down to 250 nΦ0 per Hz1/2 (where Φ0 is the superconducting
+flux quantum, Φ0 = h/2e ≈ 2 × 10−7 G cm−2), spin noise of 10μB per Hz1/2
+(μB, Bohr magneton), and field noise down to 10 nT per Hz1/2. For height
+control, we attached the SOT to a quartz tuning fork, as described
+in ref. 40. The tuning fork was electrically excited at the resonance
+frequency of ~33 kHz. The current through it was amplified using a
+room-temperature custom-built trans-impedance amplifier, designed
+based on ref. 41 and measured using a lock-in amplifier. The scanning
+was performed at a constant height of 20 to 100 nm above the surface
+of the top hBN.
+
+Technique for direct imaging of the current and evaluation of
+the current in the incompressible strips
+To avoid the 1/f noise of the SOT that is present at frequencies below
+~1 kHz, an a.c. signal from backgate modulation was acquired instead
+of measuring the local d.c. Bz(r). We applied a small a.c. excitation to
+ac
+the backgate (Fig. 1a), Vbg =V dc
+bg + V bg sin(2πft), where f ≈ 3 kHz, and the
+ac
+ac
+corresponding B z = V bg∂Bz /∂Vbg was then measured by the SOT using
+a lock-in amplifier. Another major advantage of this modulation is that
+it provides a convenient method for direct imaging of the local current
+density J(r). To demonstrate its principle, consider a θ gradient in the
+x direction that gives rise to a narrow strip of current of width Δx positioned at x0, and carrying a current density Jy in the y direction with a
+total current Iy = ΔxJy (Extended Data Fig. 4a). The magnetic field Bz(x)
+generated by the current and measured at a height hSOT above it is
+described by the Biot–Savart law (Extended Data Fig. 4b). For heights
+hSOT > Δx, Bz(x) is largely governed by only the total current Iy in the strip,
+independent of Δx. Bz(x) is an antisymmetric function with a steep
+slope above the current strip. Its spatial derivative ∂Bz/∂x has a sharp
+peak at the strip location (Extended Data Fig. 4c), with a height proportional to Iy, and thus can provide a good means for direct imaging
+of the current-density distribution Jy(x) if this distribution can be
+modulated in space in the x direction. The backgate voltageV ac
+bg provides
+this spatial modulation, as follows. In the presence of potential gradients, the quantum Hall edge channels flow along equipotential contours
+(given by equi-θ contours in the absence of charge disorder). A small
+ac
+ac
+V ac
+bg thus shifts the location of the channel by x 0 = V bg∂x0 /∂Vbg in the
+direction parallel to the gradient and perpendicular to the current flow.
+, the measured signal will be
+So regardless of the gradient direction x
+ac
+ac
+given by Bac
+,
+thus
+providing direct imaging of
+z = − x 0 ∂Bz /∂x ∝ x 0 Jy (x )
+the local current density. Extended Data Fig. 4d–f presents a simulation
+of three counterpropagating current strips demonstrating the Bac
+z
+imaging for this case.
+ac
+The sharpness of the Bac
+z peak is determined by Δx, hSOT, x 0 and the
+SOT diameter. In Fig. 2a, the scanning height above the MATBG is
+hSOT = 70 nm (including hBN) and the effective SOT diameter is 220 nm;
+hence the spatial resolution is largely determined by the SOT diameter.
+For these parameters and a root mean square (r.m.s.) x ac
+0 = 54 nm,
+Extended Data Fig. 4c shows that a current strip that is narrower than
+~150 nm will result in a resolution-limited Bac
+z peak (compare the solid
+and dashed lines).
+We now use this numerical procedure to analyse the data in Fig. 2a,
+which presents the Bac
+z signal along the white dashed line in Fig. 3a; this
+dashed line is aligned along the twist-angle gradient in a region of
+largely smooth θ(r) behaviour (light brown region in the top-left corner
+of Fig. 3b, see also Supplementary Video 1). Extended Data Fig. 4g presents an example of the Bac
+z data from Fig. 2a at Vbg = −10.54 V displaying
+the Bac
+z peak (blue). The data at consecutive Vbg values show that the
+peak position x0 shifts with Vbg at a rate of ∂x0/∂Vbg = 1.54 μm V−1, cor∂x ∂n
+responding to a twist-angle gradient ∂∂θx = C /  ∂V 0 ∂θs  = 0.0374° μm−1
+ bg
+
+
+Article
+∂n
+
+(where ∂θs =
+
+16 θ
+3 a2
+
+). The data were acquired with an r.m.s. voltage,
+∂x
+
+0
+ac
+ac
+V ac
+bg = 35 mV, inducing an r.m.s. x 0 = V bg ∂V = 54 nm. The red curve in
+bg
+
+Extended Data Fig. 4g shows a numerical fit to the data using these
+experimental parameters and a current-strip width of Δx = 50 nm, resulting in IT = 1.3 μA. The good fit shows that the experimental results are
+consistent with our simulations presented in Fig. 4f–i, although the
+exact value of Δx cannot be determined because the experimental Bac
+z
+peak is resolution-limited by the diameter of the SOT.
+The extracted value IT = 1.3 μA is not sensitive to precise Δx. Because
+T
+I = σyxΔεn/e = νΔεne/h, and ν = −12 in Extended Data Fig. 4g, we obtain
+Δεn = 2.8 meV, comparable to the values derived from bandstructure
+calculations (Extended Data Fig. 10a). Using Δx = 50 nm we obtain
+(in the incompressible region) an in-plane electric field of E|| = Δεn/
+(eΔx) = 56 kV m−1 comparable to the simulation values in Fig. 4g.
+
+Topological and nontopological currents in the incompressible
+and compressible quantum Hall strips
+Gradients in the twist angle ∇θ give rise to gradients in the chemical
+potential ∇μ and to alternating compressible (when μ resides within a
+Landau level) and incompressible (μ in the energy gap between Landau
+levels) quantum Hall strips (Fig. 4f–i). Both regions carry current42;
+however, usually only the currents in the incompressible strips, JT = σE,
+which are of topological nature, are considered, whereas the nontopo, are comlogical currents in the compressible strips, JNT = μe ∇ × ne z
+monly ignored (here μe = ϵk/B is the magnetic moment of the orbiting
+electron and ϵk is its kinetic energy)43. The following semiclassical
+picture is instructive in describing JT and JNT. Under strong magnetic
+fields and in the absence of in-plane electric fields, the charge carriers
+follow cyclotron orbits that can be described semiclassically as an array
+of circles, resulting in zero average bulk current (Extended Data Fig. 5a).
+Applying an external in-plane electric field along the x direction to an
+incompressible state (Ex = −∂V/∂x) causes the circular orbitals to convert
+into spirals drifting along the y direction, generating a current J Ty = σyxEx
+(Extended Data Fig. 5b). Alternatively, applying the same external electric field to a compressible strip will result in carrier redistribution that
+screens the in-plane electric field. As a result the drift current vanishes,
+but at the cost of a non-zero gradient in the carrier density, ∂ne/∂x
+(Extended Data Fig. 5c). Because each orbital carries a magnetic
+moment μe = μe z, giving rise to a local magnetization m = |ne|μe, the
+induced ∂ne/∂x causes gradients in m, and hence produces equilibrium
+currents through 42 J NT = ∇ × m. This accounts for a non-zero
+= μe∂|ne|/∂x (cyan arrows in Extended Data Fig. 5c), which flows in
+J NT
+y
+the direction opposite to the topological current J Ty in Extended Data
+Fig. 5b. Since a full band does not contribute to current, ne in the above
+expression refers only to carriers in a partially filled band. Alternatively,
+can be understood as arising from uncompensated contributions
+J NT
+y
+to the current from neighbouring orbitals in the presence of a gradient
+in the orbital density (Extended Data Fig. 5c).
+The total current carried by the drifting orbitals in an incompressible
+strip residing between two compressible regions is given by I Ty = ∫ J Ty dx =
+σyxΔεn/e, where Δεn = ε|n|+1 – ε|n| is the Landau level energy gap between
+adjacent compressible states and σyx = νe2/h is the quantum Hall conductance of the incompressible state (see Fig. 4). For a more extensive
+description of JT and JNT see ref. 9.
+Determination of twist-angle measurement accuracy and
+spatial resolution
+θ accuracy. The local twist angle is determined by the local ns(r) via
+θ(r) = a 3 ns(r)/8. The incompressible IT current and the corresponding peak in the Bac
+z signal appear at specific locations where N Landau
+levels in the dispersive bands (N = 1, 2, 3,…) are exactly fully occupied,
+corresponding to a density |nN| = C V Nbg − V CNP
+bg = ns + 4N|Ba|/ϕ0 for fourfold degenerate Landau levels, where V Nbg is the backgate voltage that
+
+corresponds to the Nth peak. Measuring the N− and N+ peaks in the p
+and n dispersive bands, respectively, allows derivation of ns(r) =
+C V +bgN + V −bgN /2 − 4N|Ba|/ϕ0 and therefore of θ(r). The absolute angle
+accuracy is thus determined by the accuracy of C, Ba andV ±bgN. Determining C is possible through global transport measurements and more
+accurately through local measurement of the spacing between any two
+incompressible peaks V Nbg+1 − V Nbg = g|Ba|/(ϕ0C), where g is the degeneracy of the Landau level considered. From this we estimate our overall
+absolute accuracy of determining ns to be about ±1%, thus giving an
+absolute θ accuracy of δθ = ±0.005°.
+In this study, however, we are particularly interested in the relative
+accuracy of θ(r) for comparing different locations r and deriving the
+angle gradients ∇θ. The relative accuracy is determined primarily by
+the measurement precision of V ±bgN . The sharpness of the IT peaks and
+the good signal-to-noise ratio of the Bac
+z signal allow high-precision
+measurement of V ±bgN as demonstrated in Extended Data Fig. 6. In the
+stationary measurement in Extended Data Fig. 6a (magnification of
+Fig. 1f), Vbg was swept with increments ΔVbg = 4.7 mV, demonstrating
+that theV Nbg=−3 andV Nbg=−4 peak positions can be determined to an accuracy better than ±ΔV bg , (one step size), corresponding to
+δV Nbg=−4/V Nbg=−4 ≈ 4 × 10−4 . θ ∝ ns , and so we have δθ/θ ≈ 2 × 10−4, or a
+relative θ accuracy of δθ = ±0.0002°. In Supplementary Video 1 (which
+was used to construct the full θ(r) map of device A; see Fig. 3b), larger
+increments ΔVbg = 40 mV were used (Extended Data Fig. 6b), corresponding to a θ accuracy of δθ = ±0.002°. Supplementary Videos 3, 4
+used ΔVbg = 45 mV constructing the θ(x, y) map of device B (Fig. 3f) with
+similar accuracy. Supplementary Videos 3, 4 contain 87 frames of
+68 × 184 = 12,512 pixels each, which were acquired over a total of 42 h.
+The Vbg trace of each pixel therefore took t = 12 s to acquire. The
+δθ ≱ ±0.002° accuracy, normalized by the pixel acquisition time, indicates that the relative θ sensitivity per pixel in the imaging mode is
+1/2
+better than S1/2
+θ = t δθ = 0.007° per Hz .
+
+(
+
+)
+
+Spatial resolution of θ(r) mapping. Our electrostatic simulations
+show that the typical width of the incompressible IT strips is about
+50 nm (Fig. 4f, h) and should be smoothed by the wavefunction width,
+of the order of magnetic length lB = ħ /eB ≈ 25 nm. The position r of
+the incompressible strip provides a very accurate determination on
+the local ns(r) and θ(r), and so the width of the strip essentially determines the spatial resolution, which can be smaller than the SOT diameter. The actual spatial resolution δr is determined by the accuracy δVbg
+to which the Vbg value can be assigned to the IT peak at a location r, δr =
+δVbg∂r/∂Vbg, where ∂r/∂Vbg is the change in the position of IT per change
+in Vbg. Since IT appears at Vbg(r) = [ns(r) + 4N|Ba|/ϕ0]/C, the space dependence enters only through ns(r) = ns(θ(r)), and thus ∂r/∂Vbg = C(∂θ/∂r)−1
+(∂ns/∂θ)−1, where ∂ns/∂θ = 16θ/ 3 a2. Using characteristic values C =
+2.5 × 1011 V−1 cm −2, δV bg = 45 mV in the scanning mode and
+∂θ/∂r = 0.05° μm−1 gives a resolution δr = 50 nm. Smaller ∂θ/∂r gradients
+result in larger δr. However, in such a case, a lower spatial resolution is
+required because θ varies slowly in space. The estimated δr is comparable to the pixel size in the videos (57 nm in Supplementary Video 1
+and 43 nm in Supplementary Videos 3, 4). We thus conclude that the
+spatial resolution δr of the attained θ(r) maps is of the order of 4–5
+moiré supercells (13 nm each).
+
+Local quantum Hall measurement in device A
+Extended Data Fig. 7 presents the local Bac
+z measurement with the SOT
+at a fixed position, along with the global transport Rxx measurement
+in device A at Ba = 1.19 T. Alternating compressible and incompressible
+states in the region under the tip leads to a series of peaks in Bac
+z , with
+sharp peaks corresponding to incompressible strips carrying IT. The
+sign of the incompressible peaks is determined by the sign of σyx, with
+ac
+ac
+Bac
+z > 0 ( B z < 0) for electron (hole) doping. In Figs. 1d, 2a the B z signal
+for p doping is multiplied by −1 for clarity. The spacing between adjacent
+
+peaks reflects the degeneracy of the Landau level. The dispersive band
+(shaded yellow), exhibits a sequence of fourfold and eightfold degeneracies. In the flat band we find fourfold degenerate levels around ne = 0,
+twofold degeneracy near ne = ±ns/2, and 1-fold degenerate levels near
+ne = −3ns/4 (see Fig. 1d for 1-fold degenerate levels near ne = +3ns/4).
+Evaluation of the local ns allows the extraction of the local twist angle,
+θ = 1.136 ± 0.005°, as described below. In contrast to the sharp local Bac
+z
+peaks, oscillations in Rxx are barely visible, owing to θ(r) disorder and
+the fact that the magic-angle regions in device A do not extend over
+the entire device area.
+
+Landau level tomography and twist-angle mapping
+To map the local twist angle, a series of Bac
+z (r)area scans were performed
+while varying Vbg. This results in a 3D dataset with two spatial dimensions and one Vbg (or equivalently, ne) axis. Each energy gap between
+adjacent Landau levels forms a 2D manifold in this 3D space with a peak
+in the Bac
+z signal (bright regions in Extended Data Fig. 8). The manifolds
+of the lowest Landau levels in the dispersive bands trace the manifold
+of the bottom of the dispersive band, ns(r), and are displaced vertically
+from it by the degeneracy of the Landau levels, thus providing the means
+for mapping the local ns(r) and hence the local θ(r) = a 3 ns(r)/8. The
+3D space was mapped with pixel size of ~50 nm and Vbg spacing between
+successive scans, ΔVbg ≈ 40 mV, which enables us to map θ(r) with an
+accuracy of δθ = ±0.002° (see Methods).
+For device A, the tomographic imaging was acquired for the p dispersive band for Vbg spanning −8.58 V to −11.50 V with ΔVbg = 40 mV
+(Supplementary Video 1). The spacing between adjacent fourfold levels at Ba = 1.22 T was 0.39 V ≈ 10ΔVbg. In this device, the spatial variation
+of the charge neutrality voltage V CNP
+bg (r ) was found to be very small
+(Fig. 2a) and therefore ns(r) was derived from the 3D data assuming a
+constant V CNP
+bg . Representative slices of the 3D dataset are shown in
+Extended Data Fig. 8a, b. At Vbg = −8.5 V, the Fermi level resides in the
+flat band for all points in space, and at Vbg = −11.5 V, εF is in the dispersive
+band. As εF moves through the bottom of the dispersive band, it crosses
+four fourfold degenerate Landau levels above ns, followed by an eightfold degenerate Landau level. The black line in Extended Data Fig. 8a
+traces the N = −4 incompressible IT peak revealing gradients with occasional small jumps in the twist angle. We note that at the jump positions
+the intensity of the signal is suppressed, owing to pinning of the Landau
+levels at the steps, which reduces the amplitude of the spatial a.c. disac
+placement x ac
+0 and hence the intensity of B z (see Methods section
+‘Technique for direct imaging of the current and evaluation of the current in the incompressible strips’).
+We note that at any value of |Vbg| > ns/C several different Landau levels cross εF in the bulk of the sample. Thus, despite the fact that fully
+developed Landau levels are present locally, no well defined quantum
+Hall state in the dispersive bands can be observed globally. The same
+is true for the Landau levels of the correlated states, which are also
+influenced by variations in ns(r). This explains why MATBG magnetotransport commonly shows SdH oscillations without displaying
+full conductance quantization, with the exception of the CNP Landau
+fan1–7. At high enough field, the quantum Hall quantization should be
+recovered when the Landau level degeneracy 4Ba/ϕ0 exceeds the ns(r)
+variations.
+Device B exhibited stronger charge inhomogeneity and hence the
+3D tomographic imaging was acquired for both the p and n dispersive bands (Supplementary Videos 3, 4) and ns(r) was derived from
+the separation between the corresponding Landau levels in the two
+bands as described schematically in Fig. 1f. The tomographic data of
+both samples has been published online30.
+The observation of superconductivity in devices with twist-angle
+disorder of ~0.1° may be explained by either a tolerance of the superconducting state to the exact θ or by percolating paths along very specific
+θM. Both of our devices show superconductivity—despite having only a
+small overlap in their histograms in Fig. 3i—which supports the former
+
+explanation. Figure 2a shows, however, that Landau levels near ns/4
+and ns/2 are discontinuous and those above 3ns/4 appear only at a few
+locations, indicating the extreme fragility of the correlated states to
+twist-angle disorder.
+
+Mapping of the charge disorder
+Similarly to the mapping of the twist angle disorder through ns(r) =
+C[Vns(r) – V–ns(r)]/2, the tomographic imaging also allows mapping of
+the charge disorder δnd(r) = nd(r) − nd, where nd(r) = C[Vns(r) +
+V–ns(r)]/2, as presented in Fig. 3h for device B. Extended Data Fig. 9
+shows the histogram of δnd(r) along with a Gaussian fit with a standard
+deviation Δnd = 2.59 × 1010 cm−2, which is comparable to high-quality
+hBN-encapsulated monolayer graphene devices44 and substantially
+lower than in graphene on SiO 245. Note that in contrast to
+hBN-encapsulated graphene, the MATBG fabrication process is currently incompatible with thermal annealing procedures for disorder
+reduction. We observe that the charge disorder in device B is notably
+larger than in the magic-angle regions in device A (Fig. 2d), which we
+ascribe to the fact that in contrast to device A, device B did not undergo
+surface residue cleaning by AFM.
+Note that the tomographic method allows mapping of the twist-angle
+and charge disorders only in the magic-angle regions, where Landau
+levels are present. In device A, a large part of the sample did not show
+magic-angle physics (Supplementary Videos 1, 2 and Fig. 3a, b), whereas
+the magic-angle regions revealed very low charge disorder with an estimated standard deviation Δnd ≈ 1.3 × 1010 cm−2 as attained by several 1D
+scans, such as in Fig. 2a, d. We therefore performed tomographic imaging of only the p dispersive band, which does not permit extraction of
+the full 2D map of δnd(r) in device A. Neglecting this low level of charge
+disorder introduces an error in the derived θ(r) map of device A of
+δθ ≱ 0.0015°, which is negligible compared to the span of θ(r) in Fig. 3b.
+Bandstructure calculations and Landau level crossings
+The bandstructure of twisted bilayer graphene can be computed from
+an effective continuum Hamiltonian11,12,46–48:
+ H (1ξ ) U † 
+
+H (ξ ) = 
+ U
+H (2ξ )
+
+where H i(ξ ) is the valley-dependent monolayer graphene Hamiltonian
+for layer i:
+
+H i(ξ ) = − ℏvF(k − K i(ξ )) ⋅ (ξσx , σy)
+with Fermi velocity νF, ξ = ±1 indicating the positive and negative valleys,
+K i(ξ ) the k-space location of the respective Dirac points in layer i, and U
+the interlayer coupling48–51:
+
+u ′ω  iξ (Gm1 + Gm2 )⋅r
+ u u ′   u u ′ω∗ iξ Gm1 ⋅r  u
+e
+U=
++
+e
++
+∗
+u 
+u 
+ u ′ u   u ′ω
+u ′ω
+Here, u = 0.0797 eV and u′ = 0.0975 eV are coupling constants49 that
+give the strength of the interaction between like (A ↔ A, B ↔ B) and
+opposing (A ↔ B) sublattices in the two layers, the difference of which
+accounts for out-of-plane corrugation, ω = e2πi/3, and U† is the Hermitian
+(2)
+conjugate of U. The moiré reciprocal lattice vectors, Gmj = a(1)
+j − a j , are
+given by the difference between the reciprocal lattice vectors in the
+(2)
+upper (a(1)
+j ) and lower (a j ) layers.
+Magnetic field effects can be included by making the substitution
+k → k + eA/ħ in the effective Hamiltonian. Here, A is the vector potential,
+which is related to the static magnetic field via B = ∇ × A. In general, the
+bandstructure in a magnetic field cannot be computed because the
+addition of a spatially dependent vector potential breaks translational
+invariance. However, at certain values of the magnetic field—specifically when SB/(h/e) = p/q, where p and q are co-prime integers and S is
+the area of the unit cell—a ‘magnetic’ unit cell can be introduced
+
+Article
+whereupon it becomes possible to solve the Schrödinger equation
+using the corresponding ‘magnetic’ Bloch conditions50. It is then possible to construct a Hamiltonian matrix in the basis of the monolayer
+graphene Landau levels51,52. Although the Landau levels basis is
+unbounded, the Hamiltonian matrix can be truncated at an energy
+where the higher-energy Landau levels only weakly affect the
+low-energy spectrum. This cut-off energy must be much larger than
+the interlayer coupling characterized by the coupling constants u and
+u′. The resulting finite matrix can then be diagonalized. This results in
+a bandstructure diagram in terms of p/q that is directly related to the
+strength of the magnetic field and indirectly related to the twist angle,
+because the moiré unit cell area, S = 3 a 2 /[8sin2 (θ /2)], depends on θ.
+For a varying magnetic field or twist angle the bands are computed for
+each individual parameter value assuming that these values are homogeneous throughout the material.
+Level crossings in the bandstructure are observed as the magnetic field or the twist angle are varied. These occur as a result of the
+‘Rashba-like’ splitting of the dispersive bands. In general, this type of
+splitting leads to two Landau level series, largely overlapping in energy,
+which cross as a function of magnetic field53 (Extended Data Fig. 10a),
+and as a function of θ (Extended Data Fig. 10b), as is the case in the
+experimental data. These are due to the evolution of the Rashba-like
+splitting with θ (Extended Data Fig. 10c–e).
+
+Origin of the internal in-plane electric field and numerical
+electrostatic simulations
+The origin of the internal electric field in presence of twist-angle gradients can be understood intuitively as follows. An external in-plane
+electric field applied to graphene—for example, by charge disorder in
+the substrate—exerts a force on the electrons. Thermal equilibrium
+conditions require zero net force on the carriers, and so charge redistribution will occur, creating an opposing electric field and leading to
+screening of the external field, thus achieving the required zero net
+force. This is the common situation in metals. In the case of MATBG,
+the backgate voltage induces a nearly uniform carrier density, while the
+twist-angle disorder induces a variable chemical potential μ(r) (Fig. 4b),
+which exerts an in-plane force on the carriers, F|| = −∇μ. To attain zero
+net force in thermal equilibrium, an in-plane electric field E|| = ∇μ/q
+must therefore be generated by carrier redistribution. Thus, in contrast to common charge disorder, in which the system tends to screen
+external electric fields, in the case of twist-angle disorder the system
+counterintuitively spontaneously generates internal electric fields to
+counterbalance the force produced by the variable chemical potential.
+These internal fields do not generate current at zero magnetic field;
+however, in a finite magnetic field transverse topological and nontopological currents will be induced in the ground state.
+For the results presented in Fig. 4, simulations (using the COMSOL
+Multiphysics analysis software) were used to solve electrostatic
+equations for the potential V and charge density ρ = −ene at Ba = 0 and
+in the quantum Hall state at Ba = 1.22 T. The simulations included a
+backgate electrode at a constant electric potential Vbg and a grounded
+MATBG in a 3 × 0.5 μm2 x–z box, assuming translation invariance along
+the y axis, with boundary conditions of E⟂ = 0 on the external surfaces
+of the box. An iterative self-consistent solution for V(x, y, z) and
+ρ(x, y) was obtained, satisfying the following conditions: (1) V depends
+on ρ through ∇·E = ρ/εrε0 and E = −∇V, where εr is the relative
+permittivity (we took εr = 4 for hBN) and ε0 is the vacuum permittivity
+(here ∇ = (∂x, ∂y, ∂z) is the three dimensional operator); and (2) ρ
+depends on V through the integrated DOS Ne(μ ; θ) , where
+μ(x, y) = −qV(x, y) and q = ±e is the carrier charge (negative sign for
+μ > 0). The integrated DOS Ne(μ ; θ) was calculated for B = 0 and B ≠ 0
+as described in the Methods section ‘Bandstructure calculations and
+Landau level crossings’.
+Once V(x, y, z = 0) and ρ(x, y) were found in the plane of the MATBG,
+the incompressible surface currents were calculated using JT = −σ∇V,
+
+where σxy(x, y) = −σyx(x, y) = −ν(x, y)e2/h, and σxx = σyy = 0 are the components of the conductivity tensor σ.
+
+Measurement parameters
+All the measurements were carried out at T = 300 mK in an out-of-plane
+applied magnetic field Ba.
+Figure 1b and Extended Data Fig. 2b. Device B, Iac = 10 nA (r.m.s.),
+Vbg = −15 V to 15 V.
+Figure 1d. Device B, Ba = 1.08 T, SOT diameter 250 nm, scan height
+40 nm, V ac
+bg = 20 mV (r.m.s.), ΔVbg = 6.25 mV, acquisition time 6 s per
+point, total acquisition time 8 h.
+Figure 1f and Extended Data Figs. 6a, 7. Device A, Ba = 1.19 T, SOT diameter 220 nm, scan height 100 nm, V ac
+bg = 15 mV (r.m.s.), Vbg = 4.7 mV,
+acquisition time 6 s per point, total acquisition time 12 h.
+Figure 2. Device A, Ba = 1.22 T, SOT diameter 220 nm, scan height 60 nm,
+V ac
+bg = 35 mV (r.m.s.), pixel size 26 nm, 160 ms per pixel, total acquisition
+time 21.4 h.
+Figure 3a and Supplementary Video 2. Device A, Ba = 1.16 T, SOT diameter 220 nm, scan height 110 nm, V ac
+bg = 80 mV (r.m.s.), pixel size
+60 nm, 60 ms per pixel, acquisition time 60 min per frame.
+Supplementary Video 1 and Extended Data Figs. 6b, 8a, b. Device A,
+Ba = 1.22 T, SOT diameter 220 nm, scan height 60 nm,V ac
+bg = 35 mV (r.m.s.),
+pixel size 57 nm, 60 ms per pixel, acquisition time 30 min per frame.
+Figure 3e. Device B, Ba = 1.08 T, SOT diameter 250 nm, scan height
+140 nm,V ac
+bg = 60 mV (r.m.s.), pixel size 50 nm, 60 ms per pixel, acquisition time 33 min.
+Supplementary Videos 3, 4 and Extended Data Fig. 8c, d. Device B,
+Ba = 1.08 T, SOT diameter 250 nm, scan height 70 nm (Video 3) and 80 nm
+(Video 4),V ac
+bg = 60 mV (r.m.s.), pixel size 43 nm, 60 ms per pixel, acquisition time 25 min per frame.
+Extended Data Fig. 2a. Device A, Iac = 10 nA (r.m.s.), Vbg = −17 V to 17 V,
+Si backgate 50 V.
+Extended Data Fig. 3a. Device A, Iac = 5 nA (r.m.s.), Vbg = −6 V to −3.5 V,
+Si backgate 50 V.
+Extended Data Fig. 3b. Device B, Iac = 4 nA (r.m.s.), Vbg = −7 V to −4 V.
+Extended Data Fig. 3c. Device B, Iac = 10 nA (r.m.s.), Vbg = −6.5 V to
+−4.7 V, Ba = 0 T.
+
+Data availability
+The data that support the findings of this study are available from the
+corresponding authors on reasonable request.
+33. Kim, K. et al. Tunable moiré bands and strong correlations in small-twist-angle bilayer
+graphene. Proc. Natl Acad. Sci. USA 114, 3364–3369 (2017).
+34. Wang, L. et al. One-dimensional electrical contact to a two-dimensional material. Science
+342, 614–617 (2013).
+35. Anahory, Y. et al. SQUID-on-tip with single-electron spin sensitivity for high-field and
+ultra-low temperature nanomagnetic imaging. Nanoscale 12, 3174–3182 (2020).
+36. Huber, M. E. et al. DC SQUID series array amplifiers with 120 MHz bandwidth. IEEE Trans.
+Appl. Supercond. 11, 1251–1256 (2001).
+37. Finkler, A. et al. Scanning superconducting quantum interference device on a tip for
+magnetic imaging of nanoscale phenomena. Rev. Sci. Instrum. 83, 073702 (2012).
+38. Finkler, A. et al. Self-aligned nanoscale SQUID on a tip. Nano Lett. 10, 1046–1049 (2010).
+39. Lachman, E. O. et al. Visualization of superparamagnetic dynamics in magnetic
+topological insulators. Sci. Adv. 1, e1500740 (2015).
+
+40. Halbertal, D. et al. Nanoscale thermal imaging of dissipation in quantum systems. Nature
+539, 407–410 (2016).
+41. Kleinbaum, E. & Csáthy, G. A. Note: a transimpedance amplifier for remotely located
+quartz tuning forks. Rev. Sci. Instrum. 83, 126101 (2012).
+42. Geller, M. R. & Vignale, G. Currents in the compressible and incompressible regions of the
+two-dimensional electron gas. Phys. Rev. B 50, 11714–11722 (1994).
+43. Kim, P. Graphene and relativistic quantum physics. In Dirac Matter (eds Duplantier B.,
+Rivasseau V. & Fuchs J. N.) 1–23 (Birkhäuser, 2017).
+44. Dean, C. R. et al. Boron nitride substrates for high-quality graphene electronics. Nat.
+Nanotechnol. 5, 722–726 (2010).
+45. Martin, J. et al. Observation of electron–hole puddles in graphene using a scanning
+single-electron transistor. Nat. Phys. 4, 144–148 (2008).
+46. Lopes dos Santos, J. M. B., Peres, N. M. R. & Castro Neto, A. H. Graphene bilayer with a
+twist: electronic structure. Phys. Rev. Lett. 99, 256802 (2007).
+47. Kindermann, M. & First, P. N. Local sublattice-symmetry breaking in rotationally faulted
+multilayer graphene. Phys. Rev. B 83, 045425 (2011).
+48. Koshino, M. & Moon, P. Electronic properties of incommensurate atomic layers. J. Phys.
+Soc. Jpn. 84, 121001 (2015).
+49. Koshino, M. et al. Maximally localized Wannier orbitals and the extended Hubbard model
+for twisted bilayer graphene. Phys. Rev. X 8, 031087 (2018).
+50. Xiao, D., Chang, M.-C. & Niu, Q. Berry phase effects on electronic properties. Rev. Mod.
+Phys. 82, 1959–2007 (2010).
+51. Bistritzer, R. & MacDonald, A. H. Moiré butterflies in twisted bilayer graphene. Phys. Rev. B
+84, 035440 (2011).
+52. Moon, P. & Koshino, M. Energy spectrum and quantum Hall effect in twisted bilayer
+graphene. Phys. Rev. B 85, 195458 (2012).
+53. Mireles, F. & Schliemann, J. Energy spectrum and Landau levels in bilayer graphene with
+spin–orbit interaction. New J. Phys. 14, 093026 (2012).
+
+Acknowledgements We thank A. Stern and E. Berg for valuable discussions and M. F. da Silva
+for constructing the COMSOL simulations. This work was supported by the Sagol WIS–MIT
+Bridge Program, by the European Research Council (ERC) under the European Union’s Horizon
+2020 research and innovation programme (grant no. 785971), by the Israel Science Foundation
+(ISF, grant no. 994/19), by the Minerva Foundation with funding from the Federal German
+Ministry of Education and Research, and by the Leona M. and Harry B. Helmsley Charitable
+
+Trust grant no. 2018PG-ISL006. Y.C., P.J.-H. and E.Z. acknowledge the support of the MISTI (MIT
+International Science and Technology Initiatives) MIT–Israel Seed Fund. Work at MIT was
+supported by the National Science Foundation (NSF, grant no. DMR-1809802), the Center for
+Integrated Quantum Materials under NSF grant no. DMR-1231319 and the Gordon and Betty
+Moore Foundation’s EPiQS Initiative through grant no. GBMF4541 to P.J.-H. for device
+fabrication, transport measurements and data analysis. This work was performed in part at the
+Harvard University Center for Nanoscale Systems (CNS), a member of the National
+Nanotechnology Coordinated Infrastructure Network (NNCI), which is supported by the
+National Science Foundation under NSF ECCS award no. 1541959. D.R.-L acknowledges partial
+support from Fundaciò Bancaria ‘la Caixa’ (LCF/BQ/AN15/10380011) and from the US Army
+Research Office grant no. W911NF-17-S-0001. M.K. acknowledges the financial support of JSPS
+KAKENHI grant no. JP17K05496. J.A.C. and P.M. were supported by the Science and
+Technology Commission of Shanghai Municipality grant no. 19ZR1436400, the NYU–ECNU
+Institute of Physics at NYU Shanghai and New York University Global Seed Grants for
+Collaborative Research. J.A.C. acknowledges support from the National Science Foundation of
+China grant no. 11750110420. This research was carried out on the High Performance
+Computing resources at NYU Shanghai. K.W. and T.T. acknowledge support from the Elemental
+Strategy Initiative conducted by the MEXT, Japan, A3 Foresight by JSPS and the CREST
+(JPMJCR15F3), JST.
+Author contributions A.U., S.G. and E.Z. designed the experiment. A.U., S.G. and Y.C.
+performed the measurements. A.U. and S.G. performed the analysis. Y.C., D.R.-L. and P.J.-H.
+designed and provided the samples and contributed to the analyses of the results. K.B.
+fabricated the SOTs. Y.M. fabricated the tuning forks. J.A.C. performed the tight-binding
+calculations with P.M. and M.K., and K.W. and T.T. fabricated the hBN. A.U., S.G. and E.Z. wrote
+the manuscript. All authors participated in discussions and in writing of the manuscript.
+Competing interests The authors declare no competing interests.
+Additional information
+Supplementary information is available for this paper at https://doi.org/10.1038/s41586-0202255-3.
+Correspondence and requests for materials should be addressed to P.J.-H. or E.Z.
+Peer review information Nature thanks Emanuel Tutuc, Fan Zhang and the other, anonymous,
+reviewer(s) for their contribution to the peer review of this work.
+Reprints and permissions information is available at http://www.nature.com/reprints.
+
+Article
+
+Extended Data Fig. 1 | Optical image of MATBG devices. a, Optical image of
+device A showing hBN/MATBG/hBN (green), the underlying PdAu backgate
+(light brown) and the marked electrodes used for four-probe R xx
+
+measurements. b, Optical image of device B (cyan) on the PdAu backgate (light
+blue) with marked electrodes.
+
+Extended Data Fig. 2 | Transport measurements at T = 300 mK. a, Four-probe
+measurement of R xx (V bg) versus Ba in device A using an excitation current of
+10 nA with the corresponding traces of the Landau fan diagram at the bottom.
+
+The green solid lines show the segments that can be traced in the data and the
+dotted lines indicate their extrapolation to the origin. b, As in a for device B.
+The purple colour marks the regions where the R xx signal was slightly negative.
+
+Article
+
+Extended Data Fig. 3 | Transport measurements in the superconducting
+state at T = 300 mK. a, b,Colour rendering of R xx measured in the vicinity of
+–ns/2 versus Ba and ne at low fields using an r.m.s. excitation current of 5 nA in
+device A (a) and 4 nA in device B (b). A zero-resistance superconducting state
+
+(black) is observed in device B. c, dV/dI versus Idc characteristics at various
+carrier concentrations ne in the superconducting state in device B at Ba = 0 T
+using an r.m.s. a.c. excitation Iac = 10 nA.
+
+Extended Data Fig. 4 | Numerical simulation demonstrating current
+imaging by measuring Bac
+z . a, Current distribution J y (x – x0) of a
+Δx = 50-nm-wide channel carrying Iy = 1 μA in the y
+ˆ direction. b, Calculated
+ŷ
+−B z (x – x0) at a height of 70 nm above the sample, convoluted with a
+220-nm-diameter SOT sensing area. c, Calculated Bac
+z (x − x0 ) for an r.m.s.
+x ac
+0 = 54 nm spatial modulation of the channel position. The dashed profile
+corresponds to a current strip of width Δx = 150 nm carrying the same current,
+showing that the spatial resolution is limited by the SOT diameter. d–f, As in a–c
+but for three counter-propagating currents spaced 150 nm apart. g, Analysis of
+ac
+the Bac
+z peak of an incompressible strip. B z (x ) signal (blue) acquired along the
+
+line indicated in Fig. 3a for V bg = −10.54 V (a single vertical line from Fig. 2a)
+showing the ν = −12 incompressible peak, along with a numerical fit (red). The
+fit uses the experimental values of V ac
+bg, h SOT and the SOT diameter with a single
+fitting parameter of the total current in the incompressible strip resulting in
+IT = 1.3 μA. An incompressible strip of width Δx = 50 nm was used for the fit. The
+ac
+mean value of Bac
+z (x ) was subtracted from the data. The asymmetry in B z (x )
+away from the peak is caused by the presence of counterflowing
+nontopological currents INT of lower density in the adjacent compressible
+strips.
+
+Article
+
+Extended Data Fig. 5 | The origin of equilibrium currents in the
+compressible and incompressible quantum Hall states. a, Semiclassical
+picture of cyclotron orbits of holes with mutually canceling neighbouring
+currents, resulting in zero bulk current. b, In the presence of an in-plane
+electric field E x (+ and − signs represent external charges) the cyclotron orbits
+
+acquire a drift velocity resulting in a non-zero J Ty in the incompressible state. c,
+In the compressible regime the external in-plane electric field is screened by
+establishing a charge-density gradient, giving rise to J NT
+y flowing in the
+opposite direction (cyan arrows).
+
+Extended Data Fig. 6 | Determination of the accuracy of the twist-angle
+measurement. a, Traces of − Bac
+z versus V bg in device A (from Fig. 1f) acquired
+N =−3
+with a step size ΔV bg = 4.7 mV and an r.m.s. V ac
+bg = 15 mV. The positions of the V bg
+N =−4
+peaks can be determined to an accuracy better than ±ΔV bg (one step
+and V bg
+size), corresponding to a relative θ accuracy of δθ = ±0.0002°. b, As in a, taken
+
+from Supplementary Video 1 at a pixel position (x, y) = (2.53 μm, 5.9 μm) with
+step size ΔV bg = 40 mV and an r.m.s. V ac
+bg = 35 mV, resulting in a relative θ accuracy
+T
+of δθ = ±0.002° in the imaging mode. The larger Bac
+z signal and the broader I
+excitation
+(see
+Methods
+section
+peaks in b compared to a are due to larger V ac
+bg
+‘Measurement parameters’).
+
+Article
+
+Extended Data Fig. 7 | Resolving the local quantum Hall states in flat and
+dispersive bands in device A. Global R xx (purple, right axis) and local Bac
+z
+(blue, left axis) measured at a point in the bulk of device A versus the electron
+ac
+T
+density ne at Ba = 1.19 T. The sharp B z peaks reflect the I current in
+
+incompressible strips with sign determined by the sign of σyx, magnitude by the
+Landau level energy gap and separation by the Landau level degeneracy (red
+bars). The dispersive bands are shaded in yellow and the signal in the flat bands
+is amplified six times for clarity.
+
+Extended Data Fig. 8 | Landau level tomography. a, Slices of the 3D dataset
+Bac
+z x , y , Vbg along various planes for device A. The bright signals denote the 2D
+manifolds tracing the incompressible states. The black lines trace the N = −4
+incompressible manifold used to determine ns(x, y) and θ(x, y). It separates
+fourfold degenerate Landau levels below it from an eightfold degenerate
+Landau level above it (wide dark blue band). The region in the centre of the
+sample that shows no Landau levels corresponds to the grey-blue area in Fig. 3b
+where no MATBG physics is resolved. b, Representative horizontal slices of the
+
+(
+
+)
+
+data from Supplementary Video 1 showing the evolution of the Landau levels
+with V bg. c, As in a, for device B. For the range of gate voltages shown, εF lies in
+the p dispersive band for the entire sample. The black lines show an example of
+a trace of the incompressible manifold lying above an eightfold degenerate
+Landau level. d, Representative horizontal slices of the data from
+Supplementary Video 3. An interactive interface for tomographic visualization
+of the data is available at ref. 30.
+
+Article
+
+Extended Data Fig. 9 | Histogram of the charge disorder in device B. Histogram of δnd(r) data from Fig. 3h along with a Gaussian fit (black) with a standard
+deviation Δnd = 2.59 × 1010 cm−2.
+
+Extended Data Fig. 10 | Landau level crossings of the dispersive bands.
+a, Numerically calculated Landau level energies as a function of magnetic field
+for a fixed θ = 1.05°. An example level crossing is highlighted in red.
+b, Numerically calculated Landau level energies as a function of θ for a fixed
+
+Ba = 1.22 T. An example level crossing is highlighted in red. c–e, The Ba = 0
+bandstructure of bilayer graphene for θ = 1.05° (c), θ = 1.16° (d) and θ = 1.27° (e).
+The blue and red lines indicate the bands that arise from the positive and
+negative valleys, respectively.
+
+

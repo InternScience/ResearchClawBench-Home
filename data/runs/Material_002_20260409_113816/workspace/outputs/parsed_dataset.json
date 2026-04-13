@@ -1,0 +1,451 @@
+{
+  "water": {
+    "n_molecules": 32,
+    "box_size_ang": 12,
+    "temperature_k": 330,
+    "time_step_fs": 0.5,
+    "md_steps": 2000,
+    "friction_fs_inv": 0.01,
+    "molecule_coords": [
+      {
+        "element": "O",
+        "coords": [
+          0.0,
+          0.0,
+          0.119262
+        ]
+      },
+      {
+        "element": "H",
+        "coords": [
+          0.0,
+          0.763239,
+          -0.477047
+        ]
+      },
+      {
+        "element": "H",
+        "coords": [
+          0.0,
+          -0.763239,
+          -0.477047
+        ]
+      }
+    ]
+  },
+  "adsorption": {
+    "metals": {
+      "Ni": 3.52,
+      "Cu": 3.61,
+      "Rh": 3.8,
+      "Pd": 3.89,
+      "Ir": 3.84,
+      "Pt": 3.92
+    },
+    "miller": "(111)",
+    "size": "(2, 2, 3) (2x2 surface unit cell, 3 layers)",
+    "vacuum_gap_ang": 10,
+    "site": "fcc hollow",
+    "adsorbate_height_ang": 1.5,
+    "fixed_layers": "bottom 2 layers (tags \u2265 2)",
+    "force_tol_ev_ang": 0.05,
+    "gas_phase": [
+      {
+        "element": "O",
+        "coords": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "element": "H",
+        "coords": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "reactions": {
+    "Rxn 1": {
+      "label": "Rxn 1 \u2013 cyclobutene ring\u2011opening",
+      "reactant": [
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            1.5,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            1.5,
+            1.5,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            1.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.5,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            2.0,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            2.0,
+            2.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.5,
+            2.0,
+            0.0
+          ]
+        }
+      ],
+      "transition_state": [
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            1.4,
+            0.2,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            1.4,
+            1.3,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            1.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.5,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            1.9,
+            -0.3,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            1.9,
+            1.8,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.5,
+            2.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "Rxn 11": {
+      "label": "Rxn 11 \u2013 methoxy decomposition",
+      "reactant": [
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.9,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.9,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "O",
+          "coords": [
+            1.2,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "transition_state": [
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.9,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.9,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "O",
+          "coords": [
+            1.5,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "Rxn 20": {
+      "label": "Rxn 20 \u2013 cyclopropane ring\u2011opening",
+      "reactant": [
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            1.5,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            0.75,
+            1.3,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.5,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            2.0,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.75,
+            2.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            1.5,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.75,
+            1.3,
+            1.0
+          ]
+        }
+      ],
+      "transition_state": [
+        {
+          "element": "C",
+          "coords": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            1.5,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "C",
+          "coords": [
+            0.75,
+            1.3,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            -0.5,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            2.0,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.75,
+            2.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.0,
+            0.0,
+            1.5
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            1.5,
+            0.0,
+            1.5
+          ]
+        },
+        {
+          "element": "H",
+          "coords": [
+            0.75,
+            1.3,
+            1.5
+          ]
+        }
+      ]
+    }
+  },
+  "dft_barriers": {
+    "Rxn 1": 1.72,
+    "Rxn 11": 1.74,
+    "Rxn 20": 1.77
+  }
+}

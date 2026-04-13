@@ -1,0 +1,15 @@
+{
+  "problem": "Unified autoregressive multimodal model with decoupled visual encoding",
+  "design_principles": [
+    "Use a frozen or slowly-trainable contrastive visual encoder for understanding tokens.",
+    "Use a discrete image tokenizer for generation tokens.",
+    "Project both token streams into one autoregressive transformer vocabulary space.",
+    "Switch between understanding and generation via task prefixes and mode-specific adapters."
+  ],
+  "evidence_links": {
+    "Chameleon": "Unified AR mixed-modal transformer is viable but OCR-heavy scenes remain weak.",
+    "LLaVA": "Encoder-decoder coupling is strong for understanding but does not directly support generation.",
+    "SigLIP": "Pairwise contrastive alignment is efficient and suitable for a decoupled visual encoder.",
+    "LlamaGen": "Pure AR image token generation scales well with discrete image tokenizers."
+  }
+}

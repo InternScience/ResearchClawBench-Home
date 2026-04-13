@@ -1,0 +1,204 @@
+{
+  "n_train": 184,
+  "n_superadhesive_ge_1000_kpa": 0,
+  "superadhesive_fraction": 0.0,
+  "train_response_summary": {
+    "count": 184.0,
+    "mean": 50.97736340605353,
+    "std": 45.968367975418154,
+    "min": 1.1889596602972399,
+    "25%": 13.43241330502477,
+    "50%": 42.066525123849964,
+    "75%": 77.22576079263978,
+    "max": 304.60014154281674
+  },
+  "model_metrics": {
+    "RF": {
+      "cv_r2_mean": 0.6796024586826662,
+      "cv_r2_std": 0.1822720106012486,
+      "cv_mae_mean": 15.333948999629524,
+      "cv_rmse_mean": 23.625066184060906,
+      "overall_r2_from_oof": 0.7653182545861763,
+      "overall_mae_from_oof": 15.036756372037614,
+      "overall_rmse_from_oof": 22.208302958387783
+    },
+    "GP": {
+      "cv_r2_mean": 0.1654352959090977,
+      "cv_r2_std": 0.272075746970523,
+      "cv_mae_mean": 33.22476165025747,
+      "cv_rmse_mean": 38.24981559846498,
+      "overall_r2_from_oof": 0.3164405705031933,
+      "overall_mae_from_oof": 33.03054912996451,
+      "overall_rmse_from_oof": 37.902151032417834
+    }
+  },
+  "feature_importance_top5": [
+    {
+      "feature": "Cationic-ATAC",
+      "importance_mean": 20.06360155710327,
+      "importance_std": 1.4574690329370896
+    },
+    {
+      "feature": "Nucleophilic-HEA",
+      "importance_mean": 10.138921246323132,
+      "importance_std": 0.9542683679997122
+    },
+    {
+      "feature": "XlogP3",
+      "importance_mean": 8.332176423813747,
+      "importance_std": 0.5886069080058441
+    },
+    {
+      "feature": "Acidic-CBEA",
+      "importance_mean": 2.6628636652985636,
+      "importance_std": 0.3414255009982297
+    },
+    {
+      "feature": "Hydrophobic-BA",
+      "importance_mean": 2.6537366433202956,
+      "importance_std": 0.2305984840576134
+    }
+  ],
+  "top_candidate_examples": [
+    {
+      "strategy": "RFR-GP-2rd-pred",
+      "dataset": "PRED",
+      "NO": 9,
+      "predicted_strength_kPa": 221.20311394196744,
+      "rf_pred_from_initial": 236.23852283719748,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.5501050144621554,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.06018156396831008,
+      "Aromatic-PEA": 0.3098132536408657,
+      "Amide-AAm": 0.07990016792866723,
+      "cluster": 2
+    },
+    {
+      "strategy": "RFR-GP-2rd-ei",
+      "dataset": "EI",
+      "NO": 1,
+      "predicted_strength_kPa": 221.20311394196744,
+      "rf_pred_from_initial": 236.23852283719748,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.5501050144621554,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.06018156396831008,
+      "Aromatic-PEA": 0.3098132536408657,
+      "Amide-AAm": 0.07990016792866723,
+      "cluster": 2
+    },
+    {
+      "strategy": "GP-GP-2rd-ei",
+      "dataset": "EI",
+      "NO": 1,
+      "predicted_strength_kPa": 221.20311394196744,
+      "rf_pred_from_initial": 236.23852283719748,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.5501050144621554,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.06018156396831008,
+      "Aromatic-PEA": 0.3098132536408657,
+      "Amide-AAm": 0.07990016792866723,
+      "cluster": 2
+    },
+    {
+      "strategy": "old-SM-GP",
+      "dataset": "PRED",
+      "NO": 9,
+      "predicted_strength_kPa": 195.78202406227885,
+      "rf_pred_from_initial": 235.92615442555098,
+      "Nucleophilic-HEA": 0.03907273745472384,
+      "Hydrophobic-BA": 0.5346089048230481,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.05942050861521831,
+      "Aromatic-PEA": 0.27780921421484706,
+      "Amide-AAm": 0.08908863489216619,
+      "cluster": 2
+    },
+    {
+      "strategy": "RFR-GP-3rd-pred",
+      "dataset": "PRED",
+      "NO": 4,
+      "predicted_strength_kPa": 101.3446567586695,
+      "rf_pred_from_initial": 235.7334559379622,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.539657245652324,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.06001198946971338,
+      "Aromatic-PEA": 0.25011739945820494,
+      "Amide-AAm": 0.15021336541975822,
+      "cluster": 1
+    },
+    {
+      "strategy": "RFR-GP-3rd-ei",
+      "dataset": "EI",
+      "NO": 1,
+      "predicted_strength_kPa": 101.3446567586695,
+      "rf_pred_from_initial": 235.7334559379622,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.539657245652324,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.06001198946971338,
+      "Aromatic-PEA": 0.25011739945820494,
+      "Amide-AAm": 0.15021336541975822,
+      "cluster": 1
+    },
+    {
+      "strategy": "GP-GP-3rd-ei",
+      "dataset": "EI",
+      "NO": 1,
+      "predicted_strength_kPa": 101.6277423920736,
+      "rf_pred_from_initial": 235.7334559379622,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.5444484379756863,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.0603759927335358,
+      "Aromatic-PEA": 0.25242859298617726,
+      "Amide-AAm": 0.14274697630459565,
+      "cluster": 1
+    },
+    {
+      "strategy": "old-SM-GP",
+      "dataset": "PRED",
+      "NO": 4,
+      "predicted_strength_kPa": 308.9030431705591,
+      "rf_pred_from_initial": 234.63345567924995,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.5698486315050519,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.06012094390784448,
+      "Aromatic-PEA": 0.3700304245871038,
+      "Amide-AAm": 0.0,
+      "cluster": 0
+    },
+    {
+      "strategy": "GP-GP-2rd-ei",
+      "dataset": "EI",
+      "NO": 8,
+      "predicted_strength_kPa": 241.13234253361642,
+      "rf_pred_from_initial": 233.34386986049216,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.6402880697187442,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.04991790454403562,
+      "Aromatic-PEA": 0.30979402573722414,
+      "Amide-AAm": 0.0,
+      "cluster": 0
+    },
+    {
+      "strategy": "GP-GP-2rd-ei",
+      "dataset": "EI",
+      "NO": 6,
+      "predicted_strength_kPa": 253.70134465675866,
+      "rf_pred_from_initial": 233.34386986049216,
+      "Nucleophilic-HEA": 0.0,
+      "Hydrophobic-BA": 0.610219200084122,
+      "Acidic-CBEA": 0.0,
+      "Cationic-ATAC": 0.050019276625789845,
+      "Aromatic-PEA": 0.3397615232900878,
+      "Amide-AAm": 0.0,
+      "cluster": 0
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "pump_energy_eV": 0.248,
+  "dirac_point": {
+    "energy_eV": -0.3,
+    "kx_Ainv": -0.042713567839196
+  },
+  "main_band_fits": {
+    "left_branch": {
+      "slope_eV_per_Ainv": 1.6592022508755437,
+      "intercept_eV": 0.01403148387455231
+    },
+    "right_branch": {
+      "slope_eV_per_Ainv": 1.0165310781985022,
+      "intercept_eV": -0.010127038305359794
+    }
+  },
+  "replica_offsets": [
+    {
+      "order": -1,
+      "kx": -0.046308724832214765,
+      "energy": -0.290713567839196,
+      "intensity": 0.49521670717091265
+    },
+    {
+      "order": -1,
+      "kx": 0.046308724832214765,
+      "energy": -0.290713567839196,
+      "intensity": 0.4951316941393499
+    },
+    {
+      "order": 1,
+      "kx": -0.03422818791946308,
+      "energy": 0.205286432160804,
+      "intensity": 0.5244272546110498
+    },
+    {
+      "order": 1,
+      "kx": 0.03422818791946308,
+      "energy": 0.205286432160804,
+      "intensity": 0.5244228565426068
+    }
+  ],
+  "order_mean_energy": {
+    "-1": -0.290713567839196,
+    "1": 0.205286432160804
+  },
+  "adjacent_order_spacing": {
+    "-1_to_1": {
+      "observed_spacing_eV": 0.496,
+      "pump_energy_eV": 0.248,
+      "spacing_error_eV": 0.248
+    }
+  },
+  "replica_raw_metrics": [
+    {
+      "order": -1,
+      "kx": -0.046308724832214765,
+      "energy": -0.290713567839196,
+      "angle_metrics": {
+        "0": {
+          "pump_on_mean": 98.00210601042531,
+          "pump_off_mean": 92.3423066090619,
+          "difference": 5.659799401363415,
+          "ratio": 1.061291509917817
+        },
+        "30": {
+          "pump_on_mean": 96.3992043927411,
+          "pump_off_mean": 92.3423066090619,
+          "difference": 4.056897783679204,
+          "ratio": 1.043933251536096
+        },
+        "60": {
+          "pump_on_mean": 96.39416694753837,
+          "pump_off_mean": 92.3423066090619,
+          "difference": 4.051860338476473,
+          "ratio": 1.043878699669376
+        },
+        "90": {
+          "pump_on_mean": 97.98004381973332,
+          "pump_off_mean": 92.3423066090619,
+          "difference": 5.637737210671432,
+          "ratio": 1.0610525924432364
+        },
+        "120": {
+          "pump_on_mean": 96.39044174647415,
+          "pump_off_mean": 92.3423066090619,
+          "difference": 4.04813513741226,
+          "ratio": 1.043838358451997
+        },
+        "150": {
+          "pump_on_mean": 96.38832492066905,
+          "pump_off_mean": 92.3423066090619,
+          "difference": 4.046018311607156,
+          "ratio": 1.043815434768554
+        },
+        "180": {
+          "pump_on_mean": 98.00065832410172,
+          "pump_off_mean": 92.3423066090619,
+          "difference": 5.658351715039828,
+          "ratio": 1.0612758325281486
+        }
+      }
+    },
+    {
+      "order": -1,
+      "kx": 0.046308724832214765,
+      "energy": -0.290713567839196,
+      "angle_metrics": {
+        "0": {
+          "pump_on_mean": 97.98464175708634,
+          "pump_off_mean": 92.34230660906185,
+          "difference": 5.642335148024486,
+          "ratio": 1.0611023847596934
+        },
+        "30": {
+          "pump_on_mean": 96.38207667835769,
+          "pump_off_mean": 92.34230660906185,
+          "difference": 4.039770069295841,
+          "ratio": 1.0437477708500233
+        },
+        "60": {
+          "pump_on_mean": 96.39827749737924,
+          "pump_off_mean": 92.34230660906185,
+          "difference": 4.05597088831739,
+          "ratio": 1.0439232139336594
+        },
+        "90": {
+          "pump_on_mean": 98.00975361146416,
+          "pump_off_mean": 92.34230660906185,
+          "difference": 5.667447002402312,
+          "ratio": 1.0613743278733103
+        },
+        "120": {
+          "pump_on_mean": 96.40679654840696,
+          "pump_off_mean": 92.34230660906185,
+          "difference": 4.064489939345108,
+          "ratio": 1.044015469058537
+        },
+        "150": {
+          "pump_on_mean": 96.40889326543959,
+          "pump_off_mean": 92.34230660906185,
+          "difference": 4.066586656377737,
+          "ratio": 1.0440381749786036
+        },
+        "180": {
+          "pump_on_mean": 97.98536891712467,
+          "pump_off_mean": 92.34230660906185,
+          "difference": 5.643062308062824,
+          "ratio": 1.0611102593738877
+        }
+      }
+    },
+    {
+      "order": 1,
+      "kx": -0.03422818791946308,
+      "energy": 0.205286432160804,
+      "angle_metrics": {
+        "0": {
+          "pump_on_mean": 103.6906227449893,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 8.007038950445676,
+          "ratio": 1.0836824733450492
+        },
+        "30": {
+          "pump_on_mean": 101.4481425766981,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.764558782154481,
+          "ratio": 1.0602460584517028
+        },
+        "60": {
+          "pump_on_mean": 101.44355659668513,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.759972802141505,
+          "ratio": 1.0601981298538063
+        },
+        "90": {
+          "pump_on_mean": 103.67805176129451,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 7.994467966750889,
+          "ratio": 1.0835510925669025
+        },
+        "120": {
+          "pump_on_mean": 101.44635684453819,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.762773049994564,
+          "ratio": 1.060227395562113
+        },
+        "150": {
+          "pump_on_mean": 101.45624143184561,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.7726576373019896,
+          "ratio": 1.0603307005065499
+        },
+        "180": {
+          "pump_on_mean": 103.68977105936827,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 8.006187264824646,
+          "ratio": 1.0836735722819069
+        }
+      }
+    },
+    {
+      "order": 1,
+      "kx": 0.03422818791946308,
+      "energy": 0.205286432160804,
+      "angle_metrics": {
+        "0": {
+          "pump_on_mean": 103.6835339198918,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 7.999950125348178,
+          "ratio": 1.083608387228953
+        },
+        "30": {
+          "pump_on_mean": 101.43155303632999,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.747969241786365,
+          "ratio": 1.0600726792814186
+        },
+        "60": {
+          "pump_on_mean": 101.43675835849973,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.753174563956108,
+          "ratio": 1.0601270806945275
+        },
+        "90": {
+          "pump_on_mean": 103.6888156954499,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 8.005231900906281,
+          "ratio": 1.0836635876651057
+        },
+        "120": {
+          "pump_on_mean": 101.43922235638038,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.755638561836761,
+          "ratio": 1.0601528322161882
+        },
+        "150": {
+          "pump_on_mean": 101.43390769619756,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 5.7503239016539425,
+          "ratio": 1.0600972880990882
+        },
+        "180": {
+          "pump_on_mean": 103.70301502199445,
+          "pump_off_mean": 95.68358379454362,
+          "difference": 8.019431227450823,
+          "ratio": 1.0838119864392886
+        }
+      }
+    }
+  ],
+  "polarization_fit": {
+    "baseline": 0.5004768482689554,
+    "cos2_coeff": 0.0013045174904078808,
+    "sin2_coeff": 9.370207197086697e-06,
+    "amplitude": 0.0013045511425632157,
+    "phase_radians": 0.003591383834398928,
+    "phase_degrees": 0.20577113632256913,
+    "predicted_intensity": [
+      0.5017813657593633,
+      0.5011372218516308,
+      0.4998327043612229,
+      0.49917233077854756,
+      0.49981647468628015,
+      0.5011209921766879,
+      0.5017813657593633
+    ],
+    "r_squared": 0.04735111865847086
+  },
+  "raw_angle_summary": [
+    {
+      "angle_degrees": 0,
+      "local_replica_intensity": 99.95474930470097,
+      "local_background": 93.67885208880085,
+      "local_difference": 6.275897215900097,
+      "global_difference_mean": 3.7192198586692915,
+      "global_difference_max": 17.211757914155314
+    },
+    {
+      "angle_degrees": 30,
+      "local_replica_intensity": 98.19277520275155,
+      "local_background": 93.67885208880085,
+      "local_difference": 4.5139231139506775,
+      "global_difference_mean": 2.672821628175192,
+      "global_difference_max": 12.39534995497306
+    },
+    {
+      "angle_degrees": 60,
+      "local_replica_intensity": 98.18025861073802,
+      "local_background": 93.67885208880085,
+      "local_difference": 4.5014065219371595,
+      "global_difference_mean": 2.6730009893339406,
+      "global_difference_max": 12.352668321968551
+    },
+    {
+      "angle_degrees": 90,
+      "local_replica_intensity": 99.95946488208014,
+      "local_background": 93.67885208880085,
+      "local_difference": 6.280612793279261,
+      "global_difference_mean": 3.7190406513709187,
+      "global_difference_max": 17.220905894380422
+    },
+    {
+      "angle_degrees": 120,
+      "local_replica_intensity": 98.193424615285,
+      "local_background": 93.67885208880085,
+      "local_difference": 4.51457252648415,
+      "global_difference_mean": 2.672862009895965,
+      "global_difference_max": 12.379565748796935
+    },
+    {
+      "angle_degrees": 150,
+      "local_replica_intensity": 98.17323443262605,
+      "local_background": 93.67885208880085,
+      "local_difference": 4.494382343825164,
+      "global_difference_mean": 2.67358709367421,
+      "global_difference_max": 12.371546649222235
+    },
+    {
+      "angle_degrees": 180,
+      "local_replica_intensity": 99.93851615429587,
+      "local_background": 93.67885208880085,
+      "local_difference": 6.25966406549501,
+      "global_difference_mean": 3.718758718788386,
+      "global_difference_max": 17.206683801826486
+    }
+  ]
+}

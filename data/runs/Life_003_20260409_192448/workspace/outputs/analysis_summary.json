@@ -1,0 +1,55 @@
+{
+  "n_sites": 5000,
+  "positive_rate": 0.2048,
+  "best_tool_by_ap": "Uncalled4",
+  "metrics": [
+    {
+      "tool": "Uncalled4",
+      "average_precision": 0.9929060118782584,
+      "roc_auc": 0.9978548046089034,
+      "best_f1_threshold": 0.5217010218688263,
+      "precision_at_best_f1": 0.9531548757170172,
+      "recall_at_best_f1": 0.9736328125,
+      "f1_at_best_f1": 0.9632850241545894,
+      "tp": 997,
+      "fp": 49,
+      "tn": 3927,
+      "fn": 27
+    },
+    {
+      "tool": "Nanopolish",
+      "average_precision": 0.7784035914122032,
+      "roc_auc": 0.9011765907947686,
+      "best_f1_threshold": 0.4899238419478257,
+      "precision_at_best_f1": 0.6875,
+      "recall_at_best_f1": 0.708984375,
+      "f1_at_best_f1": 0.698076923076923,
+      "tp": 726,
+      "fp": 330,
+      "tn": 3646,
+      "fn": 298
+    }
+  ],
+  "fastest_tool_per_chemistry": [
+    {
+      "Chemistry": "DNA r10.4",
+      "Tool": "Uncalled4",
+      "Time_min": 54.44913685523318
+    },
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "Uncalled4",
+      "Time_min": 39.584270286340754
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "Uncalled4",
+      "Time_min": 114.66766338728108
+    },
+    {
+      "Chemistry": "RNA004",
+      "Tool": "Uncalled4",
+      "Time_min": 60.18828566025166
+    }
+  ]
+}

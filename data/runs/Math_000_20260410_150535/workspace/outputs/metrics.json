@@ -1,0 +1,24 @@
+{
+  "byte": {
+    "gt_total": 20000,
+    "det_total": 15820,
+    "matched_assignments": 15780,
+    "recall_vs_gt": 0.789,
+    "assignment_ratio_vs_dets": 0.9974715549936789,
+    "id_purity": 0.13967046894803548,
+    "id_switches": 11207,
+    "fragments": 11342,
+    "mota_like": 0.22865000000000002
+  },
+  "sparse": {
+    "gt_total": 20000,
+    "det_total": 15820,
+    "matched_assignments": 15789,
+    "recall_vs_gt": 0.78945,
+    "assignment_ratio_vs_dets": 0.9980404551201011,
+    "id_purity": 0.16707834568370383,
+    "id_switches": 10842,
+    "fragments": 11021,
+    "mota_like": 0.24734999999999996
+  }
+}

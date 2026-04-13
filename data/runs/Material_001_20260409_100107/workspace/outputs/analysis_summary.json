@@ -1,0 +1,32 @@
+{
+  "property_metrics": {
+    "samples": 100,
+    "mae": 0.5578967756400354,
+    "rmse": 0.625662766438904,
+    "r2": -0.11456245902620665
+  },
+  "property_target_mean": 0.06163300000000001,
+  "property_target_std": 0.59562169456914,
+  "generation_candidates": 101,
+  "best_generation_candidate": {
+    "lattice_a": 5.6789,
+    "lattice_b": 5.3456,
+    "mean_axis": 5.51225,
+    "anisotropy": 0.3332999999999995,
+    "pseudo_volume": 30.35712784,
+    "stability_score": 0.8088556379777972
+  },
+  "optimization_summary": {
+    "temperature_min": 200.0,
+    "temperature_max": 500.0,
+    "time_min": 10.0,
+    "time_max": 30.0,
+    "center_temperature": 350.0,
+    "center_time": 20.0,
+    "exploration_rate": 0.1,
+    "steps": 10,
+    "best_temperature": 365.0,
+    "best_time": 20.0,
+    "best_score": 0.9619757462147724
+  }
+}

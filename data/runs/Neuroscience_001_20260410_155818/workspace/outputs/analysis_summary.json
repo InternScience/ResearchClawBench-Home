@@ -1,0 +1,29 @@
+{
+  "n_models": 50,
+  "best_model_id": "000",
+  "best_validation_loss": 5.136557016107771,
+  "mean_validation_loss": 5.314309535159006,
+  "std_validation_loss": 0.07520905350524594,
+  "n_cluster_pickles": 65,
+  "n_cell_types": 65,
+  "group_counts": {
+    "medulla/intermediate": 37,
+    "photoreceptor/retina": 8,
+    "lamina": 7,
+    "wide-field/modulatory": 5,
+    "ON motion output (T4)": 4,
+    "OFF motion output (T5)": 4
+  },
+  "config_constants": {
+    "n_frames": 19,
+    "dt": 0.02,
+    "extent": 15,
+    "connectome_file": "fib25-fib19_v2.2.json",
+    "decoder_type": "DecoderGAVP",
+    "activation": "relu",
+    "time_const_init": 0.05,
+    "bias_mean_init": 0.5,
+    "bias_std_init": 0.05,
+    "syn_strength_scale": 0.01
+  }
+}

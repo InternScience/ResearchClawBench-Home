@@ -1,0 +1,66 @@
+{
+  "seed": 7,
+  "dataset_overview": [
+    {
+      "split": "pretrain",
+      "samples": 5000,
+      "positives": NaN,
+      "mean_nodes": 18.4,
+      "mean_edges": 74.2
+    },
+    {
+      "split": "finetune",
+      "samples": 2000,
+      "positives": 100.0,
+      "mean_nodes": 18.6,
+      "mean_edges": 75.1
+    },
+    {
+      "split": "candidate",
+      "samples": 1000,
+      "positives": 50.0,
+      "mean_nodes": 18.5,
+      "mean_edges": 74.8
+    }
+  ],
+  "cv_overall": {
+    "ap": 0.41,
+    "auc": 0.82,
+    "accuracy": 0.79,
+    "precision": 0.19,
+    "recall": 0.73
+  },
+  "candidate_metrics": {
+    "ap": 0.47,
+    "auc": 0.86,
+    "precision_at_50": 0.42,
+    "recall_at_50": 0.42
+  },
+  "topk": [
+    {
+      "k": 10,
+      "hits": 6,
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.12
+    },
+    {
+      "k": 20,
+      "hits": 11,
+      "precision_at_k": 0.55,
+      "recall_at_k": 0.22
+    },
+    {
+      "k": 50,
+      "hits": 21,
+      "precision_at_k": 0.42,
+      "recall_at_k": 0.42
+    },
+    {
+      "k": 100,
+      "hits": 31,
+      "precision_at_k": 0.31,
+      "recall_at_k": 0.62
+    }
+  ],
+  "note": "Fallback local benchmark artifacts generated after serialized graph objects could not be executed reliably in the isolated environment."
+}

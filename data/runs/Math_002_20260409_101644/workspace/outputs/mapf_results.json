@@ -1,0 +1,461 @@
+{
+  "train_instances": 12,
+  "eval_instances": 12,
+  "model_weights": {
+    "feature_names": [
+      "manhattan",
+      "start_degree_blocked",
+      "goal_degree_blocked",
+      "same_row_goal",
+      "same_col_goal"
+    ],
+    "weights": [
+      0.4806269958129227,
+      -0.004733438760795689,
+      -0.03886688831086525,
+      0.016301486603283115,
+      -0.24816499449823384,
+      -0.41611860833850406
+    ]
+  },
+  "per_instance": [
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.00010848045349121094,
+        "collisions": null,
+        "soc": null
+      },
+      "pp": {
+        "success": 0,
+        "runtime": 0.000652313232421875,
+        "collisions": null,
+        "soc": null
+      },
+      "marl_pp": {
+        "success": 0,
+        "runtime": 0.02074885368347168,
+        "collisions": null,
+        "soc": null
+      },
+      "hybrid_lns": {
+        "success": 0,
+        "runtime": 5.4836273193359375e-06,
+        "collisions": null,
+        "soc": null,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "random_small",
+        "group": "maps_50_10_10_0.175",
+        "map_name": "eval_map_100.npy",
+        "n_agents": 6,
+        "free_ratio": 0.85
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.059627532958984375,
+        "collisions": 2,
+        "soc": 52
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.030145645141601562,
+        "collisions": 0,
+        "soc": 52
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.07182836532592773,
+        "collisions": 0,
+        "soc": 52
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.00044035911560058594,
+        "collisions": 0,
+        "soc": 52,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "random_small",
+        "group": "maps_50_10_10_0.175",
+        "map_name": "eval_map_11.npy",
+        "n_agents": 6,
+        "free_ratio": 0.77
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.6690704822540283,
+        "collisions": 1,
+        "soc": 150
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.7180335521697998,
+        "collisions": 0,
+        "soc": 150
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.6060371398925781,
+        "collisions": 0,
+        "soc": 150
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.0009264945983886719,
+        "collisions": 0,
+        "soc": 150,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "random_medium",
+        "group": "maps_312_25_25_0.175",
+        "map_name": "eval_map_100.npy",
+        "n_agents": 8,
+        "free_ratio": 0.8448
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.944305419921875,
+        "collisions": 1,
+        "soc": 167
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.8695499897003174,
+        "collisions": 0,
+        "soc": 167
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.8762903213500977,
+        "collisions": 0,
+        "soc": 167
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.000919342041015625,
+        "collisions": 0,
+        "soc": 167,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "random_medium",
+        "group": "maps_312_25_25_0.175",
+        "map_name": "eval_map_11.npy",
+        "n_agents": 8,
+        "free_ratio": 0.8496
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 1.4850118160247803,
+        "collisions": 6,
+        "soc": 193
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 1.5922014713287354,
+        "collisions": 0,
+        "soc": 193
+      },
+      "marl_pp": {
+        "success": 0,
+        "runtime": 1.5248496532440186,
+        "collisions": 6,
+        "soc": 193
+      },
+      "hybrid_lns": {
+        "success": 0,
+        "runtime": 3.5558433532714844,
+        "collisions": 1,
+        "soc": 193,
+        "lns_iterations": 5
+      },
+      "meta": {
+        "dataset": "room",
+        "group": "room_maps_250_25_25",
+        "map_name": "eval_map_room_11.npy",
+        "n_agents": 6,
+        "free_ratio": 0.8048
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.35285067558288574,
+        "collisions": 2,
+        "soc": 93
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.36217331886291504,
+        "collisions": 0,
+        "soc": 97
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.3465566635131836,
+        "collisions": 0,
+        "soc": 97
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.037750244140625,
+        "collisions": 0,
+        "soc": 97,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "room",
+        "group": "room_maps_250_25_25",
+        "map_name": "eval_map_room_12.npy",
+        "n_agents": 6,
+        "free_ratio": 0.8048
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.5590808391571045,
+        "collisions": 1,
+        "soc": 132
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.6264629364013672,
+        "collisions": 0,
+        "soc": 136
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.6437361240386963,
+        "collisions": 0,
+        "soc": 136
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.0008878707885742188,
+        "collisions": 0,
+        "soc": 136,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "warehouse",
+        "group": "warehouse_maps_266_25_25",
+        "map_name": "eval_map_warehouse_100.npy",
+        "n_agents": 7,
+        "free_ratio": 0.712
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.22960448265075684,
+        "collisions": 1,
+        "soc": 86
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.19719600677490234,
+        "collisions": 0,
+        "soc": 86
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.22043204307556152,
+        "collisions": 0,
+        "soc": 88
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.0006651878356933594,
+        "collisions": 0,
+        "soc": 88,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "warehouse",
+        "group": "warehouse_maps_266_25_25",
+        "map_name": "eval_map_warehouse_11.npy",
+        "n_agents": 7,
+        "free_ratio": 0.712
+      }
+    },
+    {
+      "independent": {
+        "success": 1,
+        "runtime": 0.2221980094909668,
+        "collisions": 0,
+        "soc": 98
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.19301605224609375,
+        "collisions": 0,
+        "soc": 98
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.17293334007263184,
+        "collisions": 0,
+        "soc": 98
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.0005772113800048828,
+        "collisions": 0,
+        "soc": 98,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "maze",
+        "group": "maze_maps_125_25_25",
+        "map_name": "eval_map_maze_100.npy",
+        "n_agents": 5,
+        "free_ratio": 0.5424
+      }
+    },
+    {
+      "independent": {
+        "success": 1,
+        "runtime": 0.2425847053527832,
+        "collisions": 0,
+        "soc": 101
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.23921442031860352,
+        "collisions": 0,
+        "soc": 101
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.2568633556365967,
+        "collisions": 0,
+        "soc": 101
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.0006251335144042969,
+        "collisions": 0,
+        "soc": 101,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "maze",
+        "group": "maze_maps_125_25_25",
+        "map_name": "eval_map_maze_11.npy",
+        "n_agents": 5,
+        "free_ratio": 0.5424
+      }
+    },
+    {
+      "independent": {
+        "success": 0,
+        "runtime": 0.935523271560669,
+        "collisions": 1,
+        "soc": 161
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.9940488338470459,
+        "collisions": 0,
+        "soc": 161
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.9657995700836182,
+        "collisions": 0,
+        "soc": 161
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.02271747589111328,
+        "collisions": 0,
+        "soc": 161,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "empty",
+        "group": "empty_maps_453_25_25",
+        "map_name": "eval_map_empty_11.npy",
+        "n_agents": 8,
+        "free_ratio": 1.0
+      }
+    },
+    {
+      "independent": {
+        "success": 1,
+        "runtime": 0.5876626968383789,
+        "collisions": 0,
+        "soc": 120
+      },
+      "pp": {
+        "success": 1,
+        "runtime": 0.5581948757171631,
+        "collisions": 0,
+        "soc": 120
+      },
+      "marl_pp": {
+        "success": 1,
+        "runtime": 0.5362813472747803,
+        "collisions": 0,
+        "soc": 120
+      },
+      "hybrid_lns": {
+        "success": 1,
+        "runtime": 0.0008709430694580078,
+        "collisions": 0,
+        "soc": 120,
+        "lns_iterations": 0
+      },
+      "meta": {
+        "dataset": "empty",
+        "group": "empty_maps_453_25_25",
+        "map_name": "eval_map_empty_12.npy",
+        "n_agents": 8,
+        "free_ratio": 1.0
+      }
+    }
+  ],
+  "summary": {
+    "independent": {
+      "instances": 12,
+      "success_rate": 0.25,
+      "avg_runtime_sec": 0.523969034353892,
+      "avg_collisions": 1.3636363636363635,
+      "avg_soc": 123.0
+    },
+    "pp": {
+      "instances": 12,
+      "success_rate": 0.9166666666666666,
+      "avg_runtime_sec": 0.5317407846450806,
+      "avg_collisions": 0.0,
+      "avg_soc": 123.72727272727273
+    },
+    "marl_pp": {
+      "instances": 12,
+      "success_rate": 0.8333333333333334,
+      "avg_runtime_sec": 0.5201963980992635,
+      "avg_collisions": 0.5454545454545454,
+      "avg_soc": 123.9090909090909
+    },
+    "hybrid_lns": {
+      "instances": 12,
+      "success_rate": 0.8333333333333334,
+      "avg_runtime_sec": 0.30185242493947345,
+      "avg_collisions": 0.09090909090909091,
+      "avg_soc": 123.9090909090909
+    }
+  }
+}

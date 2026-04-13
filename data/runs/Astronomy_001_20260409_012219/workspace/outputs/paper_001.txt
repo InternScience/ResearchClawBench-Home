@@ -1,0 +1,4252 @@
+arXiv:2310.19899v1 [astro-ph.CO] 30 Oct 2023
+
+International Journal of Modern Physics D
+© World Scientific Publishing Company
+
+OBSERVATIONAL CONSTRAINTS ON EARLY DARK ENERGY
+
+EVAN MCDONOUGH
+Department of Physics, University of Winnipeg, Winnipeg MB, R3B 2E9, Canada
+J. COLIN HILL
+Department of Physics, Columbia University, New York, NY, USA 10027
+MIKHAIL M. IVANOV
+Center for Theoretical Physics, Massachusetts Institute of Technology,
+Cambridge, MA 02139, USA
+ADRIEN LA POSTA
+Université Paris-Saclay, CNRS/IN2P3, IJCLab, 91405 Orsay, France
+MICHAEL W. TOOMEY
+Center for Theoretical Physics, Massachusetts Institute of Technology,
+Cambridge, MA 02139, USA
+
+We review and update constraints on the Early Dark Energy (EDE) model from cosmological data sets, in particular Planck PR3 and PR4 cosmic microwave background
+(CMB) data and large-scale structure (LSS) data sets including galaxy clustering and
+weak lensing data from the Dark Energy Survey, Subaru Hyper Suprime-Cam, and
+KiDS+VIKING-450, as well as BOSS/eBOSS galaxy clustering and Lyman-α forest
+data. We detail the fit to CMB data, and perform the first analyses of EDE using the
+CAMSPEC and Hillipop likelihoods for Planck CMB data, rather than Plik, both of which
+yield a tighter upper bound on the allowed EDE fraction than that found with Plik. We
+then supplement CMB data with large-scale structure data in a series of new analyses.
+All these analyses are concordant in their Bayesian preference for ΛCDM over EDE, as
+indicated by marginalized posterior distributions. We perform a series of tests of the
+impact of priors in these results, and compare with frequentist analyses based on the
+profile likelihood, finding qualitative agreement with the Bayesian results. All these tests
+suggest prior volume effects are not a determining factor in analyses of EDE. This work
+provides both a review of existing constraints and several new analyses.
+MIT-CTP/5618
+
+Contents
+1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2. Early Dark Energy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.1. The Canonical EDE Model . . . . . . . . . . . . . . . . . . . . . . .
+2.2. Resolution of the Planck-SH0ES H0 Tension . . . . . . . . . . . . .
+1
+
+2
+5
+6
+8
+
+2
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+2.3. UV Completions of EDE . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.1. Multifield Models . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.2. Early Dark Energy in String Theory . . . . . . . . . . . . . .
+3. Constraints from Planck CMB Data . . . . . . . . . . . . . . . . . . . . .
+3.1. Dependence on Planck Likelihood: Plik, CamSpec, and HiLLiPoP .
+4. EDE Meets LSS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.1. The Matter Power Spectrum . . . . . . . . . . . . . . . . . . . . . .
+4.2. Anisotropic Galaxy Clustering . . . . . . . . . . . . . . . . . . . . .
+4.3. The Lyman-α forest . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5. Constraints from Weak Lensing . . . . . . . . . . . . . . . . . . . . . . . .
+6. Constraints from BOSS . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6.1. EDE Meets BOSS: circa 2020 . . . . . . . . . . . . . . . . . . . . . .
+6.2. Full combination of CMB and LSS data: circa 2020 . . . . . . . . . .
+6.3. EDE Meets LSS: circa 2023 . . . . . . . . . . . . . . . . . . . . . . .
+6.4. EFT-based vs. Standard BOSS likelihoods . . . . . . . . . . . . . . .
+7. Constraints from the Lyman-α Forest . . . . . . . . . . . . . . . . . . . .
+8. Priors and Prior Volume Effects . . . . . . . . . . . . . . . . . . . . . . .
+8.1. Choice of Priors . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8.2. Prior Volume Effects & The Inclusion of SH0ES in the combined
+data set . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8.3. Mean Likelihood Profile . . . . . . . . . . . . . . . . . . . . . . . . .
+8.4. EDE away from the ΛCDM limit: Analysis with a high lower bound
+on fEDE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8.5. Profile Likelihood . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9. Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10. Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+10
+11
+12
+13
+13
+17
+18
+19
+23
+25
+27
+29
+30
+32
+36
+37
+39
+39
+41
+43
+45
+46
+48
+49
+
+1. Introduction
+The Hubble tension has emerged as one of the leading challenges to the Λ Cold
+Dark Matter (ΛCDM) model of cosmology. That is, direct measurements of the local expansion rate today, H0 , disagree with ΛCDM predictions inferred from earlyUniverse probes. While most acute between the Planck CMB data and SH0ES
+Cepheid-variable-calibrated cosmic distance ladder H0 measurement, which are discrepant at a statistical significance of 5σ [1], the Hubble tension persists across a
+wide array of probes [2]. This has spurred on an active theory effort to find new
+models to restore concordance, though there still remains the possibility that the
+resolution lies in systematic errors in one or both of the data sets [3–19]. Note, however, that one can completely discard CMB data in the early-Universe approach and
+instead use baryon acoustic oscillation, Big Bang Nucleosynthesis, and weak lensing
+data to constrain H0 via the sound horizon scale (e.g., [20]), obtaining results fully
+consistent with those of Planck and other CMB data sets, strongly suggesting that
+systematics are not at play in the early-Universe inference.
+
+Observational Constraints on Early Dark Energy
+
+3
+
+Early Dark Energy [21–24] (EDE) is a prominent proposal to resolve the Hubble
+tension, using new physics in the very early Universe to bring the H0 inferred from
+Planck CMB data into agreement with the cosmic distance ladder measurement of
+SH0ES. This is a daunting task given the high precision of Planck 2018 CMB data:
+for example, the angular size of the sound horizon θs , imprinted in the acoustic peaks
+of the CMB spectra, is measured to 0.03%. The EDE approach is to compensate a
+larger H0 , and hence smaller Hubble radius rH = c/H0 , with a smaller sound horizon
+at last scattering rs , in order to leave θs unchanged [5, 25–28]. This is achieved by
+introducing a new component of the Universe, that evolves as dark energy at early
+times (“Early Dark Energy”) in order to shrink rs , but decays rapidly after matterradiation equality in order to sequester its cosmological effects. Many EDE-like
+models have been proposed to realize this phenomenology; see e.g., Refs. [23,24,29–
+57].
+While EDE was first proposed in [21],a the first analysis of constraints on EDE
+from Planck data alone, i.e., not combined with other data sets, was performed
+in [58]. This analysis, using the Plik likelihoood for Planck 2018 temperature and
+polarization anisotropies, confirmed the intuition of earlier works, namely the parameter compensations that underlie the ability of EDE to fit the CMB data even
+for relatively large values of H0 . In particular, the EDE model introduces a degeneracy between H0 and the peak fraction of energy density in the EDE component
+fEDE : larger values of H0 are correlated with larger values of fEDE , with fEDE ≃ 0.1
+near the epoch of matter-radiation equality to come into agreement with SH0ES
+and hence resolve the Hubble tension. Movement along this degeneracy direction
+towards larger H0 is accompanied by compensating shifts in other ΛCDM parameters, in particular an increase in the physical dark matter density Ωc h2 and an
+increase in the spectral index ns , and correspondingly an increase in the parameter
+S8 ≡ σ8 (Ωm /0.3)0.5 . These compensations can be understood in terms of conventional CMB physics, such as the driving of acoustic oscillations and the early
+integrated Sachs-Wolfe effect (see, e.g., Refs. [24, 58]).
+The changes in these ΛCDM parameters result in non-negligible modifications to
+the cosmology that persist well after EDE has decayed away. For example, the z = 0
+matter power spectrum P (k) is increased by O(10%) at k = 1 h Mpc−1 [58]. This
+presents a challenge to maintaining consistency with other cosmological data sets,
+in particular large-scale structure data sets, which span a wide range of wavenumber
+and redshift where the EDE-induced parameter shifts leave a sizeable imprint. This
+challenge is a general feature of early-Universe resolutions to the Hubble tension,
+as emphasized in Refs. [59, 60].
+In this review we present and update constraints on the canonical axion-like
+EDE model from a variety of cosmological data sets and data set combinations. We
+a Note that the constraints derived on EDE in Ref. [21] erroneously concluded that the scenario
+
+was not viable to resolve the H0 tension, due to a mismodeling of the linear-perturbation equations
+of motion (as pointed out in Ref. [22]).
+
+4
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+examine in detail the constraints from Planck 2018 (PR3) and Planck NPIPE (PR4)
+CMB data, including constraints from alternative choices of the likelihood, namely
+the Plik likelihood for Planck PR3 data, the CamSpec likelihood for both PR3 and
+PR4 data, and the HiLLiPoP likelihood for PR4 data. We then include large-scale
+structure data, including galaxy clustering and weak lensing data from the Dark Energy Survey, weak lensing from Subaru Hyper Suprime-Cam and KiDS+VIKING450, BAO and full-shape data from BOSS DR12 galaxy power spectrum and bispectrum likelihood, and Lyman-α forest data from eBOSS [61] and XQ-100 [62].
+In each of these cases we find tight upper bounds on fEDE that are well below the
+benchmark value required to resolve the Hubble tension.
+We also examine in detail the role of priors, and so-called ‘prior-volume effects,’
+(see e.g. [63]) in Bayesian constraints on EDE, and the implications of this for the
+status of EDE as a concordant cosmological model. We perform a multipronged
+analysis of priors in the EDE scenario:
+(1) Impact of SH0ES H0 prior: The MCMC analysis including S8 data from DES,
+HSC, and KV-450, is performed with a prior on H0 given by the SH0ES measurement, which is then removed in post-processing of the samples, to ensure adequate exploration of the H0 -tension resolving region of EDE parameter space.
+(2) Impact of particle-physics-motivated priors: We compute the effective priors on
+the axion decay constant f and mass m implied by uniform priors on the derived
+parameters fEDE and the critical redshift zc . These effective parameters are
+almost exclusively used in EDE analyses in order to minimize the computational
+expense of the MCMC. We find that the computational-expense-motivated priors
+on fEDE and zc imply a prior distribution for the decay constant f that is peaked
+at the Planck scale f ≈ Mpl , in conflict with priors from particle physics, such as
+the Weak Gravity Conjecture [64–67]. We repeat the MCMC analysis of Planck
+(Plik) with uniform priors on f and log10 m and an find even tighter upper
+bound on fEDE than that resulting from uniform priors on fEDE and zc .
+(3) Mean Likelihood Profile: We extract the mean likelihood profile for fEDE from
+MCMC chains of CMB+BOSS and CMB+BOSS+S8 . The mean likelihood profile of the samples (see [68] for a detailed discussion) by construction suppresses
+marginalization bias effects, and for this reason has been used in CMB analyses
+in e.g. [68–72]. Comparing the mean likelihood profile from our analysis we find
+that it closely resembles the corresponding 1d marginalized posteriors: both are
+monotonically decreasing functions of fEDE . This implies that the posterior is
+not driven by prior volume effects, but rather the likelihood.
+(4) EDE away from the ΛCDM limit: To mitigate the degeneracies of zc and θi in
+the ΛCDM limit fEDE → 0, we repeat our analysis of BOSS and S8 data with a
+lower bound fEDE > 0.04 imposed as a prior on the model. The analysis results
+in an upper bound fEDE < 0.08 at 95% C.L., again less than the benchmark
+fEDE = 0.1 needed to address the Hubble tension.
+(5) Profile Likelihood: As a final investigation into the impact of priors on Bayesian
+
+Observational Constraints on Early Dark Energy
+
+5
+
+parameter constraints in EDE, we compare the frequentist analysis performed in
+[73,74] based on the profile likelihood, namely the maximum likelihood at fixed
+values of fEDE , to the Bayesian analyses performed here. We find qualitative
+agreement between the two approaches, namely a strong preference for ΛCDM
+over EDE when data are included from Planck 2018, BOSS DR12, and S8 data
+from DES.
+This work provides both a review of existing constraints and several new analyses, including the first analyses of EDE with CAMSPEC and Hillipop likelihoods
+for Planck CMB data, an EFT analysis including new BOSS power spectrum and
+bispectrum measurements, eBOSS emission line galaxies, and analyses of the role
+of priors as discussed above. The structure of this work is as follows: In Sec. 2 we
+review the EDE model and the proposed EDE resolution of the Hubble tension,
+followed by a review of constraints for Planck PR3 CMB data, and newly obtained
+constraints from Planck PR4 data, in Sec. 3. In Sec. 4 we review large-scale structure (LSS) phenomenology in the EDE model, before proceeding to review LSS
+constraints on the model in Secs. 5, 6, and 7. We then discuss the role of priors in
+these analyses in Sec. 8, and conclude in Sec. 9 with a summary of the results and
+directions for future work.
+2. Early Dark Energy
+The insight for early-Universe solutions to the Hubble tension is to recognize that
+CMB data do not directly measure length scales, such as the CMB damping scale
+rd , the sound horizon rs , or the Hubble length H0−1 , but instead angles on the sky
+formed by ratios of these length scales. In particular, the angular extent of the sound
+horizon,
+θs =
+
+rs (z∗ )
+,
+DA (z∗ )
+
+(1)
+
+is constrained to 0.03% precision in the Planck 2018 analysis, 100θs = 1.0411 ±
+0.0003 [75]. The primacy of the angular sound horizon is manifest in the acoustic peaks of the CMB temperature anisotropy angular power spectrum, where θs
+corresponds to the position (multipole number) of the first peak, and the spacing
+between subsequent peaks.
+The numerator and denominator in the above are the comoving sound horizon,
+Z ∞
+dz
+rs (z∗ ) =
+cs (z),
+(2)
+H(z)
+z∗
+and the angular diameter distance to last scattering,
+Z z∗
+1
+DA (z∗ ) =
+dz
+,
+H(z)
+0
+respectively, where z∗ is the redshift of last scattering.
+
+(3)
+
+6
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+The tight CMB constraint on θs can accommodate a relative increase in H0 if
+there is a commensurate increase in H(z > z∗ ): The former leads to a decrease in
+DA and the latter a decrease in rs , leaving their ratio θs fixed. In order for this
+increase in H(z > z∗ ) to have any appreciable impact on rs , the effect must be
+active within the last decade of redshift preceding last scattering [76]. A simple
+physical model to realize this possibility is a new dark-energy-like component in the
+Universe, which, present for z ≳ z∗ , rapidly decays to leave the underlying ΛCDM
+cosmology otherwise unchanged. This scenario is termed “Early Dark Energy” [21],
+and will be the focus of this review.
+2.1. The Canonical EDE Model
+The original EDE proposal [21] modelled the EDE field with a phenomenological
+fluid description described by the evolution of energy density fraction and a characteristic redshift. A concrete field theory model of EDE was proposed in [22] utilizing
+the class of scalar potentials proposed in [77] that generalized the conventional axion
+potential V ∝ (1 − cos(φ/f )) by introducing an exponent, as
+
+ n
+φ
+V (φ) = V0 1 − cos
+, V0 ≡ m2 f 2 .
+(4)
+f
+The potential is characterized by a mass scale m, periodicity (‘decay constant’) f ,
+and an exponent n. Ref. [22] considered n = 1, 2, 3 and n ≫ 1, with the conclusion
+that n = 3 is the best fit to data, though this preference is weak. The n = 3 model
+has been widely studied in the literature, and we therefore define the ‘canonical’
+model as the potential in Eq. (4) with
+n=3
+
+(canonical EDE) ,
+
+(5)
+
+which will be the focus of much of this work.
+The background dynamics of EDE can be understood directly from the KleinGordon equation for a canonical scalar field in an expanding background,
+φ̈ + 3H φ̇ +
+
+dV
+= 0.
+dφ
+
+(6)
+
+where ˙ denotes a derivative with respect to cosmic time. If the potential V (φ)
+is sufficiently flat, at early times the field will be held in place by the Hubble
+friction term 3H φ̇, and the field will effectively act as a dark energy component
+of the Universe. As the Universe expands and the Hubble parameter decreases,
+eventually the field is released from Hubble drag and will roll down the potential.
+For a quadratic potential V (φ) = 12 m2 φ2 this occurs at a critical redshift zc when
+H(zc ) ≃ m.
+The critical redshift zc can be tuned to the desired value simply by tuning
+the mass m: An EDE component which becomes dynamical around z∗ (in order
+to have an appreciable reduction of the sound horizon rs ) requires a scalar field
+
+Observational Constraints on Early Dark Energy
+
+7
+
+3
+0.10
+2
+
+0.08
+
+/f
+
+fEDE
+
+0.06
+0.04
+
+1
+
+0
+
+0.02
+1
+0.00
+101
+
+102
+
+103
+
+z
+
+104
+
+105
+
+101
+
+102
+
+103
+
+z
+
+104
+
+105
+
+Fig. 1. Evolution of the fraction of the total energy density (left panel) and scalar field (right
+panel) in the canonical EDE model with parameters that increase H0 . Here fEDE = 0.11, zc =
+3500, and θi = 3.10 for the effective cosmology parameters, or equivalently in terms of particle
+physics parameters, m = 6.0 × 10−28 eV, f = 2.7 × 1026 eV.
+
+mass of m ∼ H(zeq ) ∼ 10−28 eV. The magnitude of the Hubble tension (≈ 10%),
+determines the energy density fraction of the EDE component,
+fEDE (z) ≡
+
+ρEDE (z)
+ρtot (z)
+
+(7)
+
+to be ≈ 10% at z = zc . Combined with the natural initial field value φi ∼ f , this
+determines the decay constant in Eq. (4) as f ≲ Mpl . Indeed, the best-fit parameter
+values in the fit to varied data sets are f ∼ 0.2Mpl and m ∼ 5 × 10−28 eV; see, e.g.,
+Ref. [46].
+Following the release from Hubble drag, the energy density in the EDE component will redshift away as the field oscillates about the minimum of the potential
+V (φ), or else runs away to ∞ as in, e.g., Acoustic Dark Energy [24, 78], the axiondilaton model [30], and a subset of the examples in Ref. [23]. The decay of the EDE,
+encoded in the equation of state w as ρ(t) ∝ a(t)−3(1+w) , is controlled by the shape
+of the potential. For a potential with a minimum that is locally V (φ) ∝ φ2n , the
+energy density of an oscillating scalar field will redshift with time-averaged equation
+of state [79]
+⟨w⟩ =
+
+n−1
+n+1
+
+(8)
+
+where the angular brackets denote a time-average over field oscillations. The exponent n in Eq. (4) can therefore be used to control the decay of the EDE. This in
+turn controls the change to the Silk damping scale rd of the CMB, which in turn
+drives the preference for n = 3 [22].
+
+8
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+A fiducial example is shown in Fig. 1, where we show the evolution of the
+scalar field φ along with the energy density fraction fEDE (z). This example features fEDE (zc ) ∼ 10% and zc ∼ 103 relevant to the Hubble tension, realized by
+Eq. (4) with m = 6.0 × 10−28 eV, f = 2.6 × 1026 eV, φi /f = 3.10 , and n = 3. This
+plot is generated using the code class ede [58]. This code is capable of inferring
+m and f from a user-specified fEDE and zc , enabling efficient exploration of cosmological constraints on the model; we return to this point in Sec. 8. The code and
+explanatory Python notebooks are publicly available.b
+As the Hubble tension has grown in statistical significance, many EDE-like models have been proposed [23, 24, 29–57], including models which consider modifying
+the kinetic or potential terms for the EDE scalar [30, 48], models that reproduce
+the EDE background dynamics via interactions amongst multiple fields [33, 34, 48],
+models that aim to resolve the apparent required fine-tuning of zc [31, 40, 80, 81],
+and models which aim to resolve tensions with LSS data [37, 46, 48, 82–85]. Each
+of these requires a dedicated analysis to determine the relative fit to data and any
+overall preference for the model in comparison to ΛCDM and the canonical n = 3
+EDE model in Eq. (4).
+2.2. Resolution of the Planck-SH0ES H0 Tension
+The Early Dark Energy model delivers on its promise to accommodate an H0 value
+compatible with SH0ES while remaining compatible with CMB data from Planck
+2018. This can be appreciated from Fig. 2 where we show the CMB temperature
+and polarization power spectra for a fiducial ΛCDM cosmology and EDE cosmology
+with H0 = 68 and 71.5 km/s/Mpc respectively, along with the fractional difference,
+indicating percent-level changes across the range of ℓ probed by Planck and beyond.
+However, the situation is more nuanced than presented thus far: The precision of
+the Planck 2018 data demands a delicate balance between the additional dark energy
+component and shifts in the standard ΛCDM parameters, e.g., to undo the EDEinduced modification to the driving of acoustic oscillations (see, e.g., [24]). Notably,
+the ΛCDM parameters change as follows in the H0 -resolving EDE cosmology (here
+for concreteness we compare the best-fit ΛCDM and EDE cosmologies from Tab. I
+of [46]):
+(1) Dark Matter density: ≳ 10% increase in the physical dark matter density Ωc h2 ,
+corresponding to a shift of ∼ 20σ in units of the ΛCDM error bar.
+(2) Spectral Index: ≳ 5σ (≈ 2%) increase in the spectral index ns relative to that
+in ΛCDM, in units of the error bar in the ΛCDM error bar.
+(3) Amplitude of perturbations: ∼ 2σ increase in the amplitude of scalar perturbations As .
+b https://github.com/mwt5345/class_ede
+
+Observational Constraints on Early Dark Energy
+103
+
+101
+
+CDM
+EDE
+
+20
+
+CDM
+EDE
+
+15
+
+9
+
+CDM
+EDE
+
+10
+100
+
+5
+
+101
+
+D TE [ K2]
+
+D TT [ K2]
+
+D EE [ K2]
+
+102
+
+0
+5
+
+10 1
+
+10
+15
+2
+
+500 1000 1500 2000 2500 3000 3500
+
+10 2
+
+2
+
+3 1e 2
+
+1.5
+
+2
+
+202
+
+500 1000 1500 2000 2500 3000 3500
+
+500 1000 1500 2000 2500 3000 3500
+
+1.0 1e 2
+
+) /
+
+0
+1
+
+(
+
+D TE, EDE D TE, CDM
+
+0.0
+
+2
+
+0.0
+0.5
+1.0
+1.5
+
+(
+
+0.5
+
+0.5
+
+(
+
+D EE, CDM
+D EE, EDE D EE, CDM
+
+0.5
+
+(
+
+D TT, EDE D TT, CDM
+
+1
+
+) /
+
+1.0
+
+) /
+
+D TT, CDM
+
+)
+
+2.0 1e 2
+
+D TT, CDMD EE, CDM + D TE, CDM 2
+
+100
+
+1.02
+
+500 1000 1500 2000 2500 3000 3500
+
+32
+
+500 1000 1500 2000 2500 3000 3500
+
+2.02
+
+500 1000 1500 2000 2500 3000 3500
+
+Fig. 2. CMB power spectrum for TT (left panel), EE (middle panel), and TE (right panel) in
+the canonical EDE model (red, dashed) and ΛCDM (black, solid), with H0 = 71.15 km/s/Mpc
+and H0 = 68.07 km/s/Mpc, respectively, including the corresponding fractional difference between
+the two models (bottom). We normalize the fractional difference for TT and EE to the ΛCDM
+spectra, while we normalize TE by the variance to account for the zero crossings in this spectrum.
+The model parameters used here correspond to the best-fit results from [58] in the fit to primary
+CMB (TT+TE+EE), CMB lensing, RSD, BAO, SNIa, and SH0ES data.
+
+The precise σ values depend on the analysis; these parameter shifts refer to difference
+in best-fit values from Tab. I of [46], namely the fit to Planck PR3, BAO, SNIa, and
+SH0ES.
+These shifts drive the tight constraints from large-scale structure data that will
+be presented in Secs. 5, 6, and 7.
+Of particular interest is the dark matter density. The amplitude of the first
+acoustic peak of the CMB temperature power spectrum provides a measure of the
+amount of dark matter in the Universe [86]. As explained in [24], the early dark energy component changes the evolution of the Weyl potential and hence the driving
+of acoustic oscillations (see Ref. [87] for a review), leading to an overall enhancement of the first acoustic peak of the CMB. This can alternately be interpreted as
+an overall enhancement of the early integrated Sachs-Wolfe effect (eISW) [58, 88],
+arising from the EDE-induced suppression of perturbation growth prior to recombination. This is illustrated in Fig. 3, where we show the first peak of the CMB
+temperature anisotropy power spectrum in ΛCDM with H0 = 68.2 km/s/Mpc, and
+in Early Dark Energy with the same ΛCDM parameters but with fEDE = 0.14,
+
+10
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+CDM (H0 = 68.2)
+EDE (H0 = 72.5)
+EDE (H0 = 72.5) + 12% DM
+
+800
+700
+
+D TT [ K2]
+
+600
+500
+400
+300
+200
+100
+100
+
+200
+
+300
+
+400
+
+500
+
+600
+
+700
+
+800
+
+Fig. 3. EDE and the first peak of the CMB: We show a ΛCDM cosmology with H0 = 68.16
+km/s/Mpc (black), EDE with H0 = 72.52 and fEDE = 14% (red, dashed) but other ΛCDM
+parameters unchanged, and the same EDE with an additional 12% dark matter (Ωc h2 ). The
+additional dark matter compensates for the effect of EDE on the first peak. The best-fit model
+has additional compensating parameter shifts, such as the spectral index ns , discussed in detail
+in [58].
+
+namely 14% of the Universe in an EDE component at a redshift log10 (zc ) = 3.58.
+Further parameter adjustments are needed to fit the damping tail of the CMB. In
+particular, a significant shift in the spectral index ns towards unity is needed, to
+compensate for the scale-dependent suppression of growth due to the EDE.
+2.3. UV Completions of EDE
+The canonical EDE potential, Eq. (4) with n = 3, is puzzling from the perspective of the conventional theory constructions of axion-like particles, where axions
+arise as the pseudo-Nambu Goldstone bosons of a spontaneously broken global U(1)
+symmetry. The assumed lightness of the axion field is justified on the basis of the
+underlying symmetry, which protects the field from perturbative corrections, leaving
+non-perturbative effects, such as instantons, as the dominant source of mass generation. In conventional quantum field theory and string theory setups, the axion
+potential is the leading-order term in an expansion of the form,
+ 
+X
+nφ
+V ≃ V0
+e−Sn cos
+(9)
+f
+n
+where Sn is the n-th order instanton action, Sn ≃ nS, with S the leading instanton action. Explicit string theory computations (e.g., [89–91]) as well as general
+principles, e.g., the weak gravity conjecture applied to axions [64–67], suggest that
+S ≃ λMpl /f where λ is an O(1) constant.
+
+Observational Constraints on Early Dark Energy
+
+11
+
+In comparison, the canonical EDE potential, Eq. (4), can be expanded out as
+
+ 
+ 
+ 
+5 15
+φ
+3
+2φ
+1
+3φ
+V (φ) = V0
+−
+cos
++ cos
+− cos
+,
+(10)
+2
+4
+f
+2
+f
+4
+f
+which resembles the expansion in Eq. (9) but truncated at n = 3. It is not obvious
+from the above whether this peculiar hierarchy of harmonics can be realized via a
+controlled instanton expansion of the form Eq. (9). Moreover, the requirements from
+data that f ≲ Mpl suggests a tension with the weak gravity conjecture, and the
+accompanying Planckian field excursions |∆φ| ∼ f runs the risk of exponentially
+lightening other fields, as per the Swampland Distance Conjecture.
+2.3.1. Multifield Models
+Canonical EDE relies upon the addition of a single scalar field beyond the standard
+concordance model. However, there are several well-motivated reasons to consider
+the addition of other fields.
+A solid field theory explanation for a light scalar field in the early Universe is
+from a string axion. However, axions only represent half the scalar field content in
+such models. That is, the axion corresponds to the phase of a complex scalar field.
+The modulus of this field is the so-called dilaton and is related to the string coupling
+gs = eχ . Together, the axion and the dilaton comprise the complex axio-dilaton
+field. The existence of moduli fields is ubiquitous in string theory (and other higher
+dimensional theories) and one of the few model-independent predictions. However,
+it is typically assumed that the moduli fields are stablized and can consequently
+be ignored as they become non-dynamical. Nevertheless, one can also consider the
+case where both the axion and dilaton are dynamical.
+An interesting application of the axio-dilaton model is to consider the case where
+the dilaton is initially stabilized, in this case endowed with an exponential potential. In this scenario it is the dilaton that behaves as the source of “dark energy”
+for an EDE model. The canonical evolution of the axion field will then lead to a
+destabilization of the dilaton causing it enter into fast-roll. This has the desirable
+effect of quickly dissipating the energy density of the EDE scalar (in this case the
+dilaton) and providing an alternative mechanism for EDE.
+An offshoot of the axio-dilaton model is where one considers the axion with a
+non-canonical kinetic term [48]. This results in a coupling between the axion and the
+dilaton in the axion kinetic term. This Kinetic MIXing (KMIX) is a generic feature
+from the effective theory for string compactifications of complex moduli fields. The
+Lagrangian takes on the form,
+1
+1
+L = − (∂χ)2 − f (χ)(∂φ)2 − V (χ, φ),
+2
+2
+
+(11)
+
+where χ is the dilaton and f (χ) ≡ eλχ with λ an O(1) number which is dependent
+on the choice of internal manifolds used for string compactification. The impact of
+
+12
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+the kinetic mixing is evident from the equations of motion,
+
+
+fχ
+1
+φ̈ + 3H +
+χ̇ φ̇ + Vφ = 0,
+f
+f
+
+(12)
+
+1
+(13)
+χ̈ + 3H χ̇ − fχ φ̇2 + Vχ = 0.
+2
+The two major changes from the standard Klein-Gordon equations are the presence
+of a new friction term for the axion and a source term for the dilaton. The latter
+allows for the energy transfer from the axion field into the dilaton and critically
+allows for the use of a standard axion-like potential. Note that it is not possible
+to accommodate an n = 1 potential in a single-field model as the new scalar will
+act as an additional form of dark matter post-recombination and, furthermore, its
+contribution to the cosmic energy budget will be non-negligible. However, in the
+KMIX model the dilaton sources the energy density of the axion as soon as it
+starts to fall down its potential, allowing for the total energy density of both fields
+to redshift as radiation or faster. A fundamental difference compared to canonical
+EDE is that in the KMIX model it is possible for ≲ 1% of dark matter to be
+comprised of the (light) EDE scalar. That is, it is a generic prediction of this model
+that a small fraction of dark matter will be an ultra-light axion, which has been
+well-studied in the context of structure formation [82, 92, 93]. Since the Jeans scale
+of the EDE scalar is ∼ 30 Mpc, this results in a suppression of the matter power
+spectrum for scales smaller than kJ which naturally has the dynamics to suppress
+S8 .
+Further multicomponent models of EDE include the ‘Early Dark Sector’ [46,80],
+wherein the EDE is directly coupled to dark matter, the closely related ‘chameleon
+early dark energy’ [45], the neutrino-assisted EDE [31, 81], and New EDE [33, 34],
+wherein the decay of the EDE field occurs via a first-order phase transition triggered
+by the evolution of a second field.
+2.3.2. Early Dark Energy in String Theory
+An alternative approach to a UV embedding of EDE is to tackle each term in
+Eq. (10) individually, with each arising as the leading term in a convergent instanton
+expansion. Implemented in string theory in [49, 94], the desired 1 : 2 : 3 ratio of
+periodicities corresponds to the rank of SU (N ) gauge groups N1 : N2 : N3 , or other
+integer quantities such as worldvolume fluxes.
+Here we briefly sketch out the mechanics of this. The effective field theory in
+four dimensions is an N = 1 supergravity theory, where the scalar potential is given
+by
+
+V = eK |DW |2 − 3|W |2 ,
+(14)
+where K and W are the Kahler potential and superpotential respectively, each built
+out of the fields in the model, and D denotes a covariant derivative on field space.
+
+Observational Constraints on Early Dark Energy
+
+13
+
+A prototypical non-perturbative effect in string theory is gaugino condensation on
+a stack of N D7 branes, described by a superpotential
+2π
+
+WD7 = A e− N fD7 ,
+
+(15)
+
+where fD7 depends on the fields and is model dependent. In the case of multiple
+distinct stacks of branes, wrapped around 4-cycles which are distinct representatives
+of the same homology class, the superpotential reads:
+WD7 =
+
+NX
+stacks
+
+Ai e
+
+2π
+−N
+fD7,i
+i
+
+.
+
+(16)
+
+i=1
+
+This provides multiple avenues to constructing the EDE potential. For example,
+if fD7 = T , where T a complex scalar, is the same on each of Nstacks = 3 brane
+stacks with numbers of branes in the ratios N1 : N2 : N3 = 1 : 2 : 3, this leads to
+a potential whose dominant terms are cosine potentials for Im(T ) with the desired
+− 2π Re(T )
+relative periodicities in Eq. (10). The prefactors in Eq. (10) are then set by e Ni
+which is ≪ 1 (in Planck units) in order to match the energy scale of the EDE. As
+detailed in [94], this can be realized in a convergent instanton expansion, in contrast
+with naive expectation from Eq. (4).
+3. Constraints from Planck CMB Data
+To quantitatively understand and assess the EDE model, we turn to data, beginning
+with Planck 2018 primary CMB anisotropy (temperature and polarization) angular
+power spectra. The first analysis of Planck data alone in EDE was performed in [58].
+Here we reproduce and expand on these results, including a detailed comparison of
+more recent likelihoods, including the Plik likelihood for PR3 data, the CamSpec
+likelihood for PR3 data and for PR4 data, and the HiLLiPoP likelihood for PR4
+data.
+We begin with an analysis using the Plik likelihood as presented in [58]. Parameter constraints are given in Tab. 1 and posterior distributions are shown in
+Fig. 4. The results are consistent with intuition developed in Sec. 2.2, which can
+be appreciated from Fig. 5, where we isolate the 2D posteriors in H0 − fEDE and
+H0 − Ωc h2 . As per the discussion of Sec. 2.2, EDE is able to raise H0 by moving
+along an H0 − fEDE degeneracy in the fit to data. However, this degeneracy direction also raises the amount of dark matter Ωc h2 and the spectral index ns , and to
+a lesser extent the amplitude As .
+3.1. Dependence on Planck Likelihood: Plik, CamSpec, and HiLLiPoP
+To extend this analysis one step further, we investigate constraints on EDE resulting from alternative choices of the Planck likelihood. In particular, we discuss
+constraints using the CamSpec likelihood [95, 96], which uses the Planck 100, 143,
+and 217 GHz channels in TE and EE, excluding the 100 GHz data from the TT
+
+14
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+Constraints from Planck 2018 data only (Plik PR3): TT+TE+EE
+Table 1. The marginalized (mean ±1σ) and best-fit constraints on the cosmological parameters in ΛCDM
+and in the canonical axion-like EDE scenario with n = 3, as inferred from Planck 2018 PR3 primary CMB data only (TT+TE+EE). Upper and lower limits are quoted at 95% CL. Although there is
+a small contribution to the constraining power in these data from lensing-induced peak-smearing, the constraints are dominated by information content from the epoch of recombination. The EDE component is
+not detected here; a two-tailed limit yields fEDE = 0.033+0.027
+−0.026 at 68% CL, i.e., consistent with zero.
+Parameter
+ln(1010 As )
+ns
+100θs
+Ωb h2
+Ωc h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+log10 (f /eV)
+log10 (m/eV)
+
+ΛCDM Best-Fit
+
+ΛCDM Marg.
+
+EDE (n = 3) Best-Fit
+
+EDE (n = 3) Marg.
+
+3.055
+0.9659
+1.04200
+0.02244
+0.1201
+0.0587
+−
+−
+−
+67.44
+0.3147
+0.8156
+0.8355
+−
+−
+
+3.044 ± 0.016
+0.9645 ± 0.0043
+1.04185 ± 0.00029
+0.02235 ± 0.00015
+0.1202 ± 0.0013
+0.0541 ± 0.0076
+−
+−
+−
+67.29 ± 0.59
+0.3162 ± 0.0083
+0.8114 ± 0.0073
+0.8331 ± 0.0159
+−
+−
+
+3.056
+0.9769
+1.04168
+0.02250
+0.1268
+0.0539
+3.75
+0.068
+2.96
+69.13
+0.3138
+0.8280
+0.8468
+26.36
+−26.90
+
+3.051 ± 0.017
+0.9702+0.0053
+−0.0083
+1.04164 ± 0.00034
+0.02250+0.00018
+−0.00022
+0.1234+0.0019
+−0.0038
+0.0549 ± 0.0078
+3.66+0.24
+−0.28
+< 0.087
+> 0.36
+68.29+0.73
+−1.2
+0.3145 ± 0.0086
+0.8198+0.0090
+−0.012
+0.8393 ± 0.0175
+26.57+0.26
+−0.46
+−26.94+0.39
+−0.65
+
+χ2 statistics from Planck 2018 data (Plik PR3) only: TT+TE+EE
+Table 2. χ2 values for the best-fit ΛCDM and EDE
+models to the primary CMB alone. The reduction in χ2
+is 4.1 for the three-parameter EDE extension of ΛCDM.
+data sets
+
+ΛCDM
+
+EDE
+
+Planck 2018 low-ℓ TT
+Planck 2018 low-ℓ EE
+Planck 2018 high-ℓ TT+TE+EE
+Total χ2
+∆χ2
+
+23.4
+397.2
+2344.9
+2765.5
+
+22.1
+396.0
+2343.3
+2761.4
+-4.1
+
+data set, as it requires a more complex foreground modelling. A dust cleaning step
+is performed on the power spectra and residual temperature foregrounds are modelled with a power law with an amplitude which depends on the cross-frequency.
+It also includes calibration and polarization efficiencies (for TE and EE). We also
+consider the Hillipop likelihood, described in Ref. [97], containing 100, 143, and
+217 GHz spectra with a foreground modelling at the power spectra level such as
+CamSpec, but using physically motivated templates to model Galactic dust, cosmic
+infrared background (CIB), thermal Sunyaev-Zel’dovich (tSZ) and kinetic SunyaevZel’dovich (kSZ), tSZ-CIB correlations and Poisson-like distributed point sources.
+While we use Hillipop only with PR4 data, we use the CamSpec likelihood to obtain constraints from both the PR3 and PR4 data sets. The PR4 (NPIPE) data set
+
+Observational Constraints on Early Dark Energy
+
+15
+
+Fig. 4. Constraints on EDE from Planck 2018 CMB data (Plik PR3 likelihood). Grey bands
+show the SH0ES measurement of H0 and pink bands indicate the DES-Y3 measurement of S8 .
+
+EDE
+
+LCDM
+
+H0
+
+72
+70
+68
+66
+0.01
+
+0.04
+
+0.07
+
+fEDE
+
+0.10
+
+0.13
+
+0.120 0.125 0.130 0.135
+dmh 2
+
+Fig. 5.
+EDE and ΛCDM posterior distributions in the fit to Planck 2018 primary CMB
+anisotropies. As can be anticipated from Fig. 3, EDE raises H0 by exploiting a degeneracy in
+H0 and fEDE (left panel); however, this brings with it additional dark matter (right panel). The
+H0 − Ωdm h2 degeneracy direction is orthogonal to that in ΛCDM; the high H0 region of EDE
+parameter space has O(10%) more dark matter than the range preferred by ΛCDM (with H0 ∼ 67
+km/s/Mpc).
+
+16
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+Planck 2018 TTTEEE + lowlTT (Plik) [EDE]
+Planck 2018 TTTEEE (Camspec) [EDE]
+Planck NPIPE TTTEEE (Hillipop) [EDE]
+Planck NPIPE TTTEEE (Camspec) [EDE]
+
+fEDE
+
+0.15
+0.10
+0.05
+
+bh 2
+
+0.0235
+0.0230
+0.0225
+0.0220
+0.135
+
+ch 2
+
+0.130
+0.125
+0.120
+
+m
+
+0.34
+0.32
+0.30
+1.00
+
+ns
+
+0.98
+0.96
+66
+
+68
+
+70
+
+H0
+
+72
+
+0.05
+
+0.10
+
+fEDE
+
+0.022
+
+0.023
+
+bh 2
+
+0.12
+
+0.13
+
+ch 2
+
+0.30 0.32 0.34
+
+m
+
+0.96
+
+0.98
+
+ns
+
+Fig. 6. Constraints on EDE from Planck CMB data analysed using the Plik PR3 likelihood
+(black), CAMSPEC PR3 likelihood (red), Hillipop PR4 likelihood (blue), and CAMSPEC PR4 likelihood (green). We find that the likelihood that has been used in all previous EDE analyses, Plik
+PR3, yields the weakest constraints on the EDE scenario, with both PR4 (NPIPE) likelihoods
+yielding notably tighter upper bounds.
+
+consists in a joint-analysis of Low Frequency Instrument (LFI) and High Frequency
+Instrument (HFI) data, including some additional data from re-pointing maneuvers
+and providing detector splits instead of half-mission splits to lower the correlation
+between the two splits. A more detailed description of the PR4 data processing may
+be found in Refs. [96, 98]. Cosmological constraints on ΛCDM derived from these
+alternative likelihoods have been shown to be consistent with the Plik likelihood
+constraints both for PR3 and PR4 data. To our knowledge, the analysis presented
+here contains the first Planck PR4-based constraints on EDE.
+Figure 6 shows the marginalized posterior distributions derived from the Plik
+
+Observational Constraints on Early Dark Energy
+
+17
+
+likelihood for Planck PR3 data, the CamSpec likelihood for both PR3 and PR4
+data, and the HiLLiPoP likelihood for PR4 data. As in Ref. [99], we use a wider
+prior on log10 (zc ) than considered in some previous EDE analyses. The marginalized
+constraints and best-fit parameter values can be found in Table 3. We used the
+Gelman-Rubin criterion R − 1 ≤ 0.03 to assess the convergence of the chains.
+Notice that the overall conclusion regarding EDE does not change when we
+use the different Planck likelihoods. However, we find that the Plik likelihood
+is the one that imposes the weakest constraint on fEDE . While this analysis has
+yielded fEDE < 0.0947 (95% C.L.) using the Plik PR3 likelihood, the other constraints are tighter with fEDE < 0.0788 (95% C.L.), fEDE < 0.0776 (95% C.L.)
+and fEDE < 0.0766 (95% C.L.) for CamSpec (PR3), CamSpec (PR4), and HiLLiPoP
+(PR4), respectively. The maximum-likelihood fEDE = 0.0730 derived from the Plik
+likelihood is also significantly higher than the best-fit derived from the CamSpec
+(PR3) likelihood (fEDE = 0.0349), the CamSpec PR4 likelihood (fEDE = 0.0425),
+or the HiLLiPoP PR4 likelihood (fEDE = 0.0474). One should note that even if our
+marginalized constraints are affected with ‘prior volume effects’ due to the broad
+prior imposed on log10 (zc ), best-fit values are not affected by this type of sampling
+effect.
+Table 3. Constraints on EDE for various Planck likelihoods. Here a wider zc
+prior is used than in the previous Planck analyses, resulting in weaker upper
+bounds on fEDE (cf. Table 1, which uses the Plik PR3 likelihood); this arises
+solely because large amounts of EDE are allowed for very high values of zc ,
+as the EDE field has no discernible impact on cosmological observables in this
+case. It is noteworthy that the likelihood used in all previous EDE studies (Plik
+PR3) yields the weakest upper bound on fEDE amongst the four likelihoods
+considered here.
+Parameter
+H0 [km/s/Mpc]
+Ωb h2
+Ωc h2
+109 As
+ns
+fEDE
+Parameter
+H0 [km/s/Mpc]
+Ωb h2
+Ωc h2
+109 As
+ns
+fEDE
+
+Plik (PR3)
+
+CamSpec (PR3)
+
+68.55+0.75
+−1.3 (69.88)
+0.02260+0.00018
+−0.00024 (0.02279)
+0.1224+0.0017
+−0.0041 (0.1259)
+2.204 ± 0.059 (2.245)
+0.9719+0.0062
+−0.0096 (0.9857)
+< 0.0947 (0.0730)
+
+68.10+0.60
+−0.94 (68.67)
+0.02239+0.00016
+−0.00019 (0.02241)
+0.1213+0.0013
+−0.0027 (0.1226)
+2.188 ± 0.061 (2.189)
+0.9687+0.0053
+−0.0072 (0.9726)
+< 0.0788 (0.0349)
+
+CamSpec (PR4)
+
+HiLLiPoP (PR4)
+
+68.00+0.50
+−0.98 (68.60)
+0.02231+0.00015
+−0.00018 (0.02233)
+0.1212+0.0011
+−0.0027 (0.1232)
+2.165 ± 0.059 (2.137)
+0.9664+0.0047
+−0.0076 (0.9728)
+< 0.0776 (0.0425)
+
+67.51+0.57
+−1.1 (68.15)
+0.02231+0.00016
+−0.00020 (0.02245)
+0.1228+0.0013
+−0.0032 (0.1251)
+2.137 ± 0.058 (2.135)
+0.9645+0.0054
+0.0088 (0.9722)
+< 0.0766 (0.0474)
+
+4. EDE Meets LSS
+As discussed in the preceding section, Early Dark Energy can successfully accommodate a larger H0 value while maintaining consistency with Planck CMB data,
+
+18
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+although the CMB data on their own do not prefer the existence of this component,
+with the newest Planck likelihoods in fact yielding tighter constraints on the model
+than those used in previous work. The EDE fit to the CMB is achieved by a delicate
+balance of the new EDE component and compensating shifts in ΛCDM parameters,
+and in particular increases to the physical dark matter density ωcdm , the spectral
+index ns , and scalar amplitude As . While the EDE component rapidly decays after
+the critical redshift zc , the influence of these ΛCDM parameter shifts on density
+perturbations, and the subsequent growth of structure, is imprinted across cosmic
+time. The critical change comes from the non-negligible contribution of the EDE
+scalar to the cosmic energy budget at recombination. Unlike perturbations in the
+matter component, the EDE perturbations are oscillating leading up to last scattering and (leaving ΛCDM parameters unchanged) results in a suppression of the Weyl
+potential and also manifests in the CMB as an EDE contribution to the early-ISW
+effect. In fitting to early-Universe data sets, namely the CMB, the aforementioned
+ΛCDM parameter changes are typically able to restore CMB power spectrum to
+fit data about as well as the concordance model. Given this comes at the cost of
+a significant increase in the physical dark matter density and that the cosmology
+hereafter is largely unchanged (canonical EDE redshifts much faster than radiation),
+one would anticipate possible issues in the late Universe with structure formation.
+
+4.1. The Matter Power Spectrum
+The matter power spectrum for EDE and and ΛCDM is shown in Fig. 7, where we
+show the matter power spectrum P (k) in both models and the ratio of the two at
+varying redshift. The power spectrum in EDE is characterized by an excess of power
+on small scales k ≳ kc , where kc is the wavenumber of the mode that entered the
+horizon at the time zc . The excess is the net result of a competition between an EDEinduced suppression of power and a ΛCDM-parameter-induced excess. The impact
+of EDE can be appreciated from Fig. 8, where we show the imprint of individual
+shifts in fEDE and zc , with fEDE increased from 0.04 to 0.24 (top-to-bottom) and
+zc decreased from 4.25 to 3.0 (top to bottom). From the left panel of Fig. 8, one
+may clearly appreciate that an increase in fEDE causes a dramatic suppression of
+P (k), e.g., the shift fEDE = 0.04 to fEDE = 0.24 converts a > 20% excess in power
+at k = 1 h Mpc−1 to a ∼ 10% deficit. This predominantly impacts modes that are
+well inside the horizon when the EDE component is active, as can be seen in the
+right panel, wherein smaller zc shifts the scale at which EDE-induced changes arise
+to lower wavenumbers, which enter the horizon later.
+The EDE-induced suppression in P (k) is counteracted by both an excess at
+high-k in the initial conditions for perturbations, namely in the primordial power
+spectrum as encoded by ns and As , and an enhanced growth of structure throughout
+cosmic time. The former should not be underestimated; indeed, even just the shift
+
+Observational Constraints on Early Dark Energy
+
+19
+
+in ns generates a 6% excess in power at k = 1hMpc−1 , i.e.,
+PR (k = 1hMpc−1 , ns = 0.9889)
+= 1.06
+PR (k = 1hMpc−1 , ns = 0.9686)
+
+(17)
+
+where PR (k) denotes the primordial power spectrum of comoving curvature perturbations R.
+It is conventional to parameterize the density perturbations via a small handful
+of numbers. In particular, the amplitude of perturbations can be characterized by
+σ8 , the RMS linear-theory mass fluctuation in a sphere of radius 8 Mpc/h at z = 0.
+This is evaluated in Fourier space as,
+Z
+1
+2
+d log k W 2 (kR) k 3 P (k) .
+(18)
+(σ8 ) =
+2π 2
+where W (kR) is a spherical top-hat filter of radius R = 8 Mpc/h. In EDE models
+that fit the CMB, σ8 is ∼ 2% larger than in ΛCDM. This holds across redshift.
+Meanwhile, on the observational side, the parameter that is most well constrained by LSS experiments is S8 , namely,
+0.5
+
+ΩM
+.
+(19)
+S8 ≡ σ8
+0.3
+In the fit to ΛCDM, the S8 value inferred from CMB experiments is often larger
+than that inferred from LSS experiments. For example, the Planck 2018 analysis
+finds S8 = 0.830 ± 0.013 [75], while DES-Y3 finds S8 = 0.776 ± 0.017 [100], in 2.7σ
+tension with the Planck 2018 CMB result.
+4.2. Anisotropic Galaxy Clustering
+Another sensitive probe of EDE is the anisotropic galaxy power spectrum, which
+probes the parameter combination f σ8 , where f is the logarithmic growth rate and
+is defined in terms of the linear growth factor D,
+d ln D
+.
+(20)
+d ln a
+Critically, f controls the linear-theory prediction for matter velocity perturbations,
+θ = −f δm , where θ is the velocity divergence. The shape of the power spectrum
+constructed from their perturbations serves as a complementary probe to the CMB;
+in particular the shape has been shown to be sensitive to the physical dark matter
+density [101–103]. In practice, f σ8 is probed from measurements of redshift space
+distortions (RSD).
+To really leverage the full power of LSS data sets one has to study the nonlinear regime, specifically the non-linear matter power spectrum. However, this is
+complicated by the non-linear evolution of the matter density field and its connection to luminous tracers like galaxies but is further complicated by baryonic effects.
+To overcome these challenges one can resort to numerical N-body simulations or
+alternatively perturbation theory. N-body simulations are advantageous in that it
+f=
+
+20
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+105
+
+1.20
+
+CDM
+EDE
+
+P(k)EDE P(k) CDM
+
+1.15
+104
+
+1.05
+
+/
+
+P(k) [(h 1Mpc)3]
+
+1.10
+
+z = 0.825
+z = 0.675
+z = 0.525
+z = 0.375
+z = 0.225
+z=0
+
+1.00
+
+103
+
+0.95
+102 4
+10
+
+10 3
+
+10 2
+
+10 1
+
+k [hMpc 1]
+
+0.90 4
+10
+
+100
+
+10 3
+
+10 2
+
+10 1
+
+k [h Mpc 1]
+
+100
+
+Fig. 7. The non-linear power spectrum P (k) at z = 0 for EDE and ΛCDM models that fit the
+primary CMB, distances, and SH0ES data (left panel). The change in σ8 for the canonical EDE
+model can be seen here as the relative enhancement to P (k) in the range 0.1 h/Mpc ≲ k ≲ 1 h/Mpc
+(although σ8 is strictly speaking computed from the linear power spectrum). We also show the ratio
+of the EDE and ΛCDM non-linear P(k) (right panel) at redshifts chosen to be at the midpoints
+of bins used in the DES-Y1 analysis (and also z = 0 in red). The model parameters used are the
+same as in Fig. 2.
+
+P(k)EDE P(k) CDM
+
+1.2
+
+1.3
+
+fEDE = . 04
+fEDE = . 08
+fEDE = . 12
+fEDE = . 16
+fEDE = . 20
+fEDE = . 24
+
+1.2
+
+P(k)EDE P(k) CDM
+
+1.3
+
+/
+
+1.1
+
+/
+
+1.1
+
+1.0
+
+1.0
+
+0.9
+
+0.8 4
+10
+
+log10zc = 3.0
+log10zc = 3.25
+log10zc = 3.562
+log10zc = 3.75
+log10zc = 4.0
+log10zc = 4.25
+
+0.9
+
+10 3
+
+10 2
+
+10 1
+
+k [h Mpc 1]
+
+100
+
+0.8 4
+10
+
+10 3
+
+10 2
+
+k [h Mpc 1]
+
+10 1
+
+100
+
+Fig. 8. The ratio of P (k) in EDE relative to ΛCDM as a function of fEDE , at fixed log10 zc = 3.526
+and θi = 2.83 (left panel). When fEDE is increased, the growth of perturbations inside the horizon
+during the EDE phase is further suppressed. The red curve depicted here is the same as that shown
+in Fig. 7. We also show the ratio of P (k) in EDE to ΛCDM as a function of log10 zc , at fixed
+fEDE = 0.12 and θi = 2.83 (right panel). As critical redshift, zc , is decreased, the suppression of
+growth due to EDE is pushed to correspondingly later times, and affecting modes on progressively
+larger scales (lower k).
+
+Observational Constraints on Early Dark Energy
+
+21
+
+is possible, at least in principle, to model all scales. The downside is that it is
+computationally expensive to run such simulations and one is actually still affected
+by uncertainties in the modeling of galaxy formation. A typical work around is to
+construct fitting functions for the non-linear regime (e.g., Halofit [104]) and phenomenologically model the galaxy bias. The downside of the this work-around is
+that one cannot necessarily trust these fitting functions if there are deviations from
+ΛCDM. In some cases, particularly when the new physics affecting LSS is confined
+to small changes to the high-z linear P (k), it can be argued that the use of Halofit
+is justified, such as for EDE where the posterior obtained with Halofit is consistent
+with runs done replacing LSS with an S8 prior (which is a linear-theory quantity).
+An alternative to N-body simulations is to tackle the problem of galaxy
+clustering using the Effective Field Theory of Large-Scale Structure (EFT of
+LSS) [105–108], which serves as a consistent framework to undertake non-linear perturbation theory in the mildly nonlinear regime. While limited to a small window
+of wavenumbers, k ≲ 0.5 h/Mpc, EFT provides unmatched accuracy in describing clustering on these scales. In the context of spectroscopic surveys, perturbative
+techniques are useful for reconstructing the 3D distribution of matter. With EFT,
+all effects contributing to the observed map of LSS are included, including nonlinearities in the matter fields, galaxy bias [109], baryonic feedback [110], Fingersof-God [111], non-linear redshift space distortions [112–115], IR resummation for the
+BAO [113, 116–121], etc. The EFT of LSS provides a general large-scale construction of a cosmological fluid which obeys the equivalence principle and has rotational
+symmetry. Since EDE still possesses these symmetries we are perfectly safe to apply
+EFT to this extension of ΛCDM cosmology.
+In this work we utilize the one-loop EFT of LSS model as laid out in [103, 122].
+The multipole moments for the redshift-space galaxy power spectrum are given by
+the one-loop perturbation theory. Collectively, the power spectrum can be written
+as,
+1−loop
+tree
+noise
+ctr
+Pg,ℓ (k) = Pg,ℓ
+(k) + Pg,ℓ
+(k) + Pg,ℓ
+(k) + Pg,ℓ
+(k).
+
+(21)
+
+The tree-level piece is simply the linear-theory result, so in this case the Kaiser
+formula [123],
+Pgtree (k, µ) = (b1 + f µ2 )2 Plin (k),
+
+(22)
+
+where b1 is a scale-independent linear bias and µ ≡ k̂ · ẑ is the angle between the
+Fourier modes and line-of-sight direction ẑ. The other contributions include the
+one-loop corrections containing information of the non-linear evolution, stochastic
+contributions typically modeled as Poisson shot noise, and the last pieces are ultraviolet (UV) counterterms (see, e.g., [102, 103, 122] for more details on the EFT
+of LSS). In Fig. 9 we show the monopole and quadrupole of the galaxy power
+spectrum with BOSS data at z = 0.61 in ΛCDM and for EDE before and after
+marginalization over nuisance parameters. We further show the difference between
+both models in Fig. 10. In the first case, the nuisance parameters are kept the same
+
+22
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+as ΛCDM, which results in an appreciable deviation between the two models. However, the difference can be fully absorbed by the nuisance parameters, making for a
+much smaller disagreement between the power spectrum – changing them by ∼ 10%
+which is smaller than current precision for these parameters from data or N-body
+simulations. Focusing on the fractional difference its easy to see the roughly 0.3%
+deviations in the monopole due to a slight offset in the location of the BAO wiggles.
+This feature is even more prominent in the quadrupole where it is ∼ 2% for small
+wavenumbers. The deviation in the BAO wiggles is easy to understand physically
+as it stems directly from the change in the physical dark matter density [103].
+NGC, z=0.61
+
+2000
+
+NGC, z=0.61
+
+2000
+
+ℓ=0
+
+ℓ=2
+
+1500
+
+k Pℓ (k), (Mpc/h)2
+
+k Pℓ (k), (Mpc/h)2
+
+ℓ=0
+
+1000
+500
+0
+
+ℓ=2
+
+1500
+1000
+500
+0
+
+0.05
+
+0.10
+
+0.15
+
+k, h Mpc -1
+
+0.20
+
+0.25
+
+0.05
+
+0.10
+
+0.15
+
+0.20
+
+0.25
+
+k, h Mpc -1
+
+Fig. 9. Galaxy power spectrum multipoles for z = 0.61, before (left panel) and after (right panel)
+the nuisance parameters have been marginalized over, including the high-z NGC BOSS data.
+Results for ΛCDM are depicted with solid curves, while the EDE model is shown with dashed
+curves. The right panel (having marginalized over nuisance parameters) shows the curves cannot
+be distinguished; the fractional difference between these curves is depicted in Fig. 10.
+
+In order to better understand what effects are most important to distinguish
+between ΛCDM and the EDE model, we compare the corresponding theory curves
+against the BOSS DR 12 data from the EFT full-shape likelihood version 2021.
+The theory models we consider are bestfits extracted from the Planck + BOSS
+MCMC chains for ΛCDM and for the EDE model with fEDE fixed to 0.2. The latter value is chosen to be quite large in order to clearly visualize the impact of the
+EDE model on the galaxy power spectrum. The results for our datavector, consisting of ℓ = 0, 2, 4 multipoles, and the real-space power spectrum proxy Q0 [124],
+are presented in Fig. 11. In our setup, the EDE fit to the galaxy power spectrum
+datavector for the NGC z = 0.38 slice is worse than that of ΛCDM by ∆χ2 = 4.
+Although this difference is statistically significant, it accumulates from the entire
+datavector, and hence the visual difference between the two models is less striking in Fig. 11. In particular, any appreciable discrepancy between the EDE and
+the ΛCDM models is observed only at the level of the monopole and quadrupole
+moments. Looking at the corresponding residuals in the lower panels of Fig. 11,
+we can identify two most important constraining channels. In the monopole, the
+EDE fit enhances power on large scales, k < 0.05 hMpc−1 , and suppresses power
+
+Observational Constraints on Early Dark Energy
+NGC, z=0.61
+
+0.02
+
+NGC, z=0.61
+
+1.0
+
+ℓ=0
+
+ℓ=0
+ℓ=2
+
+0.00
+
+0.0
+- 0.5
+
+- 0.01
+- 0.02
+
+ℓ=2
+
+0.5
+Δ Pℓ /σPℓ
+
+Δ Pℓ /Pℓ
+
+0.01
+
+23
+
+0.05
+
+0.10
+
+0.15
+
+k, h Mpc -1
+
+0.20
+
+0.25
+
+- 1.0
+
+0.05
+
+0.10
+
+0.15
+
+0.20
+
+0.25
+
+k, h Mpc -1
+
+Fig. 10. Galaxy power spectrum multipoles for z = 0.61, where we have marginalized over nuisance parameters as in the right panel of Fig. 9. Left panel: The fractional change between EDE
+and ΛCDM: ∆P/P ≡ (P EDE − P ΛCDM )/P ΛCDM . The monopole has a noticeable 0.3% pattern
+produced by a mismatch in the shape for the BAO wiggles in the two models. On the other hand,
+the quadrupole exhibits a O(2%) fractional change at low k. Right panel: Fractional change in
+units of the BOSS error bar for each wavenumber bin: ∆P/σP . (Keep in mind that neighboring
+k bins are correlated). The largest discrepancy is observed in the position and shape of the BAO
+wiggles in the monopole.
+
+on intermediate scales, k ≈ 0.1 hMpc−1 . At even shorter scales the difference between the EDE and ΛCDM is largely absorbed into the EFT nuisance parameters.
+The scale-dependent modulation of P0 can be attributed to variations of ωcdm with
+fixed rs H0 (which is pinned down by the CMB), cf. Fig. 8 and [103]. Moving on to
+the quadrupole, we see that EDE homogeneously suppresses power on large scales,
+k ≲ 0.1 hMpc−1 , which is constrained through RSD, or the f σ8 parameter. Just
+like in the monopole case, the difference between ΛCDM and EDE for wavenumbers
+greater than 0.1 hMpc−1 is absorbed by the nuisance parameters in the quadrupole.
+All in all, our analysis suggests that the galaxy power spectrum parameters most
+relevant for the EDE constraints are ωcdm and f σ8 . Finally, we note that our results suggest that better constraints on EDE can be obtained with more restrictive
+priors on the EFT nuisance parameters, which can be extracted from numerical
+simulations; see, e.g., [125–130].
+4.3. The Lyman-α forest
+Finally, we turn to the high(er)-redshift universe, and in particular the Lyman-α forest. At 2 ≲ z ≲ 5, clouds of neutral hydrogen (HI) gas permeating the intergalactic
+medium leave imprints in the spectra of photons traveling through, which are visible
+in the optical region of the spectrum today. Important sources of such photons are
+luminous quasars whose broad and continuous spectra are susceptible to absorption
+features. In particular, HI clouds along an observer’s line of sight will attenuate flux
+as absorption features. This signature manifests as a collection of densely packed
+Lyman-α absorption features at different frequencies – this is the Lyman-α forest. Physically, the corresponding optical depth traces the hydrogen column density
+along the line of sight, so that it acts as a tomographic tracer of large-scale struc-
+
+24
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+2000
+kPl (k) [h−2Mpc2]
+
+kPl (k) [h−2Mpc2]
+
+2000
+1000
+0
+Monopole P0 (k)
+Quadrupole P2 (k)
+
+−1000
+
+1000
+
+0
+
+Hexadecapole P4 (k)
+
+ΛCDM
+EDE
+
+Real-space Q0 (k)
+
+0.0
+
+0.1
+
+0.2
+
+0.3
+
+−1000
+
+0.4
+
+0.05
+
+k [h/Mpc]
+
+0.10
+
+Monopole P0 (k)
+Quadrupole P2 (k)
+
+0.15
+
+0.20
+
+k [h/Mpc]
+
+0.3
+
+1.0
+
+P2data/P2bestfit − 1
+
+P0data/P0bestfit − 1
+
+0.2
+0.1
+0.0
+−0.1
+−0.2
+−0.3
+
+ΛCDM
+EDE
+
+0.05
+
+0.10
+
+k [h/Mpc]
+
+0.15
+
+0.20
+
+0.5
+
+0.0
+−0.5
+−1.0
+
+ΛCDM
+EDE
+
+0.05
+
+0.10
+
+0.15
+
+0.20
+
+k [h/Mpc]
+
+Fig. 11. Comparison between the ΛCDM and EDE best-fit models at the level of the BOSS
+galaxy power spectrum data. Upper left panel: the combined power spectrum data set for the
+NGC low-z (z = 0.38) slice. Upper right panel: the monopole and quadrupole moments (P0 and
+P2 ) that display the largest difference between EDE and ΛCDM. Lower left and lower right panels:
+residuals between the theory and the data for the monopole and quadrupole moments, respectively.
+
+ture. In contrast to other probes, like the galaxy power spectrum, the Lyman-α
+forest is able to effectively probe scales down to ∼ 1 Mpc or even below. Moreover,
+at these high redshifts, such small scales are still near the (quasi-)linear regime,
+thus allowing cosmological inference on scales that are highly polluted by nonlinear
+and baryonic effects today; see, e.g., [131] for further discussion and references.
+Current probes of the Lyman-α forest are large spectroscopic surveys of quasars,
+which include the Baryonic Oscillation Spectroscopic Survey (BOSS) and its successor eBOSS [61], as well as the ongoing Dark Energy Spectroscopic Instrument
+(DESI) [132–135]. These surveys have been used to extract the 3D BAO feature, but
+the Lyman-α forest can also be used to extract information about the correlations
+along the observer’s line of sight via the 1D flux power spectrum. Smaller dedicated
+surveys using much higher-resolution spectrographs have also been undertaken,
+including the XQ-100 [62] and MIKE/HIRES quasar samples [136], which allow
+Lyman-α measurements out to smaller scales, at the cost of higher sample variance.
+Interestingly, analyses of Lyman-α forest data have found that there is preference
+for lower values of both Ωm and ns relative to CMB analyses in ΛCDM [61,137]. The
+
+Observational Constraints on Early Dark Energy
+
+25
+
+constraint on ns is particularly noteworthy given the very small error bars that joint
+CMB+Lyα analyses obtain on this parameter, suggesting tight constraining power
+on EDE, given the increase in ns required to fit EDE to CMB data. A first such
+analysis of EDE using Lyman-α forest data was recently performed in Ref. [138],
+as discussed further below.
+To better understand the constraining potential of Lyman-α forest data, in
+Fig. 12 we compare the best-fit ΛCDM cosmology in the fit to Planck CMB and
+BAO data to the best-fit ΛCDM model in the fit to Lyman-α forest data from
+eBOSS (black) [61] and XQ-100 (orange) [62], along with the best-fit EDE model to
+Planck CMB and BAO data. The shaded bands denote 68% C.L. regions. The grey
+dashed line shows the approximate Lyα pivot wavenumber at which the data are
+most sensitive (kp = 0.009 s/km). All curves are furthermore evaluated at z = 3,
+the pivot Lyα redshift.
+Of particular interest is the derivative of the matter power spectrum
+3
+d(k Plin (k))/dk, which is a proxy for the spectral index ns . This is shown in the
+lower right inset panel of Fig. 12. From this one may appreciate that ΛCDM fit
+to Planck 2018 and BAO data prefers a significantly higher slope at kp than does
+either of the Lyα data sets. The best-fit EDE model has a larger slope than that in
+ΛCDM, suggesting that EDE, in its effort to resolve the H0 tension, will exacerbate
+existing moderate tension with Lyα data.
+5. Constraints from Weak Lensing
+We now begin our examination of large-scale structure constraints on the Early Dark
+Energy scenario. We use results from Ref. [58], which utilized data from DES-Y1,
+KiDS+VIKING-450 (KiDS), and Hyper Suprime-Cam (HSC). The DES-Y1 data
+set refers specifically to the “3x2pt” likelihood composed of photometric galaxy
+clustering, cosmic shear two-point correlation functions, and galaxy-galaxy lensing [139]. The KV-450 [140, 141] and HSC [142] surveys are complementary data
+sets to the DES results, but including them would result in an appreciably more
+computationally expensive MCMC analysis. To circumvent the added complexity of
+having to sample from two new likelihoods, we have opted to approximate KV-450
+and HSC-Y1 data utilizing a prior on S8 . For KiDS and HSC-Y1 this corresponds
++0.030
+to a constraint of S8 = 0.737+0.040
+−0.036 and S8 = 0.780−0.033 , respectively. One may
+be concerned that this approach could be problematic, but since we have the full
+likelihood for DES-Y1 3x2pt we can test if that data set’s S8 constraint is a good
+approximation of the information content in the full likelihood. A validation test
+was performed in Ref. [58] for both the EDE and ΛCDM scenarios, where it was
+found that the parameter constraints and posterior distributions in the fit to a combined data set including Planck, BAO, RSD, Pantheon, SH0ES, and the DES-Y1
+3x2pt likelihood are effectively identical to the posteriors and constraints from the
+analysis with the DES-Y1 likelihood replaced by a Gaussian prior on S8 . Since that
+time, new data has become available from DES-Y3 [100], but incidentally the DES-
+
+26
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+0.5
+
+Planck 2018+BAO EDE (Best-fit)
+Planck 2018+BAO ΛCDM (Best-fit)
+eBOSS Lyα ΛCDM (Best-fit, C.18)
+Pivot wavenumber (kp )
+
+0.4
+
+k (h/Mpc)
+0.5
+
+1.0
+
+1.5
+
+8
+
+d(k3 Plin )/dk (Mpc/h)
+
+k 3 Plin (k)/(2π 2 )
+
+XQ-100 Lyα ΛCDM (Best-fit)
+
+0.3
+
+6
+
+4
+
+2
+
+0.2
+0.5
+
+1.0
+
+1.5
+
+k (h/Mpc)
+Fig. 12.
+The best-fit (linear) matter power spectrum at z = 3.0 for EDE (red) compared to
+ΛCDM (blue), as fit to the Planck PR3 CMB + BAO data, and compared with the best-fit ΛCDM
+model for the eBOSS (black) [61] and XQ-100 (orange) [62] Lyα forest data sets [138]. Here, the
+dashed grey line shows the approximate location of the Lyα pivot wavenumber (kp = 0.009 s/km).
+The shaded bands show the 68% C.L. uncertainty from the CMB + BAO analyses. Note that the
+best-fit model for EDE is outside the 68% C.L. region due to prior-volume effects in the MCMC
+analysis. The inset in the lower right shows the derivative d(k3 Plin (k))/dk and the dashed grey
+line again indicates the approximate location of the Lyα pivot wavenumber. It is clear that EDE
+cosmologies with Hubble-tension-resolving parameters that successfully fit CMB + BAO data
+necessitate an enhancement in the amplitude and an increased slope in P (k) for wavenumbers
+near the pivot scale, relative to ΛCDM. These constraints, in particular the steeper derivative, go
+against the trend from Lyα measurements, and are the origin of the tight upper limits on EDE
+derived in Ref. [138]. Note that this figure is for illustrative purposes and does not include errors
+for the Lyα data, so as to enhance clarity.
+
+Y3 constraint on S8 is nearly identical to that from the inverse-variance-weighted
+combination of DES-Y1, KV-450, and HSC-Y1 S8 measurements, and thus the combined DES-Y1+ KiDS + HSC-Y1 analysis presented here can be considered a proxy
+for an analysis using DES-Y3 in place of these three. Further improvements could
+be made using the latest KiDS-1000 [143, 144] and HSC-Y3 [145, 146] data, but we
+leave such an exploration to future work.
+To mitigate ‘prior volume effects’ (discussed further in Sec. 8) we have performed
+the MCMC analysis with a SH0ES H0 prior, which was subsequently removed in
+
+Observational Constraints on Early Dark Energy
+
+27
+
+post-processing, such that our analysis is independent of SH0ES entirely. The posteriors for canonical EDE or ΛCDM analyses are presented in Fig. 13, and in Table 4
+we show the mean ±1σ constraints with a combined data set consisting of Planck
+PR3 Plik primary CMB data (TT+EE+TE) and Planck PR3 CMB lensing data;
+data for BAO from SDSS DR7, SDSS DR12, and 6dF; Pantheon SNIa data; RSD
+data from SDSS DR12; DES-Y1 3x2pt data; and a prior for S8 derived from KV-450
+and HSC-Y1 data. Note that we have treated the three weak lensing surveys (DES,
+KiDS, and HSC) as independent, which is a valid assumption as the sky overlap
+between them is small for the data releases used here.
+After the inclusion of all these data sets, we find that the evidence for EDE is
+weakened to below the 2σ mark, as assessed from the fEDE posterior. Concretely
+we find for a two-tailed analysis that fEDE = 0.023 ± 0.017 (68% CL), which is
+statistically consistent with fEDE = 0; as an upper bound we instead find that
+fEDE < 0.060 at 95% CL. Furthermore, we find that H0 = 68.92+0.40
+−0.72 km/s/Mpc,
+which is in ≈ 3.5σ tension with SH0ES. On the other hand, this value for H0 is
+perfectly consistent with the ΛCDM value of H0 fit to the same combination of data
+sets, H0 = 68.33 ± 0.36 km/s/Mpc. Collectively this corresponds to a non-detection
+of a new EDE component.
+The posteriors after the inclusion of large-scale structure data are consistent
+with that from the primary Planck 2018 CMB data alone, although the constraints
+on fEDE are even stronger after the inclusion of the additional data sets.
+6. Constraints from BOSS
+We now turn our attention to the role of BOSS data in constraining EDE. We
+consider BOSS data in conjunction with Planck 2018 (PR3) CMB data and these
+two together in conjunction with S8 measurements from DES, HSC, and KV450.
+In the CMB analysis, we adopt the Plik likelihood for the final Planck 2018
+TT+TE+EE+low ℓ+lensing data [147]. Employing the standard analysis procedure, we adjust all necessary nuisance parameters to accommodate observational
+and instrumental uncertainties.
+When analysing BOSS we use a number of joint EFT-based full-shape+BAO
+likelihoods extracted from the final release, DR12 [148]. Namely, our result presented first will be for the FS+BAO likelihood from Ref. [149], based on the FS
+likelihood version 2019 [103]. Our final results will be presented for the FS+BAO
+likelihood version 2021 from Ref. [150]; see Refs. [103, 122, 149–153] for more detail.
+Note that the FS part of the EFT-based BAO+FS likeilihood has been upgraded
+twice since the original 2019 release [103]. All subsequent FS+BAO likelihoods have
+the same BAO part, so in what follows we will focus only on the FS part when discussing different BOSS DR12 likelihoods, and distinguish between them by using
+the notations FS 2019, FS 2020, and FS 2021. FS 2020 is the intermediate version
+used in (e.g.) Refs. [152, 153].
+The FS+BAO likelihood from Ref. [149] (FS-2019) was used in the first BOSS
+
+28
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+Constraints from Planck 2018 PR3 TT+TE+EE + CMB Lensing, BAO, SNIa,
+RSD, DES-Y1, KiDS-S8 , and HSC-S8
+Table 4. The mean ±1σ constraints for parameters in ΛCDM and
+in the canonical EDE model, from Planck 2018 (PR3) primary
+CMB data (TT+TE+EE) and CMB lensing data; BAO data from
+SDSS DR7, SDSS DR12, and 6dF; SDSS DR12 RSD data; DES-Y1
+3x2pt data; Pantheon SNIa data; and with priors on S8 from HSC
+and KiDS data. Here we have not provided the best-fit parameters because of our use of approximate likelihoods for KiDS and
+HSC. In our analysis we find no preference for the EDE component; using a two-tailed analysis we find fEDE = 0.023 ± 0.017,
+which is consistent with our Planck CMB-only analysis (Table 1).
+Parameter
+ln(1010 As )
+ns
+100θs
+Ωb h2
+Ωc h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+log10 (f /eV)
+log10 (m/eV)
+
+ΛCDM Marg.
+
+EDE (n = 3) Marg.
+
+3.041 ± 0.014
+0.9691 ± 0.0035
+1.04200 ± 0.00028
+0.02253 ± 0.00013
+0.11785 ± 0.00077
+0.0552 ± 0.0070
+−
+−
+−
+68.33 ± 0.36
+0.3021 ± 0.0045
+0.8032 ± 0.0053
+0.8060 ± 0.0082
+−
+−
+
+3.044 ± 0.014
+0.9718+0.0041
+−0.0055
+1.04177+0.00038
+−0.00030
+0.02264+0.00015
+−0.00018
+0.11956+0.00088
+−0.0020
+0.0558 ± 0.0070
+> 3.28
+< 0.060
+> 0.35
+68.92+0.40
+−0.72
+0.3008 ± 0.0047
+0.8064+0.0057
+−0.0073
+0.8074 ± 0.0089
+26.52+0.28
+−0.44
+−26.67 ± 0.69
+
+EDE constraints presented in Ref. [154]. It includes the monopole ℓ = 0 and dipole
+ℓ = 2 multipole moments of both the pre- and post-reconstruction anisotropic galaxy
+power spectra, at two redshifts, z = 0.38 (low-z) and z = 0.61 (high-z), observed
+in both the North Galactic Cap (NGC) and South Galactic Cap (SGC), for a cumulative volume ≃ 6 (h−1 Gpc)3 . The four data subsets (low-z vs. high-z, NGC vs.
+SGC) each have different selection functions, and therefore in our analysis we endow
+each with an independent set of nuisance parameters. We adopt broad priors as in
+Ref. [103] for FS-2019 and more restrictive priors from [150] in our final analysis
+based on the FS-2021 likelihood. Our final FS+BAO likelihood will be based on the
+FS-2021 BOSS DR12 likelihood, which includes the monopole ℓ = 0, dipole ℓ = 2,
+and hexadecapole ℓ = 4 multipole moments of the galaxy power spectrum, the realspace galaxy power spectrum proxy Q0 [124], and the bispectrum monopole [155]
+data, for the same BOSS NGC/SGC/high-z/low-z selections. As far as the measurements are concerned, the FS-2021 likelihood is based on the same data, but all
+statistics are extracted with the novel optimal window-free estimators [156, 157].
+We discuss the differences between FS likelihoods in more detail shortly.
+Finally, we include supplementary LSS data from photometric surveys. As done
+previously in Sec. 5, we incorporate DES-Y1 photometric galaxy clustering, galaxy-
+
+Observational Constraints on Early Dark Energy
+
+29
+
+Fig. 13. Cosmological parameter constraints on EDE from the combination of DES-Y1 3x2pt
+data, KiDS and HSC data approximated by an S8 prior, and Planck PR3 CMB and CMB lensing
+data, BAO data from 6dF, SDSS DR7, and SDSS DR12, Pantheon SNIa data, and SDSS DR12
+RSD data. Grey bands indicate the SH0ES H0 measurement while pink bands indicate the DESY3 measurement of S8 .
+
+galaxy lensing, and cosmic shear measurements [139], as well as weak lensing measurements from KV-450 [140,141] and HSC-Y1 [142]. The combined measurements,
+weighted by inverse variance, result in S8 = 0.770 ± 0.017, nearly identical to the
+DES-Y3 measurement S8 = 0.776 ± 0.017 [100]. Hereafter, we will denote this combination as simply “S8 .”
+We compute the CMB and non-linear spectra using the code CLASS-PT [122],
+which is a further modification of the publicly available class ede code [58]. We perform posterior sampling using the Metropolis-Hastings algorithm as implemented
+in Monte Python.c We plot our results using GetDist [158].d
+6.1. EDE Meets BOSS: circa 2020
+We begin with an analysis of Planck 2018 CMB data (PR3 Plik likelihood) combined with BOSS BAO data and the BOSS DR12 FS-2019 likelihood. The results
+are given in Table 5 and Fig. 14. Concordant with the analysis of Planck data
+alone, we find no evidence for EDE in this analysis. The constraint from Planck is
+strengthened by ≈ 20%, to fEDE < 0.072 at 95% C.L., when BOSS is included.
+c https://github.com/brinckmann/montepython_public/issues/112
+d https://github.com/cmbant/getdist
+
+30
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+To understand these results, it is useful to first review the constraining power
+of BOSS full shape and BAO data in the context of ΛCDM. In particular, the
+shape of the galaxy power spectrum provides a direct measurement of the physical
+density of dark matter ωcdm [102, 103]. This leads to a relative decrease in S8 , with
+S8 = 0.824 ± 0.011 when BOSS is included versus S8 = 0.833 ± 0.016 in the fit
+to the CMB alone. Meanwhile there is a relative increase in H0 relative to Planck,
+up to H0 = 67.70 ± 0.42 km/s/Mpc, in agreement with the CMB-independent
+measurement H0 = 68.6 ± 1.1km/s/Mpc from BOSS BAO data with a BBN prior
+imposed on ωb [149]. The slight increase in H0 is a well-known impact of BAO data
+(see Refs. [75, 148]).
+The parameter shifts in ΛCDM are mirrored by those in EDE. This can be appreciated from the posterior distributions shown in Fig. 14. In particular, the addition
+of BOSS data causes downward shifts in both σ8 and ωcdm (and correspondingly
+Ωm ; see Table 5). These two effects combine to drive a relative shift downward in S8 :
+we find S8 = 0.822 ± 0.010 when BOSS is included, compared to S8 = 0.839 ± 0.017
+for the CMB alone, similar to ΛCDM. Again, like in ΛCDM, there is a small relative
+increase in H0 when BOSS is included, to H0 = 68.54+0.52
+−0.95 km/s/Mpc. Likewise,
+the constraints on the other standard ΛCDM parameters, such as the spectral index
+ns , track the ΛCDM constraints when BOSS is included. The spectral index is reduced to ns = 0.9696+0.0046
+−0.0068 in EDE, compared to ns = 0.9656 ± 0.0037 in ΛCDM.
+That the BOSS-induced shifts in parameter constraints in EDE so closely match
+those in ΛCDM reflects the lack of an overall preference for the EDE component,
+and indicates that the EDE constraints on H0 , ns , etc., are primarily driven by the
+degeneracies of the underlying ΛCDM components and not the physics of EDE per
+se.
+6.2. Full combination of CMB and LSS data: circa 2020
+The constraints on EDE significantly tighten when additional large-scale structure
+data are included in the analysis. In particular we supplement Planck and BOSS
+data with additional LSS data from the Dark Energy Survey Y1 [139], the KiloDegree Survey (KiDS) [140,141], and the Subaru Hyper Suprime-Cam (HSC) survey
+[142]. Following [58], we parameterize these additional data sets via a prior on S8
+corresponding to the measurement of each. This analysis comes with important
+caveats, as follows:
+(1) The LSS data sets are treated as independent. The approximation is justified on
+the basis of the small relative sky overlap between BOSS and the weak lensing
+surveys considered here (1%, 2%, and 1.5% of BOSS for DES-Y1, KV450, and
+HSC [159–161]), respectively, as well as the different survey depths and photo-z
+calibrations. We note that the combined constraint of DES-Y1+KV450+HSCY1 is near identical to the DES-Y3 constraint [100], and thus this caveat can
+easily be avoided by replacing the former with the latter.
+(2) We approximate the weak lensing data by a Gaussian prior on S8 , which is
+
+Observational Constraints on Early Dark Energy
+
+31
+
+Constraints from Planck 2018 data + BOSS DR12 (FS-2019)
+Table 5. Constraints on parameters in ΛCDM and the canonical EDE model
+with mean (best-fit) ±1σ constraints from a combined data set of Planck 2018
+TT+TE+EE+low ℓ+lensing and BOSS FS+BAO. Our analysis does not detect
+an EDE component; a 68% confidence limit gives fEDE = 0.025+0.0061
+−0.025 , which
+is statistically consistent with zero. The upper limit on the EDE component,
+fEDE < 0.072, is quoted at 95% CL. The EDE value of H0 is in 3.9σ tension with the latest SH0ES measurement (H0 = 73.04 ± 1.04 km/s/Mpc) [1].
+Parameter
+ln(1010 As )
+ns
+100θs
+Ωb h2
+Ωcdm h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+
+ΛCDM
+
+EDE (n = 3)
+
+3.043 (3.034) ± 0.014
+0.9656 (0.9655) ± 0.0037
+1.04185 (1.04200) ± 0.00029
+0.02241 (0.02233) ± 0.00014
+0.1192 (0.1191)+0.00087
+−0.00095
+0.0546 (0.0503)+0.0065
+−0.0072
+−
+−
+−
+67.70 (67.56) ± 0.42
+0.3105 (0.3112)+0.0053
+−0.0058
+0.8077 (0.8039) ± 0.0058
+0.822 (0.819) ± 0.010
+
+3.047 (3.049) ± 0.014
+0.9696 (0.9717)+0.0046
+−0.0068
+1.04172 (1.04126) ± 0.00032
+0.02255 (0.02245) ± 0.00018
+0.1215 (0.1243)+0.0013
+−0.0029
+0.0553 (0.0543)+0.0069
+−0.0075
+3.71 (3.52)+0.26
+−0.33
+< 0.072 (0.047)
+2.023(2.734)+1.1
+−0.34
+68.54 (68.83)+0.52
+−0.95
+0.3082 (0.3120)+0.0056
+−0.0057
+0.8127 (0.8195)+0.0072
+−0.0091
+0.824 (0.827) ± 0.011
+
+justified on the basis of the validation check performed in [58] for DES-Y1, for
+both the EDE and ΛCDM models. This allows the inclusion of of HSC-Y1 and
+KV-450 measurements, which do not have publicly available likelihoods. However, this comes with another caveat that the HSC and KV-450 measurements
+are based on non-linear biasing models and not an EFT-based framework as is
+implemented here for BOSS. We expect a joint EFT treatment of weak lensing
+and BOSS to lead to a stronger breaking of degeneracies between cosmological
+and nuisance parameters, thereby improving the constraints on the former.
+
+With these caveats in mind, we proceed with our analysis.
+The results are shown in Fig. 15 and Table 6. Consistent with the analyses of
+Planck alone and of Planck and BOSS DR12, we find an upper bound fEDE <
+0.053 at 95% CL, a 26% improvement from the analysis with Planck and BOSS
+DR12. The Hubble constant is nearly identical in EDE and ΛCDM, with the two
+constraints given by H0 = 68.73+0.42
+−0.69 km/s/Mpc and H0 = 68.13 ± 0.38 km/s/Mpc,
+respectively, and both in significant tension with the SH0ES measurement. As in
+the Planck+BOSS DR12 analysis, the constraints in EDE very nearly match those
+in ΛCDM, indicating that LSS data has broken the degeneracies between EDE
+parameters and ΛCDM parameters (e.g., fEDE and H0 ), leaving only the standard
+ΛCDM degeneracies to drive the cosmological constraints.
+
+32
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+EDE, Planck TT+TE+EE
+EDE, Planck + BOSS
+CDM, Planck + BOSS
+0.135
+cdm
+
+0.130
+0.125
+0.120
+0.86
+
+8
+
+0.84
+0.82
+0.80
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+66
+
+68
+
+70
+
+H0
+
+72
+
+0.120 0.125 0.130 0.135
+cdm
+
+0.80
+
+0.82 0.84
+8
+
+0.86
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+Fig. 14. Constraints on cosmological parameters for a joint fit to Planck 2018 TT+TE+EE+low
+ℓ+lensing + BOSS DR 12 (FS+BAO) data sets. For comparison, we also show the posteriors
+from the Planck 2018 primary CMB analysis obtained in [58]. Also depicted is the SH0ES H0
+measurement (gray) where dark- and light-shaded regions represent the 1σ and 2σ intervals.
+
+6.3. EDE Meets LSS: circa 2023
+The EDE Planck+BOSS 2020 results were derived from the BOSS FS-2019 likelihood. This likelihood was based on the public BOSS DR12 products [148]: power
+spectrum measurements, the window function kernels, and the covariance matrices.
+This likelihood was gradually updated with two major versions: 2020 and 2021. The
+2020 version, released in Fall 2020, included the new analytic covariance,e and new
+measurements of the power spectrum from a custom-made estimator. This likelihood also assumed more restrictive priors on nuisance parameters, following the
+discussions in [122]. In order to simplify the comparison between FS likelihoods, we
+will focus on the CMB-free ΛCDM cosmological parameters extracted from analyses
+with a fixed spectral tilt ns and without the BAO in what follows.
+At the ΛCDM level, the FS-2020 likelihood results are consistent with those
+e Based on Refs. [152, 162]; also see [163, 164] for covariance matrix treatment in the context of the
+
+EFT-based FS likelihood.
+
+Observational Constraints on Early Dark Energy
+
+33
+
+Constraints from Planck 2018 data + BOSS DR12 (FS-2019) + S8 from
+DES+KV-450+HSC
+Table 6. The mean (best-fit) ±1σ constraints for parameters in ΛCDM and the
+canonical
+EDE
+model for a combination of BOSS FS+BAO, DES+KV-450+HSC S8 , and Planck
+2018 TT+TE+EE+low ℓ+lensing data sets. Here we report the upper limit at 95%
+C.L. for fEDE . In this scenario EDE is not detected; we find the 68% confidence
+limit is given by fEDE = 0.019+0.0040
+−0.019 which is statistically consistent with zero.
+Parameter
+ln(1010 As )
+ns
+100θs
+Ωb h2
+Ωcdm h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+
+ΛCDM
+
+EDE (n = 3)
+
+3.036 (3.039) ± 0.014
+0.9674 (0.9727) ± 0.0037
+1.041945 (1.041966) ± 0.00030
+0.02249 (0.02273) ± 0.00013
+0.1182 (0.1157) ± 0.00081
+0.0527 (0.0591) ± 0.0067
+−
+−
+−
+68.13 (69.28) ± 0.38
+0.3046 (0.2859) ± 0.0049
+0.80204 (0.7947) ± 0.0053
+0.8082 (0.7810) ± 0.0086
+
+3.038 (3.034) ± 0.014
+0.9696 (0.9621)+0.0042
+−0.0051
+1.04178 (1.04176) ± 0.00035
+0.02259 (0.02243)+0.00016
+−0.00018
+0.11958 (0.11951)+0.00096
+−0.0018
+0.0535 (0.0521)+0.0069
+−0.0075
+3.77 (4.24)+0.51
+−0.33
+< 0.0526 (0.0115)
+1.91(1.55)+1.2
+−0.47
+68.73 (67.92)+0.42
+−0.69
+0.3024 (0.3091) ± 0.0050
+0.8044 (0.8023)+0.0060
+−0.0069
+0.8075 (0.8143) ± 0.0092
+
+Constraints on EDE from Planck 2018 data + BOSS DR12 (FS-2021), with and
+without S8 from DES-Y3
+Table 7. Mean (best-fit) ±1σ constraints on the cosmological parameters in the EDE
+scenario
+from
+the
+combination of Planck 2018 TT+TE+EE+low ℓ+lensing data with with EFT-based BOSS
+BAO+FS-2021 and eBOSS ELG BAO+FS (suppressed in notation for brevity) measurements, with and without a DES-Y3 S8 prior. The upper limit on fEDE is quoted at 95% CL.
+Parameter
+
+Planck + BOSS DR12 BAO+FS-2021
+
++ DES-Y3 (S8 )
+
+ln(1010 As )
+
+3.04 (3.041) +0.015
+−0.015
+0.9693 (0.9746) +0.0049
+−0.0076
+1.042 (1.042) +0.00035
+−0.00032
+0.0225 (2.265) +0.00018
+−0.00022
+0.1225 (0.1236) +0.0015
+−0.0033
+0.05119 (0.05306)+0.0071
+−0.0071
+3.663 (3.83) +0.25
+−0.31
+
+3.033 (3.041) +0.015
+−0.014
+0.9692 (0.9716) +0.0044
+−0.0058
+1.042 (1.042) +0.00036
+−0.00031
+0.02254 (0.02276) +0.00016
+−0.00019
+0.1204 (0.1211) +0.001
+−0.0021
+0.05009 (0.05435) +0.0076
+−0.0069
+3.732 (3.905) +0.39
+−0.33
+< 0.05893 (0.0387)
+1.945 (2.763) +1.13
+−0.433
+68.5 (69.2) +0.46
+−0.77
+0.306 0.3018 +0.0055
+−0.0055
+0.8044 (0.8067) +0.0063
+−0.0074
+0.812 (0.809) +0.009
+−0.009
+
+ns
+100θs
+Ωb h2
+Ωcdm h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+
+< 0.08028 (0.04702)
+2.0 (2.903) +1.1
+−0.39
+68.33 (68.99) +0.58
+−1.1
+0.3121 (0.3087) +0.0063
+−0.0063
+0.8129 (0.815) +0.0072
+−0.01
+0.829 (0.809) +0.012
+−0.012
+
+from FS-2019 [103], with the biggest change being a 2σ shift of ωcdm : 0.1113 ±
+0.0046 in FS-2019 versus 0.1203 ± 0.0054 in FS-2020. We stress that the likelihood
+update did not noticeably affect the optimal value of σ8 , 0.721 ± 0.041 in FS-
+
+34
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+EDE, Planck TT+TE+EE
+EDE, Planck + BOSS + S8
+CDM, Planck + BOSS + S8
+0.135
+cdm
+
+0.130
+0.125
+0.120
+0.86
+
+8
+
+0.84
+0.82
+0.80
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+66
+
+68
+
+70
+
+H0
+
+72
+
+0.120 0.125 0.130 0.135
+cdm
+
+0.80 0.82 0.84 0.86
+8
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+Fig. 15. Constraints on cosmological parameters from a joint fit to a data set comprising Planck
+2018 TT+TE+EE+low ℓ+lensing + BOSS DR12 (FS+BAO) + S8 (DES-Y1 + KV-450 + HSCY1) on parameters in the EDE (blue) model and ΛCDM (red) models. For comparison, we also
+show the results for the EDE model with just the Planck 2018 primary CMB data (green) from [58].
+We also include the SH0ES H0 measurement (gray); the dark- and light-shaded contours represent
+68% and 95% confidence intervals, respectively.
+
+2019 [103] vs. 0.734 ± 0.043 in FS-2020 [162]. In the context of the EDE model,
+Planck+BOSS BAO+FS-2020 yields the upper limit fEDE < 0.088 (95% C.L.). The
+small degradation compared to the Planck + BOSS FS 2019 results is mainly due to
+ωcdm , which is slightly higher in the BOSS FS 2020 likelihood, and which confirms
+the original arguments of Ref. [154] that this is the main parameter responsible for
+the constraints from the BOSS FS side.
+A new update of the BOSS full-shape likelihood took place in December 2021.
+As mentioned above, the BOSS FS-2021 likelihood includes the BOSS galaxy
+power spectrum monopole, quadrupole, and hexadecapole moment, the real-space
+proxy Q0 , as well as the bispectrum monopole. The power spectra and bispectra are extracted from the BOSS data using new optimal window-free estimators. The power spectrum scale cuts of FS-2021 are somewhat more conservative
+than before: kmax = 0.2 hMpc−1 . In the ΛCDM context, the new likelihood gave
++0.032
+σ8 = 0.722−0.036
+, consistent with both BOSS FS-2019 and BOSS FS-2020. We stress
+
+Observational Constraints on Early Dark Energy
+
+35
+
+EDE, Planck + BOSS
+EDE, Planck + BOSS + S8
+CDM, Planck + BOSS
+0.135
+
+cdm
+
+0.130
+0.125
+0.120
+
+8
+
+0.84
+0.82
+0.80
+
+0.10
+
+fEDE
+
+0.08
+0.06
+0.04
+0.02
+4.2
+
+log10(zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+66
+
+68
+
+H0
+
+70
+
+72
+
+0.12
+
+0.13
+cdm
+
+0.80
+
+0.82
+8
+
+0.84
+
+0.02 0.04 0.06 0.08 0.10
+fEDE
+
+3.2
+
+3.6
+
+log10(zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+Fig. 16. Cosmological parameter constraints from the joint Planck 2018 TT+TE+EE+low
+ℓ+lensing + BOSS DR12 BAO+FS-2021 + eBOSS ELG + S8 (DES-Y3) likelihood. We present
+combinations with (blue) and without (grey) the S8 DES-Y3 prior. In addition, we display the
+Planck + BOSS ΛCDM posteriors (red).
+
+that this result is derived with optimal estimators that appropriately include the
+BOSS window function normalization. We also note that the apparent mismatch
+in the official BOSS window function normalization [150, 165] did not affect the
+results of the the FS-2019 and BOSS FS-2020 likelihoods, which had a custom window function implementation that mitigated the normalization error of the BOSS
+collaboration.
+Another important development was the creation of the eBOSS full-shape likelihood for the emission line galaxy (ELG) sample [166]. This sample probes higher
+redshifts z ≃ 0.85 than BOSS, and hence gives an additional lever on large-scale
+structure growth. The final results for the EDE model fit to the Planck 2018
+
+36
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+(PR3 Plik), BOSS BAO+FS-2021, and eBOSS BAO+FS ELG data are presented
+in Table 7 and Figure 16. The net result is fEDE < 0.080 (95% C.L.) (best-fit
+fEDE = 0.047). This constraint is marginally weaker than the original Planck+BOSS
+BAO+FS-2019 result [154]. At the same time, it is tighter than the Planck+BOSS
+BAO+FS-2020 constraint, which can be attributed to additional BOSS and eBOSS
+statistics present in that likelihood. All in all, we see that Planck + BOSS EDE
+results together with the new likelihood based on the CLASS-PT code and the baseline prior choices of Ref. [122] are fully consistent with those from the 2020 EDE
+Planck+BOSS constraints [154].
+Finally, we combine BOSS BAO+FS with the weak lensing data. Adding the
+S8 prior from DES-Y3, S8 = 0.776 ± 0.017 [100], we obtain our final Planck
+2018+BOSS+ S8 results presented in Table 7 and Figure 16 (we omit the eBOSS
+ELG data in the caption for brevity.) We obtain an upper limit fEDE < 0.059 (95%
+C.L.) with a best-fit fEDE = 0.038. These results are fully consistent with our previous estimate fEDE < 0.053 [154]. At face value, the Hubble constant constraint,
+H0 = 68.50+0.46
+−0.77 km/s/Mpc, is strongly inconsistent with the SH0ES measurements.
+Note that DES-Y3 data cannot be easily combined with other weak lensing
+measurements due to significant sky overlaps; see Ref. [144] for more detail. This
+is the reason we use only DES-Y3 in our final LSS+CMB analysis. Also, note that
+there are data sets that have become available while this work was being completed:
+eBOSS EFT-based full-shape likelihood for quasars [167], and the BOSS bispectrum
+quadrupole and hexadecapole moments [168]. It would be interesting to include
+these data sets in a future analysis.
+
+6.4. EFT-based vs. Standard BOSS likelihoods
+As a final check on the intuition developed in the previous analyses, we perform an
+analysis with the EFT-based BOSS likelihood replaced by the “consensus” BOSS
+DR12 FS+BAO likelihood [148]. The latter is a highly compressed representation
+of the data, generated from a fit of f σ8 and the BAO parameters to BOSS data,
+using a fixed power spectrum template computed for a fiducial ΛCDM cosmology
+consistent with Planck.f
+The results are shown in Fig. 17 and Table 8. From Fig. 17 one may appreciate a
+significantly improved constraint on larger values ωcdm when the EFT-based likelihood is used, evidenced by a significant suppression of the tail of the 1D posterior of
+ωcdm . This contributes to the breaking of the degeneracy between fEDE and ωcdm ,
+which in turn restricts the fEDE -H0 degeneracy and the ability of the model to be
+even mildly concordant with the SH0ES H0 measurement.
+
+f Note that the template for the galaxy power spectrum used in fixed shape analyses is based on
+
+approximate phenomenological models (i.e., not the EFT of LSS), and hence may be affected by
+uncontrollable systematic errors.
+
+Observational Constraints on Early Dark Energy
+
+37
+
+Constraints from Planck 2018 data + BOSS DR12 for EDE (n = 3)
+Table
+8. Mean
+(best-fit) ±1σ constraints on the cosmological parameters in the EDE scenario
+with n = 3, as inferred from the combination of Planck 2018 TT+TE+EE+low
+ℓ+lensing data with the standard (left column) and EFT-based (right column)
+BOSS FS+BAO measurements. The upper limit on fEDE is quoted at 95% CL.
+Parameter
+
+Standard BOSS likelihood
+
+EFT BOSS likelihood
+
+ln(1010 As )
+ns
+100θs
+Ωb h2
+Ωcdm h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+
+3.053 (3.060)+0.015
+−0.016
+0.9713 (0.9790)+0.0055
+−0.0085
+1.04185 (1.04200)+0.00035
+−0.00032
+0.02256 (0.02269)+0.00018
+−0.00022
+0.1230 (0.1269)+0.0018
+−0.004
+0.05688 (0.05755)+0.0071
+−0.0078
+3.67 (3.813)+0.22
+−0.27
+< 0.096 (0.076)
+2.122 (2.934)+0.98
+−0.29
+68.71 (69.66)+0.69
+−1.2
+0.3097 (0.3096)+0.0062
+−0.0063
+0.8187 (0.8286)+0.008
+−0.011
+0.8316 (0.8363) ± 0.012
+
+3.047 (3.049) ± 0.014
+0.9696 (0.9717)+0.0046
+−0.0068
+1.04172 (1.04126) ± 0.00032
+0.02255 (0.02245) ± 0.00018
+0.1215 (0.1243)+0.0013
+−0.0029
+0.0553 (0.0543)+0.0069
+−0.0075
+3.71 (3.52)+0.26
+−0.33
+< 0.072 (0.047)
+2.023(2.734)+1.1
+−0.34
+68.54 (68.83)+0.52
+−0.95
+0.3082 (0.3120)+0.0056
+−0.0057
+0.8127 (0.8195)+0.0072
+−0.0091
+0.8237 (0.8275) ± 0.011
+
+7. Constraints from the Lyman-α Forest
+As a final investigation of LSS constraints on Early Dark Energy, we focus on
+Lyman-α forest data, namely the 1D Lyα flux power spectra from SDSS DR14
+BOSS and eBOSS quasars [61], referred to as eBOSS Lyα in what follows. We
+also consider a similar analysis using a smaller sample of high-resolution Lyα forest
+measurements extracted from XQ-100 [62] and MIKE/HIRES [136].
+The physics of the Lyα forest is reviewed in Sec. 4.3. In the context of ΛCDM,
+Lyα data prefer lower values of ns and Ωm h than CMB data sets [61,137,169]. One
+of the traditional hurdles for the use of Lyman-α data in joint cosmological analyses has been the high computational cost. This stems from the need to run costly
+hydrodynamical simulations so that multiple nuisance parameters can be carefully
+marginalized over to make robust theory predictions for the Lyα forest power spectrum. Here, the leading challenge arises from carefully accounting for the thermal
+and ionization history of the intergalactic medium, as well as potential feedback
+effects at low redshifts. In practice, computing the ΛCDM prediction for the Lyα
+forest flux spectra is conventionally done via interpolation over a grid of these hydrodynamical simulations. In light of the significant computational expense, in our
+analysis of EDE we instead use a two-parameter compressed likelihood, analogous
+to the compression of BOSS full-shape and BAO data in the standard (non-EFT)
+likelihood [148]. This approach was validated for a range of ΛCDM and beyondΛCDM cosmological models in Ref. [170]. The compressed eBOSS Lyα likelihood is
+characterized by a dimensionless amplitude ∆2L ≡ k 3 Plin (kp , zp )/(2π 2 ) and spectral
+index nL ≡ d ln Plin (kp , zp )/d ln k, both evaluated at a pivot redshift zp = 3 and
+pivot scale kp = 0.009 s/km [171]. Our compressed likelihood is built from a 2D
+
+38
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+EDE, Planck TT+TE+EE
+EDE, Planck + standard FS + BAO from BOSS
+EDE, Planck + EFT-FS + BAO from BOSS
+
+0.135
+cdm
+
+0.130
+0.125
+0.120
+0.86
+
+8
+
+0.84
+0.82
+0.80
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+66
+
+68
+
+70
+
+H0
+
+72
+
+0.120 0.125 0.130 0.135
+cdm
+
+0.80
+
+0.82 0.84
+8
+
+0.86
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+Fig. 17.
+Posterior distributions for the parameters extracted from the joint Planck 2018
+TT+TE+EE+low ℓ+lensing + BOSS FS+BAO data. We show the results obtained using the
+standard FS+BAO likelihood (in blue) and the EFT-based likelihood (in red). For reference,
+we also display the constraints from the Planck 2018 primary CMB data alone (TT+TE+EE),
+obtained in [58]. The gray band shows the H0 measurement from SH0ES, for comparison. The
+dark-shaded and light-shaded contours mark 68% and 95% confidence intervals, respectively.
+
+Gaussian in ∆2L and nL , with an a priori non-zero correlation coefficient, fit to a
+30×30 grid of {∆2L , nL } values taken from the contour shown in Fig. 20 of Ref. [61].
+The resulting best-fit parameters for the 2D Gaussian are shown in Table 9. The
+log-likelihood is then given by
+
+
+1
+2
+2
+∆x − 2ρ∆x∆y + ∆y ,
+(23)
+log L = −
+2(1 − ρ2 )
+
+¯ 2 )/σ∆2 and ∆y ≡ (nL − n̄L )/σn , overbar (¯) and σ denote
+where ∆x ≡ (∆2L − ∆
+L
+L
+L
+the mean and errors of the 2D Gaussian, and ρ is the correlation coefficient between
+σ∆2L and σnL . The best-fit parameters describing the eBOSS and XQ-100 Lyα data
+sets are shown in Table 9. For further details we refer the reader to Ref. [138].
+The expectation from Sec. 4.3 is indeed borne out in the joint analysis of CMB,
+BAO, and Lyman-α forest data [138]. Results of this analysis are shown in Fig. 18
+and Table 10. Jointly analyzing the eBOSS Lyman-α forest data with Planck PR3
+
+Observational Constraints on Early Dark Energy
+
+39
+
+(Plik) CMB and BAO data lowers the 95% C.L. upper bound on fEDE from 0.07
+(CMB+BAO) to 0.03 (CMB+BAO+Lyα) and yields H0 = 67.9+0.4
+−0.4 km/s/Mpc
+(68% C.L.), with maximum a posteriori value H0 = 67.9 km/s/Mpc. Similarly
+tight constraints are obtained using the MIKE/HIRES and XQ-100 Lyman-α forest
+data.
+Moreover, from the nL − ∆2L panel of Fig. 18 (top right) one may appreciate
+that the parameter constraints (solid contours) are in significant tension with both
+the XQ-100 (red dashed) and eBOSS (blue dashed) Lyα data sets. While a similar
+tension exists in ΛCDM [61, 169], the parameter space opened up in the EDE fit to
+Planck and BAO data is in the exact opposite direction to that required to solve
+this “Lyα tension”: H0 -resolving EDE requires larger values of both nL and ∆2L .
+As a heuristic check on the robustness of this tension, we repeat the analysis with
+the error bars σnL and σ∆2L artificially doubled in the Lyα likelihood in Eq. (23)
+(orange contours), finding little change in our results.
+Taken at face value, these results thus indicate that canonical axion-like EDE is
+effectively ruled out by the Lyman-α forest as a resolution of the Hubble tension.
+Due to the complexity of modeling this observable (e.g., [172]), however, further
+work will be necessary to cement this conclusion. The upcoming DESI Lyman-α
+data will also play a key role in this effort.
+Table 9. Best-fit parameter values for the compressed eBOSS Lyα
+likelihood used in this work.
+Lyα data set
+
+∆0L2
+
+n0L
+
+σ∆2
+
+σnL
+
+ρ
+
+eBOSS
+XQ-100/MIKE-HIRES
+
+0.310
+0.343
+
+-2.340
+-2.388
+
+0.020
+0.033
+
+0.006
+0.021
+
+0.512
+0.694
+
+L
+
+8. Priors and Prior Volume Effects
+8.1. Choice of Priors
+Finally, we return to the cosmological aspects of the EDE model, with an eye
+towards data analysis. A Bayesian analysis of the model, e.g., posterior sampling via
+Markov chain Monte Carlo (MCMC) – the staple of the field – necessitates a choice
+of priors on model parameters. While there is some arbitrariness in the choice of
+priors, the standard approach to analyses of extensions to ΛCDM has been broad
+uniform priors.
+Analyses of EDE, including those presented here, typically impose uniform priors on the derived parameters fEDE and zc , instead of the particle physics model
+parameters m and f appearing in the potential V (φ). MCMC analyses can then
+be performed by sampling over fEDE and zc . The motivation for this approach is
+to reduce the computational expense of the MCMC, since directly sampling in the
+derived parameters to which the data is most sensitive tends to dramatically improve the time to convergence of MCMC chains. This approach is justified by a
+
+40
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+−2.25
+
+−2.40
+
+3.6
+3.2
+
+−2.45
+
+72
+
+H0
+
+−2.35
+
+4.0
+
+SH0ES
+
+log10 (zc )
+
+nL
+
+−2.30
+
+70
+
+0.25
+
+0.30
+
+0.35
+
+0.40
+
+0.45
+
+∆2L
+
+68
+
+Lyα likelihood
+Baseline: Planck 2018+BAO
+Baseline+XQ-100 Lyα
+Baseline+eBOSS Lyα
+Baseline+eBOSS Lyα (errors 2×)
+
+ns
+
+1.00
+0.98
+0.96
+
+S8
+
+0.86
+0.84
+0.82
+0.80
+
+Ωm
+
+0.32
+0.31
+0.30
+0.29
+0.05
+
+0.10
+
+fEDE
+
+3.2
+
+3.6
+
+4.0
+
+log10 (zc )
+
+68
+
+70
+
+H0
+
+72
+
+74
+
+0.96
+
+0.98
+
+ns
+
+0.81
+
+0.84
+
+S8
+
+0.87
+
+0.30
+
+0.32
+
+Ωm
+
+Fig. 18. The marginalized posteriors before and after including Lyα forest data for the canonical
+axion-like EDE model and ΛCDM parameters of interest. The baseline analysis (grey) consists of
+Planck 2018 high-ℓ (TT+TE+EE) and low-ℓ (TT+EE), in addition to BOSS DR12, SDSS MGS,
+and 6dFGS BAO data. The inclusion of eBOSS (blue) or XQ-100 (red) Lyα data sets reduces the
+upper bound on fEDE significantly. In particular, both analyses which include Lyα data strongly
+exclude H0 values capable of resolving the Hubble tension. The panel in the upper right depicts
+constraints for these data sets in the ∆2L – nL plane. Lyα likelihoods alone (dashed lines) are also
+included. Although both Lyα likelihoods are in noticeable tension with the baseline analysis (in
+EDE or in ΛCDM), EDE cosmologies that can reduce the Hubble tension are inconsistent with
+the direction of this tension, and in fact exacerbate it. Even if the Lyα errors on σnL and σ∆2
+L
+
+are doubled, our conclusion with respect to the eBOSS Lyα likelihood (orange) is unchanged. See
+Ref. [138] for further details.
+
+lack of any prior knowledge of either f and m or fEDE and zc , and thus the broad
+uniform (‘uninformative’) priors may be imposed in whatever parametrization is
+most convenient to do so.
+However, string theory does provide priors on axion model parameters: The
+mass and decay constant of axions in the string axiverse [91, 173] are both log
+distributed [174]. In particular, Planck-scale axion decay constants (f ≈ Mpl ) are
+in conflict with both the general expectations of any theory of quantum gravity and
+with string theory specifically [175–182]. The resulting implications for EDE have
+been studied in Refs. [54] and [94]. The statistical predictions of the string landscape
+
+Observational Constraints on Early Dark Energy
+
+41
+
+Table 10. Marginalized constraints on cosmological parameters for the canonical axion-like EDE model from the Lyman-α data sets considered in this work. For each data
+set, we report the posterior mean and 68% upper and lower limits for all parameters,
+except for fEDE , for which we report 95% upper limits. Maximum a posteriori values
+are shown in parentheses.
+Planck + BAO
++eBOSS Lyα
++XQ-100 Lyα
+
+fEDE
+< 0.079 (0.059)
+< 0.027 (0.015)
+< 0.041 (0.012)
+
+ns
+0.9710+0.0045
+−0.0072 (0.9778)
+0.9549+0.0040
+−0.0035 (0.9525)
+0.9643+0.0040
+−0.0045 (0.9633)
+
+H0 [km/s/Mpc]
+68.98+0.55
+−1.02 (70.11)
+67.86+0.43
+−0.43 (67.89)
+68.24+0.45
+−0.63 (68.21)
+
+for axion model parameters is an area of active research; see, e.g., [174, 183–186].
+We note axiverse constructions can also emerge in field theory, e.g., [187,188], where
+the distribution of axion masses has also been computed [187].
+To assess the consistency of theoretical priors and the priors typically used in
+MCMC analyses of EDE, we generate 10,000 realizations of EDE for fEDE , log10 (zc ),
+and θi drawn from uniform distributions in the range [0.01, 0.25], [3.1, 4.2], and
+[0.1, 3.0] respectively. The results are shown in Fig. 19. From this one may appreciate
+that the commonly used uniform priors on EDE parameters are an implicit prior
+on the axion decay constant that is peaked at a near-Planckian value ≈ 0.59Mpl ,
+in conflict with the prior from theory [175–182]. Meanwhile the effective prior on
+the mass is that it should lie in the range log10 (m/eV) ≈ [−28, −25]. This is an
+odd choice given that axions conceivably explain one if not both of dark matter and
+dark energy, and this mass range covers neither of those possibilities (see Ref. [189]
+for a review of axion cosmology).
+With this in mind, we now repeat the analysis of Planck CMB data
+(TT+EE+TE) using theory-motivated priors on the axion mass and decay constant. Specifically, we make a choice of uniform priors on f and log10 (m). We
+display the results for this analysis in Fig. 20, which are compared to an equivalent
+analysis with uniform priors on the derived EDE parameters. We find an even more
+restrictive upper bound, fEDE < 0.041 at 95% C.L.
+The take-away from this result is that, despite using dramatically different priors,
+the conclusion for EDE is unchanged. Both parametrizations of the model, whether
+using particle physics or derived parameters results in the same conclusion. This
+strongly suggests that the Bayesian preference of CMB and LSS data sets for ΛCDM
+over EDE is not merely an artifact of the choice of priors.
+8.2. Prior Volume Effects & The Inclusion of SH0ES in the
+combined data set
+A built-in feature of the canonical EDE model is that the parameters zc and θi
+are unconstrained in the ΛCDM limit, fEDE → 0. This property is shared by any
+multi-parameter extension to ΛCDM where one parameter predominantly controls
+the magnitude of the departure from ΛCDM. Meanwhile, the parameters zc and
+θi have to be fine-tuned in the H0 -tension-resolving regime, fEDE ≈ 0.1, which
+
+42
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+Fig. 19. The effective priors on EDE particle physics parameters f and m implied by uniform
+priors on fEDE , log10 (zc ), and θi . We see that the distribution of f is peaked at f = 0.59Mpl and
+extends well above the Planck scale.
+
+creates the possibility for a potential pitfall in the MCMC analysis. That is, it could
+happen that an MCMC analysis may cross a threshold Gelman-Rubin statistic and
+be deemed converged, but not have been run long enough to fully explore finelytuned minima of the likelihood, such as the high-H0 regime of EDE (fEDE ≈ 0.1).
+One might therefore be concerned that the marginalized parameter constraints of
+the MCMC do not accurately reflect the true Bayesian constraints.
+One mitigation strategy (advocated for explicitly in, e.g., Refs. [34, 83], and
+utilized in nearly all works on EDE) is to include the SH0ES H0 measurement as a
+prior in the MCMC analysis. Such an analysis cannot possibly test concordance of
+SH0ES with other data sets, since concordance is by definition the compatibility of
+constraints arising from independent analyses of differing data sets.
+To test concordance while still ensuring the H0 -tension-resolving regime is fully
+explored, one may simply include the SH0ES H0 measurement as a prior in sampling, and then afterwards remove this prior, and recompute the posterior probability of every sample in the chain (so-called “importance reweighting” of MCMC
+samples). This is precisely the strategy of Sec. 5, with results shown in Fig. 13 and
+Table 4. The exponential fall-off of the fEDE posterior is consistent with that seen
+in the analyses of Secs. 3, 6, and Sec. 7, where the SH0ES measurement was not
+taken as a prior, and indicates that the posterior distributions in these analyses are
+an accurate representation of the Bayesian constraints on the model.
+
+Observational Constraints on Early Dark Energy
+
+43
+
+Planck 2018 TT+TE+EE [EDE, n = 3; uniform priors on fEDE , log10 zc]
+
+log10 (zc )
+
+Planck 2018 TT+TE+EE [EDE, n = 3; uniform priors on f , log10 m]
+
+3.9
+3.6
+3.3
+
+θi
+
+2.4
+1.8
+1.2
+0.6
+
+log10 (f /eV)
+
+28
+27.2
+26.4
+
+log10 (m/eV)
+
+25.6
+
+−26
+−28
+
+H0
+
+72
+70
+68
+66
+0.86
+
+σ8
+
+0.84
+0.82
+0.8
+0.78
+0.04 0.08 0.12
+
+3.3 3.6 3.9
+
+0.6 1.2 1.8 2.4
+
+25.6 26.4 27.2 28.0
+
+fEDE
+
+log10 (zc )
+
+θi
+
+log10 (f /eV)
+
+−28
+
+−26
+
+log10 (m/eV)
+
+66
+
+68
+
+70
+H0
+
+72
+
+0.78 0.80 0.82 0.84 0.86
+σ8
+
+Fig. 20.
+Constraints on EDE from Planck PR3 primary CMB data alone, analyzed with the
+Plik likelihood, with priors imposed on the particle physics parameters f and log10 (m) (green
+contours) or on the effective EDE parameters fEDE and log10 (zc ) (blue contours).
+
+8.3. Mean Likelihood Profile
+In order to understand the nature of our CMB+LSS constraints on fEDE , it is
+useful to compare the Bayesian posteriors with the mean likelihood profile [190] for
+this parameter. The mean likelihood profile has been used in past CMB analyses in,
+e.g., Refs. [68–72]. The mean likelihood curve is obtained by averaging the likelihood
+in the MCMC chain for a given binned value of fEDE over all other cosmological
+parameters. It is a smeared version of the usual profile likelihood curve, in which one
+instead maximizes the likelihood for fEDE over other cosmological parameters. The
+mean likelihood curve, however, has the important property that it shows how much
+the other cosmological parameters need to be tuned in order to provide a good fit.
+
+44
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+If the mean likelihood is bigger with non-zero fEDE , it suggests that this parameter
+indeed improves the fit on average. The mean likelihood is a cheap statistic that
+suppresses marginalization (prior volume) bias [190].g In particular, in the limit
+fEDE → 0 the mean likelihood will simply be a constant function of log10 (zc ) and
+θi , which fully takes into account the fact that the EDE model itself will not depend
+on these parameters in that limit.
+
+Planck+BOSS
+Planck+BOSS+S8
+
+0.001
+
+0.0703
+
+fEDE
+
+0.14
+
+Fig. 21. 1D posterior distributions (solid lines) and mean likelihood profiles (dashed lines) for
+fEDE derived from MCMC chains for the Planck+BOSS (in red) and Planck+BOSS+S8 (in blue)
+data sets.
+
+The mean likelihood profiles for fEDE extracted from the MCMC chains for
+Planck + BOSS and Planck + BOSS + S8 are displayed in Fig. 21, where solid
+lines represent the marginalized Bayesian posteriors, while the dashed lines depict
+the binned mean likelihood profiles. The mean likelihood curves closely follow the
+1D marginalized posterior curves: they monotonically decrease as fEDE increases.
+There are no noticeable flat regions in the fEDE mean likelihood, which suggests
+that the posterior is indeed determined by the likelihood, rather than the prior
+volume. We see that on average, the EDE provides a worse fit to the data than
+ΛCDM. Hence, the shape of the posterior does genuinely reflect the behavior of
+the likelihood. As we will discuss in detail later, this behavior is fully consistent
+with the profile likelihood results of Ref. [73]. On the one hand, EDE can fit the
+Planck+BOSS BAO+FS data slightly better than ΛCDM (∆χ2 ≈ −4) for fEDE ≈
+g Strictly speaking, the calculation of the mean likelihood depends on the prior, e.g., through the
+
+parameter range of the samples in the case of a flat prior on a relevant parameter. The bulk of the
+prior dependence is, however, cancelled out in the mean likelihood estimator.
+
+Observational Constraints on Early Dark Energy
+
+45
+
+0.072 provided that θi and log10 (zc ) are strongly fine-tuned. On the other hand, as
+Fig. 1 of [73] shows, most of the allowed volume of the θi −log10 (zc ) parameter space
+returns χ2 -statistics that prefer fEDE ≈ 0, i.e., ΛCDM over EDE. This is confirmed
+by the mean likelihood analysis of [154] and our Fig. 21: the probability of the
+EDE model is lower than that of ΛCDM, provided that one averages the likelihood
+over possible parameters θi , log10 (zc ) instead of maximizing it over them. In other
+words, if one picks values of θi , log10 (zc ) at random, instead of fine-tuning them,
+the Planck+BOSS BAO+FS (+S8 ) likelihood would be maximized at fEDE ≈ 0
+(ΛCDM) for most of the θi , log10 (zc ) choices. All in all, the mean likelihood profile
+clearly illustrates that the Planck + LSS constraints on EDE are not driven by prior
+volume effects.
+
+8.4. EDE away from the ΛCDM limit: Analysis with a high lower
+bound on fEDE
+To further mitigate the finite prior volume at fEDE → 0, we repeat our Bayesian
+analysis of BOSS data in Sec. 6 with an artificial lower bound imposed on fEDE ,
+given by fEDE > 0.04. This acts to force the MCMC sampler away from the ΛCDM
+limit (fEDE → 0). The results are shown in Fig. 22. This again results in no preference for an EDE component, and the marginalized posterior for fEDE exhibits an
+exponential fall-off for values above the imposed lower bound 0.04.
+EDE away from the ΛCDM limit Constraints from
+Planck 2018 data + BOSS DR12 + S8 from DES+KV-450+HSC
+Table 11. The mean (best-fit) ±1σ constraints on the cosmological parameters
+in the EDE scenario with n = 3, as inferred from the combination of BOSS
+FS+BAO, Planck 2018 TT+TE+EE + low ℓ + lensing, and DES+KV-450+HSC
+data. Upper and lower limits are quoted at 95% CL. We present the results of
+two analyses differing by a lower prior bound on fEDE : baseline physical choice
+fEDE > 0 (right column) and artificial unphysical choice fEDE > 0.04 (left column).
+Parameter
+ln(1010 As )
+ns
+100θs
+Ωb h2
+Ωcdm h2
+τreio
+log10 (zc )
+fEDE
+θi
+H0 [km/s/Mpc]
+Ωm
+σ8
+S8
+
+fEDE > 0.04
+
+fEDE > 0
+
+3.042 (3.027)+0.014
+−0.015
+0.9763 (0.9742)+0.0061
+−0.0052
+1.041945 (1.041966) ± 0.00030
+0.02274 (0.02278) +0.00019
+−0.00017
+0.1229 (0.1219)+0.0014
+−0.002
+0.05282 (0.04781)+0.0074
+−0.0072
+3.746(3.67)+0.17
+−0.28
+< 0.08384 (0.04078)
+2.522(2.505)+0.46
+−0.064
+69.77 (69.39)+0.55
+−0.72
+0.3007 (0.3017) ± 0.0052
+0.8115 (0.8040)+0.008
+−0.0073
+0.8126 (0.8063) ± 0.0096
+
+3.038 (3.034) ± 0.014
+0.9696 (0.9624)+0.0042
+−0.0051
+1.04178 (1.04176) ± 0.00035
+0.02259 (0.022433)+0.00016
+−0.00018
+0.11958 (0.11951)+0.00096
+−0.0018
+0.0535 (0.0521)+0.0069
+−0.0075
+3.77 (4.24)+0.51
+−0.33
+< 0.0526 (0.0115)
+1.91(1.55)+1.2
+−0.47
+68.73 (67.92)+0.42
+−0.69
+0.3024 (0.3091) ± 0.0050
+0.8044 (0.8023)+0.0060
+−0.0069
+0.8075 (0.8143) ± 0.0092
+
+46
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+EDE, Planck + BOSS + S8
+EDE, Planck + BOSS + S8, fEDE > 0.04 prior
+
+cdm
+
+0.130
+0.125
+0.120
+
+0.83
+8
+
+0.82
+0.81
+0.80
+0.79
+
+fEDE
+
+0.15
+0.10
+0.05
+
+4.2
+
+log10 (zc)
+
+4.0
+3.8
+3.6
+3.4
+3.2
+
+2.5
+i
+
+2.0
+1.5
+1.0
+0.5
+68
+
+70
+
+H0
+
+72
+
+0.120
+
+0.125
+cdm
+
+0.130
+
+0.79 0.80 0.81 0.82 0.83
+8
+
+0.05
+
+0.10
+
+fEDE
+
+0.15
+
+3.2
+
+3.6
+
+log10 (zc)
+
+4.0
+
+0.5 1.0 1.5 2.0 2.5
+i
+
+Fig. 22. Constraints from Planck +BOSS+S8 data on cosmological parameters in EDE for two
+different choices of prior on fEDE : fEDE > 0.04 (red) and fEDE > 0.001 (blue). There is substantial
+support at the lower bound of the prior in the posterior for fEDE in both scenarios. Interestingly,
+this even holds in the fEDE > 0.04 case which by construction excludes the ΛCDM limit (fEDE ≈
+0). This signifies that there is no preference for an EDE component given either choice of prior
+and precludes ‘prior volume effects.’ Also depicted is the SH0ES measurement of H0 (gray) where
+the dark- and light-shaded contours represent the 68% and 95% confidence intervals, respectively.
+
+8.5. Profile Likelihood
+Finally, we summarize the conclusions of Ref. [73, 74] based on their results for
+the profile likelihood, and compare to the Bayesian analyses presented here. While
+the frequentist and Bayesian analyses answer fundamentally different questions, it
+is nonetheless instructive to perform model comparison independently in the two
+approaches.
+In Fig. 23 we show the profile likelihood in the fit to Planck + BOSS (BAO+FS)
++ S8 from DES-Y3. We highlight the following:
+(1) Frequentist preference for ΛCDM: The best-fit EDE model in the fit to
+Planck and BOSS DR12 has ∆χ2 = −5.67 relative to ΛCDM, which is decreased
+to ∆χ2 = −2.93 when S8 data from DES are included [74]. This modest improvement in fit comes at the expense of three additional parameters introduced
+
+Observational Constraints on Early Dark Energy
+
+47
+
+in the EDE model. As a simple frequentist model comparison, one can compute
+the AIC score [191]. One finds an AIC score of ∆AIC = +0.33 when S8 data
+are excluded, which increases to ∆AIC = +3 in favor of ΛCDM once S8 data
+are included [74]. This indicates a strong frequentist preference for ΛCDM.h
+(2) The marginalized posterior is a monotonically decreasing function:
+This reflects the relative fine-tuning of {zc , θi } in order to maximize the likelihood at fEDE ∼ 0.1 versus fEDE ∼ 0. The Bayesian punishment for new
+finely-tuned parameters, imposed via marginalization, overcomes the modest
+∆χ2 difference between the ΛCDM and EDE best-fit minima, leading to the
+monotonically decreasing behaviour of the marginalized posterior. This indicates a strong Bayesian preference for EDE.
+Thus both frequentist and Bayesian model comparison of LSS data lead to an overall
+preference for ΛCDM over EDE.
+
+EDE fit to Planck 2018 + BOSS DR12 + S8 from DES-Y3
+1.0
+
+Marginalized Posterior (rescaled)
+Maximum Likelihood Profile
+Maximum Likelihood Profile (fit)
+2
+∆χEDE−LCDM
+= −3
+
+0.5
+
+2
+∆χEDE−LCDM
+
+0.0
+−0.5
+−1.0
+−1.5
+−2.0
+−2.5
+−3.0
+
+0.02
+
+0.04
+
+0.06
+
+0.08
+fEDE
+
+0.10
+
+0.12
+
+0.14
+
+Fig. 23. Likelihood profile and marginalized posterior distribution for fEDE in the fit of EDE to
+Planck 2018, BOSS DR12 full shape + BAO, and S8 from DES-Y3.
+
+h Ref. [74] uses the full-shape power spectrum at k
+−1 , which is larger than the
+max = 0.25 hMpc
+baseline choice of Ref. [150], kmax = 0.20 hMpc−1 . The 1-loop EFT model is, strictly speaking,
+not very reliable at kmax = 0.25 hMpc−1 , and produces an upward bias in the recovered value of
+σ8 [153, 192], which may lead to an artificially better agreement between the data and the EDE
+model. Thus, the exact value of ∆χ2 between ΛCDM and EDE from [74] should be viewed with
+a measure of caution. A more conservative scale cut is expected to produce a smaller numerical
+value of |∆χ2 | than reported in [74], and hence yield an even worse AIC.
+
+48
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+9. Discussion
+In this work we have performed a comprehensive analysis of the constraints on the
+canonical Early Dark Energy model from Planck PR3 and PR4 CMB data and
+large-scale structure data from a wide array of experiments. Each of these analyses
+results in a tight upper bound for the peak EDE energy density fraction, fEDE ,
+which is below the benchmark value needed to resolve Hubble tension fEDE ≈ 0.1.
+The upper bound is strengthened as more LSS data are added; e.g, the combination
+of Planck 2018 (PR3) data, S8 data from DES-Y3 along with BOSS DR12 full shape
+and BAO data analyzed using the EFT likelihood, leads to a bound fEDE < 0.059
+at 95% C.L.
+CMB data play an important role in the model by forcing shifts in the standard
+ΛCDM parameters, in particular increases to the dark matter density Ωc h2 and
+spectral index ns , to compensate for the effect of the new EDE component and
+raised H0 . The Planck data show no preference for an EDE component, but instead
+yield only an upper bound. We have considered different choices of Planck likelihood,
+and found that the Plik PR3 likelihood conventionally used in EDE analyses to date
+in fact provides the weakest upper bound of all four possibilities considered here,
+namely, the Plik likelihood for Planck PR3 data, the CamSpec likelihood for PR3
+data and for PR4 data, and the HiLLiPoP likelihood for PR4 data. All likelihoods
+agree in the non-preference for the EDE component, yielding a set of upper bounds,
+with Plik PR3 being the weakest.
+Large-scale structure data break the degeneracies in the fit to the CMB data,
+leading to significantly tighter constraints on the EDE component. The increases
+in Ωc h2 , ns , and As , that allow EDE to reconcile Planck and SH0ES, and together
+drive an increase in the S8 parameter, are reigned in by weak lensing data, including
+Dark Energy Survey, KiDS-VIKING-450, and HSC. The dark matter density can
+instead be constrained with anisotropic galaxy clustering data from BOSS DR12, in
+particular with the full shape and BAO data implemented using an EFT likelihood.
+Combining Planck and BOSS DR12 with S8 data results in an upper bound fEDE <
+0.0526 at 95% C.L. The model can be further constrained by Lyman-α forest data,
+which break the fEDE − ns degeneracy in the fit to CMB data. The combination of
+Planck, BAO, and Lyα data leads to upper bounds fEDE < 0.03 at 95% C.L. for
+eBOSS Lyα data and fEDE < 0.04 at 95% C.L. for XQ-100 Lyα data. In all these
+analyses, the upper bound on fEDE is accompanied by a marginalized constraint on
+H0 that is in significant tension with the SH0ES measurement.
+We have also performed detailed investigations into the impact of the choice of
+priors on the marginalized parameter constraints in the EDE model, including the
+imposition of the SH0ES H0 measurement as a prior on the analysis of CMB and LSS
+data, the choice between theory-motivated and computational-expense-motivated
+priors, and the impact of a prior fEDE > 0.04 to restrict the model away from the
+ΛCDM limit. All of these analyses lead to a marginalized posterior distribution for
+fEDE that is a monotonically decreasing function, suggesting a Bayesian preference
+
+Observational Constraints on Early Dark Energy
+
+49
+
+for ΛCDM. We compare with a frequentist analysis based on the profile likelihood
+and find qualitative agreement: the modest χ2 -improvement achieved by EDE is
+outweighed by the increased number of parameters in EDE (nine parameters versus
+the six of ΛCDM), leading to a AIC score comparison that favors ΛCDM.
+Note that in most analyses we did not impose the SH0ES H0 prior. One might
+argue that without this prior, current CMB+LSS data do not have enough precision
+to detect fEDE ≃ 0.1 needed to resolve the Hubble tension. Our results refute
+such claims and suggest that the exclusion of fEDE ≃ 0.1 with various CMB+LSS
+measurements is driven precisely by the statistical power of these data sets. We
+emphasize that combining LSS and CMB is crucial to break degeneracies between
+the EDE and “standard” cosmological parameters present at the CMB level.
+We note there are a significant number of relevant works that have not been
+discussed or only briefly touched on in this review, in particular, constraints from
+CMB experiments other than Planck [78, 193–199], or extensions to and improvements upon the EDE model, such as those that attempt to address the tension with
+large-scale structure data [37, 46, 48, 82–85], let alone proposals other than EDE to
+resolve the Hubble tension (see, e.g., [200] for a recent review).
+We close this review on a positive note: The EDE proposal remains an interesting testbed for experimenting with our understanding of the physics implications of
+data from CMB and LSS experiments. While current data do not exhibit a strong
+Bayesian preference for the canonical EDE model, it remains possible that EDE or
+an EDE-like model is the true theory of nature – this will be tested with future data
+releases and future experiments, including forthcoming CMB data from the Atacama Cosmology Telescope [201] and South Pole Telescope [202] and future CMB
+data from the Simons Observatory [203] and CMB-S4 [204], and LSS experiments
+such as Euclid [205], DESI [206], WFIRST/Roman [207], and the Vera Rubin Observatory [208]. Indeed, despite the shortcomings of the canonical EDE model, it is
+one of the most effective proposals to date that are capable of increasing H0 while
+simultaneously maintaining a good fit to the CMB. It may well be the case that
+current or future extensions of EDE are able to avoid, or perhaps overcome, the
+large deviations from ΛCDM which seem to preclude the canonical EDE model at
+present.
+
+10. Acknowledgments
+EM is supported by a Discovery Grant from the Natural Sciences and Engineering
+Research Council of Canada. Portions of this work were conducted in MIT’s Center
+for Theoretical Physics and partially supported by the U.S. Department of Energy
+under grant Contract Number DE-SC0012567. JCH acknowledges support from
+NSF grant AST-2108536, NASA grants 21-ATP21-0129 and 22-ADAP22-0145, the
+Sloan Foundation, and the Simons Foundation.
+
+50
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+References
+1. A. G. Riess et al., Astrophys. J. Lett. 934 (2022) L7, arXiv:2112.04510
+[astro-ph.CO].
+2. L. Verde, T. Treu and A. G. Riess, Tensions between the Early and the Late Universe,
+in Nature Astronomy 2019 , (2019). arXiv:1907.10625 [astro-ph.CO].
+3. M. Rigault et al., Astrophys. J. 802 (2015) 20, arXiv:1412.6501.
+4. Nearby Supernova Factory Collaboration (M. Rigault et al.), Astron. Astrophys. 644
+(2020) A176, arXiv:1806.03849 [astro-ph.CO].
+5. G. E. Addison, D. J. Watts, C. L. Bennett, M. Halpern, G. Hinshaw and J. L.
+Weiland, Astrophys. J. 853 (2018) 119, arXiv:1707.06547.
+6. CSP Collaboration (C. R. Burns et al.), Astrophys. J. 869 (2018)
+56,
+arXiv:1809.06381 [astro-ph.CO].
+7. D. O. Jones et al., Astrophys. J. 867 (2018) 108, arXiv:1805.05911 [astro-ph.CO].
+8. G. Efstathiou, arXiv e-prints (July 2020) arXiv:2007.10716, arXiv:2007.10716
+[astro-ph.CO].
+9. D. Brout and D. Scolnic, Astrophys. J. 909 (2021) 26, arXiv:2004.10206
+[astro-ph.CO].
+10. E. Mortsell, A. Goobar, J. Johansson and S. Dhawan, Astrophys. J. 933 (2022) 212,
+arXiv:2105.11461 [astro-ph.CO].
+11. E. Mortsell, A. Goobar, J. Johansson and S. Dhawan, Astrophys. J. 935 (2022) 58,
+arXiv:2106.09400 [astro-ph.CO].
+12. W. L. Freedman, arXiv e-prints (June 2021) arXiv:2106.15656, arXiv:2106.15656.
+13. P. Garnavich, C. M. Wood, P. Milne, J. B. Jensen, J. P. Blakeslee, P. J. Brown,
+D. Scolnic, B. Rose and D. Brout (4 2022) arXiv:2204.12060 [astro-ph.CO].
+14. W. D. Kenworthy, A. G. Riess, D. Scolnic, W. Yuan, J. L. Bernal, D. Brout, S. Cassertano, D. O. Jones, L. Macri and E. R. Peterson, Astrophys. J. 935 (2022) 83,
+arXiv:2204.10866 [astro-ph.CO].
+15. A. G. Riess, L. Breuval, W. Yuan, S. Casertano, L. M. Macri, J. B. Bowers, D. Scolnic,
+T. Cantat-Gaudin, R. I. Anderson and M. C. Reyes, Astrophys. J. 938 (2022) 36,
+arXiv:2208.01045 [astro-ph.CO].
+16. S. M. Feeney, D. J. Mortlock and N. Dalmasso, Mon. Not. Roy. Astron. Soc. 476
+(2018) 3861, arXiv:1707.00007 [astro-ph.CO].
+17. L. Breuval et al., Astron. Astrophys. 643 (2020) A115, arXiv:2006.08763
+[astro-ph.SR].
+18. B. Javanmardi, A. Merand, P. Kervella, L. Breuval, A. Gallenne, N. Nardetto,
+W. Gieren, G. Pietrzynski, V. Hocde and S. Borgniet, Astrophys. J. 911 (2021)
+12, arXiv:2102.12489 [astro-ph.GA].
+19. R. Wojtak and J. Hjorth, Mon. Not. Roy. Astron. Soc. 515 (2022) 2790,
+arXiv:2206.08160 [astro-ph.CO].
+20. DES Collaboration (T. M. C. Abbott et al.), Mon. Not. Roy. Astron. Soc. 480 (2018)
+3879, arXiv:1711.00403 [astro-ph.CO].
+21. T. Karwal and M. Kamionkowski, Phys. Rev. D 94 (2016) 103523, arXiv:1608.01309
+[astro-ph.CO].
+22. V. Poulin, T. L. Smith, T. Karwal and M. Kamionkowski, Phys. Rev. Lett. 122
+(2019) 221301, arXiv:1811.04083 [astro-ph.CO].
+23. P. Agrawal, F.-Y. Cyr-Racine, D. Pinner and L. Randall (2019) arXiv:1904.01016
+[astro-ph.CO].
+24. M.-X. Lin, G. Benevento, W. Hu and M. Raveri, Phys. Rev. D100 (2019) 063542,
+arXiv:1905.12618 [astro-ph.CO].
+25. J. L. Bernal, L. Verde and A. G. Riess, JCAP 1610 (2016) 019, arXiv:1607.05617.
+
+Observational Constraints on Early Dark Energy
+
+51
+
+26. K. Aylor, M. Joy, L. Knox, M. Millea, S. Raghunathan and W. L. K. Wu (2018)
+arXiv:1811.00537.
+27. N. Schöneberg, J. Lesgourgues and D. C. Hooper, JCAP 10 (2019) 029,
+arXiv:1907.11594 [astro-ph.CO].
+28. J. Evslin, A. A. Sen and Ruchika, Phys. Rev. D97 (2018) 103511, arXiv:1711.01051.
+29. T. L. Smith, V. Poulin and M. A. Amin, Phys. Rev. D 101 (2020) 063523,
+arXiv:1908.06995 [astro-ph.CO].
+30. S. Alexander and E. McDonough, Phys. Lett. B797 (2019) 134830,
+arXiv:1904.08912 [astro-ph.CO].
+31. J. Sakstein and M. Trodden, Phys. Rev. Lett. 124 (2020) 161301, arXiv:1911.11760
+[astro-ph.CO].
+32. A. Gogoi, R. Kumar Sharma, P. Chanda and S. Das, Astrophysical Journal 915 (July
+2021) 132, arXiv:2005.11889 [astro-ph.CO].
+33. F. Niedermann and M. S. Sloth, Phys. Rev. D 103 (2021) L041303,
+arXiv:1910.10739 [astro-ph.CO].
+34. F. Niedermann and M. S. Sloth, Phys. Rev. D 102 (2020) 063527, arXiv:2006.06686
+[astro-ph.CO].
+35. F. Niedermann and M. S. Sloth, Phys. Rev. D 105 (2022) 063509, arXiv:2112.00770
+[hep-ph].
+36. G. Ye and Y.-S. Piao, Phys. Rev. D 101 (2020) 083507, arXiv:2001.02451
+[astro-ph.CO].
+37. K. V. Berghaus and T. Karwal (2019) arXiv:1911.06281 [astro-ph.CO].
+38. K. Freese and M. W. Winkler, Phys. Rev. D 104 (2021) 083533, arXiv:2102.13655
+[astro-ph.CO].
+39. M. Braglia, W. T. Emond, F. Finelli, A. E. Gumrukcuoglu and K. Koyama, Phys.
+Rev. D 102 (2020) 083513, arXiv:2005.14053 [astro-ph.CO].
+40. V. I. Sabla and R. R. Caldwell, Phys. Rev. D 103 (2021) 103506, arXiv:2103.04999
+[astro-ph.CO].
+41. V. I. Sabla and R. R. Caldwell, Phys. Rev. D 106 (2022) 063526, arXiv:2202.08291
+[astro-ph.CO].
+42. A. Gómez-Valent, Z. Zheng, L. Amendola, V. Pettorino and C. Wetterich, Phys. Rev.
+D 104 (2021) 083536, arXiv:2107.11065 [astro-ph.CO].
+43. A. Moss, E. Copeland, S. Bamford and T. Clarke (9 2021) arXiv:2109.14848
+[astro-ph.CO].
+44. E. Guendelman, R. Herrera and D. Benisty, Phys. Rev. D 105 (2022) 124035,
+arXiv:2201.06470 [gr-qc].
+45. T. Karwal, M. Raveri, B. Jain, J. Khoury and M. Trodden, arXiv e-prints (June
+2021) arXiv:2106.13290, arXiv:2106.13290.
+46. E. McDonough, M.-X. Lin, J. C. Hill, W. Hu and S. Zhou, Phys. Rev. D 106 (2022)
+043525, arXiv:2112.09128 [astro-ph.CO].
+47. H. Wang and Y.-S. Piao (9 2022) arXiv:2209.09685 [astro-ph.CO].
+48. S. Alexander, H. Bernardo and M. W. Toomey, JCAP 03 (2023) 037,
+arXiv:2207.13086 [astro-ph.CO].
+49. E. McDonough and M. Scalisi (8 2022) arXiv:2209.00011 [hep-th].
+50. S. Nakagawa, F. Takahashi and W. Yin (9 2022) arXiv:2209.01107 [astro-ph.CO].
+51. A. Gómez-Valent, Z. Zheng, L. Amendola, C. Wetterich and V. Pettorino (7 2022)
+arXiv:2207.14487 [astro-ph.CO].
+52. H. Mohseni Sadjadi and V. Anari (5 2022) arXiv:2205.15693 [gr-qc].
+53. K. Kojima and Y. Okubo, Phys. Rev. D 106 (2022) 063540, arXiv:2205.13777
+[astro-ph.CO].
+
+52
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+54. T. Rudelius (3 2022) arXiv:2203.05575 [hep-th].
+55. V. K. Oikonomou, Phys. Rev. D 103 (2021) 044036, arXiv:2012.00586
+[astro-ph.CO].
+56. S. X. Tian and Z.-H. Zhu, Phys. Rev. D 103 (2021) 043518, arXiv:2102.06399
+[gr-qc].
+57. M. Maziashvili, Astropart. Phys. 145 (2023) 102792, arXiv:2111.07288
+[astro-ph.CO].
+58. J. C. Hill, E. McDonough, M. W. Toomey and S. Alexander (3 2020)
+arXiv:2003.07355 [astro-ph.CO].
+59. K. Jedamzik, L. Pogosian and G.-B. Zhao, Commun. in Phys. 4 (2021) 123,
+arXiv:2010.04158 [astro-ph.CO].
+60. W. Lin, X. Chen and K. J. Mack, Astrophys. J. 920 (2021) 159, arXiv:2102.05701
+[astro-ph.CO].
+61. S. Chabanier et al., JCAP 07 (2019) 017, arXiv:1812.03554 [astro-ph.CO].
+62. V. Iršič et al., Mon. Not. Roy. Astron. Soc. 466 (2017) 4332, arXiv:1702.01761
+[astro-ph.CO].
+63. Planck Collaboration (P. A. R. Ade et al.), Astron. Astrophys. 566 (2014) A54,
+arXiv:1311.1657 [astro-ph.CO].
+64. N. Arkani-Hamed, L. Motl, A. Nicolis and C. Vafa, JHEP 06 (2007) 060,
+arXiv:hep-th/0601001.
+65. T. Rudelius, JCAP 1509 (2015) 020, arXiv:1503.00795 [hep-th].
+66. J. Brown, W. Cottrell, G. Shiu and P. Soler, JHEP 10 (2015) 023, arXiv:1503.04783
+[hep-th].
+67. A. Hebecker, F. Rompineve and A. Westphal, JHEP 04 (2016) 157,
+arXiv:1512.03768 [hep-th].
+68. A. Lewis and S. Bridle, Physical Review D 66 (November 2002) 103511,
+arXiv:astro-ph/0205436 [astro-ph].
+69. L. Montier, S. Plaszczynski, F. Levrier, M. Tristram, D. Alina, I. Ristorcelli and J. P.
+Bernard, Astron. Astrophys. 574 (2015) A135, arXiv:1406.6536 [astro-ph.IM].
+70. J. Martin and C. Ringeval, Phys. Rev. D 82 (2010) 023511, arXiv:1004.5525
+[astro-ph.CO].
+71. B. Audren, J. Lesgourgues, K. Benabed and S. Prunet, JCAP 1302 (2013) 001,
+arXiv:1210.7183 [astro-ph.CO].
+72. Planck Collaboration, N. Aghanim, M. Arnaud, M. Ashdown, J. Aumont, C. Baccigalupi, A. J. Band ay, R. B. Barreiro, J. G. Bartlett, N. Bartolo, E. Battaner, K. Benabed, A. Benoı̂t, A. Benoit-Lévy, J. P. Bernard, M. Bersanelli, P. Bielewicz, J. J.
+Bock, A. Bonaldi, L. Bonavera, J. R. Bond, J. Borrill, F. R. Bouchet, F. Boulanger,
+M. Bucher, C. Burigana, R. C. Butler, E. Calabrese, J. F. Cardoso, A. Catalano,
+A. Challinor, H. C. Chiang, P. R. Christensen, D. L. Clements, L. P. L. Colombo,
+C. Combet, A. Coulais, B. P. Crill, A. Curto, F. Cuttaia, L. Danese, R. D. Davies,
+R. J. Davis, P. de Bernardis, A. de Rosa, G. de Zotti, J. Delabrouille, F. X. Désert,
+E. Di Valentino, C. Dickinson, J. M. Diego, K. Dolag, H. Dole, S. Donzelli, O. Doré,
+M. Douspis, A. Ducout, J. Dunkley, X. Dupac, G. Efstathiou, F. Elsner, T. A.
+Enßlin, H. K. Eriksen, J. Fergusson, F. Finelli, O. Forni, M. Frailis, A. A. Fraisse,
+E. Franceschi, A. Frejsel, S. Galeotta, S. Galli, K. Ganga, C. Gauthier, M. Gerbino,
+M. Giard, E. Gjerløw, J. González-Nuevo, K. M. Górski, S. Gratton, A. Gregorio, A. Gruppuso, J. E. Gudmundsson, J. Hamann, F. K. Hansen, D. L. Harrison,
+G. Helou, S. Henrot-Versillé, C. Hernández-Monteagudo, D. Herranz, S. R. Hildebrand t, E. Hivon, W. A. Holmes, A. Hornstrup, K. M. Huffenberger, G. Hurier,
+A. H. Jaffe, W. C. Jones, M. Juvela, E. Keihänen, R. Keskitalo, K. Kiiveri, J. Knoche,
+
+Observational Constraints on Early Dark Energy
+
+53
+
+L. Knox, M. Kunz, H. Kurki-Suonio, G. Lagache, A. Lähteenmäki, J. M. Lamarre,
+A. Lasenby, M. Lattanzi, C. R. Lawrence, M. Le Jeune, R. Leonardi, J. Lesgourgues, F. Levrier, A. Lewis, M. Liguori, P. B. Lilje, M. Lilley, M. Linden-Vørnle,
+V. Lindholm, M. López-Caniego, J. F. Macı́as-Pérez, B. Maffei, G. Maggio, D. Maino,
+N. Mandolesi, A. Mangilli, M. Maris, P. G. Martin, E. Martı́nez-González, S. Masi,
+S. Matarrese, P. R. Meinhold, A. Melchiorri, M. Migliaccio, M. Millea, S. Mitra, M. A.
+Miville-Deschênes, A. Moneti, L. Montier, G. Morgante, D. Mortlock, S. Mottet,
+D. Munshi, J. A. Murphy, A. Narimani, P. Naselsky, F. Nati, P. Natoli, F. Noviello,
+D. Novikov, I. Novikov, C. A. Oxborrow, F. Paci, L. Pagano, F. Pajot, D. Paoletti,
+B. Partridge, F. Pasian, G. Patanchon, T. J. Pearson, O. Perdereau, L. Perotto,
+V. Pettorino, F. Piacentini, M. Piat, E. Pierpaoli, D. Pietrobon, S. Plaszczynski,
+E. Pointecouteau, G. Polenta, N. Ponthieu, G. W. Pratt, S. Prunet, J. L. Puget, J. P.
+Rachen, M. Reinecke, M. Remazeilles, C. Renault, A. Renzi, I. Ristorcelli, G. Rocha,
+M. Rossetti, G. Roudier, B. Rouillé d’Orfeuil, J. A. Rubiño-Martı́n, B. Rusholme,
+L. Salvati, M. Sandri, D. Santos, M. Savelainen, G. Savini, D. Scott, P. Serra, L. D.
+Spencer, M. Spinelli, V. Stolyarov, R. Stompor, R. Sunyaev, D. Sutton, A. S. SuurUski, J. F. Sygnet, J. A. Tauber, L. Terenzi, L. Toffolatti, M. Tomasi, M. Tristram,
+T. Trombetti, M. Tucci, J. Tuovinen, G. Umana, L. Valenziano, J. Valiviita, F. Van
+Tent, P. Vielva, F. Villa, L. A. Wade, B. D. Wandelt, I. K. Wehus, D. Yvon, A. Zacchei
+and A. Zonca, ”Astron. Astrophys.” 594 (September 2016) A11, arXiv:1507.02704
+[astro-ph.CO].
+73. L. Herold, E. G. M. Ferreira and E. Komatsu, Astrophys. J. Lett. 929 (2022) L16,
+arXiv:2112.12140 [astro-ph.CO].
+74. L. Herold and E. G. M. Ferreira, Phys. Rev. D 108 (2023) 043513, arXiv:2210.16296
+[astro-ph.CO].
+75. Planck Collaboration (N. Aghanim et al.) (2018) arXiv:1807.06209 [astro-ph.CO].
+76. L. Knox and M. Millea, Phys. Rev. D101 (2020) 043533, arXiv:1908.03663
+[astro-ph.CO].
+77. M. Kamionkowski, J. Pradler and D. G. E. Walker, Phys. Rev. Lett. 113 (2014)
+251302, arXiv:1409.0549 [hep-ph].
+78. M.-X. Lin, W. Hu and M. Raveri, Phys. Rev. D 102 (2020) 123523,
+arXiv:2009.08974 [astro-ph.CO].
+79. M. S. Turner, Phys. Rev. D28 (1983) 1243.
+80. M.-X. Lin, E. McDonough, J. C. Hill and W. Hu (12 2022) arXiv:2212.08098
+[astro-ph.CO].
+81. M. Carrillo González, Q. Liang, J. Sakstein and M. Trodden, JCAP 04 (2021) 063,
+arXiv:2011.09895 [astro-ph.CO].
+82. I. J. Allali, M. P. Hertzberg and F. Rompineve, Phys. Rev. D 104 (2021) L081303,
+arXiv:2104.12798 [astro-ph.CO].
+83. K. V. Berghaus and T. Karwal, Phys. Rev. D 107 (2023) 103515, arXiv:2204.09133
+[astro-ph.CO].
+84. S. J. Clark, K. Vattis, J. Fan and S. M. Koushiappas, Phys. Rev. D 107 (2023)
+083527, arXiv:2110.09562 [astro-ph.CO].
+85. J. S. Cruz, F. Niedermann and M. S. Sloth (5 2023) arXiv:2305.08895
+[astro-ph.CO].
+86. V. F. Mukhanov, Int. J. Theor. Phys. 43 (2004) 623, arXiv:astro-ph/0303072.
+87. W. Hu and N. Sugiyama, Astrophys. J. 444 (1995) 489, arXiv:astro-ph/9407093.
+88. S. Vagnozzi, Phys. Rev. D 104 (2021) 063524, arXiv:2105.10425 [astro-ph.CO].
+89. P. Svrcek and E. Witten, JHEP 06 (2006) 051, arXiv:hep-th/0605206.
+90. J. P. Conlon, JHEP 05 (2006) 078, arXiv:hep-th/0602233.
+
+54
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+91. M. Cicoli, M. Goodsell and A. Ringwald, JHEP 10 (2012) 146, arXiv:1206.0819
+[hep-th].
+92. D. J. E. Marsh and P. G. Ferreira, Phys. Rev. D82 (2010) 103528, arXiv:1009.3501
+[hep-ph].
+93. L. Amendola and R. Barbieri, Phys. Lett. B642 (2006) 192, arXiv:hep-ph/0509257
+[hep-ph].
+94. M. Cicoli, M. Licheri, R. Mahanta, E. McDonough, F. G. Pedro and M. Scalisi, JHEP
+06 (2023) 052, arXiv:2303.03414 [hep-th].
+95. G. Efstathiou and S. Gratton, The Open Journal of Astrophysics 4 (8 2021).
+96. E.
+Rosenberg,
+S.
+Gratton
+and
+G.
+Efstathiou, Monthly Notices of the Royal Astronomical Society 517 (09 2022) 4620,
+https://academic.oup.com/mnras/article-pdf/517/3/4620/46782205/stac2744.pdf.
+97. Couchot, F., Henrot-Versillé, S., Perdereau, O., Plaszczynski, S., Rouillé d´Orfeuil,
+B., Spinelli, M. and Tristram, M., A&A 602 (2017) A41.
+98. Planck Collaboration, Akrami, Y., Andersen, K. J., Ashdown, M., Baccigalupi, C.,
+Ballardini, M., Banday, A. J., Barreiro, R. B., Bartolo, N., Basak, S., Benabed,
+K., Bernard, J.-P., Bersanelli, M., Bielewicz, P., Bond, J. R., Borrill, J., Burigana,
+C., Butler, R. C., Calabrese, E., Casaponsa, B., Chiang, H. C., Colombo, L. P. L.,
+Combet, C., Crill, B. P., Cuttaia, F., de Bernardis, P., de Rosa, A., de Zotti, G., Delabrouille, J., Di Valentino, E., Diego, J. M., Doré, O., Douspis, M., Dupac, X., Eriksen, H. K., Fernandez-Cobos, R., Finelli, F., Frailis, M., Fraisse, A. A., Franceschi,
+E., Frolov, A., Galeotta, S., Galli, S., Ganga, K., Gerbino, M., Ghosh, T., GonzálezNuevo, J., Górski, K. M., Gruppuso, A., Gudmundsson, J. E., Handley, W., Helou,
+G., Herranz, D., Hildebrandt, S. R., Hivon, E., Huang, Z., Jaffe, A. H., Jones, W. C.,
+Keihänen, E., Keskitalo, R., Kiiveri, K., Kim, J., Kisner, T. S., Krachmalnicoff, N.,
+Kunz, M., Kurki-Suonio, H., Lasenby, A., Lattanzi, M., Lawrence, C. R., Le Jeune,
+M., Levrier, F., Liguori, M., Lilje, P. B., Lilley, M., Lindholm, V., López-Caniego, M.,
+Lubin, P. M., Macı́as-Pérez, J. F., Maino, D., Mandolesi, N., Marcos-Caballero, A.,
+Maris, M., Martin, P. G., Martı́nez-González, E., Matarrese, S., Mauri, N., McEwen,
+J. D., Meinhold, P. R., Mennella, A., Migliaccio, M., Mitra, S., Molinari, D., Montier, L., Morgante, G., Moss, A., Natoli, P., Paoletti, D., Partridge, B., Patanchon,
+G., Pearson, D., Pearson, T. J., Perrotta, F., Piacentini, F., Polenta, G., Rachen,
+J. P., Reinecke, M., Remazeilles, M., Renzi, A., Rocha, G., Rosset, C., Roudier,
+G., Rubiño-Martı́n, J. A., Ruiz-Granados, B., Salvati, L., Savelainen, M., Scott, D.,
+Sirignano, C., Sirri, G., Spencer, L. D., Suur-Uski, A.-S., Svalheim, L. T., Tauber, J.
+A., Tavagnacco, D., Tenti, M., Terenzi, L., Thommesen, H., Toffolatti, L., Tomasi,
+M., Tristram, M., Trombetti, T., Valiviita, J., Van Tent, B., Vielva, P., Villa, F.,
+Vittorio, N., Wandelt, B. D., Wehus, I. K., Zacchei, A. and Zonca, A., A&A 643
+(2020) A42.
+99. A. La Posta, T. Louis, X. Garrido and J. C. Hill, Phys. Rev. D 105 (Apr 2022)
+083519.
+100. DES Collaboration (T. M. C. Abbott et al.), Phys. Rev. D 105 (2022) 023520,
+arXiv:2105.13549 [astro-ph.CO].
+101. A. Chudaykin and M. M. Ivanov, JCAP 11 (2019) 034, arXiv:1907.06666
+[astro-ph.CO].
+102. G. D’Amico, J. Gleyzes, N. Kokron, D. Markovic, L. Senatore, P. Zhang, F. Beutler
+and H. Gil-Marı́n (2019) arXiv:1909.05271 [astro-ph.CO].
+103. M. M. Ivanov, M. Simonović and M. Zaldarriaga, JCAP 05 (2020) 042,
+arXiv:1909.05277 [astro-ph.CO].
+104. R. Takahashi, M. Sato, T. Nishimichi, A. Taruya and M. Oguri, Astrophys. J. 761
+
+Observational Constraints on Early Dark Energy
+
+55
+
+(2012) 152, arXiv:1208.2701.
+105. D. Baumann, A. Nicolis, L. Senatore and M. Zaldarriaga, JCAP 1207 (2012) 051,
+arXiv:1004.2488 [astro-ph.CO].
+106. J. J. M. Carrasco, M. P. Hertzberg and L. Senatore, JHEP 09 (2012) 082,
+arXiv:1206.2926 [astro-ph.CO].
+107. G. Cabass, M. M. Ivanov, M. Lewandowski, M. Mirbabayi and M. Simonović, Phys.
+Dark Univ. 40 (2023) 101193, arXiv:2203.08232 [astro-ph.CO].
+108. M. M. Ivanov, Effective Field Theory for Large-Scale Structure 2023.
+109. V. Desjacques, D. Jeong and F. Schmidt, Phys. Rept. 733 (2018) 1,
+arXiv:1611.09787 [astro-ph.CO].
+110. M. Lewandowski, A. Perko and L. Senatore, JCAP 05 (2015) 019, arXiv:1412.5049
+[astro-ph.CO].
+111. J. C. Jackson, Mon. Not. Roy. Astron. Soc. 156 (1972) 1P, arXiv:0810.3908
+[astro-ph].
+112. L. Senatore and M. Zaldarriaga (9 2014) arXiv:1409.1225 [astro-ph.CO].
+113. M. M. Ivanov and S. Sibiryakov, JCAP 07 (2018) 053, arXiv:1804.05080
+[astro-ph.CO].
+114. Z. Vlah and M. White, JCAP 03 (2019) 007, arXiv:1812.02775 [astro-ph.CO].
+115. S.-F. Chen, Z. Vlah, E. Castorina and M. White, JCAP 03 (2021) 100,
+arXiv:2012.04636 [astro-ph.CO].
+116. L. Senatore and M. Zaldarriaga, JCAP 02 (2015) 013, arXiv:1404.5954
+[astro-ph.CO].
+117. T. Baldauf, M. Mirbabayi, M. Simonović and M. Zaldarriaga, Phys. Rev. D 92 (2015)
+043514, arXiv:1504.04366 [astro-ph.CO].
+118. Z. Vlah, U. Seljak, M. Y. Chu and Y. Feng, JCAP 03 (2016) 057, arXiv:1509.02120
+[astro-ph.CO].
+119. D. Blas, M. Garny, M. M. Ivanov and S. Sibiryakov, JCAP 07 (2016) 052,
+arXiv:1512.05807 [astro-ph.CO].
+120. D. Blas, M. Garny, M. M. Ivanov and S. Sibiryakov, JCAP 07 (2016) 028,
+arXiv:1605.02149 [astro-ph.CO].
+121. A. Vasudevan, M. M. Ivanov, S. Sibiryakov and J. Lesgourgues, JCAP 09 (2019)
+037, arXiv:1906.08697 [astro-ph.CO].
+122. A. Chudaykin, M. M. Ivanov and M. Simonović (4 2020) arXiv:2004.10607
+[astro-ph.CO].
+123. N.
+Kaiser,
+MNRAS
+227
+(07
+1987)
+1,
+https://academic.oup.com/mnras/article-pdf/227/1/1/18522208/mnras227-0001.pdf.
+124. M. M. Ivanov, O. H. E. Philcox, M. Simonović, M. Zaldarriaga, T. Nischimichi and
+M. Takada, Phys. Rev. D 105 (2022) 043531, arXiv:2110.00006 [astro-ph.CO].
+125. A. Barreira, T. Lazeyras and F. Schmidt, JCAP 08 (2021) 029, arXiv:2105.02876
+[astro-ph.CO].
+126. T. Lazeyras, A. Barreira and F. Schmidt, JCAP 10 (2021) 063, arXiv:2106.14713
+[astro-ph.CO].
+127. G. Cabass, M. M. Ivanov, O. H. E. Philcox, M. Simonovic and M. Zaldarriaga, Phys.
+Lett. B 841 (2023) 137912, arXiv:2211.14899 [astro-ph.CO].
+128. G. Cabass, M. M. Ivanov, O. H. E. Philcox, M. Simonović and M. Zaldarriaga, Phys.
+Rev. D 106 (2022) 043506, arXiv:2204.01781 [astro-ph.CO].
+129. O. H. E. Philcox, M. M. Ivanov, G. Cabass, M. Simonović, M. Zaldarriaga and
+T. Nishimichi, Phys. Rev. D 106 (2022) 043530, arXiv:2206.02800 [astro-ph.CO].
+130. G. Cabass, M. M. Ivanov, O. H. E. Philcox, M. Simonović and M. Zaldarriaga, Phys.
+Rev. Lett. 129 (2022) 021301, arXiv:2201.07238 [astro-ph.CO].
+
+56
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+131. M. M. Ivanov (9 2023) arXiv:2309.10133 [astro-ph.CO].
+132. DESI Collaboration (A. Aghamousa et al.) (10 2016) arXiv:1611.00036
+[astro-ph.IM].
+133. DESI Collaboration (C. Ramirez-Perez et al.) (6 2023) arXiv:2306.06312
+[astro-ph.CO].
+134. DESI Collaboration (C. Ravoux et al.) (6 2023) arXiv:2306.06311 [astro-ph.CO].
+135. N. G. Karaçaylı et al. (6 2023) arXiv:2306.06316 [astro-ph.CO].
+136. M. Viel, G. D. Becker, J. S. Bolton and M. G. Haehnelt, Phys. Rev. D 88 (2013)
+043502, arXiv:1306.2314 [astro-ph.CO].
+137. N. Palanque-Delabrouille, C. Yèche, N. Schöneberg, J. Lesgourgues, M. Walther,
+S. Chabanier and E. Armengaud, JCAP 04 (2020) 038, arXiv:1911.09073
+[astro-ph.CO].
+138. S. Goldstein, J. C. Hill, V. Iršič and B. D. Sherwin (3 2023) arXiv:2303.00746
+[astro-ph.CO].
+139. DES Collaboration (T. M. C. Abbott et al.), Phys. Rev. D98 (2018) 043526,
+arXiv:1708.01530 [astro-ph.CO].
+140. H. Hildebrandt et al., Mon. Not. Roy. Astron. Soc. 465 (2017) 1454,
+arXiv:1606.05338 [astro-ph.CO].
+141. H. Hildebrandt, F. Köhlinger, J. L. van den Busch, B. Joachimi, C. Heymans,
+A. Kannawadi, A. H. Wright, M. Asgari, C. Blake, H. Hoekstra, S. Joudaki,
+K. Kuijken, L. Miller, C. B. Morrison, T. Tröster, A. Amon, M. Archidiacono,
+S. Brieden, A. Choi, J. T. A. de Jong, T. Erben, B. Giblin, A. Mead, J. A. Peacock, M. Radovich, P. Schneider, C. Sifón and M. Tewes, A & A 633 (January 2020)
+A69, arXiv:1812.06076 [astro-ph.CO].
+142. HSC Collaboration (C. Hikage et al.), Publ. Astron. Soc. Jap. 71 (2019) Publications of the Astronomical Society of Japan, Volume 71, Issue 2, April 2019, 43,
+https://doi.org/10.1093/pasj/psz010, arXiv:1809.09148 [astro-ph.CO].
+143. S.-S. Li et al. (6 2023) arXiv:2306.11124 [astro-ph.CO].
+144. Kilo-Degree Survey, DES Collaboration (T. M. C. Abbott et al.) (5 2023)
+arXiv:2305.17173 [astro-ph.CO].
+145. X. Li et al. (4 2023) arXiv:2304.00702 [astro-ph.CO].
+146. R. Dalal et al. (4 2023) arXiv:2304.00701 [astro-ph.CO].
+147. Planck Collaboration, N. Aghanim, Y. Akrami, M. Ashdown, J. Aumont, C. Baccigalupi, M. Ballardini, A. J. Banday, R. B. Barreiro, N. Bartolo, S. Basak, K. Benabed, J. P. Bernard, M. Bersanelli, P. Bielewicz, J. J. Bock, J. R. Bond, J. Borrill, F. R. Bouchet, F. Boulanger, M. Bucher, C. Burigana, R. C. Butler, E. Calabrese, J. F. Cardoso, J. Carron, B. Casaponsa, A. Challinor, H. C. Chiang, L. P. L.
+Colombo, C. Combet, B. P. Crill, F. Cuttaia, P. de Bernardis, A. de Rosa, G. de Zotti,
+J. Delabrouille, J. M. Delouis, E. Di Valentino, J. M. Diego, O. Doré, M. Douspis,
+A. Ducout, X. Dupac, S. Dusini, G. Efstathiou, F. Elsner, T. A. Enßlin, H. K. Eriksen,
+Y. Fantaye, R. Fernand ez-Cobos, F. Finelli, M. Frailis, A. A. Fraisse, E. Franceschi,
+A. Frolov, S. Galeotta, S. Galli, K. Ganga, R. T. Génova-Santos, M. Gerbino,
+T. Ghosh, Y. Giraud-Héraud, J. González-Nuevo, K. M. Górski, S. Gratton, A. Gruppuso, J. E. Gudmundsson, J. Hamann, W. Handley, F. K. Hansen, D. Herranz,
+E. Hivon, Z. Huang, A. H. Jaffe, W. C. Jones, E. Keihänen, R. Keskitalo, K. Kiiveri,
+J. Kim, T. S. Kisner, N. Krachmalnicoff, M. Kunz, H. Kurki-Suonio, G. Lagache,
+J. M. Lamarre, A. Lasenby, M. Lattanzi, C. R. Lawrence, M. Le Jeune, F. Levrier, A. Lewis, M. Liguori, P. B. Lilje, M. Lilley, V. Lindholm, M. López-Caniego,
+P. M. Lubin, Y. Z. Ma, J. F. Macı́as-Pérez, G. Maggio, D. Maino, N. Mandolesi,
+A. Mangilli, A. Marcos-Caballero, M. Maris, P. G. Martin, E. Martı́nez-González,
+
+Observational Constraints on Early Dark Energy
+
+57
+
+S. Matarrese, N. Mauri, J. D. McEwen, P. R. Meinhold, A. Melchiorri, A. Mennella, M. Migliaccio, M. Millea, M. A. Miville-Deschênes, D. Molinari, A. Moneti,
+L. Montier, G. Morgante, A. Moss, P. Natoli, H. U. Nørgaard-Nielsen, L. Pagano,
+D. Paoletti, B. Partridge, G. Patanchon, H. V. Peiris, F. Perrotta, V. Pettorino,
+F. Piacentini, G. Polenta, J. L. Puget, J. P. Rachen, M. Reinecke, M. Remazeilles,
+A. Renzi, G. Rocha, C. Rosset, G. Roudier, J. A. Rubiño-Martı́n, B. Ruiz-Granados,
+L. Salvati, M. Sandri, M. Savelainen, D. Scott, E. P. S. Shellard, C. Sirignano, G. Sirri,
+L. D. Spencer, R. Sunyaev, A. S. Suur-Uski, J. A. Tauber, D. Tavagnacco, M. Tenti,
+L. Toffolatti, M. Tomasi, T. Trombetti, J. Valiviita, B. Van Tent, P. Vielva, F. Villa,
+N. Vittorio, B. D. Wandelt, I. K. Wehus, A. Zacchei and A. Zonca, arXiv e-prints
+(July 2019) arXiv:1907.12875, arXiv:1907.12875 [astro-ph.CO].
+148. BOSS Collaboration (S. Alam et al.), Mon. Not. Roy. Astron. Soc. 470 (2017) 2617,
+arXiv:1607.03155 [astro-ph.CO].
+149. O. H. E. Philcox, M. M. Ivanov, M. Simonović and M. Zaldarriaga (2020)
+arXiv:2002.04035 [astro-ph.CO].
+150. O. H. E. Philcox and M. M. Ivanov, Phys. Rev. D 105 (2022) 043517,
+arXiv:2112.04515 [astro-ph.CO].
+151. M. M. Ivanov, M. Simonović and M. Zaldarriaga (2019) arXiv:1912.08208
+[astro-ph.CO].
+152. D. Wadekar, M. M. Ivanov and R. Scoccimarro, Phys. Rev. D 102 (2020) 123521,
+arXiv:2009.00622 [astro-ph.CO].
+153. A. Chudaykin, K. Dolgikh and M. M. Ivanov, Phys. Rev. D 103 (2021) 023507,
+arXiv:2009.10106 [astro-ph.CO].
+154. M. M. Ivanov, E. McDonough, J. C. Hill, M. Simonović, M. W. Toomey, S. Alexander and M. Zaldarriaga, Phys. Rev. D 102 (2020) 103502, arXiv:2006.11235
+[astro-ph.CO].
+155. M. M. Ivanov, O. H. E. Philcox, T. Nishimichi, M. Simonović, M. Takada and M. Zaldarriaga, Phys. Rev. D 105 (2022) 063512, arXiv:2110.10161 [astro-ph.CO].
+156. O. H. E. Philcox, Phys. Rev. D 103 (2021) 103504, arXiv:2012.09389
+[astro-ph.CO].
+157. O. H. E. Philcox, Phys. Rev. D 104 (2021) 123529, arXiv:2107.06287
+[astro-ph.CO].
+158. A. Lewis, arXiv e-prints (October 2019) arXiv:1910.13970, arXiv:1910.13970
+[astro-ph.IM].
+159. DES Collaboration (S. Lee et al.), Mon. Not. Roy. Astron. Soc. 489 (2019) 2887,
+arXiv:1906.01136 [astro-ph.CO].
+160. T. Tröster et al., Astron. Astrophys. 633 (2020) L10, arXiv:1909.11006
+[astro-ph.CO].
+161. H. Kondo, H. Miyatake, M. Shirasaki, N. Sugiyama and A. J. Nishizawa (5 2019)
+arXiv:1905.08991 [astro-ph.CO].
+162. D. Wadekar and R. Scoccimarro, Phys. Rev. D 102 (2020) 123517, arXiv:1910.02914
+[astro-ph.CO].
+163. O. H. E. Philcox, M. M. Ivanov, M. Zaldarriaga, M. Simonovic and M. Schmittfull,
+Phys. Rev. D 103 (2021) 043508, arXiv:2009.03311 [astro-ph.CO].
+164. A. Chudaykin, M. M. Ivanov and M. Simonović, Phys. Rev. D 103 (2021) 043525,
+arXiv:2009.10724 [astro-ph.CO].
+165. S.-F. Chen, Z. Vlah and M. White, JCAP 02 (2022) 008, arXiv:2110.05530
+[astro-ph.CO].
+166. M. M. Ivanov, Phys. Rev. D 104 (2021) 103514, arXiv:2106.12580 [astro-ph.CO].
+167. A. Chudaykin and M. M. Ivanov, Phys. Rev. D 107 (2023) 043518,
+
+58
+
+McDonough, Hill, Ivanov, La Posta, and Toomey
+
+arXiv:2210.17044 [astro-ph.CO].
+168. M. M. Ivanov, O. H. E. Philcox, G. Cabass, T. Nishimichi, M. Simonović and M. Zaldarriaga, Phys. Rev. D 107 (2023) 083515, arXiv:2302.04414 [astro-ph.CO].
+169. M. Esposito, V. Iršič, M. Costanzi, S. Borgani, A. Saro and M. Viel, Mon. Not. Roy.
+Astron. Soc. 515 (2022) 857, arXiv:2202.00974 [astro-ph.CO].
+170. C. Pedersen, A. Font-Ribera and N. Y. Gnedin, Astrophys. J. 944 (2023) 223,
+arXiv:2209.09895 [astro-ph.CO].
+171. SDSS Collaboration (P. McDonald et al.), Astrophys. J. 635 (2005) 761,
+arXiv:astro-ph/0407377.
+172. M. A. Fernandez, S. Bird and M.-F. Ho (9 2023) arXiv:2309.03943 [astro-ph.CO].
+173. A. Arvanitaki, S. Dimopoulos, S. Dubovsky, N. Kaloper and J. March-Russell, Phys.
+Rev. D 81 (2010) 123530, arXiv:0905.4720 [hep-th].
+174. I. Broeckel, M. Cicoli, A. Maharana, K. Singh and K. Sinha, JHEP 08 (2021) 059,
+arXiv:2105.02889 [hep-th], [Addendum: JHEP 01, 191 (2022)].
+175. T. Banks, M. Dine, P. J. Fox and E. Gorbatov, JCAP 0306 (2003) 001,
+arXiv:hep-th/0303252 [hep-th].
+176. T. Rudelius, JCAP 04 (2015) 049, arXiv:1409.5793 [hep-th].
+177. T. C. Bachlechner, C. Long and L. McAllister, JHEP 01 (2016) 091,
+arXiv:1503.07853 [hep-th].
+178. J. P. Conlon and S. Krippendorf, JHEP 04 (2016) 085, arXiv:1601.00647 [hep-th].
+179. C. Long, L. McAllister and J. Stout, JHEP 02 (2017) 014, arXiv:1603.01259
+[hep-th].
+180. B. Heidenreich, M. Reece and T. Rudelius, JHEP 02 (2016) 140, arXiv:1509.06374
+[hep-th].
+181. A. Hebecker, P. Mangat, S. Theisen and L. T. Witkowski, JHEP 02 (2017) 097,
+arXiv:1607.06814 [hep-th].
+182. A. Hebecker, T. Mikhail and P. Soler, Front. Astron. Space Sci. 5 (2018) 35,
+arXiv:1807.00824 [hep-th].
+183. J. Halverson, C. Long, B. Nelson and G. Salinas, Phys. Rev. D100 (2019) 106010,
+arXiv:1909.05257 [hep-th].
+184. V. M. Mehta, M. Demirtas, C. Long, D. J. E. Marsh, L. Mcallister and M. J. Stott
+(11 2020) arXiv:2011.08693 [hep-th].
+185. V. M. Mehta, M. Demirtas, C. Long, D. J. E. Marsh, L. McAllister and M. J. Stott,
+JCAP 07 (2021) 033, arXiv:2103.06812 [hep-th].
+186. M. Demirtas, N. Gendler, C. Long, L. McAllister and J. Moritz, JHEP 06 (2023)
+092, arXiv:2112.04503 [hep-th].
+187. S. Alexander, H. Gilmer, T. Manton and E. McDonough (4 2023) arXiv:2304.11176
+[hep-ph].
+188. A. Maleknejad and E. McDonough, Phys. Rev. D 106 (2022) 095011,
+arXiv:2205.12983 [hep-ph].
+189. D. J. E. Marsh, Phys. Rept. 643 (2016) 1, arXiv:1510.07633.
+190. A. Lewis and S. Bridle, Phys. Rev. D 66 (2002) 103511, arXiv:astro-ph/0205436.
+191. H. Akaike, IEEE Transactions on Automatic Control 19 (1974) 716.
+192. T. Nishimichi, G. D’Amico, M. M. Ivanov, L. Senatore, M. Simonović, M. Takada,
+M. Zaldarriaga and P. Zhang (3 2020) arXiv:2003.08277 [astro-ph.CO].
+193. A. Chudaykin, D. Gorbunov and N. Nedelko, JCAP 08 (2020) 013,
+arXiv:2004.13046 [astro-ph.CO].
+194. A. Chudaykin, D. Gorbunov and N. Nedelko, Phys. Rev. D 103 (2021) 043529,
+arXiv:2011.04682 [astro-ph.CO].
+195. J. C. Hill et al., Phys. Rev. D 105 (2022) 123536, arXiv:2109.04451 [astro-ph.CO].
+
+Observational Constraints on Early Dark Energy
+
+59
+
+196. A. La Posta, T. Louis, X. Garrido and J. C. Hill, Phys. Rev. D 105 (2022) 083519,
+arXiv:2112.10754 [astro-ph.CO].
+197. V. Poulin, T. L. Smith and A. Bartlett, Phys. Rev. D 104 (2021) 123550,
+arXiv:2109.06229 [astro-ph.CO].
+198. T. L. Smith, M. Lucca, V. Poulin, G. F. Abellan, L. Balkenhol, K. Benabed, S. Galli
+and R. Murgia (2 2022) arXiv:2202.09379 [astro-ph.CO].
+199. T. L. Smith and V. Poulin (9 2023) arXiv:2309.03265 [astro-ph.CO].
+200. E. Abdalla et al., JHEAp 34 (2022) 49, arXiv:2203.06142 [astro-ph.CO].
+201. S. W. Henderson et al., J. Low Temp. Phys. 184 (2016) 772, arXiv:1510.02809
+[astro-ph.IM].
+202. SPT-3G Collaboration (B. A. Benson et al.), Proc. SPIE Int. Soc. Opt. Eng. 9153
+(2014) 91531P, arXiv:1407.2973 [astro-ph.IM].
+203. Simons Observatory Collaboration (P. Ade et al.), JCAP 1902 (2019) 056,
+arXiv:1808.07445 [astro-ph.CO].
+204. K. Abazajian et al. (7 2019) arXiv:1907.04473 [astro-ph.IM].
+205. L. Amendola et al., Living Rev. Rel. 21 (2018) 2, arXiv:1606.00180 [astro-ph.CO].
+206. DESI Collaboration (M. E. Levi et al.) (2019) arXiv:1907.10688 [astro-ph.IM].
+207. R. Akeson, L. Armus, E. Bachelet, V. Bailey, L. Bartusek, A. Bellini, D. Benford,
+D. Bennett, A. Bhattacharya, R. Bohlin, M. Boyer, V. Bozza, G. Bryden, S. Calchi
+Novati, K. Carpenter, S. Casertano, A. Choi, D. Content, P. Dayal, A. Dressler,
+O. Doré, S. M. Fall, X. Fan, X. Fang, A. Filippenko, S. Finkelstein, R. Foley,
+S. Furlanetto, J. Kalirai, B. S. Gaudi, K. Gilbert, J. Girard, K. Grady, J. Greene,
+P. Guhathakurta, C. Heinrich, S. Hemmati, D. Hendel, C. Henderson, T. Henning,
+C. Hirata, S. Ho, E. Huff, A. Hutter, R. Jansen, S. Jha, S. Johnson, D. Jones, J. Kasdin, P. Kelly, R. Kirshner, A. Koekemoer, J. Kruk, N. Lewis, B. Macintosh, P. Madau,
+S. Malhotra, K. Mand el, E. Massara, D. Masters, J. McEnery, K. McQuinn, P. Melchior, M. Melton, B. Mennesson, M. Peeples, M. Penny, S. Perlmutter, A. Pisani,
+A. Plazas, R. Poleski, M. Postman, C. Ranc, B. Rauscher, A. Rest, A. Roberge,
+B. Robertson, S. Rodney, J. Rhoads, J. Rhodes, J. Ryan, Russell, K. Sahu, D. Sand,
+D. Scolnic, A. Seth, Y. Shvartzvald, K. Siellez, A. Smith, D. Spergel, K. Stassun, R. Street, L.-G. Strolger, A. Szalay, J. Trauger, M. A. Troxel, M. Turnbull,
+R. van der Marel, A. von der Linden, Y. Wang, D. Weinberg, B. Williams, R. Windhorst, E. Wollack, H.-Y. Wu, J. Yee and N. Zimmerman, arXiv e-prints (Feb 2019)
+arXiv:1902.05569, arXiv:1902.05569 [astro-ph.IM].
+208. LSST Collaboration (Z. Ivezic et al.), Astrophys. J. 873 (2019) 111, arXiv:0805.2366
+[astro-ph].
+
+

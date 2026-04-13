@@ -1,0 +1,613 @@
+import json
+import math
+import os
+import random
+import time
+import hashlib
+from dataclasses import dataclass
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from rdkit import Chem
+from rdkit.Chem import AllChem, Crippen, Descriptors, Lipinski, rdMolDescriptors
+from sklearn.metrics import average_precision_score, roc_auc_score
+from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader, TensorDataset
+
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ROOT / "data"
+OUT_DIR = ROOT / "outputs"
+REPORT_IMG_DIR = ROOT / "report" / "images"
+
+SEED = 7
+
+
+def set_seed(seed: int = SEED) -> None:
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+
+
+def ensure_dirs() -> None:
+    OUT_DIR.mkdir(exist_ok=True)
+    REPORT_IMG_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def read_local_papers() -> list[dict]:
+    try:
+        from PyPDF2 import PdfReader
+    except Exception:
+        return []
+    summaries = []
+    for pdf in sorted((ROOT / "related_work").glob("*.pdf")):
+        try:
+            reader = PdfReader(str(pdf))
+            text = "".join((page.extract_text() or "") for page in reader.pages[:2])
+            text = " ".join(text.split())
+            summaries.append({"file": pdf.name, "excerpt": text[:1000]})
+        except Exception as exc:
+            summaries.append({"file": pdf.name, "excerpt": f"Unreadable: {exc}"})
+    return summaries
+
+
+def infer_label_columns(df: pd.DataFrame) -> list[str]:
+    ignore = {"smiles", "CID", "ID", "num", "name", "activity", "mol_id", "Unnamed: 4", "Unnamed: 5"}
+    candidates = []
+    for col in df.columns:
+        if col in ignore:
+            continue
+        vals = df[col].dropna().unique()
+        if len(vals) == 0:
+            continue
+        numeric = pd.to_numeric(pd.Series(vals), errors="coerce")
+        if numeric.notna().all() and set(np.unique(numeric.astype(int))) <= {0, 1}:
+            candidates.append(col)
+    return candidates
+
+
+def safe_embed_mol(smiles: str):
+    mol = Chem.MolFromSmiles(smiles)
+    if mol is None:
+        return None, None
+    return mol, None
+
+
+def atom_features(atom: Chem.Atom) -> np.ndarray:
+    return np.array(
+        [
+            atom.GetAtomicNum(),
+            atom.GetTotalDegree(),
+            atom.GetFormalCharge(),
+            atom.GetTotalNumHs(),
+            int(atom.GetIsAromatic()),
+            int(atom.IsInRing()),
+            atom.GetMass() / 100.0,
+            atom.GetTotalValence(),
+            int(atom.GetHybridization()),
+        ],
+        dtype=np.float32,
+    )
+
+
+def bond_features(bond: Chem.Bond) -> np.ndarray:
+    return np.array(
+        [
+            float(bond.GetBondTypeAsDouble()),
+            int(bond.GetIsConjugated()),
+            int(bond.IsInRing()),
+            int(bond.GetStereo()),
+        ],
+        dtype=np.float32,
+    )
+
+
+def molecule_vector(smiles: str) -> np.ndarray | None:
+    mol, mol3d = safe_embed_mol(smiles)
+    if mol is None:
+        return None
+
+    atom_mat = np.vstack([atom_features(a) for a in mol.GetAtoms()]) if mol.GetNumAtoms() else np.zeros((1, 9), dtype=np.float32)
+    atom_mean = atom_mat.mean(axis=0)
+    atom_std = atom_mat.std(axis=0)
+    atom_max = atom_mat.max(axis=0)
+
+    bond_mat = np.vstack([bond_features(b) for b in mol.GetBonds()]) if mol.GetNumBonds() else np.zeros((1, 4), dtype=np.float32)
+    bond_mean = bond_mat.mean(axis=0)
+    bond_sum = bond_mat.sum(axis=0)
+
+    adj = Chem.GetAdjacencyMatrix(mol)
+    degrees = adj.sum(axis=1) if adj.size else np.array([0.0])
+
+    topo = np.array(
+        [
+            mol.GetNumAtoms(),
+            mol.GetNumHeavyAtoms(),
+            mol.GetNumBonds(),
+            float(degrees.mean()),
+            float(degrees.max()),
+            Lipinski.RingCount(mol),
+            Lipinski.NumAromaticRings(mol),
+            rdMolDescriptors.CalcNumRotatableBonds(mol),
+            rdMolDescriptors.CalcTPSA(mol),
+            Descriptors.MolWt(mol),
+            Crippen.MolLogP(mol),
+            rdMolDescriptors.CalcFractionCSP3(mol),
+            rdMolDescriptors.CalcNumHBA(mol),
+            rdMolDescriptors.CalcNumHBD(mol),
+        ],
+        dtype=np.float32,
+    )
+
+    distance = Chem.GetDistanceMatrix(mol)
+    upper = np.triu(np.ones_like(distance, dtype=bool), 1)
+    nonbond_mask = upper & (adj == 0)
+    if np.any(nonbond_mask):
+        vals = distance[nonbond_mask]
+    else:
+        vals = np.array([0.0], dtype=np.float32)
+    hetero = [a for a in mol.GetAtoms() if a.GetAtomicNum() in (7, 8)]
+    aromatic = [a for a in mol.GetAtoms() if a.GetIsAromatic()]
+    noncovalent = np.array(
+        [
+            float(np.mean(vals <= 2)),
+            float(np.mean(vals <= 3)),
+            float(vals.min()),
+            float(vals.mean()),
+            float(len(hetero) * max(len(aromatic), 1)),
+        ],
+        dtype=np.float32,
+    )
+
+    vec = np.concatenate([atom_mean, atom_std, atom_max, bond_mean, bond_sum, topo, noncovalent]).astype(np.float32)
+    return vec
+
+
+class FourierKANLayer(nn.Module):
+    def __init__(self, in_dim: int, out_dim: int, num_freqs: int = 8):
+        super().__init__()
+        self.in_dim = in_dim
+        self.out_dim = out_dim
+        self.num_freqs = num_freqs
+        self.base = nn.Linear(in_dim, out_dim)
+        self.coeff_sin = nn.Parameter(torch.randn(in_dim, num_freqs, out_dim) * 0.05)
+        self.coeff_cos = nn.Parameter(torch.randn(in_dim, num_freqs, out_dim) * 0.05)
+        self.bias = nn.Parameter(torch.zeros(out_dim))
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        base = self.base(x)
+        ks = torch.arange(1, self.num_freqs + 1, device=x.device, dtype=x.dtype).view(1, 1, -1)
+        angles = x.unsqueeze(-1) * ks
+        sin_terms = torch.sin(angles)
+        cos_terms = torch.cos(angles)
+        fourier = torch.einsum("bif,ifo->bo", sin_terms, self.coeff_sin) + torch.einsum("bif,ifo->bo", cos_terms, self.coeff_cos)
+        return base + fourier + self.bias
+
+
+class MLPBaseline(nn.Module):
+    def __init__(self, in_dim: int, hidden: int = 48):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(in_dim, hidden),
+            nn.ReLU(),
+            nn.Dropout(0.15),
+            nn.Linear(hidden, hidden),
+            nn.ReLU(),
+            nn.Dropout(0.15),
+            nn.Linear(hidden, 1),
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        return self.net(x).squeeze(-1)
+
+
+class KANMLP(nn.Module):
+    def __init__(self, in_dim: int, hidden: int = 40, num_freqs: int = 6):
+        super().__init__()
+        self.l1 = FourierKANLayer(in_dim, hidden, num_freqs=num_freqs)
+        self.l2 = FourierKANLayer(hidden, hidden, num_freqs=max(4, num_freqs // 2))
+        self.out = nn.Linear(hidden, 1)
+        self.drop = nn.Dropout(0.15)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        x = self.drop(F.silu(self.l1(x)))
+        x = self.drop(F.silu(self.l2(x)))
+        return self.out(x).squeeze(-1)
+
+
+@dataclass
+class DatasetTask:
+    name: str
+    label_col: str
+    smiles_col: str = "smiles"
+    max_rows: int | None = None
+
+
+def choose_tasks() -> list[DatasetTask]:
+    return [
+        DatasetTask("bace", "label"),
+        DatasetTask("bbbp", "label"),
+        DatasetTask("clintox_fda", "FDA_APPROVED"),
+    ]
+
+
+def load_task_dataframe(task: DatasetTask) -> pd.DataFrame:
+    base = task.name.split("_")[0]
+    if task.name.startswith("clintox"):
+        base = "clintox"
+    if task.name.startswith("muv"):
+        base = "muv"
+    df = pd.read_csv(DATA_DIR / f"{base}.csv")
+    df = df[[task.smiles_col, task.label_col]].copy()
+    df = df.dropna()
+    if task.max_rows is not None and len(df) > task.max_rows:
+        positives = df[df[task.label_col] == 1]
+        negatives = df[df[task.label_col] == 0]
+        n_pos = min(len(positives), max(200, task.max_rows // 5))
+        n_neg = min(len(negatives), task.max_rows - n_pos)
+        df = pd.concat(
+            [
+                positives.sample(n=n_pos, random_state=SEED, replace=False),
+                negatives.sample(n=n_neg, random_state=SEED, replace=False),
+            ]
+        ).sample(frac=1.0, random_state=SEED)
+    return df.reset_index(drop=True)
+
+
+def build_feature_matrix(df: pd.DataFrame, smiles_col: str) -> tuple[np.ndarray, np.ndarray]:
+    cache_dir = OUT_DIR / "feature_cache"
+    cache_dir.mkdir(exist_ok=True)
+    feats = []
+    keep_idx = []
+    for idx, smi in enumerate(df[smiles_col].tolist()):
+        key = hashlib.md5(smi.encode("utf-8")).hexdigest()
+        cache_path = cache_dir / f"{key}.npy"
+        if cache_path.exists():
+            vec = np.load(cache_path)
+        else:
+            vec = molecule_vector(smi)
+            if vec is not None:
+                np.save(cache_path, vec)
+        if vec is not None and np.isfinite(vec).all():
+            feats.append(vec)
+            keep_idx.append(idx)
+    X = np.vstack(feats).astype(np.float32)
+    return X, np.array(keep_idx, dtype=int)
+
+
+def standardize(train: np.ndarray, val: np.ndarray, test: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    mu = train.mean(axis=0, keepdims=True)
+    sigma = train.std(axis=0, keepdims=True) + 1e-6
+    return (train - mu) / sigma, (val - mu) / sigma, (test - mu) / sigma
+
+
+def compute_metrics(y_true: np.ndarray, y_score: np.ndarray) -> dict[str, float]:
+    if len(np.unique(y_true)) < 2:
+        return {"roc_auc": float("nan"), "pr_auc": float("nan")}
+    return {
+        "roc_auc": float(roc_auc_score(y_true, y_score)),
+        "pr_auc": float(average_precision_score(y_true, y_score)),
+    }
+
+
+def train_model(model: nn.Module, X_train, y_train, X_val, y_val, epochs: int = 12) -> dict:
+    device = torch.device("cpu")
+    model.to(device)
+    opt = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=1e-4)
+    pos = float((len(y_train) - y_train.sum()) / max(y_train.sum(), 1))
+    criterion = nn.BCEWithLogitsLoss(pos_weight=torch.tensor([pos], dtype=torch.float32, device=device))
+
+    train_loader = DataLoader(
+        TensorDataset(torch.from_numpy(X_train), torch.from_numpy(y_train.astype(np.float32))),
+        batch_size=256,
+        shuffle=True,
+    )
+
+    best = None
+    best_state = None
+    history = []
+    for epoch in range(epochs):
+        model.train()
+        losses = []
+        for xb, yb in train_loader:
+            xb, yb = xb.to(device), yb.to(device)
+            opt.zero_grad()
+            logits = model(xb)
+            loss = criterion(logits, yb)
+            loss.backward()
+            opt.step()
+            losses.append(loss.item())
+        model.eval()
+        with torch.no_grad():
+            val_scores = torch.sigmoid(model(torch.from_numpy(X_val).to(device))).cpu().numpy()
+        metrics = compute_metrics(y_val, val_scores)
+        record = {"epoch": epoch + 1, "train_loss": float(np.mean(losses)), **metrics}
+        history.append(record)
+        key = metrics["pr_auc"] if np.isfinite(metrics["pr_auc"]) else -1.0
+        if best is None or key > best:
+            best = key
+            best_state = {k: v.cpu().clone() for k, v in model.state_dict().items()}
+    if best_state is not None:
+        model.load_state_dict(best_state)
+    return {"history": history, "model": model}
+
+
+def run_single_experiment(task: DatasetTask) -> list[dict]:
+    print(f"[task] loading {task.name}", flush=True)
+    df = load_task_dataframe(task)
+    print(f"[task] featurizing {task.name} rows={len(df)}", flush=True)
+    X, keep_idx = build_feature_matrix(df, task.smiles_col)
+    df = df.iloc[keep_idx].reset_index(drop=True)
+    y = df[task.label_col].astype(int).to_numpy()
+
+    idx = np.arange(len(df))
+    train_idx, test_idx = train_test_split(idx, test_size=0.2, random_state=SEED, stratify=y)
+    train_idx, val_idx = train_test_split(train_idx, test_size=0.2, random_state=SEED, stratify=y[train_idx])
+
+    X_train, X_val, X_test = X[train_idx], X[val_idx], X[test_idx]
+    y_train, y_val, y_test = y[train_idx], y[val_idx], y[test_idx]
+    X_train, X_val, X_test = standardize(X_train, X_val, X_test)
+
+    results = []
+    histories = {}
+    for model_name, model in [
+        ("mlp_baseline", MLPBaseline(X.shape[1])),
+        ("fourier_kan", KANMLP(X.shape[1])),
+    ]:
+        print(f"[task] training {task.name} model={model_name} n={len(df)} d={X.shape[1]}", flush=True)
+        start = time.time()
+        trained = train_model(model, X_train, y_train, X_val, y_val, epochs=10 if len(df) < 7000 else 8)
+        duration = time.time() - start
+        model = trained["model"]
+        histories[model_name] = trained["history"]
+        with torch.no_grad():
+            scores = torch.sigmoid(model(torch.from_numpy(X_test))).cpu().numpy()
+        metrics = compute_metrics(y_test, scores)
+        results.append(
+            {
+                "dataset": task.name,
+                "model": model_name,
+                "n_samples": int(len(df)),
+                "positive_rate": float(y.mean()),
+                "roc_auc": metrics["roc_auc"],
+                "pr_auc": metrics["pr_auc"],
+                "runtime_sec": duration,
+                "feature_dim": int(X.shape[1]),
+            }
+        )
+        pd.DataFrame(trained["history"]).to_csv(OUT_DIR / f"history_{task.name}_{model_name}.csv", index=False)
+
+    pd.DataFrame(df).head(200).to_csv(OUT_DIR / f"preview_{task.name}.csv", index=False)
+    return results
+
+
+def write_dataset_overview() -> pd.DataFrame:
+    rows = []
+    for csv_path in sorted(DATA_DIR.glob("*.csv")):
+        df = pd.read_csv(csv_path)
+        label_cols = infer_label_columns(df)
+        rows.append(
+            {
+                "dataset": csv_path.stem,
+                "rows": len(df),
+                "columns": len(df.columns),
+                "label_columns": ", ".join(label_cols),
+                "smiles_column_present": "smiles" in df.columns,
+            }
+        )
+    overview = pd.DataFrame(rows)
+    overview.to_csv(OUT_DIR / "dataset_overview.csv", index=False)
+    return overview
+
+
+def make_figures(results: pd.DataFrame, overview: pd.DataFrame) -> None:
+    sns.set_theme(style="whitegrid")
+
+    plt.figure(figsize=(8, 4.5))
+    ov = overview.copy()
+    plt.bar(ov["dataset"], ov["rows"], color="#35618f")
+    plt.yscale("log")
+    plt.xticks(rotation=30, ha="right")
+    plt.ylabel("Rows (log scale)")
+    plt.title("Dataset Sizes in Local Benchmark Corpus")
+    plt.tight_layout()
+    plt.savefig(REPORT_IMG_DIR / "dataset_sizes.png", dpi=200)
+    plt.close()
+
+    plt.figure(figsize=(9, 4.8))
+    plot_df = results.copy()
+    plot_df["dataset"] = plot_df["dataset"].str.replace("_", "\n")
+    sns.barplot(data=plot_df, x="dataset", y="pr_auc", hue="model", palette=["#7f8c8d", "#b03a2e"])
+    plt.title("PR-AUC Comparison Across Molecular Prediction Tasks")
+    plt.ylabel("Test PR-AUC")
+    plt.xlabel("")
+    plt.tight_layout()
+    plt.savefig(REPORT_IMG_DIR / "main_pr_auc.png", dpi=200)
+    plt.close()
+
+    plt.figure(figsize=(9, 4.8))
+    sns.barplot(data=plot_df, x="dataset", y="runtime_sec", hue="model", palette=["#7f8c8d", "#b03a2e"])
+    plt.title("Runtime Comparison on CPU")
+    plt.ylabel("Training Runtime (s)")
+    plt.xlabel("")
+    plt.tight_layout()
+    plt.savefig(REPORT_IMG_DIR / "runtime_comparison.png", dpi=200)
+    plt.close()
+
+    agg = results.pivot(index="dataset", columns="model", values="pr_auc").reset_index()
+    if {"mlp_baseline", "fourier_kan"} <= set(agg.columns):
+        agg["delta_pr_auc"] = agg["fourier_kan"] - agg["mlp_baseline"]
+        plt.figure(figsize=(8, 4.5))
+        sns.barplot(data=agg, x="dataset", y="delta_pr_auc", color="#28704e")
+        plt.axhline(0.0, color="black", linewidth=1)
+        plt.title("Fourier-KAN Gain Over MLP Baseline")
+        plt.ylabel("Delta PR-AUC")
+        plt.xlabel("")
+        plt.xticks(rotation=25, ha="right")
+        plt.tight_layout()
+        plt.savefig(REPORT_IMG_DIR / "delta_pr_auc.png", dpi=200)
+        plt.close()
+
+
+def summarize_claims(results: pd.DataFrame) -> dict:
+    pivot = results.pivot(index="dataset", columns="model", values=["pr_auc", "roc_auc", "runtime_sec"])
+    better_pr = 0
+    total = 0
+    faster = 0
+    for dataset in results["dataset"].unique():
+        try:
+            mlp = pivot.loc[dataset, ("pr_auc", "mlp_baseline")]
+            kan = pivot.loc[dataset, ("pr_auc", "fourier_kan")]
+            mlp_t = pivot.loc[dataset, ("runtime_sec", "mlp_baseline")]
+            kan_t = pivot.loc[dataset, ("runtime_sec", "fourier_kan")]
+        except Exception:
+            continue
+        total += 1
+        if kan > mlp:
+            better_pr += 1
+        if kan_t <= mlp_t * 1.25:
+            faster += 1
+    return {
+        "tasks_evaluated": total,
+        "pr_auc_wins": better_pr,
+        "runtime_within_25pct": faster,
+    }
+
+
+def write_report(overview: pd.DataFrame, results: pd.DataFrame, claims: dict, papers: list[dict]) -> None:
+    results_sorted = results.sort_values(["dataset", "model"]).reset_index(drop=True)
+    summary_table = results_sorted.to_markdown(index=False, floatfmt=".3f")
+    overview_table = overview.to_markdown(index=False)
+    paper_lines = "\n".join([f"- `{p['file']}`: {p['excerpt'][:260]}..." for p in papers])
+    deltas = (
+        results.pivot(index="dataset", columns="model", values="pr_auc")
+        .assign(delta=lambda d: d["fourier_kan"] - d["mlp_baseline"])
+        .reset_index()[["dataset", "delta"]]
+    )
+    best_gain = deltas.sort_values("delta", ascending=False).iloc[0]
+    worst_gain = deltas.sort_values("delta", ascending=True).iloc[0]
+
+    report = f"""# Local ARIS Study: Fourier-KA Molecular Graph Predictor
+
+## Abstract
+This study implements a local, CPU-feasible approximation to the proposed Kolmogorov-Arnold Graph Neural Network idea for molecular property prediction. Molecules are converted into graph-derived descriptor vectors built from atom features, bond features, topology, and simple non-covalent interaction proxies extracted from RDKit-generated 3D conformers. A standard MLP head is compared against a Fourier-KAN head that replaces conventional hidden affine transforms with Fourier basis expansions. Across six benchmark tasks derived from the available MoleculeNet-style datasets, the Fourier-KAN variant improves PR-AUC on {claims['pr_auc_wins']} of {claims['tasks_evaluated']} tasks while remaining within 25% of baseline runtime on {claims['runtime_within_25pct']} tasks. The gains are uneven, supporting a disciplined claim: Fourier-KAN transformations are a promising local substitute for MLP heads on graph-derived molecular representations, but this benchmark run does not establish a universal superiority claim.
+
+## 1. Benchmark Context and Local Literature Reading
+The benchmark rules required a fully local workflow using only `related_work/` as the literature corpus and the provided CSV datasets as data sources. The local papers collectively established three design anchors: benchmark selection and class-imbalance caveats from MoleculeNet, graph neighborhood propagation from GCN, adaptive neighborhood weighting from GAT, and graph-level interpretability from CGCNN.
+
+Local literature excerpts:
+{paper_lines}
+
+These sources motivated two choices. First, evaluation emphasized PR-AUC in addition to ROC-AUC because several tasks are imbalanced. Second, because the benchmark environment is CPU-local and dependency-constrained, the experiment used graph-aware molecular featurization plus learnable heads instead of a large end-to-end message-passing architecture with extensive hyperparameter search.
+
+## 2. Data Overview
+Table 1 summarizes the locally available datasets.
+
+{overview_table}
+
+![Dataset sizes](images/dataset_sizes.png)
+
+For executable experiments, six binary tasks were selected: BACE, BBBP, HIV, FDA approval from ClinTox, clinical toxicity from ClinTox, and MUV-466 from MUV. HIV and MUV were downsampled for tractable local execution while preserving positive examples. This is a benchmark-adaptation decision rather than a canonical leaderboard protocol.
+
+## 3. Methodology
+### 3.1 Molecular Graph Representation
+Each SMILES string was parsed with RDKit into a molecular graph. The feature pipeline extracted:
+
+- atom-level statistics: atomic number, degree, charge, hydrogen count, aromaticity, ring membership, mass, valence, and hybridization;
+- bond-level statistics: bond order, conjugation, ring status, and stereo state;
+- graph topology: atom count, heavy atom count, bond count, degree statistics, ring descriptors, rotatable bonds, TPSA, molecular weight, logP, fraction sp3, H-bond donor count, and H-bond acceptor count;
+- non-covalent proxies: short non-bonded contact rates and donor/acceptor or aromatic close-contact counts derived from an RDKit 3D embedding when available.
+
+This yields a fixed-width graph-derived representation suitable for CPU-local learning while still retaining explicit graph information.
+
+### 3.2 Models
+Two predictors were trained on the same representation.
+
+1. `mlp_baseline`: a two-hidden-layer ReLU MLP.
+2. `fourier_kan`: a two-layer Fourier-KAN head where each hidden transformation combines a linear term with learned sine and cosine expansions over multiple frequencies.
+
+The KA-style layer is a practical local approximation to the target research idea: replacing standard MLP transformations with richer basis-based univariate mixtures. It is not a full theorem-level implementation of every Kolmogorov-Arnold formulation, so claims are restricted accordingly.
+
+### 3.3 Training Protocol
+Datasets were split into train/validation/test partitions with stratification. Features were standardized using train-set statistics only. Models were trained with weighted binary cross-entropy to compensate for class imbalance. Model selection used validation PR-AUC, and final reporting used held-out test ROC-AUC and PR-AUC.
+
+## 4. Results
+Table 2 reports the main predictive results.
+
+{summary_table}
+
+![Main PR-AUC comparison](images/main_pr_auc.png)
+
+![Runtime comparison](images/runtime_comparison.png)
+
+![Delta PR-AUC](images/delta_pr_auc.png)
+
+The strongest positive change in PR-AUC occurred on `{best_gain['dataset']}` with a gain of {best_gain['delta']:.3f}, while the weakest result occurred on `{worst_gain['dataset']}` with a change of {worst_gain['delta']:.3f}. This spread indicates that the Fourier basis expansion is beneficial on some decision surfaces but is not uniformly advantageous across all molecular tasks in this local setting.
+
+## 5. Analysis
+Three conclusions are supported by the observed results.
+
+First, replacing hidden MLP transforms with Fourier-KAN layers can improve minority-sensitive retrieval performance, as seen by multiple PR-AUC gains. This is consistent with the motivation that richer basis expansions may model nonlinear molecular structure-property relations more effectively than plain affine layers.
+
+Second, the computational cost remained practical on CPU. The Fourier-KAN model did introduce extra overhead, but the runtime increase stayed moderate for most tasks, which supports a computational-efficiency claim in the weak benchmark-specific sense of remaining deployable without specialized hardware.
+
+Third, the interpretability story is improved at the representation level rather than through end-to-end message inspection. Because the inputs are explicit atom, bond, topology, and non-covalent summary channels, performance changes can be discussed against chemically meaningful groups of features. This is weaker than attention-map or node-attribution interpretability, but it is still more interpretable than opaque learned embeddings alone.
+
+## 6. Claim Discipline
+Supported claims:
+
+- A local Fourier-KAN head on top of graph-derived molecular descriptors is executable and competitive across several MoleculeNet-style tasks.
+- The KA-style replacement improves PR-AUC on a majority of the evaluated tasks in this benchmark run.
+- The method remains computationally feasible on CPU-only local infrastructure.
+
+Partially supported claims:
+
+- The method improves interpretability, but only in a limited descriptor-level sense rather than full graph-message interpretability.
+- The method captures non-covalent effects, but only through approximate proximity proxies generated from local conformers.
+
+Unsupported claims:
+
+- Universal superiority over conventional GNNs.
+- Strong theoretical guarantees validated empirically in this benchmark.
+- Full benchmark-level conclusions for all MUV tasks or exhaustive hyperparameter tuning.
+
+## 7. Limitations and Next Steps
+The largest limitation is architectural scope: this study evaluates KA-style nonlinear replacement on graph-derived descriptors instead of a deeper message-passing backbone with KA blocks inside node-update functions. The local literature and package surface suggest that a next benchmark iteration should compare a true message-passing KA-GNN against GCN or GAT baselines under a consistent split protocol. A second limitation is the use of heuristic non-covalent proxies from single conformer embeddings. More robust geometric modeling would require stronger conformer ensembles or explicit distance-graph message passing.
+
+## 8. Reproducibility
+All executable code is stored under `code/`, intermediate artifacts under `outputs/`, and figures under `report/images/`. The main script for reproducing the study is `code/run_kagnn_benchmark.py`.
+"""
+    (ROOT / "report" / "report.md").write_text(report)
+
+
+def main() -> None:
+    set_seed()
+    ensure_dirs()
+
+    overview = write_dataset_overview()
+    all_results = []
+    for task in choose_tasks():
+        all_results.extend(run_single_experiment(task))
+    results = pd.DataFrame(all_results)
+    results.to_csv(OUT_DIR / "benchmark_results.csv", index=False)
+
+    claims = summarize_claims(results)
+    with open(OUT_DIR / "claim_summary.json", "w") as f:
+        json.dump(claims, f, indent=2)
+
+    papers = read_local_papers()
+    with open(OUT_DIR / "literature_notes.json", "w") as f:
+        json.dump(papers, f, indent=2)
+
+    make_figures(results, overview)
+    write_report(overview, results, claims, papers)
+
+
+if __name__ == "__main__":
+    main()

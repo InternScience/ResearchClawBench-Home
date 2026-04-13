@@ -1,0 +1,1803 @@
+Article
+
+doi:10.1038/nature26160
+
+Unconventional superconductivity in
+magic-angle graphene superlattices
+
+Yuan Cao1, Valla Fatemi1, Shiang Fang2, Kenji Watanabe3, Takashi Taniguchi3, Efthimios Kaxiras2,4 & Pablo Jarillo-Herrero1
+
+The behaviour of strongly correlated materials, and in particular unconventional superconductors, has been studied
+extensively for decades, but is still not well understood. This lack of theoretical understanding has motivated the
+development of experimental techniques for studying such behaviour, such as using ultracold atom lattices to simulate
+quantum materials. Here we report the realization of intrinsic unconventional superconductivity—which cannot be
+explained by weak electron–phonon interactions—in a two-dimensional superlattice created by stacking two sheets of
+graphene that are twisted relative to each other by a small angle. For twist angles of about 1.1°—the first ‘magic’ angle—
+the electronic band structure of this ‘twisted bilayer graphene’ exhibits flat bands near zero Fermi energy, resulting in
+correlated insulating states at half-filling. Upon electrostatic doping of the material away from these correlated insulating
+states, we observe tunable zero-resistance states with a critical temperature of up to 1.7 kelvin. The temperature–carrierdensity phase diagram of twisted bilayer graphene is similar to that of copper oxides (or cuprates), and includes domeshaped regions that correspond to superconductivity. Moreover, quantum oscillations in the longitudinal resistance
+of the material indicate the presence of small Fermi surfaces near the correlated insulating states, in analogy with
+underdoped cuprates. The relatively high superconducting critical temperature of twisted bilayer graphene, given such
+a small Fermi surface (which corresponds to a carrier density of about 1011 per square centimetre), puts it among the
+superconductors with the strongest pairing strength between electrons. Twisted bilayer graphene is a precisely tunable,
+purely carbon-based, two-dimensional superconductor. It is therefore an ideal material for investigations of strongly
+correlated phenomena, which could lead to insights into the physics of high-critical-temperature superconductors and
+quantum spin liquids.
+Strong interactions among particles lead to fascinating states of matter,
+such as quark–gluon plasmas, various forms of nuclear matter within
+neutron stars, strange metals and fractional quantum Hall states1–3.
+An intriguing class of strongly correlated materials is the unconventional superconductors, which includes materials with a range of
+superconducting critical temperatures Tc, from heavy-fermion and
+organic superconductors with relatively low Tc (a few to a few tens
+of kelvin) to iron pnictides and cuprates that can have Tc > 100 K
+(refs 4–8). Despite extensive experimental efforts to characterize these
+materials, unconventional superconductors are challenging to study
+theoretically because the models that are typically used to describe
+them cannot be solved exactly, motivating the development of alternative approaches for investigating and modelling strongly correlated
+systems. One approach is to simulate quantum materials with ultracold atoms trapped in optical lattices, although technical advances are
+necessary to realize d-wave superfluidity with ultracold atoms at lower
+temperatures than are currently possible9,10.
+Here we report the observation of unconventional superconductivity
+in a two-dimensional superlattice made from graphene—specifically,
+‘magic angle’ twisted bilayer graphene (TBG). Created by the moiré
+pattern between the two graphene sheets, the magic-angle TBG superlattice has a periodicity of about 13 nm, between that of crystalline
+superconductors (a few ångström) and optical lattices (about a micrometre). One of the key advantages of this system is the in situ electrical
+tunability of the charge carrier density in a flat band with a bandwidth
+of the order of 10 meV. This tunability enables us to study the phase
+diagram of unconventional superconductivity in unprecedented resolution, without relying on multiple devices that are possibly hampered by
+
+different disorder realizations. The superconductivity that we observe
+has several features similar to that of cuprates, including dome structures in the phase diagram and quantum oscillations that point to small
+Fermi surfaces near a correlated insulator state. Furthermore, it occurs
+for record-low carrier densities of the order of 1011 cm−2, orders of
+magnitude lower than the carrier densities of typical two-dimensional
+superconductors. The relatively high Tc = 1.7 K for such small densities
+puts magic-angle TBG among the superconductors with the strongest
+coupling, in the same league as cuprates and the recently identified
+FeSe thin layers11. Our results establish magic-angle TBG as a purely
+carbon-based two-dimensional superconductor and, more importantly,
+as a relatively simple and highly tunable material that enables thorough
+investigation of strongly correlated physics.
+Monolayer graphene has a linear energy dispersion at its charge neutrality point. When two aligned graphene sheets are stacked, the
+hybridization of their bands due to interlayer hopping results in fundamental modifications to the low-energy band structure depending
+on the stacking order (AA or AB). If an additional twist angle is present
+between layers, a hexagonal moiré pattern consisting of alternating
+AA- and AB-stacked regions emerges and acts as a superlattice modulation12–16. The superlattice potential folds the band structure into the
+mini Brillouin zone. Hybridization between adjacent Dirac cones in
+the mini Brillouin zone has an effect on the Fermi velocity at the charge
+neutrality point, reducing it from the typical value12–18 of 106 m s−1.
+At low twist angles, each electronic band in the mini Brillouin zone has
+a four-fold degeneracy of spins and valleys, the latter inherited from
+the original electronic structure of graphene12,17,19. For convenience,
+we define the superlattice density ns = 4/A to be the density that
+
+1
+Department of Physics, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA. 2Department of Physics, Harvard University, Cambridge, Massachusetts 02138,
+USA. 3National Institute for Materials Science, Namiki 1-1, Tsukuba, Ibaraki 305-0044, Japan. 4John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge,
+Massachusetts 02138, USA.
+
+5 a p r i l 2 0 1 8 | VO L 5 5 6 | NAT U R E | 4 3
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+RESEARCH Article
+corresponds to full-filling of each set of degenerate superlattice bands,
+where A ≈ 3 a 2/(2θ 2 ) is the area of the moiré unit cell, a = 0.246 nm
+is the lattice constant of the underlying graphene lattice and θ is the
+twist angle. In Supplementary Video, we present an animation of the
+way in which the band structure in the mini Brillouin zone of TBG
+evolves as the twist angle varies from θ = 3° to θ = 0.8°, calculated using
+a continuum model for one valley12.
+Special angles, namely the ‘magic angles’, exist, at which the Fermi
+velocity drops to zero; the first magic angle is predicted12 to be
+θ (1)
+magic ≈ 1.1°. Near this twist angle, the energy bands near charge neutrality, which are separated from other bands by single-particle gaps,
+become remarkably flat. The typical energy scale for the entire bandwidth is about 5–10 meV (Fig. 1c)12,18. Experimentally confirmed consequences of the flatness of these bands are high effective mass in the
+flat bands (as observed in quantum oscillations) and correlated insulating states at half-filling of these bands, corresponding to n = ±ns/2,
+where n = CVg/e is the carrier density defined by the gate voltage Vg (C
+is the gate capacitance per unit area and e is the electron charge)18.
+These insulating states are a result of the competition between Coulomb
+b
+
+a
+~ Vbias
+
+I
+
++ V
+– g
+
+Superconductivity in magic-angle TBG
+
+In Fig. 1a we show the typical device structure of fully encapsulated
+TBG devices. The two sheets of graphene originate from the same
+exfoliated flake, which permits a relative twist angle that is controlled
+precisely to within about 0.1°–0.2° (refs 17, 20, 21). The encapsulated
+TBG stack is etched into a ‘Hall’ bar and contacted from the edges22.
+Electrical contacts are made from non-superconducting materials
+(thermally evaporated Au on a Cr sticking layer) to avoid any potential
+
+10
+
+Resistance, Rxx (kΩ)
+
+Vxx
+
+energy and quantum kinetic energy, which gives rise to a correlated
+insulator at half-filling that has characteristics consistent with Mott-like
+insulator behaviour18. The doping density that is required to reach the
+Mott-like insulating states is ns/2 ≈ (1.2–1.6) × 1012 cm−2, depending
+on the exact twist angle. Here we report transport data that clearly
+demonstrate that superconductivity is achieved as the material is doped
+slightly away from the Mott-like insulating state in magic-angle TBG.
+We observed superconductivity across multiple devices with slightly
+different twist angles, with the highest critical temperature that we
+achieved being 1.7 K.
+
+G1
+G2
+
+M1, T = 1.16°
+M2, T = 1.05°
+
+5
+
+5 µm
+0
+
+0
+
+2
+
+4
+
+6
+
+8
+
+10
+
+Temperature, T (K)
+
+c
+
+d
+
+e
+
+10
+
+40
+
+0.07 K
+0.31 K
+0.69 K
+0.99 K
+1.26 K
+2.08 K
+4.03 K
+
+500
+
+T = 1.05°
+0
+
+0
+
+EF
+
+–20
+
+Voltage, Vxx (µV)
+
+0
+
+Vxx ∝ I 3
+10–4
+
+–5
+
+Vxx (V)
+
+Energy, E (meV)
+
+Freestanding
+graphene
+(×1,000)
+
+5
+
+20
+
+–500
+
+10–6
+
+–40
+0.2
+
+–10
+–0.2
+
+kx (nm–1)
+
+0.2
+
+0
+
+–0.2
+
+ky (nm–1)
+
+0
+
+100
+
+DOS (eV–1 nm–2)
+
+Figure 1 | Two-dimensional superconductivity in a graphene
+superlattice. a, Schematic of a typical twisted bilayer graphene
+(TBG) device and the four-probe (Vxx, Vg, I and the bias voltage Vbias)
+measurement scheme. The stack consists of hexagonal boron nitride
+on the top and bottom, with two graphene bilayers (G1, G2) twisted
+relative to each other in between. The electron density is tuned by a
+metal gate beneath the bottom hexagonal boron nitride layer. b, Fourprobe resistance Rxx = Vxx/I (Vxx and I are defined in a) measured in two
+devices M1 and M2, which have twist angles of θ = 1.16° and θ = 1.05°,
+respectively. The inset shows an optical image of device M1, including the
+main ‘Hall’ bar (dark brown), electrical contact (gold), back gate (light
+green) and SiO2/Si substrate (dark grey). c, The band energy E of TBG
+at θ = 1.05° in the first mini Brillouin zone of the superlattice. The
+bands near charge neutrality (E = 0) have energies of less than 15 meV.
+
+10–5
+
+–100
+
+10–8 I (A)
+0
+
+10–7
+100
+
+Current, I (nA)
+
+d, The DOS corresponding to the bands shown in c, for energies of
+−10 to +10 meV (blue; θ = 1.05°). For comparison, the purple lines show
+the total DOS of two sheets of freestanding graphene without interlayer
+interaction (multiplied by 103). The red dashed line shows the Fermi
+energy EF at half-filling of the lower branch (E < 0) of the flat bands,
+which corresponds to a density of n = −ns/2, where ns is the superlattice
+density (defined in the main text). The superconductivity is observed
+near this half-filled state. e, Current–voltage (Vxx–I) curves for device
+M2 measured at n = −1.44 × 1012 cm−2 and various temperatures. At
+the lowest temperature of 70 mK, the curves indicate a critical current
+of approximately 50 nA. The inset shows the same data on a logarithmic
+scale, which is typically used to extract the Berezinskii–Kosterlitz–
+Thouless transition temperature (TBKT = 1.0 K in this case), by fitting to a
+Vxx ∝ I3 power law (blue dashed line).
+
+4 4 | NAT U R E | VO L 5 5 6 | 5 a p r i l 2 0 1 8
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+Article RESEARCH
+proximity effects. The carrier density n is tuned by applying a voltage
+to a Pd/Au bottom gate electrode. In Fig. 1b we show the longitudinal resistance Rxx as a function of temperature for two magic-angle
+devices, M1 and M2, with twist angles of 1.16° and 1.05°, respectively.
+At the lowest temperature studied of 70 mK, both devices show zero
+resistance, and therefore a superconducting state. The critical temperature Tc as calculated using a resistance of 50% of the ‘normal’-state
+(non-superconducting) value is approximately 1.7 K and 0.5 K for the
+two devices that we studied in detail. In Fig. 1c, d we show a singleparticle band structure and density of states (DOS) near the charge
+neutrality point calculated for θ = 1.05°. The superconductivity in both
+devices occurs when the Fermi energy EF is tuned away from charge
+neutrality (EF = 0) to be near half-filling of the lower flat band (EF < 0,
+as indicated in Fig. 1d). The DOS within the energy scale of the flat
+bands is more than three orders of magnitudes higher than that of
+two uncoupled graphene sheets, owing to the reduction of the Fermi
+velocity and the increase in localization that occurs near the magic
+angle. However, the energy at which the DOS peaks does not generally coincide with the density that is required to half-fill the bands.
+In addition, we did not observe any appreciable superconductivity
+when the Fermi energy was tuned into the flat conduction bands
+(EF > 0). In Fig. 1e we show the current–voltage (I–Vxx, where Vxx
+is the four-probe voltage, as defined in Fig. 1a) curves of device M2
+at different temperatures. We observe typical behaviour for a twodimensional superconductor. The inset shows a tentative fit of the
+same data to a Vxx ∝ I3 power law, as is predicted in a Berezinskii–
+Kosterlitz–Thouless transition in two-dimensional superconductors23.
+This analysis yields a Berezinskii–Kosterlitz–Thouless transition temperature of TBKT ≈ 1.0 K at n = −1.44 × 1012 cm−2, where, as before,
+a
+Conductance, G2 (mS)
+
+0.3
+
+–4
+
+–3
+
+n is the carrier density induced by the gate and measured from the
+charge neutrality point (which is different from the actual carrier
+density involved in transport, as we show below).
+In contrast to other known two-dimensional and layered superconductors, the superconductivity in magic-angle TBG requires the
+application of only a small gate voltage, corresponding to a minimal
+density of only 1.2 × 1012 cm−2 from charge neutrality, an order of magnitude lower than the value of 1.5 × 1013 cm−2 in LaAlO3/SrTiO3 interfaces and of 7 × 1013 cm−2 in electrochemically doped MoS2, among
+others24. Therefore, gate-tunable superconductivity can be realized
+in a high-mobility system without the need for ionic-liquid gating or
+chemical doping. In Fig. 2a we show the two-probe conductance of
+device M1 versus n at zero magnetic field and at a 0.4-T perpendicular magnetic field. Near the charge neutrality point (n = 0), a typical
+V-shaped conductance is observed, which originates from the renormalized Dirac cones of the TBG band structure. The insulating states
+centred at approximately ±3.2 × 1012 cm−2 (which corresponds to ns
+for θ = 1.16°) are due to single-particle bandgaps in the band structure
+that correspond to filling ±4 electrons in each superlattice unit cell. In
+between, there are conductance minima at ±2 and ±3 electrons per
+unit cell. These minima are associated with many-body gaps induced by
+the competition between the Coulomb energy and the reduced kinetic
+energy due to confinement of the electronic state in the superlattice
+near the magic angle; these gaps give rise to insulating behaviour near
+the integer fillings18. One possible mechanism for the gaps is similar
+to the gap mechanism in Mott insulators, but with an extra two-fold
+degeneracy (for the case of ±2 electrons) from the valleys in the origi­
+nal graphene Brillouin zone17,18,25,26. In the vicinity of −2 electrons
+per unit cell (n ≈ −1.3 × 1012 cm−2 to n ≈ −1.9 × 1012 cm−2) and at a
+n/(ns/4)
+
+–2
+
++3
+B⊥ = 0 T
+B⊥ = 0.4 T
+
++4
+
+2
+
+3
+
+0.2
+
+0.1
+
+0
+
+–3
+
+–2
+
+b
+
+Rxx (kΩ)
+0.6
+
+–1
+0
+1
+Carrier density, n (1012 cm–2)
+
+8
+
+4
+
+0
+
+c
+3
+
+M1, T = 1.16°
+Mott
+
+0.5
+
+Metal
+
+Rxx (kΩ)
+
+0.4
+Superconductor
+
+0.3
+0.2
+Superconductor
+
+10
+
+5
+
+0
+
+M2, T = 1.05°
+Mott
+
+Metal
+Metal
+
+Temperature, T (K)
+
+Temperature, T (K)
+
++2
+
+Metal
+
+2
+
+1
+Superconductor
+
+0.1
+–1.8
+–1.6
+–1.4
+Carrier density, n (1012 cm–2)
+
+–1.2
+
+Figure 2 | Gate-tunable superconductivity in magic-angle TBG.
+a, Two-probe conductance G2 = I/Vbias of device M1 (θ = 1.16°) measured
+in zero magnetic field (red) and at a perpendicular field of B⊥ = 0.4 T
+(blue). The curves exhibit the typical V-shaped conductance near charge
+neutrality (n = 0, vertical purple dotted line) and insulating states at the
+superlattice bandgaps n = ±ns, which correspond to filling ±4 electrons
+in each moiré unit cell (blue and red bars). They also exhibit reduced
+conductance at intermediate integer fillings of the superlattice owing to
+Coulomb interactions (other coloured bars). Near a filling of −2 electrons
+per unit cell, there is considerable conductance enhancement at zero field
+that is suppressed in B⊥ = 0.4 T. This enhancement signals the onset of
+
+–1.8
+
+–1.6 –1.4
+–1.2
+–1.0
+Carrier density, n (1012 cm–2)
+
+–0.8
+
+superconductivity. Measurements were conducted at 70 mK; Vbias = 10 μV.
+b, Four-probe resistance Rxx, measured at densities corresponding to
+the region bounded by pink dashed lines in a, versus temperature. Two
+superconducting domes are observed next to the half-filling state, which
+is labelled ‘Mott’ and centred around −ns/2 = −1.58 × 1012 cm−2. The
+remaining regions in the diagram are labelled as ‘metal’ owing to the
+metallic temperature dependence. The highest critical temperature
+observed in device M1 is Tc = 0.5 K (at 50% of the normal-state resistance).
+c, As in b, but for device M2, showing two asymmetric and overlapping
+domes. The highest critical temperature in this device is Tc = 1.7 K.
+5 a p r i l 2 0 1 8 | VO L 5 5 6 | NAT U R E | 4 5
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+RESEARCH Article
+Rxx (kΩ)
+
+20
+
+10
+
+b
+100
+
+M1, T = 1.16°
+
+50
+
+0
+
+Rxx (kΩ)
+
+–1.8
+–1.6
+–1.4
+Carrier density, n (1012 cm–2)
+0 mT
+10 mT
+20 mT
+40 mT
+60 mT
+80 mT
+100 mT
+120 mT
+140 mT
+
+10
+5
+0
+–100
+
+0
+
+–1.2
+
+0
+
+–1.8
+
+–1.0
+–1.6
+–1.4
+–1.2
+Carrier density, n (1012 cm–2)
+
+0
+Current, I (nA)
+
+–0.8
+
+e
+1.0
+
+Resistance, Rxx (kΩ)
+
+15
+
+2
+
+M2, T = 1.05°
+
+d
+20
+
+4
+
+50
+
+c
+
+dVxx /dI (kΩ)
+
+0
+
+Magnetic field, B⊥ (mT)
+
+Magnetic field, B⊥ (mT)
+
+100
+
+100
+
+2
+
+0 mT
+14 mT
+28 mT
+49 mT
+63 mT
+84 mT
+105 mT
+140 mT
+
+1
+
+0
+
+0
+
+0.4
+0.8
+Temperature, T (K)
+
+Magnetic field, B (T)
+
+a
+
+Bc||
+
+0.5
+
+Bc⊥
+0
+
+0
+
+0.5
+Temperature, T (K)
+
+Figure 3 | Magnetic-field response of the superconducting states
+in magic-angle TBG. a, b, Four-probe resistance as a function of
+density n and perpendicular magnetic field B⊥ in devices M1 (a) and
+M2 (b). As well as the dome structures around half-filling (similar to
+those in Fig. 2b, c), there are oscillatory features near the boundary
+between the superconducting phase and the correlated insulator phase.
+These oscillations are indicative of phase-coherent transport through
+inhomogeneous regions in the device (Methods, Extended Data Fig. 1).
+
+c, Differential resistance dVxx/dI versus d.c. bias current I for different B⊥,
+measured for device M2. d, Rxx–T curves for different B⊥, measured for
+device M1. e, Perpendicular (B c⊥) and parallel (B c‖) critical magnetic field
+versus temperature for device M1 (triangles; at 50% of the normal-state
+resistance). The fitting curves for B c⊥ correspond to Ginzburg–Landau
+theory for a two-dimensional superconductor. B c‖ is fitted to
+Bc‖(0)(1−T/Tc)1/2 , where B c‖(0) is the parallel critical field at zero
+temperature. Measurements in a–c were conducted at 70 mK.
+
+temperature of 70 mK, the conductance is substantially higher at zero
+magnetic field than it is in a perpendicular magnetic field of B⊥ = 0.4 T,
+consistent with mean-field suppression of a superconducting state by
+the magnetic field. Here, the maximum conductance is limited only
+by the contact resistance (Fig. 2a), which is absent in the four-probe
+measurements shown in the other figures.
+In Fig. 2b, c we show the four-probe resistance of devices M1 and
+M2, respectively, as a function of density n and temperature T. Both
+devices show two pronounced superconducting domes on each side of
+the half-filling correlated insulating state. These features are similar to
+those associated with high-temperature superconductivity in cuprate
+materials. At the base temperature, the resistance inside the domes is
+lower than our measurement noise floor, which is more than two and
+three orders of magnitude lower than the normal-state resistance for
+devices M1 and M2, respectively. The I–V curves inside the domes
+display critical current behaviour (Fig. 1e), while being ohmic in the
+metallic phases outside the domes. Upon cooling while n is fixed at
+the middle of the half-filling state, the correlated insulating phase is
+exhibited at intermediate temperatures (from 1 K to 4 K); at lower temperatures, both devices exhibit signs of superconductivity at the lowest
+temperatures. Device M1 becomes weakly superconducting, whereas
+device M2 becomes fully superconducting. This behaviour may be
+explained by a coexistence of superconducting and insulating phases
+due to sample inhomogeneity.
+
+resistance of devices M1 and M2 as a function of density and B⊥. Both
+devices exhibit a maximum critical field of approximately 70 mT. The
+critical field varies strongly with doping density, showing two similar
+domes on each side of the half-filling state. Near the Mott-like insulating state (n ≈ −1.47 × 1012 cm−2 to n ≈ −1.67 × 1012 cm−2 for M1;
+n ≈ −1.25 × 1012 cm−2 to n ≈ −1.35 × 1012 cm−2 for M2), periodic
+oscillations of the resistance and critical current as a function of B⊥
+appear (see Methods and Extended Data Fig. 1 for detailed analysis).
+The oscillations seem to originate from phase-coherent transport
+through arrays of Josephson junctions, similarly to superconducting
+quantum interference device (SQUID)-like superconductor rings
+around one or more insulating islands. These junction regions could
+be due to slight density inhomogeneities in the devices, which would
+cause a few islands to be doped into the insulating phase while other
+parts of the device remain superconducting. Apart from these oscillatory behaviours near the boundary of the half-filling insulating state,
+the critical current and zero resistivity inside the domes are gradually
+suppressed by B⊥ (Fig. 3c, d).
+In Fig. 3e we show the critical magnetic field versus temperature for
+device M1, under perpendicular and parallel field configurations. The
+temperature dependence of the perpendicular critical field Bc⊥ is well
+described by Ginzburg–Landau theory: Bc⊥ = [Φ0/(2πξ 2GL)](1 − T /Tc ) ,
+where Φ0 = h/(2e) is the superconducting flux quantum, h is the Planck
+constant, and ξGL is the Ginzburg–Landau superconducting coherence
+length, determined from the fit to be ξGL ≈ 52 nm at T = 0. On the
+other hand, the in-plane critical field dependence is not well explained
+by the Ginzburg–Landau theory for thin-film superconductors, owing
+to the atomic thickness of TBG (0.6 nm); at this thickness, the theory
+predicts an in-plane critical field of Bc ≥ 36 T as the temperature
+
+Magnetic-field response
+
+The application of a perpendicular magnetic field B⊥ to a twodimensional superconductor creates vortices that introduce dissipation
+and gradually suppress superconductivity23. In Fig. 3a, b we show the
+4 6 | NAT U R E | VO L 5 5 6 | 5 a p r i l 2 0 1 8
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+Article RESEARCH
+n (×1012 cm–2)
+–1.45
+–1.35
+–1.40
+–1.30
+
+–1.55
+–1.50
+
+b
+
+c
+
+10
+
+10
+
+20
+
+5
+
+5
+
+10
+
+Resistance, Rxx (kΩ)
+
+a
+
+0
+
+M1, B⊥ = 0 T
+
+0
+
+2
+4
+6
+8
+Temperature, T (K)
+
+d
+
+101
+
+0
+
+10
+
+M1, B⊥ = 0.4 T
+
+0
+
+2
+4
+6
+8
+Temperature, T (K)
+
+e
+
+101
+
+B⊥ = 0 T
+
+M1, B⊥ = 8 T
+
+0
+
+2
+4
+6
+8
+Temperature, T (K)
+
+f
+
+101
+
+Metal
+
+100
+
+Band insulator
+
+Mott
+
+Band insulator
+
+100
+
+10
+
+B⊥ = 8 T
+
+Metal
+
+Mott
+
+100
+
+0
+
+10
+
+B⊥ = 0.4 T
+
+Metal
+Band insulator
+
+Temperature, T (K)
+
+–1.25
+–1.20
+
+Superconductor
+
+10–1
+–1
+
+–0.5
+Relative filling, n/ns
+
+0
+
+10–1
+–1
+
+–0.5
+Relative filling, n/ns
+
+0
+
+10–1
+–1
+
+–0.5
+Relative filling, n/ns
+
+0
+
+Figure 4 | Temperature–density phase diagrams of magic-angle TBG
+at different magnetic fields. a–c, Rxx–T curves for device M1 at different
+densities (see legend), measured in B⊥ = 0 T (a), B⊥ = 0.4 T (b) and
+B⊥ = 8 T (c). The magnetic field induces a superconductor–insulator–
+
+metal transition at the lowest temperatures. d–f, Schematic phase diagrams
+for the magnetic fields in a–c. The horizontal axis shows the relative filling
+n/ns. Short coloured lines at the top and bottom of the plots denote the
+densities plotted in a–c.
+
+approaches zero23. Instead, we interpret the dependence of Tc on the
+in-plane magnetic field B as a result of paramagnetic pair-breaking
+owing to the Zeeman energy. The zero-temperature in-plane critical
+field is extrapolated to be around 1.1 T, which is higher than but close
+to the value in the Pauli limit of Bp ≈ 1.85 T K−1 × Tc ≈ 0.93 T, estimated
+on the basis of the Bardeen–Cooper–Schrieffer (BCS) gap formula
+Δ ≈ 1.76kBTc, where kB is the Boltzmann constant.
+We note that the superconductor–metal transition in magic-angle
+TBG is not sharp, so extracting both Bc and Tc has some uncertainty.
+Qualitatively, the dependence of the in-plane critical field on temperature is Bc ∝ (1 − T/Tc)1/2 near Tc (ref. 27). The results described above
+are consistent with the existence of two-dimensional superconductivity
+confined in an atomically thin space. As we show in the following,
+the coherence length ξ is comparable to the inter-particle spacing and
+might suggest that the system is driven close to a crossover between
+a BCS-like state and a Bose–Einstein condensate (the BCS–BEC
+crossover).
+
+is an intermediate region in which insulating temperature dependence
+is observed from about 1 K to 4 K (above Tc); we identify this region
+as corresponding to the Mott-like insulating phase at half-filling. In a
+small magnetic field B⊥ = 0.4 T, which is above the critical magnetic
+field, the system remains an insulator down to zero temperature near
+half-filling and a metal away from half-filling. Finally, in a strong magnetic field B⊥ = 8 T, the correlated insulator phase is fully suppressed
+by the Zeeman effect and the system is metallic everywhere between
+n = −ns and the charge neutrality point. Our data highlight the rich
+phase space of metal–insulator–superconducting physics in magicangle TBG28. A schematic of the evolution of the phase diagram as the
+magnetic field increases is shown in Fig. 4d–f.
+
+Phase diagram of magic-angle TBG
+
+The phase diagram of magic-angle TBG consists of correlated insulator phases and superconducting phases, which can be realized via
+continuous tuning of temperature, magnetic field and carrier density.
+Similarly to the superconducting domes discussed above, the correlated
+Mott-like insulator phase at half-filling also assumes a dome shape,
+with a transition to a metallic phase at about 4–6 K and centred around
+half-filling density. It has been shown18 that the Mott-like insulator
+phase crosses over to a metallic phase upon application of a strong magnetic field of around 6 T either perpendicular or parallel to the devices.
+A plausible explanation for this crossover is that the many-body charge
+gap is closed by the Zeeman energy.
+In Fig. 4a–c we show the resistance versus temperature data measured in device M1 at zero magnetic field, B⊥ = 0.4 T and B⊥ = 8 T,
+respectively. At zero field, we observe the transition from a metal at high
+temperatures (above 5 K) to a superconductor. Close to half-filling there
+
+Quantum oscillations in the normal state
+
+We studied quantum oscillations in the entire accessible density range,
+including in the vicinity of the correlated insulating state at which
+superconductivity occurs. In Fig. 5a, b we show the Shubnikov–de
+Haas oscillations in longitudinal resistance Rxx as a function of carrier
+density for the hole-doped region (EF < 0) for device M2. The Landau
+levels in a TBG superlattice typically follow n/ns = Nφ/φ0 + s, where
+φ = B⊥A is the magnetic flux that penetrates each unit cell, φ0 = h/e
+is the (non-superconducting) flux quantum, N = ±1, ±2, ±3, … is
+the Landau-level index, s = 0 denotes the Landau fan that emanates
+from the Dirac point, and s = ±1 denote the Landau fans that result
+from electron-like or hole-like quasiparticles near the band edges of
+the single-particle superlattice bands in the mini Brillouin zone, which
+emanate from ±ns. The Landau levels also exhibit a four-fold degeneracy due to spins and valleys, and so the filling-factor sequence is
+±4, ±8, ±12, …
+Unexpectedly, in addition to these expected Landau fans, we also
+observe a Landau fan that emanates from the correlated insulating
+state at −ns/2. This Landau fan has N = −1/2, −1, −3/2, −2, … (that
+is, filling factors of −2, −4, −6, −8, …) and s = −1/2. The superconducting dome is distinguishable in Fig. 5a directly beneath this Landau
+5 a p r i l 2 0 1 8 | VO L 5 5 6 | NAT U R E | 4 7
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+RESEARCH Article
+C
+
+10
+8
+6
+4
+
+2
+
+2
+0
+
+Superconductor
+–12
+–10
+–8
+
+–2 –24
+–20
+–16
+
+n ≈ –ns/2
+
+––12
+
+e
+
+–8
+
+–4
+–3
+
+–2
+
+–8
+
+–2
+Carrier density, n (1012 cm–2)
+
+m*/me
+
+–6
+
+–4
+–1
+
+B
+
+0
+–0.8
+1
+
+C
+
+0
+
+d
+
+–4
+n = –ns
+
+0
+0.8
+
+A
+B
+C
+
+1
+
+0.2 0.4 0.6 0.8 1.0
+1/B (T–1)
+
+0
+
+––24
+––20
+––16
+
+–6
+
+–4 –12
+
+c
+A
+
+5
+
+fSdH (T)
+
+Magnetic field, B⊥ (T)
+
+4
+
+b
+
+Normalized amplitude
+
+B
+
+ΔRxx/Rxx(B = 1 T)
+
+A
+
+6
+
+Resistance, Rxx (kΩ)
+
+a
+
+0
+
+0
+
+5
+
+10
+T (K)
+
+15
+
+20
+
+20
+15
+
+M=2
+M=4
+
+10
+
+M=4
+
+5
+0
+0.4
+0.2
+0
+
+CNP
+
+–4
+
+–2
+
+0
+
+Carrier density, n (1012 cm–2)
+
+Figure 5 | Quantum oscillations in magic-angle TBG at high fields.
+a, Resistance Rxx versus density n (hole-doped side with respect to charge
+neutrality) and B⊥ in device M2. The lower half of the diagram shows the
+Landau-level structure deduced from the oscillations. The blue Landau fan,
+which originates from the charge neutrality point (CNP), and the purple
+Landau fan, which originates from the superlattice density (n = –ns, yellow
+shaded region), illustrate the filling-factor sequences −4, −8, −12, …
+expected from the single-particle band structure with four-fold spin and
+valley degeneracies. The additional red fan, which originates from −ns/2
+(red shaded region), instead has a filling-factor sequence of −2, −4, −6, …
+
+that is not expected from the single-particle band structure. b, Temperaturedependent quantum oscillation traces ΔRxx/Rxx(B = 1 T) at the carrier
+densities labelled A, B and C in a. From black to orange, the temperatures
+are 0.7 K, 1.2 K, 2.0 K, 3.0 K, 4.2 K, 6 K, 10 K, 15 K, 20 K and 30 K. c, Lifshitz–
+Kosevich fit (solid lines) of the normalized amplitudes of the oscillations
+shown in b (data points). d, e, Shubnikov–de Haas oscillation frequencies
+fSdH and effective masses m*/me as a function of carrier density n. The
+error bars correspond to the 90% confidence level in fitting to the Lifshitz–
+Kosevich formula (see Methods for definition). M = φ0Δn/ΔfSdH is the
+Fermi surface degeneracy.
+
+fan, being very close to zero field and next to the correlated insulating
+region. Unlike commonly observed broken-symmetry states that split
+from a single degenerate Landau level into multiple levels, the halved
+filling factors appear to be intrinsic to the fan, holding down to the
+lowest magnetic field at which oscillations are still visible. Fractional
+values for s have been reported in graphene superlattices as a result
+of Hofstadter’s butterfly, which typically occurs in much stronger
+magnetic fields (greater than 10 T) but becomes obvious only at the
+intersection of Landau levels with different integer s (refs 29–31).
+Therefore, the physics of Hofstadter’s butterfly cannot explain the additional stand-alone fan observed here, which appears at fields as low
+as 1 T. Furthermore, the halving of the filling factors and s is unlikely
+to be explained in a non-interacting picture of unit-cell doubling due
+to strain or to the formation of a charge density wave, in which case
+either spin or valley degeneracy must be broken. We observed the same
+Landau level sequence in two other magic-angle TBG devices, so it
+is robust against small variations in twist angle and consistent across
+samples (Methods, Extended Data Fig. 2).
+To study the non-trivial origin of the Landau fan near half-filling further, we measured the effective mass from the temperature-dependent
+quantum oscillation amplitude according to the Lifshitz–Kosevich
+formula (Methods). In Fig. 5b, c we show the oscillations and oscillation amplitudes at three different densities (indicated by arrows in
+Fig. 5a). In Fig. 5d, e we show the oscillation frequency fSdH and the
+effective mass extracted by fitting the oscillation amplitudes to the
+Lifshitz–Kosevich formula. The dependence of fSdH on carrier density
+n provides another perspective on the oscillations because the value
+of M = φ0Δn/ΔfSdH extracted from the slope Δn/ΔfSdH provides the
+number of degenerate Fermi pockets M directly. The experimental data
+clearly fit to M = 4 near the charge neutrality point and for densities
+beyond the superlattice gap, whereas M = 2 for the quantum oscillations that start near the correlated insulator state and right above the
+
+superconducting dome. The effective mass of the anomalous oscillations is about (0.2–0.4)me, where me is the bare electron mass. This
+mass is much larger than the mass near charge neutrality (about 0.1me)
+and beyond the superlattice gap (about 0.05me) at the same Δn, where
+Δn is density relative to the value of n at which fSdH = 0 in Fig. 5d.
+The quantum oscillations above the superconducting dome clearly
+indicate the existence of small Fermi surfaces that originate from
+the correlated insulating state, which have areas proportional to
+n′ = |n| − ns/2, rather than of a large Fermi surface with an area that
+corresponds to the density |n| itself. The Hall measurements shown
+in Extended Data Fig. 3 also support this conclusion. Notably, similar
+small Fermi pockets that do not correspond to any pockets in the
+single-particle Fermi surface have been observed in underdoped
+cuprates, although their origin is debated32–34. Among the possibilities,
+the small Fermi surface that we observe could be the Fermi surface
+of quasiparticles that are created by doping a Mott insulator6,35. On
+the other hand, the halved degeneracy might be related to spin–
+charge separation, as predicted in a doped Mott insulator35. More
+experimental and theoretical work is needed to clarify the origin of
+the quantum oscillations.
+
+Discussion
+
+The appearance of both superconductor and correlated insulator
+phases in the flat bands of magic-angle TBG at such a small carrier
+density cannot be explained by weak-coupling BCS theory. The
+carrier density that is responsible for Tc = 1.7 K is extremely small
+according to the quantum oscillation measurements, merely
+n′ = 1.5 × 1011 cm−2 at optimal doping. To place this in the context
+of other superconductors, in Fig. 6 we plot Tc against TF on a logari­
+thmic scale for various materials, where TF is the Fermi temperature.
+TF is proportional to the two-dimensional carrier density n2D, which
+the quantum oscillations data show to be equivalent to n′ for the
+
+4 8 | NAT U R E | VO L 5 5 6 | 5 a p r i l 2 0 1 8
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+Article RESEARCH
+Normalized carrier density (cm–2)
+1011
+
+1012
+
+1013
+
+102
+
+1014
+
+1015
+BSCCO
+
+FeSe(1L)/STO
+
+YBCO
+c =
+
+T
+
+F
+
+BaFe2(As1–xPx)2
+A3C60
+
+T
+
+BE
+C
+
+6Li (×108)
+
+c =
+
+T
+
+BEDT
+
+T
+
+40K (×108)
+
+Conventional superconductors
+
+UPd2Al3
+URu2Si2
+UBe13
+SrTiO3 EDLT
+
+BEC in atoms
+Two-dimensional materials
+
+FeSe(1L)/STO
+Magic-angle TBG
+
+Al
+Iron pnictides
+
+Zn
+
+High-Tc cuprates
+
+Organic superconductors
+A3C60
+
+NbSe2
+
+NaxCoO2
+
+CaC6
+
+Magic-angle TBG
+
+LAO/STO
+
+Heavy-fermion superconductors
+10–2
+
+101
+
+Iron pnictides
+
+CaC6
+Sn
+
+TMTSF
+
+UPt3
+
+100
+
+Cuprates
+
+10–1
+
+Magic-angle TBG
+
+10–1
+
+Heavy-fermion superconductors
+
+U6Fe
+
+4He
+
+100
+
+Nb
+
+NbSe2
+
+NaxCoO2
+
+Tc/TF
+
+Critical temperature, Tc (K)
+
+101
+
+LSCO
+ZrNCl EDLT
+MoS2 EDLT
+
+KxFe1–xSe2
+
+5
+
+102
+103
+Fermi temperature, TF (K)
+
+4
+
+3
+
+n′ (1011 cm–2)
+104
+
+2
+
+1
+
+105
+
+Figure 6 | Superconductivity in the strong-coupling limit. Logarithmic
+plot of critical temperature Tc versus Fermi temperature TF for various
+superconductors36. The top axis is the corresponding two-dimensional
+2 /3
+for threecarrier density n2D for two-dimensional materials or n3D
+dimensional materials, normalized by the effective mass m*/me and the
+Fermi surface degeneracy g (and a constant factor of 1/1.52 for the threedimensional density). Two-dimensional superconductors are represented
+by filled circles; other symbols represent three-dimensional (but
+potentially two-dimensional-like) superconductors. For comparison, we
+also plot TBEC = 1.04ħn3D/m* for a three-dimensional bosonic gas (dashed
+line). Bose–Einstein condensation temperatures in 4He, paired fermionic
+40
+K and paired fermionic 6Li are shown as open pink squares36,44 (Tc and TF
+have both been multiplied by 108 for 40K and 6Li). The point for magic-
+
+angle TBG (large red filled circle) is calculated from the two-dimensional
+density and the effective mass obtained from quantum oscillations
+(Fig. 5d, e) at the optimal doping (n2D = 1.5 × 1011 cm−2 and m* = 0.2me),
+using g = 1 to account for the halved degeneracy. Data for other materials
+are from refs 36,45–54. The blue shaded region is the approximate region
+in which almost all known unconventional superconductors lie. The inset
+shows the variation in Tc/TF as a function of doping n′ for magic-angle
+TBG (red filled circles). The horizontal dashed lines are the approximate
+Tc/TF values of the corresponding material. YBCO, YBa2Cu3O7−δ; LSCO,
+La2−xSrxCuO4; BSCCO, Bi2Sr2Ca2Cu3Oy; LAO, LaAlO3; STO, SrTiO3;
+1L, single layer; EDLT, electric double-layer transistor; BEDT,
+bisethylenedithiol; TMTSF, tetramethyltetraselenafulvalene.
+
+superconducting dome region of magic-angle TBG36. Most unconventional superconductors have Tc/TF values of about 0.01–0.05,
+whereas all of the conventional BCS superconductors lie on the
+far right in the plot, with much smaller ratios. Magic-angle TBG is
+located above the trend line on which most cuprates, heavy-fermion
+and organic superconductors lie, with a Tc/TF value approaching that
+of the recently observed exotic FeSe monolayer on SrTiO3 (Fig. 6
+inset). This finding strongly suggests that the superconductivity in
+magic-angle TBG originates from electron correlations instead of
+weak electron–phonon coupling. One other frequently compared
+temperature is the Bose–Einstein condensation temperature for a
+three-dimensional boson gas TBEC, assuming that all particles in the
+occupied Fermi sea pair up and condense. Cuprates and other unconventional superconductors typically have Tc/TBEC ratios of roughly
+0.1–0.2. The Tc/TBEC ratio for magic-angle TBG is estimated to be
+up to 0.37, indicating very strong electron–electron interactions and
+possibly close proximity to the BCS–BEC crossover. This behaviour
+is in agreement with the fact that the coherence length in magic-angle
+TBG (ξ ≈ 50 nm at optimal doping) is of the same order of magnitude
+as the average inter-particle distance, (n′)−1/2 ≈ 26 nm.
+The realization of unconventional superconductivity in a graphene
+superlattice establishes magic-angle TBG as a relatively simple, clean,
+accessible and, most importantly, highly tunable material, which could
+be used to study correlated electron physics. The interactions in magicangle TBG could possibly be further fine-tuned by the twist angle and
+by the application of perpendicular electric fields by means of differential gating18,37. Moreover, Tc could possibly be enhanced further by
+applying pressure to the graphene superlattice to increase the interlayer
+
+hybridization or by coupling different magic-angle TBG structures to
+induce Josephson coupling in the vertical direction38. Similar magicangle superlattices and flat-band electronic structures could also be
+realized with other two-dimensional materials or lattices to investigate
+strongly correlated systems with different properties.
+Finally, despite several apparent similarities between magic-angle
+TBG and cuprates, there are key differences between the realizations
+of them. First, the valley degree of freedom in the underlying graphene
+lattices leads to an extra degeneracy, resulting in two carriers per
+superlattice unit cell at half-filling in the parent correlated insulator
+state. Higher quality devices and fine tuning may lead to superconductivity near the regions corresponding to one and three carriers per
+unit cell. Second, in magic-angle TBG the underlying superlattice is
+triangular, which should have a fundamental influence on the type of
+spin-singlet ground state it can host, owing to magnetic frustration.
+The lattice symmetry should also impose limitations on the possible
+superconducting pairing symmetry in magic-angle TBG; further
+experiments, for example, involving tunnelling and Josephson heterojunctions, are required to confirm this39. Various pairing symmetries,
+including (d + id′)-wave, (px + ipy)-wave and spin-triplet s-wave
+symmetries, have been predicted theoretically in the hypothetical
+superconductivity of monolayer or few-layer graphene40–42. If the
+mechanism for superconductivity in magic-angle TBG is indeed
+related to the correlated half-filling insulating state, as is the case in
+d x 2−y 2 -wave cuprates, then the pairing symmetry might be chiral
+(d + id′)-wave, to satisfy the underlying triangular symmetry of the
+superlattice. We anticipate that further experimental and theoretical
+work on magic-angle TBG and related magic-angle superlattices will
+5 a p r i l 2 0 1 8 | VO L 5 5 6 | NAT U R E | 4 9
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+RESEARCH Article
+provide insights into the key factors that govern unconventional superconductivity, and bring us closer to realizing tunable quantum spin
+liquids43.
+Online Content Methods, along with any additional Extended Data display items and
+Source Data, are available in the online version of the paper; references unique to
+these sections appear only in the online paper.
+received 5 February; accepted 26 February 2018.
+Published online 5 March 2018.
+1.
+
+Rajagopal, K. & Wilczek, F. in At the Frontier of Particle Physics (ed. Shifman, M.)
+Vol. 3, 2061–2151 (World Scientific, 2001).
+2. v. Löhneysen, H., Rosch, A., Vojta, M. & Wölfle, P. Fermi-liquid instabilities at
+magnetic quantum phase transitions. Rev. Mod. Phys. 79, 1015–1075 (2007).
+3. Stormer, H. L. Nobel Lecture: The fractional quantum Hall effect. Rev. Mod.
+Phys. 71, 875–889 (1999).
+4. Pfleiderer, C. Superconducting phases of f-electron compounds. Rev. Mod.
+Phys. 81, 1551–1624 (2009).
+5. Ishiguro, T., Yamaji, K. & Saito, G. Organic superconductors 2nd edn (Springer,
+1998).
+6. Lee, P. A., Nagaosa, N. & Wen, X.-G. Doping a Mott insulator: physics of
+high-temperature superconductivity. Rev. Mod. Phys. 78, 17–85 (2006).
+7. Keimer, B., Kivelson, S. A., Norman, M. R., Uchida, S. & Zaanen, J. From
+quantum matter to high-temperature superconductivity in copper oxides.
+Nature 518, 179–186 (2015).
+8. Stewart, G. R. Superconductivity in iron compounds. Rev. Mod. Phys. 83,
+1589–1652 (2011).
+9. Bloch, I., Dalibard, J. & Zwerger, W. Many-body physics with ultracold gases.
+Rev. Mod. Phys. 80, 885–964 (2008).
+10. Mazurenko, A. et al. A cold-atom Fermi–Hubbard antiferromagnet. Nature 545,
+462–466 (2017).
+11. Wang, Z., Liu, C., Liu, Y. & Wang, J. High-temperature superconductivity in
+one-unit-cell FeSe films. J. Phys. Condens. Matter 29, 153001 (2017).
+12. Bistritzer, R. & MacDonald, A. H. Moiré bands in twisted double-layer graphene.
+Proc. Natl Acad. Sci. USA 108, 12233–12237 (2011).
+13. Suárez Morell, E., Correa, J. D., Vargas, P., Pacheco, M. & Barticevic, Z. Flat
+bands in slightly twisted bilayer graphene: tight-binding calculations. Phys. Rev.
+B 82, 121407 (2010).
+14. Moon, P. & Koshino, M. Energy spectrum and quantum Hall effect in twisted
+bilayer graphene. Phys. Rev. B 85, 195458 (2012).
+15. Fang, S. & Kaxiras, E. Electronic structure theory of weakly interacting bilayers.
+Phys. Rev. B 93, 235153 (2016).
+16. Trambly de Laissardiére, G., Mayou, D. & Magaud, L. Numerical studies of
+confined states in rotated bilayers of graphene. Phys. Rev. B 86, 125413
+(2012).
+17. Cao, Y. et al. Superlattice-induced insulating states and valley-protected orbits
+in twisted bilayer graphene. Phys. Rev. Lett. 117, 116804 (2016).
+18. Cao, Y. et al. Correlated insulator behaviour at half-filling in magic-angle
+graphene superlattices. Nature 556, https://doi.org/10.1038/nature26154
+(2018).
+19. Lopes dos Santos, J. M. B., Peres, N. M. R. & Castro Neto, A. H. Continuum
+model of the twisted graphene bilayer. Phys. Rev. B 86, 155449 (2012).
+20. Kim, K. et al. van der Waals heterostructures with high accuracy rotational
+alignment. Nano Lett. 16, 1989–1995 (2016).
+21. Kim, K. et al. Tunable moiré bands and strong correlations in small-twist-angle
+bilayer graphene. Proc. Natl Acad. Sci. USA 114, 3364–3369 (2017).
+22. Wang, L. et al. One-dimensional electrical contact to a two-dimensional
+material. Science 342, 614–617 (2013).
+23. Tinkham, M. Introduction to Superconductivity (Courier Corporation, 1996).
+24. Saito, Y., Nojima, T. & Iwasa, Y. Highly crystalline 2D superconductors. Nat. Rev.
+Mater. 2, 16094 (2016).
+25. Mott, N. F. Metal-Insulator Transitions (Taylor and Francis, 1990).
+26. Imada, M., Fujimori, A. & Tokura, Y. Metal-insulator transitions. Rev. Mod. Phys.
+70, 1039–1263 (1998).
+27. Klemm, R. A. & Luther, A. Theory of the upper critical field in layered
+superconductors. Phys. Rev. B 12, 877–891 (1975).
+28. Goldman, A. M. in BCS: 50 Years (eds Cooper, L. N. & Feldman, D.) 255–275
+(World Scientific, 2011).
+29. Hunt, B. et al. Massive Dirac fermions and Hofstadter butterfly in a van der
+Waals heterostructure. Science 340, 1427–1430 (2013).
+30. Ponomarenko, L. A. et al. Cloning of Dirac fermions in graphene superlattices.
+Nature 497, 594–597 (2013).
+31. Dean, C. R. et al. Hofstadter’s butterfly and the fractal quantum Hall effect in
+moiré superlattices. Nature 497, 598–602 (2013).
+32. Yelland, E. A. et al. Quantum oscillations in the underdoped cuprate
+YBa2Cu4O8. Phys. Rev. Lett. 100, 047003 (2008).
+33. Bangura, A. F. et al. Small Fermi surface pockets in underdoped high
+temperature superconductors: observation of Shubnikov–de Haas oscillations
+in YBa2Cu4O8. Phys. Rev. Lett. 100, 047004 (2008).
+34. Jaudet, C. et al. de Haas–van Alphen oscillations in the underdoped hightemperature superconductor YBa2Cu3O6.5. Phys. Rev. Lett. 100, 187005
+(2008).
+
+35. Kaul, R. K., Kim, Y. B., Sachdev, S. & Senthil, T. Algebraic charge liquids.
+Nat. Phys. 4, 28–31 (2008).
+36. Uemura, Y. J. Condensation, excitation, pairing, and superfluid density in
+high-Tc superconductors: the magnetic resonance mode as a roton
+analogue and a possible spin-mediated pairing. J. Phys. Condens. Matter 16,
+S4515–S4540 (2004).
+37. Gonzalez-Arraga, L. A., Lado, J. L., Guinea, F. & San-Jose, P. Electrically
+controllable magnetism in twisted bilayer graphene. Phys. Rev. Lett. 119,
+107201 (2017).
+38. Yankowitz, M. et al. Dynamic band-structure tuning of graphene moiré
+superlattices with pressure. Nature (in the press); preprint at https://arxiv.org/
+abs/1707.09054 (2017).
+39. Tsuei, C. C. & Kirtley, J. R. Pairing symmetry in cuprate superconductors.
+Rev. Mod. Phys. 72, 969 (2000).
+40. Nandkishore, R., Levitov, L. S. & Chubukov, A. V. Chiral superconductivity from
+repulsive interactions in doped graphene. Nat. Phys. 8, 158–163 (2012).
+41. Uchoa, B. & Castro Neto, A. H. Superconducting states of pure and doped
+graphene. Phys. Rev. Lett. 98, 146801 (2007).
+42. Hosseini, M. V. & Zareyan, M. Unconventional superconducting states of
+interlayer pairing in bilayer and trilayer graphene. Phys. Rev. B 86, 214503
+(2012).
+43. Balents, L. Spin liquids in frustrated magnets. Nature 464, 199–208 (2010).
+44. Ku, M. J. H., Sommer, A. T., Cheuk, L. W. & Zwierlein, M. W. Revealing the
+superfluid lambda transition in the universal thermodynamics of a unitary
+fermi gas. Science 335, 563–567 (2012).
+45. Qian, T. et al. Absence of a Holelike Fermi surface for the iron-based
+K0.8Fe1.7Se2 superconductor revealed by angle-resolved photoemission
+spectroscopy. Phys. Rev. Lett. 106, 187001 (2011).
+46. Hashimoto, T. et al. Sharp peak of the zero-temperature penetration
+depth at optimal composition in BaFe2(As1−xPx)2. Science 336, 1554–1557
+(2012).
+47. Saito, Y., Kasahara, Y., Ye, J., Iwasa, Y. & Nojima, T. Metallic ground state in an
+ion-gated two-dimensional superconductor. Science 350, 409–413 (2015).
+48. Ye, J. T. et al. Superconducting dome in a gate-tuned band insulator. Science
+338, 1193–1196 (2012).
+49. Peelaers, H. & Van de Walle, C. G. Effects of strain on band structure and
+effective masses in MoS2. Phys. Rev. B 86, 241401(R) (2012).
+50. Caviglia, A. D. et al. Electric field control of the LaAlO3/SrTiO3 interface ground
+state. Nature 456, 624–627 (2008).
+51. McCollam, A. et al. Quantum oscillations and subband properties of the
+two-dimensional electron gas at the LaAlO3/SrTiO3 interface. APL Mater. 2,
+022102 (2014).
+52. Ueno, K. et al. Electric-field-induced superconductivity in an insulator.
+Nat. Mater. 7, 855–858 (2008).
+53. Weller, T. E., Ellerby, M., Saxena, S. S., Smith, R. P. & Skipper, N. T.
+Superconductivity in the intercalated graphite compounds C6Yb and C6Ca.
+Nat. Phys. 1, 39–41 (2005).
+54. Valla, T. et al. Anisotropic electron-phonon coupling and dynamical nesting on
+the graphene sheets in superconducting CaC6 using angle-resolved
+photoemission spectroscopy. Phys. Rev. Lett. 102, 107007 (2009).
+Supplementary Information is available in the online version of the paper.
+Acknowledgements We acknowledge discussions with R. Ashoori, S. Carr,
+R. Comin, L. Fu, P. A. Lee, L. Levitov, K. Rajagopal, S. Todadri, A. Vishwanath
+and M. Zwierlein. This work was primarily supported by the Gordon and Betty
+Moore Foundation’s EPiQS Initiative through grant GBMF4541 and the STC
+Center for Integrated Quantum Materials (NSF grant number DMR-1231319)
+for device fabrication, transport measurements and data analysis (Y.C., P.J.-H.),
+and theoretical calculations (S.F.). Data analysis by V.F. was supported by AFOSR
+grant number FA9550-16-1-0382. K.W. and T.T. acknowledge support from the
+Elemental Strategy Initiative conducted by MEXT, Japan and JSPS KAKENHI
+grant numbers JP15K21722 and JP25106006. This work made use of the
+Materials Research Science and Engineering Center Shared Experimental
+Facilities, supported by the NSF (DMR-0819762), and of Harvard’s Center for
+Nanoscale Systems, supported by the NSF (ECS-0335765). E.K. acknowledges
+additional support by ARO MURI award W911NF-14-0247.
+Author Contributions Y.C. fabricated samples and performed transport
+measurements. Y.C., V.F. and P.J.-H. performed data analysis and discussed
+the results. P.J.-H. supervised the project. S.F. and E.K. provided numerical
+calculations. K.W. and T.T. provided hexagonal boron nitride samples. Y.C., V.F.
+and P.J.-H. co-wrote the manuscript with input from all co-authors.
+Author Information Reprints and permissions information is available at
+www.nature.com/reprints. The authors declare no competing interests.
+Readers are welcome to comment on the online version of the paper.
+Publisher’s note: Springer Nature remains neutral with regard to jurisdictional
+claims in published maps and institutional affiliations. Correspondence and
+requests for materials should be addressed to P.J.-H. (pjarillo@mit.edu) or
+Y.C. (caoyuan@mit.edu).
+Reviewer Information Nature thanks E. Mele, J. Robinson and the other
+anonymous reviewer(s) for their contribution to the peer review of this work.
+
+5 0 | NAT U R E | VO L 5 5 6 | 5 a p r i l 2 0 1 8
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+Article RESEARCH
+Methods
+
+Sample preparation. The devices were fabricated using a modified dry-transfer
+technique17,18,20. Monolayer graphene and hexagonal boron nitride (about
+10–30 nm thick) were exfoliated on SiO2/Si chips and high-quality flakes were
+picked using optical microscopy and atomic force microscopy. We used a
+poly(bisphenol A carbonate) (PC)/polydimethylsiloxane (PDMS) stack on a glass
+slide mounted on a custom-made micro-positioning stage to pick up a hexagonal
+boron nitride flake at 90 °C, and then used the van der Waals force between hexa­
+gonal boron nitride and graphene to tear a graphene flake at room temperature.
+The separated graphene pieces were rotated manually by a twist angle of about
+1.2°–1.3° and stacked together again, which resulted in a controlled TBG
+structure. The stack was encapsulated with another hexagonal boron nitride flake
+on the bottom and released onto a metal gate at 160 °C. We did not perform any
+heat annealing after this step because we found that TBG tended to relax to Bernalstacked bilayer graphene at high temperatures. The final device geometry was
+defined by using electron-beam lithography and reactive ion etching. Electrical
+connections were made to the TBG by Cr/Au edge-contacted leads22.
+Measurements. Transport measurements were performed in a dilution refrigerator
+with a base temperature of 70 mK, except for the temperature-dependent quantum
+oscillations, which were measured in a 3He fridge.
+We used standard low-frequency lock-in techniques with an excitation frequency of about 5–10 Hz and an excitation current of about 0.4–5 nA. The current
+flowing through the sample was amplified by a current pre-amplifier and measured
+by the lock-in amplifier. The four-probe voltage was amplified by a voltage preamplifier at ×1,000 gain and measured by another lock-in amplifier.
+The twist angle of the devices was determined from the transport measurements
+at low temperatures18. In brief, a rough estimate of the twist angle is provided by the
+carrier density of the superlattice gaps at ±ns, which present as strongly insulating
+states. To refine this estimate, the Landau levels that appear at high magnetic fields
+were fitted to the Wannier diagram, which gives the twist angle with an uncertainty
+of about 0.01°–0.02°.
+Extracting the quantum oscillation frequency and effective mass. The effective
+mass in device M2 was extracted using the standard Lifshitz–Kosevich formula,
+which relates the temperature-dependence of resistance change ΔRxx(T) to the
+cyclotron mass m* (at a given magnetic field B⊥):
+
+ΔRxx (T ) ∝
+
+χ
+,
+sinh(χ)
+
+χ=
+
+⁎
+
+2π 2k BTm
+ħeB⊥
+
+For each gate voltage (carrier density), we measured the Rxx–B⊥ curves at different
+temperatures, normalized them by their low-field values and subtracted a common
+polynomial background in B⊥. Examples of the curves are shown in Fig. 5b. The
+oscillation frequencies shown in Fig. 5d were extracted from these curves plotted
+versus 1/B⊥. From the temperature-dependent amplitude of the most prominent
+peak, we extracted m* using the above equation (Fig. 5e). The error bars in Fig. 5d,
+e represent 90% confidence intervals of the fit.
+Commensuration and twist angle. Mathematically, in a twisted moiré system,
+the lattice is strictly periodic only when the twist angle satisfies a specific relation
+such that lattice registration order is perfectly recovered in a finite distance. These
+special cases are termed ‘commensurate’ structures. One important parameter in
+commensurate TBG structures is r, which can be intuitively understood as the
+number of ‘apparent’ moiré pattern wavelengths that it takes to recover the lattice
+periodicity fully19,55. The simplest commensurate structures with r = 1 are called
+‘minimal’ structures. These structures have exactly one moiré spot per unit cell. In
+TBG, as well as the minimal structures, which occur only at discrete angles, there
+are other commensurate structures that are arbitrarily close to any given angle θ
+with large r. However, at small twist angles, the evolution of the band structure of
+TBG can be viewed as semi-continuous; that is, an infinitesimal change in twist
+angle does not have a substantial effect on the band structure even though the
+lattice could be in a different family of commensurate structures (different r)19.
+In other words, the TBG system can be well approximated by a continuum
+model, as originally proposed in ref. 12, and the physics in minimal structures is
+representative of all nearby commensurate structures12. In our experiments, we
+do not expect the lattice to be in perfect commensuration, owing to disorder and
+intrinsic randomness due to the fabrication process. However, we think that the
+continuum model can faithfully represent the realistic TBG system in which any
+commensuration effect has been smoothed out.
+We deduced the size of the moiré unit cell and the twist angle on the basis of the
+density of the superlattice gaps ±ns (±4 electrons per moiré unit cell), and then
+cross-checked the twist angle with the Landau levels observed at high magnetic
+fields. ±ns are the only multiples of ns that correspond to Fermi energies located
+within single-particle band gaps and therefore exhibit strong insulating behaviour.
+
+For twist angles above about 0.9°–1°, the band structure at energies higher than
+these gaps is strongly overlapping and no single particle gaps at ±2ns, ±3ns, …
+appear12–14,19,56. The experimentally measured values for the single-particle
+insulating gaps that we observe are in the approximately 30–60-meV range17,18.
+However, below about 0.9°–1°, the superlattice gaps at ±ns close and there is no
+single-particle gap at any energy in the system21,56. In this regime, there are Diraclike bands that cross at ±2ns which might be responsible for the resistance peaks
+observed in devices with very small twist angles, although possible interaction
+effects may enhance these peaks21. The states observed in very-low-twist devices
+are clearly different from the strong insulating gaps observed here and previously18.
+There is a marked change in the band structure at about 0.9°–1° (depending on
+the parameters of the model being used), which leads to a transition from singleparticle gaps at ±ns to resistive states at ±2ns. This crossover can be observed
+clearly in Supplementary Video, in which we show an evolution of the band structure of TBG from θ = 3° to θ = 0.8°. The data in the video were calculated using
+the continuum model12
+Possible effects due to finite electrical fields. It has been shown that by applying a
+perpendicular electrical field to Bernal-stacked bilayer graphene, topological states
+can emerge on the AB/BA stacking boundaries while the bulk of the AB and BA
+regions remains gapped57–59. In small-angle TBG, a similar effect can alter the band
+structure because the AA-stacked regions in the moiré pattern are interconnected
+by the AB/BA stacking boundaries. This effect has been observed recently in scanning tunnelling experiments on ultrasmall-twist-angle samples60.
+The question then arises of how the flat bands in magic-angle TBG are affected
+by the network of topological boundaries when a residual electrical field is present.
+Theoretical work on θ = 1.5° TBG has shown that when an inter-layer potential
+difference of ΔV = 300 mV is applied the low-energy superlattice bands become
+even flatter and the electronic states become more localized37. Therefore, there is
+good reason to believe that the flat-band physics presented here holds even when
+a perpendicular electric field is present, because the electric field will probably
+render the band structure even more localized and correlated as the twist angle
+approaches the magic angle. In our experiments, we estimate that the potential
+difference between the two layers induced by our gate voltage is at most about
+50 mV, and probably much less, owing to screening. Any possible effects of the
+residual electric field should be minimal.
+Phase-coherent transport behaviour in superconducting magic-angle TBG. In
+Fig. 3a, b we observe oscillatory behaviour in the measured longitudinal resistance
+Rxx as a function of perpendicular magnetic field B⊥ when the charge density is
+close to the boundary between the half-filling insulating state and the superconducting states. The oscillations are most clearly seen for n ≈ −1.70 × 1012 cm−2
+to n ≈ −1.60 × 1012 cm−2 and n ≈ −1.50 × 1012 cm−2 to n ≈ −1.47 × 1012 cm−2
+in device M1.
+In Extended Data Fig. 1a, b we show the differential resistance dVxx/dI
+versus bias current I and perpendicular magnetic field B⊥. At zero bias current,
+the oscillations of the differential resistance with B⊥ shown correspond to line
+cuts in Fig. 3a at densities of n ≈ −1.48 × 1012 cm−2 (Extended Data Fig. 1a) and
+n ≈ −1.68 × 1012 cm−2 (Extended Data Fig. 1b). The critical current, above which
+the superconductor becomes normal, oscillates with B⊥ at the same frequency, as
+can be visualized by the bright peaks in Extended Data Fig. 1a, b. The oscillation
+period is ΔB = 22.5 mT in Extended Data Fig. 1a and about ΔB = 4 mT in Extended
+Data Fig. 1b.
+The fact that the critical current is maximum at zero B⊥ and oscillates at periodic intervals of the magnetic field suggests the existence of Josephson junction
+arrays—in the simplest case, a superconducting quantum interference device
+(SQUID)-like superconducting loop, around a normal or insulating island23. It is
+unclear whether this inhomogeneous behaviour is a result of sample disorder or
+a coexistence of two different phases (such as the superconducting phase and the
+correlated insulator phase). Owing to the two-dimensional nature of our devices,
+the detailed current distribution in the device cannot be uniquely determined at
+this moment by transport measurements; however, from the oscillation period we
+deduce the effective loop area of the SQUID approximately using S = Φ0/ΔB, where
+Φ0 = h/(2e) is the superconducting quantum flux. (Note the difference between
+φ0 = h/e for the quantum Hall effect and Φ0 = h/(2e) for superconductivity.) For
+the experimental data in Extended Data Fig. 1a, b, we obtain areas of S = 0.09 μm2
+and S = 0.5 μm2, respectively. By comparison, the total device area between the
+voltage probes is approximately 1 μm2.
+Using a simple model of a SQUID with a phenomenological decay of the oscillation amplitude at higher magnetic fields, we attempt to reproduce the observed
+oscillations qualitatively using numerical simulations. In Extended Data Fig. 1c we
+show the simulated I–B⊥ map of the differential resistance for a SQUID with area
+S = 0.09 μm2, with the same critical current Ic1 = Ic2 = 7 nA in the two branches,
+corresponding to the experimental data in Extended Data Fig. 1a. In Extended Data
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+RESEARCH Article
+Fig. 1d we show the simulation for an asymmetric SQUID with area S = 0.5 μm2
+and critical currents of Ic1 = 6 nA and Ic2 = 10 nA for the two branches, which
+account for the partial cancellation of the critical current at low fields (that is,
+the total critical current does not reach zero in an oscillation) seen in Extended
+Data Fig. 1b. These simulations provide a qualitative perspective on the oscillatory
+phenomenon; the actual supercurrent distribution is probably much more complex and will need to be established via magnetic imaging techniques. However,
+our data indicate that the superconducting behaviour that we observe is indeed
+a phase-coherent phenomenon. Although we did not fabricate SQUID devices
+deliberately using magic-angle TBG, these periodic oscillations of the critical current in B⊥ are probably a result of the Josephson effect through a superconductor
+with insulating puddles, further confirming the existence of superconductivity in
+magic-angle TBG.
+Induced superconductivity in graphene and graphene-based systems through
+proximity to another superconductor has been demonstrated, and graphene-based
+Josephson junctions continue to be explored61–63. Superconductivity in graphene
+induced by proximity to a high-Tc superconductor has been reported recently, and
+indications of induced unconventional pairing have been observed64,65.
+Supplementary quantum oscillation data and low-field Hall effect. In Extended
+Data Fig. 2 we show magneto-transport data for device M1 and another magicangle device D1. Both devices show evidence for the existence of an extra Landau
+fan with a degeneracy of M = 2 that emerges from the half-filling insulating states.
+All of the magic-angle devices that we have measured so far display quantum oscillations that correspond to emergent quasiparticles on one side of the half-filling
+states—the one that is away from the charge neutrality point (that is, n < −ns/2
+for EF < 0 and n > ns/2 for EF > 0; see ref. 18 for the EF > 0 data)—but not the other
+(n > −ns/2 or n < ns/2). The Hall measurements reported below exhibit a similar
+asymmetry around the half-filling state. This universally asymmetric behaviour,
+regardless of the twist angle, might be explained if the effective mass of the quasiparticles on the side closer to charge neutrality is much larger, and therefore
+the corresponding quasiparticle has a much lower mobility, so that the quantum
+oscillations cannot be observed and their contribution to the Hall effect becomes
+negligible. Further theoretical work could potentially shed more light on the true
+nature of the many-body energy gap and the related quasiparticles.
+We determined the Fermi surface area in the magic-angle TBG devices using the
+Shubnikov–de Hass oscillation frequency in a magnetic field (Fig. 5). We find that
+oscillations emerge from the correlated insulating state at half-filling n = −ns/2,
+and the oscillation frequency indicates small Fermi pockets associated with a
+shifted density of n′ = |n| − ns/2.
+In Extended Data Fig. 3 we show another measurement of the transport carrier
+density via the low-field Hall effect measured up to ±1 T. The measured
+Hall density, given by n H = − (1/e)(dRxy /dB⊥)−1 , provides an independent
+B⊥ = 0
+measurement of the carrier density in the system. In both devices, at a temperature
+
+of 0.4 K we observe that, whereas the Hall density follows the gate-induced density
+closely (nH = n) near charge neutrality and up to the half-filling insulating states
+at |n| = ns/2, it ‘resets’ to a much smaller value beyond |n| = ns/2. The Hall density
+beyond these points behaves as if the charge carriers that contribute to transport
+are just those added beyond |n| = ns/2, and roughly follows nH = n + ns/2 for
+n < −ns/2 and nH = n − ns/2 for n > ns/2. This behaviour is in agreement with the
+measurements of the quantum oscillation frequency shown in Fig. 5d.
+This resetting effect is quickly suppressed by raising the temperature to about
+10 K. Beyond this temperature the Hall density increases monotonically towards
+the band edge. At these higher temperatures, the Hall density in the flat bands no
+longer follows nH = n. This could possibly be explained by the thermal energy kT
+being close to the bandwidth of the flat bands, in which case the Hall coefficient
+must take into consideration the contributions from carriers that are thermally
+excited into the higher-energy, highly dispersive bands, which have opposite
+polarity. By contrast, up to 30 K, the Hall density measured at very high densities
+(|n| > ns) exhibits very linear behaviour according to |nH| = |n| − ns regardless of
+the temperature, which is consistent with the highly-dispersive, low-mass bands
+above and below the flat bands, as seen in Fig. 1c.
+Data availability. The data that support the findings of this study are available
+from the corresponding authors on reasonable request.
+55. Shallcross, S., Sharma, S., Kandelaki, E. & Pankratov, O. A. Electronic structure
+of turbostratic graphene. Phys. Rev. B 81, 165105 (2010).
+56. Nam, N. N. T. & Koshino, M. Lattice relaxation and energy band modulation in
+twisted bilayer graphene. Phys. Rev. B 96, 075311 (2017).
+57. Zhang, F., MacDonald, A. H. & Mele, E. J. Valley Chern numbers and
+boundary modes in gapped bilayer graphene. Proc. Natl Acad. Sci. USA 110,
+10546–10551 (2013).
+58. Vaezi, A., Liang, Y., Ngai, D. H., Yang, L. & Kim, E.-A. Topological edge
+states at a tilt boundary in gated multilayer graphene. Phys. Rev. X 3, 021018
+(2013).
+59. Ju, L. et al. Topological valley transport at bilayer graphene domain walls.
+Nature 520, 650–655 (2015).
+60. Huang, S. et al. Emergence of topologically protected helical states in
+minimally twisted bilayer graphene. Preprint at https://arxiv.org/
+abs/1802.02999 (2018).
+61. Heersche, H. B. et al. Bipolar supercurrent in graphene. Nature 446, 56–59
+(2007).
+62. Calado, V. E. et al. Ballistic Josephson junctions in edge-contacted graphene.
+Nat. Nanotechnol. 10, 761–764 (2015).
+63. Bretheau, L. et al. Tunneling spectroscopy of Andreev states in graphene.
+Nat. Phys. 13, 756–760 (2017).
+64. Di Bernardo, A. et al. p-wave triggered superconductivity in single-layer
+graphene on an electron-doped oxide superconductor. Nat. Commun. 8, 14024
+(2017).
+65. Perconte, D. et al. Tunable Klein-like tunnelling of high-temperature
+superconducting pairs into graphene. Nat. Phys. 14, 25–29 (2018).
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+Article RESEARCH
+
+Extended Data Figure 1 | Evidence of phase-coherent transport in
+superconducting magic-angle TBG. a, b, Differential resistance dV/dI
+versus bias current I and perpendicular field B⊥, at two different charge
+densities n, corresponding to those in Fig. 3a. Periodic oscillations are
+
+observed in the critical current (identified approximately as the position
+of the bright peaks in dV/dI). c, d, Simulations intended to reproduce
+qualitatively the behaviour observed in a and b.
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+RESEARCH Article
+
+Extended Data Figure 2 | Supplementary quantum oscillation data.
+a, b, Quantum oscillations in device M1 (a; θ = 1.16°, data shown for Rxx)
+and device D1 (b; θ = 1.08°, data shown for the two-probe conductance
+G2). The first derivative with respect to the gate-defined charge density n
+has been taken in both cases to enhance the colour contrast. Both devices
+
+exhibit a Landau fan that emerges from the half-filling state −ns/2 and
+have a Landau level sequence of −2, −4, −6, −8, …, consistent with the
+results shown in Fig. 5. By comparison, the Landau fans that start from
+charge neutrality have a sequence of −4, −8, −12, …
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+Article RESEARCH
+
+Extended Data Figure 3 | Low-field Hall effect in magic-angle TBG.
+a, b, Low-field Hall effect for devices M1 (a) and M2 (b). The Hall density
+n H = − (1/e)(dRxy/dB⊥)−B 1 = 0 is plotted as a function of the total charge
+⊥
+density induced by the gate
+(n), measured at temperatures from 0.4 K to
+
+31.8 K. Coloured vertical bars correspond to densities of −ns, −ns/2, ns/2
+and ns for the two samples. Dashed lines are the expected Hall density if
+the offset given in the corresponding formula is considered.
+
+© 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+
+

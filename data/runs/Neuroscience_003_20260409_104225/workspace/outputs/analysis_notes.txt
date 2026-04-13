@@ -1,0 +1,38 @@
+Dynamic feature subset (top 30):
+- Int_Intg_DNA_nuc
+- Int_Med_cycA_nuc
+- Int_Med_Skp2_nuc
+- AreaShape_Area_nuc
+- Int_Med_pH2AX_nuc
+- Int_Med_CDK2_nuc
+- Int_Std_PCNA_nuc
+- Int_Med_cycB1_ring
+- Int_Med_cycB1_cyto
+- Int_Med_E2F1_nuc
+- Int_Med_cycB1_cell
+- Int_Med_Cdh1_nuc
+- Int_Med_p27_nuc
+- Int_Med_cycB1_nuc
+- Int_Med_Cdt1_nuc
+- Int_Med_pCHK1_nuc
+- Int_Med_GSK3b_nuc
+- Int_Med_pp21_nuc
+- Int_Med_cycA_ring
+- Int_Med_cycA_cyto
+- Int_Med_pp53_nuc
+- Int_Med_cycE_nuc
+- Int_Med_cycD1_nuc
+- Int_Med_p16_nuc
+- Int_Med_p53_nuc
+- Int_Med_pAKT_cell
+- Int_MeanEdge_cycB1_cell
+- Int_Med_pAKT_ring
+- Int_Med_pAKT_cyto
+- Int_MeanEdge_pAKT_cell
+
+Method comparison:
+        method  n_features  pseudotime_age_spearman  knn_jaccard_vs_all  age_rmse  state_auc  phase_macro_auc  embedding_trustworthiness
+ agecorr_top30          30                 0.689326            0.047875  2.800145   0.856100         0.932257                   0.985644
+  all_features         241                 0.001496            1.000000  3.514654   0.902984         0.923665                   0.952342
+ dynamic_top30          30                 0.733355            0.034697  2.757757   0.884934         0.947207                   0.989912
+variance_top30          30                -0.025154            0.069496  3.437733   0.899317         0.927647                   0.985739

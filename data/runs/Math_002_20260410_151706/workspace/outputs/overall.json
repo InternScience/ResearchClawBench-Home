@@ -1,0 +1,20 @@
+[
+  {
+    "method":"hybrid_lns",
+    "success_rate":0.0023809524,
+    "mean_runtime":11.4125422069,
+    "mean_soc":1536.1925287356
+  },
+  {
+    "method":"pp_marl",
+    "success_rate":0.0023809524,
+    "mean_runtime":0.5401440229,
+    "mean_soc":1479.6982758621
+  },
+  {
+    "method":"pp_random",
+    "success_rate":0.0,
+    "mean_runtime":0.8429563749,
+    "mean_soc":1501.2413793103
+  }
+]

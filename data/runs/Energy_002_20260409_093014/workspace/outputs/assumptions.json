@@ -1,0 +1,78 @@
+{
+  "component_capex_usd_per_kw": {
+    "electrolyzer": 700,
+    "renewables": 900,
+    "battery": 180,
+    "h2_storage": 120,
+    "ammonia_synthesis": 250,
+    "reconversion": 350,
+    "port_export": 120,
+    "port_import": 80
+  },
+  "component_life_years": {
+    "electrolyzer": 20,
+    "renewables": 25,
+    "battery": 15,
+    "h2_storage": 25,
+    "ammonia_synthesis": 25,
+    "reconversion": 25,
+    "port_export": 30,
+    "port_import": 30
+  },
+  "component_fixed_opex_rate": {
+    "electrolyzer": 0.03,
+    "renewables": 0.025,
+    "battery": 0.02,
+    "h2_storage": 0.02,
+    "ammonia_synthesis": 0.04,
+    "reconversion": 0.04,
+    "port_export": 0.03,
+    "port_import": 0.03
+  },
+  "electrolyzer_specific_consumption_kwh_per_kg": 52,
+  "ammonia_conversion_and_reconversion_usd_per_kg_h2": 0.9,
+  "shipping_usd_per_kg_h2_base": 0.42,
+  "shipping_usd_per_kg_h2_per_1000km": 0.06,
+  "distance_costs_usd_per_kg_h2_per_km": {
+    "road": 0.0013,
+    "grid": 0.0005,
+    "ocean": 0.001,
+    "water": 0.0007
+  },
+  "scenario_definitions": {
+    "africa_high_risk": {
+      "description": "Higher African financing costs and a still-favorable European rate environment.",
+      "africa_wacc": 0.14,
+      "europe_wacc": 0.06,
+      "policy_credit": 0.0
+    },
+    "de_risked_africa": {
+      "description": "Public guarantees and concessional finance compress African WACC.",
+      "africa_wacc": 0.08,
+      "europe_wacc": 0.06,
+      "policy_credit": 0.0
+    },
+    "global_high_rate": {
+      "description": "Higher global interest-rate regime affecting both Africa and Europe.",
+      "africa_wacc": 0.18,
+      "europe_wacc": 0.1,
+      "policy_credit": 0.0
+    },
+    "de_risked_plus_policy": {
+      "description": "African de-risking plus delivered-hydrogen support at the European border.",
+      "africa_wacc": 0.08,
+      "europe_wacc": 0.06,
+      "policy_credit": 0.75
+    }
+  },
+  "europe_cases": {
+    "europe_low_rate": {
+      "wacc": 0.05,
+      "renewable_cf": 0.26
+    },
+    "europe_high_rate": {
+      "wacc": 0.09,
+      "renewable_cf": 0.26
+    }
+  }
+}

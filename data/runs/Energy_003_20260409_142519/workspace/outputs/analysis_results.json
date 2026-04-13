@@ -1,0 +1,295 @@
+{
+  "qc_summary": {
+    "energy_entities": {
+      "BN001": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN002": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN003": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN004": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN005": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN006": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN007": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN008": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN009": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "BN010": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "CN01": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      },
+      "Total": {
+        "rows": 8760,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "negative_numeric_values": 0
+      }
+    },
+    "weather": {
+      "rows": 8760,
+      "missing_values": 0,
+      "duplicate_rows": 0,
+      "negative_precipitation": 0
+    }
+  },
+  "hierarchy_check": {
+    "CN01": {
+      "Electricity [kW]": {
+        "max_abs_error": 2.2737367544323206e-13,
+        "mean_abs_error": 3.825250618544101e-14,
+        "allclose_1e-6": true
+      },
+      "Heat [mmBTU]": {
+        "max_abs_error": 5.684341886080802e-14,
+        "mean_abs_error": 1.0283402744254053e-14,
+        "allclose_1e-6": true
+      },
+      "Cooling Energy [Ton]": {
+        "max_abs_error": 1.1368683772161603e-13,
+        "mean_abs_error": 2.0495426766194304e-14,
+        "allclose_1e-6": true
+      },
+      "PV Power Generation [kW]": {
+        "max_abs_error": 2.842170943040401e-14,
+        "mean_abs_error": 2.6750798430785507e-15,
+        "allclose_1e-6": true
+      },
+      "Greenhouse Gas Emission [Ton]": {
+        "max_abs_error": 1.7053025658242404e-13,
+        "mean_abs_error": 3.121196857539801e-14,
+        "allclose_1e-6": true
+      }
+    },
+    "Total": {
+      "Electricity [kW]": {
+        "max_abs_error": 2.2737367544323206e-13,
+        "mean_abs_error": 3.825250618544101e-14,
+        "allclose_1e-6": true
+      },
+      "Heat [mmBTU]": {
+        "max_abs_error": 5.684341886080802e-14,
+        "mean_abs_error": 1.0283402744254053e-14,
+        "allclose_1e-6": true
+      },
+      "Cooling Energy [Ton]": {
+        "max_abs_error": 1.1368683772161603e-13,
+        "mean_abs_error": 2.0495426766194304e-14,
+        "allclose_1e-6": true
+      },
+      "PV Power Generation [kW]": {
+        "max_abs_error": 2.842170943040401e-14,
+        "mean_abs_error": 2.6750798430785507e-15,
+        "allclose_1e-6": true
+      },
+      "Greenhouse Gas Emission [Ton]": {
+        "max_abs_error": 1.7053025658242404e-13,
+        "mean_abs_error": 3.121196857539801e-14,
+        "allclose_1e-6": true
+      }
+    }
+  },
+  "total_annual_stats": {
+    "Electricity [kW]": {
+      "mean": 609.9616,
+      "std": 60.7689,
+      "min": 494.8552,
+      "max": 719.9463
+    },
+    "Heat [mmBTU]": {
+      "mean": 155.0304,
+      "std": 11.6824,
+      "min": 125.9266,
+      "max": 187.132
+    },
+    "Cooling Energy [Ton]": {
+      "mean": 282.4663,
+      "std": 15.4691,
+      "min": 236.426,
+      "max": 330.806
+    },
+    "PV Power Generation [kW]": {
+      "mean": 41.3323,
+      "std": 38.1022,
+      "min": 0.0,
+      "max": 86.723
+    },
+    "Greenhouse Gas Emission [Ton]": {
+      "mean": 387.317,
+      "std": 36.5903,
+      "min": 312.2403,
+      "max": 460.9348
+    }
+  },
+  "building_mean_stats": {
+    "BN001": {
+      "Electricity [kW]": 52.018,
+      "Heat [mmBTU]": 10.996,
+      "Cooling Energy [Ton]": 21.504,
+      "PV Power Generation [kW]": 3.439,
+      "Greenhouse Gas Emission [Ton]": 31.889
+    },
+    "BN002": {
+      "Electricity [kW]": 53.973,
+      "Heat [mmBTU]": 12.02,
+      "Cooling Energy [Ton]": 22.978,
+      "PV Power Generation [kW]": 2.553,
+      "Greenhouse Gas Emission [Ton]": 33.912
+    },
+    "BN003": {
+      "Electricity [kW]": 56.023,
+      "Heat [mmBTU]": 13.004,
+      "Cooling Energy [Ton]": 24.51,
+      "PV Power Generation [kW]": 2.864,
+      "Greenhouse Gas Emission [Ton]": 35.383
+    },
+    "BN004": {
+      "Electricity [kW]": 58.017,
+      "Heat [mmBTU]": 13.995,
+      "Cooling Energy [Ton]": 25.986,
+      "PV Power Generation [kW]": 3.517,
+      "Greenhouse Gas Emission [Ton]": 36.645
+    },
+    "BN005": {
+      "Electricity [kW]": 59.957,
+      "Heat [mmBTU]": 15.0,
+      "Cooling Energy [Ton]": 27.524,
+      "PV Power Generation [kW]": 4.847,
+      "Greenhouse Gas Emission [Ton]": 37.56
+    },
+    "BN006": {
+      "Electricity [kW]": 61.956,
+      "Heat [mmBTU]": 15.994,
+      "Cooling Energy [Ton]": 29.0,
+      "PV Power Generation [kW]": 4.899,
+      "Greenhouse Gas Emission [Ton]": 39.127
+    },
+    "BN007": {
+      "Electricity [kW]": 64.036,
+      "Heat [mmBTU]": 16.994,
+      "Cooling Energy [Ton]": 30.501,
+      "PV Power Generation [kW]": 4.143,
+      "Greenhouse Gas Emission [Ton]": 41.145
+    },
+    "BN008": {
+      "Electricity [kW]": 65.931,
+      "Heat [mmBTU]": 18.021,
+      "Cooling Energy [Ton]": 31.984,
+      "PV Power Generation [kW]": 4.779,
+      "Greenhouse Gas Emission [Ton]": 42.379
+    },
+    "BN009": {
+      "Electricity [kW]": 68.008,
+      "Heat [mmBTU]": 19.001,
+      "Cooling Energy [Ton]": 33.526,
+      "PV Power Generation [kW]": 5.825,
+      "Greenhouse Gas Emission [Ton]": 43.497
+    },
+    "BN010": {
+      "Electricity [kW]": 70.041,
+      "Heat [mmBTU]": 20.006,
+      "Cooling Energy [Ton]": 34.953,
+      "PV Power Generation [kW]": 4.467,
+      "Greenhouse Gas Emission [Ton]": 45.78
+    }
+  },
+  "selected_energy_weather_correlation": {
+    "Temperature [\u00b0F]": {
+      "Electricity [kW]": -0.5744,
+      "Heat [mmBTU]": 0.4613,
+      "Cooling Energy [Ton]": 0.0015,
+      "PV Power Generation [kW]": -0.5577,
+      "Greenhouse Gas Emission [Ton]": -0.1423
+    },
+    "Dew Point [\u00b0F]": {
+      "Electricity [kW]": -0.5567,
+      "Heat [mmBTU]": 0.4443,
+      "Cooling Energy [Ton]": 0.0006,
+      "PV Power Generation [kW]": -0.5397,
+      "Greenhouse Gas Emission [Ton]": -0.1387
+    },
+    "Humidity [%]": {
+      "Electricity [kW]": -0.0939,
+      "Heat [mmBTU]": 0.0837,
+      "Cooling Energy [Ton]": -0.0102,
+      "PV Power Generation [kW]": -0.1048,
+      "Greenhouse Gas Emission [Ton]": -0.0162
+    },
+    "Wind Speed [mph]": {
+      "Electricity [kW]": 0.0155,
+      "Heat [mmBTU]": -0.0024,
+      "Cooling Energy [Ton]": -0.0283,
+      "PV Power Generation [kW]": -0.0063,
+      "Greenhouse Gas Emission [Ton]": 0.0135
+    },
+    "Wind Gust [mph]": {
+      "Electricity [kW]": 0.0085,
+      "Heat [mmBTU]": 0.0106,
+      "Cooling Energy [Ton]": -0.0243,
+      "PV Power Generation [kW]": -0.0137,
+      "Greenhouse Gas Emission [Ton]": 0.0131
+    },
+    "Pressure [in]": {
+      "Electricity [kW]": -0.0157,
+      "Heat [mmBTU]": -0.1018,
+      "Cooling Energy [Ton]": -0.0209,
+      "PV Power Generation [kW]": 0.0144,
+      "Greenhouse Gas Emission [Ton]": -0.0321
+    },
+    "Precipitation [in]": {
+      "Electricity [kW]": 0.0012,
+      "Heat [mmBTU]": -0.0042,
+      "Cooling Energy [Ton]": -0.0046,
+      "PV Power Generation [kW]": 0.0066,
+      "Greenhouse Gas Emission [Ton]": -0.0033
+    }
+  }
+}

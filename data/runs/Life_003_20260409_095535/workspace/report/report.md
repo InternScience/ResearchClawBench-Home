@@ -1,0 +1,122 @@
+# Local Reproduction and Analysis of Uncalled4 Signal Alignment Benchmarks
+
+## Abstract
+This benchmark study evaluates the local evidence provided for Uncalled4 using only the supplied CSV tables and the `related_work/` corpus. The analysis targets three claims that are directly testable from the available data: computational efficiency relative to established signal-alignment tools, downstream utility for m6A site detection, and chemistry-aware signal structure in pore models. Across the provided benchmark summary, Uncalled4 is consistently faster and more storage-efficient than f5c, Nanopolish, and Tombo. On the supplied m6A benchmark, predictions derived from Uncalled4 alignments achieve markedly higher discrimination than the Nanopolish-based baseline. Pore-model analysis shows strong position-specific current effects, especially near the center of the k-mer window, supporting the importance of chemistry-aware signal models for accurate alignment and modification analysis.
+
+## 1. Background and Local Literature Context
+The local literature corpus supports the core motivation for signal-level nanopore methods. Simpson et al. showed that nanopore current distributions are sensitive to nucleotide modification status and that hidden Markov models can exploit k-mer-specific emission distributions for methylation detection. Stoiber et al. emphasized genome-guided processing of raw nanopore signal and direct statistical discovery of modified bases without requiring purely sequence-level summaries. The UNCALLED paper established the value of mapping raw electrical signal directly to large references in real time, highlighting the computational burden of conventional basecalling-first workflows. The m6Anet paper further demonstrated that downstream modification calling quality depends on preserving informative signal and event-level features during alignment and aggregation.
+
+Within this benchmark, raw FAST5/POD5 signal, BAM alignments, and trained models are not provided directly. The strongest local equivalent is therefore a disciplined secondary analysis of the supplied pore-model statistics, performance benchmark table, and downstream m6A prediction outputs.
+
+## 2. Data Overview
+The workspace provides four pore-model tables:
+
+- DNA R9.4.1 6-mer model (`4096` k-mers)
+- DNA R10.4.1 9-mer model (`262144` k-mers)
+- RNA R9.4.1 5-mer model (`1024` k-mers)
+- RNA004 9-mer model (`262144` k-mers)
+
+Each pore-model table contains `kmer`, `current_mean`, `current_std`, and `dwell_time`. The benchmark also includes:
+
+- `performance_summary.csv` with runtime and file-size results for Uncalled4, f5c, Nanopolish, and Tombo across four sequencing chemistries
+- matched m6A site labels and prediction probabilities for Uncalled4-based and Nanopolish-based pipelines
+
+Derived summary tables were written to `outputs/`, including:
+
+- `outputs/pore_model_summary.csv`
+- `outputs/pore_model_position_effects.csv`
+- `outputs/performance_with_ratios.csv`
+- `outputs/performance_ratio_summary.csv`
+- `outputs/m6a_model_metrics.csv`
+
+## 3. Methods
+### 3.1 Reproducible local analysis
+All analysis was implemented in [analyze_uncalled4.py](code/analyze_uncalled4.py). The script performs four tasks:
+
+1. Summarizes pore-model distributions and computes per-position base effects.
+2. Reconstructs performance ratios relative to Uncalled4 for runtime and output size.
+3. Merges ground-truth m6A labels with Uncalled4 and Nanopolish prediction probabilities.
+4. Computes AUPRC, AUROC, bootstrap confidence intervals, and report figures.
+
+### 3.2 Performance benchmarking
+For each chemistry, runtime and file size were normalized to the Uncalled4 value from the same chemistry:
+
+\[
+\text{runtime ratio} = \frac{\text{tool runtime}}{\text{Uncalled4 runtime}}, \quad
+\text{size ratio} = \frac{\text{tool file size}}{\text{Uncalled4 file size}}.
+\]
+
+Ratios larger than 1 indicate that the comparator is slower or larger than Uncalled4.
+
+### 3.3 m6A detection analysis
+The benchmark provides site-level labels and prediction probabilities for 5,000 candidate sites. I computed:
+
+- area under the precision-recall curve (AUPRC)
+- area under the ROC curve (AUROC)
+- bootstrap 95% confidence intervals
+- AUPRC lift over class prevalence
+
+The positive class prevalence is `0.2048`, so any useful model must substantially exceed this baseline on AUPRC.
+
+### 3.4 Pore-model structure analysis
+Because the pore-model current means appear standardized globally, the analysis focused on relative structure rather than absolute signal level. For each chemistry and each position in the k-mer window, mean current was aggregated by base identity. This tests whether center or edge positions carry different signal specificity, which is directly relevant to current-to-reference alignment.
+
+## 4. Results
+### 4.1 Uncalled4 has a strong efficiency advantage in the supplied benchmark
+Figure [performance_benchmarks.png](report/images/performance_benchmarks.png) reproduces the benchmark comparison across chemistries.
+
+Median ratios versus Uncalled4 across the available comparisons were:
+
+- f5c: `3.88x` slower and `27.22x` larger
+- Tombo: `11.49x` slower and `3.42x` larger
+- Nanopolish: `34.39x` slower and `28.71x` larger
+
+The most dramatic individual comparison in the table is DNA R9.4, where Nanopolish requires `67.05x` the runtime and `22.96x` the storage of Uncalled4. Even the relatively competitive f5c baseline remains consistently slower and far larger on disk. These results support the claim that Uncalled4 addresses practical bottlenecks in runtime and file format efficiency.
+
+### 4.2 Uncalled4-aligned inputs substantially improve downstream m6A discrimination
+Figure [m6a_detection_curves.png](report/images/m6a_detection_curves.png) compares the precision-recall and ROC behavior of Uncalled4-derived versus Nanopolish-derived predictions on the same labeled sites.
+
+Quantitative results:
+
+- Uncalled4: AUPRC `0.9929` (95% CI `0.9904` to `0.9951`), AUROC `0.9979` (95% CI `0.9970` to `0.9986`)
+- Nanopolish: AUPRC `0.7784` (95% CI `0.7549` to `0.8012`), AUROC `0.9012` (95% CI `0.8898` to `0.9120`)
+
+Relative to the positive prevalence baseline (`0.2048`), Uncalled4 achieves an AUPRC lift of `4.85x`, compared with `3.80x` for Nanopolish. This is not a marginal improvement; it indicates that the downstream signal preserved by the Uncalled4 alignment pipeline is substantially more useful for classifying modified sites in this benchmark.
+
+### 4.3 Pore models show strong position-specific base effects
+Figure [pore_model_effects.png](report/images/pore_model_effects.png) summarizes two observations.
+
+First, all four pore-model tables are globally standardized, with near-zero mean current average and unit-scale variation across k-mers. This means chemistry differences are encoded in relative local structure rather than trivial shifts of the whole distribution.
+
+Second, per-position current effects are strongest near the center of the k-mer window. For example, in the DNA R9.4.1 6-mer model, position 4 shows the largest separation between A/C and G/T grouped effects, with mean current values around `-0.90` for A and `+0.90` for C. This center-weighted effect is consistent with the literature’s description that only a subset of nucleotides in the pore constriction dominate the measured current.
+
+The 9-mer heat map for DNA R10.4.1 shows the same qualitative pattern: base identity matters most in the middle positions, while flanking positions have weaker influence. This supports the need for chemistry-aware k-mer models and helps explain why signal-level aligners can outperform sequence-only approximations on difficult tasks such as modification calling.
+
+## 5. Validation and Claim Discipline
+The local evidence supports the following claims:
+
+- Uncalled4 is substantially more efficient than the provided alternative signal-alignment tools in runtime and output size on the benchmark summary table.
+- Predictions derived from Uncalled4 alignments are markedly more accurate than Nanopolish-derived predictions on the supplied m6A benchmark.
+- The supplied pore models exhibit strong position-specific current structure consistent with signal-level mapping assumptions described in the local literature.
+
+The local evidence does not support stronger claims that require artifacts not present in the workspace, including:
+
+- direct reproduction of BAM alignments
+- end-to-end training of new pore models from raw signal
+- direct evaluation on FAST5 or POD5 streams
+- compatibility testing on unseen new sequencing chemistries beyond the supplied tables
+
+Those limitations matter. The present benchmark should be read as a local, data-constrained validation of downstream consequences and model structure, not as a full end-to-end rerun of the original software stack.
+
+## 6. Discussion
+Taken together, the benchmark data paint a coherent picture. The local literature argues that nanopore modification detection depends on preserving rich signal structure and aligning it efficiently to reference sequence. The provided performance table shows that Uncalled4 improves the practicality of this workflow by reducing both runtime and output footprint. The m6A benchmark then shows that these alignment advantages are not merely operational; they correspond to materially better downstream classification. Finally, the pore-model analysis offers a mechanistic link by showing that current is highly dependent on base identity in position-specific ways that a chemistry-aware signal aligner is designed to exploit.
+
+One notable feature of the benchmark is the near-ceiling performance of the Uncalled4-derived m6A predictions. That result should be interpreted cautiously: because only precomputed probabilities are provided, it reflects the quality of the supplied downstream pipeline rather than a fresh retraining or a robustness stress test. Even so, the margin over the Nanopolish-based baseline is large enough that the qualitative conclusion is stable.
+
+## 7. Conclusion
+Under the constraints of this local-only benchmark, Uncalled4 is strongly supported as a fast and accurate signal-alignment toolkit for nanopore downstream analysis. The supplied tables show large practical gains over established alternatives and a clear improvement in m6A site discrimination. The pore-model analysis further supports the biological and algorithmic premise that position-specific signal modeling is central to accurate nanopore alignment and modification detection.
+
+## Figures
+- Performance benchmarks: `images/performance_benchmarks.png`
+- m6A validation curves: `images/m6a_detection_curves.png`
+- Pore-model structural effects: `images/pore_model_effects.png`

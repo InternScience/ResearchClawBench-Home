@@ -1,0 +1,45 @@
+{
+  "dataset_summary": {
+    "M33 X-7": {
+      "n_samples": 1838,
+      "mass_msun_mean": 15.669945686991296,
+      "mass_msun_median": 15.6612195,
+      "mass_msun_p05": 13.2344736495,
+      "mass_msun_p95": 18.11000597,
+      "spin_mean": 0.8292878422894994,
+      "spin_median": 0.8363655172,
+      "spin_p05": 0.7249242124,
+      "spin_p95": 0.9045675957,
+      "corr_mass_spin": 0.8845469033376989
+    },
+    "IRAS 09149-6206": {
+      "n_samples": 10000,
+      "mass_msun_mean": 119836111.788549,
+      "mass_msun_median": 106263531.2,
+      "mass_msun_p05": 37270266.765,
+      "mass_msun_p95": 254103706.51,
+      "spin_mean": 0.9325970409883101,
+      "spin_median": 0.9358465941,
+      "spin_p05": 0.8897907612,
+      "spin_p95": 0.9632067853499999,
+      "corr_mass_spin": 0.009932050607660533
+    }
+  },
+  "model": {
+    "alpha0": 0.3,
+    "sigma_logalpha": 0.18,
+    "tau0_yr": 10000000.0,
+    "tau_acc_yr": 45000000.0,
+    "kappa": 9.0,
+    "notes": "Semi-phenomenological Bayesian forward model using posterior samples of BH mass and spin. Exclusion probability combines critical-spin exceedance with an instability-timescale gate, calibrated to the dominant l=m=1 superradiance band."
+  },
+  "limits": {
+    "mu_95_upper_eV": 9.512206808347639e-11,
+    "mu_99_upper_eV": 9.902441361669528e-11,
+    "self_interaction_95_upper": 9.048207836477515e-90,
+    "self_interaction_99_upper": 9.805834492130345e-90
+  },
+  "peak_mu_eV": 1e-21,
+  "mu_grid_min_eV": 1e-21,
+  "mu_grid_max_eV": 1e-10
+}

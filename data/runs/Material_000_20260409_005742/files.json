@@ -1,0 +1,215 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "run_altermagnet_search.py",
+    "path": "code/run_altermagnet_search.py",
+    "type": "file",
+    "size": 5937,
+    "mtime": 1776048818.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_data.pt",
+    "path": "data/candidate_data.pt",
+    "type": "file",
+    "size": 2451457,
+    "mtime": 1772431610.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "finetune_data.pt",
+    "path": "data/finetune_data.pt",
+    "type": "file",
+    "size": 4904635,
+    "mtime": 1772431608.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "pretrain_data.pt",
+    "path": "data/pretrain_data.pt",
+    "type": "file",
+    "size": 12321899,
+    "mtime": 1772431606.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_ranking.csv",
+    "path": "outputs/candidate_ranking.csv",
+    "type": "file",
+    "size": 24715,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "cv_metrics.csv",
+    "path": "outputs/cv_metrics.csv",
+    "type": "file",
+    "size": 169,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "dataset_overview.csv",
+    "path": "outputs/dataset_overview.csv",
+    "type": "file",
+    "size": 131,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "summary_metrics.json",
+    "path": "outputs/summary_metrics.json",
+    "type": "file",
+    "size": 1270,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "top50_candidates.csv",
+    "path": "outputs/top50_candidates.csv",
+    "type": "file",
+    "size": 1689,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "topk_metrics.csv",
+    "path": "outputs/topk_metrics.csv",
+    "type": "file",
+    "size": 97,
+    "mtime": 1776048814.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4055967,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8225125,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1212404,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2144524,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_pr_curve.png",
+    "path": "report/images/candidate_pr_curve.png",
+    "type": "file",
+    "size": 55718,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "candidate_score_distribution.png",
+    "path": "report/images/candidate_score_distribution.png",
+    "type": "file",
+    "size": 49440,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "cv_metrics.png",
+    "path": "report/images/cv_metrics.png",
+    "type": "file",
+    "size": 35326,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "label_distribution.png",
+    "path": "report/images/label_distribution.png",
+    "type": "file",
+    "size": 36974,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "pretraining_loss.png",
+    "path": "report/images/pretraining_loss.png",
+    "type": "file",
+    "size": 71044,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "topk_yield.png",
+    "path": "report/images/topk_yield.png",
+    "type": "file",
+    "size": 103123,
+    "mtime": 1776048816.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 9656,
+    "mtime": 1776048819.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6080,
+    "mtime": 1775667462.0,
+    "exported": true
+  }
+]

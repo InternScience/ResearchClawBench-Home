@@ -1,0 +1,37 @@
+{
+  "input_shape": [
+    2,
+    70,
+    181,
+    360
+  ],
+  "forecast_shape": [
+    1,
+    1,
+    70,
+    181,
+    360
+  ],
+  "lat_count": 181,
+  "lon_count": 360,
+  "level_count": 70,
+  "forecast_steps": [
+    6
+  ],
+  "time_values_input": [
+    "1697068800000000000",
+    "1697090400000000000"
+  ],
+  "time_values_forecast": [
+    "1697090400000000000"
+  ],
+  "global_mean_abs_increment": 11.209754742723616,
+  "global_mean_abs_input_tendency": 11.214095987760407,
+  "mean_persistence_rmse": 14.054465670967671,
+  "mean_linear_rmse": 24.354278574066647,
+  "mean_linear_improvement_frac": -0.7328328418608104,
+  "best_improvement_level": "T100",
+  "best_improvement_value": -0.7259059866635502,
+  "worst_improvement_level": "Z925",
+  "worst_improvement_value": -0.7405465430946824
+}

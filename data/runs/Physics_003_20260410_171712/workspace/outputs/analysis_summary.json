@@ -1,0 +1,82 @@
+{
+  "sample": "monolayer_epitaxial_graphene",
+  "pump_wavelength_um": 5.0,
+  "pump_energy_eV": 0.248,
+  "energy_axis_minmax_eV": [
+    -0.5,
+    0.5
+  ],
+  "kx_axis_minmax_Ainv": [
+    -0.3,
+    0.3
+  ],
+  "energy_step_eV": 0.005025125628140704,
+  "kx_step_Ainv": 0.004026845637583892,
+  "dirac_energy_eV": -0.042713567839196,
+  "replica_orders": [
+    -1,
+    1
+  ],
+  "replica_mean_abs_kx_Ainv": 0.040268456375838924,
+  "estimated_velocity_eVA": 5.435785705401529,
+  "expected_crossing_k_Ainv": 0.022811789632689428,
+  "polarization_fit": {
+    "offset": 0.5004768482689558,
+    "cos2_amp": 0.0013045511425632745,
+    "phase_rad": 0.003591383834399341,
+    "phase_deg": 0.2057711363225928,
+    "r2": 0.04735111865848196,
+    "modulation_depth_percent_of_mean": 0.260661636412442
+  },
+  "raw_local_replica_contrast": [
+    {
+      "angle": 0,
+      "local_mean_on": 103.6906227449893,
+      "local_mean_off": 95.68358379454362,
+      "local_diff_mean": 8.007038950445681,
+      "global_mean_on": 20.43143532583912
+    },
+    {
+      "angle": 30,
+      "local_mean_on": 101.4481425766981,
+      "local_mean_off": 95.68358379454362,
+      "local_diff_mean": 5.764558782154464,
+      "global_mean_on": 19.385037095345027
+    },
+    {
+      "angle": 60,
+      "local_mean_on": 101.44355659668513,
+      "local_mean_off": 95.68358379454362,
+      "local_diff_mean": 5.759972802141501,
+      "global_mean_on": 19.385216456503773
+    },
+    {
+      "angle": 90,
+      "local_mean_on": 103.67805176129451,
+      "local_mean_off": 95.68358379454362,
+      "local_diff_mean": 7.994467966750879,
+      "global_mean_on": 20.43125611854075
+    },
+    {
+      "angle": 120,
+      "local_mean_on": 101.44635684453819,
+      "local_mean_off": 95.68358379454362,
+      "local_diff_mean": 5.762773049994561,
+      "global_mean_on": 19.3850774770658
+    },
+    {
+      "angle": 150,
+      "local_mean_on": 101.45624143184561,
+      "local_mean_off": 95.68358379454362,
+      "local_diff_mean": 5.7726576373019975,
+      "global_mean_on": 19.38580256084405
+    },
+    {
+      "angle": 180,
+      "local_mean_on": 103.68977105936827,
+      "local_mean_off": 95.68358379454362,
+      "local_diff_mean": 8.006187264824648,
+      "global_mean_on": 20.43097418595822
+    }
+  ]
+}

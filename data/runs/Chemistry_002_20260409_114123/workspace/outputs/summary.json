@@ -1,0 +1,180 @@
+{
+  "skempi": {
+    "rows": 7085,
+    "unique_pdb": 348,
+    "ddg_summary": {
+      "count": 6798.0,
+      "mean": 1.2295,
+      "std": 2.0494,
+      "min": -12.2211,
+      "25%": 0.0348,
+      "50%": 0.772,
+      "75%": 2.1248,
+      "max": 12.2211
+    },
+    "location_counts": {
+      "COR": 2974,
+      "RIM": 1465,
+      "SUP": 1135,
+      "SUR": 967,
+      "INT": 544
+    },
+    "multi_mutant_fraction": 0.2784756527875794
+  },
+  "structure": {
+    "chains": [
+      "A",
+      "D"
+    ],
+    "n_residues": {
+      "A": 108,
+      "D": 87
+    },
+    "n_atoms": {
+      "A": 864,
+      "D": 693
+    },
+    "interface_sizes": {
+      "A": 22,
+      "D": 19
+    },
+    "n_interactions_below_5A": 55,
+    "top_contacts": [
+      {
+        "chain_1": "A",
+        "resnum_1": 83,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 39,
+        "resname_2": "ASP",
+        "min_distance": 2.4972522258758545
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 83,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 29,
+        "resname_2": "TYR",
+        "min_distance": 2.652377128601074
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 102,
+        "resname_1": "HIS",
+        "chain_2": "D",
+        "resnum_2": 39,
+        "resname_2": "ASP",
+        "min_distance": 2.805394411087036
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 60,
+        "resname_1": "GLU",
+        "chain_2": "D",
+        "resnum_2": 34,
+        "resname_2": "LEU",
+        "min_distance": 2.8358261585235596
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 59,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 35,
+        "resname_2": "ASP",
+        "min_distance": 2.8772661685943604
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 87,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 39,
+        "resname_2": "ASP",
+        "min_distance": 2.9255151748657227
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 27,
+        "resname_1": "LYS",
+        "chain_2": "D",
+        "resnum_2": 42,
+        "resname_2": "THR",
+        "min_distance": 2.948638677597046
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 59,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 76,
+        "resname_2": "GLU",
+        "min_distance": 2.9652259349823
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 102,
+        "resname_1": "HIS",
+        "chain_2": "D",
+        "resnum_2": 31,
+        "resname_2": "GLY",
+        "min_distance": 3.0346274375915527
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 83,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 43,
+        "resname_2": "GLY",
+        "min_distance": 3.065868377685547
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 84,
+        "resname_1": "ASN",
+        "chain_2": "D",
+        "resnum_2": 29,
+        "resname_2": "TYR",
+        "min_distance": 3.130227565765381
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 102,
+        "resname_1": "HIS",
+        "chain_2": "D",
+        "resnum_2": 33,
+        "resname_2": "ASN",
+        "min_distance": 3.221017360687256
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 104,
+        "resname_1": "GLN",
+        "chain_2": "D",
+        "resnum_2": 31,
+        "resname_2": "GLY",
+        "min_distance": 3.259627342224121
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 59,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 38,
+        "resname_2": "TRP",
+        "min_distance": 3.2633986473083496
+      },
+      {
+        "chain_1": "A",
+        "resnum_1": 83,
+        "resname_1": "ARG",
+        "chain_2": "D",
+        "resnum_2": 44,
+        "resname_2": "TRP",
+        "min_distance": 3.346224069595337
+      }
+    ]
+  }
+}

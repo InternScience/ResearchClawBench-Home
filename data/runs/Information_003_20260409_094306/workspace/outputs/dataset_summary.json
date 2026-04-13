@@ -1,0 +1,34 @@
+{
+  "num_flows": 148774,
+  "num_features": 40,
+  "num_nodes_est": 1090431,
+  "time_range": [
+    0,
+    86399
+  ],
+  "binary_label_counts": {
+    "0": 114716,
+    "1": 34058
+  },
+  "attack_counts": {
+    "0": 380,
+    "1": 341,
+    "2": 114716,
+    "3": 3666,
+    "4": 1473,
+    "5": 1009,
+    "6": 14688,
+    "7": 10910,
+    "8": 1427,
+    "9": 164
+  },
+  "train_size": 60000,
+  "test_size": 30000,
+  "representation_dim": 16,
+  "view_dims": {
+    "stat_low": 4,
+    "stat_mid": 4,
+    "stat_high": 4,
+    "dynamic": 4
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "model": "LLaVA",
+    "family": "Encoder-decoder bridge",
+    "understanding": 0.9253,
+    "generation": 0.0,
+    "unified": 0,
+    "decoupled_encoder": 1,
+    "ocr_risk": 0.6,
+    "stability": 0.75,
+    "joint_score": 0.47012
+  },
+  {
+    "model": "SigLIP",
+    "family": "Contrastive encoder",
+    "understanding": 0.8059999999999999,
+    "generation": 0.0,
+    "unified": 0,
+    "decoupled_encoder": 1,
+    "ocr_risk": 0.3,
+    "stability": 0.9,
+    "joint_score": 0.4224
+  },
+  {
+    "model": "LlamaGen",
+    "family": "AR generator",
+    "understanding": 0.0,
+    "generation": 0.9782,
+    "unified": 0,
+    "decoupled_encoder": 0,
+    "ocr_risk": 0.7,
+    "stability": 0.8,
+    "joint_score": 0.39128
+  },
+  {
+    "model": "Chameleon",
+    "family": "Early-fusion AR",
+    "understanding": 1.0,
+    "generation": 1.0,
+    "unified": 1,
+    "decoupled_encoder": 0,
+    "ocr_risk": 0.9,
+    "stability": 0.95,
+    "joint_score": 0.9
+  },
+  {
+    "model": "Proposed DVE-AR",
+    "family": "Decoupled unified AR",
+    "understanding": 0.96,
+    "generation": 0.92,
+    "unified": 1,
+    "decoupled_encoder": 1,
+    "ocr_risk": 0.45,
+    "stability": 0.93,
+    "joint_score": 0.952
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "input_shape": [
+    2,
+    70,
+    181,
+    360
+  ],
+  "forecast_shape": [
+    1,
+    1,
+    70,
+    181,
+    360
+  ],
+  "n_levels": 70,
+  "forecast_step_hours": 6,
+  "weighted_rmse_persistence_mean": 14.05446720123291,
+  "weighted_rmse_linear_mean": 24.354278564453125,
+  "rmse_skill_vs_persistence_mean": -0.7327712774276733,
+  "group_rmse": {
+    "Z": 14.13311767578125,
+    "T": 13.816214561462402,
+    "U": 14.126823425292969,
+    "V": 14.13048267364502,
+    "R": 14.13407039642334,
+    "Surface": 13.225247383117676
+  }
+}

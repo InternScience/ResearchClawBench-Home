@@ -1,0 +1,57 @@
+{
+  "data_overview": {
+    "protein_ca_atoms": 161,
+    "protein_full_sequence_length": 162,
+    "ligand_atoms": 283,
+    "nucleic_acid_context_length": 12
+  },
+  "diffusion_framework": {
+    "protein_rmsd": {
+      "mean": 5.393424192922036,
+      "std": 0.002498355956066465,
+      "min": 5.389092586682971,
+      "max": 5.396935311830501
+    },
+    "ligand_rmsd": {
+      "mean": 0.35164091498947003,
+      "std": 0.007971292225671205,
+      "min": 0.33871769363493787,
+      "max": 0.3649316235178187
+    },
+    "interface_f1": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "noisy_baseline": {
+    "protein_rmsd": {
+      "mean": 4.185501431672494,
+      "std": 0.05419535402063284,
+      "min": 4.104554717499462,
+      "max": 4.271041492245207
+    },
+    "ligand_rmsd": {
+      "mean": 3.1729365191536996,
+      "std": 0.0798911603947605,
+      "min": 3.05781621436726,
+      "max": 3.2789885988704692
+    }
+  },
+  "protein_smoothing_baseline": {
+    "protein_rmsd": {
+      "mean": 15.275050255471943,
+      "std": 0.08636186214085344,
+      "min": 15.125718352851907,
+      "max": 15.431869599971103
+    }
+  },
+  "literature_notes": [
+    "paper_000 motivates coordinate-level structure accuracy and confidence-aware evaluation.",
+    "paper_001 motivates moving from single chains to complexes and interface-centric analysis.",
+    "paper_002 motivates graph and manifold processing for molecular geometry.",
+    "paper_003 motivates attention-based token mixing across heterogeneous sequence inputs."
+  ],
+  "claim_scope": "Local proof-of-concept only; no external training or benchmark-wide generalization is claimed."
+}

@@ -1,0 +1,43 @@
+{
+  "analysis_scope": {
+    "qubits_analyzed_with_ideal_subset": 40,
+    "depths_analyzed": [
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "instances_total": 350,
+    "instances_per_depth": {
+      "8": 50,
+      "10": 50,
+      "12": 50,
+      "14": 50,
+      "16": 50,
+      "18": 50,
+      "20": 50
+    }
+  },
+  "local_dataset_reference": {
+    "results_qubit_counts_found": [
+      16,
+      24,
+      32,
+      40,
+      48,
+      56
+    ],
+    "depths_with_xeb_amplitudes_for_n40": [
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ]
+  }
+}

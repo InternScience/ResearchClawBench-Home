@@ -1,0 +1,30 @@
+{
+  "carrier_density": {
+    "hole_vs_conv_enhancement_mean": 55.268020807816065,
+    "hole_vs_conv_enhancement_range": [
+      33.635413305489294,
+      87.43746732635526
+    ],
+    "hole_vs_geom_enhancement_mean": 11.944462681228238,
+    "electron_vs_conv_enhancement_mean": 52.50461576389423,
+    "electron_vs_geom_enhancement_mean": 11.347237708270587
+  },
+  "temperature_fit": {
+    "D0_fit": 88.54865731173889,
+    "Tc_fit_K": 1.1999999999999997,
+    "n_fit": 4.999999999999999,
+    "best_model_r2": -3.104966248484004
+  },
+  "current_fit": {
+    "quadratic_r2": 0.9973631914643726,
+    "linear_r2": 0.9699088694035949,
+    "quadratic_coefficients": [
+      -0.0200451788935225,
+      -0.5607696921183266,
+      102.40395737211051
+    ]
+  },
+  "microwave": {
+    "max_freq_shift_proxy": 0.06847712416709806
+  }
+}

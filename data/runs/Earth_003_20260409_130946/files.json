@@ -1,0 +1,238 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analyze_weather_case.py",
+    "path": "code/analyze_weather_case.py",
+    "type": "file",
+    "size": 8370,
+    "mtime": 1775711462.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "006.nc",
+    "path": "data/006.nc",
+    "type": "file",
+    "size": 18247988,
+    "mtime": 1772070968.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "20231012-06_input_netcdf.nc",
+    "path": "data/20231012-06_input_netcdf.nc",
+    "type": "file",
+    "size": 36492716,
+    "mtime": 1772070968.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "cascade_proposal.json",
+    "path": "outputs/cascade_proposal.json",
+    "type": "file",
+    "size": 1828,
+    "mtime": 1775711475.0,
+    "exported": true
+  },
+  {
+    "name": "channel_metrics.csv",
+    "path": "outputs/channel_metrics.csv",
+    "type": "file",
+    "size": 11490,
+    "mtime": 1775711463.0,
+    "exported": true
+  },
+  {
+    "name": "data_summary.json",
+    "path": "outputs/data_summary.json",
+    "type": "file",
+    "size": 579,
+    "mtime": 1775711415.0,
+    "exported": true
+  },
+  {
+    "name": "metrics_summary.json",
+    "path": "outputs/metrics_summary.json",
+    "type": "file",
+    "size": 532,
+    "mtime": 1775711475.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 959881,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1724303,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 8061234,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 4863089,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "channel_rmse.png",
+    "path": "report/images/channel_rmse.png",
+    "type": "file",
+    "size": 152395,
+    "mtime": 1775711464.0,
+    "exported": true
+  },
+  {
+    "name": "group_rmse.png",
+    "path": "report/images/group_rmse.png",
+    "type": "file",
+    "size": 42232,
+    "mtime": 1775711475.0,
+    "exported": true
+  },
+  {
+    "name": "map_MSL.png",
+    "path": "report/images/map_MSL.png",
+    "type": "file",
+    "size": 2974507,
+    "mtime": 1775711473.0,
+    "exported": false
+  },
+  {
+    "name": "map_R500.png",
+    "path": "report/images/map_R500.png",
+    "type": "file",
+    "size": 2966641,
+    "mtime": 1775711471.0,
+    "exported": false
+  },
+  {
+    "name": "map_T2M.png",
+    "path": "report/images/map_T2M.png",
+    "type": "file",
+    "size": 2940537,
+    "mtime": 1775711472.0,
+    "exported": false
+  },
+  {
+    "name": "map_T850.png",
+    "path": "report/images/map_T850.png",
+    "type": "file",
+    "size": 2965212,
+    "mtime": 1775711467.0,
+    "exported": false
+  },
+  {
+    "name": "map_TP.png",
+    "path": "report/images/map_TP.png",
+    "type": "file",
+    "size": 3050046,
+    "mtime": 1775711475.0,
+    "exported": false
+  },
+  {
+    "name": "map_U500.png",
+    "path": "report/images/map_U500.png",
+    "type": "file",
+    "size": 2949349,
+    "mtime": 1775711468.0,
+    "exported": false
+  },
+  {
+    "name": "map_V500.png",
+    "path": "report/images/map_V500.png",
+    "type": "file",
+    "size": 2949543,
+    "mtime": 1775711469.0,
+    "exported": false
+  },
+  {
+    "name": "map_Z500.png",
+    "path": "report/images/map_Z500.png",
+    "type": "file",
+    "size": 2936136,
+    "mtime": 1775711465.0,
+    "exported": false
+  },
+  {
+    "name": "representative_means.png",
+    "path": "report/images/representative_means.png",
+    "type": "file",
+    "size": 61448,
+    "mtime": 1775711475.0,
+    "exported": true
+  },
+  {
+    "name": "skill_vs_persistence.png",
+    "path": "report/images/skill_vs_persistence.png",
+    "type": "file",
+    "size": 114293,
+    "mtime": 1775711464.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 15899,
+    "mtime": 1775711555.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5224,
+    "mtime": 1775711386.0,
+    "exported": true
+  }
+]

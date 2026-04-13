@@ -1,0 +1,153 @@
+{
+  "metrics": {
+    "n_calibration": 295,
+    "n_vitrimer_candidates": 8424,
+    "gp_cv_r2": 0.8829835953068149,
+    "gp_cv_mae": 24.839541592846885,
+    "gp_cv_rmse": 32.63801084257994,
+    "baseline_md_r2": 0.21469838104815064,
+    "baseline_md_mae": 70.61348677966103,
+    "baseline_md_rmse": 84.55096206063286,
+    "latent_surrogate_r2": 0.9711485267821782
+  },
+  "targets": [
+    350.0,
+    400.0,
+    450.0,
+    500.0
+  ],
+  "top_candidates": [
+    {
+      "target_tg": 350.0,
+      "acid": "CC(=NNc1cccc(C(=O)O)c1C)c1ccc(C(=O)O)cc1",
+      "epoxide": "Cc1cccnc1C(=O)Nc1ccc(C(=O)N(CC2CO2)CC2CO2)cc1",
+      "tg_md": 502.5522,
+      "tg_calibrated": 349.56749402838454,
+      "calibration_std": 129.03278672145007,
+      "target_error": 0.43250597161545556,
+      "novelty_score": 1.8141942592727571,
+      "design_score": 7.156274446578872
+    },
+    {
+      "target_tg": 350.0,
+      "acid": "CCC(C)N(CC(=O)O)Cc1ccc(C(=O)O)cc1",
+      "epoxide": "O=C(Nc1ccc(Nc2ncccn2)cc1)C(CC1CO1)CC1CO1",
+      "tg_md": 449.3948,
+      "tg_calibrated": 349.5549534802565,
+      "calibration_std": 128.9010332874948,
+      "target_error": 0.4450465197435278,
+      "novelty_score": 1.958399689912872,
+      "design_score": 7.1838581376052
+    },
+    {
+      "target_tg": 350.0,
+      "acid": "O=C(O)c1ccnc2c(C(=O)O)cccc12",
+      "epoxide": "NC(=O)c1ccc(C(=O)N(CC2CO2)CC2CO2)cn1",
+      "tg_md": 483.7047,
+      "tg_calibrated": 350.6911604017629,
+      "calibration_std": 129.01480147915848,
+      "target_error": 0.6911604017628861,
+      "novelty_score": 2.2560670035693073,
+      "design_score": 7.480310526256206
+    },
+    {
+      "target_tg": 400.0,
+      "acid": "O=C(O)c1ccc(Oc2ccc(NC(=O)c3nccnc3C(=O)O)cc2)cc1",
+      "epoxide": "O=C(Nc1ccc(Oc2ccccc2)cc1)N(CC1CO1)CC1CO1",
+      "tg_md": 516.7256,
+      "tg_calibrated": 352.28227912902014,
+      "calibration_std": 128.92759742420841,
+      "target_error": 47.71772087097986,
+      "novelty_score": 2.827106352130052,
+      "design_score": 54.58816669500979
+    },
+    {
+      "target_tg": 400.0,
+      "acid": "Cc1cc(C)c(C(=O)O)cc1C=C(C(=O)O)c1ccncc1",
+      "epoxide": "Cc1ccc(Oc2ccc(NC(=O)N(CC3CO3)CC3CO3)cn2)cc1",
+      "tg_md": 478.1393,
+      "tg_calibrated": 351.7907432261675,
+      "calibration_std": 128.98977110266412,
+      "target_error": 48.20925677383252,
+      "novelty_score": 2.239569410899297,
+      "design_score": 54.99468074060062
+    },
+    {
+      "target_tg": 400.0,
+      "acid": "O=C(O)c1ccccc1Nc1ccccc1C(=O)O",
+      "epoxide": "CCc1ccc(C(=O)Nc2ccc(C(=O)N(CC3CO3)CC3CO3)cc2)cc1",
+      "tg_md": 541.1776,
+      "tg_calibrated": 350.90775189337046,
+      "calibration_std": 128.87504852616883,
+      "target_error": 49.09224810662954,
+      "novelty_score": 2.330745874605864,
+      "design_score": 55.885612414128865
+    },
+    {
+      "target_tg": 450.0,
+      "acid": "O=C(O)c1ccc(Oc2ccc(NC(=O)c3nccnc3C(=O)O)cc2)cc1",
+      "epoxide": "O=C(Nc1ccc(Oc2ccccc2)cc1)N(CC1CO1)CC1CO1",
+      "tg_md": 516.7256,
+      "tg_calibrated": 352.28227912902014,
+      "calibration_std": 128.92759742420841,
+      "target_error": 97.71772087097986,
+      "novelty_score": 2.827106352130052,
+      "design_score": 104.58816669500979
+    },
+    {
+      "target_tg": 450.0,
+      "acid": "Cc1cc(C)c(C(=O)O)cc1C=C(C(=O)O)c1ccncc1",
+      "epoxide": "Cc1ccc(Oc2ccc(NC(=O)N(CC3CO3)CC3CO3)cn2)cc1",
+      "tg_md": 478.1393,
+      "tg_calibrated": 351.7907432261675,
+      "calibration_std": 128.98977110266412,
+      "target_error": 98.20925677383252,
+      "novelty_score": 2.239569410899297,
+      "design_score": 104.99468074060061
+    },
+    {
+      "target_tg": 450.0,
+      "acid": "O=C(O)c1ccccc1Nc1ccccc1C(=O)O",
+      "epoxide": "CCc1ccc(C(=O)Nc2ccc(C(=O)N(CC3CO3)CC3CO3)cc2)cc1",
+      "tg_md": 541.1776,
+      "tg_calibrated": 350.90775189337046,
+      "calibration_std": 128.87504852616883,
+      "target_error": 99.09224810662954,
+      "novelty_score": 2.330745874605864,
+      "design_score": 105.88561241412886
+    },
+    {
+      "target_tg": 500.0,
+      "acid": "O=C(O)c1ccc(Oc2ccc(NC(=O)c3nccnc3C(=O)O)cc2)cc1",
+      "epoxide": "O=C(Nc1ccc(Oc2ccccc2)cc1)N(CC1CO1)CC1CO1",
+      "tg_md": 516.7256,
+      "tg_calibrated": 352.28227912902014,
+      "calibration_std": 128.92759742420841,
+      "target_error": 147.71772087097986,
+      "novelty_score": 2.827106352130052,
+      "design_score": 154.5881666950098
+    },
+    {
+      "target_tg": 500.0,
+      "acid": "Cc1cc(C)c(C(=O)O)cc1C=C(C(=O)O)c1ccncc1",
+      "epoxide": "Cc1ccc(Oc2ccc(NC(=O)N(CC3CO3)CC3CO3)cn2)cc1",
+      "tg_md": 478.1393,
+      "tg_calibrated": 351.7907432261675,
+      "calibration_std": 128.98977110266412,
+      "target_error": 148.20925677383252,
+      "novelty_score": 2.239569410899297,
+      "design_score": 154.99468074060061
+    },
+    {
+      "target_tg": 500.0,
+      "acid": "O=C(O)c1ccccc1Nc1ccccc1C(=O)O",
+      "epoxide": "CCc1ccc(C(=O)Nc2ccc(C(=O)N(CC3CO3)CC3CO3)cc2)cc1",
+      "tg_md": 541.1776,
+      "tg_calibrated": 350.90775189337046,
+      "calibration_std": 128.87504852616883,
+      "target_error": 149.09224810662954,
+      "novelty_score": 2.330745874605864,
+      "design_score": 155.88561241412884
+    }
+  ]
+}

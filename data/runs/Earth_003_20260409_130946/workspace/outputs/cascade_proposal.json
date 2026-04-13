@@ -1,0 +1,39 @@
+{
+  "system_name": "Cascade U-Transformer (proposed)",
+  "stages": [
+    {
+      "name": "Short-range dynamics model",
+      "lead_range_days": "0-5",
+      "training_target": "1-step and 2-step 6h forecasts",
+      "focus": "Fast synoptic dynamics, full-resolution updates for all 70 channels"
+    },
+    {
+      "name": "Medium-range correction model",
+      "lead_range_days": "5-10",
+      "training_target": "residual correction to stage-1 trajectories",
+      "focus": "Suppress autoregressive drift using multi-step rollout loss and spectral/latitude weighting"
+    },
+    {
+      "name": "Extended-range stabilization model",
+      "lead_range_days": "10-15",
+      "training_target": "large-scale anomaly evolution and calibrated bias correction",
+      "focus": "Preserve planetary-scale patterns and surface-variable realism when deterministic skill decays"
+    }
+  ],
+  "rationale": [
+    "Related work shows autoregressive accumulation is the central barrier in medium-range AI forecasting.",
+    "Current case data provide only a 6h forecast, but reveal which variable families are harder to extrapolate from two prior states.",
+    "A cascade lets each model specialize by lead time rather than forcing one network to learn all temporal regimes."
+  ],
+  "loss_recommendations": [
+    "Latitude-weighted RMSE + anomaly correlation term for Z/T/U/V/R fields",
+    "Log or transformed loss for precipitation",
+    "Spectral loss to preserve synoptic and planetary scales",
+    "Rollout consistency loss across handoff boundaries between the three models"
+  ],
+  "validation_recommendations": [
+    "Compare against persistence, linear extrapolation, and ECMWF ensemble mean",
+    "Report ACC for Z500, RMSE for T2M/U10/V10/MSL, and event metrics for TP",
+    "Evaluate stage-handoff stability at days 5 and 10"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "scenarios": [
+    {
+      "scenario": "baseline",
+      "objective": 93673222635.98032,
+      "total_demand_mwh": 15939706.029762119,
+      "total_generation_mwh": 6580039.850579739,
+      "total_load_shed_mwh": 9357717.622023864,
+      "total_curtailment_mwh": 0.0,
+      "wind_share": 0.6371788165402166,
+      "storage_discharge_mwh": 1948.557158514987,
+      "storage_charge_mwh": 0.0,
+      "peak_transfer_mw": 29780.842469248353,
+      "mean_transfer_mw": 22717.08612124955,
+      "transfer_stress": 0.305444538146137
+    },
+    {
+      "scenario": "no_network_constraints",
+      "objective": 93673222635.98032,
+      "total_demand_mwh": 15939706.029762119,
+      "total_generation_mwh": 6580039.850579739,
+      "total_load_shed_mwh": 9357717.622023864,
+      "total_curtailment_mwh": 0.0,
+      "wind_share": 0.6371788165402166,
+      "storage_discharge_mwh": 1948.557158514987,
+      "storage_charge_mwh": 0.0,
+      "peak_transfer_mw": 29780.842469248353,
+      "mean_transfer_mw": 22717.08612124955,
+      "transfer_stress": 0.030544453814613695
+    },
+    {
+      "scenario": "no_storage",
+      "objective": 93692707634.21304,
+      "total_demand_mwh": 15939706.029762119,
+      "total_generation_mwh": 6580039.850579739,
+      "total_load_shed_mwh": 9359666.179182379,
+      "total_curtailment_mwh": 0.0,
+      "wind_share": 0.6371788165402166,
+      "storage_discharge_mwh": 0.0,
+      "storage_charge_mwh": 0.0,
+      "peak_transfer_mw": 29780.842469248353,
+      "mean_transfer_mw": 22708.58051460524,
+      "transfer_stress": 0.305444538146137
+    },
+    {
+      "scenario": "high_wind",
+      "objective": 72780337632.29488,
+      "total_demand_mwh": 15939706.029762119,
+      "total_generation_mwh": 8669417.811781906,
+      "total_load_shed_mwh": 7268339.660821697,
+      "total_curtailment_mwh": 0.0,
+      "wind_share": 0.7254227612173599,
+      "storage_discharge_mwh": 1948.557158514987,
+      "storage_charge_mwh": 0.0,
+      "peak_transfer_mw": 44221.99976172137,
+      "mean_transfer_mw": 34067.30317852481,
+      "transfer_stress": 0.4535589719150909
+    }
+  ],
+  "created_by": "code/run_analysis.py"
+}

@@ -1,0 +1,14 @@
+MATBG superfluid stiffness analysis summary
+
+Carrier-density enhancement metrics
+- Mean experimental/conventional ratio: hole=55.27, electron=52.50
+- Mean experimental/geometric ratio: hole=11.94, electron=11.35
+- Hole/electron asymmetry (mean relative difference): 5.13%
+
+Temperature fits
+- bcs_reference: n=1.999, amplitude=0.9972, R2=1.00000, RMSE=0.00004, points=28
+- power_n2_5_reference: n=1.996, amplitude=1.1544, R2=1.00000, RMSE=0.00015, points=28
+- experimental: n=0.790, amplitude=0.3078, R2=0.99603, RMSE=0.00126, points=28
+
+Current fit
+- Low-current quadratic coefficient=0.000378, offset=0.003616, R2=0.99877, Ic_est=51.41 nA

@@ -1,0 +1,1980 @@
+Article
+
+Evidence for unconventional
+superconductivity in twisted bilayer
+graphene
+https://doi.org/10.1038/s41586-021-04121-x
+Received: 16 June 2021
+
+Myungchul Oh1,4, Kevin P. Nuckolls1,4, Dillon Wong1,4, Ryan L. Lee1, Xiaomeng Liu1,
+Kenji Watanabe2, Takashi Taniguchi3 & Ali Yazdani1 ✉
+
+Accepted: 11 October 2021
+Published online: 20 October 2021
+Check for updates
+
+The emergence of superconductivity and correlated insulators in magic-angle
+twisted bilayer graphene (MATBG) has raised the intriguing possibility that its pairing
+mechanism is distinct from that of conventional superconductors1–4, as described by
+the Bardeen–Cooper–Schrieffer (BCS) theory. However, recent studies have shown that
+superconductivity persists even when Coulomb interactions are partially screened5,6.
+This suggests that pairing in MATBG might be conventional in nature and a consequence
+of the large density of states of its flat bands. Here we combine tunnelling and Andreev
+reflection spectroscopy with a scanning tunnelling microscope to observe several key
+experimental signatures of unconventional superconductivity in MATBG. We show that
+the tunnelling spectra below the transition temperature Tc are inconsistent with those of
+a conventional s-wave superconductor, but rather resemble those of a nodal
+superconductor with an anisotropic pairing mechanism. We observe a large
+discrepancy between the tunnelling gap ΔT, which far exceeds the mean-field BCS ratio
+(with 2ΔT/kBTc ~ 25), and the gap ΔAR extracted from Andreev reflection spectroscopy
+(2ΔAR/kBTc ~ 6). The tunnelling gap persists even when superconductivity is suppressed,
+indicating its emergence from a pseudogap phase. Moreover, the pseudogap and
+superconductivity are both absent when MATBG is aligned with hexagonal boron
+nitride. These findings and other observations reported here provide a preponderance
+of evidence for a non-BCS mechanism for superconductivity in MATBG.
+
+Tunnelling measurements of the quasiparticle density of states (DOS),
+the energy gap and electron–phonon coupling in conventional superconductors have provided key experimental evidence for the BCS
+theory of superconductivity7. Similar measurements on correlated
+superconductors, most notably using scanning tunnelling microscopy (STM) and angle-resolved photoemission spectroscopy, have
+shown their properties to be qualitatively different from those of
+BCS superconductors8,9. For the high-Tc cuprate superconductors,
+whereas tunnelling spectra in the overdoped regime can be captured
+by the DOS of a BCS-like model with a d-wave order parameter, the
+yet-to-be-understood pseudogap phenomenon at reduced doping
+causes the spectroscopic properties of the cuprates to strongly deviate from this picture9.
+Superconductivity has been observed at remarkably low carrier
+densities at partial fillings of the flat bands of MATBG1–3. Although these
+qualities suggest an unconventional pairing mechanism, conclusive
+evidence for any mechanism beyond the BCS paradigm is absent. We
+use density-tuned scanning tunnelling and point-contact spectroscopy (DT-STS and DT-PCS) to show that the superconducting phase of
+MATBG, specifically when hole-doping its flat valence band, shares a
+
+remarkable number of features with unconventional superconductors.
+Our experiments show a V-shaped gap at low temperatures and an unusual pseudogap precursor phase at higher temperatures and magnetic
+fields from which phase-coherent superconductivity emerges. The
+low-energy region of the V-shaped gap supports an anisotropic pairing
+mechanism with nodes in the superconducting gap function, as anticipated by some theoretical studies10–12. The pseudogap state may signify
+pairing without phase coherence or a secondary phase forming above
+Tc and Bc. Both the pseudogap and superconductivity are absent when
+MATBG is commensurately aligned with the hexagonal boron nitride
+(hBN) substrate, suggesting that the structural characteristics and/or
+the C2T symmetry of unaligned MATBG is required for stabilizing these
+ground states. Although we cannot rule out a phonon-based pairing
+mechanism13,14, our results provide key constraints for an accurate
+theory of superconductivity in MATBG.
+We performed our experiments in a home-built dilution-refrigerator
+STM15 instrument on devices sketched in Fig. 1a. MATBG, biased at the
+sample voltage Vs, rests on hBN/SiO2/Si, while a gate voltage Vg applied
+to Si tunes the carrier density (see Methods). Figure 1b shows a topographic image16–18 of unaligned MATBG/hBN, while Fig. 1c shows DT-STS
+
+Joseph Henry Laboratories and Department of Physics, Princeton University, Princeton, NJ, USA. 2Research Center for Functional Materials, National Institute for Materials Science, Tsukuba,
+Japan. 3International Center for Materials Nanoarchitectonics, National Institute for Materials Science, Tsukuba, Japan. 4These authors contributed equally: Myungchul Oh, Kevin P. Nuckolls,
+Dillon Wong. ✉e-mail: yazdani@princeton.edu
+
+1
+
+240 | Nature | Vol 600 | 9 December 2021
+
+c
+
+d
+0
+
+Device A
+
+I
+
+dI/dV (nS)
+
+60
+
+1.13º
+AA site
+
+40
+
+0
+
++4
+
+–25
+
+0
+–1
+
+BA
+
+–20
+
+CI
+
+–2
+
+–40
+–4
+
+5 nm
+–30
+
+–20 –10
+
+0
+
+10
+
+20
+
+30
+
+Vs (mV)
+
+–5
+
+5
+0
+Vs (mV)
+
+10
+CI
+
+Q = –2
+
+–3
+
+–30
+
+g
+
+20
+
+18
+
+1.06°
+AA site
+–10
+
+0
+Vs (mV)
+
+10
+CI
+
+Q = –2
+
+12
+6
+
+10
+
+30
+–3
+
+SC
+
+–34
+
+Vg = –19.8 V
+
+0
+
+SC
+
+AB
+
+–2
+
+CI
+
+Vg = –22.6 V
+
+dI/dV (nS)
+
+AA
+
+dI/dV (nS)
+
+45
+
+Vg (V)
+
+0
+
+–3
+
++1
+
+30
+
+dI/dV (nS)
+(Vs = 0)
+0
+16
+
+28
+
+–18
+
+–22
+
+1.13°
+AA site
+
+e
+
+Device B
+dI/dV (nS)
+
+–26
+
+–40
+–10
+
+0
+
+–2
+
+–30
+
+–35
+
+20
+
+z (pm)
+
+0
+
+SC
+
++2
+
+Filling factor, Q
+
+b
+
+60
+
+CI
+
++3
+
+CI
+
+f
+dI/dV (nS)
+(Vs = 0)
+0
+25
+
+–20
+
+CI
+
+Vg
+
+Device A
+dI/dV (nS)
+
+Filling factor, Q
+
+Vs
+
+35
+
+Vg (V)
+
+a
+
+0
+
+Q = –2.4
+
+1.8 meV
+
+Q = –2.6
+
+SC
+12
+
+SC
+
+2.9 meV
+
+20
+6
+
+10
+0
+–6
+
+Vg = –25.8 V
+–4
+
+–2
+
+0
+Vs (mV)
+
+2
+
+4
+
+6
+
+0
+–6
+
+Vg = –25.6 V
+–4
+
+–2
+
+0
+
+2
+
+4
+
+6
+
+Vs (mV)
+
+Fig. 1 | STS of the tunnelling gap of superconducting MATBG. a, The
+experimental set-up, showing an STM tip (from which the tunnelling current I is
+measured). MATBG, biased at Vs, sits atop hBN/SiO2/Si, while Vg is applied to Si to
+tune the carrier density. b, STM topographic image of MATBG. c, Tunnelling
+dI/dV(Vs, Vg) taken at the centre of an AA site in device A (1.13°, 0.4% strain) shows
+the conduction and valence flat bands pinned to EF. The red dashed-line box
+highlights a set of gaps in the valence flat band. d, Higher-resolution dI/dV(Vs, Vg)
+
+for device A shows a gap at ν = −2 (CI; correlated insulator) and a gap between
+ν = −2 and ν = −3 (SC; superconductor). A line cut of dI/dV(Vg) at Vs = 0 V is shown
+on the right. e, dI/dV(Vs) spectra for device A at Vg = −22.6 V (top) and Vg = −25.8 V
+(bottom). f, Same as d, except for device B (1.06°, 0.1% strain). g, dI/dV(Vs) spectra
+for device B at Vg = −19.8 V (top) and Vg = −25.6 V (bottom). See Supplementary
+Information for tunnelling parameters.
+
+dI/dV(Vs, Vg) acquired at 250 mK at the centre of an AA site in device A
+(see Supplementary Information for AB/BA data). Figure 1c shows that
+the conduction (valence) flat band is pinned to the Fermi energy (EF;
+Vs = 0 V) when Vg tunes EF above (below) the charge neutrality point
+(CNP; VCNP = 3.7 V), while the valence (conduction) flat band onsets at
+Vs < −20 mV (Vs > 20 mV) and displays significant energy broadening
+due to charge fluctuations19. At millikelvin temperatures, we observe
+features in DT-STS attributed to a cascade of transitions at partial band
+fillings20–23, but they appear weaker and broader in energy than those
+observed at higher temperatures (T > 4 K), which may be related to
+high-entropy isospin fluctuations24,25.
+
+insulator (red curves) and the −3 < ν < −2 superconductor (blue curves)
+measured in each device. The −3 < ν < −2 tunnelling gap is significantly
+larger than kBTc observed in transport experiments1–3 and is an order
+of magnitude larger than an in-plane tunnelling gap observed in a
+MATBG p–n junction26 (presumably, the lateral p–n junction probes
+only the edge of the superconducting dome adjacent to the correlated
+insulator, instead of optimal doping, due to the junction’s doping gradient). Before examining the shapes of the tunnelling spectra further,
+we discuss our method for distinguishing between gapped insulating
+and superconducting phases by complementing DT-STS with PCS
+measurements.
+As both correlated insulators and superconductors show suppressions in dI/dV(Vs = 0 V), we require complementary information that
+distinguishes these two phases. We performed PCS by reducing the tip
+height above the sample until the tip makes point contact with the
+sample surface (sketched in Fig. 2a) and then measuring the
+two-terminal tip–sample conductance G(Vs, Vg) (see Methods; see Supplementary Information for discussion of possible tip-induced pressure
+and strain during PCS). This measurement is particularly sensitive to
+the local region beneath the tip (see Supplementary Information).
+The PCS zero-bias conductance G(Vs = 0 V, Vg), plotted in Fig. 2b (device
+A′—a different region of device A) as a function of Vg, vanishes at ν = ±4
+and ν = ±2, signalling the formation of band and correlated insulators
+(Fig. 2b; red shaded bars). Consistent with transport studies1–3, the
+insulating states are insensitive to application of a weak out-ofplane magnetic field B. In contrast, the PCS zero-bias conductance
+displays enhanced intensity in the range −3 < ν < −2 (Fig. 2b; green
+shaded bar) that is suppressed with increasing B, consistent with
+
+Distinguishing nodal superconductivity
+DT-STS shows several gapped phases (Fig. 1c) starting with band insulators at ν = ±4, where ν is the electron filling per moiré unit cell relative
+to the CNP. Here we focus on partial fillings of the valence flat band
+near −3 < ν < −2, where transport studies1–3 report superconductivity
+in MATBG (Fig. 1c, red box). Figure 1d, f shows tunnelling spectra dI/
+dV(Vs, Vg) from two devices (device A as in Fig. 1c and device B), which
+display a gap at ν = −2 that opens and closes at EF with decreasing Vg,
+followed by the opening of a new gap that persists in the range
+−3 < ν < −2. The density dependence of these gaps is highlighted by
+dI/dV(Vs = 0 V) as a function of Vg shown in Fig. 1d, f. We observe a clear
+transition between the two gapped phases, consistent with the phase
+diagram of MATBG from transport studies1–3,5,6 in which a correlated
+insulator at ν = −2 transitions into a superconductor that persists for
+−3 < ν < −2. In Fig. 1e, g, we plot tunnelling gaps for the ν = −2 correlated
+
+Nature | Vol 600 | 9 December 2021 | 241
+
+Article
+b
+240
+
+STM tip
+
+ee
+
+ee
+e
+
+e
+
+ee
+
+35
+
+Q=0
+
+–1
+
+–2
+
+CI
++1
+
+c
+
+CI
++3
+
++2
+
+ee
+
++4
+
+300 mK
+
+Vg = –21 V
+
+90
+
+20 mT
+
+120
+
+Bŏ = 0 T
+20 mT
+50 mT
+100 mT
+200 mT
+
+60
+30
+0
+
+–40
+
+–30
+
+–20
+
+–10
+
+B ≈ Bc
+
+110
+100
+
+50 mT
+
+75
+
+100 mT
+
+10
+
+20
+
+30
+
+40
+
+–20
+
+0
+
+1
+
+23
+
+T ≈ Tc
+
+790 mK
+810 mK
+870 mK
+960 mK
+T = 1.3 K
+
+0
+
+1
+
+Vs (mV)
+
+g
+
+dG/dVs (S V–1)
+–0.13
+0.13
+
+G (μS)
+150
+
+730 mK
+
+–1
+
+Vs (mV)
+
+–15
+
+–2
+
+–1
+
+707 mK
+
+367 mK
+418 mK
+450 mK
+485 mK
+528 mK
+576 mK
+630 mK
+
+90
+
+200 mT
+
+0
+Vg (V)
+
+f
+
+dG/dVs (S V–1)
+–0.14
+0.14
+
+G (μS)
+140
+
+100
+
+Vg = –21.8 V
+
+130 313 mK
+
+Bŏ = 0 T
+
+125
+
+120
+
+ee
+
+–15
+
+d
+150
+
+150
+
+SC MATBG
+
+e
+
+CNP
+
+180
+G(Vs = 0) (μS)
+
+ee
+
+–3
+
+–4
+
+210
+h
+
+SC CI
+
+G (μS)
+
+e
+Andreev
+reflection
+
+Device A′
+
+G (μS)
+
+a
+
+dI/dV (nS)
+Device A′
+AA site, 1.01°
+
+0
+
+G (μS)
+
+30 7
+
+140
++4
+
+40
+
+–2
+
+CI
+
+–20
+
++3
+
+Vg (V)
+
+–3
+
+–30
+0 mT
+
+20 mT
+
++2
+
+CI
+
+20
+
+50 mT
+
+100 mT
+
+200 mT
+
+B ≈ Bc
+
+–35 250 mK
+
+–4
+
+700 mK
+
+–15
+
+–2
+
+–20
+
+1.3 K
+
+T ≈ Tc
+
+10
+–4
+
+–2
+
++1
+CNP
+0
+
+0
+
+–1
+
+–10
+
+–30
+–35
+
+0 mT
+
+20 mT
+
+50 mT
+
+100 mT
+
+200 mT
+
+–1 0 1
+Vs (mV)
+
+–1 0 1
+Vs (mV)
+
+–1 0 1
+Vs (mV)
+
+–1 0 1
+Vs (mV)
+
+–1 0 1
+Vs (mV)
+
+–25
+–30
+
+–4
+
+Q
+
+Q
+–3
+Andreev
+reflection
+
+Vg (V)
+
+–20
+
+–25
+
+–3
+
+–30
+
+–35 250 mK
+
+700 mK
+
+1.3 K
+
+–1 0 1
+Vs (mV)
+
+–1 0 1
+Vs (mV)
+
+–1 0 1
+Vs (mV)
+
+superconductivity in this doping range. More direct evidence for superconductivity is revealed by the voltage-bias dependence of PCS G(Vs, Vg)
+in Fig. 2c, d. These spectra are indicative of Andreev reflection27,28, where
+incoming electrons from the metallic tip are reflected as holes while
+Cooper pairs propagate into the superconducting sample (Fig. 2a).
+This results in enhanced conductance at low biases and ‘excess current’
+when the sample is superconducting. Signatures of Andreev reflection
+in PCS G(Vs, Vg) (black boxes in Fig. 2e, f) are limited roughly to fillings
+−3 < ν < −2, magnetic fields B < Bc ~ 50 mT and temperatures T < Tc ~ 1.2 K,
+all of which are consistent with transport measurements1–3. A
+side-by-side comparison of STS and PCS (Fig. 2g) at the same sample
+location shows how PCS can clearly distinguish tunnelling gaps associated with superconductivity from those associated with insulators.
+Despite the presence of many correlation-driven gaps at EF in STS, only
+the filling range −3 < ν < −2 shows both a V-shaped gap in STS and a
+zero-bias conductance peak in PCS.
+
+–2
+
+CI
+SC
+
+–3
+Andreev
+reflection
+
+Fig. 2 | PCS and Andreev reflection for MATBG. a, The Andreev reflection
+process measured using DT-PCS. The STM tip is brought into point contact with
+the surface of MATBG, and the two-terminal conductance G(Vs, Vg) is measured.
+b, Line cut of point-contact G(Vg) at Vs = 0 V for device A′ (same as device A,
+different region; 1.01° twist angle, 0.2% strain) at five magnetic field strengths
+between 0 T and 200 mT. Strong suppressions of G(Vg) occur near ν = −2, +2 and
++3 as a result of correlated insulating phases near these integer fillings (CI; red
+shaded bars). A dip in G(Vg) occurs near charge neutrality (CNP; grey shaded
+bar). An enhancement of G(Vg) occurs between ν = −2 and ν = −3 as a result of the
+excess current measured in the superconducting phase (SC; green shaded bar).
+Curves are vertically offset by the horizontal black lines for clarity. c, Line cut of
+point-contact G(Vs) spectra at Vg = −21 V, in the superconducting carrier-density
+
+242 | Nature | Vol 600 | 9 December 2021
+
+–20
+
+–4
+
+Andreev
+reflection
+
+–40
+–40
+
+Q
+
+–15
+
+Vg (V)
+
+–3
+
+–30
+
+Vg (V)
+
+–35
+
+–25
+
+Q
+
+–25
+
+Q
+
+Vg (V)
+
+30
+
+STS
+–20
+
+0
+Vs (mV)
+
+–4
+
+PCS
+20
+
+40 –1 0 1
+Vs (mV)
+
+range, at five magnetic-field strengths between 0 T and 200 mT. Curves are
+offset for clarity. d, Line cut of point-contact G(Vs) spectra at Vg = −21.8 V, in the
+superconducting carrier-density range, at 16 temperatures between 300 mK
+and 1.3 K. e, Point-contact G(Vs, Vg) and dG/dVs(Vs, Vg) for different values of the
+out-of-plane magnetic field showing the disappearance of Andreev reflection
+at around 50 mT. f, Point-contact G(Vs, Vg) and dG/dVs(Vs, Vg) for different values
+of the temperature showing the disappearance of Andreev reflection at around
+1.3 K. g, Side-by-side tunnelling dI/dV(Vs, Vg) into an AA site and point-contact
+G(Vs, Vg) in the same location in device A′. Gaps observed in tunnelling marked
+as CI coincide with highly resistive states in G(Vs, Vg), while the tunnelling gap
+marked as SC coincides with Andreev reflection. See the Supplementary
+Information for tunnelling and PCS parameters.
+
+Two distinct energy scales and the pseudogap
+Both STS and PCS provide complementary evidence for an anisotropic
+pairing mechanism of superconductivity in MATBG. Moreover, these
+measurements establish two distinct energy scales. Low-energy STS
+spectra (Fig. 3a) are clearly incompatible with an isotropic s-wave pairing symmetry, and the best fits to such a model require introducing
+unphysically large quasiparticle broadening (equivalent to an electron
+temperature above 2 K; for comparison, see Supplementary Information for STS on superconducting Al). Often STS spectra on MATBG have
+a finite conductance at zero energy, but V-shaped spectra with zero
+conductance at zero bias have also been observed (Fig. 1g). These STS
+spectra resemble the quasiparticle DOS of a nodal superconductor,
+as for higher-angular-momentum (for example, p- or d-wave) pairing
+with an anisotropic gap function (Fig. 3b shows this fit for device A,
+Vg = −25.8 V—see the Supplementary Information for fits at other Vg).
+
+Z = 0.1
+
+20
+
+0.2
+
+10
+5
+0
+
+0.1
+
+Device A′
+Vg = –21.8 V
+0
+
+0.5
+
+1.0
+
+Vg (V)
+
+SC
+
+–25
+
+6
+
+C = –3
+
+PG
+
+ChI
+
+C = –2
+
+ChI
+
+C = –1
+
+–30
+
+0.5 T
+
+–35
+
+Vg = –19 V
+
+Q
+
+×0.5
+
+–2
+
+40
+
+B=0T
+×1.5
+
+Vg = –20 V
+
+0T
+
+6
+
+80
+–3
+40
+
+0
+
+3
+
+Vg = –26 V
+
+–5
+
+0
+Vs (mV)
+
+5
+
+0
+
+Vg = –34 V
+–10
+
+0
+Vs (mV)
+
+Device A″
+0
+
+–5
+
+0
+
+5
+
+10
+
+–10
+
+0
+Vs (mV)
+
+10
+
+–
+ern
+
+0
+Vs (mV)
+
+10
+
+~6 T
+
+=–
+3
+
+H
+su
+
+in
+r
+
+to
+
+la
+
+tor
+
+sula
+
+in
+QH
+
+v LL
+
+Q
+
+tor
+
+–4
+
+ula
+
+=
+
+ns
+
+v LL
+
+3i
+
+r
+
+lato
+
+insu
+
+–10
+
+v LL
+
+Ch
+
+2
+rn –
+
+Although the nodal fit describes this spectrum well, one should be
+cautious about this interpretation given the similar appearance of
+this gap to that of the pseudogap above Tc and Bc described below.
+Nevertheless, we extract an energy scale of ΔT ~ 0.9 meV from this fit,
+which roughly corresponds to half the separation of the shoulders in
+the spectrum. Similarly, the Andreev reflection spectra in PCS resemble predictions from the Blonder–Tinkham–Klapwijk (BTK) model29
+using a nodal superconducting gap function (Fig. 3c and Supplementary Information). However, a BTK-model fit yields an energy scale
+ΔAR ~ 0.3 meV (device A′: Vg = −22.8 V), 3–5 times smaller than ΔT. For
+Tc ≈ 1.2 K (measured through PCS), the observed ratio 2ΔT/kBTc ~ 25
+(device A′; Vg = −22.8 V) is significantly higher than the expected ratio
+for a tunnelling gap of a BCS superconductor (2ΔMF/kBTc = 3.53). The
+Andreev energy-scale ratio 2ΔAR/kBTc ~ 6 also appears to be higher than
+the BCS ratio. As noted above, Andreev reflection disappears when
+phase-coherent superconductivity is absent, with both ΔAR and the
+Andreev excess current vanishing above Tc and Bc (Figs. 2d and 3d). In
+contrast, the STS gap ΔT persists when phase-coherent superconductivity vanishes above Tc (see Fig. 3e and Supplementary Information)
+and well above Bc (Fig. 4).
+A similar dichotomy between the energy scales describing tunnelling
+and Andreev reflection has been documented for the underdoped
+
+–1
+
+Fig. 3 | Tunnelling and Andreev reflection spectra curve fits. a,
+Dynes-function fits to the experimental tunnelling spectrum (blue curve)
+measured at Vg = −25.8 V for device A at 200 mK and B = 0 T using the model
+quasiparticle DOS for a nodeless s-wave superconductor with all free parameters
+(red curve) and with fixed lifetime broadening parameter Γ = 0.07 meV (grey
+curve) (see Supplementary Information for details). b, Same as a, except using
+the model quasiparticle DOS for a nodal superconductor (for example, p-, d- and
+f-wave). c, Normalized Andreev reflection spectra (solid curves, normalized with
+the normal state conductance GN) obtained in device A′ at Vg = −21.8 V at 15
+temperatures between 300 mK and 1 K, fitted with the BTK model (dotted
+curves) with fixed barrier transparency parameter Z = 0.1. d, Excess current Iexc
+and the superconducting energy gap ΔAR extracted from the BTK fits in c (see
+Supplementary Information for details). The error bars represent the standard
+deviation of the fitted energy gap. The excess current shows an anomalous linear
+dependence on the temperature, indicative of unconventional superconductivity.
+e, Tunnelling dI/dV(Vs) spectra acquired at the centre of an AA site between
+Vg = −20 V and Vg = −26 V in device A″ (same as device A, different region; 0.99°
+twist angle), measured at T = 4.1 K. Curves are offset by 0.6 nS for clarity.
+A suppression of the DOS near EF is observed at temperatures above Tc for
+superconductivity observed at −3 < ν < −2 (see Supplementary Information for
+full dI/dV(Vs, Vg) for all observations of the high-temperature pseudogap phase).
+See Supplementary Information for tunnelling parameters.
+
+c
+
+Che
+
+Vs (mV)
+
+Chern
+
+T (K)
+
+0
+1.5
+
+ChI
+
+80
+
+Pseudogaps at 4.1 K
+9
+
+dI/dV (nS)
+50
+0
+
+CI
+
+120
+
+0.3
+
+15
+
+4
+
+B⊥ = 6 T
+
+v LL = –1
+
+1.0
+
+Iexc
+ΔAR
+
+2
+
+dI/dV (nS)
+25
+0
+
+= –2
+
+0.5
+
+0
+Vs (mV)
+
+e
+
+ΔAR (meV)
+
+0
+
+–2
+
+0.4
+
+Vg = –21.8 V
+Vs (mV)
+
+–4
+
+d
+
+Nodal SC fit
+(Z = 0.1)
+576
+630
+707
+730
+790
+810
+870
+960
+
+–0.5
+
+0
+–6
+
+6
+
+Δ = 0.90 meV
+Γ = 0.07 meV
+
+Vg = –25.8 V
+
+B⊥ = 3 T
+
+Pseudogap
+regime
+
+CI
+
+4
+
+10
+
+dI/dV (nS)
+25
+0
+
+Device B
+B⊥ = 0 T
+
+–20
+
+1T
+
+dI/dV (nS)
+
+2
+
+AR versus T
+
+T (mK)
+299
+1.5
+313
+367
+418
+1.3
+450
+485
+528
+1.1
+0.9
+–1.0
+
+0
+Vs (mV)
+
+20
+
+–15
+
+dI/dV (nS)
+
+Device A′
+
+–2
+
+120
+
+Moiré band insulator
+
+1.7
+
+–4
+
+b
+Device A
+Vg = –25 V
+
+Out-of-plane magnetic field
+
+Vg = –25.8 V
+
+0
+–6
+
+c
+
+Free Γ
+Δ = 0.70 meV
+Γ = 0.20 meV
+Fixed Γ
+Δ = 0.65 meV
+Γ = 0.07 meV
+
+STS
+Nodal SC
+
+Device A
+200 mK, 0 T
+
+dI/dV (nS)
+
+10
+
+a
+
+Nodal SC fit
+30
+
+20
+
+Iexc (nA)
+
+dI/dV (nS)
+
+STS
+s-wave SC
+s-wave SC
+(fixed Γ )
+
+Device A
+200 mK, 0 T
+
+30
+
+G/GN
+
+b
+
+s-wave SC fit
+
+dI/dV (nS)
+
+a
+
+Unconventional
+SC
+–4
+
+–3
+
+–2
+Filling factor, Q
+
+–1
+
+~0.1 T
+
+0
+
+Fig. 4 | Pseudogap regime and phase diagram of hole-doped MATBG.
+a, Tunnelling dI/dV(Vs) spectra at Vg = −25 V taken at the centre of an AA site in
+device A at B⊥ = 0 T (red curve), 0.5 T (purple curve) and 1 T (blue curve), which
+show the persistence of a prominent gap at EF well above Bc for MATBG.
+b, Tunnelling dI/dV(Vs, Vg) and dI/dV(Vs) spectra on an AA site in device B for
+Vg = −19 V to Vg = −34 V and for B⊥ = 0 T, 3 T and 6 T. Curves are offset by 7.5 nS for
+clarity. At B⊥ = 0 T, a gap opens and closes near ν = −2 due to the correlated
+insulating (CI) phase, followed by a gap for the superconducting phase at
+−3 < ν < −2. At B⊥ = 3 T; the gap at −3 < ν < −2 is a result of the pseudogap (PG)
+regime. At B⊥ = 6 T, a series of large gaps appear that correspond to correlated
+Chern insulating (ChI) phases with Chern numbers C = −3, −2, −1. See
+Supplementary Information for tunnelling parameters. c, A proposed phase
+diagram for MATBG as a function of flat-band filling factor ν and magnetic
+field B⊥ in the hole-doped regime. (νLL is the Landau-level filling factor.) Near
+−3 < ν < −2, we observe an unconventional superconducting phase at low
+magnetic fields, which transitions into a pervasive pseudogap regime at high
+magnetic fields. QH, quantum Hall.
+
+cuprate superconductors27, where Andreev reflection also tracks the
+onset of phase coherence at Tc while the tunnelling gap persists above
+Tc, as we observe in MATBG (see high-temperature data in the Supplementary Information; see also ref. 23). Compared to studies8,9 that
+examine the relationship between the pseudogap and superconductivity in the cuprates, in MATBG, we have the advantage that application
+of a relatively weak B > Bc ~ 50 mT suppresses phase coherence at low
+temperatures, allowing us to probe the shape of the pseudogap spectra with high energy resolution at the lowest temperatures. Such measurements in Fig. 4a show that the shapes of the spectra in the pseudogap
+phase remain remarkably sharp and surprisingly similar to those of
+spectra observed when the sample is superconducting. While the ν = −2
+correlated insulator is suppressed below 3 T, the pseudogap remains
+present over most of the doping range −3 < ν< −2 (Fig. 4b). The density
+dependence of the STS at zero magnetic field and up to 3 T (see the
+Supplementary Information for 1 T data) reveals that the onset of a
+Nature | Vol 600 | 9 December 2021 | 243
+
+Article
+a
+
+AAb site
+
+hBN-aligned sample
+(device C)
+z (pm)
+0
+20
+
+BAa site
+
+c
+
+0
+
+Device C
+
+dI/dV (nS)
+
+100
+
+0
+
+G (μS)
+
+d
+
+53
+
+Q = +2 ~ +3
+
+200
+
+8
+
+1.08º
+AAb site
+
+STS
+
+PCS
+
+Q = –2 ~ –3
+300 Vg = –3.5 V
+
+Vg = 5.9 V
+
++4
+
++3
+
++3
+
+dI/dV (nS)
+
+6 ChI
+
+ABa site
+
+200
+
+100
+
+5 nm
+4
+
+0 CNP
+
+0
+
+10 nm
+
+0
+
+G–G moiré
+
+10 nm
+
+–2
+
+–1
+
+Valence remote band (Vg = –8 V)
+
+z (pm)
+
+–100 mV
+40
+
+z (pm)
+
+–300 mV
+45
+
+0
+
+G–hBN moiré 10 nm
+
+0
+
+–2
+
+–4
+
+–3
+–6
+10 nm
+
+–40
+
+–20
+
+0
+
+20
+
+Vs (mV)
+
+40
+
+–1
+
+0
+Vs (mV)
+
+1
+
+0
+
+–10
+
+e
+dI/dV(Vs = 0) (nS)
+
+0
+
++1
+
+z (pm)
+
+z (pm)
+
+60
+
+2
+
+G(Vs = 0) (μS)
+
+–100 mV
+
+–300 mV
+
++2
+
+Vg = 3.5 V
+
+Valence flat band (Vg = 0 V)
+
+35
+
+50
+
+Filling factor, Q
+
+b
+
++2
+
+CI
+
+B (3rd layer)
+N (3rd layer)
+Vg (V)
+
+C (1st layer)
+C (2nd layer)
+
+–3
+
+100
+
+Filling factor, Q
+
+150
+Bridge
+
+–2
+
+0
+
+0 10
+Vs (mV)
+
+CI
+
+ChI
+
++1
+
++2
+
++3
+
+2
+Vg (V)
+
+4
+
+6
+
+CNP
+60 –3
+
+–2
+
+Vg = –5.9 V
+–10 0 10
+Vs (mV)
+
+–1 Q = 0
+
++4
+
+30
+0
+
+DT-STS
+
+40
+20
+DT-PCS
+0
+–6
+
+–4
+
+–2
+
+0
+
+8
+
+Fig. 5 | DT-STS and DT-PCS on non-superconducting MATBG aligned to hBN.
+a, STM topographic image of MATBG that is perfectly commensurate with
+the underlying hBN substrate. Atomistic schematics show the stacking
+configurations of carbon, boron and nitrogen for different regions of the moiré
+pattern. b, STM topographic images of MATBG aligned to hBN for different
+values of Vs and Vg, highlighting the graphene (G–G) moiré pattern and the
+graphene–hBN (G–hBN) moiré pattern. c, Side-by-side comparison of tunnelling
+
+dI/dV(Vs, Vg) into an AAb site and point-contact G(Vs, Vg) for device C (1.08° G–G
+twist angle, 0.1% G–G interlayer strain, 0.5 ± 0.1° G–hBN twist angle), which uses a
+graphite gate instead of a silicon gate. No signatures of a superconducting gap or
+a pseudogap or of Andreev reflection can be seen in either measurement.
+d, dI/dV(Vs) spectra from c, offset by 15 nS (left) and 20 nS (right) for clarity.
+e, Tunnelling dI/dV(Vg) and PCS G(Vg) line cuts from c for Vs = 0 V.
+See Supplementary Information for tunnelling and spectroscopy parameters.
+
+sharp pseudogap in the absence of phase-coherent superconductivity
+occurs when the van Hove singularity associated with the valence band
+overlaps with EF. In this situation, the gain in the exchange energy may
+favour the formation of an isospin (spin/valley)-polarized/coherent
+ground state (or some other ordered state), which may be responsible
+for the pseudogap with sharp side peaks shown in Fig. 4a. However,
+given the remarkable resemblance between the shapes of the STS gaps
+in the pseudogap and superconducting phases, it is also possible that
+such a gap is driven by the formation of incoherent pairs for B > Bc and
+T > Tc (ref. 30). Regardless of the origin, the correlations responsible for
+the pseudogap are clearly compatible with the onset of phase-coherent
+superconductivity.
+
+these substrate-modified AA sites as AAb sites to reflect this alignment configuration. Likewise, the AB/BA sites of MATBG are made
+inequivalent by the hBN, forming ABa (BAa) regions where atoms in
+the top (bottom) graphene sheet are in register with atoms in the top
+hBN layer. This incommensurate–commensurate transition contrasts
+with the formation of a super-superlattice due to a long-wavelength
+interference between the two moiré patterns.
+DT-STS and DT-PCS on device C show that alignment with hBN
+dramatically alters the electronic properties of MATBG (Fig. 5c–e).
+In contrast to the semi-metallic behaviour we observe in unaligned
+samples at the CNP, the STS spectrum acquired at the centre of an AAb
+site shows a gap (convolved with Coulomb charging effects) at the
+Dirac point due to sublattice symmetry breaking33–35, and the resulting
+insulating behaviour of MATBG at the CNP is directly probed using PCS
+(Fig. 5c, e). In agreement with transport studies31,32, our study finds
+correlated and Chern insulators at v = +2 and +3, respectively (Fig. 5c;
+see also Supplementary Information). In contrast with unaligned
+samples, aligned samples show neither a cascade of transitions nor
+evidence for superconductivity or the pseudogap, despite the twist
+angle of this device (1.08°) being near those with the maximal Tc in
+transport measurements on unaligned devices1,5. Overall, DT-STS
+and DT-PCS show that hBN alignment is detrimental to the formation
+of both the pseudogap and the superconducting phases of MATBG,
+as evidenced by contrasting data in Figs. 1 and 2 with those of Fig. 5.
+Furthermore, the ability to identify superconductivity and a pseudogap phase in unaligned MATBG and their absence in MATBG aligned
+to hBN demonstrates the utility of our combined DT-STS and DT-PCS
+technique, as the existence of superconductivity in some flat-band
+materials36 as well as the importance of C2T symmetry37–39 is currently
+heavily contested.
+
+Quenching pairing and pseudogap with hBN
+Further insight into superconductivity and the pseudogap phase in
+MATBG is provided by studying MATBG aligned with hBN. Anecdotally,
+transport experiments do not report superconductivity in MATBG
+samples that are presumed to be well aligned with hBN (refs. 31,32). In
+examining the role of hBN alignment, STM studies are particularly
+advantageous, as they can directly visualize and distinguish the graphene–graphene (G–G) and graphene–hBN (G–hBN) moiré structures.
+Figure 5b shows a set of representative topographic images of device
+C, taken at different Vs and Vg to disentangle the different structural
+roles of the two moiré patterns (see Supplementary Information). Surprisingly, these images show perfect alignment between the AA sites
+of the G–G moiré and the carbon–boron regions of the G–BN moiré.
+This suggests a propensity for MATBG aligned to hBN to undergo a
+moiré-scale incommensurate–commensurate transition when the
+two moiré length scales are similar. In the schematic in Fig. 5a, we label
+244 | Nature | Vol 600 | 9 December 2021
+
+Discussion
+Cumulatively, our findings provide substantial evidence that pairing in
+MATBG is unconventional and distinct from that of a BCS mechanism.
+STS does not show an isotropic gap with a size consistent with that
+expected from a Tc ~ 1.2 K s-wave BCS superconductor, but shows a
+V-shaped DOS consistent with that of a nodal superconductor, where
+the details of the spectra vary with twist angle and strain (see Supplementary Information). The PCS measurements corroborate this
+picture and additionally show an unusual linear suppression of the
+Andreev excess current approaching Tc (Fig. 3d). This behaviour is
+similar to that reported in other unconventional superconductors40,41
+and has been suggested to be related to pair-breaking effects due to
+inelastic scattering from bosonic modes. There are many candidates
+for bosonic modes in MATBG, ranging from phonons to more exotic
+collective isospin fluctuations42; however, a key ingredient for this
+scenario is the presence of a sign-changing order parameter, which
+makes scattering from such modes pair breaking43. As an aside, if pairing
+is spin-triplet in nature, the ratio of the enhanced conductance near
+zero bias to the background conductance in the Andreev spectra is
+incompatible with an equal-spin-pairing order parameter (see Supplementary Information). Moreover, like the underdoped cuprate
+superconductors27, MATBG shows contrasting behaviour between the
+energy scales describing tunnelling and Andreev reflection. Without
+further experiments, it is difficult to distinguish between different
+explanations for this dichotomy (that is, a precursor broken-symmetry
+phase or preformed pairing without coherence30). Overall, the experiments presented here provide clear constraints for constructing a
+model of the pairing mechanism in this novel electronic material that
+lies beyond the BCS paradigm.
+
+Online content
+Any methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information,
+acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code
+availability are available at https://doi.org/10.1038/s41586-021-04121-x.
+
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+
+27.
+28.
+29.
+
+30.
+31.
+32.
+33.
+34.
+
+35.
+36.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+
+Cao, Y. et al. Unconventional superconductivity in magic-angle graphene superlattices.
+Nature 556, 43–50 (2018).
+Yankowitz, M. et al. Tuning superconductivity in twisted bilayer graphene. Science 363,
+1059–1064 (2019).
+Lu, X. et al. Superconductors, orbital magnets and correlated states in magic-angle
+bilayer graphene. Nature 574, 653–657 (2019).
+Cao, Y. et al. Correlated insulator behaviour at half-filling in magic-angle graphene
+superlattices. Nature 556, 80–84 (2018).
+Saito, Y., Ge, J., Watanabe, K., Taniguchi, T. & Young, A. F. Independent superconductors
+and correlated insulators in twisted bilayer graphene. Nat. Phys. 16, 926–930 (2020).
+Stepanov, P. et al. Untying the insulating and superconducting orders in magic-angle
+graphene. Nature 583, 375–378 (2020).
+Bardeen, J. Electron-phonon interactions and superconductivity. Science 181, 1209–1214
+(1973).
+Damascelli, A., Hussain, Z. & Shen, Z.-X. Angle-resolved photoemission studies of the
+cuprate superconductors. Rev. Mod. Phys. 75, 473–541 (2003).
+Fischer, Ø., Kugler, M., Maggio-Aprile, I., Berthod, C. & Renner, C. Scanning tunneling
+spectroscopy of high-temperature superconductors. Rev. Mod. Phys. 79, 353–419 (2007).
+Isobe, H., Yuan, N. F. Q. & Fu, L. Unconventional superconductivity and density waves in
+twisted bilayer graphene. Phys. Rev. X 8, 041041 (2018).
+Liu, C.-C., Zhang, L.-D., Chen, W.-Q. & Yang, F. Chiral spin density wave and d + id
+superconductivity in the magic-angle-twisted bilayer graphene. Phys. Rev. Lett. 121,
+217001 (2018).
+
+37.
+
+38.
+
+39.
+40.
+
+41.
+42.
+43.
+
+Kennes, D. M., Lischner, J. & Karrasch, C. Strong correlations and d + id superconductivity
+in twisted bilayer graphene. Phys. Rev. B 98, 241407 (2018).
+Wu, F., MacDonald, A. H. & Martin, I. Theory of phonon-mediated superconductivity in
+twisted bilayer graphene. Phys. Rev. Lett. 121, 257001 (2018).
+Lian, B., Wang, Z. & Bernevig, B. A. Twisted bilayer graphene: a phonon-driven
+superconductor. Phys. Rev. Lett. 122, 257002 (2019).
+Wong, D. et al. A modular ultra-high vacuum millikelvin scanning tunneling microscope.
+Rev. Sci. Instrum. 91, 023703 (2020).
+Kerelsky, A. et al. Maximized electron interactions at the magic angle in twisted bilayer
+graphene. Nature 572, 95–100 (2019).
+Choi, Y. et al. Electronic correlations in twisted bilayer graphene near the magic angle.
+Nat. Phys. 15, 1174–1180 (2019).
+Jiang, Y. et al. Charge order and broken rotational symmetry in magic-angle twisted
+bilayer graphene. Nature 573, 91–95 (2019).
+Xie, Y. et al. Spectroscopic signatures of many-body correlations in magic-angle twisted
+bilayer graphene. Nature 572, 101–105 (2019).
+Wong, D. et al. Cascade of electronic transitions in magic-angle twisted bilayer graphene.
+Nature 582, 198–202 (2020).
+Zondiner, U. et al. Cascade of phase transitions and Dirac revivals in magic-angle
+graphene. Nature 582, 203–208 (2020).
+Nuckolls, K. P. et al. Strongly correlated Chern insulators in magic-angle twisted bilayer
+graphene. Nature 588, 610–615 (2020).
+Choi, Y. et al. Interaction-driven band flattening and correlated phases in twisted bilayer
+graphene. Nat. Phys. https://doi.org/10.1038/s41567-021-01359-0 (2021).
+Saito, Y. et al. Isospin Pomeranchuk effect in twisted bilayer graphene. Nature 592,
+220–224 (2021).
+Rozen, A. et al. Entropic evidence for a Pomeranchuk effect in magic-angle graphene.
+Nature 592, 214–219 (2021).
+Rodan-Legrain, D. et al. Highly tunable junctions and non-local Josephson effect in
+magic-angle graphene tunnelling devices. Nat. Nanotechnol. 16, 769–775 16, 769–775
+(2021).
+Deutscher, G. Andreev–Saint-James reflections: a probe of cuprate superconductors.
+Rev. Mod. Phys. 77, 109–135 (2005).
+Dubouchet, T. et al. Collective energy gap of preformed Cooper pairs in disordered
+superconductors. Nat. Phys. 15, 233–236 (2019).
+Blonder, G. E., Tinkham, M. & Klapwijk, T. M. Transition from metallic to tunneling regimes
+in superconducting microconstrictions: excess current, charge imbalance, and
+supercurrent conversion. Phys. Rev. B 25, 4515–4532 (1982).
+Randeria, M., Trivedi, N., Moreo, A. & Scalettar, R. T. Pairing and spin gap in the normal
+state of short coherence length superconductors. Phys. Rev. Lett. 69, 2001–2004 (1992).
+Serlin, M. et al. Intrinsic quantized anomalous Hall effect in a moiré heterostructure.
+Science 367, 900–903 (2020).
+Sharpe, A. L. et al. Emergent ferromagnetism near three-quarters filling in twisted bilayer
+graphene. Science 365, 605–608 (2019).
+Hunt, B. et al. Massive Dirac fermions and Hofstadter butterfly in a van der Waals
+heterostructure. Science 340, 1427–1430 (2013).
+Shi, J., Zhu, J. & MacDonald, A. H. Moiré commensurability and the quantum anomalous
+Hall effect in twisted bilayer graphene on hexagonal boron nitride. Phys. Rev. B 103,
+075122 (2021).
+Zhang, Y.-H., Mao, D. & Senthil, T. Twisted bilayer graphene aligned with hexagonal boron
+nitride: anomalous Hall effect and a lattice model. Phys. Rev. Res. 1, 033126 (2019).
+He, M. et al. Symmetry breaking in twisted double bilayer graphene. Nat. Phys. 17, 26–30
+(2021).
+Khalaf, E., Chatterjee, S., Bultinck, N., Zaletel, M. P. & Vishwanath, A. Charged skyrmions
+and topological origin of superconductivity in magic-angle graphene. Sci. Adv. 7,
+eabf5299 (2021).
+Park, J. M., Cao, Y., Watanabe, K., Taniguchi, T. & Jarillo-Herrero, P. Tunable strongly
+coupled superconductivity in magic-angle twisted trilayer graphene. Nature 590,
+249–255 (2021).
+Hao, Z. et al. Electric field–tunable superconductivity in alternating-twist magic-angle
+trilayer graphene. Science 371, 1133–1138 (2021).
+Goll, G., Löhneysen, H. V., Yanson, I. K. & Taillefer, L. Anisotropy of point-contact
+spectra in the heavy-fermion superconductor UPt3. Phys. Rev. Lett. 70, 2008–2011
+(1993).
+Laube, F., Goll, G., Eschrig, M., Fogelström, M. & Werner, R. Excess current in
+superconducting Sr2RuO4. Phys. Rev. B 69, 014516 (2004).
+Khalaf, E., Bultinck, N., Vishwanath, A. & Zaletel, M. P. Soft modes in magic angle twisted
+bilayer graphene. Preprint at https://arxiv.org/abs/2009.14827v2 (2020).
+Millis, A. J., Sachdev, S. & Varma, C. M. Inelastic scattering and pair breaking in
+anisotropic and isotropic superconductors. Phys. Rev. B 37, 4975–4986 (1988).
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional affiliations.
+© The Author(s), under exclusive licence to Springer Nature Limited 2021
+
+Nature | Vol 600 | 9 December 2021 | 245
+
+Article
+Methods
+STM measurements
+STM/STS measurements were performed on a home-built
+dilution-refrigerator STM15 with tungsten tips prepared on a Cu(111)
+surface. The carrier density in MATBG was tuned by a gate voltage Vg
+applied to Si (or a graphite gate for device C), while Vs was applied to
+the sample. dI/dV was measured through lock-in detection of the a.c.
+tunnel current in response to an a.c. modulation Vrms added to Vs. Initial
+tunnelling parameters for STS were chosen to avoid phonon-induced
+inelastic tunnelling44.
+We used two experimental protocols for avoiding unwanted local
+gating from the tip20. First, we used an STM tip that had been freshly
+prepared (field emission, pulsing, poking) and calibrated on a cleaned
+single-crystal metal, paying particular attention to protecting the tip
+from polymer residue contamination that often lies on the surface of
+two-dimensional material devices. Second, we used an STM tip and
+metal crystal made of materials (for example, tungsten and copper)
+that are workfunction-matched with graphene. Careful preparation
+of the tip and sample are essential because when polymer residue on
+the device’s surface attaches to the tip, spectroscopic features of the
+tunnel junction are compromised, and topographic images often show
+‘drag patterns’ caused by the motion of a particle in the tunnel junction or by flexing of the tip apex45–47. As these drag patterns may be
+misinterpreted as tip-induced strain effects, we provide evidence of
+our clean and stable tip–sample junctions in Supplementary Fig. 16,
+which shows two topographic images without a drag pattern that are
+essentially identical despite a three-orders-of-magnitude change in
+the junction resistance.
+PCS measurements
+PCS measurements were performed by moving the STM tip a few nanometres (relative to the tip height during tunnelling) into the MATBG
+surface. This does not damage the graphene. Differential conductance
+G(Vs, Vg) was then measured through lock-in detection of the a.c. current
+in response to an a.c. modulation Vrms added to Vs, while dG/dVs(Vs, Vg)
+is simply the numerical derivative of the measured G(Vs, Vg). We note
+that the conductance G(Vs) appears to be slightly suppressed around
+zero bias in the metallic state of MATBG at millikelvin temperatures,
+but this suppression vanishes at T = 1.3 K. As this suppression is present
+at all Vg and at magnetic fields above Bc, we conjecture that this is due
+to non-Ohmic contact, possibly between the graphene and the Ti/Au
+electrodes. When MATBG is superconducting, the finiteness of the
+critical current and the proximity effect may also contribute to the suppression of the conductance around the Andreev peaks48. See the Supplementary Information for more details on the PCS measurements.
+The data in Fig. 2b, c, e, f were acquired together, and the data in
+Fig. 2d, g were acquired together. Between these two sets of data,
+the tip was withdrawn from the surface, and then point contact was
+re-established in the same location. The temperature-dependent data
+in Fig. 2d were acquired by heating the 3He–4He mixture to T = 1.3 K
+and then measuring PCS as the dilution refrigerator was cooled. The
+temperatures in Fig. 2d were measured via a RuO2 thermometer in
+the STM head. The tip probably drifts relative to the sample during
+this measurement.
+As Yankowitz et al.2 have shown that superconductivity in twisted
+bilayer graphene can be tuned with pressure, we examined the role of
+tip-induced pressure/strain during a PCS measurement. Supplementary Fig. 6 shows tip-height-dependent PCS, showing that the energy
+scale for Andreev reflection ΔAR is unchanged as the tip is pressed further into MATBG. This, along with the fact that the density range, Tc and
+
+Bc of superconductivity in PCS match those of transport experiments,
+verifies the one-to-one correspondence of STS and PCS at the same
+location. See Supplementary Section D for further discussion.
+
+Sample preparation
+Devices were fabricated using a ‘tear-and-stack’ method49 in which a
+single graphene sheet is torn in half by van der Waals interaction with
+hBN. The two halves are rotated relative to each other and stacked to
+form MATBG. As device B is device A from ref. 20, a full description of
+the fabrication procedure can be found therein. To summarize, graphene and hBN are picked up with polyvinyl alcohol. Then, to flip the
+heterostructure upside down, the heterostructure is pressed against
+an intermediate structure consisting of polymethyl methacrylate/
+transparent tape/Sylgard 184, and the polyvinyl alcohol is dissolved
+via water injection. The heterostructure is then transferred to a SiO2/Si
+chip with pre-patterned Ti/Au electrodes. Residual polymer is dissolved
+in dichloromethane, water, acetone and isopropyl alcohol. This chip is
+annealed in ultrahigh vacuum at 170 °C overnight and 400 °C for 2 h.
+Device A is prepared in a similar manner, except the polymethyl methacrylate is replaced with Elvacite 2550, and N-methyl-2-pyrrolidone is
+added as a solvent. For device C, the intermediate structure consists
+only of Sylgard 184 on a glass slide, and a graphite gate is added to the
+heterostructure.
+
+Data availability
+The data that support the findings of this study are available at https://
+doi.org/10.5281/zenodo.5722484.
+44. Zhang, Y. et al. Giant phonon-induced conductance in scanning tunnelling spectroscopy
+of gate-tunable graphene. Nat. Phys. 4, 627–630 (2008).
+45. Hapala, P. et al. Mechanism of high-resolution STM/AFM imaging with functionalized tips.
+Phys. Rev. B 90, 085421 (2014).
+46. Stroscio, J. A. & Celotta, R. J. Controlling the dynamics of a single atom in lateral atom
+manipulation. Science 306, 242–247 (2004).
+47. Wolter, B. et al. Spin friction observed on the atomic scale. Phys. Rev. Lett. 109, 116102
+(2012).
+48. Daghero, D. & Gonnelli, R. S. Probing multiband superconductivity by point-contact
+spectroscopy. Supercond. Sci. Technol. 23, 043001 (2010).
+49. Kim, K. et al. Van der Waals heterostructures with high accuracy rotational alignment.
+Nano Lett. 16, 1989–1995 (2016).
+Acknowledgements We thank P. Jarillo-Herrero, A. H. MacDonald and S. A. Kivelson for helpful
+discussions. We thank C.-L. Chiu, G. Farahi and H. Ding for helpful technical discussions. This
+work was primarily supported by the Gordon and Betty Moore Foundation’s EPiQS initiative
+grant GBMF9469 and DOE-BES grant DE-FG02-07ER46419 to A.Y. Other support for the
+experimental work was provided by NSF-MRSEC through the Princeton Center for Complex
+Materials NSF-DMR- 2011750 and NSF-DMR-1904442, ExxonMobil through the Andlinger
+Center for Energy and the Environment at Princeton, and the Princeton Catalysis Initiative. A.Y.
+acknowledges the hospitality of the Aspen Center for Physics, which is supported by the
+National Science Foundation grant PHY-1607611, and Trinity College, Cambridge, UK, where
+part of this work was carried out with the support of, in part, a QuantEmX grant from ICAM and
+the Gordon and Betty Moore Foundation through the grant GBMF9616. K.W. and T.T.
+acknowledge support from the Elemental Strategy Initiative conducted by the MEXT, Japan,
+grant JPMXP0112101001, and JSPS KAKENHI grants 19H05790 and JP20H00354.
+Author contributions M.O., K.P.N., D.W. and A.Y. designed the experiment. M.O., D.W. and K.P.N.
+fabricated the devices used for the study. M.O., K.P.N., D.W. and R.L.L. carried out STM/STS and
+PCS measurements, with invaluable input from X.L. on the latter. M.O., D.W. and K.P.N.
+performed the data analysis. K.W. and T.T. synthesized the hBN crystals. All authors discussed
+the results and contributed to the writing of the manuscript.
+Competing interests The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains supplementary material available at
+https://doi.org/10.1038/s41586-021-04121-x.
+Correspondence and requests for materials should be addressed to Ali Yazdani.
+Peer review information Nature thanks Dante Kennes and the other, anonymous, reviewer(s)
+for their contribution to the peer review of this work.
+Reprints and permissions information is available at http://www.nature.com/reprints.
+
+

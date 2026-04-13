@@ -1,0 +1,38 @@
+{
+  "random_charges": {
+    "n_frames": 100,
+    "n_atoms": 128,
+    "charge_recovery_accuracy": 0.43609375,
+    "true_charge_vs_potential_corr": -0.16723787197336953
+  },
+  "charged_dimer": {
+    "n_frames": 60,
+    "short_range": {
+      "mae": 0.29113252482218105,
+      "rmse": 0.36254064413835707,
+      "r2": 0.09251796645233656,
+      "coef": {
+        "cross_exp_short": -0.586616566791204,
+        "intra_asym": 1.1867921021554695
+      },
+      "intercept": 0.7140993747491249
+    },
+    "latent_long_range": {
+      "mae": 0.28957584918812895,
+      "rmse": 0.3560210306686316,
+      "r2": 0.12486321776355536,
+      "coef": {
+        "cross_exp_short": -0.20942797478285927,
+        "intra_asym": 1.0924059185251966,
+        "inv_sep": 48.88883787418696,
+        "cross_inv_sum": -2.834863728004384
+      },
+      "intercept": 0.3677463506949358
+    }
+  },
+  "ag3": {
+    "n_frames": 60,
+    "degenerate_across_charge_states_fraction": 1.0,
+    "note": "In the provided Ag3 dataset the +1 and -1 geometries share identical energies, so charge embedding is not testable here."
+  }
+}

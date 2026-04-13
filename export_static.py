@@ -32,6 +32,7 @@ TEXT_EXTS = {
     '.sql', '.c', '.cpp', '.h', '.java', '.go', '.rs', '.jl', '.m', '.ipynb',
 }
 IMG_EXTS = {'.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp', '.svg'}
+RESEARCHHARNESS_LABEL = "ResearchHarness"
 
 MODEL_ESTIMATED_USD_PER_MIN = {
     "gpt-5.4": 0.15,
@@ -81,6 +82,17 @@ def _load_instructions_template():
 INSTRUCTIONS_TEMPLATE = _load_instructions_template()
 
 
+def _load_agent_presets():
+    agents_path = RCB_SOURCE / "evaluation" / "agents.json"
+    if not agents_path.exists():
+        return {}
+    with open(agents_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+AGENT_PRESETS = _load_agent_presets()
+
+
 # ---------------------------------------------------------------------------
 # Helpers (self-contained, no RCB imports)
 # ---------------------------------------------------------------------------
@@ -93,6 +105,24 @@ def _list_tasks():
         d.name for d in TASKS_DIR.iterdir()
         if d.is_dir() and (d / "task_info.json").exists()
     )
+
+
+def _order_agent_labels(agent_names):
+    names = set(agent_names)
+    ordered = []
+    for preset in AGENT_PRESETS.values():
+        label = preset.get("label", "")
+        if label in names and label != RESEARCHHARNESS_LABEL and label not in ordered:
+            ordered.append(label)
+    ordered.extend(
+        sorted(
+            name for name in names
+            if name not in ordered and name != RESEARCHHARNESS_LABEL
+        )
+    )
+    if RESEARCHHARNESS_LABEL in names:
+        ordered.append(RESEARCHHARNESS_LABEL)
+    return ordered
 
 
 def _list_tasks_grouped(task_ids=None):
@@ -771,7 +801,8 @@ def export_leaderboard():
     for (t, a) in best:
         tasks_set.add(t)
         agents_set.add(a)
-    tasks_list, agents_list = sorted(tasks_set), sorted(agents_set)
+    tasks_list = sorted(tasks_set)
+    agents_list = _order_agent_labels(agents_set)
     scores = {a: {t: best[(t, a)] for t in tasks_list if (t, a) in best} for a in agents_list}
     frontier = {}
     for task in tasks_list:

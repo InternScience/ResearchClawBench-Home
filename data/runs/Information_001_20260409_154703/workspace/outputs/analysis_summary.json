@@ -1,0 +1,57 @@
+{
+  "images": [
+    {
+      "image": "demo1.png",
+      "width": 1024,
+      "height": 768,
+      "pixels_m": 0.786432
+    },
+    {
+      "image": "demo2.png",
+      "width": 2250,
+      "height": 1500,
+      "pixels_m": 3.375
+    },
+    {
+      "image": "method_case.png",
+      "width": 2500,
+      "height": 1681,
+      "pixels_m": 4.2025
+    }
+  ],
+  "best_regions": [
+    {
+      "image": "demo2.png",
+      "patch_size": 128,
+      "x1": 2048,
+      "y1": 128,
+      "x2": 2176,
+      "y2": 256,
+      "saliency_score": 7.41843123577829,
+      "entropy": 5.656735807817263,
+      "edge_density": 0.26690673828125
+    },
+    {
+      "image": "method_case.png",
+      "patch_size": 128,
+      "x1": 896,
+      "y1": 512,
+      "x2": 1024,
+      "y2": 640,
+      "saliency_score": 7.005266650755367,
+      "entropy": 3.7490114476114815,
+      "edge_density": 0.28021240234375
+    },
+    {
+      "image": "demo1.png",
+      "patch_size": 128,
+      "x1": 640,
+      "y1": 128,
+      "x2": 768,
+      "y2": 256,
+      "saliency_score": 6.424925450093033,
+      "entropy": 5.367990409487142,
+      "edge_density": 0.22222900390625
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "n_curves_total": 836,
+  "n_cs2": 199,
+  "n_nasa": 636,
+  "n_oxford": 1,
+  "param_mapping": {
+    "Qmax_Ah": "effective stoichiometric capacity / lithium inventory",
+    "R0_Ohm": "lumped ohmic + charge-transfer resistance",
+    "kappa_V": "polarization amplitude (proxy for kinetic limitation)",
+    "tau_s": "diffusion relaxation time (proxy for particle radius^2 / diffusivity)",
+    "alpha_ocv": "OCV curve scaling / active material utilization factor",
+    "beta_temp": "thermal-voltage coupling coefficient",
+    "gamma_age": "aging intensity factor"
+  },
+  "average_errors": {
+    "rmse_v": {
+      "CS2_36": 0.0863,
+      "NASA": 0.3899,
+      "Oxford": 0.1194
+    },
+    "mae_v": {
+      "CS2_36": 0.0563,
+      "NASA": 0.3413,
+      "Oxford": 0.1045
+    }
+  }
+}

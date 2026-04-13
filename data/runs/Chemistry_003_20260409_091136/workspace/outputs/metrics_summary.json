@@ -1,0 +1,46 @@
+{
+  "dataset_summary": [
+    {
+      "dataset": "random_charges",
+      "n_frames": 100,
+      "n_atoms": 128,
+      "has_energy": false,
+      "has_forces": true,
+      "notes": "Synthetic Coulomb plus repulsive benchmark with provided true charges."
+    },
+    {
+      "dataset": "charged_dimer",
+      "n_frames": 60,
+      "n_atoms": 8,
+      "has_energy": true,
+      "has_forces": true,
+      "notes": "Two charged methane-like dimers at varying separation."
+    },
+    {
+      "dataset": "ag3_chargestates",
+      "n_frames": 60,
+      "n_atoms": 3,
+      "has_energy": true,
+      "has_forces": true,
+      "notes": "Ag3 trimers with explicit +/- 1 charge-state labels."
+    }
+  ],
+  "random_charges": {
+    "single_frame_charge_recovery_acc": 1.0,
+    "dataset_charge_sign_acc": 0.43609375,
+    "force_magnitude_r2_from_charge_aware_features": 0.15666226692446839,
+    "force_magnitude_mae": 0.13593645550372768
+  },
+  "charged_dimer": {
+    "short_range_test_mae": 0.39297205109524064,
+    "short_range_test_rmse": 0.49493811890347433,
+    "electrostatic_test_mae": 0.31684444178069904,
+    "electrostatic_test_rmse": 0.4777817880960633,
+    "electrostatic_test_r2": -0.1261034257081286
+  },
+  "ag3_chargestates": {
+    "geom_only_energy_mae": 0.38029506240900823,
+    "charge_conditioned_energy_mae": 0.38668632322886964,
+    "charge_state_classification_acc_from_geometry": 0.3888888888888889
+  }
+}

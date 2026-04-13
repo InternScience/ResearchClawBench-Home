@@ -1,0 +1,244 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "train_altermagnet.py",
+    "path": "code/train_altermagnet.py",
+    "type": "file",
+    "size": 13851,
+    "mtime": 1775800559.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_data.pt",
+    "path": "data/candidate_data.pt",
+    "type": "file",
+    "size": 2451457,
+    "mtime": 1772431610.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "finetune_data.pt",
+    "path": "data/finetune_data.pt",
+    "type": "file",
+    "size": 4904635,
+    "mtime": 1772431608.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "pretrain_data.pt",
+    "path": "data/pretrain_data.pt",
+    "type": "file",
+    "size": 12321899,
+    "mtime": 1772431606.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "baseline_models.csv",
+    "path": "outputs/baseline_models.csv",
+    "type": "file",
+    "size": 409,
+    "mtime": 1775800714.0,
+    "exported": true
+  },
+  {
+    "name": "candidate_describe.csv",
+    "path": "outputs/candidate_describe.csv",
+    "type": "file",
+    "size": 2900,
+    "mtime": 1775800569.0,
+    "exported": true
+  },
+  {
+    "name": "candidate_embeddings.npy",
+    "path": "outputs/candidate_embeddings.npy",
+    "type": "file",
+    "size": 256128,
+    "mtime": 1775800638.0,
+    "exported": false
+  },
+  {
+    "name": "candidate_predictions.csv",
+    "path": "outputs/candidate_predictions.csv",
+    "type": "file",
+    "size": 31017,
+    "mtime": 1775800638.0,
+    "exported": true
+  },
+  {
+    "name": "cv_metrics.csv",
+    "path": "outputs/cv_metrics.csv",
+    "type": "file",
+    "size": 540,
+    "mtime": 1775800625.0,
+    "exported": true
+  },
+  {
+    "name": "cv_overall_metrics.csv",
+    "path": "outputs/cv_overall_metrics.csv",
+    "type": "file",
+    "size": 144,
+    "mtime": 1775800625.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.csv",
+    "path": "outputs/data_overview.csv",
+    "type": "file",
+    "size": 339,
+    "mtime": 1775800569.0,
+    "exported": true
+  },
+  {
+    "name": "discovery_metrics.csv",
+    "path": "outputs/discovery_metrics.csv",
+    "type": "file",
+    "size": 219,
+    "mtime": 1775800638.0,
+    "exported": true
+  },
+  {
+    "name": "final_model.pt",
+    "path": "outputs/final_model.pt",
+    "type": "file",
+    "size": 157153,
+    "mtime": 1775800638.0,
+    "exported": false
+  },
+  {
+    "name": "finetune_describe.csv",
+    "path": "outputs/finetune_describe.csv",
+    "type": "file",
+    "size": 2897,
+    "mtime": 1775800569.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 14 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4055967,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8225125,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1212404,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2144524,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "baseline_comparison.png",
+    "path": "report/images/baseline_comparison.png",
+    "type": "file",
+    "size": 82651,
+    "mtime": 1775800747.0,
+    "exported": true
+  },
+  {
+    "name": "candidate_discovery.png",
+    "path": "report/images/candidate_discovery.png",
+    "type": "file",
+    "size": 130243,
+    "mtime": 1775800747.0,
+    "exported": true
+  },
+  {
+    "name": "cv_performance.png",
+    "path": "report/images/cv_performance.png",
+    "type": "file",
+    "size": 134604,
+    "mtime": 1775800747.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 110747,
+    "mtime": 1775800746.0,
+    "exported": true
+  },
+  {
+    "name": "feature_importance.png",
+    "path": "report/images/feature_importance.png",
+    "type": "file",
+    "size": 104549,
+    "mtime": 1775800748.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 15677,
+    "mtime": 1775800844.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6080,
+    "mtime": 1775800408.0,
+    "exported": true
+  }
+]

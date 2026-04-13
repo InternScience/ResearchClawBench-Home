@@ -1,0 +1,52 @@
+{
+  "dataset_summary": {
+    "n_frames_total": 1738,
+    "n_train": 1390,
+    "n_test": 348,
+    "n_features": 51,
+    "attack_positive_rate": 0.3377445339470656,
+    "sniffing_positive_rate": 0.1334867663981588,
+    "reference_rows": 300,
+    "reference_columns": 570
+  },
+  "model_results": [
+    {
+      "target": "Attack",
+      "selected_model": "extra_trees",
+      "decision_threshold": 0.05,
+      "accuracy": 0.12643678160919541,
+      "balanced_accuracy": 0.5,
+      "precision": 0.12643678160919541,
+      "recall": 1.0,
+      "f1": 0.22448979591836735,
+      "average_precision": 0.164483383201631,
+      "roc_auc": 0.6540819377990431,
+      "positive_rate_true": 0.12643678160919541,
+      "positive_rate_pred": 1.0,
+      "average_precision_ci_low": 0.12483290523755967,
+      "average_precision_ci_high": 0.2152547042830076,
+      "roc_auc_ci_low": 0.6000661858499724,
+      "roc_auc_ci_high": 0.704772586084487,
+      "reference_probability_correlation": 0.20061169819915628
+    },
+    {
+      "target": "Sniffing",
+      "selected_model": "extra_trees",
+      "decision_threshold": 0.15,
+      "accuracy": 0.8132183908045977,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.5120540687657227,
+      "roc_auc": 0.7453655884751291,
+      "positive_rate_true": 0.1867816091954023,
+      "positive_rate_pred": 0.0,
+      "average_precision_ci_low": 0.38540882315790215,
+      "average_precision_ci_high": 0.6336724460677389,
+      "roc_auc_ci_low": 0.6677245702538984,
+      "roc_auc_ci_high": 0.8138388384777105,
+      "reference_probability_correlation": 0.20548534398099794
+    }
+  ]
+}
