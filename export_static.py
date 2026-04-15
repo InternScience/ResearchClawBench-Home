@@ -38,6 +38,19 @@ MODEL_ESTIMATED_USD_PER_MIN = {
     "gpt-5.4": 0.15,
     "claude-sonnet-4-6": 0.20,
     "claude-opus-4-6": 0.40,
+    "grok-4.1": 0.03,
+    "kimi-k2.5": 0.03,
+    "mimo-v2-pro": 0.04,
+    "qwen3.6-plus": 0.02,
+}
+MODEL_DISPLAY_NAMES = {
+    "gpt-5.4": "GPT-5.4",
+    "claude-opus-4-6": "Opus 4.6",
+    "claude-sonnet-4-6": "Sonnet 4.6",
+    "grok-4.1": "Grok-4.1",
+    "kimi-k2.5": "Kimi-K2.5",
+    "mimo-v2-pro": "MiMo-V2-Pro",
+    "qwen3.6-plus": "Qwen3.6-Plus",
 }
 AGENT_DEFAULT_MODELS = {
     "Claude Code": "claude-opus-4-6",
@@ -49,7 +62,7 @@ AGENT_DEFAULT_MODELS = {
 # Bump when task export output/schema changes and existing cached signatures must be invalidated.
 TASK_EXPORT_VERSION = 4
 # Bump when run export output/schema changes and existing cached signatures must be invalidated.
-RUN_EXPORT_VERSION = 4
+RUN_EXPORT_VERSION = 5
 TASK_EXPORT_MANIFEST = EXPORT_STATE_DIR / "task_export_manifest.json"
 RUN_EXPORT_MANIFEST = EXPORT_STATE_DIR / "run_export_manifest.json"
 RUN_OUTPUT_FILES = ["_agent_output.jsonl", "_claude_output.jsonl"]
@@ -190,25 +203,27 @@ def _normalize_model_name(model):
     return raw
 
 
-def _normalize_pricing_model(model):
+def _canonical_model_key(model):
     raw = _normalize_model_name(model)
-    if raw in MODEL_ESTIMATED_USD_PER_MIN:
-        return raw
-    if raw.startswith("claude-sonnet-4-6"):
+    if not raw:
+        return ""
+    key = raw.lower()
+    if key.startswith("claude-sonnet-4-6"):
         return "claude-sonnet-4-6"
-    if raw.startswith("claude-opus-4-6"):
+    if key.startswith("claude-opus-4-6"):
         return "claude-opus-4-6"
-    return raw
+    return key
+
+
+def _normalize_pricing_model(model):
+    return _canonical_model_key(model)
 
 
 def _format_model_display(model):
     normalized = _normalize_model_name(model)
-    if normalized == "gpt-5.4":
-        return "GPT-5.4"
-    if normalized.startswith("claude-opus-4-6"):
-        return "Opus 4.6"
-    if normalized.startswith("claude-sonnet-4-6"):
-        return "Sonnet 4.6"
+    key = _canonical_model_key(model)
+    if key in MODEL_DISPLAY_NAMES:
+        return MODEL_DISPLAY_NAMES[key]
     return normalized
 
 
@@ -637,6 +652,7 @@ def export_runs(runs=None):
         valid_run_ids.add(run["run_id"])
         run_out_dir = runs_dir / run["run_id"]
         output_path = _find_run_output_path(ws)
+        cost_usd = _estimate_run_cost_usd(run.get("model", ""), meta.get("duration_seconds"))
         signature = _compute_run_export_signature(ws)
         next_manifest[run["run_id"]] = signature
         if prev_manifest.get(run["run_id"]) == signature and _run_export_complete(run_out_dir, has_output=bool(output_path)):
@@ -655,6 +671,7 @@ def export_runs(runs=None):
                 "model": run.get("model", ""),
                 "model_display": run.get("model_display", ""),
                 "duration_seconds": meta.get("duration_seconds"),
+                "cost_usd": cost_usd,
                 "score": score_data,
                 "report": report_path.read_text(encoding="utf-8", errors="replace"),
             }
@@ -750,6 +767,7 @@ def export_runs(runs=None):
             "model": run.get("model", ""),
             "model_display": run.get("model_display", ""),
             "duration_seconds": meta.get("duration_seconds"),
+            "cost_usd": cost_usd,
             "total_score": score_data.get("total_score"),
         })
 
