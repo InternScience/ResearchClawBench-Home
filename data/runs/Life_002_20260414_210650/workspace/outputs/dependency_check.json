@@ -1,0 +1,20 @@
+{
+  "python_modules": {
+    "Bio": false,
+    "numpy": true,
+    "scipy": true,
+    "matplotlib": true,
+    "pandas": true,
+    "seaborn": true
+  },
+  "alignment_binaries": {
+    "foldseek": null,
+    "USalign": null,
+    "usalign": null,
+    "TMalign": null,
+    "mmalign": null,
+    "mican": null
+  },
+  "pdf_parser": "ReadPDF returned an error for all related_work PDFs in this environment",
+  "implication": "Biopython and standard structure-alignment binaries are unavailable, so the analysis should implement a lightweight numpy/scipy-based PDB parser and alignment approximation. Related work extraction used a custom PDF text fallback."
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "claim": "Long-range-aware descriptors improve charged-dimer energy prediction relative to local-only descriptors.",
+    "artifact": "outputs/charged_dimer_metrics.json; report/images/charged_dimer_binding_curve.png",
+    "status": "supported"
+  },
+  {
+    "claim": "Charge-state information materially improves Ag3 energy prediction.",
+    "artifact": "outputs/ag3_metrics.json; report/images/ag3_charge_state_comparison.png",
+    "status": "not_supported"
+  },
+  {
+    "claim": "Random charge labels cannot be recovered from geometry alone in the provided random_charges dataset.",
+    "artifact": "outputs/random_charges_metrics.json; report/images/random_charges_interpretability.png",
+    "status": "supported"
+  }
+]

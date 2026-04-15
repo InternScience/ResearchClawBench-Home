@@ -1,0 +1,15 @@
+{
+  "task_goal": "Solve a smooth convex objective with possible nonsmooth regularization using an accelerated method under a unified variable and operator splitting perspective.",
+  "named_commitments": [
+    "Variable and Operator Splitting (VOS) framework",
+    "derive Nesterov's accelerated method and ADMM from continuous-time dynamical systems",
+    "prove or empirically support linear convergence using strong Lyapunov functions",
+    "use provided ill-conditioned Lasso dataset for convergence verification"
+  ],
+  "primary_outputs": [
+    "optimal solution estimate x*",
+    "convergence comparisons",
+    "Lyapunov-inspired diagnostics",
+    "research report with figures"
+  ]
+}

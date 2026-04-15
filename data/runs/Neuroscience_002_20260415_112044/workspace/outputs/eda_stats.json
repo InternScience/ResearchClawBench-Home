@@ -1,0 +1,30 @@
+{
+  "train_shape": [
+    168000,
+    22
+  ],
+  "test_shape": [
+    72000,
+    22
+  ],
+  "label_balance_train": {
+    "0.0": 0.9006726190476191,
+    "1.0": 0.09932738095238096
+  },
+  "label_balance_test": {
+    "0.0": 0.8984305555555555,
+    "1.0": 0.10156944444444445
+  },
+  "degr_dist_train": {
+    "Mixed": 0.25,
+    "Misalignment": 0.25,
+    "Average": 0.25,
+    "Missing Sections": 0.25
+  },
+  "degr_dist_test": {
+    "Mixed": 0.25,
+    "Misalignment": 0.25,
+    "Average": 0.25,
+    "Missing Sections": 0.25
+  }
+}

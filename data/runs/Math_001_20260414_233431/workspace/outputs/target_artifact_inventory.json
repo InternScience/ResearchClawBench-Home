@@ -1,0 +1,18 @@
+{
+  "primary_artifacts": [
+    "outputs/convergence_data.npz",
+    "outputs/phase_transition.npz",
+    "outputs/condition_number.npz",
+    "outputs/solutions.npz"
+  ],
+  "figures": [
+    "report/images/fig1_convergence.png",
+    "report/images/fig2_phase_transition.png",
+    "report/images/fig3_condition_number.png",
+    "report/images/fig4_sparsity.png",
+    "report/images/fig5_vos_framework.png",
+    "report/images/fig6_recovery_error.png"
+  ],
+  "report": "report/report.md",
+  "code": "code/vos_analysis.py"
+}

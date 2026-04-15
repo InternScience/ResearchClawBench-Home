@@ -1,0 +1,17 @@
+[
+  {
+    "claim": "A non-linear surrogate can predict the synthetic property from the provided descriptor with high fidelity.",
+    "evidence_artifact": "outputs/property_prediction_metrics.json",
+    "figure": "report/images/property_prediction_validation.png"
+  },
+  {
+    "claim": "The structure-generation proxy identifies low-anisotropy lattice candidates in the provided synthetic sequence data.",
+    "evidence_artifact": "outputs/structure_candidates.csv",
+    "figure": "report/images/structure_generation_analysis.png"
+  },
+  {
+    "claim": "Gradient-based autonomous search improves the predicted process yield relative to the provided initial condition.",
+    "evidence_artifact": "outputs/optimization_recommendation.json",
+    "figure": "report/images/autonomous_optimization_landscape.png"
+  }
+]

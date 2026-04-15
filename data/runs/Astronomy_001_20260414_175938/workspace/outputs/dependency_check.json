@@ -1,0 +1,15 @@
+{
+  \"libraries\": {
+    \"numpy\": \"1.26.4\",
+    \"matplotlib\": \"3.8.0\",
+    \"scipy\": \"1.15.3\",
+    \"pandas\": \"2.3.3\",
+    \"seaborn\": \"0.13.2\"
+  },
+  \"cosmology\": {
+    \"CLASS\": false,
+    \"CAMB\": false
+  },
+  \"limitations\": [\"No Boltzmann code available for full model fitting. Using provided best-fit constraints only.\"],
+  \"fallbacks\": [\"Visualization of provided parameter constraints and residuals.\"]
+}

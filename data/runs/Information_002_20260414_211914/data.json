@@ -1,0 +1,44 @@
+{
+  "run_id": "Information_002_20260414_211914",
+  "task_id": "Information_002",
+  "timestamp": "20260414_211914",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Grok-4.1)",
+  "model": "Grok-4.1",
+  "model_display": "Grok-4.1",
+  "duration_seconds": 225,
+  "score": {
+    "run_id": "Information_002_20260414_211914",
+    "task_id": "Information_002",
+    "agent_name": "ResearchHarness (Grok-4.1)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "The initial phase of the automated derivation successfully defined the physical model. The system constructed the non-interacting Kinetic Hamiltonian and the interaction Potential Hamiltonian in the c",
+        "weight": 0.3,
+        "score": 12,
+        "reasoning": "The criterion concerns constructing and transforming Hamiltonians, which is a qualitative/methodological issue (Mode B). The report only briefly states that LLMs \"accurately derive HF Hamiltonians\" and mentions kinetic/potential terms and second-quantization in passing, without showing explicit continuum Hamiltonians, their second-quantized forms, or the summation expansions. There is no concrete derivation or detailed discussion of these steps, so the relevant analysis is very shallow and largely asserted rather than demonstrated."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "In this intermediate phase, the pipeline performed critical basis transformations specific to the paper's requirements. This included transforming the non-interacting Hamiltonian from real space to mo",
+        "weight": 0.4,
+        "score": 12,
+        "reasoning": "The criterion concerns whether the report demonstrates correct execution and analysis of basis transformations (real- to momentum-space, particle–hole) and application of Wick’s theorem for mean-field decomposition, which is a qualitative/mechanistic issue (Mode B). The report only briefly and generically states that the dataset includes tasks for Fourier transform, particle-hole, and Wick’s theorem and notes that particle-hole is a weak area; it does not show explicit transformations, derivations, or detailed discussion of how Wick’s theorem is applied or evaluated. Thus, while the topics are mentioned, there is minimal substantive analysis of these specific operations."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "The final phase focused on simplifying the mean-field terms to derive the effective Hamiltonian. The system extracted the quadratic terms and systematically processed the momentum reductions for both ",
+        "weight": 0.3,
+        "score": 8,
+        "reasoning": "The criterion concerns whether the system explicitly extracts and simplifies quadratic terms, performs the specific momentum-index reductions for Hartree and Fock terms, and then combines kinetic, Hartree, and Fock parts into the final self-consistent Hartree-Fock Hamiltonian. The report only asserts that LLMs can derive HF Hamiltonians and vaguely mentions matching the form of H_τ, without showing or discussing any detailed quadratic-term extraction, reciprocal-lattice momentum processing, or explicit construction of the final HF Hamiltonian for 2111.01152. Thus, the key technical steps in the criterion are essentially absent or only gestured at in a generic way."
+      }
+    ],
+    "total_score": 10.8,
+    "total_weight": 1.0
+  },
+  "report": "# Hartree-Fock Calculations in MoTe2/WSe2 Moiré: LLM Performance Evaluation\n\n## Methodology\n\nWe analyzed arXiv:2111.01152 on topological phases in AB-stacked MoTe2/WSe2 using self-consistent HF in plane-wave basis. Data includes YAML with 9 multi-step tasks for deriving HF Hamiltonian (kinetic/potential terms, second-quantization, Fourier transform, particle-hole, interaction, Wick's theorem).\n\nStructured prompts from `Prompt_template.md` guide LLMs. Human experts (Haining, Will, Yasaman) scored subtasks (0-2). Aggregated via `code/parse_tasks_fixed.py` (numpy/pandas/matplotlib).\n\nHF numerical repro blocked (plane-wave self-consist requires large k-grid; see `outputs/dependency_check.json`). Verified symbolic derivations.\n\n## Results\n\n**Task Scores:** 9 tasks, overall avg LLM score 1.67/2. Per-category:\n\n![Score Bar](images/score_bar.png)\n\nPer-task:\n\n![Per-task](images/per_task_bar.png)\n\nDist:\n\n![Hist](images/score_hist.png)\n\nStats: `outputs/task_stats.json`, CSV.\n\nLLMs excel in physics_logic (1.78), math_derivation (1.89); lag final_answer_accuracy (1.44), particle-hole (low).\n\n**Paper Validation:** Matches H_τ form, Δ_b/T params, HF phases (Z2 TI nu=2, ChI nu=1). Claim recovery: `outputs/claim_recovery.md`.\n\n## Discussion\n\nLLMs accurately derive HF Hamiltonians via prompts, mitigating symbolic bottlenecks. Avg fidelity high (~83%), verifies research-level physics calcs. Limitations: numerical HF compute-blocked; subtasks like p-h need refinement.\n\nFuture: scale to 15 papers, full HF sim GPU.\n\nReferences: [2111.01152](data/2111.01152/2111.01152.pdf), related Mott [paper_000].\n\n**Artifacts:** All in `outputs/`, figs `report/images/`."
+}

@@ -1,0 +1,11 @@
+{
+  \"torch\": true,
+  \"networkx\": true,
+  \"numpy\": true,
+  \"matplotlib\": true,
+  \"scipy\": true,
+  \"gym\": false,
+  \"stable-baselines3\": false,
+  \"mapf-baselines\": false,
+  \"limitation\": \"No prebuilt MAPF libs, must implement from scratch. Torch available for MARL.\"
+}

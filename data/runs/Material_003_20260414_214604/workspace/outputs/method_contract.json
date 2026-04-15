@@ -1,0 +1,15 @@
+{
+  "gp_calibration": {
+    "input": "tg_md",
+    "output": "tg_exp",
+    "model": "GaussianProcessRegressor",
+    "kernel": "RBF"
+  },
+  "vae": {
+    "architecture": "GraphVAE",
+    "condition": "Tg",
+    "target_tg": [250, 350]
+  },
+  "data_sources": ["tg_calibration.csv", "tg_vitrimer_MD.csv"],
+  "deliverables": ["calibrated Tg predictions", "generated SMILES pairs", "figures"]
+}

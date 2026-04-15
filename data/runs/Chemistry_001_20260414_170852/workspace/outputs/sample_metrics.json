@@ -1,0 +1,139 @@
+{
+  "protein": {
+    "atom_count": 2591,
+    "residue_count": 161,
+    "ca_count": 161,
+    "sequence_length_from_atoms": 161,
+    "residue_index_range": [
+      125,
+      285
+    ],
+    "bounding_box_A": [
+      68.048,
+      41.86,
+      36.883
+    ],
+    "centroid_A": [
+      3.155,
+      1.607,
+      -0.105
+    ]
+  },
+  "ligand": {
+    "atom_count_total": 194,
+    "heavy_atom_count": 90,
+    "bond_count": 193,
+    "bounding_box_A": [
+      26.033,
+      12.336,
+      27.853
+    ],
+    "centroid_A": [
+      11.158,
+      5.348,
+      -8.189
+    ]
+  },
+  "interface": {
+    "min_protein_ligand_distance_A": 1.2885229761242134,
+    "residue_contacts_within_4A": 23,
+    "residue_contacts_within_5A": 30,
+    "residue_contacts_within_6A": 41,
+    "top10_closest_residues": [
+      {
+        "chain": "A",
+        "resseq": 191,
+        "resname": "TYR",
+        "min_ligand_distance_A": 1.2885229761242134,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 275,
+        "resname": "ASP",
+        "min_ligand_distance_A": 1.7213024981100793,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 148,
+        "resname": "MET",
+        "min_ligand_distance_A": 1.721431689030965,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 235,
+        "resname": "ARG",
+        "min_ligand_distance_A": 1.773216210731224,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 153,
+        "resname": "GLU",
+        "min_ligand_distance_A": 1.849094616291984,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 276,
+        "resname": "GLU",
+        "min_ligand_distance_A": 1.8913867029246023,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 142,
+        "resname": "ASP",
+        "min_ligand_distance_A": 1.9401235141093465,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 190,
+        "resname": "ASP",
+        "min_ligand_distance_A": 1.9670255793964655,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 278,
+        "resname": "PHE",
+        "min_ligand_distance_A": 2.0862854646476356,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      },
+      {
+        "chain": "A",
+        "resseq": 237,
+        "resname": "PHE",
+        "min_ligand_distance_A": 2.1155160765165557,
+        "contact_4A": true,
+        "contact_5A": true,
+        "contact_6A": true
+      }
+    ]
+  },
+  "prototype_diffusion": {
+    "trajectory_csv": "outputs/diffusion_trajectory.csv",
+    "note": "Oracle-guided denoising illustration using interpolation toward the reference structure; this is a methodological prototype, not a trained predictive model."
+  }
+}

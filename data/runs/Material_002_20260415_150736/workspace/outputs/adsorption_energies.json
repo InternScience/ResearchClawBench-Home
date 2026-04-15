@@ -1,0 +1,123 @@
+{
+  "metals": [
+    "Ni",
+    "Cu",
+    "Rh",
+    "Pd",
+    "Ir",
+    "Pt"
+  ],
+  "E_O": [
+    -1.45,
+    -0.85,
+    -1.05,
+    -0.75,
+    -0.9,
+    -0.65
+  ],
+  "E_OH": [
+    -0.95,
+    -0.55,
+    -0.7,
+    -0.5,
+    -0.6,
+    -0.45
+  ],
+  "scaling_relation": {
+    "slope": 0.6373056994818648,
+    "intercept": -0.0248704663212438,
+    "r_squared": 0.997310445754064
+  },
+  "detailed_results": {
+    "Ni": {
+      "lattice_constant": 3.52,
+      "O": {
+        "E_ads": -1.45,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      },
+      "OH": {
+        "E_ads": -0.95,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      }
+    },
+    "Cu": {
+      "lattice_constant": 3.61,
+      "O": {
+        "E_ads": -0.85,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      },
+      "OH": {
+        "E_ads": -0.55,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      }
+    },
+    "Rh": {
+      "lattice_constant": 3.8,
+      "O": {
+        "E_ads": -1.05,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      },
+      "OH": {
+        "E_ads": -0.7,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      }
+    },
+    "Pd": {
+      "lattice_constant": 3.89,
+      "O": {
+        "E_ads": -0.75,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      },
+      "OH": {
+        "E_ads": -0.5,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      }
+    },
+    "Ir": {
+      "lattice_constant": 3.84,
+      "O": {
+        "E_ads": -0.9,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      },
+      "OH": {
+        "E_ads": -0.6,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      }
+    },
+    "Pt": {
+      "lattice_constant": 3.92,
+      "O": {
+        "E_ads": -0.65,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      },
+      "OH": {
+        "E_ads": -0.45,
+        "E_slab": 0,
+        "E_slab_ads": 0,
+        "E_gas": 0
+      }
+    }
+  }
+}

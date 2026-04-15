@@ -1,0 +1,11 @@
+{
+  "primary_quantities": ["charge MAE (random_charges)", "E/F RMSE (all)", "binding energy curve error (dimer)", "PES separation MAE (ag3 +1/-1)"],
+  "figures": [
+    "data_overview: frames, E/F/charge stats plot",
+    "charge_recovery: predicted vs true charges scatter/hist (Fig1-like)",
+    "dimer_binding: E vs separation (Fig3)",
+    "ag3_pes: energy vs bond length colored by charge_state (Fig5e)"
+  ],
+  "tables": ["Table1: RMSE per dataset/model/baseline"],
+  "interpretability": ["Latent charge maps vs true"]
+}

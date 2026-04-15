@@ -1,0 +1,597 @@
+[
+  {
+    "mutation": "KA25A",
+    "ddG_kcal_mol": 5.380695581369596,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 8.8e-11
+  },
+  {
+    "mutation": "RA57A",
+    "ddG_kcal_mol": 5.24512433022293,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 7e-11
+  },
+  {
+    "mutation": "RA81Q",
+    "ddG_kcal_mol": 5.4197706677785815,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 9.4e-11
+  },
+  {
+    "mutation": "RA85A",
+    "ddG_kcal_mol": 5.564438820122816,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.2e-10
+  },
+  {
+    "mutation": "HA100A",
+    "ddG_kcal_mol": 6.145505658550497,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3.2e-10
+  },
+  {
+    "mutation": "YD29F",
+    "ddG_kcal_mol": -0.13219560640094694,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 8e-15
+  },
+  {
+    "mutation": "YD29A",
+    "ddG_kcal_mol": 3.4703804840083663,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3.5e-12
+  },
+  {
+    "mutation": "DD35A",
+    "ddG_kcal_mol": 4.502957418736882,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 2e-11
+  },
+  {
+    "mutation": "WD38F",
+    "ddG_kcal_mol": 1.6425482398136162,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.6e-13
+  },
+  {
+    "mutation": "DD39A",
+    "ddG_kcal_mol": 7.650628423325033,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4.06e-09
+  },
+  {
+    "mutation": "TD42A",
+    "ddG_kcal_mol": 1.8575421821523213,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 2.3e-13
+  },
+  {
+    "mutation": "WD44F",
+    "ddG_kcal_mol": 0.05646404272590638,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.1e-14
+  },
+  {
+    "mutation": "ED74A",
+    "ddG_kcal_mol": 1.364106786261159,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1e-13
+  },
+  {
+    "mutation": "ED78A",
+    "ddG_kcal_mol": 0.542832666354351,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 2.5e-14
+  },
+  {
+    "mutation": "KA25A,YD29A",
+    "ddG_kcal_mol": 8.624182244177778,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 2.1e-08
+  },
+  {
+    "mutation": "KA25A,DD35A",
+    "ddG_kcal_mol": 9.548747503828114,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1e-07
+  },
+  {
+    "mutation": "KA25A,WD38F",
+    "ddG_kcal_mol": 5.112928723821983,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 5.6e-11
+  },
+  {
+    "mutation": "KA25A,DD39A",
+    "ddG_kcal_mol": 8.277653514301958,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.17e-08
+  },
+  {
+    "mutation": "KA25A,TD42A",
+    "ddG_kcal_mol": 5.723655190322274,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.57e-10
+  },
+  {
+    "mutation": "KA25A,ED74A",
+    "ddG_kcal_mol": 6.695697724513599,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 8.1e-10
+  },
+  {
+    "mutation": "KA25A,ED78A",
+    "ddG_kcal_mol": 5.512891187770542,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.1e-10
+  },
+  {
+    "mutation": "RA57A,YD29A",
+    "ddG_kcal_mol": 8.122222614170857,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 9e-09
+  },
+  {
+    "mutation": "RA57A,DD35A",
+    "ddG_kcal_mol": 6.334165307677351,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4.4e-10
+  },
+  {
+    "mutation": "RA57A,WD38F",
+    "ddG_kcal_mol": 6.277701264951443,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4e-10
+  },
+  {
+    "mutation": "RA57A,TD42A",
+    "ddG_kcal_mol": 6.820533931305795,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1e-09
+  },
+  {
+    "mutation": "RA57A,ED74A",
+    "ddG_kcal_mol": 4.970058521416192,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4.4e-11
+  },
+  {
+    "mutation": "RA57A,ED78A",
+    "ddG_kcal_mol": 5.201220985222334,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 6.5e-11
+  },
+  {
+    "mutation": "RA81Q,YD29A",
+    "ddG_kcal_mol": 8.292652392645135,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.2e-08
+  },
+  {
+    "mutation": "RA81Q,DD35A",
+    "ddG_kcal_mol": 9.60521154655402,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.1e-07
+  },
+  {
+    "mutation": "RA81Q,WD38F",
+    "ddG_kcal_mol": 6.758115827909697,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 9e-10
+  },
+  {
+    "mutation": "RA81Q,DD39A",
+    "ddG_kcal_mol": 6.438801338009811,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 5.25e-10
+  },
+  {
+    "mutation": "RA81Q,TD42A",
+    "ddG_kcal_mol": 6.107271486477167,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3e-10
+  },
+  {
+    "mutation": "RA81Q,ED74A",
+    "ddG_kcal_mol": 6.720758671614596,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 8.45e-10
+  },
+  {
+    "mutation": "RA81Q,ED78A",
+    "ddG_kcal_mol": 5.763773065254513,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.68e-10
+  },
+  {
+    "mutation": "RA85A,YD29A",
+    "ddG_kcal_mol": 8.052445111166008,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 8e-09
+  },
+  {
+    "mutation": "RA85A,WD38F",
+    "ddG_kcal_mol": 7.04065711823993,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.45e-09
+  },
+  {
+    "mutation": "RA85A,DD39A",
+    "ddG_kcal_mol": 7.18498469911747,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.85e-09
+  },
+  {
+    "mutation": "RA85A,TD42A",
+    "ddG_kcal_mol": 7.019868176437492,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.4e-09
+  },
+  {
+    "mutation": "RA85A,ED74A",
+    "ddG_kcal_mol": 6.866127502987877,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.08e-09
+  },
+  {
+    "mutation": "RA85A,ED78A",
+    "ddG_kcal_mol": 6.126696966112746,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3.1e-10
+  },
+  {
+    "mutation": "HA100A,YD29A",
+    "ddG_kcal_mol": 6.3066057316088635,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4.2e-10
+  },
+  {
+    "mutation": "HA100A,YD29F",
+    "ddG_kcal_mol": 5.549439941779641,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.17e-10
+  },
+  {
+    "mutation": "HA100A,WD38F",
+    "ddG_kcal_mol": 7.641808051212603,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4e-09
+  },
+  {
+    "mutation": "HA100A,DD39A",
+    "ddG_kcal_mol": 8.990915959130588,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3.9e-08
+  },
+  {
+    "mutation": "HA100A,TD42A",
+    "ddG_kcal_mol": 8.135243447103765,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 9.2e-09
+  },
+  {
+    "mutation": "HA100A,ED74A",
+    "ddG_kcal_mol": 7.562700842791844,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3.5e-09
+  },
+  {
+    "mutation": "HA100A,ED78A",
+    "ddG_kcal_mol": 6.744802367630755,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 8.8e-10
+  },
+  {
+    "mutation": "RA57A,DD39A",
+    "ddG_kcal_mol": 11.360799135609803,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 2.13e-06
+  },
+  {
+    "mutation": "EA71Q",
+    "ddG_kcal_mol": 1.4520343667943474,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.16e-13
+  },
+  {
+    "mutation": "EA71Q,DD39A",
+    "ddG_kcal_mol": 7.2069870599364325,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.92e-09
+  },
+  {
+    "mutation": "EA71Q,ED74A",
+    "ddG_kcal_mol": 3.526844526734273,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3.85e-12
+  },
+  {
+    "mutation": "EA71W",
+    "ddG_kcal_mol": 1.6571767373694852,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.64e-13
+  },
+  {
+    "mutation": "EA71W,DD39A",
+    "ddG_kcal_mol": 6.664925277295278,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 7.69e-10
+  },
+  {
+    "mutation": "EA71W,DD35A",
+    "ddG_kcal_mol": 5.71222543290224,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.54e-10
+  },
+  {
+    "mutation": "EA71W,ED74A",
+    "ddG_kcal_mol": 3.549487692429126,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4e-12
+  },
+  {
+    "mutation": "EA71Y",
+    "ddG_kcal_mol": 2.413619617957084,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 5.88e-13
+  },
+  {
+    "mutation": "EA71F",
+    "ddG_kcal_mol": 2.2350743146278247,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 4.35e-13
+  },
+  {
+    "mutation": "EA71F,DD39A",
+    "ddG_kcal_mol": 7.471378272738326,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 3e-09
+  },
+  {
+    "mutation": "EA71F,DD35A",
+    "ddG_kcal_mol": 6.409896871352392,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 5e-10
+  },
+  {
+    "mutation": "EA71C",
+    "ddG_kcal_mol": 2.528642310364055,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 7.14e-13
+  },
+  {
+    "mutation": "EA71S",
+    "ddG_kcal_mol": 3.0103461535917737,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.61e-12
+  },
+  {
+    "mutation": "EA71A",
+    "ddG_kcal_mol": 2.3476083326588264,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 5.26e-13
+  },
+  {
+    "mutation": "EA71A,DD39A",
+    "ddG_kcal_mol": 7.18498469911747,
+    "is_interface": false,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 1.85e-09
+  },
+  {
+    "mutation": "EA71A,DD35A",
+    "ddG_kcal_mol": 6.4399286914423035,
+    "is_interface": true,
+    "affinity_wt": 1e-14,
+    "affinity_mut": 5.26e-10
+  },
+  {
+    "mutation": "RA57K",
+    "ddG_kcal_mol": 2.4880062910431917,
+    "is_interface": false,
+    "affinity_wt": 6e-14,
+    "affinity_mut": 4e-12
+  },
+  {
+    "mutation": "HA100Q",
+    "ddG_kcal_mol": 4.550376643789804,
+    "is_interface": false,
+    "affinity_wt": 6e-14,
+    "affinity_mut": 1.3e-10
+  },
+  {
+    "mutation": "HA100D",
+    "ddG_kcal_mol": 4.550376643789804,
+    "is_interface": false,
+    "affinity_wt": 6e-14,
+    "affinity_mut": 1.3e-10
+  },
+  {
+    "mutation": "HA100G",
+    "ddG_kcal_mol": 6.820533931305795,
+    "is_interface": false,
+    "affinity_wt": 6e-14,
+    "affinity_mut": 6e-09
+  },
+  {
+    "mutation": "HA100L",
+    "ddG_kcal_mol": 7.66599198253537,
+    "is_interface": false,
+    "affinity_wt": 6e-14,
+    "affinity_mut": 2.5e-08
+  },
+  {
+    "mutation": "HA100Q,RA57K",
+    "ddG_kcal_mol": 6.911856501359313,
+    "is_interface": false,
+    "affinity_wt": 6e-14,
+    "affinity_mut": 7e-09
+  },
+  {
+    "mutation": "HA100Q,RA57A",
+    "ddG_kcal_mol": 9.308540222348988,
+    "is_interface": false,
+    "affinity_wt": 6e-14,
+    "affinity_mut": 4e-07
+  },
+  {
+    "mutation": "AA27K",
+    "ddG_kcal_mol": -5.045790085091233,
+    "is_interface": true,
+    "affinity_wt": 1e-07,
+    "affinity_mut": 2e-11
+  },
+  {
+    "mutation": "AD36D",
+    "ddG_kcal_mol": -4.168051922458518,
+    "is_interface": true,
+    "affinity_wt": 1e-07,
+    "affinity_mut": 8.8e-11
+  },
+  {
+    "mutation": "AA27K,AD36D",
+    "ddG_kcal_mol": -9.548747503828114,
+    "is_interface": true,
+    "affinity_wt": 1e-07,
+    "affinity_mut": 1e-14
+  },
+  {
+    "mutation": "AD43T",
+    "ddG_kcal_mol": -0.3429596089526786,
+    "is_interface": true,
+    "affinity_wt": 1.57e-10,
+    "affinity_mut": 8.8e-11
+  },
+  {
+    "mutation": "AA27K,AD43T",
+    "ddG_kcal_mol": -5.723655190322274,
+    "is_interface": true,
+    "affinity_wt": 1.57e-10,
+    "affinity_mut": 1e-14
+  },
+  {
+    "mutation": "AA102H",
+    "ddG_kcal_mol": -5.681635548180588,
+    "is_interface": true,
+    "affinity_wt": 1.17e-10,
+    "affinity_mut": 8e-15
+  },
+  {
+    "mutation": "FD30Y",
+    "ddG_kcal_mol": 0.5960657167708567,
+    "is_interface": false,
+    "affinity_wt": 1.17e-10,
+    "affinity_mut": 3.2e-10
+  },
+  {
+    "mutation": "AA102H,FD30Y",
+    "ddG_kcal_mol": -5.549439941779641,
+    "is_interface": true,
+    "affinity_wt": 1.17e-10,
+    "affinity_mut": 1e-14
+  },
+  {
+    "mutation": "AD81E",
+    "ddG_kcal_mol": -0.41063705995340405,
+    "is_interface": false,
+    "affinity_wt": 2.64e-10,
+    "affinity_mut": 1.32e-10
+  },
+  {
+    "mutation": "AD76E",
+    "ddG_kcal_mol": -0.8235139110435528,
+    "is_interface": false,
+    "affinity_wt": 5.3e-10,
+    "affinity_mut": 1.32e-10
+  },
+  {
+    "mutation": "WA33F",
+    "ddG_kcal_mol": 1.4080101312617541,
+    "is_interface": false,
+    "affinity_wt": 1.3e-14,
+    "affinity_mut": 1.4e-13
+  },
+  {
+    "mutation": "DA52A",
+    "ddG_kcal_mol": -0.888777439504722,
+    "is_interface": false,
+    "affinity_wt": 1.3e-14,
+    "affinity_mut": 2.9e-15
+  },
+  {
+    "mutation": "NA56A",
+    "ddG_kcal_mol": 3.066218068282378,
+    "is_interface": false,
+    "affinity_wt": 1.3e-14,
+    "affinity_mut": 2.3e-12
+  },
+  {
+    "mutation": "EA58A",
+    "ddG_kcal_mol": -0.3258606786053797,
+    "is_interface": false,
+    "affinity_wt": 1.3e-14,
+    "affinity_mut": 7.5e-15
+  }
+]

@@ -1,0 +1,5 @@
+claim,evidence_artifact,status,detail
+Uncalled4 is the fastest aligner across provided chemistries,outputs/performance_comparison_table.csv,supported,DNA r10.4: Uncalled4 (54.45 min); DNA r9.4: Uncalled4 (39.58 min); RNA001: Uncalled4 (114.67 min); RNA004: Uncalled4 (60.19 min)
+Uncalled4 produces the smallest output files across provided chemistries,outputs/performance_comparison_table.csv,supported,DNA r10.4: Uncalled4 (118.71 MB); DNA r9.4: Uncalled4 (139.82 MB); RNA001: Uncalled4 (21.22 MB); RNA004: Uncalled4 (48.44 MB)
+Uncalled4-aligned m6A predictions outperform Nanopolish-aligned predictions,outputs/m6a_metrics.csv,supported,"Uncalled4: AP=0.993, AUROC=0.998; Nanopolish: AP=0.778, AUROC=0.901"
+Pore models show chemistry-specific current distributions and GC associations,outputs/pore_model_summary.csv; outputs/pore_model_gc_correlations.csv,supported,"DNA r10.4: mean=0.000, sd=1.000; DNA r9.4: mean=0.000, sd=1.000; RNA001: mean=0.000, sd=1.000; RNA004: mean=-0.000, sd=1.000"

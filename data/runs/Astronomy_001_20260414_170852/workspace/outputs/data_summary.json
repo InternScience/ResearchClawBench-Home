@@ -1,0 +1,30 @@
+{
+  "n_parameter_rows": 25,
+  "models": [
+    "EDE",
+    "LambdaCDM",
+    "w0wa"
+  ],
+  "shared_parameters_all_models": [
+    "H0",
+    "ln10As",
+    "ns",
+    "ombh2",
+    "omega_m",
+    "sigma8",
+    "tau"
+  ],
+  "ede_specific_parameters": [
+    "f_EDE",
+    "log10_ac"
+  ],
+  "w0wa_specific_parameters": [
+    "w0",
+    "wa"
+  ],
+  "distance_datasets": {
+    "DESI_DV_over_rd": 7,
+    "DESI_F_AP": 7,
+    "Union3_SN": 7
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "papers_used": [
+    {
+      "file": "paper_000.pdf",
+      "title": "A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km s-1 Mpc-1 Uncertainty from the Hubble Space Telescope and the SH0ES Team",
+      "relevance": "Provides the modern SH0ES Cepheid+SN Ia baseline around H0 ~ 73 km s^-1 Mpc^-1 and anchor logic."
+    },
+    {
+      "file": "paper_001.pdf",
+      "title": "Small Magellanic Cloud Cepheids Observed with the Hubble Space Telescope Provide a New Anchor for the SH0ES Distance Ladder",
+      "relevance": "Confirms the role of multiple geometric anchors and the target H0 scale near 73 km s^-1 Mpc^-1."
+    },
+    {
+      "file": "paper_002.pdf",
+      "title": "Coordinated JWST Imaging of Three Distance Indicators in a SN Host Galaxy and an Estimate of the TRGB Color Dependence",
+      "relevance": "Confirms that TRGB/JAGB/Cepheid cross-calibration and geometric-anchor transfer are central to current distance-ladder work."
+    },
+    {
+      "file": "paper_003.pdf",
+      "title": "The Pantheon+ Analysis: The Full Dataset and Light-Curve Release",
+      "relevance": "Provides context for modern SN Ia Hubble-flow data products used by local-ladder analyses."
+    }
+  ],
+  "contract_updates": [
+    "The full literature target is a multi-anchor, multi-indicator ladder with H0 near 73 km s^-1 Mpc^-1 rather than ~110 km s^-1 Mpc^-1.",
+    "The workspace minimal dataset is a reduced pedagogical subset, so exact reproduction of the full-paper precision and full indicator set is not possible from workspace data alone.",
+    "The final report should explicitly separate direct workspace reconstruction from literature context and should not claim full-paper reproduction."
+  ]
+}

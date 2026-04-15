@@ -1,0 +1,58 @@
+{
+  "structure_summary": {
+    "n_residues_chain_A": 108,
+    "n_residues_chain_D": 87,
+    "n_interface_residues_5A": 41,
+    "n_chain_A_interface_residues_5A": 22,
+    "n_chain_D_interface_residues_5A": 19,
+    "closest_residue_pair_distance_Ang": 2.497251489137609,
+    "mean_min_cross_chain_distance_Ang": 10.36631345220449
+  },
+  "skempi_1brs_rows": 94,
+  "skempi_1brs_single_mutations": 49,
+  "skempi_1brs_multiple_mutations": 45,
+  "single_mutation_wt_matches_structure_fraction": 1.0,
+  "single_mutation_ddG_summary": {
+    "mean_kcal_mol": 3.347939251004141,
+    "median_kcal_mol": 3.064990242718669,
+    "max_kcal_mol": 7.662922239706342
+  },
+  "spearman": {
+    "distance_vs_ddG_rho": -0.626631952965983,
+    "distance_vs_ddG_p": 1.4597857259559298e-06,
+    "contacts5A_vs_ddG_rho": 0.6415737787977134,
+    "contacts5A_vs_ddG_p": 6.783617537469596e-07
+  },
+  "location_summary": [
+    {
+      "iMutation_Location(s)": "COR",
+      "n": 24,
+      "median_ddG": 5.212188746535922,
+      "mean_distance": 2.8533322660177256
+    },
+    {
+      "iMutation_Location(s)": "INT",
+      "n": 2,
+      "median_ddG": -0.5278769887821166,
+      "mean_distance": 6.409768014522833
+    },
+    {
+      "iMutation_Location(s)": "RIM",
+      "n": 6,
+      "median_ddG": 0.6689084533431728,
+      "mean_distance": 2.8178102023804783
+    },
+    {
+      "iMutation_Location(s)": "SUP",
+      "n": 15,
+      "median_ddG": 2.4126531166183,
+      "mean_distance": 4.09583999544078
+    },
+    {
+      "iMutation_Location(s)": "SUR",
+      "n": 2,
+      "median_ddG": 0.47654396112438824,
+      "mean_distance": 5.861531881684176
+    }
+  ]
+}

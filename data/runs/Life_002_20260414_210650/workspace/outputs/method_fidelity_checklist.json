@@ -1,0 +1,21 @@
+{
+  "named_method": "TM-score-guided protein complex alignment approximation",
+  "definition": "Establish chain correspondence, derive residue correspondences, compute a rigid-body superposition, and report TM-score-style normalized similarity together with RMSD and coverage.",
+  "assumptions": [
+    "Only pairwise comparison between 7xg4 and 6n40 is required.",
+    "In absence of Foldseek-Multimer/US-align executable, a lightweight reproducible approximation can be implemented from PDB coordinates and sequences.",
+    "Because 6n40 has one chain and 7xg4 is multichain, chain-level correspondence can be represented as best-matching query chain(s) to target chain A plus a concatenated multichain comparison."
+  ],
+  "invariants": [
+    "Use C-alpha coordinates for residue-level structural scoring.",
+    "Report explicit rotation matrix and translation vector.",
+    "Provide TM-score-style metric normalized by chain/query/target lengths as stated in report.",
+    "Mark deviations from exact Foldseek-Multimer or US-align behavior explicitly."
+  ],
+  "non_negotiable_steps": [
+    "Parse structures reproducibly from local PDB files.",
+    "Identify candidate chain correspondences.",
+    "Compute structural superposition on aligned residues.",
+    "Export quantitative artifacts and figures."
+  ]
+}

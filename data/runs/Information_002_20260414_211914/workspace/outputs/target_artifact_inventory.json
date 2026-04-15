@@ -1,0 +1,18 @@
+{
+  \"primary_quant\": [
+    \"Avg LLM score per category (>1.5/2 indicates good fidelity)\",
+    \"# tasks solved correctly (final_answer_accuracy=2)\",
+    \"HF charge gap at nu=2 (target ~few meV from Fig2)\"
+  ],
+  \"tables\": [
+    \"per-task scores (task_name, subcategory_scores, avg_human, avg_llm, delta)\",
+    \"phase diagram summary (phase, Vzt_range, epsilon_range, gap, Chern)\"
+  ],
+  \"figures\": [
+    \"score distribution hist/boxplot LLM vs human\",
+    \"per-task bar/heatmap scores\",
+    \"HF bandstructure (Fig2-like)\",
+    \"phase diagram contour (Fig3-like)\"
+  ],
+  \"interpretability\": [\"prompt fidelity checklist\", \"error analysis per task\"]
+}

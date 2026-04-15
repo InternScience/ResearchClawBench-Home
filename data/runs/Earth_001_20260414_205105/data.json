@@ -1,0 +1,60 @@
+{
+  "run_id": "Earth_001_20260414_205105",
+  "task_id": "Earth_001",
+  "timestamp": "20260414_205105",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Grok-4.1)",
+  "model": "Grok-4.1",
+  "model_display": "Grok-4.1",
+  "duration_seconds": 236,
+  "score": {
+    "run_id": "Earth_001_20260414_205105",
+    "task_id": "Earth_001",
+    "agent_name": "ResearchHarness (Grok-4.1)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "The dataset comprises 832 cloud seeding project records from 2000 to 2025, covering 13 U.S. states. Extraction using an LLM pipeline achieved an average field-level accuracy of 98.38% (manual review o",
+        "weight": 0.22,
+        "score": 20,
+        "reasoning": "The criterion is objective (Mode A), involving specific quantitative properties of the dataset (record count, temporal and state coverage, and reported field-level accuracies). The report correctly states the total record count (832), the temporal coverage (2000–2025), and the number of states (13), but it does not mention or reproduce the LLM extraction accuracy (98.38%), the range and per-field accuracies (92–100%), or any validation akin to the paper’s Table 1. Thus only a subset of the required technical aspects is covered, with the key accuracy component entirely absent."
+      },
+      {
+        "index": 1,
+        "type": "image",
+        "content": "Geographic concentration in western states: California, Colorado, and Utah account for the majority of activities. The choropleth fill intensity (by state-level project count) and overlaid points (jit",
+        "weight": 0.2,
+        "score": 38,
+        "reasoning": "This is an Objective (Mode A) criterion about reproducing a specific spatial choropleth with overlaid jittered points. The AI map correctly aggregates state-level counts, shows strong concentration in California, Colorado, Utah, and visible clusters in Texas and northern Rockies, with fill intensities consistent with the reported table; however, it omits the point overlays entirely, so the full target visual pattern (choropleth plus jittered points) is only partially reproduced. Overall, methodology and spatial concentration are right but one key visual/technical aspect is missing."
+      },
+      {
+        "index": 2,
+        "type": "image",
+        "content": "Annual activity trend: a peak in the early-to-mid 2000s, a decline through the 2010s, and a renewed increase after 2021. The stacked bars by state (top 13 states) show interannual variability and conf",
+        "weight": 0.2,
+        "score": 35,
+        "reasoning": "Mode A applies because the criterion concerns reproducing a specific temporal trend and stacked state-year visualization. The AI report explicitly describes an early‑to‑mid‑2000s peak (~49 in 2003), a decline through the 2010s, and a rebound after 2021 (e.g., 34 in 2024), and its annual line plot visually matches the target figure’s phases; however, it does not show the stacked-by-state bars analogous to the paper’s Figure 4 and only references a yearly counts table without presenting the state-year matrix or explicit cross-checking in the text. Thus, the main trend is recovered but the state-level stacked visualization and validation are only partially addressed."
+      },
+      {
+        "index": 3,
+        "type": "image",
+        "content": "Primary stated purposes: augmenting snowpack and increasing precipitation dominate, together accounting for over 70% of mentions. Other purposes (hail suppression, visibility improvement) appear less ",
+        "weight": 0.19,
+        "score": 15,
+        "reasoning": "This is an Objective (Mode A) criterion about correctly processing multi-label purpose data and reproducing dominant purpose counts. The target plot shows normalized concept-level categories (e.g., augment snowpack ~520, increase precipitation ~430, suppress hail, increase runoff, suppress fog, research), implying multi-label strings were split and aliases normalized. In contrast, the AI’s purpose figure operates on unsplit raw strings (e.g., 'augment snowpack, increase precipitation' appears as its own category), explicitly notes that multi-labels were not parsed, and therefore cannot yield the correct category totals or the stated dominance pattern. As a result, methodology is fundamentally incorrect relative to the paper’s treatment of purpose data."
+      },
+      {
+        "index": 4,
+        "type": "image",
+        "content": "Seeding agent and deployment method: silver iodide is the most common agent across all apparatus types. Ground‑based generators and aircraft are the predominant deployment methods, with a substantial ",
+        "weight": 0.19,
+        "score": 47,
+        "reasoning": "Mode A applies because the criterion concerns quantitative co-occurrence counts and their visualization in a heatmap. The agent’s heatmap uses the same apparatus categories and shows silver iodide as dominant across ground, airborne, and combined platforms, closely matching the reference image’s structure and relative intensities. Minor differences in labeling and the inclusion of more agent rows do not affect the fact that counts, top-agent selection, and color mapping clearly reflect the underlying data and reproduce the operational patterns highlighted in the paper."
+      }
+    ],
+    "total_score": 30.78,
+    "total_weight": 1.0
+  },
+  "report": "# Reproducible Analysis of NOAA U.S. Cloud Seeding Records (2000-2025)\n\n## Executive Summary\nThis report presents a transparent, script-based analysis of the NOAA cloud-seeding dataset (`cloud_seeding_us_2000_2025.csv`, 832 project records spanning 2000-2025). Using `code/analysis.py` (Pandas, Geopandas, Matplotlib/Seaborn), we generated reproducible tables (`outputs/*.csv`) and figures (`report/images/*.png`) quantifying **spatial concentration**, **annual activity dynamics**, **purpose composition**, and **agent-apparatus deployment patterns**. Key findings:\n- **Spatial**: Highly concentrated in western states (CA: 215 projects, CO: 142, UT: 130).\n- **Temporal**: Peak activity mid-2000s (~47/year), dip to 12 in 2020, rebound to 34 in 2024.\n- **Purpose**: \\\\\\\"Augment snowpack\\\\\\\" dominant (326/832, 39%).\n- **Deployment**: Silver iodide prevalent (521 records); ground-based most common (461).\n\nAll claims trace to artifacts; code is deterministic and rerun-able. See `outputs/claim_recovery_table.json` for traceability.\n\n## Methodology\n1. **Data Loading**: Pandas reads CSV (13 fields/record: filename, project, year, season, state, etc.).\n2. **Processing**:\n   - Groupbys/value_counts for counts (states, years, purposes, seasons).\n   - Crosstab for agent-apparatus matrix.\n   - Geopandas merge with `us_states.geojson` for choropleth (lowercase state matching).\n3. **Visualization**: Matplotlib line/bar plots; Seaborn heatmap/barplot. Saved at 300 DPI.\n4. **Reproducibility**: Single script `code/analysis.py`; no random seeds; dependencies verified (`outputs/dependency_check.json`).\n5. **Contract** (`outputs/method_contract.json` / `outputs/target_artifact_inventory.json`): Matches task deliverables.\n6. **Limitations**: Descriptive only; multi-labels not parsed (e.g., comma-purposes); CRS EPSG:4326 native.\n\nData overview (`outputs/data_summary.csv`):\n\n| total_records | years_range | states_nunique | purposes_nunique | agents_nunique | apparatus_nunique |\n|---------------|-------------|----------------|------------------|----------------|-------------------|\n| 832           | 2000-2025   | 13             | 17               | 28             | 3                 |\n\n## Results\n\n### 1. Spatial Concentration\n~80% projects in top-5 western states.\n\n![Spatial Concentration](images/state_map.png \\\\\\\"Choropleth of projects by state\\\\\\\"){width=100%}\n\nTop states (`outputs/state_counts.csv`):\n\n| State         | Projects |\n|---------------|----------|\n| california    | 215      |\n| colorado      | 142      |\n| utah          | 130      |\n| texas         | 104      |\n| idaho         | 73       |\n| nevada        | 58       |\n| wyoming       | 47       |\n| north dakota  | 44       |\n| kansas        | 15       |\n| Others (3)    | 1 each   |\n\n### 2. Annual Activity Dynamics\n![Annual Dynamics](images/annual_activity.png \\\\\\\"Projects per year, 2000-2025\\\\\\\"){width=100%}\n\nFull table (`outputs/yearly_counts.csv`): Peak 49 (2003); trough 12 (2020).\n\nSeasons (`outputs/season_counts.csv`): Winter 592/832.\n\n### 3. Purpose Composition\n![Purposes](images/purpose_composition.png \\\\\\\"Top 10 purposes (barplot)\\\\\\\"){width=100%}\n\nTop (`outputs/purpose_counts.csv`):\n\n| Purpose                              | Projects |\n|--------------------------------------|----------|\n| augment snowpack                     | 326      |\n| increase precipitation               | 221      |\n| augment snowpack, increase precipitation | 118 |\n| increase precipitation, suppress hail | 55      |\n| augment snowpack, increase runoff    | 50      |\n\n### 4. Agent-Apparatus Patterns\nSilver iodide: 521 uses; apparatus split: ground (461 total), airborne (236), both (131).\n\n![Heatmap](images/agent_apparatus_heatmap.png \\\\\\\"Crosstab counts\\\\\\\"){width=100%}\n\n(`outputs/agent_apparatus_crosstab.csv`)\n\n## Validation\n- **Direct Verification**: All numerics from CSVs (e.g., CA=215 matches df['state'].value_counts()).\n- **Artifact Completeness**: All in `outputs/target_artifact_inventory.json` produced.\n- **Recovery**: Empirical conclusions (western/snowpack focus, temporal patterns) fully recovered transparently.\n- **Gaps**: No efficacy/control-area analysis (data incomplete: 455/832 control_area null).\n\n## Reproduction\n```\ncd workspace; python3 code/analysis.py\n```\n\n**Date**: 2026-04-14. Workspace self-contained."
+}

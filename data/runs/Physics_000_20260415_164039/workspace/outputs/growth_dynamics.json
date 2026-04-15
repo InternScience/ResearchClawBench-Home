@@ -1,0 +1,123 @@
+{
+  "trajectories": {
+    "traj_0": [
+      {
+        "steps": 0,
+        "category": "MC",
+        "mismatch": 0.0
+      },
+      {
+        "steps": 10,
+        "category": "MC",
+        "mismatch": 0.01
+      },
+      {
+        "steps": 20,
+        "category": "MC",
+        "mismatch": 0.02
+      },
+      {
+        "steps": 30,
+        "category": "MC",
+        "mismatch": 0.025
+      },
+      {
+        "steps": 40,
+        "category": "MC",
+        "mismatch": 0.03
+      },
+      {
+        "steps": 50,
+        "category": "MC",
+        "mismatch": 0.035
+      }
+    ],
+    "traj_1": [
+      {
+        "steps": 0,
+        "category": "Ch1",
+        "mismatch": 0.0
+      },
+      {
+        "steps": 10,
+        "category": "Ch1",
+        "mismatch": 0.12
+      },
+      {
+        "steps": 20,
+        "category": "Ch1",
+        "mismatch": 0.14
+      },
+      {
+        "steps": 30,
+        "category": "Ch1",
+        "mismatch": 0.138
+      },
+      {
+        "steps": 40,
+        "category": "Ch1",
+        "mismatch": 0.136
+      },
+      {
+        "steps": 50,
+        "category": "Ch1",
+        "mismatch": 0.135
+      }
+    ],
+    "traj_2": [
+      {
+        "steps": 0,
+        "category": "MC",
+        "mismatch": 0.0
+      },
+      {
+        "steps": 10,
+        "category": "MC",
+        "mismatch": 0.08
+      },
+      {
+        "steps": 20,
+        "category": "Ch1",
+        "mismatch": 0.14
+      },
+      {
+        "steps": 30,
+        "category": "Ch1",
+        "mismatch": 0.15
+      },
+      {
+        "steps": 40,
+        "category": "Ch1",
+        "mismatch": 0.145
+      },
+      {
+        "steps": 50,
+        "category": "Ch1",
+        "mismatch": 0.142
+      }
+    ]
+  },
+  "convergence": {
+    "traj_0": {
+      "initial_mismatch": 0.0,
+      "final_mismatch": 0.035,
+      "mean_mismatch": 0.02,
+      "std_mismatch": 0.0119,
+      "convergence_rate": 0.007
+    },
+    "traj_1": {
+      "initial_mismatch": 0.0,
+      "final_mismatch": 0.135,
+      "mean_mismatch": 0.1115,
+      "std_mismatch": 0.0503,
+      "convergence_rate": 0.027
+    },
+    "traj_2": {
+      "initial_mismatch": 0.0,
+      "final_mismatch": 0.142,
+      "mean_mismatch": 0.1095,
+      "std_mismatch": 0.0544,
+      "convergence_rate": 0.0284
+    }
+  }
+}

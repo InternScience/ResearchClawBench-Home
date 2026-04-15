@@ -1,0 +1,96 @@
+{
+  "SparseTrack": {
+    "metrics": {
+      "MOTA": 0.09775,
+      "MOTP": 0.8343237605718814,
+      "IDF1": 0.5506228273464658,
+      "ID_switches": 5635,
+      "Fragments": 4098,
+      "FP": 13,
+      "FN": 12397,
+      "Matches": 7603,
+      "GT": 20000
+    },
+    "occlusion_metrics": {
+      "0": {
+        "tracking_rate": 0.6447916666666667,
+        "count": 1920
+      },
+      "10": {
+        "tracking_rate": 0.5520711051484152,
+        "count": 5963
+      },
+      "20": {
+        "tracking_rate": 0.5717051137280207,
+        "count": 6199
+      },
+      "30": {
+        "tracking_rate": 0.6207513416815742,
+        "count": 3913
+      },
+      "40": {
+        "tracking_rate": 0.6196279666452854,
+        "count": 1559
+      },
+      "50": {
+        "tracking_rate": 0.6318181818181818,
+        "count": 440
+      },
+      "60": {
+        "tracking_rate": 0.8333333333333334,
+        "count": 6
+      }
+    },
+    "num_tracks": 86,
+    "avg_track_length": 88.55813953488372,
+    "per_object_recall_mean": 0.5876,
+    "per_object_recall_std": 0.13874163037819615
+  },
+  "ByteTrack": {
+    "metrics": {
+      "MOTA": 0.10424999999999995,
+      "MOTP": 0.8333997157486751,
+      "IDF1": 0.5478030550415441,
+      "ID_switches": 5452,
+      "Fragments": 4126,
+      "FP": 12,
+      "FN": 12451,
+      "Matches": 7549,
+      "GT": 20000
+    },
+    "occlusion_metrics": {
+      "0": {
+        "tracking_rate": 0.6359375,
+        "count": 1920
+      },
+      "10": {
+        "tracking_rate": 0.5522388059701493,
+        "count": 5963
+      },
+      "20": {
+        "tracking_rate": 0.5681561542184224,
+        "count": 6199
+      },
+      "30": {
+        "tracking_rate": 0.6112956810631229,
+        "count": 3913
+      },
+      "40": {
+        "tracking_rate": 0.6318152661962797,
+        "count": 1559
+      },
+      "50": {
+        "tracking_rate": 0.6704545454545454,
+        "count": 440
+      },
+      "60": {
+        "tracking_rate": 0.8333333333333334,
+        "count": 6
+      }
+    },
+    "num_tracks": 87,
+    "avg_track_length": 86.9080459770115,
+    "per_object_recall_mean": 0.58565,
+    "per_object_recall_std": 0.13051274841945518
+  }
+}

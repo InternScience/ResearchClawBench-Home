@@ -1,0 +1,347 @@
+{
+  "n_tasks": 17,
+  "tasks": [
+    {
+      "task": "Unknown",
+      "step_score": {},
+      "n_placeholders": 0
+    },
+    {
+      "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+      "step_score": {
+        "in_paper": 1.0,
+        "prompt_quality": 1.0,
+        "follow_instructions": 1.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 1.0
+      },
+      "n_placeholders": 9
+    },
+    {
+      "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 1.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 1.0
+      },
+      "n_placeholders": 10
+    },
+    {
+      "task": "Construct Potential Hamiltonian (continuum version)",
+      "step_score": {
+        "in_paper": 1.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 7
+    },
+    {
+      "task": "Define each term in Potential Hamiltonian (continuum version)",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 5
+    },
+    {
+      "task": "Convert from single-particle to second-quantized form, return in matrix",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 7
+    },
+    {
+      "task": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 1.0,
+        "final_answer_accuracy": 1.0
+      },
+      "n_placeholders": 4
+    },
+    {
+      "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 1.0
+      },
+      "n_placeholders": 7
+    },
+    {
+      "task": "Particle-hole transformation",
+      "step_score": {
+        "in_paper": 0.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 8
+    },
+    {
+      "task": "Simplify the Hamiltonian in the particle-hole basis",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 1.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 7
+    },
+    {
+      "task": "Construct interaction Hamiltonian (momentum space)",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 9
+    },
+    {
+      "task": "Wick's theorem",
+      "step_score": {
+        "in_paper": 0.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 3
+    },
+    {
+      "task": "Extract quadratic term",
+      "step_score": {
+        "in_paper": 0.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 4
+    },
+    {
+      "task": "Swap the index to combine Hartree and Fock terms",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 1.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 4
+    },
+    {
+      "task": "Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice)",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 1.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 0
+    },
+    {
+      "task": "Reduce momentum in Fock term (momentum in BZ + reciprocal lattice)",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 0
+    },
+    {
+      "task": "Combine the Hartree and Fock term",
+      "step_score": {
+        "in_paper": 2.0,
+        "prompt_quality": 2.0,
+        "follow_instructions": 2.0,
+        "physics_logic": 2.0,
+        "math_derivation": 2.0,
+        "final_answer_accuracy": 2.0
+      },
+      "n_placeholders": 0
+    }
+  ],
+  "overall": {
+    "Haining": {
+      "avg_step_score": 1.8020833333333333,
+      "std_step_score": 0.1789121253887257,
+      "avg_placeholder_score": 1.6595848595848597,
+      "std_placeholder_score": 0.3011742016124368,
+      "n_tasks_evaluated": 16
+    },
+    "Will": {
+      "avg_step_score": 1.8020833333333333,
+      "std_step_score": 0.1789121253887257,
+      "avg_placeholder_score": 1.623076923076923,
+      "std_placeholder_score": 0.3747752214465529,
+      "n_tasks_evaluated": 16
+    },
+    "Yasaman": {
+      "avg_step_score": 1.8020833333333333,
+      "std_step_score": 0.1789121253887257,
+      "avg_placeholder_score": 1.6246947496947497,
+      "std_placeholder_score": 0.31789485499432685,
+      "n_tasks_evaluated": 16
+    }
+  },
+  "dimension_stats": {
+    "in_paper": {
+      "Haining": {
+        "mean": 1.5,
+        "std": 0.7905694150420949,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "Will": {
+        "mean": 1.5,
+        "std": 0.7905694150420949,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "Yasaman": {
+        "mean": 1.5,
+        "std": 0.7905694150420949,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "prompt_quality": {
+      "Haining": {
+        "mean": 1.8125,
+        "std": 0.3903123748998999,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Will": {
+        "mean": 1.8125,
+        "std": 0.3903123748998999,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Yasaman": {
+        "mean": 1.8125,
+        "std": 0.3903123748998999,
+        "min": 1.0,
+        "max": 2.0
+      }
+    },
+    "follow_instructions": {
+      "Haining": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Will": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Yasaman": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0
+      }
+    },
+    "physics_logic": {
+      "Haining": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2.0,
+        "max": 2.0
+      },
+      "Will": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2.0,
+        "max": 2.0
+      },
+      "Yasaman": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    "math_derivation": {
+      "Haining": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Will": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Yasaman": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0
+      }
+    },
+    "final_answer_accuracy": {
+      "Haining": {
+        "mean": 1.75,
+        "std": 0.4330127018922193,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Will": {
+        "mean": 1.75,
+        "std": 0.4330127018922193,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "Yasaman": {
+        "mean": 1.75,
+        "std": 0.4330127018922193,
+        "min": 1.0,
+        "max": 2.0
+      }
+    }
+  }
+}

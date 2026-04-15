@@ -1,0 +1,26 @@
+{
+  "task": "Analyze and partially reproduce the MACE-MP-0 foundation model claims using the provided reproduction dataset and related work.",
+  "named_methods": [
+    "MPtrj dataset",
+    "MACE graph neural network architecture",
+    "MACE-MP-0 foundation model",
+    "water RDF simulation",
+    "adsorption energy scaling relations",
+    "CRBH20 reaction barrier comparison"
+  ],
+  "primary_quantitative_answers": [
+    "Water simulation setup statistics and chemically relevant distance scales from the provided geometry",
+    "Adsorption-system coverage across transition metals and adsorbates implied by the dataset",
+    "Reaction-barrier reference values for the listed CRBH20 subset"
+  ],
+  "required_figures": [
+    "Data overview figure summarizing experiment families",
+    "Validation/comparison plot for the three benchmark families",
+    "At least one chemistry-specific quantitative figure"
+  ],
+  "limitations_expected": [
+    "No local MACE model weights shipped in workspace",
+    "Dataset is a compact textual reproduction spec rather than full MPtrj trajectories",
+    "Exact ab initio reproduction may be impossible without external model download or heavy dependencies"
+  ]
+}

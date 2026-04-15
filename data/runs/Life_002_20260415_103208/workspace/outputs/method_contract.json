@@ -1,0 +1,17 @@
+{
+  "task": "Protein complex structural alignment between 7xg4.pdb and 6n40.pdb",
+  "inputs": ["data/7xg4.pdb", "data/6n40.pdb"],
+  "outputs": ["chain_correspondence", "superimposition_vectors", "tm_scores", "report/report.md", "figures"],
+  "methods": [
+    "Biopython PDB parsing for chain extraction",
+    "TM-score computation for structural similarity quantification",
+    "Kabsch algorithm for optimal superposition",
+    "Pairwise chain-level and complex-level alignment"
+  ],
+  "related_work": [
+    "Foldseek (van Kempen et al., 2023) - 3Di structural alphabet for fast search",
+    "US-align (Zhang et al., 2022) - universal structure alignment with TM-score",
+    "QSalign (Dey et al., 2018) - quaternary structure alignment",
+    "TM-align (Zhang & Skolnick, 2005) - TM-score based alignment algorithm"
+  ]
+}

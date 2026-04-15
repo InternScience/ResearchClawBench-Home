@@ -1,0 +1,19 @@
+{
+  "n_samples": 387,
+  "n_initial": 184,
+  "n_opt_ei": 119,
+  "n_opt_pred": 88,
+  "target_mean_kPa": 110.4,
+  "target_median_kPa": 97.04,
+  "target_max_kPa": 353.29,
+  "target_max_MPa": 0.3533,
+  "n_above_200kPa": 67,
+  "feature_cols": [
+    "Nucleophilic-HEA",
+    "Hydrophobic-BA",
+    "Acidic-CBEA",
+    "Cationic-ATAC",
+    "Aromatic-PEA",
+    "Amide-AAm"
+  ]
+}

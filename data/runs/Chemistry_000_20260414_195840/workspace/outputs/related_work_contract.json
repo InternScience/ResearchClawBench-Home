@@ -1,0 +1,52 @@
+{
+  "papers_read": [
+    {
+      "file": "related_work/paper_000.pdf",
+      "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+      "task_relevance": [
+        "Confirms BACE, BBBP, ClinTox, HIV, and MUV as standard molecular benchmarks",
+        "Supports using dataset-specific metrics and cautions about class imbalance and data scarcity"
+      ]
+    },
+    {
+      "file": "related_work/paper_001.pdf",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "task_relevance": [
+        "Provides canonical graph convolution/message-passing baseline structure",
+        "Supports efficiency framing for simple linear-in-edges propagation"
+      ]
+    },
+    {
+      "file": "related_work/paper_002.pdf",
+      "title": "Graph Attention Networks",
+      "task_relevance": [
+        "Highlights neighborhood weighting as a possible alternative baseline family",
+        "Reinforces graph neural networks operating directly on structured inputs"
+      ]
+    },
+    {
+      "file": "related_work/paper_003.pdf",
+      "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+      "task_relevance": [
+        "Supports graph representations with edge features and interpretable local contributions",
+        "Motivates atom-level contribution analysis for interpretability"
+      ]
+    }
+  ],
+  "contract_updates": {
+    "benchmark_protocol": [
+      "Use MoleculeNet-style datasets with dataset-aware metrics",
+      "Pay attention to heavy imbalance, especially in MUV; report PR-AUC in addition to ROC-AUC where useful"
+    ],
+    "baselines": [
+      "MLP-based message-passing or graph-convolution baseline",
+      "KA-inspired Fourier message transform variant"
+    ],
+    "figure_families": [
+      "Performance comparison across datasets",
+      "Class imbalance overview",
+      "Interpretability/local contribution visualization",
+      "Efficiency-performance tradeoff"
+    ]
+  }
+}

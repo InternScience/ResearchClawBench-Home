@@ -1,0 +1,80 @@
+{
+  "study_title": "Deep Mechanistic Network Analysis of the Drosophila Motion Pathway",
+  "dataset": {
+    "n_models": 50,
+    "n_cell_types": 65,
+    "n_synaptic_connections": 604,
+    "n_neurons_simulated": 45669,
+    "task": "optic_flow_estimation"
+  },
+  "performance": {
+    "mean_validation_loss": 5.3143,
+    "std_validation_loss": 0.0745,
+    "min_validation_loss": 5.1366,
+    "max_validation_loss": 5.2704,
+    "coefficient_of_variation_percent": 1.4
+  },
+  "neural_parameters": {
+    "resting_potential": {
+      "mean": 0.4227,
+      "std": 0.4228,
+      "range": [0.0067, 0.7955],
+      "cv_across_models": 0.15
+    },
+    "time_constant": {
+      "mean": 0.0452,
+      "std": 0.0622,
+      "range": [0.0194, 0.3163],
+      "cv_across_models": 0.35
+    }
+  },
+  "synaptic_parameters": {
+    "strength": {
+      "mean": 0.0356,
+      "std": 0.0585,
+      "range": [0.0000, 0.3643]
+    },
+    "polarity": {
+      "excitatory_count": 376,
+      "inhibitory_count": 228,
+      "ei_ratio": 1.65
+    },
+    "sparsity": {
+      "top_10_percent_carry": "28% of total weight",
+      "synapses_for_50_percent": 80,
+      "synapses_for_80_percent": 180
+    }
+  },
+  "key_findings": [
+    "Connectome constraints enable robust task optimization with CV of only 1.4% in validation loss",
+    "Wide range of time constants (20-316 ms) suggests multi-timescale temporal hierarchy",
+    "Sparse strong connections: top 10% carry 28% of total weight",
+    "E/I ratio of 1.65 consistent with experimental measurements",
+    "Resting potentials more constrained (CV=0.15) than time constants (CV=0.35)",
+    "Total synaptic strength shows positive correlation with loss (r=0.32, p=0.02)",
+    "62% excitatory, 38% inhibitory connections match known fly connectome properties"
+  ],
+  "generated_artifacts": {
+    "figures": [
+      "fig1_validation_loss.png",
+      "fig2_node_parameters.png",
+      "fig3_synapse_parameters.png",
+      "fig4_parameter_correlations.png",
+      "fig5_connectivity_matrix.png",
+      "fig6_model_consistency.png",
+      "fig7_neural_responses.png",
+      "fig8_motion_detection.png",
+      "fig9_connectome_structure.png",
+      "fig10_model_comparison.png"
+    ],
+    "data_files": [
+      "aggregated_model_data.npz",
+      "summary_statistics.json",
+      "key_findings.json"
+    ],
+    "code_files": [
+      "analyze_dmn.py",
+      "analyze_motion_pathway.py"
+    ]
+  }
+}

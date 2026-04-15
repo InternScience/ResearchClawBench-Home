@@ -1,0 +1,19 @@
+{
+  "task": "Neuron Segment Connectivity Prediction for Connectomics",
+  "goal": "Automate proofreading in large-scale connectomics by predicting whether two over-segmented neuron fragments belong to the same neuron",
+  "input": "20 features per segment pair (morphology, intensity, embedding modalities)",
+  "output": "Binary prediction (0 or 1) indicating whether segments should be merged",
+  "data_characteristics": {
+    "train_samples": 8400,
+    "test_samples": 3600,
+    "features": 20,
+    "degradation_types": ["Misalignment", "Missing Sections", "Mixed", "Average"],
+    "label_distribution": "Binary (0=different neurons, 1=same neuron)"
+  },
+  "methodological_commitments": {
+    "feature_types": ["morphological", "intensity", "embedding"],
+    "evaluation_metrics": ["accuracy", "precision", "recall", "f1_score", "roc_auc", "pr_auc"],
+    "required_comparisons": ["across degradation types", "model comparison", "feature importance"],
+    "validation_approach": "Stratified analysis by degradation type"
+  }
+}

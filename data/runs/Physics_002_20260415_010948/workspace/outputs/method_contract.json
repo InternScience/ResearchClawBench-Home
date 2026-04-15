@@ -1,0 +1,24 @@
+{
+  "task": "Estimate per-instance fidelity for random quantum circuit sampling verification data and compare against a classical approximability baseline inferred from the related paper context.",
+  "named_methods": [
+    "Linear XEB fidelity estimation",
+    "Counts-weighted estimator using experimental bitstring samples and ideal probabilities",
+    "Uncertainty estimation across finite matched samples",
+    "Depth-scan comparison curves at fixed N"
+  ],
+  "primary_target_quantity": {
+    "name": "linear_xeb_fidelity",
+    "definition": "For matched bitstrings x with empirical counts n_x and ideal probabilities p_x, estimate F_XEB = 2^N * sum_x (n_x/M) p_x - 1, where M is total matched sample count.",
+    "units": "dimensionless"
+  },
+  "secondary_targets": [
+    "Per-depth mean fidelity across instances",
+    "Per-depth uncertainty/dispersion across instances",
+    "Comparison of estimated fidelity with a generic classical approximability threshold curve"
+  ],
+  "scope_limitations": [
+    "Available amplitudes are only for N=40 XEB verification instances with depths 8-20.",
+    "The full paper-specific MB regression or gate-error propagation models may not be reconstructable from the provided workspace alone.",
+    "Related-work PDF extraction tool failed, so paper-specific constants may need to be approximated from accessible metadata/workspace evidence."
+  ]
+}

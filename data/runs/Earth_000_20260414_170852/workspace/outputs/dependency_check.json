@@ -1,0 +1,13 @@
+{
+  "python_packages": {
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true
+  },
+  "pdf_reading": {
+    "ReadPDF_tool": "failed with NoneType on paper_000.pdf and paper_001.pdf; fallback to local pdfinfo/pdftotext if available"
+  },
+  "planned_runtime": "python3"
+}

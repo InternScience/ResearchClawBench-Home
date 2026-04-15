@@ -1,0 +1,42 @@
+{
+  "papers": [
+    {
+      "file": "related_work/paper_000.pdf",
+      "topic": "Foundational altermagnetism theory",
+      "relevant_points": [
+        "Altermagnetism is a distinct collinear-compensated magnetic phase",
+        "Key signatures include spin-split bands without net magnetization and d/g/i-wave anisotropy patterns",
+        "Materials can span metals and insulators"
+      ]
+    },
+    {
+      "file": "related_work/paper_001.pdf",
+      "topic": "Spin space groups classification",
+      "relevant_points": [
+        "Spin-space symmetries offer a systematic route to classify magnetic structures",
+        "Symmetry-derived features can explain unconventional Fermi-surface textures and degeneracies"
+      ]
+    },
+    {
+      "file": "related_work/paper_002.pdf",
+      "topic": "Extended altermagnetism in non-collinear chiral systems",
+      "relevant_points": [
+        "Confirms broadening of altermagnetic concept beyond simple collinear settings",
+        "Emphasizes multipolar and transport signatures not available from the current dataset alone"
+      ]
+    },
+    {
+      "file": "related_work/paper_003.pdf",
+      "topic": "AI for materials discovery",
+      "relevant_points": [
+        "A useful AI-discovery framing includes interpretable descriptors, uncertainty-aware ranking, and expert-guided validation",
+        "Transferability and clear candidate prioritization are important in materials-search systems"
+      ]
+    }
+  ],
+  "contract_updates": [
+    "Report should distinguish predictive screening from first-principles confirmation.",
+    "Where direct physical classes such as metal/insulator or d/g/i-wave are unavailable from provided data, avoid unsupported claims.",
+    "Candidate prioritization and class-imbalance-aware evaluation are central artifacts."
+  ]
+}

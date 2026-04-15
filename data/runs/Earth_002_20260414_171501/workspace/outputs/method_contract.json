@@ -1,0 +1,27 @@
+{
+  "task": "Develop a composite risk index combining tropical cyclone regime shifts and sea level rise, and apply it globally to evaluate mangrove risk by end of century.",
+  "named_inputs": [
+    "Global Mangrove Watch sample points",
+    "IPCC AR6 relative sea level rise rates for SSP245/370/585",
+    "Historical tropical cyclone tracks from MIT downscaled MPI-ESM1-2-HR",
+    "Country boundary and mangrove area reference layer"
+  ],
+  "primary_outputs": [
+    "global mangrove composite risk estimates",
+    "explicit TC and SLR component layers",
+    "scenario comparison across SSP245/370/585",
+    "hotspot maps and summary tables"
+  ],
+  "method_commitments": [
+    "derive mangrove spatial units from provided point sample",
+    "extract sea-level-rise rates for mangrove locations using median 2100 rates",
+    "derive a transparent historical TC regime-pressure proxy emphasizing major/intense storms",
+    "construct explicit composite risk index with reproducible normalization and equal weighting",
+    "report scenario-specific outputs, validation references, and limitations"
+  ],
+  "validation_references": [
+    "RSLR thresholds of 4 and 7 mm/yr from related work for interpretive benchmarking",
+    "Comparison of scenario risk distributions and component distributions"
+  ],
+  "status": "updated_after_related_work_and_data_inspection"
+}

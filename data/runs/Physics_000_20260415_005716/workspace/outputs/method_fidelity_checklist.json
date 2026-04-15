@@ -1,0 +1,28 @@
+{
+  "named_method": "Data-grounded analysis of multi-component icosahedral shell packing reproduction dataset",
+  "definition": [
+    "Parse explicit shell, mismatch, validation, and growth tables from the provided reproduction file",
+    "Report stable structures directly named in the dataset",
+    "Summarize optimal mismatch ranges between adjacent shells using provided ranges and point estimates",
+    "Summarize growth-path behavior using provided dynamic-growth statistics"
+  ],
+  "assumptions": [
+    "The provided reproduction data is authoritative for this benchmark task",
+    "Stable structures are represented by the validated multicomponent_clusters entries",
+    "Universal-framework conclusions should be phrased as data-supported within this compact reproduction dataset"
+  ],
+  "invariants": [
+    "Do not modify read-only source data",
+    "Keep all main quantitative claims traceable to outputs artifacts",
+    "Preserve shell-category labels MC, BG, and Ch1-Ch5 exactly as given"
+  ],
+  "non_negotiable_steps": [
+    "Generate explicit stable-structure table",
+    "Generate size-mismatch summary",
+    "Generate at least one validation plot comparing theory and experiment",
+    "Generate at least one path/growth figure"
+  ],
+  "deviations": [
+    "Could not extract text from related_work PDFs using built-in ReadPDF or pdftotext; report notes this limitation and relies primarily on the provided reproduction dataset."
+  ]
+}

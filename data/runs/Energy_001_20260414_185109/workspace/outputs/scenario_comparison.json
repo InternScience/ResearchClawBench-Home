@@ -1,0 +1,54 @@
+[
+  {
+    "scenario": "Base Case",
+    "total_cost_billion_gbp": 119.21,
+    "fuel_cost_million_gbp": 71.6,
+    "shedding_cost_billion_gbp": 119.139,
+    "shedding_pct": 74.74,
+    "wind_generation_gwh": 4192.7,
+    "gas_generation_gwh": 1352.0,
+    "nuclear_generation_gwh": 403.2,
+    "curtailment_gwh": 1921.7,
+    "storage_charge_gwh": 4.4,
+    "storage_discharge_gwh": 4.2
+  },
+  {
+    "scenario": "High Wind (2x)",
+    "total_cost_billion_gbp": 115.371,
+    "fuel_cost_million_gbp": 71.6,
+    "shedding_cost_billion_gbp": 115.299,
+    "shedding_pct": 72.33,
+    "wind_generation_gwh": 8385.3,
+    "gas_generation_gwh": 1352.0,
+    "nuclear_generation_gwh": 403.2,
+    "curtailment_gwh": 5731.4,
+    "storage_charge_gwh": 2.3,
+    "storage_discharge_gwh": 3.0
+  },
+  {
+    "scenario": "High Storage (5x)",
+    "total_cost_billion_gbp": 119.192,
+    "fuel_cost_million_gbp": 71.6,
+    "shedding_cost_billion_gbp": 119.121,
+    "shedding_pct": 74.73,
+    "wind_generation_gwh": 4192.7,
+    "gas_generation_gwh": 1352.0,
+    "nuclear_generation_gwh": 403.2,
+    "curtailment_gwh": 1922.2,
+    "storage_charge_gwh": 14.8,
+    "storage_discharge_gwh": 16.7
+  },
+  {
+    "scenario": "High Wind + High Storage",
+    "total_cost_billion_gbp": 115.353,
+    "fuel_cost_million_gbp": 71.6,
+    "shedding_cost_billion_gbp": 115.281,
+    "shedding_pct": 72.32,
+    "wind_generation_gwh": 8385.3,
+    "gas_generation_gwh": 1352.0,
+    "nuclear_generation_gwh": 403.2,
+    "curtailment_gwh": 5728.2,
+    "storage_charge_gwh": 20.8,
+    "storage_discharge_gwh": 20.1
+  }
+]

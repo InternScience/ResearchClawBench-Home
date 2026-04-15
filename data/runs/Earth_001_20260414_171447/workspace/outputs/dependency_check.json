@@ -1,0 +1,21 @@
+{
+  "checked": {
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "numpy": true,
+    "geopandas": false,
+    "ReadPDF_tool": "failed on local PDFs with unexpected NoneType result",
+    "pdftotext_cli": false,
+    "pdfplumber": false,
+    "fitz": false,
+    "PyPDF2": false,
+    "pypdf": false
+  },
+  "initial_assessment": {
+    "core_analysis_stack_available": true,
+    "mapping_stack_available": false,
+    "fallback_for_mapping": "Use state-level choropleth or ranked bar chart based on counts; parse us_states.geojson directly with Python json and matplotlib if needed.",
+    "fallback_for_related_work": "Proceed with dataset-centered recovery and document that PDF extraction support was unavailable in this environment."
+  }
+}

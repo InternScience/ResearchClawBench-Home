@@ -1,0 +1,32 @@
+[
+  {
+    "type": "figure",
+    "name": "carrier_density_stiffness",
+    "description": "D_s vs n_eff for conventional, geometric, exp hole/electron",
+    "path": "report/images/fig1_carrier.png"
+  },
+  {
+    "type": "figure",
+    "name": "temperature_dependence",
+    "description": "Normalized D_s vs T/Tc for BCS, nodal, power-law n=2,2.5,3, experimental",
+    "path": "report/images/fig2_temp.png"
+  },
+  {
+    "type": "figure",
+    "name": "current_dependence_dc",
+    "description": "D_s vs I_dc for GL, linear, experimental DC",
+    "path": "report/images/fig3_dc_current.png"
+  },
+  {
+    "type": "figure",
+    "name": "microwave_dependence",
+    "description": "D_s vs P_mw or I_mw for experimental MW",
+    "path": "report/images/fig4_mw.png"
+  },
+  {
+    "type": "table",
+    "name": "quantitative_ratios",
+    "description": "Max D_s_exp / D_s_conv ratio, power-law fit exponents",
+    "path": "outputs/quant_results.json"
+  }
+]

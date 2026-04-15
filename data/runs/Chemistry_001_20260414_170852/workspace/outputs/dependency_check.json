@@ -1,0 +1,14 @@
+{
+  "checked_modules": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "torch": false,
+    "rdkit": false,
+    "Bio": true,
+    "pypdf": true
+  },
+  "status": "updated_after_install",
+  "note": "PDF extraction and structure parsing dependencies are available. Deep learning runtime (torch) and cheminformatics toolkit (rdkit) remain unavailable, so exact trained diffusion implementation and symmetry-aware ligand matching are not feasible in this workspace without additional heavy installation/training."
+}

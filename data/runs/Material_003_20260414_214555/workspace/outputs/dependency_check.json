@@ -1,0 +1,14 @@
+{
+  "python_packages": {
+    "pandas": "available",
+    "numpy": "available",
+    "scikit-learn": "available",
+    "matplotlib": "available",
+    "seaborn": "available"
+  },
+  "pdf_reading": "ReadPDF tool returned parser errors for all related-work PDFs; local text extraction fallback required.",
+  "named_method_limitations": {
+    "graph_variational_autoencoder": "No chemistry-specific deep learning stack verified yet; may require a lightweight surrogate implementation or explicit fallback based on available libraries.",
+    "experimental_validation": "Physical experiments cannot be performed in this workspace. Computational prioritization will be reported instead."
+  }
+}

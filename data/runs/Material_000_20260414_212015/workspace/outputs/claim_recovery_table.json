@@ -1,0 +1,18 @@
+[
+  {
+    "claim": "Fine-tune classification performance can be quantified despite severe imbalance.",
+    "artifact": "outputs/training_metrics.json"
+  },
+  {
+    "claim": "The model ranks candidate materials and enriches positives near the top of the list.",
+    "artifact": "outputs/candidate_predictions.csv and outputs/candidate_eval.json"
+  },
+  {
+    "claim": "Composition-based descriptors contribute strongly to prediction.",
+    "artifact": "outputs/feature_importance.csv and report/images/model_performance.png"
+  },
+  {
+    "claim": "Physical classes such as metal/insulator or d/g/i-wave anisotropy were not inferred from provided graph data.",
+    "artifact": "report/report.md limitations section"
+  }
+]

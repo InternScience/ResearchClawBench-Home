@@ -1,0 +1,26 @@
+{
+  "num_repetitions": 10,
+  "elements_per_repetition": [
+    10
+  ],
+  "selected_peptides": [
+    "mut11",
+    "mut12",
+    "mut15",
+    "mut19",
+    "mut20",
+    "mut26",
+    "mut28",
+    "mut33",
+    "mut39",
+    "mut44"
+  ],
+  "mean_pairwise_iou": 1.0,
+  "median_pairwise_iou": 1.0,
+  "overall_mean_p_response": 0.9427470300116586,
+  "overall_std_p_response": 0.09153692089155495,
+  "coverage_final_threshold_05_mean": 0.992,
+  "coverage_final_threshold_09_mean": 0.8870000000000001,
+  "coverage_selected_threshold_05_mean": 0.992,
+  "runtime_slope_seconds_per_1000_cells": 0.6296203162261932
+}

@@ -1,0 +1,58 @@
+{
+  "target_artifacts": [
+    {
+      "id": "A1",
+      "name": "Score analysis code",
+      "path": "code/analyze_scores.py",
+      "status": "pending"
+    },
+    {
+      "id": "A2",
+      "name": "Parsed YAML scoring data",
+      "path": "outputs/scores_parsed.json",
+      "status": "pending"
+    },
+    {
+      "id": "A3",
+      "name": "Aggregate score statistics",
+      "path": "outputs/aggregate_stats.json",
+      "status": "pending"
+    },
+    {
+      "id": "A4",
+      "name": "Paper information extraction",
+      "path": "outputs/paper_info.json",
+      "status": "pending"
+    },
+    {
+      "id": "A5",
+      "name": "Figure: Score distribution by task",
+      "path": "report/images/score_distribution.png",
+      "status": "pending"
+    },
+    {
+      "id": "A6",
+      "name": "Figure: Heatmap of scores by evaluator and dimension",
+      "path": "report/images/score_heatmap.png",
+      "status": "pending"
+    },
+    {
+      "id": "A7",
+      "name": "Figure: Placeholder quality vs LLM answer accuracy",
+      "path": "report/images/placeholder_accuracy.png",
+      "status": "pending"
+    },
+    {
+      "id": "A8",
+      "name": "Figure: Overall performance summary",
+      "path": "report/images/performance_summary.png",
+      "status": "pending"
+    },
+    {
+      "id": "A9",
+      "name": "Research report",
+      "path": "report/report.md",
+      "status": "pending"
+    }
+  ]
+}

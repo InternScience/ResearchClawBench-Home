@@ -1,0 +1,32 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "7xg4 is multichain while 6n40 is a single-chain structure in the provided files.",
+    "artifact": "outputs/structure_overview.csv",
+    "status": "supported"
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Among individual 7xg4 chains, chain L gives the highest average TM-score against 6n40:A in the implemented approximation.",
+    "artifact": "outputs/chain_correspondence_scores.csv",
+    "status": "supported"
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The best mapping has low structural similarity by TM-score and high RMSD, indicating only weak global correspondence under this approximation.",
+    "artifact": "outputs/superposition_transform.json",
+    "status": "supported"
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Concatenating all 7xg4 chains does not improve the TM-score relative to the best single-chain match.",
+    "artifact": "outputs/complex_concatenated_alignment.json",
+    "status": "supported"
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Results are an approximation rather than an exact Foldseek-Multimer or US-align reproduction because those binaries were unavailable.",
+    "artifact": "outputs/dependency_check.json",
+    "status": "supported"
+  }
+]

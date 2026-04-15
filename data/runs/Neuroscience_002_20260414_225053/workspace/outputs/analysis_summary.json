@@ -1,0 +1,66 @@
+{
+  "selected_model": "sgd_modified_huber",
+  "training_rows_used": 30000,
+  "test_rows_used": 30000,
+  "overall_metrics": {
+    "auroc": 0.9733756841380071,
+    "average_precision": 0.688679666264224,
+    "accuracy": 0.9321666666666667,
+    "f1": 0.7461644006486217,
+    "positive_rate_predicted": 0.16566666666666666,
+    "positive_rate_true": 0.10156666666666667,
+    "threshold": 0.5
+  },
+  "top_permutation_features": [
+    {
+      "feature": "11",
+      "importance_mean": 0.06719348523738473,
+      "importance_std": 0.0018470785454075737
+    },
+    {
+      "feature": "15",
+      "importance_mean": 0.06358312364044938,
+      "importance_std": 0.003379398162681117
+    },
+    {
+      "feature": "19",
+      "importance_mean": 0.059433822928370995,
+      "importance_std": 0.001103411194935192
+    },
+    {
+      "feature": "12",
+      "importance_mean": 0.0530231728975874,
+      "importance_std": 0.001897502249708854
+    },
+    {
+      "feature": "14",
+      "importance_mean": 0.05196838512774371,
+      "importance_std": 0.004111761676407123
+    },
+    {
+      "feature": "16",
+      "importance_mean": 0.05070967902404185,
+      "importance_std": 0.0007361742533210714
+    },
+    {
+      "feature": "13",
+      "importance_mean": 0.04957338739571552,
+      "importance_std": 0.0032353629505078164
+    },
+    {
+      "feature": "9",
+      "importance_mean": 0.04807045133257548,
+      "importance_std": 0.0012481618292416907
+    },
+    {
+      "feature": "10",
+      "importance_mean": 0.04726394294585701,
+      "importance_std": 0.0014956572891859214
+    },
+    {
+      "feature": "0",
+      "importance_mean": 0.046532583875785405,
+      "importance_std": 0.002523598940909701
+    }
+  ]
+}

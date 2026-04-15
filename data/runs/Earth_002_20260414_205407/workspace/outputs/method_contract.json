@@ -1,0 +1,20 @@
+{
+  "core_method": "composite risk index combining tropical cyclone (TC) regime shifts and sea level rise (SLR)",
+  "scenarios": ["SSP2-4.5", "SSP3-7.0", "SSP5-8.5"],
+  "temporal_scope": "end of century (2100)",
+  "spatial_scope": "global mangroves",
+  "data_sources": {
+    "mangroves": "GMW v4 sampled polygons",
+    "slr": "IPCC AR6 regional relative SLR rates (medium confidence)",
+    "tc": "historical TC tracks from MIT MPI-ESM1-2-HR"
+  },
+  "key_steps": [
+    "Calculate SLR projection to 2100 from median rates 2020-2100",
+    "Calculate baseline TC exposure/frequency from historical tracks",
+    "Define TC regime shift (baseline or projected; future projections missing?)",
+    "Composite index: normalized SLR + TC risk",
+    "Apply to mangroves: per polygon or aggregated",
+    "Visualize risks globally"
+  ],
+  "assumptions": ["TC future = historical baseline (no shift data)", "mangrove centroids represent polygons", "match SLR by nearest location"]
+}

@@ -1,0 +1,24 @@
+{
+  "named_method": "Latent Ewald Summation (LES)",
+  "definition": "A long-range electrostatics mechanism intended to recover interpretable latent charges from energies/forces without explicitly supervising charges or running charge equilibration, while coupling short-range learned interactions with Ewald-style long-range treatment.",
+  "assumptions": [
+    "latent charges should be inferable from data when electrostatics dominate",
+    "global electrostatic interactions require nonlocal treatment beyond short-range cutoffs",
+    "charge-state metadata may be needed when identical local structures map to different energies"
+  ],
+  "invariants": [
+    "long-range electrostatic contribution should depend on all atoms, not only local neighbors",
+    "derived charges should support interpretable electrostatic observables",
+    "benchmark analyses must preserve charge-state distinctions"
+  ],
+  "non_negotiable_structural_steps": [
+    "compare a local/short-range baseline against an electrostatics-aware model or analytic descriptor",
+    "evaluate charge recovery or charge-proxy fidelity on the random_charges benchmark",
+    "evaluate separation-dependent behavior on charged dimers",
+    "evaluate charge-state separability on Ag3"
+  ],
+  "this_workspace_fidelity_plan": {
+    "exact_end_to_end_LES_reproduction": "not feasible from available workspace alone because the paper/method implementation is not provided and datasets are limited",
+    "faithful_minimal_benchmark": "use analytic electrostatic descriptors and simple regressors as a benchmark-faithful approximation to test the named scientific claims"
+  }
+}

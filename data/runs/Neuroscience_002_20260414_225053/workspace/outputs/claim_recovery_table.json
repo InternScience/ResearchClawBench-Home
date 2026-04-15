@@ -1,0 +1,39 @@
+[
+  {
+    "claim": "A linear discriminative classifier can separate merge vs non-merge pairs strongly on held-out data.",
+    "evidence_artifact": "outputs/heldout_overall_metrics.json",
+    "support": {
+      "auroc": 0.9733756841380071,
+      "average_precision": 0.688679666264224,
+      "accuracy": 0.9321666666666667,
+      "f1": 0.7461644006486217
+    }
+  },
+  {
+    "claim": "Performance differs substantially by degradation condition, with Average being hardest.",
+    "evidence_artifact": "outputs/metrics_by_degradation.csv",
+    "support": {
+      "Average_AP": 0.483181,
+      "Misalignment_AP": 0.87526,
+      "MissingSections_AP": 0.857524,
+      "Mixed_AP": 0.85431
+    }
+  },
+  {
+    "claim": "Features 11, 15, 19, 12, and 14 are among the most influential for the selected model on held-out data.",
+    "evidence_artifact": "outputs/permutation_importance.csv",
+    "support": {
+      "top_features": ["11", "15", "19", "12", "14"]
+    }
+  },
+  {
+    "claim": "The sampled train/test sets preserve strong class imbalance near 10% positives and balanced degradation strata in full data.",
+    "evidence_artifact": "outputs/data_overview.csv; outputs/train_by_degradation.csv; outputs/test_by_degradation.csv",
+    "support": {
+      "train_full_rows": 168000,
+      "test_full_rows": 72000,
+      "train_positive_rate": 0.09932738095238096,
+      "test_positive_rate": 0.10156944444444445
+    }
+  }
+]

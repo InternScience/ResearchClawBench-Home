@@ -1,0 +1,15 @@
+{
+  "python_version": "available",
+  "numpy": "available",
+  "matplotlib": "available",
+  "json": "available (stdlib)",
+  "heapq": "available (stdlib)",
+  "required_packages_installed": true,
+  "missing_packages": [],
+  "capability_notes": [
+    "No PyTorch/TensorFlow available - MARL value estimates are handcrafted rather than learned",
+    "No specialized MAPF libraries - all algorithms implemented from scratch",
+    "A* with space-time constraints implemented natively"
+  ],
+  "fallback_strategy": "Handcrafted MARL-inspired heuristics instead of trained neural network policies"
+}

@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    {"name": "model_inventory_table", "status": "planned", "path": "outputs/model_inventory.csv"},
+    {"name": "validation_loss_summary", "status": "planned", "path": "outputs/validation_summary.csv"},
+    {"name": "connectome_config_summary", "status": "planned", "path": "outputs/connectome_config_summary.json"},
+    {"name": "cell_type_umap_cluster_summary", "status": "planned", "path": "outputs/umap_cluster_summary.csv"},
+    {"name": "figure_validation_curves", "status": "planned", "path": "report/images/validation_curves.png"},
+    {"name": "figure_celltype_embedding", "status": "planned", "path": "report/images/celltype_embedding_examples.png"},
+    {"name": "figure_cluster_size_summary", "status": "planned", "path": "report/images/cluster_summary.png"},
+    {"name": "claim_recovery_table", "status": "planned", "path": "outputs/claim_recovery_table.csv"},
+    {"name": "final_report", "status": "planned", "path": "report/report.md"}
+  ]
+}

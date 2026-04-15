@@ -1,0 +1,107 @@
+[
+  {
+    "n_agents": 5,
+    "PP": {
+      "success": false,
+      "time": 0.0071523189544677734,
+      "collisions": 1,
+      "cost": 96
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.007480621337890625,
+      "collisions": 0,
+      "cost": 95
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.6245076656341553,
+      "collisions": 0,
+      "cost": 1916
+    }
+  },
+  {
+    "n_agents": 8,
+    "PP": {
+      "success": false,
+      "time": 0.17233705520629883,
+      "collisions": Infinity,
+      "cost": Infinity
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.122854471206665,
+      "collisions": 2,
+      "cost": 121
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.45817136764526367,
+      "collisions": 0,
+      "cost": 5008
+    }
+  },
+  {
+    "n_agents": 12,
+    "PP": {
+      "success": true,
+      "time": 0.010656356811523438,
+      "collisions": 0,
+      "cost": 253
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.024692773818969727,
+      "collisions": 0,
+      "cost": 255
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 1.628359079360962,
+      "collisions": 0,
+      "cost": 2059
+    }
+  },
+  {
+    "n_agents": 15,
+    "PP": {
+      "success": false,
+      "time": 0.0185089111328125,
+      "collisions": 3,
+      "cost": 257
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.007915496826172,
+      "collisions": 3,
+      "cost": 257
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.00971531867981,
+      "collisions": 2,
+      "cost": 2105
+    }
+  },
+  {
+    "n_agents": 20,
+    "PP": {
+      "success": true,
+      "time": 0.06583261489868164,
+      "collisions": 0,
+      "cost": 376
+    },
+    "LNS": {
+      "success": true,
+      "time": 1.2596783638000488,
+      "collisions": 0,
+      "cost": 376
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.011183738708496,
+      "collisions": 2,
+      "cost": 992
+    }
+  }
+]

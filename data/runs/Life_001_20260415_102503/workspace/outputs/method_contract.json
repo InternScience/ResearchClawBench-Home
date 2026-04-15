@@ -1,0 +1,33 @@
+# Method Contract Summary
+
+## Task
+Analyze personalized neoantigen vaccine optimization simulation data to determine optimal vaccine composition, quantify efficacy metrics, and evaluate optimization performance.
+
+## Named Methods/Protocols
+- **MinSum objective**: Minimize aggregate non-response probability across tumor cells
+- **Adaptive selection**: Greedy iterative element selection with maximum marginal contribution
+- **Budget constraint**: Fixed K=10 neoantigen elements
+- **Coverage metrics**: Per-cell response probability, coverage ratio, IoU stability
+- **Runtime scaling**: Power-law characterization O(N^α)
+
+## Target Artifacts
+1. Response probability distribution analysis (histogram + ECDF) → figure1
+2. Cell × mutation response heatmap → figure2
+3. Per-mutation response probability analysis → figure3
+4. Coverage curve + IoU stability → figure4
+5. Vaccine element selection/importance → figure5
+6. Runtime scaling analysis → figure6
+7. Subgroup/population analysis → figure7
+8. Key metrics JSON → outputs/key_metrics.json
+9. Comprehensive report → report/report.md
+
+## Data Sources
+- cell-populations.csv: 28,068 rows, 11 mutations, 100 cells × 10 reps
+- final-response-likelihoods.csv: 1,000 cells with p_response
+- optimization_runtime_data.csv: 7 patients × 5 population sizes
+- selected-vaccine-elements: 10 reps × 10 elements
+- vaccine-elements.scores.*: 10 reps × 100 cells × 12 elements
+- vaccine.budget-10.minsum.adaptive.csv: Final composition
+
+## Status
+All artifacts generated and saved.

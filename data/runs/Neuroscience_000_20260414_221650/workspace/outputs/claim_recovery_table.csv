@@ -1,0 +1,9 @@
+claim,artifact,status
+engineered_reference_subset Attack held-out average precision = 0.996,outputs/metrics_summary.csv,supported
+engineered_reference_subset Attack confusion matrix exported,outputs/confusion_matrix_engineered_reference_subset_Attack.csv,supported
+raw_pose_sample Attack held-out average precision = 0.779,outputs/metrics_summary.csv,supported
+raw_pose_sample Attack confusion matrix exported,outputs/confusion_matrix_raw_pose_sample_Attack.csv,supported
+engineered_reference_subset Sniffing held-out average precision = 1.000,outputs/metrics_summary.csv,supported
+engineered_reference_subset Sniffing confusion matrix exported,outputs/confusion_matrix_engineered_reference_subset_Sniffing.csv,supported
+raw_pose_sample Sniffing held-out average precision = 0.849,outputs/metrics_summary.csv,supported
+raw_pose_sample Sniffing confusion matrix exported,outputs/confusion_matrix_raw_pose_sample_Sniffing.csv,supported

@@ -1,0 +1,67 @@
+{
+  "evaluator_statistics": {
+    "Haining": {
+      "mean_score": 1.619,
+      "std_score": 0.706,
+      "median_score": 2.0,
+      "total_evaluations": 84,
+      "accuracy_percentage": 80.95
+    },
+    "Will": {
+      "mean_score": 1.566,
+      "std_score": 0.749,
+      "median_score": 2.0,
+      "total_evaluations": 76,
+      "accuracy_percentage": 78.29
+    },
+    "Yasaman": {
+      "mean_score": 1.583,
+      "std_score": 0.711,
+      "median_score": 2.0,
+      "total_evaluations": 84,
+      "accuracy_percentage": 79.17
+    }
+  },
+  "dimension_statistics": {
+    "in_paper": {
+      "mean": 1.5,
+      "std": 0.7905694150420949,
+      "median": 2.0,
+      "count": 16
+    },
+    "prompt_quality": {
+      "mean": 1.8125,
+      "std": 0.3903123748998999,
+      "median": 2.0,
+      "count": 16
+    },
+    "follow_instructions": {
+      "mean": 1.875,
+      "std": 0.33071891388307384,
+      "median": 2.0,
+      "count": 16
+    },
+    "physics_logic": {
+      "mean": 2.0,
+      "std": 0.0,
+      "median": 2.0,
+      "count": 16
+    },
+    "math_derivation": {
+      "mean": 1.875,
+      "std": 0.33071891388307384,
+      "median": 2.0,
+      "count": 16
+    },
+    "final_answer_accuracy": {
+      "mean": 1.75,
+      "std": 0.4330127018922193,
+      "median": 2.0,
+      "count": 16
+    }
+  },
+  "overall_summary": {
+    "average_accuracy": 79.47,
+    "consistency": 98.89
+  }
+}

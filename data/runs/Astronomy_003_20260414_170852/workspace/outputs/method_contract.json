@@ -1,0 +1,22 @@
+{
+  "task": "Analyze synthetic SXS-like binary black hole waveform accuracy datasets and produce a publication-style report.",
+  "named_methodological_commitments": [
+    "Quantify waveform-resolution error distribution from fig6_data.csv",
+    "Quantify mode-by-mode error structure across spherical harmonic modes l=2..8 from fig7_data.csv",
+    "Quantify extrapolation-order comparison behavior for N=2 vs 3 and N=2 vs 4 from fig8_data.csv",
+    "Produce validation/comparison plots and data overview",
+    "Use related work to contextualize expected accuracy trends and interpretation"
+  ],
+  "primary_target_quantities": [
+    "Median, spread, and tail behavior of waveform differences",
+    "Per-mode median and dispersion versus l",
+    "Comparative distributions and pairwise relation for extrapolation-order differences"
+  ],
+  "required_outputs": [
+    "Reproducible analysis code",
+    "Saved quantitative summary tables",
+    "PNG figures for report",
+    "Traceable report with validation and limitations"
+  ],
+  "notes": "The workspace contains only synthetic summary datasets rather than full waveforms, so the analysis will characterize catalog-level error distributions and compare them to trends described in related work rather than reconstructing numerical relativity waveforms themselves."
+}

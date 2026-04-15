@@ -1,0 +1,28 @@
+{
+  "primary_quantitative_answers": {
+    "enhancement_factor_mean_hole": "~55x over conventional",
+    "enhancement_factor_mean_electron": "~52x over conventional",
+    "power_law_exponent": "fitted from low-T data",
+    "critical_current_GL": "~50 nA",
+    "critical_current_exp": "fitted from experimental data"
+  },
+  "required_figures": [
+    "fig01_carrier_density.png - Carrier density dependence with quantum geometry enhancement",
+    "fig02_temperature_dependence.png - Temperature dependence with power-law fit",
+    "fig03_current_dependence.png - Current dependence GL vs linear",
+    "fig04_quadratic_current.png - Quadratic current relationship verification",
+    "fig05_summary.png - Comprehensive summary panel",
+    "fig06_asymmetry.png - Hole-electron doping asymmetry"
+  ],
+  "required_tables": [
+    "enhancement_stats.json - Enhancement factor statistics",
+    "temperature_fit.json - Power law fit results",
+    "current_fit.json - Quadratic current fit results",
+    "all_results.json - Combined results"
+  ],
+  "interpretability_artifacts": [
+    "Log-log power law residual plot (Fig 5e)",
+    "Enhancement factor vs carrier density (Fig 1b, Fig 5d)",
+    "Quadratic current verification (Fig 4)"
+  ]
+}

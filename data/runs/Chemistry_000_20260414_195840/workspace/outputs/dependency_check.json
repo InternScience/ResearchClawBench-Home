@@ -1,0 +1,25 @@
+{
+  "checked": {
+    "torch": true,
+    "rdkit": true,
+    "numpy": true,
+    "sklearn": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "PyPDF2": true,
+    "torch_geometric": false,
+    "shap": false
+  },
+  "version_adjustments": {
+    "numpy": "Downgraded from 2.2.5 to 1.26.4 for RDKit binary compatibility"
+  },
+  "interpretation": {
+    "available_for_core_study": ["torch", "rdkit", "sklearn", "pandas", "numpy", "matplotlib", "seaborn", "PyPDF2"],
+    "missing": ["torch_geometric", "shap"],
+    "fallbacks": {
+      "graph_learning": "Implement custom message-passing GNN directly in PyTorch rather than relying on torch_geometric",
+      "interpretability": "Use permutation importance and gradient-based atom saliency instead of SHAP"
+    }
+  }
+}

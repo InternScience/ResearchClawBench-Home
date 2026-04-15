@@ -1,0 +1,17 @@
+{
+  "negatives": {
+    "Electricity [kW]": 0,
+    "Heat [mmBTU]": 0,
+    "Cooling Energy [Ton]": 0,
+    "PV Power Generation [kW]": 0,
+    "Greenhouse Gas Emission [Ton]": 0
+  },
+  "outliers_z3": {
+    "Electricity [kW]": 0,
+    "Heat [mmBTU]": 0,
+    "Cooling Energy [Ton]": 1,
+    "PV Power Generation [kW]": 0,
+    "Greenhouse Gas Emission [Ton]": 0
+  },
+  "changes": "clipped negatives to 0, outliers to mean+3std"
+}

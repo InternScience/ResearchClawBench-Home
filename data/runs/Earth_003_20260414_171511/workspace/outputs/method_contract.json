@@ -1,0 +1,20 @@
+{
+  "task": "Cascade machine learning weather forecasting system for 15-day global forecasts from two-step ERA5 inputs",
+  "named_method_commitments": [
+    "Use or analyze a cascade forecasting setup with three specialized U-Transformer models",
+    "Assess mitigation of forecast error accumulation across lead time",
+    "Use the provided ERA5-style multivariate global inputs and FuXi forecast outputs present in workspace",
+    "Compare behavior against the task-stated benchmark target of ECMWF ensemble mean only qualitatively unless direct benchmark data are available"
+  ],
+  "primary_outputs": [
+    "data overview of input and forecast tensors",
+    "lead-time-resolved forecast diagnostics",
+    "global maps and/or zonal summaries from forecast fields",
+    "validation section separating direct evidence, related work, and limitations"
+  ],
+  "direct_workspace_limitations": [
+    "No explicit ECMWF ensemble mean reference data identified yet",
+    "No full training corpus for fitting a new three-model cascade identified yet",
+    "Likely feasible scope is forensic analysis and reproduction-oriented evaluation of provided forecast artifact rather than full model training"
+  ]
+}

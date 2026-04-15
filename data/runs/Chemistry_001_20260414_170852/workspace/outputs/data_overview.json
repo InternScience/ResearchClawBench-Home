@@ -1,0 +1,36 @@
+{
+  "protein_sequence_excerpt": "GMWDETELGLYKVNEYVDARDTNMGAWFEAQVVRVTRKAPSRDEPCSSTS...",
+  "protein_sequence_length": 161,
+  "protein_unique_residues": [
+    "ALA",
+    "ARG",
+    "ASN",
+    "ASP",
+    "CYS",
+    "GLN",
+    "GLU",
+    "GLY",
+    "HIS",
+    "ILE",
+    "LEU",
+    "LYS",
+    "MET",
+    "PHE",
+    "PRO",
+    "SER",
+    "THR",
+    "TRP",
+    "TYR",
+    "VAL"
+  ],
+  "ligand_elements": [
+    "C",
+    "H",
+    "N",
+    "O"
+  ],
+  "instruction_claim_vs_observation": {
+    "instruction_claim": "protein file includes only CA atoms for 107 residues",
+    "observed_file_content": "PDB contains 2591 atoms and 161 CA atoms across 161 residues."
+  }
+}

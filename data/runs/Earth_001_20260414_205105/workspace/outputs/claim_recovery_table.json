@@ -1,0 +1,29 @@
+{
+  "claims": [
+    {
+      "claim": "Spatial concentration in western states (CA, CO, UT, TX, ID >70% projects)",
+      "support": "outputs/state_counts.csv (CA:215, CO:142, UT:130, TX:104, ID:73; total top5=664/832=80%)",
+      "artifact": "report/images/state_map.png",
+      "verified": true
+    },
+    {
+      "claim": "Peak annual activity mid-2000s, dip 2020, recent rebound",
+      "support": "outputs/yearly_counts.csv (max 49@2003; min12@2020; 34@2024)",
+      "artifact": "report/images/annual_activity.png",
+      "verified": true
+    },
+    {
+      "claim": "Dominant purpose: augment snowpack (39%)",
+      "support": "outputs/purpose_counts.csv (326/832)",
+      "artifact": "report/images/purpose_composition.png",
+      "verified": true
+    },
+    {
+      "claim": "Silver iodide primary agent; ground apparatus most used",
+      "support": "outputs/agent_apparatus_crosstab.csv (AgI:521; ground:461)",
+      "artifact": "report/images/agent_apparatus_heatmap.png",
+      "verified": true
+    }
+  ],
+  "overall": "All patterns recovered from data via script; no paper-specific claims contradicted."
+}

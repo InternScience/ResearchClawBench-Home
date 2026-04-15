@@ -1,0 +1,21 @@
+{
+  "related_work_status": "limited",
+  "papers_present": [
+    "related_work/paper_000.pdf",
+    "related_work/paper_001.pdf",
+    "related_work/paper_002.pdf",
+    "related_work/paper_003.pdf"
+  ],
+  "recoverable_facts": [
+    {
+      "file": "paper_001.pdf",
+      "fact": "Contains link to https://llava-vl.github.io from raw PDF object text, indicating one related paper concerns LLaVA or a closely related multimodal model."
+    },
+    {
+      "file": "paper_002.pdf",
+      "fact": "Metadata title recoverable as 'Sigmoid Loss for Language Image Pre-Training'."
+    }
+  ],
+  "limitation": "Direct PDF text extraction failed because ReadPDF returned parser errors and the environment lacks pdfinfo/pdftotext/PyPDF2/pdfplumber. Therefore related-work integration is limited to raw-PDF metadata fragments rather than full paper synthesis.",
+  "impact_on_contract": "Does not change the core task contract: unified autoregressive Transformer, decoupled visual encoding, dual support for understanding and generation, and comparison to a single visual encoder baseline."
+}

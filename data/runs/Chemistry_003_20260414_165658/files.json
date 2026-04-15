@@ -1,0 +1,295 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analysis.py",
+    "path": "code/analysis.py",
+    "type": "file",
+    "size": 11300,
+    "mtime": 1776239218.0,
+    "exported": true
+  },
+  {
+    "name": "figures.py",
+    "path": "code/figures.py",
+    "type": "file",
+    "size": 9727,
+    "mtime": 1776239218.0,
+    "exported": true
+  },
+  {
+    "name": "les_model.py",
+    "path": "code/les_model.py",
+    "type": "file",
+    "size": 9143,
+    "mtime": 1776239218.0,
+    "exported": true
+  },
+  {
+    "name": "parse_data.py",
+    "path": "code/parse_data.py",
+    "type": "file",
+    "size": 3035,
+    "mtime": 1776239220.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "ag3_chargestates.xyz",
+    "path": "data/ag3_chargestates.xyz",
+    "type": "file",
+    "size": 25976,
+    "mtime": 1772414962.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "charged_dimer.xyz",
+    "path": "data/charged_dimer.xyz",
+    "type": "file",
+    "size": 55920,
+    "mtime": 1772414962.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "random_charges.xyz",
+    "path": "data/random_charges.xyz",
+    "type": "file",
+    "size": 768000,
+    "mtime": 1772414960.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "ag_results.npz",
+    "path": "outputs/ag_results.npz",
+    "type": "file",
+    "size": 2800,
+    "mtime": 1776239214.0,
+    "exported": false
+  },
+  {
+    "name": "cd_fit_Coulomb+Exp.npz",
+    "path": "outputs/cd_fit_Coulomb+Exp.npz",
+    "type": "file",
+    "size": 742,
+    "mtime": 1776239214.0,
+    "exported": false
+  },
+  {
+    "name": "cd_fit_LJ-like.npz",
+    "path": "outputs/cd_fit_LJ-like.npz",
+    "type": "file",
+    "size": 742,
+    "mtime": 1776239212.0,
+    "exported": false
+  },
+  {
+    "name": "cd_results.npz",
+    "path": "outputs/cd_results.npz",
+    "type": "file",
+    "size": 1480,
+    "mtime": 1776239214.0,
+    "exported": false
+  },
+  {
+    "name": "dataset1_charge_recovery.json",
+    "path": "outputs/dataset1_charge_recovery.json",
+    "type": "file",
+    "size": 21729,
+    "mtime": 1776239214.0,
+    "exported": true
+  },
+  {
+    "name": "dataset2_binding_curves.json",
+    "path": "outputs/dataset2_binding_curves.json",
+    "type": "file",
+    "size": 6163,
+    "mtime": 1776239214.0,
+    "exported": true
+  },
+  {
+    "name": "dataset3_charge_states.json",
+    "path": "outputs/dataset3_charge_states.json",
+    "type": "file",
+    "size": 3495,
+    "mtime": 1776239214.0,
+    "exported": true
+  },
+  {
+    "name": "rc_results.npz",
+    "path": "outputs/rc_results.npz",
+    "type": "file",
+    "size": 7958,
+    "mtime": 1776239214.0,
+    "exported": false
+  },
+  {
+    "name": "summary.json",
+    "path": "outputs/summary.json",
+    "type": "file",
+    "size": 525,
+    "mtime": 1776239214.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1659509,
+    "mtime": 1773914888.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1792962,
+    "mtime": 1773914888.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 263549,
+    "mtime": 1773914888.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 6623726,
+    "mtime": 1773914888.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_charge_recovery.png",
+    "path": "report/images/fig1_charge_recovery.png",
+    "type": "file",
+    "size": 103023,
+    "mtime": 1776239216.0,
+    "exported": true
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 68109,
+    "mtime": 1776239218.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_binding_curves.png",
+    "path": "report/images/fig2_binding_curves.png",
+    "type": "file",
+    "size": 112772,
+    "mtime": 1776239216.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_les_concept.png",
+    "path": "report/images/fig2_les_concept.png",
+    "type": "file",
+    "size": 145428,
+    "mtime": 1776239218.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_ag3_pes.png",
+    "path": "report/images/fig3_ag3_pes.png",
+    "type": "file",
+    "size": 100055,
+    "mtime": 1776239216.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_charge_recovery.png",
+    "path": "report/images/fig3_charge_recovery.png",
+    "type": "file",
+    "size": 94672,
+    "mtime": 1776239218.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_binding_curves.png",
+    "path": "report/images/fig4_binding_curves.png",
+    "type": "file",
+    "size": 102255,
+    "mtime": 1776239216.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_data_overview.png",
+    "path": "report/images/fig4_data_overview.png",
+    "type": "file",
+    "size": 66896,
+    "mtime": 1776239216.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_ag3_pes.png",
+    "path": "report/images/fig5_ag3_pes.png",
+    "type": "file",
+    "size": 81516,
+    "mtime": 1776239216.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_les_concept.png",
+    "path": "report/images/fig5_les_concept.png",
+    "type": "file",
+    "size": 151255,
+    "mtime": 1776239218.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 13805,
+    "mtime": 1776239221.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6207,
+    "mtime": 1776157018.0,
+    "exported": true
+  }
+]

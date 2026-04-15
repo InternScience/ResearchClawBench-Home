@@ -1,0 +1,27 @@
+{
+  "named_mechanism": "Composite risk index combining tropical cyclone regime shifts and sea level rise for mangroves",
+  "definition": {
+    "slr_component": "Scenario-specific relative sea-level-rise rate at mangrove locations for year 2100 using the median quantile from IPCC AR6 regional projections.",
+    "tc_component_target": "A tropical-cyclone regime-shift component should reflect how cyclone disturbance risk may structurally threaten mangroves.",
+    "composite": "Transparent combination of normalized SLR and TC components with scenario-specific outputs."
+  },
+  "assumptions": [
+    "Provided mangrove dataset is a 10% spatial sample of mangrove extent points.",
+    "Country polygons can be used to calibrate point counts to 2020 mangrove area totals where available.",
+    "Historical TC track-point density and intense-cyclone dominance provide a defensible proxy for TC disturbance regime pressure when future TC projections are absent from the workspace."
+  ],
+  "invariants": [
+    "Use provided local datasets only.",
+    "Preserve SSP245, SSP370, and SSP585 comparisons.",
+    "Keep TC and SLR components explicit and separately exportable.",
+    "Document deviations from exact future regime-shift modeling."
+  ],
+  "non_negotiable_steps": [
+    "Extract SLR at mangrove locations.",
+    "Estimate TC disturbance exposure at mangrove locations.",
+    "Construct and export composite index and summaries.",
+    "Provide maps and comparison figures."
+  ],
+  "known_deviation": "The workspace lacks future tropical cyclone projection fields or event-level regional scaling coefficients. Therefore the TC term is implemented as a historical regime-pressure proxy based on major/intense cyclone track density and dominance, not a full future dynamical regime-shift projection.",
+  "status": "documented"
+}

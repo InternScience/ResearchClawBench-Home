@@ -1,0 +1,20 @@
+{
+  "paper_000_SORT": {
+    "key_method": "SORT: Kalman (u,v,s,r,vels), IOU Hungarian, simple online.",
+    "baselines": "ACF vs FrRCNN dets impact",
+    "metrics": "MOTA 33.4 on MOT16"
+  },
+  "paper_001_ByteTrack": {
+    "key_method": "ByteTrack: Assoc every det - high score first (IoU/ReID), low score second (IoU only).",
+    "perf": "80.3 MOTA, 77.3 IDF1 MOT17",
+    "detector": "YOLOX"
+  },
+  "paper_002_BoT-SORT": {
+    "key_method": "BoT-SORT: Better KF (w/h not aspect), CMC affine, IoU-ReID min fusion.",
+    "perf": "state-of-art MOT17/20"
+  },
+  "paper_003_YOLOX": {
+    "detector_adv": "Anchor-free, decoupled head, SimOTA, strong aug."
+  },
+  "updates_to_contract": "ByteTrack as baseline impl critical. SparseTrack inspired by hierarchical in crowds."
+}

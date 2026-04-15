@@ -1,0 +1,7 @@
+{
+  \"pretrain\": \"self-supervised on unlabeled crystal graphs (5000 samples)\",
+  \"finetune\": \"binary classification on imbalanced labeled (100 pos / 1900 neg)\",
+  \"inference\": \"predict probs on 1000 candidates, select top ~50 high prob\",
+  \"model\": \"GNN encoder + classifier head\",
+  \"eval\": \"AUC-PR due to imbalance, discovery accuracy (TP in top-k)\"
+}

@@ -1,0 +1,14 @@
+{
+  "named_method": "DIDS-MFL-inspired approximation",
+  "implemented_steps": [
+    "statistical standardization of raw flow features",
+    "representation disentanglement proxy via raw vs graph-diffused blocks",
+    "dynamic neighborhood aggregation via kNN diffusion on temporally ordered training references",
+    "multi-scale fusion via concatenation of raw, diffused, and endpoint-topology blocks",
+    "few-shot prototype evaluation on fused space"
+  ],
+  "not_implemented_exactly": [
+    "No end-to-end deep memory model from 3D-IDS paper was trained.",
+    "Graph diffusion is approximated with feature-space kNN diffusion plus endpoint statistics rather than a full dynamic GNN."
+  ]
+}

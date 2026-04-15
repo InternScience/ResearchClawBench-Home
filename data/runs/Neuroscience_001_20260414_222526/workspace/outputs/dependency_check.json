@@ -1,0 +1,21 @@
+{
+  "python_packages": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "h5py": true,
+    "pyyaml": true,
+    "torch": false,
+    "flyvis": false
+  },
+  "capability_assessment": {
+    "checkpoint_loading_exactly": "blocked initially because both torch and flyvis are unavailable",
+    "metadata_and_hdf5_analysis": "available",
+    "figure_generation": "available"
+  },
+  "fallback_plan": {
+    "if_torch_or_flyvis_remain_unavailable": "analyze configuration, validation traces, and clustering artifacts directly from YAML/HDF5/pickle-compatible data; do not claim direct checkpoint parameter introspection",
+    "next_step": "attempt installation of minimally required packages if feasible within workspace environment"
+  }
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "claim": "The workspace supports a reproducible ANN-surrogate parameter identification workflow.",
+    "supporting_artifacts": [
+      "code/run_analysis.py",
+      "outputs/surrogate_metrics.json",
+      "outputs/lhs_samples.csv"
+    ],
+    "status": "supported_directly"
+  },
+  {
+    "claim": "The surrogate generalizes adequately on held-out simulator samples.",
+    "supporting_artifacts": [
+      "outputs/surrogate_metrics.json",
+      "report/images/surrogate_accuracy.png"
+    ],
+    "status": "supported_directly",
+    "quantitative_summary": {
+      "train_rmse": 0.11270361893259545,
+      "test_rmse": 0.1196677800943276,
+      "test_r2": 0.9874250891200331,
+      "n_train": 480,
+      "n_test": 120
+    }
+  },
+  {
+    "claim": "Identified parameter sets can fit representative constant-current and dynamic discharge curves.",
+    "supporting_artifacts": [
+      "outputs/identified_parameters.csv",
+      "outputs/fit_metrics.csv",
+      "report/images/reference_fit.png",
+      "report/images/dynamic_validation.png"
+    ],
+    "status": "supported_directly",
+    "quantitative_summary": [
+      {
+        "dataset": "CALCE_CS2_36",
+        "voltage_rmse_v": 0.5148825813297351,
+        "voltage_rmse_mv": 514.8825813297351,
+        "temperature_rmse_c": 0.2474958984134487,
+        "final_capacity_abs_error_ah": 0.0134128507768829,
+        "surrogate_objective": 0.3582721338330069
+      },
+      {
+        "dataset": "NASA_B0005",
+        "voltage_rmse_v": 4.9406228158313805,
+        "voltage_rmse_mv": 4940.622815831381,
+        "temperature_rmse_c": 14.826689420737154,
+        "final_capacity_abs_error_ah": 1.0333995772867772,
+        "surrogate_objective": 2.668684866795798
+      },
+      {
+        "dataset": "Oxford_ExampleDC_C1",
+        "voltage_rmse_v": 1.042173552826548,
+        "voltage_rmse_mv": 1042.173552826548,
+        "temperature_rmse_c": 8.25959682864676,
+        "final_capacity_abs_error_ah": 0.1936766087819671,
+        "surrogate_objective": 7.945823918270071
+      }
+    ]
+  },
+  {
+    "claim": "This is an exact reproduction of a full ECAT-MMGA solver from the paper.",
+    "supporting_artifacts": [
+      "outputs/method_contract.json",
+      "outputs/method_fidelity_checklist.json"
+    ],
+    "status": "not_supported",
+    "reason": "A full ECAT solver and original MMGA implementation were not available in the workspace."
+  }
+]

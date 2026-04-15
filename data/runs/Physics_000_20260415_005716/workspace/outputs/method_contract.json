@@ -1,0 +1,22 @@
+{
+  "task": "Analyze multi-component icosahedral shell packing reproduction data to predict stable multi-shell structures, optimal adjacent-shell size mismatch values, and self-assembly shell sequences/paths.",
+  "named_commitments": [
+    "Use provided reproduction dataset as primary evidence source",
+    "Read related_work early",
+    "Produce direct outputs for predicted stable structures, size mismatch values, and shell sequences/paths",
+    "Provide validation/comparison plots",
+    "Save reproducible code and numeric artifacts"
+  ],
+  "primary_quantitative_answers": [
+    "Stable structure identities/compositions",
+    "Optimal size mismatch between adjacent shells",
+    "Frequency or support for shell sequences/path rules"
+  ],
+  "required_report_sections": [
+    "data overview",
+    "methodology",
+    "results",
+    "validation",
+    "discussion"
+  ]
+}

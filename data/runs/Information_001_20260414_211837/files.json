@@ -1,0 +1,286 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analyze_images.py",
+    "path": "code/analyze_images.py",
+    "type": "file",
+    "size": 4919,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "analyze_images_fixed.py",
+    "path": "code/analyze_images_fixed.py",
+    "type": "file",
+    "size": 5304,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "visualize_crops.py",
+    "path": "code/visualize_crops.py",
+    "type": "file",
+    "size": 4310,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "demo_imgs",
+    "path": "data/demo_imgs",
+    "type": "directory"
+  },
+  {
+    "name": "demo1.png",
+    "path": "data/demo_imgs/demo1.png",
+    "type": "file",
+    "size": 179505,
+    "mtime": 1770297040.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "demo2.png",
+    "path": "data/demo_imgs/demo2.png",
+    "type": "file",
+    "size": 2121327,
+    "mtime": 1770297040.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "method_case.png",
+    "path": "data/demo_imgs/method_case.png",
+    "type": "file",
+    "size": 1626509,
+    "mtime": 1770297040.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "demo1_crops",
+    "path": "outputs/demo1_crops",
+    "type": "directory"
+  },
+  {
+    "name": "crop_00.png",
+    "path": "outputs/demo1_crops/crop_00.png",
+    "type": "file",
+    "size": 105772,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "crop_01.png",
+    "path": "outputs/demo1_crops/crop_01.png",
+    "type": "file",
+    "size": 61221,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo2_crops",
+    "path": "outputs/demo2_crops",
+    "type": "directory"
+  },
+  {
+    "name": "claim_recovery_table.json",
+    "path": "outputs/claim_recovery_table.json",
+    "type": "file",
+    "size": 508,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo1.png_small_bboxes.json",
+    "path": "outputs/demo1.png_small_bboxes.json",
+    "type": "file",
+    "size": 36,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo1_small_bboxes.json",
+    "path": "outputs/demo1_small_bboxes.json",
+    "type": "file",
+    "size": 503,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo2_small_bboxes.json",
+    "path": "outputs/demo2_small_bboxes.json",
+    "type": "file",
+    "size": 2,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 233,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 415,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 351,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4558893,
+    "mtime": 1773914896.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8166173,
+    "mtime": 1773914896.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 6663910,
+    "mtime": 1773914896.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 7823571,
+    "mtime": 1773914896.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "demo1.png",
+    "path": "report/images/demo1.png",
+    "type": "file",
+    "size": 179505,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo1_bbox_hist.png",
+    "path": "report/images/demo1_bbox_hist.png",
+    "type": "file",
+    "size": 41628,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo1_bbox_overlay.png",
+    "path": "report/images/demo1_bbox_overlay.png",
+    "type": "file",
+    "size": 1942557,
+    "mtime": 1776231158.0,
+    "exported": false
+  },
+  {
+    "name": "demo1_crop_00.png",
+    "path": "report/images/demo1_crop_00.png",
+    "type": "file",
+    "size": 31894,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo1_crop_01.png",
+    "path": "report/images/demo1_crop_01.png",
+    "type": "file",
+    "size": 39797,
+    "mtime": 1776231158.0,
+    "exported": true
+  },
+  {
+    "name": "demo2.png",
+    "path": "report/images/demo2.png",
+    "type": "file",
+    "size": 2121327,
+    "mtime": 1776231158.0,
+    "exported": false
+  },
+  {
+    "name": "demo2_bbox_overlay.png",
+    "path": "report/images/demo2_bbox_overlay.png",
+    "type": "file",
+    "size": 4478284,
+    "mtime": 1776231158.0,
+    "exported": false
+  },
+  {
+    "name": "method_case.png",
+    "path": "report/images/method_case.png",
+    "type": "file",
+    "size": 1626509,
+    "mtime": 1776231158.0,
+    "exported": false
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 4579,
+    "mtime": 1776231159.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4728,
+    "mtime": 1776172717.0,
+    "exported": true
+  }
+]

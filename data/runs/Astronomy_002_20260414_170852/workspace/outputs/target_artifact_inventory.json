@@ -1,0 +1,30 @@
+{
+  "primary_quantitative_answers": [
+    "Direct H0 estimate from SNe Ia calibration",
+    "Direct H0 estimate from SBF calibration",
+    "Consensus covariance-weighted H0 estimate",
+    "Difference from stated baseline and from Planck-like early-universe H0"
+  ],
+  "tables": [
+    "Anchor summary",
+    "Host measurement summary by method/anchor",
+    "Channel-specific H0 results table",
+    "Variant/sensitivity result table",
+    "Claim recovery table"
+  ],
+  "figures": [
+    "Distance indicator overview plot",
+    "Hubble diagram for SNe Ia and/or SBF flow sample",
+    "Channel comparison / consensus plot for H0",
+    "Residual or sensitivity/variant plot"
+  ],
+  "structured_outputs": [
+    "outputs/dependency_check.json",
+    "outputs/method_contract.json",
+    "outputs/target_artifact_inventory.json",
+    "outputs/method_fidelity_checklist.json",
+    "outputs/channel_results.json",
+    "outputs/variant_results.json",
+    "outputs/claim_recovery_table.json"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "paper_000": {
+    "title": "Can deep learning beat numerical weather prediction?",
+    "key_facts": ["DL potential but needs breakthroughs for full replacement", "Challenges: explainability, physics constraints"],
+    "baselines": ["NWP (ECMWF IFS)"],
+    "metrics": ["Upper-air ACC >0.6 for skill"]
+  },
+  "paper_001": {
+    "title": "Challenges and design choices for global weather and climate models based on machine learning",
+    "key_facts": ["NN for paramets, data-driven full models challenges: resolution, stability"],
+    "baselines": ["ECMWF IFS"]
+  },
+  "paper_002": {
+    "title": "FourCastNet: A GLOBAL Data-driven High-RESOLUTION Weather Model Using Adaptive Fourier Neural OPERATORS",
+    "key_facts": ["0.25° res, fast inference, matches IFS short-term, better small-scale"],
+    "baselines": ["ECMWF IFS HRES"],
+    "metrics": ["Week forecast <2s", "Outperforms IFS precipitation"]
+  },
+  "paper_003": {
+    "title": "FengWu: Pushing the Skillful Global Medium-Range Weather Forecast beyond 10 Days",
+    "key_facts": ["0.25° 37 levels, >10 days ACC>0.6 Z500", "Multi-modal Transformer"],
+    "baselines": ["GraphCast", "ECMWF IFS", "Pangu-Weather"],
+    "metrics": ["Z500 10-day RMSE 651 vs GraphCast 733"]
+  },
+  "additions": ["FuXi as baseline from data filename"]
+}

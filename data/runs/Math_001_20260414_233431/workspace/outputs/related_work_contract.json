@@ -1,0 +1,22 @@
+{
+  "paper_000": {
+    "title": "A method of solving a convex programming problem with convergence rate O(1/k^2)",
+    "author": "Nesterov",
+    "key_results": ["O(1/k^2) rate for smooth convex", "Strong Lyapunov function V_k = a_k^2(f(x_k)-f*) + ||p_k-x_k+x*||^2", "Momentum coefficient (a_k-1)/a_{k+1}"]
+  },
+  "paper_001": {
+    "title": "A Differential Equation for Modeling Nesterov's Accelerated Gradient Method",
+    "author": "Su, Boyd, Candes",
+    "key_results": ["ODE: X'' + (3/t)X' + grad_f(X) = 0", "Phase transition at r=3", "Restarting for linear convergence"]
+  },
+  "paper_002": {
+    "title": "Distributed Optimization and Statistical Learning via ADMM",
+    "author": "Boyd et al.",
+    "key_results": ["ADMM algorithm and convergence", "Lasso application", "Distributed optimization patterns"]
+  },
+  "paper_003": {
+    "title": "Some Methods of Speeding Up the Convergence of Iteration Methods",
+    "author": "Polyak",
+    "key_results": ["Multi-step methods for acceleration", "Spectral analysis of iteration operators", "Continuous analogues of iteration methods"]
+  }
+}

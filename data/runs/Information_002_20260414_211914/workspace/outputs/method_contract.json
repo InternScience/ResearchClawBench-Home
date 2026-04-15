@@ -1,0 +1,11 @@
+{
+  \"commitments\": [
+    \"Step-by-step derivation of HF Hamiltonian using structured prompts from Prompt_template.md\",
+    \"Scoring rubric from YAML: categories (in_paper, prompt_quality, follow_instructions, physics_logic, math_derivation, final_answer_accuracy), human scores (Haining/Will/Yasaman avg)\",
+    \"Aggregate LLM performance metrics (success rates per task/subtask)\",
+    \"Reproduction of paper HF results: Z2 TI at nu=2, phases at nu=1 (VP-ChI, SDW, FMx), gap vs Vzt/epsilon (Fig2/3)\",
+    \"Topology: Chern numbers C_pmK = pm1\",
+    \"No silent approximations: exact plane-wave HF if possible, else state limitations\"
+  ],
+  \"named_methods\": [\"self-consistent Hartree-Fock in plane-wave basis\", \"particle-hole transform for hole-doping\", \"dual-gate screened Coulomb V(q)\"]
+}

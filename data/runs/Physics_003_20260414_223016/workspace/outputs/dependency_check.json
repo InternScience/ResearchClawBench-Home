@@ -1,0 +1,6 @@
+{
+  \"available\": [\"h5py\", \"pandas\", \"numpy\", \"matplotlib\", \"scipy\", \"seaborn\"],
+  \"named_methods\": [\"tr-ARPES analysis\", \"curve_fit for pol dep\", \"pcolormesh dispersions\"],
+  \"limitations\": [\"No PyTorch/TF needed\", \"No custom Floquet sim; use provided processed data\"],
+  \"fallbacks\": \"None\"
+}

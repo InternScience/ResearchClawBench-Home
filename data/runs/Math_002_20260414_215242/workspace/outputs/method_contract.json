@@ -1,0 +1,12 @@
+{
+  "method": "Hybrid MARL-LNS",
+  "commitments": [
+    "LNS framework: Repeatedly destroy/rebuild neighborhoods of colliding agents.",
+    "Early stage: MARL to generate low-collision initial paths.",
+    "Late stage: PP for efficiency.",
+    "Baselines: PP, LNS2 (from MAPF-LNS2 paper).",
+    "Metrics": "Success rate, SUM-IC, runtime.",
+    "Datasets": "All provided (empty, maze, random_*, room, warehouse, maps_60_10_10_0.175)."
+  ],
+  "target_quantity": "Higher success rates in complex (dense/maze) environments."
+}

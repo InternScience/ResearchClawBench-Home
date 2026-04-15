@@ -1,0 +1,16 @@
+{
+  "task": "Multi-object tracking from frame detections to complete trajectories",
+  "primary_input": "Consecutive image frames represented through per-frame detections with bounding boxes and confidence scores",
+  "primary_output": "Identity labels and associated bounding-box trajectories across frames",
+  "scientific_target": "Handle occlusions in crowded scenes by decomposing dense target sets into sparse subsets via pseudo-depth estimation and hierarchical association",
+  "named_methods": [
+    "SparseTrack-like pseudo-depth decomposition and hierarchical association",
+    "ByteTrack baseline association"
+  ],
+  "required_deliverables": [
+    "tracking code",
+    "quantitative comparison",
+    "validation/comparison plots",
+    "final report"
+  ]
+}

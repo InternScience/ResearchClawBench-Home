@@ -1,0 +1,23 @@
+{
+  "initial_check": {
+    "scanpy": false,
+    "anndata": false,
+    "pandas": true,
+    "numpy": true,
+    "sklearn": true,
+    "scipy": true,
+    "matplotlib": true,
+    "seaborn": true
+  },
+  "action": "Installed minimal dependencies needed to read h5ad and compute trajectory analysis without assuming scanpy.",
+  "post_install": {
+    "anndata": true,
+    "h5py": true,
+    "umap-learn": true,
+    "pynndescent": true,
+    "pypdf": "pending verification"
+  },
+  "limitations": [
+    "ReadPDF tool returned errors on local PDFs; using local Python PDF text extraction fallback if available."
+  ]
+}

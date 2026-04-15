@@ -1,0 +1,224 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "data_loader.py",
+    "path": "code/data_loader.py",
+    "type": "file",
+    "size": 7155,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "diffusion_model.py",
+    "path": "code/diffusion_model.py",
+    "type": "file",
+    "size": 13799,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "generate_report.py",
+    "path": "code/generate_report.py",
+    "type": "file",
+    "size": 22537,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "graph_encoder.py",
+    "path": "code/graph_encoder.py",
+    "type": "file",
+    "size": 9821,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "quick_demo.py",
+    "path": "code/quick_demo.py",
+    "type": "file",
+    "size": 20427,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "train_and_evaluate.py",
+    "path": "code/train_and_evaluate.py",
+    "type": "file",
+    "size": 12963,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "sample",
+    "path": "data/sample",
+    "type": "directory"
+  },
+  {
+    "name": "2l3r",
+    "path": "data/sample/2l3r",
+    "type": "directory"
+  },
+  {
+    "name": "2l3r_ligand.sdf",
+    "path": "data/sample/2l3r/2l3r_ligand.sdf",
+    "type": "file",
+    "size": 13842,
+    "mtime": 1753787932.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "2l3r_protein.pdb",
+    "path": "data/sample/2l3r/2l3r_protein.pdb",
+    "type": "file",
+    "size": 211329,
+    "mtime": 1753787932.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "evaluation_results.json",
+    "path": "outputs/evaluation_results.json",
+    "type": "file",
+    "size": 722,
+    "mtime": 1776249964.0,
+    "exported": true
+  },
+  {
+    "name": "training_losses.npy",
+    "path": "outputs/training_losses.npy",
+    "type": "file",
+    "size": 528,
+    "mtime": 1776249964.0,
+    "exported": false
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 3651992,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 3634495,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 5515632,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 569417,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 222297,
+    "mtime": 1776249964.0,
+    "exported": true
+  },
+  {
+    "name": "framework_architecture.png",
+    "path": "report/images/framework_architecture.png",
+    "type": "file",
+    "size": 115361,
+    "mtime": 1776249964.0,
+    "exported": true
+  },
+  {
+    "name": "rmsd_comparison.png",
+    "path": "report/images/rmsd_comparison.png",
+    "type": "file",
+    "size": 45473,
+    "mtime": 1776249964.0,
+    "exported": true
+  },
+  {
+    "name": "rmsd_distribution.png",
+    "path": "report/images/rmsd_distribution.png",
+    "type": "file",
+    "size": 50090,
+    "mtime": 1776249964.0,
+    "exported": true
+  },
+  {
+    "name": "structure_comparison.png",
+    "path": "report/images/structure_comparison.png",
+    "type": "file",
+    "size": 514081,
+    "mtime": 1776249964.0,
+    "exported": true
+  },
+  {
+    "name": "training_loss.png",
+    "path": "report/images/training_loss.png",
+    "type": "file",
+    "size": 27179,
+    "mtime": 1776249964.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 7751,
+    "mtime": 1776249965.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5475,
+    "mtime": 1776226182.0,
+    "exported": true
+  }
+]

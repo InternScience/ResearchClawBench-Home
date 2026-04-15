@@ -1,0 +1,11 @@
+{
+  "commitments": [
+    "Spatial concentration: geographic distribution by state (counts, map)",
+    "Annual activity dynamics: projects per year/season",
+    "Purpose composition: breakdown of stated purposes",
+    "Agent-apparatus deployment: combinations and frequencies"
+  ],
+  "data_source": "cloud_seeding_us_2000_2025.csv (832 records, 2000-2025)",
+  "figures": ["state_choropleth", "annual_trends", "purpose_pie_bar", "agent_apparatus_heatmap"],
+  "tables": ["data_summary", "state_counts", "yearly_counts", "purpose_counts", "crosstabs"]
+}

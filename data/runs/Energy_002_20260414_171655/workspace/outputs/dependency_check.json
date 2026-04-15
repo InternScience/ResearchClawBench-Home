@@ -1,0 +1,20 @@
+{
+  "checked": {
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "shapely": true,
+    "geopandas": false,
+    "PyPDF2_initially": false,
+    "pyshp_initially": false
+  },
+  "limitations": [
+    "ReadPDF tool failed on all related-work PDFs in this environment.",
+    "geopandas/fiona stack unavailable initially, so shapefile handling may require lightweight fallback libraries or simple plotting."
+  ],
+  "planned_fallbacks": [
+    "Install and use PyPDF2 for bounded text extraction from related-work PDFs.",
+    "Install and use pyshp or plain matplotlib scatter/boundary plotting instead of geopandas if needed."
+  ]
+}

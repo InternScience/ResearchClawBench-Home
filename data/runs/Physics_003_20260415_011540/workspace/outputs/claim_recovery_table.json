@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "First-order Floquet-like replica bands are separated from the main Dirac feature by approximately one pump photon energy.",
+    "status": "supported",
+    "evidence_artifact": "outputs/dataset_summary.json; outputs/replica_bands.csv",
+    "details": "Replica offset = 0.248 eV from processed band positions."
+  },
+  {
+    "claim": "Pump-on spectra contain enhanced sideband spectral weight relative to pump-off spectra at replica energies.",
+    "status": "supported",
+    "evidence_artifact": "outputs/angle_metrics.csv; report/images/figure2_spectrum_comparison.png",
+    "details": "Replica/main ratios range from 0.609 to 0.613."
+  },
+  {
+    "claim": "Polarization dependence is present but weak and twofold-symmetric within this dataset.",
+    "status": "supported_with_caveat",
+    "evidence_artifact": "outputs/band_metrics.json; report/images/figure4_polarization_dependence.png",
+    "details": "Cos(2\u03b8) fit amplitude = 0.0013, R\u00b2 = 0.047; effect size is small."
+  },
+  {
+    "claim": "The provided data alone cleanly disentangle Floquet-Bloch initial states from Volkov final states.",
+    "status": "not_supported",
+    "evidence_artifact": "report/report.md",
+    "details": "The dataset supports polarization-sensitive sidebands consistent with mixed matrix-element/final-state effects but lacks a dedicated separation protocol."
+  }
+]

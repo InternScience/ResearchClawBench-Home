@@ -1,0 +1,14 @@
+{
+  "artifacts": [
+    {"name": "data_overview_plots", "type": "figure", "status": "pending", "description": "Voltage, current, temperature curves from NASA, CALCE, Oxford datasets"},
+    {"name": "lhs_sampling_visualization", "type": "figure", "status": "pending", "description": "Latin Hypercube Sampling parameter space distribution"},
+    {"name": "ann_metamodel_architecture", "type": "figure", "status": "pending", "description": "ANN architecture diagram"},
+    {"name": "mmga_convergence_curve", "type": "figure", "status": "pending", "description": "Genetic algorithm convergence over generations"},
+    {"name": "identified_parameters_table", "type": "table", "status": "pending", "description": "Final identified parameter values with bounds"},
+    {"name": "voltage_validation_plots", "type": "figure", "status": "pending", "description": "Experimental vs simulated voltage curves"},
+    {"name": "error_distribution", "type": "figure", "status": "pending", "description": "Voltage error histogram and statistics"},
+    {"name": "sensitivity_analysis", "type": "figure", "status": "pending", "description": "Parameter sensitivity rankings"},
+    {"name": "computational_efficiency_comparison", "type": "figure", "status": "pending", "description": "ANN vs physics-based simulation time"},
+    {"name": "multi_objective_pareto", "type": "figure", "status": "pending", "description": "Pareto front for voltage and temperature errors"}
+  ]
+}

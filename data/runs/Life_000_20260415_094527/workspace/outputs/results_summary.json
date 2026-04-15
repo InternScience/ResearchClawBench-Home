@@ -1,0 +1,81 @@
+{
+  "optimization_summary": {
+    "n_total_sampled": 500000,
+    "n_unique_designs": 36,
+    "n_above_1mpa": 0,
+    "max_predicted_strength_kPa": 287.03556565038986,
+    "best_composition": [
+      0.010448625209416378,
+      0.5447306419628969,
+      8.65004123751945e-05,
+      0.08954634033771529,
+      0.30925244767248844,
+      0.04593544440510786
+    ],
+    "experimental_max_kPa": 304.60014154281674,
+    "experimental_mean_kPa": 50.97736340605353,
+    "improvement_factor": 0.9423356279368048
+  },
+  "top_5_designs": [
+    {
+      "composition": {
+        "Nucleophilic-HEA": 0.010448625209416378,
+        "Hydrophobic-BA": 0.5447306419628969,
+        "Acidic-CBEA": 8.65004123751945e-05,
+        "Cationic-ATAC": 0.08954634033771529,
+        "Aromatic-PEA": 0.30925244767248844,
+        "Amide-AAm": 0.04593544440510786
+      },
+      "predicted_strength_kPa": 287.03556565038986,
+      "model": "GP"
+    },
+    {
+      "composition": {
+        "Nucleophilic-HEA": 0.005565537429010115,
+        "Hydrophobic-BA": 0.5715643357371821,
+        "Acidic-CBEA": 0.003281482115064875,
+        "Cationic-ATAC": 0.049122510688282155,
+        "Aromatic-PEA": 0.3159776306329687,
+        "Amide-AAm": 0.054488503397492005
+      },
+      "predicted_strength_kPa": 285.9296966213935,
+      "model": "GP"
+    },
+    {
+      "composition": {
+        "Nucleophilic-HEA": 0.01427365868664222,
+        "Hydrophobic-BA": 0.5454341045606649,
+        "Acidic-CBEA": 0.0010118447398898148,
+        "Cationic-ATAC": 0.062340267355292314,
+        "Aromatic-PEA": 0.33090910347149277,
+        "Amide-AAm": 0.046031021186018116
+      },
+      "predicted_strength_kPa": 285.85419001079606,
+      "model": "GP"
+    },
+    {
+      "composition": {
+        "Nucleophilic-HEA": 0.017570101495262697,
+        "Hydrophobic-BA": 0.5665682171862583,
+        "Acidic-CBEA": 0.001191284941305874,
+        "Cationic-ATAC": 0.062011167021150365,
+        "Aromatic-PEA": 0.31688808300477134,
+        "Amide-AAm": 0.035771146351251545
+      },
+      "predicted_strength_kPa": 283.9493567041889,
+      "model": "GP"
+    },
+    {
+      "composition": {
+        "Nucleophilic-HEA": 0.0014115018221811245,
+        "Hydrophobic-BA": 0.5937548348854245,
+        "Acidic-CBEA": 0.01633372112283562,
+        "Cationic-ATAC": 0.05725362596437168,
+        "Aromatic-PEA": 0.3092998868133564,
+        "Amide-AAm": 0.02194642939183066
+      },
+      "predicted_strength_kPa": 283.68290850039693,
+      "model": "GP"
+    }
+  ]
+}

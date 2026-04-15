@@ -1,0 +1,26 @@
+{
+  "named_mechanism": "Bayesian black-hole-superradiance constraint framework using full posterior samples",
+  "definition": [
+    "Ingest posterior samples in black-hole mass and dimensionless spin",
+    "Map each sample and trial boson mass to a probabilistic superradiance consistency score",
+    "Aggregate over posterior samples to obtain a source-level exclusion probability",
+    "Combine independent sources in a joint Bayesian constraint",
+    "Report credible upper limits directly on boson mass and on an effective self-interaction coupling proxy"
+  ],
+  "assumptions": [
+    "Weak self-interaction regime for baseline boson-mass exclusion",
+    "Approximate phenomenological Regge boundary rather than full Teukolsky-rate calculation",
+    "Independence between black-hole posterior samples and between sources conditional on model"
+  ],
+  "invariants": [
+    "Use full posterior sample clouds, not only means or MAP estimates",
+    "Preserve source-specific results before combination",
+    "Produce direct exclusion/credible-limit artifacts in the named target quantities"
+  ],
+  "non_negotiable_steps": [
+    "Posterior-sample integration",
+    "Mass-grid evaluation",
+    "Source-wise combination",
+    "Sensitivity/validation analysis"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "paper_000_chameleon": {
+    "title": "Chameleon: Mixed-Modal Early-Fusion Foundation Models",
+    "key_findings": [
+      "Early-fusion token-based mixed-modal model using discrete image tokens (1024 tokens from 8192 codebook for 512x512 images)",
+      "Single transformer handles both understanding and generation",
+      "Achieves SOTA on VQA/captioning, competitive on text-only tasks",
+      "Core weakness: tokenizer struggles with text-heavy images (OCR limitation)",
+      "Stability techniques: QK-Norm, dropout, Swin-style normalization reordering"
+    ],
+    "metrics": {
+      "vqa_sota": true,
+      "captioning_sota": true,
+      "text_generation_competitive": true,
+      "image_generation": "non-trivial but limited by tokenizer OCR weakness",
+      "human_eval_vs_gemini_pro": "60.4% preference rate",
+      "human_eval_vs_gpt4v": "51.6% preference rate"
+    }
+  },
+  "paper_001_llava": {
+    "title": "Visual Instruction Tuning",
+    "key_findings": [
+      "Connects CLIP ViT-L/14 vision encoder to Vicuna LLM via linear projection",
+      "GPT-4 assisted visual instruction data generation (158K samples)",
+      "85.1% relative score vs GPT-4 on synthetic multimodal instruction dataset",
+      "92.53% accuracy on Science QA when ensembled with GPT-4"
+    ],
+    "metrics": {
+      "relative_score_vs_gpt4": 0.851,
+      "science_qa_accuracy": 0.9253
+    }
+  },
+  "paper_002_siglip": {
+    "title": "Sigmoid Loss for Language Image Pre-Training",
+    "key_findings": [
+      "Pairwise sigmoid loss replaces softmax contrastive loss",
+      "More memory efficient, enables larger batch sizes",
+      "SigLiT: 79.7% zero-shot ImageNet in 1 day on 4 TPUv4 chips",
+      "SigLIP: 73.4% zero-shot ImageNet in 5 days on 32 TPUv4 chips"
+    ],
+    "metrics": {
+      "siglit_imagenet_zeroshot": 0.797,
+      "siglip_imagenet_zeroshot": 0.734
+    }
+  },
+  "paper_003_llamagen": {
+    "title": "Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation",
+    "key_findings": [
+      "Vanilla AR models achieve SOTA image generation with proper scaling",
+      "Image tokenizer: downsample ratio 16, rFID 0.94, codebook usage 97%",
+      "LlamaGen-3B achieves 2.18 FID on ImageNet 256x256, beating LDM/DiT",
+      "Text-conditional model (775M) trained on LAION-COCO + aesthetics data",
+      "326%-414% inference speedup with vLLM"
+    ],
+    "metrics": {
+      "tokenizer_rfID": 0.94,
+      "codebook_usage": 0.97,
+      "llamagen_3b_fid": 2.18,
+      "inference_speedup_pct": "326-414"
+    }
+  }
+}

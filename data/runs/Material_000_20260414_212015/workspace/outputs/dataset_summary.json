@@ -1,0 +1,6 @@
+{
+  "pretrain": {"samples": 5000, "positives_observed": 2474, "negatives_observed": 2526, "node_feature_dim": 28, "avg_nodes": 9.5592, "avg_edges": 11.8494},
+  "finetune": {"samples": 2000, "positives_observed": 99, "negatives_observed": 1901, "node_feature_dim": 28, "avg_nodes": 9.519, "avg_edges": 11.697},
+  "candidate": {"samples": 1000, "positives_observed": 43, "negatives_observed": 957, "node_feature_dim": 28, "avg_nodes": 9.464, "avg_edges": 11.758},
+  "note": "Candidate labels are visible in workspace artifacts and were used only for evaluation after scoring. Pretraining labels appear present in serialized objects despite task description calling the set unlabeled; they will not be used for supervised fitting except for diagnostic comparison if needed."
+}

@@ -1,0 +1,23 @@
+{
+  "named_method": "training-free task-guided cropping for fine-grained MLLM perception",
+  "definition": [
+    "start from a global image view",
+    "infer or approximate task-relevant region of interest without retraining the vision encoder",
+    "crop/zoom local region to recover lost fine detail",
+    "combine local crop evidence with global context",
+    "compare against baseline fixed-resolution observation"
+  ],
+  "assumptions": [
+    "task-guidance can be approximated by image-derived saliency / high-frequency localization in absence of runnable MLLM",
+    "fine-detail recovery can be proxied by local sharpness, contrast, and text/edge density gains"
+  ],
+  "invariants": [
+    "no model training performed",
+    "both global and local evidence retained",
+    "comparison includes baseline versus crop-enhanced pathway"
+  ],
+  "deviations": [
+    "No actual MLLM loaded due missing torch/transformers and no benchmark QA annotations in workspace",
+    "Task guidance implemented as unsupervised ROI proposal rather than language-conditioned attention"
+  ]
+}

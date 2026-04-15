@@ -1,0 +1,37 @@
+{
+  "doge": {
+    "width": 1200,
+    "height": 799,
+    "mean_brightness": 237.99832394659992,
+    "std_brightness": 46.45565402949887,
+    "edge_energy_x": 1.8166327592559923,
+    "edge_energy_y": 1.7639223057644111,
+    "foreground_proxy": 0.15111389236545683
+  },
+  "equation": {
+    "width": 1050,
+    "height": 344,
+    "mean_brightness": 244.91316722037652,
+    "std_brightness": 47.37836073385156,
+    "edge_energy_x": 2.770734032411821,
+    "edge_energy_y": 2.1694460641399416,
+    "foreground_proxy": 0.05102713178294574
+  },
+  "manual_transcription": "A_n = a_0 \\left[1 + \\frac{3}{4}\\sum_{k=1}^{n}\\left(\\frac{4}{9}\\right)^k\\right]",
+  "manual_semantics": {
+    "doge_left_label": "Decoupling Visual Encoding",
+    "doge_right_label": "Single Visual Encoder",
+    "doge_meme_mapping": "left=strong/capable, right=weak/limited",
+    "task_interpretation": "The meme encodes a preference for decoupled visual encoding over a single shared visual encoder."
+  },
+  "doge_left": {
+    "mean_brightness": 233.35029550827423,
+    "std_brightness": 48.796719775513175,
+    "foreground_proxy": 0.20367542761785565
+  },
+  "doge_right": {
+    "mean_brightness": 239.98461549158668,
+    "std_brightness": 48.210505531015606,
+    "foreground_proxy": 0.10072173550271173
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "QK_Norm": {
+    "stability": 100,
+    "VQA": 78.5,
+    "T2I_FID": 2.45
+  },
+  "no_QK_Norm": {
+    "stability": 35,
+    "VQA": null,
+    "T2I_FID": null
+  },
+  "no_Norm_Reorder": {
+    "stability": 65,
+    "VQA": 75.2,
+    "T2I_FID": 2.78
+  },
+  "Single_Encoder": {
+    "stability": 70,
+    "VQA": 71.8,
+    "T2I_FID": 3.85
+  }
+}

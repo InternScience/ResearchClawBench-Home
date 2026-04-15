@@ -1,0 +1,9 @@
+{
+  \"framework\": \"Novel Bayesian statistical framework using full posterior distributions of BH mass M and spin chi = a*.\",
+  \"likelihood\": \"For parameters (mu, g), compute fraction f_exclude of posterior samples where superradiance condition holds: tau_sr(mu, M_i, chi_i) < t_BH and beta_max(g, mu, M_i, chi_i) > 0.05.\",
+  \"exclusion\": \"95% upper limits where f_exclude > 0.95 for the posterior.\",
+  \"t_BH\": {\"stellar\": \"1 Gyr\", \"SMBH\": \"10 Gyr\"},
+  \"beta_lim\": 0.05,
+  \"priors\": \"log-uniform broad ranges for log10(mu/eV), log10(g)\",
+  \"combination\": \"product of independent likelihoods for two BHs\"
+}

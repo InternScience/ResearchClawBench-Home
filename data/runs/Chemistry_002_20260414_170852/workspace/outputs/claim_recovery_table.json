@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "The provided 1BRS chains A and D form a large direct interface with many residues within 5 \u00c5 cross-chain distance.",
+    "supporting_artifacts": [
+      "outputs/pdb_interface_summary.json",
+      "outputs/residue_interface_metrics.csv",
+      "report/images/structure_overview.png"
+    ]
+  },
+  {
+    "claim": "The SKEMPI subset contains extensive barnase-barstar mutation data, including both single and combinatorial mutations.",
+    "supporting_artifacts": [
+      "outputs/skempi_1brs_subset.csv",
+      "outputs/analysis_results.json",
+      "report/images/skempi_overview.png"
+    ]
+  },
+  {
+    "claim": "Single mutations closer to the interface tend to show larger destabilization, but the relationship is moderate rather than deterministic.",
+    "supporting_artifacts": [
+      "outputs/skempi_1brs_single_mutations_mapped.csv",
+      "outputs/analysis_results.json",
+      "report/images/validation_comparison.png"
+    ]
+  }
+]

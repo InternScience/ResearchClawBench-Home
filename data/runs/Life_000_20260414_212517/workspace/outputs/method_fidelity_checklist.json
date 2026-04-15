@@ -1,0 +1,16 @@
+{
+  \"RFR\": {
+    \"definition\": \"sklearn.ensemble.RandomForestRegressor(n_estimators=100)\",
+    \"trained\": true,
+    \"CV_R2\": 0.56
+  },
+  \"GP\": {
+    \"definition\": \"sklearn.gaussian_process.GaussianProcessRegressor(RBF + WhiteKernel)\",
+    \"issue\": \"Poor fit R2 negative, kernel bounds tight\",
+    \"trained\": true
+  },
+  \"BO\": {
+    \"EI\": \"Implied from data ML column, not reimplemented\",
+    \"fidelity\": \"Analyzed trajectory\"
+  }
+}

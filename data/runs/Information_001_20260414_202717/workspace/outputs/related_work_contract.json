@@ -1,0 +1,38 @@
+{
+  "papers": {
+    "paper_000.pdf": {
+      "title": "V*: Guided Visual Search as a Core Mechanism in Multimodal LLMs",
+      "task_relevant_points": [
+        "MLLMs lack visual search for precise grounding in high-resolution crowded scenes",
+        "Uses LLM-guided search, contextual cues, and visual working memory",
+        "Explicitly motivates iterative region localization and reintegration of searched evidence"
+      ]
+    },
+    "paper_001.pdf": {
+      "title": "Generic Attention-model Explainability for Interpreting Bi-Modal and Encoder-Decoder Transformers",
+      "task_relevant_points": [
+        "Attention heatmaps are legitimate interpretability artifacts for multimodal reasoning",
+        "Explains relevance propagation across multimodal transformer attention"
+      ]
+    },
+    "paper_002.pdf": {
+      "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+      "task_relevant_points": [
+        "Frozen vision encoders create an information bottleneck that limits fine-detail transfer",
+        "A lightweight bridge module can select useful visual features for language generation"
+      ]
+    },
+    "paper_003.pdf": {
+      "title": "Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models",
+      "task_relevant_points": [
+        "High image resolution and local patch processing improve detailed scene understanding",
+        "Combining global feature with local patches is a central comparison axis"
+      ]
+    }
+  },
+  "contract_updates": [
+    "Include a global-vs-local comparison artifact",
+    "Include at least one attention/saliency-style interpretability figure",
+    "Discuss frozen-encoder bottleneck and why crop-based zoom can help without training"
+  ]
+}

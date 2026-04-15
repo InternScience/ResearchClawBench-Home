@@ -1,0 +1,12 @@
+{
+  "primary_quantitative": ["MOTA", "IDF1", "HOTA for SparseTrack vs ByteTrack"],
+  "comparison_tables": ["metrics_table.csv/json: MOTA/IDF1/HOTA/MT/ML/Frag/IDsw per tracker"],
+  "figure_families": [
+    "data_overview.png (counts over frames, traj lengths)",
+    "trajectory_plots.png (sample frame with IDs overlaid)",
+    "metric_plots.png (MOTA over frames, PR curves)",
+    "ablation_heatmap.png (layers vs metrics)"
+  ],
+  "interpretability": ["per-layer trajectories"],
+  "per_condition": ["full scene vs sparse layers"]
+}

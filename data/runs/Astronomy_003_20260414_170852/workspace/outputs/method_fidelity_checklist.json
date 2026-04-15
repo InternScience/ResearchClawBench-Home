@@ -1,0 +1,20 @@
+{
+  "named_mechanism": "Catalog-level waveform accuracy characterization for SXS-like numerical relativity outputs",
+  "definition": "Summarize distributions of synthetic waveform discrepancies associated with numerical resolution, harmonic mode content, and extrapolation order.",
+  "assumptions": [
+    "Each row represents one synthetic simulation-level summary statistic.",
+    "Values are already minimally time- and phase-aligned differences as described in the task.",
+    "The synthetic datasets are intended to reproduce qualitative trends from the SXS catalog paper rather than exact published values."
+  ],
+  "invariants": [
+    "Use positive-valued distribution summaries appropriate for heavy-tailed errors.",
+    "Preserve harmonic index structure l=2..8 in at least one output artifact.",
+    "Preserve separate extrapolation comparisons N2vsN3 and N2vsN4 in at least one output artifact."
+  ],
+  "structural_steps": [
+    "Compute robust summaries on original and log10 scales",
+    "Estimate high-tail exceedance fractions for quality assessment",
+    "Generate direct comparison plots for distributions and modal trends",
+    "Document limitations from using synthetic summary data instead of raw waveforms"
+  ]
+}

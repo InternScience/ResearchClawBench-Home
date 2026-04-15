@@ -1,0 +1,16 @@
+{
+  "task": "Reproduce MACE-MP-0 validation tests as foundation model demonstration",
+  "named_model": "MACE graph neural network (MACE-MP-0b3-medium)",
+  "named_dataset": "MPtrj reproduction dataset",
+  "commitments": [
+    "Liquid water RDF MD simulation",
+    "Adsorption energy scaling on fcc(111) TM surfaces (O, OH)",
+    "CRBH20 reaction barriers (Rxn1,11,20)"
+  ],
+  "target_artifacts": [
+    "RDF plot for water",
+    "Adsorption energy scaling relations plot",
+    "Reaction barrier comparison table/plot"
+  ],
+  "metrics": "Ab initio accuracy on tests (energies ~meV/atom, RDF match)"
+}

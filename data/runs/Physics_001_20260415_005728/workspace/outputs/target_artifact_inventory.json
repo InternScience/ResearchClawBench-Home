@@ -1,0 +1,22 @@
+{
+  "tables": [
+    "carrier_density_summary.csv",
+    "temperature_fit_metrics.csv",
+    "current_fit_metrics.csv",
+    "claim_recovery_table.csv"
+  ],
+  "figures": [
+    "density_stiffness_comparison.png",
+    "enhancement_ratio.png",
+    "temperature_models.png",
+    "temperature_powerlaw_fit.png",
+    "current_dependence.png",
+    "near_zero_current_quadratic.png"
+  ],
+  "artifacts": [
+    "method_contract.json",
+    "target_artifact_inventory.json",
+    "dependency_check.json",
+    "dataset_summary.json"
+  ]
+}

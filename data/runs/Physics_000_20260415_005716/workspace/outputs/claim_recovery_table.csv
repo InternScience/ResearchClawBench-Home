@@ -1,0 +1,6 @@
+claim,artifact
+"Dataset provides explicit shell sequences, mismatch parameters, growth results, and validation points.",outputs/data_schema_summary.json
+"Validated multi-component clusters include Na13@Rb32, K13@Cs42, and Ag13@Cu45.",outputs/stable_structure_table.csv
+MC-MC and MC-Ch1 mismatches cluster near ~0.04 and ~0.14 respectively.,outputs/size_mismatch_summary.csv; outputs/mismatch_params.csv
+Theory agrees with experimental mismatch values within small absolute error.,outputs/validation_experimental_vs_theory.csv
+Conservative path dominates growth-path selection statistics.,outputs/path_selection_summary.csv

@@ -1,0 +1,8 @@
+claim_id,claim_text,artifact,value,units
+global_total_gt_2000_2022,Total global glacier mass change over 2000-2022 from consensus calendar-year series.,outputs/global_annual_summary.csv,-5994.445517779756,Gt
+global_mean_gt_yr,Mean annual global glacier mass change over 2000-2022.,outputs/global_annual_summary.csv,-260.6280659904242,Gt/yr
+worst_global_year,Most negative global annual mass-change year in 2000-2022.,outputs/global_annual_summary.csv,2022,year
+worst_global_year_gt,Mass change in the most negative global annual mass-change year.,outputs/global_annual_summary.csv,-460.2989143829609,Gt
+most_positive_global_year,Most positive global annual mass-change year in 2000-2022.,outputs/global_annual_summary.csv,2000,year
+most_negative_region_total,Region with largest cumulative mass loss over 2000-2022.,outputs/regional_2000_2023_totals.csv,alaska,region
+least_negative_region_total_gt,Cumulative mass change for the region with smallest absolute loss / closest to balance.,outputs/regional_2000_2023_totals.csv,-16.93874524465041,Gt

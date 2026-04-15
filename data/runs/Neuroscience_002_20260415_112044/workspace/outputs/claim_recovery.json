@@ -1,0 +1,34 @@
+{
+  "claims": [
+    {
+      "claim": "Models achieve high AUROC (>0.95)",
+      "evidence": "Subsample test: XGB 0.983",
+      "artifact": "model_results_subsample.json",
+      "verified": true
+    },
+    {
+      "claim": "Robust per degradation",
+      "evidence": "Balanced metrics across 4 types",
+      "artifact": "per_degr in model_results_subsample.json",
+      "verified": true
+    },
+    {
+      "claim": "Imbalance handled",
+      "evidence": "AUPRC 0.86 > baseline",
+      "artifact": "model_results_subsample.json",
+      "verified": true
+    },
+    {
+      "claim": "Data overview verified",
+      "evidence": "168k train, 10% pos",
+      "artifact": "eda_stats.json",
+      "verified": true
+    },
+    {
+      "claim": "Full SHAP blocked",
+      "evidence": "Timeout on 72k test",
+      "artifact": "N/A",
+      "verified": "limitation"
+    }
+  ]
+}

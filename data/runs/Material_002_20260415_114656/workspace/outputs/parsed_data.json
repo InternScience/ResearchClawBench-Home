@@ -1,0 +1,71 @@
+{
+  "water_params": {
+    "n_molecules": 32,
+    "box_size": 12.0,
+    "temperature": 330.0,
+    "timestep": 0.5,
+    "md_steps": 2000,
+    "friction": 0.01,
+    "molecule": [
+      {
+        "element": "O",
+        "position": [
+          0.0,
+          0.0,
+          0.119262
+        ]
+      },
+      {
+        "element": "H",
+        "position": [
+          0.0,
+          0.763239,
+          -0.477047
+        ]
+      },
+      {
+        "element": "H",
+        "position": [
+          0.0,
+          -0.763239,
+          -0.477047
+        ]
+      }
+    ]
+  },
+  "adsorption_params": {
+    "metals": {
+      "Ni": 3.52,
+      "Cu": 3.61,
+      "Rh": 3.8,
+      "Pd": 3.89,
+      "Ir": 3.84,
+      "Pt": 3.92
+    },
+    "miller_indices": [
+      1,
+      1,
+      1
+    ],
+    "slab_size": [
+      2,
+      2,
+      3
+    ],
+    "vacuum_gap": 10.0,
+    "adsorbate_site": "fcc hollow",
+    "adsorbate_height": 1.5,
+    "fixed_layers": 2,
+    "force_tol": 0.05
+  },
+  "reaction_names": [
+    "Reaction 1 (Rxn 1 \u2013 cyclobutene ring\u2011opening)",
+    "Reaction 2 (Rxn 11 \u2013 methoxy decomposition)",
+    "Reaction 3 (Rxn 20 \u2013 cyclopropane ring\u2011opening)"
+  ],
+  "dft_barriers": {
+    "Rxn 1": 1.72,
+    "Rxn 11": 1.74,
+    "Rxn 20": 1.77
+  }
+}

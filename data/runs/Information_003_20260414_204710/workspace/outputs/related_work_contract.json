@@ -1,0 +1,36 @@
+{
+  "primary_reference": {
+    "title": "3D-IDS: Doubly Disentangled Dynamic Intrusion Detection",
+    "key_points": [
+      "Existing NIDS methods show inconsistent F1 across attack types and especially weak unknown-attack detection.",
+      "Method combines two-step feature disentanglement, memory-based representation learning, and dynamic graph diffusion for spatiotemporal aggregation.",
+      "Explainability is claimed as a benefit of disentanglement."
+    ]
+  },
+  "supporting_references": [
+    {
+      "title": "E-GraphSAGE: A Graph Neural Network based Intrusion Detection System for IoT",
+      "key_points": [
+        "Flow data can be naturally represented as graphs with endpoints as nodes and flows as edges.",
+        "Topological information plus edge features are useful for intrusion detection."
+      ]
+    },
+    {
+      "title": "BSNet: Bi-Similarity Network for Few-shot Fine-grained Image Classification",
+      "key_points": [
+        "Multiple similarity spaces can improve few-shot generalization through more discriminative fused representations."
+      ]
+    },
+    {
+      "title": "DisenLink",
+      "key_points": [
+        "Disentangled factors can help represent heterophilic graph structure and latent relational causes."
+      ]
+    }
+  ],
+  "implications_for_task": [
+    "Need per-attack consistency analysis rather than only overall metrics.",
+    "Need at least one graph-aware model or graph-derived aggregation step.",
+    "Need explicit few-shot experiment and interpretability artifact."
+  ]
+}

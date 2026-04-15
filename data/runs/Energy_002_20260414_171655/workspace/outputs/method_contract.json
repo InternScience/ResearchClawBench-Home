@@ -1,0 +1,31 @@
+{
+  "task": "Transparent geospatial levelized-cost model for delivered African green hydrogen to Europe by 2030 via ammonia shipping and reconversion",
+  "primary_outputs": [
+    "Scenario-wise delivered cost of African green hydrogen at each site",
+    "Least-cost and competitive African locations under multiple financing and policy scenarios",
+    "Comparison against European green hydrogen production benchmark(s)",
+    "Quantification of de-risking and interest-rate effects on competitiveness"
+  ],
+  "named_commitments": [
+    "geospatial transparent cost model",
+    "delivery pathway via ammonia shipping and reconversion",
+    "multiple financing scenarios",
+    "multiple policy scenarios",
+    "relative competitiveness versus Europe by 2030"
+  ],
+  "core_method_components": [
+    "site-wise renewable supply proxy from PV and wind features",
+    "capital recovery using scenario-specific WACC",
+    "distance-linked infrastructure adder terms for grid, road, port/ocean access, and water access",
+    "conversion from hydrogen to ammonia, shipping to Europe, and reconversion back to hydrogen",
+    "European benchmark production cost scenario(s)",
+    "competitiveness metrics such as cost gap and fraction of sites below benchmark"
+  ],
+  "minimum_report_sections": [
+    "data overview",
+    "methodology",
+    "results",
+    "validation/comparison",
+    "discussion and limitations"
+  ]
+}

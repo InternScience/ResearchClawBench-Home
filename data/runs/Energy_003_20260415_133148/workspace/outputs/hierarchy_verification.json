@@ -1,0 +1,72 @@
+{
+  "Electricity [kW]": {
+    "CN01_vs_Buildings_Sum": {
+      "RMSE": 2.4811687694014237e-14,
+      "MAE": 5.067889284279801e-15,
+      "correlation": 1.0,
+      "max_difference": 2.2737367544323206e-13
+    },
+    "Total_vs_Buildings_Sum": {
+      "RMSE": 2.4811687694014237e-14,
+      "MAE": 5.067889284279801e-15,
+      "correlation": 1.0,
+      "max_difference": 2.2737367544323206e-13
+    }
+  },
+  "Heat [mmBTU]": {
+    "CN01_vs_Buildings_Sum": {
+      "RMSE": 1.2907649793152806e-14,
+      "MAE": 5.153868199794151e-15,
+      "correlation": 0.9999999999999999,
+      "max_difference": 8.526512829121202e-14
+    },
+    "Total_vs_Buildings_Sum": {
+      "RMSE": 1.2907649793152806e-14,
+      "MAE": 5.153868199794151e-15,
+      "correlation": 0.9999999999999999,
+      "max_difference": 8.526512829121202e-14
+    }
+  },
+  "Cooling Energy [Ton]": {
+    "CN01_vs_Buildings_Sum": {
+      "RMSE": 2.408754278176309e-14,
+      "MAE": 9.629638537607203e-15,
+      "correlation": 1.0,
+      "max_difference": 1.7053025658242404e-13
+    },
+    "Total_vs_Buildings_Sum": {
+      "RMSE": 2.408754278176309e-14,
+      "MAE": 9.629638537607203e-15,
+      "correlation": 1.0,
+      "max_difference": 1.7053025658242404e-13
+    }
+  },
+  "PV Power Generation [kW]": {
+    "CN01_vs_Buildings_Sum": {
+      "RMSE": 3.810995369596077e-15,
+      "MAE": 9.052119784341003e-16,
+      "correlation": 1.0,
+      "max_difference": 2.842170943040401e-14
+    },
+    "Total_vs_Buildings_Sum": {
+      "RMSE": 3.810995369596077e-15,
+      "MAE": 9.052119784341003e-16,
+      "correlation": 1.0,
+      "max_difference": 2.842170943040401e-14
+    }
+  },
+  "Greenhouse Gas Emission [Ton]": {
+    "CN01_vs_Buildings_Sum": {
+      "RMSE": 3.403784888879479e-14,
+      "MAE": 1.6890801289347404e-14,
+      "correlation": 1.0,
+      "max_difference": 1.7053025658242404e-13
+    },
+    "Total_vs_Buildings_Sum": {
+      "RMSE": 3.403784888879479e-14,
+      "MAE": 1.6890801289347404e-14,
+      "correlation": 1.0,
+      "max_difference": 1.7053025658242404e-13
+    }
+  }
+}

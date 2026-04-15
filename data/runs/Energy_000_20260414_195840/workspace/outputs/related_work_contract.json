@@ -1,0 +1,28 @@
+{
+  "paper_001": {
+    "title": "Data-driven systematic parameter identification of an electrochemical model for lithium-ion batteries with artificial intelligence",
+    "relevant_points": [
+      "AI-assisted optimization used current and voltage data with multi-objective loss",
+      "Sensitivity-based multi-step identification improves weakly sensitive parameters",
+      "Reported RMSE around 9 mV for constant-current and 12.7 mV for driving cycles"
+    ]
+  },
+  "paper_003": {
+    "title": "Parameter Identification of Lithium-Ion Batteries Model to Predict Discharge Behaviors Using Heuristic Algorithm",
+    "relevant_points": [
+      "Heuristic divide-and-conquer parameter identification to reduce search time",
+      "Parameter grouping is useful when many electrochemical parameters are weakly identifiable"
+    ]
+  },
+  "paper_002": {
+    "title": "Modeling of Galvanostatic Charge and Discharge of the Lithium/Polymer/Insertion Cell",
+    "relevant_points": [
+      "Foundational physics basis for diffusion-limited galvanostatic discharge behavior",
+      "Supports use of interpretable transport and solid-diffusion parameters in simplified simulators"
+    ]
+  },
+  "notes": [
+    "paper_000 text extraction was corrupted/unusable; not relied upon",
+    "Related work motivates surrogate-based search, multi-objective fitting, and interpretable parameter groups"
+  ]
+}

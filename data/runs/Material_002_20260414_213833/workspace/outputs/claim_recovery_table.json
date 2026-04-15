@@ -1,0 +1,27 @@
+[
+  {
+    "claim": "The local dataset preserves the three benchmark families used to motivate MACE-MP-0 generality.",
+    "supporting_artifact": "outputs/reproduction_dataset.json",
+    "status": "verified_from_workspace"
+  },
+  {
+    "claim": "The water benchmark specification corresponds to a short 1.0 ps NVT-style simulation of 32 molecules at 330 K in a 12 Å cubic box.",
+    "supporting_artifact": "outputs/reproduction_dataset.json",
+    "status": "verified_from_workspace"
+  },
+  {
+    "claim": "The adsorption benchmark spans six fcc transition metals: Ni, Cu, Rh, Pd, Ir, and Pt.",
+    "supporting_artifact": "outputs/reproduction_dataset.json and report/images/adsorption_metal_span.png",
+    "status": "verified_from_workspace"
+  },
+  {
+    "claim": "The provided CRBH20 subset contains three DFT reference barriers between 1.72 and 1.77 eV.",
+    "supporting_artifact": "outputs/reproduction_dataset.json and report/images/reaction_barriers.png",
+    "status": "verified_from_workspace"
+  },
+  {
+    "claim": "Exact ab initio-level reproduction of MACE-MP-0 predictions was not possible locally because model weights were not shipped in the workspace.",
+    "supporting_artifact": "data/MACE-MP-0_Reproduction_Dataset.txt and outputs/dependency_check.json",
+    "status": "verified_limitation"
+  }
+]

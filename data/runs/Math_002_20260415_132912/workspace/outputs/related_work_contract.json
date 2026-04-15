@@ -1,0 +1,40 @@
+{
+  "related_work_papers": [
+    {
+      "id": "paper_000",
+      "title": "MAPF-LNS2: Fast Repairing for Multi-Agent Path Finding via Large Neighborhood Search",
+      "key_contribution": "LNS-based repair framework that starts from infeasible paths and iteratively replans subsets of colliding agents using SIPPS single-agent planner",
+      "relevance": "Primary inspiration for our LNS baseline; we extend with MARL-guided neighborhood selection"
+    },
+    {
+      "id": "paper_001", 
+      "title": "PRIMAL: Pathfinding via Reinforcement and Imitation Multi-Agent Learning",
+      "key_contribution": "Combines RL and imitation learning for fully-decentralized MAPF policies that scale to large team sizes",
+      "relevance": "Inspires our value-function-like estimates for agent difficulty assessment"
+    },
+    {
+      "id": "paper_002",
+      "title": "SCRIMP: Scalable Communication for Reinforcement- and Imitation-Learning-Based Multi-Agent Pathfinding",
+      "key_contribution": "Transformer-based communication mechanism for MARL MAPF with small FOVs",
+      "relevance": "Informs our spatial congestion and local observation components in value estimation"
+    },
+    {
+      "id": "paper_003",
+      "title": "EECBS: A Bounded-Suboptimal Search for Multi-Agent Path Finding",
+      "key_contribution": "Uses online learning to obtain inadmissible cost estimates for guiding CBS search",
+      "relevance": "Inspires our use of learned/inadmissible heuristics for guiding LNS neighborhood selection"
+    },
+    {
+      "id": "paper_004",
+      "title": "LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+      "key_contribution": "Two-level lazy constraint addition search that scales to thousands of agents",
+      "relevance": "Demonstrates effectiveness of two-level search approaches for scalable MAPF"
+    }
+  ],
+  "methodological_insights": [
+    "LNS repair is effective when starting from near-feasible solutions",
+    "MARL value functions capture agent difficulty better than random selection",
+    "Two-phase strategies (exploration then exploitation) balance quality and speed",
+    "Online learning of heuristics improves search guidance over static rules"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "random_charges": {
+    "n_structures": 100,
+    "n_atoms": 128,
+    "has_true_charges": true,
+    "has_forces": false
+  },
+  "charged_dimer": {
+    "n_structures": 60,
+    "n_atoms": 8,
+    "energy_min": 0.25822117555607194,
+    "energy_max": 1.8443943208912492,
+    "has_forces": true
+  },
+  "ag3_chargestates": {
+    "n_structures": 60,
+    "n_atoms": 3,
+    "charge_states": [
+      -1,
+      1
+    ],
+    "energy_min": 0.37537893458342664,
+    "energy_max": 3.270743808205827,
+    "has_forces": true
+  }
+}

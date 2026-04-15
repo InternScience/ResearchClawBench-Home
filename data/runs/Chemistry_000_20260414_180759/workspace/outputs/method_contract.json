@@ -1,0 +1,9 @@
+{
+  "task": "Design KA-GNNs for molecular property prediction",
+  "named_architecture": "KA-GNN: Graph Neural Network replacing MLP-based transformations with Fourier-based KAN modules",
+  "input": "Molecules as graphs (atoms nodes, bonds edges; atom/bond feats incl. non-covalent?)",
+  "output": "Binary/multi-task classification (toxicity, bioactivity)",
+  "baselines": "Conventional GNNs (GCN, GAT from related_work)",
+  "evaluation": "ROC-AUC, AP; scaffold splits as MoleculeNet",
+  "goals": "Higher accuracy, efficiency, interpretability"
+}

@@ -1,0 +1,26 @@
+{
+  "task": "MATBG superfluid stiffness analysis from provided core dataset",
+  "primary_quantities": [
+    "DC resistance / dissipation proxy from provided stiffness-current behavior",
+    "microwave resonance/superfluid stiffness proxy vs carrier density, temperature, current",
+    "superfluid stiffness D_s and its dependence on carrier density, temperature, and current"
+  ],
+  "required_comparisons": [
+    "experimental vs conventional Fermi-liquid stiffness",
+    "experimental vs quantum-geometric stiffness",
+    "temperature dependence vs BCS/nodal/power-law models",
+    "current dependence vs GL quadratic suppression and linear alternative",
+    "hole-doped vs electron-doped branches"
+  ],
+  "named_physical_claims": [
+    "quantum-geometry-dominated enhancement of D_s",
+    "power-law temperature dependence consistent with anisotropic/nodal pairing",
+    "approximately quadratic current dependence near zero current"
+  ],
+  "deliverables": [
+    "report/report.md",
+    "PNG figures in report/images",
+    "analysis code in code/",
+    "intermediate outputs in outputs/"
+  ]
+}

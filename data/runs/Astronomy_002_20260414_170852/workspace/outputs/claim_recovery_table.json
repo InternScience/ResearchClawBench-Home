@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "The minimal-dataset reconstruction does not reproduce the stated baseline H0=73.50\u00b10.81 km s^-1 Mpc^-1.",
+    "supporting_artifact": "outputs/channel_results.json::consensus and baseline_reference"
+  },
+  {
+    "claim": "The SNe Ia channel dominates the combined precision in the minimal reconstruction.",
+    "supporting_artifact": "outputs/channel_results.json::channel_results.SNe Ia and consensus"
+  },
+  {
+    "claim": "Variant choices shift the SNe Ia result at the few km s^-1 Mpc^-1 level, while the SBF depth-scatter choice has negligible effect here.",
+    "supporting_artifact": "outputs/variant_results.json and report/images/sensitivity_variants.png"
+  }
+]

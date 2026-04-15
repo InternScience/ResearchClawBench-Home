@@ -1,0 +1,35 @@
+{
+  "python_modules": {
+    "sympy": {
+      "available": false,
+      "error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    "networkx": {
+      "available": false,
+      "error": "ModuleNotFoundError: No module named 'networkx'"
+    },
+    "matplotlib": {
+      "available": true,
+      "version": "3.10.1"
+    },
+    "seaborn": {
+      "available": true,
+      "version": "0.13.2"
+    },
+    "pandas": {
+      "available": true,
+      "version": "2.2.3"
+    },
+    "numpy": {
+      "available": true,
+      "version": "2.2.5"
+    }
+  },
+  "pdf_parser_available": false,
+  "pdf_parser_note": "ReadPDF returned NoneType error on local related_work PDFs; proceeding without PDF extraction.",
+  "fallbacks": {
+    "symbolic_engine": "pure Python custom parser and forward chaining",
+    "graph_lib": "use builtin dict/list structures instead of networkx",
+    "algebra_lib": "avoid sympy-dependent algebraic methods"
+  }
+}

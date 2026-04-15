@@ -1,0 +1,33 @@
+{
+  "named_method": "Unified autoregressive framework with decoupled visual encoding",
+  "definition": "Use a shared autoregressive Transformer core while separating visual pathways so that understanding-oriented image encoding and generation-oriented visual tokenization are not forced through a single identical encoder bottleneck.",
+  "assumptions": [
+    "Full-scale training is infeasible in the current workspace due missing torch/transformers.",
+    "A method-faithful prototype can still evaluate architectural consequences and image-specific task fit.",
+    "The two supplied images act as canonical understanding-side probes."
+  ],
+  "invariants": [
+    "single shared Transformer core remains autoregressive",
+    "visual encoding is decoupled by task role",
+    "framework supports both understanding and generation",
+    "comparison baseline is a single visual encoder"
+  ],
+  "non_negotiable_steps": [
+    "represent separate visual routes for understanding and generation",
+    "preserve one common language/autoregressive backbone",
+    "evaluate both multimodal understanding and visual generation capability at least by proxy",
+    "compare against a single-encoder design"
+  ],
+  "implemented_fidelity": {
+    "separate_visual_routes": true,
+    "shared_autoregressive_core": true,
+    "understanding_evaluation": true,
+    "generation_evaluation_proxy": true,
+    "single_encoder_baseline": true,
+    "full_model_training": false
+  },
+  "deviations": [
+    "No end-to-end transformer training or inference due unavailable deep learning stack.",
+    "Generation capability is assessed by architectural proxy scoring rather than image synthesis outputs."
+  ]
+}

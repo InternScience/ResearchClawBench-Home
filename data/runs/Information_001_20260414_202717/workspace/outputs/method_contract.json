@@ -1,0 +1,18 @@
+{
+  "task": "Training-free task-guided cropping framework for improving fine-grained perception of MLLMs under fixed-resolution vision encoders.",
+  "named_method_commitments": [
+    "training-free inference-time enhancement",
+    "task-guided region-of-interest identification",
+    "cropping / zoom-in on salient local regions",
+    "integration of local detail with global context for answer generation",
+    "comparison against baseline fixed-resolution MLLM behavior",
+    "evidence through small-object / fine-grained cases and attention-style localization"
+  ],
+  "primary_outputs_expected": [
+    "qualitative localization examples",
+    "comparison plots between baseline and crop-enhanced pipeline",
+    "quantitative proxy metrics for information recovery on demo images",
+    "discussion of fidelity and limitations"
+  ],
+  "current_scope_note": "Workspace contains only demo imagery rather than full benchmark data, so the study will implement a faithful image-analysis proxy of the named mechanism rather than full MLLM evaluation."
+}

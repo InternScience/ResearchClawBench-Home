@@ -1,0 +1,28 @@
+{
+  "named_method": "Decoupled Visual Encoding for Unified Multimodal AR Models",
+  "key_structural_ingredients": [
+    "Dual-pathway visual tokenization: separate understanding and generation encoders",
+    "Understanding encoder uses higher resolution (downsample ratio=8) for detail preservation",
+    "Generation encoder uses standard resolution (downsample ratio=16) optimized for reconstruction",
+    "Shared autoregressive transformer backbone (Llama-style architecture)",
+    "Task-adaptive routing module for dynamic pathway selection",
+    "Unified vocabulary across text and visual tokens",
+    "QK-Normalization for training stability (from Chameleon)",
+    "Swin-style post-attention normalization placement"
+  ],
+  "assumptions": [
+    "Discrete tokenization via VQGAN-style codebooks",
+    "Both encoders produce tokens consumable by the same transformer",
+    "Task type can be determined from input format or explicit signal"
+  ],
+  "invariants": [
+    "All modalities map to the same token space",
+    "Shared transformer weights are used for both understanding and generation",
+    "Understanding encoder always produces more tokens than generation encoder for same input"
+  ],
+  "deviations_from_related_work": [
+    "Chameleon uses single tokenizer; we use dual specialized tokenizers",
+    "LLaVA uses frozen CLIP + LLM; we use end-to-end trainable shared transformer",
+    "LlamaGen focuses only on generation; we unify understanding + generation"
+  ]
+}

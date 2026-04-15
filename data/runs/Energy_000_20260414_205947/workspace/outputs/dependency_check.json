@@ -1,0 +1,11 @@
+{
+  "libraries": {
+    "numpy": true,
+    "scipy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "scikit-learn": true,
+    "pybamm": false
+  },
+  "fallbacks": "Implement SPM numerically with scipy.solve_ivp, no advanced libs needed"
+}

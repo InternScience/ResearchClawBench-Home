@@ -1,0 +1,33 @@
+{
+  "task": "Model hydrogel adhesive strength from monomer composition features and derive de novo design guidance for robust underwater adhesion >1 MPa.",
+  "primary_inputs": [
+    "data/184_verified_Original Data_ML_20230926.xlsx",
+    "data/ML_ei&pred (1&2&3rounds)_20240408.xlsx",
+    "data/ML_ei&pred_20240213.xlsx"
+  ],
+  "named_commitments": [
+    "Use monomer composition / sequence-derived feature data as predictors",
+    "Predict adhesive strength quantitatively",
+    "Assess designs relative to >1 MPa target",
+    "Use related work early",
+    "Produce figures and validation/comparison plots",
+    "Generate de novo design guidance grounded in statistical replication of natural adhesive protein sequence features"
+  ],
+  "planned_methods": [
+    "Dataset auditing and harmonization across initial and optimization datasets",
+    "Supervised regression benchmark with cross-validation",
+    "Classification-style analysis for >1 MPa success probability",
+    "Feature importance / interpretability via permutation importance and/or SHAP if available",
+    "Optimization trajectory analysis using final optimization dataset",
+    "Candidate design search over observed composition ranges",
+    "Mechanistic discussion linking composition patterns to sequence-level biomimicry and wet-adhesion chemistry",
+    "Explicit limitation that nominal monomer feed composition may not equal realized chain composition"
+  ],
+  "primary_outputs": [
+    "Performance table for predictive models",
+    "Success-probability analysis for >1 MPa threshold",
+    "Interpretable feature ranking",
+    "Optimization-round trend summary",
+    "Recommended candidate compositions"
+  ]
+}

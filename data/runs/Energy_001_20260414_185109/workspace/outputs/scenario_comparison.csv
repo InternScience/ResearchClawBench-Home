@@ -1,0 +1,5 @@
+scenario,total_cost_billion_gbp,fuel_cost_million_gbp,shedding_cost_billion_gbp,shedding_pct,wind_generation_gwh,gas_generation_gwh,nuclear_generation_gwh,curtailment_gwh,storage_charge_gwh,storage_discharge_gwh
+Base Case,119.21,71.6,119.139,74.74,4192.7,1352.0,403.2,1921.7,4.4,4.2
+High Wind (2x),115.371,71.6,115.299,72.33,8385.3,1352.0,403.2,5731.4,2.3,3.0
+High Storage (5x),119.192,71.6,119.121,74.73,4192.7,1352.0,403.2,1922.2,14.8,16.7
+High Wind + High Storage,115.353,71.6,115.281,72.32,8385.3,1352.0,403.2,5728.2,20.8,20.1

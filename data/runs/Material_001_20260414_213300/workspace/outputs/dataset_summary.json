@@ -1,0 +1,18 @@
+{
+  "property_samples": 97,
+  "property_feature_range": [-2.0, 3.8],
+  "property_target_range": [-1.2345, 0.9876],
+  "graph_nodes": 5,
+  "graph_edges": 10,
+  "structure_sequence_lengths": [101, 101],
+  "structure_a_range": [5.1234, 5.9012],
+  "structure_b_range": [5.1234, 5.9012],
+  "optimization_bounds": {
+    "temperature_C": [200.0, 500.0],
+    "time_h": [10.0, 30.0],
+    "initial_temperature_C": 350.0,
+    "initial_time_h": 20.0,
+    "learning_rate": 0.1,
+    "iterations": 10.0
+  }
+}

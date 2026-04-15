@@ -1,0 +1,12 @@
+{
+  "primary_quantitative_answers": ["Global total mass change 2000-2023 (Gt)", "Global specific mass change rate (m w.e./yr)", "Regional contributions"],
+  "required_comparison_tables": ["Annual global time series", "Regional annual averages"],
+  "expected_figure_families": [
+    "Global annual mass change time series (Gt and m w.e.)",
+    "Cumulative global mass loss (Gt)",
+    "Regional mass change contributions (stacked area or bar)",
+    "Map of regions with average rates"
+  ],
+  "validation_artifacts": ["Per-region time series", "Uncertainty bands"],
+  "interpretability_artifacts": ["Method breakdown if available (hydrological_years)"]
+}

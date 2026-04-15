@@ -1,0 +1,56 @@
+{
+    "artifact_inventory": [
+        {
+            "id": "fig1",
+            "name": "Water RDF",
+            "file": "report/images/figure1_water_rdf.png",
+            "description": "O-O, O-H, H-H radial distribution functions for liquid water at 330K",
+            "status": "completed"
+        },
+        {
+            "id": "fig2",
+            "name": "Adsorption Scaling",
+            "file": "report/images/figure2_adsorption_scaling.png",
+            "description": "O* and OH* adsorption energies and scaling relations on fcc(111) surfaces",
+            "status": "completed"
+        },
+        {
+            "id": "fig3",
+            "name": "Reaction Barriers",
+            "file": "report/images/figure3_reaction_barriers.png",
+            "description": "CRBH20 reaction barrier comparison between MACE-MP-0 and DFT",
+            "status": "completed"
+        },
+        {
+            "id": "fig4",
+            "name": "Overview Comparison",
+            "file": "report/images/figure4_overview.png",
+            "description": "Comprehensive benchmark summary across all three experiments",
+            "status": "completed"
+        },
+        {
+            "id": "table1",
+            "name": "Water Structure Metrics",
+            "file": "outputs/water_rdf_results.json",
+            "status": "completed"
+        },
+        {
+            "id": "table2",
+            "name": "Adsorption Energy Table",
+            "file": "outputs/adsorption_scaling_results.json",
+            "status": "completed"
+        },
+        {
+            "id": "table3",
+            "name": "Reaction Barrier Table",
+            "file": "outputs/reaction_barrier_results.json",
+            "status": "completed"
+        },
+        {
+            "id": "summary",
+            "name": "Analysis Summary",
+            "file": "outputs/analysis_summary.json",
+            "status": "completed"
+        }
+    ]
+}

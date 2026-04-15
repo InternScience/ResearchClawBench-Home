@@ -1,0 +1,6 @@
+claim,supporting_artifacts
+Each repetition contains a 10-element optimized vaccine set.,outputs/patient_vaccine_composition_table.csv
+The optimized vaccine induces high per-cell response probabilities overall.,outputs/response_probability_summary_table.csv; outputs/overall_response_summary.json
+Coverage decreases as the required response threshold becomes more stringent.,outputs/coverage_ratio_table.csv; outputs/coverage_ratio_from_selected_scores.csv
+Composition stability is perfect across repetitions in this dataset (IoU = 1).,outputs/iou_agreement_table.csv; outputs/iou_matrix.csv
+Optimization runtime increases with simulated population size.,outputs/runtime_summary_table.csv

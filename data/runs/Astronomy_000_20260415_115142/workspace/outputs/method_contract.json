@@ -1,0 +1,21 @@
+{
+  "task": "Constrain ultralight boson (ULB) properties using black hole superradiance",
+  "method": "Bayesian statistical framework",
+  "named_methods": ["black hole superradiance", "Bayesian inference", "Regge trajectory analysis"],
+  "key_physics": {
+    "superradiance_condition": "omega < m * Omega_H",
+    "dimensionless_coupling": "alpha = G_N * M_BH * mu",
+    "optimal_coupling": "alpha_optimal ≈ 0.42 for l=m=1 mode",
+    "horizon_angular_velocity": "Omega_H = (a/r_g) / (2*r_g*(1 + sqrt(1 - a^2)))"
+  },
+  "target_quantities": [
+    "ULB mass upper limits (eV)",
+    "Self-interaction coupling constraints",
+    "Exclusion probability functions",
+    "95% credible intervals"
+  ],
+  "data_sources": [
+    "M33_X-7_samples.dat (stellar-mass BH)",
+    "IRAS_09149-6206_samples.dat (supermassive BH)"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "primary_quantitative_answers": [
+    "RMSE and ACC for key variables (Z500, T850, T2m, etc.) up to 15 days vs ECMWF ensemble mean",
+    "15-day forecast skill extension via cascade"
+  ],
+  "comparison_tables": [
+    "Cascade vs single model vs FuXi vs ECMWF: RMSE/ACC by lead time",
+    "Per-variable, per-region (NH extratropics, tropics) metrics"
+  ],
+  "figure_families": [
+    "Global maps of key vars at sample times",
+    "Skill curves (ACC/RMSE) vs lead time",
+    "Error accumulation comparison: single autoregressive vs cascade",
+    "Architecture diagram for cascade U-Transformer"
+  ],
+  "interpretability_artifacts": [],
+  "subgroup_outputs": [
+    "NH 20-60N, SH 20-60S, Tropics",
+    "Upper-air vs surface variables"
+  ],
+  "status": "Partial: data overview ready; full metrics hypothetical/proposed due to no training data"
+}

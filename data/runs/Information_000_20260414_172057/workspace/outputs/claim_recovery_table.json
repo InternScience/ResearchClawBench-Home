@@ -1,0 +1,22 @@
+[
+  {
+    "claim": "The provided equation image supports an OCR/formula-understanding benchmark.",
+    "evidence_artifact": "outputs/image_stats.json + report/images/image_case_studies.png",
+    "status": "supported_directly"
+  },
+  {
+    "claim": "The provided doge meme supports high-level semantic understanding evaluation and explicitly contrasts decoupled encoding against a single encoder.",
+    "evidence_artifact": "outputs/image_stats.json + report/images/image_case_studies.png",
+    "status": "supported_directly"
+  },
+  {
+    "claim": "A unified Transformer can couple understanding and generation while decoupling visual encoders.",
+    "evidence_artifact": "report/images/architecture_schematic.png",
+    "status": "supported_as_method_design"
+  },
+  {
+    "claim": "Decoupled visual encoding is preferable to a single visual encoder for mixed understanding/generation workloads.",
+    "evidence_artifact": "outputs/design_tradeoff_table.csv + outputs/capability_matrix.csv + report/images/capability_heatmap.png",
+    "status": "supported_by_prototype_analysis"
+  }
+]

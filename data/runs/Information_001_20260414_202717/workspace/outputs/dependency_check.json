@@ -1,0 +1,20 @@
+{
+  "python": {"available": true, "version": "3.10.12"},
+  "libraries": {
+    "numpy": {"available": true, "version": "2.2.5"},
+    "matplotlib": {"available": true, "version": "3.10.1"},
+    "PIL": {"available": true, "version": "9.0.1"},
+    "cv2": {"available": true, "version": "4.11.0"},
+    "scipy": {"available": true, "version": "1.15.2"},
+    "pandas": {"available": true, "version": "2.2.3"},
+    "torch": {"available": false},
+    "transformers": {"available": false},
+    "skimage": {"available": false}
+  },
+  "pdf_parsing": {
+    "ReadPDF": "failed on provided PDFs",
+    "pdfinfo": "not installed",
+    "fallback": "install and use pypdf for text extraction"
+  },
+  "conclusion": "Sufficient dependencies exist for image-based proxy analysis and figure generation; full MLLM inference is unavailable locally."
+}

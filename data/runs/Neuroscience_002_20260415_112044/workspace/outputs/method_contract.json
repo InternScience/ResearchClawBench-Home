@@ -1,0 +1,10 @@
+{
+  "task": "Binary classification for neuron segment merging",
+  "input_features": "20 numerical features (morphology, intensity, embedding)",
+  "label": "binary (1: merge/same neuron, 0: different)",
+  "stratification": "degradation (Misalignment, Missing Sections, Mixed, Average)",
+  "imbalance": "approx 10% positives",
+  "pipeline": "EDA -> Preprocess (scale/normalize) -> Handle imbalance (SMOTE/class weights) -> Train (LR, RF, XGB, MLP) -> CV stratified -> Test eval (AUROC, AUPRC, F1, accuracy)",
+  "metrics": ["AUROC", "AUPRC", "F1-score", "Precision-Recall", "Confusion Matrix"],
+  "cross_validation": "Stratified KFold by label and degradation"
+}

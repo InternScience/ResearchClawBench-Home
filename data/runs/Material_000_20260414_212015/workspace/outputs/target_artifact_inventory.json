@@ -1,0 +1,14 @@
+{
+  "artifacts": [
+    {"name": "dataset_summary", "status": "done", "expected_path": "outputs/dataset_summary.json"},
+    {"name": "dependency_check", "status": "done", "expected_path": "outputs/dependency_check.json"},
+    {"name": "related_work_contract", "status": "done", "expected_path": "outputs/related_work_contract.json"},
+    {"name": "model_training_results", "status": "done", "expected_path": "outputs/training_metrics.json"},
+    {"name": "candidate_predictions", "status": "done", "expected_path": "outputs/candidate_predictions.csv"},
+    {"name": "candidate_eval", "status": "done", "expected_path": "outputs/candidate_eval.json"},
+    {"name": "main_figure_data_overview", "status": "done", "expected_path": "report/images/data_overview.png"},
+    {"name": "main_figure_performance", "status": "done", "expected_path": "report/images/model_performance.png"},
+    {"name": "main_figure_candidate_ranking", "status": "done", "expected_path": "report/images/candidate_ranking.png"},
+    {"name": "claim_recovery_table", "status": "done", "expected_path": "outputs/claim_recovery_table.json"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "task_commitments": {
+    "primary_method": "SparseTrack",
+    "description": "Decompose dense detections into sparse subsets using pseudo-depth estimation (e.g., bbox bottom-y as depth proxy), perform tracking on each sparse subset (e.g., ByteTrack or SORT), then hierarchical association across subsets.",
+    "scientific_target": "Improve MOT in crowded/occluded scenes via sparsity.",
+    "baseline": "ByteTrack",
+    "detector": "Provided detections in data (no need to run YOLOX)",
+    "metrics": ["MOTA", "IDF1", "HOTA", "MT", "ML", "Frag", "IDsw", "MOTP"]
+  },
+  "named_elements": {
+    "frameworks": ["tracking-by-detection", "Kalman Filter", "Hungarian assignment"],
+    "protocols": ["ByteTrack two-stage assoc (high/low score)"],
+    "ablation_axes": ["depth estimation method", "num subsets/layers"]
+  }
+}

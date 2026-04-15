@@ -1,0 +1,251 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analyze_merge_prediction.py",
+    "path": "code/analyze_merge_prediction.py",
+    "type": "file",
+    "size": 11175,
+    "mtime": 1776185509.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "test_simulated.csv",
+    "path": "data/test_simulated.csv",
+    "type": "file",
+    "size": 29204490,
+    "mtime": 1772421508.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "train_simulated.csv",
+    "path": "data/train_simulated.csv",
+    "type": "file",
+    "size": 68149042,
+    "mtime": 1772421506.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "analysis_summary.json",
+    "path": "outputs/analysis_summary.json",
+    "type": "file",
+    "size": 1703,
+    "mtime": 1776185527.0,
+    "exported": true
+  },
+  {
+    "name": "calibration_curve_points.csv",
+    "path": "outputs/calibration_curve_points.csv",
+    "type": "file",
+    "size": 158,
+    "mtime": 1776185527.0,
+    "exported": true
+  },
+  {
+    "name": "claim_recovery_table.json",
+    "path": "outputs/claim_recovery_table.json",
+    "type": "file",
+    "size": 1417,
+    "mtime": 1776185804.0,
+    "exported": true
+  },
+  {
+    "name": "confusion_matrix.json",
+    "path": "outputs/confusion_matrix.json",
+    "type": "file",
+    "size": 111,
+    "mtime": 1776185527.0,
+    "exported": true
+  },
+  {
+    "name": "cv_model_comparison.csv",
+    "path": "outputs/cv_model_comparison.csv",
+    "type": "file",
+    "size": 501,
+    "mtime": 1776185523.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.csv",
+    "path": "outputs/data_overview.csv",
+    "type": "file",
+    "size": 186,
+    "mtime": 1776185523.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 491,
+    "mtime": 1776178504.0,
+    "exported": true
+  },
+  {
+    "name": "heldout_overall_metrics.json",
+    "path": "outputs/heldout_overall_metrics.json",
+    "type": "file",
+    "size": 252,
+    "mtime": 1776185523.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 938,
+    "mtime": 1776178361.0,
+    "exported": true
+  },
+  {
+    "name": "method_fidelity_checklist.json",
+    "path": "outputs/method_fidelity_checklist.json",
+    "type": "file",
+    "size": 1163,
+    "mtime": 1776178504.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 6 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 7682715,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 540574,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 725080,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 736463,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "calibration_curve.png",
+    "path": "report/images/calibration_curve.png",
+    "type": "file",
+    "size": 108035,
+    "mtime": 1776185527.0,
+    "exported": true
+  },
+  {
+    "name": "confusion_matrix.png",
+    "path": "report/images/confusion_matrix.png",
+    "type": "file",
+    "size": 53766,
+    "mtime": 1776185523.0,
+    "exported": true
+  },
+  {
+    "name": "degradation_metrics.png",
+    "path": "report/images/degradation_metrics.png",
+    "type": "file",
+    "size": 135534,
+    "mtime": 1776185524.0,
+    "exported": true
+  },
+  {
+    "name": "feature_boxplots.png",
+    "path": "report/images/feature_boxplots.png",
+    "type": "file",
+    "size": 72885,
+    "mtime": 1776185524.0,
+    "exported": true
+  },
+  {
+    "name": "permutation_importance.png",
+    "path": "report/images/permutation_importance.png",
+    "type": "file",
+    "size": 72396,
+    "mtime": 1776185526.0,
+    "exported": true
+  },
+  {
+    "name": "pr_curve.png",
+    "path": "report/images/pr_curve.png",
+    "type": "file",
+    "size": 85427,
+    "mtime": 1776185523.0,
+    "exported": true
+  },
+  {
+    "name": "roc_curve.png",
+    "path": "report/images/roc_curve.png",
+    "type": "file",
+    "size": 98720,
+    "mtime": 1776185523.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 13235,
+    "mtime": 1776185805.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5452,
+    "mtime": 1776178253.0,
+    "exported": true
+  }
+]

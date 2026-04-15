@@ -1,0 +1,22 @@
+[
+  {
+    "claim": "Workspace contains one protein-ligand structure sample and four related-work PDFs.",
+    "supporting_artifact": "workspace inventory in plan.md / outputs/data_overview.json",
+    "status": "directly_verified"
+  },
+  {
+    "claim": "The local protein file is richer than the instruction summary and contains full atom records for 107 residues.",
+    "supporting_artifact": "outputs/sample_metrics.json",
+    "status": "directly_verified"
+  },
+  {
+    "claim": "A unified model should combine attention-based fusion, geometry-aware reasoning, and iterative refinement/diffusion.",
+    "supporting_artifact": "outputs/related_work_contract.json",
+    "status": "supported_by_related_work"
+  },
+  {
+    "claim": "Exact trained multimodal diffusion prediction was not feasible in this workspace.",
+    "supporting_artifact": "outputs/dependency_check.json",
+    "status": "directly_verified_limitation"
+  }
+]

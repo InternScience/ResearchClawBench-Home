@@ -1,0 +1,29 @@
+{
+  "reaction_names": [
+    "Rxn 1",
+    "Rxn 11",
+    "Rxn 20"
+  ],
+  "reaction_labels": {
+    "Rxn 1": "Cyclobutene\nring-opening",
+    "Rxn 11": "Methoxy\ndecomposition",
+    "Rxn 20": "Cyclopropane\nring-opening"
+  },
+  "dft_barriers": [
+    1.72,
+    1.74,
+    1.77
+  ],
+  "mace_barriers": [
+    1.75,
+    1.71,
+    1.8
+  ],
+  "errors": [
+    0.030000000000000027,
+    0.030000000000000027,
+    0.030000000000000027
+  ],
+  "mae": 0.030000000000000027,
+  "max_error": 0.030000000000000027
+}

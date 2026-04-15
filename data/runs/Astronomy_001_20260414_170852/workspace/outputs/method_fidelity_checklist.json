@@ -1,0 +1,26 @@
+{
+  "named_method": "Reproduction-style comparative analysis of LambdaCDM, EDE, and w0wa constraints using provided summary data",
+  "definition": [
+    "Use the supplied structured reproduction data as the primary quantitative source",
+    "Preserve model-specific parameter sets rather than collapsing into pooled summaries",
+    "Compare shared cosmological parameters across models",
+    "Report EDE-specific parameters f_EDE and log10_ac explicitly",
+    "Provide model-comparison or fit-quality discussion tied to available evidence",
+    "Include distance-comparison visualization for DESI BAO and Union3 SNe extracted points"
+  ],
+  "assumptions": [
+    "Raw likelihood chains are unavailable in the workspace",
+    "Goodness-of-fit values may need to be sourced from related work text if present; otherwise must be reported as unavailable"
+  ],
+  "invariants": [
+    "Do not claim exact posterior reconstruction from summary points alone",
+    "Keep source-specific artifacts for DESI BAO and Union3 SNe data",
+    "State limitations if Delta chi^2 values are not recoverable from workspace artifacts"
+  ],
+  "non_negotiable_structural_steps": [
+    "Parse structured data deterministically",
+    "Export tables used in figures",
+    "Generate PNG figures",
+    "Write a validation section separating direct workspace evidence from related-work context"
+  ]
+}

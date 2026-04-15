@@ -1,0 +1,66 @@
+[
+  {
+    "dataset": "empty",
+    "hybrid_success_rate": 1.0,
+    "prioritized_success_rate": 1.0,
+    "delta_success_rate": 0.0,
+    "hybrid_runtime_mean_sec": 0.025584177199925763,
+    "prioritized_runtime_mean_sec": 0.012891720999868994
+  },
+  {
+    "dataset": "maps_60_10_10_0.175",
+    "hybrid_success_rate": 0.6,
+    "prioritized_success_rate": 0.6,
+    "delta_success_rate": 0.0,
+    "hybrid_runtime_mean_sec": 0.021261423999385444,
+    "prioritized_runtime_mean_sec": 0.015646096250566188
+  },
+  {
+    "dataset": "maze",
+    "hybrid_success_rate": 0.9,
+    "prioritized_success_rate": 0.6,
+    "delta_success_rate": 0.30000000000000004,
+    "hybrid_runtime_mean_sec": 0.055576003149690224,
+    "prioritized_runtime_mean_sec": 0.02420560380069219
+  },
+  {
+    "dataset": "random_large",
+    "hybrid_success_rate": 0.95,
+    "prioritized_success_rate": 0.95,
+    "delta_success_rate": 0.0,
+    "hybrid_runtime_mean_sec": 0.10118926925024425,
+    "prioritized_runtime_mean_sec": 0.06124436529989907
+  },
+  {
+    "dataset": "random_medium",
+    "hybrid_success_rate": 0.95,
+    "prioritized_success_rate": 0.95,
+    "delta_success_rate": 0.0,
+    "hybrid_runtime_mean_sec": 0.014922774400292837,
+    "prioritized_runtime_mean_sec": 0.008690813199063997
+  },
+  {
+    "dataset": "random_small",
+    "hybrid_success_rate": 0.65,
+    "prioritized_success_rate": 0.65,
+    "delta_success_rate": 0.0,
+    "hybrid_runtime_mean_sec": 0.016218140350429167,
+    "prioritized_runtime_mean_sec": 0.011583755199899315
+  },
+  {
+    "dataset": "room",
+    "hybrid_success_rate": 0.85,
+    "prioritized_success_rate": 0.75,
+    "delta_success_rate": 0.09999999999999998,
+    "hybrid_runtime_mean_sec": 1.7492530039997292,
+    "prioritized_runtime_mean_sec": 0.09348402875039027
+  },
+  {
+    "dataset": "warehouse",
+    "hybrid_success_rate": 1.0,
+    "prioritized_success_rate": 0.95,
+    "delta_success_rate": 0.050000000000000044,
+    "hybrid_runtime_mean_sec": 0.01851378025039594,
+    "prioritized_runtime_mean_sec": 0.008427195900367224
+  }
+]

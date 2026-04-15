@@ -1,0 +1,41 @@
+{
+  "bn_sum_vs_cn01": {
+    "Electricity [kW]": {
+      "MAE": 5.067889284279801e-15,
+      "MaxErr": 2.2737367544323206e-13
+    },
+    "Heat [mmBTU]": {
+      "MAE": 5.153868199794151e-15,
+      "MaxErr": 8.526512829121202e-14
+    },
+    "Cooling Energy [Ton]": {
+      "MAE": 9.629638537607203e-15,
+      "MaxErr": 1.7053025658242404e-13
+    },
+    "PV Power Generation [kW]": {
+      "MAE": 9.052119784341003e-16,
+      "MaxErr": 2.842170943040401e-14
+    },
+    "Greenhouse Gas Emission [Ton]": {
+      "MAE": 1.6890801289347404e-14,
+      "MaxErr": 1.7053025658242404e-13
+    }
+  },
+  "cn01_vs_total": {
+    "Electricity [kW]": {
+      "MAE": 0.0
+    },
+    "Heat [mmBTU]": {
+      "MAE": 0.0
+    },
+    "Cooling Energy [Ton]": {
+      "MAE": 0.0
+    },
+    "PV Power Generation [kW]": {
+      "MAE": 0.0
+    },
+    "Greenhouse Gas Emission [Ton]": {
+      "MAE": 0.0
+    }
+  }
+}

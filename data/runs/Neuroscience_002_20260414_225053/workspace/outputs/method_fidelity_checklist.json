@@ -1,0 +1,26 @@
+{
+  "named_method": "Supervised binary merge prediction with condition-aware evaluation and explicit interpretability",
+  "definition": [
+    "Train discriminative models on 20 input features to predict same-neuron vs different-neuron labels",
+    "Tune on training data only using cross-validation or validation splits",
+    "Evaluate once on held-out test data",
+    "Report both overall and degradation-specific performance",
+    "Provide post hoc interpretability beyond raw metric reporting"
+  ],
+  "assumptions": [
+    "Provided train/test split is trusted and non-overlapping",
+    "Feature columns 0-19 are normalized engineered descriptors",
+    "Degradation is a stratification variable and should not be collapsed away during reporting"
+  ],
+  "invariants": [
+    "No use of test labels for fitting or threshold tuning beyond reporting unless explicitly documented",
+    "Use the same core metric set across compared models",
+    "Preserve per-degradation evaluations"
+  ],
+  "non_negotiable_steps": [
+    "baseline model comparison",
+    "held-out test evaluation",
+    "condition-specific breakdown",
+    "interpretability artifact generation"
+  ]
+}

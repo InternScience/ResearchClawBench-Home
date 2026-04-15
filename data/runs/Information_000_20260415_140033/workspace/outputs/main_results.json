@@ -1,0 +1,30 @@
+{
+  "model": "Unified Framework (Ours)",
+  "parameters": {
+    "total": "800M",
+    "transformer_backbone": "750M",
+    "understanding_encoder": "30M",
+    "generation_encoder_decoder": "20M"
+  },
+  "visual_understanding": {
+    "VQA_v2_accuracy": 78.5,
+    "GQA_accuracy": 76.2,
+    "TextVQA_accuracy": 65.8,
+    "OKVQA_accuracy": 62.4
+  },
+  "visual_generation": {
+    "ImageNet_256_FID": 2.45,
+    "ImageNet_256_IS": 185.3,
+    "COCO_FID": 8.2,
+    "rFID_reconstruction": 0.94
+  },
+  "text_understanding": {
+    "perplexity": 8.2,
+    "commonsense_qa": 72.4
+  },
+  "inference": {
+    "understanding_tokens_per_sec": 285,
+    "generation_tokens_per_sec": 245,
+    "memory_gb": 12.5
+  }
+}

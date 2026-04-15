@@ -1,0 +1,14 @@
+{
+  "paper_000": {
+    "title": "A Deep Structured Learning Approach Towards Automating Connectome Reconstruction",
+    "key_method": "3D U-Net for affinity graphs, MALIS structured loss, watershed + quantile agglomeration",
+    "relevance": "Directly addresses EM proofreading with affinity prediction and merging",
+    "baselines": "Affinity + agglomeration",
+    "metrics": "VI, AI, segment score on CREMI/FIB-25/SEGEM"
+  },
+  "paper_001": {
+    "title": "Semantic Instance Segmentation for Autonomous Driving",
+    "key_method": "Discriminative loss for pixel embeddings + clustering",
+    "relevance": "Instance segmentation via embeddings, less EM-specific"
+  }
+}

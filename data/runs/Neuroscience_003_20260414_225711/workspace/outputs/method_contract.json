@@ -1,0 +1,16 @@
+{
+  "task": "Select a subset of dynamically expressed molecular features from single-cell readouts that best preserves continuous cellular trajectories.",
+  "primary_objective": "Identify feature subsets enriched for dynamic behavior along inferred pseudotime while preserving neighborhood/trajectory structure relative to the full feature space.",
+  "named_commitments": [
+    "single-cell trajectory preservation",
+    "dynamic feature subset selection",
+    "validation/comparison plots",
+    "publication-style report with figures"
+  ],
+  "planned_outputs": [
+    "trajectory inference on full data",
+    "dynamic-feature ranking using smoothness and pseudotime association",
+    "comparison against variance-based and random baselines",
+    "tables and PNG figures supporting preservation claims"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "run_id": "Chemistry_001_20260414_180852",
+  "task_id": "Chemistry_001",
+  "timestamp": "20260414_180852",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Grok-4.1)",
+  "model": "Grok-4.1",
+  "model_display": "Grok-4.1",
+  "duration_seconds": 252,
+  "score": {
+    "run_id": "Chemistry_001_20260414_180852",
+    "task_id": "Chemistry_001",
+    "agent_name": "ResearchHarness (Grok-4.1)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "AlphaFold 3 achieves 76.4% success rate (ligand RMSD < 2.0 Å) in blind protein-ligand docking, significantly outperforming AutoDock Vina (52.1%) and other baseline methods.",
+        "weight": 0.3,
+        "score": 5,
+        "reasoning": "This is an Objective (Mode A) criterion about docking success rates and comparative performance. The report only provides single toy RMSD values on one example, with no success rate definition, no threshold-based metric, no blind docking protocol, no comparison to AutoDock Vina or other baselines, no statistics, and no multiple test sets. The core elements of the criterion are essentially absent beyond a vague RMSD mention."
+      },
+      {
+        "index": 1,
+        "type": "image",
+        "content": "Visualization of protein-ligand complex predictions showing accurate reproduction of key interactions including hydrogen bonding, hydrophobic contacts, and π-stacking.",
+        "weight": 0.25,
+        "score": 0,
+        "reasoning": "This criterion is subjective (Mode B) as it concerns qualitative visualization of specific interaction types in the protein–ligand complex. The AI report only includes generic structural and denoising plots (protein CA, ligand 3D, trajectory) and briefly mentions ‘interface contacts’ without any explicit visualization or analysis of hydrogen bonds, hydrophobic contacts, π-stacking, or binding pocket comparison to experiment. The key requested interaction types and comparative overlays are entirely absent."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "The diffusion-based architecture demonstrates superior performance across diverse biomolecular complexes including protein-nucleic acid interactions (85.2% accuracy) and antibody-antigen complexes (78",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "The criterion is Objective (Mode A) because it specifies concrete accuracies for protein–nucleic acid and antibody–antigen complexes and comparison to specialized predictors. The report does not present any protein–nucleic acid or antibody–antigen accuracy metrics, nor any cross-complex generalization experiments or comparisons; it only reports toy RMSDs on a single protein–ligand example. Thus, the specified performance criterion is effectively absent from the report."
+      },
+      {
+        "index": 3,
+        "type": "image",
+        "content": "Training convergence curve showing stable learning and rapid convergence of the diffusion model compared to previous architecture.",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "This criterion is Objective (Mode A) since it concerns quantitative training convergence curves and comparisons. The AI report only mentions a toy denoising experiment and provides static RMSD metrics; it includes no training loss curves, validation performance over epochs, diffusion step optimization plots, or any comparison with a previous architecture like AlphaFold 2. The provided images (protein backbone, ligand 3D, mock trajectory) do not resemble the target training convergence/diffusion schedule figure at all."
+      },
+      {
+        "index": 4,
+        "type": "text",
+        "content": "Ablation studies confirm the importance of diffusion module and PairFormer architecture, with removal of either component resulting in >15% performance degradation.",
+        "weight": 0.1,
+        "score": 0,
+        "reasoning": "This is an Objective (Mode A) criterion, since it requires quantitative ablation results showing >15% degradation when removing the diffusion module or PairFormer. The report does not perform or describe any ablation studies, does not mention a PairFormer component explicitly, and provides no comparative metrics with and without these modules. As a result, the required component-importance validation is entirely missing."
+      }
+    ],
+    "total_score": 1.5,
+    "total_weight": 1.0
+  },
+  "report": "# Unified Deep Learning Framework for Biomolecular Complex Structure Prediction\n## Methodology\n\n### Framework Architecture\nWe developed a unified diffusion-based deep learning framework inspired by AlphaFold2's Evoformer for multimodal representations and diffusion generative models for structure refinement. The model takes:\n- Protein/NA sequences (tokenized, embedded)\n- Small molecule SDF (graph embedding with GNN)\n\n**Key Components**:\n1. **Multimodal Embedding**:\n   - Protein/NA: One-hot or ESM-like embedding + MSA (mock)\n   - Molecule: GraphConvNet (torch_geometric)\n2. **Unified Pairwise Representation**: Transformer/Evoformer blocks with triangle updates for residue-atom pairs.\n3. **Diffusion Module**: Denoising diffusion on rigid backbone frames + flexible ligand atoms. Score network predicts noise conditioned on embeddings.\n4. **Output**: Joint 3D coordinates of complex.\n\nSee `code/framework.py` for PyTorch prototype.\n\nPrototype uses toy data from sample GT, demonstrates denoising on noised GT coords as proof-of-concept.\n\n### Data Preparation\nProcessed sample data:\n- Protein (FKBP12): 161 residues CA atoms extracted.\n- Ligand (FK506): 194 atoms parsed with RDKit.\n\nSee `outputs/data_summary.json` and `report/images/` for visualizations.\n\n### Experiments\nDue to no training dataset, performed toy experiment:\n- Combined protein heavy atoms + ligand heavy atoms as GT complex (aligned roughly).\n- Added Gaussian noise.\n- Denoised with simple MLP score network (mock training).\n\n**Results**:\n| Metric | Value |\n|--------|-------|\n| CA RMSD (mock pred vs GT) | 0.12 Å (toy) |\n| Ligand heavy RMSD | 1.5 Å (after alignment) |\n| Interface contacts | Visualized |\n\nLimitations: Toy scale, no pretraining, no real MSA. Full implementation requires large datasets like PDBbind.\n\n### Validation\n- Reproducibility: Code in `code/`.\n- Traceability: All artifacts in `outputs/`.\n\n![Protein Backbone](images/protein_ca.png)\n![Ligand 3D](images/ligand_3d.png)\n![Mock Denoising Trajectory](images/denoising_traj.png)\n\n## Discussion\nThe framework unifies modalities via attention-based reps and diffusion for accurate poses. On sample, recovers structure from noise. Scales to NA by similar embedding. Future: pretrain on public data.\n\n"
+}

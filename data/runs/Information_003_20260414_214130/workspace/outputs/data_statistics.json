@@ -1,0 +1,39 @@
+{
+  "total_edges": 148774,
+  "total_nodes": 1090431,
+  "feature_dim": 40,
+  "binary_distribution": {
+    "benign": 34058,
+    "attack": 114716
+  },
+  "multi_class_distribution": {
+    "2": 114716,
+    "8": 1427,
+    "7": 10910,
+    "5": 1009,
+    "6": 14688,
+    "3": 3666,
+    "1": 341,
+    "4": 1473,
+    "0": 380,
+    "9": 164
+  },
+  "attack_type_names": {
+    "0": "Analysis",
+    "1": "Backdoor",
+    "2": "Benign",
+    "3": "DoS",
+    "4": "Exploits",
+    "5": "Fuzzers",
+    "6": "Generic",
+    "7": "Reconnaissance",
+    "8": "Shellcode",
+    "9": "Worms"
+  },
+  "feature_stats": {
+    "mean": 0.12171092629432678,
+    "std": 0.2725081443786621,
+    "min": 0.0,
+    "max": 1.0
+  }
+}

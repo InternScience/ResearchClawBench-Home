@@ -1,0 +1,43 @@
+{
+  "protein_info": {
+    "pdb_id": "2L3R",
+    "name": "FKBP12",
+    "num_residues": 161,
+    "sequence_length": 162,
+    "sequence": "GGMWDETELGLYKVNEYVDARDTNMGAWFEAQVVRVTRKAPSRDEPCSSTSRPALEEDVIYHVKYDDYPENGVVQMNSRDVRARARTIIKWQDLEVGQVVMLNYNPDNPKERGFWYDAEISRKRETRTARELYANVVLGDDSLNDCRIIFVDEVFKIERPGE"
+  },
+  "ligand_info": {
+    "name": "FK506",
+    "num_atoms": 194,
+    "num_bonds": 193
+  },
+  "structural_statistics": {
+    "protein_center": [
+      2.43545341614907,
+      1.776708074534165,
+      -0.3544472049689443
+    ],
+    "protein_radius": 34.24322736420862,
+    "ligand_center": [
+      11.15783659793814,
+      5.348000000000001,
+      -8.189456701030926
+    ],
+    "ligand_radius": 20.393668777660015,
+    "protein_ligand_distance": 12.256486780078363,
+    "interface_residues": 48,
+    "interface_fraction": 0.2981366459627329
+  },
+  "evaluation_metrics": {
+    "protein_rmsd_angstrom": 2.538513498418008,
+    "ligand_rmsd_angstrom": 1.9137856465028977,
+    "contact_accuracy": 0.7659786476868328
+  },
+  "model_config": {
+    "architecture": "BioDiffuseNet",
+    "diffusion_timesteps": 1000,
+    "hidden_dim": 128,
+    "num_layers": 6,
+    "attention_heads": 8
+  }
+}

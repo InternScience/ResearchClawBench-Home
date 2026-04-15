@@ -1,0 +1,48 @@
+{
+  "f_star": 311.1167877003963,
+  "lambda": 4.438774948348783,
+  "condition_number": 10.0,
+  "lipschitz_constant": 100.00000000000038,
+  "problem_dimensions": {
+    "m": 1000,
+    "n": 2000
+  },
+  "methods": {
+    "gd": {
+      "final_obj": 311.1167877003963,
+      "optimality_gap": 0.0,
+      "iterations": 257,
+      "time": 0.5925154685974121
+    },
+    "fista": {
+      "final_obj": 311.1167877003963,
+      "optimality_gap": 0.0,
+      "iterations": 383,
+      "time": 0.642319917678833
+    },
+    "fista_restart": {
+      "final_obj": 311.1167877003963,
+      "optimality_gap": 0.0,
+      "iterations": 107,
+      "time": 0.4987905025482178
+    },
+    "admm": {
+      "final_obj": 311.1167877003963,
+      "optimality_gap": 0.0,
+      "iterations": 2405,
+      "time": 160.71660089492798
+    },
+    "vos_noderiv": {
+      "final_obj": 311.1167877003963,
+      "optimality_gap": 0.0,
+      "iterations": 383,
+      "time": 0.6508111953735352
+    },
+    "vos_restart": {
+      "final_obj": 311.1167877003963,
+      "optimality_gap": 0.0,
+      "iterations": 235,
+      "time": 0.5686609745025635
+    }
+  }
+}

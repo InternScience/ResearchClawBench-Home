@@ -1,0 +1,14 @@
+{
+  "method": "GlaMBIE consensus reconciliation",
+  "description": "Consensus estimates from combining multiple observational methods (glaciological, DEM differencing, altimetry, gravimetry) and hybrid methods across 233 regional estimates. Uses input period estimates standardized to annual calendar years.",
+  "data_source": "data/glambie/results/calendar_years/*.csv",
+  "period": "2000.0 to 2023.0 (annual)",
+  "outputs": {
+    "specific_mass_change": "combined_mwe [m w.e./yr]",
+    "total_mass_change": "combined_gt [Gt/yr]",
+    "uncertainties": "combined_*_errors",
+    "area": "glacier_area [km²]"
+  },
+  "regions": 19,
+  "global": true
+}

@@ -1,0 +1,6 @@
+claim_id,claim,artifact,status
+C1,The overall resolution-error distribution is strongly right-skewed with a median near 4e-4.,outputs/fig6_summary.json,supported
+C2,Median waveform differences increase systematically with harmonic mode index ell=2..8.,outputs/fig7_mode_summary.csv; report/images/fig7_mode_comparison.png,supported
+C3,N=2 vs N=4 discrepancies are typically larger than N=2 vs N=3 discrepancies.,outputs/fig8_summary.json; report/images/fig8_extrapolation.png,supported
+C4,"These synthetic catalog-level uncertainties are small enough to be relevant for surrogate-model calibration, though higher modes are less accurate.",outputs/related_work_contract.json; outputs/fig6_summary.json; outputs/fig7_mode_summary.csv,supported_with_context
+C5,"The study is limited to synthetic summary statistics, not raw waveforms or horizon trajectories.",outputs/method_contract.json,supported

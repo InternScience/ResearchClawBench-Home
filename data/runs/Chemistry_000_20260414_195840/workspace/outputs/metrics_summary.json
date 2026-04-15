@@ -1,0 +1,122 @@
+{
+  "bace_mlp": {
+    "dataset": "bace",
+    "model": "mlp",
+    "train_time_sec": 12.65580940246582,
+    "params": 15089,
+    "roc_auc_mean": NaN,
+    "pr_auc_mean": NaN,
+    "tasks_evaluated": 0,
+    "n_train": 560,
+    "n_test": 70,
+    "tasks": 1
+  },
+  "bace_kagnn": {
+    "dataset": "bace",
+    "model": "kagnn",
+    "train_time_sec": 20.30121111869812,
+    "params": 127217,
+    "roc_auc_mean": NaN,
+    "pr_auc_mean": NaN,
+    "tasks_evaluated": 0,
+    "n_train": 560,
+    "n_test": 70,
+    "tasks": 1
+  },
+  "bbbp_mlp": {
+    "dataset": "bbbp",
+    "model": "mlp",
+    "train_time_sec": 11.702048540115356,
+    "params": 15089,
+    "roc_auc_mean": NaN,
+    "pr_auc_mean": NaN,
+    "tasks_evaluated": 0,
+    "n_train": 720,
+    "n_test": 90,
+    "tasks": 1
+  },
+  "bbbp_kagnn": {
+    "dataset": "bbbp",
+    "model": "kagnn",
+    "train_time_sec": 22.045405387878418,
+    "params": 127217,
+    "roc_auc_mean": NaN,
+    "pr_auc_mean": NaN,
+    "tasks_evaluated": 0,
+    "n_train": 720,
+    "n_test": 90,
+    "tasks": 1
+  },
+  "clintox_mlp": {
+    "dataset": "clintox",
+    "model": "mlp",
+    "train_time_sec": 12.17789077758789,
+    "params": 15138,
+    "roc_auc_mean": 0.3958333333333333,
+    "pr_auc_mean": 0.4983320370981602,
+    "tasks_evaluated": 2,
+    "n_train": 720,
+    "n_test": 90,
+    "tasks": 2
+  },
+  "clintox_kagnn": {
+    "dataset": "clintox",
+    "model": "kagnn",
+    "train_time_sec": 21.183945178985596,
+    "params": 127266,
+    "roc_auc_mean": 0.6954365079365079,
+    "pr_auc_mean": 0.6504222747433888,
+    "tasks_evaluated": 2,
+    "n_train": 720,
+    "n_test": 90,
+    "tasks": 2
+  },
+  "hiv_mlp": {
+    "dataset": "hiv",
+    "model": "mlp",
+    "train_time_sec": 25.83642077445984,
+    "params": 15089,
+    "roc_auc_mean": 0.9932318104906938,
+    "pr_auc_mean": 0.6444444444444444,
+    "tasks_evaluated": 1,
+    "n_train": 1600,
+    "n_test": 200,
+    "tasks": 1
+  },
+  "hiv_kagnn": {
+    "dataset": "hiv",
+    "model": "kagnn",
+    "train_time_sec": 47.82242774963379,
+    "params": 127217,
+    "roc_auc_mean": 0.5,
+    "pr_auc_mean": 0.015,
+    "tasks_evaluated": 1,
+    "n_train": 1600,
+    "n_test": 200,
+    "tasks": 1
+  },
+  "muv_mlp": {
+    "dataset": "muv",
+    "model": "mlp",
+    "train_time_sec": 19.191747188568115,
+    "params": 15873,
+    "roc_auc_mean": 0.7648809523809523,
+    "pr_auc_mean": 0.30277777777777776,
+    "tasks_evaluated": 2,
+    "n_train": 1760,
+    "n_test": 220,
+    "tasks": 17
+  },
+  "muv_kagnn": {
+    "dataset": "muv",
+    "model": "kagnn",
+    "train_time_sec": 32.499998807907104,
+    "params": 128001,
+    "roc_auc_mean": 0.7410714285714286,
+    "pr_auc_mean": 0.3935185185185185,
+    "tasks_evaluated": 2,
+    "n_train": 1760,
+    "n_test": 220,
+    "tasks": 17
+  }
+}

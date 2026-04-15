@@ -1,0 +1,24 @@
+{
+  "task": "Multi-Object Tracking with Pseudo-Depth Hierarchical Association",
+  "scientific_target": "Handle occlusions and improve MOT performance in crowded scenes by decomposing dense target sets into sparse subsets via pseudo-depth estimation and hierarchical association",
+  "methods": [
+    {
+      "name": "ByteTrack",
+      "description": "Baseline tracker using two-stage association: high-score detections first, then low-score detections",
+      "key_components": ["Kalman filter", "Hungarian algorithm", "Two-stage IoU matching"]
+    },
+    {
+      "name": "SparseTrack",
+      "description": "Proposed method using pseudo-depth estimation to decompose dense scenes into sparse subsets for hierarchical association",
+      "key_components": ["Pseudo-depth estimation from bbox size", "Hierarchical layer decomposition", "Layer-wise association", "Occlusion-aware matching"]
+    }
+  ],
+  "metrics": ["MOTA", "IDF1", "ID Switches", "HOTA", "Fragmentation"],
+  "data": {
+    "source": "simulated_sequence.json",
+    "frames": 100,
+    "objects": 200,
+    "detection_rate": "~80%",
+    "score_range": "0.1-0.9"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "partial_pass",
+  "checked_items": ["python3", "numpy", "pandas", "matplotlib", "seaborn", "scipy", "pdf text extraction utilities"],
+  "results": {
+    "python3": true,
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "ReadPDF_tool": false,
+    "pdftotext_cli_extract_text": false,
+    "pypdf": false,
+    "PyPDF2": false
+  },
+  "notes": [
+    "Initial ReadPDF failed for related work PDFs.",
+    "Basic scientific Python stack is available.",
+    "Related-work PDF text extraction is limited; metadata/embedded strings inspection will be used if needed."
+  ]
+}

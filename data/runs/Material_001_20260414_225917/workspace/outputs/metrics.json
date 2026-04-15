@@ -1,0 +1,31 @@
+{
+  "property_prediction": {
+    "train_mae": 0.5025126099735452,
+    "test_mae": 0.6020178642443853,
+    "train_r2": 0.01346766608142591,
+    "test_r2": -0.08815191632469377,
+    "test_rmse": 0.6796715525384973,
+    "n_train": 76,
+    "n_test": 20
+  },
+  "structure_generation": {
+    "recon_mae_a": 0.07885962740548934,
+    "recon_mae_b": 0.07517918183574135,
+    "n_generated": 100,
+    "generated_a_mean": 5.520002922255824,
+    "generated_a_std": 0.21969553274282888,
+    "generated_b_mean": 5.505095201266165,
+    "generated_b_std": 0.22517014601347263
+  },
+  "autonomous_optimization": {
+    "best_T": 371.42857142857144,
+    "best_t": 20.20408163265306,
+    "best_yield": 0.8271215592375238,
+    "true_opt_T": 350.0,
+    "true_opt_t": 20.0,
+    "T_error": 21.428571428571445,
+    "t_error": 0.204081632653061,
+    "n_iterations": 25,
+    "n_init": 5
+  }
+}

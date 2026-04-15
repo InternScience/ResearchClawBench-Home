@@ -1,0 +1,44 @@
+{
+  "framework": "Training-Free Task-Guided Cropping for MLLM Fine-Grained Perception",
+  "baseline_encoders": {
+    "CLIP ViT-B": [
+      224,
+      224
+    ],
+    "CLIP ViT-L": [
+      336,
+      336
+    ],
+    "LLaVA-1.5": [
+      336,
+      336
+    ]
+  },
+  "crop_config": {
+    "num_crops": 4,
+    "crop_scale": 0.25,
+    "min_crop_size": 64
+  },
+  "results_per_image": {
+    "demo1.png": {
+      "original_resolution": "1024\u00d7768",
+      "original_pixels": 786432,
+      "baseline_encoded_pixels": 50176,
+      "pixel_loss_pct": 93.62,
+      "num_detected_regions": 4,
+      "region_coverage_pct": 10.0,
+      "effective_density_gain": 2.55,
+      "total_crop_pixels": 200704
+    },
+    "demo2.png": {
+      "original_resolution": "2250\u00d71500",
+      "original_pixels": 3375000,
+      "baseline_encoded_pixels": 50176,
+      "pixel_loss_pct": 98.51,
+      "num_detected_regions": 4,
+      "region_coverage_pct": 31.47,
+      "effective_density_gain": 0.19,
+      "total_crop_pixels": 200704
+    }
+  }
+}

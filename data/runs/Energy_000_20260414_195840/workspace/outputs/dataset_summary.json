@@ -1,0 +1,54 @@
+{
+  "datasets": [
+    {
+      "name": "CALCE_CS2_36",
+      "points": 83,
+      "duration_s": 2451.7841898261822,
+      "current_mean_a": 1.1000022557844598,
+      "voltage_range_v": [
+        2.699855327606201,
+        4.017177581787109
+      ],
+      "capacity_range_ah": [
+        0.0,
+        0.7491565870911311
+      ]
+    },
+    {
+      "name": "NASA_B0005",
+      "points": 197,
+      "duration_s": 3690.234,
+      "current_mean_a": 1.818711710270297,
+      "voltage_range_v": [
+        2.612467347907089,
+        4.191491807505295
+      ],
+      "temperature_range_c": [
+        24.325993424022467,
+        38.98218133148803
+      ],
+      "capacity_range_ah": [
+        0.0,
+        1.8564874208181574
+      ]
+    },
+    {
+      "name": "Oxford_ExampleDC_C1",
+      "points": 3145,
+      "duration_s": 3144.0,
+      "current_mean_a": 0.7665475852400637,
+      "voltage_range_v": [
+        3.60439,
+        4.18354
+      ],
+      "temperature_range_c": [
+        39.9266,
+        41.0874
+      ],
+      "capacity_range_ah": [
+        0.0,
+        0.48344
+      ]
+    }
+  ]
+}

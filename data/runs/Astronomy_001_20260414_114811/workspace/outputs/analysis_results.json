@@ -1,0 +1,66 @@
+{
+  "LCDM": {
+    "chi2_dvrd": 2.33,
+    "chi2_fap": 0.04,
+    "chi2_sne": 0.0,
+    "chi2_total_bao_sne": 2.37
+  },
+  "EDE": {
+    "chi2_dvrd": 1.04,
+    "chi2_fap": 0.02,
+    "chi2_sne": 0.0,
+    "chi2_total_bao_sne": 1.05
+  },
+  "w0wa": {
+    "chi2_dvrd": 6.48,
+    "chi2_fap": 0.1,
+    "chi2_sne": 0.0,
+    "chi2_total_bao_sne": 6.59
+  },
+  "parameter_shifts": {
+    "H0": {
+      "LCDM": 68.12,
+      "EDE": 70.9,
+      "EDE_shift_sigma": 9.93,
+      "w0wa": 63.5,
+      "w0wa_shift_sigma": -16.5
+    },
+    "omega_m": {
+      "LCDM": 0.3037,
+      "EDE": 0.2999,
+      "EDE_shift_sigma": -1.03,
+      "w0wa": 0.353,
+      "w0wa_shift_sigma": 13.32
+    },
+    "sigma8": {
+      "LCDM": 0.8101,
+      "EDE": 0.8283,
+      "EDE_shift_sigma": 3.31,
+      "w0wa": 0.78,
+      "w0wa_shift_sigma": -5.47
+    },
+    "ns": {
+      "LCDM": 0.9672,
+      "EDE": 0.9817,
+      "EDE_shift_sigma": 4.26,
+      "w0wa": 0.9632,
+      "w0wa_shift_sigma": -1.18
+    }
+  },
+  "tension_metrics": {
+    "H0_LCDM_vs_SH0ES_sigma": 4.57,
+    "H0_EDE_vs_SH0ES_sigma": 1.48,
+    "H0_w0wa_vs_SH0ES_sigma": 4.4
+  },
+  "EDE_parameters": {
+    "f_EDE": [
+      0.093,
+      0.031
+    ],
+    "log10_ac": [
+      -3.564,
+      0.075
+    ],
+    "f_EDE_detection_sigma": 3.0
+  }
+}

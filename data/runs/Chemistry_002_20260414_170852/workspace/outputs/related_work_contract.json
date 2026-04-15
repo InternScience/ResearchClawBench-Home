@@ -1,0 +1,41 @@
+{
+  "papers": [
+    {
+      "file": "related_work/paper_000.pdf",
+      "key_points": [
+        "Original HADDOCK is information-driven docking using ambiguous interaction restraints (AIRs)",
+        "Biochemical/biophysical data such as NMR chemical shift perturbations or mutagenesis data can define interface restraints",
+        "Best-ranked structures by intermolecular energies were closest to native structures in the reported examples"
+      ]
+    },
+    {
+      "file": "related_work/paper_001.pdf",
+      "key_points": [
+        "HADDOCK2.0 expanded to proteins, nucleic acids, oligosaccharides, ligands, and multicomponent systems",
+        "Protocol improvements include solvated docking and automatic semirigid/flexible treatment",
+        "Scoring and flexibility handling are major docking challenges assessed in CAPRI"
+      ]
+    },
+    {
+      "file": "related_work/paper_002.pdf",
+      "key_points": [
+        "HADDOCK2.2 emphasizes user-friendly integrative modeling of biomolecular complexes",
+        "Accuracy improves by incorporating experimental or predictive information into docking",
+        "Portal supports mixed molecule types and additional restraints"
+      ]
+    },
+    {
+      "file": "related_work/paper_003.pdf",
+      "key_points": [
+        "Recent HADDOCK application to protein-glycan interactions highlights modularity beyond protein-protein docking",
+        "Success depends strongly on binding-site knowledge and partner flexibility",
+        "Benchmarking reports top-5 success rates for bound and unbound settings"
+      ]
+    }
+  ],
+  "contract_updates": [
+    "Preserve information-driven/AIR framing in methodology",
+    "Discuss flexibility/scoring as key caveats",
+    "Position present work as validation-oriented structural analysis, not a full HADDOCK rerun"
+  ]
+}

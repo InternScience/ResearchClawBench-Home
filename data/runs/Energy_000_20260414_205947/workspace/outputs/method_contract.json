@@ -1,0 +1,12 @@
+{
+  "framework": "MMGA",
+  "meta_model": "ANN surrogate for ECAT simulations",
+  "sampling": "Latin Hypercube Sampling (LHS) for training data",
+  "model": "ECAT (electrochemical-aging-thermal coupled, simplified as SPM + thermal)",
+  "optimization": "Genetic Algorithm or similar using surrogate fitness (RMSE on V(t), T(t), Q)",
+  "datasets": {
+    "primary": "CS2_36 (NCM 18650, 1C CC discharge)",
+    "validation": ["NASA PCoE", "Oxford dynamic"]
+  },
+  "params": ["particle radius Rp+, Rp-", "reaction rates k0+, k0-", "diffusion Ds+, Ds-", "thermal lambda", "aging rates", "others from paper_001"]
+}

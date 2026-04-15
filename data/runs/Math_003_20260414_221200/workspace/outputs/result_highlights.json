@@ -1,0 +1,3491 @@
+{
+  "hardest_by_trace": [
+    {
+      "problem_id": "translated_imo_2011_p6",
+      "goal": "coll(x,o,o1)",
+      "solved": false,
+      "num_initial_facts": 51,
+      "num_total_facts": 106,
+      "num_trace_steps": 71,
+      "num_rule_applications": 56,
+      "search_time_seconds": 0.008042,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle p o a",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "p",
+              "o": "p",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline q p o p",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "p",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pa p b c",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pa",
+              "a": "pa",
+              "b": "p",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pb p c a",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pb",
+              "a": "pb",
+              "b": "p",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pc p a b",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pc",
+              "a": "pc",
+              "b": "p",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qa q b c",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qa",
+              "a": "qa",
+              "b": "q",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qb q c a",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qb",
+              "a": "qb",
+              "b": "q",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qc q a b",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qc",
+              "a": "qc",
+              "b": "q",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line a1 pb qb, on_line a1 pc qc",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "a1",
+              "a": "a1",
+              "b": "pb"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line b1 pa qa, on_line b1 pc qc",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "b1",
+              "a": "b1",
+              "b": "pa"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line c1 pa qa, on_line c1 pb qb",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "c1",
+              "a": "c1",
+              "b": "pa"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o1 a1 b1 c1",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o1",
+              "a": "o1",
+              "b": "a1",
+              "c": "b1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle x o a, on_circle x o1 a1",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "x",
+              "o": "x",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pa,p,pa)",
+            "cong(p,pa,p,pa)",
+            "cong(p,pa,p,pa)"
+          ],
+          "derived": "cyclic(pa,pa,pa,pa)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pb,p,pb)",
+            "cong(p,pb,p,pb)",
+            "cong(p,pb,p,pb)"
+          ],
+          "derived": "cyclic(pb,pb,pb,pb)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pc,p,pc)",
+            "cong(p,pc,p,pc)",
+            "cong(p,pc,p,pc)"
+          ],
+          "derived": "cyclic(pc,pc,pc,pc)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,qa,q,qa)",
+            "cong(q,qa,q,qa)",
+            "cong(q,qa,q,qa)"
+          ],
+          "derived": "cyclic(qa,qa,qa,qa)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,qb,q,qb)",
+            "cong(q,qb,q,qb)",
+            "cong(q,qb,q,qb)"
+          ],
+          "derived": "cyclic(qb,qb,qb,qb)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2000_p6",
+      "goal": "cong(i,z,i,t1)",
+      "solved": false,
+      "num_initial_facts": 39,
+      "num_total_facts": 69,
+      "num_trace_steps": 41,
+      "num_rule_applications": 30,
+      "search_time_seconds": 0.003343,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "orthocenter h a b c",
+            "expanded_with": "orthocenter",
+            "bindings": {
+              "x": "h",
+              "a": "h",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter2 t1 t2 t3 i a b c",
+            "expanded_with": "incenter2",
+            "bindings": {
+              "x": "t1",
+              "y": "t2",
+              "z": "t3",
+              "i": "i",
+              "a": "t1",
+              "b": "t2",
+              "c": "t3"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h1 a b c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h1",
+              "a": "h1",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h2 b c a",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h2",
+              "a": "h2",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h3 c a b",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h3",
+              "a": "h3",
+              "b": "c",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect x1 h1 t1 t2",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "x1",
+              "a": "x1",
+              "b": "h1",
+              "c": "t1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect x2 h2 t1 t2",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "x2",
+              "a": "x2",
+              "b": "h2",
+              "c": "t1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect y2 h2 t2 t3",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "y2",
+              "a": "y2",
+              "b": "h2",
+              "c": "t2"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect y3 h3 t2 t3",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "y3",
+              "a": "y3",
+              "b": "h3",
+              "c": "t2"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line z x1 x2, on_line z y2 y3",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "z",
+              "a": "z",
+              "b": "x1"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)"
+          ],
+          "derived": "cyclic(x1,x1,x1,x1)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h2,x2,h2,x2)",
+            "cong(h2,x2,h2,x2)",
+            "cong(h2,x2,h2,x2)"
+          ],
+          "derived": "cyclic(x2,x2,x2,x2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h2,y2,h2,y2)",
+            "cong(h2,y2,h2,y2)",
+            "cong(h2,y2,h2,y2)"
+          ],
+          "derived": "cyclic(y2,y2,y2,y2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h3,y3,h3,y3)",
+            "cong(h3,y3,h3,y3)",
+            "cong(h3,y3,h3,y3)"
+          ],
+          "derived": "cyclic(y3,y3,y3,y3)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(x1,x1,x1,x1)"
+          ],
+          "derived": "eqangle(x1,x1,x1,x1,x1,x1,x1,x1)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(x2,x2,x2,x2)"
+          ],
+          "derived": "eqangle(x2,x2,x2,x2,x2,x2,x2,x2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(y2,y2,y2,y2)"
+          ],
+          "derived": "eqangle(y2,y2,y2,y2,y2,y2,y2,y2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(y3,y3,y3,y3)"
+          ],
+          "derived": "eqangle(y3,y3,y3,y3,y3,y3,y3,y3)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)"
+          ],
+          "derived": "perp(h1,h1,x1,x1)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2009_p2",
+      "goal": "cong(o,p,o,q)",
+      "solved": false,
+      "num_initial_facts": 27,
+      "num_total_facts": 52,
+      "num_trace_steps": 33,
+      "num_rule_applications": 25,
+      "search_time_seconds": 0.002355,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle m l k",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "m",
+              "b": "l",
+              "c": "k"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle w m l k",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "w",
+              "a": "w",
+              "b": "m",
+              "c": "l"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline q m w m",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "m",
+              "c": "w"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror p q m",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "p",
+              "a": "p",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror b p k",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "b",
+              "a": "b",
+              "b": "p"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror c q l",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "c",
+              "a": "c",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line a b q, on_line a c p",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "a",
+              "a": "a",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "cyclic(p,p,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)"
+          ],
+          "derived": "cyclic(b,b,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,c,q,c)",
+            "cong(q,c,q,c)",
+            "cong(q,c,q,c)"
+          ],
+          "derived": "cyclic(c,c,c,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(p,p,p,p)"
+          ],
+          "derived": "eqangle(p,p,p,p,p,p,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(b,b,b,b)"
+          ],
+          "derived": "eqangle(b,b,b,b,b,b,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(c,c,c,c)"
+          ],
+          "derived": "eqangle(c,c,c,c,c,c,c,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(w,m,w,l)",
+            "ncoll(w,m,l)"
+          ],
+          "derived": "eqangle(w,m,m,l,m,l,w,l)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,a,o,b)",
+            "ncoll(o,a,b)"
+          ],
+          "derived": "eqangle(o,a,a,b,a,b,o,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "perp(q,q,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,c,q,c)"
+          ],
+          "derived": "perp(q,q,p,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)"
+          ],
+          "derived": "perp(p,p,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,c,q,c)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "perp(q,q,c,p)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2008_p6",
+      "goal": "cong(o,k,o,x)",
+      "solved": false,
+      "num_initial_facts": 47,
+      "num_total_facts": 59,
+      "num_trace_steps": 26,
+      "num_rule_applications": 13,
+      "search_time_seconds": 0.002577,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle x y z",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "x@4.96_-0.13",
+              "b": "y@-1.0068968328888160_-1.2534881080682770",
+              "c": "z@-2.8402847238575120_-4.9117762734006830"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o x y z",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "x",
+              "c": "y"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle w o x",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "w@6.9090049230038776_-1.3884003936987552",
+              "o": "w",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline a z o z, on_tline a x o x",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "a",
+              "a": "a",
+              "b": "z",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline b z o z, on_tline b w o w",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "b",
+              "a": "b",
+              "b": "z",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline c y o y, on_tline c w o w",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "c",
+              "a": "c",
+              "b": "y",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline d x o x, on_tline d y o y",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "d",
+              "a": "d",
+              "b": "x",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter i1 a b c",
+            "expanded_with": "incenter",
+            "bindings": {
+              "x": "i1",
+              "a": "i1",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter i2 a c d",
+            "expanded_with": "incenter",
+            "bindings": {
+              "x": "i2",
+              "a": "i2",
+              "b": "a",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot f1 i1 a c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "f1",
+              "a": "f1",
+              "b": "i1",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot f2 i2 a c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "f2",
+              "a": "f2",
+              "b": "i2",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "cc_tangent q t p s i1 f1 i2 f2",
+            "expanded_with": "cc_tangent",
+            "bindings": {
+              "x": "q",
+              "y": "t",
+              "z": "p",
+              "i": "s",
+              "o": "q",
+              "a": "t",
+              "w": "p",
+              "b": "s"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line k q t, on_line k p s",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "k",
+              "a": "k",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,t,p,s)",
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "cyclic(t,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "cyclic(s,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(t,s,s,s)"
+          ],
+          "derived": "eqangle(s,t,s,s,s,t,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(s,s,s,s)"
+          ],
+          "derived": "eqangle(s,s,s,s,s,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,x,o,y)",
+            "ncoll(o,x,y)"
+          ],
+          "derived": "eqangle(o,x,x,y,x,y,o,y)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "perp(p,p,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(s,t,s,s,s,t,s,s)"
+          ],
+          "derived": "para(s,t,s,t)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2014_p4",
+      "goal": "cong(o,x,o,a)",
+      "solved": false,
+      "num_initial_facts": 22,
+      "num_total_facts": 39,
+      "num_trace_steps": 24,
+      "num_rule_applications": 17,
+      "search_time_seconds": 0.001363,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line p b c, on_aline p a b b c a",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "p",
+              "a": "p",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line q b c, on_aline q a c c b a",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror m a p",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "m",
+              "a": "m",
+              "b": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror n a q",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "n",
+              "a": "n",
+              "b": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line x b m, on_line x c n",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "x",
+              "a": "x",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "cyclic(m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "cyclic(n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(m,m,m,m)"
+          ],
+          "derived": "eqangle(m,m,m,m,m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(n,n,n,n)"
+          ],
+          "derived": "eqangle(n,n,n,n,n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,a,o,b)",
+            "ncoll(o,a,b)"
+          ],
+          "derived": "eqangle(o,a,a,b,a,b,o,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "perp(a,a,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "perp(a,a,m,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "perp(a,a,n,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "perp(a,a,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(m,m,m,m,m,m,m,m)"
+          ],
+          "derived": "para(m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(n,n,n,n,n,n,n,n)"
+          ],
+          "derived": "para(n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "para A B A C => coll A B C",
+          "premises": [
+            "para(m,m,m,m)"
+          ],
+          "derived": "coll(m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "para A B A C => coll A B C",
+          "premises": [
+            "para(n,n,n,n)"
+          ],
+          "derived": "coll(n,n,n)"
+        }
+      ]
+    }
+  ],
+  "slowest": [
+    {
+      "problem_id": "translated_imo_2011_p6",
+      "goal": "coll(x,o,o1)",
+      "solved": false,
+      "num_initial_facts": 51,
+      "num_total_facts": 106,
+      "num_trace_steps": 71,
+      "num_rule_applications": 56,
+      "search_time_seconds": 0.008042,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle p o a",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "p",
+              "o": "p",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline q p o p",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "p",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pa p b c",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pa",
+              "a": "pa",
+              "b": "p",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pb p c a",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pb",
+              "a": "pb",
+              "b": "p",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pc p a b",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pc",
+              "a": "pc",
+              "b": "p",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qa q b c",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qa",
+              "a": "qa",
+              "b": "q",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qb q c a",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qb",
+              "a": "qb",
+              "b": "q",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qc q a b",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qc",
+              "a": "qc",
+              "b": "q",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line a1 pb qb, on_line a1 pc qc",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "a1",
+              "a": "a1",
+              "b": "pb"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line b1 pa qa, on_line b1 pc qc",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "b1",
+              "a": "b1",
+              "b": "pa"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line c1 pa qa, on_line c1 pb qb",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "c1",
+              "a": "c1",
+              "b": "pa"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o1 a1 b1 c1",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o1",
+              "a": "o1",
+              "b": "a1",
+              "c": "b1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle x o a, on_circle x o1 a1",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "x",
+              "o": "x",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pa,p,pa)",
+            "cong(p,pa,p,pa)",
+            "cong(p,pa,p,pa)"
+          ],
+          "derived": "cyclic(pa,pa,pa,pa)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pb,p,pb)",
+            "cong(p,pb,p,pb)",
+            "cong(p,pb,p,pb)"
+          ],
+          "derived": "cyclic(pb,pb,pb,pb)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pc,p,pc)",
+            "cong(p,pc,p,pc)",
+            "cong(p,pc,p,pc)"
+          ],
+          "derived": "cyclic(pc,pc,pc,pc)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,qa,q,qa)",
+            "cong(q,qa,q,qa)",
+            "cong(q,qa,q,qa)"
+          ],
+          "derived": "cyclic(qa,qa,qa,qa)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,qb,q,qb)",
+            "cong(q,qb,q,qb)",
+            "cong(q,qb,q,qb)"
+          ],
+          "derived": "cyclic(qb,qb,qb,qb)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2000_p6",
+      "goal": "cong(i,z,i,t1)",
+      "solved": false,
+      "num_initial_facts": 39,
+      "num_total_facts": 69,
+      "num_trace_steps": 41,
+      "num_rule_applications": 30,
+      "search_time_seconds": 0.003343,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "orthocenter h a b c",
+            "expanded_with": "orthocenter",
+            "bindings": {
+              "x": "h",
+              "a": "h",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter2 t1 t2 t3 i a b c",
+            "expanded_with": "incenter2",
+            "bindings": {
+              "x": "t1",
+              "y": "t2",
+              "z": "t3",
+              "i": "i",
+              "a": "t1",
+              "b": "t2",
+              "c": "t3"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h1 a b c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h1",
+              "a": "h1",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h2 b c a",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h2",
+              "a": "h2",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h3 c a b",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h3",
+              "a": "h3",
+              "b": "c",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect x1 h1 t1 t2",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "x1",
+              "a": "x1",
+              "b": "h1",
+              "c": "t1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect x2 h2 t1 t2",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "x2",
+              "a": "x2",
+              "b": "h2",
+              "c": "t1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect y2 h2 t2 t3",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "y2",
+              "a": "y2",
+              "b": "h2",
+              "c": "t2"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect y3 h3 t2 t3",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "y3",
+              "a": "y3",
+              "b": "h3",
+              "c": "t2"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line z x1 x2, on_line z y2 y3",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "z",
+              "a": "z",
+              "b": "x1"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)"
+          ],
+          "derived": "cyclic(x1,x1,x1,x1)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h2,x2,h2,x2)",
+            "cong(h2,x2,h2,x2)",
+            "cong(h2,x2,h2,x2)"
+          ],
+          "derived": "cyclic(x2,x2,x2,x2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h2,y2,h2,y2)",
+            "cong(h2,y2,h2,y2)",
+            "cong(h2,y2,h2,y2)"
+          ],
+          "derived": "cyclic(y2,y2,y2,y2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h3,y3,h3,y3)",
+            "cong(h3,y3,h3,y3)",
+            "cong(h3,y3,h3,y3)"
+          ],
+          "derived": "cyclic(y3,y3,y3,y3)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(x1,x1,x1,x1)"
+          ],
+          "derived": "eqangle(x1,x1,x1,x1,x1,x1,x1,x1)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(x2,x2,x2,x2)"
+          ],
+          "derived": "eqangle(x2,x2,x2,x2,x2,x2,x2,x2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(y2,y2,y2,y2)"
+          ],
+          "derived": "eqangle(y2,y2,y2,y2,y2,y2,y2,y2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(y3,y3,y3,y3)"
+          ],
+          "derived": "eqangle(y3,y3,y3,y3,y3,y3,y3,y3)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)"
+          ],
+          "derived": "perp(h1,h1,x1,x1)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2008_p6",
+      "goal": "cong(o,k,o,x)",
+      "solved": false,
+      "num_initial_facts": 47,
+      "num_total_facts": 59,
+      "num_trace_steps": 26,
+      "num_rule_applications": 13,
+      "search_time_seconds": 0.002577,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle x y z",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "x@4.96_-0.13",
+              "b": "y@-1.0068968328888160_-1.2534881080682770",
+              "c": "z@-2.8402847238575120_-4.9117762734006830"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o x y z",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "x",
+              "c": "y"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle w o x",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "w@6.9090049230038776_-1.3884003936987552",
+              "o": "w",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline a z o z, on_tline a x o x",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "a",
+              "a": "a",
+              "b": "z",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline b z o z, on_tline b w o w",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "b",
+              "a": "b",
+              "b": "z",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline c y o y, on_tline c w o w",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "c",
+              "a": "c",
+              "b": "y",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline d x o x, on_tline d y o y",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "d",
+              "a": "d",
+              "b": "x",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter i1 a b c",
+            "expanded_with": "incenter",
+            "bindings": {
+              "x": "i1",
+              "a": "i1",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter i2 a c d",
+            "expanded_with": "incenter",
+            "bindings": {
+              "x": "i2",
+              "a": "i2",
+              "b": "a",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot f1 i1 a c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "f1",
+              "a": "f1",
+              "b": "i1",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot f2 i2 a c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "f2",
+              "a": "f2",
+              "b": "i2",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "cc_tangent q t p s i1 f1 i2 f2",
+            "expanded_with": "cc_tangent",
+            "bindings": {
+              "x": "q",
+              "y": "t",
+              "z": "p",
+              "i": "s",
+              "o": "q",
+              "a": "t",
+              "w": "p",
+              "b": "s"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line k q t, on_line k p s",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "k",
+              "a": "k",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,t,p,s)",
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "cyclic(t,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "cyclic(s,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(t,s,s,s)"
+          ],
+          "derived": "eqangle(s,t,s,s,s,t,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(s,s,s,s)"
+          ],
+          "derived": "eqangle(s,s,s,s,s,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,x,o,y)",
+            "ncoll(o,x,y)"
+          ],
+          "derived": "eqangle(o,x,x,y,x,y,o,y)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "perp(p,p,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(s,t,s,s,s,t,s,s)"
+          ],
+          "derived": "para(s,t,s,t)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2009_p2",
+      "goal": "cong(o,p,o,q)",
+      "solved": false,
+      "num_initial_facts": 27,
+      "num_total_facts": 52,
+      "num_trace_steps": 33,
+      "num_rule_applications": 25,
+      "search_time_seconds": 0.002355,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle m l k",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "m",
+              "b": "l",
+              "c": "k"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle w m l k",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "w",
+              "a": "w",
+              "b": "m",
+              "c": "l"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline q m w m",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "m",
+              "c": "w"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror p q m",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "p",
+              "a": "p",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror b p k",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "b",
+              "a": "b",
+              "b": "p"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror c q l",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "c",
+              "a": "c",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line a b q, on_line a c p",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "a",
+              "a": "a",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "cyclic(p,p,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)"
+          ],
+          "derived": "cyclic(b,b,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,c,q,c)",
+            "cong(q,c,q,c)",
+            "cong(q,c,q,c)"
+          ],
+          "derived": "cyclic(c,c,c,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(p,p,p,p)"
+          ],
+          "derived": "eqangle(p,p,p,p,p,p,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(b,b,b,b)"
+          ],
+          "derived": "eqangle(b,b,b,b,b,b,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(c,c,c,c)"
+          ],
+          "derived": "eqangle(c,c,c,c,c,c,c,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(w,m,w,l)",
+            "ncoll(w,m,l)"
+          ],
+          "derived": "eqangle(w,m,m,l,m,l,w,l)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,a,o,b)",
+            "ncoll(o,a,b)"
+          ],
+          "derived": "eqangle(o,a,a,b,a,b,o,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "perp(q,q,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,c,q,c)"
+          ],
+          "derived": "perp(q,q,p,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)"
+          ],
+          "derived": "perp(p,p,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,c,q,c)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "perp(q,q,c,p)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2014_p4",
+      "goal": "cong(o,x,o,a)",
+      "solved": false,
+      "num_initial_facts": 22,
+      "num_total_facts": 39,
+      "num_trace_steps": 24,
+      "num_rule_applications": 17,
+      "search_time_seconds": 0.001363,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line p b c, on_aline p a b b c a",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "p",
+              "a": "p",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line q b c, on_aline q a c c b a",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror m a p",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "m",
+              "a": "m",
+              "b": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror n a q",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "n",
+              "a": "n",
+              "b": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line x b m, on_line x c n",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "x",
+              "a": "x",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "cyclic(m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "cyclic(n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(m,m,m,m)"
+          ],
+          "derived": "eqangle(m,m,m,m,m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(n,n,n,n)"
+          ],
+          "derived": "eqangle(n,n,n,n,n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,a,o,b)",
+            "ncoll(o,a,b)"
+          ],
+          "derived": "eqangle(o,a,a,b,a,b,o,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "perp(a,a,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "perp(a,a,m,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "perp(a,a,n,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "perp(a,a,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(m,m,m,m,m,m,m,m)"
+          ],
+          "derived": "para(m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(n,n,n,n,n,n,n,n)"
+          ],
+          "derived": "para(n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "para A B A C => coll A B C",
+          "premises": [
+            "para(m,m,m,m)"
+          ],
+          "derived": "coll(m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "para A B A C => coll A B C",
+          "premises": [
+            "para(n,n,n,n)"
+          ],
+          "derived": "coll(n,n,n)"
+        }
+      ]
+    }
+  ],
+  "most_rule_applications": [
+    {
+      "problem_id": "translated_imo_2011_p6",
+      "goal": "coll(x,o,o1)",
+      "solved": false,
+      "num_initial_facts": 51,
+      "num_total_facts": 106,
+      "num_trace_steps": 71,
+      "num_rule_applications": 56,
+      "search_time_seconds": 0.008042,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle p o a",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "p",
+              "o": "p",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline q p o p",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "p",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pa p b c",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pa",
+              "a": "pa",
+              "b": "p",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pb p c a",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pb",
+              "a": "pb",
+              "b": "p",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect pc p a b",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "pc",
+              "a": "pc",
+              "b": "p",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qa q b c",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qa",
+              "a": "qa",
+              "b": "q",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qb q c a",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qb",
+              "a": "qb",
+              "b": "q",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect qc q a b",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "qc",
+              "a": "qc",
+              "b": "q",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line a1 pb qb, on_line a1 pc qc",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "a1",
+              "a": "a1",
+              "b": "pb"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line b1 pa qa, on_line b1 pc qc",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "b1",
+              "a": "b1",
+              "b": "pa"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line c1 pa qa, on_line c1 pb qb",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "c1",
+              "a": "c1",
+              "b": "pa"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o1 a1 b1 c1",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o1",
+              "a": "o1",
+              "b": "a1",
+              "c": "b1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle x o a, on_circle x o1 a1",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "x",
+              "o": "x",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pa,p,pa)",
+            "cong(p,pa,p,pa)",
+            "cong(p,pa,p,pa)"
+          ],
+          "derived": "cyclic(pa,pa,pa,pa)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pb,p,pb)",
+            "cong(p,pb,p,pb)",
+            "cong(p,pb,p,pb)"
+          ],
+          "derived": "cyclic(pb,pb,pb,pb)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,pc,p,pc)",
+            "cong(p,pc,p,pc)",
+            "cong(p,pc,p,pc)"
+          ],
+          "derived": "cyclic(pc,pc,pc,pc)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,qa,q,qa)",
+            "cong(q,qa,q,qa)",
+            "cong(q,qa,q,qa)"
+          ],
+          "derived": "cyclic(qa,qa,qa,qa)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,qb,q,qb)",
+            "cong(q,qb,q,qb)",
+            "cong(q,qb,q,qb)"
+          ],
+          "derived": "cyclic(qb,qb,qb,qb)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2000_p6",
+      "goal": "cong(i,z,i,t1)",
+      "solved": false,
+      "num_initial_facts": 39,
+      "num_total_facts": 69,
+      "num_trace_steps": 41,
+      "num_rule_applications": 30,
+      "search_time_seconds": 0.003343,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "orthocenter h a b c",
+            "expanded_with": "orthocenter",
+            "bindings": {
+              "x": "h",
+              "a": "h",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter2 t1 t2 t3 i a b c",
+            "expanded_with": "incenter2",
+            "bindings": {
+              "x": "t1",
+              "y": "t2",
+              "z": "t3",
+              "i": "i",
+              "a": "t1",
+              "b": "t2",
+              "c": "t3"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h1 a b c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h1",
+              "a": "h1",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h2 b c a",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h2",
+              "a": "h2",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot h3 c a b",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "h3",
+              "a": "h3",
+              "b": "c",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect x1 h1 t1 t2",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "x1",
+              "a": "x1",
+              "b": "h1",
+              "c": "t1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect x2 h2 t1 t2",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "x2",
+              "a": "x2",
+              "b": "h2",
+              "c": "t1"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect y2 h2 t2 t3",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "y2",
+              "a": "y2",
+              "b": "h2",
+              "c": "t2"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "reflect y3 h3 t2 t3",
+            "expanded_with": "reflect",
+            "bindings": {
+              "x": "y3",
+              "a": "y3",
+              "b": "h3",
+              "c": "t2"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line z x1 x2, on_line z y2 y3",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "z",
+              "a": "z",
+              "b": "x1"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)"
+          ],
+          "derived": "cyclic(x1,x1,x1,x1)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h2,x2,h2,x2)",
+            "cong(h2,x2,h2,x2)",
+            "cong(h2,x2,h2,x2)"
+          ],
+          "derived": "cyclic(x2,x2,x2,x2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h2,y2,h2,y2)",
+            "cong(h2,y2,h2,y2)",
+            "cong(h2,y2,h2,y2)"
+          ],
+          "derived": "cyclic(y2,y2,y2,y2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(h3,y3,h3,y3)",
+            "cong(h3,y3,h3,y3)",
+            "cong(h3,y3,h3,y3)"
+          ],
+          "derived": "cyclic(y3,y3,y3,y3)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(x1,x1,x1,x1)"
+          ],
+          "derived": "eqangle(x1,x1,x1,x1,x1,x1,x1,x1)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(x2,x2,x2,x2)"
+          ],
+          "derived": "eqangle(x2,x2,x2,x2,x2,x2,x2,x2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(y2,y2,y2,y2)"
+          ],
+          "derived": "eqangle(y2,y2,y2,y2,y2,y2,y2,y2)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(y3,y3,y3,y3)"
+          ],
+          "derived": "eqangle(y3,y3,y3,y3,y3,y3,y3,y3)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(h1,x1,h1,x1)",
+            "cong(h1,x1,h1,x1)"
+          ],
+          "derived": "perp(h1,h1,x1,x1)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2009_p2",
+      "goal": "cong(o,p,o,q)",
+      "solved": false,
+      "num_initial_facts": 27,
+      "num_total_facts": 52,
+      "num_trace_steps": 33,
+      "num_rule_applications": 25,
+      "search_time_seconds": 0.002355,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle m l k",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "m",
+              "b": "l",
+              "c": "k"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle w m l k",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "w",
+              "a": "w",
+              "b": "m",
+              "c": "l"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline q m w m",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "m",
+              "c": "w"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror p q m",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "p",
+              "a": "p",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror b p k",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "b",
+              "a": "b",
+              "b": "p"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror c q l",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "c",
+              "a": "c",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line a b q, on_line a c p",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "a",
+              "a": "a",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "cyclic(p,p,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)"
+          ],
+          "derived": "cyclic(b,b,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(q,c,q,c)",
+            "cong(q,c,q,c)",
+            "cong(q,c,q,c)"
+          ],
+          "derived": "cyclic(c,c,c,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(p,p,p,p)"
+          ],
+          "derived": "eqangle(p,p,p,p,p,p,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(b,b,b,b)"
+          ],
+          "derived": "eqangle(b,b,b,b,b,b,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(c,c,c,c)"
+          ],
+          "derived": "eqangle(c,c,c,c,c,c,c,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(w,m,w,l)",
+            "ncoll(w,m,l)"
+          ],
+          "derived": "eqangle(w,m,m,l,m,l,w,l)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,a,o,b)",
+            "ncoll(o,a,b)"
+          ],
+          "derived": "eqangle(o,a,a,b,a,b,o,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "perp(q,q,p,p)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,p,q,p)",
+            "cong(q,c,q,c)"
+          ],
+          "derived": "perp(q,q,p,c)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(p,b,p,b)",
+            "cong(p,b,p,b)"
+          ],
+          "derived": "perp(p,p,b,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(q,c,q,c)",
+            "cong(q,p,q,p)"
+          ],
+          "derived": "perp(q,q,c,p)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2014_p4",
+      "goal": "cong(o,x,o,a)",
+      "solved": false,
+      "num_initial_facts": 22,
+      "num_total_facts": 39,
+      "num_trace_steps": 24,
+      "num_rule_applications": 17,
+      "search_time_seconds": 0.001363,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle a b c",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "a",
+              "b": "b",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line p b c, on_aline p a b b c a",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "p",
+              "a": "p",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line q b c, on_aline q a c c b a",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "q",
+              "a": "q",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror m a p",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "m",
+              "a": "m",
+              "b": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "mirror n a q",
+            "expanded_with": "mirror",
+            "bindings": {
+              "x": "n",
+              "a": "n",
+              "b": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line x b m, on_line x c n",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "x",
+              "a": "x",
+              "b": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o a b c",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "cyclic(m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "cyclic(n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(m,m,m,m)"
+          ],
+          "derived": "eqangle(m,m,m,m,m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(n,n,n,n)"
+          ],
+          "derived": "eqangle(n,n,n,n,n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,a,o,b)",
+            "ncoll(o,a,b)"
+          ],
+          "derived": "eqangle(o,a,a,b,a,b,o,b)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "perp(a,a,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,m,a,m)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "perp(a,a,m,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,m,a,m)"
+          ],
+          "derived": "perp(a,a,n,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(a,n,a,n)",
+            "cong(a,n,a,n)"
+          ],
+          "derived": "perp(a,a,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(m,m,m,m,m,m,m,m)"
+          ],
+          "derived": "para(m,m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(n,n,n,n,n,n,n,n)"
+          ],
+          "derived": "para(n,n,n,n)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "para A B A C => coll A B C",
+          "premises": [
+            "para(m,m,m,m)"
+          ],
+          "derived": "coll(m,m,m)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "para A B A C => coll A B C",
+          "premises": [
+            "para(n,n,n,n)"
+          ],
+          "derived": "coll(n,n,n)"
+        }
+      ]
+    },
+    {
+      "problem_id": "translated_imo_2008_p6",
+      "goal": "cong(o,k,o,x)",
+      "solved": false,
+      "num_initial_facts": 47,
+      "num_total_facts": 59,
+      "num_trace_steps": 26,
+      "num_rule_applications": 13,
+      "search_time_seconds": 0.002577,
+      "trace_sample": [
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "triangle x y z",
+            "expanded_with": "triangle",
+            "bindings": {
+              "a": "x@4.96_-0.13",
+              "b": "y@-1.0068968328888160_-1.2534881080682770",
+              "c": "z@-2.8402847238575120_-4.9117762734006830"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "circle o x y z",
+            "expanded_with": "circle",
+            "bindings": {
+              "x": "o",
+              "a": "o",
+              "b": "x",
+              "c": "y"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_circle w o x",
+            "expanded_with": "on_circle",
+            "bindings": {
+              "x": "w@6.9090049230038776_-1.3884003936987552",
+              "o": "w",
+              "a": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline a z o z, on_tline a x o x",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "a",
+              "a": "a",
+              "b": "z",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline b z o z, on_tline b w o w",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "b",
+              "a": "b",
+              "b": "z",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline c y o y, on_tline c w o w",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "c",
+              "a": "c",
+              "b": "y",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_tline d x o x, on_tline d y o y",
+            "expanded_with": "on_tline",
+            "bindings": {
+              "x": "d",
+              "a": "d",
+              "b": "x",
+              "c": "o"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter i1 a b c",
+            "expanded_with": "incenter",
+            "bindings": {
+              "x": "i1",
+              "a": "i1",
+              "b": "a",
+              "c": "b"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "incenter i2 a c d",
+            "expanded_with": "incenter",
+            "bindings": {
+              "x": "i2",
+              "a": "i2",
+              "b": "a",
+              "c": "c"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot f1 i1 a c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "f1",
+              "a": "f1",
+              "b": "i1",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "foot f2 i2 a c",
+            "expanded_with": "foot",
+            "bindings": {
+              "x": "f2",
+              "a": "f2",
+              "b": "i2",
+              "c": "a"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "cc_tangent q t p s i1 f1 i2 f2",
+            "expanded_with": "cc_tangent",
+            "bindings": {
+              "x": "q",
+              "y": "t",
+              "z": "p",
+              "i": "s",
+              "o": "q",
+              "a": "t",
+              "w": "p",
+              "b": "s"
+            }
+          }
+        },
+        {
+          "type": "definition_expansion",
+          "detail": {
+            "construction": "on_line k q t, on_line k p s",
+            "expanded_with": "on_line",
+            "bindings": {
+              "x": "k",
+              "a": "k",
+              "b": "q"
+            }
+          }
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,t,p,s)",
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "cyclic(t,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+          "premises": [
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "cyclic(s,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(t,s,s,s)"
+          ],
+          "derived": "eqangle(s,t,s,s,s,t,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cyclic A B P Q => eqangle P A P B Q A Q B",
+          "premises": [
+            "cyclic(s,s,s,s)"
+          ],
+          "derived": "eqangle(s,s,s,s,s,s,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+          "premises": [
+            "cong(o,x,o,y)",
+            "ncoll(o,x,y)"
+          ],
+          "derived": "eqangle(o,x,x,y,x,y,o,y)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "cong A P B P, cong A Q B Q => perp A B P Q",
+          "premises": [
+            "cong(p,s,p,s)",
+            "cong(p,s,p,s)"
+          ],
+          "derived": "perp(p,p,s,s)"
+        },
+        {
+          "type": "rule_application",
+          "rule": "eqangle A B P Q C D P Q => para A B C D",
+          "premises": [
+            "eqangle(s,t,s,s,s,t,s,s)"
+          ],
+          "derived": "para(s,t,s,t)"
+        }
+      ]
+    }
+  ]
+}

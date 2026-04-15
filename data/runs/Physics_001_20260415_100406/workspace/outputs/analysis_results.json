@@ -1,0 +1,42 @@
+{
+  "carrier_density": {
+    "n_eff_range": [
+      500000000000000.0,
+      5000000000000000.0
+    ],
+    "D_s_conv_range": [
+      1146423680.0,
+      2698349570.0
+    ],
+    "D_s_geom_range": [
+      4913244330.0,
+      13760869700.0
+    ],
+    "enhancement_ratio_hole_mean": 55.268020807816065,
+    "enhancement_ratio_electron_mean": 52.50461576389423,
+    "enhancement_ratio_geom_mean": 4.565012014264696
+  },
+  "temperature": {
+    "T_range": [
+      0.0,
+      1.2
+    ],
+    "fitted_power_law_exponent": 0.7816765771630536,
+    "T_c": 1.0
+  },
+  "current": {
+    "I_dc_range": [
+      0.0,
+      60.0
+    ],
+    "I_c": 50.0,
+    "dc_quadratic_slope": 1.9373219435020694,
+    "mw_quadratic_slope": 0.00026173720834445687
+  },
+  "physical_parameters": {
+    "e": 1.602e-19,
+    "hbar": 1.054e-34,
+    "v_f_conventional": 700.0,
+    "v_f_geometric": 3000.0
+  }
+}

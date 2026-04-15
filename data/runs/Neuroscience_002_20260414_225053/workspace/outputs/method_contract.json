@@ -1,0 +1,25 @@
+{
+  "task": "Binary merge prediction for adjacent neuron fragments in over-segmented fly brain EM data",
+  "inputs": [
+    "20 engineered features per candidate pair",
+    "binary label",
+    "degradation type"
+  ],
+  "primary_target": "Predict whether two segments belong to the same neuron and should be merged",
+  "primary_metrics_expected": ["AUROC", "average precision", "accuracy", "F1"],
+  "required_strata": ["overall", "by degradation type"],
+  "minimum_artifacts": [
+    "data overview table",
+    "model comparison table",
+    "held-out evaluation table",
+    "degradation-specific evaluation table",
+    "feature importance or SHAP-style interpretability artifact",
+    "ROC and PR plots",
+    "confusion matrix"
+  ],
+  "named_method_commitments": [
+    "supervised binary classification",
+    "comparison across conditions/degradation types",
+    "at least one explicit interpretability method beyond raw coefficients"
+  ]
+}

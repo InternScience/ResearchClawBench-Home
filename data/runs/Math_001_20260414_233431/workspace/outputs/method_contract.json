@@ -1,0 +1,22 @@
+{
+  "framework": "Variable and Operator Splitting (VOS)",
+  "primary_methods": [
+    "Nesterov Accelerated Gradient Method",
+    "ADMM",
+    "Continuous-time ODE discretization with operator splitting"
+  ],
+  "named_mechanisms": [
+    "Second-order ODE: X'' + (r/t)X' + grad_f(X) = 0",
+    "Phase transition at r=3",
+    "Strong Lyapunov functions for convergence certificates",
+    "Soft-thresholding proximal operator for L1"
+  ],
+  "comparison_axes": [
+    "Nesterov AGM vs ADMM vs VOS-Nesterov vs VOS-ADMM",
+    "Damping parameter r sweep: 1,2,3,4,5",
+    "Condition number sensitivity"
+  ],
+  "target_problem": "High-dimensional Lasso regression (n=1000, p=2000)",
+  "convergence_rates": ["O(1/k^2)", "O(1/k)", "linear for strongly convex"],
+  "lyapunov_types": ["Strong Lyapunov (Nesterov)", "ADMM Lyapunov", "Continuous-time Lyapunov"]
+}

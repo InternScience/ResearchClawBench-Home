@@ -1,0 +1,28 @@
+{
+  "task": "AI-guided inverse design of recyclable vitrimeric polymers",
+  "components": [
+    {
+      "name": "Molecular Dynamics Simulations",
+      "role": "Generate simulated Tg values for polymer structures",
+      "data_source": "data/tg_calibration.csv (experimental + MD Tg), data/tg_vitrimer_MD.csv (vitrimer MD Tg)"
+    },
+    {
+      "name": "Gaussian Process Calibration",
+      "role": "Calibrate MD-simulated Tg to experimental Tg using Morgan fingerprints + MD Tg as features",
+      "method": "GPR with RBF kernel + constant + white noise, PCA dimensionality reduction (30 components)",
+      "validation": "5-fold cross-validation, held-out test set"
+    },
+    {
+      "name": "Graph Variational Autoencoder",
+      "role": "Learn continuous latent representation of polymer SMILES for inverse design",
+      "method": "Convolutional VAE with character-level SMILES encoding, latent dim=32",
+      "inverse_design": "Latent space sampling + MLP surrogate for Tg prediction + nearest-neighbor retrieval"
+    }
+  ],
+  "target_quantities": ["glass_transition_temperature_Tg_K"],
+  "target_ranges": [
+    {"label": "low_Tg", "range_K": [300, 350]},
+    {"label": "mid_Tg", "range_K": [350, 400]},
+    {"label": "high_Tg", "range_K": [400, 450]}
+  ]
+}

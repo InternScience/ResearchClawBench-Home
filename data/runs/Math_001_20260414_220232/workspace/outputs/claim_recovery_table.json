@@ -1,0 +1,20 @@
+{
+  "pgd": {
+    "iter_gap_le_1e-2": 20,
+    "iter_gap_le_1e-4": 41,
+    "iter_err_le_1e-2": 67,
+    "lyapunov_monotone_fraction": 1.0
+  },
+  "fista": {
+    "iter_gap_le_1e-2": 10,
+    "iter_gap_le_1e-4": 21,
+    "iter_err_le_1e-2": 43,
+    "lyapunov_monotone_fraction": 0.6588628762541806
+  },
+  "admm": {
+    "iter_gap_le_1e-2": 196,
+    "iter_gap_le_1e-4": null,
+    "iter_err_le_1e-2": null,
+    "lyapunov_monotone_fraction": 1.0
+  }
+}

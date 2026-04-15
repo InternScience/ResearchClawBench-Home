@@ -1,0 +1,11 @@
+{
+  "methodological_commitments": [
+    "Demonstrate property prediction workflow using synthetic data with ML model",
+    "Demonstrate structure generation workflow using synthetic lattice parameters",
+    "Demonstrate autonomous experimental optimization using Bayesian optimization",
+    "Produce data overview plots, prediction/validation plots, generation samples, optimization trajectories",
+    "Compare model performance where applicable (e.g., MAE for prediction)"
+  ],
+  "named_methods": ["Simple ML regression for property prediction", "Normalizing flow or VAE-like for structure generation", "Bayesian optimization for parameter tuning"],
+  "baselines": ["Dummy baselines (mean predictor)", "Literature-inspired: CGCNN-like simplicity but adapted to numerical data"]
+}

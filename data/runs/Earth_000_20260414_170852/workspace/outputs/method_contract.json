@@ -1,0 +1,27 @@
+{
+  "task": "Reconcile diverse observational methods to produce 2000\u20132023 annual regional and global glacier mass change time series with uncertainties in m w.e. and Gt using the GlaMBIE dataset.",
+  "named_commitments": [
+    "Use GlaMBIE dataset as primary data source",
+    "Cover 19 global glacier regions and global aggregate",
+    "Report annual time series for 2000\u20132023",
+    "Include uncertainties",
+    "Express results in both specific mass change (m w.e.) and total mass change (Gt)",
+    "Address observational-method reconciliation across glaciological, DEM differencing, altimetry, gravimetry, and hybrid/combined inputs",
+    "Provide validation/comparison plots and benchmark framing"
+  ],
+  "planned_implementation": {
+    "primary_source": "Use published GlaMBIE result files for consensus regional/global annual calendar-year series; inspect input files to characterize method coverage and heterogeneity.",
+    "analysis_scope": [
+      "data overview",
+      "regional annual series",
+      "global annual and cumulative series",
+      "uncertainty summaries",
+      "regional ranking/comparison",
+      "method coverage/comparison diagnostics from input and hydrological files"
+    ],
+    "limitations_to_check": [
+      "Whether 2023 means interval 2023.0\u20132024.0 in provided calendar-year files",
+      "Whether exact original reconciliation algorithm can be rerun from inputs alone or is represented via published result files"
+    ]
+  }
+}

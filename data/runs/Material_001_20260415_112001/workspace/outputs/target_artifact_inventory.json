@@ -1,0 +1,21 @@
+{
+  "primary_quantitative_answers": [
+    "MAE for property prediction",
+    "Sample generated structures",
+    "Optimal synthesis parameters"
+  ],
+  "comparison_tables": ["Prediction: predicted vs true table"],
+  "figure_families": [
+    "data_overview: histograms/scatters of inputs/outputs",
+    "property_prediction: scatter pred vs true, residual plot",
+    "structure_generation: scatter generated vs real params",
+    "optimization: objective vs iterations"
+  ],
+  "interpretability_artifacts": ["Feature importance for prediction", "Optimization trajectory"],
+  "status": {
+    "property_prediction_plots": "[ ]",
+    "structure_gen_samples": "[ ]",
+    "opt_trajectory": "[ ]",
+    "report": "[ ]"
+  }
+}

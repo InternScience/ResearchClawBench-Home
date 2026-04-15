@@ -1,0 +1,22 @@
+{
+  "primary_quantitative_answers": {
+    "parameter_constraints": "outputs/parameters.json",
+    "tension_metrics": "outputs/tension_metrics.json (computed from param differences)"
+  },
+  "comparison_tables": [
+    "outputs/model_comparison_table.csv (Ω_m, H₀, σ₈ across models)"
+  ],
+  "figure_families": [
+    "parameter comparison bar/errorbar plots (Ω_m, H₀, σ₈)",
+    "residual plots vs redshift (BAO Δ(D_V/r_d), ΔF_AP; SNe Δμ)",
+    "1D posterior plots for f_EDE, log₁₀ a_c"
+  ],
+  "interpretability_artifacts": [],
+  "subgroup_outputs": ["per-model parameter sets"],
+  "validation_artifacts": ["outputs/claim_recovery_table.md"],
+  "status": {
+    "parameter_constraints": "planned",
+    "residual_plots": "planned",
+    "posteriors": "planned"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {"path": "outputs/best_params.json", "desc": "Identified high-fidelity params"},
+  {"path": "report/images/cs2_overview.png", "desc": "Data overview CS2 V-Q, T"},
+  {"path": "report/images/fit_cs2.png", "desc": "Model fit on CS2 discharge"},
+  {"path": "report/images/nasa_val.png", "desc": "Validation on NASA"},
+  {"path": "report/images/oxford_val.png", "desc": "Dynamic validation Oxford"},
+  {"path": "outputs/train_data.npy", "desc": "LHS sim data for ANN"},
+  {"path": "outputs/ann_model.pkl", "desc": "Trained ANN surrogate"},
+  {"path": "outputs/ga_history.json", "desc": "Optimization history"}
+]

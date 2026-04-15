@@ -1,0 +1,24 @@
+{
+  "task": "Pairwise structural alignment of protein complexes 7xg4 and 6n40 with chain correspondence, superposition vectors/transforms, and TM-score style similarity quantification for efficient complex search context.",
+  "named_method_commitments": [
+    "protein complex structural alignment",
+    "chain correspondence between complexes",
+    "superimposition transform reporting",
+    "TM-score used to quantify similarity",
+    "comparison framed against Foldseek-Multimer related work"
+  ],
+  "related_work_updates": [
+    "Foldseek paper emphasizes TM-score-based ranking and speed-sensitive structural search.",
+    "US-align paper defines oligomer alignment as joint chain-level and residue-level matching with RMSD/TM-score/coverage outputs.",
+    "TM-align paper provides the canonical TM-score formula and motivation."
+  ],
+  "primary_outputs": [
+    "chain mapping",
+    "rigid-body transform / superposition parameters",
+    "similarity score table including TM-like metrics and RMSD/coverage",
+    "residue-level aligned correspondence for the selected mapping",
+    "validation/comparison figures",
+    "research report"
+  ],
+  "status": "refined_from_related_work"
+}

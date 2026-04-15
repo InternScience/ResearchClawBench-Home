@@ -1,0 +1,250 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "generate_figures.py",
+    "path": "code/generate_figures.py",
+    "type": "file",
+    "size": 10894,
+    "mtime": 1776254196.0,
+    "exported": true
+  },
+  {
+    "name": "vos_framework.py",
+    "path": "code/vos_framework.py",
+    "type": "file",
+    "size": 21448,
+    "mtime": 1776254196.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "complex_optimization_data.npy",
+    "path": "data/complex_optimization_data.npy",
+    "type": "file",
+    "size": 16024503,
+    "mtime": 1770604412.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "admm_history.npy",
+    "path": "outputs/admm_history.npy",
+    "type": "file",
+    "size": 21960,
+    "mtime": 1776254192.0,
+    "exported": false
+  },
+  {
+    "name": "convergence_results.json",
+    "path": "outputs/convergence_results.json",
+    "type": "file",
+    "size": 1113,
+    "mtime": 1776254192.0,
+    "exported": true
+  },
+  {
+    "name": "fista_history.npy",
+    "path": "outputs/fista_history.npy",
+    "type": "file",
+    "size": 3758,
+    "mtime": 1776254192.0,
+    "exported": false
+  },
+  {
+    "name": "fista_restart_history.npy",
+    "path": "outputs/fista_restart_history.npy",
+    "type": "file",
+    "size": 1273,
+    "mtime": 1776254192.0,
+    "exported": false
+  },
+  {
+    "name": "gd_history.npy",
+    "path": "outputs/gd_history.npy",
+    "type": "file",
+    "size": 2624,
+    "mtime": 1776254192.0,
+    "exported": false
+  },
+  {
+    "name": "lyapunov_analysis.json",
+    "path": "outputs/lyapunov_analysis.json",
+    "type": "file",
+    "size": 19240,
+    "mtime": 1776254192.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1743,
+    "mtime": 1776254192.0,
+    "exported": true
+  },
+  {
+    "name": "vos_noderiv_history.npy",
+    "path": "outputs/vos_noderiv_history.npy",
+    "type": "file",
+    "size": 3758,
+    "mtime": 1776254192.0,
+    "exported": false
+  },
+  {
+    "name": "vos_ode_history.npy",
+    "path": "outputs/vos_ode_history.npy",
+    "type": "file",
+    "size": 54321,
+    "mtime": 1776254192.0,
+    "exported": false
+  },
+  {
+    "name": "vos_ode_restart_history.npy",
+    "path": "outputs/vos_ode_restart_history.npy",
+    "type": "file",
+    "size": 54321,
+    "mtime": 1776254192.0,
+    "exported": false
+  },
+  {
+    "name": "\u2026 3 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 656705,
+    "mtime": 1773914906.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1161056,
+    "mtime": 1773914906.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 794236,
+    "mtime": 1773914906.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 883291,
+    "mtime": 1773914906.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "convergence_comparison.png",
+    "path": "report/images/convergence_comparison.png",
+    "type": "file",
+    "size": 260244,
+    "mtime": 1776254194.0,
+    "exported": true
+  },
+  {
+    "name": "damping_phase_transition.png",
+    "path": "report/images/damping_phase_transition.png",
+    "type": "file",
+    "size": 84235,
+    "mtime": 1776254194.0,
+    "exported": true
+  },
+  {
+    "name": "lyapunov_decay.png",
+    "path": "report/images/lyapunov_decay.png",
+    "type": "file",
+    "size": 227061,
+    "mtime": 1776254194.0,
+    "exported": true
+  },
+  {
+    "name": "method_comparison_table.png",
+    "path": "report/images/method_comparison_table.png",
+    "type": "file",
+    "size": 119854,
+    "mtime": 1776254194.0,
+    "exported": true
+  },
+  {
+    "name": "objective_decay_early.png",
+    "path": "report/images/objective_decay_early.png",
+    "type": "file",
+    "size": 152445,
+    "mtime": 1776254194.0,
+    "exported": true
+  },
+  {
+    "name": "rate_verification.png",
+    "path": "report/images/rate_verification.png",
+    "type": "file",
+    "size": 161218,
+    "mtime": 1776254194.0,
+    "exported": true
+  },
+  {
+    "name": "sparsity_pattern.png",
+    "path": "report/images/sparsity_pattern.png",
+    "type": "file",
+    "size": 108680,
+    "mtime": 1776254194.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 17708,
+    "mtime": 1776254197.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5003,
+    "mtime": 1776230024.0,
+    "exported": true
+  }
+]

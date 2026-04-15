@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    {"name": "dataset_summary", "status": "satisfied", "path": "outputs/dataset_summary.csv"},
+    {"name": "dependency_check", "status": "satisfied", "path": "outputs/dependency_check.json"},
+    {"name": "baseline_results_table", "status": "satisfied", "path": "outputs/summary_by_dataset_method.csv"},
+    {"name": "hybrid_results_table", "status": "satisfied", "path": "outputs/summary_by_dataset_method.csv"},
+    {"name": "per_dataset_comparison", "status": "satisfied", "path": "outputs/claim_recovery_table.json"},
+    {"name": "runtime_quality_tradeoff_figure", "status": "satisfied", "path": "report/images/runtime_quality_tradeoff.png"},
+    {"name": "success_rate_figure", "status": "satisfied", "path": "report/images/success_rate_by_dataset.png"},
+    {"name": "claim_recovery_table", "status": "satisfied", "path": "outputs/claim_recovery_table.json"},
+    {"name": "final_report", "status": "satisfied", "path": "report/report.md"}
+  ]
+}

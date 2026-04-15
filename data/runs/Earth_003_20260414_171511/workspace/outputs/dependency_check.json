@@ -1,0 +1,18 @@
+{
+  "python_packages": {
+    "xarray": false,
+    "netCDF4": false,
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "cartopy": false,
+    "scipy": true
+  },
+  "status": "partial",
+  "notes": [
+    "Core numerical and plotting stack is available.",
+    "xarray/netCDF4 are initially unavailable and may need installation for convenient NetCDF inspection.",
+    "cartopy unavailable; fallback plotting without coastlines may be needed unless installed later."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "n_energy_entities": 12,
+  "energy_entities": [
+    "BN001",
+    "BN002",
+    "BN003",
+    "BN004",
+    "BN005",
+    "BN006",
+    "BN007",
+    "BN008",
+    "BN009",
+    "BN010",
+    "CN01",
+    "Total"
+  ],
+  "energy_rows_total": 105120,
+  "weather_rows_total": 8760,
+  "expected_energy_rows": 105120,
+  "time_coverage": {
+    "energy_start": "2014-01-01T00:00:00",
+    "energy_end": "2014-12-31T23:00:00",
+    "weather_start": "2014-01-01T00:00:00",
+    "weather_end": "2014-12-31T23:00:00"
+  },
+  "energy_variables": [
+    "Electricity [kW]",
+    "Heat [mmBTU]",
+    "Cooling Energy [Ton]",
+    "PV Power Generation [kW]",
+    "Greenhouse Gas Emission [Ton]"
+  ],
+  "weather_variables": [
+    "Temperature [\u00b0F]",
+    "Dew Point [\u00b0F]",
+    "Humidity [%]",
+    "Wind Speed [mph]",
+    "Wind Gust [mph]",
+    "Pressure [in]",
+    "Precipitation [in]"
+  ]
+}

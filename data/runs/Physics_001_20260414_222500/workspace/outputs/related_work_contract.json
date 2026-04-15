@@ -1,0 +1,33 @@
+{
+  "key_extractions": [
+    {
+      "paper": "paper_000.pdf",
+      "title": "Unconventional superconductivity in magic-angle graphene superlattices",
+      "relevance": "Introduces MATBG superconductivity at low density, T_c=1.7K, dome phase diagram, small Fermi surface.",
+      "artifacts": ["phase diagram dome", "quantum oscillations"],
+      "methods": ["electrical tunability of flat bands"]
+    },
+    {
+      "paper": "paper_001.pdf",
+      "title": "Topology-Bounded Superfluid Weight in Twisted Bilayer Graphene",
+      "relevance": "Superfluid weight D_s = integral Fubini-Study metric, lower bounded by C_{2z}T Wilson loop winding. Topology enhances D_s despite flat bands.",
+      "artifacts": ["superfluid stiffness bounds", "BKT transition T_c estimation"],
+      "methods": ["uniform s-wave pairing on flat bands"]
+    },
+    {
+      "paper": "paper_002.pdf",
+      "title": "Evidence for unconventional superconductivity in twisted bilayer graphene",
+      "relevance": "STM: V-shaped gap, anisotropic nodal pairing, pseudogap precursor, 2Delta/kT_c ~25 tunneling vs ~6 Andreev, absent in aligned hBN.",
+      "artifacts": ["tunneling spectra", "pseudogap phase"],
+      "methods": ["DT-STS", "DT-PCS", "Andreev reflection"]
+    },
+    {
+      "paper": "paper_003.pdf",
+      "title": "Mapping the twist-angle disorder and Landau levels in magic-angle graphene",
+      "relevance": "Twist angle disorder affects correlated states, gradients induce in-plane E fields.",
+      "artifacts": ["theta(r) maps", "Landau level tomography"],
+      "methods": ["SQUID-on-tip microscopy"]
+    }
+  ],
+  "updates_to_contract": ["Emphasize topological enhancement of D_s", "Nodal/anisotropic pairing signatures (V-gap, power-law)", "Pseudogap precursor", "Role of C2T symmetry and disorder"]
+}

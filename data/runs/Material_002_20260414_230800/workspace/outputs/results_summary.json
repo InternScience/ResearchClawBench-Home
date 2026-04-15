@@ -1,0 +1,39 @@
+{
+  "experiment_1_water_rdf": {
+    "first_peak_position_A": 2.82,
+    "first_peak_height": 3.447138945926566,
+    "experimental_first_peak_position_A": 2.8,
+    "experimental_first_peak_height": 3.4846203980682557,
+    "peak_position_error_A": 0.020000000000000018,
+    "peak_height_error": 0.037481452141689964
+  },
+  "experiment_2_adsorption_scaling": {
+    "dft_R_squared": 0.955414012738853,
+    "mace_R_squared": 0.9315781073990843,
+    "dft_slope": 0.5769230769230769,
+    "mace_slope": 0.5635556309897264,
+    "mae_eV": 0.1242941060846559
+  },
+  "experiment_3_reaction_barriers": {
+    "dft_barriers_eV": {
+      "Rxn 1 (cyclobutene ring-opening)": 1.72,
+      "Rxn 11 (methoxy decomposition)": 1.74,
+      "Rxn 20 (cyclopropane ring-opening)": 1.77
+    },
+    "mace_barriers_eV": {
+      "Rxn 1 (cyclobutene ring-opening)": 1.6665497199617625,
+      "Rxn 11 (methoxy decomposition)": 1.7001432380879122,
+      "Rxn 20 (cyclopropane ring-opening)": 1.819486065622035
+    },
+    "mae_eV": 0.0475977025241201,
+    "max_error_eV": 0.053450280038237485
+  },
+  "model_info": {
+    "name": "MACE-MP-0",
+    "training_data": "MPtrj (~1.5M structures)",
+    "elements_covered": 89,
+    "architecture": "Higher-order equivariant message passing",
+    "message_passing_layers": 2,
+    "body_order": 4
+  }
+}

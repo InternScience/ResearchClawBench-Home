@@ -1,0 +1,17 @@
+{
+  \"commitments\": [
+    \"Reproduce Table 1 performance benchmarks from performance_summary.csv: alignment time and file size across 4 chemistries and 4 tools (Uncalled4, f5c, Nanopolish, Tombo).\", 
+    \"m6A modification detection performance: precision-recall and ROC curves using m6Anet probabilities from Uncalled4 and Nanopolish vs ground truth labels.\", 
+    \"Pore model analysis: substitution profiles and base-position effects using k-mer current statistics.\"
+  ],
+  \"named_methods\": [
+    \"m6Anet prediction probabilities\", 
+    \"Precision-Recall curves\", 
+    \"ROC analysis\"
+  ],
+  \"figures\": [
+    \"Performance bar charts\", 
+    \"PR/ROC curves\", 
+    \"Pore model heatmaps/position effects\"
+  ]
+}

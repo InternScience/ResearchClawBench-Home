@@ -1,0 +1,52 @@
+{
+  "full_features": {
+    "n_features": 241,
+    "age_correlation": 0.10742934206723298,
+    "silhouette_phase": -0.06540031731128693,
+    "batch_mixing": 0.6834856507581508
+  },
+  "optimal_features": {
+    "n_features": 30,
+    "features": [
+      "Int_Med_cycA_nuc",
+      "Int_Intg_DNA_nuc",
+      "Int_Med_cycB1_ring",
+      "Int_Med_cycB1_cyto",
+      "AreaShape_Area_nuc",
+      "Int_Med_cycB1_cell",
+      "Int_Med_Skp2_nuc",
+      "Int_Med_pH2AX_nuc",
+      "Int_Med_CDK2_nuc",
+      "Int_Med_Cdt1_nuc",
+      "Int_Std_PCNA_nuc",
+      "Int_Med_E2F1_nuc",
+      "Int_Med_p27_nuc",
+      "Int_Med_pp21_nuc",
+      "Int_Med_p21_nuc",
+      "Int_Med_cycB1_nuc",
+      "Int_Med_pRB_nuc",
+      "Int_Med_cycD1_nuc",
+      "Int_Med_Cdh1_nuc",
+      "Int_Med_cycA_cyto",
+      "Int_Med_cycA_ring",
+      "Int_Med_cycA_cell",
+      "Int_MeanEdge_cycB1_cell",
+      "Int_Med_pp53_nuc",
+      "Int_Med_pCHK1_nuc",
+      "Int_MeanEdge_cJun_cell",
+      "Int_Med_p53_nuc",
+      "Int_Med_cycE_nuc",
+      "Int_Med_DNA_cell",
+      "Int_Med_p16_nuc"
+    ],
+    "age_correlation": 0.7363243982823156,
+    "silhouette_phase": 0.2503497898578644,
+    "batch_mixing": 0.8515881208723614
+  },
+  "random_features": {
+    "n_features": 30,
+    "age_correlation": -0.06641167653239959,
+    "silhouette_phase": -0.04358788579702377,
+    "batch_mixing": 0.6544155253327302
+  }
+}

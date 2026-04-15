@@ -1,0 +1,14 @@
+{
+  "python_packages": {
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "sklearn": true
+  },
+  "pdf_parser": {
+    "ReadPDF_success": false,
+    "limitation": "Built-in PDF parser returned NoneType errors for local related_work PDFs. Fallback to local text extraction with pdftotext/pdfinfo if available."
+  }
+}

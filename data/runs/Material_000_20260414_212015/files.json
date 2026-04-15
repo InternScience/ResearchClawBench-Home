@@ -1,0 +1,228 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "train_altermagnet_search.py",
+    "path": "code/train_altermagnet_search.py",
+    "type": "file",
+    "size": 12392,
+    "mtime": 1776173539.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_data.pt",
+    "path": "data/candidate_data.pt",
+    "type": "file",
+    "size": 2451457,
+    "mtime": 1772431610.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "finetune_data.pt",
+    "path": "data/finetune_data.pt",
+    "type": "file",
+    "size": 4904635,
+    "mtime": 1772431608.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "pretrain_data.pt",
+    "path": "data/pretrain_data.pt",
+    "type": "file",
+    "size": 12321899,
+    "mtime": 1772431606.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_eval.json",
+    "path": "outputs/candidate_eval.json",
+    "type": "file",
+    "size": 451,
+    "mtime": 1776173561.0,
+    "exported": true
+  },
+  {
+    "name": "candidate_predictions.csv",
+    "path": "outputs/candidate_predictions.csv",
+    "type": "file",
+    "size": 27109,
+    "mtime": 1776173561.0,
+    "exported": true
+  },
+  {
+    "name": "claim_recovery_table.json",
+    "path": "outputs/claim_recovery_table.json",
+    "type": "file",
+    "size": 719,
+    "mtime": 1776173561.0,
+    "exported": true
+  },
+  {
+    "name": "dataset_summary.json",
+    "path": "outputs/dataset_summary.json",
+    "type": "file",
+    "size": 774,
+    "mtime": 1776173307.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 424,
+    "mtime": 1776172914.0,
+    "exported": true
+  },
+  {
+    "name": "feature_importance.csv",
+    "path": "outputs/feature_importance.csv",
+    "type": "file",
+    "size": 3505,
+    "mtime": 1776173561.0,
+    "exported": true
+  },
+  {
+    "name": "finetune_oof_predictions.csv",
+    "path": "outputs/finetune_oof_predictions.csv",
+    "type": "file",
+    "size": 42548,
+    "mtime": 1776173561.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1130,
+    "mtime": 1776172879.0,
+    "exported": true
+  },
+  {
+    "name": "related_work_contract.json",
+    "path": "outputs/related_work_contract.json",
+    "type": "file",
+    "size": 1819,
+    "mtime": 1776173276.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 1114,
+    "mtime": 1776173726.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 1 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4055967,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8225125,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1212404,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2144524,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_ranking.png",
+    "path": "report/images/candidate_ranking.png",
+    "type": "file",
+    "size": 135872,
+    "mtime": 1776173561.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 86799,
+    "mtime": 1776173560.0,
+    "exported": true
+  },
+  {
+    "name": "model_performance.png",
+    "path": "report/images/model_performance.png",
+    "type": "file",
+    "size": 126354,
+    "mtime": 1776173561.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 11998,
+    "mtime": 1776173882.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6080,
+    "mtime": 1776172815.0,
+    "exported": true
+  }
+]

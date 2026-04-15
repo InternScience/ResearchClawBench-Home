@@ -1,0 +1,6862 @@
+{
+  "translated_imo_2000_p1": {
+    "proven": false,
+    "target": "cong e p e q",
+    "initial_facts": 33,
+    "derived_facts": 10,
+    "total_facts": 43,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "eqangle g2 b g1 a b a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp g2 b b a",
+          "perp g1 a a b"
+        ]
+      },
+      {
+        "fact": "eqangle g1 a g2 b a b b a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp g1 a a b",
+          "perp g2 b b a"
+        ]
+      },
+      {
+        "fact": "eqangle g1 c c a c a g1 a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g1 c g1 a"
+        ]
+      },
+      {
+        "fact": "eqangle g2 m m b m b g2 b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g2 m g2 b"
+        ]
+      },
+      {
+        "fact": "eqangle g2 n n b n b g2 b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g2 n g2 b"
+        ]
+      },
+      {
+        "fact": "eqangle g1 n n a n a g1 a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g1 n g1 a"
+        ]
+      },
+      {
+        "fact": "eqangle g1 m m a m a g1 a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g1 m g1 a"
+        ]
+      },
+      {
+        "fact": "eqangle g2 d d b d b g2 b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g2 d g2 b"
+        ]
+      },
+      {
+        "fact": "eqangle g2 b g2 b b a b a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle g2 b g1 a b a a b",
+          "eqangle g1 a g2 b a b b a"
+        ]
+      },
+      {
+        "fact": "eqangle g1 a g1 a a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle g1 a g2 b a b b a",
+          "eqangle g2 b g1 a b a a b"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll e a c",
+      "coll e b d",
+      "coll p a n",
+      "coll p c d",
+      "coll q b n",
+      "coll q c d",
+      "cong g1 c g1 a",
+      "cong g1 m g1 a",
+      "cong g1 n g1 a",
+      "cong g2 d g2 b",
+      "cong g2 m g2 b",
+      "cong g2 n g2 b",
+      "eqangle g1 a g1 a a b a b",
+      "eqangle g1 a g2 b a b b a",
+      "eqangle g1 c c a c a g1 a",
+      "eqangle g1 m m a m a g1 a",
+      "eqangle g1 n n a n a g1 a",
+      "eqangle g2 b g1 a b a a b",
+      "eqangle g2 b g2 b b a b a",
+      "eqangle g2 d d b d b g2 b",
+      "eqangle g2 m m b m b g2 b",
+      "eqangle g2 n n b n b g2 b",
+      "on_circle c g1 a",
+      "on_circle d g2 b",
+      "on_circle m g1 a",
+      "on_circle m g2 b",
+      "on_circle n g1 a",
+      "on_circle n g2 b",
+      "on_line e a c",
+      "on_line e b d",
+      "on_line p a n",
+      "on_line p c d",
+      "on_line q b n",
+      "on_line q c d",
+      "on_pline c m a b",
+      "on_pline d m a b",
+      "on_tline g1 a a b",
+      "on_tline g2 b b a",
+      "para c m a b",
+      "para d m a b",
+      "perp g1 a a b",
+      "perp g2 b b a",
+      "segment a b"
+    ],
+    "point_set": [
+      "g2",
+      "c",
+      "d",
+      "e",
+      "m",
+      "p",
+      "q",
+      "n",
+      "b",
+      "a",
+      "g1"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 6,
+      "related_to_target": 0,
+      "total_facts": 43
+    }
+  },
+  "translated_imo_2000_p6": {
+    "proven": false,
+    "target": "cong i z i t1",
+    "initial_facts": 43,
+    "derived_facts": 179,
+    "total_facts": 222,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "eqangle h a h3 c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h a t2 t3 b c h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle h a i t3 b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp i t3 a b"
+        ]
+      },
+      {
+        "fact": "eqangle h a t1 t2 b c h2 x2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp t1 t2 h2 x2"
+        ]
+      },
+      {
+        "fact": "eqangle h a i t2 b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp i t2 c a"
+        ]
+      },
+      {
+        "fact": "eqangle h a h c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h a i t1 b c b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp i t1 b c"
+        ]
+      },
+      {
+        "fact": "eqangle h a h2 b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h a t1 t2 b c h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle h a h1 a b c b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h a t2 t3 b c h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle h a h b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c h a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c t2 t3 a b h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c i t3 a b a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp i t3 a b"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c t1 t2 a b h2 x2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp t1 t2 h2 x2"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c i t2 a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp i t2 c a"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c h c a b a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c i t1 a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp i t1 b c"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c h2 b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c t1 t2 a b h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c h1 a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c t2 t3 a b h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle h3 c h b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h3 c a b",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 h a h2 y2 b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 h3 c h2 y2 a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 i t3 h2 y2 a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp i t3 a b"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 t1 t2 h2 y2 h2 x2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp t1 t2 h2 x2"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 i t2 h2 y2 c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp i t2 c a"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 h c h2 y2 a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 i t1 h2 y2 b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp i t1 b c"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 h2 b h2 y2 c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 t1 t2 h2 y2 h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 h1 a h2 y2 b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 t2 t3 h2 y2 h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle t2 t3 h b h2 y2 c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t2 t3 h2 y2",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 h a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 h3 c a b a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 t2 t3 a b h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 t1 t2 a b h2 x2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp t1 t2 h2 x2"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 i t2 a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp i t2 c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 h c a b a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 i t1 a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp i t1 b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 h2 b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 t1 t2 a b h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 h1 a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 t2 t3 a b h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle i t3 h b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t3 a b",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 h a h2 x2 b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 h3 c h2 x2 a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 t2 t3 h2 x2 h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 i t3 h2 x2 a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp i t3 a b"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 i t2 h2 x2 c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp i t2 c a"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 h c h2 x2 a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 i t1 h2 x2 b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp i t1 b c"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 h2 b h2 x2 c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 t1 t2 h2 x2 h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 h1 a h2 x2 b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 t2 t3 h2 x2 h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle t1 t2 h b h2 x2 c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t1 t2 h2 x2",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 h a c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 h3 c c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 t2 t3 c a h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 i t3 c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp i t3 a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 t1 t2 c a h2 x2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp t1 t2 h2 x2"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 h c c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 i t1 c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp i t1 b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 h2 b c a c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 t1 t2 c a h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 h1 a c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 t2 t3 c a h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle i t2 h b c a c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t2 c a",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h c h a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h3 c a b a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h c t2 t3 a b h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle h c i t3 a b a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp i t3 a b"
+        ]
+      },
+      {
+        "fact": "eqangle h c t1 t2 a b h2 x2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp t1 t2 h2 x2"
+        ]
+      },
+      {
+        "fact": "eqangle h c i t2 a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp i t2 c a"
+        ]
+      },
+      {
+        "fact": "eqangle h c i t1 a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp i t1 b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h2 b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h c t1 t2 a b h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle h c h1 a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c t2 t3 a b h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle h c h b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 h a b c b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 h3 c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 t2 t3 b c h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 i t3 b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp i t3 a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 t1 t2 b c h2 x2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp t1 t2 h2 x2"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 i t2 b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp i t2 c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 h c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 h2 b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp h2 b c a"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 t1 t2 b c h1 x1",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp t1 t2 h1 x1"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 h1 a b c b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp h1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 t2 t3 b c h3 y3",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp t2 t3 h3 y3"
+        ]
+      },
+      {
+        "fact": "eqangle i t1 h b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i t1 b c",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h2 b h a c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h2 b c a",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h2 b h3 c c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h2 b c a",
+          "perp h3 c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h2 b t2 t3 c a h2 y2",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h2 b c a",
+          "perp t2 t3 h2 y2"
+        ]
+      },
+      {
+        "fact": "eqangle h2 b i t3 c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h2 b c a",
+          "perp i t3 a b"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll h1 b c",
+      "coll h2 c a",
+      "coll h3 a b",
+      "coll z x1 x2",
+      "coll z y2 y3",
+      "cong i t1 i t2",
+      "cong i t2 i t3",
+      "cong t1 h1 t1 x1",
+      "cong t1 h2 t1 x2",
+      "cong t2 h1 t2 x1",
+      "cong t2 h2 t2 x2",
+      "cong t2 h2 t2 y2",
+      "cong t2 h3 t2 y3",
+      "cong t3 h2 t3 y2",
+      "cong t3 h3 t3 y3",
+      "eqangle a b a i a i a c",
+      "eqangle b c b i b i b a",
+      "eqangle c a c i c i c b",
+      "eqangle h a h a b c b c",
+      "eqangle h a h b b c c a",
+      "eqangle h a h c b c a b",
+      "eqangle h a h1 a b c b c",
+      "eqangle h a h2 b b c c a",
+      "eqangle h a h3 c b c a b",
+      "eqangle h a i t1 b c b c",
+      "eqangle h a i t2 b c c a",
+      "eqangle h a i t3 b c a b",
+      "eqangle h a t1 t2 b c h1 x1",
+      "eqangle h a t1 t2 b c h2 x2",
+      "eqangle h a t2 t3 b c h2 y2",
+      "eqangle h a t2 t3 b c h3 y3",
+      "eqangle h b h a c a b c",
+      "eqangle h b h b c a c a",
+      "eqangle h b h c c a a b",
+      "eqangle h b h1 a c a b c",
+      "eqangle h b h2 b c a c a",
+      "eqangle h b h3 c c a a b",
+      "eqangle h b i t1 c a b c",
+      "eqangle h b i t2 c a c a",
+      "eqangle h b i t3 c a a b",
+      "eqangle h b t1 t2 c a h1 x1",
+      "eqangle h b t1 t2 c a h2 x2",
+      "eqangle h b t2 t3 c a h2 y2",
+      "eqangle h b t2 t3 c a h3 y3",
+      "eqangle h c h a a b b c",
+      "eqangle h c h b a b c a",
+      "eqangle h c h c a b a b",
+      "eqangle h c h1 a a b b c",
+      "eqangle h c h2 b a b c a",
+      "eqangle h c h3 c a b a b",
+      "eqangle h c i t1 a b b c",
+      "eqangle h c i t2 a b c a",
+      "eqangle h c i t3 a b a b",
+      "eqangle h c t1 t2 a b h1 x1",
+      "eqangle h c t1 t2 a b h2 x2",
+      "eqangle h c t2 t3 a b h2 y2",
+      "eqangle h c t2 t3 a b h3 y3",
+      "eqangle h1 a h a b c b c",
+      "eqangle h1 a h b b c c a",
+      "eqangle h1 a h c b c a b",
+      "eqangle h1 a h1 a b c b c",
+      "eqangle h1 a h2 b b c c a",
+      "eqangle h1 a h3 c b c a b",
+      "eqangle h1 a i t1 b c b c",
+      "eqangle h1 a i t2 b c c a",
+      "eqangle h1 a i t3 b c a b",
+      "eqangle h1 a t1 t2 b c h1 x1",
+      "eqangle h1 a t1 t2 b c h2 x2",
+      "eqangle h1 a t2 t3 b c h2 y2",
+      "eqangle h1 a t2 t3 b c h3 y3",
+      "eqangle h2 b h a c a b c",
+      "eqangle h2 b h b c a c a",
+      "eqangle h2 b h c c a a b",
+      "eqangle h2 b h1 a c a b c",
+      "eqangle h2 b h2 b c a c a",
+      "eqangle h2 b h3 c c a a b",
+      "eqangle h2 b i t1 c a b c",
+      "eqangle h2 b i t2 c a c a",
+      "eqangle h2 b i t3 c a a b",
+      "eqangle h2 b t1 t2 c a h1 x1",
+      "eqangle h2 b t1 t2 c a h2 x2",
+      "eqangle h2 b t2 t3 c a h2 y2",
+      "eqangle h2 b t2 t3 c a h3 y3",
+      "eqangle h3 c h a a b b c",
+      "eqangle h3 c h b a b c a",
+      "eqangle h3 c h c a b a b",
+      "eqangle h3 c h1 a a b b c",
+      "eqangle h3 c h2 b a b c a",
+      "eqangle h3 c h3 c a b a b",
+      "eqangle h3 c i t1 a b b c",
+      "eqangle h3 c i t2 a b c a",
+      "eqangle h3 c i t3 a b a b",
+      "eqangle h3 c t1 t2 a b h1 x1",
+      "eqangle h3 c t1 t2 a b h2 x2",
+      "eqangle h3 c t2 t3 a b h2 y2",
+      "eqangle h3 c t2 t3 a b h3 y3",
+      "eqangle i t1 h a b c b c",
+      "eqangle i t1 h b b c c a",
+      "eqangle i t1 h c b c a b",
+      "eqangle i t1 h1 a b c b c",
+      "eqangle i t1 h2 b b c c a",
+      "eqangle i t1 h3 c b c a b",
+      "eqangle i t1 i t1 b c b c",
+      "eqangle i t1 i t2 b c c a",
+      "eqangle i t1 i t3 b c a b",
+      "eqangle i t1 t1 t2 b c h1 x1",
+      "eqangle i t1 t1 t2 b c h2 x2",
+      "eqangle i t1 t1 t2 t1 t2 i t2",
+      "eqangle i t1 t2 t3 b c h2 y2",
+      "eqangle i t1 t2 t3 b c h3 y3",
+      "eqangle i t2 h a c a b c",
+      "eqangle i t2 h b c a c a",
+      "eqangle i t2 h c c a a b",
+      "eqangle i t2 h1 a c a b c",
+      "eqangle i t2 h2 b c a c a",
+      "eqangle i t2 h3 c c a a b",
+      "eqangle i t2 i t1 c a b c",
+      "eqangle i t2 i t2 c a c a",
+      "eqangle i t2 i t3 c a a b",
+      "eqangle i t2 t1 t2 c a h1 x1",
+      "eqangle i t2 t1 t2 c a h2 x2",
+      "eqangle i t2 t2 t3 c a h2 y2",
+      "eqangle i t2 t2 t3 c a h3 y3",
+      "eqangle i t2 t2 t3 t2 t3 i t3",
+      "eqangle i t3 h a a b b c",
+      "eqangle i t3 h b a b c a",
+      "eqangle i t3 h c a b a b",
+      "eqangle i t3 h1 a a b b c",
+      "eqangle i t3 h2 b a b c a",
+      "eqangle i t3 h3 c a b a b",
+      "eqangle i t3 i t1 a b b c",
+      "eqangle i t3 i t2 a b c a",
+      "eqangle i t3 i t3 a b a b",
+      "eqangle i t3 t1 t2 a b h1 x1",
+      "eqangle i t3 t1 t2 a b h2 x2",
+      "eqangle i t3 t2 t3 a b h2 y2",
+      "eqangle i t3 t2 t3 a b h3 y3",
+      "eqangle t1 h1 h1 x1 h1 x1 t1 x1",
+      "eqangle t1 h2 h2 x2 h2 x2 t1 x2",
+      "eqangle t1 t2 h a h1 x1 b c",
+      "eqangle t1 t2 h a h2 x2 b c",
+      "eqangle t1 t2 h b h1 x1 c a",
+      "eqangle t1 t2 h b h2 x2 c a",
+      "eqangle t1 t2 h c h1 x1 a b",
+      "eqangle t1 t2 h c h2 x2 a b",
+      "eqangle t1 t2 h1 a h1 x1 b c",
+      "eqangle t1 t2 h1 a h2 x2 b c",
+      "eqangle t1 t2 h2 b h1 x1 c a",
+      "eqangle t1 t2 h2 b h2 x2 c a",
+      "eqangle t1 t2 h3 c h1 x1 a b",
+      "eqangle t1 t2 h3 c h2 x2 a b",
+      "eqangle t1 t2 i t1 h1 x1 b c",
+      "eqangle t1 t2 i t1 h2 x2 b c",
+      "eqangle t1 t2 i t2 h1 x1 c a",
+      "eqangle t1 t2 i t2 h2 x2 c a",
+      "eqangle t1 t2 i t3 h1 x1 a b",
+      "eqangle t1 t2 i t3 h2 x2 a b",
+      "eqangle t1 t2 t1 t2 h1 x1 h1 x1",
+      "eqangle t1 t2 t1 t2 h1 x1 h2 x2",
+      "eqangle t1 t2 t1 t2 h2 x2 h1 x1",
+      "eqangle t1 t2 t1 t2 h2 x2 h2 x2",
+      "eqangle t1 t2 t2 t3 h1 x1 h2 y2",
+      "eqangle t1 t2 t2 t3 h1 x1 h3 y3",
+      "eqangle t1 t2 t2 t3 h2 x2 h2 y2",
+      "eqangle t1 t2 t2 t3 h2 x2 h3 y3",
+      "eqangle t2 h1 h1 x1 h1 x1 t2 x1",
+      "eqangle t2 h2 h2 x2 h2 x2 t2 x2",
+      "eqangle t2 h2 h2 y2 h2 y2 t2 y2",
+      "eqangle t2 h3 h3 y3 h3 y3 t2 y3",
+      "eqangle t2 t3 h a h2 y2 b c",
+      "eqangle t2 t3 h a h3 y3 b c",
+      "eqangle t2 t3 h b h2 y2 c a",
+      "eqangle t2 t3 h b h3 y3 c a",
+      "eqangle t2 t3 h c h2 y2 a b",
+      "eqangle t2 t3 h c h3 y3 a b",
+      "eqangle t2 t3 h1 a h2 y2 b c",
+      "eqangle t2 t3 h1 a h3 y3 b c",
+      "eqangle t2 t3 h2 b h2 y2 c a",
+      "eqangle t2 t3 h2 b h3 y3 c a",
+      "eqangle t2 t3 h3 c h2 y2 a b",
+      "eqangle t2 t3 h3 c h3 y3 a b",
+      "eqangle t2 t3 i t1 h2 y2 b c",
+      "eqangle t2 t3 i t1 h3 y3 b c",
+      "eqangle t2 t3 i t2 h2 y2 c a",
+      "eqangle t2 t3 i t2 h3 y3 c a",
+      "eqangle t2 t3 i t3 h2 y2 a b",
+      "eqangle t2 t3 i t3 h3 y3 a b",
+      "eqangle t2 t3 t1 t2 h2 y2 h1 x1",
+      "eqangle t2 t3 t1 t2 h2 y2 h2 x2",
+      "eqangle t2 t3 t1 t2 h3 y3 h1 x1",
+      "eqangle t2 t3 t1 t2 h3 y3 h2 x2",
+      "eqangle t2 t3 t2 t3 h2 y2 h2 y2",
+      "eqangle t2 t3 t2 t3 h2 y2 h3 y3",
+      "eqangle t2 t3 t2 t3 h3 y3 h2 y2",
+      "eqangle t2 t3 t2 t3 h3 y3 h3 y3",
+      "eqangle t3 h2 h2 y2 h2 y2 t3 y2",
+      "eqangle t3 h3 h3 y3 h3 y3 t3 y3",
+      "foot h1 a b c",
+      "foot h2 b c a",
+      "foot h3 c a b",
+      "incenter2 t1 t2 t3 i a b c",
+      "on_line z x1 x2",
+      "on_line z y2 y3",
+      "orthocenter h a b c",
+      "perp h a b c",
+      "perp h b c a",
+      "perp h c a b",
+      "perp h1 a b c",
+      "perp h2 b c a",
+      "perp h3 c a b",
+      "perp i t1 b c",
+      "perp i t2 c a",
+      "perp i t3 a b",
+      "perp t1 t2 h1 x1",
+      "perp t1 t2 h2 x2",
+      "perp t2 t3 h2 y2",
+      "perp t2 t3 h3 y3",
+      "reflect x1 h1 t1 t2",
+      "reflect x2 h2 t1 t2",
+      "reflect y2 h2 t2 t3",
+      "reflect y3 h3 t2 t3",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "x2",
+      "c",
+      "t3",
+      "h1",
+      "i",
+      "z",
+      "h3",
+      "y3",
+      "h",
+      "t1",
+      "x1",
+      "y2",
+      "h2",
+      "b",
+      "a",
+      "t2"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 10,
+      "related_to_target": 4,
+      "total_facts": 222
+    }
+  },
+  "translated_imo_2002_p2a": {
+    "proven": false,
+    "target": "eqangle e c e j e j e f",
+    "initial_facts": 25,
+    "derived_facts": 8,
+    "total_facts": 33,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle o e e b e b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o e o b"
+        ]
+      },
+      {
+        "fact": "eqangle d a a b a b d b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d a d b"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o d d b d b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o d o b"
+        ]
+      },
+      {
+        "fact": "eqangle e o o a o a e a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e o e a"
+        ]
+      },
+      {
+        "fact": "eqangle f o o a o a f a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f o f a"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle o f f b f b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o f o b"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll j a c",
+      "coll o b c",
+      "cong d a d b",
+      "cong e o e a",
+      "cong f o f a",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o d o b",
+      "cong o e o b",
+      "cong o f o b",
+      "eqangle a d a b b a b d",
+      "eqangle d a a b a b d b",
+      "eqangle e o o a o a e a",
+      "eqangle f o o a o a f a",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o d d b d b o b",
+      "eqangle o e e b e b o b",
+      "eqangle o e o a a o a e",
+      "eqangle o f f b f b o b",
+      "eqangle o f o a a o a f",
+      "midpoint o b c",
+      "on_bline d a b",
+      "on_bline e o a",
+      "on_bline f o a",
+      "on_circle a o b",
+      "on_circle d o b",
+      "on_circle e o b",
+      "on_circle f o b",
+      "on_line j a c",
+      "on_pline j o a d",
+      "para j o a d",
+      "segment b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "d",
+      "e",
+      "f",
+      "j",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 11,
+      "total_facts": 33
+    }
+  },
+  "translated_imo_2002_p2b": {
+    "proven": false,
+    "target": "eqangle c e c j c j c f",
+    "initial_facts": 25,
+    "derived_facts": 8,
+    "total_facts": 33,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle o e e b e b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o e o b"
+        ]
+      },
+      {
+        "fact": "eqangle d a a b a b d b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d a d b"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o d d b d b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o d o b"
+        ]
+      },
+      {
+        "fact": "eqangle e o o a o a e a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e o e a"
+        ]
+      },
+      {
+        "fact": "eqangle f o o a o a f a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f o f a"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle o f f b f b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o f o b"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll j a c",
+      "coll o b c",
+      "cong d a d b",
+      "cong e o e a",
+      "cong f o f a",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o d o b",
+      "cong o e o b",
+      "cong o f o b",
+      "eqangle a d a b b a b d",
+      "eqangle d a a b a b d b",
+      "eqangle e o o a o a e a",
+      "eqangle f o o a o a f a",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o d d b d b o b",
+      "eqangle o e e b e b o b",
+      "eqangle o e o a a o a e",
+      "eqangle o f f b f b o b",
+      "eqangle o f o a a o a f",
+      "midpoint o b c",
+      "on_bline d a b",
+      "on_bline e o a",
+      "on_bline f o a",
+      "on_circle a o b",
+      "on_circle d o b",
+      "on_circle e o b",
+      "on_circle f o b",
+      "on_line j a c",
+      "on_pline j o a d",
+      "para j o a d",
+      "segment b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "d",
+      "e",
+      "f",
+      "j",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 11,
+      "total_facts": 33
+    }
+  },
+  "translated_imo_2003_p4": {
+    "proven": false,
+    "target": "cong p q q r",
+    "initial_facts": 31,
+    "derived_facts": 22,
+    "total_facts": 53,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic d a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o d o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic b1 a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o b1 o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic d1 a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o d1 o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle r d q d a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp r d a b",
+          "perp q d c a"
+        ]
+      },
+      {
+        "fact": "eqangle r d p d a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp r d a b",
+          "perp p d b c"
+        ]
+      },
+      {
+        "fact": "eqangle q d r d c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q d c a",
+          "perp r d a b"
+        ]
+      },
+      {
+        "fact": "eqangle q d p d c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q d c a",
+          "perp p d b c"
+        ]
+      },
+      {
+        "fact": "eqangle p d r d b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp p d b c",
+          "perp r d a b"
+        ]
+      },
+      {
+        "fact": "eqangle p d q d b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp p d b c",
+          "perp q d c a"
+        ]
+      },
+      {
+        "fact": "eqangle o d d a d a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o d o a"
+        ]
+      },
+      {
+        "fact": "eqangle o b1 b1 a b1 a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b1 o a"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle b1 c c a c a b1 a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b1 c b1 a"
+        ]
+      },
+      {
+        "fact": "eqangle o d1 d1 a d1 a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o d1 o a"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle d1 c c a c a d1 a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d1 c d1 a"
+        ]
+      },
+      {
+        "fact": "eqangle b d b a c d c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic d a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b b1 b a c b1 c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic b1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b d1 b a c d1 c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic d1 a b c"
+        ]
+      },
+      {
+        "fact": "eqangle r d r d a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle r d q d a b c a",
+          "eqangle q d r d c a a b"
+        ]
+      },
+      {
+        "fact": "eqangle q d q d c a c a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle q d r d c a a b",
+          "eqangle r d q d a b c a"
+        ]
+      },
+      {
+        "fact": "eqangle p d p d b c b c",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle p d r d b c a b",
+          "eqangle r d p d a b b c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "coll d d1 x",
+      "coll p b c",
+      "coll q c a",
+      "coll r a b",
+      "coll x a c",
+      "coll x b b1",
+      "cong b1 c b1 a",
+      "cong d1 c d1 a",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o b1 o a",
+      "cong o d o a",
+      "cong o d1 o a",
+      "cyclic b1 a b c",
+      "cyclic d a b c",
+      "cyclic d1 a b c",
+      "eqangle b b1 b a c b1 c a",
+      "eqangle b d b a c d c a",
+      "eqangle b d1 b a c d1 c a",
+      "eqangle b1 c c a c a b1 a",
+      "eqangle c b1 c a a c a b1",
+      "eqangle c d1 c a a c a d1",
+      "eqangle d1 c c a c a d1 a",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o b1 b1 a b1 a o a",
+      "eqangle o d d a d a o a",
+      "eqangle o d1 d1 a d1 a o a",
+      "eqangle p d p d b c b c",
+      "eqangle p d q d b c c a",
+      "eqangle p d r d b c a b",
+      "eqangle q d p d c a b c",
+      "eqangle q d q d c a c a",
+      "eqangle q d r d c a a b",
+      "eqangle r d p d a b b c",
+      "eqangle r d q d a b c a",
+      "eqangle r d r d a b a b",
+      "foot p d b c",
+      "foot q d c a",
+      "foot r d a b",
+      "on_bline b1 c a",
+      "on_bline d1 c a",
+      "on_circle b1 o a",
+      "on_circle d o a",
+      "on_circle d1 o a",
+      "on_line d d1 x",
+      "on_line x a c",
+      "on_line x b b1",
+      "perp p d b c",
+      "perp q d c a",
+      "perp r d a b",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "d1",
+      "x",
+      "d",
+      "r",
+      "b1",
+      "p",
+      "q",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 7,
+      "related_to_target": 0,
+      "total_facts": 53
+    }
+  },
+  "translated_imo_2004_p1": {
+    "proven": false,
+    "target": "coll p b c",
+    "initial_facts": 26,
+    "derived_facts": 9,
+    "total_facts": 35,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle o1 b b m b m o1 m",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 b o1 m"
+        ]
+      },
+      {
+        "fact": "eqangle o2 p p r p r o2 r",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 p o2 r"
+        ]
+      },
+      {
+        "fact": "eqangle o2 n n r n r o2 r",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 n o2 r"
+        ]
+      },
+      {
+        "fact": "eqangle o n n b n b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o n o b"
+        ]
+      },
+      {
+        "fact": "eqangle o m m b m b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o m o b"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle o1 p p r p r o1 r",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 p o1 r"
+        ]
+      },
+      {
+        "fact": "eqangle o1 m m r m r o1 r",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 m o1 r"
+        ]
+      },
+      {
+        "fact": "eqangle o2 c c n c n o2 n",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 c o2 n"
+        ]
+      }
+    ],
+    "all_facts": [
+      "angle_bisector r b a c",
+      "angle_bisector r m o n",
+      "circle o1 b m r",
+      "circle o2 c n r",
+      "coll m a b",
+      "coll n a c",
+      "coll o b c",
+      "cong o b o c",
+      "cong o m o b",
+      "cong o n o b",
+      "cong o1 b o1 m",
+      "cong o1 m o1 r",
+      "cong o1 p o1 r",
+      "cong o2 c o2 n",
+      "cong o2 n o2 r",
+      "cong o2 p o2 r",
+      "eqangle a b a r a r a c",
+      "eqangle o b b c b c o c",
+      "eqangle o m m b m b o b",
+      "eqangle o m o r o r o n",
+      "eqangle o n n b n b o b",
+      "eqangle o1 b b m b m o1 m",
+      "eqangle o1 m m r m r o1 r",
+      "eqangle o1 p p r p r o1 r",
+      "eqangle o2 c c n c n o2 n",
+      "eqangle o2 n n r n r o2 r",
+      "eqangle o2 p p r p r o2 r",
+      "midpoint o b c",
+      "on_circle m o b",
+      "on_circle n o b",
+      "on_circle p o1 r",
+      "on_circle p o2 r",
+      "on_line m a b",
+      "on_line n a c",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "o2",
+      "r",
+      "o1",
+      "m",
+      "p",
+      "b",
+      "a",
+      "n"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 3,
+      "total_facts": 35
+    }
+  },
+  "translated_imo_2004_p5": {
+    "proven": false,
+    "target": "cong a p c p",
+    "initial_facts": 10,
+    "derived_facts": 5,
+    "total_facts": 15,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic d a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o d o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle o d d a d a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o d o a"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle b d b a c d c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic d a b c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o d o a",
+      "cyclic d a b c",
+      "eqangle b d b a c d c a",
+      "eqangle b p b c b a b d",
+      "eqangle d p d c d a d b",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o d d a d a o a",
+      "on_aline p b c a b d",
+      "on_aline p d c a d b",
+      "on_circle d o a",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "d",
+      "p",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 3,
+      "related_to_target": 3,
+      "total_facts": 15
+    }
+  },
+  "translated_imo_2005_p5": {
+    "proven": false,
+    "target": "cyclic p q r m",
+    "initial_facts": 31,
+    "derived_facts": 6,
+    "total_facts": 37,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle o1 p p d p d o1 d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 p o1 d"
+        ]
+      },
+      {
+        "fact": "eqangle o1 a a p a p o1 p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 a o1 p"
+        ]
+      },
+      {
+        "fact": "eqangle o1 m m p m p o1 p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 m o1 p"
+        ]
+      },
+      {
+        "fact": "eqangle o2 p p c p c o2 c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 p o2 c"
+        ]
+      },
+      {
+        "fact": "eqangle o2 b b p b p o2 p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 b o2 p"
+        ]
+      },
+      {
+        "fact": "eqangle o2 m m p m p o2 p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 m o2 p"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o1 a p d",
+      "circle o2 b p c",
+      "coll e b c",
+      "coll f a d",
+      "coll p a c",
+      "coll p b d",
+      "coll q b d",
+      "coll q e f",
+      "coll r a c",
+      "coll r e f",
+      "cong d a b c",
+      "cong f d e b",
+      "cong o1 a o1 p",
+      "cong o1 m o1 p",
+      "cong o1 p o1 d",
+      "cong o2 b o2 p",
+      "cong o2 m o2 p",
+      "cong o2 p o2 c",
+      "eqangle o1 a a p a p o1 p",
+      "eqangle o1 m m p m p o1 p",
+      "eqangle o1 p p d p d o1 d",
+      "eqangle o2 b b p b p o2 p",
+      "eqangle o2 m m p m p o2 p",
+      "eqangle o2 p p c p c o2 c",
+      "eqdistance d a b c",
+      "eqdistance f d e b",
+      "on_circle m o1 p",
+      "on_circle m o2 p",
+      "on_line e b c",
+      "on_line f a d",
+      "on_line p a c",
+      "on_line p b d",
+      "on_line q b d",
+      "on_line q e f",
+      "on_line r a c",
+      "on_line r e f",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "r",
+      "o1",
+      "o2",
+      "m",
+      "p",
+      "q",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "total_facts": 37
+    }
+  },
+  "translated_imo_2007_p4": {
+    "proven": false,
+    "target": "eqratio k k1 l l1 r q r p",
+    "initial_facts": 29,
+    "derived_facts": 12,
+    "total_facts": 41,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic r a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o r o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle l1 l k1 k c r c r",
+        "rule": "rule_8",
+        "supporting": [
+          "perp l1 l c r",
+          "perp k1 k c r"
+        ]
+      },
+      {
+        "fact": "eqangle k1 k l1 l c r c r",
+        "rule": "rule_8",
+        "supporting": [
+          "perp k1 k c r",
+          "perp l1 l c r"
+        ]
+      },
+      {
+        "fact": "eqangle o r r a r a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o r o a"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle l c c a c a l a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong l c l a"
+        ]
+      },
+      {
+        "fact": "eqangle k c c b c b k b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong k c k b"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle r a a b a b r b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong r a r b"
+        ]
+      },
+      {
+        "fact": "eqangle b r b a c r c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic r a b c"
+        ]
+      },
+      {
+        "fact": "eqangle l1 l l1 l c r c r",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle l1 l k1 k c r c r",
+          "eqangle k1 k l1 l c r c r"
+        ]
+      },
+      {
+        "fact": "eqangle k1 k k1 k c r c r",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle k1 k l1 l c r c r",
+          "eqangle l1 l k1 k c r c r"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "coll k c b",
+      "coll k1 c r",
+      "coll l c a",
+      "coll l1 c r",
+      "coll p c r",
+      "coll p o k",
+      "coll q c r",
+      "coll q o l",
+      "cong k c k b",
+      "cong l c l a",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o r o a",
+      "cong r a r b",
+      "cyclic r a b c",
+      "eqangle a r a b b a b r",
+      "eqangle b r b a c r c a",
+      "eqangle k c c b c b k b",
+      "eqangle k1 k k1 k c r c r",
+      "eqangle k1 k l1 l c r c r",
+      "eqangle l c c a c a l a",
+      "eqangle l1 l k1 k c r c r",
+      "eqangle l1 l l1 l c r c r",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o r r a r a o a",
+      "eqangle r a a b a b r b",
+      "foot k1 k c r",
+      "foot l1 l c r",
+      "midpoint k c b",
+      "midpoint l c a",
+      "on_bline r a b",
+      "on_circle r o a",
+      "on_line p c r",
+      "on_line p o k",
+      "on_line q c r",
+      "on_line q o l",
+      "perp k1 k c r",
+      "perp l1 l c r",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "l1",
+      "l",
+      "k1",
+      "r",
+      "p",
+      "q",
+      "b",
+      "k",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "total_facts": 41
+    }
+  },
+  "translated_imo_2008_p1a": {
+    "proven": false,
+    "target": "cyclic c1 c2 b1 b2",
+    "initial_facts": 38,
+    "derived_facts": 18,
+    "total_facts": 56,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "eqangle h a h c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h a h b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h c h a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h b h a c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h b h c c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle d a2 a2 h a2 h d h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d a2 d h"
+        ]
+      },
+      {
+        "fact": "eqangle d a1 a1 h a1 h d h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d a1 d h"
+        ]
+      },
+      {
+        "fact": "eqangle e b1 b1 h b1 h e h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e b1 e h"
+        ]
+      },
+      {
+        "fact": "eqangle f c2 c2 h c2 h f h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f c2 f h"
+        ]
+      },
+      {
+        "fact": "eqangle f a a b a b f b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f a f b"
+        ]
+      },
+      {
+        "fact": "eqangle e a a c a c e c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e a e c"
+        ]
+      },
+      {
+        "fact": "eqangle f c1 c1 h c1 h f h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f c1 f h"
+        ]
+      },
+      {
+        "fact": "eqangle d b b c b c d c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d b d c"
+        ]
+      },
+      {
+        "fact": "eqangle e b2 b2 h b2 h e h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e b2 e h"
+        ]
+      },
+      {
+        "fact": "eqangle h a h a b c b c",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h a h c b c a b",
+          "eqangle h c h a a b b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h c a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h c h a a b b c",
+          "eqangle h a h c b c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h b h b c a c a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h b h a c a b c",
+          "eqangle h a h b b c c a"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll a1 b c",
+      "coll a2 b c",
+      "coll b1 c a",
+      "coll b2 c a",
+      "coll c1 a b",
+      "coll c2 a b",
+      "coll d b c",
+      "coll e a c",
+      "coll f a b",
+      "cong d a1 d h",
+      "cong d a2 d h",
+      "cong d b d c",
+      "cong e a e c",
+      "cong e b1 e h",
+      "cong e b2 e h",
+      "cong f a f b",
+      "cong f c1 f h",
+      "cong f c2 f h",
+      "eqangle d a1 a1 h a1 h d h",
+      "eqangle d a2 a2 h a2 h d h",
+      "eqangle d b b c b c d c",
+      "eqangle e a a c a c e c",
+      "eqangle e b1 b1 h b1 h e h",
+      "eqangle e b2 b2 h b2 h e h",
+      "eqangle f a a b a b f b",
+      "eqangle f c1 c1 h c1 h f h",
+      "eqangle f c2 c2 h c2 h f h",
+      "eqangle h a h a b c b c",
+      "eqangle h a h b b c c a",
+      "eqangle h a h c b c a b",
+      "eqangle h b h a c a b c",
+      "eqangle h b h b c a c a",
+      "eqangle h b h c c a a b",
+      "eqangle h c h a a b b c",
+      "eqangle h c h b a b c a",
+      "eqangle h c h c a b a b",
+      "midpoint d b c",
+      "midpoint e a c",
+      "midpoint f a b",
+      "on_circle a1 d h",
+      "on_circle a2 d h",
+      "on_circle b1 e h",
+      "on_circle b2 e h",
+      "on_circle c1 f h",
+      "on_circle c2 f h",
+      "on_line a1 b c",
+      "on_line a2 b c",
+      "on_line b1 c a",
+      "on_line b2 c a",
+      "on_line c1 a b",
+      "on_line c2 a b",
+      "orthocenter h a b c",
+      "perp h a b c",
+      "perp h b c a",
+      "perp h c a b",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "a1",
+      "c",
+      "d",
+      "e",
+      "f",
+      "b2",
+      "c2",
+      "a2",
+      "h",
+      "b1",
+      "c1",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "total_facts": 56
+    }
+  },
+  "translated_imo_2008_p1b": {
+    "proven": false,
+    "target": "cyclic c1 c2 b1 a1",
+    "initial_facts": 38,
+    "derived_facts": 18,
+    "total_facts": 56,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "eqangle h a h c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h a h b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h c h a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h b h a c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h b h c c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle d a2 a2 h a2 h d h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d a2 d h"
+        ]
+      },
+      {
+        "fact": "eqangle d a1 a1 h a1 h d h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d a1 d h"
+        ]
+      },
+      {
+        "fact": "eqangle e b1 b1 h b1 h e h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e b1 e h"
+        ]
+      },
+      {
+        "fact": "eqangle f c2 c2 h c2 h f h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f c2 f h"
+        ]
+      },
+      {
+        "fact": "eqangle f a a b a b f b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f a f b"
+        ]
+      },
+      {
+        "fact": "eqangle e a a c a c e c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e a e c"
+        ]
+      },
+      {
+        "fact": "eqangle f c1 c1 h c1 h f h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f c1 f h"
+        ]
+      },
+      {
+        "fact": "eqangle d b b c b c d c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d b d c"
+        ]
+      },
+      {
+        "fact": "eqangle e b2 b2 h b2 h e h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e b2 e h"
+        ]
+      },
+      {
+        "fact": "eqangle h a h a b c b c",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h a h c b c a b",
+          "eqangle h c h a a b b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h c a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h c h a a b b c",
+          "eqangle h a h c b c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h b h b c a c a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h b h a c a b c",
+          "eqangle h a h b b c c a"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll a1 b c",
+      "coll a2 b c",
+      "coll b1 c a",
+      "coll b2 c a",
+      "coll c1 a b",
+      "coll c2 a b",
+      "coll d b c",
+      "coll e a c",
+      "coll f a b",
+      "cong d a1 d h",
+      "cong d a2 d h",
+      "cong d b d c",
+      "cong e a e c",
+      "cong e b1 e h",
+      "cong e b2 e h",
+      "cong f a f b",
+      "cong f c1 f h",
+      "cong f c2 f h",
+      "eqangle d a1 a1 h a1 h d h",
+      "eqangle d a2 a2 h a2 h d h",
+      "eqangle d b b c b c d c",
+      "eqangle e a a c a c e c",
+      "eqangle e b1 b1 h b1 h e h",
+      "eqangle e b2 b2 h b2 h e h",
+      "eqangle f a a b a b f b",
+      "eqangle f c1 c1 h c1 h f h",
+      "eqangle f c2 c2 h c2 h f h",
+      "eqangle h a h a b c b c",
+      "eqangle h a h b b c c a",
+      "eqangle h a h c b c a b",
+      "eqangle h b h a c a b c",
+      "eqangle h b h b c a c a",
+      "eqangle h b h c c a a b",
+      "eqangle h c h a a b b c",
+      "eqangle h c h b a b c a",
+      "eqangle h c h c a b a b",
+      "midpoint d b c",
+      "midpoint e a c",
+      "midpoint f a b",
+      "on_circle a1 d h",
+      "on_circle a2 d h",
+      "on_circle b1 e h",
+      "on_circle b2 e h",
+      "on_circle c1 f h",
+      "on_circle c2 f h",
+      "on_line a1 b c",
+      "on_line a2 b c",
+      "on_line b1 c a",
+      "on_line b2 c a",
+      "on_line c1 a b",
+      "on_line c2 a b",
+      "orthocenter h a b c",
+      "perp h a b c",
+      "perp h b c a",
+      "perp h c a b",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "a1",
+      "c",
+      "d",
+      "e",
+      "f",
+      "b2",
+      "c2",
+      "a2",
+      "h",
+      "b1",
+      "c1",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "total_facts": 56
+    }
+  },
+  "translated_imo_2008_p6": {
+    "proven": false,
+    "target": "cong o k o x",
+    "initial_facts": 48,
+    "derived_facts": 204,
+    "total_facts": 252,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic w x y z",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o w o x",
+          "cong o x o y",
+          "cong o y o z"
+        ]
+      },
+      {
+        "fact": "eqangle a x f1 i1 o x a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp f1 i1 a c"
+        ]
+      },
+      {
+        "fact": "eqangle a x b w o x o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp b w o w"
+        ]
+      },
+      {
+        "fact": "eqangle a x c w o x o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp c w o w"
+        ]
+      },
+      {
+        "fact": "eqangle a x a z o x o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp a z o z"
+        ]
+      },
+      {
+        "fact": "eqangle a x t i2 o x t q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp t i2 t q"
+        ]
+      },
+      {
+        "fact": "eqangle a x b z o x o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp b z o z"
+        ]
+      },
+      {
+        "fact": "eqangle a x s i2 o x s p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp s i2 s p"
+        ]
+      },
+      {
+        "fact": "eqangle a x q i1 o x q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp q i1 q t"
+        ]
+      },
+      {
+        "fact": "eqangle a x f2 i2 o x a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp f2 i2 a c"
+        ]
+      },
+      {
+        "fact": "eqangle a x c y o x o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp c y o y"
+        ]
+      },
+      {
+        "fact": "eqangle a x d y o x o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp d y o y"
+        ]
+      },
+      {
+        "fact": "eqangle a x p i1 o x p s",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp p i1 p s"
+        ]
+      },
+      {
+        "fact": "eqangle a x d x o x o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a x o x",
+          "perp d x o x"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 a x a c o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp a x o x"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 b w a c o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp b w o w"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 c w a c o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp c w o w"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 a z a c o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp a z o z"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 t i2 a c t q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp t i2 t q"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 b z a c o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp b z o z"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 s i2 a c s p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp s i2 s p"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 q i1 a c q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp q i1 q t"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 f2 i2 a c a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp f2 i2 a c"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 c y a c o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp c y o y"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 d y a c o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp d y o y"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 p i1 a c p s",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp p i1 p s"
+        ]
+      },
+      {
+        "fact": "eqangle f1 i1 d x a c o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp f1 i1 a c",
+          "perp d x o x"
+        ]
+      },
+      {
+        "fact": "eqangle b w a x o w o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp a x o x"
+        ]
+      },
+      {
+        "fact": "eqangle b w f1 i1 o w a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp f1 i1 a c"
+        ]
+      },
+      {
+        "fact": "eqangle b w c w o w o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp c w o w"
+        ]
+      },
+      {
+        "fact": "eqangle b w a z o w o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp a z o z"
+        ]
+      },
+      {
+        "fact": "eqangle b w t i2 o w t q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp t i2 t q"
+        ]
+      },
+      {
+        "fact": "eqangle b w b z o w o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp b z o z"
+        ]
+      },
+      {
+        "fact": "eqangle b w s i2 o w s p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp s i2 s p"
+        ]
+      },
+      {
+        "fact": "eqangle b w q i1 o w q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp q i1 q t"
+        ]
+      },
+      {
+        "fact": "eqangle b w f2 i2 o w a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp f2 i2 a c"
+        ]
+      },
+      {
+        "fact": "eqangle b w c y o w o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp c y o y"
+        ]
+      },
+      {
+        "fact": "eqangle b w d y o w o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp d y o y"
+        ]
+      },
+      {
+        "fact": "eqangle b w p i1 o w p s",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp p i1 p s"
+        ]
+      },
+      {
+        "fact": "eqangle b w d x o w o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b w o w",
+          "perp d x o x"
+        ]
+      },
+      {
+        "fact": "eqangle c w a x o w o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp a x o x"
+        ]
+      },
+      {
+        "fact": "eqangle c w f1 i1 o w a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp f1 i1 a c"
+        ]
+      },
+      {
+        "fact": "eqangle c w b w o w o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp b w o w"
+        ]
+      },
+      {
+        "fact": "eqangle c w a z o w o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp a z o z"
+        ]
+      },
+      {
+        "fact": "eqangle c w t i2 o w t q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp t i2 t q"
+        ]
+      },
+      {
+        "fact": "eqangle c w b z o w o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp b z o z"
+        ]
+      },
+      {
+        "fact": "eqangle c w s i2 o w s p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp s i2 s p"
+        ]
+      },
+      {
+        "fact": "eqangle c w q i1 o w q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp q i1 q t"
+        ]
+      },
+      {
+        "fact": "eqangle c w f2 i2 o w a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp f2 i2 a c"
+        ]
+      },
+      {
+        "fact": "eqangle c w c y o w o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp c y o y"
+        ]
+      },
+      {
+        "fact": "eqangle c w d y o w o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp d y o y"
+        ]
+      },
+      {
+        "fact": "eqangle c w p i1 o w p s",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp p i1 p s"
+        ]
+      },
+      {
+        "fact": "eqangle c w d x o w o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c w o w",
+          "perp d x o x"
+        ]
+      },
+      {
+        "fact": "eqangle a z a x o z o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp a x o x"
+        ]
+      },
+      {
+        "fact": "eqangle a z f1 i1 o z a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp f1 i1 a c"
+        ]
+      },
+      {
+        "fact": "eqangle a z b w o z o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp b w o w"
+        ]
+      },
+      {
+        "fact": "eqangle a z c w o z o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp c w o w"
+        ]
+      },
+      {
+        "fact": "eqangle a z t i2 o z t q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp t i2 t q"
+        ]
+      },
+      {
+        "fact": "eqangle a z b z o z o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp b z o z"
+        ]
+      },
+      {
+        "fact": "eqangle a z s i2 o z s p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp s i2 s p"
+        ]
+      },
+      {
+        "fact": "eqangle a z q i1 o z q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp q i1 q t"
+        ]
+      },
+      {
+        "fact": "eqangle a z f2 i2 o z a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp f2 i2 a c"
+        ]
+      },
+      {
+        "fact": "eqangle a z c y o z o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp c y o y"
+        ]
+      },
+      {
+        "fact": "eqangle a z d y o z o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp d y o y"
+        ]
+      },
+      {
+        "fact": "eqangle a z p i1 o z p s",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp p i1 p s"
+        ]
+      },
+      {
+        "fact": "eqangle a z d x o z o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a z o z",
+          "perp d x o x"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 a x t q o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp a x o x"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 f1 i1 t q a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp f1 i1 a c"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 b w t q o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp b w o w"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 c w t q o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp c w o w"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 a z t q o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp a z o z"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 b z t q o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp b z o z"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 s i2 t q s p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp s i2 s p"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 q i1 t q q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp q i1 q t"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 f2 i2 t q a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp f2 i2 a c"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 c y t q o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp c y o y"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 d y t q o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp d y o y"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 p i1 t q p s",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp p i1 p s"
+        ]
+      },
+      {
+        "fact": "eqangle t i2 d x t q o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp t i2 t q",
+          "perp d x o x"
+        ]
+      },
+      {
+        "fact": "eqangle b z a x o z o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp a x o x"
+        ]
+      },
+      {
+        "fact": "eqangle b z f1 i1 o z a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp f1 i1 a c"
+        ]
+      },
+      {
+        "fact": "eqangle b z b w o z o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp b w o w"
+        ]
+      },
+      {
+        "fact": "eqangle b z c w o z o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp c w o w"
+        ]
+      },
+      {
+        "fact": "eqangle b z a z o z o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp a z o z"
+        ]
+      },
+      {
+        "fact": "eqangle b z t i2 o z t q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp t i2 t q"
+        ]
+      },
+      {
+        "fact": "eqangle b z s i2 o z s p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp s i2 s p"
+        ]
+      },
+      {
+        "fact": "eqangle b z q i1 o z q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp q i1 q t"
+        ]
+      },
+      {
+        "fact": "eqangle b z f2 i2 o z a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp f2 i2 a c"
+        ]
+      },
+      {
+        "fact": "eqangle b z c y o z o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp c y o y"
+        ]
+      },
+      {
+        "fact": "eqangle b z d y o z o y",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp d y o y"
+        ]
+      },
+      {
+        "fact": "eqangle b z p i1 o z p s",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp p i1 p s"
+        ]
+      },
+      {
+        "fact": "eqangle b z d x o z o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b z o z",
+          "perp d x o x"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 a x s p o x",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp a x o x"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 f1 i1 s p a c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp f1 i1 a c"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 b w s p o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp b w o w"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 c w s p o w",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp c w o w"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 a z s p o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp a z o z"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 t i2 s p t q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp t i2 t q"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 b z s p o z",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp b z o z"
+        ]
+      },
+      {
+        "fact": "eqangle s i2 q i1 s p q t",
+        "rule": "rule_8",
+        "supporting": [
+          "perp s i2 s p",
+          "perp q i1 q t"
+        ]
+      }
+    ],
+    "all_facts": [
+      "cc_tangent q t p s i1 f1 i2 f2",
+      "circle o x y z",
+      "coll f1 a c",
+      "coll f2 a c",
+      "coll k p s",
+      "coll k q t",
+      "cong i1 q i1 f1",
+      "cong i2 s i2 f2",
+      "cong i2 t i2 f2",
+      "cong o w o x",
+      "cong o x o y",
+      "cong o y o z",
+      "cyclic w x y z",
+      "eqangle a b a i1 a i1 a c",
+      "eqangle a c a i2 a i2 a d",
+      "eqangle a x a x o x o x",
+      "eqangle a x a z o x o z",
+      "eqangle a x b w o x o w",
+      "eqangle a x b z o x o z",
+      "eqangle a x c w o x o w",
+      "eqangle a x c y o x o y",
+      "eqangle a x d x o x o x",
+      "eqangle a x d y o x o y",
+      "eqangle a x f1 i1 o x a c",
+      "eqangle a x f2 i2 o x a c",
+      "eqangle a x p i1 o x p s",
+      "eqangle a x q i1 o x q t",
+      "eqangle a x s i2 o x s p",
+      "eqangle a x t i2 o x t q",
+      "eqangle a z a x o z o x",
+      "eqangle a z a z o z o z",
+      "eqangle a z b w o z o w",
+      "eqangle a z b z o z o z",
+      "eqangle a z c w o z o w",
+      "eqangle a z c y o z o y",
+      "eqangle a z d x o z o x",
+      "eqangle a z d y o z o y",
+      "eqangle a z f1 i1 o z a c",
+      "eqangle a z f2 i2 o z a c",
+      "eqangle a z p i1 o z p s",
+      "eqangle a z q i1 o z q t",
+      "eqangle a z s i2 o z s p",
+      "eqangle a z t i2 o z t q",
+      "eqangle b c b i1 b i1 b a",
+      "eqangle b w a x o w o x",
+      "eqangle b w a z o w o z",
+      "eqangle b w b w o w o w",
+      "eqangle b w b z o w o z",
+      "eqangle b w c w o w o w",
+      "eqangle b w c y o w o y",
+      "eqangle b w d x o w o x",
+      "eqangle b w d y o w o y",
+      "eqangle b w f1 i1 o w a c",
+      "eqangle b w f2 i2 o w a c",
+      "eqangle b w p i1 o w p s",
+      "eqangle b w q i1 o w q t",
+      "eqangle b w s i2 o w s p",
+      "eqangle b w t i2 o w t q",
+      "eqangle b z a x o z o x",
+      "eqangle b z a z o z o z",
+      "eqangle b z b w o z o w",
+      "eqangle b z b z o z o z",
+      "eqangle b z c w o z o w",
+      "eqangle b z c y o z o y",
+      "eqangle b z d x o z o x",
+      "eqangle b z d y o z o y",
+      "eqangle b z f1 i1 o z a c",
+      "eqangle b z f2 i2 o z a c",
+      "eqangle b z p i1 o z p s",
+      "eqangle b z q i1 o z q t",
+      "eqangle b z s i2 o z s p",
+      "eqangle b z t i2 o z t q",
+      "eqangle c a c i1 c i1 c b",
+      "eqangle c d c i2 c i2 c a",
+      "eqangle c w a x o w o x",
+      "eqangle c w a z o w o z",
+      "eqangle c w b w o w o w",
+      "eqangle c w b z o w o z",
+      "eqangle c w c w o w o w",
+      "eqangle c w c y o w o y",
+      "eqangle c w d x o w o x",
+      "eqangle c w d y o w o y",
+      "eqangle c w f1 i1 o w a c",
+      "eqangle c w f2 i2 o w a c",
+      "eqangle c w p i1 o w p s",
+      "eqangle c w q i1 o w q t",
+      "eqangle c w s i2 o w s p",
+      "eqangle c w t i2 o w t q",
+      "eqangle c y a x o y o x",
+      "eqangle c y a z o y o z",
+      "eqangle c y b w o y o w",
+      "eqangle c y b z o y o z",
+      "eqangle c y c w o y o w",
+      "eqangle c y c y o y o y",
+      "eqangle c y d x o y o x",
+      "eqangle c y d y o y o y",
+      "eqangle c y f1 i1 o y a c",
+      "eqangle c y f2 i2 o y a c",
+      "eqangle c y p i1 o y p s",
+      "eqangle c y q i1 o y q t",
+      "eqangle c y s i2 o y s p",
+      "eqangle c y t i2 o y t q",
+      "eqangle d a d i2 d i2 d c",
+      "eqangle d x a x o x o x",
+      "eqangle d x a z o x o z",
+      "eqangle d x b w o x o w",
+      "eqangle d x b z o x o z",
+      "eqangle d x c w o x o w",
+      "eqangle d x c y o x o y",
+      "eqangle d x d x o x o x",
+      "eqangle d x d y o x o y",
+      "eqangle d x f1 i1 o x a c",
+      "eqangle d x f2 i2 o x a c",
+      "eqangle d x p i1 o x p s",
+      "eqangle d x q i1 o x q t",
+      "eqangle d x s i2 o x s p",
+      "eqangle d x t i2 o x t q",
+      "eqangle d y a x o y o x",
+      "eqangle d y a z o y o z",
+      "eqangle d y b w o y o w",
+      "eqangle d y b z o y o z",
+      "eqangle d y c w o y o w",
+      "eqangle d y c y o y o y",
+      "eqangle d y d x o y o x",
+      "eqangle d y d y o y o y",
+      "eqangle d y f1 i1 o y a c",
+      "eqangle d y f2 i2 o y a c",
+      "eqangle d y p i1 o y p s",
+      "eqangle d y q i1 o y q t",
+      "eqangle d y s i2 o y s p",
+      "eqangle d y t i2 o y t q",
+      "eqangle f1 i1 a x a c o x",
+      "eqangle f1 i1 a z a c o z",
+      "eqangle f1 i1 b w a c o w",
+      "eqangle f1 i1 b z a c o z",
+      "eqangle f1 i1 c w a c o w",
+      "eqangle f1 i1 c y a c o y",
+      "eqangle f1 i1 d x a c o x",
+      "eqangle f1 i1 d y a c o y",
+      "eqangle f1 i1 f1 i1 a c a c",
+      "eqangle f1 i1 f2 i2 a c a c",
+      "eqangle f1 i1 p i1 a c p s",
+      "eqangle f1 i1 q i1 a c q t",
+      "eqangle f1 i1 s i2 a c s p",
+      "eqangle f1 i1 t i2 a c t q",
+      "eqangle f2 i2 a x a c o x",
+      "eqangle f2 i2 a z a c o z",
+      "eqangle f2 i2 b w a c o w",
+      "eqangle f2 i2 b z a c o z",
+      "eqangle f2 i2 c w a c o w",
+      "eqangle f2 i2 c y a c o y",
+      "eqangle f2 i2 d x a c o x",
+      "eqangle f2 i2 d y a c o y",
+      "eqangle f2 i2 f1 i1 a c a c",
+      "eqangle f2 i2 f2 i2 a c a c",
+      "eqangle f2 i2 p i1 a c p s",
+      "eqangle f2 i2 q i1 a c q t",
+      "eqangle f2 i2 s i2 a c s p",
+      "eqangle f2 i2 t i2 a c t q",
+      "eqangle i1 q q f1 q f1 i1 f1",
+      "eqangle i2 s s f2 s f2 i2 f2",
+      "eqangle i2 t t f2 t f2 i2 f2",
+      "eqangle o w w x w x o x",
+      "eqangle o x x y x y o y",
+      "eqangle o y y z y z o z",
+      "eqangle p i1 a x p s o x",
+      "eqangle p i1 a z p s o z",
+      "eqangle p i1 b w p s o w",
+      "eqangle p i1 b z p s o z",
+      "eqangle p i1 c w p s o w",
+      "eqangle p i1 c y p s o y",
+      "eqangle p i1 d x p s o x",
+      "eqangle p i1 d y p s o y",
+      "eqangle p i1 f1 i1 p s a c",
+      "eqangle p i1 f2 i2 p s a c",
+      "eqangle p i1 p i1 p s p s",
+      "eqangle p i1 q i1 p s q t",
+      "eqangle p i1 s i2 p s s p",
+      "eqangle p i1 t i2 p s t q",
+      "eqangle q i1 a x q t o x",
+      "eqangle q i1 a z q t o z",
+      "eqangle q i1 b w q t o w",
+      "eqangle q i1 b z q t o z",
+      "eqangle q i1 c w q t o w",
+      "eqangle q i1 c y q t o y",
+      "eqangle q i1 d x q t o x",
+      "eqangle q i1 d y q t o y",
+      "eqangle q i1 f1 i1 q t a c",
+      "eqangle q i1 f2 i2 q t a c",
+      "eqangle q i1 p i1 q t p s",
+      "eqangle q i1 q i1 q t q t",
+      "eqangle q i1 s i2 q t s p",
+      "eqangle q i1 t i2 q t t q",
+      "eqangle s i2 a x s p o x",
+      "eqangle s i2 a z s p o z",
+      "eqangle s i2 b w s p o w",
+      "eqangle s i2 b z s p o z",
+      "eqangle s i2 c w s p o w",
+      "eqangle s i2 c y s p o y",
+      "eqangle s i2 d x s p o x",
+      "eqangle s i2 d y s p o y",
+      "eqangle s i2 f1 i1 s p a c",
+      "eqangle s i2 f2 i2 s p a c",
+      "eqangle s i2 p i1 s p p s",
+      "eqangle s i2 q i1 s p q t",
+      "eqangle s i2 s i2 s p s p",
+      "eqangle s i2 t i2 s p t q",
+      "eqangle t i2 a x t q o x",
+      "eqangle t i2 a z t q o z",
+      "eqangle t i2 b w t q o w",
+      "eqangle t i2 b z t q o z",
+      "eqangle t i2 c w t q o w",
+      "eqangle t i2 c y t q o y",
+      "eqangle t i2 d x t q o x",
+      "eqangle t i2 d y t q o y",
+      "eqangle t i2 f1 i1 t q a c",
+      "eqangle t i2 f2 i2 t q a c",
+      "eqangle t i2 p i1 t q p s",
+      "eqangle t i2 q i1 t q q t",
+      "eqangle t i2 s i2 t q s p",
+      "eqangle t i2 t i2 t q t q",
+      "eqangle y w y x z w z x",
+      "foot f1 i1 a c",
+      "foot f2 i2 a c",
+      "incenter i1 a b c",
+      "incenter i2 a c d",
+      "on_circle w o x",
+      "on_line k p s",
+      "on_line k q t",
+      "on_tline a x o x",
+      "on_tline a z o z",
+      "on_tline b w o w",
+      "on_tline b z o z",
+      "on_tline c w o w",
+      "on_tline c y o y",
+      "on_tline d x o x",
+      "on_tline d y o y",
+      "perp a x o x",
+      "perp a z o z",
+      "perp b w o w",
+      "perp b z o z",
+      "perp c w o w",
+      "perp c y o y",
+      "perp d x o x",
+      "perp d y o y",
+      "perp f1 i1 a c",
+      "perp f2 i2 a c",
+      "perp p i1 p s",
+      "perp q i1 q t",
+      "perp s i2 s p",
+      "perp t i2 t q",
+      "triangle x y z"
+    ],
+    "point_set": [
+      "x",
+      "o",
+      "z",
+      "c",
+      "d",
+      "t",
+      "i2",
+      "y",
+      "i1",
+      "b",
+      "f1",
+      "q",
+      "f2",
+      "s",
+      "a",
+      "p",
+      "k",
+      "w"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 6,
+      "related_to_target": 3,
+      "total_facts": 252
+    }
+  },
+  "translated_imo_2009_p2": {
+    "proven": false,
+    "target": "cong o p o q",
+    "initial_facts": 22,
+    "derived_facts": 7,
+    "total_facts": 29,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle w m m l m l w l",
+        "rule": "rule_13",
+        "supporting": [
+          "cong w m w l"
+        ]
+      },
+      {
+        "fact": "eqangle k p p b p b k b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong k p k b"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle l q q c q c l c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong l q l c"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle w l l k l k w k",
+        "rule": "rule_13",
+        "supporting": [
+          "cong w l w k"
+        ]
+      },
+      {
+        "fact": "eqangle m q q p q p m p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong m q m p"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "circle w m l k",
+      "coll a b q",
+      "coll a c p",
+      "coll b p k",
+      "coll c q l",
+      "coll p q m",
+      "cong k p k b",
+      "cong l q l c",
+      "cong m q m p",
+      "cong o a o b",
+      "cong o b o c",
+      "cong w l w k",
+      "cong w m w l",
+      "eqangle k p p b p b k b",
+      "eqangle l q q c q c l c",
+      "eqangle m q q p q p m p",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle w l l k l k w k",
+      "eqangle w m m l m l w l",
+      "mirror b p k",
+      "mirror c q l",
+      "mirror p q m",
+      "on_line a b q",
+      "on_line a c p",
+      "on_tline q m w m",
+      "perp q m w m",
+      "triangle m l k"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "l",
+      "m",
+      "p",
+      "q",
+      "b",
+      "k",
+      "a",
+      "w"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 7,
+      "related_to_target": 5,
+      "total_facts": 29
+    }
+  },
+  "translated_imo_2010_p2": {
+    "proven": false,
+    "target": "cong o a o k",
+    "initial_facts": 25,
+    "derived_facts": 9,
+    "total_facts": 34,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic d a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o d o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic e a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o e o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle o d d a d a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o d o a"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o e e a e a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o e o a"
+        ]
+      },
+      {
+        "fact": "eqangle g i i f i f g f",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g i g f"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle b d b a c d c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic d a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b e b a c e c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic e a b c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "coll d a i",
+      "coll f b c",
+      "coll g i f",
+      "coll k d g",
+      "coll k e i",
+      "cong g i g f",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o d o a",
+      "cong o e o a",
+      "cyclic d a b c",
+      "cyclic e a b c",
+      "eqangle a b a i a i a c",
+      "eqangle a e a c a b a f",
+      "eqangle b c b i b i b a",
+      "eqangle b d b a c d c a",
+      "eqangle b e b a c e c a",
+      "eqangle c a c i c i c b",
+      "eqangle g i i f i f g f",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o d d a d a o a",
+      "eqangle o e e a e a o a",
+      "incenter i a b c",
+      "midpoint g i f",
+      "on_aline e a c b a f",
+      "on_circle d o a",
+      "on_circle e o a",
+      "on_line d a i",
+      "on_line f b c",
+      "on_line k d g",
+      "on_line k e i",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "d",
+      "i",
+      "e",
+      "f",
+      "g",
+      "b",
+      "k",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 5,
+      "related_to_target": 4,
+      "total_facts": 34
+    }
+  },
+  "translated_imo_2010_p4": {
+    "proven": false,
+    "target": "cong m k m l",
+    "initial_facts": 22,
+    "derived_facts": 6,
+    "total_facts": 28,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle s c c p c p s p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong s c s p"
+        ]
+      },
+      {
+        "fact": "eqangle o m m c m c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o m o c"
+        ]
+      },
+      {
+        "fact": "eqangle o a a c a c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o c"
+        ]
+      },
+      {
+        "fact": "eqangle o l l c l c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o l o c"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle o k k c k c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o k o c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll b s a",
+      "coll k a p",
+      "coll l b p",
+      "coll m c p",
+      "cong o a o c",
+      "cong o b o c",
+      "cong o k o c",
+      "cong o l o c",
+      "cong o m o c",
+      "cong s c s p",
+      "eqangle o a a c a c o c",
+      "eqangle o b b c b c o c",
+      "eqangle o k k c k c o c",
+      "eqangle o l l c l c o c",
+      "eqangle o m m c m c o c",
+      "eqangle s c c p c p s p",
+      "iso_triangle s c p",
+      "on_circle a o c",
+      "on_circle b o c",
+      "on_circle k o c",
+      "on_circle l o c",
+      "on_circle m o c",
+      "on_line b s a",
+      "on_line k a p",
+      "on_line l b p",
+      "on_line m c p",
+      "on_tline o c s c",
+      "perp o c s c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "l",
+      "m",
+      "p",
+      "b",
+      "s",
+      "k",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 6,
+      "related_to_target": 3,
+      "total_facts": 28
+    }
+  },
+  "translated_imo_2011_p6": {
+    "proven": false,
+    "target": "coll x o o1",
+    "initial_facts": 51,
+    "derived_facts": 74,
+    "total_facts": 125,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic p a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o p o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic x a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o x o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic x a1 b1 c1",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o1 x o1 a1",
+          "cong o1 a1 o1 b1",
+          "cong o1 b1 o1 c1"
+        ]
+      },
+      {
+        "fact": "eqangle b c b c p pa q qa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c p pa",
+          "perp b c q qa"
+        ]
+      },
+      {
+        "fact": "eqangle b c a b p pa q qc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c p pa",
+          "perp a b q qc"
+        ]
+      },
+      {
+        "fact": "eqangle b c q p p pa o p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c p pa",
+          "perp q p o p"
+        ]
+      },
+      {
+        "fact": "eqangle b c c a p pa q qb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c p pa",
+          "perp c a q qb"
+        ]
+      },
+      {
+        "fact": "eqangle b c a b p pa p pc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c p pa",
+          "perp a b p pc"
+        ]
+      },
+      {
+        "fact": "eqangle b c c a p pa p pb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c p pa",
+          "perp c a p pb"
+        ]
+      },
+      {
+        "fact": "eqangle b c b c q qa p pa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c q qa",
+          "perp b c p pa"
+        ]
+      },
+      {
+        "fact": "eqangle b c a b q qa q qc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c q qa",
+          "perp a b q qc"
+        ]
+      },
+      {
+        "fact": "eqangle b c q p q qa o p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c q qa",
+          "perp q p o p"
+        ]
+      },
+      {
+        "fact": "eqangle b c c a q qa q qb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c q qa",
+          "perp c a q qb"
+        ]
+      },
+      {
+        "fact": "eqangle b c a b q qa p pc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c q qa",
+          "perp a b p pc"
+        ]
+      },
+      {
+        "fact": "eqangle b c c a q qa p pb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b c q qa",
+          "perp c a p pb"
+        ]
+      },
+      {
+        "fact": "eqangle a b b c q qc p pa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b q qc",
+          "perp b c p pa"
+        ]
+      },
+      {
+        "fact": "eqangle a b b c q qc q qa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b q qc",
+          "perp b c q qa"
+        ]
+      },
+      {
+        "fact": "eqangle a b q p q qc o p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b q qc",
+          "perp q p o p"
+        ]
+      },
+      {
+        "fact": "eqangle a b c a q qc q qb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b q qc",
+          "perp c a q qb"
+        ]
+      },
+      {
+        "fact": "eqangle a b a b q qc p pc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b q qc",
+          "perp a b p pc"
+        ]
+      },
+      {
+        "fact": "eqangle a b c a q qc p pb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b q qc",
+          "perp c a p pb"
+        ]
+      },
+      {
+        "fact": "eqangle q p b c o p p pa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q p o p",
+          "perp b c p pa"
+        ]
+      },
+      {
+        "fact": "eqangle q p b c o p q qa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q p o p",
+          "perp b c q qa"
+        ]
+      },
+      {
+        "fact": "eqangle q p a b o p q qc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q p o p",
+          "perp a b q qc"
+        ]
+      },
+      {
+        "fact": "eqangle q p c a o p q qb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q p o p",
+          "perp c a q qb"
+        ]
+      },
+      {
+        "fact": "eqangle q p a b o p p pc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q p o p",
+          "perp a b p pc"
+        ]
+      },
+      {
+        "fact": "eqangle q p c a o p p pb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q p o p",
+          "perp c a p pb"
+        ]
+      },
+      {
+        "fact": "eqangle c a b c q qb p pa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a q qb",
+          "perp b c p pa"
+        ]
+      },
+      {
+        "fact": "eqangle c a b c q qb q qa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a q qb",
+          "perp b c q qa"
+        ]
+      },
+      {
+        "fact": "eqangle c a a b q qb q qc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a q qb",
+          "perp a b q qc"
+        ]
+      },
+      {
+        "fact": "eqangle c a q p q qb o p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a q qb",
+          "perp q p o p"
+        ]
+      },
+      {
+        "fact": "eqangle c a a b q qb p pc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a q qb",
+          "perp a b p pc"
+        ]
+      },
+      {
+        "fact": "eqangle c a c a q qb p pb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a q qb",
+          "perp c a p pb"
+        ]
+      },
+      {
+        "fact": "eqangle a b b c p pc p pa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b p pc",
+          "perp b c p pa"
+        ]
+      },
+      {
+        "fact": "eqangle a b b c p pc q qa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b p pc",
+          "perp b c q qa"
+        ]
+      },
+      {
+        "fact": "eqangle a b a b p pc q qc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b p pc",
+          "perp a b q qc"
+        ]
+      },
+      {
+        "fact": "eqangle a b q p p pc o p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b p pc",
+          "perp q p o p"
+        ]
+      },
+      {
+        "fact": "eqangle a b c a p pc q qb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b p pc",
+          "perp c a q qb"
+        ]
+      },
+      {
+        "fact": "eqangle a b c a p pc p pb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a b p pc",
+          "perp c a p pb"
+        ]
+      },
+      {
+        "fact": "eqangle c a b c p pb p pa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a p pb",
+          "perp b c p pa"
+        ]
+      },
+      {
+        "fact": "eqangle c a b c p pb q qa",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a p pb",
+          "perp b c q qa"
+        ]
+      },
+      {
+        "fact": "eqangle c a a b p pb q qc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a p pb",
+          "perp a b q qc"
+        ]
+      },
+      {
+        "fact": "eqangle c a q p p pb o p",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a p pb",
+          "perp q p o p"
+        ]
+      },
+      {
+        "fact": "eqangle c a c a p pb q qb",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a p pb",
+          "perp c a q qb"
+        ]
+      },
+      {
+        "fact": "eqangle c a a b p pb p pc",
+        "rule": "rule_8",
+        "supporting": [
+          "perp c a p pb",
+          "perp a b p pc"
+        ]
+      },
+      {
+        "fact": "eqangle c p p pa p pa c pa",
+        "rule": "rule_13",
+        "supporting": [
+          "cong c p c pa"
+        ]
+      },
+      {
+        "fact": "eqangle o1 b1 b1 c1 b1 c1 o1 c1",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 b1 o1 c1"
+        ]
+      },
+      {
+        "fact": "eqangle b q q qa q qa b qa",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b q b qa"
+        ]
+      },
+      {
+        "fact": "eqangle a p p pc p pc a pc",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a p a pc"
+        ]
+      },
+      {
+        "fact": "eqangle c p p pb p pb c pb",
+        "rule": "rule_13",
+        "supporting": [
+          "cong c p c pb"
+        ]
+      },
+      {
+        "fact": "eqangle b p p pa p pa b pa",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b p b pa"
+        ]
+      },
+      {
+        "fact": "eqangle a q q qc q qc a qc",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a q a qc"
+        ]
+      },
+      {
+        "fact": "eqangle c q q qb q qb c qb",
+        "rule": "rule_13",
+        "supporting": [
+          "cong c q c qb"
+        ]
+      },
+      {
+        "fact": "eqangle c q q qa q qa c qa",
+        "rule": "rule_13",
+        "supporting": [
+          "cong c q c qa"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o p p a p a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o p o a"
+        ]
+      },
+      {
+        "fact": "eqangle o1 a1 a1 b1 a1 b1 o1 b1",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 a1 o1 b1"
+        ]
+      },
+      {
+        "fact": "eqangle b q q qc q qc b qc",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b q b qc"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle a p p pb p pb a pb",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a p a pb"
+        ]
+      },
+      {
+        "fact": "eqangle o x x a x a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o x o a"
+        ]
+      },
+      {
+        "fact": "eqangle a q q qb q qb a qb",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a q a qb"
+        ]
+      },
+      {
+        "fact": "eqangle b p p pc p pc b pc",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b p b pc"
+        ]
+      },
+      {
+        "fact": "eqangle o1 x x a1 x a1 o1 a1",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 x o1 a1"
+        ]
+      },
+      {
+        "fact": "eqangle b p b a c p c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic p a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b x b a c x c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic x a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b1 x b1 a1 c1 x c1 a1",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic x a1 b1 c1"
+        ]
+      },
+      {
+        "fact": "eqangle b c b c p pa p pa",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle b c b c p pa q qa",
+          "eqangle b c b c q qa p pa"
+        ]
+      },
+      {
+        "fact": "eqangle b c b c q qa q qa",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle b c b c q qa p pa",
+          "eqangle b c b c p pa q qa"
+        ]
+      },
+      {
+        "fact": "eqangle a b a b q qc q qc",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle a b b c q qc p pa",
+          "eqangle b c a b p pa q qc"
+        ]
+      },
+      {
+        "fact": "eqangle q p q p o p o p",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle q p b c o p p pa",
+          "eqangle b c q p p pa o p"
+        ]
+      },
+      {
+        "fact": "eqangle c a c a q qb q qb",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle c a b c q qb p pa",
+          "eqangle b c c a p pa q qb"
+        ]
+      },
+      {
+        "fact": "eqangle a b a b p pc p pc",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle a b b c p pc p pa",
+          "eqangle b c a b p pa p pc"
+        ]
+      },
+      {
+        "fact": "eqangle c a c a p pb p pb",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle c a b c p pb p pa",
+          "eqangle b c c a p pa p pb"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "circle o1 a1 b1 c1",
+      "coll a1 pb qb",
+      "coll a1 pc qc",
+      "coll b1 pa qa",
+      "coll b1 pc qc",
+      "coll c1 pa qa",
+      "coll c1 pb qb",
+      "cong a p a pb",
+      "cong a p a pc",
+      "cong a q a qb",
+      "cong a q a qc",
+      "cong b p b pa",
+      "cong b p b pc",
+      "cong b q b qa",
+      "cong b q b qc",
+      "cong c p c pa",
+      "cong c p c pb",
+      "cong c q c qa",
+      "cong c q c qb",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o p o a",
+      "cong o x o a",
+      "cong o1 a1 o1 b1",
+      "cong o1 b1 o1 c1",
+      "cong o1 x o1 a1",
+      "cyclic p a b c",
+      "cyclic x a b c",
+      "cyclic x a1 b1 c1",
+      "eqangle a b a b p pc p pc",
+      "eqangle a b a b p pc q qc",
+      "eqangle a b a b q qc p pc",
+      "eqangle a b a b q qc q qc",
+      "eqangle a b b c p pc p pa",
+      "eqangle a b b c p pc q qa",
+      "eqangle a b b c q qc p pa",
+      "eqangle a b b c q qc q qa",
+      "eqangle a b c a p pc p pb",
+      "eqangle a b c a p pc q qb",
+      "eqangle a b c a q qc p pb",
+      "eqangle a b c a q qc q qb",
+      "eqangle a b q p p pc o p",
+      "eqangle a b q p q qc o p",
+      "eqangle a p p pb p pb a pb",
+      "eqangle a p p pc p pc a pc",
+      "eqangle a q q qb q qb a qb",
+      "eqangle a q q qc q qc a qc",
+      "eqangle b c a b p pa p pc",
+      "eqangle b c a b p pa q qc",
+      "eqangle b c a b q qa p pc",
+      "eqangle b c a b q qa q qc",
+      "eqangle b c b c p pa p pa",
+      "eqangle b c b c p pa q qa",
+      "eqangle b c b c q qa p pa",
+      "eqangle b c b c q qa q qa",
+      "eqangle b c c a p pa p pb",
+      "eqangle b c c a p pa q qb",
+      "eqangle b c c a q qa p pb",
+      "eqangle b c c a q qa q qb",
+      "eqangle b c q p p pa o p",
+      "eqangle b c q p q qa o p",
+      "eqangle b p b a c p c a",
+      "eqangle b p p pa p pa b pa",
+      "eqangle b p p pc p pc b pc",
+      "eqangle b q q qa q qa b qa",
+      "eqangle b q q qc q qc b qc",
+      "eqangle b x b a c x c a",
+      "eqangle b1 x b1 a1 c1 x c1 a1",
+      "eqangle c a a b p pb p pc",
+      "eqangle c a a b p pb q qc",
+      "eqangle c a a b q qb p pc",
+      "eqangle c a a b q qb q qc",
+      "eqangle c a b c p pb p pa",
+      "eqangle c a b c p pb q qa",
+      "eqangle c a b c q qb p pa",
+      "eqangle c a b c q qb q qa",
+      "eqangle c a c a p pb p pb",
+      "eqangle c a c a p pb q qb",
+      "eqangle c a c a q qb p pb",
+      "eqangle c a c a q qb q qb",
+      "eqangle c a q p p pb o p",
+      "eqangle c a q p q qb o p",
+      "eqangle c p p pa p pa c pa",
+      "eqangle c p p pb p pb c pb",
+      "eqangle c q q qa q qa c qa",
+      "eqangle c q q qb q qb c qb",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o p p a p a o a",
+      "eqangle o x x a x a o a",
+      "eqangle o1 a1 a1 b1 a1 b1 o1 b1",
+      "eqangle o1 b1 b1 c1 b1 c1 o1 c1",
+      "eqangle o1 x x a1 x a1 o1 a1",
+      "eqangle q p a b o p p pc",
+      "eqangle q p a b o p q qc",
+      "eqangle q p b c o p p pa",
+      "eqangle q p b c o p q qa",
+      "eqangle q p c a o p p pb",
+      "eqangle q p c a o p q qb",
+      "eqangle q p q p o p o p",
+      "on_circle p o a",
+      "on_circle x o a",
+      "on_circle x o1 a1",
+      "on_line a1 pb qb",
+      "on_line a1 pc qc",
+      "on_line b1 pa qa",
+      "on_line b1 pc qc",
+      "on_line c1 pa qa",
+      "on_line c1 pb qb",
+      "on_tline q p o p",
+      "perp a b p pc",
+      "perp a b q qc",
+      "perp b c p pa",
+      "perp b c q qa",
+      "perp c a p pb",
+      "perp c a q qb",
+      "perp q p o p",
+      "reflect pa p b c",
+      "reflect pb p c a",
+      "reflect pc p a b",
+      "reflect qa q b c",
+      "reflect qb q c a",
+      "reflect qc q a b",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "a1",
+      "x",
+      "pb",
+      "pc",
+      "qb",
+      "qc",
+      "o1",
+      "b1",
+      "qa",
+      "p",
+      "q",
+      "c1",
+      "b",
+      "a",
+      "pa"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 6,
+      "total_facts": 125
+    }
+  },
+  "translated_imo_2012_p1": {
+    "proven": false,
+    "target": "cong m s m t",
+    "initial_facts": 26,
+    "derived_facts": 11,
+    "total_facts": 37,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "eqangle j l j m c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp j l c a",
+          "perp j m b c"
+        ]
+      },
+      {
+        "fact": "eqangle j l j k c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp j l c a",
+          "perp j k a b"
+        ]
+      },
+      {
+        "fact": "eqangle j m j l b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp j m b c",
+          "perp j l c a"
+        ]
+      },
+      {
+        "fact": "eqangle j m j k b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp j m b c",
+          "perp j k a b"
+        ]
+      },
+      {
+        "fact": "eqangle j k j l a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp j k a b",
+          "perp j l c a"
+        ]
+      },
+      {
+        "fact": "eqangle j k j m a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp j k a b",
+          "perp j m b c"
+        ]
+      },
+      {
+        "fact": "eqangle j m m l m l j l",
+        "rule": "rule_13",
+        "supporting": [
+          "cong j m j l"
+        ]
+      },
+      {
+        "fact": "eqangle j l l k l k j k",
+        "rule": "rule_13",
+        "supporting": [
+          "cong j l j k"
+        ]
+      },
+      {
+        "fact": "eqangle j l j l c a c a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle j l j m c a b c",
+          "eqangle j m j l b c c a"
+        ]
+      },
+      {
+        "fact": "eqangle j m j m b c b c",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle j m j l b c c a",
+          "eqangle j l j m c a b c"
+        ]
+      },
+      {
+        "fact": "eqangle j k j k a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle j k j l a b c a",
+          "eqangle j l j k c a a b"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll f b j",
+      "coll f m l",
+      "coll g c j",
+      "coll g m k",
+      "coll s b c",
+      "coll s f a",
+      "coll t c b",
+      "coll t g a",
+      "cong j l j k",
+      "cong j m j l",
+      "eqangle a b a j a j a c",
+      "eqangle b c b j b j b a",
+      "eqangle c a c j c j c b",
+      "eqangle j k j k a b a b",
+      "eqangle j k j l a b c a",
+      "eqangle j k j m a b b c",
+      "eqangle j l j k c a a b",
+      "eqangle j l j l c a c a",
+      "eqangle j l j m c a b c",
+      "eqangle j l l k l k j k",
+      "eqangle j m j k b c a b",
+      "eqangle j m j l b c c a",
+      "eqangle j m j m b c b c",
+      "eqangle j m m l m l j l",
+      "excenter2 m l k j a b c",
+      "on_line f b j",
+      "on_line f m l",
+      "on_line g c j",
+      "on_line g m k",
+      "on_line s b c",
+      "on_line s f a",
+      "on_line t c b",
+      "on_line t g a",
+      "perp j k a b",
+      "perp j l c a",
+      "perp j m b c",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "c",
+      "l",
+      "f",
+      "t",
+      "m",
+      "j",
+      "g",
+      "b",
+      "k",
+      "s",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 2,
+      "related_to_target": 1,
+      "total_facts": 37
+    }
+  },
+  "translated_imo_2012_p5": {
+    "proven": false,
+    "target": "cong m k m l",
+    "initial_facts": 18,
+    "derived_facts": 2,
+    "total_facts": 20,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle a l l c l c a c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a l a c"
+        ]
+      },
+      {
+        "fact": "eqangle b k k c k c b c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b k b c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll d a b",
+      "coll k a x",
+      "coll l b x",
+      "coll m a l",
+      "coll m b k",
+      "coll x c d",
+      "cong a l a c",
+      "cong b k b c",
+      "eqangle a l l c l c a c",
+      "eqangle b k k c k c b c",
+      "foot d c a b",
+      "on_circle k b c",
+      "on_circle l a c",
+      "on_line k a x",
+      "on_line l b x",
+      "on_line m a l",
+      "on_line m b k",
+      "on_line x c d",
+      "perp d c a b",
+      "r_triangle c a b"
+    ],
+    "point_set": [
+      "x",
+      "c",
+      "d",
+      "l",
+      "m",
+      "b",
+      "k",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 2,
+      "related_to_target": 2,
+      "total_facts": 20
+    }
+  },
+  "translated_imo_2013_p4": {
+    "proven": false,
+    "target": "coll x h y",
+    "initial_facts": 29,
+    "derived_facts": 15,
+    "total_facts": 44,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "eqangle h a h c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h a h b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h c h a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h b h a c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h b h c c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle o2 y y w y w o2 w",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 y o2 w"
+        ]
+      },
+      {
+        "fact": "eqangle o1 x x w x w o1 w",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 x o1 w"
+        ]
+      },
+      {
+        "fact": "eqangle o2 c c m c m o2 m",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 c o2 m"
+        ]
+      },
+      {
+        "fact": "eqangle o2 m m w m w o2 w",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 m o2 w"
+        ]
+      },
+      {
+        "fact": "eqangle o1 b b n b n o1 n",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 b o1 n"
+        ]
+      },
+      {
+        "fact": "eqangle o1 n n w n w o1 w",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 n o1 w"
+        ]
+      },
+      {
+        "fact": "eqangle h a h a b c b c",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h a h c b c a b",
+          "eqangle h c h a a b b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c h c a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h c h a a b b c",
+          "eqangle h a h c b c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h b h b c a c a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h b h a c a b c",
+          "eqangle h a h b b c c a"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o1 b n w",
+      "circle o2 c m w",
+      "coll m a c",
+      "coll m h b",
+      "coll n a b",
+      "coll n h c",
+      "coll w b c",
+      "coll x o1 w",
+      "coll y o2 w",
+      "cong o1 b o1 n",
+      "cong o1 n o1 w",
+      "cong o1 x o1 w",
+      "cong o2 c o2 m",
+      "cong o2 m o2 w",
+      "cong o2 y o2 w",
+      "eqangle h a h a b c b c",
+      "eqangle h a h b b c c a",
+      "eqangle h a h c b c a b",
+      "eqangle h b h a c a b c",
+      "eqangle h b h b c a c a",
+      "eqangle h b h c c a a b",
+      "eqangle h c h a a b b c",
+      "eqangle h c h b a b c a",
+      "eqangle h c h c a b a b",
+      "eqangle o1 b b n b n o1 n",
+      "eqangle o1 n n w n w o1 w",
+      "eqangle o1 x x w x w o1 w",
+      "eqangle o2 c c m c m o2 m",
+      "eqangle o2 m m w m w o2 w",
+      "eqangle o2 y y w y w o2 w",
+      "on_circle x o1 w",
+      "on_circle y o2 w",
+      "on_line m a c",
+      "on_line m h b",
+      "on_line n a b",
+      "on_line n h c",
+      "on_line w b c",
+      "on_line x o1 w",
+      "on_line y o2 w",
+      "orthocenter h a b c",
+      "perp h a b c",
+      "perp h b c a",
+      "perp h c a b",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "x",
+      "c",
+      "o2",
+      "o1",
+      "h",
+      "m",
+      "y",
+      "b",
+      "a",
+      "n",
+      "w"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 7,
+      "total_facts": 44
+    }
+  },
+  "translated_imo_2014_p4": {
+    "proven": false,
+    "target": "cong o x o a",
+    "initial_facts": 22,
+    "derived_facts": 4,
+    "total_facts": 26,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle q a a n a n q n",
+        "rule": "rule_13",
+        "supporting": [
+          "cong q a q n"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle p a a m a m p m",
+        "rule": "rule_13",
+        "supporting": [
+          "cong p a p m"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "coll m a p",
+      "coll n a q",
+      "coll p b c",
+      "coll q b c",
+      "coll x b m",
+      "coll x c n",
+      "cong o a o b",
+      "cong o b o c",
+      "cong p a p m",
+      "cong q a q n",
+      "eqangle a p a b c b c a",
+      "eqangle a q a c b c b a",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle p a a m a m p m",
+      "eqangle q a a n a n q n",
+      "mirror m a p",
+      "mirror n a q",
+      "on_aline p a b b c a",
+      "on_aline q a c c b a",
+      "on_line p b c",
+      "on_line q b c",
+      "on_line x b m",
+      "on_line x c n",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "x",
+      "c",
+      "o",
+      "m",
+      "p",
+      "q",
+      "b",
+      "a",
+      "n"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 4,
+      "related_to_target": 4,
+      "total_facts": 26
+    }
+  },
+  "translated_imo_2015_p3": {
+    "proven": false,
+    "target": "coll o1 o2 k",
+    "initial_facts": 29,
+    "derived_facts": 38,
+    "total_facts": 67,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic q a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o q o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic k a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o k o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle h a q a b c q h",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp q a q h"
+        ]
+      },
+      {
+        "fact": "eqangle h a h c b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h a k h b c k q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp k h k q"
+        ]
+      },
+      {
+        "fact": "eqangle h a h b b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h a b c",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle q a h a q h b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q a q h",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle q a h c q h a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q a q h",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle q a k h q h k q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q a q h",
+          "perp k h k q"
+        ]
+      },
+      {
+        "fact": "eqangle q a h b q h c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp q a q h",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h c h a a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h c q a a b q h",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp q a q h"
+        ]
+      },
+      {
+        "fact": "eqangle h c k h a b k q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp k h k q"
+        ]
+      },
+      {
+        "fact": "eqangle h c h b a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h c a b",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle k h h a k q b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp k h k q",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle k h q a k q q h",
+        "rule": "rule_8",
+        "supporting": [
+          "perp k h k q",
+          "perp q a q h"
+        ]
+      },
+      {
+        "fact": "eqangle k h h c k q a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp k h k q",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle k h h b k q c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp k h k q",
+          "perp h b c a"
+        ]
+      },
+      {
+        "fact": "eqangle h b h a c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h b q a c a q h",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp q a q h"
+        ]
+      },
+      {
+        "fact": "eqangle h b h c c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp h c a b"
+        ]
+      },
+      {
+        "fact": "eqangle h b k h c a k q",
+        "rule": "rule_8",
+        "supporting": [
+          "perp h b c a",
+          "perp k h k q"
+        ]
+      },
+      {
+        "fact": "eqangle o q q a q a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o q o a"
+        ]
+      },
+      {
+        "fact": "eqangle o2 f f k f k o2 k",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 f o2 k"
+        ]
+      },
+      {
+        "fact": "eqangle o1 k k q k q o1 q",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 k o1 q"
+        ]
+      },
+      {
+        "fact": "eqangle o1 q q h q h o1 h",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 q o1 h"
+        ]
+      },
+      {
+        "fact": "eqangle m b b c b c m c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong m b m c"
+        ]
+      },
+      {
+        "fact": "eqangle o2 k k m k m o2 m",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 k o2 m"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o k k a k a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o k o a"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle b q b a c q c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic q a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b k b a c k c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic k a b c"
+        ]
+      },
+      {
+        "fact": "eqangle h a h a b c b c",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h a q a b c q h",
+          "eqangle q a h a q h b c"
+        ]
+      },
+      {
+        "fact": "eqangle q a q a q h q h",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle q a h a q h b c",
+          "eqangle h a q a b c q h"
+        ]
+      },
+      {
+        "fact": "eqangle h c h c a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h c h a a b b c",
+          "eqangle h a h c b c a b"
+        ]
+      },
+      {
+        "fact": "eqangle k h k h k q k q",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle k h h a k q b c",
+          "eqangle h a k h b c k q"
+        ]
+      },
+      {
+        "fact": "eqangle h b h b c a c a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle h b h a c a b c",
+          "eqangle h a h b b c c a"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "circle o1 k q h",
+      "circle o2 f k m",
+      "coll f b c",
+      "coll f h a",
+      "coll m b c",
+      "cong m b m c",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o k o a",
+      "cong o q o a",
+      "cong o1 k o1 q",
+      "cong o1 q o1 h",
+      "cong o2 f o2 k",
+      "cong o2 k o2 m",
+      "cyclic k a b c",
+      "cyclic q a b c",
+      "eqangle b k b a c k c a",
+      "eqangle b q b a c q c a",
+      "eqangle h a h a b c b c",
+      "eqangle h a h b b c c a",
+      "eqangle h a h c b c a b",
+      "eqangle h a k h b c k q",
+      "eqangle h a q a b c q h",
+      "eqangle h b h a c a b c",
+      "eqangle h b h b c a c a",
+      "eqangle h b h c c a a b",
+      "eqangle h b k h c a k q",
+      "eqangle h b q a c a q h",
+      "eqangle h c h a a b b c",
+      "eqangle h c h b a b c a",
+      "eqangle h c h c a b a b",
+      "eqangle h c k h a b k q",
+      "eqangle h c q a a b q h",
+      "eqangle k h h a k q b c",
+      "eqangle k h h b k q c a",
+      "eqangle k h h c k q a b",
+      "eqangle k h k h k q k q",
+      "eqangle k h q a k q q h",
+      "eqangle m b b c b c m c",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o k k a k a o a",
+      "eqangle o q q a q a o a",
+      "eqangle o1 k k q k q o1 q",
+      "eqangle o1 q q h q h o1 h",
+      "eqangle o2 f f k f k o2 k",
+      "eqangle o2 k k m k m o2 m",
+      "eqangle q a h a q h b c",
+      "eqangle q a h b q h c a",
+      "eqangle q a h c q h a b",
+      "eqangle q a k h q h k q",
+      "eqangle q a q a q h q h",
+      "midpoint m b c",
+      "on_circle k o a",
+      "on_circle q o a",
+      "on_dia k h q",
+      "on_dia q a h",
+      "on_line f b c",
+      "on_line f h a",
+      "orthocenter h a b c",
+      "perp h a b c",
+      "perp h b c a",
+      "perp h c a b",
+      "perp k h k q",
+      "perp q a q h",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "f",
+      "o2",
+      "o1",
+      "h",
+      "m",
+      "q",
+      "b",
+      "k",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 3,
+      "total_facts": 67
+    }
+  },
+  "translated_imo_2015_p4": {
+    "proven": false,
+    "target": "coll x o a",
+    "initial_facts": 36,
+    "derived_facts": 17,
+    "total_facts": 53,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic f a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o f o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic g a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o g o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle a e e d e d a d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a e a d"
+        ]
+      },
+      {
+        "fact": "eqangle o1 f f b f b o1 b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 f o1 b"
+        ]
+      },
+      {
+        "fact": "eqangle a g g d g d a d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a g a d"
+        ]
+      },
+      {
+        "fact": "eqangle o f f a f a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o f o a"
+        ]
+      },
+      {
+        "fact": "eqangle o2 c c e c e o2 e",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 c o2 e"
+        ]
+      },
+      {
+        "fact": "eqangle a f f d f d a d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a f a d"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o1 k k b k b o1 b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 k o1 b"
+        ]
+      },
+      {
+        "fact": "eqangle o g g a g a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o g o a"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle o2 g g c g c o2 c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 g o2 c"
+        ]
+      },
+      {
+        "fact": "eqangle o1 b b d b d o1 d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 b o1 d"
+        ]
+      },
+      {
+        "fact": "eqangle o2 l l c l c o2 c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 l o2 c"
+        ]
+      },
+      {
+        "fact": "eqangle b f b a c f c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic f a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b g b a c g c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic g a b c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "circle o1 f b d",
+      "circle o2 g c e",
+      "coll d b c",
+      "coll e b c",
+      "coll k a b",
+      "coll l a c",
+      "coll x f k",
+      "coll x l g",
+      "cong a e a d",
+      "cong a f a d",
+      "cong a g a d",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o f o a",
+      "cong o g o a",
+      "cong o1 b o1 d",
+      "cong o1 f o1 b",
+      "cong o1 k o1 b",
+      "cong o2 c o2 e",
+      "cong o2 g o2 c",
+      "cong o2 l o2 c",
+      "cyclic f a b c",
+      "cyclic g a b c",
+      "eqangle a e e d e d a d",
+      "eqangle a f f d f d a d",
+      "eqangle a g g d g d a d",
+      "eqangle b f b a c f c a",
+      "eqangle b g b a c g c a",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o f f a f a o a",
+      "eqangle o g g a g a o a",
+      "eqangle o1 b b d b d o1 d",
+      "eqangle o1 f f b f b o1 b",
+      "eqangle o1 k k b k b o1 b",
+      "eqangle o2 c c e c e o2 e",
+      "eqangle o2 g g c g c o2 c",
+      "eqangle o2 l l c l c o2 c",
+      "on_circle e a d",
+      "on_circle f a d",
+      "on_circle f o a",
+      "on_circle g a d",
+      "on_circle g o a",
+      "on_circle k o1 b",
+      "on_circle l o2 c",
+      "on_line d b c",
+      "on_line e b c",
+      "on_line k a b",
+      "on_line l a c",
+      "on_line x f k",
+      "on_line x l g",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "x",
+      "d",
+      "l",
+      "e",
+      "f",
+      "o2",
+      "o1",
+      "g",
+      "b",
+      "k",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 6,
+      "total_facts": 53
+    }
+  },
+  "translated_imo_2016_p1": {
+    "proven": false,
+    "target": "coll y b d",
+    "initial_facts": 32,
+    "derived_facts": 4,
+    "total_facts": 36,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle d a a c a c d c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong d a d c"
+        ]
+      },
+      {
+        "fact": "eqangle m c c f c f m f",
+        "rule": "rule_13",
+        "supporting": [
+          "cong m c m f"
+        ]
+      },
+      {
+        "fact": "eqangle f a a b a b f b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f a f b"
+        ]
+      },
+      {
+        "fact": "eqangle e a a d a d e d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e a e d"
+        ]
+      }
+    ],
+    "all_facts": [
+      "angle_bisector f b a z",
+      "angle_mirror e c a d",
+      "coll c a f",
+      "coll d a z",
+      "coll m c f",
+      "coll y e m",
+      "coll y f x",
+      "cong d a d c",
+      "cong e a e d",
+      "cong e a m x",
+      "cong e x a m",
+      "cong f a f b",
+      "cong m c m f",
+      "eqangle a b a f a f a z",
+      "eqangle a c a d a d a e",
+      "eqangle a d a c c a c d",
+      "eqangle a e a d d a d e",
+      "eqangle a f a b b a b f",
+      "eqangle d a a c a c d c",
+      "eqangle e a a d a d e d",
+      "eqangle f a a b a b f b",
+      "eqangle m c c f c f m f",
+      "midpoint m c f",
+      "on_bline d a c",
+      "on_bline e a d",
+      "on_bline f a b",
+      "on_line c a f",
+      "on_line d a z",
+      "on_line y e m",
+      "on_line y f x",
+      "on_tline c b f b",
+      "para e a m x",
+      "para e x a m",
+      "parallelogram e a m x",
+      "perp c b f b",
+      "triangle a b z"
+    ],
+    "point_set": [
+      "x",
+      "c",
+      "z",
+      "d",
+      "e",
+      "f",
+      "m",
+      "y",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 5,
+      "total_facts": 36
+    }
+  },
+  "translated_imo_2017_p4": {
+    "proven": false,
+    "target": "perp k t o1 t",
+    "initial_facts": 24,
+    "derived_facts": 12,
+    "total_facts": 36,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "eqangle a r b r o r o r",
+        "rule": "rule_8",
+        "supporting": [
+          "perp a r o r",
+          "perp b r o r"
+        ]
+      },
+      {
+        "fact": "eqangle b r a r o r o r",
+        "rule": "rule_8",
+        "supporting": [
+          "perp b r o r",
+          "perp a r o r"
+        ]
+      },
+      {
+        "fact": "eqangle o k k s k s o s",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o k o s"
+        ]
+      },
+      {
+        "fact": "eqangle s r r t r t s t",
+        "rule": "rule_13",
+        "supporting": [
+          "cong s r s t"
+        ]
+      },
+      {
+        "fact": "eqangle o1 j j s j s o1 s",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 j o1 s"
+        ]
+      },
+      {
+        "fact": "eqangle o1 a a s a s o1 s",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 a o1 s"
+        ]
+      },
+      {
+        "fact": "eqangle o r r s r s o s",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o r o s"
+        ]
+      },
+      {
+        "fact": "eqangle o1 s s t s t o1 t",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 s o1 t"
+        ]
+      },
+      {
+        "fact": "eqangle o1 b b s b s o1 s",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 b o1 s"
+        ]
+      },
+      {
+        "fact": "eqangle o j j s j s o s",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o j o s"
+        ]
+      },
+      {
+        "fact": "eqangle a r a r o r o r",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle a r b r o r o r",
+          "eqangle b r a r o r o r"
+        ]
+      },
+      {
+        "fact": "eqangle b r b r o r o r",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle b r a r o r o r",
+          "eqangle a r b r o r o r"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o1 j s t",
+      "coll k j a",
+      "coll t r s",
+      "cong o j o s",
+      "cong o k o s",
+      "cong o r o s",
+      "cong o1 a o1 s",
+      "cong o1 b o1 s",
+      "cong o1 j o1 s",
+      "cong o1 s o1 t",
+      "cong s r s t",
+      "eqangle a r a r o r o r",
+      "eqangle a r b r o r o r",
+      "eqangle b r a r o r o r",
+      "eqangle b r b r o r o r",
+      "eqangle o j j s j s o s",
+      "eqangle o k k s k s o s",
+      "eqangle o r r s r s o s",
+      "eqangle o1 a a s a s o1 s",
+      "eqangle o1 b b s b s o1 s",
+      "eqangle o1 j j s j s o1 s",
+      "eqangle o1 s s t s t o1 t",
+      "eqangle r o r s s r s o",
+      "eqangle s r r t r t s t",
+      "mirror t r s",
+      "on_bline o r s",
+      "on_circle a o1 s",
+      "on_circle b o1 s",
+      "on_circle j o s",
+      "on_circle k o s",
+      "on_line k j a",
+      "on_tline a r o r",
+      "on_tline b r o r",
+      "perp a r o r",
+      "perp b r o r",
+      "segment r s"
+    ],
+    "point_set": [
+      "o",
+      "r",
+      "o1",
+      "t",
+      "j",
+      "b",
+      "s",
+      "k",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 2,
+      "total_facts": 36
+    }
+  },
+  "translated_imo_2018_p1": {
+    "proven": false,
+    "target": "para d e f g",
+    "initial_facts": 20,
+    "derived_facts": 11,
+    "total_facts": 31,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic f a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o f o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "cyclic g a b c",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o g o a",
+          "cong o a o b",
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle a e e d e d a d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a e a d"
+        ]
+      },
+      {
+        "fact": "eqangle o f f a f a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o f o a"
+        ]
+      },
+      {
+        "fact": "eqangle g e e c e c g c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong g e g c"
+        ]
+      },
+      {
+        "fact": "eqangle o a a b a b o b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o a o b"
+        ]
+      },
+      {
+        "fact": "eqangle o g g a g a o a",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o g o a"
+        ]
+      },
+      {
+        "fact": "eqangle o b b c b c o c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o b o c"
+        ]
+      },
+      {
+        "fact": "eqangle f b b d b d f d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong f b f d"
+        ]
+      },
+      {
+        "fact": "eqangle b f b a c f c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic f a b c"
+        ]
+      },
+      {
+        "fact": "eqangle b g b a c g c a",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic g a b c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o a b c",
+      "coll d a b",
+      "coll e a c",
+      "cong a e a d",
+      "cong f b f d",
+      "cong g e g c",
+      "cong o a o b",
+      "cong o b o c",
+      "cong o f o a",
+      "cong o g o a",
+      "cyclic f a b c",
+      "cyclic g a b c",
+      "eqangle a e e d e d a d",
+      "eqangle b f b a c f c a",
+      "eqangle b f b d d b d f",
+      "eqangle b g b a c g c a",
+      "eqangle e g e c c e c g",
+      "eqangle f b b d b d f d",
+      "eqangle g e e c e c g c",
+      "eqangle o a a b a b o b",
+      "eqangle o b b c b c o c",
+      "eqangle o f f a f a o a",
+      "eqangle o g g a g a o a",
+      "on_bline f b d",
+      "on_bline g e c",
+      "on_circle e a d",
+      "on_circle f o a",
+      "on_circle g o a",
+      "on_line d a b",
+      "on_line e a c",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "o",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "total_facts": 31
+    }
+  },
+  "translated_imo_2019_p2": {
+    "proven": false,
+    "target": "cyclic p q p1 q1",
+    "initial_facts": 19,
+    "derived_facts": 0,
+    "total_facts": 19,
+    "iterations": 1,
+    "proof_steps": [],
+    "all_facts": [
+      "coll a a1 b",
+      "coll a c b",
+      "coll b b1 b",
+      "coll b c b",
+      "coll p b1 b",
+      "coll q a1 b",
+      "eqangle c q c b c a c f",
+      "eqangle p c p a b c b f",
+      "eqangle3 c q b c a",
+      "eqangle3 p c a b c",
+      "on_line a a1",
+      "on_line a c",
+      "on_line b b1",
+      "on_line b c",
+      "on_line p b1",
+      "on_line q a1",
+      "on_pline p a b",
+      "para p a b c",
+      "triangle "
+    ],
+    "point_set": [
+      "a1",
+      "c",
+      "f",
+      "b1",
+      "p",
+      "q",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "total_facts": 19
+    }
+  },
+  "translated_imo_2019_p6": {
+    "proven": false,
+    "target": "perp a t a i",
+    "initial_facts": 32,
+    "derived_facts": 34,
+    "total_facts": 66,
+    "iterations": 3,
+    "proof_steps": [
+      {
+        "fact": "cyclic q p c e",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o1 q o1 p",
+          "cong o1 p o1 c",
+          "cong o1 c o1 e"
+        ]
+      },
+      {
+        "fact": "cyclic p d e f",
+        "rule": "rule_1",
+        "supporting": [
+          "cong i p i d",
+          "cong i d i e",
+          "cong i e i f"
+        ]
+      },
+      {
+        "fact": "cyclic q p b f",
+        "rule": "rule_1",
+        "supporting": [
+          "cong o2 q o2 p",
+          "cong o2 p o2 b",
+          "cong o2 b o2 f"
+        ]
+      },
+      {
+        "fact": "cyclic r d e f",
+        "rule": "rule_1",
+        "supporting": [
+          "cong i r i d",
+          "cong i d i e",
+          "cong i e i f"
+        ]
+      },
+      {
+        "fact": "eqangle i d i f b c a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i d b c",
+          "perp i f a b"
+        ]
+      },
+      {
+        "fact": "eqangle i d r d b c e f",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i d b c",
+          "perp r d e f"
+        ]
+      },
+      {
+        "fact": "eqangle i d i e b c c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i d b c",
+          "perp i e c a"
+        ]
+      },
+      {
+        "fact": "eqangle i f i d a b b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i f a b",
+          "perp i d b c"
+        ]
+      },
+      {
+        "fact": "eqangle i f r d a b e f",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i f a b",
+          "perp r d e f"
+        ]
+      },
+      {
+        "fact": "eqangle i f i e a b c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i f a b",
+          "perp i e c a"
+        ]
+      },
+      {
+        "fact": "eqangle r d i d e f b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp r d e f",
+          "perp i d b c"
+        ]
+      },
+      {
+        "fact": "eqangle r d i f e f a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp r d e f",
+          "perp i f a b"
+        ]
+      },
+      {
+        "fact": "eqangle r d i e e f c a",
+        "rule": "rule_8",
+        "supporting": [
+          "perp r d e f",
+          "perp i e c a"
+        ]
+      },
+      {
+        "fact": "eqangle i e i d c a b c",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i e c a",
+          "perp i d b c"
+        ]
+      },
+      {
+        "fact": "eqangle i e i f c a a b",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i e c a",
+          "perp i f a b"
+        ]
+      },
+      {
+        "fact": "eqangle i e r d c a e f",
+        "rule": "rule_8",
+        "supporting": [
+          "perp i e c a",
+          "perp r d e f"
+        ]
+      },
+      {
+        "fact": "eqangle o1 q q p q p o1 p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 q o1 p"
+        ]
+      },
+      {
+        "fact": "eqangle i p p d p d i d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong i p i d"
+        ]
+      },
+      {
+        "fact": "eqangle o2 p p b p b o2 b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 p o2 b"
+        ]
+      },
+      {
+        "fact": "eqangle o2 b b f b f o2 f",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 b o2 f"
+        ]
+      },
+      {
+        "fact": "eqangle o1 c c e c e o1 e",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 c o1 e"
+        ]
+      },
+      {
+        "fact": "eqangle i e e f e f i f",
+        "rule": "rule_13",
+        "supporting": [
+          "cong i e i f"
+        ]
+      },
+      {
+        "fact": "eqangle o1 p p c p c o1 c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o1 p o1 c"
+        ]
+      },
+      {
+        "fact": "eqangle i d d e d e i e",
+        "rule": "rule_13",
+        "supporting": [
+          "cong i d i e"
+        ]
+      },
+      {
+        "fact": "eqangle o2 q q p q p o2 p",
+        "rule": "rule_13",
+        "supporting": [
+          "cong o2 q o2 p"
+        ]
+      },
+      {
+        "fact": "eqangle i r r d r d i d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong i r i d"
+        ]
+      },
+      {
+        "fact": "eqangle c q c p e q e p",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic q p c e"
+        ]
+      },
+      {
+        "fact": "eqangle e p e d f p f d",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic p d e f"
+        ]
+      },
+      {
+        "fact": "eqangle b q b p f q f p",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic q p b f"
+        ]
+      },
+      {
+        "fact": "eqangle e r e d f r f d",
+        "rule": "rule_3",
+        "supporting": [
+          "cyclic r d e f"
+        ]
+      },
+      {
+        "fact": "eqangle i d i d b c b c",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle i d i f b c a b",
+          "eqangle i f i d a b b c"
+        ]
+      },
+      {
+        "fact": "eqangle i f i f a b a b",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle i f i d a b b c",
+          "eqangle i d i f b c a b"
+        ]
+      },
+      {
+        "fact": "eqangle r d r d e f e f",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle r d i d e f b c",
+          "eqangle i d r d b c e f"
+        ]
+      },
+      {
+        "fact": "eqangle i e i e c a c a",
+        "rule": "rule_9",
+        "supporting": [
+          "eqangle i e i d c a b c",
+          "eqangle i d i e b c c a"
+        ]
+      }
+    ],
+    "all_facts": [
+      "circle o1 p c e",
+      "circle o2 p b f",
+      "coll p r a",
+      "coll t i d",
+      "coll t p q",
+      "cong i d i e",
+      "cong i e i f",
+      "cong i p i d",
+      "cong i r i d",
+      "cong o1 c o1 e",
+      "cong o1 p o1 c",
+      "cong o1 q o1 p",
+      "cong o2 b o2 f",
+      "cong o2 p o2 b",
+      "cong o2 q o2 p",
+      "cyclic p d e f",
+      "cyclic q p b f",
+      "cyclic q p c e",
+      "cyclic r d e f",
+      "eqangle a b a i a i a c",
+      "eqangle b c b i b i b a",
+      "eqangle b q b p f q f p",
+      "eqangle c a c i c i c b",
+      "eqangle c q c p e q e p",
+      "eqangle e p e d f p f d",
+      "eqangle e r e d f r f d",
+      "eqangle i d d e d e i e",
+      "eqangle i d i d b c b c",
+      "eqangle i d i e b c c a",
+      "eqangle i d i f b c a b",
+      "eqangle i d r d b c e f",
+      "eqangle i e e f e f i f",
+      "eqangle i e i d c a b c",
+      "eqangle i e i e c a c a",
+      "eqangle i e i f c a a b",
+      "eqangle i e r d c a e f",
+      "eqangle i f i d a b b c",
+      "eqangle i f i e a b c a",
+      "eqangle i f i f a b a b",
+      "eqangle i f r d a b e f",
+      "eqangle i p p d p d i d",
+      "eqangle i r r d r d i d",
+      "eqangle o1 c c e c e o1 e",
+      "eqangle o1 p p c p c o1 c",
+      "eqangle o1 q q p q p o1 p",
+      "eqangle o2 b b f b f o2 f",
+      "eqangle o2 p p b p b o2 b",
+      "eqangle o2 q q p q p o2 p",
+      "eqangle r d i d e f b c",
+      "eqangle r d i e e f c a",
+      "eqangle r d i f e f a b",
+      "eqangle r d r d e f e f",
+      "incenter2 d e f i a b c",
+      "on_circle p i d",
+      "on_circle q o1 p",
+      "on_circle q o2 p",
+      "on_circle r i d",
+      "on_line p r a",
+      "on_line t i d",
+      "on_line t p q",
+      "on_tline r d e f",
+      "perp i d b c",
+      "perp i e c a",
+      "perp i f a b",
+      "perp r d e f",
+      "triangle a b c"
+    ],
+    "point_set": [
+      "c",
+      "d",
+      "i",
+      "e",
+      "f",
+      "r",
+      "o1",
+      "o2",
+      "t",
+      "p",
+      "q",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 4,
+      "total_facts": 66
+    }
+  },
+  "translated_imo_2020_p1": {
+    "proven": false,
+    "target": "cong o a o b",
+    "initial_facts": 25,
+    "derived_facts": 0,
+    "total_facts": 25,
+    "iterations": 1,
+    "proof_steps": [],
+    "all_facts": [
+      "angle_bisector a d p",
+      "angle_bisector p a b",
+      "angle_bisector p b a",
+      "angle_bisector p c b",
+      "coll a z b",
+      "coll b u b",
+      "eqangle a b a p a p a c",
+      "eqangle a z a p b a b x",
+      "eqangle b a b p b p b c",
+      "eqangle b c b p b p b c",
+      "eqangle b u b p a b a y",
+      "eqangle p c p v a p a b",
+      "eqangle p d p a p a p c",
+      "eqangle p d p t b p b a",
+      "eqangle p t p a a p a z",
+      "eqangle p v p b b p b u",
+      "on_aline c p v p a b",
+      "on_aline d p t p b a",
+      "on_aline t p a p a z",
+      "on_aline u b p b a y",
+      "on_aline v p b p b u",
+      "on_aline z a p a b x",
+      "on_line a z",
+      "on_line b u",
+      "triangle p a b"
+    ],
+    "point_set": [
+      "x",
+      "c",
+      "z",
+      "d",
+      "v",
+      "u",
+      "t",
+      "p",
+      "y",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "related_to_target": 0,
+      "total_facts": 25
+    }
+  },
+  "translated_imo_2021_p3": {
+    "proven": false,
+    "target": "coll o1 o2 y",
+    "initial_facts": 24,
+    "derived_facts": 5,
+    "total_facts": 29,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle b c c b c b b b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b c b b"
+        ]
+      },
+      {
+        "fact": "eqangle a d d c d c a c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a d a c"
+        ]
+      },
+      {
+        "fact": "eqangle a c c c c c a c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong a c a c"
+        ]
+      },
+      {
+        "fact": "eqangle e x x d x d e d",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e x e d"
+        ]
+      },
+      {
+        "fact": "eqangle e d d c d c e c",
+        "rule": "rule_13",
+        "supporting": [
+          "cong e d e c"
+        ]
+      }
+    ],
+    "all_facts": [
+      "angle_bisector b a c",
+      "circle a d c",
+      "circle e x d",
+      "coll a b b",
+      "coll a c b",
+      "coll b c b",
+      "coll e f b",
+      "cong a c a c",
+      "cong a d a c",
+      "cong b c b b",
+      "cong e d e c",
+      "cong e x e d",
+      "eqangle a c c c c c a c",
+      "eqangle a d a d b c b e",
+      "eqangle a d a d c b c e",
+      "eqangle a d d c d c a c",
+      "eqangle b c c b c b b b",
+      "eqangle c a c b c b c c",
+      "eqangle c b c b b c b b",
+      "eqangle e d d c d c e c",
+      "eqangle e x x d x d e d",
+      "on_aline d a d b c",
+      "on_aline d a d c b",
+      "on_bline b c",
+      "on_line a b",
+      "on_line a c",
+      "on_line b c",
+      "on_line e f",
+      "triangle "
+    ],
+    "point_set": [
+      "x",
+      "c",
+      "d",
+      "e",
+      "f",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 4,
+      "total_facts": 29
+    }
+  },
+  "translated_imo_2022_p4": {
+    "proven": false,
+    "target": "cyclic p q r s",
+    "initial_facts": 22,
+    "derived_facts": 2,
+    "total_facts": 24,
+    "iterations": 2,
+    "proof_steps": [
+      {
+        "fact": "eqangle c e e b e b c b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong c e c b"
+        ]
+      },
+      {
+        "fact": "eqangle b d d b d b b b",
+        "rule": "rule_13",
+        "supporting": [
+          "cong b d b b"
+        ]
+      }
+    ],
+    "all_facts": [
+      "coll a b b",
+      "coll a e b",
+      "coll c d b",
+      "coll c t b",
+      "coll d t b",
+      "cong b d b b",
+      "cong c e c b",
+      "cong d b c c",
+      "eqangle b d d b d b b b",
+      "eqangle c e e b e b c b",
+      "eqangle d b d b b d b b",
+      "eqangle e c e b b e b c",
+      "eqangle t e t b c b c e",
+      "eqangle2 b t e",
+      "eqdistance d b c",
+      "free ",
+      "on_bline b d",
+      "on_bline c e",
+      "on_line a b",
+      "on_line a e",
+      "on_line c d",
+      "on_line c t",
+      "on_line d t",
+      "segment "
+    ],
+    "point_set": [
+      "c",
+      "d",
+      "e",
+      "t",
+      "b",
+      "a"
+    ],
+    "hit_max": false,
+    "closeness": {
+      "same_predicate": 0,
+      "total_facts": 24
+    }
+  }
+}

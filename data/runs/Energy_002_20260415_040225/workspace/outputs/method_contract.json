@@ -1,0 +1,52 @@
+{
+  "task": "Geospatial levelized-cost model for African green hydrogen to Europe via ammonia shipping and reconversion by 2030",
+  "method_name": "GeoH2-inspired transparent LCOH model",
+  "primary_methodology": [
+    "Levelized cost of hydrogen (LCOH) calculation with capital recovery factor (CRF)",
+    "Optimal PV/wind blend based on spatial potentials mapped to capacity factors",
+    "Ammonia synthesis cost modeling (Haber-Bosch process)",
+    "Ocean shipping cost model for liquid ammonia carriers",
+    "Ammonia cracking (reconversion) at European port",
+    "European green hydrogen production baseline for comparison"
+  ],
+  "scenarios": {
+    "financing": [
+      {"name": "baseline_africa", "wacc": 0.10, "description": "Typical African project finance"},
+      {"name": "de_risked_africa", "wacc": 0.05, "description": "MDB-guaranteed / de-risked financing"},
+      {"name": "optimistic_africa", "wacc": 0.03, "description": "Concessional / European-level financing"},
+      {"name": "europe_baseline", "wacc": 0.04, "description": "European production baseline"}
+    ],
+    "policy": [
+      {"name": "no_carbon", "carbon_price": 0},
+      {"name": "moderate_carbon", "carbon_price": 50},
+      {"name": "high_carbon", "carbon_price": 100}
+    ]
+  },
+  "key_parameters_2030": {
+    "pv_capex_usd_kw": 400,
+    "wind_capex_usd_kw": 900,
+    "electrolyzer_capex_usd_kw": 500,
+    "electrolyzer_efficiency_kwh_kg": 50,
+    "nh3_synthesis_capex_usd_tpd": 1200,
+    "nh3_h2_intensity_t_per_t": 0.176,
+    "cracking_capex_usd_tpd": 800,
+    "cracking_energy_mwh_t": 8.0
+  },
+  "assumptions": [
+    "All costs in 2030 USD",
+    "Linear mapping from normalized potentials (0-1) to capacity factors",
+    "70/30 optimal blend of cheaper renewable source",
+    "Electrolyzer load factor 60% to account for intermittency",
+    "Ship speed 350 km/day average",
+    "Ammonia boil-off rate 0.1%/day",
+    "Cracking efficiency 95%",
+    "EU land cost premium 1.5x on equipment"
+  ],
+  "limitations": [
+    "Only 30 simulated hex sites available (not full continental coverage)",
+    "No temporal weather data - uses static potential-to-CF mapping",
+    "Simplified shipping model without port congestion or canal fees",
+    "No grid expansion cost optimization",
+    "Single European demand point assumed (Rotterdam-equivalent)"
+  ]
+}

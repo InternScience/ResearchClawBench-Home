@@ -1,0 +1,21 @@
+{
+  "task": "Build a unified autoregressive framework that decouples visual encoding to perform both multimodal understanding and visual generation within a single Transformer architecture.",
+  "named_commitments": [
+    "unified autoregressive framework",
+    "decoupled visual encoding",
+    "single Transformer architecture",
+    "support multimodal understanding",
+    "support visual generation",
+    "analyze provided equation OCR/formula case",
+    "analyze provided meme semantic-understanding case"
+  ],
+  "expected_outputs": [
+    "method specification grounded in related work",
+    "prototype architecture and token flow diagrams/figures",
+    "understanding-side evaluation artifact",
+    "generation-side or generative-capability proxy artifact",
+    "comparison against single visual encoder baseline",
+    "validation and limitations"
+  ],
+  "notes": "Will implement a minimally faithful prototype analysis and evidence-based evaluation from provided related work and two benchmark images if full-scale training is infeasible in workspace."
+}

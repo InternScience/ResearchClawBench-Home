@@ -1,0 +1,19 @@
+{
+  "named_mechanism": "Trajectory-preserving dynamic feature selection",
+  "definition": "Rank features by evidence of smooth, non-random variation along inferred pseudotime and evaluate whether subsets preserve the full-data neighborhood/trajectory geometry.",
+  "assumptions": [
+    "The dataset contains a dominant continuous progression linked to age/cell-cycle or state transition.",
+    "Pseudotime inferred from a nearest-neighbor graph is meaningful for this preprocessed protein imaging dataset."
+  ],
+  "invariants": [
+    "Use a cell-cell graph or manifold from the full data to define reference trajectory structure.",
+    "Score features using association with pseudotime and smoothness across neighboring cells.",
+    "Evaluate selected subsets against baselines on trajectory preservation metrics."
+  ],
+  "non_negotiable_steps": [
+    "Infer low-dimensional manifold/neighborhood graph from full feature matrix.",
+    "Estimate pseudotime rooted at early-state cells.",
+    "Rank features by dynamicity.",
+    "Compare subset preservation versus variance/random baselines across subset sizes."
+  ]
+}

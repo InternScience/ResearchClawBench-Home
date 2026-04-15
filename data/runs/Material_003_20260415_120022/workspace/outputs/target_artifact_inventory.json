@@ -1,0 +1,14 @@
+{
+  "required_artifacts": {
+    "data_overview_figure": {"status": "satisfied", "path": "report/images/figure1_data_overview.png"},
+    "gp_calibration_figure": {"status": "satisfied", "path": "report/images/figure2_gp_calibration.png"},
+    "vitrimer_predictions_figure": {"status": "satisfied", "path": "report/images/figure3_vitrimer_predictions.png"},
+    "vae_inverse_design_figure": {"status": "satisfied", "path": "report/images/figure4_vae_inverse_design.png"},
+    "validation_comparison_figure": {"status": "satisfied", "path": "report/images/figure5_validation.png"},
+    "gp_calibration_results_csv": {"status": "satisfied", "path": "outputs/gp_calibration_results.csv"},
+    "gp_vitrimer_predictions_csv": {"status": "satisfied", "path": "outputs/gp_vitrimer_predictions.csv"},
+    "gp_metrics_json": {"status": "satisfied", "path": "outputs/gp_metrics.json"},
+    "generated_candidates_csv": {"status": "satisfied", "path": "outputs/generated_candidates.csv"},
+    "research_report": {"status": "satisfied", "path": "report/report.md"}
+  }
+}

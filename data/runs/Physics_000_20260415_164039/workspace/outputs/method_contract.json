@@ -1,0 +1,41 @@
+{
+  "task_name": "Multi-Component Icosahedral Nanocluster Design",
+  "core_method": "Hexagonal lattice-based shell stacking theory for multi-component icosahedral aggregates",
+  "key_components": [
+    "Hexagonal coordinate system (h,k) for navigating shell positions",
+    "Mackay magic number sequence: [1, 13, 55, 147, 309]",
+    "New magic number sequence (b=5): [1, 13, 45, 117, 239, 431]",
+    "Chiral categories: MC (Mackay), BG (Bergman), Ch1-Ch5 (chiral variants)",
+    "Size mismatch parameter δ = |r_outer - r_inner| / r_inner for adjacent shells",
+    "Lennard-Jones potential parameters (ε, σ) for interatomic interactions",
+    "Monte Carlo growth simulation with conservative/mismatch-driven/random paths",
+    "Shell energy minimization as stability criterion"
+  ],
+  "named_methods": [
+    "Hexagonal lattice shell stacking theory",
+    "Size mismatch optimization between adjacent shells",
+    "Dynamic growth simulation with path probability weights",
+    "Lennard-Jones potential energy calculations",
+    "Chiral category classification (MC, BG, Ch1-Ch5)"
+  ],
+  "comparison_structure": [
+    "Compare Mackay vs new magic number sequences",
+    "Compare chiral category energies (MC vs Ch1 vs BG)",
+    "Compare theoretical vs experimental size mismatch values",
+    "Compare different atomic pair compatibility"
+  ],
+  "expected_figure_families": [
+    "Hexagonal lattice coordinate visualization",
+    "Size mismatch vs stability plots by chiral category",
+    "Growth dynamics time series",
+    "Path selection bar charts",
+    "Shell energy comparison plots",
+    "Experimental vs theoretical mismatch parity plot"
+  ],
+  "validation_design": [
+    "Compare predicted shell energies against normalized reference values",
+    "Validate theoretical size mismatch against experimental measurements",
+    "Verify growth simulation convergence to optimal mismatch values",
+    "Cross-check LJ potential predictions with atomic pair data"
+  ]
+}

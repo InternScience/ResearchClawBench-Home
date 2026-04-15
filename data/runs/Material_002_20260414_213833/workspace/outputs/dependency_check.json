@@ -1,0 +1,14 @@
+{
+  "python_packages": {
+    "numpy": "available",
+    "pandas": "available",
+    "matplotlib": "available",
+    "seaborn": "available",
+    "ase": "missing"
+  },
+  "pdf_reading": {
+    "ReadPDF": "failed on local files",
+    "pdftotext": "available"
+  },
+  "implication": "Analysis can proceed with text parsing and plotting. Exact ASE-based structure generation or MACE inference would require installing additional packages and obtaining model weights."
+}

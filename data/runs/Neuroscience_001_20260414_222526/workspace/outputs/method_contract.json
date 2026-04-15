@@ -1,0 +1,20 @@
+{
+  "task_focus": "Analyze the provided ensemble of 50 pre-trained connectome-constrained deep mechanistic network models for Drosophila optic-flow computation without retraining.",
+  "named_method_commitments": [
+    "Connectome-constrained DMN structure must follow the provided connectome configuration.",
+    "Task setting is optic flow estimation using the provided pre-trained models and validation artifacts.",
+    "Unknown neuron kinetics and synaptic strengths are learned parameters; analysis should characterize them where recoverable from saved artifacts.",
+    "Quantitative analysis should address motion-detection mechanisms and source-specific cell-type structure."
+  ],
+  "allowed_scope_for_this_workspace": [
+    "Use provided pretrained checkpoints, metadata, validation-loss traces, and clustering pickles.",
+    "Do not claim full retraining or full neuron-level simulation unless directly executable from workspace artifacts."
+  ],
+  "primary_outputs_expected": [
+    "Ensemble-level training/validation summary across 50 models",
+    "Connectome and cell-type inventory summary",
+    "Cell-type mechanism summary from UMAP/clustering artifacts",
+    "Traceable figures and exported tables",
+    "Validation section separating direct verification from assumptions"
+  ]
+}

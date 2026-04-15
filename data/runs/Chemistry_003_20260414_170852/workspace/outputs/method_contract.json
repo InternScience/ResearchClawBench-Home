@@ -1,0 +1,51 @@
+{
+  "task_summary": "Develop an ML interatomic potential analysis for energies, forces, and interpretable latent charges with emphasis on long-range electrostatics using provided benchmark datasets.",
+  "named_method": "Latent Ewald Summation (LES)",
+  "primary_inputs": [
+    "atomic positions",
+    "element types",
+    "optional periodic boundary conditions",
+    "optional total charge"
+  ],
+  "primary_outputs": [
+    "total potential energy",
+    "atomic forces",
+    "interpretable latent charges"
+  ],
+  "derived_physical_quantities": [
+    "dipole moments",
+    "quadrupole moments",
+    "Born effective charges"
+  ],
+  "datasets": [
+    {
+      "name": "random_charges",
+      "path": "data/random_charges.xyz",
+      "target_use": "recover exact atomic charges from energies and forces; Fig. 1-style benchmark"
+    },
+    {
+      "name": "charged_dimer",
+      "path": "data/charged_dimer.xyz",
+      "target_use": "evaluate binding energy curves beyond short-range cutoff; Fig. 3-style benchmark"
+    },
+    {
+      "name": "ag3_chargestates",
+      "path": "data/ag3_chargestates.xyz",
+      "target_use": "distinguish charge-state-dependent PES for Ag3; Fig. 5e and Table 1-style benchmark"
+    }
+  ],
+  "required_report_elements": [
+    "methodology",
+    "results",
+    "discussion",
+    "data overview",
+    "main results",
+    "validation/comparison plots"
+  ],
+  "methodological_commitments": [
+    "use provided datasets as task-specific benchmarks",
+    "preserve charge-state/group distinctions where relevant",
+    "produce interpretable latent-charge-related analysis rather than only generic regression metrics",
+    "benchmark long-range electrostatics behavior against short-range limitations where possible"
+  ]
+}

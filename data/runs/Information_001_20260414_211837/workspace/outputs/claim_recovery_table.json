@@ -1,0 +1,18 @@
+{
+  "claims": [
+    {
+      "claim": "Small objects like license plates occupy <1% area",
+      "support": "demo1_bbox_hist.png, bbox areas computed",
+      "artifact": "outputs/demo1.png_small_bboxes.json"
+    },
+    {
+      "claim": "Cropping enables fine-grained view",
+      "support": "Crop figures in report/images/",
+      "artifact": "Multiple crop PNGs"
+    },
+    {
+      "claim": "method_case shows MLLM improvement with ViCrop",
+      "support": "Visual inspection of method_case.png"
+    }
+  ]
+}

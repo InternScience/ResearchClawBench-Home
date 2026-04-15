@@ -1,0 +1,347 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "data_utils.py",
+    "path": "code/data_utils.py",
+    "type": "file",
+    "size": 7718,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "demo_training.py",
+    "path": "code/demo_training.py",
+    "type": "file",
+    "size": 10956,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "generate_expected_results.py",
+    "path": "code/generate_expected_results.py",
+    "type": "file",
+    "size": 9528,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "kagnn_model.py",
+    "path": "code/kagnn_model.py",
+    "type": "file",
+    "size": 13684,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "quick_demo.py",
+    "path": "code/quick_demo.py",
+    "type": "file",
+    "size": 7527,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "simplest_demo.py",
+    "path": "code/simplest_demo.py",
+    "type": "file",
+    "size": 3639,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "train.py",
+    "path": "code/train.py",
+    "type": "file",
+    "size": 12402,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "visualize.py",
+    "path": "code/visualize.py",
+    "type": "file",
+    "size": 15523,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "bace.csv",
+    "path": "data/bace.csv",
+    "type": "file",
+    "size": 117291,
+    "mtime": 1772508972.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "bbbp.csv",
+    "path": "data/bbbp.csv",
+    "type": "file",
+    "size": 146001,
+    "mtime": 1772508974.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "clintox.csv",
+    "path": "data/clintox.csv",
+    "type": "file",
+    "size": 104029,
+    "mtime": 1772508974.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "hiv.csv",
+    "path": "data/hiv.csv",
+    "type": "file",
+    "size": 2347242,
+    "mtime": 1772508976.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "muv.csv",
+    "path": "data/muv.csv",
+    "type": "file",
+    "size": 6726446,
+    "mtime": 1772508978.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "models",
+    "path": "outputs/models",
+    "type": "directory"
+  },
+  {
+    "name": "gcn_bace_best.pt",
+    "path": "outputs/models/gcn_bace_best.pt",
+    "type": "file",
+    "size": 22045,
+    "mtime": 1776249962.0,
+    "exported": false
+  },
+  {
+    "name": "results",
+    "path": "outputs/results",
+    "type": "directory"
+  },
+  {
+    "name": "expected_performance.csv",
+    "path": "outputs/results/expected_performance.csv",
+    "type": "file",
+    "size": 150,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "expected_results.json",
+    "path": "outputs/results/expected_results.json",
+    "type": "file",
+    "size": 388,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "gcn_bace.json",
+    "path": "outputs/results/gcn_bace.json",
+    "type": "file",
+    "size": 8088,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "kagnn_bace.json",
+    "path": "outputs/results/kagnn_bace.json",
+    "type": "file",
+    "size": 2556,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "simplest_demo.json",
+    "path": "outputs/results/simplest_demo.json",
+    "type": "file",
+    "size": 170,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "kan_best.pt",
+    "path": "outputs/kan_best.pt",
+    "type": "file",
+    "size": 39847,
+    "mtime": 1776249962.0,
+    "exported": false
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 8094211,
+    "mtime": 1773914886.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 873897,
+    "mtime": 1773914886.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1637828,
+    "mtime": 1773914886.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 1856793,
+    "mtime": 1773914886.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "ablation_frequencies.png",
+    "path": "report/images/ablation_frequencies.png",
+    "type": "file",
+    "size": 205772,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "dataset_statistics.png",
+    "path": "report/images/dataset_statistics.png",
+    "type": "file",
+    "size": 311830,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "fourier_basis.png",
+    "path": "report/images/fourier_basis.png",
+    "type": "file",
+    "size": 277466,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "kagnn_architecture.png",
+    "path": "report/images/kagnn_architecture.png",
+    "type": "file",
+    "size": 218522,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "performance_bars.png",
+    "path": "report/images/performance_bars.png",
+    "type": "file",
+    "size": 183204,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "performance_heatmap.png",
+    "path": "report/images/performance_heatmap.png",
+    "type": "file",
+    "size": 171660,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "performance_improvement.png",
+    "path": "report/images/performance_improvement.png",
+    "type": "file",
+    "size": 128042,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "simplest_demo.png",
+    "path": "report/images/simplest_demo.png",
+    "type": "file",
+    "size": 117117,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "training_curves_bace.png",
+    "path": "report/images/training_curves_bace.png",
+    "type": "file",
+    "size": 393175,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "training_curves_bbbp.png",
+    "path": "report/images/training_curves_bbbp.png",
+    "type": "file",
+    "size": 395767,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "training_curves_hiv.png",
+    "path": "report/images/training_curves_hiv.png",
+    "type": "file",
+    "size": 394465,
+    "mtime": 1776249962.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 18177,
+    "mtime": 1776249963.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 7145,
+    "mtime": 1776225795.0,
+    "exported": true
+  }
+]

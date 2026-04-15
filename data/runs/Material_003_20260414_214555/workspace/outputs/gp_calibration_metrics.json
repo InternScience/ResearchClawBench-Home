@@ -1,0 +1,10 @@
+{
+  "metrics_cv5": {
+    "mae": 43.92187096176933,
+    "rmse": 56.38679501021874,
+    "r2": 0.650735692266408,
+    "pearson_r": 0.8110635522255909,
+    "coverage_within_2sigma": 0.4847457627118644
+  },
+  "fitted_kernel": "2.2**2 * RBF(length_scale=329) + WhiteKernel(noise_level=1e-05)"
+}

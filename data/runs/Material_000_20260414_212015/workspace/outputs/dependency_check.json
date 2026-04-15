@@ -1,0 +1,10 @@
+{
+  "torch": false,
+  "torch_geometric": false,
+  "sklearn": true,
+  "matplotlib": true,
+  "seaborn": true,
+  "pandas": true,
+  "numpy": true,
+  "status": "PyTorch and PyTorch Geometric unavailable in current environment; exact graph neural pretraining pipeline may be blocked unless installable. Fallback may require inspecting whether .pt files are plain pickle tensors/arrays loadable another way or installing torch."
+}

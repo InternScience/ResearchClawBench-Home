@@ -1,0 +1,17 @@
+{
+  "property_prediction_surrogate": {
+    "definition": "Cross-validated regression from provided composition descriptor-derived features to synthetic target property.",
+    "assumptions": ["Dataset is a compact synthetic benchmark", "Graph connectivity is shared across samples"],
+    "invariants": ["Use only information present in the provided dataset file", "Report cross-validated metrics rather than only training fit"]
+  },
+  "structure_generation_proxy": {
+    "definition": "Rank candidate lattice-like axis pairs by low anisotropy and near-central mean-axis preference.",
+    "assumptions": ["Two repeated sequences stand in for generated structural coordinates", "Candidate score is a heuristic proxy, not a physics-grounded energy"],
+    "invariants": ["Export per-candidate table", "Preserve source sequences without modifying raw values"]
+  },
+  "autonomous_optimization_proxy": {
+    "definition": "Gradient-based search over bounded temperature-time space on a smooth surrogate objective initialized from provided starting conditions.",
+    "assumptions": ["Objective is synthetic and chosen for demonstration", "Bounds and initialization come directly from the dataset"],
+    "invariants": ["Respect provided process bounds", "Save full optimization trajectory and final recommendation"]
+  }
+}

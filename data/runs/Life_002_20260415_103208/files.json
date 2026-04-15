@@ -1,0 +1,230 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "generate_figures.py",
+    "path": "code/generate_figures.py",
+    "type": "file",
+    "size": 10708,
+    "mtime": 1776254148.0,
+    "exported": true
+  },
+  {
+    "name": "structural_alignment.py",
+    "path": "code/structural_alignment.py",
+    "type": "file",
+    "size": 11547,
+    "mtime": 1776254148.0,
+    "exported": true
+  },
+  {
+    "name": "structural_alignment_v2.py",
+    "path": "code/structural_alignment_v2.py",
+    "type": "file",
+    "size": 10265,
+    "mtime": 1776254148.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "6n40.pdb",
+    "path": "data/6n40.pdb",
+    "type": "file",
+    "size": 483975,
+    "mtime": 1772677396.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "7xg4.pdb",
+    "path": "data/7xg4.pdb",
+    "type": "file",
+    "size": 2481678,
+    "mtime": 1772677394.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "alignment_results.json",
+    "path": "outputs/alignment_results.json",
+    "type": "file",
+    "size": 6041,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "chain_info.json",
+    "path": "outputs/chain_info.json",
+    "type": "file",
+    "size": 754,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "complex_alignment.json",
+    "path": "outputs/complex_alignment.json",
+    "type": "file",
+    "size": 631,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 821,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "summary_statistics.json",
+    "path": "outputs/summary_statistics.json",
+    "type": "file",
+    "size": 338,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "superimposition_vectors.json",
+    "path": "outputs/superimposition_vectors.json",
+    "type": "file",
+    "size": 1000,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 7106522,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 2048789,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 2470674,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 4291826,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "alignment_summary.png",
+    "path": "report/images/alignment_summary.png",
+    "type": "file",
+    "size": 83171,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "alignment_table.png",
+    "path": "report/images/alignment_table.png",
+    "type": "file",
+    "size": 109824,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "chain_lengths.png",
+    "path": "report/images/chain_lengths.png",
+    "type": "file",
+    "size": 48917,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "rmsd_barchain.png",
+    "path": "report/images/rmsd_barchain.png",
+    "type": "file",
+    "size": 55197,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "tm_distribution.png",
+    "path": "report/images/tm_distribution.png",
+    "type": "file",
+    "size": 42489,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "tm_score_barchain.png",
+    "path": "report/images/tm_score_barchain.png",
+    "type": "file",
+    "size": 61949,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "tm_vs_aligned.png",
+    "path": "report/images/tm_vs_aligned.png",
+    "type": "file",
+    "size": 77614,
+    "mtime": 1776254146.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 17672,
+    "mtime": 1776254149.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5154,
+    "mtime": 1776220328.0,
+    "exported": true
+  }
+]

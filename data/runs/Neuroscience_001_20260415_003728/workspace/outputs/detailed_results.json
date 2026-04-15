@@ -1,0 +1,160 @@
+{
+  "cell_type_categories": {
+    "Photoreceptors": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8"
+    ],
+    "Lamina": [
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "Lawf1",
+      "Lawf2",
+      "Am"
+    ],
+    "Medulla Intrinsic": [
+      "Mi1",
+      "Mi2",
+      "Mi3",
+      "Mi4",
+      "Mi9",
+      "Mi10",
+      "Mi11",
+      "Mi12",
+      "Mi13",
+      "Mi14",
+      "Mi15"
+    ],
+    "Transmedulla": [
+      "Tm1",
+      "Tm2",
+      "Tm3",
+      "Tm4",
+      "Tm9",
+      "Tm16",
+      "Tm20",
+      "Tm28",
+      "Tm30",
+      "Tm5Y",
+      "Tm5a",
+      "Tm5b",
+      "Tm5c"
+    ],
+    "TmY": [
+      "TmY3",
+      "TmY4",
+      "TmY5a",
+      "TmY9",
+      "TmY10",
+      "TmY13",
+      "TmY14",
+      "TmY15",
+      "TmY18"
+    ],
+    "T-neurons": [
+      "T1",
+      "T2",
+      "T2a",
+      "T3"
+    ],
+    "Centrifugal": [
+      "C2",
+      "C3",
+      "CT1(Lo1)",
+      "CT1(M10)"
+    ],
+    "ON Pathway (T4)": [
+      "T4a",
+      "T4b",
+      "T4c",
+      "T4d"
+    ],
+    "OFF Pathway (T5)": [
+      "T5a",
+      "T5b",
+      "T5c",
+      "T5d"
+    ]
+  },
+  "category_statistics": {
+    "Photoreceptors": {
+      "n_types": 8,
+      "mean_bias": 0.47646090388298035,
+      "std_bias": 0.2007724940776825,
+      "mean_time_const": 0.05159888416528702,
+      "std_time_const": 0.05578038841485977
+    },
+    "Lamina": {
+      "n_types": 8,
+      "mean_bias": 0.24010683596134186,
+      "std_bias": 0.82002192735672,
+      "mean_time_const": 0.03250950202345848,
+      "std_time_const": 0.03835321590304375
+    },
+    "Medulla Intrinsic": {
+      "n_types": 11,
+      "mean_bias": 0.4274637699127197,
+      "std_bias": 0.3422742486000061,
+      "mean_time_const": 0.06407937407493591,
+      "std_time_const": 0.08983810245990753
+    },
+    "Transmedulla": {
+      "n_types": 13,
+      "mean_bias": 0.5575292706489563,
+      "std_bias": 0.18014106154441833,
+      "mean_time_const": 0.06231142580509186,
+      "std_time_const": 0.07640689611434937
+    },
+    "TmY": {
+      "n_types": 9,
+      "mean_bias": 0.4981679916381836,
+      "std_bias": 0.12186694145202637,
+      "mean_time_const": 0.03258119150996208,
+      "std_time_const": 0.04496069252490997
+    },
+    "T-neurons": {
+      "n_types": 4,
+      "mean_bias": 0.48310387134552,
+      "std_bias": 0.16551782190799713,
+      "mean_time_const": 0.033285196870565414,
+      "std_time_const": 0.04427667334675789
+    },
+    "Centrifugal": {
+      "n_types": 4,
+      "mean_bias": -0.31844380497932434,
+      "std_bias": 0.4750344753265381,
+      "mean_time_const": 0.02061188779771328,
+      "std_time_const": 0.011471137404441833
+    },
+    "ON Pathway (T4)": {
+      "n_types": 4,
+      "mean_bias": 0.543704628944397,
+      "std_bias": 0.0973116010427475,
+      "mean_time_const": 0.023935504257678986,
+      "std_time_const": 0.026736384257674217
+    },
+    "OFF Pathway (T5)": {
+      "n_types": 4,
+      "mean_bias": 0.6182103157043457,
+      "std_bias": 0.07016777992248535,
+      "mean_time_const": 0.037082985043525696,
+      "std_time_const": 0.03609601780772209
+    }
+  },
+  "on_off_comparison": {
+    "on_mean_bias": 0.543704628944397,
+    "off_mean_bias": 0.6182103157043457,
+    "on_mean_tc": 0.023935504257678986,
+    "off_mean_tc": 0.037082985043525696,
+    "bias_difference": -0.07450568675994873,
+    "tc_difference": -0.01314748078584671
+  }
+}

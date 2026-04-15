@@ -1,0 +1,60 @@
+{
+  "nasa_optimized_params": {
+    "Rs_p": 1e-06,
+    "Rs_n": 1.1401911645789174e-06,
+    "k_p": 2.6323640086348764e-11,
+    "k_n": 2.7827350197107146e-10,
+    "Ds_p": 7.668274989516697e-13,
+    "Ds_n": 4.9966868455178e-12,
+    "h_coeff": 5.0,
+    "eps_s_p": 0.5774894291548881,
+    "eps_s_n": 0.5096568836549195,
+    "cs_max_p": 30465.532262745335,
+    "cs_max_n": 28688.983980678066
+  },
+  "cs2_optimized_params": {
+    "Rs_p": 3.7725536507292597e-06,
+    "Rs_n": 8.929437154808626e-06,
+    "k_p": 8.618266974156974e-10,
+    "k_n": 4.698102132058989e-11,
+    "Ds_p": 1e-15,
+    "Ds_n": 2.0852159152066464e-12,
+    "h_coeff": 5.0,
+    "eps_s_p": 0.4025942408045053,
+    "eps_s_n": 0.592237020656913,
+    "cs_max_p": 49850.55772679304,
+    "cs_max_n": 15000.0
+  },
+  "nominal_params": {
+    "Rs_p": 2e-06,
+    "Rs_n": 5e-06,
+    "k_p": 3e-11,
+    "k_n": 2e-11,
+    "Ds_p": 1e-14,
+    "Ds_n": 3e-14,
+    "h_coeff": 15.0,
+    "eps_s_p": 0.52,
+    "eps_s_n": 0.55,
+    "cs_max_p": 51000.0,
+    "cs_max_n": 28000.0
+  },
+  "nasa_metrics": {
+    "rmse_V": 0.17613219164784708,
+    "mae_V": 0.13753362164124197,
+    "max_error_V": 0.7061891939111344
+  },
+  "cs2_metrics": {
+    "rmse_V": 0.21176174920469223,
+    "mae_V": 0.16194314924051562,
+    "max_error_V": 0.8470579330053232
+  },
+  "ann_metrics": {
+    "validation_rmse_V": 0.28426432609558105,
+    "validation_mae_V": 0.2789115011692047
+  },
+  "computation_efficiency": {
+    "spm_simulation_time_per_eval": "~0.01s (explicit Euler)",
+    "ann_evaluation_time_per_eval": "~0.0001s (forward pass)",
+    "speedup_factor": "~100x"
+  }
+}

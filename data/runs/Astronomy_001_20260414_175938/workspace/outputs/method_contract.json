@@ -1,0 +1,17 @@
+{
+  "task_description": "Investigate if early dark energy (EDE) alleviates acoustic tension between CMB (Planck/ACT TT/EE/lensing) and DESI DR2 BAO, using Union3 SNe in some analyses.",
+  "models": ["ΛCDM", "EDE", "w₀wₐ"],
+  "data_combinations": ["CMB + DESI BAO"],
+  "key_parameters": {
+    "shared": ["Ω_m", "H₀", "σ₈", "n_s", "Ω_b h²", "ln(10 A_s)", "τ"],
+    "EDE_specific": ["f_EDE", "log₁₀ a_c"],
+    "w0wa_specific": ["w₀", "w_a"]
+  },
+  "quantitative_outputs": [
+    "Parameter constraints (mean ± 1σ)",
+    "Posterior distributions for EDE parameters",
+    "Goodness-of-fit comparisons (Δχ²; limited by data)"
+  ],
+  "comparison_axes": ["Parameter shifts across models", "Consistency with BAO/SNe distance data"],
+  "named_figures": ["Parameter tables (Tables II/III)", "Distance residual plots (Figure 6)"]
+}

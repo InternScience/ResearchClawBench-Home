@@ -1,0 +1,279 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_extract_data.py",
+    "path": "code/01_extract_data.py",
+    "type": "file",
+    "size": 6275,
+    "mtime": 1776239208.0,
+    "exported": true
+  },
+  {
+    "name": "02_composite_risk.py",
+    "path": "code/02_composite_risk.py",
+    "type": "file",
+    "size": 11242,
+    "mtime": 1776239208.0,
+    "exported": true
+  },
+  {
+    "name": "03_additional_figures.py",
+    "path": "code/03_additional_figures.py",
+    "type": "file",
+    "size": 6582,
+    "mtime": 1776239208.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "ecosystem",
+    "path": "data/ecosystem",
+    "type": "directory"
+  },
+  {
+    "name": "UCSC_CWON_countrybounds.gpkg",
+    "path": "data/ecosystem/UCSC_CWON_countrybounds.gpkg",
+    "type": "file",
+    "size": 2727936,
+    "mtime": 1772711346.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "mangroves",
+    "path": "data/mangroves",
+    "type": "directory"
+  },
+  {
+    "name": "gmw_v4_ref_smpls_qad_v12.gpkg",
+    "path": "data/mangroves/gmw_v4_ref_smpls_qad_v12.gpkg",
+    "type": "file",
+    "size": 10506240,
+    "mtime": 1773108490.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "slr",
+    "path": "data/slr",
+    "type": "directory"
+  },
+  {
+    "name": "total_ssp245_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp245_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 38104917,
+    "mtime": 1643398496.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "total_ssp370_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp370_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 40762177,
+    "mtime": 1643398506.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "total_ssp585_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp585_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 40854540,
+    "mtime": 1643398504.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "tc",
+    "path": "data/tc",
+    "type": "directory"
+  },
+  {
+    "name": "tracks_mit_mpi-esm1-2-hr_historical_reduced.nc",
+    "path": "data/tc/tracks_mit_mpi-esm1-2-hr_historical_reduced.nc",
+    "type": "file",
+    "size": 3448956,
+    "mtime": 1772786828.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "mangrove_risk_data.npz",
+    "path": "outputs/mangrove_risk_data.npz",
+    "type": "file",
+    "size": 1565202,
+    "mtime": 1776239202.0,
+    "exported": false
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 5947391,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1907880,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 5073703,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 1481541,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_004.pdf",
+    "path": "related_work/paper_004.pdf",
+    "type": "file",
+    "size": 2017477,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig10_risk_categories.png",
+    "path": "report/images/fig10_risk_categories.png",
+    "type": "file",
+    "size": 176068,
+    "mtime": 1776239204.0,
+    "exported": true
+  },
+  {
+    "name": "fig1_global_composite_risk.png",
+    "path": "report/images/fig1_global_composite_risk.png",
+    "type": "file",
+    "size": 1288171,
+    "mtime": 1776239206.0,
+    "exported": false
+  },
+  {
+    "name": "fig2_risk_decomposition.png",
+    "path": "report/images/fig2_risk_decomposition.png",
+    "type": "file",
+    "size": 116017,
+    "mtime": 1776239204.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_regional_risk_rankings.png",
+    "path": "report/images/fig3_regional_risk_rankings.png",
+    "type": "file",
+    "size": 110680,
+    "mtime": 1776239206.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_scenario_heatmap.png",
+    "path": "report/images/fig4_scenario_heatmap.png",
+    "type": "file",
+    "size": 143037,
+    "mtime": 1776239206.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_slr_threshold_exposure.png",
+    "path": "report/images/fig5_slr_threshold_exposure.png",
+    "type": "file",
+    "size": 100671,
+    "mtime": 1776239204.0,
+    "exported": true
+  },
+  {
+    "name": "fig6_slr_rate_maps.png",
+    "path": "report/images/fig6_slr_rate_maps.png",
+    "type": "file",
+    "size": 885814,
+    "mtime": 1776239204.0,
+    "exported": true
+  },
+  {
+    "name": "fig7_tc_exposure_map.png",
+    "path": "report/images/fig7_tc_exposure_map.png",
+    "type": "file",
+    "size": 368307,
+    "mtime": 1776239206.0,
+    "exported": true
+  },
+  {
+    "name": "fig8_risk_change_map.png",
+    "path": "report/images/fig8_risk_change_map.png",
+    "type": "file",
+    "size": 348520,
+    "mtime": 1776239206.0,
+    "exported": true
+  },
+  {
+    "name": "fig9_cumulative_risk.png",
+    "path": "report/images/fig9_cumulative_risk.png",
+    "type": "file",
+    "size": 124100,
+    "mtime": 1776239204.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 17215,
+    "mtime": 1776239209.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5884,
+    "mtime": 1776161007.0,
+    "exported": true
+  }
+]

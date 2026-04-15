@@ -1,0 +1,47 @@
+{
+  "Base Case": {
+    "total_cost": 59642849167.782036,
+    "fuel_cost": 71732548.46486722,
+    "shedding_cost": 59571116619.3172,
+    "total_demand_mwh": 15939706.029762119,
+    "total_served_mwh": 4025482.70589868,
+    "total_shedding_mwh": 11914223.32386344,
+    "shedding_pct": 74.74556495344127
+  },
+  "High Wind (2x)": {
+    "total_cost": 57722351944.53562,
+    "fuel_cost": 71629795.28860952,
+    "shedding_cost": 57650722149.24697,
+    "total_demand_mwh": 15939706.029762119,
+    "total_served_mwh": 4409561.599912725,
+    "total_shedding_mwh": 11530144.429849394,
+    "shedding_pct": 72.33599169470672
+  },
+  "No Storage": {
+    "total_cost": 59646154406.80351,
+    "fuel_cost": 71897773.74962881,
+    "shedding_cost": 59574256633.05385,
+    "total_demand_mwh": 15939706.029762119,
+    "total_served_mwh": 4024854.703151349,
+    "total_shedding_mwh": 11914851.32661077,
+    "shedding_pct": 74.74950481748995
+  },
+  "Enhanced Transmission (2x)": {
+    "total_cost": 53515304859.471,
+    "fuel_cost": 74316536.82526311,
+    "shedding_cost": 53440988322.645706,
+    "total_demand_mwh": 15939706.029762119,
+    "total_served_mwh": 5251508.365232978,
+    "total_shedding_mwh": 10688197.664529141,
+    "shedding_pct": 67.05391959282356
+  },
+  "High Demand (+20%)": {
+    "total_cost": 74956750219.36812,
+    "fuel_cost": 71824390.17045805,
+    "shedding_cost": 74884925829.19772,
+    "total_demand_mwh": 19127647.23571454,
+    "total_served_mwh": 4150662.0698749945,
+    "total_shedding_mwh": 14976985.165839545,
+    "shedding_pct": 78.30019542536832
+  }
+}

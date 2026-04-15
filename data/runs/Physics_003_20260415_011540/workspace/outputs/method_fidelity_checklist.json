@@ -1,0 +1,23 @@
+{
+  "named_method": "Experimental-style Floquet-Bloch state analysis in graphene using tr-ARPES observables",
+  "definition": [
+    "Identify energy-momentum replica bands displaced by approximately integer multiples of the pump photon energy from the main Dirac dispersion.",
+    "Compare pump-on and pump-off spectra to isolate driven-state spectral weight changes.",
+    "Preserve polarization-angle structure in at least one quantitative artifact.",
+    "Interpret sideband intensity anisotropy in terms of matrix-element/final-state (Volkov/LAPE-like) effects only to the extent supported by data."
+  ],
+  "assumptions": [
+    "Provided HDF5 angle-indexed pump-on spectra approximate the key driven snapshots even though no full 4D time cube per angle is present.",
+    "Processed JSON band positions are valid extracted features from the raw spectra."
+  ],
+  "invariants": [
+    "Replica energies must be symmetrically offset from the main band by about one photon energy.",
+    "Main claims must be traceable to saved spectra-derived metrics and figures."
+  ],
+  "non_negotiable_steps": [
+    "Compute or verify replica offsets from actual workspace data.",
+    "Generate energy-momentum plots from raw spectra.",
+    "Export polarization-dependent metrics and fit summary.",
+    "State limitations where data do not fully resolve Volkov/Floquet separation."
+  ]
+}

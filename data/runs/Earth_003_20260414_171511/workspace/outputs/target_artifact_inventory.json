@@ -1,0 +1,48 @@
+{
+  "artifacts": [
+    {
+      "name": "input_data_summary",
+      "type": "json/csv",
+      "status": "satisfied",
+      "path": "outputs/dataset_summary.json"
+    },
+    {
+      "name": "forecast_data_summary",
+      "type": "json/csv",
+      "status": "satisfied",
+      "path": "outputs/channel_statistics.csv"
+    },
+    {
+      "name": "leadtime_variability_table",
+      "type": "csv/json",
+      "status": "partial",
+      "path": "outputs/channel_group_summary.csv",
+      "reason": "Only a single +6h forecast step is available, so full lead-time sweep is impossible."
+    },
+    {
+      "name": "forecast_global_maps",
+      "type": "png",
+      "status": "satisfied",
+      "path": "report/images/figure_forecast_increment_maps.png"
+    },
+    {
+      "name": "forecast_latlon_or_zonal_diagnostics",
+      "type": "png",
+      "status": "satisfied",
+      "path": "report/images/figure_zonal_profiles.png"
+    },
+    {
+      "name": "forecast_channel_evolution_plot",
+      "type": "png",
+      "status": "partial",
+      "path": "report/images/figure_channel_diagnostics.png",
+      "reason": "Evolution across long lead times cannot be shown with only one forecast step."
+    },
+    {
+      "name": "report",
+      "type": "markdown",
+      "status": "satisfied",
+      "path": "report/report.md"
+    }
+  ]
+}

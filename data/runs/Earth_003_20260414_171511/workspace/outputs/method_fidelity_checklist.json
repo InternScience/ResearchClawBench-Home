@@ -1,0 +1,21 @@
+{
+  "method_name": "Three-stage cascade U-Transformer weather forecasting system",
+  "definition": "A forecasting pipeline that uses three specialized transformer-based spatiotemporal models in cascade across increasing lead-time ranges to reduce autoregressive error accumulation and extend forecasts to 15 days.",
+  "assumptions": [
+    "The provided workspace contains inference artifacts rather than full trainable pipeline assets.",
+    "Evaluation may need to focus on consistency of provided forecasts with the described method rather than full retraining."
+  ],
+  "invariants": [
+    "Global multivariate meteorological inputs from two consecutive 6-hour states",
+    "Forecast horizon extends to 15 days at 6-hour resolution",
+    "Cascade structure uses specialized submodels for different lead-time regimes",
+    "Assessment should be lead-time aware due to error accumulation concerns"
+  ],
+  "non_negotiable_structural_steps": [
+    "Preserve the two-step input formulation",
+    "Preserve multivariate global field structure",
+    "Analyze outputs across lead time rather than single aggregated endpoint",
+    "Make any deviation from full three-model cascade implementation explicit"
+  ],
+  "current_fidelity_status": "Workspace currently appears suitable for artifact-level evaluation, not full reproduction of training and inference stack."
+}

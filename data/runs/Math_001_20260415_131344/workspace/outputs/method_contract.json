@@ -1,0 +1,30 @@
+{
+  "task": "Unified Variable and Operator Splitting (VOS) Framework for Accelerated Optimization",
+  "scientific_goal": "Derive Nesterov's accelerated method and ADMM from a continuous-time dynamical system perspective, proving linear convergence using strong Lyapunov functions",
+  "named_methods": [
+    "Variable and Operator Splitting (VOS)",
+    "Nesterov's Accelerated Gradient Method",
+    "ADMM (Alternating Direction Method of Multipliers)",
+    "Strong Lyapunov Functions",
+    "FISTA (Fast Iterative Shrinkage-Thresholding Algorithm)"
+  ],
+  "required_artifacts": {
+    "convergence_comparison": "Plot comparing GD, Nesterov/AG, ADMM, and VOS-ODE convergence rates",
+    "lyapunov_decay": "Plot showing Lyapunov function decay over iterations/time",
+    "objective_vs_iteration": "Objective function value vs iteration for all methods",
+    "parameter_sensitivity": "Analysis of convergence under different condition numbers or regularization strengths",
+    "method_comparison_table": "Quantitative comparison table with iteration counts and final objective values"
+  },
+  "data": {
+    "file": "data/complex_optimization_data.npy",
+    "problem": "Lasso Regression: minimize (1/2)||Ax - b||² + λ||x||₁",
+    "dimensions": {"A": "(1000, 2000)", "b": "(1000,)", "x_true": "(2000,)"},
+    "condition_number": 10
+  },
+  "related_work": {
+    "paper_000": "Nesterov (1983) - Original accelerated gradient method with O(1/k²) convergence",
+    "paper_001": "Su, Boyd, Candès (2016) - ODE derivation of Nesterov's method: Ẍ + (3/t)Ẋ + ∇f(X) = 0",
+    "paper_002": "Boyd et al. (2011) - ADMM survey and applications to Lasso",
+    "paper_003": "Polyak (1964) - Heavy-ball method and multistep convergence acceleration"
+  }
+}

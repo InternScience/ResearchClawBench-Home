@@ -1,0 +1,21 @@
+{
+  "dataset": "GlaMBIE (Glacier Mass Balance Intercomparison Exercise)",
+  "doi": "10.5904/wgms-glambie-2024-07",
+  "time_period": "2000-2023",
+  "temporal_resolution": "Annual (calendar years)",
+  "regions": 19,
+  "observation_methods": [
+    "glaciological",
+    "DEM differencing",
+    "satellite altimetry",
+    "gravimetry"
+  ],
+  "global_cumulative_gt_2000_2023": -6542.470628027883,
+  "global_cumulative_gt_error_2000_2023": 387.0162394850704,
+  "global_cumulative_mwe_2000_2023": -9.74279749179814,
+  "global_cumulative_mwe_error_2000_2023": 0.5421653709793623,
+  "mean_annual_gt": -272.6029428344951,
+  "std_annual_gt": 107.777612613285,
+  "sea_level_equivalent_mm": -18.08311395253699,
+  "sea_level_equivalent_error_mm": 1.069696626548011
+}

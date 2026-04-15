@@ -1,0 +1,17 @@
+{
+  "task_domain": "multimodal materials AI",
+  "primary_commitments": [
+    "Use provided synthetic materials dataset for at least property prediction, structure-generation proxy analysis, and autonomous optimization proxy analysis when supported by data.",
+    "Produce reproducible code, saved intermediate outputs, and publication-style report with mandatory figures.",
+    "Ground claims in actual workspace artifacts and clearly separate verified results from assumptions/limitations."
+  ],
+  "named_outputs": [
+    "predicted material properties",
+    "generated novel material structures or structure proxies",
+    "optimized synthesis/processing parameters"
+  ],
+  "dataset_limitations_known_initially": [
+    "Only one compact text dataset is provided.",
+    "Related-work PDFs may not be machine-readable via ReadPDF in this environment and must be checked by local tooling if possible."
+  ]
+}

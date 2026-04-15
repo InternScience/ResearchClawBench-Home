@@ -1,0 +1,65 @@
+{
+  "carrier_density": {
+    "n_eff_range": [
+      500000000000000.0,
+      5000000000000000.0
+    ],
+    "D_s_conv_range": [
+      1146423680.0,
+      2675187470.0
+    ],
+    "D_s_geom_range": [
+      4913244330.0,
+      13760869700.0
+    ],
+    "D_s_exp_hole_range": [
+      38560434300.0,
+      233911617000.0
+    ],
+    "D_s_exp_electron_range": [
+      36632412600.0,
+      222216036000.0
+    ],
+    "enhancement_stats": {
+      "mean_ratio_hole": 55.268020807816065,
+      "std_ratio_hole": 16.356613171335326,
+      "max_ratio_hole": 87.43746732635526,
+      "min_ratio_hole": 33.635413305489294,
+      "mean_ratio_electron": 52.50461576389423,
+      "std_ratio_electron": 15.538856552313915,
+      "max_ratio_electron": 83.06559390396666,
+      "min_ratio_electron": 31.953642653298996,
+      "mean_ratio_geom": 4.565012014264696,
+      "std_ratio_geom": 0.2670245382397125
+    }
+  },
+  "temperature": {
+    "T_range": [
+      0.0,
+      1.2
+    ],
+    "power_law_fit": {
+      "power_law_exponent": 0.7633280693945048,
+      "fit_intercept": -1.1515618698525847,
+      "r_squared": 0.996798231943742,
+      "p_value": 2.6624101455974612e-135,
+      "std_err": 0.0041822563388700515
+    }
+  },
+  "current": {
+    "I_dc_range": [
+      0.0,
+      60.0
+    ],
+    "quadratic_fit": {
+      "gl_slope": -0.03906262952991913,
+      "gl_intercept": 96.859743433314,
+      "gl_r_squared": 0.9821203504145914,
+      "gl_Ic_estimated": 49.795594279210164,
+      "exp_slope": -0.07749287774008283,
+      "exp_intercept": 94.7654113772981,
+      "exp_r_squared": 0.9733945105803172,
+      "exp_Ic_estimated": 34.969871111620144
+    }
+  }
+}

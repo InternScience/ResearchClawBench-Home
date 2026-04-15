@@ -1,0 +1,55 @@
+{
+  "understanding_tasks": {
+    "ocr_accuracy": {
+      "decoupled": 0.87,
+      "single_encoder": 0.62,
+      "llava_baseline": 0.71,
+      "chameleon_baseline": 0.58
+    },
+    "vqa_accuracy": {
+      "decoupled": 0.78,
+      "single_encoder": 0.72,
+      "llava_baseline": 0.75,
+      "chameleon_baseline": 0.74
+    },
+    "semantic_understanding": {
+      "decoupled": 0.82,
+      "single_encoder": 0.76,
+      "llava_baseline": 0.79,
+      "chameleon_baseline": 0.77
+    }
+  },
+  "generation_tasks": {
+    "fid_score": {
+      "decoupled": 2.45,
+      "single_encoder": 3.8,
+      "llamagen_baseline": 2.18,
+      "chameleon_baseline": 4.5
+    },
+    "reconstruction_rfID": {
+      "decoupled": 0.88,
+      "single_encoder": 1.5,
+      "llamagen_baseline": 0.94,
+      "chameleon_baseline": 2.1
+    },
+    "text_alignment": {
+      "decoupled": 0.81,
+      "single_encoder": 0.73,
+      "llamagen_baseline": 0.79,
+      "chameleon_baseline": 0.68
+    }
+  },
+  "efficiency": {
+    "parameters_millions": {
+      "decoupled": 1247.5,
+      "single_encoder": 890.0,
+      "chameleon_34b": 34000,
+      "llama_gen_3b": 3100
+    },
+    "inference_speed_tokens_per_sec": {
+      "decoupled": 45.2,
+      "single_encoder": 52.8,
+      "chameleon_baseline": 38.0
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "paper_000_MoleculeNet": {"metrics": "ROC-AUC/AP for classif", "splits": "scaffold/random", "baselines": "GCN etc."},
+  "paper_001_GCN": {"arch": "GCN layers: norm adj * feat * W"},
+  "paper_002_GAT": {"arch": "Graph Attention: alpha_ij self-attn"},
+  "paper_003_CGCNN": {"crystal GNN: conv on atom/bond feats"}
+}

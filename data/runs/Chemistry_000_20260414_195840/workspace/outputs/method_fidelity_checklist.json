@@ -1,0 +1,23 @@
+{
+  "named_mechanism": "Fourier-based Kolmogorov–Arnold module inside a graph neural network",
+  "definition": [
+    "Replace at least one standard MLP transformation in message passing/readout with a Fourier-feature univariate expansion followed by learnable linear mixing",
+    "Preserve graph message passing over molecular adjacency",
+    "Operate on molecular node/bond-derived features"
+  ],
+  "assumptions": [
+    "SMILES-derived molecular graphs can approximate the required graph input",
+    "Non-covalent interactions can be approximated through topological or feature-derived context if no 3D conformers are used"
+  ],
+  "invariants": [
+    "Same train/validation/test split protocol across compared models",
+    "Same featurization and optimizer settings where possible",
+    "Architecture difference isolated primarily to MLP vs Fourier-KA block"
+  ],
+  "non_negotiable_structural_steps": [
+    "Construct graph inputs from molecules",
+    "Train at least one baseline GNN with MLP transform",
+    "Train at least one KA-inspired GNN replacing that transform",
+    "Export direct comparison metrics and interpretability artifact"
+  ]
+}

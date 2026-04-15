@@ -1,0 +1,13 @@
+{
+  "SparseTrack": {
+    "definition": "Pseudo-depth (bbox bottom y), sort far to near, split into K=4 sparse subsets (every 4th), track each with ByteTrack-like, then global Hungarian assoc across all layer tracks using IOU.",
+    "assumptions": "Higher y_bottom = farther, sparse reduces assoc complexity in crowd.",
+    "invariants": "Per layer assoc first, then inter-layer.",
+    "steps": "1. Per frame dets sort by depth. 2. Layer dets. 3. Layer trackers. 4. Merge assoc.",
+    "deviations": "Simple velocity KF, no ReID/CMC."
+  },
+  "ByteTrack": {
+    "definition": "High score match all tracks, low score match unmatched tracks.",
+    "fidelity": "Full two-stage, IOU Hungarian."
+  }
+}

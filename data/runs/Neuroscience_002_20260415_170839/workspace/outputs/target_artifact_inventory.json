@@ -1,0 +1,25 @@
+{
+  "required_artifacts": [
+    {"name": "data_overview_plots", "type": "figure", "status": "completed", "files": ["label_distribution.png", "degradation_distribution.png"]},
+    {"name": "feature_distribution_analysis", "type": "figure", "status": "completed", "files": ["feature_distributions_train.png", "feature_distributions_test.png"]},
+    {"name": "correlation_heatmap", "type": "figure", "status": "completed", "files": ["correlation_heatmap.png"]},
+    {"name": "model_comparison_results", "type": "table/figure", "status": "completed", "files": ["model_comparison.png", "model_comparison.csv"]},
+    {"name": "roc_pr_curves", "type": "figure", "status": "completed", "files": ["roc_pr_curves.png"]},
+    {"name": "degradation_type_analysis", "type": "figure", "status": "completed", "files": ["degradation_analysis.png", "degradation_analysis.csv"]},
+    {"name": "feature_importance_plot", "type": "figure", "status": "completed", "files": ["feature_importance.png", "feature_importance.csv"]},
+    {"name": "confusion_matrices", "type": "figure", "status": "completed", "files": ["confusion_matrices.png"]},
+    {"name": "research_report", "type": "document", "status": "completed", "files": ["report/report.md"]}
+  ],
+  "model_targets": {
+    "baseline_models": ["LogisticRegression", "RandomForest"],
+    "neural_network": "MLP (optional)",
+    "comparison_metrics": ["accuracy", "f1", "precision", "recall", "roc_auc"]
+  },
+  "key_results": {
+    "best_model": "Random Forest",
+    "best_roc_auc": 0.978,
+    "best_precision": 0.943,
+    "best_degradation_type": "Misalignment (F1=0.789)",
+    "worst_degradation_type": "Average (F1=0.310)"
+  }
+}

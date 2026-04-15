@@ -1,0 +1,19 @@
+{
+  "methodological_commitments": [
+    "Reproduce analysis of MinSum.budget-10.adaptive neoantigen vaccine optimization from simulation data",
+    "Quantitative metrics: per-cell immune response probability (p_response), tumor cell coverage ratio (fraction of cells with p_response above threshold, e.g., 0.5), IoU of optimal vaccine compositions across replicates/simulations",
+    "Optimization runtime vs. population size (Figure 6)",
+    "Data processing: aggregate vaccine-element scores across 10 replicates for 100-cells.10x simulations",
+    "Validation: distributions from final-response-likelihoods.csv and sim-specific-response-likelihoods.csv"
+  ],
+  "named_methods": [
+    "MinSum objective (minimize sum of -log p_response or similar)",
+    "Adaptive vaccine selection with budget=10",
+    "Simulation repetitions (rep-0 to rep-9)"
+  ],
+  "protocols": [
+    "Use vaccine-elements.scores.*.csv for cell-level response probabilities per mutation/vaccine_element",
+    "cell-populations.csv for presented peptides/mutations per cell",
+    "selected-vaccine-elements.budget-10.minsum.adaptive.csv for selected vaccine elements"
+  ]
+}

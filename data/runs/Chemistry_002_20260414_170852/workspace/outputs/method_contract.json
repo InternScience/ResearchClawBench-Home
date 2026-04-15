@@ -1,0 +1,24 @@
+{
+  "task": "HADDOCK3 integrative modeling analysis with barnase-barstar PDB and SKEMPI v2 validation",
+  "named_method_commitments": [
+    "HADDOCK3 context and modular integrative modeling framing",
+    "Information-driven docking / ambiguous interaction restraints (AIRs) from mutagenesis or other data",
+    "Use of PDB structural input",
+    "Validation using SKEMPI 2.0 mutation affinity data",
+    "Figures including data overview and validation/comparison plots",
+    "Traceable outputs in report and outputs directories"
+  ],
+  "primary_target_quantities": [
+    "Structure-derived interface properties for 1BRS chains A/D",
+    "Mutation-level binding-effect summaries from SKEMPI relevant to barnase-barstar",
+    "Quantitative relationship between structure-derived features and experimental affinity change proxies where feasible",
+    "Direct comparison of mutation impact across interface-location classes"
+  ],
+  "constraints": [
+    "No guarantee HADDOCK3 runtime is installed",
+    "Must stay within workspace",
+    "Use related_work to guide method framing",
+    "Present structural-mutational analysis as a proxy validation rather than exact docking reproduction when HADDOCK3 is unavailable"
+  ],
+  "status": "updated_from_related_work"
+}

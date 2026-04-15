@@ -1,0 +1,25 @@
+{
+  "train_samples": 168000,
+  "test_samples": 72000,
+  "n_features": 20,
+  "train_label_counts": {
+    "0.0": 151313,
+    "1.0": 16687
+  },
+  "test_label_counts": {
+    "0.0": 64687,
+    "1.0": 7313
+  },
+  "train_degradation_counts": {
+    "Mixed": 42000,
+    "Misalignment": 42000,
+    "Average": 42000,
+    "Missing Sections": 42000
+  },
+  "test_degradation_counts": {
+    "Mixed": 18000,
+    "Misalignment": 18000,
+    "Average": 18000,
+    "Missing Sections": 18000
+  }
+}

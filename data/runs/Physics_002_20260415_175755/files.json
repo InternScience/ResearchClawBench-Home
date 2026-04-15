@@ -1,0 +1,585 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "batch_analysis.py",
+    "path": "code/batch_analysis.py",
+    "type": "file",
+    "size": 10826,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "process_depth.py",
+    "path": "code/process_depth.py",
+    "type": "file",
+    "size": 2712,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "quick_analysis.py",
+    "path": "code/quick_analysis.py",
+    "type": "file",
+    "size": 10972,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "run_analysis.py",
+    "path": "code/run_analysis.py",
+    "type": "file",
+    "size": 10679,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_analysis.py",
+    "path": "code/xeb_analysis.py",
+    "type": "file",
+    "size": 21132,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_analysis_v2.py",
+    "path": "code/xeb_analysis_v2.py",
+    "type": "file",
+    "size": 15135,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_analysis_v3.py",
+    "path": "code/xeb_analysis_v3.py",
+    "type": "file",
+    "size": 12093,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "amplitudes",
+    "path": "data/amplitudes",
+    "type": "directory"
+  },
+  {
+    "name": "N40_verification",
+    "path": "data/amplitudes/N40_verification",
+    "type": "directory"
+  },
+  {
+    "name": "N40_d10_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d10_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d14_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d14_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d16_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d18_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d18_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d20_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d20_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d8_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d8_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N_scan_depth12",
+    "path": "data/amplitudes/N_scan_depth12",
+    "type": "directory"
+  },
+  {
+    "name": "N16_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N16_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N24_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N24_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N32_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N32_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N40_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "results",
+    "path": "data/results",
+    "type": "directory"
+  },
+  {
+    "name": "N40_verification",
+    "path": "data/results/N40_verification",
+    "type": "directory"
+  },
+  {
+    "name": "N40_d10_MB",
+    "path": "data/results/N40_verification/N40_d10_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d10_XEB",
+    "path": "data/results/N40_verification/N40_d10_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_MB",
+    "path": "data/results/N40_verification/N40_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_XEB",
+    "path": "data/results/N40_verification/N40_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d14_MB",
+    "path": "data/results/N40_verification/N40_d14_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d14_XEB",
+    "path": "data/results/N40_verification/N40_d14_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_MB",
+    "path": "data/results/N40_verification/N40_d16_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_Transport_1QRB",
+    "path": "data/results/N40_verification/N40_d16_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_XEB",
+    "path": "data/results/N40_verification/N40_d16_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d18_MB",
+    "path": "data/results/N40_verification/N40_d18_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "\u2026 10 more items",
+    "path": "data/results/N40_verification/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "N56_depths",
+    "path": "data/results/N56_depths",
+    "type": "directory"
+  },
+  {
+    "name": "N56_d10_MB",
+    "path": "data/results/N56_depths/N56_d10_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d10_XEB",
+    "path": "data/results/N56_depths/N56_d10_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d12_MB",
+    "path": "data/results/N56_depths/N56_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d12_XEB",
+    "path": "data/results/N56_depths/N56_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d14_MB",
+    "path": "data/results/N56_depths/N56_d14_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d14_XEB",
+    "path": "data/results/N56_depths/N56_d14_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d16_MB",
+    "path": "data/results/N56_depths/N56_d16_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d16_Transport_1QRB",
+    "path": "data/results/N56_depths/N56_d16_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d16_XEB",
+    "path": "data/results/N56_depths/N56_d16_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d18_MB",
+    "path": "data/results/N56_depths/N56_d18_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "\u2026 11 more items",
+    "path": "data/results/N56_depths/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "N_scan_depth12",
+    "path": "data/results/N_scan_depth12",
+    "type": "directory"
+  },
+  {
+    "name": "N16_d12_MB",
+    "path": "data/results/N_scan_depth12/N16_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d12_XEB",
+    "path": "data/results/N_scan_depth12/N16_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d16_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d16_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d32_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d32_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d48_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d48_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d4_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d4_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d64_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d64_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d96_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d96_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N24_d12_MB",
+    "path": "data/results/N_scan_depth12/N24_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N24_d12_XEB",
+    "path": "data/results/N_scan_depth12/N24_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "\u2026 38 more items",
+    "path": "data/results/N_scan_depth12/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "all_xeb_results.csv",
+    "path": "outputs/all_xeb_results.csv",
+    "type": "file",
+    "size": 38451,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_10_results.csv",
+    "path": "outputs/depth_10_results.csv",
+    "type": "file",
+    "size": 3300,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_12_results.csv",
+    "path": "outputs/depth_12_results.csv",
+    "type": "file",
+    "size": 3285,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_14_results.csv",
+    "path": "outputs/depth_14_results.csv",
+    "type": "file",
+    "size": 3302,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_16_results.csv",
+    "path": "outputs/depth_16_results.csv",
+    "type": "file",
+    "size": 3292,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_18_results.csv",
+    "path": "outputs/depth_18_results.csv",
+    "type": "file",
+    "size": 3304,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_20_results.csv",
+    "path": "outputs/depth_20_results.csv",
+    "type": "file",
+    "size": 3310,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_8_results.csv",
+    "path": "outputs/depth_8_results.csv",
+    "type": "file",
+    "size": 3226,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_scan_results.csv",
+    "path": "outputs/depth_scan_results.csv",
+    "type": "file",
+    "size": 18829,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_scan_summary.csv",
+    "path": "outputs/depth_scan_summary.csv",
+    "type": "file",
+    "size": 330,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 3 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1644579,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 2449530,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1696828,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 11841148,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "all_xeb_results.csv",
+    "path": "report/images/all_xeb_results.csv",
+    "type": "file",
+    "size": 38451,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "combined_summary.png",
+    "path": "report/images/combined_summary.png",
+    "type": "file",
+    "size": 132402,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "depth_scan_results.csv",
+    "path": "report/images/depth_scan_results.csv",
+    "type": "file",
+    "size": 18829,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "fidelity_vs_depth.png",
+    "path": "report/images/fidelity_vs_depth.png",
+    "type": "file",
+    "size": 321864,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "fidelity_vs_n_qubits.png",
+    "path": "report/images/fidelity_vs_n_qubits.png",
+    "type": "file",
+    "size": 250895,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "n_scan_results.csv",
+    "path": "report/images/n_scan_results.csv",
+    "type": "file",
+    "size": 10716,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "quantum_classical_gap.png",
+    "path": "report/images/quantum_classical_gap.png",
+    "type": "file",
+    "size": 74573,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_results.csv",
+    "path": "report/images/xeb_results.csv",
+    "type": "file",
+    "size": 34179,
+    "mtime": 1776250050.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 13622,
+    "mtime": 1776250051.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6016,
+    "mtime": 1776247075.0,
+    "exported": true
+  }
+]

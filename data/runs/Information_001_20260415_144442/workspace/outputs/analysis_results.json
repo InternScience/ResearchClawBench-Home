@@ -1,0 +1,88 @@
+{
+  "demo1.png": {
+    "image_size": [
+      1024,
+      768
+    ],
+    "info_metrics": {
+      "resolution_ratio": 0.06380208333333333,
+      "region_coverage": 0.10000101725260417,
+      "effective_pixel_density": 2.5520573724632523,
+      "original_pixels": 786432,
+      "encoded_pixels": 50176,
+      "total_crop_pixels": 200704
+    },
+    "questions": [
+      "What is the license plate number of the silver car?",
+      "How many police officers are visible?",
+      "What date is shown in the timestamp?"
+    ],
+    "fine_grained_regions": [
+      "license_plates",
+      "officer_badges",
+      "timestamp"
+    ],
+    "num_regions": 4,
+    "region_sizes": [
+      [
+        161,
+        38
+      ],
+      [
+        402,
+        172
+      ],
+      [
+        38,
+        38
+      ],
+      [
+        51,
+        38
+      ]
+    ]
+  },
+  "demo2.png": {
+    "image_size": [
+      2250,
+      1500
+    ],
+    "info_metrics": {
+      "resolution_ratio": 0.014866962962962964,
+      "region_coverage": 0.31472355555555553,
+      "effective_pixel_density": 0.18895265639357103,
+      "original_pixels": 3375000,
+      "encoded_pixels": 50176,
+      "total_crop_pixels": 200704
+    },
+    "questions": [
+      "How many different tulip colors are present?",
+      "What type of flowers are displayed?",
+      "Describe the greenhouse structure."
+    ],
+    "fine_grained_regions": [
+      "flower_labels",
+      "individual_petals",
+      "structural_details"
+    ],
+    "num_regions": 4,
+    "region_sizes": [
+      [
+        522,
+        118
+      ],
+      [
+        871,
+        604
+      ],
+      [
+        358,
+        296
+      ],
+      [
+        698,
+        528
+      ]
+    ]
+  }
+}

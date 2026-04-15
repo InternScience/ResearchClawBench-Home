@@ -1,0 +1,9 @@
+claim_id,claim_text,supporting_artifact,evidence_type,status
+C1,Dataset contains 30 African candidate sites with renewable and distance features,outputs/dependency_check.json; outputs/validation_summary.json; data/hex_final_NA_min.csv,direct workspace evidence,Y
+C2,Base-case delivered African hydrogen costs are materially above the stylized Europe benchmark by 2030,outputs/competitive_summary.csv; outputs/europe_benchmark_results.csv,direct computed result,Y
+C3,De-risking lowers African delivered cost relative to base high-risk financing,outputs/competitive_summary.csv,direct computed result,Y
+C4,A high-rate environment raises both African delivered costs and the Europe benchmark,outputs/competitive_summary.csv; outputs/europe_benchmark_results.csv,direct computed result,Y
+C5,The lowest-cost sites in this sample are concentrated in Namibia/Botswana-adjacent southern African locations,outputs/best_sites_top5_by_scenario.csv; report/images/africa_delivered_cost_map_base.png,direct computed result,Y
+C6,None of the 30 sampled African sites beats the stylized Europe benchmark in the modeled scenarios,outputs/competitive_summary.csv,direct computed result,Y
+C7,Financing assumptions strongly shift the cost distribution,report/images/scenario_cost_distributions.png; report/images/financing_sensitivity.png,direct computed result,Y
+C8,This implementation is transparent but simplified relative to full GeoH2-style temporal optimization,outputs/method_fidelity_checklist.json; outputs/validation_summary.json,methodology limitation,Y

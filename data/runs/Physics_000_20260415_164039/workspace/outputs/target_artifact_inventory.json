@@ -1,0 +1,32 @@
+{
+  "primary_quantitative_answers": {
+    "optimal_size_mismatch_values": "δ values for MC-MC, MC-Ch1, MC-Ch2, MC-BG pairs",
+    "shell_energies_by_category": "Normalized energy values for each shell number and chiral category",
+    "predicted_stable_clusters": "Na13@Rb32, K13@Cs42, Ag13@Cu45, and extended predictions",
+    "growth_path_probabilities": "Conservative: 0.65, Mismatch-driven: 0.25, Random: 0.10"
+  },
+  "required_comparison_tables": [
+    "Atomic pair compatibility table with size mismatch values",
+    "Shell energy comparison across chiral categories",
+    "Theoretical vs experimental mismatch validation",
+    "Growth simulation results by chiral category"
+  ],
+  "expected_figures": [
+    "fig1_hexagonal_lattice.png - Hexagonal coordinate system visualization",
+    "fig2_size_mismatch_stability.png - Size mismatch vs stability by chiral category",
+    "fig3_growth_dynamics.png - Growth simulation mismatch evolution",
+    "fig4_path_selection.png - Path selection statistics",
+    "fig5_shell_energy.png - Shell energy comparison",
+    "fig6_theory_vs_experiment.png - Parity plot of theoretical vs experimental mismatch"
+  ],
+  "interpretability_artifacts": [
+    "Chiral category mapping to atomic pair combinations",
+    "Size mismatch sensitivity analysis per shell transition",
+    "Growth pathway decomposition by step type"
+  ],
+  "subgroup_outputs": [
+    "Per-chiral-category growth dynamics",
+    "Per-atomic-pair compatibility analysis",
+    "Per-shell-number energy comparisons"
+  ]
+}

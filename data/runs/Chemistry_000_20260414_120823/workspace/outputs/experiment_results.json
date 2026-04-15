@@ -1,0 +1,197 @@
+[
+  {
+    "dataset": "bace",
+    "model_name": "GCN",
+    "fold_aucs": [
+      0.756517205422315,
+      0.7564662012059664,
+      0.759893684544589
+    ],
+    "mean_auc": 0.7576256970576235,
+    "std_auc": 0.001603844503746247,
+    "num_tasks": 1,
+    "num_samples": 1513
+  },
+  {
+    "dataset": "bace",
+    "model_name": "GAT",
+    "fold_aucs": [
+      0.7902012829020127,
+      0.8293795620437956,
+      0.8119565217391305
+    ],
+    "mean_auc": 0.8105124555616463,
+    "std_auc": 0.01602702684990949,
+    "num_tasks": 1,
+    "num_samples": 1513
+  },
+  {
+    "dataset": "bbbp",
+    "model_name": "GCN",
+    "fold_aucs": [
+      0.8373978365384616,
+      0.8450240384615385,
+      0.8771891630382197
+    ],
+    "mean_auc": 0.8532036793460733,
+    "std_auc": 0.017243690825005202,
+    "num_tasks": 1,
+    "num_samples": 2039
+  },
+  {
+    "dataset": "bbbp",
+    "model_name": "GAT",
+    "fold_aucs": [
+      0.8729206730769231,
+      0.8625961538461537,
+      0.882341557813256
+    ],
+    "mean_auc": 0.8726194615787776,
+    "std_auc": 0.008063840719780096,
+    "num_tasks": 1,
+    "num_samples": 2039
+  },
+  {
+    "dataset": "clintox",
+    "model_name": "GCN",
+    "fold_aucs": [
+      0.9748964047190891,
+      0.9813273893876606,
+      0.978001363551846
+    ],
+    "mean_auc": 0.9780750525528652,
+    "std_auc": 0.0026259555090803106,
+    "num_tasks": 2,
+    "num_samples": 1477
+  },
+  {
+    "dataset": "clintox",
+    "model_name": "GAT",
+    "fold_aucs": [
+      0.977278993304885,
+      0.9823582149984095,
+      0.9802491581100345
+    ],
+    "mean_auc": 0.9799621221377763,
+    "std_auc": 0.002083493138940801,
+    "num_tasks": 2,
+    "num_samples": 1477
+  },
+  {
+    "dataset": "hiv",
+    "model_name": "GCN",
+    "fold_aucs": [
+      0.7288637724550898,
+      0.7595705705705704,
+      0.7263183183183184
+    ],
+    "mean_auc": 0.7382508871146595,
+    "std_auc": 0.01511106683164763,
+    "num_tasks": 1,
+    "num_samples": 4000
+  },
+  {
+    "dataset": "hiv",
+    "model_name": "GAT",
+    "fold_aucs": [
+      0.7454760479041916,
+      0.8013498498498498,
+      0.7619114114114113
+    ],
+    "mean_auc": 0.7695791030551509,
+    "std_auc": 0.023445903086655524,
+    "num_tasks": 1,
+    "num_samples": 4000
+  },
+  {
+    "dataset": "muv",
+    "model_name": "KA-GNN",
+    "fold_aucs": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "mean_auc": 0.5,
+    "std_auc": 0.0,
+    "num_tasks": 17,
+    "num_samples": 3000
+  },
+  {
+    "dataset": "muv",
+    "model_name": "GCN",
+    "fold_aucs": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "mean_auc": 0.5,
+    "std_auc": 0.0,
+    "num_tasks": 17,
+    "num_samples": 3000
+  },
+  {
+    "dataset": "muv",
+    "model_name": "GAT",
+    "fold_aucs": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "mean_auc": 0.5,
+    "std_auc": 0.0,
+    "num_tasks": 17,
+    "num_samples": 3000
+  },
+  {
+    "dataset": "bace",
+    "model_name": "KA-GNN",
+    "fold_aucs": [
+      0.6038329067526147,
+      0.562781656616947,
+      0.6043398920977467
+    ],
+    "mean_auc": 0.5903181518224362,
+    "std_auc": 0.01947234251764092,
+    "num_tasks": 1,
+    "num_samples": 1513
+  },
+  {
+    "dataset": "bbbp",
+    "model_name": "KA-GNN",
+    "fold_aucs": [
+      0.6778906249999999,
+      0.7039182692307693,
+      0.7050798258345428
+    ],
+    "mean_auc": 0.695629573355104,
+    "std_auc": 0.012552291158582179,
+    "num_tasks": 1,
+    "num_samples": 2039
+  },
+  {
+    "dataset": "clintox",
+    "model_name": "KA-GNN",
+    "fold_aucs": [
+      0.9492331685959188,
+      0.9489958229872045,
+      0.9420944982749004
+    ],
+    "mean_auc": 0.9467744966193412,
+    "std_auc": 0.003310676830344567,
+    "num_tasks": 2,
+    "num_samples": 1477
+  },
+  {
+    "dataset": "hiv",
+    "model_name": "KA-GNN",
+    "fold_aucs": [
+      0.6277185628742515,
+      0.6617477477477477,
+      0.6043183183183183
+    ],
+    "mean_auc": 0.6312615429801058,
+    "std_auc": 0.023578936534830022,
+    "num_tasks": 1,
+    "num_samples": 4000
+  }
+]

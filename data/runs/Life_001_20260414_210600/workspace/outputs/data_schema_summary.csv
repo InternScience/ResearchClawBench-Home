@@ -1,0 +1,8 @@
+dataset,rows,columns
+cell-populations,28068,"['repetition', 'cell_ids', 'presented_peptides', 'presented_hlas', 'simulation_name', 'mutation']"
+final-response-likelihoods,1000,"['name', 'num_presented_peptides', 'population', 'vaccine', 'p_response', 'log_p_response']"
+sim-specific-response-likelihoods,1000,"['name', 'num_presented_peptides', 'population', 'vaccine', 'p_response', 'log_p_response']"
+optimization-runtime,35,"['SampleID', 'PopulationSize', 'RunTime']"
+selected-vaccine-elements,100,"['peptide', 'repetition', 'simulation_name', 'weight', 'run_time']"
+vaccine-budget-summary,10,"['peptide', 'counts', 'weight']"
+vaccine-element-scores-all-reps,12000,"['cell_id', 'vaccine_element', 'log_p_no_response', 'p_no_response', 'p_response', 'log_p_response', 'repetition']"

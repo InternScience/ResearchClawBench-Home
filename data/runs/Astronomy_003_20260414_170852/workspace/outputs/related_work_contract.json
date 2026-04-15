@@ -1,0 +1,38 @@
+{
+  "related_work_relevance": [
+    {
+      "paper": "paper_000.pdf",
+      "relevant_points": [
+        "SXS waveforms are affected by numerical truncation, finite-radius extraction, and extrapolation-related errors.",
+        "Mode mixing and center-of-mass corrections can affect subdominant modes, making mode-resolved error analyses scientifically meaningful.",
+        "The paper references an updated SXS catalog with 2018 simulations, consistent with catalog-scale quality assessments."
+      ]
+    },
+    {
+      "paper": "paper_001.pdf",
+      "relevant_points": [
+        "Higher harmonics such as (4,4) can require more careful modeling and can be substantially harder to capture accurately than dominant modes.",
+        "This motivates checking whether synthetic modal errors increase with harmonic index."
+      ]
+    },
+    {
+      "paper": "paper_002.pdf",
+      "relevant_points": [
+        "Surrogate waveform models are calibrated directly to numerical relativity simulations and require simulation errors to be at or below model error budgets.",
+        "The cited training set size of 1528 simulations is similar to the scale of the provided synthetic catalog summaries."
+      ]
+    },
+    {
+      "paper": "paper_003.pdf",
+      "relevant_points": [
+        "Accurate surrogate modeling for eccentric binary black holes depends on low waveform mismatches, typically around 1e-3 to 1e-2 in examples cited in the paper.",
+        "This provides context for interpreting the synthetic error levels in the provided datasets."
+      ]
+    }
+  ],
+  "contract_updates": [
+    "Preserve catalog-scale perspective rather than over-interpreting individual rows as full simulations.",
+    "Prioritize figures that compare overall resolution error, mode-by-mode error growth with l, and extrapolation-order disagreement.",
+    "Explicitly discuss implications for waveform-model calibration and truncation of higher-order modes."
+  ]
+}

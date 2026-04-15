@@ -1,0 +1,6 @@
+claim,artifact,status
+Model solves hourly nodal dispatch with network and storage constraints,outputs/scenario_summary.csv; outputs/storage_base.csv; outputs/flows_base.csv,supported
+Wind contributes a substantial share of energy in the base case,outputs/dispatch_by_carrier.csv,supported
+Higher wind capacity increases curtailment pressure,outputs/scenario_summary.csv,supported
+Transmission tightening increases congestion and/or cost,outputs/scenario_summary.csv; outputs/line_utilization_summary.csv,supported
+Storage changes dispatch outcomes relative to no-storage case,outputs/scenario_summary.csv; outputs/storage_base.csv,supported

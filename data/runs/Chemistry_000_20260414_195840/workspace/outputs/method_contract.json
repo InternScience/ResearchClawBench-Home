@@ -1,0 +1,25 @@
+{
+  "task": "Design and evaluate Kolmogorov–Arnold Graph Neural Networks (KA-GNNs) for molecular property prediction",
+  "primary_objective": [
+    "Predict molecular properties from graph-structured molecules using atom-level and bond-level features",
+    "Compare KA-inspired Fourier transformations against conventional MLP graph baselines",
+    "Assess predictive accuracy, computational efficiency, and interpretability"
+  ],
+  "named_method_commitments": [
+    "Graph neural network for molecular property prediction",
+    "Kolmogorov–Arnold style replacement of MLP transformations with Fourier-based modules",
+    "Use both covalent and non-covalent interaction information when building graph representations where feasible from available SMILES-derived structure",
+    "Include interpretability artifacts, not only accuracy metrics"
+  ],
+  "expected_outputs": [
+    "Per-dataset quantitative comparison table",
+    "Training/validation or runtime-efficiency comparison",
+    "Interpretability artifact comparing learned feature importance or sensitivity",
+    "Figures supporting main claims",
+    "Validation section separating direct evidence from assumptions"
+  ],
+  "likely_limitations": [
+    "Only SMILES are provided; true 3D non-covalent interactions may need approximation rather than experimentally resolved geometry",
+    "Exact KA-GNN architecture from related work may require adaptation to available libraries and time budget"
+  ]
+}

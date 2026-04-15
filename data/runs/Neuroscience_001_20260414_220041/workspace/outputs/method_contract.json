@@ -1,0 +1,12 @@
+{
+  \"method_commitments\": [
+    \"ConnectomeFromAvgFilters from fib25-fib19_v2.2.json extent=15\",
+    \"PPNeuronIGRSynapses relu dynamics\",
+    \"Task-optimized params: tau=0.05, bias~N(0.5,0.05), strength scale=0.01\",
+    \"Sintel flow L2 loss, GAVP decoder\",
+    \"Ensemble of 50 models\"
+  ],
+  \"baselines\": [\"Hassenstein-Reichardt EMD implied in T4/T5\"],
+  \"figures\": [\"connectivity matrix\", \"activity rasters\", \"flow prediction\"],
+  \"ablation\": [\"structure vs function\"]
+}

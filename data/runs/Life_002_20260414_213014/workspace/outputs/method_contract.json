@@ -1,0 +1,6 @@
+{
+  "named_method": "Foldseek-Multimer",
+  "description": "Ultra-fast sensitive alignment for protein complexes, outputs chain correspondences, superimposition, TM-score",
+  "commitments": ["chain_correspondence", "superimposition_vectors", "TM_score"],
+  "fallback": "ProDy (calcTMScore, superpose, matchAtoms): native Python, reproduces TM-score and superposition without external binary"
+}

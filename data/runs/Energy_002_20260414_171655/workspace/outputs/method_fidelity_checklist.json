@@ -1,0 +1,27 @@
+{
+  "named_method": "Transparent geospatial levelized-cost model for African green hydrogen delivered to Europe via ammonia shipping and reconversion",
+  "definition": [
+    "Use site-level geographic/resource inputs to estimate production and delivery costs.",
+    "Separate production cost, infrastructure cost, ammonia conversion, shipping, and reconversion components.",
+    "Represent financing explicitly through scenario-specific cost of capital and capital recovery.",
+    "Compare delivered African hydrogen cost against a European green-hydrogen production benchmark."
+  ],
+  "assumptions_to_check": [
+    "Per-site renewable potential enters electricity-cost estimation.",
+    "Distances to grid, road, ocean, and water enter transparent adder terms.",
+    "Ammonia shipping and reconversion are explicitly represented as delivery-chain cost components.",
+    "At least one de-risking scenario and one interest-rate stress scenario are included.",
+    "At least one geospatial output and one competitiveness output are exported."
+  ],
+  "non_negotiable_steps": [
+    "Compute scenario-specific capital recovery factor from WACC and lifetime.",
+    "Compute site-wise electricity cost and hydrogen production cost.",
+    "Add ammonia-chain delivery costs to obtain delivered cost in Europe.",
+    "Benchmark against Europe and summarize competitive-site shares."
+  ],
+  "status": {
+    "implemented_exactly": false,
+    "implemented_faithfully_with_simplifications": true,
+    "notes": "Implemented transparent site-wise production plus ammonia-chain delivery with financing scenarios and Europe benchmark, but used simplified capacity-factor mapping and fixed ammonia-chain adders due available data."
+  }
+}

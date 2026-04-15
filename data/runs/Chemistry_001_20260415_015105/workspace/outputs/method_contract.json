@@ -1,0 +1,26 @@
+{
+  "task": "Unified diffusion-based biomolecular complex structure prediction",
+  "inputs": ["protein_sequence", "nucleic_acid_sequence", "small_molecule_structure"],
+  "outputs": ["3D_structure_protein_ligand_complex"],
+  "architecture": {
+    "type": "diffusion_model",
+    "parameterization": "x_0_prediction",
+    "schedule": "cosine",
+    "components": {
+      "protein_encoder": "Transformer (4 layers, 8 heads, d_model=128)",
+      "ligand_encoder": "Message Passing GNN (4 layers, d_model=128)",
+      "cross_attention": "Bidirectional Multi-head Attention (8 heads)",
+      "denoising_blocks": "3 iterative blocks with coordinate update + timestep embedding",
+      "coordinate_update": "SE(3)-inspired MLP predicting 3D displacements"
+    }
+  },
+  "training": {
+    "loss": "MSE between predicted clean coordinates and ground truth",
+    "optimizer": "AdamW (lr=5e-4, weight_decay=1e-4)",
+    "scheduler": "CosineAnnealingLR",
+    "epochs": 500,
+    "timesteps": 100
+  },
+  "evaluation_metrics": ["CA-RMSD (protein)", "Heavy-atom RMSD (ligand)"],
+  "test_system": "2L3R FKBP12-FK506 complex"
+}

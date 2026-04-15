@@ -1,0 +1,14 @@
+{
+  "artifacts": [
+    {"name": "paper_metadata", "status": "planned", "path": "outputs/paper_metadata.json"},
+    {"name": "hamiltonian_derivations", "status": "planned", "path": "outputs/hamiltonian_derivations.json"},
+    {"name": "step_scores_long", "status": "planned", "path": "outputs/step_scores_long.csv"},
+    {"name": "task_scores_summary", "status": "planned", "path": "outputs/task_scores_summary.csv"},
+    {"name": "reviewer_score_summary", "status": "planned", "path": "outputs/reviewer_score_summary.csv"},
+    {"name": "category_heatmap_matrix", "status": "planned", "path": "outputs/category_heatmap_matrix.csv"},
+    {"name": "figure_task_scores", "status": "planned", "path": "report/images/task_scores.png"},
+    {"name": "figure_category_heatmap", "status": "planned", "path": "report/images/category_heatmap.png"},
+    {"name": "figure_reviewer_agreement", "status": "planned", "path": "report/images/reviewer_scores.png"},
+    {"name": "claim_recovery_table", "status": "planned", "path": "outputs/claim_recovery_table.csv"}
+  ]
+}

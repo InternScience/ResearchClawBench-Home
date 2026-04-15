@@ -1,0 +1,28 @@
+{
+  "n_samples": 148774,
+  "n_raw_features": 40,
+  "n_fused_features": 83,
+  "train_size": 104141,
+  "val_size": 14878,
+  "test_size": 29755,
+  "binary_counts": {
+    "0": 114716,
+    "1": 34058
+  },
+  "attack_counts": {
+    "Analysis": 380,
+    "Backdoor": 341,
+    "Benign": 114716,
+    "DoS": 3666,
+    "Exploits": 1473,
+    "Fuzzers": 1009,
+    "Generic": 14688,
+    "Reconnaissance": 10910,
+    "Shellcode": 1427,
+    "Worms": 164
+  },
+  "time_range": [
+    0.0,
+    86399.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "task": "Cascade Machine Learning Weather Forecasting System",
+  "data": {
+    "source": "ERA5 reanalysis",
+    "resolution": "0.25°",
+    "input_shape": [2, 70, 181, 360],
+    "forecast_shape": [1, 1, 70, 181, 360],
+    "upper_air_variables": ["Z", "T", "U", "V", "R"],
+    "pressure_levels": 13,
+    "surface_variables": ["T2M", "U10", "V10", "MSL", "TP"],
+    "temporal_resolution": "6 hours"
+  },
+  "architecture": {
+    "type": "Cascade U-Transformer",
+    "stages": 3,
+    "stage_definitions": {
+      "stage1": {"name": "Short-term", "lead_time": "0-3 days", "focus": "High-fidelity initial forecast"},
+      "stage2": {"name": "Medium-term", "lead_time": "3-7 days", "focus": "Error correction and pattern evolution"},
+      "stage3": {"name": "Extended-range", "lead_time": "7-15 days", "focus": "Large-scale pattern persistence"}
+    }
+  },
+  "target_comparison": "ECMWF ensemble mean",
+  "target_metrics": {
+    "Z500_RMSE_10d": {"value": 651, "unit": "m²/s²", "source": "FengWu benchmark"},
+    "Z500_ACC_threshold_days": {"threshold": 0.6, "days": 10.75, "source": "FengWu"},
+    "T2M_ACC_threshold_days": {"threshold": 0.6, "days": 11.5, "source": "FengWu"}
+  },
+  "key_techniques": [
+    "U-Net encoder-decoder",
+    "Transformer attention mechanism",
+    "Multi-scale feature extraction",
+    "Error accumulation mitigation",
+    "Replay buffer mechanism"
+  ]
+}

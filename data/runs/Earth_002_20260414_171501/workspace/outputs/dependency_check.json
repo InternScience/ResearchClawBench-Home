@@ -1,0 +1,19 @@
+{
+  "checked_modules": {
+    "geopandas": true,
+    "xarray": true,
+    "netCDF4": true,
+    "rasterio": false,
+    "shapely": true,
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "cartopy": true,
+    "scipy": true,
+    "pyogrio": true,
+    "pypdf": true
+  },
+  "assessment": "Core packages required for geospatial vector and netCDF analysis are available after installation. Rasterio is unavailable but not required for the planned vector-point and gridded-netCDF workflow.",
+  "status": "verified"
+}

@@ -1,0 +1,6 @@
+{
+  "task_methodology": "Demonstrate HADDOCK3-style integrative modeling workflow on barnase-barstar complex using PDB structure and SKEMPI v2 mutation data for validation. Analyze interface residues, binding affinity changes, generate overview plots, interface visualizations, and ddG comparisons.",
+  "named_methods": ["HADDOCK3 protocol (rigid-body docking, semi-flexible refinement, explicit solvent)", "Ambiguous Interaction Restraints (AIRs) from experimental/mutational data", "SKEMPI v2 for ddG validation"],
+  "protocols": ["PDB interface analysis", "Mutation impact on binding from SKEMPI", "Data overview and validation plots"],
+  "baselines": ["Related work HADDOCK performance on CAPRI targets", "Barnase-barstar as classic benchmark"]
+}

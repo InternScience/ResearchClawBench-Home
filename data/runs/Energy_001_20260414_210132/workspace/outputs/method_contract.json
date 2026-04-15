@@ -1,0 +1,8 @@
+{
+  "model_type": "PyPSA DC optimal power flow (DCOPF) with storage",
+  "objective": "minimize system costs",
+  "constraints": "nodal balance, line capacities, gen limits, storage dynamics, demand satisfaction",
+  "snapshots": "168 hourly",
+  "scenarios": ["baseline"],
+  "solver": "HiGHS or GLPK"
+}

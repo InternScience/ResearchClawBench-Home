@@ -1,0 +1,10 @@
+{
+  "python_version": "3.x",
+  "required_packages": ["pyyaml", "matplotlib", "numpy", "json"],
+  "availability_check": {
+    "pyyaml": "to be verified",
+    "matplotlib": "to be verified",
+    "numpy": "to be verified"
+  },
+  "notes": "Standard scientific Python stack. If packages missing, install via pip."
+}

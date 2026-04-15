@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "file": "related_work/paper_000.pdf",
+      "identified_as": "Foldseek Nature Biotechnology 2024",
+      "task_relevant_points": [
+        "Foldseek performs fast structural search using a learned/structural alphabet prefilter and alignment stage.",
+        "Benchmark comparisons mention TM-align, CE, Dali, and precision-recall style sensitivity evaluations.",
+        "TM-score sorting/normalization is central for ranking structural hits."
+      ]
+    },
+    {
+      "file": "related_work/paper_001.pdf",
+      "identified_as": "US-align Nature Methods 2022",
+      "task_relevant_points": [
+        "US-align supports oligomeric structure alignment with chain-level and residue-level correspondences.",
+        "Reported outputs include TM-score, RMSD, coverage, and execution time.",
+        "Complex alignment requires explicit chain assignment plus rigid-body superposition."
+      ]
+    },
+    {
+      "file": "related_work/paper_003.pdf",
+      "identified_as": "TM-align NAR 2005",
+      "task_relevant_points": [
+        "TM-score is length-normalized and intended to reflect global topology better than RMSD.",
+        "TM-align combines dynamic programming with TM-score guided superposition search.",
+        "A TM-score threshold around 0.5 is historically associated with same-fold similarity in monomer settings."
+      ]
+    }
+  ],
+  "impact_on_contract": {
+    "required_outputs": [
+      "chain-level correspondence",
+      "residue-level aligned set for chosen mapping",
+      "rigid transform with rotation and translation",
+      "RMSD, coverage, and TM-score-style metrics",
+      "discussion of approximation relative to Foldseek-Multimer/US-align"
+    ],
+    "limitations_identified": [
+      "No direct Foldseek or US-align binary is currently verified in workspace.",
+      "Biopython unavailable; exact external-tool reproduction may not be possible without custom implementation."
+    ]
+  }
+}

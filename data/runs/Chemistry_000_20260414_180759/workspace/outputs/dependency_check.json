@@ -1,0 +1,8 @@
+{
+  "torch": "2.9.1 [installed]",
+  "torch_geometric": "2.7.0 [installed]",
+  "rdkit": "2025.9.6 [installed]",
+  "pykan": "0.2.8 [installed]",
+  "KAN": "Available via pykan; check Fourier support",
+  "fallback": "If no Fourier, use spline KAN or implement simple Fourier basis"
+}

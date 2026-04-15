@@ -1,0 +1,19 @@
+{
+  "named_mechanism": "MMGA-style ANN-assisted parameter identification",
+  "definition": "Generate a broad candidate parameter space, train an ANN meta-model to approximate simulator outputs, and use global search over the surrogate to identify parameters matching measured battery curves.",
+  "non_negotiable_steps": [
+    "Latin-hypercube-like parameter sampling",
+    "ANN surrogate training on simulator-generated input-output pairs",
+    "Curve-matching objective against measured battery data",
+    "Report identified interpretable parameters and fit error"
+  ],
+  "assumptions": [
+    "A reduced-order physics-inspired simulator can stand in for unavailable full ECAT solver",
+    "Observed datasets are sufficient for curve-level validation even without destructive cell teardown"
+  ],
+  "deviations_from_exact_target": [
+    "Full electrochemical-aging-thermal PDE solver unavailable in workspace",
+    "Search uses ANN surrogate over a reduced-order discharge/thermal simulator rather than a full ECAT model",
+    "Optimization will be implemented with deterministic/random search rather than exact published MMGA unless evidence suggests otherwise"
+  ]
+}

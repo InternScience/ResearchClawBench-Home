@@ -1,0 +1,35 @@
+{
+  "SparseTrack_like": {
+    "definition": "Decompose active tracks and detections into pseudo-depth ordered sparse subsets, then perform hierarchical association from nearest/least-occluded to farthest/most-occluded groups",
+    "assumptions": [
+      "Pseudo-depth can be approximated from image geometry such as inverse box height or footpoint position",
+      "Association uses motion and IoU consistency"
+    ],
+    "invariants": [
+      "Depth grouping is computed before association",
+      "Association occurs hierarchically across groups rather than one flat pass",
+      "Low-confidence detections may be recovered in a secondary stage"
+    ],
+    "non_negotiable_steps": [
+      "Estimate pseudo-depth",
+      "Partition crowded scene into sparse subsets",
+      "Run group-aware association",
+      "Merge track identities across frames"
+    ]
+  },
+  "ByteTrack_baseline": {
+    "definition": "Associate high-confidence detections first, then recover unmatched tracks using low-confidence detections",
+    "assumptions": [
+      "Confidence threshold separates high and low quality detections"
+    ],
+    "invariants": [
+      "Two-stage association by detection confidence",
+      "Single global association without depth decomposition"
+    ],
+    "non_negotiable_steps": [
+      "High-score matching",
+      "Low-score recovery matching",
+      "Track lifecycle management"
+    ]
+  }
+}

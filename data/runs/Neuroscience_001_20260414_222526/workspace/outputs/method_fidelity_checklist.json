@@ -1,0 +1,22 @@
+{
+  "named_mechanism": "Connectome-constrained deep mechanistic network for Drosophila motion vision",
+  "definition": [
+    "Network graph derived from measured connectome statistics",
+    "Neuron dynamics parameterized by cell-type-specific resting potentials and time constants",
+    "Synapse sign fixed by source-target polarity specification",
+    "Synapse count used structurally; synaptic strength scaling learned by type pair",
+    "Task optimization on optic-flow estimation"
+  ],
+  "non_negotiable_steps": [
+    "Use provided connectome config rather than arbitrary architecture",
+    "Preserve source_type/target_type grouping in summaries",
+    "Separate directly observed artifacts from inferred statements",
+    "Do not claim direct single-neuron voltage simulation unless executed from available runtime"
+  ],
+  "workspace_fidelity_status": {
+    "connectome_constraint_verified_in_yaml": true,
+    "optic_flow_task_verified_in_yaml": true,
+    "direct_checkpoint_parameter_readout": "pending dependency availability",
+    "cell_type_specific_artifacts_available": true
+  }
+}

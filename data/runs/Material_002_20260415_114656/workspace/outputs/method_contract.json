@@ -1,0 +1,30 @@
+{
+    "task": "MACE-MP-0 Foundation Model Reproduction and Analysis",
+    "scientific_goal": "Develop and validate a universal foundation model for atomistic simulations covering the periodic table with ab initio accuracy after fine-tuning on minimal task-specific data",
+    "architecture": "MACE (Higher Order Equivariant Message Passing Neural Networks)",
+    "training_data": "MPtrj dataset (~1.5 million inorganic crystal structures from Materials Project)",
+    "experiments": [
+        {
+            "id": "exp1",
+            "name": "Water RDF Simulation",
+            "description": "Liquid water structure validation via radial distribution function",
+            "system": "32 H2O molecules in 12 A cubic box at 330 K",
+            "key_metrics": ["g_OO(r)", "g_OH(r)", "g_HH(r)"]
+        },
+        {
+            "id": "exp2",
+            "name": "Adsorption Energy Scaling Relations",
+            "description": "Scaling relations for O* and OH* adsorption on fcc(111) transition metal surfaces",
+            "metals": ["Ni", "Cu", "Rh", "Pd", "Ir", "Pt"],
+            "key_metrics": ["E_ads(O*)", "E_ads(OH*)", "scaling_slope"]
+        },
+        {
+            "id": "exp3",
+            "name": "Reaction Barrier Comparison",
+            "description": "CRBH20 reaction barrier validation for organic reactions",
+            "reactions": ["Rxn1_cyclobutene", "Rxn11_methoxy", "Rxn20_cyclopropane"],
+            "key_metrics": ["barrier_error_eV", "MAE_eV"]
+        }
+    ],
+    "validation_approach": "Reproduce three key benchmark tests using structural parameters from the reproduction dataset, compare against DFT reference values"
+}

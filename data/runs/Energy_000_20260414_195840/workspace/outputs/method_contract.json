@@ -1,0 +1,28 @@
+{
+  "task": "Rapid identification of high-fidelity internal battery parameters for an electrochemical-aging-thermal inspired digital twin using experimental discharge data and surrogate modeling.",
+  "named_method_commitments": [
+    "Use an ANN meta-model or close neural-network surrogate to replace expensive physical simulations during parameter search.",
+    "Perform multi-parameter search over an LHS-style parameter space.",
+    "Produce identified internal parameters such as particle radius, reaction rates, and thermal coefficients.",
+    "Validate on constant-current discharge and assess generalization under dynamic conditions."
+  ],
+  "practical_workspace_interpretation": {
+    "available_inputs": [
+      "Experimental CC cycling data from CALCE CS2_36 Excel files",
+      "NASA PCoE aging discharge curves from MAT files",
+      "Oxford dynamic drive-cycle example from MAT file"
+    ],
+    "missing_inputs": [
+      "No explicit physical ECAT simulator",
+      "No provided LHS parameter table",
+      "No direct ground-truth internal parameter labels"
+    ],
+    "faithful_fallback": "Construct a synthetic-but-physics-inspired low-order discharge/thermal simulator with interpretable internal parameters, generate Latin Hypercube samples, train ANN surrogates on simulator outputs, then identify parameters by minimizing mismatch to observed curves. Treat this as an MMGA-inspired surrogate identification study rather than exact reproduction of a full ECAT model."
+  },
+  "primary_outputs_required": [
+    "Identified parameter sets for representative constant-current reference cycles",
+    "Quantitative fit metrics between measured and fitted voltage/temperature/capacity curves",
+    "Dynamic-condition transfer evaluation on Oxford drive cycle",
+    "Traceable figures and tables supporting the claims"
+  ]
+}

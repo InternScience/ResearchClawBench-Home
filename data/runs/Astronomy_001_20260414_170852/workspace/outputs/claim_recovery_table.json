@@ -1,0 +1,34 @@
+[
+  {
+    "claim": "EDE shifts H0 upward relative to LambdaCDM in the reproduced summary constraints.",
+    "supported_by": [
+      "outputs/parameter_constraints.csv",
+      "outputs/model_comparison.csv",
+      "report/images/parameter_constraints.png"
+    ],
+    "status": "supported_directly_from_workspace_data"
+  },
+  {
+    "claim": "w0wa shifts H0 downward and Omega_m upward relative to LambdaCDM in the reproduced summary constraints.",
+    "supported_by": [
+      "outputs/parameter_constraints.csv",
+      "outputs/model_comparison.csv",
+      "report/images/parameter_constraints.png",
+      "report/images/parameter_shift_heatmap.png"
+    ],
+    "status": "supported_directly_from_workspace_data"
+  },
+  {
+    "claim": "The reproduced EDE summary prefers nonzero f_EDE with log10_ac near -3.56.",
+    "supported_by": [
+      "outputs/ede_parameter_summary.csv",
+      "report/images/ede_parameters.png"
+    ],
+    "status": "supported_directly_from_workspace_data"
+  },
+  {
+    "claim": "Delta chi^2 comparison among LambdaCDM, EDE, and w0wa can be established from the current workspace.",
+    "supported_by": [],
+    "status": "unsupported_missing_numeric_values"
+  }
+]

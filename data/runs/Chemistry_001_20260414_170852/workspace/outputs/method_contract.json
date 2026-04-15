@@ -1,0 +1,25 @@
+{
+  "task": "unified diffusion-based biomolecular complex structure prediction",
+  "inputs": ["protein sequences", "nucleic acid sequences", "small molecule structures"],
+  "primary_output": "3D structures of biomolecular complexes",
+  "named_method_commitments": [
+    "deep learning framework",
+    "diffusion-based architecture",
+    "cross-molecule interaction prediction across proteins, nucleic acids, and small molecules"
+  ],
+  "workspace-grounded_scope": {
+    "available_local_structures": [
+      "data/sample/2l3r/2l3r_protein.pdb",
+      "data/sample/2l3r/2l3r_ligand.sdf"
+    ],
+    "available_related_work_pdfs": 4,
+    "expected_mode": "proposal-plus-prototype analysis rather than full model training, unless broader training data is found"
+  },
+  "required_report_artifacts": [
+    "data overview",
+    "main results",
+    "validation/comparison plots",
+    "explicit limitations",
+    "traceable saved outputs"
+  ]
+}

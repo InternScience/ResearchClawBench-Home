@@ -1,0 +1,31 @@
+{
+  "primary_quantitative_answers": {
+    "understanding_accuracy": "VQA accuracy on equation.png (OCR task)",
+    "generation_quality": "FID/reconstruction quality metric",
+    "decoupling_benefit": "Performance gap between decoupled vs single encoder"
+  },
+  "required_comparison_tables": [
+    "Decoupled vs Single Encoder comparison table",
+    "Understanding vs Generation task performance matrix",
+    "Architecture ablation results"
+  ],
+  "expected_figure_families": [
+    "Architecture diagram (dual-pathway encoder + shared transformer)",
+    "Performance comparison bar charts (decoupled vs single)",
+    "Task-specific results (OCR accuracy, generation quality)",
+    "Ablation curves (encoder depth, codebook size)",
+    "Qualitative examples (equation recognition, meme understanding)"
+  ],
+  "interpretability_artifacts": [
+    "Token attention maps for understanding vs generation tasks",
+    "Encoder pathway activation analysis"
+  ],
+  "subgroup_outputs": {
+    "understanding_tasks": ["OCR/equation", "VQA/meme comprehension"],
+    "generation_tasks": ["text-to-image"]
+  },
+  "data_files_used": {
+    "equation_png": "OCR/formula evaluation",
+    "doge_png": "Semantic understanding/humor evaluation"
+  }
+}

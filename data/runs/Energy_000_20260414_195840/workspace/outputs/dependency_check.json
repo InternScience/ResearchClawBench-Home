@@ -1,0 +1,16 @@
+{
+  "python_packages": {
+    "numpy": true,
+    "pandas": true,
+    "scipy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "sklearn": true,
+    "openpyxl": true,
+    "PyPDF2": true
+  },
+  "exact_ecat_solver_available": false,
+  "exact_mmga_framework_available": false,
+  "fallback_needed": true,
+  "fallback_summary": "Use sklearn MLPRegressor as ANN surrogate and a low-order interpretable discharge-thermal simulator sampled by Latin hypercube to emulate MMGA-style rapid identification."
+}

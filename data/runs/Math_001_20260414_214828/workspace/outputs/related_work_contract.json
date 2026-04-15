@@ -1,0 +1,1 @@
+{"Nesterov": "O(1/k^2) accel grad, ODE: ddot X + 3/t dot X + nabla f=0", "ADMM": "min f(x)+g(z) s.t. Ax+Bz=c, updates x,z,u", "Polyak": "multistep accel", "SuBoydCandes": "ODE derivation Nesterov"}

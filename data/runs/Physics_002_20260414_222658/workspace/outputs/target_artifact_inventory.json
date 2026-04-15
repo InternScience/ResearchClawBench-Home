@@ -1,0 +1,6 @@
+{
+  "primary_quantities": ["XEB fidelity F(N,d,r)", "mean/std F vs d (N=40)", "mean/std F vs N (d=12)"],
+  "tables": ["outputs/fidelities_N40_dscan.json", "outputs/fidelities_Nscan_d12.json"],
+  "figures": ["report/images/F_vs_d_N40.png", "report/images/F_vs_N_d12.png", "report/images/data_overview_shots.png"],
+  "interpretability": ["per-instance F distributions"]
+}

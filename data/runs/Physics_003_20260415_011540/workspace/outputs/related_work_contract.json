@@ -1,0 +1,30 @@
+{
+  "sources": [
+    "paper_000.pdf",
+    "paper_001.pdf",
+    "paper_002.pdf",
+    "paper_003.pdf"
+  ],
+  "task_relevant_extractions": {
+    "paper_000.pdf": [
+      "Floquet treatment of driven graphene predicts photon-dressed Dirac states and light-induced modifications near the Dirac cone.",
+      "Circular polarization can open gaps and produce Hall-like responses via Floquet-engineered Berry curvature."
+    ],
+    "paper_001.pdf": [
+      "tr-ARPES can directly observe Floquet-Bloch sidebands as energy-spaced replicas of a Dirac cone.",
+      "Avoided crossings and polarization dependence are central observables under mid-infrared pumping."
+    ],
+    "paper_002.pdf": [
+      "Floquet engineering modifies topological band structure on ultrafast timescales; repeated quasienergy-zone picture is relevant for driven Dirac materials."
+    ],
+    "paper_003.pdf": [
+      "Theory for graphene pump-probe photoemission predicts Floquet band formation from realistic short pulses.",
+      "Graphene-specific interpretation should focus on replica bands, local gap/crossing behavior, and pseudospin-related modifications rather than overclaiming topological phase realization."
+    ]
+  },
+  "impact_on_contract": [
+    "Use tr-ARPES-style energy-momentum maps as main evidence figures.",
+    "Quantify replica energy spacing relative to the drive photon energy.",
+    "Discuss polarization dependence conservatively because provided data emphasize linear-polarization modulation more than circular-gap opening."
+  ]
+}

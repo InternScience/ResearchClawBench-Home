@@ -1,0 +1,16 @@
+{
+  "task": "AI-guided inverse design of recyclable vitrimeric polymers",
+  "named_methods": [
+    "molecular dynamics simulations",
+    "Gaussian-process calibration",
+    "graph variational autoencoder"
+  ],
+  "primary_targets": ["glass transition temperature (Tg)", "candidate vitrimer chemistries"],
+  "required_deliverables": [
+    "calibration analysis between MD and experimental Tg",
+    "inverse-design/generation workflow for new candidates",
+    "validation/comparison figures",
+    "publication-style report"
+  ],
+  "note": "Experimental validation cannot be executed physically in this workspace; computational prioritization of candidates will be used as a transparent proxy."
+}

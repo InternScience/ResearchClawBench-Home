@@ -1,0 +1,20 @@
+{
+  "task": "Uncalled4 nanopore signal-alignment and modification-detection analysis from provided benchmark tables and pore-model summaries",
+  "named_commitments": [
+    "Reproduce and analyze alignment performance benchmarks across tools and chemistries",
+    "Compare Uncalled4 versus Nanopolish for m6A detection using labeled predictions",
+    "Analyze pore-model current statistics across DNA/RNA chemistries and k-mer contexts",
+    "Produce publication-style figures and a traceable report"
+  ],
+  "primary_quantitative_answers": [
+    "Runtime and file-size comparisons by chemistry and tool",
+    "Precision-recall and ROC performance for Uncalled4 and Nanopolish-derived m6A predictions",
+    "Descriptive differences in pore-model mean/current variability across chemistries"
+  ],
+  "required_outputs": [
+    "report/report.md",
+    "PNG figures in report/images/",
+    "intermediate CSV/JSON artifacts in outputs/",
+    "analysis code in code/"
+  ]
+}

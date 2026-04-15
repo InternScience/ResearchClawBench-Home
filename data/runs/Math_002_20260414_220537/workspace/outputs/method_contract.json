@@ -1,0 +1,20 @@
+{
+  "task": "MAPF hybrid algorithm integrating Multi-Agent Reinforcement Learning into a Large Neighborhood Search framework",
+  "primary_objective": "Balance solution quality and computational efficiency by using MARL-like collision reduction in early stages and prioritized planning in later stages to improve success rate on complex environments.",
+  "named_commitments": [
+    "MAPF with collision-free paths and no vertex/swap collisions",
+    "hybrid algorithm",
+    "MARL-inspired early-stage coordination",
+    "Large Neighborhood Search framework",
+    "Prioritized Planning later-stage repair",
+    "comparison against existing methods/baselines",
+    "figures and validation plots"
+  ],
+  "direct_outputs": [
+    "per-instance success/failure",
+    "solution cost metrics",
+    "runtime metrics",
+    "comparison tables across map families",
+    "validation figures"
+  ]
+}

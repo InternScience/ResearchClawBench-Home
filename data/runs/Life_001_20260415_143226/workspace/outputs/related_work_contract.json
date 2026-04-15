@@ -1,0 +1,31 @@
+{
+  "papers": [
+    {
+      "id": "paper_000",
+      "title": "Gapped sequence alignment using artificial neural networks: application to the MHC class I system",
+      "authors": "Andreatta and Nielsen",
+      "key_contribution": "NetMHC-4.0 method for peptide-MHC binding affinity prediction with gapped sequence alignment",
+      "relevance": "MHC binding prediction is a key component in neoantigen vaccine design"
+    },
+    {
+      "id": "paper_001",
+      "title": "On TCR binding predictors failing to generalize to unseen peptides",
+      "authors": "Grazioli et al.",
+      "key_contribution": "Analysis of TCR-peptide/pMHC binding prediction generalization",
+      "relevance": "TCR binding prediction is crucial for understanding immune response"
+    },
+    {
+      "id": "paper_003",
+      "title": "CloneSig: joint inference of intra-tumor heterogeneity and mutational signatures",
+      "authors": "Abécassis et al.",
+      "key_contribution": "Computational method for ITH inference from bulk sequencing",
+      "relevance": "Intra-tumor heterogeneity impacts neoantigen vaccine design"
+    }
+  ],
+  "key_insights": [
+    "MHC class I molecules bind peptides of length 8-11 amino acids with 9mers being optimal",
+    "Peptide-MHC binding prediction is crucial for neoantigen selection",
+    "TCR binding prediction remains challenging for unseen peptides",
+    "Intra-tumor heterogeneity affects vaccine efficacy and must be considered in optimization"
+  ]
+}

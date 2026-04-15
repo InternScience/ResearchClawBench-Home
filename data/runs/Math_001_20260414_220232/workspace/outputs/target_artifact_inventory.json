@@ -1,0 +1,11 @@
+{
+  "artifacts": [
+    {"name": "dataset_summary", "status": "satisfied", "artifact": "outputs/dataset_summary.json"},
+    {"name": "dependency_check", "status": "satisfied", "artifact": "outputs/dependency_check.json"},
+    {"name": "algorithm_implementation", "status": "satisfied", "artifact": "code/run_analysis.py"},
+    {"name": "convergence_table", "status": "satisfied", "artifact": "outputs/convergence_table.csv"},
+    {"name": "lyapunov_diagnostic", "status": "satisfied", "artifact": "report/images/lyapunov_diagnostics.png"},
+    {"name": "comparison_figures", "status": "satisfied", "artifact": "report/images/convergence_gap.png"},
+    {"name": "final_report", "status": "satisfied", "artifact": "report/report.md"}
+  ]
+}

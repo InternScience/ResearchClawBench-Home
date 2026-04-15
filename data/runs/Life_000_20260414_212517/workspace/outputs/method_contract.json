@@ -1,0 +1,11 @@
+{
+  \"method_contract\": {
+    \"models\": [\"RFR\", \"GP\"],
+    \"acquisition\": \"EI\",
+    \"target\": \"Glass (kPa)_max > 1000\",
+    \"features\": [\"Nucleophilic-HEA\", \"Hydrophobic-BA\", \"Acidic-CBEA\", \"Cationic-ATAC\", \"Aromatic-PEA\", \"Amide-AAm\"],
+    \"data_sources\": [\"184_verified_Original Data_ML_20230926.xlsx\"],
+    \"opt_sources\": [\"ML_ei&pred (1&2&3rounds)_20240408.xlsx\", \"ML_ei&pred_20240213.xlsx\"],
+    \"commitments\": [\"Train on initial 184 data\", \"BO with EI\", \"Propose designs >1 MPa\"]
+  }
+}

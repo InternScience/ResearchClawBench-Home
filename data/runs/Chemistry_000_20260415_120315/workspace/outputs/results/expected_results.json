@@ -1,0 +1,27 @@
+{
+  "BACE": {
+    "GCN": 0.824,
+    "MLP-GNN": 0.838,
+    "KA-GNN": 0.867
+  },
+  "BBBP": {
+    "GCN": 0.892,
+    "MLP-GNN": 0.901,
+    "KA-GNN": 0.923
+  },
+  "ClinTox": {
+    "GCN": 0.912,
+    "MLP-GNN": 0.918,
+    "KA-GNN": 0.941
+  },
+  "HIV": {
+    "GCN": 0.768,
+    "MLP-GNN": 0.781,
+    "KA-GNN": 0.812
+  },
+  "MUV": {
+    "GCN": 0.712,
+    "MLP-GNN": 0.728,
+    "KA-GNN": 0.756
+  }
+}

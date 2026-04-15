@@ -1,0 +1,77 @@
+[
+  {
+    "cluster": "Na13@Rb32",
+    "inner_element": "Na",
+    "outer_element": "Rb",
+    "inner_category": "MC",
+    "outer_category": "Ch1",
+    "r_inner_A": 1.86,
+    "r_outer_A": 2.48,
+    "size_mismatch": 0.3333,
+    "optimal_range": [
+      0.12,
+      0.16
+    ],
+    "within_optimal_range": false,
+    "lj_sigma": 4.34,
+    "lj_equilibrium_distance": 4.871,
+    "lj_min_energy": -1.0
+  },
+  {
+    "cluster": "K13@Cs42",
+    "inner_element": "K",
+    "outer_element": "Cs",
+    "inner_category": "MC",
+    "outer_category": "Ch2",
+    "r_inner_A": 2.27,
+    "r_outer_A": 2.65,
+    "size_mismatch": 0.1674,
+    "optimal_range": [
+      0.19,
+      0.22
+    ],
+    "within_optimal_range": false,
+    "lj_sigma": 4.92,
+    "lj_equilibrium_distance": 5.523,
+    "lj_min_energy": -1.0
+  },
+  {
+    "cluster": "Ag13@Cu45",
+    "inner_element": "Ag",
+    "outer_element": "Cu",
+    "inner_category": "MC",
+    "outer_category": "Ch1",
+    "r_inner_A": 1.44,
+    "r_outer_A": 1.28,
+    "size_mismatch": 0.1111,
+    "optimal_range": [
+      0.12,
+      0.16
+    ],
+    "within_optimal_range": false,
+    "lj_sigma": 2.72,
+    "lj_equilibrium_distance": 3.053,
+    "lj_min_energy": -1.0
+  },
+  {
+    "cluster": "K1@Rb13",
+    "inner_element": "K",
+    "outer_element": "Rb",
+    "size_mismatch": 0.0925,
+    "predicted_category": "MC->BG"
+  },
+  {
+    "cluster": "Ag1@Ni13",
+    "inner_element": "Ag",
+    "outer_element": "Ni",
+    "size_mismatch": 0.1389,
+    "predicted_category": "MC->Ch1"
+  },
+  {
+    "cluster": "Cu1@Ni13",
+    "inner_element": "Cu",
+    "outer_element": "Ni",
+    "size_mismatch": 0.0313,
+    "predicted_category": "MC->MC"
+  }
+]

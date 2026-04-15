@@ -1,0 +1,25 @@
+{
+  "named_mechanism": "Statistical replication of natural adhesive protein sequence features using monomer-composition features for hydrogel design",
+  "definition": [
+    "Represent proteins through reduced chemical feature categories mapped onto monomer classes",
+    "Use statistical relationships between these composition features and adhesion outcomes",
+    "Generate candidate synthetic compositions within empirically supported ranges rather than exact sequence copying"
+  ],
+  "assumptions": [
+    "Monomer feed composition is a reasonable proxy for effective sequence-derived chemistry at formulation level",
+    "Glass adhesion at 10 s is the best-supported quantitative endpoint in the cleaned dataset",
+    "Optimization-dataset Glass (kPa)_max values reflect later-round design outcomes"
+  ],
+  "invariants": [
+    "Candidate compositions must be nonnegative and sum to 1",
+    "Interpretability should use actual monomer categories, not anonymous latent variables",
+    "Threshold analysis must explicitly distinguish observed regime from >1 MPa aspirational target"
+  ],
+  "non_negotiable_steps": [
+    "Audit data coverage and target definition",
+    "Benchmark predictive models with cross-validation",
+    "Provide interpretable feature analysis",
+    "Assess optimization trajectories and top-performing candidates",
+    "State the limitation that >1 MPa is outside currently observed measured range if confirmed"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Topological Phases in AB-Stacked MoTe2/WSe2",
+  "authors": [
+    "Haining Pan",
+    "Ming Xie",
+    "Fengcheng Wu",
+    "Sankar Das Sarma"
+  ],
+  "arxiv_id": "2111.01152",
+  "system": "AB-stacked MoTe2/WSe2 moir\u00e9 heterobilayer",
+  "lattice_constants": {
+    "a_b_MoTe2_A": 3.575,
+    "a_t_WSe2_A": 3.32
+  },
+  "moire_period_nm": 4.7,
+  "effective_masses": {
+    "m_bottom_me": 0.65,
+    "m_top_me": 0.35
+  },
+  "key_parameters": {
+    "w_tunneling_meV": 12,
+    "Vb_meV": 7,
+    "Vzt_meV": -20,
+    "psi_b_deg": -14,
+    "gate_distance_d_nm": 5,
+    "dielectric_constant_epsilon": [
+      10,
+      15,
+      20
+    ],
+    "bandwidth_meV": 47,
+    "coulomb_scale_meV": 31
+  },
+  "filling_factors_studied": [
+    1,
+    2,
+    "2/3"
+  ],
+  "phases": {
+    "nu_2": "Z2 topological insulator",
+    "nu_1": [
+      "spin density wave",
+      "in-plane ferromagnetic",
+      "valley polarized (Chern insulator)"
+    ],
+    "nu_2_3": "topological charge density wave"
+  },
+  "interaction_model": "dual-gate screened Coulomb: V(q) = 2*pi*e^2*tanh(q*d)/(epsilon*q)",
+  "method": "self-consistent Hartree-Fock approximation in plane-wave basis",
+  "symmetry_group": "C3v point group",
+  "valleys": "+K and -K (tau = +/-1)",
+  "kappa_vector": "4*pi/(3*a_M) * (1, 0)"
+}

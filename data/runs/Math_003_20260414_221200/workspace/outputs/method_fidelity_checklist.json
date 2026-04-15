@@ -1,0 +1,21 @@
+{
+  "named_method": "Symbolic geometry proof search using provided construction definitions and inference rules",
+  "definition": "Translate each problem into facts/goals over the provided predicate language and attempt forward-chaining / heuristic proof search with explicit rule applications.",
+  "assumptions": [
+    "Benchmark lines are parseable into constructions and a single query goal",
+    "Definitions provide derivable primitive predicates from constructions",
+    "Rules are used as machine-verifiable inference templates"
+  ],
+  "invariants": [
+    "Per-problem outputs retain the original problem identifier",
+    "Each verification claim is backed by an explicit trace or marked unresolved",
+    "Aggregate metrics are computed directly from per-problem outputs"
+  ],
+  "non_negotiable_steps": [
+    "Parse benchmark statements",
+    "Expand constructions via defs.txt where straightforward",
+    "Apply rules.txt as exact symbolic inference patterns",
+    "Check whether target goal appears in derived facts",
+    "Save proof traces and unresolved states"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "python_version": "3.10.12",
+  "libraries": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "sklearn": true,
+    "ase": false
+  },
+  "pdf_reader": {
+    "ReadPDF": "failed on paper_000.pdf and paper_001.pdf with unexpected NoneType result"
+  },
+  "capability_assessment": {
+    "core_analysis_stack_available": true,
+    "can_parse_xyz_with_custom_code": true,
+    "can_train_simple baseline regressors": true,
+    "can_generate figures": true,
+    "named_method_exact_LES_reimplementation": "uncertain pending related-work extraction and dataset metadata; likely only partial benchmark-faithful approximation feasible within workspace"
+  },
+  "fallbacks": {
+    "xyz_parsing": "custom Python parser instead of ASE",
+    "pdf_text_extraction": "use local command-line tools via Bash if available"
+  }
+}

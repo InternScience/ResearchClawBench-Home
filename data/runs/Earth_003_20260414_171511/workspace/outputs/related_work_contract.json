@@ -1,0 +1,14 @@
+{
+  "papers_used": [
+    "Schultz et al. 2021: deep learning can complement but not yet trivially replace NWP; emphasizes physical constraints and explainability limitations.",
+    "Dueben and Bauer 2018: highlights design challenges for global ML weather models, including stability, data requirements, and forecast-system design choices.",
+    "Pathak et al. 2022 (FourCastNet): demonstrates 0.25-degree high-resolution global data-driven forecasting with competitiveness against ECMWF IFS at short lead times.",
+    "Chen et al. 2023 (FengWu): transformer-based global medium-range forecasting can extend skill beyond 10 days, with lead-time-aware evaluation and multivariate design."
+  ],
+  "contract_updates": [
+    "Lead-time-aware diagnostics are essential because medium-range skill decays nonlinearly.",
+    "Comparisons to ECMWF/IFS-class benchmarks should be framed cautiously when direct benchmark outputs are absent in the workspace.",
+    "Global map diagnostics and variable-specific summaries are standard artifact families for weather-AI reports.",
+    "Stability and physical plausibility should be discussed as limitations when only sample forecast artifacts are available."
+  ]
+}

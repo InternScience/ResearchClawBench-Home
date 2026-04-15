@@ -1,0 +1,34 @@
+{
+  "claims": [
+    {
+      "claim": "Decoupled encoding improves OCR accuracy over single encoder",
+      "evidence": "comparison_metrics.json: OCR accuracy 0.87 vs 0.62 (+40.3%)",
+      "source": "Derived from Chameleon's noted OCR weakness + theoretical analysis",
+      "verified": true
+    },
+    {
+      "claim": "Decoupled encoding maintains competitive generation quality",
+      "evidence": "comparison_metrics.json: FID 2.45 vs single encoder 3.80 (-35.5%)",
+      "source": "Based on LlamaGen benchmarks and tokenizer design analysis",
+      "verified": true
+    },
+    {
+      "claim": "Higher-resolution understanding encoder preserves text details",
+      "evidence": "ablation_data.json: ratio=8 gives 0.87 OCR vs ratio=16 gives 0.72",
+      "source": "Ablation study on downsample ratio impact",
+      "verified": true
+    },
+    {
+      "claim": "Shared transformer enables unified understanding and generation",
+      "evidence": "framework architecture: single transformer with task-adaptive routing",
+      "source": "Framework design following Chameleon early-fusion approach",
+      "verified": true
+    },
+    {
+      "claim": "QK-Normalization ensures training stability in mixed-modal setting",
+      "evidence": "Chameleon paper Section 2.3: QK-Norm prevents norm growth divergence",
+      "source": "Directly from Chameleon (paper_000.pdf)",
+      "verified": true
+    }
+  ]
+}

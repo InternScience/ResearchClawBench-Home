@@ -1,0 +1,38 @@
+{
+  "dataset_sizes": {
+    "density_points": 50,
+    "temperature_points_common": 90,
+    "temperature_points_extra_in_experimental_array": 20,
+    "dc_current_points_common": 50,
+    "dc_current_points_extra_in_experimental_array": 35,
+    "microwave_points": 50
+  },
+  "velocity_ratio_geometric_to_conventional": 4.285714285714286,
+  "experimental_to_conventional_ratio_mean": 53.88631828585516,
+  "experimental_to_geometric_ratio_mean": 11.645850194749412,
+  "experimental_to_conventional_ratio_range": [
+    32.79452797939415,
+    85.25153061516096
+  ],
+  "experimental_to_geometric_ratio_range": [
+    7.652056548549459,
+    16.573358477480532
+  ],
+  "electron_hole_asymmetry_percent_mean": 5.128244662145226,
+  "best_temperature_power_n": 5.999999999999913,
+  "best_temperature_power_n_std": 0.6927463132015838,
+  "near_zero_current_quadratic_coefficient": 1.007435912306068,
+  "near_zero_current_linear_coefficient": 0.39600830318025226,
+  "resistance_proxy_minmax": [
+    0.01,
+    0.06957187397980891
+  ],
+  "resonance_proxy_density_hole_minmax": [
+    196368.1091725436,
+    483644.1015871071
+  ],
+  "resonance_proxy_density_electron_minmax": [
+    191395.9576375635,
+    471397.9592658415
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "named_mechanism": "Covariance-weighted generalized least squares over shared anchors and calibration layers",
+  "assumptions": [
+    "Common anchor uncertainties induce cross-measurement covariance within each method-anchor subset",
+    "Secondary-indicator absolute magnitudes are calibrated from host distances",
+    "Low-redshift Hubble law with uncertainty from photometric and peculiar-velocity terms is adequate for the minimal dataset",
+    "SBF group calibrators require extra depth scatter handling"
+  ],
+  "non_negotiable_steps": [
+    "Parse dataset faithfully",
+    "Construct covariance-aware host distance estimates rather than naive unweighted averages",
+    "Propagate calibration uncertainty into absolute magnitude estimates",
+    "Infer H0 separately by secondary channel and combine with covariance weighting when justified",
+    "Report deviations from full published Local Distance Network scope"
+  ],
+  "fidelity_risks": [
+    "Minimal dataset omits several primary and secondary channels from the full paper",
+    "Consensus covariance may need simplifying assumptions absent full covariance products"
+  ]
+}

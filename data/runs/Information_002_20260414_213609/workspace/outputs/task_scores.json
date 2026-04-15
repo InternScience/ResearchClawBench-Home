@@ -1,0 +1,572 @@
+[
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "in_paper": 1,
+    "prompt_quality": 1,
+    "follow_instructions": 1,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 1,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "Yasaman": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 1,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 1,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Will": [
+        0,
+        0,
+        2,
+        0,
+        1,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "in_paper": 1,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "task": "Define each term in Potential Hamiltonian (continuum version)",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in summation",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 1,
+    "final_answer_accuracy": 1,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 1,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "in_paper": 0,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "in_paper": 2,
+    "prompt_quality": 1,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Wick's theorem",
+    "in_paper": 0,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Extract quadratic term",
+    "in_paper": 0,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Swap the index to combine Hartree and Fock terms",
+    "in_paper": 2,
+    "prompt_quality": 1,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Reduce momentum in Hartree term",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 1,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "task": "Reduce momentum in Fock term",
+    "in_paper": 2,
+    "prompt_quality": 2,
+    "follow_instructions": 2,
+    "physics_logic": 2,
+    "math_derivation": 2,
+    "final_answer_accuracy": 2,
+    "reviewer_scores": {
+      "Haining": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Will": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "Yasaman": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  }
+]

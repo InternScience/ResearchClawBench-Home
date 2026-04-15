@@ -1,0 +1,388 @@
+{
+  "overall": {
+    "Haining": {
+      "avg_step_score": 1.8020833333333333,
+      "std_step_score": 0.1789121253887257,
+      "avg_placeholder_score": 1.6595848595848597,
+      "std_placeholder_score": 0.3011742016124368,
+      "n_tasks_evaluated": 16
+    },
+    "Will": {
+      "avg_step_score": 1.8020833333333333,
+      "std_step_score": 0.1789121253887257,
+      "avg_placeholder_score": 1.623076923076923,
+      "std_placeholder_score": 0.3747752214465529,
+      "n_tasks_evaluated": 16
+    },
+    "Yasaman": {
+      "avg_step_score": 1.8020833333333333,
+      "std_step_score": 0.1789121253887257,
+      "avg_placeholder_score": 1.6246947496947497,
+      "std_placeholder_score": 0.31789485499432685,
+      "n_tasks_evaluated": 16
+    }
+  },
+  "dimension_stats": {
+    "in_paper": {
+      "Haining": {
+        "mean": 1.5,
+        "std": 0.7905694150420949,
+        "min": 0.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Will": {
+        "mean": 1.5,
+        "std": 0.7905694150420949,
+        "min": 0.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Yasaman": {
+        "mean": 1.5,
+        "std": 0.7905694150420949,
+        "min": 0.0,
+        "max": 2.0,
+        "count": 16
+      }
+    },
+    "prompt_quality": {
+      "Haining": {
+        "mean": 1.8125,
+        "std": 0.3903123748998999,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Will": {
+        "mean": 1.8125,
+        "std": 0.3903123748998999,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Yasaman": {
+        "mean": 1.8125,
+        "std": 0.3903123748998999,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      }
+    },
+    "follow_instructions": {
+      "Haining": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Will": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Yasaman": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      }
+    },
+    "physics_logic": {
+      "Haining": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Will": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Yasaman": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2.0,
+        "max": 2.0,
+        "count": 16
+      }
+    },
+    "math_derivation": {
+      "Haining": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Will": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Yasaman": {
+        "mean": 1.875,
+        "std": 0.33071891388307384,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      }
+    },
+    "final_answer_accuracy": {
+      "Haining": {
+        "mean": 1.75,
+        "std": 0.4330127018922193,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Will": {
+        "mean": 1.75,
+        "std": 0.4330127018922193,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      },
+      "Yasaman": {
+        "mean": 1.75,
+        "std": 0.4330127018922193,
+        "min": 1.0,
+        "max": 2.0,
+        "count": 16
+      }
+    }
+  },
+  "task_stats": [
+    {
+      "task": "Unknown",
+      "evaluator_avg": {
+        "Haining": null,
+        "Will": null,
+        "Yasaman": null
+      },
+      "placeholder_avg": {
+        "Haining": null,
+        "Will": null,
+        "Yasaman": null
+      }
+    },
+    {
+      "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+      "evaluator_avg": {
+        "Haining": 1.3333333333333333,
+        "Will": 1.3333333333333333,
+        "Yasaman": 1.3333333333333333
+      },
+      "placeholder_avg": {
+        "Haining": 1.3333333333333333,
+        "Will": 1.1428571428571428,
+        "Yasaman": 1.3333333333333333
+      }
+    },
+    {
+      "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+      "evaluator_avg": {
+        "Haining": 1.6666666666666667,
+        "Will": 1.6666666666666667,
+        "Yasaman": 1.6666666666666667
+      },
+      "placeholder_avg": {
+        "Haining": 1.5,
+        "Will": 1.3,
+        "Yasaman": 1.5
+      }
+    },
+    {
+      "task": "Construct Potential Hamiltonian (continuum version)",
+      "evaluator_avg": {
+        "Haining": 1.8333333333333333,
+        "Will": 1.8333333333333333,
+        "Yasaman": 1.8333333333333333
+      },
+      "placeholder_avg": {
+        "Haining": 1.0,
+        "Will": 1.1428571428571428,
+        "Yasaman": 1.2857142857142858
+      }
+    },
+    {
+      "task": "Define each term in Potential Hamiltonian (continuum version)",
+      "evaluator_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 2.0
+      },
+      "placeholder_avg": {
+        "Haining": 1.4,
+        "Will": 1.8,
+        "Yasaman": 1.0
+      }
+    },
+    {
+      "task": "Convert from single-particle to second-quantized form, return in matrix",
+      "evaluator_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 2.0
+      },
+      "placeholder_avg": {
+        "Haining": 1.7142857142857142,
+        "Will": 1.4285714285714286,
+        "Yasaman": 1.8571428571428572
+      }
+    },
+    {
+      "task": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+      "evaluator_avg": {
+        "Haining": 1.6666666666666667,
+        "Will": 1.6666666666666667,
+        "Yasaman": 1.6666666666666667
+      },
+      "placeholder_avg": {
+        "Haining": 2.0,
+        "Will": 1.0,
+        "Yasaman": 2.0
+      }
+    },
+    {
+      "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+      "evaluator_avg": {
+        "Haining": 1.8333333333333333,
+        "Will": 1.8333333333333333,
+        "Yasaman": 1.8333333333333333
+      },
+      "placeholder_avg": {
+        "Haining": 1.7142857142857142,
+        "Will": 2.0,
+        "Yasaman": 1.7142857142857142
+      }
+    },
+    {
+      "task": "Particle-hole transformation",
+      "evaluator_avg": {
+        "Haining": 1.6666666666666667,
+        "Will": 1.6666666666666667,
+        "Yasaman": 1.6666666666666667
+      },
+      "placeholder_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 1.375
+      }
+    },
+    {
+      "task": "Simplify the Hamiltonian in the particle-hole basis",
+      "evaluator_avg": {
+        "Haining": 1.8333333333333333,
+        "Will": 1.8333333333333333,
+        "Yasaman": 1.8333333333333333
+      },
+      "placeholder_avg": {
+        "Haining": 1.8571428571428572,
+        "Will": 1.8571428571428572,
+        "Yasaman": 2.0
+      }
+    },
+    {
+      "task": "Construct interaction Hamiltonian (momentum space)",
+      "evaluator_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 2.0
+      },
+      "placeholder_avg": {
+        "Haining": 1.5555555555555556,
+        "Will": 1.4285714285714286,
+        "Yasaman": 1.5555555555555556
+      }
+    },
+    {
+      "task": "Wick's theorem",
+      "evaluator_avg": {
+        "Haining": 1.6666666666666667,
+        "Will": 1.6666666666666667,
+        "Yasaman": 1.6666666666666667
+      },
+      "placeholder_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 2.0
+      }
+    },
+    {
+      "task": "Extract quadratic term",
+      "evaluator_avg": {
+        "Haining": 1.6666666666666667,
+        "Will": 1.6666666666666667,
+        "Yasaman": 1.6666666666666667
+      },
+      "placeholder_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 2.0
+      }
+    },
+    {
+      "task": "Swap the index to combine Hartree and Fock terms",
+      "evaluator_avg": {
+        "Haining": 1.8333333333333333,
+        "Will": 1.8333333333333333,
+        "Yasaman": 1.8333333333333333
+      },
+      "placeholder_avg": {
+        "Haining": 1.5,
+        "Will": 2.0,
+        "Yasaman": 1.5
+      }
+    },
+    {
+      "task": "Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice)",
+      "evaluator_avg": {
+        "Haining": 1.8333333333333333,
+        "Will": 1.8333333333333333,
+        "Yasaman": 1.8333333333333333
+      },
+      "placeholder_avg": {
+        "Haining": null,
+        "Will": null,
+        "Yasaman": null
+      }
+    },
+    {
+      "task": "Reduce momentum in Fock term (momentum in BZ + reciprocal lattice)",
+      "evaluator_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 2.0
+      },
+      "placeholder_avg": {
+        "Haining": null,
+        "Will": null,
+        "Yasaman": null
+      }
+    },
+    {
+      "task": "Combine the Hartree and Fock term",
+      "evaluator_avg": {
+        "Haining": 2.0,
+        "Will": 2.0,
+        "Yasaman": 2.0
+      },
+      "placeholder_avg": {
+        "Haining": null,
+        "Will": null,
+        "Yasaman": null
+      }
+    }
+  ]
+}

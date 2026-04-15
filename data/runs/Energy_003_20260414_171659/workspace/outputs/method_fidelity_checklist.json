@@ -1,0 +1,19 @@
+{
+  "named_method": "Hierarchical aggregation consistency verification",
+  "definition": "Check whether aggregated community/total series equal the sum of constituent building-level series at hourly resolution.",
+  "assumptions": [
+    "BN001-BN010 are the constituents of CN01 and Total in the mini-dataset.",
+    "Hourly timestamps are aligned across files."
+  ],
+  "invariants": [
+    "Same 8760 hourly timestamps across files",
+    "Same energy variable names and units",
+    "Aggregation errors should be numerically near zero if hierarchy is internally consistent"
+  ],
+  "implemented_steps": [
+    "Load all energy CSVs",
+    "Construct hourly datetimes",
+    "Sum BN001-BN010 per variable and timestamp",
+    "Compare sums against CN01 and Total with MAE, RMSE, max absolute error, and MAPE"
+  ]
+}

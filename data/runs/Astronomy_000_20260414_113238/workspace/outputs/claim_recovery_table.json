@@ -1,0 +1,22 @@
+[
+  {
+    "claim": "Full posterior samples used",
+    "artifact": "outputs/constraint_results.json and code/analyze_ulb_constraints.py",
+    "status": "supported"
+  },
+  {
+    "claim": "Source-specific and combined boson-mass exclusion curves generated",
+    "artifact": "report/images/exclusion_curves.png; outputs/constraint_results.json",
+    "status": "supported"
+  },
+  {
+    "claim": "Self-interaction coupling proxy reported",
+    "artifact": "outputs/constraint_results.json",
+    "status": "supported_with_model_dependence"
+  },
+  {
+    "claim": "Sensitivity test performed",
+    "artifact": "report/images/validation_width_sensitivity.png; outputs/validation_summary.csv",
+    "status": "supported"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "checked": ["pandas", "numpy", "sklearn", "matplotlib", "seaborn", "openpyxl", "shap", "scipy"],
+  "available_initially": {
+    "pandas": true,
+    "numpy": true,
+    "sklearn": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "openpyxl": false,
+    "shap": false,
+    "scipy": true
+  },
+  "action": "Attempted installation of openpyxl and PDF parsing helpers; SHAP may remain unavailable and will be replaced by permutation importance if necessary."
+}

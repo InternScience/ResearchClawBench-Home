@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "file": "related_work/paper_000.pdf",
+      "key_points": [
+        "Superradiance creates gaps and Regge trajectories in black-hole mass-spin space.",
+        "Self-interactions can trigger Bosenova collapse when cloud self-attraction exceeds gravitational binding.",
+        "Observed high spins can impose upper bounds on axion-like particle parameters."
+      ]
+    },
+    {
+      "file": "related_work/paper_001.pdf",
+      "key_points": [
+        "Exclusion regions are naturally represented as probability/exclusion functions over boson mass.",
+        "Multiple-field exclusion probabilities can be built from single-field overlap integrals when self-interactions are weak.",
+        "68% and 95% exclusion summaries are standard outputs."
+      ]
+    },
+    {
+      "file": "related_work/paper_002.pdf",
+      "key_points": [
+        "The gravitational fine-structure parameter scales as alpha ~ G M mu.",
+        "A gap in the black-hole mass-spin plane is a primary observable signature.",
+        "Stellar-mass black holes probe roughly 1e-14 to 1e-10 eV boson masses."
+      ]
+    },
+    {
+      "file": "related_work/paper_003.pdf",
+      "key_points": [
+        "Linear analyses neglect nonlinear self-interaction backreaction and motivate explicit limitations statements.",
+        "Supermassive black-hole observations can provide stringent bounds on massive bosonic fields."
+      ]
+    }
+  ],
+  "effect_on_contract": [
+    "Need source-specific and combined exclusion-probability artifacts versus boson mass.",
+    "Need explicit discussion of weak-self-interaction regime and an approximate mapping to coupling constraints.",
+    "Need validation/limitation section distinguishing simplified phenomenology from full GR superradiance calculations."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "pretrain": {
+    "num_samples": 5000,
+    "avg_num_nodes": 9.5592,
+    "avg_num_edges": 11.8494,
+    "feat_dim": 28,
+    "edge_feat_dim": 2,
+    "label_dist": {
+      "1": 2474,
+      "0": 2526
+    },
+    "std_num_nodes": 4.742245813957771,
+    "std_num_edges": 13.514729728707119,
+    "max_nodes": 24,
+    "max_edges": 100
+  },
+  "finetune": {
+    "num_samples": 2000,
+    "avg_num_nodes": 9.519,
+    "avg_num_edges": 11.697,
+    "feat_dim": 28,
+    "edge_feat_dim": 2,
+    "label_dist": {
+      "0": 1901,
+      "1": 99
+    },
+    "std_num_nodes": 4.7115431654607605,
+    "std_num_edges": 13.615586325972156,
+    "max_nodes": 24,
+    "max_edges": 108
+  },
+  "candidate": {
+    "num_samples": 1000,
+    "avg_num_nodes": 9.464,
+    "avg_num_edges": 11.758,
+    "feat_dim": 28,
+    "edge_feat_dim": 2,
+    "label_dist": {
+      "0": 957,
+      "1": 43
+    },
+    "std_num_nodes": 4.7380063317813335,
+    "std_num_edges": 13.676455534969579,
+    "max_nodes": 24,
+    "max_edges": 116
+  }
+}

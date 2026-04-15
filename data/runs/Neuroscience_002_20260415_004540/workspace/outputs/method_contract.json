@@ -1,0 +1,18 @@
+{
+  "task": "Binary classification of neuron segment merge decisions in connectomics",
+  "input": "20 features (morphology, intensity, embedding) per sample with degradation type",
+  "output": "Binary prediction (0=separate neurons, 1=same neuron/merge)",
+  "methods_committed": [
+    "Logistic Regression (linear baseline)",
+    "Random Forest (ensemble baseline)",
+    "Gradient Boosting (primary model)",
+    "Class-weight balancing for imbalanced data"
+  ],
+  "evaluation_metrics": ["accuracy", "precision", "recall", "f1", "auc_roc", "avg_precision"],
+  "analysis_axes": [
+    "Overall model comparison",
+    "Per-degradation-type performance",
+    "Feature importance analysis",
+    "Probability calibration"
+  ]
+}

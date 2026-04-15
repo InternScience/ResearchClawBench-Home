@@ -1,0 +1,195 @@
+{
+  "DIDS-MFL": {
+    "binary": {
+      "accuracy": 0.9219626953453202,
+      "f1_macro": 0.8741772152507309,
+      "precision": 0.9464796651364576,
+      "recall": 0.8332454441582313
+    },
+    "multiclass": {
+      "accuracy": 0.42935022837778103,
+      "f1_macro": 0.06675142310643806,
+      "f1_weighted": 0.2579376487976196,
+      "per_class": {
+        "Analysis": {
+          "count": 78,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Backdoor": {
+          "count": 64,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "DoS": {
+          "count": 728,
+          "f1": 0.0,
+          "is_few_shot": false
+        },
+        "Exploits": {
+          "count": 303,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Fuzzers": {
+          "count": 209,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Generic": {
+          "count": 2914,
+          "f1": 1.0,
+          "is_few_shot": false
+        },
+        "Reconnaissance": {
+          "count": 2194,
+          "f1": 0.0,
+          "is_few_shot": false
+        },
+        "Shellcode": {
+          "count": 278,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Worms": {
+          "count": 19,
+          "f1": 0.0,
+          "is_few_shot": true
+        }
+      }
+    }
+  },
+  "MLP": {
+    "binary": {
+      "accuracy": 0.9650478911107377,
+      "f1_macro": 0.9482013336086001,
+      "precision": 0.9702610043807884,
+      "recall": 0.9299224430071689
+    },
+    "multiclass": {
+      "accuracy": 0.5923088256961839,
+      "f1_macro": 0.1926312206386043,
+      "f1_weighted": 0.5473484868555549,
+      "per_class": {
+        "Analysis": {
+          "count": 78,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Backdoor": {
+          "count": 64,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "DoS": {
+          "count": 728,
+          "f1": 0.21223470661672908,
+          "is_few_shot": false
+        },
+        "Exploits": {
+          "count": 303,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Fuzzers": {
+          "count": 209,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Generic": {
+          "count": 2914,
+          "f1": 0.2964939024390244,
+          "is_few_shot": false
+        },
+        "Reconnaissance": {
+          "count": 2194,
+          "f1": 0.38022598870056495,
+          "is_few_shot": false
+        },
+        "Shellcode": {
+          "count": 278,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Worms": {
+          "count": 19,
+          "f1": 0.0,
+          "is_few_shot": true
+        }
+      }
+    }
+  },
+  "GraphSAGE": {
+    "binary": {
+      "accuracy": 0.885498235590657,
+      "f1_macro": 0.7990522404607214,
+      "precision": 0.9307054885684871,
+      "recall": 0.7508738816093647
+    },
+    "multiclass": {
+      "accuracy": 0.4807720642404597,
+      "f1_macro": 0.10818896744984652,
+      "f1_weighted": 0.38477700123743896,
+      "per_class": {
+        "Analysis": {
+          "count": 78,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Backdoor": {
+          "count": 64,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "DoS": {
+          "count": 728,
+          "f1": 0.0,
+          "is_few_shot": false
+        },
+        "Exploits": {
+          "count": 303,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Fuzzers": {
+          "count": 209,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Generic": {
+          "count": 2914,
+          "f1": 0.47749686211224673,
+          "is_few_shot": false
+        },
+        "Reconnaissance": {
+          "count": 2194,
+          "f1": 0.2147458840372226,
+          "is_few_shot": false
+        },
+        "Shellcode": {
+          "count": 278,
+          "f1": 0.0,
+          "is_few_shot": true
+        },
+        "Worms": {
+          "count": 19,
+          "f1": 0.0,
+          "is_few_shot": true
+        }
+      }
+    }
+  },
+  "RandomForest": {
+    "binary": {
+      "accuracy": 0.9971097294572341,
+      "f1_macro": 0.9959050089981527,
+      "precision": 0.9948342970367443,
+      "recall": 0.9969860116844971
+    },
+    "multiclass": {
+      "accuracy": 0.9328127302195374,
+      "f1_macro": 0.7493404923250262,
+      "f1_weighted": 0.9312920224037282
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "pdb_info": {
+    "total_atoms": 1559,
+    "chains": [
+      "A",
+      "D"
+    ],
+    "chain_stats": {
+      "A": {
+        "n_atoms": 864,
+        "n_residues": 108
+      },
+      "D": {
+        "n_atoms": 695,
+        "n_residues": 87
+      }
+    },
+    "n_residues": 195,
+    "interface_pairs": 14,
+    "interface_residues": 18,
+    "atomic_contacts": 165
+  },
+  "interface_info": {
+    "n_pairs": 14,
+    "n_unique_residues": 18,
+    "atomic_contacts": 165
+  },
+  "skempi_info": {
+    "total_entries": 105,
+    "unique_mutations": 85,
+    "ddg_mean": 4.146939581957254,
+    "ddg_std": 3.798723116767912,
+    "interface_mutations": 37,
+    "non_interface_mutations": 96
+  }
+}

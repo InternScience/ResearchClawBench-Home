@@ -1,0 +1,6 @@
+claim,status,artifact,evidence
+Experimental stiffness strongly exceeds conventional Fermi-liquid prediction,supported,outputs/carrier_density_summary.csv,"mean ratio exp/conv=53.89, range=32.79-85.25"
+Quantum geometric scale is much closer than conventional but still below experiment,supported,outputs/carrier_density_summary.csv,"mean ratio exp/geom=11.65, range=7.65-16.57"
+Temperature dependence follows a power law consistent with anisotropic/nodal pairing,supported,outputs/temperature_fit_metrics.csv,best-fit n=6.000±0.693; lowest RMSE model=continuous_power_fit
+Near-zero-current suppression is quadratic rather than linear,supported,outputs/current_fit_metrics.csv,quadratic RMSE=0.0007 < linear RMSE=0.0124
+Direct DC resistance and microwave resonance were not separately provided; proxies inferred from stiffness trends,limitation,outputs/dataset_summary.json,"Dataset contains superfluid stiffness arrays and model curves, but no explicit raw resistance or resonance-frequency columns."

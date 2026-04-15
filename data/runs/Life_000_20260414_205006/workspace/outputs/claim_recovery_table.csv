@@ -1,0 +1,6 @@
+claim_id,claim,supporting_artifact,status
+C1,The verified initial training dataset does not contain any formulation near the 1 MPa target.,outputs/data_overview.json,supported_directly
+C2,"Among tested regressors, the random forest is the strongest baseline for predicting Glass adhesion from monomer composition.",outputs/model_comparison.csv,supported_directly
+C3,"Hydrophobic, aromatic, and nucleophilic fractions are among the most influential variables for predicted adhesion.",outputs/feature_importance.csv,supported_directly
+C4,Optimization rounds improved outcomes into the ~300–350 kPa range but still remained well below 1 MPa.,outputs/optimization_round_summary.csv; outputs/data_overview.json,supported_directly
+C5,"Design recommendations should be interpreted as extrapolations within the observed composition regime, not proof of achieving 1 MPa.",outputs/candidate_designs.csv,supported_with_limitation

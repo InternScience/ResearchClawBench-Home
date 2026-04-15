@@ -1,0 +1,13 @@
+{
+  "named_mechanisms": {
+    "VOS_framework": {
+      "definition": "Unified view using variable splitting and operator splitting across accelerated proximal gradient and ADMM.",
+      "assumptions": ["convex objective", "smooth least-squares term", "nonsmooth l1 penalty"],
+      "invariants": ["same global Lasso objective targeted", "monotone or decreasing Lyapunov-style surrogate expected"],
+      "non_negotiable_steps": ["implement proximal thresholding", "implement momentum update for Nesterov/FISTA", "implement split-variable ADMM iterations"]
+    }
+  },
+  "planned_deviations": [
+    "Use discrete-time Lyapunov surrogates and empirical verification rather than a full formal continuous-time proof."
+  ]
+}

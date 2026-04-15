@@ -1,0 +1,11 @@
+{
+  "primary_artifacts": [
+    {"name": "per_instance_fidelity_table", "path": "outputs/per_instance_fidelity.csv", "status": "satisfied"},
+    {"name": "depth_summary_table", "path": "outputs/depth_summary.csv", "status": "satisfied"},
+    {"name": "analysis_summary_json", "path": "outputs/analysis_summary.json", "status": "satisfied"},
+    {"name": "fidelity_vs_depth_plot", "path": "report/images/fidelity_vs_depth.png", "status": "satisfied"},
+    {"name": "instance_distribution_plot", "path": "report/images/fidelity_distribution_by_depth.png", "status": "satisfied"},
+    {"name": "classical_gap_plot", "path": "report/images/fidelity_vs_classical_threshold.png", "status": "satisfied"},
+    {"name": "final_report", "path": "report/report.md", "status": "satisfied"}
+  ]
+}

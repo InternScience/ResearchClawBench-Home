@@ -1,0 +1,8 @@
+{
+  "task": "RCS fidelity via XEB",
+  "named_methods": ["XEB (Cross-Entropy Benchmarking)"],
+  "formula": "F_XEB = 2^N * (1/M) * sum_{x in verified} counts(x) * |amp(x)|^2, where verified ~20 top-prob bitstrings",
+  "uncertainty": "std over r instances",
+  "plots": ["F vs d for N=40", "F vs N for d=12"],
+  "validation": "curves showing exp fidelity drop, compare to paper classical approximability gap"
+}

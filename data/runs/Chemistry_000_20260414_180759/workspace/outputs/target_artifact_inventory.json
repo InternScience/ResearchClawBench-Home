@@ -1,0 +1,8 @@
+{
+  "primary_quantitative": ["ROC-AUC per dataset/task for KA-GNN vs baselines"],
+  "comparison_tables": ["Main results table: model x dataset x metric (mean±std)"],
+  "figure_families": ["Data overview (balance), perf bars/lines, ROC curves, training loss/ROC curves, arch diagram, KAN interp viz"],
+  "interpretability_artifacts": ["KAN symbol plots, local explanations"],
+  "per_dataset": ["Balance plot, ROC for top tasks"],
+  "efficiency": ["Params, train time table"]
+}

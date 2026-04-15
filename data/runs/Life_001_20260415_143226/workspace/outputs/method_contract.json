@@ -1,0 +1,25 @@
+{
+  "task": "Personalized Neoantigen Vaccine Composition Optimization",
+  "input": [
+    "Patient-specific sequencing data (tumor DNA/RNA, healthy DNA)",
+    "HLA typing results",
+    "Mutation VAF",
+    "Gene expression (mean/variance)",
+    "Peptide cleavage prediction scores",
+    "MHC binding prediction scores",
+    "pMHC stability prediction scores",
+    "Vaccine manufacturing budget (max neoantigen elements)"
+  ],
+  "output": [
+    "Optimal personalized neoantigen vaccine composition",
+    "Quantitative vaccine efficacy metrics (per-cell immune response probability, coverage ratio, IoU)",
+    "Optimization runtime data"
+  ],
+  "named_methods": {
+    "MinSum": "Optimization objective that minimizes the sum of non-response probabilities across tumor cells",
+    "adaptive": "Adaptive optimization strategy for vaccine element selection"
+  },
+  "budget_constraint": 10,
+  "simulation_population_sizes": [100, 1000, 3000, 7000, 10000],
+  "patient_samples": ["3812", "3942", "3948", "3978", "3995", "4007", "4032"]
+}

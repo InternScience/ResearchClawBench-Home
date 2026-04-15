@@ -1,0 +1,5 @@
+claim,supporting_artifact
+All mini-dataset files contain complete 2014 hourly coverage with no missing values.,outputs/dataset_overview.json; outputs/entity_summary.csv; outputs/quality_summary.csv
+CN01 and Total are exactly consistent with the sum of BN001-BN010 up to floating-point precision.,outputs/hierarchical_consistency.csv; report/images/hierarchical_validation.png
+Energy-weather relationships are nontrivial and visible in the correlation matrix.,outputs/correlation_matrix.csv; report/images/correlation_heatmap.png
+Buildings show heterogeneous scales and outlier rates across variables.,outputs/entity_summary.csv; outputs/quality_summary.csv; report/images/dataset_overview.png; report/images/quality_summary.png

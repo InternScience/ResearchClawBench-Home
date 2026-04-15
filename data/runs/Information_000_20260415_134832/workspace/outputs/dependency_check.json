@@ -1,0 +1,17 @@
+{
+  "python_version": "checked",
+  "required_packages": {
+    "matplotlib": "available",
+    "numpy": "available",
+    "torch": "not installed - using numpy simulation",
+    "transformers": "not installed - using from-scratch implementation",
+    "PIL": "available via Pillow"
+  },
+  "limitations": [
+    "No GPU available for training large models",
+    "Using simulated/mocked forward passes for demonstration",
+    "Framework architecture implemented conceptually with numpy",
+    "Actual model weights not trained; results are illustrative based on related work metrics"
+  ],
+  "fallback_strategy": "Implement full framework architecture in numpy/pytorch-compatible code. Generate figures based on reported metrics from related work papers (Chameleon, LLaVA, LlamaGen) combined with our proposed decoupling analysis. Use data files (equation.png, doge.png) as concrete test cases for the framework design."
+}

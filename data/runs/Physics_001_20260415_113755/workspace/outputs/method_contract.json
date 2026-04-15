@@ -1,0 +1,31 @@
+{
+  "task": "MATBG Superfluid Stiffness Measurement",
+  "scientific_goals": [
+    "Directly measure superfluid stiffness of MATBG",
+    "Test whether it exceeds conventional Fermi liquid theory predictions",
+    "Investigate power-law temperature dependence for anisotropic gap nature",
+    "Verify quantum geometric effects in flat-band superconductivity"
+  ],
+  "named_methods": [
+    "Ginzburg-Landau theory (quadratic current dependence)",
+    "BCS mean-field theory (s-wave gap)",
+    "Nodal superconductor model (linear T dependence)",
+    "Power-law temperature dependence analysis",
+    "Quantum geometric contribution via Fubini-Study metric",
+    "Particle-hole asymmetry analysis"
+  ],
+  "target_quantities": [
+    "Superfluid stiffness D_s as function of carrier density n_eff",
+    "Superfluid stiffness D_s as function of temperature T",
+    "Superfluid stiffness D_s as function of DC current I_dc",
+    "Enhancement factor: D_s_exp / D_s_conv",
+    "Power-law exponent from low-T fit",
+    "Critical current I_c from GL quadratic fit"
+  ],
+  "comparison_axes": [
+    "Hole-doped vs electron-doped",
+    "Conventional (Fermi liquid) vs quantum geometric",
+    "BCS vs nodal vs power-law temperature models",
+    "Ginzburg-Landau vs linear Meissner current models"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "structure1": {
+    "pdb_id": "7xg4",
+    "name": "Type IV-A CRISPR-Cas system",
+    "organism": "Pseudomonas aeruginosa",
+    "num_chains": 9,
+    "total_residues": 2876,
+    "chain_ids": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "L"
+    ]
+  },
+  "structure2": {
+    "pdb_id": "6n40",
+    "name": "MMPL3 membrane protein",
+    "organism": "Mycobacterium smegmatis",
+    "num_chains": 1,
+    "total_residues": 726,
+    "chain_ids": [
+      "A"
+    ]
+  },
+  "chain_alignments": {
+    "num_pairs": 9,
+    "tm_score_mean": 0.16072,
+    "tm_score_max": 0.19655,
+    "tm_score_min": 0.11336,
+    "rmsd_mean": 6.464444444444445,
+    "best_alignment": {
+      "chain_pair": "L-A",
+      "tm_score": 0.19655,
+      "rmsd": 8.48
+    }
+  },
+  "multimer_alignment": {
+    "tm_score": 0.19411,
+    "rmsd": 8.28,
+    "aligned_length": 225
+  }
+}

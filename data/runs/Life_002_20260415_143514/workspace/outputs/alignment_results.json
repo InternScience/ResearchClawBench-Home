@@ -1,0 +1,84 @@
+{
+  "structure1_summary": {
+    "pdb_file": "data/7xg4.pdb",
+    "num_chains": 12,
+    "chain_ids": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L"
+    ],
+    "chain_lengths": {
+      "A": 241,
+      "B": 219,
+      "C": 329,
+      "D": 331,
+      "E": 324,
+      "F": 324,
+      "G": 280,
+      "H": 234,
+      "I": 60,
+      "J": 36,
+      "K": 37,
+      "L": 594
+    },
+    "total_residues": 3009
+  },
+  "structure2_summary": {
+    "pdb_file": "data/6n40.pdb",
+    "num_chains": 1,
+    "chain_ids": [
+      "A"
+    ],
+    "chain_lengths": {
+      "A": 726
+    },
+    "total_residues": 726
+  },
+  "chain_alignments": [
+    {
+      "chain1": "L",
+      "chain2": "A",
+      "length1": 594,
+      "length2": 726,
+      "aligned_length": 594,
+      "rmsd": 39.649055018742644,
+      "tm_score": 0.08138306813178844,
+      "rotation_matrix": [
+        [
+          0.5736549758818157,
+          0.811720277293567,
+          0.10968185196043656
+        ],
+        [
+          0.43787861512922976,
+          -0.19074099497394892,
+          -0.8785671050709121
+        ],
+        [
+          -0.6922299307719779,
+          0.5520217227256428,
+          -0.46485449989738115
+        ]
+      ],
+      "translation_vector": [
+        -47.38152417259528,
+        -275.85341180918914,
+        258.5141511373671
+      ]
+    }
+  ],
+  "multimer_alignment": {
+    "tm_score": 0.19411,
+    "rmsd": null,
+    "aligned_length": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "bace": {
+    "best_config": {
+      "grid_size": 3,
+      "hidden_dim": 96,
+      "lr": 0.0005,
+      "num_layers": 3,
+      "test_auc": 0.7505252100840336,
+      "val_auc": 0.8291208791208792
+    },
+    "best_test_auc": 0.7505252100840336
+  },
+  "bbbp": {
+    "best_config": {
+      "grid_size": 3,
+      "hidden_dim": 128,
+      "lr": 0.001,
+      "num_layers": 3,
+      "test_auc": 0.8925397252895233,
+      "val_auc": 0.8877551020408163
+    },
+    "best_test_auc": 0.8925397252895233
+  }
+}

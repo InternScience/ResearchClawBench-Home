@@ -1,0 +1,63 @@
+{
+  "required_artifacts": [
+    {
+      "name": "data_overview_plot",
+      "type": "figure",
+      "description": "Visualization of Lasso problem structure: design matrix, solution sparsity",
+      "path": "report/images/data_overview.png",
+      "status": "pending"
+    },
+    {
+      "name": "convergence_comparison",
+      "type": "figure",
+      "description": "Comparison of convergence rates: Gradient Descent, Nesterov, ADMM",
+      "path": "report/images/convergence_comparison.png",
+      "status": "pending"
+    },
+    {
+      "name": "lyapunov_analysis",
+      "type": "figure",
+      "description": "Lyapunov function decay showing stability and convergence",
+      "path": "report/images/lyapunov_analysis.png",
+      "status": "pending"
+    },
+    {
+      "name": "phase_space_trajectory",
+      "type": "figure",
+      "description": "Phase space visualization of continuous-time dynamics",
+      "path": "report/images/phase_space.png",
+      "status": "pending"
+    },
+    {
+      "name": "linear_convergence_validation",
+      "type": "figure",
+      "description": "Log-scale plot validating linear convergence rates",
+      "path": "report/images/linear_convergence.png",
+      "status": "pending"
+    },
+    {
+      "name": "algorithm_comparison_table",
+      "type": "table",
+      "description": "Quantitative comparison of iteration counts and final errors",
+      "path": "outputs/comparison_table.csv",
+      "status": "pending"
+    },
+    {
+      "name": "convergence_results",
+      "type": "data",
+      "description": "Convergence trajectories for all methods",
+      "path": "outputs/convergence_results.npz",
+      "status": "pending"
+    }
+  ],
+  "report_sections": [
+    "Abstract",
+    "Introduction",
+    "Related Work",
+    "Methodology (VOS Framework)",
+    "Lyapunov Analysis",
+    "Experimental Results",
+    "Discussion",
+    "Conclusion"
+  ]
+}

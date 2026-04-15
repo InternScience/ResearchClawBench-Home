@@ -1,0 +1,22 @@
+[
+  {
+    "claim": "DIDS-MFL-inspired fused features improve binary detection over raw-feature logistic regression.",
+    "artifact": "outputs/binary_results.json"
+  },
+  {
+    "claim": "The fused approach improves multiclass consistency across attack types.",
+    "artifact": "outputs/multiclass_results.csv and outputs/multiclass_per_class_report.json"
+  },
+  {
+    "claim": "Confidence-thresholding supports unknown-attack detection.",
+    "artifact": "outputs/unknown_attack_curve.csv and outputs/unknown_attack_summary.json"
+  },
+  {
+    "claim": "Multi-scale fused prototypes help few-shot attack recognition.",
+    "artifact": "outputs/few_shot_results.csv"
+  },
+  {
+    "claim": "Topological/diffused blocks contribute materially to the classifier.",
+    "artifact": "outputs/representation_block_importance.json and report/images/representation_block_importance.png"
+  }
+]

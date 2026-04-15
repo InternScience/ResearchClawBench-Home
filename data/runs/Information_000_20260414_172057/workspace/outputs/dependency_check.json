@@ -1,0 +1,27 @@
+{
+  "python_modules": {
+    "PIL": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "numpy": true,
+    "pandas": true,
+    "sklearn": true,
+    "fitz": false,
+    "PyPDF2": false,
+    "pdfplumber": false,
+    "torch": false,
+    "transformers": false,
+    "pytesseract": false
+  },
+  "system_binaries": {
+    "tesseract": false,
+    "pdftotext": false,
+    "pdfinfo": false
+  },
+  "conclusion": "The workspace supports lightweight Python image analysis and plotting, but not direct PDF text extraction via common installed libraries/tools and not full transformer-model execution with torch/transformers. The task will therefore use a method-faithful analytical prototype with deterministic image-derived evidence and architecture-level comparison rather than full model training.",
+  "fallbacks": [
+    "Use direct visual inspection of provided images as evidence for understanding tasks.",
+    "Use deterministic image statistics and manually verified OCR target from the equation image for prototype evaluation.",
+    "Use related-work PDFs only to the extent recoverable from raw file inspection; if unreadable in current environment, state this limitation explicitly."
+  ]
+}

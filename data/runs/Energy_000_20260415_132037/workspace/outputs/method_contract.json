@@ -1,0 +1,28 @@
+{
+  "task": "MMGA Parameter Identification for Li-ion Battery ECAT Model",
+  "input": {
+    "experimental_data": ["voltage", "temperature", "capacity curves under discharge"],
+    "search_space": "Latin Hypercube Sampling (LHS) multi-parameter space"
+  },
+  "output": "High-fidelity internal parameters (particle radius, reaction rates, thermal coefficients)",
+  "scientific_goal": "Develop MMGA framework using ANN meta-model to replace expensive physical simulations",
+  "named_methods": {
+    "MMGA": "Multi-objective Modified Genetic Algorithm",
+    "ANN": "Artificial Neural Network meta-model",
+    "LHS": "Latin Hypercube Sampling",
+    "ECAT": "Electrochemical-Aging-Thermal coupled model"
+  },
+  "datasets": [
+    "NASA PCoE Dataset Repository (B0005, B0006, B0007, B0018)",
+    "CALCE CS2_36 NCM cell data",
+    "Oxford Battery Degradation Dataset (Urban driving profiles)"
+  ],
+  "key_parameters": [
+    "Particle radius (Rs)",
+    "Reaction rate constants (k)",
+    "Diffusion coefficients (D)",
+    "Thermal coefficients",
+    "Volume fractions (ε)",
+    "Electrode thickness (L)"
+  ]
+}

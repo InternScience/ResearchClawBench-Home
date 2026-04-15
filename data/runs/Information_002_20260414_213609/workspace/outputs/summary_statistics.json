@@ -1,0 +1,76 @@
+{
+  "in_paper": {
+    "mean": 1.47,
+    "min": 0,
+    "max": 2,
+    "perfect_rate": 66.7
+  },
+  "prompt_quality": {
+    "mean": 1.8,
+    "min": 1,
+    "max": 2,
+    "perfect_rate": 80.0
+  },
+  "follow_instructions": {
+    "mean": 1.87,
+    "min": 1,
+    "max": 2,
+    "perfect_rate": 86.7
+  },
+  "physics_logic": {
+    "mean": 2.0,
+    "min": 2,
+    "max": 2,
+    "perfect_rate": 100.0
+  },
+  "math_derivation": {
+    "mean": 1.87,
+    "min": 1,
+    "max": 2,
+    "perfect_rate": 86.7
+  },
+  "final_answer_accuracy": {
+    "mean": 1.73,
+    "min": 1,
+    "max": 2,
+    "perfect_rate": 73.3
+  },
+  "overall": {
+    "mean_total": 10.73,
+    "max_possible": 12,
+    "mean_percentage": 89.4,
+    "perfect_tasks": 4
+  },
+  "reviewer_means": {
+    "in_paper": {
+      "Haining": 2.0,
+      "Will": 1.73,
+      "Yasaman": 1.87
+    },
+    "prompt_quality": {
+      "Haining": 1.33,
+      "Will": 1.47,
+      "Yasaman": 1.73
+    },
+    "follow_instructions": {
+      "Haining": 1.73,
+      "Will": 1.6,
+      "Yasaman": 1.87
+    },
+    "physics_logic": {
+      "Haining": 1.67,
+      "Will": 1.53,
+      "Yasaman": 1.8
+    },
+    "math_derivation": {
+      "Haining": 1.6,
+      "Will": 1.8,
+      "Yasaman": 1.8
+    },
+    "final_answer_accuracy": {
+      "Haining": 2.0,
+      "Will": 2.0,
+      "Yasaman": 1.93
+    }
+  }
+}

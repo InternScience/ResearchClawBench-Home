@@ -1,0 +1,20 @@
+{
+  "method": "MACE-MP-0 style benchmark reproduction from compact specification",
+  "definition": "Use the provided benchmark setups for water RDF, adsorption scaling, and CRBH20 barriers to assess claim coverage of a universal atomistic foundation model.",
+  "assumptions": [
+    "The text file is treated as the authoritative local benchmark specification.",
+    "Without shipped model weights, only configuration-level and reference-value analyses can be performed locally.",
+    "Figures will emphasize benchmark structure and quantitative targets rather than new model predictions."
+  ],
+  "invariants": [
+    "Preserve the three named benchmark families.",
+    "Keep source-specific outputs for each family.",
+    "Report direct DFT barrier references in eV for the CRBH20 subset."
+  ],
+  "non_negotiable_steps": [
+    "Parse the benchmark specification into structured data.",
+    "Export per-benchmark tables.",
+    "Generate figures tied to the named benchmark families.",
+    "State inability to run exact MACE-MP-0 inference if model weights are absent."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "artifacts": [
+    {"name": "data_parsing_module", "status": "completed", "path": "code/data_parser.py"},
+    {"name": "property_prediction_analysis", "status": "completed", "path": "code/property_prediction.py"},
+    {"name": "structure_generation_analysis", "status": "completed", "path": "code/structure_generation.py"},
+    {"name": "optimization_analysis", "status": "completed", "path": "code/autonomous_optimization.py"},
+    {"name": "combined_analysis_script", "status": "completed", "path": "code/run_all_analyses.py"},
+    {"name": "data_overview_plot", "status": "completed", "path": "report/images/data_overview.png"},
+    {"name": "property_prediction_plot", "status": "completed", "path": "report/images/property_prediction.png"},
+    {"name": "structure_generation_plot", "status": "completed", "path": "report/images/structure_generation.png"},
+    {"name": "autonomous_optimization_plot", "status": "completed", "path": "report/images/autonomous_optimization.png"},
+    {"name": "workflow_comparison_plot", "status": "completed", "path": "report/images/workflow_comparison.png"},
+    {"name": "parsed_data_json", "status": "completed", "path": "outputs/parsed_data.json"},
+    {"name": "property_prediction_metrics", "status": "completed", "path": "outputs/property_prediction_metrics.json"},
+    {"name": "structure_generation_metrics", "status": "completed", "path": "outputs/structure_generation_metrics.json"},
+    {"name": "optimization_metrics", "status": "completed", "path": "outputs/optimization_metrics.json"},
+    {"name": "research_report", "status": "completed", "path": "report/report.md"}
+  ],
+  "summary": {
+    "total_artifacts": 15,
+    "completed": 15,
+    "pending": 0
+  }
+}

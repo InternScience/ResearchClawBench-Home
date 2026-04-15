@@ -1,0 +1,5 @@
+claim,artifact
+Dataset is dense and detection-imperfect,outputs/data_overview.json; report/images/score_distribution.png
+SparseTrack-like hierarchical association improves identity continuity,outputs/comparison_metrics.csv; report/images/metric_comparison.png
+Sparse decomposition helps under high occlusion burden,outputs/occlusion_conditioned_tracking.csv; report/images/occlusion_conditioned_tracking.png
+Hierarchical tracker uses depth-group stages rather than global two-stage matching,outputs/stage_usage_summary.csv; report/images/association_stage_usage.png

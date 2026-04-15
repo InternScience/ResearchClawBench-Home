@@ -1,0 +1,22 @@
+{
+  "task": "Analyze the HEEW mini-dataset as a compact replication of the HEEW benchmark construction and validation concepts.",
+  "methodological_commitments": [
+    "Use the provided mini-dataset as the primary evidence source.",
+    "Read related work to align the analysis with the HEEW dataset paper.",
+    "Produce data overview, data cleaning/quality checks, correlation analysis, and hierarchical aggregation consistency verification.",
+    "Create reproducible code, intermediate outputs, and PNG figures.",
+    "Write a report with methods, results, discussion, and validation section."
+  ],
+  "primary_quantitative_answers": [
+    "Dataset dimensions and time coverage for each hierarchy level.",
+    "Missingness and anomaly counts/rates.",
+    "Cross-variable correlations.",
+    "Agreement between Total/CN01 series and sums of building-level series where applicable."
+  ],
+  "named_outputs": [
+    "report/report.md",
+    "report/images/*.png",
+    "code/*",
+    "outputs/*.json or csv"
+  ]
+}

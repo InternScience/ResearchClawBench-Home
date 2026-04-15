@@ -1,0 +1,45 @@
+{
+  "task_title": "Variable and Operator Splitting (VOS) Framework",
+  "scientific_goal": "Establish unified VOS framework deriving Nesterov's accelerated method and ADMM from continuous-time dynamical systems, proving linear convergence via Lyapunov functions",
+  "named_methods": {
+    "nesterov_accelerated_gradient": {
+      "description": "First-order method with momentum achieving O(1/k²) convergence for convex L-smooth functions",
+      "key_equations": [
+        "x_k = y_{k-1} - s∇f(y_{k-1})",
+        "y_k = x_k + (k-1)/(k+2) * (x_k - x_{k-1})"
+      ],
+      "convergence_rate": "O(1/k²) for convex functions, linear for strongly convex"
+    },
+    "admm": {
+      "description": "Alternating Direction Method of Multipliers for composite optimization with splitting",
+      "key_equations": [
+        "x-update: argmin L_ρ(x, z^k, y^k)",
+        "z-update: argmin L_ρ(x^{k+1}, z, y^k)",
+        "dual update: y^{k+1} = y^k + ρ(Ax^{k+1} + Bz^{k+1} - c)"
+      ],
+      "convergence_rate": "O(1/k) for general convex, linear under strong convexity"
+    },
+    "vos_framework": {
+      "description": "Unified view via continuous-time dynamical systems and Lyapunov analysis",
+      "continuous_ode": "Ẍ + (3/t)Ẋ + ∇f(X) = 0 (Nesterov)",
+      "lyapunov_function": "Energy-based Lyapunov for stability and convergence proof"
+    }
+  },
+  "target_problem": {
+    "type": "Lasso_regression",
+    "formulation": "min_x (1/2)||Ax - b||² + λ||x||_1",
+    "dataset": {
+      "A_shape": [1000, 2000],
+      "n_samples": 1000,
+      "n_features": 2000,
+      "sparsity": "~5% non-zero in ground truth"
+    }
+  },
+  "comparison_axes": [
+    "Convergence rate vs iteration",
+    "Objective value vs iteration",
+    "Error vs iteration (linear scale)",
+    "Phase space trajectories",
+    "Lyapunov function decay"
+  ]
+}

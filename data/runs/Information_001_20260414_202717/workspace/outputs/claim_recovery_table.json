@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Task-guided cropping increases local edge density relative to a coarse fixed-resolution proxy.",
+    "artifact": "outputs/image_metrics.csv",
+    "support": [
+      {
+        "file": "demo1.png",
+        "edge_gain": 1.6738858523283435
+      },
+      {
+        "file": "demo2.png",
+        "edge_gain": 3.531252330576752
+      }
+    ]
+  },
+  {
+    "claim": "The workspace qualitative method_case example visually shows improved fine-grained answers after crop-based zoom.",
+    "artifact": "data/demo_imgs/method_case.png",
+    "support": "ReadImage evidence in runtime plus report discussion."
+  },
+  {
+    "claim": "Interpretability-style heatmaps can identify candidate ROIs aligned with high-frequency visual content.",
+    "artifact": "report/images/demo1_heatmap.png and report/images/demo2_heatmap.png",
+    "support": "Generated saliency overlays."
+  }
+]

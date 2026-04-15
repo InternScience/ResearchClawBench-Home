@@ -1,0 +1,25 @@
+{
+  "primary_quantitative_answers": [
+    "Mean/std p_response per vaccine type/population",
+    "Tumor cell coverage ratios",
+    "IoU of selected vaccine elements across repetitions",
+    "Optimization runtimes per population size"
+  ],
+  "comparison_tables": [
+    "vaccine_compositions.csv: selected peptides per rep/sim",
+    "efficacy_metrics.csv: p_response stats, coverage per sim/rep"
+  ],
+  "figure_families": [
+    "data_overview: num cells, mutations, peptides histograms",
+    "runtime_vs_popsize: Figure 6 style plot",
+    "response_distributions: histograms of p_response per vaccine",
+    "coverage_curves: coverage vs threshold",
+    "vaccine_iou: IoU matrix/heatmap across reps",
+    "per_cell_responses: violin/box plots"
+  ],
+  "interpretability_artifacts": [],
+  "subgroup_outputs": [
+    "Per simulation repetition (rep-0 to rep-9)",
+    "Per population size if available"
+  ]
+}

@@ -1,0 +1,4 @@
+claim,dynamic_value,variance_value,supported,artifact
+dynamic_distance_spearman_better_than_variance_at_20,0.7124820963088151,0.7326417575648277,False,outputs/subset_metric_summary.csv
+dynamic_pseudotime_spearman_better_than_variance_at_20,0.6355494924429208,0.593180354768361,True,outputs/subset_metric_summary.csv
+dynamic_neighbor_overlap_better_than_variance_at_20,0.0548910635898675,0.0705166928436228,False,outputs/subset_metric_summary.csv

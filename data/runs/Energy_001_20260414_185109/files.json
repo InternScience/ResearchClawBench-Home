@@ -1,0 +1,298 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "dispatch_model.py",
+    "path": "code/dispatch_model.py",
+    "type": "file",
+    "size": 10172,
+    "mtime": 1776239288.0,
+    "exported": true
+  },
+  {
+    "name": "figures.py",
+    "path": "code/figures.py",
+    "type": "file",
+    "size": 11599,
+    "mtime": 1776239290.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_fig.py",
+    "path": "code/scenario_fig.py",
+    "type": "file",
+    "size": 2365,
+    "mtime": 1776239288.0,
+    "exported": true
+  },
+  {
+    "name": "scenarios.py",
+    "path": "code/scenarios.py",
+    "type": "file",
+    "size": 9757,
+    "mtime": 1776239288.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "buses.csv",
+    "path": "data/buses.csv",
+    "type": "file",
+    "size": 1086,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "demand.csv",
+    "path": "data/demand.csv",
+    "type": "file",
+    "size": 60915,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "generators.csv",
+    "path": "data/generators.csv",
+    "type": "file",
+    "size": 1386,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "links.csv",
+    "path": "data/links.csv",
+    "type": "file",
+    "size": 565,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "storage.csv",
+    "path": "data/storage.csv",
+    "type": "file",
+    "size": 109,
+    "mtime": 1773033848.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "wind_cf.csv",
+    "path": "data/wind_cf.csv",
+    "type": "file",
+    "size": 63972,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "bus_results.csv",
+    "path": "outputs/bus_results.csv",
+    "type": "file",
+    "size": 672,
+    "mtime": 1776239284.0,
+    "exported": true
+  },
+  {
+    "name": "generator_results.csv",
+    "path": "outputs/generator_results.csv",
+    "type": "file",
+    "size": 2044,
+    "mtime": 1776239284.0,
+    "exported": true
+  },
+  {
+    "name": "hourly_dispatch.csv",
+    "path": "outputs/hourly_dispatch.csv",
+    "type": "file",
+    "size": 18748,
+    "mtime": 1776239284.0,
+    "exported": true
+  },
+  {
+    "name": "link_results.csv",
+    "path": "outputs/link_results.csv",
+    "type": "file",
+    "size": 1076,
+    "mtime": 1776239284.0,
+    "exported": true
+  },
+  {
+    "name": "results_summary.json",
+    "path": "outputs/results_summary.json",
+    "type": "file",
+    "size": 534,
+    "mtime": 1776239282.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_comparison.csv",
+    "path": "outputs/scenario_comparison.csv",
+    "type": "file",
+    "size": 531,
+    "mtime": 1776239284.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_comparison.json",
+    "path": "outputs/scenario_comparison.json",
+    "type": "file",
+    "size": 1561,
+    "mtime": 1776239282.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1296584,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 193879,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 406113,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 6282024,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "bus_results.png",
+    "path": "report/images/bus_results.png",
+    "type": "file",
+    "size": 102441,
+    "mtime": 1776239288.0,
+    "exported": true
+  },
+  {
+    "name": "capacity_adequacy.png",
+    "path": "report/images/capacity_adequacy.png",
+    "type": "file",
+    "size": 206689,
+    "mtime": 1776239288.0,
+    "exported": true
+  },
+  {
+    "name": "demand_profiles.png",
+    "path": "report/images/demand_profiles.png",
+    "type": "file",
+    "size": 694659,
+    "mtime": 1776239286.0,
+    "exported": true
+  },
+  {
+    "name": "generation_mix.png",
+    "path": "report/images/generation_mix.png",
+    "type": "file",
+    "size": 76868,
+    "mtime": 1776239284.0,
+    "exported": true
+  },
+  {
+    "name": "hourly_dispatch.png",
+    "path": "report/images/hourly_dispatch.png",
+    "type": "file",
+    "size": 534977,
+    "mtime": 1776239286.0,
+    "exported": true
+  },
+  {
+    "name": "load_duration_curve.png",
+    "path": "report/images/load_duration_curve.png",
+    "type": "file",
+    "size": 97877,
+    "mtime": 1776239286.0,
+    "exported": true
+  },
+  {
+    "name": "network_topology.png",
+    "path": "report/images/network_topology.png",
+    "type": "file",
+    "size": 290340,
+    "mtime": 1776239288.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_comparison.png",
+    "path": "report/images/scenario_comparison.png",
+    "type": "file",
+    "size": 144503,
+    "mtime": 1776239286.0,
+    "exported": true
+  },
+  {
+    "name": "wind_capacity_factors.png",
+    "path": "report/images/wind_capacity_factors.png",
+    "type": "file",
+    "size": 76534,
+    "mtime": 1776239286.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 14926,
+    "mtime": 1776239291.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6268,
+    "mtime": 1776163869.0,
+    "exported": true
+  }
+]

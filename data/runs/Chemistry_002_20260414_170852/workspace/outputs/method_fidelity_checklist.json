@@ -1,0 +1,20 @@
+{
+  "named_method": "HADDOCK-style information-driven integrative modeling context",
+  "definition": "Docking and model assessment informed by experimental or predicted interaction information, classically encoded as ambiguous interaction restraints (AIRs).",
+  "assumptions": [
+    "The workspace does not provide a runnable HADDOCK3 installation or ready docking workflow",
+    "Mutagenesis-derived interface evidence from SKEMPI can be used to emulate the data-integration logic for validation-oriented analysis"
+  ],
+  "invariants": [
+    "Keep the analysis centered on experimentally informed interfaces rather than blind structure scoring",
+    "Use the barnase-barstar PDB as the structural reference",
+    "Use SKEMPI mutation measurements as validation evidence"
+  ],
+  "non_negotiable_structural_steps": [
+    "Extract interface geometry from the provided complex structure",
+    "Map mutation records onto the structure when possible",
+    "Quantify mutation impact using direct thermodynamic transformation from affinity values",
+    "State explicitly that this is not an exact HADDOCK3 docking reproduction if HADDOCK3 is absent"
+  ],
+  "current_fidelity_status": "completed_with_explicit_proxy_validation_instead_of_full_HADDOCK3_run"
+}

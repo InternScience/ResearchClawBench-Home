@@ -1,0 +1,25 @@
+{
+  "task": "AI-powered search engine for altermagnetic material discovery from crystal structure graphs",
+  "inputs": {
+    "pretrain": "data/pretrain_data.pt",
+    "finetune": "data/finetune_data.pt",
+    "candidate": "data/candidate_data.pt"
+  },
+  "named_commitments": [
+    "graph-structured crystal representation",
+    "self-supervised pre-training on unlabeled crystal graphs",
+    "fine-tuning on scarce binary labels for altermagnet classification",
+    "candidate ranking by predicted altermagnet probability",
+    "validation against hidden candidate labels when available in workspace",
+    "reporting physical-property-style classifications only if derivable from available data"
+  ],
+  "primary_outputs": [
+    "trained model artifacts and metrics",
+    "ranked candidate list with probabilities",
+    "evaluation metrics on fine-tune/candidate datasets",
+    "figures showing data overview, training/evaluation performance, and candidate ranking"
+  ],
+  "notes": [
+    "First-principles confirmation and wave-anisotropy classes may be unavailable from provided synthetic graph data; verify before claiming."
+  ]
+}

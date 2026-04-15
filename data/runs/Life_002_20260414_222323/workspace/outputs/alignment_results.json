@@ -1,0 +1,307 @@
+{
+  "query": "7xg4",
+  "target": "6n40",
+  "query_info": {
+    "A": {
+      "n_residues": 241,
+      "mol_type": "protein"
+    },
+    "B": {
+      "n_residues": 219,
+      "mol_type": "protein"
+    },
+    "C": {
+      "n_residues": 329,
+      "mol_type": "protein"
+    },
+    "D": {
+      "n_residues": 331,
+      "mol_type": "protein"
+    },
+    "E": {
+      "n_residues": 324,
+      "mol_type": "protein"
+    },
+    "F": {
+      "n_residues": 324,
+      "mol_type": "protein"
+    },
+    "G": {
+      "n_residues": 280,
+      "mol_type": "protein"
+    },
+    "H": {
+      "n_residues": 234,
+      "mol_type": "protein"
+    },
+    "I": {
+      "n_residues": 60,
+      "mol_type": "nucleic_acid"
+    },
+    "J": {
+      "n_residues": 36,
+      "mol_type": "nucleic_acid"
+    },
+    "K": {
+      "n_residues": 37,
+      "mol_type": "nucleic_acid"
+    },
+    "L": {
+      "n_residues": 594,
+      "mol_type": "protein"
+    }
+  },
+  "target_info": {
+    "A": {
+      "n_residues": 726,
+      "mol_type": "protein"
+    }
+  },
+  "pairwise_chain_alignments": [
+    {
+      "query_chain": "A",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.365,
+      "tm_score_target_norm": 0.1566,
+      "tm_score_avg": 0.2608,
+      "rmsd": 5.91,
+      "n_query": 241,
+      "n_target": 726,
+      "n_aligned": 78
+    },
+    {
+      "query_chain": "G",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.3459,
+      "tm_score_target_norm": 0.1659,
+      "tm_score_avg": 0.2559,
+      "rmsd": 6.46,
+      "n_query": 280,
+      "n_target": 726,
+      "n_aligned": 83
+    },
+    {
+      "query_chain": "D",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.3153,
+      "tm_score_target_norm": 0.1723,
+      "tm_score_avg": 0.2438,
+      "rmsd": 6.38,
+      "n_query": 331,
+      "n_target": 726,
+      "n_aligned": 78
+    },
+    {
+      "query_chain": "C",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.3143,
+      "tm_score_target_norm": 0.1715,
+      "tm_score_avg": 0.2429,
+      "rmsd": 6.41,
+      "n_query": 329,
+      "n_target": 726,
+      "n_aligned": 76
+    },
+    {
+      "query_chain": "E",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.3146,
+      "tm_score_target_norm": 0.1693,
+      "tm_score_avg": 0.242,
+      "rmsd": 6.38,
+      "n_query": 324,
+      "n_target": 726,
+      "n_aligned": 80
+    },
+    {
+      "query_chain": "F",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.3135,
+      "tm_score_target_norm": 0.1686,
+      "tm_score_avg": 0.241,
+      "rmsd": 6.33,
+      "n_query": 324,
+      "n_target": 726,
+      "n_aligned": 80
+    },
+    {
+      "query_chain": "H",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.3136,
+      "tm_score_target_norm": 0.1324,
+      "tm_score_avg": 0.223,
+      "rmsd": 5.92,
+      "n_query": 234,
+      "n_target": 726,
+      "n_aligned": 64
+    },
+    {
+      "query_chain": "L",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.227,
+      "tm_score_target_norm": 0.1965,
+      "tm_score_avg": 0.2117,
+      "rmsd": 8.48,
+      "n_query": 594,
+      "n_target": 726,
+      "n_aligned": 64
+    },
+    {
+      "query_chain": "B",
+      "target_chain": "A",
+      "mol_type": "protein",
+      "tm_score_query_norm": 0.2912,
+      "tm_score_target_norm": 0.1134,
+      "tm_score_avg": 0.2023,
+      "rmsd": 5.91,
+      "n_query": 219,
+      "n_target": 726,
+      "n_aligned": 63
+    }
+  ],
+  "chain_assignments": [
+    {
+      "query_chain": "A",
+      "target_chain": "A",
+      "tm_score_query": 0.365,
+      "tm_score_target": 0.1566,
+      "tm_score_avg": 0.2608,
+      "rmsd": 5.91,
+      "n_aligned": 78,
+      "n_query": 241,
+      "n_target": 726,
+      "rotation_matrix": [
+        [
+          0.3953399763221739,
+          -0.9053485390659286,
+          -0.15508167503858167
+        ],
+        [
+          0.874230706057733,
+          0.31906685835113985,
+          0.3659467344952425
+        ],
+        [
+          -0.28182791860882206,
+          -0.28025053561612084,
+          0.9176233767616737
+        ]
+      ],
+      "translation_vector": [
+        139.49137337493252,
+        -282.0713981122413,
+        6.645987877286245
+      ]
+    }
+  ],
+  "complex_scores": {
+    "tm_score_normalized_by_query": 0.0219,
+    "tm_score_normalized_by_target": 0.0866,
+    "tm_score_avg": 0.0542,
+    "coverage_query": 0.0271,
+    "coverage_target": 0.1074,
+    "total_aligned_residues": 78,
+    "query_total_residues": 2876,
+    "target_total_residues": 726
+  },
+  "full_alignment_matrix": [
+    {
+      "query_chain": "A",
+      "targets": {
+        "A": {
+          "tm_avg": 0.2608,
+          "rmsd": 5.91,
+          "n_aligned": 78
+        }
+      }
+    },
+    {
+      "query_chain": "B",
+      "targets": {
+        "A": {
+          "tm_avg": 0.2023,
+          "rmsd": 5.91,
+          "n_aligned": 63
+        }
+      }
+    },
+    {
+      "query_chain": "C",
+      "targets": {
+        "A": {
+          "tm_avg": 0.2429,
+          "rmsd": 6.41,
+          "n_aligned": 76
+        }
+      }
+    },
+    {
+      "query_chain": "D",
+      "targets": {
+        "A": {
+          "tm_avg": 0.2438,
+          "rmsd": 6.38,
+          "n_aligned": 78
+        }
+      }
+    },
+    {
+      "query_chain": "E",
+      "targets": {
+        "A": {
+          "tm_avg": 0.242,
+          "rmsd": 6.38,
+          "n_aligned": 80
+        }
+      }
+    },
+    {
+      "query_chain": "F",
+      "targets": {
+        "A": {
+          "tm_avg": 0.241,
+          "rmsd": 6.33,
+          "n_aligned": 80
+        }
+      }
+    },
+    {
+      "query_chain": "G",
+      "targets": {
+        "A": {
+          "tm_avg": 0.2559,
+          "rmsd": 6.46,
+          "n_aligned": 83
+        }
+      }
+    },
+    {
+      "query_chain": "H",
+      "targets": {
+        "A": {
+          "tm_avg": 0.223,
+          "rmsd": 5.92,
+          "n_aligned": 64
+        }
+      }
+    },
+    {
+      "query_chain": "L",
+      "targets": {
+        "A": {
+          "tm_avg": 0.2117,
+          "rmsd": 8.48,
+          "n_aligned": 64
+        }
+      }
+    }
+  ]
+}

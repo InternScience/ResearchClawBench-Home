@@ -1,0 +1,44 @@
+{
+  "pore_models": {
+    "dna_r9.4.1": {
+      "kmer_count": 4096,
+      "kmer_length": 6,
+      "current_range": [
+        -2.8223267334635755,
+        2.903624693668017
+      ]
+    },
+    "dna_r10.4.1": {
+      "kmer_count": 262144,
+      "kmer_length": 9,
+      "current_range": [
+        -3.2789043581452644,
+        3.156355198239986
+      ]
+    },
+    "rna_r9.4.1": {
+      "kmer_count": 1024,
+      "kmer_length": 5,
+      "current_range": [
+        -2.4602796093744868,
+        2.4082268069952795
+      ]
+    },
+    "rna004": {
+      "kmer_count": 262144,
+      "kmer_length": 9,
+      "current_range": [
+        -3.2024809597905404,
+        3.3179590297390766
+      ]
+    }
+  },
+  "m6a_detection": {
+    "total_sites": 5000,
+    "positive_sites": 1024,
+    "uncalled4_auprc": 0.9929060118782584,
+    "uncalled4_auroc": 0.9978548046089034,
+    "nanopolish_auprc": 0.7784035914122032,
+    "nanopolish_auroc": 0.9011765907947686
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "task": "Develop a composite risk index combining tropical cyclone regime shifts and sea level rise for global mangrove ecosystem risk assessment by 2100",
+  "methodological_commitments": [
+    "Composite risk index combining SLR and TC components",
+    "Global application across all mangrove locations",
+    "Multiple SSP scenarios (SSP2-4.5, SSP3-7.0, SSP5-8.5)",
+    "Ecosystem services at risk analysis",
+    "Country-level breakdowns for conservation prioritization"
+  ],
+  "data_sources": {
+    "mangroves": "Global Mangrove Watch v4 (sampled 10%)",
+    "slr": "IPCC AR6 regional RSLR rates (Garner et al., 2021)",
+    "tc": "MIT downscaled CMIP6 TC tracks (Emanuel et al., 2006)",
+    "ecosystem_services": "UCSC CWON country-level data"
+  },
+  "risk_thresholds": {
+    "slr_low": "< 4 mm/yr",
+    "slr_moderate": "4-7 mm/yr",
+    "slr_high": "> 7 mm/yr",
+    "composite_low": "< 0.4",
+    "composite_moderate": "0.4-0.7",
+    "composite_high": "> 0.7"
+  }
+}

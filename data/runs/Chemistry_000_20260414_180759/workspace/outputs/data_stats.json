@@ -1,0 +1,188 @@
+{
+  "bace": {
+    "n_samples": 1513,
+    "columns": [
+      "smiles",
+      "CID",
+      "label"
+    ],
+    "labels": {
+      "label": {
+        "positive": 691,
+        "negative": 822,
+        "balance": 0.456708526107072
+      }
+    }
+  },
+  "bbbp": {
+    "n_samples": 2039,
+    "columns": [
+      "num",
+      "name",
+      "label",
+      "smiles"
+    ],
+    "labels": {
+      "label": {
+        "positive": 1560,
+        "negative": 479,
+        "balance": 0.7650809220205983
+      }
+    }
+  },
+  "clintox": {
+    "n_samples": 1477,
+    "columns": [
+      "ID",
+      "smiles",
+      "FDA_APPROVED",
+      "CT_TOX",
+      "Unnamed: 4",
+      "Unnamed: 5"
+    ],
+    "labels": {
+      "FDA_APPROVED": {
+        "positive": 1383,
+        "negative": 94,
+        "balance": 0.936357481381178
+      },
+      "CT_TOX": {
+        "positive": 112,
+        "negative": 1365,
+        "balance": 0.07582938388625593
+      },
+      "Unnamed: 4": {
+        "positive": 0,
+        "negative": 1477,
+        "balance": 0.0
+      }
+    }
+  },
+  "hiv": {
+    "n_samples": 41127,
+    "columns": [
+      "ID",
+      "smiles",
+      "activity",
+      "label"
+    ],
+    "labels": {
+      "label": {
+        "positive": 1443,
+        "negative": 39684,
+        "balance": 0.03508643956524911
+      }
+    }
+  },
+  "muv": {
+    "n_samples": 93087,
+    "columns": [
+      "MUV-466",
+      "MUV-548",
+      "MUV-600",
+      "MUV-644",
+      "MUV-652",
+      "MUV-689",
+      "MUV-692",
+      "MUV-712",
+      "MUV-713",
+      "MUV-733",
+      "MUV-737",
+      "MUV-810",
+      "MUV-832",
+      "MUV-846",
+      "MUV-852",
+      "MUV-858",
+      "MUV-859",
+      "mol_id",
+      "smiles"
+    ],
+    "labels": {
+      "MUV-466": {
+        "positive": 27,
+        "negative": 93060,
+        "balance": 0.00029005124238615487
+      },
+      "MUV-548": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-600": {
+        "positive": 30,
+        "negative": 93057,
+        "balance": 0.00032227915820683877
+      },
+      "MUV-644": {
+        "positive": 30,
+        "negative": 93057,
+        "balance": 0.00032227915820683877
+      },
+      "MUV-652": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-689": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-692": {
+        "positive": 30,
+        "negative": 93057,
+        "balance": 0.00032227915820683877
+      },
+      "MUV-712": {
+        "positive": 28,
+        "negative": 93059,
+        "balance": 0.0003007938809930495
+      },
+      "MUV-713": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-733": {
+        "positive": 28,
+        "negative": 93059,
+        "balance": 0.0003007938809930495
+      },
+      "MUV-737": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-810": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-832": {
+        "positive": 30,
+        "negative": 93057,
+        "balance": 0.00032227915820683877
+      },
+      "MUV-846": {
+        "positive": 30,
+        "negative": 93057,
+        "balance": 0.00032227915820683877
+      },
+      "MUV-852": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-858": {
+        "positive": 29,
+        "negative": 93058,
+        "balance": 0.00031153651959994413
+      },
+      "MUV-859": {
+        "positive": 24,
+        "negative": 93063,
+        "balance": 0.000257823326565471
+      }
+    }
+  }
+}

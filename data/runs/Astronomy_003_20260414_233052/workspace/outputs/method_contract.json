@@ -1,0 +1,22 @@
+{
+  "task": "SXS Binary Black Hole Waveform Catalog Accuracy Analysis",
+  "scientific_goal": "Characterize numerical uncertainties in BBH waveform catalog across resolutions, spherical harmonic modes, and extrapolation orders",
+  "datasets": {
+    "fig6_data.csv": "Overall waveform differences between highest resolutions (1500 simulations, log-normal distribution)",
+    "fig7_data.csv": "Mode-by-mode waveform differences for ell=2 through ell=8 (1500x7 matrix)",
+    "fig8_data.csv": "Extrapolation order comparisons N2vsN3 and N2vsN4 (1200x2 matrix)"
+  },
+  "methods": [
+    "Descriptive statistics (median, mean, std, percentiles) for each dataset",
+    "Distribution fitting: verify log-normal assumption via Q-Q plots and KS tests",
+    "Modal error trend analysis: quantify error increase with ell",
+    "Extrapolation convergence analysis: compare N2vsN3 vs N2vsN4 distributions",
+    "Cumulative distribution analysis: fraction of simulations below accuracy thresholds"
+  ],
+  "key_metrics": [
+    "Median waveform difference overall",
+    "Median waveform difference per mode",
+    "Percentile-based accuracy fractions (e.g., fraction < 1e-3)",
+    "Convergence ratio between extrapolation orders"
+  ]
+}

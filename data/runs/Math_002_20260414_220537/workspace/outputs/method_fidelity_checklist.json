@@ -1,0 +1,26 @@
+{
+  "named_method": "Hybrid MAPF solver combining MARL-inspired coordination, LNS-style repair, and prioritized planning",
+  "definition": {
+    "marl_component": "Use agent-interaction-aware ordering heuristic as a lightweight MARL-inspired coordination proxy due absence of training labels and simulator interface in workspace.",
+    "lns_component": "Iteratively select conflicted agents and replan a local neighborhood while holding others fixed.",
+    "prioritized_planning_component": "Sequential single-agent planning under reservation constraints."
+  },
+  "assumptions": [
+    "Workspace contains occupancy grids but no explicit start-goal tasks; tasks are synthesized by valid sampling.",
+    "Exact MARL training is infeasible within benchmark time/data context because no environment API or labeled trajectories are provided."
+  ],
+  "invariants": [
+    "No vertex collisions in successful plans",
+    "No swap collisions in successful plans",
+    "Paths remain on free cells only"
+  ],
+  "non_negotiable_steps": [
+    "Generate initial coordinated order",
+    "Run prioritized planning",
+    "Detect conflicts",
+    "Run local repair on conflicted subset",
+    "Report success rate, runtime, and path-cost metrics"
+  ],
+  "deviation": "Uses MARL-inspired congestion-aware ordering instead of trained MARL policy.",
+  "reason": "No explicit task/scenario files or RL environment hooks were present in workspace-visible assets."
+}

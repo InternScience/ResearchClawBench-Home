@@ -1,0 +1,21 @@
+{
+  "checked_modules": {
+    "torch": true,
+    "sklearn": true,
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "networkx": false,
+    "xgboost": false,
+    "torch_geometric": false,
+    "pymupdf": false
+  },
+  "notes": [
+    "Initial check shows torch unavailable and required for loading .pt dataset.",
+    "Torch installation completed.",
+    "torch_geometric is required because the serialized .pt file references torch_geometric classes; attempting installation along with PyMuPDF for PDF extraction.",
+    "If graph libraries remain unavailable, fallback will use kNN graph construction with sklearn and scipy sparse routines."
+  ]
+}

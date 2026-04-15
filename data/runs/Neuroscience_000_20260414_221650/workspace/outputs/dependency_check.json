@@ -1,0 +1,15 @@
+{
+  "checked_packages": {
+    "pandas": {"available": true, "version": "2.2.3"},
+    "numpy": {"available": true, "version": "2.2.5"},
+    "scikit-learn": {"available": true, "version": "1.6.1"},
+    "matplotlib": {"available": true, "version": "3.10.1"},
+    "seaborn": {"available": true, "version": "0.13.2"},
+    "shap": {"available": true, "version": "0.49.1"},
+    "pymupdf": {"available": true, "version": null}
+  },
+  "notes": [
+    "ReadPDF tool returned parser errors on local PDFs; PyMuPDF was installed as fallback for bounded related-work extraction.",
+    "Planned interpretability stack is feasible in the current environment."
+  ]
+}

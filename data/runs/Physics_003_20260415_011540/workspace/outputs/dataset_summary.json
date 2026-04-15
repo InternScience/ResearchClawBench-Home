@@ -1,0 +1,29 @@
+{
+  "energy_range_eV": [
+    -0.5,
+    0.5
+  ],
+  "kx_range_Ainv": [
+    -0.3,
+    0.3
+  ],
+  "n_energy": 200,
+  "n_kx": 150,
+  "available_time_delays_fs": [
+    -0.5,
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "available_polarization_angles_deg": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180
+  ],
+  "photon_energy_from_sidebands_eV": 0.248
+}

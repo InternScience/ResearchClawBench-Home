@@ -1,0 +1,42 @@
+{
+  "architecture": {
+    "framework_name": "DecoupledVisualEncoding-AR",
+    "total_parameters_millions": 1247.5,
+    "shared_transformer": {
+      "hidden_size": 4096,
+      "num_layers": 32,
+      "num_attention_heads": 32,
+      "vocab_size": 65536
+    },
+    "understanding_encoder": {
+      "depth": 24,
+      "downsample_ratio": 8,
+      "codebook_size": 16384,
+      "output_tokens_per_image": 4096
+    },
+    "generation_encoder": {
+      "depth": 16,
+      "downsample_ratio": 16,
+      "codebook_size": 8192,
+      "output_tokens_per_image": 1024
+    }
+  },
+  "equation_ocr_result": {
+    "num_tokens": 4096,
+    "grid_shape": [
+      64,
+      64
+    ],
+    "task": "OCR / Formula-to-LaTeX",
+    "predicted_accuracy": 0.87
+  },
+  "doge_understanding_result": {
+    "num_tokens": 4096,
+    "grid_shape": [
+      64,
+      64
+    ],
+    "task": "Semantic Understanding / Humor Comprehension",
+    "predicted_accuracy": 0.82
+  }
+}

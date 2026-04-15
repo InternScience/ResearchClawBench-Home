@@ -1,0 +1,25 @@
+{
+  "task": "Investigate whether an early dark energy (EDE) model can alleviate the acoustic tension between CMB and BAO measurements using provided reproduction data and related work.",
+  "named_methods_and_commitments": [
+    "Use DESI DR2 BAO, Planck/ACT CMB, and Union3 SNe context from related work and provided reproduction dataset",
+    "Constrain cosmological parameters for LambdaCDM, EDE, and w0wa models",
+    "Compare goodness-of-fit via Delta chi^2 across models",
+    "Analyze posterior constraints for EDE parameters f_EDE and log10 a_c",
+    "Produce publication-style report with figures and validation section"
+  ],
+  "primary_quantitative_answers": [
+    "Parameter constraints for Omega_m, H0, sigma8 and other available parameters",
+    "Delta chi^2 comparisons among LambdaCDM, EDE, and w0wa",
+    "Posterior summaries or reproduced constraints for f_EDE and log10 a_c"
+  ],
+  "required_outputs": [
+    "report/report.md",
+    "PNG figures under report/images/",
+    "analysis code under code/",
+    "intermediate results under outputs/"
+  ],
+  "notes": [
+    "Available structured data appears to be extracted summary constraints and figure data rather than raw likelihood chains",
+    "If exact posterior reconstruction is impossible, report faithful approximate reproductions from provided data and clearly state the limitation"
+  ]
+}

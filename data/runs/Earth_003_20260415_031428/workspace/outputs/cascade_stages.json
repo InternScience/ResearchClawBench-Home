@@ -1,0 +1,17 @@
+{
+  "stage_1": {
+    "steps": "1-12",
+    "days": "0-3",
+    "model": "ShortRange_UTransformer"
+  },
+  "stage_2": {
+    "steps": "13-28",
+    "days": "3-7",
+    "model": "MediumRange_UTransformer"
+  },
+  "stage_3": {
+    "steps": "29-60",
+    "days": "7-15",
+    "model": "LongRange_UTransformer"
+  }
+}

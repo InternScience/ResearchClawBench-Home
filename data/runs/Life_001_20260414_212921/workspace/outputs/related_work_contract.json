@@ -1,0 +1,23 @@
+{
+  "paper_000": {
+    "title": "Gapped sequence alignment using artificial neural networks: application to the MHC class I system",
+    "relevance": "MHC peptide binding prediction (NetMHC-4.0), length preferences, gapped alignments",
+    "extracted_facts": ["MHC class I binds 8-11mer peptides", "Allele-specific length profiles", "NNAlign extension for variable lengths"]
+  },
+  "paper_001": {
+    "title": "On TCR binding predictors failing to generalize to unseen peptides",
+    "relevance": "TCR-pMHC binding prediction challenges, generalization to unseen peptides",
+    "extracted_facts": ["Deep learning models poor on unseen peptides", "TChard dataset for evaluation"]
+  },
+  "paper_002": {
+    "title": "Single-Cell Map of Diverse Immune Phenotypes in the Breast Tumor Microenvironment",
+    "relevance": "scRNA-seq of tumor immune cells, T cell states",
+    "extracted_facts": ["Continuous T cell activation phenotypes", "Heterogeneity in tumor microenvironment"]
+  },
+  "paper_003": {
+    "title": "CloneSig can jointly infer intra-tumor heterogeneity and mutational signature activity",
+    "relevance": "ITH and mutational signatures from bulk seq",
+    "extracted_facts": ["Joint ITH + signature inference improves accuracy"]
+  },
+  "changes_to_contract": false
+}

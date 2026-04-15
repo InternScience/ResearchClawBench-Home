@@ -1,0 +1,8 @@
+{
+  \"method\": \"Diffusion-based unified framework\",
+  \"inputs\": [\"protein_sequence\", \"nucleic_acid_sequence\", \"small_molecule_structure\"],
+  \"output\": \"3D_complex_structure\",
+  \"key_components\": [\"Multimodal embeddings\", \"Pairwise representation with attention (Evoformer-like)\", \"Diffusion denoising on atomic coordinates or rigid frames\", \"Handles protein-ligand-NA interactions\"],
+  \"named_protocol\": \"Diffusion generative model conditioned on embeddings\",
+  \"assumptions\": [\"Paired MSA for proteins/NA\", \"Graph rep for molecules\"]
+}

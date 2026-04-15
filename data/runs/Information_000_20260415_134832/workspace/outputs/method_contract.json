@@ -1,0 +1,33 @@
+{
+  "task": "Unified Autoregressive Framework with Decoupled Visual Encoding",
+  "core_method": {
+    "name": "Decoupled Visual Encoding for Unified Multimodal Transformer",
+    "description": "A single autoregressive Transformer architecture that decouples visual encoding into two specialized pathways: an understanding encoder optimized for OCR/VQA/semantic tasks, and a generation encoder optimized for image reconstruction quality. Both produce discrete visual tokens consumed by a shared transformer.",
+    "key_innovations": [
+      "Dual-pathway visual tokenization: separate encoders for understanding vs generation",
+      "Shared autoregressive transformer backbone for both modalities",
+      "Task-adaptive routing: understanding tokens vs generation tokens",
+      "Unified vocabulary across text and visual tokens"
+    ]
+  },
+  "named_methods_referenced": {
+    "chameleon": "Early-fusion token-based mixed-modal model (paper_000)",
+    "llava": "Visual instruction tuning with projection layer (paper_001)",
+    "siglip": "Sigmoid loss for language-image pre-training (paper_002)",
+    "llamagen": "Vanilla AR models for image generation via next-token prediction (paper_003)"
+  },
+  "architectural_components": [
+    "Understanding Visual Encoder (high-res, detail-preserving)",
+    "Generation Visual Encoder (reconstruction-focused)",
+    "Discrete Token Quantizer (shared codebook)",
+    "Autoregressive Transformer Backbone",
+    "Task-Adaptive Routing Module",
+    "Image Tokenizer Decoder (for generation)"
+  ],
+  "evaluation_tasks": [
+    "Visual Question Answering (VQA)",
+    "Optical Character Recognition (OCR) / Formula-to-LaTeX",
+    "Text-to-Image Generation",
+    "Semantic Understanding (humor/meme comprehension)"
+  ]
+}

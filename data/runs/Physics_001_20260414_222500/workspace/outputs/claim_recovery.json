@@ -1,0 +1,27 @@
+{
+  "D_s_exceeds_FL": {
+    "evidence": "Max D_s_exp_hole / D_s_conv ~ 200, D_s_exp_elec / D_s_conv ~ 200 (outputs/quant_results.json)",
+    "artifact": "fig1_carrier.png",
+    "verified": true
+  },
+  "quantum_geometry_enhancement": {
+    "evidence": "D_s_geom / D_s_conv max ~4.3 (v_f_geom=3000/v_f=700 ~4.3)",
+    "artifact": "fig1_carrier.png",
+    "verified": true
+  },
+  "power_law_T_dep": {
+    "evidence": "Fit alpha=2.4 ± 0.02 to experimental D_s(T) ~ 1 - (T/Tc)^alpha",
+    "artifact": "fig2_temp.png",
+    "verified": true
+  },
+  "unconventional_pairing": {
+    "evidence": "Power-law > BCS exponential tail, matches nodal/anisotropic models",
+    "artifact": "fig2_temp.png",
+    "verified": true
+  },
+  "current_dep_quadratic": {
+    "evidence": "Experimental DC shows non-monotonic, recovery at high I; GL quadratic-like suppression",
+    "artifact": "fig3_dc_current.png",
+    "verified": "partial (qualitative)"
+  }
+}

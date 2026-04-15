@@ -1,0 +1,11 @@
+{
+  "method": "ViCrop simulation using OCR-based region detection",
+  "steps": [
+    "Detect text bboxes with EasyOCR as proxy for fine-grained details",
+    "Filter small bboxes (<5% image area)",
+    "Crop and resize crops to fixed size",
+    "Visualize overlays and zooms"
+  ],
+  "assumptions": ["Text as proxy for small objects", "EasyOCR available"],
+  "invariants": ["No training", "Local computation only"]
+}

@@ -1,0 +1,12 @@
+{
+  "commitments": [
+    "Extract/analyze superfluid stiffness D_s from simulated DC resistance, microwave resonance data",
+    "Verify D_s exceeds conventional Fermi liquid theory (v_f=700 m/s)",
+    "Test quantum geometric enhancement (v_f_geom=3000 m/s)",
+    "Power-law T dependence for anisotropic/unconventional pairing",
+    "Current dependence (quadratic?)",
+    "Reproduce three core experiments: n-dependence, T-dependence, I-dependence"
+  ],
+  "named_methods": ["BCS model", "Nodal superconductor", "Power-law decay", "Ginzburg-Landau", "Linear Meissner"],
+  "protocols": ["Carrier density sweep", "Temperature sweep at fixed n=[2,2.5,3]", "DC current sweep", "Microwave probe"]
+}

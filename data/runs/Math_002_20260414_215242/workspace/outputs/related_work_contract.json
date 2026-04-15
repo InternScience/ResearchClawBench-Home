@@ -1,0 +1,7 @@
+{
+  \"LNS2\": \"MAPF-LNS2: LNS with PP replan, SIPPS for min collision paths. Fast, scalable to 8000 agents.\",
+  \"PRIMAL\": \"RL+IL decentralized MARL imitating ODrM*, partially observable, scales well.\",
+  \"baselines\": [\"PP\", \"LNS2\"],
+  \"target_baselines\": [\"PP\", \"LNS2\", \"CBS-like\"],
+  \"figures\": [\"success vs agent density\", \"runtime vs success\"]
+}

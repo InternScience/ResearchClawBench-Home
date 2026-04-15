@@ -1,0 +1,52 @@
+{
+  "n_cells": 2759,
+  "n_features_total": 241,
+  "n_features_selected": 30,
+  "selected_features": [
+    "Int_Med_Skp2_cyto",
+    "Int_Med_CDK4_cell",
+    "Int_MeanEdge_ERK_cell",
+    "Int_Med_bCat_cell",
+    "Int_Med_E2F1_cyto",
+    "Int_MeanEdge_Skp2_cell",
+    "Int_Med_p53_cyto",
+    "Int_Med_S6_cell",
+    "Int_Med_Cdh1_cyto",
+    "Int_Med_Skp2_cell",
+    "Int_Med_AKT_cyto",
+    "Int_Intg_DNA_nuc",
+    "Int_Med_ERK_cyto",
+    "Int_MeanEdge_p53_cell",
+    "Int_Med_Bcl2_cyto",
+    "Int_Med_cycA_cyto",
+    "Int_Med_Fra1_cyto",
+    "Int_MeanEdge_bCat_cell",
+    "Int_Med_p38_cyto",
+    "Int_Med_pp27_cell",
+    "Int_MeanEdge_Cdh1_cell",
+    "Int_MeanEdge_AKT_cell",
+    "Int_Med_cMyc_cyto",
+    "Int_MeanEdge_Fra1_cell",
+    "Int_Med_DNA_cyto",
+    "Int_MeanEdge_S6_cell",
+    "Int_Med_bCat_nuc",
+    "Int_Med_p16_cell",
+    "Int_MeanEdge_cFos_cell",
+    "Int_Med_Cdt1_cyto"
+  ],
+  "pseudotime_corr": 0.8610856022903624,
+  "knn_greedy": 0.37826507188594904,
+  "knn_variance": 0.19900930288751964,
+  "knn_random": 0.3818251379324231,
+  "states": {
+    "cycling": 2174,
+    "arrested": 402,
+    "nan": 183
+  },
+  "phases": {
+    "G1": 1128,
+    "S": 891,
+    "G0": 402,
+    "G2": 338
+  }
+}

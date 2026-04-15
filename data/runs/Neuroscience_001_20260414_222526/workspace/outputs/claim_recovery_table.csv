@@ -1,0 +1,6 @@
+claim,evidence_artifact,status,detail
+The workspace contains an ensemble of 50 pretrained DMN models.,outputs/model_inventory.csv,supported,Found 50 model directories with metadata and checkpoints.
+All inspected models use the same connectome-constrained architecture configuration file.,outputs/connectome_config_summary.json; outputs/model_inventory.csv,supported,Unique connectome file: ['fib25-fib19_v2.2.json']
+The saved ensemble shows modest but non-zero variation in validation performance.,outputs/validation_summary.json; report/images/validation_curves.png,supported,Mean±sd validation loss = 5.314 ± 0.075.
+Cell-type-specific ensemble embeddings are available for broad mechanistic comparison.,outputs/umap_cluster_summary.csv; report/images/celltype_embedding_examples.png,supported,"Recovered summaries for 65 cell types; all embeddings had shape ['(50, 2)']."
+Direct checkpoint parameter introspection and full neuron-level forward simulation were executed in this run.,outputs/dependency_check.json,not_supported,"Torch/flyvis runtime support was unavailable from the default environment, so analysis relied on metadata, HDF5 losses, and pickled clustering artifacts."

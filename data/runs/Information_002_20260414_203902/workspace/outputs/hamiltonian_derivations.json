@@ -1,0 +1,21 @@
+{
+  "paper_metadata": {
+    "title": "Topological Phases in AB-Stacked MoTe$_2$/WSe$_2$: $\\mathbb{Z",
+    "abstract": "We present a theory on the quantum phase diagram of AB-stacked MoTe$_2$/WSe$_2$ using a self-consistent Hartree-Fock calculation performed in the plane-wave basis, motivated by the observation of topological states in this system. At filling factor $\\nu=2$ (two holes per moir\\'e unit cell), Coulomb interaction can stabilize a $\\mathbb{Z}_2$ topological insulator by opening a charge gap. At $\\nu=1$, the interaction induces three classes of competing states, spin density wave states, an in-plane ferromagnetic state, and a valley polarized state, which undergo first-order phase transitions tuned by an out-of-plane displacement field. The valley polarized state becomes a Chern insulator for certain displacement fields. Moreover, we predict a topological charge density wave forming a honeycomb lattice with ferromagnetism at $\\nu=2/3$. Future directions on this versatile system hosting a rich set of quantum phases are discussed.",
+    "authors": [
+      "Haining Pan",
+      "Ming Xie",
+      "Fengcheng Wu",
+      "Sankar Das Sarma"
+    ],
+    "journal_style": "revtex4-2 PRL format"
+  },
+  "extractions": {
+    "single_particle_hamiltonian": null,
+    "field_spinors_plus": null,
+    "field_spinors_minus": null,
+    "intralayer_bottom": null,
+    "interlayer_plus": "w\\left(1+\\omega e^{i\\bm{g}_2\\cdot\\bm{r}}+\\omega^{2} e^{i\\bm{g}_3\\cdot\\bm{r}} \\right)$, we obtain the tunneling at $-K$ valley as $\\Delta_{\\text{T},-}(\\bm{r})=-w\\left(1+\\omega^{-1} e^{-i\\bm{g}_2\\cdot\\bm{r}}+\\omega^{-2} e^{-i\\bm{g}_3\\cdot\\bm{r}} \\right)$, where $\\omega=e^{i\\frac{2\\pi}{3}}$, and we assume $w$ takes a real value. The form of $\\Delta_{T,+}(\\bm{r})$ is determined by $C_{3z}$ (threefold rotation) symmetry.",
+    "interlayer_minus": "-w\\left(1+\\omega^{-1} e^{-i\\bm{g}_2\\cdot\\bm{r}}+\\omega^{-2} e^{-i\\bm{g}_3\\cdot\\bm{r}} \\right)$, where $\\omega=e^{i\\frac{2\\pi}{3}}$, and we assume $w$ takes a real value. The form of $\\Delta_{T,+}(\\bm{r})$ is determined by $C_{3z}$ (threefold rotation) symmetry."
+  }
+}

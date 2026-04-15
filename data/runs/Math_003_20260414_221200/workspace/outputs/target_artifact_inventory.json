@@ -1,0 +1,12 @@
+{
+  "artifacts": [
+    {"name": "benchmark_overview_table", "path": "outputs/benchmark_summary.json", "status": "satisfied"},
+    {"name": "dependency_check", "path": "outputs/dependency_check.json", "status": "satisfied"},
+    {"name": "per_problem_results", "path": "outputs/per_problem_results.json", "status": "satisfied"},
+    {"name": "aggregate_metrics", "path": "outputs/aggregate_metrics.json", "status": "satisfied"},
+    {"name": "figure_solve_status", "path": "report/images/solve_status.png", "status": "satisfied"},
+    {"name": "figure_proof_lengths", "path": "report/images/proof_lengths.png", "status": "satisfied"},
+    {"name": "figure_search_times", "path": "report/images/search_times.png", "status": "satisfied"},
+    {"name": "final_report", "path": "report/report.md", "status": "satisfied"}
+  ]
+}

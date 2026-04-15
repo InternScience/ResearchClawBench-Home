@@ -1,0 +1,11 @@
+{
+  \"method_commitments\": [
+    \"Supervised binary classification per behavior (Attack, Sniffing)\",
+    \"Frame-level pose-engineered features as X\",
+    \"sklearn-style classifiers (RF primary for interpretability)\",
+    \"Standard train/test split or CV\",
+    \"Metrics: accuracy, precision, recall, F1, PR curves, CM\",
+    \"Feature importance via RF or permutation\"
+  ],
+  \"target_quantity\": \"Classifier performance and transparency\"
+}","path">outputs/method_contract.json

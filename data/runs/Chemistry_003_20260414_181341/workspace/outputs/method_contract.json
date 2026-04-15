@@ -1,0 +1,11 @@
+{
+  "method_commitments": [
+    "Implement Latent Ewald Summation (LES): equivariant network predicts latent charges z_i from structure.",
+    "Long-range electrostatics via Ewald summation on z_i without explicit charge equilibration.",
+    "Short-range potential learns residual after LES.",
+    "Baselines: short-range only, separate models per charge state (ag3).",
+    "Reproduce paper figs: Fig1 charge recovery, Fig3 dimer binding, Fig5e/Table1 Ag3 PES/charges."
+  ],
+  "named_methods": ["Ewald summation", "Latent charges", "Atomic Cluster Expansion equivariant features"],
+  "protocols": ["Train/test split per dataset", "Energy/forces/charges losses"]
+}

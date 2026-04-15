@@ -1,0 +1,43 @@
+{
+  "papers_used": [
+    {
+      "file": "related_work/paper_000.pdf",
+      "topic": "AlphaFold protein structure prediction",
+      "task_relevant_facts": [
+        "iterative trunk + structure module architecture",
+        "recycling/refinement is central",
+        "confidence-aware structural outputs and RMSD/TM-style validation matter"
+      ]
+    },
+    {
+      "file": "related_work/paper_001.pdf",
+      "topic": "deep-learning complex structure prediction for protein assemblies",
+      "task_relevant_facts": [
+        "cross-chain coevolution and complex-aware modeling are essential for interactions",
+        "large-scale complex modeling benefits from staged screening and refinement",
+        "complex-level structural interpretation is a key output"
+      ]
+    },
+    {
+      "file": "related_work/paper_002.pdf",
+      "topic": "geometric deep learning",
+      "task_relevant_facts": [
+        "non-Euclidean representations such as graphs/manifolds are appropriate for molecular structures",
+        "geometry-aware message passing is preferable to plain Euclidean sequence models for structure tasks"
+      ]
+    },
+    {
+      "file": "related_work/paper_003.pdf",
+      "topic": "Transformer attention",
+      "task_relevant_facts": [
+        "attention provides scalable cross-token interaction modeling",
+        "multi-head attention is a natural basis for cross-modal fusion across sequence and graph tokens"
+      ]
+    }
+  ],
+  "contract_updates": [
+    "use attention-based cross-modal fusion in the proposed unified model",
+    "include iterative refinement as a diffusion/recycling analogue",
+    "include geometry-aware representation discussion and capability comparison"
+  ]
+}

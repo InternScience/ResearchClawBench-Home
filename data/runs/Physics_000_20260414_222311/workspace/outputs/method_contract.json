@@ -1,0 +1,26 @@
+{
+  "methodological_commitments": [
+    "Hexagonal lattice coordinates for shell paths",
+    "Mackay icosahedral shells (MC): 1,13,55,147,309",
+    "Alternative shells b=5: 1,13,45,117,239,431",
+    "Chiral shell categories: MC, BG, Ch1-Ch5",
+    "Size mismatch optimization between adjacent shells",
+    "Lennard-Jones potentials with atomic-specific ε,σ",
+    "Dynamic growth simulations with deposition, paths",
+    "Stable multi-component clusters e.g. Na_{13}@Rb_{32}"
+  ],
+  "named_elements": {
+    "shell_types": ["MC", "BG", "Ch1", "Ch2", "Ch3", "Ch4", "Ch5"],
+    "atomic_elements": ["Na", "K", "Rb", "Cs", "Ag", "Cu", "Ni"],
+    "sequences": {
+      "mackay": [1,13,55,147,309],
+      "new_b5": [1,13,45,117,239,431]
+    },
+    "potentials": "Lennard-Jones"
+  },
+  "target_outputs": [
+    "Predicted stable structures",
+    "Optimal size mismatch values",
+    "Shell sequences and self-assembly paths"
+  ]
+}

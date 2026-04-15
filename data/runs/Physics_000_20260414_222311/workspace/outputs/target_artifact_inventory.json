@@ -1,0 +1,20 @@
+{
+  "primary_quantitative": [
+    "optimal_mismatch_ranges table",
+    "shell_energies table",
+    "growth_results curves"
+  ],
+  "figures": [
+    "report/images/atomic_radii.png",
+    "report/images/mismatch_ranges.png",
+    "report/images/shell_energies.png",
+    "report/images/growth_results.png",
+    "report/images/path_stats.png",
+    "report/images/clusters_table.png"
+  ],
+  "tables": [
+    "outputs/multicomponent_clusters.csv",
+    "outputs/mismatch_params.csv"
+  ],
+  "code": "code/analysis.py"
+}

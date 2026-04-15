@@ -1,0 +1,6 @@
+claim,supporting_artifacts
+Calibration data support systematic MD-to-experiment correction,outputs/calibration_cv_predictions.csv; outputs/gp_calibration_metrics.json; report/images/calibration_scatter.png
+GP calibration attains moderate predictive fidelity,outputs/gp_calibration_metrics.json
+Screening reprioritizes vitrimer candidates around target Tg,outputs/vitrimer_calibrated_predictions.csv; outputs/top100_candidates.csv; report/images/candidate_ranking.png
+Latent-space-inspired recombination can suggest novel acid/epoxide pairings,outputs/generated_recombined_pairs.csv; outputs/generated_recombined_pairs_scored.csv; report/images/acid_latent_space.png
+Experimental validation is not directly executed here,outputs/method_contract.json; outputs/dependency_check.json

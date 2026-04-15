@@ -1,0 +1,8 @@
+{
+  \"data_overview\": \"outputs/data_stats.json\",
+  \"model\": \"outputs/pretrained_encoder.pt, outputs/finetuned_model.pt\",
+  \"predictions\": \"outputs/candidate_probs.json\",
+  \"top_candidates\": \"outputs/top_50_candidates.json\",
+  \"metrics\": \"outputs/metrics.json\",
+  \"figures\": [\"report/images/data_stats.png\", \"report/images/train_curves.png\", \"report/images/roc_pr.png\", \"report/images/cand_pred_hist.png\"]
+}

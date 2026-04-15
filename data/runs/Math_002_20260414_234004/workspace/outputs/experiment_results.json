@@ -1,0 +1,1010 @@
+[
+  {
+    "map_type": "random_small",
+    "instance": 1,
+    "n_agents": 5,
+    "map_shape": [
+      10,
+      10
+    ],
+    "obstacle_density": 0.16,
+    "PP": {
+      "success": false,
+      "time": 0.001,
+      "collisions": 1,
+      "cost": 44
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.181,
+      "collisions": 1,
+      "cost": 44
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.089,
+      "collisions": 0,
+      "cost": 231
+    }
+  },
+  {
+    "map_type": "random_small",
+    "instance": 1,
+    "n_agents": 10,
+    "map_shape": [
+      10,
+      10
+    ],
+    "obstacle_density": 0.16,
+    "PP": {
+      "success": false,
+      "time": 0.003,
+      "collisions": 7,
+      "cost": 81
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.523,
+      "collisions": 4,
+      "cost": 82
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.001,
+      "collisions": 2,
+      "cost": 266
+    }
+  },
+  {
+    "map_type": "random_small",
+    "instance": 1,
+    "n_agents": 15,
+    "map_shape": [
+      10,
+      10
+    ],
+    "obstacle_density": 0.16,
+    "PP": {
+      "success": false,
+      "time": 0.078,
+      "collisions": 6,
+      "cost": 230
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.116,
+      "collisions": 2,
+      "cost": 229
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.103,
+      "collisions": 5,
+      "cost": 338
+    }
+  },
+  {
+    "map_type": "random_small",
+    "instance": 2,
+    "n_agents": 5,
+    "map_shape": [
+      10,
+      10
+    ],
+    "obstacle_density": 0.17,
+    "PP": {
+      "success": false,
+      "time": 0.001,
+      "collisions": 2,
+      "cost": 45
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.166,
+      "collisions": 1,
+      "cost": 44
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.0,
+      "collisions": 2,
+      "cost": 139
+    }
+  },
+  {
+    "map_type": "random_small",
+    "instance": 2,
+    "n_agents": 10,
+    "map_shape": [
+      10,
+      10
+    ],
+    "obstacle_density": 0.17,
+    "PP": {
+      "success": false,
+      "time": 0.085,
+      "collisions": 7,
+      "cost": 192
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.12,
+      "collisions": 0,
+      "cost": 99
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.42,
+      "collisions": 0,
+      "cost": 98
+    }
+  },
+  {
+    "map_type": "random_small",
+    "instance": 2,
+    "n_agents": 15,
+    "map_shape": [
+      10,
+      10
+    ],
+    "obstacle_density": 0.17,
+    "PP": {
+      "success": false,
+      "time": 0.006,
+      "collisions": 10,
+      "cost": 161
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.737,
+      "collisions": 2,
+      "cost": 150
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.001,
+      "collisions": 1,
+      "cost": 166
+    }
+  },
+  {
+    "map_type": "random_medium",
+    "instance": 1,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1904,
+    "PP": {
+      "success": true,
+      "time": 0.002,
+      "collisions": 0,
+      "cost": 79
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.002,
+      "collisions": 0,
+      "cost": 79
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.063,
+      "collisions": 0,
+      "cost": 3130
+    }
+  },
+  {
+    "map_type": "random_medium",
+    "instance": 1,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1904,
+    "PP": {
+      "success": false,
+      "time": 0.027,
+      "collisions": 1,
+      "cost": 207
+    },
+    "LNS": {
+      "success": false,
+      "time": 3.943,
+      "collisions": 1,
+      "cost": 205
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.008,
+      "collisions": 1,
+      "cost": 2038
+    }
+  },
+  {
+    "map_type": "random_medium",
+    "instance": 1,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1904,
+    "PP": {
+      "success": false,
+      "time": 0.022,
+      "collisions": 3,
+      "cost": 319
+    },
+    "LNS": {
+      "success": false,
+      "time": 3.589,
+      "collisions": 1,
+      "cost": 319
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 1.329,
+      "collisions": 0,
+      "cost": 5781
+    }
+  },
+  {
+    "map_type": "random_medium",
+    "instance": 2,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.184,
+    "PP": {
+      "success": false,
+      "time": 0.008,
+      "collisions": 1,
+      "cost": 109
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.018,
+      "collisions": 0,
+      "cost": 109
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.408,
+      "collisions": 0,
+      "cost": 1113
+    }
+  },
+  {
+    "map_type": "random_medium",
+    "instance": 2,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.184,
+    "PP": {
+      "success": false,
+      "time": 0.008,
+      "collisions": 2,
+      "cost": 201
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.031,
+      "collisions": 0,
+      "cost": 203
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 1.195,
+      "collisions": 0,
+      "cost": 3833
+    }
+  },
+  {
+    "map_type": "random_medium",
+    "instance": 2,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.184,
+    "PP": {
+      "success": false,
+      "time": 0.011,
+      "collisions": 3,
+      "cost": 242
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.828,
+      "collisions": 2,
+      "cost": 237
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 1.199,
+      "collisions": 0,
+      "cost": 2076
+    }
+  },
+  {
+    "map_type": "maze",
+    "instance": 1,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.4576,
+    "PP": {
+      "success": false,
+      "time": 0.007,
+      "collisions": 1,
+      "cost": 99
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.012,
+      "collisions": 0,
+      "cost": 99
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.357,
+      "collisions": 0,
+      "cost": 1924
+    }
+  },
+  {
+    "map_type": "maze",
+    "instance": 1,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.4576,
+    "PP": {
+      "success": false,
+      "time": 0.021,
+      "collisions": 2,
+      "cost": 238
+    },
+    "LNS": {
+      "success": false,
+      "time": 4.425,
+      "collisions": 2,
+      "cost": 238
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.024,
+      "collisions": 2,
+      "cost": 2029
+    }
+  },
+  {
+    "map_type": "maze",
+    "instance": 1,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.4576,
+    "PP": {
+      "success": false,
+      "time": 0.033,
+      "collisions": 8,
+      "cost": 335
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.001,
+      "collisions": 6,
+      "cost": 328
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.037,
+      "collisions": 6,
+      "cost": 946
+    }
+  },
+  {
+    "map_type": "maze",
+    "instance": 2,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.4576,
+    "PP": {
+      "success": true,
+      "time": 0.006,
+      "collisions": 0,
+      "cost": 114
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.005,
+      "collisions": 0,
+      "cost": 114
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.428,
+      "collisions": 0,
+      "cost": 1917
+    }
+  },
+  {
+    "map_type": "maze",
+    "instance": 2,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.4576,
+    "PP": {
+      "success": false,
+      "time": 0.009,
+      "collisions": 1,
+      "cost": 144
+    },
+    "LNS": {
+      "success": false,
+      "time": 1.945,
+      "collisions": 1,
+      "cost": 144
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.72,
+      "collisions": 0,
+      "cost": 4438
+    }
+  },
+  {
+    "map_type": "maze",
+    "instance": 2,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.4576,
+    "PP": {
+      "success": false,
+      "time": 0.021,
+      "collisions": 7,
+      "cost": 276
+    },
+    "LNS": {
+      "success": false,
+      "time": 3.794,
+      "collisions": 2,
+      "cost": 282
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.002,
+      "collisions": 2,
+      "cost": 906
+    }
+  },
+  {
+    "map_type": "room",
+    "instance": 1,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1952,
+    "PP": {
+      "success": false,
+      "time": 0.067,
+      "collisions": 1,
+      "cost": 152
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.016,
+      "collisions": 1,
+      "cost": 151
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.431,
+      "collisions": 0,
+      "cost": 1952
+    }
+  },
+  {
+    "map_type": "room",
+    "instance": 1,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1952,
+    "PP": {
+      "success": false,
+      "time": 0.066,
+      "collisions": 4,
+      "cost": 233
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.05,
+      "collisions": 3,
+      "cost": 233
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.826,
+      "collisions": 0,
+      "cost": 3849
+    }
+  },
+  {
+    "map_type": "room",
+    "instance": 1,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1952,
+    "PP": {
+      "success": false,
+      "time": 0.146,
+      "collisions": 17,
+      "cost": 451
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.012,
+      "collisions": 8,
+      "cost": 449
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.007,
+      "collisions": 7,
+      "cost": 457
+    }
+  },
+  {
+    "map_type": "room",
+    "instance": 2,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1952,
+    "PP": {
+      "success": false,
+      "time": 0.006,
+      "collisions": 2,
+      "cost": 120
+    },
+    "LNS": {
+      "success": false,
+      "time": 1.824,
+      "collisions": 2,
+      "cost": 119
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.25,
+      "collisions": 0,
+      "cost": 3130
+    }
+  },
+  {
+    "map_type": "room",
+    "instance": 2,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1952,
+    "PP": {
+      "success": false,
+      "time": 0.018,
+      "collisions": 3,
+      "cost": 161
+    },
+    "LNS": {
+      "success": false,
+      "time": 3.167,
+      "collisions": 1,
+      "cost": 162
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.953,
+      "collisions": 0,
+      "cost": 4455
+    }
+  },
+  {
+    "map_type": "room",
+    "instance": 2,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.1952,
+    "PP": {
+      "success": false,
+      "time": 0.037,
+      "collisions": 5,
+      "cost": 285
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.051,
+      "collisions": 3,
+      "cost": 283
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.01,
+      "collisions": 3,
+      "cost": 2736
+    }
+  },
+  {
+    "map_type": "empty",
+    "instance": 1,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.0,
+    "PP": {
+      "success": true,
+      "time": 0.002,
+      "collisions": 0,
+      "cost": 63
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.002,
+      "collisions": 0,
+      "cost": 63
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.106,
+      "collisions": 0,
+      "cost": 760
+    }
+  },
+  {
+    "map_type": "empty",
+    "instance": 1,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.0,
+    "PP": {
+      "success": false,
+      "time": 0.009,
+      "collisions": 3,
+      "cost": 163
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.043,
+      "collisions": 0,
+      "cost": 164
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 1.645,
+      "collisions": 0,
+      "cost": 1575
+    }
+  },
+  {
+    "map_type": "empty",
+    "instance": 1,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.0,
+    "PP": {
+      "success": false,
+      "time": 0.013,
+      "collisions": 1,
+      "cost": 273
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.458,
+      "collisions": 1,
+      "cost": 271
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.499,
+      "collisions": 0,
+      "cost": 1580
+    }
+  },
+  {
+    "map_type": "empty",
+    "instance": 2,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.0,
+    "PP": {
+      "success": true,
+      "time": 0.003,
+      "collisions": 0,
+      "cost": 81
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.003,
+      "collisions": 0,
+      "cost": 81
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.089,
+      "collisions": 0,
+      "cost": 1630
+    }
+  },
+  {
+    "map_type": "empty",
+    "instance": 2,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.0,
+    "PP": {
+      "success": false,
+      "time": 0.008,
+      "collisions": 1,
+      "cost": 177
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.016,
+      "collisions": 0,
+      "cost": 177
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 1.145,
+      "collisions": 0,
+      "cost": 481
+    }
+  },
+  {
+    "map_type": "empty",
+    "instance": 2,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.0,
+    "PP": {
+      "success": false,
+      "time": 0.015,
+      "collisions": 1,
+      "cost": 254
+    },
+    "LNS": {
+      "success": true,
+      "time": 2.186,
+      "collisions": 0,
+      "cost": 254
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.697,
+      "collisions": 0,
+      "cost": 2967
+    }
+  },
+  {
+    "map_type": "warehouse",
+    "instance": 1,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.288,
+    "PP": {
+      "success": false,
+      "time": 0.003,
+      "collisions": 2,
+      "cost": 106
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.02,
+      "collisions": 0,
+      "cost": 112
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.123,
+      "collisions": 0,
+      "cost": 3130
+    }
+  },
+  {
+    "map_type": "warehouse",
+    "instance": 1,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.288,
+    "PP": {
+      "success": false,
+      "time": 0.004,
+      "collisions": 1,
+      "cost": 149
+    },
+    "LNS": {
+      "success": false,
+      "time": 1.067,
+      "collisions": 1,
+      "cost": 149
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.491,
+      "collisions": 0,
+      "cost": 1390
+    }
+  },
+  {
+    "map_type": "warehouse",
+    "instance": 1,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.288,
+    "PP": {
+      "success": false,
+      "time": 0.008,
+      "collisions": 2,
+      "cost": 243
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.228,
+      "collisions": 1,
+      "cost": 245
+    },
+    "Hybrid_MARL_LNS": {
+      "success": false,
+      "time": 5.011,
+      "collisions": 1,
+      "cost": 4551
+    }
+  },
+  {
+    "map_type": "warehouse",
+    "instance": 2,
+    "n_agents": 5,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.288,
+    "PP": {
+      "success": true,
+      "time": 0.001,
+      "collisions": 0,
+      "cost": 85
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.001,
+      "collisions": 0,
+      "cost": 85
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.151,
+      "collisions": 0,
+      "cost": 3130
+    }
+  },
+  {
+    "map_type": "warehouse",
+    "instance": 2,
+    "n_agents": 10,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.288,
+    "PP": {
+      "success": false,
+      "time": 0.006,
+      "collisions": 3,
+      "cost": 180
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.013,
+      "collisions": 0,
+      "cost": 178
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 0.406,
+      "collisions": 0,
+      "cost": 1274
+    }
+  },
+  {
+    "map_type": "warehouse",
+    "instance": 2,
+    "n_agents": 15,
+    "map_shape": [
+      25,
+      25
+    ],
+    "obstacle_density": 0.288,
+    "PP": {
+      "success": false,
+      "time": 0.009,
+      "collisions": 6,
+      "cost": 286
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.079,
+      "collisions": 2,
+      "cost": 285
+    },
+    "Hybrid_MARL_LNS": {
+      "success": true,
+      "time": 1.437,
+      "collisions": 0,
+      "cost": 3327
+    }
+  }
+]

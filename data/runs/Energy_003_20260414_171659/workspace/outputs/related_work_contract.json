@@ -1,0 +1,31 @@
+{
+  "summary": "The exact HEEW paper was not present in the local related_work directory. The available papers nevertheless support three methodological expectations relevant to this task: benchmark energy datasets should be reproducible, hierarchy-aware analyses should preserve aggregation structure, and dataset publications should include explicit validation checks.",
+  "papers_used": [
+    {
+      "file": "paper_000.pdf",
+      "relevant_points": [
+        "Energy dataset papers should document coverage and validation consistency checks.",
+        "Public datasets are more useful when internal validation accompanies release."
+      ]
+    },
+    {
+      "file": "paper_001.pdf",
+      "relevant_points": [
+        "Benchmark datasets benefit from reproducible code and baseline-ready packaging.",
+        "Public release structure matters for downstream machine-learning use."
+      ]
+    },
+    {
+      "file": "paper_002.pdf",
+      "relevant_points": [
+        "Hierarchical or grouped time-series analyses should preserve cross-series heterogeneity."
+      ]
+    },
+    {
+      "file": "paper_003.pdf",
+      "relevant_points": [
+        "Hierarchy-aware validation is important when selecting or aggregating power-system entities."
+      ]
+    }
+  ]
+}

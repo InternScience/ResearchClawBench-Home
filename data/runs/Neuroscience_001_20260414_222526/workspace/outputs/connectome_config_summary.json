@@ -1,0 +1,44 @@
+{
+  "connectome_type": "ConnectomeFromAvgFilters",
+  "connectome_file": "fib25-fib19_v2.2.json",
+  "extent": 15,
+  "n_syn_fill": 1,
+  "dynamics_type": "PPNeuronIGRSynapses",
+  "activation_type": "relu",
+  "node_groupby": {
+    "bias": [
+      "type"
+    ],
+    "time_const": [
+      "type"
+    ]
+  },
+  "edge_groupby": {
+    "sign": [
+      "source_type",
+      "target_type"
+    ],
+    "syn_count": [
+      "source_type",
+      "target_type",
+      "du",
+      "dv"
+    ],
+    "syn_strength": [
+      "source_type",
+      "target_type"
+    ]
+  },
+  "task_dataset_type": "MultiTaskSintel",
+  "task_tasks": [
+    "flow"
+  ],
+  "n_iters": 250000,
+  "n_folds": 4,
+  "batch_size": 4,
+  "decoder_type": "DecoderGAVP",
+  "decoder_shape": [
+    8,
+    2
+  ]
+}

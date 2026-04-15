@@ -1,0 +1,14 @@
+{
+  "task": "HEEW Mini-Dataset Analysis",
+  "method": "Multi-source hierarchical time-series analysis combining data quality assessment, hierarchical aggregation verification, temporal pattern analysis, correlation analysis, building clustering (KMeans), load forecasting (Random Forest), and anomaly detection (Z-score)",
+  "data_sources": [
+    "ASU Campus Metabolism Project sensor measurements (electricity, heat, cooling loads, PV generation, GHG emissions)",
+    "U.S. National Weather Service meteorological observations (temperature, dew point, humidity, wind speed, wind gust, pressure, precipitation)"
+  ],
+  "hierarchical_levels": ["Building (BN001-BN010)", "Community (CN01)", "Total Area"],
+  "time_period": "2014 (full year, hourly resolution, 8760 records per entity)",
+  "variables": {
+    "energy": ["Electricity [kW]", "Heat [mmBTU]", "Cooling Energy [Ton]", "PV Power Generation [kW]", "Greenhouse Gas Emission [Ton]"],
+    "weather": ["Temperature [°F]", "Dew Point [°F]", "Humidity [%]", "Wind Speed [mph]", "Wind Gust [mph]", "Pressure [in]", "Precipitation [in]"]
+  }
+}

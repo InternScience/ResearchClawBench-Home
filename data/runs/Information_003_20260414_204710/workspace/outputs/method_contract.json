@@ -1,0 +1,21 @@
+{
+  "task": "Disentangled dynamic intrusion detection framework evaluation on NF-UNSW-NB15-v2_3d.pt",
+  "primary_objectives": [
+    "binary classification of benign vs attack",
+    "multiclass classification of specific attack types",
+    "unknown-attack detection under held-out attack classes",
+    "few-shot attack recognition under limited labeled examples"
+  ],
+  "named_method_commitments": [
+    "DIDS-MFL-inspired disentanglement of statistical and representational components",
+    "dynamic graph diffusion or graph-based spatiotemporal aggregation",
+    "multi-scale feature fusion for few-shot robustness"
+  ],
+  "minimum_outputs": [
+    "quantitative comparison tables",
+    "validation subsection",
+    "PNG figures",
+    "claim recovery table"
+  ],
+  "status": "initial"
+}

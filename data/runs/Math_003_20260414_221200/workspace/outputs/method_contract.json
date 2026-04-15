@@ -1,0 +1,22 @@
+{
+  "task": "Machine-verifiable, human-readable proofs for olympiad-level Euclidean geometry problems",
+  "primary_input": "Formal statements in data/imo_ag_30.txt",
+  "primary_output": [
+    "Per-problem proof attempt",
+    "Verification status under formal rule system",
+    "Aggregate benchmark metrics"
+  ],
+  "method_commitments": [
+    "Use provided geometry definitions and rules as the symbolic substrate",
+    "Produce machine-checkable proof traces or explicit failure states",
+    "Evaluate at per-problem granularity on the 30-problem benchmark",
+    "Report aggregate success and proof-length statistics",
+    "Include validation/comparison plots and a data overview"
+  ],
+  "named_quantities": [
+    "solve_rate",
+    "verified_solve_rate",
+    "proof_length_steps",
+    "search_time_seconds"
+  ]
+}

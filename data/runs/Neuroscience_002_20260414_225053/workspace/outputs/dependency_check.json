@@ -1,0 +1,17 @@
+{
+  "python_packages": {
+    "pandas": true,
+    "numpy": true,
+    "scikit_learn": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "shap": false,
+    "pypdf": true
+  },
+  "named_method_check": {
+    "tree_based_models": "available via scikit-learn",
+    "logistic_regression": "available via scikit-learn",
+    "permutation_importance": "available via scikit-learn",
+    "shap": "not available initially; fallback to permutation importance and model-native feature importance"
+  }
+}

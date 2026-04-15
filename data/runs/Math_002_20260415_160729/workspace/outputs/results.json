@@ -1,0 +1,207 @@
+{
+  "empty": {
+    "4": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.04234814643859863,
+        "avg_collisions_initial": 0.0,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 1.0,
+        "avg_time": 0.023936748504638672,
+        "avg_collisions": 0.0
+      }
+    },
+    "8": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.04310715198516846,
+        "avg_collisions_initial": 0.0,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 1.0,
+        "avg_time": 0.04120433330535889,
+        "avg_collisions": 0.0
+      }
+    },
+    "12": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.21438002586364746,
+        "avg_collisions_initial": 2.0,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 0.0,
+        "avg_time": 0.09779089689254761,
+        "avg_collisions": 1.0
+      }
+    }
+  },
+  "maze": {
+    "4": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.19546937942504883,
+        "avg_collisions_initial": 0.5,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 0.5,
+        "avg_time": 0.02827554941177368,
+        "avg_collisions": 0.5
+      }
+    },
+    "6": {
+      "lns_marl": {
+        "success_rate": 0.5,
+        "avg_time": 1.5883792638778687,
+        "avg_collisions_initial": 0.5,
+        "avg_collisions_final": 0.5
+      },
+      "baseline_pp": {
+        "success_rate": 0.0,
+        "avg_time": 0.09338206052780151,
+        "avg_collisions": 1.0
+      }
+    },
+    "8": {
+      "lns_marl": {
+        "success_rate": 0.5,
+        "avg_time": 1.588957965373993,
+        "avg_collisions_initial": 1.5,
+        "avg_collisions_final": 1.5
+      },
+      "baseline_pp": {
+        "success_rate": 0.5,
+        "avg_time": 1.3047027587890625,
+        "avg_collisions": 2.0
+      }
+    }
+  },
+  "random_small": {
+    "2": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.0007284879684448242,
+        "avg_collisions_initial": 0.0,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 1.0,
+        "avg_time": 0.0002218484878540039,
+        "avg_collisions": 0.0
+      }
+    },
+    "4": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.007444560527801514,
+        "avg_collisions_initial": 1.0,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 0.5,
+        "avg_time": 0.0006970763206481934,
+        "avg_collisions": 0.5
+      }
+    },
+    "6": {
+      "lns_marl": {
+        "success_rate": 0.5,
+        "avg_time": 0.827713668346405,
+        "avg_collisions_initial": 1.25,
+        "avg_collisions_final": 0.5
+      },
+      "baseline_pp": {
+        "success_rate": 0.5,
+        "avg_time": 0.08300524950027466,
+        "avg_collisions": 1.0
+      }
+    }
+  },
+  "random_medium": {
+    "4": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.03731226921081543,
+        "avg_collisions_initial": 0.25,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 0.75,
+        "avg_time": 0.0028038620948791504,
+        "avg_collisions": 0.25
+      }
+    },
+    "8": {
+      "lns_marl": {
+        "success_rate": 0.75,
+        "avg_time": 0.29499393701553345,
+        "avg_collisions_initial": 1.0,
+        "avg_collisions_final": 0.5
+      },
+      "baseline_pp": {
+        "success_rate": 0.0,
+        "avg_time": 0.043663084506988525,
+        "avg_collisions": 1.75
+      }
+    },
+    "12": {
+      "lns_marl": {
+        "success_rate": 0.75,
+        "avg_time": 0.22229409217834473,
+        "avg_collisions_initial": 1.5,
+        "avg_collisions_final": 0.25
+      },
+      "baseline_pp": {
+        "success_rate": 0.25,
+        "avg_time": 0.057753920555114746,
+        "avg_collisions": 1.25
+      }
+    }
+  },
+  "warehouse": {
+    "4": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.0030777454376220703,
+        "avg_collisions_initial": 0.0,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 1.0,
+        "avg_time": 0.0012010931968688965,
+        "avg_collisions": 0.0
+      }
+    },
+    "6": {
+      "lns_marl": {
+        "success_rate": 0.5,
+        "avg_time": 0.3496384620666504,
+        "avg_collisions_initial": 1.5,
+        "avg_collisions_final": 0.5
+      },
+      "baseline_pp": {
+        "success_rate": 0.0,
+        "avg_time": 0.019137978553771973,
+        "avg_collisions": 1.0
+      }
+    },
+    "8": {
+      "lns_marl": {
+        "success_rate": 1.0,
+        "avg_time": 0.0336909294128418,
+        "avg_collisions_initial": 1.5,
+        "avg_collisions_final": 0.0
+      },
+      "baseline_pp": {
+        "success_rate": 0.0,
+        "avg_time": 0.017174959182739258,
+        "avg_collisions": 1.0
+      }
+    }
+  }
+}

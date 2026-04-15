@@ -1,0 +1,146 @@
+{
+  "bace": {
+    "shape": [
+      1513,
+      3
+    ],
+    "columns": [
+      "smiles",
+      "CID",
+      "label"
+    ],
+    "smiles_column": "smiles",
+    "label_columns": [
+      "label"
+    ],
+    "valid_molecules": 1513,
+    "total_molecules": 1513,
+    "atom_mean": 34.08922670191672,
+    "atom_std": 8.51727199697669,
+    "atom_min": 10,
+    "atom_max": 97
+  },
+  "bbbp": {
+    "shape": [
+      2039,
+      4
+    ],
+    "columns": [
+      "num",
+      "name",
+      "label",
+      "smiles"
+    ],
+    "smiles_column": "smiles",
+    "label_columns": [
+      "label"
+    ],
+    "valid_molecules": 2039,
+    "total_molecules": 2039,
+    "atom_mean": 24.064737616478666,
+    "atom_std": 10.58845954538244,
+    "atom_min": 2,
+    "atom_max": 132
+  },
+  "clintox": {
+    "shape": [
+      1477,
+      6
+    ],
+    "columns": [
+      "ID",
+      "smiles",
+      "FDA_APPROVED",
+      "CT_TOX",
+      "Unnamed: 4",
+      "Unnamed: 5"
+    ],
+    "smiles_column": "smiles",
+    "label_columns": [
+      "FDA_APPROVED",
+      "CT_TOX",
+      "Unnamed: 4"
+    ],
+    "valid_molecules": 1477,
+    "total_molecules": 1477,
+    "atom_mean": 26.159106296547055,
+    "atom_std": 15.613120752145099,
+    "atom_min": 1,
+    "atom_max": 136
+  },
+  "hiv": {
+    "shape": [
+      41127,
+      4
+    ],
+    "columns": [
+      "ID",
+      "smiles",
+      "activity",
+      "label"
+    ],
+    "smiles_column": "smiles",
+    "label_columns": [
+      "label"
+    ],
+    "valid_molecules": 41120,
+    "total_molecules": 41127,
+    "atom_mean": 25.509606031128406,
+    "atom_std": 12.111811096423606,
+    "atom_min": 2,
+    "atom_max": 222
+  },
+  "muv": {
+    "shape": [
+      93087,
+      19
+    ],
+    "columns": [
+      "MUV-466",
+      "MUV-548",
+      "MUV-600",
+      "MUV-644",
+      "MUV-652",
+      "MUV-689",
+      "MUV-692",
+      "MUV-712",
+      "MUV-713",
+      "MUV-733",
+      "MUV-737",
+      "MUV-810",
+      "MUV-832",
+      "MUV-846",
+      "MUV-852",
+      "MUV-858",
+      "MUV-859",
+      "mol_id",
+      "smiles"
+    ],
+    "smiles_column": "smiles",
+    "label_columns": [
+      "MUV-466",
+      "MUV-548",
+      "MUV-600",
+      "MUV-644",
+      "MUV-652",
+      "MUV-689",
+      "MUV-692",
+      "MUV-712",
+      "MUV-713",
+      "MUV-733",
+      "MUV-737",
+      "MUV-810",
+      "MUV-832",
+      "MUV-846",
+      "MUV-852",
+      "MUV-858",
+      "MUV-859"
+    ],
+    "valid_molecules": 93087,
+    "total_molecules": 93087,
+    "atom_mean": 24.233738330808812,
+    "atom_std": 5.05041384468239,
+    "atom_min": 6,
+    "atom_max": 46
+  }
+}

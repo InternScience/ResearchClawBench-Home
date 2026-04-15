@@ -1,0 +1,8 @@
+{
+  "key_extractions": {
+    "paper_000": "Nanopolish: HMM-based detection of 5mC using R9 pores, current shifts in k-mers.",
+    "paper_001": "MoD-seq: Unsupervised detection of modifications (4mC,5mC,6mA) via native vs amplified signal comparison."
+  },
+  "baselines": ["Nanopolish", "f5c", "Tombo"],
+  "methods": ["HMM for signal alignment", "k-mer emission models"]
+}

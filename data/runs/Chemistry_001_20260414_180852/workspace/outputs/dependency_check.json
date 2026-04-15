@@ -1,0 +1,13 @@
+{
+  \"libraries\": {
+    \"biopython\": \"1.86 available\",
+    \"rdkit\": \"2022.09.5 available\",
+    \"torch\": \"2.9.1+cu128 available\",
+    \"torch_geometric\": \"2.7.0 available\",
+    \"matplotlib\": \"available\",
+    \"numpy\": \"available\",
+    \"pandas\": \"available\"
+  },
+  \"limitations\": [\"No ESM or pre-trained protein embedders\", \"No large datasets for training\"],
+  \"fallback\": [\"Toy/one-shot diffusion demo using GT as train/predict\"]
+}

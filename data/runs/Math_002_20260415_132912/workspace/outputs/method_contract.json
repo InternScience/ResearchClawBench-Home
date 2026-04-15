@@ -1,0 +1,22 @@
+{
+  "task": "Multi-Agent Path Finding via MARL-LNS Hybrid",
+  "named_methods": ["MARL-LNS (proposed)", "Prioritized Planning (baseline)", "Large Neighborhood Search / MAPF-LNS2 (baseline)"],
+  "framework": "Hybrid MARL + LNS for MAPF",
+  "key_components": [
+    "MARL-inspired value estimation for agent difficulty assessment",
+    "Value-guided neighborhood selection in LNS",
+    "Two-phase strategy: MARL-guided LNS followed by PP cleanup",
+    "Adaptive neighborhood sizing based on collision count"
+  ],
+  "comparison_baselines": ["PP (Prioritized Planning)", "LNS (standard Large Neighborhood Search)"],
+  "evaluation_metrics": ["Success rate (%)", "Sum-of-costs", "Runtime (s)", "Collision count", "Iterations to convergence"],
+  "datasets": ["random_small", "random_medium", "empty", "maze", "warehouse", "maps_60_10_10_0.175"],
+  "target_artifacts": [
+    "Data overview figure",
+    "Success rate comparison",
+    "Runtime comparison",
+    "Sum-of-costs comparison",
+    "Convergence curves",
+    "Collision heatmap"
+  ]
+}

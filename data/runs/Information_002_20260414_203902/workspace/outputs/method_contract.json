@@ -1,0 +1,23 @@
+{
+  "task": "Evaluate structured-prompt Hartree-Fock analytic calculation performance on paper 2111.01152 for an AB-stacked MoTe2/WSe2 moire system",
+  "named_commitments": [
+    "derive Hartree-Fock/noninteracting Hamiltonian steps from paper artifacts",
+    "extract paper information automatically",
+    "score stepwise calculation outputs using provided benchmark scores",
+    "report correctly derived Hamiltonians and quantitative step scores",
+    "generate validation/comparison figures"
+  ],
+  "primary_sources": [
+    "data/2111.01152/2111.01152.tex",
+    "data/2111.01152/2111.01152_SM.tex",
+    "data/2111.01152/2111.01152.yaml",
+    "data/2111.01152/2111.01152_auto.md"
+  ],
+  "deliverables": [
+    "derived Hamiltonian summary",
+    "paper metadata extraction",
+    "step score tables",
+    "figures comparing rubric categories and task-level performance",
+    "traceable report with validation section"
+  ]
+}

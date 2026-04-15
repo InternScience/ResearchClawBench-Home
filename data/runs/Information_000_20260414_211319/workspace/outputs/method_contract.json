@@ -1,0 +1,10 @@
+{
+  \"commitments\": [
+    \"Unified autoregressive Transformer architecture\",
+    \"Decouples visual encoding: separate encoders/tokenizers for understanding (high-level semantics, OCR) and generation (pixel-level reconstruction)\",
+    \"Single shared AR core for both tasks\",
+    \"Demonstrate on VQA/OCR (equation.png, doge.png) and simulated T2I\"
+  ],
+  \"named_methods\": [\"autoregressive transformer\", \"decoupled visual encoders\"],
+  \"tasks\": [\"OCR/LaTeX from equation.png\", \"Semantic VQA/humor from doge.png\", \"T2I simulation\"]
+}

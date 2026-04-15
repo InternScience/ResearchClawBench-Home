@@ -1,0 +1,31 @@
+{
+  "response_stats": {
+    "mean_response_probability": 0.9427470300116586,
+    "median_response_probability": 0.9630025369027599,
+    "std_response_probability": 0.09153692089155507,
+    "min_response_probability": 1.7999838891502584e-05,
+    "max_response_probability": 0.999999998265884
+  },
+  "coverage_stats": {
+    "coverage_at_50": 0.992,
+    "coverage_at_80": 0.98,
+    "coverage_at_90": 0.887,
+    "coverage_at_95": 0.606
+  },
+  "composition_stats": {
+    "mean_iou": 1.0,
+    "std_iou": 0.0,
+    "peptide_consistency": 1.0
+  },
+  "consistency_stats": {
+    "mean_cv": 0.22392521827884568,
+    "std_cv": 0.07028123222477525
+  },
+  "runtime_stats": {
+    "100": 0.012,
+    "1000": 0.20285714285714285,
+    "3000": 0.4328571428571429,
+    "7000": 2.685714285714286,
+    "10000": 6.542857142857143
+  }
+}

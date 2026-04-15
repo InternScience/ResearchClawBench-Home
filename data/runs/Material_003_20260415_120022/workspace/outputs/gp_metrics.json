@@ -1,0 +1,20 @@
+{
+  "test_mae": 24.271217847480887,
+  "test_rmse": 29.83956754013808,
+  "test_r2": 0.893755542435067,
+  "cv_mae_mean": 23.877778750706863,
+  "cv_mae_std": 3.2418335549473025,
+  "cv_rmse_mean": 32.303655042345184,
+  "cv_rmse_std": 4.603822960202596,
+  "cv_r2_mean": 0.8820755797818182,
+  "cv_r2_std": 0.03221332386979402,
+  "gp_kernel": "31.8**2 * RBF(length_scale=260) + WhiteKernel(noise_level=0.096)",
+  "pca_n_components": 30,
+  "pca_total_variance": 0.7233720885199594,
+  "n_calibration": 295,
+  "n_vitrimer": 8424,
+  "vit_tg_cal_mean": 387.4347115260888,
+  "vit_tg_cal_std": 30.283700490913123,
+  "vit_tg_cal_min": 254.019544020274,
+  "vit_tg_cal_max": 486.2745987016551
+}

@@ -1,0 +1,21 @@
+{
+  "task": "Reconcile diverse observational methods to deliver a consistent and high-confidence assessment of global glacial mass change (2000-2023)",
+  "primary_outputs": [
+    "Regional and global glacial mass change time series at annual resolution",
+    "Uncertainties for each estimate",
+    "Expressed as specific mass change (m w.e.) and total mass change (Gt)",
+    "Method comparison across glaciological, DEM differencing, altimetry, gravimetry, and hybrid methods"
+  ],
+  "named_methods": ["glaciological", "DEM differencing", "altimetry", "gravimetry", "combined/hybrid"],
+  "data_source": "GlaMBIE dataset (233 regional estimates, 35 research teams, ~450 contributors)",
+  "regions": 19,
+  "time_period": "2000-2023",
+  "figures_required": [
+    "Data overview (input dataset counts by region and method)",
+    "Global mass change time series with uncertainties",
+    "Regional mass change comparison",
+    "Method comparison across regions",
+    "Cumulative mass change",
+    "Validation/comparison of methods"
+  ]
+}

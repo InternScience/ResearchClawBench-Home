@@ -1,0 +1,335 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "optimal_dispatch.py",
+    "path": "code/optimal_dispatch.py",
+    "type": "file",
+    "size": 14012,
+    "mtime": 1776254246.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_analysis.py",
+    "path": "code/scenario_analysis.py",
+    "type": "file",
+    "size": 13570,
+    "mtime": 1776254246.0,
+    "exported": true
+  },
+  {
+    "name": "visualize.py",
+    "path": "code/visualize.py",
+    "type": "file",
+    "size": 18676,
+    "mtime": 1776254246.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "buses.csv",
+    "path": "data/buses.csv",
+    "type": "file",
+    "size": 1086,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "demand.csv",
+    "path": "data/demand.csv",
+    "type": "file",
+    "size": 60915,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "generators.csv",
+    "path": "data/generators.csv",
+    "type": "file",
+    "size": 1386,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "links.csv",
+    "path": "data/links.csv",
+    "type": "file",
+    "size": 565,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "storage.csv",
+    "path": "data/storage.csv",
+    "type": "file",
+    "size": 109,
+    "mtime": 1773033848.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "wind_cf.csv",
+    "path": "data/wind_cf.csv",
+    "type": "file",
+    "size": 63972,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "curtailment.npy",
+    "path": "outputs/curtailment.npy",
+    "type": "file",
+    "size": 27008,
+    "mtime": 1776254242.0,
+    "exported": false
+  },
+  {
+    "name": "demand_matrix.npy",
+    "path": "outputs/demand_matrix.npy",
+    "type": "file",
+    "size": 27008,
+    "mtime": 1776254242.0,
+    "exported": false
+  },
+  {
+    "name": "dispatch.npy",
+    "path": "outputs/dispatch.npy",
+    "type": "file",
+    "size": 57920,
+    "mtime": 1776254242.0,
+    "exported": false
+  },
+  {
+    "name": "link_flows.npy",
+    "path": "outputs/link_flows.npy",
+    "type": "file",
+    "size": 31040,
+    "mtime": 1776254242.0,
+    "exported": false
+  },
+  {
+    "name": "load_shedding.npy",
+    "path": "outputs/load_shedding.npy",
+    "type": "file",
+    "size": 27008,
+    "mtime": 1776254242.0,
+    "exported": false
+  },
+  {
+    "name": "meta.json",
+    "path": "outputs/meta.json",
+    "type": "file",
+    "size": 2084,
+    "mtime": 1776254242.0,
+    "exported": true
+  },
+  {
+    "name": "results.json",
+    "path": "outputs/results.json",
+    "type": "file",
+    "size": 41778,
+    "mtime": 1776254242.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_comparison.json",
+    "path": "outputs/scenario_comparison.json",
+    "type": "file",
+    "size": 1560,
+    "mtime": 1776254242.0,
+    "exported": true
+  },
+  {
+    "name": "stor_ch.npy",
+    "path": "outputs/stor_ch.npy",
+    "type": "file",
+    "size": 4160,
+    "mtime": 1776254242.0,
+    "exported": false
+  },
+  {
+    "name": "stor_disch.npy",
+    "path": "outputs/stor_disch.npy",
+    "type": "file",
+    "size": 4160,
+    "mtime": 1776254242.0,
+    "exported": false
+  },
+  {
+    "name": "\u2026 3 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1296584,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 193879,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 406113,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 6282024,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig01_dispatch_stack.png",
+    "path": "report/images/fig01_dispatch_stack.png",
+    "type": "file",
+    "size": 162932,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "fig02_energy_contribution.png",
+    "path": "report/images/fig02_energy_contribution.png",
+    "type": "file",
+    "size": 83853,
+    "mtime": 1776254246.0,
+    "exported": true
+  },
+  {
+    "name": "fig03_spatial_distribution.png",
+    "path": "report/images/fig03_spatial_distribution.png",
+    "type": "file",
+    "size": 374651,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "fig04_storage_dynamics.png",
+    "path": "report/images/fig04_storage_dynamics.png",
+    "type": "file",
+    "size": 448380,
+    "mtime": 1776254246.0,
+    "exported": true
+  },
+  {
+    "name": "fig05_wind_analysis.png",
+    "path": "report/images/fig05_wind_analysis.png",
+    "type": "file",
+    "size": 187908,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "fig06_load_shedding.png",
+    "path": "report/images/fig06_load_shedding.png",
+    "type": "file",
+    "size": 245686,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "fig07_network_flows.png",
+    "path": "report/images/fig07_network_flows.png",
+    "type": "file",
+    "size": 335093,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "fig08_cost_breakdown.png",
+    "path": "report/images/fig08_cost_breakdown.png",
+    "type": "file",
+    "size": 41274,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "fig09_supply_demand_balance.png",
+    "path": "report/images/fig09_supply_demand_balance.png",
+    "type": "file",
+    "size": 301127,
+    "mtime": 1776254246.0,
+    "exported": true
+  },
+  {
+    "name": "fig10_per_bus_generation.png",
+    "path": "report/images/fig10_per_bus_generation.png",
+    "type": "file",
+    "size": 40055,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "fig11_scenario_comparison.png",
+    "path": "report/images/fig11_scenario_comparison.png",
+    "type": "file",
+    "size": 155289,
+    "mtime": 1776254244.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 21836,
+    "mtime": 1776254247.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6268,
+    "mtime": 1776195809.0,
+    "exported": true
+  }
+]

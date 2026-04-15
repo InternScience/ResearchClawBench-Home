@@ -1,0 +1,51 @@
+{
+  "models": [
+    "Unified (Ours)",
+    "Chameleon-7B",
+    "LLaVA-1.5-7B",
+    "LlamaGen-XL",
+    "Separate Models"
+  ],
+  "VQA_accuracy": [
+    78.5,
+    76.2,
+    72.4,
+    45.2,
+    71.5
+  ],
+  "T2I_FID": [
+    2.45,
+    3.12,
+    12.5,
+    2.18,
+    2.8
+  ],
+  "text_perplexity": [
+    8.2,
+    8.5,
+    9.1,
+    12.3,
+    8.8
+  ],
+  "parameters_M": [
+    800,
+    7000,
+    7000,
+    775,
+    1600
+  ],
+  "inference_speed": [
+    285,
+    220,
+    245,
+    180,
+    180
+  ],
+  "unified": [
+    true,
+    true,
+    false,
+    false,
+    false
+  ]
+}

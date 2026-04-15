@@ -1,0 +1,45 @@
+{
+  "mackay_sequence": [
+    1,
+    13,
+    55,
+    147,
+    309
+  ],
+  "new_sequence_b5": [
+    1,
+    13,
+    45,
+    117,
+    239,
+    431
+  ],
+  "num_atomic_species": 7,
+  "num_validated_clusters": 3,
+  "optimal_mismatch_ranges": {
+    "MC-MC": {
+      "min": 0.03,
+      "max": 0.05
+    },
+    "MC-Ch1": {
+      "min": 0.12,
+      "max": 0.16
+    },
+    "MC-Ch2": {
+      "min": 0.19,
+      "max": 0.22
+    },
+    "MC-BG": {
+      "min": 0.08,
+      "max": 0.1
+    }
+  },
+  "experimental_validation_rmse": 0.00441588043316392,
+  "path_selection_percentages": {
+    "Conservative path": 54.2,
+    "Mismatch-driven path": 20.8,
+    "Random path": 8.3,
+    "Reverse step": 16.7
+  },
+  "growth_simulation_runs": 3
+}

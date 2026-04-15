@@ -1,0 +1,31 @@
+{
+  "task": "Reconstruct a Local Distance Network generalized least-squares estimate of H0 from the provided minimal dataset and compare to the stated baseline 73.50 \u00b1 0.81 km s^-1 Mpc^-1.",
+  "named_methods": [
+    "covariance-weighted Local Distance Network consensus",
+    "generalized least squares",
+    "geometric anchors + primary indicators + secondary indicators + Hubble-flow combination"
+  ],
+  "primary_target_quantity": {
+    "name": "H0",
+    "units": "km s^-1 Mpc^-1"
+  },
+  "required_outputs": [
+    "consensus H0 estimate with uncertainty",
+    "variant analyses / sensitivity checks",
+    "comparison against early-universe CMB constraints",
+    "figures and exported tables supporting claims"
+  ],
+  "data_sources_in_workspace": [
+    "data/H0DN_MinimalDataset.txt"
+  ],
+  "expected_secondary_channels_present_in_minimal_data": [
+    "SNe Ia",
+    "SBF"
+  ],
+  "anchors_present_in_minimal_data": [
+    "N4258",
+    "LMC",
+    "MW"
+  ],
+  "notes": "Minimal dataset likely cannot reproduce full published network breadth, so report should clearly distinguish exact workspace-supported reconstruction from full-paper scope."
+}

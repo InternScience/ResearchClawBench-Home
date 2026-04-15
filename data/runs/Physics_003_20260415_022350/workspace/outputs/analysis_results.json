@@ -1,0 +1,62 @@
+{
+  "photon_energy_eV": 0.248,
+  "photon_energy_meV": 248.0,
+  "pump_wavelength_um": 5.0,
+  "dirac_point": {
+    "energy_eV": -0.3,
+    "kx_per_angstrom": -0.042713567839196
+  },
+  "replica_bands": [
+    {
+      "order": -1,
+      "energy_eV": -0.290713567839196,
+      "kx_per_angstrom": -0.046308724832214765,
+      "intensity": 0.49521670717091265,
+      "energy_offset_from_dirac_eV": 0.009286432160803992
+    },
+    {
+      "order": -1,
+      "energy_eV": -0.290713567839196,
+      "kx_per_angstrom": 0.046308724832214765,
+      "intensity": 0.4951316941393499,
+      "energy_offset_from_dirac_eV": 0.009286432160803992
+    },
+    {
+      "order": 1,
+      "energy_eV": 0.205286432160804,
+      "kx_per_angstrom": -0.03422818791946308,
+      "intensity": 0.5244272546110498,
+      "energy_offset_from_dirac_eV": 0.5052864321608039
+    },
+    {
+      "order": 1,
+      "energy_eV": 0.205286432160804,
+      "kx_per_angstrom": 0.03422818791946308,
+      "intensity": 0.5244228565426068,
+      "energy_offset_from_dirac_eV": 0.5052864321608039
+    }
+  ],
+  "polarization_analysis": {
+    "angles_deg": [
+      0.0,
+      30.0,
+      60.0,
+      90.0,
+      120.0,
+      150.0,
+      180.0
+    ],
+    "intensities": [
+      0.5058211223955432,
+      0.49684941462683996,
+      0.4967856820182386,
+      0.5058451334080547,
+      0.4968527213380256,
+      0.49674991595716733,
+      0.5057384656292272
+    ],
+    "mean_intensity": 0.5006632079104424,
+    "std_intensity": 0.004450177567812005,
+    "relative_variation": 0.888856520211496
+  }
+}

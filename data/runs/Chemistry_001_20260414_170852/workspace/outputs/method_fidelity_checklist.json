@@ -1,0 +1,25 @@
+{
+  "named_method": "unified diffusion-based biomolecular complex structure prediction",
+  "definition": "A single model that jointly encodes protein, nucleic-acid, and small-molecule inputs and iteratively denoises 3D coordinates or frames to produce a complex structure.",
+  "assumptions": [
+    "modality-specific tokenization is needed for proteins, nucleic acids, and ligands",
+    "3D prediction should be SE(3)-aware/equivariant or explicitly geometry-preserving",
+    "diffusion operates over noisy structural states with iterative denoising steps",
+    "cross-modal interaction pathways are required rather than independent monomer prediction"
+  ],
+  "non_negotiable_structural_steps": [
+    "separate modality encoders or token embeddings",
+    "cross-modal fusion / attention or graph message passing",
+    "diffusion noise schedule and denoising network",
+    "geometric structure output head",
+    "sample-level structural evaluation"
+  ],
+  "workspace_implementation_status": {
+    "separate_modality_design": true,
+    "cross_modal_fusion_design": true,
+    "explicit_diffusion_process_prototype": true,
+    "trained_unified_model": false,
+    "protein_nucleic_acid_small_molecule_joint_training": false,
+    "reason_unmet": "workspace contains one protein-ligand sample and related-work PDFs but no multimodal training corpus or deep learning runtime stack"
+  }
+}

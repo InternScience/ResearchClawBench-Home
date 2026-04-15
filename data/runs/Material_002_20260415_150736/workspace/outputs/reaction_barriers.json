@@ -1,0 +1,29 @@
+{
+  "barriers": {
+    "Rxn_1_cyclobutene": {
+      "name": "Cyclobutene Ring-Opening",
+      "formula": "C4H4",
+      "mace_barrier": -7.62939453125e-06,
+      "dft_reference": 1.72,
+      "error": -1.7200076293945312
+    },
+    "Rxn_11_methoxy": {
+      "name": "Methoxy Decomposition",
+      "formula": "CH3O",
+      "mace_barrier": 1.9073486328125e-06,
+      "dft_reference": 1.74,
+      "error": -1.7399980926513672
+    },
+    "Rxn_20_cyclopropane": {
+      "name": "Cyclopropane Ring-Opening",
+      "formula": "C3H6",
+      "mace_barrier": 0.0020294189453125,
+      "dft_reference": 1.77,
+      "error": -1.7679705810546875
+    }
+  },
+  "statistics": {
+    "mae": 1.7426587677001955,
+    "rmse": 1.7427697862005602
+  }
+}

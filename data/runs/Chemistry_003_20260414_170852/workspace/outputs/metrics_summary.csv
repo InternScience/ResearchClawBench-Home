@@ -1,0 +1,9 @@
+dataset,model,mae,rmse,r2,accuracy
+charged_dimer,local_only_energy,0.09474164228193167,0.1292242105177599,0.8847044868367332,
+charged_dimer,long_range_aware_energy,0.07856836322869035,0.10603137338110068,0.9223764671272378,
+charged_dimer,local_only_forces,0.6633761797082651,1.1225887315037617,,
+charged_dimer,long_range_aware_forces,0.6437668054332946,1.088364705003103,,
+ag3_chargestates,geom_only_energy,0.4080406026251152,0.4930155507807856,0.46918594259629176,
+ag3_chargestates,geom_plus_charge_state_energy,0.4153257862611131,0.5020184400294998,0.44962269264449484,
+ag3_chargestates,geometry_to_charge_state_classifier,,,,0.0
+random_charges,geometry_only_charge_guess,,,,0.507578125

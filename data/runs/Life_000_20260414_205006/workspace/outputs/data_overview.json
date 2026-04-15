@@ -1,0 +1,20 @@
+{
+  "training_n": 184,
+  "training_target": "Glass (kPa)_10s",
+  "training_target_summary": {
+    "min_kPa": 1.1889596602972399,
+    "median_kPa": 42.066525123849964,
+    "mean_kPa": 50.97736340605353,
+    "max_kPa": 304.60014154281674,
+    "n_ge_200_kPa": 3,
+    "n_ge_1000_kPa": 0
+  },
+  "optimization_ei_n": 120,
+  "optimization_pred_n": 90,
+  "optimization_max_summary": {
+    "ei_max_kPa": 321.18895966029726,
+    "pred_max_kPa": 353.2908704883227,
+    "overall_max_kPa": 353.2908704883227,
+    "n_ge_1000_kPa": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {"id": "fig_1_response_distribution", "description": "Distribution of per-cell immune response probabilities", "status": "completed", "path": "report/images/fig_1_response_distribution.png"},
+    {"id": "fig_2_coverage_curve", "description": "Tumor cell coverage curve based on response thresholds", "status": "completed", "path": "report/images/fig_2_coverage_curve.png"},
+    {"id": "fig_3_vaccine_composition", "description": "Optimal vaccine element selection and frequency analysis", "status": "completed", "path": "report/images/fig_3_vaccine_composition.png"},
+    {"id": "fig_4_mutation_analysis", "description": "Mutation-specific response contribution analysis", "status": "completed", "path": "report/images/fig_4_mutation_analysis.png"},
+    {"id": "fig_5_runtime_scaling", "description": "Optimization runtime vs population size", "status": "completed", "path": "report/images/fig_5_runtime_scaling.png"},
+    {"id": "fig_6_replicate_consistency", "description": "Consistency analysis across simulation replicates", "status": "completed", "path": "report/images/fig_6_replicate_consistency.png"}
+  ],
+  "tables": [
+    {"id": "table_1_vaccine_elements", "description": "Selected vaccine elements with frequencies and weights", "status": "completed", "path": "outputs/table_1_vaccine_elements.csv"},
+    {"id": "table_2_efficacy_metrics", "description": "Vaccine efficacy metrics summary", "status": "completed", "path": "outputs/table_2_efficacy_metrics.csv"},
+    {"id": "table_3_runtime_data", "description": "Optimization runtime across patient samples and population sizes", "status": "completed", "path": "outputs/table_3_runtime_summary.csv"}
+  ],
+  "quantitative_outputs": [
+    {"id": "mean_response_probability", "description": "Mean per-cell immune response probability", "value": 0.943, "status": "completed"},
+    {"id": "coverage_ratio", "description": "Ratio of tumor cells with response probability above threshold", "value": 0.992, "threshold": 0.5, "status": "completed"},
+    {"id": "iou_score", "description": "Intersection over Union of optimal vaccine compositions across replicates", "value": 1.0, "status": "completed"}
+  ]
+}

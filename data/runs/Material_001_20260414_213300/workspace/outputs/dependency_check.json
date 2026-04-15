@@ -1,0 +1,20 @@
+{
+  "python_packages": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "sklearn": true,
+    "scipy": true,
+    "PyPDF2": false,
+    "pdfplumber": false
+  },
+  "named_method_limitations": [
+    "No full multimodal deep-learning stack or crystal-graph toolkit was verified in the environment.",
+    "Related-work PDFs could not be parsed with the provided PDF reader and no local PDF parser library was installed, so related work can only be used at a coarse file-presence level in this run."
+  ],
+  "fallbacks": [
+    "Use faithful tabular surrogate analyses directly grounded in the provided synthetic dataset.",
+    "State clearly that results are proof-of-concept on compact synthetic data rather than a realistic multimodal benchmark."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "figures": [
+    "architecture_diagram.png",
+    "performance_comparison.png",
+    "ablation_studies.png",
+    "training_curves.png",
+    "token_efficiency.png"
+  ],
+  "tables": [
+    "main_results_table.json",
+    "ablation_results.json",
+    "model_configurations.json"
+  ],
+  "code": [
+    "unified_framework.py",
+    "dual_encoders.py",
+    "tokenizer.py",
+    "evaluation.py"
+  ],
+  "report": "report.md"
+}

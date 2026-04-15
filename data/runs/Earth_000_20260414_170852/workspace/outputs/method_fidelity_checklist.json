@@ -1,0 +1,21 @@
+{
+  "named_mechanism": "Observational reconciliation of multi-method glacier mass change estimates using GlaMBIE consensus products",
+  "definition": "Use the GlaMBIE published consensus regional/global annual calendar-year series as the reconciled benchmark, and use hydrological-year per-method outputs plus raw input coverage to diagnose cross-method agreement and coverage.",
+  "assumptions": [
+    "Published GlaMBIE result files faithfully represent the project's reconciliation pipeline.",
+    "Calendar-year consensus series are the correct basis for global 2000–2023 benchmarking.",
+    "Hydrological-year per-method columns are sufficient for method-agreement diagnostics even without rerunning the full combination algorithm."
+  ],
+  "non_negotiable_steps": [
+    "Load all 19 regional calendar-year result files and the global file.",
+    "Restrict the benchmark window to intervals fully contained within 2000–2023.",
+    "Report both Gt and m w.e. with uncertainties.",
+    "Preserve regional granularity in at least one exported table and one figure.",
+    "Provide explicit method-coverage and method-versus-consensus diagnostics."
+  ],
+  "implementation_status": {
+    "use_published_consensus_results": true,
+    "rerun_original_reconciliation_algorithm": false,
+    "deviation_note": "The original reconciliation algorithm is not reimplemented from raw inputs; instead, the published GlaMBIE consensus results are treated as the authoritative reconciled benchmark and are analyzed transparently."
+  }
+}

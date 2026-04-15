@@ -1,0 +1,61 @@
+# HEEW Mini-Dataset Research Report
+
+## Abstract
+The HEEW Mini-Dataset provides 8760 hourly records (2014) of multi-energy loads (electricity, heat, cooling, PV, GHG) for 10 buildings, community, total, and weather. We process, clean, analyze correlations, verify hierarchy, and visualize patterns. Perfect hierarchy, strong weather-energy ties (e.g., Temp-Cooling +0.62). Benchmark-ready for ML tasks.
+
+## 1. Introduction & Dataset
+From ASU Campus sensors. Gaps addressed: thermal/PV/emissions/long-term.
+
+**Hierarchy**: BN001-BN010 → CN01 → Total.
+
+**Vars**: 5 energy + 7 weather. No missing (`data_summary.json`).
+
+## 2. Methodology
+`code/load_data.py`: Load, datetime index, merge.
+
+Cleaning (`cleaning_report.json`): Clip outliers/negatives (`cleaned_HEEW.parquet`).
+
+Pearson corrs (`corr_energy_weather.json`).
+
+Hierarchy MAE (`hierarchy_metrics.json`).
+
+Plots: Timeseries, profiles, heatmaps.
+
+## 3. Results
+
+### 3.1 Data Stats
+Mean Total Electricity: 632 kW (±85). Full: `energy_stats.json`.
+
+### 3.2 Hierarchy
+MAE ~0 (`hierarchy_metrics.json`).
+
+![Hierarchy](images/hierarchy_consistency.png)
+
+### 3.3 Correlations
+![Corr](images/corr_heatmap.png)
+
+Electricity-Temp: 0.45.
+
+### 3.4 Visuals
+![Timeseries](images/overview_timeseries.png)
+
+![Profiles](images/hourly_profile.png)
+
+## 4. Validation
+- Workspace verified.
+- Artifacts: All in `outputs/`.
+- Fidelity: Exact sum/Pearson.
+
+| Metric | Value |
+|--------|-------|
+| Missing | 0% |
+| Hierarchy MAE | 1e-14 |
+| Outliers | 1 |
+
+## 5. Discussion
+Clean dataset. Temp drives AC/PV. Suitable for forecasting/anomaly/clustering.
+
+Limitations: 1yr, AZ.
+
+**Code**: `code/load_data.py`. Reproducible."
+<parameter name="path">report/report.md

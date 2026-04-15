@@ -1,0 +1,20 @@
+{
+  "task": "Cloud seeding US 2000-2025 analysis",
+  "data_source": "data/dataset1_cloud_seeding_records/cloud_seeding_us_2000_2025.csv",
+  "n_records": 832,
+  "fields": ["filename","project","year","season","state","operator_affiliation","agent","apparatus","purpose","target_area","control_area","start_date","end_date"],
+  "key_analyses": [
+    "spatial_concentration_by_state",
+    "annual_activity_dynamics",
+    "purpose_composition",
+    "agent_apparatus_deployment_patterns"
+  ],
+  "figures_planned": [
+    "fig1_spatial_concentration_map.png",
+    "fig2_annual_trends.png",
+    "fig3_purpose_composition.png",
+    "fig4_agent_apparatus_heatmap.png",
+    "fig5_seasonal_distribution.png",
+    "fig6_state_year_heatmap.png"
+  ]
+}

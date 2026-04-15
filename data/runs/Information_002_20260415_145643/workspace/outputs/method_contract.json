@@ -1,0 +1,42 @@
+{
+  "task": "Hartree-Fock multi-step analytic calculation for paper 2111.01152",
+  "paper": "Topological Phases in AB-Stacked MoTe2/WSe2 (Pan et al., arXiv:2111.01152)",
+  "methodology": {
+    "approach": "Structured prompt-based LLM evaluation of Hartree-Fock derivation steps",
+    "framework": "Multi-step chain-of-thought prompts for Hamiltonian construction",
+    "scoring_dimensions": [
+      "in_paper",
+      "prompt_quality",
+      "follow_instructions",
+      "physics_logic",
+      "math_derivation",
+      "final_answer_accuracy"
+    ],
+    "scoring_scale": "0-2 per dimension",
+    "evaluators": ["Haining", "Will", "Yasaman"]
+  },
+  "named_method": {
+    "hartree_fock_approximation": "Self-consistent mean-field decoupling of four-fermion interaction into quadratic terms via Wick's theorem",
+    "wicks_theorem": "Normal-ordering expansion preserving only bilinear contractions",
+    "particle_hole_transformation": "b_{k,l,tau} = c_{k,l,tau}^dagger mapping electron to hole basis",
+    "dual_gate_screened_coulomb": "V(q) = 2*pi*e^2*tanh(|q|*d)/(epsilon*|q|)"
+  },
+  "calculation_steps": [
+    "Construct Kinetic Hamiltonian",
+    "Define each term in Kinetic Hamiltonian",
+    "Construct Potential Hamiltonian",
+    "Define each term in Potential Hamiltonian",
+    "Convert single-particle to second-quantized form (matrix)",
+    "Convert single-particle to second-quantized form (summation)",
+    "Convert real space to momentum space",
+    "Particle-hole transformation",
+    "Simplify Hamiltonian in particle-hole basis",
+    "Construct interaction Hamiltonian",
+    "Wick's theorem expansion",
+    "Extract quadratic terms",
+    "Swap index to combine Hartree/Fock terms",
+    "Reduce momentum in Hartree term",
+    "Reduce momentum in Fock term",
+    "Combine Hartree and Fock terms"
+  ]
+}

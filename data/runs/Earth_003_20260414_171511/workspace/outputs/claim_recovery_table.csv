@@ -1,0 +1,5 @@
+claim,status,evidence_artifact,notes
+"The workspace provides only a sample-based analysis setting, not a full 15-day evaluation corpus.",verified,outputs/dataset_summary.json,Forecast file contains one 6-hour step at 1.0° resolution.
+Forecast perturbations relative to the latest input are large for most upper-air channels.,verified,outputs/channel_statistics.csv,Upper-air forecast-minus-latest std is ~14 for most normalized channels.
+Direct comparison to ECMWF ensemble mean is not possible from workspace data alone.,verified,memory.md,No ECMWF reference fields exist in workspace.
+The intended scientific framing is a cascade U-Transformer system to reduce error accumulation.,supported_by_related_work_and_task,outputs/method_contract.json; outputs/method_fidelity_checklist.json,The method is specified by task; full reproduction assets are absent.

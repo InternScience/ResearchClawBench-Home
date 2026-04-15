@@ -1,0 +1,21 @@
+{
+  "task": "Unified Autoregressive Framework for Multimodal Understanding and Generation",
+  "core_method": "Decoupled Visual Encoding with Unified Transformer",
+  "key_components": [
+    "Dual Visual Encoders: Understanding encoder (SigLIP-style) and Generation encoder (VQVAE-style)",
+    "Unified Tokenization: Discrete tokens for both images and text",
+    "Single Transformer: Shared architecture for both tasks",
+    "Task Routing: Task-specific input formatting"
+  ],
+  "named_baselines": [
+    "Chameleon (early-fusion)",
+    "LLaVA (understanding-focused)",
+    "LlamaGen (generation-focused)"
+  ],
+  "comparison_axes": [
+    "Task Performance (VQA vs T2I)",
+    "Parameter Efficiency",
+    "Training Stability",
+    "Inference Speed"
+  ]
+}

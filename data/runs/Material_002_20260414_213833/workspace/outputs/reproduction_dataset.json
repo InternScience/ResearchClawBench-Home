@@ -1,0 +1,27 @@
+{
+  "water": {
+    "num_molecules": 32,
+    "box_size_A": 12.0,
+    "temperature_K": 330.0,
+    "time_step_fs": 0.5,
+    "md_steps": 2000,
+    "friction_fs_inv": 0.01,
+    "density_g_cm3": 0.5539828934458453,
+    "sim_time_ps": 1.0,
+    "oh_bond_A": 0.9686,
+    "hh_distance_A": 1.5265
+  },
+  "metals": {
+    "Ni": 3.52,
+    "Cu": 3.61,
+    "Rh": 3.8,
+    "Pd": 3.89,
+    "Ir": 3.84,
+    "Pt": 3.92
+  },
+  "dft_barriers_eV": {
+    "Rxn 1": 1.72,
+    "Rxn 11": 1.74,
+    "Rxn 20": 1.77
+  }
+}

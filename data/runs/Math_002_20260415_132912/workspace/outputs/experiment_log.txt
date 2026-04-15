@@ -1,0 +1,232 @@
+============================================================
+MARL-LNS MAPF Experiments
+============================================================
+Available datasets: ['empty', 'maps_60_10_10_0.175', 'maze', 'random_large', 'random_medium', 'random_small', 'room', 'warehouse']
+
+--- Dataset: empty ---
+
+  Config 1/15: empty, 20 agents
+    Map 0: PP -> FAIL (2 collisions), SOC=359, time=0.05s
+    Map 0: LNS -> FAIL (2 collisions), SOC=360, time=1.52s
+    Map 0: MARL-LNS -> FAIL (2 collisions), SOC=359, time=3.51s
+    Map 1: PP -> FAIL (1 collisions), SOC=266, time=0.01s
+    Map 1: LNS -> FAIL (1 collisions), SOC=267, time=0.89s
+    Map 1: MARL-LNS -> FAIL (1 collisions), SOC=267, time=1.97s
+    Map 2: PP -> FAIL (2 collisions), SOC=225, time=0.01s
+    Map 2: LNS -> FAIL (2 collisions), SOC=225, time=1.68s
+    Map 2: MARL-LNS -> FAIL (2 collisions), SOC=225, time=2.40s
+    Map 3: PP -> FAIL (1 collisions), SOC=388, time=0.01s
+    Map 3: LNS -> FAIL (1 collisions), SOC=388, time=1.63s
+    Map 3: MARL-LNS -> FAIL (1 collisions), SOC=388, time=4.28s
+    Map 4: PP -> FAIL (1 collisions), SOC=298, time=0.01s
+    Map 4: LNS -> FAIL (1 collisions), SOC=298, time=2.35s
+    Map 4: MARL-LNS -> FAIL (1 collisions), SOC=299, time=3.32s
+
+  Config 2/15: empty, 40 agents
+    Map 0: PP -> FAIL (5 collisions), SOC=611, time=0.13s
+    Map 0: LNS -> FAIL (7 collisions), SOC=612, time=3.18s
+    Map 0: MARL-LNS -> FAIL (6 collisions), SOC=611, time=5.16s
+    Map 1: PP -> FAIL (11 collisions), SOC=695, time=0.25s
+    Map 1: LNS -> FAIL (13 collisions), SOC=693, time=7.91s
+    Map 1: MARL-LNS -> FAIL (13 collisions), SOC=695, time=10.02s
+    Map 2: PP -> FAIL (7 collisions), SOC=676, time=0.05s
+    Map 2: LNS -> FAIL (9 collisions), SOC=675, time=6.16s
+    Map 2: MARL-LNS -> FAIL (7 collisions), SOC=677, time=7.60s
+    Map 3: PP -> FAIL (12 collisions), SOC=734, time=0.05s
+    Map 3: LNS -> FAIL (12 collisions), SOC=735, time=8.94s
+    Map 3: MARL-LNS -> FAIL (12 collisions), SOC=734, time=10.01s
+    Map 4: PP -> FAIL (11 collisions), SOC=771, time=0.03s
+    Map 4: LNS -> FAIL (11 collisions), SOC=771, time=7.80s
+    Map 4: MARL-LNS -> FAIL (11 collisions), SOC=772, time=10.01s
+
+--- Dataset: maps_60_10_10_0.175 ---
+
+  Config 3/15: maps_60_10_10_0.175, 10 agents
+    Map 0: PP -> FAIL (2 collisions), SOC=73, time=0.00s
+    Map 0: LNS -> FAIL (2 collisions), SOC=73, time=0.53s
+    Map 0: MARL-LNS -> FAIL (2 collisions), SOC=73, time=0.77s
+    Map 1: PP -> FAIL (1 collisions), SOC=70, time=0.01s
+    Map 1: LNS -> FAIL (4 collisions), SOC=73, time=0.28s
+    Map 1: MARL-LNS -> FAIL (1 collisions), SOC=71, time=0.48s
+    Map 2: PP -> SUCCESS, SOC=84, time=0.00s
+    Map 2: LNS -> SUCCESS, SOC=84, time=0.00s
+    Map 2: MARL-LNS -> SUCCESS, SOC=84, time=0.00s
+    Map 3: PP -> FAIL (2 collisions), SOC=61, time=0.01s
+    Map 3: LNS -> FAIL (5 collisions), SOC=62, time=0.33s
+    Map 3: MARL-LNS -> FAIL (2 collisions), SOC=61, time=0.50s
+    Map 4: PP -> FAIL (1 collisions), SOC=74, time=0.00s
+    Map 4: LNS -> FAIL (1 collisions), SOC=74, time=0.37s
+    Map 4: MARL-LNS -> FAIL (1 collisions), SOC=75, time=0.64s
+
+  Config 4/15: maps_60_10_10_0.175, 20 agents
+    Map 0: PP -> FAIL (5 collisions), SOC=120, time=0.02s
+    Map 0: LNS -> FAIL (6 collisions), SOC=119, time=0.64s
+    Map 0: MARL-LNS -> FAIL (5 collisions), SOC=119, time=0.89s
+    Map 1: PP -> FAIL (7 collisions), SOC=135, time=0.02s
+    Map 1: LNS -> FAIL (9 collisions), SOC=138, time=0.95s
+    Map 1: MARL-LNS -> FAIL (7 collisions), SOC=135, time=1.23s
+    Map 2: PP -> FAIL (8 collisions), SOC=204, time=0.03s
+    Map 2: LNS -> FAIL (9 collisions), SOC=209, time=1.40s
+    Map 2: MARL-LNS -> FAIL (9 collisions), SOC=221, time=2.10s
+    Map 3: PP -> FAIL (7 collisions), SOC=136, time=0.00s
+    Map 3: LNS -> FAIL (10 collisions), SOC=138, time=0.88s
+    Map 3: MARL-LNS -> FAIL (8 collisions), SOC=134, time=1.24s
+    Map 4: PP -> FAIL (6 collisions), SOC=162, time=0.02s
+    Map 4: LNS -> FAIL (8 collisions), SOC=156, time=0.85s
+    Map 4: MARL-LNS -> FAIL (7 collisions), SOC=159, time=1.22s
+
+--- Dataset: maze ---
+
+  Config 5/15: maze, 10 agents
+    Map 0: PP -> FAIL (2 collisions), SOC=209, time=0.03s
+    Map 0: LNS -> FAIL (2 collisions), SOC=209, time=4.16s
+    Map 0: MARL-LNS -> FAIL (2 collisions), SOC=209, time=6.16s
+    Map 1: PP -> FAIL (2 collisions), SOC=228, time=0.01s
+    Map 1: LNS -> FAIL (2 collisions), SOC=228, time=2.40s
+    Map 1: MARL-LNS -> FAIL (2 collisions), SOC=228, time=4.71s
+    Map 2: PP -> SUCCESS, SOC=134, time=0.00s
+    Map 2: LNS -> SUCCESS, SOC=134, time=0.00s
+    Map 2: MARL-LNS -> SUCCESS, SOC=134, time=0.00s
+    Map 3: PP -> FAIL (1 collisions), SOC=245, time=0.11s
+    Map 3: LNS -> FAIL (1 collisions), SOC=246, time=1.87s
+    Map 3: MARL-LNS -> FAIL (1 collisions), SOC=246, time=3.99s
+    Map 4: PP -> SUCCESS, SOC=208, time=0.01s
+    Map 4: LNS -> SUCCESS, SOC=208, time=0.01s
+    Map 4: MARL-LNS -> SUCCESS, SOC=208, time=0.01s
+
+  Config 6/15: maze, 20 agents
+    Map 0: PP -> FAIL (2 collisions), SOC=466, time=0.25s
+    Map 0: LNS -> FAIL (5 collisions), SOC=459, time=7.68s
+    Map 0: MARL-LNS -> FAIL (2 collisions), SOC=464, time=9.15s
+    Map 1: PP -> FAIL (7 collisions), SOC=441, time=0.18s
+    Map 1: LNS -> FAIL (8 collisions), SOC=441, time=10.01s
+    Map 1: MARL-LNS -> FAIL (7 collisions), SOC=441, time=10.01s
+    Map 2: PP -> FAIL (2 collisions), SOC=415, time=0.03s
+    Map 2: LNS -> FAIL (3 collisions), SOC=418, time=8.95s
+    Map 2: MARL-LNS -> FAIL (3 collisions), SOC=415, time=10.01s
+    Map 3: PP -> FAIL (6 collisions), SOC=476, time=0.04s
+    Map 3: LNS -> FAIL (6 collisions), SOC=477, time=5.10s
+    Map 3: MARL-LNS -> FAIL (6 collisions), SOC=477, time=7.29s
+    Map 4: PP -> FAIL (5 collisions), SOC=395, time=0.08s
+    Map 4: LNS -> FAIL (7 collisions), SOC=392, time=3.94s
+    Map 4: MARL-LNS -> FAIL (4 collisions), SOC=396, time=7.71s
+
+--- Dataset: random_large ---
+
+  Config 7/15: random_large, 50 agents
+    Map 0: PP -> FAIL (10 collisions), SOC=1903, time=0.20s
+    Map 0: LNS -> FAIL (10 collisions), SOC=1906, time=10.07s
+    Map 0: MARL-LNS -> FAIL (10 collisions), SOC=1903, time=10.03s
+    Map 1: PP -> FAIL (10 collisions), SOC=1648, time=0.49s
+    Map 1: LNS -> FAIL (12 collisions), SOC=1649, time=10.02s
+    Map 1: MARL-LNS -> FAIL (12 collisions), SOC=1649, time=10.05s
+    Map 2: PP -> FAIL (11 collisions), SOC=1353, time=0.55s
+    Map 2: LNS -> FAIL (13 collisions), SOC=1352, time=10.02s
+    Map 2: MARL-LNS -> FAIL (12 collisions), SOC=1355, time=10.03s
+    Map 3: PP -> FAIL (15 collisions), SOC=1680, time=0.75s
+    Map 3: LNS -> FAIL (15 collisions), SOC=1681, time=10.03s
+    Map 3: MARL-LNS -> FAIL (17 collisions), SOC=1684, time=10.01s
+    Map 4: PP -> FAIL (9 collisions), SOC=1759, time=0.61s
+    Map 4: LNS -> FAIL (9 collisions), SOC=1753, time=10.00s
+    Map 4: MARL-LNS -> FAIL (9 collisions), SOC=1754, time=10.02s
+
+--- Dataset: random_medium ---
+
+  Config 8/15: random_medium, 20 agents
+    Map 0: PP -> SUCCESS, SOC=317, time=0.01s
+    Map 0: LNS -> SUCCESS, SOC=317, time=0.01s
+    Map 0: MARL-LNS -> SUCCESS, SOC=317, time=0.01s
+    Map 1: PP -> FAIL (4 collisions), SOC=368, time=0.11s
+    Map 1: LNS -> FAIL (4 collisions), SOC=369, time=2.74s
+    Map 1: MARL-LNS -> FAIL (5 collisions), SOC=369, time=3.86s
+    Map 2: PP -> FAIL (3 collisions), SOC=371, time=0.09s
+    Map 2: LNS -> FAIL (4 collisions), SOC=368, time=1.99s
+    Map 2: MARL-LNS -> FAIL (4 collisions), SOC=369, time=3.17s
+    Map 3: PP -> SUCCESS, SOC=409, time=0.03s
+    Map 3: LNS -> SUCCESS, SOC=409, time=0.05s
+    Map 3: MARL-LNS -> SUCCESS, SOC=409, time=0.05s
+    Map 4: PP -> FAIL (4 collisions), SOC=262, time=0.01s
+    Map 4: LNS -> FAIL (4 collisions), SOC=265, time=2.34s
+    Map 4: MARL-LNS -> FAIL (4 collisions), SOC=262, time=2.96s
+
+  Config 9/15: random_medium, 40 agents
+    Map 0: PP -> FAIL (13 collisions), SOC=715, time=0.41s
+    Map 0: LNS -> FAIL (15 collisions), SOC=719, time=10.01s
+    Map 0: MARL-LNS -> FAIL (15 collisions), SOC=716, time=10.01s
+    Map 1: PP -> FAIL (11 collisions), SOC=790, time=0.08s
+    Map 1: LNS -> FAIL (10 collisions), SOC=793, time=7.26s
+    Map 1: MARL-LNS -> FAIL (12 collisions), SOC=793, time=10.00s
+    Map 2: PP -> FAIL (12 collisions), SOC=606, time=0.09s
+    Map 2: LNS -> FAIL (14 collisions), SOC=604, time=5.96s
+    Map 2: MARL-LNS -> FAIL (14 collisions), SOC=603, time=8.28s
+    Map 3: PP -> FAIL (15 collisions), SOC=717, time=0.16s
+    Map 3: LNS -> FAIL (17 collisions), SOC=714, time=7.64s
+    Map 3: MARL-LNS -> FAIL (17 collisions), SOC=718, time=10.01s
+    Map 4: PP -> FAIL (11 collisions), SOC=543, time=0.15s
+    Map 4: LNS -> FAIL (13 collisions), SOC=544, time=5.32s
+    Map 4: MARL-LNS -> FAIL (13 collisions), SOC=545, time=10.01s
+
+--- Dataset: random_small ---
+
+  Config 10/15: random_small, 10 agents
+    Map 0: PP -> FAIL (2 collisions), SOC=73, time=0.00s
+    Map 0: LNS -> FAIL (2 collisions), SOC=73, time=0.53s
+    Map 0: MARL-LNS -> FAIL (2 collisions), SOC=73, time=0.78s
+    Map 1: PP -> FAIL (1 collisions), SOC=80, time=0.01s
+    Map 1: LNS -> SUCCESS, SOC=84, time=0.26s
+    Map 1: MARL-LNS -> SUCCESS, SOC=82, time=0.51s
+    Map 2: PP -> FAIL (2 collisions), SOC=62, time=0.00s
+    Map 2: LNS -> FAIL (2 collisions), SOC=62, time=0.24s
+    Map 2: MARL-LNS -> FAIL (2 collisions), SOC=63, time=0.48s
+    Map 3: PP -> FAIL (2 collisions), SOC=68, time=0.01s
+    Map 3: LNS -> FAIL (3 collisions), SOC=67, time=0.49s
+    Map 3: MARL-LNS -> FAIL (3 collisions), SOC=66, time=0.69s
+    Map 4: PP -> FAIL (2 collisions), SOC=90, time=0.01s
+    Map 4: LNS -> FAIL (1 collisions), SOC=92, time=0.68s
+    Map 4: MARL-LNS -> FAIL (1 collisions), SOC=92, time=0.97s
+
+  Config 11/15: random_small, 20 agents
+    Map 0: PP -> FAIL (5 collisions), SOC=120, time=0.02s
+    Map 0: LNS -> FAIL (6 collisions), SOC=119, time=0.64s
+    Map 0: MARL-LNS -> FAIL (5 collisions), SOC=119, time=0.89s
+    Map 1: PP -> FAIL (6 collisions), SOC=163, time=0.03s
+    Map 1: LNS -> FAIL (7 collisions), SOC=162, time=1.25s
+    Map 1: MARL-LNS -> FAIL (7 collisions), SOC=166, time=1.74s
+    Map 2: PP -> FAIL (3 collisions), SOC=151, time=0.01s
+    Map 2: LNS -> FAIL (3 collisions), SOC=151, time=0.51s
+    Map 2: MARL-LNS -> FAIL (3 collisions), SOC=159, time=0.84s
+    Map 3: PP -> FAIL (8 collisions), SOC=208, time=0.06s
+    Map 3: LNS -> FAIL (10 collisions), SOC=201, time=2.09s
+    Map 3: MARL-LNS -> FAIL (9 collisions), SOC=209, time=3.36s
+    Map 4: PP -> FAIL (4 collisions), SOC=108, time=0.00s
+    Map 4: LNS -> FAIL (5 collisions), SOC=109, time=0.47s
+    Map 4: MARL-LNS -> FAIL (4 collisions), SOC=109, time=0.77s
+
+--- Dataset: room ---
+
+  Config 12/15: room, 15 agents
+    Map 0: PP -> FAIL (4 collisions), SOC=298, time=0.06s
+    Map 0: LNS -> FAIL (4 collisions), SOC=298, time=10.00s
+    Map 0: MARL-LNS -> FAIL (4 collisions), SOC=298, time=10.02s
+    Map 1: PP -> FAIL (1 collisions), SOC=435, time=0.26s
+    Map 1: LNS -> FAIL (2 collisions), SOC=437, time=8.74s
+    Map 1: MARL-LNS -> FAIL (2 collisions), SOC=437, time=10.01s
+    Map 2: PP -> FAIL (2 collisions), SOC=269, time=0.02s
+    Map 2: LNS -> FAIL (2 collisions), SOC=270, time=5.90s
+    Map 2: MARL-LNS -> FAIL (2 collisions), SOC=270, time=6.96s
+    Map 3: PP -> FAIL (3 collisions), SOC=326, time=0.16s
+    Map 3: LNS -> FAIL (3 collisions), SOC=329, time=10.03s
+    Map 3: MARL-LNS -> FAIL (3 collisions), SOC=327, time=10.02s
+    Map 4: PP -> FAIL (6 collisions), SOC=340, time=0.18s
+    Map 4: LNS -> FAIL (6 collisions), SOC=340, time=10.04s
+    Map 4: MARL-LNS -> FAIL (7 collisions), SOC=337, time=10.03s
+
+  Config 13/15: room, 30 agents
+    Map 0: PP -> FAIL (11 collisions), SOC=699, time=0.97s
+    Map 0: LNS -> FAIL (12 collisions), SOC=685, time=10.01s
+    Map 0: MARL-LNS -> FAIL (15 collisions), SOC=679, time=10.07s
+    Map 1: PP -> FAIL (14 collisions), SOC=756, time=0.73s
+    Map 1: LNS -> FAIL (14 collisions), SOC=777, time=10.10s
+    Map 1: MARL-LNS -> FAIL (17 collisions), SOC=766, time=10.05s
+    Map 2: PP -> FAIL (3 collisions), SOC=848, time=1.76s
+    Map 2: LNS -> FAIL (5 collisions), SOC=882, time=10.02s
