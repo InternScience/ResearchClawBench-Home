@@ -1,0 +1,730 @@
+{
+  "angle_bisector": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c x",
+      "x : eqangle b a b x b x b c"
+    ],
+    "construction_method": null
+  },
+  "bisect": {
+    "signature": "b a c, exbisect b c a",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "angle_mirror": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c x",
+      "x : eqangle b a b c b c b x"
+    ],
+    "construction_method": null
+  },
+  "amirror": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "circle": {
+    "signature": "o o a",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "bline": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "circumcenter": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c",
+      "x : cong x a x b, cong x b x c"
+    ],
+    "construction_method": null
+  },
+  "eq_quadrangle": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "d : a b c d",
+      "a : ; b : ; c : ; d : cong d a b c"
+    ],
+    "construction_method": "eq_quadrangle"
+  },
+  "eq_trapezoid": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "d : a b c",
+      "a : ; b : ; c : ; d : para d c a b, cong d a b c"
+    ],
+    "construction_method": "eq_trapezoid"
+  },
+  "eq_triangle": {
+    "signature": "x b c",
+    "conditions": [
+      "b c = diff b c"
+    ],
+    "properties": [
+      "x : b c",
+      "x : cong x b b c, cong b c c x; eqangle b x b c c b c x, eqangle x c x b b x b c"
+    ],
+    "construction_method": null
+  },
+  "eqangle2": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "eqdia_quadrangle": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "d : a b c d",
+      "a : ; b : ; c : ; d : cong d b a c"
+    ],
+    "construction_method": "eqdia_quadrangle"
+  },
+  "eqdistance": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = diff b c"
+    ],
+    "properties": [
+      "x : a b c x",
+      "x : cong x a b c"
+    ],
+    "construction_method": null
+  },
+  "foot": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c",
+      "x : perp x a b c, coll x b c"
+    ],
+    "construction_method": null
+  },
+  "tline": {
+    "signature": "a b c, tline b c a",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "free": {
+    "signature": "a",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "a : a",
+      "a :"
+    ],
+    "construction_method": "free"
+  },
+  "incenter": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c",
+      "x : eqangle a b a x a x a c, eqangle c a c x c x c b; eqangle b c b x b x b a"
+    ],
+    "construction_method": null
+  },
+  "incenter2": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "excenter": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c",
+      "x : eqangle a b a x a x a c, eqangle c a c x c x c b; eqangle b c b x b x b a"
+    ],
+    "construction_method": null
+  },
+  "excenter2": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "centroid": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "ninepoints": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "intersection_cc": {
+    "signature": "x o w a",
+    "conditions": [
+      "o w a = ncoll o w a"
+    ],
+    "properties": [
+      "x : o w a",
+      "x : cong o a o x, cong w a w x"
+    ],
+    "construction_method": null
+  },
+  "intersection_lc": {
+    "signature": "x a o b",
+    "conditions": [
+      "a o b = diff a b, diff o b, nperp b o b a"
+    ],
+    "properties": [
+      "x : a o b",
+      "x : coll x a b, cong o b o x"
+    ],
+    "construction_method": null
+  },
+  "line": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "intersection_ll": {
+    "signature": "x a b c d",
+    "conditions": [
+      "a b c d = npara a b c d, ncoll a b c d"
+    ],
+    "properties": [
+      "x : a b c d",
+      "x : coll x a b, coll x c d"
+    ],
+    "construction_method": null
+  },
+  "intersection_lp": {
+    "signature": "x a b c m n",
+    "conditions": [
+      "a b c m n = npara m n a b, ncoll a b c, ncoll c m n"
+    ],
+    "properties": [
+      "x : a b c m n",
+      "x : coll x a b, para c x m n"
+    ],
+    "construction_method": null
+  },
+  "intersection_lt": {
+    "signature": "x a b c d e",
+    "conditions": [
+      "a b c d e = ncoll a b c, nperp a b d e"
+    ],
+    "properties": [
+      "x : a b c d e",
+      "x : coll x a b, perp x c d e"
+    ],
+    "construction_method": null
+  },
+  "intersection_pp": {
+    "signature": "x a b c d e f",
+    "conditions": [
+      "a b c d e f = diff a d, npara b c e f"
+    ],
+    "properties": [
+      "x : a b c d e f",
+      "x : para x a b c, para x d e f"
+    ],
+    "construction_method": null
+  },
+  "pline": {
+    "signature": "a b c, pline c a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "intersection_tt": {
+    "signature": "x a b c d e f",
+    "conditions": [
+      "a b c d e f = diff a d, npara b c e f"
+    ],
+    "properties": [
+      "x : a b c d e f",
+      "x : perp x a b c, perp x d e f"
+    ],
+    "construction_method": null
+  },
+  "iso_triangle": {
+    "signature": "a b c",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "c : a b c",
+      "a : ; b : ; c : eqangle b a b c c b c a, cong a b a c"
+    ],
+    "construction_method": "isos"
+  },
+  "lc_tangent": {
+    "signature": "x a o",
+    "conditions": [
+      "a o = diff a o"
+    ],
+    "properties": [
+      "x : x a o",
+      "x : perp a x a o"
+    ],
+    "construction_method": null
+  },
+  "midpoint": {
+    "signature": "x a b",
+    "conditions": [
+      "a b = diff a b"
+    ],
+    "properties": [
+      "x : a b",
+      "x : coll x a b, cong x a x b"
+    ],
+    "construction_method": null
+  },
+  "midp": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "mirror": {
+    "signature": "x a b",
+    "conditions": [
+      "a b = diff a b"
+    ],
+    "properties": [
+      "x : a b",
+      "x : coll x a b, cong b a b x"
+    ],
+    "construction_method": null
+  },
+  "pmirror": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "nsquare": {
+    "signature": "x a b",
+    "conditions": [
+      "a b = diff a b"
+    ],
+    "properties": [
+      "x : a b",
+      "x : cong x a a b, perp x a a b"
+    ],
+    "construction_method": null
+  },
+  "rotaten90": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "on_aline": {
+    "signature": "x a b c d e",
+    "conditions": [
+      "a b c d e = ncoll c d e"
+    ],
+    "properties": [
+      "x : x a b c d e",
+      "x : eqangle a x a b d c d e"
+    ],
+    "construction_method": null
+  },
+  "aline": {
+    "signature": "e d c b a",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "on_aline2": {
+    "signature": "x a b c d e",
+    "conditions": [
+      "a b c d e = ncoll c d e"
+    ],
+    "properties": [
+      "x : x a b c d e",
+      "x : eqangle x a x b d c d e"
+    ],
+    "construction_method": null
+  },
+  "aline2": {
+    "signature": "e d c b a",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "on_bline": {
+    "signature": "x a b",
+    "conditions": [
+      "a b = diff a b"
+    ],
+    "properties": [
+      "x : x a b",
+      "x : cong x a x b, eqangle a x a b b a b x"
+    ],
+    "construction_method": null
+  },
+  "on_circle": {
+    "signature": "x o a",
+    "conditions": [
+      "o a = diff o a"
+    ],
+    "properties": [
+      "x : x o a",
+      "x : cong o x o a"
+    ],
+    "construction_method": null
+  },
+  "on_line": {
+    "signature": "x a b",
+    "conditions": [
+      "a b = diff a b"
+    ],
+    "properties": [
+      "x : x a b",
+      "x : coll x a b"
+    ],
+    "construction_method": null
+  },
+  "on_pline": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = diff b c, ncoll a b c"
+    ],
+    "properties": [
+      "x : x a b c",
+      "x : para x a b c"
+    ],
+    "construction_method": null
+  },
+  "on_tline": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = diff b c"
+    ],
+    "properties": [
+      "x : x a b c",
+      "x : perp x a b c"
+    ],
+    "construction_method": null
+  },
+  "orthocenter": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c",
+      "x : perp x a b c, perp x b c a; perp x c a b"
+    ],
+    "construction_method": null
+  },
+  "parallelogram": {
+    "signature": "a b c x",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c",
+      "x : para a b c x, para a x b c; cong a b c x, cong a x b c"
+    ],
+    "construction_method": null
+  },
+  "pentagon": {
+    "signature": "a b c d e",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "a : ; b : ; c : ; d : ; e :"
+    ],
+    "construction_method": "pentagon"
+  },
+  "psquare": {
+    "signature": "x a b",
+    "conditions": [
+      "a b = diff a b"
+    ],
+    "properties": [
+      "x : a b",
+      "x : cong x a a b, perp x a a b"
+    ],
+    "construction_method": null
+  },
+  "rotatep90": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "quadrangle": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "a : ; b : ; c : ; d :"
+    ],
+    "construction_method": "quadrangle"
+  },
+  "r_trapezoid": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "d : a b c",
+      "a : ; b : ; c : ; d : para a b c d, perp a b a d"
+    ],
+    "construction_method": "r_trapezoid"
+  },
+  "r_triangle": {
+    "signature": "a b c",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "c : a b c",
+      "a : ; b : ; c : perp a b a c"
+    ],
+    "construction_method": "r_triangle"
+  },
+  "rectangle": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "c : a b c , d : a b c",
+      "a : ; b : ; c : perp a b b c ; d : para a b c d, para a d b c; perp a b a d, cong a b c d, cong a d b c, cong a c b d"
+    ],
+    "construction_method": "rectangle"
+  },
+  "reflect": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "risos": {
+    "signature": "a b c",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "c : a b",
+      "a : ; b : ; c : perp a b a c, cong a b a c; eqangle b a b c c b c a"
+    ],
+    "construction_method": "risos"
+  },
+  "s_angle": {
+    "signature": "a b y",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "segment": {
+    "signature": "a b",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "a : ; b :"
+    ],
+    "construction_method": "segment"
+  },
+  "shift": {
+    "signature": "d c b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "square": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "isquare": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "c : a b , d : a b c",
+      "a : ; b : ; c : perp a b b c, cong a b b c; d : para a b c d, para a d b c; perp a d d c, cong b c c d, cong c d d a, perp a c b d, cong a c b d"
+    ],
+    "construction_method": "isquare"
+  },
+  "trapezoid": {
+    "signature": "a b c d",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "d : a b c d",
+      "a : ; b : ; c : ; d : para a b c d"
+    ],
+    "construction_method": "trapezoid"
+  },
+  "triangle": {
+    "signature": "a b c",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "a : ; b : ; c :"
+    ],
+    "construction_method": "triangle"
+  },
+  "triangle12": {
+    "signature": "a b c",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "c : a b c",
+      "a : ; b : ; c : rconst a b a c 1 2"
+    ],
+    "construction_method": "triangle12"
+  },
+  "2l1c": {
+    "signature": "a b c o",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "e5128": {
+    "signature": "a b c d",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "3peq": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "trisect": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "trisegment": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "on_dia": {
+    "signature": "x a b",
+    "conditions": [
+      "a b = diff a b"
+    ],
+    "properties": [
+      "x : x a b",
+      "x : perp x a x b"
+    ],
+    "construction_method": null
+  },
+  "dia": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "ieq_triangle": {
+    "signature": "a b c",
+    "conditions": [
+      "="
+    ],
+    "properties": [
+      "c : a b",
+      "a : ; b : ; c : cong a b b c, cong b c c a; eqangle a b a c c a c b, eqangle c a c b b c b a"
+    ],
+    "construction_method": "ieq_triangle"
+  },
+  "on_opline": {
+    "signature": "a b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "cc_tangent0": {
+    "signature": "o a w b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "cc_tangent": {
+    "signature": "o a w b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "eqangle3": {
+    "signature": "a b d e f",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "tangent": {
+    "signature": "a o b",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  },
+  "on_circum": {
+    "signature": "x a b c",
+    "conditions": [
+      "a b c = ncoll a b c"
+    ],
+    "properties": [
+      "x : a b c",
+      "x : cyclic a b c x"
+    ],
+    "construction_method": null
+  },
+  "cyclic": {
+    "signature": "a b c",
+    "conditions": [],
+    "properties": [],
+    "construction_method": null
+  }
+}

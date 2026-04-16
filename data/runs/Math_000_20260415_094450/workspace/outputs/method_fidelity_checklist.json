@@ -1,0 +1,47 @@
+{
+  "SparseTrack_fidelity_checklist": {
+    "named_mechanism": "Pseudo-depth hierarchical association",
+    "definition": "Decompose dense target sets into sparse subsets via pseudo-depth estimation, then perform hierarchical association within each depth layer, processing closer objects first",
+    "key_structural_ingredients": {
+      "pseudo_depth_estimation": {
+        "implemented": true,
+        "method": "Log-area based depth estimation from bounding box size",
+        "notes": "Uses -log(area+1) as depth proxy; larger boxes = closer = smaller depth value"
+      },
+      "depth_layer_assignment": {
+        "implemented": true,
+        "method": "Quantile-based assignment into N depth layers",
+        "notes": "Equal-sized layers based on depth value distribution"
+      },
+      "hierarchical_association": {
+        "implemented": true,
+        "method": "Process layers from closest (0) to farthest (N-1), with BYTE-style two-stage matching within each layer",
+        "notes": "Within each layer: first match high-score dets, then match unmatched tracks with low-score dets"
+      },
+      "cross_layer_rescue": {
+        "implemented": true,
+        "method": "After hierarchical matching, attempt to match remaining unmatched trackers with unmatched detections from any layer",
+        "notes": "Prevents excessive fragmentation from strict depth-layer constraints"
+      },
+      "overlap_threshold": {
+        "implemented": true,
+        "method": "Parameter controlling occlusion sensitivity",
+        "notes": "In current implementation, overlap threshold affects filtering but not the core hierarchical process"
+      }
+    },
+    "deviations": [
+      {
+        "aspect": "Depth estimation model",
+        "original": "Would ideally use learned depth or multi-cue depth estimation",
+        "implemented": "Simple log-area heuristic",
+        "reason": "No image data available; only bounding box coordinates provided"
+      },
+      {
+        "aspect": "Appearance features",
+        "original": "SparseTrack paper may use Re-ID features",
+        "implemented": "IoU-only matching (no appearance)",
+        "reason": "No appearance features in dataset; consistent with SORT/ByteTrack comparison"
+      }
+    ]
+  }
+}

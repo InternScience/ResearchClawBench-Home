@@ -1,0 +1,13 @@
+{
+  "numpy": "available",
+  "matplotlib": "available",
+  "scipy": "available (curve_fit used in transport figure)",
+  "json": "available (standard library)",
+  "re": "available (standard library)",
+  "limitations": [
+    "No amplitude data available for N=48, N=56 XEB computations",
+    "No amplitude data for N=56 depth scan XEB computations",
+    "MB fidelity computed as raw survival probability (not normalized like XEB)",
+    "Gate-count model uses default Sycamore error rates (e_1q=0.16%, e_2q=0.62%, e_readout=1.8%)"
+  ]
+}

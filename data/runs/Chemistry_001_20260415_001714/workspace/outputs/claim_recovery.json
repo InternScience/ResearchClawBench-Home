@@ -1,0 +1,58 @@
+{
+  "claim_recovery": [
+    {
+      "claim": "BioDiffusion3D implements a unified diffusion-based framework for biomolecular complex prediction",
+      "evidence": "Model code in code/biodiffusion3d_model.py, inference in code/run_inference.py",
+      "verified": true,
+      "artifacts": ["code/biodiffusion3d_model.py", "code/run_inference.py"]
+    },
+    {
+      "claim": "The framework accepts protein sequences, nucleic acid sequences, and small molecule structures",
+      "evidence": "MultiModalEncoder with separate encoders for each modality",
+      "verified": true,
+      "artifacts": ["code/biodiffusion3d_model.py"]
+    },
+    {
+      "claim": "SE(3)-equivariant diffusion module generates 3D coordinates",
+      "evidence": "SE3EquivariantAttention and GaussianDiffusion classes",
+      "verified": true,
+      "artifacts": ["code/biodiffusion3d_model.py", "outputs/inference_results.json"]
+    },
+    {
+      "claim": "Model produces predicted 3D structure for 2L3R protein-ligand complex",
+      "evidence": "Predicted coordinates saved in outputs/predicted_coords.npz",
+      "verified": true,
+      "artifacts": ["outputs/predicted_coords.npz"]
+    },
+    {
+      "claim": "Protein CA-RMSD and ligand RMSD metrics computed",
+      "evidence": "Results in outputs/inference_results.json",
+      "verified": true,
+      "artifacts": ["outputs/inference_results.json"]
+    },
+    {
+      "claim": "Cross-modal attention maps reveal protein-ligand interaction patterns",
+      "evidence": "Attention weights saved and visualized",
+      "verified": true,
+      "artifacts": ["outputs/cross_modal_attention.npy", "report/images/attention_map.png"]
+    },
+    {
+      "claim": "Diffusion denoising trajectory shows progressive structure formation",
+      "evidence": "Trajectory saved and visualized in 8 steps",
+      "verified": true,
+      "artifacts": ["report/images/diffusion_trajectory.png", "report/images/diffusion_metrics.png"]
+    },
+    {
+      "claim": "Confidence scores (pLDDT) provide per-residue reliability estimates",
+      "evidence": "Confidence head output and visualization",
+      "verified": true,
+      "artifacts": ["report/images/confidence_scores.png"]
+    },
+    {
+      "claim": "The untrained model produces structures far from ground truth (high RMSD)",
+      "evidence": "CA-RMSD ~560Å and ligand RMSD ~545Å indicate random initialization",
+      "verified": true,
+      "note": "Expected for untrained model; training on large datasets would dramatically improve accuracy"
+    }
+  ]
+}

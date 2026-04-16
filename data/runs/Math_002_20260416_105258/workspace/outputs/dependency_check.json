@@ -1,0 +1,16 @@
+{
+  "numpy": true,
+  "matplotlib": true,
+  "seaborn": true,
+  "networkx": false,
+  "python_version": "3.13",
+  "limitations": [
+    "No deep learning framework (PyTorch/TensorFlow) available - will use heuristic-based cooperative policy as MARL surrogate",
+    "MARL component implemented as learned heuristic policy rather than neural network-based RL",
+    "Single-machine execution only, no distributed training"
+  ],
+  "fallbacks": [
+    "MARL policy: Use cooperative heuristic movement rules inspired by PRIMAL/SCRIMP observation-action mapping instead of trained neural network",
+    "SIPPS: Use Space-Time A* instead of SIPPS for single-agent pathfinding (simpler but still functional)"
+  ]
+}

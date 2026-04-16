@@ -1,0 +1,37 @@
+[
+  {
+    "claim": "GP calibration corrects systematic MD Tg bias",
+    "evidence": "R2=0.676, MAE=43.4K on 295 polymers",
+    "source": "gp_calibration_metrics.json"
+  },
+  {
+    "claim": "Graph VAE learns meaningful latent representations",
+    "evidence": "Training convergence, t-SNE shows structure by MW",
+    "source": "vae_training_history.json, fig4"
+  },
+  {
+    "claim": "ML surrogate predicts Tg from latent+descriptor features",
+    "evidence": "GB R2=0.682, MAE=12.6K on test set",
+    "source": "gp_surrogate_metrics.json"
+  },
+  {
+    "claim": "Molecular descriptors dominate Tg prediction",
+    "evidence": "Descriptor importance=75.2% vs PCA latent=24.8%",
+    "source": "gp_surrogate_metrics.json"
+  },
+  {
+    "claim": "Inverse design generates candidates in target Tg ranges",
+    "evidence": "30 candidates across 3 Tg ranges, all novel",
+    "source": "generated_candidates.csv"
+  },
+  {
+    "claim": "Generated candidates validate against Tg targets",
+    "evidence": "Validation R2=0.855, MAE=14.4K",
+    "source": "validation_summary.json"
+  },
+  {
+    "claim": "Framework integrates MD, GP calibration, and Graph VAE",
+    "evidence": "End-to-end pipeline with 8 figures",
+    "source": "code/, report/"
+  }
+]

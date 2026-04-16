@@ -1,0 +1,48 @@
+{
+  "dependency_check": {
+    "pandas": "available",
+    "numpy": "available",
+    "matplotlib": "available",
+    "seaborn": "available",
+    "scikit-learn": "available",
+    "all_required": true,
+    "limitations": []
+  },
+  "method_fidelity_checklist": {
+    "precision_recall_curve": {
+      "definition": "PR curve plotting precision vs recall at varying thresholds",
+      "implemented": true,
+      "fidelity": "full - sklearn.metrics.precision_recall_curve used"
+    },
+    "roc_curve": {
+      "definition": "ROC curve plotting TPR vs FPR at varying thresholds",
+      "implemented": true,
+      "fidelity": "full - sklearn.metrics.roc_curve used"
+    },
+    "average_precision": {
+      "definition": "Area under the PR curve using trapezoidal approximation",
+      "implemented": true,
+      "fidelity": "full - sklearn.metrics.average_precision_score used"
+    },
+    "base_position_effect": {
+      "definition": "Mean current signal for each nucleotide at each k-mer position",
+      "implemented": true,
+      "fidelity": "full - computed from raw pore model data"
+    },
+    "substitution_profile": {
+      "definition": "Mean current shift when substituting central base in each k-mer",
+      "implemented": true,
+      "fidelity": "full - computed for all valid substitutions"
+    },
+    "cross_chemistry_correlation": {
+      "definition": "Pearson correlation between r9.4.1 6-mer means and r10.4.1 central 6-mer means",
+      "implemented": true,
+      "fidelity": "full - Pearson r computed"
+    },
+    "sensitivity_at_precision": {
+      "definition": "Maximum recall achievable at or above a given precision threshold",
+      "implemented": true,
+      "fidelity": "full"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "claim_recovery_table": [
+    {"claim": "DVE decouples visual encoding into understanding and generation pathways", "evidence": "Architecture design in Figures 1,2; method_contract.json", "status": "verified_design"},
+    {"claim": "Single-encoder approaches suffer from modality competition", "evidence": "Chameleon paper Section 2.3; training_stability.png Figure 7", "status": "verified_from_related_work"},
+    {"claim": "Understanding encoder (SigLIP-style) preserves semantic detail better", "evidence": "SigLIP paper results; OCR demo Figure 8", "status": "supported_by_related_work"},
+    {"claim": "Generation encoder (VQ tokenizer) achieves competitive reconstruction", "evidence": "LlamaGen paper Table 4; generation_performance.png Figure 5", "status": "verified_from_related_work"},
+    {"claim": "DVE achieves 82.0% on VQA-v2", "evidence": "Extrapolated from LLaVA + SigLIP improvements", "status": "hypothesized_not_empirical"},
+    {"claim": "DVE achieves FID 2.50 on ImageNet", "evidence": "Interpolated between LlamaGen-XL and LlamaGen-3B", "status": "hypothesized_not_empirical"},
+    {"claim": "DVE OCR accuracy 75.0%", "evidence": "Estimated from removing quantization bottleneck", "status": "hypothesized_not_empirical"},
+    {"claim": "Decoupling improves training stability", "evidence": "Theoretical argument from eliminating softmax competition; Figure 7", "status": "theoretical_argument"},
+    {"claim": "Doge meme contrasts decoupling vs single encoding", "evidence": "Direct inspection of data/doge.png", "status": "verified_directly"},
+    {"claim": "Equation image tests OCR capability", "evidence": "Direct inspection of data/equation.png", "status": "verified_directly"}
+  ]
+}

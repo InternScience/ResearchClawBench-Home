@@ -1,0 +1,238 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "bayesian_superradiance.py",
+    "path": "code/bayesian_superradiance.py",
+    "type": "file",
+    "size": 9956,
+    "mtime": 1776314612.0,
+    "exported": true
+  },
+  {
+    "name": "generate_figures.py",
+    "path": "code/generate_figures.py",
+    "type": "file",
+    "size": 28706,
+    "mtime": 1776314612.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "IRAS_09149-6206_samples.dat",
+    "path": "data/IRAS_09149-6206_samples.dat",
+    "type": "file",
+    "size": 320220,
+    "mtime": 1770794836.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "M33_X-7_samples.dat",
+    "path": "data/M33_X-7_samples.dat",
+    "type": "file",
+    "size": 58949,
+    "mtime": 1770794838.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "claim_recovery_table.json",
+    "path": "outputs/claim_recovery_table.json",
+    "type": "file",
+    "size": 1920,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "constraint_results.json",
+    "path": "outputs/constraint_results.json",
+    "type": "file",
+    "size": 1146,
+    "mtime": 1776314608.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 637,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "exclusion_probabilities.npz",
+    "path": "outputs/exclusion_probabilities.npz",
+    "type": "file",
+    "size": 125718,
+    "mtime": 1776314610.0,
+    "exported": false
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1515,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "method_fidelity_checklist.json",
+    "path": "outputs/method_fidelity_checklist.json",
+    "type": "file",
+    "size": 2311,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "related_work_contract.json",
+    "path": "outputs/related_work_contract.json",
+    "type": "file",
+    "size": 3349,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 2317,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 2112232,
+    "mtime": 1773914882.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 3670587,
+    "mtime": 1773914882.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1510057,
+    "mtime": 1773914882.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2337811,
+    "mtime": 1773914882.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_posterior_distributions.png",
+    "path": "report/images/fig1_posterior_distributions.png",
+    "type": "file",
+    "size": 581427,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_regge_plane.png",
+    "path": "report/images/fig2_regge_plane.png",
+    "type": "file",
+    "size": 137722,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_exclusion_probability.png",
+    "path": "report/images/fig3_exclusion_probability.png",
+    "type": "file",
+    "size": 194591,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_mass_spin_exclusion.png",
+    "path": "report/images/fig4_mass_spin_exclusion.png",
+    "type": "file",
+    "size": 953810,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_self_interaction.png",
+    "path": "report/images/fig5_self_interaction.png",
+    "type": "file",
+    "size": 146485,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "fig6_combined_constraints.png",
+    "path": "report/images/fig6_combined_constraints.png",
+    "type": "file",
+    "size": 145448,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "fig7_timescale_map.png",
+    "path": "report/images/fig7_timescale_map.png",
+    "type": "file",
+    "size": 109051,
+    "mtime": 1776314610.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 24992,
+    "mtime": 1776314613.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5333,
+    "mtime": 1776167886.0,
+    "exported": true
+  }
+]

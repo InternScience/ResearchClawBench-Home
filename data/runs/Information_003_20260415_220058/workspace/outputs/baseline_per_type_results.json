@@ -1,0 +1,106 @@
+{
+  "LogisticRegression": {
+    "Backdoor": {
+      "f1": 0.7755102040816326,
+      "count": 60,
+      "is_few_shot": true
+    },
+    "Analysis": {
+      "f1": 0.08,
+      "count": 48,
+      "is_few_shot": true
+    },
+    "Benign": {
+      "f1": 0.997551694640276,
+      "count": 16992,
+      "is_few_shot": false
+    },
+    "DoS": {
+      "f1": 0.5804749340369393,
+      "count": 538,
+      "is_few_shot": false
+    },
+    "Exploits": {
+      "f1": 0.2548262548262548,
+      "count": 226,
+      "is_few_shot": true
+    },
+    "Fuzzers": {
+      "f1": 0.23834196891191706,
+      "count": 170,
+      "is_few_shot": true
+    },
+    "Generic": {
+      "f1": 0.9634377967711301,
+      "count": 2183,
+      "is_few_shot": false
+    },
+    "Reconnaissance": {
+      "f1": 0.9971813341684935,
+      "count": 1601,
+      "is_few_shot": false
+    },
+    "Shellcode": {
+      "f1": 0.41025641025641024,
+      "count": 217,
+      "is_few_shot": true
+    },
+    "Worms": {
+      "f1": 0.2222222222222222,
+      "count": 16,
+      "is_few_shot": true
+    }
+  },
+  "LightGBM": {
+    "Backdoor": {
+      "f1": 0.2857142857142857,
+      "count": 60,
+      "is_few_shot": true
+    },
+    "Analysis": {
+      "f1": 0.2857142857142857,
+      "count": 48,
+      "is_few_shot": true
+    },
+    "Benign": {
+      "f1": 0.9961599810952915,
+      "count": 16992,
+      "is_few_shot": false
+    },
+    "DoS": {
+      "f1": 0.46285714285714286,
+      "count": 538,
+      "is_few_shot": false
+    },
+    "Exploits": {
+      "f1": 0.5131578947368421,
+      "count": 226,
+      "is_few_shot": true
+    },
+    "Fuzzers": {
+      "f1": 0.38095238095238093,
+      "count": 170,
+      "is_few_shot": true
+    },
+    "Generic": {
+      "f1": 0.9168940709501364,
+      "count": 2183,
+      "is_few_shot": false
+    },
+    "Reconnaissance": {
+      "f1": 0.8547925608011445,
+      "count": 1601,
+      "is_few_shot": false
+    },
+    "Shellcode": {
+      "f1": 0.17647058823529413,
+      "count": 217,
+      "is_few_shot": true
+    },
+    "Worms": {
+      "f1": 0.4,
+      "count": 16,
+      "is_few_shot": true
+    }
+  }
+}

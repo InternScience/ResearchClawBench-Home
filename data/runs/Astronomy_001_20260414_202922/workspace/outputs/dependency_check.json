@@ -1,0 +1,11 @@
+{
+  "capability": "full_analysis_from_extracted_data",
+  "method": "Parameter comparison and visualization from published best-fit values and 1-sigma errors",
+  "limitations": [
+    "Cannot run full MCMC with Boltzmann solver (CLASS_ede not available)",
+    "Distance comparison curves are approximate (model predictions estimated from parameter shifts)",
+    "2D posteriors generated from Gaussian approximations with estimated correlations"
+  ],
+  "fallback_approach": "Use published parameter values and approximate model predictions to reproduce key results and generate comparison figures",
+  "available_packages": ["numpy", "scipy", "matplotlib", "seaborn"]
+}

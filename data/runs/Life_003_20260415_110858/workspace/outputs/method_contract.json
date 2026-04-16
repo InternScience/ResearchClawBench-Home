@@ -1,0 +1,55 @@
+{
+  "task": "Uncalled4 nanopore signal alignment toolkit analysis",
+  "method_contract": {
+    "primary_analyses": [
+      "Performance benchmarking (time, file size) across 4 chemistries and 4 tools",
+      "K-mer pore model characterization (current distributions, base-position effects, substitution profiles)",
+      "m6A modification detection comparison (PR curves, ROC curves, AUC metrics)"
+    ],
+    "named_methods": [
+      "Precision-recall curve analysis",
+      "ROC curve analysis",
+      "Average precision (AP) scoring",
+      "Base-position effect analysis",
+      "Substitution profile computation",
+      "Cross-chemistry correlation"
+    ],
+    "comparison_tools": ["Uncalled4", "f5c", "Nanopolish", "Tombo"],
+    "chemistries": ["DNA r9.4.1", "DNA r10.4.1", "RNA001", "RNA004"],
+    "modification_type": "m6A",
+    "classifier": "m6Anet"
+  },
+  "target_artifact_inventory": {
+    "performance_benchmark_figure": {"satisfied": true, "path": "report/images/fig1_performance_benchmark.png"},
+    "speedup_heatmap": {"satisfied": true, "path": "report/images/fig2_speedup_heatmap.png"},
+    "pore_model_distributions": {"satisfied": true, "path": "report/images/fig3_pore_model_distributions.png"},
+    "base_position_effects": {"satisfied": true, "path": "report/images/fig4_base_position_effects.png"},
+    "substitution_profiles": {"satisfied": true, "path": "report/images/fig5_substitution_profiles.png"},
+    "dwell_time_distributions": {"satisfied": true, "path": "report/images/fig6_dwell_time_distributions.png"},
+    "m6a_pr_roc_curves": {"satisfied": true, "path": "report/images/fig7_m6a_pr_roc_curves.png"},
+    "m6a_prediction_distributions": {"satisfied": true, "path": "report/images/fig8_m6a_prediction_distributions.png"},
+    "m6a_scatter_comparison": {"satisfied": true, "path": "report/images/fig9_m6a_scatter_comparison.png"},
+    "sensitivity_at_precision": {"satisfied": true, "path": "report/images/fig10_sensitivity_at_precision.png"},
+    "cross_chemistry_correlation": {"satisfied": true, "path": "report/images/fig11_cross_chemistry_correlation.png"},
+    "performance_summary_json": {"satisfied": true, "path": "outputs/performance_summary.json"},
+    "m6a_metrics_json": {"satisfied": true, "path": "outputs/m6a_metrics.json"},
+    "sensitivity_at_precision_csv": {"satisfied": true, "path": "outputs/sensitivity_at_precision.csv"},
+    "substitution_profiles_json": {"satisfied": true, "path": "outputs/substitution_profiles.json"},
+    "pore_model_summary_csv": {"satisfied": true, "path": "outputs/pore_model_summary_table.csv"},
+    "cross_chemistry_comparison_csv": {"satisfied": true, "path": "outputs/cross_chemistry_comparison.csv"},
+    "analysis_code": {"satisfied": true, "path": "code/analysis.py"},
+    "final_report": {"satisfied": true, "path": "report/report.md"}
+  },
+  "key_results": {
+    "speedup_dna_r9_vs_nanopolish": "67.0x",
+    "speedup_dna_r10_vs_f5c": "28.9x",
+    "m6a_pr_auc_uncalled4": 0.9929,
+    "m6a_pr_auc_nanopolish": 0.7784,
+    "m6a_roc_auc_uncalled4": 0.9979,
+    "m6a_roc_auc_nanopolish": 0.9012,
+    "pr_auc_improvement_pp": 21.45,
+    "cross_chemistry_correlation_r": 0.9838,
+    "recall_at_95pct_precision_uncalled4": 0.9746,
+    "recall_at_95pct_precision_nanopolish": 0.3398
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "task": "Establish universal theoretical framework for rational design of multi-component nanoclusters with specific symmetry and compositional sequences",
+  "named_methods": {
+    "hexagonal_lattice_shell_sequence": "Shell sequence paths defined in hexagonal lattice with coordinates (h,k)",
+    "mackay_icosahedral_magic_numbers": "Magic number sequence for Mackay icosahedra: 1, 13, 55, 147, 309",
+    "new_magic_numbers_b5": "New magic number sequence for b=5: 1, 13, 45, 117, 239, 431",
+    "chiral_categories": "Seven chiral categories: MC, BG, Ch1, Ch2, Ch3, Ch4, Ch5",
+    "size_mismatch_optimization": "Optimal size mismatch ranges between adjacent shells determine stability",
+    "lennard_jones_potential": "Interatomic LJ potential with epsilon and sigma parameters for each pair",
+    "dynamic_growth_simulation": "Growth simulations with temperature, deposition rate, and path probability weights"
+  },
+  "key_outputs": {
+    "predicted_stable_structures": "Multi-shell icosahedral structures like Na13@Rb32, Ni147@Ag192",
+    "optimal_size_mismatch": "Size mismatch values between adjacent shells",
+    "shell_sequences_paths": "Shell sequences and paths formed via self-assembly"
+  },
+  "data_source": "data/Multi-component Icosahedral Reproduction Data.txt"
+}

@@ -1,0 +1,12 @@
+{
+  "pandas": "available",
+  "numpy": "available",
+  "scikit-learn": "available",
+  "scikit-optimize": "available",
+  "shap": "available",
+  "matplotlib": "available",
+  "seaborn": "available",
+  "openpyxl": "available",
+  "scipy": "available",
+  "limitations": "GP predictions are bounded by training data range; extrapolation to >1 MPa requires iterative experimental validation"
+}

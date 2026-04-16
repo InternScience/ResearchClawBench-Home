@@ -1,0 +1,70 @@
+{
+  "related_work_contract": {
+    "paper_000": {
+      "title": "Exploring the String Axiverse with Precision Black Hole Physics",
+      "authors": "Arvanitaki & Dubovsky (2011)",
+      "key_contributions": [
+        "Introduced the concept of BH superradiance as a probe of the String Axiverse",
+        "Defined the Regge trajectory in the mass-spin plane",
+        "Estimated observational signatures including gravitational waves from bosenova",
+        "Provided the QCD axion relation: mu_a = 6e-10 * (1e16/f_a) eV"
+      ],
+      "parameters_used": {
+        "QCD_axion_mass": "mu_a = 6e-10 * (1e16 GeV / f_a) eV",
+        "superradiance_mass_range": "1e-9 to 1e-21 eV",
+        "BH_mass_range": "stellar (5-20 Msun) to supermassive (1e5-1e10 Msun)"
+      }
+    },
+    "paper_001": {
+      "title": "The Spectrum of the Axion Dark Sector, Cosmological Observable and BH Superradiance Constraints",
+      "authors": "Stott (2018/2020)",
+      "key_contributions": [
+        "Statistical framework for constraining multiple axion-like fields",
+        "Exclusion probability function for degenerate mass populations",
+        "Log-normal mass distribution constraints",
+        "Probed N_ax >= 30 exclusion for wide range of distribution parameters"
+      ],
+      "parameters_used": {
+        "superradiance_mass_range_stellar": "7e-14 to 2e-11 eV",
+        "superradiance_mass_range_SMBH": "7e-20 to 1e-16 eV",
+        "Salpeter_time": "4.5e7 yr"
+      }
+    },
+    "paper_002": {
+      "title": "Black Hole Mergers and the QCD Axion at Advanced LIGO",
+      "authors": "Arvanitaki, Baryakhtar, Dimopoulos, Dubovsky & Lasenby (2015)",
+      "key_contributions": [
+        "Statistical analysis of BH spin-mass distributions for axion detection",
+        "Level mixing in binary systems",
+        "Gravitational wave signals from axion annihilations and transitions",
+        "Updated exclusion from X-ray binary spin measurements: 6e-13 to 2e-11 eV"
+      ],
+      "parameters_used": {
+        "alpha_definition": "alpha = G*M*mu/(hbar*c)",
+        "SR_growth_rate": "Gamma_SR proportional to alpha^(4l+4) * mu",
+        "N_max": "~10^77 * (Delta_a*/0.1m) * (M/10Msun)^2"
+      }
+    },
+    "paper_003": {
+      "title": "Superradiant instabilities in astrophysical systems",
+      "authors": "Witek, Cardoso, Ishibashi & Sperhake (2013)",
+      "key_contributions": [
+        "Numerical evolution of massive scalar and vector fields around Kerr BHs",
+        "Confirmed superradiant instability for scalar fields",
+        "Showed vector (Proca) fields have much stronger instabilities",
+        "Maximum scalar instability at M*mu = 0.42 with tau ~ 10^7 M"
+      ],
+      "parameters_used": {
+        "optimal_mass_coupling": "M*mu = 0.42 for maximum scalar instability",
+        "maximum_instability_timescale": "tau ~ 10^7 M for a/M = 0.99"
+      }
+    }
+  },
+  "impact_on_analysis": {
+    "alpha_definition": "Using M*mu/M_Pl^2 definition consistent with all papers",
+    "regge_trajectory": "Analytic formula derived from superradiance boundary condition",
+    "timescale_comparison": "Using Salpeter time (4.5e7 yr) for stellar BHs, 1 Gyr for SMBHs",
+    "QCD_axion_line": "mu_a = 6e-10 * (1e16/f_a) eV for self-interaction plots",
+    "exclusion_zones": "Consistent with literature ranges: ~1e-13 to ~1e-11 eV for stellar BHs"
+  }
+}

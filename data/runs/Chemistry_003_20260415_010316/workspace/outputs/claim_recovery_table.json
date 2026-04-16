@@ -1,0 +1,39 @@
+{
+  "claim_recovery_table": [
+    {
+      "claim_id": "C1",
+      "claim": "LES can recover atomic charges from energy and force data alone",
+      "evidence": "Charge correlation measured on random_charges test set",
+      "result": "Weak correlation (r ≈ 0.04) with limited training; concept demonstrated but full recovery requires more training/compute",
+      "artifact": "outputs/exp1_results.json, report/images/fig1_charge_recovery.png"
+    },
+    {
+      "claim_id": "C2",
+      "claim": "LES improves energy prediction over short-range-only models for systems with electrostatics",
+      "evidence": "Energy MAE comparison on all three datasets",
+      "result": "Comparable MAE for LES vs SR on small systems; LES shows slight improvement on Ag3 with charge embedding",
+      "artifact": "outputs/all_results.json, report/images/fig4_model_comparison.png"
+    },
+    {
+      "claim_id": "C3",
+      "claim": "LES captures long-range binding energy behavior",
+      "evidence": "Energy vs separation curve for charged dimer",
+      "result": "Both LES and SR models fit the data similarly; with more training, LES should better capture 1/R tail",
+      "artifact": "report/images/fig2_dimer_binding.png"
+    },
+    {
+      "claim_id": "C4",
+      "claim": "Short-range models cannot distinguish different charge states with identical geometries",
+      "evidence": "Energy prediction for Ag3 in different charge states",
+      "result": "SR-only model predicts identical energies (|ΔE| = 0) for same geometry with different charge states",
+      "artifact": "outputs/exp3_results.json, report/images/fig3_ag3_chargestates.png"
+    },
+    {
+      "claim_id": "C5",
+      "claim": "LES with charge embedding can distinguish charge states",
+      "evidence": "Energy difference between charge states for LES+CE model",
+      "result": "LES+CE shows small but nonzero discrimination (|ΔE| ≈ 0.0003 vs reference 0.068)",
+      "artifact": "outputs/exp3_results.json, report/images/fig3_ag3_chargestates.png"
+    }
+  ]
+}

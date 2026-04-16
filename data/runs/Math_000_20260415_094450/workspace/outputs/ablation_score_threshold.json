@@ -1,0 +1,93 @@
+{
+  "0.1": {
+    "MOTA": 0.8179,
+    "MOTP": 0.8593,
+    "IDF1": 0.7363,
+    "ID_Switches": 758,
+    "FP": 2357,
+    "FN": 527,
+    "TP": 19473,
+    "Total_GT": 20000,
+    "Mostly_Tracked": 200,
+    "Mostly_Lost": 0,
+    "Partially_Tracked": 0
+  },
+  "0.15": {
+    "MOTA": 0.7115,
+    "MOTP": 0.8501,
+    "IDF1": 0.5343,
+    "ID_Switches": 1592,
+    "FP": 2623,
+    "FN": 1556,
+    "TP": 18444,
+    "Total_GT": 20000,
+    "Mostly_Tracked": 198,
+    "Mostly_Lost": 0,
+    "Partially_Tracked": 2
+  },
+  "0.2": {
+    "MOTA": 0.5975,
+    "MOTP": 0.8423,
+    "IDF1": 0.4255,
+    "ID_Switches": 2151,
+    "FP": 3032,
+    "FN": 2867,
+    "TP": 17133,
+    "Total_GT": 20000,
+    "Mostly_Tracked": 167,
+    "Mostly_Lost": 0,
+    "Partially_Tracked": 33
+  },
+  "0.25": {
+    "MOTA": 0.522,
+    "MOTP": 0.8361,
+    "IDF1": 0.3732,
+    "ID_Switches": 2444,
+    "FP": 2900,
+    "FN": 4217,
+    "TP": 15783,
+    "Total_GT": 20000,
+    "Mostly_Tracked": 101,
+    "Mostly_Lost": 0,
+    "Partially_Tracked": 99
+  },
+  "0.3": {
+    "MOTA": 0.4049,
+    "MOTP": 0.8295,
+    "IDF1": 0.308,
+    "ID_Switches": 2446,
+    "FP": 2801,
+    "FN": 6656,
+    "TP": 13344,
+    "Total_GT": 20000,
+    "Mostly_Tracked": 18,
+    "Mostly_Lost": 0,
+    "Partially_Tracked": 182
+  },
+  "0.4": {
+    "MOTA": 0.0437,
+    "MOTP": 0.8388,
+    "IDF1": 0.0863,
+    "ID_Switches": 107,
+    "FP": 214,
+    "FN": 18805,
+    "TP": 1195,
+    "Total_GT": 20000,
+    "Mostly_Tracked": 0,
+    "Mostly_Lost": 175,
+    "Partially_Tracked": 25
+  },
+  "0.5": {
+    "MOTA": 0.0437,
+    "MOTP": 0.8388,
+    "IDF1": 0.0863,
+    "ID_Switches": 107,
+    "FP": 214,
+    "FN": 18805,
+    "TP": 1195,
+    "Total_GT": 20000,
+    "Mostly_Tracked": 0,
+    "Mostly_Lost": 175,
+    "Partially_Tracked": 25
+  }
+}

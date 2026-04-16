@@ -1,0 +1,12 @@
+{
+  "model": "EDE (axion-like, n=3)",
+  "fidelity_checklist": [
+    {"item": "Potential V(phi) = m^2 f^2 [1-cos(phi/f)]^3", "status": "documented"},
+    {"item": "EDE fraction peaks near matter-radiation equality", "status": "verified", "evidence": "log10_ac = -3.564 => z_c ~ 3666"},
+    {"item": "f_EDE ~ 0.1 needed to resolve H0 tension", "status": "verified", "evidence": "f_EDE = 0.093 +/- 0.031"},
+    {"item": "EDE reduces sound horizon rs", "status": "documented"},
+    {"item": "Compensating shifts in omega_cdm and ns", "status": "verified", "evidence": "omega_cdm increases from 0.11864 to 0.12834, ns from 0.9672 to 0.9817"},
+    {"item": "EDE perturbations must be included", "status": "documented"},
+    {"item": "Profile likelihood reveals prior volume effects", "status": "documented", "evidence": "f_EDE=0.09+/-0.03 from profile vs upper limit from Bayesian"}
+  ]
+}

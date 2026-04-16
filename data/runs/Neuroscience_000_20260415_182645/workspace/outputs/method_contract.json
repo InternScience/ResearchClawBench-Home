@@ -1,0 +1,87 @@
+{
+  "task": "SimBA-style Supervised Behavior Classification Reproducibility Study",
+  "method_contract": {
+    "primary_goal": "Verify whether SimBA-style workflow reproducibly transforms tracked behavior features into transparent and auditable behavior classification evidence",
+    "named_behaviors": ["Attack", "Sniffing"],
+    "classifier_family": ["Random Forest", "Gradient Boosting", "Logistic Regression"],
+    "interpretability_methods": ["Gini importance", "SHAP TreeExplainer", "Permutation importance"],
+    "evaluation_metrics": ["accuracy", "precision", "recall", "f1", "roc_auc", "pr_auc", "confusion_matrix"],
+    "imbalance_handling": ["SMOTE", "class_weight='balanced'"],
+    "data_split": "Stratified 75/25 train/test split"
+  },
+  "target_artifact_inventory": {
+    "evaluation_summary_json": {"path": "outputs/evaluation_summary.json", "satisfied": true},
+    "engineered_features_csv": {"path": "outputs/engineered_features.csv", "satisfied": true},
+    "rf_feature_importance_attack": {"path": "outputs/rf_feature_importance_attack.csv", "satisfied": true},
+    "rf_feature_importance_sniffing": {"path": "outputs/rf_feature_importance_sniffing.csv", "satisfied": true},
+    "gb_feature_importance_attack": {"path": "outputs/gb_feature_importance_attack.csv", "satisfied": true},
+    "gb_feature_importance_sniffing": {"path": "outputs/gb_feature_importance_sniffing.csv", "satisfied": true},
+    "shap_importance_attack": {"path": "outputs/shap_importance_attack.csv", "satisfied": true},
+    "shap_importance_sniffing": {"path": "outputs/shap_importance_sniffing.csv", "satisfied": true},
+    "permutation_importance_attack": {"path": "outputs/permutation_importance_attack.csv", "satisfied": true},
+    "permutation_importance_sniffing": {"path": "outputs/permutation_importance_sniffing.csv", "satisfied": true},
+    "reference_comparison_json": {"path": "outputs/reference_comparison.json", "satisfied": true},
+    "class_distribution_figure": {"path": "report/images/class_distribution.png", "satisfied": true},
+    "behavior_timeline_figure": {"path": "report/images/behavior_timeline.png", "satisfied": true},
+    "confusion_matrix_attack": {"path": "report/images/confusion_matrix_attack.png", "satisfied": true},
+    "confusion_matrix_sniffing": {"path": "report/images/confusion_matrix_sniffing.png", "satisfied": true},
+    "roc_curve_attack": {"path": "report/images/roc_curve_attack.png", "satisfied": true},
+    "roc_curve_sniffing": {"path": "report/images/roc_curve_sniffing.png", "satisfied": true},
+    "pr_curve_attack": {"path": "report/images/pr_curve_attack.png", "satisfied": true},
+    "pr_curve_sniffing": {"path": "report/images/pr_curve_sniffing.png", "satisfied": true},
+    "metrics_comparison_attack": {"path": "report/images/metrics_comparison_attack.png", "satisfied": true},
+    "metrics_comparison_sniffing": {"path": "report/images/metrics_comparison_sniffing.png", "satisfied": true},
+    "feature_importance_attack": {"path": "report/images/feature_importance_attack.png", "satisfied": true},
+    "feature_importance_sniffing": {"path": "report/images/feature_importance_sniffing.png", "satisfied": true},
+    "shap_summary_attack": {"path": "report/images/shap_summary_attack.png", "satisfied": true},
+    "shap_summary_sniffing": {"path": "report/images/shap_summary_sniffing.png", "satisfied": true},
+    "permutation_importance_attack_fig": {"path": "report/images/permutation_importance_attack.png", "satisfied": true},
+    "permutation_importance_sniffing_fig": {"path": "report/images/permutation_importance_sniffing.png", "satisfied": true},
+    "reference_comparison_attack": {"path": "report/images/reference_comparison_attack.png", "satisfied": true},
+    "reference_comparison_sniffing": {"path": "report/images/reference_comparison_sniffing.png", "satisfied": true},
+    "feature_correlation_heatmap": {"path": "report/images/feature_correlation_heatmap.png", "satisfied": true},
+    "analysis_code": {"path": "code/main_analysis.py", "satisfied": true},
+    "report_md": {"path": "report/report.md", "satisfied": true}
+  },
+  "dependency_check": {
+    "scikit-learn": "available",
+    "shap": "available",
+    "matplotlib": "available",
+    "seaborn": "available",
+    "pandas": "available",
+    "numpy": "available",
+    "imbalanced-learn": "available"
+  },
+  "method_fidelity_checklist": {
+    "simba_style_feature_engineering": {
+      "definition": "Engineer geometric, movement, and spatial features from tracked pose keypoints",
+      "implemented": true,
+      "categories_covered": ["intra-animal distances", "inter-animal distances", "movement", "body shape", "rolling window aggregations", "angles"],
+      "deviation": "130 features vs reference 569; missing deviation, percentile rank, tortuosity features"
+    },
+    "supervised_classification": {
+      "definition": "Train classifiers on pose-derived features with binary behavior targets",
+      "implemented": true,
+      "models": ["Random Forest", "Gradient Boosting", "Logistic Regression"],
+      "deviation": "None - standard supervised pipeline"
+    },
+    "smote_imbalance_handling": {
+      "definition": "Apply SMOTE oversampling to training data for imbalanced behaviors",
+      "implemented": true,
+      "deviation": "Applied after StandardScaler scaling; ideally should be applied before scaling"
+    },
+    "shap_interpretability": {
+      "definition": "Compute SHAP values for feature impact analysis",
+      "implemented": true,
+      "method": "TreeExplainer for Random Forest",
+      "deviation": "None"
+    },
+    "permutation_importance": {
+      "definition": "Compute permutation importance on test set",
+      "implemented": true,
+      "scoring": "f1",
+      "n_repeats": 10,
+      "deviation": "None"
+    }
+  }
+}

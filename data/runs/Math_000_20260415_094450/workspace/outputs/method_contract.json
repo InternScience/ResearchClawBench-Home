@@ -1,0 +1,21 @@
+{
+  "task": "SparseTrack vs ByteTrack: Multi-Object Tracking with Pseudo-Depth Hierarchical Association",
+  "method_contract": {
+    "SparseTrack": "Pseudo-depth estimation to decompose dense target sets into sparse subsets, then hierarchical association within each depth layer. Objects closer to camera (larger bbox area) are tracked first.",
+    "ByteTrack": "Two-stage association: first match high-score detections to trackers, then match unmatched trackers with low-score detections.",
+    "SORT": "Baseline: Kalman filter + Hungarian algorithm with single-stage IoU-based association."
+  },
+  "target_artifacts": {
+    "code/tracker.py": "Tracker implementations (SORT, ByteTrack, SparseTrack) + MOT metrics",
+    "code/run_experiment.py": "Experiment runner with ablations",
+    "code/generate_figures.py": "Figure generation script",
+    "outputs/metrics_comparison.json": "Main quantitative comparison",
+    "outputs/ablation_depth_layers.json": "SparseTrack depth layer ablation",
+    "outputs/ablation_score_threshold.json": "ByteTrack score threshold ablation",
+    "outputs/ablation_iou_threshold.json": "IoU threshold ablation across methods",
+    "outputs/ablation_overlap_threshold.json": "SparseTrack overlap threshold ablation",
+    "outputs/trajectories/": "Per-method trajectory outputs",
+    "report/images/fig1-fig11": "Comparison and analysis figures",
+    "report/report.md": "Final research report"
+  }
+}

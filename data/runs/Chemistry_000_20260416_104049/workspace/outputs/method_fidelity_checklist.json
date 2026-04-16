@@ -1,0 +1,34 @@
+{
+  "method_fidelity_checklist": {
+    "named_mechanism": "Fourier-based Kolmogorov-Arnold Network (KAN) module",
+    "definition": "Replace conventional MLP linear transformations with Fourier series-based univariate function compositions per the Kolmogorov-Arnold representation theorem",
+    "key_structural_ingredients": {
+      "fourier_basis": "Cosine and sine functions at multiple harmonic frequencies",
+      "learnable_coefficients": "Per-input-output-harmonic cos/sin coefficients (alpha, beta)",
+      "residual_linear": "Linear weight matrix and bias as residual connection",
+      "frequency_scaling": "Base frequencies scaled by factor of 2 for coverage",
+      "harmonics_count": 4,
+      "grid_size": 5
+    },
+    "integration_points": {
+      "KA-GCN": "KAN replaces linear transform in GCN message-passing normalization step",
+      "KA-GAT": "KAN replaces source and destination linear projections in GAT attention mechanism"
+    },
+    "assumptions": [
+      "Input features are suitable for Fourier expansion without explicit normalization to [0,1]",
+      "Batch normalization provides sufficient input scaling",
+      "4 harmonics provide adequate approximation capacity"
+    ],
+    "deviations": [
+      "Used fixed frequency scaling (2k) rather than learnable frequencies - simplification for stability",
+      "Combined Fourier coefficients into single einsum operation rather than separate per-harmonic computation - efficiency optimization",
+      "Residual linear connection added to prevent gradient vanishing - practical necessity"
+    ],
+    "invariants_checked": [
+      "Fourier basis functions are continuous and differentiable - YES",
+      "Output dimension matches specification - YES",
+      "Message passing preserves graph structure - YES",
+      "Attention mechanism maintains softmax normalization - YES"
+    ]
+  }
+}

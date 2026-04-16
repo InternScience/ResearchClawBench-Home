@@ -1,0 +1,64 @@
+{
+  "target_artifact_inventory": {
+    "fig1_posterior_distributions": {
+      "description": "Posterior distributions of BH mass and spin for both sources",
+      "status": "satisfied",
+      "path": "report/images/fig1_posterior_distributions.png"
+    },
+    "fig2_regge_plane": {
+      "description": "Regge plane (alpha vs a*) with exclusion zones and BH positions",
+      "status": "satisfied",
+      "path": "report/images/fig2_regge_plane.png"
+    },
+    "fig3_exclusion_probability": {
+      "description": "Exclusion probability vs ULB mass for both BHs",
+      "status": "satisfied",
+      "path": "report/images/fig3_exclusion_probability.png"
+    },
+    "fig4_mass_spin_exclusion": {
+      "description": "Mass-spin plane with superradiance exclusion bands",
+      "status": "satisfied",
+      "path": "report/images/fig4_mass_spin_exclusion.png"
+    },
+    "fig5_self_interaction": {
+      "description": "Self-interaction constraints on mu-f_a plane",
+      "status": "satisfied",
+      "path": "report/images/fig5_self_interaction.png"
+    },
+    "fig6_combined_constraints": {
+      "description": "Combined constraint summary from both BHs",
+      "status": "satisfied",
+      "path": "report/images/fig6_combined_constraints.png"
+    },
+    "fig7_timescale_map": {
+      "description": "Superradiance timescale maps for both BHs",
+      "status": "satisfied",
+      "path": "report/images/fig7_timescale_map.png"
+    },
+    "constraint_results_json": {
+      "description": "Numerical constraint results",
+      "status": "satisfied",
+      "path": "outputs/constraint_results.json"
+    },
+    "exclusion_probabilities_npz": {
+      "description": "Full exclusion probability arrays",
+      "status": "satisfied",
+      "path": "outputs/exclusion_probabilities.npz"
+    },
+    "report_md": {
+      "description": "Comprehensive research report",
+      "status": "satisfied",
+      "path": "report/report.md"
+    },
+    "method_contract_json": {
+      "description": "Method contract documenting the analysis framework",
+      "status": "satisfied",
+      "path": "outputs/method_contract.json"
+    },
+    "claim_recovery_table_json": {
+      "description": "Claim recovery table mapping claims to evidence",
+      "status": "satisfied",
+      "path": "outputs/claim_recovery_table.json"
+    }
+  }
+}

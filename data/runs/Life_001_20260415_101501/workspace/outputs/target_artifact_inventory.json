@@ -1,0 +1,27 @@
+{
+  "task": "Optimal personalized neoantigen vaccine composition analysis",
+  "method_contract": {
+    "optimization_objective": "MinSum adaptive",
+    "budget": 10,
+    "efficacy_metrics": ["per_cell_response_probability", "coverage_ratio", "IoU"],
+    "runtime_analysis": "power_law_scaling"
+  },
+  "target_artifacts": {
+    "vaccine_composition": {"status": "satisfied", "file": "outputs/efficacy_summary.json"},
+    "per_cell_response_probability": {"status": "satisfied", "value": 0.943, "file": "outputs/efficacy_summary.json"},
+    "coverage_ratio_p50": {"status": "satisfied", "value": 0.992, "file": "outputs/coverage_curve.csv"},
+    "coverage_ratio_p90": {"status": "satisfied", "value": 0.887, "file": "outputs/coverage_curve.csv"},
+    "coverage_ratio_p95": {"status": "satisfied", "value": 0.606, "file": "outputs/coverage_curve.csv"},
+    "iou_pairwise": {"status": "satisfied", "value": 1.0, "file": "outputs/iou_matrix.csv"},
+    "iou_consensus": {"status": "satisfied", "value": 1.0, "file": "outputs/efficacy_summary.json"},
+    "runtime_scaling_exponent": {"status": "satisfied", "value": 2.55, "file": "outputs/runtime_scaling_params.csv"},
+    "figure1_iou_heatmap": {"status": "satisfied", "file": "report/images/figure1_iou_heatmap.png"},
+    "figure2_response_distribution": {"status": "satisfied", "file": "report/images/figure2_response_distribution.png"},
+    "figure3_coverage_curve": {"status": "satisfied", "file": "report/images/figure3_coverage_curve.png"},
+    "figure4_element_heatmap": {"status": "satisfied", "file": "report/images/figure4_element_heatmap.png"},
+    "figure5_element_contribution": {"status": "satisfied", "file": "report/images/figure5_element_contribution.png"},
+    "figure6_runtime_scaling": {"status": "satisfied", "file": "report/images/figure6_runtime_scaling.png"},
+    "figure7_mutation_presentation": {"status": "satisfied", "file": "report/images/figure7_mutation_presentation.png"},
+    "report": {"status": "satisfied", "file": "report/report.md"},
+    "analysis_code": {"status": "satisfied", "file": "code/analysis.py"}
+  }

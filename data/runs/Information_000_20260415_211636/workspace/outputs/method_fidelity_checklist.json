@@ -1,0 +1,36 @@
+{
+  "method_fidelity_checklist": {
+    "named_mechanism": "Decoupled Visual Encoding (DVE)",
+    "definition": "A unified autoregressive framework that uses separate visual encoders for understanding and generation tasks, both feeding into a shared Transformer backbone",
+    "key_structural_ingredients": [
+      "Understanding encoder: SigLIP-style contrastive encoder with sigmoid loss",
+      "Generation encoder: LlamaGen-style VQ tokenizer (downsample=16, codebook=16384, dim=8)",
+      "Unified backbone: Autoregressive Transformer with QK-norm and z-loss",
+      "Modality routing: Special tokens to signal understanding vs generation pathway"
+    ],
+    "assumptions": [
+      "Understanding and generation have different optimal visual representations",
+      "Contrastive training preserves semantic detail better than discrete tokenization",
+      "Discrete tokenization provides better reconstruction quality than continuous features",
+      "Decoupling eliminates modality competition in softmax"
+    ],
+    "invariants": [
+      "Both encoders process the same input image",
+      "Both pathways share the same Transformer backbone",
+      "Autoregressive next-token prediction paradigm is maintained",
+      "Training follows staged approach: pre-train encoders, then backbone, then SFT"
+    ],
+    "non_negotiable_steps": [
+      "Separate understanding and generation encoders must exist",
+      "Encoders must be task-specialized (contrastive vs VQ)",
+      "Shared backbone must support both text and image token generation",
+      "QK-norm must be applied for training stability"
+    ],
+    "deviations": [
+      "Benchmark numbers are extrapolated from published results rather than empirically measured - this is a conceptual framework analysis, not an empirical training run",
+      "OCR demo shows hypothesized outputs rather than actual model inference results",
+      "Semantic understanding demo shows hypothesized interpretations rather than actual model outputs"
+    ],
+    "deviation_reasons": "Computational resources insufficient for training 3B+ parameter models; task is framework design and analysis, not full empirical validation"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "paper_000": {
+    "title": "Highly accurate protein structure prediction with AlphaFold",
+    "key_insights": [
+      "Evoformer block jointly processes MSA and pairwise representations",
+      "Structure module uses rotation/translation per residue (SE(3) frames)",
+      "Iterative refinement with recycling",
+      "pLDDT confidence metric",
+      "Median backbone accuracy 0.96 Å r.m.s.d.95 on CASP14"
+    ],
+    "relevant_methods": ["Evoformer", "Structure module", "pLDDT", "Invariant point attention"]
+  },
+  "paper_001": {
+    "title": "Computed structures of core eukaryotic protein complexes",
+    "key_insights": [
+      "RoseTTAFold + AlphaFold combination for complex prediction",
+      "Coevolution-guided protein interaction identification",
+      "Paired MSAs for complex prediction",
+      "106 previously unidentified assemblies modeled"
+    ],
+    "relevant_methods": ["RoseTTAFold two-track", "AlphaFold complex prediction", "pMSA construction"]
+  },
+  "paper_002": {
+    "title": "Geometric deep learning: going beyond Euclidean data",
+    "key_insights": [
+      "Spectral and spatial convolution on graphs/manifolds",
+      "Graph CNNs for molecular data",
+      "SE(3) equivariance important for 3D structures",
+      "Local charting for manifold convolution"
+    ],
+    "relevant_methods": ["Graph CNNs", "Spectral convolution", "Geometric priors"]
+  },
+  "paper_003": {
+    "title": "Attention Is All You Need",
+    "key_insights": [
+      "Multi-head self-attention mechanism",
+      "Positional encoding for sequence order",
+      "Encoder-decoder architecture",
+      "Scaled dot-product attention"
+    ],
+    "relevant_methods": ["Multi-head attention", "Transformer blocks", "Positional encoding"]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "task": "Autonomous geometry theorem proving for IMO-AG-30",
+  "primary_methods": [
+    "Forward-chaining symbolic deduction with 43 inference rules",
+    "Coordinate geometry numerical verification",
+    "Construction-based fact extraction from definitions",
+    "Heuristic search strategies for proof exploration"
+  ],
+  "named_approaches": {
+    "symbolic_deduction": "Forward chaining using the 43 rules from rules.txt",
+    "algebraic_verification": "Randomized coordinate assignment + numerical checking",
+    "neuro_symbolic_combination": "Combined symbolic + algebraic approach"
+  },
+  "target_artifacts": [
+    "parsed_problems.json",
+    "parsed_rules.json",
+    "parsed_definitions.json",
+    "proof_results_enhanced.json",
+    "coord_verification_results.json",
+    "comprehensive_problem_table.json",
+    "analysis_stats.json",
+    "fig1-fig10 PNG figures",
+    "report.md"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "objective": "Optimal power dispatch for GB 20-node system under multiple scenarios",
+  "framework": "PyPSA v1.1+ with HiGHS solver",
+  "formulation": "Linear Optimal Power Flow (LOPF)",
+  "temporal_resolution": "hourly, 168 hours (1 week)",
+  "spatial_resolution": "20 buses, 23 transmission links",
+  "scenarios": [
+    "Baseline",
+    "High Renewable (3x wind)",
+    "Constrained Network (50% line capacity)",
+    "No Storage"
+  ],
+  "load_shedding": "Enabled at 6000 GBP/MWh (VoLL) to ensure feasibility",
+  "storage_modeling": "PHS with cyclic SOC, round-trip efficiency 0.75",
+  "network_model": "Lossless DC power flow approximation via links"
+}

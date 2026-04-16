@@ -1,0 +1,15 @@
+{
+  "dependency_check": {
+    "scanpy": {"available": true, "version": "installed"},
+    "anndata": {"available": true, "version": "installed"},
+    "numpy": {"available": true},
+    "pandas": {"available": true},
+    "matplotlib": {"available": true},
+    "seaborn": {"available": true},
+    "scipy": {"available": true},
+    "sklearn": {"available": true},
+    "scvelo": {"available": true},
+    "all_required_available": true,
+    "fallbacks_needed": false
+  }
+}

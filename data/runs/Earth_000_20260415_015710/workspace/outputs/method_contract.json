@@ -1,0 +1,26 @@
+{
+  "task": "Reconcile diverse observational methods to deliver consistent 2000-2023 global glacial mass change assessment",
+  "primary_data_source": "GlaMBIE Dataset v1.0.0 (DOI: 10.5904/wgms-glambie-2024-07)",
+  "observation_methods": [
+    "glaciological (in situ measurements)",
+    "DEM differencing (geodetic)",
+    "satellite altimetry",
+    "satellite gravimetry",
+    "combined/hybrid methods"
+  ],
+  "regions": 19,
+  "n_input_estimates": 257,
+  "temporal_resolution": "annual",
+  "output_units": [
+    "m w.e. (specific mass change)",
+    "Gt (total mass change)"
+  ],
+  "period": "2000-2023",
+  "key_analyses": [
+    "method_reconciliation",
+    "uncertainty_quantification",
+    "trend_and_acceleration_detection",
+    "regional_contribution_assessment",
+    "sea_level_equivalent_conversion"
+  ]
+}

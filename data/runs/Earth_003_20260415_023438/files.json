@@ -1,0 +1,286 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "data_utils.py",
+    "path": "code/data_utils.py",
+    "type": "file",
+    "size": 4788,
+    "mtime": 1776314516.0,
+    "exported": true
+  },
+  {
+    "name": "evaluate.py",
+    "path": "code/evaluate.py",
+    "type": "file",
+    "size": 10155,
+    "mtime": 1776314516.0,
+    "exported": true
+  },
+  {
+    "name": "forecast.py",
+    "path": "code/forecast.py",
+    "type": "file",
+    "size": 6534,
+    "mtime": 1776314516.0,
+    "exported": true
+  },
+  {
+    "name": "model.py",
+    "path": "code/model.py",
+    "type": "file",
+    "size": 10541,
+    "mtime": 1776314516.0,
+    "exported": true
+  },
+  {
+    "name": "plot_figures.py",
+    "path": "code/plot_figures.py",
+    "type": "file",
+    "size": 18950,
+    "mtime": 1776314516.0,
+    "exported": true
+  },
+  {
+    "name": "train_demo.py",
+    "path": "code/train_demo.py",
+    "type": "file",
+    "size": 4502,
+    "mtime": 1776314516.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "006.nc",
+    "path": "data/006.nc",
+    "type": "file",
+    "size": 18247988,
+    "mtime": 1772070968.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "20231012-06_input_netcdf.nc",
+    "path": "data/20231012-06_input_netcdf.nc",
+    "type": "file",
+    "size": 36492716,
+    "mtime": 1772070968.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "claim_recovery.json",
+    "path": "outputs/claim_recovery.json",
+    "type": "file",
+    "size": 1723,
+    "mtime": 1776314512.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 46,
+    "mtime": 1776314512.0,
+    "exported": true
+  },
+  {
+    "name": "evaluation_results.json",
+    "path": "outputs/evaluation_results.json",
+    "type": "file",
+    "size": 150744,
+    "mtime": 1776314514.0,
+    "exported": true
+  },
+  {
+    "name": "lats.npy",
+    "path": "outputs/lats.npy",
+    "type": "file",
+    "size": 852,
+    "mtime": 1776314514.0,
+    "exported": false
+  },
+  {
+    "name": "lons.npy",
+    "path": "outputs/lons.npy",
+    "type": "file",
+    "size": 1568,
+    "mtime": 1776314512.0,
+    "exported": false
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 77,
+    "mtime": 1776314512.0,
+    "exported": true
+  },
+  {
+    "name": "method_fidelity_checklist.json",
+    "path": "outputs/method_fidelity_checklist.json",
+    "type": "file",
+    "size": 1728,
+    "mtime": 1776314512.0,
+    "exported": true
+  },
+  {
+    "name": "model_info.json",
+    "path": "outputs/model_info.json",
+    "type": "file",
+    "size": 298,
+    "mtime": 1776314512.0,
+    "exported": true
+  },
+  {
+    "name": "related_work_contract.json",
+    "path": "outputs/related_work_contract.json",
+    "type": "file",
+    "size": 1189,
+    "mtime": 1776314512.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 96,
+    "mtime": 1776314512.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 959881,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1724303,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 8061234,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 4863089,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_rmse_curves.png",
+    "path": "report/images/fig1_rmse_curves.png",
+    "type": "file",
+    "size": 320989,
+    "mtime": 1776314514.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_acc_curves.png",
+    "path": "report/images/fig2_acc_curves.png",
+    "type": "file",
+    "size": 247742,
+    "mtime": 1776314514.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_spatial_forecasts.png",
+    "path": "report/images/fig3_spatial_forecasts.png",
+    "type": "file",
+    "size": 5067939,
+    "mtime": 1776314516.0,
+    "exported": false
+  },
+  {
+    "name": "fig4_cascade_comparison.png",
+    "path": "report/images/fig4_cascade_comparison.png",
+    "type": "file",
+    "size": 181674,
+    "mtime": 1776314514.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_error_growth_detail.png",
+    "path": "report/images/fig5_error_growth_detail.png",
+    "type": "file",
+    "size": 254227,
+    "mtime": 1776314514.0,
+    "exported": true
+  },
+  {
+    "name": "fig6_architecture.png",
+    "path": "report/images/fig6_architecture.png",
+    "type": "file",
+    "size": 117690,
+    "mtime": 1776314514.0,
+    "exported": true
+  },
+  {
+    "name": "fig7_data_overview.png",
+    "path": "report/images/fig7_data_overview.png",
+    "type": "file",
+    "size": 3792194,
+    "mtime": 1776314516.0,
+    "exported": false
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 17168,
+    "mtime": 1776314517.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5224,
+    "mtime": 1776191678.0,
+    "exported": true
+  }
+]

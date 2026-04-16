@@ -1,0 +1,81 @@
+{
+  "target_artifacts": [
+    {
+      "id": "hex_lattice_path_diagram",
+      "description": "Visualization of hexagonal lattice shell sequence paths",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig1_hexagonal_lattice_path.png"
+    },
+    {
+      "id": "size_mismatch_analysis",
+      "description": "Size mismatch values between adjacent shells with optimal ranges",
+      "type": "table_and_figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig2_size_mismatch_analysis.png"
+    },
+    {
+      "id": "shell_energy_comparison",
+      "description": "Shell energy relative values by chiral category",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig3_shell_energy_comparison.png"
+    },
+    {
+      "id": "experimental_validation",
+      "description": "Parity plot of theoretical vs experimental size mismatch",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig4_validation_parity_plot.png"
+    },
+    {
+      "id": "growth_dynamics",
+      "description": "Evolution of mismatch during growth simulation",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig5_growth_dynamics.png"
+    },
+    {
+      "id": "lj_potential_landscape",
+      "description": "LJ potential energy curves for key atomic pairs",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig6_lj_potential_landscape.png"
+    },
+    {
+      "id": "predicted_stable_clusters",
+      "description": "Predicted stable multi-shell icosahedral structures",
+      "type": "table_and_figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig7_predicted_clusters.png"
+    },
+    {
+      "id": "path_selection_stats",
+      "description": "Statistics of path selection in growth simulations",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig8_path_selection_stats.png"
+    },
+    {
+      "id": "magic_number_comparison",
+      "description": "Comparison of Mackay and b=5 magic number sequences",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig9_magic_number_comparison.png"
+    },
+    {
+      "id": "atomic_radii_compatibility",
+      "description": "Atomic radii bar chart and pair compatibility heatmap",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact_path": "report/images/fig10_atomic_radii_compatibility.png"
+    },
+    {
+      "id": "claim_recovery_table",
+      "description": "Table mapping claims to supporting artifacts",
+      "type": "table",
+      "status": "satisfied",
+      "artifact_path": "outputs/claim_recovery_table.json"
+    }
+  ]
+}

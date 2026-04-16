@@ -1,0 +1,54 @@
+{
+  "related_work_extracted": {
+    "paper_000": {
+      "title": "DeepPoseKit - animal pose estimation using deep learning",
+      "key_facts": ["Stacked DenseNet architecture for pose estimation", "Subpixel precision peak detection", "Multi-animal tracking capability"],
+      "relevance_to_task": "Provides context for pose estimation upstream of SimBA feature engineering"
+    },
+    "paper_001": {
+      "title": "MARS - Mouse Action Recognition System",
+      "key_facts": [
+        "Supervised classifiers for attack, mounting, close investigation",
+        "Random forest on pose-derived features achieves human-level performance",
+        "Inter-annotator variability quantified",
+        "9 keypoints per mouse in top view"
+      ],
+      "relevance_to_task": "Directly comparable pipeline; MARS uses RF on pose features for social behavior classification, same approach as SimBA"
+    },
+    "paper_002": {
+      "title": "DeepEthogram - supervised behavior classification from raw pixels",
+      "key_facts": [
+        "Classifies behaviors directly from raw video pixels",
+        "Uses Hidden Two-Stream Networks and temporal context",
+        "Achieves >90% accuracy on single frames",
+        "Less interpretable than pose-feature-based approaches"
+      ],
+      "relevance_to_task": "Alternative paradigm (pixel-based vs pose-feature-based); highlights SimBA's transparency advantage"
+    },
+    "paper_003": {
+      "title": "B-SOiD - unsupervised algorithm for behavior identification",
+      "key_facts": [
+        "Unsupervised clustering of pose patterns",
+        "Trains classifier on discovered clusters",
+        "Generalizes across subjects and labs",
+        "Provides sub-action categories"
+      ],
+      "relevance_to_task": "Contrasts with SimBA's supervised approach; B-SOiD discovers behaviors rather than classifying predefined ones"
+    },
+    "paper_004": {
+      "title": "SLEAP - multi-animal pose tracking",
+      "key_facts": [
+        "Unified top-down and bottom-up approaches",
+        "Real-time processing at >800 FPS",
+        "Multi-animal identity tracking",
+        "Closed-loop optogenetics demonstration"
+      ],
+      "relevance_to_task": "Upstream pose estimation tool compatible with SimBA workflow"
+    }
+  },
+  "additional_contract_implications": {
+    "baselines_from_related_work": ["MARS RF classifier as direct comparison baseline"],
+    "figure_families_from_related_work": ["ROC curves", "PR curves", "confusion matrices", "feature importance rankings"],
+    "comparison_axes": ["pose-feature-based vs pixel-based classification", "supervised vs unsupervised", "single-frame vs temporal models"]
+  }
+}

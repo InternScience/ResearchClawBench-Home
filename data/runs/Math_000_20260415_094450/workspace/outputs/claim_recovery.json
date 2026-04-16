@@ -1,0 +1,60 @@
+{
+  "claim_recovery_table": [
+    {
+      "claim_id": "C1",
+      "claim": "SparseTrack reduces ID switches compared to ByteTrack through hierarchical depth-based association",
+      "evidence": "NEGATIVE - SparseTrack L3 has 3733 ID switches vs ByteTrack 2151 vs SORT 758",
+      "artifact": "outputs/metrics_comparison.json",
+      "status": "refuted"
+    },
+    {
+      "claim_id": "C2",
+      "claim": "SparseTrack achieves higher MOTA than ByteTrack in dense occlusion scenarios",
+      "evidence": "NEGATIVE - SparseTrack L3 MOTA=0.388 vs ByteTrack MOTA=0.598 vs SORT MOTA=0.818",
+      "artifact": "outputs/metrics_comparison.json",
+      "status": "refuted"
+    },
+    {
+      "claim_id": "C3",
+      "claim": "Pseudo-depth decomposition creates sparser association problems within each layer",
+      "evidence": "SUPPORTED - Depth layering partitions 200 objects into ~67 per layer (L=3), reducing per-layer association complexity",
+      "artifact": "outputs/ablation_depth_layers.json",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C4",
+      "claim": "Increasing depth layers beyond optimal point degrades performance due to over-fragmentation",
+      "evidence": "SUPPORTED - MOTA decreases monotonically from L1 (0.598) to L10 (0.125)",
+      "artifact": "outputs/ablation_depth_layers.json",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C5",
+      "claim": "ByteTrack two-stage association outperforms single-stage SORT when using appropriate score thresholds",
+      "evidence": "MIXED - With score_threshold=0.1, ByteTrack equals SORT (MOTA=0.818). With higher thresholds, ByteTrack degrades.",
+      "artifact": "outputs/ablation_score_threshold.json",
+      "status": "partially_supported"
+    },
+    {
+      "claim_id": "C6",
+      "claim": "SORT achieves highest MOTA due to using all detections with a single association stage",
+      "evidence": "SUPPORTED - SORT with score_threshold=0.1 achieves MOTA=0.818, outperforming all other configurations",
+      "artifact": "outputs/metrics_comparison.json",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C7",
+      "claim": "SparseTrack maintains higher Mostly Tracked count than ByteTrack",
+      "evidence": "SUPPORTED - SparseTrack L3 MT=200 vs ByteTrack MT=167 (at score_threshold=0.2)",
+      "artifact": "outputs/metrics_comparison.json",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C8",
+      "claim": "IoU threshold affects all methods similarly, with optimal around 0.3",
+      "evidence": "PARTIALLY SUPPORTED - SORT peaks at IoU=0.3, ByteTrack at IoU=0.4, SparseTrack at IoU=0.3",
+      "artifact": "outputs/ablation_iou_threshold.json",
+      "status": "partially_supported"
+    }
+  ]
+}

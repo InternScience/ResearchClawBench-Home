@@ -1,0 +1,23 @@
+{
+  "task": "Investigate whether EDE can alleviate acoustic tension between CMB and BAO",
+  "named_methods": ["EDE (axion-like n=3)", "ΛCDM", "w0wa CDW"],
+  "data_sources": ["DESI DR2 BAO", "Planck CMB", "ACT DR6 CMB", "Union3 SNe"],
+  "primary_outputs": [
+    "Parameter constraints (Ωm, H0, σ8) for ΛCDM, EDE, w0wa",
+    "Δχ² comparison between models",
+    "EDE posterior (f_EDE, log10_ac)",
+    "Distance comparison plots (DV/rd, F_AP, Δμ)"
+  ],
+  "figure_families": [
+    "parameter_comparison_bars",
+    "H0_posterior_with_SH0ES",
+    "distance_comparison_3panel",
+    "EDE_2D_posterior",
+    "Omega_m_H0_ellipse",
+    "delta_chi2_bar",
+    "parameter_shifts_bar",
+    "EDE_evolution",
+    "S8_comparison",
+    "w0wa_posterior"
+  ]
+}

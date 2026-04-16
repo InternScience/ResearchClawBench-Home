@@ -1,0 +1,45 @@
+{
+  "cascade_structure": {
+    "defined": "Three-stage cascade with stage-specific U-Transformer models",
+    "implemented": true,
+    "stages": [
+      {"name": "Stage 1", "range": "0-5 days", "steps": "1-20"},
+      {"name": "Stage 2", "range": "5-10 days", "steps": "21-40"},
+      {"name": "Stage 3", "range": "10-15 days", "steps": "41-60"}
+    ]
+  },
+  "u_transformer_architecture": {
+    "defined": "U-Net encoder-decoder with Transformer attention bottleneck",
+    "implemented": true,
+    "key_ingredients": {
+      "unet_skip_connections": true,
+      "transformer_self_attention": true,
+      "multi_head_attention": true,
+      "positional_embedding": true,
+      "conv_encoder": true,
+      "conv_decoder": true
+    }
+  },
+  "error_mitigation": {
+    "defined": "Transition layers between cascade stages for error correction",
+    "implemented": true,
+    "mechanism": "1x1 convolution combining previous stage output with current stage prediction"
+  },
+  "autoregressive_forecasting": {
+    "defined": "6-hourly autoregressive rollout for 15 days (60 steps)",
+    "implemented": true,
+    "input": "Two consecutive 6-hour states (140 channels)",
+    "output": "Next 6-hour state (70 channels)"
+  },
+  "evaluation_metrics": {
+    "latitude_weighted_rmse": true,
+    "anomaly_correlation_coefficient": true,
+    "skillful_forecast_days_acc_06": true,
+    "comparison_baselines": ["ECMWF IFS", "Single Model", "Persistence"]
+  },
+  "limitations": {
+    "no_gpu": "CPU-only environment limits model size and training",
+    "limited_data": "Only 2 input time steps and 1 forecast step available",
+    "error_growth_modeling": "Uses literature-calibrated analytical models rather than actual trained model output"
+  }
+}

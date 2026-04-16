@@ -1,0 +1,23 @@
+{
+  "method": "Latent Ewald Summation (LES)",
+  "input": "Atomic configurations (positions, element types, PBC, total charge)",
+  "output": "Total potential energy, atomic forces, interpretable latent charges",
+  "key_ideas": [
+    "Learn latent charges from local atomic environments via neural network",
+    "Compute long-range electrostatic energy via Ewald summation with latent charges",
+    "Short-range energy from standard MLIP component",
+    "No explicit charge labels needed during training",
+    "Latent charges are interpretable and can derive dipole/quadrupole/BEC"
+  ],
+  "datasets": {
+    "random_charges": "100 structures, 128 atoms, ±1 charges, Coulomb+LJ",
+    "charged_dimer": "60 structures, 8 atoms, 2 charged dimers at varying separation",
+    "ag3_chargestates": "60 structures, 3 Ag atoms, charge states +1 and -1"
+  },
+  "figures_to_reproduce": [
+    "Fig 1: Latent charge recovery from random_charges data",
+    "Fig 3: Binding energy curve for charged dimer",
+    "Fig 5e: PES for Ag3 in different charge states"
+  ],
+  "baselines": ["Short-range only model", "LES model", "LES with charge embedding"]
+}

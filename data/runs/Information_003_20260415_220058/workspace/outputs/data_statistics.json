@@ -1,0 +1,40 @@
+{
+  "total_events": 148774,
+  "benign_count": 114716,
+  "attack_count": 34058,
+  "num_features": 40,
+  "num_nodes": 160277,
+  "attack_type_counts": {
+    "Backdoor": 380,
+    "Analysis": 341,
+    "Benign": 114716,
+    "DoS": 3666,
+    "Exploits": 1473,
+    "Fuzzers": 1009,
+    "Generic": 14688,
+    "Reconnaissance": 10910,
+    "Shellcode": 1427,
+    "Worms": 164
+  },
+  "few_shot_types": [
+    0,
+    1,
+    4,
+    5,
+    8,
+    9
+  ],
+  "normal_attack_types": [
+    3,
+    6,
+    7
+  ],
+  "timestamp_range": [
+    0,
+    86399
+  ],
+  "feature_range": [
+    0.0,
+    1.0
+  ]
+}

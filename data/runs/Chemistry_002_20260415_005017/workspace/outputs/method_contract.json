@@ -1,0 +1,60 @@
+{
+  "task": "HADDOCK-inspired analysis of barnase-barstar complex",
+  "method_contract": {
+    "named_framework": "HADDOCK/HADDOCK3",
+    "key_methods": [
+      "Ambiguous Interaction Restraints (AIRs)",
+      "HADDOCK scoring function (E_vdW, E_elec, E_desolv, E_AIR, BSA)",
+      "Interface detection via distance cutoff",
+      "Per-residue energy decomposition",
+      "DeltaDeltaG calculation from SKEMPI binding affinity data"
+    ],
+    "data_sources": ["1brs_AD.pdb", "skempi_v2.csv"],
+    "validation": "SKEMPI 2.0 experimental mutation data"
+  },
+  "target_artifact_inventory": {
+    "interface_residues": {"status": "satisfied", "path": "outputs/interface_residues.json"},
+    "mutation_data": {"status": "satisfied", "path": "outputs/mutation_data.json"},
+    "residue_ddG": {"status": "satisfied", "path": "outputs/residue_ddG.json"},
+    "residue_energy": {"status": "satisfied", "path": "outputs/residue_energy.json"},
+    "contacts": {"status": "satisfied", "path": "outputs/contacts.json"},
+    "fig1_interface_residues": {"status": "satisfied", "path": "report/images/fig1_interface_residues.png"},
+    "fig2_ddg_distribution": {"status": "satisfied", "path": "report/images/fig2_ddg_distribution.png"},
+    "fig3_per_residue_ddg": {"status": "satisfied", "path": "report/images/fig3_per_residue_ddg.png"},
+    "fig4_energy_vs_ddg": {"status": "satisfied", "path": "report/images/fig4_energy_vs_ddg.png"},
+    "fig5_location_classification": {"status": "satisfied", "path": "report/images/fig5_location_classification.png"},
+    "fig6_contact_map": {"status": "satisfied", "path": "report/images/fig6_contact_map.png"},
+    "fig7_haddock_scoring": {"status": "satisfied", "path": "report/images/fig7_haddock_scoring.png"},
+    "fig8_hotspot_map": {"status": "satisfied", "path": "report/images/fig8_hotspot_map.png"},
+    "fig9_electrostatics": {"status": "satisfied", "path": "report/images/fig9_electrostatics.png"},
+    "fig10_workflow": {"status": "satisfied", "path": "report/images/fig10_workflow.png"},
+    "analysis_code": {"status": "satisfied", "path": "code/analysis.py"},
+    "figures_code": {"status": "satisfied", "path": "code/generate_figures.py"},
+    "report": {"status": "satisfied", "path": "report/report.md"}
+  },
+  "dependency_check": {
+    "biopython": "available",
+    "numpy": "available",
+    "scipy": "available",
+    "matplotlib": "available",
+    "seaborn": "available",
+    "haddock3": "not_available - used HADDOCK-inspired scoring implemented from scratch"
+  },
+  "key_results": {
+    "total_interface_residues": 41,
+    "chain_a_interface": 22,
+    "chain_d_interface": 19,
+    "total_mutations_analyzed": 139,
+    "interface_mutations": 66,
+    "non_interface_mutations": 73,
+    "mean_ddG_all": 5.67,
+    "mean_ddG_interface": 6.11,
+    "mean_ddG_non_interface": 5.26,
+    "mann_whitney_p": 0.024,
+    "hotspot_residues_count": 14,
+    "air_energy": 81.85,
+    "approx_electrostatic_energy": -225.86,
+    "energy_ddG_correlation_r": 0.425,
+    "energy_ddG_correlation_p": 0.221
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "method_fidelity_checklist": {
+    "named_method": "MARL-LNS Hybrid",
+    "definition": "Two-phase MAPF solver: (1) MARL-inspired decentralized cooperative policy generates initial collision-reducing paths, (2) LNS framework with Prioritized Planning repairs remaining collisions",
+    "assumptions": [
+      "Grid-based discrete environment with 4-connected movement",
+      "Agents have distinct start and goal positions on free cells",
+      "Vertex and swapping collisions must be avoided",
+      "Time limit for computation"
+    ],
+    "invariants": [
+      "All agents must reach their goals in a valid solution",
+      "No vertex or swapping collisions in final solution",
+      "LNS iterations must not increase colliding pairs"
+    ],
+    "non_negotiable_steps": [
+      "Phase 1: Decentralized cooperative policy execution (MARL-inspired)",
+      "Phase 2: LNS iterative neighborhood selection and repair",
+      "Neighborhood selection targets colliding agents",
+      "PP-based replanning within neighborhoods",
+      "Acceptance criterion: new plan has <= colliding pairs than current"
+    ],
+    "deviations": [
+      "MARL component uses heuristic cooperative policy instead of trained neural network (no deep learning framework available)",
+      "Single-agent pathfinding uses Space-Time A* instead of SIPPS (simpler but functional)",
+      "Limited time budgets for each phase (20s total per instance)"
+    ]
+  }
+}

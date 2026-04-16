@@ -1,0 +1,43 @@
+{
+  "method_fidelity_checklist": {
+    "superradiance_condition": {
+      "definition": "omega/m < Omega_H for mode amplification",
+      "implemented": true,
+      "fidelity": "exact - uses standard Kerr metric formula"
+    },
+    "hydrogenic_approximation": {
+      "definition": "omega = mu*(1 - alpha^2/(2*n^2)) for alpha << 1",
+      "implemented": true,
+      "fidelity": "standard approximation, valid for alpha < 0.5; extended to alpha < 1.0 with caveats",
+      "deviation": "For alpha > 0.5, the hydrogenic approximation becomes less accurate. We cap alpha at sqrt(2*n^2)*0.99 to prevent unphysical results. Full numerical calculation would require solving the Teukolsky equation."
+    },
+    "regge_trajectory": {
+      "definition": "a*_crit = 2R/(1+R^2) where R = 2*alpha*(1-alpha^2/(2n^2))/m",
+      "implemented": true,
+      "fidelity": "analytic result from superradiance boundary condition"
+    },
+    "instability_timescale": {
+      "definition": "Gamma_SR ~ alpha^(4l+5) * mu * delta_a / (24*(l+1)^(4l+5))",
+      "implemented": true,
+      "fidelity": "leading-order approximation from Detweiler (1980) and Arvanitaki et al. (2010)",
+      "deviation": "Higher-order corrections and exact numerical factors are omitted. The timescale is approximate but sufficient for order-of-magnitude comparison with astrophysical timescales."
+    },
+    "bayesian_posterior_propagation": {
+      "definition": "P(excl|data,mu) = integral of indicator function over posterior p(M,a*|data)",
+      "implemented": true,
+      "fidelity": "exact Monte Carlo estimate using posterior samples",
+      "notes": "This is the key innovation: using full posterior distributions rather than point estimates"
+    },
+    "self_interaction_bosenova": {
+      "definition": "Superradiance shuts down when N_max > N_crit ~ (f_a/mu)^2",
+      "implemented": true,
+      "fidelity": "simplified model of bosenova shutdown",
+      "deviation": "The actual bosenova dynamics are more complex, involving periodic collapses and regrowth. Our treatment assumes complete shutdown, which is conservative."
+    },
+    "joint_constraints": {
+      "definition": "P_joint = 1 - (1-P1)*(1-P2) for independent observations",
+      "implemented": true,
+      "fidelity": "assumes independence of the two BH measurements"
+    }
+  }
+}

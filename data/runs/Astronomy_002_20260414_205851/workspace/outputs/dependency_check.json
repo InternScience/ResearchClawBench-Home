@@ -1,0 +1,21 @@
+# Dependency Check
+{
+  "dependencies": {
+    "numpy": {"available": true, "version": "installed"},
+    "scipy": {"available": true, "version": "installed"},
+    "matplotlib": {"available": true, "version": "installed"},
+    "json": {"available": true, "version": "stdlib"},
+    "os": {"available": true, "version": "stdlib"}
+  },
+  "methods_implemented": {
+    "generalized_least_squares": {"status": "implemented", "library": "scipy.optimize.minimize"},
+    "inverse_variance_weighting": {"status": "implemented", "library": "numpy"},
+    "hessian_error_estimation": {"status": "implemented", "library": "numpy"},
+    "hubble_intercept_method": {"status": "implemented", "library": "numpy"}
+  },
+  "limitations": {
+    "minimal_dataset": "The H0DN_MinimalDataset.txt provides a simplified/illustrative dataset with only 5 Hubble flow SNe and 3 SBF galaxies, leading to larger statistical uncertainties than the full analysis",
+    "zeropoint_offset": "The Hubble flow mB values in the minimal dataset appear to have a ~1.07 mag zeropoint offset relative to what would be expected for H0~73.5, resulting in H0~109 rather than the expected 73.5",
+    "no_SALT2_corrections": "The minimal dataset does not include SALT2 light-curve shape (x1) and color (c) parameters, which are needed for full SN Ia standardization"
+  }
+}

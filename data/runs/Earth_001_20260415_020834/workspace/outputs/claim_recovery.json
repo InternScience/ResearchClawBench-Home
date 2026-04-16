@@ -1,0 +1,40 @@
+{
+  "claim_recovery": [
+    {
+      "claim": "Spatial concentration in few states",
+      "evidence": "HHI = 0.1548; top 3 states = 58.5%; top 5 = 79.8%; effective N states = 6.46",
+      "source": "outputs/spatial_concentration.json, outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "Declining annual trend from early 2000s peak",
+      "evidence": "Peak 49 records in 2003; trough 12 in 2020; mean dropped from 41.6 (2005-2009) to 24.0 (2020-2025)",
+      "source": "outputs/annual_dynamics.json, outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "Snowpack/precipitation dominance",
+      "evidence": "Snowpack augmentation 39.18%, precipitation enhancement 26.92%, combined 15.38% = 81.5% total",
+      "source": "outputs/purpose_composition.json",
+      "verified": true
+    },
+    {
+      "claim": "Silver iodide dominance",
+      "evidence": "Pure AgI 62.6%; AgI in any combination 96.5% of records",
+      "source": "outputs/table_agent_apparatus.csv, outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "Ground-based apparatus dominance",
+      "evidence": "Ground 55.41%, airborne 28.4%, combined 15.7%",
+      "source": "outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "Winter seasonality",
+      "evidence": "71.15% of records in winter season",
+      "source": "outputs/summary_statistics.json, outputs/seasonal_patterns.json",
+      "verified": true
+    }
+  ]
+}

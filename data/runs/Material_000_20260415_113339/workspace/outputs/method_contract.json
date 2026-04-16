@@ -1,0 +1,33 @@
+{
+  "task": "AI-powered altermagnet discovery",
+  "methods": [
+    "Self-supervised GNN pre-training (contrastive + reconstruction)",
+    "Fine-tuning with focal loss and oversampling",
+    "Classical ML baselines (RF, GB, SVM)",
+    "Ensemble methods"
+  ],
+  "models": [
+    "CrystalGNN (GINEConv)",
+    "RandomForest",
+    "GradientBoosting",
+    "SVM"
+  ],
+  "data": {
+    "pretrain": 5000,
+    "finetune": 2000,
+    "candidate": 1000
+  },
+  "evaluation_metrics": [
+    "AUC-ROC",
+    "AP",
+    "F1",
+    "Precision@K",
+    "Recall@K"
+  ],
+  "key_findings": [
+    "Extreme class imbalance (~5% positive) makes discovery near-random",
+    "Pre-training improves fine-tuning dynamics and top-K retrieval",
+    "Structural features more discriminative than compositional features",
+    "GNN with pre-training: 5 TP in top-100 (Recall@100=0.116)"
+  ]
+}

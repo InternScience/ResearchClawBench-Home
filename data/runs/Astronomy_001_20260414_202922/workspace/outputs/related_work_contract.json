@@ -1,0 +1,32 @@
+{
+  "related_work_key_facts": {
+    "paper_000_Poulin2019": {
+      "contribution": "Original EDE proposal with axion-like field",
+      "key_result": "n=3 preferred, delta_chi2=-14.5 vs LCDM with Planck+BAO+Pantheon+SH0ES",
+      "f_EDE_needed": "~0.10 at z~5000",
+      "parameter_shifts": "omega_cdm increases ~10%, ns increases ~2%"
+    },
+    "paper_001_McDonough_review": {
+      "contribution": "Comprehensive review of EDE constraints",
+      "key_result": "LSS data tightens EDE bounds, f_EDE<0.053 without SH0ES",
+      "caveat": "Prior volume effects important but not dominant"
+    },
+    "paper_002_Ivanov2020": {
+      "contribution": "BOSS full-shape EFT analysis of EDE",
+      "key_result": "f_EDE<0.072 (95% CL) with Planck+BOSS, H0=68.54+0.52/-0.95",
+      "method": "EFT of LSS power spectrum"
+    },
+    "paper_003_Poulin_ACT_DESI": {
+      "contribution": "Impact of ACT DR6 and DESI DR2 on EDE",
+      "key_result": "EDE still viable, <2sigma tension with SH0ES for P-ACT+DESI DR2",
+      "profile_likelihood": "f_EDE=0.09+/-0.03, H0=71.0+/-1.1",
+      "delta_chi2": "-7.0 without SH0ES, -35.4 with SH0ES",
+      "key_insight": "EDE improves H0*rs consistency with DESI BAO"
+    }
+  },
+  "additional_contract_updates": {
+    "profile_likelihood_important": true,
+    "H0rs_tension_key_metric": true,
+    "prior_volume_effects": "significant in Bayesian analysis without SH0ES"
+  }
+}

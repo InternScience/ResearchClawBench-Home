@@ -1,0 +1,28 @@
+{
+  "task": "Observe Floquet-Bloch states in monolayer epitaxial graphene via tr-ARPES",
+  "input_parameters": {
+    "material": "Monolayer epitaxial graphene",
+    "pump_wavelength": "5 \u03bcm (mid-infrared)",
+    "pump_photon_energy": "0.248 eV",
+    "measurement_technique": "tr-ARPES"
+  },
+  "scientific_goals": [
+    "Confirm existence of Floquet-Bloch states (replica bands of Dirac cone)",
+    "Elucidate scattering mechanism involving Volkov final states"
+  ],
+  "key_analyses": [
+    "Energy-momentum resolved ARPES spectrum comparison (pump-off vs pump-on)",
+    "Identification of replica bands at n*\u210f\u03c9 energy shifts",
+    "Avoided crossing detection between n=0 and n=\u00b11 bands",
+    "Polarization dependence analysis of replica intensity",
+    "Volkov vs Floquet-Bloch state discrimination via polarization pattern"
+  ],
+  "target_artifacts": [
+    "ARPES spectrum comparison figure",
+    "Difference spectrum with replica identification",
+    "Band structure overlay with theoretical Floquet-Bloch bands",
+    "Polarization dependence figure with cos\u00b2(2\u03b8) fit",
+    "Avoided crossing analysis",
+    "Scattering mechanism schematic"
+  ]
+}

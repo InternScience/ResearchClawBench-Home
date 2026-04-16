@@ -1,0 +1,24 @@
+{
+  "figures": [
+    "report/images/network_topology.png",
+    "report/images/demand_wind_profiles.png",
+    "report/images/dispatch_stack_baseline.png",
+    "report/images/scenario_comparison.png",
+    "report/images/curtailment_analysis.png",
+    "report/images/dispatch_stack_high_renewable.png",
+    "report/images/storage_soc.png",
+    "report/images/line_utilization.png",
+    "report/images/bus_level_capacity.png",
+    "report/images/constrained_vs_baseline.png",
+    "report/images/load_shedding.png",
+    "report/images/wind_availability_dispatch.png"
+  ],
+  "data_tables": [
+    "outputs/generation_mix.csv",
+    "outputs/bus_results.csv",
+    "outputs/scenario_summary.json"
+  ],
+  "code": [
+    "code/main_analysis.py"
+  ]
+}

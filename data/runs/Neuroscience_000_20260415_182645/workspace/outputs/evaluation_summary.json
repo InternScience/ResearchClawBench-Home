@@ -1,0 +1,114 @@
+{
+  "Attack": {
+    "Random Forest": {
+      "accuracy": 0.9172,
+      "precision": 0.8364,
+      "recall": 0.9388,
+      "f1": 0.8846,
+      "roc_auc": 0.9362,
+      "pr_auc": 0.7819,
+      "confusion_matrix": [
+        [
+          261,
+          27
+        ],
+        [
+          9,
+          138
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.892,
+      "precision": 0.8425,
+      "recall": 0.8367,
+      "f1": 0.8396,
+      "roc_auc": 0.9335,
+      "pr_auc": 0.7734,
+      "confusion_matrix": [
+        [
+          265,
+          23
+        ],
+        [
+          24,
+          123
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.7793,
+      "precision": 0.6545,
+      "recall": 0.7347,
+      "f1": 0.6923,
+      "roc_auc": 0.8421,
+      "pr_auc": 0.7089,
+      "confusion_matrix": [
+        [
+          231,
+          57
+        ],
+        [
+          39,
+          108
+        ]
+      ]
+    }
+  },
+  "Sniffing": {
+    "Random Forest": {
+      "accuracy": 0.9586,
+      "precision": 0.7941,
+      "recall": 0.931,
+      "f1": 0.8571,
+      "roc_auc": 0.9784,
+      "pr_auc": 0.7806,
+      "confusion_matrix": [
+        [
+          363,
+          14
+        ],
+        [
+          4,
+          54
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9356,
+      "precision": 0.7885,
+      "recall": 0.7069,
+      "f1": 0.7455,
+      "roc_auc": 0.9769,
+      "pr_auc": 0.7931,
+      "confusion_matrix": [
+        [
+          366,
+          11
+        ],
+        [
+          17,
+          41
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8,
+      "precision": 0.3802,
+      "recall": 0.7931,
+      "f1": 0.514,
+      "roc_auc": 0.8862,
+      "pr_auc": 0.5126,
+      "confusion_matrix": [
+        [
+          302,
+          75
+        ],
+        [
+          12,
+          46
+        ]
+      ]
+    }
+  }
+}

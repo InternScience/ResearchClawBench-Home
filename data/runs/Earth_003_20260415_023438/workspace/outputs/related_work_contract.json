@@ -1,0 +1,22 @@
+{
+  "paper_000": {
+    "title": "Can deep learning beat numerical weather prediction?",
+    "authors": "Schultz et al., 2021",
+    "key_insights": ["DL models can potentially replace NWP workflow components", "Error accumulation in autoregressive forecasting is a key challenge"]
+  },
+  "paper_001": {
+    "title": "Challenges and design choices for global weather and climate models based on ML",
+    "authors": "Dueben and Bauer, 2018",
+    "key_insights": ["NN weather models need to handle non-linear dynamics", "Error growth is a fundamental challenge for ML forecasts"]
+  },
+  "paper_002": {
+    "title": "FourCastNet: Global data-driven high-resolution weather model using AFNO",
+    "authors": "Pathak et al., 2022",
+    "key_insights": ["AFNO model at 0.25 degree resolution", "Matches ECMWF IFS at short lead times", "Z500 ACC > 0.6 for about 5-7 days"]
+  },
+  "paper_003": {
+    "title": "FengWu: Pushing skillful global medium-range weather forecast beyond 10 days",
+    "authors": "Chen et al., 2023",
+    "key_insights": ["Multi-modal multi-task learning approach", "Z500 skillful forecast lead time: 10.75 days (ACC > 0.6)", "Replay buffer for long-lead predictions"]
+  }
+}

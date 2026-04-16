@@ -1,0 +1,1796 @@
+[
+  {
+    "raw": "perp A B C D, perp C D E F, ncoll A B E => para A B E F",
+    "premises": [
+      {
+        "predicate": "perp",
+        "args": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "E"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "para",
+      "args": [
+        "A",
+        "B",
+        "E",
+        "F"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "cong O A O B, cong O B O C, cong O C O D => cyclic A B C D",
+    "premises": [
+      {
+        "predicate": "cong",
+        "args": [
+          "O",
+          "A",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "O",
+          "B",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "O",
+          "C",
+          "O",
+          "D"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cyclic",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqangle A B P Q C D P Q => para A B C D",
+    "premises": [
+      {
+        "predicate": "eqangle",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q",
+          "C",
+          "D",
+          "P",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "para",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "num_premises": 1
+  },
+  {
+    "raw": "cyclic A B P Q => eqangle P A P B Q A Q B",
+    "premises": [
+      {
+        "predicate": "cyclic",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "P",
+        "A",
+        "P",
+        "B",
+        "Q",
+        "A",
+        "Q",
+        "B"
+      ]
+    },
+    "num_premises": 1
+  },
+  {
+    "raw": "eqangle6 P A P B Q A Q B, ncoll P Q A B => cyclic A B P Q",
+    "premises": [
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "P",
+          "A",
+          "P",
+          "B",
+          "Q",
+          "A",
+          "Q",
+          "B"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "P",
+          "Q",
+          "A",
+          "B"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cyclic",
+      "args": [
+        "A",
+        "B",
+        "P",
+        "Q"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "cyclic A B C P Q R, eqangle C A C B R P R Q => cong A B P Q",
+    "premises": [
+      {
+        "predicate": "cyclic",
+        "args": [
+          "A",
+          "B",
+          "C",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "eqangle",
+        "args": [
+          "C",
+          "A",
+          "C",
+          "B",
+          "R",
+          "P",
+          "R",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "A",
+        "B",
+        "P",
+        "Q"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "midp E A B, midp F A C => para E F B C",
+    "premises": [
+      {
+        "predicate": "midp",
+        "args": [
+          "E",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "predicate": "midp",
+        "args": [
+          "F",
+          "A",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "para",
+      "args": [
+        "E",
+        "F",
+        "B",
+        "C"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "para A B C D, coll O A C, coll O B D => eqratio3 A B C D O O",
+    "premises": [
+      {
+        "predicate": "para",
+        "args": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "O",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "O",
+          "B",
+          "D"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqratio3",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "O",
+        "O"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "perp A B C D, perp E F G H, npara A B E F => eqangle A B E F C D G H",
+    "premises": [
+      {
+        "predicate": "perp",
+        "args": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "E",
+          "F",
+          "G",
+          "H"
+        ]
+      },
+      {
+        "predicate": "npara",
+        "args": [
+          "A",
+          "B",
+          "E",
+          "F"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "C",
+        "D",
+        "G",
+        "H"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqangle a b c d m n p q, eqangle c d e f p q r u => eqangle a b e f m n r u",
+    "premises": [
+      {
+        "predicate": "eqangle",
+        "args": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "m",
+          "n",
+          "p",
+          "q"
+        ]
+      },
+      {
+        "predicate": "eqangle",
+        "args": [
+          "c",
+          "d",
+          "e",
+          "f",
+          "p",
+          "q",
+          "r",
+          "u"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "a",
+        "b",
+        "e",
+        "f",
+        "m",
+        "n",
+        "r",
+        "u"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "eqratio a b c d m n p q, eqratio c d e f p q r u => eqratio a b e f m n r u",
+    "premises": [
+      {
+        "predicate": "eqratio",
+        "args": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "m",
+          "n",
+          "p",
+          "q"
+        ]
+      },
+      {
+        "predicate": "eqratio",
+        "args": [
+          "c",
+          "d",
+          "e",
+          "f",
+          "p",
+          "q",
+          "r",
+          "u"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqratio",
+      "args": [
+        "a",
+        "b",
+        "e",
+        "f",
+        "m",
+        "n",
+        "r",
+        "u"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "eqratio6 d b d c a b a c, coll d b c, ncoll a b c => eqangle6 a b a d a d a c",
+    "premises": [
+      {
+        "predicate": "eqratio6",
+        "args": [
+          "d",
+          "b",
+          "d",
+          "c",
+          "a",
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle6",
+      "args": [
+        "a",
+        "b",
+        "a",
+        "d",
+        "a",
+        "d",
+        "a",
+        "c"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqangle6 a b a d a d a c, coll d b c, ncoll a b c => eqratio6 d b d c a b a c",
+    "premises": [
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "a",
+          "b",
+          "a",
+          "d",
+          "a",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqratio6",
+      "args": [
+        "d",
+        "b",
+        "d",
+        "c",
+        "a",
+        "b",
+        "a",
+        "c"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "cong O A O B, ncoll O A B => eqangle O A A B A B O B",
+    "premises": [
+      {
+        "predicate": "cong",
+        "args": [
+          "O",
+          "A",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "O",
+          "A",
+          "B"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "O",
+        "A",
+        "A",
+        "B",
+        "A",
+        "B",
+        "O",
+        "B"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "eqangle6 A O A B B A B O, ncoll O A B => cong O A O B",
+    "premises": [
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "A",
+          "O",
+          "A",
+          "B",
+          "B",
+          "A",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "O",
+          "A",
+          "B"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "O",
+        "A",
+        "O",
+        "B"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "circle O A B C, perp O A A X => eqangle A X A B C A C B",
+    "premises": [
+      {
+        "predicate": "circle",
+        "args": [
+          "O",
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "O",
+          "A",
+          "A",
+          "X"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "A",
+        "X",
+        "A",
+        "B",
+        "C",
+        "A",
+        "C",
+        "B"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "circle O A B C, eqangle A X A B C A C B => perp O A A X",
+    "premises": [
+      {
+        "predicate": "circle",
+        "args": [
+          "O",
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "eqangle",
+        "args": [
+          "A",
+          "X",
+          "A",
+          "B",
+          "C",
+          "A",
+          "C",
+          "B"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "perp",
+      "args": [
+        "O",
+        "A",
+        "A",
+        "X"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "circle O A B C, midp M B C => eqangle A B A C O B O M",
+    "premises": [
+      {
+        "predicate": "circle",
+        "args": [
+          "O",
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "midp",
+        "args": [
+          "M",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "A",
+        "B",
+        "A",
+        "C",
+        "O",
+        "B",
+        "O",
+        "M"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "circle O A B C, coll M B C, eqangle A B A C O B O M => midp M B C",
+    "premises": [
+      {
+        "predicate": "circle",
+        "args": [
+          "O",
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "M",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "eqangle",
+        "args": [
+          "A",
+          "B",
+          "A",
+          "C",
+          "O",
+          "B",
+          "O",
+          "M"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "midp",
+      "args": [
+        "M",
+        "B",
+        "C"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "perp A B B C, midp M A C => cong A M B M",
+    "premises": [
+      {
+        "predicate": "perp",
+        "args": [
+          "A",
+          "B",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "midp",
+        "args": [
+          "M",
+          "A",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "A",
+        "M",
+        "B",
+        "M"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "circle O A B C, coll O A C => perp A B B C",
+    "premises": [
+      {
+        "predicate": "circle",
+        "args": [
+          "O",
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "O",
+          "A",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "perp",
+      "args": [
+        "A",
+        "B",
+        "B",
+        "C"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "cyclic A B C D, para A B C D => eqangle A D C D C D C B",
+    "premises": [
+      {
+        "predicate": "cyclic",
+        "args": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "A",
+        "D",
+        "C",
+        "D",
+        "C",
+        "D",
+        "C",
+        "B"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "midp M A B, perp O M A B => cong O A O B",
+    "premises": [
+      {
+        "predicate": "midp",
+        "args": [
+          "M",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "O",
+          "M",
+          "A",
+          "B"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "O",
+        "A",
+        "O",
+        "B"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "cong A P B P, cong A Q B Q => perp A B P Q",
+    "premises": [
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "P",
+          "B",
+          "P"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "Q",
+          "B",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "perp",
+      "args": [
+        "A",
+        "B",
+        "P",
+        "Q"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "cong A P B P, cong A Q B Q, cyclic A B P Q => perp P A A Q",
+    "premises": [
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "P",
+          "B",
+          "P"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "Q",
+          "B",
+          "Q"
+        ]
+      },
+      {
+        "predicate": "cyclic",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "perp",
+      "args": [
+        "P",
+        "A",
+        "A",
+        "Q"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "midp M A B, midp M C D => para A C B D",
+    "premises": [
+      {
+        "predicate": "midp",
+        "args": [
+          "M",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "predicate": "midp",
+        "args": [
+          "M",
+          "C",
+          "D"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "para",
+      "args": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "midp M A B, para A C B D, para A D B C => midp M C D",
+    "premises": [
+      {
+        "predicate": "midp",
+        "args": [
+          "M",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "A",
+          "C",
+          "B",
+          "D"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "A",
+          "D",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "midp",
+      "args": [
+        "M",
+        "C",
+        "D"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqratio O A A C O B B D, coll O A C, coll O B D, ncoll A B C, sameside A O C B O D => para A B C D",
+    "premises": [
+      {
+        "predicate": "eqratio",
+        "args": [
+          "O",
+          "A",
+          "A",
+          "C",
+          "O",
+          "B",
+          "B",
+          "D"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "O",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "O",
+          "B",
+          "D"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "sameside",
+        "args": [
+          "A",
+          "O",
+          "C",
+          "B",
+          "O",
+          "D"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "para",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "num_premises": 5
+  },
+  {
+    "raw": "para A B A C => coll A B C",
+    "premises": [
+      {
+        "predicate": "para",
+        "args": [
+          "A",
+          "B",
+          "A",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "num_premises": 1
+  },
+  {
+    "raw": "midp M A B, midp N C D => eqratio M A A B N C C D",
+    "premises": [
+      {
+        "predicate": "midp",
+        "args": [
+          "M",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "predicate": "midp",
+        "args": [
+          "N",
+          "C",
+          "D"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqratio",
+      "args": [
+        "M",
+        "A",
+        "A",
+        "B",
+        "N",
+        "C",
+        "C",
+        "D"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "eqangle A B P Q C D U V, perp P Q U V => perp A B C D",
+    "premises": [
+      {
+        "predicate": "eqangle",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q",
+          "C",
+          "D",
+          "U",
+          "V"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "P",
+          "Q",
+          "U",
+          "V"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "perp",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "eqratio A B P Q C D U V, cong P Q U V => cong A B C D",
+    "premises": [
+      {
+        "predicate": "eqratio",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q",
+          "C",
+          "D",
+          "U",
+          "V"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "P",
+          "Q",
+          "U",
+          "V"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "num_premises": 2
+  },
+  {
+    "raw": "cong A B P Q, cong B C Q R, cong C A R P, ncoll A B C => contri* A B C P Q R",
+    "premises": [
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "B",
+          "C",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "C",
+          "A",
+          "R",
+          "P"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "contri* A B C P Q R",
+      "args": []
+    },
+    "num_premises": 4
+  },
+  {
+    "raw": "cong A B P Q, cong B C Q R, eqangle6 B A B C Q P Q R, ncoll A B C => contri* A B C P Q R",
+    "premises": [
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "B",
+          "C",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "contri* A B C P Q R",
+      "args": []
+    },
+    "num_premises": 4
+  },
+  {
+    "raw": "eqangle6 B A B C Q P Q R, eqangle6 C A C B R P R Q, ncoll A B C => simtri A B C P Q R",
+    "premises": [
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "C",
+          "A",
+          "C",
+          "B",
+          "R",
+          "P",
+          "R",
+          "Q"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "simtri",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "P",
+        "Q",
+        "R"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqangle6 B A B C Q R Q P, eqangle6 C A C B R Q R P, ncoll A B C => simtri2 A B C P Q R",
+    "premises": [
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "R",
+          "Q",
+          "P"
+        ]
+      },
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "C",
+          "A",
+          "C",
+          "B",
+          "R",
+          "Q",
+          "R",
+          "P"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "simtri2",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "P",
+        "Q",
+        "R"
+      ]
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqangle6 B A B C Q P Q R, eqangle6 C A C B R P R Q, ncoll A B C, cong A B P Q => contri A B C P Q R",
+    "premises": [
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "C",
+          "A",
+          "C",
+          "B",
+          "R",
+          "P",
+          "R",
+          "Q"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "contri",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "P",
+        "Q",
+        "R"
+      ]
+    },
+    "num_premises": 4
+  },
+  {
+    "raw": "eqangle6 B A B C Q R Q P, eqangle6 C A C B R Q R P, ncoll A B C, cong A B P Q => contri2 A B C P Q R",
+    "premises": [
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "R",
+          "Q",
+          "P"
+        ]
+      },
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "C",
+          "A",
+          "C",
+          "B",
+          "R",
+          "Q",
+          "R",
+          "P"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "contri2",
+      "args": [
+        "A",
+        "B",
+        "C",
+        "P",
+        "Q",
+        "R"
+      ]
+    },
+    "num_premises": 4
+  },
+  {
+    "raw": "eqratio6 B A B C Q P Q R, eqratio6 C A C B R P R Q, ncoll A B C => simtri* A B C P Q R",
+    "premises": [
+      {
+        "predicate": "eqratio6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "eqratio6",
+        "args": [
+          "C",
+          "A",
+          "C",
+          "B",
+          "R",
+          "P",
+          "R",
+          "Q"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "simtri* A B C P Q R",
+      "args": []
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqratio6 B A B C Q P Q R, eqangle6 B A B C Q P Q R, ncoll A B C => simtri* A B C P Q R",
+    "premises": [
+      {
+        "predicate": "eqratio6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "eqangle6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "simtri* A B C P Q R",
+      "args": []
+    },
+    "num_premises": 3
+  },
+  {
+    "raw": "eqratio6 B A B C Q P Q R, eqratio6 C A C B R P R Q, ncoll A B C, cong A B P Q => contri* A B C P Q R",
+    "premises": [
+      {
+        "predicate": "eqratio6",
+        "args": [
+          "B",
+          "A",
+          "B",
+          "C",
+          "Q",
+          "P",
+          "Q",
+          "R"
+        ]
+      },
+      {
+        "predicate": "eqratio6",
+        "args": [
+          "C",
+          "A",
+          "C",
+          "B",
+          "R",
+          "P",
+          "R",
+          "Q"
+        ]
+      },
+      {
+        "predicate": "ncoll",
+        "args": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "predicate": "cong",
+        "args": [
+          "A",
+          "B",
+          "P",
+          "Q"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "contri* A B C P Q R",
+      "args": []
+    },
+    "num_premises": 4
+  },
+  {
+    "raw": "para a b c d, coll m a d, coll n b c, eqratio6 m a m d n b n c, sameside m a d n b c => para m n a b",
+    "premises": [
+      {
+        "predicate": "para",
+        "args": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "m",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "n",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "eqratio6",
+        "args": [
+          "m",
+          "a",
+          "m",
+          "d",
+          "n",
+          "b",
+          "n",
+          "c"
+        ]
+      },
+      {
+        "predicate": "sameside",
+        "args": [
+          "m",
+          "a",
+          "d",
+          "n",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "para",
+      "args": [
+        "m",
+        "n",
+        "a",
+        "b"
+      ]
+    },
+    "num_premises": 5
+  },
+  {
+    "raw": "para a b c d, coll m a d, coll n b c, para m n a b => eqratio6 m a m d n b n c",
+    "premises": [
+      {
+        "predicate": "para",
+        "args": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "m",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "coll",
+        "args": [
+          "n",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "m",
+          "n",
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqratio6",
+      "args": [
+        "m",
+        "a",
+        "m",
+        "d",
+        "n",
+        "b",
+        "n",
+        "c"
+      ]
+    },
+    "num_premises": 4
+  }
+]

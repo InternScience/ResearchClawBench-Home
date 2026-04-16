@@ -1,0 +1,17 @@
+{
+  "task": "AI-guided inverse-design framework for recyclable vitrimeric polymers",
+  "named_methods": {
+    "molecular_dynamics": "MD simulations provide raw Tg estimates",
+    "gaussian_process_calibration": "GP regression mapping MD Tg to experimental Tg",
+    "graph_variational_autoencoder": "Graph VAE for molecular latent space representation and generation",
+    "inverse_design": "Latent space optimization targeting desired Tg ranges"
+  },
+  "data_sources": {
+    "tg_calibration": "295 polymers with experimental and MD Tg values",
+    "tg_vitrimer_MD": "8424 vitrimer systems (acid+epoxide pairs) with MD Tg values"
+  },
+  "target_properties": {
+    "Tg": "Glass transition temperature (K)"
+  },
+  "validation_approach": "Comparison of predicted vs calibrated/experimental Tg for generated candidates"
+}

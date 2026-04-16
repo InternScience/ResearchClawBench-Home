@@ -1,0 +1,43 @@
+{
+  "rdkit": {
+    "available": true,
+    "version": "installed",
+    "usage": "Molecular parsing, fingerprints, descriptors"
+  },
+  "torch": {
+    "available": true,
+    "version": "2.11.0+cu130",
+    "usage": "Graph VAE model"
+  },
+  "torch_geometric": {
+    "available": true,
+    "version": "2.7.0",
+    "usage": "GCN layers for graph encoding"
+  },
+  "sklearn": {
+    "available": true,
+    "version": "1.8.0",
+    "usage": "GP calibration, GB surrogate, PCA, metrics"
+  },
+  "matplotlib": {
+    "available": true,
+    "version": "installed",
+    "usage": "Figure generation"
+  },
+  "numpy": {
+    "available": true,
+    "version": "2.4.3",
+    "usage": "Numerical computation"
+  },
+  "pandas": {
+    "available": true,
+    "version": "installed",
+    "usage": "Data handling"
+  },
+  "limitations": [
+    "GP surrogate on full dataset was too slow; used GradientBoosting instead",
+    "GP calibration R2=0.676 reflects inherent MD-to-experiment gap",
+    "Decoding from latent space uses nearest-neighbor matching rather than direct SMILES generation",
+    "Experimental validation is simulated for novel candidates"
+  ]
+}

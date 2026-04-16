@@ -1,0 +1,28 @@
+{
+  "method_contract": {
+    "task": "Investigate training-free task-guided cropping framework for fine-grained perception in MLLMs",
+    "scientific_objective": "Mitigate information loss from fixed-resolution vision encoders (CLIP) when processing small objects",
+    "named_methods": ["V* visual search", "SEAL meta-architecture", "task-guided cropping", "Visual Working Memory"],
+    "comparison_axes": ["resolution bottleneck quantification", "detail preservation comparison", "search efficiency"]
+  },
+  "target_artifact_inventory": {
+    "resolution_metrics_json": {"satisfied": true, "path": "outputs/resolution_metrics.json"},
+    "detail_preservation_metrics_json": {"satisfied": true, "path": "outputs/detail_preservation_metrics.json"},
+    "analysis_summary_json": {"satisfied": true, "path": "outputs/analysis_summary.json"},
+    "resolution_comparison_demo1_png": {"satisfied": true, "path": "report/images/resolution_comparison_demo1.png"},
+    "resolution_comparison_demo2_png": {"satisfied": true, "path": "report/images/resolution_comparison_demo2.png"},
+    "quality_vs_resolution_png": {"satisfied": true, "path": "report/images/quality_vs_resolution.png"},
+    "task_guided_cropping_demo1_png": {"satisfied": true, "path": "report/images/task_guided_cropping_demo1.png"},
+    "task_guided_cropping_demo2_png": {"satisfied": true, "path": "report/images/task_guided_cropping_demo2.png"},
+    "detail_comparison_demo1_region1_png": {"satisfied": true, "path": "report/images/detail_comparison_demo1_region1.png"},
+    "detail_comparison_demo2_region1_png": {"satisfied": true, "path": "report/images/detail_comparison_demo2_region1.png"},
+    "detail_preservation_barchart_png": {"satisfied": true, "path": "report/images/detail_preservation_barchart.png"},
+    "pixel_budget_analysis_png": {"satisfied": true, "path": "report/images/pixel_budget_analysis.png"},
+    "framework_architecture_png": {"satisfied": true, "path": "report/images/framework_architecture.png"},
+    "vstar_bench_performance_png": {"satisfied": true, "path": "report/images/vstar_bench_performance.png"},
+    "search_efficiency_png": {"satisfied": true, "path": "report/images/search_efficiency.png"},
+    "resolution_ablation_monkey_png": {"satisfied": true, "path": "report/images/resolution_ablation_monkey.png"},
+    "report_md": {"satisfied": true, "path": "report/report.md"},
+    "analysis_code_py": {"satisfied": true, "path": "code/analysis.py"}
+  }
+}

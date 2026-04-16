@@ -1,0 +1,52 @@
+[
+  {
+    "claim": "Under SSP5-8.5, nearly half (48.6%) of global mangroves face High or Very High composite risk by 2100",
+    "evidence": "outputs/composite_risk_summary.json",
+    "verified": true
+  },
+  {
+    "claim": "Under SSP2-4.5, 19.4% of mangroves face High or Very High risk",
+    "evidence": "outputs/composite_risk_summary.json",
+    "verified": true
+  },
+  {
+    "claim": "SLR is the dominant risk driver at most mangrove locations",
+    "evidence": "report/images/fig12_risk_contribution.png",
+    "verified": true
+  },
+  {
+    "claim": "56% of mangroves are exposed to major tropical cyclones (Cat 3+)",
+    "evidence": "outputs/tc_summary.json",
+    "verified": true
+  },
+  {
+    "claim": "Under SSP5-8.5, 99.3% of mangroves experience SLR rates >=7 mm/yr (deficit highly likely threshold)",
+    "evidence": "outputs/slr_summary.json",
+    "verified": true
+  },
+  {
+    "claim": "Caribbean and Pacific Island nations are most at risk",
+    "evidence": "outputs/country_risk_summary.json",
+    "verified": true
+  },
+  {
+    "claim": "Cuba has the largest mangrove area (342,417 ha) at 100% High+Very High risk under SSP5-8.5",
+    "evidence": "outputs/country_risk_summary.json",
+    "verified": true
+  },
+  {
+    "claim": "At-risk mangrove area increases from ~29,000 km2 (SSP2-4.5) to ~73,000 km2 (SSP5-8.5)",
+    "evidence": "outputs/ecosystem_service_risk.json",
+    "verified": true
+  },
+  {
+    "claim": "SE Asia & Australia and Pacific Islands have highest regional CRI under SSP5-8.5",
+    "evidence": "outputs/regional_summary.json",
+    "verified": true
+  },
+  {
+    "claim": "Meeting Paris Agreement targets (SSP2-4.5) would significantly reduce mangrove risk compared to SSP5-8.5",
+    "evidence": "outputs/composite_risk_summary.json",
+    "verified": true
+  }
+]

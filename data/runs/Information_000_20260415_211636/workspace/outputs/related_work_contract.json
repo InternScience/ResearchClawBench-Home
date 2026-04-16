@@ -1,0 +1,47 @@
+{
+  "related_work_extraction": {
+    "paper_000_chameleon": {
+      "key_relevance": "Early-fusion token-based mixed-modal model - the primary single-encoder baseline",
+      "architecture": "Shared Transformer with discrete image tokens (BPE tokenizer, 8192 image codebook)",
+      "key_innovations": ["QK-norm", "norm reordering (Swin-style)", "z-loss regularization"],
+      "limitations": ["OCR weakness from tokenizer", "training instability requiring careful norm control", "modality competition in softmax"],
+      "performance": {
+        "VQA": "State-of-the-art on VQA and captioning benchmarks",
+        "generation": "Non-trivial image generation but not competitive with dedicated models",
+        "text": "Competitive with Mixtral 8x7B and Gemini-Pro"
+      }
+    },
+    "paper_001_llava": {
+      "key_relevance": "Late-fusion understanding-only approach - understanding encoder baseline",
+      "architecture": "CLIP ViT visual encoder + Vicuna LLM with linear projection",
+      "key_innovations": ["Visual instruction tuning with GPT-4 generated data", "two-stage training"],
+      "limitations": ["No generation capability", "single visual encoder for understanding only"],
+      "performance": {
+        "ScienceQA": "92.53% with GPT-4 ensemble",
+        "chat": "85.1% relative score vs GPT-4 on LLaVA-Bench"
+      }
+    },
+    "paper_002_siglip": {
+      "key_relevance": "Sigmoid loss for contrastive learning - relevant to understanding encoder training",
+      "architecture": "ViT image encoder + Transformer text encoder with sigmoid contrastive loss",
+      "key_innovations": ["Sigmoid loss replacing softmax", "chunked memory-efficient implementation", "bias term initialization"],
+      "insights_for_dve": "Understanding encoder should use sigmoid contrastive loss for better small-batch performance and noise robustness"
+    },
+    "paper_003_llamagen": {
+      "key_relevance": "Autoregressive generation-only approach - generation pathway baseline",
+      "architecture": "Llama architecture with VQGAN-style image tokenizer (downsample 16, codebook 16384)",
+      "key_innovations": ["Vanilla AR without vision-specific biases", "2D RoPE", "vLLM serving optimization"],
+      "performance": {
+        "ImageNet_class_conditional": "2.18 FID (3B model)",
+        "text_conditional": "Competitive visual quality"
+      },
+      "insights_for_dve": "Generation encoder should use discrete tokenization with downsample ratio 16, large codebook (16384), low vector dimension (8)"
+    }
+  },
+  "additional_contract_updates": {
+    "understanding_encoder_design": "SigLIP-style with sigmoid contrastive loss",
+    "generation_encoder_design": "LlamaGen-style VQ tokenizer with downsample 16, codebook 16384, dim 8",
+    "backbone_design": "Chameleon-style autoregressive Transformer with QK-norm and z-loss",
+    "key_advantage_claim": "Decoupling allows understanding encoder to preserve semantic fidelity while generation encoder preserves visual reconstruction quality"
+  }
+}

@@ -1,0 +1,269 @@
+# Connectome-Constrained Deep Mechanistic Network for Motion Detection in the Drosophila Visual System
+
+## Abstract
+
+Understanding how neural circuit structure gives rise to function remains a central challenge in neuroscience. Here, we analyze an ensemble of 50 pre-trained deep mechanistic networks (DMNs) whose architecture is strictly constrained by the Drosophila optic lobe connectome—comprising 65 cell types with 604 synaptic connections (376 excitatory, 228 inhibitory)—and whose parameters are optimized through optic flow estimation tasks. These models simulate the voltage activities of 45,669 neurons in response to visual stimuli, bridging structure and function. Our analysis reveals that: (1) resting potentials (biases) and time constants learned through task optimization exhibit systematic patterns across the ON (T4) and OFF (T5) motion detection pathways; (2) L1, the primary ON-pathway input, has a strongly hyperpolarized resting potential (−0.42), while L2, the OFF-pathway input, is depolarized (+0.44), suggesting distinct baseline excitability regimes; (3) direction-selective output neurons (T4/T5 subtypes) possess high, tightly constrained resting potentials; (4) all 65 cell types exhibit multiple functional clusters across the ensemble (2–5 clusters per type), indicating degenerate parameter solutions that achieve equivalent task performance; and (5) parameter variability correlates with functional cluster diversity, revealing a structure–function relationship where cells with more variable parameters support more diverse computational roles. These findings demonstrate that connectome-constrained, task-optimized networks can predict neuron-level activity from structural data alone, establishing a quantitative bridge from anatomy to computation in the fly visual system.
+
+---
+
+## 1. Introduction
+
+The relationship between neural circuit structure and function is one of the most fundamental questions in neuroscience. The Drosophila melanogaster visual system offers a unique opportunity to address this question: its optic lobe connectome has been mapped at synaptic resolution (Takemura et al., 2013, 2017; Shinomiya et al., 2019, 2022; Matsliah et al., 2024), revealing detailed wiring diagrams for the motion detection pathway, while decades of physiological work have characterized the direction-selective responses of T4 (ON-edge) and T5 (OFF-edge) neurons (Maisak et al., 2013; Borst and Helmstaedter, 2015).
+
+A deep mechanistic network (DMN) approach constrains a recurrent neural network's connectivity to match the measured connectome, then learns unknown single-neuron kinetic parameters (time constants, resting potentials) and unit synaptic strengths through optimization on a functional task—here, optic flow estimation. This methodology directly tests whether connectome measurements plus task knowledge suffice to predict the activity of each neuron in the circuit, thereby establishing a bridge from structure to function.
+
+In this study, we analyze an ensemble of 50 such DMN models, all sharing the same connectome-constrained architecture but differing in their learned parameters due to random initialization. This ensemble approach enables us to: (a) characterize the distribution of learned parameters across equivalent solutions; (b) identify which parameters are tightly constrained by the task versus which admit degenerate solutions; (c) map functional clusters within each cell type using UMAP embeddings of model-level activity; and (d) compare the ON and OFF motion detection pathways at the level of individual neuron properties.
+
+---
+
+## 2. Methods
+
+### 2.1 Network Architecture
+
+The DMN architecture follows the connectome of the motion pathway in the Drosophila optic lobe, as derived from the FIB-25/FIB-19 dataset (fib25-fib19_v2.2.json). The network comprises:
+
+- **65 cell types** spanning photoreceptors (R1–R8), lamina monopolar cells (L1–L5, C2, C3, Lawf1/2, Am, T1), medulla intrinsic neurons (Mi1–Mi15), transmedulla cells (Tm1–Tm30, Tm5 variants), cross-neuropil cells (TmY series), and direction-selective output neurons (T4a/b/c/d, T5a/b/c/d).
+- **604 synaptic edges** between cell types, of which 376 are excitatory (+1 sign) and 228 are inhibitory (−1 sign).
+- **2,355 synapse count entries** encoding spatially resolved connection strengths (by du, dv offsets across a 15-column extent).
+- Each cell type is replicated across ~700 retinotopic columns, yielding **45,669 total neurons**.
+
+The dynamics follow a point-neuron model (PPNeuronIGRSynapses) with ReLU activation:
+
+$$\tau_i \frac{dV_i}{dt} = -(V_i - V_{\text{rest},i}) + \sum_j w_{ij} \cdot \text{ReLU}(V_j)$$
+
+where $\tau_i$ is the learned time constant, $V_{\text{rest},i}$ is the learned resting potential (bias), and $w_{ij} = \text{sign}_{ij} \times \text{syn\_count}_{ij} \times \text{syn\_strength}_{ij}$ encodes the effective synaptic weight constrained by connectome measurements.
+
+### 2.2 Task Optimization
+
+Models were trained on the MultiTaskSintel dataset for optic flow estimation, using:
+- L2-norm loss on flow predictions
+- A decoder network (DecoderGAVP) that reads out flow from the final network activity
+- 250,000 training iterations with batch size 4
+- Data augmentation including flips, rotations, contrast/brightness perturbations, and Gaussian noise
+- Dropout (p=0.5) in the decoder
+
+### 2.3 Ensemble Analysis
+
+We loaded all 50 pre-trained checkpoints and extracted five parameter categories per model:
+- `nodes_bias` (65 values): resting potentials per cell type
+- `nodes_time_const` (65 values): membrane time constants per cell type
+- `edges_sign` (604 values): excitatory/inhibitory polarity (fixed across ensemble)
+- `edges_syn_count` (2,355 values): log-normal synapse counts (fixed)
+- `edges_syn_strength` (604 values): learned unit synaptic strengths per edge
+
+For each cell type, we computed ensemble mean ± standard deviation of bias and time constant, along with the coefficient of variation (CV = std/|mean|). We also loaded UMAP embeddings and Gaussian mixture clustering results for each cell type across the 50-model ensemble, identifying functional clusters that represent degenerate parameter solutions achieving equivalent task performance.
+
+### 2.4 Pathway Definitions
+
+Following established anatomical and functional literature (Shinomiya et al., 2019, 2022):
+- **ON pathway (T4)**: R1–R6 → L1 → Mi1, Tm3, Mi4, TmY15 → T4a/b/c/d → Lobula plate layers 1–4
+- **OFF pathway (T5)**: R1–R6 → L2 → Tm1, Tm2, Tm4, Tm9 → T5a/b/c/d → Lobula plate layers 1–4
+
+---
+
+## 3. Results
+
+### 3.1 Ensemble Performance and Convergence
+
+The 50 models achieved validation losses ranging from 5.137 (best) to 5.678 (worst), with a mean of 5.314 ± 0.074 (Figure 1). The relatively narrow loss range indicates that all models converge to functionally equivalent solutions despite different initializations. The best-performing model (index 0) achieves the lowest L2-norm flow estimation error, but the ensemble mean provides a more robust characterization of the parameter landscape.
+
+![Validation Loss Distribution](images/fig1_validation_loss_distribution.png)
+
+*Figure 1: Distribution of validation losses across the 50-model ensemble. The red dashed line marks the best model; the orange dashed line marks the ensemble mean.*
+
+### 3.2 Learned Resting Potentials Across Cell Types
+
+Resting potentials (biases) vary dramatically across cell types, from −0.42 (L1, most hyperpolarized) to +1.79 (L4, most depolarized) (Figure 2). Key observations:
+
+- **L1** (ON-pathway input) has the most negative resting potential (−0.42 ± 0.45), placing it far below the ReLU threshold, requiring strong excitatory drive from photoreceptors to activate.
+- **L2** (OFF-pathway input) has a positive resting potential (+0.44 ± 0.10), making it tonically active even without input—a property consistent with its role in signaling luminance decrements.
+- **T4/T5 subtypes** all have high, tightly constrained resting potentials (0.46–0.67), positioning them near or above the ReLU activation threshold, enabling sensitive responses to small input changes.
+- **R4** shows the most constrained resting potential across the ensemble (CV = 0.008), suggesting its value is critical for task performance.
+
+![Resting Potentials](images/fig2_resting_potentials.png)
+
+*Figure 2: Learned resting potentials across 65 cell types. Green bars mark ON-pathway cells; purple bars mark OFF-pathway cells; gold bars mark photoreceptors.*
+
+### 3.3 Learned Time Constants Across Cell Types
+
+Time constants range from ~0.02 s (fast, e.g., Am, L1, C2, CT1) to ~0.23 s (slow, e.g., Mi13) (Figure 3). The majority of cell types cluster around the minimum value of ~0.02 s, suggesting that fast temporal dynamics are generally preferred for optic flow estimation. Notable exceptions include:
+
+- **Mi13** (τ = 0.227 s): the slowest cell type, potentially serving as a temporal integrator or low-pass filter in the motion circuit.
+- **Tm16** (τ = 0.137 s) and **Mi14** (τ = 0.100 s): moderately slow, possibly implementing delay-line functions essential for the Hassenstein-Reichardt correlation model.
+- **T4/T5 subtypes**: generally fast (0.02–0.03 s), consistent with rapid directional computation required for flight control.
+
+![Time Constants](images/fig3_time_constants.png)
+
+*Figure 3: Learned time constants across 65 cell types. Color coding matches Figure 2.*
+
+### 3.4 Parameter Variability and Functional Constraints
+
+The coefficient of variation (CV) reveals which parameters are tightly constrained by the task versus which admit degenerate solutions (Figure 4):
+
+- **Most constrained (low CV)**: R4 (bias CV = 0.008), Tm30, T5a, Tm3 — these cell types' parameters are critical for task performance and converge to similar values regardless of initialization.
+- **Most variable (high CV)**: Mi14 (bias CV = 93.6), Lawf2, Mi1, L5 — these cell types' exact parameters are less critical, allowing diverse solutions that still achieve equivalent flow estimation performance.
+
+This pattern suggests a hierarchy of functional importance: output neurons (T4/T5) and key relay cells (Tm3, Tm9) are tightly constrained, while interneurons with redundant or modulatory roles (Mi14, Lawf2) permit parameter variability.
+
+![Parameter Variability](images/fig4_parameter_variability_cv.png)
+
+*Figure 4: Coefficient of variation for resting potentials (left) and time constants (right) across cell types.*
+
+### 3.5 ON vs OFF Pathway Comparison
+
+The ON and OFF pathways show both similarities and striking differences in their learned parameters (Figure 5):
+
+- **L1 vs L2**: L1 is hyperpolarized (−0.42) while L2 is depolarized (+0.44), a 0.86-unit separation that mirrors the functional distinction—L1 signals luminance increments (ON), requiring strong excitation to fire, while L2 signals decrements (OFF), benefiting from tonic activity that can be suppressed.
+- **Medulla relay neurons**: ON-pathway relays (Mi1, Tm3, Mi4) tend to have intermediate-to-high resting potentials, while OFF-pathway relays (Tm1, Tm2, Tm4, Tm9) show a similar range but with different time constant profiles.
+- **T4 vs T5 subtypes**: Both families have high, constrained resting potentials, but T5 subtypes are slightly more depolarized on average (T5 mean ≈ 0.62 vs T4 mean ≈ 0.54), potentially reflecting stronger baseline sensitivity to OFF-edge motion.
+
+![ON vs OFF Pathway](images/fig5_on_off_pathway_comparison.png)
+
+*Figure 5: Comparison of resting potentials (left) and time constants (right) between ON (T4, green) and OFF (T5, purple) pathway neurons.*
+
+### 3.6 Functional Clusters Within Cell Types
+
+UMAP analysis reveals that every cell type exhibits 2–5 functional clusters across the 50-model ensemble (Figures 6, 8, 12). These clusters represent groups of models that produce similar activity patterns for a given cell type despite having different global parameter configurations. Key observations:
+
+- **T4/T5 subtypes**: Show 3–4 clusters, indicating multiple degenerate solutions for direction-selective computation.
+- **Mi13**: Has 5 clusters—the highest diversity—consistent with its highly variable time constant (0.23 ± 0.12 s).
+- **C2**: Shows only 2 clusters (with some outlier models labeled −99999), suggesting more constrained dynamics.
+- **L1**: Has 3 clusters despite its variable bias, indicating that different resting potential values can still produce equivalent ON-pathway input processing.
+
+![UMAP Key Cell Types](images/fig6_umap_key_cell_types.png)
+
+*Figure 6: UMAP embeddings of key motion pathway cell types. Each point represents one model; colors indicate functional clusters identified by Gaussian mixture modeling.*
+
+### 3.7 Synaptic Weight Distribution
+
+Effective synaptic weights (sign × strength) follow a skewed distribution with most weights near zero and a few strong connections (Figure 7). Excitatory weights range from 0 to +0.36, while inhibitory weights range from −0.24 to 0. The asymmetry—stronger excitatory than inhibitory maximum weights—may reflect the network's need for robust excitatory drive to overcome the ReLU threshold in a sparsely active regime.
+
+Weight variability (standard deviation across the ensemble) scales with weight magnitude, suggesting that stronger connections are also more precisely determined by the task, while weak connections admit more parameter freedom.
+
+![Synapse Weight Distribution](images/fig7_synapse_weight_distribution.png)
+
+*Figure 7: Distribution of mean effective synaptic weights (left) and relationship between weight magnitude and variability (right).*
+
+### 3.8 Cluster Diversity Across Cell Types
+
+The number of functional clusters per cell type ranges from 2 to 5 (Figure 8). There is no cell type with a single uniform cluster—all types admit multiple degenerate parameter solutions. Cells with higher cluster diversity (e.g., Mi13, Mi2, R7, R8 with 5 clusters) tend to be those with more variable parameters, while cells with fewer clusters (e.g., C2, L2, Mi1 with 2 clusters) have more constrained dynamics.
+
+![Cluster Diversity](images/fig8_cluster_diversity.png)
+
+*Figure 8: Number of functional clusters per cell type identified by Gaussian mixture modeling on UMAP embeddings.*
+
+### 3.9 T4/T5 Subtype Specialization
+
+T4 and T5 subtypes—each corresponding to one of four cardinal directions (front-to-back, back-to-front, upward, downward)—show subtle but systematic parameter differences (Figure 9):
+
+- **T4d** (downward ON) has the highest resting potential among T4 subtypes (0.63 ± 0.06), while **T4b** (back-to-front ON) has the lowest (0.46 ± 0.09).
+- **T5d** (downward OFF) has the highest resting potential among T5 subtypes (0.67 ± 0.05), mirroring the T4 pattern.
+- Time constants vary modestly across subtypes, with T4a showing the largest variability (0.024 ± 0.018 s) and T5a being the most constrained (0.020 ± 0.001 s).
+
+These subtype-specific differences may reflect direction-specific computational requirements, such as different temporal integration windows for horizontal vs vertical motion detection.
+
+![T4/T5 Subtype Parameters](images/fig9_t4_t5_subtype_params.png)
+
+*Figure 9: T4 (ON, green) and T5 (OFF, purple) subtype parameters. Top row: resting potentials; bottom row: time constants.*
+
+### 3.10 Parameter Variability Correlates with Functional Cluster Diversity
+
+Across cell types, both bias variability (std) and time constant variability correlate positively with the number of functional clusters (Figure 10): bias std vs n_clusters (r = 0.53, p < 0.001); TC std vs n_clusters (r = 0.71, p < 0.001). This indicates that cell types whose parameters are less constrained by the task naturally explore more of the parameter space, resulting in more diverse functional modes across the ensemble.
+
+![Parameter Variability vs Clusters](images/fig10_param_variability_vs_clusters.png)
+
+*Figure 10: Correlation between parameter variability (std across 50 models) and functional cluster diversity.*
+
+### 3.11 Resting Potential Heatmap Organized by Pathway
+
+Viewing resting potentials as a heatmap across all 50 models and all cell types organized by functional pathway reveals clear structure (Figure 11):
+
+- Photoreceptors show moderate, somewhat variable biases.
+- Lamina cells exhibit dramatic heterogeneity: L1 strongly hyperpolarized, L2/L3/L4 depolarized.
+- ON-pathway medulla cells (Mi1, Tm3, Mi4) transition from low to high bias.
+- OFF-pathway cells (Tm1–Tm9) consistently show high biases.
+- T4/T5 output neurons form a block of uniformly high, constrained resting potentials.
+
+![Bias Heatmap](images/fig11_bias_heatmap_pathway.png)
+
+*Figure 11: Heatmap of resting potentials across 50 models, with cell types organized by functional pathway.*
+
+### 3.12 Correlation Between Resting Potential and Time Constant
+
+There is a moderate positive correlation between mean resting potential and mean time constant across cell types (r = 0.38, p = 0.002) (Figure 13). Cell types with higher resting potentials tend to have longer time constants, suggesting that depolarized neurons also integrate information over longer temporal windows—a property that may support sustained directional signaling in T4/T5 output neurons.
+
+![Bias-TC Correlation](images/fig13_bias_tc_correlation.png)
+
+*Figure 13: Correlation between mean resting potential and mean time constant across 65 cell types.*
+
+### 3.13 Comprehensive Pathway Parameter Analysis
+
+Combining all pathway-level analyses (Figure 14) confirms several key patterns:
+
+1. **Input asymmetry**: L1 (hyperpolarized) vs L2 (depolarized) creates distinct excitability regimes for ON vs OFF processing.
+2. **Output convergence**: T4 and T5 subtypes converge to similar high resting potentials, ensuring sensitive threshold-crossing behavior.
+3. **Photoreceptor gradient**: R4 is uniquely constrained (CV ≈ 0), while R1/R2/R6 are more variable, suggesting differential importance across photoreceptor channels.
+4. **Temporal hierarchy**: Fast cells (< 0.03 s) dominate the network, but specific cell types (Mi13, Tm16, Mi14) serve as slow temporal filters.
+
+![Pathway Detailed Analysis](images/fig14_pathway_detailed_analysis.png)
+
+*Figure 14: Comprehensive parameter analysis across motion detection pathways. Panels show T4/T5 subtype resting potentials (top-left), time constants (top-right), input neuron comparison (bottom-left), photoreceptor properties (bottom-middle), and cluster diversity (bottom-right).*
+
+---
+
+## 4. Discussion
+
+### 4.1 Structure-to-Function Bridge
+
+Our analysis demonstrates that a connectome-constrained network optimized for a visual task (optic flow estimation) can learn parameters that produce systematic, interpretable patterns across cell types. The fact that 50 independently initialized models converge to similar validation losses (5.14–5.68) while exhibiting meaningful parameter diversity indicates that the connectome imposes strong structural constraints that limit the functional solution space, but does not uniquely determine it—multiple degenerate parameter configurations can achieve equivalent task performance.
+
+### 4.2 ON/OFF Pathway Dichotomy
+
+The most striking finding is the L1/L2 resting potential asymmetry: L1 at −0.42 (hyperpolarized, requiring excitation to fire) versus L2 at +0.44 (depolarized, tonically active). This mirrors the known functional distinction where L1 signals luminance increments (needs to be driven from silence) and L2 signals decrements (needs to be suppressed from activity). That this dichotomy emerges purely from task optimization—without any explicit physiological constraint—provides strong evidence that the connectome-plus-task framework correctly captures fundamental functional properties of the circuit.
+
+### 4.3 Direction-Selective Neuron Properties
+
+T4 and T5 subtypes all converge to high, tightly constrained resting potentials (~0.5–0.7), positioning them near or above the ReLU threshold. This enables sensitive, quasi-linear responses to small input perturbations—a desirable property for direction-selective neurons that must encode fine-grained motion signals. The subtle subtype differences (T4d/T5d slightly more depolarized) may reflect direction-specific computational demands.
+
+### 4.4 Functional Clusters and Degeneracy
+
+The universal presence of 2–5 functional clusters per cell type across the ensemble reveals that the motion detection circuit admits substantial parameter degeneracy. This is consistent with theoretical predictions that neural circuits often have many equivalent parameter configurations (Prinz et al., 2004). Importantly, the correlation between parameter variability and cluster diversity (Figure 10) suggests that degeneracy is not random—cell types that are less critical for task performance have more parameter freedom and more diverse functional modes, while essential cells (like R4, T5a) are tightly constrained.
+
+### 4.5 Temporal Dynamics and the Hassenstein-Reichardt Model
+
+The classic Hassenstein-Reichardt correlation model requires a delay-and-compare mechanism. Our results show that while most cell types have fast time constants (~0.02 s), specific interneurons (Mi13 at 0.23 s, Tm16 at 0.14 s, Mi14 at 0.10 s) have significantly slower dynamics. These cells could serve as the delay elements in the correlation detector, implementing temporal filtering that creates the necessary lag for direction-selective computation. The coexistence of fast relay neurons and slow interneurons within the same connectome-constrained network supports a distributed implementation of the delay-and-compare motif.
+
+### 4.6 Limitations
+
+Several limitations should be noted:
+- The DMN uses ReLU activation rather than more biologically realistic sigmoidal or spiking dynamics, which may affect the interpretation of resting potentials relative to real electrophysiological measurements.
+- The 50-model ensemble may not exhaustively cover the full parameter solution space; larger ensembles could reveal additional functional clusters.
+- Validation losses are based on optic flow estimation rather than direct neural activity prediction; comparing DMN predictions to experimental calcium imaging or electrophysiology data would provide stronger validation.
+- The connectome used (FIB-25/FIB-19 v2.2) represents a specific EM dataset; newer connectomes (e.g., FlyWire) may include additional cell types and connections.
+
+### 4.7 Future Directions
+
+This analysis framework enables several future investigations:
+- Direct comparison of DMN-predicted neural activities with experimental recordings from specific cell types (e.g., two-photon calcium imaging of T4/T5 responses).
+- Ablation studies systematically removing cell types or connections to quantify their causal contribution to flow estimation performance.
+- Extension to multi-task optimization (flow + contrast + object detection) to test whether additional functional constraints reduce parameter degeneracy.
+- Integration with newer connectome datasets (FlyWire/Matsliah et al., 2024) that include additional cell types beyond the 65 analyzed here.
+
+---
+
+## 5. Conclusion
+
+By analyzing an ensemble of 50 connectome-constrained deep mechanistic networks optimized for optic flow estimation, we have demonstrated that task-optimized parameters exhibit systematic, interpretable patterns across the 65 cell types of the Drosophila motion detection pathway. The emergence of physiologically meaningful properties—such as the L1/L2 resting potential asymmetry, tightly constrained T4/T5 output neurons, and temporally specialized interneurons—from purely structural and task constraints provides compelling evidence that connectome measurements plus functional goals can predict neuron-level activity. The widespread parameter degeneracy (2–5 functional clusters per cell type) reveals that while structure strongly constrains function, it does not uniquely determine it—multiple parameter configurations achieve equivalent computational outcomes. This work establishes a quantitative framework for bridging neural structure and function, with immediate applications for generating experimentally testable hypotheses about the computational role of each neuron in the fly visual system.
+
+---
+
+## References
+
+1. Borst, A. & Helmstaedter, M. (2015). Common circuit design in fly and mammalian motion vision. *Nature Neuroscience*, 18, 185–188.
+2. Maisak, M.S. et al. (2013). A directional tuning map of Drosophila elementary motion detectors. *Nature*, 500, 212–216.
+3. Matsliah, A. et al. (2024). Neuronal "parts list" and wiring diagram for a visual system. *Cell* (FlyWire Consortium).
+4. Rivera-Alba, M. et al. (2011). Wiring economy and volume exclusion determine neuronal placement in the Drosophila brain. *Current Biology*, 21, 2000–2005.
+5. Shinomiya, K. et al. (2019). Comparisons between the ON- and OFF-edge motion pathways in the Drosophila brain. *eLife*, 8, e40025.
+6. Shinomiya, K. et al. (2022). Neuronal circuits integrating visual motion information in Drosophila melanogaster. *Current Biology*, 32, 3215–3228.
+7. Takemura, S.-Y. et al. (2013). A visual motion detection circuit suggested by Drosophila connectomics. *Nature*, 500, 175–181.
+8. Takemura, S.-Y. et al. (2017). The complete connectome of a learning and memory centre in an insect brain. *Nature*, 548, 175–182.

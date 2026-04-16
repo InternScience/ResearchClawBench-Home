@@ -1,0 +1,56 @@
+{
+  "task": "Assess numerical accuracy of SXS BBH simulation catalog",
+  "method_contract": {
+    "primary_analyses": [
+      "Resolution error distribution (fig6_data)",
+      "Modal error decomposition by ℓ (fig7_data)",
+      "Extrapolation order convergence (fig8_data)",
+      "Cross-comparison of error sources",
+      "Log-normal distribution fitting",
+      "Accuracy classification"
+    ],
+    "named_methods": ["log-normal fitting", "linear regression in log-space", "CDF comparison"],
+    "target_artifacts": [
+      "fig1_waveform_difference_distribution.png",
+      "fig2_modal_errors_by_ell.png",
+      "fig3_extrapolation_comparison.png",
+      "fig4_error_scaling_with_ell.png",
+      "fig5_resolution_vs_extrapolation.png",
+      "fig6_lognormal_fits.png",
+      "fig7_modal_error_heatmap.png",
+      "summary_statistics.json",
+      "accuracy_classification.json",
+      "extrapolation_ratio_stats.json",
+      "lognormal_fit_params.json",
+      "modal_correlation_matrix.csv",
+      "fig7_percentile_table.csv"
+    ]
+  },
+  "target_artifact_inventory": {
+    "fig1_waveform_difference_distribution.png": "satisfied",
+    "fig2_modal_errors_by_ell.png": "satisfied",
+    "fig3_extrapolation_comparison.png": "satisfied",
+    "fig4_error_scaling_with_ell.png": "satisfied",
+    "fig5_resolution_vs_extrapolation.png": "satisfied",
+    "fig6_lognormal_fits.png": "satisfied",
+    "fig7_modal_error_heatmap.png": "satisfied",
+    "summary_statistics.json": "satisfied",
+    "accuracy_classification.json": "satisfied",
+    "extrapolation_ratio_stats.json": "satisfied",
+    "lognormal_fit_params.json": "satisfied",
+    "modal_correlation_matrix.csv": "satisfied",
+    "fig7_percentile_table.csv": "satisfied",
+    "report.md": "satisfied"
+  },
+  "key_findings": {
+    "median_resolution_error": "4.25e-4",
+    "fraction_below_1e-3": "77.7%",
+    "fraction_below_1e-2": "99.8%",
+    "ell_scaling_slope": "0.148 dex/ell",
+    "ell_scaling_R2": 0.98,
+    "extrap_N2vsN3_median": "2.03e-5",
+    "extrap_N2vsN4_median": "5.34e-5",
+    "extrap_ratio_median": 2.67,
+    "resolution_vs_extrap_ratio": "~20x"
+  }
+}

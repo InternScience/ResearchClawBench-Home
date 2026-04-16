@@ -1,0 +1,21 @@
+{
+  "task": "Develop and validate a universal foundation model for atomistic simulations (MACE-MP-0)",
+  "method": "MACE higher-order equivariant message passing neural network trained on MPtrj dataset (~1.5M structures)",
+  "validation_experiments": [
+    "Experiment 1: Liquid water RDF simulation (32 H2O, 330K, Langevin MD)",
+    "Experiment 2: Adsorption energy scaling relations on fcc(111) transition metal surfaces (Ni, Cu, Rh, Pd, Ir, Pt)",
+    "Experiment 3: CRBH20 reaction barrier comparison (3 reactions)"
+  ],
+  "key_findings": [
+    "MACE-MP-0 produces stable liquid water MD and captures RDF features",
+    "Linear scaling relations between O* and OH* adsorption energies are recovered (R²=0.96 excl. Ni)",
+    "Reaction barriers from simplified geometries show qualitative trends but limited quantitative accuracy",
+    "Foundation model demonstrates broad transferability across liquids, surfaces, and reactions"
+  ],
+  "limitations": [
+    "CPU-only computation limited MD trajectory length",
+    "Simplified reaction geometries (not fully relaxed TS) limit barrier accuracy",
+    "Ni adsorption outlier suggests model uncertainty for certain surface chemistries",
+    "Fine-tuning on task-specific data recommended for quantitative accuracy"
+  ]
+}

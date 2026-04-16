@@ -1,0 +1,19 @@
+{
+  "task": "Solve MAPF by developing a hybrid algorithm integrating MARL into LNS framework",
+  "named_method": "MARL-LNS Hybrid",
+  "method_description": "Two-phase approach: (1) MARL-based decentralized policy generates initial collision-reducing paths, (2) LNS framework with Prioritized Planning repairs remaining collisions",
+  "key_components": [
+    "Multi-Agent Reinforcement Learning (MARL) for initial path generation",
+    "Large Neighborhood Search (LNS) for iterative repair",
+    "Prioritized Planning (PP) as the repair sub-algorithm",
+    "SIPPS/A*-based single-agent pathfinding with dynamic obstacles"
+  ],
+  "baselines": [
+    "Prioritized Planning (PP) only",
+    "LNS with PP repair (without MARL initialization)",
+    "Random-restart PP"
+  ],
+  "metrics": ["success_rate", "sum_of_costs", "computation_time", "collision_count"],
+  "map_types": ["empty", "maze", "room", "warehouse", "random_small", "random_medium", "random_large"],
+  "agent_density_levels": 4
+}

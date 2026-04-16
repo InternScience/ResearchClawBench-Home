@@ -1,0 +1,59 @@
+{
+  "method_fidelity_checklist": {
+    "method_name": "Latent Ewald Summation (LES)",
+    "key_structural_ingredients": [
+      {
+        "ingredient": "Latent charge prediction from local environments",
+        "implemented": true,
+        "notes": "Message-passing network predicts per-atom latent charges"
+      },
+      {
+        "ingredient": "Ewald/Coulomb energy computation from latent charges",
+        "implemented": true,
+        "notes": "Direct Coulomb sum for non-periodic systems; Ewald decomposition available for periodic"
+      },
+      {
+        "ingredient": "Short-range energy network (separate from electrostatics)",
+        "implemented": true,
+        "notes": "Separate energy head for short-range contributions"
+      },
+      {
+        "ingredient": "Total charge constraint",
+        "implemented": true,
+        "notes": "Charges shifted to satisfy total charge constraint"
+      },
+      {
+        "ingredient": "Force computation via autograd",
+        "implemented": true,
+        "notes": "Forces computed as negative gradient of total energy w.r.t. positions"
+      },
+      {
+        "ingredient": "Training on energy AND forces (no charge labels)",
+        "implemented": true,
+        "notes": "Joint energy+force loss; no explicit charge supervision"
+      },
+      {
+        "ingredient": "Charge state embedding for multi-charge-state systems",
+        "implemented": true,
+        "notes": "Total charge provided as input to model for Ag3 experiment"
+      }
+    ],
+    "deviations": [
+      {
+        "deviation": "Simple MP architecture instead of equivariant models",
+        "reason": "Computational constraints on CPU; full equivariant training too slow for 128-atom systems",
+        "impact": "May reduce accuracy compared to paper results but demonstrates the LES concept"
+      },
+      {
+        "deviation": "Limited training epochs",
+        "reason": "CPU-only training with O(N^2) pairwise computation",
+        "impact": "Models may be undertrained; charge recovery may improve with more training"
+      },
+      {
+        "deviation": "Synthetic charge-dependent energies for Ag3",
+        "reason": "Reference dataset has identical energies for both charge states",
+        "impact": "Demonstrates the concept even though original data doesn't show charge dependence"
+      }
+    ]
+  }
+}

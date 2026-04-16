@@ -1,0 +1,23 @@
+{
+  "dependency_check": {
+    "torch": {"available": true, "version": "2.11.0+cu130"},
+    "numpy": {"available": true, "version": "2.4.3"},
+    "scipy": {"available": true, "version": "1.17.1"},
+    "matplotlib": {"available": true, "version": "3.10.8"},
+    "ase": {"available": true, "version": "3.28.0"},
+    "e3nn": {"available": true, "version": "0.4.4"},
+    "mace_torch": {"available": true, "version": "0.3.15"},
+    "seaborn": {"available": true}
+  },
+  "limitations": [
+    "CPU-only training limits model size and training duration",
+    "O(N^2) pairwise computation for 128-atom systems is slow",
+    "Limited training epochs due to computational constraints",
+    "Simple message-passing architecture used instead of full equivariant models"
+  ],
+  "fallbacks": [
+    "Used simple MP architecture instead of MACE/e3nn equivariant models for speed",
+    "Used structure-level feature aggregation for energy prediction instead of full end-to-end training",
+    "Created synthetic charge-dependent energies for Ag3 since reference data has identical energies for both charge states"
+  ]
+}

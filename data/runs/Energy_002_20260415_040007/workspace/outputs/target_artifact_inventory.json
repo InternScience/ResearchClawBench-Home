@@ -1,0 +1,29 @@
+{
+  "primary_quantitative_outputs": [
+    "Delivered LCOH ($/kg) for each site under each scenario",
+    "Cost breakdown by supply chain component",
+    "Least-cost site identification",
+    "Competitiveness gap vs European LCOH"
+  ],
+  "required_figures": [
+    "Geospatial map of LCOH across African sites",
+    "Cost breakdown stacked bar chart by component",
+    "Scenario comparison bar/box chart",
+    "Competitiveness comparison (African delivered vs European domestic)"
+  ],
+  "required_tables": [
+    "LCOH results by site and scenario",
+    "Cost component breakdown",
+    "Sensitivity to WACC"
+  ],
+  "artifacts": {
+    "outputs/lcoh_results.csv": "Full LCOH results table",
+    "outputs/cost_breakdown.csv": "Cost component breakdown",
+    "outputs/scenario_comparison.csv": "Scenario comparison summary",
+    "report/images/lcoh_map.png": "Geospatial LCOH map",
+    "report/images/cost_breakdown.png": "Cost breakdown chart",
+    "report/images/scenario_comparison.png": "Scenario comparison",
+    "report/images/competitiveness.png": "African vs European comparison",
+    "report/images/wacc_sensitivity.png": "WACC sensitivity analysis"
+  }
+}

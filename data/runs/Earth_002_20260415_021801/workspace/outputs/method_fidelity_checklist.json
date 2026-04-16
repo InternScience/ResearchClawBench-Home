@@ -1,0 +1,39 @@
+{
+  "composite_risk_index": {
+    "definition": "CRI = 0.5 * SLR_risk + 0.5 * TC_risk",
+    "assumptions_met": true,
+    "invariants_checked": [
+      "CRI in [0,1] for all points",
+      "Higher CRI = higher risk"
+    ],
+    "deviations": "None"
+  },
+  "slr_risk_thresholds": {
+    "definition": "Based on Saintilan et al. (2023): 4 mm/yr (deficit likely), 7 mm/yr (deficit highly likely)",
+    "assumptions_met": true,
+    "invariants_checked": [
+      "Rates are median IPCC AR6 values",
+      "Averaged over 2020-2100"
+    ],
+    "deviations": "None"
+  },
+  "tc_risk_scoring": {
+    "definition": "Based on Mo et al. (2023): major TCs (Cat 3+) cause substantial damage, Cat 4-5 contribute 97% of risk",
+    "assumptions_met": true,
+    "invariants_checked": [
+      "Wind >= 50 m/s = major TC",
+      "Frequency and intensity both considered"
+    ],
+    "deviations": "Future TC projections use simplified global factors rather than regional CMIP6 downscaled data"
+  },
+  "future_tc_projections": {
+    "definition": "Based on Knutson et al. (2020): increased intensity, decreased overall frequency, increased major TC frequency",
+    "assumptions_met": true,
+    "invariants_checked": [
+      "SSP2-4.5: +10% major freq, +5% wind",
+      "SSP3-7.0: +20% major freq, +8% wind",
+      "SSP5-8.5: +30% major freq, +10% wind"
+    ],
+    "deviations": "Regional variation in TC projections not captured; uses global mean factors"
+  }
+}

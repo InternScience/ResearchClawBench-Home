@@ -1,0 +1,30 @@
+{
+  "vaccine_type": "MinSum.budget-10.adaptive",
+  "budget": 10,
+  "n_cells": 100,
+  "n_mutations_total": 11,
+  "n_vaccine_elements": 10,
+  "selected_elements": [
+    "mut11",
+    "mut12",
+    "mut15",
+    "mut19",
+    "mut20",
+    "mut26",
+    "mut28",
+    "mut33",
+    "mut39",
+    "mut44"
+  ],
+  "mean_p_response": 0.9427470300116586,
+  "median_p_response": 0.9630025369027599,
+  "std_p_response": 0.09149114098326944,
+  "coverage_p50": 0.992,
+  "coverage_p90": 0.8870000000000001,
+  "coverage_p95": 0.6060000000000001,
+  "mean_iou_pairwise": 1.0,
+  "mean_iou_consensus": 1.0,
+  "mean_runtime_exponent": 2.550636208528874,
+  "runtime_100cells": 0.011999999999999999,
+  "runtime_10000cells": 6.542857142857143
+}

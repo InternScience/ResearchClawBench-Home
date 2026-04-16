@@ -1,0 +1,34 @@
+{
+  "method_contract": {
+    "task": "Constrain ULB properties using Bayesian framework with BH superradiance",
+    "named_methods": [
+      "Black hole superradiance",
+      "Bayesian posterior propagation",
+      "Regge trajectory analysis",
+      "Self-interaction (bosenova) constraints"
+    ],
+    "key_physics": {
+      "superradiance_condition": "omega/m < Omega_H",
+      "hydrogenic_levels": "omega ~ mu*(1 - alpha^2/(2*n^2))",
+      "fine_structure_constant": "alpha = G*M*mu/(hbar*c) = M*mu/M_Pl^2",
+      "regge_trajectory": "a*_crit = 2R/(1+R^2), R = 2*alpha*(1-alpha^2/(2n^2))/m",
+      "instability_rate": "Gamma_SR ~ alpha^(4l+5) * mu * delta_a / (24*(l+1)^(4l+5))",
+      "self_interaction_shutdown": "N_max > N_crit ~ (f_a/mu)^2"
+    },
+    "statistical_framework": {
+      "exclusion_probability": "P(excl|data,mu) = fraction of posterior samples where a* > a*_crit AND tau_SR < tau_max",
+      "conservative_approach": "Include timescale cut (Salpeter time for stellar BHs, 1 Gyr for SMBHs)",
+      "aggressive_approach": "No timescale cut, just Regge trajectory condition",
+      "joint_constraint": "P_joint = 1 - (1-P1)*(1-P2) for independent BHs"
+    },
+    "target_artifacts": [
+      "Posterior distribution plots",
+      "Regge plane with exclusion zones",
+      "Exclusion probability vs ULB mass",
+      "Mass-spin plane with SR exclusion bands",
+      "Self-interaction constraints (mu-f_a plane)",
+      "Combined constraint summary",
+      "Superradiance timescale maps"
+    ]
+  }
+}

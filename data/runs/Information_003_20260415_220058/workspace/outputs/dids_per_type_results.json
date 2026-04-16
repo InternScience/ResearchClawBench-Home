@@ -1,0 +1,62 @@
+{
+  "Backdoor": {
+    "f1": 0.7368421052631579,
+    "accuracy": 0.5833333333333334,
+    "count": 60,
+    "is_few_shot": true
+  },
+  "Analysis": {
+    "f1": 0.5230769230769231,
+    "accuracy": 0.3541666666666667,
+    "count": 48,
+    "is_few_shot": true
+  },
+  "Benign": {
+    "f1": 0.9981427434332715,
+    "accuracy": 0.996292372881356,
+    "count": 16992,
+    "is_few_shot": false
+  },
+  "DoS": {
+    "f1": 0.6379746835443038,
+    "accuracy": 0.4684014869888476,
+    "count": 538,
+    "is_few_shot": false
+  },
+  "Exploits": {
+    "f1": 0.6219512195121951,
+    "accuracy": 0.45132743362831856,
+    "count": 226,
+    "is_few_shot": true
+  },
+  "Fuzzers": {
+    "f1": 0.6345381526104418,
+    "accuracy": 0.4647058823529412,
+    "count": 170,
+    "is_few_shot": true
+  },
+  "Generic": {
+    "f1": 0.9772780510658232,
+    "accuracy": 0.9555657352267521,
+    "count": 2183,
+    "is_few_shot": false
+  },
+  "Reconnaissance": {
+    "f1": 0.9889485317335017,
+    "accuracy": 0.9781386633354153,
+    "count": 1601,
+    "is_few_shot": false
+  },
+  "Shellcode": {
+    "f1": 0.9491525423728814,
+    "accuracy": 0.9032258064516129,
+    "count": 217,
+    "is_few_shot": true
+  },
+  "Worms": {
+    "f1": 0.2222222222222222,
+    "accuracy": 0.125,
+    "count": 16,
+    "is_few_shot": true
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "primary_quantitative_answers": {
+    "pct_mangroves_high_vh_ssp245": {
+      "value": "19.4%",
+      "file": "outputs/composite_risk_summary.json",
+      "satisfied": true
+    },
+    "pct_mangroves_high_vh_ssp370": {
+      "value": "34.8%",
+      "file": "outputs/composite_risk_summary.json",
+      "satisfied": true
+    },
+    "pct_mangroves_high_vh_ssp585": {
+      "value": "48.6%",
+      "file": "outputs/composite_risk_summary.json",
+      "satisfied": true
+    },
+    "area_at_risk_ssp585": {
+      "value": "~72,908 km2",
+      "file": "outputs/ecosystem_service_risk.json",
+      "satisfied": true
+    },
+    "mean_cri_ssp585": {
+      "value": "0.485",
+      "file": "outputs/composite_risk_summary.json",
+      "satisfied": true
+    }
+  },
+  "required_comparison_tables": {
+    "scenario_comparison": {
+      "file": "outputs/composite_risk_summary.json",
+      "satisfied": true
+    },
+    "country_risk_ranking": {
+      "file": "outputs/country_risk_summary.json",
+      "satisfied": true
+    },
+    "regional_comparison": {
+      "file": "outputs/regional_summary.json",
+      "satisfied": true
+    }
+  },
+  "expected_figure_families": {
+    "global_risk_map": {
+      "file": "report/images/fig1_global_cri_map.png",
+      "satisfied": true
+    },
+    "slr_distribution": {
+      "file": "report/images/fig2_slr_distribution.png",
+      "satisfied": true
+    },
+    "tc_frequency_map": {
+      "file": "report/images/fig3_tc_frequency_map.png",
+      "satisfied": true
+    },
+    "risk_category_distribution": {
+      "file": "report/images/fig4_risk_category_distribution.png",
+      "satisfied": true
+    },
+    "slr_tc_scatter": {
+      "file": "report/images/fig5_slr_tc_scatter.png",
+      "satisfied": true
+    },
+    "regional_comparison": {
+      "file": "report/images/fig6_regional_comparison.png",
+      "satisfied": true
+    },
+    "scenario_comparison": {
+      "file": "report/images/fig7_scenario_comparison.png",
+      "satisfied": true
+    },
+    "slr_rate_map": {
+      "file": "report/images/fig8_slr_rate_map.png",
+      "satisfied": true
+    },
+    "latitudinal_profile": {
+      "file": "report/images/fig9_latitudinal_profile.png",
+      "satisfied": true
+    },
+    "country_risk": {
+      "file": "report/images/fig10_top_countries.png",
+      "satisfied": true
+    },
+    "ecosystem_services": {
+      "file": "report/images/fig11_ecosystem_services.png",
+      "satisfied": true
+    },
+    "risk_contribution": {
+      "file": "report/images/fig12_risk_contribution.png",
+      "satisfied": true
+    }
+  },
+  "interpretability_artifacts": {
+    "risk_decomposition": {
+      "file": "report/images/fig12_risk_contribution.png",
+      "satisfied": true
+    },
+    "country_level_analysis": {
+      "file": "outputs/country_risk_summary.json",
+      "satisfied": true
+    }
+  }
+}

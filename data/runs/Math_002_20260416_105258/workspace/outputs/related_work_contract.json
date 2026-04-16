@@ -1,0 +1,39 @@
+{
+  "related_work": {
+    "paper_000": {
+      "title": "MAPF-LNS2: Fast Repairing for Multi-Agent Path Finding via Large Neighborhood Search",
+      "key_methods": ["LNS-based MAPF repair", "SIPPS single-agent pathfinding", "Prioritized Planning as sub-solver"],
+      "key_results": ["80% success on hardest benchmark instances in 5 minutes", "Scales to 8000 agents on warehouse map"],
+      "relevant_to_task": "Core LNS framework and PP-based repair approach"
+    },
+    "paper_001": {
+      "title": "PRIMAL: Pathfinding via Reinforcement and Imitation Multi-Agent Learning",
+      "key_methods": ["A3C RL + imitation learning from ODrM*", "Decentralized policies with partial observability", "Parameter sharing across agents"],
+      "key_results": ["Scales to 1024 agents", "Implicit coordination without communication"],
+      "relevant_to_task": "MARL component design - decentralized cooperative policy"
+    },
+    "paper_002": {
+      "title": "SCRIMP: Scalable Communication for Reinforcement- and Imitation-Learning-Based MAPF",
+      "key_methods": ["Transformer-based communication", "3x3 FOV with global communication", "Intrinsic rewards for exploration"],
+      "key_results": ["Outperforms learning-based planners", "Near-centralized planner performance"],
+      "relevant_to_task": "Communication mechanism and cooperative tie-breaking strategies"
+    },
+    "paper_003": {
+      "title": "EECBS: Bounded-Suboptimal Search for Multi-Agent Path Finding",
+      "key_methods": ["Explicit Estimation Search on CBS high level", "Online learning of inadmissible heuristics", "Focal search with suboptimality bounds"],
+      "key_results": ["Significantly faster than ECBS, BCP-7, eMDD-SAT"],
+      "relevant_to_task": "Baseline comparison - bounded-suboptimal search"
+    },
+    "paper_004": {
+      "title": "LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+      "key_methods": ["Two-level search: configurations + constraints", "Lazy constraint addition", "DFS-style high-level search"],
+      "key_results": ["Solves 400 agents on 32x32 grid in median 1s", "Complete algorithm"],
+      "relevant_to_task": "Baseline comparison - fast suboptimal search"
+    }
+  },
+  "task_implications": {
+    "marl_component": "Use cooperative heuristic policy inspired by PRIMAL/SCRIMP decentralized approach",
+    "lns_component": "Adapt MAPF-LNS2 framework with PP-based neighborhood repair",
+    "hybrid_design": "MARL generates collision-reducing initial paths, then LNS repairs remaining collisions"
+  }
+}

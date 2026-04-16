@@ -1,0 +1,16 @@
+{
+  "target_artifacts": [
+    {"id": "param_table", "description": "Parameter constraints table for LCDM/EDE/w0wa", "status": "satisfied", "file": "outputs/computed_results.json"},
+    {"id": "fig1_params", "description": "Parameter comparison bar chart", "status": "satisfied", "file": "report/images/fig1_parameter_comparison.png"},
+    {"id": "fig2_H0", "description": "H0 posterior comparison with SH0ES", "status": "satisfied", "file": "report/images/fig2_H0_posteriors.png"},
+    {"id": "fig3_distances", "description": "DESI BAO and Union3 SNe distance comparison", "status": "satisfied", "file": "report/images/fig3_distance_comparison.png"},
+    {"id": "fig4_ede_post", "description": "EDE 2D posterior f_EDE vs log10_ac", "status": "satisfied", "file": "report/images/fig4_ede_posterior.png"},
+    {"id": "fig5_OmH0", "description": "Omega_m vs H0 ellipse plot", "status": "satisfied", "file": "report/images/fig5_omega_m_H0.png"},
+    {"id": "fig6_dchi2", "description": "Delta chi-squared comparison", "status": "satisfied", "file": "report/images/fig6_delta_chi2.png"},
+    {"id": "fig7_shifts", "description": "Parameter shifts relative to LCDM", "status": "satisfied", "file": "report/images/fig7_parameter_shifts.png"},
+    {"id": "fig8_ede_evo", "description": "EDE energy density evolution", "status": "satisfied", "file": "report/images/fig8_ede_evolution.png"},
+    {"id": "fig9_S8", "description": "S8 comparison with weak lensing", "status": "satisfied", "file": "report/images/fig9_S8_comparison.png"},
+    {"id": "fig10_w0wa", "description": "w0-wa posterior", "status": "satisfied", "file": "report/images/fig10_w0wa_posterior.png"},
+    {"id": "report", "description": "Comprehensive research report", "status": "pending", "file": "report/report.md"}
+  ]
+}

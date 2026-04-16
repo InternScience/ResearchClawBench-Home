@@ -1,0 +1,27 @@
+# Method Contract
+
+## Task
+Develop a unified deep learning framework for predicting 3D structures of biomolecular complexes (protein + nucleic acid + small molecule) using diffusion-based architecture.
+
+## Named Methods/Components
+1. **Diffusion-based architecture** - Score-based generative model for 3D coordinate generation
+2. **SE(3)-equivariant networks** - Equivariant neural networks respecting rotation/translation symmetry
+3. **Multi-modal input encoding** - Unified representation for protein sequences, nucleic acid sequences, and small molecule structures
+4. **Transformer-based attention** - For capturing long-range dependencies across modalities
+5. **AlphaFold-inspired Evoformer** - Joint MSA and pairwise feature processing
+6. **Geometric deep learning** - Graph neural networks on molecular graphs
+
+## Target Artifacts
+1. Predicted 3D structure of 2l3r protein-ligand complex
+2. RMSD metrics (protein CA-RMSD, ligand RMSD)
+3. Structural overlay visualization
+4. Diffusion denoising trajectory visualization
+5. Cross-modal attention/interaction maps
+6. Model architecture diagram
+7. Comparison table with baseline methods
+
+## Key Metrics
+- Protein CA-RMSD (Å)
+- Ligand RMSD (Å) with symmetry-aware alignment
+- Interface RMSD
+- pLDDT confidence scores

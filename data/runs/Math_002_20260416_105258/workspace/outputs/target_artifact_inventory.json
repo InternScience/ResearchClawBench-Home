@@ -1,0 +1,28 @@
+{
+  "primary_quantitative_answers": [
+    "Success rate comparison across algorithms and map types",
+    "Sum-of-costs comparison across algorithms",
+    "Computation time comparison across algorithms"
+  ],
+  "required_comparison_tables": [
+    "Success rate table: algorithm x (map_type, agent_count)",
+    "Sum-of-costs table: algorithm x (map_type, agent_count)",
+    "Computation time table: algorithm x (map_type, agent_count)"
+  ],
+  "expected_figure_families": [
+    "success_rate_comparison.png - bar/line chart of success rates across map types and agent counts",
+    "soc_comparison.png - bar chart of sum-of-costs across algorithms",
+    "time_comparison.png - bar chart of computation time across algorithms",
+    "collision_progression.png - line chart showing collision reduction over LNS iterations",
+    "map_visualization.png - grid map with agent paths visualized",
+    "algorithm_comparison_heatmap.png - heatmap of success rates across conditions"
+  ],
+  "interpretability_artifacts": [
+    "Collision count progression during LNS iterations",
+    "Per-map-type breakdown of performance"
+  ],
+  "subgroup_outputs": [
+    "Per-map-type results",
+    "Per-agent-density results"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "claim_recovery_table": [
+    {
+      "claim": "15 selected features achieve rho=0.637 vs rho=0.534 for full 241 features",
+      "artifact": "outputs/summary_statistics.json + outputs/final_selected_features.csv",
+      "verified_from_workspace_data": true,
+      "source": "direct computation"
+    },
+    {
+      "claim": "Greedy forward selection achieves rho=0.773 with 8 features",
+      "artifact": "outputs/greedy_forward_selection_results.csv",
+      "verified_from_workspace_data": true,
+      "source": "direct computation"
+    },
+    {
+      "claim": "Dynamism top-5 achieves rho=0.700",
+      "artifact": "outputs/dynamism_topk_results.csv",
+      "verified_from_workspace_data": true,
+      "source": "direct computation"
+    },
+    {
+      "claim": "Selected features have minimal batch confounding",
+      "artifact": "outputs/feature_dynamism_metrics.csv (batch_confound_ratio column)",
+      "verified_from_workspace_data": true,
+      "source": "direct computation"
+    },
+    {
+      "claim": "82 features exceed dynamism threshold of 0.5",
+      "artifact": "outputs/feature_dynamism_metrics.csv",
+      "verified_from_workspace_data": true,
+      "source": "direct computation"
+    },
+    {
+      "claim": "Permutation importance rank correlation with dynamism = 0.428",
+      "artifact": "outputs/final_results_summary.json",
+      "verified_from_workspace_data": true,
+      "source": "direct computation"
+    },
+    {
+      "claim": "93.8% feature reduction ratio (15/241)",
+      "artifact": "outputs/final_results_summary.json",
+      "verified_from_workspace_data": true,
+      "source": "direct computation"
+    },
+    {
+      "claim": "Nuclear compartment dominates top-30 dynamism features",
+      "artifact": "report/images/fig11_feature_categories.png",
+      "verified_from_workspace_data": true,
+      "source": "visual inspection of generated figure"
+    }
+  ]
+}

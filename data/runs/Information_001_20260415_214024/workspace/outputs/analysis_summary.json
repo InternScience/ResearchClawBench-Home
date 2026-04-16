@@ -1,0 +1,155 @@
+{
+  "resolution_metrics": {
+    "demo1": [
+      {
+        "target_size": 224,
+        "ssim": 0.8780459136342206,
+        "mse": 68.81863700018988,
+        "psnr": 29.753742939947724,
+        "pixel_ratio": 0.06380208333333333,
+        "original_pixels": 786432,
+        "downsampled_pixels": 50176
+      },
+      {
+        "target_size": 336,
+        "ssim": 0.9475075771628308,
+        "mse": 28.99344762166341,
+        "psnr": 33.5078050032356,
+        "pixel_ratio": 0.1435546875,
+        "original_pixels": 786432,
+        "downsampled_pixels": 112896
+      },
+      {
+        "target_size": 448,
+        "ssim": 0.976137236192109,
+        "mse": 12.64470460679796,
+        "psnr": 37.11171672631227,
+        "pixel_ratio": 0.2552083333333333,
+        "original_pixels": 786432,
+        "downsampled_pixels": 200704
+      },
+      {
+        "target_size": 672,
+        "ssim": 0.9938652435963883,
+        "mse": 2.7772577073838978,
+        "psnr": 43.69464180180696,
+        "pixel_ratio": 0.57421875,
+        "original_pixels": 786432,
+        "downsampled_pixels": 451584
+      },
+      {
+        "target_size": 896,
+        "ssim": 0.9979468266097445,
+        "mse": 0.7173245747884115,
+        "psnr": 49.57364651303655,
+        "pixel_ratio": 1.0208333333333333,
+        "original_pixels": 786432,
+        "downsampled_pixels": 802816
+      }
+    ],
+    "demo2": [
+      {
+        "target_size": 224,
+        "ssim": 0.38375424445788275,
+        "mse": 949.3669091358024,
+        "psnr": 18.356462708672613,
+        "pixel_ratio": 0.014866962962962964,
+        "original_pixels": 3375000,
+        "downsampled_pixels": 50176
+      },
+      {
+        "target_size": 336,
+        "ssim": 0.48135984330211423,
+        "mse": 736.8590292345679,
+        "psnr": 19.456959512741598,
+        "pixel_ratio": 0.03345066666666666,
+        "original_pixels": 3375000,
+        "downsampled_pixels": 112896
+      },
+      {
+        "target_size": 448,
+        "ssim": 0.5658331783403314,
+        "mse": 601.2000943209877,
+        "psnr": 20.34061320817509,
+        "pixel_ratio": 0.059467851851851855,
+        "original_pixels": 3375000,
+        "downsampled_pixels": 200704
+      },
+      {
+        "target_size": 672,
+        "ssim": 0.6975289634015832,
+        "mse": 421.9573181234568,
+        "psnr": 21.87811837491383,
+        "pixel_ratio": 0.13380266666666665,
+        "original_pixels": 3375000,
+        "downsampled_pixels": 451584
+      },
+      {
+        "target_size": 896,
+        "ssim": 0.7897812554492606,
+        "mse": 302.2885794567901,
+        "psnr": 23.32658621141592,
+        "pixel_ratio": 0.23787140740740742,
+        "original_pixels": 3375000,
+        "downsampled_pixels": 802816
+      }
+    ],
+    "target_sizes": [
+      224,
+      336,
+      448,
+      672,
+      896
+    ],
+    "demo1_original_size": [
+      1024,
+      768
+    ],
+    "demo2_original_size": [
+      2250,
+      1500
+    ]
+  },
+  "detail_preservation": {
+    "demo1": [
+      {
+        "ssim_224": 0.44798012255282077,
+        "ssim_336": 0.5405901785388547
+      },
+      {
+        "ssim_224": 0.4816872689276004,
+        "ssim_336": 0.5906731500365257
+      },
+      {
+        "ssim_224": 0.8024240998347931,
+        "ssim_336": 0.8272499131666237
+      }
+    ],
+    "demo2": [
+      {
+        "ssim_224": 0.12390726211572478,
+        "ssim_336": 0.14448565344339015
+      },
+      {
+        "ssim_224": 0.0861169253781779,
+        "ssim_336": 0.09908520533099706
+      },
+      {
+        "ssim_224": 0.14022248570609674,
+        "ssim_336": 0.2644121155755837
+      }
+    ]
+  },
+  "key_findings": {
+    "ssim_loss_at_224": "0.878 (Demo1), 0.384 (Demo2)",
+    "ssim_gain_from_224_to_448": "+0.098 (Demo1), +0.182 (Demo2)",
+    "avg_detail_preservation_loss_224": "0.347",
+    "avg_detail_preservation_loss_336": "0.411",
+    "vstar_seal_overall_accuracy": 75.39,
+    "vstar_gpt4v_overall_accuracy": 54.97,
+    "vstar_improvement": "+20.42%",
+    "search_efficiency_vstar": 4.65,
+    "search_efficiency_random_dfs": 8.94,
+    "search_reduction": "~48%"
+  }
+}

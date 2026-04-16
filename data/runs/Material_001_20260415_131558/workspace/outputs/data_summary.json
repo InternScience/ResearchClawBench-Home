@@ -1,0 +1,64 @@
+{
+  "n_samples": 500,
+  "n_features": 21,
+  "n_targets": 4,
+  "feature_names": [
+    "comp_0",
+    "comp_1",
+    "comp_2",
+    "comp_3",
+    "comp_4",
+    "comp_5",
+    "comp_6",
+    "comp_7",
+    "lattice_a",
+    "lattice_b",
+    "lattice_c",
+    "angle_alpha",
+    "angle_beta",
+    "angle_gamma",
+    "volume",
+    "avg_electronegativity",
+    "avg_atomic_radius",
+    "total_valence",
+    "temperature",
+    "pressure",
+    "time_hours"
+  ],
+  "target_names": [
+    "formation_energy_eV",
+    "band_gap_eV",
+    "bulk_modulus_GPa",
+    "thermal_conductivity_WmK"
+  ],
+  "target_statistics": {
+    "formation_energy_eV": {
+      "mean": 3.516441118548473,
+      "std": 2.7024003413260025,
+      "min": -0.5704354075153403,
+      "max": 14.273463436532973,
+      "median": 2.809094220891299
+    },
+    "band_gap_eV": {
+      "mean": 1.9773423041168854,
+      "std": 0.516019507248549,
+      "min": 0.9128530842080002,
+      "max": 3.2387125377125665,
+      "median": 1.9487920708868889
+    },
+    "bulk_modulus_GPa": {
+      "mean": 67.35362984352122,
+      "std": 9.434052282130269,
+      "min": 41.16604704852672,
+      "max": 93.70519369123613,
+      "median": 67.62703962069943
+    },
+    "thermal_conductivity_WmK": {
+      "mean": 11.187645878106435,
+      "std": 1.46410186166613,
+      "min": 6.11378804084177,
+      "max": 16.14616883473116,
+      "median": 11.190678802605245
+    }
+  }
+}

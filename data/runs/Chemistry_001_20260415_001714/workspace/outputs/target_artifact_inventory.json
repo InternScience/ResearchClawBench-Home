@@ -1,0 +1,14 @@
+{
+  "target_artifacts": [
+    {"id": "predicted_structure", "description": "Predicted 3D coordinates for 2l3r complex", "format": "PDB"},
+    {"id": "protein_rmsd", "description": "CA-RMSD between predicted and ground truth protein", "format": "float"},
+    {"id": "ligand_rmsd", "description": "Ligand RMSD with symmetry-aware alignment", "format": "float"},
+    {"id": "fig_overlay", "description": "Structural overlay of predicted vs ground truth", "format": "PNG"},
+    {"id": "fig_diffusion_trajectory", "description": "Diffusion denoising trajectory visualization", "format": "PNG"},
+    {"id": "fig_attention_map", "description": "Cross-modal attention heatmap", "format": "PNG"},
+    {"id": "fig_architecture", "description": "Model architecture diagram", "format": "PNG"},
+    {"id": "fig_interface", "description": "Protein-ligand interface visualization", "format": "PNG"},
+    {"id": "comparison_table", "description": "Comparison with baseline methods", "format": "JSON"},
+    {"id": "fig_confidence", "description": "Per-residue confidence scores", "format": "PNG"}
+  ]
+}

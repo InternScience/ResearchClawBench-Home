@@ -1,0 +1,55 @@
+{
+  "method_fidelity_checklist": {
+    "diffusion_architecture": {
+      "definition": "Score-based generative model using forward/reverse diffusion process for 3D coordinate generation",
+      "implemented": true,
+      "key_components": [
+        "Forward process: Gaussian noise addition with cosine schedule",
+        "Reverse process: Learned denoising network predicts noise",
+        "DDIM sampling for efficient generation"
+      ],
+      "deviations": [
+        "Using fewer timesteps (100 vs typical 1000) for CPU efficiency",
+        "Using DDIM instead of full DDPM sampling for speed"
+      ]
+    },
+    "se3_equivariance": {
+      "definition": "Network outputs transform properly under rotation and translation",
+      "implemented": true,
+      "key_components": [
+        "Invariant attention weights from distance-based features",
+        "Equivariant coordinate updates using direction vectors",
+        "Center-of-mass removal at each step"
+      ],
+      "deviations": [
+        "Approximate equivariance through distance bias rather than full SE(3) convolution"
+      ]
+    },
+    "multi_modal_encoding": {
+      "definition": "Unified representation for protein, nucleic acid, and small molecule inputs",
+      "implemented": true,
+      "key_components": [
+        "Separate encoders per modality with shared representation space",
+        "Modality tokens for type identification",
+        "Cross-modal transformer for fusion"
+      ]
+    },
+    "transformer_attention": {
+      "definition": "Multi-head self-attention for capturing long-range dependencies",
+      "implemented": true,
+      "key_components": [
+        "Scaled dot-product attention",
+        "Multi-head attention with residual connections",
+        "Layer normalization"
+      ]
+    },
+    "evoformer_inspired_pairwise": {
+      "definition": "Pairwise feature update using outer product and triangular operations",
+      "implemented": true,
+      "key_components": [
+        "Outer product of single features for pairwise update",
+        "Triangular update for consistency"
+      ]
+    }
+  }
+}

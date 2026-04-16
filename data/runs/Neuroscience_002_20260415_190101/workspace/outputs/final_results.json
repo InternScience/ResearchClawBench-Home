@@ -1,0 +1,86 @@
+{
+  "overall": {
+    "default_threshold": {
+      "accuracy": 0.9774305555555556,
+      "roc_auc": 0.99733652481433,
+      "f1": 0.8975861851641772,
+      "precision": 0.8324760346036941,
+      "recall": 0.9737453849309449,
+      "avg_precision": 0.9769896556819172
+    },
+    "optimized_threshold_0.70": {
+      "accuracy": 0.983875,
+      "roc_auc": 0.99733652481433,
+      "f1": 0.921728578170296,
+      "precision": 0.9090425531914894,
+      "recall": 0.9347736906878162,
+      "avg_precision": 0.9769896556819172
+    }
+  },
+  "per_degradation": {
+    "Average": {
+      "n_samples": 18000,
+      "n_positive": 1797,
+      "default_threshold": {
+        "accuracy": 0.9438333333333333,
+        "roc_auc": 0.9837323075884288,
+        "f1": 0.7653747969366442,
+        "avg_precision": 0.8689160594946732
+      },
+      "optimized_threshold_0.70": {
+        "accuracy": 0.9592777777777778,
+        "f1": 0.7980159823642877,
+        "precision": 0.7903930131004366,
+        "recall": 0.8057874234835838
+      }
+    },
+    "Misalignment": {
+      "n_samples": 18000,
+      "n_positive": 1831,
+      "default_threshold": {
+        "accuracy": 0.9891666666666666,
+        "roc_auc": 0.9991270860736096,
+        "f1": 0.9490994518402506,
+        "avg_precision": 0.9896135198746837
+      },
+      "optimized_threshold_0.70": {
+        "accuracy": 0.9925555555555555,
+        "f1": 0.9638619201725998,
+        "precision": 0.9520511454448588,
+        "recall": 0.9759694156198798
+      }
+    },
+    "Missing Sections": {
+      "n_samples": 18000,
+      "n_positive": 1831,
+      "default_threshold": {
+        "accuracy": 0.9875,
+        "roc_auc": 0.9993551860521305,
+        "f1": 0.9419953596287703,
+        "avg_precision": 0.9934340643288276
+      },
+      "optimized_threshold_0.70": {
+        "accuracy": 0.9923333333333333,
+        "f1": 0.9633757961783439,
+        "precision": 0.9370160041300981,
+        "recall": 0.9912616056799564
+      }
+    },
+    "Mixed": {
+      "n_samples": 18000,
+      "n_positive": 1854,
+      "default_threshold": {
+        "accuracy": 0.9892222222222222,
+        "roc_auc": 0.999185827383379,
+        "f1": 0.9495841995841996,
+        "avg_precision": 0.992783322018263
+      },
+      "optimized_threshold_0.70": {
+        "accuracy": 0.9913333333333333,
+        "f1": 0.9581545064377682,
+        "precision": 0.9530416221985059,
+        "recall": 0.9633225458468176
+      }
+    }
+  }
+}

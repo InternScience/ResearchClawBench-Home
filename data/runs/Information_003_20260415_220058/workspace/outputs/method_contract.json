@@ -1,0 +1,40 @@
+{
+  "task": "Network Intrusion Detection with DIDS-MFL framework",
+  "named_method": "DIDS-MFL (Disentangled Dynamic Intrusion Detection with Multi-scale Fusion Learning)",
+  "key_components": [
+    {
+      "name": "Statistical Disentanglement",
+      "description": "Non-parametric MI-based feature weighting to separate entangled feature distributions",
+      "implementation": "mutual_info_classif + correlation-based weighting",
+      "fidelity_notes": "Approximated SMT optimization with MI/correlation ratio; faithful to 3D-IDS concept"
+    },
+    {
+      "name": "Representational Disentanglement",
+      "description": "Memory module + decorrelation loss to highlight attack-specific features",
+      "implementation": "MemoryModule (read from class-specific memory) + corrcoef-based decorrelation loss",
+      "fidelity_notes": "Faithful to 3D-IDS representational disentanglement concept"
+    },
+    {
+      "name": "Dynamic Graph Diffusion",
+      "description": "Spatiotemporal aggregation via graph diffusion on evolving data streams",
+      "implementation": "Temporal encoding + spatial diffusion layer combination",
+      "fidelity_notes": "Simplified from full multi-layer graph diffusion; uses node-level temporal encoding"
+    },
+    {
+      "name": "Multi-scale Representation Fusion",
+      "description": "Multiple representation scales for few-shot learning enhancement",
+      "implementation": "MultiScaleFusion with 3 scale branches (32, 64, 96 dims) + fusion layer",
+      "fidelity_notes": "Inspired by BSNet bi-similarity concept; extended to multi-scale"
+    }
+  ],
+  "comparison_baselines": [
+    "LogisticRegression",
+    "LightGBM"
+  ],
+  "evaluation_scenarios": [
+    "Binary classification (benign vs attack)",
+    "Multi-class classification (10 attack types)",
+    "Few-shot attack detection (<1500 samples)",
+    "Unknown attack detection (removed from training)"
+  ]
+}

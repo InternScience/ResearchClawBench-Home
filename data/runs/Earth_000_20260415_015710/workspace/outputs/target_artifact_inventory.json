@@ -1,0 +1,35 @@
+{
+  "primary_quantitative_outputs": {
+    "global_annual_timeseries_gt": "outputs/annual_time_series.csv (region_id=0)",
+    "global_annual_timeseries_mwe": "outputs/annual_time_series.csv (region_id=0)",
+    "regional_annual_timeseries": "outputs/annual_time_series.csv (region_id!=0)",
+    "cumulative_mass_change": "outputs/cumulative_mass_change.csv",
+    "regional_trends": "outputs/regional_trends.csv",
+    "regional_summary": "outputs/regional_summary.csv",
+    "method_agreement": "outputs/method_agreement.csv",
+    "method_coverage": "outputs/method_coverage.csv",
+    "summary_statistics": "outputs/summary_statistics.json"
+  },
+  "figures": {
+    "fig1_global_timeseries": "report/images/fig1_global_timeseries.png",
+    "fig2_regional_bar_chart": "report/images/fig2_regional_bar_chart.png",
+    "fig3_method_comparison": "report/images/fig3_method_comparison.png",
+    "fig4_stacked_cumulative": "report/images/fig4_stacked_cumulative.png",
+    "fig5_specific_mass_change_heatmap": "report/images/fig5_specific_mass_change_heatmap.png",
+    "fig6_method_coverage_uncertainty": "report/images/fig6_method_coverage_uncertainty.png",
+    "fig7_acceleration_trends": "report/images/fig7_acceleration_trends.png",
+    "fig8_regional_timeseries_grid": "report/images/fig8_regional_timeseries_grid.png",
+    "fig9_method_agreement_scatter": "report/images/fig9_method_agreement_scatter.png",
+    "fig10_regional_contribution_donut": "report/images/fig10_regional_contribution_donut.png"
+  },
+  "report": "report/report.md",
+  "status": {
+    "global_timeseries": "SATISFIED",
+    "regional_timeseries": "SATISFIED",
+    "method_reconciliation": "SATISFIED",
+    "uncertainty_quantification": "SATISFIED",
+    "trend_analysis": "SATISFIED",
+    "figures": "SATISFIED",
+    "report": "SATISFIED"
+  }
+}

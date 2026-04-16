@@ -1,0 +1,62 @@
+{
+  "Baseline": {
+    "total_cost_GBP": 71558272491.64548,
+    "total_demand_MWh": 15939706.029762119,
+    "total_wind_MWh": 2272291.0708881184,
+    "total_gas_MWh": 1353712.7015098017,
+    "total_nuclear_MWh": 404691.338937714,
+    "total_shedding_MWh": 11914423.32386344,
+    "total_curtailment_MWh": 1920370.9338917425,
+    "total_storage_discharge_MWh": 6958.8069903714295,
+    "wind_share_pct": 14.255539384762603,
+    "gas_share_pct": 8.492708077440021,
+    "nuclear_share_pct": 2.538888347012718,
+    "curtailment_rate_pct": 45.80314205396037,
+    "shedding_rate_pct": 74.74681968172563
+  },
+  "High Renewable": {
+    "total_cost_GBP": 66949931628.392944,
+    "total_demand_MWh": 15939706.029762119,
+    "total_wind_MWh": 3038166.4851391995,
+    "total_gas_MWh": 1351955.9057721905,
+    "total_nuclear_MWh": 403200.0,
+    "total_shedding_MWh": 11146383.638850726,
+    "total_curtailment_MWh": 9539819.529200386,
+    "total_storage_discharge_MWh": 0.0,
+    "wind_share_pct": 19.060367107564158,
+    "gas_share_pct": 8.481686570930862,
+    "nuclear_share_pct": 2.529532221279098,
+    "curtailment_rate_pct": 75.84536600950642,
+    "shedding_rate_pct": 69.92841410022587
+  },
+  "Constrained Network": {
+    "total_cost_GBP": 75337461120.37692,
+    "total_demand_MWh": 15939706.029762119,
+    "total_wind_MWh": 1641044.0085217352,
+    "total_gas_MWh": 1351955.9057721905,
+    "total_nuclear_MWh": 403200.0,
+    "total_shedding_MWh": 12544305.220848057,
+    "total_curtailment_MWh": 2551617.9962581266,
+    "total_storage_discharge_MWh": 1027.4212026845998,
+    "wind_share_pct": 10.295321666896674,
+    "gas_share_pct": 8.481686570930862,
+    "nuclear_share_pct": 2.529532221279098,
+    "curtailment_rate_pct": 60.859138975408555,
+    "shedding_rate_pct": 78.69847284150488
+  },
+  "No Storage": {
+    "total_cost_GBP": 71561005733.4142,
+    "total_demand_MWh": 15939706.029762119,
+    "total_wind_MWh": 2261299.3774868012,
+    "total_gas_MWh": 1356555.512324583,
+    "total_nuclear_MWh": 406999.81333996606,
+    "total_shedding_MWh": 11914851.326610766,
+    "total_curtailment_MWh": 1931362.6272930594,
+    "total_storage_discharge_MWh": 0.0,
+    "wind_share_pct": 14.18658144174412,
+    "gas_share_pct": 8.510542853122042,
+    "nuclear_share_pct": 2.5533708876439047,
+    "curtailment_rate_pct": 46.06530707915882,
+    "shedding_rate_pct": 74.74950481748992
+  }
+}

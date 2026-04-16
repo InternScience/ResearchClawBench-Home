@@ -1,0 +1,22 @@
+{
+  "named_method": "hexagonal_lattice_shell_sequence",
+  "definition": "Shell sequence paths defined in the hexagonal lattice using coordinates (h,k) where h,k are non-negative integers",
+  "assumptions": [
+    "Hexagonal lattice provides the geometric framework for icosahedral shell construction",
+    "Seven chiral categories (MC, BG, Ch1-Ch5) classify different shell stacking arrangements",
+    "Size mismatch between adjacent shells determines structural stability"
+  ],
+  "invariants": [
+    "Mackay magic number sequence: 1, 13, 55, 147, 309",
+    "New magic number sequence (b=5): 1, 13, 45, 117, 239, 431",
+    "Geometric constants: sin(2pi/5) = 0.9511, cos(2pi/5) = 0.3090"
+  ],
+  "non_negotiable_steps": [
+    "Compute size mismatch delta = |r_outer - r_inner| / r_inner",
+    "Match delta to optimal mismatch ranges for shell category assignment",
+    "Validate theoretical predictions against experimental measurements",
+    "Use LJ potential for interatomic energy calculations"
+  ],
+  "deviations": [],
+  "fidelity_status": "fully_implemented"
+}

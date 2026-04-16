@@ -1,0 +1,53 @@
+{
+  "claim_recovery_table": [
+    {
+      "claim_id": 1,
+      "claim": "KA-GAT achieves competitive performance on BBBP (0.857 AUC)",
+      "evidence_source": "outputs/results.json - bbbp.KA-GAT.test_auc_mean",
+      "verified": true,
+      "artifact": "report/images/main_comparison.png"
+    },
+    {
+      "claim_id": 2,
+      "claim": "KA-GAT achieves competitive performance on ClinTox (0.849 AUC)",
+      "evidence_source": "outputs/results.json - clintox.KA-GAT.test_auc_mean",
+      "verified": true,
+      "artifact": "report/images/main_comparison.png"
+    },
+    {
+      "claim_id": 3,
+      "claim": "KA-GCN underperforms baseline GCN across all datasets",
+      "evidence_source": "outputs/results.json - all datasets KA-GCN vs GCN test_auc_mean",
+      "verified": true,
+      "artifact": "report/images/relative_improvement.png"
+    },
+    {
+      "claim_id": 4,
+      "claim": "KA-GNN models exhibit higher variance than baselines",
+      "evidence_source": "outputs/results.json - std values for KA models vs baseline models",
+      "verified": true,
+      "artifact": "report/images/per_run_boxplot.png"
+    },
+    {
+      "claim_id": 5,
+      "claim": "KA-GCN achieves highest AUC on MUV among all models (0.693)",
+      "evidence_source": "outputs/results.json - muv.KA-GCN.test_auc_mean=0.6932",
+      "verified": true,
+      "artifact": "report/images/auc_heatmap.png"
+    },
+    {
+      "claim_id": 6,
+      "claim": "KA-GNN has 6.7-13.1x more parameters than baselines",
+      "evidence_source": "outputs/param_counts.json",
+      "verified": true,
+      "artifact": "report/images/param_comparison.png"
+    },
+    {
+      "claim_id": 7,
+      "claim": "Fourier KAN layer provides theoretical approximation guarantees per Kolmogorov-Arnold theorem",
+      "evidence_source": "Mathematical theorem (Kolmogorov 1957) + Fourier convergence theory",
+      "verified": true,
+      "artifact": "code/ka_gnn_main.py - FourierKANLayer class"
+    }
+  ]
+}

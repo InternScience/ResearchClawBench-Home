@@ -1,0 +1,22 @@
+{
+  "enhancement_analysis": {
+    "mean_enhancement_hole": 55.268020807816065,
+    "mean_enhancement_electron": 52.50461576389423,
+    "mean_geom_conv_ratio": 4.565012014264696
+  },
+  "temperature_dependence": {
+    "power_law_exponent_loglog": 0.7779600358221862,
+    "r_squared_loglog": 0.9990971926370911,
+    "model_rmse": {
+      "BCS": 26.84866012981357,
+      "Nodal": 39.063717508477744,
+      "n=2": 26.84866012981357,
+      "n=2.5": 31.628492743416253,
+      "n=3": 39.17880088564943
+    }
+  },
+  "current_dependence": {
+    "quadratic_coefficient": 0.8028028128958492,
+    "rmse_gl_theory": 4.300114596815845
+  }
+}

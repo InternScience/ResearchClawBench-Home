@@ -1,0 +1,31 @@
+{
+  "task": "Build a unified autoregressive framework that decouples visual encoding to perform both multimodal understanding and visual generation within a single Transformer architecture",
+  "methodological_commitments": [
+    "Decoupled visual encoding: separate encoders for understanding vs generation",
+    "Unified autoregressive Transformer backbone (next-token prediction paradigm)",
+    "Evaluation on both understanding tasks (VQA, OCR) and generation tasks (text-to-image)",
+    "Comparison with single-encoder approaches (Chameleon-style early fusion)",
+    "Comparison with late-fusion understanding-only approaches (LLaVA-style)",
+    "Comparison with autoregressive generation-only approaches (LlamaGen-style)"
+  ],
+  "named_baselines": ["Chameleon", "LLaVA", "SigLIP", "LlamaGen"],
+  "primary_quantitative_answers": [
+    "Performance comparison: decoupled vs single encoder on understanding tasks",
+    "Performance comparison: decoupled vs single encoder on generation tasks",
+    "Trade-off analysis between understanding and generation capabilities"
+  ],
+  "required_comparison_tables": [
+    "Architecture comparison table (Chameleon vs LLaVA vs LlamaGen vs DVE)",
+    "Understanding task performance comparison",
+    "Generation task performance comparison",
+    "Training efficiency comparison"
+  ],
+  "expected_figure_families": [
+    "Architecture diagram showing decoupled visual encoding",
+    "Performance comparison bar charts",
+    "Training stability curves",
+    "Understanding vs generation trade-off analysis",
+    "OCR/formula recognition demonstration",
+    "Semantic understanding demonstration using doge meme"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "numpy": {
+    "available": true,
+    "version": "installed"
+  },
+  "pandas": {
+    "available": true,
+    "version": "installed"
+  },
+  "geopandas": {
+    "available": true,
+    "version": "installed"
+  },
+  "xarray": {
+    "available": true,
+    "version": "installed"
+  },
+  "scipy": {
+    "available": true,
+    "version": "installed"
+  },
+  "matplotlib": {
+    "available": true,
+    "version": "installed"
+  },
+  "shapely": {
+    "available": true,
+    "version": "installed"
+  },
+  "all_dependencies_met": true,
+  "limitations": [
+    "TC future projections use simplified Knutson et al. (2020) global factors rather than full CMIP6 downscaled projections",
+    "SLR rates are decadal averages, not continuous projections",
+    "Mangrove area estimates are approximate (10% sample extrapolated to global total)"
+  ]
+}

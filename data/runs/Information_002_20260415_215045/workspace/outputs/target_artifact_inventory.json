@@ -1,0 +1,19 @@
+# Target Artifact Inventory
+
+## Satisfied Artifacts
+- [Y] Correctly derived single-particle Hamiltonian (outputs/hamiltonian_derivation.json)
+- [Y] Per-step scoring table (outputs/task_records.json)
+- [Y] Placeholder-level scoring analysis (outputs/placeholder_records.json)
+- [Y] Aggregate statistics (outputs/stats_summary.json)
+- [Y] Method contract (outputs/method_contract.json)
+
+## Figure Artifacts
+- [Y] Step-by-step score distribution (report/images/step_score_distribution.png)
+- [Y] Category average scores (report/images/category_avg_scores.png)
+- [Y] Evaluator heatmap (report/images/evaluator_heatmap.png)
+- [Y] Score trajectory along pipeline (report/images/score_trajectory.png)
+- [Y] Evaluator comparison (report/images/evaluator_comparison.png)
+- [Y] Derivation pipeline visualization (report/images/derivation_pipeline.png)
+
+## Pending
+- [ ] Final report (report/report.md)

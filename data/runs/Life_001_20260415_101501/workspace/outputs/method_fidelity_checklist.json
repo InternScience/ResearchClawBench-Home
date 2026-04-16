@@ -1,0 +1,36 @@
+{
+  "method": "MinSum adaptive optimization",
+  "fidelity_checklist": {
+    "objective": {
+      "definition": "Minimize sum of no-response probabilities across cells",
+      "formula": "min sum_i prod_j_in_V (1 - p_ij)",
+      "implemented": true,
+      "notes": "Used pre-computed optimization outputs; verified consistency with final-response-likelihoods.csv"
+    },
+    "budget_constraint": {
+      "definition": "Maximum 10 vaccine elements",
+      "implemented": true,
+      "verified": "10 elements in vaccine.budget-10.minsum.adaptive.csv"
+    },
+    "per_cell_response": {
+      "definition": "P_i = 1 - prod_j(1 - p_ij)",
+      "implemented": true,
+      "verified": "Consistent with final-response-likelihoods.csv values"
+    },
+    "coverage_ratio": {
+      "definition": "Fraction of cells with P_i >= threshold",
+      "implemented": true,
+      "thresholds": [0.5, 0.9, 0.95]
+    },
+    "iou": {
+      "definition": "Intersection over Union of vaccine compositions",
+      "implemented": true,
+      "verified": "All pairwise IoU = 1.0"
+    },
+    "runtime_scaling": {
+      "definition": "Power-law fit T = a * N^b",
+      "implemented": true,
+      "method": "scipy.optimize.curve_fit"
+    },
+    "deviations": "None - all analyses use pre-computed optimization outputs as provided"
+  }

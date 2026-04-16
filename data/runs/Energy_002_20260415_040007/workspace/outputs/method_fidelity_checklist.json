@@ -1,0 +1,44 @@
+{
+  "method_fidelity_checklist": {
+    "lcoh_calculation": {
+      "definition": "Levelized cost of hydrogen using annuity factor / capital recovery factor method",
+      "implemented": true,
+      "key_assumptions": [
+        "Annuity factor for annualizing CAPEX",
+        "OPEX as fraction of CAPEX",
+        "Degradation of 0.5% per year for RE assets",
+        "Plant lifetime of 25 years"
+      ]
+    },
+    "ammonia_supply_chain": {
+      "definition": "H2 → NH3 synthesis → shipping → NH3 cracking → H2 at destination",
+      "implemented": true,
+      "key_components": [
+        "Haber-Bosch ammonia synthesis with 88% efficiency",
+        "Ammonia shipping at 10,500 km (Namibia to Rotterdam)",
+        "Ammonia cracking with 86% H2 recovery efficiency",
+        "1.5% boiloff during shipping"
+      ]
+    },
+    "wacc_scenario_analysis": {
+      "definition": "Three WACC scenarios reflecting financing conditions in Africa vs Europe",
+      "implemented": true,
+      "scenarios": {
+        "base": "8% WACC (typical African project finance)",
+        "derisked": "5% WACC (with de-risking instruments, concessional finance)",
+        "high_risk": "12% WACC (elevated risk premium)"
+      },
+      "european_reference": "4-6% WACC range"
+    },
+    "geospatial_mapping": {
+      "definition": "Spatial variation in LCOH driven by renewable resource potential and infrastructure access",
+      "implemented": true,
+      "spatial_inputs": ["theo_pv", "theo_wind", "grid_dist_km", "road_dist_km", "ocean_dist_km", "waterbody_dist_km"]
+    },
+    "competitiveness_comparison": {
+      "definition": "African delivered LCOH vs European domestic production LCOH",
+      "implemented": true,
+      "note": "European LCOH uses same methodology with European CF and CAPEX assumptions"
+    }
+  }
+}

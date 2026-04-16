@@ -1,0 +1,84 @@
+{
+  "claim_recovery": [
+    {
+      "claim": "Uncalled4 is 1.1-67x faster than existing tools",
+      "evidence": "performance_summary.csv + computed speedup ratios in outputs/performance_summary.json",
+      "verified": true,
+      "source": "workspace_data"
+    },
+    {
+      "claim": "Uncalled4 output files are 6-34x smaller",
+      "evidence": "performance_summary.csv file size column ratios",
+      "verified": true,
+      "source": "workspace_data"
+    },
+    {
+      "claim": "Nanopolish and Tombo do not support DNA r10.4.1 and RNA004",
+      "evidence": "performance_summary.csv shows NaN values for these combinations",
+      "verified": true,
+      "source": "workspace_data"
+    },
+    {
+      "claim": "m6A PR AUC: Uncalled4 0.993 vs Nanopolish 0.778",
+      "evidence": "outputs/m6a_metrics.json",
+      "verified": true,
+      "source": "workspace_computation"
+    },
+    {
+      "claim": "m6A ROC AUC: Uncalled4 0.998 vs Nanopolish 0.901",
+      "evidence": "outputs/m6a_metrics.json",
+      "verified": true,
+      "source": "workspace_computation"
+    },
+    {
+      "claim": "21.5 percentage point improvement in PR AUC",
+      "evidence": "outputs/m6a_metrics.json pr_auc_improvement",
+      "verified": true,
+      "source": "workspace_computation"
+    },
+    {
+      "claim": "Cross-chemistry correlation r=0.984 between DNA r9.4.1 and r10.4.1",
+      "evidence": "outputs/cross_chemistry_comparison.csv + computed Pearson r",
+      "verified": true,
+      "source": "workspace_computation"
+    },
+    {
+      "claim": "At 95% precision, Uncalled4 detects 97.5% of m6A sites vs 34.0% for Nanopolish",
+      "evidence": "outputs/sensitivity_at_precision.csv",
+      "verified": true,
+      "source": "workspace_computation"
+    },
+    {
+      "claim": "Central k-mer positions show strongest base discrimination",
+      "evidence": "Base-position effect analysis from pore model data",
+      "verified": true,
+      "source": "workspace_computation"
+    },
+    {
+      "claim": "Substitution profiles show asymmetric current shifts",
+      "evidence": "outputs/substitution_profiles.json",
+      "verified": true,
+      "source": "workspace_computation"
+    }
+  ],
+  "validation_subsection": {
+    "verified_from_workspace_data": [
+      "All performance benchmarks (time, file size)",
+      "All pore model statistics",
+      "All m6A detection metrics",
+      "Cross-chemistry correlation"
+    ],
+    "from_related_work": [
+      "Nanopolish HMM methodology (paper_000)",
+      "Tombo signal re-squiggling approach (paper_001)",
+      "UNCALLED FM-index approach (paper_002)",
+      "m6Anet MIL framework (paper_003)"
+    ],
+    "assumptions_limitations": [
+      "m6A analysis limited to single dataset (5000 sites)",
+      "Pore model data uses normalized (not absolute pA) current values",
+      "Only m6A modification evaluated; other modifications not tested",
+      "Performance benchmarks are single-run measurements without confidence intervals"
+    ]
+  }
+}

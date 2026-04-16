@@ -1,0 +1,40 @@
+{
+  "claim_recovery_table": [
+    {
+      "claim": "M33 X-7 excludes ULB masses in [3.1e-13, 4.2e-12] eV at 95% CL (conservative, combined modes)",
+      "evidence": "outputs/constraint_results.json + outputs/exclusion_probabilities.npz",
+      "verified": true,
+      "method": "Monte Carlo estimate over 1838 posterior samples with Salpeter timescale cut"
+    },
+    {
+      "claim": "IRAS 09149-6206 excludes ULB masses in [1.8e-20, 3.7e-19] eV at 95% CL (aggressive, no timescale cut)",
+      "evidence": "outputs/constraint_results.json + outputs/exclusion_probabilities.npz",
+      "verified": true,
+      "method": "Monte Carlo estimate over 10000 posterior samples without timescale cut"
+    },
+    {
+      "claim": "IRAS 09149-6206 conservative constraints peak at ~68% exclusion (no 95% CL)",
+      "evidence": "outputs/exclusion_probabilities.npz",
+      "verified": true,
+      "method": "Conservative analysis with 1 Gyr timescale cut; large mass uncertainty limits constraint"
+    },
+    {
+      "claim": "Self-interactions weaken exclusion for f_a < ~10^14 GeV (M33 X-7, QCD axion)",
+      "evidence": "outputs/exclusion_probabilities.npz (P_excl_fa grid)",
+      "verified": true,
+      "method": "Bosenova shutdown criterion N_max > N_crit applied to each posterior sample"
+    },
+    {
+      "claim": "Joint constraint provides 95% exclusion in two mass windows: stellar and SMBH regimes",
+      "evidence": "outputs/exclusion_probabilities.npz + fig6",
+      "verified": true,
+      "method": "Joint probability P_joint = 1 - (1-P1)(1-P2) assuming independence"
+    },
+    {
+      "claim": "M33 X-7 constraints consistent with literature range 6e-13 to 2e-11 eV",
+      "evidence": "Comparison with Arvanitaki et al. (2017) in related_work/",
+      "verified": true,
+      "method": "Our range is narrower due to: (1) full posterior propagation, (2) timescale cut, (3) single BH analysis"
+    }
+  ]
+}

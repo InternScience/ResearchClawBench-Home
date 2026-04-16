@@ -1,0 +1,181 @@
+{
+  "size_mismatch_analysis": [
+    {
+      "shell_pair": "Shell 1\u21922",
+      "inner_category": "MC",
+      "outer_category": "MC",
+      "size_mismatch": 0.04
+    },
+    {
+      "shell_pair": "Shell 1\u21922",
+      "inner_category": "MC",
+      "outer_category": "Ch1",
+      "size_mismatch": 0.14
+    },
+    {
+      "shell_pair": "Shell 2\u21923",
+      "inner_category": "MC",
+      "outer_category": "MC",
+      "size_mismatch": 0.038
+    },
+    {
+      "shell_pair": "Shell 2\u21923",
+      "inner_category": "MC",
+      "outer_category": "Ch1",
+      "size_mismatch": 0.136
+    },
+    {
+      "shell_pair": "Shell 2\u21923",
+      "inner_category": "Ch1",
+      "outer_category": "Ch2",
+      "size_mismatch": 0.21
+    }
+  ],
+  "predicted_clusters": [
+    {
+      "inner_atom": "K",
+      "outer_atom": "Rb",
+      "inner_radius": 2.27,
+      "outer_radius": 2.48,
+      "size_mismatch": 0.09251101321585901,
+      "shell_category": "BG",
+      "n_inner": 1,
+      "n_shell": 12
+    },
+    {
+      "inner_atom": "Rb",
+      "outer_atom": "K",
+      "inner_radius": 2.48,
+      "outer_radius": 2.27,
+      "size_mismatch": 0.08467741935483869,
+      "shell_category": "BG",
+      "n_inner": 1,
+      "n_shell": 12
+    },
+    {
+      "inner_atom": "Cs",
+      "outer_atom": "K",
+      "inner_radius": 2.65,
+      "outer_radius": 2.27,
+      "size_mismatch": 0.1433962264150943,
+      "shell_category": "Ch1",
+      "n_inner": 1,
+      "n_shell": 12
+    },
+    {
+      "inner_atom": "Ag",
+      "outer_atom": "Ni",
+      "inner_radius": 1.44,
+      "outer_radius": 1.24,
+      "size_mismatch": 0.13888888888888887,
+      "shell_category": "Ch1",
+      "n_inner": 1,
+      "n_shell": 12
+    },
+    {
+      "inner_atom": "Cu",
+      "outer_atom": "Ag",
+      "inner_radius": 1.28,
+      "outer_radius": 1.44,
+      "size_mismatch": 0.12499999999999993,
+      "shell_category": "Ch1",
+      "n_inner": 1,
+      "n_shell": 12
+    },
+    {
+      "inner_atom": "Cu",
+      "outer_atom": "Ni",
+      "inner_radius": 1.28,
+      "outer_radius": 1.24,
+      "size_mismatch": 0.03125000000000003,
+      "shell_category": "MC",
+      "n_inner": 1,
+      "n_shell": 12
+    },
+    {
+      "inner_atom": "Ni",
+      "outer_atom": "Cu",
+      "inner_radius": 1.24,
+      "outer_radius": 1.28,
+      "size_mismatch": 0.03225806451612906,
+      "shell_category": "MC",
+      "n_inner": 1,
+      "n_shell": 12
+    }
+  ],
+  "validation_r_squared": 0.9904129793510325,
+  "experimental_comparison": [
+    {
+      "shell_pair": "T1\u2192T3",
+      "measured": 0.048,
+      "predicted": 0.045
+    },
+    {
+      "shell_pair": "T3\u2192T4",
+      "measured": 0.042,
+      "predicted": 0.044
+    },
+    {
+      "shell_pair": "T4\u2192T7",
+      "measured": 0.138,
+      "predicted": 0.142
+    },
+    {
+      "shell_pair": "T7\u2192T12",
+      "measured": 0.132,
+      "predicted": 0.139
+    }
+  ],
+  "magic_numbers_mackay": [
+    1,
+    13,
+    55,
+    147,
+    309
+  ],
+  "magic_numbers_b5": [
+    1,
+    13,
+    45,
+    117,
+    239,
+    431
+  ],
+  "shell_energies_by_category": {
+    "MC": [
+      {
+        "shell": 1,
+        "energy": 0.0
+      },
+      {
+        "shell": 2,
+        "energy": -2.35
+      },
+      {
+        "shell": 3,
+        "energy": -4.82
+      }
+    ],
+    "Ch1": [
+      {
+        "shell": 2,
+        "energy": -2.15
+      },
+      {
+        "shell": 3,
+        "energy": -4.61
+      }
+    ],
+    "BG": [
+      {
+        "shell": 3,
+        "energy": -4.55
+      }
+    ]
+  },
+  "growth_dynamics_summary": {
+    "trajectory_1_final_mismatch": 0.035,
+    "trajectory_2_final_mismatch": 0.135,
+    "trajectory_3_final_mismatch": 0.142
+  }
+}

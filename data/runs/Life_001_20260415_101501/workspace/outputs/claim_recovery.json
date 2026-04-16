@@ -1,0 +1,64 @@
+{
+  "claim": "MinSum adaptive optimization achieves high immune response coverage with perfect composition consistency",
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Mean per-cell response probability is 0.943",
+      "evidence_source": "outputs/efficacy_summary.json",
+      "verified": true
+    },
+    {
+      "id": "C2",
+      "claim": "Coverage at p>=0.5 is 99.2%",
+      "evidence_source": "outputs/coverage_curve.csv",
+      "verified": true
+    },
+    {
+      "id": "C3",
+      "claim": "Coverage at p>=0.9 is 88.7%",
+      "evidence_source": "outputs/coverage_curve.csv",
+      "verified": true
+    },
+    {
+      "id": "C4",
+      "claim": "Coverage at p>=0.95 is 60.6%",
+      "evidence_source": "outputs/coverage_curve.csv",
+      "verified": true
+    },
+    {
+      "id": "C5",
+      "claim": "Pairwise IoU across repetitions is 1.0",
+      "evidence_source": "outputs/iou_matrix.csv",
+      "verified": true
+    },
+    {
+      "id": "C6",
+      "claim": "10 vaccine elements selected: mut11, mut12, mut15, mut19, mut20, mut26, mut28, mut33, mut39, mut44",
+      "evidence_source": "data/vaccine.budget-10.minsum.adaptive.csv",
+      "verified": true
+    },
+    {
+      "id": "C7",
+      "claim": "Mean runtime scaling exponent is 2.55",
+      "evidence_source": "outputs/runtime_scaling_params.csv",
+      "verified": true
+    },
+    {
+      "id": "C8",
+      "claim": "Runtime at 100 cells is ~0.012s, at 10000 cells is ~6.5s",
+      "evidence_source": "data/optimization_runtime_data.csv",
+      "verified": true
+    },
+    {
+      "id": "C9",
+      "claim": "Vaccine selection correlates with mutation presentation frequency",
+      "evidence_source": "outputs/mutation_cell_presentation.csv",
+      "verified": true
+    },
+    {
+      "id": "C10",
+      "claim": "mut8 excluded from vaccine (presented by only 1.7 cells on average)",
+      "evidence_source": "outputs/mutation_cell_presentation.csv",
+      "verified": true
+    }
+  ]

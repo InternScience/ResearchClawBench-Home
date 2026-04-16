@@ -1,0 +1,49 @@
+{
+  "task": "Multimodal AI for Materials Discovery",
+  "core_workflows": [
+    "Property Prediction: ML models (RF, GB, MLP, SVR, CGCNN-inspired) for predicting formation energy, band gap, bulk modulus, thermal conductivity",
+    "Structure Generation: Autoencoder-based generative model for crystal lattice parameters with latent space sampling",
+    "Autonomous Optimization: Bayesian optimization with GP surrogate for synthesis condition optimization"
+  ],
+  "named_methods": {
+    "CGCNN": "Crystal Graph Convolutional Neural Network - simplified implementation with graph convolution on crystal adjacency",
+    "Bayesian_Optimization": "GP-based Bayesian optimization with Expected Improvement acquisition function",
+    "VAE_Autoencoder": "Variational Autoencoder-inspired architecture for structure generation"
+  },
+  "datasets": {
+    "M-AI-Synth": "Original dataset with property prediction, structure generation, and optimization data",
+    "Synthetic_Materials": "500-sample synthetic dataset with 21 features and 4 targets"
+  },
+  "baselines": {
+    "property_prediction": [
+      "Random Forest",
+      "Gradient Boosting",
+      "MLP",
+      "SVR",
+      "CGCNN-inspired"
+    ],
+    "optimization": [
+      "Bayesian Optimization",
+      "Random Search",
+      "Grid Search"
+    ]
+  },
+  "metrics": {
+    "property_prediction": [
+      "MAE",
+      "RMSE",
+      "R2"
+    ],
+    "structure_generation": [
+      "validity_rate",
+      "uniqueness_rate",
+      "novelty_rate",
+      "reconstruction_loss"
+    ],
+    "optimization": [
+      "best_quality",
+      "convergence_to_target",
+      "sample_efficiency"
+    ]
+  }
+}

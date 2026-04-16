@@ -1,0 +1,28 @@
+{
+  "dataset": "simulated_sequence.json",
+  "description": "Simulated multi-object video sequence for evaluating tracking under dense occlusion",
+  "parameters": {
+    "n_frames": 100,
+    "n_objects_per_frame": 200,
+    "total_unique_ids": 200,
+    "detection_rate": 0.791,
+    "occlusion_overlap_threshold": 0.2,
+    "image_width_approx": 500,
+    "image_height_approx": 650
+  },
+  "detection_scores": {
+    "min": 0.10,
+    "max": 0.90,
+    "mean": 0.2657,
+    "median": 0.2539,
+    "pct_below_0.2": 32.3,
+    "pct_0.2_to_0.3": 35.4,
+    "pct_0.3_to_0.4": 30.0,
+    "pct_above_0.4": 2.3
+  },
+  "occlusion_stats": {
+    "occluded_pairs_per_frame_IoU_gt_0.2": "~1450",
+    "max_pairwise_IoU": "0.85-0.94",
+    "mean_pairwise_IoU": "~0.036"
+  }
+}

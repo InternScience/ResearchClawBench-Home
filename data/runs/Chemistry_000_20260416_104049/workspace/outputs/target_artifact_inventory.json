@@ -1,0 +1,29 @@
+{
+  "method_contract": {
+    "task": "Design and evaluate KA-GNNs for molecular property prediction",
+    "named_method": "Kolmogorov-Arnold Graph Neural Networks with Fourier-based KAN modules",
+    "input": "Molecular graphs (atoms as nodes, bonds as edges) from SMILES",
+    "output": "Binary classification predictions for molecular properties",
+    "datasets": ["bace", "bbbp", "clintox", "hiv", "muv"],
+    "metrics": ["ROC-AUC"],
+    "baselines": ["GCN", "GAT"],
+    "ka_models": ["KA-GCN", "KA-GAT"]
+  },
+  "target_artifact_inventory": {
+    "main_comparison_bar_chart": {"path": "report/images/main_comparison.png", "satisfied": true},
+    "auc_heatmap": {"path": "report/images/auc_heatmap.png", "satisfied": true},
+    "training_curves": {"path": "report/images/training_curves.png", "satisfied": true},
+    "param_comparison": {"path": "report/images/param_comparison.png", "satisfied": true},
+    "per_run_boxplot": {"path": "report/images/per_run_boxplot.png", "satisfied": true},
+    "relative_improvement": {"path": "report/images/relative_improvement.png", "satisfied": true},
+    "kan_architecture_diagram": {"path": "report/images/kan_architecture.png", "satisfied": true},
+    "dataset_stats": {"path": "report/images/dataset_stats.png", "satisfied": true},
+    "results_json": {"path": "outputs/results.json", "satisfied": true},
+    "curves_json": {"path": "outputs/curves.json", "satisfied": true},
+    "summary_table": {"path": "outputs/summary_table.json", "satisfied": true},
+    "param_counts": {"path": "outputs/param_counts.json", "satisfied": true},
+    "main_code": {"path": "code/ka_gnn_main.py", "satisfied": true},
+    "visualization_code": {"path": "code/visualize_results.py", "satisfied": true},
+    "report": {"path": "report/report.md", "satisfied": true}
+  }
+}

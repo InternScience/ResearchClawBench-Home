@@ -1,0 +1,25 @@
+{
+  "python_version": "check_needed",
+  "required_packages": {
+    "numpy": "core numerical computation",
+    "matplotlib": "figure generation",
+    "seaborn": "statistical visualization",
+    "json": "data serialization (built-in)",
+    "math": "geometric constants (built-in)"
+  },
+  "install_commands": [
+    "pip install numpy matplotlib seaborn"
+  ],
+  "capabilities": {
+    "hexagonal_lattice_visualization": "available via matplotlib",
+    "lj_potential_computation": "available via numpy",
+    "size_mismatch_calculation": "available via numpy",
+    "growth_simulation_reproduction": "available via numpy random + custom implementation",
+    "chiral_category_mapping": "available via custom code"
+  },
+  "limitations": {
+    "first_principles_calculations": "not available - using LJ parameters from data",
+    "gupta_potential": "not explicitly provided in data - using LJ instead",
+    "molecular_dynamics_engine": "no MD engine available - implementing simplified growth model"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "method_fidelity_checklist": {
+    "named_method": "Diffusion Pseudotime (DPT)",
+    "definition": "Compute diffusion map on neighborhood graph, then trace pseudotime from root cell through diffusion components",
+    "assumptions": [
+      "Neighborhood graph captures local cell similarity",
+      "Diffusion components encode global trajectory structure",
+      "Root cell selection determines pseudotime origin"
+    ],
+    "invariants": [
+      "Root cell must be specified (uns['iroot'])",
+      "Pseudotime ranges from 0 to 1",
+      "Requires valid neighborhood graph and diffusion map"
+    ],
+    "non_negotiable_steps": [
+      "PCA computation",
+      "Neighborhood graph construction",
+      "Diffusion map computation",
+      "Root cell assignment",
+      "DPT computation"
+    ],
+    "implementation_match": true,
+    "deviations": []
+  },
+  "dynamism_scoring": {
+    "named_method": "Composite Dynamism Score",
+    "definition": "Weighted combination of trajectory-relevant feature metrics with batch confound penalization",
+    "components": [
+      "spearman_pt (weight=0.25)",
+      "dynamic_ratio (weight=0.20)",
+      "autocorrelation (weight=0.15)",
+      "f_stat_phase (weight=0.20)",
+      "trajectory_var (weight=0.10)",
+      "batch_confound_penalty (weight=-0.10)"
+    ],
+    "implementation_match": true,
+    "deviations": []
+  },
+  "permutation_importance": {
+    "named_method": "Permutation Importance (Random Forest)",
+    "definition": "Train Random Forest on features predicting pseudotime, then measure importance by permuting each feature",
+    "implementation_match": true,
+    "deviations": []
+  }
+}

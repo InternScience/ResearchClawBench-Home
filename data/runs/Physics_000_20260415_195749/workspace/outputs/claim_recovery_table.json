@@ -1,0 +1,92 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Multi-component icosahedral shell stacking follows defined hexagonal lattice paths with seven chiral categories (MC, BG, Ch1-Ch5)",
+    "evidence_type": "figure + data",
+    "supporting_artifacts": [
+      "report/images/fig1_hexagonal_lattice_path.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Optimal size mismatch ranges exist for each shell pair type: MC-MC (0.03-0.05), MC-Ch1 (0.12-0.16), MC-Ch2 (0.19-0.22), MC-BG (0.08-0.10)",
+    "evidence_type": "figure + data",
+    "supporting_artifacts": [
+      "report/images/fig2_size_mismatch_analysis.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C3",
+    "claim": "MC shell configurations are energetically more favorable than Ch1 and BG configurations at each shell level",
+    "evidence_type": "figure + data",
+    "supporting_artifacts": [
+      "report/images/fig3_shell_energy_comparison.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Theoretical size mismatch predictions agree with experimental measurements with R-squared = 0.9904",
+    "evidence_type": "figure + computed",
+    "supporting_artifacts": [
+      "report/images/fig4_validation_parity_plot.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Dynamic growth simulations show convergence toward optimal mismatch values, with conservative path dominance (65%)",
+    "evidence_type": "figure + data",
+    "supporting_artifacts": [
+      "report/images/fig5_growth_dynamics.png",
+      "report/images/fig8_path_selection_stats.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Lennard-Jones potentials govern inter-shell interactions with distinct equilibrium distances for each atomic pair",
+    "evidence_type": "figure + computed",
+    "supporting_artifacts": [
+      "report/images/fig6_lj_potential_landscape.png"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Predicted stable multi-shell clusters include Na13@Rb32, K13@Cs42, Ag13@Cu45 with specific size mismatch values",
+    "evidence_type": "figure + data",
+    "supporting_artifacts": [
+      "report/images/fig7_predicted_clusters.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Two magic number sequences (Mackay b=3 and new b=5) define shell atom counts for icosahedral packing",
+    "evidence_type": "figure + data",
+    "supporting_artifacts": [
+      "report/images/fig9_magic_number_comparison.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Atomic pair compatibility is determined by size mismatch, enabling rational selection of element combinations",
+    "evidence_type": "figure + computed",
+    "supporting_artifacts": [
+      "report/images/fig10_atomic_radii_compatibility.png",
+      "outputs/analysis_results.json"
+    ],
+    "verification_status": "verified_from_data"
+  }
+]

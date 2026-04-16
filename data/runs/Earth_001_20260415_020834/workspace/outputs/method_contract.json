@@ -1,0 +1,25 @@
+{
+  "task": "Reproduce central empirical conclusions from NOAA cloud-seeding records (US, 2000-2025)",
+  "method_contract": {
+    "spatial_concentration": "Record counts by state, percentage shares, HHI, effective number of states",
+    "annual_dynamics": "Year-by-year record counts, period means, state-disaggregated trends",
+    "purpose_composition": "Normalized purpose categories, frequency distributions, purpose-by-season cross-tabs",
+    "agent_apparatus": "Simplified agent categories, apparatus type cross-tabulation, temporal evolution"
+  },
+  "target_artifacts": {
+    "fig1a_choropleth": "Choropleth map of records by state",
+    "fig1b_top10_states": "Bar chart of top 10 states",
+    "fig2_annual_trend": "Line plot of annual record counts",
+    "fig2b_annual_by_state": "Stacked area of top 5 states over time",
+    "fig3a_purpose_pie": "Pie chart of purpose categories",
+    "fig3b_purpose_by_season": "Stacked bar of purpose by season",
+    "fig4a_agent_apparatus_heatmap": "Heatmap of agent x apparatus",
+    "fig4b_apparatus_by_year": "Stacked bar of apparatus by year",
+    "fig4c_agent_over_time": "Line plot of top agents over time",
+    "fig5_top_operators": "Bar chart of top 10 operators",
+    "fig6_seasonal": "Bar chart of seasonal distribution",
+    "fig7_state_year_heatmap": "Heatmap of state x year for top states"
+  },
+  "status": "COMPLETE",
+  "all_artifacts_present": true
+}

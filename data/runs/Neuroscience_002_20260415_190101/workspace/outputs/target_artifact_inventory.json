@@ -1,0 +1,20 @@
+{
+  "figures": [
+    "report/images/data_overview.png",
+    "report/images/model_comparison.png",
+    "report/images/shap_interpretability.png",
+    "report/images/degradation_analysis.png",
+    "report/images/threshold_optimization.png",
+    "report/images/ablation_study.png"
+  ],
+  "results_files": [
+    "outputs/final_results.json",
+    "outputs/shap_importance.json",
+    "outputs/ablation_results.json",
+    "outputs/threshold_analysis.json"
+  ],
+  "code_files": [
+    "code/analysis.py"
+  ],
+  "report": "report/report.md"
+}

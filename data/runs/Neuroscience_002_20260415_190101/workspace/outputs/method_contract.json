@@ -1,0 +1,31 @@
+{
+  "task": "Binary prediction of neuron segment mergeability from EM over-segmentation features",
+  "input": "20 features (morphology, intensity, embedding) + degradation type",
+  "output": "Binary label (0=not merge, 1=merge)",
+  "primary_models": [
+    "XGBoost with class-weight balancing",
+    "Logistic Regression (baseline)"
+  ],
+  "key_analyses": [
+    "Data overview and feature characterization",
+    "Model comparison (LR vs XGBoost)",
+    "SHAP interpretability analysis",
+    "Per-degradation performance evaluation",
+    "Threshold optimization",
+    "Feature group ablation study"
+  ],
+  "metrics": [
+    "ROC-AUC",
+    "F1 Score",
+    "Precision",
+    "Recall",
+    "Average Precision",
+    "Accuracy"
+  ],
+  "degradation_types": [
+    "Average",
+    "Misalignment",
+    "Missing Sections",
+    "Mixed"
+  ]
+}

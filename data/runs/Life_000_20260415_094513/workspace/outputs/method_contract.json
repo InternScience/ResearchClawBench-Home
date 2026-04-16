@@ -1,0 +1,40 @@
+{
+  "task": "De novo design synthetic hydrogels achieving >1 MPa underwater adhesion by statistically replicating sequence features of natural adhesive proteins",
+  "input_features": [
+    "Nucleophilic-HEA",
+    "Hydrophobic-BA",
+    "Acidic-CBEA",
+    "Cationic-ATAC",
+    "Aromatic-PEA",
+    "Amide-AAm"
+  ],
+  "output": "Glass (kPa) adhesive strength",
+  "target_threshold_kPa": 1000,
+  "methods_used": {
+    "ML_models": [
+      "RandomForestRegressor",
+      "ExtraTreesRegressor",
+      "GradientBoostingRegressor",
+      "GaussianProcessRegressor"
+    ],
+    "optimization": [
+      "RFR-GP hybrid",
+      "GP-GP",
+      "RFR-RFR",
+      "Expected Improvement (EI)"
+    ],
+    "interpretability": [
+      "SHAP (TreeExplainer)",
+      "Feature importance (RFR)",
+      "Correlation analysis"
+    ],
+    "validation": [
+      "5-fold cross-validation",
+      "Parity plots"
+    ]
+  },
+  "data_sources": {
+    "initial_training": "184 verified hydrogel formulations",
+    "optimization_rounds": "3 rounds of EI and PRED-based optimization"
+  }
+}

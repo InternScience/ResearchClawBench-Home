@@ -1,0 +1,28 @@
+# Method Contract for Hartree-Fock Calculation Analysis (Paper 2111.01152)
+
+## Task Summary
+Analyze multi-step analytic calculation tasks of the Hartree-Fock method from paper 2111.01152 (AB-stacked MoTe2/WSe2 moiré system). Output correctly derived Hartree-Fock Hamiltonians, calculation step scores, and automated results of paper information extraction and step scoring.
+
+## Named Methods/Protocols
+- **Hartree-Fock method**: Self-consistent mean-field approximation applied to continuum moiré Hamiltonian in plane-wave basis
+- **Structured prompt templates**: Step-by-step decomposition of HF derivation into 16 sequential tasks
+- **Multi-evaluator scoring**: Three evaluators (Haining, Will, Yasaman) score each placeholder field on 0-2 scale
+- **Six evaluation categories**: in_paper, prompt_quality, follow_instructions, physics_logic, math_derivation, final_answer_accuracy
+
+## Target Artifacts
+1. Correctly derived single-particle Hamiltonian H_tau for AB-stacked MoTe2/WSe2
+2. Second-quantized forms (real space and momentum space)
+3. Particle-hole transformation results
+4. Interaction Hamiltonian with dual-gate screened Coulomb potential
+5. Wick's theorem expansion → Hartree and Fock terms
+6. Final combined Hartree-Fock Hamiltonian
+7. Per-step scoring table (16 steps × 6 categories)
+8. Placeholder-level scoring analysis (244 scores across 3 evaluators)
+9. Evaluator agreement analysis
+10. Error pattern identification
+
+## Key Quantitative Targets
+- Overall average task-level score: 1.802 ± 0.470 (scale 0-2)
+- Physics_logic category: perfect 2.0/2.0 across all steps
+- Weakest category: in_paper (mean 1.500) — reflects LLM misidentification of representation type
+- Major error patterns: real/momentum space confusion, single-particle/second-quantized confusion, electrons/holes misidentification

@@ -1,0 +1,11 @@
+{
+  "torch": "available",
+  "numpy": "available",
+  "sklearn": "available",
+  "lightgbm": "available",
+  "matplotlib": "available",
+  "seaborn": "available",
+  "torch_geometric": "available (for data loading)",
+  "z3/SMT_solver": "not available - approximated with MI/correlation ratio",
+  "cuda": "not available - using CPU"
+}

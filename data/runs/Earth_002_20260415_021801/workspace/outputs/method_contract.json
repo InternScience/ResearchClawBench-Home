@@ -1,0 +1,35 @@
+{
+  "task": "Develop a composite risk index combining tropical cyclone regime shifts and sea level rise, applied globally to evaluate where and to what extent mangroves and their ecosystem services are at risk by end of century.",
+  "named_methods": {
+    "composite_risk_index": {
+      "description": "CRI = 0.5 * SLR_risk + 0.5 * TC_risk, both normalized to [0,1]",
+      "assumptions": [
+        "Equal weighting of SLR and TC risk",
+        "Linear interpolation within risk categories"
+      ],
+      "invariants": [
+        "CRI in [0,1]",
+        "Higher CRI = higher risk"
+      ]
+    },
+    "slr_risk_scoring": {
+      "description": "Piecewise linear mapping of SLR rate to [0,1] based on Saintilan et al. (2023) thresholds",
+      "thresholds": {
+        "4_mm_yr": "deficit likely",
+        "7_mm_yr": "deficit highly likely",
+        "10_mm_yr": "severe deficit"
+      }
+    },
+    "tc_risk_scoring": {
+      "description": "Combined frequency-intensity score based on Mo et al. (2023) and Kropf et al. (2023)",
+      "components": {
+        "frequency": "40% weight, based on major TC (Cat 3+) annual frequency",
+        "intensity": "60% weight, based on maximum wind speed"
+      },
+      "future_projection": "Knutson et al. (2020) factors for TC activity changes under warming"
+    },
+    "slr_data_source": "IPCC AR6 regional SLR rates (Garner et al., 2021), median quantile, 2020-2100 average",
+    "tc_data_source": "MIT downscaled TC tracks from CMIP6 MPI-ESM1-2-HR historical (Emanuel et al., 2006)",
+    "mangrove_data_source": "Global Mangrove Watch v4 (Bunting et al., 2018), 10% sample"
+  }
+}

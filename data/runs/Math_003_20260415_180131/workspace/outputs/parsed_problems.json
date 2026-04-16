@@ -1,0 +1,5081 @@
+[
+  {
+    "name": "translated_imo_2000_p1",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "e",
+        "p",
+        "e",
+        "q"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b"
+        ],
+        "raw_rhs": "segment a b",
+        "constraints": [
+          {
+            "predicate": "segment",
+            "args": [
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "g1"
+        ],
+        "raw_rhs": "on_tline g1 a a b",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "g1",
+              "a",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "g2"
+        ],
+        "raw_rhs": "on_tline g2 b b a",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "g2",
+              "b",
+              "b",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m"
+        ],
+        "raw_rhs": "on_circle m g1 a, on_circle m g2 b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "m",
+              "g1",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "m",
+              "g2",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "n"
+        ],
+        "raw_rhs": "on_circle n g1 a, on_circle n g2 b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "n",
+              "g1",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "n",
+              "g2",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c"
+        ],
+        "raw_rhs": "on_pline c m a b, on_circle c g1 a",
+        "constraints": [
+          {
+            "predicate": "on_pline",
+            "args": [
+              "c",
+              "m",
+              "a",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "c",
+              "g1",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_pline d m a b, on_circle d g2 b",
+        "constraints": [
+          {
+            "predicate": "on_pline",
+            "args": [
+              "d",
+              "m",
+              "a",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "d",
+              "g2",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_line e a c, on_line e b d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "e",
+              "a",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "e",
+              "b",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_line p a n, on_line p c d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "a",
+              "n"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "c",
+              "d"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 11,
+    "num_construction_steps": 9,
+    "goal_predicate": "cong",
+    "full_body": "a b = segment a b; g1 = on_tline g1 a a b; g2 = on_tline g2 b b a; m = on_circle m g1 a, on_circle m g2 b; n = on_circle n g1 a, on_circle n g2 b; c = on_pline c m a b, on_circle c g1 a; d = on_pline d m a b, on_circle d g2 b; e = on_line e a c, on_line e b d; p = on_line p a n, on_line p c d; q = on_line q b n, on_line q c d ? cong e p e q"
+  },
+  {
+    "name": "translated_imo_2000_p6",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "i",
+        "z",
+        "i",
+        "t1"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h"
+        ],
+        "raw_rhs": "orthocenter h a b c",
+        "constraints": [
+          {
+            "predicate": "orthocenter",
+            "args": [
+              "h",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "t1",
+          "t2",
+          "t3",
+          "i"
+        ],
+        "raw_rhs": "incenter2 t1 t2 t3 i a b c",
+        "constraints": [
+          {
+            "predicate": "incenter2",
+            "args": [
+              "t1",
+              "t2",
+              "t3",
+              "i",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h1"
+        ],
+        "raw_rhs": "foot h1 a b c",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "h1",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h2"
+        ],
+        "raw_rhs": "foot h2 b c a",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "h2",
+              "b",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h3"
+        ],
+        "raw_rhs": "foot h3 c a b",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "h3",
+              "c",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x1"
+        ],
+        "raw_rhs": "reflect x1 h1 t1 t2",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "x1",
+              "h1",
+              "t1",
+              "t2"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x2"
+        ],
+        "raw_rhs": "reflect x2 h2 t1 t2",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "x2",
+              "h2",
+              "t1",
+              "t2"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "y2"
+        ],
+        "raw_rhs": "reflect y2 h2 t2 t3",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "y2",
+              "h2",
+              "t2",
+              "t3"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "y3"
+        ],
+        "raw_rhs": "reflect y3 h3 t2 t3",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "y3",
+              "h3",
+              "t2",
+              "t3"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 16,
+    "num_construction_steps": 10,
+    "goal_predicate": "cong",
+    "full_body": "a b c = triangle a b c; h = orthocenter h a b c; t1 t2 t3 i = incenter2 t1 t2 t3 i a b c; h1 = foot h1 a b c; h2 = foot h2 b c a; h3 = foot h3 c a b; x1 = reflect x1 h1 t1 t2; x2 = reflect x2 h2 t1 t2; y2 = reflect y2 h2 t2 t3; y3 = reflect y3 h3 t2 t3; z = on_line z x1 x2, on_line z y2 y3 ? cong i z i t1"
+  },
+  {
+    "name": "translated_imo_2002_p2a",
+    "goal": {
+      "predicate": "eqangle",
+      "args": [
+        "e",
+        "c",
+        "e",
+        "j",
+        "e",
+        "j",
+        "e",
+        "f"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "b",
+          "c"
+        ],
+        "raw_rhs": "segment b c",
+        "constraints": [
+          {
+            "predicate": "segment",
+            "args": [
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "midpoint o b c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "o",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a"
+        ],
+        "raw_rhs": "on_circle a o b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a",
+              "o",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_circle d o b, on_bline d a b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "d",
+              "o",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "d",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_bline e o a, on_circle e o b",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "e",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "e",
+              "o",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_bline f o a, on_circle f o b",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "f",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "f",
+              "o",
+              "b"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 8,
+    "num_construction_steps": 6,
+    "goal_predicate": "eqangle",
+    "full_body": "b c = segment b c; o = midpoint o b c; a = on_circle a o b; d = on_circle d o b, on_bline d a b; e = on_bline e o a, on_circle e o b; f = on_bline f o a, on_circle f o b; j = on_pline j o a d, on_line j a c ? eqangle e c e j e j e f"
+  },
+  {
+    "name": "translated_imo_2002_p2b",
+    "goal": {
+      "predicate": "eqangle",
+      "args": [
+        "c",
+        "e",
+        "c",
+        "j",
+        "c",
+        "j",
+        "c",
+        "f"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "b",
+          "c"
+        ],
+        "raw_rhs": "segment b c",
+        "constraints": [
+          {
+            "predicate": "segment",
+            "args": [
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "midpoint o b c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "o",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a"
+        ],
+        "raw_rhs": "on_circle a o b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a",
+              "o",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_circle d o b, on_bline d a b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "d",
+              "o",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "d",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_bline e o a, on_circle e o b",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "e",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "e",
+              "o",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_bline f o a, on_circle f o b",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "f",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "f",
+              "o",
+              "b"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 8,
+    "num_construction_steps": 6,
+    "goal_predicate": "eqangle",
+    "full_body": "b c = segment b c; o = midpoint o b c; a = on_circle a o b; d = on_circle d o b, on_bline d a b; e = on_bline e o a, on_circle e o b; f = on_bline f o a, on_circle f o b; j = on_pline j o a d, on_line j a c ? eqangle c e c j c j c f"
+  },
+  {
+    "name": "translated_imo_2003_p4",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "p",
+        "q",
+        "q",
+        "r"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b1"
+        ],
+        "raw_rhs": "on_circle b1 o a, on_bline b1 c a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "b1",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "b1",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d1"
+        ],
+        "raw_rhs": "on_circle d1 o a, on_bline d1 c a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "d1",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "d1",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x"
+        ],
+        "raw_rhs": "on_line x b b1, on_line x a c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "x",
+              "b",
+              "b1"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "x",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_line d d1 x, on_circle d o a",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "d",
+              "d1",
+              "x"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "d",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "foot p d b c",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "p",
+              "d",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "foot q d c a",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "q",
+              "d",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 11,
+    "num_construction_steps": 8,
+    "goal_predicate": "cong",
+    "full_body": "a b c = triangle a b c; o = circle o a b c; b1 = on_circle b1 o a, on_bline b1 c a; d1 = on_circle d1 o a, on_bline d1 c a; x = on_line x b b1, on_line x a c; d = on_line d d1 x, on_circle d o a; p = foot p d b c; q = foot q d c a; r = foot r d a b ? cong p q q r"
+  },
+  {
+    "name": "translated_imo_2004_p1",
+    "goal": {
+      "predicate": "coll",
+      "args": [
+        "p",
+        "b",
+        "c"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "midpoint o b c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "o",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m"
+        ],
+        "raw_rhs": "on_circle m o b, on_line m a b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "m",
+              "o",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "m",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "n"
+        ],
+        "raw_rhs": "on_circle n o b, on_line n a c",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "n",
+              "o",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "n",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "r"
+        ],
+        "raw_rhs": "angle_bisector r b a c, angle_bisector r m o n",
+        "constraints": [
+          {
+            "predicate": "angle_bisector",
+            "args": [
+              "r",
+              "b",
+              "a",
+              "c"
+            ]
+          },
+          {
+            "predicate": "angle_bisector",
+            "args": [
+              "r",
+              "m",
+              "o",
+              "n"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 b m r",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "b",
+              "m",
+              "r"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o2"
+        ],
+        "raw_rhs": "circle o2 c n r",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o2",
+              "c",
+              "n",
+              "r"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 10,
+    "num_construction_steps": 7,
+    "goal_predicate": "coll",
+    "full_body": "a b c = triangle a b c; o = midpoint o b c; m = on_circle m o b, on_line m a b; n = on_circle n o b, on_line n a c; r = angle_bisector r b a c, angle_bisector r m o n; o1 = circle o1 b m r; o2 = circle o2 c n r; p = on_circle p o1 r, on_circle p o2 r ? coll p b c"
+  },
+  {
+    "name": "translated_imo_2004_p5",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "a",
+        "p",
+        "c",
+        "p"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_circle d o a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "d",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 6,
+    "num_construction_steps": 3,
+    "goal_predicate": "cong",
+    "full_body": "a b c = triangle a b c; o = circle o a b c; d = on_circle d o a; p = on_aline p b c a b d, on_aline p d c a d b ? cong a p c p"
+  },
+  {
+    "name": "translated_imo_2005_p5",
+    "goal": {
+      "predicate": "cyclic",
+      "args": [
+        "p",
+        "q",
+        "r",
+        "m"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "eqdistance d a b c",
+        "constraints": [
+          {
+            "predicate": "eqdistance",
+            "args": [
+              "d",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_line e b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "e",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_line f a d, eqdistance f d e b",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "f",
+              "a",
+              "d"
+            ]
+          },
+          {
+            "predicate": "eqdistance",
+            "args": [
+              "f",
+              "d",
+              "e",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_line p a c, on_line p b d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "a",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "b",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_line q e f, on_line q b d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "q",
+              "e",
+              "f"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "q",
+              "b",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "r"
+        ],
+        "raw_rhs": "on_line r e f, on_line r a c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "r",
+              "e",
+              "f"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "r",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 a p d",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "a",
+              "p",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o2"
+        ],
+        "raw_rhs": "circle o2 b p c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o2",
+              "b",
+              "p",
+              "c"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 12,
+    "num_construction_steps": 9,
+    "goal_predicate": "cyclic",
+    "full_body": "a b c = triangle a b c; d = eqdistance d a b c; e = on_line e b c; f = on_line f a d, eqdistance f d e b; p = on_line p a c, on_line p b d; q = on_line q e f, on_line q b d; r = on_line r e f, on_line r a c; o1 = circle o1 a p d; o2 = circle o2 b p c; m = on_circle m o1 p, on_circle m o2 p ? cyclic p q r m"
+  },
+  {
+    "name": "translated_imo_2007_p4",
+    "goal": {
+      "predicate": "eqratio",
+      "args": [
+        "k",
+        "k1",
+        "l",
+        "l1",
+        "r",
+        "q",
+        "r",
+        "p"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "r"
+        ],
+        "raw_rhs": "on_circle r o a, on_bline r a b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "r",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "r",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "l"
+        ],
+        "raw_rhs": "midpoint l c a",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "l",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "k"
+        ],
+        "raw_rhs": "midpoint k c b",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "k",
+              "c",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_line p o k, on_line p c r",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "o",
+              "k"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "c",
+              "r"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_line q o l, on_line q c r",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "q",
+              "o",
+              "l"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "q",
+              "c",
+              "r"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "l1"
+        ],
+        "raw_rhs": "foot l1 l c r",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "l1",
+              "l",
+              "c",
+              "r"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 11,
+    "num_construction_steps": 8,
+    "goal_predicate": "eqratio",
+    "full_body": "a b c = triangle a b c; o = circle o a b c; r = on_circle r o a, on_bline r a b; l = midpoint l c a; k = midpoint k c b; p = on_line p o k, on_line p c r; q = on_line q o l, on_line q c r; l1 = foot l1 l c r; k1 = foot k1 k c r ? eqratio k k1 l l1 r q r p"
+  },
+  {
+    "name": "translated_imo_2008_p1a",
+    "goal": {
+      "predicate": "cyclic",
+      "args": [
+        "c1",
+        "c2",
+        "b1",
+        "b2"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h"
+        ],
+        "raw_rhs": "orthocenter h a b c",
+        "constraints": [
+          {
+            "predicate": "orthocenter",
+            "args": [
+              "h",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "midpoint d b c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "d",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "midpoint e a c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "e",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "midpoint f a b",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "f",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a1"
+        ],
+        "raw_rhs": "on_circle a1 d h, on_line a1 b c",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a1",
+              "d",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a1",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a2"
+        ],
+        "raw_rhs": "on_circle a2 d h, on_line a2 b c",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a2",
+              "d",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a2",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b1"
+        ],
+        "raw_rhs": "on_circle b1 e h, on_line b1 c a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "b1",
+              "e",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "b1",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b2"
+        ],
+        "raw_rhs": "on_circle b2 e h, on_line b2 c a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "b2",
+              "e",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "b2",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c1"
+        ],
+        "raw_rhs": "on_circle c1 f h, on_line c1 a b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "c1",
+              "f",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "c1",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 13,
+    "num_construction_steps": 10,
+    "goal_predicate": "cyclic",
+    "full_body": "a b c = triangle a b c; h = orthocenter h a b c; d = midpoint d b c; e = midpoint e a c; f = midpoint f a b; a1 = on_circle a1 d h, on_line a1 b c; a2 = on_circle a2 d h, on_line a2 b c; b1 = on_circle b1 e h, on_line b1 c a; b2 = on_circle b2 e h, on_line b2 c a; c1 = on_circle c1 f h, on_line c1 a b; c2 = on_circle c2 f h, on_line c2 a b ? cyclic c1 c2 b1 b2"
+  },
+  {
+    "name": "translated_imo_2008_p1b",
+    "goal": {
+      "predicate": "cyclic",
+      "args": [
+        "c1",
+        "c2",
+        "b1",
+        "a1"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h"
+        ],
+        "raw_rhs": "orthocenter h a b c",
+        "constraints": [
+          {
+            "predicate": "orthocenter",
+            "args": [
+              "h",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "midpoint d b c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "d",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "midpoint e a c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "e",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "midpoint f a b",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "f",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a1"
+        ],
+        "raw_rhs": "on_circle a1 d h, on_line a1 b c",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a1",
+              "d",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a1",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a2"
+        ],
+        "raw_rhs": "on_circle a2 d h, on_line a2 b c",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a2",
+              "d",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a2",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b1"
+        ],
+        "raw_rhs": "on_circle b1 e h, on_line b1 c a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "b1",
+              "e",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "b1",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b2"
+        ],
+        "raw_rhs": "on_circle b2 e h, on_line b2 c a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "b2",
+              "e",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "b2",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c1"
+        ],
+        "raw_rhs": "on_circle c1 f h, on_line c1 a b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "c1",
+              "f",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "c1",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 13,
+    "num_construction_steps": 10,
+    "goal_predicate": "cyclic",
+    "full_body": "a b c = triangle a b c; h = orthocenter h a b c; d = midpoint d b c; e = midpoint e a c; f = midpoint f a b; a1 = on_circle a1 d h, on_line a1 b c; a2 = on_circle a2 d h, on_line a2 b c; b1 = on_circle b1 e h, on_line b1 c a; b2 = on_circle b2 e h, on_line b2 c a; c1 = on_circle c1 f h, on_line c1 a b; c2 = on_circle c2 f h, on_line c2 a b ? cyclic c1 c2 b1 a1"
+  },
+  {
+    "name": "translated_imo_2008_p6",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "k",
+        "o",
+        "x"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "x@4.96_-0.13",
+          "y@-1.0068968328888160_-1.2534881080682770",
+          "z@-2.8402847238575120_-4.9117762734006830"
+        ],
+        "raw_rhs": "triangle x y z",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "x",
+              "y",
+              "z"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o x y z",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "x",
+              "y",
+              "z"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "w@6.9090049230038776_-1.3884003936987552"
+        ],
+        "raw_rhs": "on_circle w o x",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "w",
+              "o",
+              "x"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a"
+        ],
+        "raw_rhs": "on_tline a z o z, on_tline a x o x",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "a",
+              "z",
+              "o",
+              "z"
+            ]
+          },
+          {
+            "predicate": "on_tline",
+            "args": [
+              "a",
+              "x",
+              "o",
+              "x"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b"
+        ],
+        "raw_rhs": "on_tline b z o z, on_tline b w o w",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "b",
+              "z",
+              "o",
+              "z"
+            ]
+          },
+          {
+            "predicate": "on_tline",
+            "args": [
+              "b",
+              "w",
+              "o",
+              "w"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c"
+        ],
+        "raw_rhs": "on_tline c y o y, on_tline c w o w",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "c",
+              "y",
+              "o",
+              "y"
+            ]
+          },
+          {
+            "predicate": "on_tline",
+            "args": [
+              "c",
+              "w",
+              "o",
+              "w"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_tline d x o x, on_tline d y o y",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "d",
+              "x",
+              "o",
+              "x"
+            ]
+          },
+          {
+            "predicate": "on_tline",
+            "args": [
+              "d",
+              "y",
+              "o",
+              "y"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "i1"
+        ],
+        "raw_rhs": "incenter i1 a b c",
+        "constraints": [
+          {
+            "predicate": "incenter",
+            "args": [
+              "i1",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "i2"
+        ],
+        "raw_rhs": "incenter i2 a c d",
+        "constraints": [
+          {
+            "predicate": "incenter",
+            "args": [
+              "i2",
+              "a",
+              "c",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f1"
+        ],
+        "raw_rhs": "foot f1 i1 a c",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "f1",
+              "i1",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f2"
+        ],
+        "raw_rhs": "foot f2 i2 a c",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "f2",
+              "i2",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q",
+          "t",
+          "p",
+          "s"
+        ],
+        "raw_rhs": "cc_tangent q t p s i1 f1 i2 f2",
+        "constraints": [
+          {
+            "predicate": "cc_tangent",
+            "args": [
+              "q",
+              "t",
+              "p",
+              "s",
+              "i1",
+              "f1",
+              "i2",
+              "f2"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 22,
+    "num_construction_steps": 12,
+    "goal_predicate": "cong",
+    "full_body": "x@4.96_-0.13 y@-1.0068968328888160_-1.2534881080682770 z@-2.8402847238575120_-4.9117762734006830 = triangle x y z; o = circle o x y z; w@6.9090049230038776_-1.3884003936987552 = on_circle w o x; a = on_tline a z o z, on_tline a x o x; b = on_tline b z o z, on_tline b w o w; c = on_tline c y o y, on_tline c w o w; d = on_tline d x o x, on_tline d y o y; i1 = incenter i1 a b c; i2 = incenter i2 a c d; f1 = foot f1 i1 a c; f2 = foot f2 i2 a c; q t p s = cc_tangent q t p s i1 f1 i2 f2; k = on_line k q t, on_line k p s ? cong o k o x"
+  },
+  {
+    "name": "translated_imo_2009_p2",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "p",
+        "o",
+        "q"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "m",
+          "l",
+          "k"
+        ],
+        "raw_rhs": "triangle m l k",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "m",
+              "l",
+              "k"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "w"
+        ],
+        "raw_rhs": "circle w m l k",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "w",
+              "m",
+              "l",
+              "k"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_tline q m w m",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "q",
+              "m",
+              "w",
+              "m"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "mirror p q m",
+        "constraints": [
+          {
+            "predicate": "mirror",
+            "args": [
+              "p",
+              "q",
+              "m"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b"
+        ],
+        "raw_rhs": "mirror b p k",
+        "constraints": [
+          {
+            "predicate": "mirror",
+            "args": [
+              "b",
+              "p",
+              "k"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c"
+        ],
+        "raw_rhs": "mirror c q l",
+        "constraints": [
+          {
+            "predicate": "mirror",
+            "args": [
+              "c",
+              "q",
+              "l"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a"
+        ],
+        "raw_rhs": "on_line a b q, on_line a c p",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "b",
+              "q"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "c",
+              "p"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 10,
+    "num_construction_steps": 7,
+    "goal_predicate": "cong",
+    "full_body": "m l k = triangle m l k; w = circle w m l k; q = on_tline q m w m; p = mirror p q m; b = mirror b p k; c = mirror c q l; a = on_line a b q, on_line a c p; o = circle o a b c ? cong o p o q"
+  },
+  {
+    "name": "translated_imo_2010_p2",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "a",
+        "o",
+        "k"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "i"
+        ],
+        "raw_rhs": "incenter i a b c",
+        "constraints": [
+          {
+            "predicate": "incenter",
+            "args": [
+              "i",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_line d a i, on_circle d o a",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "d",
+              "a",
+              "i"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "d",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_line f b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "f",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_aline e a c b a f, on_circle e o a",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "e",
+              "a",
+              "c",
+              "b",
+              "a",
+              "f"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "e",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "g"
+        ],
+        "raw_rhs": "midpoint g i f",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "g",
+              "i",
+              "f"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 10,
+    "num_construction_steps": 7,
+    "goal_predicate": "cong",
+    "full_body": "a b c = triangle a b c; o = circle o a b c; i = incenter i a b c; d = on_line d a i, on_circle d o a; f = on_line f b c; e = on_aline e a c b a f, on_circle e o a; g = midpoint g i f; k = on_line k d g, on_line k e i ? cong o a o k"
+  },
+  {
+    "name": "translated_imo_2010_p4",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "m",
+        "k",
+        "m",
+        "l"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "s",
+          "c",
+          "p"
+        ],
+        "raw_rhs": "iso_triangle s c p",
+        "constraints": [
+          {
+            "predicate": "iso_triangle",
+            "args": [
+              "s",
+              "c",
+              "p"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "on_tline o c s c",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "o",
+              "c",
+              "s",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a"
+        ],
+        "raw_rhs": "on_circle a o c",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a",
+              "o",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b"
+        ],
+        "raw_rhs": "on_circle b o c, on_line b s a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "b",
+              "o",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "b",
+              "s",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m"
+        ],
+        "raw_rhs": "on_line m c p, on_circle m o c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "m",
+              "c",
+              "p"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "m",
+              "o",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "l"
+        ],
+        "raw_rhs": "on_line l b p, on_circle l o c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "l",
+              "b",
+              "p"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "l",
+              "o",
+              "c"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 9,
+    "num_construction_steps": 6,
+    "goal_predicate": "cong",
+    "full_body": "s c p = iso_triangle s c p; o = on_tline o c s c; a = on_circle a o c; b = on_circle b o c, on_line b s a; m = on_line m c p, on_circle m o c; l = on_line l b p, on_circle l o c; k = on_line k a p, on_circle k o c ? cong m k m l"
+  },
+  {
+    "name": "translated_imo_2011_p6",
+    "goal": {
+      "predicate": "coll",
+      "args": [
+        "x",
+        "o",
+        "o1"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_circle p o a",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "p",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_tline q p o p",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "q",
+              "p",
+              "o",
+              "p"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "pa"
+        ],
+        "raw_rhs": "reflect pa p b c",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "pa",
+              "p",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "pb"
+        ],
+        "raw_rhs": "reflect pb p c a",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "pb",
+              "p",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "pc"
+        ],
+        "raw_rhs": "reflect pc p a b",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "pc",
+              "p",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "qa"
+        ],
+        "raw_rhs": "reflect qa q b c",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "qa",
+              "q",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "qb"
+        ],
+        "raw_rhs": "reflect qb q c a",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "qb",
+              "q",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "qc"
+        ],
+        "raw_rhs": "reflect qc q a b",
+        "constraints": [
+          {
+            "predicate": "reflect",
+            "args": [
+              "qc",
+              "q",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a1"
+        ],
+        "raw_rhs": "on_line a1 pb qb, on_line a1 pc qc",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "a1",
+              "pb",
+              "qb"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a1",
+              "pc",
+              "qc"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b1"
+        ],
+        "raw_rhs": "on_line b1 pa qa, on_line b1 pc qc",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "b1",
+              "pa",
+              "qa"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "b1",
+              "pc",
+              "qc"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c1"
+        ],
+        "raw_rhs": "on_line c1 pa qa, on_line c1 pb qb",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "c1",
+              "pa",
+              "qa"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "c1",
+              "pb",
+              "qb"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 a1 b1 c1",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "a1",
+              "b1",
+              "c1"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 17,
+    "num_construction_steps": 14,
+    "goal_predicate": "coll",
+    "full_body": "a b c = triangle a b c; o = circle o a b c; p = on_circle p o a; q = on_tline q p o p; pa = reflect pa p b c; pb = reflect pb p c a; pc = reflect pc p a b; qa = reflect qa q b c; qb = reflect qb q c a; qc = reflect qc q a b; a1 = on_line a1 pb qb, on_line a1 pc qc; b1 = on_line b1 pa qa, on_line b1 pc qc; c1 = on_line c1 pa qa, on_line c1 pb qb; o1 = circle o1 a1 b1 c1; x = on_circle x o a, on_circle x o1 a1 ? coll x o o1"
+  },
+  {
+    "name": "translated_imo_2012_p1",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "m",
+        "s",
+        "m",
+        "t"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m",
+          "l",
+          "k",
+          "j"
+        ],
+        "raw_rhs": "excenter2 m l k j a b c",
+        "constraints": [
+          {
+            "predicate": "excenter2",
+            "args": [
+              "m",
+              "l",
+              "k",
+              "j",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_line f m l, on_line f b j",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "f",
+              "m",
+              "l"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "f",
+              "b",
+              "j"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "g"
+        ],
+        "raw_rhs": "on_line g m k, on_line g c j",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "g",
+              "m",
+              "k"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "g",
+              "c",
+              "j"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "s"
+        ],
+        "raw_rhs": "on_line s f a, on_line s b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "s",
+              "f",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "s",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 11,
+    "num_construction_steps": 5,
+    "goal_predicate": "cong",
+    "full_body": "a b c = triangle a b c; m l k j = excenter2 m l k j a b c; f = on_line f m l, on_line f b j; g = on_line g m k, on_line g c j; s = on_line s f a, on_line s b c; t = on_line t g a, on_line t c b ? cong m s m t"
+  },
+  {
+    "name": "translated_imo_2012_p5",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "m",
+        "k",
+        "m",
+        "l"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "c",
+          "a",
+          "b"
+        ],
+        "raw_rhs": "r_triangle c a b",
+        "constraints": [
+          {
+            "predicate": "r_triangle",
+            "args": [
+              "c",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "foot d c a b",
+        "constraints": [
+          {
+            "predicate": "foot",
+            "args": [
+              "d",
+              "c",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x"
+        ],
+        "raw_rhs": "on_line x c d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "x",
+              "c",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "k"
+        ],
+        "raw_rhs": "on_line k a x, on_circle k b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "k",
+              "a",
+              "x"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "k",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "l"
+        ],
+        "raw_rhs": "on_line l b x, on_circle l a c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "l",
+              "b",
+              "x"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "l",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 8,
+    "num_construction_steps": 5,
+    "goal_predicate": "cong",
+    "full_body": "c a b = r_triangle c a b; d = foot d c a b; x = on_line x c d; k = on_line k a x, on_circle k b c; l = on_line l b x, on_circle l a c; m = on_line m a l, on_line m b k ? cong m k m l"
+  },
+  {
+    "name": "translated_imo_2013_p4",
+    "goal": {
+      "predicate": "coll",
+      "args": [
+        "x",
+        "h",
+        "y"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h"
+        ],
+        "raw_rhs": "orthocenter h a b c",
+        "constraints": [
+          {
+            "predicate": "orthocenter",
+            "args": [
+              "h",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m"
+        ],
+        "raw_rhs": "on_line m h b, on_line m a c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "m",
+              "h",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "m",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "n"
+        ],
+        "raw_rhs": "on_line n h c, on_line n a b",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "n",
+              "h",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "n",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "w"
+        ],
+        "raw_rhs": "on_line w b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "w",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 b n w",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "b",
+              "n",
+              "w"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o2"
+        ],
+        "raw_rhs": "circle o2 c m w",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o2",
+              "c",
+              "m",
+              "w"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x"
+        ],
+        "raw_rhs": "on_line x o1 w, on_circle x o1 w",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "x",
+              "o1",
+              "w"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "x",
+              "o1",
+              "w"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 11,
+    "num_construction_steps": 8,
+    "goal_predicate": "coll",
+    "full_body": "a b c = triangle a b c; h = orthocenter h a b c; m = on_line m h b, on_line m a c; n = on_line n h c, on_line n a b; w = on_line w b c; o1 = circle o1 b n w; o2 = circle o2 c m w; x = on_line x o1 w, on_circle x o1 w; y = on_line y o2 w, on_circle y o2 w ? coll x h y"
+  },
+  {
+    "name": "translated_imo_2014_p4",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "x",
+        "o",
+        "a"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_line p b c, on_aline p a b b c a",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_aline",
+            "args": [
+              "p",
+              "a",
+              "b",
+              "b",
+              "c",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_line q b c, on_aline q a c c b a",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "q",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_aline",
+            "args": [
+              "q",
+              "a",
+              "c",
+              "c",
+              "b",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m"
+        ],
+        "raw_rhs": "mirror m a p",
+        "constraints": [
+          {
+            "predicate": "mirror",
+            "args": [
+              "m",
+              "a",
+              "p"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "n"
+        ],
+        "raw_rhs": "mirror n a q",
+        "constraints": [
+          {
+            "predicate": "mirror",
+            "args": [
+              "n",
+              "a",
+              "q"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x"
+        ],
+        "raw_rhs": "on_line x b m, on_line x c n",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "x",
+              "b",
+              "m"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "x",
+              "c",
+              "n"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 9,
+    "num_construction_steps": 6,
+    "goal_predicate": "cong",
+    "full_body": "a b c = triangle a b c; p = on_line p b c, on_aline p a b b c a; q = on_line q b c, on_aline q a c c b a; m = mirror m a p; n = mirror n a q; x = on_line x b m, on_line x c n; o = circle o a b c ? cong o x o a"
+  },
+  {
+    "name": "translated_imo_2015_p3",
+    "goal": {
+      "predicate": "coll",
+      "args": [
+        "o1",
+        "o2",
+        "k"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "h"
+        ],
+        "raw_rhs": "orthocenter h a b c",
+        "constraints": [
+          {
+            "predicate": "orthocenter",
+            "args": [
+              "h",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_line f h a, on_line f b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "f",
+              "h",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "f",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m"
+        ],
+        "raw_rhs": "midpoint m b c",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "m",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_dia q a h, on_circle q o a",
+        "constraints": [
+          {
+            "predicate": "on_dia",
+            "args": [
+              "q",
+              "a",
+              "h"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "q",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "k"
+        ],
+        "raw_rhs": "on_dia k h q, on_circle k o a",
+        "constraints": [
+          {
+            "predicate": "on_dia",
+            "args": [
+              "k",
+              "h",
+              "q"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "k",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 k q h",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "k",
+              "q",
+              "h"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 11,
+    "num_construction_steps": 8,
+    "goal_predicate": "coll",
+    "full_body": "a b c = triangle a b c; h = orthocenter h a b c; f = on_line f h a, on_line f b c; m = midpoint m b c; o = circle o a b c; q = on_dia q a h, on_circle q o a; k = on_dia k h q, on_circle k o a; o1 = circle o1 k q h; o2 = circle o2 f k m ? coll o1 o2 k"
+  },
+  {
+    "name": "translated_imo_2015_p4",
+    "goal": {
+      "predicate": "coll",
+      "args": [
+        "x",
+        "o",
+        "a"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_line d b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "d",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_line e b c, on_circle e a d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "e",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "e",
+              "a",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_circle f o a, on_circle f a d",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "f",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "f",
+              "a",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "g"
+        ],
+        "raw_rhs": "on_circle g o a, on_circle g a d",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "g",
+              "o",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "g",
+              "a",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 f b d",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "f",
+              "b",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o2"
+        ],
+        "raw_rhs": "circle o2 g c e",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o2",
+              "g",
+              "c",
+              "e"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "k"
+        ],
+        "raw_rhs": "on_circle k o1 b, on_line k a b",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "k",
+              "o1",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "k",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "l"
+        ],
+        "raw_rhs": "on_circle l o2 c, on_line l a c",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "l",
+              "o2",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "l",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 13,
+    "num_construction_steps": 10,
+    "goal_predicate": "coll",
+    "full_body": "a b c = triangle a b c; o = circle o a b c; d = on_line d b c; e = on_line e b c, on_circle e a d; f = on_circle f o a, on_circle f a d; g = on_circle g o a, on_circle g a d; o1 = circle o1 f b d; o2 = circle o2 g c e; k = on_circle k o1 b, on_line k a b; l = on_circle l o2 c, on_line l a c; x = on_line x f k, on_line x l g ? coll x o a"
+  },
+  {
+    "name": "translated_imo_2016_p1",
+    "goal": {
+      "predicate": "coll",
+      "args": [
+        "y",
+        "b",
+        "d"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "z"
+        ],
+        "raw_rhs": "triangle a b z",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "z"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "angle_bisector f b a z, on_bline f a b",
+        "constraints": [
+          {
+            "predicate": "angle_bisector",
+            "args": [
+              "f",
+              "b",
+              "a",
+              "z"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "f",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c"
+        ],
+        "raw_rhs": "on_tline c b f b, on_line c a f",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "c",
+              "b",
+              "f",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "c",
+              "a",
+              "f"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_line d a z, on_bline d a c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "d",
+              "a",
+              "z"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "d",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "angle_mirror e c a d, on_bline e a d",
+        "constraints": [
+          {
+            "predicate": "angle_mirror",
+            "args": [
+              "e",
+              "c",
+              "a",
+              "d"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "e",
+              "a",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "m"
+        ],
+        "raw_rhs": "midpoint m c f",
+        "constraints": [
+          {
+            "predicate": "midpoint",
+            "args": [
+              "m",
+              "c",
+              "f"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x"
+        ],
+        "raw_rhs": "parallelogram e a m x",
+        "constraints": [
+          {
+            "predicate": "parallelogram",
+            "args": [
+              "e",
+              "a",
+              "m",
+              "x"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 10,
+    "num_construction_steps": 7,
+    "goal_predicate": "coll",
+    "full_body": "a b z = triangle a b z; f = angle_bisector f b a z, on_bline f a b; c = on_tline c b f b, on_line c a f; d = on_line d a z, on_bline d a c; e = angle_mirror e c a d, on_bline e a d; m = midpoint m c f; x = parallelogram e a m x; y = on_line y f x, on_line y e m ? coll y b d"
+  },
+  {
+    "name": "translated_imo_2017_p4",
+    "goal": {
+      "predicate": "perp",
+      "args": [
+        "k",
+        "t",
+        "o1",
+        "t"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "r",
+          "s"
+        ],
+        "raw_rhs": "segment r s",
+        "constraints": [
+          {
+            "predicate": "segment",
+            "args": [
+              "r",
+              "s"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "t"
+        ],
+        "raw_rhs": "mirror t r s",
+        "constraints": [
+          {
+            "predicate": "mirror",
+            "args": [
+              "t",
+              "r",
+              "s"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "on_bline o r s",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "o",
+              "r",
+              "s"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "j"
+        ],
+        "raw_rhs": "on_circle j o s",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "j",
+              "o",
+              "s"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 j s t",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "j",
+              "s",
+              "t"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a"
+        ],
+        "raw_rhs": "on_tline a r o r, on_circle a o1 s",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "a",
+              "r",
+              "o",
+              "r"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "a",
+              "o1",
+              "s"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b"
+        ],
+        "raw_rhs": "on_tline b r o r, on_circle b o1 s",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "b",
+              "r",
+              "o",
+              "r"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "b",
+              "o1",
+              "s"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 9,
+    "num_construction_steps": 7,
+    "goal_predicate": "perp",
+    "full_body": "r s = segment r s; t = mirror t r s; o = on_bline o r s; j = on_circle j o s; o1 = circle o1 j s t; a = on_tline a r o r, on_circle a o1 s; b = on_tline b r o r, on_circle b o1 s; k = on_line k j a, on_circle k o s ? perp k t o1 t"
+  },
+  {
+    "name": "translated_imo_2018_p1",
+    "goal": {
+      "predicate": "para",
+      "args": [
+        "d",
+        "e",
+        "f",
+        "g"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o"
+        ],
+        "raw_rhs": "circle o a b c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_line d a b",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "d",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_line e a c, on_circle e a d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "e",
+              "a",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "e",
+              "a",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_bline f b d, on_circle f o a",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "f",
+              "b",
+              "d"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "f",
+              "o",
+              "a"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 8,
+    "num_construction_steps": 5,
+    "goal_predicate": "para",
+    "full_body": "a b c = triangle a b c; o = circle o a b c; d = on_line d a b; e = on_line e a c, on_circle e a d; f = on_bline f b d, on_circle f o a; g = on_bline g e c, on_circle g o a ? para d e f g"
+  },
+  {
+    "name": "translated_imo_2019_p2",
+    "goal": {
+      "predicate": "cyclic",
+      "args": [
+        "p",
+        "q",
+        "p1",
+        "q1"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle",
+        "constraints": []
+      },
+      {
+        "defined_points": [
+          "a1"
+        ],
+        "raw_rhs": "on_line b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "b1"
+        ],
+        "raw_rhs": "on_line a c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_line a a1",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "a1"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_line b b1, on_pline p a b",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "b",
+              "b1"
+            ]
+          },
+          {
+            "predicate": "on_pline",
+            "args": [
+              "p",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p1"
+        ],
+        "raw_rhs": "on_line p b1, eqangle3 p c a b c",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "b1"
+            ]
+          },
+          {
+            "predicate": "eqangle3",
+            "args": [
+              "p",
+              "c",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 9,
+    "num_construction_steps": 6,
+    "goal_predicate": "cyclic",
+    "full_body": "a b c = triangle; a1 = on_line b c; b1 = on_line a c; p = on_line a a1; q = on_line b b1, on_pline p a b; p1 = on_line p b1, eqangle3 p c a b c; q1 = on_line q a1, eqangle3 c q b c a ? cyclic p q p1 q1"
+  },
+  {
+    "name": "translated_imo_2019_p6",
+    "goal": {
+      "predicate": "perp",
+      "args": [
+        "a",
+        "t",
+        "a",
+        "i"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle a b c",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d",
+          "e",
+          "f",
+          "i"
+        ],
+        "raw_rhs": "incenter2 d e f i a b c",
+        "constraints": [
+          {
+            "predicate": "incenter2",
+            "args": [
+              "d",
+              "e",
+              "f",
+              "i",
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "r"
+        ],
+        "raw_rhs": "on_tline r d e f, on_circle r i d",
+        "constraints": [
+          {
+            "predicate": "on_tline",
+            "args": [
+              "r",
+              "d",
+              "e",
+              "f"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "r",
+              "i",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_line p r a, on_circle p i d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "p",
+              "r",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "p",
+              "i",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle o1 p c e",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o1",
+              "p",
+              "c",
+              "e"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o2"
+        ],
+        "raw_rhs": "circle o2 p b f",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "o2",
+              "p",
+              "b",
+              "f"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_circle q o1 p, on_circle q o2 p",
+        "constraints": [
+          {
+            "predicate": "on_circle",
+            "args": [
+              "q",
+              "o1",
+              "p"
+            ]
+          },
+          {
+            "predicate": "on_circle",
+            "args": [
+              "q",
+              "o2",
+              "p"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 13,
+    "num_construction_steps": 7,
+    "goal_predicate": "perp",
+    "full_body": "a b c = triangle a b c; d e f i = incenter2 d e f i a b c; r = on_tline r d e f, on_circle r i d; p = on_line p r a, on_circle p i d; o1 = circle o1 p c e; o2 = circle o2 p b f; q = on_circle q o1 p, on_circle q o2 p; t = on_line t p q, on_line t i d ? perp a t a i"
+  },
+  {
+    "name": "translated_imo_2020_p1",
+    "goal": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "a",
+        "o",
+        "b"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "p",
+          "a",
+          "b"
+        ],
+        "raw_rhs": "triangle p a b",
+        "constraints": [
+          {
+            "predicate": "triangle",
+            "args": [
+              "p",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x"
+        ],
+        "raw_rhs": "angle_bisector p b a",
+        "constraints": [
+          {
+            "predicate": "angle_bisector",
+            "args": [
+              "p",
+              "b",
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "y"
+        ],
+        "raw_rhs": "angle_bisector p a b",
+        "constraints": [
+          {
+            "predicate": "angle_bisector",
+            "args": [
+              "p",
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "z"
+        ],
+        "raw_rhs": "on_aline z a p a b x",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "z",
+              "a",
+              "p",
+              "a",
+              "b",
+              "x"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "t"
+        ],
+        "raw_rhs": "on_aline t p a p a z",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "t",
+              "p",
+              "a",
+              "p",
+              "a",
+              "z"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "on_aline d p t p b a, on_line a z",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "d",
+              "p",
+              "t",
+              "p",
+              "b",
+              "a"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "z"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "u"
+        ],
+        "raw_rhs": "on_aline u b p b a y",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "u",
+              "b",
+              "p",
+              "b",
+              "a",
+              "y"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "v"
+        ],
+        "raw_rhs": "on_aline v p b p b u",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "v",
+              "p",
+              "b",
+              "p",
+              "b",
+              "u"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "c"
+        ],
+        "raw_rhs": "on_aline c p v p a b, on_line b u",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "c",
+              "p",
+              "v",
+              "p",
+              "a",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "b",
+              "u"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 12,
+    "num_construction_steps": 9,
+    "goal_predicate": "cong",
+    "full_body": "p a b = triangle p a b; x = angle_bisector p b a; y = angle_bisector p a b; z = on_aline z a p a b x; t = on_aline t p a p a z; d = on_aline d p t p b a, on_line a z; u = on_aline u b p b a y; v = on_aline v p b p b u; c = on_aline c p v p a b, on_line b u; o = angle_bisector a d p, angle_bisector p c b ? cong o a o b"
+  },
+  {
+    "name": "translated_imo_2021_p3",
+    "goal": {
+      "predicate": "coll",
+      "args": [
+        "o1",
+        "o2",
+        "y"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "a",
+          "b",
+          "c"
+        ],
+        "raw_rhs": "triangle",
+        "constraints": []
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "angle_bisector b a c",
+        "constraints": [
+          {
+            "predicate": "angle_bisector",
+            "args": [
+              "b",
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "on_aline d a d c b, on_line a c",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "d",
+              "a",
+              "d",
+              "c",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "f"
+        ],
+        "raw_rhs": "on_aline d a d b c, on_line a b",
+        "constraints": [
+          {
+            "predicate": "on_aline",
+            "args": [
+              "d",
+              "a",
+              "d",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "b"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "x"
+        ],
+        "raw_rhs": "on_bline b c, on_line a c",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "b",
+              "c"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o1"
+        ],
+        "raw_rhs": "circle a d c",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "a",
+              "d",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "o2"
+        ],
+        "raw_rhs": "circle e x d",
+        "constraints": [
+          {
+            "predicate": "circle",
+            "args": [
+              "e",
+              "x",
+              "d"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 10,
+    "num_construction_steps": 7,
+    "goal_predicate": "coll",
+    "full_body": "a b c = triangle; d = angle_bisector b a c; e = on_aline d a d c b, on_line a c; f = on_aline d a d b c, on_line a b; x = on_bline b c, on_line a c; o1 = circle a d c; o2 = circle e x d; y = on_line e f, on_line b c ? coll o1 o2 y"
+  },
+  {
+    "name": "translated_imo_2022_p4",
+    "goal": {
+      "predicate": "cyclic",
+      "args": [
+        "p",
+        "q",
+        "r",
+        "s"
+      ]
+    },
+    "constructions": [
+      {
+        "defined_points": [
+          "b",
+          "c"
+        ],
+        "raw_rhs": "segment",
+        "constraints": []
+      },
+      {
+        "defined_points": [
+          "d"
+        ],
+        "raw_rhs": "free",
+        "constraints": []
+      },
+      {
+        "defined_points": [
+          "e"
+        ],
+        "raw_rhs": "eqdistance d b c",
+        "constraints": [
+          {
+            "predicate": "eqdistance",
+            "args": [
+              "d",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "t"
+        ],
+        "raw_rhs": "on_bline b d, on_bline c e",
+        "constraints": [
+          {
+            "predicate": "on_bline",
+            "args": [
+              "b",
+              "d"
+            ]
+          },
+          {
+            "predicate": "on_bline",
+            "args": [
+              "c",
+              "e"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "a"
+        ],
+        "raw_rhs": "eqangle2 b t e",
+        "constraints": [
+          {
+            "predicate": "eqangle2",
+            "args": [
+              "b",
+              "t",
+              "e"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "p"
+        ],
+        "raw_rhs": "on_line a b, on_line c d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "c",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "q"
+        ],
+        "raw_rhs": "on_line a b, on_line c t",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "c",
+              "t"
+            ]
+          }
+        ]
+      },
+      {
+        "defined_points": [
+          "r"
+        ],
+        "raw_rhs": "on_line a e, on_line c d",
+        "constraints": [
+          {
+            "predicate": "on_line",
+            "args": [
+              "a",
+              "e"
+            ]
+          },
+          {
+            "predicate": "on_line",
+            "args": [
+              "c",
+              "d"
+            ]
+          }
+        ]
+      }
+    ],
+    "num_points": 10,
+    "num_construction_steps": 8,
+    "goal_predicate": "cyclic",
+    "full_body": "b c = segment; d = free; e = eqdistance d b c; t = on_bline b d, on_bline c e; a = eqangle2 b t e; p = on_line a b, on_line c d; q = on_line a b, on_line c t; r = on_line a e, on_line c d; s = on_line a e, on_line d t ? cyclic p q r s"
+  }
+]

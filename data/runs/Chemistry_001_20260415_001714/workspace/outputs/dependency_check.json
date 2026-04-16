@@ -1,0 +1,22 @@
+{
+  "dependency_check": {
+    "pytorch": {"available": true, "version": "2.11.0+cu130"},
+    "rdkit": {"available": true, "version": "2025.09.6"},
+    "biopython": {"available": true, "version": "1.87"},
+    "numpy": {"available": true, "version": "2.4.3"},
+    "matplotlib": {"available": true},
+    "seaborn": {"available": true},
+    "scipy": {"available": true},
+    "cuda": {"available": false, "note": "Running on CPU, will use smaller model"}
+  },
+  "limitations": [
+    "No GPU available - using CPU-optimized model with reduced parameters",
+    "Single protein-ligand complex for evaluation (2l3r)",
+    "No training on large datasets - using pretrained embeddings where possible",
+    "Diffusion model will be demonstrated with fewer denoising steps for computational efficiency"
+  ],
+  "fallbacks": [
+    "Using CPU-compatible SE(3)-equivariant layers instead of full CUDA kernels",
+    "Using simplified diffusion process with analytical solutions where possible"
+  ]
+}

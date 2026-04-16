@@ -1,0 +1,33 @@
+# Method Contract
+{
+  "task": "Measure H0 to ~1% precision using a Local Distance Network combining multiple distance indicators",
+  "method": "Generalized Least Squares (GLS) covariance-weighted network fit",
+  "inputs": {
+    "geometric_anchors": ["MW parallaxes", "LMC DEBs", "N4258 masers"],
+    "primary_indicators": ["Cepheids", "TRGB"],
+    "secondary_indicators": ["SNe Ia", "SBF"],
+    "hubble_flow": ["SNe Ia HF", "SBF HF"]
+  },
+  "target_outputs": {
+    "consensus_H0": "73.50 +/- 0.81 km/s/Mpc (expected baseline)",
+    "variant_results": "Multiple analysis variants for robustness",
+    "comparison_with_CMB": "Planck H0 = 67.4 +/- 0.5"
+  },
+  "key_equations": {
+    "distance_modulus": "mu = 5*log10(d_L/Mpc) + 25",
+    "hubble_law": "d_L = c*z/H0 (low-z)",
+    "SN_absolute_mag": "MB = mB - mu_host",
+    "hubble_intercept": "a_B = 5*log10(c/H0) + 25 + MB",
+    "H0_derivation": "H0 = c / 10^((a_B - MB - 25)/5)"
+  },
+  "fidelity_checklist": {
+    "multiple_anchors": true,
+    "multiple_primary_indicators": true,
+    "covariance_weighting": true,
+    "peculiar_velocity_uncertainty": true,
+    "method_anchor_systematics": true,
+    "intra_group_depth_scatter": true,
+    "analysis_variants": true,
+    "hubble_diagram_slope_fixed_to_5": true
+  }
+}

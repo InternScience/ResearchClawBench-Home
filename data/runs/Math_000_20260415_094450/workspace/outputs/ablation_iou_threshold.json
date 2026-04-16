@@ -1,0 +1,207 @@
+{
+  "0.1": {
+    "SORT": {
+      "MOTA": 0.7731,
+      "MOTP": 0.8476,
+      "IDF1": 0.503,
+      "ID_Switches": 1585,
+      "FP": 1383,
+      "FN": 1571,
+      "TP": 18429,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    },
+    "ByteTrack": {
+      "MOTA": 0.4753,
+      "MOTP": 0.8116,
+      "IDF1": 0.2234,
+      "ID_Switches": 3793,
+      "FP": 1290,
+      "FN": 5411,
+      "TP": 14589,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 31,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 169
+    },
+    "SparseTrack": {
+      "MOTA": 0.2924,
+      "MOTP": 0.7961,
+      "IDF1": 0.1866,
+      "ID_Switches": 5579,
+      "FP": 5167,
+      "FN": 3406,
+      "TP": 16594,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 147,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 53
+    }
+  },
+  "0.2": {
+    "SORT": {
+      "MOTA": 0.7818,
+      "MOTP": 0.8537,
+      "IDF1": 0.6306,
+      "ID_Switches": 1233,
+      "FP": 2069,
+      "FN": 1061,
+      "TP": 18939,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    },
+    "ByteTrack": {
+      "MOTA": 0.5301,
+      "MOTP": 0.8264,
+      "IDF1": 0.2818,
+      "ID_Switches": 3128,
+      "FP": 1961,
+      "FN": 4310,
+      "TP": 15690,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 85,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 115
+    },
+    "SparseTrack": {
+      "MOTA": 0.3231,
+      "MOTP": 0.8115,
+      "IDF1": 0.2295,
+      "ID_Switches": 4851,
+      "FP": 6011,
+      "FN": 2676,
+      "TP": 17324,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 188,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 12
+    }
+  },
+  "0.3": {
+    "SORT": {
+      "MOTA": 0.8179,
+      "MOTP": 0.8593,
+      "IDF1": 0.7363,
+      "ID_Switches": 758,
+      "FP": 2357,
+      "FN": 527,
+      "TP": 19473,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    },
+    "ByteTrack": {
+      "MOTA": 0.5975,
+      "MOTP": 0.8423,
+      "IDF1": 0.4255,
+      "ID_Switches": 2151,
+      "FP": 3032,
+      "FN": 2867,
+      "TP": 17133,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 167,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 33
+    },
+    "SparseTrack": {
+      "MOTA": 0.3881,
+      "MOTP": 0.8289,
+      "IDF1": 0.3098,
+      "ID_Switches": 3733,
+      "FP": 6829,
+      "FN": 1677,
+      "TP": 18323,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    }
+  },
+  "0.4": {
+    "SORT": {
+      "MOTA": 0.7656,
+      "MOTP": 0.8609,
+      "IDF1": 0.7556,
+      "ID_Switches": 594,
+      "FP": 3813,
+      "FN": 280,
+      "TP": 19720,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    },
+    "ByteTrack": {
+      "MOTA": 0.6359,
+      "MOTP": 0.8545,
+      "IDF1": 0.5776,
+      "ID_Switches": 1296,
+      "FP": 4538,
+      "FN": 1448,
+      "TP": 18552,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 197,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 3
+    },
+    "SparseTrack": {
+      "MOTA": 0.3459,
+      "MOTP": 0.8409,
+      "IDF1": 0.3652,
+      "ID_Switches": 2782,
+      "FP": 9354,
+      "FN": 945,
+      "TP": 19055,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 199,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 1
+    }
+  },
+  "0.5": {
+    "SORT": {
+      "MOTA": 0.5471,
+      "MOTP": 0.8613,
+      "IDF1": 0.6975,
+      "ID_Switches": 694,
+      "FP": 8197,
+      "FN": 168,
+      "TP": 19832,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    },
+    "ByteTrack": {
+      "MOTA": 0.4992,
+      "MOTP": 0.8578,
+      "IDF1": 0.6177,
+      "ID_Switches": 982,
+      "FP": 8356,
+      "FN": 677,
+      "TP": 19323,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    },
+    "SparseTrack": {
+      "MOTA": 0.2107,
+      "MOTP": 0.8492,
+      "IDF1": 0.42,
+      "ID_Switches": 2009,
+      "FP": 13188,
+      "FN": 589,
+      "TP": 19411,
+      "Total_GT": 20000,
+      "Mostly_Tracked": 200,
+      "Mostly_Lost": 0,
+      "Partially_Tracked": 0
+    }
+  }
+}

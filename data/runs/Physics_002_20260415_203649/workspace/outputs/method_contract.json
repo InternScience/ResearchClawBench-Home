@@ -1,0 +1,20 @@
+{
+  "task": "Evaluation of computational power of random quantum circuit sampling (RCS) on arbitrary geometries",
+  "named_methods": [
+    "XEB (Cross-Entropy Benchmarking) fidelity estimation",
+    "MB (Measurement Benchmarking / Patch) survival probability",
+    "Transport 1QRB (Randomized Benchmarking for transport gates)",
+    "Gate-count error propagation model"
+  ],
+  "key_formulas": {
+    "XEB_fidelity": "F_XEB = 2^n * <P(x_i)>_i - 1",
+    "MB_survival": "p_survival = count(ideal_bitstring) / total_samples",
+    "Gate_count_model": "F_pred = (1-e_1q)^{n_sq} * (1-e_2q)^{n_2q} * (1-e_readout)^{n_ro}"
+  },
+  "comparison_axes": [
+    "Depth scan at fixed N (N=40, N=56)",
+    "Qubit scan at fixed depth (d=12)",
+    "Gap between experimental fidelity and classical approximability"
+  ],
+  "core_conclusion_to_validate": "Gap between experimental fidelity and classical approximability under arbitrary-geometry/high-connectivity random circuits"
+}
