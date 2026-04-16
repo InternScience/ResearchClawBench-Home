@@ -1,0 +1,12 @@
+{
+  "task": "Parameter identification of an ECAT coupled model for Lithium-ion batteries",
+  "method": "Meta-Model based Genetic Algorithm (MMGA)",
+  "components": [
+    "Experimental macroscopic data (voltage, temperature, capacity)",
+    "Multi-parameter search space defined by Latin Hypercube Sampling (LHS)",
+    "Artificial Neural Network (ANN) meta-model",
+    "Genetic Algorithm (GA) for optimization",
+    "Electrochemical-aging-thermal (ECAT) coupled model"
+  ],
+  "goal": "Develop a rapid and accurate parameter identification framework using an ANN to replace computationally expensive physical simulations."
+}

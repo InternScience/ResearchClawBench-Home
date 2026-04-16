@@ -1,0 +1,20 @@
+{
+  "Goal": "Estimate delivered cost of African green hydrogen to Europe by 2030 via ammonia shipping and reconversion.",
+  "Scenarios": {
+    "Baseline": "8% WACC",
+    "De-risked": "4% WACC"
+  },
+  "Assumptions": {
+    "CAPEX_PV": "1,470,000 €/MW",
+    "CAPEX_Wind": "1,580,000 €/MW",
+    "CAPEX_Electrolyzer": "1,250,000 €/MW",
+    "Ammonia_Synthesis": "750 €/(kgH2/year)",
+    "Ammonia_Cracking": "500 €/(kgH2/year)",
+    "Shipping_Ammonia": "0.39 €/kgH2"
+  },
+  "Target_Artifacts": [
+    "LCOA map (Baseline vs De-risked)",
+    "Cost breakdown chart for top locations",
+    "Results CSV"
+  ]
+}

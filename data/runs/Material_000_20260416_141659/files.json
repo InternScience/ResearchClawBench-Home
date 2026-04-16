@@ -1,0 +1,223 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "finetune.py",
+    "path": "code/finetune.py",
+    "type": "file",
+    "size": 7427,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "predict.py",
+    "path": "code/predict.py",
+    "type": "file",
+    "size": 4977,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "pretrain.py",
+    "path": "code/pretrain.py",
+    "type": "file",
+    "size": 4720,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_data.pt",
+    "path": "data/candidate_data.pt",
+    "type": "file",
+    "size": 2451457,
+    "mtime": 1772431610.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "finetune_data.pt",
+    "path": "data/finetune_data.pt",
+    "type": "file",
+    "size": 4904635,
+    "mtime": 1772431608.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "pretrain_data.pt",
+    "path": "data/pretrain_data.pt",
+    "type": "file",
+    "size": 12321899,
+    "mtime": 1772431606.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_predictions.csv",
+    "path": "outputs/candidate_predictions.csv",
+    "type": "file",
+    "size": 18321,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "finetuned_model.pth",
+    "path": "outputs/finetuned_model.pth",
+    "type": "file",
+    "size": 53829,
+    "mtime": 1776337495.0,
+    "exported": false
+  },
+  {
+    "name": "finetuned_model_best.pth",
+    "path": "outputs/finetuned_model_best.pth",
+    "type": "file",
+    "size": 195627,
+    "mtime": 1776337495.0,
+    "exported": false
+  },
+  {
+    "name": "pr_curve.png",
+    "path": "outputs/pr_curve.png",
+    "type": "file",
+    "size": 21437,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "pretrained_encoder.pth",
+    "path": "outputs/pretrained_encoder.pth",
+    "type": "file",
+    "size": 610941,
+    "mtime": 1776337495.0,
+    "exported": false
+  },
+  {
+    "name": "roc_curve.png",
+    "path": "outputs/roc_curve.png",
+    "type": "file",
+    "size": 32759,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4055967,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8225125,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1212404,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2144524,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "finetune_loss.png",
+    "path": "report/images/finetune_loss.png",
+    "type": "file",
+    "size": 30755,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "pr_curve.png",
+    "path": "report/images/pr_curve.png",
+    "type": "file",
+    "size": 21902,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "pretrain_loss.png",
+    "path": "report/images/pretrain_loss.png",
+    "type": "file",
+    "size": 23756,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "prob_distribution.png",
+    "path": "report/images/prob_distribution.png",
+    "type": "file",
+    "size": 20344,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "roc_curve.png",
+    "path": "report/images/roc_curve.png",
+    "type": "file",
+    "size": 32821,
+    "mtime": 1776337495.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 5972,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6080,
+    "mtime": 1776320219.0,
+    "exported": true
+  }
+]

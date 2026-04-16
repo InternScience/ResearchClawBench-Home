@@ -1,0 +1,24 @@
+{
+    "consistency": {
+        "diff_cn01_sum": {
+            "Electricity [kW]": 4.828848432225641e-10,
+            "Heat [mmBTU]": 1.2730083653877955e-10,
+            "Cooling Energy [Ton]": 2.3237589630298316e-10,
+            "PV Power Generation [kW]": 3.312550234113587e-11,
+            "Greenhouse Gas Emission [Ton]": 3.5493030736688524e-10
+        },
+        "diff_total_cn01": {
+            "Electricity [kW]": 0.0,
+            "Heat [mmBTU]": 0.0,
+            "Cooling Energy [Ton]": 0.0,
+            "PV Power Generation [kW]": 0.0,
+            "Greenhouse Gas Emission [Ton]": 0.0
+        }
+    },
+    "correlation": {
+        "cooling_temp": 0.0014826601295728123,
+        "heating_temp": 0.46134008854473807,
+        "pv_temp": -0.557705142550077,
+        "pv_humidity": -0.1048078905706492
+    }
+}

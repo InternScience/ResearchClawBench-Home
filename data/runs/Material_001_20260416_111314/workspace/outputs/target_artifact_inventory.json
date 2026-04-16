@@ -1,0 +1,17 @@
+{
+    "property_prediction_model": {
+        "status": "satisfied",
+        "description": "A simulated property prediction model yielding MSE and R2 metrics.",
+        "artifact": "outputs/analysis_results.json"
+    },
+    "structure_generation_distribution": {
+        "status": "satisfied",
+        "description": "A comparison of generated vs target structure parameters.",
+        "artifact": "report/images/structure_generation.png"
+    },
+    "autonomous_optimization_trajectory": {
+        "status": "satisfied",
+        "description": "An optimization trajectory over a 2D parameter space.",
+        "artifact": "report/images/experimental_optimization.png"
+    }
+}

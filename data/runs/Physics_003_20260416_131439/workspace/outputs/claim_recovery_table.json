@@ -1,0 +1,19 @@
+{
+  "claims": [
+    {
+      "claim": "Direct observation of Floquet-Bloch states",
+      "evidence": "tr-ARPES spectra showing photon-dressed replica bands separated by pump photon energy (0.248 eV)",
+      "artifact": "report/images/band_dispersion_with_expected.png"
+    },
+    {
+      "claim": "Polarization dependence of Floquet-Bloch state intensity",
+      "evidence": "Replica band intensity follows A + B*cos^2(theta - theta0) dependence",
+      "artifact": "report/images/polarization_polar.png"
+    },
+    {
+      "claim": "Volkov final states scattering mechanism",
+      "evidence": "Two-fold symmetry in polarization dependence arising from transition dipole matrix elements coupling Floquet-Bloch initial states to Volkov final states",
+      "artifact": "report/images/polarization_cartesian.png"
+    }
+  ]
+}

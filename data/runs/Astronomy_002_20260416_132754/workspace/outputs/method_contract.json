@@ -1,0 +1,7 @@
+{
+  "goal": "Measure H0 with ~1% precision using a Local Distance Network",
+  "method": "Generalized Least Squares (GLS) with covariance-weighted approach",
+  "data": "H0DN_MinimalDataset.txt",
+  "variants": ["Baseline", "Cepheid + SNe Ia", "TRGB + SNe Ia", "Cepheid + SBF", "TRGB + SBF"],
+  "deliverables": ["code", "outputs", "report/report.md", "report/images/"]
+}

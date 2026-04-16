@@ -1,0 +1,8 @@
+{
+    "task": "Develop a composite risk index combining tropical cyclone regime shifts and sea level rise, and apply it globally to evaluate where and to what extent mangroves and their ecosystem services are at risk by the end of the century.",
+    "methods": {
+        "SLR_Risk": "Extracted median SLR rates (2020-2100) for SSP2-4.5, SSP3-7.0, and SSP5-8.5. Normalized to a risk index between 0 and 1, where 4 mm/yr is the lower threshold (low risk) and 7 mm/yr is the upper threshold (high risk), based on findings from related work.",
+        "TC_Risk": "Calculated the historical frequency of intense tropical cyclones (Category 3-5, >49.6 m/s) passing within 1 degree of mangrove locations. Normalized to a risk index between 0 and 1 based on an expected frequency threshold of 0.1 events per year.",
+        "Composite_Risk": "Calculated as the unweighted mean of SLR_Risk and TC_Risk to represent the combined vulnerability of mangroves to both stressors."
+    }
+}

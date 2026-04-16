@@ -1,0 +1,9 @@
+{
+  "task": "Develop a unified deep learning framework for biomolecular complex structure prediction using diffusion-based architecture",
+  "method_contract": {
+    "framework": "Diffusion-based architecture",
+    "inputs": ["protein sequence", "nucleic acid sequence", "small molecule structure"],
+    "outputs": ["accurate 3D structures of biomolecular complexes"],
+    "evaluation_metrics": ["Protein CA RMSD", "Ligand RMSD with symmetry-aware matching"]
+  }
+}

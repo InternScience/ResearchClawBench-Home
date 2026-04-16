@@ -1,0 +1,45 @@
+{
+  "run_id": "Math_000_20260416_114950",
+  "task_id": "Math_000",
+  "timestamp": "20260416_114950",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+  "model": "Gemini-3.1-Pro",
+  "model_display": "Gemini-3.1-Pro",
+  "duration_seconds": 1794,
+  "cost_usd": 3.588,
+  "score": {
+    "run_id": "Math_000_20260416_114950",
+    "task_id": "Math_000",
+    "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "The pseudo-depth method estimates relative target depth from 2D images by measuring the distance from the bounding box bottom to the image bottom edge. It relies on two scene priors: the camera is abo",
+        "weight": 0.15,
+        "score": 20,
+        "reasoning": "This is a subjective, mechanistic criterion (Mode B) about how pseudo-depth is defined and justified. The report mentions pseudo-depth qualitatively (objects lower in the image are closer) but defines it incorrectly relative to the target: it refers to the bottom y-coordinate rather than explicitly to the distance from the box bottom to the image bottom, and it does not state the camera-above-ground and flat-ground priors. It briefly notes that depth reflects occlusion ordering but with limited detail and some conceptual inaccuracy, so the analysis is shallow and partially flawed."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "Depth Cascade Matching (DCM) uses pseudo-depth to partition trajectories and detections into multiple depth levels. It performs IoU-based association sequentially from the nearest to the farthest dept",
+        "weight": 0.15,
+        "score": 18,
+        "reasoning": "The criterion is about the qualitative design and mechanics of Depth Cascade Matching, so Mode B applies. The report briefly mentions pseudo-depth estimation and hierarchical association, but it does not concretely describe key aspects: no explicit partitioning by depth intervals, no clear statement that association is restricted within each depth level, no description of unmatched targets cascading to deeper levels, and it only generically mentions IoU-based matching. Thus, the core DCM mechanisms are only superficially and partially addressed."
+      },
+      {
+        "index": 2,
+        "type": "image",
+        "content": "SparseTrack integrates pseudo-depth and DCM into the tracking-by-detection pipeline, achieving state-of-the-art results on MOT17, MOT20, and DanceTrack using only IoU matching. It substantially outper",
+        "weight": 0.7,
+        "score": 22,
+        "reasoning": "Mode A (Objective): the criterion concerns quantitative performance trends and the role of depth levels. The target plot shows performance increasing with more depth levels up to 4–6 then saturating above the ByteTrack baseline. The AI-generated depth-level figure shows strictly decreasing performance with more depth levels, never surpassing the baseline, directly contradicting the required trend, and the other plots do not address optimal depth levels or SOTA gains on MOT datasets. Thus, while depth levels are mentioned, the quantitative behavior is incorrect and far from the paper’s findings."
+      }
+    ],
+    "total_score": 21.1,
+    "total_weight": 1.0
+  },
+  "report": "# Evaluation of Multi-Object Tracking in Dense Occlusion Scenarios: A Comparison of ByteTrack and SparseTrack\n\n## 1. Introduction\nMulti-Object Tracking (MOT) is a fundamental task in computer vision, aiming to estimate bounding boxes and identities of objects in videos. Tracking in crowded scenes remains challenging due to frequent inter-object occlusions, which often lead to fragmented trajectories and identity switches. This report evaluates two tracking algorithms—ByteTrack and SparseTrack—on a simulated dense occlusion dataset.\n\nByteTrack associates almost every detection box, using high-score detections for primary association and low-score detections to recover occluded objects. While effective, dense scenes can still cause association ambiguity. SparseTrack addresses this by decomposing dense target sets into sparse subsets via pseudo-depth estimation, followed by hierarchical association.\n\n## 2. Methodology\n\n### 2.1 Dataset\nThe evaluation uses `simulated_sequence.json`, a dataset containing a simulated multi-object video sequence with 100 frames and 20 objects. It was generated with an 85% detection rate and a 20% occlusion overlap threshold to simulate dense occlusion scenarios. The dataset provides ground truth trajectories, detection boxes with confidence scores, and occlusion labels.\n\n### 2.2 Algorithms\n**ByteTrack (Baseline):**\n- **First Association:** Matches high-score detections (confidence $\\ge 0.05$) with existing tracklets using Intersection over Union (IoU).\n- **Second Association:** Matches low-score detections ($0.01 \\le$ confidence $< 0.05$) with unmatched tracklets to recover occluded objects.\n\n**SparseTrack (Proposed):**\n- **Pseudo-Depth Estimation:** Estimates depth based on the bottom y-coordinate of bounding boxes. Objects lower in the image are assumed closer to the camera and assigned a lower depth level.\n- **Hierarchical Association:** Decomposes the high-score detections into 3 depth levels. Association is performed hierarchically, starting from the closest depth level, reducing the complexity and ambiguity of matching in dense crowds.\n- **Second Association:** Similar to ByteTrack, low-score detections are matched with remaining unmatched tracklets.\n\n### 2.3 Evaluation Metrics\nThe algorithms are evaluated using standard MOT metrics:\n- **MOTA (Multiple Object Tracking Accuracy):** Combines false positives, false negatives, and identity switches into a single score.\n- **IDF1 (Identification F1 Score):** Measures the ratio of correctly identified detections over the average number of ground-truth and computed detections.\n- **ID Switches:** The number of times a tracked trajectory changes its matched ground-truth identity.\n\n## 3. Results\n\nBoth trackers were implemented and run on the simulated sequence. The tracking performance is summarized in the figures below.\n\n![Performance Comparison](images/performance_comparison.png)\n*Figure 1: Comparison of MOTA and IDF1 scores between ByteTrack and SparseTrack.*\n\n![ID Switches](images/id_switches.png)\n*Figure 2: Comparison of Identity Switches between ByteTrack and SparseTrack.*\n\n![Trajectories](images/trajectories.png)\n*Figure 3: Visual comparison of estimated trajectories.*\n\n### Quantitative Analysis\n- **MOTA:** ByteTrack achieved a MOTA of 0.726, while SparseTrack achieved a comparable MOTA of 0.719.\n- **IDF1:** SparseTrack slightly outperformed ByteTrack in IDF1 score (0.8825 vs. 0.8821), indicating marginally better identity preservation overall.\n- **ID Switches:** While SparseTrack was expected to reduce ID switches by resolving occlusion ambiguities through depth estimation, the results showed ByteTrack having fewer ID switches (1257) compared to SparseTrack (1404) on this specific simulated dataset.\n\n## 4. Discussion\n\nThe results demonstrate that both ByteTrack and SparseTrack are highly effective at tracking multiple objects, even under simulated occlusion conditions. \n\nSparseTrack's pseudo-depth estimation provides a structured way to handle dense crowds by prioritizing closer objects during association. However, in this specific simulation, the depth heuristic based solely on the bounding box's bottom y-coordinate may not perfectly correlate with the true occlusion ordering, leading to a higher number of ID switches compared to the simpler, global association strategy of ByteTrack. \n\nFurthermore, the simulated dataset has a relatively uniform distribution of objects and a fixed 20% occlusion overlap threshold. SparseTrack's hierarchical association is designed for extremely crowded real-world scenes where global IoU matching fails heavily. In moderately dense simulated scenarios, the global optimization of the Hungarian algorithm used in ByteTrack might find a better overall assignment than the greedy, level-by-level approach of SparseTrack.\n\n## 5. Conclusion\nThis study evaluated ByteTrack and SparseTrack on a simulated dense occlusion dataset. Both methods achieved high tracking accuracy (MOTA $> 0.71$) and identity preservation (IDF1 $> 0.88$). While SparseTrack offers a theoretically sound approach to handling severe occlusions via pseudo-depth decomposition, ByteTrack's robust two-stage association proved slightly more effective at minimizing identity switches in this specific simulated environment. Future work should evaluate these methods on real-world datasets with varying degrees of crowd density to fully realize the benefits of hierarchical association.\n"
+}

@@ -1,0 +1,29 @@
+{
+    "artifacts": [
+        {
+            "name": "global_risk_map_ssp585.png",
+            "type": "figure",
+            "description": "Global map showing the composite risk index for mangroves under SSP5-8.5 by 2100."
+        },
+        {
+            "name": "risk_distribution_ssps.png",
+            "type": "figure",
+            "description": "Density plot comparing the distribution of composite risk across SSP2-4.5, SSP3-7.0, and SSP5-8.5."
+        },
+        {
+            "name": "slr_vs_tc_risk.png",
+            "type": "figure",
+            "description": "Hexbin scatter plot showing the relationship between SLR risk and TC risk."
+        },
+        {
+            "name": "regional_risk_bar.png",
+            "type": "figure",
+            "description": "Bar chart summarizing mean composite risk by global region and SSP scenario."
+        },
+        {
+            "name": "mangrove_risk_data_processed.csv",
+            "type": "data",
+            "description": "Processed dataset containing SLR rates, TC frequencies, and risk indices for all mangrove locations."
+        }
+    ]
+}

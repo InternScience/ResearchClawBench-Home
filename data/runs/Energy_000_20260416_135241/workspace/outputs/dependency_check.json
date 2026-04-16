@@ -1,0 +1,11 @@
+{
+  "dependencies": [
+    {"name": "pandas", "status": "available"},
+    {"name": "numpy", "status": "available"},
+    {"name": "scipy", "status": "available"},
+    {"name": "scikit-learn", "status": "available"},
+    {"name": "matplotlib", "status": "available"},
+    {"name": "openpyxl", "status": "available"}
+  ],
+  "limitations": "The full Pseudo-Two-Dimensional (P2D) electrochemical model is highly complex and typically requires specialized solvers (e.g., PyBaMM or COMSOL) which are computationally heavy to implement from scratch in a short script. A simplified Electrochemical-Aging-Thermal (ECAT) surrogate model based on Equivalent Circuit principles coupled with OCV and thermal dynamics was implemented to demonstrate the end-to-end MMGA framework."
+}

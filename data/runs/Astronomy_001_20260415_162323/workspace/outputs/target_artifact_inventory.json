@@ -1,0 +1,31 @@
+{
+  "artifacts": [
+    {
+      "name": "parameter_constraints.png",
+      "description": "Constraints on cosmological parameters (Ωm, H₀, σ₈, etc.) from model fitting",
+      "status": "satisfied"
+    },
+    {
+      "name": "desi_bao.png",
+      "description": "BAO data from DESI DR2",
+      "status": "satisfied"
+    },
+    {
+      "name": "union3_sne.png",
+      "description": "Union3 supernova data",
+      "status": "satisfied"
+    },
+    {
+      "name": "delta_chi2_comparison",
+      "description": "Comparison of goodness-of-fit (Δχ²) for ΛCDM, EDE, and w₀wₐ models",
+      "status": "unsatisfied",
+      "reason": "Delta chi-squared values were not provided in the input data file DESI_EDE_Repro_Data.txt."
+    },
+    {
+      "name": "ede_posterior_distributions",
+      "description": "Posterior distributions of EDE parameters (f_EDE, log₁₀a_c)",
+      "status": "unsatisfied",
+      "reason": "Full posterior chains were not provided in the input data file DESI_EDE_Repro_Data.txt, only best-fit parameters and 1-sigma errors."
+    }
+  ]
+}

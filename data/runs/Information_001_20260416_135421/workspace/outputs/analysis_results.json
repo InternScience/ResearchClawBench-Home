@@ -1,0 +1,22 @@
+[
+    {
+        "image": "data/demo_imgs/demo1.png",
+        "crop_box": [
+            409,
+            384,
+            614,
+            537
+        ],
+        "target_name": "license_plate"
+    },
+    {
+        "image": "data/demo_imgs/demo2.png",
+        "crop_box": [
+            450,
+            900,
+            900,
+            1200
+        ],
+        "target_name": "flower_bed"
+    }
+]

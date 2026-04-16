@@ -1,0 +1,27 @@
+{
+    "property_prediction": {
+        "mse": 0.008516229099088361,
+        "r2": 0.9745895469478588,
+        "num_samples": 97
+    },
+    "structure_generation": {
+        "mean_absolute_difference": 0.38144158415841584,
+        "num_samples": 101
+    },
+    "autonomous_optimization": {
+        "temperature_bounds": [
+            200.0,
+            500.0
+        ],
+        "pressure_bounds": [
+            10.0,
+            30.0
+        ],
+        "initial_temperature": 350.0,
+        "initial_pressure": 20.0,
+        "learning_rate": 0.1,
+        "steps": 10.0,
+        "final_temperature": 300.0,
+        "final_pressure": 25.0
+    }
+}

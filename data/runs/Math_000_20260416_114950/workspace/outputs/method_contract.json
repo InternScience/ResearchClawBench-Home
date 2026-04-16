@@ -1,0 +1,10 @@
+{
+  "task": "Multi-object tracking in dense occlusion scenarios",
+  "baselines": ["ByteTrack"],
+  "proposed_method": "SparseTrack",
+  "key_mechanisms": [
+    "ByteTrack: Tracking by associating almost every detection box (high score then low score)",
+    "SparseTrack: Decomposing dense target sets into sparse subsets via pseudo-depth estimation and performing hierarchical association"
+  ],
+  "metrics": ["MOTA", "IDF1", "ID Switches"]
+}

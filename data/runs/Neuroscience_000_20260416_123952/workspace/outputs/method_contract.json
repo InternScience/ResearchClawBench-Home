@@ -1,0 +1,17 @@
+{
+  "method_contract": {
+    "task": "Verify SimBA-style workflow reproducibility for behavior classification (Attack, Sniffing)",
+    "inputs": {
+      "features": "data/Together_1_features_extracted.csv",
+      "targets": "data/Together_1_targets_inserted.csv",
+      "reference": "data/Together_1_machine_results_reference.csv"
+    },
+    "methods": [
+      "Supervised classification (Random Forest is standard for SimBA)",
+      "Train/test split",
+      "Performance evaluation (Precision, Recall, F1, Confusion Matrix)",
+      "Precision-Recall diagnostics",
+      "Feature importance extraction"
+    ]
+  }
+}

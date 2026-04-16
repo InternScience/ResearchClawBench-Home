@@ -38,6 +38,7 @@ MODEL_ESTIMATED_USD_PER_MIN = {
     "gpt-5.4": 0.15,
     "claude-sonnet-4-6": 0.20,
     "claude-opus-4-6": 0.40,
+    "gemini-3.1-pro": 0.12,
     "glm-5.1": 0.05,
     "grok-4.1": 0.03,
     "kimi-k2.5": 0.03,
@@ -48,6 +49,7 @@ MODEL_DISPLAY_NAMES = {
     "gpt-5.4": "GPT-5.4",
     "claude-opus-4-6": "Opus 4.6",
     "claude-sonnet-4-6": "Sonnet 4.6",
+    "gemini-3.1-pro": "Gemini-3.1-Pro",
     "glm-5.1": "GLM-5.1",
     "grok-4.1": "Grok-4.1",
     "kimi-k2.5": "Kimi-K2.5",
@@ -64,7 +66,7 @@ AGENT_DEFAULT_MODELS = {
 # Bump when task export output/schema changes and existing cached signatures must be invalidated.
 TASK_EXPORT_VERSION = 4
 # Bump when run export output/schema changes and existing cached signatures must be invalidated.
-RUN_EXPORT_VERSION = 5
+RUN_EXPORT_VERSION = 6
 TASK_EXPORT_MANIFEST = EXPORT_STATE_DIR / "task_export_manifest.json"
 RUN_EXPORT_MANIFEST = EXPORT_STATE_DIR / "run_export_manifest.json"
 RUN_OUTPUT_FILES = ["_agent_output.jsonl", "_claude_output.jsonl"]

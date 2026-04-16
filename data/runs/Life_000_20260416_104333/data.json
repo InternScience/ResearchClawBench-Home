@@ -1,0 +1,85 @@
+{
+  "run_id": "Life_000_20260416_104333",
+  "task_id": "Life_000",
+  "timestamp": "20260416_104333",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+  "model": "Gemini-3.1-Pro",
+  "model_display": "Gemini-3.1-Pro",
+  "duration_seconds": 277,
+  "cost_usd": 0.554,
+  "score": {
+    "run_id": "Life_000_20260416_104333",
+    "task_id": "Life_000",
+    "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "The study successfully developed machine-learning-optimized hydrogels (specifically R1-max) that achieve an underwater adhesive strength ($F_a$) exceeding 1 MPa on glass substrates, representing an or",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "The criterion is objective because it requires demonstrating a specific hydrogel (R1-max) achieving >1 MPa adhesion and noting improvement over prior hydrogels. The report never mentions R1-max, reports only sub-1 MPa values (~300 kPa), and does not claim or quantify an order-of-magnitude improvement over literature. Thus, the required achievement is entirely absent."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "A specific combination of hydrophobic (BA), aromatic (PEA), and cationic (ATAC) monomers was identified as the key design principle ('Golden Triangle') for robust underwater adhesion, leveraging hydro",
+        "weight": 0.1,
+        "score": 15,
+        "reasoning": "This is a qualitative mechanistic/design-principle criterion, so Mode B applies. The report does name BA, PEA, and ATAC in the methods section but never highlights them together as a special combination or design rule, and its mechanistic emphasis is on hydrophobicity plus nucleophilicity rather than hydrophobic + electrostatic interactions from the BA–PEA–ATAC triad. Thus, it neither clearly identifies the 'Golden Triangle' nor explains its mechanism as the core design principle."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "Ideal random copolymerization, utilizing monomers with reactivity ratios close to unity, is proven to be essential for statistically replicating protein sequence features; non-ideal synthesis leads to",
+        "weight": 0.1,
+        "score": 0,
+        "reasoning": "This is a qualitative/mechanistic criterion (importance of ideal random copolymerization and reactivity ratios), so Mode B applies. The report does not mention ideal random copolymerization, reactivity ratios, or composition drift at all, nor does it contrast ideal vs non-ideal synthesis, so the specified criterion is completely absent. Therefore it merits the minimum score."
+      },
+      {
+        "index": 3,
+        "type": "image",
+        "content": "Figure 1 illustrates the data-driven workflow and quantitatively compares the adhesive strength of the new DM-driven and ML-driven hydrogels against conventional literature values.",
+        "weight": 0.15,
+        "score": 5,
+        "reasoning": "Mode B applies because the criterion concerns whether the workflow and comparison are correctly and clearly illustrated. The AI report includes neither a schematic 3-step loop (Data Mining → Experiment → Machine Learning) nor a direct comparison plot of adhesive strengths for conventional literature vs DM-driven vs ML-driven hydrogels; its figures instead show model performance, feature importance, and optimization strategies in kPa, without the 0–1.2 MPa comparison that highlights the performance gap. Thus the key visual/technical elements of Figure 1 are essentially missing."
+      },
+      {
+        "index": 4,
+        "type": "image",
+        "content": "Figure 2 presents the bioinformatics analysis of 24,707 adhesive proteins, identifying 'relative composition' and specific functional class neighbors as the critical design features that guided the mo",
+        "weight": 0.1,
+        "score": 5,
+        "reasoning": "This criterion is subjective (Mode B), focusing on whether the report reproduces the bioinformatics analysis, relative composition concept, and functional-class heatmaps that link protein features to monomer selection. The AI-generated figures are about hydrogel model performance, monomer distributions, and optimization strategies, with no sequence-level data mining, no functional-class block-length map, and no pairwise composition heatmaps. The text only briefly mentions inspiration from natural proteins and does not reconstruct or validate the relative-composition hypothesis or its role in guiding monomer choice."
+      },
+      {
+        "index": 5,
+        "type": "image",
+        "content": "Figure 3 displays the screening results of the initial 180 bio-inspired hydrogels, validating that data-mining-derived formulations can yield adhesion up to 147 kPa (G-max).",
+        "weight": 0.1,
+        "score": 5,
+        "reasoning": "This is an Objective (Mode A) criterion about replicating Figure 3e: a bar chart of the 180 initial hydrogels showing G-max up to 147 kPa and illustrating variability. The AI report instead provides a histogram of adhesive strengths for 184 samples with a different maximum (~305 kPa) and no per-sample bar chart of 180 formulations, so it neither matches the data subset nor the visualization style or G-max value. The criterion is therefore essentially unmet."
+      },
+      {
+        "index": 6,
+        "type": "image",
+        "content": "Figure 4 demonstrates the Machine Learning optimization process, where UMAP visualization reveals that the RFR-GP model explored novel chemical spaces distinct from the training data, and SHAP analysi",
+        "weight": 0.15,
+        "score": 2,
+        "reasoning": "This criterion is subjective (Mode B) because it concerns qualitative visualization of chemical space exploration and feature impact. The AI report does not include any UMAP plots or SHAP beeswarm plots; instead it only provides standard feature importance bar plots and other basic visualizations. There is no explicit analysis or visual demonstration of extrapolation into novel chemical space or SHAP-based confirmation of BA, PEA, and ATAC importance, so the required elements are essentially absent."
+      },
+      {
+        "index": 7,
+        "type": "image",
+        "content": "Figure 5 characterizes the final super-adhesive hydrogels (R1-max), showcasing their mechanical properties, universal adhesion across diverse substrates (metals, plastics, ceramics), and exceptional d",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "Mode B applies because the criterion concerns qualitative characterization of R1‑max hydrogels (mechanical curves, multi‑substrate adhesion, durability). The AI report and figures focus entirely on model performance, feature importance, and optimization strategies; there are no stress–strain curves, no bar charts of adhesion on different substrates, and no evidence or discussion of long‑term durability. Thus the required characterization of final super‑adhesive hydrogels is completely absent."
+      }
+    ],
+    "total_score": 3.55,
+    "total_weight": 1.0
+  },
+  "report": "# De Novo Design of Super-Adhesive Hydrogels via Machine Learning\n\n## Abstract\nThis report details the computational methodology and results for the de novo design of synthetic hydrogels with robust underwater adhesion. By statistically replicating the sequence features of natural adhesive proteins, we aim to achieve adhesive strengths exceeding 1 MPa. We utilized a dataset of initial bio-inspired hydrogel formulations and employed machine learning models, specifically Random Forest Regressor (RFR) and Gaussian Process Regressor (GP), to map monomer compositions to adhesive strength. Through an active learning optimization loop, we evaluated various acquisition strategies to propose new formulations and maximize adhesive performance.\n\n## 1. Methodology\n\n### 1.1 Dataset\nThe initial training dataset comprises 184 verified hydrogel formulations (`184_verified_Original Data_ML_20230926.xlsx`). The input features consist of six monomer compositions representing different chemical characteristics inspired by natural proteins:\n- Nucleophilic (HEA)\n- Hydrophobic (BA)\n- Acidic (CBEA)\n- Cationic (ATAC)\n- Aromatic (PEA)\n- Amide (AAm)\n\nThe target variable is the adhesive strength on glass substrates measured at 10 seconds (`Glass (kPa)_10s`).\n\n### 1.2 Model Training and Evaluation\nWe trained and evaluated two machine learning models using 5-fold cross-validation:\n1. **Random Forest Regressor (RFR)**: An ensemble learning method capable of capturing non-linear relationships and interactions among monomers. We used 100 estimators.\n2. **Gaussian Process Regressor (GP)**: A non-parametric, Bayesian approach that provides uncertainty estimates alongside predictions, which is crucial for active learning. We employed a composite kernel consisting of a Radial Basis Function (RBF) with a constant kernel and a White kernel to account for noise.\n\nModel performance was assessed using the coefficient of determination ($R^2$) and visualized through correlation plots comparing experimental and predicted adhesive strengths.\n\n### 1.3 Feature Importance Analysis\nTo understand the underlying structure-property relationships, we extracted feature importances from the trained RFR model. This analysis reveals which monomer characteristics contribute most significantly to the adhesive strength, guiding further design iterations.\n\n### 1.4 Optimization and Active Learning\nThe core of the de novo design process involves an active learning loop. We analyzed the optimization trajectory across multiple rounds using the comprehensive dataset (`ML_ei&pred (1&2&3rounds)_20240408.xlsx`). Various strategies were employed to select the next formulations, combining different surrogate models (RFR, GP) and acquisition functions (e.g., Expected Improvement, EI). We specifically compared the performance of strategies like RFR-GP (RFR as hypothetical value provider, GP as EI maximizer) and GP-GP across three optimization rounds.\n\n## 2. Results\n\n### 2.1 Data Overview\nThe initial training data exhibits a diverse range of monomer compositions. The distribution of adhesive strength in the initial dataset shows a maximum value of approximately 304.6 kPa, with the majority of formulations exhibiting lower adhesion.\n\n![Monomer Distribution](images/monomer_distribution.png)\n*Figure 1: Distribution of monomer compositions in the initial 184 training formulations.*\n\n![Adhesive Strength Distribution](images/adhesive_strength_dist.png)\n*Figure 2: Distribution of experimental adhesive strength in the initial training dataset.*\n\n### 2.2 Model Performance\nThe cross-validation results indicate that the Random Forest model outperformed the Gaussian Process model on the initial dataset.\n- **Random Forest CV $R^2$**: 0.698 $\\pm$ 0.119\n- **Gaussian Process CV $R^2$**: 0.597 $\\pm$ 0.157\n\nThe correlation plots below demonstrate the predictive capability of both models. RFR shows a tighter clustering around the parity line compared to GP.\n\n![Model Correlation](images/model_correlation.png)\n*Figure 3: Correlation between experimental and predicted adhesive strength for RFR and GP models using 5-fold cross-validation.*\n\n### 2.3 Feature Importance\nThe feature importance analysis derived from the Random Forest model highlights the critical role of specific monomer types in driving adhesion. The hydrophobic (BA) and nucleophilic (HEA) components exhibit the highest importance scores, suggesting that balancing these characteristics is key to achieving robust underwater adhesion, mirroring the synergistic effects observed in natural adhesive proteins.\n\n![Feature Importance](images/feature_importance.png)\n*Figure 4: Relative importance of monomer compositions for predicting adhesive strength, extracted from the Random Forest model.*\n\n### 2.4 Optimization Trajectory\nThe active learning optimization successfully identified formulations with enhanced adhesive strength. We evaluated various strategies, and the RFR-GP strategy demonstrated superior performance in the first round, achieving a maximum adhesive strength of 321.2 kPa, surpassing the maximum of the initial training set (304.6 kPa).\n\n![Optimization Strategies](images/optimization_strategies_20240213.png)\n*Figure 5: Comparison of maximum adhesive strength achieved by different optimization strategies.*\n\nTracking the performance across three rounds reveals the iterative improvement and exploration of the design space. The RFR-GP strategy showed a strong initial jump in Round 1, while GP-GP showed consistent exploration across the rounds.\n\n![Optimization Trajectory](images/optimization_trajectory.png)\n*Figure 6: Optimization trajectory across three rounds for RFR-GP and GP-GP strategies.*\n\n## 3. Discussion\nThe computational framework successfully models the relationship between bio-inspired monomer compositions and macroscopic adhesive strength. The Random Forest model proved to be a robust predictor, and its feature importance analysis aligns with the hypothesis that specific chemical characteristics, notably hydrophobicity and nucleophilicity, are crucial for underwater adhesion.\n\nThe active learning loop, particularly the RFR-GP strategy, effectively navigated the complex design space, proposing novel formulations that exceeded the performance of the initial dataset. While the target of >1 MPa (1000 kPa) is highly ambitious and may require further iterations or an expanded monomer library, the current methodology demonstrates a clear pathway for the data-driven de novo design of high-performance hydrogels. The use of statistical replication of sequence features from natural proteins provides a powerful paradigm for accelerating materials discovery.\n"
+}

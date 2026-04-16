@@ -1,0 +1,61 @@
+{
+  "run_id": "Neuroscience_003_20260416_131003",
+  "task_id": "Neuroscience_003",
+  "timestamp": "20260416_131003",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+  "model": "Gemini-3.1-Pro",
+  "model_display": "Gemini-3.1-Pro",
+  "duration_seconds": 343,
+  "cost_usd": 0.686,
+  "score": {
+    "run_id": "Neuroscience_003_20260416_131003",
+    "task_id": "Neuroscience_003",
+    "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "DELVE introduces a bottom‑up unsupervised feature selection framework that first identifies dynamic co‑varying feature modules via local neighborhood analysis, then ranks all features by their associa",
+        "weight": 0.15,
+        "score": 18,
+        "reasoning": "The criterion is qualitative, concerning whether a two-step, bottom‑up unsupervised framework is implemented: first identifying dynamic modules via local neighborhood variation, then building a trajectory graph from these modules and ranking all features by association to that graph, with emphasis on filtering static/noisy features and outperforming traditional methods. The report instead uses a single-step, supervised, global association to an existing annotated_age variable (Spearman correlation and mutual information), with no local neighborhood analysis, no modularization, no trajectory graph construction from modules, and no explicit comparison to noise‑sensitive baselines. While it loosely matches the overall goal of selecting dynamic trajectory‑preserving features, it omits nearly all key mechanistic aspects of DELVE’s approach."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "In systematic benchmarks on simulated and real single‑cell datasets, DELVE consistently outperforms 11 existing feature selection methods across multiple metrics: it achieves higher precision@k for di",
+        "weight": 0.25,
+        "score": 0,
+        "reasoning": "The criterion is Objective (Mode A) because it specifies quantitative benchmarking against 11 methods using defined metrics (precision@k, k-NN accuracy, pseudotime correlation) across different trajectory topologies. The report only presents a single-method analysis on one dataset, with no comparison to any other methods, no use of the specified metrics, and no analysis across linear/bifurcating/tree trajectories. Thus, the core benchmarking requirement is completely absent."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "DELVE exhibits strong robustness to common single‑cell noise sources, including low signal‑to‑noise ratio, reduced library size, and increased dropout. In simulated experiments, DELVE shows the smalle",
+        "weight": 0.25,
+        "score": 0,
+        "reasoning": "The criterion concerns robustness to single-cell noise (low SNR, reduced library size, increased dropout) and comparative degradation versus Laplacian Score and MCFS, which is a qualitative/mechanistic property, so Mode B applies. The report does not perform any noise simulations, does not analyze performance degradation under increasing noise, and does not compare against Laplacian Score or MCFS; robustness is not discussed beyond generic references to noise reduction. Thus, the specific robustness criterion is effectively absent from the analysis."
+      },
+      {
+        "index": 3,
+        "type": "image",
+        "content": "PHATE visualization using all features from the RPE cell‑cycle dataset shows a diffuse embedding with poor separation of cell cycle phases (G0/G1, S, G2, M). This baseline highlights the need for feat",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "Mode B applies because the criterion is about qualitatively demonstrating that using all features yields a diffuse PHATE embedding with poor phase separation as a baseline. The AI’s report instead focuses on UMAP plots and never shows or discusses a PHATE embedding using all features, so it does not address the specified baseline visualization at all. Consequently, the required qualitative evidence about diffuse PHATE structure and poor phase separation is absent."
+      },
+      {
+        "index": 4,
+        "type": "image",
+        "content": "PHATE visualization using DELVE‑selected features (top 30) on the RPE dataset reveals a smooth, continuous trajectory that tightly clusters cells by cell cycle phase. DELVE achieves high classificatio",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "This criterion is Objective (Mode A) because it specifies PHATE visualization with DELVE‑selected features and exact quantitative metrics (accuracy, NMI, pseudotime correlation). The AI report instead uses UMAP, a different feature selection scheme, and evaluates only with silhouette scores; it neither reproduces the PHATE plot nor reports accuracy, NMI, pseudotime correlation, or comparison to the all‑feature baseline. Thus the required metrics and specific visualization setup are absent."
+      }
+    ],
+    "total_score": 2.7,
+    "total_weight": 1.0
+  },
+  "report": "# Single-Cell Feature Selection for Continuous Cellular Trajectories in RPE Cells\n\n## 1. Introduction\nThe objective of this study is to analyze single-cell readouts from a retina-related context (RPE cells) and select a subset of dynamically expressed molecular features. The goal is to best preserve continuous cellular trajectories (such as pseudotime/age) while reducing confounding variation. This approach supports downstream analyses of neural lineage progression, glial activation, and neurodegeneration-related state transitions.\n\n## 2. Methodology\n\n### 2.1 Dataset Overview\nThe dataset (`adata_RPE.h5ad`) consists of preprocessed single-cell data (protein iterative indirect immunofluorescence imaging). \n- **Total Cells:** 2759\n- **Total Features:** 241\n- **Cell Cycle Phases:** G1 (1128), S (891), G0 (402), G2 (338)\n- **Cell States:** cycling (2174), arrested (402), nan (183)\n- **Batches:** 2 (1734), 1 (1025)\n\n### 2.2 Feature Selection Strategy\nTo identify features that vary smoothly along the cellular trajectory, we utilized the `annotated_age` metadata variable as a proxy for pseudotime progression. For each of the 241 features, we computed:\n1. **Spearman Correlation** with `annotated_age` to capture monotonic trends.\n2. **Mutual Information** with `annotated_age` to capture non-linear dependencies.\n\nFeatures were ranked by both metrics, and a combined rank was used to select the top 30 most dynamically expressed molecular features.\n\n### 2.3 Trajectory Evaluation\nWe evaluated the selected feature subset by comparing its dimensionality reduction (UMAP) to that of the full feature set. The preservation of the continuous trajectory was assessed visually and quantitatively using Silhouette scores for cell cycle phase clustering and batch mixing.\n\n## 3. Results\n\n### 3.1 Initial Data Exploration\nThe distribution of `annotated_age` across different cell cycle phases and states confirms that `annotated_age` effectively captures the biological progression of cells from G1 through S to G2 phases.\n\n![Age Distribution](images/age_distribution.png)\n\n### 3.2 Selected Features\nThe feature selection process identified the following top 30 features that exhibit strong dynamic expression along the trajectory:\n```text\nInt_Intg_DNA_nuc, Int_Med_cycA_nuc, AreaShape_Area_nuc, Int_Med_pH2AX_nuc, Int_Med_Skp2_nuc, Int_Std_PCNA_nuc, Int_Med_cycB1_ring, Int_Med_CDK2_nuc, Int_Med_cycB1_cyto, Int_Med_Cdt1_nuc, Int_Med_E2F1_nuc, Int_Med_cycB1_cell, Int_Med_p27_nuc, Int_Med_pp21_nuc, Int_Med_Cdh1_nuc, Int_Med_cycB1_nuc, Int_Med_cycE_nuc, Int_Med_pp53_nuc, Int_Med_pCHK1_nuc, Int_Med_cycA_ring, Int_Med_p21_nuc, Int_Med_BP1_nuc, Int_Med_cycA_cell, Int_Med_cycA_cyto, Int_MeanEdge_cycB1_cell, Int_Med_GSK3b_nuc, Int_Med_p16_nuc, Int_Med_pRB_nuc, Int_Med_PCNA_cyto, Int_Med_CDK6_nuc\n```\n\nThe expression profiles of the top 6 features across `annotated_age` demonstrate clear dynamic patterns:\n![Top Features Trajectory](images/top_features_trajectory.png)\n\n### 3.3 Trajectory Preservation and Confounder Reduction\nComparing the UMAP projections of the full dataset versus the selected subset reveals that the subset significantly improves the resolution of the continuous cellular trajectory. The progression through cell cycle phases (G1 -> S -> G2) is much more pronounced and continuous in the selected feature space.\n\n![UMAP Comparison](images/umap_comparison.png)\n\nFurthermore, the selected features maintain good batch mixing, indicating that batch effects do not dominate the selected trajectory.\n\n![Batch Comparison](images/batch_comparison.png)\n\n**Quantitative Evaluation (Silhouette Scores):**\n| Feature Set | Phase Silhouette Score | Batch Silhouette Score |\n|-------------|------------------------|------------------------|\n| Full Features | 0.0885 | -0.0008 |\n| Selected Features | 0.2417 | 0.0009 |\n\nThe Phase Silhouette score increased from 0.0885 to 0.2417, indicating better separation of biologically distinct phases, while the Batch Silhouette score remained near zero, indicating optimal batch mixing.\n\n## 4. Discussion\nBy selecting features based on their mutual information and correlation with `annotated_age`, we successfully isolated a subset of 30 molecular features that strongly preserve the continuous cellular trajectory of RPE cells. This reduced feature space not only clarifies the biological progression through cell cycle phases but also minimizes noise and irrelevant variation.\n\nThis optimized feature subset provides a robust foundation for further neuroscience-adjacent analyses, such as modeling neural lineage progression or identifying state transitions related to neurodegeneration, free from the confounding effects of non-dynamic proteins.\n"
+}

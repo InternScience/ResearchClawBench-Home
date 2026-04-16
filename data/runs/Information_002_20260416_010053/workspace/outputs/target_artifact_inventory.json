@@ -1,0 +1,28 @@
+{
+  "artifacts": [
+    {
+      "name": "task_scores.csv",
+      "description": "Extracted scores for each task across evaluation aspects."
+    },
+    {
+      "name": "placeholder_scores.csv",
+      "description": "Extracted scores for placeholder variables by different evaluators."
+    },
+    {
+      "name": "task_scores_heatmap.png",
+      "description": "Heatmap visualization of scores across tasks and aspects."
+    },
+    {
+      "name": "avg_scores_aspect.png",
+      "description": "Bar chart of average scores for each evaluation aspect."
+    },
+    {
+      "name": "placeholder_scores_dist.png",
+      "description": "Count plot of placeholder scores by evaluator."
+    },
+    {
+      "name": "avg_placeholder_scores_task.png",
+      "description": "Bar chart of average placeholder scores per task."
+    }
+  ]
+}

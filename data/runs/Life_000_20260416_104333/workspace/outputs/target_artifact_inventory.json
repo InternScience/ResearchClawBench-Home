@@ -1,0 +1,16 @@
+{
+  "task": "De novo design synthetic hydrogels that achieve robust underwater adhesion (>1 MPa) by statistically replicating the sequence features of natural adhesive proteins.",
+  "target_artifacts": [
+    "data_overview",
+    "model_correlation",
+    "feature_importance",
+    "optimization_trajectory",
+    "optimization_strategies"
+  ],
+  "methods": [
+    "Random Forest Regressor",
+    "Gaussian Process Regressor",
+    "Active Learning",
+    "Expected Improvement"
+  ]
+}

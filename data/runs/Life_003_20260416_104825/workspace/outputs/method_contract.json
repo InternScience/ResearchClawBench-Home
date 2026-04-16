@@ -1,0 +1,8 @@
+{
+  "task": "Evaluate Uncalled4 for nanopore signal alignment and modification detection",
+  "methods": [
+    "Performance benchmarking (alignment time, file size) against f5c, Nanopolish, Tombo",
+    "m6A modification detection accuracy (AUPRC, AUROC) against Nanopolish",
+    "Pore model analysis (current mean, std, central base effects) across DNA r9.4.1, DNA r10.4.1, RNA r9.4.1, RNA004"
+  ]
+}

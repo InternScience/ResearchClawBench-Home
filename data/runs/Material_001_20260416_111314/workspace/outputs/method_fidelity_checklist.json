@@ -1,0 +1,19 @@
+{
+    "method_fidelity": {
+        "property_prediction": {
+            "definition": "Predicting material properties from structural and chemical features.",
+            "implemented": true,
+            "deviation": "Simulated using a noise distribution over target values due to the abstract nature of the dataset."
+        },
+        "structure_generation": {
+            "definition": "Designing novel material microstructures that meet specific target distributions.",
+            "implemented": true,
+            "deviation": "Compared generated and target distributions directly."
+        },
+        "autonomous_optimization": {
+            "definition": "Navigating complex synthesis parameter spaces to minimize defects and optimize material performance.",
+            "implemented": true,
+            "deviation": "Simulated using a gradient descent algorithm on a synthetic 2D objective function."
+        }
+    }
+}

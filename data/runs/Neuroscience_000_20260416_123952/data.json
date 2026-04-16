@@ -1,0 +1,61 @@
+{
+  "run_id": "Neuroscience_000_20260416_123952",
+  "task_id": "Neuroscience_000",
+  "timestamp": "20260416_123952",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+  "model": "Gemini-3.1-Pro",
+  "model_display": "Gemini-3.1-Pro",
+  "duration_seconds": 97,
+  "cost_usd": 0.194,
+  "score": {
+    "run_id": "Neuroscience_000_20260416_123952",
+    "task_id": "Neuroscience_000",
+    "agent_name": "ResearchHarness (Gemini-3.1-Pro)",
+    "items": [
+      {
+        "index": 0,
+        "type": "image",
+        "content": "Precision-recall curves for Attack classifiers across all six simulated conditions (Lab1, Lab2, Male, Female, RI, CSDS) show strong performance with average precision (AP) values consistently above 0.",
+        "weight": 0.2,
+        "score": 5,
+        "reasoning": "This is an Objective (Mode A) criterion concerning PR curves and AP values across specific experimental conditions. The AI report only presents single-condition PR curves for Attack and Sniffing without stratification into the six conditions, does not report any AP values, and thus cannot verify that AP exceeds 0.85 or matches the multi-condition structure of the original figure. Consequently, the required quantitative threshold-aware comparison is essentially absent."
+      },
+      {
+        "index": 1,
+        "type": "image",
+        "content": "SHAP value comparison between Lab1 and Lab2 attack classifiers reveals that Lab2 relies more heavily on animal distance features, while Lab1 places greater importance on intruder movement. This demons",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "This criterion is Objective (Mode A) because it requires a specific SHAP-based cross‑lab comparison of feature-category mean values. The AI report contains no SHAP analysis at all, no Lab1 vs Lab2 comparison, no feature categories from utils.py, and no discussion that classifiers with similar accuracy use different decision rules. Therefore the required analysis is completely absent."
+      },
+      {
+        "index": 2,
+        "type": "image",
+        "content": "SHAP comparison between Male and Female attack classifiers shows that Male attacks are more influenced by resident shape, whereas Female attacks depend more on intruder movement. This aligns with the ",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "Mode B applies because the criterion concerns qualitative SHAP-based mechanistic comparison of male vs female attack classifiers. The AI report includes no SHAP analyses, no sex-stratified models, and no discussion of resident shape vs intruder movement influences, so it completely fails to address the specified comparison. Therefore it merits the minimum score."
+      },
+      {
+        "index": 3,
+        "type": "image",
+        "content": "SHAP comparison between RI and CSDS environments indicates that the RI attack classifier emphasizes resident movement, while CSDS relies more on intruder shape and distance. This reflects the differin",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "Mode B applies because the criterion concerns qualitative SHAP-based mechanistic insight about environmental context (RI vs CSDS) affecting feature emphasis. The AI report contains no SHAP analysis, no RI vs CSDS comparison, and no discussion of environment-dependent feature categories such as resident movement or intruder shape/distance; it only presents Random Forest feature importances and performance metrics. Thus the required comparison and interpretation are entirely absent."
+      },
+      {
+        "index": 4,
+        "type": "image",
+        "content": "Permutation importance ranking for the Lab1 attack classifier identifies the top 15 features, with distance and movement features dominating. This provides feature‑level interpretability and confirms ",
+        "weight": 0.2,
+        "score": 5,
+        "reasoning": "This criterion is subjective (Mode B) because it concerns interpretability, use of permutation importance on F1, and biological meaning of top features. The AI report only presents generic Random Forest Gini importances, with no permutation procedure, no F1-drop metric, no shap_values.csv, and the reproduced feature-importance figure does not match the distance/speed-based ranking of the original. Thus it fails to meet the specific transparency and methodology requirements of the criterion."
+      }
+    ],
+    "total_score": 2.0,
+    "total_weight": 1.0
+  },
+  "report": "# Research Report: Verifying SimBA-style Workflow Reproducibility for Behavior Classification\n\n## 1. Introduction\nThe objective of this research task is to verify whether the SimBA-style workflow can reproducibly transform tracked behavior features into transparent and auditable behavior classification evidence. SimBA (Simple Behavioral Analysis) is a popular open-source tool for supervised machine learning of animal behavior from video tracking data. This report evaluates the performance of a supervised Random Forest classifier on pre-extracted frame-level features to predict two specific behaviors: \"Attack\" and \"Sniffing\".\n\n## 2. Methodology\n\n### 2.1. Dataset\nThe dataset originates from the official SimBA sample project.\n- **Features (`X`)**: Frame-level engineered features derived from tracked animal pose signals (`Together_1_features_extracted.csv`). The dataset contains 1738 frames and 50 features.\n- **Targets (`y`)**: Frame-aligned target annotations for \"Attack\" and \"Sniffing\" (`Together_1_targets_inserted.csv`).\n  - Total frames: 1738\n  - Attack positive instances: 587\n  - Sniffing positive instances: 232\n\n### 2.2. Model Training and Evaluation\nA supervised machine learning approach was employed, mirroring the standard SimBA workflow.\n- **Classifier**: Random Forest Classifier (`n_estimators=100`, `random_state=42`).\n- **Data Split**: The dataset was split into training and testing sets with an 80/20 ratio using stratified sampling to maintain class distribution.\n- **Evaluation Metrics**: Models were evaluated using Accuracy, Precision, Recall, F1-score, Confusion Matrices, and Precision-Recall (PR) curves.\n- **Feature Importance**: The top 20 most important features for each behavior were extracted based on the Random Forest's internal feature importance scores.\n\n## 3. Results\n\n### 3.1. Attack Behavior Classification\nThe Random Forest model demonstrated strong performance in classifying the \"Attack\" behavior.\n\n**Quantitative Evaluation (Test Set):**\n- **Accuracy**: 0.931\n- **Precision (Class 1)**: 0.867\n- **Recall (Class 1)**: 0.941\n- **F1-score (Class 1)**: 0.902\n\n**Visual Diagnostics:**\n- **Confusion Matrix**: Shows the true positives, false positives, true negatives, and false negatives.\n![Confusion Matrix - Attack](images/Attack_confusion_matrix.png)\n\n- **Precision-Recall Curve**: Illustrates the trade-off between precision and recall for different thresholds.\n![Precision-Recall Curve - Attack](images/Attack_pr_curve.png)\n\n- **Feature Importance**: The top 20 features driving the classification of the \"Attack\" behavior.\n![Feature Importance - Attack](images/Attack_feature_importance.png)\n\n### 3.2. Sniffing Behavior Classification\nThe model also performed well in classifying the \"Sniffing\" behavior, despite it being less frequent than the \"Attack\" behavior.\n\n**Quantitative Evaluation (Test Set):**\n- **Accuracy**: 0.963\n- **Precision (Class 1)**: 0.800\n- **Recall (Class 1)**: 0.957\n- **F1-score (Class 1)**: 0.871\n\n**Visual Diagnostics:**\n- **Confusion Matrix**:\n![Confusion Matrix - Sniffing](images/Sniffing_confusion_matrix.png)\n\n- **Precision-Recall Curve**:\n![Precision-Recall Curve - Sniffing](images/Sniffing_pr_curve.png)\n\n- **Feature Importance**: The top 20 features driving the classification of the \"Sniffing\" behavior.\n![Feature Importance - Sniffing](images/Sniffing_feature_importance.png)\n\n## 4. Discussion\nThe results confirm that the SimBA-style workflow successfully and reproducibly transforms tracked behavior features into highly accurate classification models. Both the \"Attack\" and \"Sniffing\" behaviors were classified with high recall (0.941 and 0.957, respectively), which is often desirable in behavioral studies to ensure most relevant events are captured.\n\nThe transparency of the workflow is validated by the extraction of feature importances, allowing researchers to audit which pose-derived features are most predictive of specific behaviors. The precision-recall curves and confusion matrices provide further auditable evidence of the classifiers' performance characteristics.\n\nIn conclusion, the standard supervised machine learning approach (Random Forest) applied to frame-level engineered features from pose tracking is a robust and transparent method for automated behavior classification, consistent with the goals of the SimBA framework.\n"
+}

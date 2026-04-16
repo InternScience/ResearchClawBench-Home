@@ -51,6 +51,7 @@
     "ResearchClaw",
     "ResearchHarness (GLM-5.1)",
     "ResearchHarness (GPT-5.4)",
+    "ResearchHarness (Gemini-3.1-Pro)",
     "ResearchHarness (Grok-4.1)",
     "ResearchHarness (Kimi-K2.5)",
     "ResearchHarness (MiMo-V2-Pro)",
@@ -2955,6 +2956,288 @@
         "model_display": "GPT-5.4"
       }
     },
+    "ResearchHarness (Gemini-3.1-Pro)": {
+      "Astronomy_000": {
+        "score": 7.5,
+        "run_id": "Astronomy_000_20260415_162619",
+        "duration_seconds": 2068,
+        "cost_usd": 4.136,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Astronomy_001": {
+        "score": 4.0,
+        "run_id": "Astronomy_001_20260415_162323",
+        "duration_seconds": 142,
+        "cost_usd": 0.284,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Astronomy_002": {
+        "score": 20.0,
+        "run_id": "Astronomy_002_20260416_132754",
+        "duration_seconds": 914,
+        "cost_usd": 1.828,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Astronomy_003": {
+        "score": 45.8,
+        "run_id": "Astronomy_003_20260415_170228",
+        "duration_seconds": 163,
+        "cost_usd": 0.326,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Chemistry_000": {
+        "score": 19.6,
+        "run_id": "Chemistry_000_20260416_180812",
+        "duration_seconds": 2919,
+        "cost_usd": 5.838,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Chemistry_001": {
+        "score": 4.25,
+        "run_id": "Chemistry_001_20260415_190626",
+        "duration_seconds": 535,
+        "cost_usd": 1.07,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Chemistry_002": {
+        "score": 0.0,
+        "run_id": "Chemistry_002_20260415_193549",
+        "duration_seconds": 176,
+        "cost_usd": 0.352,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Earth_000": {
+        "score": 14.8,
+        "run_id": "Earth_000_20260415_200139",
+        "duration_seconds": 196,
+        "cost_usd": 0.392,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Earth_001": {
+        "score": 28.05,
+        "run_id": "Earth_001_20260415_200511",
+        "duration_seconds": 244,
+        "cost_usd": 0.488,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Earth_002": {
+        "score": 11.0,
+        "run_id": "Earth_002_20260415_200932",
+        "duration_seconds": 300,
+        "cost_usd": 0.6,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Earth_003": {
+        "score": 1.5,
+        "run_id": "Earth_003_20260415_201446",
+        "duration_seconds": 575,
+        "cost_usd": 1.15,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Energy_000": {
+        "score": 3.5,
+        "run_id": "Energy_000_20260416_135241",
+        "duration_seconds": 529,
+        "cost_usd": 1.058,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Energy_001": {
+        "score": 3.0,
+        "run_id": "Energy_001_20260415_232419",
+        "duration_seconds": 937,
+        "cost_usd": 1.874,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Energy_002": {
+        "score": 21.25,
+        "run_id": "Energy_002_20260415_234011",
+        "duration_seconds": 416,
+        "cost_usd": 0.832,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Energy_003": {
+        "score": 20.3,
+        "run_id": "Energy_003_20260415_234723",
+        "duration_seconds": 144,
+        "cost_usd": 0.288,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Information_000": {
+        "score": 10.5,
+        "run_id": "Information_000_20260415_234958",
+        "duration_seconds": 606,
+        "cost_usd": 1.212,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Information_001": {
+        "score": 1.0,
+        "run_id": "Information_001_20260416_135421",
+        "duration_seconds": 1023,
+        "cost_usd": 2.046,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Information_002": {
+        "score": 8.8,
+        "run_id": "Information_002_20260416_010053",
+        "duration_seconds": 428,
+        "cost_usd": 0.856,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Life_000": {
+        "score": 3.55,
+        "run_id": "Life_000_20260416_104333",
+        "duration_seconds": 277,
+        "cost_usd": 0.554,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Life_001": {
+        "score": 8.5,
+        "run_id": "Life_001_20260416_104333",
+        "duration_seconds": 187,
+        "cost_usd": 0.374,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Life_002": {
+        "score": 7.5,
+        "run_id": "Life_002_20260416_141143",
+        "duration_seconds": 4135,
+        "cost_usd": 8.27,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Life_003": {
+        "score": 18.0,
+        "run_id": "Life_003_20260416_104825",
+        "duration_seconds": 106,
+        "cost_usd": 0.212,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Material_000": {
+        "score": 20.0,
+        "run_id": "Material_000_20260416_141659",
+        "duration_seconds": 7433,
+        "cost_usd": 14.866,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Material_001": {
+        "score": 5.25,
+        "run_id": "Material_001_20260416_111314",
+        "duration_seconds": 272,
+        "cost_usd": 0.544,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Material_003": {
+        "score": 8.7,
+        "run_id": "Material_003_20260416_114219",
+        "duration_seconds": 2961,
+        "cost_usd": 5.922,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Math_000": {
+        "score": 21.1,
+        "run_id": "Math_000_20260416_114950",
+        "duration_seconds": 1794,
+        "cost_usd": 3.588,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Math_001": {
+        "score": 13.5,
+        "run_id": "Math_001_20260416_121957",
+        "duration_seconds": 962,
+        "cost_usd": 1.924,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Math_003": {
+        "score": 10.35,
+        "run_id": "Math_003_20260416_162104",
+        "duration_seconds": 198,
+        "cost_usd": 0.396,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Neuroscience_000": {
+        "score": 2.0,
+        "run_id": "Neuroscience_000_20260416_123952",
+        "duration_seconds": 97,
+        "cost_usd": 0.194,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Neuroscience_002": {
+        "score": 0.0,
+        "run_id": "Neuroscience_002_20260416_130633",
+        "duration_seconds": 196,
+        "cost_usd": 0.392,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Neuroscience_003": {
+        "score": 2.7,
+        "run_id": "Neuroscience_003_20260416_131003",
+        "duration_seconds": 343,
+        "cost_usd": 0.686,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Physics_000": {
+        "score": 22.0,
+        "run_id": "Physics_000_20260416_162550",
+        "duration_seconds": 1977,
+        "cost_usd": 3.954,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Physics_001": {
+        "score": 22.55,
+        "run_id": "Physics_001_20260416_131118",
+        "duration_seconds": 96,
+        "cost_usd": 0.192,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Physics_002": {
+        "score": 27.55,
+        "run_id": "Physics_002_20260416_165907",
+        "duration_seconds": 3650,
+        "cost_usd": 7.3,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      },
+      "Physics_003": {
+        "score": 46.8,
+        "run_id": "Physics_003_20260416_131439",
+        "duration_seconds": 333,
+        "cost_usd": 0.666,
+        "model": "Gemini-3.1-Pro",
+        "model_display": "Gemini-3.1-Pro"
+      }
+    },
     "ResearchHarness (Grok-4.1)": {
       "Astronomy_000": {
         "score": 20.0,
@@ -4217,7 +4500,7 @@
     "Astronomy_001": 37.0,
     "Astronomy_002": 29.9,
     "Astronomy_003": 47.4,
-    "Chemistry_000": 18.95,
+    "Chemistry_000": 19.6,
     "Chemistry_001": 7.3,
     "Chemistry_002": 1.4,
     "Chemistry_003": 22.5,
@@ -4252,6 +4535,6 @@
     "Physics_000": 32.1,
     "Physics_001": 34.7,
     "Physics_002": 32.9,
-    "Physics_003": 46.5
+    "Physics_003": 46.8
   }
 }

@@ -1,0 +1,12 @@
+{
+  "ByteTrack": {
+    "high_score_association": "Implemented",
+    "low_score_association": "Implemented",
+    "unmatched_track_handling": "Implemented"
+  },
+  "SparseTrack": {
+    "pseudo_depth_estimation": "Implemented (using bottom y-coordinate of bounding box)",
+    "hierarchical_association": "Implemented (associating closest objects first)",
+    "low_score_association": "Implemented"
+  }
+}

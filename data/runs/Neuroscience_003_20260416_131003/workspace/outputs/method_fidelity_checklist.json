@@ -1,0 +1,14 @@
+{
+  "method_fidelity": {
+    "feature_selection": {
+      "definition": "Select dynamically expressed molecular features that best preserve continuous cellular trajectories.",
+      "implemented": true,
+      "details": "Used Spearman correlation and mutual information with `annotated_age` (pseudotime) to rank and select features."
+    },
+    "trajectory_preservation": {
+      "definition": "Preserve continuous cellular trajectories while reducing confounding variation.",
+      "implemented": true,
+      "details": "Evaluated using UMAP visualizations and Silhouette scores for phase (biological progression) and batch (confounder)."
+    }
+  }
+}

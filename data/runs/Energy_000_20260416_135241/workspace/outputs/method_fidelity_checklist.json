@@ -1,0 +1,30 @@
+{
+  "method": "MMGA (Meta-Model based Genetic Algorithm)",
+  "checklist": [
+    {
+      "step": "Experimental macroscopic data (voltage, temperature, capacity)",
+      "status": "Satisfied",
+      "details": "Voltage and current data extracted from CS2_36, NASA, and Oxford datasets."
+    },
+    {
+      "step": "Multi-parameter search space defined by Latin Hypercube Sampling (LHS)",
+      "status": "Satisfied",
+      "details": "Scipy's qmc.LatinHypercube utilized to generate 4000 parameter combinations."
+    },
+    {
+      "step": "Electrochemical-aging-thermal (ECAT) coupled model",
+      "status": "Approximated",
+      "details": "A simplified surrogate ECAT model implemented due to the complexity of full P2D models."
+    },
+    {
+      "step": "Artificial Neural Network (ANN) meta-model",
+      "status": "Satisfied",
+      "details": "Scikit-Learn's MLPRegressor trained on LHS dataset to predict voltage curves."
+    },
+    {
+      "step": "Genetic Algorithm (GA) for optimization",
+      "status": "Satisfied",
+      "details": "Scipy's differential_evolution utilized to minimize RMSE between ANN predictions and experimental data."
+    }
+  ]
+}

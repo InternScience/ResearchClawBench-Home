@@ -1,0 +1,548 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "compute_mb.py",
+    "path": "code/compute_mb.py",
+    "type": "file",
+    "size": 2056,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "compute_transport.py",
+    "path": "code/compute_transport.py",
+    "type": "file",
+    "size": 2091,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "compute_xeb.py",
+    "path": "code/compute_xeb.py",
+    "type": "file",
+    "size": 2978,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "compute_xeb_all.py",
+    "path": "code/compute_xeb_all.py",
+    "type": "file",
+    "size": 4002,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "generate_method_contract.py",
+    "path": "code/generate_method_contract.py",
+    "type": "file",
+    "size": 1008,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "generate_related_work_contract.py",
+    "path": "code/generate_related_work_contract.py",
+    "type": "file",
+    "size": 781,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "plot_figures.py",
+    "path": "code/plot_figures.py",
+    "type": "file",
+    "size": 3046,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "plot_mb_xeb.py",
+    "path": "code/plot_mb_xeb.py",
+    "type": "file",
+    "size": 1711,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "plot_transport.py",
+    "path": "code/plot_transport.py",
+    "type": "file",
+    "size": 1251,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "amplitudes",
+    "path": "data/amplitudes",
+    "type": "directory"
+  },
+  {
+    "name": "N40_verification",
+    "path": "data/amplitudes/N40_verification",
+    "type": "directory"
+  },
+  {
+    "name": "N40_d10_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d10_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d14_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d14_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d16_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d18_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d18_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d20_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d20_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d8_XEB",
+    "path": "data/amplitudes/N40_verification/N40_d8_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N_scan_depth12",
+    "path": "data/amplitudes/N_scan_depth12",
+    "type": "directory"
+  },
+  {
+    "name": "N16_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N16_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N24_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N24_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N32_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N32_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_XEB",
+    "path": "data/amplitudes/N_scan_depth12/N40_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "results",
+    "path": "data/results",
+    "type": "directory"
+  },
+  {
+    "name": "N40_verification",
+    "path": "data/results/N40_verification",
+    "type": "directory"
+  },
+  {
+    "name": "N40_d10_MB",
+    "path": "data/results/N40_verification/N40_d10_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d10_XEB",
+    "path": "data/results/N40_verification/N40_d10_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_MB",
+    "path": "data/results/N40_verification/N40_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d12_XEB",
+    "path": "data/results/N40_verification/N40_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d14_MB",
+    "path": "data/results/N40_verification/N40_d14_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d14_XEB",
+    "path": "data/results/N40_verification/N40_d14_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_MB",
+    "path": "data/results/N40_verification/N40_d16_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_Transport_1QRB",
+    "path": "data/results/N40_verification/N40_d16_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d16_XEB",
+    "path": "data/results/N40_verification/N40_d16_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N40_d18_MB",
+    "path": "data/results/N40_verification/N40_d18_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "\u2026 10 more items",
+    "path": "data/results/N40_verification/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "N56_depths",
+    "path": "data/results/N56_depths",
+    "type": "directory"
+  },
+  {
+    "name": "N56_d10_MB",
+    "path": "data/results/N56_depths/N56_d10_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d10_XEB",
+    "path": "data/results/N56_depths/N56_d10_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d12_MB",
+    "path": "data/results/N56_depths/N56_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d12_XEB",
+    "path": "data/results/N56_depths/N56_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d14_MB",
+    "path": "data/results/N56_depths/N56_d14_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d14_XEB",
+    "path": "data/results/N56_depths/N56_d14_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d16_MB",
+    "path": "data/results/N56_depths/N56_d16_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d16_Transport_1QRB",
+    "path": "data/results/N56_depths/N56_d16_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d16_XEB",
+    "path": "data/results/N56_depths/N56_d16_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N56_d18_MB",
+    "path": "data/results/N56_depths/N56_d18_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "\u2026 11 more items",
+    "path": "data/results/N56_depths/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "N_scan_depth12",
+    "path": "data/results/N_scan_depth12",
+    "type": "directory"
+  },
+  {
+    "name": "N16_d12_MB",
+    "path": "data/results/N_scan_depth12/N16_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d12_XEB",
+    "path": "data/results/N_scan_depth12/N16_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d16_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d16_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d32_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d32_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d48_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d48_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d4_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d4_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d64_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d64_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N16_d96_Transport_1QRB",
+    "path": "data/results/N_scan_depth12/N16_d96_Transport_1QRB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N24_d12_MB",
+    "path": "data/results/N_scan_depth12/N24_d12_MB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "N24_d12_XEB",
+    "path": "data/results/N_scan_depth12/N24_d12_XEB",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "\u2026 38 more items",
+    "path": "data/results/N_scan_depth12/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 110,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 538,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "related_work_contract.json",
+    "path": "outputs/related_work_contract.json",
+    "type": "file",
+    "size": 438,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 234,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_results.json",
+    "path": "outputs/xeb_results.json",
+    "type": "file",
+    "size": 2501,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_vs_depth.png",
+    "path": "outputs/xeb_vs_depth.png",
+    "type": "file",
+    "size": 42953,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_vs_n.png",
+    "path": "outputs/xeb_vs_n.png",
+    "type": "file",
+    "size": 40865,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1644579,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 2449530,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1696828,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 11841148,
+    "mtime": 1773914915.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "combined_fidelities.png",
+    "path": "report/images/combined_fidelities.png",
+    "type": "file",
+    "size": 178698,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "fidelity_vs_depth.png",
+    "path": "report/images/fidelity_vs_depth.png",
+    "type": "file",
+    "size": 129589,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "fidelity_vs_n.png",
+    "path": "report/images/fidelity_vs_n.png",
+    "type": "file",
+    "size": 134143,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "transport_fidelity.png",
+    "path": "report/images/transport_fidelity.png",
+    "type": "file",
+    "size": 146335,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "xeb_vs_mb.png",
+    "path": "report/images/xeb_vs_mb.png",
+    "type": "file",
+    "size": 196866,
+    "mtime": 1776337496.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 5317,
+    "mtime": 1776337497.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6016,
+    "mtime": 1776329947.0,
+    "exported": true
+  }
+]

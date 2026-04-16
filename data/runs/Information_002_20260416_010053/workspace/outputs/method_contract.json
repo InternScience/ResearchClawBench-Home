@@ -1,0 +1,13 @@
+{
+  "task_goal": "Verify whether LLMs can accurately perform research-level theoretical physics calculations via structured prompt templates.",
+  "target_system": "AB-stacked MoTe2/WSe2 moiré system (Paper 2111.01152)",
+  "methodology": "Evaluate multi-step analytic calculation tasks of the Hartree-Fock method based on human and LLM scoring data provided in YAML format.",
+  "evaluation_aspects": [
+    "in_paper",
+    "prompt_quality",
+    "follow_instructions",
+    "physics_logic",
+    "math_derivation",
+    "final_answer_accuracy"
+  ]
+}

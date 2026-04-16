@@ -1,0 +1,20 @@
+{
+  "methods": [
+    "Feature Selection based on Trajectory (Spearman Correlation & Mutual Information)",
+    "UMAP Dimensionality Reduction",
+    "Silhouette Score Evaluation for Phase and Batch"
+  ],
+  "target_artifacts": [
+    "outputs/data_summary.json",
+    "outputs/feature_statistics.csv",
+    "outputs/selected_features.txt",
+    "outputs/silhouette_scores.csv",
+    "report/images/age_distribution.png",
+    "report/images/umap_full_features.png",
+    "report/images/umap_selected_features.png",
+    "report/images/top_features_trajectory.png",
+    "report/images/umap_comparison.png",
+    "report/images/batch_comparison.png",
+    "report/report.md"
+  ]
+}

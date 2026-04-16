@@ -1,0 +1,24 @@
+{
+    "claims": [
+        {
+            "claim": "Total global mass loss from 2000 to 2023 was -6542.47 \u00b1 387.02 Gt.",
+            "evidence": "Derived from data/glambie/results/calendar_years/0_global.csv, summing 'combined_gt' and adding 'combined_gt_errors' in quadrature. Script: code/calculate_stats.py"
+        },
+        {
+            "claim": "Total specific mass loss from 2000 to 2023 was -9.74 \u00b1 0.54 m w.e.",
+            "evidence": "Derived from data/glambie/results/calendar_years/0_global.csv, summing 'combined_mwe' and adding 'combined_mwe_errors' in quadrature. Script: code/calculate_stats.py"
+        },
+        {
+            "claim": "Average annual mass loss was -272.60 Gt/yr, accelerating from -217.16 Gt/yr in the 2000s to -273.98 Gt/yr in the 2010s.",
+            "evidence": "Averaged 'combined_gt' from data/glambie/results/calendar_years/0_global.csv over the full period and decadal subsets. Script: code/calculate_stats.py"
+        },
+        {
+            "claim": "Alaska was the largest regional contributor to mass loss (-1473.86 Gt).",
+            "evidence": "Sum of 'combined_gt' for data/glambie/results/calendar_years/1_alaska.csv. Script: code/calculate_stats.py"
+        },
+        {
+            "claim": "Central Europe experienced the highest specific mass loss (-25.48 m w.e.).",
+            "evidence": "Sum of 'combined_mwe' for data/glambie/results/calendar_years/11_central_europe.csv. Script: code/calculate_stats.py"
+        }
+    ]
+}

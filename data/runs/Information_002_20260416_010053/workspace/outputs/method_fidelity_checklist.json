@@ -1,0 +1,13 @@
+{
+  "method": "Hartree-Fock derivation evaluation for LLMs",
+  "system": "MoTe2/WSe2 moiré system",
+  "checklist": {
+    "extract_task_scores": true,
+    "extract_placeholder_scores": true,
+    "analyze_physics_logic": true,
+    "analyze_math_derivation": true,
+    "analyze_final_answer_accuracy": true,
+    "identify_bottlenecks": true,
+    "generate_visualizations": true
+  }
+}

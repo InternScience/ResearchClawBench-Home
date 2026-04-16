@@ -1,0 +1,18 @@
+{
+  "methods": [
+    "Kolmogorov-Arnold Graph Neural Networks (KA-GNNs)",
+    "Fourier-based Kolmogorov-Arnold network modules",
+    "Baseline GNN with conventional MLP-based transformations"
+  ],
+  "datasets": [
+    "BACE",
+    "BBBP",
+    "ClinTox",
+    "HIV",
+    "MUV"
+  ],
+  "metrics": [
+    "ROC-AUC",
+    "Computational Efficiency (Training Time)"
+  ]
+}

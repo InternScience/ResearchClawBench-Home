@@ -1,0 +1,8 @@
+{
+  "task": "Automated proofreading in connectomics",
+  "goal": "Predict whether a query segment and a candidate segment belong to the same neuron",
+  "input": "20 numerical features + 1 categorical degradation type",
+  "output": "Binary prediction (0 or 1)",
+  "method": "XGBoost Classifier",
+  "evaluation_metrics": ["Accuracy", "Precision", "Recall", "F1-score", "ROC AUC"]
+}

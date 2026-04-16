@@ -1,0 +1,9 @@
+{
+  "method": "Neuro-Symbolic Geometry Theorem Proving",
+  "components": {
+    "Symbolic Engine": "Implemented and tested (0/30 solved due to strict timeout and lack of auxiliary constructions).",
+    "Neural Language Model": "Simulated. In a real environment, this would be a transformer trained on 100M synthetic theorems.",
+    "Evaluation": "Evaluated on imo_ag_30.txt benchmark."
+  },
+  "deviations": "The neural language model component was simulated due to the lack of pre-trained weights and computational resources for training a transformer from scratch on 100M theorems within the agent environment."
+}
