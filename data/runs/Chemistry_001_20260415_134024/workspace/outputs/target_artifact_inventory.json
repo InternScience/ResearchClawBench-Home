@@ -1,0 +1,78 @@
+{
+  "primary_quantitative": [
+    {
+      "name": "Protein CA RMSD",
+      "status": "satisfied",
+      "artifact": "outputs/framework_results.json"
+    },
+    {
+      "name": "Ligand RMSD (Hungarian)",
+      "status": "satisfied",
+      "artifact": "outputs/framework_results.json"
+    },
+    {
+      "name": "Mean pLDDT",
+      "status": "satisfied",
+      "artifact": "outputs/framework_results.json"
+    }
+  ],
+  "figures": [
+    {
+      "name": "Data overview",
+      "status": "satisfied",
+      "artifact": "report/images/figure1_data_overview.png"
+    },
+    {
+      "name": "Architecture diagram",
+      "status": "satisfied",
+      "artifact": "report/images/figure2_architecture.png"
+    },
+    {
+      "name": "RMSD comparison",
+      "status": "satisfied",
+      "artifact": "report/images/figure3_rmsd_comparison.png"
+    },
+    {
+      "name": "pLDDT analysis",
+      "status": "satisfied",
+      "artifact": "report/images/figure4_plddt_analysis.png"
+    },
+    {
+      "name": "Structural overlay",
+      "status": "satisfied",
+      "artifact": "report/images/figure5_structural_overlay.png"
+    },
+    {
+      "name": "Diffusion analysis",
+      "status": "satisfied",
+      "artifact": "report/images/figure6_diffusion_analysis.png"
+    },
+    {
+      "name": "Binding interface",
+      "status": "satisfied",
+      "artifact": "report/images/figure7_binding_interface.png"
+    },
+    {
+      "name": "Method comparison",
+      "status": "satisfied",
+      "artifact": "report/images/figure8_method_comparison.png"
+    }
+  ],
+  "intermediate_results": [
+    {
+      "name": "Data analysis JSON",
+      "status": "satisfied",
+      "artifact": "outputs/data_analysis.json"
+    },
+    {
+      "name": "Framework results JSON",
+      "status": "satisfied",
+      "artifact": "outputs/framework_results.json"
+    },
+    {
+      "name": "Detailed results JSON",
+      "status": "satisfied",
+      "artifact": "outputs/detailed_results.json"
+    }
+  ]
+}

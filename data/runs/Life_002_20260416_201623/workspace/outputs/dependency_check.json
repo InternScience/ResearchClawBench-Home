@@ -1,0 +1,39 @@
+{
+  "tmtools": {
+    "available": true,
+    "version": "0.3.0",
+    "purpose": "TM-align algorithm"
+  },
+  "BioPython": {
+    "available": true,
+    "version": "1.87",
+    "purpose": "PDB parsing"
+  },
+  "numpy": {
+    "available": true,
+    "version": "1.26.4",
+    "purpose": "Numerical computation"
+  },
+  "scipy": {
+    "available": true,
+    "version": "1.15.2",
+    "purpose": "Optimization (Hungarian algorithm)"
+  },
+  "matplotlib": {
+    "available": true,
+    "version": "3.10.1",
+    "purpose": "Visualization"
+  },
+  "seaborn": {
+    "available": true,
+    "purpose": "Statistical visualization"
+  },
+  "foldseek_binary": {
+    "available": false,
+    "fallback": "Implemented 3Di-like encoding from scratch"
+  },
+  "USalign_binary": {
+    "available": false,
+    "fallback": "Used tmtools (TM-align Python binding)"
+  }
+}

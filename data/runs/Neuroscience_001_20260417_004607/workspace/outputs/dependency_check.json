@@ -1,0 +1,15 @@
+{
+  "flyvis": "1.1.3 - installed and functional",
+  "torch": "available",
+  "h5py": "available",
+  "matplotlib": "available",
+  "seaborn": "available",
+  "numpy": "available",
+  "scikit-learn": "available (version mismatch warning for pickled models, but functional)",
+  "fitz_pymupdf": "available",
+  "limitations": [
+    "Cannot retrain models (pre-trained ensemble provided)",
+    "Cannot run forward pass simulation without Sintel dataset",
+    "Analysis based on checkpoint parameters and clustering data"
+  ]
+}

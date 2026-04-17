@@ -1,0 +1,28 @@
+{
+  "primary_quantitative_answers": [
+    "Number of problems solvable by symbolic deduction alone",
+    "Problem complexity distribution (constructions, predicates, depth)",
+    "Rule utilization frequency across problems",
+    "Proof search space characteristics"
+  ],
+  "required_comparison_tables": [
+    "Problem-by-problem solvability analysis",
+    "Complexity metrics per problem",
+    "Rule usage statistics",
+    "Comparison of symbolic vs neural-guided approaches"
+  ],
+  "expected_figure_families": [
+    "Problem complexity distribution (bar/histogram)",
+    "Construction type frequency",
+    "Rule usage heatmap",
+    "Proof search tree visualization",
+    "Architecture diagram of neuro-symbolic system",
+    "Problem difficulty vs solvability scatter",
+    "Goal type distribution"
+  ],
+  "interpretability_artifacts": [
+    "Rule dependency graph",
+    "Problem categorization by goal type",
+    "Construction chain analysis"
+  ]
+}

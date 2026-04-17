@@ -1,0 +1,56 @@
+{
+  "dataset_info": {
+    "n_samples": 117,
+    "n_features": 10,
+    "feature_names": [
+      "base_feature",
+      "correlated_feature",
+      "class_encoding",
+      "descriptor",
+      "struct_1",
+      "struct_2",
+      "struct_3",
+      "struct_4",
+      "index_norm",
+      "periodic"
+    ],
+    "target_range": [
+      -2.0,
+      4.4
+    ],
+    "target_mean": 1.2000000000000004,
+    "target_std": 1.4922019523732928
+  },
+  "model_performance": {
+    "Ridge": {
+      "mse": 0.030819643487195434,
+      "mae": 0.14729688683903086,
+      "r2": 0.9898811448912284,
+      "cv_mean": 0.9808433896024246,
+      "cv_std": 0.003594870205571591
+    },
+    "Lasso": {
+      "mse": 0.05965617411503225,
+      "mae": 0.2067508912717991,
+      "r2": 0.9804133950327991,
+      "cv_mean": 0.9760030529725052,
+      "cv_std": 0.005363369078783545
+    },
+    "RandomForest": {
+      "mse": 0.5816593750000002,
+      "mae": 0.6532916666666667,
+      "r2": 0.8090267675961603,
+      "cv_mean": 0.9663465886943676,
+      "cv_std": 0.005032953866372646
+    },
+    "GradientBoosting": {
+      "mse": 0.6471772438816686,
+      "mae": 0.6934195616545136,
+      "r2": 0.7875156225199839,
+      "cv_mean": 0.9625144245380775,
+      "cv_std": 0.010373354205226452
+    }
+  },
+  "best_model": "Ridge",
+  "best_model_r2": 0.9898811448912284
+}

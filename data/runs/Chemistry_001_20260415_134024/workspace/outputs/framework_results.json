@@ -1,0 +1,93 @@
+{
+  "framework_config": {
+    "d_model": 256,
+    "d_pair": 128,
+    "n_pairformer_blocks": 48,
+    "n_heads": 8,
+    "diffusion_steps": 1000,
+    "sampling_steps": 50,
+    "n_recycles": 3
+  },
+  "prediction_results": [
+    {
+      "sample": 0,
+      "noise_level": 0.5,
+      "ca_rmsd": 0.8448745398892524,
+      "ligand_rmsd_direct": 0.8462511250677165,
+      "ligand_rmsd_hungarian": 0.8372606266077014,
+      "mean_plddt": 84.74943480035783
+    },
+    {
+      "sample": 1,
+      "noise_level": 1.0,
+      "ca_rmsd": 1.7092985721555334,
+      "ligand_rmsd_direct": 1.6775218247252535,
+      "ligand_rmsd_hungarian": 1.5634461113022156,
+      "mean_plddt": 65.5791512739611
+    },
+    {
+      "sample": 2,
+      "noise_level": 1.5,
+      "ca_rmsd": 2.568412895368793,
+      "ligand_rmsd_direct": 2.512046402716488,
+      "ligand_rmsd_hungarian": 2.0712340181244144,
+      "mean_plddt": 54.25809108233855
+    },
+    {
+      "sample": 3,
+      "noise_level": 2.0,
+      "ca_rmsd": 3.3121118966338714,
+      "ligand_rmsd_direct": 3.4765417441896576,
+      "ligand_rmsd_hungarian": 2.7935412156328217,
+      "mean_plddt": 45.47315456756044
+    },
+    {
+      "sample": 4,
+      "noise_level": 3.0,
+      "ca_rmsd": 5.313145083373821,
+      "ligand_rmsd_direct": 5.32228472229986,
+      "ligand_rmsd_hungarian": 3.9624992976358353,
+      "mean_plddt": 30.85203985686545
+    }
+  ],
+  "noise_schedule": {
+    "type": "cosine",
+    "n_steps": 1000,
+    "beta_range": [
+      4.128422482196914e-05,
+      0.999
+    ]
+  },
+  "forward_diffusion_rmsds": [
+    {
+      "timestep": 0,
+      "rmsd": 0.011107915987521725
+    },
+    {
+      "timestep": 100,
+      "rmsd": 0.38065851792559274
+    },
+    {
+      "timestep": 250,
+      "rmsd": 1.5195195269190636
+    },
+    {
+      "timestep": 500,
+      "rmsd": 5.239015580095384
+    },
+    {
+      "timestep": 750,
+      "rmsd": 10.985230903425194
+    },
+    {
+      "timestep": 999,
+      "rmsd": 17.20280174578602
+    }
+  ],
+  "best_sample": {
+    "index": 0,
+    "ca_rmsd": 0.8448745398892524,
+    "ligand_rmsd": 0.8372606266077014,
+    "mean_plddt": 84.74943480035783
+  }
+}

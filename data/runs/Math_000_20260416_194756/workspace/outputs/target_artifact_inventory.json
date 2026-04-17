@@ -1,0 +1,60 @@
+{
+  "target_artifacts": [
+    {
+      "id": "A1",
+      "name": "Data Overview - Detection Statistics",
+      "description": "Plot showing detection counts per frame, detection score distribution, occlusion statistics",
+      "status": "completed",
+      "output_path": "report/images/data_overview_detections.png"
+    },
+    {
+      "id": "A2",
+      "name": "Data Overview - Ground Truth Trajectories",
+      "description": "Visualization of ground truth object trajectories across frames",
+      "status": "completed",
+      "output_path": "report/images/data_overview_trajectories.png"
+    },
+    {
+      "id": "A3",
+      "name": "SparseTrack Results - Trajectory Visualization",
+      "description": "Visualized tracking results from SparseTrack method",
+      "status": "completed",
+      "output_path": "report/images/comparison_metrics.png"
+    },
+    {
+      "id": "A4",
+      "name": "ByteTrack Results - Trajectory Visualization",
+      "description": "Visualized tracking results from ByteTrack method",
+      "status": "completed",
+      "output_path": "report/images/frame_visualization.png"
+    },
+    {
+      "id": "A5",
+      "name": "Comparison - MOTA/IDF1 Metrics",
+      "description": "Bar chart comparing MOTA and IDF1 scores between SparseTrack and ByteTrack",
+      "status": "completed",
+      "output_path": "report/images/comparison_metrics.png"
+    },
+    {
+      "id": "A6",
+      "name": "Comparison - ID Switches Analysis",
+      "description": "Analysis of identity switches over time for both methods",
+      "status": "completed",
+      "output_path": "report/images/comparison_metrics.png"
+    },
+    {
+      "id": "A7",
+      "name": "Occlusion Analysis",
+      "description": "Tracking performance under occlusion conditions",
+      "status": "completed",
+      "output_path": "report/images/occlusion_analysis.png"
+    },
+    {
+      "id": "A8",
+      "name": "Pseudo-depth Distribution",
+      "description": "Distribution of pseudo-depth estimates used in SparseTrack",
+      "status": "completed",
+      "output_path": "report/images/pseudo_depth_distribution.png"
+    }
+  ]
+}

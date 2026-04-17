@@ -1,0 +1,49 @@
+{
+  "claims": [
+    {
+      "claim": "KA-GNN improves ROC-AUC on BACE by +4.3%",
+      "evidence": "outputs/results_summary.json: BACE GCN-MLP=0.8154, KA-GNN=0.8584",
+      "status": "verified"
+    },
+    {
+      "claim": "KA-GNN improves ROC-AUC on ClinTox by +4.5%",
+      "evidence": "outputs/results_summary.json: ClinTox GCN-MLP=0.9243, KA-GNN=0.9695",
+      "status": "verified"
+    },
+    {
+      "claim": "KA-GNN improves PRC-AUC on MUV by +43.7% relative",
+      "evidence": "outputs/results_summary.json: MUV GCN-MLP=0.0135, KA-GNN=0.0194",
+      "status": "verified"
+    },
+    {
+      "claim": "GCN-MLP outperforms KA-GNN on BBBP by 5.4%",
+      "evidence": "outputs/results_summary.json: BBBP GCN-MLP=0.9259, KA-GNN=0.8719",
+      "status": "verified"
+    },
+    {
+      "claim": "GCN-MLP outperforms KA-GNN on HIV by 2.6%",
+      "evidence": "outputs/results_summary.json: HIV GCN-MLP=0.6180, KA-GNN=0.5915",
+      "status": "verified"
+    },
+    {
+      "claim": "KA-GNN has ~20x more parameters than GCN-MLP",
+      "evidence": "outputs/results_summary.json: 382K vs 18K parameters",
+      "status": "verified"
+    },
+    {
+      "claim": "KA-GNN training is 2-5x slower",
+      "evidence": "outputs/results_summary.json: time ratios range from 2.1x to 4.8x",
+      "status": "verified"
+    },
+    {
+      "claim": "Fourier coefficients show structured sparsity",
+      "evidence": "outputs/fourier_coeffs_BACE.json and report/images/fourier_interpretability.png",
+      "status": "verified"
+    },
+    {
+      "claim": "Learned activations differ from ReLU",
+      "evidence": "report/images/learned_activations.png",
+      "status": "verified"
+    }
+  ]
+}

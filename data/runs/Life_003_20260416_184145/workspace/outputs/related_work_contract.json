@@ -1,0 +1,77 @@
+{
+  "extraction_date": "2026-04-16",
+  "papers_analyzed": 4,
+  "key_methodological_insights": {
+    "paper_000_nanopolish": {
+      "title": "Detecting DNA cytosine methylation using nanopore sequencing",
+      "authors": "Simpson et al., Nature Methods 2017",
+      "method": "Hidden Markov Model (HMM) for 5-mC detection",
+      "kmer_size": 6,
+      "key_findings": [
+        "Clear differences in event distributions between methylated and unmethylated DNA",
+        "Gaussian emission distributions model k-mer current signals",
+        "Requires training on synthetically methylated controls"
+      ],
+      "relevance_to_task": "Baseline method for comparison; Nanopolish alignments used as baseline for m6A detection evaluation"
+    },
+    "paper_001_modseq": {
+      "title": "De novo Identification of DNA Modifications Enabled by Genome-Guided Nanopore Signal Processing",
+      "authors": "Stoiber et al.",
+      "method": "MoD-seq: comparative signal analysis without training data",
+      "key_findings": [
+        "Unsupervised statistical learning for modification discovery",
+        "Comparison of native vs whole-genome amplified (WGA) DNA",
+        "Genome-wide signal comparison identifies consistently modified bases"
+      ],
+      "relevance_to_task": "Alternative approach that doesn't require training; validates importance of raw signal processing"
+    },
+    "paper_002_uncalled": {
+      "title": "Targeted nanopore sequencing by real-time mapping of raw electrical signal with UNCALLED",
+      "authors": "Kovaka et al., Nature Biotechnology 2019",
+      "method": "FM-index based signal mapping with probabilistic k-mer matching",
+      "key_findings": [
+        "Direct signal mapping bypasses basecalling bottleneck",
+        "Reference-encoded FM-index enables rapid candidate pruning",
+        "4.46× enrichment for metagenomics depletion",
+        "29.6× coverage for targeted cancer gene panel"
+      ],
+      "relevance_to_task": "Foundation for Uncalled4; demonstrates feasibility of direct signal alignment"
+    },
+    "paper_003_m6anet": {
+      "title": "Detection of m6A from direct RNA sequencing using a multiple instance learning framework",
+      "authors": "Hendra et al., Nature Methods 2022",
+      "method": "Multiple instance learning neural network for m6A detection",
+      "key_findings": [
+        "Handles missing read-level labels in site-level training data",
+        "Outperforms existing methods (EpiNano, MINES, nanom6A)",
+        "Generalizes across cell lines and species without retraining",
+        "Captures read-level stoichiometry for quantification"
+      ],
+      "relevance_to_task": "m6Anet used as prediction model; explains why Uncalled4 alignments improve detection accuracy"
+    }
+  },
+  "named_methods_reproduced": [
+    "HMM-based signal modeling (Nanopolish baseline)",
+    "FM-index signal mapping (UNCALLED/Uncalled4)",
+    "Multiple instance learning for m6A (m6Anet)"
+  ],
+  "comparison_axes_established": [
+    "Alignment speed (time in minutes)",
+    "Output file size (MB)",
+    "m6A detection AUC",
+    "m6A detection Average Precision",
+    "Pore model characteristics (current mean, std, dwell time)"
+  ],
+  "figure_families_from_literature": [
+    "Event distribution comparisons (from Simpson et al.)",
+    "Signal shift visualization (from Stoiber et al.)",
+    "Enrichment/depletion metrics (from Kovaka et al.)",
+    "Precision-recall and ROC curves (from Hendra et al.)"
+  ],
+  "validation_metrics_adopted": [
+    "AUC for binary classification performance",
+    "Average Precision for imbalanced datasets",
+    "Speedup factors for computational efficiency",
+    "File size ratios for storage efficiency"
+  ]
+}

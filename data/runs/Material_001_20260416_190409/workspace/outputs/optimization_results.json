@@ -1,0 +1,74 @@
+{
+  "input_parameters": {
+    "temperature_range": [
+      200.0,
+      500.0
+    ],
+    "pressure_range": [
+      10.0,
+      30.0
+    ],
+    "target_conditions": {
+      "temperature": 350.0,
+      "pressure": 20.0
+    }
+  },
+  "optimization_results": {
+    "optimal_temperature": 379.597545259111,
+    "optimal_pressure": 22.022300234864176,
+    "estimated_max_yield": 99.80715809960927,
+    "n_evaluations": 25,
+    "convergence_history": [
+      {
+        "iteration": 16,
+        "x": [
+          500.0,
+          10.0
+        ],
+        "y": -91.69284900442365,
+        "best_so_far": -99.80715809960927
+      },
+      {
+        "iteration": 17,
+        "x": [
+          500.0,
+          10.0
+        ],
+        "y": -91.69284900442365,
+        "best_so_far": -99.80715809960927
+      },
+      {
+        "iteration": 18,
+        "x": [
+          500.0,
+          10.0
+        ],
+        "y": -91.69284900442365,
+        "best_so_far": -99.80715809960927
+      },
+      {
+        "iteration": 19,
+        "x": [
+          500.0,
+          10.0
+        ],
+        "y": -91.69284900442365,
+        "best_so_far": -99.80715809960927
+      },
+      {
+        "iteration": 20,
+        "x": [
+          500.0,
+          10.0
+        ],
+        "y": -91.69284900442365,
+        "best_so_far": -99.80715809960927
+      }
+    ]
+  },
+  "response_surface_summary": {
+    "max_yield": 100.03990373076333,
+    "optimal_temp_from_surface": 346.9387755102041,
+    "optimal_pressure_from_surface": 20.20408163265306
+  }
+}

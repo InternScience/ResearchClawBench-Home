@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "claim": "41.7% of mangrove locations have non-zero TC exposure",
+      "source": "workspace computation",
+      "artifact": "outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "99.8% of mangroves face SLR rates ≥4 mm/yr at 2100 under SSP2-4.5",
+      "source": "workspace computation",
+      "artifact": "outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "93.1% of mangroves face SLR rates ≥7 mm/yr at 2100 under SSP2-4.5",
+      "source": "workspace computation",
+      "artifact": "outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "Mean CRI ranges from 0.450 (SSP2-4.5) to 0.485 (SSP5-8.5)",
+      "source": "workspace computation",
+      "artifact": "outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "7.0-10.0% of mangroves classified as high or very high risk",
+      "source": "workspace computation",
+      "artifact": "outputs/summary_statistics.json",
+      "verified": true
+    },
+    {
+      "claim": "6.89-7.42 million hectares at weighted risk",
+      "source": "workspace computation",
+      "artifact": "outputs/country_risk_stats.csv",
+      "verified": true
+    },
+    {
+      "claim": "3.88-4.13 million people at risk",
+      "source": "workspace computation",
+      "artifact": "outputs/country_risk_stats.csv",
+      "verified": true
+    },
+    {
+      "claim": "US$16.47-17.41 billion in property at risk",
+      "source": "workspace computation",
+      "artifact": "outputs/country_risk_stats.csv",
+      "verified": true
+    },
+    {
+      "claim": "TCDI ratios Cat 3:4:5 = 1:13:29",
+      "source": "Mo et al. 2023 (paper_003)",
+      "artifact": "related_work/paper_003.pdf",
+      "verified": true
+    },
+    {
+      "claim": "SLR thresholds: 4 mm/yr (deficit likely), 7 mm/yr (highly likely loss)",
+      "source": "Saintilan et al. 2023 (paper_000)",
+      "artifact": "related_work/paper_000.pdf",
+      "verified": true
+    },
+    {
+      "claim": "Eastern Pacific has highest regional CRI (0.594 under SSP5-8.5)",
+      "source": "workspace computation",
+      "artifact": "outputs/regional_risk_stats.csv",
+      "verified": true
+    },
+    {
+      "claim": "Guam has highest country-level CRI (0.856 under SSP5-8.5)",
+      "source": "workspace computation",
+      "artifact": "outputs/country_risk_stats.csv",
+      "verified": true
+    }
+  ]
+}

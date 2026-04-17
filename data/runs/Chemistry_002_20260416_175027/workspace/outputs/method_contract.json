@@ -1,0 +1,19 @@
+{
+  "task": "HADDOCK3-style analysis of barnase-barstar complex with SKEMPI v2 validation",
+  "named_methods": [
+    "HADDOCK scoring function (van der Waals, electrostatic, desolvation, BSA)",
+    "Ambiguous Interaction Restraints (AIRs) concept",
+    "Interface classification (COR/RIM/SUP)",
+    "ddG computation from Kd values"
+  ],
+  "named_data": [
+    "1BRS PDB structure (chains A, D)",
+    "SKEMPI v2 database"
+  ],
+  "comparison_axes": [
+    "Interface residue identification vs mutation hotspots",
+    "Structural features vs binding affinity changes",
+    "Mutation location (COR/RIM/SUP) vs ddG magnitude"
+  ],
+  "validation_approach": "Cross-validation of computationally identified interface with experimental SKEMPI mutation data"
+}

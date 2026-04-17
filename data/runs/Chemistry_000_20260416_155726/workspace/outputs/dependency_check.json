@@ -1,0 +1,26 @@
+{
+  "python_version": "3.10.20",
+  "device": "cpu",
+  "core_libraries": {
+    "torch": {"version": "2.9.1", "available": true},
+    "torch_geometric": {"version": "2.7.0", "available": true},
+    "rdkit": {"version": "2025.9.6", "available": true},
+    "numpy": {"version": "1.26.4", "available": true},
+    "pandas": {"version": "2.3.3", "available": true},
+    "matplotlib": {"version": "3.10.8", "available": true},
+    "seaborn": {"version": "0.13.2", "available": true},
+    "scikit-learn": {"available": true}
+  },
+  "model_components": {
+    "FourierKANLayer": "implemented",
+    "GCN": "implemented (baseline)",
+    "GAT": "implemented (baseline)",
+    "KAGNN": "implemented (proposed)"
+  },
+  "limitations": {
+    "gpu_acceleration": "not available - running on CPU",
+    "full_scale_training": "reduced epochs and model size for speed",
+    "edge_features": "basic support in mol_to_graph, not fully utilized in models"
+  },
+  "verification_status": "all core dependencies available"
+}

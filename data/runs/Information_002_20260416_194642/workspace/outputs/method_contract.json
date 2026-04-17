@@ -1,0 +1,24 @@
+{
+  "task": "Evaluate LLM performance on multi-step Hartree-Fock calculations for AB-stacked MoTe2/WSe2",
+  "paper": "2111.01152",
+  "method": "Structured prompt template extraction and scoring of HF calculation steps",
+  "named_methods": [
+    "Hartree-Fock approximation",
+    "Continuum moiré Hamiltonian",
+    "Particle-hole transformation",
+    "Wick's theorem",
+    "Dual-gate screened Coulomb interaction"
+  ],
+  "evaluation_framework": {
+    "extraction": "LLM extracts placeholder values from paper text using structured templates",
+    "scoring": "Three human graders (Haining, Will, Yasaman) score on 0-2 scale",
+    "task_scoring": "Six categories: in_paper, prompt_quality, follow_instructions, physics_logic, math_derivation, final_answer_accuracy"
+  },
+  "primary_outputs": [
+    "Per-step score analysis",
+    "Placeholder extraction quality",
+    "Error categorization",
+    "Inter-grader agreement",
+    "LLM bottleneck identification"
+  ]
+}

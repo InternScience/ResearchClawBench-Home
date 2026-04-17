@@ -1,0 +1,37 @@
+{
+  "DIDS-MFL (Full)": {
+    "binary_f1": 0.980289348480435,
+    "binary_auc": 0.9968997094507939,
+    "binary_precision": 0.9756474681097796,
+    "binary_recall": 0.9849756097560975,
+    "multi_f1_macro": 0.3167132092282837
+  },
+  "w/o SD": {
+    "binary_f1": 0.9827150903087978,
+    "binary_auc": 0.9978580394738336,
+    "binary_precision": 0.9781558090083123,
+    "binary_recall": 0.9873170731707317,
+    "multi_f1_macro": 0.3394155351415987
+  },
+  "w/o RD": {
+    "binary_f1": 0.9827871243800448,
+    "binary_auc": 0.9976187960367273,
+    "binary_precision": 0.9796432725862737,
+    "binary_recall": 0.9859512195121951,
+    "multi_f1_macro": 0.34627723403930777
+  },
+  "w/o GD": {
+    "binary_f1": 0.980491611392899,
+    "binary_auc": 0.9973896196756291,
+    "binary_precision": 0.980300370587088,
+    "binary_recall": 0.9806829268292683,
+    "multi_f1_macro": 0.3257340024251345
+  },
+  "w/o MFL": {
+    "binary_f1": 0.9746153092227776,
+    "binary_auc": 0.9968733954533591,
+    "binary_precision": 0.9791256400157542,
+    "binary_recall": 0.9701463414634146,
+    "multi_f1_macro": 0.285627285436548
+  }
+}

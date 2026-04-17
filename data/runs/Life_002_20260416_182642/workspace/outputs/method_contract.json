@@ -1,0 +1,30 @@
+{
+  "task_summary": "Protein complex structural alignment using Foldseek/US-align methodology",
+  "input_format": "PDB files (7xg4.pdb, 6n40.pdb)",
+  "output_requirements": [
+    "Chain correspondence mapping",
+    "Superimposition vectors/rotation matrices",
+    "TM-score for similarity quantification"
+  ],
+  "scientific_goal": "Efficient search and similarity detection in large-scale protein complex structure databases",
+  "named_methods": [
+    "Foldseek (3Di structural alphabet)",
+    "TM-align (TM-score based alignment)",
+    "US-align (universal structure alignment)"
+  ],
+  "target_quantities": {
+    "primary_metric": "TM-score",
+    "secondary_metrics": ["RMSD", "alignment_coverage", "chain_mapping"]
+  },
+  "expected_artifacts": [
+    "Pairwise alignment results between 7xg4 and 6n40",
+    "Chain-level correspondence tables",
+    "Structural superposition visualization",
+    "TM-score distribution analysis"
+  ],
+  "comparison_structure": {
+    "query": "7xg4 (Pseudomonas aeruginosa type IV-A CRISPR-Cas system)",
+    "target": "6n40 (Mycobacterium smegmatis MMPL3)",
+    "alignment_type": "oligomeric/complex alignment"
+  }
+}

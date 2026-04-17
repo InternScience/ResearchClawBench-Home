@@ -1,0 +1,58 @@
+{
+  "related_work_papers": {
+    "paper_000": {
+      "title": "Quantum supremacy using a programmable superconducting processor",
+      "journal": "Nature",
+      "year": 2019,
+      "authors": "Arute et al. (Google)",
+      "key_methods_extracted": {
+        "XEB_formula": "F_XEB = 2^n * <P(x_i)>_i - 1",
+        "interpretation": "F_XEB correlates with probability of no error; F=1 for ideal, F=0 for uniform",
+        "verification_approach": "Compare measured bitstrings with classically simulated ideal probabilities",
+        "circuit_parameters": "53 qubits, variable depth, random circuits with single and two-qubit gates"
+      },
+      "relevant_figures": [
+        "Processor layout and connectivity",
+        "Single and two-qubit gate benchmarking",
+        "XEB fidelity vs circuit depth"
+      ],
+      "validation_metrics": {
+        "single_qubit_error": "~0.2% per gate",
+        "two_qubit_error": "~0.6% per gate (simultaneous)",
+        "supremacy_threshold": "F_XEB sufficiently above 0 for classically intractable circuits"
+      }
+    },
+    "paper_003": {
+      "title": "Measuring the Capabilities of Quantum Computers",
+      "journal": "Quantum",
+      "year": 2022,
+      "authors": "Proctor et al. (Sandia)",
+      "key_methods_extracted": {
+        "mirror_circuit_benchmarking": "Transform any circuit into verifiable mirror circuits",
+        "polarization_metric": "P = (S - 1/2^w) / (1 - 1/2^w), rescaled success probability",
+        "volumetric_benchmarking": "Performance vs circuit width and depth"
+      },
+      "relevant_comparisons": [
+        "Random disordered vs structured circuits",
+        "Best/worst/average case performance",
+        "Error rate predictions vs observed performance"
+      ]
+    }
+  },
+  "method_alignment": {
+    "XEB_implementation": "Faithful to Arute et al. (2019) formula and interpretation",
+    "bootstrap_uncertainty": "Standard statistical approach consistent with quantum benchmarking literature",
+    "aggregation_strategy": "Mean and std across instances matches volumetric benchmarking framework"
+  },
+  "figure_families_reproduced": [
+    "Fidelity vs depth (cf. Arute Fig. 4)",
+    "Fidelity vs qubit count (scaling analysis)",
+    "Exponential decay fits (error per cycle)",
+    "Instance distribution histograms (variation analysis)"
+  ],
+  "comparison_axes_preserved": {
+    "depth_scans": "Fixed N, varying d - shows error accumulation",
+    "qubit_scans": "Fixed d, varying N - shows scaling behavior",
+    "instance_variation": "Multiple r values - shows circuit-specific effects"
+  }
+}

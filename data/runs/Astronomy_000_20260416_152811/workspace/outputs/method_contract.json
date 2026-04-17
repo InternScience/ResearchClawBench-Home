@@ -1,0 +1,43 @@
+{
+  "task_name": "Bayesian Constraints on Ultralight Bosons from Black Hole Superradiance",
+  "methodological_commitments": {
+    "primary_framework": "Bayesian statistical inference using full posterior distributions",
+    "physics_basis": "Black hole superradiance (Penrose process for bosonic fields)",
+    "key_equations": [
+      "alpha = G_N * M_BH * mu / (hbar * c) ≈ 0.22 * (M/30 Msol) * (mu/10^-12 eV)",
+      "Superradiance condition: omega/m < Omega_H",
+      "Horizon angular velocity: Omega_H = (c^3/(2GM)) * a_* / (1 + sqrt(1 - a_*^2))"
+    ],
+    "data_treatment": "Full posterior samples (not point estimates) for BH mass and spin",
+    "constraint_derivation": "Exclusion probability P(excluded|mu) from fraction of posterior samples satisfying superradiance conditions"
+  },
+  "target_quantities": {
+    "primary": "ULB mass mu [eV]",
+    "secondary": "Self-interaction coupling f_a [GeV]",
+    "confidence_level": "95% CL upper limits"
+  },
+  "required_artifacts": {
+    "data_overview": "Posterior distribution visualizations for both BHs",
+    "main_results": "Exclusion probability curves vs mu, upper limit values",
+    "comparison_plots": "Literature comparison, combined constraints",
+    "validation": "Sensitivity analysis, posterior predictive checks"
+  },
+  "named_methods_to_reproduce": [
+    "Superradiance instability growth rate calculation",
+    "Fine-structure constant alpha mapping",
+    "Exclusion probability from posterior fraction",
+    "Self-interaction suppression via Bosenova critical alpha"
+  ],
+  "black_hole_systems": {
+    "IRAS_09149-6206": {
+      "type": "Supermassive black hole",
+      "mass_range": "~10^8 Msol",
+      "sensitivity": "mu ~ 10^-20 to 10^-16 eV"
+    },
+    "M33_X-7": {
+      "type": "Stellar-mass black hole",
+      "mass_range": "~15 Msol",
+      "sensitivity": "mu ~ 10^-14 to 10^-10 eV"
+    }
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "evaluator_statistics": {
+    "Haining": {
+      "count": 84,
+      "mean": 1.619047619047619,
+      "std": 0.7055015423823359,
+      "min": 0.0,
+      "max": 2.0,
+      "median": 2.0
+    },
+    "Will": {
+      "count": 76,
+      "mean": 1.5657894736842106,
+      "std": 0.7493071592054659,
+      "min": 0.0,
+      "max": 2.0,
+      "median": 2.0
+    },
+    "Yasaman": {
+      "count": 84,
+      "mean": 1.5833333333333333,
+      "std": 0.71060559909159,
+      "min": 0.0,
+      "max": 2.0,
+      "median": 2.0
+    }
+  },
+  "main_score_statistics": {
+    "in_paper": {
+      "count": 16,
+      "mean": 1.5,
+      "std": 0.7905694150420949,
+      "min": 0.0,
+      "max": 2.0,
+      "scores": [
+        1.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        0.0,
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "prompt_quality": {
+      "count": 16,
+      "mean": 1.8125,
+      "std": 0.3903123748998999,
+      "min": 1.0,
+      "max": 2.0,
+      "scores": [
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "follow_instructions": {
+      "count": 16,
+      "mean": 1.875,
+      "std": 0.33071891388307384,
+      "min": 1.0,
+      "max": 2.0,
+      "scores": [
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "physics_logic": {
+      "count": 16,
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2.0,
+      "max": 2.0,
+      "scores": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "math_derivation": {
+      "count": 16,
+      "mean": 1.875,
+      "std": 0.33071891388307384,
+      "min": 1.0,
+      "max": 2.0,
+      "scores": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0
+      ]
+    },
+    "final_answer_accuracy": {
+      "count": 16,
+      "mean": 1.75,
+      "std": 0.4330127018922193,
+      "min": 1.0,
+      "max": 2.0,
+      "scores": [
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ]
+    }
+  },
+  "task_performance": [
+    {
+      "task_name": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+      "avg_score": 1.3333333333333333,
+      "individual_scores": {
+        "in_paper": 1,
+        "prompt_quality": 1,
+        "follow_instructions": 1,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 1
+      }
+    },
+    {
+      "task_name": "Define each term in Kinetic Hamiltonian (continuum version)",
+      "avg_score": 1.6666666666666667,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 1,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 1
+      }
+    },
+    {
+      "task_name": "Construct Potential Hamiltonian (continuum version)",
+      "avg_score": 1.8333333333333333,
+      "individual_scores": {
+        "in_paper": 1,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Define each term in Potential Hamiltonian (continuum version)",
+      "avg_score": 2.0,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Convert from single-particle to second-quantized form, return in matrix",
+      "avg_score": 2.0,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+      "avg_score": 1.6666666666666667,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 1,
+        "final_answer_accuracy": 1
+      }
+    },
+    {
+      "task_name": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+      "avg_score": 1.8333333333333333,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 1
+      }
+    },
+    {
+      "task_name": "Particle-hole transformation",
+      "avg_score": 1.6666666666666667,
+      "individual_scores": {
+        "in_paper": 0,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Simplify the Hamiltonian in the particle-hole basis",
+      "avg_score": 1.8333333333333333,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 1,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Construct interaction Hamiltonian (momentum space)",
+      "avg_score": 2.0,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Wick's theorem",
+      "avg_score": 1.6666666666666667,
+      "individual_scores": {
+        "in_paper": 0,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Extract quadratic term",
+      "avg_score": 1.6666666666666667,
+      "individual_scores": {
+        "in_paper": 0,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Swap the index to combine Hartree and Fock terms",
+      "avg_score": 1.8333333333333333,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 1,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice)",
+      "avg_score": 1.8333333333333333,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 1,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Reduce momentum in Fock term (momentum in BZ + reciprocal lattice)",
+      "avg_score": 2.0,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    },
+    {
+      "task_name": "Combine the Hartree and Fock term",
+      "avg_score": 2.0,
+      "individual_scores": {
+        "in_paper": 2,
+        "prompt_quality": 2,
+        "follow_instructions": 2,
+        "physics_logic": 2,
+        "math_derivation": 2,
+        "final_answer_accuracy": 2
+      }
+    }
+  ],
+  "evaluator_agreement": {
+    "Haining-Will": {
+      "correlation": 0.6757678423139343,
+      "mae": 0.25,
+      "n_pairs": 76
+    },
+    "Haining-Yasaman": {
+      "correlation": 0.5619933999807474,
+      "mae": 0.27380952380952384,
+      "n_pairs": 84
+    },
+    "Will-Yasaman": {
+      "correlation": 0.33467449818810235,
+      "mae": 0.4473684210526316,
+      "n_pairs": 76
+    }
+  },
+  "summary": {
+    "total_tasks": 16,
+    "total_placeholders": 84,
+    "overall_mean_score": 1.8020833333333333
+  }
+}

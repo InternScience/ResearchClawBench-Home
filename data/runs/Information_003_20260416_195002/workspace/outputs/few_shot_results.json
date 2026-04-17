@@ -1,0 +1,138 @@
+{
+  "MLP": {
+    "Backdoor": {
+      "1-shot": {
+        "binary_f1": 0.9897,
+        "multi_f1_macro": 0.33,
+        "few_shot_attack_f1": 0.0
+      },
+      "5-shot": {
+        "binary_f1": 0.99,
+        "multi_f1_macro": 0.34,
+        "few_shot_attack_f1": 0.0
+      },
+      "10-shot": {
+        "binary_f1": 0.9886,
+        "multi_f1_macro": 0.34,
+        "few_shot_attack_f1": 0.0
+      },
+      "20-shot": {
+        "binary_f1": 0.9909,
+        "multi_f1_macro": 0.35,
+        "few_shot_attack_f1": 0.0
+      }
+    },
+    "Analysis": {
+      "1-shot": {
+        "binary_f1": 0.9893,
+        "multi_f1_macro": 0.33,
+        "few_shot_attack_f1": 0.0
+      },
+      "5-shot": {
+        "binary_f1": 0.9891,
+        "multi_f1_macro": 0.34,
+        "few_shot_attack_f1": 0.0
+      },
+      "10-shot": {
+        "binary_f1": 0.9885,
+        "multi_f1_macro": 0.34,
+        "few_shot_attack_f1": 0.0
+      },
+      "20-shot": {
+        "binary_f1": 0.9903,
+        "multi_f1_macro": 0.35,
+        "few_shot_attack_f1": 0.0
+      }
+    },
+    "Worms": {
+      "1-shot": {
+        "binary_f1": 0.9907,
+        "multi_f1_macro": 0.33,
+        "few_shot_attack_f1": 0.0
+      },
+      "5-shot": {
+        "binary_f1": 0.991,
+        "multi_f1_macro": 0.34,
+        "few_shot_attack_f1": 0.0
+      },
+      "10-shot": {
+        "binary_f1": 0.9909,
+        "multi_f1_macro": 0.34,
+        "few_shot_attack_f1": 0.0
+      },
+      "20-shot": {
+        "binary_f1": 0.9909,
+        "multi_f1_macro": 0.35,
+        "few_shot_attack_f1": 0.0
+      }
+    }
+  },
+  "DIDS_MFL": {
+    "Backdoor": {
+      "1-shot": {
+        "binary_f1": 0.9776,
+        "multi_f1_macro": 0.3,
+        "few_shot_attack_f1": 0.0
+      },
+      "5-shot": {
+        "binary_f1": 0.9795,
+        "multi_f1_macro": 0.31,
+        "few_shot_attack_f1": 0.0
+      },
+      "10-shot": {
+        "binary_f1": 0.9842,
+        "multi_f1_macro": 0.32,
+        "few_shot_attack_f1": 0.0
+      },
+      "20-shot": {
+        "binary_f1": 0.9826,
+        "multi_f1_macro": 0.33,
+        "few_shot_attack_f1": 0.0
+      }
+    },
+    "Analysis": {
+      "1-shot": {
+        "binary_f1": 0.9832,
+        "multi_f1_macro": 0.3,
+        "few_shot_attack_f1": 0.0
+      },
+      "5-shot": {
+        "binary_f1": 0.9814,
+        "multi_f1_macro": 0.31,
+        "few_shot_attack_f1": 0.0
+      },
+      "10-shot": {
+        "binary_f1": 0.9821,
+        "multi_f1_macro": 0.32,
+        "few_shot_attack_f1": 0.0
+      },
+      "20-shot": {
+        "binary_f1": 0.9845,
+        "multi_f1_macro": 0.33,
+        "few_shot_attack_f1": 0.0
+      }
+    },
+    "Worms": {
+      "1-shot": {
+        "binary_f1": 0.98,
+        "multi_f1_macro": 0.3,
+        "few_shot_attack_f1": 0.0
+      },
+      "5-shot": {
+        "binary_f1": 0.9815,
+        "multi_f1_macro": 0.31,
+        "few_shot_attack_f1": 0.0
+      },
+      "10-shot": {
+        "binary_f1": 0.9874,
+        "multi_f1_macro": 0.32,
+        "few_shot_attack_f1": 0.0
+      },
+      "20-shot": {
+        "binary_f1": 0.9887,
+        "multi_f1_macro": 0.33,
+        "few_shot_attack_f1": 0.0
+      }
+    }
+  }
+}

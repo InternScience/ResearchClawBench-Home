@@ -1,0 +1,17 @@
+{
+  "dependencies_checked": {
+    "pandas": {"available": true, "version": "used for data loading"},
+    "numpy": {"available": true, "version": "used for numerical computation"},
+    "matplotlib": {"available": true, "version": "used for plotting"},
+    "seaborn": {"available": true, "version": "used for statistical plots"},
+    "scikit-learn": {"available": true, "version": "used for ML models"},
+    "scikit-optimize": {"available": true, "version": "available but custom SMBO implemented"},
+    "shap": {"available": true, "version": "used for feature importance"},
+    "openpyxl": {"available": true, "version": "used for Excel reading"},
+    "scipy": {"available": true, "version": "used for statistical functions"}
+  },
+  "limitations": [
+    "PDF reading via ReadPDF failed; used PyMuPDF (fitz) as fallback",
+    "scikit-optimize installed but custom SMBO implementation used for transparency"
+  ]
+}

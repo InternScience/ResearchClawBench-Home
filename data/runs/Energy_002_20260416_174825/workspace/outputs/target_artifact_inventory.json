@@ -1,0 +1,65 @@
+{
+  "target_artifacts": [
+    {
+      "id": "A1",
+      "name": "LCOH_production_map",
+      "status": "completed",
+      "path": "report/images/lcoh_production_map.png"
+    },
+    {
+      "id": "A2",
+      "name": "delivered_cost_map",
+      "status": "completed",
+      "path": "report/images/delivered_cost_map.png"
+    },
+    {
+      "id": "A3",
+      "name": "scenario_comparison_bar",
+      "status": "completed",
+      "path": "report/images/scenario_comparison.png"
+    },
+    {
+      "id": "A4",
+      "name": "wacc_sensitivity_plot",
+      "status": "completed",
+      "path": "report/images/wacc_sensitivity.png"
+    },
+    {
+      "id": "A5",
+      "name": "africa_vs_europe_comparison",
+      "status": "completed",
+      "path": "report/images/africa_vs_europe.png"
+    },
+    {
+      "id": "A6",
+      "name": "cost_breakdown_stacked",
+      "status": "completed",
+      "path": "report/images/cost_breakdown.png"
+    },
+    {
+      "id": "A7",
+      "name": "least_cost_locations_table",
+      "status": "completed",
+      "path": "outputs/least_cost_locations.csv"
+    },
+    {
+      "id": "A8",
+      "name": "lcoh_results_all_scenarios",
+      "status": "completed",
+      "path": "outputs/lcoh_results.csv"
+    },
+    {
+      "id": "A9",
+      "name": "data_overview_plots",
+      "status": "completed",
+      "path": "report/images/data_overview.png"
+    }
+  ],
+  "completion_checklist": {
+    "methodology_documented": true,
+    "all_figures_generated": true,
+    "all_tables_generated": true,
+    "report_written": false,
+    "claim_recovery_complete": false
+  }
+}

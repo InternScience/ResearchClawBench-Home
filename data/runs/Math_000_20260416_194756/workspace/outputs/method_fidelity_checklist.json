@@ -1,0 +1,80 @@
+{
+  "SparseTrack": {
+    "named_mechanism": "SparseTrack - Pseudo-depth based sparse subset decomposition with hierarchical association",
+    "key_components": {
+      "pseudo_depth_estimation": {
+        "definition": "Estimate relative depth from 2D bounding box using vertical position and area",
+        "assumptions": [
+          "Objects lower in image are closer to camera",
+          "Larger objects are closer to camera"
+        ],
+        "implementation_status": "implemented",
+        "fidelity_notes": "Uses weighted combination of normalized y-position and inverse area"
+      },
+      "sparse_subset_decomposition": {
+        "definition": "Partition detections into L depth layers based on pseudo-depth values",
+        "assumptions": ["Depth layers reduce association complexity"],
+        "implementation_status": "implemented",
+        "fidelity_notes": "Uses L=4 layers with equal-sized partitions"
+      },
+      "hierarchical_association": {
+        "definition": "Associate tracklets and detections layer-by-layer from closest to farthest",
+        "assumptions": [
+          "Closer objects should be matched first",
+          "Unmatched tracklets can be passed to deeper layers"
+        ],
+        "implementation_status": "implemented",
+        "fidelity_notes": "Greedy matching with IoU threshold, unmatched tracks propagate to next layer"
+      }
+    },
+    "invariants": [
+      "Each detection belongs to exactly one depth layer",
+      "Layer processing order: closest (layer 0) to farthest (layer L-1)",
+      "Low-score detection matching occurs after all layer processing"
+    ],
+    "deviations_from_ideal": [
+      "Uses greedy matching instead of full Hungarian algorithm",
+      "Pseudo-depth is heuristic rather than true depth measurement",
+      "No explicit occlusion reasoning beyond low-score detection handling"
+    ]
+  },
+  "ByteTrack": {
+    "named_mechanism": "ByteTrack - Two-stage association using all detection boxes",
+    "key_components": {
+      "detection_partitioning": {
+        "definition": "Split detections into high-score (>=threshold) and low-score (<threshold) groups",
+        "assumptions": ["High-score detections are reliable", "Low-score may contain occluded true objects"],
+        "implementation_status": "implemented",
+        "fidelity_notes": "Uses threshold=0.5 as in original paper"
+      },
+      "first_stage_association": {
+        "definition": "Match high-score detections with all active tracklets using motion similarity",
+        "assumptions": ["IoU is sufficient for short-term association"],
+        "implementation_status": "implemented",
+        "fidelity_notes": "Uses IoU threshold=0.3 for valid matches"
+      },
+      "second_stage_association": {
+        "definition": "Match unmatched tracklets from stage 1 with low-score detections",
+        "assumptions": ["Occluded objects have lower detection scores but maintain motion continuity"],
+        "implementation_status": "implemented",
+        "fidelity_notes": "Uses more lenient IoU threshold=0.5 for low-score matching"
+      },
+      "conservative_track_creation": {
+        "definition": "Only create new tracks from unmatched high-score detections",
+        "assumptions": ["Low-score detections alone are insufficient evidence for new objects"],
+        "implementation_status": "implemented",
+        "fidelity_notes": "Prevents false positive track initialization"
+      }
+    },
+    "invariants": [
+      "Stage 1 must complete before Stage 2 begins",
+      "New tracks only created from high-score detections",
+      "Low-score detections never initialize new tracks"
+    ],
+    "deviations_from_ideal": [
+      "No appearance features (Re-ID) as in some ByteTrack variants",
+      "No camera motion compensation",
+      "Simplified Kalman filter compared to BoT-SORT extensions"
+    ]
+  }
+}

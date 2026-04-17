@@ -1,0 +1,46 @@
+{
+  "related_work_papers": [
+    {
+      "paper": "paper_000.pdf",
+      "title": "HADDOCK: A Protein-Protein Docking Approach Based on Biochemical or Biophysical Information",
+      "authors": "Dominguez, Boelens, Bonvin (2003)",
+      "key_contributions": [
+        "AIR (Ambiguous Interaction Restraints) concept",
+        "Information-driven docking approach",
+        "Scoring function: vdW + electrostatic + AIR violations",
+        "Barnase-barstar used as benchmark (within 2.0 A backbone RMSD)"
+      ]
+    },
+    {
+      "paper": "paper_001.pdf",
+      "title": "HADDOCK versus HADDOCK: New features and performance of HADDOCK2.0 on the CAPRI targets",
+      "authors": "de Vries et al. (2007)",
+      "key_contributions": [
+        "Extended to DNA, RNA, oligosaccharides, small ligands",
+        "Up to 6 molecules per docking",
+        "Solvated docking support",
+        "Improved scoring with desolvation term"
+      ]
+    },
+    {
+      "paper": "paper_002.pdf",
+      "title": "The HADDOCK2.2 web server: User-friendly integrative modeling of biomolecular complexes",
+      "authors": "van Zundert et al. (2016)",
+      "key_contributions": [
+        "Web-accessible platform",
+        "Integrative modeling with multiple data types",
+        "Improved user interface and automation"
+      ]
+    },
+    {
+      "paper": "paper_003.pdf",
+      "title": "Modeling Protein-Glycan Interactions with HADDOCK",
+      "authors": "Ranaudo, Giulini, Pelissou Ayuso, Bonvin (2024)",
+      "key_contributions": [
+        "Extension to protein-glycan complexes",
+        "70% top-5 success rate on bound, 40% on unbound",
+        "Glycan conformational flexibility as main limiting factor"
+      ]
+    }
+  ]
+}

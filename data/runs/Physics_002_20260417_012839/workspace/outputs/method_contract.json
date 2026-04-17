@@ -1,0 +1,22 @@
+{
+  "task": "Evaluate computational power of random quantum circuit sampling (RCS) on arbitrary geometries",
+  "methods": [
+    "Linear Cross-Entropy Benchmarking (XEB) fidelity estimation",
+    "Matched Bitstring (MB) regression probability",
+    "Transport/1QRB gate fidelity estimation",
+    "Exponential decay model fitting for error rate extraction",
+    "Per-qubit and per-cycle error rate estimation"
+  ],
+  "comparison_axes": [
+    "Depth scan at fixed N (N=40, N=56)",
+    "Qubit count scan at fixed depth (d=12)",
+    "Cross-method validation (XEB vs MB vs Transport)"
+  ],
+  "key_outputs": [
+    "XEB fidelity with uncertainty per (N, d, r)",
+    "MB probability with uncertainty per (N, d, r)",
+    "Transport/1QRB fidelity per (N, d, r)",
+    "Comparative fidelity curves",
+    "Error rate estimates"
+  ]
+}

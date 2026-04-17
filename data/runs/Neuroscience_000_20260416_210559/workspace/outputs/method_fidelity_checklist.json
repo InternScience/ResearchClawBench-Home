@@ -1,0 +1,62 @@
+{
+  "named_method": "SimBA-style supervised behavior classification",
+  "definition": "A workflow that transforms pose-derived kinematic features into behavior classifications using supervised machine learning classifiers",
+  "assumptions": [
+    "Pose estimation has already been performed on video data",
+    "Frame-level behavior annotations are available for training",
+    "Engineered features capture discriminative information for target behaviors",
+    "Train and test data share similar distributions"
+  ],
+  "invariants": [
+    "Features must be aligned with behavior labels at frame level",
+    "Train/test split must preserve class distributions (stratification)",
+    "Class imbalance must be addressed during training",
+    "Evaluation must use held-out test data not seen during training"
+  ],
+  "non_negotiable_steps": [
+    "Load pose-derived feature table",
+    "Load aligned behavior annotations",
+    "Split data into train and test sets",
+    "Scale/normalize features",
+    "Train classifier with class balance handling",
+    "Evaluate on held-out test set",
+    "Generate precision-recall curves",
+    "Generate confusion matrices",
+    "Extract and report feature importance"
+  ],
+  "structural_ingredients": {
+    "feature_types": [
+      "Body part coordinates (x, y, probability)",
+      "Movement/displacement features",
+      "Geometric features (distances, areas, hulls)",
+      "Temporal window statistics"
+    ],
+    "classifier": "Random Forest (default in SimBA)",
+    "key_hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "class_weight": "balanced"
+    },
+    "evaluation_metrics": [
+      "Accuracy",
+      "Precision",
+      "Recall",
+      "F1 Score",
+      "Average Precision (AP)",
+      "AUC-ROC"
+    ]
+  },
+  "implementation_verification": {
+    "feature_loading": "verified",
+    "target_loading": "verified",
+    "stratified_split": "verified (80/20, random_state=42)",
+    "feature_scaling": "verified (StandardScaler)",
+    "class_balancing": "verified (class_weight='balanced')",
+    "cross_validation": "verified (5-fold)",
+    "test_evaluation": "verified",
+    "pr_curves": "verified",
+    "confusion_matrices": "verified",
+    "feature_importance": "verified"
+  },
+  "deviations": "None - implementation faithfully follows SimBA workflow"
+}

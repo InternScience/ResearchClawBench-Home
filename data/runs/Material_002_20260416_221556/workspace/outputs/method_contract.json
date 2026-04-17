@@ -1,0 +1,29 @@
+{
+  "task": "MACE-MP-0 Foundation Model Reproduction and Validation",
+  "model": "MACE-MP-0b3-medium (from ACEsuit/mace-mp releases)",
+  "dataset": "MPtrj (Materials Project Trajectory Dataset, ~1.5M structures)",
+  "architecture": "MACE (Multi-ACE equivariant message passing neural network)",
+  "experiments": [
+    {
+      "name": "Experiment 1: Liquid Water RDF",
+      "method": "Langevin MD simulation of 32 water molecules at 330K",
+      "validation": "Compare O-O RDF peak positions to experimental values"
+    },
+    {
+      "name": "Experiment 2: Adsorption Energy Scaling Relations",
+      "method": "Geometry optimization of O and OH on fcc(111) transition metal surfaces",
+      "validation": "Check linear scaling between E_OH and E_O across metals"
+    },
+    {
+      "name": "Experiment 3: CRBH20 Reaction Barriers",
+      "method": "Single-point energy calculations on reactant and TS geometries",
+      "validation": "Compare MACE barriers to DFT reference values"
+    }
+  ],
+  "key_commitments": [
+    "Use MACE-MP-0b3-medium model specifically",
+    "Follow exact parameters from data file",
+    "Compare to DFT reference values for reaction barriers",
+    "Demonstrate universality across diverse chemical systems"
+  ]
+}

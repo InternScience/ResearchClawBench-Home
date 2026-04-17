@@ -1,0 +1,31 @@
+{
+  "task_name": "SimBA-Style Behavior Classification Pipeline",
+  "input_specification": {
+    "features_file": "data/Together_1_features_extracted.csv",
+    "targets_file": "data/Together_1_targets_inserted.csv",
+    "reference_file": "data/Together_1_machine_results_reference.csv"
+  },
+  "output_specification": {
+    "trained_classifiers": "Random Forest models for Attack and Sniffing",
+    "evaluation_reports": "Quantitative metrics including accuracy, precision, recall, F1, AP, AUC-ROC",
+    "precision_recall_diagnostics": "PR curves for each behavior",
+    "confusion_matrices": "2x2 confusion matrices for each behavior",
+    "feature_importance_tables": "Ranked feature importance for each classifier"
+  },
+  "scientific_objective": "Verify whether the SimBA-style workflow can reproducibly transform tracked behavior features into transparent and auditable behavior classification evidence",
+  "methodological_commitments": [
+    "Supervised learning with pose-derived features",
+    "Stratified train/test split for evaluation",
+    "Cross-validation for model stability assessment",
+    "Multiple complementary evaluation metrics",
+    "Feature importance analysis for interpretability",
+    "Class imbalance handling via balanced class weights"
+  ],
+  "target_behaviors": ["Attack", "Sniffing"],
+  "classifier_type": "Random Forest",
+  "reproducibility_measures": [
+    "Fixed random seed (42)",
+    "All outputs saved in machine-readable formats",
+    "Complete code documentation"
+  ]
+}

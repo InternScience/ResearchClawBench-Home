@@ -1,0 +1,150 @@
+{
+  "artifacts": [
+    {
+      "id": "data_summary",
+      "description": "Dataset statistics including completeness and basic descriptive statistics",
+      "path": "outputs/data_summary.json",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "correlation_matrix",
+      "description": "Pearson correlation matrix for all energy and weather variables",
+      "path": "outputs/correlation_matrix.json",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "hierarchical_validation",
+      "description": "Aggregation consistency checks between building, community, and total levels",
+      "path": "outputs/hierarchical_validation.json",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "cleaning_report",
+      "description": "Comprehensive data quality assessment with outlier detection and recommendations",
+      "path": "outputs/cleaning_report.json",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "outlier_detection",
+      "description": "Outlier detection results using IQR, Z-score, and MAD methods",
+      "path": "outputs/outlier_detection.json",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "temporal_patterns",
+      "description": "Hourly, monthly, and day-of-week pattern analysis",
+      "path": "outputs/temporal_patterns.json",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig01_dataset_structure",
+      "description": "Hierarchical structure schematic",
+      "path": "report/images/fig01_dataset_structure.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig02_timeseries_overview",
+      "description": "Full-year time series overview for all energy variables",
+      "path": "report/images/fig02_timeseries_overview.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig03_weather_timeseries",
+      "description": "Full-year weather variable time series",
+      "path": "report/images/fig03_weather_timeseries.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig04_energy_distributions",
+      "description": "Box plot distributions of energy variables",
+      "path": "report/images/fig04_energy_distributions.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig05_weather_distributions",
+      "description": "Histogram distributions of weather variables",
+      "path": "report/images/fig05_weather_distributions.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig06_correlation_heatmap",
+      "description": "Correlation matrix heatmap",
+      "path": "report/images/fig06_correlation_heatmap.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig07_key_correlations",
+      "description": "Scatter plots of key energy-weather relationships",
+      "path": "report/images/fig07_key_correlations.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig08_hourly_patterns",
+      "description": "Average hourly patterns for energy variables",
+      "path": "report/images/fig08_hourly_patterns.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig09_monthly_patterns",
+      "description": "Monthly average patterns for energy variables",
+      "path": "report/images/fig09_monthly_patterns.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig10_building_comparison",
+      "description": "Building-level comparison of mean energy variables",
+      "path": "report/images/fig10_building_comparison.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig11_building_contributions",
+      "description": "Percentage contribution of each building to total electricity",
+      "path": "report/images/fig11_building_contributions.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig12_hierarchical_validation",
+      "description": "Hierarchical aggregation validation visualization",
+      "path": "report/images/fig12_hierarchical_validation.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "fig13_data_completeness",
+      "description": "Data completeness heatmap",
+      "path": "report/images/fig13_data_completeness.png",
+      "status": "completed",
+      "verified": true
+    },
+    {
+      "id": "final_report",
+      "description": "Comprehensive research report in Markdown format",
+      "path": "report/report.md",
+      "status": "completed",
+      "verified": true
+    }
+  ],
+  "summary": {
+    "total_artifacts": 20,
+    "completed": 20,
+    "pending": 0,
+    "failed": 0
+  }
+}

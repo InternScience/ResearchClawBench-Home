@@ -1,0 +1,29 @@
+{
+  "hubble_tension": {
+    "h0_sh0es": 73.0,
+    "h0_lcdm": 68.12,
+    "h0_ede": 70.9,
+    "h0_w0wa": 63.5,
+    "tension_lcdm_km_s_mpc": 4.8799999999999955,
+    "tension_ede_km_s_mpc": 2.0999999999999943,
+    "tension_w0wa_km_s_mpc": 9.5,
+    "relief_fraction_edm": 0.5696721311475418,
+    "interpretation": "EDE increases H0 toward SH0ES value, partially relieving tension"
+  },
+  "sigma8_tension": {
+    "s8_weaklens_ref": 0.76,
+    "s8_lcdm": 0.8101,
+    "s8_ede": 0.8283,
+    "s8_w0wa": 0.78,
+    "tension_lcdm": 0.05010000000000003,
+    "tension_ede": 0.06830000000000003,
+    "tension_w0wa": 0.020000000000000018,
+    "interpretation": "EDE increases \u03c38, potentially worsening S8 tension with weak lensing"
+  },
+  "model_comparison": {
+    "best_h0_agreement": "EDE",
+    "lowest_sigma8": "w0wa",
+    "ede_f_value": 0.093,
+    "ede_log10_ac": -3.564
+  }
+}

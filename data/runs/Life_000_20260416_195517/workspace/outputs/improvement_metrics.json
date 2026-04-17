@@ -1,0 +1,40 @@
+{
+  "initial_training": {
+    "n_samples": 184,
+    "mean_kPa": 50.97736340605353,
+    "max_kPa": 304.60014154281674,
+    "std_kPa": 45.84328374907036,
+    "above_100kPa": 20,
+    "above_200kPa": 3,
+    "above_300kPa": 1
+  },
+  "optimized": {
+    "n_samples": 207,
+    "mean_kPa": 165.59634313534434,
+    "max_kPa": 353.2908704883227,
+    "above_100kPa": 174,
+    "above_200kPa": 67,
+    "above_300kPa": 5
+  },
+  "improvement": {
+    "max_improvement_pct": 15.98513011152414,
+    "mean_improvement_pct": 224.84289510288775,
+    "max_predicted_rf_kPa": 273.67258315640623,
+    "max_predicted_gp_kPa": 291.7294367252327,
+    "max_ucb_kPa": 353.8330773138908
+  },
+  "pathway_to_1MPa": {
+    "current_max_kPa": 353.2908704883227,
+    "target_kPa": 1000,
+    "gap_kPa": 646.7091295116772,
+    "gap_factor": 2.8305288461538463,
+    "key_findings": [
+      "Hydrophobic (BA) and Aromatic (PEA) monomers are critical for high adhesion",
+      "Cationic (ATAC) monomer shows strong positive correlation with adhesion",
+      "Optimal compositions tend to have BA > 0.4 and low HEA",
+      "ML-guided optimization improved max adhesion from ~305 to ~353 kPa",
+      "Further optimization rounds show diminishing returns in current formulation space",
+      "Achieving >1 MPa may require expanding the monomer library or crosslinking chemistry"
+    ]
+  }
+}

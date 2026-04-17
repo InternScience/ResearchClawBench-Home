@@ -1,0 +1,158 @@
+[
+  {
+    "step": 1,
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "real|momentum",
+    "llm": "momentum",
+    "human": "real",
+    "mean_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "step": 1,
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "single-particle|second-quantized",
+    "llm": "second-quantized",
+    "human": "single-particle",
+    "mean_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "step": 2,
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "electrons|holes",
+    "llm": "electrons",
+    "human": "holes",
+    "mean_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "step": 2,
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "momentum_shift",
+    "llm": "$\\bm{\\kappa}=\\frac{4\\pi}{3a_M}\\left(1,0\\right)$",
+    "human": "$+\\kappa$ and $-\\kappa$",
+    "mean_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 1,
+      "Will": 0,
+      "Yasaman": 1
+    }
+  },
+  {
+    "step": 2,
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "shifted_Ek",
+    "llm": "$\\bm{k}-\\tau \\bm{\\kappa}$",
+    "human": "$E_{t,+K}$ and $E_{t,-K}$",
+    "mean_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "step": 3,
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "real|momentum",
+    "llm": "momentum",
+    "human": "real",
+    "mean_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "step": 3,
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "single-particle|second-quantized",
+    "llm": "second-quantized",
+    "human": "single-particle",
+    "mean_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "step": 3,
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "diagonal_potential",
+    "llm": "$-\\frac{\\hbar^2\\bm{k}^2}{2m_\\mathfrak{b}}+\\Delta_{\\mathfrak{b}}(\\bm{r})$ and $-\\frac{\\hbar^2\\left(\\bm{k}-\\tau \\bm{\\kappa}\\right)^2}{2m_\\mathfrak{t}}+ \\Delta_\\mathfrak{t}(\\bm{r})+V_{z\\mathfrak{t}}$",
+    "human": "$\\Delta_l(r)$",
+    "mean_score": 0.3333333333333333,
+    "scores": {
+      "Haining": 0,
+      "Will": 1,
+      "Yasaman": 0
+    }
+  },
+  {
+    "step": 5,
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "second_nonint_symbol",
+    "llm": null,
+    "human": "$\\hat{H}^{0}$",
+    "mean_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "step": 7,
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "definition_of_Fourier_Transformation",
+    "llm": "$\\hat{\\mathcal{H}}_0=\\sum_{\\bm{k}_{\\alpha},\\bm{k}_{\\beta}}\\sum_{l_{\\alpha},l_{\\beta}}\\sum_{\\tau} h_{\\bm{k}_{\\alpha}l_{\\alpha},\\bm{k}_{\\beta}l_{\\beta}}^{(\\tau)} c_{\\bm{k}_{\\alpha},l_{\\alpha},\\tau}^\\dagger c_{\\bm{k}_{\\beta},l_{\\beta},\\tau}$",
+    "human": "$c_{\\tau,l}^\\dagger(k)= \\frac{1}{\\sqrt{V}} \\int dr \\psi_{\\tau,l}^\\dagger(r) e^{i k \\cdot r}$",
+    "mean_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "step": 10,
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "index_of_operator",
+    "llm": null,
+    "human": "the valley index and layer index",
+    "mean_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "step": 10,
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "momentum",
+    "llm": null,
+    "human": "momentum",
+    "mean_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  }
+]

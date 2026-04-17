@@ -1,0 +1,46 @@
+{
+  "method_name": "SparseTrack",
+  "definition": "Multi-object tracker that decomposes dense target sets into sparse subsets via pseudo-depth estimation and performs hierarchical association within each depth layer",
+  "key_structural_ingredients": [
+    {
+      "component": "Pseudo-depth estimation",
+      "definition": "Estimate relative depth from bounding box geometry (bottom y-coordinate)",
+      "implemented": true,
+      "notes": "Using bbox bottom y-coordinate as depth proxy"
+    },
+    {
+      "component": "Depth-based decomposition",
+      "definition": "Partition detections and tracks into K depth layers using quantile-based binning",
+      "implemented": true,
+      "notes": "Tested with K=3,5,7,10 layers"
+    },
+    {
+      "component": "Hierarchical association",
+      "definition": "Perform Hungarian matching independently within each depth layer to reduce matching ambiguity",
+      "implemented": true,
+      "notes": "Layer-wise matching followed by cross-layer fallback"
+    },
+    {
+      "component": "Cross-layer fallback",
+      "definition": "Match remaining unmatched tracks and detections across all layers",
+      "implemented": true,
+      "notes": "Handles cases where track/detection depth assignments differ"
+    },
+    {
+      "component": "Two-stage confidence association",
+      "definition": "ByteTrack-style high/low confidence split for second-stage matching",
+      "implemented": true,
+      "notes": "Inherited from ByteTrack design"
+    }
+  ],
+  "assumptions": [
+    "Bottom y-coordinate correlates with object depth (perspective projection)",
+    "Objects at similar depths are less likely to occlude each other",
+    "Decomposition reduces matching problem complexity per layer"
+  ],
+  "deviations": [
+    "No appearance features (ReID) - IoU-only matching",
+    "Simplified pseudo-depth (no learned depth estimation)",
+    "Quantile-based layer boundaries instead of learned boundaries"
+  ]
+}

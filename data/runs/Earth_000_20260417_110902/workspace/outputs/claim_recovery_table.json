@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "claim": "Global glaciers lost -6,543 ± 387 Gt over 2000-2023",
+      "evidence": "Sum of combined_gt column in 0_global.csv calendar year results",
+      "artifact": "outputs/key_results.json",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Average annual rate of -273 Gt/yr",
+      "evidence": "Mean of combined_gt column in 0_global.csv",
+      "artifact": "outputs/key_results.json",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Sea level equivalent contribution of ~18.0 mm",
+      "evidence": "Computed as -(-6542.5)/362.5 = 18.0 mm",
+      "artifact": "outputs/key_results.json",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Statistically significant acceleration of -10.0 ± 2.6 Gt/yr² (p=0.0007)",
+      "evidence": "Linear regression of annual combined_gt values vs year",
+      "artifact": "report/images/fig1_global_mass_change.png",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Mass loss rate increased from -231 to -315 Gt/yr between first and second halves",
+      "evidence": "Mean of combined_gt for 2000-2011 vs 2012-2023",
+      "artifact": "outputs/key_results.json",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Alaska is the largest contributor at -1,474 ± 173 Gt",
+      "evidence": "Sum and error propagation from 1_alaska.csv calendar year results",
+      "artifact": "outputs/regional_summary.csv",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Top 5 regions account for 64% of global mass loss",
+      "evidence": "Sum of top 5 regional totals / global total",
+      "artifact": "outputs/regional_summary.csv",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Central Europe has highest specific rate at -1.06 m w.e./yr",
+      "evidence": "Mean of combined_mwe for 11_central_europe.csv",
+      "artifact": "outputs/regional_summary.csv",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Inter-method R² values of 0.47-0.49",
+      "evidence": "Scatter plot analysis from hydrological year data",
+      "artifact": "report/images/fig11_method_agreement.png",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Glacier area decreased by 7.4% from 2000 to 2023",
+      "evidence": "(652000 - 704000) / 704000 * 100 from glacier_area column",
+      "artifact": "report/images/fig7_glacier_area.png",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "257 input datasets from 19 regions",
+      "evidence": "File count in data/glambie/input/",
+      "artifact": "outputs/input_summary_by_region_method.csv",
+      "status": "verified_from_data"
+    },
+    {
+      "claim": "Consistent with Hugonnet et al. (2021) rate of 267 ± 16 Gt/yr",
+      "evidence": "Our rate of 273 Gt/yr vs their 267 Gt/yr for overlapping period",
+      "artifact": "related_work/paper_004.pdf",
+      "status": "verified_from_related_work"
+    },
+    {
+      "claim": "Consistent with IPCC AR6 rate of 0.74 mm SLE/yr",
+      "evidence": "Our rate of 0.75 mm SLE/yr",
+      "artifact": "related_work/paper_004.pdf",
+      "status": "verified_from_related_work"
+    }
+  ]
+}

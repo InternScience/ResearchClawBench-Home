@@ -1,0 +1,169 @@
+{
+  "baseline": {
+    "H0": 113.85,
+    "H0_err": 2.94,
+    "M_B": -19.4838,
+    "M_B_err": 0.0488,
+    "chi2": 182.22,
+    "dof": 19,
+    "chi2_per_dof": 9.59,
+    "parameters": {
+      "mu_M101": {
+        "value": 29.2753,
+        "error": 0.0523
+      },
+      "mu_NGC1309": {
+        "value": 31.8724,
+        "error": 0.058
+      },
+      "mu_NGC1316": {
+        "value": 31.4355,
+        "error": 0.0681
+      },
+      "mu_NGC1365": {
+        "value": 31.3993,
+        "error": 0.053
+      },
+      "mu_NGC1448": {
+        "value": 31.3764,
+        "error": 0.0627
+      },
+      "mu_NGC1559": {
+        "value": 31.6222,
+        "error": 0.0597
+      },
+      "mu_NGC5643": {
+        "value": 30.9202,
+        "error": 0.0667
+      },
+      "mu_Fornax": {
+        "value": 31.5153,
+        "error": 0.0801
+      },
+      "mu_Virgo": {
+        "value": 31.9309,
+        "error": 0.1804
+      },
+      "M_B": {
+        "value": -19.4838,
+        "error": 0.0488
+      },
+      "M_SBF": {
+        "value": -3.3709,
+        "error": 0.0903
+      },
+      "5logH0": {
+        "value": 10.2817,
+        "error": 0.0561
+      }
+    }
+  },
+  "variants": {
+    "Baseline (all anchors, all methods)": {
+      "H0": 113.85,
+      "H0_err": 2.94,
+      "M_B": -19.4838,
+      "chi2": 182.22,
+      "dof": 19
+    },
+    "N4258 anchor only": {
+      "H0": 119.52,
+      "H0_err": 3.46,
+      "M_B": -19.3773,
+      "chi2": 141.89,
+      "dof": 17
+    },
+    "LMC anchor only (Cepheids)": {
+      "H0": 95.26,
+      "H0_err": 4.11,
+      "M_B": -19.8549,
+      "chi2": 67.62,
+      "dof": 5
+    },
+    "Cepheids only (both anchors)": {
+      "H0": 110.41,
+      "H0_err": 3.09,
+      "M_B": -19.5488,
+      "chi2": 161.13,
+      "dof": 14
+    },
+    "TRGB only (N4258)": {
+      "H0": 126.6,
+      "H0_err": 4.96,
+      "M_B": -19.2515,
+      "chi2": 50.17,
+      "dof": 12
+    },
+    "SN Ia Hubble flow only": {
+      "H0": 112.43,
+      "H0_err": 2.94,
+      "M_B": -19.495,
+      "chi2": 171.94,
+      "dof": 14
+    },
+    "SBF Hubble flow only": {
+      "H0": 142.58,
+      "H0_err": 10.75,
+      "M_B": -19.4945,
+      "chi2": 142.54,
+      "dof": 14
+    },
+    "N4258 + Cepheids only": {
+      "H0": 116.07,
+      "H0_err": 3.8,
+      "M_B": -19.4387,
+      "chi2": 124.99,
+      "dof": 12
+    },
+    "N4258 + TRGB only": {
+      "H0": 126.6,
+      "H0_err": 4.96,
+      "M_B": -19.2515,
+      "chi2": 50.17,
+      "dof": 12
+    }
+  },
+  "CMB_comparison": {
+    "Planck_H0": 67.4,
+    "Planck_H0_err": 0.5,
+    "tension_sigma": 15.6
+  },
+  "host_distances": {
+    "mu_M101": {
+      "value": 29.2753,
+      "error": 0.0523
+    },
+    "mu_NGC1309": {
+      "value": 31.8724,
+      "error": 0.058
+    },
+    "mu_NGC1316": {
+      "value": 31.4355,
+      "error": 0.0681
+    },
+    "mu_NGC1365": {
+      "value": 31.3993,
+      "error": 0.053
+    },
+    "mu_NGC1448": {
+      "value": 31.3764,
+      "error": 0.0627
+    },
+    "mu_NGC1559": {
+      "value": 31.6222,
+      "error": 0.0597
+    },
+    "mu_NGC5643": {
+      "value": 30.9202,
+      "error": 0.0667
+    },
+    "mu_Fornax": {
+      "value": 31.5153,
+      "error": 0.0801
+    },
+    "mu_Virgo": {
+      "value": 31.9309,
+      "error": 0.1804
+    }
+  }
+}

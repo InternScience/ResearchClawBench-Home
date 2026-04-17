@@ -1,0 +1,55 @@
+{
+  "artifacts": {
+    "method_contract": {
+      "path": "outputs/method_contract.json",
+      "status": "completed",
+      "description": "Method specification document"
+    },
+    "dependency_check": {
+      "path": "outputs/dependency_check.json",
+      "status": "completed",
+      "description": "Python package dependencies verified"
+    },
+    "parsed_protein": {
+      "path": "outputs/parsed_protein.json",
+      "status": "completed",
+      "description": "Parsed PDB structure data for FKBP12 protein"
+    },
+    "parsed_ligand": {
+      "path": "outputs/parsed_ligand.json", 
+      "status": "completed",
+      "description": "Parsed SDF structure data for FK506 ligand"
+    },
+    "prediction_results": {
+      "path": "outputs/prediction_results.json",
+      "status": "completed",
+      "description": "Model prediction outputs and RMSD metrics"
+    },
+    "data_overview_figure": {
+      "path": "report/images/data_overview.png",
+      "status": "completed",
+      "description": "Data visualization showing protein CA atoms, ligand structure, residue composition, and atom types"
+    },
+    "architecture_diagram": {
+      "path": "report/images/model_architecture.png",
+      "status": "completed",
+      "description": "Model architecture schematic showing data flow through encoders and denoising network"
+    },
+    "prediction_comparison_figure": {
+      "path": "report/images/prediction_comparison.png",
+      "status": "completed",
+      "description": "Comparison of predicted vs ground truth ligand structures with RMSD analysis"
+    },
+    "final_report": {
+      "path": "report/report.md",
+      "status": "completed",
+      "description": "Comprehensive research report with methodology, results, and discussion"
+    }
+  },
+  "summary": {
+    "total_artifacts": 9,
+    "completed": 8,
+    "pending": 0,
+    "failed": 0
+  }
+}

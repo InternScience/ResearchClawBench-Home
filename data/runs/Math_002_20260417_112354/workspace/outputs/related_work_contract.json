@@ -1,0 +1,50 @@
+{
+  "related_work_papers": {
+    "paper_000": {
+      "title": "MAPF-LNS2: Fast Repairing for Multi-Agent Path Finding via Large Neighborhood Search",
+      "key_contributions": [
+        "LNS framework for MAPF starting from infeasible paths",
+        "SIPPS for efficient single-agent pathfinding with soft constraints",
+        "Collision-based neighborhood selection",
+        "Achieves 80% success on largest random scenarios"
+      ],
+      "relevance": "Core LNS framework that our hybrid extends"
+    },
+    "paper_001": {
+      "title": "PRIMAL: Pathfinding via Reinforcement and Imitation Multi-Agent Learning",
+      "key_contributions": [
+        "Combined RL and imitation learning for decentralized MAPF",
+        "Partial observability with local FOV",
+        "Scales to 1024 agents",
+        "Expert demonstrations during training"
+      ],
+      "relevance": "MARL policy design inspiration"
+    },
+    "paper_002": {
+      "title": "SCRIMP: Scalable Communication for Reinforcement- and Imitation-Learning-Based Multi-Agent Pathfinding",
+      "key_contributions": [
+        "Transformer-based global communication",
+        "Works with very small FOVs (3x3)",
+        "State-value tie-breaking",
+        "Intrinsic rewards for exploration"
+      ],
+      "relevance": "Advanced MARL techniques for MAPF"
+    },
+    "paper_003": {
+      "title": "EECBS: A Bounded-Suboptimal Search for Multi-Agent Path Finding",
+      "key_contributions": [
+        "Bounded-suboptimal CBS variant",
+        "Online learning for conflict cost estimation"
+      ],
+      "relevance": "Baseline comparison reference"
+    },
+    "paper_004": {
+      "title": "LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+      "key_contributions": [
+        "Configuration space search with lazy evaluation",
+        "Very fast for finding any solution"
+      ],
+      "relevance": "Alternative fast MAPF approach"
+    }
+  }
+}

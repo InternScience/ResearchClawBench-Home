@@ -1,0 +1,54 @@
+{
+  "related_papers": [
+    {
+      "id": "paper_000",
+      "title": "Compact binary waveform center-of-mass corrections",
+      "authors": "Woodford, Boyle, Pfeiffer (2019)",
+      "relevance": "Describes c.m. motion as gauge effect causing mode mixing in SXS waveforms; directly relevant to understanding subdominant mode errors",
+      "key_findings": [
+        "C.m. motion is largely a gauge effect, not physical",
+        "Mode mixing from c.m. displacement affects subdominant modes",
+        "SXS catalog of 2,018 simulations analyzed",
+        "C.m. correction method based on apparent horizon trajectories"
+      ]
+    },
+    {
+      "id": "paper_001",
+      "title": "Nonlinearities in Black Hole Ringdowns",
+      "authors": "Mitman, Lagos, Stein et al. (2023)",
+      "relevance": "Shows second-order effects are necessary for modeling ringdown; quadratic (4,4) mode from (2,2) parent mode",
+      "key_findings": [
+        "Nonlinear effects important for higher harmonics in ringdown",
+        "Quadratic (4,4) mode amplitude comparable to linear (4,4)",
+        "Improves mode mismatches by up to 2 orders of magnitude"
+      ]
+    },
+    {
+      "id": "paper_002",
+      "title": "Surrogate models for precessing BBH simulations with unequal masses",
+      "authors": "Varma, Field, Scheel et al. (2019)",
+      "relevance": "NRSur7dq4 surrogate model trained on 1528 SXS simulations; errors comparable to NR resolution errors",
+      "key_findings": [
+        "Trained on 1528 simulations with q<=4, chi<=0.8",
+        "Model errors comparable to NR resolution errors",
+        "NR error estimated by comparing two highest resolutions"
+      ]
+    },
+    {
+      "id": "paper_003",
+      "title": "Eccentric BBH surrogate models for waveform and remnant properties",
+      "authors": "Islam, Varma, Lodman et al. (2021)",
+      "relevance": "NRSur2dq1Ecc model for eccentric BBH; achieves mismatches ~1e-3",
+      "key_findings": [
+        "First surrogate directly trained on eccentric NR simulations",
+        "Mismatches ~1e-3 for waveforms",
+        "Remnant mass/spin errors ~5e-4 M and ~2e-3"
+      ]
+    }
+  ],
+  "additional_contract_items": [
+    "Resolution convergence is the standard method for NR error estimation",
+    "Extrapolation to null infinity uses polynomial fits of different orders",
+    "Mode-by-mode error assessment is standard practice in SXS catalog papers"
+  ]
+}

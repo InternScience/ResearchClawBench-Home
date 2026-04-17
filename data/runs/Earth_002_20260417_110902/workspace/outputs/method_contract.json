@@ -1,0 +1,27 @@
+{
+  "task": "Composite risk index combining TC regime shifts and SLR for global mangrove ecosystems",
+  "named_methods": [
+    "Tropical Cyclone Risk Index (TCRI) from Mo et al. 2023",
+    "SLR threshold analysis from Saintilan et al. 2023 (4 mm/yr, 7 mm/yr)",
+    "Composite Risk Index (CRI) combining TC and SLR components",
+    "SSP scenario comparison (SSP2-4.5, SSP3-7.0, SSP5-8.5)"
+  ],
+  "data_sources": [
+    "Global Mangrove Watch v4 (Bunting et al. 2018) - sampled 10%",
+    "IPCC AR6 SLR rates (Garner et al. 2021) - 3 SSP scenarios",
+    "MIT TC tracks (Emanuel et al. 2006) downscaled from CMIP6 MPI-ESM1-2-HR",
+    "UCSC CWON country boundaries with ecosystem service data"
+  ],
+  "key_thresholds": {
+    "slr_deficit_likely": "4 mm/yr",
+    "slr_deficit_highly_likely": "7 mm/yr",
+    "tc_damage_threshold": "Category 3+ (major cyclones)",
+    "tc_wind_minimum": "33 m/s (tropical storm)"
+  },
+  "comparison_axes": [
+    "SSP scenarios (245, 370, 585)",
+    "Regional/country-level analysis",
+    "TC vs SLR contribution to composite risk",
+    "Ecosystem services at risk (population, property, carbon)"
+  ]
+}

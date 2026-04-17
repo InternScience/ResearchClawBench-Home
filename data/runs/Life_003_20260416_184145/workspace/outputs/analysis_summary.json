@@ -1,0 +1,50 @@
+{
+  "analysis_date": "2026-04-16",
+  "performance": {
+    "tools": [
+      "Uncalled4",
+      "f5c",
+      "Nanopolish",
+      "Tombo"
+    ],
+    "chemistries": [
+      "DNA r9.4",
+      "DNA r10.4",
+      "RNA001",
+      "RNA004"
+    ],
+    "speedup_range": "1.0x - 67.0x"
+  },
+  "m6a_detection": {
+    "total_sites": 5000,
+    "positive": 1024,
+    "uncalled4_auc": 0.9979,
+    "uncalled4_ap": 0.9929,
+    "nanopolish_auc": 0.9012,
+    "nanopolish_ap": 0.7784,
+    "auc_improvement": 0.0967,
+    "ap_improvement": 0.2145
+  },
+  "pore_models": [
+    "DNA_r9.4.1_6mer",
+    "DNA_r10.4.1_9mer",
+    "RNA001_5mer",
+    "RNA004_9mer"
+  ],
+  "figures": [
+    "performance_filesize.png",
+    "speedup_heatmap.png",
+    "pore_std_vs_mean.png",
+    "pore_current_dist.png",
+    "pore_dwell_dist.png",
+    "prediction_distributions.png",
+    "pr_curves.png",
+    "roc_curves.png",
+    "performance_time.png"
+  ],
+  "outputs": [
+    "performance_comparison.json",
+    "pr_roc_analysis.json",
+    "pore_model_stats.json"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "task_title": "Geospatial Levelized-Cost Model for African Green Hydrogen to Europe",
+  "methodological_commitments": {
+    "primary_method": "GeoH2-inspired geospatial LCOH optimization",
+    "system_boundaries": [
+      "Green hydrogen production at African sites",
+      "Conversion to ammonia",
+      "Ocean shipping to Europe (Rotterdam)",
+      "Reconversion to hydrogen at destination"
+    ],
+    "temporal_scope": "2030 projections",
+    "spatial_scope": "Africa (30 hexagon sites from provided data)",
+    "comparison_baseline": "European green hydrogen production"
+  },
+  "required_scenarios": [
+    {
+      "name": "baseline_wacc",
+      "description": "Baseline weighted average cost of capital for developing countries"
+    },
+    {
+      "name": "de_risked",
+      "description": "Lower WACC through guarantees/de-risking instruments"
+    },
+    {
+      "name": "high_interest_rate",
+      "description": "Elevated interest rate environment"
+    },
+    {
+      "name": "europe_production",
+      "description": "Reference case for European H2 production costs"
+    }
+  ],
+  "target_outputs": {
+    "quantitative": [
+      "LCOH at production site (EUR/kg H2)",
+      "Delivered cost to Europe (EUR/kg H2)",
+      "Cost breakdown by component",
+      "WACC sensitivity results"
+    ],
+    "spatial": [
+      "LCOH maps across African hexagons",
+      "Least-cost location identification"
+    ],
+    "comparative": [
+      "Africa vs Europe cost comparison",
+      "Scenario comparison tables"
+    ]
+  },
+  "key_parameters_from_literature": {
+    "geoH2_reference": {
+      "source": "paper_000.pdf",
+      "approach": "Geospatial optimization of H2 production, storage, transport, conversion",
+      "case_study_lcoh": "4.17-9.21 EUR/kg (Namibia)"
+    },
+    "kenya_study": {
+      "source": "paper_001.pdf",
+      "current_lcoh": "3.7-9.9 EUR/kg",
+      "projected_2030_lcoh": "1.8-3.0 EUR/kg",
+      "export_to_rotterdam": "~7 EUR/kg"
+    },
+    "cost_of_capital": {
+      "source": "paper_002.pdf",
+      "share_of_lcoe": "12-50% depending on country"
+    },
+    "interest_rate_effects": {
+      "source": "paper_003.pdf",
+      "lcoe_increase_pv": "11% for 5-year IR rise",
+      "lcoe_increase_wind": "25% for 5-year IR rise"
+    }
+  }
+}

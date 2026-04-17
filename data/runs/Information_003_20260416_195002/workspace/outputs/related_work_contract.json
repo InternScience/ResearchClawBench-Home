@@ -1,0 +1,20 @@
+{
+  "primary_reference": "3D-IDS (KDD 2023)",
+  "key_methods_extracted": {
+    "statistical_disentanglement": "Non-parametric optimization via SMT to minimize mutual information between feature elements",
+    "representational_disentanglement": "Orthogonality regularization L_dis = 0.5 * ||X(t)X(t-)^T - I||_F^2",
+    "graph_diffusion": "Perona-Malik nonlinear diffusion with layer-temporal coefficients, solved via Runge-Kutta",
+    "classifier": "Two-step: binary (benign vs attack) then multi-class (specific attack type)"
+  },
+  "baselines_from_paper": ["TGN", "EULER", "AnomRank", "DynAnom", "GAT", "E-GraphSAGE", "DMGI", "SSDCM", "MLP", "MStream", "LUCID"],
+  "reference_results_NF_UNSW_NB15_v2": {
+    "3D-IDS": {"binary_f1": "95.45±0.67", "binary_auc": "91.55±1.03"},
+    "E-GraphSAGE": {"binary_f1": "94.10±0.33", "binary_auc": "90.39±0.26"},
+    "TGN": {"binary_f1": "93.55±0.23", "binary_auc": "88.01±1.97"}
+  },
+  "additional_papers": {
+    "DisenLink": "Disentangled representation learning for link prediction on heterophilic graphs",
+    "E-GraphSAGE": "GNN-based NIDS capturing edge features and topology",
+    "BSNet": "Bi-similarity network for few-shot fine-grained classification"
+  }
+}

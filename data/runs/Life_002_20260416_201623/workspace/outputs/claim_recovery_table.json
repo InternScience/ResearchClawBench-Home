@@ -1,0 +1,44 @@
+{
+  "claim_1": {
+    "claim": "7XG4 and 6N40 show low structural similarity (TM-score < 0.5)",
+    "evidence": "Best chain pair TM-score = 0.2608 (Chain A vs Chain A)",
+    "verified": true,
+    "source": "Direct computation via TM-align"
+  },
+  "claim_2": {
+    "claim": "CSF2 subunits (C,D,E,F,G) in 7XG4 are structural homologs",
+    "evidence": "Pairwise TM-scores range from 0.889 to 0.992",
+    "verified": true,
+    "source": "Intra-complex TM-align analysis"
+  },
+  "claim_3": {
+    "claim": "7XG4 is a multi-chain complex with 9 protein and 3 nucleic acid chains",
+    "evidence": "PDB parsing confirms chains A-L with 9 protein, 3 nucleic acid",
+    "verified": true,
+    "source": "BioPython PDB parser"
+  },
+  "claim_4": {
+    "claim": "6N40 is a single-chain membrane protein (726 residues)",
+    "evidence": "PDB parsing confirms 1 chain with 726 residues",
+    "verified": true,
+    "source": "BioPython PDB parser"
+  },
+  "claim_5": {
+    "claim": "Chain A (Csf1) of 7XG4 has highest structural similarity to 6N40",
+    "evidence": "TM-score avg = 0.2608, highest among all chains",
+    "verified": true,
+    "source": "All-vs-all chain TM-align"
+  },
+  "claim_6": {
+    "claim": "The two structures represent fundamentally different protein architectures",
+    "evidence": "All TM-scores < 0.3, RMSD > 5.9\u00c5 for all chain pairs",
+    "verified": true,
+    "source": "Pairwise alignment metrics"
+  },
+  "claim_7": {
+    "claim": "Inter-chain contacts in 7XG4 follow a linear backbone arrangement",
+    "evidence": "Sequential chain pairs (C-D, D-E, E-F, F-G) show highest contacts",
+    "verified": true,
+    "source": "Inter-chain contact analysis"
+  }
+}

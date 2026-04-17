@@ -1,0 +1,66 @@
+{
+  "task_name": "MACE-MP-0 Foundation Model Reproduction and Validation",
+  "scientific_goal": "Develop and validate a universal foundation model for atomistic simulations that covers the periodic table, stably simulates diverse material systems, and achieves quantitative accuracy with minimal fine-tuning",
+  "methodological_commitments": [
+    {
+      "commitment": "MACE Architecture",
+      "description": "Higher-order equivariant message passing neural networks with body order > 2, using tensor product structure for efficient computation",
+      "source": "paper_000.pdf (Batatia et al.)"
+    },
+    {
+      "commitment": "Pretraining on MPtrj Dataset",
+      "description": "Materials Project Trajectory Dataset with ~1.5 million inorganic crystal structures and relaxation trajectories",
+      "source": "paper_001.pdf (Deng et al.), paper_003.pdf (Huang et al.)"
+    },
+    {
+      "commitment": "Three Validation Tests",
+      "description": "Liquid water RDF, adsorption energy scaling relations on transition metal surfaces, CRBH20 reaction barriers",
+      "source": "data/MACE-MP-0_Reproduction_Dataset.txt"
+    }
+  ],
+  "target_comparison_axes": [
+    "Water radial distribution function (RDF) at 330K",
+    "Adsorption energy scaling relations (*O vs *OH) on fcc(111) transition metal surfaces",
+    "Reaction barrier heights for CRBH20 subset (Rxn 1, 11, 20)"
+  ],
+  "expected_figure_families": [
+    "Data overview: Element distribution in MPtrj dataset",
+    "Water RDF: g_OO(r), g_OH(r), g_HH(r) comparison",
+    "Scaling relations: E_ads(*O) vs E_ads(*OH) for Ni, Cu, Rh, Pd, Ir, Pt",
+    "Reaction barriers: MACE vs DFT comparison for CRBH20 reactions",
+    "Learning curves: Error vs training set size",
+    "Model architecture diagram: MACE message passing structure"
+  ],
+  "interpretability_artifacts": [
+    "Body order analysis: Effect of nu (correlation order) on accuracy",
+    "Equivariance analysis: Effect of L (symmetry order) on learning curves",
+    "Element-wise error distribution across periodic table"
+  ],
+  "quantitative_targets": {
+    "water_simulation": {
+      "system": "32 H2O molecules, cubic box 12.0 Angstrom",
+      "temperature": "330 K",
+      "timesteps": 2000,
+      "dt": "0.5 fs"
+    },
+    "adsorption_systems": {
+      "metals": ["Ni", "Cu", "Rh", "Pd", "Ir", "Pt"],
+      "lattice_constants_angstrom": {
+        "Ni": 3.52,
+        "Cu": 3.61,
+        "Rh": 3.80,
+        "Pd": 3.89,
+        "Ir": 3.84,
+        "Pt": 3.92
+      },
+      "surface": "fcc(111)",
+      "slab_size": "(2, 2, 3)",
+      "vacuum": "10.0 Angstrom"
+    },
+    "reaction_barriers_eV": {
+      "Rxn1_cyclobutene": 1.72,
+      "Rxn11_methoxy": 1.74,
+      "Rxn20_cyclopropane": 1.77
+    }
+  }
+}

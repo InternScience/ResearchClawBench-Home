@@ -1,0 +1,332 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "calculate_risk.py",
+    "path": "code/calculate_risk.py",
+    "type": "file",
+    "size": 7807,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "create_figures.py",
+    "path": "code/create_figures.py",
+    "type": "file",
+    "size": 11002,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "process_data.py",
+    "path": "code/process_data.py",
+    "type": "file",
+    "size": 5964,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "regional_analysis.py",
+    "path": "code/regional_analysis.py",
+    "type": "file",
+    "size": 6272,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "ecosystem",
+    "path": "data/ecosystem",
+    "type": "directory"
+  },
+  {
+    "name": "UCSC_CWON_countrybounds.gpkg",
+    "path": "data/ecosystem/UCSC_CWON_countrybounds.gpkg",
+    "type": "file",
+    "size": 2727936,
+    "mtime": 1772711346.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "mangroves",
+    "path": "data/mangroves",
+    "type": "directory"
+  },
+  {
+    "name": "gmw_v4_ref_smpls_qad_v12.gpkg",
+    "path": "data/mangroves/gmw_v4_ref_smpls_qad_v12.gpkg",
+    "type": "file",
+    "size": 10506240,
+    "mtime": 1773108490.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "slr",
+    "path": "data/slr",
+    "type": "directory"
+  },
+  {
+    "name": "total_ssp245_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp245_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 38104917,
+    "mtime": 1643398496.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "total_ssp370_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp370_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 40762177,
+    "mtime": 1643398506.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "total_ssp585_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp585_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 40854540,
+    "mtime": 1643398504.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "tc",
+    "path": "data/tc",
+    "type": "directory"
+  },
+  {
+    "name": "tracks_mit_mpi-esm1-2-hr_historical_reduced.nc",
+    "path": "data/tc/tracks_mit_mpi-esm1-2-hr_historical_reduced.nc",
+    "type": "file",
+    "size": 3448956,
+    "mtime": 1772786828.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "mangrove_grid.csv",
+    "path": "outputs/mangrove_grid.csv",
+    "type": "file",
+    "size": 81134,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "mangrove_risk_with_country.csv",
+    "path": "outputs/mangrove_risk_with_country.csv",
+    "type": "file",
+    "size": 1942874,
+    "mtime": 1776394986.0,
+    "exported": false
+  },
+  {
+    "name": "regional_comparison_all_scenarios.csv",
+    "path": "outputs/regional_comparison_all_scenarios.csv",
+    "type": "file",
+    "size": 9172,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "regional_risk_ssp245.csv",
+    "path": "outputs/regional_risk_ssp245.csv",
+    "type": "file",
+    "size": 13758,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "regional_risk_ssp370.csv",
+    "path": "outputs/regional_risk_ssp370.csv",
+    "type": "file",
+    "size": 13518,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "regional_risk_ssp585.csv",
+    "path": "outputs/regional_risk_ssp585.csv",
+    "type": "file",
+    "size": 12848,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "risk_assessment_ssp245.csv",
+    "path": "outputs/risk_assessment_ssp245.csv",
+    "type": "file",
+    "size": 300036,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "risk_assessment_ssp370.csv",
+    "path": "outputs/risk_assessment_ssp370.csv",
+    "type": "file",
+    "size": 297896,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "risk_assessment_ssp585.csv",
+    "path": "outputs/risk_assessment_ssp585.csv",
+    "type": "file",
+    "size": 284545,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "risk_summary.csv",
+    "path": "outputs/risk_summary.csv",
+    "type": "file",
+    "size": 706,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 1 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 5947391,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1907880,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 5073703,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 1481541,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_004.pdf",
+    "path": "related_work/paper_004.pdf",
+    "type": "file",
+    "size": 2017477,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_slr_distribution.png",
+    "path": "report/images/fig1_slr_distribution.png",
+    "type": "file",
+    "size": 170387,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_tc_frequency.png",
+    "path": "report/images/fig2_tc_frequency.png",
+    "type": "file",
+    "size": 1680983,
+    "mtime": 1776394986.0,
+    "exported": false
+  },
+  {
+    "name": "fig3_risk_comparison.png",
+    "path": "report/images/fig3_risk_comparison.png",
+    "type": "file",
+    "size": 206170,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_risk_maps.png",
+    "path": "report/images/fig4_risk_maps.png",
+    "type": "file",
+    "size": 971456,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_slr_tc_relationship.png",
+    "path": "report/images/fig5_slr_tc_relationship.png",
+    "type": "file",
+    "size": 732822,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "fig6_high_risk_hotspots.png",
+    "path": "report/images/fig6_high_risk_hotspots.png",
+    "type": "file",
+    "size": 704209,
+    "mtime": 1776394986.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 18933,
+    "mtime": 1776394987.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5884,
+    "mtime": 1776330152.0,
+    "exported": true
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "related_work_papers": [
+    {
+      "id": "paper_000",
+      "title": "V*: Guided Visual Search as a Core Mechanism in Multimodal LLMs",
+      "authors": "Wu, Xie (2024)",
+      "venue": "CVPR 2024",
+      "key_contributions": [
+        "SEAL meta-architecture with VQA LLM + visual search model",
+        "V* LLM-guided visual search algorithm",
+        "Visual Working Memory (VWM) mechanism",
+        "V*Bench benchmark for evaluating visual grounding"
+      ],
+      "key_results": {
+        "SEAL_overall_accuracy": "75.39%",
+        "GPT4V_accuracy": "54.97%",
+        "baseline_no_search": "45.02%",
+        "average_search_length": 4.65,
+        "human_accuracy": "98.95%"
+      },
+      "relevance": "Primary framework being studied"
+    },
+    {
+      "id": "paper_001",
+      "title": "Generic Attention-model Explainability for Interpreting Bi-Modal and Encoder-Decoder Transformers",
+      "authors": "Chefer, Gur, Wolf (2021)",
+      "venue": "ICCV 2021",
+      "relevance": "Attention visualization methods for understanding encoder behavior"
+    },
+    {
+      "id": "paper_002",
+      "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+      "authors": "Li et al. (2023)",
+      "venue": "ICML 2023",
+      "relevance": "Representative MLLM architecture with frozen vision encoder bottleneck"
+    },
+    {
+      "id": "paper_003",
+      "title": "Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models",
+      "authors": "Li et al. (2024)",
+      "venue": "CVPR 2024",
+      "relevance": "Alternative approach to resolution limitation via patch-based processing"
+    }
+  ]
+}

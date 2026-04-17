@@ -1,0 +1,31 @@
+{
+  "random_charges": {
+    "n_frames": 100,
+    "n_atoms": 128,
+    "n_positive": 64,
+    "n_negative": 64,
+    "has_energy": false,
+    "has_forces": false,
+    "pbc": "F F F"
+  },
+  "charged_dimer": {
+    "n_frames": 60,
+    "n_atoms": 8,
+    "species": [
+      "H",
+      "C"
+    ],
+    "energy_range": [
+      0.25822117555607194,
+      1.8443943208912492
+    ],
+    "has_forces": true
+  },
+  "ag3_chargestates": {
+    "n_frames": 60,
+    "n_atoms": 3,
+    "n_charge_plus1": 30,
+    "n_charge_minus1": 30,
+    "has_forces": true
+  }
+}

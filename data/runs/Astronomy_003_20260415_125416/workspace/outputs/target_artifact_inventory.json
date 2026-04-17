@@ -1,0 +1,25 @@
+{
+  "primary_quantitative_answers": [
+    "Median resolution waveform difference (~4e-4)",
+    "Modal waveform difference medians by ell",
+    "Extrapolation order difference medians",
+    "Fraction of simulations below accuracy thresholds"
+  ],
+  "required_comparison_tables": [
+    "Summary statistics table for all three datasets",
+    "Modal accuracy comparison table (ell=2 through ell=8)",
+    "Extrapolation convergence comparison table"
+  ],
+  "expected_figure_families": [
+    "Fig 6: Histogram/CDF of overall resolution waveform differences",
+    "Fig 7: Box plot or violin plot of modal waveform differences by ell",
+    "Fig 8: Comparison of extrapolation order differences",
+    "Additional: Log-normal fit overlay",
+    "Additional: Correlation heatmap between modes",
+    "Additional: Accuracy threshold analysis"
+  ],
+  "interpretability_artifacts": [
+    "Log-normal distribution parameters",
+    "Percentile tables for each distribution"
+  ]
+}

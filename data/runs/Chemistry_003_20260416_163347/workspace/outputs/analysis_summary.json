@@ -1,0 +1,47 @@
+{
+  "charge_recovery": {
+    "short_range": {
+      "mse": 1.8860715113803508,
+      "mae": 0.9988126667661033,
+      "correlation": 0.018490488245406618,
+      "sign_accuracy": 0.5
+    },
+    "latent_ewald": {
+      "mse": 1.0732954794480407,
+      "mae": 1.0252286863874271,
+      "correlation": -0.16697978944108727,
+      "sign_accuracy": 0.43609375
+    }
+  },
+  "binding_curves": {
+    "long_range_mse": 0.13064299247323988,
+    "short_range_mse": 0.14483561524455402,
+    "fit_coefficients": [
+      0.203855685649085,
+      7.417753736205082,
+      -20.656400773709485
+    ],
+    "separation_range": [
+      2.8621164816435924,
+      12.095042199421648
+    ]
+  },
+  "charge_states": {
+    "same_charge_error_plus": 0.10858809322997223,
+    "same_charge_error_minus": 0.10858809322997223,
+    "cross_charge_error_plus_on_minus": 0.10858809322997223,
+    "cross_charge_error_minus_on_plus": 0.10858809322997223,
+    "coeffs_plus": [
+      18.385851604189646,
+      -12.135624900059058,
+      2.0327295167379047
+    ],
+    "coeffs_minus": [
+      18.385851604189646,
+      -12.135624900059058,
+      2.0327295167379047
+    ],
+    "n_configs_plus": 30,
+    "n_configs_minus": 30
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "related_papers": {
+    "paper_001": {
+      "title": "Data-driven systematic parameter identification of an electrochemical model for lithium-ion batteries with artificial intelligence",
+      "authors": "Li et al.",
+      "journal": "Energy Storage Materials 44 (2022) 557-571",
+      "key_contributions": [
+        "Cuckoo search algorithm for P2D parameter identification",
+        "Multi-step identification based on sensitivity analysis",
+        "26 parameters identified with RMSE < 12.7 mV",
+        "Training/validation split inspired by ML"
+      ],
+      "relevance": "Primary methodological reference for data-driven parameter identification"
+    },
+    "paper_002": {
+      "title": "Modeling of Galvanostatic Charge and Discharge of the Lithium/Polymer/Insertion Cell",
+      "authors": "Doyle, Fuller, Newman",
+      "journal": "J. Electrochem. Soc. 140(6) 1993",
+      "key_contributions": [
+        "Original P2D model formulation",
+        "Concentrated solution theory for polymer electrolyte",
+        "Foundation for all subsequent electrochemical models"
+      ],
+      "relevance": "Foundational model equations used in ECAT"
+    },
+    "paper_003": {
+      "title": "Parameter Identification of Lithium-Ion Batteries Model to Predict Discharge Behaviors Using Heuristic Algorithm",
+      "authors": "Li et al.",
+      "journal": "J. Electrochem. Soc. 163(8) A1646-A1652 (2016)",
+      "key_contributions": [
+        "Divide-and-conquer strategy for P2D parameters",
+        "Heuristic algorithm with GA",
+        "Complete identification in 10h on single core",
+        "Effective interval spacing to save search time"
+      ],
+      "relevance": "Benchmark for GA-based parameter identification efficiency"
+    }
+  },
+  "key_baselines": [
+    "Direct GA without meta-model",
+    "Experimental/invasive parameter identification",
+    "Cuckoo search algorithm (Li et al. 2022)"
+  ],
+  "target_metrics": [
+    "Voltage RMSE < 15 mV (from Li et al. 2022 benchmark)",
+    "Computation time reduction vs direct simulation-based GA"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task": "SXS BBH Catalog Waveform Accuracy Analysis",
+  "methods": [
+    "Resolution convergence analysis via waveform differences between two highest resolutions",
+    "Modal decomposition of waveform errors across spherical harmonic modes ell=2 through ell=8",
+    "Extrapolation order convergence analysis (N=2 vs N=3, N=2 vs N=4)",
+    "Log-normal distribution fitting to error distributions",
+    "Statistical characterization of catalog-wide accuracy"
+  ],
+  "named_frameworks": [
+    "SXS (Simulating eXtreme Spacetimes) numerical relativity framework",
+    "Spin-weighted spherical harmonic decomposition",
+    "Cauchy-characteristic extraction / extrapolation to null infinity"
+  ],
+  "comparison_axes": [
+    "Resolution convergence (highest vs second-highest resolution)",
+    "Modal accuracy (ell=2 through ell=8)",
+    "Extrapolation order convergence (N2vsN3, N2vsN4)"
+  ],
+  "target_quantities": [
+    "Median waveform difference across catalog",
+    "Distribution shape parameters (log-normal fit)",
+    "Fraction of simulations meeting accuracy thresholds",
+    "Mode-dependent accuracy trends",
+    "Extrapolation convergence rates"
+  ]
+}

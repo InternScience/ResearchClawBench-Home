@@ -1,0 +1,28 @@
+{
+  "method_name": "MinSum Adaptive Vaccine Optimization",
+  "definition": "Select a set of neoantigen elements (mutations) within a budget constraint that minimizes the sum of log-probabilities of no immune response across all cells in the tumor population",
+  "assumptions": [
+    "Cell-level response probabilities are computed from upstream prediction tools (pVACtools: cleavage, MHC binding, pMHC stability)",
+    "Response probabilities for different vaccine elements are independent per cell",
+    "Combined cell response: P(response) = 1 - prod(P(no_response_j)) for selected elements j",
+    "Adaptive method: optimize across multiple simulation replicates to find robust composition"
+  ],
+  "invariants": [
+    "Budget constraint: exactly K elements selected (K=10)",
+    "All elements have equal weight (weight=1)",
+    "MinSum objective: minimize sum of log(P(no_response)) across all cells"
+  ],
+  "non_negotiable_steps": [
+    "Simulate cell populations with stochastic peptide presentation",
+    "Score each vaccine element per cell using prediction pipeline",
+    "Optimize element selection under budget constraint",
+    "Evaluate across multiple replicates for robustness"
+  ],
+  "verification": {
+    "computed_aggregate_matches_provided": true,
+    "mean_response_computed": 0.9427,
+    "mean_response_provided": 0.9427,
+    "all_replicates_identical_selection": true,
+    "iou_all_1.0": true
+  }
+}

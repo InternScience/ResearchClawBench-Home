@@ -1,0 +1,33 @@
+{
+  "task_name": "Unified Autoregressive Framework with Decoupled Visual Encoding",
+  "architecture": {
+    "backbone": "Transformer (Llama-style)",
+    "visual_encoding": {
+      "understanding_encoder": {
+        "type": "CLIP ViT",
+        "purpose": "Multimodal understanding (VQA, captioning)",
+        "output": "Continuous visual features projected to language space"
+      },
+      "generation_encoder": {
+        "type": "VQ-VAE Tokenizer",
+        "purpose": "Visual generation (text-to-image)",
+        "output": "Discrete image tokens (codebook indices)"
+      }
+    },
+    "fusion_strategy": "Early fusion - all modalities as token sequences"
+  },
+  "tokenization": {
+    "text_tokens": "BPE tokenizer (65536 vocab)",
+    "image_tokens": "VQ-VAE codebook (8192 entries, 1024 tokens per 512x512 image)"
+  },
+  "training_objective": "Next-token prediction (autoregressive)",
+  "key_innovations": [
+    "Decoupled visual encoding for understanding vs generation",
+    "Unified Transformer architecture for both tasks",
+    "Token-based representation for all modalities"
+  ],
+  "evaluation_tasks": [
+    "OCR: equation.png -> LaTeX conversion",
+    "Semantic understanding: doge.png meme interpretation"
+  ]
+}

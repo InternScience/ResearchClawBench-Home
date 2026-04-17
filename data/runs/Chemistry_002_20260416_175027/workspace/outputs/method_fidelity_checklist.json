@@ -1,0 +1,31 @@
+{
+  "method": "HADDOCK-inspired interface analysis with SKEMPI v2 validation",
+  "definition": "Distance-based interface identification + simplified HADDOCK scoring + experimental ddG validation",
+  "assumptions": [
+    "Static crystal structure adequately represents the bound complex",
+    "5.0 A cutoff captures relevant interface residues",
+    "4.0 A cutoff identifies meaningful atomic contacts",
+    "Simplified LJ and Coulomb potentials capture qualitative trends",
+    "SKEMPI v2 ddG values computed at standard temperature (298.15 K)"
+  ],
+  "invariants": [
+    "Interface residues must have at least one heavy atom within 5 A of partner",
+    "Contacts classified by atom type and distance criteria",
+    "ddG = RT*ln(Kd_mut/Kd_wt) with positive = destabilizing"
+  ],
+  "non_negotiable_steps": [
+    "PDB parsing and coordinate extraction",
+    "Full pairwise distance matrix computation",
+    "Contact classification (H-bond, salt bridge, hydrophobic)",
+    "SKEMPI filtering for 1BRS single mutations",
+    "ddG computation from experimental Kd values",
+    "Statistical correlation analysis"
+  ],
+  "deviations_from_full_HADDOCK": [
+    "No flexible refinement stage",
+    "No explicit water molecules",
+    "Simplified force field (not OPLS)",
+    "No AIR-driven docking (analysis of existing structure only)",
+    "Approximate BSA calculation"
+  ]
+}

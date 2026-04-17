@@ -1,0 +1,36 @@
+{
+  "task_name": "DIDS-MFL: Disentangled Dynamic Intrusion Detection",
+  "scientific_objective": "Address inconsistent performance and poor detection capability of existing NIDS across different attack types, especially for unknown and few-shot attacks",
+  "methodological_commitments": [
+    {
+      "component": "Statistical Disentanglement",
+      "description": "Non-parameterized optimization based on mutual information to differentiate flow features",
+      "status": "partially_implemented"
+    },
+    {
+      "component": "Representational Disentanglement",
+      "description": "Memory model to generate attack-specific representations",
+      "status": "partially_implemented"
+    },
+    {
+      "component": "Dynamic Graph Diffusion",
+      "description": "Spatiotemporal aggregation for evolving data streams",
+      "status": "implemented_in_code"
+    },
+    {
+      "component": "Multi-scale Representation Fusion",
+      "description": "Enhanced few-shot learning via multi-scale features",
+      "status": "implemented_in_code"
+    }
+  ],
+  "target_outputs": [
+    "Binary classification results (benign vs attack)",
+    "Multi-class classification results (specific attack types)",
+    "Few-shot learning evaluation",
+    "Unknown attack detection evaluation",
+    "Comparison with baselines",
+    "Disentanglement quality analysis"
+  ],
+  "dataset": "NF-UNSW-NB15-v2_3d.pt",
+  "evaluation_metrics": ["accuracy", "precision", "recall", "f1_score", "roc_auc"]
+}

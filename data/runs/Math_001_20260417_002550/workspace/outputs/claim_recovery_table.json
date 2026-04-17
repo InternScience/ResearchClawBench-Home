@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "claim": "VOS framework unifies Nesterov and ADMM from continuous-time ODE",
+      "evidence": "Both derived from X'' + gamma(t)*X' + grad_f(X) = 0 via variable/operator splitting",
+      "artifact": "code/vos_framework.py, report/report.md Section 2",
+      "status": "verified"
+    },
+    {
+      "claim": "Nesterov achieves O(1/k^2) convergence for convex objectives",
+      "evidence": "Convergence curves in fig1_convergence_comparison.png match theoretical rate",
+      "artifact": "report/images/fig1_convergence_comparison.png, outputs/convergence_histories.npy",
+      "status": "verified"
+    },
+    {
+      "claim": "Linear convergence for strongly convex objectives via Lyapunov",
+      "evidence": "Lyapunov decay on quadratic problem (kappa=37.6) matches theoretical rate",
+      "artifact": "report/images/fig2_lyapunov_decay.png, outputs/lyapunov_data.npy",
+      "status": "verified"
+    },
+    {
+      "claim": "sqrt(kappa) improvement of NAG over GD",
+      "evidence": "GD rate ~0.899/iter vs NAG rate ~0.536/iter on quadratic (kappa=37.6)",
+      "artifact": "report/images/fig2_lyapunov_decay.png",
+      "status": "verified"
+    },
+    {
+      "claim": "Phase transition at r=3 in damping constant",
+      "evidence": "Theoretical from Su et al. (2015), verified via ODE integration",
+      "artifact": "report/images/fig4_ode_trajectories.png, report/images/fig8_ode_dynamics.png",
+      "status": "verified_from_literature"
+    },
+    {
+      "claim": "ADMM converges on Lasso problem",
+      "evidence": "Final objective 311.117, recovery error 2.792",
+      "artifact": "outputs/algorithm_comparison.json",
+      "status": "verified"
+    },
+    {
+      "claim": "Optimal lambda selection improves recovery",
+      "evidence": "lambda/lambda_max=0.01 gives error 0.318 vs 2.792 at 0.1",
+      "artifact": "report/images/fig6_regularization_effect.png, outputs/lambda_sweep.npy",
+      "status": "verified"
+    },
+    {
+      "claim": "VOS-ADMM with naive acceleration converges",
+      "evidence": "VOS-ADMM did not converge well (obj=432.4 vs optimal 311.1)",
+      "artifact": "outputs/algorithm_comparison.json",
+      "status": "partially_failed - noted as limitation"
+    }
+  ]
+}

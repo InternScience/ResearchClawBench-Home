@@ -1,0 +1,110 @@
+{
+  "Base Case": {
+    "total_cost": 35814545457.83346,
+    "curtailment_rate": 45.851945600344905,
+    "load_shed_pct": 74.74607874575631,
+    "total_demand_mwh": 15939706.029762117,
+    "generation_mwh": {
+      "onshore wind": 2270244.903141869,
+      "gas": 1351955.90577219,
+      "nuclear": 403200.0,
+      "load_shedding": 11914305.220848057
+    },
+    "cost_by_carrier": {
+      "onshore wind": 0.0,
+      "gas": 67597795.28860953,
+      "nuclear": 4032000.0,
+      "load_shedding": 35742915662.54417
+    }
+  },
+  "High Wind": {
+    "total_cost": 35238873418.05546,
+    "curtailment_rate": 60.25738500265747,
+    "load_shed_pct": 73.54222542771055,
+    "total_demand_mwh": 15939706.029762117,
+    "generation_mwh": {
+      "onshore wind": 2462135.5830679005,
+      "gas": 1351955.90577219,
+      "nuclear": 403200.0,
+      "load_shedding": 11722414.540922027
+    },
+    "cost_by_carrier": {
+      "onshore wind": 0.0,
+      "gas": 67597795.28860953,
+      "nuclear": 4032000.0,
+      "load_shedding": 35167243622.76608
+    }
+  },
+  "Low Wind": {
+    "total_cost": 36392513647.633644,
+    "curtailment_rate": 4.62280001581019,
+    "load_shed_pct": 75.9504949071389,
+    "total_demand_mwh": 15939706.029762117,
+    "generation_mwh": {
+      "onshore wind": 1999421.8124800152,
+      "gas": 1381265.0542762592,
+      "nuclear": 459354.5877005992,
+      "load_shedding": 12106285.61634739
+    },
+    "cost_by_carrier": {
+      "onshore wind": 0.0,
+      "gas": 69063252.71381299,
+      "nuclear": 4593545.877005992,
+      "load_shedding": 36318856849.04217
+    }
+  },
+  "No Storage": {
+    "total_cost": 35814545457.83343,
+    "curtailment_rate": 45.851945600344905,
+    "load_shed_pct": 74.74607874575631,
+    "total_demand_mwh": 15939706.029762117,
+    "generation_mwh": {
+      "onshore wind": 2270244.903141869,
+      "gas": 1351955.90577219,
+      "nuclear": 403200.0,
+      "load_shedding": 11914305.220848057
+    },
+    "cost_by_carrier": {
+      "onshore wind": 0.0,
+      "gas": 67597795.28860953,
+      "nuclear": 4032000.0,
+      "load_shedding": 35742915662.544174
+    }
+  },
+  "Constrained Transmission": {
+    "total_cost": 37704545457.83325,
+    "curtailment_rate": 60.868868146384635,
+    "load_shed_pct": 78.6984728415049,
+    "total_demand_mwh": 15939706.029762117,
+    "generation_mwh": {
+      "onshore wind": 1640636.0972668412,
+      "gas": 1351955.90577219,
+      "nuclear": 403200.0,
+      "load_shedding": 12544305.220848057
+    },
+    "cost_by_carrier": {
+      "onshore wind": 0.0,
+      "gas": 67597795.28860953,
+      "nuclear": 4032000.0,
+      "load_shedding": 37632915662.544174
+    }
+  },
+  "Enhanced Transmission": {
+    "total_cost": 32034790307.975292,
+    "curtailment_rate": 16.03177019154249,
+    "load_shed_pct": 66.84129055425913,
+    "total_demand_mwh": 15939706.029762117,
+    "generation_mwh": {
+      "onshore wind": 3520504.067265436,
+      "gas": 1354932.691013154,
+      "nuclear": 412801.0879714696,
+      "load_shedding": 10654305.220848057
+    },
+    "cost_by_carrier": {
+      "onshore wind": 0.0,
+      "gas": 67746634.55065773,
+      "nuclear": 4128010.8797146957,
+      "load_shedding": 31962915662.544174
+    }
+  }
+}

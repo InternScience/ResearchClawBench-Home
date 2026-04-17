@@ -1,0 +1,25 @@
+{
+  "task": "Reconcile diverse observational methods for global glacial mass change assessment 2000-2023",
+  "named_methods": [
+    "glaciological measurements",
+    "DEM differencing",
+    "satellite altimetry",
+    "gravimetry",
+    "hybrid/combined methods"
+  ],
+  "reconciliation_approach": "GlaMBIE consensus combination of method-group estimates per region",
+  "output_variables": {
+    "specific_mass_change": "m w.e.",
+    "total_mass_change": "Gt",
+    "uncertainties": "propagated from individual method uncertainties"
+  },
+  "temporal_resolution": "annual",
+  "spatial_resolution": "19 GTN-G glacial regions + global",
+  "period": "2000-2023",
+  "key_comparisons": [
+    "inter-method agreement per region",
+    "regional contributions to global total",
+    "decadal acceleration",
+    "sea level equivalent contribution"
+  ]
+}

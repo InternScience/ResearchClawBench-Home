@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "Baseline (all anchors, all methods)",
+    "H0": 113.85,
+    "H0_err": 2.94,
+    "M_B": -19.4838,
+    "chi2": 182.22,
+    "dof": 19
+  },
+  {
+    "variant": "N4258 anchor only",
+    "H0": 119.52,
+    "H0_err": 3.46,
+    "M_B": -19.3773,
+    "chi2": 141.89,
+    "dof": 17
+  },
+  {
+    "variant": "LMC anchor only (Cepheids)",
+    "H0": 95.26,
+    "H0_err": 4.11,
+    "M_B": -19.8549,
+    "chi2": 67.62,
+    "dof": 5
+  },
+  {
+    "variant": "Cepheids only (both anchors)",
+    "H0": 110.41,
+    "H0_err": 3.09,
+    "M_B": -19.5488,
+    "chi2": 161.13,
+    "dof": 14
+  },
+  {
+    "variant": "TRGB only (N4258)",
+    "H0": 126.6,
+    "H0_err": 4.96,
+    "M_B": -19.2515,
+    "chi2": 50.17,
+    "dof": 12
+  },
+  {
+    "variant": "SN Ia Hubble flow only",
+    "H0": 112.43,
+    "H0_err": 2.94,
+    "M_B": -19.495,
+    "chi2": 171.94,
+    "dof": 14
+  },
+  {
+    "variant": "SBF Hubble flow only",
+    "H0": 142.58,
+    "H0_err": 10.75,
+    "M_B": -19.4945,
+    "chi2": 142.54,
+    "dof": 14
+  },
+  {
+    "variant": "N4258 + Cepheids only",
+    "H0": 116.07,
+    "H0_err": 3.8,
+    "M_B": -19.4387,
+    "chi2": 124.99,
+    "dof": 12
+  },
+  {
+    "variant": "N4258 + TRGB only",
+    "H0": 126.6,
+    "H0_err": 4.96,
+    "M_B": -19.2515,
+    "chi2": 50.17,
+    "dof": 12
+  }
+]

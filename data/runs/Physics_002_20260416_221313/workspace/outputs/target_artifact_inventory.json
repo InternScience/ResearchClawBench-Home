@@ -1,0 +1,62 @@
+{
+  "required_artifacts": {
+    "per_instance_fidelities": {
+      "status": "Y",
+      "file": "outputs/xeb_results.json",
+      "description": "F_XEB with bootstrap uncertainty for each (N, d, r) configuration"
+    },
+    "aggregated_statistics": {
+      "status": "Y",
+      "file": "outputs/xeb_aggregated.json",
+      "description": "Mean and std F_XEB across instances for each (N, d)"
+    },
+    "summary_table": {
+      "status": "Y",
+      "file": "outputs/summary_table.md",
+      "description": "Markdown table of all (N, d) configurations"
+    },
+    "fidelity_vs_depth_plots": {
+      "status": "Y",
+      "files": [
+        "report/images/fidelity_vs_depth_combined.png",
+        "report/images/fidelity_vs_depth_N16.png",
+        "report/images/fidelity_vs_depth_N24.png",
+        "report/images/fidelity_vs_depth_N32.png",
+        "report/images/fidelity_vs_depth_N40.png"
+      ],
+      "description": "Fidelity vs circuit depth for fixed N"
+    },
+    "fidelity_vs_N_plots": {
+      "status": "Y",
+      "files": [
+        "report/images/fidelity_vs_N_combined.png",
+        "report/images/fidelity_vs_N_d8.png",
+        "report/images/fidelity_vs_N_d10.png",
+        "report/images/fidelity_vs_N_d12.png",
+        "report/images/fidelity_vs_N_d14.png",
+        "report/images/fidelity_vs_N_d16.png",
+        "report/images/fidelity_vs_N_d18.png",
+        "report/images/fidelity_vs_N_d20.png"
+      ],
+      "description": "Fidelity vs qubit count for fixed d"
+    },
+    "exponential_decay_analysis": {
+      "status": "Y",
+      "file": "report/images/exponential_decay_fit.png",
+      "description": "Exponential fit to fidelity decay with depth"
+    },
+    "instance_distribution_plot": {
+      "status": "Y",
+      "file": "report/images/fidelity_distribution.png",
+      "description": "Distribution of fidelities across instances"
+    },
+    "research_report": {
+      "status": "Y",
+      "file": "report/report.md",
+      "description": "Comprehensive research report with methodology, results, and discussion"
+    }
+  },
+  "total_instances_processed": 550,
+  "configurations_covered": 10,
+  "all_artifacts_complete": true
+}

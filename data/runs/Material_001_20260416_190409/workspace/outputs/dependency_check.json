@@ -1,0 +1,48 @@
+{
+  "required_dependencies": [
+    {
+      "package": "numpy",
+      "purpose": "Numerical computations and array operations",
+      "status": "to_verify"
+    },
+    {
+      "package": "pandas",
+      "purpose": "Data manipulation and analysis",
+      "status": "to_verify"
+    },
+    {
+      "package": "matplotlib",
+      "purpose": "Data visualization",
+      "status": "to_verify"
+    },
+    {
+      "package": "seaborn",
+      "purpose": "Statistical visualization",
+      "status": "to_verify"
+    },
+    {
+      "package": "scikit-learn",
+      "purpose": "Machine learning models for property prediction",
+      "status": "to_verify"
+    }
+  ],
+  "optional_dependencies": [
+    {
+      "package": "torch",
+      "purpose": "Deep learning for structure generation (if needed)",
+      "status": "to_verify"
+    },
+    {
+      "package": "tensorflow",
+      "purpose": "Alternative deep learning framework",
+      "status": "to_verify"
+    }
+  ],
+  "capability_notes": [
+    "Dataset is designed for rapid validation of core AI workflows",
+    "Supports code prototyping and fundamental algorithm testing",
+    "Property prediction uses feature vectors and target values",
+    "Structure generation uses lattice parameter data",
+    "Optimization uses synthesis condition parameters"
+  ]
+}

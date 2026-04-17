@@ -1,0 +1,34 @@
+{
+  "task": "Local Distance Network Hubble Constant Measurement",
+  "goal": "Achieve ~1% precision measurement of H0 using covariance-weighted combination of multiple distance indicators",
+  "methodology": {
+    "framework": "Generalized Least Squares Distance Network",
+    "distance_ladder_rungs": [
+      "Geometric anchors (MW parallaxes, LMC DEBs, NGC4258 masers)",
+      "Primary indicators (Cepheids, TRGB) measuring host galaxy distances",
+      "Secondary indicators (SN Ia, SBF) calibrated in hosts",
+      "Hubble flow observations (z > 0.02) for H0 determination"
+    ],
+    "key_equations": {
+      "distance_modulus": "mu = m - M = 5*log10(cz/H0) + 25",
+      "H0_from_SN": "H0 = cz / 10^((m_B - M_B - 25)/5)",
+      "weighted_mean": "x_wavg = sum(w_i * x_i) / sum(w_i), where w_i = 1/sigma_i^2"
+    },
+    "uncertainty_treatment": {
+      "statistical": "Inverse-variance weighting",
+      "systematic": "Method-anchor calibration errors added in quadrature",
+      "peculiar_velocity": "pv_err converted to magnitude error: sigma_mu = 2.17 * pv_err / (c * z)",
+      "intrinsic_scatter": "SN Ia intrinsic scatter ~0.10 mag"
+    }
+  },
+  "target_outputs": {
+    "primary": "Consensus H0 value with total uncertainty",
+    "variants": ["Cepheids-only", "TRGB-only", "No PV correction"],
+    "comparison": "Tension significance with Planck CMB constraint"
+  },
+  "baseline_expectation": {
+    "H0": "73.50 km/s/Mpc",
+    "uncertainty": "0.81 km/s/Mpc (~1.1%)",
+    "tension_with_planck": "~5 sigma"
+  }
+}

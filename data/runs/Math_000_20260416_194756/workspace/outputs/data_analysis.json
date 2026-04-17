@@ -1,0 +1,816 @@
+{
+  "num_frames": 100,
+  "total_objects": 200,
+  "avg_detections_per_frame": 158.2,
+  "avg_detection_rate": 0.7909999999999999,
+  "avg_detection_score": 0.2656887615315739,
+  "detection_score_std": 0.13003822060107847,
+  "min_detection_score": 0.1000063986904101,
+  "max_detection_score": 0.9,
+  "frame_stats": [
+    {
+      "frame": 0,
+      "num_gt": 200,
+      "num_detections": 153,
+      "detection_rate": 0.765,
+      "avg_score": 0.26173669469390193,
+      "occluded_count": 100
+    },
+    {
+      "frame": 1,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.26353680589877054,
+      "occluded_count": 94
+    },
+    {
+      "frame": 2,
+      "num_gt": 200,
+      "num_detections": 163,
+      "detection_rate": 0.815,
+      "avg_score": 0.2586983717640941,
+      "occluded_count": 109
+    },
+    {
+      "frame": 3,
+      "num_gt": 200,
+      "num_detections": 164,
+      "detection_rate": 0.82,
+      "avg_score": 0.2586280331923055,
+      "occluded_count": 112
+    },
+    {
+      "frame": 4,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.2554847911240969,
+      "occluded_count": 109
+    },
+    {
+      "frame": 5,
+      "num_gt": 200,
+      "num_detections": 167,
+      "detection_rate": 0.835,
+      "avg_score": 0.2450441652580459,
+      "occluded_count": 115
+    },
+    {
+      "frame": 6,
+      "num_gt": 200,
+      "num_detections": 154,
+      "detection_rate": 0.77,
+      "avg_score": 0.2696385320203883,
+      "occluded_count": 98
+    },
+    {
+      "frame": 7,
+      "num_gt": 200,
+      "num_detections": 170,
+      "detection_rate": 0.85,
+      "avg_score": 0.25430194617050256,
+      "occluded_count": 117
+    },
+    {
+      "frame": 8,
+      "num_gt": 200,
+      "num_detections": 168,
+      "detection_rate": 0.84,
+      "avg_score": 0.25530344178031905,
+      "occluded_count": 114
+    },
+    {
+      "frame": 9,
+      "num_gt": 200,
+      "num_detections": 154,
+      "detection_rate": 0.77,
+      "avg_score": 0.26151446951624485,
+      "occluded_count": 99
+    },
+    {
+      "frame": 10,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.2581451725525655,
+      "occluded_count": 106
+    },
+    {
+      "frame": 11,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.25332581527468434,
+      "occluded_count": 112
+    },
+    {
+      "frame": 12,
+      "num_gt": 200,
+      "num_detections": 159,
+      "detection_rate": 0.795,
+      "avg_score": 0.26557282133856114,
+      "occluded_count": 101
+    },
+    {
+      "frame": 13,
+      "num_gt": 200,
+      "num_detections": 152,
+      "detection_rate": 0.76,
+      "avg_score": 0.2586700154845723,
+      "occluded_count": 103
+    },
+    {
+      "frame": 14,
+      "num_gt": 200,
+      "num_detections": 154,
+      "detection_rate": 0.77,
+      "avg_score": 0.28543429387000935,
+      "occluded_count": 84
+    },
+    {
+      "frame": 15,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.2641152958788404,
+      "occluded_count": 98
+    },
+    {
+      "frame": 16,
+      "num_gt": 200,
+      "num_detections": 159,
+      "detection_rate": 0.795,
+      "avg_score": 0.2520287720386971,
+      "occluded_count": 110
+    },
+    {
+      "frame": 17,
+      "num_gt": 200,
+      "num_detections": 157,
+      "detection_rate": 0.785,
+      "avg_score": 0.2505441677115726,
+      "occluded_count": 107
+    },
+    {
+      "frame": 18,
+      "num_gt": 200,
+      "num_detections": 160,
+      "detection_rate": 0.8,
+      "avg_score": 0.27112091109678504,
+      "occluded_count": 100
+    },
+    {
+      "frame": 19,
+      "num_gt": 200,
+      "num_detections": 159,
+      "detection_rate": 0.795,
+      "avg_score": 0.25067116172741977,
+      "occluded_count": 111
+    },
+    {
+      "frame": 20,
+      "num_gt": 200,
+      "num_detections": 165,
+      "detection_rate": 0.825,
+      "avg_score": 0.2691865664433578,
+      "occluded_count": 97
+    },
+    {
+      "frame": 21,
+      "num_gt": 200,
+      "num_detections": 157,
+      "detection_rate": 0.785,
+      "avg_score": 0.2675279869964064,
+      "occluded_count": 97
+    },
+    {
+      "frame": 22,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.25291653397645825,
+      "occluded_count": 109
+    },
+    {
+      "frame": 23,
+      "num_gt": 200,
+      "num_detections": 168,
+      "detection_rate": 0.84,
+      "avg_score": 0.2510128467264476,
+      "occluded_count": 121
+    },
+    {
+      "frame": 24,
+      "num_gt": 200,
+      "num_detections": 156,
+      "detection_rate": 0.78,
+      "avg_score": 0.273280892075132,
+      "occluded_count": 94
+    },
+    {
+      "frame": 25,
+      "num_gt": 200,
+      "num_detections": 160,
+      "detection_rate": 0.8,
+      "avg_score": 0.25523529135197515,
+      "occluded_count": 103
+    },
+    {
+      "frame": 26,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.26066058414623366,
+      "occluded_count": 107
+    },
+    {
+      "frame": 27,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.2560060622407029,
+      "occluded_count": 107
+    },
+    {
+      "frame": 28,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.2516773615028066,
+      "occluded_count": 109
+    },
+    {
+      "frame": 29,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.2780133796787674,
+      "occluded_count": 88
+    },
+    {
+      "frame": 30,
+      "num_gt": 200,
+      "num_detections": 151,
+      "detection_rate": 0.755,
+      "avg_score": 0.2656721050703907,
+      "occluded_count": 101
+    },
+    {
+      "frame": 31,
+      "num_gt": 200,
+      "num_detections": 150,
+      "detection_rate": 0.75,
+      "avg_score": 0.2709680627287535,
+      "occluded_count": 93
+    },
+    {
+      "frame": 32,
+      "num_gt": 200,
+      "num_detections": 151,
+      "detection_rate": 0.755,
+      "avg_score": 0.271893064844329,
+      "occluded_count": 95
+    },
+    {
+      "frame": 33,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.2609151404988478,
+      "occluded_count": 104
+    },
+    {
+      "frame": 34,
+      "num_gt": 200,
+      "num_detections": 162,
+      "detection_rate": 0.81,
+      "avg_score": 0.2694824634321069,
+      "occluded_count": 97
+    },
+    {
+      "frame": 35,
+      "num_gt": 200,
+      "num_detections": 159,
+      "detection_rate": 0.795,
+      "avg_score": 0.2646933826707536,
+      "occluded_count": 102
+    },
+    {
+      "frame": 36,
+      "num_gt": 200,
+      "num_detections": 156,
+      "detection_rate": 0.78,
+      "avg_score": 0.25909475208161165,
+      "occluded_count": 101
+    },
+    {
+      "frame": 37,
+      "num_gt": 200,
+      "num_detections": 165,
+      "detection_rate": 0.825,
+      "avg_score": 0.25492247108071164,
+      "occluded_count": 109
+    },
+    {
+      "frame": 38,
+      "num_gt": 200,
+      "num_detections": 164,
+      "detection_rate": 0.82,
+      "avg_score": 0.27544482366320555,
+      "occluded_count": 110
+    },
+    {
+      "frame": 39,
+      "num_gt": 200,
+      "num_detections": 157,
+      "detection_rate": 0.785,
+      "avg_score": 0.2667069468742683,
+      "occluded_count": 100
+    },
+    {
+      "frame": 40,
+      "num_gt": 200,
+      "num_detections": 157,
+      "detection_rate": 0.785,
+      "avg_score": 0.2651882191632859,
+      "occluded_count": 107
+    },
+    {
+      "frame": 41,
+      "num_gt": 200,
+      "num_detections": 151,
+      "detection_rate": 0.755,
+      "avg_score": 0.27085999596730176,
+      "occluded_count": 98
+    },
+    {
+      "frame": 42,
+      "num_gt": 200,
+      "num_detections": 160,
+      "detection_rate": 0.8,
+      "avg_score": 0.2624514733572073,
+      "occluded_count": 109
+    },
+    {
+      "frame": 43,
+      "num_gt": 200,
+      "num_detections": 154,
+      "detection_rate": 0.77,
+      "avg_score": 0.26337285679329453,
+      "occluded_count": 101
+    },
+    {
+      "frame": 44,
+      "num_gt": 200,
+      "num_detections": 166,
+      "detection_rate": 0.83,
+      "avg_score": 0.2558630887536285,
+      "occluded_count": 118
+    },
+    {
+      "frame": 45,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.2650385628637914,
+      "occluded_count": 107
+    },
+    {
+      "frame": 46,
+      "num_gt": 200,
+      "num_detections": 150,
+      "detection_rate": 0.75,
+      "avg_score": 0.2708053804217219,
+      "occluded_count": 95
+    },
+    {
+      "frame": 47,
+      "num_gt": 200,
+      "num_detections": 162,
+      "detection_rate": 0.81,
+      "avg_score": 0.2628795181210477,
+      "occluded_count": 106
+    },
+    {
+      "frame": 48,
+      "num_gt": 200,
+      "num_detections": 167,
+      "detection_rate": 0.835,
+      "avg_score": 0.27727367798334224,
+      "occluded_count": 105
+    },
+    {
+      "frame": 49,
+      "num_gt": 200,
+      "num_detections": 163,
+      "detection_rate": 0.815,
+      "avg_score": 0.27182675003907103,
+      "occluded_count": 101
+    },
+    {
+      "frame": 50,
+      "num_gt": 200,
+      "num_detections": 165,
+      "detection_rate": 0.825,
+      "avg_score": 0.26470089622178067,
+      "occluded_count": 113
+    },
+    {
+      "frame": 51,
+      "num_gt": 200,
+      "num_detections": 157,
+      "detection_rate": 0.785,
+      "avg_score": 0.26470187848851545,
+      "occluded_count": 106
+    },
+    {
+      "frame": 52,
+      "num_gt": 200,
+      "num_detections": 157,
+      "detection_rate": 0.785,
+      "avg_score": 0.2632006958921666,
+      "occluded_count": 102
+    },
+    {
+      "frame": 53,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.27827543489948153,
+      "occluded_count": 96
+    },
+    {
+      "frame": 54,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.26635343740558587,
+      "occluded_count": 101
+    },
+    {
+      "frame": 55,
+      "num_gt": 200,
+      "num_detections": 154,
+      "detection_rate": 0.77,
+      "avg_score": 0.26665717709770326,
+      "occluded_count": 106
+    },
+    {
+      "frame": 56,
+      "num_gt": 200,
+      "num_detections": 151,
+      "detection_rate": 0.755,
+      "avg_score": 0.2672119709949528,
+      "occluded_count": 100
+    },
+    {
+      "frame": 57,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.25755662978299976,
+      "occluded_count": 113
+    },
+    {
+      "frame": 58,
+      "num_gt": 200,
+      "num_detections": 151,
+      "detection_rate": 0.755,
+      "avg_score": 0.27188719848235565,
+      "occluded_count": 97
+    },
+    {
+      "frame": 59,
+      "num_gt": 200,
+      "num_detections": 169,
+      "detection_rate": 0.845,
+      "avg_score": 0.26503197703087594,
+      "occluded_count": 111
+    },
+    {
+      "frame": 60,
+      "num_gt": 200,
+      "num_detections": 159,
+      "detection_rate": 0.795,
+      "avg_score": 0.27184228207026867,
+      "occluded_count": 97
+    },
+    {
+      "frame": 61,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.2634872169431794,
+      "occluded_count": 106
+    },
+    {
+      "frame": 62,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.27940795834069204,
+      "occluded_count": 97
+    },
+    {
+      "frame": 63,
+      "num_gt": 200,
+      "num_detections": 156,
+      "detection_rate": 0.78,
+      "avg_score": 0.25603564537275275,
+      "occluded_count": 108
+    },
+    {
+      "frame": 64,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.2700408134289385,
+      "occluded_count": 98
+    },
+    {
+      "frame": 65,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.27582203883402384,
+      "occluded_count": 86
+    },
+    {
+      "frame": 66,
+      "num_gt": 200,
+      "num_detections": 159,
+      "detection_rate": 0.795,
+      "avg_score": 0.26624506515202845,
+      "occluded_count": 109
+    },
+    {
+      "frame": 67,
+      "num_gt": 200,
+      "num_detections": 153,
+      "detection_rate": 0.765,
+      "avg_score": 0.27561012704097937,
+      "occluded_count": 95
+    },
+    {
+      "frame": 68,
+      "num_gt": 200,
+      "num_detections": 152,
+      "detection_rate": 0.76,
+      "avg_score": 0.2764523553238897,
+      "occluded_count": 92
+    },
+    {
+      "frame": 69,
+      "num_gt": 200,
+      "num_detections": 152,
+      "detection_rate": 0.76,
+      "avg_score": 0.2672455180488939,
+      "occluded_count": 103
+    },
+    {
+      "frame": 70,
+      "num_gt": 200,
+      "num_detections": 166,
+      "detection_rate": 0.83,
+      "avg_score": 0.29165199941105335,
+      "occluded_count": 90
+    },
+    {
+      "frame": 71,
+      "num_gt": 200,
+      "num_detections": 151,
+      "detection_rate": 0.755,
+      "avg_score": 0.280717238548091,
+      "occluded_count": 90
+    },
+    {
+      "frame": 72,
+      "num_gt": 200,
+      "num_detections": 157,
+      "detection_rate": 0.785,
+      "avg_score": 0.271804308643283,
+      "occluded_count": 100
+    },
+    {
+      "frame": 73,
+      "num_gt": 200,
+      "num_detections": 150,
+      "detection_rate": 0.75,
+      "avg_score": 0.26876846017156564,
+      "occluded_count": 93
+    },
+    {
+      "frame": 74,
+      "num_gt": 200,
+      "num_detections": 162,
+      "detection_rate": 0.81,
+      "avg_score": 0.2736906946058992,
+      "occluded_count": 99
+    },
+    {
+      "frame": 75,
+      "num_gt": 200,
+      "num_detections": 153,
+      "detection_rate": 0.765,
+      "avg_score": 0.26479831104073925,
+      "occluded_count": 94
+    },
+    {
+      "frame": 76,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.2685210036649957,
+      "occluded_count": 109
+    },
+    {
+      "frame": 77,
+      "num_gt": 200,
+      "num_detections": 160,
+      "detection_rate": 0.8,
+      "avg_score": 0.2712105434585671,
+      "occluded_count": 112
+    },
+    {
+      "frame": 78,
+      "num_gt": 200,
+      "num_detections": 159,
+      "detection_rate": 0.795,
+      "avg_score": 0.26671944896957256,
+      "occluded_count": 103
+    },
+    {
+      "frame": 79,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.2527250250857204,
+      "occluded_count": 106
+    },
+    {
+      "frame": 80,
+      "num_gt": 200,
+      "num_detections": 142,
+      "detection_rate": 0.71,
+      "avg_score": 0.2680441888409429,
+      "occluded_count": 95
+    },
+    {
+      "frame": 81,
+      "num_gt": 200,
+      "num_detections": 160,
+      "detection_rate": 0.8,
+      "avg_score": 0.26342479032493493,
+      "occluded_count": 108
+    },
+    {
+      "frame": 82,
+      "num_gt": 200,
+      "num_detections": 168,
+      "detection_rate": 0.84,
+      "avg_score": 0.2642546819496157,
+      "occluded_count": 113
+    },
+    {
+      "frame": 83,
+      "num_gt": 200,
+      "num_detections": 160,
+      "detection_rate": 0.8,
+      "avg_score": 0.25872187394491564,
+      "occluded_count": 109
+    },
+    {
+      "frame": 84,
+      "num_gt": 200,
+      "num_detections": 164,
+      "detection_rate": 0.82,
+      "avg_score": 0.25465732434775445,
+      "occluded_count": 108
+    },
+    {
+      "frame": 85,
+      "num_gt": 200,
+      "num_detections": 170,
+      "detection_rate": 0.85,
+      "avg_score": 0.26963321464182827,
+      "occluded_count": 105
+    },
+    {
+      "frame": 86,
+      "num_gt": 200,
+      "num_detections": 156,
+      "detection_rate": 0.78,
+      "avg_score": 0.2900301506388992,
+      "occluded_count": 78
+    },
+    {
+      "frame": 87,
+      "num_gt": 200,
+      "num_detections": 164,
+      "detection_rate": 0.82,
+      "avg_score": 0.2848195108217296,
+      "occluded_count": 103
+    },
+    {
+      "frame": 88,
+      "num_gt": 200,
+      "num_detections": 150,
+      "detection_rate": 0.75,
+      "avg_score": 0.2626993975729145,
+      "occluded_count": 104
+    },
+    {
+      "frame": 89,
+      "num_gt": 200,
+      "num_detections": 169,
+      "detection_rate": 0.845,
+      "avg_score": 0.2759632762583588,
+      "occluded_count": 109
+    },
+    {
+      "frame": 90,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.28524900826960425,
+      "occluded_count": 105
+    },
+    {
+      "frame": 91,
+      "num_gt": 200,
+      "num_detections": 158,
+      "detection_rate": 0.79,
+      "avg_score": 0.27886515758942415,
+      "occluded_count": 100
+    },
+    {
+      "frame": 92,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.26603838822514186,
+      "occluded_count": 106
+    },
+    {
+      "frame": 93,
+      "num_gt": 200,
+      "num_detections": 156,
+      "detection_rate": 0.78,
+      "avg_score": 0.2665563878758323,
+      "occluded_count": 104
+    },
+    {
+      "frame": 94,
+      "num_gt": 200,
+      "num_detections": 154,
+      "detection_rate": 0.77,
+      "avg_score": 0.2662372133339299,
+      "occluded_count": 106
+    },
+    {
+      "frame": 95,
+      "num_gt": 200,
+      "num_detections": 155,
+      "detection_rate": 0.775,
+      "avg_score": 0.25993269778217,
+      "occluded_count": 100
+    },
+    {
+      "frame": 96,
+      "num_gt": 200,
+      "num_detections": 152,
+      "detection_rate": 0.76,
+      "avg_score": 0.264447935655997,
+      "occluded_count": 96
+    },
+    {
+      "frame": 97,
+      "num_gt": 200,
+      "num_detections": 148,
+      "detection_rate": 0.74,
+      "avg_score": 0.25298879840130495,
+      "occluded_count": 98
+    },
+    {
+      "frame": 98,
+      "num_gt": 200,
+      "num_detections": 156,
+      "detection_rate": 0.78,
+      "avg_score": 0.2704420090566014,
+      "occluded_count": 92
+    },
+    {
+      "frame": 99,
+      "num_gt": 200,
+      "num_detections": 161,
+      "detection_rate": 0.805,
+      "avg_score": 0.25723937457791807,
+      "occluded_count": 106
+    }
+  ],
+  "occlusion_stats": {
+    "avg_occluded_per_frame": 102.67,
+    "total_occluded_detections": 10267
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "task_name": "AI-Guided Inverse Design for Recyclable Vitrimeric Polymers",
+  "methodological_commitments": {
+    "molecular_dynamics": {
+      "role": "Provide initial Tg predictions from MD simulations",
+      "input": "Molecular SMILES structures",
+      "output": "MD-simulated Tg values with uncertainty estimates"
+    },
+    "gaussian_process_calibration": {
+      "role": "Calibrate MD predictions to experimental Tg values",
+      "input": "MD Tg predictions, molecular fingerprints",
+      "output": "Calibrated Tg predictions with uncertainty quantification",
+      "metrics": ["RMSE", "R²", "calibration_error"]
+    },
+    "graph_variational_autoencoder": {
+      "role": "Generate novel vitrimer chemistries targeting desired Tg",
+      "input": "Training data (vitrimer SMILES), target Tg conditions",
+      "output": "Generated molecular SMILES with predicted properties",
+      "requirements": ["valid_SMILES_generation", "latent_space_continuity", "conditional_generation"]
+    }
+  },
+  "target_quantities": {
+    "primary": "glass_transition_temperature_Tg_Kelvin",
+    "target_ranges": ["300-350K", "350-400K", "400-450K"],
+    "validation_metrics": ["RMSE", "R²", "MAE", "uncertainty_coverage"]
+  },
+  "required_artifacts": [
+    "gp_calibration_model",
+    "gvae_generator",
+    "generated_candidates",
+    "validation_results"
+  ],
+  "comparison_structure": {
+    "baseline": "raw_MD_predictions",
+    "calibrated": "GP_calibrated_predictions",
+    "generated": "GVAE_designed_candidates"
+  }
+}

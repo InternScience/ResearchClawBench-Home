@@ -1,0 +1,39 @@
+{
+  "claims": [
+    {
+      "claim": "MARL-LNS achieves 100% success rate on empty maps",
+      "evidence": "outputs/summary_results.json: empty.MARL_LNS.success_rate = 100.0",
+      "verified": true
+    },
+    {
+      "claim": "MARL-LNS achieves 100% success rate on random-large maps",
+      "evidence": "outputs/summary_results.json: random_large.MARL_LNS.success_rate = 100.0",
+      "verified": true
+    },
+    {
+      "claim": "MARL-LNS achieves lowest collision count on maze maps",
+      "evidence": "outputs/summary_results.json: maze.MARL_LNS.avg_collisions = 2.6 vs LNS2=4.0, PP=5.2",
+      "verified": true
+    },
+    {
+      "claim": "Pure MARL performs worst across all map types",
+      "evidence": "outputs/summary_results.json: Pure_MARL consistently has highest collision counts",
+      "verified": true
+    },
+    {
+      "claim": "Switching threshold 0.3-0.7 provides robust performance",
+      "evidence": "outputs/ablation_results.json: Multiple map types show good performance in this range",
+      "verified": true
+    },
+    {
+      "claim": "MARL-LNS maintains advantage up to 12 agents on random-medium",
+      "evidence": "outputs/scaling_results.json: MARL_LNS success_rate=100% for 5-12 agents",
+      "verified": true
+    },
+    {
+      "claim": "MARL-LNS is fastest on empty and random-large maps",
+      "evidence": "outputs/summary_results.json: empty runtime=0.072s, random_large runtime=0.084s",
+      "verified": true
+    }
+  ]
+}

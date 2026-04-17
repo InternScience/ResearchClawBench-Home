@@ -1,0 +1,42 @@
+{
+  "task_name": "GB Power System Optimal Dispatch Analysis",
+  "objective": "Provide optimal power dispatch and system costs for Great Britain power system with high spatial (29-node) and temporal (hourly) resolution",
+  "methodology": {
+    "framework": "PyPSA (Python for Power System Analysis)",
+    "optimization_type": "Linear Optimal Power Flow (LOPF)",
+    "objective_function": "Minimize total system operating cost",
+    "constraints": [
+      "Power balance at each node (Kirchhoff's Current Law)",
+      "Transmission line capacity limits",
+      "Generator capacity limits (P_nom * capacity_factor for renewables)",
+      "Storage energy balance and cycling constraints",
+      "Non-negative generation and curtailment"
+    ],
+    "temporal_resolution": "Hourly (168 hours = 1 week)",
+    "spatial_resolution": "20 buses (nodes) with 23 transmission links"
+  },
+  "input_data": {
+    "network_topology": ["buses.csv", "links.csv"],
+    "generation_assets": "generators.csv",
+    "time_series": ["demand.csv", "wind_cf.csv"],
+    "storage": "storage.csv"
+  },
+  "output_artifacts": [
+    "Optimal hourly dispatch by generator type and location",
+    "System marginal prices at each node",
+    "Transmission line loading",
+    "Storage state of charge and cycling",
+    "Renewable curtailment",
+    "Total system operating costs"
+  ],
+  "generator_types": {
+    "onshore_wind": {"marginal_cost": 0, "capacity_factor": "time-varying from wind_cf.csv"},
+    "gas": {"marginal_cost": 50 GBP/MWh, "capacity_factor": 1.0},
+    "nuclear": {"marginal_cost": 10 GBP/MWh, "capacity_factor": 1.0}
+  },
+  "storage_parameters": {
+    "type": "Pumped Hydro Storage (PHS)",
+    "efficiency": 0.75,
+    "locations": ["Bus1", "Bus3", "Bus12"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "python_version": "3.x",
+  "required_packages": {
+    "yaml": {
+      "available": true,
+      "note": "PyYAML for parsing YAML data"
+    },
+    "numpy": {
+      "available": true,
+      "note": "Numerical computations"
+    },
+    "matplotlib": {
+      "available": true,
+      "note": "Plotting and visualization"
+    },
+    "seaborn": {
+      "available": true,
+      "note": "Statistical visualization"
+    }
+  },
+  "data_availability": {
+    "yaml_file": "data/2111.01152/2111.01152.yaml",
+    "pdf_file": "data/2111.01152/2111.01152.pdf",
+    "prompt_template": "data/2111.01152/Prompt_template.md",
+    "auto_completions": "data/2111.01152/2111.01152_auto.md"
+  },
+  "capability_notes": [
+    "All required Python packages available",
+    "YAML data file contains 16 tasks with scores",
+    "PDF contains physics context and Hamiltonian definitions",
+    "No external API calls required for analysis"
+  ]
+}

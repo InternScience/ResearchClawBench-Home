@@ -1,0 +1,34 @@
+{
+  "method": "Levelized Cost of Hydrogen (LCOH) with ammonia shipping pathway",
+  "definition": "End-to-end cost model from renewable electricity to delivered H2 in Europe via NH3",
+  "assumptions": [
+    "Off-grid greenfield production sites",
+    "Hybrid PV+Wind with optimized mix",
+    "PEM electrolyzer technology",
+    "Ammonia as hydrogen carrier for ocean shipping",
+    "Constant annual demand profile",
+    "2030 technology cost projections"
+  ],
+  "invariants": [
+    "CRF-based annualization of all capital costs",
+    "WACC applied uniformly to all components within a region",
+    "Complementarity factor of 1.15 for hybrid PV/wind",
+    "Electrolyzer efficiency of 65% (2030 projection)"
+  ],
+  "non_negotiable_steps": [
+    "Calculate hybrid LCOE from PV and wind",
+    "Size electrolyzer, battery, and H2 storage",
+    "Add water supply costs",
+    "Add ammonia synthesis costs at source",
+    "Add transport to port costs",
+    "Add ocean shipping costs",
+    "Add ammonia cracking costs at destination",
+    "Compare against European domestic production benchmark"
+  ],
+  "deviations_from_GeoH2": [
+    "Simplified hybrid optimization (not hourly dispatch with PyPSA)",
+    "Parametric storage sizing (not optimization-based)",
+    "Latitude-based shipping cost (not detailed maritime routing)",
+    "No pipeline transport option (ammonia trucking only)"
+  ]
+}

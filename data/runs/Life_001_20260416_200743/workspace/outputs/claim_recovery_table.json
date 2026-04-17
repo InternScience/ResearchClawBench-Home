@@ -1,0 +1,58 @@
+{
+  "claims": [
+    {
+      "claim": "Mean per-cell response probability is 0.943",
+      "evidence": "Computed from final-response-likelihoods.csv and independently verified from vaccine-elements.scores files",
+      "artifact": "outputs/summary_statistics.json",
+      "status": "verified"
+    },
+    {
+      "claim": "99.2% coverage at response threshold >= 0.5",
+      "evidence": "Computed from final-response-likelihoods.csv: 992/1000 cells",
+      "artifact": "outputs/coverage_curve.csv",
+      "status": "verified"
+    },
+    {
+      "claim": "IoU = 1.0 across all replicates",
+      "evidence": "All 10 replicates select identical 10 elements from selected-vaccine-elements.budget-10.minsum.adaptive.csv",
+      "artifact": "outputs/iou_matrix.csv",
+      "status": "verified"
+    },
+    {
+      "claim": "Optimal vaccine contains 10 elements: mut11, mut12, mut15, mut19, mut20, mut26, mut28, mut33, mut39, mut44",
+      "evidence": "vaccine.budget-10.minsum.adaptive.csv lists exactly these 10 elements with counts=10 each",
+      "artifact": "data/vaccine.budget-10.minsum.adaptive.csv",
+      "status": "verified"
+    },
+    {
+      "claim": "Runtime scales as O(N^1.31)",
+      "evidence": "Power-law fit to mean runtime vs population size from optimization_runtime_data.csv",
+      "artifact": "outputs/summary_statistics.json",
+      "status": "verified"
+    },
+    {
+      "claim": "Top 3 elements contribute 74% of marginal improvement",
+      "evidence": "Leave-one-out analysis: (0.0765 + 0.0671 + 0.0575) / total = 0.2011 / 0.2731 = 73.6%",
+      "artifact": "outputs/leave_one_out.csv",
+      "status": "verified"
+    },
+    {
+      "claim": "Budget of 6 achieves 98.4% of maximum mean response",
+      "evidence": "Budget sweep: 0.928 / 0.943 = 98.4%",
+      "artifact": "outputs/budget_sweep.csv",
+      "status": "verified"
+    },
+    {
+      "claim": "Adaptive and sim-specific vaccines produce identical results",
+      "evidence": "Correlation = 1.0 between adaptive and sim-specific response probabilities",
+      "artifact": "report/images/fig11_adaptive_vs_sim.png",
+      "status": "verified"
+    },
+    {
+      "claim": "~0.3% of cells are uncoverable (p_response near zero)",
+      "evidence": "3 cells across 1000 observations with p_response ≈ 0.00002",
+      "artifact": "outputs/cell_aggregate_response.csv",
+      "status": "verified"
+    }
+  ]
+}

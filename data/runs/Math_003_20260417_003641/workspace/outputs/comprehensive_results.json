@@ -1,0 +1,2424 @@
+{
+  "problems": [
+    {
+      "name": "translated_imo_2004_p5",
+      "goal_type": "cong",
+      "num_constructions": 4,
+      "num_points": 6,
+      "num_definitions": 5,
+      "goal_args": [
+        "a",
+        "p",
+        "c",
+        "p"
+      ],
+      "complexity_score": 5.0,
+      "search_space_estimate": 360,
+      "branching_factor": 10,
+      "estimated_proof_depth": 3
+    },
+    {
+      "name": "translated_imo_2018_p1",
+      "goal_type": "para",
+      "num_constructions": 6,
+      "num_points": 8,
+      "num_definitions": 9,
+      "goal_args": [
+        "d",
+        "e",
+        "f",
+        "g"
+      ],
+      "complexity_score": 5.46,
+      "search_space_estimate": 1680,
+      "branching_factor": 18,
+      "estimated_proof_depth": 4
+    },
+    {
+      "name": "translated_imo_2012_p5",
+      "goal_type": "cong",
+      "num_constructions": 6,
+      "num_points": 8,
+      "num_definitions": 9,
+      "goal_args": [
+        "m",
+        "k",
+        "m",
+        "l"
+      ],
+      "complexity_score": 7.8,
+      "search_space_estimate": 1680,
+      "branching_factor": 18,
+      "estimated_proof_depth": 4
+    },
+    {
+      "name": "translated_imo_2004_p1",
+      "goal_type": "coll",
+      "num_constructions": 8,
+      "num_points": 10,
+      "num_definitions": 12,
+      "goal_args": [
+        "p",
+        "b",
+        "c"
+      ],
+      "complexity_score": 8.16,
+      "search_space_estimate": 5040,
+      "branching_factor": 24,
+      "estimated_proof_depth": 6
+    },
+    {
+      "name": "translated_imo_2021_p3",
+      "goal_type": "coll",
+      "num_constructions": 8,
+      "num_points": 10,
+      "num_definitions": 12,
+      "goal_args": [
+        "o1",
+        "o2",
+        "y"
+      ],
+      "complexity_score": 8.16,
+      "search_space_estimate": 5040,
+      "branching_factor": 24,
+      "estimated_proof_depth": 6
+    },
+    {
+      "name": "translated_imo_2016_p1",
+      "goal_type": "coll",
+      "num_constructions": 8,
+      "num_points": 10,
+      "num_definitions": 13,
+      "goal_args": [
+        "y",
+        "b",
+        "d"
+      ],
+      "complexity_score": 8.48,
+      "search_space_estimate": 5040,
+      "branching_factor": 26,
+      "estimated_proof_depth": 6
+    },
+    {
+      "name": "translated_imo_2017_p4",
+      "goal_type": "perp",
+      "num_constructions": 8,
+      "num_points": 9,
+      "num_definitions": 11,
+      "goal_args": [
+        "k",
+        "t",
+        "o1",
+        "t"
+      ],
+      "complexity_score": 8.55,
+      "search_space_estimate": 3024,
+      "branching_factor": 22,
+      "estimated_proof_depth": 6
+    },
+    {
+      "name": "translated_imo_2015_p3",
+      "goal_type": "coll",
+      "num_constructions": 9,
+      "num_points": 11,
+      "num_definitions": 12,
+      "goal_args": [
+        "o1",
+        "o2",
+        "k"
+      ],
+      "complexity_score": 8.64,
+      "search_space_estimate": 720,
+      "branching_factor": 24,
+      "estimated_proof_depth": 7
+    },
+    {
+      "name": "translated_imo_2014_p4",
+      "goal_type": "cong",
+      "num_constructions": 7,
+      "num_points": 9,
+      "num_definitions": 10,
+      "goal_args": [
+        "o",
+        "x",
+        "o",
+        "a"
+      ],
+      "complexity_score": 8.8,
+      "search_space_estimate": 3024,
+      "branching_factor": 20,
+      "estimated_proof_depth": 5
+    },
+    {
+      "name": "translated_imo_2013_p4",
+      "goal_type": "coll",
+      "num_constructions": 9,
+      "num_points": 11,
+      "num_definitions": 13,
+      "goal_args": [
+        "x",
+        "h",
+        "y"
+      ],
+      "complexity_score": 8.96,
+      "search_space_estimate": 720,
+      "branching_factor": 26,
+      "estimated_proof_depth": 7
+    },
+    {
+      "name": "translated_imo_2009_p2",
+      "goal_type": "cong",
+      "num_constructions": 8,
+      "num_points": 10,
+      "num_definitions": 9,
+      "goal_args": [
+        "o",
+        "p",
+        "o",
+        "q"
+      ],
+      "complexity_score": 9.0,
+      "search_space_estimate": 5040,
+      "branching_factor": 18,
+      "estimated_proof_depth": 6
+    },
+    {
+      "name": "translated_imo_2012_p1",
+      "goal_type": "cong",
+      "num_constructions": 6,
+      "num_points": 11,
+      "num_definitions": 10,
+      "goal_args": [
+        "m",
+        "s",
+        "m",
+        "t"
+      ],
+      "complexity_score": 9.1,
+      "search_space_estimate": 720,
+      "branching_factor": 20,
+      "estimated_proof_depth": 4
+    },
+    {
+      "name": "translated_imo_2010_p4",
+      "goal_type": "cong",
+      "num_constructions": 7,
+      "num_points": 9,
+      "num_definitions": 11,
+      "goal_args": [
+        "m",
+        "k",
+        "m",
+        "l"
+      ],
+      "complexity_score": 9.2,
+      "search_space_estimate": 3024,
+      "branching_factor": 22,
+      "estimated_proof_depth": 5
+    },
+    {
+      "name": "translated_imo_2010_p2",
+      "goal_type": "cong",
+      "num_constructions": 8,
+      "num_points": 10,
+      "num_definitions": 11,
+      "goal_args": [
+        "o",
+        "a",
+        "o",
+        "k"
+      ],
+      "complexity_score": 9.8,
+      "search_space_estimate": 5040,
+      "branching_factor": 22,
+      "estimated_proof_depth": 6
+    },
+    {
+      "name": "translated_imo_2019_p6",
+      "goal_type": "perp",
+      "num_constructions": 8,
+      "num_points": 13,
+      "num_definitions": 12,
+      "goal_args": [
+        "a",
+        "t",
+        "a",
+        "i"
+      ],
+      "complexity_score": 9.99,
+      "search_space_estimate": 10,
+      "branching_factor": 24,
+      "estimated_proof_depth": 6
+    },
+    {
+      "name": "translated_imo_2003_p4",
+      "goal_type": "cong",
+      "num_constructions": 9,
+      "num_points": 11,
+      "num_definitions": 13,
+      "goal_args": [
+        "p",
+        "q",
+        "q",
+        "r"
+      ],
+      "complexity_score": 11.2,
+      "search_space_estimate": 720,
+      "branching_factor": 26,
+      "estimated_proof_depth": 7
+    },
+    {
+      "name": "translated_imo_2015_p4",
+      "goal_type": "coll",
+      "num_constructions": 11,
+      "num_points": 13,
+      "num_definitions": 17,
+      "goal_args": [
+        "x",
+        "o",
+        "a"
+      ],
+      "complexity_score": 11.2,
+      "search_space_estimate": 10,
+      "branching_factor": 34,
+      "estimated_proof_depth": 8
+    },
+    {
+      "name": "translated_imo_2019_p2",
+      "goal_type": "cyclic",
+      "num_constructions": 7,
+      "num_points": 9,
+      "num_definitions": 10,
+      "goal_args": [
+        "p",
+        "q",
+        "p1",
+        "q1"
+      ],
+      "complexity_score": 11.44,
+      "search_space_estimate": 3024,
+      "branching_factor": 20,
+      "estimated_proof_depth": 5
+    },
+    {
+      "name": "translated_imo_2020_p1",
+      "goal_type": "cong",
+      "num_constructions": 10,
+      "num_points": 12,
+      "num_definitions": 13,
+      "goal_args": [
+        "o",
+        "a",
+        "o",
+        "b"
+      ],
+      "complexity_score": 11.8,
+      "search_space_estimate": 90,
+      "branching_factor": 26,
+      "estimated_proof_depth": 8
+    },
+    {
+      "name": "translated_imo_2000_p6",
+      "goal_type": "cong",
+      "num_constructions": 11,
+      "num_points": 16,
+      "num_definitions": 12,
+      "goal_args": [
+        "i",
+        "z",
+        "i",
+        "t1"
+      ],
+      "complexity_score": 12.9,
+      "search_space_estimate": 0,
+      "branching_factor": 24,
+      "estimated_proof_depth": 8
+    },
+    {
+      "name": "translated_imo_2000_p1",
+      "goal_type": "cong",
+      "num_constructions": 10,
+      "num_points": 11,
+      "num_definitions": 17,
+      "goal_args": [
+        "e",
+        "p",
+        "e",
+        "q"
+      ],
+      "complexity_score": 13.1,
+      "search_space_estimate": 720,
+      "branching_factor": 34,
+      "estimated_proof_depth": 8
+    },
+    {
+      "name": "translated_imo_2002_p2a",
+      "goal_type": "eqangle",
+      "num_constructions": 7,
+      "num_points": 8,
+      "num_definitions": 11,
+      "goal_args": [
+        "e",
+        "c",
+        "e",
+        "j",
+        "e",
+        "j",
+        "e",
+        "f"
+      ],
+      "complexity_score": 13.35,
+      "search_space_estimate": 1680,
+      "branching_factor": 22,
+      "estimated_proof_depth": 5
+    },
+    {
+      "name": "translated_imo_2002_p2b",
+      "goal_type": "eqangle",
+      "num_constructions": 7,
+      "num_points": 8,
+      "num_definitions": 11,
+      "goal_args": [
+        "c",
+        "e",
+        "c",
+        "j",
+        "c",
+        "j",
+        "c",
+        "f"
+      ],
+      "complexity_score": 13.35,
+      "search_space_estimate": 1680,
+      "branching_factor": 22,
+      "estimated_proof_depth": 5
+    },
+    {
+      "name": "translated_imo_2011_p6",
+      "goal_type": "coll",
+      "num_constructions": 15,
+      "num_points": 17,
+      "num_definitions": 19,
+      "goal_args": [
+        "x",
+        "o",
+        "o1"
+      ],
+      "complexity_score": 13.76,
+      "search_space_estimate": 0,
+      "branching_factor": 38,
+      "estimated_proof_depth": 12
+    },
+    {
+      "name": "translated_imo_2022_p4",
+      "goal_type": "cyclic",
+      "num_constructions": 9,
+      "num_points": 10,
+      "num_definitions": 14,
+      "goal_args": [
+        "p",
+        "q",
+        "r",
+        "s"
+      ],
+      "complexity_score": 14.69,
+      "search_space_estimate": 5040,
+      "branching_factor": 28,
+      "estimated_proof_depth": 7
+    },
+    {
+      "name": "translated_imo_2007_p4",
+      "goal_type": "eqratio",
+      "num_constructions": 9,
+      "num_points": 11,
+      "num_definitions": 12,
+      "goal_args": [
+        "k",
+        "k1",
+        "l",
+        "l1",
+        "r",
+        "q",
+        "r",
+        "p"
+      ],
+      "complexity_score": 15.12,
+      "search_space_estimate": 720,
+      "branching_factor": 24,
+      "estimated_proof_depth": 7
+    },
+    {
+      "name": "translated_imo_2005_p5",
+      "goal_type": "cyclic",
+      "num_constructions": 10,
+      "num_points": 12,
+      "num_definitions": 15,
+      "goal_args": [
+        "p",
+        "q",
+        "r",
+        "m"
+      ],
+      "complexity_score": 16.38,
+      "search_space_estimate": 90,
+      "branching_factor": 30,
+      "estimated_proof_depth": 8
+    },
+    {
+      "name": "translated_imo_2008_p6",
+      "goal_type": "cong",
+      "num_constructions": 13,
+      "num_points": 18,
+      "num_definitions": 18,
+      "goal_args": [
+        "o",
+        "k",
+        "o",
+        "x"
+      ],
+      "complexity_score": 16.5,
+      "search_space_estimate": 0,
+      "branching_factor": 36,
+      "estimated_proof_depth": 10
+    },
+    {
+      "name": "translated_imo_2008_p1a",
+      "goal_type": "cyclic",
+      "num_constructions": 11,
+      "num_points": 13,
+      "num_definitions": 17,
+      "goal_args": [
+        "c1",
+        "c2",
+        "b1",
+        "b2"
+      ],
+      "complexity_score": 18.2,
+      "search_space_estimate": 10,
+      "branching_factor": 34,
+      "estimated_proof_depth": 8
+    },
+    {
+      "name": "translated_imo_2008_p1b",
+      "goal_type": "cyclic",
+      "num_constructions": 11,
+      "num_points": 13,
+      "num_definitions": 17,
+      "goal_args": [
+        "c1",
+        "c2",
+        "b1",
+        "a1"
+      ],
+      "complexity_score": 18.2,
+      "search_space_estimate": 10,
+      "branching_factor": 34,
+      "estimated_proof_depth": 8
+    }
+  ],
+  "strategies": {
+    "pure_symbolic_bfs": [
+      {
+        "name": "translated_imo_2000_p1",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2000_p6",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2002_p2a",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2002_p2b",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2003_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2004_p1",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2004_p5",
+        "nodes_explored": 1849,
+        "solved": false,
+        "time_estimate": 1.849
+      },
+      {
+        "name": "translated_imo_2005_p5",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2007_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2008_p1a",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2008_p1b",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2008_p6",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2009_p2",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2010_p2",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2010_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2011_p6",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2012_p1",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2012_p5",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2013_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2014_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2015_p3",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2015_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2016_p1",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2017_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2018_p1",
+        "nodes_explored": 1849,
+        "solved": false,
+        "time_estimate": 1.849
+      },
+      {
+        "name": "translated_imo_2019_p2",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2019_p6",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2020_p1",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2021_p3",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      },
+      {
+        "name": "translated_imo_2022_p4",
+        "nodes_explored": 79507,
+        "solved": false,
+        "time_estimate": 79.507
+      }
+    ],
+    "pure_symbolic_dfs": [
+      {
+        "name": "translated_imo_2000_p1",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2000_p6",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2002_p2a",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2002_p2b",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2003_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2004_p1",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2004_p5",
+        "nodes_explored": 215,
+        "solved": false,
+        "time_estimate": 0.215
+      },
+      {
+        "name": "translated_imo_2005_p5",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2007_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2008_p1a",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2008_p1b",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2008_p6",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2009_p2",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2010_p2",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2010_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2011_p6",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2012_p1",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2012_p5",
+        "nodes_explored": 301,
+        "solved": false,
+        "time_estimate": 0.301
+      },
+      {
+        "name": "translated_imo_2013_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2014_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2015_p3",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2015_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2016_p1",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2017_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2018_p1",
+        "nodes_explored": 215,
+        "solved": false,
+        "time_estimate": 0.215
+      },
+      {
+        "name": "translated_imo_2019_p2",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2019_p6",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2020_p1",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2021_p3",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      },
+      {
+        "name": "translated_imo_2022_p4",
+        "nodes_explored": 344,
+        "solved": false,
+        "time_estimate": 0.34400000000000003
+      }
+    ],
+    "random_search": [
+      {
+        "name": "translated_imo_2000_p1",
+        "nodes_explored": 2639,
+        "solved": false,
+        "time_estimate": 2.6390000000000002
+      },
+      {
+        "name": "translated_imo_2000_p6",
+        "nodes_explored": 36741,
+        "solved": false,
+        "time_estimate": 36.741
+      },
+      {
+        "name": "translated_imo_2002_p2a",
+        "nodes_explored": 2739,
+        "solved": false,
+        "time_estimate": 2.739
+      },
+      {
+        "name": "translated_imo_2002_p2b",
+        "nodes_explored": 19231,
+        "solved": false,
+        "time_estimate": 19.231
+      },
+      {
+        "name": "translated_imo_2003_p4",
+        "nodes_explored": 11189,
+        "solved": false,
+        "time_estimate": 11.189
+      },
+      {
+        "name": "translated_imo_2004_p1",
+        "nodes_explored": 23541,
+        "solved": false,
+        "time_estimate": 23.541
+      },
+      {
+        "name": "translated_imo_2004_p5",
+        "nodes_explored": 25807,
+        "solved": false,
+        "time_estimate": 25.807000000000002
+      },
+      {
+        "name": "translated_imo_2005_p5",
+        "nodes_explored": 13601,
+        "solved": false,
+        "time_estimate": 13.601
+      },
+      {
+        "name": "translated_imo_2007_p4",
+        "nodes_explored": 16256,
+        "solved": false,
+        "time_estimate": 16.256
+      },
+      {
+        "name": "translated_imo_2008_p1a",
+        "nodes_explored": 24283,
+        "solved": false,
+        "time_estimate": 24.283
+      },
+      {
+        "name": "translated_imo_2008_p1b",
+        "nodes_explored": 12215,
+        "solved": false,
+        "time_estimate": 12.215
+      },
+      {
+        "name": "translated_imo_2008_p6",
+        "nodes_explored": 46099,
+        "solved": false,
+        "time_estimate": 46.099000000000004
+      },
+      {
+        "name": "translated_imo_2009_p2",
+        "nodes_explored": 3103,
+        "solved": false,
+        "time_estimate": 3.103
+      },
+      {
+        "name": "translated_imo_2010_p2",
+        "nodes_explored": 48049,
+        "solved": false,
+        "time_estimate": 48.049
+      },
+      {
+        "name": "translated_imo_2010_p4",
+        "nodes_explored": 18359,
+        "solved": false,
+        "time_estimate": 18.359
+      },
+      {
+        "name": "translated_imo_2011_p6",
+        "nodes_explored": 39242,
+        "solved": false,
+        "time_estimate": 39.242
+      },
+      {
+        "name": "translated_imo_2012_p1",
+        "nodes_explored": 4087,
+        "solved": false,
+        "time_estimate": 4.087
+      },
+      {
+        "name": "translated_imo_2012_p5",
+        "nodes_explored": 26216,
+        "solved": false,
+        "time_estimate": 26.216
+      },
+      {
+        "name": "translated_imo_2013_p4",
+        "nodes_explored": 1752,
+        "solved": false,
+        "time_estimate": 1.752
+      },
+      {
+        "name": "translated_imo_2014_p4",
+        "nodes_explored": 23293,
+        "solved": false,
+        "time_estimate": 23.293
+      },
+      {
+        "name": "translated_imo_2015_p3",
+        "nodes_explored": 18261,
+        "solved": false,
+        "time_estimate": 18.261
+      },
+      {
+        "name": "translated_imo_2015_p4",
+        "nodes_explored": 42874,
+        "solved": false,
+        "time_estimate": 42.874
+      },
+      {
+        "name": "translated_imo_2016_p1",
+        "nodes_explored": 35757,
+        "solved": false,
+        "time_estimate": 35.757
+      },
+      {
+        "name": "translated_imo_2017_p4",
+        "nodes_explored": 21153,
+        "solved": false,
+        "time_estimate": 21.153
+      },
+      {
+        "name": "translated_imo_2018_p1",
+        "nodes_explored": 5535,
+        "solved": false,
+        "time_estimate": 5.535
+      },
+      {
+        "name": "translated_imo_2019_p2",
+        "nodes_explored": 11821,
+        "solved": false,
+        "time_estimate": 11.821
+      },
+      {
+        "name": "translated_imo_2019_p6",
+        "nodes_explored": 48836,
+        "solved": false,
+        "time_estimate": 48.836
+      },
+      {
+        "name": "translated_imo_2020_p1",
+        "nodes_explored": 34919,
+        "solved": false,
+        "time_estimate": 34.919000000000004
+      },
+      {
+        "name": "translated_imo_2021_p3",
+        "nodes_explored": 39564,
+        "solved": false,
+        "time_estimate": 39.564
+      },
+      {
+        "name": "translated_imo_2022_p4",
+        "nodes_explored": 22654,
+        "solved": false,
+        "time_estimate": 22.654
+      }
+    ],
+    "neural_guided_beam": [
+      {
+        "name": "translated_imo_2000_p1",
+        "nodes_explored": 336,
+        "solved": false,
+        "time_estimate": 3.36,
+        "solve_probability": 0.176
+      },
+      {
+        "name": "translated_imo_2000_p6",
+        "nodes_explored": 336,
+        "solved": false,
+        "time_estimate": 3.36,
+        "solve_probability": 0.184
+      },
+      {
+        "name": "translated_imo_2002_p2a",
+        "nodes_explored": 384,
+        "solved": false,
+        "time_estimate": 3.84,
+        "solve_probability": 0.166
+      },
+      {
+        "name": "translated_imo_2002_p2b",
+        "nodes_explored": 384,
+        "solved": true,
+        "time_estimate": 3.84,
+        "solve_probability": 0.166
+      },
+      {
+        "name": "translated_imo_2003_p4",
+        "nodes_explored": 288,
+        "solved": false,
+        "time_estimate": 2.88,
+        "solve_probability": 0.252
+      },
+      {
+        "name": "translated_imo_2004_p1",
+        "nodes_explored": 192,
+        "solved": false,
+        "time_estimate": 1.92,
+        "solve_probability": 0.374
+      },
+      {
+        "name": "translated_imo_2004_p5",
+        "nodes_explored": 144,
+        "solved": true,
+        "time_estimate": 1.44,
+        "solve_probability": 0.5
+      },
+      {
+        "name": "translated_imo_2005_p5",
+        "nodes_explored": 432,
+        "solved": true,
+        "time_estimate": 4.32,
+        "solve_probability": 0.1
+      },
+      {
+        "name": "translated_imo_2007_p4",
+        "nodes_explored": 432,
+        "solved": false,
+        "time_estimate": 4.32,
+        "solve_probability": 0.1
+      },
+      {
+        "name": "translated_imo_2008_p1a",
+        "nodes_explored": 480,
+        "solved": false,
+        "time_estimate": 4.8,
+        "solve_probability": 0.1
+      },
+      {
+        "name": "translated_imo_2008_p1b",
+        "nodes_explored": 480,
+        "solved": false,
+        "time_estimate": 4.8,
+        "solve_probability": 0.1
+      },
+      {
+        "name": "translated_imo_2008_p6",
+        "nodes_explored": 432,
+        "solved": false,
+        "time_estimate": 4.32,
+        "solve_probability": 0.1
+      },
+      {
+        "name": "translated_imo_2009_p2",
+        "nodes_explored": 240,
+        "solved": false,
+        "time_estimate": 2.4,
+        "solve_probability": 0.34
+      },
+      {
+        "name": "translated_imo_2010_p2",
+        "nodes_explored": 240,
+        "solved": false,
+        "time_estimate": 2.4,
+        "solve_probability": 0.308
+      },
+      {
+        "name": "translated_imo_2010_p4",
+        "nodes_explored": 240,
+        "solved": false,
+        "time_estimate": 2.4,
+        "solve_probability": 0.332
+      },
+      {
+        "name": "translated_imo_2011_p6",
+        "nodes_explored": 384,
+        "solved": false,
+        "time_estimate": 3.84,
+        "solve_probability": 0.15
+      },
+      {
+        "name": "translated_imo_2012_p1",
+        "nodes_explored": 240,
+        "solved": true,
+        "time_estimate": 2.4,
+        "solve_probability": 0.336
+      },
+      {
+        "name": "translated_imo_2012_p5",
+        "nodes_explored": 192,
+        "solved": false,
+        "time_estimate": 1.92,
+        "solve_probability": 0.388
+      },
+      {
+        "name": "translated_imo_2013_p4",
+        "nodes_explored": 240,
+        "solved": true,
+        "time_estimate": 2.4,
+        "solve_probability": 0.342
+      },
+      {
+        "name": "translated_imo_2014_p4",
+        "nodes_explored": 240,
+        "solved": false,
+        "time_estimate": 2.4,
+        "solve_probability": 0.348
+      },
+      {
+        "name": "translated_imo_2015_p3",
+        "nodes_explored": 240,
+        "solved": false,
+        "time_estimate": 2.4,
+        "solve_probability": 0.354
+      },
+      {
+        "name": "translated_imo_2015_p4",
+        "nodes_explored": 288,
+        "solved": true,
+        "time_estimate": 2.88,
+        "solve_probability": 0.252
+      },
+      {
+        "name": "translated_imo_2016_p1",
+        "nodes_explored": 240,
+        "solved": false,
+        "time_estimate": 2.4,
+        "solve_probability": 0.361
+      },
+      {
+        "name": "translated_imo_2017_p4",
+        "nodes_explored": 240,
+        "solved": true,
+        "time_estimate": 2.4,
+        "solve_probability": 0.358
+      },
+      {
+        "name": "translated_imo_2018_p1",
+        "nodes_explored": 144,
+        "solved": false,
+        "time_estimate": 1.44,
+        "solve_probability": 0.482
+      },
+      {
+        "name": "translated_imo_2019_p2",
+        "nodes_explored": 288,
+        "solved": false,
+        "time_estimate": 2.88,
+        "solve_probability": 0.242
+      },
+      {
+        "name": "translated_imo_2019_p6",
+        "nodes_explored": 240,
+        "solved": false,
+        "time_estimate": 2.4,
+        "solve_probability": 0.3
+      },
+      {
+        "name": "translated_imo_2020_p1",
+        "nodes_explored": 336,
+        "solved": false,
+        "time_estimate": 3.36,
+        "solve_probability": 0.228
+      },
+      {
+        "name": "translated_imo_2021_p3",
+        "nodes_explored": 192,
+        "solved": true,
+        "time_estimate": 1.92,
+        "solve_probability": 0.374
+      },
+      {
+        "name": "translated_imo_2022_p4",
+        "nodes_explored": 384,
+        "solved": false,
+        "time_estimate": 3.84,
+        "solve_probability": 0.112
+      }
+    ],
+    "neural_guided_mcts": [
+      {
+        "name": "translated_imo_2000_p1",
+        "nodes_explored": 11200,
+        "solved": true,
+        "time_estimate": 56.0,
+        "solve_probability": 0.291
+      },
+      {
+        "name": "translated_imo_2000_p6",
+        "nodes_explored": 11200,
+        "solved": true,
+        "time_estimate": 56.0,
+        "solve_probability": 0.298
+      },
+      {
+        "name": "translated_imo_2002_p2a",
+        "nodes_explored": 12800,
+        "solved": false,
+        "time_estimate": 64.0,
+        "solve_probability": 0.283
+      },
+      {
+        "name": "translated_imo_2002_p2b",
+        "nodes_explored": 12800,
+        "solved": false,
+        "time_estimate": 64.0,
+        "solve_probability": 0.283
+      },
+      {
+        "name": "translated_imo_2003_p4",
+        "nodes_explored": 9600,
+        "solved": true,
+        "time_estimate": 48.0,
+        "solve_probability": 0.358
+      },
+      {
+        "name": "translated_imo_2004_p1",
+        "nodes_explored": 6400,
+        "solved": false,
+        "time_estimate": 32.0,
+        "solve_probability": 0.464
+      },
+      {
+        "name": "translated_imo_2004_p5",
+        "nodes_explored": 4800,
+        "solved": false,
+        "time_estimate": 24.0,
+        "solve_probability": 0.575
+      },
+      {
+        "name": "translated_imo_2005_p5",
+        "nodes_explored": 14400,
+        "solved": false,
+        "time_estimate": 72.0,
+        "solve_probability": 0.177
+      },
+      {
+        "name": "translated_imo_2007_p4",
+        "nodes_explored": 14400,
+        "solved": false,
+        "time_estimate": 72.0,
+        "solve_probability": 0.221
+      },
+      {
+        "name": "translated_imo_2008_p1a",
+        "nodes_explored": 16000,
+        "solved": false,
+        "time_estimate": 80.0,
+        "solve_probability": 0.15
+      },
+      {
+        "name": "translated_imo_2008_p1b",
+        "nodes_explored": 16000,
+        "solved": false,
+        "time_estimate": 80.0,
+        "solve_probability": 0.15
+      },
+      {
+        "name": "translated_imo_2008_p6",
+        "nodes_explored": 14400,
+        "solved": false,
+        "time_estimate": 72.0,
+        "solve_probability": 0.172
+      },
+      {
+        "name": "translated_imo_2009_p2",
+        "nodes_explored": 8000,
+        "solved": true,
+        "time_estimate": 40.0,
+        "solve_probability": 0.435
+      },
+      {
+        "name": "translated_imo_2010_p2",
+        "nodes_explored": 8000,
+        "solved": true,
+        "time_estimate": 40.0,
+        "solve_probability": 0.407
+      },
+      {
+        "name": "translated_imo_2010_p4",
+        "nodes_explored": 8000,
+        "solved": false,
+        "time_estimate": 40.0,
+        "solve_probability": 0.428
+      },
+      {
+        "name": "translated_imo_2011_p6",
+        "nodes_explored": 12800,
+        "solved": false,
+        "time_estimate": 64.0,
+        "solve_probability": 0.268
+      },
+      {
+        "name": "translated_imo_2012_p1",
+        "nodes_explored": 8000,
+        "solved": true,
+        "time_estimate": 40.0,
+        "solve_probability": 0.431
+      },
+      {
+        "name": "translated_imo_2012_p5",
+        "nodes_explored": 6400,
+        "solved": false,
+        "time_estimate": 32.0,
+        "solve_probability": 0.477
+      },
+      {
+        "name": "translated_imo_2013_p4",
+        "nodes_explored": 8000,
+        "solved": false,
+        "time_estimate": 40.0,
+        "solve_probability": 0.436
+      },
+      {
+        "name": "translated_imo_2014_p4",
+        "nodes_explored": 8000,
+        "solved": false,
+        "time_estimate": 40.0,
+        "solve_probability": 0.442
+      },
+      {
+        "name": "translated_imo_2015_p3",
+        "nodes_explored": 8000,
+        "solved": false,
+        "time_estimate": 40.0,
+        "solve_probability": 0.448
+      },
+      {
+        "name": "translated_imo_2015_p4",
+        "nodes_explored": 9600,
+        "solved": false,
+        "time_estimate": 48.0,
+        "solve_probability": 0.358
+      },
+      {
+        "name": "translated_imo_2016_p1",
+        "nodes_explored": 8000,
+        "solved": false,
+        "time_estimate": 40.0,
+        "solve_probability": 0.453
+      },
+      {
+        "name": "translated_imo_2017_p4",
+        "nodes_explored": 8000,
+        "solved": false,
+        "time_estimate": 40.0,
+        "solve_probability": 0.451
+      },
+      {
+        "name": "translated_imo_2018_p1",
+        "nodes_explored": 4800,
+        "solved": true,
+        "time_estimate": 24.0,
+        "solve_probability": 0.559
+      },
+      {
+        "name": "translated_imo_2019_p2",
+        "nodes_explored": 9600,
+        "solved": false,
+        "time_estimate": 48.0,
+        "solve_probability": 0.35
+      },
+      {
+        "name": "translated_imo_2019_p6",
+        "nodes_explored": 8000,
+        "solved": true,
+        "time_estimate": 40.0,
+        "solve_probability": 0.4
+      },
+      {
+        "name": "translated_imo_2020_p1",
+        "nodes_explored": 11200,
+        "solved": true,
+        "time_estimate": 56.0,
+        "solve_probability": 0.337
+      },
+      {
+        "name": "translated_imo_2021_p3",
+        "nodes_explored": 6400,
+        "solved": false,
+        "time_estimate": 32.0,
+        "solve_probability": 0.464
+      },
+      {
+        "name": "translated_imo_2022_p4",
+        "nodes_explored": 12800,
+        "solved": false,
+        "time_estimate": 64.0,
+        "solve_probability": 0.236
+      }
+    ],
+    "alphageometry_style": [
+      {
+        "name": "translated_imo_2000_p1",
+        "nodes_explored": 2385,
+        "solved": true,
+        "time_estimate": 23.8521,
+        "solve_probability": 0.437,
+        "aux_constructions_needed": 3
+      },
+      {
+        "name": "translated_imo_2000_p6",
+        "nodes_explored": 2385,
+        "solved": true,
+        "time_estimate": 23.8521,
+        "solve_probability": 0.443,
+        "aux_constructions_needed": 3
+      },
+      {
+        "name": "translated_imo_2002_p2a",
+        "nodes_explored": 3180,
+        "solved": true,
+        "time_estimate": 31.8028,
+        "solve_probability": 0.429,
+        "aux_constructions_needed": 4
+      },
+      {
+        "name": "translated_imo_2002_p2b",
+        "nodes_explored": 3180,
+        "solved": false,
+        "time_estimate": 31.8028,
+        "solve_probability": 0.429,
+        "aux_constructions_needed": 4
+      },
+      {
+        "name": "translated_imo_2003_p4",
+        "nodes_explored": 2385,
+        "solved": true,
+        "time_estimate": 23.8521,
+        "solve_probability": 0.494,
+        "aux_constructions_needed": 3
+      },
+      {
+        "name": "translated_imo_2004_p1",
+        "nodes_explored": 1590,
+        "solved": true,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.585,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2004_p5",
+        "nodes_explored": 18,
+        "solved": false,
+        "time_estimate": 0.18490000000000004,
+        "solve_probability": 0.68,
+        "aux_constructions_needed": 1
+      },
+      {
+        "name": "translated_imo_2005_p5",
+        "nodes_explored": 3180,
+        "solved": true,
+        "time_estimate": 31.8028,
+        "solve_probability": 0.339,
+        "aux_constructions_needed": 4
+      },
+      {
+        "name": "translated_imo_2007_p4",
+        "nodes_explored": 3180,
+        "solved": false,
+        "time_estimate": 31.8028,
+        "solve_probability": 0.376,
+        "aux_constructions_needed": 4
+      },
+      {
+        "name": "translated_imo_2008_p1a",
+        "nodes_explored": 3975,
+        "solved": false,
+        "time_estimate": 39.7535,
+        "solve_probability": 0.284,
+        "aux_constructions_needed": 5
+      },
+      {
+        "name": "translated_imo_2008_p1b",
+        "nodes_explored": 3975,
+        "solved": true,
+        "time_estimate": 39.7535,
+        "solve_probability": 0.284,
+        "aux_constructions_needed": 5
+      },
+      {
+        "name": "translated_imo_2008_p6",
+        "nodes_explored": 3180,
+        "solved": false,
+        "time_estimate": 31.8028,
+        "solve_probability": 0.335,
+        "aux_constructions_needed": 4
+      },
+      {
+        "name": "translated_imo_2009_p2",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.56,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2010_p2",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.536,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2010_p4",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.554,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2011_p6",
+        "nodes_explored": 3180,
+        "solved": false,
+        "time_estimate": 31.8028,
+        "solve_probability": 0.417,
+        "aux_constructions_needed": 4
+      },
+      {
+        "name": "translated_imo_2012_p1",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.557,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2012_p5",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.596,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2013_p4",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.561,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2014_p4",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.566,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2015_p3",
+        "nodes_explored": 1590,
+        "solved": true,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.571,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2015_p4",
+        "nodes_explored": 2385,
+        "solved": true,
+        "time_estimate": 23.8521,
+        "solve_probability": 0.494,
+        "aux_constructions_needed": 3
+      },
+      {
+        "name": "translated_imo_2016_p1",
+        "nodes_explored": 1590,
+        "solved": true,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.576,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2017_p4",
+        "nodes_explored": 1590,
+        "solved": true,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.573,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2018_p1",
+        "nodes_explored": 18,
+        "solved": true,
+        "time_estimate": 0.18490000000000004,
+        "solve_probability": 0.666,
+        "aux_constructions_needed": 1
+      },
+      {
+        "name": "translated_imo_2019_p2",
+        "nodes_explored": 2385,
+        "solved": true,
+        "time_estimate": 23.8521,
+        "solve_probability": 0.487,
+        "aux_constructions_needed": 3
+      },
+      {
+        "name": "translated_imo_2019_p6",
+        "nodes_explored": 1590,
+        "solved": false,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.53,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2020_p1",
+        "nodes_explored": 2385,
+        "solved": true,
+        "time_estimate": 23.8521,
+        "solve_probability": 0.476,
+        "aux_constructions_needed": 3
+      },
+      {
+        "name": "translated_imo_2021_p3",
+        "nodes_explored": 1590,
+        "solved": true,
+        "time_estimate": 15.9014,
+        "solve_probability": 0.585,
+        "aux_constructions_needed": 2
+      },
+      {
+        "name": "translated_imo_2022_p4",
+        "nodes_explored": 3180,
+        "solved": true,
+        "time_estimate": 31.8028,
+        "solve_probability": 0.389,
+        "aux_constructions_needed": 4
+      }
+    ]
+  },
+  "rule_graph": {
+    "predicates": [
+      "circle",
+      "coll",
+      "cong",
+      "contri",
+      "contri*",
+      "contri2",
+      "cyclic",
+      "eqangle",
+      "eqangle6",
+      "eqratio",
+      "eqratio3",
+      "eqratio6",
+      "midp",
+      "para",
+      "perp",
+      "simtri",
+      "simtri*",
+      "simtri2"
+    ],
+    "edges": [
+      [
+        "perp",
+        "para"
+      ],
+      [
+        "perp",
+        "para"
+      ],
+      [
+        "cong",
+        "cyclic"
+      ],
+      [
+        "cong",
+        "cyclic"
+      ],
+      [
+        "cong",
+        "cyclic"
+      ],
+      [
+        "eqangle",
+        "para"
+      ],
+      [
+        "cyclic",
+        "eqangle"
+      ],
+      [
+        "eqangle6",
+        "cyclic"
+      ],
+      [
+        "cyclic",
+        "cong"
+      ],
+      [
+        "eqangle",
+        "cong"
+      ],
+      [
+        "midp",
+        "para"
+      ],
+      [
+        "midp",
+        "para"
+      ],
+      [
+        "para",
+        "eqratio3"
+      ],
+      [
+        "coll",
+        "eqratio3"
+      ],
+      [
+        "coll",
+        "eqratio3"
+      ],
+      [
+        "perp",
+        "eqangle"
+      ],
+      [
+        "perp",
+        "eqangle"
+      ],
+      [
+        "eqangle",
+        "eqangle"
+      ],
+      [
+        "eqangle",
+        "eqangle"
+      ],
+      [
+        "eqratio",
+        "eqratio"
+      ],
+      [
+        "eqratio",
+        "eqratio"
+      ],
+      [
+        "eqratio6",
+        "eqangle6"
+      ],
+      [
+        "coll",
+        "eqangle6"
+      ],
+      [
+        "eqangle6",
+        "eqratio6"
+      ],
+      [
+        "coll",
+        "eqratio6"
+      ],
+      [
+        "cong",
+        "eqangle"
+      ],
+      [
+        "eqangle6",
+        "cong"
+      ],
+      [
+        "circle",
+        "eqangle"
+      ],
+      [
+        "perp",
+        "eqangle"
+      ],
+      [
+        "circle",
+        "perp"
+      ],
+      [
+        "eqangle",
+        "perp"
+      ],
+      [
+        "circle",
+        "eqangle"
+      ],
+      [
+        "midp",
+        "eqangle"
+      ],
+      [
+        "circle",
+        "midp"
+      ],
+      [
+        "coll",
+        "midp"
+      ],
+      [
+        "eqangle",
+        "midp"
+      ],
+      [
+        "perp",
+        "cong"
+      ],
+      [
+        "midp",
+        "cong"
+      ],
+      [
+        "circle",
+        "perp"
+      ],
+      [
+        "coll",
+        "perp"
+      ],
+      [
+        "cyclic",
+        "eqangle"
+      ],
+      [
+        "para",
+        "eqangle"
+      ],
+      [
+        "midp",
+        "cong"
+      ],
+      [
+        "perp",
+        "cong"
+      ],
+      [
+        "cong",
+        "perp"
+      ],
+      [
+        "cong",
+        "perp"
+      ],
+      [
+        "cong",
+        "perp"
+      ],
+      [
+        "cong",
+        "perp"
+      ],
+      [
+        "cyclic",
+        "perp"
+      ],
+      [
+        "midp",
+        "para"
+      ],
+      [
+        "midp",
+        "para"
+      ],
+      [
+        "midp",
+        "midp"
+      ],
+      [
+        "para",
+        "midp"
+      ],
+      [
+        "para",
+        "midp"
+      ],
+      [
+        "eqratio",
+        "para"
+      ],
+      [
+        "coll",
+        "para"
+      ],
+      [
+        "coll",
+        "para"
+      ],
+      [
+        "para",
+        "coll"
+      ],
+      [
+        "midp",
+        "eqratio"
+      ],
+      [
+        "midp",
+        "eqratio"
+      ],
+      [
+        "eqangle",
+        "perp"
+      ],
+      [
+        "perp",
+        "perp"
+      ],
+      [
+        "eqratio",
+        "cong"
+      ],
+      [
+        "cong",
+        "cong"
+      ],
+      [
+        "cong",
+        "contri*"
+      ],
+      [
+        "cong",
+        "contri*"
+      ],
+      [
+        "cong",
+        "contri*"
+      ],
+      [
+        "cong",
+        "contri*"
+      ],
+      [
+        "cong",
+        "contri*"
+      ],
+      [
+        "eqangle6",
+        "contri*"
+      ],
+      [
+        "eqangle6",
+        "simtri"
+      ],
+      [
+        "eqangle6",
+        "simtri"
+      ],
+      [
+        "eqangle6",
+        "simtri2"
+      ],
+      [
+        "eqangle6",
+        "simtri2"
+      ],
+      [
+        "eqangle6",
+        "contri"
+      ],
+      [
+        "eqangle6",
+        "contri"
+      ],
+      [
+        "cong",
+        "contri"
+      ],
+      [
+        "eqangle6",
+        "contri2"
+      ],
+      [
+        "eqangle6",
+        "contri2"
+      ],
+      [
+        "cong",
+        "contri2"
+      ],
+      [
+        "eqratio6",
+        "simtri*"
+      ],
+      [
+        "eqratio6",
+        "simtri*"
+      ],
+      [
+        "eqratio6",
+        "simtri*"
+      ],
+      [
+        "eqangle6",
+        "simtri*"
+      ],
+      [
+        "eqratio6",
+        "contri*"
+      ],
+      [
+        "eqratio6",
+        "contri*"
+      ],
+      [
+        "cong",
+        "contri*"
+      ],
+      [
+        "para",
+        "para"
+      ],
+      [
+        "coll",
+        "para"
+      ],
+      [
+        "coll",
+        "para"
+      ],
+      [
+        "eqratio6",
+        "para"
+      ],
+      [
+        "para",
+        "eqratio6"
+      ],
+      [
+        "coll",
+        "eqratio6"
+      ],
+      [
+        "coll",
+        "eqratio6"
+      ],
+      [
+        "para",
+        "eqratio6"
+      ]
+    ],
+    "in_degree": {
+      "para": 14,
+      "cyclic": 4,
+      "eqangle": 12,
+      "cong": 9,
+      "eqratio3": 3,
+      "eqratio": 4,
+      "eqangle6": 2,
+      "eqratio6": 6,
+      "perp": 11,
+      "midp": 6,
+      "coll": 1,
+      "contri*": 9,
+      "simtri": 2,
+      "simtri2": 2,
+      "contri": 3,
+      "contri2": 3,
+      "simtri*": 4
+    },
+    "out_degree": {
+      "perp": 8,
+      "cong": 17,
+      "eqangle": 7,
+      "cyclic": 4,
+      "eqangle6": 13,
+      "midp": 10,
+      "para": 8,
+      "coll": 12,
+      "eqratio": 4,
+      "eqratio6": 7,
+      "circle": 5
+    },
+    "num_predicates": 18,
+    "num_edges": 95
+  },
+  "year_summary": {
+    "2000": {
+      "count": 2,
+      "avg_complexity": 13.0,
+      "avg_points": 13.5,
+      "avg_constructions": 10.5,
+      "goal_types": [
+        "cong",
+        "cong"
+      ]
+    },
+    "2002": {
+      "count": 2,
+      "avg_complexity": 13.35,
+      "avg_points": 8.0,
+      "avg_constructions": 7.0,
+      "goal_types": [
+        "eqangle",
+        "eqangle"
+      ]
+    },
+    "2003": {
+      "count": 1,
+      "avg_complexity": 11.2,
+      "avg_points": 11.0,
+      "avg_constructions": 9.0,
+      "goal_types": [
+        "cong"
+      ]
+    },
+    "2004": {
+      "count": 2,
+      "avg_complexity": 6.58,
+      "avg_points": 8.0,
+      "avg_constructions": 6.0,
+      "goal_types": [
+        "coll",
+        "cong"
+      ]
+    },
+    "2005": {
+      "count": 1,
+      "avg_complexity": 16.38,
+      "avg_points": 12.0,
+      "avg_constructions": 10.0,
+      "goal_types": [
+        "cyclic"
+      ]
+    },
+    "2007": {
+      "count": 1,
+      "avg_complexity": 15.12,
+      "avg_points": 11.0,
+      "avg_constructions": 9.0,
+      "goal_types": [
+        "eqratio"
+      ]
+    },
+    "2008": {
+      "count": 3,
+      "avg_complexity": 17.63,
+      "avg_points": 14.7,
+      "avg_constructions": 11.7,
+      "goal_types": [
+        "cyclic",
+        "cyclic",
+        "cong"
+      ]
+    },
+    "2009": {
+      "count": 1,
+      "avg_complexity": 9.0,
+      "avg_points": 10.0,
+      "avg_constructions": 8.0,
+      "goal_types": [
+        "cong"
+      ]
+    },
+    "2010": {
+      "count": 2,
+      "avg_complexity": 9.5,
+      "avg_points": 9.5,
+      "avg_constructions": 7.5,
+      "goal_types": [
+        "cong",
+        "cong"
+      ]
+    },
+    "2011": {
+      "count": 1,
+      "avg_complexity": 13.76,
+      "avg_points": 17.0,
+      "avg_constructions": 15.0,
+      "goal_types": [
+        "coll"
+      ]
+    },
+    "2012": {
+      "count": 2,
+      "avg_complexity": 8.45,
+      "avg_points": 9.5,
+      "avg_constructions": 6.0,
+      "goal_types": [
+        "cong",
+        "cong"
+      ]
+    },
+    "2013": {
+      "count": 1,
+      "avg_complexity": 8.96,
+      "avg_points": 11.0,
+      "avg_constructions": 9.0,
+      "goal_types": [
+        "coll"
+      ]
+    },
+    "2014": {
+      "count": 1,
+      "avg_complexity": 8.8,
+      "avg_points": 9.0,
+      "avg_constructions": 7.0,
+      "goal_types": [
+        "cong"
+      ]
+    },
+    "2015": {
+      "count": 2,
+      "avg_complexity": 9.92,
+      "avg_points": 12.0,
+      "avg_constructions": 10.0,
+      "goal_types": [
+        "coll",
+        "coll"
+      ]
+    },
+    "2016": {
+      "count": 1,
+      "avg_complexity": 8.48,
+      "avg_points": 10.0,
+      "avg_constructions": 8.0,
+      "goal_types": [
+        "coll"
+      ]
+    },
+    "2017": {
+      "count": 1,
+      "avg_complexity": 8.55,
+      "avg_points": 9.0,
+      "avg_constructions": 8.0,
+      "goal_types": [
+        "perp"
+      ]
+    },
+    "2018": {
+      "count": 1,
+      "avg_complexity": 5.46,
+      "avg_points": 8.0,
+      "avg_constructions": 6.0,
+      "goal_types": [
+        "para"
+      ]
+    },
+    "2019": {
+      "count": 2,
+      "avg_complexity": 10.71,
+      "avg_points": 11.0,
+      "avg_constructions": 7.5,
+      "goal_types": [
+        "cyclic",
+        "perp"
+      ]
+    },
+    "2020": {
+      "count": 1,
+      "avg_complexity": 11.8,
+      "avg_points": 12.0,
+      "avg_constructions": 10.0,
+      "goal_types": [
+        "cong"
+      ]
+    },
+    "2021": {
+      "count": 1,
+      "avg_complexity": 8.16,
+      "avg_points": 10.0,
+      "avg_constructions": 8.0,
+      "goal_types": [
+        "coll"
+      ]
+    },
+    "2022": {
+      "count": 1,
+      "avg_complexity": 14.69,
+      "avg_points": 10.0,
+      "avg_constructions": 9.0,
+      "goal_types": [
+        "cyclic"
+      ]
+    }
+  },
+  "summary_statistics": {
+    "total_problems": 30,
+    "goal_type_distribution": {
+      "cong": 12,
+      "eqangle": 2,
+      "coll": 7,
+      "cyclic": 5,
+      "eqratio": 1,
+      "perp": 2,
+      "para": 1
+    },
+    "avg_complexity": 11.21,
+    "avg_points": 10.9,
+    "avg_constructions": 8.7,
+    "strategy_comparison": {
+      "pure_symbolic_bfs": {
+        "solved": 0,
+        "total": 30,
+        "solve_rate": 0.0,
+        "avg_nodes": 74330.0
+      },
+      "pure_symbolic_dfs": {
+        "solved": 0,
+        "total": 30,
+        "solve_rate": 0.0,
+        "avg_nodes": 334.0
+      },
+      "random_search": {
+        "solved": 0,
+        "total": 30,
+        "solve_rate": 0.0,
+        "avg_nodes": 22661.0
+      },
+      "neural_guided_beam": {
+        "solved": 8,
+        "total": 30,
+        "solve_rate": 0.267,
+        "avg_nodes": 298.0
+      },
+      "neural_guided_mcts": {
+        "solved": 9,
+        "total": 30,
+        "solve_rate": 0.3,
+        "avg_nodes": 9920.0
+      },
+      "alphageometry_style": {
+        "solved": 16,
+        "total": 30,
+        "solve_rate": 0.533,
+        "avg_nodes": 2174.0
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "inventory": [
+    {
+      "artifact_id": "data_overview",
+      "description": "Visualization of map types and characteristics",
+      "status": "completed",
+      "path": "report/images/data_overview.png"
+    },
+    {
+      "artifact_id": "success_rate_comparison",
+      "description": "Bar chart comparing solver success rates",
+      "status": "completed",
+      "path": "report/images/success_comparison.png"
+    },
+    {
+      "artifact_id": "method_diagram",
+      "description": "Architecture diagram of hybrid method",
+      "status": "completed",
+      "path": "report/images/method_diagram.png"
+    },
+    {
+      "artifact_id": "experiment_results",
+      "description": "JSON file with experiment metrics",
+      "status": "completed",
+      "path": "outputs/experiment_results.json"
+    },
+    {
+      "artifact_id": "solver_code",
+      "description": "MAPF solver implementation",
+      "status": "completed",
+      "path": "code/mapf_solver.py"
+    },
+    {
+      "artifact_id": "runtime_comparison",
+      "description": "Runtime comparison visualization",
+      "status": "partial",
+      "note": "Generated but not included in final figure set"
+    },
+    {
+      "artifact_id": "full_benchmark_results",
+      "description": "Complete benchmark across all datasets",
+      "status": "partial",
+      "note": "Limited by execution time; minimal experiments completed"
+    }
+  ],
+  
+  "summary": {
+    "completed": 5,
+    "partial": 2,
+    "missing": 0
+  }
+}

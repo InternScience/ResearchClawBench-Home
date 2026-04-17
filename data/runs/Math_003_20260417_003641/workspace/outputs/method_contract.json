@@ -1,0 +1,20 @@
+{
+  "task": "Develop AI system for automated geometry theorem proving",
+  "input": "Formal statements of olympiad-level geometry problems",
+  "output": "Machine-verifiable, human-readable proofs for Euclidean geometry theorems",
+  "scientific_goal": "AI system that autonomously solves complex geometry problems without human demonstrations",
+  "methods": {
+    "symbolic_deduction": "Forward-chaining deduction engine using provided rules",
+    "construction_parsing": "Parse geometric constructions using defs.txt definitions",
+    "proof_search": "Beam search / BFS through deduction space",
+    "neural_guidance": "Transformer-based policy for guiding proof search (inspired by GPT-f, AlphaGo)",
+    "synthetic_data": "Generate training data from symbolic proofs"
+  },
+  "evaluation_benchmark": "IMO AG 30 (30 geometry problems from IMO since 2000)",
+  "related_work_methods": [
+    "Transformer architecture (Vaswani et al.)",
+    "GPT-f for theorem proving (Polu & Sutskever)",
+    "AlphaGo: neural networks + tree search (Silver et al.)",
+    "AlphaGeometry: neuro-symbolic geometry prover (Trinh et al.)"
+  ]
+}

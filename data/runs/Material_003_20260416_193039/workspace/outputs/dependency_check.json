@@ -1,0 +1,26 @@
+{
+  "python_version": "3.x",
+  "core_dependencies": {
+    "numpy": {"status": "available", "purpose": "numerical computation"},
+    "pandas": {"status": "available", "purpose": "data manipulation"},
+    "scikit-learn": {"status": "available", "purpose": "ML utilities, fingerprints"},
+    "matplotlib": {"status": "available", "purpose": "visualization"},
+    "seaborn": {"status": "available", "purpose": "statistical visualization"}
+  },
+  "ml_dependencies": {
+    "torch": {"status": "available", "purpose": "neural networks, GVAE"},
+    "gpytorch": {"status": "available", "purpose": "Gaussian processes"}
+  },
+  "chemistry_dependencies": {
+    "rdkit": {"status": "available", "purpose": "molecular fingerprints, SMILES parsing"}
+  },
+  "limitations": {
+    "graph_neural_networks": "Basic GVAE implemented with standard PyTorch; specialized GNN libraries not required",
+    "gpu_acceleration": "CPU-based training; may be slower for large models"
+  },
+  "fallback_strategies": {
+    "if_gpytorch_fails": "Use scikit-learn GaussianProcessRegressor as fallback",
+    "if_rdkit_fails": "Use Morgan fingerprints from alternative source or pre-computed features",
+    "if_torch_vae_complex": "Simplify to standard VAE with SMILES token embedding"
+  }
+}

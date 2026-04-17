@@ -1,0 +1,44 @@
+{
+  "claims": [
+    {
+      "claim": "22 interface residues on barnase, 19 on barstar",
+      "evidence": "outputs/interface_analysis.json - computed from PDB coordinates with 5A cutoff",
+      "status": "verified"
+    },
+    {
+      "claim": "165 atomic contacts including 17 H-bonds and 11 salt bridges",
+      "evidence": "outputs/interface_analysis.json - classified by atom type and distance",
+      "status": "verified"
+    },
+    {
+      "claim": "Core mutations have mean ddG = 4.91 kcal/mol",
+      "evidence": "outputs/skempi_analysis.json - computed from 24 COR mutations",
+      "status": "verified"
+    },
+    {
+      "claim": "Significant correlation R=0.50, p=0.002 between contacts and ddG",
+      "evidence": "outputs/correlation_results.json - Pearson correlation",
+      "status": "verified"
+    },
+    {
+      "claim": "His102, Arg59, Asp39, Tyr29 are top hotspot residues",
+      "evidence": "outputs/interface_analysis.json (contacts) + outputs/skempi_analysis.json (ddG)",
+      "status": "verified"
+    },
+    {
+      "claim": "Electrostatic complementarity dominates the interface",
+      "evidence": "outputs/scoring_results.json - negative electrostatic score (-33.6)",
+      "status": "verified"
+    },
+    {
+      "claim": "Positively charged residues most sensitive to mutation (mean ddG = 5.46)",
+      "evidence": "outputs/skempi_analysis.json - 19 mutations of Arg/Lys/His",
+      "status": "verified"
+    },
+    {
+      "claim": "Estimated BSA ~1270 A^2",
+      "evidence": "outputs/scoring_results.json - approximate from interface atom count",
+      "status": "approximate"
+    }
+  ]
+}

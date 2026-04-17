@@ -1,0 +1,31 @@
+{
+  "method_name": "Unified VOS (Variable and Operator Splitting) Framework",
+  "definition": "A framework that derives Nesterov's accelerated method and ADMM from a common continuous-time ODE: X'' + gamma(t)*X' + grad_f(X) = 0",
+  "assumptions": [
+    "f is convex with L-Lipschitz continuous gradient",
+    "g is convex (possibly non-smooth) with computable proximal operator",
+    "For linear convergence: f is mu-strongly convex (mu > 0)"
+  ],
+  "invariants": [
+    "Lyapunov function E(t) is monotonically non-increasing along trajectories",
+    "For strongly convex case: E(t) <= E(0)*exp(-sqrt(mu)*t)",
+    "For general convex case: f(X(t)) - f* <= C/t^2"
+  ],
+  "non_negotiable_structural_steps": [
+    "1. Start from continuous-time ODE with damping",
+    "2. Variable splitting: introduce velocity V = X'",
+    "3. Operator splitting: decompose f + g with auxiliary variables",
+    "4. Discretize to obtain Nesterov (variable splitting) or ADMM (operator splitting)",
+    "5. Construct Lyapunov function to prove convergence rate"
+  ],
+  "key_distinguishing_features": [
+    "Unifies acceleration and splitting through common ODE",
+    "Phase transition at damping constant r=3",
+    "Lyapunov function combines objective gap with kinetic energy",
+    "Momentum coefficient derived from condition number: beta = (sqrt(kappa)-1)/(sqrt(kappa)+1)"
+  ],
+  "deviations_from_ideal": [
+    "VOS-ADMM acceleration not fully converged - needs more sophisticated acceleration strategy",
+    "Lasso problem has mu~0, so linear convergence verified only on auxiliary quadratic problem"
+  ]
+}

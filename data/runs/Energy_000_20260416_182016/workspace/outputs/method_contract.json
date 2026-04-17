@@ -1,0 +1,26 @@
+{
+  "task": "MMGA Parameter Identification for Li-ion Battery ECAT Model",
+  "method_commitments": [
+    "Meta-Model based Genetic Algorithm (MMGA)",
+    "Artificial Neural Network (ANN) as surrogate/meta-model",
+    "Latin Hypercube Sampling (LHS) for parameter space exploration",
+    "Electrochemical-Aging-Thermal (ECAT) coupled model",
+    "P2D/SPM electrochemical model foundation",
+    "Multi-parameter identification (particle radius, reaction rates, thermal coefficients)",
+    "Validation on three datasets: CS2_36, NASA PCoE, Oxford"
+  ],
+  "framework": "MMGA = ANN meta-model + Genetic Algorithm optimization",
+  "key_parameters": [
+    "particle_radius_neg", "particle_radius_pos",
+    "reaction_rate_neg", "reaction_rate_pos",
+    "solid_diffusivity_neg", "solid_diffusivity_pos",
+    "electrolyte_diffusivity", "ionic_conductivity",
+    "thermal_conductivity", "heat_capacity",
+    "activation_energy", "initial_concentration"
+  ],
+  "datasets": {
+    "primary": "CS2_36 (CALCE, 1C CC discharge)",
+    "validation_1": "NASA PCoE (aging data, 18650 cells)",
+    "validation_2": "Oxford (dynamic urban driving profiles, 740mAh pouch)"
+  }
+}

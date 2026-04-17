@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "mace-torch": {"version": "0.3.15", "status": "available"},
+    "ase": {"status": "available"},
+    "torch": {"status": "available", "cuda": false, "device": "cpu"},
+    "numpy": {"version": "2.2.6", "status": "available"},
+    "matplotlib": {"status": "available"},
+    "scipy": {"status": "available"}
+  },
+  "model": {
+    "name": "MACE-MP-0b3-medium",
+    "source": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b3/mace-mp-0b3-medium.model",
+    "size_bytes": 79472952,
+    "status": "downloaded and verified"
+  },
+  "limitations": [
+    "No CUDA available - all computations run on CPU",
+    "Reaction barrier geometries are simplified/approximate, not DFT-optimized",
+    "Water MD limited to 2000 steps due to CPU computation time (~30 min)"
+  ]
+}

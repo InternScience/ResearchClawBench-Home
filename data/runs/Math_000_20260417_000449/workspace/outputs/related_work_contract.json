@@ -1,0 +1,43 @@
+{
+  "related_papers": {
+    "paper_000": {
+      "title": "SORT: Simple Online and Realtime Tracking",
+      "key_contributions": [
+        "Kalman filter for motion prediction",
+        "Hungarian algorithm for IoU-based assignment",
+        "Simple but effective baseline"
+      ],
+      "relevant_to_task": "Baseline tracker, foundation for ByteTrack and SparseTrack"
+    },
+    "paper_001": {
+      "title": "ByteTrack: Multi-Object Tracking by Associating Every Detection Box",
+      "key_contributions": [
+        "Two-stage association: high-score first, then low-score",
+        "Recovers occluded objects through low-confidence detections",
+        "State-of-the-art on MOT17/MOT20"
+      ],
+      "relevant_to_task": "Primary baseline for comparison with SparseTrack"
+    },
+    "paper_002": {
+      "title": "BoT-SORT: Robust Associations Multi-Pedestrian Tracking",
+      "key_contributions": [
+        "Camera motion compensation",
+        "Robust Kalman filter",
+        "ReID integration"
+      ],
+      "relevant_to_task": "Advanced tracker design principles"
+    },
+    "paper_003": {
+      "title": "YOLOX: Exceeding YOLO Series in 2021",
+      "key_contributions": [
+        "Anchor-free detection",
+        "Decoupled head",
+        "Used as detector in ByteTrack"
+      ],
+      "relevant_to_task": "Detector backbone for tracking systems"
+    }
+  },
+  "extracted_baselines": ["SORT", "ByteTrack"],
+  "extracted_metrics": ["MOTA", "IDF1", "HOTA", "ID_Switches", "FP", "FN", "MT", "ML"],
+  "key_insight": "SparseTrack extends ByteTrack by decomposing dense scenes into sparse depth layers"
+}

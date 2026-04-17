@@ -1,0 +1,28 @@
+{
+  "task": "Design and evaluate KA-GNNs for molecular property prediction",
+  "named_methods": [
+    "Kolmogorov-Arnold Network (KAN) with Fourier basis",
+    "Graph Neural Network (GNN) - specifically GCN-style message passing",
+    "KA-GNN: GNN with KAN layers replacing MLPs"
+  ],
+  "named_comparisons": [
+    "GCN with MLP layers (baseline)",
+    "KA-GNN with Fourier-based KAN layers (proposed)"
+  ],
+  "evaluation_metrics": {
+    "BACE": "ROC-AUC (scaffold split)",
+    "BBBP": "ROC-AUC (scaffold split)",
+    "ClinTox": "ROC-AUC (random split)",
+    "HIV": "ROC-AUC (scaffold split)",
+    "MUV": "PRC-AUC (random split)"
+  },
+  "molecular_representation": {
+    "nodes": "atoms with features (type, degree, charge, hybridization, aromaticity)",
+    "edges": "bonds with features (type, conjugation, ring, stereo) + non-covalent interactions"
+  },
+  "key_claims_to_test": [
+    "KA-GNN improves predictive accuracy over MLP-based GNN",
+    "KA-GNN provides better computational efficiency",
+    "KA-GNN enhances interpretability via Fourier decomposition"
+  ]
+}

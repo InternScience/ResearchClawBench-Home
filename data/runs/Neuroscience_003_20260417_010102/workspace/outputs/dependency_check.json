@@ -1,0 +1,12 @@
+{
+  "dependency_checks": {
+    "scanpy": {"available": true, "version": "installed"},
+    "sklearn": {"available": true, "used_for": "MI, silhouette, NearestNeighbors"},
+    "scipy": {"available": true, "used_for": "statistical tests"},
+    "matplotlib": {"available": true, "used_for": "plotting"},
+    "seaborn": {"available": true, "used_for": "plotting"},
+    "anndata": {"available": true, "used_for": "data handling"}
+  },
+  "limitations": [],
+  "fallbacks": []
+}

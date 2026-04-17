@@ -1,0 +1,3706 @@
+{
+  "source_file": "data/sample/2l3r/2l3r_ligand.sdf",
+  "num_atoms": 194,
+  "num_heavy_atoms": 90,
+  "num_bonds": 193,
+  "molecular_weight": 1293.5380000000014,
+  "num_rotatable_bonds": 59,
+  "num_h_donors": 23,
+  "num_h_acceptors": 17,
+  "logp": -16.189300000000014,
+  "tpsa": 637.6999999999998,
+  "atoms": [
+    {
+      "atom_index": 0,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        21.251,
+        5.738,
+        0.356
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 1,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 1,
+      "coordinates": [
+        21.165,
+        3.376,
+        -1.411
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 2,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        22.846,
+        3.197,
+        0.403
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 3,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        20.768,
+        4.64,
+        0.666
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 4,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        21.358,
+        3.366,
+        0.052
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 5,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        21.5911,
+        2.4586,
+        -1.8433
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 6,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        21.6702,
+        4.2532,
+        -1.8415
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 7,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        20.0899,
+        3.4236,
+        -1.6387
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 8,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        23.2284,
+        2.2734,
+        -0.056
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 9,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        22.9606,
+        3.1382,
+        1.4954
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 10,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        23.413,
+        4.0585,
+        0.0206
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 11,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        20.808,
+        2.4962,
+        0.4405
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 12,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        18.124,
+        7.784,
+        1.845
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 13,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        19.709,
+        4.482,
+        1.517
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 14,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 1,
+      "coordinates": [
+        23.18,
+        5.942,
+        7.056
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 15,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        22.754,
+        3.775,
+        6.463
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 16,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        21.283,
+        5.405,
+        5.822
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 17,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        18.444,
+        6.682,
+        1.379
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 18,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        20.761,
+        6.778,
+        5.655
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 19,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        19.669,
+        6.807,
+        4.572
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 20,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        20.178,
+        6.217,
+        3.236
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 21,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        22.404,
+        5.048,
+        6.46
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 22,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        19.093,
+        5.601,
+        2.288
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 23,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        19.3118,
+        3.4611,
+        1.617
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 24,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        24.0955,
+        5.6182,
+        7.5727
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 25,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        22.9085,
+        7.0077,
+        7.0339
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 26,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        23.6713,
+        3.458,
+        6.9808
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 27,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        22.1284,
+        3.0314,
+        5.9477
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 28,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        20.7328,
+        4.5521,
+        5.398
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 29,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        20.3319,
+        7.1254,
+        6.6064
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 30,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        21.5806,
+        7.4481,
+        5.3561
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 31,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        18.8048,
+        6.2145,
+        4.9068
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 32,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        19.3549,
+        7.8464,
+        4.3957
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 33,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        20.6752,
+        7.0059,
+        2.6526
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 34,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        20.8934,
+        5.4071,
+        3.4417
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 35,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        18.2699,
+        5.1488,
+        2.8607
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 36,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        16.487,
+        5.431,
+        -1.786
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 37,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        20.098,
+        7.955,
+        -1.146
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 38,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        18.214,
+        6.348,
+        0.099
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 39,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        18.568,
+        9.008,
+        -2.676
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 40,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        16.568,
+        6.664,
+        -1.702
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 41,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        18.893,
+        7.725,
+        -1.891
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 42,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        17.729,
+        7.306,
+        -0.916
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 43,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        21.018,
+        8.2573,
+        -1.6678
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 44,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        18.405,
+        5.3012,
+        -0.1797
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 45,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        19.4101,
+        9.2553,
+        -3.3392
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 46,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        18.4004,
+        9.8362,
+        -1.9717
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 47,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        17.6612,
+        8.8496,
+        -3.2782
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 48,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        19.106,
+        6.9046,
+        -2.5922
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 49,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        17.3662,
+        8.184,
+        -0.3614
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 50,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        13.873,
+        8.92,
+        -4.349
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 51,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        15.678,
+        7.498,
+        -2.282
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 52,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 1,
+      "coordinates": [
+        8.185,
+        7.532,
+        -1.848
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 53,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        14.259,
+        7.746,
+        -4.316
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 54,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        9.321,
+        6.93,
+        -2.576
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 55,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        10.649,
+        7.165,
+        -1.832
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 56,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        11.876,
+        6.763,
+        -2.684
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 57,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        13.218,
+        7.2,
+        -2.049
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 58,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        14.464,
+        7.021,
+        -2.97
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 59,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        15.8904,
+        8.5758,
+        -2.2252
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 60,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        7.254,
+        7.3471,
+        -2.4038
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 61,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        8.3449,
+        8.616,
+        -1.7507
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 62,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        8.1104,
+        7.0811,
+        -0.8474
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 63,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.1611,
+        5.846,
+        -2.6733
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 64,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.3956,
+        7.3808,
+        -3.5766
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 65,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.7437,
+        8.2313,
+        -1.5789
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 66,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.6632,
+        6.5664,
+        -0.9092
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 67,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        11.8999,
+        5.6693,
+        -2.7993
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 68,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        11.8046,
+        7.2347,
+        -3.6752
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 69,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        13.1686,
+        8.2667,
+        -1.785
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 70,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        13.4052,
+        6.6062,
+        -1.1422
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 71,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        14.6469,
+        5.9555,
+        -3.1729
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 72,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        13.034,
+        5.456,
+        -7.098
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 73,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        16.783,
+        9.293,
+        -5.266
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 74,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        14.557,
+        7.042,
+        -5.424
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 75,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        18.292,
+        7.822,
+        -6.011
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 76,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        13.143,
+        6.645,
+        -7.399
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 77,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        16.563,
+        8.583,
+        -7.542
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 78,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        15.523,
+        7.455,
+        -7.724
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 79,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        17.231,
+        8.599,
+        -6.175
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 80,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        14.263,
+        7.511,
+        -6.796
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 81,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        15.0453,
+        6.0687,
+        -5.2683
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 82,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        18.8111,
+        7.7974,
+        -5.0415
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 83,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        18.6536,
+        7.2017,
+        -6.8444
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 84,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        17.3611,
+        8.4701,
+        -8.2905
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 85,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        16.0725,
+        9.5587,
+        -7.6735
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 86,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        15.1386,
+        7.4735,
+        -8.7545
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 87,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        15.9984,
+        6.4827,
+        -7.5274
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 88,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        13.9373,
+        8.5549,
+        -6.6767
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 89,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        12.87,
+        6.877,
+        -10.842
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 90,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        10.321,
+        8.788,
+        -9.501
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 91,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        12.32,
+        7.265,
+        -8.247
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 92,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        9.297,
+        7.525,
+        -7.688
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 93,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        11.812,
+        6.34,
+        -10.484
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 94,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        9.993,
+        7.458,
+        -9.068
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 95,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        11.286,
+        6.582,
+        -9.047
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 96,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.5327,
+        9.5513,
+        -9.5785
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 97,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        12.4489,
+        8.3543,
+        -8.3295
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 98,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        8.3964,
+        8.1523,
+        -7.7616
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 99,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.9872,
+        7.9596,
+        -6.95
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 100,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.0125,
+        6.5107,
+        -7.3712
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 101,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.2848,
+        7.0591,
+        -9.8091
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 102,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        11.0897,
+        5.6138,
+        -8.5633
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 103,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        9.836,
+        3.554,
+        -13.024
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 104,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        11.091,
+        5.533,
+        -11.3
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 105,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        12.749,
+        4.311,
+        -12.724
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 106,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        10.358,
+        4.574,
+        -13.484
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 107,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        11.502,
+        5.235,
+        -12.698
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 108,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.1696,
+        5.0921,
+        -10.8917
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 109,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        13.5676,
+        4.7839,
+        -12.1616
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 110,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        13.0646,
+        4.1503,
+        -13.7654
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 111,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        12.4985,
+        3.344,
+        -12.2634
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 112,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        11.7361,
+        6.2132,
+        -13.1434
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 113,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        7.292,
+        4.826,
+        -14.033
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 114,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        9.99,
+        5.169,
+        -14.658
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 115,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 1,
+      "coordinates": [
+        10.065,
+        -1.513,
+        -18.714
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 116,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        8.033,
+        -1.56,
+        -19.787
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 117,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        8.501,
+        0.182,
+        -18.348
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 118,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        7.575,
+        4.597,
+        -15.199
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 119,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        9.301,
+        0.932,
+        -17.36
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 120,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        8.715,
+        2.326,
+        -17.07
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 121,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        9.543,
+        3.11,
+        -16.023
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 122,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        8.869,
+        -0.97,
+        -18.944
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 123,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        9.061,
+        4.567,
+        -15.669
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 124,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.4292,
+        6.1615,
+        -14.837
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 125,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.3466,
+        -2.4536,
+        -19.21
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 126,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.77,
+        -1.0204,
+        -18.0282
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 127,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        8.3213,
+        -2.5002,
+        -20.2798
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 128,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        7.0511,
+        -1.1093,
+        -19.9937
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 129,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        7.5135,
+        0.5571,
+        -18.6548
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 130,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.333,
+        0.3725,
+        -16.4134
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 131,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.324,
+        1.0654,
+        -17.7418
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 132,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        8.6961,
+        2.9161,
+        -17.9981
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 133,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        7.6912,
+        2.2199,
+        -16.6821
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 134,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.5431,
+        2.5609,
+        -15.0698
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 135,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        10.5768,
+        3.2217,
+        -16.382
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 136,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        9.12,
+        5.2158,
+        -16.5553
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 137,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        5.085,
+        3.039,
+        -18.01
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 138,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        6.625,
+        4.448,
+        -16.15
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 139,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 1,
+      "coordinates": [
+        2.85,
+        6.936,
+        -11.584
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 140,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        1.429,
+        6.359,
+        -11.608
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 141,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        3.009,
+        7.85,
+        -10.393
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 142,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        3.851,
+        5.794,
+        -11.472
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 143,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        4.662,
+        3.086,
+        -16.844
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 144,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        3.087,
+        7.767,
+        -12.888
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 145,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        3.039,
+        6.989,
+        -14.237
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 146,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        4.4,
+        6.352,
+        -14.677
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 147,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        4.252,
+        5.371,
+        -15.864
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 148,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        5.203,
+        4.126,
+        -15.848
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 149,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        6.9501,
+        4.5775,
+        -17.1929
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 150,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        1.2557,
+        5.7731,
+        -10.6933
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 151,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        1.3121,
+        5.7088,
+        -12.4875
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 152,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        0.7002,
+        7.1813,
+        -11.6604
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 153,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.8449,
+        7.2784,
+        -9.4676
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 154,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.2733,
+        8.6653,
+        -10.4557
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 155,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        4.0247,
+        8.2722,
+        -10.3879
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 156,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        3.6604,
+        5.2287,
+        -10.5478
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 157,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        4.8721,
+        6.2025,
+        -11.4481
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 158,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        3.7436,
+        5.1259,
+        -12.3392
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 159,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.3181,
+        8.5495,
+        -12.969
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 160,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        4.0824,
+        8.2337,
+        -12.8496
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 161,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.314,
+        6.1653,
+        -14.1596
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 162,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.7334,
+        7.6718,
+        -15.0434
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 163,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        5.0944,
+        7.1474,
+        -14.9854
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 164,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        4.8331,
+        5.7937,
+        -13.834
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 165,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        3.227,
+        4.9723,
+        -15.8846
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 166,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        4.4582,
+        5.901,
+        -16.8056
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 167,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        5.2573,
+        3.717,
+        -14.8283
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 168,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        0.584,
+        1.407,
+        -17.961
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 169,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        2.493,
+        0.092,
+        -15.113
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 170,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        3.726,
+        2.26,
+        -16.344
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 171,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        1.462,
+        1.998,
+        -17.322
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 172,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        2.792,
+        -0.016,
+        -16.493
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 173,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        2.869,
+        1.378,
+        -17.161
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 174,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.4042,
+        -0.8149,
+        -14.4969
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 175,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        3.6203,
+        2.2692,
+        -15.2491
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 176,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        3.7618,
+        -0.5194,
+        -16.6197
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 177,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.0068,
+        -0.6016,
+        -16.9936
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 178,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        3.3385,
+        1.2971,
+        -18.1525
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 179,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        -1.232,
+        4.025,
+        -18.807
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 180,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": -1,
+      "coordinates": [
+        0.476,
+        5.377,
+        -18.591
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 181,
+      "element": "O",
+      "atomic_num": 8,
+      "formal_charge": 0,
+      "coordinates": [
+        0.722,
+        4.615,
+        -14.481
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 182,
+      "element": "N",
+      "atomic_num": 7,
+      "formal_charge": 0,
+      "coordinates": [
+        1.272,
+        3.192,
+        -16.727
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 183,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        -1.366,
+        5.566,
+        -15.263
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 184,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        -0.292,
+        4.496,
+        -18.135
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP2"
+    },
+    {
+      "atom_index": 185,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        0.042,
+        5.077,
+        -15.657
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 186,
+      "element": "C",
+      "atomic_num": 6,
+      "formal_charge": 0,
+      "coordinates": [
+        -0.001,
+        3.921,
+        -16.721
+      ],
+      "is_aromatic": false,
+      "hybridization": "SP3"
+    },
+    {
+      "atom_index": 187,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        0.8519,
+        5.288,
+        -13.6207
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 188,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        2.1519,
+        3.6176,
+        -16.2223
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 189,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        -1.2795,
+        6.3717,
+        -14.5192
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 190,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        -1.9375,
+        4.7301,
+        -14.8333
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 191,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        -1.8855,
+        5.945,
+        -16.1554
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 192,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        0.6238,
+        5.9289,
+        -16.0388
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    },
+    {
+      "atom_index": 193,
+      "element": "H",
+      "atomic_num": 1,
+      "formal_charge": 0,
+      "coordinates": [
+        -0.7644,
+        3.1747,
+        -16.4559
+      ],
+      "is_aromatic": false,
+      "hybridization": "S"
+    }
+  ],
+  "bonds": [
+    {
+      "begin_atom": 0,
+      "end_atom": 3,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 1,
+      "end_atom": 4,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 1,
+      "end_atom": 5,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 1,
+      "end_atom": 6,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 1,
+      "end_atom": 7,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 2,
+      "end_atom": 4,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 2,
+      "end_atom": 8,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 2,
+      "end_atom": 9,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 2,
+      "end_atom": 10,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 3,
+      "end_atom": 4,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 3,
+      "end_atom": 13,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 4,
+      "end_atom": 11,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 12,
+      "end_atom": 17,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 13,
+      "end_atom": 22,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 13,
+      "end_atom": 23,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 14,
+      "end_atom": 21,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 14,
+      "end_atom": 24,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 14,
+      "end_atom": 25,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 15,
+      "end_atom": 21,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 15,
+      "end_atom": 26,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 15,
+      "end_atom": 27,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 16,
+      "end_atom": 18,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 16,
+      "end_atom": 21,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 16,
+      "end_atom": 28,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 17,
+      "end_atom": 22,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 17,
+      "end_atom": 38,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 18,
+      "end_atom": 19,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 18,
+      "end_atom": 29,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 18,
+      "end_atom": 30,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 19,
+      "end_atom": 20,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 19,
+      "end_atom": 31,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 19,
+      "end_atom": 32,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 20,
+      "end_atom": 22,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 20,
+      "end_atom": 33,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 20,
+      "end_atom": 34,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 22,
+      "end_atom": 35,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 36,
+      "end_atom": 40,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 37,
+      "end_atom": 41,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 37,
+      "end_atom": 43,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 38,
+      "end_atom": 42,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 38,
+      "end_atom": 44,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 39,
+      "end_atom": 41,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 39,
+      "end_atom": 45,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 39,
+      "end_atom": 46,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 39,
+      "end_atom": 47,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 40,
+      "end_atom": 42,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 40,
+      "end_atom": 51,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 41,
+      "end_atom": 42,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 41,
+      "end_atom": 48,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 42,
+      "end_atom": 49,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 50,
+      "end_atom": 53,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 51,
+      "end_atom": 58,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 51,
+      "end_atom": 59,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 52,
+      "end_atom": 54,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 52,
+      "end_atom": 60,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 52,
+      "end_atom": 61,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 52,
+      "end_atom": 62,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 53,
+      "end_atom": 58,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 53,
+      "end_atom": 74,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 54,
+      "end_atom": 55,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 54,
+      "end_atom": 63,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 54,
+      "end_atom": 64,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 55,
+      "end_atom": 56,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 55,
+      "end_atom": 65,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 55,
+      "end_atom": 66,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 56,
+      "end_atom": 57,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 56,
+      "end_atom": 67,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 56,
+      "end_atom": 68,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 57,
+      "end_atom": 58,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 57,
+      "end_atom": 69,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 57,
+      "end_atom": 70,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 58,
+      "end_atom": 71,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 72,
+      "end_atom": 76,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 73,
+      "end_atom": 79,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 74,
+      "end_atom": 80,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 74,
+      "end_atom": 81,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 75,
+      "end_atom": 79,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 75,
+      "end_atom": 82,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 75,
+      "end_atom": 83,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 76,
+      "end_atom": 80,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 76,
+      "end_atom": 91,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 77,
+      "end_atom": 78,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 77,
+      "end_atom": 79,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 77,
+      "end_atom": 84,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 77,
+      "end_atom": 85,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 78,
+      "end_atom": 80,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 78,
+      "end_atom": 86,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 78,
+      "end_atom": 87,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 80,
+      "end_atom": 88,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 89,
+      "end_atom": 93,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 90,
+      "end_atom": 94,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 90,
+      "end_atom": 96,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 91,
+      "end_atom": 95,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 91,
+      "end_atom": 97,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 92,
+      "end_atom": 94,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 92,
+      "end_atom": 98,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 92,
+      "end_atom": 99,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 92,
+      "end_atom": 100,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 93,
+      "end_atom": 95,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 93,
+      "end_atom": 104,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 94,
+      "end_atom": 95,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 94,
+      "end_atom": 101,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 95,
+      "end_atom": 102,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 103,
+      "end_atom": 106,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 104,
+      "end_atom": 107,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 104,
+      "end_atom": 108,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 105,
+      "end_atom": 107,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 105,
+      "end_atom": 109,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 105,
+      "end_atom": 110,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 105,
+      "end_atom": 111,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 106,
+      "end_atom": 107,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 106,
+      "end_atom": 114,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 107,
+      "end_atom": 112,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 113,
+      "end_atom": 118,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 114,
+      "end_atom": 123,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 114,
+      "end_atom": 124,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 115,
+      "end_atom": 122,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 115,
+      "end_atom": 125,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 115,
+      "end_atom": 126,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 116,
+      "end_atom": 122,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 116,
+      "end_atom": 127,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 116,
+      "end_atom": 128,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 117,
+      "end_atom": 119,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 117,
+      "end_atom": 122,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 117,
+      "end_atom": 129,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 118,
+      "end_atom": 123,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 118,
+      "end_atom": 138,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 119,
+      "end_atom": 120,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 119,
+      "end_atom": 130,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 119,
+      "end_atom": 131,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 120,
+      "end_atom": 121,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 120,
+      "end_atom": 132,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 120,
+      "end_atom": 133,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 121,
+      "end_atom": 123,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 121,
+      "end_atom": 134,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 121,
+      "end_atom": 135,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 123,
+      "end_atom": 136,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 137,
+      "end_atom": 143,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 138,
+      "end_atom": 148,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 138,
+      "end_atom": 149,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 139,
+      "end_atom": 140,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 139,
+      "end_atom": 141,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 139,
+      "end_atom": 142,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 139,
+      "end_atom": 144,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 140,
+      "end_atom": 150,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 140,
+      "end_atom": 151,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 140,
+      "end_atom": 152,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 141,
+      "end_atom": 153,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 141,
+      "end_atom": 154,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 141,
+      "end_atom": 155,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 142,
+      "end_atom": 156,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 142,
+      "end_atom": 157,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 142,
+      "end_atom": 158,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 143,
+      "end_atom": 148,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 143,
+      "end_atom": 170,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 144,
+      "end_atom": 145,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 144,
+      "end_atom": 159,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 144,
+      "end_atom": 160,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 145,
+      "end_atom": 146,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 145,
+      "end_atom": 161,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 145,
+      "end_atom": 162,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 146,
+      "end_atom": 147,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 146,
+      "end_atom": 163,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 146,
+      "end_atom": 164,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 147,
+      "end_atom": 148,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 147,
+      "end_atom": 165,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 147,
+      "end_atom": 166,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 148,
+      "end_atom": 167,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 168,
+      "end_atom": 171,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 169,
+      "end_atom": 172,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 169,
+      "end_atom": 174,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 170,
+      "end_atom": 173,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 170,
+      "end_atom": 175,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 171,
+      "end_atom": 173,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 171,
+      "end_atom": 182,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 172,
+      "end_atom": 173,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 172,
+      "end_atom": 176,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 172,
+      "end_atom": 177,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 173,
+      "end_atom": 178,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 179,
+      "end_atom": 184,
+      "bond_type": "DOUBLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 180,
+      "end_atom": 184,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 181,
+      "end_atom": 185,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 181,
+      "end_atom": 187,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 182,
+      "end_atom": 186,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 182,
+      "end_atom": 188,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 183,
+      "end_atom": 185,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 183,
+      "end_atom": 189,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 183,
+      "end_atom": 190,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 183,
+      "end_atom": 191,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 184,
+      "end_atom": 186,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 185,
+      "end_atom": 186,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 185,
+      "end_atom": 192,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    },
+    {
+      "begin_atom": 186,
+      "end_atom": 193,
+      "bond_type": "SINGLE",
+      "is_aromatic": false
+    }
+  ],
+  "coordinates_mean": [
+    11.15783659793814,
+    5.348000000000001,
+    -8.189456701030926
+  ],
+  "coordinates_std": [
+    7.088497652851791,
+    2.6319405300875482,
+    7.623261771200628
+  ]
+}

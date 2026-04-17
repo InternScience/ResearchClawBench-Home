@@ -1,0 +1,18 @@
+{
+  "model_config": {
+    "num_timesteps": 100,
+    "hidden_dim": 128,
+    "num_layers": 4,
+    "num_heads": 4
+  },
+  "num_samples": 10,
+  "ligand_info": {
+    "num_atoms": 194,
+    "molecular_weight": 1293.5380000000014
+  },
+  "metrics_summary": {
+    "mean_rmsd": 0.0,
+    "std_rmsd": 0.0
+  },
+  "per_sample_rmsds": []
+}

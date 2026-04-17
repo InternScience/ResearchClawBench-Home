@@ -1,0 +1,35 @@
+{
+  "task": "V*/SEAL Training-Free Framework Analysis",
+  "objective": "Mitigate information loss from fixed-resolution vision encoders",
+  "method": "Task-guided cropping with LLM-guided visual search",
+  "datasets": {
+    "demo1": {
+      "path": "data/demo_imgs/demo1.png",
+      "size": [
+        1024,
+        768
+      ],
+      "compression_ratio_224": 15.673469387755102
+    },
+    "demo2": {
+      "path": "data/demo_imgs/demo2.png",
+      "size": [
+        2250,
+        1500
+      ],
+      "compression_ratio_224": 67.26323341836735
+    }
+  },
+  "key_findings": [
+    "High-resolution images suffer significant information loss when resized to standard encoder resolutions (224x224 or 336x336)",
+    "Demo 2 (2250x1500) loses ~45x more pixels than Demo 1 when compressed to 224x224",
+    "The V* framework addresses this by identifying ROIs through LLM guidance and processing crops at full resolution",
+    "Crops are integrated into Visual Working Memory for final reasoning"
+  ],
+  "figures_generated": [
+    "data_overview.png",
+    "resolution_analysis.png",
+    "cropping_simulation.png",
+    "framework_comparison.png"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "method": "Linear Optimal Power Flow (LOPF) using PyPSA",
+  "framework": "PyPSA (Python for Power System Analysis)",
+  "solver": "HiGHS (open-source LP solver)",
+  "network_model": "Transport model (Links) - no Kirchhoff voltage law constraints",
+  "spatial_resolution": "20-bus model of GB power system",
+  "temporal_resolution": "Hourly (168 hours = 1 week)",
+  "generation_types": ["onshore wind", "gas (CCGT)", "nuclear"],
+  "storage_type": "Pumped Hydro Storage (PHS)",
+  "load_shedding": "VOLL generators at each bus (£3000/MWh)",
+  "scenarios": [
+    "Base Case",
+    "High Wind (1.5x capacity factors)",
+    "Low Wind (0.5x capacity factors)",
+    "No Storage",
+    "Constrained Transmission (0.5x capacity)",
+    "Enhanced Transmission (2.0x capacity)"
+  ],
+  "objective": "Minimize total system cost (generation + load shedding)",
+  "key_outputs": [
+    "Optimal generation dispatch by carrier",
+    "Storage operation (charge/discharge/SoC)",
+    "Transmission flows and utilization",
+    "Wind curtailment rates",
+    "Nodal marginal prices",
+    "System cost breakdown"
+  ]
+}

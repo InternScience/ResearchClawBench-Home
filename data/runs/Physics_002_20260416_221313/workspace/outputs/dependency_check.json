@@ -1,0 +1,38 @@
+{
+  "required_dependencies": {
+    "python3": {"status": "available", "version_checked": true},
+    "numpy": {"status": "available", "purpose": "Numerical computation for fidelity calculations"},
+    "matplotlib": {"status": "installed", "purpose": "Plot generation"},
+    "seaborn": {"status": "installed", "purpose": "Statistical visualization styling"}
+  },
+  "method_requirements": {
+    "XEB_fidelity_computation": {
+      "formula": "F_XEB = 2^n * <P(x_i)>_i - 1",
+      "requires_classical_simulation": false,
+      "note": "Ideal probabilities provided in input data, no need for on-the-fly simulation"
+    },
+    "bootstrap_uncertainty": {
+      "method": "Resampling with replacement",
+      "n_iterations": 200,
+      "computational_cost": "O(n_bootstrap * n_samples) per instance"
+    }
+  },
+  "data_format_compatibility": {
+    "counts_files": {
+      "format": "JSON with bitstring keys and integer counts",
+      "example_key": "(0, 0, 0, ..., 1, 0)",
+      "parsing": "Tuple-string format converted to simple bitstring"
+    },
+    "amplitudes_files": {
+      "format": "JSON with bitstring keys and complex amplitude strings",
+      "example_value": "(3.97e-07+3.09e-08j)",
+      "conversion": "Probability = |amplitude|^2"
+    }
+  },
+  "limitations": {
+    "subset_verification": "Only ~20 bitstrings matched per instance, not full 2^N distribution",
+    "systematic_uncertainties": "Bootstrap captures statistical error only, not calibration drift or amplitude computation errors",
+    "negative_fidelities": "Can occur due to statistical fluctuations when true fidelity is near zero"
+  },
+  "all_dependencies_satisfied": true
+}

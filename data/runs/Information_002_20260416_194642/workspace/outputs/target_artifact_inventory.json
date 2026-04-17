@@ -1,0 +1,22 @@
+{
+  "target_artifacts": [
+    {"id": "A1", "description": "Task-level score heatmap", "status": "satisfied", "path": "report/images/task_scores_heatmap.png"},
+    {"id": "A2", "description": "Grader score distribution", "status": "satisfied", "path": "report/images/grader_score_distribution.png"},
+    {"id": "A3", "description": "Per-task placeholder scores", "status": "satisfied", "path": "report/images/per_task_placeholder_scores.png"},
+    {"id": "A4", "description": "Score categories bar chart", "status": "satisfied", "path": "report/images/score_categories_bar.png"},
+    {"id": "A5", "description": "HF pipeline performance diagram", "status": "satisfied", "path": "report/images/hf_pipeline_performance.png"},
+    {"id": "A6", "description": "Inter-grader agreement analysis", "status": "satisfied", "path": "report/images/intergrader_agreement.png"},
+    {"id": "A7", "description": "Extraction quality distribution", "status": "satisfied", "path": "report/images/extraction_quality_pie.png"},
+    {"id": "A8", "description": "Score progression through steps", "status": "satisfied", "path": "report/images/score_progression.png"},
+    {"id": "A9", "description": "Parsed YAML data", "status": "satisfied", "path": "outputs/parsed_data.json"},
+    {"id": "A10", "description": "Detailed analysis", "status": "satisfied", "path": "outputs/detailed_analysis.json"},
+    {"id": "A11", "description": "Failure cases", "status": "satisfied", "path": "outputs/failure_cases.json"},
+    {"id": "A12", "description": "Overall metrics", "status": "satisfied", "path": "outputs/overall_metrics.json"},
+    {"id": "A13", "description": "Comprehensive research report", "status": "satisfied", "path": "report/report.md"},
+    {"id": "A14", "description": "Method contract", "status": "satisfied", "path": "outputs/method_contract.json"},
+    {"id": "A15", "description": "Dependency check", "status": "satisfied", "path": "outputs/dependency_check.json"},
+    {"id": "A16", "description": "Related work contract", "status": "satisfied", "path": "outputs/related_work_contract.json"},
+    {"id": "A17", "description": "Method fidelity checklist", "status": "satisfied", "path": "outputs/method_fidelity_checklist.json"},
+    {"id": "A18", "description": "Task summary table", "status": "satisfied", "path": "outputs/task_summary.json"}
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "path": "/mnt/shared-storage-gpfs2/sciprismax2/gaohengjian/ResearchClawBench/workspaces/Information_000_20260416_174938/data/doge.png",
+  "filename": "doge.png",
+  "format": "PNG",
+  "mode": "RGB",
+  "width": 1200,
+  "height": 799,
+  "aspect_ratio": 1.5018773466833542,
+  "total_pixels": 958800,
+  "channels": 3,
+  "mean_rgb": [
+    240.9539090529829,
+    237.80270129328326,
+    231.24575615352524
+  ],
+  "std_rgb": [
+    41.6558628610283,
+    47.054203148720376,
+    59.24366493370453
+  ],
+  "min_rgb": [
+    0,
+    0,
+    0
+  ],
+  "max_rgb": [
+    255,
+    255,
+    255
+  ],
+  "edge_density": 0.03860659157279933,
+  "entropy": 2.128507893862819,
+  "image_dimensions": {
+    "width": 1200,
+    "height": 799
+  },
+  "n_text_regions": 6,
+  "text_regions": [
+    {
+      "x": 25,
+      "y": 429,
+      "width": 230,
+      "height": 54,
+      "area": 12420
+    },
+    {
+      "x": 262,
+      "y": 429,
+      "width": 130,
+      "height": 45,
+      "area": 5850
+    },
+    {
+      "x": 403,
+      "y": 429,
+      "width": 190,
+      "height": 54,
+      "area": 10260
+    },
+    {
+      "x": 734,
+      "y": 505,
+      "width": 119,
+      "height": 27,
+      "area": 3213
+    },
+    {
+      "x": 860,
+      "y": 505,
+      "width": 116,
+      "height": 27,
+      "area": 3132
+    }
+  ],
+  "n_dog_regions": 2,
+  "dog_regions": [
+    {
+      "label": 1,
+      "x": 91,
+      "y": 258,
+      "width": 333,
+      "height": 388,
+      "area": 43835,
+      "centroid": [
+        261.73929508383713,
+        460.7126268963157
+      ]
+    },
+    {
+      "label": 13,
+      "x": 870,
+      "y": 334,
+      "width": 197,
+      "height": 316,
+      "area": 31708,
+      "centroid": [
+        973.378831840545,
+        482.764980446575
+      ]
+    }
+  ],
+  "meme_type": "comparison",
+  "layout": "horizontal",
+  "has_comparison_structure": true,
+  "has_text_overlay": true,
+  "visual_contrast": true,
+  "estimated_meme_type": "comparison_meme",
+  "humor_mechanism": "juxtaposition"
+}

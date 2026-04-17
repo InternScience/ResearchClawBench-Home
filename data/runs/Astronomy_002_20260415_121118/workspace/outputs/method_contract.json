@@ -1,0 +1,21 @@
+{
+  "task": "Measure H0 using Local Distance Network with covariance-weighted GLS",
+  "named_methods": [
+    "Generalized Least Squares (GLS) framework",
+    "Three-rung distance ladder",
+    "Covariance-weighted approach",
+    "Multiple geometric anchors (N4258, LMC)",
+    "Primary indicators (Cepheids, TRGB)",
+    "Secondary indicators (SNe Ia, SBF)",
+    "Hubble flow measurements"
+  ],
+  "target_output": "H0 = 73.50 ± 0.81 km/s/Mpc (baseline from full dataset)",
+  "actual_output": "H0 from minimal dataset differs due to simplified data",
+  "key_equations": [
+    "Y = Lq (linear system)",
+    "chi2 = (y-Lq)^T C^{-1} (y-Lq)",
+    "q_best = (L^T C^{-1} L)^{-1} L^T C^{-1} y",
+    "c_q = (L^T C^{-1} L)^{-1}",
+    "H0 = 10^(5logH0 / 5)"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "artifacts": [
+    {
+      "id": "data_overview",
+      "description": "Distribution of adhesive strengths in initial and optimization datasets",
+      "status": "completed",
+      "path": "report/images/figure1_data_overview.png"
+    },
+    {
+      "id": "correlation_analysis",
+      "description": "Correlation heatmap between monomer compositions and adhesive strength",
+      "status": "completed",
+      "path": "report/images/figure2_correlation_heatmap.png"
+    },
+    {
+      "id": "composition_by_tier",
+      "description": "Average monomer composition by performance tier",
+      "status": "completed",
+      "path": "report/images/figure3_composition_by_tier.png"
+    },
+    {
+      "id": "model_performance",
+      "description": "ML model comparison with parity plots",
+      "status": "completed",
+      "path": "report/images/figure4_model_performance.png"
+    },
+    {
+      "id": "feature_importance",
+      "description": "Feature importance from RF and GB models",
+      "status": "completed",
+      "path": "report/images/figure5_feature_importance.png"
+    },
+    {
+      "id": "optimization_trajectory",
+      "description": "Performance comparison across optimization methods",
+      "status": "completed",
+      "path": "report/images/figure6_optimization_trajectory.png"
+    },
+    {
+      "id": "high_performers",
+      "description": "Composition analysis of high-performing formulations",
+      "status": "completed",
+      "path": "report/images/figure7_high_performers.png"
+    },
+    {
+      "id": "model_results_json",
+      "description": "Quantitative model performance metrics",
+      "status": "completed",
+      "path": "outputs/model_results.json"
+    },
+    {
+      "id": "correlation_matrix_csv",
+      "description": "Full correlation matrix data",
+      "status": "completed",
+      "path": "outputs/correlation_matrix.csv"
+    }
+  ],
+  "summary": {
+    "total_artifacts": 9,
+    "completed": 9,
+    "pending": 0,
+    "failed": 0
+  }
+}

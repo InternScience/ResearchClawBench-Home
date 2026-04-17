@@ -1,0 +1,33 @@
+{
+  "method_name": "Sequential Model-Based Optimization (SMBO) with RFR-GP",
+  "definition": "Two-model Bayesian optimization: Random Forest Regressor provides hypothetical predictions, Gaussian Process maximizes Expected Improvement acquisition function",
+  "assumptions": [
+    "Monomer fractions sum to 1.0 (compositional constraint)",
+    "Adhesive strength is a smooth function of composition",
+    "GP uncertainty estimates are calibrated",
+    "Training data is representative of the accessible design space"
+  ],
+  "invariants": [
+    "Compositions must be non-negative and sum to unity",
+    "EI balances exploration (high uncertainty) and exploitation (high prediction)",
+    "Models are retrained with augmented data after each experimental round"
+  ],
+  "non_negotiable_steps": [
+    "Train surrogate model on experimental data",
+    "Generate candidate formulations satisfying compositional constraints",
+    "Compute Expected Improvement for all candidates",
+    "Select top candidates by EI and/or prediction for experimental validation",
+    "Validate experimentally and iterate"
+  ],
+  "key_distinguishing_features": [
+    "Hybrid RFR-GP approach: RFR for robust prediction, GP for uncertainty quantification",
+    "Protein-inspired monomer mapping: amino acid categories to synthetic monomers",
+    "Multi-round optimization with experimental feedback",
+    "Compositional constraint (Dirichlet-like design space)"
+  ],
+  "deviations_from_original": [
+    "Used 50,000 random Dirichlet candidates instead of exhaustive grid search",
+    "Added focused perturbations around top performers for better exploitation",
+    "Single SMBO run instead of 1000 repetitions for formula frequency analysis"
+  ]
+}

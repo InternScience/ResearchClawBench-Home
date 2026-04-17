@@ -1,0 +1,30 @@
+{
+  "primary_artifacts": [
+    {"id": "A1", "name": "data_overview_statistics", "type": "json", "status": "satisfied", "path": "outputs/data_statistics.json"},
+    {"id": "A2", "name": "property_prediction_model_comparison", "type": "table/json", "status": "satisfied", "path": "outputs/property_prediction_results.json"},
+    {"id": "A3", "name": "property_prediction_scatter_plot", "type": "figure", "status": "satisfied", "path": "report/images/predicted_vs_actual.png"},
+    {"id": "A4", "name": "crystal_graph_visualization", "type": "figure", "status": "satisfied", "path": "report/images/crystal_graph.png"},
+    {"id": "A5", "name": "feature_importance_analysis", "type": "figure+json", "status": "satisfied", "path": "report/images/feature_importance.png, outputs/feature_importance.json"},
+    {"id": "A6", "name": "structure_generation_results", "type": "figure", "status": "satisfied", "path": "report/images/structure_generation.png"},
+    {"id": "A7", "name": "lattice_parameter_distribution", "type": "figure", "status": "satisfied", "path": "report/images/data_overview.png"},
+    {"id": "A8", "name": "vae_latent_space_analysis", "type": "figure", "status": "satisfied", "path": "report/images/vae_latent_space.png"},
+    {"id": "A9", "name": "bayesian_optimization_convergence", "type": "figure", "status": "satisfied", "path": "report/images/bayesian_optimization.png"},
+    {"id": "A10", "name": "optimization_landscape", "type": "figure", "status": "satisfied", "path": "report/images/optimization_landscape.png"},
+    {"id": "A11", "name": "model_performance_summary", "type": "json", "status": "satisfied", "path": "outputs/property_prediction_results.json"},
+    {"id": "A12", "name": "generated_structures_validation", "type": "json", "status": "satisfied", "path": "outputs/structure_generation_results.json"},
+    {"id": "A13", "name": "comprehensive_summary", "type": "figure", "status": "satisfied", "path": "report/images/comprehensive_summary.png"},
+    {"id": "A14", "name": "workflow_diagram", "type": "figure", "status": "satisfied", "path": "report/images/workflow_diagram.png"},
+    {"id": "A15", "name": "model_comparison_bar_chart", "type": "figure", "status": "satisfied", "path": "report/images/model_comparison.png"}
+  ],
+  "report_sections": [
+    {"section": "Abstract", "status": "complete"},
+    {"section": "Introduction", "status": "complete"},
+    {"section": "Data and Methods", "status": "complete"},
+    {"section": "Results", "status": "complete"},
+    {"section": "Discussion", "status": "complete"},
+    {"section": "Comprehensive Pipeline Summary", "status": "complete"},
+    {"section": "Conclusion", "status": "complete"},
+    {"section": "References", "status": "complete"},
+    {"section": "Appendix", "status": "complete"}
+  ]
+}

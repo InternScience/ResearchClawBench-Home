@@ -1,0 +1,43 @@
+{
+  "dirac_point_energy_eV": -0.0427,
+  "pump_photon_energy_eV": 0.248,
+  "replica_separation_eV": 0.496,
+  "measured_replica_separation_eV": 0.496,
+  "estimated_fermi_velocity_eV_A": 5.0,
+  "replica_bands": [
+    {
+      "kx": -0.046308724832214765,
+      "energy": -0.290713567839196,
+      "intensity": 0.49521670717091265,
+      "order": -1,
+      "energy_idx": 42,
+      "kx_idx": 63
+    },
+    {
+      "kx": 0.046308724832214765,
+      "energy": -0.290713567839196,
+      "intensity": 0.4951316941393499,
+      "order": -1,
+      "energy_idx": 42,
+      "kx_idx": 86
+    },
+    {
+      "kx": -0.03422818791946308,
+      "energy": 0.205286432160804,
+      "intensity": 0.5244272546110498,
+      "order": 1,
+      "energy_idx": 140,
+      "kx_idx": 66
+    },
+    {
+      "kx": 0.03422818791946308,
+      "energy": 0.205286432160804,
+      "intensity": 0.5244228565426068,
+      "order": 1,
+      "energy_idx": 140,
+      "kx_idx": 83
+    }
+  ],
+  "n_plus1_energy": 0.20529999999999998,
+  "n_minus1_energy": -0.2907
+}

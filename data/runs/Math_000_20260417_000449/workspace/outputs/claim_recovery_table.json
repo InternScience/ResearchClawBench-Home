@@ -1,0 +1,44 @@
+{
+  "claims": [
+    {
+      "claim": "SORT achieves MOTA=0.7094, best among all trackers",
+      "evidence": "outputs/tracking_metrics.json",
+      "verified": true
+    },
+    {
+      "claim": "SparseTrack_3L has higher recall than ByteTrack (0.6321 vs 0.6194)",
+      "evidence": "outputs/tracking_metrics.json",
+      "verified": true
+    },
+    {
+      "claim": "ID switches increase with more depth layers (4286 to 5857)",
+      "evidence": "outputs/tracking_metrics.json",
+      "verified": true
+    },
+    {
+      "claim": "Within-layer overlap rate is 3x higher than across-layer (40.6% vs 13.5%)",
+      "evidence": "code/visualize.py depth analysis",
+      "verified": true
+    },
+    {
+      "claim": "Mean detection score is 0.266",
+      "evidence": "data/simulated_sequence.json analysis",
+      "verified": true
+    },
+    {
+      "claim": "Detection IoU with ground truth is ~0.8 even for low-score detections",
+      "evidence": "Computed from data analysis",
+      "verified": true
+    },
+    {
+      "claim": "SparseTrack IDF1 is relatively stable across layer counts (0.771-0.774)",
+      "evidence": "outputs/tracking_metrics.json",
+      "verified": true
+    },
+    {
+      "claim": "No tracker has any mostly lost objects",
+      "evidence": "outputs/tracking_metrics.json ML=0 for all",
+      "verified": true
+    }
+  ]
+}

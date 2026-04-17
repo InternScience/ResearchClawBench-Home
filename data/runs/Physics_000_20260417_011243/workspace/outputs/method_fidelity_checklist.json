@@ -1,0 +1,37 @@
+{
+  "hexagonal_lattice": {
+    "definition": "T(h,k) = h^2 + hk + k^2 triangulation number on hexagonal grid",
+    "assumptions": "Integer coordinates h,k >= 0",
+    "invariants": "T determines shell geometry uniquely",
+    "implemented": true,
+    "deviation": null
+  },
+  "mackay_magic_numbers": {
+    "definition": "N(n) = (10n^3 + 15n^2 + 11n + 3)/3",
+    "assumptions": "Standard icosahedral close-packing",
+    "invariants": "Sequence: 1, 13, 55, 147, 309",
+    "implemented": true,
+    "deviation": null
+  },
+  "chiral_classification": {
+    "definition": "MC (h=0 or k=0), BG (h=k), Ch1-Ch5 (chiral with h!=k)",
+    "assumptions": "Classification by ratio min(h,k)/max(h,k)",
+    "invariants": "7 categories total",
+    "implemented": true,
+    "deviation": "Chiral subcategories assigned by ratio thresholds (approximate)"
+  },
+  "size_mismatch": {
+    "definition": "delta = |r1-r2|/max(r1,r2)",
+    "assumptions": "Atomic radii from standard tables",
+    "invariants": "Optimal ranges: MC-MC: 0.03-0.05, MC-Ch1: 0.12-0.16",
+    "implemented": true,
+    "deviation": null
+  },
+  "growth_simulation": {
+    "definition": "Monte Carlo deposition with path probability weights",
+    "assumptions": "Conservative (0.65), mismatch-driven (0.25), random (0.10)",
+    "invariants": "Metropolis acceptance criterion",
+    "implemented": true,
+    "deviation": "Simplified energy model using LJ + mismatch penalty"
+  }
+}

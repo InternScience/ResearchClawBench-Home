@@ -1,0 +1,19 @@
+{
+  "required_outputs": {
+    "method_contract.json": {"status": "satisfied", "path": "outputs/method_contract.json"},
+    "target_artifact_inventory.json": {"status": "satisfied", "path": "outputs/target_artifact_inventory.json"},
+    "dependency_check.json": {"status": "satisfied", "note": "Python dependencies verified: h5py, numpy, pandas, matplotlib, seaborn, scipy"},
+    "data_overview.json": {"status": "satisfied", "path": "outputs/data_overview.json"},
+    "replica_band_analysis.json": {"status": "satisfied", "path": "outputs/replica_band_analysis.json"},
+    "polarization_fit_results.json": {"status": "satisfied", "path": "outputs/polarization_fit_results.json"}
+  },
+  "required_figures": {
+    "fig1_data_overview.png": {"status": "satisfied", "path": "report/images/fig1_data_overview.png", "description": "Pump-off and pump-on ARPES spectra comparison"},
+    "fig2_replica_bands.png": {"status": "satisfied", "path": "report/images/fig2_replica_bands.png", "description": "Extracted replica band positions on dispersion"},
+    "fig3_polarization_dependence.png": {"status": "satisfied", "path": "report/images/fig3_polarization_dependence.png", "description": "Replica intensity vs polarization angle with fit"},
+    "fig4_band_dispersion.png": {"status": "satisfied", "path": "report/images/fig4_band_dispersion.png", "description": "Full band dispersion with Floquet replicas"}
+  },
+  "analysis_code": {
+    "generate_figures.py": {"status": "satisfied", "path": "code/generate_figures.py"}
+  }
+}

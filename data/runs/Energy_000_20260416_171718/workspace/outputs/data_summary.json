@@ -1,0 +1,36 @@
+{
+  "nasa_pcoe": {
+    "batteries": [
+      "B0005",
+      "B0006",
+      "B0007",
+      "B0018"
+    ],
+    "discharge_cycles_per_battery": {
+      "B0005": 168,
+      "B0006": 168,
+      "B0007": 168,
+      "B0018": 132
+    }
+  },
+  "cs2_36": {
+    "files": [
+      "CS2_36_1_10_11",
+      "CS2_36_1_18_11",
+      "CS2_36_1_24_11",
+      "CS2_36_1_28_11"
+    ],
+    "points_per_file": {
+      "CS2_36_1_10_11": 6279,
+      "CS2_36_1_18_11": 5349,
+      "CS2_36_1_24_11": 3765,
+      "CS2_36_1_28_11": 2978
+    }
+  },
+  "oxford": {
+    "has_charge": false,
+    "has_discharge": false,
+    "charge_samples": 0,
+    "discharge_samples": 0
+  }
+}

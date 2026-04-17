@@ -1,0 +1,48 @@
+{
+  "task_name": "Kolmogorov-Arnold Graph Neural Networks for Molecular Property Prediction",
+  "primary_objective": "Design and evaluate KA-GNNs that replace MLP-based transformations with Fourier-based KAN modules for enhanced predictive accuracy, efficiency, and interpretability",
+  "methodological_commitments": {
+    "architecture": {
+      "name": "KA-GNN (Kolmogorov-Arnold Graph Neural Network)",
+      "core_innovation": "Replace conventional MLP transformations in GNN layers with Fourier-based Kolmogorov-Arnold Network modules",
+      "theoretical_basis": "Kolmogorov-Arnold representation theorem provides stronger expressive power and approximation guarantees",
+      "input_representation": "Molecular graphs with atom-level features as nodes and bond-level features (covalent and non-covalent) as edges",
+      "output": "Binary classification predictions for molecular properties"
+    },
+    "datasets": [
+      {"name": "BACE", "task": "BACE-1 inhibitor prediction", "type": "binary_classification"},
+      {"name": "BBBP", "task": "Blood-brain barrier penetration", "type": "binary_classification"},
+      {"name": "ClinTox", "task": "Clinical toxicity and FDA approval", "type": "multi_task_binary"},
+      {"name": "HIV", "task": "HIV replication inhibition", "type": "binary_classification"},
+      {"name": "MUV", "task": "Virtual screening benchmarks", "type": "multi_task_binary_imbalanced"}
+    ],
+    "evaluation_metrics": {
+      "primary": "ROC-AUC",
+      "secondary": ["PR-AUC", "accuracy", "F1-score", "balanced_accuracy"]
+    },
+    "baselines": [
+      {"name": "GCN", "description": "Graph Convolutional Network with MLP transformations"},
+      {"name": "GAT", "description": "Graph Attention Network with MLP transformations"},
+      {"name": "GraphSAGE", "description": "Graph Sample and Aggregate with MLP transformations"}
+    ],
+    "interpretability_approach": {
+      "method": "KAN basis function analysis",
+      "rationale": "Fourier basis functions in KAN provide inherent interpretability through learned frequency components"
+    }
+  },
+  "target_outputs": {
+    "quantitative_results": "ROC-AUC scores for each dataset and model",
+    "comparison_tables": "Model performance comparison across all datasets",
+    "figures": [
+      "data_overview_plots",
+      "main_result_comparison",
+      "learning_curves",
+      "interpretability_visualizations"
+    ],
+    "artifacts": [
+      "method_fidelity_checklist",
+      "dependency_check",
+      "claim_recovery_table"
+    ]
+  }
+}

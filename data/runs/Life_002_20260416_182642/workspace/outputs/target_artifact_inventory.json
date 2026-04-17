@@ -1,0 +1,67 @@
+{
+  "required_artifacts": [
+    {
+      "id": "A1",
+      "name": "Data overview - chain composition",
+      "description": "Chain counts and residue counts for 7xg4 and 6n40",
+      "status": "completed",
+      "output_path": "outputs/chain_composition.json"
+    },
+    {
+      "id": "A2",
+      "name": "Data overview - structural statistics",
+      "description": "Residue counts, atom counts, resolution info",
+      "status": "completed",
+      "output_path": "outputs/structural_stats.json"
+    },
+    {
+      "id": "A3",
+      "name": "Main result - TM-score",
+      "description": "TM-score from structural alignment of 7xg4 vs 6n40",
+      "status": "completed",
+      "output_path": "outputs/tm_score_result.json"
+    },
+    {
+      "id": "A4",
+      "name": "Main result - RMSD",
+      "description": "RMSD from structural alignment",
+      "status": "completed",
+      "output_path": "outputs/rmsd_result.json"
+    },
+    {
+      "id": "A5",
+      "name": "Main result - chain correspondence",
+      "description": "Mapping between chains in 7xg4 and 6n40",
+      "status": "completed",
+      "output_path": "outputs/chain_correspondence.json"
+    },
+    {
+      "id": "A6",
+      "name": "Figure - data overview plot",
+      "description": "Bar chart showing chain/residue composition",
+      "status": "completed",
+      "output_path": "report/images/data_overview.png"
+    },
+    {
+      "id": "A7",
+      "name": "Figure - structural alignment visualization",
+      "description": "Superposition plot showing aligned structures",
+      "status": "completed",
+      "output_path": "report/images/alignment_superposition.png"
+    },
+    {
+      "id": "A8",
+      "name": "Figure - TM-score comparison",
+      "description": "Visualization of TM-score distribution or comparison",
+      "status": "completed",
+      "output_path": "report/images/tm_score_comparison.png"
+    },
+    {
+      "id": "A9",
+      "name": "Related work extraction",
+      "description": "Key methods and metrics from related papers",
+      "status": "completed",
+      "output_path": "outputs/related_work_contract.json"
+    }
+  ]
+}

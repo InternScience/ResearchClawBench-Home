@@ -1,0 +1,126 @@
+[
+  {
+    "question": "What is the license plate number of the silver car in the center?",
+    "roi_bbox": [
+      390,
+      400,
+      620,
+      550
+    ],
+    "global_224_metrics": {
+      "edge_density": 0.1542370854591837,
+      "contrast": 14.752244995737286,
+      "entropy": 7.673448416540557
+    },
+    "roi_from_global_metrics": {
+      "edge_density": 0.12590909090909091,
+      "contrast": 13.202184460270457,
+      "entropy": 6.930879359858887
+    },
+    "crop_at_224_metrics": {
+      "edge_density": 0.04691485969387755,
+      "contrast": 5.68926023481738,
+      "entropy": 7.022694223760547
+    },
+    "crop_at_448_metrics": {
+      "edge_density": 0.011733697385204082,
+      "contrast": 3.1799761744887545,
+      "entropy": 7.0238242575635
+    },
+    "entropy_improvement": -8.465869889432701,
+    "edge_improvement": -92.39242796226902
+  },
+  {
+    "question": "What text is on the building sign on the left?",
+    "roi_bbox": [
+      0,
+      50,
+      350,
+      200
+    ],
+    "global_224_metrics": {
+      "edge_density": 0.1542370854591837,
+      "contrast": 14.752244995737286,
+      "entropy": 7.673448416540557
+    },
+    "roi_from_global_metrics": {
+      "edge_density": 0.14623205741626794,
+      "contrast": 16.020322947502834,
+      "entropy": 6.325272024899306
+    },
+    "crop_at_224_metrics": {
+      "edge_density": 0.07667012117346939,
+      "contrast": 9.10670520820528,
+      "entropy": 6.380622784061638
+    },
+    "crop_at_448_metrics": {
+      "edge_density": 0.04119499362244898,
+      "contrast": 5.385875275692062,
+      "entropy": 6.385444985809306
+    },
+    "entropy_improvement": -16.785196965094418,
+    "edge_improvement": -73.29112288409355
+  },
+  {
+    "question": "What color are the flowers in the bottom-right corner?",
+    "roi_bbox": [
+      1700,
+      1100,
+      2250,
+      1500
+    ],
+    "global_224_metrics": {
+      "edge_density": 0.31642617984693877,
+      "contrast": 25.398109750940304,
+      "entropy": 7.72610246587353
+    },
+    "roi_from_global_metrics": {
+      "edge_density": 0.2787878787878788,
+      "contrast": 35.30219699952908,
+      "entropy": 7.504924612342181
+    },
+    "crop_at_224_metrics": {
+      "edge_density": 0.2477080676020408,
+      "contrast": 21.949439456770268,
+      "entropy": 7.654765740262091
+    },
+    "crop_at_448_metrics": {
+      "edge_density": 0.18796835140306123,
+      "contrast": 16.089419895889854,
+      "entropy": 7.659510203890489
+    },
+    "entropy_improvement": -0.8619127467850831,
+    "edge_improvement": -40.59646028846759
+  },
+  {
+    "question": "How many people are visible in the background?",
+    "roi_bbox": [
+      0,
+      0,
+      2250,
+      500
+    ],
+    "global_224_metrics": {
+      "edge_density": 0.31642617984693877,
+      "contrast": 25.398109750940304,
+      "entropy": 7.72610246587353
+    },
+    "roi_from_global_metrics": {
+      "edge_density": 0.3363899613899614,
+      "contrast": 31.16485206482622,
+      "entropy": 7.858399326363184
+    },
+    "crop_at_224_metrics": {
+      "edge_density": 0.3186782525510204,
+      "contrast": 32.18533707182484,
+      "entropy": 7.923393214276562
+    },
+    "crop_at_448_metrics": {
+      "edge_density": 0.28284937021683676,
+      "contrast": 29.173539082908206,
+      "entropy": 7.941271156541354
+    },
+    "entropy_improvement": 2.7849577664576857,
+    "edge_improvement": -10.61126157334508
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "method_fidelity_items": [
+    {
+      "item": "MMGA = ANN Meta-Model + Genetic Algorithm",
+      "definition": "Replace expensive ECAT simulations with ANN surrogate during GA optimization",
+      "implemented": true,
+      "notes": "ANN trained on 800 LHS samples, GA uses ANN for fitness evaluation"
+    },
+    {
+      "item": "Latin Hypercube Sampling",
+      "definition": "Space-filling sampling of parameter space with maximin criterion",
+      "implemented": true,
+      "notes": "pyDOE2 LHS with log-scale for multi-order parameters"
+    },
+    {
+      "item": "ECAT Coupled Model",
+      "definition": "Electrochemical + Aging + Thermal coupled battery model",
+      "implemented": true,
+      "deviation": "Simplified SPM instead of full P2D; solid diffusion not fully resolved",
+      "notes": "SPM captures essential voltage/temperature dynamics"
+    },
+    {
+      "item": "ANN Architecture",
+      "definition": "Multi-layer perceptron mapping parameters to discharge features",
+      "implemented": true,
+      "notes": "15 -> [128, 256, 128] -> 52 with BatchNorm, ReLU, Dropout"
+    },
+    {
+      "item": "Genetic Algorithm",
+      "definition": "Population-based optimization with selection, crossover, mutation",
+      "implemented": true,
+      "notes": "Tournament selection, BLX-alpha crossover, adaptive mutation, elitism"
+    },
+    {
+      "item": "Multi-dataset Validation",
+      "definition": "Validate on CS2_36, NASA PCoE, and Oxford datasets",
+      "implemented": true,
+      "notes": "All three datasets used; Oxford has higher error due to cross-chemistry"
+    },
+    {
+      "item": "Parameter Sensitivity Analysis",
+      "definition": "One-at-a-time perturbation analysis for all 15 parameters",
+      "implemented": true,
+      "notes": "Voltage, capacity, and temperature sensitivity computed"
+    }
+  ]
+}

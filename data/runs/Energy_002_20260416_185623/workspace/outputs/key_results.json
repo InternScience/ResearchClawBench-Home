@@ -1,0 +1,56 @@
+{
+  "scenarios": {
+    "baseline": {
+      "name": "Baseline (High Risk)",
+      "min_delivered_cost": 4.97,
+      "best_site": "hex_022",
+      "mean_delivered_cost": 5.18,
+      "eu_benchmark": 8.33,
+      "n_competitive": 30,
+      "pct_competitive": 100.0
+    },
+    "moderate_derisking": {
+      "name": "Moderate De-risking",
+      "min_delivered_cost": 4.49,
+      "best_site": "hex_022",
+      "mean_delivered_cost": 4.69,
+      "eu_benchmark": 7.78,
+      "n_competitive": 30,
+      "pct_competitive": 100.0
+    },
+    "full_derisking": {
+      "name": "Full De-risking",
+      "min_delivered_cost": 4.04,
+      "best_site": "hex_022",
+      "mean_delivered_cost": 4.22,
+      "eu_benchmark": 7.26,
+      "n_competitive": 30,
+      "pct_competitive": 100.0
+    },
+    "rising_ir": {
+      "name": "Rising Interest Rates",
+      "min_delivered_cost": 5.52,
+      "best_site": "hex_022",
+      "mean_delivered_cost": 5.75,
+      "eu_benchmark": 9.49,
+      "n_competitive": 30,
+      "pct_competitive": 100.0
+    },
+    "optimistic_2030": {
+      "name": "Optimistic 2030",
+      "min_delivered_cost": 3.64,
+      "best_site": "hex_022",
+      "mean_delivered_cost": 3.81,
+      "eu_benchmark": 5.81,
+      "n_competitive": 30,
+      "pct_competitive": 100.0
+    }
+  },
+  "best_site_baseline": {
+    "hex_id": "hex_022",
+    "lat": -17.35,
+    "lon": 22.02,
+    "total_delivered": 4.97,
+    "lcoh_production": 2.53
+  }
+}

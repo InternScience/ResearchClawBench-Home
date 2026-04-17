@@ -1,0 +1,46 @@
+{
+  "claim_recovery_table": [
+    {
+      "claim_id": "C1",
+      "claim": "Cloud-seeding activity is spatially concentrated in a small number of western U.S. states",
+      "evidence": "Top 3 states (CA, CO, UT) = 58.5% of projects; HHI = 0.155; only 13 states active",
+      "artifact": ["outputs/state_project_counts.csv", "outputs/concentration_metrics.json", "report/images/fig1_state_distribution.png", "report/images/fig1b_choropleth_map.png"],
+      "status": "recovered"
+    },
+    {
+      "claim_id": "C2",
+      "claim": "Annual activity peaked in early-to-mid 2000s and declined through 2010s with COVID minimum",
+      "evidence": "Peak 2003 (49 projects), minimum 2020 (12 projects), mean 32.0/year, recovery to 28-34 in 2022-2025",
+      "artifact": ["outputs/annual_project_counts.csv", "report/images/fig2_annual_activity.png", "report/images/fig2b_state_year_heatmap.png"],
+      "status": "recovered"
+    },
+    {
+      "claim_id": "C3",
+      "claim": "Snowpack augmentation and precipitation enhancement dominate stated purposes",
+      "evidence": "Snowpack 47.0% + precipitation 38.8% = 85.8% of purpose mentions; water-supply total 90.7%",
+      "artifact": ["outputs/purpose_composition.csv", "report/images/fig3_purpose_composition.png", "report/images/fig3b_purpose_trends.png"],
+      "status": "recovered"
+    },
+    {
+      "claim_id": "C4",
+      "claim": "Silver iodide is the overwhelmingly dominant seeding agent",
+      "evidence": "Silver iodide (+ variants) = 95.6% of all projects (795/832)",
+      "artifact": ["outputs/agent_categories.csv", "report/images/fig4_agent_deployment.png"],
+      "status": "recovered"
+    },
+    {
+      "claim_id": "C5",
+      "claim": "Ground-based delivery is the most common apparatus type",
+      "evidence": "Ground 55.7%, airborne 28.5%, combined 15.8%",
+      "artifact": ["outputs/apparatus_distribution.csv", "report/images/fig5_apparatus_distribution.png"],
+      "status": "recovered"
+    },
+    {
+      "claim_id": "C6",
+      "claim": "Agent-apparatus deployment shows silver iodide used across all delivery methods",
+      "evidence": "Cross-tabulation shows AgI in ground (446), airborne (218), combined (131); only agent in all 3",
+      "artifact": ["outputs/agent_apparatus_crosstab.csv", "report/images/fig6_agent_apparatus_heatmap.png"],
+      "status": "recovered"
+    }
+  ]
+}

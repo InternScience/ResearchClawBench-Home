@@ -1,0 +1,28 @@
+{
+  "task": "Personalized neoantigen vaccine optimization analysis",
+  "named_methods": [
+    "MinSum objective optimization",
+    "Adaptive vaccine composition (cross-replicate)",
+    "Budget-constrained selection (budget=10)"
+  ],
+  "named_metrics": [
+    "Per-cell immune response probability (p_response)",
+    "Coverage ratio (fraction of tumor cells with response)",
+    "IoU (Intersection over Union) of vaccine compositions",
+    "Optimization runtime"
+  ],
+  "named_inputs": [
+    "Cell population simulations (100 cells × 10 replicates)",
+    "Vaccine element scores per cell",
+    "Selected vaccine elements under MinSum/adaptive",
+    "Runtime data across patient samples and population sizes"
+  ],
+  "required_outputs": [
+    "Optimal personalized neoantigen vaccine composition",
+    "Quantitative vaccine efficacy metrics",
+    "Per-cell immune response probability distributions",
+    "Coverage ratio of tumor cells",
+    "IoU of optimal vaccine compositions",
+    "Optimization runtime analysis"
+  ]
+}

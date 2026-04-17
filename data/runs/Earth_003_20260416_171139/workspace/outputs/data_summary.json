@@ -1,0 +1,50 @@
+{
+  "input_data": {
+    "file": "data/20231012-06_input_netcdf.nc",
+    "shape": [
+      2,
+      70,
+      181,
+      360
+    ],
+    "dimensions": {
+      "lon": 360,
+      "lat": 181,
+      "level": 70,
+      "time": 2
+    },
+    "time_steps": [
+      "2023-10-12T00:00:00.000000000",
+      "2023-10-12T06:00:00.000000000"
+    ],
+    "latitude_range": [
+      -90.0,
+      90.0
+    ],
+    "longitude_range": [
+      0.0,
+      359.0
+    ],
+    "num_levels": 70
+  },
+  "forecast_data": {
+    "file": "data/006.nc",
+    "shape": [
+      1,
+      1,
+      70,
+      181,
+      360
+    ],
+    "description": "FuXi 6-hour forecast output",
+    "forecast_step_hours": 6
+  },
+  "data_statistics": {
+    "input_mean": 0.11506994068622589,
+    "input_std": 9.99740982055664,
+    "input_min": -52.211666107177734,
+    "input_max": 53.11841583251953,
+    "forecast_mean": 0.11125744134187698,
+    "forecast_std": 9.997722625732422
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "task": "MAPF via MARL-LNS Hybrid Algorithm",
+  "named_methods": [
+    "Multi-Agent Reinforcement Learning (MARL)",
+    "Large Neighborhood Search (LNS)",
+    "Prioritized Planning (PP)",
+    "A* / Space-Time A*"
+  ],
+  "hybrid_design": "MARL for early-stage collision reduction + PP for late-stage refinement within LNS framework",
+  "baselines": ["Prioritized Planning (PP)", "MAPF-LNS2", "Pure MARL"],
+  "metrics": ["success_rate", "collision_count", "makespan", "sum_of_costs", "runtime"],
+  "map_types": ["empty", "maze", "random_small", "random_medium", "random_large", "room", "warehouse"],
+  "key_hypothesis": "Hybrid MARL-LNS achieves higher success rates in complex environments by leveraging MARL for intelligent collision avoidance in early iterations and PP for efficient final refinement"
+}

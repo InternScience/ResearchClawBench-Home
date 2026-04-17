@@ -1,0 +1,114 @@
+{
+  "inventory": [
+    {
+      "artifact_id": "T01",
+      "description": "Data summary statistics",
+      "target_file": "outputs/data_summary.json",
+      "status": "completed",
+      "verification": "File exists with 832 records, 13 states, 28 agents, 17 purposes"
+    },
+    {
+      "artifact_id": "T02",
+      "description": "Spatial concentration by state",
+      "target_file": "outputs/state_counts.json",
+      "status": "completed",
+      "verification": "File exists with counts for all 13 states"
+    },
+    {
+      "artifact_id": "T03",
+      "description": "Annual activity dynamics",
+      "target_file": "outputs/yearly_activity.json",
+      "status": "completed",
+      "verification": "File exists with counts for years 2000-2025"
+    },
+    {
+      "artifact_id": "T04",
+      "description": "Purpose composition breakdown",
+      "target_file": "outputs/purpose_composition.json",
+      "status": "completed",
+      "verification": "File exists with 17 purpose categories"
+    },
+    {
+      "artifact_id": "T05",
+      "description": "Agent-apparatus deployment matrix",
+      "target_file": "outputs/agent_apparatus_matrix.json",
+      "status": "completed",
+      "verification": "File exists with 28 agents x 3 apparatus cross-tabulation"
+    },
+    {
+      "artifact_id": "T06",
+      "description": "Operator frequency counts",
+      "target_file": "outputs/operator_counts.json",
+      "status": "completed",
+      "verification": "File exists with 41 operators"
+    },
+    {
+      "artifact_id": "F01",
+      "description": "Spatial distribution figure",
+      "target_file": "report/images/spatial_distribution.png",
+      "status": "completed",
+      "verification": "File exists (69,575 bytes)"
+    },
+    {
+      "artifact_id": "F02",
+      "description": "Annual trends time series",
+      "target_file": "report/images/annual_trends.png",
+      "status": "completed",
+      "verification": "File exists (94,437 bytes)"
+    },
+    {
+      "artifact_id": "F03",
+      "description": "Purpose composition charts",
+      "target_file": "report/images/purpose_chart.png",
+      "status": "completed",
+      "verification": "File exists (329,197 bytes)"
+    },
+    {
+      "artifact_id": "F04",
+      "description": "Agent-apparatus heatmap",
+      "target_file": "report/images/agent_apparatus_heatmap.png",
+      "status": "completed",
+      "verification": "File exists (219,611 bytes)"
+    },
+    {
+      "artifact_id": "F05",
+      "description": "Seasonal patterns heatmap",
+      "target_file": "report/images/seasonal_patterns.png",
+      "status": "completed",
+      "verification": "File exists (120,084 bytes)"
+    },
+    {
+      "artifact_id": "F06",
+      "description": "State-purpose matrix",
+      "target_file": "report/images/state_purpose_matrix.png",
+      "status": "completed",
+      "verification": "File exists (207,422 bytes)"
+    },
+    {
+      "artifact_id": "F07",
+      "description": "Operator analysis chart",
+      "target_file": "report/images/operator_analysis.png",
+      "status": "completed",
+      "verification": "File exists (92,370 bytes)"
+    },
+    {
+      "artifact_id": "F08",
+      "description": "Year-state temporal-spatial matrix",
+      "target_file": "report/images/year_state_matrix.png",
+      "status": "completed",
+      "verification": "File exists (107,154 bytes)"
+    },
+    {
+      "artifact_id": "R01",
+      "description": "Final research report",
+      "target_file": "report/report.md",
+      "status": "completed",
+      "verification": "File exists with methodology, results, discussion sections and 8 figure references"
+    }
+  ],
+  "summary": {
+    "total_artifacts": 15,
+    "completed": 15,
+    "unsatisfied": 0
+  }
+}

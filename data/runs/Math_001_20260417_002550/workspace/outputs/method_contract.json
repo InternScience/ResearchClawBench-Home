@@ -1,0 +1,24 @@
+{
+  "task": "Unified VOS Framework for Accelerated Optimization",
+  "methods": [
+    "Variable and Operator Splitting (VOS) framework",
+    "Nesterov's Accelerated Gradient Method",
+    "ADMM (Alternating Direction Method of Multipliers)",
+    "Continuous-time dynamical system / ODE perspective",
+    "Lyapunov function analysis for linear convergence",
+    "Gradient Descent (baseline)"
+  ],
+  "named_frameworks": [
+    "VOS (Variable and Operator Splitting)",
+    "Nesterov's accelerated method",
+    "ADMM",
+    "Lyapunov stability analysis"
+  ],
+  "target_problem": "Lasso regression: min 0.5*||Ax-b||^2 + lambda*||x||_1",
+  "convergence_claims": [
+    "O(1/k^2) for convex case (Nesterov)",
+    "Linear convergence for strongly convex case",
+    "Unified derivation from continuous-time ODE"
+  ],
+  "key_ode": "X'' + (r/t)*X' + grad_f(X) = 0, r>=3"
+}

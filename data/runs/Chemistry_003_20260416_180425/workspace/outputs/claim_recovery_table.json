@@ -1,0 +1,47 @@
+{
+  "claims": [
+    {
+      "claim": "Coulomb energy dominates over LJ in random charges system",
+      "evidence": "E_coulomb mean = -119.18 eV vs E_LJ mean = 0.003 eV",
+      "artifact": "outputs/random_charges_analysis.json",
+      "verified": true
+    },
+    {
+      "claim": "Long-range component accounts for 75-93% of Coulomb energy at typical cutoffs",
+      "evidence": "Ewald decomposition: at α=0.2, LR fraction = 77.7%; at α=0.5, LR fraction = 92.6%",
+      "artifact": "report/images/ewald_decomposition.png",
+      "verified": true
+    },
+    {
+      "claim": "Charged dimer binding curve follows 1/r Coulomb law at large separations",
+      "evidence": "Coulomb fit yields E_inf=0.600 eV, q_eff=1.373 eV·Å with good agreement beyond 6 Å",
+      "artifact": "outputs/coulomb_fit_results.json",
+      "verified": true
+    },
+    {
+      "claim": "Significant Coulomb energy persists beyond 10 Å cutoff",
+      "evidence": "At 10 Å cutoff, Coulomb contribution = 0.137 eV",
+      "artifact": "outputs/coulomb_fit_results.json",
+      "verified": true
+    },
+    {
+      "claim": "Ag3 +1 and -1 charge states have identical PES",
+      "evidence": "Position, energy, and force differences are exactly zero for all 60 frames",
+      "artifact": "outputs/ag3_chargestates_analysis.json",
+      "verified": true
+    },
+    {
+      "claim": "Short-range models cannot distinguish Ag3 charge states",
+      "evidence": "With identical geometry and energy, any model based on local features gives identical predictions",
+      "artifact": "report/images/ag3_model_comparison.png",
+      "verified": true
+    },
+    {
+      "claim": "4G-HDNNP achieves 3 orders of magnitude improvement over 2G-HDNNP for Ag3",
+      "evidence": "From Ko et al. (2021): 2G errors 0.605/2.017 eV/atom vs 4G errors 1.166/0.320 meV/atom",
+      "artifact": "related_work/paper_001.pdf page 7",
+      "verified": true,
+      "source": "related_work"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "GD": {
+    "objective": 311.1167877003963,
+    "recovery_error": 2.791754636110078,
+    "sparsity": 88,
+    "obj_gap": -1.3812950783176348e-11
+  },
+  "NAG": {
+    "objective": 311.1167877003963,
+    "recovery_error": 2.791754636105051,
+    "sparsity": 88,
+    "obj_gap": -1.3812950783176348e-11
+  },
+  "NAG-Restart": {
+    "objective": 311.61580987632834,
+    "recovery_error": 2.780814451960694,
+    "sparsity": 92,
+    "obj_gap": 0.49902217591824183
+  },
+  "ADMM": {
+    "objective": 311.11678771059997,
+    "recovery_error": 2.7917546361102596,
+    "sparsity": 88,
+    "obj_gap": 1.0189864951826166e-08
+  },
+  "VOS-NAG": {
+    "objective": 311.1167877003963,
+    "recovery_error": 2.791754636110078,
+    "sparsity": 88,
+    "obj_gap": -1.3812950783176348e-11
+  },
+  "VOS-ADMM": {
+    "objective": 432.3868109432252,
+    "recovery_error": 3.8493943734206217,
+    "sparsity": 2000,
+    "obj_gap": 121.27002324281511
+  }
+}

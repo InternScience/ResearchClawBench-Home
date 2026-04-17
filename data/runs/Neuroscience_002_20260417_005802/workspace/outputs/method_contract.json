@@ -1,0 +1,17 @@
+{
+  "task": "Binary classification for neuron segment merge prediction in connectomics proofreading",
+  "input": "20 features (morphology, intensity, embedding modalities) + degradation type",
+  "output": "Binary label (0=different neurons, 1=same neuron)",
+  "methods": [
+    "Logistic Regression (baseline)",
+    "Random Forest",
+    "Gradient Boosted Trees (XGBoost/LightGBM)",
+    "MLP Neural Network",
+    "Per-degradation-type analysis"
+  ],
+  "evaluation_metrics": [
+    "Accuracy", "F1-score", "AUC-ROC", "AUC-PR", "Precision", "Recall"
+  ],
+  "interpretability": ["SHAP", "Permutation Importance", "Feature Correlation"],
+  "comparison_axes": ["Model type", "Degradation type", "Feature modality groups"]
+}

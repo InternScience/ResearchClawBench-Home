@@ -1,0 +1,31 @@
+{
+  "dependencies_checked": {
+    "numpy": {"available": true, "version": "installed"},
+    "scipy": {"available": true, "version": "installed"},
+    "matplotlib": {"available": true, "version": "installed"},
+    "pymupdf": {"available": true, "version": "1.27.2.2"}
+  },
+  "named_methods_feasibility": {
+    "superradiance_rate_formula": {
+      "status": "implemented",
+      "notes": "Using Detweiler/Arvanitaki non-relativistic formula (Eq. 18 of paper_000)"
+    },
+    "critical_spin_curves": {
+      "status": "implemented",
+      "notes": "Analytic formula a*_crit = 4mα/(m² + 4α²)"
+    },
+    "bayesian_posterior_marginalization": {
+      "status": "implemented",
+      "notes": "Direct Monte Carlo marginalization over posterior samples"
+    },
+    "bosenova_self_interaction_limit": {
+      "status": "implemented",
+      "notes": "Using Eq. 48 of Arvanitaki et al. 2011"
+    }
+  },
+  "limitations": [
+    "Superradiance rate uses non-relativistic approximation (valid for α/l << 1)",
+    "BH age estimates are approximate (5 Myr for M33 X-7, 10 Gyr for IRAS 09149-6206)",
+    "Self-interaction constraints use simplified Bosenova criterion"
+  ]
+}

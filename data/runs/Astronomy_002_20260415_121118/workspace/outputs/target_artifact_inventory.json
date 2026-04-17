@@ -1,0 +1,19 @@
+{
+  "primary_quantitative": {
+    "baseline_H0": {"status": "satisfied", "artifact": "outputs/h0_results.json"},
+    "variant_H0_table": {"status": "satisfied", "artifact": "outputs/variant_table.json"},
+    "host_distances": {"status": "satisfied", "artifact": "outputs/host_distances.json"},
+    "CMB_tension": {"status": "satisfied", "artifact": "outputs/h0_results.json"}
+  },
+  "figures": {
+    "distance_ladder": {"status": "satisfied", "artifact": "report/images/distance_ladder.png"},
+    "hubble_diagram": {"status": "satisfied", "artifact": "report/images/hubble_diagram.png"},
+    "h0_variants": {"status": "satisfied", "artifact": "report/images/h0_variants.png"},
+    "host_distances": {"status": "satisfied", "artifact": "report/images/host_distances.png"},
+    "mb_calibration": {"status": "satisfied", "artifact": "report/images/mb_calibration.png"},
+    "hubble_tension": {"status": "satisfied", "artifact": "report/images/hubble_tension.png"},
+    "chi2_profile": {"status": "satisfied", "artifact": "report/images/chi2_profile.png"},
+    "error_budget": {"status": "satisfied", "artifact": "report/images/error_budget.png"},
+    "correlation_matrix": {"status": "satisfied", "artifact": "report/images/correlation_matrix.png"}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "task": "Study training-free framework for improving fine-grained perception of MLLMs",
+  "named_methods": [
+    "Task-guided cropping strategy (ViCrop)",
+    "V* LLM-guided visual search (SEAL framework)",
+    "CLIP vision encoder (fixed-resolution bottleneck)",
+    "Visual Working Memory (VWM)",
+    "Attention/relevance heatmap analysis"
+  ],
+  "core_scientific_objective": "Mitigate information loss caused by fixed-resolution vision encoders when processing small objects",
+  "key_mechanism": "Task-guided cropping -> zoom into ROI -> integrate local detail with global context",
+  "comparison_axes": [
+    "Original resolution vs downsampled (CLIP input) resolution",
+    "Global-only vs global+local (cropped) perception",
+    "Information retention metrics across resolutions",
+    "Attention distribution analysis"
+  ],
+  "deliverables": [
+    "Implementation of cropping and analysis pipeline",
+    "Information loss quantification",
+    "Attention heatmap visualizations",
+    "Resolution comparison analysis",
+    "Comprehensive research report"
+  ]
+}

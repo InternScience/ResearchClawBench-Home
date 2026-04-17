@@ -1,0 +1,25 @@
+{
+  "input": "data/doge.png",
+  "input_description": "Swole Doge vs Cheems meme (1200x799 pixels, RGB/PNG)",
+  "understanding_output": {
+    "meme_template": "Swole Doge vs. Cheems",
+    "left_entity": {
+      "visual": "Muscular Shiba Inu (Swole Doge)",
+      "text_label": "Decoupling Visual Encoding",
+      "connotation": "Strong, powerful, superior"
+    },
+    "right_entity": {
+      "visual": "Small, sad Shiba Inu (Cheems)",
+      "text_label": "Single Visual Encoder",
+      "connotation": "Weak, inferior, limited"
+    },
+    "semantic_interpretation": "The meme argues that decoupling visual encoding (using separate encoders for understanding and generation) is significantly superior to using a single visual encoder for both tasks. The muscular doge represents the strength and versatility of the decoupled approach, while the small doge represents the limitations of a unified single encoder.",
+    "humor_type": "Comparison/superiority humor using anthropomorphized dogs",
+    "domain": "Machine Learning / Computer Vision architecture design"
+  },
+  "confidence": 0.95,
+  "ocr_detected_text": [
+    "Decoupling Visual Encoding",
+    "Single Visual Encoder"
+  ]
+}

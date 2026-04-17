@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "pandas": {"available": true, "version": "checked"},
+    "numpy": {"available": true, "version": "checked"},
+    "matplotlib": {"available": true, "version": "checked"},
+    "seaborn": {"available": true, "version": "checked"},
+    "sklearn": {"available": true, "version": "checked"},
+    "xgboost": {"available": true, "version": "3.2.0"},
+    "lightgbm": {"available": true, "version": "checked"},
+    "shap": {"available": true, "version": "0.49.1", "note": "TreeExplainer incompatible with XGBoost 3.x, used LightGBM instead"},
+    "scipy": {"available": true, "version": "checked"}
+  },
+  "limitations": [
+    "SHAP TreeExplainer failed with XGBoost 3.2.0 due to base_score parsing bug; LightGBM used as substitute",
+    "PyMuPDF used for PDF reading as ReadPDF failed on the related work papers"
+  ]
+}

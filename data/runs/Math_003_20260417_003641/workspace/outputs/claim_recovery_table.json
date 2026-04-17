@@ -1,0 +1,57 @@
+{
+  "claims": [
+    {
+      "claim": "IMO AG 30 contains 30 problems spanning 2000-2022",
+      "evidence": "Direct count from data/imo_ag_30.txt",
+      "verified": true
+    },
+    {
+      "claim": "69 construction definitions available",
+      "evidence": "Parsed from data/defs.txt",
+      "verified": true
+    },
+    {
+      "claim": "43 deduction rules available",
+      "evidence": "Parsed from data/rules.txt",
+      "verified": true
+    },
+    {
+      "claim": "Congruence (cong) is the most common goal type at 40%",
+      "evidence": "12/30 problems have cong goal - computed from parse_problems.py",
+      "verified": true
+    },
+    {
+      "claim": "on_line is the most frequent construction (120 occurrences)",
+      "evidence": "Computed from parse_problems.py",
+      "verified": true
+    },
+    {
+      "claim": "Pure symbolic forward chaining solves 0/30 problems",
+      "evidence": "Executed symbolic_engine.py on all 30 problems",
+      "verified": true
+    },
+    {
+      "claim": "Average complexity score is 10.8",
+      "evidence": "Computed from neuro_symbolic_analysis.py",
+      "verified": true
+    },
+    {
+      "claim": "Neural-guided beam search solves ~27% of problems",
+      "evidence": "Simulation-based estimate from neuro_symbolic_analysis.py",
+      "verified": false,
+      "note": "Based on analytical model, not actual neural model execution"
+    },
+    {
+      "claim": "AlphaGeometry-style approach solves ~53% of problems",
+      "evidence": "Simulation-based estimate calibrated to published results",
+      "verified": false,
+      "note": "Based on analytical model, not actual system execution"
+    },
+    {
+      "claim": "Neural guidance reduces branching factor from 43 to ~6",
+      "evidence": "Estimated from published literature on neural theorem provers",
+      "verified": false,
+      "note": "Theoretical estimate based on related work"
+    }
+  ]
+}

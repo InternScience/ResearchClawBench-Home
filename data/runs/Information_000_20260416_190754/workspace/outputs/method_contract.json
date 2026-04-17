@@ -1,0 +1,27 @@
+{
+  "task": "Build a unified autoregressive framework with decoupled visual encoding for multimodal understanding and generation",
+  "named_methods": [
+    "Decoupled Visual Encoding (understanding encoder + generation encoder)",
+    "Autoregressive next-token prediction",
+    "Image tokenization (VQ-based for generation)",
+    "CLIP/SigLIP-style encoding (for understanding)",
+    "Unified Transformer backbone (Llama-style)"
+  ],
+  "named_baselines": [
+    "Chameleon (single early-fusion)",
+    "LLaVA (understanding only, CLIP encoder)",
+    "LlamaGen (generation only, VQ tokenizer)",
+    "SigLIP (contrastive pre-training)"
+  ],
+  "comparison_axes": [
+    "Understanding performance (VQA, captioning, OCR)",
+    "Generation quality (FID, IS)",
+    "Unified vs decoupled encoder ablation",
+    "Parameter efficiency",
+    "Scalability"
+  ],
+  "data_files": [
+    "data/equation.png - OCR/LaTeX conversion test",
+    "data/doge.png - Semantic understanding test"
+  ]
+}

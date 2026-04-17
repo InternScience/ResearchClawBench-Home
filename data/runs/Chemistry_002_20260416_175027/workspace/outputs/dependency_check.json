@@ -1,0 +1,8 @@
+{
+  "dependency": "biopython, matplotlib, seaborn, pandas, numpy, scipy",
+  "all_available": true,
+  "haddock3_installed": false,
+  "haddock3_needed": false,
+  "note": "Full HADDOCK3 installation not required. Analysis uses HADDOCK-inspired methods implemented in pure Python with standard scientific libraries.",
+  "fallback": "Simplified HADDOCK-style scoring function implemented directly rather than using full HADDOCK3 pipeline"
+}

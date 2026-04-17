@@ -1,0 +1,39 @@
+{
+  "dirac_point": {
+    "energy_eV": -0.3,
+    "kx_Angstrom_inv": -0.042713567839196
+  },
+  "replica_bands": [
+    {
+      "order": -1,
+      "energy_eV": -0.290713567839196,
+      "kx_Angstrom_inv": -0.046308724832214765,
+      "intensity": 0.49521670717091265,
+      "delta_energy_eV": 0.009286432160803992
+    },
+    {
+      "order": -1,
+      "energy_eV": -0.290713567839196,
+      "kx_Angstrom_inv": 0.046308724832214765,
+      "intensity": 0.4951316941393499,
+      "delta_energy_eV": 0.009286432160803992
+    },
+    {
+      "order": 1,
+      "energy_eV": 0.205286432160804,
+      "kx_Angstrom_inv": -0.03422818791946308,
+      "intensity": 0.5244272546110498,
+      "delta_energy_eV": 0.5052864321608039
+    },
+    {
+      "order": 1,
+      "energy_eV": 0.205286432160804,
+      "kx_Angstrom_inv": 0.03422818791946308,
+      "intensity": 0.5244228565426068,
+      "delta_energy_eV": 0.5052864321608039
+    }
+  ],
+  "photon_energy_estimate_eV": 0.25728643216080394,
+  "expected_photon_energy_eV": 0.24796,
+  "deviation_percent": 3.761264784966898
+}

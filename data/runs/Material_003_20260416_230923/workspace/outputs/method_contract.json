@@ -1,0 +1,18 @@
+{
+  "task": "AI-guided inverse design of recyclable vitrimeric polymers",
+  "methods": {
+    "md_simulation": "Use provided MD Tg data (not re-run simulations)",
+    "gp_calibration": "Gaussian Process regression to calibrate MD Tg to experimental Tg using tg_calibration.csv, then apply to vitrimer MD data",
+    "graph_vae": "Graph Variational Autoencoder for generating new vitrimer chemistries from molecular graph representations",
+    "inverse_design": "Use trained GP + VAE to generate candidates with target Tg properties",
+    "validation": "Computational validation of generated candidates (chemical validity, property prediction)"
+  },
+  "key_commitments": [
+    "GP calibration model trained on experimental vs MD Tg data",
+    "Cross-validation of GP model",
+    "Graph-based molecular representation for VAE",
+    "Generation of novel vitrimer candidates",
+    "Screening candidates for desired Tg ranges",
+    "Publication-quality figures and analysis"
+  ]
+}

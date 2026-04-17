@@ -1,0 +1,55 @@
+{
+  "required_artifacts": [
+    {
+      "id": "data_overview_1",
+      "description": "Input data spatial distribution plot (geopotential at 500hPa)",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "data_overview_2", 
+      "description": "Input data vertical profile plot (temperature by pressure level)",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "data_overview_3",
+      "description": "Surface variables overview (2m temperature, wind fields)",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "forecast_analysis_1",
+      "description": "6-hour forecast vs initial condition comparison",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "forecast_analysis_2",
+      "description": "Forecast error analysis (RMSE by variable and level)",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "comparison_1",
+      "description": "Cascade model architecture diagram",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "validation_1",
+      "description": "Anomaly Correlation Coefficient skill score plot",
+      "status": "pending",
+      "priority": "high"
+    }
+  ],
+  "figures_to_generate": [
+    "report/images/data_overview_z500.png",
+    "report/images/data_overview_temperature_profile.png",
+    "report/images/surface_variables.png",
+    "report/images/forecast_comparison.png",
+    "report/images/error_analysis.png",
+    "report/images/cascade_architecture.png",
+    "report/images/acc_skill_score.png"
+  ]
+}

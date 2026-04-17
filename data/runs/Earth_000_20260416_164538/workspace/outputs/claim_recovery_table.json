@@ -1,0 +1,56 @@
+{
+  "claim_1_global_cumulative": {
+    "description": "Cumulative global mass loss 2000-2023",
+    "value_Gt": -7629.458154045977,
+    "uncertainty_Gt": 857.2088446561781,
+    "artifact": "outputs/global_timeseries_v2.csv"
+  },
+  "claim_2_global_annual_rate": {
+    "description": "Mean annual global mass loss rate",
+    "value_mwe_per_year": -0.5038739732951588,
+    "value_Gt_per_year": -317.8940897519157,
+    "artifact": "outputs/global_timeseries_v2.csv"
+  },
+  "claim_3_regional_rates": {
+    "description": "Regional mean annual mass change rates for all 19 regions",
+    "values": {
+      "Alaska": -0.9329242089378451,
+      "Antarctic and Subantarctic": -0.13800766774581208,
+      "Arctic Canada North": -0.3210861441850291,
+      "Arctic Canada South": -0.452825592879831,
+      "Caucasus Middle East": -0.24516556864942887,
+      "Central Asia": -0.23953983799143305,
+      "Central Europe": -0.6311199398333188,
+      "Greenland Periphery": -0.6381841763837012,
+      "Iceland": -0.933273679248832,
+      "Low Latitudes": -0.46801632966638446,
+      "New Zealand": -0.5472090698085845,
+      "North Asia": -0.439227443405625,
+      "Russian Arctic": -0.32040599967166017,
+      "Scandinavia": -0.5482368807987869,
+      "South Asia East": -0.5159734618676156,
+      "South Asia West": -0.2076191747791044,
+      "Southern Andes": -1.0544762642580026,
+      "Svalbard": -0.36037237027377517,
+      "Western Canada US": -0.790686588851042
+    },
+    "artifact": "outputs/regional_timeseries_v2.csv"
+  },
+  "claim_4_largest_contributors": {
+    "description": "Top 5 regions by cumulative mass contribution",
+    "top_5_Gt": {
+      "Alaska": -1721.804920015687,
+      "Greenland Periphery": -1170.1745058171546,
+      "Arctic Canada North": -851.5204543786973,
+      "Southern Andes": -655.4624458627745,
+      "Central Asia": -551.8997867322618
+    },
+    "artifact": "outputs/regional_timeseries_v2.csv"
+  },
+  "claim_5_uncertainty_quantification": {
+    "description": "Uncertainty estimates for all values",
+    "mean_global_uncertainty_Gt": 166.51659105942048,
+    "method": "Inverse variance weighting + method spread",
+    "artifact": "outputs/reconciliation_summary_v2.json"
+  }
+}

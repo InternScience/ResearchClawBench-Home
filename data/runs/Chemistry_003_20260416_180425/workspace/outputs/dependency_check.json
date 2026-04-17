@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "numpy": {"available": true, "version": "installed"},
+    "matplotlib": {"available": true, "version": "installed"},
+    "scipy": {"available": true, "version": "installed"},
+    "scikit-learn": {"available": true, "version": "installed"},
+    "pymupdf": {"available": true, "version": "1.27.2.2"},
+    "CACE": {"available": false, "note": "CACE codebase not available in workspace; analysis uses analytical Coulomb computation and simplified models"},
+    "torch": {"available": true, "note": "PyTorch available but CACE-specific training not implemented"},
+    "ASE": {"available": false, "note": "Not needed for this analysis"}
+  },
+  "limitations": [
+    "Full CACE+LES training pipeline not available; analysis uses analytical physics and simplified regression models",
+    "Charge recovery uses linear regression rather than neural network optimization",
+    "Ag3 dataset has identical energies for both charge states by design (not from DFT)"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "task_name": "MAPF Hybrid MARL-LNS-PP Algorithm",
+  "scientific_goal": "Develop a hybrid MAPF algorithm integrating MARL into LNS framework with PP for efficient finalization",
+  
+  "named_methods": {
+    "large_neighborhood_search": {
+      "source": "MAPF-LNS2 paper",
+      "description": "Iterative repair framework that selects subsets of colliding agents and replans their paths",
+      "key_components": ["neighborhood selection", "path repair", "collision reduction"]
+    },
+    "multi_agent_reinforcement_learning": {
+      "source": "PRIMAL/SCRIMP papers",
+      "description": "Decentralized policy learning for collision avoidance with congestion-aware heuristics",
+      "key_components": ["congestion mapping", "cooperative path selection", "implicit coordination"]
+    },
+    "prioritized_planning": {
+      "source": "Classic MAPF literature",
+      "description": "Sequential path planning with priority ordering, treating higher-priority agents as dynamic obstacles",
+      "key_components": ["priority ordering", "space-time A*", "constraint propagation"]
+    }
+  },
+  
+  "hybrid_integration": {
+    "phase_1": "MARL-guided initial solution generation using congestion-aware heuristics",
+    "phase_2": "LNS framework for iterative collision repair with neighborhood selection",
+    "phase_3": "PP-based refinement for remaining collisions"
+  },
+  
+  "target_artifacts": [
+    "data_overview_visualization",
+    "success_rate_comparison",
+    "runtime_comparison",
+    "method_architecture_diagram",
+    "sample_solution_visualization",
+    "experiment_results_json"
+  ],
+  
+  "evaluation_metrics": [
+    "success_rate",
+    "average_runtime",
+    "collision_count",
+    "sum_of_costs"
+  ],
+  
+  "datasets_used": [
+    "empty",
+    "random_small", 
+    "random_medium",
+    "room",
+    "warehouse"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "artifacts": [
+    {
+      "id": "artifact_001",
+      "name": "Problem Structure Analysis",
+      "description": "Analysis of IMO problem structure including years, problem numbers, and complexity",
+      "status": "completed",
+      "file": "outputs/analysis_results.json"
+    },
+    {
+      "id": "artifact_002", 
+      "name": "Geometric Primitive Distribution",
+      "description": "Frequency distribution of geometric primitives used in constructions",
+      "status": "completed",
+      "file": "outputs/analysis_results.json (top_primitives)"
+    },
+    {
+      "id": "artifact_003",
+      "name": "Conclusion Types Analysis",
+      "description": "Distribution of conclusion types (congruence, collinearity, etc.)",
+      "status": "completed",
+      "file": "outputs/analysis_results.json (conclusion_types)"
+    },
+    {
+      "id": "artifact_004",
+      "name": "Data Overview Plots",
+      "description": "Visualizations showing problem distribution by year, conclusion types, primitives",
+      "status": "completed",
+      "files": [
+        "report/images/problems_by_year.png",
+        "report/images/conclusion_types.png",
+        "report/images/top_primitives.png"
+      ]
+    },
+    {
+      "id": "artifact_005",
+      "name": "Complexity Metrics",
+      "description": "Histograms of objects and primitives per problem",
+      "status": "completed",
+      "file": "report/images/complexity_metrics.png"
+    },
+    {
+      "id": "artifact_006",
+      "name": "Problem Timeline",
+      "description": "Timeline visualization of problems across years",
+      "status": "completed",
+      "file": "report/images/problem_timeline.png"
+    },
+    {
+      "id": "artifact_007",
+      "name": "Inference Rule Analysis",
+      "description": "Analysis of the 43 inference rules from rules.txt",
+      "status": "pending",
+      "reason": "Requires deeper analysis of rule applicability to problems"
+    },
+    {
+      "id": "artifact_008",
+      "name": "Method Fidelity Checklist",
+      "description": "Verification that implemented methods match named approaches",
+      "status": "pending",
+      "reason": "Requires implementation of actual theorem proving"
+    },
+    {
+      "id": "artifact_009",
+      "name": "Comparison/Validation Plots",
+      "description": "Additional validation visualizations comparing methods or results",
+      "status": "in_progress",
+      "files": []
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "completed": 6,
+    "in_progress": 1,
+    "pending": 2
+  }
+}

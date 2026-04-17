@@ -1,0 +1,76 @@
+{
+  "network": {
+    "num_buses": 20,
+    "num_links": 23,
+    "total_line_capacity_mw": 97500.0,
+    "avg_line_length_km": 82.6086956521739,
+    "bus_names": [
+      "Bus1",
+      "Bus2",
+      "Bus3",
+      "Bus4",
+      "Bus5",
+      "Bus6",
+      "Bus7",
+      "Bus8",
+      "Bus9",
+      "Bus10",
+      "Bus11",
+      "Bus12",
+      "Bus13",
+      "Bus14",
+      "Bus15",
+      "Bus16",
+      "Bus17",
+      "Bus18",
+      "Bus19",
+      "Bus20"
+    ]
+  },
+  "generators": {
+    "total_units": 43,
+    "by_carrier": {
+      "onshore wind": {
+        "count": 20,
+        "total_capacity_mw": 57500.0,
+        "marginal_cost": 0.0
+      },
+      "gas": {
+        "count": 20,
+        "total_capacity_mw": 10610.582415475463,
+        "marginal_cost": 50.0
+      },
+      "nuclear": {
+        "count": 3,
+        "total_capacity_mw": 3600.0,
+        "marginal_cost": 10.0
+      }
+    },
+    "total_capacity_mw_by_carrier": {
+      "onshore wind": 57500.0,
+      "gas": 10610.582415475463,
+      "nuclear": 3600.0
+    },
+    "total_capacity_mw": 71710.58241547545
+  },
+  "demand": {
+    "num_hours": 168,
+    "num_buses": 20,
+    "total_demand_mwh": 15939706.029762119,
+    "avg_hourly_demand_mw": 4743.960127905392,
+    "max_hourly_demand_mw": 10671.055389128029,
+    "min_hourly_demand_mw": 311.4930869877434
+  },
+  "wind": {
+    "num_hours": 168,
+    "avg_capacity_factor": 0.3419022926712648,
+    "max_capacity_factor": 0.9,
+    "min_capacity_factor": 0.05
+  },
+  "storage": {
+    "num_units": 3,
+    "total_power_capacity_mw": 750.0,
+    "total_energy_capacity_mwh": 4500.0,
+    "efficiency": 0.75
+  }
+}

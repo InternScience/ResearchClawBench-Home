@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "id": "structure_stats",
+      "description": "Basic statistics of 1BRS PDB structure",
+      "status": "[ ]",
+      "output_path": "outputs/structure_stats.json"
+    },
+    {
+      "id": "interface_residues",
+      "description": "List of interface residues between barnase and barstar",
+      "status": "[ ]",
+      "output_path": "outputs/interface_residues.json"
+    },
+    {
+      "id": "skempi_1brs_data",
+      "description": "Extracted SKEMPI 2.0 data for 1BRS mutations",
+      "status": "[ ]",
+      "output_path": "outputs/skempi_1brs_data.csv"
+    },
+    {
+      "id": "ddg_distribution",
+      "description": "Calculated ddG values from SKEMPI data",
+      "status": "[ ]",
+      "output_path": "outputs/ddg_distribution.json"
+    },
+    {
+      "id": "figure_data_overview",
+      "description": "Data overview plot showing mutation distribution",
+      "status": "[ ]",
+      "output_path": "report/images/fig1_data_overview.png"
+    },
+    {
+      "id": "figure_ddg_histogram",
+      "description": "Histogram of ddG values",
+      "status": "[ ]",
+      "output_path": "report/images/fig2_ddg_distribution.png"
+    },
+    {
+      "id": "figure_interface_map",
+      "description": "Structural mapping of interface residues",
+      "status": "[ ]",
+      "output_path": "report/images/fig3_interface_map.png"
+    },
+    {
+      "id": "figure_hotspot_analysis",
+      "description": "Hot-spot residue analysis",
+      "status": "[ ]",
+      "output_path": "report/images/fig4_hotspot_analysis.png"
+    }
+  ]
+}

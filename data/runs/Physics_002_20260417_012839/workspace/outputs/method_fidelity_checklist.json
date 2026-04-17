@@ -1,0 +1,26 @@
+{
+  "method_name": "Linear Cross-Entropy Benchmarking (XEB)",
+  "definition": "F_XEB = 2^N * <P(x_i)>_counts - 1, where P(x_i) = |<x_i|psi>|^2",
+  "assumptions": [
+    "Ideal probabilities follow Porter-Thomas distribution",
+    "Measurement errors are independent across qubits",
+    "Circuit errors accumulate multiplicatively per layer"
+  ],
+  "invariants": [
+    "F_XEB = 1 for perfect sampling from ideal distribution",
+    "F_XEB = 0 for uniform random sampling",
+    "F_XEB > 0 indicates correlation with ideal distribution"
+  ],
+  "non_negotiable_steps": [
+    "Compute ideal probabilities from complex amplitudes: P = |a|^2",
+    "Weight by measurement counts when computing mean probability",
+    "Subtract 1 after multiplying by 2^N to remove uniform baseline"
+  ],
+  "implementation_check": {
+    "amplitude_to_prob": "PASS - computed |a|^2 from complex amplitude strings",
+    "count_weighting": "PASS - weighted average by measurement counts",
+    "2N_normalization": "PASS - multiplied by 2^N and subtracted 1",
+    "matched_keys": "PASS - matched bitstring keys between counts and amplitudes (typically 20 per instance)"
+  },
+  "deviations": "None - implementation matches standard XEB definition exactly"
+}

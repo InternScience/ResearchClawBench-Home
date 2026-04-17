@@ -1,0 +1,46 @@
+{
+  "related_papers": [
+    {
+      "id": "paper_000",
+      "title": "Detecting DNA cytosine methylation using nanopore sequencing",
+      "authors": "Simpson et al. 2017",
+      "tool": "Nanopolish",
+      "relevance": "Baseline tool for signal-level alignment and methylation detection using HMMs"
+    },
+    {
+      "id": "paper_001",
+      "title": "De novo Identification of DNA Modifications Enabled by Genome-Guided Nanopore Signal Processing",
+      "authors": "Stoiber et al.",
+      "tool": "Tombo",
+      "relevance": "Alternative signal alignment tool using genome-guided processing"
+    },
+    {
+      "id": "paper_002",
+      "title": "Targeted nanopore sequencing by real-time mapping of raw electrical signal with UNCALLED",
+      "authors": "Kovaka et al.",
+      "tool": "UNCALLED",
+      "relevance": "Predecessor to Uncalled4, real-time signal mapping using FM-index"
+    },
+    {
+      "id": "paper_003",
+      "title": "Detection of m6A from direct RNA sequencing using a multiple instance learning framework",
+      "authors": "Hendra et al. 2022",
+      "tool": "m6Anet",
+      "relevance": "Downstream modification detection tool used to evaluate alignment quality"
+    }
+  ],
+  "key_methods_from_related_work": [
+    "HMM-based signal alignment (Nanopolish)",
+    "Event-level k-mer matching",
+    "FM-index for reference search (UNCALLED)",
+    "Multiple instance learning for m6A detection (m6Anet)",
+    "Precision-recall evaluation for modification calling"
+  ],
+  "comparison_axes": [
+    "Alignment speed across chemistries",
+    "Output file size efficiency",
+    "m6A detection sensitivity (AUPRC)",
+    "m6A detection specificity (AUROC)",
+    "Compatibility with multiple sequencing chemistries"
+  ]
+}

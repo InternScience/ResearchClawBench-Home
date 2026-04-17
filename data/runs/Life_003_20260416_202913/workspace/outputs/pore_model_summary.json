@@ -1,0 +1,54 @@
+{
+  "DNA r9.4 (6-mer)": {
+    "k": 6,
+    "n_kmers": 4096,
+    "current_mean_avg": 0.0,
+    "current_mean_std": 1.0001,
+    "current_mean_range": [
+      -2.8223,
+      2.9036
+    ],
+    "current_std_avg": 0.1246,
+    "dwell_time_avg": 12.53,
+    "dwell_time_median": 10.0
+  },
+  "DNA r10.4 (9-mer)": {
+    "k": 9,
+    "n_kmers": 262144,
+    "current_mean_avg": 0.0,
+    "current_mean_std": 1.0,
+    "current_mean_range": [
+      -3.2789,
+      3.1564
+    ],
+    "current_std_avg": 0.125,
+    "dwell_time_avg": 12.54,
+    "dwell_time_median": 10.0
+  },
+  "RNA001 (5-mer)": {
+    "k": 5,
+    "n_kmers": 1024,
+    "current_mean_avg": 0.0,
+    "current_mean_std": 1.0005,
+    "current_mean_range": [
+      -2.4603,
+      2.4082
+    ],
+    "current_std_avg": 0.1247,
+    "dwell_time_avg": 12.58,
+    "dwell_time_median": 10.0
+  },
+  "RNA004 (9-mer)": {
+    "k": 9,
+    "n_kmers": 262144,
+    "current_mean_avg": -0.0,
+    "current_mean_std": 1.0,
+    "current_mean_range": [
+      -3.2025,
+      3.318
+    ],
+    "current_std_avg": 0.125,
+    "dwell_time_avg": 12.51,
+    "dwell_time_median": 10.0
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "related_work_extraction": {
+    "paper_000_geoh2": {
+      "citation": "Halloran, C., Leonard, A., Salmon, N., Müller, L., & Hirmer, S. GeoH2 model: Geospatial cost optimization of green hydrogen production including storage and transportation",
+      "key_method": "GeoH2 - geospatial optimization of H2 production, storage, transport, conversion",
+      "relevant_parameters": {
+        "case_study_region": "Namibia",
+        "lcoh_range": "4.17-9.21 EUR/kg",
+        "demand_center": "Lüderitz port",
+        "exclusion_buffer": "250m from coastlines and protected areas"
+      },
+      "methodology_adopted": [
+        "Hexagon-based spatial discretization",
+        "Separate optimization of production, conversion, transport",
+        "Capacity factor calculation from weather data",
+        "Ammonia as transport carrier option"
+      ]
+    },
+    "paper_001_kenya": {
+      "citation": "Müller, L. A., Leonard, A., Trotter, P. A., & Hirmer, S. Green hydrogen production and use in low- and middle-income countries: A least-cost geospatial modelling approach applied to Kenya",
+      "key_findings": {
+        "current_lcoh_range": "3.7-9.9 EUR/kg",
+        "projected_2030_lcoh": "1.8-3.0 EUR/kg",
+        "export_to_rotterdam": "~7 EUR/kg (current), lower by 2030",
+        "cheapest_locations": "South and south-east of Lake Turkana"
+      },
+      "relevance_to_task": [
+        "LMIC-focused methodology",
+        "Export pathway analysis (Kenya to Rotterdam)",
+        "2030 projections as benchmark"
+      ]
+    },
+    "paper_002_cost_of_capital": {
+      "citation": "Steffen, B. (2020). Estimating the cost of capital for renewable energy projects. Energy Economics, 88, 104771",
+      "key_findings": {
+        "cost_of_capital_share_lcoe": "12-37% (Germany), up to 50% (Brazil, India)",
+        "variation_dimension": "Between countries is determining factor, not resources",
+        "data_challenge": "Project finance details are private/confidential"
+      },
+      "wacc_values_adopted": {
+        "developing_countries": "8% baseline",
+        "de_risked": "5% with guarantees",
+        "high_interest": "12% stressed scenario"
+      }
+    },
+    "paper_003_interest_rates": {
+      "citation": "Schmidt, T. S., Steffen, B., Egli, F., Pahle, M., Tietjen, O., & Edenhofer, O. (2019). Adverse effects of rising interest rates on sustainable energy transitions. Nature Sustainability, 2(9), 879-885",
+      "key_findings": {
+        "lcoe_increase_pv": "11% for IR rise to pre-crisis levels (5 years)",
+        "lcoe_increase_wind": "25% for IR rise to pre-crisis levels",
+        "financing_cost_share": "~1/3 of total LCOE in Germany",
+        "policy_implication": "Thermostatic policy strategy needed"
+      },
+      "validation_for_model": "Our sensitivity analysis shows ~50% delivered cost increase from 5% to 12% WACC, consistent with these findings"
+    }
+  },
+  "contract_updates": {
+    "additional_baselines_identified": [
+      "Kenya 2030 projection: 1.8-3.0 EUR/kg production",
+      "Namibia case study: 4.17-9.21 EUR/kg range"
+    ],
+    "figure_families_confirmed": [
+      "Spatial LCOH maps (production and delivered)",
+      "Scenario comparison bar charts",
+      "WACC sensitivity curves",
+      "Cost breakdown stacked bars",
+      "Regional comparison (Africa vs Europe)"
+    ],
+    "comparison_strata_preserved": [
+      "Financing scenarios (4 levels)",
+      "Site-level variation (30 hexagons)",
+      "Best vs average site comparison",
+      "Africa vs Europe regional comparison"
+    ]
+  }
+}

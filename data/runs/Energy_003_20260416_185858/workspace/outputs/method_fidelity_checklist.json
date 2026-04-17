@@ -1,0 +1,42 @@
+{
+  "method_name": "HEEW Hierarchical Energy Dataset Analysis",
+  "key_structural_ingredients": [
+    {
+      "ingredient": "Three-level hierarchy (Building → Community → Total)",
+      "definition": "Building-level data aggregates to community, community aggregates to total",
+      "verified": true,
+      "result": "Perfect consistency: sum(BN001..BN010) = CN01 = Total for all variables at all timesteps"
+    },
+    {
+      "ingredient": "Multi-energy carrier coverage",
+      "definition": "Dataset includes electricity, heat, cooling, PV generation, and GHG emissions",
+      "verified": true,
+      "result": "All 5 energy variables present in all 12 entity files"
+    },
+    {
+      "ingredient": "Weather data co-location",
+      "definition": "Meteorological data from same geographic area and time period",
+      "verified": true,
+      "result": "7 weather variables covering same 8760 hours, temperature range consistent with Phoenix AZ"
+    },
+    {
+      "ingredient": "Data cleaning algorithms",
+      "definition": "IQR-based and Z-score-based outlier detection",
+      "verified": true,
+      "result": "Both methods implemented and applied to all variables; minimal outliers found in energy data"
+    },
+    {
+      "ingredient": "Temporal completeness",
+      "definition": "Continuous hourly records for full year",
+      "verified": true,
+      "result": "8760 records per entity, zero missing values"
+    }
+  ],
+  "deviations": [
+    {
+      "description": "Analysis limited to Mini-Dataset (10 buildings, 1 year) vs full HEEW (147 buildings, 9 years)",
+      "reason": "Only Mini-Dataset available in workspace",
+      "impact": "Cannot assess long-term trends or full-scale hierarchical patterns"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "dependencies_checked": {
+    "numpy": "1.26.4",
+    "matplotlib": "3.10.1",
+    "PIL": "12.2.0",
+    "cv2": "4.11.0",
+    "scipy": "1.15.2",
+    "skimage": "0.25.2",
+    "seaborn": "0.13.2",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0",
+    "pymupdf": "1.27.2.2"
+  },
+  "limitations": [
+    "No deployed MLLM available for end-to-end VQA evaluation",
+    "CLIP model not loaded directly - simulated via resize pipeline",
+    "Analysis uses image quality metrics as proxies for downstream task accuracy"
+  ],
+  "fallbacks": [
+    "Used image quality metrics (PSNR, SSIM, entropy, edge density) instead of actual MLLM accuracy",
+    "Used gradient/entropy-based saliency instead of actual model attention maps",
+    "Simulated CLIP encoding via bilinear resize instead of actual ViT forward pass"
+  ]
+}

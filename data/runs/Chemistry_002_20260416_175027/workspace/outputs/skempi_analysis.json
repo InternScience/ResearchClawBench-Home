@@ -1,0 +1,551 @@
+{
+  "n_total": 94,
+  "n_single": 49,
+  "n_hotspots": 32,
+  "location_stats": {
+    "COR": {
+      "n": 24,
+      "mean": 4.913704137434201,
+      "std": 1.8274830070964418
+    },
+    "SUP": {
+      "n": 15,
+      "mean": 2.7049176596895705,
+      "std": 1.3447424047212155
+    },
+    "RIM": {
+      "n": 6,
+      "mean": 0.9524639695406266,
+      "std": 1.2601651667458826
+    },
+    "SUR": {
+      "n": 2,
+      "mean": 0.47673486315387753,
+      "std": 0.06609780320047348
+    },
+    "INT": {
+      "n": 2,
+      "mean": -0.5280884546629168,
+      "std": 0.3606889848418051
+    }
+  },
+  "chain_stats": {
+    "A": {
+      "n": 36,
+      "mean": 3.6644732658399217,
+      "std": 2.2206044696257545
+    },
+    "D": {
+      "n": 13,
+      "mean": 2.4764387121348386,
+      "std": 2.354711091177202
+    }
+  },
+  "hotspots": [
+    {
+      "mutation": "HA102L",
+      "ddG": 7.66599198253537,
+      "location": "COR"
+    },
+    {
+      "mutation": "DD39A",
+      "ddG": 7.650628423325032,
+      "location": "COR"
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.911856501359313,
+      "location": "COR"
+    },
+    {
+      "mutation": "HA102G",
+      "ddG": 6.820533931305795,
+      "location": "COR"
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.25446597122129,
+      "location": "COR"
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.145505658550498,
+      "location": "COR"
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.076084072678613,
+      "location": "COR"
+    },
+    {
+      "mutation": "RA87A",
+      "ddG": 5.951840586346065,
+      "location": "SUP"
+    },
+    {
+      "mutation": "DD39A",
+      "ddG": 5.934843648604683,
+      "location": "COR"
+    },
+    {
+      "mutation": "RA87A",
+      "ddG": 5.564438820122816,
+      "location": "SUP"
+    },
+    {
+      "mutation": "RA83Q",
+      "ddG": 5.4197706677785815,
+      "location": "COR"
+    },
+    {
+      "mutation": "KA27A",
+      "ddG": 5.409007919991714,
+      "location": "COR"
+    },
+    {
+      "mutation": "KA27A",
+      "ddG": 5.380695581369596,
+      "location": "COR"
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 5.24512433022293,
+      "location": "COR"
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 5.183429136068456,
+      "location": "COR"
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 4.890359184960131,
+      "location": "COR"
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 4.635153025137829,
+      "location": "COR"
+    },
+    {
+      "mutation": "KA27A",
+      "ddG": 4.587733800084906,
+      "location": "COR"
+    },
+    {
+      "mutation": "HA102Q",
+      "ddG": 4.550376643789804,
+      "location": "COR"
+    },
+    {
+      "mutation": "HA102D",
+      "ddG": 4.550376643789804,
+      "location": "COR"
+    },
+    {
+      "mutation": "DD35A",
+      "ddG": 4.502957418736881,
+      "location": "COR"
+    },
+    {
+      "mutation": "DD35A",
+      "ddG": 4.069444001174572,
+      "location": "COR"
+    },
+    {
+      "mutation": "YD29A",
+      "ddG": 3.4703804840083663,
+      "location": "RIM"
+    },
+    {
+      "mutation": "NA58A",
+      "ddG": 3.115615338745567,
+      "location": "SUP"
+    },
+    {
+      "mutation": "NA58A",
+      "ddG": 3.066218068282378,
+      "location": "SUP"
+    },
+    {
+      "mutation": "EA73S",
+      "ddG": 3.0103461535917737,
+      "location": "SUP"
+    },
+    {
+      "mutation": "EA73A",
+      "ddG": 2.812989953870343,
+      "location": "SUP"
+    },
+    {
+      "mutation": "EA73C",
+      "ddG": 2.528642310364055,
+      "location": "SUP"
+    },
+    {
+      "mutation": "RA59K",
+      "ddG": 2.4880062910431917,
+      "location": "COR"
+    },
+    {
+      "mutation": "EA73Y",
+      "ddG": 2.413619617957084,
+      "location": "SUP"
+    },
+    {
+      "mutation": "EA73A",
+      "ddG": 2.3476083326588264,
+      "location": "SUP"
+    },
+    {
+      "mutation": "EA73F",
+      "ddG": 2.2350743146278247,
+      "location": "SUP"
+    }
+  ],
+  "all_single_mutations": [
+    {
+      "mutation": "KA27A",
+      "ddG": 5.380695581369596,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 27
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 5.24512433022293,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 59
+    },
+    {
+      "mutation": "RA83Q",
+      "ddG": 5.4197706677785815,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 83
+    },
+    {
+      "mutation": "RA87A",
+      "ddG": 5.564438820122816,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 87
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.145505658550498,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    },
+    {
+      "mutation": "YD29F",
+      "ddG": -0.13219560640094694,
+      "location": "RIM",
+      "chain": "D",
+      "resnum": 29
+    },
+    {
+      "mutation": "YD29A",
+      "ddG": 3.4703804840083663,
+      "location": "RIM",
+      "chain": "D",
+      "resnum": 29
+    },
+    {
+      "mutation": "DD35A",
+      "ddG": 4.502957418736881,
+      "location": "COR",
+      "chain": "D",
+      "resnum": 35
+    },
+    {
+      "mutation": "WD38F",
+      "ddG": 1.6425482398136162,
+      "location": "COR",
+      "chain": "D",
+      "resnum": 38
+    },
+    {
+      "mutation": "DD39A",
+      "ddG": 7.650628423325032,
+      "location": "COR",
+      "chain": "D",
+      "resnum": 39
+    },
+    {
+      "mutation": "TD42A",
+      "ddG": 1.8575421821523213,
+      "location": "COR",
+      "chain": "D",
+      "resnum": 42
+    },
+    {
+      "mutation": "WD44F",
+      "ddG": 0.05646404272590638,
+      "location": "COR",
+      "chain": "D",
+      "resnum": 44
+    },
+    {
+      "mutation": "ED76A",
+      "ddG": 1.3641067862611593,
+      "location": "RIM",
+      "chain": "D",
+      "resnum": 76
+    },
+    {
+      "mutation": "ED80A",
+      "ddG": 0.542832666354351,
+      "location": "SUR",
+      "chain": "D",
+      "resnum": 80
+    },
+    {
+      "mutation": "EA73Q",
+      "ddG": 1.4520343667943474,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "EA73W",
+      "ddG": 1.6571767373694852,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "EA73Y",
+      "ddG": 2.413619617957084,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "EA73F",
+      "ddG": 2.2350743146278247,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "EA73C",
+      "ddG": 2.528642310364055,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "EA73S",
+      "ddG": 3.0103461535917737,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "EA73A",
+      "ddG": 2.3476083326588264,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "RA59K",
+      "ddG": 2.4880062910431917,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 59
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 4.635153025137829,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 59
+    },
+    {
+      "mutation": "HA102Q",
+      "ddG": 4.550376643789804,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    },
+    {
+      "mutation": "HA102D",
+      "ddG": 4.550376643789804,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    },
+    {
+      "mutation": "HA102G",
+      "ddG": 6.820533931305795,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.911856501359313,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    },
+    {
+      "mutation": "HA102L",
+      "ddG": 7.66599198253537,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    },
+    {
+      "mutation": "DD35A",
+      "ddG": 4.069444001174572,
+      "location": "COR",
+      "chain": "D",
+      "resnum": 35
+    },
+    {
+      "mutation": "DD39A",
+      "ddG": 5.934843648604683,
+      "location": "COR",
+      "chain": "D",
+      "resnum": 39
+    },
+    {
+      "mutation": "ED76A",
+      "ddG": 0.8235139110435528,
+      "location": "RIM",
+      "chain": "D",
+      "resnum": 76
+    },
+    {
+      "mutation": "ED80A",
+      "ddG": 0.41063705995340405,
+      "location": "SUR",
+      "chain": "D",
+      "resnum": 80
+    },
+    {
+      "mutation": "KA27A",
+      "ddG": 5.409007919991714,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 27
+    },
+    {
+      "mutation": "WA35F",
+      "ddG": 1.4080101312617543,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 35
+    },
+    {
+      "mutation": "DA54A",
+      "ddG": -0.888777439504722,
+      "location": "INT",
+      "chain": "A",
+      "resnum": 54
+    },
+    {
+      "mutation": "NA58A",
+      "ddG": 3.066218068282378,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 58
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 5.183429136068456,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 59
+    },
+    {
+      "mutation": "EA60A",
+      "ddG": -0.32586067860537965,
+      "location": "RIM",
+      "chain": "A",
+      "resnum": 60
+    },
+    {
+      "mutation": "EA73A",
+      "ddG": 1.8977543996359183,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "RA87A",
+      "ddG": 5.951840586346065,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 87
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.25446597122129,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    },
+    {
+      "mutation": "KA27A",
+      "ddG": 4.587733800084906,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 27
+    },
+    {
+      "mutation": "WA35F",
+      "ddG": 1.1123957637153208,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 35
+    },
+    {
+      "mutation": "DA54A",
+      "ddG": -0.16739946982111165,
+      "location": "INT",
+      "chain": "A",
+      "resnum": 54
+    },
+    {
+      "mutation": "NA58A",
+      "ddG": 3.115615338745567,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 58
+    },
+    {
+      "mutation": "RA59A",
+      "ddG": 4.890359184960131,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 59
+    },
+    {
+      "mutation": "EA60A",
+      "ddG": 0.5148389209370072,
+      "location": "RIM",
+      "chain": "A",
+      "resnum": 60
+    },
+    {
+      "mutation": "EA73A",
+      "ddG": 2.812989953870343,
+      "location": "SUP",
+      "chain": "A",
+      "resnum": 73
+    },
+    {
+      "mutation": "HA102A",
+      "ddG": 6.076084072678613,
+      "location": "COR",
+      "chain": "A",
+      "resnum": 102
+    }
+  ]
+}

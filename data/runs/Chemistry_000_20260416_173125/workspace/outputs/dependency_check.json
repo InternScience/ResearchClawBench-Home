@@ -1,0 +1,12 @@
+{
+  "pytorch": "2.11.0+cu130",
+  "torch_geometric": "2.7.0",
+  "rdkit": "2022.09.5",
+  "sklearn": "1.6.1",
+  "matplotlib": "3.10.1",
+  "numpy": "2.2.6",
+  "pandas": "2.2.3",
+  "cuda_available": false,
+  "device": "cpu",
+  "notes": "No GPU available. Models must be kept small for CPU training. Will use smaller hidden dimensions and fewer epochs but maintain architectural fidelity."
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "python3": {"available": true, "version": "3.x"},
+    "yaml": {"available": true, "used_for": "parsing YAML data"},
+    "numpy": {"available": true, "used_for": "numerical computations"},
+    "matplotlib": {"available": true, "used_for": "figure generation"},
+    "json": {"available": true, "used_for": "data serialization"},
+    "pymupdf": {"available": true, "used_for": "PDF reading"}
+  },
+  "limitations": [],
+  "all_required_available": true
+}

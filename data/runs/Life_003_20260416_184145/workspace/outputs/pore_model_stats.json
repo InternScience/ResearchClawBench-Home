@@ -1,0 +1,42 @@
+{
+  "DNA_r9.4.1_6mer": {
+    "n_kmers": 4096,
+    "kmer_length": 6,
+    "current_mean_mean": 0.0,
+    "current_mean_std": 1.0001220926687904,
+    "current_mean_min": -2.8223267334635755,
+    "current_mean_max": 2.903624693668017,
+    "dwell_time_mean": 12.529052734375,
+    "dwell_time_median": 10.0
+  },
+  "DNA_r10.4.1_9mer": {
+    "n_kmers": 262144,
+    "kmer_length": 9,
+    "current_mean_mean": 1.6479873021779667e-17,
+    "current_mean_std": 1.000001907354097,
+    "current_mean_min": -3.2789043581452644,
+    "current_mean_max": 3.156355198239986,
+    "dwell_time_mean": 12.540740966796875,
+    "dwell_time_median": 10.0
+  },
+  "RNA001_5mer": {
+    "n_kmers": 1024,
+    "kmer_length": 5,
+    "current_mean_mean": 1.3877787807814457e-17,
+    "current_mean_std": 1.000488639169156,
+    "current_mean_min": -2.4602796093744868,
+    "current_mean_max": 2.4082268069952795,
+    "dwell_time_mean": 12.576171875,
+    "dwell_time_median": 10.0
+  },
+  "RNA004_9mer": {
+    "n_kmers": 262144,
+    "kmer_length": 9,
+    "current_mean_mean": -4.7704895589362195e-17,
+    "current_mean_std": 1.0000019073540884,
+    "current_mean_min": -3.2024809597905404,
+    "current_mean_max": 3.3179590297390766,
+    "dwell_time_mean": 12.514026641845703,
+    "dwell_time_median": 10.0
+  }
+}

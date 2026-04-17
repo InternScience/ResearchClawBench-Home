@@ -1,0 +1,24 @@
+{
+  "method_name": "Multi-model comparison for neuron segment merge prediction",
+  "key_structural_ingredients": [
+    "Binary classification with class imbalance handling",
+    "Multiple model families: linear, tree-ensemble, neural network",
+    "Per-degradation stratified evaluation",
+    "SHAP-based interpretability analysis",
+    "Permutation importance for best model"
+  ],
+  "assumptions": [
+    "Features 0-19 represent morphology, intensity, and embedding modalities",
+    "Class imbalance (~10% positive) addressed via class weighting",
+    "Standard train/test split provided (no cross-validation needed)"
+  ],
+  "invariants": [
+    "All models evaluated on identical test set",
+    "Same feature set used across all models",
+    "Metrics computed with consistent thresholds"
+  ],
+  "deviations": [
+    "SHAP computed on LightGBM instead of XGBoost due to version incompatibility",
+    "Hyperparameters not exhaustively tuned (reasonable defaults used)"
+  ]
+}

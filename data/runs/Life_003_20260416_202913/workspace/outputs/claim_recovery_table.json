@@ -1,0 +1,46 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Uncalled4 is significantly faster than existing tools across all chemistries",
+      "evidence": "Performance benchmark data shows 1.1x-67x speedup",
+      "artifact": "outputs/performance_table.csv, report/images/performance_comparison.png",
+      "verified": true
+    },
+    {
+      "id": "C2",
+      "claim": "Uncalled4 produces substantially smaller output files",
+      "evidence": "File sizes 2.5x-31x smaller than alternatives",
+      "artifact": "outputs/performance_table.csv, report/images/performance_heatmap.png",
+      "verified": true
+    },
+    {
+      "id": "C3",
+      "claim": "Uncalled4 alignments enable more sensitive m6A detection than Nanopolish",
+      "evidence": "AUPRC: 0.9929 vs 0.7784, AUROC: 0.9979 vs 0.9012",
+      "artifact": "outputs/m6a_metrics.json, report/images/m6a_detection_curves.png",
+      "verified": true
+    },
+    {
+      "id": "C4",
+      "claim": "Central k-mer positions have the strongest effect on ionic current",
+      "evidence": "Substitution analysis shows symmetric bell-shaped position effect with peak at center",
+      "artifact": "report/images/substitution_profiles.png, report/images/base_position_effects.png",
+      "verified": true
+    },
+    {
+      "id": "C5",
+      "claim": "Pore models capture chemistry-specific signal characteristics",
+      "evidence": "Distribution analysis across 4 chemistries shows consistent normalized patterns",
+      "artifact": "outputs/pore_model_summary.json, report/images/chemistry_comparison_violin.png",
+      "verified": true
+    },
+    {
+      "id": "C6",
+      "claim": "GC content correlates with ionic current levels",
+      "evidence": "Pearson correlation analysis across all pore models",
+      "artifact": "report/images/gc_content_effect.png",
+      "verified": true
+    }
+  ]
+}

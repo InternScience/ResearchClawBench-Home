@@ -1,0 +1,28 @@
+{
+  "primary_quantitative_answers": [
+    "Excluded boson mass range from M33 X-7 (stellar-mass BH)",
+    "Excluded boson mass range from IRAS 09149-6206 (SMBH)",
+    "Upper limit on self-interaction coupling f_a for each mass range"
+  ],
+  "required_comparison_tables": [
+    "Summary of BH properties (mass, spin posteriors)",
+    "Excluded boson mass ranges at 95% CL for each BH",
+    "Self-interaction coupling upper limits"
+  ],
+  "expected_figure_families": [
+    "Posterior distribution plots for both BH systems (corner/scatter plots)",
+    "Regge plane with superradiance exclusion regions",
+    "Superradiance instability timescale vs boson mass",
+    "Bayesian exclusion probability vs boson mass",
+    "Self-interaction coupling constraint plot",
+    "Combined exclusion plot spanning both mass regimes"
+  ],
+  "interpretability_artifacts": [
+    "Critical spin curves as function of gravitational coupling alpha",
+    "Instability timescale comparison with BH age"
+  ],
+  "subgroup_outputs": [
+    "Per-BH-system results before combining",
+    "Per-mode (l=1,2) analysis"
+  ]
+}

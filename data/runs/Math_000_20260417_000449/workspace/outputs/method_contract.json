@@ -1,0 +1,21 @@
+{
+  "task": "Multi-object tracking with pseudo-depth decomposition",
+  "methods": {
+    "SparseTrack": "Pseudo-depth estimation + hierarchical association in sparse subsets",
+    "ByteTrack": "Two-stage association (high/low confidence) with Kalman filter",
+    "SORT": "Single-stage IoU-based association with Kalman filter"
+  },
+  "evaluation_metrics": ["MOTA", "IDF1", "HOTA", "ID_switches", "FP", "FN", "MT", "ML"],
+  "key_concepts": {
+    "pseudo_depth": "Estimate relative depth from bbox bottom y-coordinate",
+    "sparse_decomposition": "Split dense detection set into depth-based layers",
+    "hierarchical_association": "Perform matching within each depth layer separately",
+    "occlusion_handling": "Reduce matching ambiguity by separating occluding/occluded targets"
+  },
+  "comparison_axes": [
+    "Overall tracking accuracy (MOTA, IDF1, HOTA)",
+    "Occlusion handling (ID switches during occlusion events)",
+    "Per-depth-layer performance",
+    "Trajectory completeness"
+  ]
+}

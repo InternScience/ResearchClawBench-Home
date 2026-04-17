@@ -1,0 +1,93 @@
+{
+  "inventory_date": "2026-04-16",
+  "artifacts": {
+    "performance_benchmarks": {
+      "status": "satisfied",
+      "file": "outputs/performance_comparison.json",
+      "description": "Complete benchmark data with speedup calculations for 4 tools across 4 chemistries"
+    },
+    "m6a_detection_curves": {
+      "status": "satisfied",
+      "file": "outputs/pr_roc_analysis.json",
+      "description": "Full precision-recall and ROC curve data points with AUC and AP metrics"
+    },
+    "pore_model_statistics": {
+      "status": "satisfied",
+      "file": "outputs/pore_model_stats.json",
+      "description": "Statistical summaries for 4 pore models (DNA r9.4.1, DNA r10.4.1, RNA001, RNA004)"
+    },
+    "analysis_summary": {
+      "status": "satisfied",
+      "file": "outputs/analysis_summary.json",
+      "description": "Consolidated summary of all analysis results"
+    },
+    "method_contract": {
+      "status": "satisfied",
+      "file": "outputs/method_contract.json",
+      "description": "Methodological commitments and expected outputs"
+    }
+  },
+  "figures": {
+    "performance_time.png": {
+      "status": "satisfied",
+      "path": "report/images/performance_time.png",
+      "description": "Alignment time comparison bar charts"
+    },
+    "performance_filesize.png": {
+      "status": "satisfied",
+      "path": "report/images/performance_filesize.png",
+      "description": "Output file size comparison"
+    },
+    "speedup_heatmap.png": {
+      "status": "satisfied",
+      "path": "report/images/speedup_heatmap.png",
+      "description": "Speedup factor heatmap"
+    },
+    "pr_curves.png": {
+      "status": "satisfied",
+      "path": "report/images/pr_curves.png",
+      "description": "Precision-recall curves for m6A detection"
+    },
+    "roc_curves.png": {
+      "status": "satisfied",
+      "path": "report/images/roc_curves.png",
+      "description": "ROC curves for m6A detection"
+    },
+    "prediction_distributions.png": {
+      "status": "satisfied",
+      "path": "report/images/prediction_distributions.png",
+      "description": "Prediction score histograms"
+    },
+    "pore_current_dist.png": {
+      "status": "satisfied",
+      "path": "report/images/pore_current_dist.png",
+      "description": "Current mean distributions by pore model"
+    },
+    "pore_dwell_dist.png": {
+      "status": "satisfied",
+      "path": "report/images/pore_dwell_dist.png",
+      "description": "Dwell time distributions by pore model"
+    },
+    "pore_std_vs_mean.png": {
+      "status": "satisfied",
+      "path": "report/images/pore_std_vs_mean.png",
+      "description": "Current std vs mean scatter plots"
+    }
+  },
+  "report": {
+    "status": "satisfied",
+    "file": "report/report.md",
+    "description": "Comprehensive research report with methodology, results, and discussion"
+  },
+  "code": {
+    "status": "satisfied",
+    "file": "code/run_analysis.py",
+    "description": "Reproducible analysis pipeline"
+  },
+  "summary": {
+    "total_artifacts_required": 14,
+    "total_artifacts_satisfied": 14,
+    "total_artifacts_unsatisfied": 0,
+    "completion_rate": 1.0
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "task_description": "Analysis of SXS binary black hole simulation catalog waveform differences",
+  "scientific_goal": "Construct high-accuracy, high-coverage catalog of BBH simulations for gravitational-wave data analysis, waveform model calibration, and fundamental physics research",
+  "data_sources": {
+    "fig6_data": {
+      "file": "data/fig6_data.csv",
+      "description": "Waveform differences between two highest numerical resolutions",
+      "n_simulations": 1500,
+      "expected_median": "4e-4",
+      "distribution": "log-normal",
+      "purpose": "Assess overall numerical uncertainty of waveform catalog"
+    },
+    "fig7_data": {
+      "file": "data/fig7_data.csv",
+      "description": "Waveform differences decomposed by spherical harmonic mode l=2 to l=8",
+      "n_simulations": 1500,
+      "n_modes": 7,
+      "expected_trend": "Median difference increases with l",
+      "purpose": "Understand how waveform accuracy varies across multipoles"
+    },
+    "fig8_data": {
+      "file": "data/fig8_data.csv",
+      "description": "Waveform differences from extrapolation-order comparisons",
+      "n_simulations": 1200,
+      "comparisons": ["N2vsN3", "N2vsN4"],
+      "expected_medians": {"N2vsN3": "2e-5", "N2vsN4": "5e-5"},
+      "purpose": "Evaluate convergence of extrapolation procedure"
+    }
+  },
+  "required_outputs": {
+    "quantitative_summaries": [
+      "Distribution statistics for fig6 (median, mean, std, percentiles)",
+      "Mode-by-mode statistics for fig7 (per l median and scatter)",
+      "Extrapolation comparison statistics for fig8"
+    ],
+    "comparison_tables": [
+      "Summary statistics table comparing all three datasets",
+      "Mode-dependent error progression table (fig7)"
+    ],
+    "figure_families": [
+      "Data overview: histograms and KDE plots for each dataset",
+      "Main results: cumulative distributions, box plots by mode",
+      "Validation: QQ plots, extrapolation convergence plots"
+    ],
+    "interpretability_artifacts": [
+      "Error budget breakdown by source (resolution, mode, extrapolation)",
+      "Correlation analysis between different error sources"
+    ]
+  },
+  "methodological_commitments": {
+    "statistical_analysis": "Log-normal distribution fitting, percentile analysis",
+    "visualization": "Matplotlib/seaborn with publication-quality formatting",
+    "reproducibility": "All code saved to code/, outputs saved to outputs/",
+    "related_work_integration": "Compare findings to SXS catalog paper methodology"
+  }
+}

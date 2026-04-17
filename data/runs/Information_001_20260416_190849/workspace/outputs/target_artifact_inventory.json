@@ -1,0 +1,95 @@
+{
+  "target_artifacts": [
+    {
+      "id": "fig_info_loss",
+      "description": "Figure showing information loss when downsampling to CLIP resolution",
+      "type": "comparison_figure",
+      "status": "satisfied",
+      "artifact": "report/images/resolution_impact.png"
+    },
+    {
+      "id": "fig_attention_heatmap",
+      "description": "Attention/relevance heatmaps showing where model focuses",
+      "type": "heatmap_figure",
+      "status": "satisfied",
+      "artifact": "report/images/attention_heatmap_roi.png"
+    },
+    {
+      "id": "fig_crop_comparison",
+      "description": "Comparison of original vs cropped regions at different resolutions",
+      "type": "comparison_figure",
+      "status": "satisfied",
+      "artifact": "report/images/crop_zoom_analysis.png"
+    },
+    {
+      "id": "fig_resolution_analysis",
+      "description": "Resolution impact analysis on detail preservation",
+      "type": "analysis_figure",
+      "status": "satisfied",
+      "artifact": "report/images/visual_resolution_comparison.png"
+    },
+    {
+      "id": "fig_pipeline_overview",
+      "description": "Overview diagram of the task-guided cropping pipeline",
+      "type": "diagram",
+      "status": "satisfied",
+      "artifact": "report/images/pipeline_overview.png"
+    },
+    {
+      "id": "fig_entropy_comparison",
+      "description": "Information entropy comparison across resolutions and crops",
+      "type": "bar_chart",
+      "status": "satisfied",
+      "artifact": "report/images/metrics_comparison.png"
+    },
+    {
+      "id": "table_metrics",
+      "description": "Table of quantitative metrics comparing approaches",
+      "type": "table",
+      "status": "satisfied",
+      "artifact": "report/images/metrics_table.png, outputs/metrics_table.json"
+    },
+    {
+      "id": "fig_frequency_analysis",
+      "description": "Frequency domain analysis showing high-freq detail loss",
+      "type": "analysis_figure",
+      "status": "satisfied",
+      "artifact": "report/images/frequency_analysis.png"
+    },
+    {
+      "id": "fig_comprehensive_roi",
+      "description": "Comprehensive ROI quality analysis across all scenarios",
+      "type": "comparison_figure",
+      "status": "satisfied",
+      "artifact": "report/images/comprehensive_roi_analysis.png"
+    },
+    {
+      "id": "fig_vicrop_simulation",
+      "description": "ViCrop-style task-guided cropping simulation",
+      "type": "simulation_figure",
+      "status": "satisfied",
+      "artifact": "report/images/vicrop_simulation.png"
+    },
+    {
+      "id": "fig_roi_size_improvement",
+      "description": "ROI size vs improvement relationship scatter plot",
+      "type": "scatter_plot",
+      "status": "satisfied",
+      "artifact": "report/images/roi_size_vs_improvement.png"
+    },
+    {
+      "id": "fig_difference_maps",
+      "description": "Spatial distribution of information loss",
+      "type": "heatmap_figure",
+      "status": "satisfied",
+      "artifact": "report/images/difference_maps.png"
+    },
+    {
+      "id": "fig_improvement_summary",
+      "description": "Summary of improvements across scenarios",
+      "type": "bar_chart",
+      "status": "satisfied",
+      "artifact": "report/images/improvement_summary.png"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "task": "Dynamic Feature Selection for Cellular Trajectory Preservation",
+  "methods": [
+    "Variance-based feature selection (variance, coefficient of variation)",
+    "Trajectory correlation (Spearman with annotated age and DPT)",
+    "Laplacian score (graph-based, k-NN connectivity)",
+    "Mutual information (with age and DPT, k-NN estimation)",
+    "Differential expression (Kruskal-Wallis across phases, Mann-Whitney U cycling vs arrested)",
+    "Composite weighted ranking"
+  ],
+  "evaluation_metrics": [
+    "DPT-Age Spearman correlation",
+    "Phase silhouette score",
+    "State silhouette score",
+    "Trajectory continuity",
+    "PCA variance explained"
+  ],
+  "baselines": [
+    "All features (241)",
+    "Variance-only top-k",
+    "Random selection"
+  ],
+  "composite_weights": {
+    "variance": 0.10,
+    "cv": 0.05,
+    "age_correlation": 0.20,
+    "dpt_correlation": 0.15,
+    "laplacian_score": 0.15,
+    "mutual_information": 0.15,
+    "phase_de": 0.10,
+    "state_de": 0.10
+  }
+}

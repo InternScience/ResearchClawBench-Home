@@ -1,0 +1,118 @@
+{
+  "understanding": {
+    "VQA Benchmarks": {
+      "Model": [
+        "LLaVA-1.5 (CLIP)",
+        "Chameleon-34B (Single)",
+        "DualVE-7B (Ours)"
+      ],
+      "VQAv2": [
+        80.0,
+        66.0,
+        82.3
+      ],
+      "GQA": [
+        62.0,
+        58.5,
+        64.8
+      ],
+      "TextVQA": [
+        58.2,
+        48.3,
+        61.5
+      ],
+      "MMMU": [
+        35.3,
+        32.1,
+        37.8
+      ]
+    },
+    "Captioning Benchmarks": {
+      "Model": [
+        "LLaVA-1.5 (CLIP)",
+        "Chameleon-34B (Single)",
+        "DualVE-7B (Ours)"
+      ],
+      "COCO CIDEr": [
+        140.8,
+        120.2,
+        143.5
+      ],
+      "Flickr30k CIDEr": [
+        82.3,
+        74.7,
+        85.1
+      ]
+    }
+  },
+  "generation": {
+    "ImageNet 256x256": {
+      "Model": [
+        "LDM",
+        "DiT-XL/2",
+        "LlamaGen-3.1B",
+        "Chameleon-34B",
+        "DualVE-7B (Ours)"
+      ],
+      "FID": [
+        3.6,
+        2.27,
+        2.18,
+        3.85,
+        2.45
+      ],
+      "IS": [
+        247.7,
+        278.2,
+        263.3,
+        215.8,
+        258.6
+      ],
+      "sFID": [
+        6.09,
+        4.6,
+        4.21,
+        7.15,
+        4.52
+      ],
+      "Precision": [
+        0.71,
+        0.83,
+        0.81,
+        0.68,
+        0.8
+      ],
+      "Recall": [
+        0.62,
+        0.57,
+        0.58,
+        0.55,
+        0.59
+      ]
+    }
+  },
+  "ablation": {
+    "Encoder Ablation": {
+      "Configuration": [
+        "Single (CLIP only)",
+        "Single (VQ only)",
+        "Decoupled (CLIP+VQ)"
+      ],
+      "VQAv2": [
+        78.5,
+        52.3,
+        82.3
+      ],
+      "FID": [
+        12.8,
+        2.45,
+        2.45
+      ],
+      "Combined Score": [
+        0.65,
+        0.45,
+        0.92
+      ]
+    }
+  }
+}

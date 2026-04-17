@@ -1,0 +1,198 @@
+{
+  "benchmarks": [
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "Uncalled4",
+      "Time_min": 39.584270286340754,
+      "FileSize_MB": 139.82065109661204
+    },
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "f5c",
+      "Time_min": 256.9233393707774,
+      "FileSize_MB": 3231.115366828034
+    },
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "Nanopolish",
+      "Time_min": 2654.0467638379905,
+      "FileSize_MB": 3210.4662398245937
+    },
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "Tombo",
+      "Time_min": 642.4291658886989,
+      "FileSize_MB": 387.1214988819064
+    },
+    {
+      "Chemistry": "DNA r10.4",
+      "Tool": "Uncalled4",
+      "Time_min": 54.44913685523318,
+      "FileSize_MB": 118.70855767886827
+    },
+    {
+      "Chemistry": "DNA r10.4",
+      "Tool": "f5c",
+      "Time_min": 1573.468570353864,
+      "FileSize_MB": 3718.581557173333
+    },
+    {
+      "Chemistry": "DNA r10.4",
+      "Tool": "Nanopolish",
+      "Time_min": NaN,
+      "FileSize_MB": NaN
+    },
+    {
+      "Chemistry": "DNA r10.4",
+      "Tool": "Tombo",
+      "Time_min": NaN,
+      "FileSize_MB": NaN
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "Uncalled4",
+      "Time_min": 114.66766338728108,
+      "FileSize_MB": 21.22445364382001
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "f5c",
+      "Time_min": 144.97187941072403,
+      "FileSize_MB": 725.1270894230943
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "Nanopolish",
+      "Time_min": 199.43755817149585,
+      "FileSize_MB": 731.3524522174138
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "Tombo",
+      "Time_min": 773.9889156304711,
+      "FileSize_MB": 86.60282432245239
+    },
+    {
+      "Chemistry": "RNA004",
+      "Tool": "Uncalled4",
+      "Time_min": 60.18828566025166,
+      "FileSize_MB": 48.43795288655033
+    },
+    {
+      "Chemistry": "RNA004",
+      "Tool": "f5c",
+      "Time_min": 68.30231471920341,
+      "FileSize_MB": 536.1037278441161
+    },
+    {
+      "Chemistry": "RNA004",
+      "Tool": "Nanopolish",
+      "Time_min": NaN,
+      "FileSize_MB": NaN
+    },
+    {
+      "Chemistry": "RNA004",
+      "Tool": "Tombo",
+      "Time_min": NaN,
+      "FileSize_MB": NaN
+    }
+  ],
+  "speedup": [
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "Uncalled4",
+      "Time_min": 39.584270286340754,
+      "FileSize_MB": 139.82065109661204,
+      "Speedup": 1.0,
+      "SizeRatio": 1.0
+    },
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "f5c",
+      "Time_min": 256.9233393707774,
+      "FileSize_MB": 3231.115366828034,
+      "Speedup": 6.490541255712709,
+      "SizeRatio": 23.108999575430573
+    },
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "Nanopolish",
+      "Time_min": 2654.0467638379905,
+      "FileSize_MB": 3210.4662398245937,
+      "Speedup": 67.04801540206277,
+      "SizeRatio": 22.961316619862213
+    },
+    {
+      "Chemistry": "DNA r9.4",
+      "Tool": "Tombo",
+      "Time_min": 642.4291658886989,
+      "FileSize_MB": 387.1214988819064,
+      "Speedup": 16.229405297648757,
+      "SizeRatio": 2.768700444789208
+    },
+    {
+      "Chemistry": "DNA r10.4",
+      "Tool": "Uncalled4",
+      "Time_min": 54.44913685523318,
+      "FileSize_MB": 118.70855767886827,
+      "Speedup": 1.0,
+      "SizeRatio": 1.0
+    },
+    {
+      "Chemistry": "DNA r10.4",
+      "Tool": "f5c",
+      "Time_min": 1573.468570353864,
+      "FileSize_MB": 3718.581557173333,
+      "Speedup": 28.89795249715948,
+      "SizeRatio": 31.325303161654794
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "Uncalled4",
+      "Time_min": 114.66766338728108,
+      "FileSize_MB": 21.22445364382001,
+      "Speedup": 1.0,
+      "SizeRatio": 1.0
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "f5c",
+      "Time_min": 144.97187941072403,
+      "FileSize_MB": 725.1270894230943,
+      "Speedup": 1.264278656495274,
+      "SizeRatio": 34.16469990662077
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "Nanopolish",
+      "Time_min": 199.43755817149585,
+      "FileSize_MB": 731.3524522174138,
+      "Speedup": 1.739265912290469,
+      "SizeRatio": 34.458010768647696
+    },
+    {
+      "Chemistry": "RNA001",
+      "Tool": "Tombo",
+      "Time_min": 773.9889156304711,
+      "FileSize_MB": 86.60282432245239,
+      "Speedup": 6.749844662103072,
+      "SizeRatio": 4.080332326842665
+    },
+    {
+      "Chemistry": "RNA004",
+      "Tool": "Uncalled4",
+      "Time_min": 60.18828566025166,
+      "FileSize_MB": 48.43795288655033,
+      "Speedup": 1.0,
+      "SizeRatio": 1.0
+    },
+    {
+      "Chemistry": "RNA004",
+      "Tool": "f5c",
+      "Time_min": 68.30231471920341,
+      "FileSize_MB": 536.1037278441161,
+      "Speedup": 1.1348107687391777,
+      "SizeRatio": 11.067844446270456
+    }
+  ]
+}

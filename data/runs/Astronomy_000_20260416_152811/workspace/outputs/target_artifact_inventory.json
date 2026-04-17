@@ -1,0 +1,80 @@
+{
+  "inventory": {
+    "data_overview_plots": {
+      "status": "satisfied",
+      "artifact_path": "report/images/data_overview.png",
+      "description": "Posterior distributions for IRAS 09149-6206 and M33 X-7"
+    },
+    "mass_spin_distribution": {
+      "status": "satisfied",
+      "artifact_path": "report/images/mass_spin_distribution.png",
+      "description": "BH mass-spin scatter with alpha=0.4 sensitivity lines"
+    },
+    "alpha_distribution": {
+      "status": "satisfied",
+      "artifact_path": "report/images/alpha_distribution.png",
+      "description": "Distribution of fine-structure constant for optimal mu values"
+    },
+    "exclusion_probability_curve": {
+      "status": "satisfied",
+      "artifact_path": "report/images/exclusion_probability.png",
+      "description": "Main result: P(excluded) vs mu for both BHs"
+    },
+    "combined_constraints": {
+      "status": "satisfied",
+      "artifact_path": "report/images/combined_constraints.png",
+      "description": "Combined exclusion from both BHs"
+    },
+    "self_interaction_constraints_iras": {
+      "status": "satisfied",
+      "artifact_path": "report/images/fa_constraint_iras_09149-6206.png",
+      "description": "Constraints in (mu, f_a) plane for SMBH"
+    },
+    "self_interaction_constraints_m33": {
+      "status": "satisfied",
+      "artifact_path": "report/images/fa_constraint_m33_x-7.png",
+      "description": "Constraints in (mu, f_a) plane for stellar-mass BH"
+    },
+    "literature_comparison": {
+      "status": "satisfied",
+      "artifact_path": "report/images/literature_comparison.png",
+      "description": "Comparison with Arvanitaki et al. and Stott exclusion regions"
+    },
+    "sensitivity_analysis": {
+      "status": "satisfied",
+      "artifact_path": "report/images/sensitivity_analysis.png",
+      "description": "Robustness to alpha threshold variations"
+    },
+    "posterior_predictive_check": {
+      "status": "satisfied",
+      "artifact_path": "report/images/posterior_predictive.png",
+      "description": "Validation using synthetic data from posterior summaries"
+    },
+    "upper_limit_iras_95cl": {
+      "status": "satisfied",
+      "value": "1.28e-18 eV",
+      "artifact_path": "outputs/constraint_results.json"
+    },
+    "upper_limit_m33_95cl": {
+      "status": "satisfied",
+      "value": "2.70e-12 eV",
+      "artifact_path": "outputs/constraint_results.json"
+    },
+    "peak_exclusion_iras": {
+      "status": "satisfied",
+      "value": {"mu": "1.80e-19 eV", "P_excl": 0.925},
+      "artifact_path": "outputs/constraint_results.json"
+    },
+    "peak_exclusion_m33": {
+      "status": "satisfied",
+      "value": {"mu": "6.91e-13 eV", "P_excl": 1.0},
+      "artifact_path": "outputs/constraint_results.json"
+    }
+  },
+  "summary": {
+    "total_artifacts": 14,
+    "satisfied": 14,
+    "unsatisfied": 0,
+    "all_requirements_met": true
+  }
+}

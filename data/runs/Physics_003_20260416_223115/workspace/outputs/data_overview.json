@@ -1,0 +1,33 @@
+{
+  "raw_trarpes_data": {
+    "energy_range_eV": [
+      -0.5,
+      0.5
+    ],
+    "energy_points": 200,
+    "kx_range_Angstrom_inv": [
+      -0.3,
+      0.3
+    ],
+    "kx_points": 150,
+    "spectrum_shape": [
+      200,
+      150
+    ]
+  },
+  "processed_band_data": {
+    "dirac_point": [
+      -0.3,
+      -0.042713567839196
+    ],
+    "n_replica_bands": 4,
+    "n_band_dispersion_points": 200
+  },
+  "polarization_data": {
+    "n_angles": 7,
+    "angle_range_degrees": [
+      0,
+      180
+    ]
+  }
+}

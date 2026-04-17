@@ -1,0 +1,41 @@
+{
+  "claims": [
+    {
+      "claim": "Fixed-resolution encoding at 224x224 reduces SSIM to 0.345 for Demo 2",
+      "evidence": "Computed directly from demo2.png using skimage.metrics.structural_similarity",
+      "artifact": "outputs/resolution_analysis.json",
+      "verified": true
+    },
+    {
+      "claim": "Task-guided cropping provides 61-157x more effective pixels for ROIs",
+      "evidence": "Arithmetic calculation: (448*448) / effective_pixels_in_global_224",
+      "artifact": "outputs/refined_analysis_results.json",
+      "verified": true
+    },
+    {
+      "claim": "PSNR improvement of 12.9-24.6 dB from task-guided cropping",
+      "evidence": "Computed using skimage.metrics.peak_signal_noise_ratio comparing ROI quality",
+      "artifact": "outputs/refined_analysis_results.json",
+      "verified": true
+    },
+    {
+      "claim": "SSIM improvement of 0.19-0.83 from task-guided cropping",
+      "evidence": "Computed using skimage.metrics.structural_similarity",
+      "artifact": "outputs/refined_analysis_results.json",
+      "verified": true
+    },
+    {
+      "claim": "SEAL achieved 75.39% accuracy vs 54.97% for GPT-4V on V*Bench",
+      "evidence": "Table 1 in paper_000.pdf (Wu & Xie, 2024)",
+      "artifact": "related_work/paper_000.pdf",
+      "verified": true,
+      "source": "related_work"
+    },
+    {
+      "claim": "Smaller ROIs benefit more from task-guided cropping",
+      "evidence": "PersonFace (13.3%x20% area) shows 157.3x gain vs LicensePlate (22.5%x19.5%) at 93.4x",
+      "artifact": "outputs/refined_analysis_results.json, report/images/roi_size_vs_improvement.png",
+      "verified": true
+    }
+  ]
+}

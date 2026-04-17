@@ -1,0 +1,128 @@
+{
+  "demo1": {
+    "original": {
+      "entropy": 7.7121686692157745,
+      "edge_density": 0.08388646443684895,
+      "high_freq_ratio": 0.0047841171902643555,
+      "resolution": "1024x768"
+    },
+    "res_224": {
+      "mse": 121.83257548014323,
+      "psnr": 27.273169357914956,
+      "ssim": 0.828742374656809,
+      "entropy_downscaled": 7.673448416540557,
+      "edge_density_downscaled": 0.1542370854591837,
+      "high_freq_ratio_downscaled": 0.01305855879565135,
+      "entropy_loss_pct": 0.5020669844757767,
+      "edge_loss_pct": -83.86409117921019,
+      "hf_loss_pct": -172.95649910552828
+    },
+    "res_336": {
+      "mse": 62.44899707370334,
+      "psnr": 30.175548928391645,
+      "ssim": 0.9032775237961771,
+      "entropy_downscaled": 7.689907190307911,
+      "edge_density_downscaled": 0.13510664682539683,
+      "high_freq_ratio_downscaled": 0.009842242213824527,
+      "entropy_loss_pct": 0.28865394239526654,
+      "edge_loss_pct": -61.05893570840292,
+      "hf_loss_pct": -105.7274481873776
+    },
+    "res_448": {
+      "mse": 35.15492248535156,
+      "psnr": 32.67094216190655,
+      "ssim": 0.9435843841407745,
+      "entropy_downscaled": 7.698327714530832,
+      "edge_density_downscaled": 0.11849290497448979,
+      "high_freq_ratio_downscaled": 0.007315636233399194,
+      "entropy_loss_pct": 0.1794690349575844,
+      "edge_loss_pct": -41.253902843519064,
+      "hf_loss_pct": -52.91507173541782
+    },
+    "res_672": {
+      "mse": 13.346472846137154,
+      "psnr": 36.87713853658237,
+      "ssim": 0.9785831053549806,
+      "entropy_downscaled": 7.705519499897976,
+      "edge_density_downscaled": 0.09469777494331066,
+      "high_freq_ratio_downscaled": 0.004472490329134881,
+      "entropy_loss_pct": 0.08621659617403682,
+      "edge_loss_pct": -12.888027382058324,
+      "hf_loss_pct": 6.513779841422639
+    },
+    "res_896": {
+      "mse": 6.9789449903700085,
+      "psnr": 39.692905857362824,
+      "ssim": 0.9891087755987468,
+      "entropy_downscaled": 7.707868724447247,
+      "edge_density_downscaled": 0.07697654257015306,
+      "high_freq_ratio_downscaled": 0.002741469262137097,
+      "entropy_loss_pct": 0.05575532580986919,
+      "edge_loss_pct": 8.23723101585452,
+      "hf_loss_pct": 42.69644423184349
+    }
+  },
+  "demo2": {
+    "original": {
+      "entropy": 7.808132199124597,
+      "edge_density": 0.22082874074074074,
+      "high_freq_ratio": 0.04861116575454256,
+      "resolution": "2250x1500"
+    },
+    "res_224": {
+      "mse": 1119.0689953580247,
+      "psnr": 17.642234974141495,
+      "ssim": 0.34544875367228484,
+      "entropy_downscaled": 7.72610246587353,
+      "edge_density_downscaled": 0.31642617984693877,
+      "high_freq_ratio_downscaled": 0.04760523441726797,
+      "entropy_loss_pct": 1.0505679355718904,
+      "edge_loss_pct": -43.2903066808827,
+      "hf_loss_pct": 2.0693421391166367
+    },
+    "res_336": {
+      "mse": 880.8629612839507,
+      "psnr": 18.681720118059538,
+      "ssim": 0.423209236908657,
+      "entropy_downscaled": 7.7547468641345025,
+      "edge_density_downscaled": 0.29804421768707484,
+      "high_freq_ratio_downscaled": 0.041570643152121244,
+      "entropy_loss_pct": 0.6837145379797751,
+      "edge_loss_pct": -34.966226174783685,
+      "hf_loss_pct": 14.483344501491205
+    },
+    "res_448": {
+      "mse": 730.8507941728395,
+      "psnr": 19.49251637646651,
+      "ssim": 0.49435595095939605,
+      "entropy_downscaled": 7.769954464815631,
+      "edge_density_downscaled": 0.2813247369260204,
+      "high_freq_ratio_downscaled": 0.037858267750415654,
+      "entropy_loss_pct": 0.48894835967617084,
+      "edge_loss_pct": -27.394983090676444,
+      "hf_loss_pct": 22.120222457578237
+    },
+    "res_672": {
+      "mse": 538.4189930864197,
+      "psnr": 20.819599893564153,
+      "ssim": 0.6129736002750552,
+      "entropy_downscaled": 7.783603174133835,
+      "edge_density_downscaled": 0.2570750956632653,
+      "high_freq_ratio_downscaled": 0.032323669664630336,
+      "entropy_loss_pct": 0.3141471528045164,
+      "edge_loss_pct": -16.413785090174844,
+      "hf_loss_pct": 33.50566857860266
+    },
+    "res_896": {
+      "mse": 412.5351954567901,
+      "psnr": 21.976193545501484,
+      "ssim": 0.7034129570853039,
+      "entropy_downscaled": 7.789693282642213,
+      "edge_density_downscaled": 0.2420928332270408,
+      "high_freq_ratio_downscaled": 0.03047923074484481,
+      "entropy_loss_pct": 0.23615015745316403,
+      "edge_loss_pct": -9.629223268208879,
+      "hf_loss_pct": 37.299938662761605
+    }
+  }
+}

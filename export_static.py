@@ -34,26 +34,34 @@ TEXT_EXTS = {
 IMG_EXTS = {'.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp', '.svg'}
 RESEARCHHARNESS_LABEL = "ResearchHarness"
 
-MODEL_ESTIMATED_USD_PER_MIN = {
-    "gpt-5.4": 0.15,
-    "claude-sonnet-4-6": 0.20,
-    "claude-opus-4-6": 0.40,
-    "gemini-3.1-pro": 0.12,
-    "glm-5.1": 0.05,
-    "grok-4.1": 0.03,
-    "kimi-k2.5": 0.03,
-    "mimo-v2-pro": 0.04,
-    "qwen3.6-plus": 0.02,
+# Time-based cost estimate derived from online per-token list prices.
+# Fixed workload profile for one active agent minute:
+# - 15K input tokens / minute
+# - 5K output tokens / minute
+EST_INPUT_TOKENS_PER_MIN = 15_000
+EST_OUTPUT_TOKENS_PER_MIN = 5_000
+MODEL_TOKEN_PRICING_PER_MTOK = {
+    "gpt-5.4": {"input": 2.5, "output": 15.0},
+    "claude-sonnet-4-6": {"input": 3.0, "output": 15.0},
+    "claude-opus-4-6": {"input": 5.0, "output": 25.0},
+    "gemini-3.1-pro": {"input": 2.0, "output": 12.0},
+    "glm-5.1": {"input": 1.4, "output": 4.4},
+    "grok-4.1": {"input": 0.2, "output": 0.5},
+    "kimi-k2.5": {"input": 0.6, "output": 3.0},
+    "mimo-v2-pro": {"input": 1.0, "output": 3.0},
+    "qwen3.5-397b-a17b": {"input": 0.6, "output": 3.6},
+    "qwen3.6-plus": {"input": 0.5, "output": 3.0},
 }
 MODEL_DISPLAY_NAMES = {
     "gpt-5.4": "GPT-5.4",
-    "claude-opus-4-6": "Opus 4.6",
-    "claude-sonnet-4-6": "Sonnet 4.6",
+    "claude-opus-4-6": "Claude-Opus-4.6",
+    "claude-sonnet-4-6": "Claude-Sonnet-4.6",
     "gemini-3.1-pro": "Gemini-3.1-Pro",
     "glm-5.1": "GLM-5.1",
     "grok-4.1": "Grok-4.1",
     "kimi-k2.5": "Kimi-K2.5",
     "mimo-v2-pro": "MiMo-V2-Pro",
+    "qwen3.5-397b-a17b": "Qwen3.5-397B-A17B",
     "qwen3.6-plus": "Qwen3.6-Plus",
 }
 AGENT_DEFAULT_MODELS = {
@@ -66,7 +74,7 @@ AGENT_DEFAULT_MODELS = {
 # Bump when task export output/schema changes and existing cached signatures must be invalidated.
 TASK_EXPORT_VERSION = 4
 # Bump when run export output/schema changes and existing cached signatures must be invalidated.
-RUN_EXPORT_VERSION = 6
+RUN_EXPORT_VERSION = 8
 TASK_EXPORT_MANIFEST = EXPORT_STATE_DIR / "task_export_manifest.json"
 RUN_EXPORT_MANIFEST = EXPORT_STATE_DIR / "run_export_manifest.json"
 RUN_OUTPUT_FILES = ["_agent_output.jsonl", "_claude_output.jsonl"]
@@ -212,10 +220,16 @@ def _canonical_model_key(model):
     if not raw:
         return ""
     key = raw.lower()
-    if key.startswith("claude-sonnet-4-6"):
+    if key.startswith("claude-sonnet-4-6") or key.startswith("claude-sonnet-4.6"):
         return "claude-sonnet-4-6"
-    if key.startswith("claude-opus-4-6"):
+    if key.startswith("claude-opus-4-6") or key.startswith("claude-opus-4.6"):
         return "claude-opus-4-6"
+    if key.startswith("gemini-3.1-pro-preview"):
+        return "gemini-3.1-pro"
+    if key.startswith("grok-4-1-fast-reasoning"):
+        return "grok-4.1"
+    if key.startswith("xiaomi/mimo-v2-pro"):
+        return "mimo-v2-pro"
     return key
 
 
@@ -233,11 +247,13 @@ def _format_model_display(model):
 
 def _estimate_run_cost_usd(model, duration_seconds):
     pricing_model = _normalize_pricing_model(model)
-    rate_per_min = MODEL_ESTIMATED_USD_PER_MIN.get(pricing_model)
-    if not rate_per_min or duration_seconds is None:
+    pricing = MODEL_TOKEN_PRICING_PER_MTOK.get(pricing_model)
+    if not pricing or duration_seconds is None:
         return None
     duration_minutes = max(float(duration_seconds), 0.0) / 60.0
-    return round(duration_minutes * rate_per_min, 6)
+    input_cost_per_min = (EST_INPUT_TOKENS_PER_MIN / 1_000_000.0) * pricing["input"]
+    output_cost_per_min = (EST_OUTPUT_TOKENS_PER_MIN / 1_000_000.0) * pricing["output"]
+    return round(duration_minutes * (input_cost_per_min + output_cost_per_min), 6)
 
 
 def _load_export_manifest(path, version):

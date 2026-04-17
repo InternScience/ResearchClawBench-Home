@@ -1,0 +1,36 @@
+{
+  "task_description": "HADDOCK3 analysis of barnase-barstar complex (1BRS) using SKEMPI 2.0 validation data",
+  "input_data": {
+    "structure_file": "data/1brs_AD.pdb",
+    "validation_database": "data/skempi_v2.csv"
+  },
+  "methodological_commitments": [
+    "Parse and analyze 1BRS PDB structure (barnase-barstar complex)",
+    "Extract interface residues from the complex structure",
+    "Query SKEMPI 2.0 for mutation data on 1BRS",
+    "Calculate binding affinity changes (ddG) from SKEMPI data",
+    "Map mutations to structural locations",
+    "Generate visualization of interface and mutation effects",
+    "Validate structural features against experimental affinity data"
+  ],
+  "target_artifacts": [
+    "Structure overview statistics",
+    "Interface residue identification",
+    "SKEMPI mutation data extraction for 1BRS",
+    "ddG distribution analysis",
+    "Structural mapping of hot-spot residues",
+    "Comparison plots: predicted vs experimental",
+    "Validation metrics"
+  ],
+  "expected_figures": [
+    "Data overview: SKEMPI 1BRS mutation distribution",
+    "Main result: ddG distribution histogram",
+    "Structural visualization: interface residues mapped on 3D structure",
+    "Validation: correlation analysis if applicable"
+  ],
+  "comparison_structure": {
+    "primary_comparison": "Wild-type vs mutant binding affinities",
+    "subgroup_analysis": "By mutation location (interface vs non-interface)",
+    "validation_approach": "SKEMPI experimental ddG values"
+  }
+}

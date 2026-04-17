@@ -1,0 +1,24 @@
+{
+  "mace_architecture_requirements": {
+    "higher_body_order_messages": "\u03bd >= 3 (4-body interactions)",
+    "equivariant_tensor_operations": "O(3) symmetry with L >= 2",
+    "message_passing_layers": "Exactly 2 layers sufficient",
+    "radial_cutoff": "4-5 \u00c5 per layer",
+    "element_embedding": "Continuous species embedding for periodic table coverage"
+  },
+  "training_requirements": {
+    "dataset": "MPtrj (~1.5M structures)",
+    "elements_covered": "89 elements (excluding noble gases and actinoids)",
+    "properties_predicted": [
+      "Energy",
+      "Forces",
+      "Stress",
+      "Magnetic moments"
+    ]
+  },
+  "validation_tests": {
+    "water_rdf": "32 molecules, 330K, 2000 steps",
+    "scaling_relations": "6 transition metals (Ni, Cu, Rh, Pd, Ir, Pt)",
+    "reaction_barriers": "CRBH20 subset (Rxn 1, 11, 20)"
+  }
+}

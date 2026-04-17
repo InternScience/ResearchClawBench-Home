@@ -1,0 +1,30 @@
+{
+  "primary_quantitative_answers": [
+    {"artifact": "validation_loss_distribution", "status": "satisfied", "file": "report/images/validation_loss_distribution.png"},
+    {"artifact": "learned_parameters_per_cell_type", "status": "satisfied", "file": "outputs/model_parameters.npz"},
+    {"artifact": "summary_statistics", "status": "satisfied", "file": "outputs/summary_statistics.json"}
+  ],
+  "required_comparison_tables": [
+    {"artifact": "ON_vs_OFF_pathway_comparison", "status": "satisfied", "file": "report/images/ON_OFF_pathway_comparison.png"},
+    {"artifact": "parameter_consistency_across_models", "status": "satisfied", "file": "report/images/parameter_consistency.png"}
+  ],
+  "expected_figure_families": [
+    {"artifact": "connectivity_matrix", "status": "satisfied"},
+    {"artifact": "effective_weight_matrix", "status": "satisfied"},
+    {"artifact": "resting_potentials_bar", "status": "satisfied"},
+    {"artifact": "time_constants_bar", "status": "satisfied"},
+    {"artifact": "T4_T5_UMAP_clustering", "status": "satisfied"},
+    {"artifact": "direction_selective_inputs", "status": "satisfied"},
+    {"artifact": "network_architecture", "status": "satisfied"},
+    {"artifact": "BIC_scores", "status": "satisfied"},
+    {"artifact": "functional_diversity", "status": "satisfied"},
+    {"artifact": "top_connections", "status": "satisfied"},
+    {"artifact": "degree_distribution", "status": "satisfied"},
+    {"artifact": "parameter_heatmaps", "status": "satisfied"},
+    {"artifact": "synapse_count_distribution", "status": "satisfied"}
+  ],
+  "interpretability_artifacts": [
+    {"artifact": "UMAP_clustering_all_cell_types", "status": "satisfied", "file": "outputs/clustering_summary.json"},
+    {"artifact": "direction_selectivity_input_analysis", "status": "satisfied"}
+  ]
+}

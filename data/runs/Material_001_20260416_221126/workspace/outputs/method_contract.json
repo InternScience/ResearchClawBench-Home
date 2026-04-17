@@ -1,0 +1,25 @@
+{
+  "task": "AI-driven materials discovery and optimization",
+  "methods": {
+    "property_prediction": {
+      "description": "Crystal graph-based property prediction using GNN/ML",
+      "named_methods": ["CGCNN-inspired crystal graph representation", "Random Forest", "Gradient Boosting", "Neural Network"],
+      "metrics": ["MAE", "RMSE", "R2"],
+      "reference": "Xie & Grossman 2018 (CGCNN)"
+    },
+    "structure_generation": {
+      "description": "Generative model for crystal lattice parameters",
+      "named_methods": ["Variational Autoencoder (VAE)", "Gaussian Mixture Model"],
+      "metrics": ["reconstruction_error", "KL_divergence", "distribution_overlap"],
+      "reference": "Materials Project (Jain et al. 2013)"
+    },
+    "experimental_optimization": {
+      "description": "Bayesian optimization for synthesis parameter tuning",
+      "named_methods": ["Bayesian Optimization", "Gaussian Process Regression"],
+      "metrics": ["convergence_rate", "optimal_value", "exploration_exploitation_balance"],
+      "reference": "Raccuglia et al. 2016"
+    }
+  },
+  "comparison_axes": ["model_type", "feature_representation", "optimization_strategy"],
+  "validation": "cross-validation, train-test split, convergence analysis"
+}

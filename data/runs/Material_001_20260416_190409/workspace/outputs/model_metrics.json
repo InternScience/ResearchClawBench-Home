@@ -1,0 +1,134 @@
+{
+  "summary_timestamp": "2026-04-16",
+  "workflows": {
+    "property_prediction": {
+      "best_model": "Ridge",
+      "best_r2": 0.9898811448912284,
+      "all_models": {
+        "Ridge": {
+          "test_r2": 0.9898811448912284,
+          "test_mse": 0.030819643487195434,
+          "test_mae": 0.14729688683903086,
+          "cv_r2_mean": 0.9808433896024246,
+          "cv_r2_std": 0.003594870205571591
+        },
+        "Lasso": {
+          "test_r2": 0.9804133950327991,
+          "test_mse": 0.05965617411503225,
+          "test_mae": 0.2067508912717991,
+          "cv_r2_mean": 0.9760030529725052,
+          "cv_r2_std": 0.005363369078783545
+        },
+        "RandomForest": {
+          "test_r2": 0.8090267675961603,
+          "test_mse": 0.5816593750000002,
+          "test_mae": 0.6532916666666667,
+          "cv_r2_mean": 0.9663465886943676,
+          "cv_r2_std": 0.005032953866372646
+        },
+        "GradientBoosting": {
+          "test_r2": 0.7875156225199839,
+          "test_mse": 0.6471772438816686,
+          "test_mae": 0.6934195616545136,
+          "cv_r2_mean": 0.9625144245380775,
+          "cv_r2_std": 0.010373354205226452
+        }
+      },
+      "dataset_info": {
+        "n_samples": 117,
+        "n_features": 10,
+        "feature_names": [
+          "base_feature",
+          "correlated_feature",
+          "class_encoding",
+          "descriptor",
+          "struct_1",
+          "struct_2",
+          "struct_3",
+          "struct_4",
+          "index_norm",
+          "periodic"
+        ],
+        "target_range": [
+          -2.0,
+          4.4
+        ],
+        "target_mean": 1.2000000000000004,
+        "target_std": 1.4922019523732928
+      }
+    },
+    "structure_generation": {
+      "n_generated": 50,
+      "validation": {
+        "ks_test": {
+          "statistic": 0.16500837890542513,
+          "p_value": 0.007160562473815612,
+          "similar_distribution": false
+        },
+        "range_check": {
+          "a_in_range": true,
+          "original_a_range": [
+            5.1234,
+            5.9012
+          ],
+          "generated_a_range": [
+            4.879267110684016,
+            6.126351924679202
+          ]
+        },
+        "statistics": {
+          "original_mean": 5.520376237623763,
+          "generated_mean": 5.4466120990654465,
+          "relative_error": 0.013362157828225888
+        }
+      },
+      "original_statistics": {
+        "lattice_a": {
+          "mean": 5.520376237623763,
+          "std": 0.2726262952488113,
+          "min": 5.1234,
+          "max": 5.9012,
+          "median": 5.5678
+        },
+        "lattice_b": {
+          "mean": 5.521465346534654,
+          "std": 0.27032915083141945,
+          "min": 5.1234,
+          "max": 5.9012,
+          "median": 5.5678
+        },
+        "correlation": -0.2229737229970093,
+        "n_structures": 101
+      },
+      "generated_summary": {
+        "n_structures": 50,
+        "lattice_a_mean": 5.4466120990654465,
+        "lattice_a_std": 0.3023812540397242,
+        "lattice_b_mean": 5.515865943564485,
+        "lattice_b_std": 0.11464842115179764,
+        "volume_mean": 165.5393845389369,
+        "volume_std": 12.31321179001657,
+        "packing_fraction_mean": 0.6299166942325582
+      }
+    },
+    "autonomous_optimization": {
+      "optimal_conditions": {
+        "temperature": 379.597545259111,
+        "pressure": 22.022300234864176
+      },
+      "max_yield": 99.80715809960927,
+      "n_evaluations": 25,
+      "response_surface_summary": {
+        "max_yield": 100.03990373076333,
+        "optimal_temp_from_surface": 346.9387755102041,
+        "optimal_pressure_from_surface": 20.20408163265306
+      }
+    }
+  },
+  "overall_assessment": {
+    "all_workflows_executed": true,
+    "property_prediction_status": "complete",
+    "structure_generation_status": "complete",
+    "optimization_status": "complete"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "related_work_summary": {
+    "paper_000": {
+      "citation": "Oka & Aoki, Phys. Rev. B 79, 081406 (2009)",
+      "title": "Photovoltaic Hall effect in graphene",
+      "key_contributions": [
+        "Floquet formalism for AC electric fields in solids",
+        "Prediction of photo-induced DC Hall current in graphene",
+        "Berry curvature expression in terms of Floquet states"
+      ],
+      "relevance_to_task": "Theoretical foundation for Floquet engineering in graphene"
+    },
+    "paper_001": {
+      "citation": "Wang et al., Science 342, 453 (2013)",
+      "title": "Observation of Floquet-Bloch states on the surface of a topological insulator",
+      "key_contributions": [
+        "First experimental observation of Floquet-Bloch states via tr-ARPES",
+        "Replica bands spaced by pump photon energy (120 meV)",
+        "Polarization-dependent band gaps at avoided crossings"
+      ],
+      "relevance_to_task": "Experimental precedent and methodology for tr-ARPES detection of Floquet states"
+    },
+    "paper_002": {
+      "citation": "Hübener et al., Nat. Commun. 8, 13940 (2017)",
+      "title": "Creating stable Floquet-Weyl semimetals by laser-driving of 3D Dirac materials",
+      "key_contributions": [
+        "Floquet-Weyl semimetal creation via circular polarization",
+        "Time-reversal symmetry breaking by light",
+        "TDDFT framework beyond tight-binding models"
+      ],
+      "relevance_to_task": "Extension of Floquet engineering to 3D Dirac materials"
+    },
+    "paper_003": {
+      "citation": "Sentef et al., Nat. Commun. 6, 7047 (2015)",
+      "title": "Theory of Floquet band formation and local pseudospin textures in pump-probe photoemission of graphene",
+      "key_contributions": [
+        "Theory of Floquet band formation in graphene under realistic pulses",
+        "Low-frequency regime where sidebands overlap",
+        "Local spectral gaps and pseudospin texture analysis",
+        "Hierarchy of time scales: sigma_pump > sigma_probe >> 2pi*hbar/Omega"
+      ],
+      "relevance_to_task": "Direct theoretical framework for interpreting graphene tr-ARPES data in low-frequency regime"
+    }
+  },
+  "methodological_implications": {
+    "expected_replica_spacing": "Integer multiples of pump photon energy hbar*omega",
+    "polarization_signatures": "Circular polarization breaks TRS and opens Dirac gap; linear polarization shows weaker anisotropy",
+    "low_frequency_regime": "Overlapping sidebands prevent global topological classification but local gaps remain observable",
+    "distinguishing_Floquet_from_LAPE": "Initial-state Floquet replicas show band gaps at crossings; LAPE bands do not"
+  }
+}

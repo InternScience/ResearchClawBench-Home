@@ -1,0 +1,27 @@
+{
+  "python_packages": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "geopandas"
+  ],
+  "model_method": "GeoH2-inspired geospatial LCOH optimization",
+  "temporal_scope": "2030 projections",
+  "spatial_scope": "30 African hexagon sites",
+  "financing_scenarios": [
+    "baseline_wacc",
+    "de_risked",
+    "high_interest_rate",
+    "europe_production"
+  ],
+  "key_assumptions": {
+    "electrolyzer_capex_2030": "500 EUR/kW",
+    "pv_capex_2030": "400 EUR/kW",
+    "wind_capex_2030": "900 EUR/kW",
+    "wacc_baseline": "8%",
+    "wacc_de_risked": "5%",
+    "wacc_high_interest": "12%",
+    "wacc_europe": "4%"
+  }
+}

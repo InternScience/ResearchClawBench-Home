@@ -1,0 +1,29 @@
+{
+  "named_mechanism": "GlaMBIE consensus combination of multi-method glacier mass change estimates",
+  "definition": "Systematic combination of regional glacier mass change estimates from multiple observational methods (glaciological, DEM differencing, altimetry, gravimetry) into a single consensus time series per region, then aggregated to global scale",
+  "assumptions": [
+    "Individual method uncertainties are independent",
+    "Annual variability can be transferred between data groups when one group lacks annual resolution",
+    "Glacier area changes are well-characterized and can be applied uniformly within regions",
+    "The 19 GTN-G regions provide an appropriate spatial decomposition"
+  ],
+  "invariants": [
+    "All 19 regions must be represented in the global total",
+    "Uncertainty must be propagated from individual estimates through to the consensus",
+    "Both Gt (total) and m w.e. (specific) representations must be consistent via glacier area"
+  ],
+  "structural_steps": [
+    "1. Collect and homogenize input datasets to common temporal grid",
+    "2. Group by observational method (altimetry, gravimetry, DEM diff.+glaciological)",
+    "3. Combine within-group estimates into group-level solutions",
+    "4. Combine group-level solutions into regional consensus estimates",
+    "5. Convert hydrological year results to calendar year for global aggregation",
+    "6. Sum regional calendar year estimates for global total"
+  ],
+  "fidelity_check": {
+    "used_official_glambie_results": true,
+    "reproduced_combination": false,
+    "reason": "We analyze the official GlaMBIE consensus results rather than re-implementing the combination algorithm, as the combination was performed by the GlaMBIE team with full access to all methodological details",
+    "deviation_from_named_method": "None - we use the published GlaMBIE results directly"
+  }
+}

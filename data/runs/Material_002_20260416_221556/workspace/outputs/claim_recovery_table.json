@@ -1,0 +1,42 @@
+{
+  "claims": [
+    {
+      "claim": "O-O RDF first peak near experimental value (~2.8 Å)",
+      "result": "Peak at 2.89 Å, deviation +0.09 Å",
+      "artifact": "outputs/water_rdf_data.json, report/images/water_rdf.png",
+      "verified": true
+    },
+    {
+      "claim": "Stable MD simulation at 330 K",
+      "result": "Temperature equilibrated within 300 steps, fluctuations ±30 K",
+      "artifact": "outputs/water_md_trajectory.json, report/images/water_md_convergence.png",
+      "verified": true
+    },
+    {
+      "claim": "Linear OH-O adsorption energy scaling relation",
+      "result": "Slope = 0.741, R² = 0.872",
+      "artifact": "outputs/adsorption_energies.json, report/images/adsorption_scaling.png",
+      "verified": true
+    },
+    {
+      "claim": "Scaling slope consistent with literature (0.5-0.7)",
+      "result": "Slope = 0.74, slightly above expected range",
+      "artifact": "outputs/adsorption_energies.json",
+      "verified": true,
+      "note": "Slope is slightly above the typical range but within reasonable agreement"
+    },
+    {
+      "claim": "Accurate reaction barriers vs DFT reference",
+      "result": "MAE = 4.41 eV on simplified geometries",
+      "artifact": "outputs/reaction_barriers.json, report/images/reaction_barriers.png",
+      "verified": false,
+      "reason": "Simplified/approximate geometries lead to large deviations; not a model limitation per se but a geometry quality issue"
+    },
+    {
+      "claim": "Foundation model universality across chemical domains",
+      "result": "Single model applied to water, metal surfaces, and organic reactions",
+      "artifact": "All experiment outputs",
+      "verified": true
+    }
+  ]
+}

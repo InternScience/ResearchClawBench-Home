@@ -1,0 +1,17 @@
+{
+  "python_version": "3.10",
+  "torch_version": "2.9.1+cu128",
+  "libraries": {
+    "torch": {"available": true, "version": "2.9.1"},
+    "torch_geometric": {"available": true, "version": "installed"},
+    "matplotlib": {"available": true, "version": "installed"},
+    "seaborn": {"available": true, "version": "installed"},
+    "scikit_learn": {"available": true, "version": "installed"},
+    "numpy": {"available": true, "version": "installed"},
+    "pandas": {"available": true, "version": "installed"},
+    "tqdm": {"available": true, "version": "installed"}
+  },
+  "gpu_available": false,
+  "device": "cpu",
+  "status": "all_dependencies_available"
+}

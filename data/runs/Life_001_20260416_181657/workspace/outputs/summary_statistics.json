@@ -1,0 +1,53 @@
+{
+  "data_overview": {
+    "total_cell_presentations": 28068,
+    "unique_cells": 100,
+    "unique_peptides": 164,
+    "unique_mutations": 11,
+    "unique_hla_alleles": 1
+  },
+  "vaccine_composition": {
+    "budget": 10,
+    "objective": "MinSum.adaptive",
+    "selected_mutations": [
+      "mut11",
+      "mut12",
+      "mut15",
+      "mut19",
+      "mut20",
+      "mut26",
+      "mut28",
+      "mut33",
+      "mut39",
+      "mut44"
+    ],
+    "total_elements": 10
+  },
+  "efficacy_metrics": {
+    "mean_response_probability": 0.9427470300116586,
+    "std_response_probability": 0.09153692089155507,
+    "min_response_probability": 1.7999838891502584e-05,
+    "max_response_probability": 0.999999998265884,
+    "coverage_at_0.5": 0.992,
+    "coverage_at_0.7": 0.99,
+    "coverage_at_0.9": 0.887
+  },
+  "iou_analysis": {
+    "mean_pairwise_iou": 1.0,
+    "min_iou": 1.0,
+    "max_iou": 1.0
+  },
+  "runtime_analysis": {
+    "samples_analyzed": 7,
+    "population_sizes_tested": [
+      100,
+      1000,
+      3000,
+      7000,
+      10000
+    ],
+    "min_runtime_seconds": 0.012,
+    "max_runtime_seconds": 17.0,
+    "mean_runtime_seconds": 1.9752571428571428
+  }
+}

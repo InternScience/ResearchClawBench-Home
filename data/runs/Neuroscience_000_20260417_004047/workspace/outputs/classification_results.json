@@ -1,0 +1,38 @@
+{
+  "Attack": {
+    "RandomForest": {
+      "accuracy": 0.9167,
+      "precision": 0.8618,
+      "recall": 0.8983,
+      "f1": 0.8797,
+      "auc_roc": 0.9327,
+      "avg_precision": 0.7601
+    },
+    "GradientBoosting": {
+      "accuracy": 0.8966,
+      "precision": 0.8534,
+      "recall": 0.839,
+      "f1": 0.8462,
+      "auc_roc": 0.9349,
+      "avg_precision": 0.7862
+    }
+  },
+  "Sniffing": {
+    "RandomForest": {
+      "accuracy": 0.954,
+      "precision": 0.8636,
+      "recall": 0.7917,
+      "f1": 0.8261,
+      "auc_roc": 0.9818,
+      "avg_precision": 0.8073
+    },
+    "GradientBoosting": {
+      "accuracy": 0.9425,
+      "precision": 0.8684,
+      "recall": 0.6875,
+      "f1": 0.7674,
+      "auc_roc": 0.983,
+      "avg_precision": 0.8238
+    }
+  }
+}

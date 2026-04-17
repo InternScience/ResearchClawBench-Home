@@ -1,0 +1,599 @@
+[
+  {
+    "success": true,
+    "runtime": 0.10374569892883301,
+    "collisions": 0,
+    "sum_of_costs": 123,
+    "dataset": "empty",
+    "num_agents": 10,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.9650976657867432,
+    "collisions": 0,
+    "sum_of_costs": 123,
+    "dataset": "empty",
+    "num_agents": 10,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.05700254440307617,
+    "collisions": 0,
+    "sum_of_costs": 123,
+    "dataset": "empty",
+    "num_agents": 10,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.11037039756774902,
+    "collisions": 0,
+    "sum_of_costs": 182,
+    "dataset": "empty",
+    "num_agents": 10,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.1107337474822998,
+    "collisions": 0,
+    "sum_of_costs": 181,
+    "dataset": "empty",
+    "num_agents": 10,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.12311720848083496,
+    "collisions": 0,
+    "sum_of_costs": 181,
+    "dataset": "empty",
+    "num_agents": 10,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.18305397033691406,
+    "collisions": 0,
+    "sum_of_costs": 214,
+    "dataset": "empty",
+    "num_agents": 15,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": false,
+    "runtime": 0.20908498764038086,
+    "collisions": 1,
+    "sum_of_costs": 211,
+    "dataset": "empty",
+    "num_agents": 15,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.2252979278564453,
+    "collisions": 0,
+    "sum_of_costs": 212,
+    "dataset": "empty",
+    "num_agents": 15,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.31095147132873535,
+    "collisions": 0,
+    "sum_of_costs": 249,
+    "dataset": "empty",
+    "num_agents": 15,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.16270852088928223,
+    "collisions": 0,
+    "sum_of_costs": 249,
+    "dataset": "empty",
+    "num_agents": 15,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.15522384643554688,
+    "collisions": 0,
+    "sum_of_costs": 249,
+    "dataset": "empty",
+    "num_agents": 15,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.002423524856567383,
+    "collisions": 0,
+    "sum_of_costs": 50,
+    "dataset": "random_small",
+    "num_agents": 5,
+    "solver": "pp",
+    "map_size": "10x10"
+  },
+  {
+    "success": false,
+    "runtime": 0.0012216567993164062,
+    "collisions": 1,
+    "sum_of_costs": 47,
+    "dataset": "random_small",
+    "num_agents": 5,
+    "solver": "marl",
+    "map_size": "10x10"
+  },
+  {
+    "success": true,
+    "runtime": 0.02709221839904785,
+    "collisions": 0,
+    "sum_of_costs": 49,
+    "dataset": "random_small",
+    "num_agents": 5,
+    "solver": "hybrid",
+    "map_size": "10x10"
+  },
+  {
+    "success": true,
+    "runtime": 0.0009508132934570312,
+    "collisions": 0,
+    "sum_of_costs": 32,
+    "dataset": "random_small",
+    "num_agents": 5,
+    "solver": "pp",
+    "map_size": "10x10"
+  },
+  {
+    "success": false,
+    "runtime": 0.0006175041198730469,
+    "collisions": 1,
+    "sum_of_costs": 30,
+    "dataset": "random_small",
+    "num_agents": 5,
+    "solver": "marl",
+    "map_size": "10x10"
+  },
+  {
+    "success": true,
+    "runtime": 0.001283407211303711,
+    "collisions": 0,
+    "sum_of_costs": 31,
+    "dataset": "random_small",
+    "num_agents": 5,
+    "solver": "hybrid",
+    "map_size": "10x10"
+  },
+  {
+    "success": true,
+    "runtime": 0.2759721279144287,
+    "collisions": 0,
+    "sum_of_costs": 276,
+    "dataset": "random_small",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "10x10"
+  },
+  {
+    "success": false,
+    "runtime": 0.004829883575439453,
+    "collisions": 6,
+    "sum_of_costs": 71,
+    "dataset": "random_small",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "10x10"
+  },
+  {
+    "success": true,
+    "runtime": 0.14696979522705078,
+    "collisions": 0,
+    "sum_of_costs": 78,
+    "dataset": "random_small",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "10x10"
+  },
+  {
+    "success": false,
+    "runtime": 16.42566728591919,
+    "collisions": Infinity,
+    "dataset": "random_small",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "10x10"
+  },
+  {
+    "success": false,
+    "runtime": 22.262351512908936,
+    "collisions": Infinity,
+    "dataset": "random_small",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "10x10"
+  },
+  {
+    "success": false,
+    "runtime": 108.51507258415222,
+    "collisions": Infinity,
+    "dataset": "random_small",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "10x10"
+  },
+  {
+    "success": true,
+    "runtime": 0.048697710037231445,
+    "collisions": 0,
+    "sum_of_costs": 133,
+    "dataset": "random_medium",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.06011009216308594,
+    "collisions": 0,
+    "sum_of_costs": 133,
+    "dataset": "random_medium",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.10776495933532715,
+    "collisions": 0,
+    "sum_of_costs": 133,
+    "dataset": "random_medium",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.09505224227905273,
+    "collisions": 0,
+    "sum_of_costs": 117,
+    "dataset": "random_medium",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.04140114784240723,
+    "collisions": 0,
+    "sum_of_costs": 115,
+    "dataset": "random_medium",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.10213208198547363,
+    "collisions": 0,
+    "sum_of_costs": 115,
+    "dataset": "random_medium",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.28054380416870117,
+    "collisions": 0,
+    "sum_of_costs": 280,
+    "dataset": "random_medium",
+    "num_agents": 12,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.6941769123077393,
+    "collisions": 0,
+    "sum_of_costs": 284,
+    "dataset": "random_medium",
+    "num_agents": 12,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.8028261661529541,
+    "collisions": 0,
+    "sum_of_costs": 284,
+    "dataset": "random_medium",
+    "num_agents": 12,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.04961729049682617,
+    "collisions": 0,
+    "sum_of_costs": 200,
+    "dataset": "random_medium",
+    "num_agents": 12,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.21854281425476074,
+    "collisions": 0,
+    "sum_of_costs": 202,
+    "dataset": "random_medium",
+    "num_agents": 12,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.2136244773864746,
+    "collisions": 0,
+    "sum_of_costs": 202,
+    "dataset": "random_medium",
+    "num_agents": 12,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 1.3546802997589111,
+    "collisions": 0,
+    "sum_of_costs": 185,
+    "dataset": "room",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": false,
+    "runtime": 1.5915403366088867,
+    "collisions": 1,
+    "sum_of_costs": 182,
+    "dataset": "room",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 2.5864415168762207,
+    "collisions": 0,
+    "sum_of_costs": 181,
+    "dataset": "room",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.033513545989990234,
+    "collisions": 0,
+    "sum_of_costs": 150,
+    "dataset": "room",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.15989160537719727,
+    "collisions": 0,
+    "sum_of_costs": 150,
+    "dataset": "room",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.17590808868408203,
+    "collisions": 0,
+    "sum_of_costs": 150,
+    "dataset": "room",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 2.749908447265625,
+    "collisions": 0,
+    "sum_of_costs": 304,
+    "dataset": "room",
+    "num_agents": 12,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": false,
+    "runtime": 7.3505189418792725,
+    "collisions": 5,
+    "sum_of_costs": 313,
+    "dataset": "room",
+    "num_agents": 12,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 10.869321823120117,
+    "collisions": 0,
+    "sum_of_costs": 307,
+    "dataset": "room",
+    "num_agents": 12,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 3.4551095962524414,
+    "collisions": 0,
+    "sum_of_costs": 293,
+    "dataset": "room",
+    "num_agents": 12,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": false,
+    "runtime": 6.929946660995483,
+    "collisions": 5,
+    "sum_of_costs": 308,
+    "dataset": "room",
+    "num_agents": 12,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 9.68540072441101,
+    "collisions": 0,
+    "sum_of_costs": 289,
+    "dataset": "room",
+    "num_agents": 12,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.028473377227783203,
+    "collisions": 0,
+    "sum_of_costs": 147,
+    "dataset": "warehouse",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.05175900459289551,
+    "collisions": 0,
+    "sum_of_costs": 146,
+    "dataset": "warehouse",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.05209612846374512,
+    "collisions": 0,
+    "sum_of_costs": 146,
+    "dataset": "warehouse",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.09517025947570801,
+    "collisions": 0,
+    "sum_of_costs": 196,
+    "dataset": "warehouse",
+    "num_agents": 8,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.15546441078186035,
+    "collisions": 0,
+    "sum_of_costs": 198,
+    "dataset": "warehouse",
+    "num_agents": 8,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.1562206745147705,
+    "collisions": 0,
+    "sum_of_costs": 198,
+    "dataset": "warehouse",
+    "num_agents": 8,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.08280396461486816,
+    "collisions": 0,
+    "sum_of_costs": 214,
+    "dataset": "warehouse",
+    "num_agents": 12,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": false,
+    "runtime": 0.19876956939697266,
+    "collisions": 1,
+    "sum_of_costs": 216,
+    "dataset": "warehouse",
+    "num_agents": 12,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.25810813903808594,
+    "collisions": 0,
+    "sum_of_costs": 217,
+    "dataset": "warehouse",
+    "num_agents": 12,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.0944056510925293,
+    "collisions": 0,
+    "sum_of_costs": 222,
+    "dataset": "warehouse",
+    "num_agents": 12,
+    "solver": "pp",
+    "map_size": "25x25"
+  },
+  {
+    "success": false,
+    "runtime": 0.16169118881225586,
+    "collisions": 3,
+    "sum_of_costs": 218,
+    "dataset": "warehouse",
+    "num_agents": 12,
+    "solver": "marl",
+    "map_size": "25x25"
+  },
+  {
+    "success": true,
+    "runtime": 0.3683605194091797,
+    "collisions": 0,
+    "sum_of_costs": 228,
+    "dataset": "warehouse",
+    "num_agents": 12,
+    "solver": "hybrid",
+    "map_size": "25x25"
+  }
+]

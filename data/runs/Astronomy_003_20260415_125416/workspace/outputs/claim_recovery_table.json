@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Median resolution waveform difference is approximately 4e-4",
+    "evidence": "Computed median = 4.2494e-04",
+    "verified": true,
+    "source": "fig6_data.csv direct computation"
+  },
+  {
+    "claim": "Resolution errors follow a log-normal distribution",
+    "evidence": "KS test p-value = 0.9081",
+    "verified": true,
+    "source": "Log-normal fit to fig6_data.csv"
+  },
+  {
+    "claim": "Distribution spans roughly 1e-6 to 0.5",
+    "evidence": "Range: [8.18e-06, 4.07e-02]",
+    "verified": true,
+    "source": "fig6_data.csv direct computation"
+  },
+  {
+    "claim": "Median waveform difference increases with ell",
+    "evidence": "Medians: ell2=3.00e-04, ell3=5.44e-04, ell4=8.34e-04, ell5=1.15e-03, ell6=1.58e-03, ell7=1.97e-03, ell8=2.27e-03",
+    "verified": true,
+    "source": "fig7_data.csv direct computation"
+  },
+  {
+    "claim": "ell=2 median ~3e-4, ell=8 median ~few times 1e-3",
+    "evidence": "ell2 median=3.00e-04, ell8 median=2.27e-03",
+    "verified": true,
+    "source": "fig7_data.csv direct computation"
+  },
+  {
+    "claim": "N2vsN3 median ~2e-5, N2vsN4 median ~5e-5",
+    "evidence": "N2vsN3 median=2.03e-05, N2vsN4 median=5.34e-05",
+    "verified": true,
+    "source": "fig8_data.csv direct computation"
+  },
+  {
+    "claim": "Extrapolation errors are smaller than resolution errors",
+    "evidence": "Extrap medians (2.03e-05, 5.34e-05) << Resolution median (4.25e-04)",
+    "verified": true,
+    "source": "Comparison of fig6 and fig8 medians"
+  },
+  {
+    "claim": "Majority of simulations achieve high accuracy (waveform diff < 1e-2)",
+    "evidence": "99.8% of simulations below 1e-2",
+    "verified": true,
+    "source": "fig6_data.csv threshold analysis"
+  }
+]

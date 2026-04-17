@@ -1,0 +1,95 @@
+{
+  "target_artifacts": [
+    {
+      "id": "fig_equilibrium_dirac",
+      "description": "Equilibrium (pump-off) ARPES spectrum showing Dirac cone",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig1_equilibrium_dirac.png"
+    },
+    {
+      "id": "fig_pump_on_spectrum",
+      "description": "Pump-on ARPES spectrum showing Floquet-Bloch replica bands",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig2_pump_on_comparison.png"
+    },
+    {
+      "id": "fig_difference_spectrum",
+      "description": "Difference spectrum (pump-on minus pump-off) highlighting replica bands",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig3_difference_spectrum.png"
+    },
+    {
+      "id": "fig_polarization_comparison",
+      "description": "Multi-panel comparison of spectra at different polarization angles",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig4_polarization_panels.png"
+    },
+    {
+      "id": "fig_polarization_dependence",
+      "description": "Replica band intensity vs polarization angle with cos²(2θ) fit",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig5_polarization_dependence.png"
+    },
+    {
+      "id": "fig_edc_analysis",
+      "description": "Energy distribution curves through Dirac point and replica positions",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig6_edc_analysis.png"
+    },
+    {
+      "id": "fig_band_dispersion",
+      "description": "Extracted band dispersion with replica band identification",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig7_band_dispersion.png"
+    },
+    {
+      "id": "fig_floquet_schematic",
+      "description": "Schematic of Floquet-Bloch mechanism and Volkov final states",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig8_floquet_schematic.png"
+    },
+    {
+      "id": "fig_mdc_analysis",
+      "description": "Momentum distribution curves at replica energies",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig9_mdc_analysis.png"
+    },
+    {
+      "id": "fig_model_comparison",
+      "description": "Volkov vs LAPE model comparison",
+      "type": "figure",
+      "status": "satisfied",
+      "artifact": "report/images/fig10_model_comparison.png"
+    },
+    {
+      "id": "table_replica_positions",
+      "description": "Table of replica band positions and energy separations",
+      "type": "table",
+      "status": "satisfied",
+      "artifact": "report/report.md (Table 1)"
+    },
+    {
+      "id": "table_polarization_fit",
+      "description": "Fit parameters for polarization dependence",
+      "type": "table",
+      "status": "satisfied",
+      "artifact": "report/report.md (Table 3), outputs/polarization_fit_results.json"
+    },
+    {
+      "id": "json_quantitative_results",
+      "description": "JSON with key quantitative results",
+      "type": "data",
+      "status": "satisfied",
+      "artifact": "outputs/comprehensive_results.json"
+    }
+  ]
+}

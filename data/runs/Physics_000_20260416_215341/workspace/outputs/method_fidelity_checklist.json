@@ -1,0 +1,94 @@
+{
+  "named_method": "Multi-Component Icosahedral Shell Stacking Theory",
+  "source": "General theory for packing icosahedral shells into multi-component aggregates",
+  "fidelity_checklist": {
+    "hexagonal_coordinate_mapping": {
+      "definition": "Shell positions mapped to hexagonal lattice coordinates (h,k) with sequence paths",
+      "assumptions": [
+        "Hexagonal lattice provides complete coverage of icosahedral surface",
+        "Coordinate sequence defines permissible growth paths",
+        "Each (h,k) position corresponds to unique shell addition site"
+      ],
+      "invariants": [
+        "h >= 0, k >= 0 for all valid positions",
+        "Sequence must be contiguous (no skipped positions)",
+        "Core always at (0,0)"
+      ],
+      "implementation_status": "FULLY_IMPLEMENTED",
+      "verification": "hexagonal_coords list contains 36 valid (h,k) pairs starting from (0,0)"
+    },
+    "magic_number_sequences": {
+      "definition": "Discrete atom counts for stable icosahedral shells",
+      "assumptions": [
+        "Mackay sequence: N = (10n³ + 15n² + 11n + 3)/3 for n=0,1,2...",
+        "New b=5 sequence: alternative chiral variant with reduced intermediate counts",
+        "Both sequences share core (N=1) and first shell (N=13)"
+      ],
+      "invariants": [
+        "Monotonically increasing sequence",
+        "First two elements identical: [1, 13]",
+        "Divergence begins at shell index 2"
+      ],
+      "implementation_status": "FULLY_IMPLEMENTED",
+      "verification": "mackay_sequence=[1,13,55,147,309], new_sequence_b5=[1,13,45,117,239,431]"
+    },
+    "chiral_category_classification": {
+      "definition": "Seven structural classes: MC, BG, Ch1-Ch5",
+      "assumptions": [
+        "MC (Mackay Core): achiral, highest symmetry",
+        "BG (Bergman-type): achiral, alternative packing",
+        "Ch1-Ch5: chiral variants with decreasing symmetry",
+        "Each category has distinct optimal mismatch range"
+      ],
+      "invariants": [
+        "MC-MC combinations require minimal mismatch (0.03-0.05)",
+        "Chiral introductions require larger mismatch",
+        "Energy hierarchy: MC < Ch1 < BG for same shell number"
+      ],
+      "implementation_status": "FULLY_IMPLEMENTED",
+      "verification": "chiral_labels and optimal_mismatch_ranges correctly defined"
+    },
+    "size_mismatch_optimization": {
+      "definition": "δ = |r₂ - r₁| / max(r₁, r₂) compared against category-specific optimal ranges",
+      "assumptions": [
+        "Atomic radii are fixed physical constants",
+        "Optimal ranges derived from energy minimization",
+        "Structures within range are thermodynamically stable"
+      ],
+      "invariants": [
+        "0 <= δ < 1 for all valid pairs",
+        "Lower δ required for homo-chiral stacking",
+        "Higher δ tolerated for hetero-chiral transitions"
+      ],
+      "implementation_status": "FULLY_IMPLEMENTED",
+      "verification": "calculate_size_mismatch function and validate_cluster_predictions working correctly"
+    },
+    "dynamic_growth_simulation": {
+      "definition": "Stochastic assembly with conservative, mismatch-driven, and random pathways",
+      "assumptions": [
+        "Conservative paths favored at equilibrium (65%)",
+        "Mismatch-driven paths enable chiral transitions (25%)",
+        "Random paths provide exploration (10%)",
+        "Reverse steps correct assembly errors"
+      ],
+      "invariants": [
+        "Path probabilities sum to 1.0",
+        "Temperature controls pathway distribution",
+        "Growth results show monotonic mismatch evolution per trajectory"
+      ],
+      "implementation_status": "FULLY_IMPLEMENTED",
+      "verification": "path_probability_weights and growth_results match source data"
+    }
+  },
+  "deviations_from_source": {
+    "identified_deviations": [],
+    "justification": "All analyses directly reproduce parameters and methods from source reproduction data without modification"
+  },
+  "validation_summary": {
+    "total_checks": 5,
+    "fully_implemented": 5,
+    "partially_implemented": 0,
+    "not_implemented": 0,
+    "fidelity_score": "100%"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "primary_artifacts": [
+    {"id": "A1", "type": "figure", "desc": "Data overview - distribution of Tg values", "status": "satisfied", "file": "report/images/fig1_data_overview.png"},
+    {"id": "A2", "type": "figure", "desc": "GP calibration parity plot", "status": "satisfied", "file": "report/images/fig2_gp_calibration.png"},
+    {"id": "A3", "type": "figure", "desc": "Calibration comparison (raw vs GP)", "status": "satisfied", "file": "report/images/fig4_calibration_comparison.png"},
+    {"id": "A4", "type": "figure", "desc": "Calibrated Tg distribution for vitrimers", "status": "satisfied", "file": "report/images/fig3_calibrated_tg.png"},
+    {"id": "A5", "type": "figure", "desc": "VAE training diagnostics", "status": "satisfied", "file": "report/images/fig5_vae_training.png"},
+    {"id": "A6", "type": "figure", "desc": "Latent space visualization", "status": "satisfied", "file": "report/images/fig6_latent_space.png"},
+    {"id": "A7", "type": "figure", "desc": "Inverse design results", "status": "satisfied", "file": "report/images/fig7_inverse_design.png"},
+    {"id": "A8", "type": "figure", "desc": "Chemical diversity analysis", "status": "satisfied", "file": "report/images/fig8_chemical_diversity.png"},
+    {"id": "A9", "type": "figure", "desc": "Tg heatmap for acid-epoxide combos", "status": "satisfied", "file": "report/images/fig9_tg_heatmap.png"},
+    {"id": "A10", "type": "figure", "desc": "Validation plots", "status": "satisfied", "file": "report/images/fig10_validation.png"},
+    {"id": "A11", "type": "table", "desc": "GP model performance metrics", "status": "satisfied", "file": "outputs/gp_calibration_results.json"},
+    {"id": "A12", "type": "table", "desc": "Top vitrimer candidates", "status": "satisfied", "file": "outputs/top_candidates.csv"},
+    {"id": "A13", "type": "table", "desc": "Novel vitrimer candidates", "status": "satisfied", "file": "outputs/novel_vitrimer_candidates.csv"}
+  ],
+  "supporting_artifacts": [
+    {"id": "S1", "type": "json", "desc": "Data summary statistics", "status": "satisfied", "file": "outputs/data_summary.json"},
+    {"id": "S2", "type": "csv", "desc": "Calibrated Tg predictions for all vitrimers", "status": "satisfied", "file": "outputs/vitrimer_calibrated_tg.csv"},
+    {"id": "S3", "type": "json", "desc": "Generation results summary", "status": "satisfied", "file": "outputs/generation_results.json"}
+  ]
+}

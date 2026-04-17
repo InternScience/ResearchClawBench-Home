@@ -1,0 +1,37 @@
+{
+  "task_summary": "Investigate whether Early Dark Energy (EDE) model can alleviate acoustic tension between CMB and BAO measurements",
+  "primary_inputs": [
+    "DESI DR2 BAO data",
+    "CMB data from Planck and ACT (temperature, polarization, lensing)",
+    "Union3 supernova data"
+  ],
+  "primary_outputs": [
+    "Constraints on cosmological parameters (Ωm, H0, σ8, etc.)",
+    "Goodness-of-fit comparison (Δχ²) for ΛCDM, EDE, w0wa models",
+    "Posterior distributions of EDE parameters (f_EDE, log10a_c)"
+  ],
+  "named_models": ["ΛCDM", "EDE", "w0wa"],
+  "key_parameters": {
+    "lcdm": ["omega_m", "H0", "sigma8", "ns", "ombh2", "ln10As", "tau"],
+    "ede": ["omega_m", "H0", "sigma8", "f_EDE", "log10_ac", "ns", "ombh2", "ln10As", "tau"],
+    "w0wa": ["omega_m", "H0", "sigma8", "w0", "wa", "ns", "ombh2", "ln10As", "tau"]
+  },
+  "comparison_axes": [
+    "H0 values across models",
+    "sigma8 values across models",
+    "omega_m values across models",
+    "BAO distance measurements (D_V/r_d, F_AP)",
+    "Supernova distance modulus (Δμ)"
+  ],
+  "expected_figures": [
+    "Parameter comparison bar charts with error bars",
+    "BAO data points with model predictions",
+    "Distance modulus comparison for SNe",
+    "Posterior distribution visualization for EDE parameters"
+  ],
+  "validation_metrics": [
+    "Parameter shifts between models",
+    "Tension relief quantification",
+    "Goodness-of-fit differences"
+  ]
+}

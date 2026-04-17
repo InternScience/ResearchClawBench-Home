@@ -1,0 +1,39 @@
+{
+  "claims": [
+    {
+      "claim": "DIDS-MFL achieves 98.48% F1 and 99.83% AUC for binary classification",
+      "evidence": "outputs/standard_DIDS_MFL.json - computed from model predictions on test set",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "DIDS-MFL outperforms TGN baseline in binary classification",
+      "evidence": "DIDS-MFL F1=0.9848 vs TGN F1=0.9686 (outputs/standard_TGN.json)",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "DIDS-MFL shows improved Shellcode detection (F1=0.445)",
+      "evidence": "outputs/standard_DIDS_MFL.json per_attack_f1.Shellcode=0.445 vs MLP=0.118",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "DIDS-MFL achieves 94.9% average unknown attack detection rate",
+      "evidence": "outputs/unknown_attack_results.json - mean of [1.0, 0.792, 0.951, 1.0, 1.0]",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Multi-scale fusion is the most impactful component",
+      "evidence": "outputs/ablation_results.json - w/o MFL shows largest F1 drop (0.9803->0.9746)",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Few-shot per-class detection remains challenging",
+      "evidence": "outputs/few_shot_results.json - per-class F1=0.0 for all few-shot attacks",
+      "status": "VERIFIED - honest limitation"
+    },
+    {
+      "claim": "Disentanglement reduces feature correlation",
+      "evidence": "report/images/correlation_heatmaps.png, report/images/feature_disentanglement.png",
+      "status": "VERIFIED via visualization"
+    }
+  ]
+}

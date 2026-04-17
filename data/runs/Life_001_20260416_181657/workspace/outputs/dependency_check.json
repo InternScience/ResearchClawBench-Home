@@ -1,0 +1,23 @@
+{
+  "python_version": "3.x",
+  "required_packages": {
+    "pandas": {"status": "available", "used_for": "data loading and manipulation"},
+    "numpy": {"status": "available", "used_for": "numerical computations"},
+    "matplotlib": {"status": "available", "used_for": "figure generation"},
+    "seaborn": {"status": "available", "used_for": "statistical visualization"},
+    "scipy": {"status": "available", "used_for": "statistical functions"}
+  },
+  "method_fidelity": {
+    "named_method": "MinSum.adaptive",
+    "budget_constraint": 10,
+    "implementation_status": "analyzed from pre-computed optimization outputs",
+    "objective_function": "Minimize sum of non-response probabilities across cells",
+    "adaptive_selection": true,
+    "replicate_analysis": "10 independent replicates analyzed"
+  },
+  "limitations": {
+    "simulation_based": true,
+    "single_hla_allele": "A0101 only",
+    "no_experimental_validation": true
+  }
+}

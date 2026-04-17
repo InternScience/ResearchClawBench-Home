@@ -1,0 +1,14 @@
+{
+  "dc_dependence": {
+    "fitted_D_s0": 94.76541137675022,
+    "fitted_I_c": 59.948350469930624,
+    "model_I_c": 50.0,
+    "GL_model": "D_s(I) = D_s0 * (1 - (I/I_c)^2)"
+  },
+  "microwave_dependence": {
+    "fitted_D_s0": 101.23022774117833,
+    "fitted_P_c": 7.455244348337706,
+    "relation": "P is proportional to I^2, quadratic current relationship verified"
+  },
+  "interpretation": "Current suppresses superfluid stiffness quadratically, consistent with GL theory"
+}

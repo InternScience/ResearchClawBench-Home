@@ -1,0 +1,85 @@
+{
+  "related_work_summary": {
+    "paper_000_montarnal_2011": {
+      "title": "Silica-Like Malleable Materials from Permanent Organic Networks",
+      "key_concepts": [
+        "Epoxy networks with reversible topology rearrangement",
+        "Transesterification reactions enable malleability",
+        "Arrhenius-like viscosity variation similar to vitreous silica",
+        "Materials are insoluble yet processable through local heating"
+      ],
+      "relevance_to_task": "Foundational work on vitrimers - demonstrates permanent organic networks can be reprocessable",
+      "methodological_insights": "Exchange reactions without depolymerization maintain network integrity"
+    },
+    "paper_001_jin_2016": {
+      "title": "Malleable and Recyclable Thermosets: The Next Generation of Plastics",
+      "key_concepts": [
+        "Covalent Adaptable Networks (CANs) with dynamic covalent bonds",
+        "Two categories: exchange reactions and addition reactions",
+        "Dynamic covalent chemistry enables reprocessability, rehealability, recyclability",
+        "Examples: transesterification, disulfides, siloxanes, polyimines"
+      ],
+      "relevance_to_task": "Comprehensive review of malleable thermoset chemistries relevant to vitrimer design",
+      "methodological_insights": "Bond activation energies and kinetics determine malleable properties"
+    },
+    "paper_002_gomez_bombarelli_2018": {
+      "title": "Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules",
+      "key_concepts": [
+        "Variational Autoencoder for molecular generation from SMILES",
+        "Continuous latent space enables gradient-based optimization",
+        "Joint training on property prediction shapes latent space",
+        "Application to drug-like molecules and small organic compounds"
+      ],
+      "relevance_to_task": "Methodological foundation for VAE-based molecular generation in our framework",
+      "methodological_insights": "VAE architecture: encoder-decoder with continuous bottleneck, property predictor"
+    },
+    "paper_003_batra_2020": {
+      "title": "Polymers for Extreme Conditions Designed Using Syntax-Directed Variational Autoencoders",
+      "key_concepts": [
+        "Syntax-directed VAE incorporates SMILES grammar constraints",
+        "Polymer-specific semantics (chain ends, matching bond types)",
+        "Inverse design: generate polymers with target Tg and bandgap",
+        "Significantly improved valid SMILES generation rate"
+      ],
+      "relevance_to_task": "Direct application of VAE to polymer design with Tg as target property",
+      "methodological_insights": "Context-free grammar + stochastic lazy attributes for syntax and semantics"
+    }
+  },
+  "method_requirements_from_literature": {
+    "vitrimer_design_principles": [
+      "Dynamic covalent bonds for topology rearrangement",
+      "Exchange reactions (transesterification, transamination, etc.)",
+      "Catalyst incorporation for controlled reaction rates",
+      "Balance between network integrity and processability"
+    ],
+    "ml_generation_requirements": [
+      "Valid SMILES generation with polymer-specific constraints",
+      "Latent space continuity for property interpolation",
+      "Conditional generation targeting specific Tg ranges",
+      "Uncertainty quantification for candidate prioritization"
+    ],
+    "calibration_requirements": [
+      "MD simulation data as input features",
+      "Experimental Tg as ground truth",
+      "Uncertainty propagation from MD to predictions",
+      "Validation on held-out experimental data"
+    ]
+  },
+  "comparison_to_prior_work": {
+    "similarities": [
+      "VAE-based molecular generation approach (papers 002, 003)",
+      "Tg as primary target property (paper 003)",
+      "Calibration of computational predictions to experiments"
+    ],
+    "differences": [
+      "Focus on vitrimer-specific chemistries rather than general polymers",
+      "Integration of MD simulations with ML calibration",
+      "Emphasis on recyclability and dynamic covalent chemistry"
+    ],
+    "novel_contributions": [
+      "Combined MD+ML framework for vitrimer design",
+      "Uncertainty-aware candidate generation",
+      "Application to epoxy-acid vitrimer systems"
+    ]
+  }
+}

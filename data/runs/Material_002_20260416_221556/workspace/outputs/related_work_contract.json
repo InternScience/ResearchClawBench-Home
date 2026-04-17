@@ -1,0 +1,50 @@
+{
+  "papers_reviewed": [
+    {
+      "id": "paper_000",
+      "title": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields",
+      "venue": "NeurIPS 2022",
+      "key_contributions": [
+        "Introduced MACE architecture with higher body order messages",
+        "Only 2 message passing iterations needed (vs 5-6 for typical MPNNs)",
+        "State-of-the-art on rMD17, 3BPA, AcAc benchmarks"
+      ]
+    },
+    {
+      "id": "paper_001",
+      "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+      "venue": "Nature Machine Intelligence 2023",
+      "key_contributions": [
+        "Pretrained on MPtrj dataset (~1.5M structures from Materials Project)",
+        "Includes magnetic moments for charge-informed modeling",
+        "Applications in solid-state: LixMnO2, LixFePO4, garnet conductors"
+      ]
+    },
+    {
+      "id": "paper_002",
+      "title": "Unifying O(3) equivariant neural networks design with tensor-network formalism",
+      "venue": "Machine Learning: Science and Technology 2024",
+      "key_contributions": [
+        "Tensor-network formalism for equivariant neural networks",
+        "Unified framework for O(3) equivariant message passing"
+      ]
+    },
+    {
+      "id": "paper_003",
+      "title": "Cross-functional transferability in foundation machine learning interatomic potentials",
+      "venue": "npj Computational Materials 2025",
+      "key_contributions": [
+        "Analysis of transfer learning in foundation potentials",
+        "Benchmarks MACE-MP-0, CHGNet, M3GNet, SevenNet-MF-0",
+        "Importance of elemental energy referencing in transfer learning"
+      ]
+    }
+  ],
+  "key_baselines": ["M3GNet", "CHGNet", "MACE-MP-0", "SevenNet-MF-0", "GNoME", "MatterSim"],
+  "key_datasets": ["MPtrj", "Materials Project", "Alexandria"],
+  "validation_targets": [
+    "Liquid water RDF at 330K",
+    "Adsorption energy scaling on transition metals",
+    "CRBH20 reaction barriers"
+  ]
+}

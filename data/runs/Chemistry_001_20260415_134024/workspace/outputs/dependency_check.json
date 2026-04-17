@@ -1,0 +1,34 @@
+{
+  "numpy": {
+    "available": true,
+    "version": "installed"
+  },
+  "matplotlib": {
+    "available": true,
+    "version": "installed"
+  },
+  "scipy": {
+    "available": true,
+    "version": "installed"
+  },
+  "rdkit": {
+    "available": true,
+    "version": "rdkit-pypi 2022.9.5"
+  },
+  "biopython": {
+    "available": true,
+    "version": "1.87"
+  },
+  "seaborn": {
+    "available": true,
+    "version": "installed"
+  },
+  "pytorch": {
+    "available": false,
+    "note": "Not required for conceptual framework demo"
+  },
+  "alphafold3_weights": {
+    "available": false,
+    "note": "Proprietary - using conceptual implementation"
+  }
+}

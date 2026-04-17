@@ -1,0 +1,32 @@
+{
+  "primary_quantitative_answers": [
+    "Optimal system cost under each scenario",
+    "Generation mix (wind/gas/nuclear shares)",
+    "Wind curtailment rates",
+    "Load shedding levels",
+    "Nodal price differentials"
+  ],
+  "comparison_tables": [
+    "Scenario summary table (6 scenarios x key metrics)",
+    "Cost breakdown by carrier and scenario"
+  ],
+  "figure_families": [
+    "Network topology map",
+    "Demand profile (total and regional)",
+    "Wind capacity factor heatmap and time series",
+    "Generation dispatch stacked area chart",
+    "Scenario comparison (4-panel: mix, cost, curtailment, shedding)",
+    "Storage operation (SoC and dispatch)",
+    "Nodal prices (time series and average)",
+    "Transmission flow analysis",
+    "Wind curtailment analysis",
+    "Cost breakdown (pie and bar)",
+    "Capacity vs demand by bus",
+    "Transmission impact sensitivity"
+  ],
+  "interpretability_artifacts": [
+    "Nodal price analysis showing congestion",
+    "Transmission utilization showing bottlenecks",
+    "North-South power flow patterns"
+  ]
+}

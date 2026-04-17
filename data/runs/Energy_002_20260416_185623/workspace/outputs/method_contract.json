@@ -1,0 +1,25 @@
+{
+  "task": "Geospatial levelized-cost model for African green hydrogen delivered to Europe via ammonia shipping",
+  "named_methods": [
+    "Levelized Cost of Hydrogen (LCOH) calculation",
+    "Ammonia conversion pathway (synthesis + shipping + cracking)",
+    "WACC-based financing scenarios (baseline, de-risked, European)",
+    "Interest rate sensitivity analysis",
+    "Geospatial cost mapping",
+    "European benchmark comparison"
+  ],
+  "key_parameters": {
+    "production": "Solar PV + Wind + Electrolyzer + Battery + H2 storage",
+    "conversion": "Ammonia synthesis at source, cracking at destination",
+    "transport": "Road to port + ocean shipping",
+    "financing": "Multiple WACC scenarios (5-12%)"
+  },
+  "scenarios": [
+    "Baseline Africa (high WACC ~10%)",
+    "De-risked Africa (WACC ~6%)",
+    "Optimistic 2030 (low WACC + tech cost reductions)",
+    "European production benchmark (WACC ~5%, European resources)"
+  ],
+  "comparison_structure": "Africa delivered cost vs European domestic production cost",
+  "output_format": "Geospatial maps + cost breakdown charts + scenario comparison tables"
+}

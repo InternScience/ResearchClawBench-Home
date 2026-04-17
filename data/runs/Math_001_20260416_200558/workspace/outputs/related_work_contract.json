@@ -1,0 +1,29 @@
+{
+  "paper_000_nesterov_1983": {
+    "title": "A Method of Solving a Convex Programming Problem with Convergence Rate O(1/k²)",
+    "key_contribution": "Original accelerated gradient method with O(1/k²) convergence",
+    "method": "Non-relaxational minimizing sequence with momentum term",
+    "convergence_bound": "f(x_k) - f* ≤ C/(k+2)² where C = 4L||y₀ - x*||²"
+  },
+  "paper_001_su_boyd_candes_2016": {
+    "title": "A Differential Equation for Modeling Nesterov's Accelerated Gradient Method",
+    "key_contribution": "Second-order ODE limit of Nesterov's method: Ẍ + (3/t)Ẋ + ∇f(X) = 0",
+    "insights": [
+      "Overdamped regime (small t): smooth convergence without oscillation",
+      "Underdamped regime (large t): oscillatory behavior with decreasing amplitude",
+      "Restarting scheme for linear convergence under strong convexity"
+    ],
+    "lyapunov_function": "E(t) = t²(f(X) - f*) + (1/2)||t·Ẋ + 2(X - x*)||²"
+  },
+  "paper_002_boyd_admm_2011": {
+    "title": "Distributed Optimization and Statistical Learning via ADMM",
+    "key_contribution": "Comprehensive ADMM survey and applications to Lasso",
+    "algorithm": "x-update: minimize L_ρ(x,z,u), z-update: proximal step, u-update: dual ascent",
+    "applications": ["Lasso", "Basis Pursuit", "Sparse Logistic Regression"]
+  },
+  "paper_003_polyak_1964": {
+    "title": "Some Methods of Speeding Up the Convergence of Iteration Methods",
+    "key_contribution": "Heavy-ball method and multistep acceleration",
+    "connection": "Foundation for momentum-based acceleration methods"
+  }
+}

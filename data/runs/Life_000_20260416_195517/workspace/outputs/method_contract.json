@@ -1,0 +1,20 @@
+{
+  "task": "Data-Driven De Novo Design of Super-Adhesive Hydrogels",
+  "objective": "Statistically replicate protein sequence features to design synthetic hydrogels achieving robust underwater adhesion (>1 MPa)",
+  "methods": {
+    "data_analysis": "Exploratory analysis of 184 verified hydrogel formulations with 6 monomer composition features",
+    "ml_models": ["Random Forest Regressor (RFR)", "Gaussian Process (GP)", "Gradient Boosting", "Extra Trees"],
+    "optimization": "Sequential Model-Based Optimization (SMBO) with Expected Improvement (EI) acquisition function",
+    "smbo_variants": ["RFR-GP", "GP-GP", "RFR-RFR", "GP-RFR", "CLMax", "CLMin", "LP"],
+    "interpretability": ["SHAP values", "Feature importance", "Permutation importance"],
+    "validation": ["10-fold cross-validation", "Leave-one-out cross-validation", "Learning curves", "Residual analysis"]
+  },
+  "protein_inspiration": {
+    "HEA": "Nucleophilic amino acids (Ser, Thr, Cys)",
+    "BA": "Hydrophobic amino acids (Ala, Val, Leu, Ile, Pro, Met)",
+    "CBEA": "Acidic amino acids (Asp, Glu)",
+    "ATAC": "Cationic amino acids (Lys, Arg, His)",
+    "PEA": "Aromatic amino acids (Phe, Tyr, Trp) - includes DOPA-like catechol chemistry",
+    "AAm": "Amide amino acids (Asn, Gln)"
+  }
+}

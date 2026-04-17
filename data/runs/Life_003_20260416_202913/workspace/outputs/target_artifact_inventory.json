@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {"id": "T1", "description": "Performance benchmark table (Table 1)", "type": "table", "status": "satisfied", "artifact": "outputs/performance_table.csv"},
+    {"id": "F1", "description": "Performance comparison bar chart", "type": "figure", "status": "satisfied", "artifact": "report/images/performance_comparison.png"},
+    {"id": "F2", "description": "Pore model current mean distributions", "type": "figure", "status": "satisfied", "artifact": "report/images/pore_model_distributions.png"},
+    {"id": "F3", "description": "Substitution profile heatmaps", "type": "figure", "status": "satisfied", "artifact": "report/images/substitution_profiles.png"},
+    {"id": "F4", "description": "Base-position effect analysis", "type": "figure", "status": "satisfied", "artifact": "report/images/base_position_effects.png"},
+    {"id": "F5", "description": "m6A precision-recall curves", "type": "figure", "status": "satisfied", "artifact": "report/images/m6a_detection_curves.png"},
+    {"id": "F6", "description": "m6A ROC curves", "type": "figure", "status": "satisfied", "artifact": "report/images/m6a_detection_curves.png"},
+    {"id": "F7", "description": "Chemistry comparison (current distributions)", "type": "figure", "status": "satisfied", "artifact": "report/images/chemistry_comparison_violin.png"},
+    {"id": "F8", "description": "Dwell time analysis", "type": "figure", "status": "satisfied", "artifact": "report/images/dwell_time_distributions.png"},
+    {"id": "F9", "description": "Performance heatmap", "type": "figure", "status": "satisfied", "artifact": "report/images/performance_heatmap.png"},
+    {"id": "F10", "description": "Current mean vs std scatter", "type": "figure", "status": "satisfied", "artifact": "report/images/current_mean_vs_std.png"},
+    {"id": "F11", "description": "GC content effect", "type": "figure", "status": "satisfied", "artifact": "report/images/gc_content_effect.png"},
+    {"id": "F12", "description": "Nucleotide composition vs current", "type": "figure", "status": "satisfied", "artifact": "report/images/composition_vs_current.png"},
+    {"id": "F13", "description": "m6A prediction distributions", "type": "figure", "status": "satisfied", "artifact": "report/images/m6a_prediction_distributions.png"},
+    {"id": "M1", "description": "AUPRC and AUROC metrics", "type": "metrics", "status": "satisfied", "artifact": "outputs/m6a_metrics.json"},
+    {"id": "T2", "description": "Threshold analysis table", "type": "table", "status": "satisfied", "artifact": "outputs/threshold_analysis.csv"},
+    {"id": "T3", "description": "Pore model summary statistics", "type": "table", "status": "satisfied", "artifact": "outputs/pore_model_summary.json"}
+  ]
+}

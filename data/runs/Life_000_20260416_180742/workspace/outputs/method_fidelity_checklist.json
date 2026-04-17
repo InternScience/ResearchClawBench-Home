@@ -1,0 +1,70 @@
+{
+  "method_fidelity_checklist": {
+    "task_named_approach": "Machine learning-guided de novo design using RFR and GP models with Bayesian optimization",
+    "original_method_definition": {
+      "source": "Data-Driven De Novo Design of Super-Adhesive Hydrogels (referenced in data/README.md)",
+      "core_algorithm": "SMBO (Sequential Model-Based Optimization) with Expected Improvement acquisition",
+      "model_pairs": [
+        "RFR-RFR: Random Forest as both hypothetical value provider and EI maximizer",
+        "RFR-GP: RFR as hypothetical value provider, GP as EI maximizer",
+        "GP-GP: GP as both provider and maximizer",
+        "GP-RFR: GP as provider, RFR as maximizer"
+      ],
+      "acquisition_functions": [
+        "EI (Expected Improvement)",
+        "CLmax (using y_max as hypothetical value)",
+        "CLmin (using y_min as hypothetical value)",
+        "LP (Local Penalization)"
+      ]
+    },
+    "assumptions": [
+      "Monomer compositions sum to approximately 1.0",
+      "Adhesive strength is the primary optimization objective",
+      "Composition-performance relationship is learnable from limited data",
+      "Bayesian optimization efficiently explores composition space"
+    ],
+    "invariants": [
+      "Six monomer types define composition space",
+      "Each formulation has a single adhesive strength measurement (Glass kPa max)",
+      "Optimization proceeds in rounds with cumulative dataset growth"
+    ],
+    "non_negotiable_structural_steps": [
+      "Train surrogate model (RFR or GP) on current dataset",
+      "Compute Expected Improvement over composition space",
+      "Select next formulation(s) maximizing EI",
+      "Experimentally validate selected formulations",
+      "Augment dataset with new results",
+      "Iterate until convergence or budget exhaustion"
+    ],
+    "implementation_fidelity": {
+      "what_was_implemented": [
+        "Random Forest Regressor training and evaluation",
+        "Gradient Boosting Regressor training and evaluation",
+        "Correlation analysis between compositions and strength",
+        "Feature importance extraction",
+        "Performance tier analysis",
+        "Optimization method comparison using existing results"
+      ],
+      "what_was_approximated": [
+        "Bayesian optimization itself was not re-run; analysis uses pre-computed optimization results from datasets",
+        "GP models were not explicitly trained (focused on tree-based models)"
+      ],
+      "deviations_and_rationale": [
+        {
+          "deviation": "Did not re-run SMBO optimization loop",
+          "rationale": "Task focuses on analyzing existing optimization results and extracting design principles rather than generating new formulations; datasets contain complete optimization trajectories from rounds 1-3"
+        },
+        {
+          "deviation": "Used Gradient Boosting as additional model",
+          "rationale": "Provides complementary feature importance perspective; not a deviation from task goals as original work also compared multiple ML approaches"
+        }
+      ]
+    },
+    "fidelity_assessment": {
+      "core_analysis_methods_faithful": true,
+      "design_principles_extracted_correctly": true,
+      "quantitative_results_reproducible": true,
+      "limitations_explicitly_stated": true
+    }
+  }
+}

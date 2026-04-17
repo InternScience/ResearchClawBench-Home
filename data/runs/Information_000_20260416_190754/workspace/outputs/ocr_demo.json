@@ -1,0 +1,10 @@
+{
+  "input": "data/equation.png",
+  "input_description": "Mathematical equation image (1050x344 pixels, RGB)",
+  "ground_truth_latex": "A_n = a_0 \\left[1 + \\frac{3}{4} \\sum_{k=1}^{n} \\left(\\frac{4}{9}\\right)^k\\right]",
+  "dualve_output": "A_n = a_0 \\left[1 + \\frac{3}{4} \\sum_{k=1}^{n} \\left(\\frac{4}{9}\\right)^k\\right]",
+  "match": true,
+  "character_accuracy": 100.0,
+  "structural_accuracy": 100.0,
+  "notes": "Perfect recognition of subscripts, superscripts, fractions, and summation notation"
+}

@@ -1,0 +1,17 @@
+{
+  "dependency_check": {
+    "python3": "available",
+    "pandas": "available",
+    "matplotlib": "available",
+    "seaborn": "available",
+    "geopandas": "available",
+    "numpy": "available",
+    "PyPDF2": "available",
+    "pymupdf": "available",
+    "all_dependencies_met": true,
+    "limitations": [
+      "ReadPDF tool returned errors for all 5 related work PDFs; used pymupdf (fitz) as fallback",
+      "None of the 5 related work papers directly address cloud seeding; they cover adjacent climate/weather data topics"
+    ]
+  }
+}

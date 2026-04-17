@@ -1,0 +1,359 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_analysis.py",
+    "path": "code/01_analysis.py",
+    "type": "file",
+    "size": 18653,
+    "mtime": 1776395584.0,
+    "exported": true
+  },
+  {
+    "name": "02_analysis_revised.py",
+    "path": "code/02_analysis_revised.py",
+    "type": "file",
+    "size": 14818,
+    "mtime": 1776395710.0,
+    "exported": true
+  },
+  {
+    "name": "03_visualization.py",
+    "path": "code/03_visualization.py",
+    "type": "file",
+    "size": 23602,
+    "mtime": 1776395881.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "ecosystem",
+    "path": "data/ecosystem",
+    "type": "directory"
+  },
+  {
+    "name": "UCSC_CWON_countrybounds.gpkg",
+    "path": "data/ecosystem/UCSC_CWON_countrybounds.gpkg",
+    "type": "file",
+    "size": 2727936,
+    "mtime": 1772711346.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "mangroves",
+    "path": "data/mangroves",
+    "type": "directory"
+  },
+  {
+    "name": "gmw_v4_ref_smpls_qad_v12.gpkg",
+    "path": "data/mangroves/gmw_v4_ref_smpls_qad_v12.gpkg",
+    "type": "file",
+    "size": 10506240,
+    "mtime": 1773108490.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "slr",
+    "path": "data/slr",
+    "type": "directory"
+  },
+  {
+    "name": "total_ssp245_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp245_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 38104917,
+    "mtime": 1643398496.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "total_ssp370_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp370_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 40762177,
+    "mtime": 1643398506.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "total_ssp585_medium_confidence_rates.nc",
+    "path": "data/slr/total_ssp585_medium_confidence_rates.nc",
+    "type": "file",
+    "size": 40854540,
+    "mtime": 1643398504.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "tc",
+    "path": "data/tc",
+    "type": "directory"
+  },
+  {
+    "name": "tracks_mit_mpi-esm1-2-hr_historical_reduced.nc",
+    "path": "data/tc/tracks_mit_mpi-esm1-2-hr_historical_reduced.nc",
+    "type": "file",
+    "size": 3448956,
+    "mtime": 1772786828.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "claim_recovery_table.json",
+    "path": "outputs/claim_recovery_table.json",
+    "type": "file",
+    "size": 2453,
+    "mtime": 1776396160.0,
+    "exported": true
+  },
+  {
+    "name": "country_risk_stats.csv",
+    "path": "outputs/country_risk_stats.csv",
+    "type": "file",
+    "size": 78571,
+    "mtime": 1776395723.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 875,
+    "mtime": 1776395959.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1126,
+    "mtime": 1776395497.0,
+    "exported": true
+  },
+  {
+    "name": "method_fidelity_checklist.json",
+    "path": "outputs/method_fidelity_checklist.json",
+    "type": "file",
+    "size": 1631,
+    "mtime": 1776395959.0,
+    "exported": true
+  },
+  {
+    "name": "regional_risk_stats.csv",
+    "path": "outputs/regional_risk_stats.csv",
+    "type": "file",
+    "size": 3724,
+    "mtime": 1776395723.0,
+    "exported": true
+  },
+  {
+    "name": "related_work_contract.json",
+    "path": "outputs/related_work_contract.json",
+    "type": "file",
+    "size": 3070,
+    "mtime": 1776395959.0,
+    "exported": true
+  },
+  {
+    "name": "summary_statistics.json",
+    "path": "outputs/summary_statistics.json",
+    "type": "file",
+    "size": 1230,
+    "mtime": 1776395723.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 938,
+    "mtime": 1776395497.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 5947391,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1907880,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 5073703,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 1481541,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_004.pdf",
+    "path": "related_work/paper_004.pdf",
+    "type": "file",
+    "size": 2017477,
+    "mtime": 1773914890.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig10_compound_hotspots.png",
+    "path": "report/images/fig10_compound_hotspots.png",
+    "type": "file",
+    "size": 266582,
+    "mtime": 1776395868.0,
+    "exported": true
+  },
+  {
+    "name": "fig11_sensitivity.png",
+    "path": "report/images/fig11_sensitivity.png",
+    "type": "file",
+    "size": 146097,
+    "mtime": 1776395869.0,
+    "exported": true
+  },
+  {
+    "name": "fig12_data_overview.png",
+    "path": "report/images/fig12_data_overview.png",
+    "type": "file",
+    "size": 583405,
+    "mtime": 1776395902.0,
+    "exported": true
+  },
+  {
+    "name": "fig1_global_cri_map.png",
+    "path": "report/images/fig1_global_cri_map.png",
+    "type": "file",
+    "size": 729018,
+    "mtime": 1776395850.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_tc_risk_map.png",
+    "path": "report/images/fig2_tc_risk_map.png",
+    "type": "file",
+    "size": 231794,
+    "mtime": 1776395854.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_slr_risk_map.png",
+    "path": "report/images/fig3_slr_risk_map.png",
+    "type": "file",
+    "size": 748659,
+    "mtime": 1776395861.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_country_cri_rankings.png",
+    "path": "report/images/fig4_country_cri_rankings.png",
+    "type": "file",
+    "size": 132232,
+    "mtime": 1776395864.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_tc_vs_slr_scatter.png",
+    "path": "report/images/fig5_tc_vs_slr_scatter.png",
+    "type": "file",
+    "size": 208544,
+    "mtime": 1776395865.0,
+    "exported": true
+  },
+  {
+    "name": "fig6_regional_risk.png",
+    "path": "report/images/fig6_regional_risk.png",
+    "type": "file",
+    "size": 121780,
+    "mtime": 1776395866.0,
+    "exported": true
+  },
+  {
+    "name": "fig7_ssp_comparison.png",
+    "path": "report/images/fig7_ssp_comparison.png",
+    "type": "file",
+    "size": 106165,
+    "mtime": 1776395867.0,
+    "exported": true
+  },
+  {
+    "name": "fig8_ecosystem_services.png",
+    "path": "report/images/fig8_ecosystem_services.png",
+    "type": "file",
+    "size": 182034,
+    "mtime": 1776395867.0,
+    "exported": true
+  },
+  {
+    "name": "fig9_slr_threshold.png",
+    "path": "report/images/fig9_slr_threshold.png",
+    "type": "file",
+    "size": 236769,
+    "mtime": 1776395868.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 32187,
+    "mtime": 1776396161.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5884,
+    "mtime": 1776395342.0,
+    "exported": true
+  }
+]

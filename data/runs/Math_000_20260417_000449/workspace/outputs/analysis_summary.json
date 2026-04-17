@@ -1,0 +1,24 @@
+{
+  "data_summary": {
+    "num_frames": 100,
+    "num_objects": 200,
+    "avg_detections_per_frame": 158.2,
+    "detection_rate": 0.791,
+    "score_mean": 0.266,
+    "score_median": 0.254,
+    "overlap_rate_frame0": 0.224
+  },
+  "best_tracker": {
+    "MOTA": "SORT",
+    "IDF1": "SORT",
+    "HOTA": "SORT",
+    "ID_Switches": "SORT"
+  },
+  "key_findings": [
+    "SORT outperforms ByteTrack and SparseTrack on this dataset due to the unique score distribution",
+    "Most detections have low confidence scores (mean=0.266), making threshold-based splitting suboptimal",
+    "SparseTrack shows higher recall than ByteTrack but more ID switches",
+    "Depth decomposition increases ID switches due to cross-layer matching failures",
+    "Within-layer overlap rate (40.6%) is 3x higher than across-layer (13.5%)"
+  ]
+}

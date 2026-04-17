@@ -1,0 +1,40 @@
+{
+  "claims": [
+    {
+      "claim": "Floquet-Bloch replica bands are observed at E_D ± ℏω in the tr-ARPES spectrum",
+      "evidence": "Processed band data shows n=±1 replicas at E=-0.2907 eV and E=0.2053 eV, separated by 0.496 eV = 2×0.248 eV",
+      "artifact": "outputs/comprehensive_results.json, report/images/fig7_band_dispersion.png",
+      "status": "verified"
+    },
+    {
+      "claim": "Replica band separation matches exactly 2ℏω (pump photon energy)",
+      "evidence": "Measured separation = 0.4960 eV, expected = 0.4960 eV, deviation = 0.000%",
+      "artifact": "outputs/comprehensive_results.json",
+      "status": "verified"
+    },
+    {
+      "claim": "Polarization dependence follows cos²(2θ) pattern consistent with Volkov final states",
+      "evidence": "Volkov model fit R² = 0.999950, LAPE model R² = 0.047, ΔAIC = 69.0 favoring Volkov",
+      "artifact": "outputs/polarization_fit_results.json, report/images/fig10_model_comparison.png",
+      "status": "verified"
+    },
+    {
+      "claim": "Replica bands appear symmetrically around the Dirac point in momentum",
+      "evidence": "n=-1 replicas at kx=±0.0463 Å⁻¹, n=+1 replicas at kx=±0.0342 Å⁻¹",
+      "artifact": "outputs/quantitative_results.json",
+      "status": "verified"
+    },
+    {
+      "claim": "Pump-on spectra show enhanced intensity relative to pump-off",
+      "evidence": "Total spectral weight ratio I_on/I_off ranges from 1.16 to 1.22 depending on polarization",
+      "artifact": "outputs/comprehensive_results.json",
+      "status": "verified"
+    },
+    {
+      "claim": "The scattering mechanism involves photon-dressed Volkov final states rather than LAPE",
+      "evidence": "cos²(2θ) periodicity (Volkov) strongly preferred over cos²(θ) (LAPE) by ΔAIC=69",
+      "artifact": "outputs/comprehensive_results.json, report/images/fig10_model_comparison.png",
+      "status": "verified"
+    }
+  ]
+}

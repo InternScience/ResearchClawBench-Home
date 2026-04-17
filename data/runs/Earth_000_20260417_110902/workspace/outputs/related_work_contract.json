@@ -1,0 +1,53 @@
+{
+  "related_papers": [
+    {
+      "paper": "paper_000.pdf",
+      "citation": "Rounce et al. (2023)",
+      "title": "Global glacier change in the 21st century: Every increase in temperature matters",
+      "relevance": "Provides glacier mass loss projections calibrated with observational data; projects 26-41% mass loss by 2100",
+      "key_numbers": {
+        "mass_loss_projection_1.5C": "26 ± 6%",
+        "mass_loss_projection_4C": "41 ± 11%",
+        "sle_contribution_cop26": "115 ± 40 mm"
+      }
+    },
+    {
+      "paper": "paper_001.pdf",
+      "citation": "Marzeion et al. (2020)",
+      "title": "Partitioning the Uncertainty of Ensemble Projections of Global Glacier Mass Change",
+      "relevance": "Uncertainty partitioning framework for glacier projections; 288 projection ensemble",
+      "key_numbers": {}
+    },
+    {
+      "paper": "paper_002.pdf",
+      "citation": "Zemp et al. (2019)",
+      "title": "Global glacier mass changes and their contributions to sea-level rise from 1961 to 2016",
+      "relevance": "Predecessor to GlaMBIE; established glaciological+geodetic combination approach",
+      "key_numbers": {
+        "sle_1961_2016": "27 ± 22 mm",
+        "rate_2006_2016": "335 ± 144 Gt yr-1 (0.92 ± 0.39 mm SLE yr-1)"
+      }
+    },
+    {
+      "paper": "paper_003.pdf",
+      "citation": "Hock et al. (2019)",
+      "title": "GlacierMIP - A model intercomparison of global-scale glacier mass-balance models and projections",
+      "relevance": "Model intercomparison framework; provides projection baselines for comparison",
+      "key_numbers": {
+        "rcp26_loss": "18 ± 7% (94 ± 25 mm SLE)",
+        "rcp85_loss": "36 ± 11% (200 ± 44 mm SLE)"
+      }
+    },
+    {
+      "paper": "paper_004.pdf",
+      "citation": "Hugonnet et al. (2021)",
+      "title": "Accelerated global glacier mass loss in the early twenty-first century",
+      "relevance": "Most comprehensive DEM-differencing study; key benchmark for GlaMBIE",
+      "key_numbers": {
+        "rate_2000_2019": "267 ± 16 Gt yr-1",
+        "sle_fraction": "21 ± 3%",
+        "acceleration": "48 ± 16 Gt yr-1 per decade"
+      }
+    }
+  ]
+}

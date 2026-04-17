@@ -1,0 +1,55 @@
+{
+  "papers_analyzed": [
+    {
+      "id": "paper_000",
+      "title": "Chameleon: Mixed-Modal Early-Fusion Foundation Models",
+      "key_findings": [
+        "Early-fusion token-based mixed-modal model",
+        "Single VQ tokenizer (8192 codebook, 1024 tokens per 512x512 image)",
+        "VQAv2: 66.0 (2-shot), COCO CIDEr: 120.2 (2-shot)",
+        "QK-norm and z-loss for training stability",
+        "Trained on ~10T tokens of interleaved data"
+      ],
+      "relevance": "Primary baseline for single-encoder unified approach"
+    },
+    {
+      "id": "paper_001",
+      "title": "Visual Instruction Tuning (LLaVA)",
+      "key_findings": [
+        "CLIP ViT-L/14 encoder + linear projection + Vicuna LLM",
+        "Two-stage training: alignment then instruction tuning",
+        "VQAv2: 80.0, Science QA: 92.53%",
+        "Demonstrates effectiveness of visual instruction tuning"
+      ],
+      "relevance": "Primary baseline for understanding-only approach"
+    },
+    {
+      "id": "paper_002",
+      "title": "Sigmoid Loss for Language Image Pre-Training (SigLIP)",
+      "key_findings": [
+        "Sigmoid loss decouples batch size from loss computation",
+        "84.5% ImageNet zero-shot with SigLiT (g/14)",
+        "Memory efficient, enables large batch training",
+        "Better than softmax at small batch sizes"
+      ],
+      "relevance": "Chosen as understanding encoder for DualVE"
+    },
+    {
+      "id": "paper_003",
+      "title": "Autoregressive Model Beats Diffusion: LlamaGen",
+      "key_findings": [
+        "Vanilla Llama architecture for image generation",
+        "2.18 FID on ImageNet 256x256",
+        "Image tokenizer: 0.94 rFID, 97% codebook usage",
+        "326-414% speedup with vLLM serving"
+      ],
+      "relevance": "Validates AR generation approach; generation encoder design"
+    }
+  ],
+  "contract_updates": [
+    "Chameleon's single-encoder limitation confirmed as motivation for decoupling",
+    "SigLIP chosen over CLIP for understanding encoder due to efficiency",
+    "LlamaGen's VQ-GAN design adopted for generation encoder",
+    "LLaVA's two-stage training extended to four-stage pipeline"
+  ]
+}

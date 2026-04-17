@@ -1,0 +1,30 @@
+{
+  "task": "Dynamic feature selection for single-cell trajectory analysis",
+  "input": "Single-cell protein imaging data (RPE cells)",
+  "output": "Selected subset of dynamically expressed features preserving trajectories",
+  "methods": {
+    "feature_selection": [
+      "Variance-based selection (top N)",
+      "Coefficient of variation (CV) based selection",
+      "Scanpy HVG (Seurat v3 flavor)",
+      "Consensus: features selected by >=2 methods"
+    ],
+    "trajectory_inference": "Diffusion Pseudotime (DPT)",
+    "validation": [
+      "Spearman correlation (full vs subset pseudotime)",
+      "Pearson correlation",
+      "Kendall tau"
+    ]
+  },
+  "results": {
+    "n_cells": 2759,
+    "n_features_original": 241,
+    "n_features_selected": 43,
+    "feature_reduction_ratio": 0.17842323651452283,
+    "trajectory_preservation": {
+      "spearman_r": 0.23670570899127952,
+      "pearson_r": 0.3684123456478119,
+      "kendall_tau": 0.1628082190250629
+    }
+  }
+}

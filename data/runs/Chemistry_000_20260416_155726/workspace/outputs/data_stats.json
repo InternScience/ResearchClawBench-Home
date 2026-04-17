@@ -1,0 +1,41 @@
+{
+  "datasets": {
+    "BACE": {
+      "samples": 1513,
+      "task": "BACE-1 inhibition",
+      "type": "binary"
+    },
+    "BBBP": {
+      "samples": 2039,
+      "task": "Blood-brain barrier penetration",
+      "type": "binary"
+    },
+    "ClinTox": {
+      "samples": 1478,
+      "task": "Clinical toxicity & FDA approval",
+      "type": "multi-task binary"
+    },
+    "HIV": {
+      "samples": 41127,
+      "task": "HIV replication inhibition",
+      "type": "binary"
+    },
+    "MUV": {
+      "samples": 93087,
+      "task": "Virtual screening",
+      "type": "multi-task imbalanced"
+    }
+  },
+  "feature_dimensions": {
+    "node_features": 36,
+    "edge_features": 10
+  },
+  "model_hyperparameters": {
+    "hidden_features": 32,
+    "num_layers": 2,
+    "num_fourier_terms": 4,
+    "dropout": 0.2,
+    "learning_rate": 0.01,
+    "epochs": 20
+  }
+}

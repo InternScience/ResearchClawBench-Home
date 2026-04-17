@@ -1,0 +1,46 @@
+{
+  "claims": [
+    {
+      "claim": "M33 X-7 excludes boson masses in range [1.40e-13, 4.06e-12] eV at 95% CL",
+      "evidence": "outputs/exclusion_results.json, outputs/exclusion_curve_M33_X-7.csv",
+      "verification": "Direct computation from 1838 posterior samples",
+      "status": "verified"
+    },
+    {
+      "claim": "IRAS 09149-6206 excludes boson masses in range [1.08e-19, 3.45e-19] eV at 95% CL",
+      "evidence": "outputs/exclusion_results.json, outputs/exclusion_curve_IRAS_09149-6206.csv",
+      "verification": "Direct computation from 10000 posterior samples (subsampled to 2000)",
+      "status": "verified"
+    },
+    {
+      "claim": "Maximum exclusion probability for M33 X-7 is 100% at μ ≈ 1.66e-13 eV",
+      "evidence": "outputs/exclusion_results.json",
+      "verification": "All posterior samples fall in exclusion region at this mass",
+      "status": "verified"
+    },
+    {
+      "claim": "Maximum exclusion probability for IRAS 09149-6206 is 99.75% at μ ≈ 1.72e-19 eV",
+      "evidence": "outputs/exclusion_results.json",
+      "verification": "Nearly all posterior samples fall in exclusion region",
+      "status": "verified"
+    },
+    {
+      "claim": "Self-interaction coupling f_a constraints derived from Bosenova criterion",
+      "evidence": "report/images/fig6_self_interaction_constraints.png",
+      "verification": "Computed from posterior samples using Arvanitaki et al. Eq. 48",
+      "status": "verified"
+    },
+    {
+      "claim": "Stellar-mass BHs probe boson masses ~10^{-14} to 10^{-11} eV",
+      "evidence": "Consistent with Arvanitaki et al. 2011 and Stott 2018",
+      "verification": "From gravitational coupling α = GMμ/(ℏc) matching BH size",
+      "status": "verified_consistent_with_literature"
+    },
+    {
+      "claim": "SMBHs probe boson masses ~10^{-20} to 10^{-16} eV",
+      "evidence": "Consistent with Arvanitaki et al. 2011",
+      "verification": "From gravitational coupling scaling with BH mass",
+      "status": "verified_consistent_with_literature"
+    }
+  ]
+}

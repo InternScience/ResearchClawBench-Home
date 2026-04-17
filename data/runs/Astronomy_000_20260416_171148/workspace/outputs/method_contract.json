@@ -1,0 +1,29 @@
+{
+  "task": "Constrain ultralight boson (ULB) properties via black hole superradiance",
+  "methodological_commitments": [
+    "Bayesian statistical framework (not frequentist point estimates)",
+    "Ingest full posterior distributions of BH mass and spin",
+    "Black hole superradiance physics: gravitational atom analogy",
+    "Superradiance rate computation using Detweiler/Arvanitaki formulas",
+    "Critical spin curves (Regge trajectories) for exclusion regions",
+    "Upper limits on ULB masses",
+    "Upper limits on self-interaction coupling strengths (decay constant f_a)",
+    "Apply to both stellar-mass (M33 X-7) and supermassive (IRAS 09149-6206) BHs"
+  ],
+  "named_methods": [
+    "Penrose superradiance process",
+    "Gravitational atom bound states (hydrogen-like spectrum)",
+    "Non-relativistic superradiance rate formula (Eq. 18 of Arvanitaki et al. 2011)",
+    "Bosenova collapse criterion for self-interaction constraints",
+    "Bayesian marginalization over posterior samples"
+  ],
+  "data_sources": [
+    "M33 X-7 posterior samples (Liu et al. 2008)",
+    "IRAS 09149-6206 posterior samples (Shangguan/GRAVITY 2020 + Walton et al. 2020)"
+  ],
+  "target_quantities": [
+    "Excluded boson mass ranges (eV)",
+    "Upper limits on self-interaction coupling f_a (GeV)",
+    "Bayesian exclusion confidence levels (95% CL)"
+  ]
+}

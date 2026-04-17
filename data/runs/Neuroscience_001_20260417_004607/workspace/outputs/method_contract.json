@@ -1,0 +1,22 @@
+{
+  "task": "Construct and analyze a connectome-constrained deep mechanistic network (DMN) for Drosophila motion detection",
+  "named_methods": [
+    "Deep Mechanistic Network (DMN)",
+    "Connectome-constrained neural network",
+    "Task optimization for optic flow estimation",
+    "PPNeuronIGRSynapses dynamics",
+    "Gaussian Mixture Clustering on UMAP embeddings"
+  ],
+  "primary_outputs": [
+    "Analysis of 50 pre-trained DMN models",
+    "Learned parameter distributions (resting potentials, time constants, synaptic strengths)",
+    "Connectome structure analysis",
+    "Direction selectivity analysis of T4/T5 neurons",
+    "ON vs OFF pathway comparison",
+    "Functional clustering of cell types"
+  ],
+  "scientific_goal": "Demonstrate that neural activity can be predicted from connectome structure + task knowledge",
+  "model_family": "flyvis DMN",
+  "dataset": "MPI Sintel (optic flow)",
+  "connectome": "fib25-fib19_v2.2 (65 cell types, 605 edges)"
+}

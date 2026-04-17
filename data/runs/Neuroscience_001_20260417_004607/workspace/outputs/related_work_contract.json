@@ -1,0 +1,41 @@
+{
+  "related_papers": [
+    {
+      "paper": "paper_000.pdf",
+      "title": "Wiring Economy and Volume Exclusion Determine Neuronal Placement in the Drosophila Brain",
+      "authors": "Rivera-Alba et al., 2011",
+      "relevance": "Provides foundational connectome reconstruction of Drosophila lamina, relevant for understanding wiring principles"
+    },
+    {
+      "paper": "paper_001.pdf",
+      "title": "Synaptic circuits and their variations within different columns in the visual system of Drosophila",
+      "authors": "Takemura et al., 2015",
+      "relevance": "Detailed medulla connectome reconstruction - source data for the DMN connectome constraints"
+    },
+    {
+      "paper": "paper_002.pdf",
+      "title": "Comparisons between the ON- and OFF-edge motion pathways in the Drosophila brain",
+      "authors": "Shinomiya et al., 2019",
+      "relevance": "ON/OFF pathway comparison at synaptic level - validates our ON vs OFF analysis"
+    },
+    {
+      "paper": "paper_003.pdf",
+      "title": "Neuronal circuits integrating visual motion information in Drosophila melanogaster",
+      "authors": "Shinomiya et al., 2022",
+      "relevance": "Lobula plate circuit reconstruction - context for T4/T5 direction selectivity analysis"
+    },
+    {
+      "paper": "paper_004.pdf",
+      "title": "Neuronal parts list and wiring diagram for a visual system",
+      "authors": "Matsliah et al., 2024",
+      "relevance": "Complete optic lobe cell type catalog from FlyWire - validates cell type annotations"
+    }
+  ],
+  "key_extractions": {
+    "named_methods": ["Deep Mechanistic Network", "PPNeuronIGRSynapses", "GAVP decoder"],
+    "target_comparison_axes": ["ON vs OFF pathway", "T4 vs T5 subtypes", "direction selectivity (a,b,c,d)"],
+    "validation_metrics": ["L2 norm validation loss", "BIC for clustering"],
+    "cell_type_count": "64-65 depending on source",
+    "neuron_count": "~45,669 in full model"
+  }
+}

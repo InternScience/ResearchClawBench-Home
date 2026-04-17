@@ -1,0 +1,38 @@
+{
+  "task_name": "Multimodal Materials AI Analysis",
+  "scientific_objective": "Accelerate discovery, development, and optimization of advanced materials by integrating multimodal data through AI/ML models",
+  "core_workflows": [
+    {
+      "name": "property_prediction",
+      "description": "Predict material properties (mechanical, electronic, catalytic) from structural and compositional data",
+      "input_data": "Atomic structures, chemical compositions, crystal graphs",
+      "output": "Predicted material properties"
+    },
+    {
+      "name": "structure_generation",
+      "description": "Generate novel material structures and microstructures",
+      "input_data": "Crystal graphs, atomic coordinates, lattice parameters",
+      "output": "Generated novel material structures"
+    },
+    {
+      "name": "autonomous_optimization",
+      "description": "Optimize synthesis and processing parameters",
+      "input_data": "Synthesis conditions, experimental parameters, spectral data",
+      "output": "Optimized synthesis/processing parameters"
+    }
+  ],
+  "methodological_commitments": [
+    "Data-driven inverse design approach",
+    "Integration of multimodal materials data",
+    "Reduction of trial-and-error experimentation",
+    "Physics-informed machine learning where applicable",
+    "Interpretable models for materials insights"
+  ],
+  "expected_artifacts": [
+    "Data overview visualizations",
+    "Property prediction model results",
+    "Structure generation outputs",
+    "Optimization workflow results",
+    "Comparison and validation plots"
+  ]
+}

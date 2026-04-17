@@ -1,0 +1,21 @@
+{
+  "task_type": "binary_classification",
+  "scientific_goal": "Automate proofreading in connectomics by predicting whether two over-segmented neuron fragments belong to the same neuron",
+  "input": "Over-segmented EM image volume with pairs of adjacent neuron segments near potential truncation points",
+  "output": "Binary prediction (0 or 1) indicating merge decision",
+  "data_structure": {
+    "features": 20,
+    "feature_types": ["morphology", "intensity", "embedding_modalities"],
+    "label": "binary (1=same neuron, 0=different neuron)",
+    "degradation_types": ["Misalignment", "Missing Sections", "Mixed", "Average"]
+  },
+  "required_artifacts": [
+    "data_overview_plots",
+    "model_training_results",
+    "performance_metrics",
+    "comparison_by_degradation_type",
+    "validation_plots"
+  ],
+  "target_metrics": ["accuracy", "precision", "recall", "f1_score", "roc_auc", "confusion_matrix"],
+  "baseline_approach": "Supervised binary classification with train/test split evaluation"
+}

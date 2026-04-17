@@ -1,0 +1,31 @@
+{
+  "task_description": "Automated geometry theorem proving for IMO problems",
+  "input_format": "Formal statements in geometry construction language",
+  "output_format": "Machine-verifiable, human-readable proofs",
+  "scientific_goal": "Develop AI system for autonomous geometry problem solving without human demonstrations",
+  "method_requirements": {
+    "parsing": "Parse formal geometry construction language with points, lines, circles, and geometric relations",
+    "reasoning": "Apply inference rules from rules.txt to derive conclusions from constructions",
+    "verification": "Generate machine-verifiable proof traces",
+    "interpretability": "Produce human-readable proof explanations"
+  },
+  "named_methods": [
+    "Full angle method",
+    "Area method", 
+    "Coordinate method",
+    "Forward chaining with geometric inference rules"
+  ],
+  "evaluation_metrics": [
+    "Problem solve rate",
+    "Proof correctness (machine-verifiable)",
+    "Proof length/complexity",
+    "Human readability score"
+  ],
+  "required_artifacts": [
+    "Problem structure analysis",
+    "Geometric primitive distribution",
+    "Inference rule usage patterns",
+    "Visualizations of problem characteristics",
+    "Method fidelity analysis"
+  ]
+}

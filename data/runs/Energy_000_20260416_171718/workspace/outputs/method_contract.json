@@ -1,0 +1,38 @@
+{
+  "task_name": "MMGA Parameter Identification for Li-ion Battery ECAT Model",
+  "input_specification": {
+    "experimental_data": [
+      "NASA PCoE Dataset: voltage, current, temperature during CC discharge",
+      "CS2_36 (CALCE): 1C constant current discharge curves",
+      "Oxford Dataset: dynamic urban driving profiles"
+    ],
+    "search_space": "Latin Hypercube Sampling (LHS) over 13 parameters",
+    "parameter_categories": ["electrochemical", "thermal", "aging"]
+  },
+  "output_specification": {
+    "identified_parameters": [
+      "R_p_n", "R_p_p", "D_s_n", "D_s_p", "k_n", "k_p",
+      "eps_s_n", "eps_s_p", "eps_e", "h", "rho_cp", "k_SEI", "R_SEI_0"
+    ],
+    "validation_metrics": ["RMSE (mV)", "MAE (mV)", "improvement_percentage"],
+    "deliverables": ["parameter_json", "simulation_comparison", "figures"]
+  },
+  "scientific_goal": {
+    "primary": "Develop rapid and accurate parameter identification framework using ANN meta-model",
+    "secondary": "Solve trade-off between model complexity and calculation efficiency",
+    "application": "Lithium-ion battery digital twins"
+  },
+  "method_requirements": {
+    "named_framework": "MMGA (Multi-Model Genetic Algorithm)",
+    "meta_model_type": "ANN (Artificial Neural Network)",
+    "sampling_method": "LHS (Latin Hypercube Sampling)",
+    "optimization_algorithm": "Differential Evolution",
+    "physics_model": "ECAT (Electrochemical-Aging-Thermal) coupled model"
+  },
+  "validation_requirements": {
+    "primary_dataset": "CS2_36 (CALCE)",
+    "validation_datasets": ["NASA PCoE", "Oxford"],
+    "comparison_baseline": "Nominal literature parameters",
+    "required_figures": ["data_overview", "main_results", "validation_plots"]
+  }
+}

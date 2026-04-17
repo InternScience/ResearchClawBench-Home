@@ -1,0 +1,41 @@
+{
+  "task_type": "personalized_neoantigen_vaccine_optimization",
+  "input_data": {
+    "cell_populations": "data/cell-populations.csv",
+    "response_likelihoods": "data/final-response-likelihoods.csv",
+    "sim_specific_likelihoods": "data/sim-specific-response-likelihoods.csv",
+    "vaccine_element_scores": "data/vaccine-elements.scores.100-cells.10x.rep-[0-9].csv",
+    "selected_vaccine_elements": "data/selected-vaccine-elements.budget-10.minsum.adaptive.csv",
+    "vaccine_composition": "data/vaccine.budget-10.minsum.adaptive.csv",
+    "optimization_runtime": "data/optimization_runtime_data.csv"
+  },
+  "output_requirements": {
+    "vaccine_composition": "Optimal set of neoantigen elements (peptides/mutations)",
+    "efficacy_metrics": [
+      "per-cell immune response probability",
+      "coverage ratio of tumor cells",
+      "IoU of optimal vaccine compositions"
+    ],
+    "runtime_data": "Optimization runtime analysis"
+  },
+  "method_commitments": {
+    "objective_function": "MinSum with budget constraint (budget=10)",
+    "adaptive_selection": true,
+    "replicate_analysis": "10 replicates (rep-0 to rep-9)",
+    "simulation_setting": "100-cells.10x"
+  },
+  "required_figures": [
+    "data_overview_plots",
+    "response_probability_distributions",
+    "vaccine_composition_analysis",
+    "coverage_curves",
+    "replicate_comparison",
+    "runtime_vs_population_size"
+  ],
+  "related_work_papers": [
+    "paper_000.pdf - MHC binding prediction (NetMHC-4.0)",
+    "paper_001.pdf - TBD",
+    "paper_002.pdf - TBD",
+    "paper_003.pdf - TBD"
+  ]
+}

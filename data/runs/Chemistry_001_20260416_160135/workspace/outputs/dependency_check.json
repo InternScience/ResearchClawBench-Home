@@ -1,0 +1,24 @@
+{
+  "python_version": "3.10",
+  "packages": {
+    "torch": {"installed": true, "purpose": "Deep learning framework"},
+    "rdkit": {"installed": true, "purpose": "Chemical structure parsing and descriptors"},
+    "matplotlib": {"installed": true, "purpose": "Visualization and plotting"},
+    "seaborn": {"installed": true, "purpose": "Statistical visualization"},
+    "numpy": {"installed": true, "purpose": "Numerical computation"},
+    "scipy": {"installed": true, "purpose": "Scientific computing utilities"},
+    "biopython": {"installed": true, "purpose": "PDB file parsing"}
+  },
+  "model_capabilities": {
+    "protein_encoding": "Transformer-based sequence encoding",
+    "ligand_encoding": "Graph attention network for molecular graphs",
+    "diffusion_process": "DDPM-style forward and reverse diffusion",
+    "coordinate_prediction": "3D coordinate generation via denoising"
+  },
+  "limitations": {
+    "training": "Model uses random initialization (no pre-training on PDB)",
+    "sequence_length": "Limited to 50 residues due to positional encoding",
+    "sampling": "Uses simplified reverse diffusion without learned variance",
+    "evaluation": "RMSD computed on untrained model (random predictions)"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "task": "HEEW Multi-Source Hierarchical Time-Series Dataset Analysis",
+  "named_methods": [
+    "Data cleaning algorithms (IQR-based outlier detection, Z-score outlier detection)",
+    "Hierarchical aggregation consistency verification",
+    "Correlation analysis (Pearson correlation)",
+    "Temporal pattern analysis (diurnal, monthly, seasonal decomposition)",
+    "Cross-building comparison"
+  ],
+  "data_sources": [
+    "HEEW Mini-Dataset: 10 buildings (BN001-BN010), 1 community (CN01), 1 total (Total), 1 weather",
+    "Arizona State University Campus Metabolism Project",
+    "U.S. National Weather Service meteorological observations"
+  ],
+  "hierarchical_structure": "Building → Community → Total",
+  "variables": {
+    "energy": ["Electricity [kW]", "Heat [mmBTU]", "Cooling Energy [Ton]", "PV Power Generation [kW]", "Greenhouse Gas Emission [Ton]"],
+    "weather": ["Temperature [°F]", "Dew Point [°F]", "Humidity [%]", "Wind Speed [mph]", "Wind Gust [mph]", "Pressure [in]", "Precipitation [in]"]
+  },
+  "temporal_resolution": "hourly",
+  "temporal_coverage": "2014 (full year, 8760 hours)"
+}

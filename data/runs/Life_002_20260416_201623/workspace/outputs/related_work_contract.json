@@ -1,0 +1,38 @@
+{
+  "paper_000": {
+    "title": "Foldseek: Fast and accurate protein structure search",
+    "key_contributions": [
+      "3Di structural alphabet for encoding tertiary interactions",
+      "Ultra-fast structural search (4-5 orders of magnitude faster)",
+      "Prefilter + alignment pipeline"
+    ],
+    "relevance": "Core method inspiration for structural alphabet encoding"
+  },
+  "paper_001": {
+    "title": "US-align: Universal structural alignment",
+    "key_contributions": [
+      "Unified TM-score framework for monomers and oligomers",
+      "Chain correspondence via exhaustive/heuristic search",
+      "Benchmarks on 1,123 complexes"
+    ],
+    "relevance": "Oligomeric alignment methodology and chain correspondence algorithm"
+  },
+  "paper_002": {
+    "title": "QSalign: Quaternary structure alignment",
+    "key_contributions": [
+      "QS conservation as predictor of biological relevance",
+      "Multi-chain superposition strategies",
+      "QSbio database of QS annotations"
+    ],
+    "relevance": "Quaternary structure comparison methodology"
+  },
+  "paper_003": {
+    "title": "TM-align: protein structure alignment based on TM-score",
+    "key_contributions": [
+      "TM-score definition and rotation matrix",
+      "Dynamic programming alignment optimization",
+      "Length-independent scoring"
+    ],
+    "relevance": "Core alignment algorithm and scoring function"
+  }
+}

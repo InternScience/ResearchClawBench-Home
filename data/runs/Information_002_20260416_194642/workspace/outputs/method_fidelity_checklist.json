@@ -1,0 +1,36 @@
+{
+  "method_name": "Structured Prompt Template Evaluation of LLM Hartree-Fock Calculations",
+  "key_structural_ingredients": [
+    {
+      "ingredient": "Multi-step decomposition",
+      "definition": "The HF calculation is decomposed into 16 sequential steps, each with a specific prompt template",
+      "implemented": true,
+      "verified": true
+    },
+    {
+      "ingredient": "Placeholder extraction",
+      "definition": "LLM extracts specific parameters from paper text to fill prompt templates",
+      "implemented": true,
+      "verified": true
+    },
+    {
+      "ingredient": "Three-grader scoring",
+      "definition": "Independent evaluation by Haining, Will, and Yasaman on 0-2 scale",
+      "implemented": true,
+      "verified": true
+    },
+    {
+      "ingredient": "Six-category task scoring",
+      "definition": "in_paper, prompt_quality, follow_instructions, physics_logic, math_derivation, final_answer_accuracy",
+      "implemented": true,
+      "verified": true
+    },
+    {
+      "ingredient": "LLM vs Human comparison",
+      "definition": "Systematic comparison of LLM-extracted vs human-corrected placeholder values",
+      "implemented": true,
+      "verified": true
+    }
+  ],
+  "deviations": "None - all structural ingredients are faithfully analyzed from the workspace data"
+}

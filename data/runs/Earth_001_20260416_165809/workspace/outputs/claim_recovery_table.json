@@ -1,0 +1,74 @@
+{
+  "claim_recovery": [
+    {
+      "claim_id": "C01",
+      "claim": "Spatial concentration in western states",
+      "evidence_source": "outputs/state_counts.json",
+      "supporting_figure": "report/images/spatial_distribution.png",
+      "quantitative_result": "California (215), Colorado (142), Utah (130), Texas (104) = 591/832 = 71%",
+      "status": "verified"
+    },
+    {
+      "claim_id": "C02",
+      "claim": "Peak activity in 2003, minimum in 2020",
+      "evidence_source": "outputs/yearly_activity.json",
+      "supporting_figure": "report/images/annual_trends.png",
+      "quantitative_result": "2003: 49 records (max), 2020: 12 records (min)",
+      "status": "verified"
+    },
+    {
+      "claim_id": "C03",
+      "claim": "Snowpack augmentation is dominant purpose",
+      "evidence_source": "outputs/purpose_composition.json",
+      "supporting_figure": "report/images/purpose_chart.png",
+      "quantitative_result": "Augment snowpack: 326/832 = 39.2%; snowpack-related categories: 497/832 = 59.7%",
+      "status": "verified"
+    },
+    {
+      "claim_id": "C04",
+      "claim": "Silver iodide is predominant agent",
+      "evidence_source": "outputs/agent_apparatus_matrix.json",
+      "supporting_figure": "report/images/agent_apparatus_heatmap.png",
+      "quantitative_result": "Silver iodide (pure): 411 records; all silver iodide formulations: ~634/832 = 76%",
+      "status": "verified"
+    },
+    {
+      "claim_id": "C05",
+      "claim": "Ground deployment preferred over airborne",
+      "evidence_source": "outputs/agent_apparatus_matrix.json",
+      "supporting_figure": "report/images/agent_apparatus_heatmap.png",
+      "quantitative_result": "Ground: 451 (54.2%), Airborne: 236 (28.4%), Combined: 135 (16.2%)",
+      "status": "verified"
+    },
+    {
+      "claim_id": "C06",
+      "claim": "Three operators dominate the market",
+      "evidence_source": "outputs/operator_counts.json",
+      "supporting_figure": "report/images/operator_analysis.png",
+      "quantitative_result": "North American Weather Consultants (201) + Weather Modification Inc (120) + Western Weather Consultants (108) = 429/832 = 51.6%",
+      "status": "verified"
+    },
+    {
+      "claim_id": "C07",
+      "claim": "Winter operations dominate",
+      "evidence_source": "code analysis output",
+      "supporting_figure": "report/images/seasonal_patterns.png",
+      "quantitative_result": "Winter (including combinations): 589/832 = 70.8%",
+      "status": "verified"
+    },
+    {
+      "claim_id": "C08",
+      "claim": "Declining trend 2016-2020 with recovery afterward",
+      "evidence_source": "outputs/yearly_activity.json",
+      "supporting_figure": "report/images/annual_trends.png",
+      "quantitative_result": "2016: 34 -> 2020: 12 -> 2024: 34 records",
+      "status": "verified"
+    }
+  ],
+  "summary": {
+    "total_claims": 8,
+    "verified_from_workspace_data": 8,
+    "from_related_work": 0,
+    "assumptions": 0
+  }
+}

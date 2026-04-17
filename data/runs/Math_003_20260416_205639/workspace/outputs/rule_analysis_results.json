@@ -1,0 +1,312 @@
+{
+  "total_rules": 43,
+  "by_category": {
+    "parallel": 6,
+    "cyclic": 2,
+    "angle_equality": 8,
+    "congruence": 5,
+    "ratio_equality": 5,
+    "perpendicular": 5,
+    "midpoint": 2,
+    "collinearity": 1,
+    "triangle_similarity": 9
+  },
+  "avg_premises_per_rule": 2.6511627906976742,
+  "top_premise_predicates": [
+    [
+      "cong",
+      17
+    ],
+    [
+      "ncoll",
+      14
+    ],
+    [
+      "eqangle6",
+      12
+    ],
+    [
+      "midp",
+      10
+    ],
+    [
+      "perp",
+      8
+    ],
+    [
+      "coll",
+      6
+    ],
+    [
+      "eqangle",
+      5
+    ],
+    [
+      "para",
+      5
+    ],
+    [
+      "circle",
+      5
+    ],
+    [
+      "eqratio6",
+      5
+    ],
+    [
+      "cyclic",
+      4
+    ],
+    [
+      "eqratio",
+      2
+    ],
+    [
+      "npara",
+      1
+    ],
+    [
+      "sameside",
+      1
+    ]
+  ],
+  "top_conclusion_predicates": [
+    [
+      "eqangle",
+      6
+    ],
+    [
+      "para",
+      5
+    ],
+    [
+      "cong",
+      5
+    ],
+    [
+      "perp",
+      5
+    ],
+    [
+      "A",
+      5
+    ],
+    [
+      "cyclic",
+      2
+    ],
+    [
+      "midp",
+      2
+    ],
+    [
+      "eqratio3",
+      1
+    ],
+    [
+      "coll",
+      1
+    ],
+    [
+      "eqratio",
+      1
+    ]
+  ],
+  "rules_by_category": {
+    "parallel": [
+      {
+        "index": 0,
+        "conclusion": "para A B E F"
+      },
+      {
+        "index": 2,
+        "conclusion": "para A B C D"
+      },
+      {
+        "index": 6,
+        "conclusion": "para E F B C"
+      },
+      {
+        "index": 25,
+        "conclusion": "para A C B D"
+      },
+      {
+        "index": 27,
+        "conclusion": "para A B C D"
+      },
+      {
+        "index": 41,
+        "conclusion": "para m n a b"
+      }
+    ],
+    "cyclic": [
+      {
+        "index": 1,
+        "conclusion": "cyclic A B C D"
+      },
+      {
+        "index": 4,
+        "conclusion": "cyclic A B P Q"
+      }
+    ],
+    "angle_equality": [
+      {
+        "index": 3,
+        "conclusion": "eqangle P A P B Q A Q B"
+      },
+      {
+        "index": 8,
+        "conclusion": "eqangle A B E F C D G H"
+      },
+      {
+        "index": 9,
+        "conclusion": "eqangle a b e f m n r u"
+      },
+      {
+        "index": 11,
+        "conclusion": "eqangle6 a b a d a d a c"
+      },
+      {
+        "index": 13,
+        "conclusion": "eqangle O A A B A B O B"
+      },
+      {
+        "index": 15,
+        "conclusion": "eqangle A X A B C A C B"
+      },
+      {
+        "index": 17,
+        "conclusion": "eqangle A B A C O B O M"
+      },
+      {
+        "index": 21,
+        "conclusion": "eqangle A D C D C D C B"
+      }
+    ],
+    "congruence": [
+      {
+        "index": 5,
+        "conclusion": "cong A B P Q"
+      },
+      {
+        "index": 14,
+        "conclusion": "cong O A O B"
+      },
+      {
+        "index": 19,
+        "conclusion": "cong A M B M"
+      },
+      {
+        "index": 22,
+        "conclusion": "cong O A O B"
+      },
+      {
+        "index": 31,
+        "conclusion": "cong A B C D"
+      }
+    ],
+    "ratio_equality": [
+      {
+        "index": 7,
+        "conclusion": "eqratio3 A B C D O O"
+      },
+      {
+        "index": 10,
+        "conclusion": "eqratio a b e f m n r u"
+      },
+      {
+        "index": 12,
+        "conclusion": "eqratio6 d b d c a b a c"
+      },
+      {
+        "index": 29,
+        "conclusion": "eqratio M A A B N C C D"
+      },
+      {
+        "index": 42,
+        "conclusion": "eqratio6 m a m d n b n c"
+      }
+    ],
+    "perpendicular": [
+      {
+        "index": 16,
+        "conclusion": "perp O A A X"
+      },
+      {
+        "index": 20,
+        "conclusion": "perp A B B C"
+      },
+      {
+        "index": 23,
+        "conclusion": "perp A B P Q"
+      },
+      {
+        "index": 24,
+        "conclusion": "perp P A A Q"
+      },
+      {
+        "index": 30,
+        "conclusion": "perp A B C D"
+      }
+    ],
+    "midpoint": [
+      {
+        "index": 18,
+        "conclusion": "midp M B C"
+      },
+      {
+        "index": 26,
+        "conclusion": "midp M C D"
+      }
+    ],
+    "collinearity": [
+      {
+        "index": 28,
+        "conclusion": "coll A B C"
+      }
+    ],
+    "triangle_similarity": [
+      {
+        "index": 32,
+        "conclusion": "contri* A B C P Q R"
+      },
+      {
+        "index": 33,
+        "conclusion": "contri* A B C P Q R"
+      },
+      {
+        "index": 34,
+        "conclusion": "simtri A B C P Q R"
+      },
+      {
+        "index": 35,
+        "conclusion": "simtri2 A B C P Q R"
+      },
+      {
+        "index": 36,
+        "conclusion": "contri A B C P Q R"
+      },
+      {
+        "index": 37,
+        "conclusion": "contri2 A B C P Q R"
+      },
+      {
+        "index": 38,
+        "conclusion": "simtri* A B C P Q R"
+      },
+      {
+        "index": 39,
+        "conclusion": "simtri* A B C P Q R"
+      },
+      {
+        "index": 40,
+        "conclusion": "contri* A B C P Q R"
+      }
+    ]
+  },
+  "figures": {
+    "rules_by_category": "report/images/rules_by_category.png",
+    "premise_distribution": "report/images/premise_distribution.png",
+    "top_premise_predicates": "report/images/top_premise_predicates.png"
+  }
+}

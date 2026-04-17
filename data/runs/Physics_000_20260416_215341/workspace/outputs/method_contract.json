@@ -1,0 +1,21 @@
+{
+  "task_type": "multi_component_icosahedral_shell_stacking",
+  "input_requirements": [
+    "particle_types_and_sizes",
+    "shell_sequence_paths_hexagonal_lattice",
+    "interaction_parameters"
+  ],
+  "output_deliverables": [
+    "predicted_stable_multi_shell_structures",
+    "optimal_size_mismatch_values",
+    "shell_sequences_from_growth_simulations"
+  ],
+  "scientific_objective": "universal_theoretical_framework_for_rational_design_of_nanoclusters",
+  "key_methods": [
+    "hexagonal_coordinate_mapping",
+    "magic_number_sequence_analysis",
+    "chiral_category_classification",
+    "size_mismatch_optimization",
+    "dynamic_growth_simulation"
+  ]
+}

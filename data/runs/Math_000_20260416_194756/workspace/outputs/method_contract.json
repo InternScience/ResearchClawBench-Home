@@ -1,0 +1,47 @@
+{
+  "task_name": "Multi-Object Tracking with SparseTrack vs ByteTrack",
+  "scientific_goal": "Handle occlusions and improve MOT performance in crowded scenes by decomposing dense target sets into sparse subsets via pseudo-depth estimation and performing hierarchical association",
+  "named_methods": [
+    {
+      "name": "SparseTrack",
+      "description": "Tracking method that decomposes dense target sets into sparse subsets via pseudo-depth estimation and performs hierarchical association",
+      "key_components": [
+        "pseudo-depth estimation",
+        "sparse subset decomposition",
+        "hierarchical association"
+      ],
+      "contract_status": "to_implement"
+    },
+    {
+      "name": "ByteTrack",
+      "description": "Multi-object tracking by associating every detection box (both high and low confidence scores)",
+      "key_components": [
+        "two-stage association",
+        "high-score detection matching",
+        "low-score detection matching for occluded objects"
+      ],
+      "contract_status": "to_implement"
+    }
+  ],
+  "input_data": {
+    "type": "simulated_sequence.json",
+    "description": "Simulated multi-object video sequence with ground truth trajectories and detection boxes",
+    "parameters": {
+      "frames": 40,
+      "objects": 20,
+      "detection_rate": 0.85,
+      "occlusion_overlap_threshold": 0.20
+    }
+  },
+  "output_requirements": {
+    "primary": "Complete trajectories for each target (identity labels and bounding box sequences across frames)",
+    "metrics": ["MOTA", "IDF1", "ID_switches", "trajectory_completeness"]
+  },
+  "required_artifacts": [
+    "data_overview_plots",
+    "main_result_figures",
+    "comparison_validation_plots",
+    "tracking_trajectories_visualization",
+    "occlusion_analysis"
+  ]
+}

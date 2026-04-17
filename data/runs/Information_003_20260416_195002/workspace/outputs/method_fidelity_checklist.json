@@ -1,0 +1,47 @@
+{
+  "method_name": "DIDS-MFL",
+  "key_structural_ingredients": {
+    "statistical_disentanglement": {
+      "definition": "Non-parametric optimization to minimize MI between feature elements via learned weights",
+      "3D-IDS_original": "SMT-based optimization with order-preserving constraints",
+      "our_implementation": "Learnable sigmoid-constrained weights with sorting for order preservation",
+      "fidelity": "APPROXIMATE - uses gradient-based optimization instead of SMT solver"
+    },
+    "representational_disentanglement": {
+      "definition": "Orthogonality regularization on temporal node representations",
+      "3D-IDS_original": "L_dis = 0.5 * ||X(t)X(t-)^T - I||_F^2",
+      "our_implementation": "Same formulation with normalized representations",
+      "fidelity": "FAITHFUL"
+    },
+    "memory_module": {
+      "definition": "GRU-based node memory with message passing",
+      "3D-IDS_original": "RNN for messages, GRU for memory update",
+      "our_implementation": "Linear message function + GRU cell",
+      "fidelity": "FAITHFUL"
+    },
+    "graph_diffusion": {
+      "definition": "Perona-Malik nonlinear diffusion with layer-temporal coefficients",
+      "3D-IDS_original": "Continuous ODE solved via Runge-Kutta with multi-layer graph",
+      "our_implementation": "Simplified Euler integration, single-layer (data limitation)",
+      "fidelity": "APPROXIMATE - simplified solver and single-layer data"
+    },
+    "multi_scale_fusion": {
+      "definition": "Multi-scale representation fusion for few-shot learning",
+      "3D-IDS_original": "Not in 3D-IDS (our extension)",
+      "our_implementation": "Three-scale encoder with concatenation and fusion MLP",
+      "fidelity": "NOVEL EXTENSION"
+    },
+    "two_step_classification": {
+      "definition": "Binary classification followed by multi-class classification",
+      "3D-IDS_original": "Same two-step approach",
+      "our_implementation": "Parallel binary + multi-class heads",
+      "fidelity": "FAITHFUL"
+    }
+  },
+  "deviations": [
+    "SMT solver replaced with gradient-based optimization for statistical disentanglement",
+    "Runge-Kutta replaced with Euler integration for graph diffusion ODE",
+    "Reduced model dimensions (32 vs typical 128-256) due to CPU-only training",
+    "Single-layer graph only (dataset limitation, not model limitation)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "task": "Analyze Latent Ewald Summation (LES) for ML interatomic potentials with long-range electrostatics",
+  "method_commitments": [
+    "Ewald summation for long-range electrostatic interactions",
+    "Latent charges learned from energy and force data only",
+    "Short-range MLIP (CACE-based) combined with long-range electrostatic correction",
+    "Charge recovery from energy/force training (no explicit charge labels)",
+    "Binding energy curves for charged systems beyond cutoff",
+    "Charge state discrimination via global charge embedding"
+  ],
+  "named_methods": ["Latent Ewald Summation (LES)", "CACE", "Ewald summation", "Charge equilibration (comparison)"],
+  "datasets": ["random_charges.xyz", "charged_dimer.xyz", "ag3_chargestates.xyz"],
+  "key_figures": [
+    "Fig 1: Charge recovery from random_charges data",
+    "Fig 3: Binding energy curves for charged dimers",
+    "Fig 5e: Ag3 charge state PES comparison",
+    "Table 1: Ag3 charge state energy/force errors"
+  ],
+  "physical_quantities": ["total potential energy", "atomic forces", "latent charges", "dipole moments", "quadrupole moments", "Born effective charges"]
+}

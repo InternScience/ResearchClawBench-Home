@@ -1,0 +1,42 @@
+{
+  "task_type": "Hartree-Fock Hamiltonian derivation",
+  "methodology": "Multi-step analytic calculation with structured prompt templates",
+  "target_system": "AB-stacked MoTe2/WSe2 moir\u00e9 heterobilayer",
+  "evaluation_framework": {
+    "evaluators": [
+      "Haining",
+      "Will",
+      "Yasaman"
+    ],
+    "score_scale": "0-2 points per item",
+    "main_score_categories": [
+      "in_paper",
+      "prompt_quality",
+      "follow_instructions",
+      "physics_logic",
+      "math_derivation",
+      "final_answer_accuracy"
+    ]
+  },
+  "physics_content": {
+    "hamiltonian_components": [
+      "Kinetic Hamiltonian (continuum, single-particle)",
+      "Potential Hamiltonian (continuum)",
+      "Second-quantized form conversion",
+      "Particle-hole transformation",
+      "Interaction Hamiltonian (Coulomb)",
+      "Hartree-Fock approximation via Wick's theorem"
+    ],
+    "degrees_of_freedom": [
+      "valley (+K/-K)",
+      "layer (top/bottom)"
+    ],
+    "basis_order": "(+K,bottom), (+K,top), (-K,bottom), (-K,top)"
+  },
+  "named_methods": [
+    "Hartree-Fock approximation",
+    "Wick's theorem",
+    "Fourier transformation",
+    "Particle-hole transformation"
+  ]
+}

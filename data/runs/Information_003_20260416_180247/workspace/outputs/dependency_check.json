@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "torch": {"version": "2.9.1+cu128", "status": "available"},
+    "torch_geometric": {"version": "2.7.0", "status": "available"},
+    "matplotlib": {"version": "3.10.8", "status": "available"},
+    "seaborn": {"version": "0.13.2", "status": "available"},
+    "scikit-learn": {"version": "1.7.2", "status": "available"},
+    "numpy": {"version": "1.26.4", "status": "available"}
+  },
+  "capability_checks": {
+    "gpu_available": false,
+    "cpu_training": true,
+    "memory_constraints": "Limited to subset training due to timeout constraints"
+  },
+  "method_fidelity": {
+    "statistical_disentanglement": {
+      "required": "Mutual information-based non-parameterized optimization",
+      "implemented": "Learnable projection with factor attention",
+      "gap": "Full MI optimization not implemented due to time constraints"
+    },
+    "representational_disentanglement": {
+      "required": "Memory matrix with query-based reading",
+      "implemented": "Defined in code but not used in final training",
+      "gap": "Simplified MLP used instead of full memory-enhanced model"
+    },
+    "dynamic_graph_diffusion": {
+      "required": "Time-aware edge weight computation with message passing",
+      "implemented": "Defined in dids_mfl.py",
+      "gap": "Not utilized in final evaluation due to computational constraints"
+    },
+    "multi_scale_fusion": {
+      "required": "Multiple scale feature extraction with attention fusion",
+      "implemented": "Defined in dids_mfl.py",
+      "gap": "Not utilized in final evaluation"
+    }
+  }
+}

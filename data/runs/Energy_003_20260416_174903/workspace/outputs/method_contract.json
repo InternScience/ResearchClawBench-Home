@@ -1,0 +1,35 @@
+{
+  "task_name": "HEEW Mini-Dataset Analysis",
+  "scientific_goal": "Provide a publicly available, comprehensive, and hierarchical benchmark dataset for energy system management, machine learning, and data-driven optimization",
+  "methodological_commitments": [
+    "Multi-source data integration (energy + weather)",
+    "Hierarchical structure verification (building -> community -> total)",
+    "Data cleaning algorithm implementation",
+    "Correlation analysis between energy and weather variables",
+    "Temporal pattern analysis (hourly, monthly)",
+    "Building-level comparison and contribution analysis"
+  ],
+  "target_artifacts": [
+    "Data quality assessment report",
+    "Hierarchical consistency validation",
+    "Correlation matrix",
+    "Temporal pattern visualizations",
+    "Building comparison figures",
+    "Comprehensive research report with figures"
+  ],
+  "dataset_specifications": {
+    "time_period": "2014 (full year)",
+    "temporal_resolution": "hourly",
+    "total_records_per_level": 8760,
+    "hierarchical_levels": ["BN001-BN010 (10 buildings)", "CN01 (community)", "Total"],
+    "energy_variables": 5,
+    "weather_variables": 7,
+    "total_variables": 13
+  },
+  "validation_criteria": [
+    "100% data completeness",
+    "Hierarchical consistency (0% difference between levels)",
+    "Physical range validity",
+    "Temporal continuity (no gaps)"
+  ]
+}

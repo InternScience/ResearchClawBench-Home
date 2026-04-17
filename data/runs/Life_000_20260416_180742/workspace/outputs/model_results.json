@@ -1,0 +1,50 @@
+{
+  "model_performance": {
+    "RandomForest": {
+      "r2_test": 0.8362903116707003,
+      "rmse_test": 25.899056655823625,
+      "mae_test": 18.2053314460958
+    },
+    "GradientBoosting": {
+      "r2_test": 0.7989424003693132,
+      "rmse_test": 28.701659075991074,
+      "mae_test": 19.762431350396277
+    }
+  },
+  "cross_validation": {
+    "RandomForest": {
+      "cv_r2_mean": 0.6479600038556399,
+      "cv_r2_std": 0.12134994165670354
+    },
+    "GradientBoosting": {
+      "cv_r2_mean": 0.6543349322063196,
+      "cv_r2_std": 0.1259601597883641
+    }
+  },
+  "tier_compositions": {
+    "Low (<100 kPa)": {
+      "Nucleophilic-HEA": 0.07398449136725951,
+      "Hydrophobic-BA": 0.24503887522988804,
+      "Acidic-CBEA": 0.10387030749206262,
+      "Cationic-ATAC": 0.13252342136949827,
+      "Aromatic-PEA": 0.19236460916070552,
+      "Amide-AAm": 0.25221829538058643
+    },
+    "Medium (100-200 kPa)": {
+      "Nucleophilic-HEA": 0.048197042291586153,
+      "Hydrophobic-BA": 0.43799978601843265,
+      "Acidic-CBEA": 0.06426569155826468,
+      "Cationic-ATAC": 0.12005606319356193,
+      "Aromatic-PEA": 0.23720211090480756,
+      "Amide-AAm": 0.09227930603334653
+    },
+    "High (>200 kPa)": {
+      "Nucleophilic-HEA": 0.01150200366991136,
+      "Hydrophobic-BA": 0.6297767844966944,
+      "Acidic-CBEA": 0.0015258183611644505,
+      "Cationic-ATAC": 0.08094487762176822,
+      "Aromatic-PEA": 0.2681897175050267,
+      "Amide-AAm": 0.008060798345434769
+    }
+  }
+}

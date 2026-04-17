@@ -1,0 +1,31 @@
+{
+  "method_name": "Fourier-based Kolmogorov-Arnold Network (KAN) Layer",
+  "definition": "A neural network layer that replaces fixed activation functions with learnable Fourier series: φ(x) = a₀ + Σₖ [aₖ·cos(kx) + bₖ·sin(kx)], where each input-output pair has independent learnable coefficients",
+  "theoretical_basis": "Kolmogorov-Arnold Representation Theorem: any multivariate continuous function can be represented as a superposition of continuous functions of one variable",
+  "assumptions": [
+    "Fourier series can approximate the optimal univariate functions in the KA representation",
+    "8 frequency components provide sufficient expressiveness",
+    "Learnable frequency scaling adapts to data distribution"
+  ],
+  "invariants": [
+    "Each input-output pair has independent activation function",
+    "Activation functions are parameterized as Fourier series",
+    "Layer normalization ensures training stability"
+  ],
+  "non_negotiable_steps": [
+    "Fourier basis computation (cos and sin terms)",
+    "Per-edge learnable coefficients (a₀, aₖ, bₖ)",
+    "Summation over input features following KA theorem structure"
+  ],
+  "key_differences_from_MLP": [
+    "MLP: fixed activation (ReLU) + learnable linear weights",
+    "KAN: learnable activation (Fourier) + structured summation",
+    "KAN provides interpretable frequency decomposition",
+    "KAN has stronger theoretical approximation guarantees"
+  ],
+  "deviations": [
+    "Used GCN (not GAT) for message passing backbone - simpler and more standard",
+    "Used 8 Fourier frequencies instead of potentially larger basis",
+    "CPU-only training limited epochs and dataset sizes for HIV and MUV"
+  ]
+}

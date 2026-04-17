@@ -1,0 +1,35 @@
+{
+  "related_papers": [
+    {
+      "id": "paper_000",
+      "title": "Continuous Mott transition in semiconductor moiré superlattices",
+      "relevance": "Provides experimental context for TMD moiré systems, validates the physical system studied",
+      "key_facts": ["TMD moiré superlattices exhibit correlated insulating states", "Continuous Mott transitions observed"]
+    },
+    {
+      "id": "paper_001",
+      "title": "Language Models are Few-Shot Learners (GPT-3)",
+      "relevance": "Foundational work on LLM few-shot capabilities used in the evaluation framework",
+      "key_facts": ["Few-shot prompting enables task-specific performance", "Scaling improves reasoning"]
+    },
+    {
+      "id": "paper_002",
+      "title": "Solving Quantitative Reasoning Problems with Language Models (Minerva)",
+      "relevance": "Demonstrates LLM mathematical reasoning capabilities relevant to physics calculations",
+      "key_facts": ["LLMs can solve quantitative reasoning problems", "Chain-of-thought improves accuracy"]
+    },
+    {
+      "id": "paper_003",
+      "title": "Galactica: A Large Language Model for Science",
+      "relevance": "Science-focused LLM showing potential for scientific text understanding",
+      "key_facts": ["Science-trained LLMs better handle technical notation", "LaTeX equation handling"]
+    },
+    {
+      "id": "paper_004",
+      "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+      "relevance": "Scaling laws context for understanding LLM capability improvements",
+      "key_facts": ["Optimal scaling requires balancing model size and data", "Larger models show better reasoning"]
+    }
+  ],
+  "impact_on_contract": "Related work confirms the evaluation framework is well-motivated: LLMs have demonstrated mathematical reasoning capabilities (Minerva), but physics-specific calculation accuracy has not been systematically benchmarked. The TMD moiré system (paper_000) provides experimental validation for the physical system."
+}

@@ -1,0 +1,28 @@
+{
+  "task_name": "Floquet-Bloch States in Epitaxial Graphene",
+  "primary_goal": "Direct observation of Floquet-Bloch replica bands via tr-ARPES",
+  "secondary_goal": "Elucidate scattering mechanism involving photon-dressed Volkov final states",
+  "input_parameters": {
+    "pump_wavelength_um": 5.0,
+    "expected_photon_energy_eV": 0.248,
+    "material": "monolayer epitaxial graphene"
+  },
+  "methodology": {
+    "technique": "time-resolved angle-resolved photoemission spectroscopy (tr-ARPES)",
+    "observables": [
+      "replica band positions in energy-momentum space",
+      "replica band intensities",
+      "polarization angle dependence"
+    ],
+    "analysis_approach": [
+      "Compare pump-off and pump-on ARPES spectra",
+      "Extract replica band positions from processed data",
+      "Fit polarization dependence to cos^2 model",
+      "Estimate photon energy from Floquet replica spacing"
+    ]
+  },
+  "expected_signatures": {
+    "floquet_replicas": "Bands spaced by integer multiples of photon energy hbar*omega from Dirac cone",
+    "polarization_dependence": "Weak modulation consistent with linearly polarized pump coupling"
+  }
+}

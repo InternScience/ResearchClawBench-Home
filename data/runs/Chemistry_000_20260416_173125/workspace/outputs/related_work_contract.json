@@ -1,0 +1,48 @@
+{
+  "papers_read": [
+    {
+      "id": "paper_000",
+      "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+      "relevance": "Defines the benchmark datasets (BACE, BBBP, ClinTox, HIV, MUV), evaluation metrics (ROC-AUC, PRC-AUC), and splitting strategies (scaffold, random)",
+      "key_extractions": [
+        "BACE: scaffold split, ROC-AUC metric",
+        "BBBP: scaffold split, ROC-AUC metric",
+        "ClinTox: random split, ROC-AUC metric",
+        "HIV: scaffold split, ROC-AUC metric",
+        "MUV: random split, PRC-AUC metric",
+        "Learnable representations broadly offer best performance",
+        "Struggle with data scarcity and class imbalance"
+      ]
+    },
+    {
+      "id": "paper_001",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks (GCN)",
+      "relevance": "Defines the GCN layer used as the message-passing backbone in both baseline and KA-GNN",
+      "key_extractions": [
+        "GCN propagation rule: H^(l+1) = σ(D^(-1/2) A D^(-1/2) H^(l) W^(l))",
+        "First-order approximation of spectral graph convolutions",
+        "Linear scaling in number of edges"
+      ]
+    },
+    {
+      "id": "paper_002",
+      "title": "Graph Attention Networks (GAT)",
+      "relevance": "Alternative GNN architecture using attention mechanisms; provides context for GNN design choices",
+      "key_extractions": [
+        "Attention-based message passing as alternative to GCN",
+        "Multi-head attention for stability",
+        "Applicable to both transductive and inductive settings"
+      ]
+    },
+    {
+      "id": "paper_003",
+      "title": "Crystal Graph Convolutional Neural Networks (CGCNN)",
+      "relevance": "Demonstrates graph-based neural networks for property prediction with interpretability via local chemical environment analysis",
+      "key_extractions": [
+        "Graph representation of crystal structures",
+        "Interpretability through contribution analysis from local environments",
+        "DFT-level accuracy with learned representations"
+      ]
+    }
+  ]
+}

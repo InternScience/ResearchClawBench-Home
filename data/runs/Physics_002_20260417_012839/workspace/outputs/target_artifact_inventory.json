@@ -1,0 +1,24 @@
+{
+  "primary_quantitative": [
+    {"artifact": "xeb_fidelity_results.json", "status": "complete"},
+    {"artifact": "mb_probability_results.json", "status": "complete"},
+    {"artifact": "transport_1qrb_results.json", "status": "complete"}
+  ],
+  "figures": [
+    {"name": "xeb_vs_depth_N40.png", "type": "depth_scan", "status": "complete"},
+    {"name": "xeb_vs_N_d12.png", "type": "N_scan", "status": "complete"},
+    {"name": "mb_vs_depth.png", "type": "depth_scan", "status": "complete"},
+    {"name": "mb_vs_N_d12.png", "type": "N_scan", "status": "complete"},
+    {"name": "transport_vs_depth.png", "type": "depth_scan", "status": "complete"},
+    {"name": "transport_vs_N.png", "type": "N_scan", "status": "complete"},
+    {"name": "xeb_mb_comparison_N40.png", "type": "cross_method", "status": "complete"},
+    {"name": "xeb_per_instance_N40.png", "type": "scatter", "status": "complete"},
+    {"name": "exponential_decay_fits.png", "type": "model_fit", "status": "complete"},
+    {"name": "fidelity_comparison_bar.png", "type": "bar_comparison", "status": "complete"},
+    {"name": "xeb_vs_mb_correlation.png", "type": "correlation", "status": "complete"},
+    {"name": "transport_decay_fit.png", "type": "model_fit", "status": "complete"},
+    {"name": "error_rate_estimates.png", "type": "error_analysis", "status": "complete"},
+    {"name": "all_methods_vs_N.png", "type": "combined_comparison", "status": "complete"},
+    {"name": "xeb_histograms_N40.png", "type": "distribution", "status": "complete"}
+  ]
+}

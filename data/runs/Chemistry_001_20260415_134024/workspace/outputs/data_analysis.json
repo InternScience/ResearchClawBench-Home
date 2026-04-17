@@ -1,0 +1,188 @@
+{
+  "protein": {
+    "n_atoms": 2591,
+    "n_residues": 161,
+    "n_ca": 161,
+    "sequence": "GMWDETELGLYKVNEYVDARDTNMGAWFEAQVVRVTRKAPSRDEPCSSTSRPALEEDVIYHVKYDDYPENGVVQMNSRDVRARARTIIKWQDLEVGQVVMLNYNPDNPKERGFWYDAEISRKRETRTARELYANVVLGDDSLNDCRIIFVDEVFKIERPGE",
+    "ca_center_of_mass": [
+      2.43545341614907,
+      1.776708074534165,
+      -0.3544472049689443
+    ],
+    "ca_radius_of_gyration": 17.239959312935905,
+    "n_contacts_8A": 796
+  },
+  "ligand": {
+    "mol_name": "2l3r_ligand",
+    "n_atoms": 194,
+    "n_bonds": 193,
+    "n_heavy_atoms": 90,
+    "element_counts": {
+      "O": 17,
+      "N": 20,
+      "C": 53,
+      "H": 104
+    },
+    "center_of_mass": [
+      11.15783659793814,
+      5.348000000000001,
+      -8.189456701030926
+    ],
+    "radius_of_gyration": 10.73722636255061
+  },
+  "interface": {
+    "n_interface_residues": 30,
+    "residues": [
+      {
+        "res_seq": 142,
+        "res_name": "ASP",
+        "min_distance": 1.9401235141093465
+      },
+      {
+        "res_seq": 145,
+        "res_name": "ASP",
+        "min_distance": 2.140882852937078
+      },
+      {
+        "res_seq": 146,
+        "res_name": "THR",
+        "min_distance": 4.344262417257963
+      },
+      {
+        "res_seq": 147,
+        "res_name": "ASN",
+        "min_distance": 2.4543660810889643
+      },
+      {
+        "res_seq": 148,
+        "res_name": "MET",
+        "min_distance": 1.721431689030965
+      },
+      {
+        "res_seq": 149,
+        "res_name": "GLY",
+        "min_distance": 4.380313443122535
+      },
+      {
+        "res_seq": 150,
+        "res_name": "ALA",
+        "min_distance": 4.086348527720072
+      },
+      {
+        "res_seq": 151,
+        "res_name": "TRP",
+        "min_distance": 4.107712343872194
+      },
+      {
+        "res_seq": 152,
+        "res_name": "PHE",
+        "min_distance": 2.453885997759472
+      },
+      {
+        "res_seq": 153,
+        "res_name": "GLU",
+        "min_distance": 1.849094616291984
+      },
+      {
+        "res_seq": 188,
+        "res_name": "TYR",
+        "min_distance": 2.5345886983887542
+      },
+      {
+        "res_seq": 190,
+        "res_name": "ASP",
+        "min_distance": 1.9670255793964655
+      },
+      {
+        "res_seq": 191,
+        "res_name": "TYR",
+        "min_distance": 1.2885229761242134
+      },
+      {
+        "res_seq": 194,
+        "res_name": "ASN",
+        "min_distance": 2.4697130562071377
+      },
+      {
+        "res_seq": 197,
+        "res_name": "VAL",
+        "min_distance": 4.3676284388670235
+      },
+      {
+        "res_seq": 207,
+        "res_name": "ARG",
+        "min_distance": 2.454078340232846
+      },
+      {
+        "res_seq": 208,
+        "res_name": "ALA",
+        "min_distance": 4.113154547303079
+      },
+      {
+        "res_seq": 211,
+        "res_name": "ILE",
+        "min_distance": 2.275931618041279
+      },
+      {
+        "res_seq": 224,
+        "res_name": "MET",
+        "min_distance": 3.1998326721877195
+      },
+      {
+        "res_seq": 226,
+        "res_name": "ASN",
+        "min_distance": 3.9711876057421414
+      },
+      {
+        "res_seq": 228,
+        "res_name": "ASN",
+        "min_distance": 4.989736466989013
+      },
+      {
+        "res_seq": 230,
+        "res_name": "ASP",
+        "min_distance": 2.1383926019325825
+      },
+      {
+        "res_seq": 235,
+        "res_name": "ARG",
+        "min_distance": 1.773216210731224
+      },
+      {
+        "res_seq": 236,
+        "res_name": "GLY",
+        "min_distance": 2.152885740117204
+      },
+      {
+        "res_seq": 237,
+        "res_name": "PHE",
+        "min_distance": 2.1155160765165557
+      },
+      {
+        "res_seq": 238,
+        "res_name": "TRP",
+        "min_distance": 2.125155116691485
+      },
+      {
+        "res_seq": 273,
+        "res_name": "PHE",
+        "min_distance": 2.915816053868968
+      },
+      {
+        "res_seq": 275,
+        "res_name": "ASP",
+        "min_distance": 1.721302498110079
+      },
+      {
+        "res_seq": 276,
+        "res_name": "GLU",
+        "min_distance": 1.8913867029246023
+      },
+      {
+        "res_seq": 278,
+        "res_name": "PHE",
+        "min_distance": 2.0862854646476356
+      }
+    ]
+  }
+}

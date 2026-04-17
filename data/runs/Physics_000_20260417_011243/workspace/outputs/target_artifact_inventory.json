@@ -1,0 +1,19 @@
+{
+  "target_artifacts": [
+    {"id": "T1", "description": "Hexagonal lattice with shell paths figure", "type": "figure", "status": "satisfied", "path": "report/images/hexagonal_lattice.png"},
+    {"id": "T2", "description": "Magic number sequence comparison table", "type": "table+figure", "status": "satisfied", "path": "report/images/magic_numbers.png"},
+    {"id": "T3", "description": "Triangulation number map on hexagonal lattice", "type": "figure", "status": "satisfied", "path": "report/images/triangulation_map.png"},
+    {"id": "T4", "description": "Shell energy comparison across chiral categories", "type": "figure", "status": "satisfied", "path": "report/images/shell_energy.png"},
+    {"id": "T5", "description": "Size mismatch optimization landscape", "type": "figure", "status": "satisfied", "path": "report/images/size_mismatch.png"},
+    {"id": "T6", "description": "Theory vs experiment validation plot", "type": "figure", "status": "satisfied", "path": "report/images/validation.png"},
+    {"id": "T7", "description": "Dynamic growth simulation results", "type": "figure", "status": "satisfied", "path": "report/images/growth_dynamics.png"},
+    {"id": "T8", "description": "Path selection statistics", "type": "figure", "status": "satisfied", "path": "report/images/growth_dynamics.png (panel c)"},
+    {"id": "T9", "description": "Atomic pair compatibility analysis", "type": "figure", "status": "satisfied", "path": "report/images/summary.png (panel c)"},
+    {"id": "T10", "description": "Multi-component cluster predictions", "type": "figure+table", "status": "satisfied", "path": "report/images/cluster_predictions.png"},
+    {"id": "T11", "description": "Comprehensive research report", "type": "report", "status": "satisfied", "path": "report/report.md"},
+    {"id": "T12", "description": "LJ potential curves", "type": "figure", "status": "satisfied", "path": "report/images/lj_potentials.png"},
+    {"id": "T13", "description": "Comprehensive summary figure", "type": "figure", "status": "satisfied", "path": "report/images/summary.png"},
+    {"id": "T14", "description": "Core theory results JSON", "type": "data", "status": "satisfied", "path": "outputs/core_theory_results.json"},
+    {"id": "T15", "description": "Growth simulation results JSON", "type": "data", "status": "satisfied", "path": "outputs/growth_simulation_results.json"}
+  ]
+}

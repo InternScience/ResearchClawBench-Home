@@ -1,0 +1,25 @@
+{
+  "task_name": "RCS XEB Fidelity Analysis",
+  "primary_method": "Cross-Entropy Benchmarking (XEB)",
+  "method_formula": "F_XEB = 2^n * <P(x_i)>_i - 1",
+  "inputs": {
+    "measurement_results": "data/results/ - JSON files with bitstring counts per circuit instance",
+    "ideal_amplitudes": "data/amplitudes/ - JSON files with ideal complex amplitudes per circuit instance"
+  },
+  "outputs_required": {
+    "fidelity_estimates": "Per-instance F_XEB with bootstrap uncertainty for each (N, d, r)",
+    "comparative_curves": "Fidelity vs depth (fixed N) and fidelity vs N (fixed d)",
+    "aggregated_statistics": "Mean and std across instances for each (N, d) configuration"
+  },
+  "configurations_analyzed": {
+    "depth_scan_N40": {"N": 40, "depths": [8, 10, 12, 14, 16, 18, 20], "instances_per_depth": 50},
+    "qubit_scan_d12": {"d": 12, "qubit_counts": [16, 24, 32, 40], "instances_per_N": 50}
+  },
+  "uncertainty_method": "Bootstrap resampling with 200 iterations",
+  "validation_criteria": [
+    "Non-zero fidelity at classically challenging scales (N>=40, d>=12)",
+    "Exponential decay of fidelity with increasing depth",
+    "Systematic reduction in fidelity with increasing qubit count"
+  ],
+  "core_conclusion_to_validate": "Gap between experimental fidelity and classical approximability under arbitrary-geometry/high-connectivity random circuits"
+}

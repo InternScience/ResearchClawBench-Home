@@ -1,0 +1,257 @@
+{
+  "empty": {
+    "0.0": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.09376392364501954,
+      "avg_marl_iters": 6.0,
+      "avg_pp_iters": 0.0
+    },
+    "0.2": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.09319853782653809,
+      "avg_marl_iters": 5.0,
+      "avg_pp_iters": 1.0
+    },
+    "0.3": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.09138679504394531,
+      "avg_marl_iters": 5.0,
+      "avg_pp_iters": 1.0
+    },
+    "0.5": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.08725976943969727,
+      "avg_marl_iters": 4.0,
+      "avg_pp_iters": 2.0
+    },
+    "0.7": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.08171744346618652,
+      "avg_marl_iters": 3.0,
+      "avg_pp_iters": 3.0
+    },
+    "0.9": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.06875977516174317,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 4.0
+    },
+    "1.0": {
+      "success_rate": 0.0,
+      "avg_collisions": 4.0,
+      "avg_runtime": 0.4578240871429443,
+      "avg_marl_iters": 0.0,
+      "avg_pp_iters": 40.0
+    }
+  },
+  "random_medium": {
+    "0.0": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.547046709060669,
+      "avg_marl_iters": 24.2,
+      "avg_pp_iters": 2.6
+    },
+    "0.2": {
+      "success_rate": 20.0,
+      "avg_collisions": 0.8,
+      "avg_runtime": 0.6106308460235595,
+      "avg_marl_iters": 15.4,
+      "avg_pp_iters": 19.8
+    },
+    "0.3": {
+      "success_rate": 40.0,
+      "avg_collisions": 0.6,
+      "avg_runtime": 0.5415104866027832,
+      "avg_marl_iters": 12.6,
+      "avg_pp_iters": 17.6
+    },
+    "0.5": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.6,
+      "avg_runtime": 0.6201216220855713,
+      "avg_marl_iters": 6.4,
+      "avg_pp_iters": 33.6
+    },
+    "0.7": {
+      "success_rate": 40.0,
+      "avg_collisions": 0.8,
+      "avg_runtime": 0.2910682201385498,
+      "avg_marl_iters": 2.8,
+      "avg_pp_iters": 23.8
+    },
+    "0.9": {
+      "success_rate": 20.0,
+      "avg_collisions": 3.0,
+      "avg_runtime": 0.32274503707885743,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 32.6
+    },
+    "1.0": {
+      "success_rate": 20.0,
+      "avg_collisions": 3.8,
+      "avg_runtime": 0.29325189590454104,
+      "avg_marl_iters": 0.0,
+      "avg_pp_iters": 33.0
+    }
+  },
+  "maze": {
+    "0.0": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.0,
+      "avg_runtime": 0.5470192909240723,
+      "avg_marl_iters": 11.0,
+      "avg_pp_iters": 29.0
+    },
+    "0.2": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.0,
+      "avg_runtime": 1.6239472866058349,
+      "avg_marl_iters": 6.0,
+      "avg_pp_iters": 34.0
+    },
+    "0.3": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.0,
+      "avg_runtime": 1.6153103828430175,
+      "avg_marl_iters": 6.0,
+      "avg_pp_iters": 34.0
+    },
+    "0.5": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.0,
+      "avg_runtime": 0.6947043895721435,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 39.0
+    },
+    "0.7": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.0,
+      "avg_runtime": 0.6950121402740479,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 39.0
+    },
+    "0.9": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.0,
+      "avg_runtime": 0.6962696552276612,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 39.0
+    },
+    "1.0": {
+      "success_rate": 0.0,
+      "avg_collisions": 3.0,
+      "avg_runtime": 0.4082794189453125,
+      "avg_marl_iters": 0.0,
+      "avg_pp_iters": 40.0
+    }
+  },
+  "warehouse": {
+    "0.0": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.38338260650634765,
+      "avg_marl_iters": 25.0,
+      "avg_pp_iters": 8.0
+    },
+    "0.2": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.13166570663452148,
+      "avg_marl_iters": 6.0,
+      "avg_pp_iters": 5.0
+    },
+    "0.3": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.08138384819030761,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 7.0
+    },
+    "0.5": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.08107795715332031,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 7.0
+    },
+    "0.7": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.08145008087158204,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 7.0
+    },
+    "0.9": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.08153114318847657,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 7.0
+    },
+    "1.0": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.03825821876525879,
+      "avg_marl_iters": 0.0,
+      "avg_pp_iters": 4.0
+    }
+  },
+  "room": {
+    "0.0": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.038525056838989255,
+      "avg_marl_iters": 2.0,
+      "avg_pp_iters": 0.0
+    },
+    "0.2": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.038864850997924805,
+      "avg_marl_iters": 2.0,
+      "avg_pp_iters": 0.0
+    },
+    "0.3": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.03870997428894043,
+      "avg_marl_iters": 2.0,
+      "avg_pp_iters": 0.0
+    },
+    "0.5": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.03485574722290039,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 1.0
+    },
+    "0.7": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.03490405082702637,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 1.0
+    },
+    "0.9": {
+      "success_rate": 100.0,
+      "avg_collisions": 0.0,
+      "avg_runtime": 0.034946632385253903,
+      "avg_marl_iters": 1.0,
+      "avg_pp_iters": 1.0
+    },
+    "1.0": {
+      "success_rate": 0.0,
+      "avg_collisions": 1.0,
+      "avg_runtime": 1.0514655590057373,
+      "avg_marl_iters": 0.0,
+      "avg_pp_iters": 40.0
+    }
+  }
+}

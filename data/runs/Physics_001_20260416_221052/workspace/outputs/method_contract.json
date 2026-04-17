@@ -1,0 +1,28 @@
+{
+  "task_description": "Analyze MATBG superfluid stiffness dependence on carrier density, temperature, and current",
+  "scientific_goals": [
+    "Directly measure superfluid stiffness of MATBG",
+    "Test whether it exceeds conventional Fermi liquid predictions",
+    "Investigate power-law temperature dependence for unconventional pairing",
+    "Verify quantum geometric effects in flat-band superconductivity"
+  ],
+  "named_methods": [
+    "BCS model for conventional s-wave superconductivity",
+    "Nodal superconductor model (linear T dependence)",
+    "Power law models D_s(T) = D_s0 * (1 - (T/T_c)^n) for n=2.0, 2.5, 3.0",
+    "Ginzburg-Landau model for current suppression: D_s(I) = D_s0 * (1 - (I/I_c)^2)",
+    "Quantum geometric contribution to superfluid weight"
+  ],
+  "comparison_axes": [
+    "Conventional vs quantum geometric vs experimental stiffness",
+    "BCS vs nodal vs power law temperature dependence",
+    "Ginzburg-Landau vs linear Meissner current suppression"
+  ],
+  "required_artifacts": [
+    "D_s vs n_eff plot showing enhancement",
+    "D_s vs T plot with model comparisons",
+    "D_s vs I_dc and D_s vs P_mw plots",
+    "Power law fit results",
+    "Enhancement factor quantification"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "method_name": "SXS Waveform Accuracy Assessment",
+  "definition": "Quantify numerical uncertainty in BBH waveforms by comparing outputs at different resolutions and extrapolation orders",
+  "assumptions": [
+    "Waveform differences between resolutions approximate the truncation error",
+    "Log-normal distribution is appropriate model for error distributions",
+    "Minimal time and phase alignment removes trivial differences",
+    "Extrapolation order convergence measures extraction uncertainty"
+  ],
+  "invariants": [
+    "Higher resolution should yield more accurate waveforms",
+    "Dominant (ell=2) mode should have smallest errors",
+    "Extrapolation errors should be smaller than resolution errors for well-converged simulations"
+  ],
+  "non_negotiable_steps": [
+    "Compare two highest resolutions for resolution error estimate",
+    "Decompose errors by spherical harmonic mode",
+    "Compare multiple extrapolation orders for extraction error estimate",
+    "Use minimal alignment (time and phase) before computing differences"
+  ],
+  "checklist": {
+    "resolution_comparison": "DONE - fig6_data analyzed, median 4.25e-4",
+    "modal_decomposition": "DONE - fig7_data analyzed, ell=2 through ell=8",
+    "extrapolation_convergence": "DONE - fig8_data analyzed, N2vsN3 and N2vsN4",
+    "log_normal_fitting": "DONE - all distributions well-fit (KS p > 0.37)",
+    "threshold_analysis": "DONE - cumulative fractions computed",
+    "error_source_comparison": "DONE - resolution dominates over extrapolation"
+  }
+}

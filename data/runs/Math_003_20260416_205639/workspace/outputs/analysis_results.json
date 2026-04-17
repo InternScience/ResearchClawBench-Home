@@ -1,0 +1,181 @@
+{
+  "total_problems": 30,
+  "year_range": [
+    2000,
+    2022
+  ],
+  "conclusion_types": {
+    "congruence": 12,
+    "angle_equality": 2,
+    "collinearity": 7,
+    "concyclic": 5,
+    "ratio_equality": 1,
+    "perpendicular": 2,
+    "parallel": 1
+  },
+  "top_primitives": [
+    [
+      "on_line",
+      29
+    ],
+    [
+      "triangle",
+      23
+    ],
+    [
+      "on_circle",
+      21
+    ],
+    [
+      "circle",
+      17
+    ],
+    [
+      "midpoint",
+      9
+    ],
+    [
+      "on_bline",
+      9
+    ],
+    [
+      "on_tline",
+      8
+    ],
+    [
+      "segment",
+      5
+    ],
+    [
+      "orthocenter",
+      5
+    ],
+    [
+      "foot",
+      5
+    ],
+    [
+      "on_aline",
+      5
+    ],
+    [
+      "on_pline",
+      4
+    ],
+    [
+      "angle_bisector",
+      4
+    ],
+    [
+      "mirror",
+      3
+    ],
+    [
+      "reflect",
+      2
+    ],
+    [
+      "incenter",
+      2
+    ],
+    [
+      "cc_tangent",
+      1
+    ],
+    [
+      "iso_triangle",
+      1
+    ],
+    [
+      "r_triangle",
+      1
+    ],
+    [
+      "on_dia",
+      1
+    ]
+  ],
+  "avg_objects_per_problem": 8.533333333333333,
+  "avg_primitives_per_problem": 5.2,
+  "problems_by_year": {
+    "2000": [
+      "1",
+      "6"
+    ],
+    "2002": [
+      "2a",
+      "2b"
+    ],
+    "2003": [
+      "4"
+    ],
+    "2004": [
+      "1",
+      "5"
+    ],
+    "2005": [
+      "5"
+    ],
+    "2007": [
+      "4"
+    ],
+    "2008": [
+      "1a",
+      "1b",
+      "6"
+    ],
+    "2009": [
+      "2"
+    ],
+    "2010": [
+      "2",
+      "4"
+    ],
+    "2011": [
+      "6"
+    ],
+    "2012": [
+      "1",
+      "5"
+    ],
+    "2013": [
+      "4"
+    ],
+    "2014": [
+      "4"
+    ],
+    "2015": [
+      "3",
+      "4"
+    ],
+    "2016": [
+      "1"
+    ],
+    "2017": [
+      "4"
+    ],
+    "2018": [
+      "1"
+    ],
+    "2019": [
+      "2",
+      "6"
+    ],
+    "2020": [
+      "1"
+    ],
+    "2021": [
+      "3"
+    ],
+    "2022": [
+      "4"
+    ]
+  },
+  "figures": {
+    "problems_by_year": "report/images/problems_by_year.png",
+    "conclusion_types": "report/images/conclusion_types.png",
+    "top_primitives": "report/images/top_primitives.png",
+    "complexity_metrics": "report/images/complexity_metrics.png",
+    "problem_timeline": "report/images/problem_timeline.png"
+  }
+}

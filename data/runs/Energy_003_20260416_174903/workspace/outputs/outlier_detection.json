@@ -1,0 +1,206 @@
+{
+  "iqr_method": {
+    "energy": {
+      "Electricity [kW]": {
+        "Q1": 550.9863791073062,
+        "Q3": 669.0851504592545,
+        "IQR": 118.09877135194824,
+        "lower_bound": 373.83822207938385,
+        "upper_bound": 846.2333074871768,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Heat [mmBTU]": {
+        "Q1": 146.07114860888424,
+        "Q3": 163.9729861235046,
+        "IQR": 17.901837514620354,
+        "lower_bound": 119.21839233695371,
+        "upper_bound": 190.82574239543513,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Cooling Energy [Ton]": {
+        "Q1": 270.01184480855613,
+        "Q3": 294.8249563152239,
+        "IQR": 24.81311150666778,
+        "lower_bound": 232.79217754855446,
+        "upper_bound": 332.0446235752256,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "PV Power Generation [kW]": {
+        "Q1": 0.0,
+        "Q3": 76.52003558042063,
+        "IQR": 76.52003558042063,
+        "lower_bound": -114.78005337063094,
+        "upper_bound": 191.30008895105158,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Greenhouse Gas Emission [Ton]": {
+        "Q1": 359.58945770278746,
+        "Q3": 413.01597792200937,
+        "IQR": 53.42652021922191,
+        "lower_bound": 279.4496773739546,
+        "upper_bound": 493.15575825084227,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      }
+    },
+    "weather": {
+      "Temperature [\u00b0F]": {
+        "Q1": 65.18146333264521,
+        "Q3": 84.6922940918344,
+        "IQR": 19.51083075918919,
+        "lower_bound": 35.91521719386142,
+        "upper_bound": 113.95854023061818,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Dew Point [\u00b0F]": {
+        "Q1": 55.22013066831199,
+        "Q3": 74.432941537288,
+        "IQR": 19.212810868976014,
+        "lower_bound": 26.400914364847967,
+        "upper_bound": 103.25215784075202,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Humidity [%]": {
+        "Q1": 57.33292407765178,
+        "Q3": 72.25461384877113,
+        "IQR": 14.921689771119347,
+        "lower_bound": 34.95038942097276,
+        "upper_bound": 94.63714850545014,
+        "outlier_count": 3,
+        "outlier_pct": 0.03424657534246575
+      },
+      "Wind Speed [mph]": {
+        "Q1": 7.079906714651486,
+        "Q3": 8.910085078412546,
+        "IQR": 1.8301783637610605,
+        "lower_bound": 4.334639169009895,
+        "upper_bound": 11.655352624054137,
+        "outlier_count": 34,
+        "outlier_pct": 0.3881278538812785
+      },
+      "Wind Gust [mph]": {
+        "Q1": 10.263575013728095,
+        "Q3": 13.615075627699625,
+        "IQR": 3.3515006139715293,
+        "lower_bound": 5.2363240927708015,
+        "upper_bound": 18.642326548656918,
+        "outlier_count": 35,
+        "outlier_pct": 0.3995433789954338
+      },
+      "Pressure [in]": {
+        "Q1": 29.87371546594304,
+        "Q3": 29.966076855791513,
+        "IQR": 0.09236138984847386,
+        "lower_bound": 29.735173381170327,
+        "upper_bound": 30.104618940564222,
+        "outlier_count": 27,
+        "outlier_pct": 0.3082191780821918
+      },
+      "Precipitation [in]": {
+        "Q1": 0.0,
+        "Q3": 0.0,
+        "IQR": 0.0,
+        "lower_bound": 0.0,
+        "upper_bound": 0.0,
+        "outlier_count": 386,
+        "outlier_pct": 4.4063926940639275
+      }
+    }
+  },
+  "zscore_method": {
+    "energy": {
+      "Electricity [kW]": {
+        "mean": 609.9616063697451,
+        "std": 60.76888948133263,
+        "threshold": 3,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Heat [mmBTU]": {
+        "mean": 155.03035152491825,
+        "std": 11.68238095358236,
+        "threshold": 3,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Cooling Energy [Ton]": {
+        "mean": 282.46631337817485,
+        "std": 15.46906918932295,
+        "threshold": 3,
+        "outlier_count": 1,
+        "outlier_pct": 0.01141552511415525
+      },
+      "PV Power Generation [kW]": {
+        "mean": 41.33232945702369,
+        "std": 38.102212503849444,
+        "threshold": 3,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Greenhouse Gas Emission [Ton]": {
+        "mean": 387.31700658947125,
+        "std": 36.5903297536213,
+        "threshold": 3,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      }
+    },
+    "weather": {
+      "Temperature [\u00b0F]": {
+        "mean": 74.9995986962949,
+        "std": 11.592726720497797,
+        "threshold": 3,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Dew Point [\u00b0F]": {
+        "mean": 64.9589632095087,
+        "std": 11.880280493249492,
+        "threshold": 3,
+        "outlier_count": 0,
+        "outlier_pct": 0.0
+      },
+      "Humidity [%]": {
+        "mean": 64.8813625203065,
+        "std": 10.001453440333025,
+        "threshold": 3,
+        "outlier_count": 3,
+        "outlier_pct": 0.03424657534246575
+      },
+      "Wind Speed [mph]": {
+        "mean": 8.008635550501829,
+        "std": 1.3096200776935114,
+        "threshold": 3,
+        "outlier_count": 12,
+        "outlier_pct": 0.136986301369863
+      },
+      "Wind Gust [mph]": {
+        "mean": 11.998618487903293,
+        "std": 2.4191819580091467,
+        "threshold": 3,
+        "outlier_count": 12,
+        "outlier_pct": 0.136986301369863
+      },
+      "Pressure [in]": {
+        "mean": 29.920070746095462,
+        "std": 0.06561208657907977,
+        "threshold": 3,
+        "outlier_count": 9,
+        "outlier_pct": 0.10273972602739725
+      },
+      "Precipitation [in]": {
+        "mean": 0.0009252630881376252,
+        "std": 0.006007185365850364,
+        "threshold": 3,
+        "outlier_count": 157,
+        "outlier_pct": 1.7922374429223744
+      }
+    }
+  }
+}

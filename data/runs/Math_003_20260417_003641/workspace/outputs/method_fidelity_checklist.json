@@ -1,0 +1,47 @@
+{
+  "method": "Neuro-Symbolic Geometry Theorem Prover",
+  "checklist": [
+    {
+      "component": "Symbolic Deduction Engine",
+      "definition": "Forward-chaining engine applying geometric deduction rules",
+      "implemented": true,
+      "fidelity": "Simplified - uses subset of full deduction capabilities",
+      "deviations": "Limited pattern matching; no algebraic reasoning; no full unification"
+    },
+    {
+      "component": "Construction Parser",
+      "definition": "Parser for formal geometry problem language",
+      "implemented": true,
+      "fidelity": "Full parsing of all 30 problems",
+      "deviations": "None"
+    },
+    {
+      "component": "Transformer Language Model",
+      "definition": "Decoder-only Transformer for proof step and auxiliary construction generation",
+      "implemented": false,
+      "fidelity": "Designed but not trained due to computational constraints",
+      "deviations": "Analysis uses simulation instead of actual model"
+    },
+    {
+      "component": "MCTS Proof Search",
+      "definition": "Monte Carlo Tree Search with neural policy and value guidance",
+      "implemented": false,
+      "fidelity": "Designed and analyzed; performance estimated via simulation",
+      "deviations": "No actual MCTS execution"
+    },
+    {
+      "component": "Auxiliary Construction Generation",
+      "definition": "Neural model proposes new geometric constructions when symbolic engine is stuck",
+      "implemented": false,
+      "fidelity": "Designed; performance estimated from published AlphaGeometry results",
+      "deviations": "No actual generation"
+    },
+    {
+      "component": "Synthetic Data Generation",
+      "definition": "Pipeline for generating training data from random geometric constructions",
+      "implemented": false,
+      "fidelity": "Pipeline designed; not executed at scale",
+      "deviations": "Design only"
+    }
+  ]
+}

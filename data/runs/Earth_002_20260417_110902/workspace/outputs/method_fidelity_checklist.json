@@ -1,0 +1,41 @@
+{
+  "method_name": "Composite Risk Index (CRI) for Mangrove Ecosystems",
+  "structural_steps": [
+    {
+      "step": "TC frequency gridding",
+      "definition": "Grid TC track points at 1° resolution, classify by Saffir-Simpson category, compute annual frequency per cell",
+      "implemented": true,
+      "deviation": "Used MIT model historical tracks (1850-2014) rather than IBTrACS observations"
+    },
+    {
+      "step": "TC Damage Index (TCDI)",
+      "definition": "TCDI ratios Cat 3:4:5 = 1:13:29 from Mo et al. 2023; Cat 1-2 = 0",
+      "implemented": true,
+      "deviation": "None - exact ratios from Mo et al."
+    },
+    {
+      "step": "TC Risk Index (TCRI)",
+      "definition": "TCRI = sum(TCDI_cat × Freq_cat) for cat 1-5",
+      "implemented": true,
+      "deviation": "None"
+    },
+    {
+      "step": "SLR rate extraction",
+      "definition": "Median (p50) RSLR rates from IPCC AR6 for 2100, matched to nearest mangrove location",
+      "implemented": true,
+      "deviation": "None"
+    },
+    {
+      "step": "SLR risk scoring",
+      "definition": "Continuous score based on rate relative to 95th percentile within mangrove locations, with thresholds at 4 and 7 mm/yr from Saintilan et al. 2023",
+      "implemented": true,
+      "deviation": "Used quantile-based normalization rather than hard threshold categories for better differentiation"
+    },
+    {
+      "step": "Composite Risk Index",
+      "definition": "CRI = 0.5 × TC_norm + 0.5 × SLR_norm (equal weighting)",
+      "implemented": true,
+      "deviation": "Sensitivity analysis performed with weights from 0.3:0.7 to 0.7:0.3"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "primary_quantitative_outputs": [
+    "Composite Risk Index (CRI) per mangrove location",
+    "Country-level CRI aggregation",
+    "Mangrove area at risk by SLR threshold",
+    "TC frequency and risk per grid cell"
+  ],
+  "required_comparison_tables": [
+    "Country rankings by CRI across SSP scenarios",
+    "Regional risk summary (TC + SLR components)",
+    "Ecosystem services at risk by country"
+  ],
+  "expected_figure_families": [
+    "Global map of composite risk index",
+    "Global map of TC risk component",
+    "Global map of SLR risk component",
+    "Country-level bar chart of CRI",
+    "SSP scenario comparison (bar/box plots)",
+    "Scatter plot: TC risk vs SLR risk",
+    "Ecosystem services at risk visualization",
+    "Regional hotspot maps or insets"
+  ],
+  "interpretability_artifacts": [
+    "Component contribution analysis (TC vs SLR)",
+    "Sensitivity to SSP scenario",
+    "Threshold exceedance maps"
+  ]
+}

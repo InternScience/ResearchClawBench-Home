@@ -1,0 +1,43 @@
+{
+  "required_artifacts": {
+    "parameter_tables": {
+      "description": "Tables comparing best-fit parameters for ΛCDM, EDE, w0wa models",
+      "status": "completed",
+      "output_file": "outputs/parameter_comparison.json"
+    },
+    "bao_distance_plots": {
+      "description": "Plots of D_V/r_d and F_AP vs redshift with data points",
+      "status": "completed",
+      "output_file": "report/images/bao_distances.png"
+    },
+    "sne_distance_plot": {
+      "description": "Plot of distance modulus Δμ vs redshift",
+      "status": "completed",
+      "output_file": "report/images/sne_distances.png"
+    },
+    "parameter_comparison_chart": {
+      "description": "Bar chart comparing H0, sigma8, omega_m across models",
+      "status": "completed",
+      "output_file": "report/images/parameter_comparison.png"
+    },
+    "ede_posterior_viz": {
+      "description": "Visualization of EDE parameter constraints (f_EDE, log10a_c)",
+      "status": "completed",
+      "output_file": "report/images/ede_parameters.png"
+    },
+    "tension_analysis": {
+      "description": "Quantitative analysis of Hubble tension relief",
+      "status": "completed",
+      "output_file": "outputs/tension_analysis.json"
+    }
+  },
+  "completion_checklist": [
+    "Extract and parse all parameter data",
+    "Generate BAO distance plots",
+    "Generate SNe distance plot",
+    "Generate parameter comparison chart",
+    "Generate EDE parameter visualization",
+    "Compute tension relief metrics",
+    "Write comprehensive report [Y]"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "required_artifacts": {
+    "data_summary": {
+      "path": "outputs/data_summary.json",
+      "status": "Y",
+      "description": "Parsed dataset summary with counts and metadata"
+    },
+    "h0_measurement": {
+      "path": "outputs/h0_measurement.json",
+      "status": "Y",
+      "description": "Main H0 measurement result with uncertainties"
+    },
+    "analysis_variants": {
+      "path": "outputs/analysis_variants.json",
+      "status": "Y",
+      "description": "Results from Cepheids-only, TRGB-only, no-PV variants"
+    },
+    "cmb_comparison": {
+      "path": "outputs/cmb_comparison.json",
+      "status": "Y",
+      "description": "Comparison with Planck CMB constraint"
+    },
+    "plot_data": {
+      "path": "outputs/plot_data.json",
+      "status": "Y",
+      "description": "Detailed data for figure generation"
+    }
+  },
+  "required_figures": {
+    "data_overview": {
+      "path": "report/images/data_overview.png",
+      "status": "Y",
+      "description": "Host distance moduli and SN Ia calibration overview"
+    },
+    "hubble_diagram": {
+      "path": "report/images/hubble_diagram.png",
+      "status": "Y",
+      "description": "SN Ia magnitude-redshift relation with best-fit H0"
+    },
+    "h0_comparison": {
+      "path": "report/images/h0_comparison.png",
+      "status": "Y",
+      "description": "Analysis variants comparison and tension visualization"
+    },
+    "distance_ladder_schematic": {
+      "path": "report/images/distance_ladder_schematic.png",
+      "status": "Y",
+      "description": "Schematic diagram of the cosmic distance ladder"
+    }
+  },
+  "method_contract": {
+    "path": "outputs/method_contract.json",
+    "status": "Y",
+    "description": "Method specification and expected outputs"
+  },
+  "final_report": {
+    "path": "report/report.md",
+    "status": "Y",
+    "description": "Comprehensive research report with methodology, results, discussion"
+  }
+}
+

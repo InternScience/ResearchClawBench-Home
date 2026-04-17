@@ -1,0 +1,20 @@
+{
+  "dependency": "numpy",
+  "status": "available",
+  "version": "checked"
+}
+{
+  "dependency": "matplotlib",
+  "status": "available"
+}
+{
+  "dependency": "seaborn",
+  "status": "available"
+}
+{
+  "notes": [
+    "No deep RL framework (PyTorch/TensorFlow) needed - MARL policy uses hand-crafted heuristics",
+    "All core algorithms implemented from scratch in Python",
+    "No external MAPF solver libraries required"
+  ]
+}

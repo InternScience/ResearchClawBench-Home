@@ -1,0 +1,35 @@
+{
+  "primary_quantitative_answers": {
+    "calibration_rmse": {"status": "Y", "value": "61.5K", "target": "<80K"},
+    "calibration_r2": {"status": "Y", "value": "0.548", "target": ">0.5"},
+    "generated_candidates_count": {"status": "Y", "value": "100", "target": "50-100"}
+  },
+  "required_comparison_tables": {
+    "md_vs_experimental_comparison": {"status": "Y", "artifact": "report/images/data_overview.png"},
+    "calibration_results": {"status": "Y", "artifact": "outputs/calibration_results.json"},
+    "generated_candidates_summary": {"status": "Y", "artifact": "outputs/generated_candidates.csv"}
+  },
+  "expected_figure_families": {
+    "data_overview": {
+      "tg_distribution": {"status": "Y", "artifact": "report/images/data_overview.png"},
+      "md_vs_exp_parity": {"status": "Y", "artifact": "report/images/data_overview.png"}
+    },
+    "calibration": {
+      "calibration_parity": {"status": "Y", "artifact": "report/images/calibration_results.png"},
+      "residuals_analysis": {"status": "Y", "artifact": "report/images/calibration_results.png"},
+      "uncertainty_quantification": {"status": "Y", "artifact": "outputs/calibration_results.json"}
+    },
+    "generation": {
+      "generated_samples_analysis": {"status": "Y", "artifact": "report/images/generated_candidates_analysis.png"}
+    },
+    "inverse_design": {
+      "candidates_tg_distribution": {"status": "Y", "artifact": "report/images/generated_candidates_analysis.png"}
+    }
+  },
+  "interpretability_artifacts": {
+    "prediction_uncertainty": {"status": "Y", "artifact": "outputs/generated_candidates.csv"}
+  },
+  "subgroup_outputs": {
+    "by_tg_range": {"status": "N", "reason": "Not explicitly stratified in current implementation"}
+  }
+}

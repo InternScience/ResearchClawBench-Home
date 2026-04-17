@@ -1,0 +1,31 @@
+{
+  "primary_quantitative_answers": {
+    "vaccine_composition_elements": "10 mutations (mut11, mut12, mut15, mut19, mut20, mut26, mut28, mut33, mut39, mut44)",
+    "per_cell_response_probability": "To compute from vaccine-elements.scores files",
+    "coverage_ratio": "To compute from final-response-likelihoods.csv",
+    "iou_metric": "To compute comparing selected vaccine elements across replicates"
+  },
+  "required_comparison_tables": [
+    "vaccine_element_selection_frequency",
+    "response_probability_by_replicate",
+    "runtime_by_population_size"
+  ],
+  "expected_figure_families": [
+    "Figure 1: Data overview - cell population distribution",
+    "Figure 2: Response probability distributions across cells",
+    "Figure 3: Vaccine composition - selected mutations",
+    "Figure 4: Coverage curves - cumulative response",
+    "Figure 5: Replicate comparison - consistency analysis",
+    "Figure 6: Runtime vs population size (from optimization_runtime_data.csv)"
+  ],
+  "interpretability_artifacts": [
+    "mutation_importance_ranking",
+    "cell_response_heatmap"
+  ],
+  "subgroup_conditions": {
+    "replicates": ["rep-0", "rep-1", "rep-2", "rep-3", "rep-4", "rep-5", "rep-6", "rep-7", "rep-8", "rep-9"],
+    "simulation": "100-cells.10x",
+    "budget": 10,
+    "objective": "MinSum.adaptive"
+  }
+}

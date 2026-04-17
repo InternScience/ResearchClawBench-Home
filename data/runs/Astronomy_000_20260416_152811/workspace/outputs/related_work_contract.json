@@ -1,0 +1,70 @@
+{
+  "related_work_summary": {
+    "paper_000": {
+      "citation": "Arvanitaki, A., & Dubovsky, S. (2011). Exploring the String Axiverse with Precision Black Hole Physics. PRD 83, 044026.",
+      "key_contributions": [
+        "First systematic study of axion constraints from BH superradiance",
+        "Derived α ≈ 0.22 * (M/30 Msol) * (μ/10^-12 eV) scaling",
+        "Identified optimal sensitivity at α ~ 0.4",
+        "Predicted exclusion regions in BH mass-spin plane"
+      ],
+      "method_elements_adopted": [
+        "Fine-structure constant definition and scaling",
+        "Superradiance condition ω/m < Ω_H",
+        "Growth rate scaling Γ ∝ α^(4l+4)"
+      ]
+    },
+    "paper_001": {
+      "citation": "Stott, M. J. (2019). The Spectrum of the Axion Dark Sector... Proceedings of Science 360, 008.",
+      "key_contributions": [
+        "Constraints on axion mass distributions from BH populations",
+        "SMBH sensitivity: 7×10^-20 to 1×10^-16 eV",
+        "Stellar-mass BH sensitivity: 7×10^-14 to 2×10^-11 eV"
+      ],
+      "method_elements_adopted": [
+        "Mass range boundaries for exclusion scans",
+        "Population-based constraint methodology"
+      ]
+    },
+    "paper_002": {
+      "citation": "Arvanitaki, A., Baryakhtar, M., & Huang, X. (2015). Discovering the QCD Axion with Black Holes and Gravitational Waves. PRD 91, 084011.",
+      "key_contributions": [
+        "Existing BH spin measurements disfavor axions 6×10^-13 to 2×10^-11 eV",
+        "QCD axion decay constant bounds from superradiance",
+        "Gravitational wave signatures from axion clouds"
+      ],
+      "method_elements_adopted": [
+        "Exclusion region interpretation",
+        "Self-interaction effects (Bosenova) modeling"
+      ]
+    },
+    "paper_003": {
+      "citation": "Witek, H., Cardoso, V., Ishibashi, A., & Sperhake, U. (2019). Superradiant instabilities in astrophysical systems. PRD 99, 104018.",
+      "key_contributions": [
+        "Numerical relativity simulations of superradiant evolution",
+        "Detailed mode structure and growth rates",
+        "Validation of analytical approximations"
+      ],
+      "method_elements_adopted": [
+        "Instability timescale estimates",
+        "Mode excitation hierarchy"
+      ]
+    }
+  },
+  "figure_families_from_literature": [
+    "Exclusion probability vs axion mass (primary result figure)",
+    "BH mass-spin distribution with exclusion regions",
+    "Constraints in (μ, f_a) parameter plane",
+    "Comparison with existing literature bounds"
+  ],
+  "comparison_axes": [
+    "ULB mass μ [eV] - primary axis spanning 10^-20 to 10^-10 eV",
+    "Exclusion probability P(excluded) - vertical axis [0, 1]",
+    "Self-interaction strength f_a [GeV] - secondary parameter",
+    "Black hole type (SMBH vs stellar-mass) - comparison dimension"
+  ],
+  "named_baselines_reproduced": [
+    "Arvanitaki et al. (2015) exclusion: 6×10^-13 to 2×10^-11 eV",
+    "Stott (2019) sensitivity bands for SMBH and stellar-mass BHs"
+  ]
+}

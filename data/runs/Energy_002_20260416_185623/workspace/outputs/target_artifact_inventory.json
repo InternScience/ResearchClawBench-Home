@@ -1,0 +1,28 @@
+{
+  "primary_quantitative": [
+    "LCOH production cost per hex site (€/kgH2)",
+    "Delivered cost to Europe per hex site (€/kgH2)",
+    "Cost breakdown by component (production, conversion, transport, reconversion)",
+    "European benchmark production cost (€/kgH2)"
+  ],
+  "comparison_tables": [
+    "Scenario comparison table (all WACC scenarios × all sites)",
+    "Top-10 least-cost sites per scenario",
+    "Cost competitiveness vs Europe table"
+  ],
+  "figure_families": [
+    "Geospatial LCOH map (Africa, multiple scenarios)",
+    "Cost breakdown waterfall/stacked bar chart",
+    "WACC sensitivity tornado/line chart",
+    "Scenario comparison bar chart",
+    "Competitiveness threshold map (sites below European cost)"
+  ],
+  "interpretability_artifacts": [
+    "Parameter sensitivity analysis",
+    "Cost driver decomposition per site"
+  ],
+  "subgroup_outputs": [
+    "Per-site cost components",
+    "Per-scenario rankings"
+  ]
+}

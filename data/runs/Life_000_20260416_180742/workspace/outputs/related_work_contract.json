@@ -1,0 +1,48 @@
+{
+  "related_work_summary": {
+    "paper_000": {
+      "title": "Population-based heteropolymer design to mimic protein mixtures",
+      "journal": "Nature (2023)",
+      "key_findings": [
+        "2D informative sequence analysis parameterizes chemical characteristics and sequential arrangement at segmental level",
+        "Random heteropolymers (RHPs) can mimic protein conformational diversity",
+        "PCA overlap between RHP ensembles and proteins governs interplay",
+        "Segmental similarity determines ability to replicate protein functions"
+      ],
+      "relevance_to_task": "Provides framework for statistically replicating protein sequence features in synthetic heteropolymers"
+    },
+    "paper_001": {
+      "title": "Practical Prediction of Heteropolymer Composition and Drift",
+      "journal": "ACS Macro Letters (2019)",
+      "key_findings": [
+        "Mayo-Lewis model predicts copolymer composition and drift",
+        "Monte Carlo simulation enables user-friendly prediction",
+        "Reactivity ratios determine monomer distribution along chains"
+      ],
+      "relevance_to_task": "Supports the statistical design approach for hydrogel monomer compositions"
+    },
+    "paper_002": {
+      "title": "Mussel-Inspired Adhesives and Coatings",
+      "journal": "Annual Review of Materials Research (2011)",
+      "key_findings": [
+        "Mussel byssal plaques achieve ~6 MPa adhesive strength underwater",
+        "Dopa (catecholic functionality) is key to wet adhesion",
+        "Water undermines adhesion through dielectric screening",
+        "Successful wet adhesives must displace water at interface"
+      ],
+      "relevance_to_task": "Establishes biological benchmark (6 MPa) and design principles for underwater adhesion"
+    }
+  },
+  "design_principles_extracted": [
+    "Hydrophobic content positively correlates with adhesive strength (r=0.65)",
+    "Amide content negatively correlates with adhesive strength (r=-0.59)",
+    "High performers show elevated Hydrophobic-BA (~63%) and reduced Amide-AAm (~0.8%)",
+    "Target >1 MPa requires optimization beyond current maximum (~321 kPa achieved)"
+  ],
+  "benchmark_targets": {
+    "mussel_natural": "6 MPa (field measurements)",
+    "mussel_lab": "0.3 MPa (direct plaque measurements)",
+    "current_achieved": "0.32 MPa (321 kPa maximum in dataset)",
+    "task_target": ">1 MPa"
+  }
+}

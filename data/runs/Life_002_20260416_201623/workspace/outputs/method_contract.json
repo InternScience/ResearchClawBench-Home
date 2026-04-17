@@ -1,0 +1,29 @@
+{
+  "task": "Protein complex structural alignment",
+  "methods": [
+    "TM-align for pairwise chain alignment",
+    "Hungarian algorithm for optimal chain correspondence",
+    "TM-score for quantifying structural similarity",
+    "3Di structural alphabet encoding (Foldseek-inspired)",
+    "Kabsch superimposition for rotation/translation",
+    "Hierarchical clustering for homolog identification"
+  ],
+  "inputs": [
+    "7xg4.pdb (query complex)",
+    "6n40.pdb (target structure)"
+  ],
+  "outputs": [
+    "Chain correspondence mapping",
+    "Superimposition vectors (rotation matrix + translation)",
+    "TM-scores (per-chain and overall)",
+    "3Di structural alphabet sequences",
+    "Intra-complex homology analysis",
+    "Inter-chain contact analysis"
+  ],
+  "key_metrics": [
+    "TM-score",
+    "RMSD",
+    "Aligned length",
+    "Contact density"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "dimer_models": {
+    "short_range_rmse": 0.34026527817966234,
+    "combined_rmse": 0.3510419021966184,
+    "full_rmse": 0.3340001678168255,
+    "cutoff": 5.0
+  },
+  "ag3_models": {
+    "without_charge_rmse": 0.31923056164666075,
+    "with_charge_rmse": 0.3380233573401645,
+    "energies_identical": true
+  },
+  "charge_recovery": {
+    "charge_correlation": 0.04250734900357034,
+    "charge_rmse": 1.9745482537371017,
+    "product_correlation": 0.04320979842795524,
+    "svd_ratio_s0_s1": 1.4706453486286037
+  }
+}

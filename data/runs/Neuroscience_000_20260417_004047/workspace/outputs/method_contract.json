@@ -1,0 +1,21 @@
+{
+  "task": "SimBA-style behavior classification reproducibility study",
+  "methods": [
+    "SimBA-style pose-derived feature engineering (distances, angles, areas, movements, rolling statistics)",
+    "Random Forest classifier (SimBA default, 500 trees, balanced class weights)",
+    "Gradient Boosting classifier (200 estimators, comparison baseline)",
+    "Stratified 80/20 train-test split",
+    "5-fold stratified cross-validation",
+    "Gini feature importance",
+    "Permutation importance"
+  ],
+  "behaviors": ["Attack", "Sniffing"],
+  "evaluation_metrics": ["accuracy", "precision", "recall", "f1", "auc_roc", "average_precision"],
+  "deliverables": [
+    "Trained classifiers",
+    "Quantitative evaluation reports",
+    "Precision-recall diagnostics",
+    "Confusion matrices",
+    "Feature importance tables"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "TM-score_computation": {
+    "definition": "TM-score = (1/L_target) * sum_i 1/(1 + (d_i/d0)^2), d0 = 1.24*(L-15)^(1/3) - 1.8",
+    "implemented_via": "tmtools library (C++ TM-align binding)",
+    "fidelity": "Exact - uses original TM-align algorithm",
+    "verified": true
+  },
+  "chain_correspondence": {
+    "definition": "Optimal assignment of chains maximizing total TM-score",
+    "implemented_via": "Hungarian algorithm (scipy.optimize.linear_sum_assignment)",
+    "fidelity": "Optimal for cost matrix; simplified from US-align's exhaustive search",
+    "deviation": "US-align uses C1!/C2! permutations; we use Hungarian which is optimal for bipartite matching",
+    "verified": true
+  },
+  "structural_alphabet": {
+    "definition": "Foldseek 3Di: VQ-VAE trained on tertiary interaction patterns",
+    "implemented_via": "Simplified geometric binning of bond angles and torsions",
+    "fidelity": "Approximate - captures local geometry but not trained VQ-VAE",
+    "deviation": "Original 3Di uses neural network encoder; we use geometric discretization",
+    "verified": true
+  },
+  "superimposition": {
+    "definition": "Kabsch algorithm for optimal rotation minimizing RMSD",
+    "implemented_via": "tmtools (TM-align rotation matrix)",
+    "fidelity": "Exact - TM-align produces optimal superimposition",
+    "verified": true
+  }
+}

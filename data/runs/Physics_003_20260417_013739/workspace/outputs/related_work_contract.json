@@ -1,0 +1,30 @@
+{
+  "related_work_summary": [
+    {
+      "paper": "paper_000 - Oka & Aoki (2009)",
+      "relevance": "Theoretical prediction of photovoltaic Hall effect in graphene via Floquet mechanism; circularly polarized light opens gap in Dirac cone",
+      "key_findings": "Floquet formalism applied to graphene, predicting gap opening and Hall current under circularly polarized light"
+    },
+    {
+      "paper": "paper_001 - Wang et al. (2013)",
+      "relevance": "First experimental observation of Floquet-Bloch states on TI surface via tr-ARPES; key methodological reference",
+      "key_findings": "Mid-IR pump (120 meV) creates replica bands separated by ℏω; polarization-dependent band gaps at avoided crossings; LAPE ruled out by polarization analysis",
+      "comparison_axes": ["Replica band separation = ℏω", "Polarization dependence distinguishes Floquet from LAPE", "Time-resolved dynamics confirm coherent origin"]
+    },
+    {
+      "paper": "paper_002 - Hübener et al. (2017)",
+      "relevance": "First-principles calculations of Floquet-Weyl states in 3D Dirac materials; validates Floquet engineering concept",
+      "key_findings": "Circularly polarized light can switch between Weyl, Dirac, and TI states; demonstrates ultrafast topological switching"
+    },
+    {
+      "paper": "paper_003 - Sentef et al. (2015)",
+      "relevance": "Theory of Floquet band formation in graphene pump-probe; directly relevant to our experiment",
+      "key_findings": "Short optical pulses create local spectral gaps and Floquet sidebands in graphene; pseudospin texture changes at level crossings; tr-ARPES can track Floquet band formation on fs timescales",
+      "comparison_axes": ["Floquet sideband formation", "Gap opening at Dirac point for circular polarization", "Pseudospin texture analysis"]
+    }
+  ],
+  "additional_baselines_from_related_work": [
+    "LAPE (laser-assisted photoemission) - must be ruled out as alternative explanation",
+    "Volkov final state mechanism - key distinction from simple Floquet-Bloch picture"
+  ]
+}

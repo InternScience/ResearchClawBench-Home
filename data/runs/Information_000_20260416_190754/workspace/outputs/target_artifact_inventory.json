@@ -1,0 +1,29 @@
+{
+  "primary_quantitative": [
+    "VQA accuracy comparison (decoupled vs single encoder)",
+    "Image generation FID comparison",
+    "OCR accuracy on equation image",
+    "Meme understanding accuracy"
+  ],
+  "required_comparison_tables": [
+    "Understanding benchmarks (VQAv2, GQA, TextVQA, COCO captioning)",
+    "Generation benchmarks (FID, IS, sFID on ImageNet)",
+    "Ablation: decoupled vs single encoder on both tasks",
+    "Model architecture comparison table"
+  ],
+  "expected_figures": [
+    "architecture_diagram.png - Framework overview",
+    "encoder_comparison.png - Decoupled vs single encoder performance",
+    "understanding_benchmarks.png - VQA/captioning results",
+    "generation_benchmarks.png - FID/IS results",
+    "scalability_analysis.png - Performance vs model size",
+    "data_demo_equation.png - OCR demo on equation",
+    "data_demo_meme.png - Meme understanding demo",
+    "ablation_study.png - Ablation results",
+    "training_pipeline.png - Training stages"
+  ],
+  "interpretability_artifacts": [
+    "Feature visualization showing different encoder activations",
+    "Attention pattern comparison between understanding and generation paths"
+  ]
+}

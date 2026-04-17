@@ -1,0 +1,75 @@
+{
+  "required_artifacts": [
+    {
+      "id": "data_statistics",
+      "path": "outputs/data_statistics.json",
+      "status": "pending",
+      "description": "Statistical summary of all datasets"
+    },
+    {
+      "id": "dependency_check",
+      "path": "outputs/dependency_check.json",
+      "status": "pending",
+      "description": "Python library availability check"
+    },
+    {
+      "id": "model_training_log",
+      "path": "outputs/model_training_log.json",
+      "status": "pending",
+      "description": "Training metrics and hyperparameters"
+    },
+    {
+      "id": "predictions",
+      "path": "outputs/predictions.csv",
+      "status": "pending",
+      "description": "Candidate predictions with probabilities"
+    },
+    {
+      "id": "evaluation_results",
+      "path": "outputs/evaluation_results.json",
+      "status": "pending",
+      "description": "Classification performance metrics"
+    }
+  ],
+  "required_figures": [
+    {
+      "id": "data_overview",
+      "path": "report/images/data_overview.png",
+      "status": "pending",
+      "description": "Data distribution and label balance plots"
+    },
+    {
+      "id": "training_curves",
+      "path": "report/images/training_curves.png",
+      "status": "pending",
+      "description": "Training and validation loss/accuracy curves"
+    },
+    {
+      "id": "roc_curve",
+      "path": "report/images/roc_curve.png",
+      "status": "pending",
+      "description": "ROC curve and AUC for classification performance"
+    },
+    {
+      "id": "results_comparison",
+      "path": "report/images/results_comparison.png",
+      "status": "pending",
+      "description": "Prediction distribution and top candidates visualization"
+    },
+    {
+      "id": "feature_analysis",
+      "path": "report/images/feature_analysis.png",
+      "status": "pending",
+      "description": "Node feature distribution analysis"
+    }
+  ],
+  "required_report_sections": [
+    "Abstract",
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion",
+    "Conclusion",
+    "References"
+  ]
+}

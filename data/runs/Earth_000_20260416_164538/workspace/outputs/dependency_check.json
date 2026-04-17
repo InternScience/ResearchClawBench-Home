@@ -1,0 +1,11 @@
+{
+  "required_packages": {
+    "pandas": {"purpose": "Data manipulation and analysis", "status": "to_check"},
+    "numpy": {"purpose": "Numerical operations", "status": "to_check"},
+    "matplotlib": {"purpose": "Visualization", "status": "to_check"},
+    "seaborn": {"purpose": "Statistical visualization", "status": "to_check"},
+    "scipy": {"purpose": "Statistical functions", "status": "to_check"}
+  },
+  "python_version": "to_check",
+  "notes": "Standard scientific Python stack - should be available or easily installable via pip"
+}

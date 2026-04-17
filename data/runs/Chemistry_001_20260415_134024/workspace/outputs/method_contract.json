@@ -1,0 +1,26 @@
+{
+  "task": "Unified deep learning framework for biomolecular complex structure prediction",
+  "named_methods": [
+    "AlphaFold 3-inspired diffusion-based architecture",
+    "Pairformer (triangle multiplicative updates + self-attention)",
+    "Denoising Diffusion Probabilistic Model (DDPM)",
+    "SE(3) equivariant coordinate generation",
+    "Unified tokenization for proteins, nucleic acids, small molecules"
+  ],
+  "evaluation_metrics": [
+    "Protein CA RMSD",
+    "Ligand RMSD (direct alignment)",
+    "Ligand RMSD (Hungarian matching / symmetry-aware)",
+    "pLDDT (predicted local distance difference test)",
+    "TM-score"
+  ],
+  "comparison_baselines": [
+    "AlphaFold 2 (protein-only)",
+    "RoseTTAFold (protein complexes)",
+    "Traditional molecular docking"
+  ],
+  "data": {
+    "protein": "FKBP12 (PDB: 2L3R, 161 residues, NMR structure)",
+    "ligand": "FK506 (194 atoms, 90 heavy atoms)"
+  }
+}

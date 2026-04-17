@@ -1,0 +1,51 @@
+{
+  "task_name": "GlaMBIE Regional and Global Glacier Mass Change Time Series",
+  "input_description": "233 sets of mass change estimates for 19 global glacial regions from four observational methods (glaciological measurements, DEM differencing, altimetry, gravimetry) and hybrid methods",
+  "output_requirements": {
+    "temporal_coverage": "2000-2023 annual resolution",
+    "spatial_coverage": "19 GTN-G regions plus global aggregate",
+    "units": ["m w.e. (specific mass change)", "Gt (total mass change)"],
+    "uncertainty_quantification": "required for all estimates"
+  },
+  "method_commitments": {
+    "data_sources": [
+      "glaciological (in situ measurements)",
+      "demdiff (digital elevation model differencing)",
+      "altimetry (satellite altimetry)",
+      "gravimetry (satellite gravimetry)",
+      "combined (hybrid/integrated methods)"
+    ],
+    "reconciliation_approach": "Multi-method ensemble with uncertainty weighting",
+    "aggregation_method": "Area-weighted summation for global totals"
+  },
+  "deliverable_artifacts": [
+    "unified_dataset.parquet",
+    "regional_timeseries.csv",
+    "global_timeseries.csv",
+    "data_overview_plots",
+    "main_result_figures",
+    "comparison_validation_plots",
+    "research_report.md"
+  ],
+  "regions": [
+    "alaska",
+    "western_canada_us",
+    "arctic_canada_north",
+    "arctic_canada_south",
+    "greenland_periphery",
+    "iceland",
+    "svalbard",
+    "scandinavia",
+    "russian_arctic",
+    "north_asia",
+    "central_europe",
+    "caucasus_middle_east",
+    "central_asia",
+    "south_asia_west",
+    "south_asia_east",
+    "low_latitudes",
+    "southern_andes",
+    "new_zealand",
+    "antarctic_and_subantarctic"
+  ]
+}

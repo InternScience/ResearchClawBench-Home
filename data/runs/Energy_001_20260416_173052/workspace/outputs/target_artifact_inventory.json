@@ -1,0 +1,93 @@
+{
+  "required_artifacts": [
+    {
+      "id": "data_overview_stats",
+      "description": "Summary statistics of all input data",
+      "format": "JSON",
+      "path": "outputs/data_overview.json",
+      "status": "complete"
+    },
+    {
+      "id": "network_topology_figure",
+      "description": "Visualization of 20-bus network with transmission lines",
+      "format": "PNG",
+      "path": "report/images/network_topology.png",
+      "status": "complete"
+    },
+    {
+      "id": "demand_profile_figure",
+      "description": "Hourly demand profiles across all buses",
+      "format": "PNG",
+      "path": "report/images/demand_profiles.png",
+      "status": "complete"
+    },
+    {
+      "id": "wind_capacity_factor_figure",
+      "description": "Wind capacity factors over time",
+      "format": "PNG",
+      "path": "report/images/wind_cf.png",
+      "status": "complete"
+    },
+    {
+      "id": "dispatch_results",
+      "description": "Hourly optimal dispatch by generator",
+      "format": "CSV",
+      "path": "outputs/dispatch_results.csv",
+      "status": "complete"
+    },
+    {
+      "id": "generation_stack_figure",
+      "description": "Stacked area plot of generation by type over time",
+      "format": "PNG",
+      "path": "report/images/generation_stack.png",
+      "status": "complete"
+    },
+    {
+      "id": "cost_breakdown",
+      "description": "System costs by generator type",
+      "format": "JSON",
+      "path": "outputs/system_costs.json",
+      "status": "complete"
+    },
+    {
+      "id": "cost_breakdown_figure",
+      "description": "Bar chart of costs by technology",
+      "format": "PNG",
+      "path": "report/images/cost_breakdown.png",
+      "status": "complete"
+    },
+    {
+      "id": "storage_dispatch_figure",
+      "description": "Storage state of charge and power over time",
+      "format": "PNG",
+      "path": "report/images/storage_dispatch.png",
+      "status": "complete"
+    },
+    {
+      "id": "line_loading_figure",
+      "description": "Transmission line utilization",
+      "format": "PNG",
+      "path": "report/images/line_loading.png",
+      "status": "complete"
+    },
+    {
+      "id": "curtailment_analysis",
+      "description": "Renewable curtailment analysis",
+      "format": "JSON/PNG",
+      "path": "outputs/curtailment.json",
+      "status": "complete"
+    },
+    {
+      "id": "final_report",
+      "description": "Comprehensive research report",
+      "format": "Markdown",
+      "path": "report/report.md",
+      "status": "complete"
+    }
+  ],
+  "comparison_structure": {
+    "by_generator_type": ["onshore wind", "gas", "nuclear"],
+    "by_location": "20 buses",
+    "temporal": "168 hourly snapshots"
+  }
+}

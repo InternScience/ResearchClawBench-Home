@@ -1,0 +1,46 @@
+{
+  "task_name": "Cloud Seeding Analysis 2000-2025",
+  "primary_objectives": [
+    "Spatial concentration analysis of cloud seeding projects by state",
+    "Annual activity dynamics and temporal trends",
+    "Purpose composition breakdown",
+    "Agent-apparatus deployment pattern analysis"
+  ],
+  "data_source": {
+    "file": "data/dataset1_cloud_seeding_records/cloud_seeding_us_2000_2025.csv",
+    "records": 832,
+    "year_range": [2000, 2025],
+    "fields": ["filename", "project", "year", "season", "state", "operator_affiliation", "agent", "apparatus", "purpose", "target_area", "control_area", "start_date", "end_date"]
+  },
+  "required_outputs": {
+    "tables": [
+      "State-level record counts",
+      "Annual activity summary",
+      "Purpose distribution",
+      "Agent-apparatus matrix",
+      "Operator frequency counts"
+    ],
+    "figures": [
+      "Spatial distribution map/bar chart",
+      "Annual trends time series",
+      "Purpose composition charts",
+      "Agent-apparatus heatmap",
+      "Seasonal patterns",
+      "State-purpose matrix",
+      "Operator analysis",
+      "Year-state temporal-spatial matrix"
+    ]
+  },
+  "methodological_commitments": [
+    "Transparent script-based analysis using Python/pandas",
+    "Reproducible figure generation with matplotlib/seaborn",
+    "Complete documentation of data quality issues",
+    "Export of all intermediate outputs as JSON/CSV"
+  ],
+  "scientific_questions": [
+    "What is the geographic distribution of U.S. cloud seeding activities?",
+    "How has annual activity varied over the 26-year period?",
+    "What are the dominant stated purposes for cloud seeding?",
+    "Which agents and deployment methods are most commonly used?"
+  ]
+}

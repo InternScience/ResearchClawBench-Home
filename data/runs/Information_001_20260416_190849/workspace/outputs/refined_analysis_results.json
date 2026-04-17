@@ -1,0 +1,188 @@
+[
+  {
+    "scenario": "Demo1-LicensePlate",
+    "description": "Small text detail",
+    "effective_resolution": {
+      "roi_fraction_w": 0.224609375,
+      "roi_fraction_h": 0.1953125,
+      "effective_pixels_global": 2150,
+      "effective_resolution_global": "50x43",
+      "crop_pixels_224": 50176,
+      "crop_pixels_448": 200704,
+      "pixel_gain_224x": 23.33767441860465,
+      "pixel_gain_448x": 93.3506976744186
+    },
+    "quality_metrics": {
+      "global_224": {
+        "psnr": 24.73475928750066,
+        "ssim": 0.7885629191375727,
+        "mse": 218.57698550724638
+      },
+      "crop_224": {
+        "psnr": 48.05060623430927,
+        "ssim": 0.9975390404379293,
+        "mse": 1.0186376811594202
+      },
+      "crop_448": {
+        "psnr": 48.25478855120722,
+        "ssim": 0.9980430462901699,
+        "mse": 0.9718550724637681
+      }
+    }
+  },
+  {
+    "scenario": "Demo1-OfficerBadge",
+    "description": "Small object detail",
+    "effective_resolution": {
+      "roi_fraction_w": 0.1953125,
+      "roi_fraction_h": 0.2604166666666667,
+      "effective_pixels_global": 2494,
+      "effective_resolution_global": "43x58",
+      "crop_pixels_224": 50176,
+      "crop_pixels_448": 200704,
+      "pixel_gain_224x": 20.1186848436247,
+      "pixel_gain_448x": 80.4747393744988
+    },
+    "quality_metrics": {
+      "global_224": {
+        "psnr": 19.973155542556743,
+        "ssim": 0.5420036348634638,
+        "mse": 654.28175
+      },
+      "crop_224": {
+        "psnr": 43.78208195270969,
+        "ssim": 0.9961332977264374,
+        "mse": 2.7219
+      },
+      "crop_448": {
+        "psnr": 44.57935464693343,
+        "ssim": 0.9967485793514893,
+        "mse": 2.2654
+      }
+    }
+  },
+  {
+    "scenario": "Demo1-BuildingSign",
+    "description": "Distant text",
+    "effective_resolution": {
+      "roi_fraction_w": 0.341796875,
+      "roi_fraction_h": 0.1953125,
+      "effective_pixels_global": 3268,
+      "effective_resolution_global": "76x43",
+      "crop_pixels_224": 50176,
+      "crop_pixels_448": 200704,
+      "pixel_gain_224x": 15.353733170134639,
+      "pixel_gain_448x": 61.414932680538556
+    },
+    "quality_metrics": {
+      "global_224": {
+        "psnr": 23.421855370359186,
+        "ssim": 0.8075277279833355,
+        "mse": 295.72961904761905
+      },
+      "crop_224": {
+        "psnr": 41.46567728800174,
+        "ssim": 0.9927777803115777,
+        "mse": 4.639942857142857
+      },
+      "crop_448": {
+        "psnr": 47.05986735681667,
+        "ssim": 0.9978959346266782,
+        "mse": 1.2796571428571428
+      }
+    }
+  },
+  {
+    "scenario": "Demo2-FlowerDetail",
+    "description": "Specific region detail",
+    "effective_resolution": {
+      "roi_fraction_w": 0.24444444444444444,
+      "roi_fraction_h": 0.26666666666666666,
+      "effective_pixels_global": 3186,
+      "effective_resolution_global": "54x59",
+      "crop_pixels_224": 50176,
+      "crop_pixels_448": 200704,
+      "pixel_gain_224x": 15.748901443816697,
+      "pixel_gain_448x": 62.99560577526679
+    },
+    "quality_metrics": {
+      "global_224": {
+        "psnr": 19.134836642770114,
+        "ssim": 0.4161676533187094,
+        "mse": 793.5909318181818
+      },
+      "crop_224": {
+        "psnr": 26.140660774494748,
+        "ssim": 0.8315287810909354,
+        "mse": 158.13000454545454
+      },
+      "crop_448": {
+        "psnr": 32.6720878109682,
+        "ssim": 0.9616206672191944,
+        "mse": 35.14565
+      }
+    }
+  },
+  {
+    "scenario": "Demo2-PersonFace",
+    "description": "Small person detail",
+    "effective_resolution": {
+      "roi_fraction_w": 0.13333333333333333,
+      "roi_fraction_h": 0.2,
+      "effective_pixels_global": 1276,
+      "effective_resolution_global": "29x44",
+      "crop_pixels_224": 50176,
+      "crop_pixels_448": 200704,
+      "pixel_gain_224x": 39.322884012539184,
+      "pixel_gain_448x": 157.29153605015674
+    },
+    "quality_metrics": {
+      "global_224": {
+        "psnr": 13.262585399812155,
+        "ssim": 0.12679164336302104,
+        "mse": 3067.763111111111
+      },
+      "crop_224": {
+        "psnr": 23.30492877249388,
+        "ssim": 0.8680237919140691,
+        "mse": 303.7998
+      },
+      "crop_448": {
+        "psnr": 28.141364970480822,
+        "ssim": 0.9594474643598455,
+        "mse": 99.75711111111112
+      }
+    }
+  },
+  {
+    "scenario": "Demo2-SignLabel",
+    "description": "Small label text",
+    "effective_resolution": {
+      "roi_fraction_w": 0.17777777777777778,
+      "roi_fraction_h": 0.26666666666666666,
+      "effective_pixels_global": 2301,
+      "effective_resolution_global": "39x59",
+      "crop_pixels_224": 50176,
+      "crop_pixels_448": 200704,
+      "pixel_gain_224x": 21.806171229900045,
+      "pixel_gain_448x": 87.22468491960018
+    },
+    "quality_metrics": {
+      "global_224": {
+        "psnr": 18.868113330672536,
+        "ssim": 0.27042213218262035,
+        "mse": 843.85733125
+      },
+      "crop_224": {
+        "psnr": 25.38334518768839,
+        "ssim": 0.7246700809451327,
+        "mse": 188.25470625
+      },
+      "crop_448": {
+        "psnr": 31.831283599476492,
+        "ssim": 0.9427944418357102,
+        "mse": 42.6532375
+      }
+    }
+  }
+]

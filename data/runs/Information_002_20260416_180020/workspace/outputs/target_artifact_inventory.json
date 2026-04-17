@@ -1,0 +1,68 @@
+{
+  "required_artifacts": [
+    {
+      "name": "method_contract.json",
+      "status": "complete",
+      "description": "Methodological commitments and framework definition"
+    },
+    {
+      "name": "dependency_check.json",
+      "status": "complete",
+      "description": "Capability and dependency verification"
+    },
+    {
+      "name": "score_analysis.json",
+      "status": "complete",
+      "description": "Quantitative score statistics and comparisons"
+    },
+    {
+      "name": "evaluator_agreement.json",
+      "status": "complete",
+      "description": "Inter-evaluator agreement metrics (included in score_analysis.json)"
+    }
+  ],
+  "required_figures": [
+    {
+      "name": "score_distribution.png",
+      "status": "complete",
+      "path": "report/images/score_distribution.png",
+      "description": "Distribution of scores across categories"
+    },
+    {
+      "name": "task_performance.png",
+      "status": "complete",
+      "path": "report/images/task_performance.png",
+      "description": "Performance comparison across tasks"
+    },
+    {
+      "name": "evaluator_comparison.png",
+      "status": "complete",
+      "path": "report/images/evaluator_comparison.png",
+      "description": "Evaluator agreement and bias analysis"
+    },
+    {
+      "name": "placeholder_score_heatmap.png",
+      "status": "complete",
+      "path": "report/images/placeholder_heatmap.png",
+      "description": "Heatmap of placeholder scores by task and evaluator"
+    },
+    {
+      "name": "score_breakdown.png",
+      "status": "complete",
+      "path": "report/images/score_breakdown.png",
+      "description": "Stacked bar chart showing score breakdown by category"
+    }
+  ],
+  "comparison_structure": {
+    "primary_axis": "task_type",
+    "secondary_axis": "evaluator",
+    "metrics": ["mean_score", "std_score", "agreement_correlation"]
+  },
+  "verification_summary": {
+    "total_artifacts": 4,
+    "completed_artifacts": 4,
+    "total_figures": 5,
+    "completed_figures": 5,
+    "all_complete": true
+  }
+}

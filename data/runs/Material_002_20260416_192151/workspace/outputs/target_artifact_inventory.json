@@ -1,0 +1,88 @@
+{
+  "primary_quantitative_answers": [
+    {
+      "artifact_id": "QA001",
+      "description": "Water RDF peaks and positions at 330K",
+      "status": "[ ]",
+      "output_path": "outputs/water_rdf_results.json"
+    },
+    {
+      "artifact_id": "QA002",
+      "description": "Adsorption energies for *O and *OH on 6 transition metals",
+      "status": "[ ]",
+      "output_path": "outputs/adsorption_energies.json"
+    },
+    {
+      "artifact_id": "QA003",
+      "description": "Reaction barrier comparison (MACE vs DFT) for CRBH20",
+      "status": "[ ]",
+      "output_path": "outputs/reaction_barriers.json"
+    }
+  ],
+  "required_comparison_tables": [
+    {
+      "artifact_id": "CT001",
+      "description": "Metal lattice constants and adsorption site energies",
+      "status": "[ ]",
+      "output_path": "outputs/metal_adsorption_table.csv"
+    },
+    {
+      "artifact_id": "CT002",
+      "description": "CRBH20 barrier height comparison table",
+      "status": "[ ]",
+      "output_path": "outputs/barrier_comparison_table.csv"
+    }
+  ],
+  "expected_figures": [
+    {
+      "artifact_id": "FIG001",
+      "description": "MPtrj dataset element distribution heatmap",
+      "status": "[ ]",
+      "output_path": "report/images/fig01_element_distribution.png"
+    },
+    {
+      "artifact_id": "FIG002",
+      "description": "Water RDF comparison (g_OO, g_OH, g_HH)",
+      "status": "[ ]",
+      "output_path": "report/images/fig02_water_rdf.png"
+    },
+    {
+      "artifact_id": "FIG003",
+      "description": "Adsorption energy scaling relation (*O vs *OH)",
+      "status": "[ ]",
+      "output_path": "report/images/fig03_scaling_relation.png"
+    },
+    {
+      "artifact_id": "FIG004",
+      "description": "CRBH20 reaction barrier comparison",
+      "status": "[ ]",
+      "output_path": "report/images/fig04_reaction_barriers.png"
+    },
+    {
+      "artifact_id": "FIG005",
+      "description": "MACE architecture schematic",
+      "status": "[ ]",
+      "output_path": "report/images/fig05_architecture.png"
+    },
+    {
+      "artifact_id": "FIG006",
+      "description": "Learning curves with different body orders",
+      "status": "[ ]",
+      "output_path": "report/images/fig06_learning_curves.png"
+    }
+  ],
+  "interpretability_artifacts": [
+    {
+      "artifact_id": "IA001",
+      "description": "Body order (nu) effect on model accuracy",
+      "status": "[ ]",
+      "output_path": "outputs/body_order_analysis.json"
+    },
+    {
+      "artifact_id": "IA002",
+      "description": "Equivariance order (L) effect on learning",
+      "status": "[ ]",
+      "output_path": "outputs/equivariance_analysis.json"
+    }
+  ]
+}

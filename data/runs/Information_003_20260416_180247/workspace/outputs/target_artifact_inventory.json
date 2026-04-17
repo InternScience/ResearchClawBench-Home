@@ -1,0 +1,54 @@
+{
+  "required_artifacts": [
+    {
+      "artifact": "data_overview_statistics",
+      "status": "completed",
+      "location": "outputs/data_overview.json"
+    },
+    {
+      "artifact": "binary_classification_results",
+      "status": "completed",
+      "location": "outputs/binary_metrics.json"
+    },
+    {
+      "artifact": "multiclass_classification_results",
+      "status": "completed",
+      "location": "outputs/multiclass_metrics.json"
+    },
+    {
+      "artifact": "data_overview_plots",
+      "status": "completed",
+      "location": "report/images/binary_class_distribution.png, report/images/multiclass_class_distribution.png"
+    },
+    {
+      "artifact": "main_result_figures",
+      "status": "completed",
+      "location": "report/images/binary_confusion_matrix.png, report/images/binary_roc_curve.png, report/images/multiclass_confusion_matrix.png"
+    },
+    {
+      "artifact": "training_validation_plots",
+      "status": "completed",
+      "location": "report/images/training_curves.png"
+    },
+    {
+      "artifact": "few_shot_evaluation",
+      "status": "not_completed",
+      "reason": "Limited samples and time constraints prevented systematic few-shot evaluation"
+    },
+    {
+      "artifact": "unknown_attack_detection",
+      "status": "not_completed",
+      "reason": "Requires held-out attack types not present in training data"
+    },
+    {
+      "artifact": "disentanglement_quality_analysis",
+      "status": "not_completed",
+      "reason": "Full mutual information-based disentanglement not implemented"
+    },
+    {
+      "artifact": "baseline_comparison",
+      "status": "partial",
+      "location": "report/report.md contains references to SVM and E-GraphSAGE baselines from related work"
+    }
+  ]
+}

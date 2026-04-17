@@ -1,0 +1,92 @@
+{
+  "target_artifacts": [
+    {
+      "id": "A1",
+      "name": "Water RDF Plot",
+      "type": "figure",
+      "path": "report/images/water_rdf.png",
+      "description": "O-O, O-H, H-H radial distribution functions from MACE-MP-0 MD simulation",
+      "status": "satisfied"
+    },
+    {
+      "id": "A2",
+      "name": "Adsorption Energy Scaling Plot",
+      "type": "figure",
+      "path": "report/images/adsorption_scaling.png",
+      "description": "E_OH vs E_O scaling relation across 6 transition metals",
+      "status": "satisfied"
+    },
+    {
+      "id": "A3",
+      "name": "Reaction Barrier Comparison Plot",
+      "type": "figure",
+      "path": "report/images/reaction_barriers.png",
+      "description": "MACE-MP-0 vs DFT reference barriers for 3 CRBH20 reactions",
+      "status": "satisfied"
+    },
+    {
+      "id": "A4",
+      "name": "Adsorption Energy Table",
+      "type": "table/json",
+      "path": "outputs/adsorption_energies.json",
+      "description": "Computed adsorption energies for O and OH on each metal",
+      "status": "satisfied"
+    },
+    {
+      "id": "A5",
+      "name": "Reaction Barrier Table",
+      "type": "table/json",
+      "path": "outputs/reaction_barriers.json",
+      "description": "MACE vs DFT barriers for 3 reactions",
+      "status": "satisfied"
+    },
+    {
+      "id": "A6",
+      "name": "MD Trajectory Data",
+      "type": "data",
+      "path": "outputs/water_md_trajectory.json",
+      "description": "Summary statistics of MD simulation",
+      "status": "satisfied"
+    },
+    {
+      "id": "A7",
+      "name": "Water RDF Data",
+      "type": "data",
+      "path": "outputs/water_rdf_data.json",
+      "description": "Computed RDF data arrays",
+      "status": "satisfied"
+    },
+    {
+      "id": "A8",
+      "name": "Final Report",
+      "type": "report",
+      "path": "report/report.md",
+      "description": "Comprehensive research report",
+      "status": "satisfied"
+    },
+    {
+      "id": "A9",
+      "name": "Summary Overview Figure",
+      "type": "figure",
+      "path": "report/images/summary_overview.png",
+      "description": "6-panel summary of all experiments",
+      "status": "satisfied"
+    },
+    {
+      "id": "A10",
+      "name": "MD Convergence Plot",
+      "type": "figure",
+      "path": "report/images/water_md_convergence.png",
+      "description": "Energy and temperature convergence during MD",
+      "status": "satisfied"
+    },
+    {
+      "id": "A11",
+      "name": "Model Pipeline Diagram",
+      "type": "figure",
+      "path": "report/images/model_pipeline.png",
+      "description": "Schematic of MACE-MP-0 pipeline",
+      "status": "satisfied"
+    }
+  ]
+}

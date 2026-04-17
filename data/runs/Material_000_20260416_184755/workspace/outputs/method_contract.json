@@ -1,0 +1,42 @@
+{
+  "task_name": "AI-Powered Altermagnetic Material Discovery",
+  "objective": "Develop a graph neural network classifier to discover new altermagnetic materials from crystal structure data",
+  "input_data": {
+    "pretrain_data": {
+      "path": "data/pretrain_data.pt",
+      "samples": 5000,
+      "purpose": "Self-supervised pre-training on unlabeled crystal graphs"
+    },
+    "finetune_data": {
+      "path": "data/finetune_data.pt",
+      "samples": 2000,
+      "positive_samples": 99,
+      "negative_samples": 1901,
+      "positive_ratio": 0.0495,
+      "purpose": "Fine-tuning classifier on labeled altermagnet data"
+    },
+    "candidate_data": {
+      "path": "data/candidate_data.pt",
+      "samples": 1000,
+      "true_positives": 43,
+      "true_negatives": 957,
+      "purpose": "Prediction and evaluation of discovered candidates"
+    }
+  },
+  "methodology": {
+    "model_architecture": "Graph Neural Network with GraphConv layers",
+    "pretraining_strategy": "Node feature masking reconstruction",
+    "classification_head": "MLP on graph-level representation",
+    "evaluation_metrics": ["accuracy", "precision", "recall", "f1", "roc_auc"]
+  },
+  "expected_outputs": {
+    "predictions": "Probability scores for each candidate material",
+    "top_candidates": "Materials ranked by altermagnet probability",
+    "performance_metrics": "Classification metrics on test set"
+  },
+  "related_work_insights": {
+    "altermagnet_definition": "Collinear-compensated magnetic phase with crystal-rotation symmetries connecting opposite-spin sublattices",
+    "key_features": "d-wave, g-wave, i-wave spin-splitting symmetry in band structure",
+    "spin_space_groups": "SSG formalism provides systematic classification of magnetic phases beyond conventional magnetic space groups"
+  }
+}

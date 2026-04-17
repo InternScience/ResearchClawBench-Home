@@ -1,0 +1,107 @@
+{
+  "dataset_name": "M-AI-Synth Materials AI Dataset",
+  "description": "Dataset for rapid validation of three core AI application workflows in materials science",
+  "sections": {
+    "property_prediction": {
+      "n_arrays": 4,
+      "features": {
+        "length": 100,
+        "min": 5.0,
+        "max": 5.0,
+        "mean": 5.0,
+        "std": 0.0
+      },
+      "targets": {
+        "length": 117,
+        "min": -2.0,
+        "max": 4.4,
+        "mean": 1.2000000000000004,
+        "std": 1.4922019523732928
+      },
+      "classes": {
+        "length": 20,
+        "unique_values": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "class_counts": {
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 4,
+          "4": 4
+        }
+      },
+      "descriptors": {
+        "length": 97,
+        "min": -1.2345,
+        "max": 0.9876,
+        "mean": 0.08402989690721649,
+        "std": 0.5789185476181239
+      }
+    },
+    "structure_generation": {
+      "n_arrays": 2,
+      "lattice_a": {
+        "length": 101,
+        "min": 5.1234,
+        "max": 5.9012,
+        "mean": 5.520376237623763,
+        "std": 0.2726262952488113
+      },
+      "lattice_b": {
+        "length": 101,
+        "min": 5.1234,
+        "max": 5.9012,
+        "mean": 5.521465346534654,
+        "std": 0.27032915083141945
+      },
+      "correlation_ab": -0.2229737229970093
+    },
+    "autonomous_optimization": {
+      "n_parameters": 6,
+      "parameters": {
+        "temperature": {
+          "type": "range",
+          "min": 200.0,
+          "max": 500.0,
+          "midpoint": 350.0
+        },
+        "pressure": {
+          "type": "range",
+          "min": 10.0,
+          "max": 30.0,
+          "midpoint": 20.0
+        },
+        "concentration": {
+          "type": "single_value",
+          "value": 350.0
+        },
+        "time": {
+          "type": "single_value",
+          "value": 20.0
+        },
+        "ph": {
+          "type": "single_value",
+          "value": 0.1
+        },
+        "stirring_rate": {
+          "type": "single_value",
+          "value": 10.0
+        }
+      }
+    }
+  },
+  "overall_statistics": {
+    "total_data_points": 12,
+    "total_arrays": 12,
+    "workflows_supported": [
+      "property_prediction",
+      "structure_generation",
+      "autonomous_optimization"
+    ]
+  }
+}

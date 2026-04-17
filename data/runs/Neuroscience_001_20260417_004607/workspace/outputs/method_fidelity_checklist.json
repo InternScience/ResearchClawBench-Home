@@ -1,0 +1,41 @@
+{
+  "method_name": "Deep Mechanistic Network (DMN)",
+  "definition": "A neural network whose topology is fixed by the connectome and whose biophysical parameters are learned through task optimization",
+  "key_structural_ingredients": [
+    {
+      "ingredient": "Connectome-constrained topology",
+      "description": "Network wiring follows fib25-fib19_v2.2 connectome exactly (65 cell types, 605 edges)",
+      "status": "verified from checkpoint and connectome file"
+    },
+    {
+      "ingredient": "PPNeuronIGRSynapses dynamics",
+      "description": "Leaky integrator neurons with ReLU activation, parameterized by per-type bias and time constant",
+      "status": "verified from _meta.yaml configuration"
+    },
+    {
+      "ingredient": "Learnable parameters",
+      "description": "Resting potential (per type), time constant (per type), synaptic strength (per type pair), synaptic sign (fixed from literature)",
+      "status": "verified from checkpoint structure: nodes_bias(65), nodes_time_const(65), edges_sign(604), edges_syn_strength(604)"
+    },
+    {
+      "ingredient": "Fixed synapse counts",
+      "description": "Synapse counts from connectome are not learned (requires_grad=false)",
+      "status": "verified from _meta.yaml"
+    },
+    {
+      "ingredient": "Task optimization",
+      "description": "End-to-end training on optic flow estimation (MPI Sintel) with L2 norm loss",
+      "status": "verified from _meta.yaml and validation loss files"
+    },
+    {
+      "ingredient": "Ensemble of 50 models",
+      "description": "50 independently initialized and trained models for robustness analysis",
+      "status": "verified: 50 model directories with checkpoints"
+    }
+  ],
+  "deviations": [
+    "Analysis only - no retraining performed",
+    "Forward simulation not run (Sintel dataset not available in workspace)",
+    "Neuron count estimate (~40,000) slightly below reported 45,669 due to simplified stride calculation"
+  ]
+}

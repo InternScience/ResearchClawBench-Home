@@ -1,0 +1,41 @@
+{
+  "method_name": "MARL-LNS Hybrid",
+  "key_structural_ingredients": {
+    "LNS_framework": {
+      "definition": "Large Neighborhood Search that iteratively selects and replans subsets of agents",
+      "implemented": true,
+      "faithful": true
+    },
+    "collision_based_neighborhood_selection": {
+      "definition": "Select agents based on collision graph using BFS from most-colliding agent",
+      "implemented": true,
+      "faithful": true
+    },
+    "MARL_policy": {
+      "definition": "Decentralized policy using local FOV observations for collision-aware path planning",
+      "implemented": true,
+      "faithful": "partially - uses hand-crafted heuristics instead of trained neural network",
+      "deviation": "Policy uses scoring heuristics (goal progress, collision avoidance, density, anti-loop) instead of learned CNN/LSTM weights"
+    },
+    "adaptive_switching": {
+      "definition": "Transition from MARL to PP based on collision reduction ratio",
+      "implemented": true,
+      "faithful": true
+    },
+    "prioritized_planning": {
+      "definition": "Sequential path planning with constraint propagation",
+      "implemented": true,
+      "faithful": true
+    },
+    "space_time_astar": {
+      "definition": "A* on time-expanded graph with hard and soft constraints",
+      "implemented": true,
+      "faithful": true
+    }
+  },
+  "deviations": [
+    "MARL policy uses hand-crafted heuristics instead of trained neural network",
+    "Agent counts capped for computational feasibility",
+    "Time limit shorter than benchmark standard (5s vs 5min)"
+  ]
+}

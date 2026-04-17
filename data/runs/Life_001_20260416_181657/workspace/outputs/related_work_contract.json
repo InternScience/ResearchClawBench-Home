@@ -1,0 +1,62 @@
+{
+  "papers_reviewed": [
+    {
+      "file": "paper_000.pdf",
+      "title": "Gapped sequence alignment using artificial neural networks: application to the MHC class I system",
+      "authors": "Andreatta & Nielsen",
+      "journal": "Bioinformatics",
+      "year": 2016,
+      "relevance": "MHC binding prediction methodology (NetMHC-4.0), foundational for neoantigen prioritization",
+      "key_findings": [
+        "Gapped sequence alignment improves MHC binding prediction accuracy",
+        "Pan-length neural networks outperform single-length methods",
+        "Deletion patterns inform peptide-MHC binding modes"
+      ]
+    },
+    {
+      "file": "paper_001.pdf",
+      "title": "On TCR binding predictors failing to generalize to unseen peptides",
+      "authors": "Grazioli et al.",
+      "journal": "Frontiers in Immunology",
+      "year": 2022,
+      "relevance": "TCR-peptide binding prediction limitations, important context for response probability models",
+      "key_findings": [
+        "Deep learning TCR predictors fail to generalize to unseen peptides",
+        "Hard split evaluation reveals model limitations",
+        "Robust TCR recognition prediction remains unsolved"
+      ]
+    },
+    {
+      "file": "paper_002.pdf",
+      "title": "Single-Cell Map of Diverse Immune Phenotypes in the Breast Tumor Microenvironment",
+      "authors": "Azizi et al.",
+      "journal": "Cell",
+      "year": 2018,
+      "relevance": "Single-cell immune profiling in tumors, informs tumor heterogeneity modeling",
+      "key_findings": [
+        "Continuous T cell activation/differentiation trajectories in tumors",
+        "Phenotypic expansion specific to tumor microenvironment",
+        "TCR usage shapes T cell phenotypic diversity"
+      ]
+    },
+    {
+      "file": "paper_003.pdf",
+      "title": "CloneSig can jointly infer intra-tumor heterogeneity and mutational signature activity",
+      "authors": "Abécassis et al.",
+      "journal": "Nature Communications",
+      "year": 2021,
+      "relevance": "Intra-tumor heterogeneity analysis, relevant for clonal neoantigen targeting",
+      "key_findings": [
+        "Joint inference of ITH and mutational signatures improves accuracy",
+        "Signature activity can vary between subclones",
+        "Method applicable to whole-exome sequencing data"
+      ]
+    }
+  ],
+  "methodological_implications": {
+    "mhc_prediction": "NetMHC-style gapped alignment provides foundation for peptide-MHC affinity estimation",
+    "tcr_recognition": "Current TCR predictors have generalization limitations; response probabilities should be interpreted cautiously",
+    "tumor_heterogeneity": "Single-cell analyses reveal continuous phenotypic spectra; vaccine must target diverse cell states",
+    "clonal_structure": "Mutational signature analysis can inform truncal vs branch mutation prioritization"
+  }
+}

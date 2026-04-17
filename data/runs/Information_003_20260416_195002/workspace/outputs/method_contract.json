@@ -1,0 +1,18 @@
+{
+  "task": "DIDS-MFL: Disentangled Dynamic Intrusion Detection with Multi-scale Fusion Learning",
+  "named_methods": [
+    "Statistical disentanglement via mutual information optimization",
+    "Representational disentanglement via orthogonality regularization",
+    "Dynamic graph diffusion (Perona-Malik style)",
+    "Multi-scale representation fusion for few-shot learning",
+    "Binary classification (benign vs attack)",
+    "Multi-class classification (specific attack types)",
+    "Unknown attack detection",
+    "Few-shot attack detection"
+  ],
+  "primary_reference": "3D-IDS: Doubly Disentangled Dynamic Intrusion Detection (KDD 2023)",
+  "dataset": "NF-UNSW-NB15-v2",
+  "metrics": ["F1-score", "AUC-ROC", "Precision", "Recall", "Accuracy"],
+  "baselines": ["MLP", "E-GraphSAGE (GNN)", "TGN (temporal GNN)"],
+  "evaluation_scenarios": ["binary", "multi-class", "unknown attack", "few-shot"]
+}

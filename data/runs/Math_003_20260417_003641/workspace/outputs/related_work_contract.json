@@ -1,0 +1,31 @@
+{
+  "paper_000_transformer": {
+    "title": "Attention Is All You Need",
+    "relevance": "Foundation architecture for the neural component",
+    "key_elements": ["self-attention mechanism", "encoder-decoder architecture", "positional encoding"],
+    "impact_on_task": "Transformer is the backbone for the language model that generates proof steps and auxiliary constructions"
+  },
+  "paper_001_gptf": {
+    "title": "GPT-f: Generative Language Modeling for Automated Theorem Proving",
+    "relevance": "Direct predecessor for neural theorem proving",
+    "key_elements": [
+      "decoder-only transformer for proof step generation",
+      "proofstep objective: GOAL -> PROOFSTEP",
+      "iterative value function training",
+      "56.22% on Metamath test set",
+      "pre-training on mathematical data improves performance"
+    ],
+    "impact_on_task": "Proof search methodology, training objective design, and iterative improvement strategy"
+  },
+  "paper_003_alphago": {
+    "title": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+    "relevance": "MCTS + neural networks paradigm",
+    "key_elements": [
+      "policy network for move selection",
+      "value network for position evaluation",
+      "MCTS combining both networks",
+      "self-play reinforcement learning"
+    ],
+    "impact_on_task": "Search algorithm design: MCTS with neural policy and value guidance for proof search"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "framework": "Variable and Operator Splitting (VOS)",
+  "methods": [
+    "Nesterov AG",
+    "ADMM",
+    "Continuous-time ODE"
+  ],
+  "convergence_analysis": "Strong Lyapunov functions",
+  "problem_type": "Lasso",
+  "theoretical_rate_nag": "O(1/k\u00b2)",
+  "theoretical_rate_gd": "O(1/k)"
+}

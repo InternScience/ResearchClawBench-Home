@@ -1,0 +1,46 @@
+{
+  "method_name": "DualVE (Dual Visual Encoder)",
+  "key_structural_ingredients": [
+    {
+      "ingredient": "Separate understanding encoder (SigLIP)",
+      "definition": "Contrastive vision-language encoder pre-trained with sigmoid loss for semantic feature extraction",
+      "implemented": true,
+      "deviation": "None - standard SigLIP-Large architecture"
+    },
+    {
+      "ingredient": "Separate generation encoder (VQ-GAN)",
+      "definition": "Vector-quantized image tokenizer that converts images to discrete tokens from a learned codebook",
+      "implemented": true,
+      "deviation": "None - standard VQ-GAN tokenizer with 16384 codebook"
+    },
+    {
+      "ingredient": "MLP projection for understanding features",
+      "definition": "2-layer MLP with GELU activation mapping visual features to LLM embedding space",
+      "implemented": true,
+      "deviation": "None - follows LLaVA design"
+    },
+    {
+      "ingredient": "Shared autoregressive Transformer backbone",
+      "definition": "Llama-2 style decoder-only Transformer with GQA, RMSNorm, SwiGLU",
+      "implemented": true,
+      "deviation": "Added QK-Norm from Chameleon for mixed-modal stability"
+    },
+    {
+      "ingredient": "Four-stage training pipeline",
+      "definition": "Progressive training: encoder pre-training -> alignment -> joint fine-tuning -> instruction tuning",
+      "implemented": true,
+      "deviation": "Extended from LLaVA's 2-stage to 4-stage for dual-encoder alignment"
+    },
+    {
+      "ingredient": "Task-specific input formatting",
+      "definition": "Special tokens to route inputs through appropriate encoder pathway",
+      "implemented": true,
+      "deviation": "None - standard special token approach"
+    }
+  ],
+  "distinguishing_features_vs_alternatives": {
+    "vs_Chameleon": "Decoupled encoders instead of single VQ tokenizer for all modalities",
+    "vs_LLaVA": "Adds generation capability through VQ-GAN encoder while maintaining understanding",
+    "vs_LlamaGen": "Adds understanding capability through SigLIP encoder while maintaining generation"
+  }
+}

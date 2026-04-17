@@ -1,0 +1,64 @@
+{
+  "required_artifacts": [
+    {
+      "id": "data_overview_1",
+      "description": "Label distribution bar plot (train and test)",
+      "status": "completed",
+      "path": "report/images/fig01_label_distribution.png"
+    },
+    {
+      "id": "data_overview_2", 
+      "description": "Degradation type distribution plot",
+      "status": "completed",
+      "path": "report/images/fig02_degradation_distribution.png"
+    },
+    {
+      "id": "data_overview_3",
+      "description": "Feature correlation heatmap",
+      "status": "completed",
+      "path": "report/images/fig03_feature_correlation.png"
+    },
+    {
+      "id": "data_overview_4",
+      "description": "Feature distribution by label (sample features)",
+      "status": "completed",
+      "path": "report/images/fig04_feature_distributions.png"
+    },
+    {
+      "id": "main_result_1",
+      "description": "Model performance metrics table",
+      "status": "completed",
+      "path": "outputs/model_results.json"
+    },
+    {
+      "id": "main_result_2",
+      "description": "ROC curve with AUC",
+      "status": "completed",
+      "path": "report/images/fig06_roc_curves.png"
+    },
+    {
+      "id": "main_result_3",
+      "description": "Confusion matrix heatmap",
+      "status": "completed",
+      "path": "report/images/fig07_confusion_matrix.png"
+    },
+    {
+      "id": "comparison_1",
+      "description": "Performance by degradation type",
+      "status": "completed",
+      "path": "report/images/fig09_performance_by_degradation.png"
+    },
+    {
+      "id": "validation_1",
+      "description": "Precision-Recall curve",
+      "status": "completed",
+      "path": "report/images/fig08_precision_recall.png"
+    },
+    {
+      "id": "validation_2",
+      "description": "Feature importance ranking",
+      "status": "completed",
+      "path": "report/images/fig10_feature_importance.png"
+    }
+  ]
+}

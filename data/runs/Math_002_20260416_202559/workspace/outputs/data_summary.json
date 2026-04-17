@@ -1,0 +1,138 @@
+{
+  "empty": {
+    "num_maps": 200,
+    "width_range": [
+      25,
+      25
+    ],
+    "height_range": [
+      25,
+      25
+    ],
+    "avg_width": 25.0,
+    "avg_height": 25.0,
+    "avg_obstacle_density": 0.0,
+    "std_obstacle_density": 0.0,
+    "avg_obstacles": 0.0,
+    "std_obstacles": 0.0
+  },
+  "maze": {
+    "num_maps": 400,
+    "width_range": [
+      25,
+      25
+    ],
+    "height_range": [
+      25,
+      25
+    ],
+    "avg_width": 25.0,
+    "avg_height": 25.0,
+    "avg_obstacle_density": 0.4576000000000002,
+    "std_obstacle_density": 1.6653345369377348e-16,
+    "avg_obstacles": 286.0,
+    "std_obstacles": 0.0
+  },
+  "random_large": {
+    "num_maps": 400,
+    "width_range": [
+      50,
+      50
+    ],
+    "height_range": [
+      50,
+      50
+    ],
+    "avg_width": 50.0,
+    "avg_height": 50.0,
+    "avg_obstacle_density": 0.17615099999999997,
+    "std_obstacle_density": 0.008148963062868797,
+    "avg_obstacles": 440.3775,
+    "std_obstacles": 20.37240765717199
+  },
+  "random_medium": {
+    "num_maps": 400,
+    "width_range": [
+      25,
+      25
+    ],
+    "height_range": [
+      25,
+      25
+    ],
+    "avg_width": 25.0,
+    "avg_height": 25.0,
+    "avg_obstacle_density": 0.17339599999999997,
+    "std_obstacle_density": 0.01584353445415511,
+    "avg_obstacles": 108.3725,
+    "std_obstacles": 9.902209033846942
+  },
+  "random_small": {
+    "num_maps": 400,
+    "width_range": [
+      10,
+      10
+    ],
+    "height_range": [
+      10,
+      10
+    ],
+    "avg_width": 10.0,
+    "avg_height": 10.0,
+    "avg_obstacle_density": 0.1787,
+    "std_obstacle_density": 0.04189045237282596,
+    "avg_obstacles": 17.87,
+    "std_obstacles": 4.1890452372825955
+  },
+  "room": {
+    "num_maps": 200,
+    "width_range": [
+      25,
+      25
+    ],
+    "height_range": [
+      25,
+      25
+    ],
+    "avg_width": 25.0,
+    "avg_height": 25.0,
+    "avg_obstacle_density": 0.19519999999999998,
+    "std_obstacle_density": 2.7755575615628914e-17,
+    "avg_obstacles": 122.0,
+    "std_obstacles": 0.0
+  },
+  "warehouse": {
+    "num_maps": 400,
+    "width_range": [
+      25,
+      25
+    ],
+    "height_range": [
+      25,
+      25
+    ],
+    "avg_width": 25.0,
+    "avg_height": 25.0,
+    "avg_obstacle_density": 0.2879999999999999,
+    "std_obstacle_density": 5.551115123125783e-17,
+    "avg_obstacles": 180.0,
+    "std_obstacles": 0.0
+  },
+  "maps_60_10_10_0.175": {
+    "num_maps": 100,
+    "width_range": [
+      10,
+      10
+    ],
+    "height_range": [
+      10,
+      10
+    ],
+    "avg_width": 10.0,
+    "avg_height": 10.0,
+    "avg_obstacle_density": 0.17880000000000001,
+    "std_obstacle_density": 0.04200666613765011,
+    "avg_obstacles": 17.88,
+    "std_obstacles": 4.20066661376501
+  }
+}

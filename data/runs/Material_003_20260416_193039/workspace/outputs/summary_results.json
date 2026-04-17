@@ -1,0 +1,28 @@
+{
+  "data_summary": {
+    "calibration_samples": 295,
+    "vitrimer_samples": 8424,
+    "tg_range_calib": [
+      171.0,
+      600.0
+    ],
+    "tg_range_vitrimer": [
+      307.0142,
+      563.8622
+    ]
+  },
+  "calibration": {
+    "model": "Ridge Regression",
+    "rmse": 61.51825564072855,
+    "mae": 50.080698198553165,
+    "r2": 0.5484256565819946,
+    "estimated_uncertainty": 51.12342091819964,
+    "n_train": 236,
+    "n_val": 59
+  },
+  "generation": {
+    "n_candidates": 100,
+    "mean_predicted_tg": 425.8333659752084,
+    "std_predicted_tg": 39.184069805567376
+  }
+}

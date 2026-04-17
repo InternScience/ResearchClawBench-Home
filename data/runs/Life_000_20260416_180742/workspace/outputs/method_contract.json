@@ -1,0 +1,30 @@
+{
+  "task_description": "De novo design of synthetic hydrogels achieving robust underwater adhesion (>1 MPa) by statistically replicating sequence features of natural adhesive proteins",
+  "input": "Protein sequence features converted to monomer compositions (6 monomer types: Nucleophilic-HEA, Hydrophobic-BA, Acidic-CBEA, Cationic-ATAC, Aromatic-PEA, Amide-AAm)",
+  "output": "Hydrogel adhesive strength (kPa)",
+  "target_threshold": "1000 kPa (1 MPa) underwater adhesion",
+  "methodological_commitments": [
+    "Machine learning-based optimization using RFR and GP models",
+    "Statistical replication of natural adhesive protein sequence features",
+    "Multi-round Bayesian optimization with Expected Improvement (EI) acquisition",
+    "Analysis of monomer composition-performance relationships"
+  ],
+  "required_artifacts": [
+    "Data overview plots showing adhesive strength distributions",
+    "Correlation analysis between monomer compositions and adhesive strength",
+    "ML model performance comparison (R², RMSE, MAE)",
+    "Feature importance analysis",
+    "Optimization trajectory across rounds",
+    "High-performer composition analysis"
+  ],
+  "comparison_structure": [
+    "Performance tier analysis (Low <100 kPa, Medium 100-200 kPa, High >200 kPa)",
+    "ML method comparison (RFR-RFR, RFR-GP, GP-GP, GP-RFR, etc.)",
+    "Composition differences between performance tiers"
+  ],
+  "interpretability_requirements": [
+    "Feature importance from Random Forest and Gradient Boosting",
+    "Correlation matrix showing monomer-strength relationships",
+    "Composition profiles of high-performing formulations"
+  ]
+}

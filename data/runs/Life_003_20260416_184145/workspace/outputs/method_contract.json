@@ -1,0 +1,47 @@
+{
+  "task_name": "Uncalled4 Nanopore Signal Alignment and m6A Detection Analysis",
+  "scientific_objective": "Evaluate Uncalled4 toolkit for nanopore signal alignment enabling sensitive detection of DNA and RNA modifications",
+  "methodological_commitments": [
+    "Performance benchmarking across 4 sequencing chemistries (DNA r9.4, DNA r10.4, RNA001, RNA004)",
+    "Comparison of 4 tools: Uncalled4, f5c, Nanopolish, Tombo",
+    "m6A modification detection using precision-recall and ROC analysis",
+    "Ground truth validation using GLORI/m6A-Atlas labels",
+    "Pore model characterization across different k-mer lengths"
+  ],
+  "primary_quantitative_answers": {
+    "speedup_factor": "Up to 67x faster than Nanopolish",
+    "file_size_reduction": "Up to 23x smaller output files",
+    "m6a_detection_auc_uncalled4": 0.9979,
+    "m6a_detection_auc_nanopolish": 0.9012,
+    "auc_improvement": 0.0967,
+    "average_precision_uncalled4": 0.9929,
+    "average_precision_nanopolish": 0.7784,
+    "ap_improvement": 0.2145
+  },
+  "required_comparison_tables": [
+    "Performance benchmarks by tool and chemistry",
+    "m6A detection metrics comparison",
+    "Pore model statistics summary"
+  ],
+  "expected_figure_families": [
+    "Performance bar charts (time and file size)",
+    "Speedup heatmap",
+    "Precision-recall curves",
+    "ROC curves",
+    "Prediction score distributions",
+    "Pore model current distributions",
+    "Dwell time distributions",
+    "Current std vs mean scatter plots"
+  ],
+  "interpretability_artifacts": [
+    "K-mer pore model statistics",
+    "Current distribution characteristics",
+    "Dwell time patterns across chemistries"
+  ],
+  "subgroup_conditions": [
+    "DNA vs RNA sequencing",
+    "r9.4.1 vs r10.4.1 pore versions",
+    "RNA001 vs RNA004 chemistry",
+    "6-mer vs 9-mer k-mer models"
+  ]
+}

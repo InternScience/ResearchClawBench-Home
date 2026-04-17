@@ -1,0 +1,18 @@
+{
+  "dependency_check": {
+    "geopandas": {"available": true, "version": "checked"},
+    "xarray": {"available": true, "version": "checked"},
+    "scipy": {"available": true, "version": "checked"},
+    "matplotlib": {"available": true, "version": "checked"},
+    "seaborn": {"available": true, "version": "checked"},
+    "numpy": {"available": true, "version": "checked"},
+    "pandas": {"available": true, "version": "checked"}
+  },
+  "method_limitations": [
+    "TC tracks from MIT model (single GCM downscaling, MPI-ESM1-2-HR) - no multi-model ensemble",
+    "Mangrove data is 10% sample - spatial resolution limited",
+    "No future TC projections available in data - only historical baseline used",
+    "SLR rates are regional (not local) - local subsidence/uplift not captured",
+    "Equal weighting of TC and SLR in composite index is a simplifying assumption"
+  ]
+}

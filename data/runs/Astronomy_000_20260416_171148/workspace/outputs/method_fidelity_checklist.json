@@ -1,0 +1,46 @@
+{
+  "method": "Black Hole Superradiance Bayesian Constraint Framework",
+  "definition": "Use the physics of BH superradiance to define exclusion regions in (M, a*) space for each boson mass, then marginalize over BH posterior distributions to derive probabilistic constraints",
+  "key_structural_ingredients": [
+    {
+      "ingredient": "Gravitational coupling α = GMμ/(ℏc)",
+      "status": "implemented_exactly",
+      "notes": "Direct computation from BH mass and boson mass"
+    },
+    {
+      "ingredient": "Critical spin curve a*_crit(α, l, m) = 4mα/(m² + 4α²)",
+      "status": "implemented_exactly",
+      "notes": "Derived from superradiance condition ω = mω_+"
+    },
+    {
+      "ingredient": "Superradiance rate Γ_{lmn} from non-relativistic formula",
+      "status": "implemented_faithfully",
+      "notes": "Using Eq. 18 of Arvanitaki et al. 2011; valid for α/l << 1"
+    },
+    {
+      "ingredient": "Instability timescale comparison with BH age",
+      "status": "implemented",
+      "notes": "τ_SR < τ_BH required for exclusion"
+    },
+    {
+      "ingredient": "Bayesian marginalization over posterior samples",
+      "status": "implemented",
+      "notes": "Monte Carlo integration: P(excluded|μ) = <I(excluded)>_posterior"
+    },
+    {
+      "ingredient": "Bosenova criterion for self-interaction constraints",
+      "status": "implemented_approximately",
+      "notes": "Using simplified version of Eq. 48-49 of Arvanitaki et al. 2011"
+    },
+    {
+      "ingredient": "Multiple l=m modes (l=1,2)",
+      "status": "implemented",
+      "notes": "Both l=1 and l=2 modes included in exclusion"
+    }
+  ],
+  "deviations": [
+    "Non-relativistic approximation used throughout (exact numerical solutions not computed)",
+    "BH age estimates are order-of-magnitude (not from detailed stellar evolution models)",
+    "Self-interaction constraints use simplified energy balance, not full nonlinear evolution"
+  ]
+}

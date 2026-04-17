@@ -1,0 +1,38 @@
+{
+  "related_work_papers": [
+    {
+      "id": "paper_000",
+      "title": "Quantum supremacy using a programmable superconducting processor",
+      "authors": "Arute et al.",
+      "venue": "Nature 574 (2019)",
+      "relevance": "Defines XEB fidelity formula, establishes RCS quantum supremacy framework"
+    },
+    {
+      "id": "paper_001",
+      "title": "Characterizing quantum supremacy in near-term devices",
+      "authors": "Boixo et al.",
+      "venue": "Nature Physics 14 (2018)",
+      "relevance": "Theoretical foundation for XEB, Porter-Thomas distribution analysis"
+    },
+    {
+      "id": "paper_002",
+      "title": "On the complexity and verification of quantum random circuit sampling",
+      "authors": "Bouland et al.",
+      "venue": "Nature Physics 15 (2019)",
+      "relevance": "Complexity-theoretic foundations for RCS verification"
+    },
+    {
+      "id": "paper_003",
+      "title": "Measuring the capabilities of quantum computers",
+      "authors": "Proctor et al.",
+      "venue": "Nature Physics 18 (2022)",
+      "relevance": "Benchmarking methodology, volumetric benchmarks"
+    }
+  ],
+  "key_extractions": {
+    "XEB_formula": "F_XEB = 2^N * mean(P(x_i)) - 1",
+    "expected_distribution": "Porter-Thomas (exponential) for ideal random circuits",
+    "error_model": "Exponential fidelity decay F = A*exp(-alpha*d)",
+    "classical_threshold": "F_XEB = 0 corresponds to uniform sampling (no quantum advantage)"
+  }
+}

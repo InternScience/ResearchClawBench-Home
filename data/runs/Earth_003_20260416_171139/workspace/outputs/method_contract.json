@@ -1,0 +1,42 @@
+{
+  "task_summary": "Develop a cascade machine learning forecasting system using three specialized U-Transformer models for 15-day global weather forecasts",
+  "input_specification": {
+    "source": "ERA5 reanalysis data at 0.25 degree resolution",
+    "upper_air_variables": ["geopotential", "temperature", "u-wind", "v-wind", "relative humidity"],
+    "pressure_levels": 13,
+    "surface_variables": ["2m_temperature", "10m_u_wind", "10m_v_wind", "mean_sea_level_pressure", "total_precipitation"],
+    "temporal_input": "Two consecutive 6-hour time steps",
+    "input_shape": "(2, 70, 721, 1440) - but actual data is (2, 70, 181, 360) at 1 degree resolution"
+  },
+  "output_specification": {
+    "forecast_duration": "15 days",
+    "temporal_resolution": "6 hours",
+    "total_forecast_steps": 60
+  },
+  "scientific_goal": "Mitigate forecast error accumulation and extend skillful weather prediction to 15 days, achieving performance comparable to ECMWF ensemble mean",
+  "methodology_requirements": {
+    "architecture": "Cascade of three specialized U-Transformer models",
+    "model_1": "Short-range forecast model (0-3 days)",
+    "model_2": "Medium-range forecast model (3-7 days)",
+    "model_3": "Extended-range forecast model (7-15 days)",
+    "key_challenge": "Error accumulation mitigation in autoregressive forecasting"
+  },
+  "available_data": {
+    "input_file": "data/20231012-06_input_netcdf.nc",
+    "input_shape_actual": "(time=2, level=70, lat=181, lon=360)",
+    "forecast_file": "data/006.nc",
+    "forecast_description": "FuXi output for 6-hour forecast",
+    "forecast_shape_actual": "(time=1, step=1, level=70, lat=181, lon=360)"
+  },
+  "evaluation_metrics": [
+    "Root Mean Square Error (RMSE)",
+    "Anomaly Correlation Coefficient (ACC)",
+    "Skill score relative to climatology"
+  ],
+  "required_artifacts": [
+    "Data overview visualizations",
+    "Forecast quality analysis",
+    "Comparison with reference (FuXi/ECMWF)",
+    "Error growth analysis over forecast horizon"
+  ]
+}
