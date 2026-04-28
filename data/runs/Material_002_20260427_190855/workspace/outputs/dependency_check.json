@@ -1,0 +1,13 @@
+{
+  "torch": "2.3.0+cpu (no CUDA available)",
+  "ase": "3.28.0",
+  "mace": "0.3.15 (mace-torch)",
+  "mace_model_file": "models/MACE-MP-0b3-medium.model (79.5 MB, downloaded from official ACEsuit/mace-mp release mace_mp_0b3)",
+  "device": "cpu",
+  "dtype": "float32 (model native float64; converted to float32 for speed)",
+  "limits": "CPU-only host shared with another high-CPU workspace process; ~3 s per MACE force evaluation for the 96-atom water box; 2000-step MD reduced to 400 steps with explicit note in the report.",
+  "optional": {
+    "cuequivariance": "absent (acceleration disabled, not required)",
+    "scipy": "installed for random rotations during water-box construction"
+  }
+}

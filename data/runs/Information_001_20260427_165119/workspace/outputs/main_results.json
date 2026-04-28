@@ -1,0 +1,17 @@
+{
+  "accuracy": {
+    "no_crop": 0.5,
+    "center_crop": 0.3333333333333333,
+    "random_crop": 0.3333333333333333,
+    "uniform_tile": 0.5,
+    "vicrop_global_only": 0.5,
+    "vicrop_crop_only": 0.3333333333333333,
+    "vicrop_ensemble": 0.3333333333333333
+  },
+  "mean_p_correct_for_correct_option": {
+    "vicrop_global_only": 0.41272025906558457,
+    "vicrop_crop_only": 0.30065790086518973,
+    "vicrop_ensemble": 0.356689077646782
+  },
+  "n_tasks": 6
+}

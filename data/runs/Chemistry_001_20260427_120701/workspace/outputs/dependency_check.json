@@ -1,0 +1,20 @@
+{
+  "python": "3.x",
+  "available_packages": {
+    "numpy": "yes",
+    "scipy": "yes",
+    "matplotlib": "yes",
+    "seaborn": "yes",
+    "biopython": "installed",
+    "rdkit": "installed",
+    "torch": "installed (CPU)",
+    "pdfplumber": "installed"
+  },
+  "missing_for_full_AF3": [
+    "AlphaFold 3 source / weights (not publicly distributable)",
+    "MSA databases (UniClust30, BFD, MGnify, etc.)",
+    "GPU compute for full-scale Pairformer + diffusion training",
+    "Training set of PDB structures with cutoff before 2L3R"
+  ],
+  "fallback": "Implement and run a small CPU-scale, single-complex AF3-style diffusion module on the FKBP12/FK506 sample to demonstrate the framework end-to-end, with the full evaluation pipeline (Kabsch RMSD + Hungarian-matched ligand RMSD)."
+}

@@ -1,0 +1,6 @@
+{
+  "python": "system python3",
+  "installed": ["xarray","netcdf4","geopandas","shapely","pyproj","rtree","fiona","matplotlib","seaborn","pandas","numpy","scipy","scikit-learn","cartopy","pymupdf"],
+  "missing": [],
+  "notes": "All needed scientific libraries are available. Cartopy may require Natural Earth shapefiles; use simple equirectangular plotting if download fails."
+}

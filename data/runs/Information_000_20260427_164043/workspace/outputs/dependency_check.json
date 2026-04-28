@@ -1,0 +1,9 @@
+{
+  "python": "3.x available",
+  "torch": "2.11.0+cu130",
+  "cuda": false,
+  "compute": "CPU only — large-scale pretraining is infeasible. Implement a small-scale, CPU-friendly prototype with toy training and stay within minutes per run.",
+  "available_packages": ["torch", "torchvision", "numpy", "PIL", "matplotlib", "scikit-learn", "scipy", "pymupdf"],
+  "missing_or_skipped": ["transformers (not used – we hand-build a tiny GPT trunk)", "diffusers", "huggingface large pretrained checkpoints (avoid: would not fit time budget)"],
+  "fallback_strategy": "Use small randomly-initialised modules trained on a synthetic mini-corpus and the two supplied images. Validate the *architectural* claim of decoupling rather than absolute SOTA scores. All comparisons are made within this controlled prototype."
+}

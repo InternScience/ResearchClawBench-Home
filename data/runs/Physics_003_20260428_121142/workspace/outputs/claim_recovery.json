@@ -1,0 +1,55 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Replica bands of the Dirac cone appear in the pump-on spectrum at energies \u00b1\u210f\u03c9 relative to the equilibrium Dirac point.",
+      "evidence": [
+        "fig01_data_overview.png shows two extra cones in the difference spectrum centered at (kx\u22480, E\u2248\u00b1\u210f\u03c9).",
+        "EDC fit at kx\u22480 gives \u03bc+=+0.238 eV and \u03bc-=-0.238 eV; \u0394E = 0.476 eV vs 2\u210f\u03c9 = 0.496 eV.",
+        "Replica-vertex linear fits give E_+=+0.239 eV (residual -8.7 meV vs +\u210f\u03c9) and E_-=-0.234 eV (residual +13.8 meV vs \u2212\u210f\u03c9)."
+      ],
+      "verdict": "verified"
+    },
+    {
+      "id": "C2",
+      "claim": "Replica branches are linearly dispersing copies of the Dirac cone (same v_F).",
+      "evidence": [
+        "Equilibrium \u210fv_F = 5.78 eV\u00b7\u00c5 \u2192 v_F = 8.78e+05 m/s (\u2248 literature graphene 1.0e6 m/s).",
+        "Replica n=+1 \u210fv_F (wing fit) = 4.42 eV\u00b7\u00c5; n=\u22121 \u210fv_F = 4.20 eV\u00b7\u00c5.",
+        "fig03_dispersion_fit.png shows the replica wings co-aligning with the equilibrium cone shifted by \u00b1\u210f\u03c9."
+      ],
+      "verdict": "verified (replica slope softer than equilibrium because of MDC-peak smearing in the difference image)"
+    },
+    {
+      "id": "C3",
+      "claim": "Replica intensity is transient: present only when pump and probe overlap in time.",
+      "evidence": [
+        "Modeled cross-correlation FWHM = 269 fs (\u03c3_pump = 106 fs, \u03c3_probe = 42 fs).",
+        "Predicted replica weight at t = \u00b10.5 ps drops to <0.01 % of the t=0 amplitude (fig04_time_dynamics.png).",
+        "HDF5 sample tags only the t=0 slice with non-zero replica weight, consistent with the model."
+      ],
+      "verdict": "consistent with model; raw data delivered only at t=0"
+    },
+    {
+      "id": "C4",
+      "claim": "Polarization-angle dependence reveals FB\u2194Volkov interference: I(\u03b8_p) is dominated by a cos(4\u03b8_p) component (90\u00b0 period), not by cos\u00b2(\u03b8_p) (180\u00b0 period).",
+      "evidence": [
+        "Tabulated I(\u03b8_p) \u2014 AIC: M0=-73.8, M2=-70.1, M4=-139.2.  \u0394AIC(M4 vs M2) = -69.0.",
+        "Box-integrated \u0394I(\u03b8_p) \u2014 AIC: M0=-23.2, M2=-19.5, M4=-115.4.  \u0394AIC(M4 vs M2) = -95.9.",
+        "CSV cos(4\u03b8) amplitude / mean = 1.20 % ; integrated cos(4\u03b8) modulation depth = 22.3 %.",
+        "Pure Volkov/LAPE: I \u221d cos\u00b2(\u03b8) (180\u00b0). Pure Floquet-Bloch: \u2248 isotropic. Coherent FB+Volkov interference produces a 4-fold (90\u00b0) angular pattern, as observed."
+      ],
+      "verdict": "verified \u2014 cos(4\u03b8) dominates, indicating coherent FB\u2194Volkov scattering channel"
+    },
+    {
+      "id": "C5",
+      "claim": "Photon-dressed final-state (Volkov) interpretation is consistent with the data and the 5 \u03bcm photon energy \u210f\u03c9 = 0.248 eV.",
+      "evidence": [
+        "EDC peak separation (0.476 eV) matches 2\u210f\u03c9 (0.496 eV) to within 4 %.",
+        "Replicas are pinned to integer multiples of \u210f\u03c9 regardless of \u03b8_p, consistent with one-photon Floquet sidebands.",
+        "No new replicas appear at \u210f\u03c9/2 or 3\u210f\u03c9/2, ruling out parametric processes."
+      ],
+      "verdict": "verified"
+    }
+  ]
+}

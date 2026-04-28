@@ -1,0 +1,12 @@
+{
+  "haddock3_binary": "not available",
+  "cns": "not available",
+  "python_libs_present": ["numpy", "pandas", "matplotlib", "scipy", "biopython?"],
+  "fallback_strategy": "Implement HADDOCK-style AIR-driven rigid-body sampling and water-stage scoring (E_vdw + 0.2*E_elec + 0.1*E_AIR + 1.0*E_desolv) in pure Python. Validate against SKEMPI 2.0 experimental ddG by per-residue interface energy decomposition.",
+  "known_limitations": [
+    "No CHARMM/OPLSx all-atom forcefield; LJ surrogate with simplified parameters.",
+    "No explicit water refinement (it1 + water stage replaced by single AIR-driven rigid-body energy minimization).",
+    "Clustering uses ligand-RMSD with single-linkage rather than HADDOCK FCC.",
+    "Solvation term approximated by Fauchere-Pliska atom-based desolvation surrogate."
+  ]
+}

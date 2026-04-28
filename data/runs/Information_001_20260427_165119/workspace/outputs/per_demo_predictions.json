@@ -1,0 +1,398 @@
+[
+  {
+    "task_idx": 0,
+    "image": "demo1.png",
+    "question": "What is the first letter of the silver car's licence plate?",
+    "short_question": "Plate first letter",
+    "gold_option": "R",
+    "gold_idx": 0,
+    "short_options": [
+      "R",
+      "T",
+      "A",
+      "B"
+    ],
+    "image_size": [
+      1024,
+      768
+    ],
+    "bbox": [
+      387,
+      235,
+      783,
+      533
+    ],
+    "sims_global": [
+      0.16634812951087952,
+      0.16182230412960052,
+      0.1626352071762085,
+      0.16755631566047668
+    ],
+    "sims_crop": [
+      0.19402480125427246,
+      0.20551377534866333,
+      0.1919550895690918,
+      0.20745313167572021
+    ],
+    "p_global": [
+      0.2894987463951111,
+      0.18411630392074585,
+      0.19970852136611938,
+      0.3266764283180237
+    ],
+    "p_crop": [
+      0.11366697400808334,
+      0.35858649015426636,
+      0.09241604804992676,
+      0.43533045053482056
+    ],
+    "p_ens": [
+      0.2015828639268875,
+      0.2713513970375061,
+      0.14606228470802307,
+      0.3810034394264221
+    ],
+    "pred_global_idx": 3,
+    "pred_crop_idx": 3,
+    "pred_vicrop_idx": 3,
+    "baselines": {
+      "nocrop_pred": 3,
+      "center_pred": 3,
+      "random_pred": 1,
+      "tile_pred": 1
+    },
+    "p_correct_vicrop": 0.2015828639268875,
+    "p_correct_global": 0.2894987463951111,
+    "p_correct_crop": 0.11366697400808334
+  },
+  {
+    "task_idx": 1,
+    "image": "demo1.png",
+    "question": "Are the police officers wearing helmets?",
+    "short_question": "Police helmet colour",
+    "gold_option": "blue",
+    "gold_idx": 0,
+    "short_options": [
+      "blue",
+      "red",
+      "no helmet",
+      "yellow"
+    ],
+    "image_size": [
+      1024,
+      768
+    ],
+    "bbox": [
+      95,
+      181,
+      637,
+      642
+    ],
+    "sims_global": [
+      0.13817250728607178,
+      0.13390332460403442,
+      0.18313005566596985,
+      0.20088373124599457
+    ],
+    "sims_crop": [
+      0.21791096031665802,
+      0.2035481333732605,
+      0.2393980473279953,
+      0.2518566846847534
+    ],
+    "p_global": [
+      0.0016119700158014894,
+      0.001051838044077158,
+      0.14449013769626617,
+      0.8528460264205933
+    ],
+    "p_crop": [
+      0.02524389885365963,
+      0.006003263406455517,
+      0.21643593907356262,
+      0.7523168921470642
+    ],
+    "p_ens": [
+      0.013427934609353542,
+      0.0035275507252663374,
+      0.180463045835495,
+      0.8025814294815063
+    ],
+    "pred_global_idx": 3,
+    "pred_crop_idx": 3,
+    "pred_vicrop_idx": 3,
+    "baselines": {
+      "nocrop_pred": 3,
+      "center_pred": 3,
+      "random_pred": 3,
+      "tile_pred": 3
+    },
+    "p_correct_vicrop": 0.013427934609353542,
+    "p_correct_global": 0.0016119700158014894,
+    "p_correct_crop": 0.02524389885365963
+  },
+  {
+    "task_idx": 2,
+    "image": "demo1.png",
+    "question": "What sign is on the building above the shop?",
+    "short_question": "Building shop sign",
+    "gold_option": "DAVIVIENDA",
+    "gold_idx": 0,
+    "short_options": [
+      "DAVIVIENDA",
+      "STARBUCKS",
+      "MCDONALDS",
+      "WALMART"
+    ],
+    "image_size": [
+      1024,
+      768
+    ],
+    "bbox": [
+      0,
+      126,
+      637,
+      533
+    ],
+    "sims_global": [
+      0.11843845248222351,
+      0.007405035197734833,
+      0.04617878794670105,
+      0.027584876865148544
+    ],
+    "sims_crop": [
+      0.13352984189987183,
+      0.02496374025940895,
+      0.057212118059396744,
+      0.04105965793132782
+    ],
+    "p_global": [
+      0.9991449117660522,
+      1.504902229498839e-05,
+      0.0007268271292559803,
+      0.00011321599595248699
+    ],
+    "p_crop": [
+      0.9993997812271118,
+      1.9265189621364698e-05,
+      0.00048450977192260325,
+      9.634075104258955e-05
+    ],
+    "p_ens": [
+      0.999272346496582,
+      1.7157106412923895e-05,
+      0.000605668465141207,
+      0.00010477837349753827
+    ],
+    "pred_global_idx": 0,
+    "pred_crop_idx": 0,
+    "pred_vicrop_idx": 0,
+    "baselines": {
+      "nocrop_pred": 0,
+      "center_pred": 0,
+      "random_pred": 0,
+      "tile_pred": 0
+    },
+    "p_correct_vicrop": 0.999272346496582,
+    "p_correct_global": 0.9991449117660522,
+    "p_correct_crop": 0.9993997812271118
+  },
+  {
+    "task_idx": 3,
+    "image": "demo2.png",
+    "question": "What colour are the tulips in the bottom-right corner of the greenhouse?",
+    "short_question": "Bottom-right tulip colour",
+    "gold_option": "yellow",
+    "gold_idx": 0,
+    "short_options": [
+      "yellow",
+      "red",
+      "pink",
+      "purple"
+    ],
+    "image_size": [
+      2250,
+      1500
+    ],
+    "bbox": [
+      1655,
+      32,
+      2250,
+      718
+    ],
+    "sims_global": [
+      0.16541293263435364,
+      0.2034030258655548,
+      0.19606557488441467,
+      0.16761481761932373
+    ],
+    "sims_crop": [
+      0.12579955160617828,
+      0.12374803423881531,
+      0.16216766834259033,
+      0.11808278411626816
+    ],
+    "p_global": [
+      0.014632000587880611,
+      0.6534201502799988,
+      0.3137117922306061,
+      0.018236028030514717
+    ],
+    "p_crop": [
+      0.02484637126326561,
+      0.020237963646650314,
+      0.9434307813644409,
+      0.011484929360449314
+    ],
+    "p_ens": [
+      0.019739186391234398,
+      0.3368290662765503,
+      0.6285712718963623,
+      0.014860479161143303
+    ],
+    "pred_global_idx": 1,
+    "pred_crop_idx": 2,
+    "pred_vicrop_idx": 2,
+    "baselines": {
+      "nocrop_pred": 1,
+      "center_pred": 1,
+      "random_pred": 1,
+      "tile_pred": 1
+    },
+    "p_correct_vicrop": 0.019739186391234398,
+    "p_correct_global": 0.014632000587880611,
+    "p_correct_crop": 0.02484637126326561
+  },
+  {
+    "task_idx": 4,
+    "image": "demo2.png",
+    "question": "What colour are the tulips on the far left edge of the central display?",
+    "short_question": "Far-left tulip colour",
+    "gold_option": "magenta",
+    "gold_idx": 0,
+    "short_options": [
+      "magenta",
+      "red",
+      "white",
+      "orange"
+    ],
+    "image_size": [
+      2250,
+      1500
+    ],
+    "bbox": [
+      1494,
+      32,
+      2250,
+      718
+    ],
+    "sims_global": [
+      0.22124812006950378,
+      0.21796657145023346,
+      0.17333361506462097,
+      0.18887583911418915
+    ],
+    "sims_crop": [
+      0.20863573253154755,
+      0.19400565326213837,
+      0.1973050832748413,
+      0.16450512409210205
+    ],
+    "p_global": [
+      0.5656672120094299,
+      0.40742233395576477,
+      0.00469526881352067,
+      0.0222152192145586
+    ],
+    "p_crop": [
+      0.6386911869049072,
+      0.1478819102048874,
+      0.2056872546672821,
+      0.007739677093923092
+    ],
+    "p_ens": [
+      0.6021791696548462,
+      0.2776521146297455,
+      0.10519126057624817,
+      0.01497744768857956
+    ],
+    "pred_global_idx": 0,
+    "pred_crop_idx": 0,
+    "pred_vicrop_idx": 0,
+    "baselines": {
+      "nocrop_pred": 0,
+      "center_pred": 1,
+      "random_pred": 1,
+      "tile_pred": 0
+    },
+    "p_correct_vicrop": 0.6021791696548462,
+    "p_correct_global": 0.5656672120094299,
+    "p_correct_crop": 0.6386911869049072
+  },
+  {
+    "task_idx": 5,
+    "image": "demo2.png",
+    "question": "What colour are the tulips at the very front of the central display?",
+    "short_question": "Front-row tulip colour",
+    "gold_option": "red",
+    "gold_idx": 0,
+    "short_options": [
+      "red",
+      "yellow",
+      "white",
+      "pink"
+    ],
+    "image_size": [
+      2250,
+      1500
+    ],
+    "bbox": [
+      1816,
+      32,
+      2250,
+      718
+    ],
+    "sims_global": [
+      0.21796657145023346,
+      0.18050122261047363,
+      0.17333361506462097,
+      0.21311624348163605
+    ],
+    "sims_crop": [
+      0.11740820854902267,
+      0.112887904047966,
+      0.14307813346385956,
+      0.17875759303569794
+    ],
+    "p_global": [
+      0.6057667136192322,
+      0.014295725151896477,
+      0.006981053855270147,
+      0.3729565441608429
+    ],
+    "p_crop": [
+      0.0020991929341107607,
+      0.0013357900315895677,
+      0.027345331385731697,
+      0.9692196846008301
+    ],
+    "p_ens": [
+      0.30393296480178833,
+      0.007815757766366005,
+      0.017163192853331566,
+      0.6710880994796753
+    ],
+    "pred_global_idx": 0,
+    "pred_crop_idx": 3,
+    "pred_vicrop_idx": 3,
+    "baselines": {
+      "nocrop_pred": 0,
+      "center_pred": 0,
+      "random_pred": 0,
+      "tile_pred": 0
+    },
+    "p_correct_vicrop": 0.30393296480178833,
+    "p_correct_global": 0.6057667136192322,
+    "p_correct_crop": 0.0020991929341107607
+  }
+]

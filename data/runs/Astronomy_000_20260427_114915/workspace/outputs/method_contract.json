@@ -1,0 +1,30 @@
+{
+  "task": "Constrain ultralight boson mass and self-interaction coupling from BH posterior samples via Bayesian superradiance framework",
+  "named_methods": [
+    "Black hole superradiance (Penrose process) for massive bosons",
+    "Detweiler analytic Gamma_SR for alpha << 1 in l=m=1 mode",
+    "Higher-l (n=2,3) inclusion for completeness",
+    "Bosenova self-interaction limit (Arvanitaki & Dubovsky 2010)",
+    "Bayesian posterior-marginalized exclusion probability"
+  ],
+  "primary_inputs": {
+    "IRAS 09149-6206": "data/IRAS_09149-6206_samples.dat (M_sol, a*) - GRAVITY 2020 + Walton 2020",
+    "M33 X-7": "data/M33_X-7_samples.dat (M_sol, a*) - Liu et al. 2008"
+  },
+  "primary_outputs": {
+    "mu_excluded_intervals": "Upper/lower bounds on excluded ULB mass intervals at 68% and 95% credibility",
+    "f_a_lower_bound": "Lower bound on the decay constant f_a (where Bosenova kills SR)",
+    "exclusion_contours": "P_excl(mu) and 2D contour in (mu, f_a) plane"
+  },
+  "fidelity_axes": [
+    "Use full posterior, not just point estimate",
+    "Cover both stellar and supermassive regimes",
+    "Report both per-source and combined constraints",
+    "Apply the SR condition omega < m Omega_H, AND require tau_SR < tau_BH",
+    "Include Bosenova for the f_a constraint"
+  ],
+  "limitations": [
+    "Detweiler small-alpha expansion is approximate; use it as standard in the literature for alpha<=0.5",
+    "BH age tau_BH is not fully observationally tied; use canonical Salpeter time for SMBH and stellar evolution age range for M33 X-7"
+  ]
+}

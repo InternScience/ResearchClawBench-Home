@@ -1,0 +1,16 @@
+{
+  "claims": [
+    {"id": "C1", "text": "All 4 pore models are pre-normalized (mean ~0, std ~1).", "evidence": "outputs/pore_model_summary.csv", "verified": true},
+    {"id": "C2", "text": "Central base drives k-mer current in every chemistry.", "evidence": "images/base_position_effect.png, images/position_base_sensitivity.png", "verified": true},
+    {"id": "C3", "text": "RNA001 5-mer ~ central 5-mer of RNA004 9-mer (Pearson r=0.984, n=1024).", "evidence": "outputs/kmer_chemistry_overlap.txt, images/rna001_vs_rna004_kmer_agreement.png", "verified": true},
+    {"id": "C4", "text": "Uncalled4 fastest on every supported chemistry.", "evidence": "outputs/performance_time_min.csv", "verified": true},
+    {"id": "C5", "text": "Uncalled4 ~67x faster than Nanopolish on DNA r9.4 (39.6 vs 2654 min).", "evidence": "outputs/performance_speedups.csv", "verified": true},
+    {"id": "C6", "text": "Uncalled4 ~29x faster than f5c on DNA r10.4 (54.4 vs 1573.5 min).", "evidence": "outputs/performance_speedups.csv", "verified": true},
+    {"id": "C7", "text": "Uncalled4 produces smallest output file in 6/8 supported cells; >=20x smaller than f5c/Nanopolish.", "evidence": "outputs/performance_filesize_mb.csv, outputs/performance_speedups.csv", "verified": true},
+    {"id": "C8", "text": "Nanopolish/Tombo do not support DNA r10.4.1 / RNA004.", "evidence": "performance_summary.csv NaN cells", "verified": true},
+    {"id": "C9", "text": "m6Anet on Uncalled4 alignments: AUROC=0.998, AUPRC=0.993.", "evidence": "outputs/m6a_metrics.json", "verified": true},
+    {"id": "C10", "text": "m6Anet on Nanopolish alignments: AUROC=0.901, AUPRC=0.778.", "evidence": "outputs/m6a_metrics.json", "verified": true},
+    {"id": "C11", "text": "Uncalled4-m6Anet best F1 = 0.964 vs Nanopolish-m6Anet best F1 = 0.698.", "evidence": "outputs/m6a_metrics.json", "verified": true},
+    {"id": "C12", "text": "Uncalled4-m6Anet probabilities better separated and better calibrated than Nanopolish-m6Anet.", "evidence": "images/m6a_score_distribution.png, images/m6a_calibration.png", "verified": true}
+  ]
+}

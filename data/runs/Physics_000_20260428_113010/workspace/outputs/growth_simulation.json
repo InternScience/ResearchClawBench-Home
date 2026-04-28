@@ -1,0 +1,41 @@
+{
+  "final_state": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "n_steps": 1000,
+  "path_stats_simulated": {
+    "Conservative path": 535,
+    "Mismatch-driven path": 211,
+    "Random path": 83,
+    "Reverse step": 71
+  },
+  "path_stats_dataset": {
+    "Conservative path": 325,
+    "Mismatch-driven path": 125,
+    "Random path": 50,
+    "Reverse step": 100
+  }
+}

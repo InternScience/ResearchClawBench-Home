@@ -1,0 +1,12 @@
+{
+  "claims": [
+    {"id": "C1", "claim": "AIRs derived from 1BRS active interface include 22 barnase + 19 barstar residues; passive shells of 49 + 30 residues.", "evidence": "outputs/airs.json"},
+    {"id": "C2", "claim": "AIR-driven rigid-body sampling recovers near-native pose: top1 has L-RMSD 2.70 Å, i-RMSD 2.66 Å (CAPRI medium quality, < 4 Å acceptable cutoff).", "evidence": "outputs/poses.csv (top row), outputs/top1_pose.npz, report/images/fig3_score_funnel.png"},
+    {"id": "C3", "claim": "HADDOCK water-stage score (1.0·E_vdw + 0.2·E_elec + 0.1·E_AIR + 1.0·E_desolv) used for ranking.", "evidence": "code/02_dock.py, outputs/poses.csv columns Evdw/Eelec/Eair/Edes/score"},
+    {"id": "C4", "claim": "Single-linkage clustering at 7.5 Å L-RMSD yields 38 clusters from top 60 poses; cluster 1 best score 10.78 with L-RMSD 2.70 Å.", "evidence": "outputs/clusters.csv"},
+    {"id": "C5", "claim": "Per-residue interface descriptors derived from the predicted top1 pose correlate with SKEMPI ΔΔG: n_close_partner Spearman ρ=+0.50 (p=0.03) per-residue and ρ=+0.54 (p<0.001) per-mutation; E_elec ρ=−0.58 (p<0.001) per-mutation.", "evidence": "outputs/validation_stats.json, report/images/fig5_skempi_validation.png"},
+    {"id": "C6", "claim": "Predicted-top1 contact descriptors track SKEMPI ΔΔG at least as well as the bound reference structure, validating the docked model.", "evidence": "outputs/validation_stats.json (compare per_mutation_bound vs per_mutation_pred)"},
+    {"id": "C7", "claim": "94 1BRS_A_D mutations with experimental ΔΔG were recovered from SKEMPI 2.0 (49 single, 45 multiple); 18 unique residues mutated, 10 on barnase, 8 on barstar.", "evidence": "outputs/skempi_1brs.csv, outputs/skempi_1brs_perresidue.csv"},
+    {"id": "C8", "claim": "HADDOCK3 binary itself was not available in this sandbox; the pipeline is a faithful Python re-implementation of the AIR-driven rigid-body stage with HADDOCK water-stage scoring weights from van Zundert et al. 2015.", "evidence": "outputs/dependency_check.json, outputs/method_contract.json"}
+  ]
+}

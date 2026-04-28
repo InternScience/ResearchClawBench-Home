@@ -1,0 +1,18 @@
+{
+  "task": "Personalized neoantigen vaccine composition under a manufacturing budget",
+  "objective": "MinSum — minimize sum over cells of -log P(response_i) under a peptide-budget constraint (budget=10), adaptive variant",
+  "inputs": [
+    "tumor cell populations with presented peptides and HLA",
+    "per cell-element response probabilities from pVACtools-style scores (cleavage, MHC binding, pMHC stability)",
+    "budget B = 10 vaccine elements"
+  ],
+  "outputs_required": [
+    "selected vaccine composition (set of neoantigen elements)",
+    "per-cell immune response probability distribution",
+    "coverage ratio of tumor cells (fraction with p_response above thresholds)",
+    "IoU between optimal vaccine compositions across replicates",
+    "optimization runtime vs. population size"
+  ],
+  "named_methods": ["MinSum objective", "budget-constrained selection", "adaptive variant"],
+  "fidelity_notes": "Use the precomputed adaptive MinSum outputs as ground truth; reproduce IoU, coverage, runtime, and per-cell response-probability statistics from those files."
+}

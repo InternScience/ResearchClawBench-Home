@@ -1,0 +1,22 @@
+{
+  "named_method": "Uncalled4 signal-to-reference alignment + m6Anet downstream",
+  "evaluation_axes_implemented": {
+    "k-mer_pore_model_characterization": true,
+    "cross-chemistry_kmer_consistency_RNA001_vs_RNA004": true,
+    "Table1_time_and_filesize_4_tools_x_4_chemistries": true,
+    "PR_ROC_m6a_against_GLORI_m6A_Atlas_labels": true,
+    "score_distribution_diagnostics": true,
+    "calibration_curves": true
+  },
+  "could_not_implement_directly": [
+    "Running Uncalled4 / Nanopolish / Tombo / f5c end-to-end (requires raw POD5/FAST5 not present in workspace).",
+    "Re-training m6Anet (CSV ground-truth probabilities provided directly)."
+  ],
+  "fallback": "Used the precomputed m6Anet probabilities and the precomputed Table 1 timings shipped with the benchmark. Every numerical claim in the report comes from these CSVs via the three deterministic scripts in code/.",
+  "fidelity_invariants": {
+    "kept_subgroup_structure": "Tool x chemistry preserved separately for time and file size.",
+    "named_evaluation_metrics_kept": ["AUROC","AUPRC","F1","precision","recall","calibration"],
+    "named_baselines_kept": ["f5c","Nanopolish","Tombo"],
+    "named_chemistries_kept": ["DNA r9.4.1","DNA r10.4.1","RNA001","RNA004"]
+  }
+}

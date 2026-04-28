@@ -1,0 +1,38 @@
+{
+  "task_name": "ViCrop: training-free task-guided visual cropping for MLLMs",
+  "scientific_objective": "Mitigate information loss caused by fixed-resolution CLIP-style vision encoders for fine-grained perception by extracting a task-conditioned ROI, zooming in, and integrating local detail with the global view.",
+  "named_method": "ViCrop (Visual Cropping) - training-free, attention-guided ROI cropping for MLLMs",
+  "core_steps": [
+    "Encode image and task text with a vision-language model (CLIP family).",
+    "Compute a text-conditioned relevancy / attention map over the image patches.",
+    "Localise an ROI bounding box from the relevancy map (threshold + connected components + margin).",
+    "Crop the image to the ROI and re-encode at the model's native resolution (zoom-in).",
+    "Integrate global and cropped predictions via score-level ensemble."
+  ],
+  "named_baselines": [
+    "no-crop (vanilla CLIP)",
+    "center-crop (resolution loss baseline)",
+    "random-crop (random ROI control)",
+    "uniform-tile (Monkey-style multi-patch averaging)"
+  ],
+  "named_interpretability": [
+    "Chefer-style attention x gradient relevancy",
+    "attention rollout (gradient-free fallback)"
+  ],
+  "explicit_groups_or_conditions": [
+    "demo1.png (street scene, license plate question)",
+    "demo2.png (greenhouse / tulips, small subject color question)",
+    "method_case.png (paper teaser figure)"
+  ],
+  "primary_metrics": [
+    "Top-1 score on multiple-choice options via image-text similarity",
+    "Margin between correct option and best distractor",
+    "Crop overlap with attention peak"
+  ],
+  "deliverables": [
+    "code/ : analysis scripts",
+    "outputs/ : per-demo predictions, relevancy maps, bbox JSON",
+    "report/images/ : data overview, relevancy heatmaps, crop overlays, baseline bar chart",
+    "report/report.md : methodology, results, discussion"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "task": "Unified deep-learning framework that ingests protein sequences, nucleic-acid sequences, and small-molecule structures and outputs 3D structures of biomolecular complexes via a diffusion architecture (AlphaFold-3-style).",
+  "named_methods": [
+    "AlphaFold 3 / Pairformer-style trunk",
+    "Coordinate-space diffusion (DDPM / score-based) for atomic positions",
+    "Symmetry-aware Hungarian matching for ligand RMSD",
+    "Kabsch alignment for backbone RMSD"
+  ],
+  "input_modalities": ["protein sequence", "nucleic-acid sequence", "small-molecule (SMILES / SDF graph)"],
+  "primary_outputs": [
+    "predicted 3D atomic coordinates (protein + ligand)",
+    "Cα RMSD and ligand RMSD vs. 2L3R reference",
+    "diffusion-process and overlay figures"
+  ],
+  "fidelity_target": "minimally faithful AF3-style diffusion module on a single complex (FKBP12 / FK506) with full evaluation pipeline; quantitative numbers are illustrative because AF3 weights / MSAs / GPU training are not available.",
+  "explicit_deviations": [
+    "no MSA / template features",
+    "no triangular self-attention at full AF3 scale; replaced by lightweight pair attention",
+    "small CPU model trained / executed at toy scale on the single 2L3R complex"
+  ]
+}

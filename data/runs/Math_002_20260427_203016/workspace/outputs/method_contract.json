@@ -1,0 +1,31 @@
+{
+  "task": "Multi-Agent Path Finding (MAPF) with hybrid MARL+LNS",
+  "explicit_named_components": [
+    "Multi-Agent Reinforcement Learning (MARL)",
+    "Large Neighborhood Search (LNS) framework (per MAPF-LNS2)",
+    "Prioritized Planning (PP)",
+    "Two-stage hybrid: MARL early, PP late"
+  ],
+  "primary_metrics": [
+    "success_rate",
+    "sum_of_costs",
+    "makespan",
+    "runtime_seconds"
+  ],
+  "comparison_arms": [
+    "Prioritized Planning (PP) baseline",
+    "LNS2 with PP-only repair",
+    "Hybrid MARL-LNS (proposed)"
+  ],
+  "datasets": [
+    "maps_60_10_10_0.175 (target benchmark, 60 agents on 10x10)",
+    "empty (25x25)",
+    "maze (25x25)",
+    "random_small (10x10)",
+    "random_medium (25x25)",
+    "random_large (50x50)",
+    "room (25x25)",
+    "warehouse (25x25)"
+  ],
+  "deviation_from_named_methods": "Full deep-MARL (PRIMAL/SCRIMP) training is infeasible in-session. We implement an MARL-style decentralized policy: local FOV observation, reward shaping (goal progress, collision penalty, idle penalty), tabular/feature-based Q-learning, used as the LNS repair operator in early iterations. This is documented as an approximation."
+}

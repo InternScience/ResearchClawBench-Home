@@ -1,0 +1,11 @@
+{
+  "python": "3.x available",
+  "numpy": "available",
+  "pandas": "available",
+  "matplotlib": "available",
+  "torch_or_jax": "not used (no deep MARL training in-session)",
+  "stable_baselines3": "not used",
+  "rlpyt": "not used",
+  "external_mapf_solver_binary": "not used",
+  "limitation": "Full deep-RL MARL stacks (PRIMAL/SCRIMP) require GPU training over millions of steps which is infeasible in this short, CPU-only session. We therefore implement an MARL-style decentralized cooperative tabular Q-learning agent with PRIMAL-style local FOV observation and reward shaping, and use it as the LNS repair operator. This is documented in the report."
+}

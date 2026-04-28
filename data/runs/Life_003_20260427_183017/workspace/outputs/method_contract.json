@@ -1,0 +1,23 @@
+{
+  "task_name": "Uncalled4 reproduction-style analysis",
+  "named_methods": [
+    "Uncalled4 signal-to-reference alignment",
+    "k-mer pore models (6-mer DNA r9.4.1, 9-mer DNA r10.4.1, 5-mer RNA001, 9-mer RNA004)",
+    "performance benchmark Table 1 (Uncalled4 vs f5c vs Nanopolish vs Tombo)",
+    "m6Anet m6A detection (Hendra et al. 2022)",
+    "PR / ROC evaluation against GLORI / m6A-Atlas labels"
+  ],
+  "required_outputs": [
+    "Pore-model EDA figures across all 4 chemistries",
+    "Table 1 reproduction with figure (time + file size)",
+    "PR + ROC curves comparing Uncalled4 and Nanopolish for m6A detection",
+    "Quantitative metrics (AUROC, AUPRC) for each tool",
+    "report/report.md with methodology, results, discussion"
+  ],
+  "comparison_axes": [
+    "tool: Uncalled4 / f5c / Nanopolish / Tombo",
+    "chemistry: DNA r9.4 / DNA r10.4 / RNA001 / RNA004",
+    "metric: alignment time and file size",
+    "m6A detector: Uncalled4 vs Nanopolish backbone for m6Anet"
+  ]
+}

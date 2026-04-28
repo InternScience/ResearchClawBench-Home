@@ -1,0 +1,15 @@
+{
+  "task": "Analyze SXS waveform error datasets (Fig. 6/7/8 of SXS third catalog paper) and produce a publication-quality report.",
+  "named_artifacts": [
+    "Histogram + CDF of resolution-error mismatch (Fig. 6 reproduction)",
+    "Per-ell mismatch distributions for ell=2..8 (Fig. 7 reproduction)",
+    "Extrapolation-order comparison N2vsN3 vs N2vsN4 (Fig. 8 reproduction)"
+  ],
+  "named_quantities": [
+    "Median resolution mismatch (target ~4e-4)",
+    "Per-ell median mismatches (3e-4 -> few x 1e-3 from ell=2 to ell=8)",
+    "Extrapolation medians (N2vsN3 ~2e-5, N2vsN4 ~5e-5)",
+    "Tail probabilities (e.g. fraction of simulations above 1e-2)"
+  ],
+  "deliverables": ["code/", "outputs/", "report/report.md", "report/images/*.png"]
+}

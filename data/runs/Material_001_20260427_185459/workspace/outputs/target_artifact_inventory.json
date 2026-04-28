@@ -1,0 +1,15 @@
+{
+  "primary_artifacts": [
+    {"id": "data_overview_fig", "path": "report/images/01_data_overview.png", "status": "Y"},
+    {"id": "cgcnn_training_curves", "path": "report/images/02_cgcnn_training.png", "status": "Y"},
+    {"id": "cgcnn_parity_plot", "path": "report/images/03_cgcnn_parity.png", "status": "Y"},
+    {"id": "cgcnn_vs_mlp_table", "path": "outputs/property_prediction_metrics.json", "status": "Y"},
+    {"id": "vae_training_curves", "path": "report/images/04_vae_training.png", "status": "Y"},
+    {"id": "vae_generated_vs_real", "path": "report/images/05_vae_generated.png", "status": "Y"},
+    {"id": "vae_metrics", "path": "outputs/structure_generation_metrics.json", "status": "Y"},
+    {"id": "bo_regret_curve", "path": "report/images/06_bo_regret.png", "status": "Y"},
+    {"id": "bo_acquisition_progress", "path": "report/images/07_bo_progress.png", "status": "Y"},
+    {"id": "bo_metrics", "path": "outputs/autonomous_optimization_metrics.json", "status": "Y"},
+    {"id": "report", "path": "report/report.md", "status": "Y"}
+  ]
+}

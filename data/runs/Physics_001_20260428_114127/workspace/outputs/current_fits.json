@@ -1,0 +1,33 @@
+{
+  "Ic_theory_nA": 50.0,
+  "GL_smallI_quadratic_test": {
+    "fit_range_nA": [
+      0.0,
+      20.0
+    ],
+    "slope_GL_theory": 0.9844242540790187,
+    "intercept_GL_theory": 0.00025932040494601916,
+    "slope_experiment": 1.0066471973480795,
+    "intercept_experiment": 0.0006031103866906309,
+    "expected_slope": 1.0,
+    "expected_intercept": 0.0
+  },
+  "GL_full_fit_to_theory": {
+    "model": "D_s(I) = D0 * (1 - (I/Ic_eff)^2)^p",
+    "D0": 97.8671477302481,
+    "Ic_eff_nA": 72.05177310734004,
+    "p_exponent": 1.6364050534685768
+  },
+  "experimental_DC": {
+    "first_minimum_at_I_nA": 68.57142879999999,
+    "min_Ds_value_pct": 9.88880416,
+    "rises_after_minimum": true,
+    "comment": "Experiment shows re-entrant rise above the first minimum, consistent with vortex-flow / heating regime above Ic."
+  },
+  "microwave_quadratic": {
+    "alpha_per_nA2": -0.029760373266531068,
+    "intercept": 100.82775784881339,
+    "I_mw_max_nA": 21.1054086,
+    "delta_Ds_at_max_pct": 13.226513179999998
+  }
+}

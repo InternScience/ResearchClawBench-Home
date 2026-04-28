@@ -1,0 +1,31 @@
+{
+  "named_components": [
+    "HADDOCK / HADDOCK3 integrative modelling protocol",
+    "Ambiguous Interaction Restraints (AIRs)",
+    "HADDOCK water-stage scoring function",
+    "Rigid-body sampling (it0 stage analogue)",
+    "L-RMSD / i-RMSD CAPRI evaluation",
+    "Cluster-and-rank (HADDOCK FCC analogue)"
+  ],
+  "what_was_implemented": {
+    "AIRs": "Active residues = any heavy atom <5 Å of partner chain in bound 1BRS; passive residues = same-chain residues within 6.5 Å of an active residue (HADDOCK definition). AIR pseudo-energy uses HADDOCK soft minimum-distance per-residue formulation with target d=2 Å and quadratic flat-bottom penalty.",
+    "scoring": "HS = 1.0·E_vdw + 0.2·E_elec + 0.1·E_AIR + 1.0·E_desolv with weights from van Zundert et al. 2015 (J. Mol. Biol., HADDOCK 2.2). E_vdw is 12-6 LJ with OPLS-like atomic radii, capped to avoid clashes. E_elec is Coulomb with distance-dependent dielectric ε=10·r. E_desolv uses a Fauchère–Plis̆ka residue hydrophobicity scale weighted by interface burial.",
+    "sampling": "120 random rigid-body orientations of barstar around barnase, AIR-centroid pre-alignment, then ≤35 numerical-gradient steps on (R,t) on the HADDOCK score.",
+    "clustering": "Single-linkage clustering on Cα-based ligand-RMSD with threshold 7.5 Å on the top 60 poses by HADDOCK score.",
+    "validation": "Per-residue contact and energetic descriptors of bound and predicted structures correlated with SKEMPI 2.0 mutation ΔΔG (Spearman/Pearson)."
+  },
+  "deviations": {
+    "force_field": "Full CHARMM/OPLSx forcefield not used; LJ + simplified charge lookup is a surrogate.",
+    "water_refinement": "HADDOCK's it1 SA + explicit-water stages replaced by single AIR-driven gradient minimisation.",
+    "clustering": "FCC contact-based clustering replaced by Cα L-RMSD single linkage.",
+    "haddock3_workflow": "haddock3 binary not installed; pipeline is a Python re-implementation."
+  },
+  "invariants_preserved": [
+    "AIR-driven docking (information-driven biomolecular modelling, not blind shape complementarity)",
+    "HADDOCK water-stage linear scoring weights (1.0/0.2/0.1/1.0)",
+    "Active vs passive residue logic with 5/6.5 Å definitions",
+    "AIR effective distance per-residue penalty with target ≈2 Å",
+    "Score-vs-RMSD funnel + cluster-and-rank evaluation",
+    "CAPRI L-RMSD/i-RMSD acceptance criteria"
+  ]
+}

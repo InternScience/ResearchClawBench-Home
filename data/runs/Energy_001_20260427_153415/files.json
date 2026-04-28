@@ -1,0 +1,383 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "build_network.py",
+    "path": "code/build_network.py",
+    "type": "file",
+    "size": 6491,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "make_figures.py",
+    "path": "code/make_figures.py",
+    "type": "file",
+    "size": 10771,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "run_dispatch.py",
+    "path": "code/run_dispatch.py",
+    "type": "file",
+    "size": 4502,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "buses.csv",
+    "path": "data/buses.csv",
+    "type": "file",
+    "size": 1086,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "demand.csv",
+    "path": "data/demand.csv",
+    "type": "file",
+    "size": 60915,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "generators.csv",
+    "path": "data/generators.csv",
+    "type": "file",
+    "size": 1386,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "links.csv",
+    "path": "data/links.csv",
+    "type": "file",
+    "size": 565,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "storage.csv",
+    "path": "data/storage.csv",
+    "type": "file",
+    "size": 109,
+    "mtime": 1773033848.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "wind_cf.csv",
+    "path": "data/wind_cf.csv",
+    "type": "file",
+    "size": 63972,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "claim_recovery.json",
+    "path": "outputs/claim_recovery.json",
+    "type": "file",
+    "size": 1830,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "curtailment_S0_base.csv",
+    "path": "outputs/curtailment_S0_base.csv",
+    "type": "file",
+    "size": 6508,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "curtailment_S1_grid_minus50.csv",
+    "path": "outputs/curtailment_S1_grid_minus50.csv",
+    "type": "file",
+    "size": 6515,
+    "mtime": 1777353702.0,
+    "exported": true
+  },
+  {
+    "name": "curtailment_S2_wind_plus50.csv",
+    "path": "outputs/curtailment_S2_wind_plus50.csv",
+    "type": "file",
+    "size": 6489,
+    "mtime": 1777353702.0,
+    "exported": true
+  },
+  {
+    "name": "curtailment_S3_no_storage.csv",
+    "path": "outputs/curtailment_S3_no_storage.csv",
+    "type": "file",
+    "size": 6497,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "curtailment_S4_high_gas.csv",
+    "path": "outputs/curtailment_S4_high_gas.csv",
+    "type": "file",
+    "size": 6506,
+    "mtime": 1777353702.0,
+    "exported": true
+  },
+  {
+    "name": "curtailment_S5_wind_drought.csv",
+    "path": "outputs/curtailment_S5_wind_drought.csv",
+    "type": "file",
+    "size": 6111,
+    "mtime": 1777353702.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 263,
+    "mtime": 1777353702.0,
+    "exported": true
+  },
+  {
+    "name": "dispatch_S0_base.csv",
+    "path": "outputs/dispatch_S0_base.csv",
+    "type": "file",
+    "size": 14531,
+    "mtime": 1777353702.0,
+    "exported": true
+  },
+  {
+    "name": "dispatch_S1_grid_minus50.csv",
+    "path": "outputs/dispatch_S1_grid_minus50.csv",
+    "type": "file",
+    "size": 14393,
+    "mtime": 1777353702.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 43 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1296584,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 193879,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 406113,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 6282024,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig_cost_curtailment.png",
+    "path": "report/images/fig_cost_curtailment.png",
+    "type": "file",
+    "size": 91493,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_curtailment_ts.png",
+    "path": "report/images/fig_curtailment_ts.png",
+    "type": "file",
+    "size": 251999,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_demand_wind_overview.png",
+    "path": "report/images/fig_demand_wind_overview.png",
+    "type": "file",
+    "size": 208470,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_dispatch_stack_S0_base.png",
+    "path": "report/images/fig_dispatch_stack_S0_base.png",
+    "type": "file",
+    "size": 94561,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_dispatch_stack_S1_grid_minus50.png",
+    "path": "report/images/fig_dispatch_stack_S1_grid_minus50.png",
+    "type": "file",
+    "size": 96141,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_dispatch_stack_S2_wind_plus50.png",
+    "path": "report/images/fig_dispatch_stack_S2_wind_plus50.png",
+    "type": "file",
+    "size": 97883,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_dispatch_stack_S3_no_storage.png",
+    "path": "report/images/fig_dispatch_stack_S3_no_storage.png",
+    "type": "file",
+    "size": 95421,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_dispatch_stack_S4_high_gas.png",
+    "path": "report/images/fig_dispatch_stack_S4_high_gas.png",
+    "type": "file",
+    "size": 87209,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_dispatch_stack_S5_wind_drought.png",
+    "path": "report/images/fig_dispatch_stack_S5_wind_drought.png",
+    "type": "file",
+    "size": 97138,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_line_heatmap_S0_base.png",
+    "path": "report/images/fig_line_heatmap_S0_base.png",
+    "type": "file",
+    "size": 84013,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_line_heatmap_S1_grid_minus50.png",
+    "path": "report/images/fig_line_heatmap_S1_grid_minus50.png",
+    "type": "file",
+    "size": 79055,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_line_loading.png",
+    "path": "report/images/fig_line_loading.png",
+    "type": "file",
+    "size": 57246,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_mix_by_scenario.png",
+    "path": "report/images/fig_mix_by_scenario.png",
+    "type": "file",
+    "size": 70270,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_network_map.png",
+    "path": "report/images/fig_network_map.png",
+    "type": "file",
+    "size": 175005,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_per_bus_mix_S0_base.png",
+    "path": "report/images/fig_per_bus_mix_S0_base.png",
+    "type": "file",
+    "size": 51202,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_prices_box.png",
+    "path": "report/images/fig_prices_box.png",
+    "type": "file",
+    "size": 58704,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "fig_storage_soc.png",
+    "path": "report/images/fig_storage_soc.png",
+    "type": "file",
+    "size": 80690,
+    "mtime": 1777353701.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 20345,
+    "mtime": 1777353703.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6268,
+    "mtime": 1777275255.0,
+    "exported": true
+  }
+]

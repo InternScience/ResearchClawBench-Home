@@ -1,0 +1,17 @@
+{
+  "python_versions": {
+    "numpy": "2.2.5",
+    "xarray": "2025.6.1",
+    "netCDF4": "1.7.4",
+    "matplotlib": "3.10.1",
+    "scipy": "1.15.2",
+    "pandas": "2.2.3",
+    "torch": "MISSING"
+  },
+  "cartopy": "not_required_for_simple_lat_lon_plots_with_imshow",
+  "fuxi_weights_available": false,
+  "training_data_available": false,
+  "reanalysis_verification_data_available": false,
+  "ecmwf_ensemble_available": false,
+  "implication": "Cannot run the actual three U-Transformer FuXi cascade. We will (a) describe the method faithfully from the literature, (b) characterize the data we have, (c) diagnose the supplied 6h FuXi forecast, and (d) build a calibrated saturation surrogate to illustrate cascade error growth."
+}

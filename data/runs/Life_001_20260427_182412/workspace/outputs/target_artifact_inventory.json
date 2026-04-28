@@ -1,0 +1,18 @@
+{
+  "primary": [
+    {"name": "per_cell_response_distribution", "file": "outputs/per_cell_response_stats.csv"},
+    {"name": "coverage_curve", "file": "outputs/coverage_curve.csv"},
+    {"name": "iou_replicate_matrix", "file": "outputs/iou_matrix.csv"},
+    {"name": "selected_vaccine_per_replicate", "file": "outputs/selected_vaccine_per_replicate.csv"},
+    {"name": "runtime_vs_population", "file": "outputs/runtime_summary.csv"},
+    {"name": "composition_summary", "file": "outputs/vaccine_composition.csv"}
+  ],
+  "figures": [
+    "report/images/fig1_data_overview.png",
+    "report/images/fig2_response_distribution.png",
+    "report/images/fig3_coverage_curve.png",
+    "report/images/fig4_iou_heatmap.png",
+    "report/images/fig5_vaccine_composition.png",
+    "report/images/fig6_runtime_vs_population.png"
+  ]
+}

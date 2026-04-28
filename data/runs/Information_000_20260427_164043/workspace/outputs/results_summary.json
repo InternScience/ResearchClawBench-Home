@@ -1,0 +1,33 @@
+{
+  "retrieval": {
+    "decoupled_i2t": 0.01666666753590107,
+    "decoupled_t2i": 0.0055555556900799274,
+    "shared_i2t": 0.0055555556900799274,
+    "shared_t2i": 0.02222222276031971
+  },
+  "linear_probe": {
+    "decoupled_shape_acc": 0.2962962962962963,
+    "decoupled_colour_acc": 1.0,
+    "shared_vq_shape_acc": 1.0,
+    "shared_vq_colour_acc": 0.2037037037037037
+  },
+  "vq_reconstruction_mse": 0.13064055144786835,
+  "real_captions_decoupled": {
+    "an equation in latex notation": "yellow triangle on light background",
+    "swole doge vs cheems meme": "yellow triangle on light background"
+  },
+  "real_captions_shared": {
+    "an equation in latex notation": "picture of a green triangle",
+    "swole doge vs cheems meme": "picture of a green triangle"
+  },
+  "captioning_test": {
+    "decoupled": {
+      "shape_acc": 0.7,
+      "colour_acc": 0.7
+    },
+    "shared": {
+      "shape_acc": 1.0,
+      "colour_acc": 0.26666666666666666
+    }
+  }
+}

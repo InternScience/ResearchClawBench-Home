@@ -1,0 +1,16 @@
+{
+  "python": "3.x",
+  "checked_packages": {
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.2.5",
+    "matplotlib": "3.10.1",
+    "seaborn": "0.13.2",
+    "pymupdf": "installed"
+  },
+  "notes": [
+    "All standard ML and plotting libraries are available locally.",
+    "SimBA itself is not installed, but its pipeline (pose -> engineered features -> Random Forest -> probabilities -> thresholded ethogram) can be reproduced faithfully with scikit-learn.",
+    "The provided 'features_extracted.csv' contains only the raw pose tracking columns (x,y,p for 8 body parts × 2 mice) plus two trivial frame-counter columns; we therefore engineer SimBA-style features (distances, velocities, rolling stats, mean confidences) ourselves to match the named pipeline."
+  ]
+}

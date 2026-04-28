@@ -1,0 +1,210 @@
+[
+  {
+    "task_index": 1,
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "n_placeholders": 9,
+    "answer_axes": {
+      "in_paper": 1.0,
+      "prompt_quality": 1.0,
+      "follow_instructions": 1.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 1.0
+    }
+  },
+  {
+    "task_index": 2,
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "n_placeholders": 11,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 1.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 1.0
+    }
+  },
+  {
+    "task_index": 3,
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "n_placeholders": 7,
+    "answer_axes": {
+      "in_paper": 1.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 4,
+    "task": "Define each term in Potential Hamiltonian (continuum version)",
+    "n_placeholders": 6,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 5,
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "n_placeholders": 7,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 6,
+    "task": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+    "n_placeholders": 5,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 1.0,
+      "final_answer_accuracy": 1.0
+    }
+  },
+  {
+    "task_index": 7,
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "n_placeholders": 7,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 1.0
+    }
+  },
+  {
+    "task_index": 8,
+    "task": "Particle-hole transformation",
+    "n_placeholders": 9,
+    "answer_axes": {
+      "in_paper": 0.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 9,
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "n_placeholders": 8,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 1.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 10,
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "n_placeholders": 9,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 11,
+    "task": "Wick's theorem",
+    "n_placeholders": 4,
+    "answer_axes": {
+      "in_paper": 0.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 12,
+    "task": "Extract quadratic term",
+    "n_placeholders": 5,
+    "answer_axes": {
+      "in_paper": 0.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 13,
+    "task": "Swap the index to combine Hartree and Fock terms",
+    "n_placeholders": 5,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 1.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 14,
+    "task": "Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice)",
+    "n_placeholders": 4,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 1.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 15,
+    "task": "Reduce momentum in Fock term (momentum in BZ + reciprocal lattice)",
+    "n_placeholders": 4,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  },
+  {
+    "task_index": 16,
+    "task": "Combine the Hartree and Fock term",
+    "n_placeholders": 5,
+    "answer_axes": {
+      "in_paper": 2.0,
+      "prompt_quality": 2.0,
+      "follow_instructions": 2.0,
+      "physics_logic": 2.0,
+      "math_derivation": 2.0,
+      "final_answer_accuracy": 2.0
+    }
+  }
+]

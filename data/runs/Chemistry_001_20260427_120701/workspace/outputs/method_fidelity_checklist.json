@@ -1,0 +1,29 @@
+{
+  "named_method": "AlphaFold-3-style coordinate diffusion for biomolecular complexes",
+  "structural_invariants": [
+    "Token-level representation unifying protein residues, nucleic-acid bases, and ligand atoms",
+    "Single (token) representation s_i and pair representation z_ij",
+    "Trunk with iterative pair-aware updates (Pairformer-lite: triangle multiplicative + pair attention)",
+    "Generative head = denoising diffusion on Cartesian atomic positions",
+    "Forward process q(x_t | x_0) = N(sqrt(alpha_bar_t) x_0, (1 - alpha_bar_t) I)",
+    "Reverse process learned via epsilon-prediction with conditioning on (s, z, t)",
+    "Symmetry-aware permutation handling for chemically equivalent ligand atoms at evaluation"
+  ],
+  "implementation_check": {
+    "pair_representation": true,
+    "triangle_update_lite": true,
+    "diffusion_module": true,
+    "epsilon_prediction": true,
+    "noise_schedule": "cosine",
+    "ligand_graph_input": true,
+    "nucleic_acid_token_support": "API present (no NA in this 2L3R sample, demonstrated via tokenizer interface)",
+    "hungarian_rmsd": true,
+    "kabsch_alignment": true
+  },
+  "explicit_deviations_from_AF3": [
+    "No MSA features (single-sequence input) — AF3 uses MSAs via the trunk",
+    "Trunk depth/width drastically reduced for CPU; not the full Pairformer",
+    "No template features",
+    "Trained only on the single 2L3R complex as a demonstration; AF3 is trained on the entire PDB"
+  ]
+}

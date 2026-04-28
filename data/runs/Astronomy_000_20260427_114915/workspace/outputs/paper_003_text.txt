@@ -1,0 +1,2967 @@
+Superradiant instabilities in astrophysical systems
+
+Helvi Witek,1, 2, ∗ Vitor Cardoso,1, 3 Akihiro Ishibashi,4 and Ulrich Sperhake1, 2, 5, 6
+1CENTRA, Departamento de F´ısica, Instituto Superior T´ecnico,
+Universidade T´ecnica de Lisboa - UTL, Avenida Rovisco Pais 1, 1049 Lisboa, Portugal.
+2Department of Applied Mathematics and Theoretical Physics, Centre for Mathematical Sciences,
+University of Cambridge, Wilberforce Road, Cambridge CB3 0WA, UK
+3Department of Physics and Astronomy, The University of Mississippi, University, MS 38677, USA.
+4Department of Physics, Kinki University, Higashi-Osaka 577-8502, Japan
+5Institute of Space Sciences, CSIC-IEEC, 08193 Bellaterra, Spain
+6California Institute of Technology, Pasadena, CA 91125, USA
+(Dated: November 27, 2024)
+
+Light bosonic degrees of freedom have become a serious candidate for dark matter, which seems
+to pervade our entire universe. The evolution of these ﬁelds around curved spacetimes is poorly
+understood but is expected to display interesting eﬀects.
+In particular, the interaction of light
+bosonic ﬁelds with supermassive black holes, key players in most galaxies, could provide colourful
+examples of superradiance and nonlinear bosenova-like collapse. In turn, the observation of spinning
+black holes is expected to impose stringent bounds on the mass of putative massive bosonic ﬁelds
+in our universe.
+
+Our purpose here is to present a comprehensive study of the evolution of linearized massive scalar
+and vector ﬁelds in the vicinities of rotating black holes. The evolution of generic initial data has a
+very rich structure, depending on the mass of the ﬁeld and of the black hole. Quasi-normal ringdown
+or exponential decay followed by a power-law tail at very late times is a generic feature of massless
+ﬁelds at intermediate times. Massive ﬁelds generically show a transition to power-law tails early on.
+For a certain boson ﬁeld mass range, the ﬁeld can become trapped in a potential barrier outside the
+horizon and transition to a bound state. Because there are a number of such quasi-bound states,
+the generic outcome is an amplitude modulated sinusoidal, or beating, signal, whose envelope is well
+described by the two lowest overtones. We believe that the appearance of such beatings has gone
+unnoticed in the past, and in fact mistaken for exponential growth. The amplitude modulation of
+the signal depends strongly on the relative excitation of the overtones, which in turn is strongly tied
+to the bound-state geography.
+
+A ﬁne tuning of the initial data allows one to see the evolution of the nearly pure bound state
+mode which turns unstable for suﬃciently large black hole rotation. For the ﬁrst time we explore
+massive vector ﬁelds in generic BH background which are hard, if not impossible, to separate in
+the Kerr background. Our results show that spinning BHs are generically strongly unstable against
+massive vector ﬁelds.
+
+PACS numbers: 98.80.Es,11.25.Wx,14.80.Va,04.70.-s
+
+3
+1
+0
+2
+
+b
+e
+F
+9
+1
+
+]
+c
+q
+-
+r
+g
+[
+
+2
+v
+1
+5
+5
+0
+.
+2
+1
+2
+1
+:
+v
+i
+X
+r
+a
+
+∗ h.witek@damtp.cam.ac.uk
+
+ 
+ 
+ 
+ 
+ 
+ 
+CONTENTS
+
+I. Introduction
+
+II. Setup: action, equations of motion and background metric
+
+A. Action and equations of motion
+B. Background in horizon penetrating coordinates
+C. Initial data
+D. Wave extraction and output
+E. Numerical implementation
+
+III. Scalar ﬁeld evolutions
+
+A. A summary of results in the literature
+B. Space dependent mass coupling and massless scalars
+C. Massive scalar ﬁelds
+1. Bound states
+2. Damped states: ringdown and tails
+3. Massive scalar ﬁelds: mode excitation and beating
+
+IV. Proca ﬁeld evolutions
+
+A. Massless vector ﬁelds
+B. Proca ﬁeld in Schwarzschild backgrounds and in the slow-rotating limit
+C. Instability of Proca ﬁelds in highly spinning Kerr backgrounds
+
+V. Conclusions
+
+VI. Acknowledgements
+
+A. Flux formula
+
+B. Spin-weighted spherical harmonics
+
+References
+
+2
+
+2
+
+5
+5
+7
+8
+9
+9
+
+10
+10
+11
+12
+13
+13
+15
+
+17
+18
+19
+21
+
+22
+
+24
+
+25
+
+27
+
+28
+
+I.
+
+INTRODUCTION
+
+One of the most exciting outcomes of General Relativity (GR) are black holes (BHs), the physics of which has
+grown into a mature and fully developed branch of GR and extensions thereof [1, 2]. Observations of, e.g., X-ray
+binaries indicate that solar mass (3 − 30M(cid:12)) BHs mark the endpoint of the life of massive stars and are anticipated
+to be a signiﬁcant component of the galaxies’ population. Supermassive BHs (SMBHs) with masses 106 − 109M(cid:12) or
+higher are conjectured to be hosted in the center of most galaxies, controlling galaxy growth and evolution, stellar
+birth and powering active galactic nuclei and other powerful phenomena.
+
+Tremendous progress has been made in actually observing some of the fascinating general relativistic eﬀects. From
+X-ray spectra on the inner edge of accretion disks, which probe the innermost stable circular orbit of the geometry,
+to gravitational wave (GW) physics, “precision BH physics” is a new and rapidly developing ﬁeld [3–5]. The future
+holds the promise to observe some of these eﬀects accurately by monitoring the supermassive BH at the center of our
+own galaxy.
+
+One of the fundamental reasons why precision BH physics is possible at all, are the no-hair and uniqueness theorems:
+BHs in 4-dimensional, asymptotically ﬂat spacetimes must belong to the Kerr-Newman family and are, thus, fully
+speciﬁed by three parameters only: their mass, angular momentum and electric charge (see e.g. Ref. [6, 7], or Carter’s
+contribution to Ref. [8]). In more colloquial terms, this is commonly expressed by saying that BHs have no hair or,
+rather, have three hairs only. This simple yet powerful result has far reaching consequences: Given some arbitrary
+perturbations with the same conserved charges, they must all decay to the same ﬁnal state, namely one BH with those
+charges. By now, there are a plethora of studies, at the perturbative and fully non-linear level, investigating how this
+unique ﬁnal state is approached (see, e.g., Ref. [9, 10] for recent overviews). In the following we brieﬂy summarize
+these studies.
+
+3
+
+FIG. 1. Time evolution of a dipole (l = 1, m = 0) scalar Gaussian wave packet in Schwarzschild background. We clearly
+observe the main features of such a ﬁeld: (i) a prompt response at early times followed by (ii) the quasi-normal mode ringdown
+and (iii) a late-time tail.
+
+Generic response of a BH spacetime to external perturbations. The generic behavior of massless ﬁelds
+around a BH is illustrated in Fig. 1, where we plot the evolution of a Gaussian wave packet Ψ = e−(r−10)2/102
+around
+a Schwarzschild BH. The particular initial data refers to a scalar ﬁeld, but the qualitative results are universal and
+independent of the initial conditions. The generic behavior of massless ﬁelds around a BH can be divided into three
+parts (c.f. Fig. 1):
+(i) An initial data-dependent prompt response at early times, which is the counterpart to light-cone propagation in
+ﬂat space;
+(ii) An exponentially decaying “ringdown” phase at intermediate times, where the BH is ringing with its characteristic
+quasi-normal modes (QNMs). This stage typically dominates the signal, and its properties, such as vibration frequency
+and decay timescale, depend solely on the parameters of the ﬁnal BH [9]. Because of the no-hair theorem, the detection
+of QNMs allows one to uniquely determine the BH mass and spin and provides tests of GR [9, 11, 12];
+(iii) At late times, the signal is dominated by a power-law fall-oﬀ, known as “late-time tail” [13–15]. Tails are caused
+by backscattering oﬀ spacetime curvature and more generically by a failure of Huygen’s principle. As such, tails also
+appear in other situations where light propagation is not on the light cone such as in massive ﬁeld propagation in
+Minkowski spacetime [16], or massless ﬁeld propagation in odd-dimensional spacetimes [17].
+Superradiant eﬀects. The long-lasting oscillation of the lowest QNMs is the most important stage in the life of any
+ﬁeld around a BH. Its lifetime, or quality factor, depends solely on the BH spin [9]. Speciﬁcally, the lifetime tends
+to increase with growing spin and the decay timescale approaches zero for nearly extremal BHs. This behaviour is
+tightly connected to superradiance [18–20]: In a scattering experiment of low-frequency waves oﬀ a BH the scattered
+wave is ampliﬁed if the real part of its frequency ωR satisﬁes the superradiant condition
+
+ωR < mΩH ,
+
+(1)
+
+where m is the azimuthal “quantum” number and ΩH is the angular velocity of the BH horizon. We refer the reader
+to App. A for a derivation of this condition for both, scalar and vector ﬁelds. The excess energy is withdrawn from
+the object’s rotational energy [18, 19] and, in a dynamical scenario, the BH would presumably spin down. The eﬀect
+can be attributed to the existence of negative-energy states in the ergo-region, and dissipation at the event horizon.
+
+Superradiance is the chief cause of a number of exciting phenomena in BH physics:
+
+(i) Generic perturbations are damped away to inﬁnity and across the event horizon. Because rotating BHs amplify
+waves that fulﬁll the superradiant condition, Eq. (1), the ampliﬁcation factors as well as the quality factor of these
+superradiant modes increase with rotation.
+(ii) Satellites around BHs typically spiral inwards as time goes by, due to gravitational wave emission and energy
+conservation. Emission of radiation to inﬁnity results in a larger binding energy of the particle. Because superradiance
+implies the extraction of the BH’s rotational energy, it is possible that the energy deﬁcit comes entirely from the BH
+kinetic energy. In this way, satellites around rapidly spinning BHs can in principle orbit at a nearly ﬁxed radius –
+
+050100150200t / M 10-610-410-2100102| ψ10 |(i)(ii)(iii)4
+
+on so-called ﬂoating orbits – for a much longer time, tapping the BH’s kinetic energy. In BH binaries, this eﬀect can
+dominate in the presence of resonances [21–23]. This phenomenon is analogous to tidal acceleration, e.g., in case of
+the Earth-moon system [24, 25].
+(iii) A further interesting eﬀect can be triggered by enclosing the spinning BH inside a perfectly reﬂecting cavity. As
+was recognized already by Zel’dovich [18, 19], any initial perturbation will get successively ampliﬁed near the BH and
+reﬂected back at the mirror, thus creating an instability, which was termed the “BH bomb” [26, 27]. Whereas the
+setup appears physically artiﬁcial at ﬁrst glance, the role of the mirror can actually be realized naturally in many
+ways, including an anti-de Sitter spatial inﬁnity. In this case, the BH bomb translates into a real, physical instability
+of (small) rotating BHs in asymptotically AdS spacetimes [28–31].
+(iv) Finally, of direct interest for the present study is the fact that massive ﬁelds around Kerr BHs are also prone to
+a BH bomb-like instability, because the mass term eﬀectively conﬁnes the ﬁeld [32–39].
+
+Consider a scalar ﬁeld surrounding a black hole with mass M and angular momentum J = aM . The instability is
+regulated by the dimensionless parameter µSM (from now on we set G = c = 1), where ms = µS(cid:126) is the scalar ﬁeld
+mass, and is described by the time dependence of the ﬁeld, Ψ ∼ e−iωt with complex frequency ω = ωR + ıωI . For
+small coupling M µS (cid:28) 1 the characteristic (unstable mode) frequency giving rise to the instability is [40, 41] 1
+
+In the opposite limit, i.e., for very large mass couplings M µS >> 1, the characteristic inverse time is [33]
+
+M ωI =10−7 exp(−1.84M µS) .
+
+M ωI =
+
+a
+48M
+
+(M µS)9 .
+
+(2)
+
+(3)
+
+The instability timescales are typically large. The scalar ﬁeld growth rate has a global maximum of τ ≡ 1/ωI ∼ 107M
+for the dipole with mass coupling M µS = 0.42 in the background of a Kerr BH with a/M = 0.99 [36, 37].
+
+The above results refer to massive scalar ﬁelds in the background of Kerr BHs. It was widely believed that massive
+vectors would be subject to a similar instability. Unfortunately, the non-separability of the ﬁeld equations renders
+this is a non-trivial problem. Recently, signiﬁcant progress has been made, with a thorough study of massive vector
+ﬁelds around Schwarzschild BHs [42] and slowly rotating Kerr BH backgrounds [40, 41]. Pani et al use a slow-rotation
+expansion of the Fourier transformed ﬁeld equations, accurate to second order in rotation, to prove that the Kerr
+spacetime is indeed unstable against massive vector ﬁelds [40, 41]. The massive vector ﬁeld instability can be orders
+of magnitude stronger (i.e., shorter timescales) than its scalar counterpart.
+
+All these calculations have been performed in the linear regime, thus neglecting backreaction eﬀects such as the BH
+spin-down or eﬀects due to non-linear self-interaction of the scalar ﬁeld. Therefore, the ﬁnal state of the superradiant
+instability in the fully dynamical regime is not known, partly because it requires the non-linear evolution of Einstein’s
+equations for a timescale of order 106M . A plausible evolution scenario consists of an exponentially growing scalar
+condensate outside the BH, extracting energy and angular momentum from the BH until the superradiant extraction
+stops, i.e., until the condition (1) is no longer satisﬁed. Further interesting new phenomena arise when we consider
+non-linear interaction terms, such as bosenova-type collapse presented in Refs. [43–45], or higher dimensional back-
+ground spacetimes, such as the boosted black string recently reported in [46] or the Schwarzschild-Tangherlini solution
+discussed in [47, 48].
+Superradiant instability in astrophysical systems. Massive ﬁelds in the vicinity of BHs are subject to a
+BH bomb-like, superradiant instability, and they grow exponentially with time. However, the eﬀect is very weak for
+known standard model particles in astrophysical environments: For example, the mass coupling for the lightest known
+elementary scalar particle, the pion, around a solar mass BH is M µS ∼ 1018, resulting in an instability timescale
+much larger than the age of the universe. Nevertheless, the superradiant instability might become signiﬁcant if we
+consider standard model particles around primordial BHs (see, e.g., [49, 50]) or if there exist ﬁelds with small, but non-
+vanishing mass. One exciting possibility for these ﬁelds is provided by axions, ultralight bosonic states emerging from
+string-theory compactiﬁcations, which have not been ruled out by current experiments. In the “axiverse” scenario
+an entire landscape of ultra-light pseudo-scalar ﬁelds covering a mass range from 10−33eV ≤ µS ≤ 10−8eV has
+been proposed (see [3, 4, 43] for recent overviews). In fact, the existence of ultra-light axions leads to a plethora
+of possible observational implications and signatures, such as modiﬁcations of the cosmic-microwave background
+polarization (for 10−33eV ≤ µS ≤ 10−28eV ). They are also anticipated to make up a fraction of dark matter if
+10−28eV ≤ µS ≤ 10−22eV [3, 51, 52]. Of particular interest in the context of BH physics are axions in the mass range
+10−22eV ≤ µS ≤ 10−10eV [3, 4, 43]. Then, the time scales for the superradiant instability become astrophysically
+signiﬁcant, giving rise to a number of interesting eﬀects:
+
+1 Notice the diﬀerence of a factor 2 to the original result [34].
+
+5
+
+(i) A bosonic cloud bounded in the vicinity of a Kerr BH might create a “gravitational atom”, which can be de-excited
+by the emission of gravitons, thus carrying away BH angular momentum;
+(ii) If the accretion of bosons from this cloud is eﬃcient enough, the rotation of the BH can be sustained and it might
+be turned into a GW pulsar;
+(iii) If, on the other hand, the accretion from the axionic cloud is not eﬃcient enough, the BH will eventually spin
+down, thus yielding gaps in the Regge plane (the phase-space spanned by mass and spin parameter of the BH). Further
+possible eﬀects have been discussed in Refs. [3, 4, 21, 22, 43–45, 53].
+
+Similar superradiant instabilities are expected to occur for massive hidden U (1) vector ﬁelds, which are also a
+generic feature of extensions of the standard model [54–57]. As already stated, while superradiant instabilities have
+been widely studied for massive scalar ﬁelds [21, 26, 27, 32, 36, 37, 58, 59], the case of massive vector ﬁelds is still in
+its infancy, though signiﬁcant work along these lines was recently reported [40–42, 47, 48].
+
+So far most studies on the massive boson instability have been performed in Fourier space. An early attempt
+at studying the massive scalar ﬁeld instability in the time domain, with generic initial conditions was presented by
+Strafuss and Khanna [60]. We believe that, while the technical study may be correct, some of its conclusions are not;
+speciﬁcally, the authors reported an instability growth rate of M ωI ∼ 2 · 10−5, which is two orders of magnitude larger
+than previous results in the frequency domain [36, 37] and more recent numerical studies in the time domain [44, 61].
+We will attempt a correct explanation for these puzzling results in the body of this work.
+
+The purpose of the present study is to investigate the time evolution of generic linearized massive scalar and vector
+ﬁelds in the vicinities of spinning BHs. Surprisingly, not much seems to have been done on this problem. Our
+“generic” initial data consists of Gaussian wave packets, but we will also study the evolution of bound state modes.
+The exploration of nonlinear gravitational dynamics or self-interactions will be presented elsewhere.
+
+This work is organized as follows: In Sec. II we present the numerical framework, describing the formulation as
+a Cauchy problem, the setup of initial conﬁgurations and the background spacetime. Sec. III is devoted to the
+numerical results of massive scalar ﬁeld evolution. In particular, we present a number of benchmark tests to verify
+our implementation before studying more generic setups. We will show that the evolution of a massive scalar has
+a non-trivial pattern, which can be explained in terms of multi-mode excitation. We believe that this pattern also
+describes the results reported by Strafuss and Khanna [60]. In Sec. IV we discuss our investigations of the massive
+vector (also known as Proca [57]) ﬁeld in generic Kerr BH backgrounds, where we show, for the ﬁrst time in a time
+evolution of rapidly spinning BHs, that Kerr BHs are strongly unstable against these ﬁelds. Finally, we summarize
+our results and present concluding remarks in Sec. V.
+
+II. SETUP: ACTION, EQUATIONS OF MOTION AND BACKGROUND METRIC
+
+A. Action and equations of motion
+
+We consider a generic action [3, 62] involving one complex, massive scalar Ψ and a massive vector ﬁeld Aµ with
+
+mass mS = µS(cid:126) and mV = µV (cid:126), respectively,
+
+(cid:90)
+
+√
+
+d4x
+
+−g
+
+S =
+
+(cid:18) R
+k
+
+−
+
+1
+4
+
+F µνFµν −
+
+µ2
+V
+2
+
+AνAν −
+
+kaxion
+2
+
+Ψ ∗F µνFµν −
+
+1
+2
+
+gµνΨ∗
+
+,µΨ,ν −
+
+µ2
+S
+2
+
+Ψ∗Ψ − V (Ψ)
+
+(cid:19)
+
+.
+
+(4)
+
+Here, the potential V (Ψ) is of cubic or higher order in the scalar ﬁeld. The scalar and vector ﬁelds are allowed to
+interact through the axion-like coupling constant kaxion. Fµν ≡ ∇µAν − ∇νAµ is the Maxwell tensor and ∗F µν ≡
+2 (cid:15)µνρσFρσ is its dual. Here, (cid:15)µνρσ ≡ 1√
+1
+−g Eµνρσ and Eµνρσ is the totally anti-symmetric Levi-Civita symbol with
+E0123 = 1. 2 The resulting equations of motion are
+
+∗F µνFµν + V (cid:48)(Ψ) ,
+
+(cid:1) Ψ =
+
+(cid:0)∇ν∇ν − µ2
+S
+V Aµ = −2kaxion
+∇νF µν + µ2
+(cid:18)
+
+kaxion
+2
+
+(cid:19)
+
+Rµν −
+
+gµνR
+
+1
+2
+
+∗F µν∂νΨ ,
+1
+2
+
+F αβFαβgµν +
+
+1
+k
+
+= −
+
+−
+
+1
+8
+1
+2
+
+F µ
+
+αF να −
+
+1
+4
+
+V AαAαgµν +
+µ2
+
+µ2
+V
+2
+
+AµAν
+
+gµν
+
+(cid:18) 1
+2
+
+Ψ∗
+
+,αΨ,α +
+
+µ2
+S
+2
+
+Ψ∗Ψ + V (Ψ)
+
+(cid:19)
+
++
+
+1
+4
+
+(Ψ∗,µΨ,ν + Ψ,µΨ∗,ν) .
+
+(5c)
+
+(5a)
+
+(5b)
+
+2 The identity ∇ν
+
+∗F µν = 0 is useful to derive the equations of motion for the Chern-Simons term.
+
+We note that these equations describe the fully non-linear evolution of the system. Also, we have written the equations
+such that all terms quadratic or of higher order in the vector or scalar ﬁelds appear on the right hand side. In the
+remainder of this work, we will restrict ourselves to the case of scalar and vector ﬁelds with small amplitudes and will
+ignore the higher-order contributions on the right-hand sides of (5a)-(5c).
+
+Under this assumption Eq. (5c) is equivalent to Einstein’s equations in vacuum and a solution to this equation is
+
+the Kerr metric which in Boyer-Lindquist coordinates is given by
+
+6
+
+(cid:18)
+
+1 −
+
+2M rBL
+Σ
+(cid:18) 4M rBL
+(cid:19)
+Σ
+
+ds2 = −
+
++
+
+with
+
+(cid:19)
+
+dt2 +
+
+(cid:18)
+
+1 +
+
+(cid:19)
+
+2M rBL
+Σ
+
+dr2
+
+BL + Σdθ2 + sin2 θ
+
+(cid:18)
+
+BL + a2 +
+r2
+
+2M a2rBL sin2 θ
+Σ
+
+(cid:19)
+
+dφ2
+
+dtdrBL −
+
+(cid:18) 4M rBLa sin2 θ
+Σ
+
+(cid:19)
+
+dtdφ − 2a sin2 θ
+
+(cid:18)
+
+1 +
+
+(cid:19)
+
+2M rBL
+Σ
+
+drBLdφ ,
+
+Σ =r2
+
+BL + a2 cos2 θ, ∆ = r2
+
+BL − 2M rBL + a2 .
+
+(6)
+
+(7)
+
+This geometry describes a rotating BH with mass M and angular momentum J = aM . Note that in order to ensure
+the regularity of the spacetime, i.e. the existence of an event horizon, the BH spin is constrained by the Kerr bound
+a/M ≤ 1.
+
+A second consequence of our assumptions is that the axionic coupling can be neglected. This means that we
+eﬀectively study minimally coupled massive scalar and vector ﬁelds separately and our results will describe small
+linearized ﬁelds around the Kerr background. Any potential instability we ﬁnd is consistent with the above assumptions
+for timescales small enough such that the ﬁelds are small. Over long timescales, the ﬁelds may grow to large amplitudes
+where our assumption no longer remains valid and a non-linear study becomes necessary. We postpone such non-linear
+evolutions to a future investigation.
+
+In our approximation, the scalar and vector ﬁeld dynamics are governed by the linearized version of Eqs. (5a)
+
+and (5b)
+
+(cid:0)∇ν∇ν − µ2
+(cid:1) Ψ = 0 ,
+S
+V Aµ = 0 ,
+∇νF µν + µ2
+
+(8a)
+
+(8b)
+
+while the Kerr metric (6) satisﬁes Gµν = 0, i. e. Eq. (5c) linearized in Ψ and Aµ.
+
+Evolution equations for scalar ﬁelds. Because we intend to solve the equations of motion (8a) and (8b)
+numerically, it is convenient to reformulate them as time evolution problem. For this purpose we employ the 3 + 1-
+decomposition of the spacetime (see e.g. [63]) and consider the background spacetime in generic 3 + 1-form
+
+ds2 = − α2dt2 + γij(dxi + βidt)(dxj + βjdt) .
+
+(9)
+
+Here, γij is the spatial metric and α and βi are the lapse function and shift vector which represent the coordinate or
+gauge freedom of general relativity. We introduce the conjugated momenta
+
+ΠR = −
+
+1
+α
+
+(∂t − Lβ)ΨR , ΠI = −
+
+1
+α
+
+(∂t − Lβ)ΨI ,
+
+(10)
+
+where XR := (cid:60)(X) and XI := (cid:61)(X) denote the real and imaginary parts, respectively. Deﬁnition (10) provides
+evolution equations for the scalar ﬁeld Ψ
+
+∂tΨR =LβΨR − αΠR ,
+
+∂tΨI = LβΨI − αΠI ,
+
+(11)
+
+where LβΨR,I = βk∂kΨR,I . By applying the 3 + 1-split to the Klein-Gordon equation (8a), we obtain the evolution
+equations for the momentum
+
+∂tΠR =LβΠR − DiαDiΨR + α(−DiDiΨR + KΠR + µ2
+∂tΠI =LβΠI − DiαDiΨI + α(−DiDiΨI + KΠI + µ2
+
+SΨR)
+SΨI ) ,
+
+(12a)
+
+(12b)
+
+where LβΠR,I = βk∂kΠR,I . Di is the covariant derivative associated with the 3-metric γij and K is the trace of the
+extrinsic curvature.
+
+7
+
+Evolution equations for vector ﬁelds. We next apply the 3+1 decomposition to the evolution equation (8b) and
+obtain
+
+∇ν∇µAν − ∇ν∇νAµ + µ2
+
+V Aµ = − (cid:2)∇ν∇νAµ − ∇µ(∇νAν) − Rµ
+
+νAν − µ2
+
+V Aµ
+
+(cid:3) = 0 .
+
+By operating with ∇µ on Eq. (13) it is straight-forward to show that the Lorenz gauge
+
+∇µAµ =0
+
+(13)
+
+(14)
+
+needs to be satisﬁed. For a vacuum background spacetime as considered in our work, we also have Rµν = 0 and
+Eq. (13) simpliﬁes to
+
+∇ν∇νAµ − µ2
+
+V Aµ = 0 .
+
+(15)
+
+Note, that in case of a non-vanishing cosmological constant Λ, Rµν = Λgµν and in place of Eq. (15) we would obtain
+
+∇ν∇νAµ − (Λ + µ2
+
+V )Aµ = 0 ,
+
+(16)
+
+i. e. the cosmological constant enters as an additional “mass”-like term. In particular, it changes the evolution equation
+of a massless vector ﬁeld to that of a massive one. Note, however, that the Maxwell equations in Kerr-(anti-)de Sitter
+background are known to be separable and can be written in the form of a Teukolsky type equation [29, 64, 65].
+Therefore, one might expect that the equations of motion for a massive vector ﬁeld in a vacuum Kerr spacetime
+should also be separable. We emphasize, however, that this analogy between a massless ﬁeld with cosmological
+constant and a massive one without needs to be taken with care: a massless vector ﬁeld has only 2 dynamical degrees
+of freedom irrespective of the value of the cosmological constant, whereas a massive vector ﬁeld has 3. In fact, up
+to date, a separation of the equations of motion for a massive vector ﬁeld has not been accomplished.
+It is not
+immediately obvious, for this reason, whether there exists a well-deﬁned correspondence between the two cases. In
+this work we focus on Λ = 0 and therefore leave a detailed investigation of this question for future work.
+
+We now apply the 3+1 decomposition to the vector ﬁeld and split Aµ into its spatial part and normal component
+
+Aµ = γν
+
+µAν , and ϕ = −nµAµ ,
+
+(17)
+
+where nµ is the vector normal to the spatial hypersurface Σ. The vector ﬁeld can be reconstructed from its projections
+according to Aµ = Aµ + nµϕ. Furthermore, the projection of the Maxwell tensor along the normal vector nµ yields
+the electric ﬁeld
+
+which is a purely spatial quantity, i.e., Eµnµ = 0.
+
+With all the necessary ingredients at hand we now proceed by performing the 3 + 1-split Eqs. (14) and (15). In
+
+terms of the dynamical variables {ϕ, Ai, Ei} this procedure results in the constraint
+
+Eµ =Fµνnν ,
+
+(18)
+
+and in the evolution equations
+
+CE =DiEi + µ2
+
+V ϕ = 0 .
+
+(∂t − Lβ)ϕ = − α (cid:0)DiAi − Kϕ(cid:1) − AiDiα ,
+(∂t − Lβ)Ai = − α (Ei + Diϕ) − ϕDiα ,
+(∂t − Lβ)Ei =α (cid:0)µ2
+
+V Ai + KEi − 2EjKij + Dj(DiAj − DjAi)(cid:1) + Djα(DiAj − DjAi) ,
+
+where Lβϕ = βk∂kϕ, LβAi = βk∂kAi + Ak∂iβk and LβEi = βk∂kEi + Ek∂iβk.
+
+(19)
+
+(20a)
+
+(20b)
+
+(20c)
+
+B. Background in horizon penetrating coordinates
+
+In practice, it is convenient to employ horizon penetrating coordinates and consider the Kerr spacetime in Cartesian
+Kerr-Schild coordinates (t, x, y, z). Without loss of generality, we assume the angular momentum to point in the z
+direction. Then, the Kerr-Schild form of the lapse function α, shift vector βi, 3-metric γij and extrinsic curvature
+Kij is given by
+
+α =(1 + 2Hltlt)−1/2 ,
+
+βi = −
+
+2Hltli
+1 + 2Hltlt ,
+
+γij = δij + 2Hlilj ,
+
+Kij = −
+
+1
+α
+
+(lilj∂tH + 2Hl(i∂tlj)) − 2α (cid:0)∂(i(lj)Hlt) + 2H 2ltlkl(i∂|k|lj) + Hltliljlk∂kH(cid:1) ,
+
+(21a)
+
+(21b)
+
+where
+
+H =
+
+M r3
+BL + a2z2 ,
+r4
+
+BL
+
+(cid:18)
+
+lµ =
+
+1,
+
+rBLx + ay
+BL + a2 ,
+r2
+
+rBLy − ax
+BL + a2 ,
+r2
+
+z
+rBL
+
+(cid:19)
+
+.
+
+and the Boyer-Lindquist radial coordinate rBL is related to the Cartesian Kerr-Schild coordinates by
+
+x2 + y2
+BL + a2 +
+r2
+
+z2
+r2
+BL
+
+=1 .
+
+C.
+
+Initial data
+
+8
+
+(22)
+
+(23)
+
+In this work we consider two types of initial conﬁgurations: (i) generic pulses of Gaussian shape and (ii) bound
+states which are particularly suitable for identifying putative instabilities. We describe each of these initial data in
+detail.
+Gaussian initial data. We specify Gaussian wave packets of the form
+
+Ψ(t = 0) =0 , Π(t = 0) = exp
+
+−
+
+(cid:18)
+
+(cid:18)
+
+ϕ(t = 0) =0 , Ai(t = 0) = exp
+
+−
+
+(cid:19)
+
+(r − r0)2
+w2
+(r − r0)2
+w2
+
+0Σ(θ, φ) ,
+
+(cid:19)
+
+−1Σ(θ, φ) , Ei(t = 0) = 0 ,
+
+i = 1, 2, 3 ,
+
+(24a)
+
+(24b)
+
+where r = (cid:112)x2 + y2 + z2 is the Kerr-Schild radial coordinate. r0 and w are the center and width of the Gaussian,
+while 0Σ(θ, φ) and −1Σ(θ, φ) represent superpositions of spherical harmonics sYlm(θ, φ) of spin weight s = 0 and
+s = −1, respectively. Expressed in Cartesian coordinates (x, y, z)
+
+x = r sin θ cos φ ,
+
+y = r sin θ sin φ ,
+
+z = r cos θ ,
+
+(25)
+
+the spin-weighted spherical harmonics up to l = 2 are given by Eqs. (B1)-(B6) in Appendix B.
+Bound state initial data. Our second type of initial data is given by the quasi-bound states of massive scalar ﬁelds
+around BHs which represent long-lived modes of massive scalar ﬁeld perturbations around Schwarzschild or Kerr BHs
+and have been studied extensively in the literature in the frequency domain [9, 34, 36, 37, 40, 41, 66]. Our particular
+interest in these modes arises from their pure nature; they represent potentially superradiant, single-frequency states.
+By specifying single-mode states of this type, we are able to suppress interference or beating eﬀects of the kind
+discussed below for Gaussian initial data. Evolutions of such modes additionally serve as a useful test for our code
+[44].
+
+There exist powerful and simple methods to construct the bound states for massive scalars, either by direct numerical
+integration or a continued fraction approach [9, 14, 36, 37]. Here, we adopt Leaver’s continued fraction method and
+obtain in Boyer-Lindquist coordinates
+
+Here, Slm(θBL) are spheroidal harmonics [67] and the radial dependence is given by
+
+Ψlm =e−ıωtBL e−ımφBL Slm(θBL)Rlm(rBL) .
+
+Rlm(rBL) =(rBL − rBL,+)−ıσ(rBL − rBL,−)ıσ+χ−1erBLq
+
+∞
+(cid:88)
+
+n=0
+
+an
+
+(cid:18) rBL − rBL,+
+rBL − rBL,−
+
+(cid:19)n
+
+,
+
+with
+
+σ =
+
+2rBL,+(ω − ωc)
+rBL,+ − rBL,−
+
+,
+
+(cid:113)
+
+q = ±
+
+µ2
+S − ω2 , χ =
+
+S − 2ω2
+µ2
+q
+
+.
+
+(26)
+
+(27)
+
+(28)
+
+√
+
+M 2 − a2 are the radii of the inner and outer horizon and ωc = mΩH = m a
+rBL,± = M ±
+is the critical
+frequency for superradiance. All remaining terms in this expression are known in closed form and the characteristic
+frequency ω can be obtained by solving a three-term recurrence relation for the coeﬃcients an given by, e.g., Eqs. (35)-
+(48) of [37]. For our purposes, we still need to transform these results from Boyer-Lindquist to Kerr-Schild coordinates
+denoted in this discussion for clarity by a subscript “KS”,
+
+2M rBL,+
+
+dtKS =dtBL +
+
+2M rBL
+∆
+
+drBL ,
+
+drKS = drBL ,
+
+dθKS = dθBL ,
+
+dφKS = dφBL +
+
+a
+∆
+
+drBL .
+
+(29)
+
+Then, the bound state scalar ﬁeld is given by
+
+Ψlm =e−ıωtKS (rKS − rKS,+)A(rKS − rKS,−)B
+
+(cid:18) rKS − rKS,+
+rKS − rKS,−
+
+(cid:19)C
+
+Ylm(θKS, φKS)Rlm ,
+
+(30)
+
+9
+
+where A = − 2ıωM rKS,+
+rKS,−−rKS,+
+the Kerr-Schild radius and angles by (r, θ, φ).
+
+, B = 2ıωM rKS,−
+rKS,−−rKS,+
+
+, C =
+
+ıma
+rKS,−−rKS,+
+
+. Henceforth we will drop the subscript “KS” and denote
+
+The corresponding conjugated momenta Πlm are computed from their deﬁnition, Eq. (10). Unfortunately, a simple
+construction of these modes exists only for scalar ﬁelds, while for vector ﬁelds a fully numerical procedure is required
+[36, 37, 40, 41]. Partly for this reason and partly because Gaussian initial data turn out to be adequate for the
+identiﬁcation of superradiant instabilities we will not consider vector bound states in the remainder of this work.
+
+D. Wave extraction and output
+
+The main diagnostic quantities extracted from our simulations are the radiated scalar and vector waves. The scalar
+multipoles are directly obtained from interpolating the ﬁelds ψ and Π onto spheres of constant coordinate radius
+r = rex and projecting onto s = 0 spherical harmonics according to
+
+(cid:90)
+
+Ψlm(t) =
+
+dΩΨ(t, θ, φ)Y ∗
+
+lm(θ, φ) , Πlm(t) =
+
+(cid:90)
+
+dΩΠ(t, θ, φ)Y ∗
+
+lm(θ, φ) .
+
+(31)
+
+For vector ﬁelds, we construct the gauge invariant Newman Penrose scalar [68] (see also, e.g., [69–71] for recent
+applications in numerical simulations).
+
+Φ2 =Fµν(cid:96)µ ¯mν ,
+
+(32)
+
+where (cid:96)µ = 1√
+(vµ − ıwµ) are vectors of a null tetrad. In practice, the vectors of the null
+2
+tetrad are constructed from a Cartesian orthonormal basis {ui, vi, wi} on the spatial hypersurface and the timelike
+orthonormal vector nµ. Together with the reconstruction of the Maxwell tensor from
+
+(nµ − uµ) and ¯mµ = 1√
+2
+
+we can straightforwardly derive the Newman-Penrose scalar Φ2 whose real and imaginary components are given by
+
+Fµν =nµEν − nνEµ + DµAν − DνAµ
+
+(33)
+
+(cid:2)ER
+
+1
+2
+(cid:2)ER
+
+ΦR
+
+2 = −
+1
+2
+
+2 =
+
+ΦI
+
+i vi + uivj(DiAR
+
+j − DjAR
+
+i ) + EI
+
+i wi + uiwj(DiAI
+
+j − DjAI
+
+i )(cid:3) ,
+
+i wi + uiwj(DiAR
+
+j − DjAR
+
+i ) − EI
+
+i vi − uivj(DiAI
+
+j − DjAI
+
+i )(cid:3) .
+
+Finally, we obtain the multipoles by projecting Φ2 onto s = −1 spin-weighted spherical harmonics
+
+(cid:90)
+
+(cid:90)
+
+ΦR
+
+2lm
+
+(t) =
+
+ΦI
+
+2lm
+
+(t) =
+
+dΩ (cid:2)ΦR
+
+2 (t, θ, φ)−1Y R
+
+lm(θ, φ) + ΦI
+
+2(t, θ, φ)−1Y I
+
+lm(θ, φ)(cid:3) ,
+
+dΩ (cid:2)ΦI
+
+2(t, θ, φ)−1Y R
+
+lm(θ, φ) − ΦR
+
+2 (t, θ, φ)−1Y I
+
+lm(θ, φ)(cid:3) .
+
+(34)
+
+(35)
+
+(36)
+
+(37)
+
+E. Numerical implementation
+
+We have implemented this framework as a module Lin-Lean in the Lean code [72], which is based on the Cac-
+tus computational toolkit [73, 74] and the Carpet mesh reﬁnement package [75, 76]. The evolution equations
+are integrated in time using the method of lines with a fourth-order Runge-Kutta scheme and fourth-order spatial
+discretization on all reﬁnement levels except the innermost where we excise the black-hole singularity and use second-
+order accurate stencils instead. The excision is implemented by removing a “legosphere” of radius rex ≤ 1M centered
+Inside the
+on the singularity [77, 78] and therefore guaranteed to be inside the event horizon for all values of a.
+excision region, we set all evolution variables to their ﬂat spacetime values α = 1, βi = 0, γij = δij and Kij = 0,
+and extrapolate values onto the excision boundary from the exterior regular grid; see [77, 78] for more details of this
+procedure.
+
+10
+
+0Σ(θ, φ)
+
+Run
+sS m000
+sK m000
+sS m001
+sS m042
+sS m100
+sK m042c
+sK m042m 0.42 0.99
+0.42 0.99
+sK m042f
+
+Grid Setup
+{(384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/100}
+{(384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/108}
+{(1024, 512, 256, 128, 64, 32, 8, 4, 2), h = M/40}
+
+M µS a/M
+0.00 0.00 Y00 + Y10 + Y1−1 − Y11
+0.00 0.99 Y00 + Y10 + Y1−1 − Y11
+0.10 0.00
+0.42 0.00 Y10 + Y11 + Y20 + Y22 {(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+1.00 0.00
+0.42 0.99 Y00 + Y10 + Y1−1 − Y11 {(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+{(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/72}
+{(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/84}
+
+{(1024, 512, 256, 128, 64, 32, 8, 4, 2), 1/40}
+
+Y11,1−1
+Y11,1−1
+
+Y11
+
+Y11
+
+TABLE I.
+Initial setup for simulations of a scalar ﬁeld with Gaussian initial data located at r0 = 12 M and with width
+w = 2M in a Schwarzschild or Kerr background. We denote the mass parameter M µS, the dimensionless spin parameter a/M ,
+the modes of the initial pulse 0Σ(θ, φ) and the speciﬁc grid setup, measured in units of the BH mass M , following the notation
+of Sec. II E in [72].
+
+M δ10
+M µS a/M M ω11 (n = 0)
+0.0284
+0.00 0.00 0.2929 − i0.09766
+0.0097
+0.00 0.99 0.4934 − i0.03671
+0.42 0.00 0.4075 − i0.001026
+0.0072
+0.42 0.99 0.4088 + i1.504 · 10−7 0.4151 + i5.364 · 10−8 0.0063
+0.0348
+1.00 0.00 0.9222 − i0.11842
+0.075
+1.00 0.99 0.8765 − i0.18994
+
+M ω11 (n = 1)
+0.2645 − i0.3063
+0.4837 − i0.09880
+0.4147 − i0.0004053
+
+0.9570 − i0.04792
+0.9515 − i0.06292
+
+TABLE II. Frequencies for the fundamental (n = 0) and ﬁrst overtone (n = 1) modes of (i) the quasi-normal modes for
+M µS = 0 and (ii) the bound states for M µS = 0.42, 1.0 for a set of BH spins a/M obtained with the continued fraction
+method. The beating frequency δ10 is deﬁned as the diﬀerence of the real parts of the frequencies for n = 0 and n = 1.
+
+III. SCALAR FIELD EVOLUTIONS
+
+In this section we report our results obtained for the evolution of scalar ﬁelds in BH background spacetimes. For
+this purpose, we have evolved Gaussian wave pulses of width w = 2 M centered at r0 = 12 M around either a non-
+rotating Schwarzschild BH or a rapidly spinning Kerr BH with a/M = 0.99. The set of our simulations is summarized
+in Table I.
+
+As mentioned in the introduction, the resulting signal is typically composed of three stages, a transient, an expo-
+nential ringdown phase and late-time tails. Whereas we identify these stages clearly in evolutions of massless scalar
+ﬁelds, the massive case exhibits a richer phenomenology which we will discuss in detail further below. First, however,
+we summarize results from the literature and present tests of our numerical infrastructure.
+
+A. A summary of results in the literature
+
+In the following discussion, we will make frequent use of the characteristic frequencies of the two lowest (fundamental
+and ﬁrst overtone) modes of the dipole as obtained from a linearized analysis in the frequency domain [9, 11]. These
+values are summarized for a set of chosen mass parameters µS of the scalar ﬁeld and our two choices of the rotation
+parameter a/M in Table II.
+
+In the case of massless perturbations the classiﬁcation of oscillation modes is relatively straightforward; there
+exists one family of oscillation modes, the quasi-normal modes, characterized by an integer number and the “lowest”
+or fundamental mode is deﬁned as having the largest damping time. In fact, massless perturbations are generally
+short-lived and decay fast (on timescales of order of the BH mass) unless the BH is rotating at nearly extremal
+rate.
+In contrast, massive perturbations generally decay on larger timescales and their class of oscillation modes
+contains a second family with proﬁles concentrated near the eﬀective potential well. These long-lived modes, referred
+to as “bound states” [37], are conventionally ordered by decreasing absolute value of the imaginary part, i. e. the
+fundamental oscillation mode is deﬁned as that with the shortest damping time. This is in contrast to the usual
+quasinormal modes, which are conventionally ordered by increasing imaginary part. The values for the fundamental
+
+(n = 0) and the ﬁrst overtone (n = 1) bound state mode obtained from the continued fraction method are listed in
+Table II together with the diﬀerence δ10 ≡ ωn=1
+R which will play an important role in our interpretation of the
+results further below.
+
+R − ωn=0
+
+In the regime of small mass couplings M µS, one ﬁnds an analytic approximation for the oscillation frequencies of
+
+these bound states, resembling a hydrogen-like spectrum [40, 41],
+
+11
+
+M ωR =M µS −
+
+(M µS)3
+2(l + n + 1)2 ,
+
+M ωI = − ıδν
+
+(cid:18) M µS
+
+(cid:19)3
+
+l + n + 1
+
+,
+
+(38a)
+
+(38b)
+
+where δν is given by Eq. (C8) of [41].
+
+At late times, after the relaxation of the BH, power-law tails arise [13–15, 79]. Power-law tails exist both in ﬂat
+and in curved spacetime and are generically caused by a failure of Huygen’s principle. In the case of ﬂat spacetime,
+they can arise in massive interactions [16] or even with massless ﬁelds in odd-dimensional spacetimes due to the
+peculiar nature of the Green’s function [17]. Curved backgrounds give generically rise to power-law tails which are a
+consequence of the continued scattering of the scalar ﬁeld oﬀ the background curvature. These tails have the form
+
+For massless scalar ﬁelds, one ﬁnds one exponent p given by
+
+p = −(2l + 3) .
+
+Ψ ∼ tp sin(µSt) .
+
+(39)
+
+(40)
+
+Tails of massive perturbations, however, exhibit a more complex behaviour; details depend on the mass parameter µS
+[80–83], but their intermediate and late-time behaviour is characterized by
+
+p = −(l + 3/2) , at intermediate times ,
+p = −5/6 , at very late times .
+
+(41a)
+(41b)
+
+These exponents are loosely associated with the two timescales M, µS of the problem; in particular, intermediate
+times refer to the window (we assume small M µS) M µS (cid:28) tµS (cid:28) (M µS)−2.
+
+Note, that the intermediate-time behavior is identical to the power-law behavior of massive ﬁelds in ﬂat spacetime
+
+[16] whereas the late-time behavior is also aﬀected by scattering oﬀ the spacetime curvature.
+
+B. Space dependent mass coupling and massless scalars
+
+We next employ the results summarized in the previous section to test our numerical framework. For the ﬁrst
+S = −10M 2/r4 in a
+test, we consider the unphysical scenario of a scalar ﬁeld with space-dependent mass term µ2
+Schwarzschild background. This choice is motivated by the strong instability it generates and provides a unique and
+fast setup to test the code in a particularly violent regime. A mode analysis of the Klein-Gordon equation for this
+choice of µS is straightforward and demonstrates the existence of at least one unstable mode with time dependence
+(cid:17)
+Ψ ∼ e0.071565t. The results obtained for the evolution of a spherical shell described by Ψt=0 = 1√
+4π
+are shown in Fig. 2 which shows the amplitude of the scalar ﬁeld extracted at rex = 10 M as a function of time. Our
+numerical results are consistent with an exponential growth, Ψ ∼ e0.07161t in excellent agreement with the frequency
+calculation.
+
+− (r−12)2
+4
+
+exp
+
+(cid:16)
+
+A second test for our code is provided by the evolution of massless scalar ﬁelds around BHs, a case well studied
+in the literature [9, 10]. For this purpose we have initialized the ﬁeld by a Gaussian with r0 = 12 M and w = 2 M
+and extracted the monopole and dipole at rex = 10. The results are shown in Fig. 3 for a BH background with
+a/M = 0 and a/M = 0.99, respectively. The waveform displays the familiar features; an early transient followed by
+an exponentially decaying sinusoid and a power-law tail at late times. A ﬁt to the ringdown phase of the dipole yields
+numerical QNM frequencies within less than 2% of the values in Table II. Likewise, we obtain a numerical power-law
+tail of the form tp for the monopole, with p = −3.08 for a/M = 0 and p = −3.07 for a/M = 0.99 in good agreement
+with the prediction p = −3 obtained from the low-frequency expansion of the wave equation underlying Eq. (40).
+
+Additionally, we have performed a convergence analysis for the more challenging of these two cases, that of a
+highly rotating BH background with a/M = 0.99. This analysis provides the estimate of the numerical uncertainties
+∆Ψ11/Ψ11 ≤ 8% for the l = m = 1 mode at late times of the evolution and ∆Ψ00/Ψ00 ≤ 3% for l = m = 0.
+
+12
+
+FIG. 2. Amplitude of the scalar ﬁeld extracted at rex = 10 M as function of time obtained from the evolution of a scalar ﬁeld
+initialized as spherical shell with space dependent mass µ2
+
+S = −10M 2/r4, around a non-rotating BH.
+
+Evolution of a Gaussian proﬁle of a massless scalar ﬁeld with width w = 2 M centered at r0 = 12 M around a
+FIG. 3.
+Schwarzschild BH (left panel) and around a Kerr BH with a/M = 0.99 (right panel). We depict the l = 0 (solid black line)
+and l = m = 1 (red dashed line) multipoles.
+
+C. Massive scalar ﬁelds
+
+Having tested the numerical framework, we next explore the dynamics of generic, massive scalar ﬁelds. A mass
+term introduces a new scale to the problem and new features appear in the evolution which depend on the particular
+details of the initial conﬁguration. Roughly, these conﬁgurations can be classiﬁed into three groups.
+
+• Bound state conﬁgurations. These conﬁgurations are characterized by unusually long-lived modes [21, 33–
+37, 44, 52, 84], and exist for any m, µS (cid:54)= 0. These modes are described by Eq. (38) for small M µS. If they,
+furthermore, satisfy the condition ωR < µS ≤ mΩH they are subject to the superradiant instability.
+
+• Rapidly damped conﬁgurations. Generic initial proﬁles of massless or massive scalar ﬁelds typically decay on
+
+short time scales via quasi-normal ringdown followed by a power-law tail.
+
+0100200300400t/M0102030ln |ψ00|ln |ψ00|e0.07161 te0.071565 t050100150t / M 10-810-610-410-2100| ψlm |l = m = 0l = m = 1050100150200250t / M 10-810-610-410-2100| ψlm |l = m = 0l = m = 1• Beating regime. Additionally, massive ﬁelds may exhibit long-lived, strongly modulated oscillations which result
+
+from the interplay between diﬀerent overtones of the same multipole.
+
+In the following we will discuss numerical evolutions of initial conﬁgurations for each of these classes in more detail.
+
+13
+
+1. Bound states
+
+Left and center: Initial proﬁle of |Ψ11|2 for a bound state m = 1 dipole conﬁguration with M µS = 0.42 in a
+FIG. 4.
+Schwarzschild (left panel) and a/M = 0.99 Kerr background (mid panel). Black solid lines represent the fundamental mode
+and red dashed lines the ﬁrst overtone. Right: Relative change of the modulus of the (1, 1) mode extracted at rex = 20 M .
+
+We have constructed bound-state initial conﬁgurations for ﬁelds with a mass coupling M µS = 0.42, cf. Eq. (30),
+following [9, 36, 37], and evolved them in a Schwarzschild or a Kerr background with a/M = 0.99. In the left and
+center panels of Fig. 4 we show the modulus of the fundamental mode and ﬁrst overtone of the m = 1 dipole bound
+state along the x-axis; cf. Table II. For non-rotating BHs the fundamental bound state is localized near the origin,
+whereas its maxima are shifted to larger radii as the rotation parameter a/M is increased. For a highly spinning BH
+with a/M = 0.99, the fundamental mode is peaked at around r ∼ 12 M . For the ﬁrst overtone we observe a node
+at rnode ∼ 22.5 M and at rnode ∼ 26.5 M for a/M = 0 and a/M = 0.99, respectively. The speciﬁc structure of the
+bound-state proﬁles will play an important role in our analysis of beating eﬀects below.
+
+Throughout the time evolution, we expect the bound state scalar ﬁeld to remain localized in the vicinity of the BH.
+Thus, by construction, its absolute value Ψ11Ψ∗
+11 ∼ exp(−ıωt) exp(ıωt) ∼ const. should remain almost constant in
+time, with a small growth rate of M ωI ∼ 1.5 · 10−7 [36, 37]. This behavior is conﬁrmed in the animations generated
+from our numerical data and made available online [85]. Here we have tested these properties numerically by extracting
+the dipole mode as a function of time at rex = 20 M . The result is shown in the right panel of Fig. 4 for a Kerr
+background with a/M = 0.99. The scalar ﬁeld varies by less than ∼ 2% until t ∼ 200 M and by less than ∼ 1% at
+late times, which is within the numerical uncertainties.
+
+We note that bound states are unstable states, but have a long instability time scale of ∼ 107M (see Table II),
+about three orders of magnitude larger than the evolution times feasible within our framework. Over the time range
+covered in the ﬁgure the instability has not yet generated a visible growth in amplitude.
+
+2. Damped states: ringdown and tails
+
+In order to study the behaviour of rapidly damped conﬁgurations, we initialize the ﬁeld by a Gaussian wave pulse
+with r0 = 12 M and w = 2 M according to Eq. (24a). The speciﬁc choices of the mass coupling M µS, rotation rate
+a/M and the initial mode contributions for our set of simulations are summarized in Table I. The resulting dipole
+and monopole amplitudes for a subset of our simulations are shown in Fig. 5. For all simulations we observe the
+expected pattern of an early transient followed by quasi-normal ringdown and a late-time tail which is dominated
+by an oscillatory behaviour characterized by the mass term according to Eq. (39) and governed by scattering oﬀ
+spacetime curvature according to Eq. (41b) at late times [81–83].
+
+At intermediate times we ﬁnd for the case of an m = 1 dipole with M µS = 0.1 (left upper panel of Fig. 5), an
+oscillatory decay of the ﬁeld as Ψ11 ∼ t−2.543 sin(0.1t), within 2% of the expected value for tails at intermediate times
+
+-100-75-50-250255075100x / M00.250.50.751| ψ11 |2fundamental modeovertone mode-100-75-50-250255075100x / M00.511.522.5| ψ11 |2fundamental modeovertone mode0100200300t / M -0.03-0.02-0.0100.010.02| ψ11 | / | ψ11,t=0 | - 114
+
+FIG. 5. Upper left: l = m = 1 multipole of run sS m001 extracted at 10M . The solid (black) line refers to numerical data,
+the dashed (red) to an oscillatory tail ﬁt. Upper right: Same for sS m100, extracted at rex = 20 M (black solid line) together
+with the tail ﬁt (red dashed line, we omit the oscillatory term for clarity). Lower Panels: l = m = 0 multipole of runs sS m042
+(left, extracted at 20M ) and sK m042 (right, extracted at 25M ). The solid black lines refer to the numerical data while the
+red dashed lines denote the the ﬁt to the envelope of the oscillatory late-time tail.
+
+[80–82]; cf. Eqs. (39) and (41a). At very late times, we expect a tail of the form (39) with p = −5/6 to dominate, but
+simulation of suﬃcient duration are computationally too expensive with our present computational framework.
+
+Furthermore, we consider larger mass couplings M µS = 0.42 and M µS = 1. We present the l = m = 1 dipole
+mode of sS m100 in the top right panel of Fig. 5 and the monopole modes for both runs sS m042 and sK m042 in
+the bottom panels of Fig. 5. Here, the intermediately-late time tail with p = −(l + 3/2) in Eq. (39) appears to be
+suppressed. Instead, the decay with p = −5/6 expected at very late times clearly dominates the signal. Focusing
+on the case with mass coupling M µS = 0.42 we observe that the tail is present for both spinning and non-spinning
+BH backgrounds; cf. bottom panel of Fig. 5. For a/M = 0 and a/M = 0.99, we ﬁnd the exponents p = −0.880 and
+p = −0.861, respectively, which agree within 5% with the theoretically expected late-time behaviour [81–83]. We
+note that these results are independent of the extraction radii rex at which the ﬁeld is observed.
+
+050100150200250 t/M10-610-410-2100| ψ11 |Numerical data| t-2.543 sin( 0.1 t ) |100101102t / M 10-510-410-310-210-1100| ψ11 |Numerical datat - 0.873101102103t / M10-610-510-410-310-210-1100| ψ00 |Numerical datat - 0.880101102103 t / M 10-410-310-210-1100| ψ00 |Numerical datat - 0.86115
+
+FIG. 6. Real part of the m = 1 dipole obtained at selected extraction radii rex for a massive scalar ﬁeld with M µS = 0.42 in
+a Schwarzschild (upper panels) and Kerr background with a = 0.99M (bottom panels). The location of the node of the ﬁrst
+overtone is rex = 22.5 M for the Schwarzschild case (upper left most panel) and rex = 26.5 M for the Kerr case (bottom center
+panel). rex ∼ 50 M corresponds to the overtone’s local maximum in the Kerr case.
+
+3. Massive scalar ﬁelds: mode excitation and beating
+
+In addition to the well-known ringdown and decay, the evolution of massive Gaussian wave packets around BHs
+can exhibit more complex patterns. In particular, we expect massive scalar ﬁelds in Kerr backgrounds to eventually
+show exponential growth if they satisfy the superradiance condition Eq. (1) as well as ωR ≤ µS. The timescale for
+this instability, however, is of the order (cid:38) 107 M which is computationally too expensive to be realized within our
+numerical framework. In the following, we therefore focus on the complex signals observed at earlier times up to
+∼ 104 M in the evolution of massive scalar ﬁelds around Schwarzschild or Kerr black holes.
+
+In particular, the time evolution of the l = m = 1 mode of the scalar ﬁeld with mass coupling M µS = 0.42 exhibits
+an oscillatory pattern with signiﬁcant modulation of the amplitude. The quantitative behaviour of the oscillations,
+however, depends sensitively not only on the initial data but also on the radius where the modes are measured. This
+is illustrated in Fig. 6, where we show the m = 1 dipole extracted at diﬀerent radii for M µS = 0.42 considering a
+Schwarzschild or a Kerr BH background with a/M = 0.99. For each conﬁguration shown in the ﬁgure, we have chosen
+three extraction radii, including the location rnode of the node, 22.5 M and 26.5 M respectively, for the Schwarzschild
+and Kerr case.
+
+This phenomenon can be explained in terms of a beating modulation between two or more long-lived modes
+described by Eq. (38). This beating modulation depends on the relative strength of the diﬀerent overtones which, in
+turn, depends on the extraction radius; for the case of a guitar string, for example, a speciﬁc mode cannot be excited
+at the location of its nodes. Our choice of initial parameters for this example did not involve any ﬁnetuning and we
+expect these features to be present in the time evolution of generic massive ﬁelds around BHs provided only that at
+least two long-lived modes are excited.
+
+Our interpretation is conﬁrmed by the Fourier spectra of the m = 1 dipole obtained at diﬀerent radii which are
+shown in Fig. 7 for the two background spacetimes. For the Kerr case with a/M = 0.99 (right panel), we see that
+the signal is dominated by the fundamental mode at rex = 20 M < rnode and has two overtones of smaller amplitude.
+This is in agreement with the weakly modulated high frequency signal in the time evolution in the bottom left panel
+of Fig. 6. As expected, the amplitude modulation is particularly weak for rex = rnode = 26.5 M which coincides with
+the node of the ﬁrst overtone. In fact, the small amount of modulation visible in the bottom center panel of Fig. 6
+
+0100020003000t / M -0.2-0.100.10.2Re( ψ11 )rex = 22.50100020003000t / M -0.2-0.100.10.2Re( ψ11 )rex / M = 300100020003000t / M -0.06-0.04-0.0200.020.040.06Re( ψ11 )rex / M = 500200040006000800010000t / M -0.2-0.100.10.2Re( ψ11 )rex / M = 200200040006000800010000t / M -0.2-0.100.10.2Re( ψ11 )rex / M = 26.50200040006000800010000t / M -0.1-0.0500.050.1Re( ψ11 )rex / M = 5016
+
+FIG. 7.
+Spectra of the l = m = 1 mode of the massive scalar ﬁeld with M µS = 0.42 evolved in the background of a
+Schwarzschild (left panel) or Kerr BH with a/M = 0.99 (right panel). The lines correspond to the waveforms measured at
+diﬀerent extraction radii. In particular, rex = 22.5 M (left) and rex = 26.5 M (right) correspond to the nodes of the ﬁrst
+overtone.
+
+at early times is mostly due to the second overtone which, however, damps out at later times. Then, the envelope
+is almost constant with a small growth rate M ωI ∼ 10−7, in order-of-magnitude agreement with previous studies
+[37, 44]. The situation is markedly diﬀerent at rex = 50 M , where the ﬁrst overtone has a local maximum and the
+comparable strength of fundamental mode and overtone result in the strong beating modulation displayed in the
+bottom right panel of Fig. 6. This analysis can be repeated for the non-rotating case, with similar conclusions. In
+contrast to the Kerr case, however, all modes decay resulting in overall damped signals.
+
+Before proceeding with a detailed analysis of the beating modulation and mode excitation, we perform a convergence
+analysis of this setup which represents the most demanding and longest of our simulations. For this purpose, we have
+evolved the setup sK m042 using three diﬀerent resolutions hc = M/60, hm = M/72 and hh = M/84. We present
+the convergence plot, i.e. the diﬀerences between the coarse-medium and medium-high resolution runs in Fig. 8 for
+the monopole (left panel) and dipole (right panel). Our numerical results show second order convergence throughout
+the simulation. We estimate the discretization error to be about ∆ψ11/ψ11 ≤ 1.1% for the entire interval and
+∆ψ00/ψ00 ≤ 1% l = m = 0 mode at early time which increases to ∆ψ00/ψ00 ≤ 7% at late times.
+Beating. In order to better understand the beating pattern quantitatively, let us for simplicity consider the presence
+of only two modes with similar frequencies: the long-lived fundamental mode with frequency ω0 = ωR,0 + ıωI,0 ∼ ωR,0
+and amplitude A0 and the ﬁrst overtone with frequency ω1 = ωR,0 + δ10, where δ10 (cid:28) 1, and amplitude A1. The
+generalization to a larger number of modes is straightforward. For illustration, we explicitly list δ10 for a selected
+subset of conﬁgurations in Table II. Because all these modes are long-lived, they are well approximated by pure
+sinusoids over short periods of time. The waveform Ψ is then described by the superposition
+
+Ψ ∼ (A0 − A1) sin(ωR,0t) + A1 sin(ωR,0t) cos(δ10t/2) .
+
+(42)
+
+The modulation in amplitude is governed by the low-frequency signal cos δ10t whereas the beating amplitude depends
+on the relative strength of the modes A0, A1. For equal amplitudes A0 = A1, for instance, the total signal is given
+by a sinusoid modulated by a cosine. The beating frequency δ10 can be estimated by ﬁtting the envelope of the total
+signal. For the two cases displayed in Fig. 6 we obtain δ10 ∼ 0.0074 (for sS m042) and δn0 ∼ 0.0063 (for sK m042),
+in excellent agreement with the corresponding predictions listed in the third and fourth row of Table II.
+
+This picture is conﬁrmed by calculating the mode spectra from a Fourier transformation of the time series. The
+spectra thus obtained for the two conﬁgurations and diﬀerent extraction radii are shown in Fig. 7 and each exhibit
+three pronounced peaks which correspond to the real parts of the fundamental and ﬁrst two overtone QN frequencies.
+A spectral analysis applied to the Kerr case a/M = 0.99 reveals δ10 = 0.0063 and δ20 = 0.0087. Thus, the evolution of
+Gaussian initial data excites a third long-lived mode which is not listed in Table II. We have veriﬁed that this mode
+indeed exists, via a continued fraction scheme in the frequency domain, corresponding to M ω = 0.41730+i2.265×10−8.
+
+0.360.380.40.420.440.46M ωR00.0050.010.0150.020.0250.03Arex / M = 22.5rex / M = 30rex / M = 500.360.380.40.420.440.46M ωR00.010.020.030.040.050.06Arex / M = 20rex / M = 26.5rex / M = 5017
+
+Lower panels: Convergence plot of the l = m = 0 (left panel) and l = m = 1 (right panel) modes of simulation
+FIG. 8.
+sK 042. We present the diﬀerences between the coarse-medium and medium-high resolution runs, where the latter is ampliﬁed
+by Q2 = 1.66 indicating second order convergence.
+
+Mode excitation. The mode excitation can be put on a more rigorous framework: Leaver’s seminal work, in
+particular, has established important results in this context and for further details we refer the reader to the original
+work [14] as well as comprehensive follow-up studies [9, 86, 87]. The upshot is that each quasi-normal mode, which
+corresponds to a pole in the complex-frequency plane, is excited to a diﬀerent degree depending on the initial data
+and on the mode in question. The QNM contribution can be isolated from other features of the signal, such as
+the late-time tail, using the Green’s function technique [14, 86, 87]. In this formalism, the scalar ﬁeld amplitude at
+intermediate times is given by a sum over quasinormal modes as
+
+(cid:88)
+
+Ψ =
+
+Cne−iωntψn(ωn, r) ,
+
+(43)
+
+where ψn(ωn, r) is the quasinormal mode eigenfunction and ωn its frequency, both quantities can be computed via the
+Fourier-domain ordinary diﬀerential equation that governs massive scalars in the Kerr background [14, 86, 87]. The
+numbers Cn, called excitation coeﬃcients characterize the amplitude to which each mode is excited. Two quantities
+are crucial to determine the excitation coeﬃcients [87]: the behavior of ψn close to the eigenfrequency ωn, and the
+convolution of the eigenfunction ψn with the initial data. Thus, for instance, the relative amplitude between diﬀerent
+modes depends strongly on the point where this amplitude is evaluated: if it is close to a node of one of the modes,
+the mode in question will have a very small amplitude: by deﬁnition a mode is not excited at its node. Likewise,
+localized initial data close to the node of the mode do not excite the mode in question, a well-known result for closed
+systems [87].
+
+We have not attempted a complete quantitative understanding of mode excitation for this work, a preliminary
+analysis indicates that the excitation coeﬃcients are indeed of comparable magnitude away from the nodes of the
+eigenmodes, but vary substantially close to the nodes.
+
+IV. PROCA FIELD EVOLUTIONS
+
+The evolution of vector ﬁelds, as for example the photon, are governed by Eq. (8b) which, after substitution of the
+deﬁnition Fµν = ∇µAν − ∇νAµ and the Lorenz condition, Eq. (14), becomes rather similar to its scalar counterpart
+(8a). For this reason, it has been believed for a long time that massive vector ﬁelds should also be prone to a “BH
+bomb”-like superradiant instability. In fact, Rosa and Dolan [42] conjectured that instabilities of vector ﬁelds should
+not only be present but can be much stronger than those of scalar ﬁelds. This has recently been veriﬁed explicitly by
+Pani et al [40, 41] who derived the instability growth rates of massive vector ﬁelds in the slow-rotation approximation
+and found them to be several orders of magnitude larger than their scalar ﬁeld counterparts. Their results, however,
+have been obtained only in the regime of slowly rotating black holes. Even though their results are conjectured to
+hold for arbitrary spins, a deﬁnitive answer to this question calls for the modelling of vector ﬁelds in generic Kerr
+
+0100020003000 t/M-2e-03-1e-030e+001e-032e-03∆ψ00ψ00,1/60 - ψ00,1/721.66 ( ψ00,1/72 - ψ00,1/84 )0100020003000 t/M-2e-03-1e-030e+001e-032e-03∆ψ11ψ11,1/60 - ψ11,1/721.66 (ψ11,1/72 - ψ11,1/84 )18
+
+Run
+
+v1S m000 0.00 0.00
+v2S m000 0.00 0.00
+v1S m010 0.00 0.10
+v1S m020 0.00 0.20
+v2K1 m040 0.50 0.40
+v1K2 m000 0.99 0.00
+v2K2 m040 0.99 0.40
+v2K2 m042 0.99 0.42
+v2K2 m044 0.99 0.44
+v1K2 m100 0.99 1.00
+
+Grid Setup
+{(192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+{(192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+{(192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+{(192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+
+a/M M µV −1Σ(θ, φ) w/M
+2.0
+30.0
+2.0
+2.0
+30.0 {(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+2.0
+30.0 {(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/64}
+30.0 {(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/64}
+30.0 {(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/64}
+2.0 {(1536, 384, 192, 96, 48, 24, 12, 6, 3, 1.5), h = M/60}
+
+Sup1
+Sup1
+Sup1
+Sup1
+Sup2
+Sup1
+Sup1
+Sup1
+Sup1
+Sup1
+
+{(192, 96, 48, 24, 12, 6, 3, 1.5), h = M/96}
+
+TABLE III. Initial setup for simulations of Proca ﬁelds with mass coupling M µV in BH background with dimensionless spin
+parameter a/M . The initial Gaussian pulse with width w/M is located at r0 = 12 M and consists of a superposition of s = −1
+spin-weighted spherical harmonics given by Eq. (44a) (“Sup1”) or Eq. (44b) (“Sup2”). We further denote the grid setup, in
+units of the BH mass M following the notation of Sec. II E in [72].
+
+In the frequency domain, such modelling represents a formidable challenge because the equations of
+geometries.
+motion appear to be non-separable. Here we therefore address this question in the framework of numerical evolutions
+in the time domain, where the non-separability of the equations does not represent a serious obstacle.
+
+For this purpose, we prescribe initial data in the form of a superposition of Gaussian pulses centered around
+r0 = 12 M and composed of several multipoles with angular dependence given by s = −1 spin-weighted spherical
+harmonics −1Ylm. Speciﬁcally, we have chosen linear combinations
+
+−1Σ(θ, φ) = −
+
+−
+
+−1Σ(θ, φ) = −
+
+1
+√
+3
+1
+√
+3
+1
+√
+3
+
+5
+
+( −1Y1−1 + −1Y11) −
+
+( −1Y2−1 − −1Y21) −
+
+( −1Y2−2 − −1Y22) −
+
+2
+35
+
+( −1Y3−2 + −1Y32) ,
+
+( −1Y1−1 + −1Y11) −
+
+( −1Y2−1 − −1Y21) ,
+
+1
+√
+5
+√
+√
+3
+1
+√
+5
+
+1
+√
+6
+
+−1Y10 −
+
+1
+√
+30
+
+−1Y20
+
+(44a)
+
+(44b)
+
+such that the imaginary parts of the ﬁelds vanish. By virtue of the evolution equations (20a)-(20c), purely real initial
+data remain real throughout the evolution so that our choice reduces the computational requirements to evolving
+only seven – instead of 14 – independent variables. We have summarized the initial conﬁgurations of our set of
+simulations together with the grid setup in Table III. In order to analyse the time evolutions of the vector ﬁeld Aµ,
+we decompose its time component ϕ and the Newman-Penrose scalar Φ2, constructed from the spatial components
+according to Eq. (32), into multipoles by projecting them onto spherical harmonics with spin weight s = 0 and s = −1,
+respectively.
+
+A. Massless vector ﬁelds
+
+We ﬁrst study the behaviour of massless vector ﬁeld perturbations with M µV = 0. This case has been studied
+extensively in the literature [9] and therefore also enables us to compare our ﬁndings with previous investigations.
+Our results for massless Proca ﬁelds are summarized in Table IV and Figs. 9 and 10. Let us ﬁrst consider the simplest
+case of a massless vector ﬁeld in Schwarzschild background. The time evolutions of the l = m = 1 multipole obtained
+for initial Gaussian pulses of width w = 2 M and w = 30 M are shown in Fig. 9. For the narrow pulse (solid curve
+in the ﬁgure) we clearly identify the pattern familiar from our scalar ﬁeld evolutions in Sec. III B: an early transient
+whose details depend on the initial conﬁguration is followed by a quasi-normal ringing characterized entirely by the
+BH parameters and a late-time tail. For an initially broad pulse (red dashed curve), however, the initial transient is
+directly followed by a power-law tail with no visible intermediate ringdown stage. This feature has been reported for
+scalar ﬁelds in Refs. [86, 89] and is a consequence of the negligible excitation of the long-lived fundamental mode and
+low overtones by broad pulses; the high overtones which are excited signiﬁcantly by this type of initial data rapidly
+decay before the transient gives way for a clear QN ringdown pattern to emerge.
+
+For a quantitative comparison with calculations performed in the frequency domain, we have ﬁtted the ringdown
+part of our numerically extracted multipoles for the case of a narrow initial Gaussian with exponentially damped
+
+19
+
+M ωnum
+lm
+
+M ωfd
+a/M (lm)
+lm
+0.00 (10) 0.2483 − ı0.0925 0.248 − ı0.092
+0.00 (20) 0.4576 − ı0.0950 0.455 − ı0.093
+0.99 (10) 0.2743 − ı0.0759 0.274 − ı0.075
+0.99 (11) 0.4634 − ı0.0313 0.464 − ı0.033
+0.99 (20) 0.4999 − ı0.0800 0.498 − ı0.079
+0.99 (22) 0.9099 − ı0.0301 0.887 − ı0.037
+
+TABLE IV. Quasi-normal mode frequencies of massless vector perturbations in a Schwarzschild or Kerr BH background with
+a/M = 0.99. The values for M ωnum
+lm have been obtained from ﬁts to our numerical evolution of the ﬁeld, whereas those for
+M ωfd
+
+lm have been computed with the continued fraction method [9, 11, 88].
+
+sinusoids. The resulting complex frequencies ωnum
+from frequency-domain calculations [9, 11, 14, 88].
+
+lm are listed in Table IV and agree well with the values ωfd
+
+lm obtained
+
+FIG. 9. The l = 1, m = 0 multipole of Φ2, extracted at rex = 10 M from the time evolution of a Gaussian pulse of width
+w = 2 M (black solid line) and w = 30 M (red dashed line) around a Schwarzschild BH.
+
+The time evolution of a massless vector ﬁeld initialized as a narrow Gaussian of width w = 2 M around a rapidly
+spinning Kerr BH with a/M = 0.99 is displayed in Fig. 10 and qualitatively agrees with the corresponding simulation
+around a Schwarzschild background. Note, however that the quasi-normal ringdown is signiﬁcantly slower for the
+spinning case which is also reﬂected by the relatively small imaginary quasi-normal mode frequencies listed for this
+case in Table IV. Accurately measuring such small imaginary components in numerical simulations represents a
+considerable challenge which is why we have chosen a higher numerical resolution for this particular simulation;
+cf. Table III. We thus obtain agreement of a few % with frequency-domain predictions for the imaginary part. In
+contrast the real part of the frequency is much easier to extract numerically and shows excellent agreement around
+1 % or less with the values calculated in the frequency domain.
+
+B. Proca ﬁeld in Schwarzschild backgrounds and in the slow-rotating limit
+
+We now consider time evolutions of massive vector, or Proca, ﬁelds in a Schwarzschild background. For this purpose,
+we choose the mass parameters M µV = 0.1 and M µV = 0.2 which allow for a direct comparison with recent QNM
+computations by Rosa & Dolan [42] and Pani et al [40, 41]. In contrast to the massive scalar ﬁeld, the Proca ﬁeld has
+three degrees of freedom and the resulting radiation multipoles can be classiﬁed into three groups: axial modes with
+spin s = 0 and two polar modes with s = ±1. Following Refs. [40–42], we denote s = 0 multipoles as even scalars (ES)
+and the s = +1, −1 as odd (O) and even vector (EV), respectively. We emphasize that these three diﬀerent degrees
+
+020406080100120140160t / M 10-810-610-410-2100| Φ2,10 |w / M = 2w / M = 3020
+
+FIG. 10. Time evolution of the l = m = 1 mode of Φ2 of run v1K2 m000, i.e., a massless vector ﬁeld in a Kerr background
+with a/M = 0.99 extracted at rex = 10 M .
+
+M ωfd
+
+l0 (O)
+
+l0 (ES)
+
+l M ωfd
+0 0.1216 − ı0.0791
+1 0.3054 − ı0.0914 0.2435 − ı0.0944 0.2539 − ı0.0887 0.245 − ı0.098 0.252 − ı0.087
+2 0.4921 − ı0.0943 0.4552 − ı0.0955 0.4610 − ı0.0938 0.462 − ı0.091 0.452 − ı0.096
+
+l0 (EV) M ωnum
+
+(ϕl) M ωnum
+
+0.125 − ı0.080
+
+M ωfd
+
+l0
+
+l0
+
+1.51
+0.49
+0.48
+
+0.49
+0.49
+
+(Φ2,l) p (ϕl0) p (Φ2,l0)
+
+TABLE V. QNM frequencies and tail exponents for Proca ﬁeld perturbations in the Schwarzschild background, for M µV = 0.1.
+Modes ωfd have been computed with the continued fraction and forward-integration method in the frequency domain [40–42].
+These modes are divided in odd (O), even scalar (ES) and even vector (EV) parity; see text for details. The QNM frequencies
+extracted from our numerical simulations are shown as ωnum, as extracted from ϕl0 and Φ2,l0. Finally, we also show the decay
+exponent p of the oscillatory tail; c. f. Eq. (45).
+
+of freedom have diﬀerent spectra except for the massless case where the spectra of the vector modes are degenerate
+while the scalar mode reduces to a gauge ﬁeld [9, 42, 88]. The quasi-normal ringdown frequencies ωfd
+lm obtained from
+frequency-domain calculations for the three types of multipoles are shown in Table V for M µV = 0.1 considering a
+Schwarzschild background.
+
+In order to obtain numerical estimates for the frequencies, we have evolved Gaussian initial data of width w = 2 M
+centered around r0 = 12 M for our two choices of M µV = 0.1 and 0.2. The resulting dipoles of Φ2 extracted at
+rex = 10 M are shown in Fig. 11 and reveal the by now familiar pattern of early transient, ringdown and tail. Fitting
+an exponentially damped sinusoid to the ringdown part of the dipoles of Φ2 (solid curve in the ﬁgure) as well as the
+scalar component ϕ for the case M µ = 0.1 yields numerical estimates for the frequencies listed in Table V as ωnum
+lm .
+These estimates agree with the frequency-domain predictions within a few percent or less. Note, however, that the
+frequencies for some types of modes are very similar, so that we cannot unambiguously identify which modes are
+excited by our particular choice of initial data. For l = 2, for instance, our numerical results are compatible with
+both, an odd or even vector mode.
+
+In Fig. 11 we see that from time t ∼ 100 M onwards, the signal is dominated by the tails whose functional form is
+
+given by a decaying sinusoid of the form [90]
+
+Φ ∼ t−(l+p) sin(µV t) ,
+
+(45)
+
+at intermediate times, where p = 3/2 + s depends on the spin, or parity, of the mode. At late times, on the other
+hand, the signal is expected to follow the universal behaviour
+
+Φ ∼ t−5/6 sin(µV t) ,
+
+(46)
+
+independent of the spin s of the ﬁeld [81, 82, 90]. Numerical estimates for the exponent p extracted from our numerical
+results for Φ2 and ϕ are shown in Table V and are in excellent agreement with the prediction p = 3/2+s for intermediate
+
+050100150t / M 10-510-410-310-210-1100| Φ2,11 |times and spin values s = 0 for the monopole and s = −1 for dipole and quadrupole. A similar analysis for the larger
+mass parameter M µ = 0.2 also leads to good agreement between numerical and frequency-domain results, albeit with
+slightly larger discrepancies of (cid:46) 7 %.
+
+21
+
+FIG. 11. Time evolution of the Proca ﬁeld with mass coupling M µV = 0.1 (black solid line) and M µV = 0.2 (red dashed
+line) in a Schwarzschild background. We show the l = 1, m = 0 multipole of the Newman-Penrose scalar Φ2, extracted at
+rex = 10 M .
+
+Before we discuss in detail the behaviour of Proca ﬁelds in rapidly rotating Kerr backgrounds, we brieﬂy test our
+code in the case of a smaller rotation rate a/M = 0.5 where the slow-rotation approximation of [40, 41] is expected to
+provide rather accurate results. For this purpose, we have evolved a Proca ﬁeld with a mass parameter M µV = 0.4
+(simulation v2K1 m040 in Table III) which can be shown to result in a stable mode, i.e., it does not satisfy the
+superradiance criterion (1). For this conﬁguration we observe an extended transient resulting from the wave packet
+impinging on the black hole followed by a slowly decaying QN ringdown signal after t ∼ 200 M . Fitting a damped
+sinusoid to this ringdown part, we ﬁnd a ringdown frequency M ω11 = 0.389 − ı0.0023 in excellent agreement with
+semi-analytic calculations in the slow-rotation approximation [40, 41].
+
+C.
+
+Instability of Proca ﬁelds in highly spinning Kerr backgrounds
+
+According to the superradiant condition (1), rapidly rotating black holes are most likely to induce superradiance
+phenomena in ambient vector ﬁelds and we therefore discuss the case of Proca ﬁelds in a Kerr background with
+a/M = 0.99 in this section. In fact, recent calculations [40, 41] indicate that the maximum instability growth rate is
+realized in this background spacetime for a mass parameter of about M µV = 0.4 and our discussion will focus on this
+case supplemented by additional simulations with M µV = 0.42, 0.44 and 1.0. The time evolution of the l = m = 1
+multipole of the Newman-Penrose scalar Φ2 as well as the scalar component ϕ obtained for the case M µV = 0.4 is
+shown for several choices of the extraction radius rex in Fig. 12. Animations of the numerical evolutions are available
+online [85].
+Beating of modes. The time evolutions of the Proca ﬁeld shown in Fig. 12 reveal strong amplitude modulations
+similar to those observed for scalar ﬁelds in Fig. 6. They also depend sensitively on the location of the measurement
+speciﬁed by the extraction radius rex and, again, we interprete this feature as a beating eﬀect. In order to study
+this in more detail, we have computed the Fourier spectra of the waveforms at diﬀerent radii and show the results
+in Fig. 13. The curves clearly reveal several peaks corresponding to separate mode contributions (fundamental mode
+or overtones) of the dipole ﬁeld and the relative amplitude of these peaks varies signiﬁcantly with extraction radius.
+Consider, for example, the spectrum of the dipole of Φ2 in the left panel of Fig. 13: At rex = 10 M the amplitude
+of the lowest frequency mode is about two thirds of the amplitude of the strongest peak near M ωR = 0.39, but its
+relative strength rapidly decreases at larger extraction radii. This is also reﬂected in the observed time evolutions
+of the Φ2 dipole in the upper panels of Fig. 12: the waveform extracted at rex = 10 M exhibits a high frequency
+modulation which is weakly present at rex = 25 M and entirely absent in the waveform measured at rex = 40 M .
+
+050100150200250t / M 10-710-610-510-410-310-210-1100| Φ2,10 |M µ V = 0.1M µ V = 0.222
+
+Likewise, the high-frequency modulation of the time component ϕ weakens at larger radii as the relative amplitude
+of the two lowest peaks in the spectrum (right panel of Fig. 13) decreases.
+
+There remains one important issue: which conditions lead to the beating of modes? While beating is expected to be a
+generic feature, it is not always excited. Here, we attempt to determine indicators for the (non-)observability of beating
+eﬀects. Because we have performed a multipole expansion of the ﬁelds, and beating is present on a ﬁxed multipole,
+then clearly a beating pattern requires the excitation of diﬀerent overtones. For this reason, a modulation of the
+amplitude is only triggered by evolutions of generic initial pulses 3. Furthermore, our numerical simulations indicate
+no dependence on the background spacetime; Fig. 6 shows beating eﬀects of the scalar ﬁeld around Schwarzschild and
+Kerr BHs. Beating is therefore not related to superradiance. On the other hand, the excitation of diﬀerent modes
+is merely a necessary condition but not suﬃcient to trigger amplitude modulations. This becomes evident in the
+evolutions of Gaussian initial data for the vector ﬁeld with small mass parameters in a Schwarzschild background
+which only exhibit a quasi-normal ringdown and tail. In order to shed further light on this question, we therefore
+consider the entire set of Proca evolutions in BH backgrounds and summarize our results as follows: (i) We do not
+observe beating nor any long-lived modes for mass parameters M µV = 0.1, 0.2 in Schwarzschild background; (ii) we
+observe beating in the dipole mode for M µV = 0.4, 0.42, 0.44 in rapidly rotating Kerr; (iii) we observe beating in the
+quadrupole but not in the dipole for M µV = 1.0 in the background of a highly spinning Kerr BH. Let us ﬁrst consider
+in our interpretation of these observations the case of small mass parameters M µS,V . The absence of long-lived modes
+in our simulations is most likely a consequence of low-mass bound states being concentrated far from the black holes.
+For our choice of initial Gaussian pulses centered around r0 = 12 M , these states are therefore only weakly excited and
+play no signiﬁcant role in the evolution. Furthermore, beating patterns for small mass parameters have particularly
+large periods. We can therefore not rule out that amplitude modulations might become visible in these evolutions
+at late times far larger than the evolution times feasible with our numerical framework. We suspect a similar reason
+is behind our not observing beating modulation in the dipole mode in case of large mass coupling M µV = 1. We
+therefore tentatively conclude that two conditions need to be met in addition to the presence of at least two modes
+in order to observe beating on time scales of ∼ 104 M . (i) the bound states must not be localized far away from the
+peak of the initial data and (ii) beating periods need to be suﬃciently short.
+Instability of Proca ﬁelds around Kerr. The most striking feature of the time evolutions in Fig. 12 is the
+amplitude growth of the signal over time (ignoring the early transient stage). We interprete this growth as a signature
+of the superradiant instability of massive vector ﬁelds and estimate the growth rate of the m = 1 dipole of Φ2 obtained
+for M µV = 0.4 and a/M = 0.99 as
+
+M ωI ∼ (5 ± 1) · 10−4 →
+
+τ
+M
+
+∼ (3.3 ± 1.7) × 103 ,
+
+(47)
+
+and about half that value for the instability rate of ϕ. We believe the discrepancy of the growth rates of Φ2 and ϕ
+is due to the diﬀerent growth scales of the axial and polar sector and the fact that ϕ only sees the axial sector. We
+note that our estimates for the growth rates are of the same order of magnitude as the value τ /M ∼ 103 derived
+from extrapolation of slow-rotation calculations; cf. Eq. (98) in Ref. [41] and Fig.2 in Ref. [40]. The superradiant
+instability time scales for vector ﬁelds are thus up to four orders of magnitude larger than those of their scalar counter
+parts which renders possible their identiﬁcation in the numerical evolutions presented in this work.
+
+V. CONCLUSIONS
+
+We have performed an extended study of the time evolution of massless and massive scalar and vector ﬁelds in
+Schwarzschild and Kerr BH background spacetimes with spin parameters up to a/M = 0.99. Our results are consistent
+with published results obtained in the frequency domain in so far as these are available. For evolutions involving
+exclusively short-lived modes, we observe the known pattern of an initial transient followed by an exponentially
+damped ringdown phase and late-time tails.
+
+For the case of massive ﬁelds, there exists a second class of long-lived modes called bound states whose evolution
+exhibits a signiﬁcantly richer structure. In particular, we have identiﬁed a beating pattern caused by the interference
+of diﬀerent modes (the fundamental mode and overtones) as manifest in the Fourier spectra calculated from the time
+evolutions. The relative amplitude of diﬀerent modes in the spectra and, thus, the speciﬁc shape of the beating
+pattern strongly depends on the observation radius. We believe that these beating eﬀects provide an explanation
+for an apparent discrepancy between time and frequency domain calculations of instability growth rates of scalar
+
+3 as opposed to pure bound states. It is important to note that by pure bound states we mean stationary solutions of the linearized ﬁeld
+equations in the Kerr background; therefore eﬀects such as mode coupling are already taken into account: pure modes do not couple to
+other multipoles when the expansion basis is taken to be spheroidal harmonics.
+
+23
+
+FIG. 12. Time evolution of the Proca ﬁeld with mass coupling M µV = 0.40 in Kerr background with a/M = 0.99, at diﬀerent
+extraction radii. We plot the l = m = 1 mode of the Newman-Penrose scalar Φ2 (upper panels) and of the scalar component
+ϕ (lower panels).
+
+FIG. 13.
+Spectra of the l = m = 1 mode of the Newman-Penrose scalar Φ2 (left panel) and of the scalar component ϕ
+(right panel) excited by the Proca ﬁeld with mass coupling M µV = 0.40 in Kerr background with a/M = 0.99. Diﬀerent lines
+correspond to the waveforms measured at diﬀerent extraction radii.
+
+ﬁelds around Kerr backgrounds. Speciﬁcally, Ref. [60] (see their Fig. 3) reported a time evolution lasting about
+3 × 103M of a massive scalar ﬁeld with M µS = 0.25 in a Kerr background with a/M = 0.9999 and obtained a growth
+timescale approximately two orders of magnitude smaller than that predicted by frequency-domain calculations. For
+this particular conﬁguration, the frequency-domain estimate, Eq. (38), predicts a beating period τ ∼ 5 × 103M , about
+the entire duration of their time evolution, and we believe that their estimate of the growth rate was correspondingly
+contaminated by the resulting amplitude modulation.
+
+Based on our numerical results, we conjecture that two conditions are required for the presence of beating: (i)
+
+0100020003000t / M -0.2-0.100.10.2Re( Φ2,11 )rex / M = 100100020003000t / M -0.08-0.06-0.04-0.0200.020.040.060.08Re( Φ2,11 )rex / M = 250100020003000t / M -0.03-0.02-0.0100.010.020.03Re( Φ2,11 )rex / M = 400100020003000t / M -0.2-0.100.10.2Re( ϕ11 )rex / M = 100100020003000t / M -0.1-0.0500.050.1Re( ϕ11 )rex / M = 150100020003000t / M -0.06-0.04-0.0200.020.040.06Re( φ11 )rex / M = 200.320.340.360.380.40.420.44M ωR00.010.020.030.040.050.06A[Φ2]rex / M = 10rex / M = 25rex / M = 400.320.340.360.380.40.420.44M ωR00.010.020.030.040.050.06A[ϕ]rex / M = 10rex / M = 15rex / M = 20rex / M = 2524
+
+generic initial conﬁgurations of massive ﬁelds as opposed to single-frequency bound state initial data, and (ii) initial
+data able to excite these bound states. For extremely small masses for instance, the bound states are localized far
+from the BH. Accordingly, initial data peaked far from the BH would be required to excite them.
+
+In an accompanying paper Dolan [61] has investigated the massive scalar ﬁeld instability as well as a system
+involving massless scalars but enclosed by a mirror in the time domain. Speciﬁcally, the author employs a “coupled
+1 + 1 dimensional” numerical scheme which allows for signiﬁcantly longer evolutions times up to t ∼ 106M . This work
+ﬁnds bound state frequencies and instability time scales in excellent agreement with frequency domain calculations
+and, due to the generic initial conﬁgurations, conﬁrms/ supports our ﬁndings of the beating phenomena.
+
+Finally, we have conﬁrmed the existence of superradiant unstable massive vector ﬁelds around rapidly spinning
+BHs. In contrast to massive scalar ﬁelds, the instability of Proca ﬁelds is stronger by about four orders of magnitude
+leading to growth times as short as τ /M ∼ 3.3 × 103 in rapidly spinning Kerr BH backgrounds. It is instructive
+to translate this number for the case of realistic astorphysical black hole candidates. For a solar mass BH and a
+supermassive BH of the size of SagittariusA∗ (M ∼ 4.1 · 106M(cid:12)) at the center of our galaxy we obtain timescales of
+τ ∼ 9 ms and τ ∼ 4 · 104 s, respectively.
+
+It has been argued by Pani et al. [40] that the angular momentum thus extracted from the black hole provides a
+mechanism to observationally constrain the mass of the photon. In view of the short time scales even for a supermassive
+black holes, spin measurements of the BH at the center of the Milky Way, may indeed constrain the photon mass to
+unprecedented levels. The exciting prospect of using large, supermassive black holes to understand the microscopic
+world raises several questions:
+(1) Inﬂuence of accretion disks. Astrophysical black holes are not isolated, but typically are surrounded by accretion
+disks. Can the interaction with matter kill the instability? It was argued previously [40] that the superradiant
+instability is a global mode, on scales larger than the BH. On these scales matter is electrically neutral, and the
+coupling should be negligible. Therefore, it is not likely that (thin) accretion disks can quench the instability; thin
+disks are expected to lie along the equator of a Kerr BH and are not expected to interact strongly with boson clouds
+that extend well oﬀ the equator. The inﬂuence of thick disks or other eﬀects is unknown at the moment, but it is
+surely important to study these eﬀects in more detail.
+(2) Self-interacting scalar ﬁelds: One class of interesting problems involves massive scalar ﬁelds whose dynamics are
+described by additional non-linear terms, modelling their self-interaction. This open issue has ﬁrst been addressed by
+Yoshino & Kodama [44] who modelled the collapse of a so-called bosenova.
+(3) Backreaction eﬀects: As far as we are aware, all studies exploring massive ﬁelds have been performed in the linear
+regime. Therefore it is of utmost interest to explore the fully non-linear regime, which allows for the investigation
+of the backreaction of the spacetime, such as the spin-down of the BH due to (subsequent) superradiant scattering.
+This type of studies would enable us to glance at the end-state of the superradiant instability or, possibly, equilibrium
+conﬁgurations.
+
+The present study marks crucial ﬁrst steps to explore an entire playground of exciting future applications of massive
+
+ﬁelds in BH spacetimes.
+
+Animations of the evolutions can be found online [85].
+
+VI. ACKNOWLEDGEMENTS
+
+We thank Sam Dolan, Paolo Pani and Jo˜ao Rosa for useful comments and discussions and for making their data
+available to us. We are indebted to Hideo Kodama and Hirotaka Yoshino for explanations regarding time-evolution
+of bound states. We thank Gaurav Khanna for useful correspondence. We are especially indebted to S´ergio Almeida
+for all his hard work on the “Baltasar Sete-S´ois” cluster. We thank all participants of the YITP-T-11-08 work-
+shop on “Recent advances in numerical and analytical methods for black hole dynamics” for useful discussions.
+We thank the Yukawa Institute for Theoretical Physics at Kyoto University for their kind hospitality during the
+early stages of this work. This work was supported by the DyBHo–256667 ERC Starting Grant, the NRHEP–295189
+FP7–PEOPLE–2011–IRSES Grant, the CBHEO–293412 FP7-PEOPLE-2011-CIG Grant, the ERC-2011-StG 279363–
+HiDGR ERC Starting Grant, and by FCT - Portugal through PTDC projects FIS/098025/2008, FIS/098032/2008,
+CTE-ST/098034/2008, CERN/FP/123593/2011. H.W. is funded by FCT through grant SFRH/BD/46061/2008. U.S.
+acknowledges support by the from the Ram´on y Cajal Programme and Grant FIS2011-30145-C03-03 of the Ministry of
+Education and Science of Spain. A.I. was supported by JSPS Grant-in-Aid for Scientiﬁc Research Fund (C) 22540299
+and (A) 22244030.
+
+Computations were performed on the “Baltasar Sete-Sois” cluster at IST, the cane cluster in Poland through PRACE
+DECI-7 “Black hole dynamics in metric theories of gravity”, on MareNostrum in Barcelona through BSC grant AECT-
+2012-2-0005, on Altamira in Cantabria through BSC grant AECT-2012-3-0012, on Caesaraugusta in Zaragoza through
+BSC grants AECT-2012-2-0014 and AECT-2012-3-0011, XSEDE clusters SDSC Trestles and NICS Kraken through
+
+25
+
+NSF Grant No. PHY-090003, Finis Terrae through Grant CESGA-ICTS-234 and the COSMOS supercomputer, part
+of the DiRAC HPC Facility which is funded by STFC and BIS. The authors thankfully acknowledge the computer
+resources, technical expertise and assistance provided by the Barcelona Supercomputing Centre—Centro Nacional de
+Supercomputaci´on and by Andrey Kaliazlin for computational support and technical advice with COSMOS.
+
+From the Lagrangian L,
+
+Appendix A: Flux formula
+
+1
+√
+−g
+
+L := −
+
+1
+2
+
+gµνΨ∗
+
+,µΨ,ν −
+
+µ2
+S
+2
+
+Ψ∗Ψ − V (Ψ) −
+
+1
+4
+
+F µνFµν −
+
+µ2
+V
+2
+
+AνAν −
+
+kaxion
+2
+
+Ψ ∗F µνFµν + J (S)
+
+ν Aν ,
+
+(A1)
+
+we obtain, under the Lorenz condition (14), the equations of motion
+
+(cid:0)∇µ∇µ − µ2
+(cid:0)∇µ∇µ − µ2
+
+S
+
+V
+
+and the stress-energy tensor
+
+Tµν =T A
+
+µν + T Ψ
+µν ,
+
+kaxion
+(cid:1) Ψ −
+2
+(cid:1) Aν − Rµ
+
+∗F µνFµν − V
+
+(cid:48)
+
+(Ψ) = 0
+
+νAµ − 2kaxion
+
+∗F νµ∇µΨ = −J (S)ν
+
+T A
+µν := FµαFν
+1
+2
+
+T Ψ
+µν :=
+
+α −
+
+1
+4
+
+gµνFαβF αβ + µ2
+
+1
+2
+
+V AαAαgµν ,
+µ2
+
+(∇µΨ∗∇νΨ + ∇µΨ∇νΨ∗) −
+
+(cid:0)∇µΨ∗∇µΨ + µ2
+
+SΨ∗Ψ + 2V (Ψ)(cid:1) .
+
+V AµAν −
+1
+2
+
+gµν
+
+(A2)
+
+(A3)
+
+(A4)
+
+(A5)
+
+(A6)
+
+Note that the Chern-Simons term does not alter the stress-energy tensor.
+
+We are concerned with stationary axisymmetric spacetimes. Let us denote by tµ and φµ, respectively, the stationary
+and the axisymmetric Killing ﬁeld. The rigidity theorem states that there exists a Killing vector ﬁeld χµ, which is
+normal to, hence null on, the horizon H+. Such a Killing vector ﬁeld is given by the combination of tµ and φµ,
+
+where ΩH denotes the angular velocity of the Killing horizon of the black hole, and for the Kerr metric
+
+χµ = tµ + ΩH φµ ,
+
+with r+ being the horizon radius r+ = M +
+
+Let us introduce the energy current Jµ by
+
+ΩH =
+
+a
++ + a2 ,
+r2
+
+√
+
+M 2 − a2 in the Boyer-Lindquist coordinates.
+
+Jµ = −Tµνtν = −T Ψ
+
+µνtν − T A
+
+µνtν ,
+
+(A7)
+
+(A8)
+
+(A9)
+
+and consider two time-slices Σ1 and Σ2 ⊂ {J +(Σ1) \ Σ1}, which intersect the event horizon H+ at t = t1 and t = t2,
+respectively. (One may view t as the Killing parameter of tµ). Then the energy ﬂux F that ﬂows into the black hole
+in the time-interval I = {H+ : t1 < t < t2} is given by
+
+(cid:90)
+
+F =
+
+(cid:90)
+
+dΣµJµ −
+
+dΣµJµ =
+
+(cid:90)
+
+I
+
+dN nµJµ
+
+Σ2
+(cid:90)
+
+= −
+
+I
+
+Σ1
+(cid:90)
+
+dN χµJµ =
+
+H
+
+dS (cid:104)χµtνTµν(cid:105) .
+
+(A10)
+
+Here nµ denotes the normal to H+, dN the volume element of the horizon H+, and dS the area element of the
+cross-section H = H+ ∩ Σ, and (cid:104)·(cid:105) expresses the time average along the horizon. Superradiant scattering occurs when
+the energy ﬂux going into the horizon becomes negative:
+
+F < 0 .
+
+(A11)
+
+We consider below the ﬂux with respect to the scalar ﬁeld and the vector ﬁeld separately. For the scalar ﬁeld, the
+
+mode decomposition is deﬁned by
+
+where ω denotes the frequency and m the angular quantum number. It implies, in particular,
+
+£tΨ = −iωΨ , £φΨ = imΨ ,
+
+£χΨ = −i(ω − mΩH )Ψ .
+
+(A12)
+
+(A13)
+
+Then, substituting (A6) into (A10) and using the fact that gµνtνχµ = 0 on the horizon, we can immediately ﬁnd the
+ﬂux formula for Ψ:
+
+26
+
+and read oﬀ the superradiance condition
+
+F Ψ = ω(ω − mΩH )
+
+(cid:90)
+
+H
+
+dS (cid:10)|Ψ|2(cid:11) ,
+
+0 < ω < mΩH .
+
+For the vector ﬁeld, substituting (A5) into (A10), we have
+
+F A =
+
+(cid:90)
+
+H
+
+dS (cid:104)χµFµαtνFν
+
+α(cid:105) + µ2
+V
+
+(cid:90)
+
+H
+
+d (cid:104)χµAµtνAν(cid:105) ,
+
+where we have again used gµνχµtν = 0 on the horizon.
+
+For the vector ﬁeld, the mode decomposition is deﬁned by
+
+(£tA)µ = −iωAµ ,
+
+(£χA)µ = −i(ω − mΩ)Aµ .
+
+Now, noting
+
+χµFµα = £χAα − ∇α(Aµχµ) ,
+
+tνFνβ = £tAβ − ∇β(Aνtν) ,
+
+and using Eq. (A17) and the Lorenz condition (14) we ﬁnd
+
+χµFµαtνFν
+
+α = gαβ£χAα£tAβ + χµAµ∇α∇α(tνAν) + divergence terms .
+
+On the horizon integral, we ignore the divergence terms and then obtain
+
+(A14)
+
+(A15)
+
+(A16)
+
+(A17)
+
+(A18)
+
+(A19)
+
+F A =
+
+(cid:90)
+
+H
+
+dS (cid:104)Re(χµFµαtνFν
+(cid:90)
+
+α∗)(cid:105) + µ2
+V
+
+= ω(ω − mΩ)
+
+dS (cid:10)|A|2(cid:11) + µ2
+
+V
+
+If we impose
+
+H
+
+(cid:90)
+
+H
+
+dS (cid:104)Re(χµAµtνA∗
+ν)(cid:105)
+(cid:90)
+
+dS (cid:104)|χµAµtνAν|(cid:105) −
+
+(cid:90)
+
+H
+
+H
+
+χµAµ = 0 on H+ ,
+
+we get the simple formula, similar to the scalar ﬁeld case (A14),
+
+F A = ω(ω − mΩ)
+
+(cid:90)
+
+H
+
+dS (cid:10)|A|2(cid:11) ,
+
+and the superradiance condition for the vector ﬁeld is again given by (A15).
+
+dS (cid:104)Re (χµAµ∇α∇α(tνA∗
+
+ν))(cid:105) .
+
+(A20)
+
+(A21)
+
+(A22)
+
+Appendix B: Spin-weighted spherical harmonics
+
+27
+
+Here, we list the spin-weighted spherical harmonics up to l = 2 in spherical coordinates {θ, φ} and Cartesian
+
+coordinates {x, y, z} given by Eq. (25). In case of spin-weight s = 0 we obtain:
+
+Y R
+00 =
+
+1
+√
+4π
+
+, Y I
+
+00 = 0
+
+Y R
+10 =
+
+(cid:114) 3
+4π
+(cid:114) 3
+8π
+1−1 = − Y R
+Y R
+11 ,
+
+Y R
+11 = −
+
+cos θ =
+
+(cid:114) 3
+4π
+
+z
+r
+
+,
+
+sin θ cos φ = −
+
+1−1 = Y I
+Y I
+11
+
+Y I
+10 = 0 ,
+(cid:114) 3
+8π
+
+x
+r
+
+,
+
+Y I
+11 = −
+
+(cid:114) 3
+8π
+
+sin θ sin φ = −
+
+(cid:114) 3
+8π
+
+y
+r
+
+,
+
+l = 0:
+
+l = 1:
+
+l = 2:
+
+Y R
+20 =
+
+(cid:19)
+
+,
+
+(cid:114) 5
+16π
+(cid:114) 5
+8π
+
+Y R
+21 = −
+
+Y R
+22 =
+
+(cid:114) 15
+32π
+2−1 = − Y R
+Y R
+21 ,
+
+3
+
+(3 cos2 θ − 1) =
+
+(cid:18)
+
+(cid:114) 5
+16π
+
+z2
+r2 − 1
+(cid:114) 5
+xz
+r2 ,
+cos θ sin θ cos φ = −
+8π
+(cid:114) 15
+x2 − y2
+r2
+32π
+2−2 = Y R
+Y R
+22 ,
+
+2−1 = Y I
+Y I
+
+21 ,
+
+sin2 θ cos(2φ) =
+
+,
+
+Y I
+20 = 0 ,
+(cid:114) 5
+8π
+(cid:114) 15
+32π
+
+2−2 = −Y I
+Y I
+22
+
+Y I
+21 = −
+
+cos θ sin θ sin φ = −
+
+Y I
+22 =
+
+sin2 θ sin(2φ) =
+
+yz
+r2 ,
+
+(cid:114) 5
+8π
+xy
+r2
+
+(cid:114) 15
+8π
+
+where cos(2φ) = cos2 φ − sin2 φ, sin(2φ) = 2 cos φ sin φ, cos(3φ) = 4 cos3 φ − 3 cos φ and sin(3φ) = 4 cos2 φ sin φ − sin φ.
+We further summarize the s = −1 spin-weighted spherical harmonics up to l = 2, where we have also deﬁned
+ρ2 = x2 + y2.
+
+l = 0:
+
+l = 1:
+
+−1Y R
+
+1−1 =
+
+−1Y R
+
+00 =0 , −1Y I
+
+00 = 0
+
+(cid:114) 3
+16π
+(cid:114) 3
+16π
+
+−1Y I
+
+1−1 = −
+
+−1Y R
+
+10 = −
+
+−1Y R
+
+11 = −
+
+−1Y I
+
+11 = −
+
+(cid:114) 3
+8π
+(cid:114) 3
+16π
+(cid:114) 3
+16π
+
+cos φ(cos θ − 1) =
+
+(cid:114) 3
+16π
+
+x(z − r)
+rρ
+
+,
+
+sin φ(cos θ − 1) = −
+
+(cid:114) 3
+16π
+
+y(z − r)
+rρ
+
+sin θ = −
+
+(cid:114) 3
+8π
+
+ρ
+r
+
+10 = 0
+
+, −1Y I
+(cid:114) 3
+16π
+(cid:114) 3
+16π
+
+x(z + r)
+rρ
+
+,
+
+y(z + r)
+rρ
+
+cos φ(1 + cos θ) = −
+
+sin φ(1 + cos θ) = −
+
+(B1)
+
+(B2a)
+
+(B2b)
+
+(B2c)
+
+(B3a)
+
+(B3b)
+
+(B3c)
+
+(B3d)
+
+(B4)
+
+(B5a)
+
+(B5b)
+
+(B5c)
+
+(B5d)
+
+(B5e)
+
+l = 2:
+
+(cid:114) 5
+16π
+(cid:114) 5
+4π
+
+(cid:114) 5
+16π
+(cid:114) 5
+16π
+(cid:114) 15
+8π
+(cid:114) 5
+16π
+(cid:114) 5
+16π
+
+−1Y R
+
+2−2 =
+
+sin θ(cos θ − 1)(2 cos2 φ − 1) =
+
+−1Y I
+
+2−2 = −
+
+cos φ sin φ sin θ(cos θ − 1) = −
+
+,
+
+(z − r)(x2 − y2)
+r2ρ
+
+(cid:114) 5
+16π
+(cid:114) 5
+4π
+x(2z2 − zr − r2)
+r2ρ
+
+xy(z − r)
+r2ρ
+
+,
+
+(cid:114) 5
+16π
+
+−1Y R
+
+2−1 =
+
+cos φ(2 cos2 θ − cos θ − 1) =
+
+−1Y I
+
+2−1 = −
+
+sin φ(2 cos2 θ − cos θ − 1) = −
+
+(cid:114) 5
+16π
+
+y(2z2 − zr − r2)
+r2ρ
+
+−1Y R
+
+20 = −
+
+cos θ sin θ = −
+
+(cid:114) 15
+8π
+
+zρ
+r2 , −1Y I
+
+−1Y R
+
+21 = −
+
+cos φ(2 cos2 θ + cos θ − 1) = −
+
+20 = 0
+(cid:114) 5
+16π
+(cid:114) 5
+16π
+
+,
+
+x(2z2 + zr − r2)
+r2ρ
+y(2z2 + zr − r2)
+r2ρ
+
+−1Y I
+
+21 = −
+
+sin φ(2 cos2 θ + cos θ − 1) = −
+
+−1Y R
+
+22 =
+
+(cid:114) 5
+16π
+
+sin θ(cos θ + 1)(2 cos2 φ − 1) =
+
+(cid:114) 5
+16π
+
+(z + r)(x2 − y2)
+r2ρ
+
+,
+
+−1Y I
+
+22 =
+
+(cid:114) 5
+4π
+
+cos φ sin φ sin θ(cos θ + 1) =
+
+(cid:114) 5
+4π
+
+xy(z + r)
+r2ρ
+
+28
+
+(B6a)
+
+(B6b)
+
+(B6c)
+
+(B6d)
+
+(B6e)
+
+(B6f)
+
+(B6g)
+
+(B6h)
+
+(B6i)
+
+[1] R. Ruﬃni, Black Holes: les Astres Occlus (Gordon and Breach Science Publishers, 1973).
+[2] V. Frolov (ed.) and I. Novikov (ed.), Black hole physics: Basic concepts and new developments (Kluwer Academic Pub-
+
+lishers, 1989).
+
+[3] A. Arvanitaki, S. Dimopoulos, S. Dubovsky, N. Kaloper and J. March-Russell, Phys.Rev. D81, 123530 (2010), [0905.4720].
+[4] A. Arvanitaki and S. Dubovsky, Phys.Rev. D83, 044026 (2011), [1004.3558].
+[5] J. E. McClintock and R. A. Remillard, 0902.3488.
+[6] M. Heusler, Living Rev.Rel. 1, 6 (1998).
+[7] P. T. Chrusciel, J. L. Costa and M. Heusler, Living Rev.Rel. 15, 7 (2012), [1205.6112].
+[8] S. Hawking and W. Israel, (1979).
+[9] E. Berti, V. Cardoso and A. O. Starinets, Class.Quant.Grav. 26, 163001 (2009), [0905.2975].
+
+[10] R. Konoplya and A. Zhidenko, Rev.Mod.Phys. 83, 793 (2011), [1102.4014].
+[11] E. Berti, V. Cardoso and C. M. Will, Phys.Rev. D73, 064030 (2006), [gr-qc/0512160].
+[12] I. Kamaretsos, M. Hannam, S. Husa and B. Sathyaprakash, Phys.Rev. D85, 024018 (2012), [1107.0854].
+[13] R. H. Price, Phys.Rev. D5, 2419 (1972).
+[14] E. W. Leaver, Phys.Rev. D34, 384 (1986).
+[15] E. Ching, P. Leung, W. Suen and K. Young, Phys.Rev. D52, 2118 (1995), [gr-qc/9507035].
+[16] P. M. Morese and H. Feshbach, Methods of Theoretical Physics, Part I (Feshbach Publishing, Minneapolis, 1981).
+[17] V. Cardoso, S. Yoshida, O. J. Dias and J. P. Lemos, Phys.Rev. D68, 061503 (2003), [hep-th/0307122].
+[18] Y. B. Zel’dovich, Pis’ma Zh. Eksp. Teor. Fiz. 14, 270 (1971).
+[19] Y. B. Zel’dovich, Zh. Eksp. Teor. Fiz 62, 2076 (1972).
+[20] J. Bekenstein, Phys.Rev. D7, 949 (1973).
+[21] V. Cardoso, S. Chakrabarti, P. Pani, E. Berti and L. Gualtieri, Phys.Rev.Lett. 107, 241101 (2011), [1109.6021].
+[22] N. Yunes, P. Pani and V. Cardoso, Phys.Rev. D85, 102003 (2012), [1112.3351].
+[23] V. Cardoso and P. Pani, 1205.3184.
+[24] P. Hut, Astrono. Astrophys. 99, 126 (1981).
+[25] F. Verbunt, The earth and moon: from halley to lunar ranging and shells, http://www.astro.uu.nl/~verbunt/onderwijs/
+
+binary/earth.pdf.
+
+[26] W. H. Press and S. A. Teukolsky, Nature 238, 211 (1972).
+[27] V. Cardoso, O. J. Dias, J. P. Lemos and S. Yoshida, Phys.Rev. D70, 044039 (2004), [hep-th/0404096].
+[28] V. Cardoso and O. J. Dias, Phys.Rev. D70, 084011 (2004), [hep-th/0405006].
+[29] V. Cardoso, O. J. Dias and S. Yoshida, Phys.Rev. D74, 044008 (2006), [hep-th/0607162].
+[30] H. Kodama, Prog.Theor.Phys.Suppl. 172, 11 (2008), [0711.4184].
+[31] N. Uchikata, S. Yoshida and T. Futamase, Phys.Rev. D80, 084020 (2009).
+
+29
+
+[32] T. Damour, N. Deruelle and R. Ruﬃni, Lett.Nuovo Cim. 15, 257 (1976).
+[33] T. Zouros and D. Eardley, Annals Phys. 118, 139 (1979).
+[34] S. L. Detweiler, Phys.Rev. D22, 2323 (1980).
+[35] H. Furuhashi and Y. Nambu, Prog.Theor.Phys. 112, 983 (2004), [gr-qc/0402037].
+[36] V. Cardoso and S. Yoshida, JHEP 0507, 009 (2005), [hep-th/0502206].
+[37] S. R. Dolan, Phys.Rev. D76, 084001 (2007), [0705.2880].
+[38] S. Hod, Physics Letters B 708, 320-323 (2012), [1205.1872].
+[39] S. Hod, Phys.Rev. D86, 104026 (2012), [1211.3202].
+[40] P. Pani, V. Cardoso, L. Gualtieri, E. Berti and A. Ishibashi, Phys.Rev.Lett. 109, 131102 (2012), [1209.0465].
+[41] P. Pani, V. Cardoso, L. Gualtieri, E. Berti and A. Ishibashi, Phys.Rev. D86, 104017 (2012), [1209.0773].
+[42] J. G. Rosa and S. R. Dolan, Phys.Rev. D85, 044043 (2012), [1110.4494].
+[43] H. Kodama and H. Yoshino, Int.J.Mod.Phys.Conf.Ser. 7, 84 (2012), [1108.1365].
+[44] H. Yoshino and H. Kodama, Prog.Theor.Phys. 128, 153 (2012), [1203.5070].
+[45] G. Mocanu and D. Grumiller, Phys.Rev. D85, 105022 (2012), [1203.4681].
+[46] J. G. Rosa, 1209.4211.
+[47] C. Herdeiro, M. O. Sampaio and M. Wang, Phys.Rev. D85, 024005 (2012), [1110.2485].
+[48] M. Wang, M. O. Sampaio and C. Herdeiro, 1212.2197.
+[49] M. Khlopov, B. Malomed and I. Zeldovich, Mon.Not.Roy.Astron.Soc. 215, 575 (1985).
+[50] M. Y. Khlopov, Res.Astron.Astrophys. 10, 495 (2010), [0801.0116].
+[51] J. Barranco et al., Phys.Rev. D84, 083008 (2011), [1108.0931].
+[52] J. Barranco et al., Phys.Rev.Lett. 109, 081102 (2012), [1207.2153].
+[53] J. Alsing, E. Berti, C. M. Will and H. Zaglauer, Phys.Rev. D85, 064041 (2012), [1112.4903].
+[54] M. Goodsell, J. Jaeckel, J. Redondo and A. Ringwald, JHEP 0911, 027 (2009), [0909.0515].
+[55] J. Jaeckel and A. Ringwald, Ann.Rev.Nucl.Part.Sci. 60, 405 (2010), [1002.0329].
+[56] P. G. Camara, L. E. Ibanez and F. Marchesano, JHEP 1109, 110 (2011), [1106.0060].
+[57] A. S. Goldhaber and M. M. Nieto, Rev.Mod.Phys. 82, 939 (2010), [0809.1003].
+[58] J. Rosa, JHEP 1006, 015 (2010), [0912.1780].
+[59] S. Hod, Phys.Rev. D84, 044046 (2011), [1109.4080].
+[60] M. J. Strafuss and G. Khanna, Phys.Rev. D71, 024034 (2005), [gr-qc/0412023].
+[61] S. R. Dolan, 1212.1477.
+[62] A. B. Balakin and W.-T. Ni, Class.Quant.Grav. 27, 055003 (2010), [0911.2946].
+[63] M. Alcubierre, Introduction to 3+1 numerical relativity International series of monographs on physics (Oxford Univ. Press,
+
+Oxford, 2008).
+
+[64] C. M. Chambers and I. G. Moss, Class.Quant.Grav. 11, 1035 (1994), [gr-qc/9404015].
+[65] M. Giammatteo and I. G. Moss, Class.Quant.Grav. 22, 1803 (2005), [gr-qc/0502046].
+[66] R. Konoplya and A. Zhidenko, Phys.Rev. D73, 124040 (2006), [gr-qc/0605013].
+[67] E. Berti, V. Cardoso and M. Casals, Phys.Rev. D73, 024013 (2006), [gr-qc/0511111].
+[68] E. Newman and R. Penrose, J.Math.Phys. 3, 566 (1962).
+[69] C. Palenzuela, L. Lehner and S. Yoshida, Phys.Rev. D81, 084007 (2010), [0911.3889].
+[70] P. Mosta et al., Phys.Rev. D81, 064017 (2010), [0912.2330].
+[71] M. Zilhao, V. Cardoso, C. Herdeiro, L. Lehner and U. Sperhake, Phys. Rev. D 85, 124062 (2012), arXiv:1205.1063 [gr-qc].
+[72] U. Sperhake, Phys.Rev. D76, 104015 (2007), [gr-qc/0606079].
+[73] T. Goodale et al., The Cactus framework and toolkit: Design and applications,
+
+in Vector and Parallel Processing –
+
+VECPAR’2002, 5th International Conference, Lecture Notes in Computer Science, Berlin, 2003, Springer.
+
+[74] Cactus Computational Toolkit, http://www.cactuscode.org/.
+[75] E. Schnetter, S. H. Hawley and I. Hawke, Class.Quant.Grav. 21, 1465 (2004), [gr-qc/0310042].
+[76] Mesh reﬁnement with Carpet, http://www.carpetcode.org/.
+[77] D. Shoemaker et al., Class.Quant.Grav. 20, 3729 (2003), [gr-qc/0301111].
+[78] U. Sperhake, B. J. Kelly, P. Laguna, K. L. Smith and E. Schnetter, Phys.Rev. D71, 124042 (2005), [gr-qc/0503071].
+[79] A. Zenginoglu, G. Khanna and L. M. Burko, 1208.5839.
+[80] S. Hod and T. Piran, Phys.Rev. D58, 044018 (1998), [gr-qc/9801059].
+[81] H. Koyama and A. Tomimatsu, Phys.Rev. D64, 044014 (2001), [gr-qc/0103086].
+[82] H. Koyama and A. Tomimatsu, Phys.Rev. D65, 084031 (2002), [gr-qc/0112075].
+[83] L. M. Burko and G. Khanna, Phys.Rev. D70, 044018 (2004), [gr-qc/0403018].
+[84] T. Damour, N. Deruelle and R. Ruﬃni, Nuovo Cimento Lettere 15, 257 (1976).
+[85] Gravity group CENTRA/IST Lisbon, http://blackholes.ist.utl.pt/?page=Files.
+[86] N. Andersson, Phys.Rev. D51, 353 (1995).
+[87] E. Berti and V. Cardoso, Phys.Rev. D74, 104020 (2006), [gr-qc/0605118].
+[88] V. Cardoso, http://gamow.ist.utl.pt/~vitor/?page=ringdown.
+[89] C. Vishveshwara, Nature 227, 936 (1970).
+[90] R. Konoplya and C. Molina, Phys.Rev. D75, 084004 (2007), [gr-qc/0602047].
+
+

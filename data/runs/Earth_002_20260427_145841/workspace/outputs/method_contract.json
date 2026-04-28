@@ -1,0 +1,35 @@
+{
+  "task": "Composite mangrove risk index combining TC regime shifts and sea-level rise, applied globally to evaluate end-of-century mangrove and ecosystem-service risk.",
+  "named_inputs": [
+    "Global Mangrove Watch v4 sample points (Bunting et al. 2018)",
+    "IPCC AR6 medium-confidence regional RSLR rates – SSP2-4.5, SSP3-7.0, SSP5-8.5 (Garner et al. 2021)",
+    "MIT downscaled TC tracks from CMIP6 MPI-ESM1-2-HR historical (Emanuel et al. 2006)",
+    "UCSC Changing Wealth of Nations mangrove ES values per country (Risk_Pop, Risk_Stock, Ben_Pop, Ben_Stock for 1996/2010/2015/2020)"
+  ],
+  "named_thresholds": {
+    "RSLR_likely_deficit_mm_per_yr": 4,
+    "RSLR_highly_likely_deficit_mm_per_yr": 7,
+    "TC_intense_category": "Cat4-5 (>=58 m/s)",
+    "TC_major_category": "Cat3-5 (>=49 m/s)",
+    "TC_min_threshold": "33 m/s (TS)"
+  },
+  "method_steps": [
+    "1. Compute baseline TC exposure per mangrove point as count of MIT historical track points >=33 m/s within 200 km, weighted by intensity to flag intense (Cat4-5) hazard.",
+    "2. Extract SLR median rate (quantile=0.5) at year 2090 (mid of 2080-2100 window) from each IPCC AR6 scenario at the nearest AR6 RSLR location.",
+    "3. Threshold each mangrove point against the Saintilan et al. 2023 RSLR adjustment limits (4, 7 mm/yr) and Mo et al. 2023 cyclone-intensity stratification.",
+    "4. Build composite risk index as weighted sum of standardized TC exposure (with intense-storm boost) and SLR rate exceedance, normalized to 0-1.",
+    "5. Aggregate point-wise risk to country level, link to UCSC ecosystem-service variables to estimate exposed populations and natural-capital stock at risk.",
+    "6. Compare across SSP2-4.5, SSP3-7.0 and SSP5-8.5 and produce figures and tables."
+  ],
+  "primary_outputs": [
+    "outputs/mangrove_point_risk.csv (per point: lat, lon, country, TC exposure, SLR rate per scenario, composite risk per scenario)",
+    "outputs/country_risk_summary.csv (per country: mean risk, mangrove sample share at high risk, exposed population, exposed stock)",
+    "report/images/data_overview.png",
+    "report/images/tc_baseline_map.png",
+    "report/images/slr_scenario_maps.png",
+    "report/images/composite_risk_map.png",
+    "report/images/country_topN_ranking.png",
+    "report/images/ecosystem_services_exposure.png",
+    "report/report.md"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "n_tasks": 16,
+  "n_placeholder_rows": 315,
+  "n_placeholder_judged": 244,
+  "global_placeholder_mean": 1.5901639344262295,
+  "global_placeholder_full_credit_rate": 0.5650793650793651,
+  "global_placeholder_zero_rate": 0.10793650793650794,
+  "per_grader_mean": {
+    "Haining": 1.619047619047619,
+    "Will": 1.5657894736842106,
+    "Yasaman": 1.5833333333333333
+  },
+  "per_axis_mean": {
+    "in_paper": 1.5,
+    "prompt_quality": 1.8125,
+    "follow_instructions": 1.875,
+    "physics_logic": 2.0,
+    "math_derivation": 1.875,
+    "final_answer_accuracy": 1.75
+  },
+  "per_task_answer_mean": {
+    "Construct Kinetic Hamiltonian (continuum version, single-particle)": 1.3333333333333333,
+    "Define each term in Kinetic Hamiltonian (continuum version)": 1.6666666666666667,
+    "Construct Potential Hamiltonian (continuum version)": 1.8333333333333333,
+    "Define each term in Potential Hamiltonian (continuum version)": 2.0,
+    "Convert from single-particle to second-quantized form, return in matrix": 2.0,
+    "Convert from single-particle to second-quantized form, return in summation (expand the matrix)": 1.6666666666666667,
+    "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)": 1.8333333333333333,
+    "Particle-hole transformation": 1.6666666666666667,
+    "Simplify the Hamiltonian in the particle-hole basis": 1.8333333333333333,
+    "Construct interaction Hamiltonian (momentum space)": 2.0,
+    "Wick's theorem": 1.6666666666666667,
+    "Extract quadratic term": 1.6666666666666667,
+    "Swap the index to combine Hartree and Fock terms": 1.8333333333333333,
+    "Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice)": 1.8333333333333333,
+    "Reduce momentum in Fock term (momentum in BZ + reciprocal lattice)": 2.0,
+    "Combine the Hartree and Fock term": 2.0
+  },
+  "per_task_placeholder_mean": {
+    "Construct Kinetic Hamiltonian (continuum version, single-particle)": 1.28,
+    "Define each term in Kinetic Hamiltonian (continuum version)": 1.4333333333333333,
+    "Construct Potential Hamiltonian (continuum version)": 1.1428571428571428,
+    "Define each term in Potential Hamiltonian (continuum version)": 1.4,
+    "Convert from single-particle to second-quantized form, return in matrix": 1.6666666666666667,
+    "Convert from single-particle to second-quantized form, return in summation (expand the matrix)": 1.6666666666666667,
+    "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)": 1.8,
+    "Particle-hole transformation": 1.7916666666666667,
+    "Simplify the Hamiltonian in the particle-hole basis": 1.9047619047619047,
+    "Construct interaction Hamiltonian (momentum space)": 1.52,
+    "Wick's theorem": 2.0,
+    "Extract quadratic term": 2.0,
+    "Swap the index to combine Hartree and Fock terms": 1.5555555555555556,
+    "Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice)": NaN,
+    "Reduce momentum in Fock term (momentum in BZ + reciprocal lattice)": NaN,
+    "Combine the Hartree and Fock term": NaN
+  }
+}

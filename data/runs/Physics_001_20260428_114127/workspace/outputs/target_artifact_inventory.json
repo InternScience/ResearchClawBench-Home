@@ -1,0 +1,14 @@
+{
+  "primary_artifacts": [
+    {"id": "fig_density", "path": "report/images/fig1_density_dependence.png", "purpose": "D_s vs carrier density: conventional, geometric, experimental hole/electron"},
+    {"id": "fig_density_ratio", "path": "report/images/fig2_geometric_enhancement.png", "purpose": "ratio of experimental/conventional vs n showing geometric enhancement"},
+    {"id": "fig_temperature", "path": "report/images/fig3_temperature_dependence.png", "purpose": "D_s(T) for BCS, nodal, n=2/2.5/3, experimental"},
+    {"id": "fig_temperature_fit", "path": "report/images/fig4_powerlaw_fit.png", "purpose": "fitted power-law exponent for experimental D_s(T)"},
+    {"id": "fig_current_dc", "path": "report/images/fig5_current_dc.png", "purpose": "DC current: GL, linear Meissner, exp"},
+    {"id": "fig_current_quadratic", "path": "report/images/fig6_GL_quadratic.png", "purpose": "delta D_s vs I^2 quadratic test"},
+    {"id": "fig_current_mw", "path": "report/images/fig7_microwave.png", "purpose": "microwave amplitude D_s vs I_mw"},
+    {"id": "tab_density", "path": "outputs/density_summary.csv", "purpose": "tabulated D_s columns vs n"},
+    {"id": "tab_T_fits", "path": "outputs/temperature_fits.json", "purpose": "fitted exponent n, T_c, and chi^2 for experimental T-dep curve"},
+    {"id": "tab_I_fits", "path": "outputs/current_fits.json", "purpose": "GL coefficient, I_c estimates"}
+  ]
+}

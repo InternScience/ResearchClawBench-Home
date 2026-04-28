@@ -1,0 +1,54 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "text": "A single autoregressive Transformer can host both multimodal understanding and visual generation when visual encoding is decoupled into two pathways.",
+      "support": [
+        "code/models.py defines a single UnifiedTransformer trunk shared by both tasks.",
+        "outputs/unified_cfg.json saved hyperparameters.",
+        "outputs/checkpoints/trunk_decoupled.pt — successfully trained on interleaved understanding+generation sequences.",
+        "outputs/results_summary.json shows non-trivial performance on both tasks.",
+        "report/images/fig_architecture.png illustrates the design."
+      ],
+      "verified": true
+    },
+    {
+      "id": "C2",
+      "text": "The understanding-side encoder (SigLIP/LLaVA flavour) and the generation-side VQ tokenizer (LlamaGen flavour) capture complementary visual aspects.",
+      "support": [
+        "outputs/results_summary.json: linear probe — decoupled colour 1.00, shape 0.30; shared (VQ) colour 0.20, shape 1.00.",
+        "report/images/fig_encoder_comparison.png — PCA scatter shows different cluster structure.",
+        "report/images/fig_ablation_table.png — bar chart visualises the asymmetry."
+      ],
+      "verified": true
+    },
+    {
+      "id": "C3",
+      "text": "Decoupling visual encoders trains a single trunk that produces semantically richer captions than a shared-encoder Chameleon-style baseline (within our prototype scope).",
+      "support": [
+        "outputs/results_summary.json: caption-test colour accuracy decoupled 0.70 vs shared 0.27; shape decoupled 0.70 vs shared 1.00 — the decoupled model is BALANCED across both attributes (mean 0.70) while the shared model collapses on colour.",
+        "report/images/fig_understanding_qualitative.png shows the qualitative VQA outputs on equation.png and doge.png."
+      ],
+      "verified": true
+    },
+    {
+      "id": "C4",
+      "text": "Image generation can be performed via next-token prediction over VQ codes inside the same trunk used for understanding.",
+      "support": [
+        "code/evaluate.py greedy_decode in vq-token range produces a token grid then decodes with the VQ decoder.",
+        "outputs/generation_results.npz contains 6 generated images per variant.",
+        "report/images/fig_generation_grid.png displays the resulting images."
+      ],
+      "verified": true
+    },
+    {
+      "id": "C5",
+      "text": "The implemented prototype is a faithful (small-scale) realisation of the decoupled-encoding unified-AR design, not an SOTA replication.",
+      "support": [
+        "outputs/method_fidelity_checklist.json explicitly enumerates components and deviations.",
+        "outputs/dependency_check.json documents that only CPU PyTorch is available and large pre-trained checkpoints are not used."
+      ],
+      "verified": true
+    }
+  ]
+}

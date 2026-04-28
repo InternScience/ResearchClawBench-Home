@@ -1,0 +1,16 @@
+{
+  "task": "Reconcile 233 regional glacier mass change estimates over 19 RGI regions (2000-2023) into annual regional and global time series in m w.e. and Gt with uncertainties.",
+  "named_methods": ["glaciological", "demdiff", "altimetry", "gravimetry", "combined/hybrid"],
+  "output_resolution": "annual",
+  "output_period": "2000-2023 (calendar year primary, hydrological year secondary)",
+  "output_units": ["m w.e.", "Gt"],
+  "validation_anchor": "Official GlaMBIE 2024 consensus (data/glambie/results/)",
+  "deliverables": [
+    "outputs/regional_annual_reconciled.csv",
+    "outputs/global_annual_reconciled.csv",
+    "outputs/comparison_vs_glambie.csv",
+    "report/report.md",
+    "report/images/*.png (>=6)"
+  ],
+  "reconciliation_principle": "Within each region, (1) resample each input series onto the GlaMBIE monthly grid then aggregate to annual; (2) form group-level estimates per method as inverse-variance weighted means with empirical+formal uncertainty; (3) combine across method groups by inverse-variance weighting using GlaMBIE-style weighting that downweights the noisier groups, propagating uncertainty including method spread."
+}

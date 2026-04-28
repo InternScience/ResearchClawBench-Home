@@ -1,0 +1,399 @@
+/BT/CR/CR/CT/D4/D8/CT/CS /C5/CP/D2 /D9/D7/CR/D6/CX/D4/D8
+The HADDOCK2.2 web server: User-friendly integrative modeling of
+biomolecular complexes
+G.C.P . van Zundert, J.P .G.L.M. Rodrigues, M. Trellet, C. Schmitz, P .L.
+Kastritis, E. Karaca, A.S.J. Melquiond, M. van Dijk, S.J. de Vries, A.M.J.J.
+Bonvin
+PII: S0022-2836(15)00537-9
+DOI: doi: 10.1016/j.jmb.2015.09.014
+Reference: YJMBI 64857
+To appear in: Journal of Molecular Biology
+Received date: 8 July 2015
+Revised date: 16 September 2015
+Accepted date: 17 September 2015
+Please cite this article as: van Zundert, G.C.P., Rodrigues, J.P.G.L.M., Trellet,
+M., Schmitz, C., Kastritis, P.L., Karaca, E., Melquiond, A.S.J., van Dijk, M., de
+Vries, S.J. & Bonvin, A.M.J.J., The HADDOCK2.2 web server: User-friendly inte-
+grative modeling of biomolecular complexes, Journal of Molecular Biology (2015), doi:
+10.1016/j.jmb.2015.09.014
+This is a PDF ﬁle of an unedited manuscript that has been accepted for publication.
+As a service to our customers we are providing this early version of the manuscript.
+The manuscript will undergo copyediting, typesetting, and review of the resulting proof
+before it is published in its ﬁnal form. Please note that during the production process
+errors may be discovered which could aﬀect the content, and all legal disclaimers that
+apply to the journal pertain.
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 1 
+ 
+The HADDOCK2.2 web server: User-friendly integrative modeling of biomolecular complexes 
+  
+G.C.P. van Zundert#1, J.P.G.L.M. Rodrigues#1, M. Trellet2, C. Schmitz3, P.L. Kastritis4, E. Karaca4, A.S.J. 
+Melquiond5, M. van Dijk6, S.J. de Vries7 and A.M.J.J. Bonvin*,1 
+  
+1Bijvoet Center for Biomolecular Research, Faculty of Science – Chemistry, Utrecht University, Utrecht, the 
+Netherlands 
+ 
+2Current address: CNRS LIMSI, 91403 Orsay France 
+ 
+3Current address: Instaclustr Level 5, 1 Moore Street Canberra, ACT, 2600 Australia 
+ 
+4Current address: EMBL Heidelberg, Meyerhofstraße 1, 69117 Heidelberg, Germany 
+ 
+5Current address: Hubrecht Institute, Uppsalalaan 8, 3584 CT Utrecht, the Netherlands 
+ 
+6Current address: VU University Amsterdam, Faculty of Sciences, De Boelelaan 1083, 1081 HV Amsterdam 
+ 
+7Current address: Physik-Department, Technische Universität München, James-Franck-Str. 1, 85748 Garching, 
+Germany 
+ 
+#Contributed equally to this paper. 
+ 
+*Correspondence: Tel: +31-30-2533859; Fax: +31-30-2537623. 
+ 
+ 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 2 
+Abstract 
+  
+The prediction of the quaternary structure of biomolecular macromolecules  is of paramount importance for 
+fundamental understanding of cellular processes and drug design. In the era of integrative structural biology, one 
+way of increasing the accuracy of mo delling methods used to predict the structure of biomolecular complexes is 
+to include as much experimental or predictive information as possible in the process. This has been at the core 
+of our information -driven docking approach  HADDOCK. We present here t he updated version 2.2 of the 
+HADDOCK portal, which offers new features such as support for mixed molecule types, additional 
+experimental restraints  and improved protocols, all of this in a user -friendly interface . With well over 6000 
+registered users and 108000 jobs served, an increasing fraction of which on grid resources , we hope this timely 
+upgrade will help the community to solve important biological questions  and further advance the field . The 
+HADDOCK2.2 web server  is freely accessible to non -profit u sers at  
+http://haddock.science.uu.nl/services/HADDOCK2.2. 
+  
+ 
+Keywords 
+Biomolecular docking; Data-driven; Hybrid modeling; Protein complexes; Grid computing. 
+ 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 3 
+ 
+Introduction 
+Cellular metabolism is a highly regulated and adaptive system where proteins, the main participants, form a vast 
+network of interactions collectively known as the interactome. Knowledge of the three dimensional (3D) atomic 
+structure of protein -protein inte ractions is therefore critical for a fundamental understanding of cellular and 
+molecular biology, as well as for rational drug -design. Unfortunately, solving such structures using classical 
+high-resolution methods  (X-ray crystallography and NMR spectroscop y) is not trivial, as each has its own 
+limitations (e.g. protein flexibility, size, strength of the interaction). Considering the magnitude of the 
+interactome, complementary high-throughput methods such as computational docking are necessary if we aim to 
+close the structure gap [1]. The goal of protein -protein docking is to predict the structure of a complex starting 
+from the individual structures of its components [2], which can either be experimentally determined or predicted 
+[3]. 
+  
+Despite continuous adv ances in the field, the accuracy of ab initio docking – without using any experimental 
+restraints – remains generally low [4]. Data -driven approaches such as HADDOCK [5,6], which integrate 
+information derived from biochemical, biophysical or bioinformatics  methods to enhance sampling, scoring, or 
+both [2], perform remarkably better. The information that can be integrated is quite diverse: interface restraints 
+from NMR, mutagenesis experiments, or bioinformatics predictions [7,8]; shape data from small -angle X-ray 
+scattering [9] and cryo-electron microscopy experiments [10]; and orientations of the individual structures in the 
+complex from NMR residual dipolar couplings  [11], relaxation anisotropy [12] and pseudocontact shifts 
+experiments [13]. The potential of data-driven docking is reflected in the success of the HADDOCK server and 
+software in recent CAPRI experiments (Critical Assessment of Protein Interaction) [14,15], as well as in the 
+number of structures deposited (>120) in the Protein Data Bank (PDB), which were calculated using our 
+software. 
+  
+Five years ago, we introduced the HADDOCK web server to provide a user -friendly interface to the software 
+and streamline its usage by non -expert users in the structural biology field [16]. Shortly after, it was u pdated to 
+handle multi -body docking  [17]. The development of new and improved protocols and the inclusion of 
+additional sources of restraints culminated in the recently released version 2.2 of the software, followed by an 
+update of the web server interface s. Throughout the next section, we will provide an overview of the newly 
+updated HADDOCK web server  and discuss the most relevant additions. The server is freely  accessible at 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 4 
+http://haddock.science.uu.nl/services/HADDOCK2.2 to non -profit users upon registration. We conclude by 
+presenting usage statistics of the server to demonstrate the usefulness and power of providing easy and free 
+access to scientific software. 
+  
+Overview and advances 
+The HADDOCK web server was created to facilitate the use of our docking software, by removing the burden 
+of its installation and setup, as well as by providing validation routines for input data and options. In addition, 
+since HADDOCK runs are computationally demanding, the web server offers the users access to sufficient 
+resources - our local cluster(s) - to complete their runs within a few hours. A grid -enabled version of the server 
+can be accessed via the WeNMR web site ( www.wenmr.eu) [18], which uses resources  provided by the 
+European Grid Initiative (EGI) and the associated National Grid Initiatives (NGIs). This setup, which currently 
+handles most submissions, provides more than 110.000 CPU cores distributed over 41 sites worldwide (see  
+http://gstat.egi.eu/gstat/geo/openlayers#/VO/enmr.eu).  
+The HADDOCK web server aggregates seven different interfaces, each associated with a different level of 
+control over the docking protocol reflected by the number of parameters that can be changed. New users are 
+granted access to the Easy and the associated Prediction Interface only, but can request access to the Expert and 
+Guru levels, and their associated interfaces, if necessary. 
+The Easy interface provides the most basic level of control. It allows the user to either upload two structures in 
+PDB format or download them directly from the RCSB PDB, and define sets of active and passive residues that 
+represent the (putative) interface. Unlike previous versions, HADDOCK 2.2 supports single (protein, small 
+molecule, RNA, or DNA) and mixed (protein -DNA, protein -RNA) molecule types. This was implemented to 
+handle the docking of proteins onto a nucleosome complex - a recent CAPRI target. 
+The Expert interface builds on the Easy interface and allows the user to manually specify the protonation state 
+of each histidin e residue in the proteins, which is otherwise determined automatically with MolProbity [19]. 
+Also, it offers control over which regions of the molecules are semi -flexible and fully flexible segments, which 
+has an impact during the refinement stage of the d ocking. Lastly, the user is given the option to define the 
+charge state of the N - and C-terminus of the protein. The Expert interface also provides a Distance Restraints 
+section, where the user has the option to upload user -defined ambiguous and unambiguous restraints files and/or 
+use center-of-mass restraints, useful for blind or ab initio docking when no other information is available, but 
+also to ensure compactness of the generated models. The center -of-mass restraints are automatically generated 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 5 
+by calculating the dimensions of each molecule along the x, y and z -axis (  ,   ,   ) and summing the average 
+of the two smallest components per molecule. The resulting  distance is used to define a  restraint between the 
+center of mass of each subunit with a n additional upper bound correction  of 1Å [9]. In addition, the Expert 
+interface gives control over the Sampling Parameters, including namely the number of structures to generate at 
+each stage and whether or not to perform solvated docking  [20,21,23]. Finally, it exposes the Clustering 
+Parameters that define the clustering algorithm and cutoff. In version 2.2, in addition to RMSD -based 
+clustering, there is the option of using the Fraction of Common Contacts (FCC) clustering algorithm [23], which 
+is significantly faster and especially useful for symmetric complexes. 
+The Guru interface gives full access and control to ~500 parameters, nearly all that are available in HADDOCK. 
+The Distance Restraints section now offers a new radius of gyration restraint, in formation that can be extracted, 
+for example, from SAXS experiments. Non-crystallographic Symmetry Restraints  and Symmetry Restraints are 
+also available at this level and have been extended to handle C4 - and D2-symmetries in addition to the already 
+available C2-, C3- and C5-symmetries. There are additional sections for other types of NMR -based restraints, 
+such as Residual Dipolar Couplings [11], Relaxation Anisotropy  [12], and the recently added Pseudo Contact 
+Shifts [13]. These latter require a tensor dist ance restraints file and the definition of the rhombic and axial 
+components of the anisotropic tensor. Besides the restraints, all the energy evaluations, scoring functions  and 
+analysis parameters can be tweaked; advanced parameters for the sampling protoc ols are also available at this 
+level, offering a greater degree of control, for example, on the extent of each refinement stage. There are also 
+dedicated options to the solvated docking protocol, which now uses by default propensities based on the Kyte -
+Doolittle hydrophobicity scale, as these have been shown to improve the protocol [21]. The original statistical -
+based propensities  [20], recently expanded to include nucleotides  [22], can still be selected via a dropdown 
+menu. 
+The remaining four interfaces consist of: the Prediction Interface , which is similar to the Easy interface, but 
+with settings geared towards using bioinformatics interface predictors such as CPORT [7]; the Refinement 
+Interface (expert-level access), which runs only the water refinement stage on the uploaded structures and can 
+be used for scoring purposes; the Multi-body Interface, based on the Guru interface, supporting upload of up to 
+six molecules that will be docked simultaneously  [17] and also featuring  the Molecule Interaction Matrix  
+section. This new addition displays a table with scaling factors to adjust the interaction forces between different 
+subunits, allowing molecules to become invisible to each other during the docking, which is useful in cases  
+where multiple binding modes are required to satisfy the experiment data  (see for example [24]). The use of 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 6 
+ambiguous interaction restraints within this interface requires the user to upload a restraints table file in the 
+Distance Restraints section This requirement of uploading distance restraint files instead of supplying residue 
+lists as in the other interfaces was meant to make users think carefully about their system since in multi -body 
+docking multiple interfaces will be defined that might not all be supposed to interact. To facilitate the creation of 
+custom ambiguous interaction restraint files between any number of molecules, an interface called Gentbl was 
+created. Finally, the web server also offers a File Upload Interface to allow the user to upload a run parameter 
+file, created upon successful validation and submission to the queue, and thus easily redo a docking run or re -
+run it with slight changes in the parameters. 
+  
+At submission time, once the input data have been pr operly validated, the server offers the option to download a 
+parameter file, and provides a link to the results page, which is also emailed to the user . Users are encouraged to 
+save th e parameter  file since it contains  all required input data and settings to reproduce the docking, as 
+recommended in the “Outcome of the First wwPDB Hybrid/Integrative Methods Task Force Workshop”  
+(Recommendation 1)  [25]. The results page allows monitoring of the progress of the docking run. After a 
+successful docking run, the user will receive an other e-mail redirecting him/her to the updated results page (see 
+Figure 1  for an excerpt of presented results ). The page indicates how many structures of the water-refined 
+models could be clustered , and list s the clusters in the order of their HADDOCK score . For each cluster , 
+detailed statistics are displayed, representing the average values calculated over  the top four best scoring 
+structures within each cluster. Besides the HADDOCK score and other standard energies (van der Waals, etc .), a 
+z-score has been added. The z -score represents how many standard deviations the HADDOCK score of a given 
+cluster is separated from the mean of all clusters, i.e. the lower the z -score, the better. To visualize the results , 
+plots are displayed at the bottom of the results-page, showing for example the HADDOCK score of all solutions 
+against the interface -ligand-RMSD (i -l-RMSD) compared to the best scoring structure, together with cluster 
+averages and their spreads.  
+ 
+Usage statistics 
+Since its opening in June 2008, the HADDOCK web server  has seen a sustained increase in the number of 
+registrations to reach over 6000 registered users to date distributed all over the world  (Figure 2). More than 
+108000 runs have been processed, 28% of wh ich have run on EGI grid resources. This percentage has increased 
+to 75% for the HADDOCK2.2 server submission. An overview of the number of runs processed per month with 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 7 
+their distribution over local and grid resources is shown in Figure 2. Since the launch of the HADDOCK2.2 web 
+server in March 2015, an increased fraction of runs are handled by the new 2.2 portal. Statistics over the last 
+year (since January 2014) indicate that the portal is processing on average 75 docking runs per day. The 
+execution wall time averaged over both local cluster and grid resources is around 16 hours per HADDOCK run, 
+as approximately 75 runs are handled per day with up to 50 jobs running in parallel (and a maximum of 5 
+concurrent jobs per user). The exact run time depends on th e size of the system being docked and the parameter 
+settings and can vary between half an hour and several days. The server home page reports both the number of 
+running and pending jobs, allowing users to get an estimate of the waiting time.  A majority of the docking runs 
+are dealing with protein -protein and protein -peptide docking (~61%), ~19% correspond to protein -nucleic acids 
+systems and quite a significant fraction (~20%) is dealing with protein -small molecule docking (both small 
+ligand and oligosaccharides). These numbers demonstrate the popularity and widespread usage (both in terms of 
+geographic distribution and type of systems being studied) of our HADDOCK web server.  
+ 
+ 
+Acknowledgements 
+ 
+The development of HADDOCK and its web server  have been suppor ted by grants from the Netherlands 
+Organization for Scientific Research (NWO) (VICI grant  no. 700.96.442  and ECHO grant no.711.011.009) and 
+by European FP7  and H2020  e-Infrastructure grants (e -NMR, grant no. 213010 ; WeNMR, grant no. 261572 ; 
+EGI-Engage, grant no. 654142; INDICO -DataCloud, grant no. 653549 ). The European Grid Initiative ( EGI, 
+www.egi.eu) through the national GRID Initiatives of Belgium, France, Italy, Germany, the Netherlands, 
+Poland, Portugal , Spain, UK, South Africa, Malaysia, Taiwan, the Latin America GRID infrastructure via 
+the Gisela project, the International Desktop Grid Federation ( IDGF) with its vo lunteers and the US Open 
+Science Grid (OSG) are acknowledged for the use of web portals, computing and storage facilities. 
+  
+  
+References 
+  
+[1] Petrey, D. & Honig, B. (2014). Structural bioinformatics of the interactome. Annu. Rev. Biophys. 43, 193-
+210. 
+ 
+[2] Rodrigues, J.P.G.L.M. & Bonvin A.M.J.J. (2014). Integrative computational modeling of protein -protein 
+interactions. FEBS J. 281, 1988-2003. 
+ 
+[3] Rodrigues, J.P.G.L.M., Melquiond, A.S.J., Karaca, E., Trellet, M., van Dijk, M., van Zundert, G.C.P., 
+Schmitz, C., de Vries, S.J., Bordogna, A., Bonati, L., Kastritis, P.L. & Bonvin, A.M.J.J. (2013). Defining the 
+limits of homology modeling in information-driven protein docking. Proteins 81, 2119-2128. 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 8 
+ 
+[4] Huang, S.-Y. (2015). Exploring the potential of global protein-protein docking: an overview and critical 
+assessment of current programs for automatic ab initio docking. Drug Discov. Today  8, 969-977. 
+ 
+[5] Dominguez, C., Boelens, R. & Bonvin, A.M.J.J. (2003). HADDOCK: a protein-protein docking approach on 
+biochemical or biophysical information. J. Am. Chem. Soc. 125, 1731 -1737. 
+ 
+[6] De Vries, S.J., van Dijk, A.D.J., Krzeminski, M., van Dijk, M., Thureau, A., Hsu, V., W assenaar, T. & 
+Bonvin, A.M.J.J. (2007). HADDOCK versus HADDOCK: new features and performance of HADDOCK2.0 on 
+the CAPRI targets. Proteins 69, 726-733. 
+ 
+[7] De Vries, S.J. & Bonvin, A.M.J.J. (2011). CPORT: a consensus interface predictor and its performance in 
+prediction-driven docking with HADDOCK. PLoS One 6, e17695. 
+ 
+[8] Hopf, T.A., Schärfe, C.P.I, Rodrigues, J.P.G.L.M., Green, A.G., Kohlbacher, O., Sander, C., Bonvin, 
+A.M.J.J., Marks, D.S. (2014). Sequence co-evolution gives 3D contacts and structures of protein complexes. 
+Elife 3, e03430. 
+ 
+[9] Karaca, E. & Bonvin, A.M.J.J. (2013). On the usefulness of ion-mobility mass spectrometry and SAXS data 
+in scoring docking decoys. Acta Crystallogr. D. Biol. Crystallogr. 69, 683 -694. 
+ 
+[10] Van Zundert, G.C.P., Melquiond, A.S.J. & Bonvin, A.M.J.J. (2015). Integrative modeling of biomolecular 
+complexes: HADDOCKing with cryo-electron microscopy data. Structure 23, 949-960. 
+ 
+[11] Van Dijk, A.D.J., Fushman, D. & Bonvin, A.M.J.J. (2005). Various strategies of using residual dipolar 
+couplings in NMR-driven protein docking: Application to Lys48-linked di-ubiquitin and validation against 15N-
+relaxation data. Proteins 60, 367-381. 
+ 
+[12] Van Dijk, A.D.J., Kaptein, R., Boelens, R. & Bonvin, A.M.J.J. (2006). Combining NMR relaxation with 
+chemical shift perturbation data to drive protein-protein docking. J. Biomol. NMR 34, 237:244. 
+ 
+[13] Schmitz, C. & Bonvin, A.M.J.J. (2011). Protein-protein HADdocking using exclusively pseudocontact 
+shifts. J. Biomol. NMR 50, 263-266. 
+ 
+[14] Janin, J. (2005). Assessing predictions of protein-protein interaction: the CAPRI experiment. Protein Sci. 
+14, 278-283. 
+ 
+[15] Lensink, M.F. & Wodak, S.J. (2013). Docking, scoring and affinity prediction in CAPRI. Proteins 81, 
+2082-2095. 
+ 
+[16] De Vries, S.J., van Dijk, M. & Bonvin, A.M.J.J. (2010). The HADDOCK web server for data-driven 
+biomolecular docking. Nat. Protoc. 5, 883-897. 
+ 
+[17] Karaca, E., Melquiond, A.S.J., de Vries, S.J., Kastritis, P.L. & Bonvin, A.M.J.J. (2010). Building 
+macromolecular assemblies by information-driven docking: introducing the HADDOCK multibody docking 
+server. Moll. Cell Proteomics 9, 1784-1794. 
+ 
+[18] Wassenaar, T., van Dijk, M., Loureiro-Ferreira, N., van der Schot, G., de Vries, S., Schmitz, C., van der 
+Zwan, J., Boelens, R., Giachetti, A., Ferella, L., Rosato, A., Bertini, I., Herrmann, T., Jonker, H., Bagaria, A., 
+Jaravine, V., Güntert, P., Schwalbe,H., Vranken, W., Doreleijers, J., Vriend, G., Vuister, G., Franke, D., 
+Kikhney, A., Svergun, D., Fogh, R., Ionides, J., Laue, E., Spronk, C., Jurkša, Verlato, M.,  Badoer, S., Dal Pra, 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 9 
+S., Mazzucato, M., Frizziero, E. & Bonvin, A.M.J.J. (2012). WeNMR: Structural Biology on the Grid. J. Grid 
+Comp. 10, 743-767. 
+ 
+[19] Chen, V.B., Arendall 3rd, W.B., Headd, J.J., Keedy, D.A., Immormino, R.M., Kapral, G.J. Murray, L.W., 
+Richardson, J.S. & Richardson, D.C. (2010). MolProbity: all-atom structure validation for macromolecular 
+crystallography. Acta Crystallogr. D Biol. Crystallogr. 66, 12-21. 
+ 
+[20] Van Dijk, A.D.J. & Bonvin, A.M.J.J. (2006). Solvated docking: introducing wate r into the modelling of 
+biomolecular complexes. Bioinformatics 22, 2340-2347. 
+ 
+[21] Kastritis, P.L, Visscher, K.M., van Dijk, A.D.J. & Bonvin, A.M.J.J. (2013). Solvated protein -protein 
+docking using Kyte-Doolittle-based water preferences. Proteins 81, 510-518. 
+ 
+[22] Van Dijk, M., Visscher, K., Kastritis, P.L. & Bonvin, A.M.J.J. (2013). Solvated protein -DNA docking 
+using HADDOCK. J. Biomol. NMR 56, 51-63. 
+ 
+[23] Rodrigues, J.P.G.L.M., Trellet, M., Schmitz, C., Kastritis, P., Karaca, E., Melquiond, A.S.J. & Bo nvin, 
+A.M.J.J. (2012). Clustering biomolecular complexes by residue contacts similarity. Proteins 80, 1810 -1817. 
+[24] Escobar-Cabrera, E., Okon, M., Lau, D.K.W., Dart, C.F., Bonvin, A.M.J.J. & McIntosh, L.P. (2011). 
+Characterizing the N- and C-terminal Small ubiquitin-like modifier (SUMO)-interacting motifs of the scaffold 
+protein DAXX. J. Biol. Chem. 286, 19816-19829. 
+ 
+[25] Sali, A., Bergman, H.M., Schwede, T., Trewhella, J., Kleywegt, G., Burley, S.K., Markley, J., Nakamura, 
+H., Adams, P., Bonvin, A.M.J.J., Chiu, W., Peraro, M.D., Di Maio, F., Ferrin, T.E., Grünewald, K., Gutmanas, 
+A., Henderson, R., Hummer, G., Iwasaki, K., Johnson, G., Lawson, C.L., Meiler, J., Marti -Renom, M.A., 
+Montelione, G.T., Nilges, M., Nussinov, R., Patwardhan, A., Rappsilber, J.,  Read, R.J., Saibil, H., Schröder, 
+G.F., Schwieters, C.D., Seidel, C.A.M., Svergun, D., Topf, M., Ulrich, E.L., Velankar, S. & Westbrook, J.D. 
+(2015). Outcome of the First wwPDB Hybrid/Integrative Methods Task Force Workshop. Structure  7, 1156-
+1167. 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 10 
+FIGURE LEGENDS 
+ 
+Figure 1: Excerpts from an example result page of a HADDOCK2.2 docking run.  
+ 
+ 
+Figure 2: HADDOCK web server  statistics (as of September 1st 2015). The worldwide distribution of 
+registered users (>6000) is shown with a blue-scale color-coding. On the top right, the distribution of the type of 
+systems docked using HADDOCK is shown (taken from a HADDOCK online survey with >325 respondents). 
+The middle bar graph shows the yearly increase in the number of registered users si nce 2010 and the bottom plot 
+shows the number of processed user runs per month since last year (2014), distinguishing between runs that 
+have been processed on our local resources or on the EGI grid resources, and between the previous and current 
+(2.2) version of the server. 
+ 
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 11 
+ 
+Figure 1 
+
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 12 
+ 
+Figure 2 
+
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 13 
+ 
+Graphical Abstract 
+
+ACCEPTED MANUSCRIPT
+ACCEPTED MANUSCRIPT
+ 14 
+Highlights 
+ The HADDOCK webserver has been upgraded to use HADDOCK version 2.2. 
+ It supports mixed-type molecules, e.g. protein-nucleic acid, such as nucleosomes. 
+ NMR-based pseudocontact shifts and radius of gyration restraints are included. 
+ The multibody and solvated docking protocol are extended. 
+ The HADDOCK webserver counts over 6000 users and has served more than 100000 jobs. 

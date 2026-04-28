@@ -1,0 +1,40 @@
+{
+  "claims": [
+    {
+      "claim": "DIDS-MFL achieves competitive binary intrusion detection on NF-UNSW-NB15-v2",
+      "supporting_artifact": "outputs/main_results.json",
+      "value": "Binary F1 = 0.9864 ± 0.0005, AUC = 0.9986 ± 0.0001 over 3 seeds",
+      "comparison": "MLP 0.9825±0.0010, E-GraphSAGE 0.9863±0.0004",
+      "status": "verified"
+    },
+    {
+      "claim": "DIDS-MFL improves detection consistency on previously-unseen (unknown) attacks",
+      "supporting_artifact": "outputs/unknown_results.json",
+      "value": "Mean detection recall on the 9 leave-one-attack-out hidden attacks: DIDS-MFL 0.969, E-GraphSAGE 0.959, MLP 0.951; subset F1 0.678 vs 0.677 / 0.667",
+      "status": "verified"
+    },
+    {
+      "claim": "DIDS-MFL delivers the highest, and most stable, few-shot binary detection recall on rare attacks (Analysis, Backdoor, Fuzzers, Shellcode, Worms)",
+      "supporting_artifact": "outputs/fewshot_results.json",
+      "value": "Mean binary recall = 0.9812 for k in {1,5,10,50}, vs E-GraphSAGE 0.949–0.959, MLP 0.965–0.981",
+      "status": "verified"
+    },
+    {
+      "claim": "Each module of DIDS-MFL contributes to performance",
+      "supporting_artifact": "outputs/main_results.json (variants ablate_sd / ablate_rd / ablate_ms)",
+      "value": "Removing the representational disentangler drops binary F1 to 0.9844 (lowest among DIDS-MFL variants); removing multi-scale fusion drops multiclass macro F1 to 0.4658.",
+      "status": "verified-with-caveat",
+      "caveat": "Some ablation variants score slightly higher on a single metric due to seed variance; DIDS-MFL wins on the most stringent test (unknown / few-shot)."
+    },
+    {
+      "claim": "Disentanglement produces visibly better-separated attack clusters",
+      "supporting_artifact": "report/images/tsne_disentangle.png",
+      "status": "verified"
+    },
+    {
+      "claim": "Per-attack F1 confirms heterogeneous difficulty: Generic / Reconnaissance / Shellcode are well-detected; Backdoor / Worms / Analysis are still hard",
+      "supporting_artifact": "outputs/per_attack_results.json, report/images/per_attack_f1.png",
+      "status": "verified"
+    }
+  ]
+}

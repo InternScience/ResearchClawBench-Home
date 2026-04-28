@@ -1,0 +1,16 @@
+{
+  "method_name": "ViCrop (Visual Cropping for MLLMs)",
+  "non_negotiable_steps": [
+    {"id":"S1","step":"Run a vision-language model on the original image with the task text.","implemented":true},
+    {"id":"S2","step":"Derive a text-conditioned relevancy map from the visual encoder.","implemented":true,
+     "method":"two variants: (a) Chefer-style attention x gradient relevancy w.r.t. the image-text similarity; (b) attention rollout (last-block CLS->patch mean-head) as a gradient-free fallback."},
+    {"id":"S3","step":"Localise a single ROI bounding box from the relevancy map (threshold + largest connected component + margin).","implemented":true},
+    {"id":"S4","step":"Crop and re-encode the ROI at the encoder's native resolution.","implemented":true},
+    {"id":"S5","step":"Integrate global and cropped logits (ensemble).","implemented":true,
+     "method":"weighted average of softmaxed similarities; default weight 0.5."}
+  ],
+  "training_free": true,
+  "deviations": [
+    "VQA backend approximated by CLIP zero-shot MC scoring rather than an autoregressive LLaVA decoder due to local CPU/RAM."
+  ]
+}

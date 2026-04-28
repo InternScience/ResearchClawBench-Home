@@ -1,0 +1,24 @@
+{
+  "method_name": "Bayesian black-hole superradiance constraints on ULBs",
+  "non_negotiable_steps": [
+    "Use full (M, a*) posterior samples; do not collapse to point estimate",
+    "Apply SR condition omega_R < m Omega_H per (n,l,m)",
+    "Require tau_SR < tau_BH/N_efolds for spin-down to actually occur",
+    "Combine multiple low-l modes (l=m=1,2,3) in the final exclusion union",
+    "Treat self-interactions via Bosenova: SR is allowed only if N_extract < N_bosenova",
+    "Exclusion probability = posterior fraction with the above conditions met",
+    "Quote 95% and 68% credible exclusion intervals on mu and lower bound on f_a"
+  ],
+  "checks": {
+    "uses_full_posterior": true,
+    "alpha_validity_capped": true,
+    "tau_BH_systematic_band_reported": true,
+    "multi_level_sum_done": true,
+    "f_a_2D_constraint_done": true,
+    "per_source_artifacts_saved": true
+  },
+  "deviations_from_named_method": [
+    "We use the analytic Detweiler/Arvanitaki small-alpha rate rather than the full numerical Dolan-Detweiler hydrogenic spectrum. This is the standard literature approximation for alpha <~ 0.5 and is conservative.",
+    "Bosenova threshold uses the leading c_n n^4 / alpha^3 scaling with c_n=5 (paper_000 Eq. 40). The exact O(1) prefactor introduces ~0.5 dex uncertainty on the f_a lower bound."
+  ]
+}

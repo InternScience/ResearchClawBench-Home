@@ -1,0 +1,25 @@
+{
+  "task": "Unified autoregressive framework that decouples visual encoding for multimodal understanding and visual generation in a single Transformer.",
+  "named_methods_or_inspirations": [
+    "Janus (decoupled visual encoding; mentioned indirectly through doge.png Figure 5)",
+    "Chameleon (single early-fusion tokenizer baseline)",
+    "LLaVA (understanding branch: vision encoder + projector + LLM)",
+    "SigLIP (sigmoid-loss CLIP-style understanding encoder)",
+    "LlamaGen (vanilla autoregressive next-token-prediction for images using a VQ tokenizer)"
+  ],
+  "non_negotiable_components": [
+    "Two visual pathways: an UNDERSTANDING encoder (semantic, continuous features) and a GENERATION tokenizer (discrete VQ codes).",
+    "A single unified autoregressive Transformer trunk consumes BOTH pathways via a shared sequence/embedding space.",
+    "Next-token prediction objective handles text tokens AND image VQ tokens.",
+    "On the understanding side the encoder feeds a projector that maps to the LLM input space.",
+    "Demonstrate on the supplied equation.png (OCR / LaTeX) and doge.png (humor/semantic) probes."
+  ],
+  "deliverables": [
+    "Architecture diagram",
+    "Side-by-side single vs decoupled encoder comparison",
+    "Understanding qualitative outputs on equation.png and doge.png",
+    "Text-to-image generation demo with VQ tokens",
+    "Quantitative ablation table (representation quality / generation quality / shared-encoder interference)",
+    "report/report.md with methodology, results, discussion"
+  ]
+}

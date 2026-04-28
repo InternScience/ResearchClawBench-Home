@@ -1,0 +1,19 @@
+{
+  "task": "M-AI-Synth multimodal materials AI demonstration",
+  "named_workflows": [
+    "property_prediction",
+    "structure_generation",
+    "autonomous_optimization"
+  ],
+  "named_methods": {
+    "property_prediction": "Crystal Graph Convolutional Neural Network (CGCNN), Xie & Grossman, PRL 120 145301 (2018)",
+    "structure_generation": "Variational Autoencoder (VAE) over lattice parameter pairs",
+    "autonomous_optimization": "Bayesian Optimization with Gaussian Process surrogate and Expected Improvement acquisition"
+  },
+  "comparison_axes": [
+    "CGCNN vs MLP baseline on property prediction (RMSE, MAE, R^2)",
+    "VAE-generated lattice distribution vs training distribution (KS, Wasserstein)",
+    "BO vs random search on autonomous optimization (regret curves, success rate at threshold)"
+  ],
+  "data_source": "data/M-AI-Synth__Materials_AI_Dataset_.txt (three embedded blocks)"
+}

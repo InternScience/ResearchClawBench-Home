@@ -1,0 +1,769 @@
+7
+1
+0
+2
+
+r
+a
+
+M
+2
+
+]
+h
+p
+-
+p
+e
+h
+[
+
+2
+v
+8
+5
+9
+3
+0
+.
+4
+0
+6
+1
+:
+v
+i
+X
+r
+a
+
+Black Hole Mergers and the QCD Axion at Advanced LIGO
+
+Asimina Arvanitaki,1, ∗ Masha Baryakhtar,1, † Savas Dimopoulos,2, ‡ Sergei Dubovsky,3, § and Robert Lasenby1, ¶
+1Perimeter Institute for Theoretical Physics, Waterloo, Ontario N2L 2Y5, Canada
+2Stanford Institute for Theoretical Physics, Stanford University, Stanford, California 94305, USA
+3Center for Cosmology and Particle Physics, New York University New York, NY, 10003, USA
+
+In the next few years Advanced LIGO (aLIGO) may see gravitational waves (GWs) from thou-
+sands of black hole (BH) mergers. This marks the beginning of a new precision tool for physics.
+Here we show how to search for new physics beyond the standard model using this tool, in particular
+the QCD axion in the mass range µa ∼ 10−14 to 10−10 eV. Axions (or any bosons) in this mass
+range cause rapidly rotating BHs to shed their spin into a large cloud of axions in atomic Bohr
+orbits around the BH, through the eﬀect of superradiance (SR). This results in a gap in the mass
+vs. spin distribution of BHs when the BH size is comparable to the axion’s Compton wavelength.
+By measuring the spin and mass of the merging objects observed at LIGO, we could verify the
+presence and shape of the gap in the BH distribution produced by the axion.
+
+The axion cloud can also be discovered through the GWs it radiates via axion annihilations or level
+transitions. A blind monochromatic GW search may reveal up to 105 BHs radiating through axion
+annihilations, at distinct frequencies within ∼ 3% of 2µa. Axion transitions probe heavier axions
+and may be observable in future GW observatories. The merger events are perfect candidates for a
+targeted GW search. If the ﬁnal BH has high spin, a SR cloud may grow and emit monochromatic
+GWs from axion annihilations. We may observe the SR evolution in real time.
+
+INTRODUCTION
+
+The LIGO detection of gravitational waves (GWs) [1]
+has opened a new window on the universe. In the years
+to come, GWs from up to thousands of merger events will
+reveal a wealth of information about the hidden lives of
+black holes and neutron stars. We also have been given
+a new precision tool that may diagnose the presence of
+new bosonic particles [2]. When such a particle’s Comp-
+ton wavelength is comparable to the horizon size of a ro-
+tating BH, the superradiance eﬀect [3–5] spins down the
+BH [6–9], populating bound Bohr orbits around the BH
+with an exponentially large number of particles [10, 11].
+Astrophysical BHs turn into nature’s detectors probing
+bosons of mass between 10−20 and 10−10 eV. Stellar-
+mass BHs, such as those observed by aLIGO, correspond
+to the upper end of this mass range, which covers the
+parameter space for the QCD axion [12–14] with a decay
+constant fa between the GUT and Planck scales.
+
+The QCD axion was proposed over thirty years ago
+to explain the smallness of the neutron electric dipole
+moment, and has been looked for ever since. However, SR
+is not limited to the QCD axion — it is an excellent probe
+of the String Axiverse [2] as well as any other weakly-
+interacting boson, such as a dark photon [15, 16], that
+lies in the right mass range.
+
+In this work we assess how the potentially enormous
+amount of merger data collected by aLIGO in the next
+few years may be used to probe the eﬀects of SR. A statis-
+tical analysis of the spins and masses of merging BHs can
+reveal the presence of an axion by the absence of rapidly
+rotating BHs. After a merger, the newly-born BH may
+become a beacon of monochromatic GW radiation from
+axion annihilations, providing a unique opportunity to
+
+observe the time evolution of SR. Before we present the
+results of our analysis, we review the dynamics of SR and
+results from previous work.
+
+BLACK HOLE SUPERRADIANCE AND
+ALL-SKY GW SEARCHES
+
+Here we summarize the eﬀects of superradiance on BH
+evolution (for detailed discussion, see [10, 11], as well
+as [17] for a review). We restrict ourselves to the study
+of weakly-interacting spin-0 states, with the QCD axion
+as a primary example.
+
+Axions with Compton wavelength large compared to
+the size of the BH have an approximately hydrogenic
+spectrum of bound states around the BH with energies
+ω ≈ µa
+, where µa is the axion mass, MBH
+the BH mass, and we deﬁne α to be the “ﬁne-structure”
+constant of the gravitational “atom”,
+
+(cid:16)
+1 − α2
+2n2
+
+(cid:17)
+
+α ≡ GN MBH µa ∼ 0.22
+
+(cid:18) MBH
+30M(cid:12)
+
+(cid:19)(cid:16)
+
+µa
+10−12 eV
+
+(cid:17)
+
+,
+
+(1)
+
+with GN Newton’s constant [9, 18]. Each state is
+uniquely characterized by the principal n, orbital (cid:96), and
+magnetic m quantum numbers.
+
+Such a state is superradiant (i.e. has an occupation
+
+number growing with time) if
+
+ω
+m
+
+< ΩH ,
+
+(2)
+
+where ΩH = 1
+2rg
+event horizon, rg ≡ GN MBH , and 0 ≤ a∗ < 1 is the
+
+is the angular velocity of the
+
+1−a2
+∗
+
+a∗
+√
+
+1+
+
+ 
+ 
+ 
+ 
+ 
+ 
+dimensionless BH spin.1 The simplicity of Eq. 2 reﬂects
+that SR is a kinematic/thermodynamic phenomenon not
+unique to gravity [3, 19].
+
+2
+
+When a spinning BH is born, the number of axions in
+superradiant levels grows exponentially, seeded by spon-
+taneous emission. The growth rate is proportional to the
+value of the bound-state wavefunction at the horizon,
+Γsr ∝ α4(cid:96)+4µa. The fastest-growing level, generally one
+with the minimum (cid:96), m such that Eq. 2 is satisﬁed, will
+extract energy and angular momentum from the BH un-
+til Eq. 2 is saturated. At that point, the bound state is
+(cid:17)2
+occupied by Nmax ∼ ∆a∗
+m G M 2
+axions. For stellar-mass BHs, e-folding times are as
+fast as ∼ 100 sec, so energy extraction can occur faster
+than other processes such as accretion. For axion masses
+much smaller than the optimum values (α (cid:28) 1), the
+growth rate is much slower, while for much larger masses
+(α (cid:29) 1), satisfying Eq. 2 requires l, m (cid:29) 1, again giv-
+ing much slower growth. Thus, a given BH mass probes
+a range in mass around µa ∼ r−1
+g .
+
+BH ∼ 1077 ∆a∗
+0.1m
+
+(cid:16) MBH
+10M(cid:12)
+
+The process repeats for the next-fastest-growing level,
+until the time for the next level to grow is longer than the
+accretion timescale of the BH or the BH age. Axion self-
+interactions may modify this picture; large occupation
+number in one level may aﬀect the growth of the others,
+or lead to axion emission [10, 11, 20]. We consider masses
+small enough that, for the QCD axion, self-interactions
+are unimportant.
+
+The absence of rapidly rotating old BHs is a signal
+that SR has taken place. The spin-mass distribution of
+BHs should be empty in the region aﬀected by SR [2, 10,
+11]. The handful of high-spin BH measurements in X-
+ray binaries already disfavor an axion in the mass range
+6 × 10−13 eV to 2 × 10−11 eV [11].
+
+Axions occupying the bound levels can produce
+monochromatic GWs in two ways. Axions can emit a
+graviton to transition between levels, or two axions can
+annihilate into a single graviton [2, 11, 26]. Annihilations
+probe axions of mass lighter than 10−11 eV; transition
+signals are largest for axion masses ∼ 10−11 − 10−10 eV.
+These signals are coherent, monochromatic, can last 10
+years or more, and may be seen in blind searches for con-
+tinuous GWs at aLIGO. Fig. 1 summarizes and updates
+the ﬁndings of [11] for the prospects of those searches.
+Annihilations provide the most promising direct probe of
+SR; assuming exponentially falling BH mass distributions
+as in [11] we expect up to ∼ 104 events at aLIGO com-
+ing from annihilations, while axion transitions become
+interesting for future detectors2. By updating the anni-
+hilation rates in [11] with the numerical results of [22],
+
+1 The SR condition implies α
+
+m < 1
+energy level approximation [18].
+
+2 , which justiﬁes the hydrogenic
+
+2 assuming a BH mass distribution falling as a power-law at large
+mass results in an even higher number of annihilation events
+
+FIG. 1. Expected detectable sources in a blind monochro-
+matic GW search, with sensitivity of current aLIGO (dashed),
+design aLIGO (solid), Voyager (wide-dashed) and Cosmic Ex-
+plorer (dot-dashed) [21] for realistic mass and spin distri-
+butions, and BH formation rates ([11]). The shaded bands
+correspond to the range between pessimistic and optimistic
+BH distributions with design aLIGO (distributions as in [11],
+with the most narrow BH mass distribution removed as it is
+disfavored by the observation of GW150914). The coherent
+integration time is 2 days and total time 1 yr. The anni-
+hilation rate has been updated using the latest superradi-
+ance simulations [22]. Axion masses in the grayed-out region
+are disfavored by BH spin measurements [11]; the most op-
+timistic distributions are disfavored by previous null LIGO
+searches [23–25].
+
+we ﬁnd that the most optimistic assumptions about BH
+mass and spin distributions are already constrained from
+null continuous wave searches at initial LIGO [23–25].
+
+In addition to individual monochromatic signals, there
+would be a stochastic GW background from unresolved
+sources. The individual signals considered in Fig. 1 would
+be concentrated in a narrow frequency range and stand
+well above plausible backgrounds. The stochastic back-
+ground from axion SR could be detectable, but as indi-
+vidual signals would likely be seen ﬁrst we defer a full
+discussion to future work.
+
+STATISTICS OF BINARY BH MERGERS
+
+At design sensitivity, aLIGO is expected to detect 80-
+1200 binary black hole (BBH) merger events per year [27–
+29], and measure the masses and spins of the merging
+BHs. A clear signature of superradiance is the absence
+of rapidly rotating old BHs in the range inﬂuenced by
+a given axion, and a large number of BHs populating
+the curve ω
+m = ΩH for the last level that had time to
+grow, as illustrated in Fig. 2 (top). We show an example
+BH distribution with (right) and without (left) an axion.
+Unless otherwise speciﬁed, in what follows, we assume a
+ﬂat BH spin distribution [30] and a power-law BH mass
+distribution ρ(M ) ∝ M −2.35 [27] in the absence of an
+
+TRANSITIONSExplorerVoyageraLIGODesignaLIGO2015ANNIHILATIONS10-1310-1210-1110-100.0010.1101000105maHeVLDetectableSourcesInitial LIGOX-Ray Binariesaxion, as were assumed in LIGO analyses.
+
+The histories of BH binaries aﬀect the observed BH
+distribution in the mass-spin plane. If the BHs form in
+an existing binary system and merge quickly, then super-
+radiant levels might not have had time to grow to max-
+imal size. In addition, the gravitational perturbation of
+one black hole on the other’s axion levels can mix su-
+perradiating levels with decaying ones, and may disrupt
+superradiance entirely [10, 11]. On the other hand, if the
+binary was formed by capture [28], the initially isolated
+BHs are likely to have had time to superradiate without
+disruption.
+
+For a given merger time, the BHs are spun down if
+SR is fast enough to fully populate the levels before
+the merger, and the gravitational perturbation is small
+enough such that the level-mixing eﬀect on SR is negli-
+gible. Assuming equal mass BHs and initial separation
+giving τbinary time until the merger (assuming energy loss
+through GW emission only), the latter condition for the
+(cid:96) = m = 1 level is [11],
+
+α (cid:38) 0.06
+
+(cid:18) MBH
+30M(cid:12)
+
+(cid:19)1/15 (cid:18) 1010 yr
+τbinary
+
+(cid:19)1/15
+
+.
+
+(3)
+
+In Fig. 2 level mixing is the limiting factor for the regions
+aﬀected by (cid:96) = 1, 2 levels, while (cid:96) = 3 is limited by the
+level growth being slower than the binary merger time.3
+For Fig. 2, we have assumed that the BHs are formed
+in a binary, and take 1010 years to merge. This cor-
+responds to the largest separation possible, and is the
+most optimistic scenario for spin-down, illustrating how
+strong a signal could be. The top panels of Fig. 2 present
+a sample spin-mass distribution of BBHs with and with-
+out an axion. In the bottom panels we present the corre-
+sponding distributions as seen by aLIGO, accounting for
+design detector sensitivity as a function of total merger
+mass [32] and mass and spin measurement uncertain-
+ties [30, 31]. The large number of events shown make
+the lack of rapidly spinning BHs clear.4
+
+Even with a relatively small number of events, it may
+be possible to infer that the mass-spin distribution has
+superradiance-like properties — for example, that the
+spin distribution varies with mass. Fig. 3 shows the num-
+ber of events at aLIGO needed to obtain 2σ evidence
+for such variation, under the assumptions explained in
+the caption. For axion masses between ∼ 2 × 10−13 eV
+and 5 × 10−12 eV, we ﬁnd that good evidence for a non-
+separable mass-spin distribution may be obtained after
+
+3 The axion cloud is generally destroyed by annihilations or falling
+into the BH without spinning up the BH. Thus, the SR saturation
+lines are a good approximation to the BH’s ﬁnal spin.
+
+4 It may be possible to obtain better spin measurements for BHs
+in BH-NS mergers [30, 31], but such events have not yet been
+observed.
+
+3
+
+observing O(50) events, probing axion masses below the
+X-ray binary bounds.
+
+Diﬀerent assumptions can change the required number
+of events by factors of a few. As shown in Fig. 3, re-
+ducing the assumed merger time from 1010yrs to 107yrs
+(the range suggested by BBH formation models [32]) in-
+creases the number of events necessary and decreases the
+range of axion masses probed. A pessimistic assumption
+of σa∗ ∼ 0.5 requires ∼ 3 − 5 times as many events.
+Our error estimates are based on studies of intermediate
+mass BBHs; at design-sensitivity LIGO/Virgo detectors,
+one expects to obtain a 90% conﬁdence interval of width
+|∆a∗| < 0.8 for total masses up to 600M(cid:12), 5 and a 10%
+error in mass determination for an order one fraction of
+primary black holes masses [31]. These estimates indicate
+a plausible range of variation — a comprehensive analy-
+sis, taking into account detailed mass and spin dependent
+measurement errors, would require full simulations.
+
+Of course, dependence of the BH spin distribution on
+mass may come from astrophysical eﬀects; if features are
+seen, more events would be required to trace out the
+superradiance contours with accuracy and determine an
+axion mass. Third generation observatories can achieve
+much higher spin measurement precision (90% interval of
+|∆a∗| < 0.1 for a majority of events [33]) and conﬁrm any
+features indicated by Advanced LIGO. In addition, if no
+features in the mass-spin distribution are seen, we can-
+not immediately exclude the presence of an axion, since
+it may be that most formation histories did not allow
+for SR. Nevertheless, a statistical signal, especially along
+with other indications of an axion (e.g. the monochro-
+matic GWs of Fig. 1), would be suggestive.
+
+DIRECT SIGNATURES
+
+In addition to the wealth of aLIGO measurements
+of merging black holes, binary merger events provide a
+unique opportunity to observe the birth of a BH. This
+BH is the ideal point-source candidate to observe the
+evolution of the superradiant instability in real time.
+
+For transitions, the levels responsible for an appre-
+ciable signal take over a thousand years to grow to
+large occupation numbers, so are uninteresting for a fol-
+lowup search. Axion annihilations are the most promis-
+ing source of continuous GWs for targeted searches at
+aLIGO, with the ﬁrst level taking from less than a month
+to up to 10 years to grow to maximum occupation num-
+ber. Using the leading-order formula for the 2-axion to
+graviton annihilation rate Γann from [34] (see [22] for nu-
+merical results), the peak GW strain at Earth from axion
+
+5 for the most pessimistic case of equal BH masses and mis-
+aligned spins; even better measurements are possible for dissim-
+ilar masses or aligned spins
+
+4
+
+FIG. 2. Expected distribution of intrinsic (top) and measured (bottom) spins and masses of merging BHs in the absence
+(left) and the presence (right) of an axion of mass 6 × 10−13 eV, normalized to 1000 events detected at aLIGO. We assume
+σM /M ∼ 10% measurement error in the mass and σa∗ ∼ 0.25 error in the spin [30, 31]. We have assumed that all BBHs formed
+at a distance such that they take 1010 years to merge. The theoretical curves shown are boundaries of the regions where SR
+had at most 1010 years to spin down the BHs, and the eﬀect of the companion BH does not signiﬁcantly aﬀect the SR rate.
+
+annihilations at distance d is [11]
+
+hann =
+
+(cid:115)
+
+max
+
+4GN ΓannN 2
+2ωad2
+≈ 6 × 10−23 (cid:16) α
+0.3
+
+(cid:17)7 (cid:16) a∗
+0.9
+
+(cid:17)(cid:18) MBH
+60M(cid:12)
+
+(cid:19)(cid:18) 1 Mpc
+
+(cid:19)
+
+d
+
+, (4)
+
+and lasts for
+
+τann ∼ (ΓannNmax)−1 ≈ 0.1 yr
+
+(cid:18) 0.3
+α
+
+(cid:19)15 (cid:18) 0.9
+a∗
+
+(cid:19)(cid:18) MBH
+60M(cid:12)
+
+(cid:19)
+
+.
+
+(5)
+Correlating these continuous wave emission properties
+with the spin and mass of the new BH will be a cross-
+check on SR predictions.
+
+The reach of aLIGO to an optimal annihilation sig-
+nal can be as large as 500 Mpc for an axion of mass
+10−13 eV. The reach of aLIGO at design sensitivity for
+a typical event is close to 30 Mpc. In particular, the ﬁnal
+BH of GW150914 with spin of ∼ 0.7 would have had to
+be within 10 Mpc in order for axion annihilations to be
+observable.
+
+In Fig. 4, we estimate the number of BBH merger prod-
+ucts emitting observable monochromatic GWs per year,
+as a function of the axion mass. The expected number
+of events is very sensitive to the spin and mass of the
+ﬁnal BH; a linearly-increasing BH spin distribution in-
+creases the expected event rates by a factor of ∼ 2 over
+a ﬂat spin distribution. We estimate the spin of the ﬁnal
+BH with [36], assuming equal, aligned initial spins and
+equal masses.
+If SR spun down the initial BHs before
+the merger, the ﬁnal BH will generally not spin quickly
+enough for SR to produce an observable signal; for exam-
+ple, we estimate 10−3events/yr. at µa = 2 × 10−13 eV.
+Only merging BHs for which SR was inhibited can give
+rise to a signal observable at aLIGO with an apprecia-
+ble rate, and Fig. 4 assumes this is the case for an O(1)
+fraction of events. There is therefore complementarity
+between the statistical and direct searches — either SR
+spins down enough of these to give a statistical signal, or
+an appreciable fraction of post-merger BHs are spinning
+fast enough to give direct signals (assuming enough BHs
+are born with high spin).
+
+Fig. 4 also shows our expectations for BH-neutron star
+
+0204060801000.00.20.40.60.81.0BlackHoleMass(cid:72)M(cid:159)(cid:76)BlackHoleSpina(cid:42)0204060801000.00.20.40.60.81.0BlackHoleMass(cid:72)M(cid:159)(cid:76)BlackHoleSpina(cid:42)0204060801000.00.20.40.60.81.0BlackHoleMass(cid:72)M(cid:159)(cid:76)BlackHoleSpina(cid:42)0204060801000.00.20.40.60.81.0BlackHoleMass(cid:72)M(cid:159)(cid:76)BlackHoleSpina(cid:42)5
+
+FIG. 3. Number of observed events required to show that
+the BH spin distribution varies with BH mass, assuming the
+presence of an axion of mass µa. Spin measurement errors of
+σa∗ = 0.25 are assumed. Blue (red) curves correspond to BHs
+taking 1010yrs (107yrs) from formation to merger. The solid
+curves shows the median number of events required to reject
+the separable-distribution hypothesis at 2σ. The upper/lower
+dashed curves show the upper/lower quartiles, respectively.
+The test statistic used is the Kolmogorov-Smirnov distance
+between the spin distributions outside and inside a given BH
+mass range, maximized over choice of mass range. Shaded
+region is as in Fig. 1.
+
+FIG. 4. Expected annual annihilation events for aLIGO and
+future observatories from products of BH-NS mergers (ma-
+genta) or BBH mergers of equal mass (blue). We assume
+the binary formation mechanism does not allow for super-
+radiance. We take a∗ = 0, M = 1.4M(cid:12) for the NS and a
+power-law mass distribution and ﬂat spin distribution of the
+merging BHs. The bands represent the merger rate uncer-
+tainty given the observed BBHs [27, 29] and simulations for
+BH-NS (V4l&V2l in [35]). We assume a coherent integration
+time of 10 days for BBH and 1 year (or up to the duration of
+the signal) for BH-NS. Shaded region is as in Fig. 1.
+
+(NS) mergers, which have not been observed but are ex-
+pected at aLIGO. For BH-NS (as well as NS-NS mergers)
+we use expected event rates from numerical simulations,
+1 − 100 Gpc−3 yr−1 [35]. Unlike BBHs, we expect an
+electromagnetic counterpart [37], allowing excellent sky
+positioning and extending the achievable coherence time
+for the monochromatic GW search to the full observation
+time. In addition, BHs produced during these events are
+lighter, allowing for searches for heavier axions.
+
+Taking into account the uncertainty in the merger
+rates, the expected number of events ranges from 0.01 −
+1 yr−1 for axion masses between 2×10−13 −2×10−12 eV
+coming from BBHs and BH-NS binaries.
+
+NS-NS mergers create the lightest BHs. These emit
+high frequency GWs at the edge of the aLIGO sensitivity
+curve, and the expected spin of the ﬁnal BH is at most ∼
+0.9 [38], leading to low event rates. At design sensitivity,
+the number of annihilation events is at best ∼ 10−3 yr−1
+for an axion of mass 8 × 10−12 eV.
+
+Unlike blind searches for isolated BHs, which are dom-
+inated by long signals from our galaxy, searches for post-
+merger signals are dominated by stronger signals at tens
+of Mpc. Thus, event rates will increase cubically with
+future strain sensitivity upgrades (Fig. 4), to as many
+as hundreds of events per year with projected Explorer
+sensitivity [21].
+
+CONCLUSION
+
+The earliest aLIGO signal for an axion is likely to come
+from monochromatic GWs in a full-sky survey (Fig. 1):
+a blind search for continuous waves can potentially dis-
+cover up to ∼ 104 distinct sources, all within a ∼ 3%
+frequency range (as derived from the SR condition and
+bound-state energies). This would be strong evidence
+for a light boson of mass equal to half the observed fre-
+quency for annihilation signals. In contrast, monochro-
+matic GWs produced by astrophysical objects, such as
+NSs, are unlikely to cluster within a few percent of a
+characteristic frequency. The presence of a unique fre-
+quency is a telltale sign of a new particle.
+
+The statistical search can also lead to early evidence
+for an axion at aLIGO. The strength of the statisti-
+cal evidence will depend on the formation history, axion
+mass, and the precision with which spins can be deter-
+mined. With good precision, the experimental curve will
+approach the theoretical curve (Fig. 2, top right) and
+the evidence could be compelling. With less precise spin
+measurements, the possibility of a yet-unknown standard
+model mechanism which disfavors high-spin BHs in a cer-
+tain mass range would have to be investigated.
+
+Since the statistical searches and full-sky continuous
+wave searches probe a similar axion mass range (Figs. 1
+and 3), there is the exciting possibility that these searches
+may independently indicate the presence of an axion of
+the same mass.
+
+Mergertime(cid:61)107yrMergertime(cid:61)1010yr1(cid:180)10(cid:45)132(cid:180)10(cid:45)135(cid:180)10(cid:45)131(cid:180)10(cid:45)122(cid:180)10(cid:45)125(cid:180)10(cid:45)121(cid:180)10(cid:45)111020501002005001000Μa(cid:72)eV(cid:76)NeventsDIRECTSEARCHESBH(cid:45)BHBH(cid:45)NSExplorerVoyageraLIGODesignaLIGO20151(cid:180)10(cid:45)132(cid:180)10(cid:45)135(cid:180)10(cid:45)131(cid:180)10(cid:45)122(cid:180)10(cid:45)125(cid:180)10(cid:45)120.0010.010.1110100100010010010001000Μa(cid:72)eV(cid:76)ExpectedEvents(cid:144)yr.f(cid:72)Hz(cid:76)The targeted searches of recently formed BHs would be
+a way to look at the development of superradiance in real
+time. This tremendous possibility may have to wait until
+aLIGO upgrades. Future aLIGO upgrades will also make
+it more likely to observe signals from axion transitions,
+which would probe axion masses above 10−11 eV.
+
+6
+
+[14] R. Peccei and H. R. Quinn, Phys.Rev.Lett. 38, 1440
+
+(1977).
+
+[15] B. Holdom, Phys. Lett. B166, 196 (1986).
+[16] P. Pani, V. Cardoso, L. Gualtieri, E. Berti,
+
+Ishibashi, Phys. Rev. D86,
+
+A.
+arXiv:1209.0773 [gr-qc].
+
+104017
+
+and
+(2012),
+
+[17] R. Brito, V. Cardoso, and P. Pani, Lect. Notes Phys.
+
+906, pp.1 (2015), arXiv:1501.06570 [gr-qc].
+
+[18] S. R. Dolan, Phys. Rev. D76,
+
+084001
+
+(2007),
+
+ACKNOWLEDGEMENTS
+
+arXiv:0705.2880 [gr-qc].
+
+We are grateful to Luis Lehner, Salvatore Vitale, and
+Keith Riles for many informative and clarifying discus-
+sions. Research at Perimeter Institute is supported by
+the Government of Canada through Industry Canada and
+by the Province of Ontario through the Ministry of Eco-
+nomic Development & Innovation. This work was par-
+tially supported by the National Science Foundation un-
+der grant no. PHYS-1316699 and by the NSF CAREER
+award PHY-1352119.
+
+∗ aarvanitaki@perimeterinstitute.ca
+† mbaryakhtar@perimeterinstitute.ca
+‡ savas@stanford.edu
+§ dubovsky@nyu.edu
+¶ rlasenby@perimeterinstitute.ca
+[1] B. P. Abbott et al. (Virgo, LIGO Scientiﬁc), Phys. Rev.
+Lett. 116, 061102 (2016), arXiv:1602.03837 [gr-qc].
+[2] A. Arvanitaki, S. Dimopoulos, S. Dubovsky, N. Kaloper,
+and J. March-Russell, Phys. Rev. D81, 123530 (2010),
+arXiv:0905.4720 [hep-th].
+
+[3] Y. B. Zeldovich, JETP Lett. 14, 180 (1971).
+[4] C. W. Misner, Phys. Rev. Lett. 28, 994 (1972).
+[5] A. Starobinskii, Soviet Phys. JETP 37, 28 (1973).
+[6] T. Damour, N. Deruelle, and R. Ruﬃni, Lett. Nuovo
+
+Cim. 15, 257 (1976).
+
+[7] I. M. Ternov, V. R. Khalilov, G. A. Chizhov,
+
+and
+A. B. Gaina, Sov. Phys. J. 21, 1200 (1978), [Izv. Vuz.
+Fiz.21N9,109(1978)].
+
+[8] T. J. M. Zouros and D. M. Eardley, Annals Phys. 118,
+
+139 (1979).
+
+[9] S. L. Detweiler, Phys. Rev. D22, 2323 (1980).
+
+[10] A. Arvanitaki and S. Dubovsky, Phys. Rev. D83, 044026
+
+(2011), arXiv:1004.3558 [hep-th].
+
+[11] A. Arvanitaki, M. Baryakhtar, and X. Huang, Phys. Rev.
+
+D91, 084011 (2015), arXiv:1411.2263 [hep-ph].
+
+[12] S. Weinberg, Phys.Rev.Lett. 40, 223 (1978).
+[13] F. Wilczek, Phys.Rev.Lett. 40, 279 (1978).
+
+[19] J. D. Bekenstein and M. Schiﬀer, Phys. Rev. D58, 064014
+
+(1998), arXiv:gr-qc/9803033 [gr-qc].
+
+[20] A. Gruzinov, (2016), arXiv:1604.06422 [astro-ph.HE].
+[21] LIGO Scientiﬁc Collaboration, “Instrument Science
+
+White Paper, LIGO-T1400316-v4,” (2015).
+
+[22] H. Yoshino and H. Kodama, PTEP 2014, 043E02 (2014),
+
+arXiv:1312.2326 [gr-qc].
+
+[23] J. Aasi et al. (VIRGO, LIGO Scientiﬁc), Phys. Rev. D87,
+
+042001 (2013), arXiv:1207.7176 [gr-qc].
+
+[24] B. P. Abbott et al. (Virgo, LIGO Scientiﬁc), Phys. Rev.
+
+D94, 042002 (2016), arXiv:1605.03233 [gr-qc].
+
+[25] B. P. Abbott et al. (Virgo, LIGO Scientiﬁc), Phys. Rev.
+
+D94, 102002 (2016), arXiv:1606.09619 [gr-qc].
+
+[26] H. Okawa, H. Witek, and V. Cardoso, Phys. Rev. D89,
+
+104032 (2014), arXiv:1401.1548 [gr-qc].
+
+[27] B. P. Abbott et al. (Virgo, LIGO Scientiﬁc), Astrophys.
+J. 833, 1 (2016), arXiv:1602.03842 [astro-ph.HE].
+[28] B. P. Abbott et al. (Virgo, LIGO Scientiﬁc), Astrophys.
+J. 818, L22 (2016), arXiv:1602.03846 [astro-ph.HE].
+[29] B. P. Abbott et al. (Virgo, LIGO Scientiﬁc), Phys. Rev.
+
+X6, 041015 (2016), arXiv:1606.04856 [gr-qc].
+[30] S. Vitale, R. Lynch, J. Veitch, V. Raymond,
+
+and
+R. Sturani, Phys. Rev. Lett. 112, 251101 (2014),
+arXiv:1403.0129 [gr-qc]; S. Vitale,
+(private communi-
+cation).
+
+[31] S. Vitale, R. Lynch, V. Raymond, R. Sturani, J. Veitch,
+
+and P. Graﬀ, (2016), arXiv:1611.01122 [gr-qc].
+
+[32] B. P. Abbott et al. (Virgo, LIGO Scientiﬁc), Astrophys.
+J. 818, L22 (2016), arXiv:1602.03846 [astro-ph.HE].
+[33] S. Vitale and M. Evans, (2016), arXiv:1610.06917 [gr-qc].
+[34] R. Brito, V. Cardoso, and P. Pani, Class. Quant. Grav.
+
+32, 134001 (2015), arXiv:1411.0686 [gr-qc].
+
+[35] K. Belczynski, S. Repetto, D. E. Holz, R. O’Shaughnessy,
+T. Bulik, E. Berti, C. Fryer, and M. Dominik, Astrophys.
+J. 819, 108 (2016), arXiv:1510.04615 [astro-ph.HE].
+[36] A. Buonanno, L. E. Kidder, and L. Lehner, Phys. Rev.
+
+D77, 026004 (2008), arXiv:0709.3839 [astro-ph].
+
+[37] L. Lehner and F. Pretorius, Ann. Rev. Astron. Astro-
+phys. 52, 661 (2014), arXiv:1405.4840 [astro-ph.HE].
+[38] W. Kastaun, F. Galeazzi, D. Alic, L. Rezzolla, and J. A.
+Font, Phys. Rev. D88, 021501 (2013), arXiv:1301.7348
+[gr-qc].
+
+

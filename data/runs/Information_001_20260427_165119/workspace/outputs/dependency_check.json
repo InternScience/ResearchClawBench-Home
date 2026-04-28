@@ -1,0 +1,26 @@
+{
+  "environment": {
+    "torch": "2.11.0+cu130",
+    "cuda_available": false,
+    "device": "cpu",
+    "ram_gb": 17,
+    "internet": true
+  },
+  "models_loaded": {
+    "CLIP-ViT-B-32-laion2B-s34B-b79K": true,
+    "CLIP-ViT-B-16-laion2B-s34B-b88K": true,
+    "CLIP-ViT-L-14": "not attempted (download time and memory budget)",
+    "LLaVA-1.5-7B": "not loaded (no GPU + no large local weights). Approximated by CLIP-based VQA."
+  },
+  "named_method_fidelity": {
+    "training_free": true,
+    "task_guided_attention_relevancy": true,
+    "ROI_crop_zoom_in": true,
+    "global_local_integration": true,
+    "exact_LLaVA_or_InstructBLIP_VQA": "approximated by CLIP image-text similarity over multiple-choice options because of CPU/RAM constraints"
+  },
+  "limitations": [
+    "Full LLaVA / InstructBLIP inference is replaced by CLIP zero-shot scoring of MC options. The cropping mechanism itself (relevancy map -> bbox -> zoom-in -> ensemble) is implemented faithfully and applied to the same CLIP visual encoder family used inside LLaVA-1.5.",
+    "All compute is CPU; we use ViT-B/16 (instead of ViT-L/14) for tractable runtime."
+  ]
+}

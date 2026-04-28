@@ -1,0 +1,12 @@
+{
+  "primary_artifacts": [
+    {"id": "fig_data_overview", "desc": "E-kx maps: pump-off, pump-on (θ=0), difference; replica band markers", "path": "report/images/fig01_data_overview.png"},
+    {"id": "fig_replica_positions", "desc": "Replica band positions & EDC/MDC cuts confirming ℏω spacing", "path": "report/images/fig02_replica_positions.png"},
+    {"id": "fig_dispersion_fit", "desc": "Linear Dirac dispersion fit (v_F) + replica overlay", "path": "report/images/fig03_dispersion_fit.png"},
+    {"id": "fig_time_dynamics", "desc": "Replica intensity vs pump-probe delay (transient signature)", "path": "report/images/fig04_time_dynamics.png"},
+    {"id": "fig_polarization", "desc": "Replica intensity I(θ_p): data + cos(2θ) and cos(4θ) fits", "path": "report/images/fig05_polarization.png"},
+    {"id": "tab_replica_summary", "desc": "Replica band summary table (E,kx,intensity,order,ΔE-ℏω)", "path": "outputs/replica_summary.csv"},
+    {"id": "tab_polarization_fit", "desc": "Polarization-fit coefficients & RSS for harmonics", "path": "outputs/polarization_fit.json"},
+    {"id": "claim_recovery", "desc": "Per-claim evidence table", "path": "outputs/claim_recovery.json"}
+  ]
+}

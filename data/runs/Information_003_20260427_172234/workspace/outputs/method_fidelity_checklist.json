@@ -1,0 +1,32 @@
+{
+  "module": "DIDS-MFL fidelity vs. 3D-IDS / DIDS-MFL paper (paper_000)",
+  "checklist": {
+    "edge_construction_module": "Implemented implicitly via PyG TemporalData; src/dst pairs and per-flow msg act as edges",
+    "statistical_disentanglement": {
+      "paper": "Eq. 5–7: SMT-style optimization of per-feature weight vector w to maximize differentiation between adjacent features under a simplex constraint.",
+      "ours": "Smooth differentiable surrogate of Eq. 5: maximize mean(|2 w_i F_i − w_{i−1} F_{i−1} − w_{i+1} F_{i+1}|) plus boundary term, with a soft simplex penalty (w∈(0,1) via sigmoid). Trained jointly with the rest of the model.",
+      "deviation": "We avoid an external SMT solver; instead we optimize a smooth surrogate of the same objective. This is documented in the report."
+    },
+    "representational_disentanglement": {
+      "paper": "Eq. for orthogonality of element-wise edge representation components.",
+      "ours": "RD module that produces K=4 group projections (group_dim=16), with batch-mean group vectors regularized to be near-orthogonal (||V V^T − I||² penalty)."
+    },
+    "dynamic_memory": {
+      "paper": "Eq. 10: GRU-based memory update; sinusoidal time encoder.",
+      "ours": "Implemented faithfully (DynamicMemory + TimeEncoder)."
+    },
+    "multi_layer_graph_diffusion": {
+      "paper": "Multi-layer (l_i=0/1) PM-style continuous diffusion with layer-temporal coefficient s_ij.",
+      "ours": "Approximated with multi-scale message-passing depths (1/2/3 hops) on the running TGN memory; the dataset has src_layer=dst_layer=0 for every flow, so we cannot exercise the multi-layer branch but we still implement the multi-scale fusion that the paper uses for few-shot.",
+      "deviation": "All flows in the provided NF-UNSW-NB15-v2 file lie in layer 0, so the explicit l_i/l_j layer term reduces to a constant. The non-trivial part of the diffusion (multi-scale fusion of node states) is preserved."
+    },
+    "multi_scale_representation_fusion": {
+      "paper": "Used for few-shot learning.",
+      "ours": "Concatenation of three diffusion depths (scale 1, 2, 3) before classification head."
+    },
+    "loss": {
+      "paper": "L = L_int + α L_smooth + β L_dis",
+      "ours": "L = CE_binary + 0.5 CE_multiclass + α L_SD + β L_RD; α=β=0.05. We omit L_smooth (temporal smoothness over X_t) because we use a memory snapshot rather than per-timestamp embeddings."
+    }
+  }
+}

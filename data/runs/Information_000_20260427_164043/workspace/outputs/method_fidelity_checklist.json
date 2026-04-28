@@ -1,0 +1,37 @@
+{
+  "fidelity_targets": [
+    {
+      "component": "Understanding visual encoder",
+      "spec": "SigLIP/CLIP-style ViT producing continuous semantic features",
+      "implemented": "Tiny ViT (patch=16, dim=192, depth=6, heads=3) trained with a sigmoid image-text contrastive objective on a synthetic mini-corpus of image-caption pairs derived from procedurally generated shapes and the two real images.",
+      "matches_named_method": "Yes — same family (SigLIP/LLaVA encoder).",
+      "deviation": "Smaller scale due to CPU-only constraint."
+    },
+    {
+      "component": "Generation visual tokenizer",
+      "spec": "VQ encoder-quantizer-decoder (LlamaGen-style)",
+      "implemented": "VQ-VAE with 4x downsample CNN encoder/decoder, codebook size 256, embedding dim 64, EMA codebook update.",
+      "matches_named_method": "Yes — same encoder–quantizer–decoder design.",
+      "deviation": "Smaller codebook + higher rFID than LlamaGen (CPU constraint)."
+    },
+    {
+      "component": "Unified Transformer trunk",
+      "spec": "Single causal Transformer doing next-token prediction over text tokens AND image VQ tokens AND understanding-encoder embeddings.",
+      "implemented": "Tiny GPT (dim=192, 6 layers, 6 heads, ctx=512). Three modality input adapters: text embedding, VQ-token embedding, understanding-feature projector. Pre-pended <BOI>/<EOI>/<BOG>/<EOG> special tokens flag modality boundaries.",
+      "matches_named_method": "Yes (Chameleon-style early-fusion at sequence level, Janus-style decoupling at the encoder level).",
+      "deviation": "Tiny model, toy training."
+    },
+    {
+      "component": "Decoupling claim",
+      "spec": "Understanding path uses semantic encoder; generation path uses VQ tokens. They DO NOT share the same visual front-end.",
+      "implemented": "Two distinct nn.Modules with no shared parameters; only the Transformer trunk is shared.",
+      "matches_named_method": "Yes."
+    },
+    {
+      "component": "Ablation: shared vs decoupled encoder",
+      "spec": "Compare a Chameleon-style single-tokenizer baseline against the decoupled design.",
+      "implemented": "Baseline reuses the VQ tokenizer's continuous encoder features for the understanding task as well; decoupled uses the dedicated semantic ViT. Compare alignment quality with image-text retrieval accuracy and a shape/colour probe.",
+      "matches_named_method": "Yes."
+    }
+  ]
+}

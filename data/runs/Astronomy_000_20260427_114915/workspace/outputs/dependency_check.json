@@ -1,0 +1,25 @@
+{
+  "python_packages": {
+    "numpy": "available",
+    "scipy": "available",
+    "matplotlib": "available",
+    "pdfminer.six": "installed for related-work text extraction"
+  },
+  "data_files_loaded": {
+    "M33_X-7_samples.dat": "1838 (M, a*) posterior samples",
+    "IRAS_09149-6206_samples.dat": "10000 (M, a*) posterior samples"
+  },
+  "named_method_implementations": {
+    "alpha = G M mu / (hbar c^3)": "implemented (alpha_coupling)",
+    "Omega_H = a*/(2 r_+) (geometric)": "implemented (omega_H_geom)",
+    "SR condition omega_R < m Omega_H": "implemented (sr_condition); omega_R = mu(1-alpha^2/2n^2)",
+    "Detweiler Gamma_211 = (1/24) alpha^8 (a* - 2 alpha r_+)": "implemented (gamma_sr_geom for l=m=1)",
+    "Higher l=m levels Arvanitaki & Dubovsky 2011 Eq. 28": "implemented as fallback",
+    "Bosenova N_max ~ c_n n^4 alpha^-3 (f_a/M_pl)^2 (M/mu)^2": "implemented (n_bosenova)",
+    "Bayesian posterior marginalisation": "implemented (excluded_grid)"
+  },
+  "validity_caveats": [
+    "Detweiler small-alpha approximation valid for alpha <~ 0.5; we cap at ALPHA_MAX=0.5",
+    "BH characteristic age tau_BH is uncertain; we report a fiducial value and a low/high systematic band"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "task": "Investigate whether EDE alleviates the CMB-BAO acoustic tension using DESI DR2 + Planck/ACT data, comparing LCDM, EDE, w0wa.",
+  "primary_models": ["LCDM", "EDE", "w0wa"],
+  "primary_data": ["DESI DR2 BAO (D_V/r_d, F_AP residuals at 7 z bins)", "Union3 SNe (Delta mu)", "Planck NPIPE + ACT DR6 chi2 contributions (Tables II & III)"],
+  "named_quantities": ["Omega_m", "H0", "sigma8", "n_s", "f_EDE", "log10 a_c", "Delta chi2 vs LCDM", "AIC"],
+  "required_artifacts": [
+    "1D Gaussian posteriors for {Omega_m, H0, sigma8} across the three models",
+    "2D joint posterior ellipses for {Omega_m,H0}, {H0,sigma8}, {f_EDE,log10 a_c}",
+    "Reproduction of Figure 6 (Delta D_V/r_d, Delta F_AP, Delta mu) under each model",
+    "Delta chi2 / AIC comparison bar chart from Tables II & III",
+    "Parameter shift summary across models"
+  ],
+  "deviations_planned": [
+    "We do not run a new MCMC: we use the published best-fit means + 1 sigma errors (Tables II/III) and treat them as Gaussian posteriors (paper-consistent simplification).",
+    "Background quantities D_M, D_H, D_V are computed with a flat FLRW solver in pure Python; rd is held fixed to the published value rd_fid = 147.0 Mpc unless stated."
+  ]
+}

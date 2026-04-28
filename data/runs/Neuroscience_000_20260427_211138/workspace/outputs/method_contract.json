@@ -1,0 +1,22 @@
+{
+  "task": "Reproduce SimBA-style supervised classification of Attack and Sniffing on the official SimBA sample project pose data.",
+  "named_methods": [
+    "SimBA workflow (pose -> engineered frame features -> supervised classifier -> probabilities + thresholded labels)",
+    "Random Forest classifier (SimBA default)",
+    "Stratified K-fold cross-validation",
+    "Precision-Recall and ROC diagnostics",
+    "Confusion matrices",
+    "Feature-importance auditing"
+  ],
+  "primary_targets": ["Attack (binary)", "Sniffing (binary)"],
+  "deliverables": [
+    "code/* analysis scripts",
+    "outputs/* metrics, predictions, feature tables",
+    "report/images/* PNG figures",
+    "report/report.md with methodology, results, discussion, validation, limitations"
+  ],
+  "explicit_constraints": [
+    "Open data, executable code, transparent and auditable evidence",
+    "Per-class evaluation reports including precision-recall diagnostics, confusion matrices, feature-importance tables"
+  ]
+}

@@ -1,0 +1,463 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "00_prep_chains.py",
+    "path": "code/00_prep_chains.py",
+    "type": "file",
+    "size": 1471,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "01_run_alignments.sh",
+    "path": "code/01_run_alignments.sh",
+    "type": "file",
+    "size": 3297,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "02_tm_matrix.py",
+    "path": "code/02_tm_matrix.py",
+    "type": "file",
+    "size": 1957,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "03_make_figures.py",
+    "path": "code/03_make_figures.py",
+    "type": "file",
+    "size": 17162,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "04_summary.py",
+    "path": "code/04_summary.py",
+    "type": "file",
+    "size": 3012,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "6n40.pdb",
+    "path": "data/6n40.pdb",
+    "type": "file",
+    "size": 483975,
+    "mtime": 1772677396.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "7xg4.pdb",
+    "path": "data/7xg4.pdb",
+    "type": "file",
+    "size": 2481678,
+    "mtime": 1772677394.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "chains",
+    "path": "outputs/chains",
+    "type": "directory"
+  },
+  {
+    "name": "6n40_A.pdb",
+    "path": "outputs/chains/6n40_A.pdb",
+    "type": "file",
+    "size": 448424,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_A.pdb",
+    "path": "outputs/chains/7xg4_A.pdb",
+    "type": "file",
+    "size": 153746,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_B.pdb",
+    "path": "outputs/chains/7xg4_B.pdb",
+    "type": "file",
+    "size": 138518,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_C.pdb",
+    "path": "outputs/chains/7xg4_C.pdb",
+    "type": "file",
+    "size": 201617,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_D.pdb",
+    "path": "outputs/chains/7xg4_D.pdb",
+    "type": "file",
+    "size": 202832,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_E.pdb",
+    "path": "outputs/chains/7xg4_E.pdb",
+    "type": "file",
+    "size": 198539,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_F.pdb",
+    "path": "outputs/chains/7xg4_F.pdb",
+    "type": "file",
+    "size": 198539,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_G.pdb",
+    "path": "outputs/chains/7xg4_G.pdb",
+    "type": "file",
+    "size": 172700,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_H.pdb",
+    "path": "outputs/chains/7xg4_H.pdb",
+    "type": "file",
+    "size": 145889,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_I.pdb",
+    "path": "outputs/chains/7xg4_I.pdb",
+    "type": "file",
+    "size": 104660,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "\u2026 3 more items",
+    "path": "outputs/chains/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "foldseek",
+    "path": "outputs/foldseek",
+    "type": "directory"
+  },
+  {
+    "name": "easy_log.txt",
+    "path": "outputs/foldseek/easy_log.txt",
+    "type": "file",
+    "size": 10277,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "easy_log_3di.txt",
+    "path": "outputs/foldseek/easy_log_3di.txt",
+    "type": "file",
+    "size": 9393,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "easy_search.tsv",
+    "path": "outputs/foldseek/easy_search.tsv",
+    "type": "file",
+    "size": 14911,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "easy_search_3di.tsv",
+    "path": "outputs/foldseek/easy_search_3di.tsv",
+    "type": "file",
+    "size": 1056,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "multimer_log.txt",
+    "path": "outputs/foldseek/multimer_log.txt",
+    "type": "file",
+    "size": 12857,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "multimer_report.tsv",
+    "path": "outputs/foldseek/multimer_report.tsv",
+    "type": "file",
+    "size": 0,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "multimer_result.tsv",
+    "path": "outputs/foldseek/multimer_result.tsv",
+    "type": "file",
+    "size": 0,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "usalign",
+    "path": "outputs/usalign",
+    "type": "directory"
+  },
+  {
+    "name": "7xg4_vs_6n40_mm1.matrix",
+    "path": "outputs/usalign/7xg4_vs_6n40_mm1.matrix",
+    "type": "file",
+    "size": 597,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_vs_6n40_mm1_all.pml",
+    "path": "outputs/usalign/7xg4_vs_6n40_mm1_all.pml",
+    "type": "file",
+    "size": 414,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_vs_6n40_mm1_all_atm.pml",
+    "path": "outputs/usalign/7xg4_vs_6n40_mm1_all_atm.pml",
+    "type": "file",
+    "size": 416,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_vs_6n40_mm1_all_atm_lig.pml",
+    "path": "outputs/usalign/7xg4_vs_6n40_mm1_all_atm_lig.pml",
+    "type": "file",
+    "size": 465,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "best_chainpair.matrix",
+    "path": "outputs/usalign/best_chainpair.matrix",
+    "type": "file",
+    "size": 597,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "best_chainpair.pdb",
+    "path": "outputs/usalign/best_chainpair.pdb",
+    "type": "file",
+    "size": 153746,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "best_chainpair.pml",
+    "path": "outputs/usalign/best_chainpair.pml",
+    "type": "file",
+    "size": 19484,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "best_chainpair.txt",
+    "path": "outputs/usalign/best_chainpair.txt",
+    "type": "file",
+    "size": 3560,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "best_chainpair_all.pml",
+    "path": "outputs/usalign/best_chainpair_all.pml",
+    "type": "file",
+    "size": 460,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "best_chainpair_all_atm.pml",
+    "path": "outputs/usalign/best_chainpair_all_atm.pml",
+    "type": "file",
+    "size": 462,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "\u2026 9 more items",
+    "path": "outputs/usalign/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "6n40_prot.pdb",
+    "path": "outputs/6n40_prot.pdb",
+    "type": "file",
+    "size": 448424,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "7xg4_prot.pdb",
+    "path": "outputs/7xg4_prot.pdb",
+    "type": "file",
+    "size": 1780315,
+    "mtime": 1777353704.0,
+    "exported": false
+  },
+  {
+    "name": "summary.json",
+    "path": "outputs/summary.json",
+    "type": "file",
+    "size": 8796,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 7106522,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 2048789,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 2470674,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 4291826,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig_alignment_dotplot.png",
+    "path": "report/images/fig_alignment_dotplot.png",
+    "type": "file",
+    "size": 98427,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "fig_chain_composition.png",
+    "path": "report/images/fig_chain_composition.png",
+    "type": "file",
+    "size": 93349,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "fig_complex_summary.png",
+    "path": "report/images/fig_complex_summary.png",
+    "type": "file",
+    "size": 162759,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "fig_foldseek_vs_usalign.png",
+    "path": "report/images/fig_foldseek_vs_usalign.png",
+    "type": "file",
+    "size": 193774,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "fig_speed_sensitivity.png",
+    "path": "report/images/fig_speed_sensitivity.png",
+    "type": "file",
+    "size": 120253,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "fig_superposition.png",
+    "path": "report/images/fig_superposition.png",
+    "type": "file",
+    "size": 473328,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "fig_tm_matrix.png",
+    "path": "report/images/fig_tm_matrix.png",
+    "type": "file",
+    "size": 162405,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 15283,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5154,
+    "mtime": 1777285592.0,
+    "exported": true
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "primary_quantitative_answers": [
+    "Global fraction of mangrove area at high composite risk by 2100 per scenario",
+    "Top-N countries by composite risk and by exposed ecosystem services value",
+    "Fraction of mangroves above the 4 mm/yr and 7 mm/yr RSLR thresholds (Saintilan et al. 2023)",
+    "Fraction of mangroves exposed to high baseline cyclone density (proxy for regime-shift sensitivity)"
+  ],
+  "comparison_tables": [
+    "country_risk_summary.csv (per country, per scenario)",
+    "scenario_comparison_global.csv (global summary stats, three SSPs)"
+  ],
+  "expected_figure_families": [
+    "Data overview (mangrove sample points + TC tracks + AR6 nodes)",
+    "TC baseline exposure map",
+    "SLR scenario maps (3 panels)",
+    "Composite risk map per scenario",
+    "Country ranking bar chart",
+    "Ecosystem-service exposure bar chart"
+  ],
+  "interpretability_artifacts": [
+    "Per-point breakdown of TC vs SLR contribution to composite risk",
+    "Threshold-tagged subgroup table"
+  ],
+  "subgroup_outputs": [
+    "Per-region (basin) summary",
+    "Per-scenario summary",
+    "Per-country summary"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "python": "3.10.12",
+  "key_libraries": {
+    "pandas": "2.2.3",
+    "numpy": "checked via import",
+    "matplotlib": "checked via import",
+    "seaborn": "checked via import",
+    "scikit-learn": "1.6.1",
+    "pypdf": "installed for related-work reading"
+  },
+  "external_tools_attempted": ["Uncalled4","Nanopolish","f5c","Tombo"],
+  "external_tools_present": [],
+  "note": "No raw POD5/FAST5 in workspace; we benchmark the *outputs* of these tools (timings + m6Anet probabilities) which is exactly the Table 1 / Fig. 4 evaluation in the manuscript."
+}

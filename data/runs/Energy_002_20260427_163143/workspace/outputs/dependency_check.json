@@ -1,0 +1,7 @@
+{
+  "geopandas": "1.1.3 OK",
+  "matplotlib": "OK",
+  "pandas/numpy": "OK",
+  "PyPSA optimization": "Not used; we adopt a transparent analytic CRF-based model rather than dispatch optimization, since hex_final_NA_min.csv only carries annual theoretical PV/wind potential (no hourly weather) - documented limitation.",
+  "PDF parsing": "ReadPDF tool failed; pymupdf used instead (works)."
+}

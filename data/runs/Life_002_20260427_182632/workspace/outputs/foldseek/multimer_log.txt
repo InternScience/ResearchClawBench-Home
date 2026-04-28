@@ -1,0 +1,176 @@
+Create directory /tmp/fs_run/tmp
+easy-multimersearch outputs/7xg4_prot.pdb outputs/6n40_prot.pdb /tmp/fs_run/multimer_result /tmp/fs_run/tmp --format-output query,target,qstart,qend,tstart,tend,evalue,bits,prob,alntmscore,qtmscore,ttmscore,rmsd,lddt,qcov,tcov,complexqtmscore,complexttmscore,qchains,tchains,interfacelddt,complexassignid -e 100000 --max-seqs 4000 --exhaustive-search 1 --min-assigned-chains-ratio 0 --tmscore-threshold 0 -s 9.5 --alignment-type 1 
+
+MMseqs Version:                             	8dc75c74ad0eddab73cfd905963d13bf74dc012b
+Use GPU                                     	0
+Chain name mode                             	0
+Model name mode                             	0
+Createdb extraction mode                    	0
+Interface distance threshold                	10
+Write mapping file                          	0
+Write Foldcomp                              	0
+Mask b-factor threshold                     	0
+Coord store mode                            	2
+Write lookup file                           	1
+Input format                                	0
+Input compression format                    	0
+File Inclusion Regex                        	.*
+File Exclusion Regex                        	^$
+Threads                                     	8
+Verbosity                                   	3
+TMscore threshold                           	0
+TMscore threshold mode                      	0
+LDDT threshold                              	0
+Sort by structure bit score                 	1
+Alignment type                              	1
+Exact TMscore                               	0
+Substitution matrix                         	aa:3di.out,nucl:3di.out
+Add backtrace                               	true
+Alignment mode                              	0
+Alignment mode                              	0
+E-value threshold                           	100000
+Seq. id. threshold                          	0
+Min alignment length                        	0
+Seq. id. mode                               	0
+Alternative alignments                      	0
+Coverage threshold                          	0
+Coverage mode                               	0
+Max sequence length                         	65535
+Compositional bias                          	1
+Compositional bias scale                    	1
+Max reject                                  	2147483647
+Max accept                                  	2147483647
+Preload mode                                	0
+Gap open cost                               	aa:10,nucl:10
+Gap extension cost                          	aa:1,nucl:1
+Compressed                                  	0
+Seed substitution matrix                    	aa:3di.out,nucl:3di.out
+Sensitivity                                 	9.5
+k-mer length                                	0
+Target search mode                          	0
+k-score                                     	seq:2147483647,prof:2147483647
+Max results per query                       	4000
+Split database                              	0
+Split mode                                  	2
+Split memory limit                          	0
+Diagonal scoring                            	true
+Exact k-mer matching                        	0
+Mask residues                               	0
+Mask residues probability                   	0.999995
+Mask lower case residues                    	1
+Mask lower letter repeating N times         	6
+Minimum diagonal score                      	30
+Selected taxa                               	
+Spaced k-mers                               	1
+Spaced k-mer pattern                        	
+Local temporary path                        	
+Use GPU server                              	0
+Wait for GPU server                         	600
+Prefilter mode                              	0
+TMalign hit order                           	0
+TMalign fast                                	1
+MultiDomain Mode                            	1
+Mask profile                                	1
+Profile E-value threshold                   	0.1
+Global sequence weighting                   	false
+Allow deletions                             	false
+Filter MSA                                  	1
+Use filter only at N seqs                   	0
+Maximum seq. id. threshold                  	0.9
+Minimum seq. id.                            	0.0
+Minimum score per column                    	-20
+Minimum coverage                            	0
+Select N most diverse seqs                  	1000
+Pseudo count mode                           	0
+Profile output mode                         	0
+Cluster search                              	0
+Exhaustive search mode                      	true
+Search iterations                           	1
+Remove temporary files                      	false
+Force restart with latest tmp               	false
+MPI runner                                  	
+Minimum assigned chains percentage Threshold	0
+Monomer inclusion Mode for MultimerSerch    	0
+Interface LDDT threshold                    	0
+chain TMscore threshold                     	0
+whole structure's TMscore threshold         	0
+Minimum threshold of aligned chains         	2
+Multimer E-value                            	10000
+Complex report mode                         	1
+Alignment format                            	0
+Format alignment output                     	query,target,qstart,qend,tstart,tend,evalue,bits,prob,alntmscore,qtmscore,ttmscore,rmsd,lddt,qcov,tcov,complexqtmscore,complexttmscore,qchains,tchains,interfacelddt,complexassignid
+Database output                             	false
+
+Alignment backtraces will be computed, since they were requested by output format.
+createdb outputs/7xg4_prot.pdb /tmp/fs_run/tmp/15949974519958957747/query --gpu 0 --chain-name-mode 0 --model-name-mode 0 --db-extraction-mode 0 --distance-threshold 10 --write-mapping 0 --write-foldcomp 0 --mask-bfactor-threshold 0 --coord-store-mode 2 --write-lookup 1 --input-format 0 --input-compression-format 0 --file-include '.*' --file-exclude '^$' --threads 8 -v 3 
+
+Output file: /tmp/fs_run/tmp/15949974519958957747/query
+[=================================================================] 1 0s 8ms
+Time for merging to query_ss: 0h 0m 0s 0ms
+Time for merging to query_h: 0h 0m 0s 0ms
+Time for merging to query_ca: 0h 0m 0s 0ms
+Time for merging to query: 0h 0m 0s 0ms
+Ignore 0 out of 9.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 0s 42ms
+createdb outputs/6n40_prot.pdb /tmp/fs_run/tmp/15949974519958957747/target --gpu 0 --chain-name-mode 0 --model-name-mode 0 --db-extraction-mode 0 --distance-threshold 10 --write-mapping 0 --write-foldcomp 0 --mask-bfactor-threshold 0 --coord-store-mode 2 --write-lookup 1 --input-format 0 --input-compression-format 0 --file-include '.*' --file-exclude '^$' --threads 8 -v 3 
+
+Output file: /tmp/fs_run/tmp/15949974519958957747/target
+[=================================================================] 1 0s 3ms
+Time for merging to target_ss: 0h 0m 0s 0ms
+Time for merging to target_h: 0h 0m 0s 0ms
+Time for merging to target_ca: 0h 0m 0s 0ms
+Time for merging to target: 0h 0m 0s 0ms
+Ignore 0 out of 1.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 0s 14ms
+Create directory /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp
+multimersearch /tmp/fs_run/tmp/15949974519958957747/query /tmp/fs_run/tmp/15949974519958957747/target /tmp/fs_run/tmp/15949974519958957747/multimer_result /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp --tmscore-threshold 0 --alignment-type 1 -a 1 -e 100000 -s 9.5 --max-seqs 4000 --exhaustive-search 1 --min-assigned-chains-ratio 0 
+
+Create directory /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp
+search /tmp/fs_run/tmp/15949974519958957747/query /tmp/fs_run/tmp/15949974519958957747/target /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/result /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp --tmscore-threshold 0 --alignment-type 1 -a 1 -e 100000 -s 9.5 --max-seqs 4000 --exhaustive-search 1 
+
+structurealign /tmp/fs_run/tmp/15949974519958957747/query /tmp/fs_run/tmp/15949974519958957747/target /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/pref /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/strualn --tmscore-threshold 0 --tmscore-threshold-mode 0 --lddt-threshold 0 --sort-by-structure-bits 0 --alignment-type 1 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 1 --alignment-mode 1 --alignment-output-mode 0 --wrapped-scoring 0 -e 100000 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 0.5 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 8 --compressed 0 -v 3 
+
+[================================================================] 9 0s 11ms
+=Time for merging to strualn: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 22ms
+tmalign /tmp/fs_run/tmp/15949974519958957747/query /tmp/fs_run/tmp/15949974519958957747/target /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/strualn /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/aln --min-seq-id 0 -c 0 --cov-mode 0 --max-rejected 2147483647 --max-accept 2147483647 -a 1 --add-self-matches 0 --tmscore-threshold 0 --tmscore-threshold-mode 0 --tmalign-hit-order 0 --tmalign-fast 1 --db-load-mode 0 --threads 8 -v 3 
+
+Query database: /tmp/fs_run/tmp/15949974519958957747/query
+Target database: /tmp/fs_run/tmp/15949974519958957747/target
+[=================================================================] 9 0s 703ms
+Time for merging to aln: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 773ms
+Removing temporary files
+rmdb /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/strualn -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/aln /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/result -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+Removing temporary files
+rmdb /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/strualn -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/search_tmp/9049258551701199398/pref -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+scoremultimer /tmp/fs_run/tmp/15949974519958957747/query /tmp/fs_run/tmp/15949974519958957747/target /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/result /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/scoremultimer --min-assigned-chains-ratio 0 --monomer-include-mode 0 --threads 8 -v 3 -c 0 --cov-mode 0 --interface-lddt-threshold 0 --chain-tm-threshold 0 --multimer-tm-threshold 0 --min-aligned-chains 2 
+
+[=================================================================] 1 0s 18ms
+Time for merging to scoremultimer: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 19ms
+mvdb /tmp/fs_run/tmp/15949974519958957747/multimersearch_tmp/3340601107846522781/scoremultimer /tmp/fs_run/tmp/15949974519958957747/multimer_result 
+
+Time for processing: 0h 0m 0s 0ms
+convertalis /tmp/fs_run/tmp/15949974519958957747/query /tmp/fs_run/tmp/15949974519958957747/target /tmp/fs_run/tmp/15949974519958957747/multimer_result /tmp/fs_run/multimer_result --sub-mat 'aa:3di.out,nucl:3di.out' --format-mode 0 --format-output query,target,qstart,qend,tstart,tend,evalue,bits,prob,alntmscore,qtmscore,ttmscore,rmsd,lddt,qcov,tcov,complexqtmscore,complexttmscore,qchains,tchains,interfacelddt,complexassignid --translation-table 1 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --db-output 0 --db-load-mode 0 --search-type 0 --threads 8 --compressed 0 -v 3 --exact-tmscore 0 
+
+[=================================================================] 9 0s 15ms
+Time for merging to multimer_result: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 20ms
+createmultimerreport /tmp/fs_run/tmp/15949974519958957747/query /tmp/fs_run/tmp/15949974519958957747/target /tmp/fs_run/tmp/15949974519958957747/multimer_result /tmp/fs_run/multimer_result_report --db-output 0 --threads 8 -v 3 
+
+[=================================================================] 1 0s 3ms
+Time for merging to multimer_result_report: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 4ms

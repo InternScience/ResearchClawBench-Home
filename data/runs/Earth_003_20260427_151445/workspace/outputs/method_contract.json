@@ -1,0 +1,27 @@
+{
+  "task_name": "FuXi-style cascade U-Transformer 15-day weather forecasting (analysis & demonstration)",
+  "named_methods": [
+    "FuXi cascade of three U-Transformer models (short/medium/long-range members)",
+    "ERA5 reanalysis input at 0.25 deg (provided file is actually 1 deg / 181x360)",
+    "70-channel state: 5 upper-air vars (Z,T,U,V,R) at 13 pressure levels + 5 surface vars (T2M,U10,V10,MSL,TP)",
+    "Two consecutive 6-hour input states; 6-hour output cadence; horizon 15 days = 60 steps"
+  ],
+  "explicit_outputs_requested": [
+    "report/report.md with methodology, results, discussion, figures",
+    "Figures in report/images/*.png",
+    "Code in code/, intermediate results in outputs/"
+  ],
+  "evaluation_axes": [
+    "Comparison vs ECMWF ensemble mean (cited in task; not reproducible without their data)",
+    "Mitigation of forecast error accumulation",
+    "15-day skillful forecast"
+  ],
+  "limitations_to_state_in_report": [
+    "Workspace ships only one init time (20231012-06) and one forecast lead (006.nc t+6h); 15-day rollout cannot be reproduced from scratch.",
+    "FuXi neural-network weights are not in workspace; we cannot retrain or run the actual U-Transformer cascade.",
+    "Provided data resolution is 1 deg (181x360), not the 0.25 deg stated in the task; we report on the data as provided.",
+    "ECMWF ensemble-mean trajectories are not in workspace; cited comparisons are taken from the literature (FuXi, FengWu, FourCastNet) and not reproduced.",
+    "Input fields are pre-standardized; absolute units cannot be recovered without the climatological mean/std files."
+  ],
+  "deliverable_strategy": "Document the cascade methodology grounded in the FuXi paper as cited by the task and the related-work corpus (FourCastNet, FengWu, ML-vs-NWP), characterize the supplied data, diagnose the supplied 6h FuXi forecast, and illustrate the cascade error-growth rationale with a calibrated saturation model."
+}

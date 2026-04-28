@@ -1,0 +1,28 @@
+{
+  "primary_question": "Measure H0 to ~1% precision via a covariance-weighted Local Distance Network, addressing the Hubble tension.",
+  "named_method": "Generalized Least Squares (GLS) Distance Network",
+  "named_inputs": {
+    "geometric_anchors": ["MW parallaxes", "LMC DEBs", "SMC DEBs", "NGC4258 masers"],
+    "primary_indicators": ["Cepheids", "TRGB", "Miras", "JAGB"],
+    "secondary_indicators": ["SNe Ia", "SBF", "SNe II", "FP", "TF"],
+    "hubble_flow": ["SNe Ia", "SBF (where applicable)"]
+  },
+  "named_outputs": {
+    "consensus_H0_baseline": {"value": 73.50, "err": 0.81, "unit": "km/s/Mpc"},
+    "variants": "multiple analysis variants (anchor subsets, indicator subsets)",
+    "comparison": "vs CMB (Planck) early-universe value (~67.4)",
+    "deliverables": "publicly released software and data products (analysis scripts + tables)"
+  },
+  "design_constraints": [
+    "covariance-weighted combination across indicators",
+    "method/anchor calibration uncertainties propagated through covariance",
+    "peculiar-velocity uncertainty propagated to magnitude space (5/ln10 * sigma_v / cz)",
+    "intra-group depth scatter included for SBF group calibrators"
+  ],
+  "non_negotiable_steps": [
+    "Define a linear GLS model with parameters {mu_host_i}, M_B, M_SBF, H0 (as a magnitude offset 5log10 H0)",
+    "Build full covariance with anchor errors, measurement errors, calibration nuisance, peculiar-velocity, depth scatter",
+    "Solve via weighted/generalized least squares (matrix form)",
+    "Run variants: all-anchors, single-anchor, single-primary, single-secondary"
+  ]
+}

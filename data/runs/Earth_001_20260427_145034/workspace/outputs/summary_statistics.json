@@ -1,0 +1,55 @@
+{
+  "n_records": 832,
+  "n_unique_projects": 211,
+  "n_states": 13,
+  "year_min": 2000,
+  "year_max": 2025,
+  "winter_share": 0.8065,
+  "winter_only_share": 0.7115,
+  "agi_presence_share": 0.9555,
+  "agi_only_share": 0.6262,
+  "ground_only_share": 0.5541,
+  "airborne_only_share": 0.2837,
+  "ground_and_airborne_share": 0.1575,
+  "state_HHI": 1548.23,
+  "state_top3_share": 0.5853,
+  "state_top5_share": 0.7981,
+  "state_top8_share": 0.9772,
+  "operator_HHI": 1131.89,
+  "operator_top5_share": 0.6526,
+  "operator_top10_share": 0.8125,
+  "top_states_records": {
+    "california": 215,
+    "colorado": 142,
+    "utah": 130,
+    "texas": 104,
+    "idaho": 73,
+    "nevada": 58,
+    "wyoming": 47,
+    "north dakota": 44
+  },
+  "top_purposes_mentions": {
+    "augment snowpack": 516,
+    "increase precipitation": 426,
+    "suppress hail": 80,
+    "increase runoff": 54,
+    "suppress fog": 13,
+    "research": 9
+  },
+  "top_agents_mentions": {
+    "silver iodide": 795,
+    "sodium iodide": 108,
+    "ammonium iodide": 79,
+    "hygroscopic agents": 32,
+    "calcium chloride": 28,
+    "acetone": 26,
+    "ionized air": 21,
+    "dry ice": 14
+  },
+  "apparatus_distribution": {
+    "ground": 461,
+    "airborne": 236,
+    "ground, airborne": 131,
+    "nan": 4
+  }
+}

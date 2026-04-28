@@ -1,0 +1,25 @@
+{
+  "primary_quantitative_artifacts": [
+    {"name": "channel_statistics.csv", "status": "planned", "description": "Per-channel min/max/mean/std for both input timesteps and the 6h forecast"},
+    {"name": "fuxi_6h_per_channel_metrics.csv", "status": "planned", "description": "Normalized-space RMSE/MAE/correlation between t+0 and t+6h forecast for every channel"},
+    {"name": "cascade_error_growth.csv", "status": "planned", "description": "Synthetic error-growth curves for monolithic vs cascade configurations across 60 6-hour steps"}
+  ],
+  "main_figure_families": [
+    {"name": "data_overview_channels.png", "purpose": "Per-channel statistics visualization (mean/std bars across all 70 channels)"},
+    {"name": "input_state_maps.png", "purpose": "Sample maps of Z500, T850, T2M, MSL, U10, TP in normalized space"},
+    {"name": "forecast_tendency_maps.png", "purpose": "t+6h forecast minus t+0 difference maps for key fields"},
+    {"name": "per_channel_rmse_bar.png", "purpose": "Normalized 6h RMSE per channel, grouped by variable family"},
+    {"name": "latitudinal_rmse.png", "purpose": "Latitude-weighted RMSE profile for selected fields"},
+    {"name": "spectral_power.png", "purpose": "Zonal-wavenumber power spectrum at t+0 and t+6h for Z500 / T850"},
+    {"name": "cascade_architecture.png", "purpose": "Schematic of the 3-member U-Transformer cascade (short/medium/long)"},
+    {"name": "cascade_error_growth.png", "purpose": "Saturation-model error-growth curves: monolithic vs cascade vs persistence"}
+  ],
+  "interpretability_artifacts": [
+    {"name": "channel_group_correlation.png", "purpose": "How forecast tendencies cluster across variable families"}
+  ],
+  "comparison_axes_preserved": [
+    "Variable type (Z, T, U, V, R, surface)",
+    "Pressure level (50..1000 hPa)",
+    "Lead-time bins for cascade simulation: 0-5d (member A), 5-10d (member B), 10-15d (member C)"
+  ]
+}

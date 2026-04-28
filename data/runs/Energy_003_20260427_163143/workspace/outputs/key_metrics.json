@@ -1,0 +1,144 @@
+{
+  "n_buildings": 10,
+  "n_records_per_node": 8760,
+  "n_total_energy_records": 105120,
+  "n_total_weather_records": 8760,
+  "energy_variables": [
+    "Electricity [kW]",
+    "Heat [mmBTU]",
+    "Cooling Energy [Ton]",
+    "PV Power Generation [kW]",
+    "Greenhouse Gas Emission [Ton]"
+  ],
+  "weather_variables": [
+    "Temperature [\u00b0F]",
+    "Dew Point [\u00b0F]",
+    "Humidity [%]",
+    "Wind Speed [mph]",
+    "Wind Gust [mph]",
+    "Pressure [in]",
+    "Precipitation [in]"
+  ],
+  "period": [
+    "2014-01-01 00:00:00",
+    "2014-12-31 23:00:00"
+  ],
+  "flag_rates": {
+    "BN001": 0.0,
+    "BN002": 0.0,
+    "BN003": 0.0,
+    "BN004": 0.0,
+    "BN005": 0.0,
+    "BN006": 0.0,
+    "BN007": 0.0,
+    "BN008": 0.0,
+    "BN009": 0.0,
+    "BN010": 0.0,
+    "CN01": 0.0,
+    "Total": 0.0
+  },
+  "forecasting": [
+    {
+      "Model": "Persistence(t-24)",
+      "MAE": 10.73120968291878,
+      "RMSE": 13.383013374125536,
+      "MAPE(%)": 1.783139357901057,
+      "R2": 0.9517938235379451
+    },
+    {
+      "Model": "Ridge",
+      "MAE": 8.49958843087084,
+      "RMSE": 10.648280970713834,
+      "MAPE(%)": 1.4099489371375822,
+      "R2": 0.9694821547473569
+    },
+    {
+      "Model": "RandomForest",
+      "MAE": 7.97490395576727,
+      "RMSE": 10.061608791942096,
+      "MAPE(%)": 1.3243470316409565,
+      "R2": 0.972752308278977
+    }
+  ],
+  "anomaly_detection": [
+    {
+      "Method": "Z-score(|z|>3)",
+      "TP": 50,
+      "FP": 2,
+      "FN": 0,
+      "TN": 8708,
+      "Precision": 0.9615384615384616,
+      "Recall": 1.0,
+      "F1": 0.9803921568627451
+    },
+    {
+      "Method": "Z-score(|z|>4)",
+      "TP": 50,
+      "FP": 0,
+      "FN": 0,
+      "TN": 8710,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0
+    },
+    {
+      "Method": "IsolationForest",
+      "TP": 50,
+      "FP": 36,
+      "FN": 0,
+      "TN": 8674,
+      "Precision": 0.5813953488372093,
+      "Recall": 1.0,
+      "F1": 0.7352941176470588
+    }
+  ],
+  "imputation": [
+    {
+      "Method": "Forward fill",
+      "MAE": 17.243129433123276,
+      "RMSE": 21.035423968836803,
+      "MAPE(%)": 2.85877884535869
+    },
+    {
+      "Method": "Linear interp",
+      "MAE": 9.521729329010821,
+      "RMSE": 12.11405495751743,
+      "MAPE(%)": 1.590407620345874
+    },
+    {
+      "Method": "Time interp",
+      "MAE": 9.521729329010821,
+      "RMSE": 12.11405495751743,
+      "MAPE(%)": 1.590407620345874
+    },
+    {
+      "Method": "Hourly mean",
+      "MAE": 7.990013780540396,
+      "RMSE": 9.981449815052303,
+      "MAPE(%)": 1.3332716297720992
+    },
+    {
+      "Method": "Ridge regression",
+      "MAE": 9.679024877480805,
+      "RMSE": 12.62725103871907,
+      "MAPE(%)": 1.6177088508688555
+    }
+  ],
+  "hierarchical_consistency_summary": [
+    {
+      "Comparison": "CN01 vs Total",
+      "mean_abs_relative_err": 0.0,
+      "ratio_actual_over_expected": 1.0
+    },
+    {
+      "Comparison": "sum(BN001..BN010) vs CN01",
+      "mean_abs_relative_err": 2.8230930578338986e-17,
+      "ratio_actual_over_expected": 1.0
+    },
+    {
+      "Comparison": "sum(BN001..BN010) vs Total",
+      "mean_abs_relative_err": 2.8230930578338986e-17,
+      "ratio_actual_over_expected": 1.0
+    }
+  ]
+}

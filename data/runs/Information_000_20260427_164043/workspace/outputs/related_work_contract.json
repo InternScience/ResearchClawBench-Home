@@ -1,0 +1,19 @@
+{
+  "Chameleon": {
+    "design": "Single shared image tokenizer (VQ, 8192 codebook) for both understanding and generation; pure autoregressive next-token prediction over interleaved image+text token streams (early fusion).",
+    "limitation_for_our_task": "Uses ONE visual representation for both tasks, so understanding suffers (semantics vs pixel-level reconstruction trade-off)."
+  },
+  "LLaVA": {
+    "design": "Pre-trained CLIP ViT-L/14 vision encoder + linear projector to LLM input space; LLM stays autoregressive and answers visual instructions.",
+    "limitation_for_our_task": "Understanding-only; no generation pathway."
+  },
+  "SigLIP": {
+    "design": "Sigmoid contrastive loss replaces softmax in CLIP; ViT-B/16 for images, transformer for text; gives high-quality semantic visual encoder.",
+    "use_in_our_pipeline": "Inspires the understanding-side encoder (semantic ViT)."
+  },
+  "LlamaGen": {
+    "design": "VQ encoder–quantizer–decoder + Llama-style autoregressive transformer predicting image tokens (next-token prediction); 16x downsample tokenizer with 0.94 rFID.",
+    "use_in_our_pipeline": "Inspires the generation-side VQ tokenizer + AR generation head."
+  },
+  "synthesis": "Combine SigLIP/LLaVA-style understanding encoder + LlamaGen-style VQ tokenizer in ONE Janus-style decoupled framework, with a single Transformer trunk shared across both modalities (Chameleon-style early fusion at the SEQUENCE level, but with TWO separate visual front-ends — this is the decoupling hypothesis)."
+}

@@ -1,0 +1,9 @@
+{
+  "torch": "available (pip-installed in this run)",
+  "torch_geometric": "available (pip-installed in this run)",
+  "numpy": "available",
+  "matplotlib": "to be installed if needed",
+  "pypdf": "available (pip-installed)",
+  "DFT_first_principles_calculations": "NOT available — no VASP/QE/ABINIT/etc. in workspace; metal/insulator and d/g/i wave classifications must be reported as model-derived heuristic proxies, not true DFT results.",
+  "data_prepare_module": "missing original; created stub in code/data_prepare.py to enable unpickling — verified all 3 .pt files load with correct structure"
+}

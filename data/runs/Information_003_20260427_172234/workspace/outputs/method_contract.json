@@ -1,0 +1,23 @@
+{
+  "task": "Network Intrusion Detection on NF-UNSW-NB15-v2 (NetFlow features, edge-level, dynamic graph)",
+  "framework": "DIDS-MFL / 3D-IDS (paper_000, KDD'23)",
+  "named_components": [
+    "Statistical disentanglement (per-feature reweighting; SMT-style optimization, approximated by smooth surrogate of Eq. 5)",
+    "Representational disentanglement (orthogonality / decorrelation regularizer on element-wise edge embedding components)",
+    "Multi-layer (multi-scale) graph diffusion / TGN-style temporal memory with time encoding for dynamic spatiotemporal aggregation",
+    "Multi-scale representation fusion for few-shot learning",
+    "Edge / flow classifier (binary + multi-class)"
+  ],
+  "evaluation_protocols": [
+    "Binary classification (benign vs attack) with F1 and AUC",
+    "Multi-class classification per attack type (per-class F1)",
+    "Unknown attack scenario: leave-one-attack-out (LOAO); evaluate F1 on the held-out attack class",
+    "Few-shot: k in {1, 5, 10} samples per minority class"
+  ],
+  "baselines": ["MLP on msg features", "E-GraphSAGE-like edge GNN", "Ablations: w/o statistical disentanglement, w/o representational disentanglement, w/o multi-scale"],
+  "constraints": [
+    "Must preserve attack-type granularity in at least one artifact",
+    "Reported numbers must be traceable to JSON in outputs/",
+    "Use mean ± std over >=3 seeds for headline tables"
+  ]
+}

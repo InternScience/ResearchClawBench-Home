@@ -1,0 +1,30 @@
+{
+  "related_work_signals_used": {
+    "MAPF-LNS2 (paper_000)": [
+      "use of LNS skeleton with collision-based destroy + replan repair",
+      "starting from collision-prone initial paths (individual shortest paths)",
+      "iteratively reducing collisions to zero",
+      "comparison axis: success rate within a fixed time budget"
+    ],
+    "PRIMAL (paper_001)": [
+      "decentralized partial-observation policies",
+      "RL with reward shaping for goal progress and collision penalties",
+      "single shared policy used by all agents",
+      "small local FOV"
+    ],
+    "SCRIMP (paper_002)": [
+      "MARL improves scalability through small FOV plus shared policy",
+      "explicit ablation with intrinsic rewards (not reproduced -- documented as deviation)",
+      "comparison to classical centralized planners"
+    ],
+    "EECBS (paper_003)": [
+      "bounded-suboptimal optimum-search baseline (not reproduced; we use PP+LNS as our cost baseline)"
+    ],
+    "LaCAM (paper_004)": [
+      "search-based scalable algorithm reference (not reproduced; out-of-scope of our hybrid)"
+    ]
+  },
+  "named_baselines_implemented": ["PP", "LNS2-style with PP repair (LNS-PP)"],
+  "named_baselines_referenced_only": ["EECBS", "LaCAM", "PRIMAL", "SCRIMP"],
+  "named_metrics_used": ["success_rate", "sum_of_costs", "makespan", "runtime_seconds"]
+}

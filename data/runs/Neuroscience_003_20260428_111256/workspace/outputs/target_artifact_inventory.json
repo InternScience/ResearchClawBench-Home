@@ -1,0 +1,21 @@
+{
+  "primary_artifacts": [
+    {"name": "feature_scores_table", "path": "outputs/feature_scores.csv", "status": "done"},
+    {"name": "selected_features_per_method", "path": "outputs/selected_features.json", "status": "done"},
+    {"name": "evaluation_metrics_table", "path": "outputs/evaluation_metrics.csv", "status": "done"},
+    {"name": "knn_preservation_curve", "path": "outputs/knn_preservation_curve.csv", "status": "done"},
+    {"name": "feature_metadata", "path": "outputs/feature_metadata.csv", "status": "done"},
+    {"name": "parsed_adata", "path": "outputs/adata_parsed.h5ad", "status": "done"}
+  ],
+  "main_figures": [
+    {"name": "data_overview", "path": "report/images/01_data_overview.png", "status": "done"},
+    {"name": "feature_score_distributions", "path": "report/images/02_feature_scores.png", "status": "done"},
+    {"name": "dynscore_plane", "path": "report/images/02b_dynscore_plane.png", "status": "done"},
+    {"name": "umap_full_vs_subset", "path": "report/images/03_umap_comparison.png", "status": "done"},
+    {"name": "pseudotime_recovery", "path": "report/images/04_pseudotime_recovery.png", "status": "done"},
+    {"name": "knn_preservation_curve", "path": "report/images/05_knn_preservation.png", "status": "done"},
+    {"name": "selected_feature_heatmap_along_pseudotime", "path": "report/images/06_heatmap_pseudotime.png", "status": "done"},
+    {"name": "method_comparison_bars", "path": "report/images/07_method_comparison.png", "status": "done"}
+  ],
+  "report": {"path": "report/report.md", "status": "done"}
+}

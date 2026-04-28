@@ -1,0 +1,12 @@
+{
+  "torch": "2.11.0+cu130",
+  "torch_geometric": "2.7.0",
+  "cuda_available": false,
+  "matplotlib": true,
+  "seaborn": true,
+  "sklearn": "1.6.1",
+  "limitations": [
+    "CPU-only; 148k flows. Use lightweight TGN-style model with limited epochs and chunked computation.",
+    "Statistical disentanglement is approximated with a smooth differentiable surrogate of the SMT optimization in 3D-IDS (Eq. 5-7) instead of an external SMT solver; this is a faithful but tractable approximation."
+  ]
+}

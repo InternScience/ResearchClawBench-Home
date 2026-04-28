@@ -1,0 +1,8 @@
+claim,value,evidence
+MD over-predicts experimental Tg with positive bias,+63.8 K,outputs/calibration_metrics.csv (raw MD baseline)
+GP calibration removes the MD bias and matches a linear baseline,"R²=0.678, RMSE=54.1 K, bias=+2.41 K (LOOCV)",outputs/calibration_metrics.csv
+Calibrated Tg distribution is shifted ~63 K below the MD distribution,mean MD=424.0 K vs mean calibrated=361.3 K,outputs/vitrimer_calibrated_tg.csv
+Pair-level Tg predictor on graph-VAE latents generalises,"R²=0.738, MAE=12.3 K",outputs/pair_predictor_metrics.json
+Inverse design produces valid SMILES pairs at three Tg targets,350 K: 34% valid; 400 K: 28% valid; 450 K: 20% valid,outputs/designed_candidates.csv
+All valid candidates are also novel (not in training set of pairs),"valid=329, novel pair=329",outputs/designed_candidates.csv
+Top novel candidates re-encode to within ±1 K of target for 350/400 K,"{350.0: 0.43005499999998165, 400.0: 1.8189250000000072, 450.0: 21.34890999999999}",outputs/designed_candidates_top.csv

@@ -1,0 +1,376 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "eda.py",
+    "path": "code/eda.py",
+    "type": "file",
+    "size": 5180,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "evaluate.py",
+    "path": "code/evaluate.py",
+    "type": "file",
+    "size": 5899,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "interpret.py",
+    "path": "code/interpret.py",
+    "type": "file",
+    "size": 7668,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "train.py",
+    "path": "code/train.py",
+    "type": "file",
+    "size": 4445,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "test_simulated.csv",
+    "path": "data/test_simulated.csv",
+    "type": "file",
+    "size": 29204490,
+    "mtime": 1772421508.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "train_simulated.csv",
+    "path": "data/train_simulated.csv",
+    "type": "file",
+    "size": 68149042,
+    "mtime": 1772421506.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "models",
+    "path": "outputs/models",
+    "type": "directory"
+  },
+  {
+    "name": "gbm.joblib",
+    "path": "outputs/models/gbm.joblib",
+    "type": "file",
+    "size": 384184,
+    "mtime": 1777353707.0,
+    "exported": false
+  },
+  {
+    "name": "logreg.joblib",
+    "path": "outputs/models/logreg.joblib",
+    "type": "file",
+    "size": 2017,
+    "mtime": 1777353707.0,
+    "exported": false
+  },
+  {
+    "name": "mlp.joblib",
+    "path": "outputs/models/mlp.joblib",
+    "type": "file",
+    "size": 92465,
+    "mtime": 1777353707.0,
+    "exported": false
+  },
+  {
+    "name": "xgb.joblib",
+    "path": "outputs/models/xgb.joblib",
+    "type": "file",
+    "size": 1368564,
+    "mtime": 1777353707.0,
+    "exported": false
+  },
+  {
+    "name": "best_threshold.json",
+    "path": "outputs/best_threshold.json",
+    "type": "file",
+    "size": 141,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "eda_summary.json",
+    "path": "outputs/eda_summary.json",
+    "type": "file",
+    "size": 1166,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "metrics.json",
+    "path": "outputs/metrics.json",
+    "type": "file",
+    "size": 5166,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "modality_ablation.csv",
+    "path": "outputs/modality_ablation.csv",
+    "type": "file",
+    "size": 551,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "modality_groups.json",
+    "path": "outputs/modality_groups.json",
+    "type": "file",
+    "size": 256,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "model_comparison.csv",
+    "path": "outputs/model_comparison.csv",
+    "type": "file",
+    "size": 327,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "per_degradation_metrics.csv",
+    "path": "outputs/per_degradation_metrics.csv",
+    "type": "file",
+    "size": 1517,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "permutation_importance_mlp.csv",
+    "path": "outputs/permutation_importance_mlp.csv",
+    "type": "file",
+    "size": 940,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "shap_mean_abs.csv",
+    "path": "outputs/shap_mean_abs.csv",
+    "type": "file",
+    "size": 280,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 1 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 7682715,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 540574,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 725080,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 736463,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "calibration.png",
+    "path": "report/images/calibration.png",
+    "type": "file",
+    "size": 89461,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "confusion_matrix_mlp.png",
+    "path": "report/images/confusion_matrix_mlp.png",
+    "type": "file",
+    "size": 36116,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 96806,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "feature_correlation.png",
+    "path": "report/images/feature_correlation.png",
+    "type": "file",
+    "size": 50677,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "feature_dist_per_class.png",
+    "path": "report/images/feature_dist_per_class.png",
+    "type": "file",
+    "size": 144180,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "feature_mean_difference.png",
+    "path": "report/images/feature_mean_difference.png",
+    "type": "file",
+    "size": 40919,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "modality_ablation.png",
+    "path": "report/images/modality_ablation.png",
+    "type": "file",
+    "size": 62309,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "model_comparison.png",
+    "path": "report/images/model_comparison.png",
+    "type": "file",
+    "size": 48974,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "pca_train.png",
+    "path": "report/images/pca_train.png",
+    "type": "file",
+    "size": 402532,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "per_degradation_heatmaps.png",
+    "path": "report/images/per_degradation_heatmaps.png",
+    "type": "file",
+    "size": 134717,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "permutation_importance_mlp.png",
+    "path": "report/images/permutation_importance_mlp.png",
+    "type": "file",
+    "size": 63470,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "roc_pr_curves.png",
+    "path": "report/images/roc_pr_curves.png",
+    "type": "file",
+    "size": 158978,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "shap_mean_abs.png",
+    "path": "report/images/shap_mean_abs.png",
+    "type": "file",
+    "size": 42068,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "shap_modality_per_degradation.png",
+    "path": "report/images/shap_modality_per_degradation.png",
+    "type": "file",
+    "size": 64706,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "shap_summary_xgb.png",
+    "path": "report/images/shap_summary_xgb.png",
+    "type": "file",
+    "size": 361688,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "threshold_sweep_mlp.png",
+    "path": "report/images/threshold_sweep_mlp.png",
+    "type": "file",
+    "size": 76845,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 17491,
+    "mtime": 1777353708.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5452,
+    "mtime": 1777296194.0,
+    "exported": true
+  }
+]

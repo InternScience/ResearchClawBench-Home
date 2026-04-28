@@ -1,0 +1,27 @@
+{
+  "task": "Discover altermagnetic candidate materials from crystal-structure graphs",
+  "named_commitments": [
+    "self-supervised pre-training on 5000 unlabeled graphs",
+    "fine-tuning on 2000 labeled graphs (5% positive)",
+    "ranking 1000 candidate graphs and selecting ~50 highest-probability altermagnets",
+    "report electronic-structure-style classification: metal/insulator and d/g/i-wave symmetry",
+    "graph neural network on crystal-structure graphs",
+    "use only data inside the workspace; data/ and related_work/ are read only"
+  ],
+  "primary_outputs": [
+    "outputs/predictions_top50.csv",
+    "outputs/metrics.json",
+    "report/report.md",
+    "report/images/*.png"
+  ],
+  "data_facts_verified": {
+    "node_feature_dim": 28,
+    "edge_feature_dim": 2,
+    "elements": 28,
+    "pretrain_size": 5000,
+    "finetune_size": 2000,
+    "finetune_positives": 99,
+    "candidate_size": 1000,
+    "candidate_hidden_positives": 43
+  }
+}

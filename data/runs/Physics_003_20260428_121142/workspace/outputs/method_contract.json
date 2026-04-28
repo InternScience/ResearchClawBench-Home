@@ -1,0 +1,25 @@
+{
+  "task": "Detect Floquet-Bloch replica bands of the Dirac cone in monolayer epitaxial graphene with 5 um MIR (ℏω=0.248 eV) tr-ARPES; characterize FB <-> Volkov scattering via pump polarization dependence.",
+  "named_methods": [
+    "Floquet-Bloch state identification via energy- and momentum-resolved replicas spaced by ℏω",
+    "Volkov final-state (laser-assisted photoemission, LAPE) interpretation of the photon-dressed final state",
+    "Polarization-angle dependence I(θ_p) of replica intensity to disentangle Floquet-Bloch vs Volkov contributions"
+  ],
+  "primary_observables": [
+    "Pump-off vs pump-on E(k) spectra",
+    "Replica band positions (n=±1) and their energy offset relative to the n=0 Dirac cone",
+    "Replica intensity as a function of pump polarization angle θ_p",
+    "Time-delay dependence of replica intensity (transient nature)"
+  ],
+  "expected_signatures": [
+    "Replica bands offset by ±ℏω = ±0.248 eV from the equilibrium Dirac cone",
+    "Replicas only present when pump and probe overlap in time",
+    "Polarization angular pattern characteristic of FB-Volkov interference (period 90° for cos(4θ_p)) or pure FB (≈ isotropic) or pure Volkov (cos²(θ_p) with 180° period)"
+  ],
+  "validation_against_related_work": {
+    "paper_000": "Oka & Aoki 2009 — theoretical Floquet treatment of graphene under intense AC field; predicts photoinduced gap.",
+    "paper_001": "Wang et al., Science 2013 — direct ARPES observation of FB on Bi2Se3 surface, established methodology and Volkov/LAPE distinction.",
+    "paper_002": "Hübener et al. — Floquet-Weyl semimetal theory.",
+    "paper_003": "Sentef et al. 2015 — pump-probe theory of Floquet bands in graphene with realistic pulses."
+  }
+}

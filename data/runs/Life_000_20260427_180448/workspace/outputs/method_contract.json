@@ -1,0 +1,14 @@
+{
+  "task": "De novo design of bio-inspired adhesive hydrogels by predicting adhesive strength from 6-monomer compositions, then exploring composition space to push adhesion above 1 MPa underwater.",
+  "inputs": ["Nucleophilic-HEA", "Hydrophobic-BA", "Acidic-CBEA", "Cationic-ATAC", "Aromatic-PEA", "Amide-AAm"],
+  "targets": ["Glass (kPa)_10s", "Glass (kPa)_60s", "Steel (kPa)_10s", "Steel (kPa)_60s"],
+  "primary_target_for_optimization": "Glass (kPa)_max (max of 10s/60s on glass), to be compared with 1000 kPa = 1 MPa threshold",
+  "named_methods": [
+    "Random Forest Regressor (RFR)",
+    "Gaussian Process Regressor (GP)",
+    "Bayesian optimization with Expected Improvement (EI) acquisition",
+    "RFR-GP / RFR-RFR / GP-GP variants from the source paper"
+  ],
+  "constraint": "x in 6-simplex: x_i >= 0, sum_i x_i = 1",
+  "validation": "Use the multi-round (1,2,3) experimental results in ML_ei&pred (1&2&3rounds)_20240408.xlsx as ground-truth check on the BO-suggested formulas."
+}

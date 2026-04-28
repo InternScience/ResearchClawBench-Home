@@ -1,0 +1,3559 @@
+Exploring the String Axiverse with Precision Black Hole Physics
+
+Asimina Arvanitakia,b and Sergei Dubovskyc,d
+
+a Berkeley Center for Theoretical Physics, University of California, Berkeley, CA, 94720
+
+b Theoretical Physics Group, Lawrence Berkeley National Laboratory, Berkeley, CA, 94720
+
+c Department of Physics, Stanford University, Stanford, CA 94305, USA
+
+d Institute for Nuclear Research of the Russian Academy of Sciences, 60th October Anniversary
+
+Prospect, 7a, 117312 Moscow, Russia
+
+Abstract
+
+It has recently been suggested that the presence of a plenitude of light axions, an Ax-
+iverse, is evidence for the extra dimensions of string theory. We discuss the observational
+consequences of these axions on astrophysical black holes through the Penrose superradiance
+process. When an axion Compton wavelength is comparable to the size of a black hole, the
+axion binds to the black hole “nucleus” forming a gravitational atom in the sky. The occupa-
+tion number of superradiant atomic levels, fed by the energy and angular momentum of the
+black hole, grows exponentially. The black hole spins down and an axion Bose-Einstein con-
+densate cloud forms around it. When the attractive axion self-interactions become stronger
+than the gravitational binding energy, the axion cloud collapses, a phenomenon known in
+condensed matter physics as “Bosenova”. The existence of axions is ﬁrst diagnosed by gaps
+in the mass vs spin plot of astrophysical black holes. For young black holes the allowed values
+of spin are quantized, giving rise to ”Regge trajectories” inside the gap region. The axion
+cloud can also be observed directly either through precision mapping of the near horizon
+geometry or through gravitational waves coming from the Bosenova explosion, as well as
+axion transitions and annihilations in the gravitational atom. Our estimates suggest that
+these signals are detectable in upcoming experiments, such as Advanced LIGO, AGIS, and
+LISA. Current black hole spin measurements imply an upper bound on the QCD axion de-
+cay constant of 2 · 1017 GeV, while Advanced LIGO can detect signals from a QCD axion
+cloud with a decay constant as low as the GUT scale. We ﬁnally discuss the possibility of
+observing the γ-rays associated with the Bosenova explosion and, perhaps, the radio waves
+from axion-to-photon conversion for the QCD axion.
+
+1
+1
+0
+2
+
+g
+u
+A
+6
+1
+
+]
+h
+t
+-
+p
+e
+h
+[
+
+2
+v
+8
+5
+5
+3
+.
+4
+0
+0
+1
+:
+v
+i
+X
+r
+a
+
+1
+
+ 
+ 
+ 
+ 
+ 
+ 
+Contents
+
+1 Introduction and summary
+
+2 Spectroscopy of superradiance
+
+2.1 Non-relativistic approximation α/l (cid:28) 1 . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 WKB approximation α (cid:29) 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3 Dynamics of superradiance
+
+3.1 Gravity wave emission . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.1.1 General formalism . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.1.2 Axion transitions between levels in a black hole atom . . . . . . . . . . . .
+3.1.3 Axion annihilations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.2 Axion non-linearities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Shutdown of superradiance due to level mixing . . . . . . . . . . . . . . . .
+
+3.2.1 Bosenova
+3.2.2
+
+4 Observational signatures
+
+4.1 Black hole Regge trajectories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2 Gravitational waves . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.3 Direct observation of the cloud . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.4 The QCD axion and superradiance . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.4.1 Black hole spindown and Advanced LIGO . . . . . . . . . . . . . . . . . .
+4.4.2 Photon signals: radio waves, γ- and X-rays . . . . . . . . . . . . . . . . . .
+4.5 Accelerated growth of black holes . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5 Bookkeeping of anthropic axions
+
+6 Conclusions
+
+7 Acknowledgements
+
+1
+
+Introduction and summary
+
+2
+
+11
+13
+16
+
+19
+20
+21
+22
+23
+25
+26
+26
+
+31
+31
+35
+40
+41
+42
+43
+44
+
+47
+
+49
+
+50
+
+Black holes are among the most fascinating systems in astrophysics, and the most mysterious
+objects in quantum gravity and string theory, for a long time serving as principal “theoretical
+laboratories” for exploring non-perturbative gravitational dynamics. The purpose of this paper is
+to initiate a detailed study of the exciting possibility [1] that astrophysical black holes may serve
+as actual laboratories for the discovery of new elementary particles.
+
+There are several reasons why we believe this possibility is realistic. On a purely phenomeno-
+logical side, black hole observations are routine practice in nowaday astronomy (see, e.g., [2] for
+a review). About 40 stellar mass black holes in X-ray binaries in the Milky Way and neighboring
+galaxies have been identiﬁed with masses in the range ∼ 5 ÷ 20M(cid:12). Supermassive black holes
+with masses ∼ 105 ÷ 1010 M(cid:12) have been found in centers of many galaxies including the Milky
+
+2
+
+Way and believed to be hosted by nearly all of the galaxies. Also, the ﬁrst intermediate mass
+(∼ 100 ÷ 105 M(cid:12)) candidates have been identiﬁed.
+
+Following the evolution of binary systems or measuring the velocity dispersion of stars rotating
+around galactic centers allows to determine black hole masses. Most crucially for what follows,
+recent advances in X-ray astronomy and in numerical magnetohydrodynamical simulations of the
+accreting gas in the Kerr metric open the possibility for a detailed exploration of the near-horizon
+region and, as a consequence, for high precision neasurements of black hole spins [3, 4]. First
+estimates for the angular momentum of several black holes have already been delivered [5], often
+suggesting high values for the spin, although at the moment diﬀerent techniques sometimes give
+rise to conﬂicting results [6].
+
+In the future, apart from improvements of traditional astronomical techniques for observing
+the near horizon environment and its better theoretical modeling, a unique probe of the black
+hole geometry will be provided by low frequency gravitational waves observatories, such as LISA
+[7] or AGIS, a gravitational wave detector based on atom interferometric techniques [8, 9]. For
+the purpose of testing the near horizon geometry the most promising candidates are the so-called
+extreme mass ratio inspirals—stellar mass compact objects captured by supermassive black hole
+in the galactic center (see, e.g., [10]). LISA and AGIS are expected to detect about a hundred of
+such events per year. Each such measurement allows not only to determine the black hole spin
+and mass with an exquisite accuracy, 10−3 ÷ 10−5, depending on the details of a particular event,
+but also to check whether higher order metric moments, up to 6 ÷ 7, agree with their values for
+the Kerr geometry.
+
+This ongoing observational progress indicates that we are witnessing the dawn of precision
+black hole physics. Undoubtedly, black hole observations will be of great value for astrophysics,
+however it is natural to inquire whether these data may be useful for beyond the Standard Model
+physics as well, given that it will provide a rare test of non-linear gravity. However, possibly
+contrary to naive expectation, it turns out quite challenging to ﬁnd modiﬁed gravity theories
+which would predict deviations from general relativity near astrophysical black holes and would
+not contradict current gravity tests. One candidate class of modiﬁed theories of gravity aﬀecting
+black hole dynamics are models of Higgs phases of gravity, where black hole no-hair theorems can
+be violated [11].
+
+In this paper we explore a less exotic possibility to test fundamental physics with precision
+It is related to the famous Penrose process, a mechanism to extract
+black hole observations.
+energy and angular momentum from rotating black holes [12, 13]. As reviewed in detail below,
+this process, known as superradiance, when applied to waves rather than particles [14, 15, 16],
+gives rise to a spin-down instability of a rotating black hole [17, 18, 19, 20], if a massive boson with
+a Compton wavelength of order the black hole gravitational radius is present in nature. As we
+will see, this instability turns rotating astrophysical black holes into sensitive detectors of bosons
+with masses in the range µ ∼ 10−9 ÷ 10−21 eV. Before focusing on the observational consequences
+of the superradiant instability, let us review why it is natural to expect ultra-light bosons in the
+theory that transform astrophysical black holes in probes of fundamental physics.
+
+A natural situation giving rise to a particle of a small, but non-vanishing mass is when this
+particle is a (pseudo)Goldstone boson of a spontaneously broken global symmetry, which is also
+explicitly broken by non-perturbative eﬀects. Probably the best motivated candidate for such
+
+3
+
+a particle is the QCD axion φa—a pseudoscalar particle coupled to the QCD instanton number
+density via
+
+Sθ =
+
+(cid:90)
+
+1
+32π2fa
+
+d4x φa(cid:15)µνλρTr GµνGλρ .
+
+(1)
+
+Note that at the classical level Sθ is invariant under the Peccei–Quinn (PQ) symmetry φa →
+φa + const, so that the QCD axion is indeed a (pseudo)Goldstone boson with fa being the scale
+of spontaneous symmetry breaking. This symmetry is explicitly broken by the QCD instanton
+eﬀects that generate the axion potential giving rise to a solution for the strong CP problem—the
+primary motivation for the QCD axion. As a result the QCD axion acquires a mass equal to
+
+µa ≈ 6 · 10−10eV
+
+(cid:19)
+
+(cid:18)1016GeV
+fa
+
+.
+
+(2)
+
+The Compton wavelength of the QCD axion with a high symmetry breaking scale fa (cid:38) 1016 GeV
+matches the size of stellar mass black holes and, consequently, can aﬀect their dynamics, suggesting
+that this part of the parameter space for the QCD axion can be explored through black hole
+observations.
+
+There are several reasons why this conclusion is very important. First, non-gravitational
+interactions of the QCD axion with the rest of the Standard Model particles are very suppressed at
+these high values of fa. As a result this part of the parameter space can not be easily probed by any
+other means, either laboratory or astrophysical. Second, in many “generic” string constructions,
+i.e., in compactiﬁcations where the extra-dimensional manifold is neither highly anisotropic, nor
+strongly warped, the values of fa are naturally around the grand uniﬁcation scale MGU T (cid:39) 2 ×
+1016 GeV [21]. Finally, as elaborated in more detail in section 5, ﬁnding the QCD axion with
+fa ∼ MGU T would indicate that the baryon-to-dark matter ratio varies on length scales longer
+than the observed part of the Universe and its local value is determined by anthropic reasoning.
+Discovery of the QCD axion in this regime would be further evidence for enviromental selection
+already suggested by the cosmological constant problem, and by the string landscape.
+
+There is an even stronger and more direct link between the QCD axion and the landscape of
+string vacua, a link that gives rise to the expectation of a plenitude of light axion-like particles, an
+axiverse [1] – this same link also suggests the existence of many massless vectors, whose massive
+superpartners may be discovered at the LHC [22]. In string constructions, an axion usually arises
+as a Kaluza–Klein (KK) zero mode of a higher-dimensional antisymmetric form ﬁeld. Such zero
+modes have a purely topological origin: they are labeled by non-contractable cycles in the extra-
+dimensional manifold. Non-contractable cycles allow for non-trivial gauge ﬁeld conﬁgurations with
+a vanishing ﬁeld strength, the so called Wilson lines. These conﬁgurations do not carry energy
+and correspond to zero KK modes at the perturbative level. They only acquire a mass due to
+non-perturbative eﬀects.
+
+Interestingly, the very same ingredients that give rise to the string axiverse, higher-dimensional
+form ﬁelds and non-trivial cycles in the compactiﬁcation manifold allowing also to turn on gauge
+ﬂuxes, also give rise to the string landscape of 10500 or so vacua. In order to allow for the tuning of
+the cosmological constant at the ∼ 10−120 level, as required by observations, the compactiﬁcation
+manifold should contain of order few hundred cycles, given that the total amount of ﬂux quanta
+for a cycle is typically limited by a number around ten in order to stay in a perturbative regime.
+
+4
+
+Figure 1: Axionic Black Hole Atom: The spinning black hole “feeds” superradiant states form-
+ing an axion Bose-Einstein condensate. The resulting bosonic atom will emit gravitons through
+axion transitions between levels and annihilations and will emit axions as a consequence of self-
+interactions in the axion ﬁeld.
+
+Consequently, one may expect hundreds of axion-like particles in a given string compactiﬁcation.
+However, a plenitude of cycles does not yet guarantee the presence of a plenitude of axions. There
+is a number of eﬀects in string theory that could produce a large axion mass, such as branes
+wrapping the cycles, and ﬂuxes. One can roughly estimate the number of light axions as being
+determined by the number of cycles without ﬂuxes—presumably, around one tenth of the total
+number of cycles. Still this leaves us with the expectation of several tens of axion-like particles.
+
+The discovery of a plenitude of particles in our vacuum with similar properties but diﬀerent
+masses supports the idea of a plenitude of vacua, as both the axiverse and the multiverse are
+dynamical consequences of the same fundamental ingredients.
+
+The masses of string axions are exponentially sensitive to the sizes of the corresponding cycles,
+so one expects them to be homogeneously distributed on the logarithmic scale. However, given
+that the QCD θ-parameter is constrained to be less than 10−10, non-perturbative string corrections
+to the QCD axion potential should be at least ten orders of magnitude suppressed as compared
+to the QCD generated potential.
+It is then natural to expect many of the axions to be much
+lighter than the QCD axion; these are the axions whose mass is dominated only by these small
+non-perturbative string eﬀects.
+
+The implicit, and very plausible assumption behind this line of reasoning is that there is no
+anthropic reason for the existence and properties of the QCD axion. Consequently, these properties
+should follow from the dynamics of the compactiﬁcation manifold, rather than being a result of
+ﬁne-tuning, and the QCD axion should be a typical representative among other axion-like ﬁelds.
+A priori we expect tens (or even hundreds) of light axions, it would be really surprising if the
+QCD axion turned out to be the single one.
+
+5
+
+These arguments motivate us to look not only for the QCD axion, but for axions in the entire
+mass range µ ∼ 10−9 ÷ 10−21 eV, where they can aﬀect stellar or galactic astrophysical black
+holes through superradiance. Let us summarize now the major features of superradiance and its
+principal observational consequences.
+
+Superradiance [14, 15, 16] is the phenomenon of wave ampliﬁcation during scattering oﬀ a
+rotating black hole which takes place whenever the wave frequency ω and the magnetic quantum
+number m satisfy the superradiance condition
+
+where w+ is the angular velocity of the black hole horizon deﬁned as
+
+0 < ω < mw+ ,
+
+w+ =
+
+1
+2rg
+
+a/rg
+1 + (cid:112)1 − (a/rg)2
+
+(3)
+
+(4)
+
+with rg being the gravitational radius of the black hole and 0 < a < rg is the spin-to-mass ratio.
+Superradiant ampliﬁcation may lead to an instability under certain circumstances. One example,
+admittedly not a very practical one, is the “black hole bomb” by Press and Teukolsky [23, 24]: a
+rotating black hole surrounded by a spherical mirror. A single photon introduced in the system, or
+created by quantum ﬂuctuations, with quantum numbers satisfying the superradiance condition
+(3) gives rise to an exponentially growing number of photons inside the mirror through a chain of
+consequent ampliﬁcations at the black hole horizon and reﬂections from the mirror.
+
+Remarkably, nature provides such a mirror in the presence of a massive boson [17, 18, 19, 20].
+Massive bosons, in our case axions, have bound Keplerian levels in the gravitational ﬁeld of a black
+hole. This allows for a black hole to release its spin by populating levels satisfying the condition
+(3), see Fig. 1. This creates an axionic Bose-Einstein condensate (BEC) cloud rotating around
+the black hole. The process is only eﬃcient if the Compton wavelength of an axion is comparable
+to the black hole size. As a result, the energy spectrum of superradiant levels is quantized and
+very close to the spectrum of a hydrogen atom. The superradiant axion cloud loses its energy
+and momentum by gravitational wave emission associated with axion transitions between diﬀerent
+“atomic” levels, and with axion annihilations to gravitons. Another important loss mechanism is
+related to non-linearities in the axion potential and results in the emission of axions. Finally, the
+whole system may be fueled by energy and spin inﬂow from the matter accreting onto the black
+hole.
+
+In Fig. 2 we show the region of black hole mass and axion mass parameter space that is aﬀected
+by superradiance. The dark area outlines the region where a superradiant cloud has enough time
+to be built up during the lifetime of the Universe for a maximally spinning black hole. The lighter
+region shows the part of the parameter space where the superradiant spindown rate is faster than
+the spinup rate due to Eddington accretion, so that Eddington accreting black holes in this mass
+range lose their spin as the cloud develops.
+
+There are three major classes of observational signatures associated with the axion cloud that
+
+we are going to discuss in the current paper:
+
+• Gaps in the black hole “Regge plot” (spin vs mass plane)—the absence of rapidly rotating
+black holes when their gravitation radius matches the Compton wavelength of an axion.
+
+6
+
+Figure 2: The part of the black hole and axion parameter space potentially aﬀected by super-
+radiance. For axion and black hole masses in the colored region the time required to create a
+substantial axion cloud is shorter than the age of the Universe. For masses in a light colored
+region the superradiance rate is faster than the Eddington accretion rate.
+
+• Direct gravitational wave signals from the rotating axion cloud. For the QCD axion this
+
+signal falls into the sensitivity band of the Advanced LIGO interferometer.
+
+• Modiﬁcation of the near-horizon metric due to the presence of the axion cloud.
+
+The main goal of this paper is to evaluate the observability of these classes of signatures in
+near future experiments. Detailed quantitative predictions for gravitational wave emission rates
+and waveforms, as well as the change of the templates for the near horizon metric is likely to
+require numerical work. The reason is that the axion BEC cloud is a rich and complicated
+dynamical system with many processes that need to be taken into account in order to have an
+accurate description of its behavior at cosmological time scales. One important process that poses
+a challenge for an analytical treatment is the eﬀect of axion self-interactions on superradiance.
+Here we limit ourself to a qualitative, semi-analytical discussion of the major physical processes
+involved. Our analysis indicates that depending on the relation between the axion mass and the
+black hole size all three classes of signatures can be observable for diﬀerent systems. This provides
+strong motivation for further numerical analysis of axionic superradiance.
+
+Let us brieﬂy summarize our main results. In Fig. 3 we show the black hole Regge plot for two
+
+7
+
+(cid:45)22(cid:45)20(cid:45)18(cid:45)16(cid:45)14(cid:45)12(cid:45)10246810AxionmassΜΑinLog10(cid:72)ΜΑeV(cid:76)BlackholemassinLog10MblackholeMsolarFigure 3: The regions in the black hole Regge plane aﬀected by superradiance for the QCD axion
+with m = 3 · 10−11 eV (the upper panel) and for a lighter axion with m = 10−17 eV. The data
+points correspond to spin measurements obtained by ﬁtting the thermal continuum X-ray spectra
+[5]. Old black holes are expected to be found in the shaded region, where they are not aﬀected by
+superradiance. Young black holes may be found also on the dashed colored lines inside the gap.
+Diﬀerent colors correspond to superradiant levels with diﬀerent orbital quantum numbers l.
+
+8
+
+l(cid:61)1l(cid:61)2l(cid:61)3l(cid:61)4l(cid:61)5l(cid:61)6l(cid:61)7l(cid:61)824681012140.00.20.40.60.81.0BlackHoleMassinunitsofMsolarBlackHoleSpinargl(cid:61)1l(cid:61)2l(cid:61)3l(cid:61)45.0(cid:180)1061.0(cid:180)1071.5(cid:180)1072.0(cid:180)1070.00.20.40.60.81.0BlackHoleMassinunitsofMsolarBlackHoleSpinargdiﬀerent axion masses. The upper plot corresponds to an axion mass of µa = 3 · 10−11 eV, which
+is the mass of the QCD axion for fa = 2 · 1017 GeV, and the lower illustrates the eﬀect of a lighter
+axion with µa = 10−17 eV. Black holes in the shadowed region are not aﬀected by superradiance
+during the age of the Universe. Suﬃciently old black holes are expected to be found in this region.
+In the plot corresponding to the QCD axion we also present existing spin measurements; this data
+suggest an upper bound on the QCD axion decay constant of 2 · 1017 GeV.
+
+Note that the uncolored gap regions exhibit internal structure (dashed lines), reﬂecting the
+quantized behavior of the gravitational black hole atom. Black holes may stay on these lines,
+the “Regge trajectories”, for cosmological time scales. In order to understand this behavior, we
+should note that there is a number of diﬀerent superradiant bound states labeled by diﬀerent
+angular quantum number l. The instability time-scale rapidly drops down as the orbital quantum
+number l increases. Therefore, the spin-down process of the black hole is initially driven by the
+level with the minimum value of l for which the superradiance condition (3) is satisﬁed, and stops
+when enough spin has been extracted, so that the superradiance instability rate goes to zero —
+the superradiance condition is now saturated. At this point the black hole ﬁnds itself on one of
+the dashed lines of the Regge plot.
+
+Next, we should expect that the black hole spin-down proceeds with the growth of the level
+with the next-to-largest superradiance rate, i.e., the l + 1 level. However, further spin-down is
+damped when the black hole reaches one of the Regge trajectories as a consequence of axion self-
+interactions. The axions bound to the level that is no longer superradiating serve as an axially
+asymmetric perturbation to the system that mixes superradiant with non-superradiant levels and
+shuts oﬀ the black hole spin-down process. This is similar to introducing a non-spherical defect
+on the mirror in the Press-Teukolsky black hole bomb: photons reﬂected from the mirror exit the
+superradiant region (3) and are now absorbed by the black hole, turning the instability oﬀ. As a
+result of these axion non-linearities, black holes stay on the Regge trajectories until various axion
+loss processes, or a violent accretion event, dissipate the cloud down to a small enough size, such
+that non-linearities no longer inhibit the instability. Then the black hole rapidly jumps to the
+next Regge trajectory by populating the level with a larger orbital quantum number.
+
+Axion non-linearities trigger yet another dramatic eﬀect during transitions between Regge
+trajectories. Namely, attractive axion self-interactions result in a catastrophic instability of the
+axion cloud and its subsequent collapse. The analogous eﬀect has been observed in laboratory
+BEC systems with attractive self-interactions and is known under the name “Bosenova” [25]. We
+ﬁnd that, depending on the parameters, transitions between Regge trajectories proceed through
+a series of tens to hundreds of Bosenova events. These events produce gravitational waves, and,
+in the case of the QCD axion, gamma- and X-rays that may be detectable on the Earth.
+
+The black hole may also emit gravitational waves at the observable level due to axion transitions
+between diﬀerent levels and annihilations to gravitons. Accurate prediction of the strength and
+duration of the signal requires a more detailed analysis of the dynamics; in the current paper we
+limit ourselfs to qualitative estimates which imply that this signal is detectable. It is especially
+exciting that the gravitational wave signal from the QCD axion cloud around stellar mass black
+holes falls into the Advanced LIGO frequency band and turns it into a particle discovery machine.
+In Fig. 4 we present the estimated signal strength as a function of the axion and black hole masses
+for a source at a 20 Mpc distance from the Earth. We choose a coherent integration time for the
+
+9
+
+Figure 4: The contour plot of constant gravitational wave signal from axion transitions between
+the 6g and the 5g levels for a black hole located at 20 Mpc away from the Earth. The projected
+sensitivity curves of Advanced LIGO [26] and Einstein Telescope [27] assume 104 seconds of a
+coherent integration time.
+
+signal of 104 second , when drawing the sensitivity curves.
+
+The paper is organized as follows. We start with explaining the basics of superradiance in
+Section 2. We argue that the non-relativistic approximation is accurate for describing superradiant
+levels for most of the parameter space, and adequate at least qualitatively at all values of the
+parameters. We present semi-analytical results for the superradiant rates, that are accurate over
+a large part of the parameter space and enough for our purposes.
+
+In Section 3 we discuss the processes that determine the dynamics of the superradiant cloud—
+gravitational wave emission and axion non-linearities. We provide approximate expressions for the
+relevant transition rates, and for characteristic timescales and masses of the superradiant cloud
+when diﬀerent processes, such as Bosenova collapse, happen.
+
+In Section 4 we combine all of the above ingredients and discuss how the superradiant instability
+develops and what are the associated observational signatures. We discuss in detail the black hole
+spin-down and of the Regge trajectories. We then estimate the gravitational wave signals during
+
+10
+
+EinsteinTelescopeAdvancedLIGO10(cid:45)2710(cid:45)2610(cid:45)2510(cid:45)2410(cid:45)23(cid:45)13.0(cid:45)12.5(cid:45)12.0(cid:45)11.5(cid:45)11.0(cid:45)10.5(cid:45)10.0(cid:45)9.50.60.81.01.21.41.61.820AxionmassinLog10ΜaeVΜa(cid:180)rgBlackHoleMassinLog10MBHMsolarforΜa(cid:180)rg(cid:61)1transitions between Regge trajectories and brieﬂy comment on prospects for directly detecting the
+axionic cloud around supermassive black holes during extreme mass ratio inspirals.
+
+We also focus on the potential reach for the QCD axion, and some possible QCD axion speciﬁc
+signatures related to its direct coupling to Standard Model ﬁelds. A particularly intriguing eﬀect of
+the QCD axion is that the eﬀective value of the QCD θ-parameter may become of order one inside
+the cloud. This possibly destabilizes nuclei in the accretion disk and results in γ-ray signals and
+exotic X-ray lines from the nuclear decay products in the black hole vicinity. We ﬁnally entertain
+the possibility of radio waves from axion-to-photon conversion in the near-horizon magnetic ﬁeld.
+Section 5 elaborates on an issue which is aside from the main line of the paper, but still a very
+important part of the theoretical motivations for string axions in the mass range probed by the
+black hole superradiance. Namely, all these axions are “anthropic”—their initial misalignment
+angle needs to be tuned to an atypically small value in the observed part of the Universe. It has
+been known for a long time [28], that this is not a problem for a single QCD axion, and here we
+discuss what changes if several anthropic axions are present. We conclude in Section 6.
+
+2 Spectroscopy of superradiance
+
+In this section we review the spectroscopy of superradiant levels around a rotating black hole.
+Throughout the paper we are using the Boyer-Lindquist coordinates for the spinning black hole
+metric [29]
+
+ds2 = −(1 −
+
+2rgr
+Σ
+
+)dt2 −
+
+4rgar sin2 θ
+Σ
+
+dtdφ +
+
+Σ
+∆
+
+dr2 + Σdθ2 +
+
+(r2 + a2)2 − a2∆ sin2 θ
+Σ
+J
+M
+
+g − a2 , a =
+r2
+
+(cid:113)
+
+sin2 θdφ2 ,
+
+Σ = r2 + a2 cos2 θ , ∆ = (r − r+)(r − r−) r± = rg ±
+
+, rg = GN M ,
+
+(5)
+
+where M and J are black hole’s mass and spin, respectively. The physical horizon corresponds to
+the larger root of ∆, which is r = r+.
+
+One of the most fundamental equations for the understanding of superradiance is condition
+(3), so let us review how it arises, following [29]. Interestingly, one has to know remarkably little
+about the Kerr geometry to derive (3). The ﬁrst fact one needs is that the black hole metric in the
+Boyer–Lindquist coordinates is invariant under time translations, or more formally it possesses
+the Killing vector Hµ∂µ = ∂t. Second, it possesses another Killing vector related to rotational
+invariance, J µ∂µ = ∂ϕ and the linear combination
+
+G = H + w+J ,
+
+is normal to the horizon and null there. In the above equation w+ is given by (4).
+
+Now, let us consider an incoming wave of a scalar ﬁeld of the form
+
+The conserved energy ﬂux of this ﬁeld is given by
+
+φ = e−iωt+imϕf (r, θ) + h.c. .
+
+Pµ = −TµνHν = −∂µφ∂tφ +
+
+1
+2
+
+gµtL ,
+
+11
+
+where Tµν and L are the energy-momentum tensor and the Lagrangian density for φ, respectively.
+For a space-time region between two constant time slices, conservation of the current Pµ implies
+that the time-averaged energy ﬂux at the inﬁnity is equal to the time-averaged energy ﬂux through
+the black hole horizon. The latter is equal to
+
+(cid:104)PµGµ(cid:105) = −(cid:104)(∂tφ + ω+∂φφ)∂tφ(cid:105) = ω(ω − mω+)|f |2 ,
+
+(6)
+
+where the gµν-term in the energy-momentum tensor dropped out because vectors G and H are
+perpendicular at the horizon. We see that the energy ﬂux is negative in the superradiant frequency
+range indicating that the wave gets ampliﬁed in this regime. The argument changes a bit when
+the frequency ω corresponds to the discrete spectrum so that the energy ﬂux at the inﬁnity
+necessarily vanishes. In this case the only way to reconcile the ﬂux (6) at the horizon with the
+energy conservation is for the frequency ω to acquire an imaginary part, so that the time-averaged
+energies on the two constant time slices are not equal any longer. For the real part of the frequency
+in the superradiant interval (3) the imaginary part should be positive indicating the presence of
+an instability.
+
+One important consequence of the instability condition (3) is that the superradiant levels are
+always in a (quasi)non-relativistic Keplerian regime. Indeed, in this regime the real part of the
+frequency follows the hydrogen spectrum
+
+(cid:18)
+
+ω¯n ≈ µa
+
+1 −
+
+(cid:19)
+
+,
+
+α2
+2¯n2
+
+(7)
+
+where ¯n = n + l + 1 is the principal quantum number, l is the orbital moment and α = µarg. For
+such a level the velocity of the particle is
+
+v ∼
+
+α
+¯n
+
+.
+
+(8)
+
+On the other hand, if we approximate the frequency in the superradiance condition (3) by the
+axion mass, ωn ≈ µa, the condition translates into a bound
+
+α (cid:46) mw+ =
+
+m
+2
+
+a
+r+
+
+,
+
+(9)
+
+where we made use of the expression (4) for w+. We see now that the velocity for superradiant
+states may be at most moderately relativistic,
+v (cid:46) 1
+2
+
+m
+¯n
+
+(10)
+
+1
+2
+
+<
+
+,
+
+a
+r+
+
+where the bound is saturated at the upper boundary of the superradiant range (3) for extremal
+black holes a = r+, at n = 0 and large l = m (cid:29) 1.
+
+In principle, this argument does not exclude the presence of a family of non-hydrogenic unstable
+bound states, however numerical results of [30] conﬁrm that all superradiant states are hydrogenic.
+
+We can also estimate the size of the axion cloud as
+
+rc ∼
+
+¯n2
+α2 rg ,
+
+12
+
+(11)
+
+which is always signiﬁcantly larger than the black hole gravitational radius, as a consequence of
+(3).
+
+These estimates provide the following physical picture of the superradiant axion cloud. The
+cloud is composed of a wave packet of the axion ﬁeld rotating on a Keplerian orbit around the
+black hole. This axion wave packet always has a tail that goes into the near-horizon ergosphere
+region and gets ampliﬁed there leading to the exponential growth of the number of axions in the
+packet.
+
+Given the complexity of the Kerr metric it is not surprising that a precise analytical expression
+for superradiant rates is unavailable (partial numerical results can be found in [30]). However,
+the above physical picture gives rise to two useful analytical approximations for the superradiant
+rates. Before introducing them let us recall that the massive Klein–Gordon equation in the Kerr
+background allows separation of variables [31] with the following simple ansatz for the scalar ﬁeld
+
+φ = e−iωt+imϕY (θ)R(r) + h.c. .
+
+The equation for Y (θ) is the standard equation for the ﬂat space spherical harmonics plus an extra
+term that can be neglected if (α/l)2 (cid:28) 1. As before, the superradiant condition (3) implies that
+(α/l)2 < 1/4, so we will always use this approximation (one can check its accuracy using known
+numerical results for oblate spheroidal harmonics, see e.g. [32]). Then the equation for the radial
+function R takes the form
+
+∆∂r(∆∂rR) + (cid:0)ω2(r2 + a2)2 − 4argrmω + a2m2 − ∆(µ2
+
+ar2 + a2ω2 + l(l + 1)(cid:1) R = 0 .
+
+(12)
+
+At the horizon, a non-singular solution of this equation satisﬁes [23]
+
+R = const · e−i(ω−mw+)r∗ as r → r+ ,
+
+where r∗ is the “tortoise” coordinate deﬁned through
+
+dr∗ = (r2 + a2)∆−1dr .
+
+2.1 Non-relativistic approximation α/l (cid:28) 1
+
+(13)
+
+(14)
+
+This approximation [18, 20], that initially was applied for superradiant scattering rather than the
+calculation of the instability rate [16], makes use of the separation of scales between the size of
+the cloud and the black hole horizon following from relations (9), (11). The radial equation is now
+solved in two diﬀerent regimes: the near and far horizon regions. In the region far from the black
+hole horizon, r (cid:29) rg, neglecting terms suppressed by (α/l)2, the solution takes the same form as
+the radial wave function of the Schroedinger equation with an 1/r potential,
+
+Rf ar(r) = (2kr)le−krU (l + 1 −
+
+α2
+rgk
+
+, 2(l + 1), 2kr) ,
+
+(15)
+
+where U is the conﬂuent hypergeometric function of the second kind, and k is the axion momentum,
+
+k2 = µ2
+
+a − ω2 .
+
+13
+
+(16)
+
+In the ordinary Schroedinger equation with an 1/r potential the spectrum of frequencies ω is
+determined by requiring the regularity of R at the origin. Instead, in the black hole case one has
+to impose the regularity of the ﬁeld at the horizon—the incoming wave boundary condition (13).
+One way to do this is to solve the radial equation (12) in the near horizon regime. After dropping
+terms of order α/l the solution in the near-horizon region, 0 < r − r+ (cid:28) (l/α)2rg, that satisﬁes
+the boundary condition (13) takes the form
+
+Rnear(r) =
+
+(cid:19)−iP
+
+(cid:18) r − r+
+r − r−
+
+2F1(−l, l + 1, 1 + 2iP,
+
+r − r−
+r+ − r−
+
+) ,
+
+(17)
+
+where
+
+P = 2r+
+
+ω − mw+
+r+ − r−
+
+and 2F1 is the Gauss’s hypergeometric function. At α/l (cid:28) 1 the ranges of validity for the two
+approximate solutions (15) and (17) have an overlap, so the approach in [18, 20] was to match the
+lowest terms of the Taylor expansion for Rf ar at small r with the asymptotic behavior of (17) at
+large r, with the following result for the imaginary part of the frequency,
+
+Γlmn = 2µα4l+4r+(mw+ − µa)Clmn ,
+
+(18)
+
+where
+
+Clmn =
+
+24l+2(2l + n + 1)!
+(l + n + 1)2l+4n!
+
+(cid:18)
+
+l!
+(2l)!(2l + 1)!
+
+(cid:19)2
+
+(cid:18)
+
+l
+(cid:89)
+
+(cid:18)
+
+1 −
+
+j2
+
+j=1
+
+(cid:19)
+
+a2
+r2
+g
+
++ 4r2
+
++(mw+ − µa)2
+
+(cid:19)
+
+.
+
+Note that the real part is well approximated by the hydrogen spectrum (7). These approximate
+formulaes exhibit many of the features of the full answer.
+In particular, the sign of Γlmn is
+determined by the sign of (mw+ − µa), in agreement with (3) within the accuracy of the non-
+relativistic approximation used to derive (18). Also, in the regime of applicability of (18), α/l (cid:28) 1,
+widths Γlmn drop exponentially as l increases. This implies that for a given value of α the fastest
+superradiant level is the one with a smallest possible l, i.e., the l = m level with m chosen in such
+a way that the superradiance condition (3) is satisﬁed.
+
+It will be important in what follows that as l grows the radial quantum number n for the
+fastest superradiant level grows as well. For instance, using (18) we ﬁnd that for l = m = 4 the
+instability rate for the n = 1 level is faster than for the n = 0 level,
+
+Γ440
+Γ441
+
+≈ 0.9.
+
+(19)
+
+The result (18) is often referred to as the “low mass” or small α approximation. However, as
+the above derivation shows, the approximate solutions (15) and (17) hold and have an overlapping
+regime of validity at large α as well, as long as α/l (cid:28) 1. It is true, though, that (18) may be
+quite inaccurate close to the superradiance boundary α (cid:46) w+, both due to the inaccuracy of the
+approximate solutions and because the overlap interval where both of the solutions hold shrinks.
+
+14
+
+Figure 5: Superradiance rates obtained using our semi-analytic method (solid lines), non-
+relativistic approximation (dashed lines) and WKB approximation (dotted line) for a near-
+extremal black hole, a/rg = 0.999. Diﬀerent colors correspond to superradiant levels with diﬀerent
+values of the angular quantum number l.
+
+To have better control of the precision and to improve on the latter deﬃciency of (18) we adopt
+the following semi-analytic procedure, which is similar to that in [33]. Instead of matching the
+leading terms in the asymptotic expansions of (15), (17) we numerically matched these functions
+and their ﬁrst derivatives at a point r∗ within the overlap region. To ﬁnd the optimal value for r∗
+we calculated the relative residuals after plugging Rf ar and Rnear in the original radial equation
+(12). We pick r∗ as the point where the two residuals are equal. We present our semianalytical
+results for the instability rates in Fig. 5 (solid lines) together with the instability rates given by
+(18) (dashed lines). Diﬀerent lines correspond to diﬀerent l = m levels, and we picked the radial
+quantum number n to maximize the superradiance level in each case (the dependence on n is very
+mild).
+
+These results were obtained for a near extremal black hole with a/rg = 0.999. The instability
+rate decreases very slowly with spin for small α, and the main eﬀect of reducing the spin is that
+the instability shuts down earlier, at αm = mw+(a) for the diﬀerent l = m levels, as follows from
+the superradiant condition (3). To illustrate this in Fig. 6 we present the superradiance rates for
+l = 1 level for several values of a/rg.
+
+We see that (18) perfectly agrees with our semi-analytic results at suﬃciently small α/l, but
+
+15
+
+l(cid:61)1l(cid:61)2l(cid:61)3l(cid:61)4l(cid:61)50.51.01.52.02.510(cid:45)1610(cid:45)1410(cid:45)1210(cid:45)1010(cid:45)810(cid:45)6Μa(cid:137)rgSuperradianceRateinunitsofrg(cid:45)1Figure 6: Superradiance rates obtained using our semi-analytic method (solid lines) for diﬀerent
+values of the black hole spin.
+
+they quickly start being diﬀerent indicating that the procedure of matching the leading terms of
+the asymptotic expansions that results in (18) is not very accurate. Of course, our semi-analytic
+results are also not good enough for precision calculations close to the superradiant boundary,
+α ∼ mw+, however, they agree quite well with numerical calculations in [30] (at least for l = 1, 2, 3
+presented in [30] ) and with the WKB results presented in the next subsection. In particular, the
+superradiance rate of [30] is maximum, Γ ≈ 1.5 · 10−7r−1
+g , at α ≈ 0.42 in a good agreement with
+our results. As we will see, many of the observational consequences of superradiance are not very
+sensitive to the exact values of the superradiance rates at α ∼ mw+, so this level of precision is
+enough for our purposes.
+
+2.2 WKB approximation α (cid:29) 1
+
+Another useful approximation for the superradiant rates [19], complementary to the slow velocity
+expansion above, is the WKB method that can be applied at α (cid:29) 1. We will closely follow the
+methodology of [19], however, our results disagree with [19] by an important factor of two in the
+expression for the tunneling exponent. Most likely, this factor was accidentally missed in [19] (this
+discrepancy was also pointed out in [34] without any derivation).
+
+In this approach, the tail of the wave function that propagates in the ergo-region, where su-
+
+16
+
+0.00.10.20.30.40.510(cid:45)1610(cid:45)1410(cid:45)1210(cid:45)1010(cid:45)810(cid:45)6Μa(cid:137)rgSuperradianceRateinunitsofrg(cid:45)1arg(cid:61)0.5arg(cid:61)0.6arg(cid:61)0.7arg(cid:61)0.8arg(cid:61)0.9arg(cid:61)0.999Figure 7: The shape of the radial Schroedinger potential for the eigenvalue problem in the rotating
+black hole background. Superradiant modes are localized in a potential well region created by
+the mass “mirror” from the spatial inﬁnity on the right, and by the centrifugal barrier from the
+ergo-region and horizon on the left.
+
+perradiant ampliﬁcation takes place, is calculated using the WKB approximation. This is just a
+classic tunneling calculation. Indeed, after switching to the tortoise coordinate (14) and introduc-
+ing Ψ = (r2 + a2)1/2R the radial equation (12) takes the form of the Schr¨odinger equation
+
+d2Ψ
+dr2
+∗
+
+− V Ψ = 0
+
+(20)
+
+with the potential
+
+V = −ω2 +
+
+4rgramω − a2m2
+(r2 + a2)2
+
++
+
+∆
+r2 + a2
+
+(cid:18)
+
+µ2
+a +
+
+l(l + 1) + k2a2
+r2 + a2
+
++
+
+3r2 − 4rgr + a2
+
+(r2 + a2)2 −
+
+3∆r2
+(r2 + a2)3
+
+(cid:19)
+
+(21)
+We include the (−ω2) term in the deﬁnition of the potential, because even if we were to separate
+it, there would be a residual dependence on ω. We present the qualitative shape of the potential
+V for a typical choice of parameters in Fig. 7. One can clearly see the potential well where the
+bound Keplerian orbits are localized and a barrier separating this region from the near-horizon
+region where superradiant ampliﬁcation takes place.
+
+Consequently, the axion wave function at the horizon r = r+ (corresponding to r∗ = −∞)
+is suppressed relative to the wave function in the vicinity of the Keplerian orbit by a tunneling
+exponent,
+
+|R(r+)| (cid:39) |R(rc)|e−I ,
+
+17
+
+Ergo-regionBarrierregionPotential WellExponentialgrowth regionPotentialr*⟵ Black Hole Horizon“Mirror” at r~1/µwhere the tunneling integral I is
+
+(cid:90) r∗(r2)
+
+√
+
+V =
+
+dr∗
+
+(cid:90) r2
+
+dr
+
+I =
+
+r∗(r1)
+
+r1
+
+√
+
+V (r2 + a2)
+∆
+
+,
+
+(22)
+
+with r1,2 being the boundaries of the clasically forbidden region. We will only follow the leading
+exponential dependence on e−I and do not aim at calculating the normalization prefactor in front
+of the exponent.
+
+To relate the tunneling exponent with the rate of superradiance instability let us consider again
+
+the energy ﬂow equation (6). Integrating it over the horizon we obtain
+
+dE
+dt
+
+= ω(mw+ − ω)
+
+(cid:90)
+
+horizon
+
+|Y (θ)R(r+)|2 ,
+
+(23)
+
+where E is the energy in the axion cloud. The energy is maximum in the Keplerian region, so that
+in the limit where we only keep track of the dependence on the exponent e−I we can write
+
+and, consequently, to rewrite (23) as
+
+E ∝ |R(rc)|2 (cid:39) e2I|R(r+)|2 ,
+
+dE
+dt
+
+= const · (mw+ − ω)e−2IE .
+
+In other words, the WKB approximation for the superradiance rate gives1
+
+Γ = γ(mw+ − ω)e−2I ,
+
+(24)
+
+(25)
+
+where the normalization prefactor is determined mainly by the spread of the wave function in the
+classically allowed region. We will limit ourself by calculating the exponential part Γ. We leave
+the technical details for the Appendix, and present only the ﬁnal result here. Namely, the ﬁnal
+answer for the tunneling integral in the extremal Kerr geometry takes the form
+
+I = π
+
+(cid:16)
+
+(cid:17)
+2α − (cid:112)2α(α − 1)
+
+,
+
+which translates in the following superradiant rate,
+
+ΓW KB ≈ 10−7r−1
+
+g e−2πα(2−
+
+√
+
+2) ≈ 10−7r−1
+
+g e−3.7α ,
+
+(26)
+
+(27)
+
+where we took the large α limit in (26) and chose the prefactor to match the low α results of
+section 2.1 (this value also agrees with that of [19] and [34]). As we already said, the exponent
+in (27) is larger than that in [19] by a factor of two. As explained in the Appendix, the rate (27)
+provides an upper envelope for superradiance rates at diﬀerent l in the large α limit. We have
+presented (27) by a dotted line in Fig. 5; it agrees reasonably well with the previous α/l (cid:28) 1
+results.
+
+1Note, that at this stage we still agree with [19].
+
+18
+
+3 Dynamics of superradiance
+
+Let us turn now to discussing the dynamical consequences of the superradiant instability. One
+important property of the rates calculated in section 2 is that the time-scale for the development
+of the instability is quite slow compared to the natural dynamical scale rg close to the black hole
+sr > 107rg. Consequently, in many cases non-linear eﬀects, both gravitational, and due
+horizon, Γ−1
+to axion self-interactions, become important in the regime where the system is still in the quasi-
+linear regime, so that non-linearities can be treated perturbatively. Then the dynamics of the
+axion cloud can be described by the following set of kinetic equations for the occupation numbers
+Ni for diﬀerent levels,
+
+dNi
+dt
+
+= ΓijNj + ΓijkNjNk + . . . .
+
+(28)
+
+This equation gets simpliﬁed in the quasilinear regime where we can truncate the expansion in
+the r.h.s. of (28), by keeping just a ﬁnite number of terms. Note that for simplicity, we drop
+Ni-independent terms in the r.h.s. of (28); those terms correspond to spontaneous emission.
+
+To avoid confusion, let us clarify the following. Throughout this paper we often use quantum
+terminology (occupation numbers, transition between levels, etc.) to describe the axionic cloud.
+This appears to be perfectly appropriate given that the size of the cloud is comparable to the
+Compton wavelength of the axion. On the other hand, occupation numbers for all dynamically
+relevant levels will always be exponentially large in what follows, ∼ 1070, so that all the dynamics
+can be accurately described by a classical ﬁeld theory. Of course, there is no contradiction here and
+both descriptions are correct. The very fact that we can use classical ﬁeld theory to describe the
+dynamics of axion particles in the cloud reﬂects its quantum mechanical origin. For instance, in
+the classical ﬁeld description instead of using occupation numbers Ni one can Fourier decompose
+classical ﬁeld into harmonics with diﬀerent frequencies and follow the (squared) amplitudes for
+diﬀerent harmonics. Given numerous analogies with atomic physics we ﬁnd the quantum language
+useful in many cases, but will also use the classical one, when more convenient.
+
+Coming back to the kinetic equations (28), at the linear level, the r.h.s. of (28) is determined
+
+by the superradiant rates presented in section 2. Namely,
+
+Γij = δijΓi ,
+
+(29)
+
+where Γi is the imaginary part of the frequency for the i-th level—positive for levels satisfying (3)
+and negative otherwise. There could be other model dependent sources of linear terms in (28).
+For instance, if an axion has an electromagnetic coupling
+
+Cα
+4πfa
+
+φ(cid:15)µνλρFµνFλρ ,
+
+(30)
+
+where C is an order one constant (for the QCD axion C = 4/3 in 4d grand uniﬁed theories), then
+in the presence of a magnetic ﬁeld axions will convert into photons with a rate [1]
+
+Γ ∼ 7 · 10−11yr−1
+
+(cid:18) 1016GeV
+fa
+
+(cid:19)2 (cid:16)
+
+µa
+6 · 10−10eV
+
+(cid:17) (cid:18) B
+
+(cid:19)2
+
+4 · 108G
+
+,
+
+(31)
+
+19
+
+where the reference values for the parameters are chosen to be those for the QCD axion, and the
+choice of a reference magnetic ﬁeld is motivated by the estimate (Eq. (75) of [35])
+
+B ∼ 4 × 108G
+
+(cid:19)−1/2
+
+(cid:18) M
+M(cid:12)
+
+(32)
+
+for the largest magnetic ﬁeld the accretion disc can support near the horizon of a black hole of
+mass M . It is evident from (31) that axion-photon conversion is too slow to be relevant for the
+dynamics of superradiance.
+
+To describe the development of the superradiant instability one needs to supplement (28) with
+equations for the time evolution of the black hole mass M and spin J. These depend on the
+environment of each individual black hole, but, in general, accretion in the absence of mergers or
+other violent events has a characteristic time scale whose lower bound is set by the Eddington
+time τE
+
+τE ≡
+
+σT
+4πGN mp
+
+≈ 4 · 108 yr .
+
+(33)
+
+The value of τE shows that the superradiant instability time, even though much shorter than the
+black hole infall time, is much faster than the evolution time scale for astrophysical black holes. As
+a result, for most of the discussion that follows we will ignore accretion, unless stated otherwise.
+For example, in section 4.5, we discuss a particular accretion model.
+
+Let us describe now the leading non-linear processes, which should be included in (28) to
+describe the development of the superradiant instability. The two sources of non-linearities are
+gravitational interactions of axions and non-linearities in the axion potential itself.
+
+3.1 Gravity wave emission
+
+The axion cloud may lose its energy and angular momentum by emitting gravitational waves.
+There are two major processes giving rise to graviton emission. The ﬁrst is analogous to photon
+emission from atoms — this is just the transition of axions from one level to another. The major
+diﬀerence in the present case is that the transition rates between populated levels get enhanced
+by their occupation numbers.
+
+The other process of graviton emission is less familiar. Unlike electrons in the atom, axions
+do not carry any conserved charge. Consequently, they can emit gravitational waves also through
+processes that do not conserve the axion number. In particular, one-graviton annihilation of two
+axions is possible at the same order of perturbation theory as the transition between diﬀerent levels,
+i.e., the corresponding amplitude is proportional to M −1
+P l . Of course, this process is kinematically
+forbidden in ﬂat space, where only two-graviton annihilation (with amplitude proportional to M −2
+P l )
+is compatible with energy and momentum conservation. However, the black hole gravitational
+ﬁeld breaks translational invariance, so that one-graviton annihilation is allowed for axions in the
+presence of a black hole. The closest analogue of this process in atomic physics is the one-photon
+annihilation of a positron with an atomic electron [36].
+
+This annihilation process is quite unconventional, because the graviton momentum is deter-
+mined by the axion mass kg ≈ 2µa and is parametrically larger than the momentum of axions in
+
+20
+
+the cloud ka ∼ (α/l)µa. In other words, unlike for conventional astrophysical sources of gravita-
+tional waves, the wavelength of an emitted radiation is not parametrically longer than the size of
+the source (even though the cloud is non-relativistic), and the standard quadrupole approximation
+does not apply.
+
+3.1.1 General formalism
+
+The calculation of the gravitational wave ﬂux due to both kind of processes is further complicated
+by the fact that the system is bound by gravity, and the axion cloud is not that far from the
+black hole horizon, where the gravitational ﬁeld is non-linear. However, these complications can
+be safely ignored for order of magnitude estimates, which are enough for our purposes. To perform
+the estimates it is convenient to switch to the classical ﬁeld theory description. Let us write the
+axion ﬁeld of the cloud in the form
+
+φ =
+
+(cid:88)
+
+ω
+
+e−iωtχ(ω, ϕ, r, θ) + h.c. ,
+
+(34)
+
+where the frequencies ω ran over diﬀerent bound levels in the black hole geometry. The related
+expansion of the scalar energy-momentum tensor takes the form
+
+Tµν =
+
+(cid:88)
+
+ω(cid:48)
+
+e−iω(cid:48)tτµν(ω(cid:48), ϕ, r, θ) + h.c. .
+
+(35)
+
+To estimate the gravitational wave ﬂux from the axion cloud we use the ﬂat space formula [37]
+for the gravitational wave power,
+
+where
+
+dP
+sin θdθdϕ
+
+=
+
+GN ω2
+π
+
+τ T T ∗
+ij
+
+(ω, k)τ T T
+
+ij (ω, k) ,
+
+(cid:90)
+
+τij(ω, k) ≡
+
+d3xτij(ω, x)e−ikx
+
+(36)
+
+(37)
+
+where x denotes the ﬂat space Descartes coordinates, |k| = ω, and the T T superscript stands for
+the projector on the transverse-traceless part,
+
+where
+
+τ T T
+ij ≡ (Pii(cid:48)Pjj(cid:48) −
+
+1
+2
+
+PijPi(cid:48)j(cid:48))τ T T
+
+i(cid:48)j(cid:48) ,
+
+Pij = δij −
+
+kikj
+k2
+
+.
+
+In this classical language the graviton emission due to axion transitions between levels correspond
+to terms in the harmonic expansion (35) of the energy-momentum tensor of the form
+
+e−i(ω−ω(cid:48))tχ(ω)χ∗(ω(cid:48)) + h.c. ,
+
+21
+
+where, for simplicity, we dropped all the derivatives appearing in the expression for Tµν. On the
+other hand, the annihilation processes correspond to terms of the form
+
+e−i(ω+ω(cid:48))tχ(ω)χ(ω(cid:48)) + h.c.
+
+To calculate the gravitational wave power, one needs to solve for the scalar ﬁeld harmonics χ(ω)
+in the black hole background and plug them into (36). This is similar to calculating the trajectory
+of a compact stellar mass object falling into a galactic mass black hole in the probe particle
+approximation, and using this trajectory as a source in the linearized Einstein equations to solve
+for the hij components of the metric, that determine the ﬂux of gravitational waves. In principle,
+the latter step should be done in the curved geometry—the ﬂat space approximation is just an
+estimate both for the overall rate and for the frequency proﬁle of the gravitational wave signal.
+For instance, for the annihilation signal from a single populated level with the frequency ω the ﬂat
+space expression (36) predicts the monochromatic gravitational wave line of frequency 2ω, while
+taking into account deviations from the ﬂat space would induce the broadening of the line due to
+gravitational redshift.
+
+However, given the separation of scales between the size of the axion cloud and the black hole
+size, we expect that by using the ﬂat space expression (36) we are making at most order one mistake
+in the overall rate, which is accurate enough for our purposes. For the same reason, the spectral
+distortions should be rather small. It is likely that one still needs to calculate more accurately
+the spectral shape of the signal (the waveform) to be able to observe it with gravitational wave
+detectors. This is a technically involved calculation, which is beyond the scope of the current
+paper. Note that in [38], where gravitational waveforms in the Kerr metric are calculated, the ﬂat
+space approximation gives quite accurate results.
+
+The other approximation we adopt to evaluate (36) is rather than solving for the eigenfunction
+χ(ω, ϕ, r, θ) in the full Kerr background we will just use the Newtonian approximation for the
+metric. Again, this is justiﬁed because the cloud is mainly localized relatively far from the black
+hole horizon. In this approximation the eigenfunctions χ(ω, ϕ, r, θ) are the familiar wave functions
+for the electron states in a hydrogen atom, and the evaluation of (36) becomes straightforward.
+Let us present here some representative results of this calculation that we will use later in section 4.
+
+3.1.2 Axion transitions between levels in a black hole atom
+
+Let us start with the more familiar case of graviton emission due to axion transitions between
+levels. As we will see in section 4 an important source of potentially observable gravitational
+radiation is related to axion transitions between levels with equal angular quantum numbers l and
+m, but with diﬀerent radial quantum numbers n. This process will be relevant for suﬃciently
+high l, such that the fastest superradiant level has n > 0. For instance, as we saw in section 2.1,
+for l = m = 4 level the n = 1 superradiant level is faster than n = 0, Eq.(19). For the transition
+between these two levels (36) gives
+
+dP
+sin θdθdϕ
+
+(6g → 5g) ≈ N1N0
+
+22334105GN α12
+1122πr4
+g
+
+sin4 θ + · · · ≈ 3 · 10−10N1N0
+
+GN α12
+r4
+g
+
+sin4 θ ,
+
+(38)
+
+22
+
+where N1 and N0 are the occupation numbers for the two levels and dots stand for higher order
+terms in the small α expansion (we checked that they can be neglected in the superradiant regime
+α (cid:46) 2).
+
+For transitions between levels the wavelength of an emitted graviton is much longer than the
+size of the system, so the conventional quadrupole formulae for a graviton emission should also
+be a good approximation. As a cross-check of our calculation let us compare result (38) with the
+quadrupole formula. For the transition rate between two levels the latter gives [37]
+
+dN1
+dt
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)quadr
+
+= N1N0
+
+2GN ∆ω5
+5
+
+IijIij ,
+
+where ∆ω is the frequency splitting, which in our case is equal to
+
+∆ω =
+
+µaα2
+2
+
+(cid:18) 1
+25
+
+−
+
+1
+36
+
+(cid:19)
+
+,
+
+and Iij is the transition mass quadrupole moment. For the estimate we take
+
+IijIij ∼ µ2
+
+ar4
+c ,
+
+where the size of the cloud rc is estimated by (11). Altogether, this gives
+
+dN1
+dt
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)quadr
+
+(6g → 5g) ∼ 8 · 10−7N1N0
+
+GN α9
+r3
+g
+
+.
+
+On the other hand, from (38) we get
+
+dN1
+dt
+
+(6g → 5g) =
+
+(cid:82)
+angles dP
+∆w
+
+≈ 3 · 10−7N1N0
+
+GN α9
+r3
+g
+
+(39)
+
+(40)
+
+(41)
+
+(42)
+
+in a perfect agreement with (41).
+
+Proceeding as above it is straightforward to calculate other transition rates. For instance,
+for transitions from the fastest (n = 0) l = 2 superradiant level to the fastest (also n = 0)
+l = 1 superradiant level one gets (for simplicity, we present only the total power integrated over
+directions)
+
+P (3d → 2p) ≈ N1N0
+
+5717 · 28GN α14
+3551173r4
+g
+
+≈ 4 · 10−7N1N0
+
+GN α14
+r4
+g
+
+.
+
+(43)
+
+This rate is suppressed by a higher power of α, because the quadrupole transition between these
+two levels is forbidden.
+
+3.1.3 Axion annihilations
+
+We see that for estimating the transition rates one can use the standard multipole formulae. As
+we said, this is no longer the case for annihilations, where the wavelength of an emitted graviton
+is shorter than the size of the cloud. In this case the suppression for the emission rate is related to
+
+23
+
+Figure 8: Total annihilation rates in units of r−1
+superradiant levels with l = 1, 2, 3.
+
+g
+
+for Mcloud
+MBH
+
+= 10−4 as a function of α/l for the
+
+the decoupling of high momentum modes—the Fourier transform in (37) involves convolution of
+the slowly varying energy-momentum tensor of the axion cloud with a rapidly oscillating exponent.
+A direct calculation gives the following result for the annihilation rate at the 2p level, the fastest
+superradiant level,
+
+dP
+sin θdθdϕ
+
+(2 × 2p → graviton) ≈ N 2 9πGN α18
+
+226r4
+g
+
+(35 + 28 cos 2θ + cos 4θ) ,
+
+(44)
+
+where we again expanded the full answer at small α and N is the occupation number. Note
+that, unlike for transitions, the corrections from higher order terms in α change the answer for
+the annihilation rate by a factor of order one close to the upper boundary of the superradiant
+regime (3) (α ∼ 1/2), however this level of precision is enough for our estimates. We see that the
+suppression for the annihilation rate at small α is much stronger than for transitions.
+
+For higher l levels the suppression at small α becomes even stronger, because the multipole
+number of the emitted graviton grows with l. For instance, the annihilation rate for the 3d level
+
+24
+
+0.300.350.400.450.5010(cid:45)1710(cid:45)1610(cid:45)1510(cid:45)14Μa(cid:180)rglAnnihihilationrateinunitsofrg(cid:45)1forMcloudMBH(cid:61)10(cid:45)4l(cid:61)m(cid:61)3l(cid:61)m(cid:61)2l(cid:61)m(cid:61)1scales as α20. Still, given that the power of α is already very high even for the p-level annihilation
+and the suppression in the annihilation rate is determined by how non-relativistic axions in the
+cloud are, one may expect the annihilation rates for diﬀerent levels to be comparable at equal
+values of the axion velocity, or, equivalently, at equal values of α/l. To illustrate that this is
+indeed the case, we present in Fig. 8 the annihilation rates for the ﬁrst three superradiant levels,
+l = 1, 2, 3, in units of rg for a cloud mass of 10−4 M black hole as a function of α/l. We see that they
+indeed agree within an order of magnitude.
+
+3.2 Axion non-linearities
+
+Let us turn now to another important source of nonlinear terms in (28)—self-interactions of the
+axion ﬁeld itself. As we discussed, the superradiant cloud is always close to be non-relativistic,
+so let us ﬁrst discuss the self-interaction eﬀects in the non-relativistic approximation.
+In the
+non-relativistic limit, the axion ﬁeld takes the form
+
+φ =
+
+√
+
+1
+2µa
+
+(cid:0)e−iµatψ + eiµatψ∗(cid:1) ,
+
+(45)
+
+where the characteristic scales for space and time variations of the function ψ are much longer
+than µ−1
+a . Then we plug the ansatz (45) in the axion action and drop all rapidly oscillating terms.
+As the result we obtain the following eﬀective action for ψ,
+
+(cid:90)
+
+d4x
+
+Snr =
+
+(cid:18)
+
+iψ∗∂tψ −
+
+1
+2µa
+
+∂iψ∂iψ∗ − µaΦψ∗ψ +
+
+(ψ∗ψ)2
+
+(cid:19)
+
+,
+
+1
+16f 2
+a
+
+(46)
+
+where Φ is the Newtonian gravitational potential of the black hole, and we kept only the leading
+non-linear term from the axion potential. If we also drop the quartic self-interaction term in (46),
+then the equation following from (46) is the conventional Schroedinger equation in the external
+gravitational ﬁeld. As before, the superradiant instability can be thought of as coming from
+an unconventional boundary condition at the origin. With the quartic term taken into account,
+the axion action (46) leads to the non-linear Gross–Pitaevskii equation, well-known in condensed
+matter physics to describe the dynamics of an interacting BEC (see, e.g., [39] for an introduction).
+The sign of the interaction term in (46) corresponds to an attractive interaction between axions.
+The black hole gravitational potential plays the role of the BEC trap.
+
+Note, that as compared to gravity, axion self-interactions give rise to higher-order non-linearities
+(quartic, rather than cubic), however, they are suppressed by the scale fa, which can be signiﬁ-
+cantly lower than MP l.
+
+Let us describe the major consequences of these non-linearities. We postpone the systematic
+discussion of how superradiant instability develops till the next section 4, but it is intuitively clear
+that typically the axion ﬁeld in the cloud is dominated by a single harmonic in the expansion
+(34)—the one corresponding to the fastest available superradiant level. This is especially natural
+to expect at small and moderately large values of α, when superradiant levels are very sparse. So
+let’s ﬁrst consider how non-linearities aﬀect a cloud composed of a single superradiant level.
+
+25
+
+3.2.1 Bosenova
+
+As the number of axions in the cloud increases, the attractive force between axions becomes more
+and more important and at some point the shape of the cloud changes signiﬁcantly as compared
+to the one corresponding to the unperturbed hydrogen wave functions. We can estimate when
+this happens by equating the potential energy of axions in the cloud to the self-interaction energy,
+
+α
+r
+
+∼
+
+ψ∗ψ
+8f 2
+a
+
+.
+
+(47)
+
+By integrating (47) over the volume we obtain that self-interaction eﬀects become important in
+determining the shape of the cloud when
+
+N (cid:38) 16παf 2
+
+a r2
+
+c ∼ 16π
+
+l4
+a r2
+α3 f 2
+g ,
+
+where N is the number of axions. Here we made use of (11) for the size of the cloud, and set
+¯n ∼ l. It is more convenient to write this bound as a condition on the mass Ma of the axion cloud,
+
+Ma
+MBH
+
+(cid:38) 2
+
+l4
+α2
+
+f 2
+a
+M 2
+P l
+
+.
+
+(48)
+
+We see that for typical values of the parameters we are interested in, fa ∼ MGU T , non-linearities
+start playing an important role in determining the shape of the cloud quite early—when the cloud
+constitutes only 10−4 ÷ 10−3 of the black hole mass, and even earlier if the axion scale fa is
+signiﬁcantly below the GUT scale.
+
+As the cloud grows and its size is close to saturating (48), the shape of the cloud is deformed
+and is no longer determined by the hydrogen wave functions. However, a much more dramatic
+eﬀect happens as the size of the cloud keeps growing. The eﬀect was experimentally observed
+in trapped BEC’s with attractive interactions and is known under the name “Bosenova”. Above
+some critical mass of the cloud the gradient energy of the axion ﬁeld (“quantum pressure”) cannot
+compete with the attractive force due to self-interactions and the cloud collapses. Indeed, it follows
+from (46) that the energy of the static cloud has the following parametric dependence on its size
+r,
+
+V (R) (cid:39) N
+
+l(l + 1) + 1
+2µar2
+
+− N
+
+α
+r
+
++
+
+N 2
+32πf 2
+
+a r3 .
+
+(49)
+
+At small N this energy has a minimum corresponding to a (meta)stable cloud, however, at large
+N the last term in (49) dominates over the repulsion due to the quantum pressure term, and the
+cloud collapses.
+
+3.2.2 Shutdown of superradiance due to level mixing
+
+Yet another important consequence of non-linearities is that they may stop further development
+of superradiance. To see how, let us ﬁrst consider the Press–Teukolsky “black hole bomb”—a
+rotating black hole surrounded by a spherical mirror. As we discussed in the Introduction, this
+
+26
+
+system provides the simplest example of a superradiant instability—a single photon introduced
+inside the mirror and satisfying the superradiance condition (3) bounces between the mirror and
+the horizon and gets ampliﬁed in the ergo-region. Now imagine that the mirror has a defect and
+does not possess a perfect rotational symmetry around the axis of black hole rotation. Then, when
+scattering oﬀ the mirror, some of the photons satisfying the superradiant condition (3) change
+their quantum numbers. As a result they may exit the superradiant regime and be absorbed at
+the horizon. If the defect is substantial enough this may dump the superradiant instability.
+
+Coming back to axion superradiance, as a consequence of self-interactions the axion cloud itself
+acts as a defect and may dump the further development of the instability when it becomes large
+enough. To analyze this at a more quantitative level, let us write the axion wave function in the
+form
+
+ψ = ψ0 + δψ ,
+where ψ0 ∝ e−i(ω0t−m0ϕ) is the ﬁeld of the axions populating the most occupied level, and δψ
+is a perturbation. We assume that the time scale for the growth of the cloud is much longer
+than the oscillation period for ψ and consider the dynamics at scales short compared to the
+instability time—under these assumptions ω0 can be taken real. Then the linearized equation for
+the perturbation δψ has the following form,
+
+i∂tδψ = −
+
+∂2
+i δψ
+2µa
+
++ µaΦδψ −
+
+1
+8f 2
+a
+
+(cid:0)2ψ∗
+
+0ψ0δψ + ψ2
+
+0δψ∗(cid:1) .
+
+(50)
+
+The interesting feature of this equation is that it mixes ψ and ψ∗; this property is typical for BEC
+perturbations and gives rise to the notion of Bogoliubov’s quasiparticles. Namely, the solution to
+(50) mixes postive and negative frequency components,
+
+δψ = e−i(ω0t−m0ϕ) (cid:0)u(r, θ)e−i(δωt−δmϕ) − v∗(r, θ)ei(δωt−δmϕ)(cid:1) .
+
+(51)
+
+In the next section we will be interested in a situation, when the unperturbed cloud has parameters
+very close to the boundary of the superradiant region, ω0 = m0w+ and the perturbation δψ
+corresponds to the fastest available superradiant level, which is l = m = m0 + 1. This same
+reasoning applies for the levels with m higher than m0 + 1. The ﬁrst term in (51) would give rise
+to such a perturbation, however, we see that as a result of the interaction with the background
+BEC, the perturbation has also an admixture of the non-superradiant m = m0 − 1 modes. Of such
+modes the one with the fastest damping rate also has l = m0 − 1, and as far as we can tell, there
+is no reason that would forbid an order one overlap of the function v with the l = m = m0 − 1
+mode.
+
+To see whether the perturbation (51) is superradiant or dumped, let us proceed as we did
+before in the derivation of the time averaged energy ﬂux through the black hole horizon, (6). The
+axion ﬁeld has now three diﬀerent harmonics with frequencies ω0, ω0 ± δω. However, only the
+latter two contribute to the ﬂux, because the ﬁrst one saturates the superradiance condition (and
+all cross-terms vanish as a result of time-averaging). As a result, the ﬂux takes the following form
+
+(cid:104)PµGµ(cid:105) = ω1(ω1 − (m0 + 1)w+)|uh|2 + ω2(ω2 − (m0 − 1)w+)|vh|2 ,
+
+(52)
+
+27
+
+where ω1,2 = µa + ω0 ± δω, and uh and vh are the values of the functions u and v at the black
+hole horizon. For our choice of parameters, the u-term in (52) gives rise to the energy ﬂux from
+the black hole, while the v-term gives rise to the ﬂux into the black hole. To deduce the direction
+of the net energy ﬂux, let us recall that derivation of the WKB formula (25) implies, that the
+functions uh, vh at the horizon are related to their values uc, vc at the location of the cloud as,
+
+|uh|2
+|vh|2 ∼
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+Γ1
+Γ2
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+|uc|2
+|vc|2 ,
+
+where Γ1 and Γ2 are superradiance and dumping rates for the two levels.
+In turn, the ratio
+uc/vc is determined by the relative strength of the non-holomorphic in δψ term in the perturbed
+Gross–Pitayevskii equation (50),
+
+vc
+uc
+
+∼
+
+ψ2
+0
+a µaΦ
+
+8f 2
+
+∼
+
+N
+a r2
+8αf 2
+c
+
+.
+
+Combining these two relations together, we obtain that the perturbation δψ is superradiant if the
+number of axions in the cloud is smaller than
+
+N (cid:46)
+
+1/2
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+Γ1
+Γ2
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+16παf 2
+
+a r2
+c .
+
+As in (48) it is convenient to rewrite this condition as a bound on the fractional mass of the axion
+cloud,
+
+Ma
+MBH
+
+(cid:46)
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+Γ1
+Γ2
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+1/2
+
+2
+
+l4
+α2
+
+f 2
+a
+M 2
+P l
+
+.
+
+(53)
+
+To estimate the ratio of rates in (53) we can use (18). In Fig. 9 we plot the result for the ﬁrst
+few values of m0 as a function of a/rg. We see, that for a broad range of a/rg this ratio changes
+between ∼ 10−12 and ∼ 10−9. Note that for a/rg close to one the non-relativistic approximation is
+not accurate for the l = m0 − 1 level. Comparing with the numerical results of [30] for m0 = 1, 2
+suggests that the ratio |Γ1/Γ2| is actually close to 10−9 at a/rg close to one, rather than to 10−8
+as shown in Fig. 9.
+
+By comparing (53) and (48), we conclude that a large occupation number for one of the
+superradiant levels may indeed strongly inhibit the development of superradiance for other levels
+even in the regime when non-linearities are still irrelevant for the shape of the cloud.
+
+Importantly, this does not happen for the most occupied level itself—this corresponds to
+considering δw = δm = 0 in (51). The derivation of the horizon ﬂux (6) did not assume that
+the ﬁeld is linear, so that as soon as the ﬁeld is well approximated by a single exponent ψ0 ∝
+e−i(ω0t−m0ϕ) the superradiance will continue even in the non-linear regime.
+
+It is important for this argument that the ansatz ψ0 ∝ e−i(ω0t−m0ϕ) is a consistent solution
+of the Gross–Pitaevskii equation at the non-linear level. This is no longer true if one considers
+the full scalar equation including all relativistic corrections—the higher harmonics get generated.
+However, we do not expect those to change the conclusion. As shown in section 3.1, relativistic
+processes are strongly suppressed for superradiant levels. Still, this point deserves further study.
+
+28
+
+Figure 9: Ratios of the superradiance rate for the (l + 1) level to the absorption rate for (l − 1)
+level if the l level has a vanishing imaginary part for l = 1, 2, 3.
+
+Note, that the eﬀects discussed so far—deformation of the shape of the cloud and shutdown
+of superradiance due to level mixing—in principle could be caused by gravitational backreaction
+of the cloud as well. We did not discuss them in section 3.1, because the shape deformation is
+always small as soon as Ma (cid:28) MBH, and the level mixing is absent in the non-relativistic limit
+when the density of axions ρa ≈ µaψ∗ψ does not depend on the azimuthal angle ϕ, as the cloud
+is dominated by a single level. Consequently, these gravitational eﬀects are likely to be always
+subdominant with respect to those caused by axion self-interactions.
+
+Conversely, axion self-interactions may cause eﬀects similar to those discussed in section 3.1,
+annihilations and elastic scatterings of axions. The leading annihilation process is annihilation
+of three axions from the cloud into one axion in the continuum. Given that the outgoing axion
+has energy of order 3µa, in the leading approximation it can be considered as massless, and the
+calculation of the emission rate can be done similar to the graviton case. The analogue of (36) for
+three axion annihilation in the massless approximation reads
+
+dP
+sin θdθdϕ
+
+= 2ω2|j(ω, k)|2 ,
+
+(54)
+
+where
+
+j(ω, k) ≡
+
+(cid:90)
+
+1
+4π
+
+µ2
+a
+6f 2
+a
+
+d3xφ3(ω, x)e−ikx .
+
+29
+
+0.40.50.60.70.80.91.010(cid:45)1310(cid:45)1210(cid:45)1110(cid:45)1010(cid:45)9BlackHoleSpina(cid:144)rg(cid:200)(cid:71)m(cid:43)1(cid:71)m(cid:45)1(cid:200)l(cid:61)m(cid:61)3l(cid:61)m(cid:61)2l(cid:61)m(cid:61)1Then a straightforward calculation gives the following result for the annihilation of three axions
+from the l = m = 1 level into a single unbound axion,
+
+dP
+sin θdθdϕ
+
+(3 × 1p → continuum) ≈ N 3
+
+210α23
+g(4 + α2)10 sin6 θ .
+
+310f 4
+
+a π3r6
+
+(55)
+
+To compare the eﬃciency of this process to the one graviton annihilation (44), let us integrate
+over the angles in both cases to calculate the total emitted power and take the ratio. We get
+
+P (3 × 1p → continuum)
+P (2 × 1p → graviton)
+
+≈ 10−2α4 Ma
+MBH
+
+M 4
+P l
+f 4
+a
+
+,
+
+(56)
+
+so that self-interactions dominate when the size of the cloud is not too small, however, as the cloud
+decreases, the two axion annihilation into gravitons takes over. For instance, it will typically be
+more important when the cloud size approaches the value in (53).
+
+Just as in the case of graviton emission one may look for the processes that conserve axion
+number and as a result may be less suppressed by powers of the small axion velocity in the cloud.
+An obvious candidate process is an elastic two-to-two scattering of axions. However, it appears
+likely that such processes are not important. The reason is that for the two-to-two scattering to
+be unsuppressed, three of the participating axions should correspond to highly occupied levels.
+As we will discuss in section 4, typically at any given moment of time only few of the levels are
+signiﬁcantly occupied, and usually there is one which dominates the cloud. Then the most likely
+candidate for the scattering process is a scattering when two axions from the most populated level
+scatter, and one goes down to another highly populated level, while the remaining axion ﬂies out
+in the continuum. For this scattering to be compatible with the energy conservation one needs
+
+2
+¯n2
+1
+
+<
+
+1
+¯n2
+2
+
+,
+
+where n1 and n2 are the principal quantum numbers of the high- and low-lying levels, respectively.
+The discussion of the superradiance development in the next section implies that the situation
+where two levels satisfying this condition simultaneously have large occupation numbers is hardly
+possible.
+
+Note that throughout most of the discussion of axion self-interactions and gravitational wave
+emission we treated axions in the cloud as free particles with hydrogen wave-functions, while
+strictly speaking the elementary excitations of the axion BEC are Bogoliubov quasiparticles (51).
+The free particle approximation is accurate when the mass of the cloud is small, so that the
+eﬀects of self-interactions are weak, but may be misleading when the mass of the cloud is close
+to saturating the bound (48). Unfortunately, it’s hard to improve on this approximation without
+going into numerical simulations of the cloud, which are beyond the scope of our paper. We
+proceed under assumption that the free particle approximation is a reliable guide for an order
+of magnitude estimates at the masses close to saturating the bound (48) as well. The level
+mixing phenomenon described above provides an important example of a situation, when the free
+particle approximation is not adequate even at very small masses of the cloud. There is a clear
+physical reason why this happens—some of the levels have damping rates orders of magnitude
+
+30
+
+faster than the population rates for the relevant superradiant levels, so even a tiny level mixing
+qualitatively changes the dynamics. Fortunately, this eﬀect is straightforward to take into account
+perturbatively, as we did.
+
+To summarize, this discussion implies that self-interaction eﬀects cause a strong inﬂuence on
+the phenomenology of superradiance. The proper taking into account of these eﬀects is one of the
+major challenges for obtaining an accurate quantitative description of superradiance development.
+The estimates presented here are far from being a complete accurate treatment and it appears
+likely that numerical simulations are required to really solve the problem. It is worth mentioning
+that level mixing can also be caused by the accretion disk of the black hole or a massive object
+orbiting the black hole but we have already shown in [1] that these can be safely ignored. We
+proceed now with estimating the possible observational signals of superradiance.
+
+4 Observational signatures
+
+Now that we are well equipped with the details of how superradiance works, let us put them
+together and develop an intuition about the way superradiance develops in realistic environments
+and about the observational signatures we may expect from this process under various circum-
+stances. The full treatment of the set of kinetic equations describing superradiance (28), (70), (72)
+appears to be quite challenging, given that a large number of competing processes with drastically
+varying time scales is involved. Our strategy will be to start with a highly idealized situation
+including a minimal number of dynamical ingredients and then keep adding more processes to get
+closer to a realistic description. We already presented the list of possible observational signatures
+of superradiance in the Introduction. Clearly, following the above strategy the very ﬁrst signa-
+ture to discuss is the absence of rapidly rotating black holes of size matching the axion Compton
+wavelength—the black hole spin-down is the most direct consequence of superradiance.
+
+4.1 Black hole Regge trajectories
+
+To get a rough idea of the bound on the axion mass that could come from black hole spin
+measurements, we present in Fig. 2 regions in the black hole mass vs axion mass plane where the
+superradiance timescale for a maximally rotating black hole is shorter than the age of the Universe
+and the Eddington accretion time. We used the superradiance rates of section 2 to produce this
+plot. For superradiance to have a non-negligible eﬀect on the black hole spin the process should
+last for many e-foldings for the produced axions to carry away a noticeable fraction of the black
+hole spin. To estimate the required number of e-foldings, note that, approximately,
+
+MBH
+µa
+
+=
+
+MBHrg
+α
+
+∼ 1076
+
+(cid:19)2
+
+(cid:18) MBH
+M(cid:12)
+
+(57)
+
+of axions need to be produced for their total mass (spin) to be of order the black hole mass (spin).
+This requires ∼ 102 e-foldings of superradiance; we took this factor into account in Fig. 2, by
+presenting the region where the age of the Universe (or Eddington accretion) time is longer than
+hundred superradiance times. We see from the plot that, as the black hole mass grows, the size
+
+31
+
+of the interval in axion mass which the black hole can in principle probe shrinks, because the
+superradiance time gets longer.
+
+This plot is useful as a zeroth order estimate, but cannot be used to deduce limits on axions
+from data on existing black holes, since the black holes being observed do not all have spins close
+to the maximum. Instead, we need to know the regions in the black hole “Regge” plot, the spin vs
+mass plane for black holes, where we do not expect to ﬁnd black holes if an axion with a certain
+mass exists, as shown in Fig. 3. The intricate structure of these plots is a manifestation of level
+quantization in the superradiant gravitational atom, and their underlying physics is explained in
+what follows.
+
+To start with, let us ignore accretion and consider a black hole that starts oﬀ as maximally
+rotating. This approximation should be physically relevant for stellar mass black holes produced
+as a result of a fast catastrophic event, such as the supernovae explosion. Deviations from spherical
+and axial symmetry are believed to be crucial for supernovae explosions, so there should be a lot
+of angular momentum available when the black hole forms, and one may expect high initial values
+for the black hole spin—as soon as the supernovae core gets rid of all the angular momentum
+above the extremal value it collapses and forms a rapidly rotating black hole. This expectation
+seems to be supported by observations—for instance, the high value of the spin-to-mass ratio
+a
+−0.07 deduced [40] for the black hole primary in the extragalactic X-ray binary LMC X-1
+rg
+is hard to reconcile with the young age (∼ 5 · 106 yr) of the system, if the spin were not natal.
+
+≈ 0.92+0.05
+
+For concreteness, we assume that the parameter α for the black hole is small, α (cid:46) 1/2, so
+initially the fastest superradiant level is the 2p level with l = m = 1. Then, initially one can
+ignore all the levels apart from the 2p superradiant level. It is straightforward to generalize all the
+discussion below to smaller initial values of the black hole spin and larger values of α. The black
+hole will start to lose its spin rapidly by populating this level. The time scale for this process can
+be really fast—from section 2 we know that the superradiance rate can be as fast as 107r−1
+g , which
+corresponds to 102 seconds for a two solar mass black hole. However, there is a critical value of the
+black hole spin a1(α)/rg, at which the superradiant condition (3) ceases to hold for the l = m = 1
+level, so the width of this level becomes zero and the spin-down process terminates.
+
+Let us for a moment consider the case where the axion self-interactions are absent, as if we
+were dealing with a free massive ﬁeld rather than a (pseudo)Nambu-Goldstone boson. Then at
+this point superradiance would continue by populating the second superradiant level l = m = 2
+(3d) at a much longer time scale. Note, however, that for many e-foldings of superradiance the
+black hole spin would remain approximately constant and equal to a1(α)/rg. Indeed, if the spin
+would signiﬁcantly drop below this value the frequency of the 2p-level would acquire a negative
+imaginary part, so that the black hole would start absorbing axions from the 2p-level and spinning
+up back with a rate much faster than the population rate for the 3d level. Instead, the spin stays
+practically constant close to a1(α)/rg as the black hole populates the 3d-level while being slowly
+fed by axions from the 2p-level. When the occupation number for the latter level N2p drops below
+Γ3d
+|Γ2p| N3d the spin-up rate due to 2p-level cannot compete with the spin-down rate due to 2d-level
+and the black hole spin further drops down till the value a2(α)/rg, where the superradiance rate
+for the 3d-level turns zero and the story repeats this time involving the l = m = 3 (4f ) level.
+
+Of course, from section 3 we know that this story cannot be an accurate description of what
+actually happens—non-linearities related to the axion self-interactions and due to gravity cannot
+
+32
+
+be neglected in a realistic description of superradiance. However, the above simpliﬁed example
+correctly captures the major important feature—during the spin-down black hole spin tends to
+evolve rapidly till it reaches the line ai(α)/rg in the Regge plane where one of the superradiant
+levels changes the sign (“Regge trajectory”), where it can get stuck for a quite long period of time.
+In fact, as we will see momentarily, non-linear eﬀects make this behavior even more pronounced.
+Indeed, as we discussed in section 3.2, even relatively small amount of axions populating one
+superradiant level may shut down the instability for the next level. For instance, in the above
+example, when the black hole reaches the ﬁrst Regge trajectory a1(α)/rg the 3d level does not
+start being populated until a large enough number of axions dissipate from the 2p level, so that
+its mass drops below the bound in (53).
+
+We discussed two processes that reduce the number of axions in the superradiant cloud, anni-
+hilations into gravitons and annihilations into unbound axions due to self-interactions. The latter
+process is more eﬃcient at large occupation numbers. However, the annihilation rate drops down
+as the number of axions decreases and, when the cloud mass approaches the bound (53), the
+graviton annihilation, which involves only two axions, wins, as seen from (56). The total duration
+of the annihilation period before superradiance restarts, is dominated by the latest stages of the
+process. We can estimate the duration of this period by using the annihilation rates calculated
+in section 3.1. The occupation number of axions dissipating from the cloud through annihilations
+into gravitons satisﬁes the following equation
+
+dN
+dt
+
+(2 × axion → graviton) ≡ −ΓannN 2 ,
+
+(58)
+
+where the coeﬃcient Γann can be deduced by integrating the annihilation rates, such as (44), over
+the angles. By solving (58) we obtain that the occupation number evolves in time as
+
+N (t) =
+
+N (0)
+1 + ΓannN (0)t
+
+≈
+
+1
+Γannt
+
+,
+
+(59)
+
+where at the last step we took the late time asymptotics. By using (53) we ﬁnd that the anni-
+hilation time needed to clean the system before superradiance can continue to populate the next
+level is
+
+t ∼
+
+α2µa
+2l4MBHΓann
+
+M 2
+P l
+f 2
+a
+
+1/2
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+Γ2
+Γ1
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+≡ τ (α)
+
+(cid:18) MBH
+2M(cid:12)
+
+(cid:19) (cid:18)M 2
+P l
+f 2
+a
+
+/104
+
+(cid:19) (cid:18)(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+Γ2
+Γ1
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)
+
+(cid:19)1/2
+
+/10−10
+
+,
+
+(60)
+
+where the last step is merely the deﬁnition of the normalized annihilation time τ (α). In Fig. 10 we
+present τ (α) for the ﬁrst three levels. We see that for stellar mass black holes, depending on the
+parameters, there is enough time for annihilations to complete on one or two Regge trajectories.
+The above discussion gives rise to the following picture of the black hole evolution under the
+inﬂuence of superradiance. An initially fastly rotating black rapidly loses its spin and approaches
+the closest Regge trajectory ai(α)/rg. Then, for a long time the black hole stays at this trajectory
+while axions in the cloud keep annihilating. When the cloud mass drops below the critical value
+(53) the superradiance becomes operative again and the black hole rapidly travels to the next
+Regge trajectory. Consequently, in the region of the Regge plane aﬀected by superradiance masses
+and spins of observed black holes should follow quantized trajectories.
+
+33
+
+Figure 10: The time required for the axion cloud around a 2M(cid:12) black hole to dissipate such that
+the next superradiant level can start being populated for clouds with l = 1, 2, 3, 4.
+
+During transitions between Regge trajectories another non-linear process discussed in sec-
+tion 3.2—bosenova—becomes important. As the cloud mass during the transition grows above
+(48) the cloud becomes unstable as a result of the attractive axion self-interactions and collapses.
+The detailed analysis of this process requires numerical simulations, which are beyond our goals
+in this paper. However, the most likely outcome seems to be that order one fraction of the cloud
+gets absorbed by the black hole and order one becomes relativistic and escapes at the time scale
+set by the size of the black hole. Condition (3) implies that to complete the transition to the next
+Regge trajectory a black hole needs to release up to a few percent of its mass into axions. Conse-
+quently, each transition proceeds through a sequence of tens to hundreds of Bosenova explosions
+for fa ∼ MGU T . As discussed later, these explosions may give rise to the observable gravitational
+wave signal for supermassive black holes and perhaps to the gamma ray signal for the QCD axion.
+It is straightforward now to add accretion into this picture, at least at the qualitative level.
+Under the inﬂuence of accretion, the black hole mass and spin will still stay on the Regge trajectory,
+since the superradiance rate for the corresponding level is much faster than the accretion rate
+away from the trajectory. Indeed, if accretion brings the black hole above the Regge trajectory,
+the level acquires positive imaginary part and spins the black hole down back onto the trajectory.
+Conversely, if as a result of accretion the black hole deviates below the Regge trajectory, the
+imaginary part becomes negative and the black hole starts absorbing axions from the cloud to
+return on the trajectory.
+
+34
+
+0.00.51.01.52.01001041061081010Μa(cid:180)rgTimeinyearstodepopulatealevelforMBH(cid:61)2(cid:180)Msolarl(cid:61)m(cid:61)4l(cid:61)m(cid:61)3l(cid:61)m(cid:61)2l(cid:61)m(cid:61)1Note that accretion may aﬀect the black hole transition rate between diﬀerent trajectories if
+its rate is faster or comparable to the annihilation rate. If it consistently pushes black hole above
+the trajectory, new axions will be coming to the cloud compensating the eﬀect of annihilations.
+Conversely, by pushing the black hole below the trajectory, accretion may accelerate the dissipation
+of the cloud.
+
+Of course the above discussion only applies if accretion is slow compared to superradiance in
+the vicinity of the Regge trajectory. We illustrated all of the above in Fig. 3. Here, lines of diﬀerent
+colors correspond to diﬀerent levels. Parts of these lines where the spin increases with the mass are
+boundaries of the superradiant region, where α = mw+(a/rg) for the corresponding values of m.
+These are the Regge trajectories ai(α)/rg discussed above. For each trajectory the superradiance
+time grows at small α, and at some point becomes longer than the age of the Universe. Then,
+instead of showing the line where the width of the level is zero, we show the curve where the
+superradiance time is equal to the age of the Universe. These are the parts of the lines in Fig. 3,
+where the spin is a decreasing function of the mass. Below the solid line the superradiance time
+is longer than the age of the Universe for all unstable levels.
+
+To ﬁnish the discussion of the Regge trajectories, note that we started with considering an
+example of the black hole spin-down, which can be relevant for stellar mass black holes, but by
+now it is clear that also the evolution of the galactic black hole will follow the same rule—as the
+black hole enters in the region of the Regge plane aﬀected by superradiance it starts moving there
+along the Regge trajectories, occasionally experiencing rapid transitions between diﬀerent Regge
+trajectories.
+
+4.2 Gravitational waves
+
+An even more direct possibility to detect the presence of an axion cloud around black holes is
+to observe the associated gravitational wave signal. As we discussed in section 3.1 there are two
+principal processes giving rise to gravitational waves from the cloud—axion transitions between
+levels and axion annihilations. The bosenova collapse may also give rise to a burst of gravitational
+waves.
+
+Let us start with the transition signal. For transitions to be eﬃcient one needs large occupation
+numbers for two diﬀerent levels to be present simultaneously to get a Bose enhancement of the
+signal. Combined with non-linear eﬀects discussed in section 3.2 this practically singles out the
+type of transitions having chances to be observed and the corresponding stages of the black hole
+evolution2.
+
+Indeed, in section 3.2 we found that even a relatively small amount of axions on the most
+populated level shuts down the superradiance for levels with diﬀerent magnetic angular numbers
+as a result of level mixing. Consequently, the only chance for two levels to grow together, and as a
+result to acquire large occupation numbers simultaneously, is when the levels have equal angular
+numbers m. This case corresponds to setting δm = 0 in (51); the mixing for such levels does not
+change their magnetic number and does not shut down the superradiance.
+
+2In particular, transitions between superradiant and non-superradiant levels, chosen as an illustrative example in
+[1], are actually never important because the transition rate is always suppressed compared to the axion absorbtion
+rate for non-superradiant levels and they never have a chance to acquire a large occupation number.
+
+35
+
+Furthermore, for two levels with equal magnetic numbers m but diﬀerent orbital momenta l
+the superradiance rate for the more energetic level (the one with a higher l) is very much slower, so
+that by the moment the black hole reaches the corresponding Regge trajectory by populating the
+lower level, the occupation number for the higher level is tiny, and there is no signiﬁcant transition
+signal.
+
+All this lead us to consider the transition between two levels with diﬀerent principal quantum
+numbers n, but equal l and m as the most promising source of an observable gravitational wave
+signal. It is natural to consider the case, when the level with the larger principal number n has the
+faster superradiance rate. As mentioned in section 2.1, the lowest l when such a situation takes
+place is l = 4, so let’s pick this level as the simplest representative example. The corresponding
+transition rate is given by (42). The amplitude of the gravitational wave signal at the detector is
+related to the total power emitted as
+
+h =
+
+(cid:18) 4GP
+r2ω2
+
+(cid:19)1/2
+
+,
+
+(61)
+
+where ω is the frequency of emitted gravitons and r is the distance to the source. By making use
+of the rate (38) and plugging in the transition frequency (40) we obtain
+
+h ∼ 10−22α2((cid:15)1(cid:15)0)1/2
+
+(cid:18) 10 Mpc
+r
+
+(cid:19) (cid:18)MBH
+2M(cid:12)
+
+(cid:19)
+
+,
+
+(62)
+
+where (cid:15)1,0 are total masses of axions populating the n = 1 and n = 0 levels, in units of the black
+hole mass,
+
+(cid:15)1,0 =
+
+Ma1,0
+MBH
+
+and the frequency of the signal ν is determined by the axion and black hole masses as
+
+ν ≈ 100 Hz α3
+
+(cid:19)
+
+(cid:18) 2M(cid:12)
+MBH
+
+.
+
+(63)
+
+For annihilations one needs fewer conditions to be satisﬁed to get a signiﬁcant signal—the
+occupation number for only one of the levels has to be large. As we discussed in section 3.1 the
+annihilation rates for diﬀerent levels are rather similar at same values of α/l, so let us consider
+the l = 1 level as a representative example. The annihilation rate (44) gives rise to a gravitational
+wave signal of strength equal to
+
+h ∼ 10−22α7(cid:15)
+
+(cid:18) 10 Mpc
+r
+
+(cid:19) (cid:18)MBH
+2M(cid:12)
+
+(cid:19)
+
+,
+
+(64)
+
+where, as before, (cid:15) is the fraction of the black hole mass accumulated in the cloud. The frequency
+ν for this signal is given by
+
+ν ≈ 30 kHz α
+
+.
+
+(65)
+
+(cid:19)
+
+(cid:18) 2M(cid:12)
+MBH
+
+The numbers in (62) and (64) deﬁnitely appear interesting both at high frequencies probed by
+Advanced LIGO and corresponding to stellar mass black holes and when scaled down to low LISA
+
+36
+
+frequencies, corresponding to supermassive galactic black holes. However, to judge the chances
+to observe these signals we need to estimate the fractional mass of the cloud, (cid:15), in (62) and (64),
+that will determine the possible observational reach in terms of the distance to the source.
+
+To make these estimates note that, as we discussed, a large fraction of its time the black hole
+spends on the Regge trajectories with a relatively small axion cloud around, down to (cid:15) ∼ 10−12÷10,
+waiting for the cloud to be dissipated so that the next level can start being populated triggering
+a relatively fast transition to the next Regge trajectory. Transitions between diﬀerent trajectories
+and relatively short time intervals afterwards, when (cid:15) can be signiﬁcantly larger, provide the most
+promising periods for an observable gravitational wave signal. Every black hole may experience
+several such transitions—one directly after the black hole formation, another one or two after
+periods of axion annihilations and possibly more triggered by accretion or merger events.
+
+From (3) we can estimate the total spin, and, as a consequence, the mass extracted from the
+black hole during such transitions. The latter typically turns out to be around a percent of the
+black hole mass. However, the main limiting factor for the size of the cloud is the Bosenova
+instability that prevents the cloud mass to grow above 10−4 ÷ 10−3 of the black hole mass. This is
+enough to estimate the strength of the annihilation signal. In Fig. 11 we present the contour plot
+for the strength of the signal in the black axion mass vs α plane from axion annihilations in the
+l = 1 level, assuming the size of the cloud (cid:15) = 10−4. We pick 20 Mpc as the distance to the source
+(which is the distance to the Virgo supercluster, containing about 2000 galaxies), and choose
+106 seconds as a coherent integration time for the signal. Note that existing spin measurements
+(Fig. 3) suggest a lower bound of µa (cid:38) 3 · 10−11 eV for axions matching the size of stellar mass
+black holes (which would correspond to α (cid:38) 0.9 for 2M(cid:12) black hole), pushing the annihilation
+signal for Advanced LIGO into a range of somewhat uncomfortably large frequencies.
+
+Predicting the characteristic features of the transition signal is more involved and requires a
+detailed quantitative analysis of the dynamics, but some simple estimates can still be done. Let
+us focus on the simplest case of the 6g → 5g transition. To describe the evolution of the cloud
+during the transition to the l = 4 Regge trajectory, let us truncate the system (28) by keeping
+only 6g and 5g levels and ignore accretion. Then we obtain the following pair of equations for the
+relative sizes of the 6g and 5g components of the cloud,
+
+d(cid:15)0
+dt
+d(cid:15)1
+dt
+
+= Γ440(cid:15)0 − Γt(cid:15)1(cid:15)0
+
+= Γ441(cid:15)1 + Γt(cid:15)1(cid:15)0 ,
+
+(66)
+
+where Γ440, Γ441 are the superradiance rates, and the transition coeﬃcient Γt is determined from
+(42) to be equal to
+
+Γt ≈ 3 · 10−7 α8
+rg
+
+.
+
+We neglected the annihilation processes which are slow compared to superradiance and transitions.
+As follows from Fig. 5 the superradiance rates Γ440, Γ441 are of order 10−10r−1
+for α ∼ 1. Using
+the small α approximation (18) as a guide, their ratio can be estimated as Γ440/Γ441 ∼ 0.9.
+
+g
+
+Let us focus on the case of α ∼ 1. Then the dynamics following from equations (66) is quite
+simple. Both levels start being populated but the lower one has a smaller superradiance rate, and
+
+37
+
+Figure 11: The contour plot of constant gravitational wave signal from axion annihilations in
+the 2p level for a black hole located at 20 Mpc away from the Earth. The projected sensitivity
+curves assume 106 seconds of a coherent integration time for LISA [41], AGIS, Advanced LIGO
+and Einstein Telescope.
+
+as a consequence is less occupied. By the time the occupation number of the 6g level reaches its
+maximum, (cid:15)1 ∼ 10−4÷3, the occupation of the lower 5g level is given by
+
+(cid:15)0 ≈ (cid:15)1e−0.1Ne ,
+
+where Ne the number of e-foldings of superradiance required to populate the 6g level. The number
+of e-foldings depends on the initial number of axions. As follows from (57) it varies from Ne ∼ 165
+if initially the 5g level is not occupied, down to Ne ∼ 100 if we estimate the initial occupation
+number to be determined by the dark matter density. In fact, the initial axion number can be
+signiﬁcantly larger, if we consider a transition after a recent Bosenova event.
+
+Even though (cid:15)0 is exponentially sensitive to Ne this uncertainty does not pose a big problem
+for estimating the gravitational wave signal at its maximum. Indeed, even if we set (cid:15)0 = (cid:15)1, the
+
+38
+
+EinsteinTelescopeAdvancedLIGOAGISLISA10(cid:45)3210(cid:45)3110(cid:45)3010(cid:45)2910(cid:45)2810(cid:45)2710(cid:45)2610(cid:45)2510(cid:45)2410(cid:45)2310(cid:45)2210(cid:45)2110(cid:45)2010(cid:45)19(cid:45)20(cid:45)18(cid:45)16(cid:45)14(cid:45)12(cid:45)100.200.250.300.350.400.450.501086420AxionmassinLog10ΜaeVΜa(cid:180)rgBlackHoleMassinLog10MBHMsolarforΜa(cid:180)rg(cid:61)1Figure 12: The contour plot of constant gravitational wave signal from axion transitions between
+the 6g and the 5g levels for a black hole located at 20 Mpc away from the Earth. The projected
+sensitivity curves assume 104 seconds of a coherent integration time.
+
+transition terms in (66) are still too small to compete with the superradiance upto (cid:15)1 ∼ 10−4,
+so that this uncertainty does not aﬀect the dynamics. Also, to estimate the maximal possible
+signal let us concentrate on the very last episode of spinning down which is terminated because
+the black hole reaches the l = 4 Regge trajectory (and not by the Bosenova event, as happens
+for earlier episodes of spindown). At the end of this episode superradiance shuts down and only
+the transition terms in (66) are left. At this point the (cid:15)0/(cid:15)1 ratio is small, but it starts growing
+as a result of transitions. The transition signal reaches its maximum when (cid:15)0 ∼ (cid:15)1 ∼ 10−4 and
+then decreases because the occupation fraction (cid:15)1 for the 6g-level drops down. The duration of
+the signal at peak intensity is determined by the transition rate and is of order
+
+which is of order a day for a stellar mass black hole with α ∼ 1 and (cid:15)0 ∼ 10−4.
+
+t(6g → 5g) ∼ 3 · 106 rg
+α8(cid:15)0
+
+,
+
+39
+
+EinsteinTelescopeAdvancedLIGOAGISLISA10(cid:45)2710(cid:45)2610(cid:45)2510(cid:45)2410(cid:45)2310(cid:45)2210(cid:45)2110(cid:45)2010(cid:45)1910(cid:45)18(cid:45)18(cid:45)16(cid:45)14(cid:45)12(cid:45)100.60.81.01.21.41.61.886420AxionmassinLog10ΜaeVΜa(cid:180)rgBlackHoleMassinLog10MBHMsolarforΜa(cid:180)rg(cid:61)1In Fig. 12 we present the contour plot for the gravitational wave amplitude as determined
+by (62) for diﬀerent axion masses and values of α (equivalently, for diﬀerent black hole masses),
+assuming (cid:15)1 = (cid:15)0 = 10−4 and taking 20 Mpc as a distance to the source. We presented also the sen-
+sitivity curves of various planned gravitational wave detectors assuming the coherent integration
+time 104 seconds.
+
+We see that future experiments will be sensitive to the transition signal from the superradiant
+cloud over a large range of axion and black hole masses. What is especially exciting is that the
+Advanced LIGO detector which is scheduled to start operating around 2014 will be probing the
+heavy mass regime for axions, in particular the QCD axion. We will discuss the Advanced LIGO
+reach for the QCD axion in more details in section 4.4.
+
+Finally, as we already said, as a consequence of Bosenova, every transition between Regge tra-
+jectories goes through a series of 10-100 spin-down episodes interrupted by silent intervals needed
+to build up the cloud. Depending on the distance to the source one may see also gravitational
+wave signal from the earlier episodes, although to study this possibility requires a more detailed
+analysis of the dynamics (in particular, accurate prediction of the e-folding number Ne). If these
+signals can be observed, then by measuring the frequency and the amplitude of the signal as well
+as the duration of the active and silent intervals one may hope to extract not only the mass of the
+axion, but to estimate the scale fa as well.
+
+Also the Bosenova event by itself gives rise to a gravitational wave burst. Assuming that the
+collapse of the cloud happens on a time scale of order rg the power emitted in gravitational waves
+during the Bosenova event can be estimated as
+
+PBN ∼ GN (cid:15)2M 2
+
+BHr−2
+g
+
+,
+
+which translates into the gravitational wave amplitude at the Earth of order
+
+h ∼ (cid:15)
+
+rg
+r
+
+∼ 10−17 (cid:16) (cid:15)
+10−4
+
+(cid:17) (cid:18) MBH
+108M(cid:12)
+
+(cid:19) (cid:18)100 Mpc
+
+(cid:19)
+
+r
+
+,
+
+with the frequency being of order r−1
+
+g . This signal may be observable for supermassive black holes.
+To conclude, let us emphasize that in estimating the signal strength we were using the free
+particle approximation for axions all the way up to (cid:15) ∼ 10−4, when the bound (51) gets saturated
+and this approximation may be not adequate, as we already discussed. This may be especially
+important for the transition signal where one needs to follow several levels simultaneously. Conse-
+quently, our encouraging estimates here should be considered as a strong motivation for a further
+careful numerical analysis of the system, rather than as an accurate prediction for the signal.
+
+4.3 Direct observation of the cloud
+
+Another potential observational consequence of superradiance is the presence of the cloud itself,
+which could be directly detected by precision mapping of the near horizon black hole metric. Such
+a mapping will be made possible by future low frequency gravitational wave detectors, such as
+LISA or AGIS, during the last stages of the inspiral of a compact object (black hole/neutron
+star/white dwarf) into a supermassive black hole. With LISA sensitivities, it will be possible to
+
+40
+
+observe hundreds of such events per year for diﬀerent galaxies, and to trace up to ∼ 105 orbits in
+an individual event. This will allow mass and spin determination with 10−5 accuracy, and about
+6-7 higher multipole moments of the metric can be measured with better than a few percent
+precision.
+
+In principle, it is straightforward to calculate the modiﬁcation to the waveform of the inspiral
+signal due to the presence of the axion cloud. In the regime when non-linearities can be neglected
+(and this is the only regime, where the cloud can stay for a cosmologically long time) the shape of
+the cloud is determined by the well-known wave functions of the hydrogen atom. It is likely that
+the best chances to observe the presence of the cloud are for black holes with moderately small
+values of α/l. Indeed, at smaller values of α non-linear eﬀects and processes leading to dissipation
+of axions from the cloud get suppressed allowing for longer lifetimes and a larger cloud mass. On
+the other hand, the size of the cloud grows at small α and the total mass becomes smaller for the
+same value of the spin (“the balerina eﬀect”), making it challenging to see the eﬀect of the cloud
+at too small values of α. A dedicated study is required to ﬁnd the optimal value of α and to see
+whether the eﬀect is observable.
+
+Another subtlety with using gravitational wave signal from compact inspirals to detect the
+presence of the cloud is that the non-spherical metric perturbation induced by an infalling compact
+object may be strong enough to cause a mixing between superradiant and non-superradiant levels
+and induce the disappearance of the cloud, similar to the eﬀect of axion self-interactions.
+
+To summarize, directly probing the structure of the cloud with extreme mass ratio inspirals
+is an interesting possibility awaiting for a dedicated theoretical study to decide on whether it is
+feasible. Another possibility worth exploring are the eﬀects of the cloud on the accretion disk of
+stellar mass black holes. In this case, the cloud could excite resonant modes of the accretion disk,
+the so called quasi-periodic oscillations.
+
+4.4 The QCD axion and superradiance
+
+The QCD axion is the best motivated of all axion-like particles and by itself serves as one of the
+major motivations for the whole axiverse framework, so let us summarize here what range of its
+parameter space will be probed by on-going and future black hole observations.
+
+Unlike for other axions, the QCD axion mass µa and decay constant fa are related to each
+other by (2). Furthermore, non-perturbative string corrections to the QCD axion potential take
+the form
+
+Vstring (cid:39) Λ4e−S cos φ/fa ,
+
+where the energy scale Λ is either Planck or string scale (in exceptional cases it might be sup-
+pressed by the SUSY breaking scale, Λ4 ∼ M 2
+P lFSU SY [21]) and the instanton action S in explicit
+constructions is bounded from above as
+
+S (cid:46) MP l
+fa
+
+.
+
+(67)
+
+S is close to saturating the above bound if a compactiﬁcation manifold is neither too anisotropic
+nor strongly warped. It was suggested [42] that the upper bound (67) follows from very general
+
+41
+
+properties of quantum gravity. However, to the best of our knowledge, there is no speciﬁc proposal
+for the exact numerical coeﬃcient that should appear in a conjectured sharp version of (67).
+
+To solve the strong CP problem the instanton action should be suﬃciently large, S (cid:38) 200.
+Combined with the above arguments this suggests that the scale fa for the QCD axion is unlikely
+to be signiﬁcantly higher than f ew × 1016 GeV or equivalently, that the QCD axion mass is
+unlikely to be signiﬁcantly lighter than 10−10 eV. Also, from a bottom-up perspective, the values
+of fa close to the grand uniﬁcation scale, corresponding to masses ma ∼ 3 · 10−10 eV, appear to
+be well-motivated.
+
+4.4.1 Black hole spindown and Advanced LIGO
+
+These arguments motivate thinking of the consequences of superradiance in an axion mass range
+that is as heavy as possible while still aﬀecting black hole dynamics. Of course, from a purely
+phenomenological approach any limit on the QCD axion parameters in the high fa regime are
+still extremely interesting. The current measurements of black hole masses and spins, presented
+in Fig. 3, already suggest an upper bound on the axion decay constant at the level
+
+fa (cid:46) 2 · 1017 GeV .
+
+(68)
+
+For higher values of the decay constant, i. e. lighter axion mass, the gap in the upper panel of
+Fig. 3 would shift towards heavier black hole masses and would contain rapidly spinning black
+holes inside. Of course, at the moment one should consider this bound as indicative. First, the
+data points in Fig. 3 may be subject to signiﬁcant systematic uncertainties. For instance, the
+highest spin black hole in Fig. 3 is GRS 1915+105, and the model for the soft X-ray spectrum
+of this object suggests a much smaller value of the spin a/rg ≈ 0.56 [6], than the one presented
+here (from [5]). Second, rapidly spinning black holes in Fig. 3 may turn out to be young enough
+to stay in the gap region—for instance, the age of the second fastest spinning black hole in Fig. 3
+(LMC X-1) is quite short—of order 5 million years [40].
+
+All these uncertainties will get rectiﬁed with more data coming. Given that a black hole
+produced as a result of the stellar collapse can be as light as ∼ 2M(cid:12), spin measurements alone
+can potentially improve the bound (68) by a factor of few. Still, the above theoretical arguments
+suggest that it may be not enough to discover the QCD axion. A plausible situation could be
+that the QCD axion is light enough to aﬀect the dynamics of the lightest stellar mass black hole
+through superradiance, but is still too heavy to produce a noticeable gap in the spectrum of
+rapidly rotating black holes. This makes it especially important to study other consequences of
+superradiance that may allow to discover the QCD axion in such a situation.
+
+One exciting possibility to discover the QCD axion is through observing of the gravitational
+wave signal from superradiating black holes at Advanced LIGO, as discussed in section 4.2. Es-
+timates presented there indicate that Advanced LIGO may see the transition signal for the QCD
+axion, although the annihilation signal will probably have too large frequency to be observed at
+that experiment. As we mentioned, details of the transition signal—such as the strength of the
+signal at the maximum intensity—may even provide an estimate for the decay constant, which
+would be a further conﬁrmation that the signal is related to the QCD axion, rather than to some
+other axion-like particle. In Fig. 4 we zoomed in the high mass region of the plot in Fig. 12 relevant
+
+42
+
+for the QCD axion. This plot shows only the estimated signal for the 6g → 5g transitions. For
+heavy axions the higher l levels are likely to be relevant; our estimates show that the corresponding
+signal is very similar to the one in Fig. 4. Note that we pick 104 second as a coherent integration
+time for this plot, so that the actual reach can be even better for longer integration times. We
+see that Advanced LIGO has the potential to probe the most interesting mass range for the QCD
+axion, and this is even more true for the Einstein telescope.
+
+Coming to other probes, unfortunately, it is impossible to use gravitational waves to probe
+the shape of the QCD axion cloud around stellar mass black holes as it could be done for lighter
+axions aﬀecting supermassive black holes. However, it is interesting to study whether the QCD
+axion cloud may resonantly excite certain characteristic perturbations in the accretion disc that
+would signal about the presence of the cloud.
+
+4.4.2 Photon signals: radio waves, γ- and X-rays
+
+Finally, there could be QCD axion speciﬁc signatures related to the direct coupling of the QCD
+axion to Standard Model ﬁelds. First, there is a coupling (30) to photons. As we already discussed
+this coupling converts axions from the superradiant cloud into photon with the rate given by (31).
+This conversion rate is too slow to aﬀect the dynamics of superradiance, but it may still provide
+an observable signal on Earth. The photons in question are almost monochromatic radio waves,
+and the production rate (31) translates in the following ﬂux at Earth,
+
+Fradio ∼ 10−14 W
+m2
+
+(cid:18) 1016 GeV
+fa
+
+(cid:19)2 (cid:16) (cid:15)
+
+(cid:17) (cid:18)
+
+10−4
+
+B
+108 Gauss
+
+(cid:19)2 (cid:18) 1 kpc
+
+(cid:19)2
+
+r
+
+.
+
+There are several challenges for this signal to be observable, and they all arise because the frequency
+of the signal is equal to the axion mass, and corresponds to radio waves with wavelengths of order
+at least few hundred meters. The ﬁrst diﬃculty arrises because these wavelengths cannot be
+observed on the Earth’s surface, since the ionosphere is not transparent for radio waves at these
+low frequencies. However, this problem may be solved by using space- (or Moon-) based radio
+telescopes. The major challenge, however, is that the electron density around a black hole should
+be quite small, ne (cid:46) 100 cm−3, for the signal to be able to escape from the source. It is very
+hard to ﬁnd a source satisfying this property, given that one needs substantial magnetic ﬁeld in
+the vicinity of the cloud for eﬃcient axion-to-photon conversion. This possibility will be studied
+in [43].
+
+Probably a more promising possibility is related to the coupling (1) of the QCD axion to
+the QCD instanton number. To observe the consequences of this coupling would be especially
+interesting given that the interaction (1) is a genuine footprint of the QCD axion. An intriguing
+possibility to achieve this is related to the following observation. As follows from the estimate
+(47) the axion ﬁeld in the cloud may reach values of order
+
+φ ∼ 2
+
+α
+l
+
+fa ,
+
+(69)
+
+i.e., the ratio φ/fa becomes of order one. For the QCD axion this ratio is nothing else as but the
+local value of the CP violating θ-parameter in the QCD. QCD properties are rather diﬀerent at
+
+43
+
+large values of the θ-parameter—for instance, the pion mass is smaller by a factor of order 3 at
+θ = π as compared to the θ ≈ 0 vacuum, where we live (see, e.g., [44] for a recent discussion).
+Given that (multi)pion exchange is one of the dominant forces responsible for the nuclear binding
+it is natural to expect that nuclear binding energies change by order one in the regions with θ ∼ 13.
+Consequently, it is natural to speculate that some of the stable nuclei may become unstable
+towards disintegration, and gamma- or beta-decay when they enter in the region of the cloud as it
+approaches the maximum size. Even if (47) somewhat overestimates the maximum θ in the cloud,
+it appears very probable that θ becomes of order one at least during the Bosenova events. The
+characteristic timescale for the latter is set by the black hole size and is of order 10−5 seconds.
+Consequently, it’s only strong and electromagnetic nuclear instabilities that have enough time to
+be important during the Bosenova event.
+
+Under the optimistic assumption that an order one fraction of nuclei in the vicinity of the black
+hole horizon decays and produces γ-quanta with MeV energies let us estimate the resulting ﬂux
+of photons at the Earth from the Bosenova event. If the black hole accretes with an Eddington
+limited rate, the total amount of matter within a distance of order rg from the black hole horizon
+can be estimated as MBHrg/τE ∼ 1035 GeV∼ 10−22M(cid:12), where τE is the Eddington time (33).
+This may give rise to the emission of order 1035 photons with MeV energies on a time-scale of
+order 10−5 seconds. This is not very much—for a black hole at 10 pc away one would obtain one
+photon per 10 m2 at the Earth. However, there are several ways the signal can be signiﬁcantly
+stronger. First, the major limiting factor in the above estimate is the amount of matter in the
+vicinity of the black hole horizon. This amount may be roughly 22 orders of magnitude larger
+immediately after the supernova explosion. Of course, this is a violent event providing lots of
+radiation by itself, and also immediately after the explosion the metric perturbation due to the
+surrounding matter is likely to be strong enough to damp the superradiance. However after the
+environment cleans up a bit this may give rise to a signal many orders of magnitude stronger than
+in the Eddington regime.
+
+Also the signal may last signiﬁcantly longer if, as the estimate (69) suggests, nuclei may get
+destabilized not only during the Bosenova collapse, but also when the cloud is still stable. Another
+possibility for the signal to last longer is for the Bosenova to produce long-lived axion clumps (such
+as “pulsons” of [45]) that would be able to escape from the near-horizon region.
+
+Finally, rather than directly detecting photons one may look for spectral X-ray lines of exotic
+elements in the vicinity of the black hole, that could have been formed as a result of the nuclear
+disintegration triggered by the large axion ﬁeld4.
+
+4.5 Accelerated growth of black holes
+
+Yet another indirect consequence of superradiance is that axions, if present, would accelerate the
+black hole growth. As a toy illustrative example we pick the Eddington saturated thin disc model
+(see [46] for a review and references). In this model the black hole mass evolves according to
+1 − (cid:15)M (¯a)
+(cid:15)M (¯a)
+
++ ˙Msr ,
+
+dM
+dt
+
+M
+τE
+
+(70)
+
+=
+
+3Note, that this eﬀect was not taken into account in the analysis of [44].
+4We thank Steve Kahn for pointing this out.
+
+44
+
+Figure 13: Kinetic coeﬃcients determining the black hole mass (solid line) and spin (dashed line)
+growth during Eddington limited accretion.
+
+where, the accreting gas is assumed to have zero metallicity, τE is given by (33), and (cid:15)M (¯a) is
+the radiation eﬃciency for the accrettion—the fraction of the incoming energy that gets radiated
+away in the process of accretion. It depends only on the dimensionless spin-to-mass ratio
+
+¯a ≡
+
+a
+rg
+
+,
+
+and in Fig. 13 we have shown the coeﬃcient (1 − (cid:15)M )/(cid:15)M appearing in (70) as a function of ¯a.
+Finally, the ˙Msr-term accounts for superradiance, and is given by
+
+˙Msr = −µa
+
+(cid:88)
+
+i
+
+ΓiNi + . . . ,
+
+(71)
+
+where the omitted terms are those related to non-linear eﬀects.
+
+The time evolution of the black hole spin in the thin disc model is determined by the following
+
+equation
+
+s(¯a)
+(cid:15)M (¯a)τE
+where the ratio s/(cid:15)M as a function of ¯a is also shown in Fig. 13. As before, the ˙¯asr-term describes
+
++ ˙¯asr ,
+
+d¯a
+dt
+
+(72)
+
+=
+
+45
+
+0.00.20.40.60.81.00102030405060BlackHoleSpina(cid:144)rgKineticCoefficientsΕM(cid:72)1(cid:45)ΕM(cid:76)ΕMFigure 14: The eﬀect of an axion on the black hole growth history for the simplest thin disc
+Eddington limited accretion (lower curves) and for a more realistic model thin disc model of
+Eddington accretion taking into account result of magnetohydrodynamical simulations (details of
+both models can be found in [47]).
+
+the eﬀects of superradiance and is equal to
+
+˙¯asr = −
+
+µa
+M
+
+(cid:88)
+
+(α−1mi − 2¯a)ΓiNi .
+
+i
+
+(73)
+
+Fig. 13 now makes the eﬀect of superradiance evident: the solid line there indicates that the
+mass of a slowly rotating black hole accreting in the Eddington regime grows almost an order of
+magnitude faster than the mass of a rapidly rotating black hole.
+
+The origin of this eﬀect is easy to understand. For a rapidly rotating Kerr black hole the size of
+the last stable orbit is signiﬁcantly smaller than for a Schwarzschild black hole of the same mass.
+As a result the accreting plasma radiates a larger fraction of its rest mass before falling into a
+rotating black hole. In the Eddington saturated regime the radiation pressure is the main limiting
+factor for the accretion rate—hence, the accretion proceeds faster for a Schwarzschild black hole,
+as the solid line in Fig. 13 shows.
+
+The dashed line in Fig. 13 indicates that a black hole accreting in the Eddington regime
+rapidly spins up and keeps growing with a high value of spin. Instead, if a black hole is aﬀected
+by superradiance it follows the Regge trajectory, where its spin can be signiﬁcantly lower and, as
+a consequence, the growth rate is much faster. Given that even a single axion aﬀects a large range
+
+46
+
+0.51.01.52.02.53.03.51041051061071081091010TimeinunitsofΤEddingtonBlackHoleMassinunitsofMSolarof black hole masses, superradiance may signiﬁcantly aﬀect the growth history of supermassive
+black holes, as illustrated in Fig. 14.
+
+It is worth noting that quasars hosting ∼ 109 M(cid:12) black holes were observed at as high redshifts
+as z = 6.43, and some authors think that these observations may present a challenge for the
+conventional story of black hole growth [47]. Of course, the actual dynamics describing black hole
+evolution is likely to be signiﬁcantly more complicted with merger events playing a signiﬁcant
+role (see, e.g., [48] for a recent overview), and it is premature to decide whether any new physics,
+such as axions, is needed to explain the existing observations. However, it is likely that with
+future X-ray and gravitational wave data as well as with a progress in numerical simulations the
+evolution history of supermassive black holes will be understood much better, and new physics
+might eventually be required, especially if quasars with signiﬁcantly higher redshifts are to be
+discovered. At any rate, even if a conventional astrophysics is able to explain the data, it is useful
+to keep in mind that axions, if present, are able to signiﬁcantly aﬀect the story.
+
+5 Bookkeeping of anthropic axions
+
+Before concluding, let us elaborate on one particularly interesting feature of axions in the mass
+range relevant for the present paper, µa (cid:38) 10−21 eV and with a high symmetry breaking scale,
+fa ∼ MGU T . Namely, the axion abundance relative to baryons is given by5,
+
+Ωa
+Ωb
+
+(cid:39) 5γP (θa)
+
+(cid:16)
+
+µa
+2.4 · 10−19 eV
+
+(cid:17)1/2 (cid:18)
+
+fa
+2 · 1016 GeV
+
+(cid:19)4
+
+,
+
+(74)
+
+where γ is an order one coeﬃcient diﬀerent from unity if an axion is heavy enough, so that the
+eﬀective number of degrees of freedom at the onset of its oscillations is diﬀerent from the current
+value; θa ≡ φ(t = 0)/fa is an initial axion misalignment angle, and
+
+P (θa) ≈ θ2
+a
+
+(75)
+
+for small θa (the shape of P (θa) for general θa can be found, e.g., in Fig. 4 of [1]). We see that
+axions with masses signiﬁcantly heavier than ∼ 10−19 eV would produce a contribution to the
+dark matter density larger than the observed value Ωcdm ≈ 5Ωb, unless we happened to have an
+atypically small initial misalignment angle θa.
+
+As was realized long ago [28], this does not mean that such axions are necessarily in conﬂict
+with the observed value of ζ ≡ Ωcdm/Ωb. Indeed, if inﬂation lasted suﬃciently long (and especially
+if there were a period of eternal infaltion in the past) an initial misalignment angle θa is a dynamical
+parameter that varies in space on scales much longer than the current size of the Universe, so there
+will always exist regions with suﬃciently small value of θa to be in agreement with the observed
+value of ζ. Still, one may wonder what is the probability for an observer in such a Universe to
+ﬁnd himself in a region with as small values of ζ as we observe.
+
+For a single QCD axion this question was addressed a number of times in the past [49, 50].
+These treatments diﬀer in some details, however they agree that the observed value of ζ does not
+
+5For the QCD axion this formula gets modiﬁed due to the temperature dependence of the axion mass. This is
+
+not important for the discussion below.
+
+47
+
+appear to be anomalously small. Let us see how this conclusion changes if there are more than one
+axions with masses (cid:38) 10−19 eV. Note that depending on which of the parameters are allowed to
+vary the answer may be more or less sensitive to the uknown details of the statistics of string vacua
+and to the infamous ambiguities with the probability measure in an eternally inﬂating Universe.
+We ﬁnd the approach of [50]—to keep all the parameters apart from θa ﬁxed—the safest from
+this point of view. In other words, we are restricting to comparing observers with all microphysical
+parameters the same as ours, but the inﬂationary dynamics automatically produce diﬀerent initial
+values of θa for them. In the string landscape the axion abundance is the last parameter that
+may vary, so this approach is maximally close to the logic applied for predicting the results of a
+conventional lab experiment—we ﬁx all particles physics parameters to the known values and see
+what the dynamics of the system gives us. The important diﬀerence with a lab experiment is that
+now we cannot ignore the selection eﬀects—the formation of observers is impossible in the regions
+where the dark matter-to-baryon ratio ζ is either too big or too small. These so called anthropic
+boundaries were estimated in [49]. Namely, for ζ (cid:46) 2.5 perturbations at the scales close to our
+galaxy’s cease to grow, while at ζ (cid:38) 100 the density of baryons becomes so small that the disc
+fragmentation instability leading to star formation does not develop. The observed value ζ ≈ 5
+appears to be somewhat too close to the lower end of this interval.
+
+Unfortunately, to quantify whether there is a real problem, we are still left with an ambiguity
+related to the choice of the inﬂationary measure—the problem of comparing numbers of observers
+measuring diﬀerent values of ζ given that these numbers are inﬁnite in an inﬁnite Universe for
+any ζ in the anthropically allowed region. Following [50], let us consider what happens with
+one particular choice—the causal diamond measure of [51]. This choice amounts to counting
+the number of observers in a single Hubble patch of the late time de Sitter evolution. Another
+simplifying assumption of [50] is that the number of observers per baryon is approximately constant
+for 2.5 < ζ < 100 and zero otherwise.
+
+The nice feature of the axion setup is that the prior probability distribution for ζ is known.
+
+Indeed, generalizing (74) to the case when more than one axion is present we ﬁnd
+
+ζ(θa) =
+
+(cid:88)
+
+a
+
+c(µa)P (θa) .
+
+(76)
+
+The initial values θa is getting set during inﬂation when the axion backreaction on the cosmological
+expansion is negligible, so that the prior distributions for all θa are ﬂat. Then the probability to
+observe the dark matter-to-baryon ratio smaller than the observed ζ = 5 value is equal to
+
+(cid:90)
+
+P = N −1
+
+2.5<ζ(θa)<5
+
+(cid:81)
+
+a dθa
+1 + ζ(θa)
+
+,
+
+(77)
+
+where a factor (1 + ζ(θa))−1 is speciﬁc to the causal diamond measure and appears because the
+total number of baryons within a horizon at the transition to the de Sitter regime is proportional
+to this factor. The normalization factor N is equal to
+
+(cid:90)
+
+2.5<ζ(θa)<100
+
+(cid:81)
+
+a dθa
+1 + ζ(θa)
+
+.
+
+48
+
+(78)
+
+Expressions (77), (78) are signiﬁcantly simpliﬁed in the limit when all anthropic axions are suf-
+ﬁciently heavy, so that the approximation (75) is accurate. In this regime one can get rid of the
+mass dependence in (76) by rescaling θa → c(µa)−1/2θa. As a result, after integration over angular
+variables in the θa space, one obtains,
+
+P(n) =
+
+(cid:82) 5
+2.5
+(cid:82) 100
+2.5
+
+dζζ(n−2)/2
+1+ζ
+dζζ(n−2)/2
+1+ζ
+
+= 0.3, 0.16, 0.06, 0.02, 0.006, . . .
+
+(79)
+
+where n is the number of axions, and we presented the numerical value of the probability for the
+ﬁrst few values of n. We see that the probability drops exponentially as the number of axions in
+the anthropic window grows, however, remains high enough for the ﬁrst few values of n. Clearly,
+this general trend—that at large number of axions the probability distribution is peaked at the
+higher anthropic boundary for ζ is generic and independent of the choice of the measure. It is
+just a consequence of a geometrical factor ζ (n−2)/2 in the numerators of integrals in (79). For
+instance, if we droped the (1 + ζ(θa))−1 factor and just used the prior probability distribution for
+ζ (restricted to the anthropically allowed region), we would get 0.08, 0.03, 0.007, 0.001 for the
+ﬁrst few probabilities. It is worth pointing out that these probabilities are sensitive to the position
+of the anthropic boundary at large ζ, which is not the case in the presence of a single axion, as
+pointed out in [50].
+
+If a suﬃciently large number of axions is to be discovered in the anthropic region or, even if,
+for a single QCD axion, it turns out that a signiﬁcant fraction of cold dark matter is composed
+of WIMP’s, these probabilities may start being problematically low. However, one should keep
+in mind that there are lots of uncertainties in the above estimates. Apart from a choice of the
+inﬂationary measure, the assumption that the number of observers per baryon is constant over
+the whole anthropic interval appears to be a vast oversimpliﬁcation, due to both astrophysical and
+astrobiological reasons. On the astrophysical side it is far from clear that the number of stars is
+proportional to the number of baryons in the whole range 2.5 < ζ < 100. Furthermore, the number
+of observers may not scale linearly with the number of stars both due to astrophysical reasons, for
+example due to close encounters, and due to astrobiological, if the early stages of the evolution
+of life can be signiﬁcantly accelerated by the possibility of the transfer of organic molecules (or
+primitive forms of life) from one stellar system to another (given that the closest known planetary
+system is just 10 light years away this possibility is neither necessarily hypothetical nor untestable).
+To summarize, we see that at the current stage of aﬀairs there is no reason to be discouraged on
+the possibility of a discovery of multiple anthropic axions with astrophysical black holes observa-
+tions. Conversely, if several anthropic axions were to be discovered (or even a single one if WIMPs
+constitute a signiﬁcant fraction of dark matter) this will provide us with serious motivation to
+scrutinize how the number density of observers depends on the baryon-to-dark matter ratio.
+
+6 Conclusions
+
+We hope to have convinced the reader that black hole superradiance for axions is an extremely
+rich phenomenon that has good chances to be observed in near future measurements of black hole
+
+49
+
+properties. Ongoing black hole spin measurements may trace gaps or Regge trajectories in the
+spectrum of rapidly spinning black holes. Advanced LIGO may observe gravitational wave signals
+from the QCD axion cloud around stellar mass black holes as far as the Virgo cluster for masses
+down to 10−10 eV which correspond to an axion decay constant close to the grand uniﬁcation
+scale. In a more distant future, gravitational waves may be observed for supermassive black holes
+at lower frequencies by experiments such as LISA and AGIS. The low frequency gravitational
+wave detectors may also see the eﬀect of the cloud on the waveforms during extreme mass ratio
+inspirals. Finally, for the QCD axion the superradiant cloud might also give rise to direct photon
+signals.
+
+In this paper our main goal has been to develop a general intuition about superradiance
+development and its consequences without going into an extensive numerical work. Given the
+richness of the system it seems inevitable that detailed numerical simulations will be required in the
+future to obtain accurate quantitative predictions. This is especially important for predicting the
+strength, duration and precise waveform of gravitational wave signals from superradiant clouds.
+Simulations are needed both for the accurate prediction of superradiance rates, which to large
+extent has already been accomplished in [30], and most importantly to get an accurate description
+of the superradiant cloud including axion self-interactions. It’s worth stressing, however, that some
+of our result are very robust. For instance, the black hole Regge trajectories of Fig. 3 are mostly
+determined by the basic superradiance condition (3) and do not depend on the above uncertainties
+(apart from the left most declining segments of these curves; however, in that region even larger
+uncertainties are likely to come from variations in the accretion rate for diﬀerent black holes).
+
+Of course, we expect also other qualitative results obtained here to reproduce well the gross
+features of the system, although given its richness more surprises are possible. Most importantly,
+our results appear encouraging for prospects to observe superradiance with future astrophysi-
+cal data, and this justiﬁes further theoretical eﬀorts for better understanding of this fascinating
+process.
+
+7 Acknowledgements
+
+We thank Savas Dimopoulos, John March-Russell and Nemanja Kaloper for collaboration at all
+stages of the project. We also thank Tom Abel, Andrei Frolov, Gregory Gabadadze, Andrei
+Gruzinov, Peter Graham, Steve Kahn, Mark Kasevich, Andrew MacFadyen, Sergei Sibiryakov,
+Steve Shenker, David Shoemaker and Bob Wagoner for useful discussions.
+
+Appendix A: Calculating the tunneling exponent (22)
+
+In principle, it is straightforward to calculate the tunneling integral I numerically, however, let
+us also describe an anlytical method that works for near-extremal black holes, a ≈ rg and for the
+frequency ω right at the boundary of the superradiance region ω = mw+.
+
+The latter condition has the following meaning. As we see from Fig. 5, each of the superradiant
+levels has a maximum rate close to the boundary of the superradiant region. Of course, exactly at
+the boundary the width of the level becomes zero. However, it is the pre-factor in (25) that turns
+
+50
+
+Figure 15: The tunneling exponent as a function of the black hole spin.
+
+zero at ω = mw+, while the exponent I just passes smoothly through that point. Consequently,
+by calculating I at ω = mw+ we will ﬁnd the upper envelope of the family of superradiant rates
+for diﬀerent levels. Related to this, we will also set l = m, because this corresponds to the fastest
+superradiance rate at any α. Finally, we also set µa = ω, which given the above assumptions
+corresponds to taking l = 2α. This should be a good approximation given that superradiant levels
+are close to be non-relativistic. Note that for the fastest level the radial number n also grows with
+l, so that the upper bound (9) never gets saturated. All these assumptions were also made in [19].
+The simpliﬁcation at ω = mw+ is that the location of r1 is known, namely r1 = r+, for this
+choice of parameters. This fact is straightforward to check explicitly using (21). It is also easy to
+understand intuitively—the only way for the tunneling rate (and, consequently, for the imaginary
+part of an eigenfrequency ω) to vanish is for the tunneling to be “kinematically forbidden”, and
+this is exactly what happens if V (r+) = 0. For all other values of ω the potential at the horizon
+is negative, V (r+) = −(ω − mw+)2 and the imaginary part is non-zero.
+
+A further simpliﬁcation happens at a = rg—in this case the second turning point coincides
+with the horizon, r2 = r+ for l > 2. This implies that at ω = mw+ one cannot set a = rg before
+performing the integral in (22). However, this makes the integration simple. Indeed at ω = mw+
+we can write
+
+V (r) = (r − r+)(r2 − r)v(r) ,
+
+(80)
+
+where in the limit a → rg the function v(r) has a ﬁnite non-vanishing limit in the whole interval
+
+51
+
+00.90.990.999125102050100200BlackHoleSpina(cid:144)rgI(cid:73)a(cid:145)rg(cid:77)(cid:73)Μa(cid:137)rg(cid:77)(r+, r2). Hence at ω = mw+, we can write the integral (22) in the limit a → rg as
+
+I = v(r+)1/2(r2
+
++ + a2)
+
+(cid:90) r2
+
+r+
+
+dr
+
+(cid:114) r2 − r
+r − r+
+
+1
+r − r−
+
+(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)a→rg
+
+= 2πv(rg)1/2r2
+g
+
+(cid:18)(cid:114) r2 − r−
+r+ − r−
+
+− 1
+
+(cid:19)(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)a→rg
+
+. (81)
+
+Now, taking the second derivative of (80) with respect to r and setting a = r = rg we obtain,
+
+v(rg)|a=rg
+
+= −
+
+1
+2
+
+∂2
+r V (rg)|a=rg =
+
+α(α − 1)
+2r4
+g
+
+.
+
+Similarly, taking the mixed second derivative of (80) with respect to r and a we obtain,
+
+(cid:113)
+
+g − a2 ∂ar2|a=rg
+r2
+
+(cid:113)
+
+g − a2∂a
+r2
+
+=
+
+(cid:18) ∂rV (rg)
+g(rg)
+
++ r+
+
+(cid:19)(cid:12)
+(cid:12)
+(cid:12)
+(cid:12)a=rg
+
+=
+
+3α + 1
+1 − α
+
+Equivalently, (83) implies that at a ≈ 1 one has
+
+r2 = rg +
+
+3α + 1
+α − 1
+
+(cid:113)
+
+g − a2 + O(r2
+r2
+
+g − a2) .
+
+(82)
+
+(83)
+
+(84)
+
+Finally, by plugging (82) and (84) into (81), we obtain the following answer for the tunneling
+integral in the extremal Kerr geometry
+
+I = π
+
+(cid:16)
+
+(cid:17)
+2α − (cid:112)2α(α − 1)
+
+.
+
+(85)
+
+In principle, we can continue as above and work out higher order terms in the (1−a)-expansion
+to arrive at the approximate analytical WKB formulaes for superradiant rates in the near-extremal
+case. Instead, in Fig. 15 we present the result of a numerical integration of (22) as a function of
+the black hole spin.
+
+References
+
+[1] A. Arvanitaki, S. Dimopoulos, S. Dubovsky, N. Kaloper and J. March-Russell,
+
+arXiv:0905.4720 [hep-th].
+
+[2] R. Narayan, New J. Phys. 7, 199 (2005) [arXiv:gr-qc/0506078].
+
+[3] J. E. McClintock and R. A. Remillard, arXiv:0902.3488 [astro-ph.HE].
+
+[4] L. Brenneman et al., arXiv:0902.4691 [astro-ph.HE].
+
+[5] J. E. McClintock, R. Narayan, L. Gou, R. F. Penna and J. A. Steiner, arXiv:0911.5408
+
+[astro-ph.HE].
+
+[6] J. L. Blum et al., Astrophys. J. 706, 60 (2009) [arXiv:0909.5383 [astro-ph.HE]].
+
+52
+
+[7] P. Bender, et al., LISA Pre-Phase A Report, http://lisa.gsfc.nasa.gov/Documentation/ppa2.08.pdf
+
+[8] S. Dimopoulos, P. W. Graham, J. M. Hogan, M. A. Kasevich and S. Rajendran, Phys. Rev.
+
+D 78, 122002 (2008) [arXiv:0806.2125 [gr-qc]].
+
+[9] S. Dimopoulos, P. W. Graham, J. M. Hogan, M. A. Kasevich and S. Rajendran, Phys. Lett.
+
+B 678, 37 (2009) [arXiv:0712.1250 [gr-qc]].
+
+[10] S. A. Hughes, AIP Conf. Proc. 873, 233 (2006) [arXiv:gr-qc/0608140].
+
+[11] S. Dubovsky, P. Tinyakov and M. Zaldarriaga, JHEP 0711, 083 (2007) [arXiv:0706.0288
+
+[hep-th]].
+
+[12] R. Penrose, Riv. Nuovo Cim. 1, 252 (1969) [Gen. Rel. Grav. 34, 1141 (2002)].
+
+[13] D. Christodoulou, Phys. Rev. Lett. 25, 1596 (1970).
+
+[14] Ya. B. Zeldovich, JETP Lett. 14, 180 (1971)
+
+[15] C. W. Misner, Phys. Rev. Lett. 28, 994 (1972).
+
+[16] A. A. Starobinskii, Soviet Physics JETP, 37, 28 (1973)
+
+[17] T. Damour, N. Deruelle and R. Ruﬃni, Lett. Nuovo Cim. 15, 257 (1976).
+
+[18] I. M. Ternov, V. R. Khalilov, G. A. Chizhov and A. B. Gaina, Sov. Phys. J. 21, 1200 (1978)
+
+[Izv. Vuz. Fiz. 21N9, 109 (1978)].
+
+[19] T. J. M. Zouros and D. M. Eardley, Annals Phys. 118, 139 (1979).
+
+[20] S. Detweiler, Phys. Rev. D 22, 2323 (1980).
+
+[21] P. Svrcek and E. Witten, JHEP 0606, 051 (2006) [arXiv:hep-th/0605206].
+
+[22] A. Arvanitaki, N. Craig, S. Dimopoulos, S. Dubovsky and J. March-Russell, arXiv:0909.5440
+
+[hep-ph].
+
+[23] W. H. Press and S. A. Teukolsky, Astrophys. J. 185, 649 (1973).
+
+[24] W. H. Press and S. A. Teukolsky, Nature 238, 211 (1972)
+
+[25] E. A. Donley, N. R. Claussen, S. L. Cornish, J. L. Roberts, E. A. Cornell, and C. E. Wieman,
+
+Nature 412, 295(2001)
+
+[26] https://dcc.ligo.org/cgi-bin/DocDB/ShowDocument?docid=2974; D. Shoemaker, private
+
+communication.
+
+[27] S. Hild, S. Chelkowski and A. Freise, arXiv:0810.0604 [gr-qc].
+
+[28] A. D. Linde, Phys. Lett. B 201, 437 (1988).
+
+53
+
+[29] R. M. Wald, “General Relativity,” Chicago, Usa: Univ. Pr. ( 1984) 491p
+
+[30] S. R. Dolan, Phys. Rev. D 76, 084001 (2007) [arXiv:0705.2880 [gr-qc]].
+
+[31] D. R. Brill, P. L. Chrzanowski, C. Martin Pereira, E. D. Fackerell and J. R. Ipser, Phys. Rev.
+
+D 5, 1913 (1972).
+
+[32] E. Berti, V. Cardoso and M. Casals, Phys. Rev. D 73, 024013 (2006) [Erratum-ibid. D 73,
+
+109902 (2006)] [arXiv:gr-qc/0511111].
+
+[33] J. G. Rosa, arXiv:0912.1780 [hep-th].
+
+[34] A. B. Gaina, Sov. Astron. Lett. 15, 243 (1989).
+
+[35] M. J. Rees, Ann. Rev. Astron. Astrophys. 22, 471 (1984).
+
+[36] E. Fermi, G. E. Uhlenbeck, Phys. Rev. 44, 510 (1933)
+
+[37] S. Weinberg, “Gravitation and Cosmology: Principles and Applications of the General Theory
+
+of Relativity”, New York, USA: Wiley (1972) 657 p
+
+[38] S. Babak, H. Fang, J. R. Gair, K. Glampedakis and S. A. Hughes, Phys. Rev. D 75, 024005
+
+(2007) [Erratum-ibid. D 77, 04990 (2008)] [arXiv:gr-qc/0607007].
+
+[39] C. Pethick, H. Smith, “Bose–Einstein Condensation in Dilute Gases”, Cambridge Univ. Press,
+
+(2002) 402 p
+
+[40] L. Gou et al., Astrophys. J. 701, 1076 (2009) [arXiv:0901.0920 [astro-ph.HE]].
+
+[41] http://www.srl.caltech.edu/∼shane/sensitivity/
+
+[42] N. Arkani-Hamed, L. Motl, A. Nicolis and C. Vafa, JHEP 0706, 060 (2007) [arXiv:hep-
+
+th/0601001].
+
+[43] J. March-Russell et al., work in progress.
+
+[44] L. Ubaldi, Phys. Rev. D 81, 025011 (2010) [arXiv:0811.1599 [hep-ph]].
+
+[45] V. G. Makhankov, Phys. Rept. 35, 1 (1978).
+
+[46] S. L. Shapiro and S. A. Teukolsky, “Black holes, white dwarfs, and neutron stars: The physics
+
+of compact objects,” New York, USA: Wiley (1983) 645 p
+
+[47] S. L. Shapiro, Astrophys. J. 620, 59 (2005) [arXiv:astro-ph/0411156].
+
+[48] M. Volonteri, arXiv:1003.4404 [astro-ph.CO].
+
+[49] M. Tegmark, A. Aguirre, M. Rees and F. Wilczek, Phys. Rev. D 73, 023505 (2006)
+
+[arXiv:astro-ph/0511774].
+
+54
+
+[50] B. Freivogel, arXiv:0810.0703 [hep-th].
+
+[51] R. Bousso, Phys. Rev. Lett. 97, 191302 (2006) [arXiv:hep-th/0605263].
+
+55
+
+

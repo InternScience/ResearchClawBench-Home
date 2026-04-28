@@ -1,0 +1,29 @@
+{
+  "task": "AI-guided inverse design of recyclable vitrimeric polymers with target Tg",
+  "named_methods": [
+    "Molecular dynamics (MD) simulation -> Tg (input only; provided in csvs)",
+    "Gaussian process (GP) calibration of MD Tg -> experimental Tg (heteroscedastic)",
+    "Graph variational autoencoder (graph VAE) over vitrimer molecules",
+    "Latent-space property optimization for inverse design",
+    "Validation of selected candidates (in this workspace: in-silico validation only; no wet lab access)"
+  ],
+  "named_axes": [
+    "MD Tg vs experimental Tg correlation",
+    "Calibrated Tg with uncertainty",
+    "Acid + epoxide pair representation",
+    "Target Tg conditioning (e.g. 350 / 400 / 450 K)"
+  ],
+  "deliverables": [
+    "EDA figures (Tg distributions, MD vs Exp scatter)",
+    "GP calibration model + cross-validated metrics",
+    "Calibrated Tg for all 8424 MD pairs with sigma",
+    "Trained graph-VAE with reconstruction & validity metrics",
+    "Latent property predictor (Tg) and inverse-design optimizer",
+    "Designed candidate molecules satisfying target Tg windows",
+    "report/report.md with methods, results, discussion, figures"
+  ],
+  "deviations_explicit": [
+    "Wet-lab experimental validation is NOT possible in this workspace; we substitute the GP-calibrated forward model as a surrogate and clearly state the limitation.",
+    "We use a smaller graph VAE (custom GIN-like encoder + SMILES GRU decoder) because torch_geometric is not installed and there is no GPU; this preserves the 'graph VAE' design intent while remaining tractable on CPU."
+  ]
+}

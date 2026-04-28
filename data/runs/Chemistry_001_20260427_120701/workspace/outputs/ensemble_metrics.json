@@ -1,0 +1,61 @@
+{
+  "n_samples": 8,
+  "per_sample": [
+    {
+      "sample": 0,
+      "ca_rmsd": 10.326497144695878,
+      "lig_rmsd_hungarian": 9.749058240415069
+    },
+    {
+      "sample": 1,
+      "ca_rmsd": 12.587193383621917,
+      "lig_rmsd_hungarian": 8.838021129098054
+    },
+    {
+      "sample": 2,
+      "ca_rmsd": 10.038703665894865,
+      "lig_rmsd_hungarian": 5.202164689694542
+    },
+    {
+      "sample": 3,
+      "ca_rmsd": 9.669256825881662,
+      "lig_rmsd_hungarian": 4.875014578013982
+    },
+    {
+      "sample": 4,
+      "ca_rmsd": 10.996392604207124,
+      "lig_rmsd_hungarian": 9.575966187380802
+    },
+    {
+      "sample": 5,
+      "ca_rmsd": 12.285634800004592,
+      "lig_rmsd_hungarian": 4.48498156765446
+    },
+    {
+      "sample": 6,
+      "ca_rmsd": 11.38286171334718,
+      "lig_rmsd_hungarian": 4.258408521464067
+    },
+    {
+      "sample": 7,
+      "ca_rmsd": 11.553102635883747,
+      "lig_rmsd_hungarian": 8.536897338543561
+    }
+  ],
+  "best_protein_sample": 3,
+  "best_protein_metrics": {
+    "sample": 3,
+    "ca_rmsd": 9.669256825881662,
+    "lig_rmsd_hungarian": 4.875014578013982
+  },
+  "best_ligand_sample": 6,
+  "best_ligand_metrics": {
+    "sample": 6,
+    "ca_rmsd": 11.38286171334718,
+    "lig_rmsd_hungarian": 4.258408521464067
+  },
+  "mean_ca_rmsd": 11.10495534669212,
+  "mean_lig_rmsd": 6.940064031533067,
+  "std_ca_rmsd": 0.9801152637448025,
+  "std_lig_rmsd": 2.2774430822273217
+}

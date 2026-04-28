@@ -1,0 +1,28 @@
+{
+  "task": "MATBG superfluid stiffness reproduction",
+  "core_experiments": [
+    "carrier-density dependence of D_s (conventional vs quantum-geometric vs experimental)",
+    "temperature dependence of D_s (power-law exponent for anisotropic gap, comparison to BCS, nodal, power-law n=2/2.5/3)",
+    "DC current dependence of D_s (GL/Meissner / I^2) and microwave current dependence"
+  ],
+  "key_quantities": [
+    "D_s vs n (m^-2)",
+    "D_s(T)/D_s(0) and exponent n from D_s(T)=D_s0*(1-(T/Tc)^n)",
+    "delta D_s / D_s0 vs (I/I_c)^2 (quadratic GL test)",
+    "ratio D_s_exp / D_s_conv to test quantum-geometric enhancement"
+  ],
+  "named_methods": [
+    "BCS s-wave temperature dependence",
+    "Nodal (linear) d-wave / line-node temperature dependence",
+    "Power-law D_s(T) = D_s0[1 - (T/Tc)^n]",
+    "Ginzburg-Landau quadratic suppression by current",
+    "Linear Meissner suppression"
+  ],
+  "primary_outputs": [
+    "outputs/density_summary.csv",
+    "outputs/temperature_fits.json",
+    "outputs/current_fits.json",
+    "report/images/*.png",
+    "report/report.md"
+  ]
+}

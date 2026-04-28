@@ -1,0 +1,44 @@
+{
+  "claims": [
+    {
+      "claim": "Framework accepts protein sequences, nucleic-acid sequences, and small-molecule structures via a unified token interface.",
+      "evidence": "code/framework.py — class Tokenizer.encode() with three vocabularies (AA / NA / element) and a TokenEmbedder that mixes them; nucleic-acid path is exercised in unit-style usage even though the 2L3R sample has no NA chain.",
+      "verified": true
+    },
+    {
+      "claim": "Diffusion-based architecture for atomic coordinates (DDPM, cosine schedule, ε-prediction).",
+      "evidence": "code/framework.py — cosine_alpha_bar, DiffusionModule, UnifiedComplexDiffusion.diffusion_loss and .sample. Schedule plotted in report/images/diffusion_schedule.png.",
+      "verified": true
+    },
+    {
+      "claim": "Pair-aware trunk inspired by AlphaFold's Pairformer (triangle multiplicative + pair attention).",
+      "evidence": "code/framework.py — TriangleMultiplicativeUpdateLite, PairAttention, PairformerLite. Architecture diagram in report/images/framework_architecture.png.",
+      "verified": true
+    },
+    {
+      "claim": "End-to-end training succeeds on the 2L3R FKBP12 / FK506 example: ε-prediction loss decreases from ≈1.0 to ≈0.2 over 250 CPU steps.",
+      "evidence": "outputs/train.log; report/images/training_loss.png; outputs/prediction.npz['losses'].",
+      "verified": true
+    },
+    {
+      "claim": "Sampler produces sensible 3-D structures: predictions beat random-coordinate baselines on both Cα RMSD and ligand RMSD.",
+      "evidence": "outputs/metrics.json (best Cα-RMSD 9.67 Å vs. random 13.27 Å; best ligand Hungarian RMSD 4.26 Å vs. random 14.24 Å).",
+      "verified": true
+    },
+    {
+      "claim": "Evaluation uses Kabsch alignment for protein backbone and Hungarian symmetry-aware matching for ligand RMSD.",
+      "evidence": "code/03_evaluate.py — kabsch / kabsch_align / hungarian_rmsd; outputs/metrics.json.",
+      "verified": true
+    },
+    {
+      "claim": "Multi-sample inference produces a posterior over structures; reporting best-of-K is consistent with AF3 evaluation practice.",
+      "evidence": "outputs/ensemble_metrics.json (K=8 samples, Cα-RMSD = 11.10 ± 0.98 Å, ligand RMSD = 6.94 ± 2.28 Å); report/images/ensemble_rmsd.png.",
+      "verified": true
+    },
+    {
+      "claim": "Quantitative numbers are illustrative (small CPU model, single-complex training) and are not a reproduction of AlphaFold-3 accuracy.",
+      "evidence": "outputs/method_fidelity_checklist.json explicit_deviations_from_AF3 list; outputs/dependency_check.json missing_for_full_AF3 list.",
+      "verified": true
+    }
+  ]
+}

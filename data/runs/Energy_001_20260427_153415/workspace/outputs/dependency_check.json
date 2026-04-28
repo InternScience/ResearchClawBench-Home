@@ -1,0 +1,8 @@
+{
+  "python": "3.10",
+  "pypsa": "0.35.2",
+  "solver": "HiGHS (highspy) available",
+  "matplotlib": "available",
+  "geopandas": "not required (network plotted via PyPSA + matplotlib scatter)",
+  "notes": "All deps required for linear OPF dispatch are present."
+}

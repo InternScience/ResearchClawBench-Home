@@ -1,0 +1,6 @@
+{
+  "python": "3.x",
+  "required": ["numpy", "scipy", "matplotlib", "pandas"],
+  "checked": "will install motmetrics if available; otherwise rely on internal evaluator using gt_id field",
+  "notes": "Data is synthetic with gt_id assigned to each detection so accurate identity-aware metrics are derivable without motmetrics."
+}

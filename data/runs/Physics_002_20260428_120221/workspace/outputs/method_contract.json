@@ -1,0 +1,32 @@
+{
+  "task": "RCS fidelity estimation on arbitrary-geometry random circuits",
+  "inputs": {
+    "results": "data/results/{group}/N{N}_d{d}_{kind}/N{N}_d{d}_r{r}_{kind}_counts.json",
+    "amplitudes": "data/amplitudes/{group}/N{N}_d{d}_XEB/N{N}_d{d}_r{r}_XEB_amplitudes.json"
+  },
+  "groups": ["N40_verification", "N_scan_depth12", "N56_depths"],
+  "kinds": ["XEB", "MB", "Transport_1QRB"],
+  "fidelity_estimators": {
+    "XEB": "F = (D/N_samples) * sum(p_ideal(s_meas)) - 1, D = 2^N",
+    "MB":  "F = N_correct / N_total where correct = ideal target bitstring",
+    "Transport_1QRB": "F = N_correct / N_total where correct = ideal target bitstring"
+  },
+  "uncertainty": "bootstrap (1000 resamples) per instance + mean +/- SEM across r",
+  "comparison_baseline": {
+    "classical_approximability_proxy": "digital-error model F ~= exp(-eps*N*d)",
+    "fit_source": "MB or 1QRB depth/width scans at N=40 and N-scan at d=12"
+  },
+  "scans": {
+    "depth_scan": "N=40 fixed, d in {8,10,12,14,16,18,20} for XEB; d in {8,10,12,14,16,18,20} for MB; d in {4,16,32,48,64,96} for Transport_1QRB",
+    "width_scan": "d=12 fixed, N in {16,24,32,40}"
+  },
+  "deliverables": [
+    "outputs/per_instance_fidelity.csv",
+    "outputs/aggregated_fidelity.csv",
+    "report/images/depth_scan_N40.png",
+    "report/images/width_scan_d12.png",
+    "report/images/instance_distribution.png",
+    "report/images/classical_approximability_gap.png",
+    "report/report.md"
+  ]
+}

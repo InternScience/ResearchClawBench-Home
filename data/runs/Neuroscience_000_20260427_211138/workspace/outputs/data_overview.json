@@ -1,0 +1,108 @@
+{
+  "features_extracted": {
+    "shape": [
+      1738,
+      51
+    ],
+    "columns_first10": [
+      "Unnamed: 0",
+      "Nose_1_x",
+      "Nose_1_y",
+      "Nose_1_p",
+      "Ear_left_1_x",
+      "Ear_left_1_y",
+      "Ear_left_1_p",
+      "Ear_right_1_x",
+      "Ear_right_1_y",
+      "Ear_right_1_p"
+    ],
+    "columns_last5": [
+      "Tail_end_2_x",
+      "Tail_end_2_y",
+      "Tail_end_2_p",
+      "Feature_1",
+      "Feature_2"
+    ]
+  },
+  "targets_inserted": {
+    "shape": [
+      1738,
+      53
+    ],
+    "labels": [
+      "Attack",
+      "Sniffing"
+    ],
+    "Attack_counts": {
+      "0": 1151,
+      "1": 587
+    },
+    "Sniffing_counts": {
+      "0": 1506,
+      "1": 232
+    },
+    "Attack_prevalence": 0.3377445339470656,
+    "Sniffing_prevalence": 0.1334867663981588,
+    "co_occurrence": 0
+  },
+  "machine_results_reference": {
+    "shape": [
+      300,
+      570
+    ],
+    "n_engineered_features": 564,
+    "Probability_Attack_summary": {
+      "mean": 0.14700000000000002,
+      "std": 0.33325846427867056,
+      "min": 0.0,
+      "max": 0.9
+    },
+    "Probability_Sniffing_summary": {
+      "mean": 0.033,
+      "std": 0.16943048416153067,
+      "min": 0.0,
+      "max": 0.9
+    },
+    "Attack_counts": {
+      "0": 251,
+      "1": 49
+    },
+    "Sniffing_counts": {
+      "0": 289,
+      "1": 11
+    }
+  },
+  "bodyparts_used": [
+    "Nose",
+    "Ear_left",
+    "Ear_right",
+    "Center",
+    "Lat_left",
+    "Lat_right",
+    "Tail_base",
+    "Tail_end"
+  ],
+  "animals": [
+    1,
+    2
+  ],
+  "tracker_confidence_mean": 0.9318900836051496,
+  "tracker_confidence_per_bodypart": {
+    "Nose_1_p": 0.957554066943038,
+    "Ear_left_1_p": 0.9749048988947066,
+    "Ear_right_1_p": 0.9915625431449941,
+    "Center_1_p": 0.988523344872267,
+    "Lat_left_1_p": 0.9232568292940162,
+    "Lat_right_1_p": 0.9640125492462601,
+    "Tail_base_1_p": 0.9341696119804374,
+    "Tail_end_1_p": 0.7380670827353281,
+    "Nose_2_p": 0.9264007754827388,
+    "Ear_left_2_p": 0.9629701913457998,
+    "Ear_right_2_p": 0.9770066522571921,
+    "Center_2_p": 0.9945896394637516,
+    "Lat_left_2_p": 0.9338308959804372,
+    "Lat_right_2_p": 0.96179219416916,
+    "Tail_base_2_p": 0.9601907660092059,
+    "Tail_end_2_p": 0.7214092958630609
+  }
+}

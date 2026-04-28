@@ -1,0 +1,13 @@
+{
+  "primary": [
+    {"id": "params_table", "path": "outputs/params_table.csv", "status": "complete"},
+    {"id": "delta_chi2_table", "path": "outputs/delta_chi2_AIC.csv", "status": "complete"},
+    {"id": "fig_posteriors_1d", "path": "report/images/posteriors_1d.png", "status": "complete"},
+    {"id": "fig_posteriors_2d", "path": "report/images/posteriors_2d.png", "status": "complete"},
+    {"id": "fig_distance_residuals", "path": "report/images/fig6_repro.png", "status": "complete"},
+    {"id": "fig_chi2_bar", "path": "report/images/chi2_bar.png", "status": "complete"},
+    {"id": "fig_param_shift", "path": "report/images/param_shift.png", "status": "complete"},
+    {"id": "claim_recovery", "path": "outputs/claim_recovery.json", "status": "complete"},
+    {"id": "report", "path": "report/report.md", "status": "complete"}
+  ]
+}

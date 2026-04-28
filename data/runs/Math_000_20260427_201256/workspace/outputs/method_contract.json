@@ -1,0 +1,19 @@
+{
+  "task": "Multi-object tracking on a simulated dense-occlusion sequence",
+  "named_methods": [
+    "ByteTrack (cascade by detection score: high then low)",
+    "SparseTrack (Depth Cascade Matching via pseudo-depth = bbox bottom y; hierarchical/sparse subset association on top of ByteTrack-style score cascade)"
+  ],
+  "input": "Per-frame detections with bbox + score + gt_id and per-frame gt_bboxes/gt_ids",
+  "output_per_method": "Trajectories: list of (frame, track_id, bbox) ; evaluation against ground-truth IDs",
+  "primary_metrics": ["MOTA", "IDF1", "ID switches", "MT", "ML", "FN", "FP"],
+  "comparison_axis": "ByteTrack vs SparseTrack on the same simulated_sequence.json",
+  "figures_required": [
+    "data_overview (counts per frame, score histogram)",
+    "pseudo_depth_distribution",
+    "metric_bar_comparison (ByteTrack vs SparseTrack)",
+    "per_frame_id_switches",
+    "qualitative_trajectory_snippet"
+  ],
+  "constraints": "Pure-numpy/scipy implementation; reproducible; no extra detector training; deterministic association"
+}

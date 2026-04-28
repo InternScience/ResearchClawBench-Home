@@ -1,0 +1,36 @@
+{
+  "claims": [
+    {
+      "claim": "A linear GLS Distance Network model has been implemented end-to-end.",
+      "evidence": ["code/gls_h0.py", "outputs/method_fidelity_checklist.json"]
+    },
+    {
+      "claim": "A baseline H0 is produced from the minimal dataset with full covariance.",
+      "evidence": ["outputs/h0_baseline.json", "outputs/gls_parameters.csv"]
+    },
+    {
+      "claim": "Multiple analysis variants are produced (anchor subsets, primary-indicator subsets, secondary-indicator subsets, jackknife by host).",
+      "evidence": ["outputs/h0_variants.csv", "outputs/h0_by_anchor.csv", "outputs/h0_by_indicator.csv", "report/images/h0_variants.png", "report/images/anchor_consistency.png"]
+    },
+    {
+      "claim": "Per-observation information weights are quantified, identifying which measurements drive the H0 constraint.",
+      "evidence": ["outputs/info_weights.csv", "report/images/info_weights.png"]
+    },
+    {
+      "claim": "Goodness of fit and residual diagnostics are reported.",
+      "evidence": ["outputs/residuals.csv", "report/images/residuals.png"]
+    },
+    {
+      "claim": "A sensitivity analysis (intrinsic-scatter rescaling and outlier jackknife) is included.",
+      "evidence": ["outputs/sensitivity_table.csv", "outputs/h0_consensus.json"]
+    },
+    {
+      "claim": "The result is contextualised against early-universe (CMB/Planck) and SH0ES values.",
+      "evidence": ["report/images/h0_vs_cmb.png", "report/report.md"]
+    },
+    {
+      "claim": "Software and data products are released alongside the report.",
+      "evidence": ["code/gls_h0.py", "code/make_figures.py", "code/sensitivity.py", "outputs/*"]
+    }
+  ]
+}

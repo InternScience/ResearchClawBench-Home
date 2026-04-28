@@ -1,0 +1,353 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_pore_models.py",
+    "path": "code/01_pore_models.py",
+    "type": "file",
+    "size": 5924,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "02_performance.py",
+    "path": "code/02_performance.py",
+    "type": "file",
+    "size": 4296,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "03_m6a.py",
+    "path": "code/03_m6a.py",
+    "type": "file",
+    "size": 5604,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "dna_r10.4.1_400bps_9mer_uncalled4.csv",
+    "path": "data/dna_r10.4.1_400bps_9mer_uncalled4.csv",
+    "type": "file",
+    "size": 13869488,
+    "mtime": 1772609428.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "dna_r9.4.1_400bps_6mer_uncalled4.csv",
+    "path": "data/dna_r9.4.1_400bps_6mer_uncalled4.csv",
+    "type": "file",
+    "size": 204434,
+    "mtime": 1772609426.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "m6a_labels.csv",
+    "path": "data/m6a_labels.csv",
+    "type": "file",
+    "size": 38905,
+    "mtime": 1772609432.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "m6a_predictions_nanopolish.csv",
+    "path": "data/m6a_predictions_nanopolish.csv",
+    "type": "file",
+    "size": 120766,
+    "mtime": 1772609432.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "m6a_predictions_uncalled4.csv",
+    "path": "data/m6a_predictions_uncalled4.csv",
+    "type": "file",
+    "size": 119042,
+    "mtime": 1772609432.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "performance_summary.csv",
+    "path": "data/performance_summary.csv",
+    "type": "file",
+    "size": 760,
+    "mtime": 1772609430.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "rna004_130bps_9mer_uncalled4.csv",
+    "path": "data/rna004_130bps_9mer_uncalled4.csv",
+    "type": "file",
+    "size": 13868930,
+    "mtime": 1772609430.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "rna_r9.4.1_70bps_5mer_uncalled4.csv",
+    "path": "data/rna_r9.4.1_70bps_5mer_uncalled4.csv",
+    "type": "file",
+    "size": 50124,
+    "mtime": 1772609428.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "claim_recovery.json",
+    "path": "outputs/claim_recovery.json",
+    "type": "file",
+    "size": 2089,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 558,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "kmer_chemistry_overlap.txt",
+    "path": "outputs/kmer_chemistry_overlap.txt",
+    "type": "file",
+    "size": 79,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "m6a_merged.csv",
+    "path": "outputs/m6a_merged.csv",
+    "type": "file",
+    "size": 210647,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "m6a_metrics.json",
+    "path": "outputs/m6a_metrics.json",
+    "type": "file",
+    "size": 951,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 990,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "method_fidelity_checklist.json",
+    "path": "outputs/method_fidelity_checklist.json",
+    "type": "file",
+    "size": 1245,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "performance_filesize_mb.csv",
+    "path": "outputs/performance_filesize_mb.csv",
+    "type": "file",
+    "size": 297,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "performance_speedups.csv",
+    "path": "outputs/performance_speedups.csv",
+    "type": "file",
+    "size": 449,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "performance_time_min.csv",
+    "path": "outputs/performance_time_min.csv",
+    "type": "file",
+    "size": 299,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 2 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1895840,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 11834529,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 3088444,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 11844346,
+    "mtime": 1773914901.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "base_position_effect.png",
+    "path": "report/images/base_position_effect.png",
+    "type": "file",
+    "size": 81121,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "kmer_current_distributions.png",
+    "path": "report/images/kmer_current_distributions.png",
+    "type": "file",
+    "size": 111967,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "kmer_dwell_distributions.png",
+    "path": "report/images/kmer_dwell_distributions.png",
+    "type": "file",
+    "size": 104326,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "m6a_calibration.png",
+    "path": "report/images/m6a_calibration.png",
+    "type": "file",
+    "size": 77585,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "m6a_pr_curves.png",
+    "path": "report/images/m6a_pr_curves.png",
+    "type": "file",
+    "size": 64771,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "m6a_roc_curves.png",
+    "path": "report/images/m6a_roc_curves.png",
+    "type": "file",
+    "size": 65261,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "m6a_score_distribution.png",
+    "path": "report/images/m6a_score_distribution.png",
+    "type": "file",
+    "size": 42865,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "performance_benchmark.png",
+    "path": "report/images/performance_benchmark.png",
+    "type": "file",
+    "size": 62626,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "performance_speedup_heatmap.png",
+    "path": "report/images/performance_speedup_heatmap.png",
+    "type": "file",
+    "size": 62918,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "position_base_sensitivity.png",
+    "path": "report/images/position_base_sensitivity.png",
+    "type": "file",
+    "size": 124968,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "rna001_vs_rna004_kmer_agreement.png",
+    "path": "report/images/rna001_vs_rna004_kmer_agreement.png",
+    "type": "file",
+    "size": 102987,
+    "mtime": 1777353704.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 16153,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6835,
+    "mtime": 1777285817.0,
+    "exported": true
+  }
+]

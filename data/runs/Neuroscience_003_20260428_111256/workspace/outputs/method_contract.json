@@ -1,0 +1,19 @@
+{
+  "task": "Trajectory-preserving feature selection on single-cell readouts",
+  "input": "adata_RPE.h5ad (4i protein imaging of RPE cells; 2759 cells x 241 features)",
+  "output": "subset of dynamically expressed molecular features that preserve continuous cellular trajectory",
+  "named_methods": [
+    "DELVE-style dynamic feature selection (graph-smooth dynamic features)",
+    "Laplacian Score (kNN-graph-based feature ranking)",
+    "Highly Variable Features (HVF baseline)",
+    "Diffusion pseudotime / DiffMap (Scanpy) for trajectory recovery"
+  ],
+  "evaluation_axes": [
+    "kNN-graph Jaccard preservation (full vs subset)",
+    "Spearman correlation between recovered pseudotime and annotated_age",
+    "kNN classification of cell-cycle phase",
+    "Visual trajectory continuity (UMAP)"
+  ],
+  "subgroups_to_preserve": ["phase (G0/G1/S/G2)", "state (cycling/arrested)", "batch"],
+  "feature_set_sizes_k": [10, 25, 50]
+}

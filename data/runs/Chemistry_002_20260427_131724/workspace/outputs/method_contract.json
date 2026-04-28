@@ -1,0 +1,26 @@
+{
+  "task": "HADDOCK3-style integrative modeling of barnase-barstar (1BRS) and validation against SKEMPI 2.0",
+  "named_methods_required": [
+    "HADDOCK / HADDOCK3 integrative modeling protocol",
+    "Ambiguous Interaction Restraints (AIRs) driven docking",
+    "HADDOCK water-stage scoring function (linear combination of E_vdw, E_elec, E_AIR, E_desolv)",
+    "Rigid-body sampling + clustering as in HADDOCK protocol",
+    "Validation against SKEMPI 2.0 experimental binding affinity changes upon mutation"
+  ],
+  "primary_quantitative_targets": [
+    "Top-ranked docking poses with HADDOCK score",
+    "Cluster sizes, ranks, mean scores, best-of-cluster",
+    "Interface RMSD vs reference 1BRS_AD bound complex",
+    "Spearman/Pearson correlation between per-residue HADDOCK-style interface energies and SKEMPI ddG"
+  ],
+  "deviations_from_named_method": [
+    "HADDOCK3 itself relies on CNS (closed-source, not installable in this sandbox). Implementation is a faithful Python re-implementation of the AIR-driven rigid-body sampling + HADDOCK water-stage scoring rather than the canonical haddock3 binary.",
+    "Force field parameters approximated with Lennard-Jones using OPLS-style atomic radii and partial charges from a small lookup table; HADDOCK uses full OPLSx parameters."
+  ],
+  "deliverables": [
+    "code/: pipeline scripts",
+    "outputs/: AIR table, pose tables, cluster table, SKEMPI validation table",
+    "report/images/: data overview, AIR map, score-RMSD funnel, predicted vs reference interface, SKEMPI validation",
+    "report/report.md: full methodology, results, validation, discussion"
+  ]
+}

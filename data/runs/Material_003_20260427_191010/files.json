@@ -1,0 +1,291 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_eda_and_gp_calibration.py",
+    "path": "code/01_eda_and_gp_calibration.py",
+    "type": "file",
+    "size": 6227,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "02_apply_gp_to_vitrimers.py",
+    "path": "code/02_apply_gp_to_vitrimers.py",
+    "type": "file",
+    "size": 2420,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "03_train_graph_vae.py",
+    "path": "code/03_train_graph_vae.py",
+    "type": "file",
+    "size": 16193,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "03b_encode_all_monomers.py",
+    "path": "code/03b_encode_all_monomers.py",
+    "type": "file",
+    "size": 6713,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "04_inverse_design.py",
+    "path": "code/04_inverse_design.py",
+    "type": "file",
+    "size": 15989,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "05_validation_artifacts.py",
+    "path": "code/05_validation_artifacts.py",
+    "type": "file",
+    "size": 6737,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "tg_calibration.csv",
+    "path": "data/tg_calibration.csv",
+    "type": "file",
+    "size": 23515,
+    "mtime": 1773033792.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "tg_vitrimer_MD.csv",
+    "path": "data/tg_vitrimer_MD.csv",
+    "type": "file",
+    "size": 917247,
+    "mtime": 1773033792.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "calibration_metrics.csv",
+    "path": "outputs/calibration_metrics.csv",
+    "type": "file",
+    "size": 296,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "calibration_predictions.csv",
+    "path": "outputs/calibration_predictions.csv",
+    "type": "file",
+    "size": 31067,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "claim_recovery.csv",
+    "path": "outputs/claim_recovery.csv",
+    "type": "file",
+    "size": 1006,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 512,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "designed_candidates.csv",
+    "path": "outputs/designed_candidates.csv",
+    "type": "file",
+    "size": 243335,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "designed_candidates_top.csv",
+    "path": "outputs/designed_candidates_top.csv",
+    "type": "file",
+    "size": 8219,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "gp_calibration.pkl",
+    "path": "outputs/gp_calibration.pkl",
+    "type": "file",
+    "size": 717206,
+    "mtime": 1777353706.0,
+    "exported": false
+  },
+  {
+    "name": "latent_predictor_metrics.json",
+    "path": "outputs/latent_predictor_metrics.json",
+    "type": "file",
+    "size": 176,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "latent_tg_predictor.pt",
+    "path": "outputs/latent_tg_predictor.pt",
+    "type": "file",
+    "size": 69797,
+    "mtime": 1777353706.0,
+    "exported": false
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1597,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 9 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 577093,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8227164,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 3334613,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 4004940,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig_calibrated_vitrimer_tg.png",
+    "path": "report/images/fig_calibrated_vitrimer_tg.png",
+    "type": "file",
+    "size": 80401,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "fig_inverse_design.png",
+    "path": "report/images/fig_inverse_design.png",
+    "type": "file",
+    "size": 74667,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "fig_latent_property_pred.png",
+    "path": "report/images/fig_latent_property_pred.png",
+    "type": "file",
+    "size": 337289,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "fig_md_vs_exp_calibration.png",
+    "path": "report/images/fig_md_vs_exp_calibration.png",
+    "type": "file",
+    "size": 234567,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "fig_tg_distributions.png",
+    "path": "report/images/fig_tg_distributions.png",
+    "type": "file",
+    "size": 70351,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "fig_top_candidates.png",
+    "path": "report/images/fig_top_candidates.png",
+    "type": "file",
+    "size": 361887,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "fig_vae_training.png",
+    "path": "report/images/fig_vae_training.png",
+    "type": "file",
+    "size": 77892,
+    "mtime": 1777353705.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 19419,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4961,
+    "mtime": 1777288210.0,
+    "exported": true
+  }
+]

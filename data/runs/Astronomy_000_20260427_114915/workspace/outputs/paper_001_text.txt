@@ -1,0 +1,391 @@
+The Spectrum of the Axion Dark Sector,
+Cosmological Observable and Black Hole
+Superradiance Constraints
+
+Matthew J. Stott*†
+Theoretical Particle Physics and Cosmology Group, Department of Physics,
+King’s College London, University of London, Strand, London, WC2R 2LS, United Kingdom
+E-mail: matthew.stott@kcl.ac.uk
+
+Consistent frameworks of quantum gravity often predict the existence of large numbers of ul-
+tralight pseudoscalar degrees of freedom, forming the phenomenological landscape of the String
+Axiverse. The complexity of the extra-dimensional compactiﬁcation manifolds and vacua de-
+termine that these ﬁelds could possess parameters with cosmologically signiﬁcant scales, which
+span many decades. Astrophysical observations of stellar binary and supermassive black hole
+systems can be used to exclude the existence of certain ultralight massive bosons, via the super-
+radiance phenomenon. In this work it is shown how these measurements can be used to constrain
+properties of statistical distributions for the masses of multiple bosonic ﬁeld theories, inspired by
+axion ﬁeld alignment models and an explicit realisation of the string axiverse in M-theory. Such a
+methodology can exclude Nax
+30 axion-like ﬁelds with a range of mass distribution widths and
+central values spanning many orders of magnitude, covering axion phenomenologies important
+to the dark sector and grand uniﬁed theories. This is demonstrated for several examples of axions
+in string theory and M-theory, where the mass distributions in certain cases take universal forms
+found in random matrix theory.
+
+≥
+
+8
+1
+0
+2
+
+v
+o
+N
+4
+1
+
+]
+h
+t
+-
+p
+e
+h
+[
+
+1
+v
+3
+6
+7
+5
+0
+.
+1
+1
+8
+1
+:
+v
+i
+X
+r
+a
+
+The 39th International Conference on High Energy Physics (ICHEP2018)
+4-11 July, 2018
+Seoul, Korea
+
+*Speaker.
+†Based on work in collaboration with David J. E. Marsh [1] (Institüt für Astrophysik, Göttingen).
+
+© Copyright owned by the author(s) under the terms of the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+
+https://pos.sissa.it/
+
+ 
+ 
+ 
+ 
+ 
+ 
+Constraints on the number of axion-like ﬁelds
+
+Matthew J. Stott
+
+1. Axions and the String Axiverse
+
+Axions or axion like particles (ALPs) are omnipresent components in string/M-theory frame-
+works which serve as consistent theories of quantum gravity [2, 3]. The complex topological
+properties of the extra dimensional manifolds are often associated with a large number of moduli
+possessing scales likely important to understanding the full evolution of the cosmic history. A full
+and detailed understanding of the systematics of the full scalar potential is an enormously imposing
+task and so various low energy descriptions of these models have enjoyed the beneﬁts of effective
+ﬁeld theories (EFTs), incorporating random matrix theory (RMT) and the universal nature their
+cosmologically deﬁning parameters could take. If these parameters, the axion decay constant, fa
+or ﬁeld mass, µax span speciﬁc regions then ALPs can contribute to either the dark matter or dark
+energy densities of the Universe at the current epoch. ALPs with a Compton wavelength commen-
+surate to that of spinning astrophysical black holes (BHs) predict a resonant susceptibility to the
+Penrose process, spinning down BHs via superradiance. Observed masses of stellar and supermas-
+11 eV providing a
+sive BHs (SMBHs) give a probeable axion mass window, 10−
+powerful methodology to place model independent constraints on both the mass spectrum and the
+allowed number of ﬁelds, Nax. See Sections IV and V of Ref. [4] for constraints on the dark sector
+cosmology of the RMT axiverse models outlined in Section 2.
+
+20 eV (cid:46) µax (cid:46) 10−
+
+2. The Effective Random Matrix Axion Mass Spectrum
+
+The most general effective action for ALPs is such that the kinetic matrix,
+
+i j related to the
+Kähler metric in supersymmetric theories is both non-diagonal and non-canonically normalised.
+The generic multi axion Lagrangian takes the form,
+
+K
+
+ax =
+
+L
+
+−
+
+Nax
+∑
+i, j=1 K
+
+i j∂ν θi∂ ν θ j
+
+ninst
+∑
+α=1
+
+Nax
+∑
+j=1
+
+−
+
+ΛαUα (
+
+Q
+
+j,α θ j + δα ),
+
+(2.1)
+
+Q
+
+where θi are the dimensionless axion ﬁelds and U is a general periodic instanton potential with
+charge matrix,
+and phases, δ . An expansion to quadratic order of the local minima associated
+with well-aligned axion potentials in the limit ninst = Nax reveals a spectrum of ﬁelds retaining
+i j. A synchronous diagonalisation and
+discrete shift symmetries, encoded in a mass matrix,
+rescaling of the ﬁelds in canonical coordinates reduces Eq. (2.1) to the form,
+1
+2
+
+∂ν φi∂ ν φi
+
+diag(µ 2
+
+ax)φiφi .
+
+(2.2)
+
+ax =
+
+M
+
+1
+2
+
+−
+
+−
+
+L
+
+}
+
+{
+
+µi
+
+The model’s spectrum is given by the mass eigenstates,
+, who’s spectral limits can be de-
+rived from the universal nature of RMT. It has been shown that a series of RMT models based
+on axion ﬁeld alignment and an explicit realisation of the string axiverse in G2 compactiﬁed M-
+theory [5] give rise to a spectrum of ﬁelds with mass eigenstates well approximated by a log-
+normal distribution [4]. Example spectra are displayed in the left and middle panels of Fig. 1,
+with universal forms determined by the powerful principles in multivariate statistics akin to the
+multiplicative central limit theorem. Each sample covariance matrix is constructed in the Wishart
+ik Yk j where the dimensions of the sub-matrices are controlled by a shaping
+form,
+K
+parameter, β
+(0, 1] (see Section III of Ref. [4]). The following summarises derived constraints
+from the more detailed work in Ref. [1].
+
+i j = N−
+
+M ∈
+
+1Y T
+
+M
+
+i j,
+
+1
+
+Constraints on the number of axion-like ﬁelds
+
+Matthew J. Stott
+
+Figure 1: Left panel: Normalised eigenvalue spectra for axion masses in the Wishart class align-
+ment model in Section IIIC2 of Ref. [4]. Middle panel: M-theory eigenvalue spectra for axions
+masses using a ﬁxed value for the average three-cycle volume
+1/αGUT, in Section IIID
+of Ref. [4]. Right panel: Pex (µax) exclusion functions for degenerate mass axion populations.
+
+VX
+(cid:104)
+
+= 25
+
+≈
+
+(cid:105)
+
+3. Black Hole Superradiance Constraints on the Number of Axions
+
+(cid:1)
+
+×
+
+×
+
+10−
+
+10−
+
+20 eV
+
+ALPs in the presence of a rotating BH, conforming to the Kerr geometry, form a scalar-BH
+condensate system 1. The following constraints hold in the limit of small ﬁeld self-interactions
+fa (cid:38) 1014 GeV
+where the evolution of each ﬁeld is independent on the Kerr background and their
+effects are approximated by a linear summation over the axion population size, Nax. The general
+(cid:0)
+condition for mode ampliﬁcation of the scalar condensate follows the superradiance condition,
+ω/m < ω+. An intrinsic prediction of superradiant instabilities associated with bosonic ﬁelds, which
+follow this condition, is the presence of isocontour exclusion regions in the BH Mass-Spin Regge
+plane. Estimates of the relevant instability time scales, τSR partnered with accurate and reliable
+spin measurements for BHs, can be used to impose meticulous constraints on the allowed masses
+the ﬁelds can take, inside the region 7
+µax
+≤
+11 eV as shown in the left panel of Fig. 2. It is also possible to constrain a population of non-
+2
+degenerate masses by ﬁrst considering the degenerate case, as it is trivial to treat for any number
+of ﬁelds whereby the superradiance rate, additive in Nax, deﬁnes the total rate, Γtot = NaxΓSR. The
+right panel of Fig. 1 shows the 95% excluded regions for a degenerate population of masses, µax.
+The relevant exclusion bounds change by less than an order of magnitude compared to the single
+ﬁeld case for Nax (cid:46) 105, ensuring an increase in the superradiance rate for multiple ﬁelds can be
+neglected when computing the total exclusion probability function. With the effect of rate addition
+neglected, the exclusion probability for a mass distribution is trivial to construct from the single
+ﬁeld overlap integral. The general probability that a given model’s parameters, θ are allowed for
+Nax = 1)]Nax. The allowed number of
+Nax becomes, Pal(θ , Nax
+|
+M
+ALPs drawn from log-normal distributions as a function of the width, σ and central value, ¯µax are
+detailed in the right panel of Fig. 2, where regions above the contours are excluded. Certain ranges
+of σ correspond closely to RMT and M-theory mass spectra. For 1 (cid:46) σ (cid:46) 20, Nax
+30 is excluded
+for an extremely wide range of central masses important to axion cosmology.
+
+16 eV and 7
+
+dµax p(µax
+
+)Pal(µax
+
+14 eV
+
+θ ,
+|
+
+) = [
+
+10−
+
+10−
+
+|M
+
+µax
+
+≤
+
+≤
+
+×
+
+×
+
+≤
+
+≥
+
+1
+
+(cid:82)
+
+It has been shown BH superradiance can place strong constraints on the possible existence
+of a spectrum of ultralight ALPs with small self-interactions by considering the central masses
+
+1The theoretic foundations of BH superradiance have been extensively covered in Refs. [6, 7]
+
+2
+
+ 4 3 2 101234log10 µ2ax/¯µ2ax 0.000.250.500.751.001.251.501.752.002.25P(µ2ax) M=0.95 M=0.75 M=0.50 M=0.25 M=0.05−50−40−30−20−100log10(µax)[eV]0.000.010.020.030.040.050.06P(µax)βM=0.95βM=0.75βM=0.50βM=0.25βM=0.0510−2010−190.81.010−2010−1910−1810−1710−1610−15µax[eV]0.00.20.40.60.81.0Pex(µax)95%Exclusion68%Exclusion95%Exclusion68%Exclusion012345log10(Nax)0.60.81.01.21.4×10−160.80.91.0Constraints on the number of axion-like ﬁelds
+
+Matthew J. Stott
+
+107 yrs
+Figure 2: Left panel: Isocontour exclusion bound thresholds for time scales, τSalpeter
+for each of the dominant orbital/azimuthal quantum modes, along with the calculated total exclu-
+sion probability function (black line) using xray/BH binary and SMBH systems (blue and orange
+data points). Right panel: 95% exclusion isocontours regions for log-normal axion mass distribu-
+tions as a function of the width, σ , and number of ﬁelds, Nax, for various central masses, ¯µax.
+
+4.5
+
+(cid:39)
+
+×
+
+and population numbers for universal forms of the ﬁelds spectra. It is expected that their masses
+should follow such particular statistical distributions independently of the microscopic details of
+the compact space. In particular the benchmark value of Nax
+30 found in the majority of known
+Calabi-Yau manifolds can be excluded for a wide range of distribution parameters.
+
+≈
+
+Acknowledgments
+
+M.J.S is grateful to the ICHEP 2018 organising committee for their invitation for participation
+
+and for awarding the registration fee grant along with the Centre for Doctoral Studies and King’s
+College London for supporting with travel costs by awarding the Conference Fund Grant. This
+research is supported by funding from the UK Science and Technology Facilities Council (STFC).
+
+References
+
+[1] M. J. Stott and D. J. E. Marsh, Phys. Rev. D 98 (2018) no.8, 083006
+doi:10.1103/PhysRevD.98.083006 [arXiv:1805.02016 [hep-ph]].
+
+[2] A. Arvanitaki, S. Dimopoulos, S. Dubovsky, N. Kaloper and J. March-Russell, Phys. Rev. D 81
+
+(2010) 123530 doi:10.1103/PhysRevD.81.123530 [arXiv:0905.4720 [hep-th]].
+
+[3] P. Svrcek and E. Witten, JHEP 0606 (2006) 051 doi:10.1088/1126-6708/2006/06/051
+
+[hep-th/0605206].
+
+[4] M. J. Stott, D. J. E. Marsh, C. Pongkitivanichkul, L. C. Price and B. S. Acharya, Phys. Rev. D 96
+(2017) no.8, 083510 doi:10.1103/PhysRevD.96.083510 [arXiv:1706.03236 [astro-ph.CO]].
+
+[5] B. S. Acharya, K. Bobkov and P. Kumar, JHEP 1011 (2010) 105 doi:10.1007/JHEP11(2010)105
+
+[arXiv:1004.5138 [hep-th]].
+
+[6] A. Arvanitaki and S. Dubovsky, Phys. Rev. D 83 (2011) 044026 doi:10.1103/PhysRevD.83.044026
+
+[arXiv:1004.3558 [hep-th]].
+
+[7] R. Brito, V. Cardoso and P. Pani, Lect. Notes Phys. 906 (2015) pp.1 doi:10.1007/978-3-319-19000-6
+
+[arXiv:1501.06570 [gr-qc]].
+
+3
+
+10 1100101102103104105106107108109MBH[M ]0.00.20.40.60.81.0a⇤StellarBHsSMBHs10 2010 1910 1810 1710 1610 1510 1410 1310 1210 1110 10µax[eV]0.00.20.40.60.81.0Pex(µax)Pex(µax)10 1010 1110 1210 1310 1410 1510 1610 1710 1810 1910 20µax[eV]10 1100101102 100101102103NaxExcludedAllowedM theoryRMTLog ﬂatNax=3010 2210 2110 2010 1910 1810 1710 1610 1510 1410 1310 1210 1110 10¯µax[eV]

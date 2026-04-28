@@ -1,0 +1,36 @@
+{
+  "claims": [
+    {
+      "claim": "A linear optimal power dispatch on the GB 20-node network can be solved to optimality with PyPSA + HiGHS for the 168-hour week.",
+      "evidence": "outputs/scenario_summary.csv (status=ok, condition=optimal for all scenarios)"
+    },
+    {
+      "claim": "Base scenario weekly system operating cost is ~£710 M.",
+      "evidence": "outputs/summary_S0_base.json -> objective_GBP = 7.10e8"
+    },
+    {
+      "claim": "Tightening transmission to 50% (S1) increases curtailment and total cost.",
+      "evidence": "scenario_summary.csv: S1 cost = 8.05e8 vs S0 7.10e8; curtail 2.87 TWh vs 2.24 TWh"
+    },
+    {
+      "claim": "+50% wind capacity (S2) lowers cost but increases curtailment.",
+      "evidence": "scenario_summary.csv: S2 cost = 6.81e8 (-4%); curtailment 4.14 TWh (+85%) vs base"
+    },
+    {
+      "claim": "Removing storage (S3) does not change total cost meaningfully because backstop sets the price most of the time.",
+      "evidence": "scenario_summary.csv: S3 vs S0 objective = 7.1027e8 vs 7.1027e8 (matched); per-bus dispatch identical."
+    },
+    {
+      "claim": "Tripling gas marginal cost (S4) almost completely drives gas out of the merit order.",
+      "evidence": "scenario_summary.csv: gas_MWh drops from 1.35 TWh to 0 in S4."
+    },
+    {
+      "claim": "A wind drought (cf x 0.5, S5) is the only scenario where the modelled PHS storage is meaningfully cycled.",
+      "evidence": "report/images/fig_storage_soc.png; outputs/storage_soc_S5_wind_drought.csv contains non-zero SoC traces while S0/S1/S2/S4 SoC remain ~0."
+    },
+    {
+      "claim": "Transmission utilisation is high in S1 (mean ~82%, peak 100%), indicating widespread congestion.",
+      "evidence": "outputs/line_utilisation_S1_grid_minus50.csv; report/images/fig_line_loading.png"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "named_method": "Hybrid MARL+LNS for MAPF (a la MAPF-LNS2 + PRIMAL/SCRIMP-style MARL)",
+  "ingredients_required": {
+    "LNS2_skeleton": {
+      "init_paths_with_collisions": true,
+      "destroy_neighborhood_selection": "collision-graph BFS from most-conflicted agent",
+      "repair_replans_subset": true,
+      "accept_if_collisions_decrease": true,
+      "iterate_until_zero_collisions_or_budget": true
+    },
+    "PP_repair_operator": {
+      "space_time_A_star": true,
+      "vertex_edge_final_reservations": true,
+      "random_priority_order_per_iter": true
+    },
+    "MARL_repair_operator": {
+      "decentralized_per_agent_policy": true,
+      "local_FOV_observation": "5-tuple (sgn(dr), sgn(dc), 4 adjacency tags) -- 4-cell FOV",
+      "shared_policy_across_agents": true,
+      "cooperative_reward_shaping": "step penalty + BFS progress bonus + collision/blocked penalty + goal bonus",
+      "tabular_Q_learning_with_shared_table": true,
+      "local_decentralized_rollout_for_repair": true,
+      "global_communication_transformer": false,
+      "intrinsic_rewards_a_la_SCRIMP": false,
+      "demonstration_imitation_a_la_PRIMAL": false
+    },
+    "Hybrid_two_stage": {
+      "early_stage_uses_MARL_repair": true,
+      "late_stage_uses_PP_repair": true,
+      "adaptive_switch_when_MARL_stalls": true,
+      "iter_budget_fraction_for_MARL": "marl_iters_frac=0.4 with early-stop after 5 consecutive MARL failures"
+    }
+  },
+  "deviations_explicitly_acknowledged": [
+    "MARL is tabular (not a neural net) and not trained at PRIMAL/SCRIMP scale.",
+    "No global transformer-based communication module (SCRIMP).",
+    "No expert imitation demonstrations (PRIMAL).",
+    "Q-table is trained quickly per (family, agent_count) on a single instance and reused for the rest; no large-scale curriculum."
+  ]
+}

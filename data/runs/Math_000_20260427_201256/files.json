@@ -1,0 +1,274 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "bytetrack.py",
+    "path": "code/bytetrack.py",
+    "type": "file",
+    "size": 7271,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "run_experiments.py",
+    "path": "code/run_experiments.py",
+    "type": "file",
+    "size": 17839,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "sparsetrack.py",
+    "path": "code/sparsetrack.py",
+    "type": "file",
+    "size": 9536,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "tracker_core.py",
+    "path": "code/tracker_core.py",
+    "type": "file",
+    "size": 5569,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "simulated_sequence.json",
+    "path": "data/simulated_sequence.json",
+    "type": "file",
+    "size": 6512395,
+    "mtime": 1772429302.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "comparison_metrics.csv",
+    "path": "outputs/comparison_metrics.csv",
+    "type": "file",
+    "size": 388,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 328,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "id_consistency_bytetrack.json",
+    "path": "outputs/id_consistency_bytetrack.json",
+    "type": "file",
+    "size": 124144,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "id_consistency_sparsetrack.json",
+    "path": "outputs/id_consistency_sparsetrack.json",
+    "type": "file",
+    "size": 130424,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1048,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "per_frame_idsw.csv",
+    "path": "outputs/per_frame_idsw.csv",
+    "type": "file",
+    "size": 926,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "recall_by_depth.csv",
+    "path": "outputs/recall_by_depth.csv",
+    "type": "file",
+    "size": 142,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "results_bytetrack.json",
+    "path": "outputs/results_bytetrack.json",
+    "type": "file",
+    "size": 1600718,
+    "mtime": 1777353706.0,
+    "exported": false
+  },
+  {
+    "name": "results_sparsetrack.json",
+    "path": "outputs/results_sparsetrack.json",
+    "type": "file",
+    "size": 1786858,
+    "mtime": 1777353706.0,
+    "exported": false
+  },
+  {
+    "name": "sparsetrack_levels_sweep.csv",
+    "path": "outputs/sparsetrack_levels_sweep.csv",
+    "type": "file",
+    "size": 349,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 2 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 115276,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8638055,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 2800126,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 871604,
+    "mtime": 1773914905.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 97023,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "fragmentation_hist.png",
+    "path": "report/images/fragmentation_hist.png",
+    "type": "file",
+    "size": 46804,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "idsw_per_frame.png",
+    "path": "report/images/idsw_per_frame.png",
+    "type": "file",
+    "size": 126188,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "metric_comparison.png",
+    "path": "report/images/metric_comparison.png",
+    "type": "file",
+    "size": 46845,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "qualitative_tracks.png",
+    "path": "report/images/qualitative_tracks.png",
+    "type": "file",
+    "size": 99034,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "recall_by_depth.png",
+    "path": "report/images/recall_by_depth.png",
+    "type": "file",
+    "size": 44556,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "score_pseudo_depth.png",
+    "path": "report/images/score_pseudo_depth.png",
+    "type": "file",
+    "size": 291641,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "sparsetrack_levels_sweep.png",
+    "path": "report/images/sparsetrack_levels_sweep.png",
+    "type": "file",
+    "size": 77436,
+    "mtime": 1777353706.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 19718,
+    "mtime": 1777353707.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5172,
+    "mtime": 1777291976.0,
+    "exported": true
+  }
+]

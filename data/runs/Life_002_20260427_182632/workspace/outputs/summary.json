@@ -1,0 +1,460 @@
+{
+  "complex_alignment_USalign_mm1": {
+    "L_query": 3009,
+    "L_target": 726,
+    "L_aligned": 225,
+    "RMSD": 8.28,
+    "seqID_aligned": 0.071,
+    "TM_norm_q": 0.06066,
+    "TM_norm_t": 0.19411,
+    "t": [
+      26.2332397691,
+      302.5710399808,
+      235.6294934443
+    ],
+    "U": [
+      [
+        -0.1662679441,
+        0.8424808767,
+        -0.5124265247
+      ],
+      [
+        -0.1939664708,
+        -0.5374500172,
+        -0.8206853765
+      ],
+      [
+        -0.96681538,
+        -0.0370601057,
+        0.2527737518
+      ]
+    ]
+  },
+  "chain_pair_USalign": [
+    {
+      "query_chain": "A",
+      "target_chain": "A",
+      "TM_norm_q": "0.365",
+      "TM_norm_t": "0.1566",
+      "RMSD": "5.91",
+      "seqID_norm_q": "0.058",
+      "seqID_norm_t": "0.019",
+      "seqID_aligned": "0.093",
+      "L_q": "241",
+      "L_t": "726",
+      "L_aligned": "151"
+    },
+    {
+      "query_chain": "B",
+      "target_chain": "A",
+      "TM_norm_q": "0.2912",
+      "TM_norm_t": "0.1134",
+      "RMSD": "5.91",
+      "seqID_norm_q": "0.027",
+      "seqID_norm_t": "0.008",
+      "seqID_aligned": "0.056",
+      "L_q": "219",
+      "L_t": "726",
+      "L_aligned": "108"
+    },
+    {
+      "query_chain": "C",
+      "target_chain": "A",
+      "TM_norm_q": "0.3143",
+      "TM_norm_t": "0.1715",
+      "RMSD": "6.41",
+      "seqID_norm_q": "0.046",
+      "seqID_norm_t": "0.021",
+      "seqID_aligned": "0.087",
+      "L_q": "329",
+      "L_t": "726",
+      "L_aligned": "172"
+    },
+    {
+      "query_chain": "D",
+      "target_chain": "A",
+      "TM_norm_q": "0.3153",
+      "TM_norm_t": "0.1723",
+      "RMSD": "6.38",
+      "seqID_norm_q": "0.042",
+      "seqID_norm_t": "0.019",
+      "seqID_aligned": "0.081",
+      "L_q": "331",
+      "L_t": "726",
+      "L_aligned": "172"
+    },
+    {
+      "query_chain": "E",
+      "target_chain": "A",
+      "TM_norm_q": "0.3146",
+      "TM_norm_t": "0.1693",
+      "RMSD": "6.38",
+      "seqID_norm_q": "0.037",
+      "seqID_norm_t": "0.017",
+      "seqID_aligned": "0.071",
+      "L_q": "324",
+      "L_t": "726",
+      "L_aligned": "169"
+    },
+    {
+      "query_chain": "F",
+      "target_chain": "A",
+      "TM_norm_q": "0.3135",
+      "TM_norm_t": "0.1686",
+      "RMSD": "6.33",
+      "seqID_norm_q": "0.037",
+      "seqID_norm_t": "0.017",
+      "seqID_aligned": "0.071",
+      "L_q": "324",
+      "L_t": "726",
+      "L_aligned": "168"
+    },
+    {
+      "query_chain": "G",
+      "target_chain": "A",
+      "TM_norm_q": "0.3459",
+      "TM_norm_t": "0.1659",
+      "RMSD": "6.46",
+      "seqID_norm_q": "0.036",
+      "seqID_norm_t": "0.014",
+      "seqID_aligned": "0.061",
+      "L_q": "280",
+      "L_t": "726",
+      "L_aligned": "165"
+    },
+    {
+      "query_chain": "H",
+      "target_chain": "A",
+      "TM_norm_q": "0.3136",
+      "TM_norm_t": "0.1324",
+      "RMSD": "5.92",
+      "seqID_norm_q": "0.03",
+      "seqID_norm_t": "0.01",
+      "seqID_aligned": "0.055",
+      "L_q": "234",
+      "L_t": "726",
+      "L_aligned": "128"
+    },
+    {
+      "query_chain": "L",
+      "target_chain": "A",
+      "TM_norm_q": "0.227",
+      "TM_norm_t": "0.1965",
+      "RMSD": "8.48",
+      "seqID_norm_q": "0.03",
+      "seqID_norm_t": "0.025",
+      "seqID_aligned": "0.076",
+      "L_q": "594",
+      "L_t": "726",
+      "L_aligned": "236"
+    }
+  ],
+  "chain_pair_Foldseek_TMalign": [
+    {
+      "query_chain": "G",
+      "target_chain": "A",
+      "qstart": 17,
+      "qend": 263,
+      "tstart": 35,
+      "tend": 694,
+      "evalue": 0.2312,
+      "bits": 31.0,
+      "prob": 0.098,
+      "alntmscore": 0.3655,
+      "qtmscore": 0.3342,
+      "ttmscore": 0.1578,
+      "rmsd": 6.672,
+      "lddt": 0.2605,
+      "qcov": 0.882,
+      "tcov": 0.909,
+      "u": [
+        0.327,
+        0.537,
+        -0.777,
+        -0.895,
+        0.44,
+        -0.072,
+        0.304,
+        0.719,
+        0.625
+      ],
+      "t": [
+        214.132,
+        198.919,
+        238.281
+      ]
+    },
+    {
+      "query_chain": "A",
+      "target_chain": "A",
+      "qstart": 2,
+      "qend": 225,
+      "tstart": 48,
+      "tend": 694,
+      "evalue": 0.2066,
+      "bits": 29.0,
+      "prob": 0.082,
+      "alntmscore": 0.3313,
+      "qtmscore": 0.3135,
+      "ttmscore": 0.1235,
+      "rmsd": 5.508,
+      "lddt": 0.2963,
+      "qcov": 0.929,
+      "tcov": 0.891,
+      "u": [
+        0.347,
+        0.152,
+        -0.925,
+        -0.116,
+        0.986,
+        0.119,
+        0.931,
+        0.066,
+        0.36
+      ],
+      "t": [
+        216.468,
+        178.431,
+        131.795
+      ]
+    },
+    {
+      "query_chain": "C",
+      "target_chain": "A",
+      "qstart": 78,
+      "qend": 293,
+      "tstart": 196,
+      "tend": 700,
+      "evalue": 0.231,
+      "bits": 29.0,
+      "prob": 0.082,
+      "alntmscore": 0.4251,
+      "qtmscore": 0.3206,
+      "ttmscore": 0.1717,
+      "rmsd": 6.656,
+      "lddt": 0.2691,
+      "qcov": 0.657,
+      "tcov": 0.696,
+      "u": [
+        0.793,
+        0.001,
+        0.609,
+        0.603,
+        0.134,
+        -0.786,
+        -0.083,
+        0.991,
+        0.106
+      ],
+      "t": [
+        162.438,
+        225.002,
+        178.206
+      ]
+    },
+    {
+      "query_chain": "D",
+      "target_chain": "A",
+      "qstart": 6,
+      "qend": 310,
+      "tstart": 2,
+      "tend": 612,
+      "evalue": 0.1999,
+      "bits": 25.0,
+      "prob": 0.057,
+      "alntmscore": 0.2943,
+      "qtmscore": 0.2767,
+      "ttmscore": 0.1452,
+      "rmsd": 6.376,
+      "lddt": 0.2935,
+      "qcov": 0.921,
+      "tcov": 0.842,
+      "u": [
+        -0.905,
+        0.171,
+        0.389,
+        -0.397,
+        -0.013,
+        -0.918,
+        -0.152,
+        -0.985,
+        0.08
+      ],
+      "t": [
+        217.838,
+        260.399,
+        194.768
+      ]
+    },
+    {
+      "query_chain": "F",
+      "target_chain": "A",
+      "qstart": 18,
+      "qend": 321,
+      "tstart": 38,
+      "tend": 657,
+      "evalue": 0.2217,
+      "bits": 28.0,
+      "prob": 0.076,
+      "alntmscore": 0.3238,
+      "qtmscore": 0.3079,
+      "ttmscore": 0.1639,
+      "rmsd": 6.88,
+      "lddt": 0.2438,
+      "qcov": 0.938,
+      "tcov": 0.854,
+      "u": [
+        -0.74,
+        -0.182,
+        -0.648,
+        -0.34,
+        -0.729,
+        0.593,
+        -0.58,
+        0.66,
+        0.478
+      ],
+      "t": [
+        232.252,
+        163.104,
+        244.772
+      ]
+    },
+    {
+      "query_chain": "H",
+      "target_chain": "A",
+      "qstart": 4,
+      "qend": 227,
+      "tstart": 39,
+      "tend": 529,
+      "evalue": 0.213,
+      "bits": 29.0,
+      "prob": 0.082,
+      "alntmscore": 0.3377,
+      "qtmscore": 0.3257,
+      "ttmscore": 0.1306,
+      "rmsd": 6.072,
+      "lddt": 0.2512,
+      "qcov": 0.957,
+      "tcov": 0.676,
+      "u": [
+        -0.872,
+        0.294,
+        -0.391,
+        -0.369,
+        -0.92,
+        0.132,
+        -0.321,
+        0.26,
+        0.911
+      ],
+      "t": [
+        232.462,
+        152.173,
+        248.207
+      ]
+    },
+    {
+      "query_chain": "L",
+      "target_chain": "A",
+      "qstart": 4,
+      "qend": 575,
+      "tstart": 28,
+      "tend": 696,
+      "evalue": 0.2014,
+      "bits": 21.0,
+      "prob": 0.034,
+      "alntmscore": 0.2352,
+      "qtmscore": 0.2282,
+      "ttmscore": 0.1954,
+      "rmsd": 7.966,
+      "lddt": 0.2328,
+      "qcov": 0.963,
+      "tcov": 0.921,
+      "u": [
+        -0.402,
+        -0.173,
+        -0.899,
+        0.747,
+        -0.629,
+        -0.213,
+        -0.529,
+        -0.758,
+        0.382
+      ],
+      "t": [
+        294.328,
+        159.57,
+        192.827
+      ]
+    },
+    {
+      "query_chain": "B",
+      "target_chain": "A",
+      "qstart": 30,
+      "qend": 196,
+      "tstart": 215,
+      "tend": 716,
+      "evalue": 0.2434,
+      "bits": 34.0,
+      "prob": 0.126,
+      "alntmscore": 0.4557,
+      "qtmscore": 0.3788,
+      "ttmscore": 0.1461,
+      "rmsd": 6.314,
+      "lddt": 0.2882,
+      "qcov": 0.763,
+      "tcov": 0.691,
+      "u": [
+        0.911,
+        0.021,
+        -0.412,
+        -0.411,
+        -0.053,
+        -0.91,
+        -0.04,
+        0.998,
+        -0.04
+      ],
+      "t": [
+        207.554,
+        229.711,
+        163.207
+      ]
+    },
+    {
+      "query_chain": "E",
+      "target_chain": "A",
+      "qstart": 12,
+      "qend": 304,
+      "tstart": 42,
+      "tend": 704,
+      "evalue": 0.2182,
+      "bits": 28.0,
+      "prob": 0.076,
+      "alntmscore": 0.3274,
+      "qtmscore": 0.3034,
+      "ttmscore": 0.1603,
+      "rmsd": 6.698,
+      "lddt": 0.2798,
+      "qcov": 0.904,
+      "tcov": 0.913,
+      "u": [
+        0.326,
+        -0.945,
+        0.028,
+        -0.366,
+        -0.099,
+        0.925,
+        -0.871,
+        -0.312,
+        -0.379
+      ],
+      "t": [
+        194.988,
+        164.71,
+        269.592
+      ]
+    }
+  ]
+}

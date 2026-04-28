@@ -1,0 +1,40 @@
+{
+  "claims": [
+    {
+      "claim": "EDE shifts H0 upward by ~3 km/s/Mpc relative to LCDM under CMB+DESI fits",
+      "evidence": "outputs/params_table.csv: H0_LCDM=68.12±0.28, H0_EDE=70.9±1.0; difference = +2.78 km/s/Mpc (~2.7σ).",
+      "status": "recovered"
+    },
+    {
+      "claim": "EDE prefers nonzero f_EDE ~ 0.09 ± 0.03 (CMB+DESI, no SH0ES)",
+      "evidence": "outputs/params_table.csv: f_EDE = 0.093 ± 0.031 -> ~3σ from zero in Bayesian best fit (paper Table I).",
+      "status": "recovered"
+    },
+    {
+      "claim": "EDE only mildly improves chi^2 over LCDM in CMB+DESI fits without SH0ES",
+      "evidence": "outputs/delta_chi2_AIC.csv: ΔChi2 = -0.9 (NPIPE-LS) and -7.0 (P-ACT-LBS); ΔAIC = +3.1 / -3.0.",
+      "status": "recovered"
+    },
+    {
+      "claim": "w0wa moves Omega_m UP and H0 DOWN whereas EDE moves Omega_m essentially unchanged and H0 UP",
+      "evidence": "Omega_m: LCDM 0.3037, EDE 0.2999, w0wa 0.353; H0: 68.12, 70.9, 63.5. See param_shift.png.",
+      "status": "recovered"
+    },
+    {
+      "claim": "EDE leaves the BAO D_V/r_d residuals close to LCDM (acoustic-tension partially resolved through r_d shrinkage), whereas w0wa fits BAO/SNe by lowering H0 and requires a strong distance shift",
+      "evidence": "fig6_repro.png: EDE curve hugs LCDM in D_V/r_d panel; w0wa shows large negative excursion. r_d table: LCDM 145.4 Mpc, EDE 139.7 Mpc, w0wa 156.0 Mpc.",
+      "status": "recovered"
+    },
+    {
+      "claim": "sigma_8 is shifted upward in EDE, exacerbating S_8 tension",
+      "evidence": "sigma8: LCDM 0.8101±0.0055; EDE 0.8283±0.0093; w0wa 0.780±0.016.",
+      "status": "recovered"
+    }
+  ],
+  "limitations": [
+    "We use the published Tables II/III best-fit means and 1σ marginals, treated as Gaussian: 2D ellipses ignore parameter correlations.",
+    "EDE distance evolution computed with phenomenological peaked-fluid background (n=3 axion-like); CMB perturbations not solved.",
+    "w0wa Δχ^2 not tabulated in paper_003; approximate literature values from DESI DR2 + CMB analyses are used as a comparator.",
+    "Sound horizon r_d for each model rescaled with H0_fid/H0_model heuristic, calibrated against the Planck 2018 r_d=147.05 Mpc anchor."
+  ]
+}
