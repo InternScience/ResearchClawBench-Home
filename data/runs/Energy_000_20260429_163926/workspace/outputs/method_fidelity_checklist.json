@@ -1,0 +1,19 @@
+{
+  "exact_definition": "MMGA implementation combines Latin Hypercube Sampling, ANN meta-model of a reduced-order ECAT-inspired simulator, and GA-style multi-objective refinement against voltage, temperature, and capacity features.",
+  "assumptions": [
+    "No full P2D/ECAT simulator was provided; voltage/thermal/aging equations are reduced-order proxies.",
+    "CS2_36 lacks measured temperature, so a pseudo thermal observable is derived from current and internal resistance for primary training.",
+    "A single global parameter vector cannot simultaneously encode different cell formats/capacities; external validations are therefore shape-transfer tests."
+  ],
+  "invariants": [
+    "Use LHS multi-parameter search space",
+    "Train ANN surrogate instead of repeatedly evaluating physical equations during GA",
+    "Optimize multi-metric objective",
+    "Report parameters with bounds/units",
+    "Preserve CS2/NASA/Oxford source-specific outputs"
+  ],
+  "deviations": [
+    "Reduced-order simulator replaces full ECAT/P2D PDE model.",
+    "GA uses ANN feature predictions rather than high-cost simulator calls."
+  ]
+}

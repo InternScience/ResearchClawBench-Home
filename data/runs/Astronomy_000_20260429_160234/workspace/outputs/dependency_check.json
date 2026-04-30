@@ -1,0 +1,24 @@
+{
+  "numpy": {
+    "available": true
+  },
+  "pandas": {
+    "available": true
+  },
+  "matplotlib": {
+    "available": true
+  },
+  "seaborn": {
+    "available": true
+  },
+  "scipy": {
+    "available": true
+  },
+  "pypdf": {
+    "available": true
+  },
+  "capability_notes": [
+    "Exact Teukolsky/Kerr superradiance rates are not implemented; analysis uses an analytic scalar l=m=1 saturation boundary and growth-window proxy.",
+    "Self-interaction treatment uses the related-work Bosenova/nonlinearity threshold inverted to a decay-constant/coupling proxy, not a full nonlinear cloud simulation."
+  ]
+}

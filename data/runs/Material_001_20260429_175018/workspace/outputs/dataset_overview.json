@@ -1,0 +1,37 @@
+{
+  "sections": [
+    "# \u6587\u4ef61: property_prediction.py \u6570\u636e",
+    "# \u6587\u4ef62: structure_generation.py \u6570\u636e",
+    "# \u6587\u4ef63: autonomous_optimization.py \u6570\u636e"
+  ],
+  "property_records": 13,
+  "property_feature_count": 22,
+  "target_mean": -0.0902,
+  "target_sd": 0.7110479179820912,
+  "edge_list_edges": 10,
+  "graph_descriptors": {
+    "graph_nodes": 5,
+    "graph_edges": 10,
+    "graph_density": 1.0,
+    "degree_mean": 4.0,
+    "degree_std": 0.0,
+    "degree_min": 4.0,
+    "degree_max": 4.0
+  },
+  "structure_candidates": 101,
+  "unique_lattice_pairs": 7,
+  "optimization_bounds": {
+    "temperature_bounds_C": [
+      200.0,
+      500.0
+    ],
+    "time_bounds_min": [
+      10.0,
+      30.0
+    ],
+    "seed_temperature_C": 350.0,
+    "seed_time_min": 20.0,
+    "seed_response": 0.1,
+    "objective_scale": 10.0
+  }
+}

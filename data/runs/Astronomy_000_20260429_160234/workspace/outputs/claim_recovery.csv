@@ -1,0 +1,6 @@
+claim,supporting_artifacts,recovery_note
+The analysis used full posterior samples rather than point estimates.,data_summary.csv; exclusion_grid.csv,Each p_exclusion value is a posterior fraction over all mass/spin draws.
+M33 X-7 constrains stellar-mass ULB masses near its peak_mu_ev.,constraint_summary.csv; figure3_mass_exclusion.png,Peak and interval values are source-specific.
+IRAS 09149-6206 constrains supermassive-BH ULB masses near its peak_mu_ev.,constraint_summary.csv; figure3_mass_exclusion.png,Peak and interval values are source-specific.
+Regge-plane boundary explains the exclusion calculation.,figure2_regge_validation.png; method_fidelity_checklist.json,Posterior points above the saturation curve contribute to exclusion probability.
+"Self-interaction coupling results are threshold proxies, not exact nonlinear limits.",self_interaction_limits.csv; dependency_check.json,Based on related-work condition for nonlinear cloud importance.

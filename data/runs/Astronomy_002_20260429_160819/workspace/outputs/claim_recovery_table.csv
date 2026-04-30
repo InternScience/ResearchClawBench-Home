@@ -1,0 +1,7 @@
+claim,supporting_artifact,status
+Baseline minimal-data GLS H0,outputs/baseline_results.json,verified from workspace data
+Variant sensitivity by method/anchor/host,outputs/variant_results.csv; report/images/variant_results.png,verified from workspace data
+Residual validation of baseline fit,outputs/residuals.csv; report/images/validation_residuals.png,verified from workspace data
+Related-work CMB comparison value 67.4 +/- 0.5,outputs/related_work_contract.json,extracted from related work
+Full task indicators Miras/JAGB/SNe II/FP/TF absent from minimal dataset,data/H0DN_MinimalDataset.txt; outputs/data_overview.json,verified from workspace data
+"SBF branch is diagnostic/proxy-calibrated, not a full independent GLS rung",outputs/sbf_calibration_diagnostic.csv,limitation documented

@@ -1,0 +1,19 @@
+{
+  "numpy": {
+    "available": true
+  },
+  "pandas": {
+    "available": true
+  },
+  "matplotlib": {
+    "available": true
+  },
+  "seaborn": {
+    "available": true
+  },
+  "scipy": {
+    "available": true
+  },
+  "python_version": "3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]",
+  "fallbacks": "Use numpy/pandas/matplotlib; scipy optional for paired tests. No uncommon packages required."
+}

@@ -1,0 +1,118 @@
+{
+  "protein": {
+    "pdb_path": "data/sample/2l3r/2l3r_protein.pdb",
+    "seqres_residue_count": 162,
+    "observed_residue_count": 161,
+    "atom_count_total": 2591,
+    "atom_count_heavy": 1323,
+    "ca_count": 161,
+    "observed_residue_range": [
+      125,
+      285
+    ],
+    "sequence": "GGMWDETELGLYKVNEYVDARDTNMGAWFEAQVVRVTRKAPSRDEPCSSTSRPALEEDVIYHVKYDDYPENGVVQMNSRDVRARARTIIKWQDLEVGQVVMLNYNPDNPKERGFWYDAEISRKRETRTARELYANVVLGDDSLNDCRIIFVDEVFKIERPGE",
+    "element_counts": {
+      "N": 235,
+      "C": 823,
+      "O": 259,
+      "H": 1268,
+      "S": 6
+    },
+    "center_of_mass_unweighted_A": {
+      "x": 3.155,
+      "y": 1.607,
+      "z": -0.105
+    },
+    "radius_of_gyration_all_atoms_A": 17.74475508074982,
+    "radius_of_gyration_CA_A": 17.239959312935905
+  },
+  "ligand": {
+    "sdf_path": "data/sample/2l3r/2l3r_ligand.sdf",
+    "atom_count_total": 194,
+    "atom_count_heavy": 90,
+    "bond_count": 193,
+    "element_counts": {
+      "O": 17,
+      "N": 20,
+      "C": 53,
+      "H": 104
+    },
+    "center_of_geometry_A": {
+      "x": 11.158,
+      "y": 5.348,
+      "z": -8.189
+    },
+    "radius_of_gyration_all_atoms_A": 10.73722636255061,
+    "radius_of_gyration_heavy_A": 10.601544116947318
+  },
+  "interface": {
+    "protein_CA_to_ligand_heavy_min_distance_A": 3.591785071520844,
+    "protein_CA_to_ligand_heavy_median_min_distance_A": 13.091602690274405,
+    "contact_pair_counts_by_threshold_A": {
+      "4.0": 2,
+      "5.0": 17,
+      "6.0": 62,
+      "8.0": 256,
+      "10.0": 710
+    },
+    "residue_contact_counts_by_threshold_A": {
+      "4.0": 2,
+      "5.0": 9,
+      "6.0": 16,
+      "8.0": 36,
+      "10.0": 58
+    },
+    "nearest_CA_residues_to_ligand": [
+      {
+        "rank": 1,
+        "residue": "MET148",
+        "min_distance_A": 3.591785071520844
+      },
+      {
+        "rank": 2,
+        "residue": "ASN147",
+        "min_distance_A": 3.8617546530042532
+      },
+      {
+        "rank": 3,
+        "residue": "GLY236",
+        "min_distance_A": 4.069091913437199
+      },
+      {
+        "rank": 4,
+        "residue": "GLU153",
+        "min_distance_A": 4.355160272596176
+      },
+      {
+        "rank": 5,
+        "residue": "PHE152",
+        "min_distance_A": 4.372295163869887
+      },
+      {
+        "rank": 6,
+        "residue": "ASP275",
+        "min_distance_A": 4.546793265588397
+      },
+      {
+        "rank": 7,
+        "residue": "PHE237",
+        "min_distance_A": 4.6729523858049316
+      },
+      {
+        "rank": 8,
+        "residue": "GLU276",
+        "min_distance_A": 4.764798526695541
+      },
+      {
+        "rank": 9,
+        "residue": "ASP145",
+        "min_distance_A": 4.766645046571016
+      },
+      {
+        "rank": 10,
+        "residue": "ASP230",
+        "min_distance_A": 5.262864714202712
+      }
+    ]
+  }
+}

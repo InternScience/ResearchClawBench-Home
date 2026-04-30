@@ -1,0 +1,24 @@
+{
+  "n_frames": 60,
+  "train_frames": 42,
+  "test_frames": 18,
+  "energy_mae_train_long_range": 0.016773606590179416,
+  "energy_mae_test_long_range": 0.12900507973606462,
+  "energy_rmse_test_long_range": 0.2433696878189598,
+  "energy_r2_test_long_range": 0.6959993272008698,
+  "energy_mae_test_short_range_no_inter_coulomb": 0.18441334644454854,
+  "coulomb_scale_coefficient": 0.9014181435692536,
+  "force_mae_coulomb_component_vs_total": 0.5895344725152832,
+  "force_rmse_coulomb_component_vs_total": 0.9844590520638935,
+  "latent_fragment_charges_e": {
+    "fragment_1": 1.0,
+    "fragment_2": -1.0
+  },
+  "cutoff_test_mae": {
+    "2.5": 0.1324847906467307,
+    "3.0": 0.17613271047885798,
+    "3.5": 0.17018532814034062,
+    "4.0": 0.1661440691714658,
+    "5.0": 0.15651455553304447
+  }
+}

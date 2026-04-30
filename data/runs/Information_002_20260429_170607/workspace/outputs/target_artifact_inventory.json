@@ -1,0 +1,44 @@
+{
+  "primary_artifacts": [
+    {
+      "name": "paper_information_extraction",
+      "path": "outputs/paper_information_extraction.json",
+      "status": "satisfied"
+    },
+    {
+      "name": "hf_hamiltonian_derivation",
+      "path": "outputs/hf_hamiltonian_derivation.md",
+      "status": "satisfied"
+    },
+    {
+      "name": "step_scoring_results",
+      "path": "outputs/step_scoring_results.json",
+      "status": "satisfied"
+    },
+    {
+      "name": "validation_summary",
+      "path": "outputs/validation_summary.json",
+      "status": "satisfied"
+    },
+    {
+      "name": "data_overview_figure",
+      "path": "report/images/data_overview.png",
+      "status": "satisfied"
+    },
+    {
+      "name": "step_scores_figure",
+      "path": "report/images/step_scores.png",
+      "status": "satisfied"
+    },
+    {
+      "name": "validation_comparison_figure",
+      "path": "report/images/validation_comparison.png",
+      "status": "satisfied"
+    },
+    {
+      "name": "final_report",
+      "path": "report/report.md",
+      "status": "satisfied"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-04-29",
+  "available": {
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "sklearn": true
+  },
+  "missing_or_unusable": {
+    "PyPDF2": false,
+    "pypdf": false,
+    "pdfminer": false,
+    "ReadPDF_on_related_work": "failed with unexpected pdf result type NoneType for all PDFs",
+    "pdftotext_or_pdfinfo": "not available in shell PATH"
+  },
+  "analysis_fallback": "Use pandas/numpy/matplotlib/seaborn/scipy for the required dataset analysis; related-work extraction is based on available PDF metadata/strings plus the task description."
+}

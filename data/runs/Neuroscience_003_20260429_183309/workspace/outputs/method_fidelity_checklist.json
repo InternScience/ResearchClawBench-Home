@@ -1,0 +1,19 @@
+{
+  "named_mechanism": "trajectory-preserving dynamic feature selection",
+  "definition_used": "Select molecular features whose values vary smoothly and strongly along a continuous reference trajectory, then verify that those features reconstruct the reference trajectory geometry better than baselines of equal size.",
+  "assumptions": [
+    "Full feature space provides the best available internal reference trajectory because no external ground-truth lineage is supplied.",
+    "annotated_age is an observed continuous transition variable and is used as biological orientation/validation, not as the only ranking criterion.",
+    "RPE protein imaging features are treated as molecular readouts analogous to single-cell protein/gene features."
+  ],
+  "non_negotiable_steps": [
+    "derive reference trajectory from all features",
+    "score individual features for dynamic association with trajectory",
+    "select top features",
+    "compare trajectory preservation against random and high-variance baselines at equal feature counts",
+    "export feature-level scores and validation metrics"
+  ],
+  "planned_fallbacks": [
+    "If Scanpy DPT fails, use PCA+KNN graph geodesic pseudotime rooted at lowest annotated_age cell; if UMAP unavailable, use PCA/Isomap for visualization."
+  ]
+}

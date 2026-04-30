@@ -1,0 +1,271 @@
+{
+  "gpkg_layers": [
+    "gmw_v4_ref_smpls_qad_v12_sample"
+  ],
+  "mangrove": {
+    "crs": "EPSG:4326",
+    "columns": [
+      "ref_cls",
+      "gmw_v3_xtras",
+      "coastTrain",
+      "gmw_v4_qa",
+      "uid",
+      "geometry"
+    ],
+    "dtypes": {
+      "ref_cls": "int64",
+      "gmw_v3_xtras": "float64",
+      "coastTrain": "float64",
+      "gmw_v4_qa": "int64",
+      "uid": "int64",
+      "geometry": "geometry"
+    },
+    "sample_rows": 5,
+    "geom_types": [
+      "Point",
+      "Point",
+      "Point",
+      "Point",
+      "Point"
+    ]
+  },
+  "total_ssp245_medium_confidence_rates.nc": {
+    "dims": {
+      "locations": 66190,
+      "years": 14,
+      "quantiles": 107
+    },
+    "coords": [
+      "locations",
+      "years",
+      "quantiles"
+    ],
+    "vars": [
+      "lat",
+      "lon",
+      "sea_level_change_rate"
+    ],
+    "attrs": {
+      "description": "Combined confidence output file for AR6 sea-level change projections",
+      "history": "Created Wed Jul 14 14:08:01 2021",
+      "source": "Files Combined: /projects/kopp/ar6/regional/pboxes_rates/pb_1f/ssp245/total-workflow_rates.nc"
+    },
+    "var_details": {
+      "lat": {
+        "dims": [
+          "locations"
+        ],
+        "shape": [
+          66190
+        ],
+        "attrs": {
+          "units": "Degrees North"
+        }
+      },
+      "lon": {
+        "dims": [
+          "locations"
+        ],
+        "shape": [
+          66190
+        ],
+        "attrs": {
+          "units": "Degrees East"
+        }
+      },
+      "sea_level_change_rate": {
+        "dims": [
+          "quantiles",
+          "years",
+          "locations"
+        ],
+        "shape": [
+          107,
+          14,
+          66190
+        ],
+        "attrs": {
+          "units": "mm per year"
+        }
+      }
+    }
+  },
+  "total_ssp370_medium_confidence_rates.nc": {
+    "dims": {
+      "locations": 66190,
+      "years": 14,
+      "quantiles": 107
+    },
+    "coords": [
+      "locations",
+      "years",
+      "quantiles"
+    ],
+    "vars": [
+      "lat",
+      "lon",
+      "sea_level_change_rate"
+    ],
+    "attrs": {
+      "description": "Combined confidence output file for AR6 sea-level change projections",
+      "history": "Created Wed Jul 14 14:08:42 2021",
+      "source": "Files Combined: /projects/kopp/ar6/regional/pboxes_rates/pb_1f/ssp370/total-workflow_rates.nc"
+    },
+    "var_details": {
+      "lat": {
+        "dims": [
+          "locations"
+        ],
+        "shape": [
+          66190
+        ],
+        "attrs": {
+          "units": "Degrees North"
+        }
+      },
+      "lon": {
+        "dims": [
+          "locations"
+        ],
+        "shape": [
+          66190
+        ],
+        "attrs": {
+          "units": "Degrees East"
+        }
+      },
+      "sea_level_change_rate": {
+        "dims": [
+          "quantiles",
+          "years",
+          "locations"
+        ],
+        "shape": [
+          107,
+          14,
+          66190
+        ],
+        "attrs": {
+          "units": "mm per year"
+        }
+      }
+    }
+  },
+  "total_ssp585_medium_confidence_rates.nc": {
+    "dims": {
+      "locations": 66190,
+      "years": 14,
+      "quantiles": 107
+    },
+    "coords": [
+      "locations",
+      "years",
+      "quantiles"
+    ],
+    "vars": [
+      "lat",
+      "lon",
+      "sea_level_change_rate"
+    ],
+    "attrs": {
+      "description": "Combined confidence output file for AR6 sea-level change projections",
+      "history": "Created Wed Jul 14 14:09:22 2021",
+      "source": "Files Combined: /projects/kopp/ar6/regional/pboxes_rates/pb_1f/ssp585/total-workflow_rates.nc"
+    },
+    "var_details": {
+      "lat": {
+        "dims": [
+          "locations"
+        ],
+        "shape": [
+          66190
+        ],
+        "attrs": {
+          "units": "Degrees North"
+        }
+      },
+      "lon": {
+        "dims": [
+          "locations"
+        ],
+        "shape": [
+          66190
+        ],
+        "attrs": {
+          "units": "Degrees East"
+        }
+      },
+      "sea_level_change_rate": {
+        "dims": [
+          "quantiles",
+          "years",
+          "locations"
+        ],
+        "shape": [
+          107,
+          14,
+          66190
+        ],
+        "attrs": {
+          "units": "mm per year"
+        }
+      }
+    }
+  },
+  "tc": {
+    "dims": {
+      "record": 200000
+    },
+    "coords": [
+      "record"
+    ],
+    "vars": [
+      "lat",
+      "lon",
+      "wind"
+    ],
+    "attrs": {
+      "description": "Reduced TC track points (\u226533 m/s) from MIT historical simulation",
+      "source": "tracks_mit_mpi-esm1-2-hr_historical_1850_2014.nc",
+      "max_points": "200000"
+    },
+    "var_details": {
+      "lat": {
+        "dims": [
+          "record"
+        ],
+        "shape": [
+          200000
+        ],
+        "attrs": {
+          "units": "degrees_north",
+          "long_name": "latitude"
+        }
+      },
+      "lon": {
+        "dims": [
+          "record"
+        ],
+        "shape": [
+          200000
+        ],
+        "attrs": {
+          "units": "degrees_east",
+          "long_name": "longitude"
+        }
+      },
+      "wind": {
+        "dims": [
+          "record"
+        ],
+        "shape": [
+          200000
+        ],
+        "attrs": {
+          "units": "m/s",
+          "long_name": "maximum sustained wind speed"
+        }
+      }
+    }
+  }
+}

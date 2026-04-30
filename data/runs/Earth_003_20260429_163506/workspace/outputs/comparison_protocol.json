@@ -1,0 +1,10 @@
+{
+  "if_full_data_available": [
+    "Run the three U-Transformer cascade autoregressively for 60 six-hour steps from each initialization.",
+    "For each lead and channel, compute latitude-weighted RMSE and ACC against verifying ERA5 analysis.",
+    "For key variables (Z500, T850/T2M, U10/V10, MSL, TP), compare lead-time curves to ECMWF ensemble mean initialized at the same time.",
+    "Report skillful lead time as the last lead where Z500 ACC exceeds 0.6, matching the FengWu literature convention.",
+    "Stratify by variable family, pressure level, hemisphere, and tropics/extratropics."
+  ],
+  "implemented_now": "Only one-step structural and increment diagnostics because data/006.nc contains shape (1,1,70,181,360)."
+}

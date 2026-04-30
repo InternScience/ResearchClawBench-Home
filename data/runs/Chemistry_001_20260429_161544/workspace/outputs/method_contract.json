@@ -1,0 +1,21 @@
+{
+  "task": "Develop a unified deep learning framework for protein sequences, nucleic acid sequences, and small molecule structures that outputs accurate 3D structures of biomolecular complexes using a diffusion-based architecture.",
+  "named_method_commitments": [
+    "unified multimodal inputs: protein, nucleic acid, small molecule",
+    "diffusion-based 3D coordinate generation",
+    "cross-molecule interaction prediction",
+    "evaluation on available FKBP12/FK506 sample ground-truth structures",
+    "AlphaFold 3 context/comparison where feasible from related work and available data"
+  ],
+  "available_primary_data": [
+    "data/sample/2l3r/2l3r_protein.pdb: FKBP12 CA-only NMR structure, 107 residues",
+    "data/sample/2l3r/2l3r_ligand.sdf: FK506 experimental ligand conformation"
+  ],
+  "implementation_scope_decision": "The workspace provides only one protein CA-only structure and one ligand SDF, no training corpus or AlphaFold 3 predictions. Therefore the deliverable will be a faithful framework design plus an executable prototype/evaluation harness: data parsing, complex feature construction, diffusion architecture specification, baseline/proxy structure validation, and figures grounded in the supplied structures.",
+  "primary_outputs": [
+    "reproducible code in code/",
+    "data-derived metrics and framework artifacts in outputs/",
+    "PNG figures in report/images/",
+    "publication-style report/report.md"
+  ]
+}

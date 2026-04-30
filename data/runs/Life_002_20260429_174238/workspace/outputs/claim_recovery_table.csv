@@ -1,0 +1,5 @@
+claim,supporting_artifact
+7xg4 contains multiple protein chains and nucleic-acid chains; 6n40 contains one protein chain in the provided PDB.,outputs/structure_overview.json; report/images/data_overview.png
+Best fallback chain correspondence is 7xg4 chain H to 6n40 chain A.,outputs/alignment_result.json; outputs/assignment_candidates.csv; report/images/chain_pair_heatmap.png
+Reported rotation and translation define the query-to-target superposition.,outputs/alignment_result.json; outputs/superposed_matched_ca.pdb
+"Similarity is weak/moderate under the fallback TM-score-like metric, not an official Foldseek-Multimer score.",outputs/alignment_result.json; outputs/dependency_check.json; report/images/superposition_scatter.png

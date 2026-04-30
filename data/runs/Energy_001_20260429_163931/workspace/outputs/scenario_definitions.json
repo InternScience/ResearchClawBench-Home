@@ -1,0 +1,32 @@
+{
+  "baseline_2025": {
+    "description": "Input capacities and demand as supplied.",
+    "demand_mult": 1.0,
+    "wind_mult": 1.0,
+    "gas_mult": 1.0,
+    "nuclear_mult": 1.0,
+    "storage_power_mult": 1.0,
+    "storage_energy_mult": 1.0,
+    "link_mult": 1.0
+  },
+  "high_renewable_2035": {
+    "description": "Electrification increases demand while wind and storage expand.",
+    "demand_mult": 1.12,
+    "wind_mult": 1.8,
+    "gas_mult": 0.85,
+    "nuclear_mult": 1.0,
+    "storage_power_mult": 2.0,
+    "storage_energy_mult": 3.0,
+    "link_mult": 1.25
+  },
+  "net_zero_2050": {
+    "description": "Stronger electrification, large wind buildout, reduced gas fleet, expanded storage and grid.",
+    "demand_mult": 1.3,
+    "wind_mult": 2.8,
+    "gas_mult": 0.55,
+    "nuclear_mult": 1.1,
+    "storage_power_mult": 4.0,
+    "storage_energy_mult": 6.0,
+    "link_mult": 1.6
+  }
+}

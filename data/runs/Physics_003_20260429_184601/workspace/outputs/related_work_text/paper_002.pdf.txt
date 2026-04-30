@@ -1,0 +1,885 @@
+ARTICLE
+Received 15 Apr 2016 | Accepted 15 Nov 2016 | Published 17 Jan 2017
+Creating stable Floquet–Weyl semimetals
+by laser-driving of 3D Dirac materials
+Hannes Hu¨bener1, Michael A. Sentef 2, Umberto De Giovannini 1,3, Alexander F. Kemper 4 & Angel Rubio 1,2
+T uning and stabilizing topological states, such as Weyl semimetals, Dirac semimetals or
+topological insulators, is emerging as one of the major topics in materials science. Periodic
+driving of many-body systems offers a platform to design Floquet states of matter with
+tunable electronic properties on ultrafast timescales. Here we show by ﬁrst principles
+calculations how femtosecond laser pulses with circularly polarized light can be used
+to switch between Weyl semimetal, Dirac semimetal and topological insulator states in a
+prototypical three-dimensional (3D) Dirac material, Na
+3Bi. Our ﬁndings are general and apply
+to any 3D Dirac semimetal. We discuss the concept of time-dependent bands and steering of
+Floquet–Weyl points and demonstrate how light can enhance topological protection against
+lattice perturbations. This work has potential practical implications for the ultrafast switching
+of materials properties, such as optical band gaps or anomalous magnetoresistance.
+DOI: 10.1038/ncomms13940 OPEN
+1 Nano-Bio Spectroscopy Group and ETSF, Universidad del Paı ´s Vasco, CFM CSIC-UPV /EHU, San Sebastia´n 20018, Spain. 2 Max Planck Institute for the
+Structure and Dynamics of Matter and Center for Free Electron Laser Science, Hamburg 22761, Germany. 3 Dipartimento di Fisica e Chimica,
+Universita´ degli Studi di Palermo, Via Archiraﬁ 36, I-90123, Palermo, Italy. 4 Department of Physics, North Carolina State University, Raleigh, North Carolina
+27695-8202, USA. Correspondence and requests for materials should be addressed to H.H. (email: hannes.huebener@gmail.com) or to A.R.
+(email: angel.rubio@mpsd.mpg.de).
+NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications 1
+C
+reating and controlling phases of matter is a central goal
+of condensed matter physics. Recent advances in ultrafast
+spectroscopy1,2 open a route towards engineering
+new phases with pump laser ﬁelds acting on a solid to form
+emergent light-matter coupled states. As an example, circularly
+polarized light has been shown to open a band gap and produce
+Floquet–Bloch states on the surface of an equilibrium topological
+insulator
+3,4 and form a Floquet–Chern insulating state
+in graphene in the limit of continuous driving 5,6 and for
+ﬁnite pulse durations 7. The discovery of topological states in
+Dirac materials has triggered a lot of interest in particular in
+emergent Dirac8, Weyl9 and Majorana fermions 10,11. Topological
+states of matter are controlled by symmetries 12–14 . Traditionally,
+the symmetries of materials can be inﬂuenced only to a certain
+extent and only on slow timescales via strain, doping or static
+magnetic or electric ﬁelds. By contrast, Floquet engineering 15
+allows to dynamically break symmetries and modify the topology
+of band structures
+16 on ultrafast timescales.
+Massless fermions in 3D Dirac and Weyl semimetals have
+recently attracted considerable interest. Examples include the
+Dirac semimetal materials Na 3Bi17,18 and Cd 3As2
+19–25 and the
+Weyl semimetal states in transition-metal monophosphides 26–28 ,
+ﬁrst discovered in TaAs 29–35 . Besides the fundamental
+importance of Weyl semimetal materials as condensed matter
+realizations of elementary Weyl fermions, this interest is also due
+to the intrinsic stability of 3D Weyl points (WPs), which
+are chiral and host left- or right-handed Weyl fermions,
+giving rise to unusual material properties, such as negative
+magnetoresistance36–38 , huge magnetoresistance 39 or the
+anomalous Hall effect 40–43 . WPs can alternatively be viewed as
+magnetic monopoles in momentum space with positive or
+negative chiral charges and host non-zero Chern numbers
+for some closed momentum space surfaces 13,14. The topological
+protection of massless fermions in a Weyl semimetal against
+weak perturbations is controlled by the WP splitting in the
+Brillouin zone 44, as the chiral WPs can only be destroyed by
+chirality mixing, which requires two opposite chirality WPs
+to meet
+26. The massless fermions in a Dirac semimetal, by
+contrast, require additional crystal symmetries to be stable and
+are destroyed, for instance, by breaking rotational symmetry 17.
+Here we propose a route towards ultrafast Floquet engineering
+of laser-induced topologically stable WPs starting from the
+3D Dirac semimetal Na 3Bi by ab initio electronic structure
+calculations using time-dependent density functional theory
+(TDDFT)45,46. We show that a Floquet–Weyl semimetal is
+dynamically created by breaking time-reversal symmetry.
+This symmetry breaking is achieved by applying circularly
+polarized classical laser ﬁelds with varying ﬁeld strengths.
+Importantly, our strategy goes beyond the use of model tight-
+binding Hamiltonians and light coupling via Peierls substitution,
+as the TDDFT scheme automatically deals with the electronic
+properties and dynamical screening of the material and includes
+both Peierls phases for hopping terms and intra-atomic dipole
+(and higher multipole) transitions on equal footing 47. In fact our
+theoretical framework shows effects that are not captured by
+simple four band models. For example, the splitting of degenerate
+Dirac bands into bands supporting a Floquet–Weyl point under a
+pump ﬁeld does not occur symmetrically in all cases as would be
+predicted by models, and under linearly polarized pumping, the
+dynamical electron–electron interaction can induce a symmetry
+breaking ﬁeld that destroys the Dirac point and opens a gap.
+Results
+Theory. To illustrate the basic idea behind the concept of dyna-
+mically driven Floquet–Weyl semimetal, we brieﬂy discuss the
+minimal model in which Floquet WPs arise from a 3D
+Dirac point and then move to a fully ab initio description of the
+real material Na 3Bi, where the dynamical electronic interactions
+of all valence electrons in the full Brillouin zone are taken into
+account. In a 3D Dirac semimetal, the Dirac point is a fourfold
+degenerate state at the Fermi level, and the low energy bands
+around this point obey a massless Dirac equation. Solutions to the
+massless Dirac equation are composed of two Weyl fermions with
+opposite chiralities, and the massless 4 /C2 4 Dirac Hamiltonian
+can be written as a combination of uncoupled left- and
+right-handed 2 /C2 2 Weyl Hamiltonians,
+^H
+Dirac kðÞ ¼
+^HWeyl kðÞ 0
+0 ^HWeyl kðÞ /C3
+/C18/C19
+; HWeyl kðÞ ¼ vFk /C1s ;
+ð1Þ
+where vF is the Fermi velocity, r ¼ (sx, sy, sz) are Pauli
+pseudospin matrices, k measures momentum relative to the Dirac
+point and ^HWeyl kðÞ is a right-handed Weyl Hamiltonian, while
+^HWeyl kðÞ /C3 is its left-handed (time-reversed) partner, leading
+to eigenspinors with deﬁnite chirality. The 3D Dirac point
+thus consists of two degenerate WPs. In this case, the chiralities
+compensate each other because the WPs are at the same point
+in momentum space. Moreover, the WPs in a 3D Dirac
+semimetal are destroyed by any chirality-mixing perturbation
+that leads to a hybridization of the subblocks in equation (1).
+By contrast, in a Weyl semimetal the left- and right-handed WPs
+are split in momentum space and are thus not susceptible to
+chirality-mixing perturbations.
+Starting from a 3D Dirac semimetal, see Fig. 1a, one can induce
+phase changes by lifting the fourfold degeneracy of the 3D Dirac
+point, either by introducing a mass term or by separating the
+degenerate WPs in momentum space. A mass term in the Dirac
+equation opens a gap and can stem from breaking rotational
+symmetry as induced by applying strain, leading to a topological
+insulator17. The separation of the WPs into a Weyl semimetal
+state can be achieved by breaking time-reversal symmetry via an
+external driving, as shown in Fig. 1b. For the sake of the
+simplicity of the model but without losing generality, we
+introduce the coupling to a time-dependent external gauge ﬁeld
+by Peierls substitution in equation (1), which amounts to k-
+k /C0 A(t), where A is the time-dependent vector potential of the
+applied circularly polarized light, for example, A(t) ¼ A0(0,
+cos(Ot),sin(O(t))) for polarization in the y– z plane. This
+treatment only takes into account the electric ﬁeld of the laser
+pulse and neglects its magnetic component, which is negligible
+here but can also be straightforwardly included in the ab initio
+calculation. The resulting time-dependent Hamiltonian
+H(t) ¼ H(k /C0 A(t)) describes the dynamics of the driven model
+system. From here on, we suppress the momentum argument k
+for brevity.
+After transient effects have decayed, the system is in
+a stationary but non-equilibrium state of light-matter coupling
+that is periodic in time. Such a state can be analysed by Floquet
+theory, where the time dependence is described by mapping
+to a Hilbert space of time-independent multi-photon Hamilto-
+nians, each projected onto a multiple of the photon frequency,
+effectively a Fourier–Bloch decomposition:
+Hmn¼ O
+2p
+Z
+T
+dteim /C0 nðÞ Ot HtðÞ þ dmnmO1 ð2Þ
+where the integers m and n deﬁne the multi-photon Hilbert
+space (see Methods). This provides an interpretation of the time
+dependence in terms of time-independent multi-photon
+states with a well-deﬁned quasi-energy band structure, the
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms13940
+2 NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications
+Floquet bands. In the high-frequency limit, one can decouple
+the zero-photon dressed states from the other states, amounting
+to a simple time average, and add multi-photon states
+perturbatively5,48,
+^Heff ¼H00 þ 1
+O H0 /C0 1; H01/C2/C3
+: ð3Þ
+where H00 is the zero order (cycle-averaged) Hamiltonian
+and H0 /C6 1 are the single photon dressed Hamiltonians,
+c.f equation (2). This Floquet downfolding has the advantage
+that one recovers the original Hilbert space of the electronic
+system and the resulting effective Hamiltonian ^Heff of this simple
+model retains an analytical form. Thus, for the the Dirac
+Hamiltonian, equation (1), and y– z circularly polarized light, the
+downfolded effective Floquet–Hamiltonian reads
+^Heff ¼
+^HWeyl kðÞ þ vF A0ðÞ 2
+O sx 0
+0 ^HWeyl kðÞ /C3 /C0 vF A0ðÞ 2
+O sx
+ !
+ð4Þ
+The effective gauge ﬁeld acts on the the x-component of
+the wave vector and results in a shift in the position of each of the
+originally degenerate WPs by ±(vFA0)2/O along the kx direction
+in momentum space creating a Floquet–Weyl semimetal.
+This mechanism of light-induced effective gauge ﬁelds that alters
+the topology of the material is the central effect discussed in
+this paper. By solving the full ab initio mutli-photon Floquet–
+Hamiltonian without resorting to a high-frequency expansion
+or model parameters, we show that this effect occurs in real
+3D Dirac semimetals and has the same dependence on amplitude
+and frequency but with a different prefactor. However, owing
+to asymmetry of the bands in the actual material Na 3Bi, it
+can also lead to a non-symmetric shift of the two WPs in energy
+away from the Fermi level, one upwards and the other one
+downwards, forming a topological Weyl metal. Thus, by
+controlling amplitude, polarization and envelope of the driving
+ﬁeld, one can engineer different nontrivial Floquet topological
+phases. In particular, the same mechanism can be used to induce
+the Floquet–Weyl semimetal phase in systems that initially have a
+ﬁnite gap. Applying strain to a 3D Dirac semimetal opens a
+gap that can subsequently be closed by applying the driving ﬁeld
+and with sufﬁcient ﬁeld strength the Weyl semimetal can
+be recovered, implying the possibility of Floquet engineering a
+non-equilibrium metal-insulator transition.
+For a realistic description of the 3D-Dirac semimetal
+Na3Bi (see Fig. 1) and its insulating strained version under
+the inﬂuence of a periodic driving ﬁeld, we use the ﬁrst principles
+formalism of TDDFT 45–47,49 . In this approach, the electronic
+density is propagated in real time according to the time-dependent
+Kohn-Sham Hamiltonian, which accounts for electron–ion and
+electron–electron interactions through the time-dependent Hartree
+and the Kohn-Sham exchange and correlation potentials. The
+external gauge ﬁeld is naturally included in the theory up to all
+orders as a time-dependent phase, as are the electronic multipoles
+to all orders. The time-dependent electronic structure from
+TDDFT is then further processed using the Floquet expansion
+(see Methods). This Floquet TDDFT method represents a powerful
+and ﬂexible tool to analyse and interpret time-dependent
+simulations, retaining both the rigorous ab initio description of
+the electronic ground and time-dependent excited states while
+allowing for the readily accessible quasi-static picture of Floquet
+theory. The emergent Floquet bands can be viewed as snapshots of
+the electronic structure, time-averaged over the fast oscillation
+period of the external driving ﬁeld but time-resolved on the slower
+timescale of the pump pulse duration. This interpretation naturally
+reﬂects the measurement process in pump-probe photoemission
+spectroscopy7,50.
+Both the carrier acceleration via Peierls substitution and
+the optical dipole transitions are automatically included in
+the TDDFT time propagation. For example, the observed
+asymmetric band splitting in the Weyl metal case would
+not follow from a simple tight-binding model but would require
+including dipole transitions that are a priori unknown for such a
+model and would therefore have to be retroﬁtted. Moreover, by
+comparing the full TDDFT results including the exchange-
+correlation potential with a noninteracting time propagation, we
+ﬁnd that the induced Hartree and exchange-correlation potentials
+do not have a crucial role for the effects described in this paper.
+Hence, the results are indeed generic. However, we stress that,
+for different setups and effects beyond the ones discussed here,
+electron–electron or electron–phonon interactions may indeed
+become important and will be accounted for by our theoretical
+approach. The Floquet TDDFT framework introduced here
+will equally well apply to these situations and many more.
+In the picture of photon-dressed states, Floquet sidebands
+are created as replicas of the original bands, spaced by the photon
+energy and periodically repeated in quasi-energy, in an enhanced
+Hilbert space including multiphoton processes. In practice, these
+replicas will be observed if the sidebands are occupied 3,7, but
+they do not inﬂuence the physics discussed in this paper, in
+contrast to a different recent proposal for emergent Floquet–Weyl
+points at sideband crossings 51. Importantly, the main effect
+exploited in our work is due to off-resonant photon absorption,
+which is why the photon frequency is a freely tunable parameter
+that allows one to move the Floquet sidebands, for instance,
+AA′
+–0.15
+–0.1
+–0.05
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+–0.1 Γ 0.1 0.2
+E (eV)
+Dirac point Dirac point
+kz (2π/a)
+A
+A′
+Γ
+Dirac point Floquet-Weyl points
+a
+b
+z
+y
+x
+Bi Na
+–0.2
+Figure 1 | Laser-induced Floquet–Weyl semimetal. (a) With intact time-
+reversal symmetry, doubly degenerate 3D Dirac cones exists at two Dirac
+points in Na 3Bi. Shown are the Dirac bands along a section of the
+A0 /C0 G /C0 A path through the Brillouin zone, see left inset. The right inset
+shows the crystal structure of Na 3Bi. ( b) Breaking time-reversal symmetry
+with circularly polarized light splits each Dirac cone into a pair of Floquet–
+Weyl cones.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms13940 ARTICLE
+NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications 3
+if sidebands from other bands further away from the Fermi
+level happened to interfere with the Floquet–Weyl points.
+Floquet–Weyl points induced by circularly polarized light .
+Applying time-reversal symmetry breaking ﬁelds to a 3D Dirac
+material lifts the degeneracy of the Dirac point into WPs leading
+to two distinct Floquet–Weyl cones emerging from each
+Dirac point in the Brillouin zone. In Fig. 2, we illustrate this effect
+using circularly polarized light with two different polarization
+planes. Although the kx and ky directions in the Brillouin zone
+of Na 3Bi are equivalent, and both showing symmetrical Dirac
+cones in the equilibrium phase, the dispersion of the Dirac
+cone along the kz direction is asymmetric 17, see Fig. 1a. This leads
+to qualitatively different behaviour of the driven system along the
+kz direction as opposed to the symmetric effect in the x– y plane.
+Circularly polarized light in the y– z-plane splits the the Floquet
+WPs along the kx direction forming a Floquet–Weyl semimetal,
+as shown in Fig. 2c. Conversely, with light polarized in the
+x– y plane the Floquet WPs split along the kz direction, cf. Fig. 2f.
+Owing to the asymmetry of the equilibrium Dirac cone along
+kz, the Floquet WPs are not only split horizontally but also shift
+vertically away from the Fermi energy. Crucially, one Floquet
+WP moves to positive energies while the other one is shifted
+below the Fermi energy. The resulting complex intersection of the
+two Floquet–Weyl cones is shown in Fig. 2e. The shift in energy
+of the Floquet WPs leads to the opening of two Fermi surfaces
+around these Floquet WPs with opposing Chern numbers owing
+to the opposite chiralities of the enclosed Floquet WPs 17.
+Steering Floquet–Weyl points . In a pump-probe experiment,
+there are two different timescales at play, the time of the period of
+oscillation and the time of the modulation of the amplitude owing
+to the shape of the pump pulse. The pump duration is typically
+orders of magnitude longer than the oscillation of the ﬁeld
+and hence the pulse shape has no effect on the formation of
+Floquet–Weyl points at any given time during the pumping.
+In our calculations, we observe that the Floquet limit is reached
+after two cycles of the driving ﬁeld, and thus this assumption
+xy
+z
+k z
+xy
+z
+a
+d
+kx
+b
+e
+Weyl point
+c
+f
+–0.04
+–0.02
+0.00
+0.02
+–0.02 0.00 0.02
+A=0 a.u./c
+0.04
+–0.04
+–0.02
+0.00
+0.02
+–0.02 0.00 0.02
+A=2 a.u./c
+0.04
+–0.04
+–0.02
+0.00
+0.02
+–0.02 0.00 0.02
+A=3 a.u./c
+0.04
+–0.04
+–0.02
+0.00
+0.02
+–0.02 0.00 0.02
+A=4 a.u./c
+0.04
+–0.04
+–0.02
+0.00
+0.02
+–0.02 0.00 0.02
+A=5 a.u./c
+0.04
+–0.04
+–0.02
+0.00
+0.02
+–0.02 0.00 0.02
+A=6 a.u./c
+0.04
+kx (1/a0) kx (1/a0) kx (1/a0)
+E (eV)E (eV)
+–0.05
+0.00
+0.05
+0.11 0.145
+E (eV)
+0.11 0.145 0.11 0.145 0.11 0.145
+0.00
+E (eV)
+–0.02
+0.02
+–0.003
+0.003
+–0.003
+0.003kx (1/a0) ky (1/a0)
+Weyl point
+–0.006
+0.1280.164
+kz (2π/a)
+kz (2π/a) kz (2π/a) kz (2π/a) kz (2π/a)
+Fermi level
+0.05
+0.0
+–0.05
+E (eV)
+Weyl point
+Weyl point
+0.006
+kx (1/a0)
+A=0 a.u./c A=2 a.u./c A=4 a.u./cA =6 a.u./c
+Figure 2 | Polarization control of Floquet–Weyl point splitting. (a) Circularly polarized light in the y– z-plane splits Floquet–Weyl points along the
+kx direction at the Fermi level, resulting in a Floquet–Weyl semimetal. ( b) The Floquet–Weyl points form 3D cones in the Brillouin zone. An example in the
+kx– ky-plane is shown for amplitude A ¼ 3 a.u./ c.( c) The splitting of the Floquet–Weyl points increases with the intensity (amplitude) of the driving ﬁeld.
+Here we show the effect of different amplitudes A of a ﬁeld with photon energy :O ¼ 1.5 eV in momentum cuts around the Dirac point along kx. The units of
+the amplitude of the vector potential can be translated to electric ﬁeld strength in units of V /Å, see Methods. ( d) With a similar driving ﬁeld, but polarized
+in the x– y-plane, the Floquet–Weyl points split along the kz direction, but in this case move away from the Fermi level, as shown in ( f) for a series of
+amplitudes. ( e) Shows how this leads with an amplitude of A ¼ 4 a.u./ c to an opening of topological Fermi surfaces (rings in the kx– kz plane) around the
+Floquet–Weyl points and a complex intersection of the Floquet–Weyl cones. In all panels, the Fermi level is at zero energy.
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms13940
+4 NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications
+holds even for relatively short pulses of 100 fs. However,
+the changing of the envelope amplitude over time will change
+the position of the WPs according to Fig. 2. This means that on
+the timescale of the pump envelope there is a movement of the
+WPs through the Brillouin zone. Furthermore, from the previous
+discussion it has become clear that combining different pump
+polarization offers the possibility to control the position of
+the Floquet WPs within the Brillouin zone. Thus, by modulating
+the amplitudes of two pump ﬁelds, that is, by controlling
+the delay between two pump pulses, one can time-dependently
+steer the Floquet WPs. Figure 3 shows how a simple time
+delay between two Gaussian pump pulses in the x– z and
+y– z planes controls complex trajectories of the two Floquet
+WPs through the Brillouin zone. With more sophisticated
+combinations of different pump envelopes, one can design
+complex dynamics of Floquet WPs on the timescale of the pulse
+duration. Thus Floquet TDDFT also provides a way of analysing
+time-dependent band structures that are different from
+the instantaneous eigenvalues of the TDDFT Hamiltonian
+and that can be measured using time-resolved photoemission
+spectroscopy, which has an intrinsic time-averaging
+procedure given by the probe pulse shape
+7. We also
+remark here that, in principle, further replicas of the dancing
+Floquet WPs may be observed as an effect of Floquet sideband
+formation.
+Strain. In all Dirac metals, the doubly degenerate 3D Dirac
+point of the equilibrium phase of the material leaves the topology
+unstable under small lattice deformations. In Na 3Bi, already
+a small strain breaks the rotational C3 symmetry and leads to
+an opening of a gap owing to chirality mixing and the formation
+of a topological insulator phase 17, Fig. 4a. The Floquet WPs,
+however, are protected by conservation of chirality and afford
+the system topological protection. In fact, for an initially gapped
+system, the application of the driving ﬁeld can lead to a
+restoration of the topology and the Floquet–Weyl semimetal
+phase. In Fig. 4b, the progression from the strained gapped
+topological insulator phase to the Floquet–Weyl semimetal phase
+is shown as the amplitude of the driving ﬁeld increases.
+The transition from one phase to the other occurs at a critical
+amplitude that characterizes a phase boundary in a Floquet phase
+diagram, see Fig. 4c. We note that a related idea was used to
+drive a topological insulator into a Weyl semimetal phase in
+ref. 52.
+Besides being a striking illustration of the power of topological
+protection, this light-induced phase transition might also be
+of technological relevance, because it facilitates light-controlled,
+ultrafast switching between an insulating and metallic phase.
+In particular, when the driving ﬁeld is circularly polarized in the
+x– y plane the topological insulator phase can be switched to a
+phase with non-trivial topological Fermi surfaces, possibly
+allowing for a technological exploitation of the exotic transport
+phenomena encountered in this phase 38,39.
+Discussion
+Our work demonstrates how topological properties in solids
+can be Floquet engineered. Floquet TDDFT predicts distinct
+Weyl semimetal, Weyl metal and topological insulator Floquet
+band structures that can be measured with time-resolved
+photoemission spectroscopy. The splitting of Floquet–Weyl
+points controlled by laser driving illustrates how the concept of
+separation of chiral particles in momentum space inspires the
+Floquet engineering of topologically stable states. Regarding
+anomalous transport properties, we envision that THz magneto-
+transport might be able to detect effects of Floquet–Weyl
+fermions near the Fermi level, for instance, the anomalous
+negative magnetoresistance corresponding to the chiral
+Adler–Bell–Jackiw anomaly 36–38 , the recently demonstrated
+chiral magnetic effect 53, a proposed chiral pumping effect
+with an axial current 54 or huge magnetoresistance for the
+Floquet–Weyl metal with hole and electron Fermi surfaces 39
+arising for x– y polarization. Our predictions can be directly
+checked in pump-probe angle-resolved photoemission
+experiments, which can measure the transient Floquet band
+structures3,4. These experiments could additionally even provide
+evidence about topological features implied by topological
+insulator, Dirac semimetal and Weyl semimetal materials,
+for example, Fermi arc surface states of Weyl semimetal or
+surface states in topological insulators. Furthermore, a recent
+work55 proposes measurement of the Wigner distribution as a
+means to identify non-trivial Floquet phases.
+In terms of method development, we have introduced
+the framework of Floquet TDDFT as a tool for the ﬁrst principles
+prediction of Floquet engineered bands and topologies.
+0.00
+0.003
+y
+z
+x
+x
+z
+y
+t
+t
+Δt 0.25 0.5 0.75
+0.
+Δt =1 .
+a b
+kx (1/a0)
+ky (1/a0)
+0.002
+0.001
+0.0
+–0.003
+–0.002
+–0.001
+–0.002 0.002
+Figure 3 | Dynamical Floquet–Weyl points. (a) Floquet TDDFT predicts that the position of the Floquet–Weyl points can be controlled in real time on the
+timescale of pulse envelopes, yielding a time-dependent band structure that is accessible through time- and angle-resolved photoemission spectro scopy.
+T wo time-delayed (Dt) pump laser pulses, circularly polarized in y– z and x– z directions, respectively, drive the Floquet–Weyl points in the kx– ky plane of the
+BZ. ( b) The varying ﬁeld strength during the laser pulses leads to dancing Floquet–Weyl points with trajectories controlled by Dt given in units of the
+FWHM of pulse envelopes.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms13940 ARTICLE
+NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications 5
+Furthermore, it provides a setting to discuss time-dependent
+band structures on timescales accessible in pump-probe experi-
+ments. Finally, electron correlation effects beyond independent
+particles in driven systems are thus within reach, paving the
+way for the study of nonlinear laser ﬁeld and collective excitation
+effects, such as the coupling to phonons, or exciton and plasmon
+formation in realistic Floquet-driven complex materials.
+Methods
+Units of ﬁeld amplitudes . The amplitudes of the vector potentials discussed in
+the text can be converted to electric ﬁeld strength as E¼/C0 @A=@t /C24/C0 AO
+assuming that the envelope is constant. This leads to a conversion of
+1 [a.u./ c] ¼ 0.013789 V/ÅO eV. For the frequency of :O ¼ 1.5 eV used here,
+this corresponds to a conversion of all amplitudes A given in the text as
+1 [a.u./ c] ¼ 0.0206849 V/Å ¼ 2.068498 MV cm/C0 1.
+Floquet TDDFT . According to the Floquet theorem, the solutions of the time-
+dependent Schro¨dinger equation i@t c tðÞji ¼ ^HtðÞ c tðÞji with a Hamiltonian that
+is periodic in time, that is, ^Ht þ TðÞ ¼ ^HtðÞ , can be obtained by computing the
+eigenstates of a static Hamiltonian in the Hilbert space of multi-photon dressed
+states. This static Hamiltonian follows from performing a Floquet–Bloch expansion
+of the time-dependent solutions of the Schro ¨dinger equation
+c tðÞji ¼ P
+m
+exp /C0 i E þ mOðÞ tðÞ umji , where O ¼ 2p/T, E is the Floquet quasi-energy,
+and |umi is the corresponding mth Floquet eigenfunction, which does not depend
+on time. The time-dependent Schro ¨dinger equation then reduces to the static
+equation
+X
+n
+Hmn unji ¼ E umji ð5Þ
+for each E, where the Hmn is a static Hamiltonian
+Hmn¼ 1
+T
+Z
+T
+dteim /C0 nðÞ Ot HtðÞ þ dmnmO1 ð6Þ
+deﬁned in the inﬁnite Hilbert space of multi-photon (that is, multiples of O)
+components. Thus Floquet theory offers a way of analysing periodically driven
+systems. In principle, the full description of the system requires the diagonalization
+of the full Floquet–Hamiltonian while in practice one truncates the photon
+number depending on the problem at hand. In this work, we found that the
+contributions of two-photon terms and beyond had a negligible effect on the
+bands considered here.
+The motivation to perform Floquet analysis is to project the time dependence of
+the driven system to a static picture. Although this is usually used to obtain an
+analytical expression that exposes the physical mechanism, we use it here literally
+as a tool to analyse time-dependent data. TDDFT gives the real-time evolution of
+the electronic density by propagating the Kohn-Sham states under any kind of
+static or time-dependent perturbation. The time evolution operator is built from
+the Kohn-Sham Hamiltonian HKS with explicitly time-dependent external ﬁelds
+Vext:
+HKS tðÞ ¼ T þ V0 þ VH ntðÞ½/C138 þ Vxc ntðÞ½/C138 þ Vext tðÞ ð7Þ
+where T and V0 are the kinetic energy and static potential, while the Hartree
+potential VH and the exchange and correlation potential Vxc dynamically
+depend on the density n(t) during the time evolution. For extended systems,
+we use the velocity gauge concept introduced in ref. 47 to treat, within the
+dipole approximation, the response of extended periodic systems to an arbitrary
+time-dependent perturbation. Within the velocity gauge, the external potential
+arises in the Hamiltonian from the substitution p-p /C0 A(t)/c leading to
+the terms 1/2( p /C0 A(t)/c)2 ¼ T þ 1/2(A(t)/c)2 /C0 p /C1A(t)/c ¼ T þ Vext(t)
+(in atomic units).
+Besides the fact that the physical properties of the system over time can then be
+derived from the time-dependent density, it is obvious that this approach also
+generates a Hamiltonian at each time step. If the system is driven by a periodic
+external ﬁeld or ﬁnds itself in an otherwise periodically oscillating state, such as
+phonon modes, this Hamiltonian fulﬁlls the Floquet condition of periodicity and
+can be used directly in equation (2). Hence, Floquet analysis provides an approach
+of processing real-time propagation results from TDDFT to obtain spectral
+information that is richer than the instantaneous Kohn-Sham eigenvalues.
+In practice, the Floquet TDDFT requires storing the time-dependent
+Hamiltonian, not just its instantaneous eigenvalues, during one cycle of periodicity
+so it can be used in the time integral of equation (2). This would require an
+unfeasible amount of storage for most systems in a real-space or wavevector basis.
+Instead, it is sufﬁcient to save either the time-dependent density or the implicitly
+time-dependent potentials Vxc and VH. It is also worth noting that, as the evolution
+of the system is smooth, the time integrals in equation (2) can be evaluated with a
+coarse time sampling of the Hamiltonian. Furthermore, the Floquet condition of
+periodicity does not have to be fulﬁlled a priori but one can perform the Floquet
+analysis over any time interval corresponding to the cycle of periodicity and
+determine the Floquet limit as a convergence of the Floquet bands with
+propagation time.
+We note that, in the Floquet TDDFT results, we always observe a small shift of
+the energies of maximum 20 meV for large amplitudes that we assign to numerical
+inaccuracies. This shift does not change the character of the Weyl semimetal phase,
+because it just corresponds to the case of a doped Weyl semimetal, and therefore
+we have compensated it in the all the ﬁgures.
+The fully ab initio nature of Floquet TDDFT means that it requires no ﬁtting
+reference. Instead, it might indeed be used as a reference itself for simpliﬁed
+qualitative tight-binding models that reduce the observed effect to its essential
+ingredients. For example, one might think of using such an approach to reﬁne the
+illustrative model we use in equation (1). Although this can be useful in some case
+one, however, loses the quantitative accuracy that TDDFT provides and in this case
+leads to quantitatively wrong dynamics of the WPs.
+–0.010 –0.005 0.000 0.005 0.010
+–0.02
+–0.01
+0.00
+0.01
+0.02
+0.03
+0.05 a
+0.04 a
+0.03 a
+0.02 a
+0.01 a
+kx (2π/a)
+E (eV)
+a
+1.5
+3
+4.5
+6
+c
+Floquet-weyl
+semimetal
+Floquet topological
+insulator
+Lattice distortion (a)
+A (a.u./c)
+0.005 0.01 0.015 0.02 0.10
+b
+–0.04
+0.0
+0.04
+E (eV)
+–0.02 0.00 0.02
+A= 0 a.u./c
+–0.04
+0.0
+0.04
+–0.02 0.00 0.02
+A= 3 a.u./c
+–0.04
+0.0
+0.04
+–0.02 0.00 0.02
+A= 4 a.u./c
+–0.04
+0.0
+0.04
+–0.02 0.00 0.02
+A= 5 a.u./c
+–0.04
+0.0
+0.04
+–0.02 0.00 0.02
+A= 6 a.u./c
+–0.04
+0.0
+0.04
+–0.02 0.00 0.02
+A= 7 a.u./c
+kx (1/a0) kx (1/a0) kx (1/a0)
+Figure 4 | Floquet topological phase transition and enhanced topological protection. (a) In strained samples, the breaking of crystal symmetries opens a
+gap at the 3D Dirac point, leading to a topological insulator phase. In Na 3Bi, strain along x breaks the C3 symmetry. Shown is a series of band structures for
+different lattice distortions measured as a fraction of the lattice parameter. ( b) The strain-induced band gaps can be closed by the application of circularly
+polarized light. For 1% lattice distortion, increasing the amplitude of a y– z circularly polarized driving ﬁeld with :O ¼ 1.5 eV ﬁrst reduces the gap, then closes
+it at a critical amplitude Ac and restores the Floquet–Weyl semimetal observed in the unstrained case (see Fig. 2c). The units of the amplitude of the vector
+potential can be translated to electric ﬁeld strength in units of V /Å. ( c) This light-induced Floquet topological phase transition from topological insulator to
+Weyl semimetal deﬁnes a non-equilibrium phase diagram as a function of amplitude and lattice distortion for a given driving ﬁeld frequency.
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms13940
+6 NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications
+Computational details . We carry out DFT and TDDFT calculations as imple-
+mented in the OCTOPUS code 49 using the (adiabatic) local density approximation
+and Hartwigsen-Goedecker-Hutter (HGH) pseudopotenitals, 56 including spin-
+orbit coupling. The structure is taken from ref. 17 where the lattice parameter is
+given as a ¼ 10.2952271 Bohr. The groundstates are computed with a 10 /C2 5 /C2 5
+Monkhorst–Pack Brillouin zone sampling and a real-space mesh of 0.3 Bohr
+spacing. The TDDFT calculations are performed with a time step of 0.05 : Ha /C0 1
+and with a uniform external vector potential oscillating with a frequency of
+:O ¼ 1.5 eV and with different amplitudes speciﬁed in the text. We ﬁnd that, for
+our calculations of Na 3Bi, the Floquet band structures do not depend on the local
+density approximation functional and also the effect of the induced Hartree
+potential is negligible for circular polarized driving ﬁelds. The code to perform
+non-interacting Floquet TDDFT is part of the OCTOPUS code.
+Code availability. The OCTOPUS code is available from http://www.octopus-code.org.
+Data availability . Data generated for this work have been deposited in the
+NoMaD repository (DOI: http://dx.doi.org/10.17172/NOMAD/2016.11.07-1)
+(ref. 57).
+References
+1. Orenstein, J. Ultrafast spectroscopy of quantum materials. Phys. Today 65,
+44–50 (2012).
+2. Zhang, J. & Averitt, R. Dynamics and control in complex transition metal
+oxides. Annu. Rev. Mater. Res. 44, 19–43 (2014).
+3. Wang, Y. H., Steinberg, H., Jarillo-Herrero, P. & Gedik, N. Observation of
+Floquet-Bloch states on the surface of a topological insulator. Science 342,
+453–457 (2013).
+4. Mahmood, F. et al. Selective scattering between Floquet-Bloch and Volkov
+states in a topological insulator. Nature Physics. 12, 306–310 (2016).
+5. Oka, T. & Aoki, H. Photovoltaic Hall effect in graphene. Phys. Rev. B 79,
+081406 (2009).
+6. Kitagawa, T., Oka, T., Brataas, A., Fu, L. & Demler, E. Transport properties of
+nonequilibrium systems under the application of light: photoinduced quantum
+Hall insulators without Landau levels. Phys. Rev. B 84, 235108 (2011).
+7. Sentef, M. A. et al. Theory of Floquet band formation and local pseudospin
+textures in pump-probe photoemission of graphene. Nat. Commun. 6, 7047
+(2015).
+8. Novoselov, K. S. et al. Two-dimensional gas of massless Dirac fermions in
+graphene. Nature 438, 197–200 (2005).
+9. Nielsen, H. B. & Ninomiya, M. The Adler-Bell-Jackiw anomaly and Weyl
+fermions in a crystal. Phys. Lett. B 130, 389–396 (1983).
+10. Kitaev, A. Y. Unpaired Majorana fermions in quantum wires. Phys. Usp. 44,
+131 (2001).
+11. Fu, L. & Kane, C. L. Superconducting proximity effect and majorana fermions
+at the surface of a topological insulator. Phys. Rev. Lett. 100, 096407 (2008).
+12. Kitaev, A. in AIP Conference Proceedings 1134, 22–30 (American Institute of
+Physics, 2009).
+13. Hasan, M. Z. & Kane, C. L. Colloquium: topological insulators. Rev. Mod. Phys.
+82, 3045–3067 (2010).
+14. Qi, X.-L. & Zhang, S.-C. Topological insulators and superconductors. Rev. Mod.
+Phys. 83, 1057–1110 (2011).
+15. Ha¨nggi, P. in Quantum Transport and Dissipation (Wiley-VCH, 1998).
+16. Lindner, N. H., Refael, G. & Galitski, V. Floquet topological insulator in
+semiconductor quantum wells. Nat. Phys. 7, 490–495 (2011).
+17. Wang, Z. et al. Dirac semimetal and topological phase transitions in A 3Bi
+(A ¼ Na, K, Rb). Phys. Rev. B 85, 195320 (2012).
+18. Liu, Z. K. et al. Discovery of a three-dimensional topological dirac semimetal,
+Na3Bi. Science 343, 864–867 (2014).
+19. Wang, Z., Weng, H., Wu, Q., Dai, X. & Fang, Z. Three-dimensional Dirac
+semimetal and quantum transport in Cd 3As2. Phys. Rev. B 88, 125427
+ð2013Þ:
+20. Ali, M. N. et al. The crystal and electronic structures of Cd 3As2, the three-
+dimensional electronic analogue of graphene. Inorg. Chem. 53, 4062–4067
+(2014).
+21. Neupane, M. et al. Observation of a three-dimensional topological Dirac
+semimetal phase in high-mobility Cd 3As2. Nat. Commun. 5, 3786 (2014).
+22. Liu, Z. K. et al. A stable three-dimensional topological Dirac semimetal Cd 3As2.
+Nat. Mater. 13, 677–681 (2014).
+23. Liang, T. et al. Ultrahigh mobility and giant magnetoresistance in the Dirac
+semimetal Cd 3As2. Nat. Mater. 14, 280–284 (2015).
+24. Borisenko, S. et al. Experimental realization of a three-dimensional dirac
+semimetal. Phys. Rev. Lett. 113, 027603 (2014).
+25. Jeon, S. et al. Landau quantization and quasiparticle interference in the three-
+dimensional Dirac semimetal Cd 3As2. Nat. Mater. 13, 851–856 (2014).
+26. Weng, H., Fang, C., Fang, Z., Bernevig, B. A. & Dai, X. Weyl semimetal phase in
+noncentrosymmetric transition-metal monophosphides. Phys. Rev. X 5, 011029
+(2015).
+27. Huang, S.-M. et al. A Weyl Fermion semimetal with surface Fermi arcs in the
+transition metal monopnictide TaAs class. Nat. Commun. 6, 7373 (2015).
+28. Liu, Z. K. et al. Evolution of the Fermi surface of Weyl semimetals in the
+transition metal pnictide family. Nat. Mater. 15, 27–31 (2016).
+29. Xu, S.-Y. et al. Discovery of a Weyl fermion semimetal and topological Fermi
+arcs. Science 349, 613–617 (2015).
+30. Lv, B. et al. Experimental discovery of Weyl semimetal TaAs. Phys, Rev. X 5,
+031013 (2015).
+31. Lv, B. Q. et al. Observation of Weyl nodes in TaAs.Nat. Phys. 11, 724–727 (2015).
+32. Xu, S.-Y. et al. Discovery of a Weyl fermion state with Fermi arcs in niobium
+arsenide. Nat. Phys. 11, 748–754 (2015).
+33. Yang, L. X. et al. Weyl semimetal phase in the non-centrosymmetric compound
+TaAs. Nat. Phys. 11, 728–732 (2015).
+34. Xu, N. et al. Observation of Weyl nodes and Fermi arcs in tantalum phosphide.
+Nat. Commun. 7, 11006 (2016).
+35. Xu, S.-Y. et al. Experimental discovery of a topological Weyl semimetal state in
+TaP. Sci. Adv. 1, e1501092 (2015).
+36. Zyuzin, A. A. & Burkov, A. A. Topological response in Weyl semimetals and
+the chiral anomaly. Phys. Rev. B 86, 115133 (2012).
+37. Parameswaran, S., Grover, T., Abanin, D., Pesin, D. & Vishwanath, A. Probing
+the chiral anomaly with nonlocal transport in three-dimensional topological
+semimetals. Phys. Rev. X 4, 031035 (2014).
+38. Huang, X. et al. Observation of the chiral-anomaly-induced negative
+magnetoresistance in 3D Weyl semimetal TaAs. Phys. Rev. X 5, 031023ð2015Þ:
+39. Shekhar, C. et al. Extremely large magnetoresistance and ultrahigh mobility
+in the topological Weyl semimetal candidate NbP. Nat. Phys. 11, 645–649
+(2015).
+40. Yang, K.-Y., Lu, Y.-M. & Ran, Y. Quantum Hall effects in a Weyl semimetal:
+possible application in pyrochlore iridates. Phys. Rev. B 84, 075129 (2011).
+41. Burkov, A. A. & Balents, L. Weyl semimetal in a topological insulator
+multilayer. Phys. Rev. Lett. 107, 127205 (2011).
+42. Hosur, P. & Qi, X. Recent developments in transport phenomena in Weyl
+semimetals. C. R. Phys. 14, 857–870 (2013).
+43. Chan, C.-K., Lee, P. A., Burch, K. S., Han, J. H. & Ran, Y. When chiral photons
+meet chiral fermions: photoinduced anomalous Hall effects in Weyl
+semimetals. Phys. Rev. Lett. 116, 026805 (2016).
+44. Nielsen, H. B. & Ninomiya, M. Absence of neutrinos on a lattice. Nucl. Phys.
+B 185, 20–40 (1981).
+45. Runge, E. & Gross, E. K. U. Density-functional theory for time-dependent
+systems. Phys. Rev. Lett. 52, 997–1000 (1984).
+46. Marques, M., Maitra, N., Nogueira, F., Gross, E. & Rubio, A. (eds)
+Fundamentals of Time-Dependent Density Functional Theory-Lecture Notes in
+Physics, Vol. 837 (Springer, 2012).
+47. Bertsch, G. F., Iwata, J.-I., Rubio, A. & Yabana, K. Real-space, real-time method
+for the dielectric function. Phys. Rev. B 62, 7998–8002 (2000).
+48. Bukov, M., D’Alessio, L. & Polkovnikov, A. Universal high-frequency behavior
+of periodically driven systems: from dynamical stabilization to Floquet
+engineering. Adv. Phys. 64, 139–226 (2015).
+49. Andrade, X. et al. Real-space grids and the Octopus code as tools for the
+development of new simulation approaches for electronic systems. Phys. Chem.
+Chem. Phys. 17, 31371–31396 (2015).
+50. Freericks, J. K., Krishnamurthy, H. R. & Pruschke, T. Theoretical description of
+time-resolved photoemission spectroscopy: application to pump-probe
+experiments. Phys. Rev. Lett. 102, 136401 (2009).
+51. Zou, J.-Y. & Liu, B.-G. Floquet Weyl fermions in a circularly-polarised-light-
+irradiated three-dimensional stacked graphene systems. Phys. Rev. Lett. B 93,
+205435 (2016).
+52. Wang, R., Wang, B., Shen, R., Sheng, L. & Xing, D. Y. Floquet Weyl semimetal
+induced by off-resonant light. EPL (Europhys. Lett.) 105, 17004 (2014).
+53. Li, Q. et al. Chiral magnetic effect in ZrTe5. Nat. Phys 12, 550–554 (2016).
+54. Ebihara, S., Fukushima, K. & Oka, T. Chiral pumping effect induced by rotating
+electric ﬁelds Phys. Rev. B. 93, 155107 (2016).
+55. Kolodrubetz, M., Fregoso, B. M. & Moore, J. E. Non adiabatic bulk-surface
+oscillations in driven topological insulators. Phys. Rev B 94, 195124 (2016).
+56. Hartwigsen, C., Goedecker, S. & Hutter, J. Relativistic separable dual-space
+Gaussian pseudopotentials from H to Rn. Phys. Rev. B 58, 3641–3662 (1998).
+57. Hu¨bener, H., De Giovannini, U. & Rubio, A. Floquet-bandstructures of
+circular driven Na
+3Bi. Novel Materials Discovery (NoMaD) Repository
+Available at http://dx.doi.org/10.17172/NOMAD/2016.11.07-1 (2016).
+Acknowledgements
+We are grateful to Peizhe Tang for stimulating discussions and a critical reading of our
+manuscript and to Ashvin Vishwanath for helpful discussions. We acknowledge ﬁnancial
+support from the European Research Council (ERC-2015-AdG-694097), Grupos
+Consolidados (IT578-13), Spanish grant (FIS2013-46159-C3-1-P), AFOSR Grant No.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms13940 ARTICLE
+NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications 7
+FA2386-15-1-0006 AOARD 144088, COST Action MP1306 (EUSpec). H.H. acknowl-
+edges support from the People Programme (Marie Curie Actions) of the European
+Union’s Seventh Framework Programme FP7-PEOPLE-2013-IEF project No. 622934.
+A.F.K. thanks the Aspen Center for Physics (supported by National Science Foundation
+grant PHY-1066293) for their hospitality during part of this work. M.A.S. acknowledges
+support by the Deutsche Forschungsgemeinschaft through the Emmy Noether
+programme.
+Author contributions
+H.H. and M.A.S. designed the model and the computational framework and analysed the
+data. H.H. and U.D.G. carried out the implementation. H.H. performed the calculations.
+H.H. and M.A.S. wrote the manuscript with input from all authors. A.F.K. and A.R.
+conceived the study and were in charge of overall direction and planning.
+Additional information
+Competing ﬁnancial interests: The authors declare no competing ﬁnancial interests.
+Reprints and permission information is available online at http://npg.nature.com/
+reprintsandpermissions/
+How to cite this article: Hu¨bener, H. et al. Creating stable Floquet–Weyl semimetals by
+laser-driving of 3D Dirac materials. Nat. Commun. 8,13940 doi: 10.1038/ncomms13940
+(2017).
+Publisher’s note: Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional afﬁliations.
+This work is licensed under a Creative Commons Attribution 4.0
+International License. The images or other third party material in this
+article are included in the article’s Creative Commons license, unless indicated otherwise
+in the credit line; if the material is not included under the Creative Commons license,
+users will need to obtain permission from the license holder to reproduce the material.
+To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+r The Author(s) 2017
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms13940
+8 NATURE COMMUNICATIONS | 8:13940 | DOI: 10.1038/ncomms13940 | www.nature.com/naturecommunications

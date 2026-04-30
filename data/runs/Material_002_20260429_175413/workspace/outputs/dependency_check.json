@@ -1,0 +1,59 @@
+{
+  "numpy": {
+    "available": true,
+    "origin": "/usr/local/lib/python3.10/dist-packages/numpy/__init__.py"
+  },
+  "pandas": {
+    "available": true,
+    "origin": "/usr/local/lib/python3.10/dist-packages/pandas/__init__.py"
+  },
+  "matplotlib": {
+    "available": true,
+    "origin": "/usr/local/lib/python3.10/dist-packages/matplotlib/__init__.py"
+  },
+  "seaborn": {
+    "available": true,
+    "origin": "/usr/local/lib/python3.10/dist-packages/seaborn/__init__.py"
+  },
+  "ase": {
+    "available": true,
+    "origin": "/mnt/shared-storage-user/chenyixin/ResearchClawBench/workspaces/Material_002_20260429_175413/.local/lib/python3.10/site-packages/ase/__init__.py",
+    "checked_after_install": true
+  },
+  "mace": {
+    "available": false,
+    "origin": null
+  },
+  "mace_mp": {
+    "available": false,
+    "origin": null
+  },
+  "torch": {
+    "available": false,
+    "origin": null
+  },
+  "scipy": {
+    "available": true,
+    "origin": "/usr/local/lib/python3.10/dist-packages/scipy/__init__.py"
+  },
+  "sklearn": {
+    "available": true,
+    "origin": "/usr/local/lib/python3.10/dist-packages/sklearn/__init__.py"
+  },
+  "PyPDF2": {
+    "available": false,
+    "origin": null,
+    "checked_after_install": true
+  },
+  "pypdf": {
+    "available": true,
+    "origin": "/mnt/shared-storage-user/chenyixin/ResearchClawBench/workspaces/Material_002_20260429_175413/.local/lib/python3.10/site-packages/pypdf/__init__.py",
+    "checked_after_install": true
+  },
+  "pdftotext": {
+    "available": false,
+    "version_output": [
+      "[Errno 2] No such file or directory: 'pdftotext'"
+    ]
+  }
+}

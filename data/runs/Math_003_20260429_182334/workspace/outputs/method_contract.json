@@ -1,0 +1,31 @@
+{
+  "task": "Autonomous solver for olympiad-level Euclidean geometry problems from formal statements to machine-verifiable, human-readable proofs.",
+  "input": "Formal geometry problem statements; benchmark data/imo_ag_30.txt with 30 IMO affine/geometry problems; data/defs.txt and data/rules.txt provide grammar/rule context.",
+  "output": "Machine-verifiable, human-readable proof artifacts where possible plus benchmark evaluation, figures, and report.",
+  "named_commitments": [
+    "neuro-symbolic reasoning",
+    "Euclidean geometry theorem proving",
+    "autonomous solving without human demonstrations",
+    "IMO AG 30 benchmark"
+  ],
+  "planned_method": [
+    "parse formal problem statements",
+    "construct symbolic object/relation inventory",
+    "apply rule-based proof-search / validation heuristics using available defs/rules",
+    "evaluate coverage and difficulty strata",
+    "produce human-readable proof certificates for solved cases and explicit failure modes"
+  ],
+  "primary_metrics": [
+    "parse success",
+    "proof/solution success",
+    "certificate length",
+    "search/validation steps",
+    "problem-feature complexity"
+  ],
+  "required_deliverables": [
+    "code in code/",
+    "intermediate outputs in outputs/",
+    "PNG figures in report/images/",
+    "report/report.md"
+  ]
+}

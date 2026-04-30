@@ -1,0 +1,21 @@
+{
+  "method": "linear XEB",
+  "definition": "F_XEB = 2^N * mean_sample[p_ideal(x)] - 1",
+  "implemented_steps": [
+    "Parse N,d,r from filenames.",
+    "Pair each XEB counts file to its ideal amplitude file.",
+    "Convert complex amplitudes to probabilities via |a|^2.",
+    "Match measured bitstrings to ideal probabilities exactly after tuple-key normalization.",
+    "Compute counts-weighted mean of 2^N p_ideal(x)-1.",
+    "Compute finite-shot standard error from weighted sample variance over matched shots."
+  ],
+  "invariants_verified": {
+    "all_paired_instances_have_20_matched_keys": true,
+    "all_paired_instances_have_full_shot_match": true,
+    "probabilities_nonnegative": true
+  },
+  "deviations": [
+    "The workflow is subset-XEB because only 20 measured bitstrings/probabilities per instance are provided.",
+    "MB regression probability and gate-count error propagation are not fit exactly due to missing circuit-level metadata."
+  ]
+}

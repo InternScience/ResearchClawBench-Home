@@ -1,0 +1,33 @@
+{
+  "named_method": "Foldseek-Multimer-style complex structural alignment",
+  "non_negotiable_outputs": [
+    "chain correspondence",
+    "superposition transform",
+    "TM score/similarity score"
+  ],
+  "available_exact_implementation": false,
+  "checked_dependencies": "outputs/dependency_check.json",
+  "fallback_implemented": "CA-only Kabsch superposition with dynamic-programming residue matching and TM-score-like normalization",
+  "fidelity_assessment": [
+    {
+      "item": "Uses 3D coordinates from PDB complexes",
+      "status": "satisfied"
+    },
+    {
+      "item": "Reports chain correspondence",
+      "status": "satisfied"
+    },
+    {
+      "item": "Reports rigid-body rotation and translation",
+      "status": "satisfied"
+    },
+    {
+      "item": "Reports TM score",
+      "status": "partial: TM-score-like fallback, not official Foldseek/TM-align"
+    },
+    {
+      "item": "Ultra-fast database search indexing",
+      "status": "not implemented: pairwise local analysis only"
+    }
+  ]
+}

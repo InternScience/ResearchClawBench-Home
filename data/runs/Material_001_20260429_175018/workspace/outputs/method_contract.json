@@ -1,0 +1,13 @@
+{
+  "task": "Materials AI prototyping from the provided M-AI-Synth dataset",
+  "inputs": ["numeric structure/property arrays", "candidate lattice parameters", "experimental optimization bounds and seed observation"],
+  "commitments": [
+    "read related work for context",
+    "perform property prediction with validation",
+    "treat structure generation as candidate lattice/microstructure proposal and novelty scoring using available arrays",
+    "perform experimental/synthesis parameter optimization using the available temperature/time bounds and seed response",
+    "generate PNG figures and traceable quantitative artifacts",
+    "write report/report.md"
+  ],
+  "limitations_known_initially": ["single text dataset is synthetic and very small", "no actual microscopy images, spectra, composition labels, or literature text tables are present in data/", "related-work PDFs are image/encoded enough that ReadPDF failed; metadata/title extraction is used where possible"]
+}

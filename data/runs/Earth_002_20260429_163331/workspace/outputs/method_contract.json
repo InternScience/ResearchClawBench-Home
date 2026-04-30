@@ -1,0 +1,24 @@
+{
+  "task": "Develop a composite risk index combining tropical cyclone regime shifts and sea-level rise and apply it globally to evaluate end-century mangrove and ecosystem-service risk.",
+  "primary_quantity": "Composite mangrove climate risk index by mangrove sample and scenario",
+  "components": {
+    "sea_level_rise": {
+      "source_files": ["data/slr/total_ssp245_medium_confidence_rates.nc", "data/slr/total_ssp370_medium_confidence_rates.nc", "data/slr/total_ssp585_medium_confidence_rates.nc"],
+      "scenario_axis": ["ssp245", "ssp370", "ssp585"],
+      "required_treatment": "Extract median regional relative sea-level-rise rates for 2020-2100 at mangrove centroids; derive cumulative 2020-2100 rise proxy and normalized risk.",
+      "related_work_commitment": "Saintilan et al. 2023 emphasize relative sea-level-rise rates and a 7 mm/yr stress threshold for coastal wetlands/mangroves."
+    },
+    "tropical_cyclone_regime": {
+      "source_file": "data/tc/tracks_mit_mpi-esm1-2-hr_historical_reduced.nc",
+      "required_treatment": "Calculate historical cyclone exposure/frequency after filtering/downsampling. Use temporal change between early and late historical periods as a regime-shift proxy where model track years allow; otherwise document limitation.",
+      "related_work_commitment": "Mo et al. 2023 define TC mangrove risk as damage/exposure combined with frequency and highlight regional shifts; Kropf et al. 2023 emphasize shifts in cyclone frequency/intensity relative to ecosystem recovery regimes."
+    },
+    "ecosystem_services": {
+      "required_treatment": "Approximate ecosystem-service exposure from mangrove area and literature value (>US$20,000 ha^-1 yr^-1 cited by Mo et al. 2023) because no direct service layer is provided.",
+      "units": "ha at risk and service-value proxy US dollars per year"
+    }
+  },
+  "composite_index_definition": "Weighted average of normalized SLR risk and normalized TC regime/exposure risk, with default equal weights; scenario-specific SLR and fixed historical TC regime component.",
+  "required_outputs": ["scenario-specific risk tables", "global and regional summaries", "figures: data overview, main risk maps/plots, validation/comparison plots", "claim recovery table", "report/report.md"],
+  "limitations_to_state": ["sampled 10% mangrove polygons, not full global extent", "TC future projections not provided; use historical-regime shift proxy and related-work context", "ecosystem services approximated from area and literature value rather than site-specific service layers"]
+}

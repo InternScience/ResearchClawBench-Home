@@ -1,0 +1,21 @@
+{
+  "checked_dependencies": {
+    "pandas": true,
+    "numpy": true,
+    "scipy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "networkx": false,
+    "linopy": false,
+    "pyomo": false,
+    "pulp": false,
+    "highspy": false,
+    "cvxpy": false
+  },
+  "optimization_choice": "Use scipy.optimize.linprog with default HiGHS backend because scipy is available; pyomo/pulp/linopy/cvxpy wrappers are not installed.",
+  "related_work_pdf_status": "ReadPDF returned parser errors for all four PDFs and local text extraction tools/modules were unavailable or yielded no text. Related-work findings are therefore limited to task statement and dataset inspection; this limitation is recorded in report.",
+  "fallbacks": [
+    "FES-specific numerical trajectories are not present as separate data files, so future scenarios are modeled as transparent sensitivity cases using capacity/demand/flexibility multipliers inspired by common decarbonisation pathway dimensions.",
+    "Use transport network flow constraints rather than full AC/DC power-flow angle physics because links.csv provides capacities and lengths but no reactances."
+  ]
+}

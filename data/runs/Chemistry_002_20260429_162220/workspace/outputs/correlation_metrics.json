@@ -1,0 +1,26 @@
+{
+  "contact_surrogate": {
+    "n": 105,
+    "pearson_r": 0.5111609139807701,
+    "pearson_p": 2.5202790616363366e-08,
+    "spearman_rho": 0.6485460452872011,
+    "spearman_p": 7.41193125821695e-14,
+    "rmse_after_linear_calibration": 3.2636385163019894
+  },
+  "ridge_LOOCV": {
+    "n": 105,
+    "pearson_r": 0.6610171952457953,
+    "pearson_p": 1.6691427976603803e-14,
+    "spearman_rho": 0.7809120974097584,
+    "spearman_p": 8.895954487460951e-23,
+    "rmse": 2.849444363110211,
+    "mae": 1.942099917503812,
+    "r2": 0.4368904420807006
+  },
+  "interface_vs_noninterface_mannwhitney": {
+    "U": 450.0,
+    "p": 0.0026827672210052843,
+    "n_interface": 100,
+    "n_noninterface": 5
+  }
+}

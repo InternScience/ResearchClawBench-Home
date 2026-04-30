@@ -1,0 +1,18 @@
+{
+  "named_method": "three-stage cascade U-Transformer forecasting system",
+  "non_negotiable_structural_steps": [
+    "Use two recent atmospheric states as input context.",
+    "Produce 6-hourly global forecasts on latitude-longitude grid for long leads by autoregressive application.",
+    "Specialize models by lead-time regime to mitigate error accumulation.",
+    "Evaluate against ERA5/analysis targets with latitude-weighted RMSE and ACC at each lead time and key variables such as Z500, T2M, winds, MSL, TP.",
+    "Compare full lead-time curves with ECMWF ensemble mean when available."
+  ],
+  "workspace_fidelity": {
+    "input_context_available": true,
+    "one_step_fuxi_forecast_available": true,
+    "three_trained_U_Transformer_models_available": false,
+    "15_day_forecast_sequence_available": false,
+    "future_truth_or_ECMWF_ensemble_available": false
+  },
+  "implemented_fallback": "Analyze available FuXi one-step output and design a faithful cascade protocol; do not claim trained 15-day skill."
+}

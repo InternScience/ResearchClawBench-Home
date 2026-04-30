@@ -1,0 +1,458 @@
+ Neuronal “parts list” and wiring diagram for a visual 
+ system 
+ Arie Matsliah  1  *, Szi-chieh Yu  1  *, Krzysztof Kruk  3  ,  Doug Bland  1  , Austin Burke  1  , Jay Gager  1  , 
+ James Hebditch  1  , Ben Silverman  1  , Kyle Willie  1  , Ryan  Willie  1  , Marissa Sorek  1  , Amy R. 
+ Sterling  1  , Emil Kind  4  , Dustin Garner  5  , Gizem Sancer  4  ,  Mathias F. Wernet  4  , Sung Soo 
+ Kim  5  , Mala Murthy  1  , H. Sebastian Seung  1,2  , and the  FlyWire Consortium  + 
+ 1  Neuroscience Institute, Princeton University, USA 
+ 2  Computer Science Department, Princeton University,  USA 
+ 3  ul. Grunwaldzka 22/91, 25-736, Kielce, Poland 
+ 4  Institut für Biologie - Neurobiologie, Freie Universität  Berlin, Germany 
+ 5  Molecular, Cellular, and Developmental Biology, Univ.  California Santa Barbara, USA 
+ *These authors contributed equally. 
+ +  A list of contributing Consortium authors appears  at the end of the paper 
+ A catalog of neuronal cell types has often been called a “parts list” of the brain, and 
+ regarded as a prerequisite for understanding brain function. In the optic lobe of 
+ 
+Drosophila  , rules of connectivity between cell types  have already proven essential for 
+ understanding fly vision. Here we analyze the fly connectome to complete the list of cell 
+ 
+types intrinsic to the optic lobe, as well as the rules governing their connectivity. We 
+ 
+more than double the list of known types. Most new cell types contain between 10 and 
+ 
+100 cells, and integrate information over medium distances in the visual field. Some 
+ 
+existing type families (Tm, Li, and LPi) at least double in number of types. We introduce 
+ 
+a new Sm interneuron family, which contains more types than any other, and three new 
+ 
+families of cross-neuropil types. Self-consistency of cell types is demonstrated through 
+ 
+automatic assignment of cells to types by distance in high-dimensional feature space, 
+ 
+and further validation is provided by algorithms that select small subsets of 
+ 
+discriminative features. Cell types with similar connectivity patterns divide into clusters 
+ 
+that are interpretable in terms of motion, object, and color vision. Our work showcases 
+ 
+the advantages of connectomic cell typing: complete and unbiased sampling, a rich 
+ 
+array of features based on connectivity, and reduction of the connectome to a drastically 
+ 
+simpler wiring diagram of cell types, with immediate relevance for brain function and 
+ 
+development. 
+ Introduction 
+ Some of the greatest scientific discoveries of the 20th century concern the neural basis of sensory 
+ perception. Hubel and Wiesel’s discovery of simple and complex cells in the visual cortex not only 
+ 
+entered neuroscience textbooks. The hypothetical neuronal wiring diagrams in their 1962 paper  (Hubel 
+ and Wiesel 1962)  inspired convolutional nets  (Fukushima  1980; Y. LeCun et al. 1989)  , which eventually 
+ ignited the deep learning revolution in artificial intelligence  (Yann LeCun, Bengio, and Hinton 2015)  .  It 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 
+ may come as a surprise that no one has ever directly mapped wiring diagrams, however influential they 
+ may be. The best existing evidence requires the indirect inference of connectivity from 
+ 
+cross-correlations in neural activity  (Reid and Alonso  1995; Alonso and Martinez 1998)  , or the 
+ assumption that adjacency implies connectivity  (Chapman,  Zahs, and Stryker 1991)  . 
+ Mapping the connections between individual neurons is still highly challenging in mammalian brains. 
+ 
+Progress is being made by coupling calcium imaging  in vivo  with synaptic physiology in brain slices 
+ (Cossell et al. 2015)  and calcium imaging of dendritic  spines  in vivo  (Jia et al. 2010; Wilson et al. 2016)  . 
+ The reconstruction of a column of visual cortex from electron microscopic images is also becoming 
+ feasible  (MICrONS Consortium et al. 2021; Schneider-Mizell  et al. 2023)  . These are tiny slivers of 
+ visual systems; scaling up these approaches to tackle the full complexity of mammalian vision is still 
+ aspirational. 
+ To imagine the future of mammalian visual neuroscience, it is helpful to extrapolate from a brain of 
+ more modest size, that of the fly, for which a complete neuronal wiring diagram is now just a few 
+ keystrokes away. Especially over the past 15 years, visual neural circuits have been intensively 
+ investigated in  Drosophila  (Currier, Pang, and Clandinin  2023)  with great progress in understanding the 
+ perception of motion  (Shinomiya et al. 2022; Borst  and Groschner 2023)  , color  (Schnaitmann, Pagni, 
+ and Reiff 2020)  , and objects  (Wu et al. 2016)  , as  well as the role of vision in complex behaviors like 
+ courtship  (Ribeiro et al. 2018)  . The recent release  of a neuronal wiring diagram of a  Drosophila  brain 
+ (Zheng et al. 2018; Dorkenwald, Matsliah, et al. 2023; Schlegel et al. 2023)  poses an unprecedented 
+ opportunity. The first wiring diagram for a whole brain contains as a corollary the first wiring diagram for 
+ an entire visual system, as well as all the wiring connecting the visual system with the rest of the brain. 
+ Most visual neurons, and more generally most neurons, are situated in the optic lobes of the  Drosophila 
+ brain (Fig. S1a). In the reconstructed brain  (Dorkenwald, Matsliah, et al. 2023)  , about 38,500 neurons 
+ are intrinsic to the right optic lobe, meaning that their synapses are fully contained in this region. A 
+ wiring diagram for the  Drosophila  visual system must include this many neurons at least. While 
+ minuscule compared to a mammalian visual system, this is still too complex to comprehend or even 
+ 
+visualize. It is essential to reduce the complexity by describing the connectivity between types of cells. 
+ 
+For example, the roughly 800 ommatidia in the compound eye send photoreceptor axons to roughly 
+ 
+800 L1 cells in the lamina, which in turn connect with roughly 800 Mi1 cells. That is a lot of cells and 
+ 
+connections, but they can all be described by the simple rules that photoreceptors connect to L1, and 
+ 
+L1 connects to Mi1. Some of these connectivity rules have long been known  (Meinertzhagen and O’Neil 
+ 1991; Gao et al. 2008)  , and more have been discovered over the past decade  (S.-Y. Takemura et al. 
+ 2013, 2015; S. Takemura et al. 2017; Shinomiya et al. 2019, 2022)  , but this knowledge is fragmentary 
+ and incomplete. 
+ In the present work, we exhaustively enumerate all cell types intrinsic to the optic lobe, and find all rules 
+ of connection between them. We have effectively collapsed 38,500 intrinsic neurons onto just 226 
+ 
+types, a more than 150× reduction. The wiring diagram is reduced from a 38,500×38,500 matrix to a 
+ 
+226x226 matrix, an even huger compression. We additionally provide rules of connectivity between 
+ 
+intrinsic types and types of boundary neurons, defined as those that connect the optic lobe with regions 
+ 
+in the central brain. Such central brain regions are generally multimodal and/or sensorimotor, mixing 
+ 
+information coming from the eyes and other sense organs, so we regard the optic lobe proper as the 
+ 
+fly’s visual system. 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 
+ In our connectomic approach, a cell type is defined as a set of cells with similar patterns of connectivity 
+ (Scheffer et al. 2020)  , and this definition turns out to be critical for distinguishing between cell types that 
+ are morphologically very similar. Because connectivity is so closely related to function, cells of the 
+ same connectomic type are expected to share the same function  (H. Sebastian Seung and Sümbül 
+ 2014)  . By the same logic, cell types with similar  patterns of connectivity ought to have similar functions. 
+ We support this claim by dividing our cell types into clusters, and interpreting the functions of these 
+ clusters in terms of motion, object, and color vision. This provides preliminary clues concerning the 
+ 
+functions of newly discovered cell types, as well as the previously known cell types for which functional 
+ 
+information has been lacking. 
+ The present work is based on version 783 of the FlyWire connectome, which incorporates proofreading 
+ up to September 30, 2023. Our work will continue to be updated as new versions of the connectome 
+ 
+are released (see Discussion). All information can be browsed, searched, and downloaded at the 
+ 
+FlyWire Codex (codex.flywire.ai). This addition to the existing array of FlyWire resources  (Dorkenwald, 
+ Matsliah, et al. 2023; Schlegel et al. 2023)  will  accelerate the pace of discovery for many researchers. 
+ Class, Family, and Type 
+ Neurons intrinsic to the optic lobe are those with synapses entirely contained inside the optic lobe, and 
+ are the main topic of this study (Fig. S1a). In addition, there are “boundary” neurons that straddle the 
+ 
+optic lobe and the rest of the brain (Fig. S1b). Boundary neurons fall into several classes. Visual 
+ 
+projection neurons (VPNs) have dendrites in the optic lobe and extend axons to the central brain. 
+ Visual centrifugal neurons (VCNs) do the opposite. Heterolateral neurons are intrinsic to the pair of 
+ optic lobes; they extend from one optic lobe to the other while making few or no synapses in the central 
+ 
+brain. Boundary neurons have been divided into types by  (Schlegel et al. 2023)  . 
+ Our work is based on the brain of a single  Drosophila  adult female, which was reconstructed by the 
+ FlyWire Consortium  (Dorkenwald, Matsliah, et al. 2023)  .  We have proofread roughly 38,500 intrinsic 
+ neurons in the right optic lobe, as well as 4,000 VPNs, 250 VCNs, 200 heterolateral neurons, and 4700 
+ 
+photoreceptor cells. 80% of the synapses of intrinsic neurons are with other intrinsic neurons, and 20% 
+ 
+are with boundary neurons. These statistics suggest that the optic lobe communicates more with itself 
+ 
+than with the rest of the brain. 
+ We divide optic lobe intrinsic neurons into four broad classes. Cells of the columnar class (Fig. 1a) have 
+ axons oriented parallel to the main axis of the visual columns (see Methods for definition of “axon”). 
+ 
+Following  (Fischbach and Dittrich 1989)  , the arbor  of a columnar neuron is allowed to be wider than a 
+ single column; what matters is the orientation of the axon, not the aspect ratio of the arbor. 
+ 
+Photoreceptor or retinula cells are columnar but are not intrinsic to the optic lobe, strictly speaking, 
+ 
+because they enter from the retina. Nevertheless, they will sometimes be included with intrinsic types in 
+ 
+the analyses and comparisons to follow. 
+ The optic lobe (Fig. S1a, b) contains four main neuropils (lamina, medulla, lobula, and lobula plate) and 
+ a smaller fifth neuropil (accessory medulla). Following  (Fischbach and Dittrich 1989)  we further 
+ distinguish between distal and proximal medulla, regarding them as two separate neuropils (Fig. S1c). 
+ 
+A columnar cell spans multiple neuropils (Fig. 1a). Cells of the local interneuron class (Fig. 1b) are 
+ 
+defined as being confined to a single neuropil. We also define two classes that cross multiple neuropils 
+ 
+but are not columnar. A cross-neuropil tangential cell (Fig. 1c) has an axon that is oriented 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 
+ perpendicular to the main axis of the visual columns as it runs inside a neuropil. A cross-neuropil 
+ amacrine cell (Fig. 1c) lacks an axon. Interneurons are typically amacrine, but sometimes have an axon 
+ 
+in the tangential orientation. 
+ Each class is divided into multiple families. A family is defined as a set of cells that share the same 
+ neuropils (Fig. 1a, b, c, Methods). For example, the Tm family projects from the distal medulla to the 
+ 
+lobula, while the TmY family projects from the distal medulla to both the lobula and lobula plate (Fig. 
+ 
+1a). (Tm and TmY also typically receive inputs in the proximal medulla.) 
+ Each family is divided into cell types. All 226 intrinsic types as well as photoreceptor types are available 
+ for 3D interactive viewing at the FlyWire Codex (codex.flywire.ai). Table S1 is a master list of all types 
+ 
+and their properties. Data S1 contains one “card” for each type, which includes its discriminative logical 
+ 
+predicate (see below), basic statistics, diagram in the style of  (Fischbach and Dittrich 1989)  showing 
+ stratification and other single-cell anatomy, and 3D renderings of all the cells in the type. 
+ Most neurons in the optic lobe are columnar (Fig. 1e, right), and half of the families are columnar (Fig. 
+ 1e, left). Interneurons constitute just 17% of optic lobe intrinsic neurons, but the majority of cell types 
+ 
+(Fig. 1e, middle). A columnar family (Tm) contains more cells than any other family (Fig. 1f, right). An 
+ 
+interneuron family (Sm) contains more types than any other family (Fig. 1f, left). 
+ The columnar families (Fig. 1a) were defined by  (Fischbach  and Dittrich 1989)  . The Sm interneuron 
+ family is new (Fig. 1b), and some of the cross-neuropil families are wholly or almost wholly new (Fig. 
+ 1c). Over half of the cell types are new, and many of these are interneuron types. 
+ Connectomic approach to cell types 
+ For each cell, we define an output feature vector by the number of output synapses onto neurons of cell 
+ type  t  , which runs from 1 to  T  . This is a  T  -dimensional  vector, where  T  is the number of cell types. The 
+ output feature vector is a row of the cell-to-type connectivity matrix (Methods). For each cell, we 
+ 
+similarly defined an input feature vector by the number of input synapses received from neurons of cell 
+ 
+type  t  . This is a column of the type-to-cell connectivity  matrix (Methods). Alternatively, feature vectors 
+ can be based on connection number, where a connection is defined as two or more synapses from one 
+ 
+neuron to another (Methods), and this gives similar results. 
+ The input and output feature vectors were concatenated to form a 2  T  -dimensional feature vector. If we 
+ include only intrinsic types (Fig. 2a), then  T  is  226 and the dimensionality 2  T  is 452. If we include  both 
+ intrinsic and boundary types, then  T  is over 700 and  the dimensionality 2  T  is over 1400 (not shown). 
+ We experimented with both dimensionalities, and as will be explained below, the results do not depend 
+ on the boundary types. The lower dimensionality feature vector with only intrinsic types is sufficient for 
+ 
+defining types. 
+ A cell type is defined as a set of cells with similar feature vectors  (Scheffer et al. 2020)  . Cells of  the 
+ same type are near each other in feature space, while cells of different types are far away (Fig. 2b). 
+ This was quantified using weighted Jaccard distance, which we will call Jaccard distance for short 
+ 
+(Methods). 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 
+ In order to define feature vectors, some cell types must already exist. An initial set of cell types was 
+ defined by human analysts employing traditional morphological criteria (Methods). Namely, each 
+ 
+neuropil was divided into multiple layers  (Fischbach  and Dittrich 1989)  (Fig. S1c). A cell type was 
+ classically defined as a set of neurons that stratify across the layers in the same way. Such cell types 
+ 
+were used to compute feature vectors, and then hierarchical clustering was applied. In many cases, this 
+ 
+led to further division into cell types that could not be distinguished by traditional criteria. In other cases, 
+ 
+it led to grouping of morphological variants into a single type. After splitting or merging types, the 
+ 
+feature vectors were recomputed and the process continued iteratively. 
+ The final cell types are validated in several ways (Methods). We show that our clustering is 
+ self-consistent, in the sense that almost all cells end up in the original cluster if we attempt to reassign 
+ 
+each cell’s feature vector to the nearest cluster. For more interpretable evaluations, we construct 
+ 
+compact connectivity-based discriminators that can predict cell type membership (Fig. S2, Data S2). 
+ 
+We show that membership can be accurately predicted by a logical conjunction of on average five 
+ 
+synaptic partner types. For each intra-neuropil type, we also provide a 2D projection of the connection 
+ matrix that can be used to discriminate that type from others in the same neuropil (Fig. S3c, Data S3). 
+ Hierarchical clustering of cell types 
+ We defined a connectomic cell type as a set of cells with similar feature vectors based on connectivity. 
+ It follows that cells of the same type should share the same function, if one accepts the maxim, 
+ 
+“Nothing defines the function of a neuron more faithfully than the nature of its inputs and outputs” 
+ (Mesulam 2005)  . 
+ Taking one step further, the same maxim implies that cell types with similar feature vectors should have 
+ similar visual functions. A cell type feature vector can be obtained by summing the feature vectors over 
+ 
+all cells in that type. We separately sum and normalize the input and output feature vectors, and then 
+ 
+concatenate the results. 
+ We computed the Jaccard distance between all pairs of cell type feature vectors. It is hard to extract 
+ insights directly from such a large distance matrix, so we used it to compute a hierarchical clustering 
+ 
+(Fig. 2c). The dendrogram was cut to yield a flat clustering, which is indicated by coloring the 
+ 
+dendrogram (Fig. 2c). Each cluster contains some cell types for which visual functions are known. Later 
+ on, we will extrapolate from this information to assign hypothetical functions to entire clusters. 
+ The precise memberships in the clusters warrant cautious interpretation, as the clusters are the 
+ outcome of just one clustering algorithm (average linkage), and differ somewhat if another clustering 
+ 
+algorithm is employed. Each cluster contains core groups of types that are highly similar to each other, 
+ 
+i.e. types that merge in the dendrogram farther from the origin. These are more certain to have similar 
+ 
+visual functions, and tend to be grouped together by any clustering algorithm. Types that are merged 
+ 
+closer to the origin are less similar, and their cluster membership is more arbitrary. Some degree of 
+ 
+arbitrariness is inevitable when one divides the visual system into separate subsystems, because 
+ 
+subsystems interact with each other, and types that mediate such interactions are borderline cases. 
+ Each cluster is generally a mixture of types from multiple neuropil families. Skeptics might regard such 
+ mixing as arising from the “noisiness” in the clustering noted above. Indeed, the nearest types, those 
+ 
+that merge in the dendrogram farther from the center (Fig. 2c), tend to be from the same neuropil 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 
+ family. But plenty of dendrogram merges between types of different families happen at intermediate 
+ distances rather than the largest distances. Therefore some of the mixing of types from different 
+ 
+neuropil families seems genuinely rooted in biology. 
+ Type-to-type connectivity 
+ We define a type-to-type connection matrix in which the  st  element is the number of synapses from cell 
+ type  s  to cell type  t  (Methods). The type-to-type  matrix is drastically smaller than the cell-to-cell matrix. 
+ Nevertheless, it is still quite large, presenting challenges to visualization and understanding. Figure S4 
+ attempts to show the entire matrix. The area of each dot encodes the number of synapses in some 
+ type-to-type connection. Dot area saturates above 3600 synapses, in order to make weaker 
+ 
+connections visible. The numerical values of the matrix elements are provided in the Supplementary 
+ Information, and can be downloaded from the Codex. 
+ The type-to-type connection matrix can also be visualized as a directed graph. Since showing all 
+ connections is visually overwhelming, it is important to find ways of displaying meaningful subsets of 
+ 
+connections. One that we have found helpful is to display the top input and output connections of each 
+ 
+type (Fig. 3, S5, S6). In such a graph, every node must have at least one outgoing and one incoming 
+ 
+connection. But some nodes can still be “hubs” with many visible connections. For example, Mi1 is the 
+ 
+top input to a large number of postsynaptic types. 
+ The nodes of the graph were positioned in 2D space by a graph layout algorithm that tends to place 
+ visibly connected types close together. It turns out that nearby nodes in the 2D graph layout space tend 
+ to belong to the clusters that were extracted from the high dimensional connectivity-based feature 
+ 
+vectors (compare node colorings of Fig. 3 with clusters of Fig. 2). 
+ We can also normalize the type-to-type connection matrix to be the fraction of synapses from cell type  s 
+ to cell type  t  . Depending on the normalization, this  could be the fraction of input to type  t  or fraction  of 
+ output from type  s  (Methods). Input and output fractions  are shown in Data S4, and are equivalent to 
+ the cell type feature vectors defined earlier. Each column of the heatmap contains the input or output 
+ fractions of the corresponding cell type listed at the bottom of the heatmap. The rows include all 
+ 
+partners that contribute at least 0.02 input or output fraction to any of the reference types listed at the 
+ 
+bottom of the heatmap. The heatmaps include partner boundary types as well as intrinsic types. The 
+ colormap has been chosen to saturate at 0.2, in order to make small values visible, so large values 
+ (≥0.2) are indistinguishable. The viewer should be alert to artifacts that can arise due to normalization. 
+ 
+If a cell type makes very few synapses overall, that can result in large input and output fractions, giving 
+ 
+the mistaken impression of connections that are strong when they are actually weak or nonexistent. 
+ Perplexity as a measure of degree of connectivity 
+ As mentioned above, some cell types are hubs with a high degree of connectivity to other types. The 
+ degree of a node can be defined as the number of nodes to which it is connected. The elements of the 
+ 
+type-to-type connection matrix vary greatly in magnitude, and it is unclear whether weak connections 
+ 
+should be included when computing degree. This can be handled by thresholding the connection matrix 
+ 
+before computing degree. For a threshold-independent measure,  however,  we instead calculate a 
+ “perplexity” for each node. The outgoing connection strengths (synapse counts) are normalized as if 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 
+ they were a probability distribution, and out-perplexity is defined as the exponential of the entropy of 
+ this distribution. Out-perplexity reduces to out-degree in the special case that the distribution is uniform 
+ 
+over the connected partners. In-perplexity is defined analogously. 
+ If cell types are ranked by product of out- and in-perplexity (Fig. S7a), then TmY5a is the most 
+ connected hub, and various types in the lamina and distal medulla are the least hub-like. Motion-related 
+ 
+cell types generally do not have high perplexity. Out-perplexity tends to be greater than in-perplexity 
+ 
+(Fig. S7a), though they are positively correlated (Fig. S7b). 
+ One might expect that “early” types in visual processing would have divergent connectivity, to distribute 
+ photoreceptor signals to many targets, while “late” types would have convergent connectivity, 
+ 
+summarizing the final results of optic lobe computations for use by the central brain. This idea can be 
+ 
+tested by ranking types according to ratio of out- to in-perplexity (Fig. S8). Indeed, the top of the list 
+ 
+includes early types like the inner photoreceptors R7 and R8, L3 and L5, and many Dm and Pm 
+ 
+interneuron types. And many Sm types are near the bottom of the list, as befits their extensive 
+ connectivity with VPNs in the serpentine layer. But reality is clearly more complex than the simple idea 
+ that motivated the graph. 
+ The “numerous” cell types 
+ The most numerous types contain about 800 cells, the same as the estimated number of ommatidia 
+ (Fig. 1d). The least numerous types contain only a single cell. The number of cells per type is 
+ multimodally distributed (Fig. 1g), with two sharp modes at 1 and roughly 700. Most of the distribution 
+ lies between these modes (Fig. 1g, S1d). 
+ The most numerous types have long been known  (Fischbach  and Dittrich 1989)  . It is the less numerous 
+ types where our knowledge has been incomplete, and arguably they are where much of the magic of 
+ vision happens. As with the photoreceptors, neural activity in the most numerous cell types like L1 and 
+ 
+Mi1 mostly encodes information about the image at or near single points in visual space. But perception 
+ 
+requires the integration of information from points that can be quite distant from each other, and this is 
+ 
+done by the larger neurons that belong to the less numerous types. 
+ Photoreceptor axons originating in the roughly 800 ommatidia of the compound eye project 
+ retinotopically to the lamina and medulla neuropils. The medulla is divided into columns, which are 
+ presumed to be in one-to-one correspondence with the ommatidia.  (S.-Y. Takemura et al. 2013)  defined 
+ “modular” cell types as those that are in one-to-one correspondence with columns. Based on their 
+ 
+reconstruction of seven medulla columns,  (S.-Y. Takemura  et al. 2015)  found that there were 20 
+ modular types. These largely correspond to the cell types that contain from 720 to 800 cells in v783 
+ 
+(Fig. 1d). 
+ The top end (800) of this range is likely the true number of columns in this optic lobe. In the lower end 
+ of this range, the deficit relative to 800 could be due to underrecovery of cells (Methods) so our data is 
+ 
+still consistent with modularity. R7 and R8 are about 650 cells each, but this is not inconsistent with 
+ 
+modularity because photoreceptors are especially challenging to proofread in this dataset (Methods). 
+ 
+Tm21 (a.k.a. Tm6), Dm2, TmY5a, Tm27, and Mi15 have much lower numbers, so we agree with  (S.-Y. 
+ Takemura et al. 2015)  that they are not modular. 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 
+ On the other hand, some of our types (T2a, Tm3, T4c, T3) contain more than 800 proofread cells (Fig. 
+ 1d), which violates the definition of modularity. This partially agrees with  (S.-Y. Takemura et al.  2015)  , 
+ who regarded T3 and T2a as modular, and T4 and Tm3 as not modular. T4 is an unusual case, as T4c 
+ is above 800 while the other T4 types are below 800, though these numbers could still creep upward 
+ with further proofreading. 
+ A genuine analysis of modularity requires going beyond simple cell counts, and analyzing locations in 
+ order to check the idea of one-to-one correspondence. Such an analysis is left for future work. For now, 
+ 
+we will apply the term “numerous” to those types containing 720 or more cells, as well as R7 and R8, 
+ and do not commit to whether these types are truly modular. 
+ (S.-Y. Takemura et al. 2015)  provide a matrix of connections  between their modular types. This shows 
+ good agreement with our data (Fig. S9, Methods), and validates our reconstruction in the optic lobe. 
+ This validation complements the estimates of reconstruction accuracy in the central brain that are 
+ 
+provided in the flagship paper  (Dorkenwald, Matsliah,  et al. 2023)  . 
+ The connectivity and visual responses of the numerous types are largely known from previous work. In 
+ 
+the following, we will provide functional interpretations of the cell type clusters shown in the dendrogram 
+ 
+of Fig. 2c. It turns out that the numerous types that belong to a single cluster have similar functions, 
+ 
+which enables us to ascribe a function to each cluster as a whole. In other words, we extrapolate from 
+ 
+the functions of the numerous types to yield preliminary clues regarding the functions of the less 
+ 
+numerous types. 
+ ON, OFF, and luminance channels 
+ We propose that Cluster8 and Cluster9 be regarded as OFF and ON channels, respectively, which are 
+ dedicated to carrying information about light decrements (“OFF” stimuli) and light increments (“ON” 
+ 
+stimuli). Our concept is similar to the well-known ON and OFF motion pathways, but differs because our 
+ 
+ON and OFF channels are general-purpose, feeding into the object and color subsystems as well as 
+ 
+the motion subsystem. 
+ Cluster8 contains the OFF cells L2, L4, Tm1, Tm2, and Tm4. Cluster9 contains the ON cells L1, L5, 
+ Mi1, and Tm3 and also the OFF cell L1. It makes sense to assign L1 to the ON channel even though it 
+ is an OFF cell, because L1 is inhibitory/glutamatergic, so its effects on downstream partners are similar 
+ to those of an ON excitatory cell. (Note that information about whether synapses are excitatory or 
+ 
+inhibitory was not used by our clustering algorithm.) Cluster9 also contains C2 and C3, which are 
+ 
+expected to be ON cells because their top inputs are L1 and L5. 
+ The ON and OFF motion pathways were traditionally defined by working backwards from the T4 and T5 
+ motion detectors, which respectively compute the directions of moving ON and OFF stimuli  (Borst and 
+ Groschner 2023)  . The ON motion pathway is directly  upstream from T4 and includes Mi1, Mi4, Mi9, and 
+ Tm3. The OFF motion pathway is directly upstream from T5 and includes Tm1, Tm2, Tm4, and Tm9. 
+ 
+These types are the consensus  (Currier, Pang, and  Clandinin 2023)  , though some authors include 
+ further types  (Borst and Groschner 2023)  . The ON and  OFF channels defined by our clustering have 
+ some overlap with the ON and OFF motion pathways, but they are not the same. 
+.CC-BY-ND 4.0 International licenseavailable under a
+was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint (whichthis version posted April 15, 2024. ; https://doi.org/10.1101/2023.10.12.562119doi: bioRxiv preprint 

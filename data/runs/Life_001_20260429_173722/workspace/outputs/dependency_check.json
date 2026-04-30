@@ -1,0 +1,50 @@
+{
+  "pandas": {
+    "available": true,
+    "version": "2.2.3"
+  },
+  "numpy": {
+    "available": true,
+    "version": "2.2.5"
+  },
+  "matplotlib": {
+    "available": true,
+    "version": "3.10.1"
+  },
+  "seaborn": {
+    "available": true,
+    "version": "0.13.2"
+  },
+  "scipy": {
+    "available": true,
+    "version": "1.15.2"
+  },
+  "sklearn": {
+    "available": true,
+    "version": "1.6.1"
+  },
+  "PyPDF2": {
+    "available": false
+  },
+  "pdfplumber": {
+    "available": false
+  },
+  "pdf_files": {
+    "related_work/paper_000.pdf": {
+      "exists": true,
+      "size_bytes": 435620
+    },
+    "related_work/paper_001.pdf": {
+      "exists": true,
+      "size_bytes": 5699298
+    },
+    "related_work/paper_002.pdf": {
+      "exists": true,
+      "size_bytes": 18502062
+    },
+    "related_work/paper_003.pdf": {
+      "exists": true,
+      "size_bytes": 1562817
+    }
+  }
+}

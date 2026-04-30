@@ -1,0 +1,34 @@
+{
+  "n_channels": 70,
+  "grid_shape": [
+    181,
+    360
+  ],
+  "grid_spacing_deg": 1.0,
+  "forecast_steps_available": 1,
+  "mean_forecast_increment_rmse": 14.05446567131425,
+  "mean_input_increment_rmse": 14.064034565548491,
+  "mean_forecast_corr_with_input_t6": 0.0007692680759388651,
+  "top5_forecast_increment_channels": [
+    {
+      "channel": "T925",
+      "forecast_6h_increment_rmse": 14.233365957694176
+    },
+    {
+      "channel": "U600",
+      "forecast_6h_increment_rmse": 14.213681491656667
+    },
+    {
+      "channel": "T200",
+      "forecast_6h_increment_rmse": 14.207845555184576
+    },
+    {
+      "channel": "R700",
+      "forecast_6h_increment_rmse": 14.205899113651764
+    },
+    {
+      "channel": "R150",
+      "forecast_6h_increment_rmse": 14.202067381736496
+    }
+  ]
+}

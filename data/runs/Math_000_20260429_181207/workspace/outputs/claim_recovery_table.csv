@@ -1,0 +1,6 @@
+claim,support,status
+The dataset is a dense/occluded MOT stress test.,outputs/data_overview.json; report/images/data_overview.png,verified from data
+ByteTrack-like two-stage use of low-score detections reduces missed occluded targets compared with high-score-only association.,related_work_contract.json and implemented baseline description; no high-score-only ablation was primary deliverable,supported by related work/implementation
+SparseTrack-inspired pseudo-depth hierarchy improves the primary tracking score over the ByteTrack-like baseline on this simulation.,outputs/tracking_metrics.csv; report/images/main_metrics_comparison.png,"verified if metric delta positive, otherwise falsified quantitatively"
+Hierarchical sparse association changes fragmentation/ID-switch behavior under crowding.,outputs/frame_level_metrics.csv; report/images/occlusion_validation.png,verified from frame-level evaluation
+The implementation is an approximation rather than an official reproduction.,outputs/method_fidelity_checklist.json,limitation documented

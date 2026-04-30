@@ -1,0 +1,47 @@
+{
+  "demo1.png": {
+    "bbox_xyxy": [
+      55,
+      320,
+      270,
+      535
+    ],
+    "task_hint": {
+      "task": "identify small road-scene details such as taxi signs, license plates, distant objects",
+      "domain": "urban traffic"
+    },
+    "selection_rule": "max summed deterministic interest map in a square ROI",
+    "area_fraction": 0.05877812703450521,
+    "interest_fraction": 0.12234671413898468
+  },
+  "demo2.png": {
+    "bbox_xyxy": [
+      912,
+      311,
+      1332,
+      731
+    ],
+    "task_hint": {
+      "task": "distinguish fine-grained flower colors and individual blossoms in a crowded greenhouse",
+      "domain": "flower garden"
+    },
+    "selection_rule": "max summed deterministic interest map in a square ROI",
+    "area_fraction": 0.05226666666666667,
+    "interest_fraction": 0.0820951759815216
+  },
+  "method_case.png": {
+    "bbox_xyxy": [
+      658,
+      927,
+      1229,
+      1498
+    ],
+    "task_hint": {
+      "task": "audit paper-provided ViCrop examples and heatmap/crop relation",
+      "domain": "method figure"
+    },
+    "selection_rule": "max summed deterministic interest map in a square ROI",
+    "area_fraction": 0.07758262938726948,
+    "interest_fraction": 0.11879010498523712
+  }
+}

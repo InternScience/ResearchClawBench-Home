@@ -1,0 +1,47 @@
+{
+  "task": "multi-object tracking from frame detections to complete trajectories under crowded occlusion",
+  "inputs": [
+    "consecutive frames",
+    "detections per frame with bbox coordinates and confidence",
+    "ground truth in simulated_sequence.json for evaluation"
+  ],
+  "outputs": [
+    "identity labels and bounding box sequences across frames",
+    "comparison of SparseTrack-inspired hierarchical association versus ByteTrack-like baseline"
+  ],
+  "scientific_targets": [
+    "handle occlusions",
+    "improve tracking in crowded scenes",
+    "decompose dense target sets into sparse subsets via pseudo-depth estimation",
+    "perform hierarchical association"
+  ],
+  "named_methods": [
+    "ByteTrack",
+    "SparseTrack-inspired pseudo-depth hierarchical association"
+  ],
+  "required_metrics": [
+    "IDF1",
+    "MOTA",
+    "MOTP or localization accuracy",
+    "identity switches",
+    "trajectory fragmentation",
+    "coverage / association recall"
+  ],
+  "required_figures": [
+    "data overview",
+    "main method comparison",
+    "validation/comparison plots including occlusion/density behavior"
+  ],
+  "constraints": [
+    "read-only data and related_work",
+    "PNG figures only",
+    "reproducible code in code/"
+  ],
+  "related_work_refresh": {
+    "SORT": "online tracking-by-detection commonly uses Kalman/constant-velocity prediction, IoU costs, and Hungarian assignment; related_work/paper_000.pdf",
+    "ByteTrack": "central baseline: associate high-score detections first and recover occluded objects by matching low-score boxes to tracklets; related_work/paper_001.pdf",
+    "BoT-SORT": "reinforces association metrics MOTA/IDF1/HOTA and SORT-like limitations; related_work/paper_002.pdf",
+    "YOLOX": "detector context only; detections are supplied by dataset, not trained here; related_work/paper_003.pdf"
+  },
+  "actual_data_note": "simulated_sequence.json contains 100 frames and 200 ground-truth objects per frame, not the 40/20 numbers stated in the brief; analysis uses the file contents."
+}

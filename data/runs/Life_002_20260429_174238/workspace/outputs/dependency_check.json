@@ -1,0 +1,18 @@
+{
+  "python_modules": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "Bio": false,
+    "scipy": true,
+    "seaborn": true
+  },
+  "executables": {
+    "foldseek": null,
+    "mmseqs": null,
+    "TMalign": null,
+    "USalign": null,
+    "pymol": null
+  },
+  "conclusion": "Use native Foldseek/USalign/TMalign only if executable is present; otherwise use local Python Kabsch/TM-score-like fallback."
+}

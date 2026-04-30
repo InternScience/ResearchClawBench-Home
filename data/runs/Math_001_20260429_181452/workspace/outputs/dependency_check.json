@@ -1,0 +1,11 @@
+{
+  "numpy": true,
+  "scipy": true,
+  "matplotlib": true,
+  "seaborn": true,
+  "sklearn": true,
+  "pandas": true,
+  "pypdf_installed_for_related_work_extraction": true,
+  "cvxpy_available_or_required": false,
+  "limitation": "Exact proof-generation is not executable; the report provides a theorem-level derivation and empirical verification. Lasso is underdetermined (p>n), so global strong convexity does not hold; linear convergence is assessed empirically and theoretically tied to restricted/error-bound conditions or restart behavior."
+}

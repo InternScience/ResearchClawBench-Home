@@ -1,0 +1,16 @@
+{
+  "available": {
+    "rdkit": true,
+    "torch": true,
+    "torch_geometric": false,
+    "sklearn": true,
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "PyPDF2": true,
+    "pdfplumber": true
+  },
+  "numpy_version": "1.26.4",
+  "decision": "Use RDKit and manual PyTorch message passing; torch_geometric unavailable."
+}

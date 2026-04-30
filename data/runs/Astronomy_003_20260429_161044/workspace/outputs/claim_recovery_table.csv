@@ -1,0 +1,6 @@
+claim_id,claim,supporting_artifact,status
+C1,The catalog-wide resolution diagnostic has a median near 4e-4 and a long high-error tail.,outputs/fig6_summary.csv; report/images/fig6_catalog_distribution.png,supported
+C2,"Most catalog-wide resolution differences are below 1e-3, while a small tail exceeds 1e-2 and rarer cases exceed 1e-1.",outputs/threshold_fractions.csv; report/images/summary_threshold_heatmap.png,supported
+C3,Mode-wise differences increase systematically from ell=2 to ell=8 in median and tail quantiles.,outputs/fig7_mode_summary.csv; report/images/fig7_mode_distributions.png,supported
+C4,N=2 vs N=4 extrapolation differences are typically larger than N=2 vs N=3 differences in paired simulations.,outputs/fig8_extrapolation_summary.csv; report/images/fig8_extrapolation_comparison.png,supported
+C5,"Only uncertainty diagnostics are analyzed; raw strain, Weyl scalar, horizon properties, and detailed metadata are not present in the workspace.",outputs/data_validation.json; outputs/method_contract.json,limitation

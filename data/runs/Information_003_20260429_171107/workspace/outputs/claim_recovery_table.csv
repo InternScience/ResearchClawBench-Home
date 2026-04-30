@@ -1,0 +1,7 @@
+claim,supporting_artifact,validation_type
+Dataset decoded and profiled,outputs/data_profile.json; outputs/dataset_arrays.npz,direct workspace tensor-storage extraction
+Binary and multiclass NIDS metrics computed,outputs/main_metrics.csv,stratified train/test experiments
+Known/unknown and few-shot scenarios evaluated,outputs/scenario_metrics.csv,leave-one-attack-out and k-shot prototype evaluation
+DIDS-MFL approximation includes disentanglement/diffusion/fusion,outputs/method_fidelity_checklist.json,implemented feature branches and kNN graph diffusion
+Interpretability produced,outputs/permutation_importance.csv; report/images/feature_importance.png,permutation importance on binary detector
+Figures generated as PNG,report/images/*.png,matplotlib/seaborn saved figures

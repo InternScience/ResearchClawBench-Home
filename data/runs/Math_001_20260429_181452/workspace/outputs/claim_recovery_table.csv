@@ -1,0 +1,6 @@
+claim,supporting_artifact,status
+FISTA/Nesterov splitting accelerates over ISTA on the Lasso instance,outputs/convergence_histories.csv; report/images/objective_gap.png,verified empirically
+Restarted FISTA gives the smallest or near-smallest final objective gap among proximal methods,outputs/metrics_summary.csv; outputs/convergence_rates.json,verified empirically
+ADMM residuals decrease under the variable split x=z,outputs/convergence_histories.csv; report/images/lyapunov_surrogates.png,verified empirically
+The VOS framework unifies gradient/proximal and multiplier splitting views,outputs/method_fidelity_checklist.json; report/report.md,methodological synthesis
+Global linear convergence cannot be claimed solely from strong convexity for this p>n Lasso,outputs/data_overview.json; outputs/validation_summary.json,limitation verified

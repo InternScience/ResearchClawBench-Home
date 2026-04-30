@@ -1,0 +1,107 @@
+{
+  "currency": "2023-2026 EUR, real",
+  "formulas": {
+    "crf": "r*(1+r)^n/((1+r)^n-1)",
+    "renewable_lcoe": "(capex*crf + fixed_om*capex)/(cf*8760) + variable_om",
+    "production_lcoh": "electricity_cost*50 + electrolyzer_capex_annual_per_kg + water + infrastructure + grid_connection",
+    "delivered_cost": "production_lcoh + ammonia_synthesis + road_to_port + ocean_shipping + reconversion - policy_credit"
+  },
+  "technology": {
+    "pv_capex_eur_per_kw": 450,
+    "wind_capex_eur_per_kw": 1050,
+    "pv_fixed_om_fraction": 0.015,
+    "wind_fixed_om_fraction": 0.03,
+    "electrolyzer_capex_eur_per_kw": 450,
+    "electrolyzer_fixed_om_fraction": 0.03,
+    "asset_lifetime_years": 25,
+    "electrolyzer_lifetime_years": 20,
+    "specific_electricity_kwh_per_kg_h2": 50.0,
+    "water_l_per_kg_h2": 21,
+    "water_cost_eur_per_m3": 1.25,
+    "water_transport_eur_per_100km_m3": 0.1
+  },
+  "infrastructure_adders": {
+    "road_transport_to_port_eur_per_kg_per_km": 0.0009,
+    "water_pipeline_eur_per_kg_per_km": 2.1e-05,
+    "grid_connection_eur_per_kg_per_km": 0.00035,
+    "road_access_eur_per_kg_per_km": 0.00012
+  },
+  "carrier_chain": {
+    "ammonia_synthesis_base_eur_per_kg_h2": 0.58,
+    "ammonia_synthesis_electricity_kwh_per_kg_h2": 2.809,
+    "ocean_shipping_distance_km": 8500,
+    "ammonia_shipping_eur_per_kg_h2_per_1000km": 0.055,
+    "port_handling_eur_per_kg_h2": 0.12,
+    "reconversion_base_eur_per_kg_h2": 1.1,
+    "ammonia_cracking_heat_kwh_per_kg_h2": 4.2,
+    "europe_heat_or_power_eur_per_kwh": 0.055
+  },
+  "europe_comparator": {
+    "pv_cf": 0.18,
+    "wind_cf": 0.34,
+    "mix_pv_weight": 0.35,
+    "mix_wind_weight": 0.65,
+    "renewable_lcoe_policy_discount_eur_per_kwh": 0.0,
+    "infrastructure_eur_per_kg": 0.18,
+    "water_eur_per_kg": 0.03
+  },
+  "scenarios": {
+    "baseline_2030": {
+      "africa_wacc": 0.08,
+      "europe_wacc": 0.045,
+      "policy_credit_eur_per_kg": 0.0,
+      "description": "Central 2030 assumptions: moderate African risk premium and low European financing."
+    },
+    "high_africa_risk": {
+      "africa_wacc": 0.12,
+      "europe_wacc": 0.045,
+      "policy_credit_eur_per_kg": 0.0,
+      "description": "Country/investment risk keeps African project WACC high."
+    },
+    "derisked_africa": {
+      "africa_wacc": 0.055,
+      "europe_wacc": 0.045,
+      "policy_credit_eur_per_kg": 0.0,
+      "description": "Concessional/de-risked finance reduces African WACC close to Europe."
+    },
+    "high_global_rates": {
+      "africa_wacc": 0.13,
+      "europe_wacc": 0.075,
+      "policy_credit_eur_per_kg": 0.0,
+      "description": "Global interest-rate repricing raises financing costs in both regions."
+    },
+    "eu_import_policy_credit": {
+      "africa_wacc": 0.08,
+      "europe_wacc": 0.045,
+      "policy_credit_eur_per_kg": 0.75,
+      "description": "Contracts-for-difference/import credit applied to delivered African H2."
+    },
+    "derisking_plus_policy": {
+      "africa_wacc": 0.055,
+      "europe_wacc": 0.045,
+      "policy_credit_eur_per_kg": 0.75,
+      "description": "Low African WACC combined with EU import support."
+    }
+  },
+  "related_work_validation_anchors": {
+    "Kenya_current_production_range_eur_per_kg": [
+      3.7,
+      9.9
+    ],
+    "Kenya_2030_production_range_eur_per_kg": [
+      1.8,
+      3.0
+    ],
+    "Kenya_export_to_Rotterdam_current_eur_per_kg": 7.0,
+    "Namibia_current_delivered_to_port_range_eur_per_kg": [
+      5.43,
+      9.21
+    ],
+    "IEA_Namibia_2030_low_end_usd_per_kg": 2.5,
+    "GeoH2_reference_interest_rate": 0.06,
+    "Germany_high_rate_LCOE_increase_pct": {
+      "solar_pv": 11,
+      "onshore_wind": 25
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "primary_quantitative_outputs": [
+    {
+      "artifact": "outputs/data_overview.json",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "outputs/evaluation_results.csv",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "outputs/token_streams.json",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "outputs/comparison_summary.json",
+      "status": "satisfied"
+    }
+  ],
+  "required_figures": [
+    {
+      "artifact": "report/images/data_overview.png",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "report/images/architecture.png",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "report/images/main_results.png",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "report/images/validation_comparison.png",
+      "status": "satisfied"
+    }
+  ],
+  "comparison_axes": [
+    "decoupled versus single visual encoder",
+    "understanding versus generation objectives",
+    "equation OCR versus Doge semantic task"
+  ],
+  "interpretability_artifacts": [
+    {
+      "artifact": "report/images/token_importance.png",
+      "status": "satisfied"
+    }
+  ]
+}

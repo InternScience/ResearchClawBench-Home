@@ -1,0 +1,18 @@
+{
+  "available": {
+    "numpy": true,
+    "pandas": true,
+    "scikit-learn": true,
+    "matplotlib": true,
+    "seaborn": true
+  },
+  "unavailable_checked": {
+    "shap": false,
+    "xgboost": false,
+    "lightgbm": false
+  },
+  "fallbacks": {
+    "SHAP": "Unavailable in environment; use scikit-learn permutation importance plus native tree feature importance for interpretability.",
+    "gradient_boosting_external_libraries": "Use scikit-learn HistGradientBoostingClassifier."
+  }
+}

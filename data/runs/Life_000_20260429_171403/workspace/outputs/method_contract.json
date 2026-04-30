@@ -1,0 +1,28 @@
+{
+  "task": "Predict hydrogel adhesive strength from protein-sequence-derived monomer composition and identify/design synthetic hydrogels with robust underwater adhesion >1 MPa.",
+  "inputs": [
+    "Initial 184 verified hydrogel formulations",
+    "Optimization-round datasets with experimental and ML predicted values",
+    "Related-work PDFs where readable"
+  ],
+  "named_methods": [
+    "Random forest regression (RFR)",
+    "Gaussian process regression (GP)",
+    "Expected improvement / sequential model-based optimization (from README)",
+    "Statistical replication of sequence/composition features of natural adhesive proteins"
+  ],
+  "primary_target_quantity": "adhesive strength; robust success threshold >1 MPa (interpreted as >100 kPa if dataset reports kPa-like values; reported with unit caveat)",
+  "required_outputs": [
+    "data overview",
+    "model validation/comparison",
+    "optimization trajectory",
+    "de novo candidate compositions",
+    "interpretability artifact",
+    "validation/claim recovery"
+  ],
+  "implemented_runtime_fidelity": {
+    "cross_validation": "3-fold CV for Ridge, RandomForest, ExtraTrees due runtime constraints",
+    "gp": "GaussianProcessRegressor used for candidate uncertainty and expected-improvement scoring, not CV table",
+    "interpretability": "permutation importance produced; SHAP installed but disabled in final script for runtime stability"
+  }
+}

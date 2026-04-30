@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "pypdf": true,
+    "pdfminer": true,
+    "statsmodels": false
+  },
+  "fallbacks": [
+    "statsmodels unavailable but not required; GLS solved directly with numpy linear algebra."
+  ],
+  "method_feasibility": "Named covariance-weighted GLS is feasible with numpy."
+}

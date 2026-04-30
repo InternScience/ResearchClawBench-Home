@@ -1,0 +1,21 @@
+{
+  "named_mechanism": "decoupled visual encoding unified autoregressive Transformer",
+  "non_negotiable_steps": [
+    "produce understanding visual tokens",
+    "produce generation visual tokens",
+    "map both to common token stream",
+    "use causal next-token ordering",
+    "compare against single visual encoder"
+  ],
+  "implemented": [
+    "manual/OCR-semantic E_u tokens",
+    "quantized patch E_g tokens",
+    "concatenated mixed stream with control tokens",
+    "deterministic left-to-right stream",
+    "single encoder baseline with shared budget"
+  ],
+  "deviations": [
+    "No large-scale training or pretrained weights; scores are deterministic prototype diagnostics rather than benchmark accuracy."
+  ],
+  "status": "minimally faithful prototype, not full foundation-model reproduction"
+}

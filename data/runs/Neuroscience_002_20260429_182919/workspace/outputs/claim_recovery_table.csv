@@ -1,0 +1,6 @@
+claim,supporting_artifact,evidence
+Held-out test set is balanced across degradation strata.,outputs/data_overview_by_degradation.csv,"test counts {'Mixed': 18000, 'Misalignment': 18000, 'Average': 18000, 'Missing Sections': 18000}"
+The dataset is imbalanced toward non-merge examples.,outputs/data_summary.json,train positive rate 0.0993; test positive rate 0.1016
+Best selected model has strong ranking performance on held-out test data.,outputs/model_comparison.csv,"HistGradientBoosting: ROC-AUC 0.9925, AP 0.9294"
+Performance is reported separately for each degradation condition.,outputs/best_model_by_degradation.csv,"degradation-specific ROC-AUC, AP, F1, recall, precision saved"
+Feature-level interpretability is provided without SHAP.,outputs/permutation_importance_best_model.csv,permutation importance computed on test subsample; SHAP unavailable per outputs/dependency_check.json

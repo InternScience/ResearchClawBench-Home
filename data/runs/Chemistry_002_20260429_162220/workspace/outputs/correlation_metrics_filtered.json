@@ -1,0 +1,27 @@
+{
+  "filter_definition": "all mapped records excluding mutation components for which listed mutant amino acid already equals the supplied 1BRS residue identity",
+  "excluded_records": 9,
+  "contact_surrogate_filtered": {
+    "n": 96,
+    "pearson_r": 0.6720651197541887,
+    "pearson_p": 6.552324220545317e-14,
+    "spearman_rho": 0.7122324969257813,
+    "spearman_p": 4.0711725595432004e-16
+  },
+  "ridge_LOOCV_filtered": {
+    "n": 96,
+    "pearson_r": 0.8258378346233131,
+    "pearson_p": 4.062508730427093e-25,
+    "spearman_rho": 0.8571602979667888,
+    "spearman_p": 7.82279147487464e-29,
+    "rmse": 1.6066247438351913,
+    "mae": 1.226369741046443,
+    "r2": 0.6806930918081648
+  },
+  "interface_vs_noninterface_mannwhitney_filtered": {
+    "U": 353.0,
+    "p": 0.0020050118044839943,
+    "n_interface": 92,
+    "n_noninterface": 4
+  }
+}

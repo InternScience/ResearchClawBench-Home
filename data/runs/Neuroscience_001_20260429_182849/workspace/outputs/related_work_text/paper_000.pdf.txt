@@ -1,0 +1,577 @@
+Current Biology 21, 2000–2005, December 6, 2011 ª2011 Elsevier Ltd All rights reserved DOI 10.1016/j.cub.2011.10.022
+Report
+Wiring Economy and Volume Exclusion
+Determine Neuronal Placement
+in the Drosophila Brain
+Marta Rivera-Alba,1 Shiv N. Vitaladevuni, 2,4
+Yuriy Mishchenko,2,5 Zhiyuan Lu,3 Shin-ya Takemura,2
+Lou Scheffer,2 Ian A. Meinertzhagen,3 Dmitri B. Chklovskii,2,*
+and Gonzalo G. de Polavieja 1,*
+1Instituto Cajal, CSIC, Av. Doctor Arce 37, 28002 Madrid, Spain
+2Janelia Farm Research Campus, Howard Hughes Medical
+Institute, VA 20147, USA
+3Dalhousie University, Halifax, Nova Scotia B3H 3J5, Canada
+Summary
+Wiring economy has successfully explained the individual
+placement of neurons in simple nervous systems like that
+of Caenorhabditis elegans [1–3] and the locations of coarser
+structures like cortical areas in complex vertebrate brains
+[4]. However, it remains unclear whether wiring economy
+can explain the placement of individual neurons in brains
+larger than that of C. elegans. Indeed, given the greater num-
+ber of neuronal interconnections in larger brains, simply
+minimizing the length of connections results in unrealistic
+conﬁgurations, with multiple neurons occupying the same
+position in space. Avoiding such conﬁgurations, or volume
+exclusion, repels neurons from each other, thus counteract-
+ing wiring economy. Here we test whether wiring economy
+together with volume exclusion can explain the placement
+of neurons in a module of the Drosophila melanogaster brain
+known as lamina cartridge [ 5–13]. We used newly developed
+techniques for semiautomated reconstruction from serial
+electron microscopy (EM) [ 14] to obtain the shapes of neu-
+rons, the location of synapses, and the resultant synaptic
+connectivity. We show that wiring length minimization and
+volume exclusion together can explain the structure of the
+lamina microcircuit. Therefore, even in brains larger than
+that of C. elegans , at least for some circuits, optimization
+can play an important role in individual neuron placement.
+Results
+Reconstruction from Electron Microscopy
+Although the circuits of the ﬂy’s optic lamina have been a
+target of manual reconstruction using electron microscopy
+(EM) [ 6–8], testing wiring economy there requires a spatially
+more detailed description than is currently available. In par-
+ticular, a ‘‘2D’’ wiring economy model like the one used in
+the next section also needs the sizes and positions of neurons
+in 2D and, more importantly, each branch of branched neurons
+must be represented separately in the wiring diagram. A ‘‘3D’’
+wiring economy model would need, in addition to these data,
+further detail of neuron and synapse placement in the three
+spatial dimensions. To this end, we imaged 749 40 nm thick
+serial sections of theDrosophila melanogaster lamina by trans-
+mission EM (Figure 1 A; see Experimental Procedures ). Using
+a newly developed semiautomated EM reconstruction pipe-
+line [14], we obtained the three-dimensional shapes of all neu-
+rons in a single lamina cartridge ( Figures 1B and 1C; see also
+Figure S1 available online for the morphology of individual
+neurons).
+To obtain the connectivity matrix, we identiﬁed synapses in
+the EM series and assigned them to presynaptic and post-
+synaptic neurons. We found 477 presynaptic terminals in the
+lamina cartridge, 57 of which were classiﬁed as uncertain
+because they met the required criteria only partially ( Table
+S1; see Experimental Procedures for criteria). Each presyn-
+aptic terminal was apposed by several postsynaptic terminals
+with the total of 1,407 postsynaptic terminals, 94% of which
+could be assigned to identiﬁable neurons. The connectivity
+matrix (Figure 2 A and Table S2 ; see Table S1 for a larger
+version with different neuronal subtypes and location of syn-
+apses in 3D) augments a previous manually obtained one
+[6, 7]( Figure S2), revealing a complex network structure, with
+approximately
+one third of the possible connections realized
+(Figure 2A). This complexity can be best seen in neuron-centric
+subnetworks including an individual neuron and all of its syn-
+aptic partners. The terminals of the photoreceptors are pre-
+synaptic to 12 types of neurons and postsynaptic to seven
+(Figure 2 B). Amacrine cells are interneurons with a rich con-
+nectivity structure (Figure 2 C) that both receive and send
+synapses along the length of a cartridge. For some neurons,
+such as centrifugal cells C2 and C3, we found it helpful to in-
+clude synaptic partners for both in the neuron-centric network
+(Figure 2 D). C2 and C3 are mostly presynaptic in the lamina
+conveying feedback information from the medulla, the second
+optic neuropile. The large wide-ﬁeld neurons Lawf span sev-
+eral cartridges and are mainly presynaptic but also receive
+information from the photoreceptor terminals and neuron C2
+(Figure 2 E). The large monopolar cells L1 and L2 that lie at
+the cartridge axis have similar connections, except that L1 is
+exclusively postsynaptic in the lamina, whereas L2 is presyn-
+aptic to the L4 complex comprising the local L4 axon and the
+two incoming collaterals of L4 from the neighboring cartridges,
+as well as to L5 (Figure 2 F).
+Wiring Economy in 2D
+Insofar as the structure of the lamina cartridge varies little
+along its length (Figure 1 B), we start by reducing a full 3D opti-
+mization problem to a simpler problem in 2D. Most neurons are
+columnar (Figure 1C), and have a simple structure, with a single
+cylindrical vertical axon and lateral branches to connect to
+other neurons (R1–R6, L1–L5, L4+x, L4 2y, and three amacrine
+cell processes). The remaining lamina neurons include the 11
+laterally directed varicose branches of Lawf cells. Thus, we
+represent each vertical process in 2D as a circle centered on
+the mean position of the neuron with a proﬁle area given by
+the mean cross-sectional area of the neuron. Neurons having
+several vertical branches, such as medulla cell T1 (Figure S1H),
+and amacrine cell branch l (Aml) ( Figure S1C), are represented
+in 2D using a circle for each branch, six for T1 and three for
+Aml. This makes a total of 38 neuronal elements represented
+4Present address: Raytheon BBN Technologies, Cambridge, MA 02138,
+USA
+5Present address: Toros University, 33140 Mersin, Turkey
+*Correspondence: mitya@janelia.hhmi.org (D.B.C.), gonzalo.polavieja@
+cajal.csic.es (G.G.d.P.)
+i An update to this article is included at the end
+in 2D as circles of different sizes. Although some of these
+elements correspond to neurons that derive from and thus
+‘‘belong’’ to another cartridge, these neurons all enter through
+the proximal base of the cartridge and so do not affect neu-
+ronal placement in 2D.
+We next used this two-dimensional version of the actual
+data to test whether it corresponds to a conﬁguration with
+a low total length of lateral connecting branches (see wiring
+cost in equation 1 of Supplemental Experimental Procedures).
+We kept the same set of neuron positions (the centers of the
+circles in 2D) ﬁxed but permuted the neurons to produce
+random conﬁgurations. We found that the experimental con-
+ﬁguration had wiring costs lower than one million random
+conﬁgurations, and by extrapolating the distribution of wiring
+costs of the random conﬁgurations, we obtained p < 10
+27
+(Figure S3A).
+As a second approach to test for wiring economy of the
+lamina microcircuit, we minimized wiring cost while varying
+neuron locations (the centers of the circles in 2D) and
+compared optimal conﬁgurations with the one observed ex-
+perimentally. As wiring economy alone would only produce
+the trivial solution in which all neurons overlap each other,
+we also included volume exclusion ( Figure 3 A; see equation
+2i n Supplemental Experimental Procedures and Table S3
+and Table S4 for connectivity and neuronal radii and neuron
+positions, respectively). For short distances (less than the
+sum of the radii of the two neurons), the cost consisted of
+a soft repulsion term modeling volume exclusion by neurons.
+For larger distances, the cost is due to the wiring length of
+lateral connecting branches. This was modeled as propor-
+tional to the distance between the two neurons and with slope
+Figure 1. A Lamina Cartridge in Drosophila melanogaster Reconstructed in
+Three Dimensions from Serial Electron Microscopy Images
+(A) Single electron microscopy (EM) image in which the cell proﬁles have
+been segmented and digitally labeled with different colors.
+(B) Three-dimensional shapes of the neurons in the reconstructed cartridge;
+see Figure S1 for shapes of individual neurons.
+(C) Schematic version of (B). Neurons connect with lateral branches, here
+illustrated for neuron C2. The following abbreviations are used: R1–R6,
+photoreceptors terminals 1 to 6; L1–L5, lamina monopolar cells 1 to 5;
+L4+x and L4 2y, incoming L4 collaterals from the two neighboring anterior
+cartridges along the +x and 2y axes, respectively; Am, amacrine cells;
+T1, T medulla neuron 1; C2 and C3, centrifugal medulla neurons C2
+and C3; Lawf, lamina wide-ﬁeld cells; ep. Glia, epithelial glia; s. glia, satellite
+glia; m. glia, marginal glia. To enable their visualization, we show only four
+of the six photoreceptors, ﬁve of the six T1 branches, ﬁve of the six amacrine
+vertical branches, and two of the 11 Lawf branches.
+A
+B
+D
+EF
+C
+Figure 2. Connectivity in the Lamina Cartridge
+(A) Connectivity matrix; see Table S1 for an extended matrix including
+neuronal subtypes and Table S2 for a numerical version. Hotter colors
+indicate a larger number of synapses.
+(B–F) Representation of neurons and connecting neighbors for a photo-
+receptor (B), an amacrine neuron (C), centrifugal neurons C2 and C3
+(D), a large wide-ﬁeld neuron Lawf (E), and large monopolar cell L2 (F).
+Wiring Economy in the Drosophila Brain
+2001
+given by the number of synaptic connections between them.
+Because we had 38 neuronal elements, the total cost was
+a sum of 703 pairwise cost functions like the one shown in Fig-
+ure 3A, each using the actual connections and the actual radii
+of the two corresponding neurons.
+To ﬁnd low-cost conﬁgurations for the 38 neuronal ele-
+ments, we resorted to a heuristic method known as simulated
+annealing (SA) [ 15], which is designed for solutions to avoid
+trivial local minima of high cost. We ﬁrst used SA to test
+whether the actual conﬁguration is close to a minimum of the
+cost function. For this, we used the actual location of neurons
+in the lamina as the initial condition for SA calculations and
+found the conﬁguration in Figure 3B as the one with the lowest
+cost. The centers of the circles in Figure 3 B are at the com-
+puted positions, and their proﬁle areas are drawn to the actual
+areas. For comparison with the actual system, we plotted
+white bars connecting each computed neuron location to the
+actual location (Figure 3 B, black square). The mean distance
+between the computed and actual neuron is 0.56 mm, relatively
+small compared with the value of 1.9 6 0.1 mm of randomized
+conﬁgurations obtained by permuting the neurons. Also, we
+note that the computed conﬁguration is nontrivial because
+neurons not only connect to close neighbors but also to distant
+neurons, as illustrated in Figure 3C for neuron C2.
+To understand the signiﬁcance of the computed conﬁgura-
+tion in Figure 3 B, we performed several control calculations.
+First we checked that this conﬁguration is at least at a local
+minimum of the cost by showing that small deviations of any
+neuron increased the cost ( Figure S3 B). We also checked
+that the result does not depend on the functional form of the
+‘‘soft repulsion’’ term of the cost ( Figure S3C).
+Having established that the actual conﬁguration is close
+to a minimum of the cost function, we note that SA cannot
+guarantee converging to the global minimum in practice.
+Therefore, we needed to determine whether this minimum
+was special in its value of cost. First, we compared the cost
+of this minimum with the cost of one million conﬁgurations
+obtained by randomly exchanging large (small) neurons with
+large (small) ones to avoid repulsion costs that were too large
+(Figure 3D, dark gray histogram). None of the randomized con-
+ﬁgurations had a lower cost, and by extrapolating a ﬁt to the
+histogram of costs for these random conﬁgurations, we found
+that p < 10
+216. More importantly, we tested whether the local
+minimum found is also in a conﬁguration of cost lower than
+other minima of the surface cost and not only compared to
+random conﬁgurations. For this test, we ran 240 SA simula-
+tions with initial conﬁgurations chosen randomly and found
+that they all converged upon conﬁgurations having larger
+costs and that were further away from the actual experimental
+conﬁguration, and by extrapolation we found a large sig-
+niﬁcance of p < 10
+25 (Figure 3D, white histogram). The actual
+conﬁguration of neurons in a lamina cartridge is thus close to
+a minimum cost conﬁguration that is signiﬁcantly lower in its
+cost compared with the rest of cost surface and other minima.
+In addition to the foregoing tests, we checked that the devi-
+ations from the minimum-cost placement follow the structure
+predicted to exist in wiring economy solutions in the presence
+of other unknown factors [ 3]( Figures S3D and S3E).
+Connectivity and Size as Opposing Forces in the Lamina
+Our modeling approach included two types of observational
+data: the actual connectivity matrix and the sizes of the neu-
+rons. To better understand the role these two factors play in
+the low cost conﬁguration, we manipulated them indepen-
+dently (Figure 4A). First, we manipulated the radii of the proﬁles
+representing axons ( Figure 4 A, green line). Errors increased
+when forcing all radii to be equal to the mean proﬁle area
+(‘‘homogeneous case’’) or when assigning large radii to neu-
+rons that in reality had small radii, and vice versa (‘‘inverted
+case’’). The concerted effect of wiring economy and volume
+exclusion pushes neurons with the largest proﬁle areas
+to the periphery of the cartridge, so as to prevent their
+A
+B
+C D
+Figure 3. Wiring Economy in 2D
+(A) Pairwise cost between two neurons used to model soft volume exclusion
+for short distances and wiring length cost for distances larger than the sum
+of the radii of the two proﬁles of partner neurons. r
+i is the radius of the
+i neuron.
+(B) Conﬁguration of the lowest cost found by simulated annealing (SA) when
+the initial conﬁguration is the actual one. White lines connect to actual posi-
+tions marked by black squares.
+(C) The conﬁguration computed in (B) is nontrivial because it includes both
+connections to close and distant neurons, illustrated for neuron C2.
+(D) The actual cost of the computed conﬁguration in (B) (arrow) is sig-
+niﬁcantly lower than random conﬁgurations obtained by permuting large
+neuron proﬁles with other large neuron proﬁles, or small proﬁles with small
+(dark gray histogram), and 240 other converged conﬁgurations found by SA
+using random initial conﬁgurations (white histogram).
+Current Biology Vol 21 No 23
+2002
+obstructing the paths of neurites extending between connect-
+ing neurons.
+We also tested the importance of the connectivity matrix
+(Figure 4 A, blue line). We modiﬁed the number of synapses
+connecting pairs of neurons, leaving the topology of connec-
+tions intact. In the original conﬁguration, we used the real
+numbers, in which there are more synapses from all R1–R6
+photoreceptors to L1 and L2 than smaller neurons have
+between any two neuron partners. This difference implies,
+together with wiring economy, that L1 and L2 should be close
+to all the photoreceptor terminals, in the only arrangement
+possible, at the center of the cartridge. This tendency is
+reduced when we make all the numbers of synapses between
+neurons equal in the homogeneous case or when assigning
+fewer synapses from photoreceptor terminals to L1 and L2
+than those between the neurons with smaller axons in the
+inverted case.
+Synapse number and neuron size thus play opposing roles
+in the wiring economy of the lamina cartridge. The actual
+values of synapses observed (with most from the photore-
+ceptor terminals to L1 and L2) imply that the neurons with
+smaller axons should be located preferentially around the
+periphery of the cartridge because wiring economy dictates
+that L1 and L2 should occupy the cartridge axis. The real sizes
+and the concerted effects of wiring economy and volume
+exclusion require, by contrast, the neurons with larger axons
+to occupy peripheral positions. The actual arrangement ob-
+served is the result of a balance between these two opposing
+effects.
+Models with Simpliﬁed Connectivities
+The eight neurons with the largest caliber axons (six photore-
+ceptor terminals R1–R6, L1 and L2) stand out as forming the
+largest number of synapses ( Figure 2 A). Including only L1 or
+L2 and the photoreceptor terminals, the minimum cost conﬁg-
+uration has a hexagonal shape (model I, Figure 4B), one that is
+distorted when including both L1 and L2 (model II, Figure 4B).
+The neurons with smaller caliber axons have a more complex
+structure in the experimental connectivity matrix that we
+modeled in a very simple way by a random matrix having a
+mean connectivity as in the actual system (four synapses for
+connecting neurons and a probability of connection of 0.2),
+whereas photoreceptor terminals to L1 and L2 each have 42
+synapses. Wiring length minimization with volume exclusion
+for the six photoreceptors and the small neurons (without L1
+and L2) predict the structure in model III of Figure 4B, with all
+large objects around the periphery of the cartridge cross-
+section. Including all neurons, the minimum cost conﬁguration
+we found is shown in model IV of Figure 4 B. In this case, the
+axons of L1 and L2, which make many connections with the
+six photoreceptor terminals, lie at the center of the cartridge,
+along its axis, because other conﬁgurations would have larger
+values of total wiring length. This conﬁguration captures some
+of the basic features of the biological system, even though no
+one-to-one correspondence between the axon locations of
+modeled and real neurons is seen for the neurons with small
+caliber axons due to differences in the simpliﬁed connectivity
+matrix.
+Wiring Economy in 3D
+In the real lamina, the 2D network connectivity changes with the
+depth of the lamina, down the length of the cartridge, mainly
+because some neurons such as C2 or L4 are synaptic only
+at certain depths. In principle, one can build a 3D model with
+each neuron represented as a collection of n connected vol-
+umes, making the number of elements in the cartridge 38 n.
+To make computations practicable, we used n = 3, a number
+that captures the main changes in 2D connectivity down the
+depth of the cartridge. The model thus used an overall con-
+nectivity consisting of 2D layers linked by common neurons
+(Table S5 ), the axon sizes of neurons in the three layers
+(Table S6). The 3D model also included a cost in the z direction
+to take into account the rigidity of neurons ( Supplemental
+Experimental Procedures). SA found the wiring economy con-
+ﬁguration in Figure 5, plotted separately for distal ( Figure 5A),
+central ( Figure 5 B), and proximal depths ( Figure 5 C). Wiring
+economy and volume exclusion can thus explain closely the
+3D structure with low errors (0.5, 0.22, and 0.23 mm
+for distal,
+central, and proximal conﬁgurations, respectively).
+Discussion
+We have found that a lamina cartridge in the ﬂy’s brain, a
+microcircuit of 38 neuronal elements that repeats 800 times,
+can be explained in detail by the principles of wiring economy
+[1–4, 16–25 ] and volume exclusion. The model used several
+simplifying assumptions. First, wiring cost was proportional
+A
+B
+Homogeneous
+Figure 4. Roles of Connectivity and Axon Sizes
+(A) Error of six wiring economy conﬁgurations with respect to the experi-
+mental conﬁguration. The green line includes two manipulations of neuronal
+radii, one forcing all neurons to have the same size (homogeneous case) and
+another one in which the larger neurons are modeled as the smaller ones
+and vice versa (the inverted case). The blue line includes two manipulations
+of the connectivity matrix, one making all connecting neurons use the same
+number of synapses (homogeneous case) and the other one in which neuron
+pairs with the largest number of synapses are modeled as the ones with the
+smaller numbers (inverted case).
+(B) Wiring economy in simpliﬁed models. Model I shows wiring economy
+conﬁguration in a simpliﬁed model in which the dark blue neurons (photore-
+ceptor terminals) are connected only to one light blue one (L1 or L2). Model II
+shows wiring economy conﬁguration including now both L1 and L2 neurons.
+Model III shows wiring economy conﬁguration with photoreceptor terminals
+and 30 smaller neurons having a random connectivity matrix. Model IV
+shows same as model III but including neurons L1 and L2.
+Wiring Economy in the Drosophila Brain
+2003
+to the number of synapses between two given neurons. In
+effect this assumes that there is the same number of synapses
+per wire for each neuron. However, we expect only minor im-
+provements when adding different values for each neuron
+because even a binary connectivity matrix explains the
+structure well (Figure 4 A, homogeneous case on blue line).
+This agreement shows that wiring economy, given the actual
+network topology and the neurons’ axon calibers, are the
+main determinants of cartridge structure. A second simplifying
+assumption was to model volume exclusion as a repulsive
+potential. An explicit consideration of neuronal deformations
+would dramatically increase the space available for possible
+conﬁgurations and would make the problem computationally
+intractable. Furthermore, our wiring cost function assumes
+that wires follow straight lines connecting partner neurons.
+Again, considering more realistic tortuous paths would dra-
+matically increase the complexity of computations required.
+This modeling approach to include both wiring cost and
+volume and its assumptions should be of value to many dif-
+ferent neuronal systems. Finally, we did not take into account
+gap junctions because these are not clearly visible in our EM
+images and have not been annotated. Interestingly, gap junc-
+tions are known to exist between neighboring photoreceptor
+terminals [ 26] and have recently been reported, although not
+localized, between neurons L1 and L2 [ 27]. In our model’s
+optimal placement, the axons of these two cells are already
+abut each other, meaning that the inclusion of gap junctions
+between them is not going to affect the wiring economy
+solution.
+A complete circuit diagram with the level of detail and accu-
+racy like the one presented here should also allow for more
+detailed developmental, functional, and behavioral studies.
+The circuit diagram should allow for a better targeting of
+neurons for circuit manipulation to test functional principles
+[9–13], as well as to constrain theoretical models. Further, it
+should allow for more detailed tests of other basic principles
+like information transfer and energy optimization [ 6, 28–31 ].
+In particular, wide variation of cross-sectional areas among
+different neurons could help address these relationships [ 32].
+The wiring diagram should also allow testing for whether basic
+principles like wiring economy are embedded in develop-
+mental programs or emerge as a result of natural selection of
+the adult brains. Speciﬁcally, experimental manipulations of
+the connectivity, together with EM reconstructions and the
+analysis presented here, should help determine whether pro-
+cesses in development [ 33] automatically allow for a match
+between connectivity and wiring economy.
+Experimental Procedures
+All images are from the same transmission electron microscopy series of the
+dorsal side of the left eye from a 9-day-old female Oregon R Drosophila
+melanogaster. After imaging, we applied a semiautomatic reconstruction
+protocol developed at Janelia Farm Research Campus [ 5] to those images
+containing our cartridge of interest. The synapses were manually annotated
+after the reconstruction using the software Raveler (D. Olbris, P. Winston,
+and D.B. Chklovskii). Three criteria were required to validate the presence
+of a synapse: the existence of a T-bar ribbon in the presynaptic terminal,
+the existence of surrounding vesicles in the presynaptic terminal, and the
+clear apposition of postsynaptic proﬁles, either dendrites or axons. The
+cost function used for modeling included a term for wiring length cost
+and a repulsion term for volume exclusion, and conﬁgurations of minimum
+cost were found by SA.
+See Supplemental Experimental Procedures for details of all procedures.
+Supplemental Information
+Supplemental Information includes three ﬁgures, six tables, and Supple-
+mental Experimental Procedures and can be found with this article online
+at doi:10.1016/j.cub.2011.10.022.
+Acknowledgments
+We are grateful to Richard Fetter for assistance in EM imaging and Janelia
+FlyEM Project Team and Aljoshcha Nern for helpful comparisons with
+images from Gal4-driven expression of green ﬂuorescent protein in lamina
+cells. M.R.-A. acknowledges a Formacio ´ n del Personal de Investigacio ´ n
+(FPI) fellowship from Ministerio de Ciencia e Innovacio ´ n (MICINN) and
+support from the Janelia Farm Research Campus (JFRC) (Howard Hughes
+Medical Institute [HHMI]) visitor program; G.G.d.P. acknowledges funding
+by MICINN (Spain) as Plan Nacional, including a FPI fellowship, and as part-
+ners of the ERASysBio+ initiative supported under the EU ERA-NET Plus
+scheme in FP7, and support from the JFRC (HHMI) visitor program. I.A.M.
+also acknowledges support from the JFRC (HHMI) visitor program.
+Received: September 9, 2011
+Revised: October 11, 2011
+Accepted: October 17, 2011
+Published online: November 23, 2011
+References
+1. Chen, B.L., Hall, D.H., and Chklovskii, D.B. (2006). Wiring optimization
+can relate neuronal structure and function. Proc. Natl. Acad. Sci. USA
+103, 4723–4728.
+2. Pe´ rez-Escudero, A., and de Polavieja, G.G. (2007). Optimally wired
+subnetwork determines neuroanatomy of Caenorhabditis elegans.
+Proc. Natl. Acad. Sci. USA 104, 17180–17185.
+3. Pe´ rez-Escudero, A., Rivera-Alba, M., and de Polavieja, G.G. (2009).
+Structure of deviations from optimality in biological systems. Proc.
+Natl. Acad. Sci. USA 106, 20544–20549.
+4. Klyachko, V.A., and Stevens, C.F. (2003). Connectivity optimization and
+the positioning of cortical areas. Proc. Natl. Acad. Sci. USA 100, 7937–
+7941.
+5. Laughlin, S.L. (1981). A simple coding procedure enhances a neuron’s
+information capacity. Z. Naturforsch., C, Biosci. 36, 910–912.
+6. Meinertzhagen, I.A., and O’Neil, S.D. (1991). Synaptic organization of
+columnar elements in the lamina of the wild type in Drosophila mela-
+nogaster. J. Comp. Neurol. 305, 232–263.
+7. Meinertzhagen, I.A., and Sorra, K.E. (2001). Synaptic organization in the
+ﬂy’s optic lamina: few cells, many synapses and divergent microcircuits.
+Prog. Brain Res. 131, 53–69.
+8. Takemura, S.Y., Lu, Z., and Meinertzhagen, I.A. (2008). Synaptic circuits
+of the Drosophila optic lobe: the input terminals to the medulla. J. Comp.
+Neurol. 509, 493–513.
+9. Zhu, Y., Nern, A., Zipursky, S.L., and Frye, M.A. (2009). Peripheral visual
+circuits functionally segregate motion and phototaxis behaviors in the
+ﬂy. Curr. Biol. 19, 613–619.
+10. Zheng, L., de Polavieja, G.G., Wolfram, V., Asyali, M.H., Hardie, R.C., and
+Juusola, M. (2006). Feedback network controls photoreceptor output at
+the layer of ﬁrst visual synapses in Drosophila. J. Gen. Physiol. 127,
+495–510.
+AB C
+Figure 5. Wiring Economy in 3D
+From a wiring economy computation in 3D, conﬁgurations in distal (A),
+central (B), and proximal (C) regions of the cartridge. The neurons are placed
+in their computed positions with the experimental areas. Lines connect the
+computed to the observed positions.
+Current Biology Vol 21 No 23
+2004
+11. Rister, J., Pauls, D., Schnell, B., Ting, C.Y., Lee, C.H., Sinakevitch, I.,
+Morante, J., Strausfeld, N.J., Ito, K., and Heisenberg, M. (2007).
+Dissection of the peripheral motion channel in the visual system of
+Drosophila melanogaster . Neuron 56, 155–170.
+12. Eichner, H., Joesch, M., Schnell, B., Reiff, D.F., and Borst, A. (2011).
+Internal structure of the ﬂy elementary motion detector. Neuron 70,
+1155–1164.
+13. Clark, D.A., Bursztyn, L., Horowitz, M.A., Schnitzer, M.J., and Clandinin,
+T.R. (2011). Deﬁning the computational structure of the motion detector
+in Drosophila. Neuron 70, 1165–1177.
+14. Chklovskii, D.B., Vitaladevuni, S., and Scheffer, L.K. (2010). Semi-
+automated reconstruction of neural circuits using electron microscopy.
+Curr. Opin. Neurobiol. 20, 667–675.
+15. Kirkpatrick, S., Gelatt, C.D.J., Jr., and Vecchi, M.P. (1983). Optimization
+by simulated annealing. Science 220, 671–680.
+16. Ramo´ n y Cajal, S. (1899). Textura del Sistema Nervioso del Hombre y los
+Vertebrados (Texture of the Nervous System of Man and Vertebrates)
+(New York: Springer-Verlag).
+17. Mitchison, G. (1991). Neuronal branching patterns and the economy of
+cortical wiring. Proc. R. Soc. Lond. B Biol. Sci. 245, 151–158.
+18. Cherniak, C. (1992). Local optimization of neuron arbors. Biol. Cybern.
+66, 503–510.
+19. Chklovskii, D.B., Schikorski, T., and Stevens, C.F. (2002). Wiring optimi-
+zation in cortical circuits. Neuron 34, 341–347.
+20. Cherniak, C., Mokhtarzada, Z., Rodriguez-Esteban, R., and Changizi, K.
+(2004). Connectivity optimization and the position of cortical areas.
+Proc. Natl. Acad. Sci. USA 101, 1081–1086.
+21. Buzsa´ ki, G., Geisler, C., Henze, D.A., and Wang, X.J. (2004). Interneuron
+Diversity series: Circuit complexity and axon wiring economy of cortical
+interneurons. Trends Neurosci. 27, 186–193.
+22. Chklovskii, D.B. (2004). Synaptic connectivity and neuronal mor-
+phology: two sides of the same coin. Neuron 43, 609–617.
+23. Chklovskii, D.B. (2004). Exact solution for the optimal neuronal layout
+problem. Neural Comput. 16, 2067–2078.
+24. Chklovskii, D.B., and Koulakov, A.A. (2004). Maps in the brain: what can
+we learn from them? Annu. Rev. Neurosci. 27, 369–392.
+25. Cuntz, H., Forstner, F., Borst, A., and Ha ¨ usser, M. (2010). One rule to
+grow them all: a general theory of neuronal branching and its practical
+application. PLoS Comput. Biol. 6, e1000877.
+26. Ribi, W.A. (1978). Gap junctions coupling photoreceptor axons in the
+ﬁrst optic ganglion of the ﬂy. Cell Tissue Res. 195, 299–308.
+27. Joesch, M., Schnell, B., Raghu, S.V., Reiff, D.F., and Borst, A. (2010). ON
+and OFF pathways in Drosophila motion vision. Nature 468, 300–304.
+28. Balasubramanian, V., Kimber, D., and Berry, M.J., 2nd. (2001).
+Metabolically efﬁcient information processing. Neural Comput. 13,
+799–815.
+29. de Polavieja, G.G. (2002). Errors drive the evolution of biological signal-
+ling to costly codes. J. Theor. Biol. 214, 657–664.
+30. Balasubramanian, V., and Berry, M.J., 2nd. (2002). A test of metaboli-
+cally efﬁcient coding in the retina. Network 13, 531–552.
+31. Niven, J.E., Anderson, J.C., and Laughlin, S.B. (2007). Fly photorecep-
+tors demonstrate energy-information trade-offs in neural coding.
+PLoS Biol. 5, e116.
+32. Perge, J.A., Koch, K., Miller, R., Sterling, P., and Balasubramanian, V.
+(2009). How the optic nerve allocates space, energy capacity, and
+information. J. Neurosci. 29, 7917–7928.
+33. Prakash, S., Caldwell, J.C., Eberl, D.F., and Clandinin, T.R. (2005).
+Drosophila N-cadherin
+ mediates an attractive interaction between
+photoreceptor axons and their targets. Nat. Neurosci. 8, 443–450.
+Wiring Economy in the Drosophila Brain
+2005
+Update
+Current Biology
+Volume 22, Issue 2, 24 January 2012, Page 172
+ https://doi.org/10.1016/j.cub.2011.12.055DOI:
+Wiring Economy and Volume Exclusion
+Determine Neuronal Placement
+in the Drosophila Brain
+Marta Rivera-Alba, Shiv N. Vitaladevuni, Yuriy Mishchenko, Zhiyuan Lu, Shin-ya Takemura, Lou Scheffer,
+Ian A. Meinertzhagen, Dmitri B. Chklovskii, * and Gonzalo G. de Polavieja *
+(Current Biology 21, 2000–2005; December 6, 2011)
+As a result of an author oversight in the originally published version of this article, the surname of author Yuriy Mishchenko was
+misspelled as ‘‘Mischenko.’’ This error has now been corrected in the article online. The authors apologize for the error and any
+inconvenience that may have resulted.
+*Correspondence: mitya@janelia.hhmi.org (D.B.C.), gonzalo.polavieja@cajal.csic.es (G.G.d.P.)
+DOI: 10.1016/j.cub.2011.12.055
+Current Biology Vol 22 No 2
+172

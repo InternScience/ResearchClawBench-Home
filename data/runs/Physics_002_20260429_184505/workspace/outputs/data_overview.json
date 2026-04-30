@@ -1,0 +1,23 @@
+{
+  "xeb_paired_instances": 550,
+  "xeb_coverage": {
+    "N16_d12": 50,
+    "N24_d12": 50,
+    "N32_d12": 50,
+    "N40_d8": 50,
+    "N40_d10": 50,
+    "N40_d12": 100,
+    "N40_d14": 50,
+    "N40_d16": 50,
+    "N40_d18": 50,
+    "N40_d20": 50
+  },
+  "all_xeb_pairs_have_20_count_keys": true,
+  "all_xeb_pairs_have_20_prob_keys": true,
+  "all_xeb_pairs_have_20_matched_keys": true,
+  "xeb_total_shots_unique": [
+    20
+  ],
+  "amplitude_limited_XEB": "XEB fidelities computed only for instances with matching amplitude files; N56 XEB counts lack amplitudes in this workspace.",
+  "benchmark_instances": 1530
+}

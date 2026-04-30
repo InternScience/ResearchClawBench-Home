@@ -1,0 +1,510 @@
+arXiv:0807.4767v3  [cond-mat.mes-hall]  6 Mar 2009
+Photovoltaic Hall eﬀect in graphene
+Takashi Oka and Hideo Aoki
+Department of Physics, University of Tokyo, Hongo, Tokyo 11 3-0033, Japan
+(Dated: October 29, 2018)
+Response of electronic systems in intense lights (AC electr ic ﬁelds) to DC source-drain ﬁelds is
+formulated with the Floquet method. We have then applied the formalism to graphene, for which
+we show that a non-linear eﬀect of a circularly polarized lig ht can open a gap in the Dirac cone,
+which is predicted to lead to a photo-induced dc Hall current . This is numerically conﬁrmed for a
+graphene ribbon attached to electrodes with the Keldysh Gre en’s function.
+PACS numbers: 73.43.-f,72.40.+w,78.67.-n,85.60.-q
+Introduction — Non-linear phenomena in electronic
+systems are fascinating since they can lead to trans-
+port properties qualitatively distinct from those in equi-
+librium. In this Letter we seek such a possibility by
+combining (i) the geometric phase argument extended to
+electron transports in intense AC ﬁelds with (ii) physics
+of graphene involving chiral states associated with two
+Dirac cones. Indeed, the geometric phase has become
+an important ingredient in the modern theory of electric
+transport[1], which goes back to Thouless’s idea of charge
+pumping where he showed that an adiabatic deformation
+of the system may lead to quantized transport[2]. Ex-
+tensions along several directions have been done subse-
+quently. Thouless et al. (TKNN)[3] have shown that the
+Kubo formula for the Hall conductivity can be expressed
+as a topological density. Berry then showed that such
+phases are present in general quantum systems, and the
+topological density in the TKNN formula is now called
+the Berry curvature [4]. Aharonov and Anandan further
+extended the notion of geometric phases to non-adiabatic
+situations, i.e., Aharonov-Anandan (AA) phase[5].
+With these as a background, the concept of the present
+study, with graphene in mind, is simple. Let us put a
+crystal with a Dirac band in a circularly polarized light .
+As in Fig. 1(a), an intense AC ﬁeld Aac(t) will deform
+the single-body Hamiltonian, and each k-point will fol-
+low a circle in the Brilliouin zone. If the loop encircles
+the Dirac point, non-adiabatic charge pumping should
+take place, in which the wave function acquires a non-
+trivial AA phase. So the question is: can this be detected
+with a DC transport measurement? In order to answer
+this, we have formulated the Kubo formula for the DC
+response for systems in intense AC ﬁelds, which is ac-
+complished with the Floquet-matrix formalism by which
+we can solve the time-dependent dynamics of k-points
+within a static approach. We shall show that a TKNN-
+like formula for the Hall conductivity is obtained, where
+the Berry curvature is now expressed in terms of Floquet
+states which depends on the AA phase. We apply this
+formula to a single Dirac band ﬁrst, then a graphene.
+For graphene[6, 7], which is dominated by the chirality,
+we conclude that a photo-induced Hall current ( despite
+the absence of uniform magnetic ﬁelds ) should appear
+in graphene irradiated by circularly polarized light and
+attached to two electrodes, where the Hall current can
+exceed the longitudinal current in magnitude.
+Kubo formula in the presence of strong light ﬁelds —
+We ﬁrst derive the Kubo formula for electric transport
+for systems in strong AC ﬁelds, where we concentrate
+on the one-body problem for simplicity. The AC electric
+ﬁeld is introduced as a time-dependent gauge potential
+Aac(t), which satisﬁes Aac(t + T ) = Aac(t) with T the
+periodicity (while the frequency is Ω = 2 π/T ). On top of
+this we introduce, as in the linear response, a weak gauge
+potential A(t) = Et that changes slowly to represent an
+inﬁnitesimal DC electric ﬁeld E, where we have set e =
+1, ℏ = 1. Thus we have a time-dependent Hamiltonian,
+H(t) =
+∫ dk
+(2π )d Ψ†(k)h (k + Aac(t) + A(t)) Ψ(k), (1)
+where h(k) is the one-body Hamiltonian and Ψ a
+state vector (which is multi-dimensional for multi-
+bands). To represent the states in AC ﬁelds,
+we can employ the Floquet operator (see [8, 9])
+H(k, Aac(t), A(t)) = h (k + Aac(t) + A(t)) − i∂t, with
+which the time-dependent Schr¨ odinger equation reads
+H(k, Aac(t), A(t))|Ψ(k; t)⟩ = 0 . Since A(t) is inﬁnites-
+imal and adiabatically changing, we take it as the adia-
+batic parameter, while the AC ﬁeld is intense and rapidly
+oscillating. So, for each interval of time over which A
+may be considered to be constant, we can introduce the
+Floquet states (a time-analog of Bloch states) satisfy-
+ing the Floquet equation H(k, Aac(t), A)|Φα(k; A, t )⟩ =
+εα(k; A)|Φα(k; A, t )⟩ with a periodicity |Φα(k; A, t +
+T )⟩ = |Φα(k; A, t )⟩ [10], where εα(k; A) is called the
+Floquet quasi-energy which is a sum of the dynamical
+phase and the AA phase (see eqn.(6) below), and α la-
+bels the eigenstate. The solution of the time-dependent
+Schr¨ odinger equation for a ﬁxed A can be expressed as
+|Ψα(t)⟩ = e− iεαt|Φα(t)⟩. If we deﬁne an inner product
+averaged over a period by ⟨⟨α |β ⟩⟩ ≡ 1
+T
+∫ T
+0 dt⟨α (t)|β (t)⟩,
+the Floquet states form an orthonormal basis, i.e.,
+⟨⟨Φα(k; A)|Φβ(k; A)⟩⟩ = δαβ. With these as a basis the
+solution to the time-dependent Schr¨ odinger equation for
+the slow change in A is
+|Ψ(k; A(t), t )⟩ = e− i
+R t
+0 dt′εα(k;A(t′)) [|Φα(k; A(t), t )⟩+
+∑
+β̸=α
+|Φβ(k; ⃗A(t), t )⟩
+⟨⟨Φβ (k; A(t))|∂A
+∂t · ∂
+∂A |Φα(k; A(t))⟩⟩
+εβ(k; A(t)) − εα(k; A(t))
+
+ ,
+2
+up to ﬁrst order in time derivatives, with the α -th Flo-
+quet state taken to be the initial state. One can readily
+derive this result with the two-time method[11, 12]. We
+can immediately notice that the geometrical phase ap-
+pears in a form ⟨⟨Φβ(k; A(t))|∂A
+∂t · ∂
+∂A |Φα(k; A(t))⟩⟩ =∑
+β̸=α⟨⟨Φβ(k; A(t))|∂A
+∂t · ∂H
+∂A |Φα(k; A(t))⟩⟩[εβ (A(t)) −
+εα(A(t))]− 1. Since the current operator is J = ∂h(k +
+Aac(t)+ A)/∂ A, the above formula for the DC transport
+in an intense AC background ﬁeld is rewritten as
+σab(Aac) = i
+∫ dk
+(2π )d
+∑
+α,β̸=α
+[fβ(k) − fα(k)]
+εβ(k) − εα(k)
+× ⟨⟨Φα(k)|Jb|Φβ(k)⟩⟩⟨⟨Φβ (k)|Ja|Φα(k)⟩⟩
+εβ(k) − εα(k) + iη , (2)
+where fα(k) is the non-equilibrium distribution (occu-
+pation fraction) of the α -th Floquet state, η a positive
+inﬁnitesimal, and we have put the perturbation A = 0
+as in the linear-response theory. The essential diﬀerence
+from the conventional Kubo formula in the absence of
+AC ﬁelds is that the energy is replaced with the Floquet
+quasi-energy, and the inner product with a time averaged
+one. We note that similar expressions were obtained by
+Torres and Kunold in their study of microwave-assisted
+zero-resistance states[13]. The Hall conductivity can be
+further simpliﬁed to a TKNN-like formula,
+σxy(Aac) = e2
+∫ dk
+(2π )d
+∑
+α
+fα(k)
+[
+∇ k × Aα(k)
+]
+z , (3)
+where Aα(k) ≡ − i⟨⟨Φα(k)|∇ k|Φα(k)⟩⟩. We note that
+if we separate the Floquet index into α = ( i, m ) where
+i labels the original band and m is the Floquet index,
+then Aα(k) is independent of m. However, the occu-
+pation fα(k) depends on both indices. In equilibrium,
+f(i,m)(k) = δm0fFD(Ei(k)) holds where Ei(k) is the
+energy of ith state and fFD the Fermi-Dirac distribu-
+tion. In non-equilibrium, however, the distribution is
+non-universal, and depends on the detail of the system
+such as how the electrodes are attached, etc., so that
+a case-by-case study should be needed to determine the
+distribution and hence the DC transport of the system.
+Application to a Dirac band — Now we study the ef-
+fect of AC ﬁelds on the two-dimensional Dirac band.
+The Hamiltonian is H(t) = τzv[kx + Ax
+ac(t)]σx + v[ky +
+Ay
+ac(t)]σy, where τz = ± 1 labels the chirality ( K and K ′
+points in graphene), v is the velocity (set to v = 1 here-
+after), and σi the Pauli matrices. The circularly polar-
+ized ﬁeld is given as ( Ax
+ac, A y
+ac) = A(cos Ωt, sin Ωt) where
+A ≡ F/ Ω with F being the ﬁeld strength. Here we ne-
+glect the momentum of light since v ≪ c, and consider
+direct transitions, which is a situation diﬀerent from the
+Volkov solution[14]. With Fourier transformed Floquet
+states |Φ(t)⟩ = ∑
+m e− imΩt|um
+α ⟩ the Floquet equation be-
+comes
+∑
+n
+H mn|un
+α⟩ = (εα + mΩ)|um
+α ⟩, (4)
+FIG. 1: (a) A trajectory of k + Aac(t) around a Dirac point
+in a circularly polarizated light ﬁeld. (b) The Floquet quas i-
+energy (black curves) plotted against kx with ky = 0 for
+F/Ω = 0 .2. The color coding represents the weight of the
+static ( m = 0) component. (c) Density of states for vari-
+ous ﬁeld strengths. (d) The photo-induced Berry curvature
+ˆ
+∇ k × Aα(k)
+˜
+z for α = (1 , m) for F/Ω = 0 .2. The series
+α = (2 , m) have a similar behavior with an inverted sign.
+Frequency is Ω /v = 1 throughout.
+where the Floquet Hamiltonian H mn =
+1
+T
+∫ T
+0 dtH(t)ei(m− n)Ωt has H mm =
+(
+0 kx− iky
+kx+iky 0
+)
+for the di-
+agonal components, whereas the oﬀ-diagonal components
+depend on τz, i.e., H mm+1 =
+( 0A
+00
+)
+, H mm− 1 =
+( 00
+A0
+)
+for τz = 1 and H mm+1 =
+( 00
+− A0
+)
+, H mm− 1 =
+( 0− A
+00
+)
+for
+τz = − 1. This deﬁnes an eigenvalue problem for a block
+tri-diagonal matrix that can be solved numerically with
+a truncation at certain |m|.
+As an important eﬀect of the AC ﬁeld, gaps open at
+ω = integer × Ω/ 2 in the quasi-energy band structure
+(Fig.1(b)), reﬂecting a Dirac-band analog of the AC-
+Wannier-Stark ladder, as also seen in the density of states
+A(ω ) = − 1
+π
+∫
+dk ∑
+α Im ⟨u0
+α|u0
+α⟩
+ω− εα+iη in Fig. 1(c). The gap at
+ω = ± Ω/ 2 is the largest, which is related to one-photon
+assisted transport discussed later. We note that this gap
+also opens in the linearly polarized case as studied in [15].
+More importantly, a new gap opens at k = 0 , ε = 0 in
+the circularly polarized case. Indeed, one can show that
+the solution of the time-dependent Schr¨ odinger equation
+at k = 0 is
+|Ψα(k = 0, t )⟩ ∝ e− iεαt
+( 1
+˜εi
+A eiΩt
+)
+(5)
+where the Floquet state is labeled by α = ( i, m ) with
+i = 1, 2 representing the upper and lower branches of the
+Dirac band, m the Floquet index. The quasi-energy is
+εα = ˜εi + mΩ with ˜ε1 =
+√
+4A2+Ω2+Ω
+2 , ˜ε2 = −
+√
+4A2+Ω2+Ω
+2 .
+The α = (1 , − 1), (2, 0) bands are direct descendants
+of the original Dirac bands, and the dynamical gap 2 κ
+opening between them is κ = ε(1,− 1) =
+√
+4A2+Ω2− Ω
+2 .
+3
+The dynamical gap ﬁrst grows quadratically with A,
+2κ ∼ 2A2/ Ω, followed by an asymptote 2 κ ∼ 2A − Ω.
+An important property of the quasi-energy is that it is a
+sum of the dynamical phase and the AA phase, i.e.,
+εα = ⟨⟨Φα|H(t)|Φα⟩⟩ + γ AA
+α /T, (6)
+where the AA phase is given by
+γ AA
+α ≡ T ⟨⟨Φα|i∂t|Φα⟩⟩ = ± π
+{
+[4(A/ Ω)2 + 1]− 1/2 − 1
+}
+, (7)
+where ± refers to α = (1 , − 1), (2, 0). In the adiabatic
+limit (Ω → 0 with a ﬁxed A) it approaches to ∓ π . We
+note that only the k-points with |k|< A acquires the AA
+phase, since otherwise the Dirac cone is not encircled. In
+the Berry curvature for the α = (2, 0) Floquet state (Fig.
+1(d)) there is a conspicuous peak around k = 0,
+[∇ k × Aα(k)]z ∼ ± τz
+1
+2 κ(|k|2 + κ 2)− 3/2, (8)
+where ± corresponds to α = (1 , m ), (2, m ). In this
+expression, two geometric quantities appear, where the
+Berry curvature comes from the perturbative treatment
+of the weak DC electric ﬁeld whereas the AA phase
+emerges because of the time-periodic dynamics of k-
+points in intense AC ﬁelds. Due to the factor τz, the
+contribution from K and K’ points in graphene will can-
+cel with each other if the distribution is identical between
+them. However, we shall see that, if we apply a static DC
+bias across the system, chirality (the valley symmetry)
+is degraded, which will lead to a non-trivial curvature,
+hence to a Hall current.
+Keldysh approach to photovoltaic transport in graphene
+— So we move on to a Keldysh Green’s function analy-
+sis of transport properties in a graphene irradiated by
+a circularly polarized light and attached to two elec-
+trodes. The system is described by an action, S =∫
+C dt (Lgraphene + Lmix + Lelectrodes) , where Lgraphene =∑
+i̸=j c†
+i (i∂t − tijeiAac
+ij (t))cj is the tight-binding model for
+graphene with a hopping tij = − w for nearest neigh-
+bors, while Lmix = ∑
+k,r V r
+mix
+[
+(ar
+k)†cr + h.c.
+]
+represents
+the coupling between the electrodes and graphene, with
+the spin degrees of freedom ignored. The AC ﬁeld is in-
+troduced by Aac
+ij (t) = ( ri − rj) ·Aac(t) with Aac(t) =
+(F/ Ω)(cos Ωt, sin Ωt), where F = eaE is the normalized
+ﬁeld strength ( a: lattice const.). We assume that the
+electrodes are described by a fermion operator ar (r ∈
+{L, R} labeling the left and right electrodes), for which a
+Fermi-Dirac distribution ⟨ar†
+ar⟩ = fr = [eβ(ω− µr) + 1]− 1
+is assumed with electrode-dependent chemical potential
+µ r. They are related to the DC bias V across the elec-
+trodes by µ L = V / 2, µ R = − V / 2. Imposing a periodic
+boundary condition in the direction ( y) of the graphene
+ribbon, the Keldysh Green’s functions for each momen-
+tum ky become a matrix labeled by the site in the x-
+direction ( i = 1 , . . . , N ) and by the Floquet index. The
+Green’s functions satisfy
+( GR
+ky (ω ) GK
+ky (ω )
+0 GA
+ky (ω )
+) − 1
+ij;mn
+=
+(
+(ω + nΩ + iη)δmnδij − ( ˆH)mn
+ij (ky) 0
+0 ( ω + nΩ − iη)δmnδij − ( ˆH)mn
+ij (ky)
+)
++δi1δmn
+(
+iΓL/ 2 − iΓL(1 − 2fL(ω + mΩ))
+0 − iΓL/ 2
+)
++ δiN δmn
+(
+iΓR/ 2 − iΓR(1 − 2fR(ω + mΩ))
+0 − iΓR/ 2
+)
+,
+where GK,R,A are the Keldysh, retarded, and advanced
+Green’s function, respectively, Γ r ∝ | V r
+mix|2 is the imagi-
+nary part of the self-energy due to the sample-electrode
+coupling. The eﬀective Floquet Hamiltonian is deﬁned
+by ( ˆH)mn(ky) = 1
+T
+∫ T
+0 dtei(m− n)Ωt ˆH(ky; Aac(t)), where
+the indices i, j are suppressed. The current between
+sites i, j is determined from the lesser component G< by
+⟨J a
+ij(t)⟩ = − i e
+ℏ
+1
+Nky
+∑
+ky
+∑
+mn
+∫ Ω
+0
+dω
+2π e− i(m− n)Ωt (9)
+×
+[
+Jij(t)(G<
+ky )mn;ji(ω ) + Jji(t)(G<
+ky )mn;ij(ω )
+]
+,
+where Jij = δ ˆH/δA ij is the current operator. In practice,
+we do not calculate the Keldysh component but use the
+Keldysh equation (c.f. [16]) to relate G< with GA, G R
+obtained by diagonalizing the Floquet Hamiltonian.
+In the obtained current distribution (Fig.2(a)) the po-
+larized light induces locally circulating currents in the
+absence of the bias V across the electrodes. There is no
+net current in the y-direction as it should. This current
+resembles the orbital magnetism which was predicted to
+arise when a perturbation induce a gap in the Dirac cone
+[17, 18]. Indeed, the circularly polarized light in the
+present case opens a gap around the band crossing (arrow
+in Fig.3(b)), which has led to a similar DC eﬀect.
+A striking ﬁnding here is that, when we switch on the
+bias voltage V , we have a photo-induced DC Hall cur-
+rent as well as a longitudinal ( ∥ x) current (Fig. 2 (b)).
+The Hall current is natrually inverted when the right cir-
+cularly polarized ﬁeld Aac ∝ (cos Ωt, sin Ωt) is changed
+into the left polarization ∝ (cos Ωt, − sin Ωt), or the
+bias voltage is inverted. The I − V -characteristics is
+shown in Fig. 2 (c) for Jx and Jy, the averaged cur-
+4
+FIG. 2: DC current distribution in an armchair graphene
+ribbon attached to electrodes subject to a circularly polar ized
+light for a ﬁnite AC ﬁeld F = 0 .025w, Ω = 0 .3w with no DC
+bias (a) and with a ﬁnite bias V = 0 .005w (b). (c) I −
+V characteristics of the longitudinal Jx (black) and the Hall
+current Jy (blue) for various values of F . (d) DC conductance
+G = J/V plotted against ﬁeld strength F for a ﬁxed bias V =
+0.005w. System size in the x-direction N = 34 throughout.
+rent in x and y directions, respectively. The photo-
+induced net Hall current grows linearly with the bias V ,
+but saturates and then decrease when V becomes large.
+Figure2(d) depicts the dependence of the conductance,
+Gxx = Jx/V, G xy = Jy/V on the intensity F of the
+circularly polarized light for a ﬁxed bias V . The conduc-
+tance, unlike the conductivity discussed in the ﬁrst part
+of the paper, is less universal and depends on the contact
+Γr (here we set Γ L = Γ R = 0. 2w) etc, but we expect that
+the eﬀect will be qualitatively robust. As we increase F ,
+the longitudinal Gxx ﬁrst decreases, and increase again
+(F > 0. 03w). The decrease can be explained by the gap
+opening at the Dirac points, while the increase is due to
+photo-assisted transport. We note that similar features
+have been experimentally observed in microwave irradi-
+ated carbon nanotubes [19]. The Hall conductance Gxy,
+on the other hand, initially grows quadratically with F
+and then increases linearly, which is a dependence simi-
+lar to the gap κ in the Dirac cone (eqn.(8)), which may
+indicate Jy ∼ κV . We note that a similar expression was
+obtained in the case where the chirality is broken in a
+static manner[20].
+To summarize, we have found that a combined eﬀect
+of an intense AC ﬁeld of a circularly polarized light and
+a (weak) DC bias can produce a photo-voltaic dc Hall
+current in graphene, despite the absence of a uniform
+magnetic ﬁeld. The typical intensity of laser conceived
+here, F ∼ 0. 001w, corresponds to E ∼ 107V/m for pho-
+FIG. 3: Floquet quasi-energy diagram for an armchair[21]
+ribbon in an AC ﬁeld for F = 0 .005w(a), 0 .02w(b) with fre-
+quency Ω = 0 .3w. The color coding represents the static
+weight |⟨u0
+α|u0
+α⟩|2 as in Fig. 1(b).
+ton energy Ω ∼ 1eV, w = 2. 7eV, a = 2. 6˚
+A, which should
+be within the experimental feasibility. Inclusion of dissi-
+pation etc will be an interesting future problem.
+We wish to thank Andre Geim for fruitful discussion in
+the initial stage of this work. TO thanks Jun Okubo and
+Naoto Tsuji for eliminating discussions on the Floquet
+method. HA was supported by a Grant-in-Aid for Sci-
+entiﬁc Research on Priority Area “Anomalous quantum
+materials” from the Japanese Ministry of Education, TO
+by Grant-in-Aid for young Scientists (B).
+[1] Geometric phase in nonequilibrium is evoked in e.g. the
+dielectric breakdown of a Mott insulator in T. Oka and
+H. Aoki, Phys. Rev. Lett. 95, 137601 (2005).
+[2] D. J. Thouless, Phys. Rev. B 27, 6083 (1983).
+[3] D. J. Thouless, et al. , Phys. Rev. Lett. 49, 405 (1982).
+[4] M. V. Berry, Proc. R. Soc. Lond. A 392 , 45 (1984).
+[5] Y. Aharonov and J. Anandan, Phys. Rev. Lett. 58, 1593
+(1987).
+[6] K. S. Novoselov, et al. , Proc. Nat. Aca. Sci. 102, 10451
+(2005).
+[7] K. S. Novoselov, et al. , Science 306, 666 (2004).
+[8] P. H¨ anggi,Quantum transport and dissipation (WILEY-
+VCH, 1988), chap. 5.
+[9] S. Kohler, J. Lehmann, and P. H¨ anggi, Physics Reports,
+406, 379 (2005).
+[10] H. Sambe, Phys. Rev. A 7, 2203 (1973).
+[11] U. Peskin and N. Moiseyev, J. Chem. Phys. 99, 4590
+(1993)
+[12] H. P. Breuer and M. Holthaus, Phys. Lett. A 140, 507
+(1989).
+[13] M. Torres and A. Kunold, Phy. Rev. B 71, 115313 (2005)
+[14] D. M. Volkov, Z. Phys. 94, 250 (1935).
+[15] S. V. Syzranov, et al. , Phys. Rev. B 78, 045407 (2008).
+5
+[16] A. P. Jauho, et al. , Phys. Rev. B 50, 5528 (1994).
+[17] D. Xiao, et al. , Phys. Rev. Lett. 95, 137204 (2005)
+[18] T. Thonhauser, et al. , Phys. Rev. Lett. 95, 137205
+(2005).
+[19] J. Kim, et al. , Phys. Rev. B 70, 153402 (2004).
+[20] D. Xiao, et al. , Phys. Rev. Lett. 99, 236809 (2007).
+[21] We have also studied zigzag nano-ribbons to ﬁnd that the
+photovoltaic Hall current behaves similarly, and that the
+zero-energy zigzag edge modes do not alter the physics.

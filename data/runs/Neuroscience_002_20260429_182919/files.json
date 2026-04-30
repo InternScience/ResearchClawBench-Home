@@ -1,0 +1,243 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "run_analysis.py",
+    "path": "code/run_analysis.py",
+    "type": "file",
+    "size": 27598,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "test_simulated.csv",
+    "path": "data/test_simulated.csv",
+    "type": "file",
+    "size": 29204490,
+    "mtime": 1772421508.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "train_simulated.csv",
+    "path": "data/train_simulated.csv",
+    "type": "file",
+    "size": 68149042,
+    "mtime": 1772421506.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "best_model_by_degradation.csv",
+    "path": "outputs/best_model_by_degradation.csv",
+    "type": "file",
+    "size": 1139,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "best_model_selection.json",
+    "path": "outputs/best_model_selection.json",
+    "type": "file",
+    "size": 116,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "calibration_curve_best_model.csv",
+    "path": "outputs/calibration_curve_best_model.csv",
+    "type": "file",
+    "size": 365,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "claim_recovery_table.csv",
+    "path": "outputs/claim_recovery_table.csv",
+    "type": "file",
+    "size": 892,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "confusion_matrix_best_model.csv",
+    "path": "outputs/confusion_matrix_best_model.csv",
+    "type": "file",
+    "size": 49,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview_by_degradation.csv",
+    "path": "outputs/data_overview_by_degradation.csv",
+    "type": "file",
+    "size": 409,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "data_summary.json",
+    "path": "outputs/data_summary.json",
+    "type": "file",
+    "size": 845,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 486,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1077,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "model_comparison.csv",
+    "path": "outputs/model_comparison.csv",
+    "type": "file",
+    "size": 863,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 5 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 7682715,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 540574,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 725080,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 736463,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "calibration_confusion.png",
+    "path": "report/images/calibration_confusion.png",
+    "type": "file",
+    "size": 102222,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 108509,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "degradation_performance.png",
+    "path": "report/images/degradation_performance.png",
+    "type": "file",
+    "size": 91764,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "feature_importance.png",
+    "path": "report/images/feature_importance.png",
+    "type": "file",
+    "size": 70687,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "main_model_comparison.png",
+    "path": "report/images/main_model_comparison.png",
+    "type": "file",
+    "size": 103163,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "roc_pr_curves.png",
+    "path": "report/images/roc_pr_curves.png",
+    "type": "file",
+    "size": 159983,
+    "mtime": 1777518312.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 8497,
+    "mtime": 1777518313.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5452,
+    "mtime": 1777458559.0,
+    "exported": true
+  }
+]

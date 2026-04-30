@@ -1,0 +1,12 @@
+{
+  "task": "Structured Hartree-Fock calculation extraction and scoring for research-level theoretical physics tasks, instantiated on paper 2111.01152.",
+  "primary_commitments": [
+    "Read source paper material for AB-stacked MoTe2/WSe2 moire Hartree-Fock system.",
+    "Extract paper information and Hamiltonian parameters.",
+    "Derive a Hartree-Fock Hamiltonian in a structured, auditable form.",
+    "Score multi-step analytic calculation outputs using automated rubric-style criteria.",
+    "Evaluate whether structured prompt templates can support LLM execution of research-level theoretical-physics calculations."
+  ],
+  "named_methods": ["Hartree-Fock mean-field decoupling", "structured prompt templates", "step scoring"],
+  "constraints": ["Use local workspace artifacts", "save code, outputs, figures, report", "figures must be PNG referenced from report/report.md"]
+}

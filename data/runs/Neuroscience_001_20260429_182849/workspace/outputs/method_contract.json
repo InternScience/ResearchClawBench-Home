@@ -1,0 +1,22 @@
+{
+  "task": "Analyze a connectome-constrained, task-optimized DMN ensemble for Drosophila optic-flow estimation.",
+  "named_method_commitments": [
+    "Deep mechanistic network constrained by optic-lobe connectome structure",
+    "Task optimization for optic flow estimation on MultiTaskSintel",
+    "Neuron dynamics PPNeuronIGRSynapses with learned resting potentials and time constants",
+    "Connectome-derived synapse sign/count with learned nonnegative synapse-count scaling",
+    "Analysis of 50 pretrained models rather than retraining"
+  ],
+  "primary_quantities": [
+    "validation_loss",
+    "nodes_bias",
+    "nodes_time_const",
+    "edges_syn_strength",
+    "edges_sign",
+    "edges_syn_count",
+    "cell-type clustering embeddings"
+  ],
+  "fallbacks": [
+    "Full 45,669-neuron stimulus simulation was not run because the data release contains checkpoints and summaries but not an executable flyvis runtime or visual stimulus cache in the workspace."
+  ]
+}

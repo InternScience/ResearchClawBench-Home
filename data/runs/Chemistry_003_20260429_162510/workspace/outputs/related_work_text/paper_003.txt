@@ -1,0 +1,924 @@
+Ewald-based Long-Range Message Passing for Molecular Graphs
+Arthur Kosmala 1 2 3 Johannes Gasteiger 4 2 Nicholas Gao 2 Stephan G¨unnemann 2
+Abstract
+Neural architectures that learn potential energy
+surfaces from molecular data have undergone fast
+improvement in recent years. A key driver of this
+success is the Message Passing Neural Network
+(MPNN) paradigm. Its favorable scaling with sys-
+tem size partly relies upon a spatial distance limit
+on messages. While this focus on locality is a use-
+ful inductive bias, it also impedes the learning of
+long-range interactions such as electrostatics and
+van der Waals forces. To address this drawback,
+we propose Ewald message passing: a nonlocal
+Fourier space scheme which limits interactions
+via a cutoff on frequency instead of distance, and
+is theoretically well-founded in the Ewald sum-
+mation method. It can serve as an augmentation
+on top of existing MPNN architectures as it is
+computationally inexpensive and agnostic to ar-
+chitectural details. We test the approach with four
+baseline models and two datasets containing di-
+verse periodic (OC20) and aperiodic structures
+(OE62). We observe robust improvements in en-
+ergy mean absolute errors across all models and
+datasets, averaging 10 % on OC20 and 16 % on
+OE62. Our analysis shows an outsize impact of
+these improvements on structures with high long-
+range contributions to the ground truth energy.
+1. Introduction
+Graph neural networks (GNNs) have shown great promise
+in learning molecular properties from quantum chemical ref-
+erence data, speeding up inference times by several orders
+of magnitude (Gilmer et al., 2017) while often preserving
+the accuracy of their ground truth method. Unfortunately,
+1Max Planck Institute for the Science of Light & Friedrich-
+Alexander-Universit¨at Erlangen-N¨urnberg, Germany 2Department
+of Computer Science & Munich Data Science Institute, Technical
+University of Munich, Germany 3Department of Physics, Ludwig-
+Maximilians-Universit¨at M¨unchen, Germany 4Google Research.
+Correspondence to: Arthur Kosmala <arthur.kosmala@tum.de>.
+Proceedings of the 40 th International Conference on Machine
+Learning, Honolulu, Hawaii, USA. PMLR 202, 2023. Copyright
+2023 by the author(s).
+despite recent success in understanding theoretically univer-
+sal models (Gasteiger et al., 2021; Dym & Maron, 2021),
+computational constraints still hamper GNNs in learning
+long-ranged physical interactions between atoms: the stan-
+dard notion of a molecular graph (if no hand-crafted bond
+information is used) treats atoms as vertices and connects
+them by an edge if their 3D distance is within a cutoff
+hyperparameter (Sch¨utt et al., 2018). This can be a prob-
+lem if more remote atom interactions contribute to a target:
+they are long-ranged also on the graph, potentially relating
+vertices many edges apart. There is ample empirical and
+theoretical evidence of limited GNN performance in this
+case, e.g., due to over-squashing (Alon & Yahav, 2021).
+The GNN status quo is in sharp contrast to the reality in
+molecular dynamics, where long-range interactions are an
+elementary ingredient. A task at the heart of the field (and
+of this work in particular) is to predict the potential energy
+E(x1, . . . ,xN) based on the atom positions {x1, . . . ,xN }
+in a molecule. Hand-crafted parametrizations of this map,
+known as empirical force fields, distinguish between bonded
+and non-bonded energy terms,E = Eb+Enb (Leach, 2001).
+The bonded terms model the short-ranged nature of covalent
+bonding with its complex, but highly local interactions. The
+non-bonded terms, however, capture interactions with heavy-
+tailed (typically power-law) decay in distance. An example
+of such a term is the electrostatic interaction,
+Ees =
+X
+i<j
+qiqj∥xi − xj∥−1, (1)
+where the partial charges qi quantify net electric charge
+around atom i. Their attraction or repulsion decays inversely
+with distance, and the energy is the sum of all atom pair
+interactions. Due to its scale-free decay, simply truncating
+such a power law with a distance cutoff can induce severe
+artifacts in measurable thermochemical predictions, even
+at outsized cutoffs (Wells & Chaffee, 2015). Instead, the
+interactions of all atom pairs have to be included in the
+sum. The technique of Ewald summation achieves this
+efficiently. It decomposes the actual physical interaction
+into a short-range and long-range part. The short-range part
+can be summed directly with a distance cutoff; the long-
+range part, while slowly decaying in distance, has a quickly
+decaying Fourier transform and can be efficiently evaluated
+as a Fourier space sum with a frequency cutoff (cf. Fig. 1).
+1
+Ewald-based Long-Range Message Passing for Molecular Graphs
+⇅
+distancecutoff
+frequencycutoff
+??LJ
++=real space
+Fourierspace=+
+fullshort-rangelong-range
+J
+Figure 1. Ewald decomposition of an interaction, exhibiting ∥xi −
+xj∥−1 decay in this example, into short- and long-range parts.
+This work lays out a bridge between Ewald summation
+and the current landscape of GNN models. Our proposed
+method of Ewald message passing (Ewald MP) is a general
+framework that complements existing GNN layers in anal-
+ogy to how the frequency-truncated long-range part com-
+plements the distance-truncated short-range part in Ewald
+summation. It is architecture-agnostic and computationally
+efficient, which we demonstrate by implementing and test-
+ing it as a modification on top of existing GNN models. Our
+experiments on the periodic structures of the OC20 dataset
+and the aperiodic structures of the OE62 dataset indicate
+robust improvements in energy mean absolute errors averag-
+ing 10 %and 16 %OC20 and OE62, respectively. Moreover,
+we study the tradeoff of these improvements against runtime
+and parameter count and find that it cannot be consistently
+replicated by any tested baseline setting. In a closer exami-
+nation of the OE62 results, we observe that Ewald message
+passing recovers the effects of DFT-D3, a hand-crafted long-
+range correction term. This supports our claim that the
+method targets the learning of long-range interactions in
+particular. In summary, our contributions are:
+• The new framework ofEwald message passing, which
+is readily integrated with existing GNN models.
+• Insights abouts its cost-performance tradeoff in com-
+parison to the wider GNN design landscape.
+• A study underscoring the utility of Ewald message
+passing as a long-range correction scheme.
+2. Background
+Message passing neural networks. MPNNs were intro-
+duced by Gilmer et al. (2017) as a conceptual framework
+covering many molecular GNN architectures. Molecules
+are represented as graphs with atoms i as vertices. Atoms
+are adjacent, j ∈ N (i), if ∥xi − xj∥ < c x, where cx is the
+distance cutoff. An MPNN first featurizes atoms as embed-
+dings h0
+i ∈ RF based on local atom properties alone. Next,
+it models the complex atomic interactions by iteratively
+updating the embeddings in message and update steps,
+M(l+1)
+i =
+X
+j∈N(i)
+fint
+
+h(l)
+i , h(l)
+j , e(ij)
+
+, (2)
+h(l+1)
+i = fupd
+
+h(l)
+i , M(l+1)
+i
+
+, (3)
+where the message sum M(l+1)
+i gathers information from
+the neighborhood N (i), using a function fint that depends
+on current embeddings and edge features e(ij) (e.g., pair-
+wise distances). Next, a learnable function fupdate processes
+the message sums. A readout step then generates outputs
+(e.g., atom-wise energy contributions) from the embeddings.
+We develop the core framework of Ewald message passing
+around a particular type of message step, the continuous-
+filter convolution (Sch¨utt et al., 2018):
+M(l+1)
+i =
+X
+j ∈ N(i)
+h(l)
+j · Φ(l)(∥xi − xj∥), (4)
+where · acts component-wise in the feature dimension, and
+Φ(l)(∥·∥): R3 − →RF is a stack of F learned, radial filters.
+In every channel 1 ≤ d ≤ F , Φ(l)
+d (∥·∥) learns attending to
+fuzzy distance ranges around an atom, allowing regression
+tasks on continuously varying molecular geometries.
+ℎ"
+ℎ"#
+1
+⋱
+⋱ℎ%&'
+&(&)
+⋱
+⋱⋮ℎ%#
+⋮
+Figure 2. Schematic illustration
+of periodic boundary conditions.
+Periodic systems. The
+inadequacy of a distance
+cutoff for generic inter-
+actions becomes partic-
+ularly apparent in mate-
+rials, where interatomic
+distances are unbounded.
+Periodic boundary condi-
+tions (PBC) can be used
+to approximate an infi-
+nite system as repeating
+copies of a finite atom
+collection (cf. Fig. 2), tiling up space within supercells1
+spanned by the lattice vectors (v1, v2, v3) ∈ R3×3. Let
+S = {(h1, x1), . . .(hN , xN)} denote the atom embeddings
+and positions of one chosen supercell and let t ∈ Λ be any
+integer shift on the supercell lattice Λ := {λ1v1 + λ2v2 +
+λ3v3 | λ ∈ Z3}. Atoms i′ at xi′ := xi + t are called
+images of i ∈ S , with the PBC fixing hi′ ≡ hi.
+Under PBC, generic message sums become infinite series
+as every image may contribute a message. Previous MPNN
+work on materials mitigates this issue with a distance cutoff,
+alongside a multigraph representation that avoids storing
+redundant hi′ on separate vertices (Xie & Grossman, 2018;
+Chanussot et al., 2021; Cheng et al., 2021; Xie et al., 2021).
+1A supercell should not be confused with the unit cell of a
+crystalline material. Unit cell translation symmetry is broken in
+non-equilibrium structures, but PBC are still applied, with a typical
+supercell containing multiple unit cells.
+2
+Ewald-based Long-Range Message Passing for Molecular Graphs
+3. Ewald Message Passing
+Analogy to electrostatics. The reason why Ewald summa-
+tion can be applied to MPNNs is a formal correspondence
+between electrostatics-type interactions and continuous-
+filter convolutions. Previous work has highlighted this anal-
+ogy as a useful source of inductive bias (Anderson et al.,
+2019). The connection becomes clear if we take Eq. (1) for
+the electrostatic energy Ees and express it in a new notation
+alluding to the continuous-filter convolution of Eq. (4):
+Ees = 1
+2
+NX
+i=1
+qi · V es
+i (xi), (5)
+V es
+i (xi) =
+X
+j̸=i
+qj · Φes(∥xi − xj∥), Φes(r) = 1
+r , (6)
+where N is the total number of atoms ( N := ∞ in mate-
+rials) and we introduced the electric potentials {V es
+i | i =
+1, . . . , N} and the interaction kernel Φes. Compare the ex-
+pression for V es
+i to the message sum M(l+1)
+i in Eq. (4): set-
+ting the cutoffcx → ∞ (such that N (i) = {1, . . . , N}\{i})
+and substituting
+qj ↔ h(l)
+j , Φes ↔ Φ(l), V es
+i (xi) ← →M(l+1)
+i (7)
+puts F -dimensional embedding vectors in place of scalar-
+valued partial charges as atom descriptors, and replaces
+the simple, domain-informed 1/r kernel by a stack of F
+learned convolution filters formally acting as interaction ker-
+nels. Any continuous-filter message sum Mi (we drop the
+layer superscript (l) from now on) can be canonically iden-
+tified with a potential function Vi(xi) evaluated at source
+atom location xi. Aggregating atomic output after just one
+message-passing step would inductively bias the model to-
+wards two-body interaction energies of similar form to Ees.
+Several message and update steps in principle enable the
+modeling of n-body terms (Batatia et al., 2022).
+Conceptual outline. We now give an overview of Ewald
+summation and show how it connects to our learning ap-
+proach, Ewald message passing, based on the above analogy.
+Ewald summation evaluates potentials (equivalently, mes-
+sage sums) Vi(xi) = Mi given a PBC lattice, a generic
+interaction kernelΦ: R+ → RF and generic atom “charges”
+hi ∈ RF . We apply Ewald summation if Φ is long-ranged.
+In this case, the naive distance cutoff approximation Mi ≈P
+j̸=i,∥xi−xj ∥<cx hj · Φ(∥xi − xj∥) becomes inaccurate
+for practically-sized values of cx. A slow distance decay
+of Φ means that a significant part of its tail remains out-
+side of cx, even for large cx. This long-range information
+is subsequently lost by truncation. Ewald summation pre-
+sumes a known decomposition Φ(r) = Φsr(r) + Φlr(r) into
+a short-range and long-range kernel, where
+• Φsr has fast decay in distance,
+• Φlr(0) is well-defined, and ˆΦlr(∥·∥), the 3D Fourier
+transform of Φlr(∥·∥), has fast decay in frequency.
+By construction, atom sums over distance-truncated short-
+range kernels Φsr
+[0,cx] := Φ sr · 1[0,cx] (where 1[0,cx] is the
+indicator function on [0, cx]) converge quickly for growing
+cx, meaning that a distance cutoff can be efficiently applied.
+This cannot be the case for Φlr, the leftover fat tail of Φ.
+Ewald summation deals with this long-range sum over Φlr
+by rewriting it as a sum over the Fourier transform ˆΦlr. Re-
+placing ˆΦlr by ˆΦlr
+[0,ck] := ˆΦlr · 1[0,ck], i.e., truncation by a
+frequency cutoff ck, now admits efficient evaluation of the
+long-range sum. Adding the short-range and long-range
+sums recovers the sum over the full kernelΦ. Fig. 1 summa-
+rizes the approach. Convenient decompositions satisfying
+the above properties for all power law kernels are provided
+by Nijboer & De Wette (1957).
+Ewald message passing essentially flips the rationale behind
+Ewald summation: instead of starting with a known physical
+kernel Φ and searching for a decomposition with the above
+properties, we seek to parametrize a filter Φ that is not
+short-ranged. However, we impose that it can be fitted by
+an Ewald sum over cutoff-supported short-range and long-
+range kernels. The kernels are learned independently of
+each other, ˆΦlr
+[0,ck] is learned directly in Fourier space.
+This section proceeds by rewriting the crucial long-range
+sum as a sum over Fourier frequencies, bringing it into
+a form that admits a frequency cutoff. This prepares a
+subsequent in-depth discussion of Ewald message passing
+and its implementation as part of existing GNN models.
+Figure 4. Sketched surfaces of
+constant phase for Fourier modes
+exp(ikT x) at small k ∈ Λ′.
+Frequency truncation.
+From here on, we as-
+sume that the long-range
+sum runs over all atoms,
+including target atom
+i, and thereby denote
+it by M lr(xi) (without
+subscript-i, but highlight-
+ing the dependence on
+source atom position xi).
+Note that this minor re-
+definition turns the map
+x 7→ M lr(x) into a peri-
+odic function. We check
+this by phrasing it as a double sum over the atoms of one
+supercell S and the supercell lattice Λ:
+M lr(x) =
+X
+t∈Λ
+X
+j∈S
+hj · Φlr(∥x − (xj + t)∥)
+= M lr(x + ˜t), ∀˜t ∈ Λ.
+(8)
+3
+Ewald-based Long-Range Message Passing for Molecular Graphs
+1. Fourier transform 2. Apply learned frequency filter
+3. Inverse fourier transform
+Atom embeddings
+Structure factor embeddings
+Within cutoff
+Outside cutoff
+[etc.]
+Real space Fourier space
+Figure 3. Three-part structure of long-range message passing: first, structure factor embeddings {sk} are evaluated as a Fourier sum over
+atomsP
+j∈S exp(−ikxj) [· ] and stored. Next, these are multiplied k-wise with learned filter values. Finally, an inverse Fourier sumP
+k exp(ikxi)[ · ] scatters messages back to each atom i. Note the nonlocal all-to-one character of this scheme. If PBC are explicitly
+prescribed, the Fourier domain is given by {k ∈ Λ′ | ∥k∥ < c k} with frequency cutoff ck. If not, it needs to be suitably discretized.
+Thus, M lr has a Fourier series expansion (we use complex
+exponentials as Fourier modes for notational compactness):
+M lr(xi) =
+X
+k∈Λ′
+ˆM lr
+k exp (ikT xi) (9)
+with Fourier coefficients ˆM lr
+k ∈ CF (determined next).
+Just as frequencies of a 1D Fourier series must be inte-
+ger multiples of the basis frequency (i.e., form a 1D lat-
+tice), the 3D spatial frequencies k ∈ Λ′ ⊂ R3 must
+be integer combinations of three spatial basis frequen-
+cies (w1, w2, w3) ∈ R3×3 spanning the reciprocal lattice
+Λ′ := {λ′
+1w1 + λ′
+2w2 + λ′
+3w3 | λ′ ∈ Z3}. Each basis
+frequency amounts to a single-period phase shift along one
+supercell direction and constant phase along the others, i.e.,
+wT
+i vj = 1 if i = j and 0 otherwise (cf. Fig. 4). The super-
+cell lattice Λ therefore fixes the reciprocal latticeΛ′, and the
+relations w1 = 2π(v2 × v3)Ω−1, w2 = 2π(v3 × v1)Ω−1,
+w3 = 2π(v1 × v2)Ω−1 (with the cross product × and su-
+percell volume Ω = vT
+1 (v2 × v3)) are easily verified.
+As our final ingredient leading up to a frequency cutoff,
+we relate the Fourier coefficients ˆM lr
+k to the 3D Fourier
+transform ˆΦlr(∥·∥): R3 → RF of Φlr(∥·∥) – the kernel is
+aperiodic unlike M lr(·), implying that its frequency spec-
+trum is a continuous, radial function of k ∈ R3 rather than a
+discrete set of lattice coefficients. In App. A.5, we derive the
+identity ˆM lr
+k = 1
+Ω
+P
+j∈S hj exp(−ikT xj)ˆΦlr(∥k∥). Essen-
+tially, Eq. (8) periodizesP
+j∈S hj · Φlr(∥· − xj∥) by adding
+all of its lattice shifts on Λ; in Fourier space, this periodiza-
+tion maps ˆΦlr(∥·∥) onto a discrete spectrum by recording
+its values only at PBC-compatible frequencies in Λ′. Insert-
+ing this back into Eq. (9), and absorbing the prefactor 1
+Ω
+in our learned filter by redefining 1
+Ω
+ˆΦlr(∥k∥) 7→ ˆΦlr(∥k∥),
+yields the desired long-range component of Ewald message
+passing, a message sum over Fourier frequencies:
+M lr(xi) =
+X
+k∈Λ′
+exp(ikT xi) · sk · ˆΦlr(∥k∥), (10)
+sk =
+X
+j∈S
+hj exp(−ikT xj), (11)
+with {sk ∈ CF | k ∈ Λ′}, which we call structure fac-
+tor embeddings , as inspired by the analogous crystallo-
+graphic quantity. If we replace ˆΦlr by a cutoff-truncated
+Fourier space kernel ˆΦlr
+[0,ck], we can limit the outer sumP
+k∈Λ′ 7→P
+k∈Λ′,∥k∥<ck
+, while the inner sum computing
+sk only extends over the atoms of a single supercell. The
+resulting cutoff-truncated kernel is complementary to reg-
+ular continuous filters (Eq. (4)): While they have no limit
+on distance, the frequency cutoff does limit how fast the
+filters can change in space. More specifically, their spatial
+resolution is proportional to the inverse frequency cutoff.
+Structure factor embeddings. Without a k-cutoff, the set
+of tuples {(sk, k) | k ∈ Λ′} would hold equivalent informa-
+tion to the set {(hi, xi) | i ∈ S} , i.e., fully quantify the hid-
+den state of the model on a given input structure. This is seen
+by viewing {(hi, xi) | i ∈ S} equivalently as an “embed-
+4
+Ewald-based Long-Range Message Passing for Molecular Graphs
+ding density distribution”, ρ(x) = P
+t∈Λ
+P
+i∈S hiδ(x −
+xi − t), with δ denoting the Dirac delta distribution. Its
+Fourier transform (in the distributional sense) is given by
+ˆρ(k) = P
+k′∈Λ′
+hP
+j∈S hi exp(−ik′T xj)
+i
+δ(k − k′) =P
+k′∈Λ′ sk′δ(k − k′) which corresponds to the pairs
+{(sk, k)}. Disregarding all sk outside a k-cutoff removes
+fine-grained resolution information about the atom encoding
+distribution below a scale ∼ c−1
+k . In this sense, the structure
+factor representation introduced in Ewald message passing
+coarse-grains the hidden model state. Moreover, the em-
+bedding information is represented non-locally since each
+sk is a weighted sum over all supercell embeddings. This
+all-to-one relationship is another way of understanding the
+long-range character of Ewald message passing.
+Ewald message passing. The combined usage of regular
+short-range message passing via any GNN layer and the
+long-range message passing in Eqs. (10) and (11) is called
+Ewald message passing. This combination enables Ewald
+message passing to express interactions outside of either
+limited class. We combine the two message passing schemes
+simply by adding up both embedding updates during each
+message-passing step, for details see Eq. (12). This way of
+integration works nearly out-of-the-box in our experiments.
+Aperiodic systems. Many structural datasets containing
+important long-range interactions do not feature periodic
+boundary conditions. In this case, a reciprocal lattice that
+would discretize the Fourier domain is not provided, which
+in turn means the structure factor embeddings sk turn into a
+function s(k): R3 7→ CF defined on a continuous domain.
+The aperiodic case can equally well be understood as the
+limit of infinite supercell size, corresponding to a continuum
+limit of the reciprocal lattice as the basis frequency vectors
+wi approach zero. As we can only represent s(·) and ˆΦ(∥·∥)
+by a finite set of numbers, we need to impose a suitable dis-
+cretization scheme ourselves. In our implementation, we
+tile the cutoff region by a grid of cubic voxels and replace
+all continuous functions by the set of their average values
+within each voxel. The discretization resolution is controlled
+by the voxel sidelength∆, a new hyperparameter that is rele-
+vant for the aperiodic case. In our main experiments, we use
+equal resolution ∆ = 0.2 ˚A
+−1
+for each tested model. Abla-
+tion studies with other resolutions are reported in App. A.3.
+Note that this approach preserves rotation invariance only if
+the voxel grid sits in a coordinate frame that rotates with the
+input structure. To this end, we use the orthonormal basis
+obtained from a singular value decomposition, similar to
+Gao & G¨unnemann (2022). In App. A.6 we outline a more
+general mathematical framework for discretizing the struc-
+ture factor, provide implementation-relevant details about
+our voxel approach and discuss its relation to other possible
+discretization schemes.
+Frequency filters: aperiodic case. Thus far, we left open
+how the frequency filters ˆΦ(∥·∥) are learned. In the aperi-
+odic case, we parametrize filters as linear combinations ofS
+radial basis functions { ˆψi(∥·∥): R3 → R | i = 1, . . . , S}:
+ˆΦ(∥k∥) = W ˆΨ(k) with ˆΨ(k) = (ψ1(∥k∥), . . . ψS(∥k∥))
+and the learned weight matrix W ∈ RF ×S. All basis func-
+tions are supported within the k-cutoff radius ck. We use
+Gaussian radial basis functions (Sch¨utt et al., 2018).
+Frequency filters: periodic case. On OC20 we pursue
+a non-radial filtering strategy that allows for a more lib-
+eral use of the information provided by the PBC frame
+(v1, v2, v3) ∈ R3×3 of a given input structure. This infor-
+mation can be meaningful: given a material surface slab,
+for example, the model should clearly “know” which direc-
+tion is normal to the surface. This does not break rotation
+invariance as the PBC frame rotates with the structure.
+Since the reciprocal lattice Λ′ varies depending on the in-
+put PBC frame, the number of frequencies inside any fixed
+cutoff volume would also be variable. Motivated by our em-
+pirical findings (App. A.3), we instead fix the number of fre-
+quencies in each reciprocal basis direction (w1, w2, w3) ∈
+R3×3, dropping the notion of a direct frequency cutoff. For-
+mally, we define positive integersNx, Ny, Nz and consider
+the product set I = ×j=x,y,z {−Nj, . . . , Nj} ⊂ Z3. We
+limit the scope of the Fourier message sum in Eq. (10) by
+only including frequencies with reciprocal lattice positions
+in I. The model then learns a filter weight ˆΦλ′ ∈ RF for
+each λ′ ∈ I. Since a general supercell lattice has at least
+point symmetry, we moreover set ˆΦλ′ ≡ ˆΦ−λ′. This dif-
+fers from the strict notion of frequency filters discussed
+earlier: the filter weights ˆΦλ′ are not assigned to a fixed
+point k in Fourier space, but to a position on the recipro-
+cal lattice. The frequency corresponding to this position
+kλ′ = λ′
+1w1 + λ′
+2w2 + λ′
+3w3 varies with the basis frequen-
+cies of each input structure. Note that this filtering approach
+is not invariant under the “supercell symmetry” that maps
+any supercell to its multiple across one or several lattice
+directions while keeping atom positions unchanged. We
+found that this does not affect empirical performance on
+OC20. Still, a filtering approach invariant to this symmetry
+(e.g. radial basis filtering) might be advisable for datasets
+with large variations in supercell size.
+Computational complexity. The three-part procedure of
+our long-range message passing scheme, illustrated in Fig. 3,
+has a computational complexity of O(NatNk), where Nat is
+the number of atoms in the structure (or supercell in the case
+of PBC), and Nk is the number of frequencies contained
+in the long-range sum. As the density of atoms in space
+can be roughly assumed constant, the atom count increases
+linearly with the supercell volumeΩ in the periodic case. By
+the definition of the reciprocal basis (w1, w2, w3) ∈ R3×3,
+5
+Ewald-based Long-Range Message Passing for Molecular Graphs
+the amount of frequencies k ∈ Λ′ contained within a fixed
+frequency cutoff volume therefore scales linearly with the
+atom count Nat. Altogether, this would amount to O(N2
+at)
+scaling if both cutoffs are left fixed. In the aperiodic case,
+the same holds if we adapt the voxel resolution ∆ to the
+finest features of s, which, by Fourier reciprocity, scale
+inversely to the structural length. However, in contrast to
+standard Ewald summation (Wells & Chaffee, 2015), Ewald
+MP does not put any fixed relationship between cx and ck.
+To achieve a computational complexity of O(Nat), we can
+instead choose to fix Nk, which effectively varies ck ∝
+N −1
+at . Note that this approach can leave a “gap” of medium-
+range interactions that are covered neither by the short-range
+nor the long-range component of Ewald MP. Another way
+to achieve sub-quadratic scaling would be adapting more
+efficient Ewald summation variants to MPNNs (cf. Sec. 4).
+4. Related Work
+Hand-crafted long-range corrections. Approaches aug-
+menting a short-ranged model by a long-range correction
+make a frequent appearance in computational chemistry.
+This often concerns corrections to density functional the-
+ory (DFT), the method behind the OC20 (Chanussot et al.,
+2021), OE62 (Stuke et al., 2020) and many other machine
+learning benchmarks. DFT suffers from the same type of
+problem as MPNN potentials: its standard functionals like
+LDA (Jones & Gunnarsson, 1989) or PBE (Perdew et al.,
+1996) cannot correctly express long-range effects such as
+London dispersion (Jones, 2015). A zoo of interatomic dis-
+persion corrections exists (Grimme, 2006; Tkatchenko &
+Scheffler, 2009; Grimme et al., 2010; Caldeweyher et al.,
+2019), which can be adapted for use alongside many DFT
+functionals. From this historic angle, Ewald MP fills the
+same demand for an inexpensive, out-of-the-box correction
+in the MPNN context. Others have combined long-range
+terms of various physics-based functional forms with short-
+range models, including fully hand-crafted terms (Staacke
+et al., 2021) and electrostatic terms with MPNN-predicted
+partial charges (Unke et al., 2021). In contrast, our approach
+remains entirely within the MPNN paradigm, focusing on a
+fully data-driven modeling of long-range effects.
+Non-local learning schemes. Ewald message passing
+falls into the broader category of learning approaches tar-
+geting non-local interactions in a structure. An example
+of prominence well beyond quantum chemistry is atten-
+tion (Vaswani et al., 2017). Whereas early approaches
+in the graph domain apply the attention mechanism to
+local node neighborhoods only (Veli ˇckovi´c et al., 2018;
+Dwivedi & Bresson, 2021), others soon extended it to the
+fully-connected graph (Ying et al., 2021; Kreuzer et al.,
+2021; Mialon et al., 2021). A drawback of such standard,
+fully-connected graph attention is its O(N2) scaling in
+structure size. However, models using subquadratic alter-
+ations of standard attention have been proposed, including
+an O(N log(N)) non-local aggregation scheme (Liu et al.,
+2022), as well as linearly-scaling modified attention layers
+for both chemistry (Unke et al., 2021; Frank et al., 2022) and
+generic graph applications (Ramp´aˇsek et al., 2022). Shallow
+models such as Gaussian-process-based sGDML (Chmiela
+et al., 2018) also typically use locality approximations, mo-
+tivating recent effort towards their nonlocal extension by
+Chmiela et al. (2023). Such approaches are mostly orthogo-
+nal to the MPNN line of research and not directly informed
+by a computational physics technique as with Ewald MP.
+Use of long-range sums. Some MPNN-based works share
+our approach of computing multiple message sums, in anal-
+ogy to the physical separation of hand-crafted energies into
+bonded and non-bonded terms. They likewise use a more
+complex short-range part which includes higher-order geo-
+metric information like bond (Zhang et al., 2020) or even di-
+hedral angles (Gasteiger et al., 2022b), and a simpler, purely
+radial atom-to-atom long-range part. However, the long-
+range part in both works is a standard distance-truncated
+message sum in a larger atomic neighborhood, thereby pre-
+cluding the scaling advantage and physical inductive bias
+achievable with Ewald summation. Apart from this, two
+concurrent works exist which combine forms of Ewald sum-
+mation with MPNN models. Lin et al. (2023) use it in a tra-
+ditional sense to compute fixed-form physical potentials for
+downstream use as physics-informed edge features, rather
+than as a free-form ansatz for the learning of continuous-
+filter messages. Yu et al. (2022) share our notion of learnable
+Fourier space filters, but compute a scalar-valued structure
+factor instead of structure factor embeddings. More gener-
+ally, Yu et al. (2022) do not use the Ewald part as a GNN
+message passing step with feedback onto the base GNN
+embeddings, but rather apply it once and then combine it
+with the short-range GNN output after its final layer. Both
+Ewald-related works exclusively consider the periodic case.
+Ewald summation. Ewald summation is a technique for
+the summation of long-range interactions. The concept dates
+back to work in theoretical physics from over a century ago
+(Ewald, 1921) and has been adapted various times to encom-
+pass more general interactions (Nijboer & De Wette, 1957;
+Laino & Hutter, 2008; Mazars, 2010). Further development
+has focused on the numerically efficient evaluation of the
+long-range sum. While direct Ewald summation with opti-
+mized distance and frequency cutoffs has N
+3
+2 scaling in the
+atom number (Wells & Chaffee, 2015), approaches using the
+Fast Fourier Transform (Darden et al., 1993; York & Yang,
+1994; Essmann et al., 1995) bring it down to N log(N). In
+this work, we focus on introducing the general method of
+Ewald message passing, and consider numerical improve-
+ments an interesting route for future work.
+6
+Ewald-based Long-Range Message Passing for Molecular Graphs
+5. Experiments
+Datasets. The OC20 dataset (Chanussot et al., 2021)
+features adsorption energies and atom forces for roughly
+265 million structures, each one a snapshot from a DFT-
+computed relaxation trajectory of an adsorbate-catalyst com-
+bination under 3D periodic boundary conditions. We train
+our models on the OC20-2M subsplit, which has been empir-
+ically established as an efficient proxy for the full-size train-
+ing set (Gasteiger et al., 2022b). The OE62 dataset (Stuke
+et al., 2020) features, among other targets, DFT-computed
+energies (in eV) for roughly 62,000 large organic molecules.
+The energies account for the long-ranged London dispersion
+interaction, computed via the DFT-D3 dispersion correction
+(Grimme et al., 2010). Both benchmarks contain structures
+with comparably large numbers of atoms (N > 100). OC20
+features PBC, while structures in OE62 are aperiodic but
+can reach large spatial extent (> 20 ˚A). This makes these
+two datasets a strong testing case for the long-range im-
+provements achievable with Ewald message passing.
+Baseline GNN models. An overview of training and
+baseline hyperparameters can be found in App. A.2. We
+test Ewald message passing by modifying four mod-
+els: SchNet (Sch ¨utt et al., 2017), PaiNN (Sch ¨utt et al.,
+2021), DimeNet++ (Gasteiger et al., 2020) and GemNet-T
+(Gasteiger et al., 2021). These are intended as a representa-
+tive, but by no means exhaustive sample from the modern
+GNN landscape. Guided by the settings used by Chanussot
+et al. (2021), most baseline atom embedding sizes and cut-
+offs are larger than the originally reported values to account
+for the size and chemical diversity of our structures.
+Ewald modifications. We aim to upgrade each baseline
+architecture in a minimal way such that the Ewald additions
+can be studied in isolation. All models except DimeNet++
+update atom embeddings in each interaction block using a
+skip connection. We simply add long-range message passing
+using M lr
+i from Eqs. (10) and (11) as another contribution,
+h(l+1)
+i = 1√
+2
+h
+h(l)
+i + f sr
+upd (M sr
+i )
+i
+7− →
+h(l+1)
+i = 1√
+3
+h
+h(l)
+i + f sr
+upd (M sr
+i ) + f lr
+upd
+ 
+M lr
+i
+i
+,
+(12)
+where the short-range message sumM sr
+i and update function
+f sr
+upd is specific to the short-range model, while f lr
+upd is of the
+same kind across models (architecture details in App. A.1).
+For PaiNN, which also incorporates equivariant vector em-
+beddings, we only upgrade messages between its scalar em-
+beddings. As DimeNet++ does not pass messages between
+atom embeddings by default, we add them to the model
+with a default embedding block taken from GemNet-T and
+update them purely by long-range message passing with a
+skip connection, h(l+1)
+i = 1√
+2
+h
+h(l)
+i + fupd
+ 
+M lr
+i
+i
+. We con-
+catenate these atom embeddings with the atom-aggregated
+DimeNet++ edge embeddings along the feature dimension,
+prior to the atom-wise dense layer of each output block. Any
+remaining differences among our Ewald modifications are
+on the level of hyperparameters. Aiming for Pareto-efficient
+baseline improvements, we choose numbers of included k-
+vectors adequate to the cost of each baseline (see App. A.3).
+Comparison studies. We test whether using Ewald mes-
+sage passing alongside our baselines leads to significant and
+robust improvements of the energy mean absolute errors
+(EMAEs) on OC20 and OE62. We also measure the aver-
+age runtime per structure (details in App. A.8) for every
+model configuration and dataset to study how the benefits
+of Ewald message passing compare against its runtime over-
+head. Moreover, to establish a baseline for the long-range
+improvements achievable by a mere change in hyperparam-
+eters, we repeat the EMAE and runtime measurements in
+a configuration without Ewald MP, but with increased set-
+tings for the distance cutoff cx and maximum number of
+message-passing neighbors Nmax (details in A.4). An ade-
+quate comparison ideally means increasing these settings
+to a point that roughly matches the Ewald modification in
+cost. This is always possible for the periodic structures of
+OC20. In the case of OE62, a setting of cx = 12 ˚A and
+Nmax = 100 usually covers the entire molecule, meaning
+that no significant cost increase can be achieved beyond this
+point. We furthermore compare the Ewald improvements
+against a test setting where the Ewald block, f lr
+upd
+ 
+M lr
+i
+
+in
+Eq. (12), is instead replaced by regular pairwise message
+passing with increased distance cutoff (similarly to related
+work discussed in Sec. 4). Concretely, we substitute it by
+a SchNet interaction block. In contrast to the increased-
+cutoff variant from before, we now extend the cutoff for
+this block only. As a final check, we study whether the
+benefits of Ewald MP are significant beyond what follows
+just from an increase in free parameters. On OE62, we mea-
+sure the EMAE and runtime of baseline variants with more
+atom embedding channels to recover the parameter count of
+Ewald MP. For OC20, we point to the extensive hyperparam-
+eter studies by Gasteiger et al. (2022a), which suggest that
+changing embedding sizes by the small amounts relevant to
+this work has negligible impact on OC20 EMAEs.
+First off, our comparison studies on OE62 (Fig. 5) and
+OC20 (Fig. 6) underscore the primary role of short-range
+model choice in the GNN design landscape (consider, e.g.,
+how DimeNet++ is pareto-dominated on OC20). At the
+same time, the consistency of accuracy gains through Ewald
+MP strongly encourages its use alongside any particular
+short-range model. The associated runtime overheads are
+at least comparable to, if not smaller than the runtime dif-
+ferences between baselines. Meanwhile, the average Ewald
+7
+Ewald-based Long-Range Message Passing for Molecular Graphs
+1.5 2.0 2.5 3.0 3.5 4.0
+Avg. Forward Pass Runtime per Structure [ ms]
+50
+55
+60
+65
+Energy MAE [meV]
+5.2%
+10.6% 10.5%
+0.25 0.50
+100
+200
+38.2%
+Figure 5. Cost vs. energy MAE on OE62. Ewald MP improves the
+models by 5 % to 38 %. Increasing the cutoff performs similarly
+for DimeNet++ and GemNet-T, but is even detrimental for SchNet
+and PaiNN. Using a SchNet in place of an Ewald LR block works
+well for SchNet and PaiNN, but leaves DimeNet++ and GemNet-T
+unaffected. Increasing the atom embedding size has little effect.
+1 2 3 4 5 6 7
+Avg. Forward Pass Runtime per Structure [ ms]
+300
+400
+500
+600
+700
+800
+900
+1000
+Energy MAE [meV] 7.3%
+12.3%
+10.4%
+11.3%
+Baseline
+Incr. Cutoff
+Incr. Embeddings
+Pairwise LR Block
+Ewald
+Improvement
+SchNet
+PaiNN
+DimeNet++
+GemNet-T
+Figure 6. Cost vs. energy MAE on OC20, averaged across test
+splits. Ewald MP consistently improves all models and signifi-
+cantly outperforms the two baseline settings featuring an increased
+global cutoff as well as a standard pairwise (here: SchNet) block
+with increased distance cutoff in place of the Ewald LR block.
+improvements across all models (and all test splits in the
+case of OC20) are 16.1 % for OE62, and 10.3 % for OC20.
+Ewald MP achieves a better cost-performance tradeoff than
+the large cutoff setting for all tested instances on OC20.
+Interestingly, the large cutoff setting on OE62 has a very
+comparable tradeoff to Ewald MP for the two baselines
+which use edge embeddings, but has a detrimental effect for
+the two models that only use atom embeddings. Quite the
+opposite happens on OE62 if the Ewald block is replaced by
+a SchNet block with increased distance cutoff: it is effective
+for PaiNN and SchNet, but achieves no improvement at all
+on the better DimeNet++ and GemNet-T baseline models.
+Its cost cannot be further increased as the added SchNet
+block already approaches full graph connectivity. On OC20,
+it always has a neutral or detrimental effect. In contrast to
+these two previous strategies, improvements through Ewald
+MP appear robust – no detrimental effect is observed in
+any tested model configuration. Finally, matching the free
+parameter count of Ewald MP with larger atom embeddings
+shows a negligible or even detrimental effect. Beyond these
+empirical comparisons, we note in general that pairwise mes-
+sage passing on a fully-connected graph (like our SchNet
+LR block setting on OE62) inevitably scales quadratically
+in structural size. Ewald MP, on the other hand, can prop-
+agate long-range information subquadratically while also
+providing a physically principled inductive bias (cf. Sec. 3).
+Our results inform various design recommendations for fu-
+ture use. Ewald MP appears to be more efficient on OC20:
+similar relative improvements are consistently achieved at
+about half the relative cost. This hints at periodic structures
+as the more attractive domain of application. Given how
+we integrate Ewald MP with a short-range GNN, it is rela-
+tively cheaper alongside models featuring few but compute-
+heavy message passing blocks (in our case, DimeNet++ and
+GemNet-T). In such cases, adding a long-range message
+sum to each block results in less relative overhead. Besides
+energies, we also test for improvements of force MAEs on
+OC20, which are consistent but small. This is to be ex-
+pected, since the frequency truncation scheme of long-range
+MP removes the fast-changing high-frequency contributions
+to the potential energy surface, limiting its impact on the
+energy gradients (forces). Further comments and numerical
+results are found in App. A.7 and A.11.
+Impact on long-range interactions. To test our hypoth-
+esis that Ewald MP learns long-range effects in particular,
+we leverage the fact that the energy targets on OE62 contain
+an additive term, DFT-D3 (Grimme et al., 2010), to correct
+for the long-ranged London-dispersion interaction. This
+allows us to study the long-range component in isolation.
+To evaluate the DFT-D3 term, we use the coefficient set rec-
+ommended for Becke-Johnson damping and the PBE0 DFT
+functional, as obtained from Reckien (2017). We proceed
+by assigning all 6000 molecules in the OE62-val dataset
+to one of 15 equally-sized bins according to the value of its
+DFT-D3 correction. We disregard the two outermost bins
+as they contain strong outliers. In each bin, we record the
+statistics (bootstrapped means and68 %confidence intervals
+with 10000 resamples) of the energy MAE for the baseline
+and Ewald model variants. Fig. 7 shows that Ewald message
+passing gives an outsize relative improvement for structures
+with high long-range energy contributions. As an additional
+check, we collect the same statistics as previously for a
+model without Ewald modifications that is trained while the
+DFT-D3 correction is added explicitly to the model output.
+This provides a “cheating” model that only needs to learn
+the short-range component, while the long-range component
+8

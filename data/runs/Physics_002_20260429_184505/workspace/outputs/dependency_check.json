@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "checks": [
+    {
+      "name": "numpy",
+      "available": true
+    },
+    {
+      "name": "pandas",
+      "available": true
+    },
+    {
+      "name": "matplotlib",
+      "available": true
+    },
+    {
+      "name": "seaborn",
+      "available": true
+    },
+    {
+      "name": "scipy",
+      "available": true
+    },
+    {
+      "name": "pdftotext",
+      "available": false,
+      "path": null
+    }
+  ],
+  "limitations": [
+    "ReadPDF tool failed on local PDFs; fallback uses pdftotext if available.",
+    "Exact MB regression/gate-count propagation require paper-specific metadata not clearly present; capability assessed after data inspection."
+  ]
+}

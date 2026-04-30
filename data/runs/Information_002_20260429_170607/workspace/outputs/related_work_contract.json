@@ -1,0 +1,17 @@
+{
+  "related_work_reading": {
+    "target_paper_tex": "Read directly from data/2111.01152/2111.01152.tex and 2111.01152_SM.tex.",
+    "related_work_pdfs": "ReadPDF failed for local PDF artifacts; no verified PDF text content was extracted. The report therefore treats related-work claims as bounded to citations and context explicitly present in the target paper TeX."
+  },
+  "contract_updates_from_target_paper": [
+    "Use continuum moire Hamiltonian for AB-stacked MoTe2/WSe2 retaining topmost valence bands from both layers.",
+    "Use plane-wave-basis Hartree-Fock formulation without low-energy-band projection as the reference method.",
+    "Include particle-hole transformation to hole operators, dual-gate screened Coulomb interaction, and Hartree/Fock decomposition.",
+    "Preserve valley, layer, momentum, and reciprocal-lattice structure in artifacts."
+  ],
+  "figure_families_inferred": [
+    "pipeline/data overview",
+    "step score heatmap/bar chart",
+    "validation comparison against source equations and score categories"
+  ]
+}

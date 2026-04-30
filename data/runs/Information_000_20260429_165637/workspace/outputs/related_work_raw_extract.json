@@ -1,0 +1,158 @@
+{
+  "paper_000.pdf": {
+    "pages": 27,
+    "hit_contexts": [
+      {
+        "term": "decoupl",
+        "context": ", Stephen Lin, and Baining Guo. Swin transformer: Hierarchical vision transformer using shifted windows. In Proceedings of the IEEE/CVF international conference on computer vision, pages 10012\u201310022, 2021. Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization. arXiv preprint arXiv:1711.05101, 2017. Giacomo Marzi, Marco Balzano, and Davide Marchiori. K-alpha calculator\u2013krippendorff\u2019s alpha calculator: A user- friendly tool for computing krippendorff\u2019s alpha inter-rater reliability coefficient. MethodsX, 12:102545, 2024. ISSN 20 2215-0161. doi: https://doi.org/10.1016/j.mex.2023.1025"
+      },
+      {
+        "term": "encoder",
+        "context": "t step forward in a unified modeling of full multimodal documents. Date: May 17, 2024 1 Introduction Recent multimodal foundation models are very widely adopted but still model different modalities separately, often using modality specific encoders or decoders. This can limit their ability to integrate information across modalities and generate multimodal documents that can contain arbitrary sequences of images and text. In this paper, we present Chameleon, a family of mixed-modal foundation models capable of generating and reasoning with mixed sequences of arbitrarily interleaved textual and image c"
+      },
+      {
+        "term": "token",
+        "context": "Chameleon: Mixed-Modal Early-Fusion Foundation Models Chameleon Team1,\u2217 1FAIR at Meta \u2217See Contributions section for full author list. We present Chameleon, a family of early-fusion token-based mixed-modal models capable of under- standing and generating images and text in any arbitrary sequence. We outline a stable training approach from inception, an alignment recipe, and an architectural parameterization tailored for the early-fusion, token-based, mixed-modal setting. The models are evaluated on a comprehensive range of tasks, including v"
+      },
+      {
+        "term": "autoregressive",
+        "context": "o support alignment and evaluation, both automated and human, and to demonstrate the application- readiness of our approach, we augment the inference strategy with respect to interleaved generation to improve throughput and reduce latency. Autoregressive, mixed-modal generation introduces unique performance-related challenges at inference time. These include: \u2022 Data-dependencies per-step \u2014 given that our decoding formulation changes depending on whether the model is generating images or text at a particular step, tokens must be inspected at each step (i.e. copied from the GPU to the CPU in a blocking fashio"
+      },
+      {
+        "term": "generation",
+        "context": "lignment recipe, and an architectural parameterization tailored for the early-fusion, token-based, mixed-modal setting. The models are evaluated on a comprehensive range of tasks, including visual question answering, image captioning, text generation, image generation, and long-form mixed modal generation. Chameleon demonstrates broad and general capabilities, including state-of-the-art performance in image captioning tasks, outperforms Llama-2 in text-only tasks while being competitive with models such as Mixtral 8x7B and Gemini-Pro, and performs non-trivial image generation, all in a single model. It"
+      },
+      {
+        "term": "understanding",
+        "context": "d reasoning with mixed sequences of arbitrarily interleaved textual and image content (Figures 2-4). This allows for full multimodal document modeling, which is a direct generalization of standard multimodal tasks such as image generation, understanding and reasoning over images, and text-only LLMs. Chameleon is instead designed to be mixed-model from inception and uses a uniform architecture trained from scratch in an end-to-end fashion on an interleaved mixture of all modalities, i.e., images, text, and code. Our unified approach uses fully token-based representations for both image and textual modalitie"
+      },
+      {
+        "term": "vq",
+        "context": "d SFT variants of Chameleon-34B outperform all other models on COCO, while for Flickr30k, the SFT model outperforms other models with the multitask model being a close competitor. \u2022 Visual Question Answering: For visual question answering (VQA) we report performance on the test- dev split of VQA-v2 (Goyal et al., 2017). For VQA-v2, the pre-trained Chameleon-34B model with 2-shots matches the 32-shot performance of the larger Flamingo and IDEFICS models, while for fine- tuned/closed models, Chameleon-34B-Multitask approaches the performance of IDEFICS-80B-Instruct and Gemini Pro, but trails large"
+      },
+      {
+        "term": "llava",
+        "context": "nstrate that Chameleon is a broadly capable model on a diverse set of tasks. On visual question answering and image captioning benchmarks, Chameleon-34B achieves state-of-the-art performance, outperforming models like Flamingo, IDEFICS and Llava-1.5 (Section 5.2). At the same time, it maintains competitive performance on text-only benchmarks, matching models like Mixtral 8x7B and Gemini-Pro on commonsense reasoning and reading comprehension tasks (Section 5.1). But perhaps most impressively, Chameleon unlocks entirely new capabilities in terms of mixed-modal reasoning and generation. As using only"
+      },
+      {
+        "term": "chameleon",
+        "context": "Chameleon: Mixed-Modal Early-Fusion Foundation Models Chameleon Team1,\u2217 1FAIR at Meta \u2217See Contributions section for full author list. We present Chameleon, a family of early-fusion token-based mixed-modal models capable of under- standing and generating images and text in any arbitrary sequence. We outline a stable training approach from inception, an alignment reci"
+      },
+      {
+        "term": "figure 5",
+        "context": "aining Loss w/o QK-norm w/ QK-norm (b) An ablation with Chameleon-7B with and without QK-Norm. 0k 20k 40k 60k 80k Step 3.4 3.5 3.6 3.7 3.8 3.9 Training Loss w/o dropout w/ dropout (c) An ablation with Chameleon-7B with and without dropout. Figure 5 Output norm and training loss curves for Chameleon models under various settings. Text-Image: The text-image data for pre-training is a combination of publicly available data sources and licensed data. The images are then resized and center cropped into 512 \u00d7 512 images for tokenization. In total, we include 1.4 billion text-image pairs, which produces 1.5"
+      }
+    ]
+  },
+  "paper_001.pdf": {
+    "pages": 25,
+    "hit_contexts": [
+      {
+        "term": "encoder",
+        "context": "to generate multimodal language-image instruction-following data. By instruction tuning on such generated data, we in- troduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and an LLM for general- purpose visual and language understanding. To facilitate future research on visual instruction following, we construct two evaluation benchmarks with diverse and challenging application-oriented tasks. Our experiments show that LLaVA demon- strates impressive multimodal chat abilities, sometimes exhibiting the behaviors of multimodal"
+      },
+      {
+        "term": "token",
+        "context": "ast Transformer layer are considered in our experiments. We consider a simple linear layer to connect image features into the word embedding space. Speci\ufb01cally, we apply a trainable projection matrix W to convert Zv into language embedding tokens Hv, which have the same dimensionality as the word embedding space in the language model: Hv = W \u00b7 Zv, with Zv = g(Xv) (1) Thus, we have a sequence of visual tokens Hv. Note that our simple projection scheme is lightweight, which allows us to iterate data centric experiments quickly. More sophisticated schemes to con- nect the image and language representa"
+      },
+      {
+        "term": "autoregressive",
+        "context": "Yu, Yuanzhong Xu, Jing Yu Koh, Thang Luong, Gunjan Baid, Zirui Wang, Vijay Vasudevan, Alexander Ku, Yinfei Yang, Burcu Karagol Ayan, Benton C. Hutchinson, Wei Han, Zarana Parekh, Xin Li, Han Zhang, Jason Baldridge, and Yonghui Wu. Scaling autoregressive models for content-rich text-to-image generation. ArXiv, abs/2206.10789, 2022. 1 [56] Lu Yuan, Dongdong Chen, Yi-Ling Chen, Noel Codella, Xiyang Dai, Jianfeng Gao, Houdong Hu, Xuedong Huang, Boxin Li, Chunyuan Li, et al. Florence: A new foundation model for computer vision. arXiv preprint arXiv:2111.11432, 2021. 1 [57] Hao Zhang, Feng Li, Xueyan Zou, Shilon"
+      },
+      {
+        "term": "generation",
+        "context": "gmented foundation vision models [26, 16], with strong capabilities in open-world visual understanding such as classi\ufb01cation [39, 21, 56, 53, 38], detection [28, 61, 32], segmentation [25, 62, 57] and captioning [49, 27], as well as visual generation and editing [41, 42, 55, 15, 43, 29]. We refer readers to the Computer Vision in the Wild reading list for a more up-to-date literature compilation [12]. In this line of work, each task is solved independently by one single large vision model, with the task instruction implicitly considered in the model design. Further, language is only utilized to describe"
+      },
+      {
+        "term": "understanding",
+        "context": "data. By instruction tuning on such generated data, we in- troduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and an LLM for general- purpose visual and language understanding. To facilitate future research on visual instruction following, we construct two evaluation benchmarks with diverse and challenging application-oriented tasks. Our experiments show that LLaVA demon- strates impressive multimodal chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% rela- tiv"
+      },
+      {
+        "term": "llava",
+        "context": "Visual Instruction Tuning Haotian Liu1\u2217, Chunyuan Li2\u2217, Qingyang Wu3, Yong Jae Lee1 1University of Wisconsin\u2013Madison 2Microsoft Research 3Columbia University https://llava-vl.github.io Abstract Instruction tuning large language models (LLMs) using machine-generated instruction-following data has been shown to improve zero-shot capabilities on new tasks, but the idea is less explored in the multimodal \ufb01eld. We present the \ufb01rst attempt to use language-only GPT-4 to generate multimodal language-image instruction-following data."
+      },
+      {
+        "term": "figure 5",
+        "context": "tricate details, use of oil paint, and the artist's innovative techniques that contributed to its enduring appeal and mystery. Do you know who drew this painting? Start a new conversation, and the history is cleared. User User LLaVA LLaVA Figure 5: LLaVA recognizes the famous art work, Mona Lisa, by Leonardo da Vinci. When we start a new conversation, it also explains the humourous artwork created on the web, mimicking the Mona Lisa. 18 The name of the man in the photo is Elon Musk. What is the name of the man in the photo? The name of the man in the photo is Elon Musk. What is the name of the man i"
+      }
+    ]
+  },
+  "paper_002.pdf": {
+    "pages": 12,
+    "hit_contexts": [
+      {
+        "term": "decoupl",
+        "context": "is paper, we propose a simpler alternative: the sig- moid loss. It does not require any operation across the full batch and hence greatly simpli\ufb01es the distributed loss im- plementation and boosts ef\ufb01ciency. Additionally, it con- ceptually decouples the batch size from the de\ufb01nition of the task. We compare the proposed sigmoid loss with the standard softmax loss across multiple setups. In partic- ular, we investigate sigmoid-based loss with two promi- nent approaches for image-text learning: CLIP [34] and LiT [55], which we call sigmoid language image pre- This ICCV paper is the Open Access version,"
+      },
+      {
+        "term": "encoder",
+        "context": "e as hard negatives in a sin- 11979 1 2 4 8 16 24 0 10 20 30 40 50 60 70 INet 0-shot 1 2 4 8 16 24 Examples Seen [100M] 0 10 20 30 40 50 60 70 INet 10-shot from-scratch fine-tune fine-tune w/o enc.wd Figure 4: Top: SigLIP with pre-trained encoders ramps up quickly. However, only disabling weight decay on the pre- trained encoder weights leads to stable behavior and good ImageNet 0-shot transfer results. Bottom: ImageNet 10- shot transfer results, where decaying the pre-trained weights leads to deterioration of the pre-trained model visual repre- sentation quality. Disabling weight decay makes the cu"
+      },
+      {
+        "term": "token",
+        "context": "image and text pairs. We use moderately-sized models: B/16 ViT for image embeddings and B-sized transformer for text embeddings. The input images are resized to 224\u00d7224 resolution. The text is to- kenized by a 32 k vocabulary sentencepiece tokenizer [27] trained on the English C4 dataset [35], and a maximum of 16 text tokens are kept. Figure 2 middle plot shows SigLIP results, With less than 32 k batch size, SigLIP outperforms CLIP baselines with the standard softmax loss. On the other end of the scale, the memory ef\ufb01ciency of the sigmoid loss enabled much larger batch sizes. For example, with four"
+      },
+      {
+        "term": "generation",
+        "context": "word tokenizer and detok- enizer for neural text processing. In EMNLP, 2018. 5, 13 [28] Junnan Li, Dongxu Li, Caiming Xiong, and Steven C. H. Hoi. BLIP: bootstrapping language-image pre-training for uni\ufb01ed vision-language understanding and generation. In Kamalika Chaudhuri, Stefanie Jegelka, Le Song, Csaba Szepesv\u00b4ari, Gang Niu, and Sivan Sabato, editors, Interna- tional Conference on Machine Learning, ICML 2022, 17- 23 July 2022, Baltimore, Maryland, USA, volume 162 of Proceedings of Machine Learning Research, pages 12888\u2013 12900. PMLR, 2022. 2 [29] Yanghao Li, Haoqi Fan, Ronghang Hu, Christoph Feichten"
+      },
+      {
+        "term": "understanding",
+        "context": "ge independent subword tokenizer and detok- enizer for neural text processing. In EMNLP, 2018. 5, 13 [28] Junnan Li, Dongxu Li, Caiming Xiong, and Steven C. H. Hoi. BLIP: bootstrapping language-image pre-training for uni\ufb01ed vision-language understanding and generation. In Kamalika Chaudhuri, Stefanie Jegelka, Le Song, Csaba Szepesv\u00b4ari, Gang Niu, and Sivan Sabato, editors, Interna- tional Conference on Machine Learning, ICML 2022, 17- 23 July 2022, Baltimore, Maryland, USA, volume 162 of Proceedings of Machine Learning Research, pages 12888\u2013 12900. PMLR, 2022. 2 [29] Yanghao Li, Haoqi Fan, Ronghang Hu, Chr"
+      },
+      {
+        "term": "siglip",
+        "context": "ch models leverages the image-text contrastive objective. It aligns the image and text embeddings for matching (positive) image-text pairs while making sure that unrelated (negative) image-text pairs \u22c6equal contribution Table 1: SigLiT and SigLIP results. Sigmoid loss is mem- ory ef\ufb01cient, allows larger batch sizes (BS) that unlocks language image pre-training with a small number of chips. SigLiT model with a frozen public L/16 checkpoint [39], trained on the LiT image-text dataset [55] using four TPU- v4 chips for one day, achieves 79.7% 0-shot accuracy on ImageNet. The same setup with a g/14 check"
+      },
+      {
+        "term": "figure 5",
+        "context": "model is a Large Transformer, but with a depth of only 12 layers (instead of 24). It is trained using the LION [12] optimizer with decoupled weight de- 3 4 5 6 Loss L \u03b22 =0.999 \u03b22 =0.95 1 10 ||\u2207wL|| 1B 2B 3B 4B 5B Examples seen 2 4 ||\u0394w|| Figure 5: The effect of Adam and AdaFactor\u2019s \u03b22. As we increase batch-size, we observe more frequent training instability. This instability can mainly be seen in the loss curves (top) and is caused by spikes in the gradient norm (middle) which results in large parameter updates (bottom). Decreasing the \u03b22 momentum value stabilizes the training. Even though occasiona"
+      }
+    ]
+  },
+  "paper_003.pdf": {
+    "pages": 26,
+    "hit_contexts": [
+      {
+        "term": "encoder",
+        "context": "a] in the way of next-token prediction Qh\u00b7w t=1 p(qt | q<t, c), where c is class label embedding or text embedding. Finally, these image tokens are converted to image pixels by the image tokenizer decoder. 2.2 Image Tokenizer Quantized-Autoencoder architecture. We use the same architecture as VQGAN [Esser et al. 2021], encoder-quantizer-decoder. The encoder and the decoder are ConvNet with downsample ratio p. The quantizer contains a codebook Z \u2208RK\u00d7C with K learnable vectors. The encoder projects image pixels x to the feature map f. The quantization process maps each vector f (i,j) in the feature map"
+      },
+      {
+        "term": "token",
+        "context": "utoregressive models. We show samples from our class-conditional image (top row) and text-conditional image (bottom row) generation models. Abstract We introduce LlamaGen, a new family of image generation models that apply origi- nal \u201cnext-token prediction\u201d paradigm of large language models to visual generation domain. It is an affirmative answer to whether vanilla autoregressive models, e.g., Llama, without inductive biases on visual signals can achieve state-of-the-art image generation performance if scaling properly. We reexamine design spaces of image tokenizers, scalability properties of image"
+      },
+      {
+        "term": "autoregressive",
+        "context": "Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation Peize Sun1 Yi Jiang2\u2020 Shoufa Chen1 Shilong Zhang1 Bingyue Peng2 Ping Luo1\u2217 Zehuan Yuan2\u2217 1The University of Hong Kong 2ByteDance Codes and models: https://github.com/FoundationVision/LlamaGen Figure 1: Image generation with vanilla autoregressive models. We show samples from our class-conditional im"
+      },
+      {
+        "term": "generation",
+        "context": "Autoregressive Model Beats Diffusion: Llama for Scalable Image Generation Peize Sun1 Yi Jiang2\u2020 Shoufa Chen1 Shilong Zhang1 Bingyue Peng2 Ping Luo1\u2217 Zehuan Yuan2\u2217 1The University of Hong Kong 2ByteDance Codes and models: https://github.com/FoundationVision/LlamaGen Figure 1: Image generation with vanilla autoregressive models. We show samples from our class-conditional image (top row) and text-conditional image (bottom row) gener"
+      },
+      {
+        "term": "understanding",
+        "context": "nvert pixel space to semantic space. Multimodal foundation models. Recently, vision-and-language models [Liu et al. 2024; Zhu et al. 2023; Dai et al. 2024; Peng et al. 2023; Zhang et al. 2023; Ma et al. 2024] have achieved versatile visual understanding through visual instruction tuning [Liu et al. 2024; Zhu et al. 2023]. However, unifying the understanding and generation in multimodal models is still in its early stages. Most existing methods [Sun et al. 2023b,a; Dong et al. 2024; Ge et al. 2023] try to collaborate a pre-trained diffusion model with existing models, rather than utilizing a unified next-to"
+      },
+      {
+        "term": "vq",
+        "context": "promising path toward general-purpose artificial intelligence models. Witnessed the scalability of autoregressive models on large language models, pioneering works attempt to explore autoregressive models in image generation, for example, VQVAE [Van Den Oord et al. 2017; Razavi et al. 2019], VQGAN [Esser et al. 2021; Lee et al. 2022], DALL-E [Ramesh et al. 2021], Parti [Yu et al. 2021, 2022]. They introduce image tokenizers to convert continuous images to discrete tokens, and apply autoregressive models to generate image tokens in the way of next-token prediction. They demonstrate strong perfor"
+      },
+      {
+        "term": "llava",
+        "context": "to its majestic appearance. The scene captures the lion\u2019s joyful and carefree demeanor in a natural environment. Figure 6: Examples of stage II training data: 10M internal high aesthetic quality images. The long caption is generated from LLaVA. A Examples of Image-Text Pair Data Training stage I: 50M subset of LAION-COCO [LAION 2022]. The original dataset has 600M image-text pair. We filter these images by valid image URL, aesthetic score, watermark score, CLIP image-text similarity score and image size. The remaining images are about 50M. Some examples are shown in Figure 5. Training stage II: 1"
+      },
+      {
+        "term": "chameleon",
+        "context": "arXiv:2307.05222, 2023a. Quan Sun, Qiying Yu, Yufeng Cui, Fan Zhang, Xiaosong Zhang, Yueze Wang, Hongcheng Gao, Jingjing Liu, Tiejun Huang, and Xinlong Wang. Generative pretraining in multimodality. arXiv preprint arXiv:2307.05222, 2023b. Chameleon Team. Chameleon: Mixed-modal early-fusion foundation models. arXiv preprint arXiv:2405.09818, 2024. Gemini Team, Rohan Anil, Sebastian Borgeaud, Yonghui Wu, Jean-Baptiste Alayrac, Jiahui Yu, Radu Soricut, Johan Schalkwyk, Andrew M Dai, Anja Hauth, et al. Gemini: a family of highly capable multimodal models. arXiv preprint arXiv:2312.11805, 2023. InternLM Te"
+      },
+      {
+        "term": "llamagen",
+        "context": "del Beats Diffusion: Llama for Scalable Image Generation Peize Sun1 Yi Jiang2\u2020 Shoufa Chen1 Shilong Zhang1 Bingyue Peng2 Ping Luo1\u2217 Zehuan Yuan2\u2217 1The University of Hong Kong 2ByteDance Codes and models: https://github.com/FoundationVision/LlamaGen Figure 1: Image generation with vanilla autoregressive models. We show samples from our class-conditional image (top row) and text-conditional image (bottom row) generation models. Abstract We introduce LlamaGen, a new family of image generation models that apply origi- nal \u201cnext-token prediction\u201d paradigm of large language models to visual generation domai"
+      },
+      {
+        "term": "figure 5",
+        "context": "card is attached to an external PCI. A large building with columns and a clock tower. Two lions are laying under a tree in the wild. An assortment of party decorations with owls and other items. an image of the coordinate of two circles. Figure 5: Examples of stage I training data: 50M subset of LAION-COCO. The short caption is its original caption (generated from BLIP [Li et al. 2022]). A large, cartoon-like painting of a smiling Mickey Mouse. Mickey is wearing a red shirt and is holding a pair of white gloves. The painting is displayed on a wall, and the Mickey Mouse character appears to be the"
+      }
+    ]
+  }
+}

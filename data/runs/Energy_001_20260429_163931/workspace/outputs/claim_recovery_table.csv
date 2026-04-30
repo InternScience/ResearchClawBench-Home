@@ -1,0 +1,6 @@
+claim,artifact,support
+All reported dispatch scenarios were solved to optimality with a linear program.,outputs/scenario_summary.csv; outputs/validation_metrics.json,Solver status optimal for each scenario.
+The model preserves hourly and nodal resolution from the input data.,data/demand.csv; code/run_dispatch_analysis.py; outputs/hourly_dispatch_by_carrier.csv,168 hourly snapshots and all buses from buses.csv used in nodal balance constraints.
+Wind curtailment and network congestion are scenario-dependent.,outputs/scenario_summary.csv; outputs/line_utilisation.csv; report/images/figure_2_scenario_results.png; report/images/figure_4_network_flows.png,Curtailment totals and line utilisation/congestion hours exported by scenario.
+"Storage operation is represented with power, energy, efficiency, and cyclic state-of-charge constraints.",outputs/storage_timeseries.csv; code/run_dispatch_analysis.py,"Charge, discharge, SOC variables and cyclic equations are included."
+FES-specific numerical reproduction is not exact.,outputs/dependency_check.json; outputs/scenario_definitions.json,No FES trajectory file is present; future cases are transparent sensitivity scenarios.

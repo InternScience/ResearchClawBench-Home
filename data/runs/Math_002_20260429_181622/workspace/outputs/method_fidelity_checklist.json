@@ -1,0 +1,24 @@
+{
+  "named_mechanism": "Hybrid MARL-guided Large Neighborhood Search for MAPF",
+  "exact_ideal_definition": [
+    "train/use multi-agent RL policy to reduce collisions in early LNS destroy/repair stages",
+    "use Large Neighborhood Search to choose subsets of agents and replan them",
+    "use prioritized planning as efficient late-stage/local repair",
+    "validate vertex and edge-swap collision freedom"
+  ],
+  "implemented_steps": {
+    "LNS loop with destroy/repair neighborhoods": "yes: lns_repair selects a subset, removes their paths, replans with reservations",
+    "MARL component": "approximated: policy-guided multi-agent neighborhood scoring uses conflict, excess-length, path-distance, and bottleneck-density features; no neural MARL training was possible in the bounded benchmark",
+    "prioritized planning repair": "yes: space-time A* against vertex/edge reservations replans selected agents sequentially",
+    "collision validator": "yes: detect_collisions checks vertex and swap collisions at all timesteps"
+  },
+  "deviations": [
+    "No external MARL environment or pretrained policy existed in workspace; implemented a transparent MARL-inspired decentralized conflict-pressure policy instead of training deep MARL online.",
+    "Input datasets contained maps only, so starts/goals were generated deterministically from free cells."
+  ],
+  "invariants": [
+    "obstacles are never traversed",
+    "reported success requires all agents planned and zero vertex/swap collisions",
+    "all random choices are seeded"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "n_cells": 2759,
+  "n_features": 241,
+  "obs_columns": [
+    "phase",
+    "annotated_age",
+    "state",
+    "batch"
+  ],
+  "var_columns": [],
+  "layers": [
+    "raw"
+  ],
+  "embedding_method": "UMAP",
+  "reference_pca_explained_variance_ratio_first10": [
+    0.24748511158619105,
+    0.09031380056194653,
+    0.051999838668777075,
+    0.047552577618815484,
+    0.04313210602417671,
+    0.027174730927071893,
+    0.02619001468527995,
+    0.024300977387161228,
+    0.02029098415513083,
+    0.01851687119637658
+  ],
+  "reference_pca_cumulative_variance_30": 0.806791797671288,
+  "pseudotime_spearman_annotated_age": 0.14147669946616628,
+  "phase_counts": {
+    "G1": 1128,
+    "S": 891,
+    "G0": 402,
+    "G2": 338
+  },
+  "state_counts": {
+    "cycling": 2174,
+    "arrested": 402,
+    "nan": 183
+  },
+  "batch_counts": {
+    "2": 1734,
+    "1": 1025
+  }
+}

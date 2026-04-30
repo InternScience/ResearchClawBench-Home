@@ -1,0 +1,6 @@
+claim,artifact,support
+EDE raises H0 relative to ΛCDM in the provided CMB+DESI summary.,outputs/model_parameter_shifts.csv; outputs/ede_parameter_summary.json,"H0 shift EDE-ΛCDM = 2.78 km/s/Mpc, z_shift=2.68."
+"w0wa shifts H0 downward while increasing Ωm relative to ΛCDM, unlike EDE.",outputs/model_parameter_shifts.csv; report/images/parameter_shift_heatmap.png,w0wa H0 and Ωm shifts have opposite signs compared with EDE for these parameters.
+The provided EDE posterior prefers nonzero f_EDE at about 3σ under a Gaussian approximation.,outputs/ede_parameter_summary.json; report/images/ede_posterior_approx.png,f_EDE=0.093±0.031; mean/sigma=3.00.
+"DESI BAO residuals in the extracted points are small and redshift structured, with low-z DV/rd negative and high-z closer to zero/positive.",outputs/distance_points_dvrd.csv; report/images/distance_residuals.png,Figure/table preserve redshift-level residuals and errors.
+Full Δχ² for the requested DESI DR2 CMB+BAO fits is not directly reproducible from local raw likelihoods.,outputs/dependency_check.json; outputs/goodness_of_fit_context.csv,Only summary constraints and figure-extracted points are supplied; related-work Δχ² values are reported as contextual evidence.

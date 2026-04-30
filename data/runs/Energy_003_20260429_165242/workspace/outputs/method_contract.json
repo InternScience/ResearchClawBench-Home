@@ -1,0 +1,15 @@
+{
+  "task": "Analyze the HEEW mini dataset and reproduce core evidence for a multi-source hierarchical hourly energy-weather benchmark dataset.",
+  "explicit_methodological_commitments": [
+    "Use raw hourly energy sensor measurements for 10 buildings plus CN01 and Total aggregate files for 2014.",
+    "Use meteorological observations in Total_weather.csv and align them hourly to energy records.",
+    "Produce data cleaning algorithms/diagnostics for missingness, duplicates, temporal regularity, non-physical values, and robust outliers.",
+    "Perform correlation analysis between electricity, heat, cooling, PV generation, GHG emissions, and weather attributes.",
+    "Verify hierarchical aggregation consistency: sum of BN001-BN010 versus CN01 and Total, and CN01 versus Total.",
+    "Generate publication-quality PNG figures and a report with methodology, results, validation/comparison plots, discussion, and limitations."
+  ],
+  "fallbacks_or_limitations": [
+    "Only the provided mini dataset is available locally: year 2014, 10 buildings, CN01, Total, and one Total weather file, not the full 2014-2022 147-building HEEW release.",
+    "PDF parser failed on related_work PDFs; related-work extraction is limited to PDF metadata/strings and task description."
+  ]
+}

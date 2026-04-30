@@ -1,0 +1,27 @@
+[
+  {
+    "claim": "The dataset contains 16 scored calculation tasks for 2111.01152.",
+    "artifact": "outputs/step_scoring_results.json",
+    "status": "verified"
+  },
+  {
+    "claim": "The reference continuum Hamiltonian is a valley-resolved 2x2 layer Hamiltonian with bottom/top effective masses and interlayer tunneling.",
+    "artifact": "outputs/hf_hamiltonian_derivation.md; data/2111.01152/2111.01152.tex",
+    "status": "verified"
+  },
+  {
+    "claim": "The HF interaction has Hartree and Fock quadratic terms with dual-gate screened Coulomb potential.",
+    "artifact": "outputs/hf_hamiltonian_derivation.md; data/2111.01152/2111.01152_SM.tex",
+    "status": "verified"
+  },
+  {
+    "claim": "Structured prompts perform strongest on potential definition, second quantization, interaction construction, Fock reduction, and Hartree+Fock combination in this dataset.",
+    "artifact": "outputs/step_scoring_results.csv",
+    "status": "verified from scores"
+  },
+  {
+    "claim": "The analysis did not reproduce a full self-consistent phase diagram.",
+    "artifact": "outputs/validation_summary.json",
+    "status": "limitation"
+  }
+]

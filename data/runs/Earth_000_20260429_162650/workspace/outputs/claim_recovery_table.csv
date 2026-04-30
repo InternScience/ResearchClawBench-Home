@@ -1,0 +1,6 @@
+claim,supporting_artifact,verification
+The calendar-year GlaMBIE result files provide annual 2000-2023 estimates for 19 regions and a global aggregate.,outputs/regional_annual_reconciled.csv; outputs/global_annual_reconciled.csv; outputs/data_overview.csv,"19 regions, 24 global annual rows, years 2000-2023"
+Global glaciers lost mass in aggregate over 2000-2023.,outputs/uncertainty_summary.csv; report/images/fig2_global_timeseries.png,Cumulative global mass change -6542.5 ± 387.0 Gt (independent-error propagation)
+The largest annual global loss in this 2000-2023 series occurs in 2023.,outputs/direct_global_2000_2023_answer.csv,Minimum annual global combined_gt is -548.0 Gt in 2023
+Regional losses are spatially heterogeneous and dominated by large Arctic/peripheral regions plus Alaska and Southern Andes.,outputs/regional_cumulative_summary.csv; report/images/fig3_regional_heatmap.png; report/images/fig5_regional_cumulative.png,Regional cumulative summaries preserve all 19 region-level totals and uncertainties.
+"Method groups show measurable deviations from the combined regional solution, supporting comparison/validation rather than blind pooling.",outputs/method_comparison_summary.csv; report/images/fig4_method_validation.png,39 non-combined region-method comparison rows exported.

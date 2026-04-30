@@ -1,0 +1,19 @@
+{
+  "task": "Evaluate computational power of random quantum circuit sampling (RCS) on arbitrary geometries using provided experimental counts and ideal probabilities/amplitudes.",
+  "required_methods": [
+    "Cross-entropy benchmarking (XEB) fidelity estimation from measured bitstring counts matched to ideal probabilities",
+    "Uncertainty estimate for each (N, d, r) configuration",
+    "Depth scan for fixed N=40 using available verification data",
+    "Comparison/validation plots addressing fidelity decay and classical approximability gap"
+  ],
+  "named_but_data_limited_methods": [
+    "MB regression probability",
+    "gate-count/error propagation model"
+  ],
+  "primary_quantity": "XEB fidelity F_XEB = 2^N * mean_sample[p_ideal(x)] - 1, computed counts-weighted over matched bitstrings",
+  "initial_assumptions": [
+    "Available workspace data contains N=40 verification subsets only unless inspection shows otherwise.",
+    "Ideal files may contain amplitudes or probabilities; code will normalize to ideal probabilities.",
+    "Uncertainty will include multinomial/sample standard error over matched measured samples, with bootstrap/checks where practical."
+  ]
+}

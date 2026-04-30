@@ -1,0 +1,7 @@
+claim,supporting_artifact,quantitative_result,status
+Experimental stiffness exceeds conventional Fermi-liquid estimate,outputs/density_enhancement_summary.csv,"mean hole/conv=55.3, mean electron/conv=52.5",supported by dataset
+Quantum-geometric contribution is much larger than conventional band contribution,outputs/density_enhancement_summary.csv,mean geom/conv=4.57,supported by dataset
+Observed temperature dependence is power-law and close to nodal/anisotropic behavior,outputs/temperature_fit_summary.csv,low-T alpha=0.76±0.02; log-slope=0.74,supported for low-T simulated experimental array
+DC current suppresses stiffness approximately quadratically before high-current deviation,outputs/current_fit_summary.csv,"quadratic R2=0.9932, linear R2=0.9638, Ic_fit=54.8 nA",supported on I<=45 nA
+Microwave drive produces weaker stiffness suppression over measured power range,outputs/microwave_resonance_proxies.csv,D_s falls from 100.0 to 86.8; f_res proxy to 0.932,supported by dataset
+Raw resistance and resonance frequency are directly measured,outputs/dc_resistance_resonance_proxies.csv,not directly tabulated; normalized proxies exported,limitation

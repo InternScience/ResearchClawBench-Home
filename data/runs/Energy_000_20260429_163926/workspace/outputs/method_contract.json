@@ -1,0 +1,24 @@
+{
+  "task": "Rapid parameter identification for ECAT-coupled lithium-ion battery model using ANN meta-model and multi-metric genetic/LHS search (MMGA approximation).",
+  "inputs": [
+    "CS2_36 CALCE xlsx 1C discharge curves (primary)",
+    "NASA PCoE B0005/6/7/18 mat CC discharge validation",
+    "Oxford ExampleDC_C1 transient drive-cycle mat generalization validation"
+  ],
+  "outputs": [
+    "identified high-fidelity internal parameters: particle radii, reaction rate constants, thermal coefficients, resistance/aging terms",
+    "ANN surrogate model performance",
+    "search and validation figures",
+    "report/report.md"
+  ],
+  "method_commitments": [
+    "Latin Hypercube Sampling over a multi-parameter ECAT-inspired search space",
+    "ANN meta-model replacing repeated physical simulations",
+    "multi-metric objective combining voltage, temperature, and capacity curve fidelity",
+    "GA-style evolutionary refinement/search",
+    "dataset-specific validation and comparison plots"
+  ],
+  "fallbacks": [
+    "Use computationally light reduced-order ECAT surrogate equations calibrated to macroscopic curves because full ECAT simulator/source code is not provided in workspace."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "task": "Select dynamically expressed molecular features that preserve continuous cellular trajectories from single-cell protein imaging data.",
+  "input_data": "data/adata_RPE.h5ad",
+  "named_method_commitments": [
+    "trajectory-preserving feature selection",
+    "dynamic expression along continuous pseudotime/trajectory",
+    "validation against random and high-variance feature baselines"
+  ],
+  "planned_method": [
+    "load AnnData",
+    "derive full-feature reference trajectory using PCA, nearest-neighbor graph, diffusion maps/pseudotime or robust PCA-derived surrogate if DPT unavailable",
+    "score each molecular feature by dynamic association with pseudotime using Spearman correlation, mutual information, and smoothness/ANOVA across trajectory bins",
+    "select top-ranked features",
+    "validate preservation using subset embeddings vs full reference: pseudotime correlation, neighbor overlap/trustworthiness, branch/cluster retention if labels exist",
+    "compare selected set with high variance and random baselines"
+  ],
+  "primary_outputs": [
+    "selected_features.csv",
+    "feature_scores.csv",
+    "validation_metrics.csv",
+    "data_overview.json",
+    "figures in report/images",
+    "report/report.md"
+  ]
+}

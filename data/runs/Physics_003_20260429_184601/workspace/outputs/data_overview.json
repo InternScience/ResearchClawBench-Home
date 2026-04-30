@@ -1,0 +1,98 @@
+{
+  "hdf5": {
+    "energy_axis": {
+      "n": 200,
+      "min_eV": -0.5,
+      "max_eV": 0.5,
+      "step_eV": 0.005025125628140725
+    },
+    "kx_axis": {
+      "n": 150,
+      "min_Ainv": -0.3,
+      "max_Ainv": 0.3,
+      "step_Ainv": 0.004026845637583876
+    },
+    "polarization_angles_deg": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180
+    ],
+    "time_delays": [
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "spectra_shape": [
+      200,
+      150
+    ],
+    "pump_off_intensity": {
+      "min": 0.6153881867508885,
+      "max": 197.00766347862458,
+      "mean": 16.712215467169834
+    },
+    "pump_on_intensity_by_angle": {
+      "0": {
+        "min": 0.7033784628254974,
+        "max": 204.98658221455528,
+        "mean": 20.43143532583912
+      },
+      "30": {
+        "min": 0.6384278464434517,
+        "max": 202.68568709447845,
+        "mean": 19.385037095345027
+      },
+      "60": {
+        "min": 0.6539307660162806,
+        "max": 202.7149104872987,
+        "mean": 19.385216456503773
+      },
+      "90": {
+        "min": 0.6809017297899613,
+        "max": 204.89326705963168,
+        "mean": 20.43125611854075
+      },
+      "120": {
+        "min": 0.6237406336235576,
+        "max": 202.75317677571897,
+        "mean": 19.3850774770658
+      },
+      "150": {
+        "min": 0.6546989615500226,
+        "max": 202.77132716437507,
+        "mean": 19.38580256084405
+      },
+      "180": {
+        "min": 0.6727830292297006,
+        "max": 204.9293654156426,
+        "mean": 20.43097418595822
+      }
+    }
+  },
+  "processed_json_keys": [
+    "dirac_point",
+    "dirac_indices",
+    "replica_bands",
+    "band_dispersion",
+    "energy_axis",
+    "kx_axis",
+    "polarization_angle",
+    "pump_energy"
+  ],
+  "polarization_csv_columns": [
+    "angle_degrees",
+    "angle_radians",
+    "intensity",
+    "target_energy",
+    "target_kx"
+  ],
+  "expected_5um_photon_energy_eV": 0.2479683968,
+  "processed_pump_energy_eV": 0.248,
+  "time_delay_limitation": "The HDF5 file includes a time_delays axis but contains pump-off and angle-resolved 2D spectra, not a delay-indexed 4D intensity cube."
+}

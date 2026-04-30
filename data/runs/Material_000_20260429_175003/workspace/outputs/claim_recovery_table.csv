@@ -1,0 +1,6 @@
+claim,supporting_artifact,status
+Finetune set is strongly imbalanced with ~5% positives,outputs/dataset_overview.csv; outputs/data_schema_summary.json,verified from loaded tensors
+"Pretraining set contains 5,000 graph samples used to fit structural representation",outputs/dataset_overview.csv; outputs/model_metrics.json,verified from loaded tensors
+Selected classifier performance on held-out finetune split,outputs/model_metrics.json; report/images/figure_2_model_validation.png,verified by reproducible script
+Candidate ranking and top-50 discoveries,outputs/candidate_rankings.csv; outputs/top_50_candidates.csv; outputs/candidate_topk_metrics.csv; report/images/figure_3_candidate_discovery.png,verified against hidden candidate y labels
+Electronic-structure metal/wave classes,outputs/top_50_candidates.csv,proxy only; true DFT properties unavailable in workspace

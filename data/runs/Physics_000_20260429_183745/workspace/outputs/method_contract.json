@@ -1,0 +1,22 @@
+{
+  "task": "Universal theoretical framework for rational design of multi-component icosahedral nanoclusters from particle radii, shell-path rules, and interaction parameters.",
+  "named_methods_protocols": [
+    "hexagonal-lattice shell sequence paths",
+    "Mackay icosahedral magic numbers",
+    "new b=5 shell magic-number sequence",
+    "chiral/achiral categories MC, BG, Ch1-Ch5",
+    "size-mismatch compatibility windows",
+    "Lennard-Jones interaction parameterization",
+    "growth path selection statistics"
+  ],
+  "primary_outputs": [
+    "predicted stable multi-shell structures",
+    "optimal size mismatch values between adjacent shells",
+    "shell sequences and growth paths from self-assembly simulations"
+  ],
+  "data_sources": [
+    "data/Multi-component Icosahedral Reproduction Data.txt",
+    "related_work paper metadata from PDFs"
+  ],
+  "faithful_scope": "Use provided reproduction data to build a compact reproducible design and validation analysis; no first-principles DFT or full molecular dynamics is performed because only summarized reproduction parameters/results are provided."
+}

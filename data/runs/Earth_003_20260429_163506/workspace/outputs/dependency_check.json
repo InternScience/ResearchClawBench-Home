@@ -1,0 +1,12 @@
+{
+  "netCDF4": true,
+  "xarray": true,
+  "numpy": true,
+  "matplotlib": true,
+  "cartopy": false,
+  "seaborn": true,
+  "pandas": true,
+  "scipy": true,
+  "pypdf": true,
+  "notes": "netCDF4, xarray, and pypdf were installed locally with pip --user during the run; cartopy unavailable, so map figures use matplotlib imshow/pcolormesh without coastlines."
+}

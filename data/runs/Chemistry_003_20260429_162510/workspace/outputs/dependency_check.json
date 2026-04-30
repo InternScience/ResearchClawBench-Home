@@ -1,0 +1,12 @@
+{
+  "python": "available",
+  "numpy": "available (2.2.5)",
+  "scipy": "available (1.15.2)",
+  "sklearn": "available (1.6.1)",
+  "matplotlib": "available (3.10.1)",
+  "ase": "installed in session (3.28.0)",
+  "pypdf_pdfminer": "installed in session for related-work extraction",
+  "torch": "not initially available and not required for the deterministic baseline",
+  "ewald_periodic_exact": "not applicable to supplied XYZ because all files have pbc=false and zero cell",
+  "fallback": "Use nonperiodic full pair Coulomb/soft-Coulomb summation and latent-charge least-squares fits; explicitly documented as LES-inspired, not full neural LES."
+}

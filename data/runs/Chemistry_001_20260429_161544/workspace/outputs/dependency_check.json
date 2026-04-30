@@ -1,0 +1,21 @@
+{
+  "python_dependencies": {
+    "numpy": "available",
+    "pandas": "available",
+    "matplotlib": "available",
+    "seaborn": "available",
+    "scipy": "available",
+    "sklearn": "available",
+    "rdkit": "installed_and_available",
+    "biopython": "installed_and_available",
+    "networkx": "installed_and_available",
+    "torch": "installed_and_available",
+    "pypdf": "installed_and_available"
+  },
+  "named_method_capability": {
+    "exact_large_scale_diffusion_training": "not feasible: only one sample complex and no training corpus/GPU guarantee",
+    "exact AlphaFold 3 comparison": "not feasible: no AF3 predictions or AF3 runtime in workspace",
+    "faithful prototype and evaluation harness": "feasible: local parsing, heterogeneous graph construction, diffusion architecture skeleton, RMSD/contact metrics, figures"
+  },
+  "fallback": "Implement and document a minimal faithful diffusion-framework prototype plus structure-derived validation rather than claiming trained predictive performance."
+}

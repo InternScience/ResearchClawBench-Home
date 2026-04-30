@@ -1,0 +1,215 @@
+{
+  "pretrain_data.pt": {
+    "n_samples": 5000,
+    "attrs": [
+      "root",
+      "transform",
+      "pre_transform",
+      "pre_filter",
+      "log",
+      "_indices",
+      "force_reload",
+      "num_samples",
+      "pos_ratio",
+      "elem_to_idx",
+      "node_features",
+      "data_list"
+    ],
+    "elem_to_idx": {
+      "Fe": 0,
+      "Co": 1,
+      "Ni": 2,
+      "Mn": 3,
+      "Cr": 4,
+      "V": 5,
+      "Ti": 6,
+      "Nd": 7,
+      "Pr": 8,
+      "Sm": 9,
+      "Gd": 10,
+      "Ho": 11,
+      "Er": 12,
+      "Yb": 13,
+      "O": 14,
+      "F": 15,
+      "Cl": 16,
+      "Br": 17,
+      "I": 18,
+      "S": 19,
+      "Se": 20,
+      "Te": 21,
+      "B": 22,
+      "C": 23,
+      "N": 24,
+      "P": 25,
+      "Si": 26,
+      "H": 27
+    },
+    "node_features": 28,
+    "keys": [
+      "edge_attr",
+      "edge_index",
+      "x",
+      "y"
+    ],
+    "node_count_mean": 9.5592,
+    "node_count_min": 4,
+    "node_count_max": 24,
+    "edge_count_mean": 11.8494,
+    "edge_count_min": 1,
+    "edge_count_max": 100,
+    "x_dim_values": [
+      28
+    ],
+    "edge_attr_dim_values": [
+      2
+    ],
+    "label_counts": {
+      "0.0": 2526,
+      "1.0": 2474
+    },
+    "positive_ratio": 0.4948
+  },
+  "finetune_data.pt": {
+    "n_samples": 2000,
+    "attrs": [
+      "root",
+      "transform",
+      "pre_transform",
+      "pre_filter",
+      "log",
+      "_indices",
+      "force_reload",
+      "num_samples",
+      "pos_ratio",
+      "elem_to_idx",
+      "node_features",
+      "data_list"
+    ],
+    "elem_to_idx": {
+      "Fe": 0,
+      "Co": 1,
+      "Ni": 2,
+      "Mn": 3,
+      "Cr": 4,
+      "V": 5,
+      "Ti": 6,
+      "Nd": 7,
+      "Pr": 8,
+      "Sm": 9,
+      "Gd": 10,
+      "Ho": 11,
+      "Er": 12,
+      "Yb": 13,
+      "O": 14,
+      "F": 15,
+      "Cl": 16,
+      "Br": 17,
+      "I": 18,
+      "S": 19,
+      "Se": 20,
+      "Te": 21,
+      "B": 22,
+      "C": 23,
+      "N": 24,
+      "P": 25,
+      "Si": 26,
+      "H": 27
+    },
+    "node_features": 28,
+    "keys": [
+      "edge_attr",
+      "edge_index",
+      "x",
+      "y"
+    ],
+    "node_count_mean": 9.519,
+    "node_count_min": 4,
+    "node_count_max": 24,
+    "edge_count_mean": 11.697,
+    "edge_count_min": 1,
+    "edge_count_max": 108,
+    "x_dim_values": [
+      28
+    ],
+    "edge_attr_dim_values": [
+      2
+    ],
+    "label_counts": {
+      "0.0": 1901,
+      "1.0": 99
+    },
+    "positive_ratio": 0.0495
+  },
+  "candidate_data.pt": {
+    "n_samples": 1000,
+    "attrs": [
+      "root",
+      "transform",
+      "pre_transform",
+      "pre_filter",
+      "log",
+      "_indices",
+      "force_reload",
+      "num_samples",
+      "pos_ratio",
+      "elem_to_idx",
+      "node_features",
+      "data_list"
+    ],
+    "elem_to_idx": {
+      "Fe": 0,
+      "Co": 1,
+      "Ni": 2,
+      "Mn": 3,
+      "Cr": 4,
+      "V": 5,
+      "Ti": 6,
+      "Nd": 7,
+      "Pr": 8,
+      "Sm": 9,
+      "Gd": 10,
+      "Ho": 11,
+      "Er": 12,
+      "Yb": 13,
+      "O": 14,
+      "F": 15,
+      "Cl": 16,
+      "Br": 17,
+      "I": 18,
+      "S": 19,
+      "Se": 20,
+      "Te": 21,
+      "B": 22,
+      "C": 23,
+      "N": 24,
+      "P": 25,
+      "Si": 26,
+      "H": 27
+    },
+    "node_features": 28,
+    "keys": [
+      "edge_attr",
+      "edge_index",
+      "x",
+      "y"
+    ],
+    "node_count_mean": 9.464,
+    "node_count_min": 4,
+    "node_count_max": 24,
+    "edge_count_mean": 11.758,
+    "edge_count_min": 1,
+    "edge_count_max": 116,
+    "x_dim_values": [
+      28
+    ],
+    "edge_attr_dim_values": [
+      2
+    ],
+    "label_counts": {
+      "0.0": 957,
+      "1.0": 43
+    },
+    "positive_ratio": 0.043
+  }
+}

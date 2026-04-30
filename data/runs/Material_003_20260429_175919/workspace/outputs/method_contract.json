@@ -1,0 +1,22 @@
+{
+  "task": "AI-guided inverse-design framework for recyclable vitrimeric polymers",
+  "named_methods": [
+    "molecular dynamics Tg simulations as input observations",
+    "Gaussian-process calibration of MD Tg to experimental Tg",
+    "graph variational autoencoder for candidate generation",
+    "inverse design targeting desired glass transition temperatures",
+    "experimental validation of selected candidates"
+  ],
+  "available_workspace_inputs": {
+    "tg_calibration.csv": "polymer SMILES, experimental Tg, MD Tg, MD uncertainty/std",
+    "tg_vitrimer_MD.csv": "acid and epoxide component SMILES for vitrimer systems, MD Tg, MD uncertainty/std"
+  },
+  "implemented_plan": {
+    "calibration": "Train/test GaussianProcessRegressor using MD Tg, MD std, and deterministic SMILES/string-derived molecular descriptors; evaluate held-out experimental Tg prediction.",
+    "vitrimer_prediction": "Apply GP calibration to vitrimer acid+epoxide systems to obtain calibrated Tg mean and uncertainty.",
+    "inverse_design": "Learn a descriptor-space generative latent model from vitrimer components and screen recombined acid/epoxide chemistries by calibrated Tg target proximity and uncertainty.",
+    "graph_vae": "Attempt exact dependency check; if unavailable, implement a graph-inspired descriptor latent generative fallback and explicitly mark non-exact graph VAE fidelity.",
+    "experimental_validation": "No new experiments can be performed in this workspace; provide a prioritized experimental validation panel with predicted Tg and uncertainty for synthesis/testing."
+  },
+  "primary_targets": ["calibrated Tg in K", "candidate ranking for target Tg windows", "held-out calibration error and uncertainty calibration"]
+}

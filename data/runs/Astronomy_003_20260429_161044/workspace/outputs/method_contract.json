@@ -1,0 +1,35 @@
+{
+  "task": "Analyze synthetic SXS binary black hole numerical-relativity waveform uncertainty datasets for catalog accuracy and coverage claims.",
+  "input_data": [
+    "data/fig6_data.csv: 1500 catalog-wide waveform differences between two highest numerical resolutions after minimal time/phase alignment",
+    "data/fig7_data.csv: 1500 x 7 mode-decomposed waveform differences for spherical-harmonic ell=2..8",
+    "data/fig8_data.csv: 1200 paired extrapolation-order waveform differences, N=2 vs N=3 and N=2 vs N=4"
+  ],
+  "scientific_commitments": [
+    "Quantify numerical-resolution waveform uncertainty distribution and long-tail behavior.",
+    "Quantify mode-dependent accuracy across ell=2..8 without collapsing the named modal structure.",
+    "Quantify extrapolation-order consistency and paired differences between N2-N3 and N2-N4 comparisons.",
+    "Compare synthetic data summaries to values stated in the task and related SXS catalog context where available.",
+    "Produce reproducible figures and saved source tables supporting all main claims."
+  ],
+  "named_methods_or_protocols": [
+    "minimal time and phase alignment waveform difference",
+    "highest-resolution comparison",
+    "spherical-harmonic mode decomposition by ell",
+    "finite-radius waveform extrapolation order comparisons"
+  ],
+  "primary_target_quantities": [
+    "median, mean, standard deviation, quantiles, min/max of mismatch-like waveform differences",
+    "fractions below/above practical thresholds (1e-4, 1e-3, 1e-2, 1e-1)",
+    "mode-wise median and quantile scaling with ell",
+    "paired ratio and log10 difference for N2-N4 versus N2-N3 extrapolation differences"
+  ],
+  "limitations": [
+    "Available datasets contain synthetic uncertainty summaries only, not raw strain, Weyl scalar, horizon trajectories, or metadata; analysis therefore evaluates catalog-accuracy diagnostics rather than generating numerical-relativity waveforms."
+  ],
+  "related_work_updates": [
+    "Use highest-versus-second-highest resolution comparison as a conservative NR error diagnostic.",
+    "Emphasize mode-resolved summaries because higher harmonics and mode mixing are scientifically relevant.",
+    "Include thresholds near 1e-3 and 1e-2 motivated by surrogate-model mismatch accuracy discussions."
+  ]
+}

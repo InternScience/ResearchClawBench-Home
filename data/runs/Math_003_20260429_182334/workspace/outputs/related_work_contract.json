@@ -1,0 +1,17 @@
+{
+  "papers_available": [
+    "related_work/paper_000.pdf",
+    "related_work/paper_001.pdf",
+    "related_work/paper_002.pdf",
+    "related_work/paper_003.pdf"
+  ],
+  "extraction_status": "limited",
+  "limitation": "ReadPDF failed for all PDFs with unexpected pdf result type NoneType; no Python PDF text libraries were installed. Ghostscript confirmed page counts but not text content.",
+  "page_counts": {
+    "paper_000.pdf": 15,
+    "paper_001.pdf": 20,
+    "paper_002.pdf": 13,
+    "paper_003.pdf": 20
+  },
+  "contract_effect": "No related-work-specific baselines or figure families could be reliably extracted; retained task-derived contract: parser, symbolic proof search, validation, comparison and interpretability via rule traces."
+}

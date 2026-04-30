@@ -1,0 +1,95 @@
+{
+  "f_best": 0.1701085607503704,
+  "rates": {
+    "ADMM rho=0.03": {
+      "initial_gap": 0.7020093638987005,
+      "final_gap": 1.1102230246251565e-16,
+      "fit_points": 40,
+      "early_log_gap_slope": -0.5541982600689944,
+      "early_linear_factor": 0.5745327024039071,
+      "early_power_slope": -7.840215052991655,
+      "iterations_to_gap": {
+        "0.01": 10,
+        "0.0001": 18,
+        "1e-06": 24,
+        "1e-08": 34,
+        "1e-10": 41
+      }
+    },
+    "ADMM rho=0.1": {
+      "initial_gap": 0.7020093638987005,
+      "final_gap": 1.1102230246251565e-16,
+      "fit_points": 144,
+      "early_log_gap_slope": -0.15634375924998503,
+      "early_linear_factor": 0.855265134530522,
+      "early_power_slope": -6.490359718704742,
+      "iterations_to_gap": {
+        "0.01": 32,
+        "0.0001": 62,
+        "1e-06": 89,
+        "1e-08": 117,
+        "1e-10": 145
+      }
+    },
+    "ADMM rho=0.3": {
+      "initial_gap": 0.7020093638987005,
+      "final_gap": 1.1102230246251565e-16,
+      "fit_points": 432,
+      "early_log_gap_slope": -0.051968222858337416,
+      "early_linear_factor": 0.9493590342800905,
+      "early_power_slope": -5.931111227301454,
+      "iterations_to_gap": {
+        "0.01": 94,
+        "0.0001": 184,
+        "1e-06": 266,
+        "1e-08": 349,
+        "1e-10": 433
+      }
+    },
+    "FISTA": {
+      "initial_gap": 0.7020093638987005,
+      "final_gap": 1.1102230246251565e-16,
+      "fit_points": 124,
+      "early_log_gap_slope": -0.1616415704538684,
+      "early_linear_factor": 0.8507460824305458,
+      "early_power_slope": -6.624850143127622,
+      "iterations_to_gap": {
+        "0.01": 13,
+        "0.0001": 26,
+        "1e-06": 48,
+        "1e-08": 80,
+        "1e-10": 114
+      }
+    },
+    "ISTA": {
+      "initial_gap": 0.7020093638987005,
+      "final_gap": 1.1102230246251565e-16,
+      "fit_points": 138,
+      "early_log_gap_slope": -0.162161141019681,
+      "early_linear_factor": 0.8503041746182218,
+      "early_power_slope": -6.444167345367555,
+      "iterations_to_gap": {
+        "0.01": 31,
+        "0.0001": 60,
+        "1e-06": 86,
+        "1e-08": 113,
+        "1e-10": 139
+      }
+    },
+    "Restart-FISTA": {
+      "initial_gap": 0.7020093638987005,
+      "final_gap": 1.1102230246251565e-16,
+      "fit_points": 138,
+      "early_log_gap_slope": -0.162161141019681,
+      "early_linear_factor": 0.8503041746182218,
+      "early_power_slope": -6.444167345367555,
+      "iterations_to_gap": {
+        "0.01": 31,
+        "0.0001": 60,
+        "1e-06": 86,
+        "1e-08": 113,
+        "1e-10": 139
+      }
+    }
+  }
+}

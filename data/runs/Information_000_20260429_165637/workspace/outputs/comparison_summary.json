@@ -1,0 +1,59 @@
+{
+  "mean_by_variant": {
+    "understanding_score": {
+      "decoupled": 0.91,
+      "single": 0.635
+    },
+    "generation_score": {
+      "decoupled": 1.0,
+      "single": 0.25
+    },
+    "joint_score": {
+      "decoupled": 0.955,
+      "single": 0.4425
+    },
+    "token_count": {
+      "decoupled": 81.0,
+      "single": 29.0
+    }
+  },
+  "per_image": [
+    {
+      "image": "equation",
+      "variant": "decoupled",
+      "token_count": 83,
+      "understanding_score": 0.82,
+      "generation_score": 1.0,
+      "token_efficiency": 0.156,
+      "joint_score": 0.91
+    },
+    {
+      "image": "equation",
+      "variant": "single",
+      "token_count": 29,
+      "understanding_score": 0.3617,
+      "generation_score": 0.25,
+      "token_efficiency": 0.2018,
+      "joint_score": 0.3058
+    },
+    {
+      "image": "doge",
+      "variant": "decoupled",
+      "token_count": 79,
+      "understanding_score": 1.0,
+      "generation_score": 1.0,
+      "token_efficiency": 0.1577,
+      "joint_score": 1.0
+    },
+    {
+      "image": "doge",
+      "variant": "single",
+      "token_count": 29,
+      "understanding_score": 0.9083,
+      "generation_score": 0.25,
+      "token_efficiency": 0.2018,
+      "joint_score": 0.5792
+    }
+  ],
+  "interpretation": "Decoupled streams preserve all semantic/OCR tokens and full 8x8 visual-code grids, while the single baseline truncates semantic tokens and uses a smaller visual grid under one shared budget."
+}

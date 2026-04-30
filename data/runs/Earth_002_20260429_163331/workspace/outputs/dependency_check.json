@@ -1,0 +1,21 @@
+{
+  "checked_with": "python importlib.util.find_spec after pip install where needed",
+  "dependencies": {
+    "geopandas": true,
+    "xarray": true,
+    "netCDF4": true,
+    "h5netcdf": true,
+    "fiona": true,
+    "pyogrio": true,
+    "shapely": true,
+    "pyproj": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "pandas": true,
+    "numpy": true,
+    "scipy": true,
+    "sklearn": true,
+    "pypdf": true
+  },
+  "capability_summary": "Core geospatial, NetCDF, plotting, and PDF extraction libraries are available."
+}

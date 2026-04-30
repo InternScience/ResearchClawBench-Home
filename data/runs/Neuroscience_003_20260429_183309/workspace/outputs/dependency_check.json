@@ -1,0 +1,22 @@
+{
+  "python_dependencies": {
+    "scanpy": true,
+    "anndata": true,
+    "numpy": true,
+    "pandas": true,
+    "sklearn": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "umap": true,
+    "h5py": true,
+    "pypdf": true
+  },
+  "installed_missing_via_pip": [
+    "anndata",
+    "scanpy",
+    "pypdf",
+    "umap-learn"
+  ],
+  "limitations": []
+}

@@ -1,0 +1,17 @@
+{
+  "task": "Pairwise protein complex structural alignment between 7xg4 and 6n40, motivated by Foldseek-Multimer-like ultra-fast complex search.",
+  "input_structures": [
+    "data/7xg4.pdb",
+    "data/6n40.pdb"
+  ],
+  "explicit_methodological_commitments": [
+    "Use 3D protein-complex structures as input",
+    "Report structural alignment result between complexes",
+    "Include chain correspondence between complexes",
+    "Include superimposition vectors / rigid-body transformation",
+    "Include TM score or defensible TM-score-like similarity for structural similarity",
+    "Assess capability in the context of Foldseek-Multimer / large-scale complex search"
+  ],
+  "planned_approach": "Check for named alignment tools first. If unavailable, implement a reproducible local complex alignment: parse CA atoms, derive sequence-independent residue matches per chain pair using dynamic programming on distance after iterative Kabsch superposition, search chain assignments, compute RMSD and TM-score-like normalized similarity, and validate by comparison plots.",
+  "status": "completed_with_documented_fallback"
+}

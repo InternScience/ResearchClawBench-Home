@@ -1,0 +1,352 @@
+*For correspondence:
+shinomiyak@janelia.hhmi.org (KS);
+I.A.Meinertzhagen@Dal.Ca (IAM)
+Competing interests: The
+authors declare that no
+competing interests exist.
+Funding:
+See page 16
+Received: 12 July 2018
+Accepted: 02 January 2019
+Published: 09 January 2019
+Reviewing editor: Alexander
+Borst, Max Planck Institute of
+Neurobiology, Germany
+Copyright Shinomiya et al.
+This article is distributed under
+the terms of the
+Creative
+Commons Attribution License,
+which permits unrestricted use
+and redistribution provided that
+the original author and source are
+credited.
+Comparisons between the ON- and OFF-
+edge motion pathways in the Drosophila
+brain
+Kazunori Shinomiya 1*, Gary Huang 1, Zhiyuan Lu 1,2, Toufiq Parag 1,3, C Shan Xu 1,
+Roxanne Aniceto 1, Namra Ansari 1, Natasha Cheatham 1, Shirley Lauchie 1,
+Erika Neace 1, Omotara Ogundeyi 1, Christopher Ordish 1, David Peel 1,
+Aya Shinomiya 1, Claire Smith 1, Satoko Takemura 1, Iris Talebi 1, Patricia K Rivlin 1,
+Aljoscha Nern 1, Louis K Scheffer 1, Stephen M Plaza 1, Ian A Meinertzhagen 2*
+1Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, United
+States; 2Department of Psychology and Neuroscience, Dalhousie University, Halifax,
+Canada; 3School of Engineering and Applied Sciences, Harvard University,
+Cambridge, United States
+Abstract Understanding the circuit mechanisms behind motion detection is a long-standing
+question in visual neuroscience. In Drosophila melanogaster, recently discovered synapse-level
+connectomes in the optic lobe, particularly in ON-pathway (T4) receptive-field circuits, in concert
+with physiological studies, suggest a motion model that is increasingly intricate when compared
+with the ubiquitous Hassenstein-Reichardt model. By contrast, our knowledge of OFF-pathway (T5)
+has been incomplete. Here, we present a conclusive and comprehensive connectome that, for the
+first time, integrates detailed connectivity information for inputs to both the T4 and T5 pathways in
+a single EM dataset covering the entire optic lobe. With novel reconstruction methods using
+automated synapse prediction suited to such a large connectome, we successfully corroborate
+previous findings in the T4 pathway and comprehensively identify inputs and receptive fields for T5.
+Although the two pathways are probably evolutionarily linked and exhibit many similarities, we
+uncover interesting differences and interactions that may underlie their distinct functional
+properties.
+DOI: https://doi.org/10.7554/eLife.40025.001
+Introduction
+Over half a century ago, Hassenstein and Reichardt (1956) working on the beetle Chlorophanus,
+and later Reichardt (1961) working on flies and Barlow and Levick (1965) studying rabbit retinal
+ganglion cells, all independently presented evidence for motion detection circuits that incorporate a
+delay-and-compare strategy. In both insect and mammalian model groups, two or more indepen-
+dent, parallel inputs from upstream neurons provide input to elementary motion detector (EMD) cir-
+cuits. Both models use a similar mechanism to compute the direction of motion, but they differ
+depending on how they produce a direction-selective response. The Barlow-Levick type circuit
+detects the preferred-direction signals by suppressing signals in the non-preferred direction; the
+Hassenstein-Reichardt detector generates an enhancement of signals in the preferred direction
+(
+Borst and Helmstaedter, 2015 ).
+The fly’s optic lobe consists of four consecutive neuropils: the lamina, medulla, lobula, and lobula
+plate. Each of these comprises columnar units that correspond to the array of ommatidia in the ret-
+ina. The motion pathway in the optic lobe arises from the photoreceptor cells (PRs), which receive
+light signals in the compound eye and extend their axons to the lamina. R1–R6 cells expressing
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 1 of 19
+RESEARCH ARTICLE
+rhodopsin rh1 provide signals to lamina monopolar cells in the lamina cartridges, which project to
+the distal medulla. The lamina neurons are presynaptic to various types of medulla neurons in the
+distal medulla. Among them, medulla columnar neurons including Mi, Tm, and TmY cells further pro-
+vide inputs to the dendritic arbors of T4 in the M10 layer of the medulla and T5 in the Lo1 layer of
+the lobula.
+The dendritic arbors of T4 cells receive parallel inputs from multiple columns, and a single arbor
+receives inputs from columns that signal different positions of the visual field, depending on the cell
+types of the input neurons (
+Takemura et al., 2017 ). Recent developments in techniques for three-
+dimensional electron microscopy (3D-EM) have accelerated the identification of neurons and their
+synaptic circuits, or their connectome, in the brain of the fruit fly Drosophila melanogaster (
+Mei-
+nertzhagen, 2016 ; Meinertzhagen, 2018 ). In the visual system, motion detection pathways in the
+optic lobe have been a prominent goal for such connectomic approaches, which identify the compo-
+nent neurons using 3D-EM reconstructions of their arbors.
+The medulla dendritic arbors of T4 cells provide a substrate for the elementary motion detector
+(EMD) in the ON-edge motion pathway (
+Borst, 2014 ; Joesch et al., 2010 ; Maisak et al., 2013 ).
+Using serial-section transmission EM (ssTEM), Takemura et al. (2013) identified Mi1 and Tm3 as
+major inputs to the T4 cell dendrites. A later approach using focused ion beam scanning EM (FIB-
+SEM) (
+Takemura et al., 2017 ) comprehensively revealed other medulla neurons providing inputs to
+T4. These medulla neurons relay input to T4 from L1, the first of two repeated neuron classes in the
+first neuropil, or lamina; L1 in turn receives input from the terminals of photoreceptors R1–R6 in the
+overlying compound eye (
+Meinertzhagen and O’Neil, 1991 ; Rivera-Alba et al., 2011 ).
+Complementary to the T4 cells, narrow-field T5 cells constitute the first output stage of the OFF-
+edge pathway ( Borst, 2014 ; Joesch et al., 2010 ; Maisak et al., 2013 ), and some of T5’s input neu-
+rons have also been identified from their terminals reconstructed using ssTEM ( Shinomiya et al.,
+2014). These inputs relay signals from L2 cells, which partner L1 in all columns, or cartridges, of the
+lamina and which also receive input from R1–R6 ( Meinertzhagen and Sorra, 2001 ;
+Meinertzhagen and O’Neil, 1991 ; Rivera-Alba et al., 2011 ). Therefore, the separation between the
+ON and OFF motion pathways is already established at the level of the lamina neurons.
+Finally, T4 and T5 cell axons transfer motion information to the fourth neuropil, or lobula plate,
+where it is integrated and further processed to extract specific motion modalities, before being con-
+ducted to the central brain by visual projection neurons (VPNs). VPNs include various types of lobula
+plate tangential neurons (LPTCs) and lobula plate/lobula columnar cells (
+Klapoetke et al., 2017 ;
+Mauss et al., 2015 ; Scott et al., 2002 ).
+The ON and OFF motion pathways are similar in their function, component neurons, and patterns
+of synaptic connections. Both T4 and T5 cells are direction-selective neurons, and each is further
+grouped into four subtypes: T4 as T4a, T4b, T4c and T4d; and T5 as T5a, T5b, T5c, and T5d.
+These T4 and T5 cells specifically signal motion in the four canonical directions. The subtypes a–d
+detect front-to-back, back-to-front, upward, and downward motion, respectively (
+Maisak et al.,
+2013). Each subtype projects its axon to one of the lobula plate’s four strata ( Fischbach and Dit-
+trich, 1989 ), depending on the direction of motion that it signals ( Maisak et al., 2013 ). Develop-
+mentally, both T4 and T5 are known to originate from the same subset of progenitor cells in the
+inner proliferation center and to express a proneural gene, Atonal, uniformly (
+Apitz and Salecker,
+2016; Oliva et al., 2014 ).
+Given the dimensional constraints of the respective ssTEM and FIB-SEM datasets, however,
+the T4 and T5 pathways, and their respective input neurons, have been reconstructed independently
+in separate reports using 3D-EM methods. Series of ultrathin sections have been used to identify
+medulla cell inputs to T4 cells; these included medulla intrinsic (Mi) and transmedulla (Tm) cells but
+not their terminals in the lobula, which were lacking from the EM dataset (
+Takemura et al., 2013 ).
+Similarly, inputs to T5 terminals in the lobula arise from Tm cells, but the medulla arbors of these
+were also lacking from previous reconstructions (
+Shinomiya et al., 2014 ). Subsequent reports that
+repeated the analysis of cells for seven medulla columns, using FIB-SEM ( Takemura et al., 2015 ),
+also failed to identify the lobula, but comprehensively identified additional inputs to, and connec-
+tions between, T4 cells (
+Takemura et al., 2017 ). Consequently, results from these studies cannot be
+compared directly to the same field size and at the same resolution in a single dataset. This makes it
+difficult to recognize and resolve deep similarities in the inputs to both pathways, which might sup-
+port further evolutionary comparisons between those inputs (
+Shinomiya et al., 2015 ), and
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 2 of 19
+Research article Neuroscience
+which might also enable functional comparisons, especially for the inputs to T5 which to date are
+known only for four main Tm cells: Tm1, Tm2, Tm4, and Tm9.
+In this study, we exhaustively identified the synaptic inputs to T5 cells, and described their spatial
+layouts. We also assessed the anatomical properties of the dendritic terminals of T4 and T5, after
+identifying all neurons that have synaptic contacts with the motion-sensing output cells in the
+medulla and lobula. As a result, our report concludes the connectomic analysis of both the ON- and
+the OFF- motion-sensitive pathways in Drosophila.
+Results
+Identifying the synaptic partners of T4 and T5 cells
+The FIB-SEM dataset used in this study covers the entire depth of the medulla, lobula, and lobula
+plate, as well as the proximal depth of the lamina (
+Figure 1A ), and is large enough to include the
+motion pathways from the lamina cell inputs, through the medulla, to T4 and T5 cells in the lobula
+Figure 1. Horizontal section of the four optic lobe neuropils and their reconstructed neurons. ( A) In the ON-edge pathway, the T4 cells receive inputs at
+the tenth layer of the medulla (M10) from upstream cells, whereas in the OFF-edge pathway, the T5 cells receive inputs at the first layer of the lobula
+(Lo1), before projecting to the lobula plate. Here, in a horizontal re-sliced section of the dataset, Mi1 and Tm1/Tm2 cells are shown as representative
+input neurons to the T4 and T5 cells. LA, lamina; ME, medulla; LO, lobula; LOP, lobula plate. ( B) Axon terminals of Tm cells and T5 cells in Lo1. The
+area roughly corresponds to the boxed inset in ( A). T5 cell dendrites (in yellow) demarcate the Lo1 layer. Terminals of Tm1, Tm2, Tm9, and CT1 neurons
+form packed columnar units and have extensive synaptic contacts with T5 cells. Tm4 cells form no part of these columnar units but run between the
+columns, and also have synapses with T5 cells in Lo1. ( C) 3D reconstruction of the neurons. One representative T5 cell (yellow) is shown along with Tm
+cells and a CT1 terminal. The proximal tip of the axon terminal of Tm2 (arrowhead) extends slightly beyond the boundary between Lo2 and Lo1. Tm4
+extends its axon further and terminates in Lo4 (
+Fischbach and Dittrich, 1989 ).
+DOI: https://doi.org/10.7554/eLife.40025.002
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 3 of 19
+Research article Neuroscience
+plate. We have identified a complete subset of neurons that form either pre- or postsynaptic part-
+nerships with the dendritic arbors of both T4 and T5 cells, using the numbers and locations of pre-
+synaptic contacts, each identified by a T-bar presynaptic ribbon and multiple postsynaptic dendrites
+(
+Takemura et al., 2008 ) (see Materials and methods for detailed processes of neuron tracing).
+Examples of reconstructed cells, including those of T5 and some of its synaptic partners in stratum
+Lo1, are shown in
+Figure 1B and C . The dendritic arbors of T5, as well as most of the input neuron
+terminals, are confined to Lo1. Tm1, Tm2, and Tm9 have small columnar terminals which look similar
+to each other. The terminals of Tm1 and Tm9 are entirely within stratum Lo1, which is defined as the
+stratum innervated by the T5 cell dendrites (
+Fischbach and Dittrich, 1989 ), whereas Tm2’s terminal
+extended into stratum Lo2, slightly deeper than Lo1 ( Figure 1B and C ).
+On the basis of reconstructed neurons and their synapses, we comprehensively identified input
+and output neurons of T4 and T5 in the medulla and lobula ( Figure 2 ). The TmY18 cell, which
+receives inputs from T4 but which was not reported in Takemura et al. (2017) , is also included here.
+TmY18 is postsynaptic only to T4 in M10, and lacks synaptic contacts with T5. For the T5 cells, in
+addition to the four types of Tm cells reported previously (
+Shinomiya et al., 2014 ), four additional
+types of neurons were identified presynaptic to the dendrites. Neurons that have synaptic contacts
+with the T5 cell terminals in Lo1 are shown in
+Figure 3 . CT1, a large tangential, GAD1-immunoposi-
+tive ( Takemura et al., 2017 ) element, was presynaptic to the T5 dendrites. Its terminals in the
+medulla are reported to contact T4 cell neurites ( Takemura et al., 2017 ). CT1 spans the opposing
+faces of M10 and Lo1 to form modular associations, that is one per column, with both T4 and T5
+populations in both the medulla and lobula (
+Figure 3B and C ). The dataset from the present study
+reveals that these columnar terminals of CT1 ( Figure 3D ) are both pre- and postsynaptic to the neu-
+rites of T4 and T5. In particular, the terminals in Lo1 are physically larger than those in M10, and the
+input synapses from CT1 to T5 are actually more numerous than those to T4, making CT1 one of the
+prominent input elements to the T5 cell. Each terminal of CT1 is tightly packed with the terminals of
+Tm1, Tm2, and Tm9, and forms regularly aligned columnar structures embedded in Lo1 (
+Figure 1B ).
+The wide-field neurites of CT1 are, in several respects, a novel player among the input neurons to
+T4 and T5. First, they form repeated synaptic modules in each neuropil column of the medulla and
+lobula (
+Figure 1C ), where they provide input to the dendrites of T4 and T5, at about 15 synapses
+per column to T4 and about 60 to T5 (essentially equal numbers to subtypes a-d). Second, besides
+being presynaptic to the T5 cell dendrites, CT1 also receives inputs from Tm1 and Tm9 cells in Lo1
+(7.0 ± 3.1 and 23.3 ± 2.6 synapses per CT1 terminal, respectively (n = 7)), and provides outputs to
+Tm9 (14.9 ± 3.2 synapses per CT1 terminal (n = 7)). Third, that input is GAD1 immunopositive
+(
+Takemura et al., 2017 ) and therefore putatively inhibitory. Fourth, the modules are connected by
+long neurites that stretch across stratum M10 of the medulla and stratum Lo1 of the lobula, and also
+between these neuropils, from a soma in the central brain (
+Takemura et al., 2017 ). Fifth, the con-
+necting neurites are ~0.1 mm in diameter, in contrast to 0.5 ~ 1 mm in common Mi or Tm cell axons,
+and their average length (44 mm) is much longer than that required to connect between
+columns ( ~5 mm). We note that this need not be a general feature of lobula tangential neurons, and
+is not shown for example by LT33 ( Figure 3C–E ).
+Another cell type, TmY15 ( Takemura et al., 2017 ), which has neurites in the medulla, lobula, and
+lobula plate and is also GAD1 positive ( Takemura et al., 2017 ), is presynaptic to both the T4 and T5
+cells in M10 and Lo1, respectively. Like CT1, this cell type is putatively inhibitory. It extends over
+areas of the medulla and lobula wider than ten columns, and the innervating areas in the two neuro-
+pils roughly overlap each other retinotopically. TmY15 does not receive direct inputs from lamina
+cells in the medulla but it receives inputs from several types of Mi, Tm, and TmY cells, most notably
+from Tm3 and Tm4 cells, at its arbors in both the medulla and lobula. In the lobula plate, the cell has
+input synapses predominantly in the second and third strata, where it receives inputs from the axon
+terminals of the T4b/T5b and T4c/T5c cells, respectively.
+We also found that two types of Lo1-specific wide-field cells form synaptic inputs to the T5 termi-
+nals (
+Figure 3E–I ). One of these has a wide tangential arbor covering the entire Lo1 stratum, and we
+name it LT (lobula tangential) 33, previously reported cells of the same class being LT1–LT10
+(
+Fischbach and Dittrich, 1989 ), and LT11–LT12, and LT31–LT32 ( Otsuna and Ito, 2006 ). There is
+only a single LT33 cell in each hemisphere, and the cell body is located in the central brain, near the
+midline (
+Figure 3E and F ), which is also near the cell body site of CT1 ( Shinomiya et al., 2015 ;
+Takemura et al., 2017 ). LT33 also has some branches in the neuropil of the posterior lateral
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 4 of 19
+Research article Neuroscience
+protocerebrum (PLP). The other type of cell is identified as a previously described neuron, Tm23,
+with a cell body in the medulla cortex, distal to the medulla neuropil, which after penetrating the
+medulla projects an axon to stratum Lo1 (
+Figure 3G–I ) ( Fischbach and Dittrich, 1989 ). Tm23 seems
+to have no synapses in the medulla, and the projecting arbor of a single cell in the lobula covers an
+area of roughly 30 /C240 mm. Both LT33 and Tm23 are postsynaptic at inputs from T5, Tm23 being
+postsynaptic only to cell T5a in Lo1.
+Figure 2. Input and output synapses of T4 and T5 cells in the medulla and lobula. Histograms indicating the average numbers of synapses per
+connection for a single T4 or T5 cell, mean (+SD) for five representative cells selected and completely traced for each T4/T5 subtype. Only connections
+with /C213 contacts are independently shown in the graphs; weaker connections are combined in ‘others’. All synaptic sites were manually verified, and
+their pre- and postsynaptic partners were then also exhaustively identified.
+DOI: https://doi.org/10.7554/eLife.40025.003
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 5 of 19
+Research article Neuroscience
+Figure 3. T4, T5 and their synaptic partner neurons. ( A) T5 forms synaptic contacts with Tm1, 2, 4, 9, TmY15 and T2 cells. T4 is presynaptic to a newly
+identified TmY18 cell in M10. These synaptic partners of T5 and T4 have cell bodies in the medulla cortex distal to stratum M1, except T2 has a soma
+between the medulla and lobula. Tm and T2 cells receive inputs mainly in the medulla and project to the lobula, whereas TmY cells project to both the
+lobula and the lobula plate. All reconstructed cell profiles closely capture the profiles of those reported from Golgi impregnation (
+Fischbach and
+Dittrich, 1989) except the lobula terminal of T2 (inset), shown here from a different angle (lateral view, arrowhead indicates the outgoing fiber
+connected to the medulla and cell body). ( B) Paired T4 and T5 cells. T4/5a, b, c, and d cell pairs project to the lobula plate, to strata Lop1, 2, 3 and 4,
+respectively. Their cell bodies are located in the lobula plate cortex, posterior to the lobula plate. ( C, D) Parts of CT1 reconstructed in both the medulla
+and lobula reveal the morphology of its color-coded columnar terminals. Fibers connecting the terminals enter the second optic chiasm (OCH2) before
+exiting the optic neuropils (trajectories shown by arrows). Most branches terminate in medulla stratum M10 or lobula stratum Lo1, but a few terminals
+project deeper, into Lo2 (arrowhead in ( C)). Columnar terminals in Lo1 corresponding to a home (h) column and the surrounding six columns ( A–F) are
+Figure 3 continued on next page
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 6 of 19
+Research article Neuroscience
+The T2 cell is postsynaptic at a few contacts from each of the four T5 subtypes in the lobula ( Fig-
+ure 2 ). T2 has its main terminal in the Lo2 stratum, but it touches the tips of the T5 cell dendritic
+arbors on its distal side and there forms synaptic contacts ( Figure 3A ).
+The present dataset also reveals some novel minority connections that have a few synaptic con-
+tacts. Two types of neurons, Mi13 and TmY18, receive input from T4 cells but lack direct output
+back to T4 (
+Figures 2 and 3A). Interestingly, Mi13 is selectively postsynaptic to T4a (at 7.4 ± 3.6 syn-
+apses) and T4b (at 4.2 ± 1.3 synapses), whereas T4c (0.6 ± 0.5 synapses) and T4d (zero synapses)
+have fewer or no such synapses. In addition, C3 is postsynaptic specifically to T4a (7.8 ± 3.4 synap-
+ses) but not to other T4 subtypes. C3 is widely reported to be GABAergic ( Kolodziejczyk et al.,
+2008; Sinakevitch et al., 2003 ), suggesting that C3 inhibits the detection or processing of motion
+by suppressing all subtypes of T4 cells when it receives front-to-back signals from T4a. This connec-
+tivity pattern is comparable to that of Tm23 and T5 cells. Thus although the morphologies of C3 and
+Tm23 are quite different, they have similar connections with the T4 and T5 cell arbors, respectively.
+Spatial displacements of synaptic inputs to T4 and T5 cells
+To identify candidate inputs to an EMD, we mapped the synaptic sites distributed over the dendrites
+of both T4 and T5 cells and compared these maps with plots for T4 made by
+Takemura et al.
+(2017), using T4c and T5c as representatives of both cells ( Figure 4 ).
+In T4, synapses from all of the neurons were distributed in the manner previously reported
+(Takemura et al., 2017 ). In the case of T5, input synapses from Tm1, Tm2, Tm4, and TmY15 were
+distributed specifically at the middle region of the dendrites, in a pattern similar to that
+for inputs from Mi1, Tm3, and TmY15 to T4. Synaptic inputs from Tm9, on the other hand, localized
+to the tip and CT1 to the base of the dendritic arbors, similar to the distribution patterns of Mi9 and
+Mi4/CT1 synapses on T4 dendrites. Input synapses from LT33 and Tm23 were distributed at the tips
+to the middle of the dendritic arbors (
+Figure 4 ). The dendritic arbors of T4/T5 cells have presynaptic
+organelles (‘T-bars’) in addition to postsynaptic sites. We plotted the distribution of T-bar sites,
+which were restricted to the middle regions of the dendritic arbors in both T4 and T5 (
+Figure 4 ).
+With few exceptions, connections between T5 neurites occur between the same subtypes,
+for example from T5c to T5c (
+Figure 4 ), consistent with the previous report ( Takemura et al., 2017 )
+of subtype specificity among T4 cells. Like T4, T5 receives inputs from T5 of the same subtype local-
+ized to their dendritic tips.
+Among the neurons providing inputs to T4 and T5 cell dendrites (
+Figure 4 ), TmY15, LT33, and
+Tm23 lack clear columnar structures in the lobula or medulla. It is therefore unlikely that they can
+contribute to the function of a classical EMD circuit, which requires multiple parallel inputs from
+upstream modular neurons. We therefore plotted the distribution ranges of the columnar cell termi-
+nals — namely Mi1, Mi4, Mi9, Tm3, C3, and CT1 terminals for T4; and Tm1, Tm2, Tm4, Tm9, and
+CT1 terminals for T5 (
+Figure 5 ). For the Mi and Tm cell inputs to T4 and T5, the inputs from lamina
+cells (L1, L2, and L3) were omitted. Although Tm3 and Tm4 receive inputs from more than one col-
+umn in the medulla, there is no evidence of spatial bias between the input columns and the location
+of Tm3 or Tm4 cells, and the contribution of Tm3 and Tm4 to the EMD circuit is relatively small com-
+pared with those of other single-column cells, such as Mi1, Tm1, Tm2, and Tm9 (
+Takemura et al.,
+2008; Takemura et al., 2017 ). We therefore conclude that the distribution of the input sites on the
+T4 and T5 dendrites reflects positions corresponding to their visual receptive fields.
+The spatial distributions of inputs from these neurons to T4 and T5 were calculated by annotating
+the neurons according to the columns they occupy in the medulla and lobula. The shape of the
+Figure 3 continued
+indicated in ( D). (E) A partial reconstruction of LT33, a novel neuron in lobula stratum Lo1. ( F) Optic lobe and central brain projection pattern of an LT33
+cell visualized using multicolor stochastic labeling (MCFO; see Materials and methods). The arrowhead indicates the cell body, and the arrow shows the
+site of branching in the posterior lateral protocerebrum. ( G) Partial reconstruction of Tm23 in stratum Lo1. ( H, I) Tm23 cells and their projection patterns
+in the optic lobe visualized using MCFO. Images show two different views generated from the same confocal stack. Images in ( F), (H), and ( I) show
+resampled views generated from confocal stacks using Vaa3D. For clarity, the images in ( F) and ( H) were segmented to omit additional labeled cells
+(distinguished by labeling color and position) that are also present in the displayed volume. In ( I), red and green signals each represent single Tm23
+cells. Scale bars: ( A) 20 mm; (B), (C), (E), (G) 10 mm; (D) 5 mm; (F), (H), (I) 20 mm.
+DOI: https://doi.org/10.7554/eLife.40025.004
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 7 of 19
+Research article Neuroscience
+columns and the array formed by their cross-sections differ in different strata and according to their
+location in the visual field. The array of columns is considerably compressed in the A–P axis in M10
+and Lo1 when compared with the hexagonal array of the compound eye and the corresponding
+array of underlying lamina cartridges (
+Figure 5A–D ), so the projected visual field is distorted in these
+strata despite the conservation of their retinotopy. For analysis, we therefore approximated the col-
+umn arrays in M10 and Lo1 to a regular hexagonal array. When the spatial displacements of the dif-
+ferent types of input neurons were calculated using information from the distribution of proofread
+synapses (
+Figure 5E , left two columns),their spatial displacements became even clearer, so that
+inputs from different neuron types were obviously clustered into three groups in each of T4 and T5,
+with the spaces between the centers of the clusters roughly corresponding to the distance between
+neighboring columns.
+Evaluation of automated synapse prediction
+To identify input partners for T4 and T5, in addition to tracing and identifying the neurons them-
+selves, we also needed to annotate their synaptic sites rapidly, accurately and comprehensively. For
+this task, we initially identified both pre- and postsynaptic sites by recruiting an automated synapse
+prediction algorithm, which annotated hundreds of thousands of synaptic sites efficiently. To evalu-
+ate the quality of the prediction algorithm, and to check if such predicted synapses could be used
+for connectivity and functional analyses, we then exhaustively checked the predicted input and
+Figure 4. Distribution of synaptic sites over T4 and T5 dendritic arbors. Proofread synapses are plotted on the dendritic arbors of a T4c (top panels)
+and T5c (bottom panels) cell. Puncta are postsynaptic sites (inputs to the T4/T5 cells) except those shown as ‘Presynapse’, which illustrate the positions
+of T-bar, output sites. Both T4c and T5c detect upward motion, and other subtypes of T4 and T5 cells demonstrate similar distribution patterns(not
+shown). Pink stars indicate the first branch point of the arbor. PD, preferred direction.
+DOI: https://doi.org/10.7554/eLife.40025.005
+Shinomiya et al. eLife 2019;8:e40025. DOI: https://doi.org/10.7554/eLife.40025 8 of 19
+Research article Neuroscience

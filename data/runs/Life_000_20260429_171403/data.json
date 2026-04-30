@@ -1,0 +1,85 @@
+{
+  "run_id": "Life_000_20260429_171403",
+  "task_id": "Life_000",
+  "timestamp": "20260429_171403",
+  "status": "completed",
+  "agent_name": "ResearchHarness (GPT-5.5)",
+  "model": "GPT-5.5",
+  "model_display": "GPT-5.5",
+  "duration_seconds": 1349,
+  "cost_usd": 5.05875,
+  "score": {
+    "run_id": "Life_000_20260429_171403",
+    "task_id": "Life_000",
+    "agent_name": "ResearchHarness (GPT-5.5)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "The study successfully developed machine-learning-optimized hydrogels (specifically R1-max) that achieve an underwater adhesive strength ($F_a$) exceeding 1 MPa on glass substrates, representing an or",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "The criterion is objective (claims about achieving >1 MPa adhesion with a specific hydrogel, R1-max, and improvement over prior reports). The report explicitly states that no >1 MPa (1000 kPa) adhesion was observed in the provided data, does not mention R1-max at all, and therefore cannot demonstrate the stated achievement or its improvement over literature. It effectively documents failure to meet the criterion rather than satisfying it."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "A specific combination of hydrophobic (BA), aromatic (PEA), and cationic (ATAC) monomers was identified as the key design principle ('Golden Triangle') for robust underwater adhesion, leveraging hydro",
+        "weight": 0.1,
+        "score": 5,
+        "reasoning": "The report mentions individual monomers (including BA, ATAC, PEA) only in passing via feature names and a single example candidate composition, but it never identifies the specific trio BA–PEA–ATAC as a unified ‘Golden Triangle’ design principle. It also does not articulate the mechanistic explanation that robust adhesion arises from combining hydrophobic and electrostatic interactions, nor does it state this combination as the core design rule. Thus, the required triad identification plus mechanistic explanation is effectively absent."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "Ideal random copolymerization, utilizing monomers with reactivity ratios close to unity, is proven to be essential for statistically replicating protein sequence features; non-ideal synthesis leads to",
+        "weight": 0.1,
+        "score": 0,
+        "reasoning": "This is a qualitative/mechanistic criterion (importance of ideal random copolymerization and reactivity ratios near unity), so Mode B applies. The report does not mention ideal random copolymerization, reactivity ratios, or composition drift at all, nor does it contrast ideal vs non-ideal synthesis; it focuses purely on data-driven composition–adhesion modeling. Thus the specified mechanistic point is completely absent."
+      },
+      {
+        "index": 3,
+        "type": "image",
+        "content": "Figure 1 illustrates the data-driven workflow and quantitatively compares the adhesive strength of the new DM-driven and ML-driven hydrogels against conventional literature values.",
+        "weight": 0.15,
+        "score": 3,
+        "reasoning": "This criterion is subjective (Mode B) because it concerns whether the workflow loop and comparative strength visualization are qualitatively reproduced. The AI figures do not depict the 3-step Data Mining → Experiment → Machine Learning loop at all, nor do they provide a grouped comparison of conventional vs DM-driven vs ML-driven adhesive strengths in MPa that visually highlights the performance gap. Instead they show feature importance, optimization trajectories, distributions, and predictions in kPa, so the key visual/technical elements of Figure 1 are essentially absent."
+      },
+      {
+        "index": 4,
+        "type": "image",
+        "content": "Figure 2 presents the bioinformatics analysis of 24,707 adhesive proteins, identifying 'relative composition' and specific functional class neighbors as the critical design features that guided the mo",
+        "weight": 0.1,
+        "score": 5,
+        "reasoning": "Mode B applies because the criterion concerns qualitative bioinformatics analysis and visualization of relative composition features. The AI-generated figures focus on model performance, optimization, and feature importance in hydrogel datasets, and do not reproduce the protein-level data mining, block-length heatmaps, or pairwise functional-class composition heatmaps that underpin the 'relative composition' hypothesis and its link to monomer selection. As a result, the required bioinformatics-style analysis is essentially absent rather than loosely approximated."
+      },
+      {
+        "index": 5,
+        "type": "image",
+        "content": "Figure 3 displays the screening results of the initial 180 bio-inspired hydrogels, validating that data-mining-derived formulations can yield adhesion up to 147 kPa (G-max).",
+        "weight": 0.1,
+        "score": 5,
+        "reasoning": "Mode A applies, as the figure should display the screening results and distribution of adhesive strength for the initial ~180 hydrogels, including the maximum G-max of 147 kPa and sample-wise variability. The AI’s plots do not reproduce the bar chart over 180 samples; instead they show summary histograms and other unrelated analyses, and they neither highlight the specific G-max value nor visualize per-sample screening as in Fig. 3e. Thus the key visual/technical aspects of the original figure are essentially missing."
+      },
+      {
+        "index": 6,
+        "type": "image",
+        "content": "Figure 4 demonstrates the Machine Learning optimization process, where UMAP visualization reveals that the RFR-GP model explored novel chemical spaces distinct from the training data, and SHAP analysi",
+        "weight": 0.15,
+        "score": 2,
+        "reasoning": "This criterion is qualitative (Mode B) since it concerns whether the figures demonstrate exploration of new chemical space via UMAP and confirm feature importance via SHAP. The AI report includes no UMAP visualization at all and explicitly states that SHAP was not run, instead providing permutation and native RF importances, so it fails to demonstrate extrapolation or SHAP-based importance of BA, PEA, and ATAC. Thus the key visual/technical aspects of Figure 4 from the paper are essentially absent."
+      },
+      {
+        "index": 7,
+        "type": "image",
+        "content": "Figure 5 characterizes the final super-adhesive hydrogels (R1-max), showcasing their mechanical properties, universal adhesion across diverse substrates (metals, plastics, ceramics), and exceptional d",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "Mode B applies: the criterion concerns whether the figures characterize final super-adhesive hydrogels (R1-max) with mechanical behavior, multi-substrate adhesion, and long-term durability. The AI-generated figures instead show model performance, feature importance, optimization trajectory, compositions, and predicted strengths; there are no stress–strain curves, no multi-substrate adhesion bar charts, and no durability evidence. Thus the required aspects of Fig. 5 are entirely absent."
+      }
+    ],
+    "total_score": 2.25,
+    "total_weight": 1.0
+  },
+  "report": "# Data-driven de novo design analysis of underwater adhesive hydrogels\n\n## Abstract\n\nThis report analyzes the provided hydrogel composition workbooks to evaluate whether monomer-composition features derived from protein-like sequence classes can predict underwater adhesive strength and guide de novo candidate design. The verified initial dataset contains **184 formulations**; **184** have a glass-adhesion target used for model fitting. A 3-fold cross-validation benchmark compared linear and tree-ensemble regressors; Gaussian-process regression was retained for the de novo expected-improvement design stage. The strongest validation result was obtained by **ExtraTrees** (RMSE **25.92 kPa**, MAE **17.05 kPa**, R² **0.68**). Optimization tables reached a maximum measured value of **353.29 kPa**. Because all workbook target columns are explicitly labelled kPa, the available data do **not** directly verify the requested **>1 MPa** criterion; the report therefore separates the strict >1000 kPa interpretation from a practical high-strength marker of >100 kPa used to inspect the observed trajectory.\n\n## Methodological contract and data sources\n\nThe task asks for de novo synthetic hydrogel design by statistically replicating sequence-feature/monomer-composition patterns of natural adhesive proteins. The workspace README names random-forest regression (RFR), Gaussian-process regression (GP), expected improvement, and round-wise sequential model-based optimization as the relevant modeling family. I therefore implemented a compact reproducible analysis with:\n\n1. schema inspection and cleaning of the verified 184-formulation workbook;\n2. 3-fold cross-validation of RFR and additional baselines, with GP used in the design/acquisition stage;\n3. round-wise evaluation of the provided EI/PRED optimization workbooks;\n4. model-based de novo candidate generation from Dirichlet distributions centered on high-performing compositions, scored by RF prediction, GP prediction/uncertainty, expected improvement, and distance from the high-performing composition manifold;\n5. permutation importance and SHAP attribution when available.\n\nRelated-work PDFs could not be parsed by the available PDF reader in this runtime. The task contract was therefore derived from `INSTRUCTIONS.md` and `data/README.md`; this limitation is recorded in `outputs/related_work_contract.json`.\n\n## Data overview\n\nThe six input composition features are Nucleophilic-HEA, Hydrophobic-BA, Acidic-CBEA, Cationic-ATAC, Aromatic-PEA, and Amide-AAm. The primary target used here is `Glass_max_kPa`, defined as the maximum of the available 10 s and 60 s glass adhesion measurements. The best initial formulation in the verified data was **GPRFR-2** with **304.60 kPa**.\n\n![Data overview](images/figure_1_data_overview.png)\n\nFigure 1 summarizes the initial response distribution, mean monomer composition, and univariate correlations with glass adhesion. The distribution shows that the supplied values sit mostly in the tens-to-hundreds of kPa range; this is central to the validation caveat about the >1 MPa design target.\n\n## Predictive modeling results\n\nThe model comparison used identical 3-fold splits for all cross-validated methods. Metrics are saved in `outputs/model_metrics.csv`; cross-validated predictions are saved in `outputs/cv_predictions.csv`.\n\n![Model validation](images/figure_2_model_validation.png)\n\nThe best model was **ExtraTrees**, with R² **0.68**, RMSE **25.92 kPa**, MAE **17.05 kPa**, Pearson r **0.83**, and Spearman r **0.83**. The finite size of the initial dataset and the compositional nature of the features limit extrapolation reliability, especially for claims at 1 MPa, well outside the observed range.\n\n## Optimization trajectory and threshold assessment\n\nThe final optimization workbooks were read from both provided files and both selection sheets (`EI` and `PRED`). Inferred round labels follow the README's round-size progression: approximately 109 round-1 additions, 27 round-2 additions, and remaining rows as round 3 per file/sheet.\n\n![Optimization trajectory](images/figure_3_optimization_trajectory.png)\n\nAcross the available optimization tables, the maximum measured `Glass (kPa)_max` was **353.29 kPa**. Rows exceeding the practical 100 kPa marker totaled **283**, whereas rows exceeding the strict >1 MPa threshold (1000 kPa) totaled **0**. Thus, the optimization evidence supports improved high-kPa adhesion but does not demonstrate robust >1 MPa adhesion under the workbook unit labels.\n\n## Interpretability\n\n![Interpretability](images/figure_4_interpretability.png)\n\nPermutation importance for the trained random forest identifies **Cationic-ATAC** as the largest contributor to predictive accuracy, followed by Nucleophilic-HEA, Hydrophobic-BA. SHAP status: **not_run**. These attributions are model-based associations, not causal monomer mechanisms; however, they help align candidate generation with composition regions that the data-supported model considers predictive.\n\n## De novo candidate design\n\nCandidate compositions were generated by statistically replicating the high-performing observed composition manifold. Specifically, I sampled candidate vectors on the six-component simplex from Dirichlet distributions centered on the top 10% of initial formulations, supplemented with broader hydrophobic/aromatic/cationic-biased samples. Candidates were ranked by a combined score using RF predicted strength, GP mean prediction, GP expected improvement over the best observed initial value, and a penalty for standardized distance from the high-performing centroid. The top 50 candidates are saved in `outputs/design_candidates.csv`. A Gaussian-process surrogate is used here to estimate uncertainty and expected improvement rather than as a cross-validated comparator, after the initial full GP cross-validation proved too slow for the benchmark runtime.\n\n![Design candidates](images/figure_5_design_candidates.png)\n\nThe top-ranked candidate has composition: HEA **0.031**, BA **0.508**, CBEA **0.000**, ATAC **0.053**, PEA **0.354**, AAm **0.053**. Its RF prediction is **265.9 kPa**, and its GP prediction is **102.8 ± 110.7 kPa**. The design list should be interpreted as a prioritized experimental queue rather than proof of >1 MPa performance.\n\n## Validation and limitations\n\n### Directly verified from workspace data\n\n- Workbook schemas, columns, and target labels were read from the local Excel files.\n- The initial cleaned dataset, model metrics, optimization summaries, candidate table, and interpretability tables are exported under `outputs/`.\n- All figures referenced in this report are saved as PNG files in `report/images/`.\n\n### Derived from related instructions rather than parsed papers\n\n- The named use of RFR, GP, expected improvement, and round-wise optimization comes from `data/README.md`, because `ReadPDF` failed on the related-work PDFs in this environment.\n\n### Assumptions and limitations\n\n- The task states a target of >1 MPa, but the available target columns are labelled kPa and have maxima far below 1000 kPa. I therefore report the strict >1 MPa count directly and separately report >100 kPa as a practical high-strength marker.\n- Candidate designs are in silico extrapolations. Experimental synthesis and underwater adhesion testing are required to validate robustness.\n- Round labels for optimization rows are inferred from README-described dataset sizes, because the final workbooks do not include explicit round identifiers.\n- Composition fractions sum to one and are treated as direct monomer-composition descriptors; no additional sequence-level features were available beyond these six classes.\n\n## Reproducibility\n\nRun the analysis with:\n\n```bash\npython3 code/analyze_hydrogels.py\n```\n\nPrimary artifacts:\n\n- `outputs/data_overview.json`\n- `outputs/model_metrics.csv`\n- `outputs/optimization_summary.csv`\n- `outputs/design_candidates.csv`\n- `outputs/feature_importance.csv`\n- `outputs/claim_recovery_table.csv`\n- `report/images/figure_1_data_overview.png` through `figure_5_design_candidates.png`\n\n## Conclusion\n\nThe provided data support a composition-to-adhesion modeling workflow and identify high-performing hydrophobic/aromatic-rich composition regions for de novo prioritization. The best cross-validated model achieves moderate predictive accuracy on the 184-formulation dataset, and the final optimization data contain many high-kPa candidates. However, the local evidence does not verify robust >1 MPa adhesion because the measured values in the provided workbooks remain below 1000 kPa. The most defensible next step is experimental testing of the exported top-ranked candidates, with explicit MPa-scale underwater adhesion validation.\n"
+}

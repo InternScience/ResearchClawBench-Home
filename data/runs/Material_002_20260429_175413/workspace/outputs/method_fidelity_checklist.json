@@ -1,0 +1,11 @@
+{
+  "MACE_MP_0_exact_reproduction": {
+    "required": ["MACE-MP-0b3-medium.model checkpoint", "mace/torch runtime", "ASE calculator using MACE model", "full benchmark protocols"],
+    "available_in_workspace": ["benchmark geometry/protocol text", "ASE installed during session"],
+    "not_available": ["checkpoint file", "torch", "mace package"],
+    "status": "not exact; surrogate protocol implementation used"
+  },
+  "water_RDF": {"required_steps": ["build 32-water cubic box", "simulate at 330 K", "compute O-O/O-H/H-H RDF"], "implemented_fallback": "deterministic pseudo-MD liquid-like trajectory using exact box, molecule count and RDF estimator"},
+  "adsorption_scaling": {"required_steps": ["build fcc(111) slabs", "place O/OH at fcc hollow", "relax", "compute adsorption energies and O-vs-OH scaling"], "implemented_fallback": "ASE slab geometry plus deterministic analytic energy model and scaling regression"},
+  "CRBH20_barriers": {"required_steps": ["evaluate reactant and transition-state energies", "barrier = TS - reactant", "compare to DFT references"], "implemented_fallback": "deterministic bond-strain surrogate calibrated only to simplified geometries; DFT refs retained as external comparator"}
+}

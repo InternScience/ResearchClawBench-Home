@@ -1,0 +1,29 @@
+{
+  "name": "UniBioDiff-Complex prototype",
+  "inputs": {
+    "protein": "amino-acid sequence tokens plus optional residue/atom coordinates or templates",
+    "nucleic_acid": "DNA/RNA base sequence tokens with backbone/base atom graph priors",
+    "small_molecule": "atom/bond graph from SDF/SMILES with 3D or generated conformer coordinates"
+  },
+  "representations": [
+    "heterogeneous atom/residue graph with molecule-type embeddings",
+    "pair tensor over all biological tokens for intra- and inter-molecular attention",
+    "SE(3)-equivariant coordinate state x_t for diffusion denoising"
+  ],
+  "core_blocks": [
+    "sequence/graph encoders",
+    "multimodal pair attention inspired by Transformer and AlphaFold-style pair updates",
+    "geometric message passing over covalent and spatial edges",
+    "diffusion score network predicting coordinate noise/score at timestep t",
+    "confidence/contact heads for pLDDT-like local quality and interface probabilities"
+  ],
+  "training_losses": [
+    "denoising score matching or epsilon prediction on atom/residue coordinates",
+    "FAPE/RMSD-aligned coordinate losses where correspondence is fixed",
+    "symmetry-aware Hungarian ligand loss for indistinguishable atoms",
+    "distogram/contact cross-entropy for interfaces",
+    "bond/angle/stereochemistry violation penalties"
+  ],
+  "inference": "sample coordinates from noise with iterative denoising, optional recycling/refinement, then chemistry/geometry relaxation",
+  "evaluation_protocol": "protein CA RMSD, ligand symmetry-aware heavy-atom RMSD, contact precision/recall, clash/bond-geometry checks, and confidence calibration when predictions are available"
+}

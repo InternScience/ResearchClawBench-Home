@@ -1,0 +1,42 @@
+{
+  "paper_000": {
+    "identified_as": "Saintilan et al. 2023, Widespread retreat of coastal habitat is likely at warming levels above 1.5 C",
+    "task_relevant_points": [
+      "Relative sea-level rise (RSLR) and vertical adjustment are central controls on coastal wetland/mangrove persistence.",
+      "Paper reports a narrowing safe operating space and mentions >=7 mm/yr RSLR as a stress threshold relevant to mangroves and coral reefs.",
+      "Useful for classifying SLR risk in this task."
+    ]
+  },
+  "paper_001": {
+    "identified_as": "Dabala et al. 2023, Priority areas to protect mangroves and maximise ecosystem services",
+    "task_relevant_points": [
+      "Conservation priority analysis should consider ecosystem services in addition to biodiversity.",
+      "Relevant ecosystem services include coastal protection, carbon storage/sequestration, and fisheries benefits.",
+      "This workspace lacks direct service rasters, so area-weighted service exposure is a transparent proxy."
+    ]
+  },
+  "paper_002": {
+    "identified_as": "Krauss and Osland 2020, Tropical cyclones and the organization of mangrove forests: a review",
+    "task_relevant_points": [
+      "Cyclone impacts on mangroves depend on wind, surge, proximity/direction, previous disturbance, and recovery state.",
+      "Mangroves provide coastal protection but can be damaged by severe cyclones.",
+      "Supports using cyclone proximity/intensity frequency as exposure, with limitations."
+    ]
+  },
+  "paper_003": {
+    "identified_as": "Mo, Simard and Hall 2023, Tropical cyclone risk to global mangrove ecosystems: potential future regional shifts",
+    "task_relevant_points": [
+      "Defines mangrove TC risk as combining damage and frequency.",
+      "Uses IBTrACS category 1-5 storms, 1 degree annual frequency maps, and damage from vegetation index.",
+      "Finds hotspots in Gulf of Mexico/Caribbean, South Indian Ocean, Northwest Pacific; intense category 4-5 storms contribute 97% of global damage risk; future 2C global risk change modest (+3%) but regional shifts >10%."
+    ]
+  },
+  "paper_004": {
+    "identified_as": "Kropf et al. 2023, Global vulnerability and resilience of coastal ecosystems to tropical cyclones in a warming climate",
+    "task_relevant_points": [
+      "Frames TC risk in IPCC climate-risk terms and emphasizes shifts in frequency/intensity relative to ecosystem recovery regimes.",
+      "Uses wind fields from probabilistic TC tracks and low/middle/high wind categories.",
+      "Supports a regime-shift metric based on deviation of recent cyclone exposure from historical baseline."
+    ]
+  }
+}

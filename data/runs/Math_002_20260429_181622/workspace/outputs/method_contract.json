@@ -1,0 +1,25 @@
+{
+  "task": "Multi-Agent Path Finding on provided grid/task instances",
+  "named_goal": "Hybrid algorithm integrating Multi-Agent Reinforcement Learning into Large Neighborhood Search",
+  "methodological_commitments": [
+    "collision-free paths without vertex or edge-swap collisions",
+    "compare hybrid LNS against existing/plausible baselines",
+    "early-stage MARL-style collision reduction and late-stage prioritized planning for efficiency",
+    "evaluate success rate, runtime, collisions, path cost/makespan across map families"
+  ],
+  "planned_implementation": "bounded faithful approximation: learned/policy-guided conflict neighborhood selection inside LNS using local conflict features and heuristic weights, followed by prioritized space-time repair; exact online deep MARL training only if dependencies/time permit",
+  "primary_metrics": [
+    "success_rate",
+    "residual_vertex_collisions",
+    "residual_swap_collisions",
+    "sum_of_costs",
+    "makespan",
+    "runtime_seconds"
+  ],
+  "outputs_required": [
+    "code",
+    "outputs tables/json",
+    "PNG figures",
+    "report/report.md"
+  ]
+}

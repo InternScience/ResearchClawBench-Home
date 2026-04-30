@@ -1,0 +1,6 @@
+claim,supporting_artifact,evidence,status
+GP calibration improves held-out prediction relative to raw MD Tg,outputs/gp_calibration_metrics.json,GP MAE 25.5 K vs raw MD MAE 72.1 K,verified_from_workspace
+Calibrated vitrimer Tg library spans broad target range for inverse design,outputs/vitrimer_calibrated_predictions.csv,Predicted mean Tg range 109.7-795.2 K,verified_from_workspace
+Candidate panel identifies acid/epoxide systems near requested Tg targets,outputs/selected_candidate_panel.csv,25 selected candidates across 5 targets,verified_from_workspace
+Graph VAE requirement is only approximately satisfied,outputs/dependency_check.json; outputs/vae_generator_summary.json; outputs/method_fidelity_checklist.json,torch_geometric unavailable; descriptor VAE/recombination fallback used,limitation
+Experimental validation is proposed but not performed,outputs/selected_candidate_panel.csv,No wet-lab measurements available in workspace,limitation

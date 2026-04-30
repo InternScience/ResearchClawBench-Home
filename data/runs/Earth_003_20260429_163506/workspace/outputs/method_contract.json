@@ -1,0 +1,15 @@
+{
+  "task": "Assess and document a cascade machine-learning global weather forecasting system for ERA5-like inputs and FuXi forecast output using available workspace artifacts.",
+  "input_contract": {
+    "intended": "Two consecutive 6-hour global atmospheric states with 70 channels: 5 upper-air variables at 13 pressure levels plus 5 surface variables.",
+    "available_file": "data/20231012-06_input_netcdf.nc"
+  },
+  "forecast_contract": {
+    "intended": "15-day global forecasts at 6-hour temporal resolution using three specialized U-Transformer models to reduce error accumulation, comparable to ECMWF ensemble mean.",
+    "available_file": "data/006.nc",
+    "available_limitation": "Workspace contains only one 6-hour FuXi forecast step, not a complete 15-day forecast sequence or ECMWF ensemble/ERA5 verification truth. The report therefore validates structure and one-step diagnostics, and treats 15-day/ECMWF comparison as a design and literature-grounded protocol rather than an observed result."
+  },
+  "named_methods": ["cascade forecasting", "three specialized U-Transformer models", "FuXi output", "latitude-weighted RMSE", "latitude-weighted ACC", "comparison to ECMWF ensemble mean"],
+  "primary_metrics": ["latitude-weighted RMSE", "latitude-weighted anomaly correlation coefficient", "global/hemispheric/spatial diagnostics", "increment growth from input T+0 to forecast T+6"],
+  "required_caveat": "No model training is possible from a single initialized case and no direct skill verification beyond structural/self-consistency is possible without target ERA5 future states."
+}

@@ -1,0 +1,5 @@
+claim,artifact,support,status
+The workspace sample contains a protein-ligand complex reference but no nucleic acid data or prediction files.,outputs/data_overview.json,protein and ligand counts plus available file inventory,directly verified
+"The proposed framework preserves protein, nucleic-acid, and small-molecule modalities and uses diffusion-style coordinate denoising.",outputs/framework_spec.json,"architecture specification with inputs, representations, losses, inference",designed artifact
+"Evaluation code can compute protein CA RMSD, symmetry-aware ligand RMSD proxy, and interface contact counts.",outputs/structure_metrics.json; outputs/interface_contacts_6A.csv,saved metrics and contacts from supplied coordinates,directly computed
+Exact trained predictive accuracy and AlphaFold 3 comparison are not claimed.,outputs/dependency_check.json; outputs/comparison_table.csv,limitation recorded because training corpus/AF3 predictions absent,limitation

@@ -1,0 +1,14 @@
+{
+  "canonical_EDE_definition": "Axion-like scalar field with early cosmological-constant behavior before critical epoch, fractional density f_EDE at a_c or z_c, and rapid dilution after becoming dynamical; acoustic effect is reduced sound horizon allowing higher CMB-inferred H0.",
+  "non_negotiable_steps": [
+    "Track/report f_EDE and log10(a_c) (or z_c conversion) when discussing EDE.",
+    "Compare to ΛCDM baseline under same CMB+DESI summary.",
+    "Separate early-time EDE shifts from late-time w0wa shifts.",
+    "State that Gaussian posteriors are approximations from summary means/errors, not chain samples."
+  ],
+  "implemented_scope": "Summary-level reproduction and diagnostic plots; no raw Planck/ACT/DESI likelihood fit.",
+  "deviations": [
+    "No CLASS/MontePython MCMC because raw likelihoods and chains are absent.",
+    "Δχ² for target DESI DR2 combination not present in local data file; contextual Δχ² values extracted from related work are reported separately."
+  ]
+}

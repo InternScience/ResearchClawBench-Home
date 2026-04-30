@@ -1,0 +1,14 @@
+{
+  "task": "Network intrusion detection on NF-UNSW-NB15-v2_3d.pt",
+  "named_framework": "DIDS-MFL: disentangled dynamic intrusion detection with multi-scale representation fusion",
+  "methodological_commitments": [
+    "Binary benign-vs-attack classification",
+    "Multi-class attack-type classification",
+    "Known, unknown/zero-shot style, and few-shot attack scenario evaluation",
+    "Statistical/representational disentanglement of entangled traffic features",
+    "Dynamic graph diffusion for spatiotemporal/topological aggregation",
+    "Multi-scale representation fusion for few-shot generalization",
+    "Compare against simpler NIDS baselines and validate consistency across attack types"
+  ],
+  "planned_fallback": "If exact DIDS-MFL architecture is infeasible from the single PT dataset, implement a faithful lightweight approximation: disentangled feature branches, kNN graph diffusion over flows, multi-scale fused embeddings, and prototype/linear heads, with deviations documented."
+}

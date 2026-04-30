@@ -1,0 +1,5 @@
+claim,supporting_artifact
+"The dataset contains 2,759 cells and 241 protein imaging features with annotated age, phase, state, and batch metadata.",outputs/data_overview.json; report/images/fig1_data_overview.png
+The full-feature reference trajectory is biologically oriented: pseudotime Spearman correlation with annotated age = 0.141.,outputs/cell_trajectory.csv; report/images/fig2_trajectory_embedding.png
+"The top 20 dynamic features preserve the reference pseudotime with mean |Spearman| 0.793, compared with 0.665 for high-variance features and 0.707±0.055 for random panels.",outputs/method_comparison_table.csv; report/images/fig4_validation_comparison.png
+"Selected molecules show interpretable, smooth expression programs across trajectory bins.",outputs/bin_feature_profiles.csv; report/images/fig3_feature_dynamics.png; report/images/fig5_selected_feature_heatmap.png

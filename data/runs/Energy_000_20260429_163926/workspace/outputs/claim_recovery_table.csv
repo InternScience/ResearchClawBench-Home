@@ -1,0 +1,7 @@
+claim,artifact,status
+"The workspace contains CS2_36, NASA PCoE, and Oxford data usable for discharge-curve validation.",outputs/data_overview.csv,verified
+A Latin-hypercube multi-parameter ECAT-inspired search space was generated and used to train an ANN surrogate.,outputs/parameter_search_space.csv; outputs/surrogate_metrics.json,verified
+"The ANN surrogate accurately approximates the reduced-order simulator over voltage, thermal, and capacity outputs.",outputs/surrogate_metrics.json; report/images/surrogate_performance.png,verified
+The GA-style ANN-assisted search improves the training objective relative to an LHS-only random search baseline.,outputs/method_comparison.csv; report/images/search_convergence.png,verified
+Identified internal parameters are reported with bounds and units.,outputs/identified_parameters.csv,verified
+"External validation was evaluated on NASA and Oxford where available, but this is approximate because no full ECAT simulator is provided.",outputs/validation_metrics.csv; report/images/validation_curves.png,limitation

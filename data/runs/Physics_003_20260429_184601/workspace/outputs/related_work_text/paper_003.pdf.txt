@@ -1,0 +1,800 @@
+ARTICLE
+Received 4 Dec 2014 | Accepted 26 Mar 2015 | Published 11 May 2015
+Theory of Floquet band formation and local
+pseudospin textures in pump-probe photoemission
+of graphene
+M.A. Sentef 1,2, M. Claassen 3, A.F. Kemper 4, B. Moritz 1,5, T. Oka 6, J.K. Freericks 7 & T.P. Devereaux1,3
+Ultrafast materials science promises optical control of physical properties of solids.
+Continuous-wave circularly polarized laser driving was predicted to induce a light-matter
+coupled state with an energy gap and a quantum Hall effect, coined Floquet topological
+insulator. Whereas the envisioned Floquet topological insulator requires high-frequency
+pumping to obtain well-separated Floquet bands, a follow-up question regards the creation of
+Floquet-like states in graphene with realistic low-frequency laser pulses. Here we predict that
+short optical pulses attainable in experiments can lead to local spectral gaps and novel
+pseudospin textures in graphene. Pump-probe photoemission spectroscopy can track these
+states by measuring sizeable energy gaps and Floquet band formation on femtosecond time
+scales. Analysing band crossings and pseudospin textures near the Dirac points, we identify
+new states with optically induced nontrivial changes of sublattice mixing that leads to Berry
+curvature corrections of electrical transport and magnetization.
+DOI: 10.1038/ncomms8047
+1 Stanford Institute for Materials and Energy Sciences (SIMES), Stanford University and SLAC National Accelerator Laboratory, Menlo Park, Californ ia 94025,
+USA. 2 HISKP University of Bonn, Bonn 53115, Germany. 3 Geballe Laboratory for Advanced Materials, Stanford University, Stanford, California 94305, USA.
+4 Lawrence Berkeley National Lab, 1 Cyclotron Road, Berkeley, California 94720, USA. 5 Department of Physics and Astrophysics, University of North Dakota,
+Grand Forks, North Dakota 58202, USA. 6 Department of Applied Physics, University of T okyo, T okyo, 113-8656, Japan. 7 Department of Physics,
+Georgetown University, Washington, DC 20057, USA. Correspondence and requests for materials should be addressed to M.A.S.
+(email: michael.sentef@hiskp.uni-bonn.de) or to T.P.D. (email: tpd@stanford.edu).
+NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications 1
+& 2015 Macmillan Publishers Limited. All rights reserved.
+T
+he ultrafast optical manipulation of materials by femtose-
+cond laser pulses is rapidly becoming a major guiding
+theme in condensed matter physics 1–3 . At the same time,
+the quest for novel topological states of matter triggered
+enormous research activity since the discovery of topological
+insulators
+4. Merging both of these vibrant ﬁelds, a recent work
+reported the coupling of short laser pulses to surface Dirac
+fermions in the topological insulator Bi 2Se3 (ref. 5). This work
+demonstrated the creation of Floquet-like sidebands during
+irradiation as well as the opening of a small band gap at the
+surface state Dirac point for circular light polarization.
+Time-reversal symmetry protects massless Dirac fermions on
+the surface of topological insulators 6,7 and, in combination with
+inversion symmetry, also in graphene in the absence of spin-orbit
+coupling8. In a milestone paper, Haldane envisioned that
+breaking either or both of these symmetries would open a gap
+at the Dirac points in graphene, allowing one to tune between a
+trivial insulator and a Chern insulator 9. While equilibrium band
+gap engineering has become a major theme since the ﬁrst
+synthesis of monolayer graphene, it was only recently proposed
+that circularly polarized, high-frequency laser light could turn
+trivial equilibrium bands into topological nonequilibrium Floquet
+bands10–25 , coined Floquet topological insulator (FTI).
+The FTI concept is based on two things: ﬁrst, in the limit of
+continuous laser driving at frequency O, the temporal periodicity
+allows one to employ a repeated quasi-energy zone scheme with a
+temporal Brillouin zone of size O. Second, in the high-frequency
+limit, deﬁned by O being larger than the electronic bandwidth, these
+repeated zones contain well-separated copies of the original
+electronic bands spaced by integer multiples nO, the so-called
+Floquet sidebands. The effect of the laser on the originaln ¼ 0b a n d
+manifold is perturbative in 1/ O. If the laser is circularly polarized,
+time-reversal symmetry is broken and an energy gap opens at the
+Dirac points in graphene due to the fact that photon emission and
+absorption processes do not commute. The FTI concept then
+follows from an exact mapping of driven graphene to the Haldane
+model, leading to a well-deﬁned nonzero Chern number.
+Whereas this envisioned high-frequency strong pumping limit
+that is required for nontrivial topological states is currently
+experimentally unattainable, a natural follow-up question regards
+the engineering of local spectral gaps in realistic pump-probe
+experiments. This leads to the question on which time scales the
+quasi-steady Floquet regime can be reached when continuous-
+wave driving is replaced by a short laser pulse. Moreover, it
+requires the investigation of the low-frequency regime, in which
+1/O perturbation theory is not applicable. In this regime, the
+overlap of different Floquet sidebands prevents a global
+topological classiﬁcation of states.
+In this work, we address these problems by simulating the real-
+time development of single-particle energy gaps in graphene
+coupled to short laser pulses, using realistic parameters for time-
+resolved, angle-resolved photoemission spectroscopy (tr-ARPES).
+We show that the tr-ARPES band structure shows well-deﬁned
+Floquet bands provided that a hierarchy of time scales is fulﬁlled
+between the duration of the pump-pulse, the duration of the
+probe-pulse, and the laser period: spump4sprobec2p‘ /O.W e
+predict the opening of a Dirac point gap and the formation of
+Floquet sidebands that form on femtosecond time scales. An
+important difference to the high-frequency limit arises from the
+overlap of Floquet sidebands. At frequency-dependent critical
+driving ﬁeld strengths, we ﬁnd a sequence of level crossings and
+energy gap closings at the Dirac points. The analysis of snapshots
+of pseudospin textures near the Dirac points allows us to identify
+optically induced nontrivial changes of sublattice mixing at these
+level crossing points, that manifest themselves in Berry curvature
+corrections of electrical transport and magnetization. Even
+though a global topology cannot be assigned to the low-frequency
+driven states, we show that the analysis of level crossings and
+energy gap closings leads to a classiﬁcation scheme in terms of
+local gaps and Berry curvatures.
+Results
+Haldane model. To set the stage for our results, we brieﬂy outline
+the basic ingredients for the low-energy physics of Haldane’s
+equilibrium model. We start from two Dirac cones with effective
+Hamiltonian vD(qxsx#tz þ qysy#I). Here vD is the Dirac point
+velocity, the Pauli matrices r label pseudospin arising from the
+graphene sublattices A and B, s labels the valley degree of free-
+dom corresponding to the Dirac cones around K and K0, and I is
+the 2 /C2 2 identity matrix. Electron spin can be neglected in the
+absence of spin-orbit coupling. Momentum q is measured from
+the respective Dirac points. The pseudospin content P(q) essen-
+tially measures orbital band content (see Supplementary Note 1).
+For instance, a pseudospin pointing along the þ z (up) direction
+means that the band is predominantly of A sublattice character,
+while a pseudospin pointing along the /C0 z (down) direction
+indicates mainly B sublattice character. Together with the
+winding of the Px and Py in-plane pseudospin components
+around the Dirac points, Pz determines the local Berry curvature
+Fð qÞ¼ @qx PqðÞ /C2 @qy PqðÞ
+/C0/C1
+/C1 PqðÞ 26.
+k
+E
+KK′
+Nontrivial: + 1/2 + 1/2 = 1Trivial: –1/2 + 1/2 = 0 /afii9797
+Pz( k)P z( k)
+Figure 1 | Graphene with band gap. (a) Graphene band energy ( E) versus momentum ( k) dispersion with a band gap D at the Dirac points. ( b) T rivial gap
+structure in Haldane’s model: The pseudospin Pz(k), indicated by up and down arrows, points in the same direction at both Dirac points K and K0. The
+winding number contributions cancel. This gap structure appears if inversion symmetry is broken, and time-reversal symmetry is intact. ( c) Nontrivial gap
+structure: Pz(k) points in opposite directions at K and K0, leading to a nonzero Chern number þ 1o r /C0 1. This gap structure appears if time-reversal
+symmetry is broken and inversion symmetry is intact.
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8047
+2 NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications
+& 2015 Macmillan Publishers Limited. All rights reserved.
+In Haldane’s model, an effective mass term msz#tk leads to
+an energy gap D ¼ 2m at the Dirac points (Fig. 1a). Its relative
+sign between K and K0 is determined by tk and depends on its
+origin: If the gap is induced by introducing a staggered sublattice
+potential breaking inversion symmetry, tk ¼ t0, implying that the
+effective mass term has the same sign at K and K0, and the out-of-
+plane pseudospin component Pz is the same at both Dirac points
+(Fig. 1b). By contrast, if the gap originates from breaking time-
+reversal symmetry, tk ¼ tz, hence Pz points in opposite directions
+(Fig. 1c).
+Time-resolved photoemission spectra of driven graphene .W e
+now come to the discussion of our nonequilibrium results. We
+start from the minimal honeycomb-lattice tight-binding model of
+graphene. We drive this system by coupling to a time-dependent,
+spatially homogeneous electric ﬁeld modelled as a time-
+dependent vector potential A(t), which couples to the electrons
+via Peierls substitution. The relativistic magnetic component of
+the light ﬁeld is neglected. The pump-pulse has a temporal width
+spump ¼ 165 fs, photon frequency O ¼ 1.5 eV (laser period of
+2.8 fs), with linear or circular light polarization, corresponding to
+a femtosecond pump-pulse. The ﬁeld strength is given by Amax,
+which is measured in units of the inverse carbon–carbon distance.
+For graphene, the conversion to the peak electric ﬁeld strength
+is Emax ¼ Amax /C2 1,060 mV Å/C0 1 for O ¼ 1.5 eV. We track the
+time- and momentum-resolved single-particle spectrum of the
+pump-driven electrons using a short 26 fs probe-pulse that emits
+photoelectrons and thereby generates a photocurrent 27,28,a s
+measured experimentally with tr-ARPES (see Methods).
+We ﬁrst characterize the nonequilibrium band structures using
+tr-ARPES spectra. Fig. 2 shows the tr-ARPES spectra on a
+momentum cut along the G /C0 K /C0 K0 direction near K at peak
+ﬁeld ( Dt ¼ 0 fs). We ﬁrst perform a calculation using pump pulses
+with linear polarization along the kx direction for two different
+ﬁeld strengths (Fig. 2a,b). One can see the formation of Floquet
+sidebands, but since the pump preserves time-reversal symmetry,
+the spectrum remains gapless at the Dirac point energy. The main
+effect of the linearly polarized pump is a shift of the Dirac point
+location from K towards K0, which increases with increasing ﬁeld
+strength. This Dirac point shift is due to the nonlinearity of bands
+and does not happen for perfect Dirac cones.
+Floquet spectrum and level crossings . Next, we turn to circular
+light polarization, thereby breaking time-reversal symmetry. In
+Floquet theory, the quasi-static eigenvalue spectrum at ﬁnite
+driving ﬁeld A shows copies of the original bands shifted by
+integer multiples of O, the so-called Floquet sidebands. Energy
+gaps of n-th order in the ﬁeld open at avoided level crossings of
+sidebands which differ by n photon energies. For circular light, an
+energy gap of second order in the ﬁeld opens at the Dirac point.
+In our tr-ARPES simulation, for a moderate ﬁeld strength and
+1.5 eV photons, an energy gap exceeding 100 meV at K is induced,
+accompanied by avoided level crossing gaps nearby (Fig. 2c). Due
+to the aforementioned hierarchy of time scales, we observe an
+excellent agreement of tr-ARPES spectra and the quasi-static
+Floquet band structure obtained by diagonalizing the Floquet
+Hamiltonian involving large numbers of sidebands (solid lines,
+see Supplementary Material).
+–0.2 –0.1 0  0.1  0.2
+–2
+–1.5
+–1
+–0.5
+0
+0.5
+1
+–2
+–1.5
+–1
+–0.5
+0
+0.5
+1
+–0.2 –0.1 0 0.1 0.2 –0.2 –0.1 0 0.1 0.2 –0.2 –0.1 0 0.1 0.2
+0
+1
+Amax = 0.20 (lin.) Amax = 0.10 Amax = 0.315
+Amax = 1.00Amax = 0.96Amax = 0.72Amax = 0.50
+Amax = 0.10 (lin.)
+/afii9853 [eV]/afii9853 [eV]
+(k–K)x [1/aC-C](k–K)x [1/aC-C](k–K)x [1/aC-C](k–K)x [1/aC-C]
+Figure 2 | T ransient angle-resolved photoemission spectrum. (a–h) tr-ARPES spectral intensity of irradiated graphene at peak ﬁeld (delay time Dt ¼ 0)
+versus binding energy o and momentum ( k /C0 K)x near the Dirac K point (vertical dashed lines) with Dirac point energy at /C0 0.5 eV (horizontal
+dashed lines) on a momentum cut along the G /C0 K /C0 K0 direction. The colour scheme varies between 0 (white) and maximal (red) spectral intensity.
+The pump laser ﬁeld is linearly polarized in panels ( a) and ( b), and circularly polarized in panels ( c–h). The pump-pulse ﬁeld strength Amax is varied
+between panels, with Amax values and laser polarizations as indicated. The driving frequency is 1.5 eV for all panels. The solid curves show the
+corresponding quasi-static Floquet band structures. The linearly polarized laser in panels ( a) and ( b) does not induce a band gap, whereas the
+circularly polarized laser in panels ( c–h) ﬁrst induces a band gap at the Dirac point and then leads to a sequence of level crossings (panels ( d) and
+(f)) and gap closing ( g) as the ﬁeld strength is increased.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8047 ARTICLE
+NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications 3
+& 2015 Macmillan Publishers Limited. All rights reserved.
+At larger ﬁeld strength (Fig. 2d), the Floquet bands move closer
+to each other and cross. They separate again and the Dirac point
+energy gap decreases (Fig. 2e). At even larger ﬁelds, there is
+another crossing between Floquet bands (Fig. 2f) before the Dirac
+point gap closes (Fig. 2g) and eventually reopens (Fig. 2h). At the
+largest ﬁeld strength shown here ( Amax ¼ 1.00), the bands are
+almost ﬂat, indicating that the ac Wannier–Stark limit is
+approached. This creation of ﬂat Wannier–Stark bands in the
+strong driving limit impedes the continuous growth of the gap
+with increasing ﬁeld strength.
+To analyse the pump photon frequency dependence of the
+Dirac point level crossings and gap closing in more detail, we
+show in Fig. 3 the ﬁrst two negative Floquet eigenvalues tracking
+the position of the ﬁrst two Floquet bands below ED. Fig. 3a shows
+the initial gap opening at O ¼ 1.5 eV, which is quadratic in the
+ﬁeld at small Amax, followed by two level crossings between the
+two Floquet bands indicated by two arrows. The gap at the Dirac
+point is then closed, indicated by the third arrow. For O ¼ 3.0 eV,
+the ﬁeld range between the two Floquet band level crossings
+increases (Fig. 3b), then decreases at O ¼ 4.5 eV, and ﬁnally
+vanishes for O ¼ 5.5 eV. The initial quadratic gap opening is the
+same for all photon frequencies due to the linearity of the
+graphene bands near the Dirac points. The differences between
+different photon frequencies at larger ﬁelds then arise from the
+nonlinearity of the bands further away from the Dirac points,
+which is speciﬁc to graphene.
+Local pseudospin textures near Dirac points . We now turn to
+the discussion of local pseudospin content. Fig. 4a–c present false
+color plots of the momentum-resolved pseudospin contents near
+the Dirac points for the driven system at O ¼ 1.5 eV. At small
+ﬁeld before the ﬁrst level crossing (Fig. 4a), the Px and Py com-
+ponents have two sign changes along a path around K,a s
+expected for weakly driven graphene. This nodal structure is
+directly related to the qxsx þ qysy term in the effective low-energy
+Hamiltonian introduced above, which shows that the Px com-
+ponent transforms like qx and the Py component transforms like
+qy. We coin this state S 1, with one nodal line and therefore a
+single pseudospin winding in the vicinity of the Dirac points.
+Importantly, the Pz component changes sign between K and K0,
+which is consistent with breaking time-reversal symmetry.
+–2
+–1
+0 0.5 1 1.5 2
+–3
+–2
+–1
+0 0.5 1 1.5 2
+–5
+–4
+–3
+–2
+–1
+0 0.5 1 1.5 2
+–6
+–5
+–4
+–3
+–2
+–1
+0 0.5 1 1.5 2
+/afii9821 = 1.5 eV
+/afii9853 [eV]/afii9853 [eV]/afii9853 [eV]/afii9853 [eV]
+/afii9821 = 3.0 eV
+/afii9821 = 4.5 eV
+/afii9821 = 5.5 eV
+Amax
+Figure 3 | Gap opening and level crossings in Dirac point Floquet spectra. First two negative Floquet quasi-energies o at the Dirac points, shown below
+the Dirac point energy ( /C0 0.5 eV) as a function of ﬁeld strength Amax for increasing driving frequencies varied between panels ( a–d), as indicated. The level
+crossings between the two Floquet bands are indicated by green arrows, the gap closings at higher ﬁeld strength for O ¼ 1.5 eV are indicated by violet
+arrows. Black circles in panel ( a) indicate the ﬁeld strengths used in Fig. 2c–h. The sequence of level crossings and gap closings implies nontrivial changes in
+the pseudospin contents due to changes in the sublattice mixing of orbital band contents.
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8047
+4 NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications
+& 2015 Macmillan Publishers Limited. All rights reserved.
+When the ﬁeld is increased through the ﬁrst level crossing
+(Fig. 4b), the character of the local pseudospin textures changes.
+The effective mass term still changes sign between K and K0.
+Remarkably, the Px and Py components double their winding
+number, changing sign four times along a path around K. We call
+this state S 2, since it has two nodal lines in the vicinity of the
+Dirac point, which cross at the Dirac point. Although the
+corresponding ARPES spectrum for the same parameters (Fig. 2f)
+has only little spectral weight near K in the Floquet bands close
+to ED, the pseudospin texture is well-deﬁned at all momenta
+considered here. Also, other sidebands have higher spectral
+weight, and each of the Floquet sidebands carries the same
+pseudospin information.
+A similar texture is also obtained for Bernal stacked bilayer
+graphene29 in a perpendicular electric ﬁeld 30. In this analogy, we
+stress that the doubled winding in bilayer graphene persists even
+when the energy gap induced by the electric ﬁeld goes to zero. By
+contrast, in our case the doubled winding state S 2 vanishes when
+the Floquet sidebands cross, and gives way to a single winding
+state S 1 in the low-ﬁeld limit. Also the effective perpendicular
+electric ﬁeld generated by the circularly polarized light pulse in
+our work points in opposite directions at K and K0, in contrast to
+the static electric ﬁeld applied in ref. 30, which corresponds to the
+Haldane mass term. In any case, the observation of state S 2
+suggests the possibility to dynamically engineer effective models
+with higher pseudospin winding numbers, similarly to higher-
+order spin-orbital textures in topological insulators 31.
+When the ﬁeld is increased further through the second level
+crossing and the gap closing, one obtains the pseudospin textures
+shown in Fig. 4c. Here all the pseudospin components are ﬂipped
+compared to the ones in Fig. 4a, and we coin this ﬂipped state
+with single pseudospin winding S’ 1.
+Phase diagram at low-frequency driving . We are now in a
+position to discuss the phase diagram of local Berry curvatures,
+–0.1
+0
+0.1
+–0.1
+0
+0.1
+–0.1 0 0.1
+–0.1
+0
+0.1
+–0.1 0 0.1 –0.1 0 0.1
+–1
+0
+1
+–0.1 0 0.1
+0
+0.5
+1
+1.5
+2
+1 1.5 2 2.5 3 3.5 4 4.5 5
+Px Py Pz (K) P z (K’)
+(k−K′)x [1/aC−C](k−K)x [1/aC−C]
+(k−K)y [1/aC−C]
+Amax = 0.10
+Amax = 0.50
+Amax = 1.00
+S1
+S1
+S2
+S2
+S′1
+S′1
+Amax
+/afii9821 [eV]
+Figure 4 | Field-induced changes in local pseudospin textures. (a–c) Pseudospin textures of the components Px,y,z(k) near K and K0 at peak ﬁeld (delay
+time Dt ¼ 0) for O ¼ 1.5 eV, with varying maximal ﬁeld strengths Amax in panels ( a–c) as indicated. The colour scheme varies between pseudospin
+component being /C0 1 (red), 0 (white) and þ 1 (blue). The pseudospin winding changes from p-wave in state S 1 (a) to fourfold nodal lines in S 2 (b)t o
+p-wave in S’ 1 (c), with opposite pseudospin direction compared to the original S 1 state. The Pz component changes sign between K and K0 since time-
+reversal symmetry is broken. ( d) Phase diagram of local pseudospin windings near the Dirac points as a function of driving ﬁeld strength and frequency.
+The phase boundaries are obtained from the Dirac point level crossings and gap closings. Black circles indicate the parameter values used in panels ( a–c).
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8047 ARTICLE
+NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications 5
+& 2015 Macmillan Publishers Limited. All rights reserved.
+which follow from the pseudospin textures around the Dirac
+points, as a function of ﬁeld strength and driving frequency.
+Fig. 4d shows the positions of the Floquet band level crossings
+indicating the transition to a pseudospin texture with a doubled
+number of nodal lines, as well as the Dirac energy gap closing
+leading to a state with inverted P
+z component. There is an upper
+frequency limit for the former state in the range of ﬁeld strengths
+shown here. This is consistent with the fact that in the inﬁnite-
+frequency limit, only states with p-wave pseudospin textures
+corresponding to S 1 and S’ 1 were found, which can be understood
+from the exact mapping to the static Haldane model in this
+limit32.
+On one hand, the characterization of nonequilibrium states in
+terms of local pseudospin textures is restricted to momenta near
+the Dirac points by Floquet sideband level crossings. Such level
+crossings generically appear at low driving frequency O because
+different Floquet sidebands overlap if O is smaller than the
+electronic bandwidth. On the other hand, sideband level crossings
+at the Dirac point are the root cause of the appearance of the
+exotic pseudospin textures in Fig. 4b. The low-frequency
+behaviour of driven graphene is therefore more complicated,
+but also contains new states that are absent in the high-frequency
+limit. The complete evolution of the tr-ARPES spectra and
+pseudospin textures across the boundaries of the S 2 state is shown
+in the Supplementary Figs 1, 2 and 3 for driving frequencies of
+1.5, 3.0 and 4.5 eV, respectively, and discussed in Supplementary
+Note 2.
+Discussion
+Our combined results show that band gaps induced by breaking
+time-reversal symmetry in graphene are within reach under
+realistic experimental conditions. In particular, the achievable
+energy resolution for probe-photon energies which are sufﬁ-
+ciently high to reach the Dirac points 33,34 should allow for
+the detection of photoemission gap sizes exceeding 100 meV. The
+change in pseudospin texture near critical driving offers the
+exciting opportunity of optical manipulation of local Berry
+curvatures near Dirac points on ultrafast time scales. Moreover,
+the combination of broken inversion symmetry and broken time-
+reversal symmetry opens up the possibility of controlling the
+valley degree of freedom and inducing different energy gaps at the
+two Dirac points
+35–38 .
+The spectroscopic detection of pseudospin textures requires
+access to orbital band content. To this end, hexagonal structures
+with inequivalent orbitals on the A and B sublattices having
+different photoemission probe-energy cross-sections could be
+examined. A candidate material for this purpose is hexagonal
+boron nitride. The demonstration of pseudospin imbalance at the
+two Dirac points by circularly polarized light in boron nitride
+would be intriguing. Alternatively, artiﬁcial hexagonal lattices
+with sublattice potentials have already been demonstrated with
+cold atoms 39. Thus the proposed pseudospin textures could in
+principle also be realized in driven ultracold quantum gases 40,41.
+Methods
+Methods summary . The simulations presented here start from a minimal tight-
+binding model of spinless electrons with nearest-neighbour hopping on the
+honeycomb lattice 8,42. The pump-pulse drives the electrons via minimal coupling
+to a gauge ﬁeld AðtÞ¼ Amaxpspump ðtÞ sinðOtÞex þ cosðOtÞey
+/C0/C1
+, with a Gaussian
+shape function pspump ðtÞ¼ expð/C0 t /C0 tp
+/C0/C1 2
+=ð2s2
+pump ÞÞ for a pulse of width spump
+centred around time tp, and photon frequency O. The phase shift of p/2 between
+the x and y components, represented by the unit vectors ex and ey, describes
+circular light polarization. For comparison we also study linearly polarized
+light with vanishing y component. Throughout this work we use units where
+e ¼ ‘ ¼ c ¼ 1. The electric ﬁeld is E(t) ¼/C0 qA(t)/qt, and we neglect the relativistic
+magnetic ﬁeld of the laser pulse. This means that the electronic spin degree of
+freedom maintains its full degeneracy, and it is therefore not explicitly included in
+our calculations. In particular, both the photoemission spectra and the pseudospin
+textures are identical for both physical spin species.
+The tr-ARPES is computed from the trace of the nonequilibrium lesser
+Green function by a postprocessing step involving the probe-laser-pulse shape
+sW(t) with time resolution W, which leads to an effective tr-ARPES energy
+resolution p 1/sprobe27,28. The delay time of a pump peaked at tp and probe
+peaked at tpr is given by Dt/C17 tpr /C0 tp.
+Simulations are performed for an initial equilibrium sample temperature
+T ¼ 116 K. We typically use 500,000 /C0 1,500,000 time steps for the computation of
+the time evolution operator, depending on the ﬁeld parameters. This corresponds
+to a maximal time-step size of 0.0016 fs. Green functions for tr-ARPES
+measurements are sampled on a grid with 5,000 /C0 15,000 real-time steps and a
+maximal step size of 0.16 fs. The Dirac point velocity is given by vD ¼ 4.2 eV aC /C0 C,
+where a C /C0 C ¼ 1.42 Å is the carbon–carbon distance 8. We choose a chemical
+potential m ¼ 0.5 eV, which sets the Dirac point energy ED ¼/C0 0.5 eV relative to m.
+This choice is motivated by the fact that typical graphene samples on substrates are
+doped, and that states both below and above the Dirac point energy are occupied in
+the initial equilibrium states and therefore nicely visible in the tr-ARPES spectra.
+The simulation parameters for the pump-probe setup are as follows: The
+pump laser ﬁeld has frequency O ¼ 1.5 eV, unless denoted otherwise, implying
+oscillation periods of 2.58 fs. Its temporal width is s
+pump ¼ 165 fs. We vary the peak
+vector potential Amax ¼ 0.10 y 1.00 in units of a C–C/C0 1 . This corresponds to peak
+electric ﬁeld strengths Emax ¼ OAmax of 106 y 1,060 mV Å/C0 1 for O ¼ 1.5 eV and
+the graphene lattice parameters. The photoemission probe-pulse has a width
+s
+probe ¼ 26 fs. This choice of parameters is motivated by the hierarchy of time
+scales in the system: The oscillation period for the pump laser light, the temporal
+width of the probe-pulse, which controls the time and energy resolution for the
+tr-ARPES signal, and the temporal width of the pump-pulse, which controls
+the nonequilibrium state and ensures a well-deﬁned center frequency for the
+pump-pulse.
+Model and time evolution
+. Our goal is to obtain the lesser Green function matrix
+Goðk; t; t0Þ in 2 /C2 2 orbital space (see below) with matrix elements
+Go
+ab k; t; t0ðÞ /C17 i ay
+k ðtÞbk t0ðÞ
+DE
+; ð1Þ
+where ay
+k bkðÞ is a creation (annihilation) operator for a fermion at momentum k
+in orbital a (b) A{a,b}. As shown below, the photocurrent and pseudospin contents
+are computed from these lesser Green functions.
+Including the ﬁeld via Peierls substitution, the time-dependent Hamiltonian for
+A and B sublattices with corresponding orbitals a and b reads
+H tðÞ¼
+X
+k
+ay
+k by
+k
+/C16/C17 0 g k /C0 AðtÞðÞ
+g/C3 k /C0 A tðÞðÞ 0
+/C18/C19
+ak
+bk
+/C18/C19
+; ð2Þ
+with the Hamiltonian matrix elements
+gðkÞ¼ V 2cos
+ﬃﬃ ﬃ
+3
+p
+kx
+2
+/C18/C19
+cos ky
+2
+/C18/C19
+þ cos ky
+/C0/C1/C20
+þ i /C0 2cos
+ﬃﬃ ﬃ
+3
+p
+kx
+2
+/C18/C19
+sin ky
+2
+/C18/C19
+þ sin ky
+/C0/C1/C18/C19 /C21
+;
+ð3Þ
+where V ¼ 2.8 eV is the nearest-neighbour hopping matrix element matching the
+graphene bandwidth and Dirac point velocity. In equilibrium, the Hamiltonian has
+two Dirac points at momenta K and K0 given by ð/C6 4p=ð3
+ﬃﬃ ﬃ
+3
+p
+Þ; 0Þ/C25 /C6 2:4184; 0ðÞ ,
+where momenta and the vector ﬁeld A(t) are measured in multiples of the inverse
+of the carbon–carbon distance a C–C 8.
+It is convenient to deﬁne the Hamiltonian matrix for momentum k in
+orbital basis,
+H k; tðÞ ¼ 0 g k /C0 A tðÞðÞ
+g/C3 k /C0 A tðÞðÞ 0
+/C18/C19
+: ð4Þ
+In the absence of a driving ﬁeld, this Hamiltonian is diagonalized by a rotation
+RðkÞ at t ¼ 0, which is a time before the pump-pulse is turned on. Note that t ¼ 0i s
+used here as a notation for the earliest real time we consider, not to be confused
+with zero delay time Dt/C17 tpr /C0 tp ¼ 0, which refers to the time where the Gaussian
+pump-pulse envelope is maximal. For later times, the given rotation does not
+diagonalize the Hamiltonian except for accidental cases where the gauge ﬁeld is an
+integer multiple of a reciprocal lattice vector.
+The computation of double-time propagators requires the evaluation of the
+time evolution operators
+U k; t; t
+0ðÞ ¼ T exp /C0 i
+Z t
+t0
+H k;/C22tðÞ d/C22t
+/C18/C19
+: ð5Þ
+Since Uðk; tÞ at different times do not commute with each other, the time ordering
+T in Uðk; t; t0Þ is taken into account by discretization of the real-time axis and
+multiplication of the resulting time-step evolution operators. We then obtain the
+time evolution operator as 2 /C2 2 matrices in band basis,
+U k; t; t0ðÞ /C25
+YNt;t0
+j¼1
+exp /C0 iH k; t /C0 jdt=2ðÞ dt½/C138 ; ð6Þ
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8047
+6 NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications
+& 2015 Macmillan Publishers Limited. All rights reserved.
+where Nt,t0 is the number of ﬁne time steps of size dt between t and t0, and the
+product is understood as time ordered with later times to the left.
+The lesser Green function matrix results from
+Go k; t; t0ðÞ ¼ U k; t; 0ðÞ yGo k; 0; 0ðÞ U k; t0; 0ðÞ ; ð7Þ
+Goðk; 0; 0Þ¼R ð kÞ iNð kÞRðkÞy; ð8Þ
+where time 0 refers to an initial time where the system is in equilibrium before the
+pump-pulse is turned on, and Nð kÞ is the time-independent diagonal matrix of
+initial equilibrium band occupation with diagonal elements f ðE1ðkÞÞ and f ðE2ðkÞÞ
+corresponding to Fermi function ﬁlling for the two energy eigenvalues.
+Floquet spectra . The Floquet spectra shown in Figs 2 and 3 are calculated from
+the Floquet Hamiltonian corresponding to equation (3):
+HF ¼/C0
+X
+ma
+mO m; aji m; ahj þ
+X
+mn
+gm /C0 n kðÞ m; Aji n; Bhj þ h:c:½/C138 ð 9Þ
+where gm /C0 n(k) are the Fourier series expansion coefﬁcients of g(k /C0 A(t)):
+gm /C0 nðkÞ¼ O
+2p
+Z 2p
+O
+0
+dt e iðm /C0 nÞOt g k /C0 AðtÞðÞ ð 10Þ
+¼ eik y þ 7p
+2 ðm /C0 nÞ½/C138 þ ei
+ﬃﬃ
+3
+p
+2 kx /C0 1
+2ky þ p
+6ðm /C0 nÞ½/C138 þ e /C0 i
+ﬃﬃ
+3
+p
+2 kx þ 1
+2ky /C0 5p
+6 ðm /C0 nÞ½/C138hi
+Jm /C0 nðAÞð 11Þ
+Here Jn(A) is the Bessel function of the ﬁrst kind. As the pump frequencies
+considered in this work are small with respect to the electronic bandwidth, the
+corresponding spectrum must be evaluated numerically via truncation of the full
+Floquet Hamiltonian. In practice, we achieve convergence for | m|r40.
+Time-resolved ARPES formalism
+. The computation of the time-resolved pho-
+tocurrent involves normalized Gaussian probe-pulse shape functions ssprobe(t)o f
+width sprobe centred around time t. In the Hamiltonian gauge, the photocurrent
+(tr-ARPES intensity) at momentum k, binding energy o and pump-probe delay
+time Dt/C17 tpr /C0 tp is then obtained from 27
+I k; o; DtðÞ ¼ Im
+X
+a
+Z
+dt1
+Z
+dt2ssprobe tpr /C0 t1
+/C0/C1
+ssprobe tpr /C0 t2
+/C0/C1
+eioðt1 /C0 t2 ÞGo
+aa k; t1; t2ðÞ :
+ð12Þ
+In the main text (Fig. 2) we show tr-ARPES spectra at peak ﬁeld strength with false
+colour plots of the tr-ARPES intensity I(k,o,Dt ¼ 0), that is, intensity variations as
+a function of binding energy o along selected momentum cuts k. The location of
+energy bands E(k) can be obtained from the maxima in the ARPES intensity as a
+function of binding energy at constant momentum, the so-called energy
+distribution curves. As seen in Fig. 2 of the main text, these bands are in excellent
+agreement with quasi-static Floquet bands, whose calculation is described below.
+The photocurrent as deﬁned in equation (12) is computed from the lesser Green
+function in a ﬁxed gauge. We would like to point out that this quantity is not
+gauge-invariant. In fact, the general deﬁnition of a gauge-invariant photocurrent
+that fulﬁlls the positivity criterion I(k,o,Dt)Z0 for all k,o,Dt in the presence of a
+ﬁeld is an outstanding research problem
+43. The problem likely lies in the neglect of
+photoemission matrix elements, which can be momentum and ﬁeld dependent.
+The photocurrent according to equation (12) manifestly fulﬁlls the positivity
+criterion. In addition, it also matches the Floquet band structure, as shown in the
+present work. The Floquet band structure is not gauge-invariant either.
+Importantly, general conclusions drawn from the analysis of Floquet sidebands,
+level crossings and gap closings are valid even in a ﬁxed-gauge calculation. This is
+due to the fact that the time-resolved, momentum-integrated photoemission
+spectrum (tr-PES) is always manifestly gauge-invariant and positive. The tr-PES
+signal is obtained by integrating the tr-ARPES spectrum in any gauge over all
+momenta. Hence, conclusions about the presence or absence of energy gaps can be
+drawn even in a gauge-variant formalism.
+References
+1. Fausti, D. et al. Light-induced superconductivity in a stripe-ordered cuprate.
+Science 331, 189–191 (2011).
+2. Sobota, J. A. et al. Ultrafast optical excitation of a persistent surface-state
+population in the topological insulator Bi 2Se3. Phys. Rev. Lett. 108, 117403
+(2012).
+3. Caviglia, A. D. et al. Ultrafast strain engineering in complex oxide
+heterostructures. Phys. Rev. Lett. 108, 136801 (2012).
+4. Konig, M. et al. Quantum spin Hall insulator state in HgTe quantum wells.
+Science 318, 766–770 (2007).
+5. Wang, Y. H., Steinberg, H., Jarillo-Herrero, P. & Gedik, N. Observation of
+Floquet-Bloch states on the surface of a topological insulator. Science 342,
+453–457 (2013).
+6. Hasan, M. Z. & Kane, C. L. Colloquium: Topological insulators. Rev. Mod.
+Phys. 82, 3045–3067 (2010).
+7. Bernevig, B. A., Hughes, T. L. & Zhang, S.-C. Quantum spin Hall effect and
+topological phase transition in HgTe quantum wells. Science 314, 1757–1761
+(2006).
+8. Castro Neto, A. H., Guinea, F., Peres, N. M. R., Novoselov, K. S. & Geim, A. K.
+The electronic properties of graphene. Rev. Mod. Phys. 81, 109–162 (2009).
+9. Haldane, F. D. M. Model for a Quantum Hall Effect without Landau Levels:
+Condensed-Matter Realization of the "Parity Anomaly". Phys. Rev. Lett. 61,
+2015–2018 (1988).
+10. Oka, T. & Aoki, H. Photovoltaic Hall effect in graphene. Phys. Rev. B 79,
+081406 (2009).
+11. Kitagawa, T., Berg, E., Rudner, M. & Demler, E. Topological characterization of
+periodically driven quantum systems. Phys. Rev. B 82, 235114 (2010).
+12. Kitagawa, T., Oka, T., Brataas, A., Fu, L. & Demler, E. Transport properties of
+nonequilibrium systems under the application of light: Photoinduced quantum
+Hall insulators without Landau levels. Phys. Rev. B 84, 235108 (2011).
+13. Lindner, N. H., Refael, G. & Galitski, V. Floquet topological insulator in
+semiconductor quantum wells. Nat. Phys. 7, 490–495 (2011).
+14. Gu, Z., Fertig, H. A., Arovas, D. P. & Auerbach, A. Floquet spectrum and
+transport through an irradiated graphene ribbon. Phys. Rev. Lett. 107, 216601
+(2011).
+15. Calvo, H. L., Pastawski, H. M., Roche, S. & Foa Torres, L. E. F. Tuning
+laser-induced band gaps in graphene. Appl. Phys. Lett. 98, 232103 (2011).
+16. Dora, B., Cayssol, J., Simon, F. & Moessner, R. Optically engineering the
+topological properties of a spin Hall insulator. Phys. Rev. Lett. 108, 056602
+(2012).
+17. Suarez Morell, E. & Foa Torres, L. E. F. Radiation effects on the electronic
+properties of bilayer graphene. Phys. Rev. B 86, 125449 (2012).
+18. Rudner, M. S., Lindner, N. H., Berg, E. & Levin, M. Anomalous edge states and
+the bulk-edge correspondence for periodically driven two-dimensional systems.
+Phys. Rev. X 3, 031005 (2013).
+19. Iadecola, T. et al. Materials design from nonequilibrium steady states: driven
+graphene as a tunable semiconductor with topological properties. Phys. Rev.
+Lett. 110, 176603 (2013).
+20. Perez-Piskunow, P. M., Usaj, G., Balseiro, C. A. & Foa Torres, L. E. F. Floquet
+chiral edge states in graphene. Phys. Rev. B 89, 121401 (2014).
+21. Grushin, A. G., Gomez-Leon, A. & Neupert, T. Floquet fractional Chern
+insulators. Phys. Rev. Lett. 112, 156801 (2014).
+22. Fregoso, B. M., Wang, Y. H., Gedik, N. & Galitski, V. Driven electronic states at
+the surface of a topological insulator. Phys. Rev. B 88, 155129 (2013).
+23. Kundu, A., Fertig, H. A. & Seradjeh, B. Effective theory of Floquet topological
+transitions. Phys. Rev. Lett. 113, 236803 (2014).
+24. Dehghani, H., Oka, T. & Mitra, A. Dissipative Floquet topological systems.
+Phys. Rev. B 90, 195429 (2014).
+25. Dahlhaus, J. P., Fregoso, B. M. & Moore, J. E. Magnetization signatures of light-
+induced quantum Hall edge states. Preprint at http://arxiv.org/abs/1408.6811
+(2014).
+26. Thouless, D. J., Kohmoto, M., Nightingale, M. P. & den Nijs, M. Quantized
+Hall conductance in a two-dimensional periodic potential. Phys. Rev. Lett. 49,
+405–408 (1982).
+27. Freericks, J. K., Krishnamurthy, H. R. & Pruschke, T. Theoretical description of
+time-resolved photoemission spectroscopy: application to pump-probe
+experiments. Phys. Rev. Lett. 102, 136401 (2009).
+28. Sentef, M. et al. Examining electron-boson coupling using time-resolved
+spectroscopy. Phys. Rev. X 3, 041033 (2013).
+29. Min, H. & MacDonald, A. H. Chiral decomposition in the electronic structure
+of graphene multilayers. Phys. Rev. B 77, 155416 (2008).
+30. Kumar, A. & Nandkishore, R. Flat bands with Berry curvature in multilayer
+graphene. Phys. Rev. B 87, 241108 (2013).
+31. Zhang, H., Liu, C.-X. & Zhang, S.-C. Spin-orbital texture in topological
+insulators. Phys. Rev. Lett. 111, 066801 (2013).
+32. Cayssol, J., Dora, B., Simon, F. & Moessner, R. Floquet topological insulators.
+Phys. Status Solidi RRL 7, 101–108 (2013).
+33. Johannsen, J. C. et al. Direct view of hot carrier dynamics in graphene. Phys.
+Rev. Lett. 111, 027403 (2013).
+34. Gierz, I. et al. Snapshots of non-equilibrium Dirac carrier distributions in
+graphene. Nat. Mater. 12, 1119–1124 (2013).
+35. Xiao, D., Liu, G.-B., Feng, W., Xu, X. & Yao, W. Coupled spin and valley
+physics in monolayers of MoS
+2 and other group-VI dichalcogenides. Phys. Rev.
+Lett. 108, 196802 (2012).
+36. Wu, S. et al. Electrical tuning of valley magnetic moment through symmetry
+control in bilayer MoS 2. Nat. Phys. 9, 149–153 (2013).
+37. Xu, X., Yao, W., Xiao, D. & Heinz, T. F. Spin and pseudospins in layered
+transition metal dichalcogenides. Nat. Phys. 10, 343–350 (2014).
+38. Tahir, M., Manchon, A. & Schwingenschlogl, U. Photoinduced quantum spin
+and valley hall effects, and orbital magnetization in monolayer MoS 2. Phys. Rev.
+B 90, 125438 (2014).
+39. Uehlinger, T. et al. Double transfer through Dirac points in a tunable
+honeycomb optical lattice. Eur. Phys. J. Special Topics 217, 121–133 (2013).
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8047 ARTICLE
+NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications 7
+& 2015 Macmillan Publishers Limited. All rights reserved.
+40. Tarruell, L., Greif, D., Uehlinger, T., Jotzu, G. & Esslinger, T. Creating, moving
+and merging Dirac points with a Fermi gas in a tunable honeycomb lattice.
+Nature 483, 302–305 (2012).
+41. Jotzu, G. et al. Experimental realization of the topological Haldane model with
+ultracold fermions. Nature 515, 237–240 (2014).
+42. Wallace, P. R. The band theory of graphite. Phys. Rev. 71, 622–634 (1947).
+43. Freericks, J. K., Krishnamurthy, H. R., Sentef, M. A. & Devereaux, T. P.
+Gauge invariance in the theoretical description of time-resolved angle-resolved
+pump/probe photoemission spectroscopy. Preprint at http://arxiv.org/abs/
+1403.7585 (2014).
+Acknowledgements
+We acknowledge helpful discussions with Patrick Kirchmann, Sri Raghu, Xiao-Liang Qi,
+Shou-Cheng Zhang, and Bruce Normand. This work was supported by the Department
+of Energy, Ofﬁce of Basic Energy Sciences, Division of Materials Sciences and
+Engineering under Contract Nos. DE-AC02-76SF00515 (Stanford/SIMES), DE-FG02-
+08ER46542 (Georgetown) and DE-SC0007091 (for the collaboration). Computational
+resources were provided by the National Energy Research Scientiﬁc Computing
+Center supported by the Department of Energy, Ofﬁce of Science, under Contract
+No. DE- AC02-05CH11231. J.K.F. was also supported by the McDevitt bequest at
+Georgetown. A.F.K. was supported by the Laboratory Directed Research and
+Development Program of Lawrence Berkeley National Laboratory under U.S.
+Department of Energy Contract No. DE-AC02-05CH11231.
+Author contributions
+M.A.S. developed the computer code and performed the ARPES and pseudospin
+calculations. A.F.K. assisted in developing the computer code for the ARPES calculations.
+M.C. developed the computer code and performed the Floquet calculations, and T.O.
+assisted in developing the computer code for the Floquet calculations. M.A.S., M.C.,
+A.F.K., B.M., J.K.F. and T.P.D. wrote the manuscript. T.P.D. and J.K.F. are responsible for
+project planning.
+Additional information
+Supplementary Information accompanies this paper at http://www.nature.com/
+naturecommunications
+Competing ﬁnancial interests: The authors declare no competing ﬁnancial interests.
+Reprints and permission information is available online at http://npg.nature.com/
+reprintsandpermissions/
+How to cite this article: Sentef, M.A. et al. Theory of Floquet band formation and local
+pseudospin textures in pump-probe photoemission of graphene. Nat. Commun. 6:7047
+doi: 10.1038/ncomms8047 (2015).
+ARTICLE NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8047
+8 NATURE COMMUNICATIONS | 6:7047 | DOI: 10.1038/ncomms8047 | www.nature.com/naturecommunications
+& 2015 Macmillan Publishers Limited. All rights reserved.

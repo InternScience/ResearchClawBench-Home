@@ -1,0 +1,377 @@
+{
+  "input": {
+    "path": "data/20231012-06_input_netcdf.nc",
+    "dimensions": {
+      "time": 2,
+      "level": 70,
+      "string5": 5,
+      "lat": 181,
+      "lon": 360
+    },
+    "variables": {
+      "lon": {
+        "dims": [
+          "lon"
+        ],
+        "shape": [
+          360
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "_FillValue": "nan"
+        }
+      },
+      "lat": {
+        "dims": [
+          "lat"
+        ],
+        "shape": [
+          181
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "_FillValue": "nan"
+        }
+      },
+      "level": {
+        "dims": [
+          "level",
+          "string5"
+        ],
+        "shape": [
+          70,
+          5
+        ],
+        "dtype": "|S1",
+        "attrs": {
+          "_Encoding": "utf-8"
+        }
+      },
+      "data": {
+        "dims": [
+          "time",
+          "level",
+          "lat",
+          "lon"
+        ],
+        "shape": [
+          2,
+          70,
+          181,
+          360
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "description": "Sample input for FuXi (1\u00b0 resolution)",
+          "_FillValue": "nan"
+        }
+      },
+      "time": {
+        "dims": [
+          "time"
+        ],
+        "shape": [
+          2
+        ],
+        "dtype": "int32",
+        "attrs": {
+          "units": "hours since 2023-10-12 00:00:00",
+          "calendar": "proleptic_gregorian"
+        }
+      }
+    },
+    "level_names": [
+      "Z50",
+      "Z100",
+      "Z150",
+      "Z200",
+      "Z250",
+      "Z300",
+      "Z400",
+      "Z500",
+      "Z600",
+      "Z700",
+      "Z850",
+      "Z925",
+      "Z1000",
+      "T50",
+      "T100",
+      "T150",
+      "T200",
+      "T250",
+      "T300",
+      "T400",
+      "T500",
+      "T600",
+      "T700",
+      "T850",
+      "T925",
+      "T1000",
+      "U50",
+      "U100",
+      "U150",
+      "U200",
+      "U250",
+      "U300",
+      "U400",
+      "U500",
+      "U600",
+      "U700",
+      "U850",
+      "U925",
+      "U1000",
+      "V50",
+      "V100",
+      "V150",
+      "V200",
+      "V250",
+      "V300",
+      "V400",
+      "V500",
+      "V600",
+      "V700",
+      "V850",
+      "V925",
+      "V1000",
+      "R50",
+      "R100",
+      "R150",
+      "R200",
+      "R250",
+      "R300",
+      "R400",
+      "R500",
+      "R600",
+      "R700",
+      "R850",
+      "R925",
+      "R1000",
+      "T2M",
+      "U10",
+      "V10",
+      "MSL",
+      "TP"
+    ],
+    "lat_range": [
+      -90.0,
+      90.0
+    ],
+    "lon_range": [
+      0.0,
+      359.0
+    ],
+    "time_values": [
+      0,
+      6
+    ],
+    "decoded_times": [
+      "2023-10-12 00:00:00",
+      "2023-10-12 06:00:00"
+    ],
+    "step_values": null,
+    "finite_min": -52.211666107177734,
+    "finite_max": 53.11841583251953,
+    "nan_count": 0
+  },
+  "forecast": {
+    "path": "data/006.nc",
+    "dimensions": {
+      "time": 1,
+      "step": 1,
+      "level": 70,
+      "string5": 5,
+      "lat": 181,
+      "lon": 360
+    },
+    "variables": {
+      "lon": {
+        "dims": [
+          "lon"
+        ],
+        "shape": [
+          360
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "_FillValue": "nan"
+        }
+      },
+      "lat": {
+        "dims": [
+          "lat"
+        ],
+        "shape": [
+          181
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "_FillValue": "nan"
+        }
+      },
+      "level": {
+        "dims": [
+          "level",
+          "string5"
+        ],
+        "shape": [
+          70,
+          5
+        ],
+        "dtype": "|S1",
+        "attrs": {
+          "_Encoding": "utf-8"
+        }
+      },
+      "data": {
+        "dims": [
+          "time",
+          "step",
+          "level",
+          "lat",
+          "lon"
+        ],
+        "shape": [
+          1,
+          1,
+          70,
+          181,
+          360
+        ],
+        "dtype": "float32",
+        "attrs": {
+          "description": "Sample FuXi output for 6-hour forecast (1\u00b0 resolution)",
+          "_FillValue": "nan"
+        }
+      },
+      "time": {
+        "dims": [
+          "time"
+        ],
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "attrs": {
+          "units": "days since 2023-10-12 06:00:00",
+          "calendar": "proleptic_gregorian"
+        }
+      },
+      "step": {
+        "dims": [
+          "step"
+        ],
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "attrs": {}
+      }
+    },
+    "level_names": [
+      "Z50",
+      "Z100",
+      "Z150",
+      "Z200",
+      "Z250",
+      "Z300",
+      "Z400",
+      "Z500",
+      "Z600",
+      "Z700",
+      "Z850",
+      "Z925",
+      "Z1000",
+      "T50",
+      "T100",
+      "T150",
+      "T200",
+      "T250",
+      "T300",
+      "T400",
+      "T500",
+      "T600",
+      "T700",
+      "T850",
+      "T925",
+      "T1000",
+      "U50",
+      "U100",
+      "U150",
+      "U200",
+      "U250",
+      "U300",
+      "U400",
+      "U500",
+      "U600",
+      "U700",
+      "U850",
+      "U925",
+      "U1000",
+      "V50",
+      "V100",
+      "V150",
+      "V200",
+      "V250",
+      "V300",
+      "V400",
+      "V500",
+      "V600",
+      "V700",
+      "V850",
+      "V925",
+      "V1000",
+      "R50",
+      "R100",
+      "R150",
+      "R200",
+      "R250",
+      "R300",
+      "R400",
+      "R500",
+      "R600",
+      "R700",
+      "R850",
+      "R925",
+      "R1000",
+      "T2M",
+      "U10",
+      "V10",
+      "MSL",
+      "TP"
+    ],
+    "lat_range": [
+      -90.0,
+      90.0
+    ],
+    "lon_range": [
+      0.0,
+      359.0
+    ],
+    "time_values": [
+      0
+    ],
+    "decoded_times": [
+      "2023-10-12 06:00:00"
+    ],
+    "step_values": [
+      6
+    ],
+    "finite_min": -51.669097900390625,
+    "finite_max": 50.569923400878906,
+    "nan_count": 0
+  },
+  "grid_note": "The files are 1 degree grids (181 x 360), despite the task text describing intended 0.25 degree data.",
+  "channel_count": 70,
+  "families": [
+    "MSL",
+    "R",
+    "T",
+    "T2M",
+    "TP",
+    "U",
+    "U10",
+    "V",
+    "V10",
+    "Z"
+  ]
+}

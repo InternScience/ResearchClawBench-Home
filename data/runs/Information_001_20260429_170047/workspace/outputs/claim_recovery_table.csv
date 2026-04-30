@@ -1,0 +1,5 @@
+claim,supporting_artifact,evidence_type
+Fixed-resolution encoding compresses large images substantially.,outputs/image_overview.csv; report/images/data_overview.png,direct metadata + figure
+Selected local crops retain more fine-detail signal than the same region after global downsampling.,outputs/crop_metrics.csv; report/images/metric_comparison.png,computed PSNR/detail metrics
+The ROI selection is interpretable and spatially traceable.,outputs/roi_summary.json; report/images/saliency_heatmaps.png; report/images/roi_crops.png,coordinates + heatmaps
+The implementation approximates V*/ViCrop but is not an exact MLLM accuracy reproduction.,outputs/method_fidelity_checklist.json; outputs/dependency_check.json,capability/fidelity audit

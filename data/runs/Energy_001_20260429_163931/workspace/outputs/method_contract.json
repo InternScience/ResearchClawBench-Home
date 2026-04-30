@@ -1,0 +1,12 @@
+{
+  "task": "GB power-system dispatch analysis using provided high-spatial and hourly data",
+  "named_commitments": [
+    "Optimal hourly power dispatch for generation, storage, curtailment, and system cost",
+    "High spatial resolution using provided buses/zonal network and links",
+    "Network topology and transmission constraints included",
+    "Historical/current and future/FES-inspired scenario comparison up to 2050 where data permit",
+    "Open-source reproducible code, intermediate outputs, PNG figures, and report"
+  ],
+  "implemented_model_target": "Linear economic dispatch / DC transport-style network flow with nodal balance, generator capacity constraints, wind capacity-factor availability, storage power/energy dynamics, curtailment accounting, transmission flow limits, and high-penalty load shedding for feasibility diagnostics.",
+  "primary_quantities": ["generation_MWh_by_carrier", "storage_charge_discharge_MWh", "curtailment_MWh", "system_variable_cost_GBP", "line_flow_MWh", "unserved_energy_MWh", "scenario_comparison"]
+}

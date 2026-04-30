@@ -1,0 +1,6 @@
+claim,support,status
+Processed features contain first-order replica bands on both sides of the Dirac cone.,outputs/band_summary.csv; report/images/figure_band_replicas.png,directly verified from processed_band_data.json
+Replica-parent energy separations equal the 5 µm pump photon energy in the processed feature table.,outputs/band_order_summary.csv; report/images/figure_band_replicas.png,verified by computing E_replica - E_parent = order × pump_energy
+Replica intensity is weakly polarization dependent with π-periodic modulation.,outputs/polarization_fit.json; report/images/figure_polarization_dependence.png,fit amplitude and contrast are small; R² is low for the seven-point dataset
+Pump-on raw spectra show localized intensity changes near the replica target region.,outputs/raw_replica_window_signal_by_angle.csv; report/images/figure_data_overview.png; report/images/figure_raw_maps_time.png,verified from HDF5 pump-on minus pump-off maps
+Full time-resolved dynamics cannot be reconstructed from raw HDF5.,outputs/data_overview.json,limitation: time_delays axis exists but no delay-indexed 4D intensity dataset is present

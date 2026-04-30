@@ -1,0 +1,8 @@
+claim,support,status
+"The workspace feature and target tables align frame-by-frame with 1,738 rows.",outputs/data_overview.json,directly verified
+Attack and Sniffing are imbalanced labels and therefore PR/AP diagnostics are appropriate.,outputs/data_overview.json; report/images/label_distribution.png,directly verified
+Deterministic Random Forest classifiers were trained and evaluated for both behaviors.,outputs/model_Attack.joblib; outputs/model_Sniffing.joblib; outputs/evaluation_metrics.csv,directly verified
+"Held-out quantitative performance, confusion matrices, and PR curves are available for both behaviors.",outputs/evaluation_metrics.csv; outputs/confusion_matrices.json; outputs/precision_recall_*.csv; report/images/*.png,directly verified
+Feature importance evidence is auditable at feature level.,outputs/feature_importance_Attack.csv; outputs/feature_importance_Sniffing.csv; outputs/top_feature_importance_with_permutation.csv; report/images/feature_importance_top15.png,directly verified
+Official reference machine-results probabilities/predictions can be compared only for the 300 rows present in that file.,outputs/reference_comparison.csv; outputs/data_overview.json; report/images/reference_comparison.png,directly verified
+Exact reproduction of original SimBA models is not claimed.,outputs/method_fidelity_checklist.json; outputs/dependency_check.json,limitation

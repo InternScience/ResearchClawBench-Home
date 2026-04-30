@@ -1,0 +1,6 @@
+claim,value,unit,supporting_artifacts
+Baseline best African delivered hydrogen cost to Europe via ammonia/reconversion,4.550332240452783,EUR/kg H2,outputs/scenario_summary.csv; outputs/site_costs_by_scenario.csv; report/images/map_baseline_delivered_cost.png
+De-risking lowers the best delivered cost relative to baseline,0.29862493368908005,EUR/kg H2 reduction,outputs/scenario_summary.csv; report/images/scenario_cost_distributions.png; report/images/finance_sensitivity.png
+High African risk raises the best delivered cost relative to baseline,0.5269588830164249,EUR/kg H2 increase,outputs/scenario_summary.csv; report/images/finance_sensitivity.png
+EU import policy credit plus de-risking maximizes competitive site share,0.0,share of sites competitive vs Europe,outputs/scenario_summary.csv; outputs/country_summary.csv; report/images/competitiveness_by_country.png
+Best modeled 2030 production costs are within/near Kenya 2030 related-work production range,1.5954615864102233,EUR/kg H2 production,outputs/figure_data_validation_comparison.csv; report/images/validation_comparison.png; outputs/related_work_contract.json

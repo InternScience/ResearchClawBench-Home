@@ -1,0 +1,21 @@
+{
+  "named_method": "Bayesian posterior-sample black-hole superradiance Regge-plane exclusion",
+  "definition": [
+    "For every boson mass, map each posterior mass sample to alpha=G M mu/(hbar c).",
+    "Compute scalar saturation spin from the horizon superradiance condition alpha/m < Omega_H r_g.",
+    "Estimate exclusion probability as the posterior mass-spin fraction above the saturation curve within an efficient alpha window.",
+    "Summarize exclusions by source-specific posterior probabilities, not point estimates."
+  ],
+  "invariants_checked": {
+    "posterior_samples_used_directly": true,
+    "source_specific_outputs": true,
+    "regge_plane_figure": true,
+    "self_interaction_proxy_documented": true,
+    "exact_growth_rates": false,
+    "full_nonlinear_bosenova_simulation": false
+  },
+  "fallbacks": [
+    "Analytic saturation boundary substituted for exact Kerr spectrum.",
+    "Alpha-window growth proxy substituted for source-age-dependent instability integration."
+  ]
+}

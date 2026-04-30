@@ -1,0 +1,769 @@
+npj | computational materials Article
+Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences
+https://doi.org/10.1038/s41524-024-01332-4
+Cartesian atomic cluster expansion for
+machine learning interatomic potentials
+Check for updates
+Bingqing Cheng 1,2
+Machine learning interatomic potentials are revolutionizing large-scale, accurate atomistic modeling
+in material science and chemistry. Many potentials use atomic cluster expansion or equivariant
+message-passing frameworks. Such frameworks typically use spherical harmonics as angular basis
+functions, followed by Clebsch-Gordan contraction to maintain rotational symmetry. We propose a
+mathematically equivalent and simple alternative that performs all operations in the Cartesian
+coordinates. This approach provides a complete set of polynormially independent features of atomic
+environments while maintaining interaction body orders. Additionally, we integrate low-dimensional
+embeddings of various chemical elements, trainable radial channel coupling, and inter-atomic
+message passing. The resulting potential, named Cartesian Atomic Cluster Expansion (CACE),
+exhibits good accuracy, stability, and generalizability. We validate its performance in diverse systems,
+including bulk water, small molecules, and 25-element high-entropy alloys.
+Machine learning interatomic potentials (MLIPs) can learn from quantum-
+mechanical calculations and predict the energy and forces of atomic con-
+ﬁgurations speedily, thus enabli ng more precise and comprehensive
+exploration of material and molecular properties at scale1,2.C r u c i a l l y ,w h i l e
+atomic Cartesian coordinates encode all the essential information of a
+structure, they cannot be directly used in learning tasks, due to the lack of
+symmetries like translation, rotation, inversion, and atom permutations.
+Consequently, numerous methods have been developed to enforce these
+symmetries
+2,3.
+In particular, atomic cluster expansion (ACE) 4 represents atomic
+environments based on a body-order expansion, using a complete set of
+bases of spherical harmonics and radial components. ACE can be viewed as
+a general framework of many other representations of the atomic envir-
+onment, such as the Atom Centered Symmetry Functions (ACSF)5,S m o o t h
+Overlap of Atomic Positions (SOAP) descriptor6, Moment Tensor Poten-
+tials (MTPs)7, and bispectrums8.
+Another important approach to learning atomic interactions uses
+message passing neural networks (MPNNs). They represent structures as
+graphs with atoms as nodes, and apply message passing operations to learn
+atomic environment representations. Earlier MPNN models, such as
+SchNet
+9,P h y s N e t10, SphereNet11 and GemNet12, use internal features that
+are invariant under rotations. In models such as NewtonNet13,E G N N14,a n d
+PaiNN15, vector features built using relative atomic positions are also used
+on top of invariant features. In later equivariant MPNNs, such as
+Cormorant
+16,N e q u I P17,M A C E18 exploit internal features based on irre-
+ducible representations of the E(3) symmetry group19,20. E(3) equivariant
+MPNNs were able to achieve an unprecedented accuracy compared to the
+previous invariant architectures17,18.
+Under the hood, in both ACE and E(3) equivariant MPNNs, the key
+p r o c e s si st h ef o l l o w i n g :E q u i v a r i a n tf e a t u r e so rm e s s a g e so fb o d yo r d e rν are
+encoded in spherical harmonics with degreesl. The invariant features are
+subsequently created by contracting the equivariant ones via the Clebsch-
+Gordan coefﬁcients. These invariants are used to predict energies or other
+invariant physical quantities. The use of spherical harmonics is motivated by
+that they form a natural basis for the irreducible representations of the SO(3)
+group and thus are useful in operation s involving rotational symmetries.
+Since the original ACE work
+4, various improvements have been made, e.g.,
+efﬁcient implementations of spherical harmonics that are evaluated in Car-
+tesian coordinates are made 21–23, absorbing Clebsch-Gordan matrix in
+expansion coefﬁcients during the evaluation stage 24, recursive Clebsch-
+Gordan coupling18 or using Gaunt coef ﬁcients25.M o r e o v e r ,t h eo r i g i n a l
+formulation has a steep scaling as the number of elements increases, and
+tensor-reduced representations have been developed to combat this26.A st h e
+degreel and the body orderν increases, many invariant features are linearly
+dependent or polynomially dependent, and schemes to eliminate these have
+been developed27–29.
+On the other hand, MTP7 can be considered as ACE formulated in the
+Cartesian space. MTP uses the so-called moment tensors, and then contracts
+them to form rotationally invariant basis functions
+7. The MTP contraction
+yields a spanning set, but contains many linearly dependent basis functions7,27.
+Here, we propose an alternative method that performs the expansion
+of atomic density as well as the contraction to get polynormially indepedent
+1Department of Chemistry, University of California, Berkeley, CA, USA. 2The Institute of Science and Technology Austria, Klosterneuburg, Austria.
+e-mail: bingqingcheng@berkeley.edu
+npj Computational Materials |          (2024) 10:157 1
+1234567890():,;
+1234567890():,;
+invariant features in Cartesian coordinates directly, circumventing sphe-
+rical harmonics. The Cartesian atomic cluster expansion (CACE) has the
+same mathematical foundation as the ACE framework, so it also adopts the
+nice properties of ACE: body order and completeness in the description of
+atomic environments
+27. The CACE invariant features are low-dimensional
+and can be computed independently and efﬁciently. By further incorpor-
+ating a low-dimensional embedding for chemical elements, optimized
+radial channel coupling, and message passing between neighboring atoms,
+we develop the CACE potential. We benchmark CACE on diverse systems,
+with an emphasis on stability and extrapolation.
+Results
+The CACE architecture
+Atomic graph . As illustrated in Fig. 1, each atomic structure is repre-
+sented as a graph, with atoms as nodes, and directed edges that point from
+pairs of sender atoms to receiver atoms that are within a cutoff radius of
+rcut. The state of an atom i is denoted by the tuple σi =( ri, θi, hi): ri is its
+Cartesian position, θi encodes its chemical element α, and hi is the
+learnable features. Later we will use the superscript, e.g.,σðtÞ
+i , to denote the
+atomic state in the message passing layert, but for now we omit the layer-
+dependence indices for simplicity.
+For both the sender node and the receiver node of an edge, elementsαi
+are ﬁrst assigned to vectors of lengths equal to the total number of elements
+Nelement through a one-hot embedding, and then the one-hot vectors are
+multiplied with a learnable weight matrix of sizeNembedding× Nelement that
+outputs a learnable embedding θi for each atom i of length Nembedding.
+Typically,Nembeddingis selected to be a small number between 1 and 4. This
+continuous element embedding eliminates the unfavorable scaling of using
+discrete chemical element types when representing atomic environments,
+and also allows alchemical learning.
+Edge basis . The edge basis, shown in Fig. 1b, is used to describe the
+spatial arrangement of an atom j around the atom i ( r!
+ji /C17 rj /C0 ri, rji ¼
+j r!
+jij and ^rji ¼ r!
+ji=rji), and is formed by the product of a radial basis R,
+an angular basis L, and an edge-type basis T:
+χcnlðσi; σjÞ¼ Tcðσi; σjÞRn;clðrjiÞLlð^rjiÞ: ð1Þ
+Eqn. (1) is general and fundamental for many MLIPs, and a systematic
+discussion of the design choicesfor each term can be found in ref. 30.
+In CACE, the type of edgeT depends on the states of the two nodes it
+connects. In the initial layer, the edge states are only determined by the
+chemical elements of the two atomsi and j. The edge is encoded using the
+ﬂattened tensor product of th e two node embedding vectors, T = θ
+i ⊗ θj,
+resulting in an edge feature of length c ¼ N2
+embedding. In a later message
+passing layer t, the edge features can depend on the node hidden features
+hðtÞ
+i . This edge encoding formed by the tensor product can be interpreted as
+the attention mechanism31 between the two atoms, with the embedding
+vectors of the sender and the receiver nodes the query and the key.
+The orientation-dependent angular basis is
+Llð^rjiÞ¼ð xj /C0 xiÞlx ðyj /C0 yiÞly ðzj /C0 ziÞlz ; ð2Þ
+where l ≡ (lx, ly, lz) are the angular momentum numbers satisfying
+lx + ly + lz = l,w i t hl being the total angular momentum. Such angular basis is
+just spherical harmonic functions in Cartesian basis. Indeed, one can easily
+transform the function of a certain angular momentum numberl in Cartesian
+and spherical harmonic bases by a simple matrix multiplication 32.A s
+examples of operations in the Carte sian angular basis, one can add two
+vectors such as
+Ll3
+ð^rji þ ^rikÞ¼
+X
+l1 þl2 ¼l3
+Pðl1; l2ÞLl1
+ð^rjiÞLl2
+ð^rikÞ ð3Þ
+where the prefactor Pðl1; l2Þ¼ l3x !
+l1x !l2x !
+l3y !
+l1y !l2y !
+l3z !
+l1z !l2z ! with l1 + l2 = l3.O n ec a n
+obtain vector dot products such as
+ð^rji /C1 ^rkiÞl ¼
+X
+l
+CðlÞLlð^rjiÞLlð^rkiÞ; ð4Þ
+a Atomic graph b Edge vectors c Node features d Symmeterize
+e Message passing f Symmeterize g Readout h Output
+i
+Fig. 1 | Schematic of the CACE potential. a –h show each step of the operation, and i illustrates the rule for making rotationally invariant features.
+https://doi.org/10.1038/s41524-024-01332-4 Article
+npj Computational Materials |          (2024) 10:157 2
+where CðlÞ¼ l!
+lx !ly !lz ! is the combinatorial coefﬁcient, and the sum is over alll
+with lx + ly + lz = l. One can prove the relationships in Eqns. ( 3)a n d( 4)
+above using the multinomial formula.
+Rn,cl(rji) is a set of radial basis consisting ofn functions, coupled with the
+total angular momentuml and the edge channelc.C A C Eﬁrst uses a set of
+raw radial basis R~nðrjiÞ consisting of ~n functions, which can be a set of
+trainable Bessel functions with different frequencies 15 multiplied by a
+smooth cutoff function. The raw radial basis is mixed using a linear trans-
+formation to form R
+n,cl for each c and l,
+Rn;clðrjiÞ¼
+X
+~n
+R~nðrjiÞW~nn;cl ð5Þ
+where W~nn;cl is a ~n × n-sized matrix indexed byc and l.T h i sm e a n st h a t ,f o r
+each l and c combination, there is a different set of n radial functions. In
+practice, the mixing is performed on the atom-centered basis for efﬁciency,
+as described below.
+Atom-centered basis (A-basis). As shown in Fig.1c, the atom-centered
+representation is made by summing over all the edges of a node,
+Ai;cnl ¼
+X
+j2N ðiÞ
+χcnlðσi; σjÞ: ð6Þ
+This corresponds to a projection of the edge basis on the atomic density,
+which is commonly referred to as the “density trick” and was introduced
+originally to construct SOAP and bispectrum descriptors8.
+Symmetrized basis (B-basis) . The orientation-dependent A features
+are symmetrized to get the invariant B features of different body orders ν
+as sketched in Fig. 1c. For l =0 , A is already rotationally invariant, so
+the ν = 1 features Bð1Þ
+i;cn0 ¼ Ai;cn0. For ν =2 33,
+Bð2Þ
+i;cnl1
+¼
+X
+l1
+Cðl1ÞA2
+i;cnl1
+: ð7Þ
+Doing the expansion explicitly and using Eq. (3), one can show that33
+Bð2Þ
+i;cnl1
+¼
+X
+j;k2N ðiÞ
+Tcðσi; σjÞRn;cl1
+ðrjiÞTcðσi; σkÞRn;cl1
+ðrkiÞ × cosl1 ðθijkÞ: ð8Þ
+So this term includes three-body contributions of r!
+ji and r!
+ki together
+with their enclosed angleθijk.F o rν =3 ,
+Bð3Þ
+i;cnl1 l2
+¼
+X
+l1 ;l2
+Cðl1ÞCðl2ÞAi;cnl1
+Ai;cnðl1 þl2 ÞAi;cnl2
+; ð9Þ
+which includes four-body interaction terms in the form Rn;cl1
+ðrjiÞ
+Rn;cðl1 þl2 ÞðrkiÞRn;cl2
+ðrhiÞcosl1 ðθijkÞcosl2 ðθikhÞ.F o rν =4 ,
+Bð4Þ
+i;cnl1 l2 l3
+¼ P
+l1 ;l2 ;l3
+Cðl1ÞCðl2ÞCðl3Þ
+× Ai;cnl1
+Ai;cnðl1 þl2 ÞAi;cnðl2 þl3 ÞAi;cnl3
+;
+ð10Þ
+which includes ﬁve-body contributions in the form
+Rn;cl1
+ðrjiÞRn;cðl1 þl2 ÞðrkiÞRn;cðl2 þl3 ÞðrhiÞRn;cl3
+ðrgiÞcosl1 ðθijkÞcosl2 ðθikhÞcosl3 ðθihgÞ.
+The general rule for constructing the symmetrized basis is illustrated in
+Fig. 1i. The key idea is that pairs of angular featuresL need to have a shared
+factor of l, when summed over to form invariants. To eliminate linearly
+dependent terms, the combination of the angular features that only differ
+from others by permutations are not considered. Moreover, the shared
+factor l b e t w e e na n yp a i r so fL needs to be greater than zero, because if any
+l = 0 the resulting invariant can be constructed using the product of lower-
+o r d e ri n v a r i a n t sa n dc a nt h u sb ee l i m inated for redundancy. In other words,
+a valid combination illustrated in Fig. 1i needs to correspond to one con-
+nected graph, rather than two disconnect graphs of lower body orders. For
+instance, terms such as B
+ð4Þ
+i;cn012 ¼ Bð1Þ
+i;cn0Bð3Þ
+i;cn12, Bð4Þ
+i;cn102 ¼ Bð2Þ
+i;cn1Bð2Þ
+i;cn2 are
+eliminated. The CACE framework thus makes polynomially independent
+invariants. Other radial or edge terms that do not depend on l or only
+depend on the total angular momentuml can be multiplied on top without
+breaking the rotational symmetry.
+Based on the expansions, one can see that these CACE B(ν) terms
+are similar to the B(ν) terms in the original ACE paper 4 or the invariant
+basis functions in MTP 7, with two differences: First, many linearly or
+polynomially-dependent featur es are elimiated during the symme-
+trization stage in CACE, resulting in a much more compact basis set
+than the original ACE
+4 or MTPs 7, where the basis functions span the
+space of all invariants includi ng linearly dependent terms 27. Second,
+since each radial channel Rn,cl contains all raw radial channels with
+trainable weights (Eq. ( 5)), it is not necessary to couple different radial
+channels together when forming the basis B.T h i sm e a n st h a tt h e
+number of radial channels of B stays n rather than going up as nν as the
+body order increases.
+The B basis is a complete basis of permutation and rotation invariant
+functions of the atomic environment4. In practice, one truncates the series
+up to some maximum values of lmax and νmax to make the computation
+tractable. The dimension of the B basis is c × n × NL, where each factor
+comes from the number of edge channels, radial basis, and angular basis,
+respectively. Fig. 2 shows the total number of angular features NL up to
+certain lmax and νmax.T h en u m b e ro fNl is compact even forνmax ¼ 5. For
+most practical applications,lmax between 2 and 4 andνmax between 2 and 4
+are sufﬁcient for good accuracy whenﬁtting CACE potentials.
+Notice that in the CACE formulation, each invariantB feature can be
+evaluated independently, and there is no need to precompute or store the
+high-dimensional many-body product basis in ACE
+4 or moment tensors in
+MTPs7 even in the sparse form. The reason why this is ef ﬁcient can be
+understood as it effectively exploits the extreme sparsity of the Clebsch-
+Gordan coupling matrix when forming invariants.
+Message passing. The framework above reproduces the original ACE,
+although formulated entirely in Cartesian space. In ACE, the atomic
+energy of each atom is determined by neighboring atoms within its cutoff
+radius r
+cut. On top of that, one can incorporate message passing, which
+iteratively propagates information along the edges, thereby commu-
+nicating the local information and effectively enlarging the perceptive
+ﬁeld of each atom. A systematic discussion on the design choices of
+message passing can be found in refs. 30,34.
+CACE uses two types of message passing (MP) mechanisms. Theﬁrst
+type, denoted by the green arrow in Fig. 1e, communicates the A
+Fig. 2 | The total number of angular features NL, for maximum values of lmax
+and νmax.
+https://doi.org/10.1038/s41524-024-01332-4 Article
+npj Computational Materials |          (2024) 10:157 3
+information between neighboring atoms: the orientation-dependent mes-
+sage from atom j to i can be expressed as:
+mðtÞ
+1;j!i;cnl ¼ FcnlðrjiÞAðtÞ
+j;cnl ð11Þ
+where Fcnl(rji)i sa ﬁlter function that takes the scalar value of the distancerji,
+and it can depend on edge channel, radial channel and total angular
+momentum. In practice, we use an exponential decay function with train-
+able exponent, to capture the physics that farther atoms have less effect,
+although other choices are possible.
+The second MP mechanism, denoted by the two blue arrows in Fig.1e,
+uses a recursive edge embedding scheme analogous to recursively embedded
+atom neural networks (REANN)
+33 and multilayer ACE (ml-ACE)35:
+mðtÞ
+2;j!i;cnl ¼ Hcl BðtÞ
+j
+/C16/C17
+χcnl; ð12Þ
+where Hcl is a trainable scalar function that can optionally depend on edge
+channel and total angular momentum. We simply use a linear neural net-
+work (NN) layer for H.
+The aggregated message is
+M
+ðtÞ
+i;cnl ¼
+X
+j2N ðiÞ
+mðtÞ
+1;j!i;cnl þ mðtÞ
+2;j!i;cnl ð13Þ
+One can then update the A representation of each node,
+Aðtþ1Þ
+i;cnl ¼ GA ðtÞ
+i;cnl; MðtÞ
+i;cnl
+/C16/C17
+; ð14Þ
+and forG we use a simple linear function. After obtaining the updatedA(t+1),
+we again take the symmetrizedB-basis as previously described. It is easy to
+verify that these symmetrized representations are dependent only on the
+scalar values of the atomic distanc es and angles and thus rotationally
+invariant. Note that one can make various design choices for theF, H and G
+functions: they can be dependent on c, n,a n d l,w i t h o u tb r e a k i n gt h e
+invariance at the symmetrization stage.
+In practice, only one or no MP layer is typically used in CACE. This is
+because the use of higher-body-order atomic features and messages reduces
+the need for many MP layers, as in the case of MACE
+18.
+Readout and output . After T MP layers, all the resulting B features at
+each layer are concatenated. These invariant features are compact; the
+number of the features can be computed as T × c × n × N
+L. Then, a
+multilayer perceptron (MLP) maps these invariant features to the target
+of the atomic energy of each atom i,
+E
+i ¼ MLP B ð0Þ
+i /C8 Bð1Þ
+i /C8 ... /C8 BðTÞ
+i
+/C16/C17
+: ð15Þ
+In practice, for the readout function, we use the sum of a linear NN and
+a multilayer NN, as the former prese rves the body-ordered contribu-
+tions and the latter considers the higher-ordered terms from the
+truncated series.
+Finally, the total potential energy of the system is the sum of all the
+atomic energies of each atom, and the forces can readily be computed by
+taking the derivatives of the total energy with respect to atomic coordinates.
+Bulk water
+As an example application on complexﬂuids, we demonstrate CACE on a
+dataset of 1593 liquid water conﬁgurations36. The details of the training are
+in the “Methods” section. The root mean square errors (RMSE) of the
+energy per water molecule and forces on the validation set for the CACE
+model and other MLIPs are presented in Table 1. MLIPs based on three-
+body and three-body descriptors without message passing, including BPNN
+based on ACSF
+5, embedded atom neural network (EANN)37,a n dD e e p M D
+have similar errors, and are amongst thehighest in this comparison. Linear
+ACE uses higher-body order features,which can be directly compared to the
+CACE model trained with the same c utoff and without message passing
+(rcut =5 . 5Å, T = 0), and the latter has lower error. The REANN potential33
+with three message passing layers, the equivariant message passing model
+NequIP17, the high body order MACE18 model, and the CACE model with
+T = 1 have the lowest errors.
+For running molecular dynamics (MD) simulations using MLIPs,
+besides accuracy, a crucial requirement is stability, the possibility to run long
+enough trajectories with the system remaining in physically reasonable
+states and the simulation not exploding, even at conditions with few or no
+training data. To assess the simulation stability, we performed independent
+simulations of 300 ps in length for water at 1 g mL
+−1 at 300 K, 500 K, 1000 K,
+1500 K, and 2000 K using the CACE T = 1 model. The simulation cell
+contains 512 water molecules. The time step was 1 fs and the Nosé-Hoover
+thermostat was used. The upper panel of Fig.3 shows the oxygen–oxygen
+(O–O) radial distribution function (RDF). At 300 K, the computed O –O
+RDF is in excellent agreement with experiment from X-ray diffraction
+measurements
+38. Note that the nuclear quantum effects have a slight
+destructuring effect in the O-O RDF, but the effect is quite small36.T h em e a n
+squared displacements (MSD) from t hese simulations are shown on the
+lower panel of Fig.3. The diffusivityD, obtained byﬁtting a linear function
+to the MSD, at 300 K agrees well with the DFT MD result
+(D
+DFT = 2.67 ± 0.102 ps−1)f r o mr e f .39. At high temperatures up to 2000 K,
+the MD simulations remained stable, which demonstrates the superior
+stability of the CACE potential. Note that we do not expect the result at very
+high temperatures to be physically predictive, and this example is just to
+illustrate the stability of CACE. Suc h stability is not only necessary for
+converging statistical properties but also allows the re ﬁnement of the
+potential: to iteratively improve the accuracy of the potential under certain
+conditions, one can perform active learning which collects snapshots from
+corresponding MD trajectories and use these snapshots for re-training.
+Small molecules: ethanol and 3BPA
+To demonstrate CACE on small organic molecules, weﬁtted to 1000 ethanol
+structures from the MD17 database 40 that is often used for benchmark
+purposes. Table 2 shows a comparison of the different MLIPs trained on
+energies and forces for the same MD17-ethanol dataset. The energy accu-
+racy of CACE is similar to the NequIP model withT = 5, although the CACE
+force error is larger. The stability (S) in Table 2 measures how long MD
+simulations at 500 K using the MLIP is physically sensical (no pathological
+behavior or enter physically prohibitive states) in runs with a maximum
+Table 1 | Root mean square errors (RMSE) for energy (E) per water molecule (in meV/H2O) and force (in meVÅ −1) on a liquid water
+dataset from ref. 36
+BPNN36 DeepMD58 EANN37 linear ACE52 REANN33 NequIP17 MACE18 CACE CACE
+6.35 Å 6 Å 6.2 Å 5.5 Å 6.2 Å, T = 3 4.5 Å, T = 3 6 Å 5.5 Å, T = 0 5.5 Å, T = 1
+E 7.0 6.3 6.3 5.196 2.4 2.8 1.9 3.49 1.77
+F 120 92 129 99 53.2 45 36.2 79 47
+The cutoffs rcut of the atomic environment and the numbers of message passing layers T are listed. The NequIP and DeepMD models are trained by us, and the others are from the references.
+https://doi.org/10.1038/s41524-024-01332-4 Article
+npj Computational Materials |          (2024) 10:157 4
+length of 300 ps, so 300 ps is the maximum score in this case41. The stability
+values for other MLIPs are from ref. 41 which used 10,000 training struc-
+tures and a time step of 0.5 fs in MD. For CACE, we used 1000 training
+structures and a time step of 1 fs, which is more stringent, but the MD had
+nevertheless remained stable. As observed in refs.41,42, force accuracy does
+not imply stability, and the latter is a key metric for MLIPs.
+As another example, we ﬁtted to the (3-(benzyloxy)pyridin-2-amine)
+(3BPA) dataset43.T a b l e3 shows the errors of different potentials when
+extrapolating to higher temperatures. NequIP and MACE perform the best,
+while CACE is somewhere between them and ACE. We then compared the
+dihedral potential energy surface of the molecule. Figure 4 shows the
+complex energy landscapes of the α-γ plane predicted by DFT and by
+CACE, for the case of β = 120
+∘, the plane with the fewest training points.
+Nevertheless, the CACE landscape closely resembles the ground truth and is
+regular, more so than the other potentials benchmarked in ref. 43 despite
+t h o s ew e r et r a i n e do nam o r ed i v e r s ed ataset including high-temperature
+conﬁgurations.
+25-element high-entropy alloys
+High-entropy alloys, which are compo sed of several metallic elements,
+have unique mechanical, thermodynamics, and catalytic properties 44.
+They are challenging to model due to the high number of elements
+involved, for which many MLIPs scale poorly with. Reference 45
+introduced a 25 d-block transition metal HEA dataset of distorted
+crystalline structures. Reference
+45 further performed an alchemical
+learning (AL) that explicit comp resses chemical space, leading to a
+model that is both interpretable and very stable.
+In Fig. 5a, the CACE learning curve is compared to the ones from
+ref. 45, including a 3B model that has an atomic energy baseline and three-
+body terms, and another 3B+NN model that further incorporates a full set
+of pair potentials and a non-linear term built on top of contracted power
+spectrum features. Overall, the CACE model achieved lower error and
+signiﬁcantly more efﬁcient learning for fewer data, and it has only 91,232
+trainable parameters, compared to more than 160,000 in the 3B +NN
+model
+45.
+The errors of the models are presented in Table 4. A very recent
+architecture, Point Edge Transformer (PET) that utilizes local coordinate
+systems, achieved state-of-the-art performance in several benchmark sys-
+tems and also has impressively low test error for the HEA25 dataset
+46.
+However, as we discuss below, the PET potential has poor transferability.
+Alchemical learning capabilitynot only makes learning more efﬁcient,
+but is also essential towards achieving a foundation model that is valid across
+Table 2 | Mean absolute error (MAE) of energy (E) and force (F) for ethanol in the MD-17 dataset, in units of meV and meV Å −1,
+respectively, trained on 1000 reference con ﬁgurations
+SchNet9 DimeNet59 sGDML60 PaiNN15 SphereNet11 NewtonNet13 GemNet-T12 NequIP17 CACE
+E 3.5 2.8 3.0 2.7 2.6 2.2 2.37
+F 16.9 10.0 14.3 9.7 9.0 9.1 3.7 3.1 7.0
+S ↑ 247 26 86 33 169 300 300
+The stability (S) in the unit of ps shows how long the simulation using the MLIP is physically realistic in MD of a maximum length of 300 ps at 500 K. Besides CACE, the errors are obtained from respective
+references, and the stability is from ref. 41.
+Table 3 | Root mean square errors (RMSE) for energy (E) and force (F) on the 3BPA temperature transferability dataset, reported
+in units of meV and meV Å −1
+ACE4 sGDML60 GAP6 ANI-pretrained61 ANI-2x61 NequIP55 MACE18 CACE
+300 K, E 7.1 9.1 22.8 23.5 38.6 3.3 3.0 6.3
+300 K, F 27.1 46.2 87.3 42.8 84.4 10.8 8.8 21.4
+600 K, E 24.0 484.8 61.4 37.8 54.5 11.2 9.7 18.0
+600 K, F 64.3 439.2 151.9 71.7 102.8 26.4 21.8 45.2
+1200 K, E 85.3 774.5 166.8 76.8 88.8 38.5 29.8 58.0
+1200 K, F 187.0 711.1 305.5 129.6 139.6 76.2 62.0 113.8
+All models were trained onT = 300 K data. Results of previous models except for NequIP and MACE are from ref.43. ANI-2x was trained on 8.9 million structures, and ANI-pretrained was pretrained andﬁne-
+tuned on this dataset.
+Fig. 3 | Simulation results of water using CACE T = 1 model. a Oxygen-oxygen
+radial distribution functions (RDF) at different temperatures and 1 g/mL computed
+via classical MD simulations in the NVT ensemble. The experimental O-O RDF at
+ambient conditions was obtained from ref.38. b Mean squared displacement (MSD)
+from the liquid water simulations. Diffusivities ( D) are shown in the legends.
+https://doi.org/10.1038/s41524-024-01332-4 Article
+npj Computational Materials |          (2024) 10:157 5
+t h ep e r i o d i ct a b l e .C A C Ei sa b l et operform alchemical learning. The
+learnable embedding θ for each element type encodes its chemical infor-
+mation, and can be visualized to gain insights into the data-driven simila-
+rities. As the Nembedding= 4 in this case, we performed a principal
+component analysis (PCA) and plotted theﬁrst two principal component
+axes in Fig. 5b. The elements are arranged in a way that is strongly remi-
+niscent of their placement in the d-block. This shows that the element
+e m b e d d i n gs c h e m ei sa b l et ol e a r nt h en a t u r eo ft h ep e r i o d i ct a b l ei nad a t a -
+driven way.
+A stringent way to demonstrate alchemical learning is by extrapolating
+to unseen elements. In this case, Re and Os are absent from the training set.
+Reference
+45 provides a hold-out set containing 61 pairs of structures, each of
+36 or 48 atoms. Each pair has one fcc or bcc structure with only the original
+25 elements, and another structure with up to 11 atoms randomly sub-
+stituted with Re and Os. We simply took the CACE model trained for the 25-
+element dataset and obtained the chemical embedding of Re and Os by a
+linear interpolation between W and Ir, as illustrated by the empty circles in
+Fig. 5b. We also added atomic-energy baselines for Re and Os (obtained by
+ﬁtting the residual energy to a two-pa rameter linear model that depends
+o n l yo nt h eR ea n dO sc o n t e n t ) .I nF i g .5d we show the parity plot for the
+substitution energy, deﬁned as the potential energy difference between the
+original and the substituted structure per substitution atom. Impressively,
+the CACE error for those substituted structures with unseen elements is
+rather similar to the test error on the 25-element training set, and is lower
+than the AL method in ref.45. The force comparison, shown in the inset of
+Fig.5d, shows the same trend. With the PET potential, it is not clear whether
+alchemical learning can be performed in a straightforward way.
+The most impressive validation of the AL model in ref. 45 is the
+extrapolation to conﬁgurations very far from the training set: At 5000 K,
+the systems generated from constant-pressure MD simulations with
+Monte Carlo element swaps have melted, but the AL potential that was
+trained exclusively on solid structures is still able to describe the ener-
+getics of the structures. This is a test that the PET model
+46 did not
+perform well. To verify the generalizability of CACE across a wide
+temperature range, we recomputed the energies and forces of the
+structures from the 5000 K trajectory as well as another one at a low
+temperature of 300 K, and show the results in Fig. 5c and Table 4.T h e
+CACE errors are a bit smaller compared to ref. 45, and quite modest
+compared to the training error.
+Discussion
+There have been other MLIP approaches that only operate in Cartesian
+space, including NewtonNet
+13,E G N N14, and PaiNN15 that use atomic dis-
+placement vectors in message passing, the PET based on local coordinate
+systems46, and TensorNet that uses Cartesian tensors to represent pairwise
+displacements47.C A C Ei sd i f f e r e n tf r o mt h e s ea p p r o a c h e si nt h a ti tc a nb e
+directly mapped to ACE, so like ACE, it is also complete and body-ordered.
+The completeness helps the accuracy and the smoothness of the potential,
+particularly when there exist atomic environments that are degenerate using
+three-body descriptors or bispectrum
+48,49. The body order makes the
+potential more physically interpretable and may help extrapolation. The
+angular basis of CACE (Eq. ( 2)) is the same as MTP
+7, but CACE avoids
+computing moment tensors, and form a more compact symetric basis set via
+a simple combination rule that eliminates polynomially depedent features
+(Fig. 1i). As added advantages, the CACE descriptors have optimized radial
+channel coupling, and are capable of alchemical learning.
+A topic that tends to be overlooked in the development of MLIP
+methods is stability and generalizability. In practice, a MLIP that is not stable
+in MD simulations is not useful. Nonetheless, stability and generalization
+are rarely considered in benchmarks, maybe due to that they are less
+straightforward to assess than energy and force errors. On the other hand, it
+has been shown that accuracy of the potential does not imply stability
+41,42.
+The CACE potential shows high stabi lity and extrapolatability in the
+datasets we benchmarked: stable MD simulations of water up to 2000 K, MD
+of ethanol, extrapolation to high temperature and dihedral scan of 3BPA, as
+well as generalization to the melt a nd unseen elements in high-entropy
+alloys. For water, the accuracy of CACE is on par with the most accurate
+potentials to date, NequIP
+17 and MACE18. For small molecules, CACE is less
+accurate than NequIP or MACE but more accurate than the other recent
+MLIPs that we compared to. For all practical purposes, the accuracy of
+C A C Ef o rt h es m a l lm o l e c u l e si sp r o b a b ly enough, considering that the error
+is very small in absolute terms and is much lower than the chemical accu-
+racy. Moreover, CACE achieved such accuracy with only one message
+passing layer and relatively few training parameters, and its accuracy can
+probably be improved with more message passing layers, higherN
+embedding,
+νmax, lmax, or a larger MLP at the readout.
+Fig. 4 | The dihedral scan benchmark of the 3BPA molecule. aMolecular structure
+and three dihedral angles. b The dihedral potential energy landscape for β = 120∘,a s
+predicted by DFT and CACE. The white dots on the DFT potential energy surface
+correspond to all the training con ﬁgurations that have β between 100∘ and 140∘.
+https://doi.org/10.1038/s41524-024-01332-4 Article
+npj Computational Materials |          (2024) 10:157 6
+We implemented the CACE potential using PyTorch, and the code
+is available at https://github.com/BingqingCheng/cace. With the current
+implementation, the training time of the water and the HEA25 datasets
+took about two days on a vintage GeForce GTX 1080 Ti GPU card, and
+the small molecules can be trained on a laptop within one or two days.
+The training should be much faster on state-of-the-art GPUs. For the
+speed of MD, Table 5 compares the timing on one Nvidia A100 GPU
+using three water models in Table 1. Note that such comparison depends
+very much on the speciﬁc models used (higherν, l
+max, rcut, and T all add to
+the cost) as well as the implementation. CACE is marginally faster in this
+comparison and can drive simulations of 24,000 atoms. The ability to run
+such large system sizes on a single GPU speaks to the low memory
+consumption of CACE. The implementation of the code can be further
+optimized: The computation of the node features and the symmetrization
+step may be compiled and be made faster. The training and the prediction
+are available on one GPU and can be made more parallelizable. The MD
+simulations can be performed in the ASE package, but the LAMMPS
+interface implementation is currently absent. As CACE has a moderate
+receptive ﬁeld, so it is in principle possible to make it scale well in MD
+simulations.
+Many engineering aspects of the CACE potential can be furtherﬁne-
+tuned. For example, dataset normalization and internal normalization can
+have a large effect on training efﬁciency and outcome
+30. Radial basis inﬂu-
+ences the learning efﬁciency50, and its best choice is still an open question.
+Other choices of the F, H and G functions in the message passing may be
+used. One can also use the product ofBðtÞ
+i Þ and χcnl in the message function,
+exploiting the relationship in Eq. (3). The training protocol can also inﬂu-
+ence the outcome.
+Other possible future improvements of CACE include pretraining on
+large datasets beforeﬁne-tuning the model. It should be possible to develop a
+foundation model that is generally valid in the periodic table 51.T h e
+alchemical learning capacity of CACE may facilitate this.
+Fig. 5 | Benchmark on the HEA25 dataset. a Learning curves for different models.
+Both alchemical learning (AL) models are from ref. 45. b The ﬁrst two principal
+components (PCs) of the CACE embedding matrix. The periods are highlighted with
+orange, blue, and green lines. Interpolated positions for Re and Os are indicated with
+empty circles. c Energy comparison between DFT and CACE for a high temperature
+(5000 K) and a low temperature (300 K) trajectory. The inset shows example solid
+and melt con ﬁgurations from the 300 K and the 5000 K trajectories, respectively.
+d Comparison between the substitution energy E
+sub, the potential energy difference
+between the original and the structure substituted with Re and Os element per
+substitution atom, computed using DFT and CACE. The inset shows the parity plot
+for the force components computed for those structures.
+https://doi.org/10.1038/s41524-024-01332-4 Article
+npj Computational Materials |          (2024) 10:157 7
+In summary, we propose a scheme to preserve the rotational symmetry
+of atomic environments with different body orders, and the operation is
+entirely in the Cartesian coordinates. The transformation to the spherical
+harmonic basis, tensor product of at omic basis, and the usage of high-
+dimensional Clebsch-Gordan coupling matrix are all avoided. The resulting
+symmeric features are low-dimensional and polynormially indepedent. As
+the symmetrization in the Cartesian coordinates is equivalent to the
+Clebsch-Gordan contraction, the scheme can be applied in other MLIPs that
+use the ACE framework (e.g., linear ACE
+52, SNAP, SOAP-GAP6,J a c o b i -
+Legendre cluster expansion53,m l - A C E35,g r a p hA C E34), or E(3) equivariant
+message passing neural networks (e.g., NequIP 17,M A C E18, BOTNet 30,
+SEGNN54, Allegro55).
+Methods
+Bulk water
+The water dataset has 1,593 liquid water con ﬁgurations, each of 64
+molecules36. It was computed at the revPBE0-D3 level of density functional
+theory (DFT). 90% of the data are used in the training. We used a cutoff
+r
+cut =5 . 5 Å, 6 Bessel radial functions and c =1 2 , lmax ¼ 3, νmax ¼ 3,
+Nembedding= 3, and no message passing (T = 0) or one message passing layer
+(T =1 ) . T h eﬁtted CACE models have relatively few parameters: 24,572
+trainable parameters for the CACE water model with T = 0, and 69,320
+trainable parameters for the model withT =1 .
+In Table1, the NequIP and DeepMD models are trained by us, and the
+others are from the references. In addition, we also trained a MACE model
+with E RMSE = 1.9 meV/H
+2O, F RMSE = 46.8 meV Å−1. as the original
+Behler-Parrinello neural network (BPNN) in ref.36 was trained using the
+RuNNer code56, we also trained another one using N2P257 a n do b t a i n e dE
+RMSE = 5.8 meV/H2O, F RMSE = 108 meVÅ−1.
+Small molecules
+The ethanol data from the MD17 database 40 were sampled from DFT
+molecular dynamics simulations at 500 K. We used a cutoff rcut =4 Å,s i x
+Bessel radial functions,c =1 2 ,lmax ¼ 4, νmax ¼ 3, Nembedding=4 ,a n do n e
+message passing layer (T = 1). The model was trained on 1000 structures
+randomly selected from the dataset (90% train/10% validation split), and
+tested on another 10,000 random structures.
+The 3BPA dataset43 set consists of 500 training structures at 300 K. Test
+data are from simulations at 300 K, 600 K, and 1200 K. Forﬁtting the CACE
+model, we used rcut =6 Å, 8 Bessel radial functions, c = 12, lmax ¼ 4,
+νmax ¼ 3, Nembedding=4 ,a n dT =1 .
+25-element high-entropy alloys
+The HEA dataset from ref. 45 consists of 25,630 distorted crystalline
+structures containing 36 or 48 atoms on bcc or fcc lattices. We took a test set
+containing 1,000 conﬁgurations, and used up to the rest of the 24,630 data
+points for training and validation. We used a CACE model withrcut =4 . 5Å,
+lmax ¼ 3, νmax ¼ 3, Nembedding=3 ,a n dT =1 .
+Data availability
+The water dataset is from https://github.com/BingqingCheng/ab-initio-
+thermodynamics-of-water. MD17-ethanol is fromhttp://www.sgdml.org/#
+datasets.B P Ai sf r o mr e f . 43, downloaded from https://github.com/
+davkovacs/BOTNet-datasets. The HEA25 dataset is from ref. 45,d o w n -
+loaded from https://archive.materialscloud.org/record/2023.57.T h et r a i n -
+ing scripts, trained CACE potentials, and MD input ﬁles are available at
+https://github.com/BingqingCheng/caceﬁt.
+Code availability
+The CACE package is publicly available at https://github.com/
+BingqingCheng/cace.
+Received: 19 March 2024; Accepted: 28 June 2024;
+References
+1. Keith, J. A. et al. Combining machine learning and computational
+chemistry for predictive insights into chemical systems. Chem. Rev.
+121, 9816–9872 (2021).
+2. Unke, O. T. et al. Machine learning force ﬁelds. Chem. Rev. 121,
+10142–10186 (2021).
+3. Musil, F. et al. Physics-inspired structural representations for
+molecules and materials. Chem. Rev. 121, 9759–9815 (2021).
+4. Drautz, R. Atomic cluster expansion for accurate and transferable
+interatomic potentials. Phys. Rev. B 99, 014104 (2019).
+5. Behler, J. & Parrinello, M. Generalized neural-network representation
+of high-dimensional potential-energy surfaces. Phys. Rev. Lett. 98,
+146401 (2007).
+6 . B a r t ó k ,A .P . ,P a y n e ,M .C . ,K o n d o r ,R .&C s á n y i ,G .á b o rG a u s s i a n
+approximation potentials: the accuracy of quantum mechanics,
+without the electrons. Phys. Rev. Lett. 104, 136403 (2010).
+7. Shapeev, A. V. Moment tensor potentials: a class of systematically
+improvable interatomic potentials. Multiscale Model. Simul. 14,
+1153–1173 (2016).
+8. Bartók, A. P., Kondor, R. & Csányi, G. ábor On representing chemical
+environments. Phys. Rev. B 87, 184115 (2013).
+9. Schütt, K.et al. Schnet: a continuous- ﬁlter convolutional neural
+network for modeling quantum interactions. Adv. Neural Inf. Process.
+Syst. 30 (2017).
+10. Unke, O. T. & Meuwly, M. Physnet: A neural network for predicting
+energies, forces, dipole moments, and partial charges. J. Chem.
+Theory Comput. 15, 3678–3693 (2019).
+11. Liuet, Y. al. Spherical message passing for 3d molecular graphs. In
+Proc. International Conference on Learning Representations
+(ICLR) (2022).
+12. Gasteiger, J., Becker, F. & Günnemann, S. Gemnet: universal
+directional graph neural networks for molecules. Adv. Neural Inf.
+Process. Syst. 34, 6790–6802 (2021).
+13. Haghighatlari, M. et al. Newtonnet: a Newtonian message passing
+network for deep learning of interatomic potentials and forces. Digit.
+Discov. 1, 333–343 (2022).
+Table 4 | Mean absolute error (MAE) of energy (E) and force (F)
+for the HEA25 dataset, reported in units of meV and meV Å −1
+AL 3B+NN45 PET46 CACE
+test, E 10 1.87 5.28
+test, F 190 60.1 111
+substitute, E 24 N.A. 8.5
+substitute, F 373 N.A. 124
+5000 K, E 48 152 15.3
+5000 K, F 290 233
+There are three sets of benchmarks on test error, alchemical extrapolation to unseen Re and Os
+substitute atoms, and temperature transferability to 5000 K.
+Table 5 | Speed of MD of liquid water (in picoseconds of
+simulation per hour) using different water models on a single
+Nvidia A100 GPU
+NequiIP17 MACE18 CACE
+4.5 Å, T = 3 6 Å 5.5 Å, T = 1
+1536 atoms 20 ps per h 18 ps per h 24 ps per h
+5184 atoms 7 ps per h 4.8 ps per h 8 ps per h
+12,288 atoms 3 ps per h 2 ps per h 3.5 ps per h
+24,000 atoms 1.65 ps per h N.A. 1.7 ps per h
+https://doi.org/10.1038/s41524-024-01332-4 Article
+npj Computational Materials |          (2024) 10:157 8

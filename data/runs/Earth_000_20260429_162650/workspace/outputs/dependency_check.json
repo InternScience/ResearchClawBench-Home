@@ -1,0 +1,28 @@
+{
+  "pandas": {
+    "available": true
+  },
+  "numpy": {
+    "available": true
+  },
+  "matplotlib": {
+    "available": true
+  },
+  "seaborn": {
+    "available": true
+  },
+  "scipy": {
+    "available": true
+  },
+  "pdf_reader": {
+    "available": false,
+    "note": "Built-in ReadPDF failed on two PDFs; PyMuPDF fallback succeeded for all five related_work PDFs."
+  },
+  "runtime": {
+    "python": "3.10.12"
+  },
+  "pymupdf": {
+    "available": true,
+    "note": "Installed and used locally for related_work PDF extraction."
+  }
+}

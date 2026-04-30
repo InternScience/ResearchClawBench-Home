@@ -1,0 +1,7 @@
+claim,artifact
+The verified initial dataset contains 184 formulations with complete glass-strength targets for model fitting.,outputs/data_overview.json; outputs/initial_cleaned.csv
+Best cross-validated model was ExtraTrees with RMSE 25.92 kPa and R2 0.68.,outputs/model_metrics.csv; report/images/figure_2_model_validation.png
+The maximum measured value in available optimization tables was 353.29 kPa; no measured row exceeded the strict 1 MPa (=1000 kPa) target under the workbook unit labels.,outputs/optimization_summary.csv; report/images/figure_3_optimization_trajectory.png
+"283 optimization rows exceeded 100 kPa, showing high but sub-MPa adhesion in the available files.",outputs/optimization_summary.csv
+Top de novo candidate has RF=265.9 kPa and GP=102.8±110.7 kPa.,outputs/design_candidates.csv; report/images/figure_5_design_candidates.png
+Most influential monomer by permutation importance was Cationic-ATAC.,outputs/feature_importance.csv; report/images/figure_4_interpretability.png

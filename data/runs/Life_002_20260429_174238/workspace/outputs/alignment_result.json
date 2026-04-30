@@ -1,0 +1,55 @@
+{
+  "query": "7xg4",
+  "target": "6n40",
+  "chain_correspondence": [
+    {
+      "query_chain": "H",
+      "target_chain": "A",
+      "aligned_residue_pairs": 234,
+      "query_ca": 234,
+      "target_ca": 726
+    }
+  ],
+  "superimposition": {
+    "definition": "transformed_query_coord = query_coord @ rotation.T + translation",
+    "rotation_3x3": [
+      [
+        -0.9369371305378039,
+        0.31979761957851366,
+        0.14099041077854646
+      ],
+      [
+        0.12539394743176666,
+        -0.06895931320779458,
+        0.9897075179412289
+      ],
+      [
+        0.3262287102127372,
+        0.9449730660890949,
+        0.024509855142536476
+      ]
+    ],
+    "translation_A": [
+      145.81523890467778,
+      -285.80176943976625,
+      -158.12357894885542
+    ]
+  },
+  "metrics": {
+    "aligned_len": 234,
+    "rmsd_A": 13.21850581137246,
+    "mean_distance_A": 11.57884956446795,
+    "median_distance_A": 10.667658327417799,
+    "tm_score_norm_max_chain_length": 0.151624363452104,
+    "tm_score_norm_query_length": 0.29957628822285326,
+    "tm_score_norm_target_length": 0.151624363452104,
+    "d0_norm_max_A": 9.267381621847376
+  },
+  "method_limitations": [
+    "Foldseek, USalign, and TMalign executables were not available; results use a local Kabsch/dynamic-programming fallback rather than exact Foldseek-Multimer.",
+    "6n40 contains one protein chain, so complex chain correspondence reduces to selecting the best 7xg4 protein chain for 6n40 chain A.",
+    "TM score is computed on CA residue pairs from the fallback alignment and should be interpreted as TM-score-like, not an official TM-align/Foldseek value."
+  ],
+  "matched_residue_pairs_csv": "outputs/matched_residue_pairs.csv",
+  "superposed_matched_ca_pdb": "outputs/superposed_matched_ca.pdb"
+}

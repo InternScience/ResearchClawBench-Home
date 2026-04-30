@@ -1,0 +1,6 @@
+claim,artifact,support,status
+"The reduced mangrove input contains 100,000 point samples rather than polygons.",outputs/data_overview.json; outputs/data_structure_inspection.json,mangrove_sample_points and input geometry inspection,verified
+Median relative SLR rates increase from SSP2-4.5 to SSP5-8.5 across sampled mangroves.,outputs/scenario_summary.csv,median_slr_rate_mm_yr by scenario,verified
+The 7 mm/yr RSLR stress threshold is exceeded for a larger area under higher-emission scenarios.,outputs/scenario_summary.csv; figure_2_scenario_risk_comparison.png,pct_area_above_7mm,verified
+TC exposure is represented as a historical intensity-distance exposure because the TC file lacks year/storm identifiers.,outputs/data_overview.json; outputs/data_structure_inspection.json,tc_file_limitation and variable inspection,verified limitation
+"High/very-high composite risk areas imply ecosystem-service exposure using a transparent US$20,000 ha-1 yr-1 proxy.",outputs/scenario_summary.csv; outputs/regional_summary.csv,service_value_high_or_very_high_usd_yr fields,proxy estimate

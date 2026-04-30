@@ -1,0 +1,26 @@
+{
+  "A_shape": [
+    1000,
+    2000
+  ],
+  "b_shape": [
+    1000
+  ],
+  "x_true_shape": [
+    2000
+  ],
+  "A_mean": -2.408784787513694e-05,
+  "A_std": 0.13603953901911142,
+  "b_mean": 0.01059819578708869,
+  "b_std": 1.3206526899772704,
+  "x_true_nonzeros": 100,
+  "x_true_l1": 83.75756235475646,
+  "x_true_l2": 10.110685321507308,
+  "gram_rank_tol_1e-10": 1000,
+  "sigma_max_A": 9.99999999999999,
+  "sigma_min_nonzero_A": 0.9999999999999971,
+  "condition_nonzero_A": 10.00000000000002,
+  "L_smooth_loss": 0.0999999999999998,
+  "restricted_mu_rowspace": 0.0009999999999999942,
+  "meta": "Lasso Regression Problem with Condition Number 10"
+}

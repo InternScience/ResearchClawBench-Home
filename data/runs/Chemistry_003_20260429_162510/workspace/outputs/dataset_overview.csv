@@ -1,0 +1,4 @@
+dataset,n_frames,n_atoms_min,n_atoms_max,species,has_energy,energy_min,energy_max,has_forces,pbc_any,metadata_keys
+random_charges,100,128,128,X,False,nan,nan,False,False,true_charges
+charged_dimer,60,8,8,C+H,True,0.25822117555607194,1.8443943208912492,True,False,
+ag3_chargestates,60,3,3,Ag,True,0.37537893458342664,3.270743808205827,True,False,charge_state;total_charge

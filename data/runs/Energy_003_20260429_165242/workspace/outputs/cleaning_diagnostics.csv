@@ -1,0 +1,14 @@
+file_entity,kind,start,end,rows,expected_hours_in_span,duplicate_timestamps,missing_hours_in_span,unexpected_hours,irregular_hour_steps,missing_values_total,negative_values_total,zero_pv_hours,nonzero_precip_hours,robust_outliers__Electricity [kW],robust_outliers__Heat [mmBTU],robust_outliers__Cooling Energy [Ton],robust_outliers__PV Power Generation [kW],robust_outliers__Greenhouse Gas Emission [Ton],robust_outliers__Temperature [°F],robust_outliers__Dew Point [°F],robust_outliers__Humidity [%],robust_outliers__Wind Speed [mph],robust_outliers__Wind Gust [mph],robust_outliers__Pressure [in],robust_outliers__Precipitation [in]
+BN001,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN002,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN003,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN004,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN005,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN006,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN007,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN008,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN009,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+BN010,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+CN01,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+Total,energy,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,4015.0,,0.0,0.0,0.0,0.0,0.0,,,,,,,
+Total_weather,weather,2014-01-01 00:00:00,2014-12-31 23:00:00,8760,8760,0,0,0,0,0,0,,386.0,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0

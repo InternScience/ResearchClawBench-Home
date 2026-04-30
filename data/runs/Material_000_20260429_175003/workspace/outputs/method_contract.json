@@ -1,0 +1,13 @@
+{
+  "task": "AI-powered search engine for altermagnetic material discovery from crystal structure graph data",
+  "named_commitments": [
+    "Use large unlabeled crystal graph set for self-supervised/pre-training or a faithful pretraining-inspired representation step",
+    "Fine-tune/train classifier on scarce labeled altermagnet set with class imbalance",
+    "Predict probabilities for unlabeled candidate materials",
+    "Export ranked candidate list and validate against hidden labels if accessible",
+    "Report electronic-structure-like property classifications where available or derived from dataset fields",
+    "Generate mandatory figures: data overview, main results, validation/comparison plots"
+  ],
+  "primary_quantities": ["classification metrics", "candidate probability", "top-K discovery yield", "candidate ranking", "calibration"],
+  "constraints": ["data and related_work read-only", "figures PNG only", "report/report.md required"]
+}

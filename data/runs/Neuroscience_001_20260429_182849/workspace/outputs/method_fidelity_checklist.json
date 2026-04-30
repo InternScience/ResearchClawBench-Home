@@ -1,0 +1,29 @@
+{
+  "DMN_fidelity": [
+    {
+      "criterion": "connectome file declared",
+      "evidence": "_meta.yaml connectome.file=fib25-fib19_v2.2.json",
+      "satisfied": true
+    },
+    {
+      "criterion": "fixed connectome sign/count parameters present",
+      "evidence": "checkpoint network keys edges_sign and edges_syn_count have identical summaries across 50 models",
+      "satisfied": true
+    },
+    {
+      "criterion": "learned kinetic/node parameters present",
+      "evidence": "checkpoint network keys nodes_bias and nodes_time_const vary across models",
+      "satisfied": true
+    },
+    {
+      "criterion": "learned unit synaptic strengths present",
+      "evidence": "checkpoint key edges_syn_strength varies across models and is nonnegative",
+      "satisfied": true
+    },
+    {
+      "criterion": "full voltage simulation of 45,669 neurons",
+      "evidence": "not executable without flyvis runtime/stimulus cache",
+      "satisfied": false
+    }
+  ]
+}

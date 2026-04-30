@@ -1,0 +1,32 @@
+{
+  "python": "3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]",
+  "dependencies": {
+    "pandas": {
+      "available": true
+    },
+    "numpy": {
+      "available": true
+    },
+    "sklearn": {
+      "available": true
+    },
+    "matplotlib": {
+      "available": true
+    },
+    "seaborn": {
+      "available": true
+    },
+    "openpyxl": {
+      "available": true
+    },
+    "scipy": {
+      "available": true
+    },
+    "shap": {
+      "available": true
+    }
+  },
+  "limitations": [
+    "ReadPDF parser failed; related work limited to README and any future successful parsing."
+  ]
+}

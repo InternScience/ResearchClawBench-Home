@@ -1,0 +1,6 @@
+claim,artifact,evidence,status
+Benchmark contains 30 IMO geometry problems,outputs/problem_metrics.csv,30,verified
+Target predicates include coll/cong/cyclic/eqangle/eqratio/para/perp,outputs/summary_metrics.json,"{""cong"": 12, ""coll"": 7, ""cyclic"": 5, ""eqangle"": 2, ""perp"": 2, ""eqratio"": 1, ""para"": 1}",verified
+Prototype exact solve rate is conservative and measured on all entries,outputs/problem_level_results.csv,0.0,verified
+Rule/definition usage is interpretable,outputs/rule_usage.csv,"[[""def:on_line"", 209], [""def:on_circle"", 109], [""rule:24"", 101], [""def:circle"", 80], [""def:on_bline"", 49]]",verified
+Incomplete proving is a limitation rather than absence of theorems,outputs/validation_summary.json,Exact symbolic proving is conservative and incomplete; numerical realization covers only a practical subset of construction operators.; Forward chaining uses a safe bounded subset of rules to avoid unsound combinatorial explosion.,limited

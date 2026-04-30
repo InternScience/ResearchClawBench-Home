@@ -1,0 +1,19 @@
+{
+  "dependency_status": {
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "sklearn": true,
+    "Bio": false,
+    "PyPDF2": false,
+    "pdftotext_executable": false,
+    "data/1brs_AD.pdb_exists": true,
+    "data/skempi_v2.csv_exists": true
+  },
+  "fallbacks": {
+    "Bio_missing": "Use custom lightweight PDB parser rather than Biopython",
+    "HADDOCK3_runtime": "No local HADDOCK3 dependency assumed; implement transparent HADDOCK-like contact/electrostatic/desolvation surrogate for single input structure, not full docking."
+  }
+}

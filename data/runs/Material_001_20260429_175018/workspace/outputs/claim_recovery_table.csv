@@ -1,0 +1,6 @@
+claim,supporting_artifact,status
+"The file supports three prototype workflows: property prediction, structure generation, and autonomous optimization.",data/M-AI-Synth__Materials_AI_Dataset_.txt; outputs/dataset_overview.json,directly verified
+Best tabular graph-descriptor property model is Ridge with CV MAE 0.599.,outputs/property_model_metrics.csv; report/images/property_prediction_validation.png,computed
+"Top generated lattice candidate has a=5.6789, b=5.3456, desirability=0.696.",outputs/top_structure_candidates.csv; report/images/structure_candidate_map.png,computed proxy
+Optimization workflow recommends next high-UCB condition near 425.0 C and 25.5 min.,outputs/optimization_recommendations.csv; report/images/optimization_surface.png,computed surrogate/illustrative
+"Exact CGCNN or multimodal image/spectra/text fusion was not possible because the dataset lacks species-resolved structures, image files, spectra, and literature text records.",outputs/method_fidelity_checklist.json; outputs/dependency_check.json,limitation

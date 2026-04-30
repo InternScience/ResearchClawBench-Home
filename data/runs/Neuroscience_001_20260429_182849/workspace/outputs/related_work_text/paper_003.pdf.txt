@@ -1,0 +1,524 @@
+Article
+Neuronal circuits integrating visual motion
+information in Drosophila melanogaster
+Graphical abstract
+Highlights
+d EM reconstruction of lobula plate neurons integrating ON-
+and OFF-motion pathways
+d Revealed core circuit motif of motion processing in each
+lobula plate layer
+d Discovered novel neuron types integrating vertical and
+horizontal motions
+d Substantial motion information ﬂows from the lobula plate to
+the lobula
+Authors
+Kazunori Shinomiya, Aljoscha Nern,
+Ian A. Meinertzhagen,
+Stephen M. Plaza, Michael B. Reiser
+Correspondence
+kshinomiya@ﬂatironinstitute.org (K.S.),
+reiserm@janelia.hhmi.org (M.B.R.)
+In brief
+Shinomiya et al. report the
+comprehensive identiﬁcation of neurons
+in the Drosophila melanogaster lobula
+plate that receive inputs from the
+directionally selective T4 and T5 cells,
+using a reconstruction of 3D electron
+microscopy data. The two pathways
+share common synaptic partners, and
+multidirectional motion signals are
+integrated to encode new directions.
+Shinomiya et al., 2022, Current Biology 32, 3529–3544
+August 22, 2022 ª 2022 The Authors. Published by Elsevier Inc.
+https://doi.org/10.1016/j.cub.2022.06.061 ll
+
+Article
+Neuronal circuits integrating visual motion
+information inDrosophila melanogaster
+Kazunori Shinomiya,1,3,6,* Aljoscha Nern,1 Ian A. Meinertzhagen, 1,2 Stephen M. Plaza, 1,4 and Michael B. Reiser 1,5,*
+1Janelia Research Campus, Howard Hughes Medical Institute, 19700 Helix Drive, Ashburn, VA 20147, USA
+2Department of Psychology and Neuroscience, Dalhousie University, 1355 Oxford Street, Halifax, NS B3H 4R2, Canada
+3Present address: Center for Computational Neuroscience, Flatiron Institute, Simons Foundation, 160 Fifth Avenue, New York, NY 10010,
+USA
+4Present address: Meta, 1 Hacker Way, Menlo Park, CA 94025, USA
+5Twitter: @MichaelBReiser
+6Lead contact
+*Correspondence: kshinomiya@ﬂatironinstitute.org (K.S.), reiserm@janelia.hhmi.org (M.B.R.)
+https://doi.org/10.1016/j.cub.2022.06.061
+SUMMARY
+The detection of visual motion enables sophisticated animal navigation, and studies on ﬂies have provided
+profound insights into the cellular and circuit bases of this neural computation. The ﬂy’s directionally selec-
+tive T4 and T5 neurons encode ON and OFF motion, respectively. Their axons terminate in one of the four
+retinotopic layers in the lobula plate, where each layer encodes one of the four directions of motion. Although
+the input circuitry of the directionally selective neurons has been studied in detail, the synaptic connectivity of
+circuits integrating T4/T5 motion signals is largely unknown. Here, we report a 3D electron microscopy recon-
+struction, wherein we comprehensively identiﬁed T4/T5’s synaptic partners in the lobula plate, revealing a
+diverse set of new cell types and attributing new connectivity patterns to the known cell types. Our recon-
+struction explains how the ON- and OFF-motion pathways converge. T4 and T5 cells that project to the
+same layer connect to common synaptic partners and comprise a core motif together with bilayer interneu-
+rons, detailing the circuit basis for computing motion opponency. We discovered pathways that likely encode
+new directions of motion by integrating vertical and horizontal motion signals from upstream T4/T5 neurons.
+Finally, we identify substantial projections into the lobula, extending the known motion pathways and sug-
+gesting that directionally selective signals shape feature detection there. The circuits we describe enrich
+the anatomical basis for experimental and computations analyses of motion vision and bring us closer to un-
+derstanding complete sensory-motor pathways.
+INTRODUCTION
+Flying ﬂies react to complex visual stimuli with acrobatic maneu-
+vers in a matter of milliseconds,1 which has inspired many to use
+the Drosophila melanogaster visual system to uncover circuit
+mechanisms of many neural computations. 2–9 Genetic driver
+lines enable studies of these computations,10–14 often testing cir-
+cuit hypotheses suggested by connectomes based on three-
+dimensional electron microscopy (3D-EM). The ﬂy optic lobe
+has four major neuropils (lamina, medulla, lobula, and lobula
+plate; Figure 1 A) that are characterized by neurons connecting
+these structures and layer patterns housing these connections.
+The diversity of optic lobe neuron types has been well docu-
+mented using classic methods
+16,17 and more recently genetic
+driver lines for cell-type-speciﬁc expression. 12,18,19
+The synaptic connectivity of neurons in the lamina, medulla,
+and lobula 15,20–24 have been described by 3D-EM reconstruc-
+tions. Together with functional studies, these data have revealed
+the detailed circuitry and likely mechanism(s) of motion detection
+by T4 and T5 neurons. T4 are the ON directionally selective neu-
+rons: they encode the direction of a bright edge’s motion, while
+none of their dendritic inputs do.
+25 T5 are OFF directionally se-
+lective neurons that encode the direction of moving dark edges
+by integrating inputs onto their dendrites in the ﬁrst lobula layer
+(Lo1).
+15,26 Both cells have four distinct subtypes, a, b, c, and d,
+that each project axons, retinotopically arranged, to one of the
+four layers of the lobula plate ( Figure 1B).9,16
+The evolutionary origin of the lobula plate may relate to the
+origin of insect ﬂight.27 The neuropil is best known for containing
+the dendrites of the ‘‘giant’’ lobula plate tangential cells
+(LPTCs).
+17,28–31 Many of these cells encode the optic ﬂow—the
+pattern of visual motion—seen by ﬂies during ﬂight maneuvers
+such as body rotations, 32 suggesting that they play a key role
+in regulating ﬂight behaviors. The vertical system (VS) and hori-
+zontal system (HS) cells, which have been identiﬁed in both
+larger ﬂies and Drosophila,
+16,29 are the best-studied LPTCs.
+The morphology of these cells in Drosophila was examined using
+genetic single-cell labeling, 33 and the electrophysiologically
+measured responses of these cells to visual motion patterns
+match those of larger ﬂies. 34,35
+The 2-photon calcium imaging of T4 and T5 responses in the
+lobula plate9 has revealed that these inputs into the lobula plate
+Current Biology 32, 3529–3544, August 22, 2022 ª 2022 The Authors. Published by Elsevier Inc. 3529
+This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/).
+ll
+OPEN ACCESS
+mainly respond to motion along one cardinal direction: front-to-
+back (Lop1), back-to-front (Lop2), upward (Lop3), and down-
+ward (Lop4), near the center of the eye. However, recent work
+has shown that the population of T4/T5 cells encodes a global
+pattern that is not consistent with these cardinal directions
+throughout the eye.
+36 Anatomical and physiological data sug-
+gest a correlation between an LPTC’s visual motion responses
+and its lobula plate layer pattern,
+29,37 although each neuron’s
+selectivity for visual motion patterns can be inﬂuenced by
+network connections. 38,39 Many details of the lobula plate cir-
+cuitry have not been thoroughly investigated, with the note-
+worthy exception of two bilayer lobula plate-intrinsic (LPi) cells:
+LPi3-4 receives input in Lop3 and provides output to Lop4,
+whereas LPi4-3 sends signals from Lop4 to Lop3.
+16,40,41 These
+cells inhibit their target LPTCs in response to motion in the
+opposing direction, sharpening the ﬂow-ﬁeld selectivity of the
+tangential cells, in a computation termed ‘‘motion oppo-
+nency.’’
+40 Functional studies 4,40,42 suggest this occurs through
+the integration of excitatory, cholinergic T4/T5 input and inhibi-
+tory, glutamatergic LPi inputs by LPTCs, but the synaptic con-
+nectivity proposed by this parsimonious circuit hypothesis had
+not been veriﬁed.
+The lobula plate also houses processes of other columnar
+neuron types, including optic lobe-intrinsic neurons, such as
+Y, TmY (transmedulla Y), and Tlp (trans lobula plate) cells,
+which connect different optic lobe neuropils, and the LPC (lob-
+ula plate columnar), LLPC (lobula-lobula plate columnar), and
+LPLC (lobula plate-lobula columnar) cells, which are visual pro-
+jection neurons (VPNs) into the central brain.
+4,16,43–49 Detailed
+connectivity information for these neurons is unknown and rep-
+resents the last piece of the puzzle for the anatomical descrip-
+tion of the motion information-processing circuit in the optic
+lobe. To close this gap, we reconstructed the neurons down-
+stream of T4 and T5 in the lobula plate using a dataset imaged
+with focused-ion beam-aided scanning EM (FIB-SEM).
+15,50 We
+exhaustively identiﬁed and cataloged T4/T5 synaptic partners
+and investigated complete synaptic proﬁles of LPi cells and
+the HS and VS cells. In the process, we identiﬁed new cell
+types as important components of the motion vision pathway
+and attributed new connectivity patterns to the known cell
+types, resolving several open questions about lobula plate
+connectivity.
+RESULTS
+EM reconstruction of the synaptic partners of T4 and T5
+cells in the lobula plate
+Our FIB-SEM data volume
+15,50 includes large parts of the lamina,
+medulla, lobula, and lobula plate ( Figure 1 A), covering regions
+corresponding to the eye’s equator. This volume contains
+many connected neurons corresponding to common retinotopic
+coordinates, enabling circuit reconstruction across neuropils.
+Medulla neurons, including Mi1, Tm1, and Tm2, relay signals to
+T4 in M10 and T5 in Lo1 ( Figure 1 A).
+15 The four subtypes of T4
+and T5 send outputs to one of the four lobula plate layers
+(deﬁned to encompass the terminals of groups of T4 and T5
+cells; STAR Methods), where they synapse with optic lobe inter-
+neurons and neurons projecting to the central brain ( Figures 1B
+and 1C). The major ﬁndings of our analysis are summarized in a
+series of ﬁgures and data tables ( Data S1 , S2, and S3; see
+resource availability for further data availability).
+Connectivity of the seed T4 and T5 cells in the lobula
+plate
+We reconstructed and then identiﬁed many neurons in the FIB-
+SEM volume, focusing on T4 and T5 cells and their targets. In to-
+tal, 277 T4s and 277 T5s were identiﬁed and at least partially re-
+constructed. Five cells of each subtype from a retinotopically
+overlapping region near the volume center were completely
+traced.
+15 In the previous study, we detailed the dendritic inputs
+of these neurons, and here, we describe the connectivity of these
+same 40 cells in the lobula plate. All computationally predicted
+synapses (STAR Methods) of these cells were proofread to iden-
+tify their presynaptic and postsynaptic partners.
+The connectivity of the inputs and outputs of the representa-
+tive T4 and T5 cells in the lobula plate is summarized inFigure 2A,
+including all neurons connected with R5 synapses to any of the
+seed neurons (detailed connectivity data are in Data S1; connec-
+tivity summary for R3 synapses is in Figure S1). We found 58 pu-
+tative connected neuron types (mean of R5 synapses with any
+T4 or T5), including 16 unidentiﬁed fragments ( Figure 2A; shown
+in gray). 74% of these communicate with the same subtype of T4
+and T5, resulting in the four clusters in the connectivity diagram,
+each corresponding to synapses within one lobula plate layer.
+One noteworthy exception is LPLC2, the only neuron found to
+receive inputs from all T4/T5 subtypes, corroborating the obser-
+vation that this cell type integrates spatially patterned inputs to
+detect looming objects.
+4
+How are the ON and OFF pathways integrated into the lobula
+plate? In nearly every case, neurons that are strongly connected
+to T4/T5 receive inputs from both cells but with a consistent bias
+for T5 (pooled across all downstream neurons: 45.4% T4 versus
+54.6% T5; Figure 2 B). This suggests that lobula plate neurons
+that primarily integrate inputs from T4 and T5 should respond
+to both bright and dark moving edges. However, some neurons
+may show differential sensitivity to dark or bright objects due to
+the greater percentage of inputs from T5 neurons as well as from
+other inputs. For example, LPLC2 responds more strongly to
+dark looming stimuli,
+4 despite substantial, though T5-biased, in-
+puts from both cells ( Figure 2B).
+In mapping computational models onto the circuitry of the mo-
+tion pathway, the T4/T5 axons are treated as output structures.40
+We ﬁnd that T4 and T5 axon terminals are the primarily sites of
+synaptic output but have some inputs: 87% of T4’s and 88%
+of T5’s lobula plate synapses are presynaptic. T5 neurons
+feature higher synapse counts, which is consistent with the con-
+nectivity bias for T5 inputs (Figure 2B). We ﬁnd T4-T4, T5-T5, and
+T4-T5 connections within each layer that account for 27.8% of
+the total inputs to these cells ( Data S1 ). These occur between
+neighboring axon terminals, and each inter-terminal connection
+is typically %3 synapses and are reminiscent of the within-sub-
+type connections seen between dendrites of these cells.
+15
+Several cell types, including Y11 and Y12, provide strong input
+to T4/T5 terminals (indicated in magenta, Figure 2 A), but it is
+not known whether these neurons inhibit or excite T4 and T5.
+T4 and T5 neurons with more output synapses tend to have
+more inputs ( Figure 2 C). For example, T4a and T5a had more
+presynapses and postsynapses than the other subtypes, due
+ll
+OPEN ACCESS
+3530 Current Biology 32, 3529–3544, August 22, 2022
+Article
+Figure 1. EM reconstruction of the synaptic partners of T4 and T5 cells in the lobula plate
+(A) The optic lobe FIB-SEM dataset covers a subvolume of the medulla (ME), lobula (LO), and lobula plate (LOP), as well as the proximal part of the lamina (LA),
+selected to contain many connected neurons of the motion pathway. The dataset was imaged with voxel size x = y = z = 8 nm, and the size of the image stack is
+19,162 3 10,657 3 22,543 pixels, equivalent to 153 3 85 3 180 mm.15 In the right panel, representative neurons in the ON- and OFF-motion pathways in the
+medulla and the lobula, as well as a lobula plate tangential cell (VS cell) are shown (panel was adapted from Shinomiya et al. 15). M, medial; A, anterior.
+(B) Subtypes of the T4 and T5 cells. The T4 cells receive inputs onto their dendrites in medulla layer 10 (M10), and T5 neurons receive dendritic input in lobula layer
+1 (Lo1). Both cell types project through the non-synaptic second optic chiasm (OCH2) and stratify into the four layers of the lobula plate (Lop1–Lop4) . The cell
+bodies are located at the cell body layer (CBL) in the lobula plate cortex. The cell bodies and the cell body ﬁbers are shown in gray, while some cell bodie s are not
+shown.
+(C) A schematic diagram of the motion circuit. Local luminance is detected by the photoreceptors R1 /C0R6 in the retina. The signals are relayed to the lamina cells
+(L1, L2, and L3), which send outputs to various columnar cells in the medulla (not detailed here). The 4
+th order T4 and T5 neurons integrate inputs from the ON- and
+OFF-motion-pathway neurons, respectively, and project to the lobula plate. The four subtypes (a, b, c, and d) detect visual motion in the front-to-ba ck, back-to-
+front, upward, and downward directions, respectively, and project axons to the corresponding lobula plate layer where these directionally selecti ve signals are
+integrated by lobula plate neurons.
+ll
+OPEN ACCESS
+Current Biology 32, 3529–3544, August 22, 2022 3531
+Article
+Figure 2. Connectivity of the seed T4 and T5 cells in the lobula plate
+(A) The inputs and outputs of representative T4 and T5 cells (ﬁve cells per each subtype; see text for details and also Data S1 ) in the lobula plate were
+comprehensively identiﬁed. The input and output cells were grouped by the cell type, and the inputs and outputs corresponding to a mean of more than ﬁve
+(legend continued on next page)
+ll
+OPEN ACCESS
+3532 Current Biology 32, 3529–3544, August 22, 2022
+Article
+to strong connections with several Lop1 neurons, including
+TmY20, HS, and LPi1-2 cells ( Figure 2A; Data S1).
+T4 and T5 provide strong inputs to diverse VPNs, including
+many tangential cells (identiﬁed cells named and indicated in
+green; Figure 2 A). The connectivity of the well-known HS and
+VS cells
+29,33 is described in Figure 3 . Small-ﬁeld VPN types
+(LPC, LLPC, and LPLC cells) 43,45,48,49 are also found with sub-
+stantial T4/T5 inputs in each layer, and the morphology of con-
+nected VPNs is shown in Figure 5 . T4 and T5 cells synapse
+onto bilayer LPi cells in each layer, which are further explored
+in Figure 4 . We also identiﬁed many connections between T4/
+T5 neurons and other optic lobe-intrinsic neurons, such as the
+TmY, Y, and Tlp cells (morphology shown in Figure 6) that inter-
+connect different neuropils. For most newly described optic
+lobe-intrinsic cell types, we provide light microscopy (LM) im-
+ages as additional validation ( Figures S2 and S3). We conclude
+with a summary of the core connectivity motifs at this output
+stage of the visual motion pathway ( Figure 7).
+Synaptic connections of the horizontal system (HS) and
+vertical system (VS) lobula plate tangential cells
+The HS and VS cells have been extensively studied
+32–35,53 and
+are major T4/T5 targets in their respective layers ( Figure 2 A). In
+Lop1, T4a and T5a provide strong inputs to the HS cells (T4a,
+mean of 44.6 synapses; T5a, mean of 53.4 synapses; Data S1).
+Each lobula plate houses 3 cells, HSN, HSE, and HSS (north,
+equatorial, and south).
+33 In our imaged volume, we ﬁnd identiﬁ-
+able fragments of all three cells ( Figures 3 A and 3B), with den-
+drites that are almost purely postsynaptic. Based on the compu-
+tational predictions, HSN, HSE, and HSS had 6,151, 4,514, and
+2,066 postsynaptic densities and 7, 2, and 3 presynaptic T-bars,
+respectively, with most of the inputs supplied by T4a and T5a
+(Figure 3F).
+In Lop4, the VS cells receive a large fraction of T4d and T5d’s
+synaptic outputs (Figures 2A and 2B). We identiﬁed 10 VS or VS-
+like cells in Lop4 ( Figures 3 C and 3D), exceeding the expected
+number of VS cells in Drosophila based on earlier genetic label-
+ing studies
+33 but consistent with the number in larger ﬂies 31,54,55
+and a recent reconstruction in Drosophila.37 These 10 cells have
+many common features: primary dendritic processes in Lop4
+that are predominantly postsynaptic (typically >95% of the total
+synapses) and simple connectivity proﬁles, with /C2490% of the in-
+puts supplied by T4d, T5d, and LPi3-4 (Figure 3F; Video S1). Four
+of the 10 VS and VS-like cells also have dendritic branches in
+Lop2 ( Figure 3 D). VS cells with dendritic arbors outside Lop4
+have been previously described.
+37,56 By integrating directionally
+selective inputs in other layers, these neurons should incorpo-
+rate regional horizontal motion that accompanies body and
+head rotation around certain axes. 32,56,57
+HS and VS cells are connected with a very small set of cell
+types in the lobula plate, outlining minimal circuit elements that
+could participate in the nonlinear summation of dendritic in-
+puts.
+58 To quantify the input connectivity of these large neurons,
+we selected small ( %300 postsynaptic sites) branches of HS
+cells (one each from HSN and HSS) and VS cells (two Lop4
+branches and one Lop2 branch; each from different cells) and
+proofread all synaptic sites. Figure 3 E shows an HS branch
+and a Lop4 VS branch, and Video S1 shows a VS branch and
+its input neurons. The summary of these connectivity analyses
+(Figure 3 F) shows that /C2480% of the inputs are supplied by T4/
+T5. The HS (Lop1), VS (Lop4), and VS (Lop2) branches receive
+7.14%, 18.9%, and 10.7% of input synapses from bilayer LPi
+cells, respectively ( Figure 3 F; Data S2 ). Intriguingly, the Lop2
+VS branch receives inputs mainly from T4b, T5b, and LPi1-2
+cells, suggesting that it indeed receives back-to-front local mo-
+tion signals.
+How are the inputs from T4, T5, and LPi neurons organized
+onto the dendrites of these LPTCs? The spatial distribution of
+T4a, T5a, and LPi2-1 inputs onto HS cells features synapses
+throughout the thickness of Lop1 without any apparent organiza-
+tion or substructure ( Figures S4 A and S4A’). Likewise, VS and
+their input neurons display a patchy but mostly uniform synapse
+distribution in Lop4, whereas the Lop2 VS branch synapses are
+only found in the distal half of the layer ( Figures S4B and S4B’).
+The individual input synapses from T4, T5, and bilayer LPi onto
+individual HS and VS branches also feature a patchy distribution
+but with no obvious pattern in any of the three layers ( Figure S5,
+fragments same as those analyzed in Figure 3; Data S2). Overall,
+the connectivity between T4/T5, LPis, and the giant LPTCs is
+very similar across these layers ( Figures 3 E and 3F). This rela-
+tively simple connectivity structure strongly supports the expec-
+tations of the functional studies of HS and VS—they mainly inte-
+grate inputs from directionally selective T4/T5 cells that are
+further sharpened by motion opponent inputs from LPi
+neurons.
+40
+Connectivity of the bilayer lobula plate-intrinsic (LPi)
+cells
+We identiﬁed four bilayer LPi neuron types as major T4/T5 tar-
+gets (Figure 2A). A previous study described LPi3-4 and LPi4-3
+synapses per T4 or T5 cell are shown in the diagram (see Figure S1 for the same diagram but with the threshold lowered to three synapses per T4 or T5). The
+thickness of the arrows indicates the average number of synapses per T4 or T5 cell. Each rectangle indicates a cell type: colored rectangles correspon dt o
+uniquely identiﬁed cells, and gray rectangles represent neurons we could not uniquely identify due to incomplete reconstruction. For unidentiﬁed n eurons, the
+main innervated layers are shown in italic letters. For example, Lop(1)34 means that the fragment has major arbors in Lop3 and Lop4 and minor arbors in Lop1.
+Several unidentiﬁed neuron fragments share a common designation (e.g., Lop3) but are likely to represent independent neurons (so far as can be determ ined
+within the limited data volume). LPi are lobula-plate-intrinsic cells; the TmY/Y/Tlp neurons connect the optic lobe neuropils, and LPTC and LPLC/LL PC/LPC cells
+are visual projection neurons (VPNs) that send outputs to the central brain. T4 and T5 receive far fewer synaptic inputs in the lobula plate than they pr ovide output
+synapses. The cell types with more than ﬁve input synapses to T4 or T5 are highlighted with magenta frames.
+(B) Average numbers of output synapses from single T4 and T5 per postsynaptic cell type. Neurons are color coded by the layer where they receive inputs from T4
+and T5. Generally, the outputs from T4 and T5 (and therefore inputs to their target neurons) are approximately evenly integrated by the postsynaptic c ells, with a
+slight bias for T5. All the named neurons receiving more than an average of 20 synapses from both T4 and T5 are labeled (LPLC2 is labeled for all four layer s). The
+dashed lines indicate a 25% and 50% difference from equal numbers of output from T4 and T5 to any target cell type.
+(C) Total numbers of input and output synapses of the representative T4 and T5 cells. Autapses (self-synapses) and synaptic contacts with glia are exc luded from
+this quantiﬁcation. Averaged synapse numbers of each cell type (ﬁve individual neurons per each cell type) are indicated as gray crosses.
+ll
+OPEN ACCESS
+Current Biology 32, 3529–3544, August 22, 2022 3533
+Article
+Figure 3. Synaptic connections of the horizontal system (HS) and vertical system (VS) lobula plate tangential cells
+(A and B) The three HS cells (HSN, HSE, and HSS) occupy Lop1, the ﬁrst layer of the lobula plate. Collectively, the dendrites of these neurons span Lop1 an d
+overlap in the region of the lobula plate within our data volume but are cut off at the edges of the volume. (A) Posterior view; (B) ventral view.
+(C and D) The ten identiﬁed VS cells in our data volume. All have postsynaptic terminals in Lop4, whereas four of them also have branches in Lop2. (C) Post erior
+view; (D) ventral view.
+(E) Examples of major input neurons to the HS and VS cells in the lobula plate. Single-dendritic arbors (length /C2420 mm) of one HS cell and one VS cell are shown in
+white. HS dendrites primarily receive input from the T4a, T5a, and LPi2-1 cells in Lop1, whereas VS dendrites in Lop4 primarily receive input from the T 4d, T5d,
+and LPi3-4 cells. The T4 terminals are not shown to minimize clutter. Yellow and gray dots represent presynaptic and postsynaptic sites, respectivel y. The syn-
+apse distributions of HS, VS, and their input cells in the lobula plate are shown in more detail in Figures S4 and S5; inputs to a VS cell are illustrated in Video S1.
+(legend continued on next page)
+ll
+OPEN ACCESS
+3534 Current Biology 32, 3529–3544, August 22, 2022
+Article
+and speculated about the existence of all four types. 40 Here, we
+have reconstructed and identiﬁed LPi1-2 and LPi2-1 that bridge
+Lop1 and Lop2, conﬁrming these predictions, although we are
+unable to describe their complete morphology. We found a
+strong candidate for LPi1-2 using LM ( Figure S2 A), which sug-
+gests that LPi1-2, and perhaps also LPi2-1, may be considerably
+larger than LPi3-4 and LPi4-3. Conﬁrming this proposal will
+require extensive reconstruction in a larger EM volume. All four
+LPi neuron types innervate neighboring layers, with a stereotypic
+synapse distribution ( Figure 4, left). Each cell type has postsyn-
+aptic sites in one layer and presynaptic T-bars in the adjacent
+layer. At least 2/3 of the inputs are from layer-speciﬁc T4/T5
+cells, whereas the outputs are shared by many neuron types
+(Figure 4, right; Data S3). The proportion of output synapses rela-
+tive to all synaptic connections is very similar in LPi1-2, LPi2-1,
+and LPi4-3 and is close to 50%, whereas this number is lower
+in LPi3-4 ( Data S3 ), implicating functional or developmental
+differences.
+The LPi3-4 and LPi4-3 cells are glutamatergic,
+40,46 and these
+cells provide directionally selective inhibition to target neu-
+rons.40,42 Based on their similar morphology and connectivity,
+LPi1-2 and LPi2-1 are also likely inhibitory. This small circuit sup-
+ports the Mauss et al. 40 mechanism: bilayer LPi cells integrate
+T4/T5 inputs in one layer and inhibit postsynaptic neurons inte-
+grating oppositely tuned T4/T5 signals in the adjacent layer, im-
+plementing motion opponency. The /C241/3 of LPi inputs provided
+by various cells other than T4/T5 suggest that the lobula plate
+circuitry is more complicated, and perhaps more ﬂexible, than
+the circuit models consider.
+Lobula plate visual projection neurons (VPNs) that
+integrate T4 and T5 inputs
+In addition to HS and VS cells (Figure 3), we identiﬁed other VPNs
+as T4/T5 targets ( Figures 2 and 5). In this study, we focused on
+identifying and quantifying T4/T5 target neuron connectivity
+rather than describing the complete synaptic proﬁles of the
+VPNs.
+T4 and T5 connect with columnar VPNs, smaller cells that as
+a population cover large parts of the lobula plate. These cells
+belong to three main groups (LPC, LLPC, and LPLC) that are
+distinguished by innervation patterns in the optic lobe and
+axonal path to the central brain (further explained in Figure 5
+legend). Based on their arbor sizes in the lobula plate and T4/
+T5 and LPi inputs, these cells likely respond to visual motion
+within small patches of the ﬂy’s ﬁeld of view. We distinguished
+two LPC types and three LLPC types based on lobula plate
+layer patterns ( Figures 5 A–5E), in agreement with LM ana-
+lyses.
+49 LPC1 ( Figure 5 A) receives inputs from T4b and T5b.
+This anatomy suggests that these cells integrate back-to-
+front motion signals, which has been conﬁrmed by calcium im-
+aging.
+49 LPC2 ( Figure 5 B) receives T4c/T5c inputs ( Figure 2 A)
+and is expected to encode upward motion. LLPC1 ( Figure 5 C),
+a VPN responsive to front-to-back visual motion, 49 has
+dendritic arbors in Lop1 and Lop3, with stronger T4/T5 input
+in Lop1 ( Figure 2 A). The process in the lobula appears to be
+mainly presynaptic ( Figure 5 C). LLPC2 and LLPC3 are similar
+cells with T4/T5 input in Lop3 and Lop4, respectively
+(Figures 5 D and 5E). LPLC1 and LPLC2 cells
+43,45 are notable
+for receiving T4/T5 inputs in multiple lobula plate layers: T4/
+T5 a, b, c, and d for LPLC2, in agreement with the described
+mechanism of looming sensitivity,
+4 and T4/T5 b and d for
+LPLC1 ( Figures 2 A, 5F, and 5G).
+T4 and T5 neurons connect with LPTCs, some of which we
+matched to known neurons, but in other cases, we name them
+based on their layer innervation patterns ( Figures 5 H–5O). As
+most LPTCs are morphologically unique, these cells could be
+matched to LM images or other EM reconstructions.
+37,59 One
+cell we matched based on its unique morphology is LPT13a
+(EM, Figure 5J; LM, Figures S2D and S2D’). The dorsal centrifu-
+gal horizontal (DCH) cell (Figure 5P) is a unique LPTC that is pre-
+dominantly presynaptic to T4 and T5 ( Figure 2 A): 15.3% of T4a
+inputs and 12.7% of T5a inputs (excluding synapses between
+T4/T5 terminals) are from DCH, by far the largest input to T4/
+T5 from a single LPTC. The terminals of DCH cover the dorsal
+half of Lop1, whereas the homologous VCH cell covers the
+ventral half.
+37,52,60 The CH neurons innervate the ipsilateral infe-
+rior posterior slope in the central brain, are GABAergic, 52,61,62
+and likely inhibitory. Although we did not ﬁnd VCH (due to the
+restricted volume), our data suggest that these two cells are
+the only major LPTCs that feed signals from the central brain
+to T4a/T5a ( Data S1).
+H1 is a heterolateral LPTC directly connecting both lobula
+plates (Figure 5Q)
+29 and is sensitive to ipsilateral back-to-front vi-
+sual motion, similar to H2.39,51 We found proﬁles that likely corre-
+spond to the proximal and distal terminals of both H1 cells. The
+proximal terminal is predominantly postsynaptic and conﬁned
+within Lop2, whereas the putative distal terminal branch is presy-
+napse rich, with boutons mainly in Lop1 and Lop2. The proximal
+terminal receives inputs from T4b and T5b (mean is /C244.8 synap-
+ses per terminal from both T4b and T5b; Figure S1 ). While this
+connection strength is lower than many T4/T5 target neurons,
+H1 is expected to integrate from many T4b/T5b throughout
+Lop2, which is consistent with the described motion prefer-
+ence.
+29,39,51,60 The distal terminal of H1 has limited synaptic con-
+tacts with T4 or T5 cells (only accounting for /C240.1% of H1’s pre-
+dicted outputs).
+The H2 cell, another identiﬁable LPTC that is known from
+larger ﬂies, has dense neuronal processes conﬁned to Lop2 (Fig-
+ure 5R), is a strong T4b/T5b target ( Figure 2 A), and projects to
+the inferior posterior slope in the contralateral brain hemi-
+sphere.
+31,52 H2 branches in Lop2 feature mixed presynaptic
+and postsynaptic terminals (Figure 5R, inset), as suggested by
+genetically driven synaptic markers. 52 The ‘‘hemibrain’’ connec-
+tome dataset shows H2 as the strongest input to DCH and
+VCH48 in the central brain, thus contributing to processing mo-
+tion information from both eyes.
+(F) Inputs to the HS and VS cells. Synapses are veriﬁed and counted for small pieces of the HS and VS arbors in the respective layers (two branches for each of HS
+and VS [Lop4] and one branch for VS [Lop2]). Almost 90% of the inputs to the HS and VS cell dendrites come from T4, T5, and the bilayer LPi cells. A similar in put
+distribution is found for the VS cells’ branches in the Lop2 layer, where they receive inputs from the T4b, T5b, and LPi1-2 cells. Gray indicates other, more weakly
+connected neurons or unidentiﬁed neuron fragments, less than 10% of the total synapses (detailed in Data S2 ). No output synapses were found on these
+branches. The scale bars are approximate, as the neurons are three-dimensionally reconstructed.
+ll
+OPEN ACCESS
+Current Biology 32, 3529–3544, August 22, 2022 3535
+Article

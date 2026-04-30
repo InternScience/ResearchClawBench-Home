@@ -1,0 +1,7 @@
+{
+  "paper_000_Chameleon": "Early-fusion token-based mixed-modal autoregressive model for understanding and generating images/text in arbitrary sequences; motivates single Transformer token interface and mixed-modal evaluation.",
+  "paper_001_LLaVA": "Connects a vision encoder to an LLM for visual instruction following; motivates understanding baseline and visual-token projection into language embeddings.",
+  "paper_002_SigLIP": "Sigmoid image-text pretraining decouples batch size from loss and provides aligned image-text representation context; motivates lightweight semantic alignment head.",
+  "paper_003_LlamaGen": "Applies next-token prediction to image token generation with VQ-style tokenizer; motivates autoregressive generation encoder and visual code stream.",
+  "contract_update": "The workspace task specifically asks for decoupling visual encoding; the implemented prototype uses separate E_u and E_g tokenizers feeding one causal Transformer interface and compares to a single shared encoder baseline."
+}

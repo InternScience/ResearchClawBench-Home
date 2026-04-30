@@ -1,0 +1,1027 @@
+{
+  "data/cell-populations.csv": {
+    "rows": 28068,
+    "columns": [
+      "repetition",
+      "cell_ids",
+      "presented_peptides",
+      "presented_hlas",
+      "simulation_name",
+      "mutation"
+    ],
+    "dtypes": {
+      "repetition": "int64",
+      "cell_ids": "int64",
+      "presented_peptides": "object",
+      "presented_hlas": "object",
+      "simulation_name": "object",
+      "mutation": "object"
+    },
+    "head": [
+      {
+        "repetition": 0,
+        "cell_ids": 0,
+        "presented_peptides": "peptide180",
+        "presented_hlas": "A0101",
+        "simulation_name": "100-cells.10x",
+        "mutation": "mut11"
+      },
+      {
+        "repetition": 0,
+        "cell_ids": 0,
+        "presented_peptides": "peptide164",
+        "presented_hlas": "A0101",
+        "simulation_name": "100-cells.10x",
+        "mutation": "mut11"
+      },
+      {
+        "repetition": 0,
+        "cell_ids": 0,
+        "presented_peptides": "peptide190",
+        "presented_hlas": "A0101",
+        "simulation_name": "100-cells.10x",
+        "mutation": "mut28"
+      }
+    ],
+    "sample_unique_values": {
+      "repetition": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "presented_peptides": [
+        "peptide180",
+        "peptide164",
+        "peptide190",
+        "peptide198",
+        "peptide182",
+        "peptide129",
+        "peptide168",
+        "peptide132",
+        "peptide24",
+        "peptide197",
+        "peptide22",
+        "peptide172",
+        "peptide127",
+        "peptide185",
+        "peptide144",
+        "peptide183",
+        "peptide167",
+        "peptide138",
+        "peptide166",
+        "peptide174"
+      ],
+      "presented_hlas": [
+        "A0101"
+      ],
+      "simulation_name": [
+        "100-cells.10x"
+      ],
+      "mutation": [
+        "mut11",
+        "mut28",
+        "mut33",
+        "mut12",
+        "mut20",
+        "mut15",
+        "mut19",
+        "mut26",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/final-response-likelihoods.csv": {
+    "rows": 1000,
+    "columns": [
+      "name",
+      "num_presented_peptides",
+      "population",
+      "vaccine",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "name": "int64",
+      "num_presented_peptides": "int64",
+      "population": "object",
+      "vaccine": "object",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "name": 0,
+        "num_presented_peptides": 20,
+        "population": "100-cells.10x, 0",
+        "vaccine": "MinSum.budget-10.adaptive",
+        "p_response": 0.9533045283235024,
+        "log_p_response": -0.0478208793381093
+      },
+      {
+        "name": 1,
+        "num_presented_peptides": 13,
+        "population": "100-cells.10x, 0",
+        "vaccine": "MinSum.budget-10.adaptive",
+        "p_response": 0.8746192397657028,
+        "log_p_response": -0.1339666418852237
+      },
+      {
+        "name": 2,
+        "num_presented_peptides": 15,
+        "population": "100-cells.10x, 0",
+        "vaccine": "MinSum.budget-10.adaptive",
+        "p_response": 0.8857467355830899,
+        "log_p_response": -0.1213242207267341
+      }
+    ],
+    "sample_unique_values": {
+      "population": [
+        "100-cells.10x, 0",
+        "100-cells.10x, 1",
+        "100-cells.10x, 2",
+        "100-cells.10x, 3",
+        "100-cells.10x, 4",
+        "100-cells.10x, 5",
+        "100-cells.10x, 6",
+        "100-cells.10x, 7",
+        "100-cells.10x, 8",
+        "100-cells.10x, 9"
+      ],
+      "vaccine": [
+        "MinSum.budget-10.adaptive"
+      ]
+    }
+  },
+  "data/optimization_runtime_data.csv": {
+    "rows": 35,
+    "columns": [
+      "SampleID",
+      "PopulationSize",
+      "RunTime"
+    ],
+    "dtypes": {
+      "SampleID": "int64",
+      "PopulationSize": "int64",
+      "RunTime": "float64"
+    },
+    "head": [
+      {
+        "SampleID": 3812,
+        "PopulationSize": 100,
+        "RunTime": 0.012
+      },
+      {
+        "SampleID": 3812,
+        "PopulationSize": 1000,
+        "RunTime": 0.05
+      },
+      {
+        "SampleID": 3812,
+        "PopulationSize": 3000,
+        "RunTime": 0.15
+      }
+    ],
+    "sample_unique_values": {
+      "SampleID": [
+        "3812",
+        "3942",
+        "3948",
+        "3978",
+        "3995",
+        "4007",
+        "4032"
+      ],
+      "PopulationSize": [
+        "100",
+        "1000",
+        "3000",
+        "7000",
+        "10000"
+      ]
+    }
+  },
+  "data/selected-vaccine-elements.budget-10.minsum.adaptive.csv": {
+    "rows": 100,
+    "columns": [
+      "peptide",
+      "repetition",
+      "simulation_name",
+      "weight",
+      "run_time"
+    ],
+    "dtypes": {
+      "peptide": "object",
+      "repetition": "int64",
+      "simulation_name": "object",
+      "weight": "int64",
+      "run_time": "float64"
+    },
+    "head": [
+      {
+        "peptide": "mut20",
+        "repetition": 0,
+        "simulation_name": "100-cells.10x",
+        "weight": 1,
+        "run_time": 0.0160402189999997
+      },
+      {
+        "peptide": "mut12",
+        "repetition": 0,
+        "simulation_name": "100-cells.10x",
+        "weight": 1,
+        "run_time": 0.0160402189999997
+      },
+      {
+        "peptide": "mut44",
+        "repetition": 0,
+        "simulation_name": "100-cells.10x",
+        "weight": 1,
+        "run_time": 0.0160402189999997
+      }
+    ],
+    "sample_unique_values": {
+      "peptide": [
+        "mut20",
+        "mut12",
+        "mut44",
+        "mut15",
+        "mut19",
+        "mut39",
+        "mut33",
+        "mut26",
+        "mut11",
+        "mut28"
+      ],
+      "repetition": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "simulation_name": [
+        "100-cells.10x"
+      ],
+      "weight": [
+        "1"
+      ],
+      "run_time": [
+        "0.0160402189999997",
+        "0.0042001840000001",
+        "0.004684053",
+        "0.0042548169999996",
+        "0.0043478820000002",
+        "0.0050776940000005",
+        "0.0044845480000006",
+        "0.0047242999999994",
+        "0.0042377639999999",
+        "0.0041442699999993"
+      ]
+    }
+  },
+  "data/sim-specific-response-likelihoods.csv": {
+    "rows": 1000,
+    "columns": [
+      "name",
+      "num_presented_peptides",
+      "population",
+      "vaccine",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "name": "int64",
+      "num_presented_peptides": "int64",
+      "population": "object",
+      "vaccine": "object",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "name": 0,
+        "num_presented_peptides": 20,
+        "population": "100-cells.10x, 0",
+        "vaccine": "MinSum.budget-10.adaptive.100-cells.10x.rep-0",
+        "p_response": 0.9533045283235024,
+        "log_p_response": -0.0478208793381093
+      },
+      {
+        "name": 1,
+        "num_presented_peptides": 13,
+        "population": "100-cells.10x, 0",
+        "vaccine": "MinSum.budget-10.adaptive.100-cells.10x.rep-0",
+        "p_response": 0.8746192397657028,
+        "log_p_response": -0.1339666418852237
+      },
+      {
+        "name": 2,
+        "num_presented_peptides": 15,
+        "population": "100-cells.10x, 0",
+        "vaccine": "MinSum.budget-10.adaptive.100-cells.10x.rep-0",
+        "p_response": 0.8857467355830899,
+        "log_p_response": -0.1213242207267341
+      }
+    ],
+    "sample_unique_values": {
+      "population": [
+        "100-cells.10x, 0",
+        "100-cells.10x, 1",
+        "100-cells.10x, 2",
+        "100-cells.10x, 3",
+        "100-cells.10x, 4",
+        "100-cells.10x, 5",
+        "100-cells.10x, 6",
+        "100-cells.10x, 7",
+        "100-cells.10x, 8",
+        "100-cells.10x, 9"
+      ],
+      "vaccine": [
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-0",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-1",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-2",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-3",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-4",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-5",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-6",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-7",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-8",
+        "MinSum.budget-10.adaptive.100-cells.10x.rep-9"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-0.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.443093529607844,
+        "p_no_response": 0.236195948168079,
+        "p_response": 0.763804051831921,
+        "log_p_response": -0.2694439993711691
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -0.2107224090935219,
+        "p_no_response": 0.8099988840006946,
+        "p_response": 0.1900011159993053,
+        "log_p_response": -1.6607253331583465
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-1.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -0.4866021826529983,
+        "p_no_response": 0.614711527218304,
+        "p_response": 0.385288472781696,
+        "log_p_response": -0.9537629453119776
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-2.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.6520926361528565,
+        "p_no_response": 0.1916484382510339,
+        "p_response": 0.808351561748966,
+        "log_p_response": -0.2127582139156469
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -0.4071831645020512,
+        "p_no_response": 0.6655222790801063,
+        "p_response": 0.3344777209198937,
+        "log_p_response": -1.0951850057578856
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-3.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -0.2859317094130668,
+        "p_no_response": 0.7513139218637056,
+        "p_response": 0.2486860781362944,
+        "log_p_response": -1.3915639082828826
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.575494036490284,
+        "p_no_response": 0.2069053086545833,
+        "p_response": 0.7930946913454167,
+        "log_p_response": -0.2318126554653638
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-4.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.4459623824991648,
+        "p_no_response": 0.2355193077941856,
+        "p_response": 0.7644806922058144,
+        "log_p_response": -0.2685585093854246
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-5.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-6.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -0.8559786688882053,
+        "p_no_response": 0.4248671832546484,
+        "p_response": 0.5751328167453515,
+        "log_p_response": -0.5531542792137736
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-7.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-8.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine-elements.scores.100-cells.10x.rep-9.csv": {
+    "rows": 1200,
+    "columns": [
+      "cell_id",
+      "vaccine_element",
+      "log_p_no_response",
+      "p_no_response",
+      "p_response",
+      "log_p_response"
+    ],
+    "dtypes": {
+      "cell_id": "int64",
+      "vaccine_element": "object",
+      "log_p_no_response": "float64",
+      "p_no_response": "float64",
+      "p_response": "float64",
+      "log_p_response": "float64"
+    },
+    "head": [
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut11",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut12",
+        "log_p_no_response": -0.3690988228659547,
+        "p_no_response": 0.6913570851857587,
+        "p_response": 0.3086429148142413,
+        "log_p_response": -1.175570285810729
+      },
+      {
+        "cell_id": 0,
+        "vaccine_element": "mut15",
+        "log_p_no_response": -1.800000089052565e-06,
+        "p_no_response": 0.999998200001531,
+        "p_response": 1.7999984690542092e-06,
+        "log_p_response": -13.227724743587956
+      }
+    ],
+    "sample_unique_values": {
+      "vaccine_element": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut24",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44",
+        "mut8"
+      ]
+    }
+  },
+  "data/vaccine.budget-10.minsum.adaptive.csv": {
+    "rows": 10,
+    "columns": [
+      "peptide",
+      "counts",
+      "weight"
+    ],
+    "dtypes": {
+      "peptide": "object",
+      "counts": "int64",
+      "weight": "int64"
+    },
+    "head": [
+      {
+        "peptide": "mut11",
+        "counts": 10,
+        "weight": 1
+      },
+      {
+        "peptide": "mut12",
+        "counts": 10,
+        "weight": 1
+      },
+      {
+        "peptide": "mut15",
+        "counts": 10,
+        "weight": 1
+      }
+    ],
+    "sample_unique_values": {
+      "peptide": [
+        "mut11",
+        "mut12",
+        "mut15",
+        "mut19",
+        "mut20",
+        "mut26",
+        "mut28",
+        "mut33",
+        "mut39",
+        "mut44"
+      ],
+      "counts": [
+        "10"
+      ],
+      "weight": [
+        "1"
+      ]
+    }
+  }
+}

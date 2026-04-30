@@ -1,0 +1,17 @@
+{
+  "python_packages": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "scipy": true,
+    "networkx": false
+  },
+  "limitations": [
+    "networkx unavailable: No module named 'networkx'"
+  ],
+  "fallbacks": [
+    "networkx is not needed; path lattice analysis uses pandas/numpy only.",
+    "PDF parser failed in ReadPDF; related-work metadata extracted from PDF metadata/strings with local Python."
+  ]
+}

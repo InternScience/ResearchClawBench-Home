@@ -1,0 +1,29 @@
+{
+  "task": "Analyze MATBG core dataset to extract dc resistance/proxy, microwave resonance/proxy, and superfluid stiffness dependencies on carrier density/gate voltage, temperature, and current.",
+  "primary_quantities": [
+    "superfluid stiffness D_s",
+    "carrier-density dependence vs conventional Fermi-liquid and quantum-geometric predictions",
+    "temperature power-law exponent and comparison to BCS/nodal/power-law models",
+    "current dependence and quadratic/Ginzburg-Landau suppression",
+    "microwave probe/current dependence"
+  ],
+  "named_methods_and_protocols": [
+    "quantum-geometric superfluid stiffness comparison",
+    "Fermi-liquid/conventional stiffness comparison",
+    "power-law temperature fitting",
+    "quadratic current (Ginzburg-Landau depairing) fitting",
+    "DC versus microwave current comparison"
+  ],
+  "assumptions": [
+    "The provided core dataset is simulated and contains D_s arrays directly; resistance and resonance are treated through standard monotonic proxies because raw R_dc and f_res are not separately tabulated.",
+    "Carrier density is used as a gate-voltage proxy; microwave current amplitude is derived from normalized microwave power."
+  ],
+  "required_outputs": [
+    "quantitative summary tables",
+    "density comparison and enhancement figure",
+    "temperature dependence and power-law fit figure",
+    "current dependence and quadratic validation figure",
+    "data overview figure/table",
+    "validation/claim recovery table"
+  ]
+}

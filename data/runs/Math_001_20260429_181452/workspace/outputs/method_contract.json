@@ -1,0 +1,14 @@
+{
+  "task": "Minimize a smooth convex objective with possible nonsmooth regularization from a VOS/continuous-time perspective and verify accelerated convergence on high-dimensional Lasso data.",
+  "primary_problem": "Lasso: minimize F(x)=0.5/n ||Ax-b||_2^2 + lambda ||x||_1 from x0=0.",
+  "named_method_commitments": [
+    "Variable/operator splitting viewpoint: split smooth gradient operator and nonsmooth proximal/shrinkage operator; for ADMM split x=z constraint.",
+    "Nesterov acceleration from a continuous-time second-order ODE perspective with damping approximately 3/t and discrete FISTA/Nesterov momentum.",
+    "ADMM as an operator-splitting method with primal and dual residuals and an augmented-Lagrangian Lyapunov surrogate.",
+    "Strong Lyapunov functions: track objective gap plus kinetic/momentum terms for acceleration and residual/dual-energy descent for ADMM.",
+    "Linear convergence assessment where possible using empirical log-slope fits; note Lasso is not globally strongly convex because p>n, so exact theorem assumptions are restricted or empirical."
+  ],
+  "planned_algorithms": ["ISTA/proximal gradient baseline", "FISTA/Nesterov accelerated proximal gradient", "adaptive-restart FISTA as continuous-time restart-inspired linear-rate variant", "ADMM for Lasso splitting"],
+  "primary_metrics": ["objective value", "objective gap to best computed value", "distance to ground truth", "support precision/recall/F1", "ADMM primal residual", "ADMM dual residual", "empirical convergence slopes"],
+  "validation_requirements": ["compare algorithms on same lambda and x0", "save code and numerical outputs", "generate PNG figures", "separate verified data results from related-work assumptions"]
+}

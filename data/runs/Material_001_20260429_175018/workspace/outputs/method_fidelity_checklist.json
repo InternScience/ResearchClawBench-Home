@@ -1,0 +1,18 @@
+{
+  "named_methods_or_protocols": [
+    {
+      "name": "crystal graph neural network style material property prediction",
+      "exact_definition_needed": "atom/node features, neighbor graph, convolution/message passing, pooling, supervised property target",
+      "available_in_workspace": "only atom count, flattened coordinates/feature values, edge index list, and target-like numeric property array",
+      "implemented_fidelity": "not exact CGCNN; use graph-derived tabular descriptors as a faithful minimal proxy",
+      "deviation_reason": "no atomic species, neighbor distances per sample, or full per-material graph labels in data file"
+    },
+    {
+      "name": "autonomous optimization using sparse experiments",
+      "exact_definition_needed": "parameter bounds, observed seed responses, surrogate/acquisition for next experiments",
+      "available_in_workspace": "temperature and time bounds, one seed condition, one failure/response-like value, one objective scale",
+      "implemented_fidelity": "Gaussian-process-like/scikit-learn surrogate with synthetic physics-inspired response anchored to seed; recommendations reported as illustrative validation workflow",
+      "deviation_reason": "single observed response is insufficient for statistically identified experimental optimization"
+    }
+  ]
+}

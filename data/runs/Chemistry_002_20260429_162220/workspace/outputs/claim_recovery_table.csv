@@ -1,0 +1,6 @@
+claim,supporting_artifact
+"The input structure contains chains A and D with 108 and 87 residues, respectively.",outputs/pdb_structure_summary.json
+A measurable A-D interface exists with residue contact pairs within 5.5 and 8 Å.,outputs/interface_contact_table.csv; report/images/figure_interface_contacts.png
+SKEMPI contains barnase-barstar affinity-changing mutations that can be mapped onto 1BRS_A_D.,outputs/mutation_feature_validation_table.csv; outputs/mutation_component_mapping.csv
+Simple structural contact/electrostatic features have quantifiable agreement with experimental ΔΔG.,outputs/correlation_metrics.json; report/images/figure_validation_comparison.png
+Feature contributions are interpretable at residue/contact level.,outputs/feature_importance_coefficients.csv; report/images/figure_feature_importance.png

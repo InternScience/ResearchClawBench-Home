@@ -1,0 +1,135 @@
+# LES-inspired long-range electrostatic potential analysis on the supplied benchmarks
+
+## Abstract
+
+This report evaluates a compact, reproducible long-range electrostatic interatomic-potential baseline on the three supplied XYZ datasets.  The scientific target is a Latent Ewald Summation (LES)-style model: predict total energies and forces while exposing interpretable latent charges that can be used for electrostatic moments.  The supplied structures are all non-periodic (`pbc=false`, zero cell), so the implemented long-range term is the non-periodic all-pairs Coulomb analogue of Ewald summation rather than a reciprocal-space periodic Ewald sum.  The analysis is intentionally conservative: where the workspace data do not contain the labels required for a full energy-and-force-trained LES model, I report that limitation rather than inventing labels.
+
+The main findings are: (i) the `random_charges` metadata contains exact ±1 e charges and permits exact latent-charge recovery as a labeled sanity check, but this file contains no energy/force labels; (ii) on `charged_dimer`, adding an inter-fragment long-range Coulomb feature improves held-out energy MAE from 0.1844 to 0.1290 in the same train/test split; and (iii) the supplied `ag3_chargestates` file contains paired +1/-1 charge states with identical geometries and identical energies, so this workspace instance does **not** demonstrate charge-state PES separation despite the task description's expectation.  All code is in `code/analyze.py`; primary artifacts are in `outputs/`; figures are PNGs in `report/images/`.
+
+## Related-work context and method contract
+
+The related papers establish three relevant design constraints.  First, local MLIPs such as CACE-style local descriptors are powerful but need augmentation for genuinely long-range electrostatics.  Second, charge-aware fourth-generation HDNNP work shows that global charge and non-local charge transfer are essential in systems where the same local geometry can belong to different charge states.  Third, Ewald message passing and density-based long-range descriptors motivate replacing hard real-space truncation with a long-range electrostatic representation.  I encoded the task contract in `outputs/method_contract.json` and the related-work extraction in `outputs/related_work_contract.json`.
+
+Because all supplied structures are non-periodic and have no simulation cell, exact periodic Ewald summation is not applicable.  The implemented model therefore uses
+
+\[
+E_{\rm lr}(\mathbf R, \mathbf q)=\sum_{i<j}\frac{q_i q_j}{r_{ij}},
+\qquad
+\mathbf F_i^{\rm lr}=\sum_{j\ne i} q_i q_j\frac{\mathbf r_j-\mathbf r_i}{r_{ij}^3},
+\]
+
+with dataset-specific local linear/Ridge corrections where energy labels are available.  The latent charges are explicit variables/metadata used to compute fragment charges, dipoles, and quadrupole-like tensors.  Dependency and capability checks are saved in `outputs/dependency_check.json`.
+
+## Data overview
+
+![Dataset overview](images/dataset_overview.png)
+
+The parsed dataset summary is saved in `outputs/dataset_overview.csv`:
+
+| dataset | frames | atoms/frame | species | energy labels | force labels | metadata |
+|---|---:|---:|---|---|---|---|
+| random_charges | 100 | 128 | X | no | no | true_charges |
+| charged_dimer | 60 | 8 | C+H | yes | yes | none |
+| ag3_chargestates | 60 | 3 | Ag | yes | yes | charge_state; total_charge |
+
+This overview is important for interpreting the results.  The random-charge benchmark includes the true charges but no energy/force labels in this workspace copy, so it supports charge and truncation diagnostics but not a full supervised LES fit from energies and forces.  The dimer and Ag3 datasets contain energies and forces via ASE `SinglePointCalculator` records.
+
+## Methods
+
+### Random ±1 charge system
+
+For the 128-atom point-charge systems, the file-level metadata gives `true_charges`: 64 atoms with +1 e and 64 atoms with −1 e.  I used these as the latent-charge labels for a recovery sanity check and computed all-pairs Coulomb energies, dipoles, and traceless quadrupole-like moments.  To quantify why a long-range method is needed, I compared the full Coulomb energy to real-space cutoffs from 3 to 12 Å.  Outputs include `outputs/random_charges_charge_recovery.csv`, `outputs/random_charges_metrics.json`, and `outputs/random_charges_cutoff_metrics.csv`.
+
+### Charged dimer
+
+The dimer dataset contains two four-atom fragments.  A minimal interpretable latent-charge assignment was used: +0.25 e on each atom of fragment 1 and −0.25 e on each atom of fragment 2, yielding fragment charges +1 e and −1 e.  I fit a Ridge model with (1) a full interatomic Coulomb feature and (2) intrafragment inverse-distance terms.  The short-range control used the same local terms but removed the interfragment Coulomb feature.  A fixed random seed train/test split used 42 training frames and 18 held-out frames.  Energies are reported from the fitted models; the force diagnostic compares the learned-scaled Coulomb force component with total force labels, so it is not a complete force model.
+
+### Ag3 charge states
+
+For Ag3, I fit two polynomial/Ridge baselines from pairwise Ag--Ag distances: one with global total charge features and one without.  I also explicitly checked the paired +1/−1 records.  The workspace file contains identical geometries and identical energies for each paired +1 and −1 configuration, with maximum paired energy difference 0.0 and maximum paired coordinate difference 0.0 Å.  Consequently, this particular file cannot validate the expected charge-state separation claim; the report treats that as a data-validation result.
+
+## Results
+
+### 1. Random-charge latent charges and cutoff error
+
+![Random charge recovery](images/random_charges_recovery.png)
+
+The metadata-supervised latent charges match the supplied ±1 e charges exactly: charge MAE = 0 e, RMSE = 0 e, and correlation = 1.0 (`outputs/random_charges_metrics.json`).  For frame 0, the derived electrostatic quantities were a full Coulomb energy of −12.8547, dipole norm of 60.1697 eÅ, and quadrupole Frobenius norm of 3880.4563 eÅ².
+
+The cutoff diagnostic shows substantial missing long-range energy even at large real-space cutoffs.  The RMSE relative to full Coulomb was 8.418 at 3 Å, 5.141 at 8 Å, and 2.877 even at 12 Å.  This supports the LES/Ewald motivation: electrostatics should not be represented only by a local cutoff if long-range charge correlations matter.
+
+### 2. Charged dimer binding curve
+
+![Charged dimer binding curve](images/charged_dimer_binding.png)
+
+The charged-dimer results support the need for an explicit long-range electrostatic feature.  On the 18-frame held-out set, the long-range model achieved energy MAE = 0.1290 and RMSE = 0.2434, compared with MAE = 0.1844 for the short-range/no-interfragment-Coulomb control (`outputs/charged_dimer_metrics.json`).  The learned Coulomb scale coefficient was 0.9014, close to the unit scale expected for the synthetic Coulomb-like term.  The latent fragment charges are exactly +1 e and −1 e by construction.
+
+The plot shows that both models capture much of the local distortion-induced energy variation, but the long-range Coulomb feature improves parity and reduces held-out error.  The force diagnostic is weaker: the Coulomb component alone has force MAE = 0.5895 versus total forces because local bonded/repulsive terms are not analytically differentiated in this compact baseline.
+
+### 3. Ag3 charge-state validation
+
+![Ag3 charge-state analysis](images/ag3_charge_state.png)
+
+The Ag3 result is a negative but important validation finding.  The task description says this dataset should demonstrate the need for global charge embedding or separate training for +1 and −1 charge states.  However, the actual workspace file has 30 +1 and 30 −1 structures where each +1 frame is duplicated as a −1 frame with identical coordinates, identical energy, and identical forces.  Direct checks in `outputs/ag3_metrics.json` give paired plus/minus same-geometry energy max absolute difference = 0.0 and coordinate max absolute difference = 0.0 Å.
+
+Consistent with that data property, adding global charge does not improve prediction.  The no-charge model has held-out energy MAE = 0.00263, while the global-charge model has held-out MAE = 0.00849.  Both are highly accurate because the energy is a single geometry-dependent surface in this file.  The global-charge energy-gradient force diagnostic is good for this small baseline (force MAE = 0.02277), but it does not establish charge-state PES separation.
+
+### 4. Cross-benchmark comparison
+
+![Validation comparison](images/validation_comparison.png)
+
+The compact comparison plot summarizes the two supervised energy benchmarks.  Long-range Coulomb improves the charged dimer held-out MAE relative to the short-range control.  In contrast, global charge does not improve Ag3 because this workspace copy contains no energy distinction between +1 and −1 charge states.  This contrast is scientifically useful: the method behaves as expected where long-range labels are present, and the validation pipeline detects when a claimed benchmark property is absent from the data.
+
+## Validation and traceability
+
+The claim-recovery table is saved in `outputs/claim_recovery_table.csv`.  The main claim-to-artifact mapping is:
+
+| Claim | Supporting artifacts | Quantitative support | Limitation |
+|---|---|---|---|
+| Random-charge latent charges are recoverable from supplied labels. | `outputs/random_charges_charge_recovery.csv`, `report/images/random_charges_recovery.png` | charge MAE = 0 e | Metadata-supervised; no energy/force labels in this file. |
+| Full long-range Coulomb information matters for charged-dimer binding. | `outputs/charged_dimer_metrics.json`, `report/images/charged_dimer_binding.png` | held-out MAE 0.1290 vs 0.1844 without interfragment Coulomb | Linear physics baseline, not a neural LES model. |
+| Supplied Ag3 data do not demonstrate charge-state separation. | `outputs/ag3_metrics.json`, `outputs/ag3_charge_state_table.csv`, `report/images/ag3_charge_state.png` | paired ±Q energy max diff = 0.0; no-Q MAE 0.00263 vs with-Q MAE 0.00849 | Conflicts with expected paper benchmark; reported as observed data property. |
+| Force metrics are checked where force labels exist. | `outputs/charged_dimer_metrics.json`, `outputs/ag3_metrics.json` | dimer Coulomb-component force MAE 0.5895; Ag3 gradient force MAE 0.02277 | Dimer force model is incomplete because local terms are not differentiated. |
+
+### Directly verified from workspace data
+
+- File counts, species, metadata, energy and force availability were parsed with ASE and exported to `outputs/dataset_overview.csv`.
+- All figures in this report are generated by `code/analyze.py` and saved as PNG files in `report/images/`.
+- Main metrics are exported in JSON/CSV under `outputs/`.
+- The Ag3 paired +1/−1 equality was directly checked from coordinates and energies in `data/ag3_chargestates.xyz`.
+
+### From related work
+
+- The need for long-range electrostatic augmentation is supported by the related Ewald-message-passing and long-range-descriptor papers.
+- The role of global charge in true charge-transfer/charge-state datasets is supported by the fourth-generation HDNNP paper.
+
+### Assumptions and limitations
+
+- This is an LES-inspired nonperiodic Coulomb baseline, not a full neural LES implementation with reciprocal-space periodic Ewald summation.
+- The random-charge file in this workspace lacks energy/force labels, preventing a true energy-only/force-only latent charge fit.
+- The dimer latent charges are fragment-level interpretable assignments rather than learned atom-specific charges from a neural network.
+- The Ag3 data in this workspace do not contain the expected charge-state energy split, so a positive global-charge conclusion would be unsupported.
+
+## Reproducibility
+
+Run the analysis from the workspace root:
+
+```bash
+python3 code/analyze.py
+```
+
+The script creates/updates:
+
+- `outputs/dataset_overview.csv`
+- `outputs/random_charges_metrics.json`
+- `outputs/random_charges_charge_recovery.csv`
+- `outputs/charged_dimer_metrics.json`
+- `outputs/charged_dimer_curve.csv`
+- `outputs/ag3_metrics.json`
+- `outputs/ag3_charge_state_table.csv`
+- `outputs/claim_recovery_table.csv`
+- `report/images/*.png`
+
+## Conclusion
+
+A minimal, traceable long-range electrostatic baseline reproduces the central qualitative lesson of the charged-dimer benchmark: explicit long-range Coulomb information improves energy prediction where local cutoffs are insufficient.  The random-charge dataset verifies interpretable latent charge handling and demonstrates persistent truncation error, but lacks energy/force labels for full LES training.  The Ag3 dataset, as supplied in this workspace, is not suitable for demonstrating charge-state PES separation because +1 and −1 entries are exact duplicates in geometry and energy.  The resulting report therefore supports a cautious conclusion: the LES/Ewald design objective is well motivated and partially validated on the available data, but a full neural LES benchmark would require periodic/cell information and complete energy/force labels for all intended charge-recovery tasks.

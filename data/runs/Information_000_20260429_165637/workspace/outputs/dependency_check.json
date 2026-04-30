@@ -1,0 +1,24 @@
+{
+  "python": "3.10.12",
+  "packages": {
+    "PIL": true,
+    "matplotlib": true,
+    "numpy": true,
+    "pandas": true,
+    "cv2": true,
+    "pytesseract": true,
+    "sklearn": true,
+    "fitz": true,
+    "pypdf": true,
+    "seaborn": true,
+    "torch": false,
+    "transformers": false
+  },
+  "commands": {
+    "tesseract": ""
+  },
+  "limitations": [
+    "No local torch/transformers initially available; analysis will use deterministic prototype unless installation/model availability is later verified.",
+    "System tesseract executable not found, so OCR must use image processing/manual evidence rather than full OCR engine."
+  ]
+}

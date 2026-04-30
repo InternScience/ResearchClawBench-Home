@@ -1,0 +1,21 @@
+{
+  "related_work_read_status": {
+    "paper_000.pdf": "Riess et al. SH0ES comprehensive H0 measurement; text extracted with pypdf after ReadPDF failed.",
+    "paper_001.pdf": "SMC Cepheid anchor paper; text extracted with pypdf.",
+    "paper_002.pdf": "JWST three-indicator Cepheid/TRGB/JAGB preview; text extracted with pypdf.",
+    "paper_003.pdf": "Pantheon+ SNe Ia dataset/covariance release; text extracted with pypdf."
+  },
+  "task_relevant_facts": [
+    "SH0ES uses a simultaneous chi-square / covariance fit across geometric anchors, Cepheid distances, calibrator SNe Ia, and Hubble-flow SNe Ia.",
+    "Riess et al. report baseline Cepheid-SN Ia H0 = 73.04 +/- 1.04 km/s/Mpc, TRGB-included 72.53 +/- 0.99, and high-redshift-included 73.30 +/- 1.04.",
+    "Planck Lambda-CDM comparison value in the related work is H0 = 67.4 +/- 0.5 km/s/Mpc.",
+    "The SMC anchor paper reports four-anchor H0 = 73.17 +/- 0.86 and emphasizes covariance between LMC and SMC distances.",
+    "The JWST preview motivates multiple primary indicators (Cepheid, TRGB, JAGB) in SN hosts and indicates approximately 0.05 mag statistical distances may be feasible with JWST.",
+    "Pantheon+ emphasizes systematic covariance and peculiar-velocity/redshift treatment for SNe Ia in the Hubble flow."
+  ],
+  "contract_implications": [
+    "Use covariance-weighted fitting rather than simple unweighted averages.",
+    "Include anchor/indicator variants and Hubble tension comparison.",
+    "State that the minimal dataset contains only Cepheid/TRGB primary indicators and SN Ia/SBF secondary indicators, so Miras/JAGB/SNe II/FP/TF from the full task cannot be implemented directly."
+  ]
+}

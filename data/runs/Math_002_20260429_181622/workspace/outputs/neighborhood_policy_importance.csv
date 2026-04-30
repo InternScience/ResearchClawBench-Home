@@ -1,0 +1,5 @@
+feature,weight,interpretation
+conflicts,4.0,agents involved in vertex/swap conflicts are repaired first
+excess_length,0.15,paths much longer than Manhattan distance suggest detours
+manhattan,0.02,long tasks are slightly prioritized
+corridor_obstacle_density,1.5,dense/bottleneck corridors receive repair attention

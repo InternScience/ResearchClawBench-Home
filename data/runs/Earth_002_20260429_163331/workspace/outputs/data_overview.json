@@ -1,0 +1,90 @@
+{
+  "mangrove_sample_points": 100000,
+  "mangrove_input_geometry": "Point samples (not polygons) despite instruction wording; interpreted as 10% sampled 30 m GMW reference points.",
+  "bounds_lonlat": [
+    -179.9965,
+    -39.81275378221357,
+    179.9899,
+    32.96143419561505
+  ],
+  "regions": {
+    "Americas / Atlantic-East Pacific": 27514,
+    "South & Southeast Asia": 27196,
+    "Oceania / West Pacific": 24237,
+    "West Africa / East Atlantic": 11353,
+    "Western Indian Ocean": 8605,
+    "Central Pacific / Dateline": 1095
+  },
+  "tc_track_points": 200000,
+  "tc_wind_ms_summary": {
+    "count": 200000.0,
+    "mean": 43.493306382331845,
+    "std": 9.291287877929694,
+    "min": 33.001609802246094,
+    "25%": 36.22074794769287,
+    "50%": 41.119544982910156,
+    "75%": 47.58096694946289,
+    "max": 124.44410705566406
+  },
+  "tc_file_limitation": "Reduced TC file contains lat/lon/wind only and no year or storm id; annual frequencies and temporal trends cannot be exactly recovered.",
+  "slr_extraction": {
+    "ssp245": {
+      "file": "total_ssp245_medium_confidence_rates.nc",
+      "median_quantile": 0.5,
+      "years_used": [
+        2020,
+        2030,
+        2040,
+        2050,
+        2060,
+        2070,
+        2080,
+        2090,
+        2100
+      ],
+      "mean_nn_degree": 0.3672407122281566,
+      "max_nn_degree": 1.0604650394991906
+    },
+    "ssp370": {
+      "file": "total_ssp370_medium_confidence_rates.nc",
+      "median_quantile": 0.5,
+      "years_used": [
+        2020,
+        2030,
+        2040,
+        2050,
+        2060,
+        2070,
+        2080,
+        2090,
+        2100
+      ],
+      "mean_nn_degree": 0.3672407122281566,
+      "max_nn_degree": 1.0604650394991906
+    },
+    "ssp585": {
+      "file": "total_ssp585_medium_confidence_rates.nc",
+      "median_quantile": 0.5,
+      "years_used": [
+        2020,
+        2030,
+        2040,
+        2050,
+        2060,
+        2070,
+        2080,
+        2090,
+        2100
+      ],
+      "mean_nn_degree": 0.3672407122281566,
+      "max_nn_degree": 1.0604650394991906
+    }
+  },
+  "area_proxy": {
+    "point_area_ha": 0.0009,
+    "sample_fraction": 0.1,
+    "expanded_area_per_point_ha": 0.009,
+    "total_expanded_area_ha": 899.9999999999998
+  },
+  "ecosystem_service_proxy_usd_per_ha_yr": 20000.0
+}

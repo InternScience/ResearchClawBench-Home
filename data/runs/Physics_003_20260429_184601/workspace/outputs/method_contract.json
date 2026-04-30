@@ -1,0 +1,26 @@
+{
+  "task": "Analyze monolayer epitaxial graphene tr-ARPES data under 5 \u00b5m mid-IR pump to identify Floquet-Bloch replica Dirac cones and Volkov final-state scattering signatures.",
+  "named_inputs": [
+    "raw_trARPES_data.h5 4D energy/kx/ky/time data",
+    "processed_band_data.json extracted main and replica band positions/intensities",
+    "polarization_dependence_data.csv replica intensity vs pump polarization angle"
+  ],
+  "methodological_commitments": [
+    "time-resolved and angle-resolved photoemission spectroscopy feature analysis",
+    "energy- and momentum-resolved observation of Floquet-Bloch replica bands",
+    "polarization-angle dependence analysis for photon-dressed Volkov final-state scattering",
+    "comparison of main Dirac cone and replica band offsets/intensities",
+    "validation/comparison plots"
+  ],
+  "primary_quantities": [
+    "replica-main energy separation (eV)",
+    "band intensity ratio replica/main",
+    "polarization modulation phase and contrast",
+    "time-delay peak/temporal profile if available",
+    "momentum-resolved raw intensity maps"
+  ],
+  "pump_parameters": {
+    "wavelength_um": 5.0,
+    "photon_energy_eV_approx": 0.2479684
+  }
+}

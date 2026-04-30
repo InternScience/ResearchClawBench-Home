@@ -1,0 +1,42 @@
+{
+  "source_file": "data/MACE-MP-0_Reproduction_Dataset.txt",
+  "line_count": 104,
+  "experiments": {
+    "water_rdf": {
+      "n_water": 32,
+      "box_A": 12.0,
+      "temperature_K": 330,
+      "timestep_fs": 0.5,
+      "steps": 2000,
+      "friction_fs_inv": 0.01
+    },
+    "adsorption_scaling": {
+      "metals": {
+        "Ni": 3.52,
+        "Cu": 3.61,
+        "Rh": 3.8,
+        "Pd": 3.89,
+        "Ir": 3.84,
+        "Pt": 3.92
+      },
+      "slab": "fcc(111) 2x2x3, 10 A vacuum",
+      "adsorbates": [
+        "O",
+        "OH"
+      ]
+    },
+    "reaction_barriers": {
+      "reactions": [
+        "Rxn 1 cyclobutene ring-opening",
+        "Rxn 11 methoxy decomposition",
+        "Rxn 20 cyclopropane ring-opening"
+      ],
+      "dft_reference_eV": {
+        "Rxn 1": 1.72,
+        "Rxn 11": 1.74,
+        "Rxn 20": 1.77
+      }
+    }
+  },
+  "checkpoint_available_locally": false
+}

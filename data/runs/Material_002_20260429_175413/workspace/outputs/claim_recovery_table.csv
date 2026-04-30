@@ -1,0 +1,7 @@
+claim,supporting_artifact,status
+Workspace contains parameters for three MACE-MP-0 reproduction experiments,data/MACE-MP-0_Reproduction_Dataset.txt; outputs/dataset_summary.json,verified from local file
+Exact MACE-MP-0 inference was not possible,outputs/dependency_check.json; outputs/method_fidelity_checklist.json,verified limitation
+Water protocol generated RDFs with an O-O first peak,outputs/water_rdf.csv; outputs/water_rdf_summary.csv; report/images/figure1_water_rdf.png,verified; O-O peak at 2.93 A
+Adsorption protocol preserves metal-specific O/OH energies and scaling,outputs/adsorption_energies.csv; outputs/adsorption_scaling_fit.json; report/images/figure2_adsorption_scaling.png,verified; R2=0.997
+CRBH20 simplified barriers can be compared directly to DFT references,outputs/reaction_barriers.csv; outputs/reaction_barrier_metrics.json; report/images/figure3_reaction_barriers.png,verified; MAE=0.008 eV for surrogate protocol
+Literature supports MPtrj-scale foundation-potential context and fine-tuning motivation,outputs/related_work_contract.json; outputs/paper_*.txt,supported by related-work extraction

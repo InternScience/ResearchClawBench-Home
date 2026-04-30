@@ -1,0 +1,14 @@
+{
+  "papers_read_with_fallback": [
+    {"file": "paper_000.pdf", "topic": "Can deep learning beat numerical weather prediction?", "extraction": "Highlights strengths of modern NWP/data assimilation and need for independent observations and skill scores; ECMWF IFS is a benchmark."},
+    {"file": "paper_001.pdf", "topic": "ML design choices for global weather/climate models", "extraction": "Uses ERA5 Z500, discusses global/local neural networks, data assimilation dependency, and forecast-error evaluation against analysis."},
+    {"file": "paper_002.pdf", "topic": "FourCastNet", "extraction": "0.25 degree global data-driven forecasts; evaluates latitude-weighted RMSE and ACC against ERA5/IFS; shows rapid autoregressive forecasts and ensemble potential."},
+    {"file": "paper_003.pdf", "topic": "FengWu", "extraction": "0.25 degree 6-hourly ERA5 training, Transformer architecture, replay buffer for long-lead autoregression, RMSE/ACC curves, skill criterion ACC(z500)>0.6, comparison to GraphCast/IFS."}
+  ],
+  "contract_changes_from_related_work": [
+    "Use latitude weighting for global RMSE/ACC.",
+    "Preserve variable-family and pressure-level structure rather than only pooled global means.",
+    "Include explicit long-lead cascade/autoregressive protocol and state available-data limitation.",
+    "Use ACC threshold 0.6 for Z500 as a literature skill marker when full verification data are present."
+  ]
+}

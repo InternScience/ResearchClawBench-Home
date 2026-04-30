@@ -1,0 +1,29 @@
+{
+  "python": "3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]",
+  "available": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "h5py": true,
+    "scipy": true,
+    "sklearn": true,
+    "pdfplumber": false,
+    "pypdf": false,
+    "PyPDF2": false
+  },
+  "limitation": "ReadPDF failed in tool; will use local PDF text extraction utilities if installable/available, otherwise rely on dataset and explicit limitation.",
+  "available_after_setup": {
+    "numpy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "h5py": true,
+    "scipy": true,
+    "sklearn": true,
+    "pdfplumber": false,
+    "pypdf": false,
+    "PyPDF2": false
+  },
+  "pdf_extraction": "ReadPDF failed; pip installed pypdf into workspace .local and extraction succeeded by explicitly prepending .local site-packages in a local script. Extracted text is saved under outputs/related_work_text/."
+}

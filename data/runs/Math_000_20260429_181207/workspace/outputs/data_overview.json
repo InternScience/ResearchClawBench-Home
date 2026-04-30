@@ -1,0 +1,17 @@
+{
+  "n_frames": 100,
+  "n_gt_objects_per_frame": 200,
+  "total_gt_instances": 20000,
+  "total_detections": 15820,
+  "mean_detection_rate": 0.7909999999999999,
+  "mean_detection_score": 0.2656887615315739,
+  "score_quantiles": {
+    "0.1": 0.13114355350235507,
+    "0.25": 0.1776009670743408,
+    "0.5": 0.25389811492096276,
+    "0.75": 0.330741189137148,
+    "0.9": 0.3764070654054523
+  },
+  "mean_dense_gt_count_iou_ge_0_2": 198.58,
+  "max_pairwise_gt_iou_mean": 0.8384550701152048
+}

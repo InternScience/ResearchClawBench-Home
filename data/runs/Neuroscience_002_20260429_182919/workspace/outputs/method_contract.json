@@ -1,0 +1,29 @@
+{
+  "task": "Binary prediction of whether adjacent over-segmented fly-brain EM neuron fragments are same-neuron merge candidates.",
+  "inputs": [
+    "20 numeric morphology/intensity/embedding feature columns",
+    "degradation stratum"
+  ],
+  "target": {
+    "name": "label",
+    "positive_class": "same neuron / should merge",
+    "negative_class": "different neuron / should not merge"
+  },
+  "methodological_commitments": [
+    "Train only on train_simulated.csv and evaluate on held-out test_simulated.csv.",
+    "Preserve degradation conditions (Misalignment, Missing Sections, Mixed, Average) in evaluation.",
+    "Compare at least one interpretable baseline against nonlinear tree-based models.",
+    "Report thresholded binary predictions and probability-based ranking/calibration metrics.",
+    "Provide interpretability via feature importance/permutation importance."
+  ],
+  "primary_metrics": [
+    "ROC-AUC",
+    "Average precision / PR-AUC",
+    "F1",
+    "balanced accuracy",
+    "recall",
+    "precision",
+    "Brier score"
+  ],
+  "current_date": "2026-04-29"
+}

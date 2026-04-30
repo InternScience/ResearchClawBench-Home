@@ -1,0 +1,37 @@
+{
+  "task": "Develop/evaluate Uncalled4-style nanopore signal-to-reference alignment toolkit using provided feature/performance/modification datasets.",
+  "explicit_inputs": [
+    "FAST5/POD5 raw signal (not provided as raw files)",
+    "basecalled reads (not provided as raw files)",
+    "reference genome/transcriptome sequences (not provided as raw files)",
+    "k-mer pore models (provided as CSV pore-model tables)"
+  ],
+  "explicit_outputs_requested": [
+    "signal-to-reference alignments in BAM format",
+    "nucleotide modification calls such as m6A",
+    "performance benchmarks",
+    "trained pore models"
+  ],
+  "workspace_feasible_scope": "No raw FAST5/POD5/read/reference files are present; analysis therefore evaluates provided pore-model tables, performance_summary.csv, and m6A prediction/label tables rather than generating BAMs or retraining from raw signal.",
+  "named_tools_methods": [
+    "Uncalled4",
+    "f5c",
+    "Nanopolish",
+    "Tombo",
+    "m6Anet",
+    "precision-recall",
+    "ROC",
+    "k-mer pore models"
+  ],
+  "primary_comparisons": [
+    "Uncalled4 vs f5c/Nanopolish/Tombo benchmark time and output file size by chemistry",
+    "Uncalled4 vs Nanopolish alignment-derived m6A prediction performance",
+    "DNA R9.4.1 6-mer vs DNA R10.4.1 9-mer pore-model substitution effects",
+    "RNA R9.4.1 5-mer vs RNA004 9-mer signal/composition relationships"
+  ],
+  "validation_required": [
+    "CSV schema checks",
+    "metric reproducibility from saved outputs",
+    "limitations separating provided-data verification from unavailable raw-signal tasks"
+  ]
+}

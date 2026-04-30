@@ -1,0 +1,22 @@
+{
+  "task": "HADDOCK3-inspired integrative modeling/validation analysis for barnase-barstar using PDB input and SKEMPI mutations",
+  "methodological_commitments": [
+    "Use atomic coordinates in PDB format",
+    "Use optional experimental/validation data from SKEMPI binding-affinity mutations",
+    "Produce ranked/scored structural/interface outputs analogous to HADDOCK scoring functions where actual HADDOCK3 is unavailable",
+    "Validate structural predictions/features against experimental mutation effects",
+    "Generate figures and report"
+  ],
+  "direct_targets": [
+    "data overview",
+    "interface/contact characterization",
+    "HADDOCK-like scoring/cluster/ranking surrogate",
+    "validation/comparison against SKEMPI ddG or affinity change",
+    "publication-quality report with PNG figures"
+  ],
+  "known_constraints": [
+    "No human clarification",
+    "data and related_work read-only",
+    "stay inside workspace"
+  ]
+}

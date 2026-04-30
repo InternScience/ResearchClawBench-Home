@@ -1,0 +1,17 @@
+{
+  "python_dependencies": {
+    "pandas": true,
+    "numpy": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "geopandas": true,
+    "shapely": true,
+    "pyproj": true,
+    "fiona": true,
+    "scipy": true,
+    "sklearn": true,
+    "pypdf": true
+  },
+  "ReadPDF_tool": "failed for all papers; pypdf installed and used to extract text into outputs/paper_*.txt",
+  "capability_conclusion": "Exact full GeoH2 optimization package not present; implement transparent reduced-form GeoH2-inspired LCOH with CRF, resource CF, infrastructure adders, ammonia shipping/reconversion and documented limitations."
+}

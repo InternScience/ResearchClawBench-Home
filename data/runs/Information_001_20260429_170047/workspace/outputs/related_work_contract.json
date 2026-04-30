@@ -1,0 +1,53 @@
+{
+  "summary": "Related work sharpens the contract around guided visual search, visual working memory, frozen/fixed vision encoders, high-resolution patching, and attention/saliency-style explanation.",
+  "papers": [
+    {
+      "file": "paper_000.pdf",
+      "title": "V\u2217: Guided Visual Search as a Core Mechanism in Multimodal LLMs",
+      "pages": 11,
+      "task_relevant_extractions": [
+        "V\u2217: Guided Visual Search as a Core Mechanism in Multimodal LLMs Penghao Wu \u2020 UC San Diego pew011@ucsd.edu Saining Xie New York University saining.xie@nyu.edu [targets  located] V*: LLM\u2010guided\u00a0 Search Visual\u00a0Working\u00a0Memory (VWM) VQA LLM [search ends;  construct VWM] [search starts] [search  iterations] What\u00a0color\u00a0is\u00a0the\u00a0liquid\u00a0 in\u00a0the\u00a0glass? <question> \ud835\udc59\ud835\udc5c\ud835\udc50\u0d4c\u123c\ud835\udc651, \ud835\udc66",
+        "an LLM-guided visual search process that uses common sense and contextual cues to search for the required details. Throughout this informed search, it builds a visual working memory (VWM), tokenizing the overall context and the areas of interest related to the targets, which are then re-fed to the VQA LLM, enabling it to accurately answer the question. Abstract When we look around and perform complex tasks, how we see and selectively process what we see is crucial. How- ever, the lack of this visual search mechanis"
+      ]
+    },
+    {
+      "file": "paper_001.pdf",
+      "title": "Generic Attention-model Explainability for Interpreting",
+      "pages": 10,
+      "task_relevant_extractions": [
+        "ut. In this work, we propose the \ufb01rst method to explain prediction by any Transformer-based architecture, including bi-modal Transformers and Transformers with co-attentions. We provide generic solutions and apply these to the three most commonly used of these architectures: (i) pure self- attention, (ii) self-attention combined with co-attention, and (iii) encoder-decoder attention. We show that our method is superior to all existing methods which are adapted from single modality explainability. Our code is avail-",
+        "Generic Attention-model Explainability for Interpreting Bi-Modal and Encoder-Decoder Transformers Hila Chefer1 Shir Gur1 Lior Wolf1,2 1The School of Computer Science, Tel Aviv University 2Facebook AI Research (FAIR) Abstract Transformers are increasingly dominating multi-modal reasoning tasks, such as visual question answering, achiev- ing state-of-the-art results thanks to their a"
+      ]
+    },
+    {
+      "file": "paper_002.pdf",
+      "title": "BLIP-2: Bootstrapping Language-Image Pre-training",
+      "pages": 13,
+      "task_relevant_extractions": [
+        "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models Junnan Li 1 Dongxu Li 1 Silvio Savarese 1 Steven Hoi 1 https://github.com/salesforce/LAVIS/tree/main/projects/blip2 Abstract The cost of vision-and-language pre-training has become increasingly prohibitive due to end-to- end training of large-scale models. This paper proposes BLIP-2, a generic and efficient pre",
+        "nguage pre-training from off-the-shelf frozen pre-trained image encoders and frozen large language mod- els. BLIP-2 bridges the modality gap with a lightweight Querying Transformer, which is pre- trained in two stages. The first stage boot- straps vision-language representation learning from a frozen image encoder. The second stage bootstraps vision-to-language generative learning from a frozen language model. BLIP-2 achieves state-of-the-art performance on various vision- language tasks, despite having significant"
+      ]
+    },
+    {
+      "file": "paper_003.pdf",
+      "title": "Monkey: Image Resolution and Text Label Are Important Things for Large",
+      "pages": 11,
+      "task_relevant_extractions": [
+        "e understanding. Addressing these challenges, we introduce Monkey to enhance LMM capa- bilities. Firstly, Monkey processes input images by di- viding them into uniform patches, each matching the size (e.g., 448\u00d7448) used in the original training of the well- trained vision encoder. Equipped with individual adapter for each patch, Monkey can handle higher resolutions up to 1344\u00d7896 pixels, enabling the detailed capture of com- plex visual information. Secondly, it employs a multi-level description generation method,",
+        " the size (e.g., 448\u00d7448) used in the original training of the well- trained vision encoder. Equipped with individual adapter for each patch, Monkey can handle higher resolutions up to 1344\u00d7896 pixels, enabling the detailed capture of com- plex visual information. Secondly, it employs a multi-level description generation method, enriching the context for scene-object associations. This two-part strategy ensures more effective learning from generated data: the higher resolution allows for a more detailed capture of "
+      ]
+    }
+  ],
+  "contract_updates": [
+    "Use V* as closest related training-free guided visual search mechanism: iterative question-guided target localization, construction of visual working memory, and final answer from localized evidence.",
+    "Use BLIP-2 as evidence that frozen image encoders/LLM bridges are a common MLLM design, making fixed encoder resolution a relevant bottleneck.",
+    "Use Monkey as high-resolution comparison family: patch-based high-resolution input and multi-level descriptions, contrasting with task-guided selective cropping.",
+    "Use Chefer et al. as motivation for attention/saliency maps as interpretability artifacts for transformer-based multimodal reasoning."
+  ],
+  "inferred_comparison_axes": [
+    "global fixed-resolution view vs local crop re-encoded at full resolution",
+    "untargeted high-resolution tiling vs task-guided selective ROI",
+    "global context preservation vs local detail gain",
+    "saliency/interest localization consistency with chosen crop"
+  ]
+}

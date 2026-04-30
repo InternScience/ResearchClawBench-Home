@@ -1,0 +1,709 @@
+Synaptic circuits and their variations within different
+columns in the visual system of Drosophila
+Shin-ya Takemura a, C. Shan Xu a, Zhiyuan Lu a,b, Patricia K. Rivlin a, Toufiq Parag a, Donald J. Olbris a, Stephen Plaza a,
+Ting Zhao a, William T. Katz a, Lowell Umayam a, Charlotte Weaver a, Harald F. Hess a, Jane Anne Horne b,
+Juan Nunez-Iglesias c, Roxanne Aniceto a, Lei-Ann Chang a, Shirley Lauchie a, Ashley Nasca a, Omotara Ogundeyi a,
+Christopher Sigmunda, Satoko Takemuraa, Julie Trana, Carlie Langilleb, Kelsey Le Lacheur b, Sari McLinb, Aya Shinomiyab,
+Dmitri B. Chklovskii d, Ian A. Meinertzhagen a,b, and Louis K. Scheffer a,1
+aJanelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA 20147; bDepartment of Psychology and Neuroscience, Dalhousie University,
+Halifax, NS, Canada B3H 4R2; cLife Sciences Computation Centre, University of Melbourne, Carlton, VIC 3010, Australia; and dSimons Center for Data
+Analysis, Simons Foundation, New York, NY 10010
+Edited by S. Lawrence Zipursky, University of California, Los Angeles, CA, and approved September 18, 2015 (received for review May 19, 2015)
+We reconstructed the synaptic circuits of seven columns in the
+second neuropil or medulla behind the fly ’s compound eye. These
+neurons embody some of the most stereotyped circuits in one of the
+most miniaturized of animal brains. The reconstructions allow us, for
+the first time to our knowledge, to study variations between circuits
+in the medulla’s neighboring columns. This variation in the number
+of synapses and the types of their synaptic partners has previously
+been little addressed because methods that visualize multiple circuits
+have not resolved detailed connections, and existing connectomic
+studies, which can see such connections, have not so far examined
+multiple reconstructions of the same circuit. Here, we address the
+omission by comparing the circuits common to all seven columns to
+a s s e s sv a r i a t i o ni nt h e i rconnection strengths and the resultant rates
+of several different and distinct types of connection error. Error rates
+reveal that, overall, <1% of contacts are not part of a consensus
+circuit, and we classify those contacts that supplement (E +)o ra r e
+missing from it (E −). Autapses, in which the same cell is both pre-
+synaptic and postsynaptic at the same synapse, are occasionally seen;
+two cells in particular, Dm9 and Mi1, form ≥20-fold more autapses
+than do other neurons. These resu lts delimit the accuracy of devel-
+opmental events that establish and normally maintain synaptic cir-
+cuits with such precision, and thereby address the operation of such
+circuits. They also establish a precedent for error rates that will be
+required in the new science of connectomics.
+neural circuits | stereotypy | biological error rates |
+reconstruction error rates
+N
+euronal networks are widely argued to be highly optimized
+(e.g., 1, 2), yet few would claim them to be perfect. Existing
+studies generally fail to address the question of just how perfect
+they may be because they assume that a network supports spe-
+cific physiological interactions (3 –6) or average the pattern of
+real connections, or they assume that connections are both ex-
+clusive and optimal. However rare, wiring errors violate these
+assumptions and can only be found by comparing multiple
+complete examples of the same anatomical wiring diagram. By
+explicitly documenting synaptic connections using EM, the new
+approach of connectomics (7) now opens the possibility to study
+wiring variation more widely. However, existing connectomes (8,
+9) have yet to address this issue, and, so far, their accuracy could
+only be estimated insofar as the underlying circuit was incom-
+pletely known. Indeed, only for the nematode Caenorhabditis
+elegans, a model of determinate cell lineage and complement, is
+the complete synaptic network known (10, 11). In that case, the
+probability that a given pair of adult neurons will be connected
+by chemical synapses if the contralateral homolog is so con-
+nected averages 87%, whereas the average probability that a
+given pair of adult neurons will be connected by chemical syn-
+apses is only 75% of the probability that they will be connected in
+an L4 larva (11).
+Few other precedents document the connection accuracy of
+any nervous system. The task of documenting such accuracy is
+enabled in the simple nervous systems of many invertebrate
+animals, in which neurons and their classes are uniquely identi-
+fiable from specimen to specimen (12), especially by those
+systems in which neurons are tiled in parallel repeating path-
+ways, as in the visual system. For example, an early study on the
+visual system of the crustacean Daphnia (13) reports a roughly
+threefold range in the number of synapses formed by four
+specimens of a single neuron, cell D2 left and right, onto each
+of three types of postsynaptic neuron. The cellular diversity and
+sheer volume of larger brains or brain regions are profound
+impediments to comparable studies in most species, but the
+repeating columnar composition of the optic neuropils of the
+fruit fly Drosophila ,h a r n e s s e dt ot h ef l y’s genetic credentials
+(14, 15), makes this species propitious for further study, even if
+its neurons have tiny neurites that are highly branched (16, 17),
+which are features unfavorable for reconstructing the synaptic
+circuits to which they contribute. We have therefore developed
+Significance
+Circuit diagrams of brains are generally reported only as ab-
+solute or consensus networks; these diagrams fail to identify
+the accuracy of connections, however, for which multiple cir-
+cuits of the same neurons must be documented. For this rea-
+son, the modular composition of the Drosophila visual system,
+with many identified neuron classes, is ideal. Using EM, we
+identified synaptic connections in the fly ’s second visual relay
+neuropil, or medulla, in the 20 neuron classes in a so-called
+“core connectome, ” those neurons present in seven neighbor-
+ing columns. These connections identify circuits for motion.
+Their error rates for wiring reveal that <1% of contacts overall
+are not part of a consensus circuit but incorporate errors of
+either omission or commission. Autapses are occasionally seen.
+Author contributions: S.-y.T., C.S.X., Z.L., P.K.R., T.P., S.P., T.Z., W.T.K., L.U., H.F.H., J.A.H.,
+J.N.-I., D.B.C., I.A.M., and L.K.S. designed research; S.-y.T., C.S.X., Z.L., P.K.R., T.P., S.P., T.Z.,
+W.T.K., L.U., H.F.H., J.A.H., J.N.-I., R.A., L.-A.C., S.L., A.N., O.O., C.S., S.T., J.T., C.L., K.L.L.,
+S.M., A.S., I.A.M., and L.K.S. performed research; T.P., D.J.O., S.P., T.Z., W.T.K., C.W., H.F.H.,
+J.N.-I., and L.K.S. contributed new reagents/analytic tools; S.-y.T., P.K.R., S.P., T.Z., H.F.H.,
+J.A.H., D.B.C., I.A.M., and L.K.S. analyzed data; and S.-y.T., I.A.M., and L.K.S. wrote
+the paper.
+The authors declare no conflict of interest.
+This article is a PNAS Direct Submission.
+Freely available online through the PNAS open access option.
+Data deposition: Our EM dataset has been published on the Janelia/Howard Hughes
+Medical Institute website, https://www.janelia.org/proj ect-teams/fly-em/data-and-
+software-release (ID code FIB-25).
+1To whom correspondence should be addressed. Email: schefferl@janelia.hhmi.org.
+This article contains supporting information online at www.pnas.org/lookup/suppl/doi:10.
+1073/pnas.1509820112/-/DCSupplemental.
+www.pnas.org/cgi/doi/10.1073/pnas.1509820112 PNAS | November 3, 2015 | vol. 112 | no. 44 | 13711–13716
+NEUROSCIENCE
+Downloaded from https://www.pnas.org by 122.157.156.34 on February 13, 2026 from IP address 122.157.156.34.
+
+methods to make such reconstructions semiautomatically (18, 19)
+and applied these reconstruction methods to the second visual
+relay station, or optic medulla, the largest neuropil of the fly ’s
+brain (20).
+In the fruit fly Drosophila melanogaster, the medulla comprises
+a retinotopic array of repeating columns (16, 21), each ∼8 μmi n
+diameter and ∼60 μm long (Fig. 1 A–C). Every column contains a
+fixed group of 27 columnar neurons, 17 medulla cells, and 10
+inputs to or from the lamina (two photoreceptor terminals; five
+lamina terminals; and neurites of T1, C2, and C3) (16, 17, 21)
+that are morphologically similar from column to column and
+from animal to animal (16, 21). Together, they constitute what
+we will define as a module of the medulla ’s architecture. The
+diversity of neuron classes and their packing density have to-
+gether constituted the major challenge faced by those researchers
+who would seek to identify wiring specificity in this or other re-
+gions of the fly ’s brain but are, we suggest, most easily tackled
+among the repeated neuronal arrays of a visual neuropil. Fur-
+thermore, some aspects of the optic lobe ’s deeper circuits depend
+little on the fly ’s visual experience (22, 23), indicating that there,
+at least, the accuracy of synaptic wiring is inbuilt, making the
+medulla a clear candidate for neuronal stereotypy and an excel-
+lent test bed to examine both the accuracy with which neurons
+contact each other to form synaptic networks and, correspond-
+ingly, the accuracy of EM reconstructions used to catalog those
+networks.
+Results
+Reconstruction of a single circuit cannot differentiate between
+wiring errors, reconstruction errors, and natural variations.
+Multiple analyses of identical circuits are needed to determine
+both the consensus circuit and the accuracy of synaptic connec-
+tions with respect to this consensus. For this reason, and to analyze
+multicolumn circuits that we will report elsewhere, we collected
+and reconstructed an EM image stack of seven medulla columns, a
+central “Home” column and its six immediate neighbors, columns
+At oF( F i g .1 B–D). The completed connectome is among
+the largest to date for any brain, with ∼900 reconstructed cells,
+∼53,500 presynaptic sites, and ∼315,500 postsynaptic sites. Some
+modular cells are wider than a single column, with their arbors
+overlapping as opposed to being contained entirely within a
+single column. As a result, the central Home column, which
+receives dendrites spreading from its six neighbors, is more
+completely annotated than the six surrounding columns. Com-
+pared with the Home column, which has 2,634 presynaptic sites,
+the relative completeness percentages of columns A –F are
+84.1%, 98.3%, 89.1%, 86.8%, 83.6%, and 83.3%.
+Our analysis addressed the numbers of connections between
+identified synaptic partners. In the medulla, the sizes of T-bars are
+relatively uniform, so our estimates used the number of synaptic
+contacts in parallel, and not their size, as a proxy of pathway
+strength. “Strong” pathways of more than five synapses, corre-
+sponding to those pathways found by serial section electron mi-
+croscopy (ssEM) in a single column (21), were identical in all
+columns, although with statistical variation in synaptic strength
+between columns (Fig. 2 and Table 1).
+To detect and compare the incidence of different classes of
+errors, we first extracted a core connectome ( Dataset S1 ), com-
+prising 20 cell types that occurred exactly once in each of the
+seven columns, and the connections between these cells. The cells
+were C2, C3, L1, L2, L3, L4, L5, Mi1, Mi4, Mi9, R7, R8, T1, T2,
+T2a, T3, Tm20, Tm1, Tm2, and Tm9 (16, 21). Of the remaining
+modular types, T4, Tm3, Tm4, Tm5Ya, and Tm6 could not be
+unambiguously associated with a column, as required for this
+analysis. In particular, there are about four motion-sensing T4
+cells, of different subtypes, per column. Dm2, Dm8, and Mi15
+were missing from one column each, as discussed below, and
+likewise were omitted. T3 we now believe to be modular; we
+found one T3 per column in our sample, and an overall count
+from genetic single-cell labeling is compatible with the number
+of columns.
+Variation Between Columns. The observed connection strengths
+among identified modular neurons vary between columns, as
+shown in Fig. 2 A and Table 1. This variation sums true variation
+and the variation introduced by our reconstruction methods,
+which has several origins. The largest influences come from the
+different completeness of the columns in our EM dataset, and
+the variance introduced by our inability to trace every connec-
+tion. Making the conservative assumption that we may miss as
+many as half of the connections, we model this incompleteness by
+a binomial distribution with P = 0.5. Other sources of human-
+induced variation, such as differences in the decisions of different
+proofreaders (the observers who arbitrate profile continuity) and
+the evolution of tools and procedures that occurred over time
+during the proofreading, are believed to be less significant,
+based on repeated reconstructions of subsets of the data by
+different proofreaders. We conclude that the bulk of the mea-
+sured variation is biological and, in fact, real (Fig. 2 A).
+Fig. 1. Seven-column connectome reconstruction. (A) Overview of the optic
+lobe of Drosophila, showing the repeating retinotopic architecture of successive
+neuropils. Modified with permission from ref. 24. ( B) Three-dimensional re-
+construction of modular medulla cell types in each of seven reconstructed
+columns. (C) Transverse section in distal medulla stratum M1. Columns (Home
+and A–F) are colored to conform to B. ( D) Plot of a column array. The central
+Home column is surrounded by its six neighboring columns A–F and 12 more in
+the outer ring. ( E) Focused-ion beam milling (FIB) electron micrograph of
+neurite profiles with a presynaptic T-bar ribbon (arrow) and two juxtaposed
+dendrites with PSDs, revealed by membrane densities (dots). (Scale bars: B,
+10 μm; C,5 μm; E,5 0 0n m . )
+13712 | www.pnas.org/cgi/doi/10.1073/pnas.1509820112 Takemura et al.
+Downloaded from https://www.pnas.org by 122.157.156.34 on February 13, 2026 from IP address 122.157.156.34.
+
+The observed variation in connections cannot be explained by
+a binomial or Poissonian process involving the likelihood that
+each pre/post connection exists independently. For such a Pois-
+son distribution, the variance would need to equal the mean, but
+the observed variation is, in fact, greater (Fig. 2 D). All binomial
+distributions have less variance than Poisson distributions and
+may also be excluded. The excess variation also cannot be fully
+explained by variation in T-bar counts, for which the variance
+equals the mean to within experimental error (Fig. 2 B).
+One possible way to explain the high variance would be if
+the likelihood that a connection exists is, in fact, not independent
+of other connections, such that whenever a single connection is
+present, multiple other similar connections are also more likely to
+occur. A possible cause for this multiplication is that single medulla
+neurons often form multiple postsynaptic densities (PSDs) opposite
+the same presynaptic site. This duplication differs from the situation
+in the medulla ’s input neuropil, the lamina, where at the tetrad
+synapses of photoreceptors R1 –R6, such multiple contacts are
+strictly excluded for the dendrites of L1 and L2 (25).
+We estimate the “multiplicity” as the average number of PSDs
+formed by a given postsynaptic cell that contacts a single T-bar
+(from the total connection count divided by the number of T-bars
+involved). This multiplicity robustly increases with overall con-
+nection count (Fig. 2C). We model this increase with a power law
+(a linear fit on a log –log scale). Only connections with an average
+count of at least 1 are considered in the fit, because multiplicity
+has a lower limit of 1. Combining the known variance in T-bar
+counts, and the observed multiplicity, with the variance from in-
+complete reconstruction (as explained inSI Materials and Methods)
+provides a respectable fit to the observed variance (Fig. 2D).
+Contact Area Is Not a Good Predictor of Synapse Number. On the
+grounds that two neurons with extensive contact also have more
+opportunity to form synapses, a natural supposition might be
+that synapse count is determined by, or at least correlates with,
+the area of contact between any pair of neurons. This correla-
+tion, known as Peters ’ rule, has been established for vertebrate
+cortical neurons (26), but has so far been of limited application
+in insect neurons. EM reconstructions provide not only the
+synapse count but also the area of overlap between neuron
+partners ( Dataset S3 ) and allow this correlation to be measured
+directly. The contact area per synapse (square micrometers)
+varies over almost two orders of magnitude, however, and thus
+shows little correlation (Fig. 3 A).
+Even though contact area per synapse varies widely when
+considered across all connections, it might be possible that
+the column-to-column count of a particular connection would
+correlate more closely with contact area. We examined each
+connection type in the core connectome and calculated the cor-
+relation between synapse count and contact area. Even among
+connections of the same type, contact area was not a good pre-
+dictor of synapse strength, with fits of opposite signs almost as
+common as positive correlations. As an illustration, one particular
+set of connections (Mi1 to its top five partner neurons: T3, Mi4,
+Mi9, C3, and L1) is shown in Fig. 3 B. The same inconsistency
+between synapse number and contact area that is found among
+connections in general is also found for specific partners, and for
+connections in which the overlap measurement is confined to
+specific medulla strata.
+We also found no evidence for strongly conserved ratios of
+synaptic partners or evidence for area competition (as explained
+in SI Materials and Methods ).
+Autapses. Autapses, at which a neuron synapses upon itself, were
+identified and double-checked as part of our reconstruction be-
+cause they are a common reconstruction error. If a significant
+number of autapses was found for a cell type, each was carefully
+Fig. 2. Variation as a function of mean synapse
+count among connections of the core connectome.
+(A) Crosses represent the variation in each connec-
+tion for the seven columns of the core connectome
+as a function of the mean connection count. Lines
+represent the two main experimental contributions
+to this variance, and their sum. “Differing cols. ”
+shows the contribution that would be measured if
+each column were identical but reported to the
+estimated completeness. “Missing conn.” shows the
+variation expected from the incomplete reporting
+of synaptic contacts, assuming a binomial distribu-
+tion with P = 0.5. The sum of these experimental
+artifacts falls well short of the observed variation.
+(B) Variation in T-bar counts across columns, from
+medulla stratum M2. A model with variance equal
+to the mean explains the data to within experi-
+mental error. ( C) Multiplicity as a function of syn-
+apse count. ( D) Same data as in A, plus a gray band
+showing the 95% confidence limits from fitting a
+straight line to these data. The best fit, not shown,
+is centered in the gray band. The proposed model
+from the text, combining the T-bar variance, the
+multiplicity, and the estimated experimental error,
+accounts reasonably well for the overall variance.
+A purely Poisson model, also shown, underpredicts
+this variance.
+Table 1. Sample data from the core connectome
+Pre Post Home A B C D E F Mean Variance SD
+L1 Mi1 150 158 180 159 161 154 133 156.43 168.82 12.99
+L5 Mi1 47 24 46 41 51 45 53 43.86 78.98 8.89
+Mi1 L1 26 22 33 31 24 23 24 26.14 15.27 3.91
+Mi1 T3 18 23 24 21 17 39 32 24.86 54.12 7.36
+T m 2 M i 1 1 0102311 . 1 4 0 . 9 8 0.99
+Shown are the two strongest presynaptic and postsynaptic partners of
+Mi1, plus a very weak connection for comparison. Entries at each intercept
+are the number of synapses between the two cell partners, followed by the
+mean, variance, and SD of the seven values. The full dataset is given in
+Dataset S2 .
+Takemura et al. PNAS | November 3, 2015 | vol. 112 | no. 44 | 13713
+NEUROSCIENCE
+Downloaded from https://www.pnas.org by 122.157.156.34 on February 13, 2026 from IP address 122.157.156.34.
+
+checked again. We therefore believe that the autapses remaining
+are not tracing errors but real biological features that constitute
+a functional part of the connectome. Endorsing their bona fides,
+they occur at elevated frequencies in just two cell types (Mi1 and
+Dm9) (Fig. S1). Both cells are postsynaptic at autapses, in 1.96%
+and 2.6% of cases, respectively, at least 20-fold more frequently
+than for other cell types, and in both cells, the formation of
+autapses is consistent in all seven columns.
+Error Rates of Wiring. By reconstructing seven complete medulla
+columns, we could interrogate the synapses of all seven core
+connectomes. Given the existence of a core connectome, if we
+find a pathway connecting the same presynaptic to postsynaptic
+neurons in all seven columns, independent of its strength, then
+we consider it consistent (Fig. 4 A). On average, each synapse we
+recorded has more than a 99% chance of belonging to such a
+consistent connection. The few connections that are not repro-
+duced in all seven columns we then consider to be inconsistent
+connections (ICs). Several lines of evidence lead us to conclude
+that these ICs are wiring errors, and not biologically deliberate
+connections or errors of human provenance.
+We classified all ICs into two classes: those ICs that supple-
+ment the consensus connection designated as class E + (Fig. 4 B
+and D) errors and those ICs missing from it as class E − (Fig. 4C)
+errors. A third class of error, missing cells, we consider as a
+limiting case of class E −, in which all connections to a cell are
+missing. Absent biological intent, a connection found in some
+but not all columns could be interpreted as either additional or
+missing connections. For our analysis, we consider a connection
+found in fewer than half of the columns as an unprogrammed
+addition (E+) but a connection found in more than half (but not
+all) of the columns as a biological intent to wire all columns. The
+remaining connections are classified as missing (E −), and we
+estimate their strength as the average of the connections that
+are present.
+Different Classes of Errors. To aid in their analysis, we divide E +
+errors into class E + U (the target cell is a target cell type that is
+normally unconnected by such synapses; Fig. 4 B), E + N( t h e
+target cell is a normally targeted type, but in the wrong column;
+Fig. 4D), and AUT (the target cell connects to itself at an autapse)
+(Table S1). This distinction reflects a commonly proposed mech-
+anism (27), that the cell surface proteins regulating synaptogenesis
+are specific to particular cell types, and may affect E + U, E + N,
+and AUT errors differentially. Supporting this hypothesis, we find
+the two error classes behave very differently as a function of
+synapse count. E + N errors grow roughly in proportion to the
+number of synapses, whereas E + U errors decrease for cells with
+more synapses, suggesting that pathway strength and error rates
+are governed by different mechanisms.
+Overall, by synapse count, we find 0.43% E + U errors, 0.61%
+E + N errors, 0.12% AUT errors, and 1.55% E − errors; these
+rates include those error rates for the most weakly connected
+neuron partners. We reexamined all E + errors to verify that they
+were real and not reconstruction errors ( Materials and Methods ).
+This analysis provides a solid lower limit to such errors, but it is
+possible that additional incorrect connections were missed, so
+that the true rate could be somewhat higher. By their nature, E −
+errors are much harder to verify and are naturally generated by
+typical reconstruction errors, such as the failure to attach cor-
+rectly a fragment of an arbor to the rest of its neuron. We regard
+our E − errors as an upper bound and informally suspect that
+their true rate is closer to the other error rates.
+Missing Cells. An additional error, missing cells, is only detectable
+by careful examination of our dense reconstruction of all cells, in
+which none can hide. From each of three nominally modular cell
+types, we found one cell missing from the seven columns: distal
+medulla (Dm) amacrine neurons Dm2 and Dm8, and Medulla
+Fig. 3. Contact area per synapse within the core
+connectome. ( A) All connections. Cells with overlap
+but no connections (green) are shown along the
+bottom axis to appear on a log-scale plot. The di-
+agonal lines represent combinations of area and
+density that result in the same synapse count be-
+tween two cells. ( B) Contact area and synapse count
+for the five most numerous outputs of Mi1. Solid
+lines are least-square fits to the seven examples of
+each connection.
+Fig. 4. Characterizing connection errors. Plots for each synapse class be-
+tween presynaptic (vertical columns) and postsynaptic (horizontal rows)
+partners. Each entry intercept is the number of synaptic contacts from the
+presynaptic cell ( Left) to its postsynaptic partner ( Top) for each of the seven
+columns [Home (H) and A –F]. ( A) Completely consistent connection, with
+seven-column variation in connection strength. (B) Class E + U errors. (C) Class
+E− errors. (D) Class E + N errors. ICs are shaded throughout. The percentage
+(of all 400 pre/post pairs) with this pattern is shown at the top right of each
+matrix. Not shown are examples lacking connections (60%) and connections
+that did not fall into the patterns shown here (3.5%). The sum exceeds 100%
+because a single cell pair can have both missing and extra connections.
+13714 | www.pnas.org/cgi/doi/10.1073/pnas.1509820112 Takemura et al.
+Downloaded from https://www.pnas.org by 122.157.156.34 on February 13, 2026 from IP address 122.157.156.34.
+
+intrinsic (Mi) neuron Mi15 (16, 21). We analyzed their potential
+contribution by adding the three types to the core connectome
+and then counting all connections to these cells as missing. This
+analysis raised the incidence of E − errors to 2.5%. The 0.94%
+increase, unlike the 1.56% base rate, we considered sound be-
+cause we verified in three different ways that the parent cells
+were indeed missing ( SI Materials and Methods ). In particular,
+Mi15 was missing from the central Home column, making it an
+especially complete case to analyze in detail. We looked at cells
+and circuits to which Mi15 would normally contribute and found
+four qualitative and quantitative changes. Some targets ignored
+the missing cell, some connected to adjacent cells of the same
+type, and some extended longer arbors across the gap. More
+surprisingly, one of the adjacent Mi15s (normally a single-column
+cell) grew an additional arbor in the missing column, which may
+well speak to the development process by which these cells orga-
+nize themselves and find their target connections. These changes
+are illustrated in Fig. S2 and further discussed in SI Materials
+and Methods .
+Discussion
+Discrepancies in wiring are informative for three main reasons.
+First, they are a biological phenomenon, one that defines the
+function of circuits, such as those circuits for motion, which have
+high temporal resolution, setting a standard for the accuracy in
+some cases that we might seek in other networks of neurons.
+Second, as in genomics (28), knowledge of biological error rates,
+and the demonstration that analytical tools can attain these rates,
+is a fundamental prerequisite for the science of connectomics.
+Third, the quantification of errors reveals the performance limits
+of the mechanisms that direct the initial wiring. Circuit changes
+downstream of such errors additionally show the adaptive ca-
+pacity of network wiring. We refer to such variations as errors,
+recognizing that our sample represents only core circuits of
+modular neurons, and these neurons at only a single point in
+time. The medulla ’s circuits formed by nonmodular neurons may
+differ, whereas connections we consider to be errors may be only
+transient. Such transient events may represent an avenue for
+structural plastic changes in the optic lobe, for example, such as
+those structural plastic changes occurring on a circadian basis
+among lamina synapses (29). We consider circuit constancy in the
+context of motion sensing, but many of the synapses must also be
+the substrate for other sensory circuits. Our reconstructions re-
+veal minor variations in branching patterns of the same cell type
+in different columns that we interpret as relational, which are
+required to match reciprocal variations in target neurons so as to
+establish constancy in pathway strength.
+Our results reveal that, on average, only 0.5% of the recorded
+synapses distributed among all cell types are not part of a con-
+sensus circuit and that, at most, 1.5% of the synapses that we
+might expect to find in any one connection are missing. Com-
+pared with recorded variation in the corresponding synapses
+of the crustacean Daphnia (13) or different specimens of the
+nematode C. elegans (11), we believe that the fly ’s circuits are the
+most accurate reported to date in the literature. They reveal a
+clear numerical separation among strong pathways with many
+parallel synapses that constitute effective network pathways and
+minor exceptions that may be functionally trivial and perhaps
+attributable to developmental noise.
+Even though these results show impressive stereotypy, they are
+subject to particular limitations. The seven columns are all from
+adjacent columns near the center of one eye from a single fly,
+and hence subject to very similar visual experience as well. Cells
+elsewhere in the medulla, particularly those cells beneath the
+dorsal rim (e.g., 30), are known to differ. The difference between
+individual flies may be greater as well, although our results are
+consistent with the results from a single-column reconstruction in
+a different animal ( Fig. S3 ). The possibility for stratum-specific
+or local microcircuit variations is real, but few models exist for
+this possibility in the fly. We searched for conserved local mi-
+crocircuits by performing many of our analyses on a per-stratum
+basis, but these analyses were even more limited by the statistics
+of small numbers than our whole-cell analysis, allowing no
+firm conclusions.
+We have examined the issue of wiring accuracy within the
+context of our analysis of motion-sensing circuits, exploiting the
+arrangement of parallel pathways typical of visual systems. We
+now understand that these circuits will emerge, as in the verte-
+brate retina (31), not from exclusive pathways for each parallel
+channel but from hitherto unsuspected combinations of inter-
+connected microcircuits, each with an accuracy now defined.
+Although motion detection circuits in insects (32) have long been
+modeled from studies on quantitative behavior (33, 34) as a
+single circuit, their accuracy has never been examined previously,
+albeit the crystalline composition of the fly ’s optic medulla has
+always offered that prospect.
+What significance should we attach to our putative errors, the
+ICs? Can they improve network performance, and thus be con-
+sidered in any way functionally adaptive? It is possible that at
+least some ICs are adaptations to upstream differences in the
+lamina or photoreceptor neurons, or that they may add noise to a
+circuit to improve its performance, as is sometimes used in both
+human-made (35 –37) and biological circuits (38). There is also
+evidence that some nerve cells respond better when their input
+has a random component (39). These adaptations seem unlikely
+in the medulla, however, insofar as upstream compensation, or
+noise injection, would be best served by specific additional
+connections added at particular points in a network, whereas the
+observed ICs vary from column to column and include all cell
+types. Are ICs then simply morphogenetic errors? It may be
+significant that the projection patterns of R1 –R6 photoreceptor
+terminals in an error-prone region of the fly ’s eye also had an
+error rate of about 1.5% (40), a magnitude similar in larger scale
+miswiring to the magnitude found here at a very local scale,
+among synapses. On the other hand, error rates, measured di-
+rectly for the differentiation and axon targeting of large numbers
+of Drosophila photoreceptors, show that ∼0.08% of photore-
+ceptors may be missing and that 0.04% of axons innervate the
+wrong cartridge (41). These rates are thus at least an order of
+magnitude less inaccurate then the synaptic errors we report here.
+If visual pathways have evolved to process information at near-
+optimal performance, this comparison between morphogenesis
+and synaptogenesis suggests that the limit to accurate signal
+transfer may be set at the level of the synaptic populations. It is
+not clear whether this mismatch reflects the limit set by pro-
+gramming cell adhesion during synaptogenesis, or whether it may
+reflect that the selective pressure on any one connection in a
+distributed and redundant network is less than the selective
+pressure on an entire sensory neuron. Alternatively, it may be
+functionally important, injecting noise in a programmed network.
+We also observe that the largest cells with most synapses, such
+as L1, L2, and Mi1, have fewer E + U errors than cells with fewer
+synapses. This counterintuitive finding could be explained by
+selective pressure to optimize the function of these presumably
+major input neurons. Combining these lines of evidence (the
+presence of errors on every cell type, their lack of obvious func-
+tion, comparability with other error sources, and fewer errors on
+cells with more synapses) leads us to conclude that ICs simply
+indicate the accuracy attained by the mechanisms of neuronal
+synaptogenesis when wiring the medulla. These mechanisms
+may include the mechanisms of chemoaffinity (42) or those mecha-
+nisms involved in exclusion of incorrect connections through self-
+avoidance (43, 44). These mechanisms, along with other cell surface
+and secreted molecules, are thought to regulate synaptogenesis be-
+tween synaptic partners, forming the basis for the accuracy of
+synaptic connections we report.
+Takemura et al. PNAS | November 3, 2015 | vol. 112 | no. 44 | 13715
+NEUROSCIENCE
+Downloaded from https://www.pnas.org by 122.157.156.34 on February 13, 2026 from IP address 122.157.156.34.
+
+Autapses are a special case of synapse found at elevated fre-
+quency in two cells, Mi1 and Dm9, and elsewhere at specific sites
+of various regions of the vertebrate brain (45, 46). Most are
+thought to be inhibitory, and therefore self-limiting, maintaining
+the precision with which a neuron fires action potentials (46).
+Normally, neurites are rigorously excluded from contacting their
+own neuron; in Drosophila, the cell adhesion molecule Dscam1
+promotes the repulsion of processes of the same neuron among
+axons (43) and synapses (25). We tentatively interpret autapses
+on cell types Mi1 and Dm9 to reflect the reduced effectiveness at
+these two specific neurons of DScam1-mediated self-exclusion,
+which normally prevents the self-contact that occurs at autapses.
+The biological error rates shown here set a limit to the accu-
+racy needed in connectome reconstruction, the network simu-
+lations these connectomes can support, and the functional
+analyses they predict, on a cell-by-cell basis. Furthermore, we
+have shown, for the first time to our knowledge, that EM re-
+construction can be sufficiently accurate to expose underlying
+biological errors in c onnectivity, even in the most stereotyped
+circuits known. Combined, these rates provide us with quanti-
+tative targets against which other circuits may be compared as
+we proceed to document yet larger connectomes.
+Materials and Methods
+We used focused-ion beam milling SEM (47) in Drosophila prepared, as
+previously reported (21), after hi gh-pressure freezing and freeze sub-
+stitution ( SI Materials and Methods ). We imaged a 40 × 40 × 80-μm
+volume at an isotropic resolution of 10 nm per pixel and reconstructed
+all columnar and noncolumnar neurons , including tangential fibers, in
+the seven-column volume. For each neuron, we used semiautomated
+prediction software to identify presy naptic sites, which are marked by an
+organelle, the T-bar ribbon, at the release site in Drosophila . Opposite
+the T-bar, we identified membrane den sities (PSDs) at postsynaptic sites
+(Fig. 1 E).
+ACKNOWLEDGMENTS. Aljoscha Nern helped us to determine the correspon-
+dence between light microscopy and EM of cell types, and also commented
+on the manuscript. This study was funded and supported by the Howard
+Hughes Medical Institute and Dalhousie University.
+1. Chklovskii DB, Schikorski T, Stevens CF (2002) Wiring optimization in cortical circuits.
+Neuron 34(3):341–347.
+2. Cherniak C (2012) Neural wiring optimization. Prog Brain Res 195:361–371.
+3. Robertson RM (1986) Neuronal circuits controlling flight in the locust: Central gen-
+eration of the rhythm. Trends Neurosci 9(6):278–280.
+4. Grillner S, Wallén P (2002) Cellular bases of a vertebrate locomotor system-steering,
+intersegmental and segmental co-ordination and sensory control. Brain Res Brain Res
+Rev 40(1-3):92–106.
+5. Kristan WB, Jr, Calabrese RL, Friesen WO (2005) Neuronal control of leech behavior.
+Prog Neurobiol 76(5):279–327.
+6. Briggman KL, Kristan WB, Jr (2006) Imaging dedicated and multifunctional neural
+circuits generating distinct behaviors. J Neurosci 26(42):10925–10933.
+7. Lichtman JW, Sanes JR (2008) Ome sweet ome: What can the genome tell us about
+the connectome? Curr Opin Neurobiol 18(3):346–353.
+8. Briggman KL, Helmstaedter M, Denk W (2011) Wiring specificity in the direction-selectivity
+circuit of the retina.Nature 471(7337):183–188.
+9. Helmstaedter M, et al. (2013) Connectomic reconstruction of the inner plexiform layer
+in the mouse retina. Nature 500(7461):168–174.
+10. White JG, Southgate E, Thomson JN, Brenner S (1986) The structure of the nervous
+system of the nematode Caenorhabditis elegans . Philos Trans R Soc Lond B Biol Sci
+314(1165):1–340.
+11. Durbin RM (1987) Studies on the development and organization of the nervous sys-
+tem of Caenorhabditis elegans. PhD thesis (University of Cambridge, Cambridge, UK).
+12. Bullock TH (2000) Revisiting the concept of identifiable neurons. Brain Behav Evol
+55(5):236–240.
+13. Macagno ER, Lopresti V, Levinthal C (1973) Structure and development of neuronal
+connections in isogenic organisms: Variations and similarities in the optic system of
+Daphnia magna . Proc Natl Acad Sci USA 70(1):57–61.
+14. Pfeiffer BD, et al. (2008) Tools for neuroanatomy and neurogenetics in Drosophila.
+Proc Natl Acad Sci USA 105(28):9715–9720.
+15. Jenett A, et al. (2012) A GAL4-driver line resource for Drosophila neurobiology. Cell
+Reports 2(4):991–1001.
+16. Fischbach K-F, Dittrich APM (1989) The optic lobe of Drosophila melanogaster .I .A
+Golgi analysis of wild-type structure. Cell Tissue Res 258(3):441–475.
+17. Takemura SY, Lu Z, Meinertzhagen IA (2008) Synaptic circuits of the Drosophila optic
+lobe: the input terminals to the medulla. J Comp Neurol 509(5):493–513.
+18. Chklovskii DB, Vitaladevuni S, Scheffer LK (2010) Semi-automated reconstruction of
+neural circuits using electron microscopy. Curr Opin Neurobiol 20(5):667–675.
+19. Plaza SM, Scheffer LK, Chklovskii DB (2014) Toward large-scale connectome re-
+constructions. Curr Opin Neurobiol 25:201–210.
+20. Rein K, Zöckler M, Mader MT, Grübel C, Heisenberg M (2002) The Drosophila standard
+brain. Curr Biol 12(3):227–231.
+21. Takemura SY, et al. (2013) A visual motion detection circuit suggested by Drosophila
+connectomics. Nature 500(7461):175–181.
+22. Karmeier K, Tabor R, Egelhaaf M, Krapp HG (2001) Early visual experience and the
+receptive-field organization of optic flow processing interneurons in the fly motion
+pathway. Vis Neurosci 18(1):1–8.
+23. Scott EK, Reuter JE, Luo L (2003) Dendritic development of Drosophila high order
+visual system neurons is independent of sensory experience. BMC Neurosci 4(14):14.
+24. Borst A (2014) Fly visual course control: Behaviour, algorithms and circuits. Nat Rev
+Neurosci 15(9):590–599.
+25. Millard SS, Lu Z, Zipursky SL, Meinertzhagen IA (2010) Drosophila dscam proteins
+regulate postsynaptic specificity at multiple-contact synapses. Neuron 67(5):761–768.
+26. Braitenberg V, Schüz A (1991) Peters ’ rule and White ’s exceptions. Anatomy of the
+Cortex (Springer, Berlin), pp 109 –112.
+27. Kolodkin AL, Tessier-Lavigne M (2011) Mechanisms and molecules of neuronal wiring:
+a primer. Cold Spring Harb Perspect Biol 3(6):1–14.
+28. Hood LE, Hunkapiller MW, Smith LM (1987) Automated DNA sequencing and analysis
+of the human genome. Genomics 1(3):201–212.
+29. Pyza E, Meinertzhagen IA (1993) Daily and circadian rhythms of synaptic frequency in
+the first visual neuropile of the housefly ’s( Musca domestica L.) optic lobe. Proc Biol
+Sci 254(1340):97–105.
+30. Hardie RC (1984) Properties of photoreceptors R7 and R8 in dorsal marginal omma-
+tidia in the compound eyes of Musca and Calliphora. J Comp Physiol A Neuroethol
+Sens Neural Behav Physiol 154(2):157–165.
+31. Dunn FA, Wong RO (2014) Wiring patterns in the mouse retina: Collecting evidence
+across the connectome, physiology and light microscopy. J Physiol 592(Pt 22):
+4809–4823.
+32. Borst A, Haag J, Reiff DF (2010) Fly motion vision. Annu Rev Neurosci 33:49–70.
+33. Hassenstein B, Reichardt W (1956) Systemtheoretische Analyse der Zeit-, Reihenfolgen-
+und Vorzeichenauswertung bei der Bewegungsperzeption des RüsselkäfersChlorophanus.
+Z Naturforsch B 11b(9-10):513–524. German.
+34. Reichardt W (1961) Autocorrelation, a principle for the evaluation of sensory in-
+formation by the central nervous system. Sensory Communication, ed Rosenblith WA
+(MIT Press, Cambridge, MA), pp 303 –317.
+35. Matsuoka K (1992) Noise injection into inputs in back-propagation learning. IEEE
+Trans Syst Man Cybern 22(3):436–440.
+36. Limb JO (1969) Design of dither waveforms for quantized visual signals. Bell System
+Technical Journal 48(7):2555–2582.
+37. Charon I, Hudry O (1993) The noising method: A new method for combinatorial
+optimization.. Oper Res Lett 14(3):133–137.
+38. Faisal AA, Selen LPJ, Wolpert DM (2008) Noise in the nervous system. Nat Rev Neurosci
+9(4):292–303.
+39. Morse RP, Evans EF (1996) Enhancement of vowel coding for cochlear implants by
+addition of noise. Nat Med 2(8):928–932.
+40. Horridge GA, Meinertzhagen IA (1970) The accuracy of the patterns of connexions of
+the first- and second-order neurons of the visual system of Calliphora. Proc R Soc Lond
+B Biol Sci 175(1038):69–82.
+41. Schwabe T, Neuert H, Clandinin TR (2013) A network of cadherin-mediated in-
+teractions polarizes growth cones to determine targeting specificity. Cell 154(2):
+351–364.
+42. Zipursky SL, Sanes JR (2010) Chemoaffinity revisited: Dscams, protocadherins, and
+neural circuit assembly. Cell 143(3):343–353.
+43. Millard SS, Zipursky SL (2008) Dscam-mediated repulsion controls tiling and self-
+avoidance. Curr Opin Neurobiol 18(1):84–89.
+44. Zipursky SL, Grueber WB (2013) The molecular basis of self-avoidance. Annu Rev
+Neurosci 36:547–568.
+45. Tamás G, Buhl EH, Somogyi P (1997) Massive autaptic self-innervation of GABAergic
+neurons in cat visual cortex. J Neurosci 17(16):6352–6364.
+46. Ikeda K, Bekkers JM (2009) Counting the number of releasable synaptic vesicles in a
+presynaptic terminal. Proc Natl Acad Sci USA 106(8):2945–2950.
+47. Knott G, Marchman H, Wall D, Lich B (2008) Serial section scanning electron micros-
+copy of adult brain tissue using focused ion beam milling. J Neurosci 28(12):
+2959 –2964.
+48. Parag T, Chakraborty A, Plaza S, Scheffer L (2015) A context-aware delayed ag-
+glomeration framework for electron microscopy segmentation. PLoS One 10(5):
+e0125825.
+49. Plaza SM, Scheffer LK, Saunders M (2012) Minimizing manual image segmentation
+turn-around time for neuronal reconstruction by embracing uncertainty. PLoS One
+7(9):e44448.
+50. Zhao T, Plaza SM (2014) Automatic neuron type identification by neurite localization
+in the Drosophila medulla. arXiv:1409.1892.
+51. Feng L, Zhao T, Kim J (2015) neuTube 1.0: A new design for efficient neuron re-
+construction software based on the SWC format. eNeuro 2(1):e0049-14.2014.
+52. Thomson W (1860) On the measurement of electric resistance. Proc R Soc Lond 11:
+313–328.
+53. van Vreeswijk C, Sompolinsky H (1996) Chaos in neuronal networks with balanced
+excitatory and inhibitory activity. Science 274(5293):1724–1726.
+13716 | www.pnas.org/cgi/doi/10.1073/pnas.1509820112 Takemura et al.
+Downloaded from https://www.pnas.org by 122.157.156.34 on February 13, 2026 from IP address 122.157.156.34.

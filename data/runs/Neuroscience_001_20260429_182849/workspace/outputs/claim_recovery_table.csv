@@ -1,0 +1,7 @@
+claim,evidence_artifact,status,note
+The provided release contains an ensemble of 50 pretrained DMN models.,outputs/model_summary.csv,verified,Parsed 50 model directories.
+The DMN configuration is connectome constrained and optimized for flow.,outputs/model_config_000.json,verified,Config specifies ConnectomeFromAvgFilters and MultiTaskSintel tasks=['flow'].
+Synapse polarity and count are fixed structural parameters across the ensemble.,outputs/model_summary_describe.csv,verified,edges_sign and edges_syn_count summaries have zero across-model standard deviation.
+"Resting potentials, time constants, and synaptic strength scales are learned/variable.",outputs/parameter_describe.csv,verified,"nodes_bias, nodes_time_const, and edges_syn_strength vary across model/slot entries."
+T4/T5-related cell types show multi-cluster response-state structure in saved embeddings.,outputs/clustering_summary.csv; report/images/fig4_celltype_clustering.png,verified,Loaded UMAP/clustering pickles with dummy flyvis classes.
+"Full voltage activities of all 45,669 neurons were simulated here.",outputs/dependency_check.json,not verified,flyvis runtime/stimulus cache unavailable; this report analyzes released models and summaries.

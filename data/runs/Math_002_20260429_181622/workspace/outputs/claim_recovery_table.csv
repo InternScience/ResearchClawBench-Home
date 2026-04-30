@@ -1,0 +1,5 @@
+claim,artifact,evidence,status
+Independent shortest paths are not collision-free in dense MAPF tasks.,outputs/summary_by_family_method.csv; report/images/validation_collisions.png,"Overall success=0.000, mean residual conflicts=54.75.",directly verified
+Prioritized planning greatly reduces collisions relative to independent paths.,outputs/overall_method_summary.csv,Mean residual conflicts fall from 54.75 to 1.62.,directly verified
+PolicyLNS+PP is a faithful LNS/PP hybrid but only approximates MARL.,outputs/method_fidelity_checklist.json; code/hybrid_mapf_lns.py,Destroy/repair LNS and prioritized space-time repair are implemented; MARL is represented by a transparent conflict-pressure policy rather than learned neural MARL.,verified with limitation
+The benchmark preserves map-family strata.,outputs/benchmark_results.csv; outputs/summary_by_family_method.csv,8 families and 64 method-instance rows were evaluated.,directly verified

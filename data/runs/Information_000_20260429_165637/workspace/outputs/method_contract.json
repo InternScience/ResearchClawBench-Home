@@ -1,0 +1,22 @@
+{
+  "task": "Unified autoregressive framework decoupling visual encoding for multimodal understanding and visual generation in one Transformer architecture",
+  "methodological_commitments": [
+    "Use a single causal/autoregressive Transformer interface over text and visual tokens",
+    "Decouple visual encoding into separate pathways suitable for understanding and generation instead of one shared visual encoder",
+    "Evaluate multimodal understanding on provided equation and Doge meme images",
+    "Evaluate visual generation at least by a text-to-image/token-generation proxy within the same autoregressive token interface",
+    "Compare decoupled visual encoding against a single visual encoder baseline",
+    "Include validation/comparison plots and evidence-backed report"
+  ],
+  "available_data": [
+    {
+      "file": "data/equation.png",
+      "role": "OCR/formula-to-LaTeX evaluation"
+    },
+    {
+      "file": "data/doge.png",
+      "role": "meme semantic understanding and Figure 5-style semantic test"
+    }
+  ],
+  "planned_fallbacks": "No pretrained multimodal Transformer weights are provided; implement a transparent prototype/simulation with deterministic image encoders, OCR/text evidence, and autoregressive token accounting rather than claiming pretrained model performance."
+}

@@ -1,0 +1,38 @@
+{
+  "task": "Assess whether Early Dark Energy can alleviate CMB-BAO acoustic tension using provided DESI_EDE_Repro_Data summaries and related work context.",
+  "named_models": [
+    "ΛCDM",
+    "axion-like/canonical EDE",
+    "w0wa late-time dark energy"
+  ],
+  "named_data": [
+    "DESI DR2 BAO",
+    "Planck CMB",
+    "ACT CMB/lensing",
+    "Union3 supernovae (subset/extracted points)"
+  ],
+  "required_quantities": [
+    "Ωm",
+    "H0",
+    "σ8",
+    "ns",
+    "Ωb h^2",
+    "ln(10^10 As)",
+    "τ",
+    "f_EDE",
+    "log10(a_c)",
+    "w0",
+    "wa",
+    "Δχ²/goodness-of-fit where available"
+  ],
+  "method_commitments": [
+    "Use provided table-level parameter constraints; do not run full Boltzmann/MCMC chains because raw power spectra/likelihoods are absent.",
+    "Preserve model-specific and redshift-specific BAO/SNe structure.",
+    "Compare EDE shifts against ΛCDM and w0wa; compute combined-error shift significances.",
+    "Visualize posterior-level summaries as Gaussian approximations from reported mean±1σ, explicitly labelled as such.",
+    "Use related-work facts for methodological context and validation caveats."
+  ],
+  "fallbacks": [
+    "Full CMB/BAO likelihood fitting and exact Δχ² decomposition are unsupported by supplied data; use related-work Δχ² values and provided constraints only."
+  ]
+}

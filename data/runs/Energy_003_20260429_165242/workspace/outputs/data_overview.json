@@ -1,0 +1,178 @@
+{
+  "dataset": "HEEW_Mini-Dataset",
+  "entities": [
+    "BN001",
+    "BN002",
+    "BN003",
+    "BN004",
+    "BN005",
+    "BN006",
+    "BN007",
+    "BN008",
+    "BN009",
+    "BN010",
+    "CN01",
+    "Total"
+  ],
+  "independent_buildings": [
+    "BN001",
+    "BN002",
+    "BN003",
+    "BN004",
+    "BN005",
+    "BN006",
+    "BN007",
+    "BN008",
+    "BN009",
+    "BN010"
+  ],
+  "energy_columns": [
+    "Electricity [kW]",
+    "Heat [mmBTU]",
+    "Cooling Energy [Ton]",
+    "PV Power Generation [kW]",
+    "Greenhouse Gas Emission [Ton]"
+  ],
+  "weather_columns": [
+    "Temperature [\u00b0F]",
+    "Dew Point [\u00b0F]",
+    "Humidity [%]",
+    "Wind Speed [mph]",
+    "Wind Gust [mph]",
+    "Pressure [in]",
+    "Precipitation [in]"
+  ],
+  "energy_files": {
+    "BN001": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN002": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN003": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN004": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN005": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN006": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN007": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN008": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN009": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "BN010": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "CN01": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    },
+    "Total": {
+      "start": "2014-01-01 00:00:00",
+      "end": "2014-12-31 23:00:00",
+      "rows": 8760,
+      "expected_hours_in_span": 8760,
+      "duplicate_timestamps": 0,
+      "missing_hours_in_span": 0,
+      "unexpected_hours": 0,
+      "irregular_hour_steps": 0
+    }
+  },
+  "weather_file": {
+    "start": "2014-01-01 00:00:00",
+    "end": "2014-12-31 23:00:00",
+    "rows": 8760,
+    "expected_hours_in_span": 8760,
+    "duplicate_timestamps": 0,
+    "missing_hours_in_span": 0,
+    "unexpected_hours": 0,
+    "irregular_hour_steps": 0
+  },
+  "joined_total_energy_weather_rows": 8760
+}

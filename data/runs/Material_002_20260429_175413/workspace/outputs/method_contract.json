@@ -1,0 +1,26 @@
+{
+  "task": "Develop and validate a universal MACE graph-neural-network foundation potential trained on MPtrj, using the provided reproduction dataset for three key tests.",
+  "named_model_family": "MACE / MACE-MP-0 foundation potential",
+  "training_dataset_context": "Materials Project trajectory dataset (MPtrj), approximately 1.5 million inorganic structures/relaxation frames; local workspace only contains reproduction parameters, not the full MPtrj labels or model checkpoint.",
+  "required_benchmarks": [
+    "liquid water radial distribution function at 330 K for 32 H2O in a 12 A cubic box",
+    "O and OH adsorption energy scaling relations on Ni, Cu, Rh, Pd, Ir, Pt fcc(111) slabs",
+    "CRBH20-style reaction barrier comparison for Rxn 1, Rxn 11, and Rxn 20 simplified geometries"
+  ],
+  "named_methods_and_protocols": [
+    "MACE higher-order O(3)-equivariant message passing",
+    "ASE-style molecular dynamics/relaxation protocol from the dataset",
+    "adsorption energy calculation E_ads = E(slab+adsorbate) - E(slab) - E(gas)",
+    "barrier calculation DeltaE = E_TS - E_reactant",
+    "comparison against DFT reference barriers supplied in the dataset"
+  ],
+  "environment_limitation": "The MACE-MP-0 checkpoint is not present in the workspace and torch/mace packages were initially unavailable. The analysis therefore implements a deterministic, transparent surrogate potential to exercise the exact benchmark geometry and validation pipeline, and labels all model-accuracy conclusions as protocol reproduction rather than an exact MACE-MP-0 reproduction.",
+  "primary_outputs": [
+    "parsed benchmark configuration tables",
+    "water RDF and coordination summary",
+    "adsorption energy/scaling table and parity/scaling plots",
+    "reaction barrier table with DFT comparison",
+    "validation and claim-recovery tables",
+    "publication-style report with figures"
+  ]
+}

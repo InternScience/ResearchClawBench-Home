@@ -1,0 +1,28 @@
+{
+  "n_flows": 148774,
+  "n_features": 40,
+  "label_counts": {
+    "0": 114716,
+    "1": 34058
+  },
+  "attack_counts": {
+    "Analysis": 380,
+    "Backdoor": 341,
+    "Benign": 114716,
+    "DoS": 3666,
+    "Exploits": 1473,
+    "Fuzzers": 1009,
+    "Generic": 14688,
+    "Reconnaissance": 10910,
+    "Shellcode": 1427,
+    "Worms": 164
+  },
+  "time_min": 0,
+  "time_max": 86399,
+  "unique_src": 121910,
+  "unique_dst": 38523,
+  "feature_range": [
+    0.0,
+    1.0
+  ]
+}

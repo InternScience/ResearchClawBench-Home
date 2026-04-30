@@ -1,0 +1,345 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analyze_glambie.py",
+    "path": "code/analyze_glambie.py",
+    "type": "file",
+    "size": 19485,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "glambie",
+    "path": "data/glambie",
+    "type": "directory"
+  },
+  {
+    "name": "input",
+    "path": "data/glambie/input",
+    "type": "directory"
+  },
+  {
+    "name": "10_north_asia",
+    "path": "data/glambie/input/10_north_asia",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "11_central_europe",
+    "path": "data/glambie/input/11_central_europe",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "12_caucasus_middle_east",
+    "path": "data/glambie/input/12_caucasus_middle_east",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "13_central_asia",
+    "path": "data/glambie/input/13_central_asia",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "14_south_asia_west",
+    "path": "data/glambie/input/14_south_asia_west",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "15_south_asia_east",
+    "path": "data/glambie/input/15_south_asia_east",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "16_low_latitudes",
+    "path": "data/glambie/input/16_low_latitudes",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "17_southern_andes",
+    "path": "data/glambie/input/17_southern_andes",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "18_new_zealand",
+    "path": "data/glambie/input/18_new_zealand",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "19_antarctic_and_subantarctic",
+    "path": "data/glambie/input/19_antarctic_and_subantarctic",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "\u2026 10 more items",
+    "path": "data/glambie/input/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "results",
+    "path": "data/glambie/results",
+    "type": "directory"
+  },
+  {
+    "name": "calendar_years",
+    "path": "data/glambie/results/calendar_years",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "hydrological_years",
+    "path": "data/glambie/results/hydrological_years",
+    "type": "directory",
+    "truncated": true
+  },
+  {
+    "name": "GlaMBIE_RESULT_DATASETS_INFO.md",
+    "path": "data/glambie/results/GlaMBIE_RESULT_DATASETS_INFO.md",
+    "type": "file",
+    "size": 3562,
+    "mtime": 1773928992.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "GlaMBIE_DATASETS_INFO.md",
+    "path": "data/glambie/GlaMBIE_DATASETS_INFO.md",
+    "type": "file",
+    "size": 1177,
+    "mtime": 1773928992.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "README.md",
+    "path": "data/glambie/README.md",
+    "type": "file",
+    "size": 212,
+    "mtime": 1773979159.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "claim_recovery_table.csv",
+    "path": "outputs/claim_recovery_table.csv",
+    "type": "file",
+    "size": 1301,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.csv",
+    "path": "outputs/data_overview.csv",
+    "type": "file",
+    "size": 6168,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 528,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "direct_global_2000_2023_answer.csv",
+    "path": "outputs/direct_global_2000_2023_answer.csv",
+    "type": "file",
+    "size": 2507,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "global_annual_reconciled.csv",
+    "path": "outputs/global_annual_reconciled.csv",
+    "type": "file",
+    "size": 4148,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "global_annual_reconciled_with_cumulative.csv",
+    "path": "outputs/global_annual_reconciled_with_cumulative.csv",
+    "type": "file",
+    "size": 6080,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "global_regional_aggregation_check.csv",
+    "path": "outputs/global_regional_aggregation_check.csv",
+    "type": "file",
+    "size": 6373,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "input_dataset_inventory.csv",
+    "path": "outputs/input_dataset_inventory.csv",
+    "type": "file",
+    "size": 48543,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "input_vs_consensus_validation_mwe.csv",
+    "path": "outputs/input_vs_consensus_validation_mwe.csv",
+    "type": "file",
+    "size": 563420,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "method_comparison_summary.csv",
+    "path": "outputs/method_comparison_summary.csv",
+    "type": "file",
+    "size": 10450,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 7 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 2546221,
+    "mtime": 1773914889.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 5693612,
+    "mtime": 1773914889.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 3810536,
+    "mtime": 1773914889.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2450507,
+    "mtime": 1773914889.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_004.pdf",
+    "path": "related_work/paper_004.pdf",
+    "type": "file",
+    "size": 1882462,
+    "mtime": 1773914889.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 208991,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_global_timeseries.png",
+    "path": "report/images/fig2_global_timeseries.png",
+    "type": "file",
+    "size": 266240,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_regional_heatmap.png",
+    "path": "report/images/fig3_regional_heatmap.png",
+    "type": "file",
+    "size": 144011,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_method_validation.png",
+    "path": "report/images/fig4_method_validation.png",
+    "type": "file",
+    "size": 126453,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_regional_cumulative.png",
+    "path": "report/images/fig5_regional_cumulative.png",
+    "type": "file",
+    "size": 132075,
+    "mtime": 1777518307.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 15111,
+    "mtime": 1777518308.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5258,
+    "mtime": 1777451210.0,
+    "exported": true
+  }
+]

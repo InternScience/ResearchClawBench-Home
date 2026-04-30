@@ -1,0 +1,31 @@
+{
+  "named_mechanism": "training-free task-guided cropping / ViCrop-like guided visual search",
+  "non_negotiable_steps": [
+    {
+      "step": "keep global context",
+      "implemented": "global fixed-resolution view saved and shown in context_memory_panel.png"
+    },
+    {
+      "step": "identify ROI without training",
+      "implemented": "deterministic interest map from edges, texture, saturation, and center/context prior"
+    },
+    {
+      "step": "zoom local ROI",
+      "implemented": "selected crop is re-encoded/resized at full fixed encoder budget and compared against global downsampled ROI"
+    },
+    {
+      "step": "integrate local detail with global context",
+      "implemented": "context_memory_panel.png pairs fixed global view with local crop per image"
+    },
+    {
+      "step": "validate small-detail information retention",
+      "implemented": "crop_metrics.csv reports PSNR, edge density, Laplacian variance, and effective pixel/token gains"
+    }
+  ],
+  "deviations": [
+    "No LLM-generated question parser, no learned attention map, and no answer accuracy evaluation because no MLLM weights/API or labeled VQA answers are provided."
+  ],
+  "assumptions": [
+    "Task hints are manually specified from image content and task description; proxy metrics stand in for encoder token information loss."
+  ]
+}

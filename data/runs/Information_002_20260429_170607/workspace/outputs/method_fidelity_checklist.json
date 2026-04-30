@@ -1,0 +1,20 @@
+{
+  "named_method": "Hartree-Fock approximation for the AB-stacked MoTe2/WSe2 continuum model",
+  "definition": "Four-fermion hole interaction is Wick-decoupled into normal quadratic Hartree and Fock bilinears using density-matrix expectation values, then combined with the normal-ordered hole-basis one-body Hamiltonian.",
+  "non_negotiable_steps": [
+    "Preserve valley, layer, and momentum labels.",
+    "Use hole operator b_kltau = c^dagger_kltau before writing the interacting hole Hamiltonian.",
+    "Use dual-gate screened Coulomb V(q)=2*pi*e^2*tanh(|q|d)/(epsilon |q|).",
+    "Enforce total momentum conservation delta_{k_alpha+k_beta,k_delta+k_gamma}.",
+    "Keep Hartree term with <b_alpha^dagger b_delta> b_beta^dagger b_gamma and Fock term with minus <b_alpha^dagger b_gamma> b_beta^dagger b_delta.",
+    "Combine equivalent Wick partners so the prefactor is 1/A in the compact HF interaction."
+  ],
+  "implemented": {
+    "symbolic_derivation": true,
+    "score_audit": true,
+    "full_self_consistent_solver": false
+  },
+  "deviations": [
+    "No numerical self-consistent diagonalization or Chern-number calculation was implemented; task focus was derivation/scoring artifact generation."
+  ]
+}

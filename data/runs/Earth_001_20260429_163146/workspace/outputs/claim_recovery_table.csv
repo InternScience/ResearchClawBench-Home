@@ -1,0 +1,7 @@
+claim,evidence,value,status
+Dataset contains 832 project-level records spanning 2000-2025.,outputs/dataset_overview.json; outputs/annual_counts.csv,"832 records, 2000-2025",recovered
+Records are spatially concentrated in a small set of western/southern states.,outputs/state_counts.csv; report/images/fig2_state_concentration_bar.png; report/images/fig3_state_choropleth.png,Top 4 states share 71.0%; top state california has 215 records,recovered
+Annual reported activity is dynamic rather than flat.,outputs/annual_counts.csv; report/images/fig1_annual_activity.png,"Annual counts range 12-49, peak 2003",recovered
+Snowpack augmentation and precipitation increase dominate stated purposes.,outputs/purpose_counts.csv; report/images/fig4_purpose_composition.png,Top purpose mention: augment snowpack (516),recovered
+Silver iodide is the dominant seeding agent.,outputs/agent_counts.csv; outputs/summary_metrics.json,Silver iodide appears in 795 records (95.6%),recovered
+"Deployment is primarily ground and/or airborne, with agent-apparatus structure.",outputs/apparatus_counts.csv; outputs/agent_apparatus_crosstab.csv; report/images/fig5_agent_apparatus_heatmap.png,Ground in 592 records; airborne in 367 records,recovered

@@ -1,0 +1,35 @@
+{
+  "named_method": "neuro-symbolic Euclidean geometry proving prototype",
+  "definition": "Combine symbolic formal-language parsing and rule-based proof-search/validation with optional numerical realization checks.",
+  "non_negotiable_steps": [
+    {
+      "step": "Parse formal statements into construction atoms and theorem target",
+      "status": "satisfied",
+      "artifact": "outputs/problem_metrics.csv"
+    },
+    {
+      "step": "Expand construction definitions from defs.txt",
+      "status": "satisfied",
+      "artifact": "outputs/rule_usage.csv"
+    },
+    {
+      "step": "Apply symbolic forward-chaining rules from rules.txt conservatively",
+      "status": "satisfied",
+      "artifact": "outputs/solved_proofs.json"
+    },
+    {
+      "step": "Produce human-readable/machine-readable proof traces",
+      "status": "partial",
+      "artifact": "outputs/solved_proofs.json",
+      "limitation": "No exact target proofs found under conservative bounded search; traces are partial certificates/failure explanations."
+    },
+    {
+      "step": "Validate on all IMO AG 30 entries",
+      "status": "satisfied",
+      "artifact": "outputs/problem_level_results.csv"
+    }
+  ],
+  "deviations": [
+    "The system is a prototype and not a complete geometry theorem prover; exact proof success is 0/30 under current bounded rules. Numerical realization is only a partial validation layer and is not counted as proof."
+  ]
+}

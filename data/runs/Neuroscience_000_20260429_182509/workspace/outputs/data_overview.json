@@ -1,0 +1,86 @@
+{
+  "feature_table": {
+    "rows": 1738,
+    "columns": 51,
+    "model_feature_columns": 50
+  },
+  "target_table": {
+    "rows": 1738,
+    "columns": 53
+  },
+  "reference_table": {
+    "rows": 300,
+    "columns": 570
+  },
+  "model_feature_columns": [
+    "Nose_1_x",
+    "Nose_1_y",
+    "Nose_1_p",
+    "Ear_left_1_x",
+    "Ear_left_1_y",
+    "Ear_left_1_p",
+    "Ear_right_1_x",
+    "Ear_right_1_y",
+    "Ear_right_1_p",
+    "Center_1_x",
+    "Center_1_y",
+    "Center_1_p",
+    "Lat_left_1_x",
+    "Lat_left_1_y",
+    "Lat_left_1_p",
+    "Lat_right_1_x",
+    "Lat_right_1_y",
+    "Lat_right_1_p",
+    "Tail_base_1_x",
+    "Tail_base_1_y",
+    "Tail_base_1_p",
+    "Tail_end_1_x",
+    "Tail_end_1_y",
+    "Tail_end_1_p",
+    "Nose_2_x",
+    "Nose_2_y",
+    "Nose_2_p",
+    "Ear_left_2_x",
+    "Ear_left_2_y",
+    "Ear_left_2_p",
+    "Ear_right_2_x",
+    "Ear_right_2_y",
+    "Ear_right_2_p",
+    "Center_2_x",
+    "Center_2_y",
+    "Center_2_p",
+    "Lat_left_2_x",
+    "Lat_left_2_y",
+    "Lat_left_2_p",
+    "Lat_right_2_x",
+    "Lat_right_2_y",
+    "Lat_right_2_p",
+    "Tail_base_2_x",
+    "Tail_base_2_y",
+    "Tail_base_2_p",
+    "Tail_end_2_x",
+    "Tail_end_2_y",
+    "Tail_end_2_p",
+    "Feature_1",
+    "Feature_2"
+  ],
+  "missing_feature_values_before_imputation": 0,
+  "label_distributions": {
+    "Attack": {
+      "negative": 1151,
+      "positive": 587,
+      "positive_fraction": 0.3377445339470656
+    },
+    "Sniffing": {
+      "negative": 1506,
+      "positive": 232,
+      "positive_fraction": 0.1334867663981588
+    }
+  },
+  "reference_behavior_columns": [
+    "Probability_Attack",
+    "Probability_Sniffing",
+    "Attack",
+    "Sniffing"
+  ]
+}

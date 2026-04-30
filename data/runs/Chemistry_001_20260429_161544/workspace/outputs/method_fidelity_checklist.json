@@ -1,0 +1,40 @@
+{
+  "definition": "A faithful unified diffusion complex framework must jointly encode protein, nucleic acid, and small-molecule inputs; maintain cross-molecule pair/interfacial features; denoise 3D coordinates with SE(3)-aware updates; and evaluate both global geometry and ligand/interface accuracy.",
+  "non_negotiable_steps": [
+    {
+      "step": "multimodal tokenization",
+      "implemented_in_prototype": true,
+      "evidence": "framework_spec.json inputs"
+    },
+    {
+      "step": "heterogeneous graph/pair representation",
+      "implemented_in_prototype": true,
+      "evidence": "framework_spec.json representations"
+    },
+    {
+      "step": "diffusion timestep coordinate denoising",
+      "implemented_in_prototype": "specified and proxy trajectory implemented",
+      "evidence": "framework_spec.json and diffusion_proxy_trajectory.csv"
+    },
+    {
+      "step": "SE(3)-equivariant or invariant geometric reasoning",
+      "implemented_in_prototype": "specified; not trained",
+      "evidence": "framework_spec.json core_blocks"
+    },
+    {
+      "step": "protein-ligand validation on supplied data",
+      "implemented_in_prototype": true,
+      "evidence": "structure_metrics.json, interface_contacts_6A.csv"
+    },
+    {
+      "step": "nucleic-acid empirical validation",
+      "implemented_in_prototype": false,
+      "evidence": "no nucleic-acid sample in workspace"
+    }
+  ],
+  "deviations": [
+    "No trained deep model because the workspace contains one sample and no training corpus.",
+    "No exact AlphaFold 3 execution/comparison because no AF3 model/prediction files are provided.",
+    "Nucleic acid modality is architecturally specified but not data-validated."
+  ]
+}

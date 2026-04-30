@@ -1,0 +1,9 @@
+predicted_structure,adjacent_shells,core_element,shell_element,reported_or_required_mismatch,compatible_design_window,total_atoms,interpretation
+Na13@Rb32,MC->Ch1,Na,Rb,0.22,MC->Ch2,45,stable validation structure from reproduction dataset
+K13@Cs42,MC->Ch2,K,Cs,,,55,stable validation structure from reproduction dataset
+Ag13@Cu45,MC->Ch1,Ag,Cu,0.12,MC->Ch1,58,stable validation structure from reproduction dataset
+generic shell 1->2 MC->MC,MC->MC,generic,generic,0.04,0.03-0.05,path-dependent,optimal adjacent-shell mismatch parameter
+generic shell 1->2 MC->Ch1,MC->Ch1,generic,generic,0.14,0.12-0.16,path-dependent,optimal adjacent-shell mismatch parameter
+generic shell 2->3 MC->MC,MC->MC,generic,generic,0.038,0.03-0.05,path-dependent,optimal adjacent-shell mismatch parameter
+generic shell 2->3 MC->Ch1,MC->Ch1,generic,generic,0.136,0.12-0.16,path-dependent,optimal adjacent-shell mismatch parameter
+generic shell 2->3 Ch1->Ch2,Ch1->Ch2,generic,generic,0.21,not tabulated,path-dependent,optimal adjacent-shell mismatch parameter

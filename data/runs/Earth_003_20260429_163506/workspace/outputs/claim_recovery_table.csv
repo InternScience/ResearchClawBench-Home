@@ -1,0 +1,6 @@
+claim,support,status
+Workspace input contains two consecutive atmospheric states,outputs/netcdf_metadata.json input dimensions time=2,directly verified
+"Workspace files are 1 degree, not 0.25 degree",lat/lon dimensions 181 x 360 and 1 degree coordinate spacing,directly verified
+Forecast artifact is a single 6-hour FuXi output step,"outputs/netcdf_metadata.json forecast dimensions time=1, step=1, step_values=[6]",directly verified
+Latitude-weighted RMSE/ACC are appropriate core metrics,outputs/related_work_contract.json extracts FourCastNet/FengWu evaluation practice,related-work supported
+15-day ECMWF-comparable skill cannot be concluded,"outputs/validation_matrix.csv shows no 15-day sequence, truth, ECMWF ensemble, or trained models",limitation

@@ -1,0 +1,12 @@
+{
+  "pandas": true,
+  "numpy": true,
+  "sklearn": true,
+  "matplotlib": true,
+  "seaborn": true,
+  "shap": "not installed; not required because task asks feature-importance tables, supplied by RF native and permutation importance",
+  "pypdf": false,
+  "PyPDF2": false,
+  "pdfminer": false,
+  "pypdf_after_install": true
+}

@@ -1,0 +1,909 @@
+arXiv:2406.17595v3  [cond-mat.mtrl-sci]  28 Oct 2024
+Density-Based Long-Range Electrostatic Descriptors
+for Machine Learning Force Fields
+Carolin Faller, 1 Merzuk Kaltak, 2 and Georg Kresse 3, 2
+1)University of Vienna, Faculty of Physics & Vienna Doctoral S chool in Physics, Kolingasse 14-16, A-1090 Vienna,
+Austria
+2)VASP Software GmbH, Berggasse 21, A-1090 Vienna, Austria
+3)University of Vienna, Faculty of Physics, Kolingasse 14-16 , A-1090 Vienna, Austria
+(*Electronic mail:
+georg.kresse@univie.ac.at)
+(Dated: 29 October 2024)
+This study presents a long-range descriptor for machine lea rning force ﬁelds (MLFFs) that maintains translational and
+rotational symmetry, similar to short-range descriptors w hile being able to incorporate long-range electrostatic in ter-
+actions. The proposed descriptor is based on an atomic densi ty representation and is structurally similar to classical
+short-range atom-centered descriptors, making it straigh tforward to integrate into machine learning schemes. The ef -
+fectiveness of our model is demonstrated through comparati ve analysis with the long-distance equivariant (LODE) 1
+descriptor. In a toy model with purely electrostatic intera ctions, our model achieves errors below 0.1%, worse than
+LODE but still very good.
+For real materials, we perform tests for liquid NaCl, rock sa lt NaCl, and solid zirconia. For NaCl, the present de-
+scriptors improve on short-range density descriptors, red ucing errors by a factor of two to three and coming close to
+message-passing networks. However, for solid zirconia, no improvements are observed with the present approach,
+while message-passing networks reduce the error by almost a factor of two to three. Possible shortcomings of the
+present model are brieﬂy discussed.
+I. INTRODUCTION
+Machine learning force ﬁelds (MLFFs) are a powerful tool
+for accurately and efﬁciently predicting inter-atomic pot en-
+tials, approaching the precision of ab-initio calculation s2–21.
+MLFFs describe the potential energy as a function of descrip -
+tors that represent the atomic structure of a given material .
+To increase the efﬁciency of MLFFs, many methods rely on
+local descriptors that solely represent the atomic environ ment
+in the vicinity of an atom within a speciﬁed cutoff sphere.
+These methods assume that all interactions between atoms
+further apart than the cutoff radius are negligible. While
+this approach accurately describes many materials and
+their properties, it neglects long-range interactions suc h as
+electrostatics. This is because, in practice, it is impossi ble
+to increase the cutoff radius arbitrarily. However, these
+long-range interactions can be important 22–25, and new
+methods that include long-range interactions are necessar y
+to improve the predictive power of MLFFs for systems with
+long-range electrostatics26–30.
+This issue is widely recognized, and various methods
+have been developed to address it. Recent models have
+concentrated on speciﬁc types of long-range interactions,
+such as electrostatics, and have introduced correction ter ms to
+account for them 1,26,27,31–37. A common approach is to split
+the energy into distinct parts and model them independently .
+Then, all contributions are added together to calculate the
+total energy. Short-range contributions are typically cal -
+culated using a local model, while long-range components
+are modeled with diverse approaches. One can either treat
+the various energy terms separately and train two machine
+learning (ML) models, adding up the ﬁnal energies, or utiliz e
+combined descriptors and train a single model.
+Many of these methods use classical (non-equivariant and or
+even non-message passing) neural networks (NNs) 26,32,34–37,
+or kernel methods 1,31,33,38. Deep NNs offer more ﬂexibility
+but require more data for training and are generally slow
+to train. Kernel methods are more convenient for small to
+medium-sized problems, as they can rely on dense linear
+algebra routines to solve the linear least squares problem 39.
+Another approach to include long-range interactions is
+to use short-range descriptors, but effectively propagate
+interactions beyond the distinct cutoff by employing Messa ge
+Passing Neural Networks (MPNNs) 10,17,18,20,21,27,40–46. Other
+relevant developments are equivariant MPNNs such as
+NewtonNet42, DimeNet 43, TeaNet44, NequIP 17 and MACE18
+that cover not only invariant but also tensorial quantities .
+NewtonNet is designed to respect Newtonian mechanics,
+ensuring the learned forces obey physical laws. It also inco r-
+porates directional information from forces, enhancing th e
+model’s accuracy 42. DimeNet employs directional message
+passing, which allows it to capture complex interactions
+effectively43. TeaNet uses tensor-based message passing,
+facilitating the learning of intricate relationships betw een
+atomic structures44.
+NequIP17 employs equivariant convolutions of tensorial
+quantities and multi-level message passing of equivariant
+features, resulting in a particularly ﬂexible network topo logy
+with many millions of parameters. MACE 18 is in most
+respects a simpliﬁed version of NequIP usually relying on
+only two message-passing layers and largely linear activat ion
+functions. This should improve execution speed and learnin g
+efﬁciency.
+The present work utilizes kernel methods. Our objective is
+to ﬁnd a physically meaningful and ﬂexible approach for de-
+2
+scribing long-range interactions without resorting to a gl obal
+and non-atom-centered description. Similarly to short-ra nge
+models4,47–51, the atomic density around each atom is ex-
+panded into a suitable set of basis functions. However, we
+implicitly account for all periodic images of all atoms in th e
+supercell by performing the calculations in reciprocal spa ce
+and using suitably slowly decaying basis functions.
+This approach offers the advantage of a ﬂexible, physics-
+based descriptor that is atom-centered but also long-range d.
+It can be easily combined with a local descriptor, as both hav e
+the same mathematical form, albeit in our present implemen-
+tation the approach is not yet very performant.
+We apply the present approach to a gas of point charges.
+The descriptor is then compared to the long-distance equiva ri-
+ant (LODE) framework 1 and the MPNN MACE 18 for liquid
+sodium chloride and zirconia.
+II. THEORY
+A. Short-Range Descriptors
+The descriptors used in this work are designed to resem-
+ble the density-based Smooth Overlap of Atomic Positions
+(SOAP)4 and Gaussian Approximation Potential (GAP) 47 de-
+scriptors. The atomic density
+ρ is calculated around each
+atom j as a function of the atomic positions denoted as r. The
+expansion coefﬁcients
+c jJ
+nlm =
+NJ
+∑
+k=1
+hnl
+(
+r jk
+)
+Y ∗
+lm
+(
+ˆr jk
+)
+(1)
+with
+hnl (r) = 4π
+( √
+2σ 2π
+) 3 fcut (r)
+∫ ∞
+0
+χnl
+(
+r′)
+(2)
+× exp
+(
+− r′2 + r2
+2σ 2
+)
+ιl
+( rr′
+σ 2
+)
+r′2dr′ (3)
+from Ref. 48 that are given there in Eq. (18) and (19) are
+used for building the short-range descriptors. Here, the ve ctor
+r jk is the vector pointing from atom j to k, rk − r j. The
+set of radial
+χnl and angular Ylm basis functions are used to
+expand the atomic density in order to obtain rotational and
+translational invariant expansion coefﬁcients 4,47. The indices
+l, m, and n are the angular, momentum, and radial index,
+respectively. The parameter
+σ is used to broaden the density
+distribution. ιl are the modiﬁed spherical Bessel functions of
+the ﬁrst kind, and NJ is the number of atoms of type J. The
+cutoff function fcut is used to ensure a smooth decay of hnl to
+zero at the cutoff radius.
+The ﬁnal descriptor X j describing the local environment
+surrounding atom j is derived by combining the invariant
+(l = 0) two-body expansion coefﬁcients
+c jJ
+n = c jJ
+n00 (4)
+and the rotational and translational invariant three-body ex-
+pansion coefﬁcients
+p jJJ ′
+nn′l =
+√
+8π 2
+2l + 1
+l
+∑
+m=− l
+c jJ
+nlmc jJ′
+n′lm (5)
+into vectors
+X(2)
+j =
+(
+ci1
+1 , ci1
+2 , . . . ,ci2
+1 , ci2
+2 , . . .
+) T
+(6)
+X(3)
+j =
+(
+pi11
+110, pi11
+111, . . . ,pi11
+120, pi11
+121, . . . ,pi12
+110, . . . ,pi22
+110, . . .
+) T
+(7)
+that are then combined to
+X j =
+(
+β (2)X(2)
+j
+β (3)X(3)
+j
+)
+(8)
+using the weights β for the two- and three-body descriptors.
+In the present calculations β (2) =
+√
+0.1 and β (3) =
+√
+0.9 were
+used for the short-range descriptors. Whenever inproducts are
+formed in the kernel, the weights are implicitly squared, so
+this results in a metric with "weights" of 0.1 and 0.9 for two-
+body and three-body terms.
+B. Long-Range Descriptors
+The objective is to calculate a similar set of descrip-
+tors where the expansion coefﬁcients however represent the
+atomic density over long ranges and multiple supercells. Th e
+same ansatz as in real space is used, where the expansion co-
+efﬁcients are designed to represent the atomic density arou nd
+each atom. As before, the descriptors are obtained by pro-
+jecting the density onto a product basis of radial and angula r
+functions. However, to avoid introducing a cutoff, the corr e-
+sponding products are evaluated in reciprocal instead of re al
+space:
+c jJ
+nlm =
+NJ
+∑
+k=1
+∑
+G
+exp(iG (rk − r j)) exp
+(
+− |G|2
+σ 2
+2
+)
+f ∗
+nlm(G)
+(9)
+where G are momentum vectors consistent with the periodic
+boundary conditions, and fnlm(G) are the basis functions in
+reciprocal space and the other terms represent the broadene d
+atomic density distribution of atom k of type J with positions
+rk around atom j with positions r j. The central atom j may
+be of any atom type present in the material. The translationa l
+invariance is obvious from Eq. (9), as seen from the difference
+vector rk − r j, where r j is the position of the central atom.
+Starting out from the product of the radial χnl (r) and angular
+Ylm (ˆr) basis functions in real space
+fnlm(r) = χnl (r)Ylm (ˆr) (10)
+taking the Fourier Transform (FT) of Eq. ( 10) and applying
+the plane wave expansion yields
+fnlm(G) = 4πilYlm(− ˆG)
+∫ ∞
+0
+r2 jl(Gr)χnl(r)dr (11)
+3
+where the remaining integral can be either solved analytica lly
+or numerically depending on the choice of radial basis
+functions
+χnl(r).
+The long-range expansion coefﬁcients given in Eq. (9) have
+the same form as the short-range expansion coefﬁcients give n
+in Eq. ( 1). Like conventional two- (and three-) body descrip-
+tors, they are also atom-centered and invariant under trans la-
+tions and rotations. So for all practical purposes, they beh ave
+and can be used like conventional short-range descriptors. For
+example, the learned regression coefﬁcients are transferable to
+different unit cells and do not depend on the choice of the Bra-
+vais lattice. The only difference is that the evaluation of t he
+expansion coefﬁcients c jJ
+nlm is performed in reciprocal space.
+This allows to cover arbitrary interaction ranges, and thus , to
+encode and measure long-range density ﬂuctuations.
+With the appropriate choice of basis functions (see next sec -
+tion), the long-range expansion coefﬁcients can encode the
+long-range density correlations. This is due to the calcula tion
+in reciprocal space, where not only the position of an atom
+is considered but also all periodic images of this atom. It is
+important to note that these long-range descriptors do not r e-
+quire a cutoff, but of course, it is possible to impose a cutof f
+by using the FTs of ﬁnite-ranged real-space functions in Eq.
+(
+11).
+The individual long-range expansion coefﬁcients are then
+combined into a vector ("long-range descriptor"). In the
+present work, we mostly use two-body expansion coefﬁcients
+as shown in Eq. (
+4) and the corresponding vector X(2)
+j . The
+three-body long-range coefﬁcients are excluded since the o b-
+jective here is to describe long-range pairwise interactio ns.
+Furthermore, we found no improvements when including
+long-range three-body terms in any of the systems considere d
+here. This might have many reasons, but we believe that three-
+body interactions are generally shorter-ranged. Consider , for
+instance, the case of V an der Waals (vdW) interactions: two-
+body vdW interactions fall off like 1 /r6, and the three-body
+terms (Axilrod–Teller) fall off like 1 /r9.
+C. Long-Range Radial Basis Functions
+The type of basis functions used for the descriptors has
+not been speciﬁed yet. For the short-range method, spheri-
+cal Bessel functions are used for the radial part and spheric al
+harmonics for the angular part.
+Spherical harmonics are also used for the angular part of the
+long-range descriptor. However, spherical Bessel functio ns
+cannot be employed to model the inﬁnitely ranged interactions
+in the radial part, as to maintain a ﬁxed spatial resolution, the
+number of Bessel functions would need to increase linearly
+with Rcut.
+Given the objective of representing electrostatic interac tions
+that decay slowly like 1 /r, where r is the distance between
+two atoms, it is evident that exponentially decaying functi ons
+are a sensible choice. This is because
+1
+r =
+∫ ∞
+0
+exp(− ζ r)dζ
+≈
+Nmax
+∑
+n=1
+wn exp(− ζnr)
+(12)
+holds. The ﬁrst line of Eq. ( 12) is the Laplace transform of
+1 resulting in 1 /r, while the second line approximates this in-
+tegral using a quadrature rule. This demonstrates that the i n-
+tegral over all exponentially decaying functions can repre sent
+1/r, a fact that has been amply used in quantum chemistry to
+deal with integrals in many-body perturbation theory 52–56. It
+is important to understand that the 1 /r-function can be repre-
+sented very accurately by the sum of exponentials 57. If both,
+the decay constants and the weights are optimized indepen-
+dently 6, 8 and 10 functions are sufﬁcient to represent 1 /r
+with a maximum absolute error of 10 − 5, 10 − 6 and 10 − 7, re-
+spectively, on an interval between r = [rmin, 100 ·rmin]. More
+functions are required as the required range increases, but the
+number of functions increases slowly. It is also found that t he
+optimal decay constants are typically exponentially space d,
+with the typical factor between successive decay constants be-
+ing close to two. We, therefore, expect that if the shortest
+nearest neighbor distance is around, say, 2 Å, then about 6-8
+functions should be sufﬁcient to describe long-range inter ac-
+tions up to typically 200 Å with very high accuracy.
+For simplicity, we here deﬁne
+ζn on a logarithmic mesh where
+ζn = ζmax/sn− 1, (13)
+and ζmax and the scaling constant s are hyperparameters de-
+termined numerically. As already noted, this choice was in-
+spired by our experience with many-body applications where
+a roughly exponential scaling was also found to be optimal 56.
+D. The LODE Implementation
+Grisaﬁ and Ceriotti introduced the long-distance equivari -
+ant (LODE) framework, which uses descriptors to encode the
+electrostatic potential around atoms 1. The potential is calcu-
+lated by summing the potentials induced by other atoms at the
+position of the central atom.
+In reciprocal space, the electrostatic potential Φ is given as
+the negative product of the atomic density
+ρ and the Coulomb
+Kernel
+Φ(G) = − 4π
+∥G∥2Ω ρ(G). (14)
+where Ω is the volume of the supercell.
+Because of the relation shown in Eq. ( 14), it is relatively
+easy, with the density-based model presented above, to im-
+plement the LODE descriptors. The only required step is to
+multiply the density-based expansion coefﬁcients by the nega-
+tive Coulomb kernel before summing over the reciprocal grid
+points G. Spherical Bessel functions are used as radial basis
+functions for this LODE implementation.
+4
+As in the original work of Grisaﬁ and Ceriotti, for real ma-
+terials, the LODE descriptors are combined with short-rang e
+descriptors as well, using the approach shown in the following
+section.
+E. Combination of Short- and Long-Range Descriptors
+To apply the models to realistic materials in which both
+short-range and long-range interactions are present, the ﬁ -
+nal descriptor vectors X must contain information about both
+types of interaction. By simply appending the short-range d e-
+scriptors Xsr and long-range descriptors Xlr the ﬁnal descrip-
+tor
+X =
+[
+XT
+sr, XT
+lr
+] T
+(15)
+is obtained. This descriptor contains all the necessary in-
+formation and still provides a unique similarity measure fo r
+kernel-ridge regression.
+As the long-range descriptors are very similar in construct ion
+to the short-range descriptors, additional scaling was fou nd to
+be irrelevant for them. However, to obtain an accurate MLFF
+involving LODE, we found it crucial to optimize the weight
+of the LODE descriptors using a hyper-parameter search, as
+the LODE descriptors have a potentially very different scal e
+as other descriptors.
+F. The Fitting Process
+The ﬁtting process of our model employs the methods of
+polipy4vasp, the code used in Ref. 58. These methods are im-
+plemented analogously to those of the Vienna Ab initio Simu-
+lation Package (V ASP)59–61 which are presented in Refs. 48–
+50.
+The following paragraphs provide a brief overview of the
+main points of the scheme. It is assumed that there is a non-
+linear functional mapping of the ﬁnal descriptors obtained as
+described above to the total energy of the system. As usual,
+it is furthermore assumed that the energy U of the system can
+be decomposed into the sum
+U = ∑
+j
+U j (16)
+of local energy contributions U j that depend on the "local"
+environment around each atom j. Kernel regression is used
+to describe the non-linear dependence of the energy on the
+descriptors, and a sparse representation is used for the ker nel.
+Either a Gaussian (radial basis function) kernel
+K(X j, Xb) = exp
+(
+− ∥X j − Xb∥2
+η 2
+)
+(17)
+or a polynomial kernel
+K(X j, Xb) =
+( ˆX j · ˆXb
+) ζ
+(18)
+is used here.
+In Eq. (
+18) ˆX indicates that the descriptor X is normalized.
+The index b in both Eq. ( 17) and Eq. ( 18) refers to the kernel
+basis function to which the descriptor of the current centra l
+atom X j is "compared".
+The energy per atom of structure s containing Natom atoms
+is obtained when the following equation is fulﬁlled in the least
+squares sense:
+U s
+Nsatom
+!=
+Nsatom
+∑
+j=1
+U j
+Nsatom
+=
+Nb
+∑
+b=1
+wb
+Nsatom
+∑
+j=1
+K(Xs
+j, Xb)
+Nsatom
+. (19)
+Here U s is the energy of structure s obtained from ﬁrst prin-
+ciples (FP) calculations and Nb is the total number of kernel
+basis functions. The energy U s is a linear function of the ﬁt-
+ting weights wb. As the forces are the negative derivatives of
+the energy with respect to the atomic positions, also the for ces
+are linear functions of the weights wb.
+These linear relations can be expressed as a system of linear
+equations in matrix-vector form:
+y != Φw. (20)
+The vector y contains the energies of all training structures s
+and all the forces acting on all atoms in the systems included
+in the training data set obtained from FP calculations. Thes e
+entries are made dimensionless by dividing them by the stan-
+dard deviation of those energies and the forces, respective ly.
+During training the linear system of equations is calculate d
+via the pseudoinverse of Φ using a singular value decompo-
+sition, and singular values smaller than a threshold of 10 − 9
+times the largest singular value are disposed of.
+G. The Root-Mean Square Percentage Error
+In this work, all errors of training and test data are given
+in terms of the root-mean-square percentage error (RMSPE).
+This is calculated by dividing the root-mean-square error o f
+the predicted properties by the standard deviation of the ex act
+results multiplied by 100. With this approach, we obtain
+a unitless measure that does not depend on the number of
+atoms or the size of the unit cell. Typically, errors are give n
+in (m)eV/atom for the energies and in eV/Å for the forces.
+However, these errors cannot be easily compared between
+different materials or at different temperatures. The RMSP E
+simpliﬁes such comparisons.
+III. RESULTS
+For LODE the model with only pairwise descriptors
+and a body order term of
+ν = 1 is used. This facilitates a
+comparison with the purely radial description of the densit y-
+based long-range descriptors. Furthermore, it was found
+5
+that the use of three-body terms in our case leads to larger
+errors compared to the use of only two-body terms. This is
+likely related to the already discussed two-body nature of
+long-range Coulomb interactions.
+A. Long-Range Eﬀects of Point Charges
+As an initial test set for the present long-range model,
+a gas of randomly distributed point charges, analogous to
+the one used in Ref. 1, was constructed. The set comprises
+systems of varying volumes, each containing 64 atoms,
+with 32 having a positive charge of +1 and the other 32
+having a negative charge of − 1. To prevent large energies
+the minimum distance between two atoms was set to 2 .5 Å.
+The training and validation data were generated using the
+Ewald energies and forces (as implemented in V ASP). Only
+long-range descriptors were used for this system.
+For all tests on this toy model the Gaussian kernel given in
+Eq. (
+17) with a broadening of η = 1.55 was used.
+10−2 10−1
+ζmin
+10−1
+100
+101
+RMSPE F (%)
+s = 4, Nmax = 4
+s = 3, Nmax = 4
+s = 3, Nmax = 5
+s = 3, Nmax = 6
+s = 2, Nmax = 5
+s = 2, Nmax = 6
+s = 2, Nmax = 7
+FIG. 1. The RMSPE in the forces for various values of the minim al
+ζmin = ζmax/sNmax− 1 of the radial basis functions, scaling constants
+s, and number of radial basis functions Nmax for the gas of point
+charges. It is evident that the error reduction is primarily associated
+with a decreasing scaling constant. All curves with a small s caling
+constant of s = 2 yield a minimum at ζmin ≈ 0.09. Exponents larger
+than this minimum value are insufﬁciently long-ranged to ca pture
+long-range electrostatic interactions accurately.
+The ﬁrst step is to determine the radial basis functions.
+This involves optimizing three parameters: the number of
+radial basis functions Nmax, the maximal exponent
+ζmax, and
+the scaling constant s. A grid search of these parameters was
+performed.
+Figure
+1 shows the minimal exponents ζmin = ζmax/sNmax− 1
+on the x-axis and the corresponding error in the force pre-
+dictions on the y-axis. Each line represents a distinct set o f
+maximal exponents,
+ζmax, ranging from 12 to 0 .9 and is asso-
+ciated with a speciﬁc value of Nmax and s. The linestyle and
+color of the lines indicate the value of Nmax and s, respectively.
+Overall, reducing the scaling constant s reduces the
+RMSPE. This is because a smaller scaling constant results
+in a denser distribution of radial basis functions, allowin g
+for better a description of the electrostatic kernel (1 /r). For
+the electrostatic interactions to be accurately described , it
+is necessary to have a sufﬁcient number of basis functions
+such that they decay sufﬁciently slowly. We see a more or
+less pronounced minimum around
+ζmin ≈ 0.09. The second
+minimum to the left corresponds to the case that the second
+smallest
+ζ becomes approximately 0 .09. For ζ , the inclusion
+of values smaller than 0 .09 is unnecessary for this speciﬁc
+training set but also does not signiﬁcantly degrade the qual ity
+of the ﬁt.
+The plot shows a steep increase in error on the right-hand
+side, indicating that the smallest exponent is insufﬁcient to
+capture relevant long-range electrostatic interactions. This
+occurs when the radial basis function with the smallest
+exponent decays too quickly and the basis functions are
+unable to model the relevant interactions.
+We found that with a scaling constant of s = 2 and 6 radial
+basis functions, relative errors of approximately 0 .1% are
+achieved.
+The values Nmax = 6, s = 2 and
+ζmax = 2 are the optimal
+choices among all possible values for this speciﬁc test syst em,
+but depend somewhat on the cell size and shortest distance.
+These hyperparameters will be used in the subsequent cal-
+culations. Similar tests must be conducted to determine the
+optimal set of these three hyperparameters for other materi als.
+However, the values obtained here provide a good starting
+point, which can help avoid extensive grid searches.
+Next, we compare our approach with the LODE method,
+which is implemented in the way presented in
+II D. It is
+known from theoretical considerations that the two-body
+LODE descriptor is ideal for a system where only Coulomb
+interactions are present 1. Consequently, using only two-body
+descriptors and a single radial basis function for a small cu toff
+is sufﬁcient. In this case one descriptor for each interacti on
+pair (+1, +1), (+1, -1), (-1, +1), and (-1, -1) sufﬁces, as
+these exactly represent the interaction of one positive or
+negative point charge with all other positive and negative
+point charges. In our case, the radial basis function, onto
+which the potential is projected, is a spherical Bessel func tion
+that is smoothly cut off at the cutoff radius.
+The density-based descriptors are not optimal for this case ,
+so we need to use more radial basis functions and expansion
+coefﬁcients to learn the Coulomb interactions. However,
+learning only pairwise interactions is sufﬁcient even usin g
+density-based descriptors.
+Figure
+2 shows the learning curves for the two different
+methods. The LODE method was tested with various
+combinations of cutoff radii Rcut and number of radial basis
+6
+functions Nmax, resulting in different numbers of expansion
+coefﬁcients, and potentially probing the electrostatic po -
+tentials at points further away from the central atom. For
+the LODE model, this adds irrelevant information for this
+speciﬁc simple 1 /r point charge model.
+The red line represents the ideal LODE descriptor, which
+quantiﬁes the electrostatic potential inside the sphere of small
+radius Rcut around the central atom. The electrostatic interac-
+tion between two point charges i and j is given by
+Vi j = 1
+2
+ZiZ j
+∥ri − r j∥ (21)
+where ri and r j are the positions of the particles and Zi and Z j
+are their charges. Since the descriptors include informati on
+about each atom type J the charges are not relevant for the
+implementation and can be set to one. Then the regression
+will essentially determine ZiZ j.
+If one takes now the sum over all pairs (i, j) and over all atoms
+the electrostatic energy E of the system
+E = 1
+2 ∑
+i
+Zi ∑
+j̸=i
+Z j
+∥ri − r j∥ = 1
+2 ∑
+i
+Ziφ (ri) (22)
+is obtained as a function of the electrostatic potential at ri
+φ (ri) = ∑
+j̸=i
+Z j
+∥ri − r j∥ . (23)
+This potential is exactly "measured" by the LODE descriptor
+with one radial basis function if the cutoff radius is smalle r
+than the minimal atomic distance (the Gaussian broadening
+adds additional width to the source charges though). 1 The
+use of a cutoff sphere is possible due to Gauss’s law: the
+electrostatic potential at the center of the sphere can be
+determined by a probe charge of ﬁnite size, as long as there is
+no source term inside the sphere of the probe charge.
+With a cutoff radius of 3 Å, the value measured by the single
+descriptor does not correspond exactly to the value of the
+potential at the center of the sphere. Hence, the electrosta tic
+potential of point charges that enter the projection sphere
+can not be determined accurately. This is why the blue line
+levels off at relatively high RMSPEs. Generally, consideri ng
+a Gaussian broadening of
+σ = 0.3 for the atomic source
+charges, a cutoff radius of Rcut ≲ 2.5 Å− 5σ must be chosen,
+where 2 .5 Å is the shortest nearest neighbor distance in our
+models and the factor 5 before σ assures that the broadened
+charge has decayed to negligible values.
+When using four radial basis functions (turquoise line),
+a linear combination of the values of the descriptors can
+approximate a
+δ -function at the origin, although the model
+requires additional training data to learn the precise line ar
+combination that corresponds best to the δ -function.
+When training only on energies and predicting forces
+(as shown in Fig. 2 right panels (c) and (d)), the energy
+predictions are mostly more accurate. However, the er-
+rors in the predicted forces are notably higher and seem
+to stagnate at some point. The same precision as in the
+mixed training on energies and forces is never reached.
+This indicates that the models require information about th e
+forces to make highly accurate predictions for forces possi ble.
+A comparison of our density-based descriptor (black line)
+with the ideal LODE descriptor for point charges reveals
+that the LODE descriptor (red line) is superior. While our
+density-based descriptor yields satisfactory results, it is
+necessary to employ more radial basis functions (speciﬁcal ly,
+six instead of one) and perform a hyper-parameter search
+to identify the optimal choice of
+ζmax, scaling constant s,
+and the number of radial basis functions. This shows that
+our density-based descriptor, as predicted by theory, is no t
+the best possible descriptor for this prototypical system.
+Nevertheless, it is still capable of accurately describing the
+interactions, albeit requiring more training data.
+The LODE descriptor with one radial basis function and a
+cutoff radius smaller than the minimal atomic distance (red
+line) and the density-based descriptor (black line) can bot h
+achieve errors below 1% when sufﬁcient training data are
+used. The LODE descriptor requires only about 40 training
+structures to achieve a relative error of 1%. The density-
+based descriptor requires 250 training structures to achie ve
+the same accuracy and then stagnates. We believe the stag-
+nation at small errors is likely related to the condition num ber
+of the design problem becoming very large, which makes it
+difﬁcult for the pseudo-inversion to separate "noise" from rel-
+evant data. Nevertheless, both models give very satisfacto ry
+results. These are better than those typically obtained usi ng
+machine learning, as the errors for MLFFs are typically in th e
+mid-single digit percentage range (around 2 to 10%). The hy-
+perparameters, such as the number of radial basis functions
+and reciprocal lattice points, can be adjusted to increase t he
+speed and memory efﬁciency of the computations while still
+achieving excellent results.
+B. Liquid Sodium Chloride
+After demonstrating the models’ ability to describe system s
+with purely 1 /r interactions, they were applied to real mate-
+rials. Liquid sodium chloride (NaCl) was chosen as the ﬁrst
+material due to the signiﬁcant difference in electronegati vity
+between the Na and Cl atoms suggesting the presence of
+non-negligible long-range electrostatic interactions. T he
+combined descriptors capture both short- and long-range in -
+teractions, enabling analysis of material properties depe nding
+on both types of interactions.
+The dataset for this material consists of 1014 different
+structures, each containing 64 Na and 64 Cl atoms. The
+conﬁgurations are taken from V ASP molecular dynamics
+(MD) simulations with 50000 steps and a time step of 1.5
+fs. During the MD, the material was heated from 1100K to
+1400K using a Langevin thermostat. An energy cutoff of 350
+eV was used. The P AW potentials used were "P AW_PBE
+Na_pv 19Sep2006" for Na and "P AW_PBE Cl 06Sep2006"
+7
+10−2
+10−1
+100
+101
+102
+RMSPE E (%)
+(a)
+T rained on energies and forces
+(c)
+T rained only on energies
+101 102 103
+training conﬁgurations
+10−2
+10−1
+100
+101
+102
+RMSPE F (%)
+(b)
+101 102 103
+training conﬁgurations
+(d)
+Nmax = 1, Rcut = 1
+Nmax = 1, Rcut = 3
+Nmax = 4, Rcut = 3
+density-based
+FIG. 2. The learning curves for various LODE models using dif ferent cutoff-radii Rcut and number of radial basis functions Nmax and our
+density model differ when trained solely on energies. The to p panels display the relative percentage error for energy, w hile the bottom panels
+present the relative error for the forces. The left panels sh ow the results of training on energies and forces, while the r ight panels show the
+results of training on energies only.
+for Cl, considering seven valence electrons for each elemen t.
+Table I presents the results for NaCl obtained using ﬁve dif-
+ferent methods: purely local/short-range descriptors (Lo cal),
+MACE without MP (MACE no MP), LODE combined with
+short-range descriptors (LODE), long-range density-base d
+descriptors combined with short-range descriptors (Densi ty)
+and invariant MACE with one MP layer (MACE inv.) and
+equivariant MACE with one MP layer (MACE equiv.). The
+combination of short- and long-range descriptors follows t he
+procedure outlined in Eq. (
+15).
+For the short-range part of the descriptor, the hyperparame ters
+were set to σ = 0.5, Rcut = 6 Å, Nmax = 6 and Lmax = 3
+where Lmax corresponds to the angular quantum number and
+indicates the number of angular basis functions. For the
+density-based part, the optimal choice was Nmax = 7, s = 2,
+ζmax = 1.5 and σ = 0.3.
+For the LODE minimal, we used a model that can describe
+1/r interactions exactly ( Rcut = 1 Å, Nmax = 1 and σ = 0.3)
+with the long-range part being weighted 40 times more than
+the short-range part and the forces being weighted 3 times
+stronger than the energies. A more ﬂexible LODE model
+was also used, with a larger cut-off radius of Rcut =7 Åand
+Nmax = 5, where the long-range part was weighted by a
+factor of 0.003 compared to the short-range part (the LODE
+descriptors show huge ﬂuctuations in the case of a liquid).
+A polynomial kernel of order
+ζ = 4 was used.
+For MACE Rcut = 6 Å, descriptors with up to four-body
+interactions, force weights of 1000, energy weights of 10 an d
+100 epochs were used. After 80 epochs the energy weights
+are increased to further lower the error in the energies.
+Out of the 1014 training conﬁgurations always 20% were
+used as validation data.
+The density-based descriptors and Message Passing MACE
+outperform the purely local method. LODE performs better
+8
+TABLE I. The root-mean-square percentage error (RMSPE) was
+calculated for the validation data of liquid NaCl using comb ined
+density and radial LODE descriptors describing the electro static po-
+tential and a more ﬂexible one as well as local-only descript ors and
+MACE18 with and without Message Passing (MP) as well as using
+invariant (inv.) and equivariant (equiv.) features. Radia l cutoffs
+of typically 6 Å are used. The results show that the density-b ased
+approach outperforms the LODE method for real materials and is
+as effective as MACE with invariant MP . Nevertheless, inclu ding
+long-range interactions is essential as the purely local sc heme and
+MACE without MP yield large errors.
+RMSPE E (%) RMSPE F (%)
+Local 7.7 12.6
+MACE no MP 8.5 8.5
+LODE minimal 5.6 3.7
+LODE ﬂexible 7.0 11.0
+Density 2.2 3.3
+MACE inv. 3.0 3.1
+MACE equiv. 2.1 2.2
+than the local methods but not as good as the density-based
+and MP models.
+The likely explanation for the better performance of the
+density-based approach is that the LODE is optimal for
+purely electrostatic interactions, yet lacks the capabili ty to de-
+scribe intermediate range interactions. In real materials , the
+ZiZ j/∥ri j∥ = ZiZ j/ri j Coulomb interaction between particles
+i and j is screened by the electrons, resulting in an effective
+interaction
+V =
+∫ ZiZ j
+∥ri − r′∥ ε − 1 (
+r′, r j
+)
+d3r′. (24)
+At very large distances the interaction will be screened
+by the ion-clamped macroscopic dielectric constant
+ε − 1.
+However, at medium distance, the electronic screening is
+less pronounced and the interaction approaches 1 /r. LODE
+is designed to model a functional form of 1 /r only but can,
+by construction, not model screened interactions that devi ate
+from the functional 1 /r behavior. The present approach is
+more ﬂexible as the functional form of the interaction is not
+keyed into the model but rather learned.
+Even increasing the cutoff radius of the LODE method to 7 Å
+and using more radial basis functions (LODE ﬂexible) does
+not improve the results. On the contrary, the errors in the
+forces increase by a factor 1.3, indicating that the electro static
+potential at points further away from the atom of interest do es
+not add any relevant information to the representation of th e
+atomic environment.
+Even when the cutoff radius Rcut of the purely local
+method is systematically increased to make the descriptors
+longer-ranged the result never becomes quite as good as for
+the combined density method or MACE. This is shown in Fig.
+3. These data were calculated using the MLFF implemented
+in V ASP . For the three-body descriptors a cutoff radius of 5
+Å was used, since this yields better results than 6 Å. This
+is also the reason why the initial value in this plot is better
+than the one shown in Tab.
+I obtained using polipy4vasp. In
+polipy4vasp a distinction between two-body and three-body
+cutoffs is impossible and the best compromise is found to be
+6 Å. The initial error (9.8%) is comparable to MACE without
+MP (8%) but requires us to perform a hyperparameter search
+for the cutoff of the three-body terms. As shown in Fig.
+3,
+the error decreases as the cutoff of the two-body descriptor s
+increases, reaching a value slightly below 5 % when the
+cutoff is sufﬁciently large. In summary, naively increasin g
+the two-body cutoff does not quite allow us to recover the
+accuracy of the long-range models. Nevertheless, the prese nt
+observations have prompted us to routinely use relatively
+larger cutoffs for the two-body descriptors (8 Å), and fairl y
+small radial cutoffs for the three-body descriptors (5 Å) in
+V ASP as default.
+6 8 10 12
+Rcut (Å)
+4
+5
+6
+7
+8
+9RMSPE F (%)
+FIG. 3. RMSPE in the forces as a function of the two-body cutof f
+radius Rcut for NaCl for the short-range descriptors. Data was cal-
+culated using V ASP . The local method cannot match the accuracy of
+the combined density method or MACE even when the cut-off rad ius
+is increased to 12 Å.
+Furthermore, irrelevant information worsens the conditio n
+number of the design matrix and the numerical stability of th e
+problem.
+Especially when considering long-range descriptors, it is cru-
+cial to carefully select the information to be included. Ide ally,
+all relevant hyperparameters should be optimized by a grid
+search.
+C. Solid Sodium Chloride
+As a less demanding test, we investigate solid NaCl. To
+construct a training set, a 128 atom fcc supercell was heated
+from 200 K to 900 K in 100,000 steps (1.5 ns) for an NPT
+ensemble. The same hyperparameters as for liquid sodium
+chloride were used to ﬁt the data, except that the forces and

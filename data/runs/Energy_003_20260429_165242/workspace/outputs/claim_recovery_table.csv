@@ -1,0 +1,6 @@
+claim,supporting_artifact,status
+All provided energy and weather files cover 8760 hourly records in 2014 with no missing hours.,outputs/data_overview.json; outputs/cleaning_diagnostics.csv,verified
+The 10 building nodes sum exactly/numerically to CN01 and Total for all five energy/emission variables.,outputs/hierarchical_consistency.csv; report/images/hierarchy_residuals.png,verified
+Total weather can be joined one-to-one with Total energy at hourly resolution.,outputs/data_overview.json; outputs/total_energy_weather_joined.csv,verified
+Temperature is strongly associated with cooling/electricity seasonality in the mini dataset.,outputs/correlation_matrix.csv; report/images/monthly_energy_weather.png; report/images/correlation_heatmap.png,quantified
+"The mini dataset is a compact 2014 subset, not the full 11,987,328-record 2014-2022 HEEW release.",INSTRUCTIONS.md; outputs/data_overview.json,limitation

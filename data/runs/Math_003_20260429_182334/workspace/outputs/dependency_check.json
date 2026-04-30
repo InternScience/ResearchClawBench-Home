@@ -1,0 +1,40 @@
+{
+  "numpy": {
+    "available": true
+  },
+  "pandas": {
+    "available": true
+  },
+  "matplotlib": {
+    "available": true
+  },
+  "seaborn": {
+    "available": true
+  },
+  "networkx": {
+    "available": false
+  },
+  "python_version": "3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]",
+  "scipy": {
+    "available": true
+  },
+  "sympy": {
+    "available": false
+  },
+  "PyPDF2": {
+    "available": false
+  },
+  "pypdf": {
+    "available": false
+  },
+  "pdfminer": {
+    "available": false
+  },
+  "fitz": {
+    "available": false
+  },
+  "ReadPDF_status": {
+    "available": false,
+    "note": "ReadPDF tool returned unexpected pdf result type NoneType for all related_work PDFs; bounded related-work extraction used metadata/strings only."
+  }
+}

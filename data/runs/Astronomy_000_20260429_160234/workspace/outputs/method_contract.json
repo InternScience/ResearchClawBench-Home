@@ -1,0 +1,19 @@
+{
+  "task": "Bayesian ULB constraints from black-hole mass/spin posterior samples.",
+  "implemented_commitments": [
+    "Full posterior samples are loaded and each boson mass is scored by posterior probability that a draw falls in the forbidden superradiant region.",
+    "Scalar l=m=1 Regge saturation curve is used: chi_sat=4 alpha/(1+4 alpha^2) for alpha<0.5.",
+    "Mass constraints are reported as p>=0.68 and p>=0.95 exclusion intervals for each source.",
+    "Self-interaction strength is constrained with a related-work Bosenova/nonlinearity threshold inverted to f_a and lambda~(mu/f_a)^2 proxies."
+  ],
+  "known_deviations": [
+    "No exact Kerr/Teukolsky eigenvalue calculation or source-age/accretion modeling is performed.",
+    "Self-interaction limits are not full upper limits from nonlinear simulations; they are threshold proxies tied to epsilon_required=1e-4.",
+    "Only scalar l=m=1 is modeled; vector fields and higher levels are discussed but not fit."
+  ],
+  "constants": {
+    "alpha_per_msun_ev": 7485232053.823733,
+    "Mpl_GeV": 1.22089e+19,
+    "epsilon_required": 0.0001
+  }
+}

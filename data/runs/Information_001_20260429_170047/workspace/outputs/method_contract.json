@@ -1,0 +1,23 @@
+{
+  "task": "Evaluate and report on a training-free framework for improving fine-grained perception of MLLMs by task-guided cropping/zooming to mitigate fixed-resolution vision encoder information loss for small objects.",
+  "explicit_methodological_commitments": [
+    "training-free analysis/framework",
+    "task-guided cropping strategy",
+    "autonomous region-of-interest identification",
+    "zoom local detail while preserving global context",
+    "focus on small-object/fine-grained visual reasoning",
+    "use available demo images in data/demo_imgs",
+    "produce methodology, results, validation/comparison plots, and discussion"
+  ],
+  "initial_assumptions": [
+    "No MLLM inference endpoint is guaranteed in the workspace; if unavailable, use deterministic image-analysis proxies for information retention and crop utility.",
+    "Related-work PDFs will be used to refine method names, comparison axes, and interpretation."
+  ],
+  "related_work_refinements": [
+    "V*: LLM-guided visual search, target locations, and visual working memory are central named mechanisms to approximate with deterministic question/task-guided ROI selection and a global+local visual memory panel.",
+    "Monkey: uniform high-resolution patches provide a comparison baseline against selective task-guided crops.",
+    "BLIP-2: frozen image encoders motivate analysis of fixed-resolution information loss.",
+    "Chefer et al.: attention/saliency explanations motivate exporting saliency/interest maps for ROI interpretability."
+  ],
+  "fallback_scope": "No actual MLLM weights/API are assumed; analysis quantifies image information retention and crop detail using deterministic computer-vision proxies, and visually audits whether selected crops correspond to plausible task-relevant regions."
+}

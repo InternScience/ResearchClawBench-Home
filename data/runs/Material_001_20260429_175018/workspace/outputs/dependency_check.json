@@ -1,0 +1,31 @@
+{
+  "pandas": {
+    "available": true
+  },
+  "numpy": {
+    "available": true
+  },
+  "matplotlib": {
+    "available": true
+  },
+  "seaborn": {
+    "available": true
+  },
+  "sklearn": {
+    "available": true
+  },
+  "scipy": {
+    "available": true
+  },
+  "networkx": {
+    "available": false
+  },
+  "shap": {
+    "available": false
+  },
+  "pdf_text_extraction": {
+    "ReadPDF_failed": true,
+    "pdftotext_available": false,
+    "fallback": "PDF metadata strings and task-relevant title extraction"
+  }
+}

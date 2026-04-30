@@ -1,0 +1,21 @@
+{
+  "named_method": "DIDS-MFL / 3D-IDS-inspired disentangled dynamic IDS",
+  "exact_definition_from_task": [
+    "statistical disentanglement",
+    "representational disentanglement",
+    "dynamic graph diffusion",
+    "multi-scale fusion",
+    "few-shot support"
+  ],
+  "implemented_steps": {
+    "statistical_disentanglement": "40 normalized message features split into branch summaries (means/std/max over feature groups) plus temporal delta",
+    "representational_disentanglement": "PCA latent factors over standardized raw flow features; used as separate factor subspace",
+    "dynamic_graph_diffusion": "symmetric kNN graph over PCA/time/topology with one- and two-hop random-walk diffusion features",
+    "multi_scale_fusion": "concatenation of raw, statistical, PCA, one-hop diffusion, two-hop diffusion, time and degree features",
+    "few_shot": "prototype classifier on fused embedding for 1/5/10/25 shots per attack"
+  },
+  "deviations": [
+    "No torch_geometric dependency; no end-to-end neural graph training. This is a lightweight reproducible approximation due runtime/data constraints.",
+    "Source/destination layer fields are constant, so graph hierarchy was represented through flow kNN and degree proxies rather than multi-layer graph diffusion."
+  ]
+}

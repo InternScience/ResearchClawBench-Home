@@ -1,0 +1,33 @@
+{
+  "n_frames": 60,
+  "train_frames": 42,
+  "test_frames": 18,
+  "energy_mae_test_with_global_charge": 0.008486901063383215,
+  "energy_mae_test_without_global_charge": 0.002627181111855528,
+  "energy_rmse_test_with_global_charge": 0.020139360337776756,
+  "energy_rmse_test_without_global_charge": 0.0033183600971173656,
+  "energy_r2_test_with_global_charge": 0.9992174352848403,
+  "energy_r2_test_without_global_charge": 0.9999787540604191,
+  "paired_plus_minus_same_geometry_energy_max_abs_diff": 0.0,
+  "paired_plus_minus_same_geometry_position_max_abs_diff_A": 0.0,
+  "force_mae_with_global_charge_energy_gradient": 0.022766920265574118,
+  "force_rmse_with_global_charge_energy_gradient": 0.07571041620862119,
+  "source_specific": [
+    {
+      "charge_state_e": -1.0,
+      "n_frames": 30,
+      "energy_mean": 0.8518507284772271,
+      "energy_std": 0.676689457228891,
+      "test_mae_with_global_charge": 0.012704708863071425,
+      "test_mae_without_global_charge": 0.002380064655929893
+    },
+    {
+      "charge_state_e": 1.0,
+      "n_frames": 30,
+      "energy_mean": 0.8518507284772271,
+      "energy_std": 0.676689457228891,
+      "test_mae_with_global_charge": 0.004269093263695006,
+      "test_mae_without_global_charge": 0.0028742975677811624
+    }
+  ]
+}

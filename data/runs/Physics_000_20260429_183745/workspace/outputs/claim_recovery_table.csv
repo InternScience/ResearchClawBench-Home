@@ -1,0 +1,6 @@
+claim,artifact
+"Provided reproduction data support stable validation clusters Na13@Rb32, K13@Cs42, and Ag13@Cu45.",outputs/stable_cluster_predictions.csv
+"Adjacent-shell optimal mismatches cluster into low MC->MC (~0.04), intermediate MC->Ch1 (~0.136-0.14), and larger Ch1->Ch2 (~0.21) regimes.",outputs/mismatch_design_matrix.csv
+Theoretical and measured mismatch validation points agree closely.,outputs/experimental_mismatch_validation.csv; outputs/validation_metrics.json
+"Growth summaries show conservative MC growth, seeded Ch1 convergence, and a mixed Ag/Cu transition toward Ch1-like mismatch.",outputs/growth_path_summary.csv; report/images/figure_4_growth_dynamics.png
+Conservative path choices dominate the recorded path-selection statistics.,outputs/path_selection_stats.csv

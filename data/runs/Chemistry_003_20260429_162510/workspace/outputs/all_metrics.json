@@ -1,0 +1,114 @@
+{
+  "random": {
+    "n_frames": 100,
+    "n_atoms": 128,
+    "charge_mae_e": 0.0,
+    "charge_rmse_e": 0.0,
+    "charge_correlation": 0.9999999999999998,
+    "frame0_coulomb_energy": -12.854723080550716,
+    "frame0_dipole_norm_eA": 60.16966871275585,
+    "frame0_quadrupole_frobenius_eA2": 3880.456333967725,
+    "minimum_interatomic_distance_min_A": 1.500179157458757,
+    "full_coulomb_energy_mean": -8.276622360483806,
+    "full_coulomb_energy_std": 5.2023450749961775,
+    "cutoff_metrics": [
+      {
+        "cutoff_A": 3,
+        "energy_rmse": 8.417930718117775,
+        "energy_mae": 7.4867766446427915
+      },
+      {
+        "cutoff_A": 4,
+        "energy_rmse": 7.508161294179667,
+        "energy_mae": 6.688465510258876
+      },
+      {
+        "cutoff_A": 5,
+        "energy_rmse": 6.478119012686542,
+        "energy_mae": 5.457538966788703
+      },
+      {
+        "cutoff_A": 6,
+        "energy_rmse": 6.4847466925286215,
+        "energy_mae": 5.684649589981806
+      },
+      {
+        "cutoff_A": 7,
+        "energy_rmse": 5.802677587587883,
+        "energy_mae": 4.837823575349551
+      },
+      {
+        "cutoff_A": 8,
+        "energy_rmse": 5.1407742907584515,
+        "energy_mae": 4.162094436116207
+      },
+      {
+        "cutoff_A": 10,
+        "energy_rmse": 4.341995832099088,
+        "energy_mae": 3.4085895043835364
+      },
+      {
+        "cutoff_A": 12,
+        "energy_rmse": 2.876917877028531,
+        "energy_mae": 2.2842005687134463
+      }
+    ]
+  },
+  "dimer": {
+    "n_frames": 60,
+    "train_frames": 42,
+    "test_frames": 18,
+    "energy_mae_train_long_range": 0.016773606590179416,
+    "energy_mae_test_long_range": 0.12900507973606462,
+    "energy_rmse_test_long_range": 0.2433696878189598,
+    "energy_r2_test_long_range": 0.6959993272008698,
+    "energy_mae_test_short_range_no_inter_coulomb": 0.18441334644454854,
+    "coulomb_scale_coefficient": 0.9014181435692536,
+    "force_mae_coulomb_component_vs_total": 0.5895344725152832,
+    "force_rmse_coulomb_component_vs_total": 0.9844590520638935,
+    "latent_fragment_charges_e": {
+      "fragment_1": 1.0,
+      "fragment_2": -1.0
+    },
+    "cutoff_test_mae": {
+      "2.5": 0.1324847906467307,
+      "3.0": 0.17613271047885798,
+      "3.5": 0.17018532814034062,
+      "4.0": 0.1661440691714658,
+      "5.0": 0.15651455553304447
+    }
+  },
+  "ag3": {
+    "n_frames": 60,
+    "train_frames": 42,
+    "test_frames": 18,
+    "energy_mae_test_with_global_charge": 0.008486901063383215,
+    "energy_mae_test_without_global_charge": 0.002627181111855528,
+    "energy_rmse_test_with_global_charge": 0.020139360337776756,
+    "energy_rmse_test_without_global_charge": 0.0033183600971173656,
+    "energy_r2_test_with_global_charge": 0.9992174352848403,
+    "energy_r2_test_without_global_charge": 0.9999787540604191,
+    "paired_plus_minus_same_geometry_energy_max_abs_diff": 0.0,
+    "paired_plus_minus_same_geometry_position_max_abs_diff_A": 0.0,
+    "force_mae_with_global_charge_energy_gradient": 0.022766920265574118,
+    "force_rmse_with_global_charge_energy_gradient": 0.07571041620862119,
+    "source_specific": [
+      {
+        "charge_state_e": -1.0,
+        "n_frames": 30,
+        "energy_mean": 0.8518507284772271,
+        "energy_std": 0.676689457228891,
+        "test_mae_with_global_charge": 0.012704708863071425,
+        "test_mae_without_global_charge": 0.002380064655929893
+      },
+      {
+        "charge_state_e": 1.0,
+        "n_frames": 30,
+        "energy_mean": 0.8518507284772271,
+        "energy_std": 0.676689457228891,
+        "test_mae_with_global_charge": 0.004269093263695006,
+        "test_mae_without_global_charge": 0.0028742975677811624
+      }
+    ]
+  }
+}

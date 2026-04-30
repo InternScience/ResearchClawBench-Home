@@ -1,0 +1,21 @@
+{
+  "FISTA_Nesterov": {
+    "definition": "y_k = x_k + beta_k (x_k-x_{k-1}); x_{k+1}=prox_{lambda/L}(y_k - grad f(y_k)/L); t_{k+1}=(1+sqrt(1+4t_k^2))/2; beta=(t_k-1)/t_{k+1}",
+    "continuous_time_invariant": "second-order inertial dynamics with vanishing damping proportional to 3/t; energy resembles objective gap plus kinetic/momentum term",
+    "implemented": true
+  },
+  "Restarted_FISTA": {
+    "definition": "same proximal accelerated method with restart when objective increases or gradient-momentum inner product indicates bad momentum",
+    "linear_rate_condition": "strong convexity or suitable error-bound/restricted strong convexity; here assessed empirically because p>n",
+    "implemented": true
+  },
+  "ADMM_Lasso": {
+    "definition": "minimize loss(x)+lambda||z||_1 subject to x=z; x-update solves ridge least squares, z-update soft-thresholds, u-update accumulates primal residual",
+    "Lyapunov_diagnostics": "objective, primal residual ||x-z||, dual residual rho||z_k-z_{k-1}||, and residual energy",
+    "implemented": true
+  },
+  "VOS_unification": {
+    "definition": "Represent algorithms as discretizations of split smooth/nonsmooth operators: gradient flow plus proximal/shrinkage, with auxiliary momentum or multiplier variables.",
+    "implemented_as": "common Python interface and shared objective/prox operators; report derives unifying equations qualitatively and validates numerically"
+  }
+}

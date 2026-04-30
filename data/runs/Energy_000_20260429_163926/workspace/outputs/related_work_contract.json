@@ -1,0 +1,9 @@
+{
+  "paper_001": "Li et al., Energy Storage Materials 2022: data-driven systematic parameter identification of electrochemical lithium-ion model with artificial intelligence; emphasizes difficulty from many parameters and nonlinear model, and notes GA/common metaheuristic use and thermal parameters.",
+  "paper_003": "Li et al., JES 2016: P2D parameter identification using heuristic/genetic algorithm and divide-and-conquer to reduce search time; motivates efficient parameter-search approximations.",
+  "impact_on_contract": [
+    "Include GA/metaheuristic baseline comparison",
+    "Report computational acceleration via ANN surrogate",
+    "Discuss full-P2D limitation and divide-and-conquer context"
+  ]
+}

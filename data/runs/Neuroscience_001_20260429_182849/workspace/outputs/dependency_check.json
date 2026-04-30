@@ -1,0 +1,43 @@
+{
+  "torch": {
+    "available": true,
+    "version": "2.11.0+cu130"
+  },
+  "numpy": {
+    "available": true,
+    "version": "2.2.5"
+  },
+  "pandas": {
+    "available": true,
+    "version": "2.2.3"
+  },
+  "matplotlib": {
+    "available": true,
+    "version": "3.10.1"
+  },
+  "seaborn": {
+    "available": true,
+    "version": "0.13.2"
+  },
+  "h5py": {
+    "available": true,
+    "version": "3.13.0"
+  },
+  "yaml": {
+    "available": true,
+    "version": "5.4.1"
+  },
+  "sklearn": {
+    "available": true,
+    "version": "1.6.1"
+  },
+  "pypdf": {
+    "available": true,
+    "version": "6.10.2"
+  },
+  "flyvis": {
+    "available": false,
+    "checked": true,
+    "fallback": "Direct checkpoint/config/summary analysis; no full stimulus simulation."
+  }
+}

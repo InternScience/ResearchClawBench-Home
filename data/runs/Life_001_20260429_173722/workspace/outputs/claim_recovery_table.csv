@@ -1,0 +1,10 @@
+claim,value,supporting_artifact
+Mean per-cell response probability under budget-10 MinSum adaptive vaccine,0.942747,outputs/response_summary_by_vaccine.csv
+Median per-cell response probability under budget-10 MinSum adaptive vaccine,0.963003,outputs/response_summary_by_vaccine.csv
+Mean coverage ratio at p_response >= 0.5,0.992000,outputs/direct_coverage_thresholds.csv
+Mean coverage ratio at p_response >= 0.75,0.985000,outputs/direct_coverage_thresholds.csv
+Mean coverage ratio at p_response >= 0.9,0.887000,outputs/direct_coverage_thresholds.csv
+Mean coverage ratio at p_response >= 0.95,0.606000,outputs/direct_coverage_thresholds.csv
+Mean pairwise IoU of selected vaccine compositions across repetitions,1.000000,outputs/composition_iou_summary.csv
+Runtime log-log scaling exponent across supplied patient samples,1.229317 (R2=0.880594),outputs/runtime_scaling_fit.csv
+All repetitions selected exactly budget-10 elements,True,outputs/selected_vaccine_per_repetition.csv

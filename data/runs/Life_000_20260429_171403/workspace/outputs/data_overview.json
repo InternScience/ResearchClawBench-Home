@@ -1,0 +1,43 @@
+{
+  "initial_rows": 184,
+  "initial_complete_glass": 184,
+  "feature_columns": [
+    "Nucleophilic-HEA",
+    "Hydrophobic-BA",
+    "Acidic-CBEA",
+    "Cationic-ATAC",
+    "Aromatic-PEA",
+    "Amide-AAm"
+  ],
+  "target": "Glass_max_kPa",
+  "initial_glass_summary": {
+    "count": 184.0,
+    "mean": 50.97736340605353,
+    "std": 45.968367975418154,
+    "min": 1.1889596602972399,
+    "25%": 13.43241330502477,
+    "50%": 42.066525123849964,
+    "75%": 77.22576079263978,
+    "max": 304.60014154281674
+  },
+  "initial_max_row": {
+    "No.": "GPRFR-2",
+    "Glass_max_kPa": 304.60014154281674,
+    "Nucleophilic-HEA": 0.0,
+    "Hydrophobic-BA": 0.5301078450090368,
+    "Acidic-CBEA": 0.0,
+    "Cationic-ATAC": 0.0500926869726537,
+    "Aromatic-PEA": 0.3697016062106456,
+    "Amide-AAm": 0.050097791441497265
+  },
+  "count_initial_gt_1MPa": 0,
+  "count_initial_gt_100kPa": 20,
+  "optimization_rows": 340,
+  "optimization_unique_file_sheet": {
+    "('ML_ei&pred (1&2&3rounds)_20240408.xlsx', 'EI')": 120,
+    "('ML_ei&pred (1&2&3rounds)_20240408.xlsx', 'PRED')": 90,
+    "('ML_ei&pred_20240213.xlsx', 'EI')": 80,
+    "('ML_ei&pred_20240213.xlsx', 'PRED')": 50
+  },
+  "unit_caveat": "Workbook target columns are labelled kPa and have maxima below 1 MPa; >1 MPa is assessed as >1000 kPa, while >100 kPa is reported as practical high-strength marker for available data."
+}

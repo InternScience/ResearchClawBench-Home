@@ -1,0 +1,22 @@
+{
+  "task_goal": "Estimate a Local Distance Network consensus Hubble constant H0 at approximately 1% precision using the provided minimal dataset.",
+  "named_method_commitments": [
+    "Generalized least squares / covariance-weighted distance-network combination",
+    "Geometric anchor propagation from NGC4258, LMC/SMC-like anchor, and MW parallaxes when available in data",
+    "Primary indicators: Cepheids and TRGB in the minimal dataset (full prompt also names Miras and JAGB, but not present in this file)",
+    "Secondary indicators: SNe Ia and SBF in the minimal dataset",
+    "Hubble-flow measurements with peculiar-velocity uncertainty converted to magnitude covariance",
+    "Analysis variants and comparisons with early-universe/CMB constraints"
+  ],
+  "primary_outputs": [
+    "baseline H0 estimate with standard uncertainty",
+    "variant H0 estimates by indicator/anchor choices",
+    "comparison to prompt baseline H0=73.50 +/- 0.81 and Planck-like early-universe value",
+    "diagnostic figures and source tables"
+  ],
+  "assumptions_to_verify_or_state": [
+    "Minimal dataset is illustrative and may not exactly reproduce the prompt baseline.",
+    "SBF calibrators do not have independent primary-distance rows; a pragmatic group-distance calibration may be required.",
+    "MW anchor is listed but no MW host measurement rows are present."
+  ]
+}

@@ -1,0 +1,244 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "data_prepare.py",
+    "path": "code/data_prepare.py",
+    "type": "file",
+    "size": 242,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "run_analysis.py",
+    "path": "code/run_analysis.py",
+    "type": "file",
+    "size": 19269,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_data.pt",
+    "path": "data/candidate_data.pt",
+    "type": "file",
+    "size": 2451457,
+    "mtime": 1772431610.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "finetune_data.pt",
+    "path": "data/finetune_data.pt",
+    "type": "file",
+    "size": 4904635,
+    "mtime": 1772431608.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "pretrain_data.pt",
+    "path": "data/pretrain_data.pt",
+    "type": "file",
+    "size": 12321899,
+    "mtime": 1772431606.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "baseline_comparison.csv",
+    "path": "outputs/baseline_comparison.csv",
+    "type": "file",
+    "size": 829,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "candidate_rankings.csv",
+    "path": "outputs/candidate_rankings.csv",
+    "type": "file",
+    "size": 124545,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "candidate_topk_metrics.csv",
+    "path": "outputs/candidate_topk_metrics.csv",
+    "type": "file",
+    "size": 315,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "claim_recovery_table.csv",
+    "path": "outputs/claim_recovery_table.csv",
+    "type": "file",
+    "size": 871,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "data_schema_summary.json",
+    "path": "outputs/data_schema_summary.json",
+    "type": "file",
+    "size": 3623,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "dataset_overview.csv",
+    "path": "outputs/dataset_overview.csv",
+    "type": "file",
+    "size": 231,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 758,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 956,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "method_fidelity_checklist.json",
+    "path": "outputs/method_fidelity_checklist.json",
+    "type": "file",
+    "size": 1423,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "model_metrics.json",
+    "path": "outputs/model_metrics.json",
+    "type": "file",
+    "size": 5235,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 4 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4055967,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8225125,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1212404,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2144524,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure_1_data_overview.png",
+    "path": "report/images/figure_1_data_overview.png",
+    "type": "file",
+    "size": 103740,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "figure_2_model_validation.png",
+    "path": "report/images/figure_2_model_validation.png",
+    "type": "file",
+    "size": 176780,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "figure_3_candidate_discovery.png",
+    "path": "report/images/figure_3_candidate_discovery.png",
+    "type": "file",
+    "size": 154369,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "figure_4_interpretability.png",
+    "path": "report/images/figure_4_interpretability.png",
+    "type": "file",
+    "size": 159091,
+    "mtime": 1777518310.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 12592,
+    "mtime": 1777518311.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6080,
+    "mtime": 1777456203.0,
+    "exported": true
+  }
+]

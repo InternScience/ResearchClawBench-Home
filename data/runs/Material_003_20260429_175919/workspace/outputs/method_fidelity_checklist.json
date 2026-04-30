@@ -1,0 +1,18 @@
+{
+  "Gaussian_process_calibration": {
+    "definition": "Nonparametric Bayesian regression with a kernel over calibration features, trained on experimental Tg labels and MD Tg/descriptors, yielding predictive mean and standard deviation.",
+    "non_negotiable_steps": ["held-out evaluation", "predictive uncertainty", "application to vitrimer MD data"],
+    "status": "planned_exact_with_sklearn_GaussianProcessRegressor"
+  },
+  "Graph_variational_autoencoder": {
+    "definition": "Encoder maps molecular graphs to latent distribution; decoder generates molecular graph structures; inverse design samples latent space and optimizes toward target properties.",
+    "non_negotiable_steps": ["graph representation", "variational latent distribution", "molecular decoding/generation", "property-guided selection"],
+    "dependency_status": "torch, torch_geometric, rdkit unavailable from initial dependency check",
+    "implemented_fallback": "descriptor/fragment recombination latent generator using string/graph-token descriptors; not an exact graph VAE",
+    "deviation": "No graph neural encoder/decoder or validity-checked molecular graph decoding can be claimed without missing dependencies."
+  },
+  "Experimental_validation": {
+    "definition": "Synthesize selected candidates and measure Tg experimentally.",
+    "status": "not executable in offline workspace; replaced by prioritized experimental validation plan and held-out calibration validation"
+  }
+}

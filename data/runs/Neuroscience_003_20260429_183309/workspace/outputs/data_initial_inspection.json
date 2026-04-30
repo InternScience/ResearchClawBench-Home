@@ -1,0 +1,87 @@
+{
+  "n_obs": 2759,
+  "n_vars": 241,
+  "obs_columns": [
+    "phase",
+    "annotated_age",
+    "state",
+    "batch"
+  ],
+  "var_columns": [],
+  "obsm_keys": [],
+  "varm_keys": [],
+  "uns_keys": [],
+  "layers": [
+    "raw"
+  ],
+  "var_names_head": [
+    "Int_MeanEdge_AKT_cell",
+    "Int_MeanEdge_BP1_cell",
+    "Int_MeanEdge_Bcl2_cell",
+    "Int_MeanEdge_CDK2_cell",
+    "Int_MeanEdge_CDK4_cell",
+    "Int_MeanEdge_CDK6_cell",
+    "Int_MeanEdge_Cdh1_cell",
+    "Int_MeanEdge_Cdt1_cell",
+    "Int_MeanEdge_DNA_cell",
+    "Int_MeanEdge_E2F1_cell",
+    "Int_MeanEdge_ERK_cell",
+    "Int_MeanEdge_Fra1_cell",
+    "Int_MeanEdge_GSK3b_cell",
+    "Int_MeanEdge_RB_cell",
+    "Int_MeanEdge_RSK1_cell",
+    "Int_MeanEdge_S6_cell",
+    "Int_MeanEdge_STAT3_cell",
+    "Int_MeanEdge_Skp2_cell",
+    "Int_MeanEdge_YAP_cell",
+    "Int_MeanEdge_bCat_cell",
+    "Int_MeanEdge_cFos_cell",
+    "Int_MeanEdge_cJun_cell",
+    "Int_MeanEdge_cMyc_cell",
+    "Int_MeanEdge_cycA_cell",
+    "Int_MeanEdge_cycB1_cell",
+    "Int_MeanEdge_cycD1_cell",
+    "Int_MeanEdge_cycE_cell",
+    "Int_MeanEdge_p14ARF_cell",
+    "Int_MeanEdge_p16_cell",
+    "Int_MeanEdge_p21_cell"
+  ],
+  "obs_names_head": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "X_dtype": "float32",
+  "X_shape": [
+    2759,
+    241
+  ],
+  "isbacked": true,
+  "obs_categorical_top": {
+    "phase": {
+      "G1": 1128,
+      "S": 891,
+      "G0": 402,
+      "G2": 338
+    },
+    "state": {
+      "cycling": 2174,
+      "arrested": 402,
+      "nan": 183
+    },
+    "batch": {
+      "2": 1734,
+      "1": 1025
+    }
+  },
+  "obs_numeric_summary": {
+    "annotated_age": {
+      "min": 0.0,
+      "median": 5.333333333,
+      "max": 25.06666667,
+      "n_missing": 0
+    }
+  }
+}

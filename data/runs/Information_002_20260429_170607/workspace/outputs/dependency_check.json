@@ -1,0 +1,20 @@
+{
+  "python_modules": {
+    "yaml": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "pandas": true,
+    "numpy": true,
+    "nbformat": true
+  },
+  "pdf_text_extraction": {
+    "ReadPDF_target_papers": "failed with unexpected pdf result type NoneType for the local PDFs in this run",
+    "pdftotext_cli": false,
+    "fallback": "Use provided TeX source files for target paper and bounded metadata extraction attempts for related-work PDFs."
+  },
+  "named_method_capability": {
+    "Hartree_Fock_symbolic_derivation": "available via source TeX/YAML extraction and symbolic audit, not a full numerical self-consistent HF solver",
+    "step_scoring": "available from YAML score rubrics",
+    "figures": "available via matplotlib/seaborn"
+  }
+}

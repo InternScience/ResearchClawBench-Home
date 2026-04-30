@@ -1,0 +1,653 @@
+Global vulnerability and resilience of coastal
+ecosystems to tropical cyclones in a warming
+climate
+Chahan Kropf 
+Swiss Federal Institute of Technology, ETH Zurich https://orcid.org/0000-0002-3761-2292
+Lisa Vaterlaus 
+Swiss Federal Institute of Technology, ETH Zurich
+David Bresch 
+Swiss Federal Institute of Technology, ETH Zurich, Switzerland https://orcid.org/0000-0002-8431-
+4263
+Loïc Pellissier 
+ETH Zürich https://orcid.org/0000-0002-2289-8259
+Article
+Keywords:
+Posted Date: October 30th, 2023
+DOI: https://doi.org/10.21203/rs.3.rs-3425120/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.  
+Read Full License
+Additional Declarations: There is NO Competing Interest.
+Version of Record: A version of this preprint was published at Nature Climate Change on January 3rd,
+2025. See the published version at https://doi.org/10.1038/s41558-024-02194-w.
+Global vulnerability and resilience of coastal ecosystems to1
+tropical cyclones in a warming climate2
+Chahan M. Kropf 1,2, Lisa Vaterlaus 1, David N. Bresch 1,2, and Lo ¨ ıc Pellissier3,4
+3
+1Institute for Environmental Decisions, ETH Z¨ urich, Universit¨ atstrasse 16, 80924
+Z¨ urich, Switzerland5
+2Federal Oﬃce of Meteorology and Climatology MeteoSwiss, Op eration Center 1,6
+P.O. Box 257, 8058 Z¨ urich-Airport, Switzerland7
+3Institute for Terrestrial Ecosystems, ETH Z¨ urich, Universit¨ atstrasse 16, 80928
+Z¨ urich, Switzerland9
+4WSL, Birmensdorf Switzerland10
+October 9, 202311
+Abstract12
+Coastal ecosystems are recognized to provide a large range of servi ces including erosion13
+prevention, clean water provision, or protection from tropical cy clones storms. However, with14
+climate change, the increase in frequency and intensity of trop ical cyclones may alter the com-15
+position of the ecosystems themselves potentially degradin g the various services they provide.16
+While in general ecosystems are adapted to external perturbation s, extreme events can pro-17
+mote rapid and durable shifts. In this study, we quantify the vuln erability of all ecosystems18
+described as ecoregions at a global scale by analyzing the wind ﬁelds of tropical cyclones gen-19
+erated from probabilistic historical tracks. We then investigate how tropical cyclone intensity20
+and frequency shifting in a warming climate might lead to ecosyst em modiﬁcations. We show21
+that a combined 13% of the surface of all terrestrial ecosystems is susceptible to transformation22
+due to cyclone pattern changes between 2020 and 2050 under curre nt policies. Even for the23
+most resilient ecosystems already experiencing winds above 60 m/s regularly, the average inter-24
+val between two storms is projected to decrease from 19 to 12 years whi ch is potentially close25
+to their recovery time. Our global probabilistic approach being embedded in the established26
+IPCC climate risk frameworks enables the study of a broad temporal ra nge, and advocates for27
+a shift in the consideration of the tropical cyclone impact from im mediate damage to eﬀects28
+on long-term natural recovery cycles.29
+1 Introduction30
+Species composing ecosystems have co-evolved with the geo- climatic conditions at their location. Hence,31
+they are not only adapted to their average climatic conditions such as the temperature or precipitation32
+regimes, but also to extreme events such as ﬂoods, wildﬁres, or t ropical cyclones. Climate change is rapidly33
+modifying the climatic conditions which has been shown to lea d to a shift in the optimal climatic envelope34
+1
+for a large number of species among insects, vertebrates, or plan ts [1]. This may alter larger ecosystems’35
+compositions and lead to profound modiﬁcations of their functi oning. In addition, climate change is rapidly36
+modifying the regional and temporal patterns of extreme events [ 2], which might further impact global37
+ecosystems. An increase in frequency and intensity of extreme we ather events can even promote more rapid38
+and durable shifts to ecosystems than the gradual increase of the means of climate values [3–6].39
+Climate change is expected to modify the intensity and frequenc y of tropical cyclones and their ge-40
+ographical impacts [7–9]. Tropical cyclones are intense low-p ressure systems that form over warm ocean41
+waters which can produce strong winds, heavy rainfall, and storm su rges. As the climate warms, the surface42
+waters of the oceans become warmer, providing more fuel for tropical s torms to grow in strength. Further,43
+climate change is expected to increase the amount of moisture i n the atmosphere, which can lead to more44
+intense rainfall during tropical storms, and the rising sea level w ill expose new areas to storm surges.45
+Flooding and landslides from the heavy rainfalls, strong winds, a nd storm surges can cause wide-scale dis-46
+turbances for the ecosystem in the path of the storm and beyond [1 0, 11]. This may aﬀect all dimensions,47
+including the ecosystem’s biogeochemistry, hydrography, mob ile biota, sedentary biota, or micro-biota [5,48
+12]. Beyond a change in cyclone severity, regional patterns are l ikely to change, thus exposing areas that49
+have not historically experienced these types of storms [8, 13, 14], yielding unprecedented consequences for50
+not only human societies [9, 15] but also for natural ecosystem s [12, 16, 17].51
+Tropical cyclones have been shown to impact ecosystems throug h various processes such as wind throw,52
+causing defoliation and canopy damage, which can lead to reduc ed photosynthesis, growth, and produc-53
+tivity of trees, as well as increased susceptibility to pest an d disease outbreaks [16, 18]. Heavy rain can54
+cause landslides, soil erosion, and nutrient loss [19] potent ially causing decreased growth and productivity55
+of vegetation, but also direct vegetation mortality [20], esp ecially when already disturbed by anthropogenic56
+land use [21]. Storms can add large amounts of saltwater to coas tal freshwater and terrestrial ecosystems57
+disrupting habitats [22]. Together, disturbances from tropical s torms can alter the structure and compo-58
+sition of ecosystems, change the habitat quality for animal s pecies, and lead to mortality or displacement59
+of biota [23, 24], causing local loss of biodiversity [25, 26] . For instance, extreme weather events account60
+for 11% of global mangrove forest loss between 2000 - 2020 [27]. Pre vious methods, such as remote sensing61
+and ﬁeld studies have sought to quantify the immediate impact of tropical storms on forests [28], but not62
+how they may modify ecosystems over the long run. Several studie s on the eﬀect of storms on ecosystems63
+have been conducted, most focused on explicit relation for spec iﬁc species [29], part of the vegetation [17,64
+30], or for regional ecosystems [12]. However, estimating the p otential eﬀect of tropical cyclones on global65
+ecosystems with a long time perspective is limited by methodo logical challenges [17, 31–35].66
+While tropical cyclones may appear as purely destructive extrem e events, they also generate regular67
+disturbances that are naturally structuring the ecosystems’ dyn amics [36]. The impacts of tropical cyclones68
+are immediately followed by recovery and therefore those ecosyste ms are in a state of dynamic equilibrium69
+[12, 16, 17, 31, 37]. Furthermore, tropical cyclones may support t he regulation of certain ecological pro-70
+cesses such as water provision, soil enrichment with nutrients , restoration of ecological niches, support seed71
+dispersion, or temporarily mixing the salinity and phytoplank ton content in estuaries [38]. Thus, as long72
+as the ecosystem is resilient, tropical cyclones can also play a functional role, shaping speciﬁc ecosystems73
+[31, 39, 40] and being a necessary perturbation to maintain thei r functionality, thus supporting biodiversity74
+following the intermediate disturbance hypothesis [41–45] .75
+Coastal ecosystems are known to provide a large number of essent ial services to Human societies such as76
+nutrient cycling, erosion control, hatchery for ﬁshes and crustac eans, water puriﬁcation, cultural importance,77
+tourism, carbon sequestration, and circularly, protection from cyc lones [46–48]. Thus, it is timely to assess78
+the risk of tropical cyclones under climate change to ecosyste ms [49] and integrate this knowledge into the79
+socio-economic risk assessment methodologies established in the context of the Intergovernmental Panel on80
+Climate Change (IPCC) [2] and Sendai Disaster Risk Reduction [50] frameworks. We propose here using81
+the open-source CLIMADA risk modelling platform [51] to investi gate the vulnerability of global coastal82
+ecosystems to tropical cyclones at a global scale based on the panarchy principles [52]. More precisely, we83
+will study the spatial frequency distributions of the storms und er current climatic conditions (see illustration84
+2
+Figure 1: Illustration 1 of the vulnerability of ecosystems to extreme weather events deri ved from
+the historical occurrence patterns taking a long-term systemic pe rspective. Ecosystems are either
+resilient (able to recover quickly and remain stable), vulnerabl e (have diﬃculty to recover and might
+easily shift), or dependent (require regular, large scale disturban ces to sustain themselves).
+1 Clipart pictures taken from https://www.freepik.com
+Fig. 1) in order to then derive where climate change might put eco systems at risk of modiﬁcation. Firstly,85
+a probabilistic tropical cyclone model [53] is used to establi sh a present baseline that allows for determining86
+the average level of disturbance locally, both in terms of inten sity and frequency. Secondly, depending on the87
+historical frequency of tropical cyclones and the potential ada ptation of ecosystems to these disturbances,88
+we classify coastal areas as resilient (able to recover quickly and remain stable), vulnerable (have diﬃculty to89
+recover and might easily shift), or dependent (require regular di sturbances to sustain themselves). Thirdly,90
+we use a probabilistic set of projected tropical cyclones [13] to calculate the change in frequency for each91
+ecosystem in 2050 under the climate change pathway Represent ative Concentration Pathways (RCP) 8.592
+(compatible with policies in 2020 [54]) and identify ecosyst ems at risk.93
+2 Results94
+2.1 Tropical cyclone disturbance on ecosystems95
+For modeling the tropical cyclone disturbance, we use a probabi listic set of tracks generated statistically96
+using as baseline the historical records from 1980 −2018 [53]. Furthermore, we use the ecoregions introduced97
+by Dinerstein et al. [55] as the deﬁnition of global ecosystems for which tropical cy clone disturbance is98
+assessed. As shown in Fig. 2, tropical cyclones are regionally c onﬁned phenomena and it is appropriate99
+to use ecoregions (indicated by polygon shapes) as they combi ne both biological composition, climatic100
+condition, and geographic information. In contrast, considerin g biomes (indicated in colors in Fig. 2)101
+3
+Figure 2: Subset of 10000 simulated probabilistic tropical cyclones track f rom the STORM dataset
+[53] based on the historical track records from 1980 − 2018 forming the baseline climate scenario
+to determine the ecosystems’ (ecoregions – shown as polygons – divide d into 15 biomes – indicated
+by colors) vulnerability. The sustained one minute wind speed int ensities are divided into low(L),
+middle(M), and high(M) intensities based on the Saﬃr-Simpson scale (SSHWS) (here shown for the
+center of each cyclone track). Note that the sharp boundaries of certain tr acks at the anti-meridian
+are an artifact of the STORM dataset.
+would not be suitable for studying the relationship between tro pical cyclones and ecosystems. For instance,102
+Tropical & Subtropical Moist Broadleaf Forests can be both found i n the Amazon and Congo basins, which103
+are storm-free, as well as in the Mexican peninsula and the Philip pines that experience some of the highest104
+tropical cyclone activity worldwide. For each cyclone track, w e derive a corresponding wind ﬁeld which105
+is used as a proxy for their intensity. Since it is expected that the impact at diﬀerent intensities diﬀers106
+vastly, we separate wind speeds into three categories: low (L), middle (M), and high (H) intensity storms107
+(see Fig. 2 and Section 3). For each grid point on land, and each storm category, we derive the average108
+annual frequency as shown in Supplementary Fig. 1. We ﬁnd that 12 .7% of the area of all terrestrial coastal109
+ecosystems experience a tropical cyclone of at least low inten sity once every 250 years over their territory110
+on average (c.f. Supplementary Fig. 3). This is the basis for dete rmining the vulnerability of ecosystems111
+to tropical cyclones.112
+2.2 Vulnerability113
+We deﬁne the vulnerability to tropical cyclones for each ecoregi on for the three intensity categories (low,114
+middle, and high) as being either vulnerable, resilient, or de pendent [56] (c.f., Fig. 1) based on the panarchy115
+principles [52] and ecosystems dynamics model assumptions [ 31]. A vulnerable ecosystem has rarely been116
+exposed to the disturbance and the damages of tropical cyclone s are high since it has likely not evolved117
+resilience and recovery mechanisms. In contrast, a resilient eco system has historically frequently been118
+exposed to tropical cyclone disturbance and thus has evolved t o cope with the destructive eﬀects and119
+recovers on time scales of roughly the historical disturbance frequ ency. Finally, we deﬁne an ecosystem120
+as dependent when the disturbance is naturally present at high fre quency over most of its geographical121
+4
+Figure 3: Vulnerability of ecosystems to tropical cyclones being res ilient, dependent or vulnerable
+as deﬁned in Sec. 3.2. An ecosystem is labeled as resilient if it is re silient to at least one storm
+intensity, and dependent if it is dependent to at least one storm in tensity, but not resilient (c.f.
+Table 2 for the detailed parametrization values). A map for each storm inte nsity is available in
+Supplementary Fig. 4.
+extent, and thus its natural ecological dynamics may depend o n these regular disturbances [57]. Based on122
+these deﬁnitions and using the tropical cyclone frequency maps (Supplementary Fig. 1), we determine the123
+vulnerability of all ecoregions. The exact parametrization is d escribed in the methods section 3.2.124
+Using this classiﬁcation, we ﬁnd that resilient ecoregions co ver an area of 1 .7 million km 2, the dependent125
+an area of 11 .86 million km 2 and the vulnerable ones aﬀected by cyclones an area of 177 .8 million km 2.126
+Together, the resilient and dependent ecosystems represent 2 .4 % of the surface of all terrestrial ecosystems127
+and 19 % of those aﬀected by storms at least once in 250 years. Of t he 802 ecoregions worldwide – of128
+which 269 are aﬀected by tropical cyclones, c.f. Supplementary F ig. 3– 180 are vulnerable. Moreover, 24129
+ecoregions were classiﬁed as resilient and 47 as dependent, whe re we remark that all ecoregions resilient130
+or dependent on a higher-intensity storm, turn out to be depende nt on the corresponding lower-intensity131
+storms. Most of the resilient and dependent ecoregions are conce ntrated in the larger East-Asian regions,132
+the Caribbeans and the Central American peninsula, the Paciﬁc i slands, and Madagascar as shown in133
+Fig. 3. Among those, we found that only 5 (Ogasawara subtropical moist forests, Luzon montane rain134
+forests, Luzon rain forests, Mariana’s tropical dry forests, and Nansei Islands subtropical evergreen forests)135
+are fully adapted to high (H) intensity (winds larger than 58m/s ) storms. For the resilient ecosystems,136
+the average return period of tropical cyclones is 14 (L), 20(M), an d 19(H) years, for dependent ecosystems137
+11(L), 13(M), and 17(H) years, and for vulnerable (and aﬀected) ecosystems 88(L), 108(M) and 117(H)138
+years. These return periods can be interpreted as average upper ends to the recovery time of the ecosystems.139
+A detailed list of all vulnerabilities including the average re turn period is given in Supplementary Table 1,140
+and the vulnerabilities per category are shown in Supplementary Fig. 4.141
+2.3 Projected eﬀects of climate change142
+We compare the regime of tropical cyclones for the three intensity categories in the baseline 1980 − 2018,143
+and in 2050 under the high-emission scenario RCP8 .5 (compatible with policies in 2020 [54]). For the future144
+climate, we consider the outcome from 4 Global Circulation Mode ls (GCMs) and use the median return145
+period at each grid point as described in Section 3. For each ecos ystem, we compare the change in the146
+5
+Figure 4: Illustration of the eﬀect of a doubling of frequency on an ecosys tem equilibrium state. At
+a larger frequency, the system cannot recover and is eventually pus hed into a new state. A simple
+sigmoidal recovery is assumed for illustrative purposes.
+average tropical cyclone frequency. Taking into account their v ulnerability, we then identify ecosystems that147
+are likely to be at risk. We assume that a change in frequency can le ad to a change in ecosystem composition148
+as the dynamical processes required for recovery are not anymore sync hronized with the disturbance regime149
+[5, 18, 25, 36, 52]. In general, if the average frequency of tropica l cyclones in a given region increases150
+signiﬁcantly, the system would be in turn disturbed in a way tha t does not allow a return to the initial151
+state as illustrated in Fig 4. In addition, for dependent region s, a signiﬁcant decrease can also change the152
+ecosystem’s composition as the vital disturbance is reduced.153
+We ﬁnd that 204 ecoregions see a signiﬁcant increase in frequenc y, 5 are confronted with a signiﬁcant154
+decrease in frequency, and 28 are newly aﬀected. While the signi ﬁcant decrease in frequency is conﬁned155
+to the Caribbeans and the larger Antilles, the increase is found a ll over the world (see Fig. 5): in Ocea-156
+nia, Madagascar and the East-African coast, the Arabian penins ula, North-West Africa and the Iberian157
+peninsula, South-East and North-West North America, the Caribb eans, Northern South America, the Pa-158
+ciﬁc islands, East Asia, and the Philippines. Overall, the co mbined surface of all ecosystems at risk from159
+tropical cyclones in a changing climate amounts to 13% of the c ombined area of all land ecosystems world-160
+wide. Of these, the newly aﬀected ones contribute 3% of the tot al area. A detailed list of all values for all161
+ecoregions is given in Supplementary Table 2.162
+On average, ecosystems at risk from tropical cyclones in a changin g climate are subject to a 55%, 98%,163
+and 84% increase in frequency for the low, middle, and high catego ry storms, respectively. This results for164
+instance in a reduction of the average time for recovery of resilien t systems to high-intensity storms from 19165
+to 12 years (c.f. Table 1). Geographically speaking, for the high -intensity storms, only ecoregions around166
+China, Japan, Korea, and the Philippines are projected to be at ris k from a signiﬁcant frequency increase.167
+Newly aﬀected and at-risk regions are found in Madagascar, some Pa ciﬁc islands, and in the China, Japan,168
+and Korea regions. For middle-intensity storms, the same region s are potentially aﬀected. Furthermore,169
+regions in North America and Oceania are newly aﬀected, while the Paciﬁc islands and the Antilles are at170
+risk from an increase in frequency. For low-intensity storms, large a reas are newly aﬀected or subject to171
+a signiﬁcant increase in frequency. Moreover, few dependent ecoreg ions in the Caribbeans are confronted172
+with a signiﬁcant decrease in frequency. Detailed maps for low, mi ddle, and high-intensity storms are shown173
+in Supplementary Fig. 5.174
+6
+Figure 5: Map of the change in tropical cyclone frequency for all ecosystem s at risk in 2050 under
+RCP8.5 compared to their vulnerability as deﬁned by the tropical cyc lone activity in 1980 − 2018
+(see Supplementary Fig. 4, Supplementary Fig. 1, and Table 2). Those ecor egions for which the
+frequency increases from below 0 .004 (return period of 250 years) to above this threshold are labeled
+as newly aﬀected.
+Storm intensity Year Resilient [y] Dependent [y] Vulnerable [y]
+Low 2020 14 11 88
+2050 12 8 77
+Medium 2020 20 13 103
+2050 11 9 89
+High 2020 19 17 117
+2050 12 9 109
+Table 1: Table of the average recovery time in years per storm category for t he historical baseline
+1980−2018 and the average storm return period in years in 2050 under climate proj ections RCP8.5.
+In all cases, storms are more frequent on average in 2050 than in 2020.
+7
+3 Data and Methods175
+3.1 Tropical cyclones176
+Tropical cyclones are described as a probabilistic set of wind ﬁe lds of maximum 1-minute sustained winds177
+at 10 meters above the ground. Thus, in this study, we consider t he eﬀect of tropical cyclone winds on178
+ecosystems and do only implicitly consider the precipitatio ns, surges, landslides, or ﬂoods that often are179
+caused by tropical cyclones. The wind ﬁelds are computed using the Holland model [58] from a probabilistic180
+tropical cyclone tracks (time series of the position, pressure, a nd maximum wind speed of the center of the181
+cyclones) as implemented in the risk modeling platform CLIMADA [51] . The probabilistic set of tracks182
+is obtained from the STORM model [53], a statistical model base d on the observational data from the183
+IBTrACS [59] database (c.f. Fig. 2). As the baseline we conside r a set of 10 , 000 years of simulated tropical184
+cyclones for climate conditions representative for the period 19 80 − 2018 [53] (for a total of 144 , 000 tracks185
+worldwide). We also consider 10 , 000 years of simulated tropical cyclones for climate condition s in 2050186
+under the emission scenario RCP8 .5 [13]. In both cases, each storm in the 10 , 000 year set is thus assigned187
+an annual occurrence probability of 1 /10, 000. For the future scenario, we consider the outputs from four188
+global circulation models (i.e. four times 10 , 000 years of data). All the metrics reported in the results189
+section are then the median over all four models.190
+Since maximum sustained wind speed from tropical cyclones can ra nge from 20m/s to 100m/s or more,191
+their destructive power can vary a lot. Thus, we divide the tropi cal cyclone wind intensities into three192
+categories low (L), middle (M), and high (H) based on the Saﬃr-S impson scale (SSHWS):193
+• Low : 33 − 49m/s - SSHWS 1-2194
+• Middle: 49 − 58m/s - SSHWS 3195
+• High: ≥ 58 m/s - SSHWS 4-5196
+These correspond to the percentiles 72, 93, and 98 of the used STO RM dataset wind speeds for the current197
+climate (see Supplementary Fig. 2). For each intensity categ ory, at each grid location (global resolution of198
+150arcsec on land), we then obtain the average annual occurrence probability (frequency), or equivalently199
+its inverse, the average return period. Note that there are between 1 00 − 150 storms per year on the planet.200
+The average return periods for each intensity category for the basel ine climate are shown in Supplemen-201
+tary Fig. 1. We do not consider return periods larger than 250 years h ere. We assume that ecosystems, and202
+in particular other environmental factors such as temperature, hu midity, or precipitation, as well as Human203
+factors such as urbanization, change on timescales much faster t han would be required to be in dynamical204
+equilibrium with events that occur less than with 0 .4% probability, i.e. with a return period of 250 years.205
+3.2 Vulnerability of ecosystems206
+It is assumed that an ecosystem must be in a stable equilibrium with the external perturbations acting on207
+it. To describe the vulnerability of ecosystems to tropical cyc lones, we thus use a purely statistical approach208
+based on the description of the tropical cyclone’s temporal pat terns. This approach is strongly inspired by209
+the well-established framework for extreme weather risk analysis [2, 51].210
+We base the logic of the classiﬁcation on the following argumen ts. An ecosystem is vulnerable to211
+tropical cyclone winds of a given intensity if it has rarely been exposed to disturbance and thus when it212
+is, the damages have potentially strong consequences and mig ht strongly modify the ecosystem which has213
+not evolved resilience and recovery mechanism. A resilient ecos ystem has frequently been exposed to the214
+disturbance and thus has evolved to recover and cope with the ne gative eﬀects on time scales of at least the215
+average disturbance frequency. A dependent ecosystem is experie ncing regular tropical cyclones on almost216
+the entirety of its territory. Or, conversely, the ecosystems exis t only there where there are regular tropical217
+cyclones passing. Hence, it is likely that tropical cyclones play a key role in maintaining the ecosystems in218
+their current state.219
+8
+Vulnerability Area aﬀected Recovery time (years) Frequency change risk
+Resilient 20 − 80% 1 − 20 +20%
+Dependent > 80% 1 − 20 ±5%
+Vulnerable < 20% > 20 +10%
+Table 2: Parametrization of the vulnerability and the climate change risk indicators. Resilient
+ecosystems have a minimum average return period of 20 years over 20 − 80% of their area, and an
+increase of 20% of the return period over that area results in climate r isk. Dependent ecosystems
+have a minimum average return period of 20 years over 80 − 100% of their area, and an increase
+or decrease by 5% of the return period over that area results in climat e risk. Ecosystems are
+vulnerable otherwise, and an increase by 10% of the return period over at least 20% of the area
+results in climate risk. Ecosystems with return periods longer t han 250 years are always vulnerable,
+and newly at risk if the frequency crosses this threshold.
+Based on these deﬁnitions and using the tropical cyclone freque ncy maps shown in Supplementary Fig. 1,220
+we classify the ecoregions’ vulnerability according to the follo wing parametrization. A regular disturbance221
+is assumed if it is with a frequency of a least f = 1 /20 years. The surface area threshold of resilience is222
+xr = 0.2 of the total territory and for dependency xd = 0.8. Thus, an ecosystem is ( dependent) on tropical223
+cyclones if at least 80% of its territory is aﬀected on average at l east once in twenty years, i.e., with a return224
+period of 20 years. An ecosystem is resilient to tropical cyclones if between 20% − 80% of its territory is225
+aﬀected on average at least once in twenty years. An ecosystem i s vulnerable otherwise.226
+Concretely, we compute the percentile distribution of the avera ge tropical cyclone frequency per category227
+of all the grid points inside of the polygons deﬁning each ecore gion. Then, for each intensity category, we228
+consider the 20 th and 80 th percentiles p20 and p80. If p20 > f , then the system is dependent, if p80 > f the229
+system is resilient, and vulnerable otherwise.230
+3.3 Climate Change231
+For the climate change assessment, we use the probabilistic s torm dataset for 2050 under RCP8.5 as232
+described in Sec. 3.1 to compute the average frequency for low, mid dle, and high-intensity storms at each233
+grid point for each of the four climate models. For each ecoregion , we then compute the median of the234
+percentile distribution pc of the average tropical cyclone frequency per category. To determi ne whether235
+an ecosystem is at risk, we compare these percentiles pc with the percentiles p for the historical climate236
+depending on their vulnerability. For vulnerable and resilien t systems, we compare p80 and pc
+80, while for237
+dependent systems it is p20 and pc
+20. We then compute the relative ratio r = ( p − pc)/p to obtain the238
+relative change in tropical cyclone frequency. Ecosystems are th en classiﬁed as at risk if the ratio r > 0.1239
+for vulnerable systems, r > 0.2 for resilient systems, and r > 0.05; r < −0.05 for dependent systems. We240
+thus assume that resilient systems are able to cope better with an increase in frequency than vulnerable241
+ones, and we assume that dependent systems are likely ﬁne-tun ed to the storms’ perturbation and thus are242
+more sensitive to changes in frequency.243
+The thresholds, summarized in Table 2, are a clear modeling choi ce that will impact the classiﬁcation of244
+ecosystems at risk. For instance, if we consider that resilien t and dependent ecosystems require double and245
+half the relative changes as the vulnerable ones, we ﬁnd that th e number of ecosystems at risk varies from246
+240 to 190 if the thresholds change from 10% to 30% as shown in Supp lementary Fig. 6. Thus, there is a247
+certain arbitrariness in our deﬁnition of ecosystems at risk, and would strongly beneﬁt from future inputs248
+from ﬁeld studies.249
+9
+4 Discussion250
+Contrasting with many local assessments [21, 26] associated with speciﬁc events [25], here we derived poten-251
+tial vulnerability relationships between the large-scale nat ural hazards of tropical cyclones, and ecosystems252
+at a global scale. We used our approach inspired by the panarchy p rinciples [52, 60] and based on the253
+frequency patterns of the storms to characterize ecosystem vulnera bility under present climate conditions.254
+We identiﬁed ecosystems susceptible to being exposed to tran sformative pressure from tropical cyclone pat-255
+tern changes due to a warming climate as early as 2050. Thus, we ex panded the study of extreme climate256
+risks from the extensively studied socio-economic realm [2, 61– 65] to include ecosystems complementing a257
+growing body of research on the topic [17, 49, 66]. We found that cl imate change might signiﬁcantly aﬀect258
+a large number of coastal ecosystems through tropical cyclone p atterns change. Most ecosystems currently259
+exposed to tropical cyclones will be confronted with an increase in their frequency and intensity thus nar-260
+rowing the maximum boundary for their recovery. This might have se vere consequences for the ability of261
+these ecosystems to prevail under future climatic conditions a nd is likely to result in further biodiversity262
+losses [67] as is accounted for in climatic envelop models whi ch do not fully account for extreme weather263
+pattern changes [1, 68, 69]. Furthermore, this might reshape cons iderations for the viability of coastal264
+ecosystem-based adaptation measures to climate change [46, 70, 71], since the ecosystems themselves are265
+at risk of being transformed. While previous studies have done loc al or ecosystem-speciﬁc assessments or266
+projections [12, 16, 30], our study oﬀers a global assessment of ecosystem disturbances by tropical cyclones267
+under climate change.268
+The change in geographical distribution of cyclones may result in several new ecosystems being exposed,269
+in particular further away from the tropics with an increase in storms undergoing extra-tropical transitions270
+[72–75]. Forests and other coastal ecosystems at higher lati tudes are not resilient to tropical cyclones since,271
+in contrast to low latitude areas, no evolutionary forces made the m able to withstand those perturbations272
+[12]. Among the potentially newly aﬀected ecoregions, some a re located far outside of the tropics, where273
+recent tropical storms have already strongly impacted ecosystem s [39]. For those regions historically hit by274
+storms, the general projected increase in storm frequency and intens ity might cause particularly important275
+changes to ecosystems as illustrated by the recent events Ana i n Mozambique in 2022 [76] or Amphan in276
+Bangladesh in 2020 [77, 78]. A few ecosystems might in contrast have to deal with a signiﬁcant decrease277
+in frequency, which also could lead to a change in composition d ue to the disappearance of a functional278
+disturbance. This might change the natural ecosystems’ dynam ics and may inﬂuence their associated279
+biodiversity [67].280
+The major strengths of our approach are the global applicability , the exclusive use of available open-281
+data sources, the possibility to extrapolate the results to futu re climates, the computational simplicity, the282
+parametric ﬂexibility, the purely statistical basis of the app roach, the potential for direct generalization283
+to other climate hazards, and the seamless integration into th e established IPCC risk [2, 79] framework.284
+While we here concentrated on the characterization of vulnerabil ities and risk under future climates, the285
+approach also provides estimates of upper bounds to recovery tim es from the average return periods of286
+the storms (c.f. Supplementary Table 1). These can potentially inform dynamical ecosystem models [35],287
+or help ecosystem management practitioners anticipate poten tial regime changes. Furthermore, since the288
+proposed framework is seamlessly integrated into the open-source risk modeling platform CLIMADA [80],289
+it is easily applicable to any natural hazard, such as ﬂoods, ea rthquakes, extreme heat, or wildﬁres. For290
+several of these hazards, open data is readily available from the I SIMIP [81] or the CLIMADA data APIs291
+[80]. Note however that for some hazards the assessment might b e more involved since the intensity and292
+frequency might depend on the ecosystem itself – think for insta nce of wildﬁres whose ignition probability293
+depends on the available biomass fuel. This challenge could b e tackled by qualifying ecosystems not only294
+as resilient, vulnerable, or dependent but also as drivers of the hazard.295
+Our study represents one step towards a systemic, global, and lo ng-term understanding of ecosystems’296
+vulnerability to tropical cyclones. It has some limitations t hat open perspectives for more detailed quan-297
+tiﬁcation in the future. The proposed statistical approach base d on the hazard distribution alone does298
+10
+not contain any ecological function understanding as this is n ot yet feasible at the global scale [82]. Our299
+approach hinges on the assumption that ecosystems have co-ev olved with the extreme disturbances at their300
+location. However, given the major anthropogenic pressure on all planetary ecosystems in the last centuries301
+[83, 84], it is from the beginning only partially valid to assume ecosystem co-evolution with tropical cy-302
+clone disturbances. Furthermore, the fact that tropical cyclone a ctivity has ﬂuctuated over time inherently303
+requires making an arbitrary choice on the relevant timescales. We focused on timescales relevant to the304
+current rapidly changing climate. In addition, several semi-in formed, partially normative, parametrizations305
+choices had to be made, which may aﬀect the outcomes: the deﬁn ition of the storm intensity categories,306
+the choice of spatial extent for the vulnerability deﬁnitions , the choice of return period maxima for the re-307
+silient and dependent ecosystems, as well as the thresholds fo r the signiﬁcant changes in a changing climate.308
+Furthermore, we only considered the changes in the annual frequenc y distributions. Thus, we did neither309
+consider the potential eﬀects on ecosystems from a change in th e seasonality of tropical cyclones [85], nor310
+do we account for the clustering in time properties, which may foll ow multi-year patterns in several regions311
+[86]. We also did only implicitly consider the resulting storm surges, heavy precipitations, landslides, or312
+ﬂoods which would be explicitly needed for a mechanistic unde rstanding of the impacts of tropical cyclones313
+on coastal ecosystems. We further did not consider similar stro ng wind hazards such as winter storms,314
+gales, or Derechos that might co-aﬀect certain ecosystems. Fin ally, our study is bound by the limitations315
+of the STORM model itself in representing current and future tropica l cyclone activity [9, 13, 87], and is316
+bound to the speciﬁc ecoregion boundaries deﬁned by Dinerstein et al. [55].317
+In conclusion, our study shows how changes in tropical cyclon e patterns under a changing climate can318
+impact a large number of coastal ecosystems by the year 2050. T he identiﬁed potential strong impact of319
+tropical cyclone pattern changes alone indicates the need for t he more explicit inclusion of the eﬀect of320
+extreme weather hazards on global ecosystems in earth-system m odels to improve our understanding of321
+climate projections [82, 88]. In the context of ecosystem mana gement to mitigate and adapt to climate322
+change, our ﬁndings show that we need to not only consider imm ediate damages from a tropical cyclone323
+event but also think about multi-year shifts in ecosystem traje ctories in a changing climate. This includes324
+the need to better assess and report the consequences of storms fo r ecosystems at a global scale. Our study325
+does not directly allow us to conclude whether the increased ris k to ecosystems translates into a decrease326
+or an increase in ecosystem service provisions, yet based on eco system disturbance studies, a strongly327
+perturbed ecosystem is expected to be less capable of sustaini ng biodiversity, carbon storage or providing328
+ﬂood protection [89]. Considering the further pressure on coastal ecosystems from both average climate329
+variables changes [1] and anthropogenic activities [83], it i s worrying to add yet another potential threat to330
+the list in the form of tropical cyclones.331
+Data Availability332
+For this study, the Python (3.8+) version of CLIMADA (3.2+) ca n be used [90]. The source code is openly333
+and freely available under the terms of the GNU General Public Lic ense Version 3[51].334
+Code Availability335
+Code to reproduce the results of this paper will be made availabl e upon acceptance.336
+Acknowledgements337
+The authors thank Christopher Fairless and are deeply grateful for h is valuable input in the early develop-338
+ment stage of this research article. This project has received fundi ng from the European Union’s Horizon339
+2020 research and innovation program (grant agreement No 820712).340
+11
+Author contributions statement341
+C.M.K. conceived and designed the study, analyzed the result s, and wrote the manuscript. L.P. contributed342
+to the writing, interpretation of the results, and general framing o f the study. L.V. contributed an early343
+study. D.N.B. provided input on the overall framework. All authors ( L.P., D.N.B., L.V., C.M.K.) reviewed344
+and edited the manuscript.345
+Competing interests346
+The authors declare no competing interests.347
+References348
+1. Warren, R., Price, J., Graham, E., Forstenhaeusler, N. & VanDerWa l, J. The Projected Eﬀect on349
+Insects, Vertebrates, and Plants of Limiting Global Warming to 1.5°C Rather than 2 °C. Science 360,350
+791–795. (2023) (May 2018).351
+2. IPCC. Climate Change 2022: Impacts, Adaptation and Vulnerabilit y 3–33. isbn: 978-1-00-932584-4352
+(Cambridge University Press, Cambridge, UK and New York, USA, 202 2).353
+3. Warren, R., Price, J. & Jenkins, R. in The Impacts of Climate Change (ed Letcher, T. M.) 85–114354
+(Elsevier, Jan. 2021). isbn: 978-0-12-822373-4. (2023).355
+4. Kitzberger, T., Batllori, E. & Lloret, F. in Reference Module in Life Sciences (Elsevier, Jan. 2022).356
+isbn: 978-0-12-809633-8. (2023).357
+5. Parmesan, C., Root, T. L. & Willig, M. R. Impacts of Extreme We ather and Climate on Terrestrial358
+Biota. Bull. Amer. Meteor. Soc. 81, 443–450. issn: 0003-0007, 1520-0477. (2023) (Mar. 2000).359
+6. Forzieri, G. et al. Emergent Vulnerability to Climate-Driven Disturbances in Europe an Forests. Nat360
+Commun 12, 1081. issn: 2041-1723. (2023) (Feb. 2021).361
+7. Knutson, T. et al. Tropical Cyclones and Climate Change Assessment: Part I: Detec tion and Attri-362
+bution. Bull. Amer. Meteor. Soc. 100, 1987–2007. issn: 0003-0007. (2020) (Oct. 2019).363
+8. Knutson, T. et al. Tropical Cyclones and Climate Change Assessment: Part II: Proje cted Response to364
+Anthropogenic Warming. Bull. Amer. Meteor. Soc. 101, E303–E322. issn: 0003-0007. (2020) (Mar.365
+2020).366
+9. Meiler, S., Ciullo, A., Kropf, C. M., Emanuel, K. & Bresch, D. Unraveling Unknowns of Future Tropical367
+Cyclone Risks Preprint. Mar. 2023. (2023).368
+10. Xi, W., Peet, R. K., Lee, M. T. & Urban, D. L. Hurricane Disturbanc es, Tree Diversity, and Succession369
+in North Carolina Piedmont Forests, USA. J. For. Res. 30, 219–231. issn: 1007-662X, 1993-0607.370
+(2021) (Feb. 2019).371
+11. Mabry, C. M. et al. Typhoon Disturbance and Stand-level Damage Patterns at a Subtrop ical Forest372
+in Taiwan1. Biotropica 30, 238–250. issn: 0006-3606, 1744-7429. (2021) (June 1998).373
+12. Patrick, C. J. et al. A General Pattern of Trade-Oﬀs between Ecosystem Resistance an d Resilience to374
+Tropical Cyclones. Science Advances 8, eabl9155. (2023) (Mar. 2022).375
+13. Bloemendaal, N. et al. A Globally Consistent Local-Scale Assessment of Future Tropi cal Cyclone Risk.376
+Science Advances 8, eabm8438. (2022) (Apr. 2022).377
+14. Lin, J., Emanuel, K. & Vigh, J. L. Forecasts of Hurricanes Usi ng Large-Ensemble Outputs. Weather378
+and Forecasting 35, 1713–1731. issn: 1520-0434, 0882-8156. (2021) (July 2020).379
+12
+15. Geiger, T., G¨ utschow, J., Bresch, D. N., Emanuel, K. & Friele r, K. Double Beneﬁt of Limiting Global380
+Warming for Tropical Cyclone Exposure. Nat. Clim. Chang. 11, 861–866. issn: 1758-6798. (2021)381
+(Oct. 2021).382
+16. Lin, T.-C., Hogan, J. A. & Chang, C.-T. Tropical Cyclone Ec ology: A Scale-Link Perspective. Trends383
+in Ecology & Evolution 35, 594–604. issn: 0169-5347. (2023) (July 2020).384
+17. Hogan, J. A. et al. A Research Framework to Integrate Cross-Ecosystem Responses to T ropical Cy-385
+clones. BioScience 70, 477–489. issn: 0006-3568. (2023) (June 2020).386
+18. Xi, W. Synergistic Eﬀects of Tropical Cyclones on Forest Eco systems: A Global Synthesis. J. For.387
+Res. 26, 1–21. issn: 1993-0607. (2023) (Mar. 2015).388
+19. Chang, C. T. et al. Impacts of Tropical Cyclones on Hydrochemistry of a Subtropical Forest. Hydrology389
+and Earth System Sciences 17, 3815–3826. issn: 1027-5606. (2023) (Oct. 2013).390
+20. Kunedzimwe, F. et al. in Cyclones in Southern Africa: Volume 3: Implications for the Sustainable391
+Development Goals (eds Nhamo, G. & Chikodzi, D.) 229–244 (Springer International Publishing,392
+Cham, 2021). isbn: 978-3-030-74303-1. (2023).393
+21. Stas, S. M. et al. Implications of Tropical Cyclones on Damage and Potential Rec overy and Restoration394
+of Logged Forests in Vietnam. Philosophical Transactions of the Royal Society B: Biologi cal Sciences395
+378, 20210081. (2023) (Nov. 2022).396
+22. Smith, C. G., Cable, J. E. & .Martin, J. B. Episodic High Int ensity Mixing Events in a Subterranean397
+Estuary: Eﬀects of Tropical Cyclones. Limnology and Oceanography 53, 666–674. issn: 1939-5590.398
+(2023) (2008).399
+23. Radabaugh, K. R., Dontis, E. E., Chappel, A. R., Russo, C. E . & Moyer, R. P. Early Indicators of400
+Stress in Mangrove Forests with Altered Hydrology in Tampa Bay, Fl orida, USA. Estuarine, Coastal401
+and Shelf Science 254, 107324. issn: 0272-7714. (2023) (June 2021).402
+24. Steneck, R. S. et al. Managing Recovery Resilience in Coral Reefs Against Climate-I nduced Bleaching403
+and Hurricanes: A 15 Year Case Study From Bonaire, Dutch Caribbean. Frontiers in Marine Science404
+6. issn: 2296-7745. https://www.frontiersin.org/articles/10.3389/fmars.2019.00265 (2023)405
+(2019).406
+25. Willig, M. R. et al. Cross-Scale Responses of Biodiversity to Hurricane and Anthropo genic Disturbance407
+in a Tropical Forest. Ecosystems 10, 824–838. issn: 1435-0629. (2023) (Aug. 2007).408
+26. Goulding, W., Moss, P. T. & McAlpine, C. A. Cascading Eﬀec ts of Cyclones on the Biodiversity of409
+Southwest Paciﬁc Islands. Biological Conservation 193, 143–152. issn: 0006-3207. (2023) (Jan. 2016).410
+27. Goldberg, L., Lagomasino, D., Thomas, N. & Fatoyinbo, T. Gl obal Declines in Human-Driven Man-411
+grove Loss. Global Change Biology 26, 5844–5855. issn: 1365-2486. (2023) (2020).412
+28. do Amaral, C. H. et al. Drivers of Mangrove Vulnerability and Resilience to Tropical Cycl ones in the413
+North Atlantic Basin. Science of The Total Environment, 165413. issn: 0048-9697. (2023) (July 2023).414
+29. Chen, Q., Wang, H., Wang, L., Tawes, R. & Rollman, D. Predict ing Impacts of Tropical Cyclones and415
+Sea-Level Rise on Beach Mouse Habitat. Journal of Coastal Research, 12–19. issn: 0749-0208. (2023)416
+(Dec. 2014).417
+30. Cole, L. E. S., Bhagwat, S. A. & Willis, K. J. Recovery and Re silience of Tropical Forests after418
+Disturbance. Nat Commun 5, 3906. issn: 2041-1723. (2023) (May 2014).419
+31. Hogan, J. A. et al. The Frequency of Cyclonic Wind Storms Shapes Tropical Forest Dyna mism and420
+Functional Trait Dispersion. Forests 9, 404. issn: 1999-4907. (2023) (July 2018).421
+32. Gutschick, V. P. & BassiriRad, H. Biological Extreme Event s: A Research Framework. Eos, Transac-422
+tions American Geophysical Union 91, 85–86. issn: 2324-9250. (2023) (2010).423
+13
+33. Horvitz, C. C., Tuljapurkar, S. & Pascarella, J. B. Plant–Anim al Interactions in Random Environ-424
+ments: Habitat-Stage Elasticity, Seed Predators, and Hurrican es. Ecology 86, 3312–3322. issn: 1939-425
+9170. (2023) (2005).426
+34. Katz, R. W., Brush, G. S. & Parlange, M. B. Statistics of Extre mes: Modeling Ecological Disturbances.427
+Ecology 86, 1124–1134. issn: 1939-9170. (2023) (2005).428
+35. Rypkema, D. C., Horvitz, C. C. & Tuljapurkar, S. How Climate Aﬀe cts Extreme Events and Hence429
+Ecological Population Models. Ecology 100, e02684. issn: 1939-9170. (2023) (2019).430
+36. de Gouvenain, R. C. & Silander Jr., J. A. Do Tropical Storm Regi mes Inﬂuence the Structure of431
+Tropical Lowland Rain Forests? Biotropica 35, 166–180. issn: 1744-7429. (2023) (2003).432
+37. Scheﬀer, M., Carpenter, S., Foley, J. A., Folke, C. & Walker, B . Catastrophic Shifts in Ecosystems.433
+Nature 413, 591–596. issn: 1476-4687. (2023) (Oct. 2001).434
+38. Vink, K. & Ahsan, M. N. The Beneﬁts of Cyclones: A Valuatio n Approach Considering Ecosystem435
+Services. Ecological Indicators 95, 260–269. issn: 1470-160X. (2023) (Dec. 2018).436
+39. Ibanez, T. et al. Globally Consistent Impact of Tropical Cyclones on the Struct ure of Tropical and437
+Subtropical Forests. Journal of Ecology 107, 279–292. issn: 1365-2745. (2023) (2019).438
+40. Simard, M. et al. Mangrove Canopy Height Globally Related to Precipitation, Te mperature and439
+Cyclone Frequency. Nature Geosci 12, 40–45. issn: 1752-0908. (2023) (Jan. 2019).440
+41. Vandermeer, J., Boucher, D., Perfecto, I. & de la Cerda, I. G. A The ory of Disturbance and Species441
+Diversity: Evidence from Nicaragua After Hurricane Joan. Biotropica 28, 600–613. issn: 0006-3606.442
+JSTOR: 2389100. (2023) (1996).443
+42. Rogers, C. S. Hurricanes and Coral Reefs: The Intermediate Distu rbance Hypothesis Revisited. Coral444
+Reefs 12, 127–137. issn: 1432-0975. (2023) (Nov. 1993).445
+43. Hall, A. R. et al. Diversity–Disturbance Relationships: Frequency and Intensity Interact. Biology446
+Letters 8, 768–771. (2023) (May 2012).447
+44. Connell, J. H. Diversity in Tropical Rain Forests and Coral Ree fs. Science 199, 1302–1310. (2023)448
+(Mar. 1978).449
+45. Chesson, P. & Huntly, N. The Roles of Harsh and Fluctuating Conditions in the Dynamics of Ecological450
+Communities. The American Naturalist 150, 519–553. issn: 0003-0147. (2023) (Nov. 1997).451
+46. H¨ ulsen, S. et al. Global Coastal Protection Beneﬁts of Ecosystems - Past, Prese nt, and under Climate452
+Change. https://eartharxiv.org/repository/view/5590/ (2023) (June 2023).453
+47. Barbier, E. B. et al. The Value of Estuarine and Coastal Ecosystem Services. Ecological Monographs454
+81, 169–193. issn: 1557-7015. (2023) (2011).455
+48. Blythe, J. et al. Frontiers in Coastal Well-Being and Ecosystem Services Researc h: A Systematic456
+Review. Ocean & Coastal Management 185, 105028. issn: 0964-5691. (2023) (Mar. 2020).457
+49. Solow, A. R. On Detecting Ecological Impacts of Extreme Cli mate Events and Why It Matters.458
+Philosophical Transactions of the Royal Society B: Biologi cal Sciences 372, 20160136. (2023) (May459
+2017).460
+50. UNDRR. Sendai Framework for Disaster Risk Reduction 2015-2030 tech. rep. (UNDRR, 2015).461
+https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030462
+(2021).463
+51. Aznar-Siguan, G. & Bresch, D. N. CLIMADA v1: A Global Weather and Climate Risk Assessment464
+Platform. Geoscientiﬁc Model Development 12, 3085–3097. issn: 1991-959X. (2020) (July 2019).465
+14
+52. Holling, C. S., Gunderson, L. H. & Knowledgebase, S. A. a. N . R. M. ( Panarchy: Understanding466
+Transformations in Human and Natural Systems isbn: 978-1-55963-857-9. https://vtechworks.lib.467
+vt.edu/handle/10919/65531 (2023) (Washington, D.C.: Island Press, 2002).468
+53. Bloemendaal, N. et al. Generation of a Global Synthetic Tropical Cyclone Hazard Datase t Using469
+STORM. Sci Data 7, 40. issn: 2052-4463. (2021) (Feb. 2020).470
+54. Schwalm, C. R., Glendon, S. & Duﬀy, P. B. RCP8.5 Tracks Cumul ative CO2 Emissions. Proceedings471
+of the National Academy of Sciences 117, 19656–19657. (2023) (Aug. 2020).472
+55. Dinerstein, E. et al. An Ecoregion-Based Approach to Protecting Half the Terrestrial Re alm. Bio-473
+Science 67, 534–545. issn: 0006-3568. (2021) (June 2017).474
+56. Delaporte, B., Ibanez, T., Despinoy, M., Mangeas, M. & Menke s, C. Tropical Cyclone Impact and475
+Forest Resilience in the Southwestern Paciﬁc. Remote Sensing 14, 1245. issn: 2072-4292. (2023) (Jan.476
+2022).477
+57. Chen, Y.-Y. & Luyssaert, S. Tropical Cyclones Facilitate R ecovery of Forest Leaf Area from Dry478
+Spells in East Asia. Biogeosciences 20, 349–363. issn: 1726-4170. (2023) (Jan. 2023).479
+58. Holland, G. A Revised Hurricane Pressure–Wind Model. Mon. Wea. Rev. 136, 3432–3445. issn: 0027-480
+0644. (2018) (Sept. 2008).481
+59. Knapp, K. R., Kruk, M. C., Levinson, D. H., Diamond, H. J. & Neu mann, C. J. The International482
+Best Track Archive for Climate Stewardship (IBTrACS): Unifying Tro pical Cyclone Data. Bulletin of483
+the American Meteorological Society 91, 363–376. issn: 0003-0007, 1520-0477. (2022) (Mar. 2010).484
+60. Allen, C. R., Angeler, D. G., Garmestani, A. S., Gunderson, L. H. & Holling, C. S. Panarchy: Theory485
+and Application. Ecosystems 17, 578–589. issn: 1435-0629. (2023) (June 2014).486
+61. M¨ uhlhofer, E., Kropf, C. M., Riedel, L., Bresch, D. N. & Koks, E. E. OpenStreetMap for Multi-Faceted487
+Climate Risk Assessments. https://eartharxiv.org/repository/view/5615/ (2023) (June 2023).488
+62. Abbass, K. et al. A Review of the Global Climate Change Impacts, Adaptation, a nd Sustainable489
+Mitigation Measures. Environ Sci Pollut Res 29, 42539–42559. issn: 1614-7499. (2023) (June 2022).490
+63. M¨ uhlhofer, E., Koks, E. E., Kropf, C. M., Sansavini, G. & Bresc h, D. N. A Generalized Natural491
+Hazard Risk Modelling Framework for Infrastructure Failure Cascades . Reliability Engineering &492
+System Safety 234, 109194. issn: 0951-8320. (2023) (June 2023).493
+64. Pﬂeiderer, P. et al. Reversal of the Impact Chain for Actionable Climate Information . https : / /494
+eartharxiv.org/repository/view/5883/ (2023) (Sept. 2023).495
+65. Lange, S. et al. Projecting Exposure to Extreme Climate Impact Events Across Six E vent Categories496
+and Three Spatial Scales. Earth’s Future 8, e2020EF001616. issn: 2328-4277. (2023) (2020).497
+66. Anderegg, W. R. L. et al. A Climate Risk Analysis of Earth’s Forests in the 21st Century. Science498
+377, 1099–1103. (2023) (Sept. 2022).499
+67. Fibich, P. et al. Long-Term Tropical Cyclones Activity Shapes Forest Structure an d Reduces Tree500
+Species Diversity of U.S. Temperate Forests. Science of The Total Environment 884, 163852. issn:501
+0048-9697. (2023) (Aug. 2023).502
+68. Pearson, R. G. & Dawson, T. P. Predicting the Impacts of Clima te Change on the Distribution of503
+Species: Are Bioclimate Envelope Models Useful? Global Ecology and Biogeography 12, 361–371. issn:504
+1466-8238. (2023) (2003).505
+69. Watling, J. I., Brandt, L. A., Mazzotti, F. J. & Roma˜ nach, S. S. Use and Interpretation of Climate506
+Envelope Models: A Practical Guide tech. rep. (University of Florida, 2013). https://pubs.usgs.507
+gov/publication/70048487 (2023).508
+15
+70. Reguero, B. G., Beck, M. W., Bresch, D. N., Calil, J. & Meliane , I. Comparing the Cost Eﬀectiveness509
+of Nature-Based and Coastal Adaptation: A Case Study from the Gu lf Coast of the United States.510
+PLoS ONE 13, e0192132. issn: 1932-6203. (2020) (Apr. 2018).511
+71. Chaplin-Kramer, R. et al. Mapping the Planet’s Critical Natural Assets. Nat Ecol Evol 7, 51–61. issn:512
+2397-334X. (2023) (Jan. 2023).513
+72. Moon, I.-J., Kim, S.-H. & Chan, J. C. L. Climate Change and Tropical Cyclone Trend. Nature 570,514
+E3–E5. issn: 1476-4687. (2023) (June 2019).515
+73. Ginesta, M., Yiou, P., Messori, G. & Faranda, D. A Methodolog y for Attributing Severe Extratropical516
+Cyclones to Climate Change Based on Reanalysis Data: The Case Study of Storm Alex 2020. Clim517
+Dyn 61, 229–253. issn: 1432-0894. (2023) (July 2023).518
+74. Chang, E. K. M. & Yau, A. M. W. Northern Hemisphere Winter Storm Track Trends since 1959519
+Derived from Multiple Reanalysis Datasets. Clim Dyn 47, 1435–1454. issn: 1432-0894. (2023) (Sept.520
+2016).521
+75. Korznikov, K., Kislov, D., Doleˇ zal, J. & Altman, J. Poleward Migration of Tropical Cyclones Induced522
+Severe Disturbance of Boreal Forest above 50 °. Science of The Total Environment 890, 164376. issn:523
+0048-9697. (2023) (Sept. 2023).524
+76. Singh, M. & Schoenmakers, E. Comparative Impact Analysis o f Cyclone Ana in the Mozambique525
+Channel Using Satellite Data. Applied Sciences 13, 4519. issn: 2076-3417. (2023) (Jan. 2023).526
+77. Sharma, S., Suwa, R., Ray, R. & Mandal, M. S. H. Successive C yclones Attacked the World’s Largest527
+Mangrove Forest Located in the Bay of Bengal under Pandemic. Sustainability 14, 5130. issn: 2071-528
+1050. (2023) (Jan. 2022).529
+78. Mondal, P., Dutta, T., Qadir, A. & Sharma, S. Radar and Optica l Remote Sensing for near Real-Time530
+Assessments of Cyclone Impacts on Coastal Ecosystems. Remote Sensing in Ecology and Conservation531
+8, 506–520. issn: 2056-3485. (2023) (2022).532
+79. Field, C. et al. in Climate Change 2014: Impacts, Adaptation, and Vulnerabili ty. Part A: Global and533
+Sectoral Aspects. Contribution of Working Group II to the Fi fth Assessment Report of the Intergov-534
+ernmental Panel on Climate Change 34 (Cambridge University Press, Cambridge, 2014).535
+80. CLIMADA. CLIMADA Data API 2023. https://climada.ethz.ch/ (2023).536
+81. PIK. ISIMIP Repository 2023. https://data.isimip.org/ (2023).537
+82. De Hertog, S. J. et al. The Biogeophysical Eﬀects of Idealized Land Cover and Land M anagement538
+Changes in Earth System Models. Earth System Dynamics 14, 629–667. issn: 2190-4979. (2023) (June539
+2023).540
+83. Sanderson, E. W. et al. The Human Footprint and the Last of the Wild: The Human Footprin t Is541
+a Global Map of Human Inﬂuence on the Land Surface, Which Sugges ts That Human Beings Are542
+Stewards of Nature, Whether We like It or Not. BioScience 52, 891–904. issn: 0006-3568. (2023) (Oct.543
+2002).544
+84. Mu, H. et al. A Global Record of Annual Terrestrial Human Footprint Dataset from 20 00 to 2018.545
+Sci Data 9, 176. issn: 2052-4463. (2023) (Apr. 2022).546
+85. Visser, M. in United Nations Environment Programme Frontiers Reports (ed Sarasas, P.) 41–58547
+(United Nations Environment Programme (UNEP), Nairobi, Feb. 20 22). isbn: 978-92-807-3917-6.548
+https://www.unep.org/resources/frontiers-2022-noise-blazes-and-mismatches (2023).549
+86. Mumby, P. J., Vitolo, R. & Stephenson, D. B. Temporal Cluste ring of Tropical Cyclones and Its550
+Ecosystem Impacts. Proceedings of the National Academy of Sciences 108, 17626–17630. (2023) (Oct.551
+2011).552
+16
+87. Meiler, S. et al. Intercomparison of Regional Loss Estimates from Glob al Synthetic Tropical Cyclone553
+Models Preprint (In Review, Mar. 2022). (2022).554
+88. Eyring, V. et al. Overview of the Coupled Model Intercomparison Project Phase 6 (CM IP6) Exper-555
+imental Design and Organization. Geoscientiﬁc Model Development 9, 1937–1958. issn: 1991-959X.556
+(2023) (May 2016).557
+89. Barbier, E. B. Marine Ecosystem Services. Current Biology 27, R507–R510. issn: 09609822. (2023)558
+(June 2017).559
+90. Siguan, G. A. et al. CLIMADA-project/Climada python: V4.0.1. (2023) (Sept. 2023).560
+17
+Supplementary Files
+This is a list of supplementary  les associated with this preprint. Click to download.
+Table1.csv
+Table2.csv
+supp.pdf

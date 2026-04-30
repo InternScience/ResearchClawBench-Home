@@ -1,0 +1,24 @@
+{
+  "python": "3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]",
+  "modules": {
+    "torch": false,
+    "numpy": true,
+    "pandas": true,
+    "sklearn": true,
+    "matplotlib": true,
+    "seaborn": true,
+    "networkx": false,
+    "scipy": true,
+    "PyPDF2": false,
+    "pdfplumber": false,
+    "shap": false
+  },
+  "readpdf_tool": "failed: unexpected pdf result type NoneType; fallback to local PDF text extraction attempted",
+  "post_install_modules": {
+    "torch": false,
+    "torch_geometric": false,
+    "PyPDF2": false,
+    "shap": false,
+    "networkx": false
+  }
+}

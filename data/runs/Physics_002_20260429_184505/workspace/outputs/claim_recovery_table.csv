@@ -1,0 +1,6 @@
+claim,supporting_artifact,evidence
+All XEB fidelity estimates are computed on exact count/probability key matches.,outputs/data_overview.json; outputs/method_fidelity_checklist.json,550 paired instances; matched-key invariant = True.
+"For N=40, mean XEB fidelity decays over the measured depth range.",outputs/depth_summary.csv; report/images/xeb_by_depth.png,Depth summary contains mean_xeb and ci95_across_instances for d=8..20.
+"At d=12, subset-XEB is available across N=16,24,32,40 and supports an N-scan.",outputs/n_scan_summary.csv; report/images/n_scan_xeb.png,n_scan_summary.csv gives one row for each available N at d=12.
+MB/Transport files validate the separate ideal-bitstring success-rate workflow but do not by themselves provide ideal probabilities for XEB.,outputs/benchmark_success_estimates.csv; report/images/benchmark_success.png,Counts are compared with ideal_bitstring JSON files to compute direct success rates.
+A full classical-approximability boundary cannot be re-derived from these files alone.,outputs/related_work_contract.json; report/report.md,Circuit topology/gate-count/classical simulation cost metadata are absent from data/.

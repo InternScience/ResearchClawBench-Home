@@ -1,0 +1,41 @@
+{
+  "arxiv_id": "2111.01152",
+  "title": "Topological Phases in AB-Stacked MoTe$_2$/WSe$_2$: $\\mathbb{Z}_2$ Topological Insulators, Chern Insulators, and Topological Charge Density Waves",
+  "authors": [
+    "Haining Pan",
+    "Ming Xie",
+    "Fengcheng Wu",
+    "Sankar Das Sarma"
+  ],
+  "system": "AB-stacked MoTe2/WSe2 moire heterobilayer, exact 180 degree twist",
+  "scientific_context_from_abstract": "We present a theory on the quantum phase diagram of AB-stacked MoTe$_2$/WSe$_2$ using a self-consistent Hartree-Fock calculation performed in the plane-wave basis, motivated by the observation of topological states in this system. At filling factor $\\nu=2$ (two holes per moir\\'e unit cell), Coulomb interaction can stabilize a $\\mathbb{Z}_2$ topological insulator by opening a charge gap. At $\\nu=1$, the interaction induces three classes of competing states, spin density wave states, an in-plane ferromagnetic state, and a valley polarized state, which undergo first-order phase transitions tuned by an out-of-plane displacement field. The valley polarized state becomes a Chern insulator for certain displacement fields. Moreover, we predict a topological charge density wave forming a honeycomb lattice with ferromagnetism at $\\nu=2/3$. Future directions on this versatile system hosting a rich set of quantum phases are discussed.",
+  "key_physics": [
+    "continuum moire Hamiltonian retaining topmost valence bands from both layers",
+    "self-consistent Hartree-Fock calculation in plane-wave basis",
+    "dual-gate screened Coulomb interaction",
+    "topological phases at nu=2, nu=1, and nu=2/3"
+  ],
+  "parameters": {
+    "lattice_constants": "(a_b, a_t)=(3.575 Angstrom, 3.32 Angstrom)",
+    "moire_period_formula": "a_M=a_b a_t / |a_b-a_t|",
+    "effective_masses": "(m_b, m_t)=(0.65,0.35)m_e",
+    "kappa": "4 pi/(3 a_M) (1,0)",
+    "psi_b": "-14 degrees",
+    "representative_parameters": "(w, V_b, V_zt)=(12 meV, 7 meV, -20 meV)",
+    "gate_distance": "d=5 nm unless otherwise stated",
+    "dielectric_range": "epsilon of order 10-20",
+    "coulomb_scale_statement": "e^2/(epsilon a_M) approx 31 meV for a_M approx 4.7 nm and epsilon=10",
+    "bandwidth_statement": "hbar^2 kappa^2/(2 m_b) approx 47 meV"
+  },
+  "source_evidence": {
+    "main_tex_lines": {
+      "model_hamiltonian": "2111.01152.tex lines 55-62",
+      "potentials": "2111.01152.tex lines 71-80",
+      "coulomb_interaction": "2111.01152.tex line 95 and following"
+    },
+    "supplement_lines": {
+      "second_quantized_single_particle": "2111.01152_SM.tex lines 46-62",
+      "momentum_space_hf": "2111.01152_SM.tex lines 88-119"
+    }
+  }
+}

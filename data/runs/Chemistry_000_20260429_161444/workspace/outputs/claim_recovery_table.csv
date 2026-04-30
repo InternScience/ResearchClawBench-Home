@@ -1,0 +1,13 @@
+claim,supporting_artifact,directly_verified
+BACE: best ROC-AUC model was Fingerprint LR (0.847); KA-GNN ROC-AUC was 0.778.,outputs/main_results.csv; report/images/main_results.png,True
+BACE: KA-GNN vs GNN-MLP ROC-AUC difference was +0.017.,outputs/main_results.csv,True
+BBBP: best ROC-AUC model was GNN-MLP (0.865); KA-GNN ROC-AUC was 0.861.,outputs/main_results.csv; report/images/main_results.png,True
+BBBP: KA-GNN vs GNN-MLP ROC-AUC difference was -0.004.,outputs/main_results.csv,True
+CLINTOX: best ROC-AUC model was Fingerprint LR (0.701); KA-GNN ROC-AUC was 0.566.,outputs/main_results.csv; report/images/main_results.png,True
+CLINTOX: KA-GNN vs GNN-MLP ROC-AUC difference was +0.006.,outputs/main_results.csv,True
+HIV: best ROC-AUC model was Fingerprint LR (0.776); KA-GNN ROC-AUC was 0.708.,outputs/main_results.csv; report/images/main_results.png,True
+HIV: KA-GNN vs GNN-MLP ROC-AUC difference was -0.004.,outputs/main_results.csv,True
+MUV: best ROC-AUC model was Fingerprint LR (0.749); KA-GNN ROC-AUC was 0.721.,outputs/main_results.csv; report/images/main_results.png,True
+MUV: KA-GNN vs GNN-MLP ROC-AUC difference was +0.011.,outputs/main_results.csv,True
+KA-GNN has more parameters and slower CPU training than the compact MLP-GNN in this implementation.,outputs/efficiency_results.csv; report/images/efficiency.png,True
+MUV is extremely imbalanced and sparsely labeled across tasks.,outputs/dataset_overview.csv,True

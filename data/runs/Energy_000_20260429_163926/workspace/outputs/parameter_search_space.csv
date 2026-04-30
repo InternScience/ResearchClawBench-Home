@@ -1,0 +1,9 @@
+parameter,lower,upper,description
+R_s_pos_um,2.0,12.0,positive particle radius proxy; larger causes diffusion polarization
+R_s_neg_um,2.0,12.0,negative particle radius proxy
+k_pos_1e-11,0.5,8.0,positive reaction-rate constant scale
+k_neg_1e-11,0.5,8.0,negative reaction-rate constant scale
+R_ohm_mOhm,20.0,180.0,lumped ohmic resistance
+h_W_m2K,2.0,35.0,convective thermal coefficient
+C_th_JK,120.0,1300.0,thermal capacitance
+aging_loss_frac,0.0,0.45,capacity loss fraction

@@ -1,0 +1,52 @@
+{
+  "best_method_by_IDF1": "SparseTrack-inspired",
+  "Sparse_minus_Byte": {
+    "MOTA": 0.027750000000000052,
+    "IDF1": 0.09543107268345946,
+    "MOTP_IoU": 0.0009043944149468297,
+    "precision": 0.0003585459351591602,
+    "recall": 0.0857,
+    "ID_switches": 1159.0,
+    "fragments": 1073.0,
+    "mostly_tracked": 0.0,
+    "num_tracks_output": 97.0
+  },
+  "metrics": [
+    {
+      "method": "ByteTrack-like",
+      "MOTA": 0.08065,
+      "IDF1": 0.44242565416569607,
+      "MOTP_IoU": 0.835224512167659,
+      "precision": 0.9984369572768322,
+      "recall": 0.28745,
+      "TP": 5749,
+      "FP": 9,
+      "FN": 14251,
+      "ID_switches": 4127,
+      "fragments": 4043,
+      "mostly_tracked": 0,
+      "mostly_lost": 14,
+      "num_tracks_output": 936,
+      "mean_track_length": 6.151709401709402,
+      "runtime_seconds": 10.228570222854614
+    },
+    {
+      "method": "SparseTrack-inspired",
+      "MOTA": 0.10840000000000005,
+      "IDF1": 0.5378567268491555,
+      "MOTP_IoU": 0.8361289065826059,
+      "precision": 0.9987955032119914,
+      "recall": 0.37315,
+      "TP": 7463,
+      "FP": 9,
+      "FN": 12537,
+      "ID_switches": 5286,
+      "fragments": 5116,
+      "mostly_tracked": 0,
+      "mostly_lost": 0,
+      "num_tracks_output": 1033,
+      "mean_track_length": 7.233301064859632,
+      "runtime_seconds": 8.595686674118042
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "primary_quantitative_outputs": [
+    {
+      "artifact": "outputs/image_overview.csv",
+      "status": "satisfied",
+      "purpose": "dimensions, file sizes, and basic image metadata"
+    },
+    {
+      "artifact": "outputs/crop_metrics.csv",
+      "status": "satisfied",
+      "purpose": "global-vs-crop information-retention metrics"
+    },
+    {
+      "artifact": "outputs/roi_summary.json",
+      "status": "satisfied",
+      "purpose": "selected ROI coordinates and rationale per image"
+    },
+    {
+      "artifact": "outputs/tile_vs_task_crop.csv",
+      "status": "satisfied",
+      "purpose": "task-guided crop vs uniform tiling comparison"
+    }
+  ],
+  "required_figures": [
+    {
+      "artifact": "report/images/data_overview.png",
+      "status": "satisfied",
+      "purpose": "data overview"
+    },
+    {
+      "artifact": "report/images/roi_crops.png",
+      "status": "satisfied",
+      "purpose": "task-guided ROI crop visualization"
+    },
+    {
+      "artifact": "report/images/metric_comparison.png",
+      "status": "satisfied",
+      "purpose": "validation/comparison of global vs cropped views"
+    },
+    {
+      "artifact": "report/images/context_memory_panel.png",
+      "status": "satisfied",
+      "purpose": "global+local visual working memory analogous to V* / ViCrop integration"
+    },
+    {
+      "artifact": "report/images/tile_vs_task_crop.png",
+      "status": "satisfied",
+      "purpose": "uniform tiling vs task-guided crop comparison"
+    }
+  ],
+  "interpretability_artifacts": [
+    {
+      "artifact": "report/images/saliency_heatmaps.png",
+      "status": "satisfied",
+      "purpose": "deterministic ROI saliency/interest-map evidence"
+    }
+  ],
+  "validation_artifacts": [
+    {
+      "artifact": "outputs/dependency_check.json",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "outputs/method_fidelity_checklist.json",
+      "status": "satisfied"
+    },
+    {
+      "artifact": "outputs/claim_recovery_table.csv",
+      "status": "satisfied"
+    }
+  ]
+}

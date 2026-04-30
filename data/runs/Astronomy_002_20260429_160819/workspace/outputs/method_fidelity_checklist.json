@@ -1,0 +1,16 @@
+{
+  "named_method": "Generalized least squares / covariance-weighted Local Distance Network",
+  "definition_used": "Linear distance-ladder equations y = A beta + epsilon with diagonal observational covariance W=diag(1/sigma^2); beta includes host distance moduli, SN Ia absolute magnitude, and log10(H0).",
+  "non_negotiable_steps": [
+    {"step": "Represent anchor/primary distance, calibrator, and Hubble-flow observations in one design matrix", "status": "implemented"},
+    {"step": "Weight measurements by stated uncertainties including anchor, method-anchor, photometric, and peculiar-velocity terms", "status": "implemented"},
+    {"step": "Solve covariance-weighted normal equations and propagate covariance to H0", "status": "implemented"},
+    {"step": "Run named variants by indicators/anchors/hosts and external comparison", "status": "implemented"},
+    {"step": "Full non-diagonal systematic covariance across surveys and all prompt-listed indicators", "status": "not implemented", "reason": "Minimal dataset does not contain off-diagonal covariance matrices or Miras/JAGB/SNe II/FP/TF rows."}
+  ],
+  "key_assumptions": [
+    "Host primary-distance rows are interpreted as calibrated distance moduli with additional anchor and method-anchor zero-point uncertainty added in quadrature.",
+    "Hubble flow uses cz/H0 luminosity-distance approximation because minimal data do not include cosmographic corrections.",
+    "SBF branch is analyzed only as a proxy diagnostic because SBF calibrators lack direct primary-distance rows."
+  ]
+}
