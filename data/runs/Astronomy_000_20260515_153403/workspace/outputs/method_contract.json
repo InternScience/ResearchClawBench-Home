@@ -1,0 +1,20 @@
+{
+  "task": "Bayesian constraints on ultralight bosons from black hole superradiance",
+  "method_commitments": {
+    "bayesian_framework": "Full posterior distribution ingestion via exclusion fraction and log-likelihood",
+    "superradiance_physics": "Scalar field, dominant l=m=1 mode with Detweiler (1980) growth rate",
+    "self_interaction": "Bosenova condition based on Arvanitaki & Dubovsky (2011)",
+    "upper_limits": "95% CL via delta-chi^2 = 3.84 threshold",
+    "data_sources": ["M33_X-7_samples.dat", "IRAS_09149-6206_samples.dat"]
+  },
+  "named_methods": {
+    "superradiance": "Penrose process for massive scalar fields around Kerr BHs",
+    "gravitational_atom": "Hydrogenic spectrum with fine-structure constant alpha = GM*mu/(hbar*c^3)",
+    "bosenova": "Self-interaction collapse when interaction energy exceeds gravitational binding"
+  },
+  "fallbacks": {
+    "superradiance_rate": "Used analytic l=m=1 approximation from Detweiler (1980)",
+    "multi_mode": "Only l=m=1 considered; noted as limitation",
+    "binary_effects": "Level mixing not included; noted as limitation"
+  }
+}

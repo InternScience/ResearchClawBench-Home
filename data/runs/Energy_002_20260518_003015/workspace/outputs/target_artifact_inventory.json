@@ -1,0 +1,23 @@
+"""
+Target artifact inventory for the African green hydrogen LCOH study.
+"""
+{
+  "primary_quantitative": [
+    {"artifact": "lcoh_per_site.csv", "description": "Levelized cost of hydrogen (€/kg) per hex site, broken down by cost component, for each scenario"},
+    {"artifact": "scenario_comparison.json", "description": "Summary table of mean, min, max LCOH across scenarios"},
+    {"artifact": "cost_breakdown_by_site.json", "description": "Full cost decomposition per site for base scenario"}
+  ],
+  "figures": [
+    {"artifact": "images/fig1_spatial_lcoh_map.png", "description": "Map of Africa showing LCOH per site for base scenario"},
+    {"artifact": "images/fig2_cost_breakdown.png", "description": "Stacked bar chart of cost components per site"},
+    {"artifact": "images/fig3_scenario_sensitivity.png", "description": "Sensitivity of LCOH to discount rate across scenarios"},
+    {"artifact": "images/fig4_competitiveness.png", "description": "Comparison of African delivered cost vs European production baseline"},
+    {"artifact": "images/fig5_tornado_sensitivity.png", "description": "Tornado chart showing key parameter sensitivities"},
+    {"artifact": "images/fig6_country_boxplots.png", "description": "Box plots of LCOH by country region"}
+  ],
+  "tables": [
+    {"artifact": "outputs/scenario_comparison_table.md", "description": "Markdown table comparing all scenarios"},
+    {"artifact": "outputs/top10_sites.md", "description": "Top 10 least-cost sites for base scenario"},
+    {"artifact": "outputs/country_summary.md", "description": "Summary statistics by country"}
+  ]
+}

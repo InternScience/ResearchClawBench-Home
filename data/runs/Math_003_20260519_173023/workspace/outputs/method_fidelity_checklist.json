@@ -1,0 +1,35 @@
+{
+  "method": "Neuro-Symbolic Geometry Theorem Proving",
+  "components": {
+    "forward_chaining": {
+      "description": "Horn-clause forward chaining with unification",
+      "implemented": true,
+      "notes": "Matches rule premises against fact database, applies substitutions to derive conclusions"
+    },
+    "rule_matching": {
+      "description": "Pattern matching with variable unification",
+      "implemented": true,
+      "notes": "Handles uppercase variables, ground constants, and negative premises (ncoll, diff, nperp, npara)"
+    },
+    "fact_normalization": {
+      "description": "Canonical ordering for symmetric predicates",
+      "implemented": true,
+      "notes": "Normalizes cong, eqangle, eqratio, perp, para, coll, cyclic"
+    },
+    "gnn_state_encoding": {
+      "description": "Graph Neural Network encoding of geometric proof states",
+      "implemented": true,
+      "notes": "Nodes are points, edges are geometric relations; edge features encode predicate types"
+    },
+    "neural_guidance": {
+      "description": "GNN value function estimates proximity to goal",
+      "implemented": true,
+      "notes": "Trained on synthetic proof walks with MSE loss; used as heuristic in best-first search"
+    },
+    "search_strategies": {
+      "description": "Multiple search algorithms compared",
+      "implemented": true,
+      "notes": "BFS, Beam search, Heuristic BFS, Neural-guided BFS, Neural-guided Beam"
+    }
+  }
+}

@@ -1,0 +1,286 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "data_utils.py",
+    "path": "code/data_utils.py",
+    "type": "file",
+    "size": 6446,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "evaluate.py",
+    "path": "code/evaluate.py",
+    "type": "file",
+    "size": 11461,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "make_extra_figures.py",
+    "path": "code/make_extra_figures.py",
+    "type": "file",
+    "size": 8006,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "model.py",
+    "path": "code/model.py",
+    "type": "file",
+    "size": 6879,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "model_light.py",
+    "path": "code/model_light.py",
+    "type": "file",
+    "size": 4017,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "train.py",
+    "path": "code/train.py",
+    "type": "file",
+    "size": 5541,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "train_all.py",
+    "path": "code/train_all.py",
+    "type": "file",
+    "size": 3760,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "train_fast.py",
+    "path": "code/train_fast.py",
+    "type": "file",
+    "size": 8058,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "train_minimal.py",
+    "path": "code/train_minimal.py",
+    "type": "file",
+    "size": 7835,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "006.nc",
+    "path": "data/006.nc",
+    "type": "file",
+    "size": 18247988,
+    "mtime": 1772070968.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "20231012-06_input_netcdf.nc",
+    "path": "data/20231012-06_input_netcdf.nc",
+    "type": "file",
+    "size": 36492716,
+    "mtime": 1772070968.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "metrics.npz",
+    "path": "outputs/metrics.npz",
+    "type": "file",
+    "size": 204850,
+    "mtime": 1779246080.0,
+    "exported": false
+  },
+  {
+    "name": "single.pt",
+    "path": "outputs/single.pt",
+    "type": "file",
+    "size": 727549,
+    "mtime": 1779246078.0,
+    "exported": false
+  },
+  {
+    "name": "stage1.pt",
+    "path": "outputs/stage1.pt",
+    "type": "file",
+    "size": 727549,
+    "mtime": 1779246078.0,
+    "exported": false
+  },
+  {
+    "name": "stage2.pt",
+    "path": "outputs/stage2.pt",
+    "type": "file",
+    "size": 727549,
+    "mtime": 1779246078.0,
+    "exported": false
+  },
+  {
+    "name": "stage3.pt",
+    "path": "outputs/stage3.pt",
+    "type": "file",
+    "size": 727549,
+    "mtime": 1779246078.0,
+    "exported": false
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 959881,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1724303,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 8061234,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 4863089,
+    "mtime": 1773914891.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "acc_curves.png",
+    "path": "report/images/acc_curves.png",
+    "type": "file",
+    "size": 161430,
+    "mtime": 1779246080.0,
+    "exported": true
+  },
+  {
+    "name": "architecture.png",
+    "path": "report/images/architecture.png",
+    "type": "file",
+    "size": 169449,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 86654,
+    "mtime": 1779246080.0,
+    "exported": true
+  },
+  {
+    "name": "error_maps.png",
+    "path": "report/images/error_maps.png",
+    "type": "file",
+    "size": 1147503,
+    "mtime": 1779246080.0,
+    "exported": false
+  },
+  {
+    "name": "forecast_maps.png",
+    "path": "report/images/forecast_maps.png",
+    "type": "file",
+    "size": 5042917,
+    "mtime": 1779246082.0,
+    "exported": false
+  },
+  {
+    "name": "mean_rmse.png",
+    "path": "report/images/mean_rmse.png",
+    "type": "file",
+    "size": 72747,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "rmse_curves.png",
+    "path": "report/images/rmse_curves.png",
+    "type": "file",
+    "size": 180142,
+    "mtime": 1779246082.0,
+    "exported": true
+  },
+  {
+    "name": "t2m_maps.png",
+    "path": "report/images/t2m_maps.png",
+    "type": "file",
+    "size": 2273166,
+    "mtime": 1779246082.0,
+    "exported": false
+  },
+  {
+    "name": "training_and_growth.png",
+    "path": "report/images/training_and_growth.png",
+    "type": "file",
+    "size": 140611,
+    "mtime": 1779246080.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 22590,
+    "mtime": 1779246083.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5224,
+    "mtime": 1779110320.0,
+    "exported": true
+  }
+]

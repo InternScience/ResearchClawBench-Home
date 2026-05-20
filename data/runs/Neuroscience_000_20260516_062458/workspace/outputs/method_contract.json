@@ -1,0 +1,28 @@
+{
+  "task": "SimBA-style behavior classification from pose-derived features",
+  "primary_method": "Supervised classification with engineered spatial/kinematic features from tracked keypoints",
+  "named_commitments": [
+    "Pose-derived frame-level feature tables as input",
+    "Aligned behavior labels (Attack, Sniffing) as supervised targets",
+    "Supervised classifiers (Random Forest, Gradient Boosting, Logistic Regression)",
+    "Quantitative evaluation reports with accuracy, precision, recall, F1, ROC AUC, PR AUC",
+    "Precision-recall diagnostics",
+    "Confusion matrices",
+    "Feature-importance tables",
+    "Transparent and auditable behavior classification evidence"
+  ],
+  "data_sources": [
+    "Together_1_features_extracted.csv: 1738 frames, raw pose coordinates",
+    "Together_1_targets_inserted.csv: 1738 frames with Attack/Sniffing labels",
+    "Together_1_machine_results_reference.csv: 300 frames, reference SimBA output"
+  ],
+  "related_work_key_insights": [
+    "MARS (Segalin et al., 2021): gradient-boosted trees on engineered features for social behavior classification",
+    "DeepEthogram (Bohnslav et al., 2021): CNN-based classification from raw pixels as alternative approach",
+    "SimBA (Nilsson et al., 2020): original pipeline combining pose estimation with supervised classification"
+  ],
+  "class_distribution": {
+    "Attack": {"positive": 587, "negative": 1151, "prevalence": 0.338},
+    "Sniffing": {"positive": 232, "negative": 1506, "prevalence": 0.133}
+  }
+}

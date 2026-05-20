@@ -1,0 +1,68 @@
+{
+  "papers": [
+    {
+      "id": "paper_000",
+      "title": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields",
+      "authors": "Ilyes Batatia, Dávid Péter Kovács, Gregor N. C. Simm, Christoph Ortner, Gábor Csányi",
+      "key_contributions": [
+        "Introduction of MACE architecture with higher-order many-body messages",
+        "Reduction of message-passing layers from 4-6 to 2 using 4-body messages",
+        "State-of-the-art on rMD17, 3BPA, AcAc benchmarks",
+        "Multi-ACE framework unifying equivariant interatomic potentials"
+      ],
+      "task_relevance": "Core architecture paper - defines the MACE model used in this validation"
+    },
+    {
+      "id": "paper_001",
+      "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+      "authors": "Bowen Deng, Peichen Zhong, KyuJung Jun, Janosh Riebesell, Kevin Han, Christopher J. Bartel, Gerbrand Ceder",
+      "key_contributions": [
+        "CHGNet: GNN-based MLIP with magnetic moment prediction",
+        "Pretrained on MPtrj dataset (1.5M structures)",
+        "Charge-informed MD for LixMnO2, LixFePO4 phase diagrams, Li diffusion",
+        "Demonstrates importance of charge/valence information"
+      ],
+      "task_relevance": "Related foundation potential trained on same MPtrj dataset; comparison baseline"
+    },
+    {
+      "id": "paper_002",
+      "title": "Unifying O(3) equivariant neural networks design with tensor-network formalism",
+      "authors": "Zimu Li, Zihan Pengmei, Han Zheng, Erik Thiede, Junyu Liu, Risi Kondor",
+      "key_contributions": [
+        "Fusion diagrams for constructing equivariant neural network blocks",
+        "Universal approximator property for continuous equivariant functions",
+        "Integration into Cormorant and MACE with improved performance",
+        "Application to non-adiabatic molecular dynamics of stilbene"
+      ],
+      "task_relevance": "Methodological advance for building more expressive equivariant architectures"
+    },
+    {
+      "id": "paper_003",
+      "title": "Cross-functional transferability in foundation machine learning interatomic potentials",
+      "authors": "Xu Huang, Bowen Deng, Peichen Zhong, Aaron D. Kaplan, Kristin A. Persson, Gerbrand Ceder",
+      "key_contributions": [
+        "Analysis of transfer learning challenges between GGA and r2SCAN functionals",
+        "Demonstration of elemental energy referencing importance",
+        "Data challenges: GGA/GGA+U mixing, Hubbard U non-universality",
+        "Scaling laws with and without pre-training"
+      ],
+      "task_relevance": "Motivates limitations in GGA-trained FPs and need for multi-fidelity approaches"
+    }
+  ],
+  "extracted_comparison_axes": [
+    "Water structure (RDF peak positions)",
+    "Adsorption energy scaling (OH vs O linear relationship)",
+    "Reaction barriers (MACE vs DFT comparison)",
+    "Computational efficiency (MD step time)",
+    "Element coverage (89 elements in training, subset in validation)"
+  ],
+  "expected_figure_families": [
+    "RDF plots with expected peak markers",
+    "Energy evolution during MD",
+    "Scaling relation scatter plots with linear fits",
+    "Barrier comparison bar charts",
+    "Parity plots with identity line",
+    "Element coverage / periodic table visualizations",
+    "Multi-panel validation summaries"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "python": "3.13",
+    "numpy": "available",
+    "scipy": "available",
+    "matplotlib": "available",
+    "seaborn": "available"
+  },
+  "limitations": {
+    "numerical_relativity": "Not available; used analytic approximations",
+    "proca_field_solver": "Not available; scalar field only",
+    "astropy": "Not needed for this analysis",
+    "emcee/pymc": "Not needed; grid-based likelihood sufficient"
+  },
+  "fallbacks_applied": {
+    "superradiance_rate": "Analytic Detweiler (1980) formula for l=m=1 mode",
+    "bosenova_threshold": "Simplified analytic criterion from Arvanitaki & Dubovsky (2011)",
+    "binary_effects": "Not modeled; isolated BH assumption"
+  }
+}

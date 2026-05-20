@@ -1,0 +1,65 @@
+{
+  "p_response_stats": {
+    "mean": 0.9427470300116586,
+    "std": 0.09153692089155507,
+    "median": 0.9630025369027599,
+    "min": 1.7999838891502584e-05,
+    "max": 0.999999998265884,
+    "q25": 0.9325259282242735,
+    "q75": 0.979370149517105
+  },
+  "coverage_ratios": {
+    "coverage_p>0.1": 0.995,
+    "coverage_p>0.3": 0.992,
+    "coverage_p>0.5": 0.992,
+    "coverage_p>0.7": 0.99,
+    "coverage_p>0.9": 0.887
+  },
+  "iou_stats": {
+    "mean_iou": 1.0,
+    "std_iou": 0.0,
+    "min_iou": 1.0,
+    "max_iou": 1.0,
+    "median_iou": 1.0
+  },
+  "runtime_stats": {
+    "power_law_exponent": 1.3053916652135291,
+    "runtime_100_cells": 0.011999999999999999,
+    "runtime_10000_cells": 6.542857142857143
+  },
+  "vaccine_stats": {
+    "num_selected_elements": 10,
+    "budget": 10,
+    "objective": "MinSum",
+    "num_unique_mutations_in_pool": 11,
+    "selection_rate": 0.9090909090909091
+  },
+  "consistency_stats": {
+    "common_elements_across_all_reps": [
+      "mut11",
+      "mut12",
+      "mut15",
+      "mut19",
+      "mut20",
+      "mut26",
+      "mut28",
+      "mut33",
+      "mut39",
+      "mut44"
+    ],
+    "num_common_elements": 10,
+    "elements_per_rep": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "mean_elements_per_rep": 10.0
+  }
+}

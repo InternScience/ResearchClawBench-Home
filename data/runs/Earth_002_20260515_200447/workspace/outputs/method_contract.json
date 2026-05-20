@@ -1,0 +1,30 @@
+{
+  "method_name": "Composite Mangrove Risk Index (CMRI)",
+  "description": "A composite risk index combining tropical cyclone regime shifts and sea level rise to evaluate mangrove vulnerability globally",
+  "components": {
+    "sea_level_rise_risk": {
+      "weight": 0.5,
+      "basis": "IPCC AR6 SSP scenarios (2080-2100 average rates)",
+      "thresholds": {
+        "low": "< 2 mm/yr",
+        "moderate": "2-4 mm/yr",
+        "high": "4-7 mm/yr",
+        "very_high": "> 7 mm/yr"
+      },
+      "reference": "Saintilan et al. (2023): deficit likely at 4 mm/yr, highly likely at 7 mm/yr"
+    },
+    "tropical_cyclone_risk": {
+      "weight": 0.5,
+      "basis": "Historical TC frequency and intensity from MIT model (1850-2014)",
+      "factors": ["tc_frequency", "tc_max_wind_speed"],
+      "reference": "Mo et al. (2023); Kropf et al. (2023)"
+    }
+  },
+  "output_scale": "0-1 continuous",
+  "risk_categories": {
+    "low": {"range": "0-0.2", "color": "#2ecc71"},
+    "moderate": {"range": "0.2-0.5", "color": "#f1c40f"},
+    "high": {"range": "0.5-0.8", "color": "#e74c3c"},
+    "very_high": {"range": "0.8-1.0", "color": "#8e44ad"}
+  }
+}

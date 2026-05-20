@@ -1,0 +1,22 @@
+{
+  "task": "Neuro-Symbolic Euclidean Geometry Theorem Proving",
+  "input": "Formal statements of olympiad-level geometry problems (IMO-AG-30 benchmark)",
+  "output": "Machine-verifiable proofs via forward-chaining search with neural guidance",
+  "named_methods": [
+    "Forward-chaining symbolic theorem proving",
+    "Graph Neural Network (GNN) state representation",
+    "Beam search and best-first search",
+    "Neural-guided heuristic search"
+  ],
+  "primary_quantities": [
+    "Solve rate on IMO-AG-30",
+    "Average search nodes expanded",
+    "Average search time",
+    "Proof depth when found"
+  ],
+  "comparison_axes": [
+    "Pure symbolic vs neural-guided search",
+    "Beam width ablation",
+    "Search depth ablation"
+  ]
+}

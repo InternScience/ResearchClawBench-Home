@@ -1,0 +1,37 @@
+{
+  "research_question": "How can we design a unified autoregressive framework that decouples visual encoding to perform both multimodal understanding (VQA) and visual generation (text-to-image) within a single Transformer architecture?",
+  "hypothesis": "Decoupling visual encoding into specialized encoders for understanding and generation, while sharing a unified Transformer backbone, will improve performance on both tasks while maintaining architectural flexibility.",
+  "methodology": {
+    "framework_components": [
+      "Visual Understanding Encoder (VUE): CLIP-style encoder for semantic comprehension",
+      "Visual Generation Encoder (VGE): VQGAN-style tokenizer for image tokenization",
+      "Cross-Encoder Alignment: Bridge module connecting both encoders",
+      "Unified Transformer Backbone: Shared autoregressive Transformer"
+    ],
+    "key_innovations": [
+      "Decoupled Visual Encoding",
+      "Cross-Encoder Alignment",
+      "Adaptive Task Routing"
+    ]
+  },
+  "evaluation_plan": {
+    "data_files": [
+      "data/equation.png: OCR/formula-to-LaTeX conversion",
+      "data/doge.png: Semantic understanding of humor"
+    ],
+    "metrics": {
+      "understanding": ["VQA accuracy", "caption quality", "semantic understanding score"],
+      "generation": ["FID", "IS", "reconstruction quality"]
+    },
+    "baselines": [
+      "Single encoder baseline (Chameleon-style)",
+      "Decoupled encoder framework (our approach)"
+    ]
+  },
+  "success_criteria": [
+    "Framework successfully handles both understanding and generation tasks",
+    "Quantitative improvements over single-encoder baseline",
+    "Clear visualization of benefits through figures",
+    "Comprehensive research report with methodology, results, and discussion"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "task": "Build a transparent geospatial levelized-cost model to estimate the delivered cost of African green hydrogen to Europe (via ammonia shipping and reconversion) by 2030 under multiple financing and policy scenarios, identify least-cost/competitive locations, and quantify how de-risking and the interest-rate environment change cost competitiveness relative to producing green hydrogen in Europe.",
+  "method_commitments": {
+    "geospatial_model": "Hexagon-based spatial LCOH model computing site-specific delivered costs",
+    "pathway": "Ammonia (NH3) synthesis → trucking → maritime shipping → cracking at Rotterdam",
+    "timeframe": "2030 technology cost projections",
+    "financing_scenarios": "Multiple WACC levels (4%, 6%, 8%, 12%) representing de-risking",
+    "interest_rate_scenarios": "Three rate environments (low, moderate rise +2pp, extreme rise +4pp) per Schmidt et al. 2019",
+    "competitive_locations": "Identify least-cost sites and quantify competitiveness thresholds",
+    "european_comparison": "Benchmark against European domestic green hydrogen production costs"
+  },
+  "key_parameters": {
+    "pv_capex_2030": "520,000 EUR/MW",
+    "wind_capex_2030": "900,000 EUR/MW",
+    "electrolyzer_capex_2030": "500,000 EUR/MW",
+    "electrolyzer_efficiency": "52.0 kWh_el/kg_H2",
+    "shipping_cost": "0.004 EUR/tonne-km",
+    "european_benchmarks": "3.0-5.0 EUR/kg H2"
+  },
+  "related_work_sources": [
+    "Halloran et al. (GeoH2 model, Namibia case study)",
+    "Muller et al. (GEOH2 Kenya, LCOH 1.8-3.0 EUR/kg by 2030)",
+    "Schmidt et al. (Interest rate impacts on RE, Nature Sustainability 2019)",
+    "Steffen (Cost of capital for RE projects, Energy Economics 2020)"
+  ]
+}

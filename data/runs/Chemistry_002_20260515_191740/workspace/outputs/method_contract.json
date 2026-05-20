@@ -1,0 +1,22 @@
+{
+  "task": "HADDOCK3 integrative modeling analysis of barnase-barstar complex with SKEMPI validation",
+  "commitments": [
+    "Structural analysis of 1BRS PDB complex (chains A and D)",
+    "Interface characterization: residue contacts, solvent accessibility, binding energetics",
+    "SKEMPI 2.0 mutation analysis with focus on 1BRS complex",
+    "Correlation between structural features and mutational effects on binding affinity",
+    "Validation of HADDOCK's AIR (Ambiguous Interaction Restraints) approach using mutation data",
+    "Comparison of different mutation locations (COR, INT, SUP, RIM, SUR) on affinity changes"
+  ],
+  "named_methods": [
+    "HADDOCK AIR (Ambiguous Interaction Restraints)",
+    "Interface residue classification (core, interface, support, rim, surface)",
+    "Binding affinity change (ΔΔG) calculation from SKEMPI data"
+  ],
+  "target_quantities": [
+    "Interface residue contact map",
+    "ΔΔG distributions by mutation location",
+    "Solvent accessibility at interface",
+    "Structure-affinity relationships"
+  ]
+}

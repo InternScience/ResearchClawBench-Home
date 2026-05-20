@@ -1,0 +1,490 @@
+[
+  {
+    "task_id": 0,
+    "branch": "continuum, first-quantized",
+    "task_name": "",
+    "source": {},
+    "answer": ""
+  },
+  {
+    "task_id": 1,
+    "branch": "",
+    "task_name": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "source": {
+      "2111.01152.tex": [
+        [
+          55,
+          62
+        ]
+      ]
+    },
+    "answer": "$H_{Kinetic}(r) = \\begin{pmatrix} E_{+K,b} & 0 & 0 & 0 \\\\ 0 & E_{+K,t} & 0 & 0 \\\\ 0 & 0 & E_{-K,b} & 0 \\\\ 0 & 0 & 0 & E_{-K,t} \\end{pmatrix}$",
+    "score_in_paper": 1,
+    "score_prompt_quality": 1,
+    "score_follow_instructions": 1,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 1,
+    "placeholder_Haining_mean": 1.3333333333333333,
+    "placeholder_Haining_count": 9,
+    "placeholder_Haining_total": 12,
+    "placeholder_Haining_max": 27,
+    "placeholder_Will_mean": 1.1428571428571428,
+    "placeholder_Will_count": 7,
+    "placeholder_Will_total": 8,
+    "placeholder_Will_max": 21,
+    "placeholder_Yasaman_mean": 1.3333333333333333,
+    "placeholder_Yasaman_count": 9,
+    "placeholder_Yasaman_total": 12,
+    "placeholder_Yasaman_max": 27
+  },
+  {
+    "task_id": 2,
+    "branch": "",
+    "task_name": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "source": {
+      "2111.01152.tex": [
+        [
+          55,
+          62
+        ]
+      ],
+      "2111.01152_SM.tex": [
+        [
+          46,
+          62
+        ]
+      ]
+    },
+    "answer": "$H_{Kinetic}(r) = \\begin{pmatrix} -\\frac{\\hbar^2 k^2}{2 m_b} & 0 & 0 & 0 \\\\ 0 & -\\frac{\\hbar^2 (k-\\kappa)^2}{2 m_t} & 0 & 0 \\\\ 0 & 0 & -\\frac{\\hbar^2 k^2}{2 m_b} & 0 \\\\ 0 & 0 & 0 & -\\frac{\\hbar^2 (k+\\kappa)^2}{2 m_t} \\end{pmatrix}$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 1,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 1,
+    "placeholder_Haining_mean": 1.5,
+    "placeholder_Haining_count": 10,
+    "placeholder_Haining_total": 15,
+    "placeholder_Haining_max": 30,
+    "placeholder_Will_mean": 1.3,
+    "placeholder_Will_count": 10,
+    "placeholder_Will_total": 13,
+    "placeholder_Will_max": 30,
+    "placeholder_Yasaman_mean": 1.5,
+    "placeholder_Yasaman_count": 10,
+    "placeholder_Yasaman_total": 15,
+    "placeholder_Yasaman_max": 30
+  },
+  {
+    "task_id": 3,
+    "branch": "",
+    "task_name": "Construct Potential Hamiltonian (continuum version)",
+    "source": {
+      "2111.01152.tex": [
+        [
+          55,
+          62
+        ]
+      ],
+      "2111.01152_SM.tex": [
+        [
+          46,
+          62
+        ]
+      ]
+    },
+    "answer": "$H_{Potential}(r) = \\begin{pmatrix} \\Delta_b(r) & \\Delta_{T,+K}(r) & 0 & 0 \\\\ \\Delta_{T,+K}^*(r) & \\Delta_t(r) & 0 & 0 \\\\ 0 & 0 & \\Delta_b(r) & \\Delta_{T,-K}(r) \\\\ 0 & 0 & \\Delta_{T,-K}^*(r) & \\Delta_t(r) \\end{pmatrix}$",
+    "score_in_paper": 1,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 1.0,
+    "placeholder_Haining_count": 7,
+    "placeholder_Haining_total": 7,
+    "placeholder_Haining_max": 21,
+    "placeholder_Will_mean": 1.1428571428571428,
+    "placeholder_Will_count": 7,
+    "placeholder_Will_total": 8,
+    "placeholder_Will_max": 21,
+    "placeholder_Yasaman_mean": 1.2857142857142858,
+    "placeholder_Yasaman_count": 7,
+    "placeholder_Yasaman_total": 9,
+    "placeholder_Yasaman_max": 21
+  },
+  {
+    "task_id": 4,
+    "branch": "",
+    "task_name": "Define each term in Potential Hamiltonian (continuum version)",
+    "source": {
+      "2111.01152.tex": [
+        [
+          55,
+          62
+        ],
+        [
+          71,
+          80
+        ]
+      ],
+      "2111.01152_SM.tex": [
+        [
+          46,
+          62
+        ]
+      ]
+    },
+    "answer": "$H_{Potential}(r) = \\begin{pmatrix} 2V_b\\sum_{j=1,3,5} \\cos(g_j \\cdot r  +\\psi_b) & w(1+\\omega e^{i g_2 \\cdot r} + \\omega^2 e^{i g_3 \\cdot r}) & 0 & 0 \\\\ w(1+\\omega^{-1}e^{-i g_2 \\cdot r} + \\omega^{-2} e^{-i g_3 \\cdot r}) & V_{zt} & 0 & 0 \\\\ 0 & 0 & 2V_b\\sum_{j=1,3,5} \\cos(g_j \\cdot r  +\\psi_b) & -w(1+\\omega^{-1}e^{-i g_2 \\cdot r} + \\omega^{-2} e^{-i g_3 \\cdot r}) \\\\ 0 & 0 & -w(1+\\omega e^{i g_2 \\cdot r} + \\omega^2 e^{i g_3 \\cdot r}) & V_{zt} \\end{pmatrix}$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 1.4,
+    "placeholder_Haining_count": 5,
+    "placeholder_Haining_total": 7,
+    "placeholder_Haining_max": 15,
+    "placeholder_Will_mean": 1.8,
+    "placeholder_Will_count": 5,
+    "placeholder_Will_total": 9,
+    "placeholder_Will_max": 15,
+    "placeholder_Yasaman_mean": 1.0,
+    "placeholder_Yasaman_count": 5,
+    "placeholder_Yasaman_total": 5,
+    "placeholder_Yasaman_max": 15
+  },
+  {
+    "task_id": 5,
+    "branch": "",
+    "task_name": "Convert from single-particle to second-quantized form, return in matrix",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          46,
+          62
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{0} = \\int dr \\vec{\\psi}^\\dagger(r) H^{0}(r) \\vec{\\psi}(r)$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 1.7142857142857142,
+    "placeholder_Haining_count": 7,
+    "placeholder_Haining_total": 12,
+    "placeholder_Haining_max": 21,
+    "placeholder_Will_mean": 1.4285714285714286,
+    "placeholder_Will_count": 7,
+    "placeholder_Will_total": 10,
+    "placeholder_Will_max": 21,
+    "placeholder_Yasaman_mean": 1.8571428571428572,
+    "placeholder_Yasaman_count": 7,
+    "placeholder_Yasaman_total": 13,
+    "placeholder_Yasaman_max": 21
+  },
+  {
+    "task_id": 6,
+    "branch": "",
+    "task_name": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          46,
+          62
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{0} = \\int dr \\sum_{l_1, l_2} \\left( \\psi_{+K,l_1}^\\dagger(r) H^{0}_{+K,l_1,+K,l_2}(r) \\psi_{+K,l_2}(r) + \\psi_{-K,l_1}^\\dagger(r) H^{0}_{-K,l_1,-K,l_2}(r) \\psi_{-K,l_2}(r) \\right)$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 1,
+    "score_final_answer_accuracy": 1,
+    "placeholder_Haining_mean": 2.0,
+    "placeholder_Haining_count": 4,
+    "placeholder_Haining_total": 8,
+    "placeholder_Haining_max": 12,
+    "placeholder_Will_mean": 1.0,
+    "placeholder_Will_count": 4,
+    "placeholder_Will_total": 4,
+    "placeholder_Will_max": 12,
+    "placeholder_Yasaman_mean": 2.0,
+    "placeholder_Yasaman_count": 4,
+    "placeholder_Yasaman_total": 8,
+    "placeholder_Yasaman_max": 12
+  },
+  {
+    "task_id": 7,
+    "branch": "",
+    "task_name": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          46,
+          62
+        ],
+        [
+          89,
+          93
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{0} = \\sum_{\\tau, l_1, l_2, k_1, k_2} c_{\\tau,l_1}^\\dagger(k_1) H^{0}_{\\tau,l_1,\\tau,l_2}(k_1,k_2) c_{\\tau,l_2}(k_2)$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 1,
+    "placeholder_Haining_mean": 1.7142857142857142,
+    "placeholder_Haining_count": 7,
+    "placeholder_Haining_total": 12,
+    "placeholder_Haining_max": 21,
+    "placeholder_Will_mean": 2.0,
+    "placeholder_Will_count": 6,
+    "placeholder_Will_total": 12,
+    "placeholder_Will_max": 18,
+    "placeholder_Yasaman_mean": 1.7142857142857142,
+    "placeholder_Yasaman_count": 7,
+    "placeholder_Yasaman_total": 12,
+    "placeholder_Yasaman_max": 21
+  },
+  {
+    "task_id": 8,
+    "branch": "",
+    "task_name": "Particle-hole transformation",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          95,
+          99
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{0} = \\sum_{\\tau, l_1, l_2, k_1, k_2} b_{\\tau, l_1}(k_1) H^{0}_{\\tau, l_1, \\tau, l_2}(k_1, k_2) b_{\\tau, l_2}^\\dagger(k_2)$",
+    "score_in_paper": 0,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 2.0,
+    "placeholder_Haining_count": 8,
+    "placeholder_Haining_total": 16,
+    "placeholder_Haining_max": 24,
+    "placeholder_Will_mean": 2.0,
+    "placeholder_Will_count": 8,
+    "placeholder_Will_total": 16,
+    "placeholder_Will_max": 24,
+    "placeholder_Yasaman_mean": 1.375,
+    "placeholder_Yasaman_count": 8,
+    "placeholder_Yasaman_total": 11,
+    "placeholder_Yasaman_max": 24
+  },
+  {
+    "task_id": 9,
+    "branch": "",
+    "task_name": "Simplify the Hamiltonian in the particle-hole basis",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          95,
+          99
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{0} = \\sum_{\\tau, l_1, k_1} H^{0}_{\\tau, l_1, \\tau, l_1}(k_1, k_1) - \\sum_{\\tau, l_1, l_2, k_1, k_2} b_{\\tau, l_1}^\\dagger(k_1) (H^{0}_{\\tau, l_1, \\tau, l_2}(k_1, k_2))^* b_{\\tau, l_2}(k_2)$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 1,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 1.8571428571428572,
+    "placeholder_Haining_count": 7,
+    "placeholder_Haining_total": 13,
+    "placeholder_Haining_max": 21,
+    "placeholder_Will_mean": 1.8571428571428572,
+    "placeholder_Will_count": 7,
+    "placeholder_Will_total": 13,
+    "placeholder_Will_max": 21,
+    "placeholder_Yasaman_mean": 2.0,
+    "placeholder_Yasaman_count": 7,
+    "placeholder_Yasaman_total": 14,
+    "placeholder_Yasaman_max": 21
+  },
+  {
+    "task_id": 10,
+    "branch": "",
+    "task_name": "Construct interaction Hamiltonian (momentum space)",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          100,
+          108
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{int} = \\frac{1}{2V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4} b_{l_1,\\tau_1}^\\dagger(k_1)b_{l_2,\\tau_2}^\\dagger(k_2)b_{l_2,\\tau_2}(k_3)b_{l_1,\\tau_1}(k_4) V(|k_1-k_4|)\\delta_{k_1+k_2,k_3+k_4}$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 1.5555555555555556,
+    "placeholder_Haining_count": 9,
+    "placeholder_Haining_total": 14,
+    "placeholder_Haining_max": 27,
+    "placeholder_Will_mean": 1.4285714285714286,
+    "placeholder_Will_count": 7,
+    "placeholder_Will_total": 10,
+    "placeholder_Will_max": 21,
+    "placeholder_Yasaman_mean": 1.5555555555555556,
+    "placeholder_Yasaman_count": 9,
+    "placeholder_Yasaman_total": 14,
+    "placeholder_Yasaman_max": 27
+  },
+  {
+    "task_id": 11,
+    "branch": "",
+    "task_name": "Wick's theorem",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          110,
+          117
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{int,HF}=\\frac{1}{2V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4} \\left[\\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_1,\\tau_1}(k_4) \\rangle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_2,\\tau_2}(k_3) + \\langle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_2,\\tau_2}(k_3) \\rangle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_1,\\tau_1}(k_4)-\\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_1,\\tau_1}(k_4) \\rangle \\langle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_2,\\tau_2}(k_3) \\rangle - \\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_2,\\tau_2}(k_3) \\rangle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_1,\\tau_1}(k_4) - \\langle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_1,\\tau_1}(k_4) \\rangle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_2,\\tau_2}(k_3) + \\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_2,\\tau_2}(k_3) \\rangle \\langle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_1,\\tau_1}(k_4) \\rangle\\right] V(|k_1-k_4|)\\delta_{k_1+k_2,k_3+k_4}$",
+    "score_in_paper": 0,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 2.0,
+    "placeholder_Haining_count": 3,
+    "placeholder_Haining_total": 6,
+    "placeholder_Haining_max": 9,
+    "placeholder_Will_mean": 2.0,
+    "placeholder_Will_count": 3,
+    "placeholder_Will_total": 6,
+    "placeholder_Will_max": 9,
+    "placeholder_Yasaman_mean": 2.0,
+    "placeholder_Yasaman_count": 3,
+    "placeholder_Yasaman_total": 6,
+    "placeholder_Yasaman_max": 9
+  },
+  {
+    "task_id": 12,
+    "branch": "",
+    "task_name": "Extract quadratic term",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          110,
+          117
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{int,HF,2}=\\frac{1}{2V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4} \\left[\\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_1,\\tau_1}(k_4) \\rangle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_2,\\tau_2}(k_3) + \\langle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_2,\\tau_2}(k_3) \\rangle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_1,\\tau_1}(k_4) - \\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_2,\\tau_2}(k_3) \\rangle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_1,\\tau_1}(k_4) - \\langle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_1,\\tau_1}(k_4) \\rangle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_2,\\tau_2}(k_3)\\right] V(|k_1-k_4|)\\delta_{k_1+k_2,k_3+k_4}$",
+    "score_in_paper": 0,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 2.0,
+    "placeholder_Haining_count": 4,
+    "placeholder_Haining_total": 8,
+    "placeholder_Haining_max": 12,
+    "placeholder_Will_mean": 2.0,
+    "placeholder_Will_count": 4,
+    "placeholder_Will_total": 8,
+    "placeholder_Will_max": 12,
+    "placeholder_Yasaman_mean": 2.0,
+    "placeholder_Yasaman_count": 4,
+    "placeholder_Yasaman_total": 8,
+    "placeholder_Yasaman_max": 12
+  },
+  {
+    "task_id": 13,
+    "branch": "",
+    "task_name": "Swap the index to combine Hartree and Fock terms",
+    "source": {
+      "2111.01152_SM.tex": [
+        [
+          110,
+          117
+        ]
+      ]
+    },
+    "answer": "$\\hat{H}^{int,HF,2}=\\frac{1}{V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4} \\left[\\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_1,\\tau_1}(k_4) \\rangle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_2,\\tau_2}(k_3) - \\langle b_{l_1,\\tau_1}^\\dagger(k_1) b_{l_2,\\tau_2}(k_3) \\rangle b_{l_2,\\tau_2}^\\dagger(k_2) b_{l_1,\\tau_1}(k_4)\\right] V(|k_1-k_4|)\\\\delta_{k_1+k_2,k_3+k_4}$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 1,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2,
+    "placeholder_Haining_mean": 1.5,
+    "placeholder_Haining_count": 4,
+    "placeholder_Haining_total": 6,
+    "placeholder_Haining_max": 12,
+    "placeholder_Will_mean": 2.0,
+    "placeholder_Will_count": 1,
+    "placeholder_Will_total": 2,
+    "placeholder_Will_max": 3,
+    "placeholder_Yasaman_mean": 1.5,
+    "placeholder_Yasaman_count": 4,
+    "placeholder_Yasaman_total": 6,
+    "placeholder_Yasaman_max": 12
+  },
+  {
+    "task_id": 14,
+    "branch": "",
+    "task_name": "Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice)",
+    "source": null,
+    "answer": "$H_{\\text{Hartree}} = \\frac{1}{V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,q_1,q_2,q_3,q_4} \\langle b_{l_1,\\tau_1,q_1}^\\dagger(k_1) b_{l_1,\\tau_1,q_4}(k_1) \\rangle b_{l_2,\\tau_2,q_2}^\\dagger(k_2) b_{l_2,\\tau_2,q_3}(k_2)  V(|q_1-q_4|)\\delta_{q_1+q_2,q_3+q_4}$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 1,
+    "score_final_answer_accuracy": 2
+  },
+  {
+    "task_id": 15,
+    "branch": "",
+    "task_name": "Reduce momentum in Fock term (momentum in BZ + reciprocal lattice)",
+    "source": null,
+    "answer": "$H_{\\text{Fock}} = -\\frac{1}{V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,q_1,q_2,q_3,q_4} \\langle b_{l_1,\\tau_1,q_1}^\\dagger(k_1) b_{l_2,\\tau_2,q_3}(k_1) \\rangle b_{l_2,\\tau_2,q_2}^\\dagger(k_2) b_{l_1,\\tau_1,q_4}(k_2) V(|k_1+q_1-k_2-q_4|)\\delta_{q_1+q_2,q_3+q_4}$",
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2
+  },
+  {
+    "task_id": 16,
+    "branch": "",
+    "task_name": "Combine the Hartree and Fock term",
+    "source": null,
+    "answer": null,
+    "score_in_paper": 2,
+    "score_prompt_quality": 2,
+    "score_follow_instructions": 2,
+    "score_physics_logic": 2,
+    "score_math_derivation": 2,
+    "score_final_answer_accuracy": 2
+  }
+]

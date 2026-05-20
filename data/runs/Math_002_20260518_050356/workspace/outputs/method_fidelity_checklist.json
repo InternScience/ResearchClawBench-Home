@@ -1,0 +1,25 @@
+{
+  "method_name": "Hybrid MARL-LNS",
+  "components": {
+    "MARL": {
+      "implemented": true,
+      "description": "Neural network policy for neighborhood selection",
+      "deviation": "Using simple MLP instead of complex architectures like transformer"
+    },
+    "LNS": {
+      "implemented": true,
+      "description": "Large Neighborhood Search with destroy-repair cycle",
+      "deviation": null
+    },
+    "PP": {
+      "implemented": true,
+      "description": "Prioritized Planning for repair subroutine",
+      "deviation": "Using A* with constraints instead of SIPPS"
+    },
+    "stage_switching": {
+      "implemented": true,
+      "description": "Adaptive switching based on collision ratio",
+      "deviation": "Using fixed threshold instead of learned threshold"
+    }
+  }
+}

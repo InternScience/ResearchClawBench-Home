@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "python3": "available",
+    "matplotlib": "available",
+    "numpy": "available",
+    "json": "available",
+    "collections": "available",
+    "itertools": "available",
+    "re": "available",
+    "dataclasses": "available",
+    "typing": "available"
+  },
+  "missing_dependencies": [],
+  "required_but_unavailable": [],
+  "fallback_options": [],
+  "capability_check": {
+    "can_parse_imo_format": true,
+    "can_extract_facts": true,
+    "can_apply_rules": true,
+    "can_generate_figures": true,
+    "can_solve_imo_problems": false
+  },
+  "notes": "All basic Python dependencies are available. The system can parse and analyze the IMO benchmark but cannot solve the problems due to insufficient inference rules and lack of search guidance."
+}

@@ -1,0 +1,62 @@
+{
+  "figures": [
+    {
+      "name": "main_comparison.png",
+      "description": "Main ByteTrack vs SparseTrack comparison",
+      "status": "generated"
+    },
+    {
+      "name": "ablation_study.png",
+      "description": "Ablation on depth layers and methods",
+      "status": "generated"
+    },
+    {
+      "name": "per_frame_analysis.png",
+      "description": "Per-frame tracking accuracy",
+      "status": "generated"
+    },
+    {
+      "name": "occlusion_robustness.png",
+      "description": "Occlusion vs accuracy analysis",
+      "status": "generated"
+    },
+    {
+      "name": "per_object_coverage.png",
+      "description": "Per-object coverage comparison",
+      "status": "generated"
+    },
+    {
+      "name": "detection_analysis.png",
+      "description": "Dataset statistics",
+      "status": "generated"
+    },
+    {
+      "name": "depth_analysis.png",
+      "description": "Pseudo-depth distribution",
+      "status": "generated"
+    }
+  ],
+  "tables": [
+    {
+      "name": "Table 1",
+      "description": "Main metrics comparison",
+      "status": "in report"
+    }
+  ],
+  "intermediate_outputs": [
+    "final_results.json",
+    "metrics.json",
+    "ablation.json",
+    "data_stats.json",
+    "bytetrack_tracks.json",
+    "sparsetrack_tracks.json"
+  ],
+  "code_modules": [
+    "mot_utils.py",
+    "bytetrack.py",
+    "sparsetrack.py",
+    "evaluate.py",
+    "final_comparison.py",
+    "main.py"
+  ]
+}

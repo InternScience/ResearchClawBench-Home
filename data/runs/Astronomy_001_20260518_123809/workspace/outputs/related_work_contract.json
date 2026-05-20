@@ -1,0 +1,39 @@
+{
+  "papers": [
+    {
+      "id": "paper_003",
+      "title": "Impact of ACT DR6 and DESI DR2 for Early Dark Energy and the Hubble tension",
+      "authors": "Poulin et al.",
+      "relevance": "Provides ACT DR6 + DESI DR2 constraints on EDE; discusses H0 tension reduction to ~2 sigma; includes profile-likelihood analysis.",
+      "key_numbers": "f_EDE < 0.109 (95% CL) for P-ACT-LBS; Delta chi^2 = -7.0 (CMB+DESI) and -35.4 (with SH0ES)"
+    },
+    {
+      "id": "paper_target",
+      "title": "Early time solution as an alternative to the late time evolving dark energy with DESI DR2 BAO",
+      "authors": "Chaussidon et al. (arXiv:2503.24343)",
+      "relevance": "Primary target paper. Compares LCDM, EDE, and w0wa using CMB+DESI (+SNe). Table II/III/IV contain best-fit parameters and Delta chi^2. Figure 6 shows BAO/SNe residuals.",
+      "key_numbers": "Delta chi^2(EDE vs LCDM) = -7.4 for CMB+BAO; Delta chi^2(w0wa vs LCDM) = -13 for CMB+BAO; H0(EDE)=70.9 +/- 1.0; f_EDE=0.093 +/- 0.031"
+    },
+    {
+      "id": "paper_001",
+      "title": "Observational Constraints on Early Dark Energy",
+      "authors": "McDonough et al.",
+      "relevance": "Review of EDE constraints from Planck, LSS, BOSS, weak lensing. Shows Bayesian preference for LCDM over EDE when LSS is included.",
+      "key_numbers": "f_EDE < 0.072 (95% CL) with BOSS EFT; f_EDE < 0.053 with photometric LSS"
+    },
+    {
+      "id": "paper_002",
+      "title": "Constraining Early Dark Energy with Large-Scale Structure",
+      "authors": "Ivanov et al.",
+      "relevance": "First EDE analysis with BOSS full-shape EFT likelihood; demonstrates stronger EDE constraints than standard BOSS likelihood.",
+      "key_numbers": "H0 = 68.54 +0.52/-0.95; f_EDE < 0.072 (95% CL)"
+    },
+    {
+      "id": "paper_000",
+      "title": "Early Dark Energy Can Resolve The Hubble Tension",
+      "authors": "Poulin et al. (2019)",
+      "relevance": "Original EDE proposal using axion-like potential; showed that EDE can raise H0 while fitting CMB, BAO, and SN data.",
+      "key_numbers": "H0 ~ 70-74 km/s/Mpc with f_EDE ~ 0.1-0.2"
+    }
+  ]
+}

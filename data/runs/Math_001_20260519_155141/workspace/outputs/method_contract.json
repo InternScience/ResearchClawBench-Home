@@ -1,0 +1,27 @@
+{
+  "task": "Unified Variable and Operator Splitting (VOS) Framework",
+  "primary_commitments": [
+    "Derive Nesterov's accelerated method from continuous-time dynamical system",
+    "Derive ADMM from continuous-time dynamical system via operator splitting",
+    "Prove linear convergence using strong Lyapunov functions",
+    "Validate on high-dimensional Lasso regression"
+  ],
+  "named_methods": [
+    "Nesterov Accelerated Gradient (NAG)",
+    "Alternating Direction Method of Multipliers (ADMM)",
+    "Variable and Operator Splitting (VOS) unified framework",
+    "Gradient Descent (baseline)"
+  ],
+  "target_quantities": [
+    "Convergence rate comparison (objective error vs iteration)",
+    "Lyapunov function decay rate",
+    "Linear convergence constant",
+    "Solution accuracy vs ground truth"
+  ],
+  "comparison_axes": [
+    "Iteration count",
+    "CPU time",
+    "Objective function value",
+    "Distance to optimal solution"
+  ]
+}

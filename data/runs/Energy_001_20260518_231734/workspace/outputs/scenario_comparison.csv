@@ -1,0 +1,7 @@
+Scenario,Total_Cost_MGBP,Wind_GWh,Gas_GWh,Nuclear_GWh,Unserved_GWh,Unserved_pct,Served_pct,Curtailment_GWh,Storage_Charge_GWh,Storage_Discharge_GWh
+Base Case,71557.7,2293.3,1352.0,403.2,11914.3,74.7,25.3,1899.3,92.4,69.3
+No Storage,71557.7,2270.2,1352.0,403.2,11914.3,74.7,25.3,1922.4,0.0,0.0
+Constrained Transmission,75337.7,1663.3,1352.0,403.2,12544.3,78.7,21.3,2529.3,92.4,69.3
+Double Wind,69254.3,2677.3,1352.0,403.2,11530.3,72.3,27.7,5708.0,92.4,69.3
+No Wind,81409.1,0.0,1782.6,604.8,13552.3,85.0,15.0,0.0,0.0,0.0
+Nuclear Only (No Gas),79601.8,2293.3,0.0,403.2,13266.3,83.2,16.8,1899.3,92.4,69.3

@@ -1,0 +1,32 @@
+{
+  "task": "Connectome-constrained deep mechanistic network analysis for Drosophila motion detection",
+  "named_methods": [
+    "Deep Mechanistic Network (DMN)",
+    "PPNeuronIGRSynapses dynamics",
+    "ConnectomeFromAvgFilters connectivity",
+    "DecoderGAVP decoder",
+    "MultiTaskSintel dataset",
+    "RestingPotential node bias",
+    "TimeConstant node parameter",
+    "SynapseCount edge parameter",
+    "SynapseCountScaling edge parameter",
+    "SynapseSign edge parameter"
+  ],
+  "model_architecture": {
+    "n_node_types": 65,
+    "n_edge_types": 604,
+    "n_synapse_entries": 2355,
+    "dynamics": "PPNeuronIGRSynapses with ReLU activation",
+    "decoder": "DecoderGAVP (convolutional upsampling)",
+    "task": "Optical flow estimation (EPE loss)",
+    "trained_models": 50
+  },
+  "learned_parameters": {
+    "nodes_bias": {"groupby": "type", "shape": 65, "learnable": true},
+    "nodes_time_const": {"groupby": "type", "shape": 65, "learnable": true},
+    "edges_syn_strength": {"groupby": "source_type,target_type", "shape": 604, "learnable": true},
+    "edges_sign": {"groupby": "source_type,target_type", "shape": 604, "learnable": false},
+    "edges_syn_count": {"groupby": "source_type,target_type,du,dv", "shape": 2355, "learnable": false}
+  },
+  "connectome_source": "fib25-fib19_v2.2.json (FlyWire Drosophila optic lobe connectome)"
+}

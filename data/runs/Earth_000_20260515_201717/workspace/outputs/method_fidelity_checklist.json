@@ -1,0 +1,31 @@
+{
+  "method": "GlaMBIE Multi-Method Reconciliation",
+  "steps": [
+    {
+      "step": "Homogenization to common grid",
+      "implemented": true,
+      "notes": "Monthly grid, m to Gt conversion with region-specific areas"
+    },
+    {
+      "step": "Data-group combination (weighted least-squares)",
+      "implemented": true,
+      "notes": "Preserves annual variability from glaciological/gravimetry, multi-annual constraints from DEM/altimetry"
+    },
+    {
+      "step": "Uncertainty propagation (quadrature)",
+      "implemented": true,
+      "notes": "1-sigma confidence intervals"
+    },
+    {
+      "step": "Global aggregation",
+      "implemented": true,
+      "notes": "Sum of regional combined solutions"
+    },
+    {
+      "step": "Annual resolution output 2000-2023",
+      "implemented": true,
+      "notes": "Both calendar and hydrological year products available"
+    }
+  ],
+  "deviations": "None. Analysis uses the official GlaMBIE combined results."
+}

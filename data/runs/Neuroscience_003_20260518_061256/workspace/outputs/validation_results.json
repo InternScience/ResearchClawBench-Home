@@ -1,0 +1,22 @@
+{
+  "full_metrics": {
+    "pc1_spearman": 0.0014965718872138884,
+    "pc1_pval": 0.9373717613678177,
+    "neighborhood_coherence": 2.947283637376972,
+    "kendall_tau": 0.0028702131327448814,
+    "silhouette_score": -0.04383303225040436
+  },
+  "selected_metrics": {
+    "pc1_spearman": 0.48968949733479794,
+    "pc1_pval": 2.2575156698970073e-166,
+    "neighborhood_coherence": 1.9494470621182558,
+    "kendall_tau": 0.345702346029278,
+    "silhouette_score": -0.04772266745567322
+  },
+  "cv_full_r2": 0.7655204623004246,
+  "cv_full_r2_std": 0.07989752839437775,
+  "cv_selected_r2": 0.803053739441651,
+  "cv_selected_r2_std": 0.030724398470683496,
+  "n_features_full": 241,
+  "n_features_selected": 50
+}

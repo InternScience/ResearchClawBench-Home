@@ -1,0 +1,26 @@
+{
+  "dependencies_required": [
+    {"package": "numpy", "purpose": "Statistical computations", "available": true},
+    {"package": "matplotlib", "purpose": "Figure generation", "available": true},
+    {"package": "pyyaml", "purpose": "YAML data parsing", "available": true},
+    {"package": "json", "purpose": "Data serialization", "available": true}
+  ],
+  "capability_assessment": {
+    "llm_hartree_fock_calculation": {
+      "status": "evaluated",
+      "notes": "LLM outputs were pre-generated and stored in YAML scoring data. We analyze the human-annotated scores rather than re-running the LLM."
+    },
+    "paper_extraction": {
+      "status": "evaluated",
+      "notes": "Paper information extraction was performed by GPT-4 and results are stored in the YAML. We analyze extraction accuracy through placeholder-level scoring."
+    },
+    "self_consistent_iteration": {
+      "status": "not_evaluated",
+      "notes": "The benchmark covers analytic HF derivations only. Self-consistent numerical iteration is outside scope."
+    }
+  },
+  "fallbacks": {
+    "none_needed": true,
+    "notes": "All required capabilities are available. The analysis uses pre-computed LLM outputs and human scores, which are provided in the workspace."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "task": "Training-Free Fine-Grained Perception for MLLMs",
+  "core_mitigation": "Information loss from fixed-resolution vision encoders",
+  "solution": "Task-guided cropping strategy (ViCrop)",
+  "key_components": [
+    "Visual Working Memory (VWM)",
+    "LLM-guided region selection",
+    "Adaptive cropping at regions of interest",
+    "Multi-scale feature integration"
+  ],
+  "baseline_comparisons": [
+    "Standard CLIP encoder (224\u00d7224)",
+    "Monkey patch-based approach",
+    "SEAL visual search mechanism"
+  ],
+  "evaluation_metrics": [
+    "Information preservation score",
+    "Edge density preservation",
+    "Small object detection accuracy",
+    "Computational cost (relative FLOPs)"
+  ]
+}

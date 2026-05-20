@@ -1,0 +1,62 @@
+[
+  {
+    "classifier": "Random Forest",
+    "behavior": "Attack",
+    "accuracy": 0.903448275862069,
+    "precision": 0.8387096774193549,
+    "recall": 0.8843537414965986,
+    "f1": 0.8609271523178808,
+    "roc_auc": 0.9318783068783069,
+    "pr_auc": 0.7611331802029391
+  },
+  {
+    "classifier": "Gradient Boosting",
+    "behavior": "Attack",
+    "accuracy": 0.8919540229885058,
+    "precision": 0.8378378378378378,
+    "recall": 0.8435374149659864,
+    "f1": 0.8406779661016949,
+    "roc_auc": 0.9348308767951625,
+    "pr_auc": 0.7784578976341312
+  },
+  {
+    "classifier": "Logistic Regression",
+    "behavior": "Attack",
+    "accuracy": 0.7563218390804598,
+    "precision": 0.615819209039548,
+    "recall": 0.7414965986394558,
+    "f1": 0.6728395061728395,
+    "roc_auc": 0.8441515495086924,
+    "pr_auc": 0.7131899635042095
+  },
+  {
+    "classifier": "Random Forest",
+    "behavior": "Sniffing",
+    "accuracy": 0.9540229885057471,
+    "precision": 0.8166666666666667,
+    "recall": 0.8448275862068966,
+    "f1": 0.8305084745762712,
+    "roc_auc": 0.9757614561419555,
+    "pr_auc": 0.7513233588838835
+  },
+  {
+    "classifier": "Gradient Boosting",
+    "behavior": "Sniffing",
+    "accuracy": 0.9517241379310345,
+    "precision": 0.8135593220338984,
+    "recall": 0.8275862068965517,
+    "f1": 0.8205128205128205,
+    "roc_auc": 0.9746638617031007,
+    "pr_auc": 0.7312315157660817
+  },
+  {
+    "classifier": "Logistic Regression",
+    "behavior": "Sniffing",
+    "accuracy": 0.7862068965517242,
+    "precision": 0.3722627737226277,
+    "recall": 0.8793103448275862,
+    "f1": 0.5230769230769231,
+    "roc_auc": 0.9009421018933504,
+    "pr_auc": 0.5205844492861235
+  }
+]

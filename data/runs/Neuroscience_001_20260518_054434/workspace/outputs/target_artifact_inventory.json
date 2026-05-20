@@ -1,0 +1,86 @@
+{
+  "primary_artifacts": [
+    {
+      "name": "Cross-model validation loss analysis",
+      "file": "report/images/fig1_validation_loss.png",
+      "status": "generated"
+    },
+    {
+      "name": "Resting potential heatmap across models",
+      "file": "report/images/fig2_resting_potentials_heatmap.png",
+      "status": "generated"
+    },
+    {
+      "name": "Time constant heatmap across models",
+      "file": "report/images/fig3_time_constants_heatmap.png",
+      "status": "generated"
+    },
+    {
+      "name": "Parameter scatter and variability analysis",
+      "file": "report/images/fig4_parameter_scatter.png",
+      "status": "generated"
+    },
+    {
+      "name": "Synapse strength distribution and variability",
+      "file": "report/images/fig5_synapse_strength.png",
+      "status": "generated"
+    },
+    {
+      "name": "Motion pathway (T4/T5) analysis",
+      "file": "report/images/fig6_motion_pathway.png",
+      "status": "generated"
+    },
+    {
+      "name": "Cross-model parameter correlation",
+      "file": "report/images/fig7_cross_model_correlation.png",
+      "status": "generated"
+    },
+    {
+      "name": "Excitation/inhibition balance analysis",
+      "file": "report/images/fig8_ei_balance.png",
+      "status": "generated"
+    },
+    {
+      "name": "Best model parameter profiles",
+      "file": "report/images/fig9_best_model_params.png",
+      "status": "generated"
+    },
+    {
+      "name": "Synapse count and connectivity analysis",
+      "file": "report/images/fig10_synapse_analysis.png",
+      "status": "generated"
+    },
+    {
+      "name": "Pathway depth analysis",
+      "file": "report/images/fig11_pathway_analysis.png",
+      "status": "generated"
+    },
+    {
+      "name": "PCA of model parameter space",
+      "file": "report/images/fig12_pca_analysis.png",
+      "status": "generated"
+    }
+  ],
+  "data_artifacts": [
+    {
+      "name": "All model parameters",
+      "file": "outputs/all_model_parameters.npz",
+      "status": "generated"
+    },
+    {
+      "name": "Analysis summary JSON",
+      "file": "outputs/analysis_summary.json",
+      "status": "generated"
+    },
+    {
+      "name": "Method contract",
+      "file": "outputs/method_contract.json",
+      "status": "generated"
+    }
+  ],
+  "report": {
+    "name": "Research report",
+    "file": "report/report.md",
+    "status": "completed"
+  }
+}

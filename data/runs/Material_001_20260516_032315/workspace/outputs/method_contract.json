@@ -1,0 +1,32 @@
+{
+  "task": "AI-driven materials discovery integrating multimodal data",
+  "workflows": [
+    {
+      "name": "property_prediction",
+      "description": "Train ML models to predict material properties from structural/compositional features",
+      "methods": ["Linear Regression", "Random Forest", "Gradient Boosting", "Neural Network"],
+      "metrics": ["MAE", "RMSE", "R²"],
+      "data_source": "File 1: property_prediction.py"
+    },
+    {
+      "name": "structure_generation",
+      "description": "Generate novel material structures using generative models on lattice parameters",
+      "methods": ["Kernel Density Estimation", "Gaussian Mixture Model", "VAE"],
+      "metrics": ["KL Divergence", "Wasserstein Distance", "Distribution Comparison"],
+      "data_source": "File 2: structure_generation.py"
+    },
+    {
+      "name": "experimental_optimization",
+      "description": "Optimize synthesis parameters using Bayesian optimization",
+      "methods": ["Bayesian Optimization (Gaussian Process)", "Grid Search", "Random Search"],
+      "metrics": ["Convergence Rate", "Number of Evaluations to Optimum"],
+      "data_source": "File 3: autonomous_optimization.py"
+    }
+  ],
+  "related_work_integration": [
+    "Materials Project (paper_000): High-throughput DFT computation framework",
+    "Physics-Informed ML (paper_001): Integrating physical constraints into ML models",
+    "CGCNN (paper_002): Crystal graph neural networks for property prediction",
+    "Dark Reactions (paper_003): ML on failed experiments for synthesis optimization"
+  ]
+}

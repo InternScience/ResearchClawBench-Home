@@ -1,0 +1,55 @@
+{
+  "task_name": "LLM Hartree-Fock Calculation Benchmark",
+  "paper": "2111.01152",
+  "paper_title": "Topological Phases in AB-Stacked MoTe2/WSe2: Z2 Topological Insulators, Chern Insulators, and Topological Charge Density Waves",
+  "target_system": "AB-stacked MoTe2/WSe2 moire heterobilayer",
+  "method_commitments": {
+    "primary_method": "Structured prompt template-based Hartree-Fock calculation",
+    "calculation_steps": [
+      "Construct Kinetic Hamiltonian (continuum, single-particle)",
+      "Define each term in Kinetic Hamiltonian",
+      "Construct Potential Hamiltonian",
+      "Define each term in Potential Hamiltonian",
+      "Convert single-particle to second-quantized (matrix form)",
+      "Convert single-particle to second-quantized (summation form)",
+      "Convert real-space to momentum-space Hamiltonian",
+      "Particle-hole transformation",
+      "Simplify Hamiltonian in particle-hole basis",
+      "Construct interaction Hamiltonian (momentum space)",
+      "Apply Wick's theorem for Hartree-Fock approximation",
+      "Extract quadratic terms",
+      "Swap indices to combine Hartree and Fock terms",
+      "Reduce momentum in Hartree term",
+      "Reduce momentum in Fock term",
+      "Combine Hartree and Fock terms"
+    ],
+    "scoring_dimensions": [
+      "in_paper",
+      "prompt_quality",
+      "follow_instructions",
+      "physics_logic",
+      "math_derivation",
+      "final_answer_accuracy"
+    ],
+    "annotators": ["Haining", "Will", "Yasaman"],
+    "evaluation_type": "Human evaluation of LLM outputs with per-dimension 0-2 scoring"
+  },
+  "key_physics": {
+    "system": "AB-stacked MoTe2/WSe2 heterobilayer",
+    "degrees_of_freedom": ["valley (+K, -K)", "layer (bottom, top)"],
+    "hamiltonian_parameters": {
+      "effective_masses": {"m_b": "0.65 m_e", "m_t": "0.35 m_e"},
+      "moire_wavevector": "kappa = 4pi/(3 a_M) (1,0)",
+      "intralayer_potential": "Delta_{b/t}(r)",
+      "interlayer_tunneling": "Delta_{T,tau}(r)",
+      "band_offset": "V_{zt}",
+      "coulomb_interaction": "dual-gate screened: V(k) = 2pi e^2 tanh(|k|d) / (epsilon |k|)"
+    }
+  },
+  "limitations": [
+    "Single paper evaluation - generalization not assessed",
+    "Single LLM evaluated - no model comparison",
+    "No self-consistent iteration or numerical implementation evaluated",
+    "Annotation subjectivity with 68-81% exact agreement"
+  ]
+}

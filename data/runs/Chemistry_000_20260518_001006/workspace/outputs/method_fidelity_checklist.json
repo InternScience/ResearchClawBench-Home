@@ -1,0 +1,41 @@
+{
+  "method": "KA-GNN with Fourier KAN",
+  "checklist": [
+    {
+      "component": "FourierKANLayer",
+      "definition": "Learnable univariate functions as Fourier series: sum_k(a_k sin(k*pi*x) + b_k cos(k*pi*x))",
+      "status": "Implemented",
+      "evidence": "code/kagnn_model.py FourierKANLayer.forward()"
+    },
+    {
+      "component": "KAN-based message function",
+      "definition": "KAN_msg([h_i || h_j || e_ij]) with edge gating",
+      "status": "Implemented",
+      "evidence": "code/kagnn_model.py KAGNNConv.forward()"
+    },
+    {
+      "component": "KAN-based update function",
+      "definition": "KAN_update([h_i || aggregated_messages])",
+      "status": "Implemented",
+      "evidence": "code/kagnn_model.py KAGNNConv.forward()"
+    },
+    {
+      "component": "Multi-feature atom/bond embeddings",
+      "definition": "Separate embedding tables per categorical feature",
+      "status": "Implemented",
+      "evidence": "code/kagnn_model.py MultiFeatureEmbedding"
+    },
+    {
+      "component": "Non-covalent edges",
+      "definition": "3D conformer-based edges within 5A cutoff",
+      "status": "Implemented",
+      "evidence": "code/train_eval.py smiles_to_graph()"
+    },
+    {
+      "component": "KAN-based prediction head",
+      "definition": "KAN layer in the readout MLP",
+      "status": "Implemented (partial: first layer is KAN, rest are Linear)",
+      "evidence": "code/kagnn_model.py KAGNN.pred_head"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "ByteTrack": {
+    "params": {
+      "high_thresh": 0.15,
+      "low_thresh": 0.1,
+      "match_thresh": 0.2,
+      "max_age": 20,
+      "min_hits": 2
+    },
+    "MOTA": 60.03,
+    "IDF1": 88.15,
+    "MOTP": 82.86,
+    "ID_Switches": 3473,
+    "FP": 1325,
+    "FN": 3195,
+    "MT": 199,
+    "ML": 0
+  },
+  "SparseTrack": {
+    "params": {
+      "n_layers": 3,
+      "high_thresh": 0.15,
+      "low_thresh": 0.1,
+      "match_thresh": 0.2,
+      "max_age": 20,
+      "min_hits": 2,
+      "depth_method": "position"
+    },
+    "MOTA": 58.6,
+    "IDF1": 88.48,
+    "MOTP": 82.84,
+    "ID_Switches": 3860,
+    "FP": 1396,
+    "FN": 3024,
+    "MT": 199,
+    "ML": 0
+  },
+  "ablation_layers": {
+    "L1": {
+      "MOTA": 57.57,
+      "IDF1": 87.59,
+      "IDS": 3821,
+      "MT": 199,
+      "ML": 0,
+      "FP": 1123,
+      "FN": 3541
+    },
+    "L2": {
+      "MOTA": 49.07,
+      "IDF1": 86.28,
+      "IDS": 4840,
+      "MT": 197,
+      "ML": 0,
+      "FP": 2155,
+      "FN": 3191
+    },
+    "L3": {
+      "MOTA": 56.0,
+      "IDF1": 87.8,
+      "IDS": 4163,
+      "MT": 199,
+      "ML": 0,
+      "FP": 1323,
+      "FN": 3314
+    },
+    "L4": {
+      "MOTA": 38.13,
+      "IDF1": 83.33,
+      "IDS": 5683,
+      "MT": 195,
+      "ML": 0,
+      "FP": 3413,
+      "FN": 3277
+    },
+    "L5": {
+      "MOTA": 52.84,
+      "IDF1": 87.12,
+      "IDS": 4490,
+      "MT": 197,
+      "ML": 0,
+      "FP": 1656,
+      "FN": 3287
+    }
+  },
+  "ablation_depth_methods": {
+    "scale": {
+      "MOTA": 50.43,
+      "IDF1": 85.96,
+      "IDS": 4575
+    },
+    "position": {
+      "MOTA": 58.6,
+      "IDF1": 88.48,
+      "IDS": 3860
+    },
+    "combined": {
+      "MOTA": 56.0,
+      "IDF1": 87.8,
+      "IDS": 4163
+    }
+  }
+}

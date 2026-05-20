@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "torch": {"available": true, "version": "2.10.0"},
+    "torch_geometric": {"available": true, "version": "2.7.0"},
+    "numpy": {"available": true},
+    "scikit-learn": {"available": true},
+    "scipy": {"available": true},
+    "matplotlib": {"available": true},
+    "seaborn": {"available": true},
+    "pandas": {"available": true}
+  },
+  "limitations": [
+    "pyg_lib not available - using pure PyTorch implementations for GNN operations",
+    "No GPU detected - all computation on CPU",
+    "Full dynamic graph training across all snapshots was infeasible due to time constraints - single snapshot used",
+    "GNN message passing over full graphs (1M nodes) is computationally expensive on CPU"
+  ],
+  "fallbacks": [
+    "GNN training limited to 1 snapshot and 30 epochs instead of full temporal training",
+    "Edge classifier trained on disentangled features as primary DIDS-MFL evaluation",
+    "Graph windows increased to 12h (from 1h) to reduce number of snapshots",
+    "SVM trained on 10K subset due to O(n^2) kernel complexity"
+  ],
+  "named_method_fidelity": {
+    "statistical_disentanglement": "PCA+ICA hybrid instead of SMT-based MI optimization from 3D-IDS. Rationale: SMT solvers not available; PCA+ICA achieves comparable decorrelation and independence maximization.",
+    "representational_disentanglement": "Factor-wise GAT + covariance regularization approximates the representational disentanglement from 3D-IDS.",
+    "dynamic_graph_diffusion": "Simplified GNN aggregation replacing the full non-linear graph diffusion from 3D-IDS.",
+    "multi_scale_fusion": "Bi-similarity prototype network adapted from BSNet few-shot learning framework."
+  }
+}

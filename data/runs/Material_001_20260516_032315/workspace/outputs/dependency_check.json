@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "numpy": {"required": true, "available": true},
+    "scipy": {"required": true, "available": true},
+    "scikit-learn": {"required": true, "available": true},
+    "matplotlib": {"required": true, "available": true},
+    "seaborn": {"required": true, "available": true},
+    "json": {"required": true, "available": true, "note": "stdlib"},
+    "os": {"required": true, "available": true, "note": "stdlib"}
+  },
+  "limitations": [
+    "No GPU available for deep learning (PyTorch/TensorFlow not used)",
+    "CGCNN not implemented (requires PyTorch + crystal structure files)",
+    "PINNs not implemented (requires PyTorch + PDE formulation)",
+    "Dataset is synthetic and small (97-101 samples per workflow)",
+    "Single feature available for property prediction (real applications use 10s-100s of features)"
+  ],
+  "fallbacks": [
+    "Used sklearn MLPRegressor instead of PyTorch neural networks",
+    "Used sklearn GMM/KDE instead of VAE for structure generation",
+    "Used Gaussian Process (sklearn) for Bayesian optimization instead of specialized BO libraries"
+  ]
+}

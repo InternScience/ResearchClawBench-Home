@@ -1,0 +1,50 @@
+{
+  "task": "SXS BBH Waveform Accuracy Analysis",
+  "artifacts": [
+    {
+      "name": "summary_statistics.json",
+      "status": "satisfied",
+      "description": "Comprehensive summary statistics for all three datasets"
+    },
+    {
+      "name": "accuracy_thresholds.json",
+      "status": "satisfied",
+      "description": "Fraction of simulations meeting various accuracy thresholds"
+    },
+    {
+      "name": "modal_correlation_matrix.csv",
+      "status": "satisfied",
+      "description": "Pearson correlation matrix between modal errors at different \u2113"
+    },
+    {
+      "name": "fig1_resolution_error.png",
+      "status": "satisfied",
+      "description": "Resolution error distribution: histogram, CDF, and box plot"
+    },
+    {
+      "name": "fig2_modal_errors.png",
+      "status": "satisfied",
+      "description": "Modal waveform differences: violin plots, median trend, CDF by \u2113"
+    },
+    {
+      "name": "fig3_extrapolation_errors.png",
+      "status": "satisfied",
+      "description": "Extrapolation order comparison: histograms, box plot, scatter"
+    },
+    {
+      "name": "fig4_summary_dashboard.png",
+      "status": "satisfied",
+      "description": "Comprehensive summary dashboard with 6 panels"
+    },
+    {
+      "name": "fig5_modal_correlation.png",
+      "status": "satisfied",
+      "description": "Correlation matrix between modal errors"
+    },
+    {
+      "name": "fig6_error_comparison.png",
+      "status": "satisfied",
+      "description": "Cross-comparison of resolution vs extrapolation errors"
+    }
+  ]
+}

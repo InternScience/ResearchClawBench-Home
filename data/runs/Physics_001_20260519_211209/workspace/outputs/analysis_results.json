@@ -1,0 +1,26 @@
+{
+  "carrier_density": {
+    "mean_ratio_geom_conv": 4.565012014264696,
+    "mean_ratio_hole_conv": 55.268020807816065,
+    "mean_ratio_electron_conv": 52.50461576389423,
+    "max_ratio_geom_conv": 5.143889859801115,
+    "max_ratio_hole_conv": 87.43746732635526,
+    "max_ratio_electron_conv": 83.06559390396666
+  },
+  "temperature_dependence": {
+    "fitted_exponent_n": 4.999999999999999,
+    "fitted_exponent_n_err": 0.5181006269738634,
+    "chi2_vs_bcs": 38926.63691317055,
+    "chi2_vs_nodal": 99801.17404574629,
+    "chi2_vs_power_fit": 31354.28423574782,
+    "lowT_exponent_n": 0.7806883178997223,
+    "lowT_exponent_n_err": 0.006869553890348367,
+    "loglog_slope": 0.7791889533340022
+  },
+  "current_dependence": {
+    "Dc_fit_Ds0": 94.35601039163225,
+    "Dc_fit_Ic": 35.282786946740174,
+    "MW_fit_Ds0": 100.98352193746162,
+    "MW_fit_quadratic_coeff_a": 0.030984303406420877
+  }
+}

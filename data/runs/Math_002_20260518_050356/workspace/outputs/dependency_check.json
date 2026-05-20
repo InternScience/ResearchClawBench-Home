@@ -1,0 +1,30 @@
+{
+  "pytorch": {
+    "version": "2.10.0",
+    "available": true
+  },
+  "numpy": {
+    "version": "2.2.6",
+    "available": true
+  },
+  "matplotlib": {
+    "version": "3.10.8",
+    "available": true
+  },
+  "seaborn": {
+    "version": "0.13.2",
+    "available": true
+  },
+  "gymnasium": {
+    "available": false,
+    "note": "Using custom environment instead"
+  },
+  "stable_baselines3": {
+    "available": false,
+    "note": "Using custom A3C implementation"
+  },
+  "mapf_solver": {
+    "available": false,
+    "note": "Implementing core components from scratch"
+  }
+}

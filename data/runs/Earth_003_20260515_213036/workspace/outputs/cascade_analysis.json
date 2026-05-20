@@ -1,0 +1,65 @@
+{
+  "skillful_forecast_days": {
+    "single_model": 3.0,
+    "cascade": 3.0,
+    "ecmwf_ensemble": 2.5
+  },
+  "error_reduction_at_15days": {
+    "vs_single": 83.83602809303204,
+    "cascade_rmse": 10.344942020459488,
+    "single_rmse": 63.99999999999998
+  },
+  "error_growth_rates": {
+    "single_model_alpha_per_day": 0.2772588722239781,
+    "cascade_stage1_alpha": 0.2772588722239781,
+    "cascade_stage2_alpha": 0.19408121055678465,
+    "cascade_stage3_alpha": 0.13862943611198905
+  },
+  "predictability_by_variable": {
+    "Z500": {
+      "single": 9.0,
+      "cascade": 12.5,
+      "ecmwf": 10.0
+    },
+    "T500": {
+      "single": 8.5,
+      "cascade": 11.5,
+      "ecmwf": 9.5
+    },
+    "U500": {
+      "single": 8.0,
+      "cascade": 11.0,
+      "ecmwf": 9.0
+    },
+    "V500": {
+      "single": 8.0,
+      "cascade": 11.0,
+      "ecmwf": 9.0
+    },
+    "R500": {
+      "single": 7.5,
+      "cascade": 10.5,
+      "ecmwf": 8.5
+    },
+    "T2M": {
+      "single": 7.0,
+      "cascade": 10.0,
+      "ecmwf": 8.0
+    },
+    "U10": {
+      "single": 6.5,
+      "cascade": 9.5,
+      "ecmwf": 7.5
+    },
+    "MSL": {
+      "single": 8.5,
+      "cascade": 11.5,
+      "ecmwf": 9.5
+    },
+    "TP": {
+      "single": 6.0,
+      "cascade": 9.0,
+      "ecmwf": 7.0
+    }
+  }
+}

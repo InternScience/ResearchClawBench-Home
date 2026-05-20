@@ -1,0 +1,54 @@
+{
+  "total_mangrove_points": 100000,
+  "slr_risk": {
+    "ssp245": {
+      "high_risk_points": 91815,
+      "moderate_risk_points": 7965,
+      "low_risk_points": 220,
+      "mean_rate_mm_yr": 8.241454999999998
+    },
+    "ssp370": {
+      "high_risk_points": 99780,
+      "moderate_risk_points": 220,
+      "low_risk_points": 0,
+      "mean_rate_mm_yr": 11.307881
+    },
+    "ssp585": {
+      "high_risk_points": 99950,
+      "moderate_risk_points": 50,
+      "low_risk_points": 0,
+      "mean_rate_mm_yr": 13.56948
+    }
+  },
+  "tc_risk": {
+    "ssp245": {
+      "mean_normalized_risk": 0.17240157595206096,
+      "high_risk_points": 12629
+    },
+    "ssp370": {
+      "mean_normalized_risk": 0.1957610506272401,
+      "high_risk_points": 14404
+    },
+    "ssp585": {
+      "mean_normalized_risk": 0.21035445210573478,
+      "high_risk_points": 17429
+    }
+  },
+  "composite_risk": {
+    "ssp245": {
+      "mean_risk": 0.26439667456828664,
+      "high_risk_points": 21545,
+      "extreme_risk_points": 12595
+    },
+    "ssp370": {
+      "mean_risk": 0.2914373151673094,
+      "high_risk_points": 24623,
+      "extreme_risk_points": 14404
+    },
+    "ssp585": {
+      "mean_risk": 0.3038136968888382,
+      "high_risk_points": 26171,
+      "extreme_risk_points": 17593
+    }
+  }
+}

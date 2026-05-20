@@ -49,8 +49,12 @@ MODEL_TOKEN_PRICING_PER_MTOK = {
     "gemini-3.1-pro": {"input": 2.0, "output": 12.0},
     "glm-5.1": {"input": 1.4, "output": 4.4},
     "grok-4.1": {"input": 0.2, "output": 0.5},
+    "grok-4.3": {"input": 1.25, "output": 2.5},
     "kimi-k2.5": {"input": 0.6, "output": 3.0},
+    "kimi-k2.6": {"input": 0.95, "output": 4.0},
     "mimo-v2-pro": {"input": 1.0, "output": 3.0},
+    "mimo-v2.5": {"input": 0.4, "output": 2.0},
+    "deepseek-v4-pro": {"input": 0.435, "output": 0.87},
     "qwen3.5-397b-a17b": {"input": 0.6, "output": 3.6},
     "qwen3.6-plus": {"input": 0.5, "output": 3.0},
 }
@@ -63,8 +67,12 @@ MODEL_DISPLAY_NAMES = {
     "gemini-3.1-pro": "Gemini-3.1-Pro",
     "glm-5.1": "GLM-5.1",
     "grok-4.1": "Grok-4.1",
+    "grok-4.3": "Grok-4.3",
     "kimi-k2.5": "Kimi-K2.5",
+    "kimi-k2.6": "Kimi-K2.6",
     "mimo-v2-pro": "MiMo-V2-Pro",
+    "mimo-v2.5": "MiMo-V2.5",
+    "deepseek-v4-pro": "DeepSeek-V4-Pro",
     "qwen3.5-397b-a17b": "Qwen3.5-397B-A17B",
     "qwen3.6-plus": "Qwen3.6-Plus",
 }
@@ -78,7 +86,7 @@ AGENT_DEFAULT_MODELS = {
 # Bump when task export output/schema changes and existing cached signatures must be invalidated.
 TASK_EXPORT_VERSION = 4
 # Bump when run export output/schema changes and existing cached signatures must be invalidated.
-RUN_EXPORT_VERSION = 8
+RUN_EXPORT_VERSION = 9
 TASK_EXPORT_MANIFEST = EXPORT_STATE_DIR / "task_export_manifest.json"
 RUN_EXPORT_MANIFEST = EXPORT_STATE_DIR / "run_export_manifest.json"
 RUN_OUTPUT_FILES = ["_agent_output.jsonl", "_claude_output.jsonl"]

@@ -1,0 +1,61 @@
+{
+  "related_work_summary": [
+    {
+      "paper_id": "paper_000",
+      "title": "Continuous Mott transition in semiconductor moire superlattices",
+      "authors": "T. Li, S. Jiang, L. Li, Y. Zhang, K. Kang, et al.",
+      "relevance": "Foundational experimental work on MoTe2/WSe2 moire system showing Mott transition and continuous tuning of interaction strength. Directly studies the same physical system as our benchmark paper (2111.01152).",
+      "key_contributions": [
+        "Experimental demonstration of continuous Mott transition in MoTe2/WSe2",
+        "Electric tuning of effective interaction strength U/W",
+        "Scaling behavior of resistance near quantum critical point"
+      ],
+      "method_impact": "Validates the physical relevance of the Hartree-Fock calculations being evaluated - the system has rich experimental phenomenology requiring theoretical HF treatment."
+    },
+    {
+      "paper_id": "paper_001",
+      "title": "Language Models are Few-Shot Learners (GPT-3)",
+      "authors": "T. Brown, B. Mann, N. Ryder, et al.",
+      "relevance": "Foundational work establishing LLM capability for task-agnostic reasoning. Demonstrates scaling laws for few-shot learning that underlie the expectation that LLMs can perform domain-specific reasoning.",
+      "key_contributions": [
+        "175B parameter autoregressive language model",
+        "Strong few-shot performance without fine-tuning",
+        "Log-linear scaling trends in performance",
+        "In-context learning capability"
+      ],
+      "method_impact": "Provides the theoretical foundation for expecting LLMs to perform complex physics calculations when given structured prompts. The structured template approach extends few-shot learning to multi-step scientific reasoning."
+    },
+    {
+      "paper_id": "paper_002",
+      "title": "Solving Quantitative Reasoning Problems with Language Models (Minerva)",
+      "authors": "A. Lewkowycz, A. Andreassen, D. Dohan, et al.",
+      "relevance": "Direct predecessor evaluating LLM quantitative reasoning on physics problems. Shows LLMs can solve ~30% of undergraduate physics problems correctly.",
+      "key_contributions": [
+        "LLM achieves ~30% on undergraduate STEM problems",
+        "Training on technical content improves quantitative reasoning",
+        "Chain-of-thought reasoning for step-by-step solutions",
+        "Model generates complete self-contained solutions"
+      ],
+      "method_impact": "Our benchmark extends Minerva's approach from undergraduate problem-solving to research-level multi-step derivations, using structured templates instead of chain-of-thought."
+    },
+    {
+      "paper_id": "paper_003",
+      "title": "Galactica: A Large Language Model for Science",
+      "authors": "R. Taylor, M. Kardas, G. Cucurull, et al.",
+      "relevance": "Demonstrates that LLMs trained on scientific corpora can store and reason about scientific knowledge. Outperforms GPT-3 on LaTeX equations (68.2% vs 49.0%).",
+      "key_contributions": [
+        "Scientific corpus training improves domain performance",
+        "Strong performance on LaTeX equations and scientific reasoning",
+        "Task-specific tokens for scientific interface",
+        "Curated high-quality scientific dataset design"
+      ],
+      "method_impact": "Suggests that LLMs with scientific pre-training could potentially improve the paper extraction step (in-paper content scoring), which is currently the weakest dimension in our benchmark."
+    }
+  ],
+  "cross_paper_insights": [
+    "The MoTe2/WSe2 system has strong experimental motivation requiring accurate theoretical modeling",
+    "LLM quantitative reasoning has been demonstrated at undergraduate but not research level",
+    "Scientific corpus pre-training may improve domain-specific accuracy",
+    "Structured interfaces (templates, task tokens) are critical for scientific applications"
+  ]
+}

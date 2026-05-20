@@ -1,0 +1,44 @@
+{
+  "task": "Develop a composite risk index combining tropical cyclone regime shifts and sea level rise, applied globally to evaluate mangrove ecosystem risk by end of century.",
+  "method_commitments": [
+    {
+      "name": "Composite Risk Index (CRI)",
+      "definition": "CRI = SLR_Risk_Score + TC_Projected_Risk_Score, additive combination of normalized hazard components",
+      "range": "0 to 5, mapped to Very Low / Low / Moderate / High / Very High categories",
+      "justification": "Additive model allows transparent decomposition and avoids multiplicative artifacts when one component is near-zero"
+    },
+    {
+      "name": "SLR Risk Component",
+      "definition": "Based on median RSLR rate for 2080-2100 from IPCC AR6 regional projections. Thresholds from Saintilan et al. (2023): <4 mm/yr (Low), 4-7 mm/yr (Moderate), >=7 mm/yr (High)",
+      "data_source": "IPCC AR6 sea-level change projections (Garner et al., 2021), SSP2-4.5, SSP3-7.0, SSP5-8.5"
+    },
+    {
+      "name": "TC Risk Component",
+      "definition": "Baseline TC frequency from MIT historical tracks (1850-2014) combined with regional projected shift factors from Mo et al. (2023) and Kropf et al. (2023). Categories based on Saffir-Simpson scale.",
+      "data_source": "MIT model downscaled from MPI-ESM1-2-HR (Emanuel et al., 2006)"
+    },
+    {
+      "name": "Global Application",
+      "definition": "Applied to 100,000 sampled mangrove points from Global Mangrove Watch v4 (Bunting et al., 2018)",
+      "scope": "Global, all mangrove-bearing coastlines"
+    },
+    {
+      "name": "Ecosystem Services Integration",
+      "definition": "Country-level mangrove area, at-risk population, and beneficiary population from UCSC CWON dataset",
+      "purpose": "Assess human dimensions of mangrove risk"
+    }
+  ],
+  "key_references": [
+    "Saintilan et al. (2023) - Nature: SLR thresholds for coastal habitat retreat",
+    "Mo et al. (2023) - Frontiers in Ecology: TC risk to mangroves",
+    "Kropf et al. (2023) - Preprint: Ecosystem vulnerability to TCs",
+    "Krauss & Osland (2019) - Annals of Botany: TC effects on mangroves",
+    "Dabala et al. (2023) - Nature Communications: Mangrove conservation priorities"
+  ],
+  "limitations": [
+    "Mangrove data sampled to 10% for computational efficiency",
+    "TC shift factors use simplified regional averages rather than grid-cell projections",
+    "No dynamic vegetation model; static risk assessment",
+    "SLR rates come from medium-confidence regional projections with inherent uncertainty"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "n_cells_per_rep": {
+    "0": 99,
+    "1": 99,
+    "2": 100,
+    "3": 100,
+    "4": 100,
+    "5": 98,
+    "6": 100,
+    "7": 100,
+    "8": 99,
+    "9": 100
+  },
+  "n_unique_peptides": 164,
+  "n_unique_mutations": 11,
+  "selected_vaccine_elements": [
+    "mut11",
+    "mut12",
+    "mut15",
+    "mut19",
+    "mut20",
+    "mut26",
+    "mut28",
+    "mut33",
+    "mut39",
+    "mut44"
+  ],
+  "vaccine_budget": 10,
+  "n_repetitions": 10,
+  "p_response_summary": {
+    "mean": 0.9427470300116586,
+    "std": 0.09153692089155507,
+    "median": 0.9630025369027599,
+    "min": 1.7999838891502584e-05,
+    "max": 0.999999998265884
+  },
+  "num_presented_peptides_summary": {
+    "mean": 17.348,
+    "std": 4.139327243650833,
+    "min": 0.0,
+    "max": 30.0
+  },
+  "n_cells_total": 1000
+}

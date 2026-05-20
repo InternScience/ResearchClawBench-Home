@@ -1,0 +1,70 @@
+{
+  "primary_figures": [
+    {
+      "name": "figure1_global_tc_frequency.png",
+      "description": "Global map of tropical cyclone frequency with mangrove locations",
+      "status": "completed"
+    },
+    {
+      "name": "figure2_composite_risk_maps.png",
+      "description": "Composite risk maps for three SSP scenarios (SSP2-4.5, SSP3-7.0, SSP5-8.5)",
+      "status": "completed"
+    },
+    {
+      "name": "figure3_risk_distribution.png",
+      "description": "Distribution of mangrove risk levels by SSP scenario",
+      "status": "completed"
+    },
+    {
+      "name": "figure4_slr_vs_tc_risk.png",
+      "description": "Scatter plot of SLR risk vs TC risk components",
+      "status": "completed"
+    },
+    {
+      "name": "figure5_regional_analysis.png",
+      "description": "Regional analysis of mangrove risk across different ocean basins",
+      "status": "completed"
+    },
+    {
+      "name": "figure6_risk_heatmap.png",
+      "description": "Heatmap of composite risk by region and scenario",
+      "status": "completed"
+    },
+    {
+      "name": "figure7_cumulative_distribution.png",
+      "description": "Cumulative distribution of composite risk index",
+      "status": "completed"
+    },
+    {
+      "name": "figure8_summary_table.png",
+      "description": "Summary statistics table for the risk analysis",
+      "status": "completed"
+    }
+  ],
+  "primary_tables": [
+    {
+      "name": "risk_summary.json",
+      "description": "Summary statistics of risk analysis results",
+      "status": "completed"
+    },
+    {
+      "name": "mangrove_risk_results.csv",
+      "description": "Full dataset of risk scores for all mangrove locations",
+      "status": "completed"
+    }
+  ],
+  "interpretability_artifacts": [
+    {
+      "name": "method_contract.json",
+      "description": "Description of the CMRI methodology and risk thresholds",
+      "status": "completed"
+    }
+  ],
+  "validation_artifacts": [
+    {
+      "name": "figure4_slr_vs_tc_risk.png",
+      "description": "Validation of relationship between SLR and TC risk components",
+      "status": "completed"
+    }
+  ]
+}

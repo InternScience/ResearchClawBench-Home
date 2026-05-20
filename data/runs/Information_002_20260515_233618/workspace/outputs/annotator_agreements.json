@@ -1,0 +1,750 @@
+[
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "system",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "real|momentum",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "single-particle|second-quantized",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "degrees_of_freedom",
+    "scores": {
+      "Haining": 1,
+      "Will": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "kinetic_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "variable",
+    "scores": {
+      "Haining": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "order",
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "Note that the sublattice degrees of freedom is suppressed for now and will be stated later",
+    "scores": {
+      "Haining": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Kinetic Hamiltonian (continuum version, single-particle)",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "Energy_dispersion",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "parabolic|Dirac|cos",
+    "scores": {
+      "Haining": 2,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "electrons|holes",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "In addition, a shift of {momentum_shift} in the momentum ${k_symbol}$ for {shifted_Ek}, respectively.",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "momentum_shift",
+    "scores": {
+      "Haining": 1,
+      "Will": 0,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "k_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "shifted_Ek",
+    "scores": {
+      "Haining": 0,
+      "Will": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "r_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "kinetic_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Kinetic Hamiltonian (continuum version)",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "potential_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "real|momentum",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "single-particle|second-quantized",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "diagonal_potential",
+    "scores": {
+      "Haining": 0,
+      "Will": 1,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "potential_degrees_of_freedom",
+    "scores": {
+      "Haining": 1,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "offdiagonal_potential",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct Potential Hamiltonian (continuum version)",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Define each term in Potential Hamiltonian (continuum version)",
+    "placeholder": "potential_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Define each term in Potential Hamiltonian (continuum version)",
+    "placeholder": "Potential_variables",
+    "scores": {
+      "Haining": 1,
+      "Will": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Define each term in Potential Hamiltonian (continuum version)",
+    "placeholder": "expression_diag",
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Define each term in Potential Hamiltonian (continuum version)",
+    "placeholder": "expression_offdiag",
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Define each term in Potential Hamiltonian (continuum version)",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "real|momentum",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "nonint_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "kinetic_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "potential_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "$r$|$k$",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "second_nonint_symbol",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in matrix",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+    "placeholder": "second_nonint_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+    "placeholder": "matrix_element_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+    "placeholder": "basis_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert from single-particle to second-quantized form, return in summation (expand the matrix)",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "real_creation_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "momentum_creation_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "definition_of_Fourier_Transformation",
+    "scores": {
+      "Haining": 0,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "real_variable",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "entire_real|first_Brillouin_Zone",
+    "scores": {
+      "Haining": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "second_nonint_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Convert noninteracting Hamiltonian in real space to momentum space (continuum version)",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "hole_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "particle_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "particle_creation_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "hole_creation_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "particle_annihilation_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "hole_annihilation_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "second_nonint_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Particle-hole transformation",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "placeholder": "second_nonint_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "placeholder": "hole_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "placeholder": "index_1",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "placeholder": "index_2",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "placeholder": "op",
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "placeholder": "Ham_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Simplify the Hamiltonian in the particle-hole basis",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "second_int_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "index_of_operator",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "momentum",
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "For each operator, the total momentum is the sum of moire reciprocal lattice $b_i$ and momentum with in the first BZ $k_i$",
+    "scores": {
+      "Haining": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "interaction",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "int_form",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "normalization_factor",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "op",
+    "scores": {
+      "Haining": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Construct interaction Hamiltonian (momentum space)",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Wick's theorem",
+    "placeholder": "second_int_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Wick's theorem",
+    "placeholder": "Hartree_Fock_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Wick's theorem",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Extract quadratic term",
+    "placeholder": "Hartree_Fock_term_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Extract quadratic term",
+    "placeholder": "bilinear_op",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Extract quadratic term",
+    "placeholder": "Hartree_Fock_second_quantized_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Extract quadratic term",
+    "placeholder": "definition_of_variables",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Swap the index to combine Hartree and Fock terms",
+    "placeholder": "Hartree_Fock_second_quantized_symbol",
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Swap the index to combine Hartree and Fock terms",
+    "placeholder": "expected_value",
+    "scores": {
+      "Haining": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task": "Swap the index to combine Hartree and Fock terms",
+    "placeholder": "expression_Hartree_1",
+    "scores": {
+      "Haining": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task": "Swap the index to combine Hartree and Fock terms",
+    "placeholder": "expression_Hartree_2",
+    "scores": {
+      "Haining": 1,
+      "Yasaman": 1
+    }
+  }
+]

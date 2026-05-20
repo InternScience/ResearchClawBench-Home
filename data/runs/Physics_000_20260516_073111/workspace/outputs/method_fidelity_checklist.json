@@ -1,0 +1,43 @@
+{
+  "method": "Multi-component icosahedral shell packing theory",
+  "definition": "A theoretical framework that predicts stable multi-shell icosahedral structures by optimizing size mismatch between adjacent shells categorized by chiral type",
+  "assumptions": [
+    "Atoms can be treated as hard spheres with well-defined radii",
+    "Shells are constructed on a hexagonal lattice projected onto an icosahedron",
+    "Size mismatch is the primary determinant of shell stability",
+    "Lennard-Jones potentials adequately describe interatomic interactions",
+    "Growth proceeds via sequential shell addition"
+  ],
+  "invariants": [
+    "Icosahedral symmetry (I or I_h) is preserved",
+    "Shell atom counts follow magic number sequences",
+    "Chiral categories are discrete (MC, BG, Ch1-Ch5)",
+    "Size mismatch is computed as |r_outer - r_inner| / r_inner"
+  ],
+  "non_negotiable_steps": [
+    "Compute Mackay magic numbers from formula N_k = (10k^3 - 15k^2 + 11k - 3)/3",
+    "Determine chiral category for each shell based on hexagonal lattice path",
+    "Calculate size mismatch for candidate element pairs",
+    "Compare mismatch against optimal ranges for relevant transition type",
+    "Validate against experimental data points"
+  ],
+  "implementation_fidelity": {
+    "mackay_numbers": "exact",
+    "chiral_categories": "faithful_to_data",
+    "size_mismatch": "exact",
+    "lj_potentials": "standard_implementation",
+    "growth_simulation": "coarse_grained_approximation"
+  },
+  "deviations": [
+    {
+      "step": "Full molecular dynamics growth simulation",
+      "deviation": "Used path-based probabilistic model instead",
+      "reason": "Full MD simulation requires specialized software and significant computational resources not available in this environment"
+    },
+    {
+      "step": "First-principles (DFT) interaction energies",
+      "deviation": "Used Lennard-Jones potentials with provided parameters",
+      "reason": "DFT calculations require specialized quantum chemistry packages not available"
+    }
+  ]
+}

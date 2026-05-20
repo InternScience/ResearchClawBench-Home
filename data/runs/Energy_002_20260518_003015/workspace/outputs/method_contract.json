@@ -1,0 +1,29 @@
+{
+  "task": "Build a transparent geospatial levelized-cost model to estimate the delivered cost of African green hydrogen to Europe (via ammonia shipping and reconversion) by 2030 under multiple financing and policy scenarios",
+  "methodological_commitments": [
+    "Geospatial LCOH model following GeoH2 / Müller et al. framework",
+    "Ammonia as hydrogen carrier for transshipment to Europe",
+    "Multiple financing scenarios varying WACC/discount rate",
+    "Comparison with European domestic green hydrogen production baseline",
+    "Identify least-cost and competitive locations",
+    "Quantify de-risking impact on cost competitiveness"
+  ],
+  "named_parameters_from_related_work": [
+    "PV CAPEX (€/MW): 1,470,000 (2023), projected ~900,000 by 2030",
+    "Wind CAPEX (€/MW): 1,580,000 (2023), projected ~1,100,000 by 2030",
+    "Electrolyzer CAPEX (€/MW): 1,250,000 (2023), projected ~600,000 by 2030",
+    "Electrolyzer efficiency: 0.59 kWhH2/kWhel (PEM)",
+    "Ammonia synthesis electricity: 2.809 kWh/kgH2",
+    "Ammonia cracking heat: 4.2 kWh/kgH2",
+    "Water demand: 21 L/kgH2",
+    "Discount rates: 6-8% (Africa baseline), 3-5% (Europe)"
+  ],
+  "target_artifacts": [
+    "LCOH cost breakdown per site (JSON)",
+    "Scenario comparison table (WACC sensitivity)",
+    "Map of delivered cost to Europe",
+    "Cost breakdown bar charts",
+    "Competitiveness analysis vs European baseline",
+    "Country-level summary statistics"
+  ]
+}

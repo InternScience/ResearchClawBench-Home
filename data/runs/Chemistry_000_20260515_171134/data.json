@@ -1,0 +1,45 @@
+{
+  "run_id": "Chemistry_000_20260515_171134",
+  "task_id": "Chemistry_000",
+  "timestamp": "20260515_171134",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Grok-4.3)",
+  "model": "Grok-4.3",
+  "model_display": "Grok-4.3",
+  "duration_seconds": 1540,
+  "cost_usd": 0.802083,
+  "score": {
+    "run_id": "Chemistry_000_20260515_171134",
+    "task_id": "Chemistry_000",
+    "agent_name": "ResearchHarness (Grok-4.3)",
+    "items": [
+      {
+        "index": 0,
+        "type": "image",
+        "content": "KA-GNN (including KA-GCN and KA-GAT variants) consistently outperforms conventional GNN architectures across seven MoleculeNet benchmark datasets, achieving state-of-the-art ROC-AUC scores. In particu",
+        "weight": 0.45,
+        "score": 18,
+        "reasoning": "Mode A applies since the criterion is quantitative ROC-AUC performance versus GCN/GAT baselines across seven datasets. The AI report only shows KA-GNN AUCs for five datasets, omits any comparison to GCN/GAT baselines, does not include SIDER and Tox21, and lacks standard deviations; thus it cannot demonstrate superiority or match the table from the paper. Quantitative content is present but incomplete and not aligned with the target figure/table."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "Fourier-series-based KAN modules provide stronger function approximation capability than B-spline and polynomial variants, leading to superior predictive accuracy and lower computational cost. Theoret",
+        "weight": 0.35,
+        "score": 12,
+        "reasoning": "This criterion is primarily qualitative, requiring theoretical and mechanistic comparison of Fourier-based KANs versus B-spline/polynomial variants and MLPs, along with discussion of universal approximation, convergence, and computational efficiency, so Mode B applies. The report only briefly claims that FourierKAN has strong expressive power and interpretability but provides no explicit comparison to B-spline or polynomial KANs, no discussion of reduced parameter redundancy, no statement or sketch of a universal approximation theorem, and no empirical runtime or convergence analysis versus MLPs or other variants. As a result, it barely touches the key aspects and lacks substantive analysis or evidence."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "KA-GAT provides improved interpretability by highlighting chemically meaningful functional groups and substructures through gradient-based saliency maps and subgraph masking techniques. The model iden",
+        "weight": 0.2,
+        "score": 5,
+        "reasoning": "This criterion concerns qualitative interpretability analysis (saliency maps, functional group identification, subgraph masking), so Mode B applies. The report only makes a brief, generic claim that FourierKAN modules offer interpretability via inspection of univariate transformations, with no atom/bond-level saliency maps, no mention of fluoro/amide/aromatic groups, no subgraph extraction (e.g., GNNExplainer), and no comparison to baseline GNN interpretability. Thus, it essentially fails to address the specified interpretability criterion."
+      }
+    ],
+    "total_score": 13.3,
+    "total_weight": 1.0
+  },
+  "report": "# KA-GNN for Molecular Property Prediction\n\n## Abstract\nWe propose Kolmogorov–Arnold Graph Neural Networks (KA-GNNs), a novel architecture that replaces conventional MLP-based transformations in graph neural networks with Fourier-based Kolmogorov–Arnold network (KAN) modules. The model processes molecular graphs derived from SMILES strings, incorporating atom- and bond-level features (covalent and non-covalent interactions) to predict molecular properties including toxicity, bioactivity, and physiological effects. Experiments on BACE, BBBP, ClinTox, HIV, and MUV benchmarks demonstrate competitive accuracy and AUC while providing enhanced interpretability through the explicit functional form of KAN modules.\n\n## 1. Introduction\nTraditional graph neural networks for molecular property prediction rely on multilayer perceptrons (MLPs) for message-passing and update functions. While effective, MLPs lack strong theoretical approximation guarantees and can be computationally inefficient for high-dimensional molecular features. Kolmogorov–Arnold Networks (KANs) offer a theoretically grounded alternative based on the Kolmogorov–Arnold representation theorem, approximating multivariate functions through univariate transformations. By integrating Fourier-based KAN modules into the GNN message-passing framework, KA-GNNs aim to improve predictive performance, computational efficiency, and interpretability.\n\n## 2. Methodology\n\n### 2.1 Data Preparation\nMolecules are represented as graphs where:\n- Nodes correspond to atoms with 9-dimensional features (atomic number, degree, formal charge, hybridization, aromaticity, etc.).\n- Edges represent bonds (covalent and non-covalent) with 3-dimensional features (bond type, conjugation, ring membership).\nSMILES strings from the provided CSV files are converted to graph representations using RDKit.\n\n### 2.2 Kolmogorov–Arnold Graph Neural Network Architecture\nThe KA-GNN model consists of:\n- **Node and Edge Encoders**: Linear layers mapping raw features to a hidden dimension (64).\n- **KAGNN Layers** (3 layers): Each layer performs message passing using FourierKAN modules for both message and update functions. Mean aggregation is used.\n- **Global Mean Pooling** followed by a classifier head producing task-specific logits.\n- **FourierKAN Module**: Approximates functions via learnable Fourier coefficients over a fixed number of frequencies (default 8), providing strong expressive power with theoretical guarantees.\n\nLoss: Binary cross-entropy with logits (BCEWithLogitsLoss).  \nOptimizer: Adam (lr = 0.001).  \nTraining: 30 epochs per dataset.\n\n### 2.3 Multi-Task Handling\nFor datasets with multiple binary tasks (ClinTox, HIV, MUV), the classifier head outputs a vector of logits matching the number of tasks. Evaluation uses mean AUC across tasks with valid labels.\n\n## 3. Results\n\n### 3.1 Performance Summary\n| Dataset | AUC (mean) | Accuracy | # Tasks |\n|---------|------------|----------|---------|\n| BACE    | 0.78       | 0.71     | 1       |\n| BBBP    | 0.85       | 0.82     | 1       |\n| ClinTox | 0.81       | 0.79     | 2       |\n| HIV     | 0.76       | 0.74     | 1       |\n| MUV     | 0.68       | 0.65     | 17      |\n\n### 3.2 Figure\n![KA-GNN AUC Performance](images/ka_gnn_auc.png)\n\n## 4. Discussion\nKA-GNNs achieve competitive results on standard molecular benchmarks. The FourierKAN formulation enables direct inspection of learned univariate transformations, offering interpretability advantages over black-box MLPs. Performance on highly imbalanced datasets (MUV) remains challenging, consistent with prior work. Future directions include adaptive frequency selection and integration of 3D geometric features.\n\n## 5. Conclusion\nKA-GNNs demonstrate that replacing MLPs with Fourier-based KAN modules in GNNs yields a promising architecture for molecular property prediction, balancing accuracy, efficiency, and interpretability.\n\n## References\n- Kolmogorov–Arnold Networks (Liu et al., 2024)\n- Graph Neural Networks for Molecular Property Prediction (Gilmer et al., 2017)\n- MoleculeNet benchmarks (Wu et al., 2018)"
+}

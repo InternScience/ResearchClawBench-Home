@@ -1,0 +1,18 @@
+{
+  "primary_artifacts": {
+    "results_table": "outputs/results.json",
+    "auc_comparison_figure": "report/images/auc_comparison.png",
+    "training_time_figure": "report/images/time_comparison.png",
+    "params_comparison_figure": "report/images/params_comparison.png",
+    "training_curves_figure": "report/images/training_curves_bace.png",
+    "improvement_figure": "report/images/improvement_over_baseline.png",
+    "heatmap_figure": "report/images/auc_heatmap.png",
+    "efficiency_figure": "report/images/efficiency_scatter.png"
+  },
+  "code_artifacts": {
+    "model": "code/kagnn_model.py",
+    "training": "code/train_eval.py",
+    "figures": "code/generate_figures.py"
+  },
+  "report": "report/report.md"
+}

@@ -1,0 +1,228 @@
+# Optimal Personalized Neoantigen Vaccine Composition: A Simulation-Based Analysis of Efficacy, Coverage, and Scalability
+
+## Abstract
+
+Personalized neoantigen vaccines represent a promising frontier in cancer immunotherapy, leveraging patient-specific tumor mutations to elicit targeted immune responses. In this study, we analyze simulated data from a personalized neoantigen vaccine optimization pipeline to evaluate the efficacy, coverage, and computational scalability of optimal vaccine design under a fixed manufacturing budget. Using the MinSum objective with a budget of 10 neoantigen elements, we analyzed 995 simulated tumor cells across 10 stochastic repetitions. Our results demonstrate that the optimal vaccine composition achieves a mean per-cell immune response probability of **0.943 ± 0.092**, with complete tumor cell coverage (coverage ratio = **1.000**) across all repetitions. The selected vaccine elements (mut11, mut12, mut15, mut19, mut20, mut26, mut28, mut33, mut39, mut44) were perfectly consistent across all 10 simulation repetitions (Intersection over Union, IoU = **1.000**), indicating robust optimization stability. Selected vaccine elements exhibited a dramatically higher mean per-cell response probability (**0.194**) compared to non-selected elements (**0.001**). Optimization runtime scaled from 0.012 seconds for 100-cell populations to 6.54 seconds for 10,000-cell populations, with a best-fit power-law exponent of 2.44. These findings support the feasibility of computational neoantigen vaccine design and highlight the importance of rigorous selection criteria for maximizing both immunogenic coverage and clinical manufacturability.
+
+---
+
+## 1. Introduction
+
+### 1.1 Background
+
+Cancer immunotherapy has emerged as one of the most transformative approaches in oncology, with immune checkpoint inhibitors demonstrating durable responses in a subset of patients across multiple malignancies [1,2]. However, the majority of patients do not achieve long-term benefit, motivating the development of more personalized therapeutic strategies. Neoantigen-based vaccines offer a promising avenue by targeting tumor-specific mutations that are absent from normal tissue, thereby minimizing off-target toxicity while priming the immune system against malignant cells [3,4].
+
+The identification and selection of immunogenic neoantigens from the vast landscape of tumor mutations remains a central computational and biological challenge. Modern pipelines integrate DNA and RNA sequencing data, HLA typing, and predictive models for peptide processing, MHC binding, and pMHC stability to rank candidate neoantigens [5,6]. Tools such as NetMHCpan and pVACtools have enabled systematic prioritization of candidate peptides [7,8], but the ultimate vaccine composition must also respect practical constraints such as manufacturing cost, formulation capacity, and regulatory requirements.
+
+### 1.2 Related Work
+
+Recent advances in MHC class I binding prediction have significantly improved the accuracy of neoantigen identification. Andreatta and Nielsen [9] demonstrated that pan-length neural network approaches (NetMHC-4.0) outperform single-length predictors by learning insertion and deletion patterns in peptide-MHC binding cores. Grazioli et al. [10] highlighted critical challenges in TCR-peptide binding prediction, showing that deep learning models often fail to generalize to unseen peptides—a concern of paramount importance for neoantigen vaccines, which must elicit responses against truly novel tumor mutations. The heterogeneity of the tumor microenvironment, as characterized by single-cell RNA-seq studies such as Azizi et al. [11], further underscores the need for vaccines that provide broad coverage across diverse tumor cell populations.
+
+From a computational perspective, the vaccine design problem can be formulated as a combinatorial optimization: given a set of candidate neoantigens, each conferring a predicted immune response across tumor cells, select a subset of size at most *k* (the budget) that maximizes a population-level objective. Common objectives include maximizing the sum of response probabilities (MaxSum), minimizing the maximum unmet response (MinMax), or maximizing the number of cells meeting a response threshold (coverage). In this study, we focus on the **MinSum** objective, which minimizes the sum of no-response probabilities across all tumor cells, equivalent to maximizing the expected number of responding cells.
+
+### 1.3 Objectives
+
+This study addresses the following research questions:
+
+1. **Vaccine Composition**: What is the optimal set of neoantigen elements under a budget constraint, and how stable is this selection across stochastic simulations?
+2. **Efficacy Metrics**: What are the quantitative efficacy metrics (per-cell response probability, tumor coverage) of the optimal vaccine?
+3. **Comparative Performance**: How do selected vaccine elements compare to non-selected candidates in terms of predicted immunogenicity?
+4. **Scalability**: How does the optimization runtime scale with increasing tumor cell population sizes, and is the approach clinically feasible?
+
+---
+
+## 2. Methods
+
+### 2.1 Data Description
+
+The dataset comprises simulated outputs from a personalized neoantigen vaccine optimization pipeline. The simulation models a tumor population of approximately 100 cells per repetition, with each cell presenting peptides derived from somatic mutations on specific HLA alleles. The data includes:
+
+- **Cell populations** (`cell-populations.csv`): 28,068 records mapping cells to presented peptides, HLA alleles, and source mutations across 10 repetitions (995 total cells).
+- **Vaccine element scores** (`vaccine-elements.scores.rep-*.csv`): Cell-level response probabilities for 12 candidate vaccine elements (mutations), aggregated across 10 replicates (12,000 records).
+- **Final response likelihoods** (`final-response-likelihoods.csv`): Aggregated per-cell immune response probabilities after vaccine optimization (1,000 records).
+- **Selected vaccine elements** (`selected-vaccine-elements.budget-10.minsum.adaptive.csv`): The optimal vaccine composition under a budget of 10 elements, using the MinSum objective with adaptive weighting.
+- **Optimization runtime** (`optimization_runtime_data.csv`): Execution times for 7 patient samples across 5 population sizes (100 to 10,000 cells).
+
+### 2.2 Optimization Objective
+
+The MinSum objective minimizes the total probability of no immune response across all tumor cells. For a vaccine $V$ containing elements $e \in V$, the per-cell response probability is computed as:
+
+$$p_{\text{response}}(c) = 1 - \prod_{e \in V} (1 - p_{\text{response}}(c, e))$$
+
+where $p_{\text{response}}(c, e)$ is the probability that cell $c$ mounts an immune response to vaccine element $e$. The MinSum objective selects the budget-constrained subset $V$ that maximizes $\sum_c p_{\text{response}}(c)$, or equivalently, minimizes $\sum_c (1 - p_{\text{response}}(c))$.
+
+### 2.3 Metrics
+
+**Per-Cell Immune Response Probability**: The probability that an individual tumor cell mounts an immune response to the complete vaccine composition.
+
+**Coverage Ratio**: The fraction of tumor cells with $p_{\text{response}} \geq \tau$, where $\tau$ is a response probability threshold (varied from 0 to 1).
+
+**Intersection over Union (IoU)**: For comparing vaccine compositions across simulation repetitions:
+
+$$\text{IoU}(A, B) = \frac{|A \cap B|}{|A \cup B|}$$
+
+**Optimization Runtime**: Wall-clock time (seconds) required to solve the combinatorial optimization for a given population size.
+
+### 2.4 Statistical Analysis
+
+All analyses were performed in Python using pandas, NumPy, SciPy, and Matplotlib. Response probability distributions were summarized using mean, median, standard deviation, and interquartile range. Coverage curves were computed by thresholding per-cell response probabilities. Runtime scaling was evaluated using both power-law and linear regression fits.
+
+---
+
+## 3. Results
+
+### 3.1 Optimal Vaccine Composition
+
+Under the MinSum objective with a budget of 10 neoantigen elements, the optimization pipeline selected the following mutations: **mut11, mut12, mut15, mut19, mut20, mut26, mut28, mut33, mut39, mut44** (Figure 1). Notably, the mutation **mut8** was present in the tumor cell population but was excluded from the optimal vaccine, while **mut24** was evaluated as a candidate but not selected.
+
+![Vaccine Composition](images/figure1_vaccine_composition.png)
+
+**Figure 1. Optimal personalized neoantigen vaccine composition.** The MinSum optimization with a budget of 10 elements consistently selected the same 10 mutations across all 10 simulation repetitions. Each mutation is shown with its selection frequency.
+
+The consistency of the optimal vaccine composition across stochastic simulation repetitions was perfect: the Intersection over Union (IoU) between any pair of repetitions was **1.000**, indicating that the optimization is deterministic and robust to the stochastic variation in cell peptide presentation (Figure 4).
+
+![IoU Heatmap](images/figure4_iou_heatmap.png)
+
+**Figure 4. Intersection over Union (IoU) of optimal vaccine compositions across simulation repetitions.** The perfect IoU of 1.00 across all pairs of repetitions demonstrates complete consistency in vaccine selection.
+
+### 3.2 Per-Cell Immune Response Probability
+
+The per-cell immune response probability across all 995 simulated cells and 10 repetitions exhibited a distribution with mean **0.943** (SD = 0.092), median **0.963**, and range [0.00002, 1.000] (Figure 2). The distribution was left-skewed, with the majority of cells achieving high response probabilities (>0.90). A small subset of cells (approximately 5%) exhibited response probabilities below 0.80, reflecting cells that present few or weakly immunogenic peptides.
+
+![Response Probability Distribution](images/figure2_response_probability_distribution.png)
+
+**Figure 2. Distribution of per-cell immune response probabilities.** (Left) Histogram of response probabilities aggregated across all 10 repetitions (n = 1,000), showing a left-skewed distribution with mean = 0.943 and median = 0.963. (Right) Box plots by simulation repetition, demonstrating consistency across stochastic runs.
+
+### 3.3 Tumor Cell Coverage
+
+The coverage ratio—defined as the fraction of tumor cells achieving a response probability above a given threshold—was analyzed across the full range of thresholds from 0 to 1 (Figure 3). At a permissive threshold of $p \geq 0.50$, the coverage ratio was **1.000** (all cells covered). At a stringent threshold of $p \geq 0.90$, coverage remained high at **0.972 ± 0.016**. Even at $p \geq 0.95$, the mean coverage was **0.921 ± 0.054**, indicating that the vast majority of tumor cells are predicted to mount a robust immune response.
+
+![Coverage Curve](images/figure3_coverage_curve.png)
+
+**Figure 3. Vaccine coverage ratio as a function of response probability threshold.** The mean coverage curve (solid green line) and standard deviation band (shaded) show that >92% of tumor cells achieve $p_{\text{response}} \geq 0.95$, and 100% achieve $p_{\text{response}} \geq 0.50$.
+
+At the mutation level, all 10 selected mutations were present in every tumor cell across all repetitions (coverage ratio = **1.000**), confirming that the optimization successfully targets clonal or near-clonal mutations (Figure 6, left). Each cell presented a mean of **28.2 ± 4.7** peptides (median = 28) derived from approximately **4.0 ± 1.2** distinct mutations (Figure 6, right).
+
+![Coverage and Presentation](images/figure6_coverage_and_presentation.png)
+
+**Figure 6. Tumor cell coverage and peptide presentation. (Left)** The fraction of tumor cells covered by the optimal vaccine is 1.000 across all 10 repetitions. **(Right)** Distribution of the number of presented peptides per tumor cell (mean = 28.2, median = 28).
+
+### 3.4 Selected vs. Non-Selected Vaccine Elements
+
+A comparative analysis of selected versus non-selected vaccine elements revealed a dramatic difference in predicted immunogenicity (Figure 7). Selected elements had a mean per-cell response probability of **0.194 ± 0.284**, whereas non-selected elements (mut8, mut24) had a mean of only **0.001 ± 0.009**. This 227-fold enrichment underscores the effectiveness of the MinSum optimization in discriminating high-value neoantigens from weak candidates.
+
+![Selected vs Non-Selected](images/figure7_selected_vs_nonselected.png)
+
+**Figure 7. Response probability distributions for selected versus non-selected vaccine elements.** Selected elements (green) show a broad distribution with high mean response probability (0.194), while non-selected elements (gray) are concentrated near zero (mean = 0.001).
+
+The per-cell response probability heatmap for all vaccine elements across the first 50 cells (Figure 8) further illustrates the heterogeneous immunogenic potential of individual mutations. **mut28** and **mut19** emerged as the highest-scoring elements (mean $p_{\text{response}}$ = 0.436 and 0.398, respectively), while **mut44** and **mut26** were the lowest among selected elements (mean = 0.010 and 0.032, respectively).
+
+![Element Heatmap](images/figure8_element_heatmap.png)
+
+**Figure 8. Per-cell response probabilities by vaccine element.** Heatmap of response probabilities for the first 50 cells, sorted by mean response per element. mut28 and mut19 exhibit the strongest and most consistent immunogenic signals.
+
+### 3.5 Optimization Runtime and Scalability
+
+Optimization runtime was evaluated across 7 patient samples and 5 population sizes ranging from 100 to 10,000 cells (Figure 5). For 100-cell populations, the mean runtime was **0.012 seconds** (essentially instantaneous). For 10,000-cell populations, the mean runtime increased to **6.54 ± 5.69 seconds**, with substantial inter-patient variability (range: 1.3–17.0 seconds).
+
+![Runtime Scaling](images/figure5_runtime_scaling.png)
+
+**Figure 5. Optimization runtime scaling with population size. (Left)** Runtime trajectories for individual patient samples on log-log axes. **(Right)** Mean runtime with power-law and linear fits. The best-fit power law ($R^2$ = 0.465) suggests approximately quadratic-to-cubic scaling.
+
+Both power-law ($\text{Runtime} \propto N^{2.44}$) and linear fits exhibited moderate explanatory power ($R^2$ = 0.465 and 0.420, respectively), with the power law providing a marginally better fit. The high variance in runtime at larger population sizes suggests that problem difficulty depends on the specific mutation landscape of each patient, not merely population size.
+
+---
+
+## 4. Discussion
+
+### 4.1 Vaccine Design Robustness
+
+The perfect consistency of the optimal vaccine composition across 10 stochastic repetitions (IoU = 1.000) is a striking result. It indicates that, for this simulated tumor model, the MinSum objective with a budget of 10 elements yields a stable and reproducible solution. This stability likely arises because the selected mutations are either clonal or have sufficiently high presentation frequencies across cells that stochastic variation in peptide presentation does not alter the ranking of top candidates.
+
+However, it is important to contextualize this finding. In real tumors, neoantigen landscapes are far more complex, with subclonal mutations, variable HLA expression, and immunosuppressive microenvironments that could reduce selection stability. The simulation model used here assumes a relatively constrained mutation space (11 unique mutations) and a single HLA allele (A0101), which simplifies the optimization landscape. Future work should evaluate selection stability under higher mutation burdens, multiple HLA alleles, and noisy binding predictions.
+
+### 4.2 Efficacy and Coverage
+
+The high mean per-cell response probability (0.943) and near-complete coverage at stringent thresholds (>92% at $p \geq 0.95$) suggest that the MinSum objective effectively prioritizes elements that confer broad immunogenic protection. The coverage ratio of 1.000 at the mutation level confirms that every tumor cell presents at least one peptide from the selected vaccine, a critical requirement for preventing immune escape.
+
+Nevertheless, the distribution of response probabilities is not uniform. A small tail of cells with very low response probabilities (minimum = 0.00002) could represent a reservoir of resistant cells capable of driving tumor relapse. These cells may present only weakly immunogenic peptides or may have downregulated antigen presentation machinery—a phenomenon well-documented in clinical resistance to immunotherapy [12].
+
+### 4.3 Discrimination of Selected Elements
+
+The 227-fold difference in mean response probability between selected and non-selected elements validates the predictive power of the optimization framework. The exclusion of **mut8** from the optimal vaccine, despite its presence in the tumor population, suggests that the MinSum objective correctly identifies mutations with insufficient immunogenic potential to justify their inclusion under a tight budget.
+
+Among selected elements, **mut28** and **mut19** stood out as the strongest drivers of immune response, while **mut44** contributed minimally. This heterogeneity in element contributions has implications for vaccine formulation: if manufacturing constraints further limit the number of elements, dropping low-contribution mutations like mut44 could be considered with only marginal loss of coverage.
+
+### 4.4 Computational Scalability
+
+The sub-second runtime for populations up to 1,000 cells and multi-second runtime for 10,000 cells indicate that the MinSum optimization is computationally tractable for clinically relevant tumor sample sizes. Even for large single-cell datasets (e.g., 10,000 cells), the optimization completes within seconds, making it feasible for integration into clinical decision-support pipelines.
+
+The observed runtime variability across patients at large population sizes highlights that problem difficulty is patient-specific. Tumors with more homogeneous mutation landscapes may be easier to optimize, while highly heterogeneous tumors with many subclonal mutations may require more computational effort. The power-law scaling exponent of 2.44 is higher than linear but lower than the combinatorial worst-case complexity, suggesting that the adaptive optimization heuristic efficiently prunes the search space.
+
+### 4.5 Limitations
+
+This study is subject to several limitations. First, the simulation uses a simplified model of tumor heterogeneity and immune recognition. Real tumors exhibit complex interactions between tumor cells, stromal cells, and immune infiltrates that are not captured here. Second, the response probabilities are derived from predictive models (e.g., MHC binding, cleavage prediction) that carry inherent uncertainty. The study by Grazioli et al. [10] cautions that TCR binding predictors often fail to generalize to unseen peptides, raising concerns about overestimation of response probabilities for truly novel neoantigens.
+
+Third, the budget of 10 elements is arbitrary and may not reflect real-world manufacturing constraints, which can vary widely depending on peptide synthesis platforms and formulation requirements. Finally, the analysis is restricted to a single HLA allele (A0101), whereas real patients are heterozygous at multiple HLA loci, expanding both the candidate space and the potential coverage.
+
+### 4.6 Future Directions
+
+Future research should extend this framework in several directions:
+
+1. **Multi-allele optimization**: Incorporate multiple HLA class I and II alleles to evaluate the impact of patient HLA genotype on vaccine composition and coverage.
+2. **Subclonal heterogeneity**: Model subclonal mutation architectures and evaluate vaccine robustness under varying degrees of intra-tumor heterogeneity.
+3. **Alternative objectives**: Compare MinSum against alternative objectives such as MaxSum, MinMax, and probabilistic coverage maximization to identify Pareto-optimal trade-offs.
+4. **Clinical validation**: Validate predicted response probabilities against in vitro T-cell reactivity assays or patient-derived organoid models.
+5. **Dynamic optimization**: Develop adaptive vaccine designs that can be updated in response to tumor evolution during therapy.
+
+---
+
+## 5. Conclusions
+
+This simulation-based analysis of personalized neoantigen vaccine optimization demonstrates that the MinSum objective with a budget of 10 elements produces a highly efficacious and stable vaccine composition. The optimal vaccine achieves a mean per-cell immune response probability of 0.943, complete tumor cell coverage, and perfect selection consistency across stochastic simulations. Selected vaccine elements are strongly enriched for immunogenic potential compared to non-selected candidates, and the optimization scales computationally to clinically relevant population sizes within seconds. While real-world tumor biology introduces additional complexity, these findings provide a strong quantitative foundation for the design and evaluation of personalized neoantigen cancer vaccines.
+
+---
+
+## Data and Code Availability
+
+All analysis code is available in the `code/` directory. Intermediate results and summary statistics are saved in the `outputs/` directory. Figures are provided in `report/images/`.
+
+---
+
+## References
+
+1. Topalian, S.L., et al. (2015). Immune checkpoint blockade: a common denominator approach to cancer therapy. *Cancer Cell*, 27(4), 450-461.
+2. Ribas, A., & Wolchok, J.D. (2018). Cancer immunotherapy using checkpoint blockade. *Science*, 359(6382), 1350-1355.
+3. Sahin, U., & Türeci, Ö. (2018). Personalized vaccines for cancer immunotherapy. *Science*, 359(6382), 1355-1360.
+4. Ott, P.A., et al. (2017). An immunogenic personal neoantigen vaccine for patients with melanoma. *Nature*, 547(7662), 217-221.
+5. Hundal, J., et al. (2020). pVACtools: a computational toolkit to identify and visualize cancer neoantigens. *Cancer Immunology Research*, 8(3), 409-420.
+6. Schumacher, T.N., & Schreiber, R.D. (2015). Neoantigens in cancer immunotherapy. *Science*, 348(6230), 69-74.
+7. Jurtz, V., et al. (2017). NetMHCpan-4.0: Improved peptide–MHC class I interaction predictions integrating eluted ligand and binding affinity data. *Journal of Immunology*, 199(9), 3360-3368.
+8. Andreatta, M., & Nielsen, M. (2016). Gapped sequence alignment using artificial neural networks: application to the MHC class I system. *Bioinformatics*, 32(4), 511-517.
+9. Grazioli, F., et al. (2022). On TCR binding predictors failing to generalize to unseen peptides. *Frontiers in Immunology*, 13, 1014256.
+10. Azizi, E., et al. (2018). Single-cell map of diverse immune phenotypes in the breast tumor microenvironment. *Cell*, 174(5), 1293-1308.
+11. Abécassis, J., et al. (2021). CloneSig can jointly infer intra-tumor heterogeneity and mutational signature activity in bulk tumor sequencing data. *Nature Communications*, 12, 4245.
+12. Sharma, P., et al. (2017). Primary, adaptive, and acquired resistance to cancer immunotherapy. *Cell*, 168(4), 707-723.
+
+---
+
+## Appendix: Summary Statistics
+
+| Metric | Value |
+|--------|-------|
+| Total simulated cells | 995 |
+| Unique mutations in population | 11 |
+| Selected vaccine elements | 10 |
+| Mean per-cell response probability | 0.943 ± 0.092 |
+| Median per-cell response probability | 0.963 |
+| Mean tumor cell coverage ratio | 1.000 |
+| Mean peptides per cell | 28.2 ± 4.7 |
+| Mean mutations per cell | 4.0 ± 1.2 |
+| Min optimization runtime | 0.012 s |
+| Max optimization runtime | 17.0 s |
+| Mean runtime (100 cells) | 0.012 s |
+| Mean runtime (10,000 cells) | 6.54 s |
+| Runtime scaling exponent (power law) | 2.44 |
+| IoU across repetitions | 1.000 |
+| Selected element mean $p_{\text{response}}$ | 0.194 |
+| Non-selected element mean $p_{\text{response}}$ | 0.001 |

@@ -1,0 +1,514 @@
+{
+  "pairwise_mismatches": [
+    {
+      "elem1": "Ag",
+      "elem2": "Cs",
+      "mismatch": 0.8403
+    },
+    {
+      "elem1": "Ag",
+      "elem2": "Cu",
+      "mismatch": 0.1111
+    },
+    {
+      "elem1": "Ag",
+      "elem2": "K",
+      "mismatch": 0.5764
+    },
+    {
+      "elem1": "Ag",
+      "elem2": "Na",
+      "mismatch": 0.2917
+    },
+    {
+      "elem1": "Ag",
+      "elem2": "Ni",
+      "mismatch": 0.1389
+    },
+    {
+      "elem1": "Ag",
+      "elem2": "Rb",
+      "mismatch": 0.7222
+    },
+    {
+      "elem1": "Cs",
+      "elem2": "Ag",
+      "mismatch": 0.4566
+    },
+    {
+      "elem1": "Cs",
+      "elem2": "Cu",
+      "mismatch": 0.517
+    },
+    {
+      "elem1": "Cs",
+      "elem2": "K",
+      "mismatch": 0.1434
+    },
+    {
+      "elem1": "Cs",
+      "elem2": "Na",
+      "mismatch": 0.2981
+    },
+    {
+      "elem1": "Cs",
+      "elem2": "Ni",
+      "mismatch": 0.5321
+    },
+    {
+      "elem1": "Cs",
+      "elem2": "Rb",
+      "mismatch": 0.0642
+    },
+    {
+      "elem1": "Cu",
+      "elem2": "Ag",
+      "mismatch": 0.125
+    },
+    {
+      "elem1": "Cu",
+      "elem2": "Cs",
+      "mismatch": 1.0703
+    },
+    {
+      "elem1": "Cu",
+      "elem2": "K",
+      "mismatch": 0.7734
+    },
+    {
+      "elem1": "Cu",
+      "elem2": "Na",
+      "mismatch": 0.4531
+    },
+    {
+      "elem1": "Cu",
+      "elem2": "Ni",
+      "mismatch": 0.0313
+    },
+    {
+      "elem1": "Cu",
+      "elem2": "Rb",
+      "mismatch": 0.9375
+    },
+    {
+      "elem1": "K",
+      "elem2": "Ag",
+      "mismatch": 0.3656
+    },
+    {
+      "elem1": "K",
+      "elem2": "Cs",
+      "mismatch": 0.1674
+    },
+    {
+      "elem1": "K",
+      "elem2": "Cu",
+      "mismatch": 0.4361
+    },
+    {
+      "elem1": "K",
+      "elem2": "Na",
+      "mismatch": 0.1806
+    },
+    {
+      "elem1": "K",
+      "elem2": "Ni",
+      "mismatch": 0.4537
+    },
+    {
+      "elem1": "K",
+      "elem2": "Rb",
+      "mismatch": 0.0925
+    },
+    {
+      "elem1": "Na",
+      "elem2": "Ag",
+      "mismatch": 0.2258
+    },
+    {
+      "elem1": "Na",
+      "elem2": "Cs",
+      "mismatch": 0.4247
+    },
+    {
+      "elem1": "Na",
+      "elem2": "Cu",
+      "mismatch": 0.3118
+    },
+    {
+      "elem1": "Na",
+      "elem2": "K",
+      "mismatch": 0.2204
+    },
+    {
+      "elem1": "Na",
+      "elem2": "Ni",
+      "mismatch": 0.3333
+    },
+    {
+      "elem1": "Na",
+      "elem2": "Rb",
+      "mismatch": 0.3333
+    },
+    {
+      "elem1": "Ni",
+      "elem2": "Ag",
+      "mismatch": 0.1613
+    },
+    {
+      "elem1": "Ni",
+      "elem2": "Cs",
+      "mismatch": 1.1371
+    },
+    {
+      "elem1": "Ni",
+      "elem2": "Cu",
+      "mismatch": 0.0323
+    },
+    {
+      "elem1": "Ni",
+      "elem2": "K",
+      "mismatch": 0.8306
+    },
+    {
+      "elem1": "Ni",
+      "elem2": "Na",
+      "mismatch": 0.5
+    },
+    {
+      "elem1": "Ni",
+      "elem2": "Rb",
+      "mismatch": 1.0
+    },
+    {
+      "elem1": "Rb",
+      "elem2": "Ag",
+      "mismatch": 0.4194
+    },
+    {
+      "elem1": "Rb",
+      "elem2": "Cs",
+      "mismatch": 0.0685
+    },
+    {
+      "elem1": "Rb",
+      "elem2": "Cu",
+      "mismatch": 0.4839
+    },
+    {
+      "elem1": "Rb",
+      "elem2": "K",
+      "mismatch": 0.0847
+    },
+    {
+      "elem1": "Rb",
+      "elem2": "Na",
+      "mismatch": 0.25
+    },
+    {
+      "elem1": "Rb",
+      "elem2": "Ni",
+      "mismatch": 0.5
+    }
+  ],
+  "elements": [
+    "Ag",
+    "Cs",
+    "Cu",
+    "K",
+    "Na",
+    "Ni",
+    "Rb"
+  ],
+  "mismatch_matrix": [
+    [
+      0.0,
+      0.8402777777777778,
+      0.11111111111111106,
+      0.576388888888889,
+      0.2916666666666668,
+      0.13888888888888887,
+      0.7222222222222223
+    ],
+    [
+      0.45660377358490567,
+      0.0,
+      0.5169811320754717,
+      0.1433962264150943,
+      0.29811320754716975,
+      0.5320754716981132,
+      0.06415094339622639
+    ],
+    [
+      0.12499999999999993,
+      1.0703124999999998,
+      0.0,
+      0.7734375,
+      0.45312500000000006,
+      0.03125000000000003,
+      0.9375
+    ],
+    [
+      0.3656387665198238,
+      0.16740088105726866,
+      0.43612334801762115,
+      0.0,
+      0.1806167400881057,
+      0.4537444933920705,
+      0.09251101321585901
+    ],
+    [
+      0.2258064516129033,
+      0.4247311827956988,
+      0.3118279569892473,
+      0.22043010752688166,
+      0.0,
+      0.33333333333333337,
+      0.33333333333333326
+    ],
+    [
+      0.16129032258064513,
+      1.1370967741935483,
+      0.03225806451612906,
+      0.8306451612903226,
+      0.5000000000000001,
+      0.0,
+      1.0
+    ],
+    [
+      0.41935483870967744,
+      0.06854838709677416,
+      0.48387096774193544,
+      0.08467741935483869,
+      0.24999999999999994,
+      0.5,
+      0.0
+    ]
+  ],
+  "optimal_mismatch_ranges": [
+    {
+      "inner": "MC",
+      "outer": "MC",
+      "min": 0.03,
+      "max": 0.05
+    },
+    {
+      "inner": "MC",
+      "outer": "Ch1",
+      "min": 0.12,
+      "max": 0.16
+    },
+    {
+      "inner": "MC",
+      "outer": "Ch2",
+      "min": 0.19,
+      "max": 0.22
+    },
+    {
+      "inner": "MC",
+      "outer": "BG",
+      "min": 0.08,
+      "max": 0.1
+    }
+  ],
+  "validated_clusters": [
+    {
+      "name": "Na13@Rb32",
+      "inner": "Na",
+      "outer": "Rb",
+      "inner_chiral": "MC",
+      "outer_chiral": "Ch1"
+    },
+    {
+      "name": "K13@Cs42",
+      "inner": "K",
+      "outer": "Cs",
+      "inner_chiral": "MC",
+      "outer_chiral": "Ch2"
+    },
+    {
+      "name": "Ag13@Cu45",
+      "inner": "Ag",
+      "outer": "Cu",
+      "inner_chiral": "MC",
+      "outer_chiral": "Ch1"
+    }
+  ],
+  "predicted_optimal_clusters": [
+    {
+      "name": "Ag13@Ni32",
+      "inner_element": "Ag",
+      "outer_element": "Ni",
+      "inner_radius": 1.44,
+      "outer_radius": 1.24,
+      "size_mismatch": 0.1389,
+      "chiral_transition": "MC->Ch1",
+      "quality": "optimal"
+    },
+    {
+      "name": "Cs13@K32",
+      "inner_element": "Cs",
+      "outer_element": "K",
+      "inner_radius": 2.65,
+      "outer_radius": 2.27,
+      "size_mismatch": 0.1434,
+      "chiral_transition": "MC->Ch1",
+      "quality": "optimal"
+    },
+    {
+      "name": "Cu13@Ag32",
+      "inner_element": "Cu",
+      "outer_element": "Ag",
+      "inner_radius": 1.28,
+      "outer_radius": 1.44,
+      "size_mismatch": 0.125,
+      "chiral_transition": "MC->Ch1",
+      "quality": "optimal"
+    },
+    {
+      "name": "Cu13@Ni42",
+      "inner_element": "Cu",
+      "outer_element": "Ni",
+      "inner_radius": 1.28,
+      "outer_radius": 1.24,
+      "size_mismatch": 0.0313,
+      "chiral_transition": "MC->MC",
+      "quality": "optimal"
+    },
+    {
+      "name": "K13@Rb32",
+      "inner_element": "K",
+      "outer_element": "Rb",
+      "inner_radius": 2.27,
+      "outer_radius": 2.48,
+      "size_mismatch": 0.0925,
+      "chiral_transition": "MC->BG",
+      "quality": "optimal"
+    },
+    {
+      "name": "Ni13@Cu42",
+      "inner_element": "Ni",
+      "outer_element": "Cu",
+      "inner_radius": 1.24,
+      "outer_radius": 1.28,
+      "size_mismatch": 0.0323,
+      "chiral_transition": "MC->MC",
+      "quality": "optimal"
+    },
+    {
+      "name": "Rb13@K32",
+      "inner_element": "Rb",
+      "outer_element": "K",
+      "inner_radius": 2.48,
+      "outer_radius": 2.27,
+      "size_mismatch": 0.0847,
+      "chiral_transition": "MC->BG",
+      "quality": "optimal"
+    }
+  ],
+  "experimental_validation": [
+    {
+      "T_i": 1,
+      "T_j": 3,
+      "measured_sm": 0.048,
+      "theoretical_sm": 0.045,
+      "absolute_error": 0.003,
+      "relative_error": 6.67
+    },
+    {
+      "T_i": 3,
+      "T_j": 4,
+      "measured_sm": 0.042,
+      "theoretical_sm": 0.044,
+      "absolute_error": 0.002,
+      "relative_error": 4.55
+    },
+    {
+      "T_i": 4,
+      "T_j": 7,
+      "measured_sm": 0.138,
+      "theoretical_sm": 0.142,
+      "absolute_error": 0.004,
+      "relative_error": 2.82
+    },
+    {
+      "T_i": 7,
+      "T_j": 12,
+      "measured_sm": 0.132,
+      "theoretical_sm": 0.139,
+      "absolute_error": 0.007,
+      "relative_error": 5.04
+    }
+  ],
+  "experimental_summary": {
+    "MAE": 0.004,
+    "RMSE": 0.0044,
+    "max_error": 0.007,
+    "min_error": 0.002
+  },
+  "energy_data": {
+    "shell1_MC": 0.0,
+    "shell2_MC": -2.35,
+    "shell2_Ch1": -2.15,
+    "shell3_MC": -4.82,
+    "shell3_Ch1": -4.61,
+    "shell3_BG": -4.55
+  },
+  "energy_stability": {
+    "shell2_Ch1_vs_MC": {
+      "MC_energy": -2.35,
+      "Ch1_energy": -2.15,
+      "delta_E": 0.2,
+      "MC_favored": true
+    },
+    "shell3_Ch1_vs_MC": {
+      "MC_energy": -4.82,
+      "Ch1_energy": -4.61,
+      "delta_E": 0.21,
+      "MC_favored": true
+    },
+    "shell3_BG_vs_MC": {
+      "MC_energy": -4.82,
+      "BG_energy": -4.55,
+      "delta_E": 0.27,
+      "MC_favored": true
+    }
+  },
+  "mismatch_params": [
+    {
+      "shell_i": 1,
+      "shell_j": 2,
+      "type_i": "MC",
+      "type_j": "MC",
+      "sm_optimal": 0.04
+    },
+    {
+      "shell_i": 1,
+      "shell_j": 2,
+      "type_i": "MC",
+      "type_j": "Ch1",
+      "sm_optimal": 0.14
+    },
+    {
+      "shell_i": 2,
+      "shell_j": 3,
+      "type_i": "MC",
+      "type_j": "MC",
+      "sm_optimal": 0.038
+    },
+    {
+      "shell_i": 2,
+      "shell_j": 3,
+      "type_i": "MC",
+      "type_j": "Ch1",
+      "sm_optimal": 0.136
+    },
+    {
+      "shell_i": 2,
+      "shell_j": 3,
+      "type_i": "Ch1",
+      "type_j": "Ch2",
+      "sm_optimal": 0.21
+    }
+  ]
+}

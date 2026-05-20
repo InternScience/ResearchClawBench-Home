@@ -1,0 +1,83 @@
+{
+  "primary_quantitative_results": {
+    "method_comparison_table": {
+      "status": "satisfied",
+      "artifact": "outputs/experiment_results.json",
+      "description": "MOTA, MOTP, IDF1, IDsw, MT, ML, FP, FN for SORT, ByteTrack, SparseTrack"
+    },
+    "ablation_depth_layers": {
+      "status": "satisfied",
+      "artifact": "outputs/experiment_results.json (ablation_layers)",
+      "description": "Performance vs number of depth layers (1,2,3,5,7,10)"
+    },
+    "ablation_iou_threshold": {
+      "status": "satisfied",
+      "artifact": "outputs/experiment_results.json (ablation_iou)",
+      "description": "Performance vs IoU threshold for ByteTrack and SparseTrack"
+    }
+  },
+  "figures": {
+    "fig1_data_overview": {
+      "status": "satisfied",
+      "artifact": "report/images/fig1_data_overview.png",
+      "description": "Detection stats, score distribution, detection rate, missed objects"
+    },
+    "fig2_pseudo_depth": {
+      "status": "satisfied",
+      "artifact": "report/images/fig2_pseudo_depth_analysis.png",
+      "description": "Pseudo-depth distribution and spatial analysis"
+    },
+    "fig3_occlusion": {
+      "status": "satisfied",
+      "artifact": "report/images/fig3_occlusion_analysis.png",
+      "description": "Detection localization quality and overlap analysis"
+    },
+    "fig4_main_comparison": {
+      "status": "satisfied",
+      "artifact": "report/images/fig4_main_comparison.png",
+      "description": "Bar chart comparison of all methods across metrics"
+    },
+    "fig5_ablation_layers": {
+      "status": "satisfied",
+      "artifact": "report/images/fig5_ablation_layers.png",
+      "description": "MOTA, IDF1, IDsw vs depth layers"
+    },
+    "fig6_ablation_iou": {
+      "status": "satisfied",
+      "artifact": "report/images/fig6_ablation_iou.png",
+      "description": "MOTA, IDF1 vs IoU threshold"
+    },
+    "fig7_qualitative": {
+      "status": "satisfied",
+      "artifact": "report/images/fig7_tracking_qualitative.png",
+      "description": "Visual tracking results on selected frames"
+    },
+    "fig8_density": {
+      "status": "satisfied",
+      "artifact": "report/images/fig8_density_analysis.png",
+      "description": "Tracking density, score distribution, track lifetime"
+    },
+    "fig9_methodology": {
+      "status": "satisfied",
+      "artifact": "report/images/fig9_methodology_diagram.png",
+      "description": "SparseTrack pipeline diagram"
+    },
+    "fig10_per_frame": {
+      "status": "satisfied",
+      "artifact": "report/images/fig10_per_frame_accuracy.png",
+      "description": "Per-frame tracking accuracy comparison"
+    }
+  },
+  "code": {
+    "kalman_filter": {"status": "satisfied", "artifact": "code/kalman_filter.py"},
+    "bytetrack": {"status": "satisfied", "artifact": "code/bytetrack.py"},
+    "sparsetrack": {"status": "satisfied", "artifact": "code/sparsetrack.py"},
+    "evaluation": {"status": "satisfied", "artifact": "code/evaluation.py"},
+    "experiments": {"status": "satisfied", "artifact": "code/run_experiments.py"},
+    "data_analysis": {"status": "satisfied", "artifact": "code/01_data_analysis.py"},
+    "visualization": {"status": "satisfied", "artifact": "code/visualization.py"}
+  },
+  "report": {
+    "report_md": {"status": "pending", "artifact": "report/report.md"}
+  }
+}

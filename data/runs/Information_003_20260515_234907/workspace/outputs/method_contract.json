@@ -1,0 +1,29 @@
+{
+  "framework": "DIDS-MFL (Disentangled Dynamic Intrusion Detection with Multi-scale Feature Learning)",
+  "components": {
+    "statistical_disentanglement": {
+      "description": "Non-parametric optimization based on mutual information to separate entangled feature distributions",
+      "method": "MI-based feature transformation + PCA-ICA hybrid",
+      "source": "3D-IDS (KDD 2023)"
+    },
+    "representational_disentanglement": {
+      "description": "Loss-based regularization to highlight attack-specific features in learned representations",
+      "method": "Contrastive loss + covariance regularization on latent representations",
+      "source": "3D-IDS (KDD 2023), DisenLink"
+    },
+    "dynamic_graph_diffusion": {
+      "description": "Graph diffusion on multi-layer dynamic graphs for spatiotemporal aggregation",
+      "method": "Temporal GNN with graph attention and edge feature propagation",
+      "source": "3D-IDS, E-GraphSAGE"
+    },
+    "multi_scale_fusion": {
+      "description": "Multi-scale representation fusion for few-shot attack detection",
+      "method": "Bi-similarity metric learning with prototype networks",
+      "source": "BSNet (few-shot learning)"
+    }
+  },
+  "datasets": ["NF-UNSW-NB15-v2"],
+  "tasks": ["binary_classification", "multi_class_classification", "few_shot_detection", "unknown_attack_detection"],
+  "evaluation_metrics": ["accuracy", "precision", "recall", "f1_score", "confusion_matrix"],
+  "baselines": ["SVM", "Random Forest", "XGBoost", "MLP", "E-GraphSAGE", "GCN"]
+}

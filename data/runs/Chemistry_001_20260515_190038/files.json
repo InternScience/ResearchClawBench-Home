@@ -1,0 +1,232 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "diffusion_framework.py",
+    "path": "code/diffusion_framework.py",
+    "type": "file",
+    "size": 20988,
+    "mtime": 1779267432.0,
+    "exported": true
+  },
+  {
+    "name": "generate_figures.py",
+    "path": "code/generate_figures.py",
+    "type": "file",
+    "size": 25534,
+    "mtime": 1779267434.0,
+    "exported": true
+  },
+  {
+    "name": "plan.md",
+    "path": "code/plan.md",
+    "type": "file",
+    "size": 1169,
+    "mtime": 1779267432.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "sample",
+    "path": "data/sample",
+    "type": "directory"
+  },
+  {
+    "name": "2l3r",
+    "path": "data/sample/2l3r",
+    "type": "directory"
+  },
+  {
+    "name": "2l3r_ligand.sdf",
+    "path": "data/sample/2l3r/2l3r_ligand.sdf",
+    "type": "file",
+    "size": 13842,
+    "mtime": 1753787932.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "2l3r_protein.pdb",
+    "path": "data/sample/2l3r/2l3r_protein.pdb",
+    "type": "file",
+    "size": 211329,
+    "mtime": 1753787932.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 1624,
+    "mtime": 1779267430.0,
+    "exported": true
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 1615,
+    "mtime": 1779267430.0,
+    "exported": true
+  },
+  {
+    "name": "structure_analysis.json",
+    "path": "outputs/structure_analysis.json",
+    "type": "file",
+    "size": 4586,
+    "mtime": 1779267428.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 2768,
+    "mtime": 1779267428.0,
+    "exported": true
+  },
+  {
+    "name": "validation_results.json",
+    "path": "outputs/validation_results.json",
+    "type": "file",
+    "size": 707,
+    "mtime": 1779267430.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 3651992,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 3634495,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 5515632,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 569417,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure1_protein_overview.png",
+    "path": "report/images/figure1_protein_overview.png",
+    "type": "file",
+    "size": 448204,
+    "mtime": 1779267432.0,
+    "exported": true
+  },
+  {
+    "name": "figure2_ligand_structure.png",
+    "path": "report/images/figure2_ligand_structure.png",
+    "type": "file",
+    "size": 252769,
+    "mtime": 1779267432.0,
+    "exported": true
+  },
+  {
+    "name": "figure3_diffusion_process.png",
+    "path": "report/images/figure3_diffusion_process.png",
+    "type": "file",
+    "size": 448061,
+    "mtime": 1779267430.0,
+    "exported": true
+  },
+  {
+    "name": "figure4_reverse_diffusion.png",
+    "path": "report/images/figure4_reverse_diffusion.png",
+    "type": "file",
+    "size": 431133,
+    "mtime": 1779267432.0,
+    "exported": true
+  },
+  {
+    "name": "figure5_architecture.png",
+    "path": "report/images/figure5_architecture.png",
+    "type": "file",
+    "size": 125592,
+    "mtime": 1779267430.0,
+    "exported": true
+  },
+  {
+    "name": "figure6_validation.png",
+    "path": "report/images/figure6_validation.png",
+    "type": "file",
+    "size": 302430,
+    "mtime": 1779267432.0,
+    "exported": true
+  },
+  {
+    "name": "figure7_complex.png",
+    "path": "report/images/figure7_complex.png",
+    "type": "file",
+    "size": 404715,
+    "mtime": 1779267432.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 26505,
+    "mtime": 1779267435.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5475,
+    "mtime": 1778842838.0,
+    "exported": true
+  }
+]

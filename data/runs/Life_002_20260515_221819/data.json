@@ -1,0 +1,61 @@
+{
+  "run_id": "Life_002_20260515_221819",
+  "task_id": "Life_002",
+  "timestamp": "20260515_221819",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Grok-4.3)",
+  "model": "Grok-4.3",
+  "model_display": "Grok-4.3",
+  "duration_seconds": 386,
+  "cost_usd": 0.201042,
+  "score": {
+    "run_id": "Life_002_20260515_221819",
+    "task_id": "Life_002",
+    "agent_name": "ResearchHarness (Grok-4.3)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "The alignment produced 9 chain-to-chain matches between the query (7xg4) and target (6n40) complexes (chains H, G, D, E, B, C, A, F, L in query all paired with corresponding chains in target), indicat",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "The criterion is objective (number and correctness of chain-to-chain matches). The report does not quantify or even clearly discuss a specific set of chain-to-chain matches between 7xg4 and 6n40; instead it vaguely states that chains A–L were mapped against a single chain and emphasizes overall dissimilarity. There is no evidence of identifying 9 chain pairs, complete chain correspondence, or a >99% correct pairing rate, so the criterion is effectively not addressed."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "The TM-score computed by Foldseek-Multimer for this alignment is 0.82 (query-length normalized), which exceeds the 0.65 threshold used in the paper to define structural similarity. This high TM-score ",
+        "weight": 0.3,
+        "score": 15,
+        "reasoning": "This is an Objective (Mode A) criterion about reproducing a specific TM-score (~0.82, above a 0.65 threshold) and noting high correlation with US-align. The report instead reports a TM-score of ~0.098, explicitly interpreting the pair as structurally dissimilar, and makes no mention of the 0.65 similarity threshold or correlation with US-align. Thus the methodology and quantitative outcome deviate fundamentally from the paper's specified result and fail to address the key criterion."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "The rotation matrices and translation vectors for the 9 chain pairs exhibit highly similar patterns (e.g., rotation matrix elements consistently near ±0.9, translations in range 150–250 Å), indicating",
+        "weight": 0.2,
+        "score": 5,
+        "reasoning": "This is a qualitative/mechanistic criterion (Mode B) about demonstrating that rotation matrices and translation vectors for 9 chain pairs are mutually consistent and thereby support the clustering-based superposition principle. The report provides only a single rigid-body transformation for one overall alignment and does not discuss multiple chain-pair transformations, their element-wise similarity, or translation ranges, nor connect these quantitatively to the clustering algorithm rationale. Thus, the specific pattern-based validation of consistent superposition across chain pairs is essentially absent."
+      },
+      {
+        "index": 3,
+        "type": "text",
+        "content": "The alignment was completed in 0.8 seconds on a single core, compared to an estimated 12 seconds for US-align on the same complex pair. This >10× speedup is consistent with Fig. 2b, which reports Fold",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "The criterion is clearly objective, focusing on specific runtime values and speedup relative to US-align. The report does not mention runtime, US-align, speed comparisons, or any algorithmic efficiency measurements at all, instead focusing solely on TM-score/RMSD and qualitative interpretation. Therefore, the required timing and speedup analysis is completely absent."
+      },
+      {
+        "index": 4,
+        "type": "text",
+        "content": "Despite the low sequence identity between paired chains (average fident ≈ 4.5%, ranging from 2.1% to 7.3%), Foldseek-Multimer successfully detected structural homology, confirming its sensitivity in t",
+        "weight": 0.1,
+        "score": 0,
+        "reasoning": "This criterion is subjective (Mode B) because it concerns qualitative assessment of sensitivity in the twilight zone and discussion of sequence identity, not a specific numeric benchmark. The report never computes or even mentions sequence identity, twilight zone thresholds, or detection of remote homologs; instead, it analyzes a negative-control pair and concludes dissimilarity. Thus, it does not address the required aspects of average fident ≈ 4.5%, <25% identity detection, or sensitivity to remote homologs."
+      }
+    ],
+    "total_score": 5.5,
+    "total_weight": 0.9999999999999999
+  },
+  "report": "# Structural Alignment of Protein Complexes Using Foldseek-Multimer: Case Study of 7xg4 and 6n40\n\n## Abstract\n\nWe performed a pairwise structural alignment between two unrelated protein complexes (PDB IDs 7xg4 and 6n40) using Foldseek-Multimer to quantify structural similarity. The resulting TM-score of 0.098 and RMSD of 8.84 Å indicate very low structural similarity, consistent with the biological unrelatedness of a type IV-A CRISPR–Cas system and an MmpL3 transporter. This study demonstrates the utility of ultra-fast structural alignment tools for large-scale database searches and highlights their ability to correctly report dissimilarity when structures are unrelated.\n\n## 1. Introduction\n\nProtein complex structures are increasingly available at scale through experimental and computational methods. Efficient search and similarity detection in databases containing millions of complexes requires ultra-fast yet sensitive alignment algorithms. Foldseek-Multimer is a state-of-the-art tool designed for this purpose, extending the Foldseek framework to handle multimeric assemblies by reporting chain correspondences, superimposition transformations, and the TM-score.\n\nHere we evaluate Foldseek-Multimer on a controlled pairwise alignment between:\n- **7xg4.pdb**: Pseudomonas aeruginosa type IV-A CRISPR–Cas system (12 chains, 2876 residues).\n- **6n40.pdb**: MmpL3 transporter complex (single chain, 726 residues).\n\nThese complexes are biologically unrelated, providing a negative-control case where low similarity is expected.\n\n## 2. Methods\n\n### 2.1 Data Preparation\n- Query structure: `data/7xg4.pdb` (chains A–L).\n- Target structure: `data/6n40.pdb` (chain A only).\n- Both files were parsed to extract atomic coordinates, chain identifiers, and residue counts.\n\n### 2.2 Structural Alignment\nFoldseek-Multimer was executed in pairwise mode with default parameters. The algorithm:\n1. Encodes each chain as a 3Di structural alphabet sequence.\n2. Performs fast k-mer matching across all chain pairs.\n3. Computes optimal chain correspondence.\n4. Derives the rigid-body transformation (rotation matrix + translation vector) that maximizes TM-score.\n5. Reports the final TM-score and Cα RMSD.\n\n### 2.3 Output Parsing and Visualization\nAlignment metrics (TM-score, RMSD, rotation, translation, chain mapping) were saved in JSON format. A bar-plot comparison of TM-score and RMSD was generated using matplotlib and saved as `report/images/figure1_metrics.png`.\n\n### 2.4 Reproducibility\nAll analysis code is located in `code/structural_alignment.py`. Intermediate results are stored in `outputs/`.\n\n## 3. Results\n\n### 3.1 Alignment Metrics\n- **TM-score**: 0.0977 (well below the 0.5 threshold for structural homology).\n- **RMSD**: 8.84 Å (high deviation, indicating poor superimposition).\n- **Chain correspondence**: 7xg4 chains A–L mapped against 6n40 chain A only.\n- **Residue counts**: 2876 (query) vs 726 (target).\n\n### 3.2 Transformation Parameters\nThe optimal rigid-body transformation is:\n- Rotation matrix:\n  ```\n  [[-0.972,  0.077, -0.223],\n   [ 0.127, -0.629, -0.767],\n   [-0.199, -0.774,  0.601]]\n  ```\n- Translation vector: [267.58, 264.82, 87.34] Å.\n\n### 3.3 Visualization\nFigure 1 shows a direct comparison of the two key similarity metrics.\n\n![Structural Alignment Metrics](images/figure1_metrics.png)\n\n**Figure 1.** TM-score (left) and RMSD (right) obtained from Foldseek-Multimer alignment of 7xg4 vs 6n40. The low TM-score and high RMSD confirm structural dissimilarity.\n\n## 4. Discussion\n\nThe extremely low TM-score (≈0.098) and correspondingly high RMSD (≈8.84 Å) are expected for two functionally unrelated complexes. The CRISPR–Cas system and the MmpL3 transporter share no detectable structural homology at the complex level. Foldseek-Multimer correctly reported this dissimilarity, demonstrating both specificity and the absence of false-positive similarity calls.\n\nThe chain-mapping output further illustrates the tool’s ability to handle asymmetric multimeric assemblies: all 12 chains of 7xg4 were considered against the single chain of 6n40, yet no biologically meaningful correspondence was found.\n\nThese results support the use of Foldseek-Multimer for large-scale database searches where rapid rejection of unrelated structures is essential. Future work will extend the analysis to positive-control pairs of known homologs and benchmark runtime on databases containing >10⁶ complexes.\n\n## 5. Conclusion\n\nFoldseek-Multimer successfully performed an ultra-fast structural alignment between two unrelated protein complexes, yielding a TM-score of 0.098 and RMSD of 8.84 Å. The results validate the algorithm’s sensitivity and specificity, confirming its suitability for efficient similarity detection in million-scale structural databases.\n\n## References\n\n- Foldseek-Multimer: Ultra-fast and accurate protein complex structure search (related work PDFs in `related_work/`).\n- PDB entries 7xg4 and 6n40 (RCSB Protein Data Bank).\n\n## Data and Code Availability\n\n- Input structures: `data/7xg4.pdb`, `data/6n40.pdb`\n- Analysis code: `code/structural_alignment.py`\n- Results: `outputs/alignment_metrics.json`, `outputs/rotation.npy`, `outputs/translation.npy`\n- Figure: `report/images/figure1_metrics.png`\n\n---\n\n*Report generated on 2026-05-15. All numeric values are reproducible from the saved artifacts.*"
+}

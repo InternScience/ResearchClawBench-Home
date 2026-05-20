@@ -1,0 +1,32 @@
+{
+  "method_name": "SparseTrack: Pseudo-Depth Hierarchical Multi-Object Tracking",
+  "core_hypothesis": "Decomposing dense target sets into sparse depth-based subsets via pseudo-depth estimation improves multi-object tracking in crowded scenes by reducing association ambiguity",
+  "named_methods": {
+    "pseudo_depth_estimation": {
+      "definition": "Estimate depth from bounding box size using inverse square root of area: depth = 1/sqrt(area)",
+      "assumption": "Larger bounding boxes correspond to closer objects and vice versa",
+      "invariant": "Monotonic relationship between bbox size and proximity"
+    },
+    "hierarchical_decomposition": {
+      "definition": "Partition detections into N depth layers based on pseudo-depth quantiles",
+      "non_negotiable_steps": [
+        "Compute pseudo-depth for all detections",
+        "Quantize into equal-width depth bins",
+        "Process layers front-to-back"
+      ]
+    },
+    "layer_wise_association": {
+      "definition": "Associate detections within each depth layer independently, then resolve cross-layer conflicts",
+      "assumption": "Objects within the same depth layer are less likely to occlude each other than across layers"
+    },
+    "bytetrack_style_high_low_split": {
+      "definition": "Two-stage association: high-score detections first, then low-score detections for unmatched tracks",
+      "reference": "Zhang et al., ByteTrack"
+    }
+  },
+  "baseline_methods": {
+    "SORT": "Kalman filter + Hungarian algorithm, single-stage IoU association",
+    "ByteTrack": "Two-stage association (high-score then low-score), track creation from high-score only"
+  },
+  "evaluation_metrics": ["MOTA", "MOTP", "IDF1", "IDsw", "MT", "ML", "FP", "FN"]
+}

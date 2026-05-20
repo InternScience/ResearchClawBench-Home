@@ -1,0 +1,328 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analysis.py",
+    "path": "code/analysis.py",
+    "type": "file",
+    "size": 24222,
+    "mtime": 1779267390.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "cell-populations.csv",
+    "path": "data/cell-populations.csv",
+    "type": "file",
+    "size": 1162727,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "final-response-likelihoods.csv",
+    "path": "data/final-response-likelihoods.csv",
+    "type": "file",
+    "size": 91166,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "optimization_runtime_data.csv",
+    "path": "data/optimization_runtime_data.csv",
+    "type": "file",
+    "size": 587,
+    "mtime": 1773033824.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "selected-vaccine-elements.budget-10.minsum.adaptive.csv",
+    "path": "data/selected-vaccine-elements.budget-10.minsum.adaptive.csv",
+    "type": "file",
+    "size": 4561,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "sim-specific-response-likelihoods.csv",
+    "path": "data/sim-specific-response-likelihoods.csv",
+    "type": "file",
+    "size": 111165,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "vaccine-elements.scores.100-cells.10x.rep-0.csv",
+    "path": "data/vaccine-elements.scores.100-cells.10x.rep-0.csv",
+    "type": "file",
+    "size": 109196,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "vaccine-elements.scores.100-cells.10x.rep-1.csv",
+    "path": "data/vaccine-elements.scores.100-cells.10x.rep-1.csv",
+    "type": "file",
+    "size": 109083,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "vaccine-elements.scores.100-cells.10x.rep-2.csv",
+    "path": "data/vaccine-elements.scores.100-cells.10x.rep-2.csv",
+    "type": "file",
+    "size": 109371,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "vaccine-elements.scores.100-cells.10x.rep-3.csv",
+    "path": "data/vaccine-elements.scores.100-cells.10x.rep-3.csv",
+    "type": "file",
+    "size": 109188,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "vaccine-elements.scores.100-cells.10x.rep-4.csv",
+    "path": "data/vaccine-elements.scores.100-cells.10x.rep-4.csv",
+    "type": "file",
+    "size": 109232,
+    "mtime": 1713518802.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "\u2026 6 more items",
+    "path": "data/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "all_vaccine_element_effectiveness.csv",
+    "path": "outputs/all_vaccine_element_effectiveness.csv",
+    "type": "file",
+    "size": 728,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "coverage_curve.csv",
+    "path": "outputs/coverage_curve.csv",
+    "type": "file",
+    "size": 1243,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "iou_summary.json",
+    "path": "outputs/iou_summary.json",
+    "type": "file",
+    "size": 268,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "main_results.json",
+    "path": "outputs/main_results.json",
+    "type": "file",
+    "size": 893,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "mutation_cell_coverage.csv",
+    "path": "outputs/mutation_cell_coverage.csv",
+    "type": "file",
+    "size": 364,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "mutation_peptide_counts.csv",
+    "path": "outputs/mutation_peptide_counts.csv",
+    "type": "file",
+    "size": 182,
+    "mtime": 1779267386.0,
+    "exported": true
+  },
+  {
+    "name": "mutation_peptide_map.json",
+    "path": "outputs/mutation_peptide_map.json",
+    "type": "file",
+    "size": 3062,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "overview_stats.json",
+    "path": "outputs/overview_stats.json",
+    "type": "file",
+    "size": 778,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "pairwise_iou.csv",
+    "path": "outputs/pairwise_iou.csv",
+    "type": "file",
+    "size": 665,
+    "mtime": 1779267386.0,
+    "exported": true
+  },
+  {
+    "name": "per_rep_response_stats.csv",
+    "path": "outputs/per_rep_response_stats.csv",
+    "type": "file",
+    "size": 1357,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "\u2026 5 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 435620,
+    "mtime": 1773914900.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 5699298,
+    "mtime": 1773914900.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 18502062,
+    "mtime": 1773914900.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 1562817,
+    "mtime": 1773914900.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure1_response_distribution.png",
+    "path": "report/images/figure1_response_distribution.png",
+    "type": "file",
+    "size": 106878,
+    "mtime": 1779267390.0,
+    "exported": true
+  },
+  {
+    "name": "figure2_coverage_curves.png",
+    "path": "report/images/figure2_coverage_curves.png",
+    "type": "file",
+    "size": 136507,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "figure3_vaccine_effectiveness.png",
+    "path": "report/images/figure3_vaccine_effectiveness.png",
+    "type": "file",
+    "size": 90644,
+    "mtime": 1779267390.0,
+    "exported": true
+  },
+  {
+    "name": "figure4_response_vs_peptides.png",
+    "path": "report/images/figure4_response_vs_peptides.png",
+    "type": "file",
+    "size": 139845,
+    "mtime": 1779267388.0,
+    "exported": true
+  },
+  {
+    "name": "figure5_iou_heatmap.png",
+    "path": "report/images/figure5_iou_heatmap.png",
+    "type": "file",
+    "size": 86231,
+    "mtime": 1779267390.0,
+    "exported": true
+  },
+  {
+    "name": "figure6_runtime_analysis.png",
+    "path": "report/images/figure6_runtime_analysis.png",
+    "type": "file",
+    "size": 250103,
+    "mtime": 1779267390.0,
+    "exported": true
+  },
+  {
+    "name": "figure7_rep_metrics.png",
+    "path": "report/images/figure7_rep_metrics.png",
+    "type": "file",
+    "size": 197765,
+    "mtime": 1779267390.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 20698,
+    "mtime": 1779267391.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 8623,
+    "mtime": 1778864584.0,
+    "exported": true
+  }
+]

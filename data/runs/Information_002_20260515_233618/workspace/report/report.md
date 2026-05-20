@@ -1,0 +1,297 @@
+# Evaluating Large Language Model Performance on Multi-Step Hartree-Fock Calculations in Quantum Many-Body Physics
+
+**Research Report — Information_002**
+
+---
+
+## Abstract
+
+We present a systematic evaluation of large language model (LLM) performance on multi-step analytic Hartree-Fock calculations extracted from a research paper on AB-stacked MoTe₂/WSe₂ moiré heterobilayers (arXiv:2111.01152). The benchmark comprises 17 sequential calculation tasks—spanning Hamiltonian construction, second quantization, Fourier transformation, particle-hole transformation, Wick's theorem application, and momentum-space reduction—each filled by an LLM using structured prompt templates and scored by three independent human annotators across six dimensions: in-paper content, prompt quality, instruction following, physics logic, mathematical derivation, and final answer accuracy. We find that the LLM achieves strong overall performance with a mean score of 1.80/2.00 (σ = 0.47) and a mean task total of 10.8/12. Physics logic is consistently evaluated at ceiling (2.00), while in-paper content alignment shows the greatest variability (μ = 1.50, σ = 0.79). Inter-annotator exact agreement ranges from 68.4% to 81.0%, with the lowest agreement observed between annotators Will and Yasaman. Category-level analysis reveals that Hamiltonian construction and mean-field theory tasks are scored highest, while momentum reduction and algebraic simplification show modestly lower performance. These results demonstrate that LLMs, when guided by structured prompt templates, can perform research-level theoretical physics calculations with high fidelity, though careful information extraction and domain-specific prompt engineering remain critical bottlenecks.
+
+---
+
+## 1. Introduction
+
+The application of large language models (LLMs) to scientific reasoning has emerged as a frontier research direction [1–3]. While LLMs have demonstrated remarkable capabilities in natural language understanding and generation, their ability to perform domain-specific quantitative reasoning—particularly in theoretical physics—remains an open question. Recent work has shown that language models can solve undergraduate-level physics problems [2] and store substantial scientific knowledge [3], but research-grade theoretical calculations involving multi-step formal derivations have not been systematically evaluated.
+
+The Hartree-Fock (HF) method is a cornerstone of quantum many-body physics, providing a self-consistent mean-field treatment of interacting electron systems. In the context of moiré materials—where the interplay between band topology and strong correlations gives rise to rich phase diagrams [4, 5]—the HF method requires careful construction of single-particle Hamiltonians, proper treatment of valley and layer degrees of freedom, Fourier transformation between real and momentum space, particle-hole transformation, and application of Wick's theorem. Each step demands precise handling of indices, symmetry constraints, and mathematical formalism.
+
+This study evaluates whether an LLM can accurately perform these multi-step analytic calculations when guided by structured prompt templates. We analyze the scoring data from paper arXiv:2111.01152 [6], which presents a theoretical study of topological phases in AB-stacked MoTe₂/WSe₂ moiré heterobilayers. The benchmark comprises 17 sequential HF calculation tasks spanning the complete workflow from Hamiltonian construction to final Hartree-Fock Hamiltonian assembly. Three expert annotators (Haining, Will, and Yasaman) independently evaluated the LLM's outputs across six scoring dimensions, providing a rich dataset for analyzing both LLM performance and human evaluation consistency.
+
+Our contributions are threefold:
+1. We present the first systematic quantitative analysis of LLM performance on multi-step Hartree-Fock calculations in condensed matter physics.
+2. We characterize inter-annotator agreement patterns and identify dimensions where human evaluation is most consistent.
+3. We identify specific task categories and calculation steps where LLM performance degrades, informing future prompt engineering and model development efforts.
+
+---
+
+## 2. Methods
+
+### 2.1 Data Description
+
+The benchmark is built around paper arXiv:2111.01152 ("Topological Phases in AB-Stacked MoTe₂/WSe₂: ℤ₂ Topological Insulators, Chern Insulators, and Topological Charge Density Waves") [6]. This paper studies the quantum phase diagram of AB-stacked MoTe₂/WSe₂ using self-consistent Hartree-Fock calculations, motivated by experimental observations of topological states in this system.
+
+The evaluation data consists of:
+- **17 calculation tasks** covering the complete Hartree-Fock workflow, organized into 9 task categories (Table 1).
+- **Structured prompt templates** with placeholders for system description, degrees of freedom, Hamiltonian symbols, and variable definitions.
+- **LLM-generated completions** produced by filling the placeholders and performing the requested calculations.
+- **Human reference answers** and per-dimension scores from three annotators.
+
+**Table 1: Task Categories and Descriptions**
+
+| Category | # Tasks | Description |
+|----------|---------|-------------|
+| Hamiltonian Construction | 2 | Construct kinetic and potential Hamiltonians |
+| Hamiltonian Definition | 2 | Define each term in kinetic and potential Hamiltonians |
+| Quantization | 2 | Convert single-particle to second-quantized form |
+| Fourier Transform | 1 | Convert real-space to momentum-space Hamiltonian |
+| Symmetry Transformation | 2 | Particle-hole transformation and simplification |
+| Interaction Construction | 1 | Construct Coulomb interaction Hamiltonian |
+| Mean-Field Theory | 3 | Wick's theorem, extract quadratic terms, combine Hartree-Fock |
+| Algebraic Simplification | 1 | Swap indices to combine terms |
+| Momentum Reduction | 3 | Reduce momentum in Hartree and Fock terms, combine |
+
+### 2.2 Scoring Framework
+
+Each task is evaluated across six dimensions on a 0–2 integer scale:
+
+1. **In-Paper Content** (0–2): How well the LLM response aligns with content explicitly present in the paper.
+2. **Prompt Quality** (0–2): How well-designed the prompt template is for eliciting the correct response.
+3. **Follow Instructions** (0–2): How faithfully the LLM follows the given instructions.
+4. **Physics Logic** (0–2): Whether the LLM's reasoning respects physical principles.
+5. **Math Derivation** (0–2): Correctness and completeness of mathematical derivations.
+6. **Final Answer Accuracy** (0–2): Accuracy of the final Hamiltonian expression.
+
+At the placeholder level, each filled placeholder is also scored by the three annotators on a 0–2 scale, providing fine-grained evaluation of the LLM's information extraction accuracy.
+
+### 2.3 Analysis Approach
+
+We parse the YAML scoring data using a custom Python parser (`code/parse_data.py`) and perform all statistical analysis and visualization using NumPy and Matplotlib (`code/analysis_and_viz.py`). Key analyses include:
+
+- Task-level score heatmap visualization
+- Per-dimension score distributions
+- Inter-annotator pairwise agreement rates
+- Category-level performance breakdown
+- Placeholder-level LLM accuracy analysis
+
+---
+
+## 3. Results
+
+### 3.1 Task-Level Score Summary
+
+Figure 1 shows a comprehensive heatmap of all 17 tasks across the six scoring dimensions. The LLM achieves uniformly high scores on physics logic (μ = 2.00, σ = 0.00), indicating that the model consistently respects fundamental physical principles throughout the calculation chain. Mathematical derivation (μ = 1.88, σ = 0.33) and instruction following (μ = 1.88, σ = 0.33) also show strong performance.
+
+![Figure 1: Task-level score heatmap across all Hartree-Fock calculation steps. Each cell shows the score (0–2) for a specific task and evaluation dimension. Green indicates high scores (2), yellow indicates moderate scores (1), and red indicates low scores (0).](images/figure1_task_score_heatmap.png)
+
+**Figure 1: Task-level score heatmap across all Hartree-Fock calculation steps.** Each cell shows the score (0–2) for a specific task and evaluation dimension. The LLM demonstrates uniformly high performance on physics logic and generally strong performance across all dimensions, with in-paper content alignment showing the most variability.
+
+The dimension with lowest mean performance is in-paper content (μ = 1.50, σ = 0.79), with three tasks scoring 0. This reflects the fundamental challenge of extracting precise Hamiltonian parameters and definitions from research papers, where implicit conventions and context-dependent notation create ambiguity.
+
+### 3.2 Score Distribution Analysis
+
+Figure 2 presents the distribution of scores for each dimension. The distributions reveal distinct patterns:
+
+- **Physics Logic**: All 16 scored tasks achieve the maximum score of 2, indicating perfect consistency.
+- **Prompt Quality, Follow Instructions, Math Derivation**: Strongly right-skewed, with 13–14 tasks scoring 2 and 2–3 tasks scoring 1.
+- **In-Paper Content**: Bimodal distribution with 11 tasks at score 2, 2 at score 1, and 3 at score 0.
+- **Final Answer Accuracy**: 12 tasks score 2 and 4 score 1, with no tasks scoring 0.
+
+![Figure 2: Distribution of Hartree-Fock calculation scores by evaluation dimension. Each panel shows the count of tasks receiving scores of 0, 1, or 2. The red dashed line indicates the mean score for that dimension.](images/figure2_score_distribution.png)
+
+**Figure 2: Distribution of Hartree-Fock calculation scores by evaluation dimension.** Physics logic is at ceiling (all tasks score 2), while in-paper content shows the widest distribution with three tasks at score 0, reflecting the challenge of accurate paper information extraction.
+
+### 3.3 Inter-Annotator Agreement
+
+Figure 3 analyzes inter-annotator agreement at the placeholder level (n = 84 placeholder scores across three annotators). Key findings:
+
+- **Haining–Will**: 80.3% exact agreement
+- **Haining–Yasaman**: 81.0% exact agreement
+- **Will–Yasaman**: 68.4% exact agreement
+
+The strongest agreement is between Haining and Yasaman, while Will shows notably lower agreement with Yasaman. This may reflect differences in scoring philosophy—Will occasionally assigns scores of 0 where other annotators assign 1 or 2, particularly for more subtle evaluation criteria.
+
+Per-annotator mean scores are closely aligned: Haining (μ = 1.62), Yasaman (μ = 1.58), and Will (μ = 1.57), suggesting consistent calibration of the scoring scale despite differences in individual judgments.
+
+![Figure 3: Inter-annotator agreement analysis. Left: Pairwise agreement showing exact matches, 1-point differences, and 2-point differences. Right: Per-annotator score distributions.](images/figure3_annotator_agreement.png)
+
+**Figure 3: Inter-annotator agreement analysis.** (Left) Pairwise exact agreement rates range from 68.4% (Will–Yasaman) to 81.0% (Haining–Yasaman). (Right) All three annotators show similar mean scores (~1.57–1.62) with comparable distributions.
+
+### 3.4 Category-Level Performance
+
+Figure 4 breaks down performance by task category. All categories achieve mean scores above 1.5 across all dimensions. Notable findings include:
+
+- **Hamiltonian Construction** tasks show the highest performance (mean > 1.8 across all dimensions), likely because the initial construction steps have the most explicit guidance from the paper text.
+- **Mean-Field Theory** tasks (Wick's theorem, quadratic term extraction, Hartree-Fock combination) score strongly on physics logic (2.00) and mathematical derivation (1.89).
+- **Momentum Reduction** tasks show slightly lower performance on in-paper content (1.33), as these steps require careful handling of Bloch theorem constraints and momentum conservation delta functions.
+- **Algebraic Simplification** maintains strong performance overall, though with slightly lower prompt quality (1.50).
+
+![Figure 4: Hartree-Fock calculation scores by task category. Bars show mean scores across the six evaluation dimensions for each category. The number of tasks per category is indicated in parentheses.](images/figure4_category_analysis.png)
+
+**Figure 4: Hartree-Fock calculation scores by task category.** All categories achieve mean scores ≥ 1.5. Hamiltonian construction and mean-field theory tasks perform best, while momentum reduction shows the lowest in-paper content scores due to the complexity of Brillouin zone and reciprocal lattice conventions.
+
+### 3.5 Task Progression and Difficulty
+
+Figure 5 shows the total score (sum across all six dimensions, max = 12) for each task in calculation order. The progression reveals:
+
+- Early tasks (Hamiltonian construction, definition) consistently achieve total scores of 11–12.
+- Mid-sequence tasks (Fourier transform, particle-hole transformation) show slightly lower totals (10–11), suggesting increasing difficulty as implicit conventions accumulate.
+- Late tasks (Wick's theorem, momentum reduction) maintain strong performance (10–12), demonstrating that the LLM can sustain accuracy across long reasoning chains.
+- The minimum total score is 8/12, observed for tasks where the LLM response contained information not explicitly in the paper text.
+
+![Figure 5: Total score per Hartree-Fock calculation step. Bars show the sum of all six dimension scores (max = 12). Tasks are ordered by their position in the calculation workflow.](images/figure5_task_progression.png)
+
+**Figure 5: Total score progression across Hartree-Fock calculation steps.** The LLM maintains consistently strong performance (8–12 out of 12) across the entire calculation chain, with no systematic degradation in later, more complex steps.
+
+### 3.6 Performance Radar
+
+Figure 6 provides a radar chart visualization of mean scores across the six dimensions. The nearly symmetric, outward-stretching profile confirms the LLM's balanced capability across all evaluation criteria, with physics logic forming the outermost point and in-paper content the most constricted.
+
+![Figure 6: Radar chart of average LLM performance across the six scoring dimensions. Each axis represents one dimension (scale 0–2).](images/figure6_radar_chart.png)
+
+**Figure 6: Radar chart of average LLM performance.** The profile is broad and well-balanced, with physics logic at ceiling (2.00) and in-paper content at the lowest mean (1.50), reflecting the relative difficulty of exact paper information extraction compared to logical and mathematical reasoning.
+
+### 3.7 Placeholder-Level Analysis
+
+Figure 7 displays the top-performing placeholders by mean annotator score. Placeholders involving Hamiltonian symbols (e.g., kinetic_symbol, potential_symbol, second_nonint_symbol) and variable definitions consistently achieve scores near 2.0, indicating that the LLM reliably identifies and correctly uses symbol conventions from the paper.
+
+In contrast, lower-scoring placeholders include:
+- **real|momentum space specification**: The LLM defaults to "momentum space" when the paper works in real space (mean score ~0.0).
+- **single-particle|second-quantized distinction**: The LLM uses "second-quantized" terminology when the task expects "single-particle" (mean score ~0.0), reflecting ambiguity in how different physics communities label intermediate formalisms.
+- **shifted_Ek identification**: The LLM provides the momentum expression (k − τκ) rather than the named energy variables (E_{t,+K}, E_{t,−K}), scoring 0–1.
+
+![Figure 7: Placeholder-level LLM performance for top-scoring placeholders. Each bar shows the mean annotator score (0–2) with standard deviation.](images/figure7_placeholder_detail.png)
+
+**Figure 7: Placeholder-level LLM performance.** Symbol identification and definition-of-variables placeholders consistently achieve the highest scores, while space specification (real vs. momentum) and formalism classification (single-particle vs. second-quantized) show lower scores due to terminological ambiguity between the paper's conventions and the LLM's defaults.
+
+---
+
+## 4. Discussion
+
+### 4.1 LLM Capabilities for Research-Level Physics
+
+Our results provide strong evidence that LLMs can perform multi-step analytic Hartree-Fock calculations at a research-grade level when guided by structured prompt templates. The overall mean score of 1.80/2.00 and per-task total of 10.8/12 demonstrate that the model:
+
+1. **Respects physical principles** consistently across all calculation steps (physics logic = 2.00).
+2. **Performs correct mathematical derivations** in the vast majority of cases (math derivation = 1.88, with 14/16 tasks scoring 2).
+3. **Follows structured instructions** reliably (follow instructions = 1.88).
+4. **Produces accurate final Hamiltonians** (final answer accuracy = 1.75, with 12/16 tasks scoring 2).
+
+This suggests that the primary bottleneck is not the LLM's reasoning capability per se, but rather the information extraction pipeline—how well the model maps paper content into the structured prompt template format.
+
+### 4.2 Key Bottlenecks
+
+Several specific bottlenecks emerge from our analysis:
+
+**Information Extraction from Papers.** The in-paper content dimension (μ = 1.50) is consistently the lowest-scoring, with three tasks scoring 0. This reflects the challenge of extracting precise Hamiltonian parameters from research papers where conventions may be implicit. For instance, the paper works in real space with single-particle formalism in early sections, but the LLM extractor defaults to "momentum space" and "second-quantized" terminology.
+
+**Terminology Ambiguity.** The LLM struggles with distinctions that are clear to domain experts but ambiguous in text. The "single-particle" vs. "second-quantized" distinction and "real" vs. "momentum" space specification are two prominent examples where the LLM scores 0 across all annotators.
+
+**Implicit Conventions.** Several tasks require awareness of conventions not explicitly stated in the excerpt, such as the precise ordering of valley and layer indices in the Hamiltonian basis. The LLM partially recovers these (scoring 1–2), but human experts consistently note missing nuances.
+
+### 4.3 Inter-Annotator Reliability
+
+The inter-annotator agreement rates (68.4%–81.0%) indicate moderate-to-substantial reliability for a specialized physics evaluation task. The systematic difference between Will and the other annotators (particularly with Yasaman at 68.4%) suggests that clearer scoring rubrics could improve consistency. However, the close alignment of per-annotator means (1.57–1.62) indicates that the overall score calibration is robust.
+
+### 4.4 Implications for LLM-Assisted Physics Research
+
+Our findings have several implications for the use of LLMs in theoretical physics research:
+
+1. **Structured prompt templates are effective**: The template-based approach, with explicit specification of degrees of freedom, symbol conventions, and basis ordering, enables the LLM to perform complex derivations that would be difficult to elicit through free-form prompting.
+
+2. **Paper extraction is a critical step**: The quality of the filled prompt template—determined by how accurately placeholder information is extracted from the paper—directly impacts downstream calculation accuracy. This suggests that improving the paper extraction module (potentially through fine-tuning or retrieval-augmented generation) could yield significant gains.
+
+3. **LLMs can maintain coherence across long reasoning chains**: The lack of systematic degradation in later, more complex tasks (mean-field theory, momentum reduction) demonstrates that LLMs can sustain accurate reasoning across 17 sequential calculation steps—a key requirement for practical physics research applications.
+
+4. **Domain-specific evaluation rubrics matter**: The six-dimensional scoring framework captures distinct aspects of LLM performance, and the variance across dimensions reveals specific failure modes that would be obscured by a single aggregate score.
+
+### 4.5 Limitations
+
+This study has several limitations:
+
+- **Single paper**: Results are based on one paper (arXiv:2111.01152). Generalization to other physics papers and systems requires further study.
+- **Single LLM**: The analysis evaluates one LLM system. Comparisons across different models (GPT-4, Claude, Gemini) would reveal model-specific strengths and weaknesses.
+- **Task scope**: The benchmark covers the non-interacting and mean-field parts of the Hartree-Fock workflow. Self-consistent iteration, convergence, and numerical implementation are not evaluated.
+- **Annotation subjectivity**: While inter-annotator agreement is moderate-to-substantial, some scoring decisions show systematic differences that may affect the precise numerical values reported.
+
+### 4.6 Future Directions
+
+Several promising directions emerge from this work:
+
+1. **Multi-paper benchmarks**: Extending the evaluation to additional papers would enable statistical comparisons across different physical systems, formalisms, and paper writing styles.
+2. **Ablation studies**: Systematically varying prompt template components (e.g., with/without explicit symbol conventions, with/without step-by-step examples) would identify which elements most impact performance.
+3. **Model comparison**: Evaluating multiple LLMs on the same benchmark would characterize the relationship between model scale, training data composition, and physics reasoning capability.
+4. **End-to-end automation**: Integrating paper extraction, prompt filling, calculation execution, and self-consistency checking into a fully automated pipeline could enable high-throughput theoretical physics workflows.
+
+---
+
+## 5. Conclusion
+
+We have presented the first systematic evaluation of LLM performance on multi-step analytic Hartree-Fock calculations in quantum many-body physics. Using a structured benchmark derived from paper arXiv:2111.01152, we find that the LLM achieves strong overall performance (μ = 1.80/2.00) across six evaluation dimensions, with physics logic at ceiling and mathematical derivation near ceiling.
+
+The primary bottleneck is accurate information extraction from research papers, as reflected in the lower and more variable in-paper content scores (μ = 1.50, σ = 0.79). Inter-annotator agreement (68–81%) indicates reasonable evaluation reliability, though more precise scoring rubrics could improve consistency.
+
+These results demonstrate that LLMs, when equipped with structured prompt templates, are capable of performing research-level theoretical physics calculations. The template-based approach effectively mitigates key bottlenecks in the research process, particularly the need for precise specification of degrees of freedom, symbol conventions, and basis ordering. Future work should focus on improving paper information extraction, extending the benchmark to multiple papers and models, and developing end-to-end automated theoretical physics workflows.
+
+---
+
+## Appendix A: Summary Statistics
+
+**Table A1: Per-Dimension Score Statistics**
+
+| Dimension | Mean | Std | Min | Max | Score 0 | Score 1 | Score 2 |
+|-----------|------|-----|-----|-----|---------|---------|---------|
+| In-Paper Content | 1.50 | 0.79 | 0 | 2 | 3 | 2 | 11 |
+| Prompt Quality | 1.81 | 0.39 | 1 | 2 | 0 | 3 | 13 |
+| Follow Instructions | 1.88 | 0.33 | 1 | 2 | 0 | 2 | 14 |
+| Physics Logic | 2.00 | 0.00 | 2 | 2 | 0 | 0 | 16 |
+| Math Derivation | 1.88 | 0.33 | 1 | 2 | 0 | 2 | 14 |
+| Final Answer Accuracy | 1.75 | 0.43 | 1 | 2 | 0 | 4 | 12 |
+
+**Table A2: Inter-Annotator Agreement**
+
+| Annotator Pair | Exact Agreement | n |
+|----------------|-----------------|---|
+| Haining–Will | 80.3% | 76 |
+| Haining–Yasaman | 81.0% | 84 |
+| Will–Yasaman | 68.4% | 76 |
+
+**Table A3: Per-Annotator Mean Scores (Placeholder Level)**
+
+| Annotator | Mean Score | n |
+|-----------|-----------|-----|
+| Haining | 1.62 | 84 |
+| Will | 1.57 | 76 |
+| Yasaman | 1.58 | 84 |
+
+---
+
+## References
+
+[1] T. Brown et al., "Language Models are Few-Shot Learners," *NeurIPS* 2020.
+
+[2] A. Lewkowycz et al., "Solving Quantitative Reasoning Problems with Language Models," *NeurIPS* 2022.
+
+[3] R. Taylor et al., "Galactica: A Large Language Model for Science," arXiv:2211.09085, 2022.
+
+[4] T. Li et al., "Continuous Mott transition in semiconductor moiré superlattices," *Nature* 597, 350–354, 2021.
+
+[5] F. Wu et al., "Topological Insulators in Twisted Transition Metal Dichalcogenide Homobilayers," *Phys. Rev. Lett.* 122, 086402, 2019.
+
+[6] H. Pan, M. Xie, F. Wu, and S. Das Sarma, "Topological Phases in AB-Stacked MoTe₂/WSe₂: ℤ₂ Topological Insulators, Chern Insulators, and Topological Charge Density Waves," arXiv:2111.01152, 2021.
+
+---
+
+## Appendix B: Code and Data Availability
+
+All analysis code is available in the `code/` directory:
+- `code/parse_data.py`: YAML data parser and structured data extraction
+- `code/analysis_and_viz.py`: Statistical analysis and figure generation
+
+All intermediate results are available in the `outputs/` directory:
+- `outputs/parsed_tasks.json`: Parsed task data with placeholder-level scores
+- `outputs/annotator_agreements.json`: Per-placeholder per-annotator scores
+- `outputs/task_scores.json`: Task-level scoring data
+- `outputs/summary_statistics.json`: Comprehensive summary statistics
+
+All figures are saved as PNG files in `report/images/`.

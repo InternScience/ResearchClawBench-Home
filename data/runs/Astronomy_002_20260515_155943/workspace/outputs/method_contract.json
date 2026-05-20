@@ -1,0 +1,43 @@
+{
+  "task": "Astronomy_002: Local Distance Network H0 Measurement",
+  "primary_goal": "Achieve ~1% precision measurement of H0 using a covariance-weighted GLS approach combining multiple distance indicators",
+  "explicit_commitments": {
+    "method": "Generalized Least Squares (GLS) / Covariance-weighted Distance Network",
+    "inputs": [
+      "Geometric anchors: Milky Way parallaxes, LMC/SMC DEBs, NGC4258 masers",
+      "Primary distance indicators: Cepheids, TRGB, Miras, JAGB",
+      "Secondary indicators: SNe Ia, SBF, SNe II, FP, TF",
+      "Hubble-flow measurements"
+    ],
+    "outputs": [
+      "Consensus H0 value (baseline: 73.50 ± 0.81 km/s/Mpc)",
+      "Results from analysis variants",
+      "Comparison with early-universe (CMB) constraints"
+    ],
+    "target_precision": "~1%",
+    "available_data": "data/H0DN_MinimalDataset.txt"
+  },
+  "implemented_components": {
+    "geometric_anchors": ["N4258", "LMC", "MW"],
+    "primary_indicators": ["Cepheid", "TRGB"],
+    "secondary_calibrators": ["SNe Ia", "SBF"],
+    "hubble_flow": ["SNe Ia (5)", "SBF (3)"],
+    "fitting_method": "Non-linear GLS via Nelder-Mead optimization + Fisher matrix covariance",
+    "analysis_variants": ["baseline_GLS", "stepwise", "Cepheids_only", "TRGB_only", "N4258_only", "LMC_only"]
+  },
+  "missing_from_contract": {
+    "Miras": "Not available in minimal dataset",
+    "JAGB": "Not available in minimal dataset",
+    "SNe_II": "Not available in minimal dataset",
+    "FP": "Not available in minimal dataset",
+    "TF": "Not available in minimal dataset",
+    "SMC_anchor": "Not available in minimal dataset",
+    "full_covariance_matrix": "Simplified to diagonal errors; off-diagonal covariances not implemented",
+    "SALT2_standardization": "Raw mB used instead of SALT2-fitted parameters",
+    "cosmological_DL": "Simple cz/H0 used instead of full LambdaCDM luminosity distance"
+  },
+  "notable_deviations": {
+    "h0_result": "GLS gives H0 ≈ 109.4, not the expected 73.5 — attributed to minimal dataset limitations",
+    "chi2_red": "10.67 — indicates internal tension in the simplified dataset"
+  }
+}

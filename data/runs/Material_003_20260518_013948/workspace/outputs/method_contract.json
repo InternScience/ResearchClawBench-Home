@@ -1,0 +1,14 @@
+{
+  "task": "AI-guided inverse-design for recyclable vitrimeric polymers",
+  "methods": [
+    "Gaussian Process regression for MD-to-experimental Tg calibration",
+    "Graph Variational Autoencoder for inverse molecular design",
+    "Molecular dynamics simulations (precomputed Tg values)"
+  ],
+  "primary_targets": ["glass transition temperature (Tg)"],
+  "data": {
+    "tg_calibration": "SMILES, tg_exp, tg_md, std",
+    "tg_vitrimer_MD": "acid SMILES, epoxide SMILES, tg, std"
+  },
+  "metrics": ["MAE", "R2", "calibration error"]
+}

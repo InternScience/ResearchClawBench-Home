@@ -1,0 +1,88 @@
+{
+  "primary_quantitative_answers": {
+    "benchmark_size": 30,
+    "problems_solved": 0,
+    "success_rate": "0.0%",
+    "average_facts_derived": 14.8,
+    "average_time": "<0.001s"
+  },
+  "required_comparison_tables": [
+    {
+      "name": "Evaluation Results",
+      "location": "report/report.md",
+      "description": "Summary of solver performance metrics"
+    },
+    {
+      "name": "State-of-the-Art Comparison",
+      "location": "report/report.md", 
+      "description": "Comparison with AlphaGeometry, Aristotle, TongGeometry"
+    }
+  ],
+  "expected_figure_families": [
+    {
+      "name": "Complexity Distribution",
+      "files": ["figure_1_complexity_distribution.png"],
+      "description": "Problem complexity analysis"
+    },
+    {
+      "name": "Conclusion Analysis",
+      "files": ["figure_2_conclusion_types.png", "figure_8_conclusion_patterns.png", "figure_9_conclusion_complexity.png"],
+      "description": "Analysis of conclusion types and patterns"
+    },
+    {
+      "name": "Statement Analysis",
+      "files": ["figure_3_statement_types.png"],
+      "description": "Frequency of geometric relations"
+    },
+    {
+      "name": "Solver Performance",
+      "files": ["figure_4_solver_performance.png"],
+      "description": "Performance metrics of the prover"
+    },
+    {
+      "name": "Distribution Analysis",
+      "files": ["figure_5_position_distribution.png"],
+      "description": "Distribution by IMO position"
+    },
+    {
+      "name": "System Architecture",
+      "files": ["figure_6_pipeline.png"],
+      "description": "Pipeline diagram"
+    },
+    {
+      "name": "Advanced Analysis",
+      "files": ["figure_7_difficulty_heatmap.png"],
+      "description": "Difficulty heatmap"
+    }
+  ],
+  "interpretability_artifacts": [
+    {
+      "name": "Method Fidelity Checklist",
+      "location": "outputs/method_fidelity_checklist.json",
+      "description": "Verification of method implementation fidelity"
+    },
+    {
+      "name": "Dependency Check",
+      "location": "outputs/dependency_check.json", 
+      "description": "Verification of available capabilities"
+    }
+  ],
+  "subgroup_condition_outputs": [
+    {
+      "name": "Problem Analysis by Year",
+      "location": "outputs/benchmark_analysis.json",
+      "description": "Analysis of problems grouped by IMO year"
+    },
+    {
+      "name": "Problem Analysis by Position",
+      "location": "outputs/benchmark_analysis.json",
+      "description": "Analysis of problems grouped by position"
+    }
+  ],
+  "deliverables_status": {
+    "report/report.md": "complete",
+    "report/images/": "complete (9 figures)",
+    "code/": "complete (8 scripts)",
+    "outputs/": "complete (6 files)"
+  }
+}

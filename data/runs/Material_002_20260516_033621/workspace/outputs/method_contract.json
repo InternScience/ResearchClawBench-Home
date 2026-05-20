@@ -1,0 +1,35 @@
+{
+  "task": "MACE-MP-0 Foundation Model Validation",
+  "model": "MACE-MP-0 (mace-mp-0b3-medium)",
+  "architecture": "MACE: Higher-order O(3)-equivariant message-passing neural network with many-body messages",
+  "training_data": "MPtrj dataset (~1.5M inorganic crystal structures and relaxation trajectories, 89 elements)",
+  "method_commitments": {
+    "water_rdf": {
+      "method": "Langevin MD at 330K with 32 H2O molecules",
+      "output": "O-O radial distribution function g(r)",
+      "validation": "Peak positions at ~2.8 Å (first shell) and ~4.5 Å (second shell)"
+    },
+    "adsorption_scaling": {
+      "method": "BFGS relaxation of fcc(111) slabs with O and OH adsorbates",
+      "metals": ["Ni", "Cu", "Rh", "Pd", "Ir", "Pt"],
+      "output": "Linear scaling relation E_ads(OH) vs E_ads(O)",
+      "reference": "d-band model scaling relations"
+    },
+    "reaction_barriers": {
+      "method": "Single-point MACE energies at reactant and TS geometries",
+      "reactions": ["Cyclobutene ring-opening (Rxn 1)", "Methoxy decomposition (Rxn 11)", "Cyclopropane ring-opening (Rxn 20)"],
+      "reference": "CRBH20 DFT benchmarks",
+      "output": "Barrier comparison and error analysis"
+    }
+  },
+  "limitations": [
+    "MD simulation limited to 200 steps (0.1 ps) vs 2000 steps specified",
+    "Transition state geometries not optimized within MACE framework",
+    "Rxn 11 uses simplified geometry not corresponding to MACE saddle point",
+    "float64 CPU-only computation, slower than GPU inference"
+  ],
+  "fallback_deviations": [
+    "Reduced MD steps from 2000 to 200 due to computational constraints",
+    "Used single-point energies at provided geometries instead of NEB-optimized barriers"
+  ]
+}

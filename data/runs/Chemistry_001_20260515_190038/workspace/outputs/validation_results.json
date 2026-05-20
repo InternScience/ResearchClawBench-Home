@@ -1,0 +1,31 @@
+{
+  "protein": {
+    "n_ca_atoms": 161,
+    "residue_range": "125-285",
+    "radius_of_gyration": 17.239959312935905,
+    "max_dimension": 66.99889952081303,
+    "mean_pairwise_distance": 22.071249376049952
+  },
+  "ligand": {
+    "n_atoms_total": 194,
+    "n_heavy_atoms": 90,
+    "n_bonds": 193,
+    "elements": {
+      "C": 53,
+      "N": 20,
+      "H": 104,
+      "O": 17
+    },
+    "molecular_weight_approx": 1292,
+    "radius_of_gyration": 10.601544116947318
+  },
+  "diffusion": {
+    "n_timesteps": 1000,
+    "beta_start": 0.0001,
+    "beta_end": 0.02,
+    "rmsd_at_t250": 5.065244886316971,
+    "rmsd_at_t500": 12.630988510171061,
+    "rmsd_at_t750": 16.41271705786998,
+    "gdt_ts_native": 1.0
+  }
+}

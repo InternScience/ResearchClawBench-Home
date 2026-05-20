@@ -1,0 +1,317 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_data_exploration.py",
+    "path": "code/01_data_exploration.py",
+    "type": "file",
+    "size": 4046,
+    "mtime": 1779267444.0,
+    "exported": true
+  },
+  {
+    "name": "02_trajectory_analysis.py",
+    "path": "code/02_trajectory_analysis.py",
+    "type": "file",
+    "size": 6835,
+    "mtime": 1779267444.0,
+    "exported": true
+  },
+  {
+    "name": "03_feature_selection.py",
+    "path": "code/03_feature_selection.py",
+    "type": "file",
+    "size": 10738,
+    "mtime": 1779267444.0,
+    "exported": true
+  },
+  {
+    "name": "04_interpretability.py",
+    "path": "code/04_interpretability.py",
+    "type": "file",
+    "size": 9698,
+    "mtime": 1779267444.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "adata_RPE.h5ad",
+    "path": "data/adata_RPE.h5ad",
+    "type": "file",
+    "size": 8145585,
+    "mtime": 1772768114.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "dpt_pseudotime.csv",
+    "path": "outputs/dpt_pseudotime.csv",
+    "type": "file",
+    "size": 42254,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "feature_dynamism_scores.csv",
+    "path": "outputs/feature_dynamism_scores.csv",
+    "type": "file",
+    "size": 42002,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "feature_importance.csv",
+    "path": "outputs/feature_importance.csv",
+    "type": "file",
+    "size": 589,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "feature_selection_evaluation.csv",
+    "path": "outputs/feature_selection_evaluation.csv",
+    "type": "file",
+    "size": 92812,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "feature_variances.csv",
+    "path": "outputs/feature_variances.csv",
+    "type": "file",
+    "size": 7534,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "selected_features.txt",
+    "path": "outputs/selected_features.txt",
+    "type": "file",
+    "size": 350,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "subgroup_phase_performance.csv",
+    "path": "outputs/subgroup_phase_performance.csv",
+    "type": "file",
+    "size": 132,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "subgroup_state_performance.csv",
+    "path": "outputs/subgroup_state_performance.csv",
+    "type": "file",
+    "size": 91,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "summary.json",
+    "path": "outputs/summary.json",
+    "type": "file",
+    "size": 734,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "top_proteins.csv",
+    "path": "outputs/top_proteins.csv",
+    "type": "file",
+    "size": 983,
+    "mtime": 1779267438.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 3849589,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1095492,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 8684628,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 1480436,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure_ablation_k.png",
+    "path": "report/images/figure_ablation_k.png",
+    "type": "file",
+    "size": 100109,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_age_distribution.png",
+    "path": "report/images/figure_age_distribution.png",
+    "type": "file",
+    "size": 65644,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_compartment_analysis.png",
+    "path": "report/images/figure_compartment_analysis.png",
+    "type": "file",
+    "size": 76993,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_dpt_comparison.png",
+    "path": "report/images/figure_dpt_comparison.png",
+    "type": "file",
+    "size": 254848,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_dynamic_heatmap.png",
+    "path": "report/images/figure_dynamic_heatmap.png",
+    "type": "file",
+    "size": 120196,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_feature_importance.png",
+    "path": "report/images/figure_feature_importance.png",
+    "type": "file",
+    "size": 82880,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_feature_selection_curves.png",
+    "path": "report/images/figure_feature_selection_curves.png",
+    "type": "file",
+    "size": 253263,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_feature_variance.png",
+    "path": "report/images/figure_feature_variance.png",
+    "type": "file",
+    "size": 82124,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_permutation_importance.png",
+    "path": "report/images/figure_permutation_importance.png",
+    "type": "file",
+    "size": 41998,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_subgroup_performance.png",
+    "path": "report/images/figure_subgroup_performance.png",
+    "type": "file",
+    "size": 47908,
+    "mtime": 1779267440.0,
+    "exported": true
+  },
+  {
+    "name": "figure_top_dynamic_features.png",
+    "path": "report/images/figure_top_dynamic_features.png",
+    "type": "file",
+    "size": 828107,
+    "mtime": 1779267440.0,
+    "exported": true
+  },
+  {
+    "name": "figure_trajectory_reconstruction.png",
+    "path": "report/images/figure_trajectory_reconstruction.png",
+    "type": "file",
+    "size": 241366,
+    "mtime": 1779267442.0,
+    "exported": true
+  },
+  {
+    "name": "figure_umap_comparison.png",
+    "path": "report/images/figure_umap_comparison.png",
+    "type": "file",
+    "size": 1635009,
+    "mtime": 1779267442.0,
+    "exported": false
+  },
+  {
+    "name": "figure_umap_overview.png",
+    "path": "report/images/figure_umap_overview.png",
+    "type": "file",
+    "size": 1239251,
+    "mtime": 1779267440.0,
+    "exported": false
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 25980,
+    "mtime": 1779267445.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4810,
+    "mtime": 1778887108.0,
+    "exported": true
+  }
+]

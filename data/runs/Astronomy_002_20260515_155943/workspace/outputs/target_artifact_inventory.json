@@ -1,0 +1,106 @@
+{
+  "artifacts": [
+    {
+      "id": "h0_baseline",
+      "description": "Consensus H0 value from GLS baseline",
+      "status": "satisfied",
+      "location": "outputs/gls_results.json",
+      "value": "H0 = 109.38 ± 2.34 km/s/Mpc"
+    },
+    {
+      "id": "h0_variants",
+      "description": "H0 values from analysis variants",
+      "status": "satisfied",
+      "location": "outputs/variants.json",
+      "variants": ["Cepheids_only", "TRGB_only", "N4258_only", "LMC_only", "stepwise"]
+    },
+    {
+      "id": "host_distances",
+      "description": "GLS-fitted host distance moduli",
+      "status": "satisfied",
+      "location": "outputs/gls_results.json"
+    },
+    {
+      "id": "MB_calibration",
+      "description": "SNe Ia absolute magnitude calibration",
+      "status": "satisfied",
+      "location": "outputs/gls_results.json",
+      "value": "M_B = -19.461 ± 0.037 mag"
+    },
+    {
+      "id": "MSBF_calibration",
+      "description": "SBF absolute magnitude calibration",
+      "status": "satisfied",
+      "location": "outputs/gls_results.json",
+      "value": "M_SBF = -3.581 ± 0.106 mag"
+    },
+    {
+      "id": "fig1_data_overview",
+      "description": "Distance ladder / network architecture diagram",
+      "status": "satisfied",
+      "location": "report/images/fig1_data_overview.png"
+    },
+    {
+      "id": "fig2_host_distances",
+      "description": "Host distance measurements and GLS fitted values",
+      "status": "satisfied",
+      "location": "report/images/fig2_host_distances.png"
+    },
+    {
+      "id": "fig3_hubble_diagram",
+      "description": "Hubble diagram with SNe Ia and SBF",
+      "status": "satisfied",
+      "location": "report/images/fig3_hubble_diagram.png"
+    },
+    {
+      "id": "fig4_h0_variants",
+      "description": "Comparison of H0 from analysis variants",
+      "status": "satisfied",
+      "location": "report/images/fig4_h0_variants.png"
+    },
+    {
+      "id": "fig5_residuals",
+      "description": "GLS residual distribution and by-category analysis",
+      "status": "satisfied",
+      "location": "report/images/fig5_residuals.png"
+    },
+    {
+      "id": "fig6_network",
+      "description": "Distance network connectivity diagram",
+      "status": "satisfied",
+      "location": "report/images/fig6_network.png"
+    },
+    {
+      "id": "report",
+      "description": "Comprehensive research report with methodology, results, and discussion",
+      "status": "satisfied",
+      "location": "report/report.md"
+    },
+    {
+      "id": "cmb_comparison",
+      "description": "Direct comparison with early-universe CMB constraints",
+      "status": "unsatisfied",
+      "reason": "Our H0 value (~109) differs from both the local SH0ES measurement and Planck CMB prediction; the minimal dataset does not produce the expected baseline H0 ≈ 73.5 needed for a meaningful Hubble tension comparison"
+    },
+    {
+      "id": "software_release",
+      "description": "Publicly released software and data products",
+      "status": "partially_satisfied",
+      "reason": "Code is available in code/ directory but not packaged as a public release"
+    },
+    {
+      "id": "subgroup_analysis",
+      "description": "Subgroup or per-condition analysis (Cepheid vs TRGB, N4258 vs LMC)",
+      "status": "satisfied",
+      "location": "outputs/variants.json and fig4"
+    }
+  ],
+  "unsatisfied_critical": [
+    {
+      "id": "target_h0_value",
+      "description": "Baseline H0 should be ~73.50 ± 0.81",
+      "actual": "109.38 ± 2.34",
+      "reason": "Minimal dataset contains systematic offsets between calibrator and Hubble-flow SNe Ia; simplified treatment lacks SALT2 standardization and full covariance matrix"
+    }
+  ]
+}

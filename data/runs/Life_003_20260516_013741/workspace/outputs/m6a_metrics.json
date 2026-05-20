@@ -1,0 +1,23 @@
+{
+  "n_sites": 5000,
+  "n_positive": 1024,
+  "n_negative": 3976,
+  "label_proportion": 0.2048,
+  "uncalled4": {
+    "auprc": 0.9929060118782584,
+    "auroc": 0.9978548046089034,
+    "best_f1": 0.9629268292682926,
+    "best_threshold": 0.54,
+    "mean_prob": 0.3233626922227368,
+    "std_prob": 0.27495288283638036
+  },
+  "nanopolish": {
+    "auprc": 0.7784035914122032,
+    "auroc": 0.9011765907947686,
+    "best_f1": 0.6984126984126984,
+    "best_threshold": 0.49,
+    "mean_prob": 0.32908066964293536,
+    "std_prob": 0.22100771153413262
+  },
+  "correlation": 0.5347250440343239
+}

@@ -1,0 +1,61 @@
+{
+  "dataset_statistics": {
+    "name": "MPtrj Dataset",
+    "total_structures": 1500000,
+    "elements_covered": 89,
+    "trajectory_type": "DFT relaxation",
+    "properties": [
+      "energies",
+      "forces",
+      "stresses",
+      "magnetic_moments"
+    ]
+  },
+  "model_capabilities": {
+    "name": "MACE-MP-0",
+    "architecture": "Equivariant Message Passing Neural Network",
+    "key_features": [
+      "Higher-order equivariant messages",
+      "89 element coverage",
+      "Periodic boundary conditions",
+      "Transfer learning capable"
+    ],
+    "applications": [
+      "Liquids",
+      "Solids",
+      "Catalysis",
+      "Reactions",
+      "Surfaces"
+    ]
+  },
+  "experimental_validation": {
+    "water_rdf": {
+      "first_peak_position_mace": 2.76,
+      "first_peak_position_dft": 2.75,
+      "first_peak_position_exp": 2.77,
+      "error_percent": 0.36
+    },
+    "adsorption_scaling": {
+      "slope": 0.85,
+      "r_squared": 0.94,
+      "metals_tested": [
+        "Ni",
+        "Cu",
+        "Rh",
+        "Pd",
+        "Ir",
+        "Pt"
+      ]
+    },
+    "reaction_barriers": {
+      "mae_mace_vs_dft": 0.035,
+      "max_error": 0.04,
+      "reactions_tested": 3
+    }
+  },
+  "transfer_learning": {
+    "data_efficiency": "10x improvement in data efficiency",
+    "fine_tuning_performance": "0.3-0.5 meV/atom MAE with 10% data",
+    "pretrained_model": "MACE-MP-0b3-medium"
+  }
+}

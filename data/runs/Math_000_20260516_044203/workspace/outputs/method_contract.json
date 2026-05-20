@@ -1,0 +1,39 @@
+{
+  "task": "Multi-object tracking via pseudo-depth decomposition and hierarchical association",
+  "named_methods": [
+    "SparseTrack",
+    "ByteTrack"
+  ],
+  "scientific_targets": [
+    "Handle occlusions in crowded scenes",
+    "Decompose dense target sets into sparse subsets via pseudo-depth estimation",
+    "Perform hierarchical association (intra-layer then cross-layer)",
+    "Improve multi-object tracking performance"
+  ],
+  "primary_metrics": [
+    "MOTA",
+    "IDF1",
+    "MOTP",
+    "ID_Switches",
+    "FP",
+    "FN",
+    "MT",
+    "ML"
+  ],
+  "comparison_axes": [
+    "ByteTrack vs SparseTrack",
+    "Depth layer count ablation",
+    "Depth method ablation"
+  ],
+  "model_family": "Tracking-by-detection with Kalman filter and Hungarian algorithm",
+  "data": {
+    "name": "simulated_sequence.json",
+    "frames": 100,
+    "unique_objects": 200,
+    "detection_rate": "~85%",
+    "score_range": [
+      0.1,
+      0.9
+    ]
+  }
+}

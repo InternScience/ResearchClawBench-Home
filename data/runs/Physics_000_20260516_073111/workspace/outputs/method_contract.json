@@ -1,0 +1,34 @@
+{
+  "task": "Establish a universal theoretical framework for rational design of multi-component nanoclusters with specific symmetry and compositional sequences",
+  "method_commitments": [
+    "Mackay icosahedral shell theory",
+    "Chiral shell categories (MC, BG, Ch1-Ch5)",
+    "Hexagonal lattice to spherical shell mapping",
+    "Size mismatch optimization between adjacent shells",
+    "Path-based growth simulation on hexagonal lattice",
+    "Lennard-Jones interatomic potentials",
+    "Experimental validation against measured mismatch data"
+  ],
+  "primary_targets": [
+    "Predicted stable multi-shell icosahedral structures (e.g., Na13@Rb32, Ni147@Ag192)",
+    "Optimal size mismatch values between adjacent shells",
+    "Shell sequences and paths from growth simulations"
+  ],
+  "data_source": "Multi-component Icosahedral Reproduction Data.txt",
+  "related_work": [
+    "paper_000: Twarock & Luque - Icosahedral design principle for virus capsids",
+    "paper_001: Yao et al. - High-entropy nanoparticles synthesis-structure-property",
+    "paper_002: Self-assembly of polyhedral shells via SAT",
+    "paper_003: Martin-Bravo et al. - Minimal design principles for icosahedral virus capsids"
+  ],
+  "output_commitments": [
+    "Magic number sequence comparison",
+    "Size mismatch heatmap for element pairs",
+    "Shell energy landscape by chiral category",
+    "Growth trajectory analysis",
+    "Path selection statistics",
+    "Experimental vs theoretical validation",
+    "Lennard-Jones potential analysis",
+    "Predicted stable multi-component clusters"
+  ]
+}

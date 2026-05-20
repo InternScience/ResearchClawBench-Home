@@ -1,0 +1,42 @@
+{
+  "dataset": {
+    "total_records": 832,
+    "year_range": "2000-2025",
+    "unique_projects": 211,
+    "num_states": 13
+  },
+  "spatial": {
+    "top_state": "California",
+    "top_state_count": 215,
+    "top3_share_pct": 58.53,
+    "top5_share_pct": 79.81
+  },
+  "temporal": {
+    "peak_period": "2003-2005",
+    "peak_count": 143,
+    "decline_period": "2016-2020",
+    "decline_count": 122,
+    "recovery_period": "2021-2025",
+    "recovery_count": 132,
+    "lowest_year": 2020,
+    "lowest_count": 12
+  },
+  "purpose": {
+    "primary_purpose": "augment snowpack",
+    "primary_count": 516,
+    "primary_pct": 62.02,
+    "secondary_purpose": "increase precipitation",
+    "secondary_count": 423,
+    "secondary_pct": 50.84
+  },
+  "agent_apparatus": {
+    "dominant_agent": "silver iodide (any form)",
+    "agent_count": 795,
+    "agent_pct": 95.55,
+    "dominant_apparatus": "ground",
+    "ground_count": 592,
+    "ground_pct": 71.15,
+    "airborne_count": 367,
+    "airborne_pct": 44.11
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "numpy": {"available": true, "version": "installed"},
+    "pandas": {"available": true, "version": "installed"},
+    "scikit-learn": {"available": true, "version": "installed"},
+    "xgboost": {"available": true, "version": "installed"},
+    "shap": {"available": true, "version": "installed"},
+    "matplotlib": {"available": true, "version": "installed"},
+    "seaborn": {"available": true, "version": "installed"}
+  },
+  "limitations": [
+    "No GPU available - all training done on CPU",
+    "t-SNE implementation uses scikit-learn (not GPU-accelerated)",
+    "SHAP analysis limited to TreeExplainer for XGBoost (KernelExplainer for MLP would be too slow)"
+  ],
+  "fallback_methods": {
+    "deep_learning": "MLP from scikit-learn used instead of PyTorch/TensorFlow (sufficient for tabular data)",
+    "segmentation_u_net": "Not applicable - this is a tabular classification task, not image segmentation",
+    "malis_loss": "Not applicable - we are doing post-segmentation merge classification, not segmentation training"
+  }
+}

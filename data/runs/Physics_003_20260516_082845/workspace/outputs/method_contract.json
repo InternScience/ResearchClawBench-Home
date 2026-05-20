@@ -1,0 +1,35 @@
+{
+  "task": "Observation of Floquet-Bloch states in monolayer epitaxial graphene via tr-ARPES",
+  "method_commitments": {
+    "technique": "Time-resolved and angle-resolved photoemission spectroscopy (tr-ARPES)",
+    "sample": "Monolayer epitaxial graphene",
+    "pump": "Mid-infrared, wavelength 5 μm (ħω = 0.248 eV)",
+    "target_observable": "Energy- and momentum-resolved Floquet-Bloch states (replica bands of Dirac cone)",
+    "mechanism": "Photon-dressed Volkov final states scattering mechanism",
+    "key_measurements": [
+      "Dirac cone band dispersion",
+      "Floquet replica bands at n = ±1",
+      "Energy spacing = ±ħω",
+      "Polarization dependence of replica band intensity"
+    ]
+  },
+  "derived_methods": {
+    "difference_spectroscopy": "Pump-on minus pump-off spectral difference",
+    "edc_analysis": "Energy distribution curves at Dirac kx",
+    "mdc_analysis": "Momentum distribution curves at Dirac energy",
+    "floquet_ladder": "Comparison of measured energy spacing with photon energy"
+  },
+  "related_work_references": [
+    "Oka & Aoki (2009) - Floquet theory for graphene, photovoltaic Hall effect",
+    "Wang et al. (2013) - Experimental Floquet-Bloch on Bi2Se3 TI",
+    "Hübener et al. (2017) - Floquet-Weyl semimetals from 3D Dirac materials",
+    "Sentef et al. (2015) - Theory of Floquet band formation in graphene pump-probe"
+  ],
+  "limitations": [
+    "Single kx momentum cut only (no full 2D kx-ky mapping)",
+    "5 time delay points (limited femtosecond dynamics)",
+    "Linear polarization only (no circular polarization data)",
+    "Moderate pump intensity (no dynamical band gap resolution)",
+    "LAPE vs Floquet initial-state dressing cannot be fully disentangled"
+  ]
+}

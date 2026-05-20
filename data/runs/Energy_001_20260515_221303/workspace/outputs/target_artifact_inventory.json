@@ -1,0 +1,32 @@
+{
+  "primary_artifacts": [
+    {"name": "Dispatch stack figure", "path": "report/images/dispatch_stack.png", "status": "generated"},
+    {"name": "Wind curtailment figure", "path": "report/images/wind_curtailment.png", "status": "generated"},
+    {"name": "Storage operation figure", "path": "report/images/storage_operation.png", "status": "generated"},
+    {"name": "Generation mix pie chart", "path": "report/images/generation_mix_pie.png", "status": "generated"},
+    {"name": "Load shedding figure", "path": "report/images/load_shedding.png", "status": "generated"},
+    {"name": "Cost breakdown figure", "path": "report/images/cost_breakdown.png", "status": "generated"},
+    {"name": "Link utilization figure", "path": "report/images/link_utilization.png", "status": "generated"},
+    {"name": "Power balance verification", "path": "report/images/power_balance.png", "status": "generated"},
+    {"name": "Network topology map", "path": "report/images/network_topology.png", "status": "generated"},
+    {"name": "Generation heatmap", "path": "report/images/generation_heatmap.png", "status": "generated"},
+    {"name": "Bus demand vs generation", "path": "report/images/bus_demand_gen.png", "status": "generated"},
+    {"name": "Capacity factors", "path": "report/images/capacity_factors.png", "status": "generated"},
+    {"name": "Scenario shedding comparison", "path": "report/images/scenario_shedding.png", "status": "generated"},
+    {"name": "Scenario curtailment comparison", "path": "report/images/scenario_curtailment.png", "status": "generated"}
+  ],
+  "secondary_artifacts": [
+    {"name": "Dispatch time series", "path": "outputs/dispatch_timeseries.csv", "status": "generated"},
+    {"name": "Generation per bus", "path": "outputs/generation_per_bus.csv", "status": "generated"},
+    {"name": "Generator summary", "path": "outputs/generator_summary.csv", "status": "generated"},
+    {"name": "Link flows", "path": "outputs/link_flows.csv", "status": "generated"},
+    {"name": "Load shedding per bus", "path": "outputs/load_shedding.csv", "status": "generated"},
+    {"name": "Storage summary", "path": "outputs/storage_summary.csv", "status": "generated"},
+    {"name": "Summary statistics", "path": "outputs/summary.json", "status": "generated"},
+    {"name": "Scenario comparison", "path": "outputs/scenario_comparison.json", "status": "generated"},
+    {"name": "Method contract", "path": "outputs/method_contract.json", "status": "generated"},
+    {"name": "Analysis code (main)", "path": "code/optimal_dispatch.py", "status": "generated"},
+    {"name": "Analysis code (scenarios)", "path": "code/scenario_comparison.py", "status": "generated"},
+    {"name": "Research report", "path": "report/report.md", "status": "generated"}
+  ]
+}

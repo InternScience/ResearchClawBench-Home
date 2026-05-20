@@ -1,0 +1,66 @@
+{
+  "DNA R9.4.1 (6-mer)": {
+    "kmer_length": 6,
+    "n_unique_kmers": 4096,
+    "current_mean_range": [
+      -2.8223267334635755,
+      2.903624693668017
+    ],
+    "current_mean_mean": 0.0,
+    "current_mean_std": 1.0001220926687904,
+    "current_std_mean": 0.12457629602574388,
+    "dwell_time_mean": 12.529052734375,
+    "avg_A_count": 1.5,
+    "avg_C_count": 1.5,
+    "avg_G_count": 1.5,
+    "avg_T_count": 1.5
+  },
+  "DNA R10.4.1 (9-mer)": {
+    "kmer_length": 9,
+    "n_unique_kmers": 262144,
+    "current_mean_range": [
+      -3.2789043581452644,
+      3.156355198239986
+    ],
+    "current_mean_mean": 1.6479873021779667e-17,
+    "current_mean_std": 1.000001907354097,
+    "current_std_mean": 0.12499407030565314,
+    "dwell_time_mean": 12.540740966796875,
+    "avg_A_count": 2.25,
+    "avg_C_count": 2.25,
+    "avg_G_count": 2.25,
+    "avg_T_count": 2.25
+  },
+  "RNA R9.4.1 (5-mer)": {
+    "kmer_length": 5,
+    "n_unique_kmers": 1024,
+    "current_mean_range": [
+      -2.4602796093744868,
+      2.4082268069952795
+    ],
+    "current_mean_mean": 1.3877787807814457e-17,
+    "current_mean_std": 1.000488639169156,
+    "current_std_mean": 0.12468127695394857,
+    "dwell_time_mean": 12.576171875,
+    "avg_A_count": 1.25,
+    "avg_C_count": 1.25,
+    "avg_G_count": 1.25,
+    "avg_T_count": 1.25
+  },
+  "RNA004 (9-mer)": {
+    "kmer_length": 9,
+    "n_unique_kmers": 262144,
+    "current_mean_range": [
+      -3.2024809597905404,
+      3.3179590297390766
+    ],
+    "current_mean_mean": -4.7704895589362195e-17,
+    "current_mean_std": 1.0000019073540884,
+    "current_std_mean": 0.12496064529581649,
+    "dwell_time_mean": 12.514026641845703,
+    "avg_A_count": 2.25,
+    "avg_C_count": 2.25,
+    "avg_G_count": 2.25,
+    "avg_T_count": 2.25
+  }
+}

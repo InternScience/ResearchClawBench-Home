@@ -1,0 +1,25 @@
+{
+  "figures": [
+    {"id": "figure1_magic_numbers.png", "description": "Magic number sequences: Mackay vs new chiral-extended", "status": "satisfied"},
+    {"id": "figure2_mismatch_heatmap.png", "description": "Size mismatch heatmap for all element pairs", "status": "satisfied"},
+    {"id": "figure3_shell_energies.png", "description": "Shell energy landscape by chiral category", "status": "satisfied"},
+    {"id": "figure4_growth_trajectories.png", "description": "Growth trajectory mismatch evolution", "status": "satisfied"},
+    {"id": "figure5_path_statistics.png", "description": "Path selection statistics and distribution", "status": "satisfied"},
+    {"id": "figure6_experimental_validation.png", "description": "Experimental vs theoretical mismatch parity plot", "status": "satisfied"},
+    {"id": "figure7_lj_potentials.png", "description": "Lennard-Jones potential curves for element pairs", "status": "satisfied"},
+    {"id": "figure8_predicted_clusters.png", "description": "Predicted stable multi-component clusters", "status": "satisfied"},
+    {"id": "figure9_atomic_radii.png", "description": "Atomic radii comparison of available elements", "status": "satisfied"},
+    {"id": "figure10_energy_stability.png", "description": "Energy stability: chiral vs Mackay configurations", "status": "satisfied"}
+  ],
+  "tables": [
+    {"id": "optimal_mismatch_ranges", "description": "Optimal size mismatch ranges by shell transition type", "status": "satisfied"},
+    {"id": "validated_clusters", "description": "Multi-component cluster validation data", "status": "satisfied"},
+    {"id": "experimental_validation", "description": "Experimental validation with MAE/RMSE", "status": "satisfied"},
+    {"id": "lj_parameters", "description": "Lennard-Jones parameters for element pairs", "status": "satisfied"}
+  ],
+  "primary_outputs": [
+    {"id": "predicted_structures", "description": "Predicted stable multi-shell icosahedral structures", "status": "satisfied"},
+    {"id": "optimal_mismatches", "description": "Optimal size mismatch values between adjacent shells", "status": "satisfied"},
+    {"id": "shell_sequences", "description": "Shell sequences and paths from growth simulations", "status": "satisfied"}
+  ]
+}

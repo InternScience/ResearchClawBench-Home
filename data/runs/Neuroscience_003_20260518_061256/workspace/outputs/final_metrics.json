@@ -1,0 +1,24 @@
+{
+  "dataset": {
+    "n_cells": 2759,
+    "n_features": 241
+  },
+  "selection": {
+    "n_selected": 50,
+    "reduction_ratio": 0.2074688796680498
+  },
+  "metrics_full": {
+    "pc1_spearman": 0.0015,
+    "kendall_tau": 0.0029,
+    "neighborhood_coherence": 2.9473,
+    "age_prediction_r2": 0.7655,
+    "mean_mi": 0.0478
+  },
+  "metrics_selected": {
+    "pc1_spearman": 0.4897,
+    "kendall_tau": 0.3457,
+    "neighborhood_coherence": 1.9494,
+    "age_prediction_r2": 0.8031,
+    "mean_mi": 0.1503
+  }
+}

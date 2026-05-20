@@ -1,0 +1,22 @@
+{
+  "task": "Independent reproduction of cloud-seeding empirical claims from NOAA weather-modification records (2000-2025)",
+  "named_methods": [
+    "Script-based transparent analysis",
+    "Spatial concentration choropleth mapping",
+    "Annual activity time-series with linear trend",
+    "Purpose tag frequency decomposition",
+    "Agent-apparatus cross-tabulation",
+    "State-level aggregation"
+  ],
+  "primary_claims_to_verify": [
+    "Spatial concentration in Western states",
+    "Declining annual activity trend",
+    "Purpose dominance: snowpack augmentation and precipitation enhancement",
+    "Agent dominance: silver iodide",
+    "Apparatus dominance: ground-based generators"
+  ],
+  "data_source": "cloud_seeding_us_2000_2025.csv (832 records, 13 states, 26 years)",
+  "geospatial_reference": "us_states.geojson",
+  "related_work_used": false,
+  "related_work_note": "Related work papers (000-004) cover unrelated climate/radar datasets. No cloud-seeding-specific related work was available."
+}

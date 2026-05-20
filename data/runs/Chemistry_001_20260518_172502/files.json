@@ -1,0 +1,293 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "prepare_data.py",
+    "path": "code/prepare_data.py",
+    "type": "file",
+    "size": 9018,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "simple_predictor.py",
+    "path": "code/simple_predictor.py",
+    "type": "file",
+    "size": 2955,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "train_and_evaluate.py",
+    "path": "code/train_and_evaluate.py",
+    "type": "file",
+    "size": 23438,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "train_and_evaluate_v2.py",
+    "path": "code/train_and_evaluate_v2.py",
+    "type": "file",
+    "size": 28760,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "train_efficient.py",
+    "path": "code/train_efficient.py",
+    "type": "file",
+    "size": 20005,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "train_final.py",
+    "path": "code/train_final.py",
+    "type": "file",
+    "size": 26031,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "train_overfit.py",
+    "path": "code/train_overfit.py",
+    "type": "file",
+    "size": 20984,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "unidiff_complex.py",
+    "path": "code/unidiff_complex.py",
+    "type": "file",
+    "size": 22051,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "sample",
+    "path": "data/sample",
+    "type": "directory"
+  },
+  {
+    "name": "2l3r",
+    "path": "data/sample/2l3r",
+    "type": "directory"
+  },
+  {
+    "name": "2l3r_ligand.sdf",
+    "path": "data/sample/2l3r/2l3r_ligand.sdf",
+    "type": "file",
+    "size": 13842,
+    "mtime": 1753787932.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "2l3r_protein.pdb",
+    "path": "data/sample/2l3r/2l3r_protein.pdb",
+    "type": "file",
+    "size": 211329,
+    "mtime": 1753787932.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "complex_coords.npy",
+    "path": "outputs/complex_coords.npy",
+    "type": "file",
+    "size": 6152,
+    "mtime": 1779246492.0,
+    "exported": false
+  },
+  {
+    "name": "complex_edge_attr.npy",
+    "path": "outputs/complex_edge_attr.npy",
+    "type": "file",
+    "size": 4168,
+    "mtime": 1779246492.0,
+    "exported": false
+  },
+  {
+    "name": "complex_edge_index.npy",
+    "path": "outputs/complex_edge_index.npy",
+    "type": "file",
+    "size": 16288,
+    "mtime": 1779246492.0,
+    "exported": false
+  },
+  {
+    "name": "complex_node_types.npy",
+    "path": "outputs/complex_node_types.npy",
+    "type": "file",
+    "size": 2136,
+    "mtime": 1779246490.0,
+    "exported": false
+  },
+  {
+    "name": "final_model.pt",
+    "path": "outputs/final_model.pt",
+    "type": "file",
+    "size": 1898964,
+    "mtime": 1779246492.0,
+    "exported": false
+  },
+  {
+    "name": "ligand_atom_features.npy",
+    "path": "outputs/ligand_atom_features.npy",
+    "type": "file",
+    "size": 5528,
+    "mtime": 1779246490.0,
+    "exported": false
+  },
+  {
+    "name": "ligand_coords.npy",
+    "path": "outputs/ligand_coords.npy",
+    "type": "file",
+    "size": 2288,
+    "mtime": 1779246490.0,
+    "exported": false
+  },
+  {
+    "name": "ligand_edge_attr.npy",
+    "path": "outputs/ligand_edge_attr.npy",
+    "type": "file",
+    "size": 840,
+    "mtime": 1779246492.0,
+    "exported": false
+  },
+  {
+    "name": "ligand_edge_index.npy",
+    "path": "outputs/ligand_edge_index.npy",
+    "type": "file",
+    "size": 2976,
+    "mtime": 1779246492.0,
+    "exported": false
+  },
+  {
+    "name": "processed_data.pt",
+    "path": "outputs/processed_data.pt",
+    "type": "file",
+    "size": 42549,
+    "mtime": 1779246490.0,
+    "exported": false
+  },
+  {
+    "name": "\u2026 3 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 3651992,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 3634495,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 5515632,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 569417,
+    "mtime": 1773914887.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure1_data_overview.png",
+    "path": "report/images/figure1_data_overview.png",
+    "type": "file",
+    "size": 484514,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "figure2_architecture.png",
+    "path": "report/images/figure2_architecture.png",
+    "type": "file",
+    "size": 106408,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "figure3_predictions.png",
+    "path": "report/images/figure3_predictions.png",
+    "type": "file",
+    "size": 458537,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "figure4_validation.png",
+    "path": "report/images/figure4_validation.png",
+    "type": "file",
+    "size": 126371,
+    "mtime": 1779246492.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 21281,
+    "mtime": 1779246493.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5475,
+    "mtime": 1779096302.0,
+    "exported": true
+  }
+]

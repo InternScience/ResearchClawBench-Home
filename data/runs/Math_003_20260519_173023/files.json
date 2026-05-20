@@ -1,0 +1,311 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "experiments.py",
+    "path": "code/experiments.py",
+    "type": "file",
+    "size": 14370,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "generate_figures.py",
+    "path": "code/generate_figures.py",
+    "type": "file",
+    "size": 7340,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "geometry_engine.py",
+    "path": "code/geometry_engine.py",
+    "type": "file",
+    "size": 17350,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "neural_guidance.py",
+    "path": "code/neural_guidance.py",
+    "type": "file",
+    "size": 9597,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "parser.py",
+    "path": "code/parser.py",
+    "type": "file",
+    "size": 7952,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "prover.py",
+    "path": "code/prover.py",
+    "type": "file",
+    "size": 12856,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "run_all.py",
+    "path": "code/run_all.py",
+    "type": "file",
+    "size": 9515,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "symbolic.py",
+    "path": "code/symbolic.py",
+    "type": "file",
+    "size": 11159,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "defs.txt",
+    "path": "data/defs.txt",
+    "type": "file",
+    "size": 8156,
+    "mtime": 1770192796.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "imo_ag_30.txt",
+    "path": "data/imo_ag_30.txt",
+    "type": "file",
+    "size": 8772,
+    "mtime": 1770343778.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "rules.txt",
+    "path": "data/rules.txt",
+    "type": "file",
+    "size": 2785,
+    "mtime": 1770343778.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "baseline_results.json",
+    "path": "outputs/baseline_results.json",
+    "type": "file",
+    "size": 8009,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "combined_results.json",
+    "path": "outputs/combined_results.json",
+    "type": "file",
+    "size": 16042,
+    "mtime": 1779246062.0,
+    "exported": true
+  },
+  {
+    "name": "dependency_check.json",
+    "path": "outputs/dependency_check.json",
+    "type": "file",
+    "size": 771,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "gnn_model.pt",
+    "path": "outputs/gnn_model.pt",
+    "type": "file",
+    "size": 131995,
+    "mtime": 1779246062.0,
+    "exported": false
+  },
+  {
+    "name": "method_contract.json",
+    "path": "outputs/method_contract.json",
+    "type": "file",
+    "size": 737,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "method_fidelity_checklist.json",
+    "path": "outputs/method_fidelity_checklist.json",
+    "type": "file",
+    "size": 1449,
+    "mtime": 1779246062.0,
+    "exported": true
+  },
+  {
+    "name": "problem_analysis.json",
+    "path": "outputs/problem_analysis.json",
+    "type": "file",
+    "size": 8560,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "target_artifact_inventory.json",
+    "path": "outputs/target_artifact_inventory.json",
+    "type": "file",
+    "size": 2575,
+    "mtime": 1779246062.0,
+    "exported": true
+  },
+  {
+    "name": "training_curves.json",
+    "path": "outputs/training_curves.json",
+    "type": "file",
+    "size": 1324,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "value_predictions.json",
+    "path": "outputs/value_predictions.json",
+    "type": "file",
+    "size": 929,
+    "mtime": 1779246062.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 2215244,
+    "mtime": 1773914908.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 550976,
+    "mtime": 1773914908.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 165489,
+    "mtime": 1773914908.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2682222,
+    "mtime": 1773914908.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_problem_complexity.png",
+    "path": "report/images/fig1_problem_complexity.png",
+    "type": "file",
+    "size": 56064,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "fig2_predicate_distribution.png",
+    "path": "report/images/fig2_predicate_distribution.png",
+    "type": "file",
+    "size": 46232,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "fig3_training_curves.png",
+    "path": "report/images/fig3_training_curves.png",
+    "type": "file",
+    "size": 47249,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "fig4_strategy_comparison.png",
+    "path": "report/images/fig4_strategy_comparison.png",
+    "type": "file",
+    "size": 71401,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "fig5_complexity_scatter.png",
+    "path": "report/images/fig5_complexity_scatter.png",
+    "type": "file",
+    "size": 88087,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "fig6_goal_distribution.png",
+    "path": "report/images/fig6_goal_distribution.png",
+    "type": "file",
+    "size": 67285,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "fig7_nodes_heatmap.png",
+    "path": "report/images/fig7_nodes_heatmap.png",
+    "type": "file",
+    "size": 75927,
+    "mtime": 1779246064.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 17986,
+    "mtime": 1779246065.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4701,
+    "mtime": 1779183023.0,
+    "exported": true
+  }
+]

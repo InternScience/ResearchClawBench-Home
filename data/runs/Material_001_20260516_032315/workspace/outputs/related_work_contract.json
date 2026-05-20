@@ -1,0 +1,53 @@
+{
+  "related_work": [
+    {
+      "paper": "paper_000",
+      "title": "The Materials Project: A materials genome approach to accelerating materials innovation",
+      "authors": "Jain et al. (2013)",
+      "key_contributions": [
+        "High-throughput DFT computation framework for 33,000+ compounds",
+        "Open data access via web apps and REST API (pymatgen)",
+        "FireWorks workflow management for automated calculations",
+        "Community-driven validation (crowdsourcing, Report Issues)"
+      ],
+      "relevance": "Establishes the data infrastructure and vision for AI-driven materials discovery"
+    },
+    {
+      "paper": "paper_001",
+      "title": "Physics-informed machine learning",
+      "authors": "Karniadakis et al. (2021)",
+      "key_contributions": [
+        "Three pathways for physics embedding: observational, inductive, learning biases",
+        "Physics-Informed Neural Networks (PINNs) for PDE-constrained learning",
+        "Integration of noisy data with mathematical models",
+        "Applications to forward and inverse problems"
+      ],
+      "relevance": "Provides framework for incorporating physical constraints (DFT, elasticity) into ML models"
+    },
+    {
+      "paper": "paper_002",
+      "title": "Crystal Graph Convolutional Neural Networks (CGCNN)",
+      "authors": "Xie and Grossman (2018)",
+      "key_contributions": [
+        "Crystal graph representation encoding atom connectivity and bonding",
+        "Convolutional architecture with atom-level interpretability",
+        "MAE 0.039 eV/atom for formation energy (DFT accuracy)",
+        "Atom-level energy decomposition for design rule discovery"
+      ],
+      "relevance": "State-of-the-art architecture for property prediction from crystal structures"
+    },
+    {
+      "paper": "paper_003",
+      "title": "Machine-learning-assisted materials discovery using failed experiments",
+      "authors": "Raccuglia et al. (2016)",
+      "key_contributions": [
+        "SVM model trained on successful AND failed reactions (dark reactions)",
+        "89% prediction accuracy vs 78% human expert",
+        "Decision tree interpretation yielding chemical hypotheses",
+        "Feedback loop: model predictions guide subsequent experiments"
+      ],
+      "relevance": "Demonstrates value of negative data and interpretable ML for synthesis optimization"
+    }
+  ],
+  "integration_summary": "All four papers inform the integrated framework: Materials Project (data infrastructure), PINNs (physics constraints), CGCNN (graph-based featurization), and dark reactions (optimization from historical data)."
+}

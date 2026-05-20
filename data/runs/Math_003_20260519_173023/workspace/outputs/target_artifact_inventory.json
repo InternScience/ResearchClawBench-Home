@@ -1,0 +1,82 @@
+{
+  "artifacts": [
+    {
+      "name": "problem_analysis.json",
+      "status": "satisfied",
+      "path": "outputs/problem_analysis.json",
+      "description": "Structured analysis of 30 IMO geometry problems"
+    },
+    {
+      "name": "baseline_results.json",
+      "status": "satisfied",
+      "path": "outputs/baseline_results.json",
+      "description": "Baseline symbolic search results across strategies"
+    },
+    {
+      "name": "gnn_model.pt",
+      "status": "satisfied",
+      "path": "outputs/gnn_model.pt",
+      "description": "Trained Graph Neural Network for proof state evaluation"
+    },
+    {
+      "name": "training_curves.json",
+      "status": "satisfied",
+      "path": "outputs/training_curves.json",
+      "description": "GNN training and validation loss curves"
+    },
+    {
+      "name": "neural_results.json",
+      "status": "satisfied",
+      "path": "outputs/neural_results.json",
+      "description": "Neural-guided search results"
+    },
+    {
+      "name": "combined_results.json",
+      "status": "satisfied",
+      "path": "outputs/combined_results.json",
+      "description": "Combined baseline and neural results"
+    },
+    {
+      "name": "fig1_problem_complexity.png",
+      "status": "satisfied",
+      "path": "report/images/fig1_problem_complexity.png",
+      "description": "Problem complexity overview figure"
+    },
+    {
+      "name": "fig2_predicate_distribution.png",
+      "status": "satisfied",
+      "path": "report/images/fig2_predicate_distribution.png",
+      "description": "Predicate distribution across benchmark"
+    },
+    {
+      "name": "fig3_training_curves.png",
+      "status": "satisfied",
+      "path": "report/images/fig3_training_curves.png",
+      "description": "GNN training curves figure"
+    },
+    {
+      "name": "fig4_strategy_comparison.png",
+      "status": "satisfied",
+      "path": "report/images/fig4_strategy_comparison.png",
+      "description": "Strategy comparison bar charts"
+    },
+    {
+      "name": "fig5_complexity_scatter.png",
+      "status": "satisfied",
+      "path": "report/images/fig5_complexity_scatter.png",
+      "description": "Problem complexity scatter plot"
+    },
+    {
+      "name": "fig6_goal_distribution.png",
+      "status": "satisfied",
+      "path": "report/images/fig6_goal_distribution.png",
+      "description": "Goal predicate type distribution"
+    },
+    {
+      "name": "fig7_nodes_heatmap.png",
+      "status": "satisfied",
+      "path": "report/images/fig7_nodes_heatmap.png",
+      "description": "Nodes expanded per problem heatmap"
+    }
+  ]
+}

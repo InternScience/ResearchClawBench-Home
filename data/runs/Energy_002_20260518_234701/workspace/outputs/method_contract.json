@@ -1,0 +1,13 @@
+{
+  "task": "Build transparent geospatial LCOH model for African green hydrogen to Europe via ammonia by 2030",
+  "method_commitments": [
+    "Use geospatial hexagon dataset with PV/wind potentials and infrastructure distances",
+    "Compute levelized cost of hydrogen (LCOH) production per site",
+    "Add downstream costs: ammonia synthesis, shipping, reconversion (cracking)",
+    "Compare to European domestic production benchmark computed with identical model",
+    "Evaluate multiple financing/policy scenarios via WACC (5%, 8%, 12%)",
+    "Identify least-cost locations and quantify competitiveness"
+  ],
+  "scenarios": ["strong_de-risking (5% WACC)", "moderate_de-risking (8% WACC)", "no_de-risking (12% WACC)"],
+  "target_quantities": ["delivered_cost_eur_per_kg", "lcoh_production_eur_per_kg", "competitive_site_count"]
+}

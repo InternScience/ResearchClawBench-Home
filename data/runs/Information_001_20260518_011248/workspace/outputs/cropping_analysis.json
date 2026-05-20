@@ -1,0 +1,254 @@
+{
+  "demo1.png": {
+    "original_size": [
+      1024,
+      768
+    ],
+    "strategies": {
+      "naive_uniform": {
+        "num_crops": 4,
+        "crops": [
+          {
+            "position": [
+              0,
+              0,
+              512,
+              384
+            ],
+            "variance": 4221.37,
+            "edge_density": 9.84
+          },
+          {
+            "position": [
+              512,
+              0,
+              1024,
+              384
+            ],
+            "variance": 5776.65,
+            "edge_density": 12.55
+          },
+          {
+            "position": [
+              0,
+              384,
+              512,
+              768
+            ],
+            "variance": 1717.07,
+            "edge_density": 5.77
+          },
+          {
+            "position": [
+              512,
+              384,
+              1024,
+              768
+            ],
+            "variance": 2056.89,
+            "edge_density": 6.99
+          }
+        ],
+        "total_variance": 13771.98
+      },
+      "center_focused": {
+        "num_crops": 3,
+        "crops": [
+          {
+            "position": [
+              256,
+              192,
+              768,
+              576
+            ],
+            "variance": 3391.68,
+            "edge_density": 11.65
+          },
+          {
+            "position": [
+              341,
+              192,
+              682,
+              576
+            ],
+            "variance": 3500.02,
+            "edge_density": 11.66
+          },
+          {
+            "position": [
+              256,
+              256,
+              768,
+              512
+            ],
+            "variance": 3293.23,
+            "edge_density": 13.24
+          }
+        ],
+        "total_variance": 10184.93
+      },
+      "adaptive_guided": {
+        "num_crops": 3,
+        "crops": [
+          {
+            "position": [
+              548,
+              78,
+              676,
+              206
+            ],
+            "variance": 4938.47,
+            "edge_density": 16.37
+          },
+          {
+            "position": [
+              547,
+              78,
+              675,
+              206
+            ],
+            "variance": 4959.5,
+            "edge_density": 16.26
+          },
+          {
+            "position": [
+              546,
+              78,
+              674,
+              206
+            ],
+            "variance": 4979.98,
+            "edge_density": 16.2
+          }
+        ],
+        "total_variance": 14877.95
+      }
+    }
+  },
+  "demo2.png": {
+    "original_size": [
+      2250,
+      1500
+    ],
+    "strategies": {
+      "naive_uniform": {
+        "num_crops": 4,
+        "crops": [
+          {
+            "position": [
+              0,
+              0,
+              1125,
+              750
+            ],
+            "variance": 6008.26,
+            "edge_density": 34.71
+          },
+          {
+            "position": [
+              1125,
+              0,
+              2250,
+              750
+            ],
+            "variance": 5435.36,
+            "edge_density": 34.03
+          },
+          {
+            "position": [
+              0,
+              750,
+              1125,
+              1500
+            ],
+            "variance": 3560.84,
+            "edge_density": 21.26
+          },
+          {
+            "position": [
+              1125,
+              750,
+              2250,
+              1500
+            ],
+            "variance": 5159.92,
+            "edge_density": 25.14
+          }
+        ],
+        "total_variance": 20164.38
+      },
+      "center_focused": {
+        "num_crops": 3,
+        "crops": [
+          {
+            "position": [
+              562,
+              375,
+              1687,
+              1125
+            ],
+            "variance": 5165.44,
+            "edge_density": 37.92
+          },
+          {
+            "position": [
+              750,
+              375,
+              1500,
+              1125
+            ],
+            "variance": 5249.44,
+            "edge_density": 40.11
+          },
+          {
+            "position": [
+              562,
+              500,
+              1687,
+              1000
+            ],
+            "variance": 5252.22,
+            "edge_density": 39.14
+          }
+        ],
+        "total_variance": 15667.1
+      },
+      "adaptive_guided": {
+        "num_crops": 3,
+        "crops": [
+          {
+            "position": [
+              874,
+              262,
+              1154,
+              542
+            ],
+            "variance": 5263.61,
+            "edge_density": 57.58
+          },
+          {
+            "position": [
+              872,
+              262,
+              1152,
+              542
+            ],
+            "variance": 5269.02,
+            "edge_density": 57.46
+          },
+          {
+            "position": [
+              871,
+              262,
+              1151,
+              542
+            ],
+            "variance": 5272.26,
+            "edge_density": 57.41
+          }
+        ],
+        "total_variance": 15804.89
+      }
+    }
+  }
+}

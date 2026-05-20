@@ -1,0 +1,46 @@
+{
+  "papers_reviewed": [
+    {
+      "id": "paper_000",
+      "title": "MAPF-LNS2: Fast Repairing for Multi-Agent Path Finding via Large Neighborhood Search",
+      "key_contribution": "LNS framework with PP repair and various neighborhood selection heuristics"
+    },
+    {
+      "id": "paper_001",
+      "title": "PRIMAL: Pathfinding via Reinforcement and Imitation Multi-Agent Learning",
+      "key_contribution": "Combines RL and IL for decentralized MAPF policies"
+    },
+    {
+      "id": "paper_002",
+      "title": "SCRIMP: Scalable Communication for Reinforcement- and Imitation-Learning-Based Multi-Agent Pathfinding",
+      "key_contribution": "Transformer-based communication for MARL MAPF"
+    },
+    {
+      "id": "paper_003",
+      "title": "EECBS: A Bounded-Suboptimal Search for Multi-Agent Path Finding",
+      "key_contribution": "Inadmissible heuristics for faster CBS"
+    },
+    {
+      "id": "paper_004",
+      "title": "LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+      "key_contribution": "Two-level search with lazy constraint addition"
+    }
+  ],
+  "key_baselines": [
+    "MAPF-LNS2",
+    "PRIMAL",
+    "EECBS",
+    "Prioritized Planning"
+  ],
+  "comparison_axes": [
+    "success_rate",
+    "runtime",
+    "scalability",
+    "solution_quality"
+  ],
+  "target_figure_families": [
+    "success_rate_curves",
+    "runtime_comparison",
+    "scalability_analysis"
+  ]
+}

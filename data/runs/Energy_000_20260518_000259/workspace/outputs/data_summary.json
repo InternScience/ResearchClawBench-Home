@@ -1,0 +1,35 @@
+{
+  "cs2_36": {
+    "n_total_cycles": 200,
+    "n_discharge_profiles": 50,
+    "discharge_capacity_range_ah": [
+      0.408267973576611,
+      31.30689661668336
+    ],
+    "nominal_capacity_ah": 1.1,
+    "nominal_voltage_v": 3.7
+  },
+  "nasa": {
+    "batteries": [
+      "B0005",
+      "B0006",
+      "B0007",
+      "B0018"
+    ],
+    "n_discharge_cycles": {
+      "B0005": 168,
+      "B0006": 168,
+      "B0007": 168,
+      "B0018": 132
+    },
+    "nominal_capacity_ah": 2.0,
+    "nominal_voltage_v": 3.7
+  },
+  "oxford": {
+    "cells": [
+      "ExampleDC_C1"
+    ],
+    "nominal_capacity_mah": 740,
+    "nominal_voltage_v": 3.7
+  }
+}

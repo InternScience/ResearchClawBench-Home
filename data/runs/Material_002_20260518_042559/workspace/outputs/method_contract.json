@@ -1,0 +1,51 @@
+{
+  "method_contract": {
+    "primary_model": "MACE-MP-0",
+    "architecture": "MACE (Multi-Atomic Cluster Expansion)",
+    "key_features": [
+      "Equivariant message passing neural network",
+      "Higher-order (4-body) messages",
+      "2 message passing layers for efficiency",
+      "89 element coverage",
+      "O(N) computational complexity"
+    ],
+    "training_dataset": {
+      "name": "MPtrj",
+      "size": 1500000,
+      "elements": 89,
+      "properties": ["energies", "forces", "stresses", "magnetic_moments"]
+    },
+    "validation_experiments": [
+      "Water RDF simulation",
+      "Adsorption energy scaling relations",
+      "Reaction barrier comparison"
+    ],
+    "transfer_learning": {
+      "pretrained_model": "MACE-MP-0b3-medium",
+      "fine_tuning_efficiency": "10x improvement",
+      "target_mae": "0.3-0.5 meV/atom with 10% data"
+    }
+  },
+  "scientific_claims": [
+    {
+      "claim": "MACE-MP-0 achieves DFT-level accuracy for water structure",
+      "evidence": "First peak position error <1% compared to DFT-AIMD",
+      "artifact": "report/images/water_rdf.png"
+    },
+    {
+      "claim": "MACE-MP-0 captures catalytic scaling relations",
+      "evidence": "R²=0.94 for O/OH adsorption scaling across 6 metals",
+      "artifact": "report/images/adsorption_scaling.png"
+    },
+    {
+      "claim": "MACE-MP-0 predicts reaction barriers with chemical accuracy",
+      "evidence": "MAE=0.035 eV for 3 organic reactions",
+      "artifact": "report/images/reaction_barriers.png"
+    },
+    {
+      "claim": "Transfer learning enables 10x data efficiency",
+      "evidence": "Learning curves showing fine-tuning vs scratch training",
+      "artifact": "report/images/fine_tuning_efficiency.png"
+    }
+  ]
+}

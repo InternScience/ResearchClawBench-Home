@@ -1,0 +1,23 @@
+{
+  "pretrain": {
+    "n": 5000,
+    "mean_nodes": 9.5592,
+    "mean_edges": 11.8494,
+    "feat_dim": 28,
+    "edge_feat_dim": 2
+  },
+  "finetune": {
+    "n": 2000,
+    "mean_nodes": 9.519,
+    "mean_edges": 11.697,
+    "n_positive": 99,
+    "n_negative": 1901
+  },
+  "candidate": {
+    "n": 1000,
+    "mean_nodes": 9.464,
+    "mean_edges": 11.758,
+    "hidden_positive": 43,
+    "hidden_negative": 957
+  }
+}

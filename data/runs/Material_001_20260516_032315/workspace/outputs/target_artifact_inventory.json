@@ -1,0 +1,22 @@
+{
+  "task": "Multimodal AI-driven materials discovery",
+  "artifacts": [
+    {"name": "figure1_data_overview.png", "type": "figure", "status": "satisfied", "path": "report/images/figure1_data_overview.png"},
+    {"name": "figure2_property_prediction.png", "type": "figure", "status": "satisfied", "path": "report/images/figure2_property_prediction.png"},
+    {"name": "figure3_structure_generation.png", "type": "figure", "status": "satisfied", "path": "report/images/figure3_structure_generation.png"},
+    {"name": "figure4_optimization.png", "type": "figure", "status": "satisfied", "path": "report/images/figure4_optimization.png"},
+    {"name": "figure5_framework.png", "type": "figure", "status": "satisfied", "path": "report/images/figure5_framework.png"},
+    {"name": "property_prediction_results.json", "type": "output", "status": "satisfied", "path": "outputs/property_prediction_results.json"},
+    {"name": "structure_generation_results.json", "type": "output", "status": "satisfied", "path": "outputs/structure_generation_results.json"},
+    {"name": "optimization_results.json", "type": "output", "status": "satisfied", "path": "outputs/optimization_results.json"},
+    {"name": "property_prediction.py", "type": "code", "status": "satisfied", "path": "code/property_prediction.py"},
+    {"name": "structure_generation.py", "type": "code", "status": "satisfied", "path": "code/structure_generation.py"},
+    {"name": "experimental_optimization.py", "type": "code", "status": "satisfied", "path": "code/experimental_optimization.py"},
+    {"name": "generate_figures.py", "type": "code", "status": "satisfied", "path": "code/generate_figures.py"},
+    {"name": "report.md", "type": "report", "status": "satisfied", "path": "report/report.md"},
+    {"name": "property_prediction_table", "type": "table", "status": "satisfied", "description": "Model comparison table in report"},
+    {"name": "structure_generation_metrics_table", "type": "table", "status": "satisfied", "description": "KDE vs GMM comparison in report"},
+    {"name": "optimization_comparison_table", "type": "table", "status": "satisfied", "description": "Optimization methods comparison in report"}
+  ],
+  "unsatisfied": []
+}

@@ -1,0 +1,26 @@
+
+ **********************************************************************
+ * TM-align (Version 20240303): protein and RNA structure alignment   *
+ * References: Y Zhang, J Skolnick. Nucl Acids Res 33, 2302-9 (2005)  *
+ *             S Gong, C Zhang, Y Zhang. Bioinformatics, bz282 (2019) *
+ * Please email comments and suggestions to yangzhanglab@umich.edu    *
+ **********************************************************************
+
+Name of Structure_1: /mnt/shared-storage-user/yetianlin/ResearchClawBench/workspaces/Life_002_20260518_034243/outputs/temp_7xg4_A.pdb (to be superimposed onto Structure_2)
+Name of Structure_2: /mnt/shared-storage-user/yetianlin/ResearchClawBench/workspaces/Life_002_20260518_034243/data/6n40.pdb
+Length of Structure_1: 241 residues
+Length of Structure_2: 726 residues
+
+Aligned length= 151, RMSD=   5.91, Seq_ID=n_identical/n_aligned= 0.093
+TM-score= 0.36498 (normalized by length of Structure_1: L=241, d0=5.75)
+TM-score= 0.15662 (normalized by length of Structure_2: L=726, d0=9.27)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+M--------------------------------------RYP-SDI-VDQVLKAGPDKGLLTW--------E--GV---------------------------------------------------------------------------D--------------------------A---ACSH-------------------------------------------------------------------------------------------------------------------------------------CSRPIQNGDLYSPSSVGA---------------------------------------------------------------------------------FFSDTRDLASTS-----------------------------------------------------------------------------------------------------------------------RS-ICWRCVVLRKKPMLYGLSAAVVTQDGIYSISKDVNKAWLFTTPPPAPFLV------------VH--SSST-MQ---------------------HLSWRTPVTLDNRRIHVRYGPNLFIVRPEVVRKALSIADRVN-EGQKKWVTPVYFDRKAAAMGHGLITRAGAEMLTQEEQEFFQSVT---------------------------PG-ERW--AL--SYL--MH------SKRP---EP-EVGECITEKVMTSLN------
+                                       ..  ..  ..     ::::...:.        :  ::                                                                           .                          .   .                                                                                                                                        ..:.                                                                                               ..::.  ..::.                                                                                                                       .. ::..:::::: :::::: ::       ::::..::.:....                     ..  .:.  ..                     ...::....     ..::.    .:..: ..::::::::::: :::::...:                 :.. .::  :::::::::                           :: .:.  ..  ..   .:      ::..   .. ..                   
+-MFAWWGRTVYQFRYIVIGVMVALCLGGGVYGISLGNHVTQ-SGF-YDE-----GSQSVAASLIGDEVYGRDRTSHVVAILTPPDDKKVTDKAWQKKVTEELDQVVKDHEDQIVGWVGWLKAPDTTDPTVSAMKTQDLRHTFISIPLQGDDDDEILKNYQVVEPELQQVNGGDIRLAGLNPLA---SELTGTIGEDQKRAEVAAIPLVAVVLFFVFGTVIAAALPAIIGGLAIAGALGIMRLVAEFTPVHFFAQPVVTLIGLGIAIDYGLFIVSRFREEIAEGYDTEAAVRRTVMTSGRTVVFSAVIIVASSVPLLLFPQGFL--------------KSITYAIIASVMLAAILSITVLAAALAILGPRVDALGVTTLKTREEVERGFWGRLVNVVMKRPIAFAAPILVVMVLLIIPLGQLSL--GGISEKYLPPDNAVRQSQEQFDKLFPGFRTEPLTLVMKREDGEPITDAQIADMRAKALTVSGFTDPDNDPEKMWKERPANDSGSKDPSVRVIQNGLENRNDAAKKIDELRALQPPHGIEVFVGGTPALEQDSIHSLF-DKLPLM-AL-------ILIVTTTVLMFLAF---------GSVVLPIKAALMSALTLGS-TMGILTWMFVDGHGSGLMNYTPQPLMAPMIGLI-----IAVIW----GLSTD-YEVFLVSRMVEARERGMSTAEAI-----------------RIG-TAT--TGRLITGAALILAVVAGAFVFSDLVMMKYLAFGLLIALLLDATIIRMFLV-PAVMKLLGDDCWWAPRWMKRVQ-------------EKLGLG
+
+#Total CPU time is  0.29 seconds
+
+--- STDERR ---

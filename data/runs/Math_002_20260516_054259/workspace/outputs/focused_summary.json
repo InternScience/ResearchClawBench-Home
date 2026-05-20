@@ -1,0 +1,182 @@
+{
+  "random_small": {
+    "PP": {
+      "success_rate": 0.25,
+      "avg_time": 0.001226961612701416,
+      "avg_cp": 2.0,
+      "avg_soc": 51.0,
+      "avg_makespan": 13.0
+    },
+    "LNS": {
+      "success_rate": 0.5,
+      "avg_time": 0.07335406541824341,
+      "avg_cp": 0.75,
+      "avg_soc": 52.25,
+      "avg_makespan": 13.25
+    },
+    "MARL": {
+      "success_rate": 0.25,
+      "avg_time": 0.09628486633300781,
+      "avg_cp": 1.75,
+      "avg_soc": 706.0,
+      "avg_makespan": 112.0
+    },
+    "Hybrid": {
+      "success_rate": 0.75,
+      "avg_time": 0.11371678113937378,
+      "avg_cp": 0.25,
+      "avg_soc": 579.25,
+      "avg_makespan": 153.0
+    }
+  },
+  "random_medium": {
+    "PP": {
+      "success_rate": 0.0,
+      "avg_time": 0.03750401735305786,
+      "avg_cp": 16.25,
+      "avg_soc": 717.75,
+      "avg_makespan": 40.0
+    },
+    "LNS": {
+      "success_rate": 0.0,
+      "avg_time": 4.118529498577118,
+      "avg_cp": 7.5,
+      "avg_soc": 734.75,
+      "avg_makespan": 42.75
+    },
+    "MARL": {
+      "success_rate": 0.0,
+      "avg_time": 2.5097370743751526,
+      "avg_cp": 36.25,
+      "avg_soc": 5625.0,
+      "avg_makespan": 150.0
+    },
+    "Hybrid": {
+      "success_rate": 0.0,
+      "avg_time": 4.764356076717377,
+      "avg_cp": 7.5,
+      "avg_soc": 1419.0,
+      "avg_makespan": 200.0
+    }
+  },
+  "maze": {
+    "PP": {
+      "success_rate": 0.0,
+      "avg_time": 0.09741795063018799,
+      "avg_cp": 30.75,
+      "avg_soc": 552.0,
+      "avg_makespan": 46.0
+    },
+    "LNS": {
+      "success_rate": 0.0,
+      "avg_time": 4.364043831825256,
+      "avg_cp": 19.0,
+      "avg_soc": 600.75,
+      "avg_makespan": 54.0
+    },
+    "MARL": {
+      "success_rate": 0.0,
+      "avg_time": 1.1943436861038208,
+      "avg_cp": 12.75,
+      "avg_soc": 3675.0,
+      "avg_makespan": 150.0
+    },
+    "Hybrid": {
+      "success_rate": 0.25,
+      "avg_time": 3.16793555021286,
+      "avg_cp": 9.25,
+      "avg_soc": 2463.75,
+      "avg_makespan": 200.0
+    }
+  },
+  "room": {
+    "PP": {
+      "success_rate": 0.0,
+      "avg_time": 0.2584807872772217,
+      "avg_cp": 64.25,
+      "avg_soc": 1005.75,
+      "avg_makespan": 51.75
+    },
+    "LNS": {
+      "success_rate": 0.0,
+      "avg_time": 5.052691876888275,
+      "avg_cp": 35.75,
+      "avg_soc": 1090.25,
+      "avg_makespan": 57.0
+    },
+    "MARL": {
+      "success_rate": 0.0,
+      "avg_time": 2.620497703552246,
+      "avg_cp": 34.75,
+      "avg_soc": 5625.0,
+      "avg_makespan": 150.0
+    },
+    "Hybrid": {
+      "success_rate": 0.0,
+      "avg_time": 5.167055666446686,
+      "avg_cp": 32.5,
+      "avg_soc": 2926.5,
+      "avg_makespan": 200.0
+    }
+  },
+  "warehouse": {
+    "PP": {
+      "success_rate": 0.0,
+      "avg_time": 0.01721709966659546,
+      "avg_cp": 20.0,
+      "avg_soc": 607.25,
+      "avg_makespan": 36.25
+    },
+    "LNS": {
+      "success_rate": 0.25,
+      "avg_time": 2.918955683708191,
+      "avg_cp": 3.25,
+      "avg_soc": 611.75,
+      "avg_makespan": 37.25
+    },
+    "MARL": {
+      "success_rate": 0.0,
+      "avg_time": 1.930671513080597,
+      "avg_cp": 37.5,
+      "avg_soc": 4950.0,
+      "avg_makespan": 150.0
+    },
+    "Hybrid": {
+      "success_rate": 0.25,
+      "avg_time": 3.197848618030548,
+      "avg_cp": 5.25,
+      "avg_soc": 1274.25,
+      "avg_makespan": 157.5
+    }
+  },
+  "empty": {
+    "PP": {
+      "success_rate": 0.0,
+      "avg_time": 0.03195697069168091,
+      "avg_cp": 16.5,
+      "avg_soc": 787.0,
+      "avg_makespan": 37.0
+    },
+    "LNS": {
+      "success_rate": 0.0,
+      "avg_time": 3.9450079798698425,
+      "avg_cp": 4.0,
+      "avg_soc": 787.0,
+      "avg_makespan": 37.0
+    },
+    "MARL": {
+      "success_rate": 0.0,
+      "avg_time": 3.2795965671539307,
+      "avg_cp": 55.0,
+      "avg_soc": 6975.0,
+      "avg_makespan": 150.0
+    },
+    "Hybrid": {
+      "success_rate": 0.0,
+      "avg_time": 5.143736720085144,
+      "avg_cp": 5.25,
+      "avg_soc": 1747.25,
+      "avg_makespan": 200.0
+    }
+  }
+}

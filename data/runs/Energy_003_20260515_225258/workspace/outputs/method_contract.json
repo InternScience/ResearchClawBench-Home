@@ -1,0 +1,33 @@
+{
+  "task": "HEEW Mini-Dataset Analysis",
+  "scientific_goal": "To provide a publicly available, comprehensive, and hierarchical benchmark dataset for energy system management, machine learning, and data-driven optimization",
+  "method_commitments": [
+    "Data cleaning and quality assessment",
+    "Hierarchical aggregation consistency verification",
+    "Correlation analysis (cross-variable and cross-building)",
+    "Time series analysis (daily, monthly, seasonal patterns)",
+    "Weather-energy coupling analysis",
+    "Anomaly detection using IQR method"
+  ],
+  "target_artifacts": [
+    "Statistical summaries for all entities",
+    "Correlation matrices (energy-energy, energy-weather, cross-building)",
+    "Monthly and seasonal aggregation tables",
+    "Hierarchical verification results",
+    "Building contribution analysis"
+  ],
+  "named_methods": [
+    "Pearson correlation",
+    "IQR-based anomaly detection",
+    "Temperature-binned analysis",
+    "Load duration curves",
+    "Hierarchical bottom-up aggregation"
+  ],
+  "data_source": "HEEW_Mini-Dataset (2014), 10 buildings + CN01 + Total + Weather",
+  "related_work_used": [
+    "Schlemminger et al. 2022 - WPuQ dataset (German residential)",
+    "Alonso et al. 2020 - Hierarchical clustering for smart meter loads",
+    "Abdelouadoud et al. 2023 - Hierarchical clustering for MV feeder capacity",
+    "Nie et al. 2023 - SKIPP'D sky images and PV dataset"
+  ]
+}

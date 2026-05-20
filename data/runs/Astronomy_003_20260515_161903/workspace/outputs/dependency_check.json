@@ -1,0 +1,16 @@
+{
+  "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2"
+  },
+  "all_available": true,
+  "limitations": [
+    "Data are synthetic log-normal draws, not actual SXS NR simulation outputs",
+    "Analysis is limited to statistical characterization; no waveform generation or NR simulation performed",
+    "Cannot perform actual time-domain waveform alignment or mismatch computation"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "task": "Develop a cascade machine learning forecasting system using three specialized U-Transformer models for 15-day global weather forecasts",
+  "method_commitments": {
+    "architecture": "Cascade of three U-Transformer models",
+    "input": "ERA5 reanalysis at 0.25° resolution, 5 upper-air variables (Z, T, U, V, R) at 13 pressure levels + 5 surface variables (T2M, U10, V10, MSL, TP), 2 consecutive 6-hour timesteps",
+    "output": "15-day global weather forecasts at 6-hour temporal resolution",
+    "key_innovation": "Cascade architecture to mitigate forecast error accumulation",
+    "target_performance": "Comparable to ECMWF ensemble mean",
+    "baseline": "FuXi forecasts (006.nc)"
+  },
+  "actual_data_specs": {
+    "resolution": "1° (181×360 grid), task-described 0.25° (721×1440) not available",
+    "channels": 70,
+    "variables": "Z(13) + T(13) + U(13) + V(13) + R(13) + Surface(5)",
+    "time_steps": "2 consecutive 6-hour states",
+    "fuxi_output": "Single 6h forecast step"
+  },
+  "limitations": {
+    "training": "Full U-Transformer training not feasible in this environment (requires weeks of GPU time and large ERA5 dataset)",
+    "resolution_mismatch": "Data at 1° instead of 0.25°",
+    "forecast_horizon": "Only 6h FuXi forecast available, not full 15-day"
+  },
+  "approach": "Theoretical framework + data-driven analysis using available data, modeling cascade error growth dynamics based on NWP error growth theory and published ML weather model benchmarks"
+}

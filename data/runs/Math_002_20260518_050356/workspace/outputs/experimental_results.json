@@ -1,0 +1,1882 @@
+{
+  "random_small/maps_50_10_10_0.175": {
+    "dataset": "random_small",
+    "subdir": "maps_50_10_10_0.175",
+    "map_size": [
+      10,
+      10
+    ],
+    "agent_counts": [
+      5,
+      10,
+      15
+    ],
+    "num_instances": 3,
+    "algorithms": {
+      "5": {
+        "PurePP": {
+          "success": 3,
+          "collisions": [
+            0,
+            0,
+            0
+          ],
+          "soc": [
+            47,
+            47,
+            43
+          ],
+          "runtime": [
+            0.0007152557373046875,
+            0.001455545425415039,
+            0.001230478286743164
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 45.666666666666664,
+          "avg_runtime": 0.0011337598164876301
+        },
+        "MAPF-LNS2": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            47,
+            47,
+            43
+          ],
+          "runtime": [
+            0.000431060791015625,
+            0.02791881561279297,
+            0.0004892349243164062
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 45.666666666666664,
+          "avg_runtime": 0.009613037109375
+        },
+        "HybridMARL-LNS": {
+          "success": 3,
+          "collisions": [
+            0,
+            0,
+            0
+          ],
+          "soc": [
+            47,
+            47,
+            43
+          ],
+          "runtime": [
+            0.0036764144897460938,
+            0.003834962844848633,
+            0.0038194656372070312
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 45.666666666666664,
+          "avg_runtime": 0.0037769476572672525
+        },
+        "MARL-LNS-Only": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            47,
+            47,
+            43
+          ],
+          "runtime": [
+            0.0004818439483642578,
+            0.058731794357299805,
+            0.0005328655242919922
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 45.666666666666664,
+          "avg_runtime": 0.01991550127665202
+        }
+      },
+      "10": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            1,
+            1,
+            2
+          ],
+          "soc": [
+            81,
+            80,
+            99
+          ],
+          "runtime": [
+            0.0015218257904052734,
+            0.0016605854034423828,
+            0.0028569698333740234
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 1.3333333333333333,
+          "avg_soc": 86.66666666666667,
+          "avg_runtime": 0.002013127009073893
+        },
+        "MAPF-LNS2": {
+          "success": 1,
+          "collisions": [
+            0,
+            1,
+            2
+          ],
+          "soc": [
+            81,
+            80,
+            98
+          ],
+          "runtime": [
+            0.001466989517211914,
+            0.04653453826904297,
+            0.1153879165649414
+          ],
+          "success_rate": 0.3333333333333333,
+          "avg_collisions": 1.0,
+          "avg_soc": 86.33333333333333,
+          "avg_runtime": 0.05446314811706543
+        },
+        "HybridMARL-LNS": {
+          "success": 1,
+          "collisions": [
+            0,
+            1,
+            2
+          ],
+          "soc": [
+            81,
+            80,
+            98
+          ],
+          "runtime": [
+            0.004982948303222656,
+            8.671993732452393,
+            10.002924919128418
+          ],
+          "success_rate": 0.3333333333333333,
+          "avg_collisions": 1.0,
+          "avg_soc": 86.33333333333333,
+          "avg_runtime": 6.226633866628011
+        },
+        "MARL-LNS-Only": {
+          "success": 1,
+          "collisions": [
+            0,
+            2,
+            2
+          ],
+          "soc": [
+            81,
+            81,
+            98
+          ],
+          "runtime": [
+            0.002373933792114258,
+            0.12221741676330566,
+            0.16829848289489746
+          ],
+          "success_rate": 0.3333333333333333,
+          "avg_collisions": 1.3333333333333333,
+          "avg_soc": 86.66666666666667,
+          "avg_runtime": 0.09762994448343913
+        }
+      },
+      "15": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            3,
+            4
+          ],
+          "soc": [
+            150,
+            126
+          ],
+          "runtime": [
+            0.003754138946533203,
+            0.002529621124267578
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.5,
+          "avg_soc": 138.0,
+          "avg_runtime": 0.0031418800354003906
+        },
+        "MAPF-LNS2": {
+          "success": 1,
+          "collisions": [
+            1,
+            0
+          ],
+          "soc": [
+            149,
+            125
+          ],
+          "runtime": [
+            0.09215426445007324,
+            0.004186391830444336
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 137.0,
+          "avg_runtime": 0.04817032814025879
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            6,
+            1
+          ],
+          "soc": [
+            149,
+            127
+          ],
+          "runtime": [
+            10.373240232467651,
+            10.136085271835327
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.5,
+          "avg_soc": 138.0,
+          "avg_runtime": 10.25466275215149
+        },
+        "MARL-LNS-Only": {
+          "success": 0,
+          "collisions": [
+            6,
+            2
+          ],
+          "soc": [
+            154,
+            126
+          ],
+          "runtime": [
+            0.44341373443603516,
+            0.18114399909973145
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 4.0,
+          "avg_soc": 140.0,
+          "avg_runtime": 0.3122788667678833
+        }
+      }
+    }
+  },
+  "random_small/maps_55_10_10_0.175": {
+    "dataset": "random_small",
+    "subdir": "maps_55_10_10_0.175",
+    "map_size": [
+      10,
+      10
+    ],
+    "agent_counts": [
+      5,
+      10,
+      15
+    ],
+    "num_instances": 3,
+    "algorithms": {
+      "5": {
+        "PurePP": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            35,
+            46
+          ],
+          "runtime": [
+            0.00042700767517089844,
+            0.0006701946258544922
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 40.5,
+          "avg_runtime": 0.0005486011505126953
+        },
+        "MAPF-LNS2": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            35,
+            46
+          ],
+          "runtime": [
+            0.0005555152893066406,
+            0.0005826950073242188
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 40.5,
+          "avg_runtime": 0.0005691051483154297
+        },
+        "HybridMARL-LNS": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            34,
+            46
+          ],
+          "runtime": [
+            0.0034139156341552734,
+            0.003710031509399414
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 40.0,
+          "avg_runtime": 0.0035619735717773438
+        },
+        "MARL-LNS-Only": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            34,
+            46
+          ],
+          "runtime": [
+            0.0009508132934570312,
+            0.0006289482116699219
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 40.0,
+          "avg_runtime": 0.0007898807525634766
+        }
+      },
+      "10": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            1,
+            3
+          ],
+          "soc": [
+            87,
+            82
+          ],
+          "runtime": [
+            0.001119375228881836,
+            0.002043485641479492
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.0,
+          "avg_soc": 84.5,
+          "avg_runtime": 0.001581430435180664
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            1,
+            2
+          ],
+          "soc": [
+            85,
+            82
+          ],
+          "runtime": [
+            0.0474238395690918,
+            0.0902550220489502
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 1.5,
+          "avg_soc": 83.5,
+          "avg_runtime": 0.068839430809021
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            2,
+            2
+          ],
+          "soc": [
+            86,
+            82
+          ],
+          "runtime": [
+            10.054308652877808,
+            10.030327081680298
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.0,
+          "avg_soc": 84.0,
+          "avg_runtime": 10.042317867279053
+        },
+        "MARL-LNS-Only": {
+          "success": 0,
+          "collisions": [
+            2,
+            3
+          ],
+          "soc": [
+            86,
+            82
+          ],
+          "runtime": [
+            0.11913657188415527,
+            0.16959071159362793
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.5,
+          "avg_soc": 84.0,
+          "avg_runtime": 0.1443636417388916
+        }
+      },
+      "15": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            4,
+            5,
+            1
+          ],
+          "soc": [
+            147,
+            149,
+            110
+          ],
+          "runtime": [
+            0.003244161605834961,
+            0.005272388458251953,
+            0.001706838607788086
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.3333333333333335,
+          "avg_soc": 135.33333333333334,
+          "avg_runtime": 0.0034077962239583335
+        },
+        "MAPF-LNS2": {
+          "success": 1,
+          "collisions": [
+            1,
+            2,
+            0
+          ],
+          "soc": [
+            145,
+            150,
+            117
+          ],
+          "runtime": [
+            0.09876346588134766,
+            0.2587010860443115,
+            0.009086132049560547
+          ],
+          "success_rate": 0.3333333333333333,
+          "avg_collisions": 1.0,
+          "avg_soc": 137.33333333333334,
+          "avg_runtime": 0.12218356132507324
+        },
+        "HybridMARL-LNS": {
+          "success": 1,
+          "collisions": [
+            0,
+            5,
+            2
+          ],
+          "soc": [
+            145,
+            149,
+            110
+          ],
+          "runtime": [
+            3.926967144012451,
+            10.223946332931519,
+            10.136072635650635
+          ],
+          "success_rate": 0.3333333333333333,
+          "avg_collisions": 2.3333333333333335,
+          "avg_soc": 134.66666666666666,
+          "avg_runtime": 8.095662037531534
+        },
+        "MARL-LNS-Only": {
+          "success": 1,
+          "collisions": [
+            0,
+            7,
+            2
+          ],
+          "soc": [
+            143,
+            154,
+            110
+          ],
+          "runtime": [
+            0.004791975021362305,
+            0.5736029148101807,
+            0.13886499404907227
+          ],
+          "success_rate": 0.3333333333333333,
+          "avg_collisions": 3.0,
+          "avg_soc": 135.66666666666666,
+          "avg_runtime": 0.23908662796020508
+        }
+      }
+    }
+  },
+  "random_medium/maps_312_25_25_0.175": {
+    "dataset": "random_medium",
+    "subdir": "maps_312_25_25_0.175",
+    "map_size": [
+      25,
+      25
+    ],
+    "agent_counts": [
+      10,
+      20,
+      30
+    ],
+    "num_instances": 3,
+    "algorithms": {
+      "10": {
+        "PurePP": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            141,
+            195,
+            168
+          ],
+          "runtime": [
+            0.002902984619140625,
+            0.005601167678833008,
+            0.003770112991333008
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 168.0,
+          "avg_runtime": 0.004091421763102214
+        },
+        "MAPF-LNS2": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            141,
+            195,
+            168
+          ],
+          "runtime": [
+            0.0026230812072753906,
+            0.09946417808532715,
+            0.0035300254821777344
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 168.0,
+          "avg_runtime": 0.03520576159159342
+        },
+        "HybridMARL-LNS": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            141,
+            195,
+            168
+          ],
+          "runtime": [
+            0.007409572601318359,
+            10.00167989730835,
+            0.008382797241210938
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 168.0,
+          "avg_runtime": 3.3391574223836265
+        },
+        "MARL-LNS-Only": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            141,
+            195,
+            168
+          ],
+          "runtime": [
+            0.004731416702270508,
+            0.14516854286193848,
+            0.0035746097564697266
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 168.0,
+          "avg_runtime": 0.05115818977355957
+        }
+      },
+      "20": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            3,
+            11,
+            7
+          ],
+          "soc": [
+            388,
+            436,
+            407
+          ],
+          "runtime": [
+            0.013262033462524414,
+            0.01729273796081543,
+            0.012495279312133789
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 7.0,
+          "avg_soc": 410.3333333333333,
+          "avg_runtime": 0.014350016911824545
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            1,
+            1,
+            2
+          ],
+          "soc": [
+            387,
+            429,
+            407
+          ],
+          "runtime": [
+            0.35619091987609863,
+            0.5412633419036865,
+            0.6864175796508789
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 1.3333333333333333,
+          "avg_soc": 407.6666666666667,
+          "avg_runtime": 0.5279572804768881
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            1,
+            3,
+            5
+          ],
+          "soc": [
+            388,
+            438,
+            407
+          ],
+          "runtime": [
+            10.258309364318848,
+            10.241522312164307,
+            10.399876117706299
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.0,
+          "avg_soc": 411.0,
+          "avg_runtime": 10.29990259806315
+        },
+        "MARL-LNS-Only": {
+          "success": 0,
+          "collisions": [
+            1,
+            2,
+            4
+          ],
+          "soc": [
+            387,
+            436,
+            407
+          ],
+          "runtime": [
+            0.41898465156555176,
+            0.6452281475067139,
+            0.8728933334350586
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.3333333333333335,
+          "avg_soc": 410.0,
+          "avg_runtime": 0.645702044169108
+        }
+      },
+      "30": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            10,
+            7,
+            14
+          ],
+          "soc": [
+            551,
+            603,
+            598
+          ],
+          "runtime": [
+            0.016335248947143555,
+            0.017802953720092773,
+            0.022053956985473633
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 10.333333333333334,
+          "avg_soc": 584.0,
+          "avg_runtime": 0.018730719884236652
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            7,
+            4,
+            9
+          ],
+          "soc": [
+            551,
+            604,
+            601
+          ],
+          "runtime": [
+            0.8681116104125977,
+            0.9454996585845947,
+            1.2210710048675537
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 6.666666666666667,
+          "avg_soc": 585.3333333333334,
+          "avg_runtime": 1.0115607579549153
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            6,
+            7,
+            12
+          ],
+          "soc": [
+            553,
+            603,
+            598
+          ],
+          "runtime": [
+            10.260233163833618,
+            10.613327503204346,
+            11.090394020080566
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 8.333333333333334,
+          "avg_soc": 584.6666666666666,
+          "avg_runtime": 10.654651562372843
+        },
+        "MARL-LNS-Only": {
+          "success": 0,
+          "collisions": [
+            6,
+            8,
+            11
+          ],
+          "soc": [
+            553,
+            604,
+            599
+          ],
+          "runtime": [
+            1.0266847610473633,
+            1.4226915836334229,
+            1.6585795879364014
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 8.333333333333334,
+          "avg_soc": 585.3333333333334,
+          "avg_runtime": 1.3693186442057292
+        }
+      }
+    }
+  },
+  "empty/empty_maps_453_25_25": {
+    "dataset": "empty",
+    "subdir": "empty_maps_453_25_25",
+    "map_size": [
+      25,
+      25
+    ],
+    "agent_counts": [
+      10,
+      20,
+      30
+    ],
+    "num_instances": 3,
+    "algorithms": {
+      "10": {
+        "PurePP": {
+          "success": 3,
+          "collisions": [
+            0,
+            0,
+            0
+          ],
+          "soc": [
+            151,
+            189,
+            151
+          ],
+          "runtime": [
+            0.003924846649169922,
+            0.007394075393676758,
+            0.00385284423828125
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 163.66666666666666,
+          "avg_runtime": 0.0050572554270426435
+        },
+        "MAPF-LNS2": {
+          "success": 3,
+          "collisions": [
+            0,
+            0,
+            0
+          ],
+          "soc": [
+            151,
+            189,
+            151
+          ],
+          "runtime": [
+            0.003757953643798828,
+            0.008806228637695312,
+            0.003523588180541992
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 163.66666666666666,
+          "avg_runtime": 0.005362590154012044
+        },
+        "HybridMARL-LNS": {
+          "success": 3,
+          "collisions": [
+            0,
+            0,
+            0
+          ],
+          "soc": [
+            151,
+            188,
+            151
+          ],
+          "runtime": [
+            0.011030912399291992,
+            0.014623165130615234,
+            0.008474588394165039
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 163.33333333333334,
+          "avg_runtime": 0.011376221974690756
+        },
+        "MARL-LNS-Only": {
+          "success": 3,
+          "collisions": [
+            0,
+            0,
+            0
+          ],
+          "soc": [
+            151,
+            188,
+            151
+          ],
+          "runtime": [
+            0.0038242340087890625,
+            0.009282588958740234,
+            0.0035719871520996094
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 163.33333333333334,
+          "avg_runtime": 0.005559603373209636
+        }
+      },
+      "20": {
+        "PurePP": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            389,
+            311,
+            321
+          ],
+          "runtime": [
+            0.013148307800292969,
+            0.009666204452514648,
+            0.009777307510375977
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 340.3333333333333,
+          "avg_runtime": 0.010863939921061197
+        },
+        "MAPF-LNS2": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            390,
+            311,
+            323
+          ],
+          "runtime": [
+            0.01647210121154785,
+            0.21164536476135254,
+            0.012668132781982422
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 341.3333333333333,
+          "avg_runtime": 0.08026186625162761
+        },
+        "HybridMARL-LNS": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            389,
+            311,
+            321
+          ],
+          "runtime": [
+            0.025082111358642578,
+            10.10700011253357,
+            0.02088022232055664
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 340.3333333333333,
+          "avg_runtime": 3.3843208154042563
+        },
+        "MARL-LNS-Only": {
+          "success": 2,
+          "collisions": [
+            0,
+            1,
+            0
+          ],
+          "soc": [
+            389,
+            311,
+            321
+          ],
+          "runtime": [
+            0.017547130584716797,
+            0.2782583236694336,
+            0.013592720031738281
+          ],
+          "success_rate": 0.6666666666666666,
+          "avg_collisions": 0.3333333333333333,
+          "avg_soc": 340.3333333333333,
+          "avg_runtime": 0.10313272476196289
+        }
+      },
+      "30": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            2,
+            4,
+            2
+          ],
+          "soc": [
+            506,
+            587,
+            597
+          ],
+          "runtime": [
+            0.016930341720581055,
+            0.021027088165283203,
+            0.02492213249206543
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.6666666666666665,
+          "avg_soc": 563.3333333333334,
+          "avg_runtime": 0.020959854125976562
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            2,
+            4,
+            3
+          ],
+          "soc": [
+            505,
+            586,
+            597
+          ],
+          "runtime": [
+            0.4814937114715576,
+            0.7844886779785156,
+            1.0778234004974365
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.0,
+          "avg_soc": 562.6666666666666,
+          "avg_runtime": 0.7812685966491699
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            2,
+            6,
+            2
+          ],
+          "soc": [
+            505,
+            586,
+            597
+          ],
+          "runtime": [
+            10.233248233795166,
+            10.645344495773315,
+            10.659176588058472
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.3333333333333335,
+          "avg_soc": 562.6666666666666,
+          "avg_runtime": 10.512589772542318
+        },
+        "MARL-LNS-Only": {
+          "success": 0,
+          "collisions": [
+            3,
+            5,
+            2
+          ],
+          "soc": [
+            505,
+            586,
+            597
+          ],
+          "runtime": [
+            1.0660109519958496,
+            1.1087794303894043,
+            0.8990912437438965
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.3333333333333335,
+          "avg_soc": 562.6666666666666,
+          "avg_runtime": 1.0246272087097168
+        }
+      }
+    }
+  },
+  "maze/maze_maps_125_25_25": {
+    "dataset": "maze",
+    "subdir": "maze_maps_125_25_25",
+    "map_size": [
+      25,
+      25
+    ],
+    "agent_counts": [
+      5,
+      10,
+      15
+    ],
+    "num_instances": 2,
+    "algorithms": {
+      "5": {
+        "PurePP": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            107,
+            114
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 110.5,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            107,
+            114
+          ],
+          "runtime": [
+            0.005777835845947266,
+            0.0044133663177490234
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 110.5,
+          "avg_runtime": 0.0050956010818481445
+        },
+        "HybridMARL-LNS": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            107,
+            114
+          ],
+          "runtime": [
+            0.009611368179321289,
+            0.008366823196411133
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 110.5,
+          "avg_runtime": 0.008989095687866211
+        }
+      },
+      "10": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            1,
+            4
+          ],
+          "soc": [
+            183,
+            217
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.5,
+          "avg_soc": 200.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            1,
+            4
+          ],
+          "soc": [
+            183,
+            217
+          ],
+          "runtime": [
+            0.5315570831298828,
+            0.9499490261077881
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.5,
+          "avg_soc": 200.0,
+          "avg_runtime": 0.7407530546188354
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            1,
+            4
+          ],
+          "soc": [
+            183,
+            217
+          ],
+          "runtime": [
+            5.057568550109863,
+            5.170631408691406
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.5,
+          "avg_soc": 200.0,
+          "avg_runtime": 5.114099979400635
+        }
+      },
+      "15": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            8,
+            8
+          ],
+          "soc": [
+            379,
+            417
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 8.0,
+          "avg_soc": 398.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            5,
+            1
+          ],
+          "soc": [
+            378,
+            426
+          ],
+          "runtime": [
+            2.1548776626586914,
+            1.2100803852081299
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 3.0,
+          "avg_soc": 402.0,
+          "avg_runtime": 1.6824790239334106
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            5,
+            7
+          ],
+          "soc": [
+            379,
+            423
+          ],
+          "runtime": [
+            6.651922702789307,
+            7.167712688446045
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 6.0,
+          "avg_soc": 401.0,
+          "avg_runtime": 6.909817695617676
+        }
+      }
+    }
+  },
+  "room/room_maps_250_25_25": {
+    "dataset": "room",
+    "subdir": "room_maps_250_25_25",
+    "map_size": [
+      25,
+      25
+    ],
+    "agent_counts": [
+      5,
+      10,
+      15
+    ],
+    "num_instances": 2,
+    "algorithms": {
+      "5": {
+        "PurePP": {
+          "success": 1,
+          "collisions": [
+            2,
+            0
+          ],
+          "soc": [
+            132,
+            102
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 1.0,
+          "avg_soc": 117.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 1,
+          "collisions": [
+            1,
+            0
+          ],
+          "soc": [
+            132,
+            102
+          ],
+          "runtime": [
+            0.5343413352966309,
+            0.025955677032470703
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 117.0,
+          "avg_runtime": 0.2801485061645508
+        },
+        "HybridMARL-LNS": {
+          "success": 1,
+          "collisions": [
+            1,
+            0
+          ],
+          "soc": [
+            132,
+            102
+          ],
+          "runtime": [
+            6.967493057250977,
+            0.029947996139526367
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 117.0,
+          "avg_runtime": 3.4987205266952515
+        }
+      },
+      "10": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            2,
+            1
+          ],
+          "soc": [
+            246,
+            158
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 1.5,
+          "avg_soc": 202.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            2,
+            1
+          ],
+          "soc": [
+            246,
+            158
+          ],
+          "runtime": [
+            4.6733362674713135,
+            0.2610609531402588
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 1.5,
+          "avg_soc": 202.0,
+          "avg_runtime": 2.467198610305786
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            2,
+            1
+          ],
+          "soc": [
+            246,
+            158
+          ],
+          "runtime": [
+            9.209275245666504,
+            5.274984359741211
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 1.5,
+          "avg_soc": 202.0,
+          "avg_runtime": 7.242129802703857
+        }
+      },
+      "15": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            11,
+            4
+          ],
+          "soc": [
+            367,
+            349
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 7.5,
+          "avg_soc": 358.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            7,
+            3
+          ],
+          "soc": [
+            366,
+            351
+          ],
+          "runtime": [
+            5.067655801773071,
+            1.6884214878082275
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 5.0,
+          "avg_soc": 358.5,
+          "avg_runtime": 3.3780386447906494
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            7,
+            6
+          ],
+          "soc": [
+            367,
+            349
+          ],
+          "runtime": [
+            5.178359031677246,
+            7.12172532081604
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 6.5,
+          "avg_soc": 358.0,
+          "avg_runtime": 6.150042176246643
+        }
+      }
+    }
+  },
+  "warehouse/warehouse_maps_281_25_25": {
+    "dataset": "warehouse",
+    "subdir": "warehouse_maps_281_25_25",
+    "map_size": [
+      25,
+      25
+    ],
+    "agent_counts": [
+      5,
+      10,
+      15
+    ],
+    "num_instances": 2,
+    "algorithms": {
+      "5": {
+        "PurePP": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            126,
+            90
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 108.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            126,
+            90
+          ],
+          "runtime": [
+            0.001856088638305664,
+            0.001741647720336914
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 108.0,
+          "avg_runtime": 0.001798868179321289
+        },
+        "HybridMARL-LNS": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            126,
+            90
+          ],
+          "runtime": [
+            0.005309343338012695,
+            0.004954814910888672
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 108.0,
+          "avg_runtime": 0.005132079124450684
+        }
+      },
+      "10": {
+        "PurePP": {
+          "success": 1,
+          "collisions": [
+            0,
+            1
+          ],
+          "soc": [
+            205,
+            225
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 215.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 1,
+          "collisions": [
+            0,
+            1
+          ],
+          "soc": [
+            205,
+            225
+          ],
+          "runtime": [
+            0.005683422088623047,
+            0.1750638484954834
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 215.0,
+          "avg_runtime": 0.09037363529205322
+        },
+        "HybridMARL-LNS": {
+          "success": 1,
+          "collisions": [
+            0,
+            1
+          ],
+          "soc": [
+            206,
+            225
+          ],
+          "runtime": [
+            0.010640859603881836,
+            5.105200290679932
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 215.5,
+          "avg_runtime": 2.5579205751419067
+        }
+      },
+      "15": {
+        "PurePP": {
+          "success": 1,
+          "collisions": [
+            1,
+            0
+          ],
+          "soc": [
+            269,
+            272
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 270.5,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            269,
+            272
+          ],
+          "runtime": [
+            0.007323503494262695,
+            0.007466793060302734
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 270.5,
+          "avg_runtime": 0.007395148277282715
+        },
+        "HybridMARL-LNS": {
+          "success": 2,
+          "collisions": [
+            0,
+            0
+          ],
+          "soc": [
+            269,
+            272
+          ],
+          "runtime": [
+            0.011646509170532227,
+            0.01310110092163086
+          ],
+          "success_rate": 1.0,
+          "avg_collisions": 0.0,
+          "avg_soc": 270.5,
+          "avg_runtime": 0.012373805046081543
+        }
+      }
+    }
+  },
+  "random_large/maps_1500_50_50_0.175": {
+    "dataset": "random_large",
+    "subdir": "maps_1500_50_50_0.175",
+    "map_size": [
+      50,
+      50
+    ],
+    "agent_counts": [
+      10,
+      20,
+      30
+    ],
+    "num_instances": 2,
+    "algorithms": {
+      "10": {
+        "PurePP": {
+          "success": 1,
+          "collisions": [
+            0,
+            1
+          ],
+          "soc": [
+            415,
+            347
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 381.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 1,
+          "collisions": [
+            0,
+            1
+          ],
+          "soc": [
+            415,
+            347
+          ],
+          "runtime": [
+            0.02577686309814453,
+            0.3772141933441162
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 381.0,
+          "avg_runtime": 0.20149552822113037
+        },
+        "HybridMARL-LNS": {
+          "success": 1,
+          "collisions": [
+            0,
+            1
+          ],
+          "soc": [
+            415,
+            347
+          ],
+          "runtime": [
+            0.02767014503479004,
+            5.39190673828125
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 0.5,
+          "avg_soc": 381.0,
+          "avg_runtime": 2.70978844165802
+        }
+      },
+      "20": {
+        "PurePP": {
+          "success": 1,
+          "collisions": [
+            0,
+            3
+          ],
+          "soc": [
+            793,
+            659
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 1.5,
+          "avg_soc": 726.0,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            1,
+            3
+          ],
+          "soc": [
+            793,
+            659
+          ],
+          "runtime": [
+            1.0060806274414062,
+            2.7325961589813232
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 2.0,
+          "avg_soc": 726.0,
+          "avg_runtime": 1.8693383932113647
+        },
+        "HybridMARL-LNS": {
+          "success": 1,
+          "collisions": [
+            0,
+            3
+          ],
+          "soc": [
+            793,
+            659
+          ],
+          "runtime": [
+            0.06995248794555664,
+            5.639533996582031
+          ],
+          "success_rate": 0.5,
+          "avg_collisions": 1.5,
+          "avg_soc": 726.0,
+          "avg_runtime": 2.854743242263794
+        }
+      },
+      "30": {
+        "PurePP": {
+          "success": 0,
+          "collisions": [
+            10,
+            11
+          ],
+          "soc": [
+            1110,
+            989
+          ],
+          "runtime": [
+            0.001,
+            0.001
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 10.5,
+          "avg_soc": 1049.5,
+          "avg_runtime": 0.001
+        },
+        "MAPF-LNS2": {
+          "success": 0,
+          "collisions": [
+            6,
+            5
+          ],
+          "soc": [
+            1108,
+            988
+          ],
+          "runtime": [
+            2.95697283744812,
+            2.4549081325531006
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 5.5,
+          "avg_soc": 1048.0,
+          "avg_runtime": 2.7059404850006104
+        },
+        "HybridMARL-LNS": {
+          "success": 0,
+          "collisions": [
+            4,
+            10
+          ],
+          "soc": [
+            1108,
+            989
+          ],
+          "runtime": [
+            5.306920051574707,
+            5.2834062576293945
+          ],
+          "success_rate": 0.0,
+          "avg_collisions": 7.0,
+          "avg_soc": 1048.5,
+          "avg_runtime": 5.295163154602051
+        }
+      }
+    }
+  }
+}

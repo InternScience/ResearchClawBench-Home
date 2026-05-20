@@ -1,0 +1,89 @@
+{
+  "target_artifacts": [
+    {
+      "id": "figure1_task_score_heatmap",
+      "type": "heatmap",
+      "description": "Task-level score heatmap across all 17 tasks and 6 dimensions",
+      "status": "satisfied",
+      "path": "report/images/figure1_task_score_heatmap.png"
+    },
+    {
+      "id": "figure2_score_distribution",
+      "type": "bar_chart",
+      "description": "Distribution of scores per dimension with mean indicators",
+      "status": "satisfied",
+      "path": "report/images/figure2_score_distribution.png"
+    },
+    {
+      "id": "figure3_annotator_agreement",
+      "type": "comparison_chart",
+      "description": "Inter-annotator pairwise agreement and per-annotator score distributions",
+      "status": "satisfied",
+      "path": "report/images/figure3_annotator_agreement.png"
+    },
+    {
+      "id": "figure4_category_analysis",
+      "type": "grouped_bar_chart",
+      "description": "Score breakdown by task category across all dimensions",
+      "status": "satisfied",
+      "path": "report/images/figure4_category_analysis.png"
+    },
+    {
+      "id": "figure5_task_progression",
+      "type": "bar_chart",
+      "description": "Total score per task in calculation workflow order",
+      "status": "satisfied",
+      "path": "report/images/figure5_task_progression.png"
+    },
+    {
+      "id": "figure6_radar_chart",
+      "type": "radar_chart",
+      "description": "Average LLM performance across six scoring dimensions",
+      "status": "satisfied",
+      "path": "report/images/figure6_radar_chart.png"
+    },
+    {
+      "id": "figure7_placeholder_detail",
+      "type": "horizontal_bar_chart",
+      "description": "Top-performing placeholders by mean annotator score",
+      "status": "satisfied",
+      "path": "report/images/figure7_placeholder_detail.png"
+    },
+    {
+      "id": "summary_statistics",
+      "type": "json",
+      "description": "Comprehensive summary statistics for all scoring dimensions and annotators",
+      "status": "satisfied",
+      "path": "outputs/summary_statistics.json"
+    },
+    {
+      "id": "task_scores",
+      "type": "json",
+      "description": "Task-level scoring data",
+      "status": "satisfied",
+      "path": "outputs/task_scores.json"
+    },
+    {
+      "id": "annotator_agreements",
+      "type": "json",
+      "description": "Per-placeholder per-annotator agreement data",
+      "status": "satisfied",
+      "path": "outputs/annotator_agreements.json"
+    },
+    {
+      "id": "parsed_tasks",
+      "type": "json",
+      "description": "Parsed task data with placeholder-level scores",
+      "status": "satisfied",
+      "path": "outputs/parsed_tasks.json"
+    },
+    {
+      "id": "report",
+      "type": "markdown",
+      "description": "Comprehensive research report with methodology, results, and discussion",
+      "status": "satisfied",
+      "path": "report/report.md"
+    }
+  ],
+  "unsatisfied": []
+}

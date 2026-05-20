@@ -1,0 +1,47 @@
+{
+  "target_artifacts": {
+    "data_overview": {
+      "figure": "images/data_distribution.png",
+      "figure2": "images/spatial_maps.png",
+      "status": "satisfied"
+    },
+    "baseline_analysis": {
+      "figure": "images/fuxi_error_analysis.png",
+      "figure2": "images/fuxi_comparison.png",
+      "figure3": "images/error_spatial_maps.png",
+      "status": "satisfied"
+    },
+    "error_growth_modeling": {
+      "figure": "images/error_growth_comparison.png",
+      "figure2": "images/acc_decay_comparison.png",
+      "status": "satisfied"
+    },
+    "cascade_architecture": {
+      "figure": "images/cascade_architecture.png",
+      "figure2": "images/utransformer_architecture.png",
+      "status": "satisfied"
+    },
+    "error_accumulation": {
+      "figure": "images/error_accumulation_channels.png",
+      "figure2": "images/cascade_error_reduction.png",
+      "status": "satisfied"
+    },
+    "predictability_analysis": {
+      "figure": "images/predictability_by_variable.png",
+      "status": "satisfied"
+    },
+    "feature_analysis": {
+      "figure": "images/feature_importance.png",
+      "figure2": "images/variable_correlation_matrix.png",
+      "status": "satisfied"
+    },
+    "spectral_analysis": {
+      "figure": "images/spectral_error_analysis.png",
+      "status": "satisfied"
+    },
+    "method_comparison": {
+      "figure": "images/method_comparison_radar.png",
+      "status": "satisfied"
+    }
+  }
+}

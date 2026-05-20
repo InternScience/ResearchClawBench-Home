@@ -1,0 +1,84 @@
+{
+  "target_artifacts": {
+    "water_rdf_figure": {
+      "path": "report/images/water_rdf.png",
+      "status": "satisfied",
+      "description": "O-O radial distribution function g(r) from MACE-MP-0 MD simulation"
+    },
+    "water_energy_figure": {
+      "path": "report/images/water_energy.png",
+      "status": "satisfied",
+      "description": "Potential energy vs MD step during equilibration"
+    },
+    "adsorption_scaling_figure": {
+      "path": "report/images/adsorption_scaling.png",
+      "status": "satisfied",
+      "description": "OH vs O adsorption energy scaling relation with linear fit"
+    },
+    "adsorption_bars_figure": {
+      "path": "report/images/adsorption_bars.png",
+      "status": "satisfied",
+      "description": "Bar chart comparing O and OH adsorption energies across 6 metals"
+    },
+    "reaction_barriers_figure": {
+      "path": "report/images/reaction_barriers.png",
+      "status": "satisfied",
+      "description": "Bar chart comparing MACE-MP-0 vs DFT barriers for 3 reactions"
+    },
+    "barrier_parity_figure": {
+      "path": "report/images/barrier_parity.png",
+      "status": "satisfied",
+      "description": "Parity plot of MACE vs DFT barriers with anomalous Rxn 11 marked"
+    },
+    "element_coverage_figure": {
+      "path": "report/images/element_coverage.png",
+      "status": "satisfied",
+      "description": "Element coverage across validation experiments"
+    },
+    "validation_summary_figure": {
+      "path": "report/images/validation_summary.png",
+      "status": "satisfied",
+      "description": "Three-panel summary of water structure, adsorption, and barrier results"
+    },
+    "water_rdf_data": {
+      "path": "outputs/water_rdf_results.json",
+      "status": "satisfied",
+      "description": "RDF r and g(r) arrays plus MD energies"
+    },
+    "adsorption_data": {
+      "path": "outputs/adsorption_results.json",
+      "status": "satisfied",
+      "description": "Per-metal adsorption energies and scaling relation parameters"
+    },
+    "barrier_data": {
+      "path": "outputs/reaction_barriers_results.json",
+      "status": "satisfied",
+      "description": "Per-reaction barrier predictions and DFT comparisons"
+    },
+    "method_contract": {
+      "path": "outputs/method_contract.json",
+      "status": "satisfied",
+      "description": "Method commitments and deviations"
+    },
+    "analysis_code": {
+      "path": "code/",
+      "status": "satisfied",
+      "description": "Four Python scripts for experiments and figure generation"
+    },
+    "report": {
+      "path": "report/report.md",
+      "status": "satisfied",
+      "description": "Comprehensive research report with methodology, results, and discussion"
+    },
+    "reaction_barriers_table": {
+      "path": "report/report.md (Table 1)",
+      "status": "satisfied",
+      "description": "Table comparing MACE and DFT barriers with errors"
+    },
+    "subgroup_per_metal_adsorption": {
+      "path": "outputs/adsorption_results.json",
+      "status": "satisfied",
+      "description": "Per-metal O and OH adsorption energies preserved individually"
+    }
+  }
+}

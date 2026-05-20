@@ -1,0 +1,18 @@
+{
+  "n_initial": 184,
+  "glass_10s_mean_kPa": 50.97736340605353,
+  "glass_10s_max_kPa": 304.60014154281674,
+  "steel_10s_mean_kPa": 45.79314528359114,
+  "steel_10s_max_kPa": 91.15357395612173,
+  "n_optimized": 119,
+  "opt_glass_mean_kPa": 144.0420584369629,
+  "opt_glass_max_kPa": 321.18895966029726,
+  "n_above_200_kPa": 27,
+  "rfr_glass_r2": "0.688+/-0.075",
+  "rfr_glass_mae": "16.5+/-2.0",
+  "gpr_glass_r2": "0.097+/-0.243",
+  "gpr_glass_mae": "32.8+/-9.9",
+  "gbr_glass_r2": "0.629+/-0.160",
+  "gbr_glass_mae": "17.7+/-2.9",
+  "rfr_steel_r2": "-0.639+/-0.716"
+}

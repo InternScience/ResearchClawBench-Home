@@ -1,0 +1,59 @@
+{
+  "papers": [
+    {
+      "id": "paper_000",
+      "title": "Chameleon: Mixed-Modal Early-Fusion Foundation Models",
+      "key_contributions": [
+        "Unified token-based representation for images and text using VQGAN tokenizer",
+        "Single transformer handles both understanding and generation",
+        "QK-Norm and dropout for training stability in mixed-modal setting",
+        "State-of-the-art on VQA and image captioning benchmarks",
+        "Human evaluation shows mixed-modal generation capability"
+      ],
+      "limitations": [
+        "Single tokenizer must serve both understanding and generation - compromises both",
+        "Poor OCR capability due to tokenizer weakness with text",
+        "Training instability from modality competition in softmax",
+        "No dedicated understanding pathway - uses same discrete tokens for everything"
+      ]
+    },
+    {
+      "id": "paper_001",
+      "title": "LLaVA: Visual Instruction Tuning",
+      "key_contributions": [
+        "Connects CLIP vision encoder to LLM via projection layer",
+        "GPT-4 generated multimodal instruction-following data",
+        "Two-stage training: feature alignment then end-to-end fine-tuning",
+        "Strong multimodal chat and reasoning capabilities"
+      ],
+      "limitations": [
+        "Understanding only - no image generation capability",
+        "Single continuous encoding pathway",
+        "No shared representation with generation tasks"
+      ]
+    },
+    {
+      "id": "paper_002",
+      "title": "Sigmoid Loss for Language Image Pre-Training",
+      "key_contributions": [
+        "Pairwise sigmoid loss as simpler alternative to softmax contrastive loss",
+        "Decouples batch size from loss computation",
+        "Memory-efficient chunked implementation",
+        "Performance saturates at ~32k batch size"
+      ],
+      "relevance": "Sigmoid loss can be used in DVE to handle mixed continuous/discrete token contrastive alignment"
+    },
+    {
+      "id": "paper_003",
+      "title": "LlamaGen: Autoregressive Model Beats Diffusion for Image Generation",
+      "key_contributions": [
+        "Vanilla autoregressive models can match diffusion for image generation",
+        "Well-designed VQGAN tokenizer (codebook dim=8, size=16384) achieves 0.94 rFID",
+        "Classifier-free guidance adapted for autoregressive models",
+        "Llama architecture with 2D RoPE for image generation"
+      ],
+      "relevance": "Provides generation pathway design for DVE; validates autoregressive approach"
+    }
+  ],
+  "gap_analysis": "No existing work provides both strong multimodal understanding AND visual generation with a dedicated encoding strategy for each. Chameleon uses one tokenizer for both (compromising quality), LLaVA only does understanding, and LlamaGen only does generation. DVE fills this gap by decoupling visual encoding into understanding (continuous) and generation (discrete) pathways that share a common backbone."
+}

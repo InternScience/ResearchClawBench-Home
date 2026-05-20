@@ -1,0 +1,24 @@
+{
+  "primary_quantitative": [
+    "success_rate_comparison_table.json",
+    "soc_comparison_table.json",
+    "runtime_comparison_table.json",
+    "per_dataset_results.json"
+  ],
+  "figures": [
+    "figure_1_success_rate_by_dataset.png",
+    "figure_2_success_rate_by_agents.png",
+    "figure_3_soc_comparison.png",
+    "figure_4_runtime_comparison.png",
+    "figure_5_convergence_curve.png",
+    "figure_6_collision_reduction.png"
+  ],
+  "interpretability": [
+    "neighborhood_selection_analysis.json",
+    "marl_vs_random_selection.json"
+  ],
+  "validation": [
+    "collision_detection_test.json",
+    "path_feasibility_check.json"
+  ]
+}

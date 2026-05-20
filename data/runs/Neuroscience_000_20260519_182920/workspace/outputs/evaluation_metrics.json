@@ -1,0 +1,64 @@
+[
+  {
+    "behavior": "Attack",
+    "model": "RandomForest",
+    "accuracy": 0.9233716475095786,
+    "precision": 0.8541666666666666,
+    "recall": 0.9318181818181818,
+    "f1": 0.8913043478260869,
+    "roc_auc": 0.939618365738308,
+    "pr_auc": 0.7654907075499636
+  },
+  {
+    "behavior": "Attack",
+    "model": "LogisticRegression",
+    "accuracy": 0.8888888888888888,
+    "precision": 0.8010204081632653,
+    "recall": 0.8920454545454546,
+    "f1": 0.8440860215053764,
+    "roc_auc": 0.9382061219127693,
+    "pr_auc": 0.8009396416149603
+  },
+  {
+    "behavior": "Sniffing",
+    "model": "RandomForest",
+    "accuracy": 0.9636015325670498,
+    "precision": 0.8,
+    "recall": 0.9714285714285714,
+    "f1": 0.8774193548387097,
+    "roc_auc": 0.9815423514538559,
+    "pr_auc": 0.7984946343140698
+  },
+  {
+    "behavior": "Sniffing",
+    "model": "LogisticRegression",
+    "accuracy": 0.921455938697318,
+    "precision": 0.6705882352941176,
+    "recall": 0.8142857142857143,
+    "f1": 0.7354838709677419,
+    "roc_auc": 0.9518015170670038,
+    "pr_auc": 0.6786428428140227
+  },
+  {
+    "behavior": "Attack",
+    "model": "RandomForest",
+    "accuracy": 0.5229885057471264,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "roc_auc": 0.2135876418663304,
+    "pr_auc": 0.19368928623206,
+    "split": "temporal"
+  },
+  {
+    "behavior": "Sniffing",
+    "model": "RandomForest",
+    "accuracy": 0.8754789272030651,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "roc_auc": 0.26391179936037706,
+    "pr_auc": 0.08606281406885002,
+    "split": "temporal"
+  }
+]

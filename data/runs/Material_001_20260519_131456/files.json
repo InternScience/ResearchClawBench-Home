@@ -1,0 +1,269 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_parse_data.py",
+    "path": "code/01_parse_data.py",
+    "type": "file",
+    "size": 2212,
+    "mtime": 1779246024.0,
+    "exported": true
+  },
+  {
+    "name": "02_data_overview.py",
+    "path": "code/02_data_overview.py",
+    "type": "file",
+    "size": 3967,
+    "mtime": 1779246024.0,
+    "exported": true
+  },
+  {
+    "name": "03_property_prediction.py",
+    "path": "code/03_property_prediction.py",
+    "type": "file",
+    "size": 6529,
+    "mtime": 1779246024.0,
+    "exported": true
+  },
+  {
+    "name": "04_structure_generation.py",
+    "path": "code/04_structure_generation.py",
+    "type": "file",
+    "size": 5926,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "05_synthesis_optimization.py",
+    "path": "code/05_synthesis_optimization.py",
+    "type": "file",
+    "size": 9735,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "06_validation_summary.py",
+    "path": "code/06_validation_summary.py",
+    "type": "file",
+    "size": 5279,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "M-AI-Synth__Materials_AI_Dataset_.txt",
+    "path": "data/M-AI-Synth__Materials_AI_Dataset_.txt",
+    "type": "file",
+    "size": 3970,
+    "mtime": 1770620672.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "generated_structures.npz",
+    "path": "outputs/generated_structures.npz",
+    "type": "file",
+    "size": 26700,
+    "mtime": 1779246020.0,
+    "exported": false
+  },
+  {
+    "name": "optimization_results.json",
+    "path": "outputs/optimization_results.json",
+    "type": "file",
+    "size": 2551,
+    "mtime": 1779246020.0,
+    "exported": true
+  },
+  {
+    "name": "parsed_data.npz",
+    "path": "outputs/parsed_data.npz",
+    "type": "file",
+    "size": 7384,
+    "mtime": 1779246020.0,
+    "exported": false
+  },
+  {
+    "name": "processed_data.npz",
+    "path": "outputs/processed_data.npz",
+    "type": "file",
+    "size": 6230,
+    "mtime": 1779246020.0,
+    "exported": false
+  },
+  {
+    "name": "property_prediction_results.json",
+    "path": "outputs/property_prediction_results.json",
+    "type": "file",
+    "size": 3533,
+    "mtime": 1779246020.0,
+    "exported": true
+  },
+  {
+    "name": "structure_generation_stats.json",
+    "path": "outputs/structure_generation_stats.json",
+    "type": "file",
+    "size": 1216,
+    "mtime": 1779246020.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 2155763,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 2638490,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 891813,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 510141,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure_data_overview.png",
+    "path": "report/images/figure_data_overview.png",
+    "type": "file",
+    "size": 301754,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_feature_importance.png",
+    "path": "report/images/figure_feature_importance.png",
+    "type": "file",
+    "size": 69480,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_gp_surrogate.png",
+    "path": "report/images/figure_gp_surrogate.png",
+    "type": "file",
+    "size": 136261,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_optimization_convergence.png",
+    "path": "report/images/figure_optimization_convergence.png",
+    "type": "file",
+    "size": 104018,
+    "mtime": 1779246020.0,
+    "exported": true
+  },
+  {
+    "name": "figure_optimization_landscape.png",
+    "path": "report/images/figure_optimization_landscape.png",
+    "type": "file",
+    "size": 305408,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_property_prediction_comparison.png",
+    "path": "report/images/figure_property_prediction_comparison.png",
+    "type": "file",
+    "size": 98723,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_property_prediction_parity.png",
+    "path": "report/images/figure_property_prediction_parity.png",
+    "type": "file",
+    "size": 133009,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_structure_distribution.png",
+    "path": "report/images/figure_structure_distribution.png",
+    "type": "file",
+    "size": 92833,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_structure_generation.png",
+    "path": "report/images/figure_structure_generation.png",
+    "type": "file",
+    "size": 473124,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "figure_validation_summary.png",
+    "path": "report/images/figure_validation_summary.png",
+    "type": "file",
+    "size": 323626,
+    "mtime": 1779246022.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 22554,
+    "mtime": 1779246025.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5290,
+    "mtime": 1779167696.0,
+    "exported": true
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "torch": "2.10.0+cu128",
+  "torch_geometric": "2.7.0",
+  "rdkit": "available",
+  "sklearn": "1.8.0",
+  "matplotlib": "3.10.8",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "limitations": [
+    "No GPU available - training performed on CPU",
+    "MUV dataset extremely imbalanced (0.2% positive rate) - AUC unreliable",
+    "HIV dataset has class imbalance leading to poor F1 scores",
+    "Model sizes reduced for CPU feasibility (hidden_dim=64, layers=2)",
+    "Maximum 800 molecules per dataset for runtime constraints"
+  ]
+}

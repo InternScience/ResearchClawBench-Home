@@ -1,0 +1,118 @@
+{
+  "global_total_gt": -6542.5,
+  "global_total_err_gt": 387.0,
+  "global_total_sle_mm": 18.0,
+  "global_annual_mean_gt": -272.6,
+  "global_annual_mean_err_gt": 77.6,
+  "global_annual_mean_mwe": -0.4059,
+  "global_annual_mean_err_mwe": 0.1087,
+  "mean_glacier_area_km2": 677895.0,
+  "linear_trend_gt_per_yr2": -9.98,
+  "trend_r_squared": 0.411,
+  "trend_p_value": 0.0007423777321710008,
+  "linear_trend_mwe_per_yr2": -0.0162,
+  "period_analysis": {
+    "2000-2005": {
+      "mean_gt": -193.1,
+      "sum_gt": -1158.6,
+      "mean_mwe": -0.2778
+    },
+    "2006-2010": {
+      "mean_gt": -248.8,
+      "sum_gt": -1244.1,
+      "mean_mwe": -0.3637
+    },
+    "2011-2015": {
+      "mean_gt": -258.7,
+      "sum_gt": -1293.6,
+      "mean_mwe": -0.3845
+    },
+    "2016-2019": {
+      "mean_gt": -303.8,
+      "sum_gt": -1215.1,
+      "mean_mwe": -0.4589
+    },
+    "2020-2023": {
+      "mean_gt": -407.8,
+      "sum_gt": -1631.1,
+      "mean_mwe": -0.6248
+    }
+  },
+  "top_contributors_gt": [
+    {
+      "region": "Alaska",
+      "code": "ALA",
+      "total_gt": -1473.9,
+      "area_km2": 85059.9
+    },
+    {
+      "region": "Greenland Periphery",
+      "code": "GRL",
+      "total_gt": -850.5,
+      "area_km2": 80888.8
+    },
+    {
+      "region": "Arctic Canada North",
+      "code": "ACN",
+      "total_gt": -730.2,
+      "area_km2": 104154.5
+    },
+    {
+      "region": "Southern Andes",
+      "code": "SAN",
+      "total_gt": -630.8,
+      "area_km2": 28793.3
+    },
+    {
+      "region": "Arctic Canada South",
+      "code": "ACS",
+      "total_gt": -552.2,
+      "area_km2": 40495.5
+    },
+    {
+      "region": "Antarctic & Subantarctic",
+      "code": "ANT",
+      "total_gt": -427.7,
+      "area_km2": 123539.7
+    },
+    {
+      "region": "Russian Arctic",
+      "code": "RUA",
+      "total_gt": -384.4,
+      "area_km2": 51138.0
+    }
+  ],
+  "most_negative_specific": [
+    {
+      "region": "Central Europe",
+      "code": "CEU",
+      "rate_mwe": -1.0615
+    },
+    {
+      "region": "New Zealand",
+      "code": "NZL",
+      "rate_mwe": -0.9608
+    },
+    {
+      "region": "Southern Andes",
+      "code": "SAN",
+      "rate_mwe": -0.9193
+    },
+    {
+      "region": "Iceland",
+      "code": "ISL",
+      "rate_mwe": -0.7841
+    },
+    {
+      "region": "Alaska",
+      "code": "ALA",
+      "rate_mwe": -0.732
+    }
+  ],
+  "cumulative_2000_2023_gt": -6542.5,
+  "cumulative_2000_2023_err_gt": 387.0,
+  "cumulative_sle_mm": 18.0,
+  "altimetry_mean_annual_gt": -148.8,
+  "gravimetry_mean_annual_gt": -181.9,
+  "demdiff_and_glaciological_mean_annual_gt": -298.2
+}

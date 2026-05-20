@@ -1,0 +1,986 @@
+[
+  {
+    "dataset": "random_small",
+    "grid_shape": [
+      10,
+      10
+    ],
+    "free_cells": 84,
+    "n_agents": 4,
+    "density": 0.1,
+    "seed": 42,
+    "PP": {
+      "success": true,
+      "time": 0.0013422966003417969,
+      "cp": 0,
+      "soc": 41,
+      "makespan": 12
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.0011622905731201172,
+      "cp": 0,
+      "soc": 41,
+      "makespan": 12,
+      "iterations": 1
+    },
+    "MARL": {
+      "success": true,
+      "time": 0.05875134468078613,
+      "cp": 0,
+      "soc": 160,
+      "makespan": 40
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.03981900215148926,
+      "cp": 0,
+      "soc": 800,
+      "makespan": 200,
+      "marl_initial_cp": 0
+    }
+  },
+  {
+    "dataset": "random_small",
+    "grid_shape": [
+      10,
+      10
+    ],
+    "free_cells": 84,
+    "n_agents": 4,
+    "density": 0.1,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.0005104541778564453,
+      "cp": 2,
+      "soc": 30,
+      "makespan": 12
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.08170485496520996,
+      "cp": 1,
+      "soc": 34,
+      "makespan": 12,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.04372382164001465,
+      "cp": 1,
+      "soc": 600,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 0.16466546058654785,
+      "cp": 1,
+      "soc": 420,
+      "makespan": 200,
+      "marl_initial_cp": 1
+    }
+  },
+  {
+    "dataset": "random_small",
+    "grid_shape": [
+      10,
+      10
+    ],
+    "free_cells": 84,
+    "n_agents": 8,
+    "density": 0.2,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.0018687248229980469,
+      "cp": 2,
+      "soc": 69,
+      "makespan": 16
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.20387935638427734,
+      "cp": 2,
+      "soc": 69,
+      "makespan": 16,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.141920804977417,
+      "cp": 1,
+      "soc": 864,
+      "makespan": 108
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.11825847625732422,
+      "cp": 0,
+      "soc": 1035,
+      "makespan": 200,
+      "marl_initial_cp": 4
+    }
+  },
+  {
+    "dataset": "random_small",
+    "grid_shape": [
+      10,
+      10
+    ],
+    "free_cells": 84,
+    "n_agents": 8,
+    "density": 0.2,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.001186370849609375,
+      "cp": 4,
+      "soc": 64,
+      "makespan": 12
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.006669759750366211,
+      "cp": 0,
+      "soc": 65,
+      "makespan": 13,
+      "iterations": 6
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.14074349403381348,
+      "cp": 5,
+      "soc": 1200,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.1321241855621338,
+      "cp": 0,
+      "soc": 62,
+      "makespan": 12,
+      "marl_initial_cp": 6
+    }
+  },
+  {
+    "dataset": "random_medium",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 506,
+    "n_agents": 25,
+    "density": 0.1,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.014699220657348633,
+      "cp": 4,
+      "soc": 423,
+      "makespan": 31
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.1932525634765625,
+      "cp": 4,
+      "soc": 423,
+      "makespan": 31,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.0754358768463135,
+      "cp": 13,
+      "soc": 3750,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 4.2516093254089355,
+      "cp": 2,
+      "soc": 938,
+      "makespan": 200,
+      "marl_initial_cp": 10
+    }
+  },
+  {
+    "dataset": "random_medium",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 506,
+    "n_agents": 25,
+    "density": 0.1,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.033879756927490234,
+      "cp": 7,
+      "soc": 508,
+      "makespan": 44
+    },
+    "LNS": {
+      "success": false,
+      "time": 4.189492225646973,
+      "cp": 5,
+      "soc": 512,
+      "makespan": 44,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.096388816833496,
+      "cp": 8,
+      "soc": 3750,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 4.515948057174683,
+      "cp": 1,
+      "soc": 895,
+      "makespan": 200,
+      "marl_initial_cp": 18
+    }
+  },
+  {
+    "dataset": "random_medium",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 506,
+    "n_agents": 50,
+    "density": 0.2,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.053009748458862305,
+      "cp": 20,
+      "soc": 985,
+      "makespan": 46
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.060611963272095,
+      "cp": 7,
+      "soc": 1023,
+      "makespan": 57,
+      "iterations": 114
+    },
+    "MARL": {
+      "success": false,
+      "time": 3.9188976287841797,
+      "cp": 53,
+      "soc": 7500,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.115147829055786,
+      "cp": 10,
+      "soc": 1936,
+      "makespan": 200,
+      "marl_initial_cp": 59
+    }
+  },
+  {
+    "dataset": "random_medium",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 506,
+    "n_agents": 50,
+    "density": 0.2,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.04842734336853027,
+      "cp": 34,
+      "soc": 955,
+      "makespan": 39
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.030761241912842,
+      "cp": 14,
+      "soc": 981,
+      "makespan": 39,
+      "iterations": 84
+    },
+    "MARL": {
+      "success": false,
+      "time": 3.948225975036621,
+      "cp": 71,
+      "soc": 7500,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.1747190952301025,
+      "cp": 17,
+      "soc": 1907,
+      "makespan": 200,
+      "marl_initial_cp": 81
+    }
+  },
+  {
+    "dataset": "maze",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 339,
+    "n_agents": 16,
+    "density": 0.1,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.037019968032836914,
+      "cp": 15,
+      "soc": 373,
+      "makespan": 47
+    },
+    "LNS": {
+      "success": false,
+      "time": 4.989198684692383,
+      "cp": 5,
+      "soc": 414,
+      "makespan": 60,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.5203912258148193,
+      "cp": 2,
+      "soc": 2400,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 2.035398483276367,
+      "cp": 3,
+      "soc": 2482,
+      "makespan": 200,
+      "marl_initial_cp": 3
+    }
+  },
+  {
+    "dataset": "maze",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 339,
+    "n_agents": 16,
+    "density": 0.1,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.009181737899780273,
+      "cp": 4,
+      "soc": 258,
+      "makespan": 33
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.314232587814331,
+      "cp": 3,
+      "soc": 280,
+      "makespan": 45,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.48935890197753906,
+      "cp": 4,
+      "soc": 2400,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.43202805519104004,
+      "cp": 0,
+      "soc": 1559,
+      "makespan": 200,
+      "marl_initial_cp": 5
+    }
+  },
+  {
+    "dataset": "maze",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 339,
+    "n_agents": 33,
+    "density": 0.2,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.1798086166381836,
+      "cp": 52,
+      "soc": 781,
+      "makespan": 46
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.141193151473999,
+      "cp": 39,
+      "soc": 897,
+      "makespan": 59,
+      "iterations": 53
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.8597211837768555,
+      "cp": 19,
+      "soc": 4950,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.138258457183838,
+      "cp": 25,
+      "soc": 2377,
+      "makespan": 200,
+      "marl_initial_cp": 36
+    }
+  },
+  {
+    "dataset": "maze",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 339,
+    "n_agents": 33,
+    "density": 0.2,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.16366147994995117,
+      "cp": 52,
+      "soc": 796,
+      "makespan": 58
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.0115509033203125,
+      "cp": 29,
+      "soc": 812,
+      "makespan": 52,
+      "iterations": 55
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.9079034328460693,
+      "cp": 26,
+      "soc": 4950,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.066057205200195,
+      "cp": 9,
+      "soc": 3437,
+      "makespan": 200,
+      "marl_initial_cp": 18
+    }
+  },
+  {
+    "dataset": "room",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 503,
+    "n_agents": 25,
+    "density": 0.1,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.04502749443054199,
+      "cp": 25,
+      "soc": 621,
+      "makespan": 40
+    },
+    "LNS": {
+      "success": false,
+      "time": 4.967021703720093,
+      "cp": 6,
+      "soc": 636,
+      "makespan": 41,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.1672065258026123,
+      "cp": 9,
+      "soc": 3750,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.074412107467651,
+      "cp": 9,
+      "soc": 1545,
+      "makespan": 200,
+      "marl_initial_cp": 12
+    }
+  },
+  {
+    "dataset": "room",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 503,
+    "n_agents": 25,
+    "density": 0.1,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.05517172813415527,
+      "cp": 20,
+      "soc": 568,
+      "makespan": 46
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.004225015640259,
+      "cp": 5,
+      "soc": 594,
+      "makespan": 50,
+      "iterations": 153
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.1276483535766602,
+      "cp": 7,
+      "soc": 3750,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.055384874343872,
+      "cp": 3,
+      "soc": 1113,
+      "makespan": 200,
+      "marl_initial_cp": 15
+    }
+  },
+  {
+    "dataset": "room",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 503,
+    "n_agents": 50,
+    "density": 0.2,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.3177318572998047,
+      "cp": 96,
+      "soc": 1513,
+      "makespan": 63
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.1562418937683105,
+      "cp": 54,
+      "soc": 1756,
+      "makespan": 78,
+      "iterations": 23
+    },
+    "MARL": {
+      "success": false,
+      "time": 4.071352481842041,
+      "cp": 69,
+      "soc": 7500,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.155833721160889,
+      "cp": 78,
+      "soc": 5514,
+      "makespan": 200,
+      "marl_initial_cp": 87
+    }
+  },
+  {
+    "dataset": "room",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 503,
+    "n_agents": 50,
+    "density": 0.2,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.6159920692443848,
+      "cp": 116,
+      "soc": 1321,
+      "makespan": 58
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.0832788944244385,
+      "cp": 78,
+      "soc": 1375,
+      "makespan": 59,
+      "iterations": 13
+    },
+    "MARL": {
+      "success": false,
+      "time": 4.115783452987671,
+      "cp": 54,
+      "soc": 7500,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.382591962814331,
+      "cp": 40,
+      "soc": 3534,
+      "makespan": 200,
+      "marl_initial_cp": 79
+    }
+  },
+  {
+    "dataset": "warehouse",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 445,
+    "n_agents": 22,
+    "density": 0.1,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.008521318435668945,
+      "cp": 9,
+      "soc": 362,
+      "makespan": 38
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.4079127311706543,
+      "cp": 0,
+      "soc": 369,
+      "makespan": 38,
+      "iterations": 46
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.8054492473602295,
+      "cp": 12,
+      "soc": 3300,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.833463191986084,
+      "cp": 0,
+      "soc": 1673,
+      "makespan": 200,
+      "marl_initial_cp": 8
+    }
+  },
+  {
+    "dataset": "warehouse",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 445,
+    "n_agents": 22,
+    "density": 0.1,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.007086038589477539,
+      "cp": 5,
+      "soc": 371,
+      "makespan": 30
+    },
+    "LNS": {
+      "success": false,
+      "time": 1.2429895401000977,
+      "cp": 2,
+      "soc": 370,
+      "makespan": 30,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.862055778503418,
+      "cp": 10,
+      "soc": 3300,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 1.6921863555908203,
+      "cp": 2,
+      "soc": 370,
+      "makespan": 30,
+      "marl_initial_cp": 13
+    }
+  },
+  {
+    "dataset": "warehouse",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 445,
+    "n_agents": 44,
+    "density": 0.2,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.0265963077545166,
+      "cp": 38,
+      "soc": 854,
+      "makespan": 39
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.013597249984741,
+      "cp": 8,
+      "soc": 874,
+      "makespan": 39,
+      "iterations": 171
+    },
+    "MARL": {
+      "success": false,
+      "time": 2.976417064666748,
+      "cp": 66,
+      "soc": 6600,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.174021244049072,
+      "cp": 10,
+      "soc": 1458,
+      "makespan": 200,
+      "marl_initial_cp": 70
+    }
+  },
+  {
+    "dataset": "warehouse",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 445,
+    "n_agents": 44,
+    "density": 0.2,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.02666473388671875,
+      "cp": 28,
+      "soc": 842,
+      "makespan": 38
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.0113232135772705,
+      "cp": 3,
+      "soc": 834,
+      "makespan": 42,
+      "iterations": 186
+    },
+    "MARL": {
+      "success": false,
+      "time": 3.078763961791992,
+      "cp": 62,
+      "soc": 6600,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.091723680496216,
+      "cp": 9,
+      "soc": 1596,
+      "makespan": 200,
+      "marl_initial_cp": 75
+    }
+  },
+  {
+    "dataset": "empty",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 625,
+    "n_agents": 31,
+    "density": 0.1,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.016956806182861328,
+      "cp": 7,
+      "soc": 488,
+      "makespan": 38
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.849869966506958,
+      "cp": 3,
+      "soc": 489,
+      "makespan": 38,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.4982380867004395,
+      "cp": 23,
+      "soc": 4650,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.063036918640137,
+      "cp": 2,
+      "soc": 680,
+      "makespan": 200,
+      "marl_initial_cp": 31
+    }
+  },
+  {
+    "dataset": "empty",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 625,
+    "n_agents": 31,
+    "density": 0.1,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.019485950469970703,
+      "cp": 4,
+      "soc": 559,
+      "makespan": 32
+    },
+    "LNS": {
+      "success": false,
+      "time": 2.8371381759643555,
+      "cp": 3,
+      "soc": 559,
+      "makespan": 32,
+      "iterations": 200
+    },
+    "MARL": {
+      "success": false,
+      "time": 1.5571813583374023,
+      "cp": 17,
+      "soc": 4650,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.067874908447266,
+      "cp": 1,
+      "soc": 736,
+      "makespan": 200,
+      "marl_initial_cp": 24
+    }
+  },
+  {
+    "dataset": "empty",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 625,
+    "n_agents": 62,
+    "density": 0.2,
+    "seed": 42,
+    "PP": {
+      "success": false,
+      "time": 0.04389691352844238,
+      "cp": 24,
+      "soc": 1003,
+      "makespan": 39
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.047850847244263,
+      "cp": 4,
+      "soc": 1004,
+      "makespan": 39,
+      "iterations": 108
+    },
+    "MARL": {
+      "success": false,
+      "time": 5.001840591430664,
+      "cp": 83,
+      "soc": 9300,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.272606134414673,
+      "cp": 9,
+      "soc": 2348,
+      "makespan": 200,
+      "marl_initial_cp": 92
+    }
+  },
+  {
+    "dataset": "empty",
+    "grid_shape": [
+      25,
+      25
+    ],
+    "free_cells": 625,
+    "n_agents": 62,
+    "density": 0.2,
+    "seed": 123,
+    "PP": {
+      "success": false,
+      "time": 0.04748821258544922,
+      "cp": 31,
+      "soc": 1098,
+      "makespan": 39
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.045172929763794,
+      "cp": 6,
+      "soc": 1096,
+      "makespan": 39,
+      "iterations": 108
+    },
+    "MARL": {
+      "success": false,
+      "time": 5.061126232147217,
+      "cp": 97,
+      "soc": 9300,
+      "makespan": 150
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 5.171428918838501,
+      "cp": 9,
+      "soc": 3225,
+      "makespan": 200,
+      "marl_initial_cp": 110
+    }
+  }
+]

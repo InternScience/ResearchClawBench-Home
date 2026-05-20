@@ -1,0 +1,13 @@
+{
+  "artifacts": {
+    "lcoh_results.csv": {"status": "Y", "description": "Site-level LCOH and delivered costs per scenario"},
+    "summary.json": {"status": "Y", "description": "Scenario summary statistics and competitiveness counts"},
+    "fig1_maps_delivered_cost.png": {"status": "Y", "description": "Geospatial maps of delivered cost under three WACC scenarios"},
+    "fig2_cost_stack.png": {"status": "Y", "description": "Cost stack for least-cost site per scenario"},
+    "fig3_wacc_sensitivity.png": {"status": "Y", "description": "Sensitivity of delivered cost to WACC for best/median/worst sites"},
+    "fig4_competitiveness.png": {"status": "Y", "description": "Count of competitive sites per scenario"},
+    "fig5_boxplot.png": {"status": "Y", "description": "Boxplot distribution of delivered cost per scenario"},
+    "fig6_distance_scatter.png": {"status": "Y", "description": "Delivered cost vs ocean distance scatter"},
+    "report.md": {"status": "Y", "description": "Final research report with methodology, results, discussion"}
+  }
+}

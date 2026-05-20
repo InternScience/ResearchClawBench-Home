@@ -1,0 +1,73 @@
+{
+  "papers": [
+    {
+      "id": "paper_000",
+      "title": "Exploring the String Axiverse with Precision Black Hole Physics",
+      "authors": "Arvanitaki & Dubovsky (2011)",
+      "key_contributions": [
+        "Established superradiance as probe of ULBs",
+        "Defined Regge plot gaps as observational signature",
+        "Introduced Bosenova (self-interaction collapse)",
+        "Estimated constraints from X-ray binary spins"
+      ],
+      "extracted_methods": [
+        "Superradiance condition: omega/m < Omega_H",
+        "Growth rate for scalar l=m=1 mode",
+        "Bosenova critical decay constant scaling"
+      ]
+    },
+    {
+      "id": "paper_001",
+      "title": "The Spectrum of the Axion Dark Sector, Cosmological Observable and Black Hole Superradiance Constraints",
+      "authors": "Stott (2018)",
+      "key_contributions": [
+        "Ensemble BH superradiance constraints on axion populations",
+        "Exclusion probability integration over mass distributions",
+        "Constraints on N_ax >= 30 from BH spin measurements",
+        "RMT axion mass spectra"
+      ],
+      "extracted_methods": [
+        "P_ex(mu) exclusion functions",
+        "Isocontour exclusion boundaries in Regge plane",
+        "Multi-field superposition of superradiance rates"
+      ]
+    },
+    {
+      "id": "paper_002",
+      "title": "Black Hole Mergers and the QCD Axion at Advanced LIGO",
+      "authors": "Arvanitaki, Baryakhtar, Dimopoulos, Dubovsky, Lasenby (2017)",
+      "key_contributions": [
+        "aLIGO as superradiance probe",
+        "Statistical analysis of BBH mergers for axion detection",
+        "Continuous GW from axion annihilations",
+        "Level mixing in binary systems"
+      ],
+      "extracted_methods": [
+        "alpha = G_N * M_BH * mu_a formula with practical units",
+        "Binary level mixing condition",
+        "Annihilation GW strain formula"
+      ]
+    },
+    {
+      "id": "paper_003",
+      "title": "Superradiant Instabilities in Astrophysical Systems",
+      "authors": "Witek, Cardoso, Ishibashi, Sperhake (2013)",
+      "key_contributions": [
+        "Numerical evolution of massive scalar/vector fields around Kerr BHs",
+        "Mode beating discovery",
+        "Proca field instability (stronger than scalar)",
+        "Timescale computations"
+      ],
+      "extracted_methods": [
+        "Scalar growth rate: M*omega_I ~ a/(48M) * (M*mu)^9",
+        "Instability timescale maximum at M*mu = 0.42",
+        "Superradiance condition verification"
+      ]
+    }
+  ],
+  "contract_updates": {
+    "proca_fields": "Vector fields would give stronger constraints; noted as future work",
+    "level_mixing": "Binary disruption effect noted as limitation",
+    "multi_mode": "Higher l=m modes can extend exclusion; only l=m=1 implemented"
+  }
+}

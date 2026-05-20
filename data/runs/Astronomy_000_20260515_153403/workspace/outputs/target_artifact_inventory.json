@@ -1,0 +1,33 @@
+{
+  "target_artifacts": {
+    "analysis_code": {
+      "superradiance_physics.py": "satisfied",
+      "main_analysis.py": "satisfied"
+    },
+    "intermediate_results": {
+      "sample_summary.json": "satisfied",
+      "exclusion_results.json": "satisfied",
+      "self_interaction_results.json": "satisfied",
+      "final_results.json": "satisfied",
+      "method_contract.json": "satisfied"
+    },
+    "figures": {
+      "data_overview.png": "satisfied - 2D histograms of posterior samples",
+      "exclusion_likelihood.png": "satisfied - 3-panel: exclusion fraction + delta-chi^2",
+      "regge_plot.png": "satisfied - mass-spin plane with exclusion boundaries",
+      "exclusion_fraction_map.png": "satisfied - exclusion vs mu with peak marking",
+      "self_interaction_constraints.png": "satisfied - f_a constraints + 2D (mu, f_a) map",
+      "timescale_map.png": "satisfied - superradiance timescale in (M, mu) plane"
+    },
+    "report": {
+      "report.md": "satisfied - comprehensive research report"
+    },
+    "primary_quantitative_outputs": {
+      "M33_X-7_95CL_mu_eV": "1.4e-13",
+      "IRAS_09149-6206_95CL_mu_eV": "3.2e-16",
+      "M33_X-7_peak_mu_eV": "2.8e-13",
+      "IRAS_09149-6206_peak_mu_eV": "1.9e-19"
+    }
+  },
+  "unsatisfied": []
+}

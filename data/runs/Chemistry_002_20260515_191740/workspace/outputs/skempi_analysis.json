@@ -1,0 +1,49 @@
+{
+  "total_entries": 7085,
+  "valid_ddG_entries": 6611,
+  "n_unique_complexes": 343,
+  "location_stats": [
+    {
+      "location": "COR",
+      "count": 4166,
+      "mean_ddG": 2.0481576959637926,
+      "std_ddG": 2.7174178520198686,
+      "median_ddG": 1.7189847410245984
+    },
+    {
+      "location": "INT",
+      "count": 995,
+      "mean_ddG": 0.8707492771951714,
+      "std_ddG": 2.4158753137896904,
+      "median_ddG": 0.4512829404583208
+    },
+    {
+      "location": "RIM",
+      "count": 2471,
+      "mean_ddG": 0.8696540546221835,
+      "std_ddG": 2.262338057937728,
+      "median_ddG": 0.5677602201490599
+    },
+    {
+      "location": "SUP",
+      "count": 1423,
+      "mean_ddG": 1.716188383668312,
+      "std_ddG": 2.2464300740811862,
+      "median_ddG": 1.477430282838533
+    },
+    {
+      "location": "SUR",
+      "count": 2156,
+      "mean_ddG": 0.7265392621270784,
+      "std_ddG": 2.4096126218363203,
+      "median_ddG": 0.2041890177859767
+    }
+  ],
+  "global_ddG_stats": {
+    "mean": 1.2003187632264523,
+    "std": 2.056812503507548,
+    "median": 0.7233134151276248,
+    "q25": 0.023934439872287945,
+    "q75": 2.076324101508492
+  }
+}

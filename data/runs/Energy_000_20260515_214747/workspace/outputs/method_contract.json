@@ -1,0 +1,35 @@
+{
+  "framework": "MMGA (Meta-Model based Genetic Algorithm)",
+  "model": "ECAT (Electrochemical-Aging-Thermal) Coupled Model",
+  "core_components": [
+    "Single Particle (SP) electrochemical model",
+    "SEI growth aging mechanism (Safari et al., 2009)",
+    "Lumped thermal dynamics",
+    "Latin Hypercube Sampling (LHS) for parameter space exploration",
+    "Artificial Neural Network (ANN) meta-model surrogate",
+    "Genetic Algorithm (GA) for parameter identification"
+  ],
+  "datasets": [
+    "NASA PCoE",
+    "CS2_36 (CALCE)",
+    "Oxford Battery Degradation"
+  ],
+  "identified_parameters": [
+    "R_p",
+    "R_n",
+    "k_p",
+    "k_n",
+    "D_s_p",
+    "D_s_n",
+    "eps_s_p",
+    "eps_s_n",
+    "L_p",
+    "L_n",
+    "k_sei",
+    "h"
+  ],
+  "validation_metrics": [
+    "RMSE",
+    "MAE"
+  ]
+}

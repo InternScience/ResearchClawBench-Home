@@ -1,0 +1,89 @@
+{
+  "per_dimension": {
+    "in_paper": {
+      "mean": 1.5,
+      "std": 0.7905694150420949,
+      "min": 0,
+      "max": 2,
+      "median": 2.0,
+      "count_zero": 3,
+      "count_one": 2,
+      "count_two": 11
+    },
+    "prompt_quality": {
+      "mean": 1.8125,
+      "std": 0.3903123748998999,
+      "min": 1,
+      "max": 2,
+      "median": 2.0,
+      "count_zero": 0,
+      "count_one": 3,
+      "count_two": 13
+    },
+    "follow_instructions": {
+      "mean": 1.875,
+      "std": 0.33071891388307384,
+      "min": 1,
+      "max": 2,
+      "median": 2.0,
+      "count_zero": 0,
+      "count_one": 2,
+      "count_two": 14
+    },
+    "physics_logic": {
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2,
+      "max": 2,
+      "median": 2.0,
+      "count_zero": 0,
+      "count_one": 0,
+      "count_two": 16
+    },
+    "math_derivation": {
+      "mean": 1.875,
+      "std": 0.33071891388307384,
+      "min": 1,
+      "max": 2,
+      "median": 2.0,
+      "count_zero": 0,
+      "count_one": 2,
+      "count_two": 14
+    },
+    "final_answer_accuracy": {
+      "mean": 1.75,
+      "std": 0.4330127018922193,
+      "min": 1,
+      "max": 2,
+      "median": 2.0,
+      "count_zero": 0,
+      "count_one": 4,
+      "count_two": 12
+    }
+  },
+  "overall_mean": 1.8020833333333333,
+  "overall_std": 0.4703675793698182,
+  "total_per_task_mean": 10.8125,
+  "total_per_task_std": 1.0734727523323542,
+  "total_per_task_max": 12.0,
+  "total_per_task_min": 8.0,
+  "annotator_means": {
+    "Haining": {
+      "mean": 1.619047619047619,
+      "count": 84
+    },
+    "Will": {
+      "mean": 1.5657894736842106,
+      "count": 76
+    },
+    "Yasaman": {
+      "mean": 1.5833333333333333,
+      "count": 84
+    }
+  },
+  "pairwise_exact_agreement": {
+    "Haining-Will": 0.8026315789473685,
+    "Haining-Yasaman": 0.8095238095238095,
+    "Will-Yasaman": 0.6842105263157895
+  }
+}

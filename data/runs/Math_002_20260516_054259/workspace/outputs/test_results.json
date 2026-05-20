@@ -1,0 +1,194 @@
+[
+  {
+    "dataset": "random_small/maps_50_10_10_0.175",
+    "n_agents": 20,
+    "grid_shape": [
+      10,
+      10
+    ],
+    "PP": {
+      "success": false,
+      "time": 0.0170137882232666,
+      "cp": 11,
+      "soc": 134
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.6277501583099365,
+      "cp": 3,
+      "soc": 141
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.2984781265258789,
+      "cp": 27,
+      "soc": 2000
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 1.4582903385162354,
+      "cp": 1,
+      "soc": 336
+    }
+  },
+  {
+    "dataset": "random_medium/maps_312_25_25_0.175",
+    "n_agents": 20,
+    "grid_shape": [
+      25,
+      25
+    ],
+    "PP": {
+      "success": false,
+      "time": 0.025899887084960938,
+      "cp": 4,
+      "soc": 354
+    },
+    "LNS": {
+      "success": true,
+      "time": 0.06951403617858887,
+      "cp": 0,
+      "soc": 353
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.35008978843688965,
+      "cp": 7,
+      "soc": 2000
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 1.334282398223877,
+      "cp": 0,
+      "soc": 353
+    }
+  },
+  {
+    "dataset": "maze/maze_maps_125_25_25",
+    "n_agents": 20,
+    "grid_shape": [
+      25,
+      25
+    ],
+    "PP": {
+      "success": false,
+      "time": 0.02411937713623047,
+      "cp": 16,
+      "soc": 422
+    },
+    "LNS": {
+      "success": false,
+      "time": 1.1565301418304443,
+      "cp": 8,
+      "soc": 442
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.35554981231689453,
+      "cp": 2,
+      "soc": 2000
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 1.7135977745056152,
+      "cp": 1,
+      "soc": 1838
+    }
+  },
+  {
+    "dataset": "room/room_maps_250_25_25",
+    "n_agents": 20,
+    "grid_shape": [
+      25,
+      25
+    ],
+    "PP": {
+      "success": false,
+      "time": 0.08532428741455078,
+      "cp": 18,
+      "soc": 454
+    },
+    "LNS": {
+      "success": false,
+      "time": 5.01054048538208,
+      "cp": 11,
+      "soc": 457
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.35576391220092773,
+      "cp": 3,
+      "soc": 2000
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 3.665830373764038,
+      "cp": 2,
+      "soc": 1547
+    }
+  },
+  {
+    "dataset": "warehouse/warehouse_maps_266_25_25",
+    "n_agents": 20,
+    "grid_shape": [
+      25,
+      25
+    ],
+    "PP": {
+      "success": false,
+      "time": 0.011097431182861328,
+      "cp": 7,
+      "soc": 377
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.7362456321716309,
+      "cp": 4,
+      "soc": 380
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.34122705459594727,
+      "cp": 9,
+      "soc": 2000
+    },
+    "Hybrid": {
+      "success": false,
+      "time": 1.028456449508667,
+      "cp": 1,
+      "soc": 379
+    }
+  },
+  {
+    "dataset": "empty/empty_maps_453_25_25",
+    "n_agents": 20,
+    "grid_shape": [
+      25,
+      25
+    ],
+    "PP": {
+      "success": false,
+      "time": 0.015063285827636719,
+      "cp": 4,
+      "soc": 390
+    },
+    "LNS": {
+      "success": false,
+      "time": 0.8401615619659424,
+      "cp": 2,
+      "soc": 390
+    },
+    "MARL": {
+      "success": false,
+      "time": 0.35729241371154785,
+      "cp": 5,
+      "soc": 2000
+    },
+    "Hybrid": {
+      "success": true,
+      "time": 0.4396028518676758,
+      "cp": 0,
+      "soc": 2019
+    }
+  }
+]

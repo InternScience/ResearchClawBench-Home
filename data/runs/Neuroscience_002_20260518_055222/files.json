@@ -1,0 +1,339 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analysis.py",
+    "path": "code/analysis.py",
+    "type": "file",
+    "size": 22054,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "gen_figures.py",
+    "path": "code/gen_figures.py",
+    "type": "file",
+    "size": 12559,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "part1_viz.py",
+    "path": "code/part1_viz.py",
+    "type": "file",
+    "size": 5892,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "part2_models.py",
+    "path": "code/part2_models.py",
+    "type": "file",
+    "size": 14529,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "part2a_train.py",
+    "path": "code/part2a_train.py",
+    "type": "file",
+    "size": 4020,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "quick_train.py",
+    "path": "code/quick_train.py",
+    "type": "file",
+    "size": 2469,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "test_load.py",
+    "path": "code/test_load.py",
+    "type": "file",
+    "size": 309,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "train_all_models.py",
+    "path": "code/train_all_models.py",
+    "type": "file",
+    "size": 5707,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "train_fast.py",
+    "path": "code/train_fast.py",
+    "type": "file",
+    "size": 7330,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "test_simulated.csv",
+    "path": "data/test_simulated.csv",
+    "type": "file",
+    "size": 29204490,
+    "mtime": 1772421508.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "train_simulated.csv",
+    "path": "data/train_simulated.csv",
+    "type": "file",
+    "size": 68149042,
+    "mtime": 1772421506.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "all_results.json",
+    "path": "outputs/all_results.json",
+    "type": "file",
+    "size": 4765,
+    "mtime": 1779246102.0,
+    "exported": true
+  },
+  {
+    "name": "final_summary.json",
+    "path": "outputs/final_summary.json",
+    "type": "file",
+    "size": 4793,
+    "mtime": 1779246102.0,
+    "exported": true
+  },
+  {
+    "name": "lr_deg_results.json",
+    "path": "outputs/lr_deg_results.json",
+    "type": "file",
+    "size": 721,
+    "mtime": 1779246102.0,
+    "exported": true
+  },
+  {
+    "name": "lr_results.json",
+    "path": "outputs/lr_results.json",
+    "type": "file",
+    "size": 1957640,
+    "mtime": 1779246102.0,
+    "exported": false
+  },
+  {
+    "name": "y_pred_ab.npy",
+    "path": "outputs/y_pred_ab.npy",
+    "type": "file",
+    "size": 576128,
+    "mtime": 1779246102.0,
+    "exported": false
+  },
+  {
+    "name": "y_pred_gb.npy",
+    "path": "outputs/y_pred_gb.npy",
+    "type": "file",
+    "size": 576128,
+    "mtime": 1779246102.0,
+    "exported": false
+  },
+  {
+    "name": "y_pred_mlp.npy",
+    "path": "outputs/y_pred_mlp.npy",
+    "type": "file",
+    "size": 576128,
+    "mtime": 1779246100.0,
+    "exported": false
+  },
+  {
+    "name": "y_pred_rf.npy",
+    "path": "outputs/y_pred_rf.npy",
+    "type": "file",
+    "size": 576128,
+    "mtime": 1779246100.0,
+    "exported": false
+  },
+  {
+    "name": "y_prob_ab.npy",
+    "path": "outputs/y_prob_ab.npy",
+    "type": "file",
+    "size": 576128,
+    "mtime": 1779246102.0,
+    "exported": false
+  },
+  {
+    "name": "y_prob_gb.npy",
+    "path": "outputs/y_prob_gb.npy",
+    "type": "file",
+    "size": 576128,
+    "mtime": 1779246102.0,
+    "exported": false
+  },
+  {
+    "name": "\u2026 3 more items",
+    "path": "outputs/_more",
+    "type": "truncated"
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 7682715,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 540574,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 725080,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 736463,
+    "mtime": 1773914910.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure10_score_distributions.png",
+    "path": "report/images/figure10_score_distributions.png",
+    "type": "file",
+    "size": 72997,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure1_data_overview.png",
+    "path": "report/images/figure1_data_overview.png",
+    "type": "file",
+    "size": 196579,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure2_mutual_information.png",
+    "path": "report/images/figure2_mutual_information.png",
+    "type": "file",
+    "size": 83112,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure3_degradation_features.png",
+    "path": "report/images/figure3_degradation_features.png",
+    "type": "file",
+    "size": 103357,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure4_roc_pr_curves.png",
+    "path": "report/images/figure4_roc_pr_curves.png",
+    "type": "file",
+    "size": 215998,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure5_model_comparison.png",
+    "path": "report/images/figure5_model_comparison.png",
+    "type": "file",
+    "size": 70150,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure6_confusion_matrices.png",
+    "path": "report/images/figure6_confusion_matrices.png",
+    "type": "file",
+    "size": 87643,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure7_degradation_performance.png",
+    "path": "report/images/figure7_degradation_performance.png",
+    "type": "file",
+    "size": 127984,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure8_feature_importance.png",
+    "path": "report/images/figure8_feature_importance.png",
+    "type": "file",
+    "size": 57953,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "figure9_cross_validation.png",
+    "path": "report/images/figure9_cross_validation.png",
+    "type": "file",
+    "size": 116836,
+    "mtime": 1779246104.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 19950,
+    "mtime": 1779246105.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5452,
+    "mtime": 1779054742.0,
+    "exported": true
+  }
+]

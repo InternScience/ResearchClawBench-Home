@@ -1,0 +1,66 @@
+{
+  "total_flows": 148774,
+  "feature_dim": 40,
+  "num_nodes": 1090431,
+  "num_attack_types": 10,
+  "binary_distribution": {
+    "benign": 114716,
+    "attack": 34058,
+    "attack_ratio": 0.22892440883487705
+  },
+  "attack_type_distribution": {
+    "Type-0": {
+      "count": 380,
+      "ratio": 0.0025542097409493596
+    },
+    "Type-1": {
+      "count": 341,
+      "ratio": 0.0022920671622729777
+    },
+    "Benign": {
+      "count": 114716,
+      "ratio": 0.7710755911651229
+    },
+    "Type-3": {
+      "count": 3666,
+      "ratio": 0.024641402395579874
+    },
+    "Type-4": {
+      "count": 1473,
+      "ratio": 0.009900923548469491
+    },
+    "Type-5": {
+      "count": 1009,
+      "ratio": 0.006782099022678694
+    },
+    "Type-6": {
+      "count": 14688,
+      "ratio": 0.0987269280922742
+    },
+    "Type-7": {
+      "count": 10910,
+      "ratio": 0.0733327059835724
+    },
+    "Type-8": {
+      "count": 1427,
+      "ratio": 0.009591729737722989
+    },
+    "Type-9": {
+      "count": 164,
+      "ratio": 0.001102343151357092
+    }
+  },
+  "temporal_range": {
+    "min": 0,
+    "max": 86399
+  },
+  "feature_variance_top5": [
+    38,
+    16,
+    13,
+    6,
+    7
+  ],
+  "unique_src_nodes": 121910,
+  "unique_dst_nodes": 38523
+}

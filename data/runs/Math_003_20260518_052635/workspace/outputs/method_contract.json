@@ -1,0 +1,18 @@
+{
+  "method": "Neuro-Symbolic Geometry Prover",
+  "goal": "Autonomously solve IMO-level geometry problems without human demonstrations",
+  "approach": "Combine neural network guidance with symbolic theorem proving",
+  "key_components": [
+    "Problem parser for formal geometry language",
+    "Geometric reasoning engine with inference rules",
+    "Proof search with neural guidance",
+    "Verification system for proof correctness"
+  ],
+  "benchmark": "IMO 30 geometry problems",
+  "evaluation_metrics": [
+    "Success rate (problems solved)",
+    "Proof length",
+    "Computational time",
+    "Generalization to unseen problems"
+  ]
+}

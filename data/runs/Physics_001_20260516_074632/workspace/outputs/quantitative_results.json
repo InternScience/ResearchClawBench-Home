@@ -1,0 +1,34 @@
+{
+  "superfluid_stiffness": {
+    "geometric_enhancement_factor": 4.565012014264696,
+    "experimental_hole_enhancement_factor": 55.268020807816065,
+    "experimental_electron_enhancement_factor": 52.50461576389423,
+    "hole_electron_asymmetry": 1.0526319957156556,
+    "max_D_s_conv_H1": 2698349570.0,
+    "max_D_s_geom_H1": 13760869700.0,
+    "max_D_s_exp_hole_H1": 233911617000.0,
+    "max_D_s_exp_electron_H1": 222216036000.0
+  },
+  "temperature_scaling": {
+    "power_law_exponent": 0.7743774612805979,
+    "power_law_exponent_err": 0.002827655880386429,
+    "power_law_R2": 0.997847200987348,
+    "bcs_exponential_R2": 0.5998798037868394,
+    "bcs_effective_exponent": 1.998173472480169,
+    "nodal_effective_exponent": 0.9999999999029606,
+    "conclusion": "Power-law scaling (n\u22480.77) strongly preferred over BCS exponential"
+  },
+  "current_dependence": {
+    "critical_current_Ic_nA": 50.0,
+    "microwave_quadratic_coeff_a": -5.852743691445656,
+    "microwave_quadratic_coeff_b": -7.725647973316166,
+    "microwave_quadratic_coeff_c": 100.27467774780301,
+    "linear_term_small": false
+  },
+  "bkt_analysis": {
+    "max_Tbkt_conv_K": 33.21395684275141,
+    "max_Tbkt_geom_K": 169.3824022713727,
+    "max_Tbkt_exp_hole_K": 2879.215665172766,
+    "note": "T_BKT values are upper bounds; actual Tc is reduced by thermal suppression of D_s(T)"
+  }
+}

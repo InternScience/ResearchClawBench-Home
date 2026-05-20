@@ -1,0 +1,207 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "train_altermagnet_model.py",
+    "path": "code/train_altermagnet_model.py",
+    "type": "file",
+    "size": 16286,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_data.pt",
+    "path": "data/candidate_data.pt",
+    "type": "file",
+    "size": 2451457,
+    "mtime": 1772431610.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "finetune_data.pt",
+    "path": "data/finetune_data.pt",
+    "type": "file",
+    "size": 4904635,
+    "mtime": 1772431608.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "pretrain_data.pt",
+    "path": "data/pretrain_data.pt",
+    "type": "file",
+    "size": 12321899,
+    "mtime": 1772431606.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "candidate_embeddings.npy",
+    "path": "outputs/candidate_embeddings.npy",
+    "type": "file",
+    "size": 512128,
+    "mtime": 1779245954.0,
+    "exported": false
+  },
+  {
+    "name": "candidate_predictions.npy",
+    "path": "outputs/candidate_predictions.npy",
+    "type": "file",
+    "size": 4128,
+    "mtime": 1779245956.0,
+    "exported": false
+  },
+  {
+    "name": "finetuned_model.pt",
+    "path": "outputs/finetuned_model.pt",
+    "type": "file",
+    "size": 186703,
+    "mtime": 1779245954.0,
+    "exported": false
+  },
+  {
+    "name": "pretrained_encoder.pt",
+    "path": "outputs/pretrained_encoder.pt",
+    "type": "file",
+    "size": 151911,
+    "mtime": 1779245954.0,
+    "exported": false
+  },
+  {
+    "name": "summary_statistics.txt",
+    "path": "outputs/summary_statistics.txt",
+    "type": "file",
+    "size": 326,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 4055967,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 8225125,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 1212404,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 2144524,
+    "mtime": 1773914903.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "confusion_matrix.png",
+    "path": "report/images/confusion_matrix.png",
+    "type": "file",
+    "size": 44306,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "finetuning_curves.png",
+    "path": "report/images/finetuning_curves.png",
+    "type": "file",
+    "size": 62153,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "prediction_distribution.png",
+    "path": "report/images/prediction_distribution.png",
+    "type": "file",
+    "size": 64034,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "pretraining_loss.png",
+    "path": "report/images/pretraining_loss.png",
+    "type": "file",
+    "size": 50932,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "top_candidates.png",
+    "path": "report/images/top_candidates.png",
+    "type": "file",
+    "size": 56053,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "tsne_embeddings.png",
+    "path": "report/images/tsne_embeddings.png",
+    "type": "file",
+    "size": 472996,
+    "mtime": 1779245956.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 11690,
+    "mtime": 1779245957.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6080,
+    "mtime": 1778855708.0,
+    "exported": true
+  }
+]

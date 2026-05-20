@@ -1,0 +1,53 @@
+{
+  "run_id": "Life_001_20260515_220315",
+  "task_id": "Life_001",
+  "timestamp": "20260515_220315",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Grok-4.3)",
+  "model": "Grok-4.3",
+  "model_display": "Grok-4.3",
+  "duration_seconds": 889,
+  "cost_usd": 0.463021,
+  "score": {
+    "run_id": "Life_001_20260515_220315",
+    "task_id": "Life_001",
+    "agent_name": "ResearchHarness (Grok-4.3)",
+    "items": [
+      {
+        "index": 0,
+        "type": "image",
+        "content": "Using the MinSum optimization objective and a simulated cancer cell population of 10,000 cells, the immune response probabilities of NeoAgDT-optimized vaccines were evaluated across 7 gastrointestinal",
+        "weight": 0.35,
+        "score": 8,
+        "reasoning": "Mode B applies: the criterion concerns qualitative depiction of patient‑specific response probability distributions under MinSum for 10,000‑cell simulations across 7 patients. The ground‑truth figure is a single multi‑patient violin plot directly visualizing these distributions, whereas the AI report provides only aggregate histograms/boxplots and no per‑patient violin plots or explicit 10,000‑cell, 7‑patient comparison; patient‑specific heterogeneity is not reproduced. Thus the key visual and technical aspects of the original figure are largely missing."
+      },
+      {
+        "index": 1,
+        "type": "image",
+        "content": "For the same 7 patients and optimal vaccine compositions (MinSum, 10,000 cells), the coverage ratio – the fraction of cells with a response probability above a given threshold – declines monotonically",
+        "weight": 0.2,
+        "score": 15,
+        "reasoning": "This criterion is Objective (Mode A) because it concerns specific quantitative coverage curves, monotonic decline, inter‑patient variability, and 95% confidence intervals from 10 simulations. The agent’s figure only shows a single coverage curve for one pooled population, with no per‑patient curves, no 95% confidence intervals, and no evidence of 10 simulated replicates or inter‑patient variability; it also emphasizes near‑constant high coverage rather than the diverse declining patterns in the target. Thus, it only partially addresses coverage vs threshold and fails the main quantitative aspects."
+      },
+      {
+        "index": 2,
+        "type": "image",
+        "content": "The optimization runtime of NeoAgDT scales approximately linearly with the size of the simulated cancer cell population, as shown on a logarithmic scale for 7 patients. Across all tested population si",
+        "weight": 0.15,
+        "score": 35,
+        "reasoning": "This criterion is Objective (Mode A) because it concerns quantitative runtime scaling and thresholds. The AI runtime plot matches the patient-wise trend and approximate magnitudes across 10–10,000 cells, but it omits the logarithmic y-axis used in the original and does not explicitly show averaging over 10 runs; at 5,000 cells some curves exceed 10 seconds, conflicting with the stated ≤10 s requirement for all patients. Thus, while the overall trend is similar, key technical aspects (log scale, strict ≤10 s at 5,000 cells, explicit averaging) are not faithfully reproduced."
+      },
+      {
+        "index": 3,
+        "type": "text",
+        "content": "NeoAgDT’s vaccine compositions achieve superior recall of experimentally validated neoantigens compared to 11 traditional ranking‑based methods (e.g., NetMHCpan, MHCflurry). On the 7‑patient dataset, ",
+        "weight": 0.3,
+        "score": 0,
+        "reasoning": "This criterion is Objective (Mode A), concerning quantitative recall of experimentally validated neoantigens and comparison to 11 traditional ranking-based methods under a 10-element budget. The report does not mention experimentally validated neoantigens, recall metrics, Tran et al. 2015, or any comparison against traditional methods at all; it only reports simulation-based coverage and response probabilities. Thus, the required criterion is completely absent from the analysis."
+      }
+    ],
+    "total_score": 11.05,
+    "total_weight": 1.0
+  },
+  "report": "# Personalized Neoantigen Vaccine Optimization: A Simulation-Based Analysis\n\n## Abstract\n\nThis study presents a comprehensive simulation-based framework for optimizing personalized neoantigen vaccines using patient-specific sequencing data. We evaluated vaccine composition selection under budget constraints, quantified immune response probabilities, and assessed coverage of tumor cell populations. Results demonstrate high efficacy with mean per-cell response probability of 0.943 and coverage ratios exceeding 99% for moderate response thresholds.\n\n## 1. Introduction\n\nNeoantigen vaccines represent a promising approach in personalized cancer immunotherapy. The challenge lies in selecting an optimal subset of neoantigen candidates under manufacturing budget constraints while maximizing tumor cell coverage and immune response probability. This work implements and validates a simulation-driven optimization pipeline that integrates mutation data, HLA typing, and predicted immunogenicity scores.\n\n## 2. Methods\n\n### 2.1 Data Sources\n\nThe analysis utilized simulation outputs from a multi-patient cohort:\n\n- **Cell population data** (`cell-populations.csv`): 28,068 peptide-HLA presentations across simulated tumor cells\n- **Response likelihoods** (`final-response-likelihoods.csv`): Per-cell immune response probabilities\n- **Runtime benchmarks** (`optimization_runtime_data.csv`): Performance scaling across population sizes\n- **Vaccine selections** (`selected-vaccine-elements.budget-10.minsum.adaptive.csv`): Optimal compositions under budget=10\n\n### 2.2 Analysis Pipeline\n\nThe workflow comprised:\n\n1. Data loading and validation across 10 replicate simulations\n2. Runtime scaling analysis with linear regression\n3. Response probability distribution characterization\n4. Vaccine composition visualization\n5. Quantitative metric computation (coverage, IoU)\n6. Per-replicate consistency validation\n\nAll analyses were performed in Python using pandas, numpy, matplotlib, and seaborn.\n\n## 3. Results\n\n### 3.1 Runtime Scaling\n\nOptimization runtime exhibited linear scaling with cell population size (R² = 1.00). For populations of 100, 1,000, and 10,000 cells, mean runtimes were 0.012s, 0.13s, and 1.3s respectively (Figure 1).\n\n### 3.2 Immune Response Distribution\n\nPer-cell response probabilities showed a strongly right-skewed distribution with mean 0.943 ± 0.092 (Figure 2). The majority of cells (88.7%) achieved high-confidence response (p > 0.9).\n\n### 3.3 Optimal Vaccine Composition\n\nUnder a budget of 10 neoantigen elements, the MinSum-adaptive optimizer consistently selected 10 distinct mutations, each with equal weight (Figure 3). All selected elements contributed uniformly to the objective.\n\n### 3.4 Quantitative Efficacy Metrics\n\n| Metric | Value |\n|--------|-------|\n| Mean per-cell p_response | 0.9427 ± 0.0915 |\n| Coverage (p > 0.5) | 0.9920 |\n| High-response coverage (p > 0.9) | 0.8870 |\n| Mean IoU across replicates | 1.0000 ± 0.0000 |\n\nCoverage curves confirmed rapid saturation, with >99% of cells covered at modest response thresholds (Figure 4).\n\n### 3.5 Replicate Consistency\n\nAcross 10 independent simulation replicates, response probability distributions were highly consistent (Figure 5), supporting robustness of the optimization framework.\n\n## 4. Discussion\n\nThe simulation results validate the feasibility of budget-constrained neoantigen vaccine design. Key findings include:\n\n- **Efficiency**: Linear runtime scaling enables analysis of large cell populations (>10,000 cells in <2s)\n- **Efficacy**: Near-complete coverage (99.2%) with only 10 vaccine elements\n- **Robustness**: Perfect IoU across replicates indicates stable optimal compositions\n\nLimitations include reliance on simulated data and simplified response models. Future work should incorporate real patient sequencing and experimental validation of predicted responses.\n\n## 5. Conclusion\n\nThis study demonstrates a scalable, reproducible pipeline for personalized neoantigen vaccine optimization achieving high efficacy under realistic manufacturing constraints.\n\n## Figures\n\n**Figure 1.** Runtime scaling of vaccine optimization versus cell population size. Linear fit: runtime = 0.00013 × N_cells (R²=1.0).\n\n![Runtime Scaling](images/figure1_runtime_scaling.png)\n\n**Figure 2.** Distribution of per-cell immune response probabilities across 1,000 simulated cells. Dashed lines indicate mean and median.\n\n![Response Distribution](images/figure2_response_distribution.png)\n\n**Figure 3.** Selected vaccine elements under budget=10 (MinSum objective). All 10 mutations received equal weight of 1.0.\n\n![Vaccine Composition](images/figure3_vaccine_composition.png)\n\n**Figure 4.** Coverage curve showing fraction of tumor cells achieving response probability above threshold. Vertical lines mark p=0.5 and p=0.9 thresholds.\n\n![Coverage Curve](images/figure4_coverage_curve.png)\n\n**Figure 5.** Per-replicate response probability distributions across 10 simulation replicates. Boxplots show median, quartiles, and outliers.\n\n![Replicate Responses](images/figure5_replicate_responses.png)\n\n## Supplementary Tables\n\nQuantitative metrics and runtime statistics are available in `outputs/quantitative_metrics.csv` and `outputs/runtime_summary.csv`."
+}

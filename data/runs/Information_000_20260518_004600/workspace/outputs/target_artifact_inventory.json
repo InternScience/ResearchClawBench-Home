@@ -1,0 +1,72 @@
+{
+  "primary_artifacts": [
+    {
+      "name": "Unified Framework Implementation",
+      "type": "code",
+      "path": "code/unified_framework.py",
+      "description": "Implementation of the unified autoregressive framework with decoupled visual encoding"
+    },
+    {
+      "name": "Training Script",
+      "type": "code",
+      "path": "code/train.py",
+      "description": "Training script for the unified framework"
+    },
+    {
+      "name": "Evaluation Script",
+      "type": "code",
+      "path": "code/evaluate.py",
+      "description": "Evaluation script for testing on provided data files"
+    },
+    {
+      "name": "Framework Comparison Results",
+      "type": "json",
+      "path": "outputs/comparison_results.json",
+      "description": "Quantitative comparison between single-encoder and decoupled-encoder approaches"
+    },
+    {
+      "name": "Architecture Comparison Figure",
+      "type": "figure",
+      "path": "report/images/architecture_comparison.png",
+      "description": "Visualization comparing single-encoder vs decoupled-encoder architectures"
+    },
+    {
+      "name": "Performance Comparison Figure",
+      "type": "figure",
+      "path": "report/images/performance_comparison.png",
+      "description": "Performance metrics comparison between approaches"
+    },
+    {
+      "name": "Task-Specific Results Figure",
+      "type": "figure",
+      "path": "report/images/task_results.png",
+      "description": "Results on specific tasks (OCR, humor understanding)"
+    },
+    {
+      "name": "Research Report",
+      "type": "markdown",
+      "path": "report/report.md",
+      "description": "Comprehensive research report with methodology, results, and discussion"
+    }
+  ],
+  "supporting_artifacts": [
+    {
+      "name": "Data Analysis Results",
+      "type": "json",
+      "path": "outputs/data_analysis.json",
+      "description": "Analysis of the provided data files"
+    },
+    {
+      "name": "Training Curves",
+      "type": "figure",
+      "path": "report/images/training_curves.png",
+      "description": "Training loss curves for different configurations"
+    },
+    {
+      "name": "Ablation Study Results",
+      "type": "json",
+      "path": "outputs/ablation_results.json",
+      "description": "Ablation study on key components of the framework"
+    }
+  ]
+}

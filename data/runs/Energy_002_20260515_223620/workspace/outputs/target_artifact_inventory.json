@@ -1,0 +1,106 @@
+{
+  "target_artifacts": [
+    {
+      "id": "fig1_lcoh_map",
+      "type": "figure",
+      "path": "report/images/fig1_lcoh_map.png",
+      "description": "Geospatial map of delivered LCOH from African sites to Rotterdam",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig2_financing_comparison",
+      "type": "figure",
+      "path": "report/images/fig2_financing_comparison.png",
+      "description": "Box plot comparison of LCOH across financing scenarios + competitive site counts",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig3_interest_sensitivity",
+      "type": "figure",
+      "path": "report/images/fig3_interest_sensitivity.png",
+      "description": "LCOH vs WACC curves for top-5 sites + de-risking savings bar chart",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig4_cost_breakdown",
+      "type": "figure",
+      "path": "report/images/fig4_cost_breakdown.png",
+      "description": "Waterfall cost breakdown + stacked bar for top-5 sites",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig5_competitiveness",
+      "type": "figure",
+      "path": "report/images/fig5_competitiveness.png",
+      "description": "Africa vs Europe LCOH comparison across all financing x interest scenarios",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig6_resource_quality",
+      "type": "figure",
+      "path": "report/images/fig6_resource_quality.png",
+      "description": "PV and wind capacity factor vs LCOH scatter plots colored by ocean distance",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig7_derisking_heatmap",
+      "type": "figure",
+      "path": "report/images/fig7_derisking_heatmap.png",
+      "description": "Financing x interest rate heatmap of best-site LCOH",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig8_distance_sensitivity",
+      "type": "figure",
+      "path": "report/images/fig8_distance_sensitivity.png",
+      "description": "Road distance vs truck cost + shipping distance vs total LCOH",
+      "status": "satisfied"
+    },
+    {
+      "id": "lcoh_results",
+      "type": "data",
+      "path": "outputs/lcoh_results_v2.csv",
+      "description": "Full scenario results for all 30 sites x 12 scenarios (360 rows)",
+      "status": "satisfied"
+    },
+    {
+      "id": "europe_benchmarks",
+      "type": "data",
+      "path": "outputs/europe_lcoh_estimates.csv",
+      "description": "European green hydrogen production cost estimates",
+      "status": "satisfied"
+    },
+    {
+      "id": "report",
+      "type": "report",
+      "path": "report/report.md",
+      "description": "Comprehensive research report with methodology, results, and discussion",
+      "status": "satisfied"
+    },
+    {
+      "id": "model_code",
+      "type": "code",
+      "path": "code/lcoh_model_v2.py",
+      "description": "Main LCOH computation model",
+      "status": "satisfied"
+    },
+    {
+      "id": "viz_code",
+      "type": "code",
+      "path": "code/visualization.py",
+      "description": "Figure generation scripts",
+      "status": "satisfied"
+    }
+  ],
+  "primary_quantitative_answers": {
+    "best_site_delivered_lcoh_strong_derisk": "2.15 EUR/kg (hex_015)",
+    "best_site_delivered_lcoh_moderate_derisk": "2.38 EUR/kg (hex_015)",
+    "best_site_delivered_lcoh_high_risk": "2.88 EUR/kg (hex_015)",
+    "mean_derisking_savings": "3.21 EUR/kg (34.8% reduction)",
+    "interest_rate_sensitivity": "0.08-0.12 EUR/kg per +1pp WACC",
+    "competitive_sites_moderate_derisk": "8 of 30 (27%) below 4.5 EUR/kg",
+    "competitive_sites_strong_derisk": "9 of 30 (30%) below 4.5 EUR/kg",
+    "production_cost_share": "71% of total delivered cost",
+    "shipping_cost_share": "12% of total delivered cost"
+  }
+}

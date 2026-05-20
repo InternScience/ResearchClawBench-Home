@@ -1,0 +1,26 @@
+{
+  "task": "Binary prediction of neuron segment connectivity from EM data features",
+  "input": "20 engineered features (morphology, intensity, embedding modalities) + degradation type",
+  "output": "Binary label (0/1) for same-neuron prediction",
+  "scientific_goal": "Automate connectomics proofreading by predicting segment merge decisions",
+  "method_commitments": [
+    "Train and compare multiple classifier architectures",
+    "Evaluate with AUC-ROC, Average Precision, F1, Precision, Recall",
+    "Stratify evaluation by degradation type (Mixed, Misalignment, Average, Missing Sections)",
+    "Provide interpretability via SHAP and permutation importance",
+    "Handle class imbalance (~10% positive)",
+    "Produce publication-quality figures and comprehensive report"
+  ],
+  "data_commitments": [
+    "Train set: 168,000 samples with 20 features and degradation labels",
+    "Test set: 72,000 samples with identical structure",
+    "Stratified by 4 degradation types"
+  ],
+  "model_families": [
+    "Logistic Regression (linear baseline)",
+    "Random Forest (tree ensemble)",
+    "Gradient Boosting (sequential ensemble)",
+    "XGBoost (gradient-boosted trees)",
+    "MLP Neural Network (deep learning)"
+  ]
+}

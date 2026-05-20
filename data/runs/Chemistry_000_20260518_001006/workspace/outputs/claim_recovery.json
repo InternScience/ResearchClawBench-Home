@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "KA-GNN replaces MLP with Fourier KAN modules",
+    "evidence": "code/kagnn_model.py lines 10-85 (FourierKANLayer class)",
+    "verification": "Verified from workspace code",
+    "status": "satisfied"
+  },
+  {
+    "claim": "KA-GNN achieves AUC 0.931 on BACE (better than GCN 0.908)",
+    "evidence": "outputs/results.json BACE entry",
+    "verification": "Computed from training results",
+    "status": "satisfied"
+  },
+  {
+    "claim": "KA-GNN achieves AUC 0.820 on ClinTox (better than GCN 0.618)",
+    "evidence": "outputs/results.json ClinTox entry",
+    "verification": "Computed from training results",
+    "status": "satisfied"
+  },
+  {
+    "claim": "KA-GNN has higher computational cost (5-7x GCN training time)",
+    "evidence": "outputs/results.json time fields across datasets",
+    "verification": "Computed from training timing logs",
+    "status": "satisfied"
+  },
+  {
+    "claim": "Non-covalent interaction edges included via 3D conformer geometry",
+    "evidence": "code/train_eval.py smiles_to_graph function",
+    "verification": "Verified from workspace code",
+    "status": "satisfied"
+  },
+  {
+    "claim": "KA-GNN (340K params) has more parameters than GCN (64K)",
+    "evidence": "outputs/results.json params fields",
+    "verification": "Computed from model parameter counts",
+    "status": "satisfied"
+  },
+  {
+    "claim": "GAT achieves best overall AUC profile across datasets",
+    "evidence": "outputs/results.json comparison across all datasets",
+    "verification": "Computed from results: GAT leads on 3/5 datasets",
+    "status": "satisfied"
+  },
+  {
+    "claim": "MUV and HIV suffer from class imbalance",
+    "evidence": "outputs/results.json low AUC values; MUV pos ratio ~0.2%",
+    "verification": "Verified from data analysis",
+    "status": "satisfied"
+  }
+]

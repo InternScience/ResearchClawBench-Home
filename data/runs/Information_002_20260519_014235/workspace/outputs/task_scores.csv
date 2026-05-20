@@ -1,0 +1,17 @@
+task,in_paper,prompt_quality,follow_instructions,physics_logic,math_derivation,final_answer_accuracy
+"Construct Kinetic Hamiltonian (continuum version, single-particle)",1,1,1,2,2,1
+Define each term in Kinetic Hamiltonian (continuum version),2,2,1,2,2,1
+Construct Potential Hamiltonian (continuum version),1,2,2,2,2,2
+Define each term in Potential Hamiltonian (continuum version),2,2,2,2,2,2
+"Convert from single-particle to second-quantized form, return in matrix",2,2,2,2,2,2
+"Convert from single-particle to second-quantized form, return in summation (expand the matrix)",2,2,2,2,1,1
+Convert noninteracting Hamiltonian in real space to momentum space (continuum version),2,2,2,2,2,1
+Particle-hole transformation,0,2,2,2,2,2
+Simplify the Hamiltonian in the particle-hole basis,2,1,2,2,2,2
+Construct interaction Hamiltonian (momentum space),2,2,2,2,2,2
+Wick's theorem,0,2,2,2,2,2
+Extract quadratic term,0,2,2,2,2,2
+Swap the index to combine Hartree and Fock terms,2,1,2,2,2,2
+Reduce momentum in Hartree term (momentum in BZ + reciprocal lattice),2,2,2,2,1,2
+Reduce momentum in Fock term (momentum in BZ + reciprocal lattice),2,2,2,2,2,2
+Combine the Hartree and Fock term,2,2,2,2,2,2

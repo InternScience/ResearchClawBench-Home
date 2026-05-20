@@ -1,0 +1,258 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "dispatch_model.py",
+    "path": "code/dispatch_model.py",
+    "type": "file",
+    "size": 14728,
+    "mtime": 1779246042.0,
+    "exported": true
+  },
+  {
+    "name": "generate_figures.py",
+    "path": "code/generate_figures.py",
+    "type": "file",
+    "size": 17059,
+    "mtime": 1779246042.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "buses.csv",
+    "path": "data/buses.csv",
+    "type": "file",
+    "size": 1086,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "demand.csv",
+    "path": "data/demand.csv",
+    "type": "file",
+    "size": 60915,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "generators.csv",
+    "path": "data/generators.csv",
+    "type": "file",
+    "size": 1386,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "links.csv",
+    "path": "data/links.csv",
+    "type": "file",
+    "size": 565,
+    "mtime": 1773033844.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "storage.csv",
+    "path": "data/storage.csv",
+    "type": "file",
+    "size": 109,
+    "mtime": 1773033848.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "wind_cf.csv",
+    "path": "data/wind_cf.csv",
+    "type": "file",
+    "size": 63972,
+    "mtime": 1773033846.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "base_case_hourly.csv",
+    "path": "outputs/base_case_hourly.csv",
+    "type": "file",
+    "size": 22476,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_comparison.csv",
+    "path": "outputs/scenario_comparison.csv",
+    "type": "file",
+    "size": 601,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "scenario_summary.json",
+    "path": "outputs/scenario_summary.json",
+    "type": "file",
+    "size": 2094,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 1296584,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 193879,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 406113,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 6282024,
+    "mtime": 1773914893.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure10_sensitivity_metrics.png",
+    "path": "report/images/figure10_sensitivity_metrics.png",
+    "type": "file",
+    "size": 113768,
+    "mtime": 1779246042.0,
+    "exported": true
+  },
+  {
+    "name": "figure1_network_topology.png",
+    "path": "report/images/figure1_network_topology.png",
+    "type": "file",
+    "size": 264154,
+    "mtime": 1779246042.0,
+    "exported": true
+  },
+  {
+    "name": "figure2_demand_wind_profiles.png",
+    "path": "report/images/figure2_demand_wind_profiles.png",
+    "type": "file",
+    "size": 265520,
+    "mtime": 1779246042.0,
+    "exported": true
+  },
+  {
+    "name": "figure3_dispatch_stack.png",
+    "path": "report/images/figure3_dispatch_stack.png",
+    "type": "file",
+    "size": 187190,
+    "mtime": 1779246042.0,
+    "exported": true
+  },
+  {
+    "name": "figure4_scenario_comparison.png",
+    "path": "report/images/figure4_scenario_comparison.png",
+    "type": "file",
+    "size": 106932,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "figure5_storage_operation.png",
+    "path": "report/images/figure5_storage_operation.png",
+    "type": "file",
+    "size": 80458,
+    "mtime": 1779246042.0,
+    "exported": true
+  },
+  {
+    "name": "figure6_unserved_curtailment.png",
+    "path": "report/images/figure6_unserved_curtailment.png",
+    "type": "file",
+    "size": 133904,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "figure7_spatial_maps.png",
+    "path": "report/images/figure7_spatial_maps.png",
+    "type": "file",
+    "size": 124057,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "figure8_marginal_prices.png",
+    "path": "report/images/figure8_marginal_prices.png",
+    "type": "file",
+    "size": 69015,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "figure9_transmission_utilization.png",
+    "path": "report/images/figure9_transmission_utilization.png",
+    "type": "file",
+    "size": 108217,
+    "mtime": 1779246040.0,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 23448,
+    "mtime": 1779246043.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6268,
+    "mtime": 1779117454.0,
+    "exported": true
+  }
+]

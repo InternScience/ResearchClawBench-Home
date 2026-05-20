@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "python": {"available": true, "version": "3.x"},
+    "numpy": {"available": true, "version": "2.2.6"},
+    "scipy": {"available": true, "version": "1.17.1"},
+    "matplotlib": {"available": true, "version": "3.10.8"},
+    "seaborn": {"available": true, "version": "0.13.2"},
+    "torch": {"available": true, "version": "2.10.0"},
+    "torch_geometric": {"available": true, "version": "2.7.0"},
+    "biopython": {"available": true, "version": "1.87"},
+    "rdkit": {"available": true, "version": "2025.9.6"},
+    "pandas": {"available": true, "version": "2.3.3"}
+  },
+  "named_method_fidelity": {
+    "SE3_diffusion": {
+      "status": "implemented",
+      "notes": "Forward and reverse diffusion on 3D coordinates with linear noise schedule"
+    },
+    "transformer_attention": {
+      "status": "implemented",
+      "notes": "Multi-head self-attention with layer norm and feed-forward, as in Vaswani et al. 2017"
+    },
+    "IPA_module": {
+      "status": "implemented",
+      "notes": "Invariant Point Attention module adapted from AlphaFold2 structure module"
+    },
+    "full_training": {
+      "status": "not_trained",
+      "notes": "Network architecture defined but not trained due to single-sample dataset and computational constraints"
+    }
+  },
+  "fallbacks": {
+    "reverse_diffusion": "Simulated reverse process using oracle guidance instead of trained denoiser",
+    "complex_assembly": "Visualized as separated entities since experimental complex coordinates not provided in the data",
+    "nucleic_acid_demo": "Architecture supports NA input but no NA-specific data provided"
+  }
+}

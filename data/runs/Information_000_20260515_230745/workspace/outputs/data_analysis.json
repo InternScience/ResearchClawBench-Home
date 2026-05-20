@@ -1,0 +1,197 @@
+{
+  "equation": {
+    "properties": {
+      "path": "data/equation.png",
+      "size": [
+        1050,
+        344
+      ],
+      "mode": "RGB",
+      "mean_rgb": [
+        244.91316722037652,
+        244.91316722037652,
+        244.91316722037652
+      ],
+      "std_rgb": [
+        47.37836073407692,
+        47.37836073407692,
+        47.37836073407692
+      ],
+      "gray_mean": 244.91316722037652,
+      "gray_std": 47.37836073385156,
+      "entropy_estimate": 1.9259085940349254
+    },
+    "text_density": {
+      "edge_density": 0.08636212624584717,
+      "edge_pixel_count": 31194,
+      "total_pixels": 361200,
+      "h_proj_peaks": 103,
+      "v_proj_peaks": 251
+    },
+    "regions": {
+      "num_regions": 2,
+      "regions": [
+        {
+          "y_range": [
+            0,
+            172
+          ],
+          "mean_rgb": [
+            245.45549280177187,
+            245.45549280177187,
+            245.45549280177187
+          ],
+          "contrast": 46.18276755575943
+        },
+        {
+          "y_range": [
+            172,
+            344
+          ],
+          "mean_rgb": [
+            244.37084163898118,
+            244.37084163898118,
+            244.37084163898118
+          ],
+          "contrast": 48.538457726550746
+        }
+      ]
+    }
+  },
+  "doge": {
+    "properties": {
+      "path": "data/doge.png",
+      "size": [
+        1200,
+        799
+      ],
+      "mode": "RGB",
+      "mean_rgb": [
+        240.9539090529829,
+        237.80270129328326,
+        231.24575615352524
+      ],
+      "std_rgb": [
+        41.6558628610283,
+        47.054203148720376,
+        59.24366493370453
+      ],
+      "gray_mean": 237.99742066750102,
+      "gray_std": 46.45584866368978,
+      "entropy_estimate": 13.937570659016389
+    },
+    "text_density": {
+      "edge_density": 0.09995828118481435,
+      "edge_pixel_count": 95840,
+      "total_pixels": 958800,
+      "h_proj_peaks": 317,
+      "v_proj_peaks": 361
+    },
+    "regions": {
+      "num_regions": 4,
+      "regions": [
+        {
+          "y_range": [
+            0,
+            199
+          ],
+          "mean_rgb": [
+            246.12582914572863,
+            246.12582914572863,
+            246.12582914572863
+          ],
+          "contrast": 43.604350141708245
+        },
+        {
+          "y_range": [
+            199,
+            398
+          ],
+          "mean_rgb": [
+            235.24261306532662,
+            232.36213567839195,
+            226.4347487437186
+          ],
+          "contrast": 57.81944011559811
+        },
+        {
+          "y_range": [
+            398,
+            597
+          ],
+          "mean_rgb": [
+            228.7734798994975,
+            219.4674078726968,
+            200.21269262981573
+          ],
+          "contrast": 50.750199350022505
+        },
+        {
+          "y_range": [
+            597,
+            799
+          ],
+          "mean_rgb": [
+            253.48480610561057,
+            253.02593646864688,
+            251.89840759075906
+          ],
+          "contrast": 13.96205524712268
+        }
+      ]
+    }
+  },
+  "token_efficiency": [
+    {
+      "strategy": "Single VQGAN (Chameleon)",
+      "img_size": 256,
+      "tokens": 256,
+      "token_dim": 8,
+      "total_dim": 2048
+    },
+    {
+      "strategy": "Single VQGAN (Chameleon)",
+      "img_size": 384,
+      "tokens": 576,
+      "token_dim": 8,
+      "total_dim": 4608
+    },
+    {
+      "strategy": "Single VQGAN (Chameleon)",
+      "img_size": 512,
+      "tokens": 1024,
+      "token_dim": 8,
+      "total_dim": 8192
+    },
+    {
+      "strategy": "DVE (Ours)",
+      "img_size": 256,
+      "understand_tokens": 256,
+      "understand_dim": 4096,
+      "generate_tokens": 256,
+      "generate_dim": 8,
+      "total_understand_dim": 1048576,
+      "total_generate_dim": 2048
+    },
+    {
+      "strategy": "DVE (Ours)",
+      "img_size": 384,
+      "understand_tokens": 576,
+      "understand_dim": 4096,
+      "generate_tokens": 576,
+      "generate_dim": 8,
+      "total_understand_dim": 2359296,
+      "total_generate_dim": 4608
+    },
+    {
+      "strategy": "DVE (Ours)",
+      "img_size": 512,
+      "understand_tokens": 1024,
+      "understand_dim": 4096,
+      "generate_tokens": 1024,
+      "generate_dim": 8,
+      "total_understand_dim": 4194304,
+      "total_generate_dim": 8192
+    }
+  ]
+}

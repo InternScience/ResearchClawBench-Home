@@ -1,0 +1,29 @@
+{
+  "primary_artifacts": [
+    {"name": "Global overview map (Figure 1)", "type": "figure", "status": "satisfied", "path": "report/images/figure1_global_overview.png"},
+    {"name": "Risk decomposition (Figure 2)", "type": "figure", "status": "satisfied", "path": "report/images/figure2_risk_decomposition.png"},
+    {"name": "Regional focus maps (Figure 3)", "type": "figure", "status": "satisfied", "path": "report/images/figure3_regional_maps.png"},
+    {"name": "Country risk profiles (Figure 4)", "type": "figure", "status": "satisfied", "path": "report/images/figure4_country_risk.png"},
+    {"name": "Risk synthesis & policy (Figure 5)", "type": "figure", "status": "satisfied", "path": "report/images/figure5_synthesis.png"},
+    {"name": "Validation & scenario comparison (Figure 6)", "type": "figure", "status": "satisfied", "path": "report/images/figure6_validation.png"},
+    {"name": "Interpretability analysis (Figure 7)", "type": "figure", "status": "satisfied", "path": "report/images/figure7_interpretability.png"},
+    {"name": "Subgroup analysis (Figure 8)", "type": "figure", "status": "satisfied", "path": "report/images/figure8_subgroups.png"}
+  ],
+  "data_artifacts": [
+    {"name": "Mangrove risk data (GPKG)", "status": "satisfied", "path": "outputs/mangrove_risk_data.gpkg"},
+    {"name": "Mangrove risk data (Parquet)", "status": "satisfied", "path": "outputs/mangrove_risk_data.parquet"},
+    {"name": "Final risk data", "status": "satisfied", "path": "outputs/mangrove_risk_final.parquet"},
+    {"name": "Risk summary CSV", "status": "satisfied", "path": "outputs/mangrove_risk_summary.csv"},
+    {"name": "Country risk SSP2-4.5", "status": "satisfied", "path": "outputs/country_risk_SSP2_4_5.csv"},
+    {"name": "Country risk SSP3-7.0", "status": "satisfied", "path": "outputs/country_risk_SSP3_7_0.csv"},
+    {"name": "Country risk SSP5-8.5", "status": "satisfied", "path": "outputs/country_risk_SSP5_8_5.csv"},
+    {"name": "Data summary", "status": "satisfied", "path": "outputs/data_summary.csv"},
+    {"name": "Method contract", "status": "satisfied", "path": "outputs/method_contract.json"}
+  ],
+  "code_artifacts": [
+    {"name": "Data extraction", "status": "satisfied", "path": "code/01_extract_data.py"},
+    {"name": "Risk computation", "status": "satisfied", "path": "code/02_compute_risk.py"},
+    {"name": "Figure generation", "status": "satisfied", "path": "code/03_generate_figures.py"},
+    {"name": "Interpretability", "status": "satisfied", "path": "code/04_interpretability.py"}
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "property_prediction": {
+    "models": {
+      "Linear Regression": {
+        "RMSE": 1.1003892703389784,
+        "MAE": 0.9173857595537649,
+        "R2": 0.9697536599395493
+      },
+      "Ridge Regression": {
+        "RMSE": 1.100239355910224,
+        "MAE": 0.9169968991875795,
+        "R2": 0.969761900757665
+      },
+      "Random Forest": {
+        "RMSE": 1.5758296149957052,
+        "MAE": 1.1825952127018597,
+        "R2": 0.9379704468417919
+      },
+      "Gradient Boosting": {
+        "RMSE": 1.131207219281385,
+        "MAE": 0.8793280860854128,
+        "R2": 0.9680357533819742
+      },
+      "Neural Network": {
+        "RMSE": 0.7141726103658614,
+        "MAE": 0.5785916964711361,
+        "R2": 0.9872594986797548
+      }
+    },
+    "best_model": "Neural Network"
+  },
+  "structure_generation": {
+    "lattice_stats": {
+      "a_mean": 5.955392639086036,
+      "b_mean": 5.9311845492532775,
+      "c_mean": 6.01035642716498,
+      "volume_mean": 212.97288387872464,
+      "volume_std": 75.13940123868954
+    },
+    "cluster_distribution": {
+      "0": 135,
+      "1": 117,
+      "2": 133,
+      "3": 115
+    }
+  },
+  "optimization": {
+    "optimal_conditions": {
+      "temperature": 497.97955892892395,
+      "pressure": 28.177308126380073,
+      "time": 278.4681751250786,
+      "concentration": 9.112429753986822,
+      "pH": 0.8061559966762972,
+      "rate": 3.350126161661454
+    },
+    "success_rate": 0.525,
+    "model_accuracy": 0.8,
+    "feature_importance": {
+      "Temperature": 0.3242429048449954,
+      "Pressure": 0.11364675319839755,
+      "Time": 0.08129606651222973,
+      "Concentration": 0.298344101319636,
+      "pH": 0.12619722520614954,
+      "Rate": 0.05627294891859182
+    }
+  }
+}

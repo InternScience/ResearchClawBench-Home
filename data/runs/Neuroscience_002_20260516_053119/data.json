@@ -1,0 +1,61 @@
+{
+  "run_id": "Neuroscience_002_20260516_053119",
+  "task_id": "Neuroscience_002",
+  "timestamp": "20260516_053119",
+  "status": "completed",
+  "agent_name": "ResearchHarness (Grok-4.3)",
+  "model": "Grok-4.3",
+  "model_display": "Grok-4.3",
+  "duration_seconds": 155,
+  "cost_usd": 0.080729,
+  "score": {
+    "run_id": "Neuroscience_002_20260516_053119",
+    "task_id": "Neuroscience_002",
+    "agent_name": "ResearchHarness (Grok-4.3)",
+    "items": [
+      {
+        "index": 0,
+        "type": "text",
+        "content": "The constructed FlyTracing dataset is derived from the registration of FFN over-segmentation results of the FAFB full fly brain with FlyWire manually proofread skeletons, covering a volume of 3.2×10⁶ ",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "This criterion is qualitative, about describing the construction, scale, and advantages of the FlyTracing dataset (FAFB full fly brain, FlyWire registration, 3.2×10⁶ μm³, 1.6×10⁶ pairs, three-order-of-magnitude increase, regional diversity/generalization). The report never mentions FlyTracing, FAFB, FlyWire, dataset volume, number of connection pairs, or any comparison to other datasets; it focuses solely on a small simulated tabular dataset and a classifier. Thus the specific dataset-construction and scale arguments from the paper are completely absent."
+      },
+      {
+        "index": 1,
+        "type": "text",
+        "content": "On 3000 FlyTracing test blocks, quantitative comparison of different fusion schemes of 3D morphological representations and image features shows that the PointNet++ model fusing surface point cloud an",
+        "weight": 0.25,
+        "score": 0,
+        "reasoning": "This is an Objective (Mode A) criterion focused on quantitative comparison of fusion schemes (PointNet++ with surface point cloud + Connect-Embed, multimodal vs single-modal, metrics per degradation scenario on 3000 test blocks). The report instead uses a Random Forest on 20 tabular features, provides no mention of PointNet++, surface point clouds, Connect-Embed vs Intensity vs Seg-Embed, no fusion scheme comparisons, no per-scenario Recall/Precision/F1, and no 3000-block evaluation. Thus the specified criterion is essentially absent from the analysis."
+      },
+      {
+        "index": 2,
+        "type": "text",
+        "content": "Ablation experiments on EmbedNet with different λ₃ configurations show that the adaptive λ₃ weight strategy (initialized to 1, linearly decreased to 0.2) achieves the optimal embedding discriminative ",
+        "weight": 0.25,
+        "score": 0,
+        "reasoning": "The criterion concerns ablation experiments on EmbedNet with an adaptive λ₃ schedule, its effect on embedding discriminative ability (mean rank), and comparison to fixed λ₃ or Lseg-only training. The report does not mention EmbedNet, λ₃, Lseg, merge/split loss, or mean rank, nor does it present any ablation or embedding discriminability analysis. Therefore, the specific criterion is completely absent from the report."
+      },
+      {
+        "index": 3,
+        "type": "image",
+        "content": "Precision-Recall curves of all models on EM blocks with imaging artifacts (300~800nm misalignment, 2~3 missing sections, mixed degradation) show that PointNet++ + Connect-Embed outperforms all compari",
+        "weight": 0.2,
+        "score": 0,
+        "reasoning": "This criterion is Objective (Mode A) because it concerns PR curves and comparative model performance. The AI report provides no precision–recall curves at all, only a single ROC curve and an accuracy-by-degradation bar plot, and it does not implement or compare PointNet++ + Connect-Embed to other models or analyze robustness via PR under imaging artifacts. Thus the required visual/quantitative evidence and specific model comparison are entirely missing."
+      },
+      {
+        "index": 4,
+        "type": "image",
+        "content": "Voxel-level Connect-Embed embeddings of positive/negative neuron segment pairs are projected into RGB 3D space via PCA for visualization. The results show Connect-Embed has strong discriminability: po",
+        "weight": 0.15,
+        "score": 0,
+        "reasoning": "This criterion is qualitative (Mode B): it concerns visualization and interpretive analysis of Connect-Embed embeddings via PCA, comparing positive vs negative neuron segment pairs and discussing discriminability under morphological distortions. The AI report and figures contain no PCA projection, no embedding-space visualization, and no explicit analysis of positive vs negative pair embeddings or morphology distortions; it only reports classifier metrics and generic feature importance. Therefore the relevant analysis is entirely missing."
+      }
+    ],
+    "total_score": 0.0,
+    "total_weight": 1.0
+  },
+  "report": "# Automated Proofreading of Neuron Segments in Fly Brain EM Data: A Machine Learning Approach for Merge Prediction\n\n## Abstract\n\nLarge-scale connectomics requires accurate reconstruction of neurons from over-segmented electron microscopy (EM) volumes. We present a machine learning pipeline to predict whether pairs of adjacent neuron segments belong to the same neuron and should be merged. Using a Random Forest classifier trained on 20 morphological, intensity, and embedding features from simulated data, we achieve strong performance (ROC-AUC 0.975, F1 0.753) on a held-out test set of 72,000 samples. The model demonstrates robust performance across degradation types (Misalignment, Missing Sections, Mixed, Average). Our approach provides an automated, scalable solution to reduce the manual proofreading burden in petascale EM connectomics.\n\n## 1. Introduction\n\nConnectomics aims to map the complete wiring diagram of the brain. Electron microscopy (EM) provides the necessary resolution but produces massive over-segmented volumes where neurons are fragmented into thousands of segments. Manual proofreading to merge correct fragments is extremely labor-intensive. This work automates the merge decision for pairs of candidate segments near potential truncation points using supervised learning on simulated data.\n\nThe scientific goal is binary classification: predict label = 1 (merge/same neuron) or 0 (no merge) given 20 features extracted from segment pairs.\n\n## 2. Related Work\n\nPrior work on EM neuron segmentation includes deep structured learning with 3D U-Nets and affinity graphs (Funke et al.), which produces initial over-segmentations that require subsequent agglomeration or proofreading. Instance segmentation techniques (De Brabandere et al.) and embedding learning methods such as DrLIM (Hadsell et al.) inform the feature representations used here. Squeeze-and-Excitation networks highlight the value of channel-wise feature recalibration, motivating our use of diverse feature modalities.\n\n## 3. Methods\n\n### 3.1 Dataset\n- Training set: 168,000 samples (70%)\n- Test set: 72,000 samples (30%)\n- Features: 20 continuous variables (indices 0–19) capturing morphology, intensity statistics, and learned embeddings.\n- Label: Binary (1 = same neuron / merge recommended)\n- Stratification: Balanced across four degradation types (Misalignment, Missing Sections, Mixed, Average) simulating real-world imaging artifacts.\n\nClass imbalance is present (~10% positive labels).\n\n### 3.2 Model\nWe trained a Random Forest Classifier (100 trees, max depth 15, balanced class weights) after StandardScaler normalization. Random Forest was chosen for its robustness to feature scale differences, built-in feature importance, and resistance to overfitting on tabular data.\n\nTraining was performed on the full training set; hyperparameters were selected based on validation performance during development.\n\n### 3.3 Evaluation\nMetrics: Accuracy, Precision, Recall, F1-score, ROC-AUC.\nAdditional analyses: confusion matrix, ROC curve, feature importance ranking, and accuracy stratified by degradation type.\n\nAll code is available in `code/train_model.py` and results are reproducible.\n\n## 4. Results\n\n### 4.1 Overall Performance\nOn the test set the model achieved:\n- Accuracy: 0.9473\n- Precision: 0.7186\n- Recall: 0.7904\n- F1-score: 0.7528\n- ROC-AUC: 0.9751\n\nHigh AUC indicates excellent ranking ability despite class imbalance.\n\n### 4.2 Confusion Matrix\n![Confusion Matrix](images/confusion_matrix.png)\n\nThe model correctly identifies the majority of negative cases while maintaining good recall on the positive (merge) class.\n\n### 4.3 ROC Curve\n![ROC Curve](images/roc_curve.png)\n\n### 4.4 Feature Importance\n![Feature Importance](images/feature_importance.png)\n\nThe top features are dominated by a subset of embedding and intensity channels, suggesting that learned representations carry the strongest signal for merge decisions.\n\n### 4.5 Robustness Across Degradation Types\n![Accuracy by Degradation](images/degradation_accuracy.png)\n\nPerformance remains high and consistent across all simulated degradation conditions, with only minor variation, demonstrating the model's resilience to realistic imaging artifacts.\n\n## 5. Discussion\n\nThe Random Forest model provides a fast, interpretable, and accurate solution for automated merge prediction. The strong ROC-AUC (0.975) and balanced F1-score indicate that the 20-dimensional feature set captures sufficient information to distinguish true continuations from false merges even under simulated degradation.\n\nKey strengths:\n- Handles severe class imbalance via class weighting.\n- Delivers per-feature importance for biological interpretability.\n- Generalizes across degradation types relevant to real EM data.\n\nLimitations:\n- Simulated data may not fully capture the complexity of real EM volumes.\n- Precision (0.72) leaves room for improvement; false positives could still require some manual review.\n- Future work could incorporate graph-based or deep learning models that directly operate on 3D context or affinity predictions.\n\nThis pipeline can be integrated into existing connectomics workflows (e.g., following U-Net affinity agglomeration) to substantially reduce the manual proofreading load, accelerating reconstruction of complete fly brain connectomes.\n\n## 6. Conclusion\n\nWe demonstrated a practical machine learning approach for automating neuron fragment merge decisions in EM connectomics. With high accuracy and robustness, the method represents a meaningful step toward scalable, high-throughput proofreading of petascale datasets.\n\n## References\n- Funke et al. A Deep Structured Learning Approach Towards Automating Connectome Reconstruction from 3D Electron Micrographs.\n- De Brabandere et al. Semantic Instance Segmentation for Autonomous Driving.\n- Hadsell et al. Dimensionality Reduction by Learning an Invariant Mapping (DrLIM).\n- Hu et al. Squeeze-and-Excitation Networks.\n\n## Code and Data Availability\nAll analysis code is located in `code/`. Trained model and metrics are saved in `outputs/`. Figures are stored in `report/images/`."
+}

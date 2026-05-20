@@ -1,0 +1,34 @@
+{
+  "task_description": "Analysis of SXS BBH simulation accuracy using synthetic waveform difference data",
+  "datasets": {
+    "fig6_data.csv": "Resolution error: 1500 simulations, log-normal distribution ~4e-4 median",
+    "fig7_data.csv": "Modal errors: 1500 simulations \u00d7 7 \u2113 modes (\u2113=2 to \u2113=8)",
+    "fig8_data.csv": "Extrapolation comparisons: 1200 simulations, N2vsN3 and N2vsN4"
+  },
+  "methods": {
+    "statistical_analysis": [
+      "Descriptive statistics (mean, median, std, percentiles)",
+      "Log-normal distribution fitting",
+      "Cumulative distribution analysis",
+      "Spearman rank correlation",
+      "Pearson correlation matrix"
+    ],
+    "visualizations": [
+      "Histograms with log-scale axes",
+      "Cumulative distribution functions (CDF)",
+      "Violin plots for multi-group comparisons",
+      "Box plots",
+      "Scatter plots with density contours",
+      "Bar charts for median comparisons",
+      "Correlation matrices",
+      "Q-Q plots for distribution validation"
+    ]
+  },
+  "scientific_goals": [
+    "Characterize overall numerical resolution uncertainty in the SXS waveform catalog",
+    "Quantify how waveform accuracy varies with spherical harmonic mode \u2113",
+    "Evaluate convergence of the waveform extrapolation procedure",
+    "Cross-compare different error sources",
+    "Establish accuracy thresholds for gravitational-wave data analysis"
+  ]
+}

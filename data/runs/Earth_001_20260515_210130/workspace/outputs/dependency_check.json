@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "python3": {
+      "available": true,
+      "version": "available"
+    },
+    "numpy": {
+      "available": true,
+      "note": "Used for array operations and polynomial fitting"
+    },
+    "matplotlib": {
+      "available": true,
+      "note": "Used for all figure generation"
+    },
+    "seaborn": {
+      "available": true,
+      "note": "Used for heatmap in figure 5"
+    },
+    "csv": {
+      "available": true,
+      "note": "Standard library"
+    },
+    "json": {
+      "available": true,
+      "note": "Standard library"
+    },
+    "collections": {
+      "available": true,
+      "note": "Standard library"
+    }
+  },
+  "blockers": [],
+  "fallbacks_applied": []
+}

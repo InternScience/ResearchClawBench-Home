@@ -1,0 +1,182 @@
+{
+  "demo1.png": [
+    {
+      "resolution": "CLIP-ViT-B/32",
+      "size": [
+        224,
+        224
+      ],
+      "variance": 4354.88,
+      "edge_density": 20.41,
+      "downsample_ratio": 15.67,
+      "pixel_ratio": 6.38
+    },
+    {
+      "resolution": "CLIP-ViT-B/16",
+      "size": [
+        224,
+        224
+      ],
+      "variance": 4354.88,
+      "edge_density": 20.41,
+      "downsample_ratio": 15.67,
+      "pixel_ratio": 6.38
+    },
+    {
+      "resolution": "CLIP-ViT-L/14",
+      "size": [
+        336,
+        336
+      ],
+      "variance": 4399.77,
+      "edge_density": 16.87,
+      "downsample_ratio": 6.97,
+      "pixel_ratio": 14.36
+    },
+    {
+      "resolution": "CLIP-ViT-L/14@336px",
+      "size": [
+        336,
+        336
+      ],
+      "variance": 4399.77,
+      "edge_density": 16.87,
+      "downsample_ratio": 6.97,
+      "pixel_ratio": 14.36
+    },
+    {
+      "resolution": "Single Patch (448\u00d7448)",
+      "size": [
+        448,
+        448
+      ],
+      "variance": 4418.15,
+      "edge_density": 14.42,
+      "downsample_ratio": 3.92,
+      "pixel_ratio": 25.52
+    },
+    {
+      "resolution": "4 Patches (896\u00d7896)",
+      "size": [
+        896,
+        896
+      ],
+      "variance": 4432.22,
+      "edge_density": 8.7,
+      "downsample_ratio": 0.98,
+      "pixel_ratio": 102.08
+    },
+    {
+      "resolution": "6 Patches (1344\u00d7896)",
+      "size": [
+        1344,
+        896
+      ],
+      "variance": 4432.42,
+      "edge_density": 7.24,
+      "downsample_ratio": 0.65,
+      "pixel_ratio": 153.12
+    },
+    {
+      "resolution": "9 Patches (1344\u00d71344)",
+      "size": [
+        1344,
+        1344
+      ],
+      "variance": 4432.41,
+      "edge_density": 5.97,
+      "downsample_ratio": 0.44,
+      "pixel_ratio": 229.69
+    }
+  ],
+  "demo2.png": [
+    {
+      "resolution": "CLIP-ViT-B/32",
+      "size": [
+        224,
+        224
+      ],
+      "variance": 5062.64,
+      "edge_density": 41.39,
+      "downsample_ratio": 67.26,
+      "pixel_ratio": 1.49
+    },
+    {
+      "resolution": "CLIP-ViT-B/16",
+      "size": [
+        224,
+        224
+      ],
+      "variance": 5062.64,
+      "edge_density": 41.39,
+      "downsample_ratio": 67.26,
+      "pixel_ratio": 1.49
+    },
+    {
+      "resolution": "CLIP-ViT-L/14",
+      "size": [
+        336,
+        336
+      ],
+      "variance": 5279.15,
+      "edge_density": 37.7,
+      "downsample_ratio": 29.89,
+      "pixel_ratio": 3.35
+    },
+    {
+      "resolution": "CLIP-ViT-L/14@336px",
+      "size": [
+        336,
+        336
+      ],
+      "variance": 5279.15,
+      "edge_density": 37.7,
+      "downsample_ratio": 29.89,
+      "pixel_ratio": 3.35
+    },
+    {
+      "resolution": "Single Patch (448\u00d7448)",
+      "size": [
+        448,
+        448
+      ],
+      "variance": 5417.65,
+      "edge_density": 35.24,
+      "downsample_ratio": 16.82,
+      "pixel_ratio": 5.95
+    },
+    {
+      "resolution": "4 Patches (896\u00d7896)",
+      "size": [
+        896,
+        896
+      ],
+      "variance": 5719.18,
+      "edge_density": 31.05,
+      "downsample_ratio": 4.2,
+      "pixel_ratio": 23.79
+    },
+    {
+      "resolution": "6 Patches (1344\u00d7896)",
+      "size": [
+        1344,
+        896
+      ],
+      "variance": 5814.83,
+      "edge_density": 30.33,
+      "downsample_ratio": 2.8,
+      "pixel_ratio": 35.68
+    },
+    {
+      "resolution": "9 Patches (1344\u00d71344)",
+      "size": [
+        1344,
+        1344
+      ],
+      "variance": 5877.82,
+      "edge_density": 29.03,
+      "downsample_ratio": 1.87,
+      "pixel_ratio": 53.52
+    }
+  ]
+}

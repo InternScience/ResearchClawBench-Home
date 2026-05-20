@@ -1,0 +1,3918 @@
+[
+  {
+    "name": "translated_imo_2000_p1",
+    "premises": [
+      {
+        "predicate": "segment",
+        "args": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "g1",
+          "a",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "g2",
+          "b",
+          "b",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "m",
+          "g1",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "m",
+          "g2",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "n",
+          "g1",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "n",
+          "g2",
+          "b"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "c",
+          "m",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "c",
+          "g1",
+          "a"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "d",
+          "m",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "d",
+          "g2",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "e",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "e",
+          "b",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "a",
+          "n"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "b",
+          "n"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "c",
+          "d"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "e",
+        "p",
+        "e",
+        "q"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "g1",
+      "g2",
+      "m",
+      "n",
+      "p",
+      "q"
+    ]
+  },
+  {
+    "name": "translated_imo_2000_p6",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "orthocenter",
+        "args": [
+          "h",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "incenter",
+        "args": [
+          "2",
+          "t1",
+          "t2",
+          "t3",
+          "i",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "h1",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "h2",
+          "b",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "h3",
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "x1",
+          "h1",
+          "t1",
+          "t2"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "x2",
+          "h2",
+          "t1",
+          "t2"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "y2",
+          "h2",
+          "t2",
+          "t3"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "y3",
+          "h3",
+          "t2",
+          "t3"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "z",
+          "x1",
+          "x2"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "z",
+          "y2",
+          "y3"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "i",
+        "z",
+        "i",
+        "t1"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "h",
+      "h1",
+      "h2",
+      "h3",
+      "i",
+      "t1",
+      "t2",
+      "t3",
+      "x1",
+      "x2",
+      "y2",
+      "y3",
+      "z"
+    ]
+  },
+  {
+    "name": "translated_imo_2002_p2a",
+    "premises": [
+      {
+        "predicate": "segment",
+        "args": [
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "o",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "d",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "d",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "e",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "e",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "f",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "f",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "j",
+          "o",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "j",
+          "a",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "e",
+        "c",
+        "e",
+        "j",
+        "e",
+        "j",
+        "e",
+        "f"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "j",
+      "o"
+    ]
+  },
+  {
+    "name": "translated_imo_2002_p2b",
+    "premises": [
+      {
+        "predicate": "segment",
+        "args": [
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "o",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "d",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "d",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "e",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "e",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "f",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "f",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "j",
+          "o",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "j",
+          "a",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqangle",
+      "args": [
+        "c",
+        "e",
+        "c",
+        "j",
+        "c",
+        "j",
+        "c",
+        "f"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "j",
+      "o"
+    ]
+  },
+  {
+    "name": "translated_imo_2003_p4",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "b1",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "b1",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "d1",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "d1",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "b",
+          "b1"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "d",
+          "d1",
+          "x"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "d",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "p",
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "q",
+          "d",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "r",
+          "d",
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "p",
+        "q",
+        "q",
+        "r"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "b1",
+      "c",
+      "d",
+      "d1",
+      "o",
+      "p",
+      "q",
+      "r",
+      "x"
+    ]
+  },
+  {
+    "name": "translated_imo_2004_p1",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "o",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "m",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "m",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "n",
+          "o",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "n",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "r",
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "r",
+          "m",
+          "o",
+          "n"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "b",
+          "m",
+          "r"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o2",
+          "c",
+          "n",
+          "r"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "p",
+          "o1",
+          "r"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "p",
+          "o2",
+          "r"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "p",
+        "b",
+        "c"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "m",
+      "n",
+      "o",
+      "o1",
+      "o2",
+      "p",
+      "r"
+    ]
+  },
+  {
+    "name": "translated_imo_2004_p5",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "d",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "p",
+          "b",
+          "c",
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "p",
+          "d",
+          "c",
+          "a",
+          "d",
+          "b"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "a",
+        "p",
+        "c",
+        "p"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "o",
+      "p"
+    ]
+  },
+  {
+    "name": "translated_imo_2005_p5",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "eqdistance",
+        "args": [
+          "d",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "e",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "f",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "eqdistance",
+        "args": [
+          "f",
+          "d",
+          "e",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "b",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "b",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "r",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "r",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "a",
+          "p",
+          "d"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o2",
+          "b",
+          "p",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "m",
+          "o1",
+          "p"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "m",
+          "o2",
+          "p"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cyclic",
+      "args": [
+        "p",
+        "q",
+        "r",
+        "m"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "m",
+      "o1",
+      "o2",
+      "p",
+      "q",
+      "r"
+    ]
+  },
+  {
+    "name": "translated_imo_2007_p4",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "r",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "r",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "l",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "k",
+          "c",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "o",
+          "k"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "c",
+          "r"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "o",
+          "l"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "c",
+          "r"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "l1",
+          "l",
+          "c",
+          "r"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "k1",
+          "k",
+          "c",
+          "r"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "eqratio",
+      "args": [
+        "k",
+        "k1",
+        "l",
+        "l1",
+        "r",
+        "q",
+        "r",
+        "p"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "k",
+      "k1",
+      "l",
+      "l1",
+      "o",
+      "p",
+      "q",
+      "r"
+    ]
+  },
+  {
+    "name": "translated_imo_2008_p1a",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "orthocenter",
+        "args": [
+          "h",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "e",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "f",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a1",
+          "d",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a1",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a2",
+          "d",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a2",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "b1",
+          "e",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b1",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "b2",
+          "e",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b2",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "c1",
+          "f",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c1",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "c2",
+          "f",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c2",
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cyclic",
+      "args": [
+        "c1",
+        "c2",
+        "b1",
+        "b2"
+      ]
+    },
+    "points": [
+      "a",
+      "a1",
+      "a2",
+      "b",
+      "b1",
+      "b2",
+      "c",
+      "c1",
+      "c2",
+      "d",
+      "e",
+      "f",
+      "h"
+    ]
+  },
+  {
+    "name": "translated_imo_2008_p1b",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "orthocenter",
+        "args": [
+          "h",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "e",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "f",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a1",
+          "d",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a1",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a2",
+          "d",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a2",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "b1",
+          "e",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b1",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "b2",
+          "e",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b2",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "c1",
+          "f",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c1",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "c2",
+          "f",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c2",
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cyclic",
+      "args": [
+        "c1",
+        "c2",
+        "b1",
+        "a1"
+      ]
+    },
+    "points": [
+      "a",
+      "a1",
+      "a2",
+      "b",
+      "b1",
+      "b2",
+      "c",
+      "c1",
+      "c2",
+      "d",
+      "e",
+      "f",
+      "h"
+    ]
+  },
+  {
+    "name": "translated_imo_2008_p6",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "w",
+          "o",
+          "x"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "a",
+          "z",
+          "o",
+          "z"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "a",
+          "x",
+          "o",
+          "x"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "b",
+          "z",
+          "o",
+          "z"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "b",
+          "w",
+          "o",
+          "w"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "c",
+          "y",
+          "o",
+          "y"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "c",
+          "w",
+          "o",
+          "w"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "d",
+          "x",
+          "o",
+          "x"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "d",
+          "y",
+          "o",
+          "y"
+        ]
+      },
+      {
+        "predicate": "incenter",
+        "args": [
+          "i1",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "incenter",
+        "args": [
+          "i2",
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "f1",
+          "i1",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "f2",
+          "i2",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "cc_tangent",
+        "args": [
+          "q",
+          "t",
+          "p",
+          "s",
+          "i1",
+          "f1",
+          "i2",
+          "f2"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "q",
+          "t"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "p",
+          "s"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "k",
+        "o",
+        "x"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "f1",
+      "f2",
+      "i1",
+      "i2",
+      "k",
+      "o",
+      "p",
+      "q",
+      "s",
+      "t",
+      "w@6.9090049230038776_-1.3884003936987552",
+      "x@4.96_-0.13",
+      "y@-1.0068968328888160_-1.2534881080682770",
+      "z@-2.8402847238575120_-4.9117762734006830"
+    ]
+  },
+  {
+    "name": "translated_imo_2009_p2",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "m",
+          "l",
+          "k"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "w",
+          "m",
+          "l",
+          "k"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "q",
+          "m",
+          "w",
+          "m"
+        ]
+      },
+      {
+        "predicate": "mirror",
+        "args": [
+          "p",
+          "q",
+          "m"
+        ]
+      },
+      {
+        "predicate": "mirror",
+        "args": [
+          "b",
+          "p",
+          "k"
+        ]
+      },
+      {
+        "predicate": "mirror",
+        "args": [
+          "c",
+          "q",
+          "l"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "b",
+          "q"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "c",
+          "p"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "p",
+        "o",
+        "q"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "k",
+      "l",
+      "m",
+      "o",
+      "p",
+      "q",
+      "w"
+    ]
+  },
+  {
+    "name": "translated_imo_2010_p2",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "incenter",
+        "args": [
+          "i",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "d",
+          "a",
+          "i"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "d",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "f",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "e",
+          "a",
+          "c",
+          "b",
+          "a",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "e",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "g",
+          "i",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "d",
+          "g"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "e",
+          "i"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "a",
+        "o",
+        "k"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "i",
+      "k",
+      "o"
+    ]
+  },
+  {
+    "name": "translated_imo_2010_p4",
+    "premises": [
+      {
+        "predicate": "iso_triangle",
+        "args": [
+          "s",
+          "c",
+          "p"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "o",
+          "c",
+          "s",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a",
+          "o",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "b",
+          "o",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b",
+          "s",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "m",
+          "c",
+          "p"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "m",
+          "o",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "l",
+          "b",
+          "p"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "l",
+          "o",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "a",
+          "p"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "k",
+          "o",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "m",
+        "k",
+        "m",
+        "l"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "k",
+      "l",
+      "m",
+      "o",
+      "p",
+      "s"
+    ]
+  },
+  {
+    "name": "translated_imo_2011_p6",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "p",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "q",
+          "p",
+          "o",
+          "p"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "pa",
+          "p",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "pb",
+          "p",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "pc",
+          "p",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "qa",
+          "q",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "qb",
+          "q",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "reflect",
+        "args": [
+          "qc",
+          "q",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a1",
+          "pb",
+          "qb"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a1",
+          "pc",
+          "qc"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b1",
+          "pa",
+          "qa"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b1",
+          "pc",
+          "qc"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c1",
+          "pa",
+          "qa"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c1",
+          "pb",
+          "qb"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "a1",
+          "b1",
+          "c1"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "x",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "x",
+          "o1",
+          "a1"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "x",
+        "o",
+        "o1"
+      ]
+    },
+    "points": [
+      "a",
+      "a1",
+      "b",
+      "b1",
+      "c",
+      "c1",
+      "o",
+      "o1",
+      "p",
+      "pa",
+      "pb",
+      "pc",
+      "q",
+      "qa",
+      "qb",
+      "qc",
+      "x"
+    ]
+  },
+  {
+    "name": "translated_imo_2012_p1",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "excenter",
+        "args": [
+          "2",
+          "m",
+          "l",
+          "k",
+          "j",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "f",
+          "m",
+          "l"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "f",
+          "b",
+          "j"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "g",
+          "m",
+          "k"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "g",
+          "c",
+          "j"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "s",
+          "f",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "s",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "t",
+          "g",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "t",
+          "c",
+          "b"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "m",
+        "s",
+        "m",
+        "t"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "f",
+      "g",
+      "j",
+      "k",
+      "l",
+      "m",
+      "s",
+      "t"
+    ]
+  },
+  {
+    "name": "translated_imo_2012_p5",
+    "premises": [
+      {
+        "predicate": "r_triangle",
+        "args": [
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "foot",
+        "args": [
+          "d",
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "c",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "a",
+          "x"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "k",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "l",
+          "b",
+          "x"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "l",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "m",
+          "a",
+          "l"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "m",
+          "b",
+          "k"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "m",
+        "k",
+        "m",
+        "l"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "k",
+      "l",
+      "m",
+      "x"
+    ]
+  },
+  {
+    "name": "translated_imo_2013_p4",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "orthocenter",
+        "args": [
+          "h",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "m",
+          "h",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "m",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "n",
+          "h",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "n",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "w",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "b",
+          "n",
+          "w"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o2",
+          "c",
+          "m",
+          "w"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "o1",
+          "w"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "x",
+          "o1",
+          "w"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "y",
+          "o2",
+          "w"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "y",
+          "o2",
+          "w"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "x",
+        "h",
+        "y"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "h",
+      "m",
+      "n",
+      "o1",
+      "o2",
+      "w",
+      "x",
+      "y"
+    ]
+  },
+  {
+    "name": "translated_imo_2014_p4",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "p",
+          "a",
+          "b",
+          "b",
+          "c",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "q",
+          "a",
+          "c",
+          "c",
+          "b",
+          "a"
+        ]
+      },
+      {
+        "predicate": "mirror",
+        "args": [
+          "m",
+          "a",
+          "p"
+        ]
+      },
+      {
+        "predicate": "mirror",
+        "args": [
+          "n",
+          "a",
+          "q"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "b",
+          "m"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "c",
+          "n"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "x",
+        "o",
+        "a"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "x"
+    ]
+  },
+  {
+    "name": "translated_imo_2015_p3",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "orthocenter",
+        "args": [
+          "h",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "f",
+          "h",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "f",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "m",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_dia",
+        "args": [
+          "q",
+          "a",
+          "h"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "q",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_dia",
+        "args": [
+          "k",
+          "h",
+          "q"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "k",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "k",
+          "q",
+          "h"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o2",
+          "f",
+          "k",
+          "m"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "o1",
+        "o2",
+        "k"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "f",
+      "h",
+      "k",
+      "m",
+      "o",
+      "o1",
+      "o2",
+      "q"
+    ]
+  },
+  {
+    "name": "translated_imo_2015_p4",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "e",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "e",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "f",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "f",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "g",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "g",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "f",
+          "b",
+          "d"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o2",
+          "g",
+          "c",
+          "e"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "k",
+          "o1",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "l",
+          "o2",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "l",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "f",
+          "k"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "x",
+          "l",
+          "g"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "x",
+        "o",
+        "a"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "k",
+      "l",
+      "o",
+      "o1",
+      "o2",
+      "x"
+    ]
+  },
+  {
+    "name": "translated_imo_2016_p1",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "z"
+        ]
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "f",
+          "b",
+          "a",
+          "z"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "f",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "c",
+          "b",
+          "f",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c",
+          "a",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "d",
+          "a",
+          "z"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "angle_mirror",
+        "args": [
+          "e",
+          "c",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "e",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "midpoint",
+        "args": [
+          "m",
+          "c",
+          "f"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "llelogram",
+          "e",
+          "a",
+          "m",
+          "x"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "y",
+          "f",
+          "x"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "y",
+          "e",
+          "m"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "y",
+        "b",
+        "d"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "m",
+      "x",
+      "y",
+      "z"
+    ]
+  },
+  {
+    "name": "translated_imo_2017_p4",
+    "premises": [
+      {
+        "predicate": "segment",
+        "args": [
+          "r",
+          "s"
+        ]
+      },
+      {
+        "predicate": "mirror",
+        "args": [
+          "t",
+          "r",
+          "s"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "o",
+          "r",
+          "s"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "j",
+          "o",
+          "s"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "j",
+          "s",
+          "t"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "a",
+          "r",
+          "o",
+          "r"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "a",
+          "o1",
+          "s"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "b",
+          "r",
+          "o",
+          "r"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "b",
+          "o1",
+          "s"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "k",
+          "j",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "k",
+          "o",
+          "s"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "perp",
+      "args": [
+        "k",
+        "t",
+        "o1",
+        "t"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "j",
+      "k",
+      "o",
+      "o1",
+      "r",
+      "s",
+      "t"
+    ]
+  },
+  {
+    "name": "translated_imo_2018_p1",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "d",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "e",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "e",
+          "a",
+          "d"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "f",
+          "b",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "f",
+          "o",
+          "a"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "g",
+          "e",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "g",
+          "o",
+          "a"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "para",
+      "args": [
+        "d",
+        "e",
+        "f",
+        "g"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "o"
+    ]
+  },
+  {
+    "name": "translated_imo_2019_p2",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": []
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "a1"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b",
+          "b1"
+        ]
+      },
+      {
+        "predicate": "para",
+        "args": [
+          "p",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "b1"
+        ]
+      },
+      {
+        "predicate": "eqangle",
+        "args": [
+          "3",
+          "p",
+          "c",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "q",
+          "a1"
+        ]
+      },
+      {
+        "predicate": "eqangle",
+        "args": [
+          "3",
+          "c",
+          "q",
+          "b",
+          "c",
+          "a"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cyclic",
+      "args": [
+        "p",
+        "q",
+        "p1",
+        "q1"
+      ]
+    },
+    "points": [
+      "a",
+      "a1",
+      "b",
+      "b1",
+      "c",
+      "p",
+      "p1",
+      "q",
+      "q1"
+    ]
+  },
+  {
+    "name": "translated_imo_2019_p6",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "incenter",
+        "args": [
+          "2",
+          "d",
+          "e",
+          "f",
+          "i",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "perp",
+        "args": [
+          "r",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "r",
+          "i",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "p",
+          "r",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "p",
+          "i",
+          "d"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o1",
+          "p",
+          "c",
+          "e"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "o2",
+          "p",
+          "b",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "q",
+          "o1",
+          "p"
+        ]
+      },
+      {
+        "predicate": "on_circle",
+        "args": [
+          "q",
+          "o2",
+          "p"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "t",
+          "p",
+          "q"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "t",
+          "i",
+          "d"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "perp",
+      "args": [
+        "a",
+        "t",
+        "a",
+        "i"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "i",
+      "o1",
+      "o2",
+      "p",
+      "q",
+      "r",
+      "t"
+    ]
+  },
+  {
+    "name": "translated_imo_2020_p1",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": [
+          "p",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "p",
+          "b",
+          "a"
+        ]
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "p",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "z",
+          "a",
+          "p",
+          "a",
+          "b",
+          "x"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "t",
+          "p",
+          "a",
+          "p",
+          "a",
+          "z"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "d",
+          "p",
+          "t",
+          "p",
+          "b",
+          "a"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "z"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "u",
+          "b",
+          "p",
+          "b",
+          "a",
+          "y"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "v",
+          "p",
+          "b",
+          "p",
+          "b",
+          "u"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "c",
+          "p",
+          "v",
+          "p",
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b",
+          "u"
+        ]
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "a",
+          "d",
+          "p"
+        ]
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "p",
+          "c",
+          "b"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cong",
+      "args": [
+        "o",
+        "a",
+        "o",
+        "b"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "o",
+      "p",
+      "t",
+      "u",
+      "v",
+      "x",
+      "y",
+      "z"
+    ]
+  },
+  {
+    "name": "translated_imo_2021_p3",
+    "premises": [
+      {
+        "predicate": "triangle",
+        "args": []
+      },
+      {
+        "predicate": "angle_bisector",
+        "args": [
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "d",
+          "a",
+          "d",
+          "c",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_aline",
+        "args": [
+          "d",
+          "a",
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "a",
+          "d",
+          "c"
+        ]
+      },
+      {
+        "predicate": "circle",
+        "args": [
+          "e",
+          "x",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "e",
+          "f"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "coll",
+      "args": [
+        "o1",
+        "o2",
+        "y"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "o1",
+      "o2",
+      "x",
+      "y"
+    ]
+  },
+  {
+    "name": "translated_imo_2022_p4",
+    "premises": [
+      {
+        "predicate": "segment",
+        "args": []
+      },
+      {
+        "predicate": "free",
+        "args": []
+      },
+      {
+        "predicate": "eqdistance",
+        "args": [
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "b",
+          "d"
+        ]
+      },
+      {
+        "predicate": "bline",
+        "args": [
+          "c",
+          "e"
+        ]
+      },
+      {
+        "predicate": "eqangle",
+        "args": [
+          "2",
+          "b",
+          "t",
+          "e"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c",
+          "t"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "e"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "c",
+          "d"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "a",
+          "e"
+        ]
+      },
+      {
+        "predicate": "on_line",
+        "args": [
+          "d",
+          "t"
+        ]
+      }
+    ],
+    "conclusion": {
+      "predicate": "cyclic",
+      "args": [
+        "p",
+        "q",
+        "r",
+        "s"
+      ]
+    },
+    "points": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t"
+    ]
+  }
+]

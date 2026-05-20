@@ -1,0 +1,41 @@
+{
+  "pump_photon_energy_ev": 0.248,
+  "replicas": [
+    {
+      "order": -1,
+      "energy": -0.290713567839196,
+      "kx": -0.046308724832214765,
+      "intensity": 0.49521670717091265,
+      "dE_from_dirac": -0.248,
+      "expected_dE": -0.248,
+      "deviation": 0.0
+    },
+    {
+      "order": -1,
+      "energy": -0.290713567839196,
+      "kx": 0.046308724832214765,
+      "intensity": 0.4951316941393499,
+      "dE_from_dirac": -0.248,
+      "expected_dE": -0.248,
+      "deviation": 0.0
+    },
+    {
+      "order": 1,
+      "energy": 0.205286432160804,
+      "kx": -0.03422818791946308,
+      "intensity": 0.5244272546110498,
+      "dE_from_dirac": 0.248,
+      "expected_dE": 0.248,
+      "deviation": 0.0
+    },
+    {
+      "order": 1,
+      "energy": 0.205286432160804,
+      "kx": 0.03422818791946308,
+      "intensity": 0.5244228565426068,
+      "dE_from_dirac": 0.248,
+      "expected_dE": 0.248,
+      "deviation": 0.0
+    }
+  ]
+}

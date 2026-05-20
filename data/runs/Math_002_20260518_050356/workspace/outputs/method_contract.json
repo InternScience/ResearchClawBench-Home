@@ -1,0 +1,41 @@
+{
+  "task": "Multi-Agent Path Finding (MAPF)",
+  "approach": "Hybrid MARL-LNS (Multi-Agent Reinforcement Learning + Large Neighborhood Search)",
+  "scientific_goal": "Balance solution quality (via MARL collision reduction) and computational efficiency (via Prioritized Planning) to achieve higher success rates in complex environments",
+  "named_methods": {
+    "MARL": "Multi-Agent Reinforcement Learning with shared policy for collision-aware neighborhood selection",
+    "LNS": "Large Neighborhood Search framework for iterative path repair",
+    "PP": "Prioritized Planning as repair subroutine",
+    "EECBS": "Explicit Estimation CBS as optimal baseline",
+    "CBS": "Conflict-Based Search as theoretical reference"
+  },
+  "key_mechanisms": [
+    "MARL-guided neighborhood selection (choosing which agents to replan)",
+    "Early-stage MARL collision reduction (pre-processing before LNS)",
+    "Late-stage Prioritized Planning (efficient local repair)",
+    "Adaptive switching between MARL and PP based on collision count"
+  ],
+  "evaluation_metrics": [
+    "success_rate",
+    "sum_of_costs",
+    "runtime",
+    "collision_count"
+  ],
+  "datasets": {
+    "random_small": "10x10, 17.5% obstacles",
+    "random_medium": "25x25, 17.5% obstacles",
+    "random_large": "50x50, 17.5% obstacles",
+    "empty": "25x25, no obstacles",
+    "maze": "25x25, maze corridors",
+    "room": "25x25, room structure",
+    "warehouse": "25x25, warehouse layout",
+    "maps_60_10_10_0.175": "10x10, ~17.5% obstacles"
+  },
+  "comparison_structure": [
+    "MARL-LNS vs Pure PP (benefit of MARL)",
+    "MARL-LNS vs MAPF-LNS2 (benefit of MARL-guided selection)",
+    "MARL-LNS vs EECBS (scalability comparison)",
+    "Performance across map types (robustness)",
+    "Performance across agent counts (scalability)"
+  ]
+}

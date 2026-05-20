@@ -1,0 +1,40 @@
+{
+  "structure": {
+    "pdb": "1BRS",
+    "chain_A": "Barnase (108 residues)",
+    "chain_D": "Barstar (87 residues)",
+    "interface_residues_A": 22,
+    "interface_residues_D": 19,
+    "total_contacts_5A": 565,
+    "total_contacts_4A": 165,
+    "salt_bridges": 10,
+    "hydrogen_bonds": 12
+  },
+  "skempi": {
+    "total_entries": 94,
+    "single_mutations": 49,
+    "double_mutations": 45,
+    "mean_ddG": 5.061209157971292,
+    "std_ddG": 2.657347157343043,
+    "median_ddG": 5.635495467720052,
+    "n_stabilizing": 1,
+    "n_neutral": 5,
+    "n_destabilizing": 88
+  },
+  "hot_spot_residues": {
+    "barnase": [
+      "HIS102",
+      "ARG59",
+      "TYR103",
+      "ARG83",
+      "GLU60"
+    ],
+    "barstar": [
+      "TYR29",
+      "ASP35",
+      "ASP39",
+      "TRP38",
+      "ASN33"
+    ]
+  }
+}

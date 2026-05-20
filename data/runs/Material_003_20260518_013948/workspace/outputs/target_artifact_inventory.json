@@ -1,0 +1,14 @@
+{
+  "required": [
+    "GP calibration model and predictions",
+    "VAE latent space and generated molecules",
+    "Tg distribution plots",
+    "Calibration parity plot",
+    "Generated vitrimer candidates with predicted Tg"
+  ],
+  "figures": [
+    "report/images/tg_distribution.png",
+    "report/images/calibration_parity.png",
+    "report/images/vae_latent.png"
+  ]
+}

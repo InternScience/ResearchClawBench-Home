@@ -1,0 +1,62 @@
+{
+  "task": "Disentangled Dynamic Intrusion Detection with Multi-scale Feature Learning (DIDS-MFL)",
+  "core_components": {
+    "statistical_disentanglement": {
+      "description": "Disentangle entangled feature distributions via mutual information-based feature differentiation",
+      "method": "Non-parameterized optimization based on mutual information minimization between feature groups",
+      "inputs": "40-dim flow features (msg)",
+      "outputs": "K disentangled feature groups"
+    },
+    "memory_representation": {
+      "description": "Memory model to generate compact representations from disentangled features",
+      "method": "Key-value memory network with attention-based addressing",
+      "inputs": "Disentangled feature groups",
+      "outputs": "Memory-augmented representations"
+    },
+    "representational_disentanglement": {
+      "description": "Further disentangle representations to highlight attack-specific features",
+      "method": "Contrastive learning with infoNCE loss for representation separation",
+      "inputs": "Memory representations",
+      "outputs": "Attack-specific disentangled representations"
+    },
+    "dynamic_graph_diffusion": {
+      "description": "Graph diffusion for spatiotemporal aggregation in evolving data streams",
+      "method": "Dynamic graph construction with diffusion-based message passing",
+      "inputs": "Disentangled representations + graph structure",
+      "outputs": "Spatial-temporally aggregated node representations"
+    },
+    "multi_scale_feature_fusion": {
+      "description": "Fuse features at multiple scales for enhanced few-shot learning",
+      "method": "Concatenation of features from statistical, representational, and graph-diffusion scales",
+      "inputs": "Multi-scale features",
+      "outputs": "Fused representation"
+    },
+    "few_shot_classifier": {
+      "description": "Classification with prototype-based few-shot learning capability",
+      "method": "Prototypical network with cosine similarity matching",
+      "inputs": "Fused representations",
+      "outputs": "Binary/multi-class predictions"
+    }
+  },
+  "data": {
+    "name": "NF-UNSW-NB15-v2",
+    "format": "PyG TemporalData",
+    "num_flows": 148774,
+    "num_nodes": 1090431,
+    "feature_dim": 40,
+    "num_attack_types": 10,
+    "binary_ratio": "77.1% benign, 22.9% attack"
+  },
+  "evaluation_tasks": {
+    "binary_classification": "Benign vs Attack",
+    "multi_class_classification": "10-class attack type classification",
+    "few_shot_detection": "Detect rare attacks (classes with <500 samples)",
+    "unknown_attack_detection": "Leave-one-out class evaluation"
+  },
+  "baselines": [
+    "Random Forest",
+    "GraphSAGE (GNN)",
+    "MLP (feed-forward)",
+    "3D-IDS (simplified)"
+  ]
+}

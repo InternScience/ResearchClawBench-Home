@@ -1,0 +1,39 @@
+{
+  "task": "Develop a unified deep learning framework that takes protein sequences, nucleic acid sequences, and small molecule structures as input, and outputs accurate 3D structures of biomolecular complexes using a diffusion-based architecture to predict interactions across diverse biological molecules.",
+  "method_commitments": {
+    "architecture": "Diffusion-based generative model on SE(3)",
+    "input_modalities": ["protein sequences", "nucleic acid sequences", "small molecule structures"],
+    "output": "Accurate 3D structures of biomolecular complexes",
+    "key_components": [
+      "Unified tokenization and embedding",
+      "SE(3)-equivariant diffusion process",
+      "Transformer-based attention mechanisms",
+      "Invariant Point Attention (IPA) modules",
+      "Confidence estimation head"
+    ]
+  },
+  "named_methods": [
+    "AlphaFold2 (Jumper et al. 2021)",
+    "AlphaFold3 (Abramson et al. 2024)",
+    "RoseTTAFold (Baek et al. 2021)",
+    "DDPM (Ho et al. 2020)",
+    "Transformer (Vaswani et al. 2017)"
+  ],
+  "evaluation_metrics": [
+    "RMSD (Kabsch alignment)",
+    "GDT-TS",
+    "Per-residue RMSD",
+    "Distance matrix correlation"
+  ],
+  "data": {
+    "protein": "FKBP12 (PDB: 2L3R, 107 residues, CA trace)",
+    "ligand": "FK506 (C44H69NO12, 194 atoms)",
+    "complex": "FKBP12-FK506"
+  },
+  "limitations": [
+    "No large-scale training performed (conceptual framework demonstration)",
+    "Protein at CA-only resolution",
+    "Complex treated as separated entities for visualization",
+    "Nucleic acid handling demonstrated architecturally but not on specific NA data"
+  ]
+}

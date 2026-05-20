@@ -1,0 +1,25 @@
+{
+  "task": "Investigate whether an early dark energy (EDE) model can alleviate the acoustic tension between CMB and DESI DR2 BAO measurements.",
+  "primary_quantities": [
+    "Best-fit cosmological parameters (H0, Omega_m, sigma8, ns, omega_b, ln10As, tau) for LCDM, EDE, and w0wa under CMB+DESI",
+    "EDE-specific parameters (f_EDE, log10(a_c))",
+    "Goodness-of-fit differences (Delta chi^2) between models from Table IV",
+    "BAO and SNe distance residuals relative to a fiducial LCDM model"
+  ],
+  "named_methods": [
+    "CAMB for background distance and sound-horizon calculations",
+    "Gaussian approximation for 1D posteriors",
+    "Calibration of EDE sound horizon to match published Figure 6 residuals"
+  ],
+  "target_figures": [
+    "Parameter constraints comparison (Fig. 1)",
+    "EDE posterior distributions (Fig. 2)",
+    "Distance residuals for BAO and SNe (reproduction of Fig. 6)",
+    "Delta chi^2 comparison (Fig. 4)",
+    "H0 tension plot (Fig. 5)"
+  ],
+  "data_sources": [
+    "DESI_EDE_Repro_Data.txt (best-fit parameters and data points)",
+    "Chaussidon et al. (arXiv:2503.24343) extracted via PDF"
+  ]
+}

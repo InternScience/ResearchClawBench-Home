@@ -1,0 +1,19 @@
+{
+  "DC_analysis": {
+    "quadratic_coeff": 0.034241656568402494,
+    "model": "Ds/Ds0 = 1 - a*I^2",
+    "minimum_Ds_percent": 9.88880416,
+    "minimum_current_nA": 68.57333333333334,
+    "interpretation": "Quadratic suppression at low I consistent with GL two-fluid picture"
+  },
+  "microwave_analysis": {
+    "linear_slope_percent_per_nA": -0.6735363143331844,
+    "model": "Ds/Ds0 = Ds0_pct + slope*I_mw",
+    "interpretation": "Much weaker suppression under microwave drive, suggesting non-thermal mechanism"
+  },
+  "model_comparison": {
+    "GL_Ic_nA": 50.0,
+    "linear_Ic_nA": 42.0,
+    "observation": "DC data shows suppression below GL prediction, with re-entrant behavior at high current"
+  }
+}

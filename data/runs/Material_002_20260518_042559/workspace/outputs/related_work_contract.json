@@ -1,0 +1,70 @@
+{
+  "related_work_contract": {
+    "papers_reviewed": [
+      {
+        "id": "paper_000",
+        "title": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields",
+        "authors": ["Batatia", "Kovacs", "Simm", "Ortner", "Csanyi"],
+        "year": 2022,
+        "venue": "NeurIPS",
+        "key_contribution": "Introduction of MACE architecture with higher-order messages",
+        "relevance": "Core architecture for MACE-MP-0 foundation model"
+      },
+      {
+        "id": "paper_001",
+        "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+        "authors": ["Deng", "Zhong", "Jun", "Riebesell", "Han", "Bartel", "Ceder"],
+        "year": 2023,
+        "venue": "Nature Machine Intelligence",
+        "key_contribution": "Charge-informed MLIP using magnetic moments",
+        "relevance": "Alternative foundation model approach for comparison"
+      },
+      {
+        "id": "paper_002",
+        "title": "Unifying O(3) equivariant neural networks design with tensor-network formalism",
+        "authors": ["Li", "Pengmei", "Zheng", "Thiede", "Liu", "Kondor"],
+        "year": 2024,
+        "venue": "Machine Learning: Science and Technology",
+        "key_contribution": "Fusion diagrams for equivariant network design",
+        "relevance": "Theoretical foundation for equivariant architectures"
+      },
+      {
+        "id": "paper_003",
+        "title": "Cross-functional transferability in foundation machine learning interatomic potentials",
+        "authors": ["Huang", "Deng", "Zhong", "Kaplan", "Persson", "Ceder"],
+        "year": 2024,
+        "venue": "arXiv preprint",
+        "key_contribution": "Analysis of transfer learning challenges in FPs",
+        "relevance": "Transfer learning methodology and multi-fidelity training"
+      }
+    ],
+    "key_baselines": [
+      "M3GNet (Universal descriptor-based)",
+      "CHGNet (Charge-informed)",
+      "NequIP (Equivariant features)",
+      "SchNet (Continuous filter)"
+    ],
+    "target_comparison_axes": [
+      "Accuracy (MAE for energies and forces)",
+      "Computational efficiency (scaling with system size)",
+      "Transferability (performance on diverse systems)",
+      "Data efficiency (learning curve steepness)"
+    ],
+    "methodological_commitments_from_related_work": [
+      "Equivariance to rotations, translations, and permutations",
+      "Higher-order messages for improved expressivity",
+      "Pre-training on large datasets for transfer learning",
+      "Validation on diverse benchmark tasks"
+    ]
+  },
+  "contract_updates": {
+    "date": "2026-05-18",
+    "reason": "Initial review of related work papers",
+    "changes": [
+      "Added MACE architecture details from paper_000",
+      "Added CHGNet comparison from paper_001",
+      "Added theoretical foundations from paper_002",
+      "Added transfer learning insights from paper_003"
+    ]
+  }
+}

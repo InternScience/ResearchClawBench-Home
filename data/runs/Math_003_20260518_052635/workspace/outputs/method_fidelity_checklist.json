@@ -1,0 +1,39 @@
+{
+  "method_name": "Forward-Chaining Geometry Theorem Prover",
+  "definition": "A symbolic reasoning system that applies geometric inference rules to derive new facts from given premises using forward chaining.",
+  "assumptions": [
+    "Geometric facts can be represented as predicates with arguments",
+    "Inference rules can be expressed as if-then statements",
+    "Forward chaining can derive all logically necessary conclusions",
+    "The problem format can be parsed into structured representations"
+  ],
+  "invariants": [
+    "Only valid geometric inference rules are applied",
+    "Facts are only added if not already present",
+    "The system terminates after maximum iterations or no new facts"
+  ],
+  "non_negotiable_steps": [
+    "Parse problem into structured format",
+    "Extract geometric facts from premises",
+    "Apply inference rules iteratively",
+    "Check if conclusion is in derived facts"
+  ],
+  "fidelity_check": {
+    "parsed_correctly": true,
+    "facts_extracted": true,
+    "rules_applied": true,
+    "conclusion_checked": true
+  },
+  "deviations": [
+    "Simplified representation compared to full geometric algebra",
+    "Limited set of inference rules (15 vs hundreds in complete systems)",
+    "No auxiliary construction capability",
+    "No neural guidance component"
+  ],
+  "limitations": [
+    "Cannot solve IMO-level problems (0% success rate)",
+    "Missing advanced geometric theorems",
+    "No search guidance or heuristics",
+    "Cannot introduce new geometric objects"
+  ]
+}

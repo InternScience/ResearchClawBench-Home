@@ -1,0 +1,76 @@
+{
+  "target_artifacts": [
+    {
+      "id": "fig1_raw_spectra",
+      "description": "Overview of raw tr-ARPES spectra: pump off + 7 pump-on angles",
+      "path": "report/images/figure1_raw_spectra.png",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig2_difference_spectra",
+      "description": "Difference spectra (pump on - pump off) for all polarization angles",
+      "path": "report/images/figure2_difference_spectra.png",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig3_band_dispersion",
+      "description": "Dirac cone dispersion with Floquet replica bands overlaid",
+      "path": "report/images/figure3_band_dispersion.png",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig4_polarization_dependence",
+      "description": "Polar plot and Cartesian plot of replica band intensity vs polarization angle",
+      "path": "report/images/figure4_polarization_dependence.png",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig5_floquet_ladder",
+      "description": "Floquet ladder diagram: measured replica energies vs theoretical n·ħω",
+      "path": "report/images/figure5_floquet_ladder.png",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig6_edc_mdc",
+      "description": "Energy and momentum distribution curves at the Dirac point",
+      "path": "report/images/figure6_edc_mdc.png",
+      "status": "satisfied"
+    },
+    {
+      "id": "fig7_comprehensive",
+      "description": "Comprehensive 6-panel summary figure",
+      "path": "report/images/figure7_comprehensive.png",
+      "status": "satisfied"
+    },
+    {
+      "id": "table_replica_positions",
+      "description": "Table of replica band positions, intensities, and energy spacings",
+      "path": "outputs/replica_band_analysis.json",
+      "status": "satisfied"
+    },
+    {
+      "id": "table_polarization",
+      "description": "Table of polarization-dependent intensities",
+      "path": "outputs/polarization_analysis.json",
+      "status": "satisfied"
+    },
+    {
+      "id": "key_results",
+      "description": "Key quantitative results: Dirac point, energy spacings, polarization ratio",
+      "path": "outputs/key_results.json",
+      "status": "satisfied"
+    },
+    {
+      "id": "report",
+      "description": "Comprehensive research report with methodology, results, discussion",
+      "path": "report/report.md",
+      "status": "satisfied"
+    },
+    {
+      "id": "code_analysis",
+      "description": "Reproducible analysis code",
+      "path": "code/analyze_floquet_v2.py",
+      "status": "satisfied"
+    }
+  ]
+}

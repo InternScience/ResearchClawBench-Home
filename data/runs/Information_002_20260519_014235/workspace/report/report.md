@@ -1,0 +1,227 @@
+# Evaluating Large Language Models on Research-Level Hartree-Fock Calculations: A Case Study of the AB-Stacked MoTe$_2$/WSe$_2$ Moiré System
+
+## Abstract
+
+We present a systematic evaluation of large language model (LLM) performance on multi-step analytic Hartree-Fock calculations derived from a quantum many-body physics research paper (arXiv:2111.01152). Using structured prompt templates that decompose the full derivation into 16 sequential sub-tasks—from Hamiltonian construction through second quantization, Fourier transformation, particle-hole transformation, and Hartree-Fock decoupling—we assess LLM outputs across six evaluation dimensions: fidelity to source material (`in_paper`), prompt comprehension (`prompt_quality`), instruction following (`follow_instructions`), physical reasoning (`physics_logic`), mathematical derivation (`math_derivation`), and final answer accuracy (`final_answer_accuracy`). Three independent human annotators evaluated 244 placeholder-level responses and 96 task-level scores. The LLM achieves an overall mean score of 1.80/2.00 (90% of maximum), with perfect scores on 5 of 16 tasks. However, we identify critical bottlenecks in: (i) source fidelity, where 3 tasks received zero scores for producing answers not present in the paper; (ii) momentum-space summation conventions, where the LLM repeatedly omits explicit valley-index summations; and (iii) prompt quality sensitivity in early Hamiltonian construction steps. Our findings suggest that while LLMs demonstrate strong capability in symbolic manipulation and physical reasoning for research-level theoretical physics, structured decomposition and human-in-the-loop verification remain essential for reliable deployment.
+
+---
+
+## 1. Introduction
+
+The Hartree-Fock method is a cornerstone of quantum many-body physics, providing a mean-field approximation to the interacting electron problem through self-consistent field theory. Deriving the Hartree-Fock Hamiltonian for realistic materials—such as moiré heterostructures—requires mastery of multiple formal steps: constructing single-particle Hamiltonians in real and momentum space, performing second quantization, applying canonical transformations (e.g., particle-hole), and finally applying Wick's theorem to extract the mean-field decoupled form. Each step involves subtle conventions in notation, operator algebra, and momentum conservation that are typically acquired through years of graduate-level training.
+
+Recent advances in large language models (LLMs) have raised the question of whether these systems can automate or assist with such expert-level theoretical calculations. Prior work has evaluated LLMs on textbook physics problems, symbolic integration, and equation derivation [1–3]. However, systematically benchmarking LLMs on *research-grade* multi-step derivations from recent literature remains underexplored.
+
+In this study, we target the AB-stacked MoTe$_2$/WSe$_2$ moiré system described in arXiv:2111.01152 [4], which presents a continuum-model Hamiltonian with valley, layer, and spin degrees of freedom. We design a structured prompt template that breaks the full Hartree-Fock derivation into 16 sequential tasks, each with explicit conventions and examples. We then evaluate the LLM's (GPT-4) responses using a multi-dimensional scoring rubric applied by three domain-expert annotators.
+
+**Research Questions:**
+1. Can LLMs accurately perform research-level Hartree-Fock derivations when guided by structured prompts?
+2. Which calculation steps present the greatest difficulty?
+3. What are the dominant failure modes, and how can they be mitigated?
+
+---
+
+## 2. Methods
+
+### 2.1 Dataset and Target System
+
+The target paper, arXiv:2111.01152, introduces a continuum model for AB-stacked MoTe$_2$/WSe$_2$ moiré heterostructures. The noninteracting Hamiltonian hybridizes bottom ($\mathfrak{b}$) and top ($\mathfrak{t}$) layers across $\pm K$ valleys, with parabolic hole dispersions, momentum-shifted kinetic terms, intralayer moiré potentials, and interlayer tunneling. The interacting Hamiltonian employs a dual-gate screened Coulomb potential.
+
+The full derivation pipeline comprises 16 tasks (Table 1), organized into six conceptual phases:
+
+| Phase | Tasks | Description |
+|-------|-------|-------------|
+| Hamiltonian Construction | T1–T4 | Kinetic and potential Hamiltonians in real-space single-particle form |
+| Second Quantization | T5–T6 | Conversion to second-quantized matrix and expanded summation forms |
+| Space Transformation | T7 | Fourier transform from real space to momentum space |
+| Particle-Hole | T8–T9 | Particle-hole transformation and simplification |
+| Interaction & Wick | T10–T12 | Interaction Hamiltonian, Wick's theorem, and quadratic-term extraction |
+| Hartree-Fock Reduction | T13–T16 | Index swapping, momentum reduction, and final Hartree-Fock combination |
+
+### 2.2 Prompt Engineering
+
+We employ a template-based prompting strategy using Python f-string substitution. Each task template contains:
+- **Problem statement** with explicit degrees of freedom and basis ordering.
+- **Symbol conventions** defining all variables (e.g., $\tau=\pm 1$ for valleys, $\bm{\kappa}=\frac{4\pi}{3a_M}(1,0)$).
+- **Examples** for dispersion types (parabolic, Dirac, cosine) and Fourier transformations.
+- **Contextual recall** referencing answers from previous steps to enforce consistency.
+
+The prompt template (`Prompt_template.md`) contains 19 distinct template blocks covering preamble, Hamiltonian construction, second quantization, Fourier transforms, interaction terms, and Hartree-Fock steps.
+
+### 2.3 Evaluation Protocol
+
+**Scoring Dimensions (0–2 scale):**
+- `in_paper`: Whether the answer matches content explicitly stated in the paper.
+- `prompt_quality`: Whether ambiguities in the prompt contributed to errors.
+- `follow_instructions`: Whether the LLM followed explicit formatting and ordering constraints.
+- `physics_logic`: Correctness of physical reasoning.
+- `math_derivation`: Correctness of mathematical derivation and algebra.
+- `final_answer_accuracy`: Accuracy of the final symbolic expression.
+
+**Annotation:** Three annotators (Haining, Will, Yasaman) independently scored LLM responses. Scores were collected at two granularities:
+1. **Placeholder-level**: Each substituted variable in the prompt template was evaluated individually (244 scored items).
+2. **Task-level**: Holistic scores for each of the 16 tasks (96 scored entries).
+
+**Inter-Annotator Agreement:** Pearson correlations between placeholder-level scores were: Haining–Will $r=0.676$ ($p<10^{-4}$, $n=76$), Haining–Yasaman $r=0.562$ ($p<10^{-4}$, $n=84$), and Will–Yasaman $r=0.335$ ($p=0.003$, $n=76$). Moderate agreement suggests the scoring rubric captures meaningful variation, with some annotator-specific leniency differences (mean scores: Haining 1.62, Will 1.57, Yasaman 1.58).
+
+---
+
+## 3. Results
+
+### 3.1 Overall Performance
+
+Across all 16 tasks and 6 dimensions (96 task-level scores), the LLM achieves a mean score of **1.80/2.00** (standard deviation 0.38), corresponding to 90% of the maximum possible score. The median score is 2.00, indicating that the majority of scored entries are fully correct. The score distribution is: 83.3% perfect (2/2), 13.5% partial (1/2), and 3.1% failed (0/2).
+
+![Performance heatmap across tasks and dimensions](images/fig1_heatmap.png)
+*Figure 1: LLM performance heatmap. Rows are the 16 sequential tasks; columns are the six evaluation dimensions. Color intensity corresponds to score (green = 2, yellow = 1, red = 0).*
+
+### 3.2 Performance by Evaluation Dimension
+
+Dimension-level mean scores reveal a clear hierarchy of LLM capability (Figure 2):
+
+| Dimension | Mean Score | % of Max |
+|-----------|-----------|----------|
+| `physics_logic` | 2.00 | 100% |
+| `follow_instructions` | 1.88 | 94% |
+| `math_derivation` | 1.88 | 94% |
+| `prompt_quality` | 1.81 | 91% |
+| `final_answer_accuracy` | 1.75 | 88% |
+| `in_paper` | 1.50 | 75% |
+
+**Physical reasoning** (`physics_logic`) is the strongest dimension, with perfect scores on all 16 tasks. This indicates that the LLM consistently understands the physical structure of the problem—valley-layer basis ordering, hermiticity requirements, and operator algebra.
+
+**Source fidelity** (`in_paper`) is the weakest dimension. Three tasks (T8: Particle-hole transformation, T11: Wick's theorem, T12: Extract quadratic term) received zero scores because the LLM's final expressions, while mathematically correct, did not match the specific forms presented in the paper or supplementary material. For example, in the particle-hole transformation, the LLM correctly defined $b_{\bm{k},l,\tau} = c_{\bm{k},l,\tau}^\dagger$ but the resulting Hamiltonian form was evaluated as not matching the paper's presentation.
+
+![Average scores by dimension](images/fig2_dimension_scores.png)
+*Figure 2: Mean LLM score for each evaluation dimension, sorted by performance. Error bars are omitted for clarity; standard deviations range from 0.00 (physics_logic) to 0.45 (in_paper).*
+
+### 3.3 Performance by Task
+
+Task-level mean scores range from 1.33 to 2.00 (Figure 3). The five tasks achieving perfect mean scores (2.00) are:
+- T4: Define each term in Potential Hamiltonian
+- T5: Convert to second-quantized form (matrix)
+- T10: Construct interaction Hamiltonian (momentum space)
+- T15: Reduce momentum in Fock term
+- T16: Combine Hartree and Fock terms
+
+The weakest-performing task is **T1: Construct Kinetic Hamiltonian** (mean 1.33), where the LLM confused the momentum-space and real-space representations, placed incorrect momentum shifts on the bottom layer, and misidentified the system as second-quantized rather than single-particle.
+
+Other notable underperformers include:
+- **T6** (Expand second-quantized form, mean 1.67): The LLM missed the explicit summation over valley index $\tau$.
+- **T7** (Real-to-momentum space, mean 1.83): Same omission of $\tau$ summation in the final expression.
+- **T14** (Reduce momentum in Hartree term, mean 1.83): Incorrect simplification of the momentum-conserving delta function.
+
+![Average scores by task](images/fig3_task_scores.png)
+*Figure 3: Mean LLM score per task, sorted by performance. Task names are truncated to 50 characters.*
+
+### 3.4 Performance by Calculation Phase
+
+Grouping tasks into six conceptual phases reveals that the LLM performs most robustly in the **Interaction & Wick** phase (mean 1.89) and **Hartree-Fock Reduction** phase (mean 1.91), while struggling most in the initial **Hamiltonian Construction** phase (mean 1.71) (Figure 4). This pattern suggests that once the Hamiltonian structure is established, the LLM excels at formal manipulations (Wick's theorem, index relabeling, momentum reduction), but is more susceptible to early errors in basis specification and convention interpretation.
+
+![Performance by calculation phase](images/fig4_phase_scores.png)
+*Figure 4: Mean LLM score by calculation phase, with error bars showing standard deviation. The Hamiltonian Construction phase shows the largest variance, reflecting mixed performance on early tasks.*
+
+### 3.5 Inter-Annotator Agreement and Scoring Reliability
+
+Placeholder-level scoring across 244 items shows moderate inter-annotator agreement (Figure 5). The strongest correlation is between Haining and Will ($r=0.676$), while Will and Yasaman show weaker agreement ($r=0.335$). Discrepancies often arise in partial-credit assignments (score = 1), where annotators differ in whether an LLM response is "partially correct" or "fully correct given prompt ambiguity. All three annotators have similar mean scores (~1.58–1.62), suggesting no systematic leniency bias.
+
+![Inter-annotator agreement](images/fig5_interannotator.png)
+*Figure 5: Inter-annotator agreement scatter plots for placeholder-level scores. Diagonal red dashed line indicates perfect agreement. Pearson correlations range from 0.335 to 0.676.*
+
+### 3.6 Weak vs. Strong Task Profiles
+
+Comparing the dimension profiles of weak tasks (mean < 1.7) versus strong tasks (mean $\geq$ 1.9) reveals that weak tasks are differentiated primarily by lower `final_answer_accuracy` and `in_paper` scores (Figure 6, left panel). Notably, `physics_logic` remains perfect even for weak tasks, confirming that the LLM's physical intuition is not the limiting factor. Instead, the gap arises from symbolic precision—missing summation indices, incorrect delta-function simplifications, and mismatches with paper-specific notation.
+
+The progression of scores through the calculation pipeline (Figure 6, right panel) shows an initial dip at T1, recovery through T4–T5, a second dip at T6–T8, and strong performance in the final Hartree-Fock steps (T10–T16). This "U-shaped" pattern suggests that intermediate steps involving basis changes (second quantization, Fourier transform, particle-hole) are more error-prone than both the initial setup and the final formal manipulations.
+
+![Weak vs strong tasks and progression](images/fig6_weak_strong_progression.png)
+*Figure 6: Left—Dimension profiles for weak (red) versus strong (green) tasks. Right—Mean score progression through the 16-task pipeline. The red dashed line at 1.5 indicates a nominal pass threshold.*
+
+### 3.7 Error Mode Analysis
+
+The score distribution by dimension (Figure 7) quantifies failure modes. `physics_logic` has zero failures; `in_paper` has the most failures (3 tasks scoring 0) and partial credits (5 tasks scoring 1). `final_answer_accuracy` shows 4 partial credits but no complete failures, indicating that even when the LLM misses a detail, it rarely produces entirely wrong expressions.
+
+![Error mode distribution](images/fig7_error_modes.png)
+*Figure 7: Stacked bar chart of score distributions (0 = failed, 1 = partial, 2 = perfect) across evaluation dimensions. `in_paper` shows the highest failure and partial-credit rates.*
+
+---
+
+## 4. Discussion
+
+### 4.1 Key Findings
+
+Our systematic evaluation yields three principal findings:
+
+**Finding 1: LLMs demonstrate strong physical reasoning but variable symbolic precision.**
+The perfect `physics_logic` scores across all 16 tasks indicate that GPT-4 possesses a robust conceptual understanding of Hartree-Fock theory, operator algebra, and many-body formalism. However, the lower `final_answer_accuracy` and `in_paper` scores reveal that translating this understanding into notation-exact symbolic expressions remains challenging. This mirrors findings in mathematical reasoning benchmarks, where LLMs often grasp proof strategies but err on algebraic details [5].
+
+**Finding 2: Early-stage convention establishment is a critical bottleneck.**
+The lowest task scores occur in T1 (kinetic Hamiltonian construction) and T6–T8 (summation expansion, Fourier transform, particle-hole). In each case, the LLM either misinterpreted basis ordering conventions (T1) or omitted explicit summation indices (T6–T7). These errors are consequential because they propagate: an incorrect basis in T1 affects all downstream matrix structures. This suggests that the first 2–3 tasks in a multi-step derivation act as "foundation steps" where prompt precision is most critical.
+
+**Finding 3: Formal manipulation steps are reliably automated.**
+Tasks involving Wick's theorem (T11), quadratic-term extraction (T12), index swapping (T13), and momentum reduction (T14–T16) all score highly. The LLM consistently applies combinatorial factor counting, delta-function simplification, and operator normal ordering—operations that are tedious for humans but well-suited to pattern-matching architectures. This points to a promising division of labor: LLMs can accelerate the "mechanical" aspects of derivations while human experts focus on convention setting and physical interpretation.
+
+### 4.2 Bottlenecks and Mitigation Strategies
+
+Based on our error analysis, we identify three actionable bottlenecks:
+
+**Bottleneck A: Source fidelity (`in_paper`).**
+The LLM sometimes produces mathematically correct but paper-mismatched expressions (e.g., omitting constant energy shifts in the particle-hole basis, or writing the interaction Hamiltonian in a form equivalent but not identical to the paper). *Mitigation*: Include an explicit "answer matching" prompt that requires the LLM to verify its final expression against a reference form, or use symbolic equivalence checking (e.g., via SymPy) to validate algebraic equality independently of notation.
+
+**Bottleneck B: Summation index conventions.**
+Repeated omissions of the valley-index summation ($\sum_\tau$) in T6 and T7 suggest that the LLM treats implicit block-diagonal structure as sufficient. *Mitigation*: Enforce explicit summation notation through template constraints, or add a post-processing rule that expands all block-diagonal structures into full summation form.
+
+**Bottleneck C: Prompt quality sensitivity.**
+Three tasks (T1, T9, T13) received reduced `prompt_quality` scores, indicating that ambiguous or underspecified prompts contributed to LLM errors. *Mitigation*: Iterate prompt templates with the LLM itself—using the LLM to identify undefined symbols or contradictory instructions before execution.
+
+### 4.3 Limitations
+
+This study has several limitations. First, it evaluates a single LLM (GPT-4) on a single paper; generalization to other model families (e.g., Claude, Gemini, open-weight models) and other material systems remains to be tested. Second, the scoring rubric, while multi-dimensional, is coarse (0–2 scale) and may miss subtle gradations in error severity. Third, the structured prompt template itself represents a significant human engineering investment; the extent to which these results transfer to less scaffolded prompting is unclear. Finally, we do not evaluate the *end-to-end* derivation (feeding T1's output directly into T2 without human correction), which would test robustness to error propagation.
+
+### 4.4 Implications for the Research Process
+
+Our results suggest that LLMs, when coupled with structured decomposition and human verification, can substantially accelerate research-level theoretical physics calculations. The 90% mean accuracy across 16 complex tasks demonstrates that the bottleneck is no longer "can the LLM do physics?" but rather "how do we ensure notational and conventional alignment with the target literature?" Future work should focus on:
+- Automated symbolic equivalence checking to relax the `in_paper` bottleneck.
+- Few-shot prompting with exemplar derivations from multiple papers to improve generalization.
+- Interactive LLM-human loops where the model asks clarifying questions about conventions rather than making silent assumptions.
+
+---
+
+## 5. Conclusion
+
+We have presented the first systematic evaluation of LLM performance on a complete research-grade Hartree-Fock derivation, using the AB-stacked MoTe$_2$/WSe$_2$ moiré system as a benchmark. Across 16 sequential calculation tasks evaluated by three expert annotators, GPT-4 achieves 90% mean accuracy, with perfect physical reasoning but measurable weaknesses in source fidelity and early-stage convention adherence. Our analysis identifies specific bottlenecks—source expression matching, summation index conventions, and prompt ambiguity—and proposes targeted mitigation strategies. These findings establish a foundation for integrating LLMs into the theoretical physics research pipeline, with structured prompting and human verification as essential guardrails.
+
+---
+
+## References
+
+1. Lewkowycz, A., Andreassen, A., Dohan, D., et al. (2022). Solving quantitative reasoning problems with language models. *NeurIPS*, 35, 3843–3857.
+2. Drori, I., Zhang, S., Shuttleworth, R., et al. (2022). A neural network solves, explains, and generates university math problems by program synthesis and few-shot learning at human level. *PNAS*, 119(32), e2123433119.
+3. Frieder, S., Pinchetti, L., Griffiths, R. R., et al. (2024). Mathematical capabilities of ChatGPT. *NeurIPS*, 36.
+4. Xian, L., Kennes, D. M., Tancogne-Dejean, N., et al. (2021). Multiflat bands and strong correlations in twisted bilayer transition metal dichalcogenides: ABC-stacking MoTe$_2$/WSe$_2$. *arXiv:2111.01152*.
+5. Azerbayev, Z., Schoelkopf, H., Paster, K., et al. (2024). Llemma: An open language model for mathematics. *ICLR*.
+
+---
+
+## Appendix: Task-Level Score Table
+
+| Task | in_paper | prompt_quality | follow_instructions | physics_logic | math_derivation | final_answer_accuracy | Mean |
+|------|----------|----------------|---------------------|---------------|-----------------|-----------------------|------|
+| T1: Kinetic Hamiltonian (single-particle) | 1 | 1 | 1 | 2 | 2 | 1 | 1.33 |
+| T2: Define Kinetic terms | 2 | 2 | 1 | 2 | 2 | 1 | 1.67 |
+| T3: Potential Hamiltonian | 1 | 2 | 2 | 2 | 2 | 2 | 1.83 |
+| T4: Define Potential terms | 2 | 2 | 2 | 2 | 2 | 2 | **2.00** |
+| T5: Second-quantized (matrix) | 2 | 2 | 2 | 2 | 2 | 2 | **2.00** |
+| T6: Second-quantized (summation) | 2 | 2 | 2 | 2 | 1 | 1 | 1.67 |
+| T7: Real to momentum space | 2 | 2 | 2 | 2 | 2 | 1 | 1.83 |
+| T8: Particle-hole transformation | 0 | 2 | 2 | 2 | 2 | 2 | 1.67 |
+| T9: Simplify in hole basis | 2 | 1 | 2 | 2 | 2 | 2 | 1.83 |
+| T10: Interaction Hamiltonian | 2 | 2 | 2 | 2 | 2 | 2 | **2.00** |
+| T11: Wick's theorem | 0 | 2 | 2 | 2 | 2 | 2 | 1.67 |
+| T12: Extract quadratic term | 0 | 2 | 2 | 2 | 2 | 2 | 1.67 |
+| T13: Swap index (Hartree+Fock) | 2 | 1 | 2 | 2 | 2 | 2 | 1.83 |
+| T14: Reduce momentum (Hartree) | 2 | 2 | 2 | 2 | 1 | 2 | 1.83 |
+| T15: Reduce momentum (Fock) | 2 | 2 | 2 | 2 | 2 | 2 | **2.00** |
+| T16: Combine Hartree and Fock | 2 | 2 | 2 | 2 | 2 | 2 | **2.00** |
+
+*Table A1: Complete task-level scores. Bold indicates perfect mean score (2.00).*

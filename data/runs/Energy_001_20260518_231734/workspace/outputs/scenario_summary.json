@@ -1,0 +1,62 @@
+{
+  "Base Case": {
+    "total_cost_GBP": 71557651052.08711,
+    "wind_generation_MWh": 2293344.903141869,
+    "gas_generation_MWh": 1351955.9057721905,
+    "nuclear_generation_MWh": 403200.0,
+    "unserved_load_MWh": 11914305.220848057,
+    "curtailment_MWh": 1899317.101637992,
+    "storage_charge_MWh": 92400.0,
+    "storage_discharge_MWh": 69300.0
+  },
+  "No Storage": {
+    "total_cost_GBP": 71557653362.08711,
+    "wind_generation_MWh": 2270244.903141869,
+    "gas_generation_MWh": 1351955.9057721905,
+    "nuclear_generation_MWh": 403200.0,
+    "unserved_load_MWh": 11914305.220848057,
+    "curtailment_MWh": 1922417.101637992,
+    "storage_charge_MWh": 0.0,
+    "storage_discharge_MWh": 0.0
+  },
+  "Constrained Transmission": {
+    "total_cost_GBP": 75337714052.08711,
+    "wind_generation_MWh": 1663344.9031418695,
+    "gas_generation_MWh": 1351955.9057721905,
+    "nuclear_generation_MWh": 403200.0,
+    "unserved_load_MWh": 12544305.220848057,
+    "curtailment_MWh": 2529317.101637992,
+    "storage_charge_MWh": 92400.0,
+    "storage_discharge_MWh": 69300.0
+  },
+  "Double Wind": {
+    "total_cost_GBP": 69254267176.2165,
+    "wind_generation_MWh": 2677305.6941405344,
+    "gas_generation_MWh": 1351955.9057721905,
+    "nuclear_generation_MWh": 403200.0,
+    "unserved_load_MWh": 11530344.429849394,
+    "curtailment_MWh": 5708018.315419189,
+    "storage_charge_MWh": 92400.0,
+    "storage_discharge_MWh": 69300.0
+  },
+  "No Wind": {
+    "total_cost_GBP": 81409145996.06343,
+    "wind_generation_MWh": 0.0,
+    "gas_generation_MWh": 1782577.845799878,
+    "nuclear_generation_MWh": 604800.0,
+    "unserved_load_MWh": 13552328.18396224,
+    "curtailment_MWh": 0.0,
+    "storage_charge_MWh": 0.0,
+    "storage_discharge_MWh": 0.0
+  },
+  "Nuclear Only (No Gas)": {
+    "total_cost_GBP": 79601788691.43164,
+    "wind_generation_MWh": 2293344.903141869,
+    "gas_generation_MWh": 0.0,
+    "nuclear_generation_MWh": 403200.0,
+    "unserved_load_MWh": 13266261.126620248,
+    "curtailment_MWh": 1899317.101637992,
+    "storage_charge_MWh": 92400.0,
+    "storage_discharge_MWh": 69300.0
+  }
+}

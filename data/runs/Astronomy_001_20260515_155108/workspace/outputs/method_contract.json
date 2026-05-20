@@ -1,0 +1,34 @@
+{
+  "task": "Investigate whether EDE can alleviate acoustic tension between CMB and BAO measurements",
+  "models": [
+    "\u039bCDM",
+    "EDE",
+    "w0wa"
+  ],
+  "datasets": [
+    "DESI DR2 BAO",
+    "Planck CMB",
+    "ACT CMB",
+    "Union3 SNe"
+  ],
+  "key_parameters": [
+    "omega_m",
+    "H0",
+    "sigma8",
+    "f_EDE",
+    "log10_ac"
+  ],
+  "methods": [
+    "Parameter constraint comparison",
+    "Bayesian MCMC posterior analysis",
+    "Goodness-of-fit (\u0394\u03c7\u00b2) comparison",
+    "BAO distance scale comparison",
+    "SNe distance modulus comparison"
+  ],
+  "related_work_papers": [
+    "Poulin et al. 2019 - EDE resolves Hubble tension",
+    "McDonough et al. 2024 - EDE constraints review",
+    "Ivanov et al. 2020 - EDE with LSS",
+    "Poulin et al. 2025 - ACT DR6 + DESI DR2 EDE analysis"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "vaccine_composition": {
+    "elements": [
+      "mut11",
+      "mut12",
+      "mut15",
+      "mut19",
+      "mut20",
+      "mut26",
+      "mut28",
+      "mut33",
+      "mut39",
+      "mut44"
+    ],
+    "budget": 10,
+    "n_unique_elements": 10
+  },
+  "per_cell_response_probability": {
+    "mean": 0.9427470300116586,
+    "std": 0.09153692089155507,
+    "median": 0.9630025369027599,
+    "q25": 0.9325259282242735,
+    "q75": 0.979370149517105
+  },
+  "coverage_ratio": {
+    "threshold_0.5": 0.992,
+    "threshold_0.8": 0.98,
+    "threshold_0.9": 0.887,
+    "threshold_0.95": 0.606
+  },
+  "iou_optimal_vaccine": {
+    "mean_IoU": 1.0,
+    "all_identical": true
+  },
+  "optimization_runtime": {
+    "min_population": 100,
+    "max_population": 10000,
+    "min_runtime": 0.012,
+    "max_runtime": 17.0,
+    "power_law_exponent": 2.4412631747237965,
+    "r_squared": 0.4650554261150889
+  }
+}

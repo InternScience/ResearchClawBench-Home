@@ -1,0 +1,18 @@
+{
+  "method_name": "Cascade U-Transformer Weather Forecasting System",
+  "core_commitments": [
+    "Three-stage cascade architecture with specialized U-Transformer models",
+    "Short-range (6h-3d, 12 steps), Medium-range (3d-7d, 16 steps), Extended-range (7d-15d, 32 steps)",
+    "U-Transformer with encoder-decoder, skip connections, spatial transformer bottleneck, channel attention",
+    "Error accumulation mitigation via stage specialization and handover reset points",
+    "Comparison of cascade vs single-model autoregressive forecasting",
+    "Evaluation at 0.25° resolution with 70 ERA5 variables"
+  ],
+  "named_methods": {
+    "U-Transformer": "Encoder-decoder with skip connections + spatial transformer attention bottleneck",
+    "Channel Attention": "Squeeze-and-Excitation style adaptive feature recalibration",
+    "Spatial Transformer": "Multi-head self-attention on reshaped spatial feature maps",
+    "Residual Prediction": "Output = input + scale * tendency (stable training)"
+  },
+  "evaluation_metrics": ["RMSE", "PSD", "Variance preservation", "Latitude-weighted profiles", "Step-to-step smoothness"]
+}

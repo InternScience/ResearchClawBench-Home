@@ -1,0 +1,1283 @@
+[
+  {
+    "task_id": 1,
+    "placeholder": "system",
+    "llm_answer": "a system with two layers",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "real|momentum",
+    "llm_answer": "momentum",
+    "human_answer": "real",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "single-particle|second-quantized",
+    "llm_answer": "second-quantized",
+    "human_answer": "single-particle",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "degrees_of_freedom",
+    "llm_answer": "valleys, layers, and momentum",
+    "human_answer": "valley index (+K and -K valley), layer index (top and bottom layer).",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.0,
+    "scores": {
+      "Haining": 1,
+      "Will": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "kinetic_symbol",
+    "llm_answer": "H_{\\tau}",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "variable",
+    "llm_answer": "variables",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.0,
+    "scores": {
+      "Haining": 2,
+      "Will": "(?)",
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "order",
+    "llm_answer": "bottom layer and top layer",
+    "human_answer": "(+K,bottom), (+K,top), (-K,bottom), (-K,top)",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "Note that the sublattice degrees of freedom is suppressed for now and will be stated later",
+    "llm_answer": "False",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": "(?)",
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 1,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\tau=\\pm 1$ represents $\\pm K$ valleys, $\\bm{\\kappa}=\\frac{4\\pi}{3a_M}\\left(1,0\\right)$ is at a cor",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "Energy_dispersion",
+    "llm_answer": "$H_{\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "parabolic|Dirac|cos",
+    "llm_answer": "parabolic",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 2,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "electrons|holes",
+    "llm_answer": "electrons",
+    "human_answer": "holes",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "In addition, a shift of {momentum_shift} in the momentum ${k_symbol}$ for {shifted_Ek}, respectively.",
+    "llm_answer": "True",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "momentum_shift",
+    "llm_answer": "$\\bm{\\kappa}=\\frac{4\\pi}{3a_M}\\left(1,0\\right)$",
+    "human_answer": "$+\\kappa$ and $-\\kappa$",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 1,
+      "Will": 0,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "k_symbol",
+    "llm_answer": "\\bm{k}",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "shifted_Ek",
+    "llm_answer": "$\\bm{k}-\\tau \\bm{\\kappa}$",
+    "human_answer": "$E_{t,+K}$ and $E_{t,-K}$",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "r_symbol",
+    "llm_answer": "\\bm{r}",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "kinetic_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\tau=\\pm 1$ represents $\\pm K$ valleys, $\\bm{\\kappa}=\\frac{4\\pi}{3a_M}\\left(1,0\\right)$  is at a co",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 2,
+    "placeholder": "expression_kinetic",
+    "llm_answer": "",
+    "human_answer": "$H_{Kinetic}(r) = \\begin{pmatrix} E_{+K,b} & 0 & 0 & 0 \\\\ 0 & E_{+K,t} & 0 & 0 \\\\ 0 & 0 & E_{-K,b} &",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 3,
+    "placeholder": "potential_symbol",
+    "llm_answer": "$H_{\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 3,
+    "placeholder": "real|momentum",
+    "llm_answer": "momentum",
+    "human_answer": "real",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 3,
+    "placeholder": "single-particle|second-quantized",
+    "llm_answer": "second-quantized",
+    "human_answer": "single-particle",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 3,
+    "placeholder": "diagonal_potential",
+    "llm_answer": "$-\\frac{\\hbar^2\\bm{k}^2}{2m_\\mathfrak{b}}+\\Delta_{\\mathfrak{b}}(\\bm{r})$ and $-\\frac{\\hbar^2\\left(\\b",
+    "human_answer": "$\\Delta_l(r)$",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.3333333333333333,
+    "scores": {
+      "Haining": 0,
+      "Will": 1,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 3,
+    "placeholder": "potential_degrees_of_freedom",
+    "llm_answer": "the bottom layer ($\\mathfrak{b}$) and top layer ($\\mathfrak{t}$)",
+    "human_answer": "$t$ and $b$",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 1,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 3,
+    "placeholder": "offdiagonal_potential",
+    "llm_answer": "$\\Delta_{\\text{T},\\tau}(\\bm{r})$ and $\\Delta_{\\text{T},\\tau}^\\dag(\\bm{r})$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 3,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\tau=\\pm 1$ represents $\\pm K$ valleys, $\\bm{\\kappa}=\\frac{4\\pi}{3a_M}\\left(1,0\\right)$ is at a cor",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 4,
+    "placeholder": "potential_symbol",
+    "llm_answer": "$H_{\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 4,
+    "placeholder": "Potential_variables",
+    "llm_answer": "$\\Delta_{\\mathfrak{b}}(\\bm{r})$, $\\Delta_{\\text{T},\\tau}(\\bm{r})$, $-\\frac{\\hbar^2\\bm{k}^2}{2m_\\math",
+    "human_answer": "the intralayer potential $\\Delta_l(r)$ and interlayer tunneling $\\Delta_{T,\\tau}(r)$",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.0,
+    "scores": {
+      "Haining": 1,
+      "Will": 1,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 4,
+    "placeholder": "expression_diag",
+    "llm_answer": "$-\\frac{\\hbar^2\\bm{k}^2}{2m_\\mathfrak{b}}+\\Delta_{\\mathfrak{b}}(\\bm{r})$ and $-\\frac{\\hbar^2\\left(\\b",
+    "human_answer": "$\\Delta_t(r) = V_{zt}$ and $\\Delta_b(r)$ is $2V_b\\sum_{j=1,3,5} \\cos(g_j \\cdot r  +\\psi_b)$",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 4,
+    "placeholder": "expression_offdiag",
+    "llm_answer": "$\\Delta_{\\text{T},\\tau}(\\bm{r})$ and $\\Delta_{\\text{T},\\tau}^\\dag(\\bm{r})$",
+    "human_answer": "$\\Delta_{T,+K}(r)=w(1+\\omega^{1}e^{i g_2 \\cdot r} + \\omega^{2} e^{i g_3 \\cdot r})$ and $\\Delta_{T,-K",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 4,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\tau=\\pm 1$ represents $\\pm K$ valleys, $\\bm{\\kappa}=\\frac{4\\pi}{3a_M}\\left(1,0\\right)$ is at a cor",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 4,
+    "placeholder": "expression_Potential",
+    "llm_answer": "",
+    "human_answer": "$H_{Potential}(r) = \\begin{pmatrix} \\Delta_b(r) & \\Delta_{T,+K}(r) & 0 & 0 \\\\ \\Delta_{T,+K}^*(r) & \\",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 5,
+    "placeholder": "real|momentum",
+    "llm_answer": "real",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 5,
+    "placeholder": "nonint_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 5,
+    "placeholder": "kinetic_symbol",
+    "llm_answer": "$-\\frac{\\hbar^2\\bm{k}^2}{2m_\\mathfrak{b}}$ and $-\\frac{\\hbar^2\\left(\\bm{k}-\\tau \\bm{\\kappa}\\right)^2",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 5,
+    "placeholder": "potential_symbol",
+    "llm_answer": "$\\Delta_{\\mathfrak{b},\\tau}(\\bm{r})$, $\\Delta_{\\text{T},\\tau}(\\bm{r})$, $\\Delta_{\\text{T},\\tau}^\\dag",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 5,
+    "placeholder": "$r$|$k$",
+    "llm_answer": "$r$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 5,
+    "placeholder": "second_nonint_symbol",
+    "llm_answer": "None",
+    "human_answer": "$\\hat{H}^{0}$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 5,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\tau=\\pm $ represents $\\pm K$ valleys, $\\hbar \\bm{k} = -i \\hbar \\partial_{\\bm{r}}$ is the momentum ",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 6,
+    "placeholder": "second_nonint_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 2,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 6,
+    "placeholder": "matrix_element_symbol",
+    "llm_answer": "$H_{\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 2,
+      "Will": 0,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 6,
+    "placeholder": "basis_symbol",
+    "llm_answer": "$\\Psi_{\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 6,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0$ is the second-quantized form Hamiltonian, $H_{\\tau}$ is the matrix element, an",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 6,
+    "placeholder": "expression_second_nonint",
+    "llm_answer": "",
+    "human_answer": "$\\hat{H}^{0} = \\int dr \\vec{\\psi}^\\dagger(r) H^{0}(r) \\vec{\\psi}(r)$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 7,
+    "placeholder": "real_creation_op",
+    "llm_answer": "$\\Psi_{\\tau}^\\dagger(\\bm{r})$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 7,
+    "placeholder": "momentum_creation_op",
+    "llm_answer": "$c_{\\bm{k}_{\\alpha},l_{\\alpha},\\tau}^\\dagger$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 7,
+    "placeholder": "definition_of_Fourier_Transformation",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0=\\sum_{\\bm{k}_{\\alpha},\\bm{k}_{\\beta}}\\sum_{l_{\\alpha},l_{\\beta}}\\sum_{\\tau} h_{",
+    "human_answer": "$c_{\\tau,l}^\\dagger(k)= \\frac{1}{\\sqrt{V}} \\int dr \\psi_{\\tau,l}^\\dagger(r) e^{i k \\cdot r}$",
+    "match_status": "Different",
+    "avg_evaluator_score": 0.6666666666666666,
+    "scores": {
+      "Haining": 0,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 7,
+    "placeholder": "real_variable",
+    "llm_answer": "$\\bm{r}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 7,
+    "placeholder": "entire_real|first_Brillouin_Zone",
+    "llm_answer": "entire real space",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": "(?)",
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 7,
+    "placeholder": "second_nonint_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 7,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\tau=\\pm $ represents $\\pm K$ valleys, $\\hbar \\bm{k} = -i \\hbar \\partial_{\\bm{r}}$ is the momentum ",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "hole_op",
+    "llm_answer": "$b_{\\bm{k},l,\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "particle_op",
+    "llm_answer": "$c_{\\bm{k},l,\\tau}^\\dagger$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "particle_creation_op",
+    "llm_answer": "$c_{\\bm{k},l,\\tau}^\\dagger$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "hole_creation_op",
+    "llm_answer": "$b_{\\bm{k},l,\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "particle_annihilation_op",
+    "llm_answer": "$c_{\\bm{k},l,\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "hole_annihilation_op",
+    "llm_answer": "$b_{\\bm{k},l,\\tau}^\\dagger$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.3333333333333333,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "second_nonint_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "The hole operator is defined as $b_{\\bm{k},l,\\tau}=c_{\\bm{k},l,\\tau}^\\dagger$. The Hamiltonian in th",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 8,
+    "placeholder": "expression_particle_Ham",
+    "llm_answer": "",
+    "human_answer": "$\\hat{H}^{0} = \\sum_{\\tau, l_1, l_2, k_1, k_2} c_{\\tau,l_1}^\\dagger(k_1) H^{0}_{\\tau,l_1,\\tau,l_2}(k",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 9,
+    "placeholder": "second_nonint_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_0$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 9,
+    "placeholder": "hole_op",
+    "llm_answer": "$b_{\\bm{k},l,\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 9,
+    "placeholder": "index_1",
+    "llm_answer": "$\\bm{k}_{\\alpha}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 9,
+    "placeholder": "index_2",
+    "llm_answer": "$\\bm{k}_{\\beta}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 9,
+    "placeholder": "op",
+    "llm_answer": "$b_{\\bm{k},l,\\tau}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 2,
+      "Will": 1,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 9,
+    "placeholder": "Ham_op",
+    "llm_answer": "$[h^{(\\tau)}]^{\\intercal}_{\\bm{k}_{\\alpha}l_{\\alpha},\\bm{k}_{\\beta}l_{\\beta}}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 9,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$b_{\\bm{k},l,\\tau}=c_{\\bm{k},l,\\tau}^\\dagger$, and $\\hat{\\mathcal{H}}_0$ is defined as $\\hat{\\mathca",
+    "human_answer": "$b_{\\bm{k},l,\\tau}=c_{\\bm{k},l,\\tau}^\\dagger$",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.6666666666666667,
+    "scores": {
+      "Haining": 1,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 9,
+    "placeholder": "expression_hole_Ham",
+    "llm_answer": "",
+    "human_answer": "$\\hat{H}^{0} = \\sum_{\\tau, l_1, l_2, k_1, k_2} b_{\\tau, l_1}(k_1) H^{0}_{\\tau, l_1, \\tau, l_2}(k_1, ",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 10,
+    "placeholder": "second_int_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_{\\text{int}}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "index_of_operator",
+    "llm_answer": "None",
+    "human_answer": "the valley index and layer index",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "momentum",
+    "llm_answer": "None",
+    "human_answer": "momentum",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0.0,
+    "scores": {
+      "Haining": 0,
+      "Will": 0,
+      "Yasaman": 0
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "For each operator, the total momentum is the sum of moire reciprocal lattice $b_i$ and momentum with in the first BZ $k_i$",
+    "llm_answer": "False",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": "(?)",
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "interaction",
+    "llm_answer": "dual-gate screened Coulomb",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "int_form",
+    "llm_answer": "2\\pi e^2\\tanh(|\\bm{k}|d)/(\\epsilon |\\bm{k}|)",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "normalization_factor",
+    "llm_answer": "$\\frac{1}{2A}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "op",
+    "llm_answer": "$b_{\\bm{k}_{\\alpha},l_{\\alpha},\\tau_{\\alpha}}^\\dagger$, $b_{\\bm{k}_{\\beta},l_{\\beta},\\tau_{\\beta}}^\\",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": "(?)",
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 10,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\bm{k}_{\\alpha},\\bm{k}_{\\beta},\\bm{k}_{\\gamma},\\bm{k}_{\\delta}$ are the momenta, $l_{\\alpha},l_{\\be",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 11,
+    "placeholder": "second_int_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_{\\text{int}}^{\\text{HF}}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 11,
+    "placeholder": "Hartree_Fock_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}^{\\text{HF}}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 11,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\hat{\\mathcal{H}}^{\\text{HF}}$ is the Hartree-Fock Hamiltonian, $\\hat{\\mathcal{H}}_{\\text{int}}^{\\t",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 11,
+    "placeholder": "expression_int",
+    "llm_answer": "",
+    "human_answer": "$\\hat{H}^{int} = \\frac{1}{2V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4} b_{l_1,\\tau_1}^\\dagger(k_1",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 12,
+    "placeholder": "Hartree_Fock_term_symbol",
+    "llm_answer": "Hartree-Fock term symbol, denoted as $\\hat{\\mathcal{H}}^{\\text{HF}}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 12,
+    "placeholder": "bilinear_op",
+    "llm_answer": "$b_{\\bm{k}_{\\beta},l_{\\beta},\\tau_{\\beta}}^\\dagger b_{\\bm{k}_{\\gamma},l_{\\beta},\\tau_{\\beta}}$ and $",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 12,
+    "placeholder": "Hartree_Fock_second_quantized_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}_{\\text{int}}^{\\text{HF}}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 12,
+    "placeholder": "definition_of_variables",
+    "llm_answer": "$\\hat{\\mathcal{H}}^{\\text{HF}}$ is the Hartree-Fock term symbol, $\\hat{\\mathcal{H}}_{\\text{int}}^{\\t",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 12,
+    "placeholder": "expression_HF",
+    "llm_answer": "",
+    "human_answer": "$\\hat{H}^{int,HF}=\\frac{1}{2V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4} \\left[\\langle b_{l_1,\\tau",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 13,
+    "placeholder": "Hartree_Fock_second_quantized_symbol",
+    "llm_answer": "$\\hat{\\mathcal{H}}^{\\text{HF}}$",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": 2,
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 13,
+    "placeholder": "expected_value",
+    "llm_answer": "$\\langle{b_{\\bm{k}_{\\alpha},l_{\\alpha},\\tau_{\\alpha}}^\\dagger b_{\\bm{k}_{\\delta},l_{\\alpha},\\tau_{\\a",
+    "human_answer": "None",
+    "match_status": "LLM only",
+    "avg_evaluator_score": 2.0,
+    "scores": {
+      "Haining": 2,
+      "Will": "(?)",
+      "Yasaman": 2
+    }
+  },
+  {
+    "task_id": 13,
+    "placeholder": "expression_Hartree_1",
+    "llm_answer": "$b_{\\bm{k}_{\\beta},l_{\\beta},\\tau_{\\beta}}^\\dagger b_{\\bm{k}_{\\gamma},l_{\\beta},\\tau_{\\beta}}$",
+    "human_answer": "$`\\langle b_{\\tau_1,l_1}^\\dagger(k_1) b_{\\tau_1,l_1}(k_4) \\rangle b_{\\tau_2,l_2}^\\dagger(k_2) b_{\\ta",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.0,
+    "scores": {
+      "Haining": 1,
+      "Will": "(?)",
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 13,
+    "placeholder": "expression_Hartree_2",
+    "llm_answer": "$b_{\\bm{k}_{\\beta},l_{\\beta},\\tau_{\\beta}}^\\dagger b_{\\bm{k}_{\\delta},l_{\\alpha},\\tau_{\\alpha}}$",
+    "human_answer": "$`\\langle b_{\\tau_2,l_2}^\\dagger(k_2) b_{\\tau_2,l_2}(k_3) \\rangle b_{\\tau_1,l_1}^\\dagger(k_1) b_{\\ta",
+    "match_status": "Different",
+    "avg_evaluator_score": 1.0,
+    "scores": {
+      "Haining": 1,
+      "Will": "(?)",
+      "Yasaman": 1
+    }
+  },
+  {
+    "task_id": 13,
+    "placeholder": "expression_HF_2",
+    "llm_answer": "",
+    "human_answer": "$\\hat{H}^{int,HF,2}=\\frac{1}{2V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4} \\left[\\langle b_{l_1,\\t",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 14,
+    "placeholder": "Hartree_second_quantized_symbol",
+    "llm_answer": "None",
+    "human_answer": "$H_{\\text{Hartree}}$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 14,
+    "placeholder": "expected_value",
+    "llm_answer": "None",
+    "human_answer": "$\\langle b_{l_1,\\tau_1,q_1}^\\dagger(k_1) b_{l_1,\\tau_1,q_4}(k_4) \\rangle$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 14,
+    "placeholder": "expected_value_nonzero",
+    "llm_answer": "None",
+    "human_answer": "$\\langle b_{l_1,\\tau_1,q_1}^\\dagger(k_1) b_{l_1,\\tau_1,q_4}(k_4) \\rangle = \\langle b_{l_1,\\tau_1,q_1",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 14,
+    "placeholder": "expression_Hartree",
+    "llm_answer": "",
+    "human_answer": "$\\hat{\\mathcal{H}}^{\\text{HF}} = \\frac{1}{V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4,q_1,q_2,q_3,",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 15,
+    "placeholder": "Fock_second_quantized_symbol",
+    "llm_answer": "None",
+    "human_answer": "$H_{\\text{Fock}}$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 15,
+    "placeholder": "expected_value",
+    "llm_answer": "None",
+    "human_answer": "$\\langle b_{l_1,\\tau_1,q_1}^\\dagger(k_1) b_{l_2,\\tau_2,q_3}(k_3) \\rangle$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 15,
+    "placeholder": "expected_value_nonzero",
+    "llm_answer": "None",
+    "human_answer": "$\\langle b_{l_1,\\tau_1,q_1}^\\dagger(k_1) b_{l_2,\\tau_2,q_3}(k_3) \\rangle=\\langle b_{l_1,\\tau_1,q_1}^",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 15,
+    "placeholder": "expression_Fock",
+    "llm_answer": "",
+    "human_answer": "$\\hat{\\mathcal{H}}^{\\text{HF}} = -\\frac{1}{V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,k_3,k_4,q_1,q_2,q_3",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 16,
+    "placeholder": "Hartree_symbol",
+    "llm_answer": "",
+    "human_answer": "$H_{\\text{Hartree}}$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 16,
+    "placeholder": "Fock_symbol",
+    "llm_answer": "",
+    "human_answer": "$H_{\\text{Fock}}$",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 16,
+    "placeholder": "Hartree",
+    "llm_answer": "",
+    "human_answer": "$H_{\\text{Hartree}} = \\frac{1}{V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,q_1,q_2,q_3,q_4} \\langle b_{l_1",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 16,
+    "placeholder": "Fock",
+    "llm_answer": "",
+    "human_answer": "$H_{\\text{Fock}} = -\\frac{1}{V}\\sum_{\\tau_1,\\tau_2,l_1,l_2,k_1,k_2,q_1,q_2,q_3,q_4} \\langle b_{l_1,\\",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  },
+  {
+    "task_id": 16,
+    "placeholder": "swap_rule",
+    "llm_answer": "",
+    "human_answer": "Not needed",
+    "match_status": "Human only",
+    "avg_evaluator_score": 0,
+    "scores": {}
+  }
+]

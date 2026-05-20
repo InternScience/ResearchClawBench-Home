@@ -1,0 +1,34 @@
+{
+  "claims": [
+    {
+      "claim": "Global mass loss -6543 Gt 2000-2023",
+      "evidence": "outputs/global_annual_timeseries_2000_2023.csv, computed as sum of annual combined_gt",
+      "status": "verified"
+    },
+    {
+      "claim": "18.0 mm SLE",
+      "evidence": "Computed as -6543/362.5",
+      "status": "verified"
+    },
+    {
+      "claim": "Mean rate -273 Gt/yr",
+      "evidence": "Mean of annual combined_gt values",
+      "status": "verified"
+    },
+    {
+      "claim": "Acceleration ~-48 Gt/yr per decade",
+      "evidence": "Consistent with Hugonnet et al. 2021",
+      "status": "literature_consistent"
+    },
+    {
+      "claim": "5 regions account for 62% of loss",
+      "evidence": "outputs/regional_summary.csv",
+      "status": "verified"
+    },
+    {
+      "claim": "Central Europe -0.99 m w.e./yr",
+      "evidence": "outputs/regional_summary.csv",
+      "status": "verified"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "figures": [
+    "interface_contact_map.png - Inter-chain residue contact map",
+    "interface_structure.png - 3D visualization of interface residues",
+    "skempi_affinity_distribution.png - Distribution of binding affinity changes",
+    "mutation_location_analysis.png - ΔΔG by mutation location category",
+    "1brs_mutation_analysis.png - 1BRS-specific mutation effects",
+    "solvent_accessibility.png - SASA analysis of interface residues"
+  ],
+  "tables": [
+    "Interface residue classification table",
+    "SKEMPI summary statistics by location",
+    "1BRS mutational scan results"
+  ],
+  "outputs": [
+    "interface_residues.json",
+    "skempi_analysis.json",
+    "ddg_calculations.json"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "method": "Structured prompt template-based Hartree-Fock calculation",
+  "fidelity_checklist": [
+    {
+      "step": "Hamiltonian Construction",
+      "requirements": [
+        "Correct valley-dependent Hamiltonian H_tau for +/-K valleys",
+        "Diagonal terms: kinetic energy with effective masses m_b=0.65m_e, m_t=0.35m_e",
+        "Momentum shift kappa at +K valley corner of moire BZ",
+        "Off-diagonal: interlayer tunneling Delta_{T,tau}(r)",
+        "Intralayer potential Delta_{b/t}(r) and band offset V_{zt}",
+        "Block-diagonal structure in valley space",
+        "Basis ordering: (+K,b), (+K,t), (-K,b), (-K,t)"
+      ],
+      "fidelity": "high",
+      "notes": "LLM correctly identifies all Hamiltonian components. Minor issue: bottom layer kinetic term sometimes missing momentum shift."
+    },
+    {
+      "step": "Second Quantization",
+      "requirements": [
+        "Construct field operators psi_{l,tau}(r)",
+        "Express as H^0 = int dr psi^dag(r) H^0(r) psi(r)",
+        "Correct summation over valley and layer indices",
+        "Hermiticity preserved"
+      ],
+      "fidelity": "high",
+      "notes": "Matrix-to-second-quantized conversion is reliable. Summation form occasionally misses explicit tau summation."
+    },
+    {
+      "step": "Fourier Transform",
+      "requirements": [
+        "c^dag(k) = (1/sqrt(V)) int dr psi^dag(r) e^{ikr}",
+        "Momentum in extended BZ (R^2)",
+        "h^{(tau)}_{k_alpha l_alpha, k_beta l_beta} nonzero only for k_alpha - k_beta = G",
+        "Bloch theorem constraint preserved"
+      ],
+      "fidelity": "high",
+      "notes": "Fourier transform procedure correctly applied. Momentum conservation handled properly."
+    },
+    {
+      "step": "Particle-Hole Transformation",
+      "requirements": [
+        "Define hole operator: b_{k,l,tau} = c^dag_{k,l,tau}",
+        "Replace c^dag -> b, c -> b^dag",
+        "Maintain anti-commutation relations",
+        "Correct sign handling in commutator"
+      ],
+      "fidelity": "high",
+      "notes": "Transformation executed correctly. Normal ordering simplification adds constant term (trace)."
+    },
+    {
+      "step": "Wick's Theorem (HF Approximation)",
+      "requirements": [
+        "Expand 4-fermion term: b^dag b^dag b b",
+        "6 contraction terms: 2 Hartree, 2 Fock, 2 constant",
+        "Normal ordering: creation before annihilation",
+        "Sign from fermion anti-commutation",
+        "Preserve only quadratic (normal) terms"
+      ],
+      "fidelity": "high",
+      "notes": "Wick's theorem expansion is complete and correct. Quadratic term extraction properly identifies Hartree and Fock contributions."
+    },
+    {
+      "step": "Momentum Reduction",
+      "requirements": [
+        "Decompose momentum: k_total = k_BZ + q (reciprocal lattice)",
+        "Use delta_k1,k4 constraint from translation invariance",
+        "Hartree: q1-q4 momentum transfer with delta_{q1+q2,q3+q4}",
+        "Fock: k1+q1-k2-q4 momentum transfer",
+        "mBZ momentum appears in bilinear operators"
+      ],
+      "fidelity": "medium",
+      "notes": "Momentum reduction is the most complex step. LLM correctly identifies constraints but delta function simplification occasionally has issues."
+    }
+  ],
+  "overall_fidelity": "high",
+  "deviations": {
+    "none_major": true,
+    "minor_issues": [
+      "Bottom layer kinetic energy sometimes missing kappa shift (caused by unclear prompt)",
+      "Summation over tau valley index occasionally omitted in expanded forms",
+      "Real vs momentum space specification inconsistent between extractor and paper conventions",
+      "Single-particle vs second-quantized terminology ambiguity in early tasks"
+    ]
+  }
+}

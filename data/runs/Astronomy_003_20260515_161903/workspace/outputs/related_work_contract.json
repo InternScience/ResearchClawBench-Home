@@ -1,0 +1,42 @@
+{
+  "paper_000": {
+    "title": "Compact binary waveform center-of-mass corrections (Woodford+ 2019)",
+    "key_insights": [
+      "CM motion causes mode mixing in SXS waveforms, especially (2,\u00b12) \u2192 subdominant modes",
+      "CM correction eliminates unphysical amplitude modulations",
+      "Corrected waveforms are 'simpler' by factor ~117 for precessing systems",
+      "CM motions are effectively random depending on initial data"
+    ],
+    "relevance": "Motivates why error characterization (like our fig6 data) is critical for waveform model building"
+  },
+  "paper_001": {
+    "title": "Nonlinearities in Black Hole Ringdowns (Mitman+ 2023)",
+    "key_insights": [
+      "Quadratic QNMs from (2,2,0)\u00d7(2,2,0) are ubiquitous in NR simulations",
+      "Quadratic (4,4) amplitude scales quadratically with linear (2,2) amplitude",
+      "Nonlinear effects improve (4,4) mode mismatches by ~2 orders of magnitude"
+    ],
+    "relevance": "Demonstrates that higher-\u2113 modes (\u2113=4) contain both linear and quadratic contributions; our modal error analysis (fig7) is relevant"
+  },
+  "paper_002": {
+    "title": "Surrogate models for precessing BBH simulations (Varma+ 2019)",
+    "key_insights": [
+      "NRSur7dq4: first 7D surrogate for precessing BBH waveforms up to q=4",
+      "Trained on 1528 SpEC simulations",
+      "Uses coprecessing and co-orbital frame decomposition",
+      "Includes all \u2113\u22644 spin-weighted spherical harmonic modes",
+      "Errors comparable to NR simulation errors themselves"
+    ],
+    "relevance": "Establishes the SXS catalog as the training source for state-of-the-art waveform surrogates; error characterization essential for surrogate quality"
+  },
+  "paper_003": {
+    "title": "Eccentric BBH surrogate models (Islam+ 2021)",
+    "key_insights": [
+      "First surrogate directly trained on eccentric NR simulations",
+      "NRSur2dq1Ecc: 47 equal-mass nonspinning eccentric simulations",
+      "Includes (2,2), (3,2), (4,4) modes",
+      "Mismatches ~1e-3 for training range, ~1e-2 for extrapolated q\u22483"
+    ],
+    "relevance": "Shows extension of surrogate modeling to eccentric systems; highlights importance of mode coverage beyond \u2113=2"
+  }
+}

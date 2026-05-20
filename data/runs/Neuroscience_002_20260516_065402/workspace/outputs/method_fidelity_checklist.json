@@ -1,0 +1,58 @@
+{
+  "method": "Binary classifier for neuron segment merge prediction",
+  "definition": "Given 20 engineered features from adjacent EM neuron segments, predict whether they belong to the same neuron (1) or different neurons (0)",
+  "fidelity_checks": [
+    {
+      "component": "Class imbalance handling",
+      "required": "Account for ~10% positive class ratio",
+      "implemented": true,
+      "method": "Class weights in LogisticRegression/RandomForest, scale_pos_weight in XGBoost, inherent in MLP with cross-entropy"
+    },
+    {
+      "component": "Degradation-stratified evaluation",
+      "required": "Evaluate performance separately for each of 4 degradation types",
+      "implemented": true,
+      "method": "Per-condition metric computation and visualization"
+    },
+    {
+      "component": "Multi-model comparison",
+      "required": "Compare at least 3 different model architectures",
+      "implemented": true,
+      "method": "Compared 5 models: LR, RF, GB, XGBoost, MLP"
+    },
+    {
+      "component": "Interpretability",
+      "required": "Provide feature importance analysis",
+      "implemented": true,
+      "method": "SHAP (TreeExplainer), permutation importance, built-in feature importance"
+    },
+    {
+      "component": "Proper metrics for imbalanced data",
+      "required": "Report AUC-ROC and Average Precision, not just accuracy",
+      "implemented": true,
+      "method": "Primary metrics: AUC-ROC, Avg Precision; secondary: F1, Precision, Recall"
+    },
+    {
+      "component": "Feature standardization",
+      "required": "Standardize features before training",
+      "implemented": true,
+      "method": "StandardScaler (zero mean, unit variance)"
+    },
+    {
+      "component": "Binary output",
+      "required": "Output 0 or 1 prediction per sample",
+      "implemented": true,
+      "method": "Threshold at 0.5 on predicted probabilities"
+    }
+  ],
+  "deviations": [
+    {
+      "component": "No U-Net / MALIS training",
+      "reason": "Task is post-segmentation classification, not segmentation. Working with pre-engineered features rather than raw EM volumes."
+    },
+    {
+      "component": "No end-to-end deep learning on images",
+      "reason": "Dataset provides tabular features, not raw EM image data. MLP on features is the appropriate approach."
+    }
+  ]
+}

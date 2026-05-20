@@ -1,0 +1,45 @@
+{
+  "extracted_from": [
+    "paper_000: Funke et al. - Deep Structured Learning for Connectome Reconstruction",
+    "paper_001: De Brabandere et al. - Semantic Instance Segmentation",
+    "paper_002: Hu et al. - Squeeze-and-Excitation Networks",
+    "paper_003: Hadsell et al. - Dimensionality Reduction by Learning an Invariant Mapping"
+  ],
+  "relevant_methods": [
+    {
+      "paper": "Funke et al. (paper_000)",
+      "method": "3D U-Net with MALIS loss for neuron segmentation",
+      "relevance": "Establishes the upstream segmentation task that creates the over-segmentation our classifier addresses",
+      "key_insight": "Affinity graph prediction + agglomeration outperforms direct voxel classification for anisotropic EM data"
+    },
+    {
+      "paper": "De Brabandere et al. (paper_001)",
+      "method": "Discriminative loss for instance segmentation via embedding clustering",
+      "relevance": "The embedding features in our dataset (F10-F19) are inspired by metric learning approaches",
+      "key_insight": "Pull/push forces on embeddings can learn instance-discriminative representations"
+    },
+    {
+      "paper": "Hu et al. (paper_002)",
+      "method": "Squeeze-and-Excitation blocks for channel-wise feature recalibration",
+      "relevance": "Motivates attention to feature importance across modalities (morphology, intensity, embedding)",
+      "key_insight": "Channel-wise recalibration can improve representational power"
+    },
+    {
+      "paper": "Hadsell et al. (paper_003)",
+      "method": "Contrastive loss for learning invariant mappings (DrLIM)",
+      "relevance": "The binary classification task can be viewed as learning a contrastive similarity metric",
+      "key_insight": "Contrastive objectives pull similar pairs together and push dissimilar pairs apart in embedding space"
+    }
+  ],
+  "baseline_methods": [
+    "Logistic Regression (standard linear baseline)",
+    "Random Forest (standard ensemble baseline)",
+    "Gradient Boosting (sequential ensemble)"
+  ],
+  "comparison_axes": [
+    "AUC-ROC (discrimination)",
+    "Average Precision (ranking quality under imbalance)",
+    "F1 Score (operating point quality)",
+    "Per-degradation performance (robustness)"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "papers_analyzed": [
+    {
+      "id": "paper_000",
+      "title": "Structural puzzles in virology solved with an overarching icosahedral design principle",
+      "authors": "Twarock & Luque",
+      "key_contributions": [
+        "Archimedean lattice framework for icosahedral capsid construction",
+        "Extension beyond Caspar-Klug theory using trihexagonal, snub hexagonal, and rhombitrihexagonal lattices",
+        "Scaling factors alpha_t=4/3, alpha_s=7/3, alpha_r=4/3+2/sqrt(3)"
+      ],
+      "relevance_to_task": "Provides geometric foundation for icosahedral shell construction on non-hexagonal sublattices; chiral categories in our framework correspond to different Archimedean lattice constructions",
+      "required_artifacts": ["Extended T-number formulas", "Scaling factor calculations"],
+      "extracted_baselines": ["Caspar-Klug T(h,k) = h^2+hk+k^2", "Trihexagonal T_t = (4/3)T", "Snub hexagonal T_s = (7/3)T"],
+      "extracted_axes": ["Lattice type (hexagonal, trihexagonal, snub hexagonal, rhombitrihexagonal)", "T-number", "Capsid protein count"]
+    },
+    {
+      "id": "paper_001",
+      "title": "High-entropy nanoparticles: Synthesis-structure-property relationships and data-driven discovery",
+      "authors": "Yao et al.",
+      "key_contributions": [
+        "Comprehensive review of high-entropy nanoparticle synthesis and applications",
+        "Multi-element mixing thermodynamics in nanoparticles",
+        "Data-driven discovery framework"
+      ],
+      "relevance_to_task": "Provides broad context for multi-component nanoparticle design; identifies rational design as a key challenge that our framework addresses",
+      "required_artifacts": [],
+      "extracted_baselines": ["Configurational entropy driving force", "Elemental compatibility based on enthalpy of mixing"],
+      "extracted_axes": ["Number of elements", "Synthesis method", "Catalytic performance"]
+    },
+    {
+      "id": "paper_002",
+      "title": "Design strategies for the self-assembly of polyhedral shells",
+      "authors": "Multiple authors (PNAS)",
+      "key_contributions": [
+        "SAT-assembly framework for designing patchy particle interactions",
+        "Successfully assembles icosahedron, snub cube, and snub dodecahedron",
+        "Demonstrates that lowering symmetry of building blocks increases target yield"
+      ],
+      "relevance_to_task": "Provides self-assembly methodology; patch coloring corresponds to our chiral categories; SAT-based optimization parallels our mismatch optimization",
+      "required_artifacts": ["Patch color design tables", "Yield vs. design complexity curves"],
+      "extracted_baselines": ["One-color (educated guess) design fails for snub cube and snub dodecahedron", "Multi-color designs succeed with >90% yield"],
+      "extracted_axes": ["Number of patch colors", "In-plane angle gamma", "Patch width cos(theta_max)", "Temperature", "Density"]
+    },
+    {
+      "id": "paper_003",
+      "title": "Minimal Design Principles for Icosahedral Virus Capsids",
+      "authors": "Martin-Bravo, Gomez Llorente, Hernandez-Rojas, Wales",
+      "key_contributions": [
+        "Cost function framework for icosahedral capsid design",
+        "Thomson problem generalization with icosahedral harmonics",
+        "Basin-hopping global optimization for finding minimal structures"
+      ],
+      "relevance_to_task": "Provides energy landscape methodology; icosahedral harmonics parallel our shell categories; basin-hopping optimization analogous to our path-based growth",
+      "required_artifacts": ["Icosahedral harmonic expansion coefficients", "Cost function parameter tables"],
+      "extracted_baselines": ["Thomson problem yields icosahedral packings at N=12,32,72,122,...", "Minimal design complexity principle"],
+      "extracted_axes": ["Shell count M", "Particle count N_s", "IH expansion cutoff l_c", "Interaction exponents alpha"]
+    }
+  ],
+  "contract_updates": {
+    "additional_axes_from_papers": [
+      "Lattice scaling factors (from paper_000)",
+      "Patch color / design complexity (from paper_002)",
+      "Icosahedral harmonic order (from paper_003)",
+      "Multicomponent configurational entropy (from paper_001)"
+    ],
+    "additional_figures_needed": [
+      "Magic number sequence comparison (generated)",
+      "Size mismatch heatmap (generated)",
+      "Shell energy landscape (generated)"
+    ],
+    "additional_baselines": [
+      "Caspar-Klug classical T-number sequence",
+      "Single-color (one patch type) failure baseline",
+      "Thomson problem icosahedral packing numbers"
+    ]
+  }
+}

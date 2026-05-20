@@ -1,0 +1,55 @@
+{
+  "problem": "Lasso Regression (1000x2000, 100 nonzero ground truth)",
+  "regularization": 4.4388,
+  "Lipschitz_L": 100.0,
+  "strong_convexity_mu": 1.0,
+  "condition_number": 100.0,
+  "optimal_value": 311.1167877003963,
+  "methods": [
+    {
+      "name": "ISTA (Proximal Gradient Descent)",
+      "iterations": 231,
+      "final_objective_error": 0.0,
+      "cpu_time_seconds": 0.1175,
+      "theoretical_rate": "O(1/k)",
+      "notes": "Baseline first-order method with sublinear convergence"
+    },
+    {
+      "name": "FISTA (Nesterov Accelerated Gradient)",
+      "iterations": 333,
+      "final_objective_error": -5.68e-14,
+      "cpu_time_seconds": 0.1724,
+      "theoretical_rate": "O(1/k^2)",
+      "notes": "Nesterov momentum achieves optimal sublinear rate for convex problems"
+    },
+    {
+      "name": "FISTA with Restart",
+      "iterations": 93,
+      "final_objective_error": -5.68e-14,
+      "cpu_time_seconds": 0.0482,
+      "theoretical_rate": "Linear O((1-sqrt(mu/L))^k)",
+      "notes": "Restarts exploit strong convexity to achieve linear convergence; 12 restarts observed"
+    },
+    {
+      "name": "ADMM",
+      "iterations": 30,
+      "final_objective_error": 0.0196,
+      "cpu_time_seconds": 0.2413,
+      "theoretical_rate": "Linear (operator splitting)",
+      "notes": "Fast convergence via Douglas-Rachford splitting; stopped at residual tolerance"
+    },
+    {
+      "name": "VOS Unified",
+      "iterations": 333,
+      "final_objective_error": -5.68e-14,
+      "cpu_time_seconds": 0.1725,
+      "theoretical_rate": "O(1/k^2)",
+      "notes": "Equivalent to FISTA in this implementation; unified framework perspective"
+    }
+  ],
+  "continuous_time_ode": {
+    "lyapunov_final_value": 70.843,
+    "ode_equation": "ddX + (3/t) dX + nabla f(X) = 0",
+    "interpretation": "Damping system transitioning from overdamped to underdamped"
+  }
+}

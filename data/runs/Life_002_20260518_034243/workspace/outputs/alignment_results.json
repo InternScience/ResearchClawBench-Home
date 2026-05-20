@@ -1,0 +1,193 @@
+{
+  "multimer_alignment": {
+    "method": "US-align -mm 1",
+    "metrics": {
+      "length_struct1": 3009,
+      "length_struct2": 726,
+      "aligned_length": 225,
+      "rmsd": 8.28,
+      "tm_score_struct1": 0.06066,
+      "tm_score_struct2": 0.19411
+    },
+    "description": "Multimer-to-multimer alignment (7xg4 12 chains vs 6n40 1 chain)"
+  },
+  "protein_only_alignment": {
+    "method": "US-align -mol prot -mm 1",
+    "metrics": {
+      "length_struct1": 2876,
+      "length_struct2": 726,
+      "aligned_length": 225,
+      "rmsd": 8.28,
+      "tm_score_struct1": 0.0631,
+      "tm_score_struct2": 0.19411
+    },
+    "description": "Protein-only multimer alignment"
+  },
+  "chain_by_chain_alignment": {
+    "method": "TM-align",
+    "results": [
+      {
+        "length_struct1": 241,
+        "length_struct2": 726,
+        "aligned_length": 151,
+        "rmsd": 5.91,
+        "tm_score_struct1": 0.36498,
+        "tm_score_struct2": 0.15662,
+        "chain": "A",
+        "chain_length": 242
+      },
+      {
+        "length_struct1": 219,
+        "length_struct2": 726,
+        "aligned_length": 108,
+        "rmsd": 5.91,
+        "tm_score_struct1": 0.29124,
+        "tm_score_struct2": 0.11336,
+        "chain": "B",
+        "chain_length": 219
+      },
+      {
+        "length_struct1": 329,
+        "length_struct2": 726,
+        "aligned_length": 172,
+        "rmsd": 6.41,
+        "tm_score_struct1": 0.3143,
+        "tm_score_struct2": 0.17152,
+        "chain": "C",
+        "chain_length": 329
+      },
+      {
+        "length_struct1": 331,
+        "length_struct2": 726,
+        "aligned_length": 172,
+        "rmsd": 6.38,
+        "tm_score_struct1": 0.31532,
+        "tm_score_struct2": 0.17226,
+        "chain": "D",
+        "chain_length": 331
+      },
+      {
+        "length_struct1": 324,
+        "length_struct2": 726,
+        "aligned_length": 169,
+        "rmsd": 6.38,
+        "tm_score_struct1": 0.31465,
+        "tm_score_struct2": 0.16926,
+        "chain": "E",
+        "chain_length": 324
+      },
+      {
+        "length_struct1": 324,
+        "length_struct2": 726,
+        "aligned_length": 168,
+        "rmsd": 6.33,
+        "tm_score_struct1": 0.31348,
+        "tm_score_struct2": 0.16862,
+        "chain": "F",
+        "chain_length": 324
+      },
+      {
+        "length_struct1": 280,
+        "length_struct2": 726,
+        "aligned_length": 165,
+        "rmsd": 6.46,
+        "tm_score_struct1": 0.34586,
+        "tm_score_struct2": 0.1659,
+        "chain": "G",
+        "chain_length": 280
+      },
+      {
+        "length_struct1": 234,
+        "length_struct2": 726,
+        "aligned_length": 128,
+        "rmsd": 5.92,
+        "tm_score_struct1": 0.31361,
+        "tm_score_struct2": 0.13239,
+        "chain": "H",
+        "chain_length": 234
+      },
+      {
+        "length_struct1": 594,
+        "length_struct2": 726,
+        "aligned_length": 236,
+        "rmsd": 8.48,
+        "tm_score_struct1": 0.22695,
+        "tm_score_struct2": 0.19655,
+        "chain": "L",
+        "chain_length": 594
+      }
+    ],
+    "description": "Individual chain alignments of 7xg4 protein chains vs 6n40"
+  },
+  "chain_composition": {
+    "7xg4": {
+      "A": {
+        "n_residues": 242,
+        "n_atoms": 1898,
+        "type": "protein"
+      },
+      "B": {
+        "n_residues": 219,
+        "n_atoms": 1709,
+        "type": "protein"
+      },
+      "C": {
+        "n_residues": 329,
+        "n_atoms": 2488,
+        "type": "protein"
+      },
+      "D": {
+        "n_residues": 331,
+        "n_atoms": 2503,
+        "type": "protein"
+      },
+      "E": {
+        "n_residues": 324,
+        "n_atoms": 2450,
+        "type": "protein"
+      },
+      "F": {
+        "n_residues": 324,
+        "n_atoms": 2450,
+        "type": "protein"
+      },
+      "G": {
+        "n_residues": 280,
+        "n_atoms": 2131,
+        "type": "protein"
+      },
+      "H": {
+        "n_residues": 234,
+        "n_atoms": 1800,
+        "type": "protein"
+      },
+      "I": {
+        "n_residues": 61,
+        "n_atoms": 1317,
+        "type": "nucleic_acid"
+      },
+      "J": {
+        "n_residues": 36,
+        "n_atoms": 722,
+        "type": "nucleic_acid"
+      },
+      "K": {
+        "n_residues": 37,
+        "n_atoms": 759,
+        "type": "nucleic_acid"
+      },
+      "L": {
+        "n_residues": 594,
+        "n_atoms": 4542,
+        "type": "protein"
+      }
+    },
+    "6n40": {
+      "A": {
+        "n_residues": 726,
+        "n_atoms": 5535,
+        "type": "protein"
+      }
+    }
+  }
+}

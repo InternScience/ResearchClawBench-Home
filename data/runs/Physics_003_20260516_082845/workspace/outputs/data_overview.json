@@ -1,0 +1,36 @@
+{
+  "energy_axis": {
+    "range": [
+      -0.5,
+      0.5
+    ],
+    "points": 200
+  },
+  "kx_axis": {
+    "range": [
+      -0.3,
+      0.3
+    ],
+    "points": 150
+  },
+  "polarization_angles": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180
+  ],
+  "time_delays": [
+    -0.5,
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "pump_wavelength_um": 5.0,
+  "pump_photon_energy_ev": 0.248,
+  "dirac_point_energy": -0.042713567839196,
+  "dirac_point_kx": -0.3
+}

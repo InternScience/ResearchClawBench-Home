@@ -1,0 +1,36 @@
+{
+  "european_benchmark_eur_per_kg": 4.2191,
+  "downstream_cost_eur_per_kg": 1.6,
+  "scenarios": {
+    "strong_de-risking": {
+      "min_delivered_eur_per_kg": 3.3343,
+      "max_delivered_eur_per_kg": 4.1087,
+      "mean_delivered_eur_per_kg": 3.6054,
+      "min_production_eur_per_kg": 1.7343,
+      "max_production_eur_per_kg": 2.5087,
+      "mean_production_eur_per_kg": 2.0054,
+      "competitive_sites": 30,
+      "least_cost_hex": "hex_001"
+    },
+    "moderate_de-risking": {
+      "min_delivered_eur_per_kg": 3.7174,
+      "max_delivered_eur_per_kg": 4.6664,
+      "mean_delivered_eur_per_kg": 4.0498,
+      "min_production_eur_per_kg": 2.1174,
+      "max_production_eur_per_kg": 3.0664,
+      "mean_production_eur_per_kg": 2.4498,
+      "competitive_sites": 24,
+      "least_cost_hex": "hex_001"
+    },
+    "no_de-risking": {
+      "min_delivered_eur_per_kg": 4.2863,
+      "max_delivered_eur_per_kg": 5.4946,
+      "mean_delivered_eur_per_kg": 4.7096,
+      "min_production_eur_per_kg": 2.6863,
+      "max_production_eur_per_kg": 3.8946,
+      "mean_production_eur_per_kg": 3.1096,
+      "competitive_sites": 0,
+      "least_cost_hex": "hex_001"
+    }
+  }
+}

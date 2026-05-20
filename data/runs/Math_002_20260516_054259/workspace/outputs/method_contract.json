@@ -1,0 +1,28 @@
+{
+  "task": "Develop a hybrid MARL-LNS algorithm for Multi-Agent Path Finding",
+  "method_commitments": {
+    "core_algorithm": "Hybrid MARL-LNS",
+    "phase_1": "Multi-Agent Reinforcement Learning (Q-learning) for initial collision reduction",
+    "phase_2": "Large Neighborhood Search with Prioritized Planning for collision resolution",
+    "baselines": ["Prioritized Planning (PP)", "Large Neighborhood Search (LNS)", "MARL-only"],
+    "evaluation_metrics": ["success_rate", "colliding_pairs", "sum_of_costs", "runtime"],
+    "datasets": ["random_small", "random_medium", "maze", "room", "warehouse", "empty"],
+    "collision_types": ["vertex", "edge/swapping"],
+    "single_agent_planner": "space_time_a_star"
+  },
+  "key_hypothesis": "MARL initialization reduces collision density, enabling LNS to resolve remaining conflicts more efficiently",
+  "related_work_key_papers": [
+    "MAPF-LNS2 (Li et al. 2022) - LNS framework for MAPF",
+    "PRIMAL (Sartoretti et al. 2019) - MARL for decentralized MAPF",
+    "SCRIMP (Wang et al. 2023) - Communication-based MARL for MAPF",
+    "EECBS (Li et al. 2021) - Bounded-suboptimal CBS",
+    "LaCAM (Okumura 2023) - Lazy constraints addition search"
+  ],
+  "limitations_acknowledged": [
+    "Tabular Q-learning instead of deep neural networks",
+    "Space-time A* instead of SIPPS",
+    "Limited evaluation (2 seeds, 5s time limit)",
+    "No solution quality guarantees",
+    "Random agent generation instead of benchmark configurations"
+  ]
+}

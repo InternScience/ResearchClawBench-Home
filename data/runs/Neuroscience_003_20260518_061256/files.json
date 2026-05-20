@@ -1,0 +1,269 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "phase1_explore.py",
+    "path": "code/phase1_explore.py",
+    "type": "file",
+    "size": 2605,
+    "mtime": 1779246056.0,
+    "exported": true
+  },
+  {
+    "name": "phase2_dynamics.py",
+    "path": "code/phase2_dynamics.py",
+    "type": "file",
+    "size": 7340,
+    "mtime": 1779246056.0,
+    "exported": true
+  },
+  {
+    "name": "phase3_selection.py",
+    "path": "code/phase3_selection.py",
+    "type": "file",
+    "size": 7313,
+    "mtime": 1779246056.0,
+    "exported": true
+  },
+  {
+    "name": "phase4_validation.py",
+    "path": "code/phase4_validation.py",
+    "type": "file",
+    "size": 10261,
+    "mtime": 1779246056.0,
+    "exported": true
+  },
+  {
+    "name": "phase5_biology.py",
+    "path": "code/phase5_biology.py",
+    "type": "file",
+    "size": 7721,
+    "mtime": 1779246056.0,
+    "exported": true
+  },
+  {
+    "name": "phase6_comprehensive.py",
+    "path": "code/phase6_comprehensive.py",
+    "type": "file",
+    "size": 12400,
+    "mtime": 1779246056.0,
+    "exported": true
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "type": "directory"
+  },
+  {
+    "name": "adata_RPE.h5ad",
+    "path": "data/adata_RPE.h5ad",
+    "type": "file",
+    "size": 8145585,
+    "mtime": 1772768114.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "biological_analysis.json",
+    "path": "outputs/biological_analysis.json",
+    "type": "file",
+    "size": 12489,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "feature_dynamics_scores.csv",
+    "path": "outputs/feature_dynamics_scores.csv",
+    "type": "file",
+    "size": 43474,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "final_metrics.json",
+    "path": "outputs/final_metrics.json",
+    "type": "file",
+    "size": 501,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "selected_feature_indices.npy",
+    "path": "outputs/selected_feature_indices.npy",
+    "type": "file",
+    "size": 528,
+    "mtime": 1779246054.0,
+    "exported": false
+  },
+  {
+    "name": "selected_features.csv",
+    "path": "outputs/selected_features.csv",
+    "type": "file",
+    "size": 4758,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "validation_results.json",
+    "path": "outputs/validation_results.json",
+    "type": "file",
+    "size": 703,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "related_work",
+    "path": "related_work",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.pdf",
+    "path": "related_work/paper_000.pdf",
+    "type": "file",
+    "size": 3849589,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_001.pdf",
+    "path": "related_work/paper_001.pdf",
+    "type": "file",
+    "size": 1095492,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_002.pdf",
+    "path": "related_work/paper_002.pdf",
+    "type": "file",
+    "size": 8684628,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "paper_003.pdf",
+    "path": "related_work/paper_003.pdf",
+    "type": "file",
+    "size": 1480436,
+    "mtime": 1773914911.0,
+    "shared": true,
+    "exported": false
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "figure1_data_overview.png",
+    "path": "report/images/figure1_data_overview.png",
+    "type": "file",
+    "size": 1365138,
+    "mtime": 1779246056.0,
+    "exported": false
+  },
+  {
+    "name": "figure2_dynamics_scores.png",
+    "path": "report/images/figure2_dynamics_scores.png",
+    "type": "file",
+    "size": 264183,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "figure3_feature_selection.png",
+    "path": "report/images/figure3_feature_selection.png",
+    "type": "file",
+    "size": 499572,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "figure3b_heatmap_selected.png",
+    "path": "report/images/figure3b_heatmap_selected.png",
+    "type": "file",
+    "size": 3085703,
+    "mtime": 1779246056.0,
+    "exported": false
+  },
+  {
+    "name": "figure4_trajectory_validation.png",
+    "path": "report/images/figure4_trajectory_validation.png",
+    "type": "file",
+    "size": 594212,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "figure5_biology_cellcycle.png",
+    "path": "report/images/figure5_biology_cellcycle.png",
+    "type": "file",
+    "size": 228626,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "figure5b_feature_trajectories.png",
+    "path": "report/images/figure5b_feature_trajectories.png",
+    "type": "file",
+    "size": 505485,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "figure5c_protein_network.png",
+    "path": "report/images/figure5c_protein_network.png",
+    "type": "file",
+    "size": 207803,
+    "mtime": 1779246056.0,
+    "exported": true
+  },
+  {
+    "name": "figure6_resolution_analysis.png",
+    "path": "report/images/figure6_resolution_analysis.png",
+    "type": "file",
+    "size": 214673,
+    "mtime": 1779246054.0,
+    "exported": true
+  },
+  {
+    "name": "figure7_comprehensive.png",
+    "path": "report/images/figure7_comprehensive.png",
+    "type": "file",
+    "size": 1091683,
+    "mtime": 1779246056.0,
+    "exported": false
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 24403,
+    "mtime": 1779246057.0,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4810,
+    "mtime": 1779055976.0,
+    "exported": true
+  }
+]

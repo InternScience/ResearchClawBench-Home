@@ -1,0 +1,41 @@
+{
+  "target_artifacts": {
+    "code": [
+      {"file": "code/data_pipeline.py", "status": "satisfied", "description": "Data loading, preprocessing, statistical disentanglement"},
+      {"file": "code/gnn_model.py", "status": "satisfied", "description": "GNN architecture with representational disentanglement and edge classifier"},
+      {"file": "code/few_shot.py", "status": "satisfied", "description": "Few-shot learning: prototype networks, bi-similarity fusion, open-set evaluation"},
+      {"file": "code/main_experiment.py", "status": "satisfied", "description": "Main experiment pipeline: all four evaluation protocols"},
+      {"file": "code/visualization.py", "status": "satisfied", "description": "Figure generation for report"}
+    ],
+    "outputs": [
+      {"file": "outputs/all_results.json", "status": "satisfied", "description": "Complete experimental results (binary, multi-class, few-shot, unknown attack)"},
+      {"file": "outputs/method_contract.json", "status": "satisfied", "description": "Method contract specification"},
+      {"file": "outputs/target_artifact_inventory.json", "status": "satisfied", "description": "This file"},
+      {"file": "outputs/dependency_check.json", "status": "satisfied", "description": "Dependency availability verification"}
+    ],
+    "report": [
+      {"file": "report/report.md", "status": "satisfied", "description": "Comprehensive research report with methodology, results, discussion"},
+      {"file": "report/images/fig1_data_distribution.png", "status": "satisfied", "description": "Data distribution and per-class F1"},
+      {"file": "report/images/fig2_binary_comparison.png", "status": "satisfied", "description": "Binary classification method comparison"},
+      {"file": "report/images/fig3_confusion_matrix.png", "status": "satisfied", "description": "Multi-class confusion matrix"},
+      {"file": "report/images/fig4_feature_importance.png", "status": "satisfied", "description": "Feature importance by mutual information"},
+      {"file": "report/images/fig5_disentanglement.png", "status": "satisfied", "description": "Disentangled feature space visualization"},
+      {"file": "report/images/fig6_unknown_attack.png", "status": "satisfied", "description": "Unknown attack detection per held-out class"},
+      {"file": "report/images/fig7_few_shot_analysis.png", "status": "satisfied", "description": "Few-shot analysis: sample count vs F1"},
+      {"file": "report/images/fig8_architecture.png", "status": "satisfied", "description": "DIDS-MFL architecture diagram"}
+    ]
+  },
+  "primary_quantitative_answers": {
+    "binary_detection_f1": 0.9074,
+    "binary_detection_accuracy": 0.9607,
+    "multiclass_macro_f1": 0.7804,
+    "multiclass_weighted_f1": 0.9722,
+    "few_shot_5way_5shot_accuracy": 0.2879,
+    "unknown_attack_avg_f1": 0.0333,
+    "dataset_total_flows": 148774,
+    "dataset_benign": 114716,
+    "dataset_attack": 34058,
+    "n_attack_classes": 9
+  },
+  "unsatisfied_artifacts": []
+}

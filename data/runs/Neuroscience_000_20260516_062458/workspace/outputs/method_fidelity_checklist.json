@@ -1,0 +1,74 @@
+{
+  "method": "SimBA-style supervised behavior classification",
+  "definition": "Two-stage pipeline: (1) compute engineered spatial/kinematic features from tracked pose keypoints, (2) train supervised ensemble classifiers on labeled behavior data",
+  "fidelity_items": [
+    {
+      "step": "Pose data input",
+      "requirement": "Frame-level (x, y, p) coordinates for multiple body keypoints per animal",
+      "implemented": true,
+      "notes": "8 keypoints x 3 coords x 2 mice from SimBA sample project"
+    },
+    {
+      "step": "Feature engineering — spatial",
+      "requirement": "Within-animal distances, between-animal distances, body angles, polygon areas",
+      "implemented": true,
+      "notes": "Nose-to-tail, width, ear distance, centroid distance, nose-to-nose, cross distances, polygon areas via convex hull"
+    },
+    {
+      "step": "Feature engineering — kinematic",
+      "requirement": "Frame-to-frame displacements of body parts",
+      "implemented": true,
+      "notes": "16 movement channels (8 body parts x 2 mice)"
+    },
+    {
+      "step": "Feature engineering — temporal windows",
+      "requirement": "Rolling window statistics (means, stds) across multiple timescales",
+      "implemented": true,
+      "notes": "Windows of 2, 5, 6, 7, 10, 15 frames for key distances and total movement"
+    },
+    {
+      "step": "Classifier training",
+      "requirement": "Ensemble tree methods (Random Forest, Gradient Boosting) with class weighting",
+      "implemented": true,
+      "notes": "RF: 200 trees, max_depth=15; GB: 200 estimators, lr=0.05, max_depth=5; both class_weight='balanced'"
+    },
+    {
+      "step": "Train/test split",
+      "requirement": "Stratified split to preserve class proportions",
+      "implemented": true,
+      "notes": "75/25 split with stratification"
+    },
+    {
+      "step": "Evaluation metrics",
+      "requirement": "Accuracy, precision, recall, F1, ROC AUC, PR AUC, confusion matrices",
+      "implemented": true,
+      "notes": "All metrics computed and exported"
+    },
+    {
+      "step": "Feature importance",
+      "requirement": "Gini importance for tree models",
+      "implemented": true,
+      "notes": "Top-20 features exported per classifier-behavior combination"
+    },
+    {
+      "step": "Cross-validation",
+      "requirement": "K-fold CV for generalization assessment",
+      "implemented": true,
+      "notes": "5-fold stratified CV"
+    }
+  ],
+  "deviations": [
+    {
+      "item": "Feature count",
+      "simba_reference": "570+ features in reference output",
+      "our_implementation": "90 features",
+      "reason": "Focus on core spatial/kinematic/temporal features that are most interpretable and auditable. Additional features (percentile ranks, deviation statistics, tortuosity) omitted for transparency."
+    },
+    {
+      "item": "SimBA library",
+      "simba_reference": "Uses SimBA Python package directly",
+      "our_implementation": "scikit-learn reimplementation",
+      "reason": "Faithful methodological reproduction using standard ML libraries for full transparency and auditability."
+    }
+  ]
+}

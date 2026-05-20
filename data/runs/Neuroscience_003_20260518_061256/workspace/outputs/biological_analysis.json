@@ -1,0 +1,487 @@
+{
+  "protein_summary": [
+    {
+      "protein": "DNA",
+      "n_features": 1,
+      "spearman_r": 0.7359945236404305,
+      "pvalue": 0.0,
+      "mean_dynamics_score": 0.9295202465035268,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "nuc",
+      "n_features": 1,
+      "spearman_r": 0.7146348635615428,
+      "pvalue": 0.0,
+      "mean_dynamics_score": 0.7562208725982814,
+      "compartments": "unknown"
+    },
+    {
+      "protein": "pH2AX",
+      "n_features": 1,
+      "spearman_r": 0.5826144580301129,
+      "pvalue": 1.4635854529268305e-250,
+      "mean_dynamics_score": 0.5436404129164468,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "cycA",
+      "n_features": 3,
+      "spearman_r": 0.5394995967642667,
+      "pvalue": 3.2706521777630757e-208,
+      "mean_dynamics_score": 0.4323387125160844,
+      "compartments": "nuc, ring, cell"
+    },
+    {
+      "protein": "Skp2",
+      "n_features": 1,
+      "spearman_r": 0.5137867003929677,
+      "pvalue": 9.559193336098864e-186,
+      "mean_dynamics_score": 0.6828704758741109,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "Cdt1",
+      "n_features": 1,
+      "spearman_r": -0.5046733847071078,
+      "pvalue": 3.093844660221899e-178,
+      "mean_dynamics_score": 0.4473207086123317,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "p27",
+      "n_features": 1,
+      "spearman_r": -0.49477946900436137,
+      "pvalue": 2.4541327081165608e-170,
+      "mean_dynamics_score": 0.413135450805105,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pp21",
+      "n_features": 1,
+      "spearman_r": 0.4840634471442134,
+      "pvalue": 4.544553614195187e-162,
+      "mean_dynamics_score": 0.343731087092523,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "cycB1",
+      "n_features": 3,
+      "spearman_r": 0.47225844829968017,
+      "pvalue": 2.696023703995656e-153,
+      "mean_dynamics_score": 0.36441682457706515,
+      "compartments": "ring, nuc, cell"
+    },
+    {
+      "protein": "E2F1",
+      "n_features": 1,
+      "spearman_r": 0.42886615522800786,
+      "pvalue": 7.3740567553754276e-124,
+      "mean_dynamics_score": 0.4828714889960468,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pp53",
+      "n_features": 1,
+      "spearman_r": 0.3704153269125631,
+      "pvalue": 1.8151732322613466e-90,
+      "mean_dynamics_score": 0.2890901708272351,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "Cdh1",
+      "n_features": 1,
+      "spearman_r": -0.3670278266151216,
+      "pvalue": 9.857296571373306e-89,
+      "mean_dynamics_score": 0.3898233402428807,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "cycE",
+      "n_features": 1,
+      "spearman_r": 0.36154346809320304,
+      "pvalue": 5.7340795043881745e-86,
+      "mean_dynamics_score": 0.2771344707437625,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pCHK1",
+      "n_features": 1,
+      "spearman_r": 0.32934887790097084,
+      "pvalue": 8.408262106251927e-71,
+      "mean_dynamics_score": 0.2889783270723505,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "p16",
+      "n_features": 1,
+      "spearman_r": 0.3242281444594991,
+      "pvalue": 1.4951306307934085e-68,
+      "mean_dynamics_score": 0.2441587847042934,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "cFos",
+      "n_features": 1,
+      "spearman_r": 0.31391288072518436,
+      "pvalue": 3.7694668216868393e-64,
+      "mean_dynamics_score": 0.2396332571714851,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "GSK3b",
+      "n_features": 1,
+      "spearman_r": 0.31112700357368656,
+      "pvalue": 5.437833338079226e-63,
+      "mean_dynamics_score": 0.2444572235788809,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "p53",
+      "n_features": 1,
+      "spearman_r": 0.29796223528395205,
+      "pvalue": 1.1106566327004193e-57,
+      "mean_dynamics_score": 0.2305437003827621,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "CDK2",
+      "n_features": 2,
+      "spearman_r": 0.27902535810493173,
+      "pvalue": 1.621119636412546e-50,
+      "mean_dynamics_score": 0.33881871554786724,
+      "compartments": "nuc, cell"
+    },
+    {
+      "protein": "BP1",
+      "n_features": 1,
+      "spearman_r": 0.2680758638404665,
+      "pvalue": 1.2694018306113264e-46,
+      "mean_dynamics_score": 0.2736660878905879,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "CDK6",
+      "n_features": 1,
+      "spearman_r": 0.2602163261912233,
+      "pvalue": 6.147057319093139e-44,
+      "mean_dynamics_score": 0.2220515344908675,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pAKT",
+      "n_features": 3,
+      "spearman_r": -0.24840881747885987,
+      "pvalue": 4.495535185255471e-40,
+      "mean_dynamics_score": 0.1815506197308557,
+      "compartments": "ring, cell, nuc"
+    },
+    {
+      "protein": "pERK",
+      "n_features": 1,
+      "spearman_r": -0.23287717648141512,
+      "pvalue": 2.698264884874973e-35,
+      "mean_dynamics_score": 0.1725718971105587,
+      "compartments": "cell"
+    },
+    {
+      "protein": "Fra1",
+      "n_features": 1,
+      "spearman_r": -0.23031404301665187,
+      "pvalue": 1.537702245531253e-34,
+      "mean_dynamics_score": 0.1358783763128547,
+      "compartments": "cell"
+    },
+    {
+      "protein": "p21",
+      "n_features": 1,
+      "spearman_r": -0.22669044155715593,
+      "pvalue": 1.7365767974964024e-33,
+      "mean_dynamics_score": 0.2662736211983606,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pp38",
+      "n_features": 1,
+      "spearman_r": 0.20999956954906698,
+      "pvalue": 7.158267966600066e-29,
+      "mean_dynamics_score": 0.1384045358305961,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pSTAT3",
+      "n_features": 1,
+      "spearman_r": 0.20884752910319032,
+      "pvalue": 1.4430714778384837e-28,
+      "mean_dynamics_score": 0.156726633487418,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "p38",
+      "n_features": 1,
+      "spearman_r": 0.20726432061059424,
+      "pvalue": 3.756530156649978e-28,
+      "mean_dynamics_score": 0.2052495460039627,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "bCat",
+      "n_features": 1,
+      "spearman_r": 0.18944362607729187,
+      "pvalue": 1.0453545347704205e-23,
+      "mean_dynamics_score": 0.1316723254515543,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pp27",
+      "n_features": 1,
+      "spearman_r": 0.18297683057954195,
+      "pvalue": 3.370410837510124e-22,
+      "mean_dynamics_score": 0.213391816385807,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "CDK4",
+      "n_features": 1,
+      "spearman_r": 0.163320444142171,
+      "pvalue": 5.990220224493859e-18,
+      "mean_dynamics_score": 0.2120481872271457,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "pRB",
+      "n_features": 2,
+      "spearman_r": 0.12233557788961365,
+      "pvalue": 1.1398199981399358e-10,
+      "mean_dynamics_score": 0.16571897098942726,
+      "compartments": "nuc, cell"
+    },
+    {
+      "protein": "pp65",
+      "n_features": 1,
+      "spearman_r": 0.08693845415683658,
+      "pvalue": 4.804768037432005e-06,
+      "mean_dynamics_score": 0.1281246771162304,
+      "compartments": "nuc"
+    },
+    {
+      "protein": "cycD1",
+      "n_features": 2,
+      "spearman_r": -0.08252289910980312,
+      "pvalue": 1.4244858668473182e-05,
+      "mean_dynamics_score": 0.20086277061527347,
+      "compartments": "nuc, ring"
+    },
+    {
+      "protein": "PCNA",
+      "n_features": 4,
+      "spearman_r": 0.04103915665255448,
+      "pvalue": 0.0311179190782978,
+      "mean_dynamics_score": 0.25648637735865887,
+      "compartments": "nuc, ring, cell"
+    },
+    {
+      "protein": "pGSK3b",
+      "n_features": 2,
+      "spearman_r": 0.006097989068240294,
+      "pvalue": 0.7488455855518973,
+      "mean_dynamics_score": 0.1436502213776673,
+      "compartments": "nuc, cell"
+    },
+    {
+      "protein": "cMyc",
+      "n_features": 1,
+      "spearman_r": -0.005860143167957815,
+      "pvalue": 0.7583303197540866,
+      "mean_dynamics_score": 0.1505633637537953,
+      "compartments": "nuc"
+    }
+  ],
+  "protein_age_correlations": [
+    {
+      "protein": "DNA",
+      "spearman_r": 0.7359945236404305,
+      "pvalue": 0.0
+    },
+    {
+      "protein": "nuc",
+      "spearman_r": 0.7146348635615428,
+      "pvalue": 0.0
+    },
+    {
+      "protein": "pH2AX",
+      "spearman_r": 0.5826144580301129,
+      "pvalue": 1.4635854529268305e-250
+    },
+    {
+      "protein": "cycA",
+      "spearman_r": 0.5394995967642667,
+      "pvalue": 3.2706521777630757e-208
+    },
+    {
+      "protein": "Skp2",
+      "spearman_r": 0.5137867003929677,
+      "pvalue": 9.559193336098864e-186
+    },
+    {
+      "protein": "Cdt1",
+      "spearman_r": -0.5046733847071078,
+      "pvalue": 3.093844660221899e-178
+    },
+    {
+      "protein": "p27",
+      "spearman_r": -0.49477946900436137,
+      "pvalue": 2.4541327081165608e-170
+    },
+    {
+      "protein": "pp21",
+      "spearman_r": 0.4840634471442134,
+      "pvalue": 4.544553614195187e-162
+    },
+    {
+      "protein": "cycB1",
+      "spearman_r": 0.47225844829968017,
+      "pvalue": 2.696023703995656e-153
+    },
+    {
+      "protein": "E2F1",
+      "spearman_r": 0.42886615522800786,
+      "pvalue": 7.3740567553754276e-124
+    },
+    {
+      "protein": "pp53",
+      "spearman_r": 0.3704153269125631,
+      "pvalue": 1.8151732322613466e-90
+    },
+    {
+      "protein": "Cdh1",
+      "spearman_r": -0.3670278266151216,
+      "pvalue": 9.857296571373306e-89
+    },
+    {
+      "protein": "cycE",
+      "spearman_r": 0.36154346809320304,
+      "pvalue": 5.7340795043881745e-86
+    },
+    {
+      "protein": "pCHK1",
+      "spearman_r": 0.32934887790097084,
+      "pvalue": 8.408262106251927e-71
+    },
+    {
+      "protein": "p16",
+      "spearman_r": 0.3242281444594991,
+      "pvalue": 1.4951306307934085e-68
+    },
+    {
+      "protein": "cFos",
+      "spearman_r": 0.31391288072518436,
+      "pvalue": 3.7694668216868393e-64
+    },
+    {
+      "protein": "GSK3b",
+      "spearman_r": 0.31112700357368656,
+      "pvalue": 5.437833338079226e-63
+    },
+    {
+      "protein": "p53",
+      "spearman_r": 0.29796223528395205,
+      "pvalue": 1.1106566327004193e-57
+    },
+    {
+      "protein": "CDK2",
+      "spearman_r": 0.27902535810493173,
+      "pvalue": 1.621119636412546e-50
+    },
+    {
+      "protein": "BP1",
+      "spearman_r": 0.2680758638404665,
+      "pvalue": 1.2694018306113264e-46
+    },
+    {
+      "protein": "CDK6",
+      "spearman_r": 0.2602163261912233,
+      "pvalue": 6.147057319093139e-44
+    },
+    {
+      "protein": "pAKT",
+      "spearman_r": -0.24840881747885987,
+      "pvalue": 4.495535185255471e-40
+    },
+    {
+      "protein": "pERK",
+      "spearman_r": -0.23287717648141512,
+      "pvalue": 2.698264884874973e-35
+    },
+    {
+      "protein": "Fra1",
+      "spearman_r": -0.23031404301665187,
+      "pvalue": 1.537702245531253e-34
+    },
+    {
+      "protein": "p21",
+      "spearman_r": -0.22669044155715593,
+      "pvalue": 1.7365767974964024e-33
+    },
+    {
+      "protein": "pp38",
+      "spearman_r": 0.20999956954906698,
+      "pvalue": 7.158267966600066e-29
+    },
+    {
+      "protein": "pSTAT3",
+      "spearman_r": 0.20884752910319032,
+      "pvalue": 1.4430714778384837e-28
+    },
+    {
+      "protein": "p38",
+      "spearman_r": 0.20726432061059424,
+      "pvalue": 3.756530156649978e-28
+    },
+    {
+      "protein": "bCat",
+      "spearman_r": 0.18944362607729187,
+      "pvalue": 1.0453545347704205e-23
+    },
+    {
+      "protein": "pp27",
+      "spearman_r": 0.18297683057954195,
+      "pvalue": 3.370410837510124e-22
+    },
+    {
+      "protein": "CDK4",
+      "spearman_r": 0.163320444142171,
+      "pvalue": 5.990220224493859e-18
+    },
+    {
+      "protein": "pRB",
+      "spearman_r": 0.12233557788961365,
+      "pvalue": 1.1398199981399358e-10
+    },
+    {
+      "protein": "pp65",
+      "spearman_r": 0.08693845415683658,
+      "pvalue": 4.804768037432005e-06
+    },
+    {
+      "protein": "cycD1",
+      "spearman_r": -0.08252289910980312,
+      "pvalue": 1.4244858668473182e-05
+    },
+    {
+      "protein": "PCNA",
+      "spearman_r": 0.04103915665255448,
+      "pvalue": 0.0311179190782978
+    },
+    {
+      "protein": "pGSK3b",
+      "spearman_r": 0.006097989068240294,
+      "pvalue": 0.7488455855518973
+    },
+    {
+      "protein": "cMyc",
+      "spearman_r": -0.005860143167957815,
+      "pvalue": 0.7583303197540866
+    }
+  ]
+}

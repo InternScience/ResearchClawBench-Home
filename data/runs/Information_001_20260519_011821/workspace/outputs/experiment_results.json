@@ -1,0 +1,182 @@
+[
+  {
+    "image": "demo1",
+    "question": "What color is the car in the center?",
+    "answers": {
+      "baseline": "yellow",
+      "rel-att": "yellow",
+      "pure-grad": "yellow",
+      "grad-att": "yellow"
+    },
+    "crop_boxes": {
+      "rel-att": [
+        368,
+        0,
+        614,
+        614
+      ],
+      "pure-grad": [
+        0,
+        0,
+        614,
+        614
+      ],
+      "grad-att": [
+        0,
+        0,
+        614,
+        614
+      ]
+    }
+  },
+  {
+    "image": "demo1",
+    "question": "What is the color of the taxi?",
+    "answers": {
+      "baseline": "yellow",
+      "rel-att": "yellow",
+      "pure-grad": "yellow",
+      "grad-att": "yellow"
+    },
+    "crop_boxes": {
+      "rel-att": [
+        0,
+        0,
+        614,
+        614
+      ],
+      "pure-grad": [
+        0,
+        0,
+        614,
+        614
+      ],
+      "grad-att": [
+        0,
+        0,
+        614,
+        614
+      ]
+    }
+  },
+  {
+    "image": "demo1",
+    "question": "How many people are wearing helmets?",
+    "answers": {
+      "baseline": "2",
+      "rel-att": "3",
+      "pure-grad": "3",
+      "grad-att": "3"
+    },
+    "crop_boxes": {
+      "rel-att": [
+        0,
+        0,
+        614,
+        614
+      ],
+      "pure-grad": [
+        0,
+        0,
+        614,
+        614
+      ],
+      "grad-att": [
+        0,
+        0,
+        614,
+        614
+      ]
+    }
+  },
+  {
+    "image": "demo2",
+    "question": "What color are the flowers?",
+    "answers": {
+      "baseline": "red yellow and purple",
+      "rel-att": "red yellow and pink",
+      "pure-grad": "red yellow and white",
+      "grad-att": "red yellow and white"
+    },
+    "crop_boxes": {
+      "rel-att": [
+        360,
+        0,
+        1200,
+        1200
+      ],
+      "pure-grad": [
+        720,
+        0,
+        1200,
+        1200
+      ],
+      "grad-att": [
+        720,
+        0,
+        1200,
+        1200
+      ]
+    }
+  },
+  {
+    "image": "demo2",
+    "question": "What is in the background?",
+    "answers": {
+      "baseline": "building",
+      "rel-att": "building",
+      "pure-grad": "building",
+      "grad-att": "building"
+    },
+    "crop_boxes": {
+      "rel-att": [
+        0,
+        0,
+        1200,
+        1200
+      ],
+      "pure-grad": [
+        720,
+        0,
+        1200,
+        1200
+      ],
+      "grad-att": [
+        0,
+        0,
+        1200,
+        1200
+      ]
+    }
+  },
+  {
+    "image": "demo2",
+    "question": "How many people are there?",
+    "answers": {
+      "baseline": "more than ten",
+      "rel-att": "more than ten",
+      "pure-grad": "many",
+      "grad-att": "more than ten"
+    },
+    "crop_boxes": {
+      "rel-att": [
+        0,
+        0,
+        1200,
+        1200
+      ],
+      "pure-grad": [
+        720,
+        0,
+        1200,
+        1200
+      ],
+      "grad-att": [
+        0,
+        0,
+        1200,
+        1200
+      ]
+    }
+  }
+]

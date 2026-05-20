@@ -1,0 +1,12 @@
+{
+  "pytorch": {"version": "2.10.0+cu128", "status": "available"},
+  "torch_geometric": {"version": "2.7.0", "status": "available"},
+  "sklearn": {"version": "1.8.0", "status": "available"},
+  "matplotlib": {"version": "3.10.8", "status": "available"},
+  "seaborn": {"version": "0.13.2", "status": "available"},
+  "numpy": {"version": "2.2.6", "status": "available"},
+  "pandas": {"version": "2.3.3", "status": "available"},
+  "umap": {"status": "available"},
+  "cuda": {"status": "unavailable", "fallback": "CPU training"},
+  "note": "All required packages available. CPU-only mode."
+}

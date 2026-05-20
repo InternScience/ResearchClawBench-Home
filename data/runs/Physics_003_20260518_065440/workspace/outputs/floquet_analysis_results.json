@@ -1,0 +1,80 @@
+{
+  "experiment": {
+    "pump_wavelength_um": 5.0,
+    "photon_energy_eV": 0.24796,
+    "dirac_point": {
+      "energy_eV": -0.042713567839196,
+      "kx_A_inv": -0.3
+    },
+    "energy_range_eV": [
+      -0.5,
+      0.5
+    ],
+    "kx_range_A_inv": [
+      -0.3,
+      0.3
+    ],
+    "time_delays_ps": [
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "polarization_angles_deg": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180
+    ]
+  },
+  "floquet_results": {
+    "replica_bands": [
+      {
+        "kx": -0.046308724832214765,
+        "energy": -0.290713567839196,
+        "intensity": 0.49521670717091265,
+        "order": -1,
+        "energy_idx": 42,
+        "kx_idx": 63
+      },
+      {
+        "kx": 0.046308724832214765,
+        "energy": -0.290713567839196,
+        "intensity": 0.4951316941393499,
+        "order": -1,
+        "energy_idx": 42,
+        "kx_idx": 86
+      },
+      {
+        "kx": -0.03422818791946308,
+        "energy": 0.205286432160804,
+        "intensity": 0.5244272546110498,
+        "order": 1,
+        "energy_idx": 140,
+        "kx_idx": 66
+      },
+      {
+        "kx": 0.03422818791946308,
+        "energy": 0.205286432160804,
+        "intensity": 0.5244228565426068,
+        "order": 1,
+        "energy_idx": 140,
+        "kx_idx": 83
+      }
+    ],
+    "expected_spacing_eV": 0.24796,
+    "measured_spacing_upper_eV": 0.248,
+    "measured_spacing_lower_eV": -0.248
+  },
+  "polarization_fit": {
+    "model": "I(theta) = I0 + DeltaI * cos^2(theta)",
+    "I0": 0.5006632079104424,
+    "Delta_I": 0.009095217450887372,
+    "rms_residual": 0.007188420745897228,
+    "cos2_amplitude_pct": 1.8166338782605942
+  }
+}

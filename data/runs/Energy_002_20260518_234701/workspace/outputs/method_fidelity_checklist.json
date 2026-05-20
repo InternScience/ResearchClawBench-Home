@@ -1,0 +1,12 @@
+{
+  "named_method": "Geospatial Levelized-Cost Model (GeoH2-inspired)",
+  "fidelity_checks": {
+    "LCOE_calculation": "Implemented exactly as PVF-based annuity formula from Müller et al. (2023)",
+    "Technology_choice": "Least-cost PV vs wind selection per hexagon",
+    "LCOH_production": "Electrolyzer CAPEX/OPEX annuity + electricity cost + water cost",
+    "Downstream_chain": "Ammonia synthesis + shipping + cracking + local truck adders (not full PyPSA optimization, but transparent static adders)",
+    "European_benchmark": "Identical model equations with European CFs and CAPEX",
+    "Scenarios": "Three WACC levels capturing de-risking gradient"
+  },
+  "deviations": "Full hourly PyPSA dispatch optimization is omitted for transparency and reproducibility; instead we use static capacity factors and annuity-based LCOH. This is a simplification but preserves the comparative structure."
+}

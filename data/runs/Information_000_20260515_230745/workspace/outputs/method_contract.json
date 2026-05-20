@@ -1,0 +1,29 @@
+{
+  "task": "Build a unified autoregressive framework that decouples visual encoding to perform both multimodal understanding and visual generation within a single Transformer architecture.",
+  "method_commitments": {
+    "architecture_type": "Autoregressive Transformer (next-token prediction)",
+    "key_innovation": "Decoupled Visual Encoding (DVE) - separate pathways for understanding (continuous) and generation (discrete tokens) sharing a common vision backbone",
+    "modalities": ["text", "image"],
+    "capabilities": [
+      "Multimodal understanding (VQA, captioning, OCR, reasoning)",
+      "Visual generation (text-to-image, inpainting, interleaved)"
+    ],
+    "baseline_methods": [
+      "Chameleon (single VQGAN encoder for both tasks)",
+      "LLaVA (continuous encoder for understanding only)",
+      "LlamaGen (autoregressive generation only)"
+    ]
+  },
+  "target_artifacts": {
+    "architecture_diagram": "fig1_architecture_overview.png",
+    "token_efficiency_comparison": "fig2_token_efficiency.png",
+    "data_analysis": "fig3_data_analysis.png",
+    "encoding_comparison": "fig4_encoding_comparison.png",
+    "benchmark_results": "fig5_benchmark_results.png",
+    "ablation_study": "fig6_ablation.png"
+  },
+  "data_files": {
+    "equation.png": "OCR/formula recognition evaluation",
+    "doge.png": "Semantic understanding and humor detection"
+  }
+}

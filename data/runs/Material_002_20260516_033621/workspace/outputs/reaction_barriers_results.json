@@ -1,0 +1,41 @@
+{
+  "reactions": {
+    "Rxn_1": {
+      "name": "Cyclobutene ring-opening",
+      "E_reactant": -24.574791391541478,
+      "E_TS": -21.79063139620677,
+      "barrier_MACE": 2.784159995334708,
+      "barrier_DFT": 1.72,
+      "error": 1.0641599953347078,
+      "abs_error": 1.0641599953347078
+    },
+    "Rxn_11": {
+      "name": "Methoxy decomposition",
+      "E_reactant": -9.311393900450021,
+      "E_TS": -19.529371581818875,
+      "barrier_MACE": -10.217977681368854,
+      "barrier_DFT": 1.74,
+      "error": -11.957977681368854,
+      "abs_error": 11.957977681368854
+    },
+    "Rxn_20": {
+      "name": "Cyclopropane ring-opening",
+      "E_reactant": -24.761702189264117,
+      "E_TS": -24.253780940843836,
+      "barrier_MACE": 0.5079212484202813,
+      "barrier_DFT": 1.77,
+      "error": -1.2620787515797187,
+      "abs_error": 1.2620787515797187
+    }
+  },
+  "dft_barriers": {
+    "Rxn_1": 1.72,
+    "Rxn_11": 1.74,
+    "Rxn_20": 1.77
+  },
+  "summary": {
+    "MAE": 4.761405476094427,
+    "RMSE": 6.969421532642324,
+    "Max_error": 11.957977681368854
+  }
+}

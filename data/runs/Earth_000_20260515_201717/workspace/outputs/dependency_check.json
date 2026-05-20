@@ -1,0 +1,15 @@
+{
+  "python_version": "3.13",
+  "required_packages": {
+    "pandas": "available",
+    "numpy": "available",
+    "matplotlib": "available",
+    "seaborn": "available",
+    "scipy": "available"
+  },
+  "data_access": {
+    "glambie_input": "available (257 CSV files, 19 regions)",
+    "glambie_results": "available (calendar years + hydrological years)"
+  },
+  "limitations": []
+}

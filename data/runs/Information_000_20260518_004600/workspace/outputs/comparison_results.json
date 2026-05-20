@@ -1,0 +1,134 @@
+{
+  "unified": {
+    "understanding": [
+      {
+        "semantic_coherence": 0.9999802000129421,
+        "response_diversity": 0.00028291859780438244,
+        "understanding_depth": 1.0
+      },
+      {
+        "semantic_coherence": 0.9999801994563313,
+        "response_diversity": 0.0002825588162522763,
+        "understanding_depth": 1.0
+      }
+    ],
+    "generation": [
+      {
+        "codebook_utilization": 0.0,
+        "token_confidence": 0.0008513086941093206,
+        "vq_loss": 1.5630030632019043
+      },
+      {
+        "codebook_utilization": 0.0,
+        "token_confidence": 0.000855032994877547,
+        "vq_loss": 1.563076138496399
+      }
+    ],
+    "avg_understanding": {
+      "semantic_coherence": {
+        "mean": 0.9999801997346367,
+        "std": 2.7830537874251604e-10,
+        "min": 0.9999801994563313,
+        "max": 0.9999802000129421
+      },
+      "response_diversity": {
+        "mean": 0.00028273870702832937,
+        "std": 1.7989077605307102e-07,
+        "min": 0.0002825588162522763,
+        "max": 0.00028291859780438244
+      },
+      "understanding_depth": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "avg_generation": {
+      "codebook_utilization": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "token_confidence": {
+        "mean": 0.0008531708444934338,
+        "std": 1.8621503841131926e-06,
+        "min": 0.0008513086941093206,
+        "max": 0.000855032994877547
+      },
+      "vq_loss": {
+        "mean": 1.5630396008491516,
+        "std": 3.653764724731445e-05,
+        "min": 1.5630030632019043,
+        "max": 1.563076138496399
+      }
+    }
+  },
+  "baseline": {
+    "understanding": [
+      {
+        "semantic_coherence": 0.9999805161514814,
+        "response_diversity": 0.0002731200074777007,
+        "understanding_depth": 0.9999999403953552
+      },
+      {
+        "semantic_coherence": 0.9999805159495736,
+        "response_diversity": 0.00027321078232489526,
+        "understanding_depth": 0.9999999403953552
+      }
+    ],
+    "generation": [
+      {
+        "codebook_utilization": 0.0,
+        "token_confidence": 0.0009671605657786131,
+        "vq_loss": 1.5618164539337158
+      },
+      {
+        "codebook_utilization": 0.0,
+        "token_confidence": 0.0009687106357887387,
+        "vq_loss": 1.564131498336792
+      }
+    ],
+    "avg_understanding": {
+      "semantic_coherence": {
+        "mean": 0.9999805160505275,
+        "std": 1.0095391189679503e-10,
+        "min": 0.9999805159495736,
+        "max": 0.9999805161514814
+      },
+      "response_diversity": {
+        "mean": 0.000273165394901298,
+        "std": 4.538742359727621e-08,
+        "min": 0.0002731200074777007,
+        "max": 0.00027321078232489526
+      },
+      "understanding_depth": {
+        "mean": 0.9999999403953552,
+        "std": 0.0,
+        "min": 0.9999999403953552,
+        "max": 0.9999999403953552
+      }
+    },
+    "avg_generation": {
+      "codebook_utilization": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "token_confidence": {
+        "mean": 0.0009679356007836759,
+        "std": 7.750350050628185e-07,
+        "min": 0.0009671605657786131,
+        "max": 0.0009687106357887387
+      },
+      "vq_loss": {
+        "mean": 1.562973976135254,
+        "std": 0.001157522201538086,
+        "min": 1.5618164539337158,
+        "max": 1.564131498336792
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "paper_000_MoleculeNet": {
+    "key_contributions": [
+      "Standard benchmark for molecular ML with 17+ datasets",
+      "Defines standard splits (scaffold, random, stratified) and metrics (AUC, RMSE)",
+      "Provides DeepChem implementations of featurizers and models"
+    ],
+    "extracted_for_task": [
+      "Dataset descriptions for BACE, BBBP, ClinTox, HIV, MUV",
+      "Classification tasks with ROC-AUC as primary metric",
+      "Standard evaluation protocol with train/val/test splits"
+    ]
+  },
+  "paper_001_GCN": {
+    "key_contributions": [
+      "Graph Convolutional Network with localized spectral filtering",
+      "Layer-wise propagation rule: H^(l+1) = sigma(D^(-1/2) A D^(-1/2) H^(l) W^(l))",
+      "Semi-supervised node classification on citation networks"
+    ],
+    "extracted_for_task": [
+      "GCN serves as the foundation for graph-based molecular representations",
+      "Message passing framework that we extend with KAN modules"
+    ]
+  },
+  "paper_002_GAT": {
+    "key_contributions": [
+      "Graph Attention Networks with multi-head self-attention",
+      "Attention coefficients computed via learnable mechanism over neighbor features",
+      "Inductive learning capability"
+    ],
+    "extracted_for_task": [
+      "GAT serves as a strong baseline for molecular property prediction",
+      "Attention provides dynamic edge weighting complementary to KAN expressivity"
+    ]
+  },
+  "paper_003_CGCNN": {
+    "key_contributions": [
+      "Crystal Graph CNN with atom and bond feature vectors",
+      "Convolution function incorporating both neighbor and edge features",
+      "Interpretable prediction with site-level contributions"
+    ],
+    "extracted_for_task": [
+      "Edge-feature-aware convolution design inspired our message function",
+      "Atom+bond concatenation approach adopted for KA-GNN message construction",
+      "Multi-feature atom/bond encoding approach"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "pytorch": "2.10.0+cu128",
+  "torch_geometric": "2.7.0",
+  "torch_scatter": "available",
+  "sklearn": "available",
+  "matplotlib": "available",
+  "numpy": "available",
+  "cuda": "not available (CPU only)",
+  "xgboost": "not installed (not required for final model)",
+  "rdkit": "not installed"
+}

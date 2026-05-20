@@ -1,0 +1,27 @@
+{
+  "task": "Design and evaluate KA-GNN (Kolmogorov-Arnold Graph Neural Networks) for molecular property prediction",
+  "core_method": "KA-GNN replaces MLP transformations in GNNs with Fourier-based KAN modules",
+  "key_components": [
+    "FourierKANLayer: learnable univariate functions via Fourier series basis",
+    "KAGNNConv: message passing with KAN-based message and update functions",
+    "MultiFeatureEmbedding: separate embeddings for atom/bond categorical features",
+    "Non-covalent interaction edges: 3D conformer-based edges via MMFF optimization"
+  ],
+  "datasets": [
+    "BACE",
+    "BBBP",
+    "ClinTox",
+    "HIV",
+    "MUV"
+  ],
+  "baselines": [
+    "Baseline GCN (MLP-based message passing)",
+    "Baseline GAT (Graph Attention Network)"
+  ],
+  "metrics": [
+    "ROC-AUC",
+    "F1 Score",
+    "Accuracy"
+  ],
+  "evaluation": "80/10/10 train/val/test split, 50 epochs, early stopping patience=15"
+}

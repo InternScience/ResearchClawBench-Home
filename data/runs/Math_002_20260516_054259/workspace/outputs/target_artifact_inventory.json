@@ -1,0 +1,50 @@
+{
+  "target_artifacts": {
+    "code": {
+      "mapf_env.py": {"status": "satisfied", "description": "MAPF environment, A*, space-time A*, collision detection"},
+      "mapf_solvers.py": {"status": "satisfied", "description": "PP, LNS, MARL, Hybrid solver implementations"},
+      "deep_marl.py": {"status": "satisfied", "description": "Deep MARL policy network (PyTorch)"},
+      "run_focused_eval.py": {"status": "satisfied", "description": "Main evaluation script"},
+      "generate_figures.py": {"status": "satisfied", "description": "Figure generation script"}
+    },
+    "outputs": {
+      "focused_results.json": {"status": "satisfied", "description": "Per-instance evaluation results"},
+      "focused_summary.json": {"status": "satisfied", "description": "Aggregated summary statistics"},
+      "method_contract.json": {"status": "satisfied", "description": "Method contract and commitments"}
+    },
+    "report": {
+      "report.md": {"status": "satisfied", "description": "Comprehensive research report with methodology, results, discussion"},
+      "images/fig1_success_rate.png": {"status": "satisfied", "description": "Success rate comparison bar chart"},
+      "images/fig2_collision_reduction.png": {"status": "satisfied", "description": "Colliding pairs comparison bar chart"},
+      "images/fig3_runtime.png": {"status": "satisfied", "description": "Runtime comparison bar chart"},
+      "images/fig4_per_instance_breakdown.png": {"status": "satisfied", "description": "Per-instance collision breakdown"},
+      "images/fig5_solution_quality.png": {"status": "satisfied", "description": "Sum of costs comparison"},
+      "images/fig6_maps.png": {"status": "satisfied", "description": "Benchmark map visualizations"},
+      "images/fig7_algorithm_flow.png": {"status": "satisfied", "description": "Algorithm workflow diagram"}
+    }
+  },
+  "primary_claims": [
+    {
+      "claim": "Hybrid MARL-LNS achieves 75% success rate on random_small",
+      "evidence": "focused_summary.json: random_small.Hybrid.success_rate = 0.75",
+      "status": "verified"
+    },
+    {
+      "claim": "Hybrid reduces colliding pairs by 60-90% compared to PP",
+      "evidence": "Computed from focused_summary.json per-dataset CP averages",
+      "status": "verified"
+    },
+    {
+      "claim": "MARL alone is insufficient for complete collision elimination",
+      "evidence": "focused_summary.json: MARL success_rate = 0% on 5/6 datasets, CP ranges 12.8-55.0",
+      "status": "verified"
+    },
+    {
+      "claim": "Hybrid achieves lower or equal CP vs LNS on 83% of instances",
+      "evidence": "Per-instance comparison from focused_results.json",
+      "status": "verified"
+    }
+  ],
+  "unsatisfied_artifacts": [],
+  "notes": "All required deliverables are present. Deep MARL code exists but was not used in main evaluation due to computational constraints (PyTorch training overhead)."
+}

@@ -1,0 +1,63 @@
+{
+  "agent_counts": {
+    "AgI only": 542,
+    "AgI + NaI": 108,
+    "AgI + NH4I": 78,
+    "AgI + hygroscopic": 32,
+    "AgI + CaCl2": 23,
+    "ionized air": 21,
+    "other": 16,
+    "AgI + dry ice": 12
+  },
+  "apparatus_counts": {
+    "ground": 461,
+    "airborne": 236,
+    "ground, airborne": 131,
+    "unknown": 4
+  },
+  "crosstab": {
+    "airborne": {
+      "AgI + CaCl2": 23,
+      "AgI + NH4I": 0,
+      "AgI + NaI": 0,
+      "AgI + dry ice": 5,
+      "AgI + hygroscopic": 24,
+      "AgI only": 166,
+      "ionized air": 5,
+      "other": 13
+    },
+    "ground": {
+      "AgI + CaCl2": 0,
+      "AgI + NH4I": 78,
+      "AgI + NaI": 108,
+      "AgI + dry ice": 0,
+      "AgI + hygroscopic": 0,
+      "AgI only": 260,
+      "ionized air": 12,
+      "other": 3
+    },
+    "ground, airborne": {
+      "AgI + CaCl2": 0,
+      "AgI + NH4I": 0,
+      "AgI + NaI": 0,
+      "AgI + dry ice": 7,
+      "AgI + hygroscopic": 8,
+      "AgI only": 116,
+      "ionized air": 0,
+      "other": 0
+    },
+    "unknown": {
+      "AgI + CaCl2": 0,
+      "AgI + NH4I": 0,
+      "AgI + NaI": 0,
+      "AgI + dry ice": 0,
+      "AgI + hygroscopic": 0,
+      "AgI only": 0,
+      "ionized air": 4,
+      "other": 0
+    }
+  },
+  "silver_iodide_any_pct": 95.55,
+  "ground_any_pct": 71.15,
+  "airborne_any_pct": 44.11
+}

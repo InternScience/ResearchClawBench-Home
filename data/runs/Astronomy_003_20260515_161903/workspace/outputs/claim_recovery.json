@@ -1,0 +1,24 @@
+{
+  "claims": [
+    {
+      "claim": "Median resolution error",
+      "result": "4.25e-04 (expected ~4e-4)"
+    },
+    {
+      "claim": "Fraction below 1e-3",
+      "result": "0.7773 (expected ~0.78)"
+    },
+    {
+      "claim": "Modal errors monotonically increase with ell",
+      "result": "PASS"
+    },
+    {
+      "claim": "N2N4 > N2N3 in 0.7217 of cases",
+      "result": "PASS"
+    },
+    {
+      "claim": "Resolution/N2N4 ratio",
+      "result": "8.0 (expected ~8-10)"
+    }
+  ]
+}

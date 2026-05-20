@@ -1,0 +1,36 @@
+{
+  "task": "Optimal power dispatch for GB power system",
+  "named_methods": [
+    "Linear programming optimal power flow (DCOPF transport model)",
+    "Load shedding with Value of Lost Load (VoLL) penalty",
+    "Scenario comparison: network-constrained vs copper-plate",
+    "PyPSA-inspired modelling approach"
+  ],
+  "spatial_resolution": "20-bus, 400 kV AC network",
+  "temporal_resolution": "hourly, 168 hours (1 week)",
+  "technologies": ["onshore wind", "gas", "nuclear", "pumped hydro storage"],
+  "key_outputs": [
+    "Optimal generator dispatch (per unit, per hour)",
+    "Storage operation (charge/discharge/SOC)",
+    "Transmission flows (per link, per hour)",
+    "Wind curtailment",
+    "Load shedding / unserved energy",
+    "System costs (generation + shedding)",
+    "Scenario comparison (network constrained vs copper-plate)"
+  ],
+  "related_work_used": [
+    "PyPSA: Python for Power System Analysis (Brown et al., 2018)",
+    "Open data and software in energy research (Pfenninger et al., 2017)",
+    "GB low-carbon power systems 2050 (Zeyringer et al., 2018)",
+    "PyPSA-Earth global model (Parzen et al., 2023)"
+  ],
+  "implementation": "Python 3.13, PuLP 3.3.0, CBC solver, NumPy, Pandas, Matplotlib",
+  "limitations": [
+    "Transport model (no DC power flow physics)",
+    "Single week analysis (no seasonal/inter-annual variability)",
+    "No investment/capacity expansion optimization",
+    "No solar PV or offshore wind",
+    "No demand-side flexibility",
+    "Simplified cost structure (no start-up costs, min stable generation)"
+  ]
+}

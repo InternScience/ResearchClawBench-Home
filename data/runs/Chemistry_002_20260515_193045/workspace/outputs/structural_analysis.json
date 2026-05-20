@@ -1,0 +1,112 @@
+{
+  "interface_residues_A": {
+    "HIS102": 94,
+    "ARG59": 90,
+    "TYR103": 66,
+    "ARG83": 52,
+    "GLU60": 48,
+    "SER38": 28,
+    "SER85": 25,
+    "GLN104": 23,
+    "ALA37": 22,
+    "LYS27": 21,
+    "ASN84": 21,
+    "PHE56": 14,
+    "PHE82": 14,
+    "ARG87": 13,
+    "TRP35": 11,
+    "ASN58": 10,
+    "LYS62": 4,
+    "GLU73": 3,
+    "ASP101": 3,
+    "ILE55": 1,
+    "SER57": 1,
+    "PHE106": 1
+  },
+  "interface_residues_D": {
+    "TYR29": 89,
+    "ASP35": 85,
+    "ASP39": 58,
+    "ASN33": 49,
+    "TRP44": 48,
+    "TRP38": 38,
+    "LEU34": 38,
+    "ALA36": 31,
+    "GLY31": 29,
+    "GLY43": 27,
+    "THR42": 17,
+    "TYR30": 15,
+    "GLU76": 13,
+    "GLU46": 11,
+    "VAL45": 10,
+    "VAL73": 4,
+    "TYR47": 1,
+    "PRO27": 1,
+    "ALA40": 1
+  },
+  "n_contacts_5A": 565,
+  "n_contacts_4A": 165,
+  "salt_bridges": [
+    {
+      "resA": "ARG59",
+      "resD": "GLU76",
+      "dist": 2.9652266355204606,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG59",
+      "resD": "GLU76",
+      "dist": 3.3710713430599486,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG59",
+      "resD": "GLU76",
+      "dist": 2.981084869640581,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG83",
+      "resD": "ASP39",
+      "dist": 2.8914745373252053,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG83",
+      "resD": "ASP39",
+      "dist": 3.511818190054831,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG83",
+      "resD": "ASP39",
+      "dist": 2.497251489137609,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG83",
+      "resD": "ASP39",
+      "dist": 3.722346706044455,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG87",
+      "resD": "ASP39",
+      "dist": 3.7706601544026754,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "ARG87",
+      "resD": "ASP39",
+      "dist": 2.925515681038131,
+      "type": "salt_bridge"
+    },
+    {
+      "resA": "HIS102",
+      "resD": "ASP39",
+      "dist": 2.805396763383035,
+      "type": "salt_bridge"
+    }
+  ],
+  "n_hbonds": 12
+}

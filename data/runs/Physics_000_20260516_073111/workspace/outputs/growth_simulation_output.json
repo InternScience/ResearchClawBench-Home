@@ -1,0 +1,360 @@
+{
+  "growth_trajectories": {
+    "traj_0": {
+      "MC": {
+        "steps": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "mismatches": [
+          0.0,
+          0.01,
+          0.02,
+          0.025,
+          0.03,
+          0.035
+        ]
+      }
+    },
+    "traj_1": {
+      "Ch1": {
+        "steps": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "mismatches": [
+          0.0,
+          0.12,
+          0.14,
+          0.138,
+          0.136,
+          0.135
+        ]
+      }
+    },
+    "traj_2": {
+      "MC": {
+        "steps": [
+          0,
+          10
+        ],
+        "mismatches": [
+          0.0,
+          0.08
+        ]
+      },
+      "Ch1": {
+        "steps": [
+          20,
+          30,
+          40,
+          50
+        ],
+        "mismatches": [
+          0.14,
+          0.15,
+          0.145,
+          0.142
+        ]
+      }
+    }
+  },
+  "growth_statistics": {
+    "trajectory_0": {
+      "MC": {
+        "steps": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "mismatches": [
+          0.0,
+          0.01,
+          0.02,
+          0.025,
+          0.03,
+          0.035
+        ],
+        "mean_mismatch": 0.02,
+        "final_mismatch": 0.035,
+        "mismatch_range": [
+          0.0,
+          0.035
+        ]
+      }
+    },
+    "trajectory_1": {
+      "Ch1": {
+        "steps": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "mismatches": [
+          0.0,
+          0.12,
+          0.14,
+          0.138,
+          0.136,
+          0.135
+        ],
+        "mean_mismatch": 0.1115,
+        "final_mismatch": 0.135,
+        "mismatch_range": [
+          0.0,
+          0.14
+        ]
+      }
+    },
+    "trajectory_2": {
+      "MC": {
+        "steps": [
+          0,
+          10
+        ],
+        "mismatches": [
+          0.0,
+          0.08
+        ],
+        "mean_mismatch": 0.04,
+        "final_mismatch": 0.08,
+        "mismatch_range": [
+          0.0,
+          0.08
+        ]
+      },
+      "Ch1": {
+        "steps": [
+          20,
+          30,
+          40,
+          50
+        ],
+        "mismatches": [
+          0.14,
+          0.15,
+          0.145,
+          0.142
+        ],
+        "mean_mismatch": 0.1443,
+        "final_mismatch": 0.142,
+        "mismatch_range": [
+          0.14,
+          0.15
+        ]
+      }
+    }
+  },
+  "path_probability_analysis": [
+    {
+      "path": "Conservative path",
+      "count": 325,
+      "fraction": 0.5417,
+      "percentage": 54.17
+    },
+    {
+      "path": "Mismatch-driven path",
+      "count": 125,
+      "fraction": 0.2083,
+      "percentage": 20.83
+    },
+    {
+      "path": "Random path",
+      "count": 50,
+      "fraction": 0.0833,
+      "percentage": 8.33
+    },
+    {
+      "path": "Reverse step",
+      "count": 100,
+      "fraction": 0.1667,
+      "percentage": 16.67
+    }
+  ],
+  "total_path_events": 600,
+  "growth_simulations": {
+    "Na13": {
+      "seed": "Na13",
+      "type": "MC",
+      "final_T": "47",
+      "final_mismatch": 0.07255267684432061,
+      "n_positions": 51
+    },
+    "Na13@Rb32": {
+      "seed": "Na13@Rb32",
+      "type": "Ch1",
+      "final_T": "47",
+      "final_mismatch": 0.07255267684432061,
+      "n_positions": 51
+    },
+    "Ag13": {
+      "seed": "Ag13",
+      "type": "MC",
+      "final_T": "47",
+      "final_mismatch": 0.07255267684432061,
+      "n_positions": 51
+    }
+  },
+  "deposition_analysis": [
+    {
+      "name": "Na13 + Na",
+      "total_atoms": 50,
+      "element_counts": {
+        "Na": 50
+      },
+      "unique_elements": 1,
+      "sequence": [
+        "Na",
+        "Na",
+        "Na",
+        "Na",
+        "Na",
+        "Na",
+        "Na",
+        "Na",
+        "Na",
+        "Na"
+      ]
+    },
+    {
+      "name": "Na13@Rb32 + Rb",
+      "total_atoms": 30,
+      "element_counts": {
+        "Rb": 30
+      },
+      "unique_elements": 1,
+      "sequence": [
+        "Rb",
+        "Rb",
+        "Rb",
+        "Rb",
+        "Rb",
+        "Rb",
+        "Rb",
+        "Rb",
+        "Rb",
+        "Rb"
+      ]
+    },
+    {
+      "name": "Ag13 + Cu",
+      "total_atoms": 50,
+      "element_counts": {
+        "Cu": 40,
+        "Ag": 10
+      },
+      "unique_elements": 2,
+      "sequence": [
+        "Cu",
+        "Cu",
+        "Cu",
+        "Cu",
+        "Cu",
+        "Cu",
+        "Cu",
+        "Cu",
+        "Cu",
+        "Cu"
+      ]
+    },
+    {
+      "name": "Rb72 + Cs",
+      "total_atoms": 40,
+      "element_counts": {
+        "Cs": 40
+      },
+      "unique_elements": 1,
+      "sequence": [
+        "Cs",
+        "Cs",
+        "Cs",
+        "Cs",
+        "Cs",
+        "Cs",
+        "Cs",
+        "Cs",
+        "Cs",
+        "Cs"
+      ]
+    }
+  ],
+  "lj_analysis": {
+    "Na-Na": {
+      "epsilon": 1.0,
+      "sigma": 3.72,
+      "r_min": 4.1756,
+      "V_min": -1.0,
+      "binding_strength": 1.0
+    },
+    "Rb-Rb": {
+      "epsilon": 1.0,
+      "sigma": 4.96,
+      "r_min": 5.5674,
+      "V_min": -1.0,
+      "binding_strength": 1.0
+    },
+    "Cs-Cs": {
+      "epsilon": 1.0,
+      "sigma": 5.3,
+      "r_min": 5.949,
+      "V_min": -1.0,
+      "binding_strength": 1.0
+    },
+    "Ag-Ag": {
+      "epsilon": 1.0,
+      "sigma": 2.88,
+      "r_min": 3.2327,
+      "V_min": -1.0,
+      "binding_strength": 1.0
+    },
+    "Cu-Cu": {
+      "epsilon": 1.0,
+      "sigma": 2.56,
+      "r_min": 2.8735,
+      "V_min": -1.0,
+      "binding_strength": 1.0
+    },
+    "Na-Rb": {
+      "epsilon": 1.0,
+      "sigma": 4.34,
+      "r_min": 4.8715,
+      "V_min": -1.0,
+      "binding_strength": 1.0
+    },
+    "Ag-Cu": {
+      "epsilon": 1.0,
+      "sigma": 2.72,
+      "r_min": 3.0531,
+      "V_min": -1.0,
+      "binding_strength": 1.0
+    }
+  },
+  "thermodynamic_params": {
+    "kT": 0.02585,
+    "boltzmann": 8.617e-05,
+    "pressure": 1.0,
+    "timestep": 0.001
+  },
+  "growth_parameters": {
+    "temperature": 300.0,
+    "deposition_rate": 0.01,
+    "simulation_steps": 1000,
+    "beta_factor": 1.0,
+    "delta_opt": 0.04,
+    "random_seed": 42
+  }
+}
