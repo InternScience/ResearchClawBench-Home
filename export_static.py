@@ -53,7 +53,7 @@ MODEL_TOKEN_PRICING_PER_MTOK = {
     "kimi-k2.5": {"input": 0.6, "output": 3.0},
     "kimi-k2.6": {"input": 0.95, "output": 4.0},
     "mimo-v2-pro": {"input": 1.0, "output": 3.0},
-    "mimo-v2.5": {"input": 0.4, "output": 2.0},
+    "mimo-v2.5": {"input": 0.42, "output": 2.10},
     "deepseek-v4-pro": {"input": 0.435, "output": 0.87},
     "qwen3.5-397b-a17b": {"input": 0.6, "output": 3.6},
     "qwen3.6-plus": {"input": 0.5, "output": 3.0},
