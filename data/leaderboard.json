@@ -56,6 +56,7 @@
     "ResearchHarness (GPT-5.4)",
     "ResearchHarness (GPT-5.5)",
     "ResearchHarness (Gemini-3.1-Pro)",
+    "ResearchHarness (Gemini-3.5-Flash)",
     "ResearchHarness (Grok-4.1)",
     "ResearchHarness (Grok-4.3)",
     "ResearchHarness (Kimi-K2.5)",
@@ -4462,6 +4463,314 @@
         "model_display": "Gemini-3.1-Pro"
       }
     },
+    "ResearchHarness (Gemini-3.5-Flash)": {
+      "Astronomy_000": {
+        "score": 24.0,
+        "run_id": "Astronomy_000_20260527_101521",
+        "duration_seconds": 812,
+        "cost_usd": 0.9135,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Astronomy_001": {
+        "score": 13.2,
+        "run_id": "Astronomy_001_20260527_165228",
+        "duration_seconds": 3343,
+        "cost_usd": 3.760875,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Astronomy_003": {
+        "score": 47.0,
+        "run_id": "Astronomy_003_20260526_204227",
+        "duration_seconds": 575,
+        "cost_usd": 0.646875,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Chemistry_000": {
+        "score": 9.0,
+        "run_id": "Chemistry_000_20260526_205216",
+        "duration_seconds": 764,
+        "cost_usd": 0.8595,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Chemistry_001": {
+        "score": 6.5,
+        "run_id": "Chemistry_001_20260526_210513",
+        "duration_seconds": 804,
+        "cost_usd": 0.9045,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Chemistry_002": {
+        "score": 1.0,
+        "run_id": "Chemistry_002_20260526_211856",
+        "duration_seconds": 799,
+        "cost_usd": 0.898875,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Earth_000": {
+        "score": 25.5,
+        "run_id": "Earth_000_20260526_220638",
+        "duration_seconds": 707,
+        "cost_usd": 0.795375,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Earth_001": {
+        "score": 33.19,
+        "run_id": "Earth_001_20260526_221848",
+        "duration_seconds": 800,
+        "cost_usd": 0.9,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Earth_002": {
+        "score": 27.0,
+        "run_id": "Earth_002_20260527_183331",
+        "duration_seconds": 795,
+        "cost_usd": 0.894375,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Earth_003": {
+        "score": 10.5,
+        "run_id": "Earth_003_20260526_224841",
+        "duration_seconds": 1238,
+        "cost_usd": 1.39275,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Energy_000": {
+        "score": 4.4,
+        "run_id": "Energy_000_20260527_184722",
+        "duration_seconds": 737,
+        "cost_usd": 0.829125,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Energy_001": {
+        "score": 21.0,
+        "run_id": "Energy_001_20260526_232608",
+        "duration_seconds": 894,
+        "cost_usd": 1.00575,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Energy_002": {
+        "score": 31.7,
+        "run_id": "Energy_002_20260526_234126",
+        "duration_seconds": 1249,
+        "cost_usd": 1.405125,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Energy_003": {
+        "score": 16.3,
+        "run_id": "Energy_003_20260527_120825",
+        "duration_seconds": 1967,
+        "cost_usd": 2.212875,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Information_000": {
+        "score": 49.4,
+        "run_id": "Information_000_20260527_002336",
+        "duration_seconds": 399,
+        "cost_usd": 0.448875,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Information_001": {
+        "score": 9.0,
+        "run_id": "Information_001_20260527_124145",
+        "duration_seconds": 3374,
+        "cost_usd": 3.79575,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Information_002": {
+        "score": 27.2,
+        "run_id": "Information_002_20260527_010834",
+        "duration_seconds": 443,
+        "cost_usd": 0.498375,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Information_003": {
+        "score": 10.8,
+        "run_id": "Information_003_20260527_011602",
+        "duration_seconds": 1487,
+        "cost_usd": 1.672875,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Life_000": {
+        "score": 7.7,
+        "run_id": "Life_000_20260527_185953",
+        "duration_seconds": 491,
+        "cost_usd": 0.552375,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Life_001": {
+        "score": 12.95,
+        "run_id": "Life_001_20260527_015452",
+        "duration_seconds": 725,
+        "cost_usd": 0.815625,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Life_002": {
+        "score": 6.3,
+        "run_id": "Life_002_20260527_190829",
+        "duration_seconds": 858,
+        "cost_usd": 0.96525,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Life_003": {
+        "score": 26.5,
+        "run_id": "Life_003_20260527_022742",
+        "duration_seconds": 347,
+        "cost_usd": 0.390375,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Material_000": {
+        "score": 22.6,
+        "run_id": "Material_000_20260527_023350",
+        "duration_seconds": 1436,
+        "cost_usd": 1.6155,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Material_001": {
+        "score": 0.0,
+        "run_id": "Material_001_20260527_025759",
+        "duration_seconds": 516,
+        "cost_usd": 0.5805,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Material_002": {
+        "score": 40.71,
+        "run_id": "Material_002_20260527_030652",
+        "duration_seconds": 2584,
+        "cost_usd": 2.907,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Material_003": {
+        "score": 15.6,
+        "run_id": "Material_003_20260527_035012",
+        "duration_seconds": 940,
+        "cost_usd": 1.0575,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Math_001": {
+        "score": 22.0,
+        "run_id": "Math_001_20260527_042119",
+        "duration_seconds": 793,
+        "cost_usd": 0.892125,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Neuroscience_000": {
+        "score": 8.0,
+        "run_id": "Neuroscience_000_20260527_051146",
+        "duration_seconds": 877,
+        "cost_usd": 0.986625,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Neuroscience_001": {
+        "score": 0.0,
+        "run_id": "Neuroscience_001_20260527_170712",
+        "duration_seconds": 2120,
+        "cost_usd": 2.385,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Neuroscience_002": {
+        "score": 0.0,
+        "run_id": "Neuroscience_002_20260527_054624",
+        "duration_seconds": 715,
+        "cost_usd": 0.804375,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Neuroscience_003": {
+        "score": 0.75,
+        "run_id": "Neuroscience_003_20260527_055839",
+        "duration_seconds": 839,
+        "cost_usd": 0.943875,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Physics_000": {
+        "score": 14.5,
+        "run_id": "Physics_000_20260527_061312",
+        "duration_seconds": 260,
+        "cost_usd": 0.2925,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Physics_001": {
+        "score": 31.65,
+        "run_id": "Physics_001_20260527_205419",
+        "duration_seconds": 954,
+        "cost_usd": 1.07325,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      },
+      "Physics_003": {
+        "score": 34.3,
+        "run_id": "Physics_003_20260527_064416",
+        "duration_seconds": 744,
+        "cost_usd": 0.837,
+        "model": "gemini-3.5-flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false
+      }
+    },
     "ResearchHarness (Grok-4.1)": {
       "Astronomy_000": {
         "score": 20.0,
@@ -6976,15 +7285,15 @@
     "Chemistry_001": 9.0,
     "Chemistry_002": 5.0,
     "Chemistry_003": 22.5,
-    "Earth_000": 25.3,
+    "Earth_000": 25.5,
     "Earth_001": 41.65,
     "Earth_002": 34.0,
-    "Earth_003": 4.0,
+    "Earth_003": 10.5,
     "Energy_000": 22.0,
     "Energy_001": 25.1,
     "Energy_002": 42.45,
     "Energy_003": 26.3,
-    "Information_000": 48.0,
+    "Information_000": 49.4,
     "Information_001": 18.0,
     "Information_002": 39.8,
     "Information_003": 17.75,
@@ -6994,7 +7303,7 @@
     "Life_003": 40.5,
     "Material_000": 25.1,
     "Material_001": 23.6,
-    "Material_002": 39.08,
+    "Material_002": 40.71,
     "Material_003": 28.8,
     "Math_000": 26.65,
     "Math_001": 44.1,

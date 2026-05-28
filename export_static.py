@@ -18,6 +18,7 @@ from pathlib import Path
 HOME_DIR = Path(__file__).resolve().parent
 DATA_DIR = HOME_DIR / "data"
 EXPORT_STATE_DIR = HOME_DIR / "export_state"
+LEADERBOARD_ONLY_RUNS_PATH = DATA_DIR / "leaderboard_only_runs.json"
 
 RCB_SOURCE = HOME_DIR.parent / "ResearchClawBench"
 TASKS_DIR = RCB_SOURCE / "tasks"
@@ -47,6 +48,7 @@ MODEL_TOKEN_PRICING_PER_MTOK = {
     "claude-opus-4-6": {"input": 5.0, "output": 25.0},
     "claude-opus-4-7": {"input": 5.0, "output": 25.0},
     "gemini-3.1-pro": {"input": 2.0, "output": 12.0},
+    "gemini-3.5-flash": {"input": 1.5, "output": 9.0},
     "glm-5.1": {"input": 1.4, "output": 4.4},
     "grok-4.1": {"input": 0.2, "output": 0.5},
     "grok-4.3": {"input": 1.25, "output": 2.5},
@@ -65,6 +67,7 @@ MODEL_DISPLAY_NAMES = {
     "claude-opus-4-7": "Claude-Opus-4.7",
     "claude-sonnet-4-6": "Claude-Sonnet-4.6",
     "gemini-3.1-pro": "Gemini-3.1-Pro",
+    "gemini-3.5-flash": "Gemini-3.5-Flash",
     "glm-5.1": "GLM-5.1",
     "grok-4.1": "Grok-4.1",
     "grok-4.3": "Grok-4.3",
@@ -296,6 +299,47 @@ def _find_run_output_path(ws):
         if output_path.exists():
             return output_path
     return None
+
+
+def _load_leaderboard_only_runs():
+    """Load summary-only runs that should appear in Home tables without details."""
+    if not LEADERBOARD_ONLY_RUNS_PATH.exists():
+        return []
+    try:
+        with open(LEADERBOARD_ONLY_RUNS_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError) as exc:
+        raise RuntimeError(f"Invalid {LEADERBOARD_ONLY_RUNS_PATH}: {exc}") from exc
+    if not isinstance(data, list):
+        raise RuntimeError(f"{LEADERBOARD_ONLY_RUNS_PATH} must contain a JSON list")
+
+    runs = []
+    for index, item in enumerate(data, start=1):
+        if not isinstance(item, dict):
+            raise RuntimeError(f"leaderboard-only run #{index} is not an object")
+        required = {"run_id", "task_id", "timestamp", "agent_name", "model", "duration_seconds", "total_score"}
+        missing = required - set(item)
+        if missing:
+            raise RuntimeError(f"leaderboard-only run #{index} missing fields: {sorted(missing)}")
+        model = _normalize_model_name(item.get("model", ""))
+        duration = item.get("duration_seconds")
+        run = {
+            "run_id": item["run_id"],
+            "task_id": item["task_id"],
+            "timestamp": item["timestamp"],
+            "status": item.get("status", "completed"),
+            "agent_name": item["agent_name"],
+            "model": model,
+            "model_display": item.get("model_display") or _format_model_display(model),
+            "duration_seconds": duration,
+            "cost_usd": item.get("cost_usd")
+            if isinstance(item.get("cost_usd"), (int, float))
+            else _estimate_run_cost_usd(model, duration),
+            "total_score": item["total_score"],
+            "details_exported": False,
+        }
+        runs.append(run)
+    return runs
 
 
 def _update_signature_file(hasher, path, rel_path):
@@ -805,6 +849,13 @@ def export_runs(runs=None):
             "total_score": score_data.get("total_score"),
         })
 
+    leaderboard_only_runs = _load_leaderboard_only_runs()
+    existing_run_ids = {item.get("run_id") for item in index}
+    for item in leaderboard_only_runs:
+        if item["run_id"] not in existing_run_ids:
+            index.append(item)
+            existing_run_ids.add(item["run_id"])
+
     removed = 0
     for run_out_dir in runs_dir.iterdir():
         if not run_out_dir.is_dir() or run_out_dir.name in valid_run_ids:
@@ -818,7 +869,10 @@ def export_runs(runs=None):
     with open(DATA_DIR / "runs_index.json", "w", encoding="utf-8") as f:
         json.dump(index, f, indent=2)
 
-    print(f"Exported {refreshed} runs, reused {reused}, removed {removed} (skipped {skipped})")
+    print(
+        f"Exported {refreshed} runs, reused {reused}, removed {removed} "
+        f"(skipped {skipped}, leaderboard-only {len(leaderboard_only_runs)})"
+    )
 
 
 def export_leaderboard():
@@ -836,7 +890,11 @@ def export_leaderboard():
             continue
         task_id = run["task_id"]
         agent = run.get("agent_name", "Unknown")
-        cost_usd = _estimate_run_cost_usd(run.get("model", ""), run.get("duration_seconds"))
+        cost_usd = (
+            run.get("cost_usd")
+            if isinstance(run.get("cost_usd"), (int, float))
+            else _estimate_run_cost_usd(run.get("model", ""), run.get("duration_seconds"))
+        )
         entry = {
             "score": total,
             "run_id": run["run_id"],
@@ -845,6 +903,8 @@ def export_leaderboard():
             "model": run.get("model", ""),
             "model_display": run.get("model_display", ""),
         }
+        if run.get("details_exported") is False:
+            entry["details_exported"] = False
         key = (task_id, agent)
         if key not in best or total > best[key]["score"]:
             best[key] = entry

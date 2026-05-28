@@ -459,16 +459,23 @@ def run_static_checks(rcb_tasks: list[str], progress_every: int) -> None:
         with open(runs_index_path, encoding="utf-8") as f:
             runs_index = json.load(f)
         missing_runs = []
+        leaderboard_only = 0
         loop_start = time.perf_counter()
         for index, item in enumerate(runs_index, start=1):
             report_progress("runs_index", index, len(runs_index), loop_start, progress_every)
+            if item.get("details_exported") is False:
+                leaderboard_only += 1
+                continue
             ws_path = WS / item["run_id"]
             if not ws_path.exists():
                 missing_runs.append(item["run_id"])
         if missing_runs:
             err(f"Home runs not in workspaces: {missing_runs}")
         else:
-            ok(f"runs_index.json: {len(runs_index)} runs, all exist in workspaces/")
+            ok(
+                f"runs_index.json: {len(runs_index)} runs "
+                f"({leaderboard_only} leaderboard-only), exported runs exist in workspaces/"
+            )
     else:
         warn("runs_index.json not found")
 
