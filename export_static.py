@@ -59,6 +59,7 @@ MODEL_TOKEN_PRICING_PER_MTOK = {
     "deepseek-v4-pro": {"input": 0.435, "output": 0.87},
     "qwen3.5-397b-a17b": {"input": 0.6, "output": 3.6},
     "qwen3.6-plus": {"input": 0.5, "output": 3.0},
+    "qwen3.7-max": {"input": 1.25, "output": 3.75},
 }
 MODEL_DISPLAY_NAMES = {
     "gpt-5.4": "GPT-5.4",
@@ -78,6 +79,7 @@ MODEL_DISPLAY_NAMES = {
     "deepseek-v4-pro": "DeepSeek-V4-Pro",
     "qwen3.5-397b-a17b": "Qwen3.5-397B-A17B",
     "qwen3.6-plus": "Qwen3.6-Plus",
+    "qwen3.7-max": "Qwen3.7-Max",
 }
 AGENT_DEFAULT_MODELS = {
     "Claude Code": "claude-opus-4-6",

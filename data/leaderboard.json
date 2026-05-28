@@ -64,7 +64,8 @@
     "ResearchHarness (MiMo-V2-Pro)",
     "ResearchHarness (MiMo-V2.5)",
     "ResearchHarness (Qwen3.5-397B-A17B)",
-    "ResearchHarness (Qwen3.6-Plus)"
+    "ResearchHarness (Qwen3.6-Plus)",
+    "ResearchHarness (Qwen3.7-Max)"
   ],
   "scores": {
     "Claude Code": {
@@ -7274,6 +7275,314 @@
         "model": "Qwen3.6-Plus",
         "model_display": "Qwen3.6-Plus"
       }
+    },
+    "ResearchHarness (Qwen3.7-Max)": {
+      "Astronomy_000": {
+        "score": 15.9,
+        "run_id": "Astronomy_000_20260527_123627",
+        "duration_seconds": 807,
+        "cost_usd": 0.504375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Astronomy_001": {
+        "score": 11.0,
+        "run_id": "Astronomy_001_20260526_201220",
+        "duration_seconds": 321,
+        "cost_usd": 0.200625,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Astronomy_002": {
+        "score": 28.0,
+        "run_id": "Astronomy_002_20260526_201800",
+        "duration_seconds": 891,
+        "cost_usd": 0.556875,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Astronomy_003": {
+        "score": 40.2,
+        "run_id": "Astronomy_003_20260526_203301",
+        "duration_seconds": 330,
+        "cost_usd": 0.20625,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Chemistry_000": {
+        "score": 13.25,
+        "run_id": "Chemistry_000_20260526_203850",
+        "duration_seconds": 2213,
+        "cost_usd": 1.383125,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Chemistry_001": {
+        "score": 0.5,
+        "run_id": "Chemistry_001_20260526_211600",
+        "duration_seconds": 694,
+        "cost_usd": 0.43375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Chemistry_002": {
+        "score": 1.0,
+        "run_id": "Chemistry_002_20260527_102132",
+        "duration_seconds": 559,
+        "cost_usd": 0.349375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Chemistry_003": {
+        "score": 12.9,
+        "run_id": "Chemistry_003_20260527_125008",
+        "duration_seconds": 854,
+        "cost_usd": 0.53375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Earth_000": {
+        "score": 12.5,
+        "run_id": "Earth_000_20260526_214031",
+        "duration_seconds": 339,
+        "cost_usd": 0.211875,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Earth_001": {
+        "score": 36.65,
+        "run_id": "Earth_001_20260526_214648",
+        "duration_seconds": 354,
+        "cost_usd": 0.22125,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Earth_002": {
+        "score": 9.6,
+        "run_id": "Earth_002_20260526_215300",
+        "duration_seconds": 562,
+        "cost_usd": 0.35125,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Earth_003": {
+        "score": 0.6,
+        "run_id": "Earth_003_20260526_220242",
+        "duration_seconds": 568,
+        "cost_usd": 0.355,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Energy_001": {
+        "score": 27.0,
+        "run_id": "Energy_001_20260526_222002",
+        "duration_seconds": 369,
+        "cost_usd": 0.230625,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Energy_002": {
+        "score": 32.35,
+        "run_id": "Energy_002_20260526_222628",
+        "duration_seconds": 815,
+        "cost_usd": 0.509375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Energy_003": {
+        "score": 16.5,
+        "run_id": "Energy_003_20260527_104651",
+        "duration_seconds": 486,
+        "cost_usd": 0.30375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Information_002": {
+        "score": 38.4,
+        "run_id": "Information_002_20260526_225326",
+        "duration_seconds": 273,
+        "cost_usd": 0.170625,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Information_003": {
+        "score": 5.25,
+        "run_id": "Information_003_20260526_225818",
+        "duration_seconds": 715,
+        "cost_usd": 0.446875,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Life_001": {
+        "score": 0.0,
+        "run_id": "Life_001_20260526_231703",
+        "duration_seconds": 342,
+        "cost_usd": 0.21375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Life_002": {
+        "score": 6.1,
+        "run_id": "Life_002_20260526_232305",
+        "duration_seconds": 306,
+        "cost_usd": 0.19125,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Life_003": {
+        "score": 24.8,
+        "run_id": "Life_003_20260526_232817",
+        "duration_seconds": 305,
+        "cost_usd": 0.190625,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Material_001": {
+        "score": 15.9,
+        "run_id": "Material_001_20260527_111743",
+        "duration_seconds": 512,
+        "cost_usd": 0.32,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Material_002": {
+        "score": 30.49,
+        "run_id": "Material_002_20260527_001300",
+        "duration_seconds": 1430,
+        "cost_usd": 0.89375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Material_003": {
+        "score": 25.25,
+        "run_id": "Material_003_20260527_145708",
+        "duration_seconds": 1299,
+        "cost_usd": 0.811875,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Math_000": {
+        "score": 29.05,
+        "run_id": "Math_000_20260527_004252",
+        "duration_seconds": 476,
+        "cost_usd": 0.2975,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Math_001": {
+        "score": 31.2,
+        "run_id": "Math_001_20260527_005133",
+        "duration_seconds": 472,
+        "cost_usd": 0.295,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Math_002": {
+        "score": 19.1,
+        "run_id": "Math_002_20260527_005940",
+        "duration_seconds": 505,
+        "cost_usd": 0.315625,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Math_003": {
+        "score": 10.0,
+        "run_id": "Math_003_20260527_133920",
+        "duration_seconds": 450,
+        "cost_usd": 0.28125,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Neuroscience_000": {
+        "score": 11.0,
+        "run_id": "Neuroscience_000_20260527_011357",
+        "duration_seconds": 409,
+        "cost_usd": 0.255625,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Neuroscience_001": {
+        "score": 3.75,
+        "run_id": "Neuroscience_001_20260527_012118",
+        "duration_seconds": 470,
+        "cost_usd": 0.29375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Neuroscience_002": {
+        "score": 0.0,
+        "run_id": "Neuroscience_002_20260527_013027",
+        "duration_seconds": 1548,
+        "cost_usd": 0.9675,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Neuroscience_003": {
+        "score": 13.15,
+        "run_id": "Neuroscience_003_20260527_151915",
+        "duration_seconds": 1922,
+        "cost_usd": 1.20125,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Physics_001": {
+        "score": 29.45,
+        "run_id": "Physics_001_20260527_021219",
+        "duration_seconds": 349,
+        "cost_usd": 0.218125,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Physics_002": {
+        "score": 40.05,
+        "run_id": "Physics_002_20260527_021848",
+        "duration_seconds": 390,
+        "cost_usd": 0.24375,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      },
+      "Physics_003": {
+        "score": 45.4,
+        "run_id": "Physics_003_20260527_022559",
+        "duration_seconds": 372,
+        "cost_usd": 0.2325,
+        "model": "qwen3.7-max",
+        "model_display": "Qwen3.7-Max",
+        "details_exported": false
+      }
     }
   },
   "frontier": {
@@ -7290,7 +7599,7 @@
     "Earth_002": 34.0,
     "Earth_003": 10.5,
     "Energy_000": 22.0,
-    "Energy_001": 25.1,
+    "Energy_001": 27.0,
     "Energy_002": 42.45,
     "Energy_003": 26.3,
     "Information_000": 49.4,
@@ -7305,7 +7614,7 @@
     "Material_001": 23.6,
     "Material_002": 40.71,
     "Material_003": 28.8,
-    "Math_000": 26.65,
+    "Math_000": 29.05,
     "Math_001": 44.1,
     "Math_002": 20.5,
     "Math_003": 29.6,
@@ -7315,7 +7624,7 @@
     "Neuroscience_003": 20.4,
     "Physics_000": 35.7,
     "Physics_001": 46.25,
-    "Physics_002": 38.6,
+    "Physics_002": 40.05,
     "Physics_003": 49.0
   }
 }
