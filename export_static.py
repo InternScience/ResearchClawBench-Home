@@ -47,6 +47,7 @@ MODEL_TOKEN_PRICING_PER_MTOK = {
     "claude-sonnet-4-6": {"input": 3.0, "output": 15.0},
     "claude-opus-4-6": {"input": 5.0, "output": 25.0},
     "claude-opus-4-7": {"input": 5.0, "output": 25.0},
+    "claude-opus-4-8": {"input": 5.0, "output": 25.0},
     "gemini-3.1-pro": {"input": 2.0, "output": 12.0},
     "gemini-3.5-flash": {"input": 1.5, "output": 9.0},
     "glm-5.1": {"input": 1.4, "output": 4.4},
@@ -66,6 +67,7 @@ MODEL_DISPLAY_NAMES = {
     "gpt-5.5": "GPT-5.5",
     "claude-opus-4-6": "Claude-Opus-4.6",
     "claude-opus-4-7": "Claude-Opus-4.7",
+    "claude-opus-4-8": "Claude-Opus-4.8",
     "claude-sonnet-4-6": "Claude-Sonnet-4.6",
     "gemini-3.1-pro": "Gemini-3.1-Pro",
     "gemini-3.5-flash": "Gemini-3.5-Flash",
@@ -243,6 +245,8 @@ def _canonical_model_key(model):
         return "claude-opus-4-6"
     if key.startswith("claude-opus-4-7") or key.startswith("claude-opus-4.7"):
         return "claude-opus-4-7"
+    if key.startswith("claude-opus-4-8") or key.startswith("claude-opus-4.8"):
+        return "claude-opus-4-8"
     if key.startswith("gemini-3.1-pro-preview"):
         return "gemini-3.1-pro"
     if key.startswith("grok-4-1-fast-reasoning"):

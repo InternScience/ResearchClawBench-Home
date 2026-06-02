@@ -51,6 +51,7 @@
     "ResearchClaw",
     "ResearchHarness (Claude-Opus-4.6)",
     "ResearchHarness (Claude-Opus-4.7)",
+    "ResearchHarness (Claude-Opus-4.8)",
     "ResearchHarness (DeepSeek-V4-Pro)",
     "ResearchHarness (GLM-5.1)",
     "ResearchHarness (GPT-5.4)",
@@ -2900,6 +2901,359 @@
         "cost_usd": 2.976667,
         "model": "Claude-Opus-4.7",
         "model_display": "Claude-Opus-4.7"
+      }
+    },
+    "ResearchHarness (Claude-Opus-4.8)": {
+      "Astronomy_000": {
+        "score": 33.1,
+        "run_id": "Astronomy_000_20260601_203334",
+        "duration_seconds": 638,
+        "cost_usd": 2.126667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Astronomy_001": {
+        "score": 22.2,
+        "run_id": "Astronomy_001_20260601_204426",
+        "duration_seconds": 493,
+        "cost_usd": 1.643333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Astronomy_002": {
+        "score": 34.6,
+        "run_id": "Astronomy_002_20260601_205253",
+        "duration_seconds": 736,
+        "cost_usd": 2.453333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Astronomy_003": {
+        "score": 46.7,
+        "run_id": "Astronomy_003_20260601_210518",
+        "duration_seconds": 311,
+        "cost_usd": 1.036667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Chemistry_000": {
+        "score": 20.5,
+        "run_id": "Chemistry_000_20260601_211042",
+        "duration_seconds": 5868,
+        "cost_usd": 19.56,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Chemistry_002": {
+        "score": 4.5,
+        "run_id": "Chemistry_002_20260601_231944",
+        "duration_seconds": 598,
+        "cost_usd": 1.993333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Chemistry_003": {
+        "score": 28.8,
+        "run_id": "Chemistry_003_20260601_233158",
+        "duration_seconds": 3247,
+        "cost_usd": 10.823333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Earth_000": {
+        "score": 13.5,
+        "run_id": "Earth_000_20260602_002650",
+        "duration_seconds": 562,
+        "cost_usd": 1.873333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Earth_001": {
+        "score": 36.74,
+        "run_id": "Earth_001_20260602_003849",
+        "duration_seconds": 335,
+        "cost_usd": 1.116667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Earth_002": {
+        "score": 29.0,
+        "run_id": "Earth_002_20260602_004709",
+        "duration_seconds": 523,
+        "cost_usd": 1.743333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Earth_003": {
+        "score": 8.4,
+        "run_id": "Earth_003_20260602_005617",
+        "duration_seconds": 898,
+        "cost_usd": 2.993333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Energy_000": {
+        "score": 4.5,
+        "run_id": "Energy_000_20260602_011501",
+        "duration_seconds": 1357,
+        "cost_usd": 4.523333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Energy_001": {
+        "score": 16.4,
+        "run_id": "Energy_001_20260602_013904",
+        "duration_seconds": 637,
+        "cost_usd": 2.123333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Energy_002": {
+        "score": 41.95,
+        "run_id": "Energy_002_20260602_015146",
+        "duration_seconds": 578,
+        "cost_usd": 1.926667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Energy_003": {
+        "score": 11.0,
+        "run_id": "Energy_003_20260602_020334",
+        "duration_seconds": 474,
+        "cost_usd": 1.58,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Information_000": {
+        "score": 26.7,
+        "run_id": "Information_000_20260602_021341",
+        "duration_seconds": 705,
+        "cost_usd": 2.35,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Information_001": {
+        "score": 8.0,
+        "run_id": "Information_001_20260602_022730",
+        "duration_seconds": 878,
+        "cost_usd": 2.926667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Information_002": {
+        "score": 31.4,
+        "run_id": "Information_002_20260602_024413",
+        "duration_seconds": 338,
+        "cost_usd": 1.126667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Information_003": {
+        "score": 14.9,
+        "run_id": "Information_003_20260602_025156",
+        "duration_seconds": 1075,
+        "cost_usd": 3.583333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Life_000": {
+        "score": 10.95,
+        "run_id": "Life_000_20260602_031351",
+        "duration_seconds": 918,
+        "cost_usd": 3.06,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Life_001": {
+        "score": 15.5,
+        "run_id": "Life_001_20260602_033122",
+        "duration_seconds": 467,
+        "cost_usd": 1.556667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Life_002": {
+        "score": 2.1,
+        "run_id": "Life_002_20260602_034308",
+        "duration_seconds": 483,
+        "cost_usd": 1.61,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Life_003": {
+        "score": 24.1,
+        "run_id": "Life_003_20260602_035327",
+        "duration_seconds": 426,
+        "cost_usd": 1.42,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Material_000": {
+        "score": 26.0,
+        "run_id": "Material_000_20260602_040045",
+        "duration_seconds": 1121,
+        "cost_usd": 3.736667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Material_001": {
+        "score": 14.7,
+        "run_id": "Material_001_20260602_041939",
+        "duration_seconds": 496,
+        "cost_usd": 1.653333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Material_002": {
+        "score": 39.42,
+        "run_id": "Material_002_20260602_042808",
+        "duration_seconds": 2089,
+        "cost_usd": 6.963333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Material_003": {
+        "score": 18.6,
+        "run_id": "Material_003_20260602_050310",
+        "duration_seconds": 1016,
+        "cost_usd": 3.386667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Math_000": {
+        "score": 35.9,
+        "run_id": "Math_000_20260602_052038",
+        "duration_seconds": 560,
+        "cost_usd": 1.866667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Math_001": {
+        "score": 14.3,
+        "run_id": "Math_001_20260602_053007",
+        "duration_seconds": 549,
+        "cost_usd": 1.83,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Math_002": {
+        "score": 5.5,
+        "run_id": "Math_002_20260602_054317",
+        "duration_seconds": 6424,
+        "cost_usd": 21.413333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Math_003": {
+        "score": 10.0,
+        "run_id": "Math_003_20260602_073157",
+        "duration_seconds": 2627,
+        "cost_usd": 8.756667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Neuroscience_000": {
+        "score": 5.0,
+        "run_id": "Neuroscience_000_20260602_081550",
+        "duration_seconds": 721,
+        "cost_usd": 2.403333,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Neuroscience_001": {
+        "score": 5.75,
+        "run_id": "Neuroscience_001_20260602_083001",
+        "duration_seconds": 2289,
+        "cost_usd": 7.63,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Neuroscience_002": {
+        "score": 1.25,
+        "run_id": "Neuroscience_002_20260602_091210",
+        "duration_seconds": 1302,
+        "cost_usd": 4.34,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Neuroscience_003": {
+        "score": 5.85,
+        "run_id": "Neuroscience_003_20260602_093753",
+        "duration_seconds": 947,
+        "cost_usd": 3.156667,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Physics_000": {
+        "score": 37.2,
+        "run_id": "Physics_000_20260602_095453",
+        "duration_seconds": 2028,
+        "cost_usd": 6.76,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Physics_001": {
+        "score": 32.3,
+        "run_id": "Physics_001_20260602_102928",
+        "duration_seconds": 708,
+        "cost_usd": 2.36,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Physics_002": {
+        "score": 37.65,
+        "run_id": "Physics_002_20260602_104126",
+        "duration_seconds": 432,
+        "cost_usd": 1.44,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
+      },
+      "Physics_003": {
+        "score": 48.6,
+        "run_id": "Physics_003_20260602_104851",
+        "duration_seconds": 639,
+        "cost_usd": 2.13,
+        "model": "claude-opus-4-8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false
       }
     },
     "ResearchHarness (DeepSeek-V4-Pro)": {
@@ -7588,12 +7942,12 @@
   "frontier": {
     "Astronomy_000": 33.1,
     "Astronomy_001": 37.0,
-    "Astronomy_002": 32.0,
+    "Astronomy_002": 34.6,
     "Astronomy_003": 47.6,
-    "Chemistry_000": 20.4,
+    "Chemistry_000": 20.5,
     "Chemistry_001": 9.0,
     "Chemistry_002": 5.0,
-    "Chemistry_003": 22.5,
+    "Chemistry_003": 28.8,
     "Earth_000": 25.5,
     "Earth_001": 41.65,
     "Earth_002": 34.0,
@@ -7606,15 +7960,15 @@
     "Information_001": 18.0,
     "Information_002": 39.8,
     "Information_003": 17.75,
-    "Life_000": 10.15,
+    "Life_000": 10.95,
     "Life_001": 19.55,
     "Life_002": 9.7,
     "Life_003": 40.5,
-    "Material_000": 25.1,
+    "Material_000": 26.0,
     "Material_001": 23.6,
     "Material_002": 40.71,
     "Material_003": 28.8,
-    "Math_000": 29.05,
+    "Math_000": 35.9,
     "Math_001": 44.1,
     "Math_002": 20.5,
     "Math_003": 29.6,
@@ -7622,7 +7976,7 @@
     "Neuroscience_001": 7.05,
     "Neuroscience_002": 3.75,
     "Neuroscience_003": 20.4,
-    "Physics_000": 35.7,
+    "Physics_000": 37.2,
     "Physics_001": 46.25,
     "Physics_002": 40.05,
     "Physics_003": 49.0
