@@ -1,0 +1,54 @@
+{
+  "raw_h5_keys": [
+    "energy_axis",
+    "kx_axis",
+    "polarization_angles",
+    "pump_off_spectrum",
+    "pump_on_angle_0",
+    "pump_on_angle_30",
+    "pump_on_angle_60",
+    "pump_on_angle_90",
+    "pump_on_angle_120",
+    "pump_on_angle_150",
+    "pump_on_angle_180",
+    "time_delays"
+  ],
+  "energy_axis": {
+    "n": 200,
+    "min_eV": -0.5,
+    "max_eV": 0.5,
+    "step_eV": 0.005025125628140704
+  },
+  "kx_axis": {
+    "n": 150,
+    "min_Ainv": -0.3,
+    "max_Ainv": 0.3,
+    "step_Ainv": 0.004026845637583892
+  },
+  "time_delays_ps": [
+    -0.5,
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "polarization_angles_deg": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180
+  ],
+  "spectra_shapes": {
+    "pump_off": [
+      200,
+      150
+    ],
+    "pump_on_each_angle": [
+      200,
+      150
+    ]
+  }
+}
