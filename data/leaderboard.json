@@ -47,7 +47,8 @@
     "ARIS Codex",
     "OpenClaw",
     "Nanobot",
-    "EvoScientist",
+    "EvoScientist(0.0.4)",
+    "EvoScientist(0.1.1)",
     "ResearchClaw",
     "ResearchHarness (Claude-Opus-4.6)",
     "ResearchHarness (Claude-Opus-4.7)",
@@ -1675,328 +1676,6 @@
         "run_id": "Physics_003_20260401_131002",
         "duration_seconds": 142,
         "cost_usd": 0.26625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      }
-    },
-    "EvoScientist": {
-      "Astronomy_000": {
-        "score": 11.5,
-        "run_id": "Astronomy_000_20260330_094408",
-        "duration_seconds": 683,
-        "cost_usd": 1.280625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Astronomy_001": {
-        "score": 21.2,
-        "run_id": "Astronomy_001_20260403_194127",
-        "duration_seconds": 420,
-        "cost_usd": 0.7875,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Astronomy_002": {
-        "score": 23.9,
-        "run_id": "Astronomy_002_20260404_132455",
-        "duration_seconds": 410,
-        "cost_usd": 0.76875,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Astronomy_003": {
-        "score": 47.3,
-        "run_id": "Astronomy_003_20260404_133145",
-        "duration_seconds": 208,
-        "cost_usd": 0.39,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Chemistry_000": {
-        "score": 7.5,
-        "run_id": "Chemistry_000_20260330_095531",
-        "duration_seconds": 2706,
-        "cost_usd": 5.07375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Chemistry_001": {
-        "score": 7.3,
-        "run_id": "Chemistry_001_20260404_133513",
-        "duration_seconds": 366,
-        "cost_usd": 0.68625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Chemistry_002": {
-        "score": 1.4,
-        "run_id": "Chemistry_002_20260404_134119",
-        "duration_seconds": 341,
-        "cost_usd": 0.639375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Chemistry_003": {
-        "score": 1.5,
-        "run_id": "Chemistry_003_20260404_134700",
-        "duration_seconds": 727,
-        "cost_usd": 1.363125,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Earth_000": {
-        "score": 12.8,
-        "run_id": "Earth_000_20260330_104037",
-        "duration_seconds": 279,
-        "cost_usd": 0.523125,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Earth_001": {
-        "score": 39.97,
-        "run_id": "Earth_001_20260404_135907",
-        "duration_seconds": 229,
-        "cost_usd": 0.429375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Earth_002": {
-        "score": 15.1,
-        "run_id": "Earth_002_20260404_140256",
-        "duration_seconds": 488,
-        "cost_usd": 0.915,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Earth_003": {
-        "score": 0.0,
-        "run_id": "Earth_003_20260404_141105",
-        "duration_seconds": 497,
-        "cost_usd": 0.931875,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Energy_000": {
-        "score": 12.4,
-        "run_id": "Energy_000_20260330_104517",
-        "duration_seconds": 1488,
-        "cost_usd": 2.79,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Energy_001": {
-        "score": 20.9,
-        "run_id": "Energy_001_20260404_141923",
-        "duration_seconds": 404,
-        "cost_usd": 0.7575,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Energy_002": {
-        "score": 36.4,
-        "run_id": "Energy_002_20260404_142606",
-        "duration_seconds": 304,
-        "cost_usd": 0.57,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Energy_003": {
-        "score": 26.3,
-        "run_id": "Energy_003_20260404_143111",
-        "duration_seconds": 336,
-        "cost_usd": 0.63,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Information_000": {
-        "score": 7.2,
-        "run_id": "Information_000_20260330_111006",
-        "duration_seconds": 421,
-        "cost_usd": 0.789375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Information_001": {
-        "score": 3.6,
-        "run_id": "Information_001_20260404_143647",
-        "duration_seconds": 547,
-        "cost_usd": 1.025625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Information_002": {
-        "score": 14.1,
-        "run_id": "Information_002_20260404_144554",
-        "duration_seconds": 311,
-        "cost_usd": 0.583125,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Information_003": {
-        "score": 4.75,
-        "run_id": "Information_003_20260404_145105",
-        "duration_seconds": 1406,
-        "cost_usd": 2.63625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Life_000": {
-        "score": 7.05,
-        "run_id": "Life_000_20260330_111707",
-        "duration_seconds": 702,
-        "cost_usd": 1.31625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Life_001": {
-        "score": 13.6,
-        "run_id": "Life_001_20260404_151432",
-        "duration_seconds": 333,
-        "cost_usd": 0.624375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Life_002": {
-        "score": 9.1,
-        "run_id": "Life_002_20260404_152005",
-        "duration_seconds": 206,
-        "cost_usd": 0.38625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Life_003": {
-        "score": 36.0,
-        "run_id": "Life_003_20260404_152331",
-        "duration_seconds": 388,
-        "cost_usd": 0.7275,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Material_000": {
-        "score": 17.5,
-        "run_id": "Material_000_20260330_112849",
-        "duration_seconds": 2047,
-        "cost_usd": 3.838125,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Material_001": {
-        "score": 6.3,
-        "run_id": "Material_001_20260404_152959",
-        "duration_seconds": 323,
-        "cost_usd": 0.605625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Material_002": {
-        "score": 10.05,
-        "run_id": "Material_002_20260404_153523",
-        "duration_seconds": 239,
-        "cost_usd": 0.448125,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Material_003": {
-        "score": 19.95,
-        "run_id": "Material_003_20260404_153922",
-        "duration_seconds": 977,
-        "cost_usd": 1.831875,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Math_000": {
-        "score": 8.0,
-        "run_id": "Math_000_20260330_120257",
-        "duration_seconds": 572,
-        "cost_usd": 1.0725,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Math_001": {
-        "score": 35.2,
-        "run_id": "Math_001_20260404_155539",
-        "duration_seconds": 416,
-        "cost_usd": 0.78,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Math_002": {
-        "score": 14.1,
-        "run_id": "Math_002_20260404_160235",
-        "duration_seconds": 588,
-        "cost_usd": 1.1025,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Math_003": {
-        "score": 0.0,
-        "run_id": "Math_003_20260404_161228",
-        "duration_seconds": 341,
-        "cost_usd": 0.639375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Neuroscience_000": {
-        "score": 13.6,
-        "run_id": "Neuroscience_000_20260330_121229",
-        "duration_seconds": 533,
-        "cost_usd": 0.999375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Neuroscience_001": {
-        "score": 0.75,
-        "run_id": "Neuroscience_001_20260404_161809",
-        "duration_seconds": 478,
-        "cost_usd": 0.89625,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Neuroscience_002": {
-        "score": 1.0,
-        "run_id": "Neuroscience_002_20260404_162607",
-        "duration_seconds": 2282,
-        "cost_usd": 4.27875,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Neuroscience_003": {
-        "score": 5.95,
-        "run_id": "Neuroscience_003_20260404_170410",
-        "duration_seconds": 625,
-        "cost_usd": 1.171875,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Physics_000": {
-        "score": 19.2,
-        "run_id": "Physics_000_20260330_122122",
-        "duration_seconds": 390,
-        "cost_usd": 0.73125,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Physics_001": {
-        "score": 24.5,
-        "run_id": "Physics_001_20260404_171435",
-        "duration_seconds": 354,
-        "cost_usd": 0.66375,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Physics_002": {
-        "score": 24.85,
-        "run_id": "Physics_002_20260404_172029",
-        "duration_seconds": 794,
-        "cost_usd": 1.48875,
-        "model": "gpt-5.4",
-        "model_display": "GPT-5.4"
-      },
-      "Physics_003": {
-        "score": 36.8,
-        "run_id": "Physics_003_20260404_173350",
-        "duration_seconds": 321,
-        "cost_usd": 0.601875,
         "model": "gpt-5.4",
         "model_display": "GPT-5.4"
       }
@@ -7937,6 +7616,690 @@
         "model_display": "Qwen3.7-Max",
         "details_exported": false
       }
+    },
+    "EvoScientist(0.0.4)": {
+      "Astronomy_000": {
+        "score": 11.5,
+        "run_id": "Astronomy_000_20260330_094408",
+        "duration_seconds": 683,
+        "cost_usd": 1.280625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Astronomy_001": {
+        "score": 21.2,
+        "run_id": "Astronomy_001_20260403_194127",
+        "duration_seconds": 420,
+        "cost_usd": 0.7875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Astronomy_002": {
+        "score": 23.9,
+        "run_id": "Astronomy_002_20260404_132455",
+        "duration_seconds": 410,
+        "cost_usd": 0.76875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Astronomy_003": {
+        "score": 47.3,
+        "run_id": "Astronomy_003_20260404_133145",
+        "duration_seconds": 208,
+        "cost_usd": 0.39,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Chemistry_000": {
+        "score": 7.5,
+        "run_id": "Chemistry_000_20260330_095531",
+        "duration_seconds": 2706,
+        "cost_usd": 5.07375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Chemistry_001": {
+        "score": 7.3,
+        "run_id": "Chemistry_001_20260404_133513",
+        "duration_seconds": 366,
+        "cost_usd": 0.68625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Chemistry_002": {
+        "score": 1.4,
+        "run_id": "Chemistry_002_20260404_134119",
+        "duration_seconds": 341,
+        "cost_usd": 0.639375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Chemistry_003": {
+        "score": 1.5,
+        "run_id": "Chemistry_003_20260404_134700",
+        "duration_seconds": 727,
+        "cost_usd": 1.363125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Earth_000": {
+        "score": 12.8,
+        "run_id": "Earth_000_20260330_104037",
+        "duration_seconds": 279,
+        "cost_usd": 0.523125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Earth_001": {
+        "score": 39.97,
+        "run_id": "Earth_001_20260404_135907",
+        "duration_seconds": 229,
+        "cost_usd": 0.429375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Earth_002": {
+        "score": 15.1,
+        "run_id": "Earth_002_20260404_140256",
+        "duration_seconds": 488,
+        "cost_usd": 0.915,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Earth_003": {
+        "score": 0.0,
+        "run_id": "Earth_003_20260404_141105",
+        "duration_seconds": 497,
+        "cost_usd": 0.931875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Energy_000": {
+        "score": 12.4,
+        "run_id": "Energy_000_20260330_104517",
+        "duration_seconds": 1488,
+        "cost_usd": 2.79,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Energy_001": {
+        "score": 20.9,
+        "run_id": "Energy_001_20260404_141923",
+        "duration_seconds": 404,
+        "cost_usd": 0.7575,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Energy_002": {
+        "score": 36.4,
+        "run_id": "Energy_002_20260404_142606",
+        "duration_seconds": 304,
+        "cost_usd": 0.57,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Energy_003": {
+        "score": 26.3,
+        "run_id": "Energy_003_20260404_143111",
+        "duration_seconds": 336,
+        "cost_usd": 0.63,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Information_000": {
+        "score": 7.2,
+        "run_id": "Information_000_20260330_111006",
+        "duration_seconds": 421,
+        "cost_usd": 0.789375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Information_001": {
+        "score": 3.6,
+        "run_id": "Information_001_20260404_143647",
+        "duration_seconds": 547,
+        "cost_usd": 1.025625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Information_002": {
+        "score": 14.1,
+        "run_id": "Information_002_20260404_144554",
+        "duration_seconds": 311,
+        "cost_usd": 0.583125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Information_003": {
+        "score": 4.75,
+        "run_id": "Information_003_20260404_145105",
+        "duration_seconds": 1406,
+        "cost_usd": 2.63625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Life_000": {
+        "score": 7.05,
+        "run_id": "Life_000_20260330_111707",
+        "duration_seconds": 702,
+        "cost_usd": 1.31625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Life_001": {
+        "score": 13.6,
+        "run_id": "Life_001_20260404_151432",
+        "duration_seconds": 333,
+        "cost_usd": 0.624375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Life_002": {
+        "score": 9.1,
+        "run_id": "Life_002_20260404_152005",
+        "duration_seconds": 206,
+        "cost_usd": 0.38625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Life_003": {
+        "score": 36.0,
+        "run_id": "Life_003_20260404_152331",
+        "duration_seconds": 388,
+        "cost_usd": 0.7275,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Material_000": {
+        "score": 17.5,
+        "run_id": "Material_000_20260330_112849",
+        "duration_seconds": 2047,
+        "cost_usd": 3.838125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Material_001": {
+        "score": 6.3,
+        "run_id": "Material_001_20260404_152959",
+        "duration_seconds": 323,
+        "cost_usd": 0.605625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Material_002": {
+        "score": 10.05,
+        "run_id": "Material_002_20260404_153523",
+        "duration_seconds": 239,
+        "cost_usd": 0.448125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Material_003": {
+        "score": 19.95,
+        "run_id": "Material_003_20260404_153922",
+        "duration_seconds": 977,
+        "cost_usd": 1.831875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Math_000": {
+        "score": 8.0,
+        "run_id": "Math_000_20260330_120257",
+        "duration_seconds": 572,
+        "cost_usd": 1.0725,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Math_001": {
+        "score": 35.2,
+        "run_id": "Math_001_20260404_155539",
+        "duration_seconds": 416,
+        "cost_usd": 0.78,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Math_002": {
+        "score": 14.1,
+        "run_id": "Math_002_20260404_160235",
+        "duration_seconds": 588,
+        "cost_usd": 1.1025,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Math_003": {
+        "score": 0.0,
+        "run_id": "Math_003_20260404_161228",
+        "duration_seconds": 341,
+        "cost_usd": 0.639375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Neuroscience_000": {
+        "score": 13.6,
+        "run_id": "Neuroscience_000_20260330_121229",
+        "duration_seconds": 533,
+        "cost_usd": 0.999375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Neuroscience_001": {
+        "score": 0.75,
+        "run_id": "Neuroscience_001_20260404_161809",
+        "duration_seconds": 478,
+        "cost_usd": 0.89625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Neuroscience_002": {
+        "score": 1.0,
+        "run_id": "Neuroscience_002_20260404_162607",
+        "duration_seconds": 2282,
+        "cost_usd": 4.27875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Neuroscience_003": {
+        "score": 5.95,
+        "run_id": "Neuroscience_003_20260404_170410",
+        "duration_seconds": 625,
+        "cost_usd": 1.171875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Physics_000": {
+        "score": 19.2,
+        "run_id": "Physics_000_20260330_122122",
+        "duration_seconds": 390,
+        "cost_usd": 0.73125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Physics_001": {
+        "score": 24.5,
+        "run_id": "Physics_001_20260404_171435",
+        "duration_seconds": 354,
+        "cost_usd": 0.66375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Physics_002": {
+        "score": 24.85,
+        "run_id": "Physics_002_20260404_172029",
+        "duration_seconds": 794,
+        "cost_usd": 1.48875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      },
+      "Physics_003": {
+        "score": 36.8,
+        "run_id": "Physics_003_20260404_173350",
+        "duration_seconds": 321,
+        "cost_usd": 0.601875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4"
+      }
+    },
+    "EvoScientist(0.1.1)": {
+      "Astronomy_000": {
+        "score": 24.0,
+        "run_id": "Astronomy_000_20260601_183010",
+        "duration_seconds": 1598,
+        "cost_usd": 2.99625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Astronomy_001": {
+        "score": 12.8,
+        "run_id": "Astronomy_001_20260601_201927",
+        "duration_seconds": 801,
+        "cost_usd": 1.501875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Astronomy_002": {
+        "score": 23.1,
+        "run_id": "Astronomy_002_20260601_203302",
+        "duration_seconds": 1613,
+        "cost_usd": 3.024375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Astronomy_003": {
+        "score": 45.6,
+        "run_id": "Astronomy_003_20260601_210013",
+        "duration_seconds": 479,
+        "cost_usd": 0.898125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Chemistry_000": {
+        "score": 9.55,
+        "run_id": "Chemistry_000_20260601_210836",
+        "duration_seconds": 1974,
+        "cost_usd": 3.70125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Chemistry_001": {
+        "score": 11.3,
+        "run_id": "Chemistry_001_20260601_214144",
+        "duration_seconds": 3203,
+        "cost_usd": 6.005625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Chemistry_002": {
+        "score": 3.0,
+        "run_id": "Chemistry_002_20260601_223531",
+        "duration_seconds": 1319,
+        "cost_usd": 2.473125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Chemistry_003": {
+        "score": 15.9,
+        "run_id": "Chemistry_003_20260601_225747",
+        "duration_seconds": 3574,
+        "cost_usd": 6.70125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Earth_000": {
+        "score": 23.0,
+        "run_id": "Earth_000_20260602_084348",
+        "duration_seconds": 1276,
+        "cost_usd": 2.3925,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Earth_001": {
+        "score": 39.36,
+        "run_id": "Earth_001_20260602_090906",
+        "duration_seconds": 602,
+        "cost_usd": 1.12875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Earth_002": {
+        "score": 13.0,
+        "run_id": "Earth_002_20260602_091948",
+        "duration_seconds": 1446,
+        "cost_usd": 2.71125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Earth_003": {
+        "score": 0.0,
+        "run_id": "Earth_003_20260602_103953",
+        "duration_seconds": 2469,
+        "cost_usd": 4.629375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Energy_000": {
+        "score": 9.9,
+        "run_id": "Energy_000_20260602_112130",
+        "duration_seconds": 2823,
+        "cost_usd": 5.293125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Energy_001": {
+        "score": 16.6,
+        "run_id": "Energy_001_20260602_120851",
+        "duration_seconds": 1338,
+        "cost_usd": 2.50875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Energy_002": {
+        "score": 33.6,
+        "run_id": "Energy_002_20260602_123324",
+        "duration_seconds": 4762,
+        "cost_usd": 8.92875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Energy_003": {
+        "score": 19.5,
+        "run_id": "Energy_003_20260602_144640",
+        "duration_seconds": 1981,
+        "cost_usd": 3.714375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Information_000": {
+        "score": 24.5,
+        "run_id": "Information_000_20260602_152014",
+        "duration_seconds": 1034,
+        "cost_usd": 1.93875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Information_001": {
+        "score": 2.4,
+        "run_id": "Information_001_20260602_160625",
+        "duration_seconds": 1435,
+        "cost_usd": 2.690625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Information_002": {
+        "score": 35.0,
+        "run_id": "Information_002_20260602_163049",
+        "duration_seconds": 1359,
+        "cost_usd": 2.548125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Information_003": {
+        "score": 13.6,
+        "run_id": "Information_003_20260602_165333",
+        "duration_seconds": 2761,
+        "cost_usd": 5.176875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Life_000": {
+        "score": 9.5,
+        "run_id": "Life_000_20260602_173947",
+        "duration_seconds": 2578,
+        "cost_usd": 4.83375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Life_001": {
+        "score": 5.95,
+        "run_id": "Life_001_20260602_182305",
+        "duration_seconds": 1575,
+        "cost_usd": 2.953125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Life_002": {
+        "score": 11.2,
+        "run_id": "Life_002_20260602_184939",
+        "duration_seconds": 2892,
+        "cost_usd": 5.4225,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Life_003": {
+        "score": 40.1,
+        "run_id": "Life_003_20260602_203549",
+        "duration_seconds": 1428,
+        "cost_usd": 2.6775,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Material_000": {
+        "score": 5.6,
+        "run_id": "Material_000_20260602_210002",
+        "duration_seconds": 2620,
+        "cost_usd": 4.9125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Material_001": {
+        "score": 3.5,
+        "run_id": "Material_001_20260602_214354",
+        "duration_seconds": 1120,
+        "cost_usd": 2.1,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Material_002": {
+        "score": 37.11,
+        "run_id": "Material_002_20260602_220255",
+        "duration_seconds": 8111,
+        "cost_usd": 15.208125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Material_003": {
+        "score": 14.4,
+        "run_id": "Material_003_20260603_001836",
+        "duration_seconds": 4286,
+        "cost_usd": 8.03625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Math_000": {
+        "score": 22.2,
+        "run_id": "Math_000_20260603_094603",
+        "duration_seconds": 2328,
+        "cost_usd": 4.365,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Math_001": {
+        "score": 24.1,
+        "run_id": "Math_001_20260603_102506",
+        "duration_seconds": 2328,
+        "cost_usd": 4.365,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Math_002": {
+        "score": 9.6,
+        "run_id": "Math_002_20260603_110404",
+        "duration_seconds": 1486,
+        "cost_usd": 2.78625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Math_003": {
+        "score": 6.0,
+        "run_id": "Math_003_20260603_112910",
+        "duration_seconds": 2174,
+        "cost_usd": 4.07625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Neuroscience_000": {
+        "score": 14.2,
+        "run_id": "Neuroscience_000_20260603_120527",
+        "duration_seconds": 2695,
+        "cost_usd": 5.053125,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Neuroscience_001": {
+        "score": 18.5,
+        "run_id": "Neuroscience_001_20260603_133907",
+        "duration_seconds": 1859,
+        "cost_usd": 3.485625,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Neuroscience_002": {
+        "score": 0.75,
+        "run_id": "Neuroscience_002_20260603_141028",
+        "duration_seconds": 2553,
+        "cost_usd": 4.786875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Neuroscience_003": {
+        "score": 12.3,
+        "run_id": "Neuroscience_003_20260603_152926",
+        "duration_seconds": 1282,
+        "cost_usd": 2.40375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Physics_000": {
+        "score": 24.4,
+        "run_id": "Physics_000_20260603_155109",
+        "duration_seconds": 932,
+        "cost_usd": 1.7475,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Physics_001": {
+        "score": 12.4,
+        "run_id": "Physics_001_20260603_160705",
+        "duration_seconds": 1905,
+        "cost_usd": 3.571875,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Physics_002": {
+        "score": 47.4,
+        "run_id": "Physics_002_20260603_163907",
+        "duration_seconds": 3472,
+        "cost_usd": 6.51,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      },
+      "Physics_003": {
+        "score": 55.6,
+        "run_id": "Physics_003_20260603_173720",
+        "duration_seconds": 1613,
+        "cost_usd": 3.024375,
+        "model": "gpt-5.4",
+        "model_display": "GPT-5.4",
+        "details_exported": false
+      }
     }
   },
   "frontier": {
@@ -7945,7 +8308,7 @@
     "Astronomy_002": 34.6,
     "Astronomy_003": 47.6,
     "Chemistry_000": 20.5,
-    "Chemistry_001": 9.0,
+    "Chemistry_001": 11.3,
     "Chemistry_002": 5.0,
     "Chemistry_003": 28.8,
     "Earth_000": 25.5,
@@ -7962,7 +8325,7 @@
     "Information_003": 17.75,
     "Life_000": 10.95,
     "Life_001": 19.55,
-    "Life_002": 9.7,
+    "Life_002": 11.2,
     "Life_003": 40.5,
     "Material_000": 26.0,
     "Material_001": 23.6,
@@ -7972,13 +8335,13 @@
     "Math_001": 44.1,
     "Math_002": 20.5,
     "Math_003": 29.6,
-    "Neuroscience_000": 14.0,
-    "Neuroscience_001": 7.05,
+    "Neuroscience_000": 14.2,
+    "Neuroscience_001": 18.5,
     "Neuroscience_002": 3.75,
     "Neuroscience_003": 20.4,
     "Physics_000": 37.2,
     "Physics_001": 46.25,
-    "Physics_002": 40.05,
-    "Physics_003": 49.0
+    "Physics_002": 47.4,
+    "Physics_003": 55.6
   }
 }
