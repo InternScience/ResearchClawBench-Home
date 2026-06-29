@@ -1,0 +1,4912 @@
+{
+  "pass_mode": "pass5",
+  "version": "rcb-v1.5-pass5",
+  "generated_at": "2026-06-29",
+  "source": "ResearchClawBench-OtherRuns/rcb_pass5_scores",
+  "tasks": [
+    "Astronomy_000",
+    "Astronomy_001",
+    "Astronomy_002",
+    "Astronomy_003",
+    "Chemistry_000",
+    "Chemistry_001",
+    "Chemistry_002",
+    "Chemistry_003",
+    "Earth_000",
+    "Earth_001",
+    "Earth_002",
+    "Earth_003",
+    "Energy_000",
+    "Energy_001",
+    "Energy_002",
+    "Energy_003",
+    "Information_000",
+    "Information_001",
+    "Information_002",
+    "Information_003",
+    "Life_000",
+    "Life_001",
+    "Life_002",
+    "Life_003",
+    "Material_000",
+    "Material_001",
+    "Material_002",
+    "Material_003",
+    "Math_000",
+    "Math_001",
+    "Math_002",
+    "Math_003",
+    "Neuroscience_000",
+    "Neuroscience_001",
+    "Neuroscience_002",
+    "Neuroscience_003",
+    "Physics_000",
+    "Physics_001",
+    "Physics_002",
+    "Physics_003"
+  ],
+  "agents": [
+    "ResearchHarness (Claude-Opus-4.8)",
+    "ResearchHarness (Gemini-3.5-Flash)",
+    "ResearchHarness (Kimi-K2.6)",
+    "ResearchHarness (GPT-5.5)",
+    "ResearchHarness (MiMo-V2.5)",
+    "ResearchHarness (GLM-5.1)"
+  ],
+  "scores": {
+    "ResearchHarness (Claude-Opus-4.8)": {
+      "Astronomy_000": {
+        "score": 26.6,
+        "mean": 23.48,
+        "std": 2.01,
+        "min": 21.1,
+        "max": 26.6,
+        "runs": [
+          26.6,
+          23.6,
+          23.5,
+          22.6,
+          21.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_001": {
+        "score": 40.6,
+        "mean": 30.68,
+        "std": 8.42,
+        "min": 19.8,
+        "max": 40.6,
+        "runs": [
+          40.6,
+          36.2,
+          32.0,
+          24.8,
+          19.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_002": {
+        "score": 29.9,
+        "mean": 25.5,
+        "std": 5.24,
+        "min": 18.1,
+        "max": 29.9,
+        "runs": [
+          29.9,
+          29.5,
+          28.1,
+          21.9,
+          18.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_003": {
+        "score": 48.6,
+        "mean": 45.78,
+        "std": 1.98,
+        "min": 43.9,
+        "max": 48.6,
+        "runs": [
+          48.6,
+          46.8,
+          45.6,
+          44.0,
+          43.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_000": {
+        "score": 34.0,
+        "mean": 25.35,
+        "std": 6.99,
+        "min": 14.95,
+        "max": 34.0,
+        "runs": [
+          34.0,
+          27.75,
+          26.85,
+          23.2,
+          14.95
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_001": {
+        "score": 9.65,
+        "mean": 9.12,
+        "std": 0.41,
+        "min": 8.65,
+        "max": 9.65,
+        "runs": [
+          9.65,
+          9.3,
+          9.25,
+          8.75,
+          8.65
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_002": {
+        "score": 18.2,
+        "mean": 9.79,
+        "std": 6.92,
+        "min": 1.75,
+        "max": 18.2,
+        "runs": [
+          18.2,
+          15.7,
+          7.5,
+          5.8,
+          1.75
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_003": {
+        "score": 30.6,
+        "mean": 27.76,
+        "std": 1.97,
+        "min": 25.8,
+        "max": 30.6,
+        "runs": [
+          30.6,
+          28.5,
+          27.9,
+          26.0,
+          25.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_000": {
+        "score": 23.6,
+        "mean": 17.52,
+        "std": 4.88,
+        "min": 12.8,
+        "max": 23.6,
+        "runs": [
+          23.6,
+          21.3,
+          17.0,
+          12.9,
+          12.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_001": {
+        "score": 38.68,
+        "mean": 32.7,
+        "std": 5.24,
+        "min": 24.54,
+        "max": 38.68,
+        "runs": [
+          38.68,
+          34.72,
+          34.1,
+          31.45,
+          24.54
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_002": {
+        "score": 34.1,
+        "mean": 28.48,
+        "std": 8.45,
+        "min": 14.4,
+        "max": 34.1,
+        "runs": [
+          34.1,
+          34.0,
+          33.2,
+          26.7,
+          14.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_003": {
+        "score": 8.8,
+        "mean": 5.4,
+        "std": 4.31,
+        "min": 0.4,
+        "max": 8.8,
+        "runs": [
+          8.8,
+          8.8,
+          8.0,
+          1.0,
+          0.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_000": {
+        "score": 25.0,
+        "mean": 15.2,
+        "std": 7.8,
+        "min": 6.0,
+        "max": 25.0,
+        "runs": [
+          25.0,
+          19.9,
+          16.2,
+          8.9,
+          6.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_001": {
+        "score": 31.7,
+        "mean": 23.82,
+        "std": 6.54,
+        "min": 15.0,
+        "max": 31.7,
+        "runs": [
+          31.7,
+          26.6,
+          26.2,
+          19.6,
+          15.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_002": {
+        "score": 39.8,
+        "mean": 30.05,
+        "std": 10.04,
+        "min": 17.3,
+        "max": 39.8,
+        "runs": [
+          39.8,
+          36.05,
+          27.05,
+          17.3,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_003": {
+        "score": 25.9,
+        "mean": 15.0,
+        "std": 8.81,
+        "min": 7.5,
+        "max": 25.9,
+        "runs": [
+          25.9,
+          23.0,
+          11.1,
+          7.5,
+          7.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_000": {
+        "score": 58.6,
+        "mean": 24.46,
+        "std": 20.95,
+        "min": 3.2,
+        "max": 58.6,
+        "runs": [
+          58.6,
+          25.5,
+          22.0,
+          13.0,
+          3.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_001": {
+        "score": 19.6,
+        "mean": 7.0,
+        "std": 7.33,
+        "min": 1.0,
+        "max": 19.6,
+        "runs": [
+          19.6,
+          6.4,
+          5.0,
+          3.0,
+          1.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_002": {
+        "score": 38.4,
+        "mean": 28.56,
+        "std": 7.51,
+        "min": 18.9,
+        "max": 38.4,
+        "runs": [
+          38.4,
+          32.6,
+          28.7,
+          24.2,
+          18.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_003": {
+        "score": 21.85,
+        "mean": 14.93,
+        "std": 4.24,
+        "min": 10.3,
+        "max": 21.85,
+        "runs": [
+          21.85,
+          14.85,
+          14.0,
+          13.65,
+          10.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_000": {
+        "score": 12.55,
+        "mean": 10.27,
+        "std": 2.4,
+        "min": 7.3,
+        "max": 12.55,
+        "runs": [
+          12.55,
+          12.3,
+          11.0,
+          8.2,
+          7.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_001": {
+        "score": 15.35,
+        "mean": 9.7,
+        "std": 5.92,
+        "min": 0.0,
+        "max": 15.35,
+        "runs": [
+          15.35,
+          12.3,
+          12.2,
+          8.65,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_002": {
+        "score": 14.0,
+        "mean": 10.16,
+        "std": 2.71,
+        "min": 7.8,
+        "max": 14.0,
+        "runs": [
+          14.0,
+          12.0,
+          8.8,
+          8.2,
+          7.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_003": {
+        "score": 41.3,
+        "mean": 33.24,
+        "std": 6.18,
+        "min": 25.6,
+        "max": 41.3,
+        "runs": [
+          41.3,
+          37.3,
+          32.2,
+          29.8,
+          25.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_000": {
+        "score": 36.8,
+        "mean": 26.44,
+        "std": 6.21,
+        "min": 20.1,
+        "max": 36.8,
+        "runs": [
+          36.8,
+          25.9,
+          25.0,
+          24.4,
+          20.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_001": {
+        "score": 31.05,
+        "mean": 25.36,
+        "std": 5.92,
+        "min": 16.35,
+        "max": 31.05,
+        "runs": [
+          31.05,
+          28.5,
+          28.35,
+          22.55,
+          16.35
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_002": {
+        "score": 43.71,
+        "mean": 36.31,
+        "std": 5.55,
+        "min": 29.52,
+        "max": 43.71,
+        "runs": [
+          43.71,
+          39.73,
+          35.44,
+          33.14,
+          29.52
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_003": {
+        "score": 26.0,
+        "mean": 21.02,
+        "std": 4.22,
+        "min": 15.15,
+        "max": 26.0,
+        "runs": [
+          26.0,
+          23.75,
+          21.3,
+          18.9,
+          15.15
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_000": {
+        "score": 32.05,
+        "mean": 28.52,
+        "std": 3.31,
+        "min": 24.9,
+        "max": 32.05,
+        "runs": [
+          32.05,
+          31.9,
+          27.75,
+          26.0,
+          24.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_001": {
+        "score": 46.4,
+        "mean": 34.6,
+        "std": 7.67,
+        "min": 25.0,
+        "max": 46.4,
+        "runs": [
+          46.4,
+          34.9,
+          33.9,
+          32.8,
+          25.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_002": {
+        "score": 26.5,
+        "mean": 14.24,
+        "std": 10.97,
+        "min": 0.0,
+        "max": 26.5,
+        "runs": [
+          26.5,
+          24.1,
+          10.4,
+          10.2,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_003": {
+        "score": 15.75,
+        "mean": 5.63,
+        "std": 7.8,
+        "min": 0.0,
+        "max": 15.75,
+        "runs": [
+          15.75,
+          12.4,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_000": {
+        "score": 14.2,
+        "mean": 12.56,
+        "std": 1.97,
+        "min": 9.4,
+        "max": 14.2,
+        "runs": [
+          14.2,
+          14.0,
+          13.2,
+          12.0,
+          9.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_001": {
+        "score": 25.95,
+        "mean": 22.09,
+        "std": 3.76,
+        "min": 16.0,
+        "max": 25.95,
+        "runs": [
+          25.95,
+          23.8,
+          23.25,
+          21.45,
+          16.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_002": {
+        "score": 6.25,
+        "mean": 3.4,
+        "std": 2.0,
+        "min": 1.25,
+        "max": 6.25,
+        "runs": [
+          6.25,
+          4.5,
+          3.0,
+          2.0,
+          1.25
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_003": {
+        "score": 20.75,
+        "mean": 15.5,
+        "std": 4.16,
+        "min": 11.05,
+        "max": 20.75,
+        "runs": [
+          20.75,
+          17.5,
+          16.75,
+          11.45,
+          11.05
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_000": {
+        "score": 37.8,
+        "mean": 29.66,
+        "std": 6.52,
+        "min": 24.8,
+        "max": 37.8,
+        "runs": [
+          37.8,
+          35.7,
+          25.0,
+          25.0,
+          24.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_001": {
+        "score": 34.2,
+        "mean": 32.26,
+        "std": 1.74,
+        "min": 29.45,
+        "max": 34.2,
+        "runs": [
+          34.2,
+          32.95,
+          32.4,
+          32.3,
+          29.45
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_002": {
+        "score": 41.2,
+        "mean": 36.42,
+        "std": 2.86,
+        "min": 34.1,
+        "max": 41.2,
+        "runs": [
+          41.2,
+          36.3,
+          36.2,
+          34.3,
+          34.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_003": {
+        "score": 64.4,
+        "mean": 50.82,
+        "std": 7.71,
+        "min": 46.0,
+        "max": 64.4,
+        "runs": [
+          64.4,
+          49.4,
+          47.9,
+          46.4,
+          46.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Claude-Opus-4.8",
+        "model_display": "Claude-Opus-4.8",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      }
+    },
+    "ResearchHarness (Gemini-3.5-Flash)": {
+      "Astronomy_000": {
+        "score": 32.6,
+        "mean": 19.52,
+        "std": 9.29,
+        "min": 8.0,
+        "max": 32.6,
+        "runs": [
+          32.6,
+          28.2,
+          14.6,
+          14.2,
+          8.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_001": {
+        "score": 37.6,
+        "mean": 24.96,
+        "std": 11.48,
+        "min": 7.2,
+        "max": 37.6,
+        "runs": [
+          37.6,
+          36.8,
+          24.8,
+          18.4,
+          7.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_002": {
+        "score": 24.0,
+        "mean": 24.0,
+        "std": 0.0,
+        "min": 24.0,
+        "max": 24.0,
+        "runs": [
+          24.0,
+          null,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 1,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_003": {
+        "score": 46.6,
+        "mean": 43.86,
+        "std": 1.95,
+        "min": 40.8,
+        "max": 46.6,
+        "runs": [
+          46.6,
+          44.7,
+          44.4,
+          42.8,
+          40.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_000": {
+        "score": 19.55,
+        "mean": 18.01,
+        "std": 1.24,
+        "min": 16.3,
+        "max": 19.55,
+        "runs": [
+          19.55,
+          18.9,
+          18.45,
+          16.85,
+          16.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_001": {
+        "score": 8.55,
+        "mean": 4.18,
+        "std": 2.6,
+        "min": 1.25,
+        "max": 8.55,
+        "runs": [
+          8.55,
+          5.0,
+          4.25,
+          1.85,
+          1.25
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_002": {
+        "score": 6.0,
+        "mean": 1.4,
+        "std": 2.33,
+        "min": 0.0,
+        "max": 6.0,
+        "runs": [
+          6.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_003": {
+        "score": 28.2,
+        "mean": 15.15,
+        "std": 7.75,
+        "min": 8.4,
+        "max": 28.2,
+        "runs": [
+          28.2,
+          13.5,
+          10.5,
+          8.4,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_000": {
+        "score": 23.6,
+        "mean": 19.42,
+        "std": 4.21,
+        "min": 11.7,
+        "max": 23.6,
+        "runs": [
+          23.6,
+          22.8,
+          19.6,
+          19.4,
+          11.7
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_001": {
+        "score": 39.95,
+        "mean": 35.46,
+        "std": 3.14,
+        "min": 31.18,
+        "max": 39.95,
+        "runs": [
+          39.95,
+          37.04,
+          36.38,
+          32.75,
+          31.18
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_002": {
+        "score": 31.7,
+        "mean": 26.54,
+        "std": 3.56,
+        "min": 22.9,
+        "max": 31.7,
+        "runs": [
+          31.7,
+          29.9,
+          24.5,
+          23.7,
+          22.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_003": {
+        "score": 13.0,
+        "mean": 8.06,
+        "std": 3.66,
+        "min": 2.5,
+        "max": 13.0,
+        "runs": [
+          13.0,
+          11.0,
+          7.3,
+          6.5,
+          2.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_000": {
+        "score": 20.5,
+        "mean": 16.14,
+        "std": 4.24,
+        "min": 8.0,
+        "max": 20.5,
+        "runs": [
+          20.5,
+          17.5,
+          17.5,
+          17.2,
+          8.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_001": {
+        "score": 24.5,
+        "mean": 18.54,
+        "std": 3.44,
+        "min": 15.1,
+        "max": 24.5,
+        "runs": [
+          24.5,
+          20.0,
+          17.5,
+          15.6,
+          15.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_002": {
+        "score": 38.65,
+        "mean": 36.76,
+        "std": 1.73,
+        "min": 34.05,
+        "max": 38.65,
+        "runs": [
+          38.65,
+          38.55,
+          36.75,
+          35.8,
+          34.05
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_003": {
+        "score": 44.0,
+        "mean": 23.44,
+        "std": 11.71,
+        "min": 7.5,
+        "max": 44.0,
+        "runs": [
+          44.0,
+          22.7,
+          22.0,
+          21.0,
+          7.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_000": {
+        "score": 41.4,
+        "mean": 24.98,
+        "std": 8.31,
+        "min": 18.5,
+        "max": 41.4,
+        "runs": [
+          41.4,
+          22.5,
+          21.3,
+          21.2,
+          18.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_001": {
+        "score": 17.6,
+        "mean": 7.8,
+        "std": 6.39,
+        "min": 1.6,
+        "max": 17.6,
+        "runs": [
+          17.6,
+          13.2,
+          3.6,
+          3.0,
+          1.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_002": {
+        "score": 32.6,
+        "mean": 27.94,
+        "std": 4.18,
+        "min": 21.8,
+        "max": 32.6,
+        "runs": [
+          32.6,
+          30.9,
+          30.2,
+          24.2,
+          21.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_003": {
+        "score": 17.6,
+        "mean": 11.56,
+        "std": 5.41,
+        "min": 4.6,
+        "max": 17.6,
+        "runs": [
+          17.6,
+          16.4,
+          13.5,
+          5.7,
+          4.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_000": {
+        "score": 9.3,
+        "mean": 7.84,
+        "std": 1.35,
+        "min": 6.25,
+        "max": 9.3,
+        "runs": [
+          9.3,
+          9.25,
+          8.1,
+          6.3,
+          6.25
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_001": {
+        "score": 29.0,
+        "mean": 12.69,
+        "std": 8.96,
+        "min": 3.75,
+        "max": 29.0,
+        "runs": [
+          29.0,
+          13.95,
+          11.25,
+          5.5,
+          3.75
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_002": {
+        "score": 24.0,
+        "mean": 9.12,
+        "std": 7.54,
+        "min": 3.4,
+        "max": 24.0,
+        "runs": [
+          24.0,
+          7.0,
+          6.2,
+          5.0,
+          3.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_003": {
+        "score": 41.6,
+        "mean": 33.24,
+        "std": 4.44,
+        "min": 29.2,
+        "max": 41.6,
+        "runs": [
+          41.6,
+          32.8,
+          32.8,
+          29.8,
+          29.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_000": {
+        "score": 24.1,
+        "mean": 20.5,
+        "std": 3.47,
+        "min": 14.4,
+        "max": 24.1,
+        "runs": [
+          24.1,
+          23.6,
+          20.4,
+          20.0,
+          14.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_001": {
+        "score": 13.05,
+        "mean": 9.96,
+        "std": 2.34,
+        "min": 7.0,
+        "max": 13.05,
+        "runs": [
+          13.05,
+          12.25,
+          9.45,
+          8.05,
+          7.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_002": {
+        "score": 42.03,
+        "mean": 38.42,
+        "std": 2.82,
+        "min": 34.47,
+        "max": 42.03,
+        "runs": [
+          42.03,
+          41.07,
+          38.08,
+          36.43,
+          34.47
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_003": {
+        "score": 18.5,
+        "mean": 16.48,
+        "std": 1.46,
+        "min": 14.1,
+        "max": 18.5,
+        "runs": [
+          18.5,
+          17.25,
+          16.65,
+          15.9,
+          14.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_000": {
+        "score": 45.0,
+        "mean": 25.63,
+        "std": 10.55,
+        "min": 13.55,
+        "max": 45.0,
+        "runs": [
+          45.0,
+          26.55,
+          22.05,
+          21.0,
+          13.55
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_001": {
+        "score": 39.2,
+        "mean": 26.56,
+        "std": 6.78,
+        "min": 19.0,
+        "max": 39.2,
+        "runs": [
+          39.2,
+          26.4,
+          24.6,
+          23.6,
+          19.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_002": {
+        "score": 18.1,
+        "mean": 11.24,
+        "std": 3.98,
+        "min": 6.9,
+        "max": 18.1,
+        "runs": [
+          18.1,
+          12.4,
+          11.0,
+          7.8,
+          6.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_003": {
+        "score": 13.75,
+        "mean": 7.74,
+        "std": 5.04,
+        "min": 0.0,
+        "max": 13.75,
+        "runs": [
+          13.75,
+          10.0,
+          7.2,
+          0.0,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_000": {
+        "score": 18.4,
+        "mean": 10.4,
+        "std": 4.58,
+        "min": 5.0,
+        "max": 18.4,
+        "runs": [
+          18.4,
+          12.0,
+          8.6,
+          8.0,
+          5.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_001": {
+        "score": 9.25,
+        "mean": 6.46,
+        "std": 3.14,
+        "min": 0.75,
+        "max": 9.25,
+        "runs": [
+          9.25,
+          9.25,
+          7.3,
+          5.75,
+          0.75
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_002": {
+        "score": 4.85,
+        "mean": 1.57,
+        "std": 1.66,
+        "min": 0.4,
+        "max": 4.85,
+        "runs": [
+          4.85,
+          1.0,
+          1.0,
+          0.6,
+          0.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_003": {
+        "score": 15.0,
+        "mean": 12.16,
+        "std": 1.91,
+        "min": 9.45,
+        "max": 15.0,
+        "runs": [
+          15.0,
+          12.9,
+          12.7,
+          10.75,
+          9.45
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_000": {
+        "score": 35.0,
+        "mean": 21.04,
+        "std": 7.3,
+        "min": 15.2,
+        "max": 35.0,
+        "runs": [
+          35.0,
+          21.0,
+          18.6,
+          15.4,
+          15.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_001": {
+        "score": 37.65,
+        "mean": 29.82,
+        "std": 5.35,
+        "min": 23.05,
+        "max": 37.65,
+        "runs": [
+          37.65,
+          31.15,
+          27.45,
+          23.05,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_002": {
+        "score": 40.7,
+        "mean": 34.25,
+        "std": 4.97,
+        "min": 28.65,
+        "max": 40.7,
+        "runs": [
+          40.7,
+          37.4,
+          30.25,
+          28.65,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_003": {
+        "score": 47.8,
+        "mean": 39.94,
+        "std": 8.04,
+        "min": 25.6,
+        "max": 47.8,
+        "runs": [
+          47.8,
+          46.5,
+          42.4,
+          37.4,
+          25.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Gemini-3.5-Flash",
+        "model_display": "Gemini-3.5-Flash",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      }
+    },
+    "ResearchHarness (Kimi-K2.6)": {
+      "Astronomy_000": {
+        "score": 22.6,
+        "mean": 15.9,
+        "std": 4.53,
+        "min": 10.0,
+        "max": 22.6,
+        "runs": [
+          22.6,
+          16.5,
+          14.5,
+          10.0,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_001": {
+        "score": 36.0,
+        "mean": 17.28,
+        "std": 11.52,
+        "min": 0.0,
+        "max": 36.0,
+        "runs": [
+          36.0,
+          19.2,
+          17.2,
+          14.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_002": {
+        "score": 28.0,
+        "mean": 24.75,
+        "std": 3.25,
+        "min": 21.5,
+        "max": 28.0,
+        "runs": [
+          28.0,
+          21.5,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 2,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_003": {
+        "score": 50.5,
+        "mean": 47.9,
+        "std": 1.41,
+        "min": 46.4,
+        "max": 50.5,
+        "runs": [
+          50.5,
+          48.0,
+          47.6,
+          47.0,
+          46.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_000": {
+        "score": 18.55,
+        "mean": 15.78,
+        "std": 2.78,
+        "min": 13.0,
+        "max": 18.55,
+        "runs": [
+          18.55,
+          13.0,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 2,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_001": {
+        "score": 10.85,
+        "mean": 6.57,
+        "std": 3.13,
+        "min": 1.25,
+        "max": 10.85,
+        "runs": [
+          10.85,
+          8.0,
+          6.75,
+          6.0,
+          1.25
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_002": {
+        "score": 1.75,
+        "mean": 0.98,
+        "std": 0.44,
+        "min": 0.4,
+        "max": 1.75,
+        "runs": [
+          1.75,
+          1.0,
+          1.0,
+          0.75,
+          0.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_003": {
+        "score": 15.9,
+        "mean": 9.97,
+        "std": 4.71,
+        "min": 3.0,
+        "max": 15.9,
+        "runs": [
+          15.9,
+          12.0,
+          9.0,
+          3.0,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_000": {
+        "score": 23.8,
+        "mean": 20.7,
+        "std": 2.09,
+        "min": 17.8,
+        "max": 23.8,
+        "runs": [
+          23.8,
+          22.2,
+          20.0,
+          19.7,
+          17.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_001": {
+        "score": 44.23,
+        "mean": 35.04,
+        "std": 8.63,
+        "min": 22.28,
+        "max": 44.23,
+        "runs": [
+          44.23,
+          42.87,
+          38.15,
+          27.68,
+          22.28
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_002": {
+        "score": 36.1,
+        "mean": 29.82,
+        "std": 4.31,
+        "min": 25.1,
+        "max": 36.1,
+        "runs": [
+          36.1,
+          33.6,
+          28.3,
+          26.0,
+          25.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_003": {
+        "score": 5.7,
+        "mean": 1.9,
+        "std": 1.93,
+        "min": 0.4,
+        "max": 5.7,
+        "runs": [
+          5.7,
+          1.5,
+          1.0,
+          0.9,
+          0.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_000": {
+        "score": 22.0,
+        "mean": 15.06,
+        "std": 5.35,
+        "min": 7.5,
+        "max": 22.0,
+        "runs": [
+          22.0,
+          19.0,
+          16.3,
+          10.5,
+          7.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_001": {
+        "score": 27.8,
+        "mean": 21.2,
+        "std": 4.74,
+        "min": 16.9,
+        "max": 27.8,
+        "runs": [
+          27.8,
+          18.9,
+          16.9,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 3,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_002": {
+        "score": 39.2,
+        "mean": 34.27,
+        "std": 3.77,
+        "min": 28.0,
+        "max": 39.2,
+        "runs": [
+          39.2,
+          36.7,
+          34.4,
+          33.05,
+          28.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_003": {
+        "score": 25.0,
+        "mean": 12.22,
+        "std": 6.72,
+        "min": 6.5,
+        "max": 25.0,
+        "runs": [
+          25.0,
+          12.6,
+          9.5,
+          7.5,
+          6.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_000": {
+        "score": 41.5,
+        "mean": 24.84,
+        "std": 12.29,
+        "min": 4.8,
+        "max": 41.5,
+        "runs": [
+          41.5,
+          31.4,
+          27.0,
+          19.5,
+          4.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_001": {
+        "score": 7.6,
+        "mean": 6.08,
+        "std": 1.48,
+        "min": 3.6,
+        "max": 7.6,
+        "runs": [
+          7.6,
+          7.6,
+          6.0,
+          5.6,
+          3.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_002": {
+        "score": 27.8,
+        "mean": 14.68,
+        "std": 6.7,
+        "min": 9.6,
+        "max": 27.8,
+        "runs": [
+          27.8,
+          12.9,
+          12.9,
+          10.2,
+          9.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_003": {
+        "score": 10.7,
+        "mean": 5.57,
+        "std": 3.66,
+        "min": 1.35,
+        "max": 10.7,
+        "runs": [
+          10.7,
+          9.15,
+          3.4,
+          3.25,
+          1.35
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_000": {
+        "score": 10.7,
+        "mean": 8.51,
+        "std": 2.02,
+        "min": 5.0,
+        "max": 10.7,
+        "runs": [
+          10.7,
+          10.3,
+          8.3,
+          8.25,
+          5.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_001": {
+        "score": 12.75,
+        "mean": 7.92,
+        "std": 3.24,
+        "min": 4.5,
+        "max": 12.75,
+        "runs": [
+          12.75,
+          8.95,
+          5.5,
+          4.5,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_002": {
+        "score": 17.4,
+        "mean": 8.84,
+        "std": 4.41,
+        "min": 5.4,
+        "max": 17.4,
+        "runs": [
+          17.4,
+          8.6,
+          6.8,
+          6.0,
+          5.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_003": {
+        "score": 42.0,
+        "mean": 32.62,
+        "std": 6.07,
+        "min": 25.0,
+        "max": 42.0,
+        "runs": [
+          42.0,
+          37.0,
+          29.7,
+          29.4,
+          25.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_000": {
+        "score": 26.0,
+        "mean": 20.7,
+        "std": 3.87,
+        "min": 15.9,
+        "max": 26.0,
+        "runs": [
+          26.0,
+          23.4,
+          21.5,
+          16.7,
+          15.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_001": {
+        "score": 25.9,
+        "mean": 13.97,
+        "std": 8.39,
+        "min": 3.25,
+        "max": 25.9,
+        "runs": [
+          25.9,
+          19.95,
+          14.45,
+          6.3,
+          3.25
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_002": {
+        "score": 36.09,
+        "mean": 27.13,
+        "std": 5.48,
+        "min": 21.07,
+        "max": 36.09,
+        "runs": [
+          36.09,
+          30.48,
+          25.1,
+          22.89,
+          21.07
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_003": {
+        "score": 20.9,
+        "mean": 17.0,
+        "std": 4.06,
+        "min": 9.65,
+        "max": 20.9,
+        "runs": [
+          20.9,
+          19.8,
+          18.9,
+          15.75,
+          9.65
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_000": {
+        "score": 33.55,
+        "mean": 29.2,
+        "std": 3.24,
+        "min": 24.0,
+        "max": 33.55,
+        "runs": [
+          33.55,
+          31.45,
+          28.95,
+          28.05,
+          24.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_001": {
+        "score": 37.6,
+        "mean": 25.54,
+        "std": 11.15,
+        "min": 11.6,
+        "max": 37.6,
+        "runs": [
+          37.6,
+          33.0,
+          33.0,
+          12.5,
+          11.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_002": {
+        "score": 19.4,
+        "mean": 12.88,
+        "std": 6.78,
+        "min": 2.0,
+        "max": 19.4,
+        "runs": [
+          19.4,
+          18.6,
+          16.4,
+          8.0,
+          2.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_003": {
+        "score": 24.75,
+        "mean": 15.15,
+        "std": 5.4,
+        "min": 10.0,
+        "max": 24.75,
+        "runs": [
+          24.75,
+          15.75,
+          15.25,
+          10.0,
+          10.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_000": {
+        "score": 19.0,
+        "mean": 5.48,
+        "std": 7.15,
+        "min": 0.0,
+        "max": 19.0,
+        "runs": [
+          19.0,
+          6.4,
+          2.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_001": {
+        "score": 12.7,
+        "mean": 7.93,
+        "std": 3.59,
+        "min": 2.0,
+        "max": 12.7,
+        "runs": [
+          12.7,
+          10.25,
+          7.75,
+          6.95,
+          2.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_002": {
+        "score": 0.75,
+        "mean": 0.25,
+        "std": 0.32,
+        "min": 0.0,
+        "max": 0.75,
+        "runs": [
+          0.75,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_003": {
+        "score": 16.2,
+        "mean": 12.97,
+        "std": 4.51,
+        "min": 4.2,
+        "max": 16.2,
+        "runs": [
+          16.2,
+          15.8,
+          15.5,
+          13.15,
+          4.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_000": {
+        "score": 35.6,
+        "mean": 28.28,
+        "std": 6.36,
+        "min": 19.6,
+        "max": 35.6,
+        "runs": [
+          35.6,
+          35.4,
+          27.1,
+          23.7,
+          19.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_001": {
+        "score": 31.3,
+        "mean": 26.71,
+        "std": 4.6,
+        "min": 19.4,
+        "max": 31.3,
+        "runs": [
+          31.3,
+          29.95,
+          29.65,
+          23.25,
+          19.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_002": {
+        "score": 34.4,
+        "mean": 27.83,
+        "std": 4.12,
+        "min": 21.5,
+        "max": 34.4,
+        "runs": [
+          34.4,
+          28.7,
+          27.6,
+          26.95,
+          21.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_003": {
+        "score": 44.8,
+        "mean": 33.86,
+        "std": 7.62,
+        "min": 26.6,
+        "max": 44.8,
+        "runs": [
+          44.8,
+          41.2,
+          29.6,
+          27.1,
+          26.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "Kimi-K2.6",
+        "model_display": "Kimi-K2.6",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      }
+    },
+    "ResearchHarness (GPT-5.5)": {
+      "Astronomy_000": {
+        "score": 21.4,
+        "mean": 18.04,
+        "std": 4.42,
+        "min": 10.5,
+        "max": 21.4,
+        "runs": [
+          21.4,
+          21.0,
+          19.1,
+          18.2,
+          10.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_001": {
+        "score": 22.4,
+        "mean": 16.6,
+        "std": 9.43,
+        "min": 0.0,
+        "max": 22.4,
+        "runs": [
+          22.4,
+          21.6,
+          21.0,
+          18.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_002": {
+        "score": 23.5,
+        "mean": 20.22,
+        "std": 4.28,
+        "min": 13.5,
+        "max": 23.5,
+        "runs": [
+          23.5,
+          23.5,
+          22.1,
+          18.5,
+          13.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_003": {
+        "score": 50.8,
+        "mean": 47.46,
+        "std": 3.02,
+        "min": 44.1,
+        "max": 50.8,
+        "runs": [
+          50.8,
+          50.5,
+          46.2,
+          45.7,
+          44.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_000": {
+        "score": 20.6,
+        "mean": 15.08,
+        "std": 4.18,
+        "min": 10.15,
+        "max": 20.6,
+        "runs": [
+          20.6,
+          18.05,
+          13.4,
+          13.2,
+          10.15
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_001": {
+        "score": 9.0,
+        "mean": 4.36,
+        "std": 4.05,
+        "min": 0.75,
+        "max": 9.0,
+        "runs": [
+          9.0,
+          8.5,
+          2.3,
+          1.25,
+          0.75
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_002": {
+        "score": 3.5,
+        "mean": 1.52,
+        "std": 1.44,
+        "min": 0.0,
+        "max": 3.5,
+        "runs": [
+          3.5,
+          2.5,
+          1.0,
+          0.6,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_003": {
+        "score": 21.6,
+        "mean": 16.74,
+        "std": 3.13,
+        "min": 12.9,
+        "max": 21.6,
+        "runs": [
+          21.6,
+          17.0,
+          16.1,
+          16.1,
+          12.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_000": {
+        "score": 24.0,
+        "mean": 19.78,
+        "std": 4.06,
+        "min": 13.7,
+        "max": 24.0,
+        "runs": [
+          24.0,
+          23.0,
+          19.2,
+          19.0,
+          13.7
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_001": {
+        "score": 41.16,
+        "mean": 34.9,
+        "std": 6.87,
+        "min": 27.02,
+        "max": 41.16,
+        "runs": [
+          41.16,
+          41.15,
+          36.92,
+          28.25,
+          27.02
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_002": {
+        "score": 25.3,
+        "mean": 23.52,
+        "std": 2.16,
+        "min": 20.0,
+        "max": 25.3,
+        "runs": [
+          25.3,
+          24.7,
+          24.7,
+          22.9,
+          20.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_003": {
+        "score": 1.5,
+        "mean": 0.9,
+        "std": 0.64,
+        "min": 0.0,
+        "max": 1.5,
+        "runs": [
+          1.5,
+          1.5,
+          0.9,
+          0.6,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_000": {
+        "score": 18.0,
+        "mean": 16.3,
+        "std": 1.65,
+        "min": 14.4,
+        "max": 18.0,
+        "runs": [
+          18.0,
+          17.5,
+          16.9,
+          14.7,
+          14.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_001": {
+        "score": 18.6,
+        "mean": 13.98,
+        "std": 3.31,
+        "min": 10.7,
+        "max": 18.6,
+        "runs": [
+          18.6,
+          15.5,
+          14.2,
+          10.9,
+          10.7
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_002": {
+        "score": 40.9,
+        "mean": 36.97,
+        "std": 2.64,
+        "min": 33.95,
+        "max": 40.9,
+        "runs": [
+          40.9,
+          37.85,
+          36.75,
+          35.4,
+          33.95
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_003": {
+        "score": 23.5,
+        "mean": 19.16,
+        "std": 4.19,
+        "min": 13.5,
+        "max": 23.5,
+        "runs": [
+          23.5,
+          22.7,
+          19.5,
+          16.6,
+          13.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_000": {
+        "score": 21.3,
+        "mean": 17.36,
+        "std": 5.43,
+        "min": 8.0,
+        "max": 21.3,
+        "runs": [
+          21.3,
+          20.7,
+          19.2,
+          17.6,
+          8.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_001": {
+        "score": 7.0,
+        "mean": 4.32,
+        "std": 2.26,
+        "min": 1.0,
+        "max": 7.0,
+        "runs": [
+          7.0,
+          5.6,
+          4.4,
+          3.6,
+          1.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_002": {
+        "score": 45.3,
+        "mean": 39.8,
+        "std": 3.45,
+        "min": 37.1,
+        "max": 45.3,
+        "runs": [
+          45.3,
+          41.1,
+          37.8,
+          37.7,
+          37.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_003": {
+        "score": 12.4,
+        "mean": 9.27,
+        "std": 2.61,
+        "min": 5.3,
+        "max": 12.4,
+        "runs": [
+          12.4,
+          10.3,
+          9.75,
+          8.6,
+          5.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_000": {
+        "score": 11.3,
+        "mean": 9.01,
+        "std": 1.58,
+        "min": 7.3,
+        "max": 11.3,
+        "runs": [
+          11.3,
+          9.4,
+          9.3,
+          7.75,
+          7.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_001": {
+        "score": 18.05,
+        "mean": 13.76,
+        "std": 3.06,
+        "min": 9.9,
+        "max": 18.05,
+        "runs": [
+          18.05,
+          15.25,
+          13.05,
+          12.55,
+          9.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_002": {
+        "score": 12.8,
+        "mean": 10.06,
+        "std": 2.79,
+        "min": 5.7,
+        "max": 12.8,
+        "runs": [
+          12.8,
+          12.0,
+          10.5,
+          9.3,
+          5.7
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_003": {
+        "score": 56.5,
+        "mean": 40.28,
+        "std": 10.31,
+        "min": 28.2,
+        "max": 56.5,
+        "runs": [
+          56.5,
+          41.5,
+          37.7,
+          37.5,
+          28.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_000": {
+        "score": 23.5,
+        "mean": 18.64,
+        "std": 5.14,
+        "min": 9.9,
+        "max": 23.5,
+        "runs": [
+          23.5,
+          20.4,
+          20.0,
+          19.4,
+          9.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_001": {
+        "score": 13.0,
+        "mean": 8.78,
+        "std": 2.52,
+        "min": 6.3,
+        "max": 13.0,
+        "runs": [
+          13.0,
+          8.75,
+          8.05,
+          7.8,
+          6.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_002": {
+        "score": 25.0,
+        "mean": 13.48,
+        "std": 7.95,
+        "min": 5.1,
+        "max": 25.0,
+        "runs": [
+          25.0,
+          17.79,
+          11.04,
+          8.45,
+          5.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_003": {
+        "score": 28.8,
+        "mean": 21.9,
+        "std": 4.59,
+        "min": 16.65,
+        "max": 28.8,
+        "runs": [
+          28.8,
+          23.4,
+          21.3,
+          19.35,
+          16.65
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_000": {
+        "score": 28.0,
+        "mean": 22.65,
+        "std": 8.4,
+        "min": 7.95,
+        "max": 28.0,
+        "runs": [
+          28.0,
+          26.95,
+          26.95,
+          23.4,
+          7.95
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_001": {
+        "score": 46.2,
+        "mean": 35.76,
+        "std": 8.06,
+        "min": 24.7,
+        "max": 46.2,
+        "runs": [
+          46.2,
+          40.1,
+          35.1,
+          32.7,
+          24.7
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_002": {
+        "score": 20.1,
+        "mean": 15.72,
+        "std": 5.16,
+        "min": 7.5,
+        "max": 20.1,
+        "runs": [
+          20.1,
+          20.1,
+          15.9,
+          15.0,
+          7.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_003": {
+        "score": 10.0,
+        "mean": 8.11,
+        "std": 1.44,
+        "min": 6.0,
+        "max": 10.0,
+        "runs": [
+          10.0,
+          8.4,
+          8.4,
+          7.75,
+          6.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_000": {
+        "score": 10.6,
+        "mean": 7.64,
+        "std": 2.89,
+        "min": 3.6,
+        "max": 10.6,
+        "runs": [
+          10.6,
+          10.0,
+          8.0,
+          6.0,
+          3.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_001": {
+        "score": 4.2,
+        "mean": 2.33,
+        "std": 1.25,
+        "min": 1.2,
+        "max": 4.2,
+        "runs": [
+          4.2,
+          3.0,
+          1.75,
+          1.5,
+          1.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_002": {
+        "score": 3.0,
+        "mean": 2.0,
+        "std": 1.0,
+        "min": 1.0,
+        "max": 3.0,
+        "runs": [
+          3.0,
+          3.0,
+          2.0,
+          1.0,
+          1.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_003": {
+        "score": 11.55,
+        "mean": 8.03,
+        "std": 2.78,
+        "min": 4.5,
+        "max": 11.55,
+        "runs": [
+          11.55,
+          9.35,
+          8.7,
+          6.05,
+          4.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_000": {
+        "score": 36.0,
+        "mean": 29.46,
+        "std": 5.64,
+        "min": 24.0,
+        "max": 36.0,
+        "runs": [
+          36.0,
+          35.1,
+          26.4,
+          25.8,
+          24.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_001": {
+        "score": 35.55,
+        "mean": 30.95,
+        "std": 3.21,
+        "min": 27.65,
+        "max": 35.55,
+        "runs": [
+          35.55,
+          32.05,
+          31.35,
+          28.15,
+          27.65
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_002": {
+        "score": 28.25,
+        "mean": 24.22,
+        "std": 2.44,
+        "min": 22.35,
+        "max": 28.25,
+        "runs": [
+          28.25,
+          24.75,
+          23.2,
+          22.55,
+          22.35
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_003": {
+        "score": 53.7,
+        "mean": 46.18,
+        "std": 6.83,
+        "min": 39.1,
+        "max": 53.7,
+        "runs": [
+          53.7,
+          52.6,
+          45.5,
+          40.0,
+          39.1
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GPT-5.5",
+        "model_display": "GPT-5.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      }
+    },
+    "ResearchHarness (MiMo-V2.5)": {
+      "Astronomy_000": {
+        "score": 20.0,
+        "mean": 13.74,
+        "std": 4.59,
+        "min": 9.5,
+        "max": 20.0,
+        "runs": [
+          20.0,
+          18.6,
+          11.0,
+          9.6,
+          9.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_001": {
+        "score": 38.4,
+        "mean": 22.68,
+        "std": 16.1,
+        "min": 0.0,
+        "max": 38.4,
+        "runs": [
+          38.4,
+          38.0,
+          30.0,
+          7.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_002": {
+        "score": 26.0,
+        "mean": 22.58,
+        "std": 2.21,
+        "min": 20.0,
+        "max": 26.0,
+        "runs": [
+          26.0,
+          24.1,
+          22.1,
+          20.7,
+          20.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_003": {
+        "score": 48.9,
+        "mean": 47.78,
+        "std": 0.82,
+        "min": 46.4,
+        "max": 48.9,
+        "runs": [
+          48.9,
+          48.2,
+          47.8,
+          47.6,
+          46.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_000": {
+        "score": 19.7,
+        "mean": 14.54,
+        "std": 3.49,
+        "min": 10.45,
+        "max": 19.7,
+        "runs": [
+          19.7,
+          17.55,
+          12.7,
+          12.3,
+          10.45
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_001": {
+        "score": 13.0,
+        "mean": 7.16,
+        "std": 3.63,
+        "min": 2.75,
+        "max": 13.0,
+        "runs": [
+          13.0,
+          9.05,
+          6.75,
+          4.25,
+          2.75
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_002": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_003": {
+        "score": 13.6,
+        "mean": 8.74,
+        "std": 3.65,
+        "min": 3.0,
+        "max": 13.6,
+        "runs": [
+          13.6,
+          10.7,
+          9.9,
+          6.5,
+          3.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_000": {
+        "score": 21.5,
+        "mean": 18.66,
+        "std": 2.15,
+        "min": 15.4,
+        "max": 21.5,
+        "runs": [
+          21.5,
+          19.8,
+          19.5,
+          17.1,
+          15.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_001": {
+        "score": 40.45,
+        "mean": 34.0,
+        "std": 6.45,
+        "min": 22.44,
+        "max": 40.45,
+        "runs": [
+          40.45,
+          39.4,
+          35.18,
+          32.55,
+          22.44
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_002": {
+        "score": 24.9,
+        "mean": 21.64,
+        "std": 3.65,
+        "min": 14.6,
+        "max": 24.9,
+        "runs": [
+          24.9,
+          23.9,
+          22.4,
+          22.4,
+          14.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_003": {
+        "score": 5.1,
+        "mean": 2.88,
+        "std": 2.05,
+        "min": 0.0,
+        "max": 5.1,
+        "runs": [
+          5.1,
+          4.9,
+          3.4,
+          1.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_000": {
+        "score": 19.0,
+        "mean": 11.38,
+        "std": 5.83,
+        "min": 3.0,
+        "max": 19.0,
+        "runs": [
+          19.0,
+          16.9,
+          9.0,
+          9.0,
+          3.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_001": {
+        "score": 18.2,
+        "mean": 14.25,
+        "std": 2.32,
+        "min": 12.5,
+        "max": 18.2,
+        "runs": [
+          18.2,
+          13.6,
+          12.7,
+          12.5,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_002": {
+        "score": 39.7,
+        "mean": 33.2,
+        "std": 4.49,
+        "min": 26.8,
+        "max": 39.7,
+        "runs": [
+          39.7,
+          35.8,
+          33.75,
+          29.95,
+          26.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_003": {
+        "score": 27.3,
+        "mean": 19.42,
+        "std": 7.43,
+        "min": 6.0,
+        "max": 27.3,
+        "runs": [
+          27.3,
+          24.3,
+          22.0,
+          17.5,
+          6.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_000": {
+        "score": 31.5,
+        "mean": 16.38,
+        "std": 9.82,
+        "min": 2.0,
+        "max": 31.5,
+        "runs": [
+          31.5,
+          21.4,
+          15.0,
+          12.0,
+          2.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_001": {
+        "score": 6.4,
+        "mean": 4.0,
+        "std": 1.64,
+        "min": 1.6,
+        "max": 6.4,
+        "runs": [
+          6.4,
+          5.0,
+          4.0,
+          3.0,
+          1.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_002": {
+        "score": 35.3,
+        "mean": 16.56,
+        "std": 10.71,
+        "min": 6.2,
+        "max": 35.3,
+        "runs": [
+          35.3,
+          19.2,
+          15.9,
+          6.2,
+          6.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_003": {
+        "score": 14.35,
+        "mean": 10.19,
+        "std": 2.45,
+        "min": 7.4,
+        "max": 14.35,
+        "runs": [
+          14.35,
+          11.2,
+          9.7,
+          8.3,
+          7.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_000": {
+        "score": 8.5,
+        "mean": 6.29,
+        "std": 1.36,
+        "min": 4.8,
+        "max": 8.5,
+        "runs": [
+          8.5,
+          6.7,
+          6.55,
+          4.9,
+          4.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_001": {
+        "score": 13.65,
+        "mean": 10.64,
+        "std": 2.18,
+        "min": 7.2,
+        "max": 13.65,
+        "runs": [
+          13.65,
+          12.15,
+          10.25,
+          9.95,
+          7.2
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_002": {
+        "score": 10.1,
+        "mean": 5.52,
+        "std": 4.6,
+        "min": 0.0,
+        "max": 10.1,
+        "runs": [
+          10.1,
+          10.0,
+          7.5,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_003": {
+        "score": 32.0,
+        "mean": 24.34,
+        "std": 4.75,
+        "min": 18.0,
+        "max": 32.0,
+        "runs": [
+          32.0,
+          25.4,
+          25.4,
+          20.9,
+          18.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_000": {
+        "score": 20.5,
+        "mean": 12.58,
+        "std": 6.3,
+        "min": 3.6,
+        "max": 20.5,
+        "runs": [
+          20.5,
+          16.9,
+          14.9,
+          7.0,
+          3.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_001": {
+        "score": 13.75,
+        "mean": 10.44,
+        "std": 2.57,
+        "min": 7.0,
+        "max": 13.75,
+        "runs": [
+          13.75,
+          12.0,
+          11.55,
+          7.9,
+          7.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_002": {
+        "score": 35.44,
+        "mean": 23.34,
+        "std": 6.68,
+        "min": 14.85,
+        "max": 35.44,
+        "runs": [
+          35.44,
+          22.72,
+          21.99,
+          21.7,
+          14.85
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_003": {
+        "score": 18.05,
+        "mean": 15.77,
+        "std": 2.23,
+        "min": 12.75,
+        "max": 18.05,
+        "runs": [
+          18.05,
+          17.9,
+          16.65,
+          13.5,
+          12.75
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_000": {
+        "score": 27.05,
+        "mean": 15.49,
+        "std": 6.85,
+        "min": 7.95,
+        "max": 27.05,
+        "runs": [
+          27.05,
+          19.2,
+          12.25,
+          11.0,
+          7.95
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_001": {
+        "score": 32.2,
+        "mean": 24.6,
+        "std": 4.97,
+        "min": 19.6,
+        "max": 32.2,
+        "runs": [
+          32.2,
+          28.8,
+          21.4,
+          21.0,
+          19.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_002": {
+        "score": 18.6,
+        "mean": 12.58,
+        "std": 5.24,
+        "min": 3.9,
+        "max": 18.6,
+        "runs": [
+          18.6,
+          15.5,
+          15.4,
+          9.5,
+          3.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_003": {
+        "score": 36.75,
+        "mean": 14.55,
+        "std": 11.21,
+        "min": 6.0,
+        "max": 36.75,
+        "runs": [
+          36.75,
+          10.0,
+          10.0,
+          10.0,
+          6.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_000": {
+        "score": 10.0,
+        "mean": 5.44,
+        "std": 2.96,
+        "min": 1.6,
+        "max": 10.0,
+        "runs": [
+          10.0,
+          7.0,
+          5.6,
+          3.0,
+          1.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_001": {
+        "score": 7.5,
+        "mean": 3.74,
+        "std": 2.05,
+        "min": 1.75,
+        "max": 7.5,
+        "runs": [
+          7.5,
+          4.25,
+          2.7,
+          2.5,
+          1.75
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_002": {
+        "score": 3.0,
+        "mean": 1.56,
+        "std": 0.95,
+        "min": 0.3,
+        "max": 3.0,
+        "runs": [
+          3.0,
+          2.0,
+          1.75,
+          0.75,
+          0.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_003": {
+        "score": 13.8,
+        "mean": 5.82,
+        "std": 4.46,
+        "min": 2.25,
+        "max": 13.8,
+        "runs": [
+          13.8,
+          7.65,
+          2.7,
+          2.7,
+          2.25
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_000": {
+        "score": 26.9,
+        "mean": 23.38,
+        "std": 3.04,
+        "min": 19.0,
+        "max": 26.9,
+        "runs": [
+          26.9,
+          26.1,
+          24.1,
+          20.8,
+          19.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_001": {
+        "score": 27.5,
+        "mean": 24.37,
+        "std": 2.41,
+        "min": 21.05,
+        "max": 27.5,
+        "runs": [
+          27.5,
+          26.5,
+          24.35,
+          22.45,
+          21.05
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_002": {
+        "score": 29.6,
+        "mean": 26.86,
+        "std": 2.27,
+        "min": 23.7,
+        "max": 29.6,
+        "runs": [
+          29.6,
+          28.45,
+          27.85,
+          24.7,
+          23.7
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_003": {
+        "score": 53.5,
+        "mean": 43.62,
+        "std": 5.74,
+        "min": 37.5,
+        "max": 53.5,
+        "runs": [
+          53.5,
+          46.1,
+          41.9,
+          39.1,
+          37.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "MiMo-V2.5",
+        "model_display": "MiMo-V2.5",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      }
+    },
+    "ResearchHarness (GLM-5.1)": {
+      "Astronomy_000": {
+        "score": 29.4,
+        "mean": 19.56,
+        "std": 6.76,
+        "min": 11.5,
+        "max": 29.4,
+        "runs": [
+          29.4,
+          24.4,
+          19.5,
+          13.0,
+          11.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_001": {
+        "score": 39.4,
+        "mean": 29.4,
+        "std": 6.22,
+        "min": 20.4,
+        "max": 39.4,
+        "runs": [
+          39.4,
+          31.2,
+          29.6,
+          26.4,
+          20.4
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_002": {
+        "score": 28.9,
+        "mean": 21.1,
+        "std": 10.69,
+        "min": 0.0,
+        "max": 28.9,
+        "runs": [
+          28.9,
+          27.0,
+          26.0,
+          23.6,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Astronomy_003": {
+        "score": 46.3,
+        "mean": 17.94,
+        "std": 21.99,
+        "min": 0.0,
+        "max": 46.3,
+        "runs": [
+          46.3,
+          43.4,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_000": {
+        "score": 22.65,
+        "mean": 8.57,
+        "std": 9.42,
+        "min": 0.0,
+        "max": 22.65,
+        "runs": [
+          22.65,
+          11.65,
+          0.0,
+          0.0,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_001": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_002": {
+        "score": 0.3,
+        "mean": 0.06,
+        "std": 0.12,
+        "min": 0.0,
+        "max": 0.3,
+        "runs": [
+          0.3,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Chemistry_003": {
+        "score": 24.6,
+        "mean": 12.48,
+        "std": 10.65,
+        "min": 0.0,
+        "max": 24.6,
+        "runs": [
+          24.6,
+          22.5,
+          15.3,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_000": {
+        "score": 24.8,
+        "mean": 4.96,
+        "std": 9.92,
+        "min": 0.0,
+        "max": 24.8,
+        "runs": [
+          24.8,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_001": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_002": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Earth_003": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_000": {
+        "score": 20.8,
+        "mean": 11.8,
+        "std": 7.93,
+        "min": 0.0,
+        "max": 20.8,
+        "runs": [
+          20.8,
+          16.9,
+          9.5,
+          0.0,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_001": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_002": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Energy_003": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_000": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          0.0,
+          0.0,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 2,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_001": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 0,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_002": {
+        "score": 35.6,
+        "mean": 18.06,
+        "std": 11.62,
+        "min": 5.6,
+        "max": 35.6,
+        "runs": [
+          35.6,
+          27.8,
+          12.6,
+          8.7,
+          5.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Information_003": {
+        "score": 6.85,
+        "mean": 6.57,
+        "std": 0.27,
+        "min": 6.3,
+        "max": 6.85,
+        "runs": [
+          6.85,
+          6.3,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 2,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_000": {
+        "score": 11.25,
+        "mean": 9.01,
+        "std": 1.9,
+        "min": 6.05,
+        "max": 11.25,
+        "runs": [
+          11.25,
+          10.85,
+          8.8,
+          8.1,
+          6.05
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_001": {
+        "score": 23.3,
+        "mean": 9.89,
+        "std": 7.61,
+        "min": 0.0,
+        "max": 23.3,
+        "runs": [
+          23.3,
+          10.95,
+          7.75,
+          7.45,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_002": {
+        "score": 9.6,
+        "mean": 5.78,
+        "std": 3.12,
+        "min": 0.6,
+        "max": 9.6,
+        "runs": [
+          9.6,
+          8.3,
+          5.4,
+          5.0,
+          0.6
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Life_003": {
+        "score": 40.8,
+        "mean": 31.92,
+        "std": 9.22,
+        "min": 14.3,
+        "max": 40.8,
+        "runs": [
+          40.8,
+          36.2,
+          36.1,
+          32.2,
+          14.3
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_000": {
+        "score": 19.3,
+        "mean": 15.94,
+        "std": 3.49,
+        "min": 9.9,
+        "max": 19.3,
+        "runs": [
+          19.3,
+          19.0,
+          17.1,
+          14.4,
+          9.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_001": {
+        "score": 25.9,
+        "mean": 15.53,
+        "std": 6.5,
+        "min": 9.5,
+        "max": 25.9,
+        "runs": [
+          25.9,
+          20.45,
+          11.3,
+          10.5,
+          9.5
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_002": {
+        "score": 37.11,
+        "mean": 26.16,
+        "std": 6.83,
+        "min": 18.45,
+        "max": 37.11,
+        "runs": [
+          37.11,
+          25.54,
+          23.55,
+          18.45,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Material_003": {
+        "score": 19.2,
+        "mean": 15.82,
+        "std": 2.53,
+        "min": 11.85,
+        "max": 19.2,
+        "runs": [
+          19.2,
+          17.15,
+          16.65,
+          14.25,
+          11.85
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_000": {
+        "score": 32.45,
+        "mean": 27.53,
+        "std": 3.52,
+        "min": 23.55,
+        "max": 32.45,
+        "runs": [
+          32.45,
+          30.6,
+          27.0,
+          24.05,
+          23.55
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_001": {
+        "score": 43.9,
+        "mean": 26.88,
+        "std": 8.84,
+        "min": 18.9,
+        "max": 43.9,
+        "runs": [
+          43.9,
+          26.3,
+          23.4,
+          21.9,
+          18.9
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_002": {
+        "score": 10.9,
+        "mean": 9.22,
+        "std": 1.41,
+        "min": 6.8,
+        "max": 10.9,
+        "runs": [
+          10.9,
+          10.2,
+          9.5,
+          8.7,
+          6.8
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Math_003": {
+        "score": 19.75,
+        "mean": 14.14,
+        "std": 3.9,
+        "min": 10.0,
+        "max": 19.75,
+        "runs": [
+          19.75,
+          15.75,
+          11.05,
+          10.0,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_000": {
+        "score": 17.0,
+        "mean": 10.32,
+        "std": 4.6,
+        "min": 5.0,
+        "max": 17.0,
+        "runs": [
+          17.0,
+          14.0,
+          9.6,
+          6.0,
+          5.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_001": {
+        "score": 9.2,
+        "mean": 4.39,
+        "std": 3.04,
+        "min": 0.0,
+        "max": 9.2,
+        "runs": [
+          9.2,
+          5.5,
+          4.5,
+          2.75,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_002": {
+        "score": 4.5,
+        "mean": 1.75,
+        "std": 1.96,
+        "min": 0.0,
+        "max": 4.5,
+        "runs": [
+          4.5,
+          3.75,
+          0.5,
+          0.0,
+          0.0
+        ],
+        "attempts": 5,
+        "scored_runs": 5,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Neuroscience_003": {
+        "score": 15.8,
+        "mean": 10.19,
+        "std": 3.91,
+        "min": 6.15,
+        "max": 15.8,
+        "runs": [
+          15.8,
+          11.85,
+          6.95,
+          6.15,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 4,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_000": {
+        "score": 21.8,
+        "mean": 21.8,
+        "std": 0.0,
+        "min": 21.8,
+        "max": 21.8,
+        "runs": [
+          21.8,
+          null,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 1,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_001": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 0,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_002": {
+        "score": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "runs": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 0,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      },
+      "Physics_003": {
+        "score": 42.0,
+        "mean": 41.5,
+        "std": 0.5,
+        "min": 41.0,
+        "max": 42.0,
+        "runs": [
+          42.0,
+          41.0,
+          null,
+          null,
+          null
+        ],
+        "attempts": 5,
+        "scored_runs": 2,
+        "model": "GLM-5.1",
+        "model_display": "GLM-5.1",
+        "details_exported": false,
+        "pass_mode": "pass5"
+      }
+    }
+  },
+  "frontier": {
+    "Astronomy_000": 32.6,
+    "Astronomy_001": 40.6,
+    "Astronomy_002": 29.9,
+    "Astronomy_003": 50.8,
+    "Chemistry_000": 34.0,
+    "Chemistry_001": 13.0,
+    "Chemistry_002": 18.2,
+    "Chemistry_003": 30.6,
+    "Earth_000": 24.8,
+    "Earth_001": 44.23,
+    "Earth_002": 36.1,
+    "Earth_003": 13.0,
+    "Energy_000": 25.0,
+    "Energy_001": 31.7,
+    "Energy_002": 40.9,
+    "Energy_003": 44.0,
+    "Information_000": 58.6,
+    "Information_001": 19.6,
+    "Information_002": 45.3,
+    "Information_003": 21.85,
+    "Life_000": 12.55,
+    "Life_001": 29.0,
+    "Life_002": 24.0,
+    "Life_003": 56.5,
+    "Material_000": 36.8,
+    "Material_001": 31.05,
+    "Material_002": 43.71,
+    "Material_003": 28.8,
+    "Math_000": 45.0,
+    "Math_001": 46.4,
+    "Math_002": 26.5,
+    "Math_003": 36.75,
+    "Neuroscience_000": 19.0,
+    "Neuroscience_001": 25.95,
+    "Neuroscience_002": 6.25,
+    "Neuroscience_003": 20.75,
+    "Physics_000": 37.8,
+    "Physics_001": 37.65,
+    "Physics_002": 41.2,
+    "Physics_003": 64.4
+  }
+}
