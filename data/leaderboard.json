@@ -62,6 +62,7 @@
     "ResearchHarness (Gemini-3.5-Flash)",
     "ResearchHarness (Grok-4.1)",
     "ResearchHarness (Grok-4.3)",
+    "ResearchHarness (Hy3-Preview)",
     "ResearchHarness (Kimi-K2.5)",
     "ResearchHarness (Kimi-K2.6)",
     "ResearchHarness (MiMo-V2-Pro)",
@@ -6463,6 +6464,305 @@
         "model_display": "Grok-4.3"
       }
     },
+    "ResearchHarness (Hy3-Preview)": {
+      "Astronomy_001": {
+        "score": 15.2,
+        "run_id": "cli_Astronomy_001_20260708_165843_278d8aa8",
+        "duration_seconds": 476,
+        "cost_usd": 0.015827,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Astronomy_002": {
+        "score": 12.0,
+        "run_id": "cli_Astronomy_002_20260708_165843_78ab16b8",
+        "duration_seconds": 590,
+        "cost_usd": 0.019617,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Chemistry_000": {
+        "score": 25.6,
+        "run_id": "cli_Chemistry_000_20260708_170406_3bc5f433",
+        "duration_seconds": 1734,
+        "cost_usd": 0.057655,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Chemistry_001": {
+        "score": 7.25,
+        "run_id": "cli_Chemistry_001_20260708_170538_de35de49",
+        "duration_seconds": 892,
+        "cost_usd": 0.029659,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Chemistry_002": {
+        "score": 0.3,
+        "run_id": "cli_Chemistry_002_20260708_170649_6fd05df0",
+        "duration_seconds": 377,
+        "cost_usd": 0.012535,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Chemistry_003": {
+        "score": 27.3,
+        "run_id": "cli_Chemistry_003_20260708_170840_dfd22068",
+        "duration_seconds": 1181,
+        "cost_usd": 0.039268,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Earth_000": {
+        "score": 22.6,
+        "run_id": "cli_Earth_000_20260708_171329_306e1f79",
+        "duration_seconds": 780,
+        "cost_usd": 0.025935,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Earth_001": {
+        "score": 28.97,
+        "run_id": "cli_Earth_001_20260708_172050_8a972df8",
+        "duration_seconds": 733,
+        "cost_usd": 0.024372,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Earth_002": {
+        "score": 5.4,
+        "run_id": "cli_Earth_002_20260708_172701_7f28ca80",
+        "duration_seconds": 1280,
+        "cost_usd": 0.04256,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Earth_003": {
+        "score": 0.0,
+        "run_id": "cli_Earth_003_20260708_172842_a56b363f",
+        "duration_seconds": 1097,
+        "cost_usd": 0.036475,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Energy_001": {
+        "score": 5.0,
+        "run_id": "cli_Energy_001_20260708_173321_88362dbb",
+        "duration_seconds": 1150,
+        "cost_usd": 0.038238,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Energy_002": {
+        "score": 28.2,
+        "run_id": "cli_Energy_002_20260708_174523_fb52fae6",
+        "duration_seconds": 703,
+        "cost_usd": 0.023375,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Energy_003": {
+        "score": 0.0,
+        "run_id": "cli_Energy_003_20260708_174751_2e8a5c8a",
+        "duration_seconds": 726,
+        "cost_usd": 0.024139,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Information_002": {
+        "score": 17.5,
+        "run_id": "cli_Information_002_20260708_175250_6a65d1d0",
+        "duration_seconds": 472,
+        "cost_usd": 0.015694,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Information_003": {
+        "score": 10.9,
+        "run_id": "cli_Information_003_20260708_175429_d4bc18b0",
+        "duration_seconds": 911,
+        "cost_usd": 0.030291,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Life_000": {
+        "score": 6.8,
+        "run_id": "cli_Life_000_20260708_175723_77b4ec01",
+        "duration_seconds": 795,
+        "cost_usd": 0.026434,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Life_001": {
+        "score": 5.25,
+        "run_id": "cli_Life_001_20260708_180037_a447d63c",
+        "duration_seconds": 398,
+        "cost_usd": 0.013233,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Life_002": {
+        "score": 1.0,
+        "run_id": "cli_Life_002_20260708_180049_3b003acb",
+        "duration_seconds": 499,
+        "cost_usd": 0.016592,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Life_003": {
+        "score": 29.0,
+        "run_id": "cli_Life_003_20260708_180744_edd4647c",
+        "duration_seconds": 446,
+        "cost_usd": 0.014829,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Material_000": {
+        "score": 3.9,
+        "run_id": "cli_Material_000_20260708_180912_4e9abad9",
+        "duration_seconds": 1342,
+        "cost_usd": 0.044621,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Material_001": {
+        "score": 14.0,
+        "run_id": "cli_Material_001_20260708_180959_7fd7ca70",
+        "duration_seconds": 529,
+        "cost_usd": 0.017589,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Material_002": {
+        "score": 37.44,
+        "run_id": "cli_Material_002_20260708_181056_f92a2d80",
+        "duration_seconds": 452,
+        "cost_usd": 0.015029,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Material_003": {
+        "score": 11.25,
+        "run_id": "cli_Material_003_20260708_181529_fc2888d3",
+        "duration_seconds": 847,
+        "cost_usd": 0.028163,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Math_000": {
+        "score": 25.0,
+        "run_id": "cli_Math_000_20260708_181845_dfc7ec4b",
+        "duration_seconds": 727,
+        "cost_usd": 0.024173,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Math_002": {
+        "score": 0.0,
+        "run_id": "cli_Math_002_20260708_182421_149f8354",
+        "duration_seconds": 1097,
+        "cost_usd": 0.036475,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Math_003": {
+        "score": 0.0,
+        "run_id": "cli_Math_003_20260708_183010_b17443f8",
+        "duration_seconds": 795,
+        "cost_usd": 0.026434,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Neuroscience_000": {
+        "score": 1.0,
+        "run_id": "cli_Neuroscience_000_20260708_183104_876c9b50",
+        "duration_seconds": 959,
+        "cost_usd": 0.031887,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Neuroscience_001": {
+        "score": 0.75,
+        "run_id": "cli_Neuroscience_001_20260708_183148_ea9ee056",
+        "duration_seconds": 1264,
+        "cost_usd": 0.042028,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Neuroscience_002": {
+        "score": 0.75,
+        "run_id": "cli_Neuroscience_002_20260708_184247_f0b4d42c",
+        "duration_seconds": 1127,
+        "cost_usd": 0.037473,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Neuroscience_003": {
+        "score": 3.3,
+        "run_id": "cli_Neuroscience_003_20260708_184328_86d0efc6",
+        "duration_seconds": 1604,
+        "cost_usd": 0.053333,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Physics_000": {
+        "score": 21.2,
+        "run_id": "cli_Physics_000_20260708_184746_42949838",
+        "duration_seconds": 399,
+        "cost_usd": 0.013267,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Physics_001": {
+        "score": 33.75,
+        "run_id": "cli_Physics_001_20260708_185324_9c38dfa2",
+        "duration_seconds": 531,
+        "cost_usd": 0.017656,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      },
+      "Physics_002": {
+        "score": 24.35,
+        "run_id": "cli_Physics_002_20260708_185447_c1a1fe6f",
+        "duration_seconds": 1390,
+        "cost_usd": 0.046217,
+        "model": "hy3-preview",
+        "model_display": "Hy3-Preview",
+        "details_exported": false
+      }
+    },
     "ResearchHarness (Kimi-K2.5)": {
       "Astronomy_000": {
         "score": 14.4,
@@ -9005,7 +9305,7 @@
     "Astronomy_001": 39.2,
     "Astronomy_002": 34.6,
     "Astronomy_003": 48.0,
-    "Chemistry_000": 21.55,
+    "Chemistry_000": 25.6,
     "Chemistry_001": 11.3,
     "Chemistry_002": 5.0,
     "Chemistry_003": 28.8,
