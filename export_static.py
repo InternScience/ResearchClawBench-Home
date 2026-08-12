@@ -44,6 +44,7 @@ EST_OUTPUT_TOKENS_PER_MIN = 5_000
 MODEL_TOKEN_PRICING_PER_MTOK = {
     "gpt-5.4": {"input": 2.5, "output": 15.0},
     "gpt-5.5": {"input": 5.0, "output": 30.0},
+    "gpt-5.6-terra": {"input": 2.0, "output": 12.0},
     "claude-sonnet-4-6": {"input": 3.0, "output": 15.0},
     "claude-opus-4-6": {"input": 5.0, "output": 25.0},
     "claude-opus-4-7": {"input": 5.0, "output": 25.0},
@@ -68,6 +69,7 @@ MODEL_TOKEN_PRICING_PER_MTOK = {
 MODEL_DISPLAY_NAMES = {
     "gpt-5.4": "GPT-5.4",
     "gpt-5.5": "GPT-5.5",
+    "gpt-5.6-terra": "Codex GPT-5.6-Terra",
     "claude-opus-4-6": "Claude-Opus-4.6",
     "claude-opus-4-7": "Claude-Opus-4.7",
     "claude-opus-4-8": "Claude-Opus-4.8",
