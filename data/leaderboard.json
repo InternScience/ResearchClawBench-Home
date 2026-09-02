@@ -52,6 +52,7 @@
     "EvoScientist (0.0.4)",
     "EvoScientist (0.1.1)",
     "InnoClaw",
+    "Ligase",
     "Open Science",
     "OpenEvo",
     "Qiushi Engine",
@@ -3414,6 +3415,368 @@
         "cost_usd": 2.91375,
         "model": "gpt-5.5",
         "model_display": "GPT-5.5",
+        "details_exported": false
+      }
+    },
+    "Ligase": {
+      "Astronomy_000": {
+        "score": 35.0,
+        "run_id": "cli_Astronomy_000_20260831_022939_ee9573fd",
+        "duration_seconds": 3482,
+        "cost_usd": 9.285333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Astronomy_001": {
+        "score": 43.4,
+        "run_id": "cli_Astronomy_001_20260831_022939_cd8ac22d",
+        "duration_seconds": 2336,
+        "cost_usd": 6.229333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Astronomy_002": {
+        "score": 23.5,
+        "run_id": "cli_Astronomy_002_20260831_022939_79491e49",
+        "duration_seconds": 1623,
+        "cost_usd": 4.328,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Astronomy_003": {
+        "score": 47.5,
+        "run_id": "cli_Astronomy_003_20260831_022939_39356b92",
+        "duration_seconds": 4447,
+        "cost_usd": 11.858667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Chemistry_000": {
+        "score": 30.4,
+        "run_id": "cli_Chemistry_000_20260831_022939_f1f5b38e",
+        "duration_seconds": 3030,
+        "cost_usd": 8.08,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Chemistry_001": {
+        "score": 22.7,
+        "run_id": "cli_Chemistry_001_20260831_022939_3bf68313",
+        "duration_seconds": 4364,
+        "cost_usd": 11.637333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Chemistry_002": {
+        "score": 36.85,
+        "run_id": "cli_Chemistry_002_20260831_022939_6d585bd3",
+        "duration_seconds": 1925,
+        "cost_usd": 5.133333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Chemistry_003": {
+        "score": 1.5,
+        "run_id": "cli_Chemistry_003_20260831_022939_fe063b60",
+        "duration_seconds": 2496,
+        "cost_usd": 6.656,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Earth_000": {
+        "score": 33.0,
+        "run_id": "cli_Earth_000_20260831_022939_4fbf7aeb",
+        "duration_seconds": 1379,
+        "cost_usd": 3.677333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Earth_001": {
+        "score": 39.74,
+        "run_id": "cli_Earth_001_20260831_022939_669d52d6",
+        "duration_seconds": 1597,
+        "cost_usd": 4.258667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Earth_002": {
+        "score": 32.3,
+        "run_id": "cli_Earth_002_20260831_022939_b5d6a42f",
+        "duration_seconds": 3982,
+        "cost_usd": 10.618667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Earth_003": {
+        "score": 32.0,
+        "run_id": "cli_Earth_003_20260831_022939_26c4f07e",
+        "duration_seconds": 1483,
+        "cost_usd": 3.954667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Energy_000": {
+        "score": 24.5,
+        "run_id": "cli_Energy_000_20260831_022939_c0751b5d",
+        "duration_seconds": 4951,
+        "cost_usd": 13.202667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Energy_001": {
+        "score": 26.5,
+        "run_id": "cli_Energy_001_20260831_022939_7a66cb73",
+        "duration_seconds": 1891,
+        "cost_usd": 5.042667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Energy_002": {
+        "score": 42.85,
+        "run_id": "cli_Energy_002_20260831_022939_1316c624",
+        "duration_seconds": 1746,
+        "cost_usd": 4.656,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Energy_003": {
+        "score": 25.9,
+        "run_id": "cli_Energy_003_20260831_022939_82ab9cda",
+        "duration_seconds": 2021,
+        "cost_usd": 5.389333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Information_000": {
+        "score": 33.0,
+        "run_id": "cli_Information_000_20260831_022939_dc32f113",
+        "duration_seconds": 3345,
+        "cost_usd": 8.92,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Information_001": {
+        "score": 35.2,
+        "run_id": "cli_Information_001_20260831_022939_f78f90cd",
+        "duration_seconds": 3713,
+        "cost_usd": 9.901333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Information_002": {
+        "score": 47.1,
+        "run_id": "cli_Information_002_20260831_022939_4fd33dd4",
+        "duration_seconds": 2090,
+        "cost_usd": 5.573333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Information_003": {
+        "score": 44.9,
+        "run_id": "cli_Information_003_20260831_022939_a966dce6",
+        "duration_seconds": 1866,
+        "cost_usd": 4.976,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Life_000": {
+        "score": 35.1,
+        "run_id": "cli_Life_000_20260831_022939_08844a22",
+        "duration_seconds": 1589,
+        "cost_usd": 4.237333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Life_001": {
+        "score": 43.4,
+        "run_id": "cli_Life_001_20260831_022939_d077d37f",
+        "duration_seconds": 2810,
+        "cost_usd": 7.493333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Life_002": {
+        "score": 20.6,
+        "run_id": "cli_Life_002_20260831_022939_a87fbac0",
+        "duration_seconds": 2255,
+        "cost_usd": 6.013333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Life_003": {
+        "score": 31.0,
+        "run_id": "cli_Life_003_20260831_022939_0e0f0d88",
+        "duration_seconds": 4342,
+        "cost_usd": 11.578667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Material_000": {
+        "score": 26.0,
+        "run_id": "cli_Material_000_20260831_022939_0a9cdfbb",
+        "duration_seconds": 3038,
+        "cost_usd": 8.101333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Material_001": {
+        "score": 19.95,
+        "run_id": "cli_Material_001_20260831_022939_ca6f47eb",
+        "duration_seconds": 4198,
+        "cost_usd": 11.194667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Material_002": {
+        "score": 47.01,
+        "run_id": "cli_Material_002_20260831_022939_31d4b01e",
+        "duration_seconds": 3745,
+        "cost_usd": 9.986667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Material_003": {
+        "score": 47.25,
+        "run_id": "cli_Material_003_20260831_022939_b955eb75",
+        "duration_seconds": 2709,
+        "cost_usd": 7.224,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Math_000": {
+        "score": 31.0,
+        "run_id": "cli_Math_000_20260831_022939_6c859ec7",
+        "duration_seconds": 1969,
+        "cost_usd": 5.250667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Math_001": {
+        "score": 46.3,
+        "run_id": "cli_Math_001_20260831_022939_4e959d5f",
+        "duration_seconds": 1940,
+        "cost_usd": 5.173333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Math_002": {
+        "score": 42.6,
+        "run_id": "cli_Math_002_20260831_022939_bda2abee",
+        "duration_seconds": 3470,
+        "cost_usd": 9.253333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Math_003": {
+        "score": 38.75,
+        "run_id": "cli_Math_003_20260831_022939_0099b1b6",
+        "duration_seconds": 3481,
+        "cost_usd": 9.282667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Neuroscience_000": {
+        "score": 5.0,
+        "run_id": "cli_Neuroscience_000_20260831_022939_5f088b8e",
+        "duration_seconds": 4771,
+        "cost_usd": 12.722667,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Neuroscience_001": {
+        "score": 49.55,
+        "run_id": "cli_Neuroscience_001_20260831_022939_e07a8987",
+        "duration_seconds": 7200,
+        "cost_usd": 19.2,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Neuroscience_002": {
+        "score": 42.65,
+        "run_id": "cli_Neuroscience_002_20260831_022939_1f657935",
+        "duration_seconds": 1227,
+        "cost_usd": 3.272,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Neuroscience_003": {
+        "score": 44.15,
+        "run_id": "cli_Neuroscience_003_20260831_022939_2750fe84",
+        "duration_seconds": 1205,
+        "cost_usd": 3.213333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Physics_000": {
+        "score": 35.3,
+        "run_id": "cli_Physics_000_20260831_022939_e4bbaa2d",
+        "duration_seconds": 3555,
+        "cost_usd": 9.48,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Physics_001": {
+        "score": 35.1,
+        "run_id": "cli_Physics_001_20260831_022939_64c10709",
+        "duration_seconds": 3779,
+        "cost_usd": 10.077333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Physics_002": {
+        "score": 47.1,
+        "run_id": "cli_Physics_002_20260831_022939_d768a17c",
+        "duration_seconds": 1847,
+        "cost_usd": 4.925333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
+        "details_exported": false
+      },
+      "Physics_003": {
+        "score": 46.4,
+        "run_id": "cli_Physics_003_20260831_022939_347d0cf8",
+        "duration_seconds": 1880,
+        "cost_usd": 5.013333,
+        "model": "gpt-5.6-sol + grd-king + grd-jin",
+        "model_display": "GPT-5.6-Sol + GRD-King + GRD-Jin",
         "details_exported": false
       }
     },
@@ -11086,12 +11449,12 @@
     "Astronomy_003": 62.0,
     "Chemistry_000": 43.95,
     "Chemistry_001": 22.75,
-    "Chemistry_002": 35.5,
+    "Chemistry_002": 36.85,
     "Chemistry_003": 45.6,
-    "Earth_000": 30.7,
+    "Earth_000": 33.0,
     "Earth_001": 46.94,
     "Earth_002": 49.0,
-    "Earth_003": 22.8,
+    "Earth_003": 32.0,
     "Energy_000": 24.9,
     "Energy_001": 47.1,
     "Energy_002": 44.1,
@@ -11099,22 +11462,22 @@
     "Information_000": 49.4,
     "Information_001": 50.8,
     "Information_002": 51.1,
-    "Information_003": 23.7,
-    "Life_000": 28.65,
-    "Life_001": 32.15,
+    "Information_003": 44.9,
+    "Life_000": 35.1,
+    "Life_001": 43.4,
     "Life_002": 42.8,
     "Life_003": 45.9,
     "Material_000": 34.5,
     "Material_001": 37.0,
-    "Material_002": 40.72,
+    "Material_002": 47.01,
     "Material_003": 56.85,
     "Math_000": 47.95,
     "Math_001": 49.6,
-    "Math_002": 41.0,
-    "Math_003": 30.8,
+    "Math_002": 42.6,
+    "Math_003": 38.75,
     "Neuroscience_000": 22.2,
-    "Neuroscience_001": 46.4,
-    "Neuroscience_002": 26.15,
+    "Neuroscience_001": 49.55,
+    "Neuroscience_002": 42.65,
     "Neuroscience_003": 50.0,
     "Physics_000": 42.4,
     "Physics_001": 49.0,
