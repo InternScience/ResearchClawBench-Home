@@ -62,9 +62,9 @@ MODEL_TOKEN_PRICING_PER_MTOK = {
     "mimo-v2.5": {"input": 0.42, "output": 2.10},
     "minimax-m3": {"input": 0.30, "output": 1.20},
     "deepseek-v4-pro": {"input": 0.435, "output": 0.87},
-    # Preview release pricing, verified 2026-09-09:
+    # Preview release pricing (cache-miss input), verified 2026-09-09:
     # https://api-docs.deepseek.com/news/news260424 (img/v4-price-en.png)
-    "deepseek-v4-pro-preview": {"input": 0.145, "output": 3.48},
+    "deepseek-v4-pro-preview": {"input": 1.74, "output": 3.48},
     "hy3-preview": {"input": 0.063, "output": 0.21},
     "qwen3.5-397b-a17b": {"input": 0.6, "output": 3.6},
     "qwen3.6-plus": {"input": 0.5, "output": 3.0},
